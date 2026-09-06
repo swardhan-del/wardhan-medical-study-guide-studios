@@ -370,3 +370,162 @@ test("public learning assets and metadata resolve without exposing source archiv
   expect(xml).toContain("/practice/renal-challenge");
   expect(xml).not.toContain("/study/planner");
 });
+
+test("library filters expose useful resources in every subject and retain direct topic links", async ({
+  page,
+}) => {
+  await page.goto("/library");
+  const summary = page.locator('.catalog-summary [role="status"]');
+  await expect(summary).toHaveText("58 resources");
+  for (const [subject, count] of [
+    ["anatomy", 5],
+    ["histology", 17],
+    ["cell-biology", 7],
+    ["biochemistry", 6],
+    ["physiology", 17],
+    ["genetics", 6],
+  ] as const) {
+    await page
+      .getByRole("combobox", { name: "Subject", exact: true })
+      .selectOption(subject);
+    await expect(summary).toHaveText(`${count} resources`);
+    await expect(page.locator(".resource-card")).toHaveCount(count);
+  }
+  await page
+    .getByRole("combobox", { name: "Subject", exact: true })
+    .selectOption("cell-biology");
+  await page.getByRole("searchbox").fill("PCR DNA");
+  await expect(summary).toHaveText("1 resource");
+  await page
+    .getByRole("link", {
+      name: "PCR, qPCR and reverse transcription",
+      exact: true,
+    })
+    .click();
+  await expect(page.locator("h1")).toHaveText(
+    "PCR, qPCR and reverse transcription",
+  );
+  await page.goto("/subjects/histology");
+  await page
+    .getByRole("link", { name: "Integrated embryology", exact: true })
+    .click();
+  await expect(page).toHaveURL(/subject=histology&q=Integrated%20embryology/);
+  await expect(page.locator(".resource-card")).toHaveCount(3);
+});
+
+test("catalog format, empty search and pagination remain usable", async ({
+  page,
+}) => {
+  await page.goto("/library");
+  await expect(page.locator(".resource-card")).toHaveCount(18);
+  await page.getByRole("button", { name: "Show more resources" }).click();
+  await expect(page.locator(".resource-card")).toHaveCount(36);
+  await page
+    .getByRole("combobox", { name: "Format", exact: true })
+    .selectOption("PDF");
+  await expect(page.locator(".resource-card")).toHaveCount(1);
+  await expect(
+    page.getByRole("link", {
+      name: "Renal physiology revision sheet",
+      exact: true,
+    }),
+  ).toHaveAttribute("href", "/downloads/renal-revision-sheet.pdf");
+  await page.getByRole("searchbox").fill("nonsense-unmatched");
+  await expect(
+    page.getByRole("heading", { name: "No matching resources." }),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Clear filters", exact: true })
+    .first()
+    .click();
+  await expect(page.locator('.catalog-summary [role="status"]')).toHaveText(
+    "58 resources",
+  );
+});
+
+test("new lesson supports explained correction, oral recall, related pages and saved reading", async ({
+  page,
+}, testInfo) => {
+  await page.goto("/library/epithelia");
+  await page.locator(".concept-sequence summary").nth(1).click();
+  await expect(
+    page.getByText(/Pseudostratified epithelium appears multilayered/),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Check answer", exact: true }),
+  ).toBeDisabled();
+  await page.getByRole("radio").first().check();
+  await page.getByRole("button", { name: "Check answer", exact: true }).click();
+  await expect(page.locator(".concept-feedback")).toContainText(
+    "Review the distinction.",
+  );
+  await expect(page.locator(".concept-feedback")).toContainText("Why not");
+  await page
+    .getByRole("radio", {
+      name: "Every cell contacts the basement membrane",
+      exact: true,
+    })
+    .check();
+  await page.getByRole("button", { name: "Check answer", exact: true }).click();
+  await expect(page.locator(".concept-feedback h3")).toHaveText("Correct.");
+  await page.getByText("Reveal a model answer", { exact: true }).click();
+  await expect(
+    page.getByText(/Alveoli need a short diffusion distance/),
+  ).toBeVisible();
+  await page.getByRole("button", { name: /Save Epithelia:/ }).click();
+  await page.goto("/reading-list");
+  await expect(
+    page.getByRole("link", {
+      name: "Epithelia: layers, shape and function",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await page.reload();
+  await page
+    .getByRole("link", {
+      name: "Epithelia: layers, shape and function",
+      exact: true,
+    })
+    .click();
+  await page.locator(".concept-related").first().click();
+  await expect(page).toHaveURL(/\/library\/cell-junctions$/);
+  await page.screenshot({
+    path: testInfo.outputPath("concept-lesson.png"),
+    fullPage: true,
+  });
+});
+
+test("cross-subject lessons render sources and fit the viewport", async ({
+  page,
+  request,
+}, testInfo) => {
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  for (const id of [
+    "placenta",
+    "dna-replication",
+    "enzyme-kinetics",
+    "antigen-presentation",
+    "cardiac-output",
+  ]) {
+    expect((await page.goto(`/library/${id}`))?.status()).toBe(200);
+    await expect(page.locator("#lesson-source")).toContainText(
+      "Source section:",
+    );
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
+  }
+  const sitemap = await (await request.get("/sitemap.xml")).text();
+  expect(sitemap).toContain("/library/placenta");
+  expect(sitemap).toContain("/library/pcr");
+  expect(sitemap).not.toContain("/library/renal-kidney-map");
+  await page.goto("/library?subject=histology");
+  await page.screenshot({
+    path: testInfo.outputPath("histology-library.png"),
+    fullPage: true,
+  });
+  expect(errors).toEqual([]);
+});

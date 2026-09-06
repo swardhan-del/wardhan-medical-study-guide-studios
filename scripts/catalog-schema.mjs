@@ -1,4 +1,4 @@
-export const formats = ["PDF", "DOCX", "PPTX"];
+export const formats = ["WEB", "ACTIVITY", "PDF", "DOCX", "PPTX"];
 export const subjects = [
   "anatomy",
   "histology",
@@ -18,6 +18,9 @@ const fields = [
   "bytes",
   "downloadUrl",
   "status",
+  "href",
+  "tags",
+  "minutes",
 ];
 export function validateCatalog(data, status = "public") {
   if (!data || data.version !== 1 || !Array.isArray(data.records))
@@ -50,6 +53,31 @@ export function validateCatalog(data, status = "public") {
       throw new Error("Invalid date.");
     if (!Number.isSafeInteger(record.bytes) || record.bytes < 0)
       throw new Error("Invalid file size.");
+    if (
+      record.href !== undefined &&
+      (status !== "public" ||
+        typeof record.href !== "string" ||
+        !/^\/(?:learn\/renal(?:\/[a-z0-9-]+)?|practice\/[a-z0-9-]+|subjects\/anatomy\/[a-z0-9-]+|downloads\/[a-z0-9-]+\.pdf)$/.test(
+          record.href,
+        ))
+    )
+      throw new Error("Invalid internal resource destination.");
+    if (
+      record.tags !== undefined &&
+      (!Array.isArray(record.tags) ||
+        record.tags.length > 16 ||
+        record.tags.some(
+          (tag) => typeof tag !== "string" || !tag.trim() || tag.length > 80,
+        ))
+    )
+      throw new Error("Invalid topic tags.");
+    if (
+      record.minutes !== undefined &&
+      (!Number.isSafeInteger(record.minutes) ||
+        record.minutes < 1 ||
+        record.minutes > 120)
+    )
+      throw new Error("Invalid study duration.");
     if (record.downloadUrl) {
       if (status !== "public")
         throw new Error("Private review records cannot contain download URLs.");

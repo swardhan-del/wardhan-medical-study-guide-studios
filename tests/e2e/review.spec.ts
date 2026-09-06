@@ -14,10 +14,23 @@ test("curated records can be searched, filtered, reset and opened without source
     .first()
     .click();
   await expect(page.locator(".resource-card:visible")).toHaveCount(all);
-  await page.getByRole("combobox", { name: "Format", exact: true }).selectOption("PDF");
-  expect(await page.locator(".resource-card:visible").count()).toBeGreaterThan(0);
-  const labels = await page.locator(".resource-topline").allTextContents();
-  expect(labels.every((label) => label.startsWith("PDF"))).toBe(true);
+  await page
+    .getByRole("combobox", { name: "Format", exact: true })
+    .selectOption("PDF");
+  expect(await page.locator(".resource-card:visible").count()).toBeGreaterThan(
+    0,
+  );
+  await expect
+    .poll(async () => {
+      const labels = await page
+        .locator(".resource-card:visible .resource-topline")
+        .allTextContents();
+      return (
+        labels.length > 0 &&
+        labels.every((label) => label.trim().startsWith("PDF"))
+      );
+    })
+    .toBe(true);
   await page.getByRole("combobox", { name: "Sort by" }).selectOption("recent");
   await page.getByRole("link", { name: "View resource" }).first().click();
   await expect(page.locator("h1")).toBeVisible();

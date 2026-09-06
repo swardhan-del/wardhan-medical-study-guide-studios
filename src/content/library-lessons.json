@@ -1,0 +1,2287 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "microscopy",
+      "subject": "histology",
+      "title": "Reading a histology section",
+      "summary": "Build an identification from architecture, cells and preparation clues before naming the organ.",
+      "tags": [
+        "Cells and tissues",
+        "Microscopic structure",
+        "H&E",
+        "microscopy",
+        "stains"
+      ],
+      "source": "histology",
+      "section": "Histology Technique and Microscopy Fundamentals",
+      "steps": [
+        {
+          "title": "Start at low power",
+          "body": "A section is a thin slice through a three-dimensional object. First find the outer boundary, lumen, capsule and repeating units. A tube cut obliquely may look oval or unusually thick; one isolated profile is rarely enough to identify an organ."
+        },
+        {
+          "title": "Read the stain",
+          "body": "In routine hematoxylin and eosin, nuclei and other nucleic-acid-rich regions tend to be blue-purple, while many cytoplasmic proteins and collagen are pink. Staining intensity depends on preparation and does not directly measure cellular activity."
+        },
+        {
+          "title": "Build a defensible identification",
+          "body": "Move to higher power to inspect nuclei, cell borders and matrix. State two positive features and one feature that separates the tissue from a look-alike. Folds, tears, shrinkage spaces and empty processing artifacts are not automatically normal structures."
+        }
+      ],
+      "question": {
+        "prompt": "What is the best first step for an unfamiliar section?",
+        "options": [
+          {
+            "text": "Map the low-power architecture",
+            "reason": "Correct: overall organization narrows the possibilities before fine details are interpreted."
+          },
+          {
+            "text": "Name the organ from one dark nucleus",
+            "reason": "A single nucleus usually lacks enough architectural context."
+          },
+          {
+            "text": "Assume every empty space is a lumen",
+            "reason": "Processing can create artificial spaces; confirm a lining and surrounding structure."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "How would you justify a tissue identification in an oral exam?",
+        "answer": "Describe the preparation, overall architecture, two characteristic structures and one reason a plausible alternative is less likely."
+      },
+      "related": [
+        "epithelia",
+        "blood-marrow",
+        "renal-histology"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "epithelia",
+      "subject": "histology",
+      "title": "Epithelia: layers, shape and function",
+      "summary": "Distinguish simple, stratified and pseudostratified epithelia and connect their structure to their job.",
+      "tags": [
+        "Cells and tissues",
+        "Microscopic structure",
+        "epithelium",
+        "epithelial tissue"
+      ],
+      "source": "histology",
+      "section": "Epithelial Tissue Characteristics; Epithelial Classification by Layer and Shape",
+      "steps": [
+        {
+          "title": "Find the two surfaces",
+          "body": "The apical surface faces a lumen or the outside. The basal surface rests on a basement membrane supported by connective tissue. Closely packed cells and relatively little extracellular matrix distinguish an epithelial sheet from its supporting stroma."
+        },
+        {
+          "title": "Count layers, then name the surface cells",
+          "body": "Simple epithelium has one cell layer. Stratified epithelium has several and is named by the superficial cells. Pseudostratified epithelium appears multilayered because nuclei sit at different heights, but every cell contacts the basement membrane."
+        },
+        {
+          "title": "Connect architecture to function",
+          "body": "Thin squamous cells suit exchange, as in alveoli. Cuboidal or columnar cells often support absorption and secretion. Multiple layers protect surfaces exposed to friction. Urothelium is a specialized stratified lining that accommodates urinary-tract distension."
+        }
+      ],
+      "question": {
+        "prompt": "Which observation defines pseudostratified epithelium?",
+        "options": [
+          {
+            "text": "All nuclei are at the same height",
+            "reason": "Different nuclear heights create its layered appearance."
+          },
+          {
+            "text": "Every cell contacts the basement membrane",
+            "reason": "Correct: some cells do not reach the free surface, but all reach the basement membrane."
+          },
+          {
+            "text": "Several complete layers are stacked above one another",
+            "reason": "That describes genuinely stratified epithelium."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why does alveolar epithelium differ from esophageal epithelium?",
+        "answer": "Alveoli need a short diffusion distance and use thin squamous cells. The esophagus resists abrasion with a nonkeratinized stratified squamous lining."
+      },
+      "related": [
+        "cell-junctions",
+        "respiratory-histology",
+        "gi-histology"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "cell-junctions",
+      "subject": "histology",
+      "title": "Cell junctions and surface specializations",
+      "summary": "Separate sealing, anchoring and communication junctions, then distinguish microvilli from cilia.",
+      "tags": [
+        "Cells and tissues",
+        "Microscopic structure",
+        "junctions",
+        "cilia",
+        "microvilli",
+        "basement membrane"
+      ],
+      "source": "histology",
+      "section": "Cell-Cell Junctions; Free Surface Specializations; Basement Membrane",
+      "steps": [
+        {
+          "title": "Seal the route between cells",
+          "body": "Tight junctions regulate paracellular passage and help preserve apical-basal polarity. They are selective barriers rather than universal waterproof seals. A transporting epithelium can move substances through cells and, where permitted, between them."
+        },
+        {
+          "title": "Anchor or communicate",
+          "body": "Adherens junctions connect actin networks between cells. Desmosomes connect intermediate filaments between cells; hemidesmosomes anchor cells to the basal lamina. Gap junction channels pass small molecules and ions between neighboring cells."
+        },
+        {
+          "title": "Recognize the apical apparatus",
+          "body": "Microvilli contain actin and increase surface area for absorption. Motile cilia use microtubules and dynein to move material along a surface. Stereocilia are long actin-based microvilli, despite their name; they are not ordinary motile cilia."
+        }
+      ],
+      "question": {
+        "prompt": "Which structure directly allows ions to pass between neighboring cells?",
+        "options": [
+          {
+            "text": "Desmosome",
+            "reason": "Desmosomes provide mechanical attachment through intermediate filaments."
+          },
+          {
+            "text": "Hemidesmosome",
+            "reason": "Hemidesmosomes attach a cell to the basal lamina."
+          },
+          {
+            "text": "Gap junction",
+            "reason": "Correct: paired channels connect adjacent cytoplasms for small-solute and ionic communication."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Contrast a proximal-tubule brush border with airway cilia.",
+        "answer": "The brush border consists of actin-supported microvilli that increase absorptive area. Airway motile cilia use a microtubule apparatus to move mucus."
+      },
+      "related": [
+        "epithelia",
+        "renal-histology",
+        "protein-trafficking"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "connective-tissue",
+      "subject": "histology",
+      "title": "Connective tissue and extracellular matrix",
+      "summary": "Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior.",
+      "tags": [
+        "Cells and tissues",
+        "Microscopic structure",
+        "connective tissue",
+        "collagen",
+        "extracellular matrix"
+      ],
+      "source": "histology",
+      "section": "Connective Tissue Proper; Fibers and Ground Substance",
+      "steps": [
+        {
+          "title": "Look between the cells",
+          "body": "Connective tissue contains cells dispersed through extracellular matrix. Fibroblasts synthesize much of that matrix; immune cells may be resident or recruited. Compared with epithelium, the matrix is usually the more prominent organizing feature."
+        },
+        {
+          "title": "Match material to a mechanical job",
+          "body": "Collagen resists tension, elastic fibers allow recoil, and proteoglycan-rich hydrated ground substance supports diffusion and resistance to compression. The amount and arrangement of these components matter as much as their names."
+        },
+        {
+          "title": "Read the fiber arrangement",
+          "body": "Loose connective tissue provides flexible support beneath many epithelia. Dense regular tissue aligns collagen for tension mainly in one direction, as in tendon. Dense irregular tissue distributes collagen in multiple directions, helping structures such as dermis resist varied stresses."
+        }
+      ],
+      "question": {
+        "prompt": "Why is tendon collagen predominantly parallel?",
+        "options": [
+          {
+            "text": "It supports tensile loading mainly along one axis",
+            "reason": "Correct: aligned bundles suit the principal direction of force transmission."
+          },
+          {
+            "text": "It creates a secretory epithelial surface",
+            "reason": "Tendon is connective tissue, not a secretory epithelium."
+          },
+          {
+            "text": "It makes tendon an electrically excitable tissue",
+            "reason": "Fiber orientation chiefly explains mechanical behavior here."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain why tissue strength cannot be predicted from cell count alone.",
+        "answer": "The composition, amount, hydration and orientation of extracellular matrix strongly determine tissue mechanics. Fibroblasts maintain the matrix, but much of the load is carried outside the cells."
+      },
+      "related": [
+        "cartilage-bone",
+        "protein-structure",
+        "muscle-histology"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "cartilage-bone",
+      "subject": "histology",
+      "title": "Cartilage, bone and remodeling",
+      "summary": "Distinguish the matrix and cell organization of cartilage from vascular, continuously remodeled bone.",
+      "tags": [
+        "Cells and tissues",
+        "Microscopic structure",
+        "cartilage",
+        "bone",
+        "ossification",
+        "musculoskeletal"
+      ],
+      "source": "histology",
+      "section": "Cartilage Types; Bone Remodeling, Ossification, Growth, and Repair",
+      "steps": [
+        {
+          "title": "Recognize cartilage",
+          "body": "Chondrocytes occupy lacunae in a hydrated extracellular matrix. Hyaline cartilage contains fine type II collagen fibrils; elastic cartilage adds elastic fibers; fibrocartilage has conspicuous tensile collagen bundles. Cartilage is avascular and relies on diffusion for nutrition."
+        },
+        {
+          "title": "Recognize bone",
+          "body": "Bone combines collagenous organic matrix with mineral. Osteoblasts form osteoid; osteocytes occupy lacunae and communicate through canaliculi; osteoclasts resorb bone. Compact bone often has osteons around vascular canals, while spongy bone forms trabeculae."
+        },
+        {
+          "title": "Separate growth from replacement",
+          "body": "Intramembranous ossification forms bone directly in mesenchyme. Endochondral ossification replaces a cartilage model. Remodeling coordinates resorption and formation throughout life; osteoblast-lineage RANKL promotes osteoclast development, while osteoprotegerin limits that signal."
+        }
+      ],
+      "question": {
+        "prompt": "Which cell resorbs mineralized bone?",
+        "options": [
+          {
+            "text": "Osteoblast",
+            "reason": "Osteoblasts produce the organic bone matrix."
+          },
+          {
+            "text": "Osteoclast",
+            "reason": "Correct: osteoclasts acidify and digest the bone surface beneath a sealed resorption compartment."
+          },
+          {
+            "text": "Chondrocyte",
+            "reason": "Chondrocytes maintain cartilage matrix."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why does a growth plate differ from an osteon?",
+        "answer": "The growth plate organizes cartilage proliferation, hypertrophy and replacement during longitudinal growth. An osteon organizes mature compact bone around a central vascular canal."
+      },
+      "related": [
+        "connective-tissue",
+        "protein-structure",
+        "anatomy-musculoskeletal"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "blood-marrow",
+      "subject": "histology",
+      "title": "Blood cells and bone marrow",
+      "summary": "Read nuclear shape, cytoplasm and tissue context to distinguish circulating cells from developing marrow.",
+      "tags": [
+        "Cells and tissues",
+        "Organ histology",
+        "blood",
+        "hematopoiesis",
+        "bone marrow"
+      ],
+      "source": "histology",
+      "section": "Blood and Bone Marrow; Blood Smear and Bone-Marrow Practical Expansion",
+      "steps": [
+        {
+          "title": "Orient the specimen",
+          "body": "A blood smear spreads circulating cells into a thin layer. Marrow is a tissue containing mixed developing cells, vascular sinusoids, adipocytes and supporting stroma. A smear and a marrow section answer different identification questions."
+        },
+        {
+          "title": "Use a combination of clues",
+          "body": "Mature erythrocytes are anucleate; neutrophils have segmented nuclei; eosinophils have prominent eosinophilic granules. Small lymphocytes often have a dense round nucleus with scant cytoplasm, but morphology alone does not reliably distinguish B cells from T cells."
+        },
+        {
+          "title": "Trace production",
+          "body": "Marrow stem and progenitor populations give rise to blood-cell lineages. Very large megakaryocytes produce platelets by cytoplasmic fragmentation. Erythroid maturation progressively condenses the nucleus and increases hemoglobin before the nucleus is expelled."
+        }
+      ],
+      "question": {
+        "prompt": "Which marrow cell produces platelets?",
+        "options": [
+          {
+            "text": "Mature erythrocyte",
+            "reason": "Erythrocytes transport gases; they are not platelet precursors."
+          },
+          {
+            "text": "Small lymphocyte",
+            "reason": "Lymphocytes belong to immune lineages."
+          },
+          {
+            "text": "Megakaryocyte",
+            "reason": "Correct: platelets are fragments of megakaryocyte cytoplasm."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Why should a small round lymphocyte not automatically be called a B cell?",
+        "answer": "B and T lymphocytes overlap in routine microscopic appearance. Their identification requires context and, when necessary, appropriate marker combinations."
+      },
+      "related": [
+        "lymphoid-organs",
+        "innate-adaptive",
+        "nitrogen-metabolism"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "muscle-histology",
+      "subject": "histology",
+      "title": "Skeletal, cardiac and smooth muscle",
+      "summary": "Identify muscle using nuclei, striations, branching and the connections between cells.",
+      "tags": [
+        "Cells and tissues",
+        "Organ histology",
+        "muscle",
+        "sarcomere",
+        "cardiac"
+      ],
+      "source": "histology",
+      "section": "Muscle Tissue; Cardiac Muscle and Intercalated Discs",
+      "steps": [
+        {
+          "title": "Skeletal muscle",
+          "body": "Long fibers have multiple peripheral nuclei and ordered sarcomeres that produce striations. Endomysium surrounds individual fibers, perimysium organizes fascicles, and epimysium surrounds the muscle. Section orientation can hide the longitudinal striation pattern."
+        },
+        {
+          "title": "Cardiac muscle",
+          "body": "Branching striated cells usually have a central nucleus. Intercalated discs provide mechanical attachment through adherens junctions and desmosomes, and electrical coupling through gap junctions. These different junctions solve different problems at the same cell boundary."
+        },
+        {
+          "title": "Smooth muscle",
+          "body": "Spindle-shaped cells have a central elongated nucleus and no sarcomeric cross-striations. Actin and myosin still generate force, but calcium-calmodulin activation of myosin light-chain kinase differs from the troponin-based control of striated muscle."
+        }
+      ],
+      "question": {
+        "prompt": "Which combination best supports cardiac muscle?",
+        "options": [
+          {
+            "text": "Branching striated cells with central nuclei",
+            "reason": "Correct: add intercalated discs as a further characteristic clue."
+          },
+          {
+            "text": "Parallel multinucleated fibers with peripheral nuclei",
+            "reason": "This combination favors skeletal muscle."
+          },
+          {
+            "text": "Spindle cells without cross-striations",
+            "reason": "This combination favors smooth muscle."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Name two functions of an intercalated disc.",
+        "answer": "It transfers mechanical force between cells and permits electrical coupling. Adherens junctions/desmosomes support attachment; gap junctions conduct small ions between cells."
+      },
+      "related": [
+        "cell-junctions",
+        "cardiac-output",
+        "membrane-potentials"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "vessel-histology",
+      "subject": "histology",
+      "title": "Arteries, veins and capillaries",
+      "summary": "Read vessel walls from the lumen outward and relate each layer to pressure and exchange.",
+      "tags": [
+        "Organ histology",
+        "Microscopic structure",
+        "blood vessels",
+        "arteries",
+        "veins",
+        "capillaries"
+      ],
+      "source": "histology",
+      "section": "Circulatory System — Histology of Blood Vessels",
+      "steps": [
+        {
+          "title": "Use the three tunics",
+          "body": "The intima includes endothelium; the media contains smooth muscle and elastic components; the adventitia provides outer connective-tissue support. Large vessels may contain small nourishing vessels in their walls. Not every vessel displays all layers equally clearly."
+        },
+        {
+          "title": "Compare arteries with veins",
+          "body": "Elastic arteries have numerous elastic lamellae in the media. Muscular arteries have a prominent smooth-muscle media. A companion vein usually has a larger, less regular lumen and a thinner media, but collapse and cutting angle can alter these appearances."
+        },
+        {
+          "title": "Find the exchange surface",
+          "body": "Capillaries are principally endothelial tubes supported by basal lamina, with associated pericytes in many locations. They lack a continuous muscular media. Arterioles, by contrast, have a smooth-muscle cuff that can regulate resistance and downstream flow."
+        }
+      ],
+      "question": {
+        "prompt": "Which feature most clearly separates a capillary from an arteriole?",
+        "options": [
+          {
+            "text": "A lumen containing blood",
+            "reason": "Both vessel types can contain blood."
+          },
+          {
+            "text": "Absence of a continuous smooth-muscle media",
+            "reason": "Correct: an arteriole has a muscular cuff; a capillary does not."
+          },
+          {
+            "text": "A connective-tissue adventitia thicker than the media",
+            "reason": "This is more useful when comparing larger veins and arteries."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "How does wall structure support the function of an elastic artery?",
+        "answer": "Elastic lamellae stretch during ejection and recoil afterward, helping maintain flow between beats. The layered wall therefore contributes to pressure buffering."
+      },
+      "related": [
+        "cardiac-output",
+        "baroreflex",
+        "respiratory-histology"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Lymph node, spleen and thymus",
+      "summary": "Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs.",
+      "tags": [
+        "Organ histology",
+        "lymphatic",
+        "immune",
+        "thymus",
+        "spleen",
+        "lymph node"
+      ],
+      "source": "histology",
+      "section": "Thymus Practical Differential; Lymph Nodes; Spleen",
+      "steps": [
+        {
+          "title": "Lymph node: sample tissue lymph",
+          "body": "Afferent lymph reaches a subcapsular sinus before passing through the node. B-cell follicles occupy cortex, T cells are concentrated in paracortex, and medullary cords and sinuses form a different inner pattern. The organ brings transported antigen and lymphocytes together."
+        },
+        {
+          "title": "Spleen: sample blood",
+          "body": "White pulp organizes lymphoid tissue around arteries. Red pulp contains cords and sinusoids involved in blood filtration and removal of poorly deformable erythrocytes. Unlike a lymph node, the spleen primarily monitors blood-borne material."
+        },
+        {
+          "title": "Thymus: educate T cells",
+          "body": "Lobules have a dark cortex and lighter medulla. Medullary Hassall corpuscles are characteristic epithelial structures. Normal thymus does not have true lymphoid follicles; its principal role is T-cell development and selection rather than filtering afferent lymph."
+        }
+      ],
+      "question": {
+        "prompt": "An organ has lobules, pale medullae and Hassall corpuscles. Which is most likely?",
+        "options": [
+          {
+            "text": "Lymph node",
+            "reason": "Lymph nodes instead show follicles, paracortex and lymph sinuses."
+          },
+          {
+            "text": "Spleen",
+            "reason": "Spleen is organized into red and white pulp."
+          },
+          {
+            "text": "Thymus",
+            "reason": "Correct: the architecture and Hassall corpuscles strongly support thymus."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Compare the principal jobs of a lymph node, spleen and thymus.",
+        "answer": "A lymph node samples tissue lymph, spleen samples blood, and thymus supports T-cell development and selection."
+      },
+      "related": [
+        "innate-adaptive",
+        "antigen-presentation",
+        "blood-marrow"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "respiratory-histology",
+      "subject": "histology",
+      "title": "From conducting airways to alveoli",
+      "summary": "Follow the changing epithelium, supporting wall and exchange surface along the respiratory tree.",
+      "tags": [
+        "Organ histology",
+        "respiratory",
+        "lung",
+        "bronchioles",
+        "alveoli"
+      ],
+      "source": "histology",
+      "section": "Histology of the Airways; Bronchial Structural Variations; Blood-Air Barrier",
+      "steps": [
+        {
+          "title": "Conduct and clear",
+          "body": "The trachea and larger conducting airways use ciliated epithelium and mucus-producing cells to move trapped material toward the pharynx. Cartilage and glands are useful clues to larger airways. The epithelial pattern changes as the airway narrows."
+        },
+        {
+          "title": "Recognize a bronchiole",
+          "body": "Bronchioles lack cartilage and submucosal glands. Their relatively simple epithelium includes club cells, and smooth muscle helps regulate caliber. Terminal bronchioles remain conducting airways; respiratory bronchioles have alveoli interrupting their walls."
+        },
+        {
+          "title": "Build an exchange barrier",
+          "body": "Type I pneumocytes form a thin gas-exchange surface. Type II pneumocytes produce surfactant and contribute to epithelial repair. The thin barrier combines alveolar epithelium, closely apposed basal laminae and capillary endothelium; macrophages clear particles within the alveolar region."
+        }
+      ],
+      "question": {
+        "prompt": "Which feature favors a bronchiole over a bronchus?",
+        "options": [
+          {
+            "text": "No cartilage or submucosal glands",
+            "reason": "Correct: use this alongside the epithelial and smooth-muscle pattern."
+          },
+          {
+            "text": "Large cartilage plates",
+            "reason": "Cartilage plates support a bronchus."
+          },
+          {
+            "text": "A stratified squamous lining throughout",
+            "reason": "That is not the typical bronchiolar lining."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain why the alveolar wall is thin but a conducting airway needs a more substantial wall.",
+        "answer": "Alveoli minimize diffusion distance. Conducting airways must maintain patency, regulate flow and clear inhaled material before it reaches the exchange surface."
+      },
+      "related": [
+        "ventilation-perfusion",
+        "cell-junctions",
+        "epithelia"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "gi-histology",
+      "subject": "histology",
+      "title": "Recognizing the gastrointestinal wall",
+      "summary": "Use the shared wall plan and regional specializations to distinguish esophagus, stomach and intestine.",
+      "tags": [
+        "Organ histology",
+        "gastrointestinal",
+        "digestive",
+        "stomach",
+        "intestine"
+      ],
+      "source": "histology",
+      "section": "Gastrointestinal Tract Histology; Regional Variations",
+      "steps": [
+        {
+          "title": "Name the common layers",
+          "body": "From the lumen outward, identify mucosa, submucosa, muscularis externa and serosa or adventitia. The mucosa itself includes epithelium, lamina propria and muscularis mucosae. Do not confuse muscularis mucosae with the much larger muscularis externa."
+        },
+        {
+          "title": "Identify the epithelial task",
+          "body": "Esophagus uses stratified squamous epithelium for abrasion resistance. Stomach has simple columnar surface cells, pits and glands. Small intestine adds villi and crypts; large intestine has numerous straight crypts and goblet cells but no normal villi."
+        },
+        {
+          "title": "Use a regional discriminator",
+          "body": "Submucosal Brunner glands favor duodenum. Prominent villi and folds without Brunner glands or large aggregated lymphoid patches can favor jejunum. Aggregated lymphoid Peyer patches support ileum. Combine clues because a small or oblique section can miss defining structures."
+        }
+      ],
+      "question": {
+        "prompt": "Which structure most strongly supports duodenum?",
+        "options": [
+          {
+            "text": "Hassall corpuscles",
+            "reason": "These are characteristic of thymic medulla."
+          },
+          {
+            "text": "Submucosal Brunner glands",
+            "reason": "Correct: their location is a particularly useful duodenal clue."
+          },
+          {
+            "text": "Renal corpuscles",
+            "reason": "These locate kidney cortex."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "How would you distinguish small intestine from colon?",
+        "answer": "Look for villi in small intestine. Colon normally lacks villi and has closely packed crypts with abundant goblet cells; compare the whole mucosal pattern."
+      },
+      "related": [
+        "epithelia",
+        "liver-pancreas",
+        "glycolysis"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "liver-pancreas",
+      "subject": "histology",
+      "title": "Liver and pancreas: routes and secretions",
+      "summary": "Distinguish blood flow from bile flow and separate pancreatic acini from endocrine islets.",
+      "tags": [
+        "Organ histology",
+        "liver",
+        "pancreas",
+        "hepatobiliary",
+        "digestive"
+      ],
+      "source": "histology",
+      "section": "Liver Structural Organization; Biliary Passages; Pancreas Histology",
+      "steps": [
+        {
+          "title": "Read the liver lobule",
+          "body": "Portal tracts contain branches of portal vein, hepatic artery and bile duct. Blood from the two vascular inputs enters sinusoids and moves toward a central vein. Hepatocytes are arranged along those exchange channels."
+        },
+        {
+          "title": "Reverse direction for bile",
+          "body": "Bile enters canaliculi between hepatocytes and flows toward ductules and ducts in portal regions. It does not normally drain into the central vein. Gallbladder stores and concentrates bile; it does not synthesize bile or digestive enzymes."
+        },
+        {
+          "title": "Separate the pancreatic compartments",
+          "body": "Exocrine acini make digestive secretions that enter a duct system; centroacinar cells mark the beginning of that system. Endocrine islets release hormones into blood. Islets often appear paler than surrounding acini, but architecture and cell organization remain essential."
+        }
+      ],
+      "question": {
+        "prompt": "Where does blood in a classical liver lobule primarily flow?",
+        "options": [
+          {
+            "text": "From central vein toward bile ducts",
+            "reason": "That reverses the vascular direction and confuses two fluid systems."
+          },
+          {
+            "text": "Through bile canaliculi",
+            "reason": "Canaliculi carry bile, not blood."
+          },
+          {
+            "text": "From portal-region inputs toward the central vein",
+            "reason": "Correct: blood passes through sinusoids toward central venous drainage."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain why pancreatic endocrine and exocrine products leave by different routes.",
+        "answer": "Exocrine secretions reach the gut through ducts. Endocrine hormones enter the circulation and act on distant targets."
+      },
+      "related": [
+        "nitrogen-metabolism",
+        "pdh-tca",
+        "gi-histology"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "renal-histology",
+      "subject": "histology",
+      "title": "Kidney cortex, medulla and tubules",
+      "summary": "Orient the section, identify a renal corpuscle, then connect tubular appearance to transport.",
+      "tags": [
+        "Organ histology",
+        "kidney",
+        "renal",
+        "nephron",
+        "tubules"
+      ],
+      "source": "histology",
+      "section": "Kidney and Nephron Histology; Tubular Segments; Kidney Practical Identification",
+      "steps": [
+        {
+          "title": "Find the cortex",
+          "body": "Renal corpuscles locate the cortex. Medulla contains straight tubules, loops and collecting ducts but lacks corpuscles. Medullary rays are straight tubular groups extending into cortex; their name does not place them in medulla."
+        },
+        {
+          "title": "Separate filtration from transport",
+          "body": "The renal corpuscle combines a capillary tuft and Bowman capsule. Filtration crosses capillary endothelium, glomerular basement membrane and the podocyte slit apparatus. Filtrate then enters the tubular system rather than becoming final urine immediately."
+        },
+        {
+          "title": "Compare tubular clues",
+          "body": "Proximal tubules have an apical brush border and often an indistinct lumen. Distal tubules have a clearer lumen and lack a prominent brush border. Collecting ducts tend to have more distinct cell boundaries. Identify a pattern across several profiles rather than trusting lumen size alone."
+        }
+      ],
+      "question": {
+        "prompt": "Which feature establishes that a renal section includes cortex?",
+        "options": [
+          {
+            "text": "A renal corpuscle",
+            "reason": "Correct: renal corpuscles are cortical structures."
+          },
+          {
+            "text": "A collecting duct",
+            "reason": "Collecting ducts occur in both cortex and medulla."
+          },
+          {
+            "text": "Any capillary",
+            "reason": "Capillaries occur in both regions."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Why does the proximal tubule have a brush border?",
+        "answer": "Its microvilli expand the apical surface available for extensive reabsorption. Connect this morphology to basolateral transport and the return of solute and water to blood."
+      },
+      "related": [
+        "cell-junctions",
+        "renal-kidney-map",
+        "renal-tubular-transport"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "reproductive-histology",
+      "subject": "histology",
+      "title": "Reproductive histology and cyclic change",
+      "summary": "Connect seminiferous tubules, ovarian follicles and endometrium to their changing functions.",
+      "tags": [
+        "Organ histology",
+        "Integrated embryology",
+        "testis",
+        "ovary",
+        "uterus",
+        "reproduction"
+      ],
+      "source": "histology",
+      "section": "Male Reproductive System; Follicle Development; Uterine Histology",
+      "steps": [
+        {
+          "title": "Read a seminiferous tubule",
+          "body": "Developing germ cells progress from the basal region toward the lumen. Sertoli cells support this environment and form the blood-testis barrier. Leydig cells lie between tubules and produce testosterone. Sperm maturation continues after release into the duct system."
+        },
+        {
+          "title": "Read an ovarian follicle",
+          "body": "An oocyte is surrounded by granulosa cells; developing follicles acquire additional layers and eventually an antrum. Ovulation is followed by luteinization of the residual follicular tissue. A corpus luteum is therefore a postovulatory endocrine structure, not an unfertilized egg."
+        },
+        {
+          "title": "Read the endometrium in context",
+          "body": "Estrogen promotes proliferative growth. Progesterone supports a secretory endometrium with more tortuous glands. Cycle phase changes appearance, so an identification should distinguish organ identity from the hormonal state represented by the specimen."
+        }
+      ],
+      "question": {
+        "prompt": "Where are Leydig cells found?",
+        "options": [
+          {
+            "text": "Inside the oocyte",
+            "reason": "Leydig cells belong to the testis, not the ovary."
+          },
+          {
+            "text": "In the interstitial tissue between seminiferous tubules",
+            "reason": "Correct: their location distinguishes them from supporting Sertoli cells within tubules."
+          },
+          {
+            "text": "In uterine glands",
+            "reason": "Those are endometrial epithelial structures."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain how the corpus luteum links ovulation to uterine change.",
+        "answer": "After ovulation the follicular remnant luteinizes and produces progesterone, which supports secretory transformation of the endometrium."
+      },
+      "related": [
+        "placenta",
+        "meiosis",
+        "epithelia"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "placenta",
+      "subject": "histology",
+      "title": "Placental villi and maternal–fetal exchange",
+      "summary": "Follow villus development and keep maternal blood distinct from fetal capillaries.",
+      "tags": [
+        "Integrated embryology",
+        "Organ histology",
+        "placenta",
+        "implantation",
+        "embryology"
+      ],
+      "source": "histology",
+      "section": "Placental Development and Mammary Microanatomy; Placental Barrier",
+      "steps": [
+        {
+          "title": "Build a villus",
+          "body": "Primary villi are trophoblastic projections. Mesoderm entering the core produces secondary villi. Development of fetal vessels produces tertiary villi. This sequence connects a structural change to the establishment of fetal circulation within the exchange tissue."
+        },
+        {
+          "title": "Keep the two circulations separate",
+          "body": "Maternal blood occupies the intervillous space and bathes villous surfaces. Fetal blood stays inside capillaries in the villous core. Exchange crosses intervening tissues; normal exchange does not require free mixing of the two blood pools."
+        },
+        {
+          "title": "Understand what a barrier means",
+          "body": "The exchange barrier includes trophoblast, basal laminae, stroma and fetal endothelium, and becomes thinner as pregnancy advances. It is selective rather than absolute: some substances and pathogens cross. A structural barrier must not be interpreted as universal protection from exposure."
+        }
+      ],
+      "question": {
+        "prompt": "What distinguishes a tertiary villus from a secondary villus?",
+        "options": [
+          {
+            "text": "Complete absence of trophoblast",
+            "reason": "Trophoblast remains part of the villous interface."
+          },
+          {
+            "text": "Maternal blood inside its fetal capillaries",
+            "reason": "Fetal capillaries contain fetal blood."
+          },
+          {
+            "text": "Fetal vessels in the villous core",
+            "reason": "Correct: vascularization marks the tertiary stage."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Draw the route from maternal blood to fetal blood without joining the circulations.",
+        "answer": "Place maternal blood outside a chorionic villus, trophoblast on its surface, villous tissue internally and fetal capillaries within the core. Label exchange across the separating layers."
+      },
+      "related": [
+        "reproductive-histology",
+        "vessel-histology",
+        "neurulation"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube formation and early organization",
+      "summary": "Connect neural plate folding to the developing central nervous system and distinguish tube from crest.",
+      "tags": [
+        "Integrated embryology",
+        "embryology",
+        "nervous system",
+        "neural tube",
+        "development"
+      ],
+      "source": "histology",
+      "section": "Neurulation and Primary Differentiation of the Neural Tube",
+      "steps": [
+        {
+          "title": "Induce and fold",
+          "body": "Signals from axial tissues including the notochord help organize overlying neural ectoderm. The neural plate forms a groove and elevated folds that meet to make the neural tube. This is a changing three-dimensional geometry, not a simple solid rod."
+        },
+        {
+          "title": "Separate tube and crest",
+          "body": "The neural tube gives rise to the central nervous system. Neural crest cells leave the border region and migrate to diverse destinations, including many peripheral nervous-system structures. Do not use neural tube and neural crest as interchangeable names."
+        },
+        {
+          "title": "Follow the wall layers",
+          "body": "The ventricular zone contains proliferating neuroepithelial cells. The mantle zone accumulates cell bodies and contributes gray matter; the marginal zone contains axons and contributes white matter. In the developing spinal cord, dorsal alar and ventral basal plates relate to sensory and motor organization."
+        }
+      ],
+      "question": {
+        "prompt": "Which structure is the principal precursor of the central nervous system?",
+        "options": [
+          {
+            "text": "Neural tube",
+            "reason": "Correct: neural tube development forms the brain and spinal cord."
+          },
+          {
+            "text": "Neural crest alone",
+            "reason": "Neural crest makes many peripheral and other derivatives, not the whole CNS."
+          },
+          {
+            "text": "Chorionic villi",
+            "reason": "Villi belong to the placental exchange system."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Relate the mantle and marginal zones to later tissue organization.",
+        "answer": "Cell bodies accumulate in the mantle zone, contributing gray matter. Axons occupy the marginal zone, contributing white matter."
+      },
+      "related": [
+        "anatomy-embryology",
+        "meiosis",
+        "placenta"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "dna-replication",
+      "subject": "cell-biology",
+      "title": "DNA replication and strand direction",
+      "summary": "Follow a replication fork and explain why leading and lagging strands need different synthesis patterns.",
+      "tags": [
+        "Molecular mechanisms",
+        "DNA",
+        "replication",
+        "leading strand",
+        "lagging strand"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 5–6: semiconservative replication and replication enzymes",
+      "steps": [
+        {
+          "title": "Read direction before naming enzymes",
+          "body": "Each new duplex contains one parental and one newly synthesized strand. DNA polymerase extends a pre-existing 3′ hydroxyl group, so new DNA grows 5′ to 3′. The antiparallel orientation of the template strands creates the leading–lagging distinction."
+        },
+        {
+          "title": "Open and prime",
+          "body": "Helicase separates strands; single-strand binding proteins protect exposed DNA; topoisomerases relieve torsional stress. Primase supplies a primer because replicative DNA polymerases cannot initiate a strand from nothing. These tasks are related but not interchangeable."
+        },
+        {
+          "title": "Complete and join",
+          "body": "Leading-strand synthesis proceeds continuously toward the moving fork. Lagging-strand synthesis makes Okazaki fragments, each also growing 5′ to 3′. Primer removal, DNA replacement and ligation produce a continuous daughter strand."
+        }
+      ],
+      "question": {
+        "prompt": "In which direction is an individual Okazaki fragment synthesized?",
+        "options": [
+          {
+            "text": "3′ to 5′",
+            "reason": "DNA polymerase cannot extend a new strand in this direction."
+          },
+          {
+            "text": "5′ to 3′",
+            "reason": "Correct: discontinuous synthesis changes the pattern, not the chemical direction of polymerization."
+          },
+          {
+            "text": "In both directions from the same primer",
+            "reason": "A polymerase extends the available 3′ end."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why does lagging-strand synthesis need repeated priming?",
+        "answer": "As the fork opens more template, new fragments must start near the fork and extend away from it. Each fragment requires an initial primer with a free 3′ hydroxyl."
+      },
+      "related": [
+        "dna-repair",
+        "meiosis",
+        "pcr"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "dna-repair",
+      "subject": "cell-biology",
+      "title": "DNA lesions, mutations and repair",
+      "summary": "Match the type of DNA damage to a repair strategy and distinguish damage from a stable sequence change.",
+      "tags": [
+        "Molecular mechanisms",
+        "DNA",
+        "repair",
+        "mutation",
+        "genetics"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 8–13: DNA damage, repair and point mutations",
+      "steps": [
+        {
+          "title": "Separate lesion from mutation",
+          "body": "A lesion is a chemical or structural abnormality in DNA. A mutation is a stable sequence change. Damage can be repaired before it becomes fixed as a mutation, while unrepaired damage may alter replication or transcription. Not every lesion produces the same outcome."
+        },
+        {
+          "title": "Match the repair to the problem",
+          "body": "Base excision repair handles many small base lesions. Nucleotide excision repair removes bulky helix-distorting lesions. Mismatch repair corrects replication mismatches that escape proofreading. Remember the defect being recognized before memorizing a pathway name."
+        },
+        {
+          "title": "Repair a broken chromosome",
+          "body": "Homologous recombination uses a homologous template, often the sister chromatid. Nonhomologous end joining reconnects broken ends and can alter sequence at the junction. Template availability and cell-cycle context help determine the available options."
+        }
+      ],
+      "question": {
+        "prompt": "Which pathway usually handles bulky UV-induced pyrimidine dimers in human cells?",
+        "options": [
+          {
+            "text": "Mismatch repair",
+            "reason": "Mismatch repair primarily addresses mismatches and small insertion/deletion loops after replication."
+          },
+          {
+            "text": "DNA ligation alone",
+            "reason": "Simply joining ends does not remove a bulky base lesion."
+          },
+          {
+            "text": "Nucleotide excision repair",
+            "reason": "Correct: the damaged region is excised and resynthesized."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Why is a DNA lesion not necessarily a permanent mutation?",
+        "answer": "The lesion may be accurately repaired before its information is copied or fixed into the sequence. Outcome depends on the lesion, repair pathway and timing."
+      },
+      "related": [
+        "dna-replication",
+        "inheritance",
+        "genetic-testing"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "rna-processing",
+      "subject": "cell-biology",
+      "title": "From pre-mRNA to mature messenger RNA",
+      "summary": "Connect capping, splicing and polyadenylation to the structure and use of an RNA message.",
+      "tags": [
+        "Molecular mechanisms",
+        "RNA",
+        "transcription",
+        "splicing",
+        "gene expression"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 19–25: eukaryotic transcription and mRNA maturation",
+      "steps": [
+        {
+          "title": "Make and protect the transcript",
+          "body": "RNA polymerase II produces a precursor transcript for most protein-coding genes. Early capping adds a modified guanosine structure to the 5′ end. The cap supports stability and subsequent interactions needed to use the message."
+        },
+        {
+          "title": "Choose the joined sequence",
+          "body": "Splicing removes introns and joins exons. Alternative splicing can produce different RNA isoforms from one gene. Exons include untranslated regions as well as coding sequence, so an exon is not automatically an entirely protein-coding segment."
+        },
+        {
+          "title": "Finish and use the message",
+          "body": "Most eukaryotic mRNAs undergo 3′ cleavage and polyadenylation, then quality-controlled export and translation. The 5′ and 3′ untranslated regions participate in regulation even though ribosomes do not translate them into the protein sequence."
+        }
+      ],
+      "question": {
+        "prompt": "What is removed during conventional pre-mRNA splicing?",
+        "options": [
+          {
+            "text": "Introns",
+            "reason": "Correct: exon sequences are joined after intron removal."
+          },
+          {
+            "text": "Every untranslated region",
+            "reason": "Untranslated regions can remain in mature mRNA and regulate its use."
+          },
+          {
+            "text": "The complete 5′ cap",
+            "reason": "The cap normally remains on mature mRNA."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "How can one gene generate more than one protein isoform?",
+        "answer": "Alternative choices of splice sites and exon combinations can change the coding message. Not every alternative transcript necessarily makes a functional protein."
+      },
+      "related": [
+        "translation",
+        "dna-repair",
+        "genetic-testing"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "translation",
+      "subject": "cell-biology",
+      "title": "Translation: charging, decoding and elongation",
+      "summary": "Explain how a nucleotide message becomes a polypeptide while keeping the roles of tRNA, synthetase and ribosome distinct.",
+      "tags": [
+        "Molecular mechanisms",
+        "proteins",
+        "translation",
+        "ribosome",
+        "genetic code"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 27–31: genetic code, tRNA and ribosome cycle",
+      "steps": [
+        {
+          "title": "Charge the adaptor",
+          "body": "Aminoacyl-tRNA synthetases use ATP to attach the appropriate amino acid to a tRNA. The tRNA anticodon pairs with a codon, but that pairing does not itself verify the attached amino acid. Correct charging is a separate fidelity step."
+        },
+        {
+          "title": "Read the message",
+          "body": "The ribosome reads mRNA in nonoverlapping triplets from 5′ to 3′. Many amino acids have multiple codons, making the code degenerate. A reading frame establishes which triplets are interpreted; shifting it changes downstream meaning."
+        },
+        {
+          "title": "Elongate and terminate",
+          "body": "Charged tRNA enters, peptide bonds form, and the ribosome advances along the message. The chain grows from amino terminus to carboxyl terminus. Stop codons recruit release factors rather than an ordinary aminoacyl-tRNA."
+        }
+      ],
+      "question": {
+        "prompt": "Which component attaches the correct amino acid to its tRNA?",
+        "options": [
+          {
+            "text": "DNA ligase",
+            "reason": "Ligase seals breaks in a nucleic-acid backbone."
+          },
+          {
+            "text": "Aminoacyl-tRNA synthetase",
+            "reason": "Correct: charging and, for many synthetases, editing protect amino-acid assignment."
+          },
+          {
+            "text": "A stop codon",
+            "reason": "A stop codon signals termination; it is not a charging enzyme."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why can correct codon–anticodon pairing still be insufficient for accurate translation?",
+        "answer": "A correctly pairing tRNA could carry an incorrect amino acid if charging failed. Synthetase specificity and editing provide a separate layer of fidelity."
+      },
+      "related": [
+        "rna-processing",
+        "protein-structure",
+        "protein-trafficking"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "protein-trafficking",
+      "subject": "cell-biology",
+      "title": "Protein targeting and the secretory pathway",
+      "summary": "Follow a secreted protein from translation through ER quality control and Golgi sorting.",
+      "tags": [
+        "Cell organization",
+        "proteins",
+        "organelles",
+        "ER",
+        "Golgi",
+        "trafficking",
+        "Cell signaling"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 34–37: ER modifications, quality control and protein sorting",
+      "steps": [
+        {
+          "title": "Read the address",
+          "body": "A targeting signal helps determine a protein’s destination. For many secretory proteins, signal-recognition particle recognizes an emerging ER signal sequence and directs the translating ribosome to the ER translocation apparatus. Different destinations use different addressing systems."
+        },
+        {
+          "title": "Fold and check in the ER",
+          "body": "The ER lumen supports folding, disulfide bond formation and the beginning of N-linked glycosylation. Chaperones help folding and prevent aggregation. Persistently misfolded proteins can be retained and sent to degradation rather than being released as normal cargo."
+        },
+        {
+          "title": "Modify and sort",
+          "body": "Cargo travels through the Golgi, where additional processing and sorting direct it toward secretion, membrane residence or other destinations. A vesicle transfers cargo between compartments while preserving the distinction between cytosolic and luminal faces."
+        }
+      ],
+      "question": {
+        "prompt": "Where does N-linked glycosylation of a typical secretory protein begin?",
+        "options": [
+          {
+            "text": "In the nucleus",
+            "reason": "The nucleus handles transcription and RNA processing, not this secretory-pathway modification."
+          },
+          {
+            "text": "Only outside the cell",
+            "reason": "The modification starts before secretion."
+          },
+          {
+            "text": "In the endoplasmic reticulum",
+            "reason": "Correct: a preassembled glycan is transferred in the ER and can be further processed later."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Why does a secreted protein need more than an mRNA sequence to become functional?",
+        "answer": "It also needs correct translation, targeting, folding, modification, quality control and delivery. Sequence information begins the process but does not replace cellular processing."
+      },
+      "related": [
+        "translation",
+        "cell-junctions",
+        "protein-structure"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "pcr",
+      "subject": "cell-biology",
+      "title": "PCR, qPCR and reverse transcription",
+      "summary": "Distinguish amplification, real-time measurement and the conversion of RNA to DNA.",
+      "tags": [
+        "Molecular mechanisms",
+        "PCR",
+        "qPCR",
+        "RT-PCR",
+        "laboratory",
+        "DNA"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 14 and 26: PCR and analysis of gene expression",
+      "steps": [
+        {
+          "title": "Define the target",
+          "body": "PCR uses template DNA, two primers, a suitable DNA polymerase and nucleotides. The primers define a region to amplify. Repeated denaturation, annealing and extension cycles enrich that region; the technique does not automatically read its complete sequence."
+        },
+        {
+          "title": "Distinguish the abbreviations",
+          "body": "qPCR follows amplification through fluorescence during cycling. Reverse transcription converts RNA into complementary DNA before amplification. These are separate ideas: RT refers to the RNA-to-DNA step, while real-time monitoring is described as qPCR."
+        },
+        {
+          "title": "Interpret with controls",
+          "body": "A no-template control checks contamination. For RNA experiments, a no-reverse-transcriptase control helps detect DNA contamination. Under comparable assay conditions, a lower quantification cycle generally indicates more starting target, but efficiency and normalization constrain comparisons."
+        }
+      ],
+      "question": {
+        "prompt": "Why add reverse transcription when studying an RNA transcript by PCR?",
+        "options": [
+          {
+            "text": "To create a DNA template from the RNA",
+            "reason": "Correct: conventional PCR amplifies DNA; reverse transcriptase supplies complementary DNA."
+          },
+          {
+            "text": "To eliminate the need for primers",
+            "reason": "PCR still requires primers."
+          },
+          {
+            "text": "To make every fluorescence signal a diagnosis",
+            "reason": "Signal interpretation still depends on assay design, controls and context."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "What does a positive no-template control suggest?",
+        "answer": "It suggests contamination or nonspecific signal and requires investigation before interpreting the samples. It is not evidence of a true target in every specimen."
+      },
+      "related": [
+        "rna-processing",
+        "genetic-testing",
+        "dna-replication"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "protein-structure",
+      "subject": "biochemistry",
+      "title": "Protein structure and collagen",
+      "summary": "Relate amino-acid properties, folding and extracellular assembly to protein function.",
+      "tags": [
+        "Biomolecules",
+        "Molecular foundations",
+        "proteins",
+        "amino acids",
+        "collagen"
+      ],
+      "source": "biochemistry",
+      "section": "Amino Acids; Proteins; Collagen",
+      "steps": [
+        {
+          "title": "Start with the sequence",
+          "body": "A protein’s primary structure is its amino-acid sequence. Side-chain charge, hydrophobicity and geometry influence interactions with water and neighboring residues. Ionizable groups change protonation with pH, so charge is contextual rather than a permanent label for the whole protein."
+        },
+        {
+          "title": "Build the folded structure",
+          "body": "Local backbone arrangements form secondary structure. Tertiary structure describes the overall fold of one polypeptide; quaternary structure describes association of multiple subunits. Disrupting folding can impair function without changing the original amino-acid sequence."
+        },
+        {
+          "title": "Use collagen as an example",
+          "body": "Collagen assembly requires a characteristic triple-helical organization and post-translational processing. Hydroxylation and later extracellular cross-linking support stability. Its role in matrix connects molecular structure to the tensile behavior of connective tissues."
+        }
+      ],
+      "question": {
+        "prompt": "What does quaternary structure describe?",
+        "options": [
+          {
+            "text": "The order of bases in a gene",
+            "reason": "That is a nucleic-acid sequence, not protein subunit organization."
+          },
+          {
+            "text": "The association of multiple polypeptide subunits",
+            "reason": "Correct: it describes the arrangement of subunits in a protein complex."
+          },
+          {
+            "text": "Only a local alpha helix",
+            "reason": "Local helices are examples of secondary structure."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Connect collagen processing to connective-tissue mechanics.",
+        "answer": "Proper folding, processing and cross-linking allow collagen molecules to form load-bearing assemblies. Defective assembly can compromise the matrix even when cells are present."
+      },
+      "related": [
+        "connective-tissue",
+        "translation",
+        "protein-trafficking"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "enzyme-kinetics",
+      "subject": "biochemistry",
+      "title": "Enzyme catalysis and inhibition",
+      "summary": "Separate reaction rate from equilibrium and compare substrate competition with loss of catalytic capacity.",
+      "tags": [
+        "Molecular foundations",
+        "Metabolic pathways",
+        "enzymes",
+        "Km",
+        "Vmax",
+        "inhibition"
+      ],
+      "source": "biochemistry",
+      "section": "Enzymes: Catalysts of Life",
+      "steps": [
+        {
+          "title": "Change the route, not the equilibrium",
+          "body": "Enzymes lower the activation barrier and accelerate the approach to equilibrium. They do not change the equilibrium constant or make an unfavorable overall reaction favorable merely by being present. Coupling to another reaction is a different mechanism."
+        },
+        {
+          "title": "Read a saturation curve",
+          "body": "In a simple Michaelis–Menten model, rate approaches Vmax as substrate rises. Km is the substrate concentration at half Vmax under that model. It is an operational kinetic parameter and should not automatically be equated with binding affinity in every mechanism."
+        },
+        {
+          "title": "State the inhibition model",
+          "body": "For reversible competitive inhibition in the simple model, apparent Km rises while Vmax is unchanged. Pure noncompetitive inhibition lowers Vmax without changing Km. Mixed inhibition is more general; binding away from an active site alone does not prove pure noncompetitive behavior."
+        }
+      ],
+      "question": {
+        "prompt": "In the simple competitive model, what happens to apparent Km and Vmax?",
+        "options": [
+          {
+            "text": "Both must fall",
+            "reason": "This is not the competitive pattern."
+          },
+          {
+            "text": "Vmax falls while Km is unchanged",
+            "reason": "That describes pure noncompetitive inhibition."
+          },
+          {
+            "text": "Km rises while Vmax is unchanged",
+            "reason": "Correct: sufficient substrate can overcome reversible competition in this model."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Why can adding enzyme accelerate a reaction without changing its final equilibrium?",
+        "answer": "Catalysis lowers the kinetic barrier for forward and reverse reaction paths. It changes how quickly equilibrium is reached, not the relative free energies of reactants and products."
+      },
+      "related": [
+        "glycolysis",
+        "pdh-tca",
+        "protein-structure"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "glycolysis",
+      "subject": "biochemistry",
+      "title": "Glycolysis and lactate recycling",
+      "summary": "Track carbon, ATP and reducing equivalents through the conversion of glucose to pyruvate.",
+      "tags": [
+        "Metabolic pathways",
+        "carbohydrates",
+        "glycolysis",
+        "lactate",
+        "glucose"
+      ],
+      "source": "biochemistry",
+      "section": "Glycolysis; Metabolic Cycles: Cori and Glucose-Alanine",
+      "steps": [
+        {
+          "title": "Invest and recover ATP",
+          "body": "Cytosolic glycolysis converts one glucose to two pyruvate molecules. Two ATP are invested and four are produced by substrate-level phosphorylation, yielding a net two ATP. The pathway also reduces NAD+ to NADH."
+        },
+        {
+          "title": "Regenerate the electron acceptor",
+          "body": "For glycolysis to continue, NAD+ must be available. Lactate dehydrogenase can reduce pyruvate to lactate while regenerating NAD+. Lactate formation does not itself add ATP; it supports continued ATP production by glycolysis."
+        },
+        {
+          "title": "Connect tissues",
+          "body": "Lactate can leave a tissue and be used by another. In the Cori cycle, liver uses energy to make glucose from lactate. Recycling moves carbon between tissues and shifts the energy cost; it does not create free energy."
+        }
+      ],
+      "question": {
+        "prompt": "What is the direct purpose of reducing pyruvate to lactate during continued glycolysis?",
+        "options": [
+          {
+            "text": "Regenerate NAD+",
+            "reason": "Correct: this sustains the oxidation step of glycolysis."
+          },
+          {
+            "text": "Produce four additional ATP per lactate",
+            "reason": "Lactate dehydrogenase does not directly generate ATP."
+          },
+          {
+            "text": "Convert lactate directly into acetyl-CoA",
+            "reason": "That is not the lactate dehydrogenase reaction."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Account for the net ATP yield from one glucose in glycolysis.",
+        "answer": "Two ATP are consumed in the investment phase and four are produced later. The net yield is two ATP, independent of ATP generated by subsequent mitochondrial pathways."
+      },
+      "related": [
+        "pdh-tca",
+        "enzyme-kinetics",
+        "liver-pancreas"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "pdh-tca",
+      "subject": "biochemistry",
+      "title": "Pyruvate dehydrogenase and the TCA cycle",
+      "summary": "Follow pyruvate into mitochondrial carbon oxidation while distinguishing carbon flux from electron transport.",
+      "tags": [
+        "Metabolic pathways",
+        "TCA",
+        "Krebs",
+        "citric acid",
+        "mitochondria",
+        "pyruvate"
+      ],
+      "source": "biochemistry",
+      "section": "Pyruvate Dehydrogenase Complex and the Citric Acid Cycle",
+      "steps": [
+        {
+          "title": "Cross the pyruvate gate",
+          "body": "The pyruvate dehydrogenase complex converts pyruvate to acetyl-CoA, releasing CO2 and producing NADH. This oxidative decarboxylation is effectively irreversible in human metabolism. It links glycolytic carbon to mitochondrial oxidation."
+        },
+        {
+          "title": "Follow the cycle",
+          "body": "Acetyl-CoA combines with oxaloacetate to form citrate. Subsequent reactions regenerate oxaloacetate while producing reduced electron carriers, CO2 and a substrate-level phosphorylation product. Oxaloacetate is a regenerated acceptor, yet withdrawal of intermediates requires replenishment."
+        },
+        {
+          "title": "Separate coupled processes",
+          "body": "NADH and FAD-linked reducing equivalents support respiratory-chain electron transfer. Oxygen is the terminal electron acceptor of that chain, not a direct substrate in each TCA reaction. Sustained oxidative flux nevertheless depends on reoxidation of the reduced carriers."
+        }
+      ],
+      "question": {
+        "prompt": "Which statement about oxaloacetate is most accurate?",
+        "options": [
+          {
+            "text": "It is consumed permanently in every turn",
+            "reason": "The cycle regenerates it, although intermediates can be withdrawn for other uses."
+          },
+          {
+            "text": "It is regenerated and can require anaplerotic replenishment",
+            "reason": "Correct: cycling and replenishment are compatible concepts."
+          },
+          {
+            "text": "It is identical to acetyl-CoA",
+            "reason": "They have different structures and roles."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why can respiratory-chain failure slow the TCA cycle?",
+        "answer": "Reduced carriers are not efficiently reoxidized. The resulting redox state limits oxidative reactions and therefore slows continued cycle flux."
+      },
+      "related": [
+        "glycolysis",
+        "lipid-metabolism",
+        "enzyme-kinetics"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "lipid-metabolism",
+      "subject": "biochemistry",
+      "title": "Fatty-acid synthesis and fuel storage",
+      "summary": "Locate fatty-acid synthesis and distinguish its reducing power and purpose from fuel oxidation.",
+      "tags": [
+        "Biomolecules",
+        "Metabolic pathways",
+        "lipids",
+        "fatty acids",
+        "NADPH",
+        "membrane"
+      ],
+      "source": "biochemistry",
+      "section": "Fatty Acid Synthesis, Regulation, and Lipid Synthesis",
+      "steps": [
+        {
+          "title": "Locate the synthesis machinery",
+          "body": "De novo fatty-acid synthesis occurs mainly in the cytosol. Acetyl-CoA carboxylase produces malonyl-CoA, which provides two-carbon building units for fatty-acid synthase. Elongation and desaturation also involve the endoplasmic reticulum."
+        },
+        {
+          "title": "Supply reducing power",
+          "body": "Fatty-acid synthesis uses NADPH for reduction. This differs from pathways that oxidize fuel and generate NADH for respiratory-chain ATP production. Remember the direction of electron flow before treating NADH and NADPH as interchangeable abbreviations."
+        },
+        {
+          "title": "Choose storage or structure",
+          "body": "Fatty acids can enter triacylglycerols for energy storage or membrane lipids for structural and signaling roles. Insulin and cellular energy state help coordinate synthesis with nutrient availability. A lipid molecule’s function depends on its complete molecular context."
+        }
+      ],
+      "question": {
+        "prompt": "Which reduced carrier is used directly by fatty-acid synthase?",
+        "options": [
+          {
+            "text": "NADH exclusively",
+            "reason": "NADH is prominent in fuel oxidation; fatty-acid synthase uses NADPH."
+          },
+          {
+            "text": "Oxidized FAD",
+            "reason": "Oxidized FAD is not the reducing donor for fatty-acid synthase."
+          },
+          {
+            "text": "NADPH",
+            "reason": "Correct: NADPH supplies reducing equivalents for synthesis."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Contrast a triacylglycerol with a membrane phospholipid.",
+        "answer": "Triacylglycerols are largely hydrophobic storage molecules. Phospholipids have both hydrophobic and hydrophilic regions, allowing organized membrane bilayers."
+      },
+      "related": [
+        "pdh-tca",
+        "protein-trafficking",
+        "glycolysis"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "nitrogen-metabolism",
+      "subject": "biochemistry",
+      "title": "Amino-acid nitrogen and urea",
+      "summary": "Separate the fate of amino nitrogen from the use of the remaining carbon skeleton.",
+      "tags": [
+        "Metabolic pathways",
+        "Molecular foundations",
+        "amino acids",
+        "urea",
+        "nitrogen",
+        "liver"
+      ],
+      "source": "biochemistry",
+      "section": "Metabolism of Amino Acids; Nitrogen Balance",
+      "steps": [
+        {
+          "title": "Separate carbon from nitrogen",
+          "body": "Amino-acid metabolism handles two connected problems: use of the carbon skeleton and safe processing of nitrogen. Transamination transfers an amino group to a keto acid, commonly collecting nitrogen on glutamate. The carbon skeleton can enter other metabolic pathways."
+        },
+        {
+          "title": "Transport and dispose",
+          "body": "Glutamine and alanine help transport nitrogen between tissues. The liver converts much waste nitrogen to urea through reactions spanning mitochondria and cytosol. The kidneys then excrete urea; hepatic production and renal elimination are distinct steps."
+        },
+        {
+          "title": "Read the balance",
+          "body": "Nitrogen balance compares nitrogen intake with output. Positive balance can accompany net tissue growth; negative balance can accompany net tissue loss. It is an accounting concept whose interpretation depends on complete measurements and the physiological setting."
+        }
+      ],
+      "question": {
+        "prompt": "Which pairing correctly separates the major roles in urea handling?",
+        "options": [
+          {
+            "text": "Liver synthesis; kidney excretion",
+            "reason": "Correct: distinguish conversion of waste nitrogen from elimination of the resulting urea."
+          },
+          {
+            "text": "Kidney synthesis; liver filtration",
+            "reason": "This reverses the principal roles."
+          },
+          {
+            "text": "Lung synthesis; pancreatic storage",
+            "reason": "These are not the principal routes of urea handling."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Why is removal of an amino group not the end of amino-acid metabolism?",
+        "answer": "The nitrogen still requires transfer, transport and disposal, while the remaining carbon skeleton can be oxidized or used in biosynthesis."
+      },
+      "related": [
+        "liver-pancreas",
+        "renal-filtration-and-clearance",
+        "protein-structure"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "meiosis",
+      "subject": "genetics",
+      "title": "Meiosis, nondisjunction and mosaicism",
+      "summary": "Follow homologs and sister chromatids through division and distinguish meiotic from postzygotic errors.",
+      "tags": [
+        "Genetics",
+        "Inheritance and variation",
+        "meiosis",
+        "chromosomes",
+        "mosaicism"
+      ],
+      "source": "genetics",
+      "section": "G2: Mitosis and meiosis; Nondisjunction, anaphase lag and mosaicism",
+      "steps": [
+        {
+          "title": "Replicate once, divide twice",
+          "body": "Meiosis follows one round of DNA replication with two divisions. Homologous chromosomes separate in meiosis I; sister chromatids separate in meiosis II. Crossing-over and independent assortment contribute to genetically varied gametes."
+        },
+        {
+          "title": "Locate the segregation error",
+          "body": "Nondisjunction is failure of the expected chromosome separation. The consequences depend on which division fails. Distinguish adding or losing an individual chromosome from adding an entire chromosome set; aneuploidy and polyploidy are different categories."
+        },
+        {
+          "title": "Ask when the error occurred",
+          "body": "A postzygotic mitotic error can create genetically different cell populations within one individual. This is mosaicism. Which tissues contain a cell line and how many cells are affected influence both detection and biological consequences."
+        }
+      ],
+      "question": {
+        "prompt": "What normally separates in meiosis I?",
+        "options": [
+          {
+            "text": "Sister chromatids only",
+            "reason": "Sister chromatids normally separate in meiosis II."
+          },
+          {
+            "text": "Homologous chromosomes",
+            "reason": "Correct: homologs segregate while sister chromatids remain paired."
+          },
+          {
+            "text": "All chromosomes are destroyed",
+            "reason": "Meiosis segregates genetic material rather than destroying it."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why can one tissue sample fail to detect mosaicism elsewhere?",
+        "answer": "The altered cell lineage may be absent or uncommon in that specimen. Tissue distribution and method sensitivity limit what a negative result establishes."
+      },
+      "related": [
+        "dna-replication",
+        "inheritance",
+        "genetic-testing"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "inheritance",
+      "subject": "genetics",
+      "title": "Inheritance patterns, penetrance and expressivity",
+      "summary": "Use a pedigree as evidence while keeping inheritance pattern, disease expression and mechanism separate.",
+      "tags": [
+        "Genetics",
+        "Inheritance and variation",
+        "pedigree",
+        "dominant",
+        "recessive",
+        "penetrance"
+      ],
+      "source": "genetics",
+      "section": "G1: Variant-to-phenotype reasoning; G6–G7: Mendelian inheritance",
+      "steps": [
+        {
+          "title": "State the model",
+          "body": "Under a simple autosomal dominant model, a heterozygous parent and a partner without the variant give each child a one-half chance of inheriting it. Under a simple autosomal recessive model, two heterozygous parents give a one-quarter chance of an affected genotype per pregnancy."
+        },
+        {
+          "title": "Separate inheritance from expression",
+          "body": "Penetrance describes whether a genotype manifests the associated phenotype. Expressivity describes variation in features or severity among those who express it. Inheriting a variant and showing a specific clinical picture are therefore different events."
+        },
+        {
+          "title": "Explain exceptions before discarding the model",
+          "body": "De novo variants, reduced penetrance, mosaicism and limited family size can obscure an expected pedigree pattern. Probability applies separately to each conception under the specified assumptions; previous outcomes do not force the next child’s result."
+        }
+      ],
+      "question": {
+        "prompt": "What does reduced penetrance mean?",
+        "options": [
+          {
+            "text": "Every affected person has identical severity",
+            "reason": "Variation in severity is expressivity, and identical severity is not required."
+          },
+          {
+            "text": "The variant cannot be inherited",
+            "reason": "Transmission and expression are different questions."
+          },
+          {
+            "text": "Some people with the genotype do not show the associated phenotype",
+            "reason": "Correct: expression is incomplete among people carrying that genotype."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Why is a recurrence probability not a prediction for one particular child?",
+        "answer": "It describes possible outcomes under a genetic model. A single pregnancy has one realized outcome, and uncertainty in the model or family data may further limit the estimate."
+      },
+      "related": [
+        "meiosis",
+        "dna-repair",
+        "genetic-testing"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "genetic-testing",
+      "subject": "genetics",
+      "title": "Choosing and interpreting a genetic test",
+      "summary": "Match a method to the variant class and explain why a negative result has a defined scope.",
+      "tags": [
+        "Genetics",
+        "Inheritance and variation",
+        "testing",
+        "sequencing",
+        "microarray",
+        "PCR"
+      ],
+      "source": "genetics",
+      "section": "G8: Match the molecular method to the clinical question",
+      "steps": [
+        {
+          "title": "Define what needs detection",
+          "body": "A single-nucleotide change, repeat expansion, copy-number alteration and methylation change are different targets. No single routine method detects all classes equally well. The question and suspected mechanism should come before the choice of instrument."
+        },
+        {
+          "title": "Compare method scope",
+          "body": "PCR amplifies a defined region. Sanger sequencing reads a relatively limited sequence; massively parallel methods examine many regions but still have coverage constraints. Chromosomal microarrays detect copy-number imbalance and generally do not detect balanced rearrangements or most individual base substitutions."
+        },
+        {
+          "title": "Interpret the evidence",
+          "body": "A result must be considered with phenotype, inheritance, specimen and assay limitations. A variant of uncertain significance is not a confirmed causal diagnosis. A negative result only addresses abnormalities the method could detect in the tested sample."
+        }
+      ],
+      "question": {
+        "prompt": "Which finding is usually outside the scope of a standard copy-number microarray?",
+        "options": [
+          {
+            "text": "A balanced rearrangement without a dosage change",
+            "reason": "Correct: copy-number methods generally need a gain or loss to detect the change."
+          },
+          {
+            "text": "A sufficiently large detectable deletion",
+            "reason": "A deletion may be detected within the platform’s coverage and resolution."
+          },
+          {
+            "text": "A sufficiently large detectable duplication",
+            "reason": "A duplication may be detected within the platform’s coverage and resolution."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Give two reasons a negative test may not exclude a genetic explanation.",
+        "answer": "The method may not detect the relevant variant class, or the tested tissue and sequencing coverage may miss the alteration. Other explanations depend on the specific assay."
+      },
+      "related": [
+        "pcr",
+        "inheritance",
+        "rna-processing"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "innate-adaptive",
+      "subject": "genetics",
+      "title": "Innate and adaptive immunity",
+      "summary": "Compare recognition strategies and follow the connection from a tissue barrier to lymphocyte activation.",
+      "tags": [
+        "Immunology",
+        "immune system",
+        "innate",
+        "adaptive",
+        "barrier",
+        "antibodies"
+      ],
+      "source": "genetics",
+      "section": "I1–I2: Lymphoid organs; Innate defense and effector cells",
+      "steps": [
+        {
+          "title": "Begin at the barrier",
+          "body": "Epithelial junctions, mucus, antimicrobial products and controlled flow reduce access to tissues. Innate sensors recognize conserved microbial patterns or signs of cell damage. Their location helps define which compartment is being monitored."
+        },
+        {
+          "title": "Recruit an immediate response",
+          "body": "Phagocytes ingest material and inflammatory signals recruit additional cells. Natural killer cells integrate activating and inhibitory signals to assess potential targets. Dendritic cells connect local antigen capture to activation of naive T cells."
+        },
+        {
+          "title": "Build a specific response",
+          "body": "B- and T-cell populations carry diverse antigen receptors generated during development. Antigen-driven selection expands relevant clones and can establish memory. Adaptive responses rely on innate instructions, while antibodies and T cells can in turn strengthen innate effector functions."
+        }
+      ],
+      "question": {
+        "prompt": "Which cell is especially important for priming naive T cells?",
+        "options": [
+          {
+            "text": "Mature erythrocyte",
+            "reason": "An erythrocyte is not a professional antigen-presenting cell."
+          },
+          {
+            "text": "Dendritic cell",
+            "reason": "Correct: dendritic cells link antigen capture, presentation and activation of naive T cells."
+          },
+          {
+            "text": "Platelet alone",
+            "reason": "Platelets have inflammatory roles but are not the standard naive-T-cell priming cell."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why is innate immunity more than a temporary placeholder before adaptive immunity?",
+        "answer": "It provides ongoing barriers, recognition and effector functions, instructs adaptive activation and remains involved after antibodies and effector T cells develop."
+      },
+      "related": [
+        "lymphoid-organs",
+        "antigen-presentation",
+        "complement"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "antigen-presentation",
+      "subject": "genetics",
+      "title": "MHC I, MHC II and T-cell recognition",
+      "summary": "Keep the presenting cell, peptide source and recognizing T cell distinct.",
+      "tags": [
+        "Immunology",
+        "MHC",
+        "HLA",
+        "CD4",
+        "CD8",
+        "antigen presentation"
+      ],
+      "source": "genetics",
+      "section": "I5: Antigen processing and presentation; I7: T-cell activation",
+      "steps": [
+        {
+          "title": "Class I: inspect intracellular material",
+          "body": "The conventional class I pathway presents peptides generated from cytosolic proteins. Proteasomal processing and TAP transport support loading in the ER. CD8 T cells recognize peptide–MHC I complexes displayed on another cell."
+        },
+        {
+          "title": "Class II: inspect vesicular material",
+          "body": "Professional antigen-presenting cells process material in vesicular compartments and display peptides on class II. CD4 T cells recognize peptide–MHC II complexes. The antigen-presenting cell displays the peptide; the T cell is the recognizing partner."
+        },
+        {
+          "title": "Add activation context",
+          "body": "Recognition alone is not the complete naive-T-cell activation program. Co-stimulation and cytokines help determine the response. Cross-presentation also allows some extracellular material to enter class I presentation, so peptide source rules need appropriate qualification."
+        }
+      ],
+      "question": {
+        "prompt": "Which pairing describes conventional class II recognition?",
+        "options": [
+          {
+            "text": "MHC II with CD8",
+            "reason": "CD8 is conventionally associated with class I recognition."
+          },
+          {
+            "text": "Free antibody with a ribosome",
+            "reason": "This is unrelated to conventional T-cell peptide recognition."
+          },
+          {
+            "text": "Peptide–MHC II with a CD4 T cell",
+            "reason": "Correct: the CD4 cell recognizes material displayed by the presenting cell."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Why is antigen presentation not equivalent to automatic T-cell activation?",
+        "answer": "Naive T cells also require an appropriate co-stimulatory and cytokine environment. The context can promote activation or contribute to tolerance."
+      },
+      "related": [
+        "innate-adaptive",
+        "lymphoid-organs",
+        "protein-trafficking"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "complement",
+      "subject": "genetics",
+      "title": "Complement pathways and their shared effectors",
+      "summary": "Follow three initiation routes toward opsonization, inflammation and terminal complex formation.",
+      "tags": [
+        "Immunology",
+        "complement",
+        "C3",
+        "C5",
+        "opsonization",
+        "innate"
+      ],
+      "source": "genetics",
+      "section": "I3: Three pathways converge on C3 activation; Regulation protects host surfaces",
+      "steps": [
+        {
+          "title": "Converge on C3",
+          "body": "Classical, lectin and alternative pathways begin differently but produce C3-cleaving activity. Classical initiation often involves antibody-containing complexes; lectin recognition detects carbohydrate patterns; the alternative pathway contributes activation and amplification on suitable surfaces."
+        },
+        {
+          "title": "Separate the outputs",
+          "body": "C3b and related fragments promote opsonization. C3a and C5a participate in inflammatory signaling, with C5a an important chemoattractant. C5b initiates formation of the C5b–9 membrane-attack complex. These fragments have distinct functions despite similar names."
+        },
+        {
+          "title": "Protect host tissue",
+          "body": "Complement needs regulation to avoid indiscriminate injury. CD55 accelerates convertase decay, while CD59 limits terminal complex assembly. Other soluble and membrane regulators act at earlier steps. Uncontrolled amplification can damage host cells as well as targets."
+        }
+      ],
+      "question": {
+        "prompt": "Which complement output primarily promotes opsonization?",
+        "options": [
+          {
+            "text": "C3b",
+            "reason": "Correct: deposited C3b and its derivatives help phagocytes recognize coated targets."
+          },
+          {
+            "text": "C5b–9 alone",
+            "reason": "The terminal complex acts through membrane insertion rather than being the main opsonin."
+          },
+          {
+            "text": "CD59",
+            "reason": "CD59 regulates terminal-complex assembly on host surfaces."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain why activating complement and limiting complement are both necessary.",
+        "answer": "Activation labels and attacks targets and recruits responses. Regulation limits amplification and terminal injury on host surfaces, preserving useful defense without uncontrolled tissue damage."
+      },
+      "related": [
+        "innate-adaptive",
+        "antigen-presentation",
+        "blood-marrow"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "membrane-potentials",
+      "subject": "physiology",
+      "title": "Resting potential and the action potential",
+      "summary": "Connect ion gradients, selective permeability and channel timing to electrical signals.",
+      "tags": [
+        "Cellular physiology",
+        "membrane",
+        "Nernst",
+        "action potential",
+        "neurons"
+      ],
+      "source": "cellular",
+      "section": "Sections 1.5–1.6: Resting membrane and action potentials",
+      "steps": [
+        {
+          "title": "Create the resting voltage",
+          "body": "Concentration gradients and selective permeability determine membrane potential. In many resting excitable cells, potassium permeability strongly influences the voltage. The sodium–potassium pump maintains the gradients and also has a smaller direct electrogenic effect."
+        },
+        {
+          "title": "Cross threshold",
+          "body": "In a simplified neuronal model, depolarization opens voltage-gated sodium channels, producing regenerative inward current. An action potential is all-or-none for a given cell under specified conditions; stronger sustained stimulation is often encoded through frequency rather than endlessly larger spikes."
+        },
+        {
+          "title": "Recover excitability",
+          "body": "Sodium-channel inactivation and delayed potassium current support repolarization. Recovery from inactivation underlies refractory behavior. Channel contributions differ among neurons, skeletal muscle, working cardiac cells and pacemaker cells; one waveform does not represent all excitable tissues."
+        }
+      ],
+      "question": {
+        "prompt": "What is the essential long-term role of the sodium–potassium pump?",
+        "options": [
+          {
+            "text": "Directly create every action-potential upstroke",
+            "reason": "The rapid upstroke in the simple neuronal model mainly reflects channel currents."
+          },
+          {
+            "text": "Maintain the ionic gradients on which electrical signaling depends",
+            "reason": "Correct: its sustained transport preserves the gradients used by channels."
+          },
+          {
+            "text": "Make the membrane equally permeable to all ions",
+            "reason": "Selective permeability is central to the resting voltage."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why can a neuron temporarily resist firing again after an action potential?",
+        "answer": "Many sodium channels are inactivated and must recover as the membrane repolarizes; additional conductances also influence relative refractoriness."
+      },
+      "related": [
+        "muscle-histology",
+        "cell-junctions",
+        "cell-signaling"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "cardiac-output",
+      "subject": "physiology",
+      "title": "Stroke volume, cardiac output and pump regulation",
+      "summary": "Keep volume per beat, volume per minute and the fraction ejected separate.",
+      "tags": [
+        "Cardiovascular physiology",
+        "heart",
+        "cardiac output",
+        "stroke volume",
+        "preload",
+        "contractility"
+      ],
+      "source": "cardiovascular",
+      "section": "Section 2.4: Cardiac Pump Function and Output",
+      "steps": [
+        {
+          "title": "Define each quantity",
+          "body": "Stroke volume is end-diastolic volume minus end-systolic volume. Cardiac output equals heart rate multiplied by stroke volume. Ejection fraction divides stroke volume by end-diastolic volume. The quantities describe different aspects of pumping and have different units."
+        },
+        {
+          "title": "Change filling",
+          "body": "Increased venous return can increase end-diastolic filling and preload. Within physiological limits, length-dependent activation increases force and stroke volume: the Frank–Starling mechanism. This is not the same as an increase in intrinsic contractility."
+        },
+        {
+          "title": "Change the pump state",
+          "body": "Contractility describes changes in force generation at a given starting length and loading context. Sympathetic beta1 signaling can increase inotropy. Afterload also affects ejection, so a change in ejection fraction cannot automatically be assigned to one mechanism."
+        }
+      ],
+      "question": {
+        "prompt": "For an illustrative heart rate of 60/min and stroke volume of 70 mL, what is cardiac output?",
+        "options": [
+          {
+            "text": "70 mL/min",
+            "reason": "This ignores the number of beats per minute."
+          },
+          {
+            "text": "130 L/min",
+            "reason": "Heart rate and stroke volume are multiplied, not added."
+          },
+          {
+            "text": "4.2 L/min",
+            "reason": "Correct: 60 × 70 = 4,200 mL/min, or 4.2 L/min."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Why is Frank–Starling recruitment different from increased contractility?",
+        "answer": "Frank–Starling changes force through altered initial filling and fiber length. Increased contractility changes the pump’s force-generating state at a comparable starting length."
+      },
+      "related": [
+        "baroreflex",
+        "muscle-histology",
+        "vessel-histology"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "baroreflex",
+      "subject": "physiology",
+      "title": "The arterial baroreceptor reflex",
+      "summary": "Trace a pressure change from arterial stretch through afferent nerves to autonomic effectors.",
+      "tags": [
+        "Cardiovascular physiology",
+        "Cellular physiology",
+        "baroreceptor",
+        "autonomic",
+        "blood pressure"
+      ],
+      "source": "cardiovascular",
+      "section": "Arterial Baroreceptor Reflex versus Bainbridge Reflex",
+      "steps": [
+        {
+          "title": "Sense stretch",
+          "body": "Carotid-sinus and aortic-arch receptors respond to stretch associated with arterial pressure. Carotid signals travel predominantly through the glossopharyngeal pathway; aortic signals travel through the vagus. These are sensory inputs, not the final autonomic outputs."
+        },
+        {
+          "title": "Integrate the change",
+          "body": "The medullary network, including nucleus tractus solitarius, adjusts autonomic activity. A rise in arterial pressure generally increases baroreceptor signaling, increases cardiac vagal influence and reduces sympathetic outflow. A fall produces the opposite compensatory tendency."
+        },
+        {
+          "title": "Act on heart and vessels",
+          "body": "Changes in heart rate, contractility and vascular tone buffer the pressure disturbance. This is rapid feedback, not a complete account of long-term pressure control. Distinguish the arterial reflex from atrial stretch responses associated with increased venous return."
+        }
+      ],
+      "question": {
+        "prompt": "What is the usual immediate autonomic response to increased arterial pressure?",
+        "options": [
+          {
+            "text": "Increased cardiac vagal activity and reduced sympathetic outflow",
+            "reason": "Correct: these changes help buffer the rise in pressure."
+          },
+          {
+            "text": "Obligatory acceleration of the heart",
+            "reason": "That is not the usual arterial baroreflex response to increased pressure."
+          },
+          {
+            "text": "No change in autonomic activity",
+            "reason": "Autonomic adjustment is the central effector mechanism of the reflex."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Trace the response to standing using stimulus, sensor, integration and effector.",
+        "answer": "Reduced central filling and arterial pressure reduce arterial stretch signaling. Medullary integration favors sympathetic activation and vagal withdrawal, supporting heart rate and vascular tone."
+      },
+      "related": [
+        "cardiac-output",
+        "vessel-histology",
+        "renal-volume-and-osmolality"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "ventilation-perfusion",
+      "subject": "physiology",
+      "title": "Ventilation, perfusion and gas exchange",
+      "summary": "Distinguish air delivery, blood delivery and diffusion across the respiratory membrane.",
+      "tags": [
+        "Respiratory physiology",
+        "lung",
+        "ventilation",
+        "perfusion",
+        "V/Q",
+        "gas exchange"
+      ],
+      "source": "respiratory",
+      "section": "Sections 3.2–3.3: Gas Exchange and Circulation; Gas Transport",
+      "steps": [
+        {
+          "title": "Deliver air and blood",
+          "body": "Ventilation brings fresh gas to alveoli; perfusion brings blood to pulmonary capillaries. Effective exchange depends on their regional matching. Minute ventilation includes dead-space ventilation, so it does not directly equal fresh gas reaching exchange surfaces."
+        },
+        {
+          "title": "Compare the limiting patterns",
+          "body": "Very low ventilation relative to perfusion approaches a shunt-like pattern. Ventilation without perfusion is dead space. These are different ways to waste one side of the exchange system; neither is explained solely by membrane thickness."
+        },
+        {
+          "title": "Add diffusion and transport",
+          "body": "Gas crosses the barrier down partial-pressure gradients. Surface area, diffusion distance and gas properties affect transfer. Oxygen content then depends strongly on hemoglobin as well as saturation and dissolved oxygen; a partial pressure is not itself a complete oxygen-content measurement."
+        }
+      ],
+      "question": {
+        "prompt": "What does ventilation without perfusion represent?",
+        "options": [
+          {
+            "text": "A pure shunt",
+            "reason": "A shunt-like limit is perfusion without ventilation."
+          },
+          {
+            "text": "Dead space",
+            "reason": "Correct: ventilated gas cannot exchange with absent blood flow."
+          },
+          {
+            "text": "Normal matched exchange",
+            "reason": "Matching requires both air and blood delivery."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why can minute ventilation look adequate while alveolar ventilation is low?",
+        "answer": "A large fraction of each breath may ventilate dead space. Only the portion reaching exchange regions contributes to effective alveolar ventilation."
+      },
+      "related": [
+        "respiratory-histology",
+        "renal-abg-interpretation",
+        "cardiac-output"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    },
+    {
+      "id": "cell-signaling",
+      "subject": "cell-biology",
+      "title": "Cell signaling through G proteins",
+      "summary": "Trace the receptor, molecular switch, effector and second messenger without skipping the cell compartment.",
+      "tags": [
+        "Cell organization",
+        "Cell signaling",
+        "Molecular mechanisms",
+        "receptors",
+        "Gs",
+        "Gi",
+        "Gq"
+      ],
+      "source": "cellular",
+      "section": "Section 1.3: G-Protein-Coupled Receptors and signal termination",
+      "steps": [
+        {
+          "title": "Activate a membrane switch",
+          "body": "A ligand binds a seven-transmembrane receptor at the cell surface. Receptor activation promotes GDP–GTP exchange on the alpha subunit of a heterotrimeric G protein. The alpha subunit and beta-gamma complex can then regulate downstream effectors."
+        },
+        {
+          "title": "Choose the effector pathway",
+          "body": "Gs stimulates adenylyl cyclase, increasing cAMP and protein kinase A signaling. Gi reduces adenylyl cyclase activity in its canonical pathway. Gq activates phospholipase C, producing IP3 and DAG; IP3 releases calcium from internal stores, while DAG helps activate protein kinase C."
+        },
+        {
+          "title": "Terminate and interpret the signal",
+          "body": "GTP hydrolysis resets the G-protein switch. Second messengers are removed, calcium is transported back into stores or out of the cytosol, and protein phosphorylation can be reversed. The same messenger can have different effects because different cells express different targets."
+        }
+      ],
+      "question": {
+        "prompt": "Which pathway directly produces IP3 and DAG?",
+        "options": [
+          {
+            "text": "Gs stimulation of adenylyl cyclase",
+            "reason": "That pathway raises cAMP rather than directly producing IP3 and DAG."
+          },
+          {
+            "text": "Gq activation of phospholipase C",
+            "reason": "Correct: phospholipase C cleaves PIP2 to produce these two second messengers."
+          },
+          {
+            "text": "DNA ligase activity",
+            "reason": "DNA ligase is unrelated to this membrane-signaling reaction."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Why is naming a receptor insufficient to predict a whole-organ response?",
+        "answer": "The response also depends on the coupled G protein, available effectors, intracellular targets, cell type and interacting signals. Receptor location and pathway context matter."
+      },
+      "related": [
+        "membrane-potentials",
+        "protein-trafficking",
+        "cardiac-output"
+      ],
+      "updatedAt": "2026-09-06",
+      "minutes": 5
+    }
+  ]
+}

@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { subjectInterests } from "@/content/subjects";
 import type { CatalogRecord } from "@/lib/catalog-types";
-import { formatBytes } from "@/lib/catalog-types";
+import { formatBytes, formatLabels, resourceHref } from "@/lib/catalog-types";
+import { matchesCatalogQuery } from "@/lib/catalog-filter";
 import { useReadingList } from "./reading-list-provider";
 
 type Props = {
@@ -11,17 +12,22 @@ type Props = {
   basePath?: string;
   savedOnly?: boolean;
   initialSubject?: string;
+  initialQuery?: string;
+  showSubjectNavigation?: boolean;
 };
 export function CatalogBrowser({
   records,
   basePath = "/library",
   savedOnly = false,
   initialSubject = "",
+  initialQuery = "",
+  showSubjectNavigation = false,
 }: Props) {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery);
   const [subject, setSubject] = useState(initialSubject);
   const [format, setFormat] = useState("");
   const [sort, setSort] = useState("title");
+  const [visibleCount, setVisibleCount] = useState(18);
   const { saved, ready } = useReadingList();
   const filtered = records
     .filter(
@@ -29,9 +35,11 @@ export function CatalogBrowser({
         (!savedOnly || saved.includes(record.id)) &&
         (!subject || record.subject === subject) &&
         (!format || record.format === format) &&
-        `${record.title} ${record.summary} ${record.kind} ${subjectInterests.find((s) => s.id === record.subject)?.title ?? ""}`
-          .toLocaleLowerCase()
-          .includes(query.trim().toLocaleLowerCase()),
+        matchesCatalogQuery(
+          record,
+          query,
+          subjectInterests.find((s) => s.id === record.subject)?.title ?? "",
+        ),
     )
     .sort((a, b) =>
       sort === "recent"
@@ -40,14 +48,39 @@ export function CatalogBrowser({
         : a.title.localeCompare(b.title),
     );
   const hasFilters = Boolean(query || subject || format);
+  const availableFormats = [
+    ...new Set(
+      records
+        .filter((record) => !subject || record.subject === subject)
+        .map((record) => record.format),
+    ),
+  ];
+  const shownRecords = filtered.slice(0, visibleCount);
   function reset() {
     setQuery("");
     setSubject("");
     setFormat("");
     setSort("title");
+    setVisibleCount(18);
   }
   return (
     <div className="catalog-browser">
+      {showSubjectNavigation && (
+        <nav className="library-subjects" aria-label="Browse library subjects">
+          {subjectInterests.map((item) => (
+            <Link
+              key={item.id}
+              href={`/library?subject=${item.id}`}
+              aria-current={subject === item.id ? "true" : undefined}
+            >
+              <span>{item.title}</span>
+              <strong>
+                {records.filter((record) => record.subject === item.id).length}
+              </strong>
+            </Link>
+          ))}
+        </nav>
+      )}
       <div
         className="catalog-controls"
         role="search"
@@ -58,7 +91,10 @@ export function CatalogBrowser({
           <input
             type="search"
             value={query}
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={(event) => {
+              setQuery(event.target.value);
+              setVisibleCount(18);
+            }}
             placeholder="Search titles, subjects, or topics"
           />
         </label>
@@ -67,7 +103,11 @@ export function CatalogBrowser({
           <select
             aria-label="Subject"
             value={subject}
-            onChange={(event) => setSubject(event.target.value)}
+            onChange={(event) => {
+              setSubject(event.target.value);
+              setFormat("");
+              setVisibleCount(18);
+            }}
           >
             <option value="">All subjects</option>
             {subjectInterests.map((item) => (
@@ -82,11 +122,16 @@ export function CatalogBrowser({
           <select
             aria-label="Format"
             value={format}
-            onChange={(event) => setFormat(event.target.value)}
+            onChange={(event) => {
+              setFormat(event.target.value);
+              setVisibleCount(18);
+            }}
           >
             <option value="">All formats</option>
-            {["PDF", "DOCX", "PPTX"].map((item) => (
-              <option key={item}>{item}</option>
+            {availableFormats.map((item) => (
+              <option key={item} value={item}>
+                {formatLabels[item]}
+              </option>
             ))}
           </select>
         </label>
@@ -95,7 +140,10 @@ export function CatalogBrowser({
           <select
             aria-label="Sort by"
             value={sort}
-            onChange={(event) => setSort(event.target.value)}
+            onChange={(event) => {
+              setSort(event.target.value);
+              setVisibleCount(18);
+            }}
           >
             <option value="title">Title A–Z</option>
             <option value="recent">Recently updated</option>
@@ -116,13 +164,15 @@ export function CatalogBrowser({
       </div>
       {filtered.length ? (
         <div className="resource-grid">
-          {filtered.map((record) => (
+          {shownRecords.map((record) => (
             <article className="resource-card" key={record.id}>
               <div className="resource-topline">
+                <span>{formatLabels[record.format]}</span>
                 <span>
-                  {record.format} · {record.kind}
+                  {record.minutes
+                    ? `${record.minutes} min`
+                    : formatBytes(record.bytes)}
                 </span>
-                <span>{formatBytes(record.bytes)}</span>
               </div>
               <p className="resource-subject">
                 {
@@ -131,12 +181,22 @@ export function CatalogBrowser({
                 }
               </p>
               <h2>
-                <Link href={`${basePath}/${record.id}`}>{record.title}</Link>
+                <Link href={resourceHref(record, basePath)}>
+                  {record.title}
+                </Link>
               </h2>
               <p>{record.summary}</p>
               <div className="resource-bottom">
-                <Link className="card-link" href={`${basePath}/${record.id}`}>
-                  View resource <span aria-hidden="true">→</span>
+                <Link
+                  className="card-link"
+                  href={resourceHref(record, basePath)}
+                >
+                  {record.format === "WEB"
+                    ? "Open lesson"
+                    : record.format === "ACTIVITY"
+                      ? "Start practice"
+                      : "View resource"}{" "}
+                  <span aria-hidden="true">→</span>
                 </Link>
                 {record.status === "public" ? (
                   <SaveButton id={record.id} title={record.title} />
@@ -186,6 +246,19 @@ export function CatalogBrowser({
               {savedOnly ? "Browse the library" : "Explore subjects"}
             </Link>
           )}
+        </div>
+      )}
+      {filtered.length > visibleCount && (
+        <div className="catalog-more">
+          <p>
+            Showing {shownRecords.length} of {filtered.length} resources
+          </p>
+          <button
+            className="button button-secondary"
+            onClick={() => setVisibleCount((count) => count + 18)}
+          >
+            Show more resources
+          </button>
         </div>
       )}
     </div>

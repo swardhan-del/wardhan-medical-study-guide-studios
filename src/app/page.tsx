@@ -108,8 +108,8 @@ export default function Home() {
           </div>
           <p className="section-intro">
             Study anatomy through linked topic pages and volume previews, then
-            connect renal histology with physiology. More subject collections
-            are in preparation.
+            connect histology, cell biology, biochemistry, physiology and
+            genetics through source-based lessons and recall practice.
           </p>
         </div>
         <div className="subject-grid">
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
         <div className="closing-copy">
           <p>
-            Each renal lesson names its source material, revision date and
+            Each new study lesson names its source material, revision date and
             editorial status. Tell us where an explanation helped, where you got
             stuck, or what needs correcting.
           </p>

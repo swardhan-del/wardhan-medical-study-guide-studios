@@ -30,10 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${origin}${route}`,
       priority: route === "/" ? 1 : 0.7,
     })),
-    ...publicCatalog.map((record) => ({
-      url: `${origin}/library/${record.id}`,
-      lastModified: record.updatedAt,
-      priority: 0.8,
-    })),
+    ...publicCatalog
+      .filter((record) => !record.href)
+      .map((record) => ({
+        url: `${origin}/library/${record.id}`,
+        lastModified: record.updatedAt,
+        priority: 0.8,
+      })),
   ];
 }

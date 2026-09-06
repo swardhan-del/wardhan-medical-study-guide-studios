@@ -39,11 +39,18 @@ export default async function SubjectPage({ params }: Props) {
         ) : (
           <ul className="topic-list" aria-label="Subject areas">
             {subject.topics.map((topic) => (
-              <li key={topic}>{topic}</li>
+              <li key={topic}>
+                <Link
+                  href={`/library?subject=${slug}&q=${encodeURIComponent(topic)}`}
+                >
+                  {topic}
+                </Link>
+              </li>
             ))}
           </ul>
         )}
       </header>
+      <CatalogBrowser records={publicCatalog} initialSubject={slug} />
       {slug === "anatomy" ? <AnatomyVolumes /> : null}
       {slug === "physiology" && <LearningCollection compact />}
       {slug === "histology" && (
@@ -71,12 +78,6 @@ export default async function SubjectPage({ params }: Props) {
             </Link>
           </section>
         )}
-      {publicCatalog.some((record) => record.subject === slug) ? (
-        <CatalogBrowser
-          records={publicCatalog.filter((record) => record.subject === slug)}
-          initialSubject={slug}
-        />
-      ) : null}
     </div>
   );
 }
