@@ -6,7 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prebuild": "node scripts/check-content.mjs",
+    "content:check": "node scripts/check-content.mjs",
+    "content:import": "node scripts/import-curation.mjs",
+    "review": "node scripts/local-review.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "postbuild": "node scripts/check-build.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",
@@ -14,11 +22,15 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.0.0",
     "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=24 <27"
   }
 }

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
+  { href: "/library", label: "Library" },
+  { href: "/reading-list", label: "Reading list" },
   { href: "/about", label: "About" },
   { href: "/subjects", label: "Subjects" },
   { href: "/contact", label: "Contact" },
@@ -15,8 +17,14 @@ export function SiteNav() {
   return (
     <header className="site-header">
       <div className="site-container site-header-inner">
-        <Link className="brand" href="/" aria-label="Wardhan Medical Study Guide Studios home">
-          <span className="brand-mark" aria-hidden="true">W</span>
+        <Link
+          className="brand"
+          href="/"
+          aria-label="Wardhan Medical Study Guide Studios home"
+        >
+          <span className="brand-mark" aria-hidden="true">
+            W
+          </span>
           <span className="brand-copy">
             <span className="brand-name">Wardhan Medical</span>
             <span className="brand-subtitle">Study Guide Studios</span>
@@ -26,15 +34,24 @@ export function SiteNav() {
         <nav aria-label="Primary navigation">
           <ul className="nav-list">
             <li>
-              <Link className={`nav-link${pathname === "/" ? " is-active" : ""}`} href="/" aria-current={pathname === "/" ? "page" : undefined}>
+              <Link
+                className={`nav-link${pathname === "/" ? " is-active" : ""}`}
+                href="/"
+                aria-current={pathname === "/" ? "page" : undefined}
+              >
                 Home
               </Link>
             </li>
             {navItems.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive =
+                pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
                 <li key={item.href}>
-                  <Link className={`nav-link${isActive ? " is-active" : ""}`} href={item.href} aria-current={isActive ? "page" : undefined}>
+                  <Link
+                    className={`nav-link${isActive ? " is-active" : ""}`}
+                    href={item.href}
+                    aria-current={isActive ? "page" : undefined}
+                  >
                     {item.label}
                   </Link>
                 </li>

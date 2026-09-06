@@ -3,46 +3,68 @@ export type SubjectInterest = {
   number: string;
   title: string;
   description: string;
+  topics: readonly string[];
 };
-
 export const subjectInterests: ReadonlyArray<SubjectInterest> = [
   {
-    id: "anatomy-structure",
+    id: "anatomy",
     number: "01",
-    title: "Anatomy & structure",
-    description: "A place for future resources that make structure easier to return to.",
+    title: "Macroscopic Anatomy & Embryology",
+    description:
+      "Explore the organization of the body, from regional anatomy to development.",
+    topics: [
+      "Regional anatomy",
+      "Thorax and abdomen",
+      "Musculoskeletal system",
+      "Embryology",
+    ],
   },
   {
-    id: "physiology-systems",
+    id: "histology",
     number: "02",
-    title: "Physiology & systems",
-    description: "A future home for resources that connect systems with clear sequence.",
+    title: "Microscopic Anatomy & Histology",
+    description: "Connect cells and tissues with the structures they form.",
+    topics: [
+      "Cells and tissues",
+      "Organ histology",
+      "Microscopic structure",
+      "Integrated embryology",
+    ],
   },
   {
-    id: "molecular-foundations",
+    id: "cell-biology",
     number: "03",
-    title: "Molecular foundations",
-    description: "A future home for independently authored molecular-science learning resources.",
+    title: "Molecular & Cell Biology",
+    description: "Follow the molecular processes that shape cellular life.",
+    topics: ["Cell organization", "Molecular mechanisms", "Cell signaling"],
   },
   {
-    id: "cellular-organization",
+    id: "biochemistry",
     number: "04",
-    title: "Cellular organization",
-    description: "A future home for carefully structured ways to revisit cellular ideas.",
+    title: "Biochemistry",
+    description:
+      "Organize the molecules, pathways, and reactions that underpin medical science.",
+    topics: ["Biomolecules", "Metabolic pathways", "Molecular foundations"],
   },
   {
-    id: "genetics-immunity",
+    id: "physiology",
     number: "05",
-    title: "Genetics & immunity",
-    description: "A future home for resources built around connections worth remembering.",
+    title: "Medical Physiology",
+    description:
+      "Build connections between cellular mechanisms and the function of whole systems.",
+    topics: [
+      "Cellular physiology",
+      "Cardiovascular physiology",
+      "Respiratory physiology",
+      "Renal and acid–base physiology",
+    ],
   },
   {
-    id: "clinical-study-skills",
+    id: "genetics",
     number: "06",
-    title: "Clinical study skills",
-    description: "A future home for practical approaches to building a durable study practice.",
+    title: "Genetics & Immunology",
+    description:
+      "Revisit inheritance, variation, and the organization of immune responses.",
+    topics: ["Genetics", "Inheritance and variation", "Immunology"],
   },
 ];
-
-// Intentionally empty until a separate public release decision is recorded.
-export const publicCollections: ReadonlyArray<never> = [];

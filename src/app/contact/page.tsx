@@ -1,32 +1,58 @@
 import Link from "next/link";
-
 export const metadata = {
   title: "Contact",
-  description: "The direct contact pathway for Wardhan Medical Study Guide Studios.",
+  description: "Get in touch about the Wardhan Medical study library.",
+  alternates: { canonical: "/contact" },
 };
-
 export default function ContactPage() {
+  const configured = process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim();
+  const email =
+    configured && /^[^\s@<>?&#]+@[^\s@<>?&#]+\.[^\s@<>?&#]+$/.test(configured)
+      ? configured
+      : null;
   return (
     <div className="page-stack page-interior">
-      <section className="interior-hero site-container" aria-labelledby="contact-heading">
-        <p className="eyebrow">Contact pathway</p>
-        <h1 id="contact-heading">A direct line, when one is ready to share.</h1>
-        <p className="interior-lede">This site does not operate a public intake form. If the studio has shared a direct contact channel with you, please use that channel for release questions, accessibility notes, or collaboration inquiries.</p>
+      <section className="interior-hero site-container">
+        <p className="eyebrow">Contact the studio</p>
+        <h1>A conversation about learning.</h1>
+        <p className="interior-lede">
+          For resource questions, accessibility feedback, or collaboration
+          inquiries.
+        </p>
       </section>
-      <section className="contact-section site-container" aria-labelledby="contact-status-heading">
+      <section className="contact-section site-container">
         <div className="contact-card">
-          <p className="eyebrow">Current status</p>
-          <h2 id="contact-status-heading">Public contact details are being prepared.</h2>
-          <p>Until a direct channel is published, this site remains read-only. No message is collected or stored here.</p>
+          <p className="eyebrow">
+            {email ? "Email the studio" : "Contact availability"}
+          </p>
+          <h2>
+            {email
+              ? "Get in touch."
+              : "Public contact details are being prepared."}
+          </h2>
+          <p>
+            {email
+              ? "Use the email link below to open your email application. Include the resource title when asking about a guide."
+              : "If a direct contact channel has been shared with you, please use that channel. You can explore the library in the meantime."}
+          </p>
           <div className="contact-actions">
-            <Link className="button button-primary" href="/subjects">Browse subject interests <span aria-hidden="true">↗</span></Link>
-            <Link className="text-link" href="/">Back to home <span aria-hidden="true">→</span></Link>
+            {email ? (
+              <a className="button button-primary" href={`mailto:${email}`}>
+                {email}
+              </a>
+            ) : (
+              <Link className="button button-primary" href="/library">
+                Explore the library
+              </Link>
+            )}
           </div>
         </div>
         <aside className="contact-aside">
-          <span className="aside-index">03</span>
-          <p className="aside-label">A public site with no intake backend</p>
-          <p>Keeping the pathway simple means nothing is submitted accidentally and no invented address is presented as official.</p>
+          <p className="aside-label">Thoughtful feedback helps</p>
+          <p>
+            A guide title and a page or section reference make a resource
+            question easier to follow up.
+          </p>
         </aside>
       </section>
     </div>

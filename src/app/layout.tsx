@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { SiteShell } from "@/components/site-shell";
-import { getSiteUrl } from "@/lib/site-url";
+import { getSiteUrl, isIndexable } from "@/lib/site-url";
 import "./globals.css";
 
 const siteTitle = "Wardhan Medical Study Guide Studios";
-const siteDescription = "Helping students learn medical sciences through independently authored learning resources, released publicly only after review.";
+const siteDescription =
+  "Helping students learn medical sciences through independently authored learning resources, released publicly only after review.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -38,8 +39,8 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: isIndexable(),
+    follow: isIndexable(),
   },
 };
 
@@ -48,7 +49,9 @@ export const viewport: Viewport = {
   themeColor: "#14252c",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>

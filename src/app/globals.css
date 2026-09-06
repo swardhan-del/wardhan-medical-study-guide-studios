@@ -251,7 +251,10 @@ h1 em {
   min-height: 51px;
   padding: 0.9rem 1.25rem;
   text-transform: uppercase;
-  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .button:hover {
@@ -404,7 +407,10 @@ h1 em {
   border: 1px solid transparent;
   min-height: 275px;
   padding: 27px 28px 30px;
-  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .subject-card:hover {
@@ -1039,5 +1045,322 @@ h1 em {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Library and review surfaces share the studio's existing type and color system. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+input,
+select,
+button {
+  font: inherit;
+}
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+.library-page,
+.detail-page {
+  padding-top: 72px;
+  padding-bottom: 96px;
+  min-height: 70vh;
+}
+.library-heading {
+  margin-bottom: 44px;
+}
+.library-heading h1,
+.detail-page h1 {
+  font-size: clamp(2.5rem, 5.5vw, 5.2rem);
+  line-height: 1.06;
+  overflow-wrap: anywhere;
+}
+.catalog-controls {
+  display: grid;
+  grid-template-columns: 2fr 1.6fr 1fr 1fr;
+  gap: 18px;
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.catalog-controls label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+.catalog-controls input,
+.catalog-controls select {
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  padding: 12px;
+  min-height: 46px;
+  border-radius: 3px;
+  min-width: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.catalog-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  gap: 18px;
+}
+.catalog-summary p {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.plain-button {
+  border: 0;
+  border-bottom: 1px solid var(--teal);
+  background: transparent;
+  color: var(--teal);
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 0.87rem;
+}
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.resource-card {
+  padding: 28px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.resource-topline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 0.73rem;
+  margin-bottom: 26px;
+}
+.resource-subject {
+  color: var(--teal);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+.resource-card h2 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.resource-card h2 a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.resource-card > p:not(.resource-subject) {
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  line-height: 1.6;
+}
+.resource-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.save-button {
+  background: transparent;
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  border-radius: 3px;
+  padding: 10px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 44px;
+}
+.save-button[aria-pressed="true"] {
+  background: var(--teal);
+  color: white;
+}
+.save-button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+.review-tag {
+  color: var(--rust);
+  font-size: 0.72rem;
+}
+.catalog-empty {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--teal);
+  background: var(--paper);
+  padding: 42px;
+}
+.catalog-empty h2 {
+  font-size: 2.1rem;
+}
+.catalog-empty > p:not(.eyebrow) {
+  line-height: 1.6;
+  max-width: 640px;
+  color: var(--ink-soft);
+}
+.catalog-empty .button {
+  margin-top: 12px;
+}
+.subject-eyebrow {
+  margin-top: 35px;
+}
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  gap: 10px;
+}
+.topic-list li {
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  font-size: 0.83rem;
+}
+.reading-notice {
+  max-width: 650px;
+  line-height: 1.6;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--teal);
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.resource-facts {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 24px;
+  padding: 28px 0;
+  margin: 36px 0;
+  border-block: 1px solid var(--line);
+}
+.resource-facts dt {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+.resource-facts dd {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.availability-message {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.detail-note {
+  margin-top: 60px;
+  max-width: 700px;
+}
+.detail-note h2,
+.privacy-copy h2 {
+  font-size: 2rem;
+  margin-top: 32px;
+}
+.detail-note p,
+.privacy-copy p {
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.privacy-copy {
+  max-width: 730px;
+}
+.site-header-inner {
+  flex-wrap: wrap;
+  padding-block: 18px;
+  gap: 18px;
+}
+.nav-list {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-card .button {
+  overflow-wrap: anywhere;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (max-width: 1000px) {
+  .catalog-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .library-page,
+  .detail-page {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .resource-grid,
+  .catalog-controls {
+    grid-template-columns: 1fr;
+  }
+  .catalog-controls,
+  .resource-card,
+  .catalog-empty {
+    padding: 22px;
+  }
+  .resource-facts {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-list {
+    gap: 8px 20px;
+  }
+  .resource-bottom {
+    flex-wrap: wrap;
+  }
+}
+@media print {
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .catalog-controls,
+  .save-button,
+  .plain-button {
+    display: none;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+  .site-container {
+    max-width: none;
+    padding: 0;
+  }
+  .library-page,
+  .detail-page {
+    padding-block: 0;
+  }
+  .resource-card {
+    break-inside: avoid;
   }
 }
