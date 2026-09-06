@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const volumes = [
   {
@@ -74,6 +75,7 @@ export function AnatomyVolumes() {
                 <p>Book and study guide are in production. Preview illustrations may change before publication.</p>
               </details>
               <p className="volume-caption">{volume.caption}</p>
+              {volume.number === "V" ? <Link className="text-link" href="/subjects/anatomy/musculoskeletal">Explore the musculoskeletal study map & sources →</Link> : null}
             </div>
           </article>
         ))}

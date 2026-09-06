@@ -1391,3 +1391,31 @@ select:focus-visible {
   .volume-art { height: 340px; }
   .volume-copy { padding: 20px; }
 }
+/* Musculoskeletal source-linked study page. */
+.topic-list a { color: #176b68; text-underline-offset: 4px; font-weight: 600; }
+.msk-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.msk-overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 42px; align-items: center; padding: 28px; border: 1px solid #c9ceca; background: #fcfaf5; }
+.msk-overview figure { margin: 0; }
+.msk-overview img { display: block; width: 100%; height: auto; max-height: 540px; object-fit: contain; }
+.msk-overview figcaption { font-size: .8rem; line-height: 1.5; color: #526664; margin-top: 12px; }
+.msk-page h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); line-height: 1.15; }
+.msk-page h3 { font-size: 1.6rem; line-height: 1.25; margin: 12px 0; }
+.msk-page p { line-height: 1.7; }
+.msk-study-steps { padding-left: 22px; line-height: 1.7; }
+.msk-study-steps li + li { margin-top: 12px; }
+.msk-reference { font-size: .85rem; color: #526664; line-height: 1.6; }
+.msk-section { margin-top: 70px; scroll-margin-top: 100px; }
+.msk-topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 28px; }
+.msk-topic { padding: 28px; border: 1px solid #c9ceca; background: #fcfaf5; min-width: 0; scroll-margin-top: 100px; }
+.msk-source-links { list-style: none; padding: 0; display: grid; gap: 10px; font-size: .85rem; }
+.msk-source-links a { text-underline-offset: 4px; }
+.msk-recall { display: grid; gap: 14px; margin-top: 26px; }
+.msk-recall details { padding: 24px; background: #fcfaf5; border: 1px solid #c9ceca; }
+.msk-recall summary { cursor: pointer; font-weight: 600; line-height: 1.6; }
+.msk-source:target, .msk-topic:target { outline: 2px solid #176b68; outline-offset: 3px; }
+@media (max-width: 760px) {
+  .msk-overview, .msk-topic-grid { grid-template-columns: 1fr; }
+  .msk-overview { gap: 24px; padding: 20px; }
+  .msk-topic { padding: 22px; }
+  .msk-overview img { max-height: 440px; }
+}

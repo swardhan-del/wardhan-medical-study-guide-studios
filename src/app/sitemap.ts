@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/library",
     "/contact",
     "/privacy",
+    "/subjects/anatomy/musculoskeletal",
     ...subjectInterests.map((subject) => `/subjects/${subject.id}`),
   ];
   return [

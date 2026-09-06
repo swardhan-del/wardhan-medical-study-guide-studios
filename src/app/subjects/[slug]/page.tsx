@@ -34,7 +34,7 @@ export default async function SubjectPage({ params }: Props) {
         <p className="interior-lede">{subject.description}</p>
         <ul className="topic-list" aria-label="Subject areas">
           {subject.topics.map((topic) => (
-            <li key={topic}>{topic}</li>
+            <li key={topic}>{slug === "anatomy" && topic === "Musculoskeletal system" ? <Link href="/subjects/anatomy/musculoskeletal">{topic} <span aria-hidden="true">↗</span></Link> : topic}</li>
           ))}
         </ul>
       </header>

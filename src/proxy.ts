@@ -14,9 +14,15 @@ export function proxy(request: NextRequest) {
       !(catalog.records as { id: string }[]).some(
         (record) => record.id === parts[1],
       ));
+  const knownStudyTopic =
+    parts.length === 3 &&
+    parts[0] === "subjects" &&
+    parts[1] === "anatomy" &&
+    parts[2] === "musculoskeletal";
   const missingSubject =
     parts[0] === "subjects" &&
     parts.length > 1 &&
+    !knownStudyTopic &&
     (parts.length !== 2 ||
       !subjectInterests.some((subject) => subject.id === parts[1]));
   if (blockedReview || missingResource || missingSubject) {

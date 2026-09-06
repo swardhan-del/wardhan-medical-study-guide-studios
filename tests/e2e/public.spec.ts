@@ -9,6 +9,7 @@ test("public routes render and fit the viewport without runtime errors", async (
     "/library",
     "/subjects",
     "/subjects/anatomy",
+    "/subjects/anatomy/musculoskeletal",
     "/subjects/physiology",
     "/reading-list",
     "/contact",
@@ -48,6 +49,8 @@ test("private review and unknown guide IDs cannot be accessed in a public build"
     "/review/test-anatomy",
     "/library/does-not-exist",
     "/subjects/does-not-exist",
+    "/subjects/anatomy/does-not-exist",
+    "/subjects/anatomy/musculoskeletal/does-not-exist",
   ])
     expect((await request.get(route)).status()).toBe(404);
   const sitemap = await (await request.get("/sitemap.xml")).text();
