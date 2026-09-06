@@ -4,7 +4,8 @@ import { studio } from "@/content/studio";
 export const metadata = {
   title: "About",
   description:
-    "Why Siddhartha Harshwardhan is independently building medical study resources from his experience as a student.",
+    "An independent, nonprofit medical-science learning project by Siddhartha Harshwardhan, publishing as Independent Observer. Free learning, a growing public library and constructive discussion.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
@@ -16,13 +17,14 @@ export default function AboutPage() {
       >
         <p className="eyebrow">About the studio</p>
         <h1 id="about-heading">
-          Built from the experience of learning medicine.
+          A public library for learning medical sciences.
         </h1>
         <p className="interior-lede">
-          I’m {studio.founderName}, the independent creator of Wardhan Medical
-          Study Guide Studios. I’m developing this website from my own study
-          notes, knowledge base and experience of struggling with medical
-          sciences as a medical student.
+          Wardhan Medical Study Guide Studios is an independent learning
+          platform by Independent Observer. It brings together medical-science
+          explanations, study guides and visual learning for students, medical
+          professionals and anyone who wants to understand the subject more
+          deeply.
         </p>
       </section>
       <section
@@ -30,34 +32,54 @@ export default function AboutPage() {
         aria-labelledby="approach-heading"
       >
         <div className="prose-column">
-          <p className="eyebrow">The approach</p>
-          <h2 id="approach-heading">Help another student find a way through.</h2>
+          <p className="eyebrow">The person behind the project</p>
+          <h2 id="approach-heading">A student’s perspective, grounded in science.</h2>
           <p>
-            My aim is to share the approaches that helped me understand
-            difficult material: breaking an idea into parts, connecting those
-            parts with diagrams, testing my understanding and returning to what
-            I had not yet grasped.
+            I’m {studio.founderName}, publishing as Independent Observer. I have
+            a BSc in biology and chemistry and have worked as a pharmaceutical
+            sales representative. I’m an international medical student pursuing
+            further education in medicine. My studies and work have given me a
+            broad perspective across biological, chemical, medical and
+            pharmaceutical sciences.
           </p>
           <p>
-            Here you can explore explanations and visual activities, practise
-            with questions, and find study guides through the subject directory.
-            I’m building and improving this collection independently, one
-            explanation at a time.
+            I know what it feels like to struggle with difficult material. This
+            studio grows out of my own learning: connecting ideas, making their
+            structure visible and returning to what I had not yet understood.
+          </p>
+          <h2>From personal archives to a public library.</h2>
+          <p>
+            The goal is to build a public learning library from the notes,
+            references and study archives I have collected during college and
+            higher education in medical and pharmaceutical sciences. Original
+            explanations and guides are independently authored under the
+            Independent Observer name, with sources identified where used.
           </p>
           <p>
-            Your questions and corrections can help make it clearer.{" "}
-            <Link href="/contact">Get in touch</Link>.
+            This new website is growing into a place to explore a concept,
+            study a visual explanation, test your understanding and find a
+            useful guide. <Link href="/library">Explore the learning library</Link>{" "}
+            or <Link href="/subjects">browse the subject directory</Link>.
+          </p>
+          <h2>Learn together. Question constructively.</h2>
+          <p>
+            The aim is intellectual engagement with medical sciences. Students,
+            medical professionals and other curious learners are welcome to
+            bring questions, alternative explanations and thoughtful discussion.
+            If something is incorrect or could be clearer, I welcome suggestions
+            and corrections. <Link href="/contact">Start a conversation</Link>.
           </p>
         </div>
-        <aside className="quote-panel" aria-label="Studio note">
-          <span className="quote-mark" aria-hidden="true">
-            “
-          </span>
+        <aside className="quote-panel" aria-label="Independence and access">
+          <h2>Independent and nonprofit in purpose.</h2>
           <p>
-            A place to understand something difficult, test yourself and come
-            back tomorrow.
+            This is an independent student-led educational project, unaffiliated
+            with any university or institution. The website is free to use,
+            with no subscriptions at present.
           </p>
-          <span className="quote-attribution">The purpose of this project</span>
+          <span className="quote-attribution">
+            Built for learning and intellectual exchange
+          </span>
         </aside>
       </section>
     </div>
