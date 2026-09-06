@@ -38,7 +38,11 @@ export default function PrivacyPage() {
         </p>
         <h2>Contact</h2>
         <p>
-          The correction form prepares a draft in page memory. It sends nothing automatically and does not store your message. Opening the GitHub draft sends that draft to GitHub; submitting it creates a public issue under your GitHub account. If email is configured, the draft opens in your email application instead. Do not include personal or patient information.
+          The correction form prepares a draft in page memory. It sends nothing
+          automatically and does not save your message on this website. Opening
+          the email draft passes its contents to your email application. You
+          review and send it there, and your email provider handles the message.
+          Do not include personal or patient information.
         </p>
         <h2>Hosting and external files</h2>
         <p>

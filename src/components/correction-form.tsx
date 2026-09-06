@@ -14,7 +14,7 @@ export function CorrectionForm({
   const title = `Study correction: ${lesson || "General feedback"}`;
   const body = `Page: ${lesson || "Not specified"}\nSection: ${section}\n\nWhat needs changing:\n${details}\n`;
   const href = email
-    ? `mailto:${email}?${new URLSearchParams({ subject: title, body })}`
+    ? `mailto:${email}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`
     : `https://github.com/swardhan-del/wardhan-medical-study-guide-studios/issues/new?${new URLSearchParams({ title, body })}`;
   return (
     <form

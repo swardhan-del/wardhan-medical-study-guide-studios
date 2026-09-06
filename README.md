@@ -38,6 +38,6 @@ Open `http://127.0.0.1:3100/review`. Originals are preserved. No private downloa
 
 - [Vercel step-by-step](docs/VERCEL_DEPLOYMENT.md)
 - [Content import and public release](docs/CONTENT_INTEGRATION.md)
-- [.env.example](.env.example): both public URL and contact email are optional.
+- [.env.example](.env.example): public URL configuration is optional. Public creator identity and contact email are maintained in `src/content/studio.ts`.
 
 GitHub Actions validates changes. No deployment, payment provider, identity provider, file-storage service or domain is provisioned by the application code.

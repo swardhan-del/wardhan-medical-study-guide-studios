@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { studio } from "@/content/studio";
 
 export const alt =
   "Wardhan Medical Study Guide Studios — Helping students learn medical sciences.";
@@ -55,7 +56,7 @@ export default function OpenGraphImage() {
           paddingTop: 22,
         }}
       >
-        Public library in preparation · Created by Innovative.
+        Independent medical-science learning · {studio.founderName}
       </div>
     </div>,
     { ...size },

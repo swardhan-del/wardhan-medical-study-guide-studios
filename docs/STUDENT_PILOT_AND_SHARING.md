@@ -41,7 +41,7 @@ Use Vercel Analytics to compare lesson_started with lesson_completed, and quiz_s
 
 ## Remaining owner choices
 
-- Choose the public contact email. Set `NEXT_PUBLIC_CONTACT_EMAIL` in Vercel Production and redeploy.
+- The creator-approved public email is set in `src/content/studio.ts`. The Contact page and correction drafts use that address; deploy after changing it.
 - Choose a custom domain if desired; the course works on its current hostname.
 - Invite the pilot volunteers and select a qualified content reviewer.
 - Approve and post the captions/videos on the channels you use. No outreach has been sent.

@@ -16,7 +16,8 @@ Open **Project → Settings → Environment Variables**. None are required for t
 | Key                         | Value                                                                           | Where                                                                                                                          |
 | --------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `NEXT_PUBLIC_SITE_URL`      | Optional final HTTPS origin, e.g. `https://your-domain.example`, without a path | Production. Leave unset for the generated Vercel domain. Usually leave unset in Preview so sharing URLs refer to that preview. |
-| `NEXT_PUBLIC_CONTACT_EMAIL` | Optional public email address to display                                        | Production and Preview if you want it visible in both                                                                          |
+
+The approved public creator name and contact email are maintained in `src/content/studio.ts`. Contact does not require an environment variable.
 
 Do not put secrets in `NEXT_PUBLIC_*`: those values are public. Do not add Dropbox credentials, local file paths, the local `.env.local` contents, or `LOCAL_CURATION_REVIEW`. The latter causes a Vercel build failure intentionally. Vercel supplies `VERCEL_URL`, `VERCEL_PROJECT_PRODUCTION_URL` and `VERCEL_ENV` automatically.
 

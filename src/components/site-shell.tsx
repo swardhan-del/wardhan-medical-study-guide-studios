@@ -2,6 +2,7 @@ import { ReadingListProvider } from "./reading-list-provider";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { SiteNav } from "@/components/site-nav";
+import { studio } from "@/content/studio";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
@@ -20,7 +21,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             </p>
           </div>
           <div className="footer-meta">
-            <span>Created by Innovative.</span>
+            <span>Created independently by {studio.founderName}.</span>
             <Link href="/contact">Contact</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/study#saved-learning">Saved learning</Link>

@@ -1,7 +1,9 @@
 import { CorrectionForm } from "@/components/correction-form";
+import { studio } from "@/content/studio";
 export const metadata = {
   title: "Contact and corrections",
-  description: "Report a lesson correction or accessibility issue.",
+  description:
+    "Contact Siddhartha Harshwardhan about independently developed medical study resources, corrections and accessibility.",
   alternates: { canonical: "/contact" },
   robots: { index: false, follow: true },
 };
@@ -18,24 +20,37 @@ export default async function ContactPage({
     )
       ? params.lesson
       : "";
-  const configured = process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim();
-  const email =
-    configured && /^[^\s@<>?&#]+@[^\s@<>?&#]+\.[^\s@<>?&#]+$/.test(configured)
-      ? configured
-      : null;
   return (
     <div className="site-container study-page">
       <header className="study-hero">
         <p className="eyebrow">Contact the studio</p>
-        <h1>Help make the next explanation clearer.</h1>
+        <h1>A conversation about learning.</h1>
         <p>
-          Report an error, an unclear diagram or an accessibility problem.
-          Include the section so we can find it.
+          I’m {studio.founderName}. I’m building this website independently to
+          help medical students understand difficult ideas, drawing on my own
+          study notes and knowledge base.
+        </p>
+        <p>
+          I struggled with medical sciences as a medical student. This project
+          grows out of the ways I learned to make sense of them, with the hope
+          that those approaches can help someone else.
         </p>
       </header>
+      <section className="study-panel" aria-labelledby="contact-email-heading">
+        <h2 id="contact-email-heading">Get in touch</h2>
+        <p>
+          For resource questions, accessibility feedback or collaboration
+          inquiries, email me at{" "}
+          <a href={`mailto:${studio.contactEmail}`}>{studio.contactEmail}</a>.
+        </p>
+      </section>
       <section className="study-panel">
         <h2>Send a correction or feedback</h2>
-        <CorrectionForm lesson={lesson} email={email} />
+        <p>
+          Found an error or an unclear explanation? Include the section so I can
+          find it and improve it.
+        </p>
+        <CorrectionForm lesson={lesson} email={studio.contactEmail} />
       </section>
     </div>
   );

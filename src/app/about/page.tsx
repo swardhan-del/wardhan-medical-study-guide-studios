@@ -1,7 +1,10 @@
+import Link from "next/link";
+import { studio } from "@/content/studio";
+
 export const metadata = {
   title: "About",
   description:
-    "About Wardhan Medical Study Guide Studios and its public-release approach.",
+    "Why Siddhartha Harshwardhan is independently building medical study resources from his experience as a student.",
 };
 
 export default function AboutPage() {
@@ -13,13 +16,13 @@ export default function AboutPage() {
       >
         <p className="eyebrow">About the studio</p>
         <h1 id="about-heading">
-          A small studio for careful medical-science learning.
+          Built from the experience of learning medicine.
         </h1>
         <p className="interior-lede">
-          Wardhan Medical Study Guide Studios develops independently authored
-          medical-science learning resources for students. The public library
-          will grow slowly, with clarity about what is available and what is
-          still in preparation.
+          I’m {studio.founderName}, the independent creator of Wardhan Medical
+          Study Guide Studios. I’m developing this website from my own study
+          notes, knowledge base and experience of struggling with medical
+          sciences as a medical student.
         </p>
       </section>
       <section
@@ -28,24 +31,33 @@ export default function AboutPage() {
       >
         <div className="prose-column">
           <p className="eyebrow">The approach</p>
-          <h2 id="approach-heading">Make the structure visible.</h2>
+          <h2 id="approach-heading">Help another student find a way through.</h2>
           <p>
-            The studio’s work starts with a simple question: what would make a
-            difficult idea easier to return to? The answer may become a future
-            resource, but it does not become public by default.
+            My aim is to share the approaches that helped me understand
+            difficult material: breaking an idea into parts, connecting those
+            parts with diagrams, testing my understanding and returning to what
+            I had not yet grasped.
           </p>
           <p>
-            That is why this site separates subject interests from released
-            collections. A subject can be named while its public materials
-            remain in preparation.
+            Here you can explore explanations and visual activities, practise
+            with questions, and find study guides through the subject directory.
+            I’m building and improving this collection independently, one
+            explanation at a time.
+          </p>
+          <p>
+            Your questions and corrections can help make it clearer.{" "}
+            <Link href="/contact">Get in touch</Link>.
           </p>
         </div>
         <aside className="quote-panel" aria-label="Studio note">
           <span className="quote-mark" aria-hidden="true">
             “
           </span>
-          <p>Good learning resources earn their way into the library.</p>
-          <span className="quote-attribution">Studio note</span>
+          <p>
+            A place to understand something difficult, test yourself and come
+            back tomorrow.
+          </p>
+          <span className="quote-attribution">The purpose of this project</span>
         </aside>
       </section>
     </div>

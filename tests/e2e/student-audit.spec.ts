@@ -78,6 +78,8 @@ test("correction preserves lesson context and prepares a draft without submittin
   const href = await draft.getAttribute("href");
   expect(href).toBeTruthy();
   const url = new URL(href!);
+  expect(url.protocol).toBe("mailto:");
+  expect(url.pathname).toBe("swardhan1@icloud.com");
   expect(url.searchParams.get("body")).toContain("/learn/renal/kidney-map");
   expect(url.searchParams.get("body")).toContain("Two paths, one organ");
 });
