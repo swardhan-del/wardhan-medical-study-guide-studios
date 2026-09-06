@@ -375,7 +375,8 @@ test("library filters expose useful resources in every subject and retain direct
   page,
 }) => {
   await page.goto("/library");
-  const summary = page.locator('.catalog-summary [role="status"]');
+  // Streaming can briefly retain a hidden copy; assert the accessible result.
+  const summary = page.getByRole("status");
   await expect(summary).toHaveText("58 resources");
   for (const [subject, count] of [
     ["anatomy", 5],
@@ -438,7 +439,7 @@ test("catalog format, empty search and pagination remain usable", async ({
     .getByRole("button", { name: "Clear filters", exact: true })
     .first()
     .click();
-  await expect(page.locator('.catalog-summary [role="status"]')).toHaveText(
+  await expect(page.getByRole("status")).toHaveText(
     "58 resources",
   );
 });
