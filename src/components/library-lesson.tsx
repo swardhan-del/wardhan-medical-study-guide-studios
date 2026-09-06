@@ -1,3 +1,4 @@
+import { CorrectionLink } from "./correction-link";
 import Link from "next/link";
 import { subjectInterests } from "@/content/subjects";
 import sourceData from "@/content/library-sources.json";
@@ -126,8 +127,8 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
               Save this lesson, then revisit its question without opening the
               explanation first.
             </p>
-            <Link href="/reading-list" className="text-link">
-              My reading list →
+            <Link href="/study#saved-learning" className="text-link">
+              My saved learning →
             </Link>
           </div>
         </aside>
@@ -159,9 +160,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           publishes an original teaching adaptation and original recall
           questions.
         </p>
-        <Link href="/contact" className="text-link">
-          Suggest a correction →
-        </Link>
+        <CorrectionLink />
       </section>
       <nav className="action-row concept-end" aria-label="Continue studying">
         <Link

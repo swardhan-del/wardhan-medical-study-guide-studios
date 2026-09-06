@@ -1,3 +1,4 @@
+import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import { renalLessons, renalLessonHref } from "@/content/renal-course";
 import { RenalSources } from "@/components/renal-sources";
@@ -37,6 +38,7 @@ export default function RenalCourse() {
         }}
       />
       <header className="study-hero">
+        <SaveButton id="renal-course" title="Renal physiology course" />
         <Link className="text-link" href="/library">
           ← Learning library
         </Link>

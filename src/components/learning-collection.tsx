@@ -1,3 +1,5 @@
+import { SaveButton } from "./catalog-browser";
+import { publicCatalog } from "@/lib/catalog";
 import Link from "next/link";
 export function LearningCollection({ compact = false }: { compact?: boolean }) {
   const cards = [
@@ -56,6 +58,7 @@ export function LearningCollection({ compact = false }: { compact?: boolean }) {
             <Link className="text-link" href={href}>
               {action} →
             </Link>
+            {publicCatalog.find((r) => r.href === href) && <SaveButton id={publicCatalog.find((r) => r.href === href)!.id} title={title} />}
           </article>
         ))}
     </div>

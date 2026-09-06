@@ -1,3 +1,4 @@
+import { SaveButton } from "@/components/catalog-browser";
 import { HistologyDetective } from "@/components/histology-detective";
 export const metadata = {
   title: "Histology detective: identify renal tubules",
@@ -19,6 +20,7 @@ export default function HistologyPage() {
           Three renal tubules. Look for the lumen, the apical border and the
           cells. Make a choice, then reveal why it fits.
         </p>
+      <SaveButton id="histology-detective" title="Histology detective" />
       </header>
       <HistologyDetective />
     </div>

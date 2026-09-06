@@ -1,3 +1,4 @@
+import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import { renalChallengeIds, renalQuestions } from "@/content/renal-course";
 import { RenalQuiz } from "@/components/renal-quiz";
@@ -31,6 +32,7 @@ export default function ChallengePage() {
           Think through the mechanism before choosing. Every answer has an
           explanation, and your mistakes become a personal review session.
         </p>
+      <SaveButton id="renal-challenge" title="Renal challenge" />
       </header>
       <RenalQuiz
         quizId="renal-challenge"

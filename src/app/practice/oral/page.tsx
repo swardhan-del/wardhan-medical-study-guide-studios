@@ -1,3 +1,4 @@
+import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import { OralPractice } from "@/components/oral-practice";
 export const metadata = {
@@ -23,6 +24,7 @@ export default function OralPage() {
           Practice a coherent answer, compare it with the key points, then go
           one question deeper.
         </p>
+      <SaveButton id="oral-practice" title="Oral practice" />
       </header>
       <OralPractice />
       <p className="source-note">

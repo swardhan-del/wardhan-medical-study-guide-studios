@@ -43,10 +43,10 @@ export default async function LibraryPage({
         <p>
           Each new lesson names its guide and source section, explains three
           connected ideas, and includes an original question plus an oral-recall
-          prompt. Save a resource to return to it in your reading list.
+          prompt. Save a resource to return to it in My Study.
         </p>
-        <Link href="/reading-list" className="text-link">
-          Open my reading list →
+        <Link href="/study#saved-learning" className="text-link">
+          Open my saved learning →
         </Link>
       </aside>
     </div>

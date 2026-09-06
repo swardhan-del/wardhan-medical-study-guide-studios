@@ -1,3 +1,5 @@
+import { SavedLearning } from "@/components/saved-learning";
+import { publicCatalog } from "@/lib/catalog";
 import { StudyDashboard } from "@/components/study-dashboard";
 export const metadata = {
   title: "My study dashboard",
@@ -19,6 +21,7 @@ export default function StudyPage() {
         </p>
       </header>
       <StudyDashboard />
+      <SavedLearning records={publicCatalog} />
     </div>
   );
 }

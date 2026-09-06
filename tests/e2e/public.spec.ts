@@ -110,6 +110,7 @@ test("subject cards lead to subject pages and reading list survives invalid brow
     localStorage.setItem("wardhan-reading-list:v1", "{invalid"),
   );
   await page.goto("/reading-list");
+  await expect(page).toHaveURL(/\/study#saved-learning$/);
   await expect(page.getByText("A place for your next session.")).toBeVisible();
 });
 test("private review and unknown guide IDs cannot be accessed in a public build", async ({
@@ -144,6 +145,7 @@ test("reading list clearing is deliberate and persists after reload", async ({
   page,
 }) => {
   await page.goto("/reading-list");
+  await expect(page).toHaveURL(/\/study#saved-learning$/);
   await page.evaluate(() =>
     localStorage.setItem(
       "wardhan-reading-list:v1",
@@ -475,6 +477,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   ).toBeVisible();
   await page.getByRole("button", { name: /Save Epithelia:/ }).click();
   await page.goto("/reading-list");
+  await expect(page).toHaveURL(/\/study#saved-learning$/);
   await expect(
     page.getByRole("link", {
       name: "Epithelia: layers, shape and function",

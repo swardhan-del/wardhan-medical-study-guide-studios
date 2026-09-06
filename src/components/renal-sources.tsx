@@ -1,3 +1,4 @@
+import { CorrectionLink } from "./correction-link";
 import { renalRevision } from "@/content/renal-course";
 export function RenalSources({ section }: { section?: string }) {
   return (
@@ -43,9 +44,7 @@ export function RenalSources({ section }: { section?: string }) {
         AI-assisted drafting and implementation. No independent clinical peer
         review is claimed. Examples teach mechanisms and exam reasoning; they
         are not patient-care guidance.{" "}
-        <a className="text-link" href="/contact">
-          Report a correction
-        </a>
+        <CorrectionLink />
         .
       </p>
     </section>

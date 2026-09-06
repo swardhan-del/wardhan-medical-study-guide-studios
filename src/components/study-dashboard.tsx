@@ -71,7 +71,7 @@ export function StudyDashboard() {
         <p className="eyebrow">Your next ten minutes</p>
         <h2>
           {due.length
-            ? "Bring yesterday’s learning back."
+            ? "Revisit what needs practice."
             : "Build the next connection."}
         </h2>
         <p>
@@ -118,12 +118,10 @@ export function StudyDashboard() {
         </div>
       )}
       <section>
-        <p className="eyebrow">Weak-topic map</p>
+        <p className="eyebrow">Your practice map</p>
         <h2>Let your answers guide your revision.</h2>
         <p>
-          Bars show the proportion of each topic’s questions answered correctly
-          on the latest attempt. Unattempted questions are counted separately
-          below.
+          Not started means you have not tried these questions. Needs review means a latest answer was incorrect. Practiced means all attempted answers are currently correct; it does not imply mastery.
         </p>
         <div className="study-grid two">
           {renalLessons.map((lesson) => {
@@ -137,15 +135,11 @@ export function StudyDashboard() {
                 <Link className="text-link" href={renalLessonHref(lesson.slug)}>
                   {lesson.title}
                 </Link>
-                <progress
-                  aria-label={`${lesson.title} latest correct answers`}
-                  max={qs.length}
-                  value={correct}
-                />
-                <p>
-                  {correct} of {qs.length} correct on latest attempt ·{" "}
-                  {qs.length - attempted.length} unattempted
+                <p className={`practice-status ${!attempted.length ? "not-started" : correct < attempted.length ? "needs-review" : "practiced"}`}>
+                  {!attempted.length ? "Not started" : correct < attempted.length ? "Needs review" : "Practiced"}
                 </p>
+                {attempted.length > 0 && <progress aria-label={`${lesson.title} latest correct answers among attempted questions`} max={attempted.length} value={correct} />}
+                <p>{attempted.length ? `${correct} of ${attempted.length} attempted questions correct on latest attempt · ${qs.length - attempted.length} not attempted` : `${qs.length} questions ready when you are`}</p>
               </article>
             );
           })}
@@ -171,7 +165,7 @@ export function StudyDashboard() {
         <summary>Manage my saved learning</summary>
         <p>
           Download a JSON record of this browser’s progress, or clear it. The
-          reading list is managed separately.
+          saved lessons and activities are below. Clearing progress keeps those bookmarks.
         </p>
         <div className="action-row">
           <button

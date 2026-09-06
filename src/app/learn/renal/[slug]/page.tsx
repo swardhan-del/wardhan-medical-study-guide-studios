@@ -1,3 +1,5 @@
+import { NephronMap } from "@/components/nephron-map";
+import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -48,6 +50,7 @@ export default async function RenalLessonPage({ params }: Props) {
         </p>
         <h1>{lesson.title}</h1>
         <p className="interior-lede">{lesson.description}</p>
+        <SaveButton id={`renal-${slug}`} title={lesson.title} />
       </header>
       <div className="lesson-layout">
         <aside className="lesson-outline">
@@ -74,6 +77,7 @@ export default async function RenalLessonPage({ params }: Props) {
           ))}
         </div>
       </div>
+      {slug === "kidney-map" && <NephronMap />}
       <section className="pathway-section">
         <p className="eyebrow">Make the connection</p>
         <ol className="pathway-map">

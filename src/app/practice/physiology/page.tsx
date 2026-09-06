@@ -1,3 +1,4 @@
+import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import {
   RenalHemodynamics,
@@ -33,6 +34,7 @@ export default function PhysiologyPage() {
           <a href="#ventilation">Ventilation & pH</a>
           <a href="#abg">ABG practice</a>
         </nav>
+      <SaveButton id="physiology-lab" title="Physiology lab" />
       </header>
       <div id="renal">
         <RenalHemodynamics />
