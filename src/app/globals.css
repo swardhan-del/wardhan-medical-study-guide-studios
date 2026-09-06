@@ -1364,3 +1364,30 @@ select:focus-visible {
     break-inside: avoid;
   }
 }
+/* Forthcoming anatomy books and companion guides. */
+.series-heading { max-width: 780px; }
+.series-heading h2 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.12; margin: 16px 0; }
+.series-heading > p:last-child { line-height: 1.7; }
+.volume-jump-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0; }
+.volume-jump-links a { border: 1px solid #b9c7c5; padding: 10px 16px; text-decoration: none; }
+.volume-jump-links a:hover { background: #e5edeb; }
+.volume-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.volume-preview { border: 1px solid #c9ceca; background: #fcfaf5; scroll-margin-top: 100px; min-width: 0; }
+.volume-art { position: relative; display: block; height: 360px; background: #edf0ed; border-bottom: 1px solid #c9ceca; }
+.volume-art img { object-fit: contain; padding: 16px 16px 44px; }
+.image-enlarge { position: absolute; bottom: 10px; right: 16px; font-size: .8rem; background: #fcfaf5; padding: 4px 8px; }
+.volume-copy { padding: 26px; }
+.volume-topline { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.production-badge { background: #e3ede9; color: #195b54; padding: 6px 10px; font-size: .7rem; }
+.volume-copy h3 { font-size: clamp(1.6rem, 2.4vw, 2.2rem); line-height: 1.2; margin: 20px 0 16px; }
+.volume-copy p { line-height: 1.65; }
+.volume-topics { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 22px 0; }
+.volume-topics li { font-size: .8rem; border: 1px solid #d1d8d3; padding: 5px 9px; }
+.volume-companion { border-top: 1px solid #c9ceca; padding-top: 18px; }
+.volume-companion summary { cursor: pointer; font-weight: 600; line-height: 1.5; }
+.volume-caption { font-size: .75rem; color: #526664; margin-top: 24px; }
+@media (max-width: 760px) {
+  .volume-grid { grid-template-columns: 1fr; }
+  .volume-art { height: 340px; }
+  .volume-copy { padding: 20px; }
+}

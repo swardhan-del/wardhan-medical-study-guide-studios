@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { subjectInterests } from "@/content/subjects";
 import { publicCatalog } from "@/lib/catalog";
 import { CatalogBrowser } from "@/components/catalog-browser";
+import { AnatomyVolumes } from "@/components/anatomy-volumes";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
   return subjectInterests.map((subject) => ({ slug: subject.id }));
@@ -37,10 +38,11 @@ export default async function SubjectPage({ params }: Props) {
           ))}
         </ul>
       </header>
-      <CatalogBrowser
+      {slug === "anatomy" ? <AnatomyVolumes /> : null}
+      {slug !== "anatomy" || publicCatalog.some((record) => record.subject === slug) ? <CatalogBrowser
         records={publicCatalog.filter((record) => record.subject === slug)}
         initialSubject={slug}
-      />
+      /> : null}
     </div>
   );
 }
