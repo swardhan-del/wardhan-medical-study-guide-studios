@@ -2,6 +2,8 @@ import Link from "next/link";
 import { SubjectCard } from "@/components/subject-card";
 import { subjectInterests } from "@/content/subjects";
 import { LearningCollection } from "@/components/learning-collection";
+export const metadata = { alternates: { canonical: "/" } };
+
 export default function Home() {
   return (
     <div className="page-stack">
