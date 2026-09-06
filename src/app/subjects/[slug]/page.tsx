@@ -1,3 +1,4 @@
+import { LearningCollection } from "@/components/learning-collection";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { subjectInterests } from "@/content/subjects";
@@ -33,17 +34,49 @@ export default async function SubjectPage({ params }: Props) {
         <p className="eyebrow subject-eyebrow">Subject {subject.number}</p>
         <h1>{subject.title}</h1>
         <p className="interior-lede">{subject.description}</p>
-        {slug === "anatomy" ? <AnatomyTopicNav /> : <ul className="topic-list" aria-label="Subject areas">
-          {subject.topics.map((topic) => (
-            <li key={topic}>{topic}</li>
-          ))}
-        </ul>}
+        {slug === "anatomy" ? (
+          <AnatomyTopicNav />
+        ) : (
+          <ul className="topic-list" aria-label="Subject areas">
+            {subject.topics.map((topic) => (
+              <li key={topic}>{topic}</li>
+            ))}
+          </ul>
+        )}
       </header>
       {slug === "anatomy" ? <AnatomyVolumes /> : null}
-      {slug !== "anatomy" || publicCatalog.some((record) => record.subject === slug) ? <CatalogBrowser
-        records={publicCatalog.filter((record) => record.subject === slug)}
-        initialSubject={slug}
-      /> : null}
+      {slug === "physiology" && <LearningCollection compact />}
+      {slug === "histology" && (
+        <section className="study-panel">
+          <h2>Histology detective</h2>
+          <p>
+            Identify renal tubules from structural clues, then connect their
+            appearance to their transport functions.
+          </p>
+          <Link className="button button-primary" href="/practice/histology">
+            Explore the renal tubule schematics →
+          </Link>
+        </section>
+      )}
+      {!["anatomy", "physiology", "histology"].includes(slug) &&
+        !publicCatalog.some((record) => record.subject === slug) && (
+          <section className="study-panel">
+            <h2>This collection is in preparation.</h2>
+            <p>
+              Explore the free renal course and existing anatomy pages while
+              more subject lessons are prepared.
+            </p>
+            <Link className="text-link" href="/library">
+              Explore the learning library →
+            </Link>
+          </section>
+        )}
+      {publicCatalog.some((record) => record.subject === slug) ? (
+        <CatalogBrowser
+          records={publicCatalog.filter((record) => record.subject === slug)}
+          initialSubject={slug}
+        />
+      ) : null}
     </div>
   );
 }

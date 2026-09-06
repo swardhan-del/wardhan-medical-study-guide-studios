@@ -1,3 +1,4 @@
+import { LearningCollection } from "@/components/learning-collection";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { publicCatalog } from "@/lib/catalog";
 export const metadata = {
@@ -13,11 +14,17 @@ export default function LibraryPage() {
         <p className="eyebrow">Study library</p>
         <h1>Find your next chapter.</h1>
         <p className="interior-lede">
-          Browse by subject and format, then save resources for your next study
-          session.
+          Start a lesson, explore a model, or test your understanding. The free
+          renal course is ready to use.
         </p>
       </header>
-      <CatalogBrowser records={publicCatalog} />
+      <LearningCollection />
+      {publicCatalog.length > 0 && (
+        <section className="study-stack">
+          <h2>Released guide downloads</h2>
+          <CatalogBrowser records={publicCatalog} />
+        </section>
+      )}
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { AnalyticsPreference } from "@/components/learning-analytics";
 export const metadata = {
   title: "Privacy",
   description:
@@ -19,6 +20,22 @@ export default function PrivacyPage() {
           Clear it from the Reading list page, or delete this site’s browser
           data.
         </p>
+        <h2>Learning progress</h2>
+        <p>
+          Lesson completion, quiz attempts, review dates, study-day counts, oral
+          self-assessment and your exam plan are stored in this browser. They
+          stay in this browser as detailed records. Aggregate activity events
+          are described below. Open My study to download a progress record or
+          clear it. This does not synchronize between browsers or devices. Oral
+          drafts stay in page memory, are not saved to storage, and disappear
+          when you reload the page or change topics.
+        </p>
+        <h2>Sharing</h2>
+        <p>
+          The challenge button copies a public URL. Your answers and scores are
+          not included. The local share count records successful link copies,
+          not whether somebody received or opened the link.
+        </p>
         <h2>Contact</h2>
         <p>
           If a public email address is available, the contact link opens your
@@ -29,9 +46,20 @@ export default function PrivacyPage() {
         <p>
           The hosting service processes requests needed to deliver the site,
           which can include network and browser information. Opening a resource
-          hosted elsewhere sends a request to that file’s host. This application
-          includes no advertising or analytics scripts.
+          hosted elsewhere sends a request to that file’s host. Production uses
+          Vercel Web Analytics for page views and curriculum activity events.
+          Events contain fixed lesson or quiz identifiers, or a
+          returning-study-day flag; they do not include answer text, scores,
+          oral drafts or exam dates. Query strings and personal study pages are
+          excluded from page-view tracking. This site honors Do Not Track and
+          Global Privacy Control signals.
         </p>
+        <h2>Analytics preference</h2>
+        <p>
+          You can opt out on this browser. The setting does not change your
+          saved learning progress.
+        </p>
+        <AnalyticsPreference />
       </div>
     </div>
   );

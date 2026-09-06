@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_LEARNING_ANALYTICS:
+      process.env.VERCEL_ENV === "production" ? "1" : "0",
+  },
   poweredByHeader: false,
   outputFileTracingExcludes: { "/*": ["./.private/**/*"] },
   async headers() {

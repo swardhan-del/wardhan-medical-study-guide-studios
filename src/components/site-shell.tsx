@@ -23,6 +23,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <span>Created by Innovative.</span>
             <Link href="/contact">Contact</Link>
             <Link href="/privacy">Privacy</Link>
+            <Link href="/reading-list">Reading list</Link>
+            <Link href="/about">About</Link>
           </div>
         </div>
       </footer>

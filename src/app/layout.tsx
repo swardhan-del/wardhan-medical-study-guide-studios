@@ -1,3 +1,4 @@
+import { LearningAnalytics } from "@/components/learning-analytics";
 import type { Metadata, Viewport } from "next";
 import { SiteShell } from "@/components/site-shell";
 import { getSiteUrl, isIndexable } from "@/lib/site-url";
@@ -5,7 +6,7 @@ import "./globals.css";
 
 const siteTitle = "Wardhan Medical Study Guide Studios";
 const siteDescription =
-  "Helping students learn medical sciences through independently authored learning resources, released publicly only after review.";
+  "Free renal physiology lessons, interactive models and explained quizzes. Build understanding, save your progress and review your mistakes.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
   },
   description: siteDescription,
   applicationName: siteTitle,
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined },
   keywords: ["medical sciences", "learning resources", "study guides"],
   openGraph: {
     type: "website",
@@ -56,6 +58,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <SiteShell>{children}</SiteShell>
+        <LearningAnalytics />
       </body>
     </html>
   );

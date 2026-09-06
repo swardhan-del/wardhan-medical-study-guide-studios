@@ -1,3 +1,4 @@
+import { renalLessons } from "@/content/renal-course";
 import { NextResponse, type NextRequest } from "next/server";
 import catalog from "@/content/public-catalog.json";
 import { subjectInterests } from "@/content/subjects";
@@ -26,7 +27,14 @@ export function proxy(request: NextRequest) {
     !knownStudyTopic &&
     (parts.length !== 2 ||
       !subjectInterests.some((subject) => subject.id === parts[1]));
-  if (blockedReview || missingResource || missingSubject) {
+  const missingLesson =
+    parts[0] === "learn" &&
+    parts[1] === "renal" &&
+    parts.length > 2 &&
+    (parts.length !== 3 ||
+      (!renalLessons.some((lesson) => lesson.slug === parts[2]) &&
+        parts[2] !== "opengraph-image"));
+  if (blockedReview || missingResource || missingSubject || missingLesson) {
     return new NextResponse(
       '<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found</title></head><body><main><h1>Page not found</h1><p>This page is not available.</p><a href="/library">Return to the library</a></main></body></html>',
       {
@@ -42,5 +50,10 @@ export function proxy(request: NextRequest) {
   return NextResponse.next();
 }
 export const config = {
-  matcher: ["/review/:path*", "/library/:path*", "/subjects/:path*"],
+  matcher: [
+    "/review/:path*",
+    "/library/:path*",
+    "/subjects/:path*",
+    "/learn/renal/:path*",
+  ],
 };
