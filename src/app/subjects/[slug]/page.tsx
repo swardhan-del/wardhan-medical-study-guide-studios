@@ -6,13 +6,19 @@ import { publicCatalog } from "@/lib/catalog";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { AnatomyVolumes } from "@/components/anatomy-volumes";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
+import { SubjectDirectory } from "@/components/subject-directory";
+import { directorySubjects } from "@/lib/subject-directory";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
-  return subjectInterests.map((subject) => ({ slug: subject.id }));
+  return [
+    ...new Set([...subjectInterests, ...directorySubjects].map((s) => s.id)),
+  ].map((slug) => ({ slug }));
 }
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const subject = subjectInterests.find((item) => item.id === slug);
+  const subject =
+    directorySubjects.find((item) => item.id === slug) ||
+    subjectInterests.find((item) => item.id === slug);
   return subject
     ? {
         title: subject.title,
@@ -24,21 +30,39 @@ export async function generateMetadata({ params }: Props) {
 export default async function SubjectPage({ params }: Props) {
   const { slug } = await params;
   const subject = subjectInterests.find((item) => item.id === slug);
-  if (!subject) notFound();
+  const directorySubject = directorySubjects.find((item) => item.id === slug);
+  if (!subject && !directorySubject) notFound();
+  const title = directorySubject?.title || subject!.title;
+  const description = directorySubject?.description || subject!.description;
+  const learningId = directorySubject?.learningSubject || subject?.id;
   return (
     <div className="site-container library-page">
       <header className="library-heading">
         <Link href="/subjects" className="text-link">
           ← All subjects
         </Link>
-        <p className="eyebrow subject-eyebrow">Subject {subject.number}</p>
-        <h1>{subject.title}</h1>
-        <p className="interior-lede">{subject.description}</p>
+        <p className="eyebrow subject-eyebrow">Subject directory</p>
+        <h1>{title}</h1>
+        <p className="interior-lede">{description}</p>
+        <p>
+          <a className="text-link" href="#dropbox-directory">
+            Browse Dropbox guides & subtopics ↓
+          </a>
+          {learningId && (
+            <>
+              {" "}
+              ·{" "}
+              <a className="text-link" href="#website-lessons">
+                Study related website lessons ↓
+              </a>
+            </>
+          )}
+        </p>
         {slug === "anatomy" ? (
           <AnatomyTopicNav />
         ) : (
           <ul className="topic-list" aria-label="Subject areas">
-            {subject.topics.map((topic) => (
+            {(subject?.topics || []).map((topic) => (
               <li key={topic}>
                 <Link
                   href={`/library?subject=${slug}&q=${encodeURIComponent(topic)}`}
@@ -50,7 +74,31 @@ export default async function SubjectPage({ params }: Props) {
           </ul>
         )}
       </header>
-      <CatalogBrowser records={publicCatalog} initialSubject={slug} />
+      {slug === "histology" && (
+        <nav className="topic-list" aria-label="Microscopic anatomy courses">
+          <Link href="/subjects/histology-i">
+            Microscopic Anatomy & Embryology I →
+          </Link>
+          <Link href="/subjects/histology-ii">
+            Microscopic Anatomy & Embryology II →
+          </Link>
+        </nav>
+      )}
+      <SubjectDirectory id={slug} />
+      {learningId && (
+        <section
+          id="website-lessons"
+          className="directory-web-lessons"
+          aria-label="Related website lessons"
+        >
+          <h2>Study related topics on this website</h2>
+          <p>
+            These web lessons and activities are available here without opening
+            Dropbox.
+          </p>
+          <CatalogBrowser records={publicCatalog} initialSubject={learningId} />
+        </section>
+      )}
       {slug === "anatomy" ? <AnatomyVolumes /> : null}
       {slug === "physiology" && <LearningCollection compact />}
       {slug === "histology" && (
@@ -65,19 +113,6 @@ export default async function SubjectPage({ params }: Props) {
           </Link>
         </section>
       )}
-      {!["anatomy", "physiology", "histology"].includes(slug) &&
-        !publicCatalog.some((record) => record.subject === slug) && (
-          <section className="study-panel">
-            <h2>This collection is in preparation.</h2>
-            <p>
-              Explore the free renal course and existing anatomy pages while
-              more subject lessons are prepared.
-            </p>
-            <Link className="text-link" href="/library">
-              Explore the learning library →
-            </Link>
-          </section>
-        )}
     </div>
   );
 }

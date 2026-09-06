@@ -2,6 +2,7 @@ import { renalLessons } from "@/content/renal-course";
 import { NextResponse, type NextRequest } from "next/server";
 import catalog from "@/content/public-catalog.json";
 import { subjectInterests } from "@/content/subjects";
+import directoryRoutes from "@/content/directory-routes.json";
 import { anatomyTopicLinks } from "@/content/anatomy-navigation";
 export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
@@ -26,7 +27,8 @@ export function proxy(request: NextRequest) {
     parts.length > 1 &&
     !knownStudyTopic &&
     (parts.length !== 2 ||
-      !subjectInterests.some((subject) => subject.id === parts[1]));
+      (!subjectInterests.some((subject) => subject.id === parts[1]) &&
+        !directoryRoutes.includes(parts[1])));
   const missingLesson =
     parts[0] === "learn" &&
     parts[1] === "renal" &&

@@ -2798,3 +2798,49 @@ select:focus-visible {
 .nephron-figure svg { min-width:560px; }
 .nephron-mobile-hint { font-size:.9rem; }
 @media (min-width:800px) { .nephron-mobile-hint { display:none; } }
+
+/* Dropbox source directory */
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.directory-page { padding-block: clamp(3rem, 7vw, 6rem); }
+.directory-stats { display:flex; flex-wrap:wrap; gap:1rem 2.5rem; margin:2rem 0 1rem; }
+.directory-stats strong { font-size:1.6rem; padding-right:.3rem; }
+.directory-access,.directory-footnote,.directory-search-hint { color:var(--muted); max-width:78ch; }
+.directory-controls { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:1.2rem; padding:1.5rem; border:1px solid var(--line); background:var(--paper); }
+.directory-controls label { display:grid; gap:.65rem; font-weight:700; min-width:0; }
+.directory-controls input,.directory-controls select { width:100%; min-width:0; padding:.9rem; border:1px solid var(--line); border-radius:0; color:var(--ink); background:#fff; font:inherit; font-weight:400; }
+.directory-toolbar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; margin-block:1.5rem; }
+.directory-toolbar>div { display:flex; flex-wrap:wrap; gap:1rem; }
+.directory-toolbar button.text-link { border:0; background:none; padding:0; color:var(--teal); font:inherit; cursor:pointer; text-decoration:underline; }
+.directory-tree,.directory-children,.directory-results { list-style:none; padding:0; margin:0; }
+.directory-node { border-top:1px solid var(--line); }
+.directory-node-line { display:grid; grid-template-columns:2.25rem minmax(0,1fr); gap:.6rem; align-items:start; padding:.9rem 0; }
+.directory-node-line>div { min-width:0; }
+.directory-toggle { background:transparent; border:1px solid var(--line); color:var(--ink); width:2.25rem; height:2.25rem; font-size:1.3rem; cursor:pointer; }
+.directory-leaf-mark { text-align:center; font-size:1.2rem; }
+.directory-entry-link { display:flex; gap:.7rem; justify-content:space-between; color:var(--teal); font-weight:700; text-decoration:none; overflow-wrap:anywhere; line-height:1.55; }
+.directory-entry-link:hover { text-decoration:underline; }
+.directory-entry-link>span:first-child { min-width:0; }
+.directory-kind { display:block; font-size:.78rem; color:var(--muted); line-height:1.5; margin-top:.25rem; }
+.directory-children { margin-left:.75rem; padding-left:.7rem; border-left:2px solid var(--line); }
+.directory-children .directory-children .directory-children { margin-left:.35rem; padding-left:.35rem; }
+.directory-results { display:grid; gap:1rem; margin-bottom:1.5rem; }
+.directory-results>li { background:var(--paper); padding:1.4rem; border:1px solid var(--line); min-width:0; }
+.directory-results p { font-size:.85rem; color:var(--muted); overflow-wrap:anywhere; line-height:1.6; }
+.directory-empty,.directory-note { padding:2rem; background:var(--paper); border-left:3px solid var(--teal); margin-block:2rem; }
+.directory-subjects,.subject-directory { margin-top:3rem; }
+.directory-section-heading { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+.directory-subject-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.2rem; }
+.directory-subject-card { border:1px solid var(--line); padding:1.7rem; background:var(--paper); display:flex; flex-direction:column; align-items:start; min-width:0; }
+.directory-subject-card h3 { font-size:clamp(1.5rem,2.5vw,2rem); line-height:1.15; margin:0; overflow-wrap:anywhere; }
+.directory-subject-card h3 a { text-decoration:none; color:inherit; }
+.directory-subject-card>p:not(.eyebrow) { flex:1; line-height:1.65; }
+.directory-print-link { display:block; color:var(--teal); font-size:.85rem; margin-top:1rem; }
+.directory-shortcuts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin:1.7rem 0; }
+.directory-shortcut { display:flex; flex-direction:column; gap:.6rem; padding:1.6rem; border:1px solid var(--line); background:var(--paper); color:var(--ink); text-decoration:none; min-width:0; }
+.directory-shortcut strong { font-family:var(--serif); font-size:1.5rem; line-height:1.25; }
+.directory-shortcut span { line-height:1.6; }
+.directory-shortcut:hover { border-color:var(--teal); }
+.directory-web-lessons { margin-top:4rem; padding-top:2rem; border-top:1px solid var(--line); }
+.directory-footnote { font-size:.82rem; line-height:1.7; margin-top:1.4rem; }
+@media(max-width:1000px){.directory-subject-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:600px){.directory-subject-grid,.directory-shortcuts{grid-template-columns:1fr;}.directory-controls{padding:1rem;}.directory-subject-card{padding:1.3rem;}.directory-children{margin-left:.35rem;padding-left:.35rem;}}

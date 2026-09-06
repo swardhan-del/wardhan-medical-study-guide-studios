@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site-url";
 import { subjectInterests } from "@/content/subjects";
 import { publicCatalog } from "@/lib/catalog";
+import { directorySubjects } from "@/lib/subject-directory";
 import {
   anatomyTopicLinks,
   anatomyTopicHref,
@@ -23,7 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/practice/histology",
     ...renalLessons.map((l) => renalLessonHref(l.slug)),
     ...anatomyTopicLinks.map((topic) => anatomyTopicHref(topic.slug)),
-    ...subjectInterests.map((subject) => `/subjects/${subject.id}`),
+    ...[
+      ...new Set(
+        [...subjectInterests, ...directorySubjects].map(
+          (subject) => subject.id,
+        ),
+      ),
+    ].map((id) => `/subjects/${id}`),
   ];
   return [
     ...routes.map((route) => ({

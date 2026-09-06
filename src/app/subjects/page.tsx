@@ -1,58 +1,115 @@
-import { publicCatalog } from "@/lib/catalog";
-import { SubjectCard } from "@/components/subject-card";
-import { subjectInterests } from "@/content/subjects";
+import Link from "next/link";
+import { DirectoryBrowser } from "@/components/directory-browser";
+import {
+  directoryEntries,
+  directorySubjects,
+  directoryUpdatedAt,
+} from "@/lib/subject-directory";
 
 export const metadata = {
-  title: "Subjects",
+  title: "Medical subject directory",
   description:
-    "Subject interests and public-release availability from Wardhan Medical Study Guide Studios.",
+    "Browse medical subjects, subtopics, printable study-guide collections and their original Dropbox folders.",
+  alternates: { canonical: "/subjects" },
 };
 
 export default function SubjectsPage() {
-  const hasPublicCollections = publicCatalog.length > 0;
-
+  const folders = directoryEntries.filter((e) => e.kind === "folder").length;
   return (
-    <div className="page-stack page-interior">
-      <section
-        className="interior-hero site-container"
-        aria-labelledby="subjects-heading"
-      >
-        <p className="eyebrow">Subject interests</p>
-        <h1 id="subjects-heading">
-          The fields the library is being shaped around.
-        </h1>
+    <div className="site-container directory-page">
+      <header className="library-heading">
+        <p className="eyebrow">Medical subject directory</p>
+        <h1>Your subjects. Your guides. One directory.</h1>
         <p className="interior-lede">
-          Explore each subject, then browse its released guides and volumes.
+          Find a medical subject, follow its subtopics, and open the original
+          study-guide folders in Dropbox.
         </p>
-      </section>
-      <section
-        className="subjects-section site-container"
-        aria-labelledby="availability-heading"
-      >
-        <div className="empty-state" role="status" aria-live="polite">
-          <span className="empty-state-code">
-            {hasPublicCollections ? "01" : "00"}
+        <div className="directory-stats">
+          <span>
+            <strong>{directorySubjects.length}</strong> subject views
           </span>
-          <div>
-            <p className="eyebrow">Public collections</p>
-            <h2 id="availability-heading">
-              {hasPublicCollections
-                ? "Explore the released resources."
-                : "No public collections are available yet."}
-            </h2>
-            <p>
-              {hasPublicCollections
-                ? "Open the Library to search all released resources."
-                : "The subject map is ready; the public release layer is still being prepared."}
-            </p>
-          </div>
+          <span>
+            <strong>{folders.toLocaleString("en-US")}</strong> folder links
+          </span>
+          <span>
+            <strong>{directoryEntries.length - folders}</strong> reference &
+            guide files
+          </span>
         </div>
-        <div className="subject-grid subjects-grid-page">
-          {subjectInterests.map((subject) => (
-            <SubjectCard key={subject.id} subject={subject} />
-          ))}
+        <p className="directory-access">
+          Dropbox links open in a new tab using your existing access. Sign in to
+          the Dropbox account that contains these folders.
+        </p>
+      </header>
+      <DirectoryBrowser
+        entries={directoryEntries}
+        subjects={directorySubjects}
+        overview
+      />
+      <section
+        className="directory-subjects"
+        aria-labelledby="directory-subjects-title"
+      >
+        <div className="directory-section-heading">
+          <h2 id="directory-subjects-title">Browse by subject</h2>
+          <Link className="text-link" href="/library">
+            Study the website lessons →
+          </Link>
+        </div>
+        <div className="directory-subject-grid">
+          {directorySubjects.map((subject, i) => {
+            const count = directoryEntries.filter((e) =>
+              e.subjects.includes(subject.id),
+            ).length;
+            return (
+              <article className="directory-subject-card" key={subject.id}>
+                <p className="eyebrow">
+                  {String(i + 1).padStart(2, "0")} · {count} directory links
+                </p>
+                <h3>
+                  <Link href={`/subjects/${subject.id}`}>{subject.title}</Link>
+                </h3>
+                <p>{subject.description}</p>
+                <Link
+                  className="text-link"
+                  href={`/subjects/${subject.id}`}
+                  aria-label={`Explore subject for ${subject.title}`}
+                >
+                  Browse subtopics →
+                </Link>
+                {subject.printableUrl && (
+                  <a
+                    className="directory-print-link"
+                    href={subject.printableUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Printable guide collection ↗
+                    <span className="sr-only">
+                      {" "}
+                      — {subject.title}, Dropbox, new tab
+                    </span>
+                  </a>
+                )}
+              </article>
+            );
+          })}
         </div>
       </section>
+      <aside className="directory-note">
+        <h2>A map of the source library</h2>
+        <p>
+          The directory follows the medical folders and the curated concept
+          library. Shared collections appear in both relevant subjects. Expand
+          folders to see the hierarchy, or search for a concept across subjects.
+        </p>
+        <p>
+          Checked {directoryUpdatedAt}. Working files, rendering output,
+          duplicate quarantines and administrative records are excluded. Open
+          the original subject folder to inspect its complete contents and
+          versions.
+        </p>
+      </aside>
     </div>
   );
 }
