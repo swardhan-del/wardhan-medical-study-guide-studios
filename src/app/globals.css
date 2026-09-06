@@ -521,10 +521,10 @@ label.study-form,
   border: 1px solid var(--line);
 }
 .renal-hero-card .eyebrow {
-  color: var(--teal-soft);
+  color: var(--teal);
 }
 .renal-hero-card em {
-  color: var(--teal-soft);
+  color: var(--teal);
 }
 .renal-hero-card h2 {
   font-size: 3rem;
@@ -541,7 +541,7 @@ label.study-form,
   border-bottom: 1px solid var(--line-light);
 }
 .hero-path span {
-  color: var(--teal-soft);
+  color: var(--teal);
 }
 .return-banner {
   display: flex;
