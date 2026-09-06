@@ -10,6 +10,10 @@ test("public routes render and fit the viewport without runtime errors", async (
     "/subjects",
     "/subjects/anatomy",
     "/subjects/anatomy/musculoskeletal",
+    "/subjects/anatomy/regional-anatomy",
+    "/subjects/anatomy/thorax",
+    "/subjects/anatomy/abdomen",
+    "/subjects/anatomy/embryology",
     "/subjects/physiology",
     "/reading-list",
     "/contact",
@@ -26,6 +30,48 @@ test("public routes render and fit the viewport without runtime errors", async (
     ).toBe(true);
   }
   expect(errors).toEqual([]);
+});
+test("every anatomy topic opens its own page with working source references", async ({ page }, testInfo) => {
+  for (const [label, slug] of [
+    ["Regional anatomy", "regional-anatomy"],
+    ["Thorax", "thorax"],
+    ["Abdomen", "abdomen"],
+    ["Musculoskeletal system", "musculoskeletal"],
+    ["Embryology", "embryology"],
+  ]) {
+    await page.goto("/subjects/anatomy");
+    await page.getByRole("navigation", { name: "Anatomy subject areas" }).getByRole("link", { name: label, exact: true }).click();
+    await expect(page.getByRole("heading", { level: 1, name: label, exact: true })).toBeVisible();
+    await expect(page).toHaveURL(new RegExp(`/subjects/anatomy/${slug}$`));
+    const content = page.locator(slug === "musculoskeletal" ? ".msk-page:visible" : ".anatomy-learning-page:visible");
+    const broken = await content.locator('a[href^="#source-"]').evaluateAll((links) =>
+      links.map((link) => link.getAttribute("href")!).filter((href) => !document.getElementById(href.slice(1))),
+    );
+    expect(broken).toEqual([]);
+    if (slug !== "musculoskeletal") {
+      await content.locator(".learning-explorer").scrollIntoViewIfNeeded();
+      await page.screenshot({ path: testInfo.outputPath(`${slug}.png`) });
+    }
+  }
+});
+test("anatomy recall supports correction and keeps answers when changing topics", async ({ page }) => {
+  await page.goto("/subjects/anatomy/thorax");
+  const panel = page.locator(".lesson-panel:visible");
+  await expect(panel.getByRole("button", { name: "Check answer" })).toBeDisabled();
+  await panel.getByRole("radio", { name: "Umbilicus", exact: true }).check();
+  await panel.getByRole("button", { name: "Check answer" }).click();
+  await expect(panel.getByRole("status")).toContainText("Try again.");
+  await panel.getByRole("radio", { name: "Sternal angle", exact: true }).check();
+  await panel.getByRole("button", { name: "Check answer" }).click();
+  await expect(panel.getByRole("status")).toContainText("Correct.");
+  await expect(page.locator(".learning-progress")).toContainText("1 of 3");
+  await page.getByRole("button", { name: "Next topic" }).click();
+  await expect(panel.getByRole("heading", { name: "Pleura & pleural cavity" })).toBeVisible();
+  await page.getByRole("button", { name: "Previous topic" }).click();
+  await expect(panel.getByRole("radio", { name: "Sternal angle", exact: true })).toBeChecked();
+  await expect(panel.getByRole("status")).toContainText("Correct.");
+  await panel.getByRole("link", { name: /^Source:/ }).click();
+  await expect(page).toHaveURL(/#source-volume-i$/);
 });
 test("subject cards lead to subject pages and reading list survives invalid browser data", async ({
   page,

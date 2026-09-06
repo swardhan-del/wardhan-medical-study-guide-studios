@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site-url";
 import { subjectInterests } from "@/content/subjects";
 import { publicCatalog } from "@/lib/catalog";
+import { anatomyTopicLinks, anatomyTopicHref } from "@/content/anatomy-navigation";
 export default function sitemap(): MetadataRoute.Sitemap {
   const origin = getSiteUrl();
   const routes = [
@@ -11,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/library",
     "/contact",
     "/privacy",
-    "/subjects/anatomy/musculoskeletal",
+    ...anatomyTopicLinks.map((topic) => anatomyTopicHref(topic.slug)),
     ...subjectInterests.map((subject) => `/subjects/${subject.id}`),
   ];
   return [

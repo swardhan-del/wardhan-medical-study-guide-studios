@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 import { musculoskeletalSources, musculoskeletalTopics, musculoskeletalRecall } from "@/content/musculoskeletal";
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function MusculoskeletalPage() {
         <p className="eyebrow subject-eyebrow">Volume V · Study preview</p>
         <h1>Musculoskeletal system</h1>
         <p className="interior-lede">A guided route through bones, joints, muscles and regional anatomy, drawn from the Volume V study guide and three companion teaching decks.</p>
+        <AnatomyTopicNav current="musculoskeletal" />
         <div className="msk-actions">
           <a className="button button-primary" href="#study-map">Explore the study map</a>
           <a className="button button-secondary" href="#sources">View source notes</a>

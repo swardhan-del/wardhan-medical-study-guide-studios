@@ -4,6 +4,7 @@ import { subjectInterests } from "@/content/subjects";
 import { publicCatalog } from "@/lib/catalog";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { AnatomyVolumes } from "@/components/anatomy-volumes";
+import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
   return subjectInterests.map((subject) => ({ slug: subject.id }));
@@ -32,11 +33,11 @@ export default async function SubjectPage({ params }: Props) {
         <p className="eyebrow subject-eyebrow">Subject {subject.number}</p>
         <h1>{subject.title}</h1>
         <p className="interior-lede">{subject.description}</p>
-        <ul className="topic-list" aria-label="Subject areas">
+        {slug === "anatomy" ? <AnatomyTopicNav /> : <ul className="topic-list" aria-label="Subject areas">
           {subject.topics.map((topic) => (
-            <li key={topic}>{slug === "anatomy" && topic === "Musculoskeletal system" ? <Link href="/subjects/anatomy/musculoskeletal">{topic} <span aria-hidden="true">↗</span></Link> : topic}</li>
+            <li key={topic}>{topic}</li>
           ))}
-        </ul>
+        </ul>}
       </header>
       {slug === "anatomy" ? <AnatomyVolumes /> : null}
       {slug !== "anatomy" || publicCatalog.some((record) => record.subject === slug) ? <CatalogBrowser

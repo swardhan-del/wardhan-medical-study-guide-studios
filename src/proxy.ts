@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import catalog from "@/content/public-catalog.json";
 import { subjectInterests } from "@/content/subjects";
+import { anatomyTopicLinks } from "@/content/anatomy-navigation";
 export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const parts = path.split("/").filter(Boolean);
@@ -18,7 +19,7 @@ export function proxy(request: NextRequest) {
     parts.length === 3 &&
     parts[0] === "subjects" &&
     parts[1] === "anatomy" &&
-    parts[2] === "musculoskeletal";
+    anatomyTopicLinks.some((topic) => topic.slug === parts[2]);
   const missingSubject =
     parts[0] === "subjects" &&
     parts.length > 1 &&

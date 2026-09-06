@@ -14,7 +14,8 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
       "Explore the organization of the body, from regional anatomy to development.",
     topics: [
       "Regional anatomy",
-      "Thorax and abdomen",
+      "Thorax",
+      "Abdomen",
       "Musculoskeletal system",
       "Embryology",
     ],
