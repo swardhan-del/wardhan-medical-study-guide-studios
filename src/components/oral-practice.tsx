@@ -1,4 +1,5 @@
 "use client";
+import { SavedRecall, SavedSelfCheck } from "./saved-recall";
 import { useState } from "react";
 import Link from "next/link";
 import {
@@ -8,29 +9,18 @@ import {
 } from "@/content/renal-course";
 import { updateLearning, useLearning } from "./learning-store";
 function OralPrompt({ lesson }: { lesson: RenalLesson }) {
-  const [answer, setAnswer] = useState("");
   const [revealed, setRevealed] = useState(false);
-  const [checked, setChecked] = useState<number[]>([]);
   const { ready, data } = useLearning();
+  const checkedCount = lesson.rubric.filter((_, i) => data.drafts[`rubric-${lesson.slug}-${i}`] === "yes").length;
   return (
     <section className="study-panel">
       <p className="eyebrow">Speak first. Compare second.</p>
       <h2>{lesson.oral}</h2>
       <p>
         Take about 90 seconds to explain this aloud, or draft an answer below.
-        Your draft stays on this page and is not sent for AI evaluation or
-        recorded.
+        Your draft and self-checks are saved on this browser. Your writing is not sent for AI evaluation.
       </p>
-      <label className="study-form">
-        My answer
-        <textarea
-          rows={7}
-          maxLength={5000}
-          value={answer}
-          onChange={(e) => setAnswer(e.target.value)}
-          placeholder="Start with the mechanism, then connect it to the result…"
-        />
-      </label>
+      <SavedRecall id={`oral-renal-${lesson.slug}`} label="My answer" />
       <button
         className="button button-primary"
         onClick={() => setRevealed(!revealed)}
@@ -40,22 +30,9 @@ function OralPrompt({ lesson }: { lesson: RenalLesson }) {
       {revealed && (
         <div className="answer-explanation">
           <h3>Did your explanation include these points?</h3>
-          {lesson.rubric.map((point, i) => (
-            <label key={point} className="rubric-check">
-              <input
-                type="checkbox"
-                checked={checked.includes(i)}
-                onChange={() =>
-                  setChecked((s) =>
-                    s.includes(i) ? s.filter((x) => x !== i) : [...s, i],
-                  )
-                }
-              />
-              {point}
-            </label>
-          ))}
+          {lesson.rubric.map((point, i) => <div className="rubric-check" key={point}><SavedSelfCheck id={`rubric-${lesson.slug}-${i}`} label={point} /></div>)}
           <p>
-            {checked.length} of {lesson.rubric.length} points self-assessed.
+            {checkedCount} of {lesson.rubric.length} points self-assessed.
             This is a revision aid, not a grade.
           </p>
           <h3>Follow-up question</h3>

@@ -750,8 +750,8 @@ export const renalQuestions: RenalQuestion[] = [
         "V2 → Gs → cAMP → PKA signaling promotes apical AQP2 insertion.",
       ],
       [
-        "Apical V2 receptors on red blood cells",
-        "The relevant receptor is basolateral on collecting-duct principal cells.",
+        "Apical V2 receptors on collecting-duct principal cells",
+        "The cell type is appropriate, but the membrane domain is wrong. V2 receptors are basolateral; AQP2 is inserted into the apical membrane.",
       ],
       [
         "NCC in the early distal tubule",

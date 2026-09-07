@@ -69,22 +69,22 @@ test("thorax quiz explains distractors, reviews mistakes and retains answers acr
   await expect(quiz.getByRole("button", { name: "Check thorax answer" })).toBeDisabled();
 });
 
-test("short answers reveal models and retain self-checks within the page session", async ({ page }) => {
+test("short answers reveal models and retain self-checks after reloading the page", async ({ page }) => {
   await page.goto("/subjects/anatomy/regional-anatomy");
   const recall = page.getByRole("region", { name: "Four short-answer challenges" });
   const card = recall.locator(".thorax-recall-card").first();
   await card.locator(":scope > summary").click();
-  await card.getByRole("textbox", { name: "My answer" }).fill("Sternum in front, vertebrae behind, diaphragm below; mediastinum between pleural sacs.");
+  await card.getByRole("textbox", { name: "Write your answer" }).fill("Sternum in front, vertebrae behind, diaphragm below; mediastinum between pleural sacs.");
   await expect(card.getByText(/^Name the sternum/)).not.toBeVisible();
   await card.getByText("Compare with the model answer", { exact: true }).click();
   await expect(card.getByText(/^Name the sternum/)).toBeVisible();
   await card.getByRole("checkbox").first().check();
   await page.getByRole("button", { name: "Next topic", exact: false }).click();
   await page.getByRole("button", { name: "Previous topic", exact: false }).click();
-  await expect(card.getByRole("textbox", { name: "My answer" })).toHaveValue(/Sternum in front/);
+  await expect(card.getByRole("textbox", { name: "Write your answer" })).toHaveValue(/Sternum in front/);
   await expect(card.getByRole("checkbox").first()).toBeChecked();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.reload();
   await card.locator(":scope > summary").click();
-  await expect(card.getByRole("textbox", { name: "My answer" })).toBeEmpty();
+  await expect(card.getByRole("textbox", { name: "Write your answer" })).toHaveValue(/Sternum in front/);
 });

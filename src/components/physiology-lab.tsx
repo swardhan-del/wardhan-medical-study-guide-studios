@@ -1,4 +1,9 @@
 "use client";
+import { abgCases as cases } from "@/content/abg-cases";
+import { recordAnswer, recordVisit, useLearning } from "./learning-store";
+import { SavedRecall } from "./saved-recall";
+import { PracticeQuestion } from "./practice-question";
+import transfer from "@/content/transfer-practice.json";
 import { useState } from "react";
 import Link from "next/link";
 import {
@@ -21,6 +26,8 @@ export function RenalHemodynamics() {
         Predict what happens to flow and glomerular pressure. Then change one
         resistance at a time. A value of 1 is the reference setting.
       </p>
+      <div className="study-panel"><h3>1. Predict before moving a slider</h3><p>Keep afferent resistance at 1 and double efferent resistance. Predict the direction of flow and glomerular pressure separately.</p><SavedRecall id="lab-prediction" label="My prediction and reason" /></div>
+      <h3>2. Run the experiment</h3>
       <div className="circuit-map" aria-label="Blood pathway">
         <span>
           Afferent
@@ -103,6 +110,9 @@ export function RenalHemodynamics() {
           in these sliders; autoregulation and hormone responses are omitted.
         </p>
       </details>
+      <h3>3. Explain and transfer</h3><SavedRecall id="lab-explanation" label="What changed, and why?" />
+      <p>Compare the observed values with your prediction. Reset, then repeat with afferent resistance at 2 and efferent resistance at 1.</p>
+      {transfer.questions.filter((q) => q.topic === "renal-experiments").map((q) => <PracticeQuestion key={q.id} item={q} title="Test the circuit relationship" />)}
       <Link className="text-link" href="/learn/renal/afferent-efferent">
         Read the afferent/efferent lesson →
       </Link>
@@ -154,92 +164,20 @@ export function VentilationPlayground() {
     </section>
   );
 }
-const cases = [
-  {
-    name: "A falling bicarbonate",
-    ph: "7.29",
-    co2: 26,
-    bicarbonate: 12,
-    sodium: 140,
-    chloride: 104,
-    direction: "Acidemia",
-    process: "Metabolic acidosis with expected respiratory compensation",
-    reasoning:
-      "Low bicarbonate explains the acidemia. Winter’s range is 24–28 mmHg; measured PaCO₂ is 26. The anion gap is 24 mmol/L. This is elevated against our teaching reference of 8–12 (normal albumin assumed), but does not identify the cause.",
-    winter: true,
-  },
-  {
-    name: "CO₂ that looks normal",
-    ph: "7.10",
-    co2: 40,
-    bicarbonate: 12,
-    sodium: 140,
-    chloride: 104,
-    direction: "Acidemia",
-    process: "Metabolic acidosis plus respiratory acidosis",
-    reasoning:
-      "A PaCO₂ of 40 is near the usual baseline but is too high for bicarbonate 12. Winter’s range is 24–28. The CO₂ therefore suggests an additional respiratory acidosis, rather than adequate compensation.",
-    winter: true,
-  },
-  {
-    name: "A near-normal pH",
-    ph: "7.45",
-    co2: 18,
-    bicarbonate: 12,
-    sodium: 140,
-    chloride: 104,
-    direction: "Within the reference interval",
-    process: "Metabolic acidosis plus respiratory alkalosis",
-    reasoning:
-      "The pH is at the upper boundary of our reference interval. Bicarbonate is low, and PaCO₂ is below Winter’s 24–28 range. Opposing metabolic acidosis and respiratory alkalosis can hide behind a near-normal pH.",
-    winter: true,
-  },
-  {
-    name: "A recent rise in CO₂",
-    ph: "7.26",
-    co2: 60,
-    bicarbonate: 26,
-    sodium: 140,
-    chloride: 104,
-    direction: "Acidemia",
-    process: "Acute respiratory acidosis",
-    reasoning:
-      "High CO₂ explains the acidemia. In an acute respiratory acidosis, bicarbonate often rises about 1–2 mmol/L per 10 mmHg CO₂ increase. A rise from 24 to 26 is compatible with an acute response to CO₂ increasing from 40 to 60. Duration and clinical context matter.",
-    winter: false,
-  },
-  {
-    name: "A recent fall in CO₂",
-    ph: "7.49",
-    co2: 30,
-    bicarbonate: 22,
-    sodium: 140,
-    chloride: 108,
-    direction: "Alkalemia",
-    process: "Acute respiratory alkalosis",
-    reasoning:
-      "Low CO₂ explains alkalemia. A fall in bicarbonate of about 1–2 mmol/L per 10 mmHg acute CO₂ decrease is expected. Here, CO₂ falls from 40 to 30 and bicarbonate from 24 to 22. Winter’s formula is for metabolic acidosis, so it is not used here.",
-    winter: false,
-  },
-  {
-    name: "A rising bicarbonate",
-    ph: "7.50",
-    co2: 48,
-    bicarbonate: 36,
-    sodium: 140,
-    chloride: 94,
-    direction: "Alkalemia",
-    process: "Metabolic alkalosis with expected respiratory compensation",
-    reasoning:
-      "Raised bicarbonate explains alkalemia. PaCO₂ commonly rises about 0.6–0.75 mmHg per 1 mmol/L bicarbonate rise. A 12 mmol/L rise predicts a CO₂ increase of about 7–9 mmHg. PaCO₂ 48 is compatible with that response.",
-    winter: false,
-  },
-];
 const processes = cases.map((c) => c.process);
-function AbgCase({ index }: { index: number }) {
+function AbgCase({ index, review }: { index: number; review: boolean }) {
   const item = cases[index];
-  const [direction, setDirection] = useState("");
-  const [process, setProcess] = useState("");
-  const [checked, setChecked] = useState(false);
+  const { data, ready } = useLearning();
+  const previous = data.answers["abg-" + (index + 1)];
+  const directions = ["Acidemia", "Within the reference interval", "Alkalemia"];
+  const packed = review ? null : previous?.lastChoice;
+  const [draftDirection, setDirection] = useState<string | null>(null);
+  const [draftProcess, setProcess] = useState<string | null>(null);
+  const direction = draftDirection ?? (packed != null ? directions[Math.floor(packed / processes.length)] ?? "" : "");
+  const process = draftProcess ?? (packed != null ? processes[packed % processes.length] ?? "" : "");
+  const [submitted, setChecked] = useState<boolean | null>(null);
+  const checked = submitted ?? (!review && !!previous);
+  const [feedbackSeen, setFeedbackSeen] = useState(false);
   const range = wintersRange(item.bicarbonate);
   return (
     <div className="abg-case">
@@ -271,6 +209,7 @@ function AbgCase({ index }: { index: number }) {
           <select
             value={direction}
             onChange={(e) => {
+              if (checked) setFeedbackSeen(true);
               setDirection(e.target.value);
               setChecked(false);
             }}
@@ -288,6 +227,7 @@ function AbgCase({ index }: { index: number }) {
           <select
             value={process}
             onChange={(e) => {
+              if (checked) setFeedbackSeen(true);
               setProcess(e.target.value);
               setChecked(false);
             }}
@@ -301,8 +241,8 @@ function AbgCase({ index }: { index: number }) {
       </div>
       <button
         className="button button-primary"
-        disabled={!direction || !process}
-        onClick={() => setChecked(true)}
+        disabled={!ready || !direction || !process || checked}
+        onClick={() => { recordAnswer("abg-" + (index + 1), direction === item.direction && process === item.process, directions.indexOf(direction) * processes.length + processes.indexOf(process), feedbackSeen); recordVisit(); setChecked(true); }}
       >
         Check interpretation
       </button>
@@ -318,7 +258,7 @@ function AbgCase({ index }: { index: number }) {
               {item.direction} · {item.process}
             </strong>
           </p>
-          <p>{item.reasoning}</p>
+          <p>{item.reasoning}</p><p>Saved in this browser. Your first-attempt result stays recorded.</p><button className="text-link" onClick={() => { setDirection(""); setProcess(""); setChecked(false); setFeedbackSeen(true); }}>Try without feedback</button>
           {item.winter && (
             <p>
               Expected PaCO₂: {range.low}–{range.high} mmHg. Anion gap:{" "}
@@ -331,8 +271,8 @@ function AbgCase({ index }: { index: number }) {
     </div>
   );
 }
-export function AbgPractice() {
-  const [index, setIndex] = useState(0);
+export function AbgPractice({ initialCase = 0, review = false }: { initialCase?: number; review?: boolean }) {
+  const [index, setIndex] = useState(initialCase);
   return (
     <section className="study-panel" aria-label="ABG interpretation exercise">
       <p className="eyebrow">Test · explain the pattern</p>
@@ -353,7 +293,7 @@ export function AbgPractice() {
           </button>
         ))}
       </div>
-      <AbgCase key={index} index={index} />
+      <AbgCase key={index} index={index} review={review} />
       <div className="action-row">
         <button
           className="button button-secondary"
@@ -378,8 +318,7 @@ export function AbgPractice() {
         >
           Merck Manual: Acid–Base Disorders
         </a>
-        . Cases and explanations are original teaching adaptations. Each case
-        starts fresh when reopened.
+        . Cases and explanations are original teaching adaptations. Checked answers are saved in My study on this browser.
       </p>
     </section>
   );

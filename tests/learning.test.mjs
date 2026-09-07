@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  practiceSummary,
   parseProgress,
   gradeAttempt,
   renalCircuit,
@@ -48,19 +49,40 @@ test("damaged, unknown and oversized browser data are safely discarded", () => {
   assert.deepEqual(data.answers, {});
   assert.equal(data.plan, null);
 });
-test("wrong answers remain due and successive correct reviews get spaced", () => {
-  const now = 1000000;
-  const wrong = gradeAttempt(undefined, false, now);
-  assert.equal(wrong.dueAt, now);
-  assert.equal(wrong.streak, 0);
-  const first = gradeAttempt(wrong, true, now);
-  assert.equal(first.dueAt, now + 86400000);
-  const second = gradeAttempt(first, true, now);
-  assert.equal(second.dueAt, now + 3 * 86400000);
-  const missed = gradeAttempt(second, false, now);
-  assert.equal(missed.streak, 0);
-  assert.equal(missed.correct, 2);
-  assert.equal(missed.attempts, 4);
+test("same-day corrections preserve first attempt and do not advance review", () => {
+  const now = 1000000, day = 86400000;
+  const wrong = gradeAttempt(undefined, false, now, 2);
+  const retry = gradeAttempt(wrong, true, now + 5000, 0);
+  assert.equal(retry.dueAt, now);
+  assert.equal(retry.streak, 0);
+  assert.equal(retry.firstCorrect, false);
+  assert.equal(retry.assisted, true);
+  const firstReview = gradeAttempt(retry, true, now + day + 5000, 0);
+  assert.equal(firstReview.streak, 1);
+  const nextReview = gradeAttempt(firstReview, true, firstReview.dueAt, 0);
+  assert.equal(nextReview.streak, 2);
+  assert.equal(nextReview.dueAt, firstReview.dueAt + 3 * day);
+  const premature = gradeAttempt(nextReview, true, firstReview.dueAt + day, 0);
+  assert.equal(premature.streak, 2);
+  assert.equal(premature.dueAt, nextReview.dueAt);
+  const hinted = gradeAttempt(undefined, true, now, 0, true);
+  assert.equal(hinted.streak, 0);
+  assert.equal(hinted.dueAt, now);
+});
+test("coverage and accuracy remain separate when three questions are unattempted", () => {
+  const answer = gradeAttempt(undefined, true, 1000000, 0);
+  assert.deepEqual(practiceSummary(["a", "b", "c", "d"], { a: answer }), { total: 4, attempted: 1, latestCorrect: 1, firstCorrect: 1, firstKnown: 1, correctedWithHelp: 0 });
+});
+test("legacy progress migrates without inventing first results and written drafts survive", () => {
+  const legacy = { version: 1, lessons: ["kidney"], answers: { a: { attempts: 3, correct: 2, lastCorrect: true, streak: 1, dueAt: 12345 } } };
+  const migrated = parseProgress(JSON.stringify(legacy), ["kidney"], ["a"]);
+  assert.equal(migrated.version, 2);
+  assert.equal(migrated.answers.a.attempts, 3);
+  assert.equal(migrated.answers.a.firstCorrect, null);
+  assert.deepEqual(migrated.lessons, ["kidney"]);
+  migrated.drafts = { "oral-a": "My reasoning", unknown: "discard", long: "x".repeat(5001) };
+  const restored = parseProgress(JSON.stringify(migrated), ["kidney"], ["a"], ["oral-a", "long"]);
+  assert.deepEqual(restored.drafts, { "oral-a": "My reasoning" });
 });
 test("circuit preserves distinct flow and pressure responses and bounds input", () => {
   assert.deepEqual(renalCircuit(1, 1), { flowPercent: 100, pressure: 50 });

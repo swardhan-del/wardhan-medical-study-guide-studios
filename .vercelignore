@@ -1,4 +1,6 @@
+.private
 .private/
+.private/**
 test-results/
 playwright-report/
 tests/
@@ -7,3 +9,5 @@ node_modules/
 .next/
 
 output/
+
+.env*

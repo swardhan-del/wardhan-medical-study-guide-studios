@@ -7,8 +7,8 @@ const volumes = [
     description: "Explore the anatomy of the chest, from the heart and lungs to the spaces and structures of the mediastinum. A focused introduction to how the major thoracic structures fit together.",
     companion: "A companion study guide is being prepared for revision of thoracic landmarks and anatomical relationships.",
     topics: ["Thoracic anatomy", "Heart and lungs", "Mediastinum"],
-    image: "/images/anatomy/volume-1.png", alt: "Sagittal illustration showing the compartments of the mediastinum and surrounding thoracic structures.",
-    caption: "Mediastinal compartments · STEM Visualizer collection",
+    image: "/images/anatomy/mediastinal-plane.svg", alt: "Sternal angle and T4–T5 disc aligned in one plane separating superior from inferior mediastinum.",
+    caption: "Mediastinal dividing plane · Original teaching schematic",
   },
   {
     number: "II", title: "Abdomen, Digestive System & Peritoneum",

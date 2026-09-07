@@ -1,40 +1,17 @@
 "use client";
+import { histologyTissues as tissues } from "@/content/histology-tissues";
+import { recordAnswer, recordVisit, useLearning } from "./learning-store";
+import { HistologyVisualLesson } from "./histology-visual-lesson";
 import { useState } from "react";
 import Link from "next/link";
-const tissues = [
-  {
-    name: "Proximal convoluted tubule",
-    clue: "A dense apical brush border makes the lumen look fuzzy; cells are relatively tall and strongly stained.",
-    rationale:
-      "Long apical microvilli provide surface area for bulk reabsorption. Indistinct cell boundaries and a fuzzy lumen support PCT recognition in a real section.",
-    features: [
-      "Fuzzy apical border",
-      "Tall cuboidal cells",
-      "Relatively narrow lumen",
-    ],
-  },
-  {
-    name: "Distal convoluted tubule",
-    clue: "A cleaner lumen, lower cells and more nuclear profiles around the lumen distinguish this view.",
-    rationale:
-      "DCT cells have sparse short microvilli rather than the prominent PCT brush border. The relatively open lumen is a useful clue, but should be combined with location and surrounding structures.",
-    features: [
-      "No prominent brush border",
-      "Lower cuboidal cells",
-      "Open lumen",
-    ],
-  },
-  {
-    name: "Collecting duct",
-    clue: "The lumen is broad, the nuclei are central, and cell boundaries are conspicuous.",
-    rationale:
-      "Distinct borders and a larger lumen support collecting-duct recognition. Cells become more columnar toward the papilla. Identification in a real section requires more than one clue.",
-    features: ["Distinct cell boundaries", "Central nuclei", "Broad lumen"],
-  },
-];
-function DetectiveCase({ index }: { index: number }) {
-  const [selected, setSelected] = useState("");
-  const [revealed, setRevealed] = useState(false);
+function DetectiveCase({ index, review }: { index: number; review: boolean }) {
+  const { data, ready } = useLearning();
+  const previous = data.answers["histology-" + (index + 1)];
+  const [draft, setDraft] = useState<string | null>(null);
+  const selected = draft ?? (!review && previous?.lastChoice != null ? tissues[previous.lastChoice]?.name ?? "" : "");
+  const [submitted, setSubmitted] = useState<boolean | null>(null);
+  const revealed = submitted ?? (!review && !!previous);
+  const [hint, setHint] = useState(false);
   const [feature, setFeature] = useState<number | null>(null);
   const item = tissues[index];
   const count = index === 1 ? 14 : 10;
@@ -124,14 +101,15 @@ function DetectiveCase({ index }: { index: number }) {
         <div>
           <p className="eyebrow">Detective case {index + 1}</p>
           <h2>Which tubule fits these clues?</h2>
-          <p>{item.clue}</p>
+          <button className="text-link" onClick={() => setHint(true)}>Show a structural hint</button>{hint && <p>{item.clue}</p>}
           <label className="study-form">
             My identification
             <select
               value={selected}
               onChange={(e) => {
-                setSelected(e.target.value);
-                setRevealed(false);
+                if (revealed) setHint(true);
+                setDraft(e.target.value);
+                setSubmitted(false);
               }}
             >
               <option value="">Choose a structure</option>
@@ -142,8 +120,8 @@ function DetectiveCase({ index }: { index: number }) {
           </label>
           <button
             className="button button-primary"
-            disabled={!selected}
-            onClick={() => setRevealed(true)}
+            disabled={!ready || !selected || revealed}
+            onClick={() => { recordAnswer("histology-" + (index + 1), selected === item.name, tissues.findIndex((t) => t.name === selected), hint); recordVisit(); setSubmitted(true); }}
           >
             Reveal the reasoning
           </button>
@@ -151,7 +129,7 @@ function DetectiveCase({ index }: { index: number }) {
       </div>
       {revealed && (
         <div className="answer-explanation" role="status">
-          <h3>
+          <p>Checked answers are saved in this browser. A hint-assisted answer does not advance spaced review.</p><button className="text-link" onClick={() => { setDraft(""); setSubmitted(false); setHint(true); setFeature(null); }}>Try without feedback</button><h3>
             {selected === item.name ? "Correct" : "Look again"}: {item.name}
           </h3>
           <p>{item.rationale}</p>
@@ -175,10 +153,10 @@ function DetectiveCase({ index }: { index: number }) {
     </div>
   );
 }
-export function HistologyDetective() {
-  const [index, setIndex] = useState(0);
+export function HistologyDetective({ initialCase = 0, initialVisual = 0, review = false }: { initialCase?: number; initialVisual?: number; review?: boolean }) {
+  const [index, setIndex] = useState(initialCase);
   return (
-    <div className="study-stack">
+    <div className="study-stack" id="detective-cases">
       <div className="topic-buttons" aria-label="Choose a histology case">
         {tissues.map((_, i) => (
           <button
@@ -190,21 +168,21 @@ export function HistologyDetective() {
           </button>
         ))}
       </div>
-      <DetectiveCase key={index} index={index} />
+      <DetectiveCase key={index} index={index} review={review} />
+      <HistologyVisualLesson initialStage={initialVisual} review={review} />
       <section className="study-panel">
-        <h2>From schematic to slide</h2>
+        <h2>Extend your slide practice</h2>
         <p>
           Use these simplified drawings to learn the distinguishing features,
           then practice on course-approved microscopy. Real sections vary with
           plane, preparation and staining. Combine several clues and orient
           yourself in cortex or medulla.
         </p>
+        <p><a className="text-link" href="https://medcell.org/histology/urinary_system_lab.php#slides">Open Yale’s public renal slide collection →</a> Use study mode to orient yourself, then quiz mode to hide labels. Start with a renal corpuscle, then compare proximal and distal tubule profiles. This opens an external teaching collection.</p>
         <p className="source-note">
           Source: Microscopic Anatomy and Embryology I–II, Professional
           Integrated Edition, Revision 4, August 2, 2026; “Kidney and Nephron
-          Histology,” tubular segments and practical identification. Full source
-          documents and third-party slide photographs remain in the private
-          library.
+          Histology,” tubular segments and practical identification. Full source documents remain in the private library. The two public micrographs above have their own source and license records.
         </p>
       </section>
     </div>

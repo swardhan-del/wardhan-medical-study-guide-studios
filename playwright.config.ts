@@ -11,7 +11,7 @@ export default defineConfig({
   projects: [
     {
       name: "desktop",
-      testMatch: /(?:public|student-audit|directory|authored-guides|histology-resources|thorax)\.spec\.ts/,
+      testMatch: /(?:public|student-audit|learning-continuity|directory|authored-guides|histology-resources|thorax)\.spec\.ts/,
       use: {
         baseURL: "http://127.0.0.1:3101",
         viewport: { width: 1440, height: 1000 },
@@ -19,7 +19,7 @@ export default defineConfig({
     },
     {
       name: "mobile",
-      testMatch: /(?:public|student-audit|directory|authored-guides|histology-resources|thorax)\.spec\.ts/,
+      testMatch: /(?:public|student-audit|learning-continuity|directory|authored-guides|histology-resources|thorax)\.spec\.ts/,
       use: {
         baseURL: "http://127.0.0.1:3101",
         viewport: { width: 390, height: 844 },

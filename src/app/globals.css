@@ -2946,3 +2946,21 @@ select:focus-visible {
 }
 @media(max-width:1000px){.directory-subject-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:600px){.directory-subject-grid,.directory-shortcuts{grid-template-columns:1fr;}.directory-controls{padding:1rem;}.directory-subject-card{padding:1.3rem;}.directory-children{margin-left:.35rem;padding-left:.35rem;}}
+
+/* Study audit: readable writing, visual progression and honest coverage. */
+.saved-recall { margin-block: 1.5rem; }
+.saved-recall label { display: block; font-weight: 700; margin-bottom: .6rem; }
+.saved-recall textarea { display: block; width: 100%; min-height: 8rem; resize: vertical; padding: 1rem; border: 1px solid var(--line, #9aabaa); background: #fffdfa; color: #142b31; font: inherit; }
+.subject-learning-path { margin-bottom: 2rem; }
+.subject-learning-path ol { list-style-position: inside; padding-left: 0; }
+.subject-learning-path li { padding: 1rem; }
+.archive-disclosure { margin-block: 3rem; }
+.visual-sequence { margin-block: 2rem; }
+.visual-sequence figure { margin: 1.5rem 0; }
+.visual-sequence img, .epithelium-pattern { width: 100%; height: auto; display: block; }
+.visual-sequence .topic-buttons { flex-wrap: wrap; gap: .5rem; }
+.visual-sequence .topic-buttons button { white-space: normal; }
+.practice-question fieldset:disabled { opacity: 1; }
+.practice-question { margin-block: 1.5rem; }
+.topic-progress progress { accent-color: #287c7b; }
+@media (max-width: 760px) { .subject-learning-path .study-grid { grid-template-columns: 1fr; } .visual-sequence { padding: 1rem; } .visual-sequence .study-panel { padding: 1rem; } }

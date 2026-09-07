@@ -113,8 +113,8 @@
         "respiratory-histology",
         "gi-histology"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-09-07",
+      "minutes": 12
     },
     {
       "id": "cell-junctions",
@@ -1614,12 +1614,12 @@
             "reason": "Correct: distinguish conversion of waste nitrogen from elimination of the resulting urea."
           },
           {
-            "text": "Kidney synthesis; liver filtration",
-            "reason": "This reverses the principal roles."
+            "text": "Liver transamination directly excretes nitrogen; the kidney stores urea",
+            "reason": "Transamination transfers amino groups between molecules. It does not excrete them, and the kidney is an excretory organ rather than a urea storage organ."
           },
           {
-            "text": "Lung synthesis; pancreatic storage",
-            "reason": "These are not the principal routes of urea handling."
+            "text": "Renal ammonium production replaces hepatic urea synthesis",
+            "reason": "Renal ammonium excretion contributes to nitrogen disposal and acid–base balance, but does not replace the liver’s principal urea-cycle role."
           }
         ],
         "answer": 0
@@ -1633,8 +1633,8 @@
         "renal-filtration-and-clearance",
         "protein-structure"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-09-07",
+      "minutes": 9
     },
     {
       "id": "meiosis",

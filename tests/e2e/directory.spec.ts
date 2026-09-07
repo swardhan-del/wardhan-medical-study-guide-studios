@@ -50,6 +50,7 @@ test("physiology preserves folder hierarchy and printable-guide destinations", a
   page,
 }, info) => {
   await page.goto("/subjects/physiology");
+  await page.locator("#archive-directory:visible > summary").click();
   const directory = page.locator("#dropbox-directory:visible");
   await expect(
     directory.getByRole("link", { name: /^Start here Final printable/ }),
@@ -97,6 +98,7 @@ test("course views and reference-only subjects open without false availability n
     await expect(
       page.getByRole("heading", { name: title, level: 1, exact: true }),
     ).toBeVisible();
+    await page.locator("#archive-directory:visible > summary").click();
     await expect(page.locator("#dropbox-directory:visible")).toBeVisible();
     await expect(
       page.getByRole("heading", { name: "This collection is in preparation." }),
@@ -108,6 +110,7 @@ test("course views and reference-only subjects open without false availability n
     ).toBe(true);
   }
   await page.goto("/subjects/microbiology");
+  await page.locator("#archive-directory:visible > summary").click();
   await page
     .locator("#dropbox-directory")
     .getByRole("searchbox")

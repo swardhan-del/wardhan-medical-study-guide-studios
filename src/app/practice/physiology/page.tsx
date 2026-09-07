@@ -12,7 +12,9 @@ export const metadata = {
     "Explore afferent and efferent resistance, change ventilation and work through six blood-gas interpretation exercises.",
   alternates: { canonical: "/practice/physiology" },
 };
-export default function PhysiologyPage() {
+export default async function PhysiologyPage({ searchParams }: { searchParams: Promise<{ case?: string; review?: string }> }) {
+  const query = await searchParams;
+  const initialCase = Math.max(0, Math.min(5, Math.floor(Number(query.case) || 1) - 1));
   return (
     <div className="site-container study-page">
       <header className="study-hero">
@@ -43,7 +45,7 @@ export default function PhysiologyPage() {
         <VentilationPlayground />
       </div>
       <div id="abg">
-        <AbgPractice />
+        <AbgPractice initialCase={initialCase} review={query.review === "1"} />
       </div>
       <RenalSources />
     </div>

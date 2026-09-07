@@ -1,3 +1,4 @@
+import { SubjectLearningPath } from "@/components/subject-learning-path";
 import { LearningCollection } from "@/components/learning-collection";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -52,7 +53,7 @@ export default async function SubjectPage({ params }: Props) {
           {(slug === "genetics" || slug === "immunology" || isHistology) && (
             <><a className="text-link" href="#authored-guides">Open selected study guides ↓</a>{" · "}</>
           )}
-          <a className="text-link" href="#dropbox-directory">
+          <a className="text-link" href="#archive-directory">
             Browse Dropbox guides & subtopics ↓
           </a>
           {learningId && (
@@ -81,18 +82,7 @@ export default async function SubjectPage({ params }: Props) {
           </ul>
         )}
       </header>
-      {isHistology && <HistologyOverview />}
-      {isHistology && <AuthoredGuides
-        key={slug}
-        collection={histologyGuides}
-        initialCourse={slug === "histology" ? "" : slug}
-        title="Open the curated histology study guides."
-        introduction="Read a focused chapter, compare its structures with a slide collection, then explain what you recognize. These nine selected Word guides come directly from the curated Microscopic Anatomy and Histology folder."
-        searchHint="Try epithelium, kidney, placenta or retina"
-        accessNote="These links open curated study copies; they do not make the source documents public downloads."
-      />}
-      {(slug === "genetics" || slug === "immunology") && <AuthoredGuides />}
-      <SubjectDirectory id={slug} />
+      <SubjectLearningPath subject={slug === "immunology" ? "immunology" : learningId || slug} />
       {learningId && (
         <section
           id="website-lessons"
@@ -107,6 +97,19 @@ export default async function SubjectPage({ params }: Props) {
           <CatalogBrowser records={publicCatalog} initialSubject={learningId} />
         </section>
       )}
+      {isHistology && <HistologyOverview />}
+      {isHistology && <AuthoredGuides
+        key={slug}
+        collection={histologyGuides}
+        initialCourse={slug === "histology" ? "" : slug}
+        title="Open the curated histology study guides."
+        introduction="Read a focused chapter, compare its structures with a slide collection, then explain what you recognize. These nine selected Word guides come directly from the curated Microscopic Anatomy and Histology folder."
+        searchHint="Try epithelium, kidney, placenta or retina"
+        accessNote="These links open curated study copies; they do not make the source documents public downloads."
+      />}
+      {(slug === "genetics" || slug === "immunology") && <AuthoredGuides />}
+      <details className="study-details archive-disclosure" id="archive-directory"><summary>Explore the Dropbox archive and full subtopic directory</summary><SubjectDirectory id={slug} /></details>
+
       {slug === "anatomy" ? <AnatomyVolumes /> : null}
       {slug === "physiology" && <LearningCollection compact />}
       {slug === "histology" && (

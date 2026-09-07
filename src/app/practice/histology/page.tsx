@@ -6,7 +6,9 @@ export const metadata = {
     "Compare proximal tubule, distal tubule and collecting-duct schematics. Reveal the structural clues and connect them to physiology.",
   alternates: { canonical: "/practice/histology" },
 };
-export default function HistologyPage() {
+export default async function HistologyPage({ searchParams }: { searchParams: Promise<{ case?: string; visual?: string; review?: string }> }) {
+  const query = await searchParams;
+  const initialCase = Math.max(0, Math.min(2, Math.floor(Number(query.case) || 1) - 1));
   return (
     <div className="site-container study-page">
       <header className="study-hero">
@@ -22,7 +24,7 @@ export default function HistologyPage() {
         </p>
       <SaveButton id="histology-detective" title="Histology detective" />
       </header>
-      <HistologyDetective />
+      <HistologyDetective initialCase={initialCase} initialVisual={query.visual === "a" ? 2 : query.visual === "b" ? 3 : 0} review={query.review === "1"} />
     </div>
   );
 }

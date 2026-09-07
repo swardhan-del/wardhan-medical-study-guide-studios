@@ -32,7 +32,7 @@ export function RenalQuiz({
   }, [index]);
   const [choice, setChoice] = useState<number | null>(null);
   const [results, setResults] = useState<Record<string, number>>({});
-  const { ready, persistent } = useLearning();
+  const { ready, persistent, data } = useLearning();
   const [finished, setFinished] = useState(false);
   useEffect(() => {
     recordVisit();
@@ -52,7 +52,7 @@ export function RenalQuiz({
     if (Object.keys(results).length === 0)
       learningEvent("quiz_started", { set: quizId });
     setResults((previous) => ({ ...previous, [question.id]: choice }));
-    recordAnswer(question.id, choice === question.answer);
+    recordAnswer(question.id, choice === question.answer, choice);
   }
   function next() {
     if (index === questions.length - 1) {
@@ -74,6 +74,7 @@ export function RenalQuiz({
     <section className="study-panel renal-quiz" aria-label={title}>
       <p className="eyebrow">Active recall · {questions.length} questions</p>
       <h2>{title}</h2>
+      <p className="muted-note">Checked answers are saved in My study. This quiz opens a fresh practice round; earlier results remain in your history. Same-day retries do not advance spaced review.</p>
       {!persistent && (
         <p className="study-notice" role="status">
           Browser storage is unavailable. This session works, but progress may
@@ -120,6 +121,7 @@ export function RenalQuiz({
               max={questions.length}
             />
           </div>
+          {data.answers[question.id] && <p className="muted-note">Previous history: first attempt {data.answers[question.id].firstCorrect === null ? "not recorded" : data.answers[question.id].firstCorrect ? "correct" : "incorrect"}; latest answer {data.answers[question.id].lastCorrect ? "correct" : "incorrect"}.</p>}
           <fieldset
             key={question.id}
             className="quiz-choices"

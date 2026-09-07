@@ -3,15 +3,19 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   renalLessons,
-  renalQuestions,
   renalLessonHref,
 } from "@/content/renal-course";
 import { emptyProgress, localDate, studyPlan } from "@/lib/learning-core";
 import { recordVisit, updateLearning, useLearning } from "./learning-store";
-import { RenalQuiz } from "./renal-quiz";
+import { PracticeQuestion } from "./practice-question";
+import { practiceItems, practiceTopics } from "@/content/practice-registry";
+import { practiceSummary } from "@/lib/learning-core";
 export function StudyDashboard() {
   const { ready, data, persistent } = useLearning();
   const [session, setSession] = useState<string[] | null>(null);
+  const [subject, setSubject] = useState("all");
+  const [showUnattempted, setShowUnattempted] = useState(false);
+  const [reviewIndex, setReviewIndex] = useState(0);
   const [confirm, setConfirm] = useState(false);
   useEffect(() => {
     recordVisit();
@@ -27,14 +31,15 @@ export function StudyDashboard() {
     };
   }, []);
   if (!ready) return <p role="status">Loading your study progress…</p>;
-  const mistakes = renalQuestions.filter(
+  const mistakes = practiceItems.filter(
     (q) => data.answers[q.id] && !data.answers[q.id].lastCorrect,
   );
-  const due = renalQuestions.filter(
+  const due = practiceItems.filter(
     (q) =>
       data.answers[q.id] &&
       (!data.answers[q.id].lastCorrect || data.answers[q.id].dueAt <= now),
   );
+  const lastPracticed = practiceItems.filter((q) => data.answers[q.id]).sort((a, b) => data.answers[b.id].lastAt - data.answers[a.id].lastAt)[0];
   const next =
     renalLessons.find((l) => !data.lessons.includes(l.slug)) ?? renalLessons[0];
   function reset() {
@@ -51,11 +56,11 @@ export function StudyDashboard() {
       </p>
       <div className="metric-row">
         <div>
-          <strong>{data.lessons.length}/8</strong>
-          <span>Lessons marked complete</span>
+          <strong>{renalLessons.filter((l) => data.lessons.includes(l.slug)).length}/8</strong>
+          <span>Renal lessons marked complete</span>
         </div>
         <div>
-          <strong>{Object.keys(data.answers).length}/30</strong>
+          <strong>{Object.keys(data.answers).length}/{practiceItems.length}</strong>
           <span>Questions attempted</span>
         </div>
         <div>
@@ -77,26 +82,26 @@ export function StudyDashboard() {
         <p>
           Wrong answers remain due. Correct answers return after approximately
           1, 3, 7, 14 and 30 days of successive correct reviews. This is a
-          simple review schedule, not an exam-readiness score.
+          simple review schedule. A retry within 24 hours or an answer made with a hint does not advance the schedule. These counts do not measure exam readiness.
         </p>
         <div className="action-row">
           <Link
             className="button button-primary"
-            href={renalLessonHref(next.slug)}
+            href={lastPracticed?.href ?? renalLessonHref(next.slug)}
           >
             Continue learning
           </Link>
           <button
             className="button button-secondary"
             disabled={!due.length}
-            onClick={() => setSession(due.slice(0, 10).map((q) => q.id))}
+            onClick={() => (setReviewIndex(0), setSession(due.slice(0, 10).map((q) => q.id)))}
           >
             Review due questions ({due.length})
           </button>
           <button
             className="button button-secondary"
             disabled={!mistakes.length}
-            onClick={() => setSession(mistakes.map((q) => q.id))}
+            onClick={() => (setReviewIndex(0), setSession(mistakes.map((q) => q.id)))}
           >
             Review my mistakes ({mistakes.length})
           </button>
@@ -107,41 +112,23 @@ export function StudyDashboard() {
           <button className="text-link" onClick={() => setSession(null)}>
             Close review session
           </button>
-          <RenalQuiz
-            quizId="review"
-            key={session.join(",")}
-            questions={session.map((id) =>
-              renalQuestions.find((q) => q.id === id)!,
-            )}
-            title="Your review session"
-          />
+          <p>Review item {reviewIndex + 1} of {session.length}</p>
+          <PracticeQuestion freshAttempt key={session[reviewIndex]} item={practiceItems.find((q) => q.id === session[reviewIndex])!} title="Your review session" />
+          <div className="action-row"><button className="button button-secondary" disabled={reviewIndex === 0} onClick={() => setReviewIndex(reviewIndex - 1)}>Previous review item</button><button className="button button-secondary" disabled={reviewIndex === session.length - 1} onClick={() => setReviewIndex(reviewIndex + 1)}>Next review item</button></div>
         </div>
       )}
       <section>
         <p className="eyebrow">Your practice map</p>
         <h2>Let your answers guide your revision.</h2>
-        <p>
-          Not started means you have not tried these questions. Needs review means a latest answer was incorrect. Practiced means all attempted answers are currently correct; it does not imply mastery.
-        </p>
+        <p>Coverage shows how many questions you have attempted. Accuracy describes those attempts. Neither implies mastery. First-attempt scores stay unchanged when you correct an answer.</p>
+        <label className="study-form">Filter practice map by subject<select value={subject} onChange={(e) => setSubject(e.target.value)}><option value="all">All subjects</option>{[...new Set(practiceTopics.map((t) => t.subject))].map((id) => <option key={id} value={id}>{id.replaceAll("-", " ")}</option>)}</select></label>
+        <label><input type="checkbox" checked={showUnattempted} onChange={(e) => setShowUnattempted(e.target.checked)} /> Show topics I have not attempted</label>
+        {!Object.keys(data.answers).length && !showUnattempted && <p>Your practice map starts with your first checked answer. Explore a <Link className="text-link" href="/subjects">subject learning path</Link>, then return here to review it.</p>}
         <div className="study-grid two">
-          {renalLessons.map((lesson) => {
-            const qs = renalQuestions.filter((q) => q.lesson === lesson.slug);
-            const attempted = qs.filter((q) => data.answers[q.id]);
-            const correct = attempted.filter(
-              (q) => data.answers[q.id].lastCorrect,
-            ).length;
-            return (
-              <article key={lesson.slug} className="topic-progress">
-                <Link className="text-link" href={renalLessonHref(lesson.slug)}>
-                  {lesson.title}
-                </Link>
-                <p className={`practice-status ${!attempted.length ? "not-started" : correct < attempted.length ? "needs-review" : "practiced"}`}>
-                  {!attempted.length ? "Not started" : correct < attempted.length ? "Needs review" : "Practiced"}
-                </p>
-                {attempted.length > 0 && <progress aria-label={`${lesson.title} latest correct answers among attempted questions`} max={attempted.length} value={correct} />}
-                <p>{attempted.length ? `${correct} of ${attempted.length} attempted questions correct on latest attempt · ${qs.length - attempted.length} not attempted` : `${qs.length} questions ready when you are`}</p>
-              </article>
-            );
+          {practiceTopics.filter((t) => (subject === "all" || t.subject === subject) && (showUnattempted || practiceItems.some((q) => q.topic === t.id && data.answers[q.id]))).map((topic) => {
+            const stats = practiceSummary(practiceItems.filter((q) => q.topic === topic.id).map((q) => q.id), data.answers);
+            const status = !stats.attempted ? "Not started" : stats.latestCorrect < stats.attempted ? "Needs review" : stats.attempted < stats.total ? "In progress" : "All questions attempted";
+            return <article key={topic.id} className="topic-progress"><Link className="text-link" href={topic.href}>{topic.title}</Link><p className="practice-status">{status}</p><progress aria-label={`${topic.title} question coverage`} max={stats.total} value={stats.attempted} /><p>Coverage: {stats.attempted} of {stats.total} attempted · {stats.total - stats.attempted} not attempted</p><p>Latest accuracy: {stats.attempted ? `${stats.latestCorrect} of ${stats.attempted} correct` : "No attempts yet"}</p><p>First-attempt accuracy: {stats.firstKnown ? `${stats.firstCorrect} of ${stats.firstKnown} recorded first attempts correct` : "Not recorded yet"}</p>{stats.correctedWithHelp > 0 && <p>{stats.correctedWithHelp} latest correct answers used a hint or a same-day retry.</p>}</article>;
           })}
         </div>
       </section>
@@ -195,7 +182,7 @@ export function StudyDashboard() {
         {confirm && (
           <div className="study-notice">
             <p>
-              Clear all lesson, quiz, oral and planner progress from this
+              Clear all lesson, quiz, written-answer, oral and planner progress from this
               browser?
             </p>
             <button

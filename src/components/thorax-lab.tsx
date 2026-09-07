@@ -1,5 +1,6 @@
 "use client";
 
+import { SavedRecall, SavedSelfCheck } from "./saved-recall";
 import { useRef, useState } from "react";
 import practice from "@/content/thorax-practice.json";
 import { ThoraxMap } from "@/components/thorax-map";
@@ -47,7 +48,7 @@ function ThoraxQuestions({ answers, onAnswer, onReset }: Props) {
             <span>{option}</span>
           </label>)}
         </fieldset>
-        <button type="submit" className="button button-primary" disabled={!response}>Check thorax answer</button>
+        <button type="submit" className="button button-primary" disabled={!response || response.checked}>Check thorax answer</button>
         <div className="quiz-feedback thorax-feedback" role="status" aria-live="polite">
           {response?.checked ? <>
             <p><strong>{response.choice === question.answer ? "Correct." : "Keep practicing."} Correct answer: {question.options[question.answer]}.</strong> {question.explanations[question.answer]}</p>
@@ -69,7 +70,7 @@ function ThoraxQuestions({ answers, onAnswer, onReset }: Props) {
         })}
       </div>
       {checked.length === 12 ? <p className="thorax-complete">{correct === 12 ? "All twelve questions correct. Now explain a relationship in your own words below." : `You have checked all twelve questions. Review the ${missed.length} you missed, then try a short answer below.`}</p> : null}
-      <p className="thorax-small-note">Answers stay while you change topics on this page. Reloading or leaving the page starts a new session.</p>
+      <p className="thorax-small-note">Answers stay while you change topics on this page. Checked answers and written responses are saved in this browser and appear in My study. Reset starts a fresh round without deleting your history.</p>
     </section>
   );
 }
@@ -82,14 +83,13 @@ function ThoraxRecall() {
       <p>Write or say your answer before opening the model. Use the checklist to assess it yourself; your writing is not automatically graded or sent anywhere.</p>
       {practice.oral.map((prompt, index) => <details className="thorax-recall-card" key={prompt.id}>
         <summary>{index + 1}. {prompt.prompt}</summary>
-        <label htmlFor={`thorax-writing-${prompt.id}`}>My answer</label>
-        <textarea id={`thorax-writing-${prompt.id}`} rows={4} placeholder="Explain the relationship in your own words…" />
+        <SavedRecall id={`oral-${prompt.id}`} label="Write your answer" />
         <details className="thorax-model-answer">
           <summary>Compare with the model answer</summary>
           <p>{prompt.answer}</p>
           <fieldset>
             <legend>My self-check</legend>
-            {prompt.checklist.map((item) => <label key={item}><input type="checkbox" /> <span>{item}</span></label>)}
+            {prompt.checklist.map((item, i) => <SavedSelfCheck key={item} id={`check-${prompt.id}-${i}`} label={item} />)}
           </fieldset>
         </details>
       </details>)}

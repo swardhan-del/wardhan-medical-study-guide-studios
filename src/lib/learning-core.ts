@@ -4,11 +4,16 @@ export type Attempt = {
   lastCorrect: boolean;
   streak: number;
   dueAt: number;
+  firstCorrect: boolean | null;
+  lastAt: number;
+  lastChoice: number | null;
+  assisted: boolean;
 };
 export type LearningProgress = {
-  version: 1;
+  version: 2;
   lessons: string[];
   answers: Record<string, Attempt>;
+  drafts: Record<string, string>;
   visits: string[];
   quizzes: number;
   shares: number;
@@ -16,9 +21,10 @@ export type LearningProgress = {
   plan: { start: string; date: string; minutes: number } | null;
 };
 export const emptyProgress = (): LearningProgress => ({
-  version: 1,
+  version: 2,
   lessons: [],
   answers: {},
+  drafts: {},
   visits: [],
   quizzes: 0,
   shares: 0,
@@ -34,12 +40,13 @@ export function parseProgress(
   raw: string | null,
   lessons: string[],
   questions: string[],
+  draftIds: string[] = [],
 ): LearningProgress {
   const clean = emptyProgress();
-  if (!raw || raw.length > 100000) return clean;
+  if (!raw || raw.length > 1000000) return clean;
   try {
     const value = JSON.parse(raw);
-    if (!value || value.version !== 1) return clean;
+    if (!value || ![1, 2].includes(value.version)) return clean;
     for (const key of ["lessons", "oral"] as const) {
       if (Array.isArray(value[key]))
         clean[key] = [
@@ -71,6 +78,9 @@ export function parseProgress(
       value.plan.minutes <= 120
     )
       clean.plan = value.plan;
+    for (const id of draftIds) {
+      if (typeof value.drafts?.[id] === "string" && value.drafts[id].length <= 5000) clean.drafts[id] = value.drafts[id];
+    }
     for (const id of questions) {
       const a = value.answers?.[id];
       if (
@@ -89,6 +99,10 @@ export function parseProgress(
           lastCorrect: a.lastCorrect,
           streak: a.streak,
           dueAt: a.dueAt,
+          firstCorrect: typeof a.firstCorrect === "boolean" ? a.firstCorrect : (a.attempts === 1 ? a.lastCorrect : null),
+          lastAt: finiteInt(a.lastAt, 8640000000000000) ? a.lastAt : 0,
+          lastChoice: finiteInt(a.lastChoice, 100) ? a.lastChoice : null,
+          assisted: a.assisted === true,
         };
       }
     }
@@ -101,16 +115,35 @@ export function gradeAttempt(
   previous: Attempt | undefined,
   correct: boolean,
   now: number,
+  choice: number | null = null,
+  usedHint = false,
 ): Attempt {
-  const streak = correct ? Math.min((previous?.streak ?? 0) + 1, 10000) : 0;
-  // A simple review heuristic, not a claim of an individually optimized memory model.
-  const days = correct ? [1, 3, 7, 14, 30][Math.min(streak - 1, 4)] : 0;
+  // A repeat inside 24 hours may use recently revealed feedback. It never
+  // advances a spaced-review streak or delays an already-due correction.
+  const assisted = usedHint || !!(previous?.lastAt && (now - previous.lastAt < 86400000 || now < previous.dueAt));
+  const streak = !correct ? 0 : assisted ? (previous?.streak ?? 0) : Math.min((previous?.streak ?? 0) + 1, 10000);
+  const days = [1, 3, 7, 14, 30][Math.min(Math.max(streak - 1, 0), 4)];
   return {
     attempts: Math.min((previous?.attempts ?? 0) + 1, 1000000),
     correct: Math.min((previous?.correct ?? 0) + Number(correct), 1000000),
     lastCorrect: correct,
+    firstCorrect: previous ? previous.firstCorrect : correct,
+    lastAt: now,
+    lastChoice: choice,
+    assisted,
     streak,
-    dueAt: now + days * 86400000,
+    dueAt: !correct ? now : assisted ? (previous?.dueAt ?? now) : now + days * 86400000,
+  };
+}
+export function practiceSummary(ids: string[], answers: Record<string, Attempt>) {
+  const attempted = ids.filter((id) => answers[id]);
+  return {
+    total: ids.length,
+    attempted: attempted.length,
+    latestCorrect: attempted.filter((id) => answers[id].lastCorrect).length,
+    firstCorrect: attempted.filter((id) => answers[id].firstCorrect === true).length,
+    firstKnown: attempted.filter((id) => answers[id].firstCorrect !== null).length,
+    correctedWithHelp: attempted.filter((id) => answers[id].lastCorrect && answers[id].assisted).length,
   };
 }
 export function localDate(date = new Date()): string {

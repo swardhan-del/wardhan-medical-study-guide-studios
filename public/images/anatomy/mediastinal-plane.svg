@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title description">
+  <title id="title">The transverse thoracic plane</title>
+  <desc id="description">An orientation schematic, not a scaled anatomical section. The sternal angle at the manubriosternal joint and the T4 to T5 intervertebral disc lie on one horizontal line. The superior mediastinum is above it and the inferior mediastinum below it.</desc>
+  <rect width="900" height="760" rx="12" fill="#fbf7ee"/>
+  <g font-family="Arial, sans-serif" fill="#142b31">
+    <text x="50" y="58" font-size="30" font-weight="bold">One plane. Two landmarks.</text>
+    <text x="50" y="97" font-size="20">Sternal angle ↔ T4–T5 intervertebral disc</text>
+    <text x="100" y="158" font-size="18">ANTERIOR</text><text x="675" y="158" font-size="18">POSTERIOR</text>
+    <rect x="246" y="200" width="390" height="110" fill="#bcded7"/>
+    <rect x="246" y="310" width="390" height="250" fill="#e9cec0"/>
+    <rect x="208" y="200" width="38" height="110" rx="4" fill="#e0d6bd" stroke="#665940" stroke-width="3"/>
+    <path d="M208 315 L246 315 L250 505 L228 541 L211 503 Z" fill="#e0d6bd" stroke="#665940" stroke-width="3"/>
+    <rect x="650" y="245" width="65" height="60" rx="6" fill="#e0d6bd" stroke="#665940" stroke-width="3"/>
+    <rect x="650" y="315" width="65" height="60" rx="6" fill="#e0d6bd" stroke="#665940" stroke-width="3"/>
+    <path d="M208 310 H715" stroke="#176d70" stroke-width="5" stroke-dasharray="10 7"/>
+    <circle cx="227" cy="310" r="8" fill="#176d70"/><circle cx="682" cy="310" r="8" fill="#176d70"/>
+    <text x="440" y="244" text-anchor="middle" font-size="23" font-weight="bold">Superior</text><text x="440" y="274" text-anchor="middle" font-size="21">mediastinum</text>
+    <text x="440" y="411" text-anchor="middle" font-size="23" font-weight="bold">Inferior</text><text x="440" y="443" text-anchor="middle" font-size="21">mediastinum</text>
+    <text x="682" y="284" text-anchor="middle" font-size="21">T4</text><text x="682" y="354" text-anchor="middle" font-size="21">T5</text>
+    <text x="43" y="276" font-size="19">Sternal angle</text><path d="M164 280 L219 304" fill="none" stroke="#142b31" stroke-width="2"/>
+    <text x="735" y="304" font-size="18">T4–T5</text><text x="735" y="329" font-size="18">disc</text>
+    <text x="55" y="403" font-size="18">Sternum</text><path d="M150 399 H207" stroke="#142b31" stroke-width="2"/>
+    <path d="M250 560 Q440 517 636 560" stroke="#996347" fill="none" stroke-width="7"/>
+    <text x="440" y="597" text-anchor="middle" font-size="20">Diaphragm · inferior boundary</text>
+    <text x="50" y="659" font-size="19">The inferior mediastinum has anterior, middle and posterior parts.</text>
+    <text x="50" y="690" font-size="18">Those subdivisions and organ positions are not drawn here.</text>
+    <text x="50" y="725" font-size="16">Original teaching schematic · orientation only · not to scale</text>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 "use client";
 import { learningEvent } from "@/lib/learning-analytics";
 import { useSyncExternalStore } from "react";
-import { renalLessons, renalQuestions } from "@/content/renal-course";
+import { learningLessonIds, learningQuestionIds, learningDraftIds } from "@/content/practice-registry";
 import {
   emptyProgress,
   gradeAttempt,
@@ -10,8 +10,8 @@ import {
   type LearningProgress,
 } from "@/lib/learning-core";
 export const learningKey = "wardhan-learning:v1";
-const lessonIds = renalLessons.map((x) => x.slug);
-const questionIds = renalQuestions.map((x) => x.id);
+const lessonIds = learningLessonIds;
+const questionIds = learningQuestionIds;
 type Snapshot = { ready: boolean; persistent: boolean; data: LearningProgress };
 const server: Snapshot = {
   ready: false,
@@ -29,7 +29,7 @@ function getSnapshot(): Snapshot {
       snapshot = {
         ready: true,
         persistent: true,
-        data: parseProgress(raw, lessonIds, questionIds),
+        data: parseProgress(raw, lessonIds, questionIds, learningDraftIds),
       };
     }
   } catch {
@@ -70,13 +70,13 @@ export function updateLearning(
   snapshot = { ready: true, persistent, data };
   notify();
 }
-export function recordAnswer(id: string, correct: boolean) {
+export function recordAnswer(id: string, correct: boolean, choice: number | null = null, usedHint = false) {
   if (!questionIds.includes(id)) return;
   updateLearning((state) => ({
     ...state,
     answers: {
       ...state.answers,
-      [id]: gradeAttempt(state.answers[id], correct, Date.now()),
+      [id]: gradeAttempt(state.answers[id], correct, Date.now(), choice, usedHint),
     },
   }));
 }
@@ -87,4 +87,9 @@ export function recordVisit() {
     returning: getSnapshot().data.visits.length > 0,
   });
   updateLearning((s) => ({ ...s, visits: [...s.visits, today].slice(-366) }));
+}
+
+export function saveDraft(id: string, value: string) {
+  if (!learningDraftIds.includes(id)) return;
+  updateLearning((s) => ({ ...s, drafts: { ...s.drafts, [id]: value.slice(0, 5000) } }));
 }

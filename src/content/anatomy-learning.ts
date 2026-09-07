@@ -40,8 +40,8 @@ export const anatomyLearningPages: AnatomyLearningPage[] = [
       { id: "pelvic-region", title: "Pelvis & perineum", explanation: "Study the pelvis as a framework of bones, walls, floor and organ relationships. The perineal region adds spaces and neurovascular pathways that connect the pelvic outlet with the external anatomy.",
         points: ["Orient the pelvic brim, outlet and bony landmarks.", "Study the pelvic floor alongside the perineal spaces.", "Trace the pudendal pathway using its regional landmarks."],
         source: "volume-iii", reference: "Parts I and V — Pelvic framework; Perineum, Rectum and Anal Canal.",
-        question: "Which volume focuses on pelvis, perineum and urogenital anatomy?", options: ["Volume I", "Volume II", "Volume III"], answer: 2,
-        feedback: "Volume III is the dedicated pelvic and urogenital guide; Volume V adds pelvic-girdle and lower-limb anatomy.",
+        question: "Which relationship correctly places the perineum relative to the pelvic diaphragm?", options: ["Superior to the pelvic diaphragm, within the greater pelvis", "Between the parietal and visceral peritoneum", "Inferior to the pelvic diaphragm, at the pelvic outlet"], answer: 2,
+        feedback: "The perineum occupies the region below the pelvic diaphragm at the pelvic outlet. Distinguish this region from the greater pelvis and the peritoneal cavity.",
         related: { href: "/subjects/anatomy#volume-iii", label: "Explore the Volume III preview" } },
       { id: "limb-regions", title: "Limbs, head & neck", explanation: "Apply the same regional method to the limbs and the head and neck: identify boundaries and landmarks, then connect joints, muscles, nerves and vessels. For a canal or fossa, begin with its boundaries and contents.",
         points: ["Trace the upper limb from the shoulder girdle to the hand.", "Trace the lower limb from the pelvic girdle to the foot.", "Use Volume V’s skull, jaw and neck sections to extend the map."],
@@ -55,13 +55,13 @@ export const anatomyLearningPages: AnatomyLearningPage[] = [
     slug: "thorax", title: "Thorax",
     description: "Explore the mediastinum, pleura and lungs through the Volume I study guide.",
     introduction: "Use the central compartments as your starting point, then compare the pleural layers and the right and left lungs. Select a topic and test the relationship you have just studied.",
-    image: { src: "/images/anatomy/volume-1.png", alt: "Sagittal illustration of the mediastinum and surrounding thoracic structures.", caption: "Mediastinal compartments · STEM Visualizer collection" },
+    image: { src: "/images/anatomy/mediastinal-plane.svg", alt: "Schematic showing the sternal angle and T4–T5 disc on the same transverse plane, separating superior and inferior mediastinum.", caption: "Mediastinal dividing plane · Original teaching schematic" },
     sources: [volumeI],
     lessons: [
       { id: "mediastinum", title: "Mediastinal compartments", explanation: "The mediastinum lies between the pleural cavities. A transverse plane through the sternal angle and the T4–T5 intervertebral disc divides it into superior and inferior regions. The inferior mediastinum is subdivided into anterior, middle and posterior parts.",
         points: ["The sternum is anterior and the thoracic vertebral column posterior.", "The diaphragm forms the inferior boundary.", "Use the sternal angle as a surface landmark for the dividing plane."],
         source: "volume-i", reference: "Mediastinum section, topics 2–4: definition, divisions and sternal-angle plane.",
-        question: "Which landmark helps separate the superior and inferior mediastinum?", options: ["Umbilicus", "Sternal angle", "Iliac crest"], answer: 1,
+        question: "Which landmark helps separate the superior and inferior mediastinum?", options: ["Jugular notch", "Sternal angle", "Xiphisternal joint"], answer: 1,
         feedback: "The sternal angle, at the approximate T4–T5 disc plane, marks this division." },
       { id: "pleura", title: "Pleura & pleural cavity", explanation: "Visceral pleura covers the lung surface and enters its fissures. Parietal pleura lines the surrounding thoracic boundaries. Between them is the pleural cavity, a potential space with a thin layer of serous fluid.",
         points: ["Visceral describes the layer directly covering the lung.", "Parietal describes the layer lining the wall and adjacent boundaries.", "Serous fluid reduces friction as the lung moves."],
@@ -131,3 +131,6 @@ export const anatomyLearningPages: AnatomyLearningPage[] = [
     ],
   },
 ];
+
+const regionalThorax = anatomyLearningPages.find((p) => p.slug === "regional-anatomy")!.lessons.find((l) => l.activity === "thorax")!;
+anatomyLearningPages.find((p) => p.slug === "thorax")!.lessons.unshift({ ...regionalThorax, title: "Explore the chest", related: undefined });

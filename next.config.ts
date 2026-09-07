@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   },
   poweredByHeader: false,
   outputFileTracingExcludes: { "/*": ["./.private/**/*"] },
+  async redirects() {
+    return [{ source: "/images/anatomy/volume-1.png", destination: "/images/anatomy/mediastinal-plane.svg", permanent: true }];
+  },
   async headers() {
     return [
       {

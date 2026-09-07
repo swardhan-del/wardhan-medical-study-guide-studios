@@ -27,5 +27,6 @@ test("authored guides connect reading, questions and exact Dropbox files", async
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Inheritance");
   await page.goto("/subjects/immunology");
   await expect(page.locator("#authored-guides .authored-card")).toHaveCount(5);
-  await expect(page.locator("#dropbox-directory")).toBeVisible();
+  await page.locator("#archive-directory:visible > summary").click();
+  await expect(page.locator("#dropbox-directory:visible")).toBeVisible();
 });

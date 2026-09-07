@@ -26,9 +26,11 @@ export default function PrivacyPage() {
           self-assessment and your exam plan are stored in this browser. They
           stay in this browser as detailed records. Aggregate activity events
           are described below. Open My study to download a progress record or
-          clear it. This does not synchronize between browsers or devices. Oral
-          drafts stay in page memory, are not saved to storage, and disappear
-          when you reload the page or change topics.
+          clear it. This does not synchronize between browsers or devices. Written
+          explanations, oral drafts and self-checks are also saved in this
+          browser, so they survive reloads and topic changes. They are included
+          in the downloaded progress record and removed by clearing learning
+          progress. Your writing is not sent to the studio or to an AI service.
         </p>
         <h2>Sharing</h2>
         <p>

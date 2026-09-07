@@ -46,6 +46,7 @@ test("every anatomy topic opens its own page with working source references", as
       .getByRole("navigation", { name: "Anatomy subject areas" })
       .getByRole("link", { name: label, exact: true })
       .click();
+    await expect(page).toHaveURL(new RegExp(`/subjects/anatomy/${slug}$`), { timeout: 15000 });
     await expect(
       page.getByRole("heading", { level: 1, name: label, exact: true }),
     ).toBeVisible();
@@ -72,12 +73,12 @@ test("every anatomy topic opens its own page with working source references", as
 test("anatomy recall supports correction and keeps answers when changing topics", async ({
   page,
 }) => {
-  await page.goto("/subjects/anatomy/thorax");
+  await page.goto("/subjects/anatomy/thorax?topic=mediastinum");
   const panel = page.locator(".lesson-panel:visible");
   await expect(
     panel.getByRole("button", { name: "Check answer" }),
   ).toBeDisabled();
-  await panel.getByRole("radio", { name: "Umbilicus", exact: true }).check();
+  await panel.getByRole("radio", { name: "Jugular notch", exact: true }).check();
   await panel.getByRole("button", { name: "Check answer" }).click();
   await expect(panel.getByRole("status")).toContainText("Try again.");
   await panel
@@ -85,7 +86,7 @@ test("anatomy recall supports correction and keeps answers when changing topics"
     .check();
   await panel.getByRole("button", { name: "Check answer" }).click();
   await expect(panel.getByRole("status")).toContainText("Correct.");
-  await expect(page.locator(".learning-progress")).toContainText("1 of 3");
+  await expect(page.locator(".learning-progress")).toContainText("1 of 15");
   await page.getByRole("button", { name: "Next topic" }).click();
   await expect(
     panel.getByRole("heading", { name: "Pleura & pleural cavity" }),
@@ -334,13 +335,15 @@ test("oral rubrics, histology clues and exam planning are usable", async ({
   await page
     .getByRole("button", { name: "Save that I practiced this topic" })
     .click();
+  await page.reload();
+  await expect(page.getByRole("textbox", { name: "My answer" })).toHaveValue(/Blood enters the afferent/);
   await page.goto("/practice/histology");
   await page
     .getByLabel("My identification")
     .selectOption("Proximal convoluted tubule");
   await page.getByRole("button", { name: "Reveal the reasoning" }).click();
   await page.getByRole("button", { name: "Fuzzy apical border" }).click();
-  await expect(page.locator("svg text")).toHaveText("Fuzzy apical border");
+  await expect(page.locator(".histology-diagram text")).toHaveText("Fuzzy apical border");
   await page.goto("/study/planner");
   const exam = new Date();
   exam.setDate(exam.getDate() + 7);
@@ -450,27 +453,29 @@ test("new lesson supports explained correction, oral recall, related pages and s
   page,
 }, testInfo) => {
   await page.goto("/library/epithelia");
+  const check = page.locator("#concept-check-title");
   await page.locator(".concept-sequence summary").nth(1).click();
   await expect(
     page.getByText(/Pseudostratified epithelium appears multilayered/),
   ).toBeVisible();
   await expect(
-    page.getByRole("button", { name: "Check answer", exact: true }),
+    check.getByRole("button", { name: "Check answer", exact: true }),
   ).toBeDisabled();
-  await page.getByRole("radio").first().check();
-  await page.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(page.locator(".concept-feedback")).toContainText(
+  await check.getByRole("radio").first().check();
+  await check.getByRole("button", { name: "Check answer", exact: true }).click();
+  await expect(check.locator(".concept-feedback")).toContainText(
     "Review the distinction.",
   );
-  await expect(page.locator(".concept-feedback")).toContainText("Why not");
-  await page
+  await expect(check.locator(".concept-feedback")).toContainText("Why not");
+  await check.getByRole("button", { name: "Try without feedback" }).click();
+  await check
     .getByRole("radio", {
       name: "Every cell contacts the basement membrane",
       exact: true,
     })
     .check();
-  await page.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(page.locator(".concept-feedback h3")).toHaveText("Correct.");
+  await check.getByRole("button", { name: "Check answer", exact: true }).click();
+  await expect(check.locator(".concept-feedback > p").first()).toHaveText("Correct.");
   await page.getByText("Reveal a model answer", { exact: true }).click();
   await expect(
     page.getByText(/Alveoli need a short diffusion distance/),
@@ -479,13 +484,13 @@ test("new lesson supports explained correction, oral recall, related pages and s
   await page.goto("/reading-list");
   await expect(page).toHaveURL(/\/study#saved-learning$/);
   await expect(
-    page.getByRole("link", {
+    page.locator("#saved-learning").getByRole("link", {
       name: "Epithelia: layers, shape and function",
       exact: true,
     }),
   ).toBeVisible();
   await page.reload();
-  await page
+  await page.locator("#saved-learning")
     .getByRole("link", {
       name: "Epithelia: layers, shape and function",
       exact: true,

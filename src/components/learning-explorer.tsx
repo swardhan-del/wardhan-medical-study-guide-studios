@@ -1,21 +1,32 @@
 "use client";
 
+import { recordAnswer, recordVisit, useLearning } from "./learning-store";
 import Link from "next/link";
 import { useState } from "react";
 import type { StudyLesson } from "@/content/anatomy-learning";
 import { ThoraxLab, type AnatomyAnswers } from "@/components/thorax-lab";
 import thoraxPractice from "@/content/thorax-practice.json";
 
-export function LearningExplorer({ lessons }: { lessons: StudyLesson[] }) {
-  const [active, setActive] = useState(0);
-  const [answers, setAnswers] = useState<AnatomyAnswers>({});
+export function LearningExplorer({ lessons, initialLessonId }: { lessons: StudyLesson[]; initialLessonId?: string }) {
+  const [active, setActive] = useState(Math.max(0, lessons.findIndex((l) => l.id === initialLessonId)));
+  const { data, ready } = useLearning();
+  const [drafts, setDrafts] = useState<AnatomyAnswers>({});
+  const [resetIds, setResetIds] = useState<string[]>([]);
+  const storedId = (id: string) => id.startsWith("thorax-") ? id : "anatomy-" + id;
+  const answers: AnatomyAnswers = Object.fromEntries(Object.entries(data.answers).filter(([id, a]) => (id.startsWith("thorax-") || id.startsWith("anatomy-")) && a.lastChoice !== null).map(([id, a]) => [id.replace(/^anatomy-/, ""), { choice: a.lastChoice!, checked: true }]));
+  for (const id of resetIds) delete answers[id];
+  Object.assign(answers, drafts);
+  function answer(id: string, choice: number, checked: boolean, correct: number) {
+    setDrafts((previous) => ({ ...previous, [id]: { choice, checked } }));
+    if (checked) { recordAnswer(storedId(id), choice === correct, choice); recordVisit(); }
+  }
   const questions = lessons.flatMap<{ id: string; answer: number }>((lesson) => lesson.activity === "thorax" ? thoraxPractice.questions : [lesson]);
   const correct = questions.filter((question) => answers[question.id]?.checked && answers[question.id]?.choice === question.answer).length;
   return (
     <section id="explore" className="learning-explorer" aria-labelledby="explorer-title">
       <header className="explorer-heading">
         <div><p className="eyebrow">Explore & recall</p><h2 id="explorer-title">Choose a topic.</h2></div>
-        <p className="learning-progress" role="status" aria-live="polite">{correct} of {questions.length} answered correctly this session</p>
+        <p className="learning-progress" role="status" aria-live="polite">{correct} of {questions.length} answered correctly in this round · history saved in My study</p>
       </header>
       <div className="explorer-layout">
         <div className="lesson-selector" role="group" aria-label="Choose a study topic">
@@ -37,23 +48,23 @@ export function LearningExplorer({ lessons }: { lessons: StudyLesson[] }) {
                 <ul className="lesson-points">{lesson.points.map((point) => <li key={point}>{point}</li>)}</ul>
                 <a className="msk-reference" href={`#source-${lesson.source}`}>Source: {lesson.reference} →</a>
                 {lesson.activity === "thorax" ? <ThoraxLab answers={answers}
-                  onAnswer={(id, choice, checked) => setAnswers((previous) => ({ ...previous, [id]: { choice, checked } }))}
-                  onReset={(ids) => setAnswers((previous) => Object.fromEntries(Object.entries(previous).filter(([id]) => !ids.includes(id))))}
+                  onAnswer={(id, choice, checked) => answer(id, choice, checked, thoraxPractice.questions.find((q) => q.id === id)!.answer)}
+                  onReset={(ids) => { setResetIds((previous) => [...new Set([...previous, ...ids])]); setDrafts((previous) => Object.fromEntries(Object.entries(previous).filter(([id]) => !ids.includes(id)))); }}
                 /> : <form className="lesson-quiz" onSubmit={(event) => {
                   event.preventDefault();
-                  if (!response) return;
-                  setAnswers((previous) => ({ ...previous, [lesson.id]: { choice: response.choice, checked: true } }));
+                  if (!response || response.checked) return;
+                  answer(lesson.id, response.choice, true, lesson.answer);
                 }}>
                   <fieldset>
                     <legend>{lesson.question}</legend>
                     {lesson.options.map((option, optionIndex) => (
                       <label className="quiz-option" key={option}>
-                        <input type="radio" name={`answer-${lesson.id}`} value={optionIndex} checked={response?.choice === optionIndex} onChange={() => setAnswers((previous) => ({ ...previous, [lesson.id]: { choice: optionIndex, checked: false } }))} />
+                        <input type="radio" name={`answer-${lesson.id}`} value={optionIndex} checked={response?.choice === optionIndex} onChange={() => answer(lesson.id, optionIndex, false, lesson.answer)} />
                         <span>{option}</span>
                       </label>
                     ))}
                   </fieldset>
-                  <button className="button button-primary" type="submit" disabled={!response}>Check answer</button>
+                  <button className="button button-primary" type="submit" disabled={!ready || !response || response.checked}>Check answer</button>
                   <div className="quiz-feedback" role="status" aria-live="polite">
                     {response?.checked ? <p><strong>{isCorrect ? "Correct." : "Try again."}</strong> {lesson.feedback}</p> : null}
                   </div>

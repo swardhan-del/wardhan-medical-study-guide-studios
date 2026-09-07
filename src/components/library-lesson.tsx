@@ -1,3 +1,8 @@
+import references from "@/content/lesson-references.json";
+import transfer from "@/content/transfer-practice.json";
+import { PracticeQuestion } from "./practice-question";
+import { SavedRecall } from "./saved-recall";
+import { HistologyVisualLesson } from "./histology-visual-lesson";
 import { CorrectionLink } from "./correction-link";
 import Link from "next/link";
 import { subjectInterests } from "@/content/subjects";
@@ -15,6 +20,7 @@ import { ConceptCheck } from "./concept-check";
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
   const subject = subjectInterests.find((s) => s.id === lesson.subject)!;
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
+  const reference = (references as Record<string, {title: string; url: string; checkedAt: string}>)[lesson.id];
   const related = lesson.related
     .map((id) => publicCatalog.find((r) => r.id === id))
     .filter((r) => r !== undefined);
@@ -50,10 +56,11 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
       </nav>
       <header className="concept-heading">
         <p className="eyebrow">
-          {subject.title} · {lesson.minutes} minute lesson
+          {subject.title} · {lesson.minutes} minute concept introduction
         </p>
         <h1>{lesson.title}</h1>
         <p className="interior-lede">{lesson.summary}</p>
+        <p className="muted-note">A focused introduction for revision. Use the source guide and further reading for the full topic.</p>
         <div className="action-row">
           <a className="button button-primary" href="#concept-check-title">
             Try the question ↓
@@ -90,10 +97,13 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
               ))}
             </div>
           </section>
+          {lesson.id === "epithelia" && <HistologyVisualLesson />}
+          {lesson.id === "nitrogen-metabolism" && <section className="study-panel"><p className="eyebrow">Worked mechanism</p><h2>Follow the nitrogen without losing the carbon</h2><p>Take alanine as an example. Alanine aminotransferase transfers its amino group to α-ketoglutarate, producing glutamate and pyruvate. This transfers nitrogen; it does not yet excrete it. Pyruvate retains the carbon skeleton and can enter other metabolic pathways.</p><ol><li>Collect nitrogen: transamination places many amino groups on glutamate.</li><li>Handle nitrogen: glutamate can supply ammonium, while aspartate supplies the other nitrogen incorporated into urea.</li><li>Package for disposal: the hepatic urea cycle converts these nitrogen inputs into urea.</li><li>Eliminate: urea travels in blood to the kidneys for urinary excretion. Renal ammonium excretion is a separate, important route linked to acid–base balance.</li></ol><p><strong>Check the distinction:</strong> transferring an amino group, making urea and excreting nitrogen are different steps. Do not use these verbs interchangeably.</p></section>}
           <ConceptCheck
             key={lesson.id}
             lesson={{ id: lesson.id, question: lesson.question }}
           />
+          {transfer.questions.filter((q) => q.topic === lesson.id).map((q) => <PracticeQuestion key={q.id} item={q} title="Apply the concept in a different setting" />)}
           <section
             className="concept-recall study-panel"
             aria-labelledby="oral-recall-title"
@@ -101,6 +111,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             <p className="eyebrow">Say it without looking</p>
             <h2 id="oral-recall-title">Practice an oral answer</h2>
             <p className="concept-prompt">{lesson.recall.prompt}</p>
+            <SavedRecall id={`oral-${lesson.id}`} />
             <details>
               <summary>Reveal a model answer</summary>
               <p>{lesson.recall.answer}</p>
@@ -141,14 +152,16 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           <strong>Source section:</strong> {lesson.section}
         </p>
         <p>{source.context}</p>
-        {source.reference && (
+        <h3>Further reading for this topic</h3>
+        {reference && (
           <p>
-            <a href={source.reference.url} target="_blank" rel="noreferrer">
-              {source.reference.title}
+            <a href={reference.url} target="_blank" rel="noreferrer">
+              {reference.title}
               <span className="visually-hidden"> (opens in a new tab)</span> ↗
             </a>
           </p>
         )}
+        <p className="muted-note">Further-reading link checked {reference.checkedAt}. The source guide above identifies the authored material; this public reference supports further study of this topic.</p>
         <p>
           Web lesson by Wardhan Medical Study Guide Studios. Updated{" "}
           <time dateTime={lesson.updatedAt}>{lesson.updatedAt}</time>.
