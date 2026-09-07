@@ -3,16 +3,19 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { StudyLesson } from "@/content/anatomy-learning";
+import { ThoraxLab, type AnatomyAnswers } from "@/components/thorax-lab";
+import thoraxPractice from "@/content/thorax-practice.json";
 
 export function LearningExplorer({ lessons }: { lessons: StudyLesson[] }) {
   const [active, setActive] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, { choice: number; checked: boolean }>>({});
-  const correct = lessons.filter((lesson) => answers[lesson.id]?.checked && answers[lesson.id]?.choice === lesson.answer).length;
+  const [answers, setAnswers] = useState<AnatomyAnswers>({});
+  const questions = lessons.flatMap<{ id: string; answer: number }>((lesson) => lesson.activity === "thorax" ? thoraxPractice.questions : [lesson]);
+  const correct = questions.filter((question) => answers[question.id]?.checked && answers[question.id]?.choice === question.answer).length;
   return (
     <section id="explore" className="learning-explorer" aria-labelledby="explorer-title">
       <header className="explorer-heading">
         <div><p className="eyebrow">Explore & recall</p><h2 id="explorer-title">Choose a topic.</h2></div>
-        <p className="learning-progress" role="status" aria-live="polite">{correct} of {lessons.length} answered correctly this session</p>
+        <p className="learning-progress" role="status" aria-live="polite">{correct} of {questions.length} answered correctly this session</p>
       </header>
       <div className="explorer-layout">
         <div className="lesson-selector" role="group" aria-label="Choose a study topic">
@@ -33,7 +36,10 @@ export function LearningExplorer({ lessons }: { lessons: StudyLesson[] }) {
                 <p>{lesson.explanation}</p>
                 <ul className="lesson-points">{lesson.points.map((point) => <li key={point}>{point}</li>)}</ul>
                 <a className="msk-reference" href={`#source-${lesson.source}`}>Source: {lesson.reference} →</a>
-                <form className="lesson-quiz" onSubmit={(event) => {
+                {lesson.activity === "thorax" ? <ThoraxLab answers={answers}
+                  onAnswer={(id, choice, checked) => setAnswers((previous) => ({ ...previous, [id]: { choice, checked } }))}
+                  onReset={(ids) => setAnswers((previous) => Object.fromEntries(Object.entries(previous).filter(([id]) => !ids.includes(id))))}
+                /> : <form className="lesson-quiz" onSubmit={(event) => {
                   event.preventDefault();
                   if (!response) return;
                   setAnswers((previous) => ({ ...previous, [lesson.id]: { choice: response.choice, checked: true } }));
@@ -51,7 +57,7 @@ export function LearningExplorer({ lessons }: { lessons: StudyLesson[] }) {
                   <div className="quiz-feedback" role="status" aria-live="polite">
                     {response?.checked ? <p><strong>{isCorrect ? "Correct." : "Try again."}</strong> {lesson.feedback}</p> : null}
                   </div>
-                </form>
+                </form>}
                 {lesson.related ? <Link className="text-link" href={lesson.related.href}>{lesson.related.label} →</Link> : null}
               </article>
             );

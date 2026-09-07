@@ -46,6 +46,7 @@ export default async function AnatomyTopicPage({ params }: Props) {
           <figcaption>{page.image.caption}. Select to enlarge.</figcaption>
         </figure> : null}
       </section>
+      {topic === "thorax" ? <p className="thorax-course-link"><Link className="text-link" href="/subjects/anatomy/regional-anatomy#thorax-map-title">Explore the interactive chest image and twelve-question Thorax practice →</Link></p> : null}
       <LearningExplorer key={topic} lessons={page.lessons} />
       <section className="msk-section" id="sources" aria-labelledby="anatomy-sources-title">
         <p className="eyebrow">Follow the reference</p>

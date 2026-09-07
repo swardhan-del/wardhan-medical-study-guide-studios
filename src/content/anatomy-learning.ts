@@ -3,6 +3,7 @@ export type StudyLesson = {
   id: string; title: string; explanation: string; points: string[];
   source: string; reference: string;
   question: string; options: string[]; answer: number; feedback: string;
+  activity?: "thorax";
   related?: { href: string; label: string };
 };
 export type AnatomyLearningPage = {
@@ -24,7 +25,7 @@ export const anatomyLearningPages: AnatomyLearningPage[] = [
     image: { src: "/images/anatomy/volume-5.png", alt: "Hip bones and landmarks shown from several anatomical views.", caption: "Hip bones and landmarks · STEM Visualizer collection" },
     sources: [volumeI, volumeII, volumeIII, volumeV],
     lessons: [
-      { id: "chest", title: "Thorax", explanation: "Organize the chest into its wall, diaphragm, pleural compartments and mediastinum. The lungs lie on either side of the mediastinum; the diaphragm forms the lower boundary of the thoracic cavity.",
+      { id: "chest", title: "Thorax", activity: "thorax", explanation: "Build a three-dimensional understanding of the chest: its protective wall, two pleural sacs, central mediastinum and muscular diaphragm. Explore their locations, connect structure with breathing, then test what you understand through image identification, twelve explained questions and four short-answer challenges.",
         points: ["Locate the sternum, ribs and thoracic vertebral column.", "Distinguish the pleural cavities from the central mediastinum.", "Use the diaphragm to connect thoracic and abdominal anatomy."],
         source: "volume-i", reference: "Thoracic Wall section, “Core Map”; Mediastinum section, “Definition of Mediastinum.”",
         question: "Which region lies between the right and left pleural cavities?", options: ["Mediastinum", "Peritoneal cavity", "Ischioanal fossa"], answer: 0,

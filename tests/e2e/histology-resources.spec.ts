@@ -16,11 +16,11 @@ test("histology explains the discipline and opens curated course resources", asy
   await guides.getByRole("link", { name: "Kidney cortex, medulla and tubules →", exact: true }).click();
   await expect(page).toHaveURL(/\/library\/renal-histology$/);
   await page.goto("/subjects/histology-ii");
-  await expect(page.getByLabel("Course", { exact: true })).toHaveValue("histology-ii");
+  await expect(page.getByRole("combobox", { name: "Course", exact: true })).toHaveValue("histology-ii");
   await expect(page.locator("#authored-guides .authored-card")).toHaveCount(4);
   await page.getByLabel("Search these guides").fill("retina");
   await expect(page.locator("#authored-guides .authored-card")).toHaveCount(1);
-  await page.getByLabel("Course", { exact: true }).selectOption("histology-i");
+  await page.getByRole("combobox", { name: "Course", exact: true }).selectOption("histology-i");
   await expect(page.getByRole("heading", { name: "No study guides match these filters." })).toBeVisible();
   await page.getByRole("button", { name: "Show all study guides" }).click();
   await expect(page.locator("#authored-guides .authored-card")).toHaveCount(9);
