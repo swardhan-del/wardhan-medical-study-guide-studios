@@ -23,8 +23,8 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
   {
     id: "histology",
     number: "02",
-    title: "Microscopic Anatomy & Histology",
-    description: "Connect cells and tissues with the structures they form.",
+    title: "Microscopic Anatomy, Histology & Embryology",
+    description: "Explore how cells and tissues form organs, how microscopic structure supports function, and how these structures develop. Study microscopy, basic tissues, organ histology, reproductive development, the nervous system and special senses through curated guides, slide collections and web lessons.",
     topics: [
       "Cells and tissues",
       "Organ histology",

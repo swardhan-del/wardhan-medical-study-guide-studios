@@ -2,7 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import data from "@/content/authored-guides.json";
+import geneticsData from "@/content/authored-guides.json";
+
+type GuideCollection = {
+  verifiedAt: string;
+  courses?: { id: string; title: string }[];
+  records: {
+    id: string; title: string; edition: string; purpose: string; summary: string;
+    topics: string[]; note: string; courses?: string[]; lessons: string[];
+    files: { label: string; format: string; filename: string; url: string }[];
+  }[];
+};
 
 const lessonNames: Record<string, string> = {
   inheritance: "Inheritance and pedigrees",
@@ -11,13 +21,42 @@ const lessonNames: Record<string, string> = {
   "innate-adaptive": "Innate and adaptive immunity",
   "antigen-presentation": "MHC and T-cell recognition",
   complement: "Complement pathways",
+  microscopy: "Reading a histology section",
+  epithelia: "Epithelial layers, shape and function",
+  "cell-junctions": "Cell junctions and surfaces",
+  "connective-tissue": "Connective tissue and matrix",
+  "cartilage-bone": "Cartilage, bone and remodeling",
+  "muscle-histology": "Comparing muscle tissues",
+  "renal-histology": "Kidney cortex, medulla and tubules",
+  "reproductive-histology": "Reproductive histology",
+  placenta: "Placental villi and exchange",
+  "liver-pancreas": "Liver and pancreas",
+  neurulation: "Neural tube formation",
+  "lymphoid-organs": "Lymph node, spleen and thymus",
+  "respiratory-histology": "Airways and alveoli",
 };
 
-export function AuthoredGuides() {
+export function AuthoredGuides({
+  collection = geneticsData,
+  initialCourse = "",
+  title = "Study guides you can open and use.",
+  introduction = "Start with the integrated text, explore the illustrated addendum, then test yourself. These selected genetics and immunology study copies connect the original archive to the lessons on this website.",
+  searchHint = "Try inheritance, complement or serology",
+  accessNote = "",
+}: {
+  collection?: GuideCollection;
+  initialCourse?: string;
+  title?: string;
+  introduction?: string;
+  searchHint?: string;
+  accessNote?: string;
+}) {
   const [query, setQuery] = useState("");
   const [purpose, setPurpose] = useState("");
+  const [course, setCourse] = useState(initialCourse);
   const needle = query.trim().toLocaleLowerCase();
-  const guides = data.records.filter((guide) =>
+  const guides = collection.records.filter((guide) =>
+    (!course || guide.courses?.includes(course)) &&
     (!purpose || guide.purpose === purpose) &&
     [guide.title, guide.summary, ...guide.topics].join(" ").toLocaleLowerCase().includes(needle),
   );
@@ -25,20 +64,24 @@ export function AuthoredGuides() {
   return (
     <section id="authored-guides" className="authored-guides" aria-labelledby="authored-guides-heading">
       <p className="eyebrow">From Siddhartha’s study desk</p>
-      <h2 id="authored-guides-heading">Study guides you can open and use.</h2>
-      <p className="authored-intro">
-        Start with the integrated text, explore the illustrated addendum, then test
-        yourself. These selected genetics and immunology study copies connect the
-        original archive to the lessons on this website.
-      </p>
+      <h2 id="authored-guides-heading">{title}</h2>
+      <p className="authored-intro">{introduction}</p>
       <p className="directory-access">
         Files open in Dropbox in a new tab and require an account with access to
-        the study guide archive. The related web lessons are free to read here.
+        the study guide archive. The related web lessons are free to read here. {accessNote}
       </p>
       <div className="authored-controls" role="search" aria-label="Find an authored study guide">
         <label htmlFor="authored-query">Search these guides
-          <input id="authored-query" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try inheritance, complement or serology" />
+          <input id="authored-query" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={searchHint} />
         </label>
+        {collection.courses && (
+          <label htmlFor="authored-course">Course
+            <select id="authored-course" value={course} onChange={(event) => setCourse(event.target.value)}>
+              <option value="">Both courses</option>
+              {collection.courses.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}
+            </select>
+          </label>
+        )}
         <label htmlFor="authored-purpose">Study activity
           <select id="authored-purpose" value={purpose} onChange={(event) => setPurpose(event.target.value)}>
             <option value="">All study activities</option>
@@ -81,11 +124,11 @@ export function AuthoredGuides() {
       {guides.length === 0 && (
         <div className="directory-empty">
           <h3>No study guides match these filters.</h3>
-          <p>Try a topic such as complement, genetics or antibodies.</p>
-          <button className="button button-secondary" onClick={() => { setQuery(""); setPurpose(""); }}>Show all study guides</button>
+          <p>Try a shorter topic search or reset the filters.</p>
+          <button className="button button-secondary" onClick={() => { setQuery(""); setPurpose(""); setCourse(""); }}>Show all study guides</button>
         </div>
       )}
-      <p className="directory-footnote">File locations and contents checked on {data.verifiedAt}. Edition dates follow the source documents. These are independent study materials; they do not replace clinical guidance.</p>
+      <p className="directory-footnote">File locations and contents checked on {collection.verifiedAt}. Edition dates follow the source documents. These are independent study materials; they do not replace clinical guidance.</p>
     </section>
   );
 }

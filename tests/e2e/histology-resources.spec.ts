@@ -1,0 +1,32 @@
+import { test, expect } from "@playwright/test";
+
+test("histology explains the discipline and opens curated course resources", async ({ page }, info) => {
+  await page.goto("/subjects/histology");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Microscopic Anatomy, Histology & Embryology");
+  await expect(page.locator(".histology-definitions article")).toHaveCount(3);
+  await page.getByText("Nervous tissue and neurodevelopment", { exact: true }).click();
+  await expect(page.getByRole("link", { name: /Neurulation and neural tube ↗/ })).toHaveAttribute("href", /CONCEPT_LIBRARY_2026-09-06\/02_Microscopic_Anatomy_Histology\/12_Neurulation_and_Neural_Tube$/);
+  const guides = page.locator("#authored-guides");
+  await expect(guides.locator(".authored-card")).toHaveCount(9);
+  await guides.getByLabel("Search these guides").fill("kidney");
+  await expect(guides.locator(".authored-card")).toHaveCount(1);
+  await expect(guides.getByRole("link", { name: /Open study guide/ })).toHaveAttribute("href", /www\.dropbox\.com\/preview\/study%20guide\/08_WEB_LIBRARY_CURATION\/.*Part_10_Urinary_System/);
+  await guides.getByText("Explore topics in this guide", { exact: true }).click();
+  await expect(guides.getByText("Juxtaglomerular apparatus", { exact: true })).toBeVisible();
+  await guides.getByRole("link", { name: "Kidney cortex, medulla and tubules →", exact: true }).click();
+  await expect(page).toHaveURL(/\/library\/renal-histology$/);
+  await page.goto("/subjects/histology-ii");
+  await expect(page.getByLabel("Course", { exact: true })).toHaveValue("histology-ii");
+  await expect(page.locator("#authored-guides .authored-card")).toHaveCount(4);
+  await page.getByLabel("Search these guides").fill("retina");
+  await expect(page.locator("#authored-guides .authored-card")).toHaveCount(1);
+  await page.getByLabel("Course", { exact: true }).selectOption("histology-i");
+  await expect(page.getByRole("heading", { name: "No study guides match these filters." })).toBeVisible();
+  await page.getByRole("button", { name: "Show all study guides" }).click();
+  await expect(page.locator("#authored-guides .authored-card")).toHaveCount(9);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.locator("#authored-guides").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: info.outputPath("histology-curated-guides.png") });
+  await page.goto("/subjects/histology-i");
+  await expect(page.locator("#authored-guides .authored-card")).toHaveCount(7);
+});

@@ -2801,6 +2801,27 @@ select:focus-visible {
 
 /* Dropbox source directory */
 /* Selected authored guides: clear routes from reading to recall. */
+.histology-overview { margin-block:2rem 4rem; scroll-margin-top:2rem; }
+.histology-overview>h2 { max-width:28ch; }
+.histology-definitions { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.3rem; margin:2rem 0; }
+.histology-definitions article { padding:1.4rem; background:var(--paper); border-top:3px solid var(--teal); }
+.histology-definitions h3 { font-size:1.5rem; margin:0 0 1rem; }
+.histology-definitions p { margin:0; line-height:1.75; }
+.histology-reading-note { font-family:var(--serif); font-size:1.4rem; line-height:1.6; max-width:70ch; }
+.histology-course-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.2rem; margin:2rem 0; }
+.histology-course-links a { display:grid; gap:.7rem; background:var(--ink); color:var(--ivory); padding:1.6rem; line-height:1.6; text-decoration:none; }
+.histology-course-links strong { text-decoration:underline; text-underline-offset:.25em; }
+.histology-course-links span { color:#e5ebe6; }
+.histology-area-heading { margin-top:2rem; font-size:1.6rem; }
+.histology-areas { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; align-items:start; margin-top:1.5rem; }
+.histology-areas details { background:var(--paper); border:1px solid var(--line); min-width:0; scroll-margin-top:2rem; }
+.histology-areas summary { padding:1.3rem; color:var(--teal); cursor:pointer; font-weight:700; line-height:1.6; }
+.histology-area-content { padding:0 1.3rem 1.3rem; line-height:1.8; }
+.histology-area-content h4 { font:inherit; font-weight:700; margin:1.2rem 0 .5rem; }
+.histology-area-content ul { padding-left:1.2rem; margin:0; }
+.histology-area-content a { color:var(--teal); text-underline-offset:.2em; }
+.authored-controls:has(#authored-course) { grid-template-columns:1.6fr 1.5fr 1fr; }
+@media(max-width:800px) { .histology-definitions,.histology-course-links,.histology-areas,.authored-controls:has(#authored-course) { grid-template-columns:1fr; } }
 .authored-guides { margin:2rem 0 4rem; scroll-margin-top:2rem; }
 .authored-guides h2 { max-width:20ch; }
 .authored-intro { max-width:72ch; line-height:1.75; }

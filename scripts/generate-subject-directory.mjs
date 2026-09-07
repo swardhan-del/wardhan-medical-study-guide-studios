@@ -235,7 +235,7 @@ const subjectDefinitions = [
   [
     "histology-i",
     "Microscopic Anatomy & Embryology I",
-    "General tissues, organ histology and early development.",
+    "Build a foundation in microscopy and the four basic tissues, then explore blood, vessels, lymphoid organs, digestive, respiratory, urinary and reproductive histology, implantation and placental development.",
     "histology",
     roots[1],
     "06_Final_Printable_Guides",
@@ -243,7 +243,7 @@ const subjectDefinitions = [
   [
     "histology-ii",
     "Microscopic Anatomy & Embryology II",
-    "Neurodevelopment, CNS microscopy, reflexes and special senses.",
+    "Connect nervous-tissue structure with neurulation, brain and spinal-cord organization, sensory and motor pathways, autonomic reflexes, endocrine organs, special senses and their developmental origins.",
     "histology",
     roots[1],
     "06_Final_Printable_Guides",

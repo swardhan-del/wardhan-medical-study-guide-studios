@@ -9,6 +9,8 @@ import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 import { SubjectDirectory } from "@/components/subject-directory";
 import { directorySubjects } from "@/lib/subject-directory";
 import { AuthoredGuides } from "@/components/authored-guides";
+import { HistologyOverview } from "@/components/histology-overview";
+import histologyGuides from "@/content/histology-guides.json";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
   return [
@@ -36,6 +38,7 @@ export default async function SubjectPage({ params }: Props) {
   const title = directorySubject?.title || subject!.title;
   const description = directorySubject?.description || subject!.description;
   const learningId = directorySubject?.learningSubject || subject?.id;
+  const isHistology = ["histology", "histology-i", "histology-ii"].includes(slug);
   return (
     <div className="site-container library-page">
       <header className="library-heading">
@@ -46,7 +49,7 @@ export default async function SubjectPage({ params }: Props) {
         <h1>{title}</h1>
         <p className="interior-lede">{description}</p>
         <p>
-          {(slug === "genetics" || slug === "immunology") && (
+          {(slug === "genetics" || slug === "immunology" || isHistology) && (
             <><a className="text-link" href="#authored-guides">Open selected study guides ↓</a>{" · "}</>
           )}
           <a className="text-link" href="#dropbox-directory">
@@ -78,16 +81,16 @@ export default async function SubjectPage({ params }: Props) {
           </ul>
         )}
       </header>
-      {slug === "histology" && (
-        <nav className="topic-list" aria-label="Microscopic anatomy courses">
-          <Link href="/subjects/histology-i">
-            Microscopic Anatomy & Embryology I →
-          </Link>
-          <Link href="/subjects/histology-ii">
-            Microscopic Anatomy & Embryology II →
-          </Link>
-        </nav>
-      )}
+      {isHistology && <HistologyOverview />}
+      {isHistology && <AuthoredGuides
+        key={slug}
+        collection={histologyGuides}
+        initialCourse={slug === "histology" ? "" : slug}
+        title="Open the curated histology study guides."
+        introduction="Read a focused chapter, compare its structures with a slide collection, then explain what you recognize. These nine selected Word guides come directly from the curated Microscopic Anatomy and Histology folder."
+        searchHint="Try epithelium, kidney, placenta or retina"
+        accessNote="These links open curated study copies; they do not make the source documents public downloads."
+      />}
       {(slug === "genetics" || slug === "immunology") && <AuthoredGuides />}
       <SubjectDirectory id={slug} />
       {learningId && (
