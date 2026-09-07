@@ -8,7 +8,7 @@ const results = [];
 mkdirSync(".private/accessibility-check", { recursive: true });
 try {
   for (const width of [1440, 390]) {
-    const page = await browser.newPage({ viewport: { width, height: 1000 } });
+    const page = await browser.newPage({ viewport: { width, height: 1000 }, storageState: process.env.PREVIEW_STORAGE_STATE });
     for (const route of [
       "/library",
       "/subjects",
@@ -25,6 +25,7 @@ try {
       await page.goto(
         (process.env.CHECK_BASE_URL || "http://127.0.0.1:3101") + route,
       );
+      if (new URL(page.url()).origin !== new URL(process.env.CHECK_BASE_URL || "http://127.0.0.1:3101").origin) throw new Error("Check reached an authentication page instead of the website");
       await page.addScriptTag({
         path: resolve(
           ".private/verification-tools/node_modules/axe-core/axe.min.js",
