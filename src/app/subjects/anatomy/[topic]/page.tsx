@@ -1,4 +1,4 @@
-import { FigureGallery } from "@/components/educational-figure";
+import { EducationalFigure } from "@/components/educational-figure";
 import { figuresForResource } from "@/lib/figures";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -35,6 +35,7 @@ export default async function AnatomyTopicPage({
   const page = anatomyLearningPages.find((item) => item.slug === topic);
   if (!page) notFound();
   const query = await searchParams;
+  const releasedFigure = figuresForResource("anatomy-" + topic)[0];
   return (
     <div className="site-container library-page anatomy-learning-page">
       <header className="library-heading">
@@ -67,7 +68,7 @@ export default async function AnatomyTopicPage({
             </a>
           </div>
         </div>
-        {page.image ? (
+        {releasedFigure ? (<EducationalFigure figure={releasedFigure} />) : page.image ? (
           <figure>
             <a
               href={page.image.src}
@@ -94,7 +95,6 @@ export default async function AnatomyTopicPage({
           relationships.
         </p>
       )}
-      <FigureGallery figures={figuresForResource("anatomy-" + topic)} />
       <LearningExplorer
         key={topic}
         lessons={page.lessons}
