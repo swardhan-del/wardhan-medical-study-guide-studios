@@ -1,9 +1,9 @@
 import { CorrectionForm } from "@/components/correction-form";
 import { studio } from "@/content/studio";
 export const metadata = {
-  title: "Contact and corrections",
+  title: "Questions, feedback, and corrections",
   description:
-    "Contact Siddhartha Harshwardhan about independently developed medical study resources, corrections and accessibility.",
+    "Ask a question, suggest a correction or report an accessibility issue in the medical study library.",
   alternates: { canonical: "/contact" },
   robots: { index: false, follow: true },
 };
@@ -23,32 +23,29 @@ export default async function ContactPage({
   return (
     <div className="site-container study-page">
       <header className="study-hero">
-        <p className="eyebrow">Contact the studio</p>
-        <h1>A conversation about learning.</h1>
-        <p>
-          I’m {studio.founderName}. I’m building this website independently to
-          help medical students understand difficult ideas, drawing on my own
-          study notes and knowledge base.
-        </p>
-        <p>
-          I struggled with medical sciences as a medical student. This project
-          grows out of the ways I learned to make sense of them, with the hope
-          that those approaches can help someone else.
+        <p className="eyebrow">Contact</p>
+        <h1>Questions, feedback, and corrections</h1>
+        <p className="interior-lede">
+          Have a question about a resource, found an unclear explanation, or
+          noticed an accessibility issue? Your feedback helps improve the
+          library.
         </p>
       </header>
       <section className="study-panel" aria-labelledby="contact-email-heading">
         <h2 id="contact-email-heading">Get in touch</h2>
         <p>
-          For resource questions, accessibility feedback or collaboration
-          inquiries, email me at{" "}
-          <a href={`mailto:${studio.contactEmail}`}>{studio.contactEmail}</a>.
+          I’m {studio.founderName}, the creator of the library. You can contact
+          me at{" "}
+          <a href={`mailto:${studio.contactEmail}`}>{studio.contactEmail}</a>{" "}
+          with questions or feedback.
         </p>
       </section>
       <section className="study-panel">
-        <h2>Send a correction or feedback</h2>
+        <h2>Share feedback or suggest a correction</h2>
         <p>
-          Found an error or an unclear explanation? Include the section so I can
-          find it and improve it.
+          Include the page title, section or question, and a brief description
+          of the issue. If you are suggesting a factual correction, include a
+          supporting source where possible.
         </p>
         <CorrectionForm lesson={lesson} email={studio.contactEmail} />
       </section>

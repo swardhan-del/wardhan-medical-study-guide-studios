@@ -115,7 +115,7 @@ export default async function AnatomyTopicPage({
           .
         </p>
         <p>
-          These summaries and recall activities draw from the curated
+          These summaries and recall activities draw from the
           study-guide editions. References name the source sections used. Full
           manuscripts are being prepared for release.
         </p>

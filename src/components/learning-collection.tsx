@@ -4,46 +4,46 @@ import Link from "next/link";
 export function LearningCollection({ compact = false }: { compact?: boolean }) {
   const cards = [
     [
-      "01 · Free mini-course",
-      "Renal physiology, understood.",
-      "Eight focused lessons, 30 questions with explanations, and a downloadable revision sheet.",
+      "01 · Lessons",
+      "Study renal physiology",
+      "Work through the mechanisms of kidney function with focused lessons and explained questions.",
       "/learn/renal",
       "Start the course",
     ],
     [
-      "02 · Five minutes",
-      "Take the renal challenge.",
-      "Five questions. Discover the misconception behind each wrong answer and find your next lesson.",
+      "02 · Questions",
+      "Check your understanding",
+      "Try five renal physiology questions, review the explanations, and identify a topic to revisit.",
       "/practice/renal-challenge",
-      "Try the challenge",
+      "Try the renal challenge",
     ],
     [
-      "03 · Learn by changing things",
-      "The physiology lab.",
-      "Explore a renal resistance circuit, adjust ventilation and work through six blood gases.",
+      "03 · Interactive models",
+      "Explore physiological mechanisms",
+      "Adjust model variables and examine how they affect renal circulation and acid–base balance.",
       "/practice/physiology",
-      "Open the lab",
+      "Explore interactive models",
     ],
     [
-      "04 · Look closely",
-      "Histology detective.",
-      "Identify three renal tubule schematics and reveal the structural clues.",
+      "04 · Tissue identification",
+      "Practise tissue identification",
+      "Use structural clues to distinguish renal tubule schematics and explain what you see.",
       "/practice/histology",
-      "Investigate a tubule",
+      "Start histology practice",
     ],
     [
-      "05 · Say it out loud",
-      "Practice an oral answer.",
-      "Eight structured prompts, self-assessment rubrics and follow-up questions.",
+      "05 · Oral practice",
+      "Prepare an oral explanation",
+      "Organise your answer with structured prompts, self-assessment criteria, and follow-up questions.",
       "/practice/oral",
-      "Practice explaining",
+      "Practise an oral answer",
     ],
     [
-      "06 · Come back tomorrow",
-      "Your study dashboard.",
-      "Save progress, revisit mistakes and make a plan for your exam.",
+      "06 · Your next session",
+      "Plan your next study session",
+      "Return to saved resources, review your practice, and choose what to study next.",
       "/study",
-      "Open my study space",
+      "Open My Study",
     ],
   ];
   return (
@@ -58,7 +58,12 @@ export function LearningCollection({ compact = false }: { compact?: boolean }) {
             <Link className="text-link" href={href}>
               {action} →
             </Link>
-            {publicCatalog.find((r) => r.href === href) && <SaveButton id={publicCatalog.find((r) => r.href === href)!.id} title={title} />}
+            {publicCatalog.find((r) => r.href === href) && (
+              <SaveButton
+                id={publicCatalog.find((r) => r.href === href)!.id}
+                title={title}
+              />
+            )}
           </article>
         ))}
     </div>

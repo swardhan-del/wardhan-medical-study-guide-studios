@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { studio } from "@/content/studio";
-
 export const metadata = {
   title: "About",
   description:
-    "An independent, nonprofit learning project by Independent Observer: understand medical-science concepts and their applications through clear explanations, illustrations and STEM Visualizer graphics.",
+    "An independent, student-led library of medical-science explanations, visual learning resources and practice activities, created by Siddhartha Harshwardhan.",
   alternates: { canonical: "/about" },
 };
-
 export default function AboutPage() {
   return (
     <div className="page-stack page-interior">
@@ -15,16 +13,14 @@ export default function AboutPage() {
         className="interior-hero site-container"
         aria-labelledby="about-heading"
       >
-        <p className="eyebrow">About the studio</p>
+        <p className="eyebrow">About the library</p>
         <h1 id="about-heading">
-          A public library for learning medical sciences.
+          An independent study library for medical sciences
         </h1>
         <p className="interior-lede">
-          Wardhan Medical Study Guide Studios is an independent learning
-          platform by Independent Observer. It brings together medical-science
-          explanations, study guides and visual learning for students, medical
-          professionals and anyone who wants to understand the subject more
-          deeply.
+          Wardhan Medical Study Guide Studios brings together explanations,
+          visual learning resources, and practice activities to support the
+          study of medical sciences.
         </p>
       </section>
       <section
@@ -32,73 +28,54 @@ export default function AboutPage() {
         aria-labelledby="approach-heading"
       >
         <div className="prose-column">
-          <p className="eyebrow">The person behind the project</p>
-          <h2 id="approach-heading">A student’s perspective, grounded in science.</h2>
+          <h2 id="approach-heading">Created by {studio.founderName}</h2>
           <p>
-            I’m {studio.founderName}, publishing as Independent Observer. I have
-            a BSc in biology and chemistry and have worked as a pharmaceutical
-            sales representative. I’m an international medical student pursuing
-            further education in medicine. My studies and work have given me a
-            broad perspective across biological, chemical, medical and
-            pharmaceutical sciences.
+            I’m a medical student with a background in biology and chemistry.
+            This project grew from my own study notes and the need to connect
+            complex ideas more clearly. My aim is to create resources that help
+            students understand a mechanism, explain it in their own words, and
+            return to it with greater confidence.
           </p>
           <p>
-            I know what it feels like to struggle with difficult material. This
-            studio grows out of my own learning: connecting ideas, making their
-            structure visible and returning to what I had not yet understood.
+            I publish original explanations and guides as Independent Observer.
+            Source references and editorial notes identify the material used to
+            develop the lessons.
           </p>
-          <h2>Understand the concept. See how it applies.</h2>
+          <h2>Learn the concept. Connect it. Explain it.</h2>
           <p>
-            The aim goes beyond memorizing facts: understand how and why a
-            process works, connect it to related ideas and see its relevance to
-            applied medical science. Clear explanations and well-chosen
-            resources can help make an intimidating topic approachable.
-          </p>
-          <p>
-            Illustrations and STEM Visualizer graphics should make structures,
-            mechanisms and relationships easier to follow. Accuracy comes
-            first: labels, locations and relationships in a visual need to agree
-            with its supporting sources. The goal is to help you explain the
-            concept in your own words and apply what you understand.
-          </p>
-          <h2>From personal archives to a public library.</h2>
-          <p>
-            The goal is to build a public learning library from the notes,
-            references and study archives I have collected during college and
-            higher education in medical and pharmaceutical sciences. Original
-            explanations and guides are independently authored under the
-            Independent Observer name, with sources identified where used.
+            Lessons connect related ideas, use visuals where they clarify the
+            subject, and invite you to check your understanding through
+            questions and explanation.
           </p>
           <p>
-            This new website is growing into a place to explore a concept,
-            study a visual explanation, test your understanding and find a
-            useful guide. <Link href="/library">Explore the learning library</Link>{" "}
-            or <Link href="/subjects">browse the subject directory</Link>.
+            Labelled diagrams and visual explanations help you follow structures
+            and relationships. Read each resource’s captions and source notes
+            alongside the teaching material.
           </p>
-          <h2>Independent and nonprofit in purpose.</h2>
+          <h2>An independent educational project</h2>
           <p>
-            This is an independent student-led educational project, unaffiliated
-            with any university or institution. The website is free to use,
-            with no subscriptions at present.
+            This is an independent, student-led educational project. It is not
+            affiliated with a university or institution.
           </p>
-          <h2>Learn together. Question constructively.</h2>
           <p>
-            The aim is intellectual engagement with medical sciences. Students,
-            medical professionals and other curious learners are welcome to
-            bring questions, alternative explanations and thoughtful discussion.
-            If something is incorrect or could be clearer, I welcome suggestions
-            and corrections. <Link href="/contact">Start a conversation</Link>.
+            The website is currently free to use, with no subscription or
+            sign-in required. Saved resources and study progress stay in your
+            browser.
+          </p>
+          <h2>Help improve the library</h2>
+          <p>
+            I welcome questions, corrections and suggestions for clearer
+            explanations. <Link href="/contact">Share your feedback</Link>, or{" "}
+            <Link href="/library">explore the study library</Link>.
           </p>
         </div>
-        <aside className="quote-panel" aria-label="Learning philosophy">
-          <span className="quote-mark" aria-hidden="true">
-            “
-          </span>
+        <aside className="quote-panel" aria-label="Learning approach">
           <p>
-            Make a difficult concept visible, understandable and useful.
+            Study a topic, check your understanding, and return to the concepts
+            you want to strengthen.
           </p>
           <span className="quote-attribution">
-            The studio’s learning principle
+            The library’s teaching approach
           </span>
         </aside>
       </section>

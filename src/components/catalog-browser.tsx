@@ -95,7 +95,7 @@ export function CatalogBrowser({
               setQuery(event.target.value);
               setVisibleCount(18);
             }}
-            placeholder="Search titles, subjects, or topics"
+            placeholder="Search topics, lessons, or keywords"
           />
         </label>
         <label>
@@ -153,7 +153,7 @@ export function CatalogBrowser({
       <div className="catalog-summary">
         <p role="status" aria-live="polite">
           {savedOnly && !ready
-            ? "Loading reading list…"
+            ? "Loading study resources…"
             : `${filtered.length} resource${filtered.length === 1 ? "" : "s"}`}
         </p>
         {hasFilters ? (
@@ -192,7 +192,7 @@ export function CatalogBrowser({
                   href={resourceHref(record, basePath)}
                 >
                   {record.format === "WEB"
-                    ? "Open lesson"
+                    ? "Read lesson"
                     : record.format === "ACTIVITY"
                       ? "Start practice"
                       : "View resource"}{" "}
@@ -213,22 +213,22 @@ export function CatalogBrowser({
             {hasFilters
               ? "Try another search"
               : savedOnly
-                ? "Your reading list"
+                ? "Your saved resources"
                 : "Library availability"}
           </p>
           <h2>
             {hasFilters
               ? "No matching resources."
               : savedOnly
-                ? "A place for your next session."
-                : "The first public resources are being prepared."}
+                ? "No saved resources yet"
+                : "No resources are available here yet"}
           </h2>
           <p>
             {hasFilters
-              ? "Try a shorter search or clear the filters to see all available resources."
+              ? "No resources match these filters. Try a broader search or clear your filters."
               : savedOnly
-                ? "Save resources from the library and return to them here. Your list stays in this browser."
-                : "Browse the subjects to explore the library’s structure. Released guides will appear here when available."}
+                ? "Save a lesson or activity from the library to find it here for your next study session."
+                : "Browse the subjects to find available lessons and activities."}
           </p>
           {hasFilters ? (
             <button
@@ -243,7 +243,7 @@ export function CatalogBrowser({
               className="button button-secondary"
               href={savedOnly ? "/library" : "/subjects"}
             >
-              {savedOnly ? "Browse the library" : "Explore subjects"}
+              {savedOnly ? "Explore the library" : "Explore subjects"}
             </Link>
           )}
         </div>
@@ -272,11 +272,11 @@ export function SaveButton({ id, title }: { id: string; title: string }) {
       className="save-button"
       disabled={!ready}
       aria-pressed={active}
-      aria-label={`${active ? "Remove" : "Save"} ${title}${active ? " from" : " to"} reading list`}
+      aria-label={`${active ? "Saved to My Study" : "Save to My Study"}: ${title}${active ? " (remove from saved resources)" : ""}`}
       type="button"
       onClick={() => toggle(id)}
     >
-      {active ? "Saved ✓" : "Save +"}
+      {active ? "Saved to My Study" : "Save to My Study"}
     </button>
   );
 }

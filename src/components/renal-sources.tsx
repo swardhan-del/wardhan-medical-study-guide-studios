@@ -7,7 +7,7 @@ export function RenalSources({ section }: { section?: string }) {
       <h2>Know what you are learning from.</h2>
       <p>
         Published by Wardhan Medical Study Guide Studios. Web lessons, questions
-        and original schematics are adapted from the studio’s curated renal
+        and original schematics are adapted from the studio’s renal
         study guide. Revised{" "}
         <time dateTime={renalRevision}>6 September 2026</time>.
       </p>
@@ -17,7 +17,7 @@ export function RenalSources({ section }: { section?: string }) {
           September 2026.{" "}
           {section ??
             "Chapters 28–33: circulation, clearance, tubular handling, concentration, volume regulation and acid–base balance."}{" "}
-          The full manuscript is held in the private study library.
+          The full manuscript is not available for download here.
         </li>
         <li>
           <a
@@ -26,7 +26,7 @@ export function RenalSources({ section }: { section?: string }) {
           >
             Dalal, Bruss & Sehdev: Renal Blood Flow and Filtration
           </a>
-          , StatPearls / NCBI Bookshelf. Supplementary hemodynamics reference.
+          , StatPearls / NCBI Bookshelf. Supplementary haemodynamics reference.
         </li>
         <li>
           <a

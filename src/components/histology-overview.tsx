@@ -19,7 +19,7 @@ export function HistologyOverview() {
           <p>
             The study of structures too small to distinguish with the unaided
             eye. It connects cellular detail, tissue architecture and the
-            organization of organs using microscopy.
+            organisation of organs using microscopy.
           </p>
         </article>
         <article>
@@ -41,8 +41,7 @@ export function HistologyOverview() {
         </article>
       </div>
       <p className="histology-reading-note">
-        For every specimen, work through three questions: What identifies this
-        tissue? How does its structure support its function? How did it develop?
+        For each specimen, ask: What identifies this tissue? How does its structure support its function? How did it develop?
       </p>
       <p className="directory-footnote">
         Overview references:{" "}
@@ -81,8 +80,7 @@ export function HistologyOverview() {
       </div>
       <h3 className="histology-area-heading">Explore the subject areas</h3>
       <p>
-        The eight areas below follow your curated collection. Expand an area for
-        its available website lessons.
+        Explore these areas of microscopic anatomy and development. Expand an area to find its available lessons.
       </p>
       <div className="histology-areas">
         {data.areas.map((area) => (
@@ -93,7 +91,7 @@ export function HistologyOverview() {
 
               {area.lessons.length > 0 && (
                 <>
-                  <h4>Study on this website</h4>
+                  <h4>Lessons and study resources</h4>
                   <ul>
                     {area.lessons.map((id) => (
                       <li key={id}>

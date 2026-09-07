@@ -164,7 +164,7 @@ try {
         0,
         "Video bytes must not load before interaction",
       );
-      const descriptionLabel = silent ? "Visual description" : "Transcript";
+      const descriptionLabel = silent ? "Visual description" : "Read transcript";
       await page.getByText(descriptionLabel, { exact: true }).click();
       await page
         .getByRole("button", { name: "Seek to 0:01", exact: true })

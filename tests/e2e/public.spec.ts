@@ -217,7 +217,7 @@ test("challenge saves mistakes, produces a next step and supports review after r
 }, testInfo) => {
   await page.goto("/");
   await page
-    .getByRole("link", { name: /Try a five-minute renal challenge/ })
+    .getByRole("link", { name: /Try the renal challenge/ })
     .click();
   const quiz = page.getByRole("region", {
     name: "Your five-minute renal challenge",
@@ -242,7 +242,7 @@ test("challenge saves mistakes, produces a next step and supports review after r
   await expect(
     quiz.getByRole("heading", { name: "Here is your next step." }),
   ).toBeVisible();
-  await quiz.getByRole("link", { name: "My study dashboard" }).click();
+  await quiz.getByRole("link", { name: "My Study" }).click();
   await expect(
     page.getByRole("button", { name: "Review my mistakes (5)" }),
   ).toBeEnabled();
@@ -333,7 +333,7 @@ test("oral rubrics, histology clues and exam planning are usable", async ({
     page.getByText("1 of 4 points self-assessed.", { exact: false }),
   ).toBeVisible();
   await page
-    .getByRole("button", { name: "Save that I practiced this topic" })
+    .getByRole("button", { name: "Save that I practised this topic" })
     .click();
   await page.reload();
   await expect(page.getByRole("textbox", { name: "My answer" })).toHaveValue(/Blood enters the afferent/);
@@ -480,7 +480,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   await expect(
     page.getByText(/Alveoli need a short diffusion distance/),
   ).toBeVisible();
-  await page.getByRole("button", { name: /Save Epithelia:/ }).click();
+  await page.getByRole("button", { name: /Save to My Study: Epithelia:/ }).click();
   await page.goto("/reading-list");
   await expect(page).toHaveURL(/\/study#saved-learning$/);
   await expect(

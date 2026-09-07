@@ -106,7 +106,9 @@ export function VideoPlayer({ video }: { video: PublicVideo }) {
         <summary>
           {video.audioContent === "silent"
             ? "Visual description"
-            : "Transcript"}
+            : video.transcript.length
+              ? "Read transcript"
+              : "Transcript unavailable"}
         </summary>
         {video.transcript.length ? (
           <ol className="video-transcript">

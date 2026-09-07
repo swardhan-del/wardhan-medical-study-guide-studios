@@ -25,10 +25,9 @@ export default async function LibraryPage({
     <div className="site-container library-page">
       <header className="library-heading">
         <p className="eyebrow">Study library</p>
-        <h1>Find your next chapter.</h1>
+        <h1>Find the topic you need</h1>
         <p className="interior-lede">
-          {publicCatalog.length} resources across six medical sciences. Open a
-          source-based lesson, test a concept, or save your next study session.
+          Browse lessons, practice activities, and available revision resources. Search for a topic or filter by subject and format.
         </p>
       </header>
       <nav
@@ -56,15 +55,13 @@ export default async function LibraryPage({
         showSubjectNavigation
       />
       <aside className="library-source-note">
-        <p className="eyebrow">From the study guides to your next question</p>
+        <p className="eyebrow">Study and revise</p>
         <h2>Read. Connect. Recall.</h2>
         <p>
-          Each new lesson names its guide and source section, explains three
-          connected ideas, and includes an original question plus an oral-recall
-          prompt. Save a resource to return to it in My Study.
+          Use the explanations, practice questions and available source notes as you study. Save useful resources to return to them in My Study.
         </p>
         <Link href="/study#saved-learning" className="text-link">
-          Open my saved learning →
+          Open My Study →
         </Link>
       </aside>
     </div>

@@ -3847,3 +3847,9 @@ select:focus-visible {
 @media(max-width:760px){.figure-grid{grid-template-columns:1fr}.figure-dialog{padding:.8rem}.figure-thumbnail{height:160px}.figure-toolbar{align-items:flex-start}.figure-dialog-head .button{min-height:44px}}
 
 .video-poster {display:block;width:100%;height:180px;object-fit:contain;background:#f1eee6;border-radius:8px;}
+
+/* Editorial copy: keep descriptive headings and actions readable at narrow widths. */
+.learning-home h1 { font-size: clamp(2.8rem, 5.8vw, 5.5rem); line-height: 1.06; text-wrap: balance; }
+.study-hero h1, .interior-hero h1, .library-heading h1 { text-wrap: balance; }
+.resource-bottom { flex-wrap: wrap; }
+.save-button { white-space: normal; text-align: center; }

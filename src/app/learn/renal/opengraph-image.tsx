@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
+import { renalLessons, renalQuestions } from "@/content/renal-course";
 export const alt =
-  "Make the kidney make sense. Free renal physiology: 8 lessons, 30 questions, interactive practice.";
+  `Renal physiology, step by step: ${renalLessons.length} lessons, ${renalQuestions.length} questions and interactive practice.`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export default function Image() {
@@ -36,8 +37,8 @@ export default function Image() {
           lineHeight: 1.05,
         }}
       >
-        <span>Make the kidney</span>
-        <span>make sense.</span>
+        <span>Renal physiology,</span>
+        <span>step by step</span>
       </div>
       <div
         style={{
@@ -47,7 +48,7 @@ export default function Image() {
           paddingTop: 26,
         }}
       >
-        8 lessons · 30 questions · Interactive practice
+        {renalLessons.length} lessons · {renalQuestions.length} questions · Interactive practice
       </div>
     </div>,
     size,

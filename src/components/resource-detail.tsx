@@ -83,7 +83,7 @@ export function ResourceDetail({
               <Link className="button button-primary" href={record.href}>
                 {record.format === "ACTIVITY"
                   ? "Start practice"
-                  : "Open lesson"}{" "}
+                  : "Read lesson"}{" "}
                 →
               </Link>
             ) : (

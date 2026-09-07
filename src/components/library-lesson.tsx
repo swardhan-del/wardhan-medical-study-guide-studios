@@ -175,7 +175,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             aria-labelledby="oral-recall-title"
           >
             <p className="eyebrow">Say it without looking</p>
-            <h2 id="oral-recall-title">Practice an oral answer</h2>
+            <h2 id="oral-recall-title">Practise an oral answer</h2>
             <p className="concept-prompt">{lesson.recall.prompt}</p>
             <SavedRecall id={`oral-${lesson.id}`} />
             <details>
@@ -205,7 +205,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
               explanation first.
             </p>
             <Link href="/study#saved-learning" className="text-link">
-              My saved learning →
+              My Study →
             </Link>
           </div>
         </aside>
