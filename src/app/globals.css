@@ -2348,10 +2348,10 @@ select:focus-visible {
   border-color: #176b68;
   color: white;
 }
-.lesson-number {
+.lesson-selector .lesson-number {
   font-size: 0.75rem;
   line-height: 2;
-  opacity: 0.85;
+  color: inherit;
 }
 .lesson-workspace {
   min-width: 0;
