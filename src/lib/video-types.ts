@@ -6,6 +6,9 @@ export type PublicVideo = {
   topicIds: string[];
   lessonIds: string[];
   durationSeconds: number;
+  width: number;
+  height: number;
+  audioContent: "speech" | "non-speech" | "silent";
   status: "public";
   publicApproval: string;
   medicalReview: "reviewed";

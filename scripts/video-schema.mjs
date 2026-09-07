@@ -33,6 +33,16 @@ export function validateVideos(data, catalog, taxonomy) {
     );
     assert(v.title && v.summary && typeof v.aiGenerated === "boolean");
     assert(v.durationSeconds > 0 && Number.isFinite(v.durationSeconds));
+    assert(
+      [v.width, v.height].every(
+        (n) => Number.isInteger(n) && n > 0 && n <= 16384,
+      ),
+      "Measured display dimensions required",
+    );
+    assert(
+      ["speech", "non-speech", "silent"].includes(v.audioContent),
+      "Inspected audio content required",
+    );
     assert(["video/mp4", "video/webm"].includes(v.mimeType));
     assert(taxonomy.subjects.some((s) => s.id === v.subject));
     assert(
@@ -63,8 +73,8 @@ export function validateVideos(data, catalog, taxonomy) {
       last = line.startSeconds;
     });
     assert(
-      v.captions.length && v.transcript.length,
-      "Reviewed captions and transcript required for new video release",
+      v.transcript.length && (v.audioContent === "silent" || v.captions.length),
+      "Reviewed transcript or visual description required; audio also requires captions",
     );
     assert(
       !/original_dropbox_path|destination_dropbox_path|study%20guide|HOLD_RESTRICTED|[A-Z]:\\/.test(

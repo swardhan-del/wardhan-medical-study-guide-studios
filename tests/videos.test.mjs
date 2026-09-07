@@ -19,6 +19,9 @@ const good = {
   topicIds: ["physiology-renal"],
   lessonIds: ["renal-kidney-map"],
   durationSeconds: 5,
+  width: 1920,
+  height: 1080,
+  audioContent: "speech",
   status: "public",
   publicApproval: "Explicit fixture approval for automated tests only",
   medicalReview: "reviewed",
@@ -44,6 +47,9 @@ test("video validation rejects missing review, unsafe delivery, broken lessons a
     { lessonIds: ["private-lesson"] },
     { topicIds: ["private-topic"] },
     { durationSeconds: 0 },
+    { width: 0 },
+    { height: 1.5 },
+    { audioContent: "unknown" },
     { transcript: [{ startSeconds: 6, text: "Late" }] },
     { captions: [] },
   ])
@@ -56,5 +62,18 @@ test("video validation rejects missing review, unsafe delivery, broken lessons a
     );
   assert.doesNotThrow(() =>
     validateVideos({ version: 1, records: [good] }, catalog, taxonomy),
+  );
+});
+test("silent teaching clips require a visual description without invented speech captions", () => {
+  const silent = { ...good, audioContent: "silent", captions: [] };
+  assert.doesNotThrow(() =>
+    validateVideos({ version: 1, records: [silent] }, catalog, taxonomy),
+  );
+  assert.throws(() =>
+    validateVideos(
+      { version: 1, records: [{ ...silent, transcript: [] }] },
+      catalog,
+      taxonomy,
+    ),
   );
 });

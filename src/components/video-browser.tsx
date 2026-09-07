@@ -59,8 +59,8 @@ export function VideoBrowser({
             <img
               className="video-poster"
               src={v.posterUrl}
-              width={640}
-              height={360}
+              width={v.width}
+              height={v.height}
               alt=""
               loading="lazy"
               decoding="async"
