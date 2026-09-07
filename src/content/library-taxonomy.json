@@ -1,0 +1,904 @@
+{
+  "version": 1,
+  "subjects": [
+    {
+      "id": "anatomy",
+      "title": "Macroscopic Anatomy & Embryology",
+      "description": "Regional anatomy, five volumes and developmental connections.",
+      "learningSubject": "anatomy"
+    },
+    {
+      "id": "histology",
+      "title": "Microscopic Anatomy, Histology & Embryology",
+      "description": "Microscopy, basic tissues, organs and development across both courses.",
+      "learningSubject": "histology"
+    },
+    {
+      "id": "histology-i",
+      "title": "Microscopic Anatomy & Embryology I",
+      "description": "Build a foundation in microscopy and the four basic tissues, then explore blood, vessels, lymphoid organs, digestive, respiratory, urinary and reproductive histology, implantation and placental development.",
+      "learningSubject": "histology"
+    },
+    {
+      "id": "histology-ii",
+      "title": "Microscopic Anatomy & Embryology II",
+      "description": "Connect nervous-tissue structure with neurulation, brain and spinal-cord organization, sensory and motor pathways, autonomic reflexes, endocrine organs, special senses and their developmental origins.",
+      "learningSubject": "histology"
+    },
+    {
+      "id": "cell-biology",
+      "title": "Molecular & Cell Biology",
+      "description": "Molecular mechanisms, cellular structures and laboratory techniques.",
+      "learningSubject": "cell-biology"
+    },
+    {
+      "id": "biochemistry",
+      "title": "Biochemistry",
+      "description": "Biomolecules, enzymes, metabolism and the topic-based guide collection.",
+      "learningSubject": "biochemistry"
+    },
+    {
+      "id": "physiology",
+      "title": "Medical Physiology",
+      "description": "Cellular, cardiovascular, respiratory, renal, blood, gastrointestinal, endocrine and nervous-system physiology.",
+      "learningSubject": "physiology"
+    },
+    {
+      "id": "genetics",
+      "title": "Medical Genetics",
+      "description": "Inheritance, cytogenetics, pedigrees and diagnostic methods.",
+      "learningSubject": "genetics"
+    },
+    {
+      "id": "immunology",
+      "title": "Immunology",
+      "description": "Innate and adaptive immunity, antigen presentation, complement, vaccines and therapies.",
+      "learningSubject": "genetics"
+    },
+    {
+      "id": "microbiology",
+      "title": "Microbiology & Antimicrobials",
+      "description": "The existing sterilisation, disinfection and antibiotic source collection.",
+      "learningSubject": null
+    },
+    {
+      "id": "biostatistics",
+      "title": "Biostatistics",
+      "description": "The medical statistics reference collection.",
+      "learningSubject": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "anatomy-regions",
+      "title": "Regional anatomy",
+      "description": "Explore regional anatomy through the available lessons and resources.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-anatomy-regional-anatomy",
+      "title": "Regional anatomy",
+      "description": "Explore regional anatomy through explanations, visual teaching material, source references and recall practice.",
+      "subject": "anatomy",
+      "parentId": "anatomy-regions",
+      "kind": "topic",
+      "resources": [
+        "anatomy-regional-anatomy"
+      ]
+    },
+    {
+      "id": "topic-anatomy-thorax",
+      "title": "Thorax",
+      "description": "Explore thorax through explanations, visual teaching material, source references and recall practice.",
+      "subject": "anatomy",
+      "parentId": "anatomy-regions",
+      "kind": "topic",
+      "resources": [
+        "anatomy-thorax"
+      ]
+    },
+    {
+      "id": "topic-anatomy-abdomen",
+      "title": "Abdomen",
+      "description": "Explore abdomen through explanations, visual teaching material, source references and recall practice.",
+      "subject": "anatomy",
+      "parentId": "anatomy-regions",
+      "kind": "topic",
+      "resources": [
+        "anatomy-abdomen"
+      ]
+    },
+    {
+      "id": "topic-anatomy-musculoskeletal",
+      "title": "Musculoskeletal system",
+      "description": "Explore musculoskeletal system through explanations, visual teaching material, source references and recall practice.",
+      "subject": "anatomy",
+      "parentId": "anatomy-regions",
+      "kind": "topic",
+      "resources": [
+        "anatomy-musculoskeletal"
+      ]
+    },
+    {
+      "id": "anatomy-development",
+      "title": "Embryology",
+      "description": "Explore embryology through the available lessons and resources.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-anatomy-embryology",
+      "title": "Embryology",
+      "description": "Explore embryology through explanations, visual teaching material, source references and recall practice.",
+      "subject": "anatomy",
+      "parentId": "anatomy-development",
+      "kind": "topic",
+      "resources": [
+        "anatomy-embryology"
+      ]
+    },
+    {
+      "id": "histology-basic-tissues",
+      "title": "Microscopy and basic tissues",
+      "description": "Explore microscopy and basic tissues through the available lessons and resources.",
+      "subject": "histology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-microscopy",
+      "title": "Reading a histology section",
+      "description": "Build an identification from architecture, cells and preparation clues before naming the organ.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "microscopy"
+      ]
+    },
+    {
+      "id": "topic-epithelia",
+      "title": "Epithelia: layers, shape and function",
+      "description": "Distinguish simple, stratified and pseudostratified epithelia and connect their structure to their job.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "epithelia"
+      ]
+    },
+    {
+      "id": "topic-cell-junctions",
+      "title": "Cell junctions and surface specializations",
+      "description": "Separate sealing, anchoring and communication junctions, then distinguish microvilli from cilia.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "cell-junctions"
+      ]
+    },
+    {
+      "id": "topic-connective-tissue",
+      "title": "Connective tissue and extracellular matrix",
+      "description": "Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "connective-tissue"
+      ]
+    },
+    {
+      "id": "topic-cartilage-bone",
+      "title": "Cartilage, bone and remodeling",
+      "description": "Distinguish the matrix and cell organization of cartilage from vascular, continuously remodeled bone.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "cartilage-bone"
+      ]
+    },
+    {
+      "id": "topic-muscle-histology",
+      "title": "Skeletal, cardiac and smooth muscle",
+      "description": "Identify muscle using nuclei, striations, branching and the connections between cells.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "muscle-histology"
+      ]
+    },
+    {
+      "id": "topic-blood-marrow",
+      "title": "Blood cells and bone marrow",
+      "description": "Read nuclear shape, cytoplasm and tissue context to distinguish circulating cells from developing marrow.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "blood-marrow"
+      ]
+    },
+    {
+      "id": "histology-organ-histology",
+      "title": "Organ histology",
+      "description": "Explore organ histology through the available lessons and resources.",
+      "subject": "histology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-vessel-histology",
+      "title": "Arteries, veins and capillaries",
+      "description": "Read vessel walls from the lumen outward and relate each layer to pressure and exchange.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "vessel-histology"
+      ]
+    },
+    {
+      "id": "topic-respiratory-histology",
+      "title": "From conducting airways to alveoli",
+      "description": "Follow the changing epithelium, supporting wall and exchange surface along the respiratory tree.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "respiratory-histology"
+      ]
+    },
+    {
+      "id": "topic-renal-histology",
+      "title": "Kidney cortex, medulla and tubules",
+      "description": "Orient the section, identify a renal corpuscle, then connect tubular appearance to transport.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "renal-histology"
+      ]
+    },
+    {
+      "id": "topic-liver-pancreas",
+      "title": "Liver and pancreas: routes and secretions",
+      "description": "Distinguish blood flow from bile flow and separate pancreatic acini from endocrine islets.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "liver-pancreas"
+      ]
+    },
+    {
+      "id": "topic-lymphoid-organs",
+      "title": "Lymph node, spleen and thymus",
+      "description": "Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "lymphoid-organs"
+      ]
+    },
+    {
+      "id": "topic-gi-histology",
+      "title": "Recognizing the gastrointestinal wall",
+      "description": "Use the shared wall plan and regional specializations to distinguish esophagus, stomach and intestine.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "gi-histology"
+      ]
+    },
+    {
+      "id": "topic-histology-detective",
+      "title": "Renal histology detective",
+      "description": "Identify three original tubule schematics and reveal the structural clues.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "histology-detective"
+      ]
+    },
+    {
+      "id": "histology-development",
+      "title": "Reproductive histology and embryology",
+      "description": "Explore reproductive histology and embryology through the available lessons and resources.",
+      "subject": "histology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-reproductive-histology",
+      "title": "Reproductive histology and cyclic change",
+      "description": "Connect seminiferous tubules, ovarian follicles and endometrium to their changing functions.",
+      "subject": "histology",
+      "parentId": "histology-development",
+      "kind": "topic",
+      "resources": [
+        "reproductive-histology"
+      ]
+    },
+    {
+      "id": "topic-placenta",
+      "title": "Placental villi and maternal–fetal exchange",
+      "description": "Follow villus development and keep maternal blood distinct from fetal capillaries.",
+      "subject": "histology",
+      "parentId": "histology-development",
+      "kind": "topic",
+      "resources": [
+        "placenta"
+      ]
+    },
+    {
+      "id": "topic-neurulation",
+      "title": "Neural tube formation and early organization",
+      "description": "Connect neural plate folding to the developing central nervous system and distinguish tube from crest.",
+      "subject": "histology",
+      "parentId": "histology-development",
+      "kind": "topic",
+      "resources": [
+        "neurulation"
+      ]
+    },
+    {
+      "id": "cell-biology-cell-organization",
+      "title": "Cell organization and signaling",
+      "description": "Explore cell organization and signaling through the available lessons and resources.",
+      "subject": "cell-biology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-cell-signaling",
+      "title": "Cell signaling through G proteins",
+      "description": "Trace the receptor, molecular switch, effector and second messenger without skipping the cell compartment.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-cell-organization",
+      "kind": "topic",
+      "resources": [
+        "cell-signaling"
+      ]
+    },
+    {
+      "id": "topic-protein-trafficking",
+      "title": "Protein targeting and the secretory pathway",
+      "description": "Follow a secreted protein from translation through ER quality control and Golgi sorting.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-cell-organization",
+      "kind": "topic",
+      "resources": [
+        "protein-trafficking"
+      ]
+    },
+    {
+      "id": "cell-biology-molecular-mechanisms",
+      "title": "Molecular mechanisms",
+      "description": "Explore molecular mechanisms through the available lessons and resources.",
+      "subject": "cell-biology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-dna-repair",
+      "title": "DNA lesions, mutations and repair",
+      "description": "Match the type of DNA damage to a repair strategy and distinguish damage from a stable sequence change.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-molecular-mechanisms",
+      "kind": "topic",
+      "resources": [
+        "dna-repair"
+      ]
+    },
+    {
+      "id": "topic-dna-replication",
+      "title": "DNA replication and strand direction",
+      "description": "Follow a replication fork and explain why leading and lagging strands need different synthesis patterns.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-molecular-mechanisms",
+      "kind": "topic",
+      "resources": [
+        "dna-replication"
+      ]
+    },
+    {
+      "id": "topic-rna-processing",
+      "title": "From pre-mRNA to mature messenger RNA",
+      "description": "Connect capping, splicing and polyadenylation to the structure and use of an RNA message.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-molecular-mechanisms",
+      "kind": "topic",
+      "resources": [
+        "rna-processing"
+      ]
+    },
+    {
+      "id": "topic-pcr",
+      "title": "PCR, qPCR and reverse transcription",
+      "description": "Distinguish amplification, real-time measurement and the conversion of RNA to DNA.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-molecular-mechanisms",
+      "kind": "topic",
+      "resources": [
+        "pcr"
+      ]
+    },
+    {
+      "id": "topic-translation",
+      "title": "Translation: charging, decoding and elongation",
+      "description": "Explain how a nucleotide message becomes a polypeptide while keeping the roles of tRNA, synthetase and ribosome distinct.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-molecular-mechanisms",
+      "kind": "topic",
+      "resources": [
+        "translation"
+      ]
+    },
+    {
+      "id": "biochemistry-biomolecules",
+      "title": "Biomolecules and enzymes",
+      "description": "Explore biomolecules and enzymes through the available lessons and resources.",
+      "subject": "biochemistry",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-protein-structure",
+      "title": "Protein structure and collagen",
+      "description": "Relate amino-acid properties, folding and extracellular assembly to protein function.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-biomolecules",
+      "kind": "topic",
+      "resources": [
+        "protein-structure"
+      ]
+    },
+    {
+      "id": "topic-enzyme-kinetics",
+      "title": "Enzyme catalysis and inhibition",
+      "description": "Separate reaction rate from equilibrium and compare substrate competition with loss of catalytic capacity.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-biomolecules",
+      "kind": "topic",
+      "resources": [
+        "enzyme-kinetics"
+      ]
+    },
+    {
+      "id": "biochemistry-metabolism",
+      "title": "Metabolic pathways",
+      "description": "Explore metabolic pathways through the available lessons and resources.",
+      "subject": "biochemistry",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-nitrogen-metabolism",
+      "title": "Amino-acid nitrogen and urea",
+      "description": "Separate the fate of amino nitrogen from the use of the remaining carbon skeleton.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "nitrogen-metabolism"
+      ]
+    },
+    {
+      "id": "topic-lipid-metabolism",
+      "title": "Fatty-acid synthesis and fuel storage",
+      "description": "Locate fatty-acid synthesis and distinguish its reducing power and purpose from fuel oxidation.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "lipid-metabolism"
+      ]
+    },
+    {
+      "id": "topic-glycolysis",
+      "title": "Glycolysis and lactate recycling",
+      "description": "Track carbon, ATP and reducing equivalents through the conversion of glucose to pyruvate.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "glycolysis"
+      ]
+    },
+    {
+      "id": "topic-pdh-tca",
+      "title": "Pyruvate dehydrogenase and the TCA cycle",
+      "description": "Follow pyruvate into mitochondrial carbon oxidation while distinguishing carbon flux from electron transport.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "pdh-tca"
+      ]
+    },
+    {
+      "id": "genetics-inheritance",
+      "title": "Inheritance and variation",
+      "description": "Explore inheritance and variation through the available lessons and resources.",
+      "subject": "genetics",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-genetic-testing",
+      "title": "Choosing and interpreting a genetic test",
+      "description": "Match a method to the variant class and explain why a negative result has a defined scope.",
+      "subject": "genetics",
+      "parentId": "genetics-inheritance",
+      "kind": "topic",
+      "resources": [
+        "genetic-testing"
+      ]
+    },
+    {
+      "id": "topic-inheritance",
+      "title": "Inheritance patterns, penetrance and expressivity",
+      "description": "Use a pedigree as evidence while keeping inheritance pattern, disease expression and mechanism separate.",
+      "subject": "genetics",
+      "parentId": "genetics-inheritance",
+      "kind": "topic",
+      "resources": [
+        "inheritance"
+      ]
+    },
+    {
+      "id": "topic-meiosis",
+      "title": "Meiosis, nondisjunction and mosaicism",
+      "description": "Follow homologs and sister chromatids through division and distinguish meiotic from postzygotic errors.",
+      "subject": "genetics",
+      "parentId": "genetics-inheritance",
+      "kind": "topic",
+      "resources": [
+        "meiosis"
+      ]
+    },
+    {
+      "id": "immunology-immune-responses",
+      "title": "Innate and adaptive immunity",
+      "description": "Explore innate and adaptive immunity through the available lessons and resources.",
+      "subject": "immunology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-complement",
+      "title": "Complement pathways and their shared effectors",
+      "description": "Follow three initiation routes toward opsonization, inflammation and terminal complex formation.",
+      "subject": "immunology",
+      "parentId": "immunology-immune-responses",
+      "kind": "topic",
+      "resources": [
+        "complement"
+      ]
+    },
+    {
+      "id": "topic-innate-adaptive",
+      "title": "Innate and adaptive immunity",
+      "description": "Compare recognition strategies and follow the connection from a tissue barrier to lymphocyte activation.",
+      "subject": "immunology",
+      "parentId": "immunology-immune-responses",
+      "kind": "topic",
+      "resources": [
+        "innate-adaptive"
+      ]
+    },
+    {
+      "id": "topic-antigen-presentation",
+      "title": "MHC I, MHC II and T-cell recognition",
+      "description": "Keep the presenting cell, peptide source and recognizing T cell distinct.",
+      "subject": "immunology",
+      "parentId": "immunology-immune-responses",
+      "kind": "topic",
+      "resources": [
+        "antigen-presentation"
+      ]
+    },
+    {
+      "id": "physiology-cellular",
+      "title": "Cellular physiology",
+      "description": "Explore cellular physiology through the available lessons and resources.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-membrane-potentials",
+      "title": "Resting potential and the action potential",
+      "description": "Connect ion gradients, selective permeability and channel timing to electrical signals.",
+      "subject": "physiology",
+      "parentId": "physiology-cellular",
+      "kind": "topic",
+      "resources": [
+        "membrane-potentials"
+      ]
+    },
+    {
+      "id": "physiology-cardiovascular",
+      "title": "Cardiovascular physiology",
+      "description": "Explore cardiovascular physiology through the available lessons and resources.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-cardiac-output",
+      "title": "Stroke volume, cardiac output and pump regulation",
+      "description": "Keep volume per beat, volume per minute and the fraction ejected separate.",
+      "subject": "physiology",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "cardiac-output"
+      ]
+    },
+    {
+      "id": "topic-baroreflex",
+      "title": "The arterial baroreceptor reflex",
+      "description": "Trace a pressure change from arterial stretch through afferent nerves to autonomic effectors.",
+      "subject": "physiology",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "baroreflex"
+      ]
+    },
+    {
+      "id": "physiology-respiratory",
+      "title": "Respiratory physiology",
+      "description": "Explore respiratory physiology through the available lessons and resources.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-ventilation-perfusion",
+      "title": "Ventilation, perfusion and gas exchange",
+      "description": "Distinguish air delivery, blood delivery and diffusion across the respiratory membrane.",
+      "subject": "physiology",
+      "parentId": "physiology-respiratory",
+      "kind": "topic",
+      "resources": [
+        "ventilation-perfusion"
+      ]
+    },
+    {
+      "id": "physiology-renal",
+      "title": "Renal and acid-base physiology",
+      "description": "Explore renal and acid-base physiology through the available lessons and resources.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-renal-tubular-transport",
+      "title": "A tour of tubular transport",
+      "description": "Match each nephron segment to its job, from bulk recovery to final adjustment.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-tubular-transport"
+      ]
+    },
+    {
+      "id": "topic-renal-afferent-efferent",
+      "title": "Afferent versus efferent: flow is not filtration.",
+      "description": "Predict how resistance before and after the glomerulus changes flow and filtration pressure.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-afferent-efferent"
+      ]
+    },
+    {
+      "id": "topic-renal-challenge",
+      "title": "Five-minute renal challenge",
+      "description": "Test five renal concepts, see every answer explained and review your mistakes.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-challenge"
+      ]
+    },
+    {
+      "id": "topic-renal-kidney-map",
+      "title": "Follow the blood. Follow the filtrate.",
+      "description": "Build a mental map of the nephron by keeping blood and tubular fluid on separate paths.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-kidney-map"
+      ]
+    },
+    {
+      "id": "topic-renal-concentrating-urine",
+      "title": "How the kidney concentrates urine",
+      "description": "Separate the machinery that builds a gradient from the hormone that lets water use it.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-concentrating-urine"
+      ]
+    },
+    {
+      "id": "topic-renal-abg-interpretation",
+      "title": "How to interpret an arterial blood gas",
+      "description": "Read pH, identify the process, then check compensation and the anion gap.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-abg-interpretation"
+      ]
+    },
+    {
+      "id": "topic-physiology-lab",
+      "title": "Physiology lab and ABG exercises",
+      "description": "Explore renal resistance and ventilation models, then interpret six fictional blood gases.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "physiology-lab"
+      ]
+    },
+    {
+      "id": "topic-renal-renal-acid-base",
+      "title": "Reclaim bicarbonate. Excrete acid.",
+      "description": "Distinguish saving filtered bicarbonate from adding new bicarbonate through net acid excretion.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-renal-acid-base"
+      ]
+    },
+    {
+      "id": "topic-oral-practice",
+      "title": "Renal oral-exam practice",
+      "description": "Practice eight structured answers with self-assessment rubrics and follow-up prompts.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "oral-practice"
+      ]
+    },
+    {
+      "id": "topic-renal-revision-sheet",
+      "title": "Renal physiology revision sheet",
+      "description": "A two-page printable summary of key renal mechanisms, equations and acid–base reasoning.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-revision-sheet"
+      ]
+    },
+    {
+      "id": "topic-renal-course",
+      "title": "The complete renal mini-course",
+      "description": "Follow eight lessons from kidney organization to acid–base interpretation, with 30 explained questions.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-course"
+      ]
+    },
+    {
+      "id": "topic-renal-volume-and-osmolality",
+      "title": "Volume and osmolality ask different questions.",
+      "description": "Connect sodium balance, water balance, RAAS and ADH without treating them as interchangeable.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-volume-and-osmolality"
+      ]
+    },
+    {
+      "id": "topic-renal-filtration-and-clearance",
+      "title": "What does renal clearance actually measure?",
+      "description": "Use units and mass balance to distinguish GFR, plasma flow, filtration fraction and clearance.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-filtration-and-clearance"
+      ]
+    },
+    {
+      "id": "histology-i-histology-basic-tissues",
+      "title": "Microscopy and basic tissues",
+      "description": "Explore microscopy and basic tissues through the available lessons and resources.",
+      "subject": "histology-i",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "microscopy",
+        "epithelia",
+        "cell-junctions",
+        "connective-tissue",
+        "cartilage-bone",
+        "muscle-histology",
+        "blood-marrow"
+      ]
+    },
+    {
+      "id": "histology-i-histology-organ-histology",
+      "title": "Organ histology",
+      "description": "Explore organ histology through the available lessons and resources.",
+      "subject": "histology-i",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "vessel-histology",
+        "respiratory-histology",
+        "renal-histology",
+        "liver-pancreas",
+        "lymphoid-organs",
+        "gi-histology",
+        "histology-detective"
+      ]
+    },
+    {
+      "id": "histology-i-histology-development",
+      "title": "Reproductive histology and embryology",
+      "description": "Explore reproductive histology and embryology through the available lessons and resources.",
+      "subject": "histology-i",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "reproductive-histology",
+        "placenta",
+        "neurulation"
+      ]
+    },
+    {
+      "id": "histology-ii-histology-development",
+      "title": "Nervous-system development",
+      "description": "Connect neural tube development with the nervous-system focus of the second course.",
+      "subject": "histology-ii",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "neurulation"
+      ]
+    }
+  ]
+}

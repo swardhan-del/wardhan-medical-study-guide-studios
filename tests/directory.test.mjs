@@ -1,62 +1,38 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { validateDirectory } from "../scripts/directory-schema.mjs";
-const source = JSON.parse(
-  fs.readFileSync(
-    new URL("../src/content/subject-directory.json", import.meta.url),
-  ),
-);
-test("directory covers requested courses and each real source destination is unique", () => {
-  const data = validateDirectory(source);
+import { validateTaxonomy } from "../scripts/taxonomy-schema.mjs";
+const read = (p) =>
+  JSON.parse(
+    fs.readFileSync(
+      new URL("../src/content/" + p + ".json", import.meta.url),
+      "utf8",
+    ),
+  );
+const taxonomy = read("library-taxonomy"),
+  catalog = read("public-catalog");
+test("native taxonomy covers every released resource and retains course distinctions", () => {
+  validateTaxonomy(taxonomy, catalog);
   for (const id of [
-    "anatomy",
     "histology-i",
     "histology-ii",
-    "cell-biology",
-    "biochemistry",
-    "physiology",
     "genetics",
     "immunology",
     "microbiology",
     "biostatistics",
-  ]) {
-    assert(data.subjects.some((s) => s.id === id));
-    assert(data.entries.some((e) => e.subjects.includes(id)));
-  }
-  assert(
-    data.entries.some(
-      (e) =>
-        e.title.includes("Antigen Presentation") &&
-        e.subjects.includes("immunology") &&
-        !e.subjects.includes("genetics"),
-    ),
-  );
-  assert(
-    data.entries.some(
-      (e) =>
-        e.title.includes("Inheritance and Pedigrees") &&
-        e.subjects.includes("genetics") &&
-        !e.subjects.includes("immunology"),
-    ),
-  );
+  ])
+    assert(taxonomy.subjects.some((s) => s.id === id));
 });
-test("directory rejects external, administrative and executable destinations", () => {
-  for (const url of [
-    "javascript:alert(1)",
-    "https://evil.example/home/study%20guide/file",
-    "https://www.dropbox.com/home/study%20guide/00_Admin/private",
+test("cycles, missing parents, duplicate IDs, private metadata and unapproved resources fail closed", () => {
+  for (const mutate of [
+    (d) => (d.nodes[0].parentId = d.nodes[0].id),
+    (d) => (d.nodes[0].parentId = "absent"),
+    (d) => d.nodes.push(d.nodes[0]),
+    (d) => (d.nodes[0].original_dropbox_path = "/private"),
+    (d) => d.nodes[0].resources.push("unapproved"),
   ]) {
-    const data = structuredClone(source);
-    data.entries[0].url = url;
-    assert.throws(() => validateDirectory(data));
+    const d = structuredClone(taxonomy);
+    mutate(d);
+    assert.throws(() => validateTaxonomy(d, catalog));
   }
-});
-test("directory rejects missing and cyclic parents", () => {
-  const missing = structuredClone(source);
-  missing.entries[0].parentId = "not-present";
-  assert.throws(() => validateDirectory(missing), /parent/);
-  const cycle = structuredClone(source);
-  cycle.entries[0].parentId = cycle.entries[0].id;
-  assert.throws(() => validateDirectory(cycle), /cycle/);
 });

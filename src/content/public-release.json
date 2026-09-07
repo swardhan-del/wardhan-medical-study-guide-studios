@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "baselineCommit": "cc02a695145ed205e51fe95b08507b7a5ffa727c",
+  "scope": "Existing released web adaptations and selected preview assets only. Private archive approvals do not authorize public files.",
+  "resourceIds": [
+    "anatomy-abdomen",
+    "anatomy-embryology",
+    "anatomy-musculoskeletal",
+    "anatomy-regional-anatomy",
+    "anatomy-thorax",
+    "nitrogen-metabolism",
+    "enzyme-kinetics",
+    "lipid-metabolism",
+    "glycolysis",
+    "protein-structure",
+    "pdh-tca",
+    "cell-signaling",
+    "dna-repair",
+    "dna-replication",
+    "rna-processing",
+    "pcr",
+    "protein-trafficking",
+    "translation",
+    "genetic-testing",
+    "complement",
+    "inheritance",
+    "innate-adaptive",
+    "meiosis",
+    "antigen-presentation",
+    "vessel-histology",
+    "blood-marrow",
+    "cartilage-bone",
+    "cell-junctions",
+    "connective-tissue",
+    "epithelia",
+    "respiratory-histology",
+    "renal-histology",
+    "liver-pancreas",
+    "lymphoid-organs",
+    "neurulation",
+    "placenta",
+    "microscopy",
+    "gi-histology",
+    "histology-detective",
+    "reproductive-histology",
+    "muscle-histology",
+    "renal-tubular-transport",
+    "renal-afferent-efferent",
+    "renal-challenge",
+    "renal-kidney-map",
+    "renal-concentrating-urine",
+    "renal-abg-interpretation",
+    "physiology-lab",
+    "renal-renal-acid-base",
+    "oral-practice",
+    "renal-revision-sheet",
+    "membrane-potentials",
+    "cardiac-output",
+    "baroreflex",
+    "renal-course",
+    "ventilation-perfusion",
+    "renal-volume-and-osmolality",
+    "renal-filtration-and-clearance"
+  ],
+  "assets": [
+    {
+      "path": "downloads/renal-revision-sheet.pdf",
+      "sha256": "0452557fdf95dff0a6b0963749ac5c61e3c8869b1ce4f59f242da07165656c66",
+      "bytes": 6520,
+      "evidence": "docs/RENAL_LEARNING_RELEASE.md"
+    },
+    {
+      "path": "images/anatomy/mediastinal-plane.svg",
+      "sha256": "6b683b562db9d03277acfc2938409dc6b462b0053b7e60bd50ef18ec5596d86e",
+      "bytes": 3011,
+      "evidence": "docs/ANATOMY_PREVIEWS.md"
+    },
+    {
+      "path": "images/anatomy/volume-1.png",
+      "sha256": "2597934dfd4d9a9f344ea971f03934752bcf9c8e1ae5c91a53134ab7f5e5c35f",
+      "bytes": 1196845,
+      "evidence": "docs/ANATOMY_PREVIEWS.md"
+    },
+    {
+      "path": "images/anatomy/volume-2.png",
+      "sha256": "93fb17a027355bf86afdb8f1b578cbeb3ce4e0eca9722da8c928fc7626db3645",
+      "bytes": 52245,
+      "evidence": "docs/ANATOMY_PREVIEWS.md"
+    },
+    {
+      "path": "images/anatomy/volume-3.png",
+      "sha256": "e35598bacc6c0519f23ac0df2703be24cbe88a47fa5e8073bf2ba744c99c4d71",
+      "bytes": 2579051,
+      "evidence": "docs/ANATOMY_PREVIEWS.md"
+    },
+    {
+      "path": "images/anatomy/volume-4.jpg",
+      "sha256": "8f386b88113fd4b71b038fbd6e80b9d4ebe8d6392e3f243120e93715bf3c058f",
+      "bytes": 416405,
+      "evidence": "docs/ANATOMY_PREVIEWS.md"
+    },
+    {
+      "path": "images/anatomy/volume-5.png",
+      "sha256": "7e07a730b63d25a02e6e6f186cbfbf9ea0a7ea763142492ba609b77386348c7e",
+      "bytes": 2197970,
+      "evidence": "docs/ANATOMY_PREVIEWS.md"
+    },
+    {
+      "path": "images/histology/micrograph-a.jpg",
+      "sha256": "6e79fc58f19a4e06aa0dd20b8d700d39bc2cd1da9a8b3d43a8ec5928ec744cdb",
+      "bytes": 1447694,
+      "evidence": "docs/CURATED_HISTOLOGY_RESOURCES.md"
+    },
+    {
+      "path": "images/histology/micrograph-b.jpg",
+      "sha256": "f4113853163a38d2546057d41957bb9424bf170f52b07039d6ef7b9ef1ee1e72",
+      "bytes": 5765804,
+      "evidence": "docs/CURATED_HISTOLOGY_RESOURCES.md"
+    },
+    {
+      "path": "images/figures/thoracic-plane-320.webp",
+      "sha256": "63102e20e3994905abdb3684ccc589f59a1bcb9de32e8679492560b96517e772",
+      "bytes": 12094,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/thoracic-plane-640.webp",
+      "sha256": "287e546de7b6814508d88ade74240b5e902e4cf87dcd826226d7129802d83736",
+      "bytes": 25558,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/thoracic-plane-900.webp",
+      "sha256": "665c16b632dc7614bac9c3ccf068c9d2fa606fa4cd34a1fc3b5047d16ebea4b8",
+      "bytes": 33088,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/abdominal-regions-320.webp",
+      "sha256": "449197bd4ee41f92d080c79cb51774bdecea16553bcafda1baa896177acb8274",
+      "bytes": 13936,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/abdominal-regions-640.webp",
+      "sha256": "a25918fbe2be07381e40127c703b134eef3c42afcbac5defeeecfb40ae17b6cc",
+      "bytes": 31494,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/abdominal-regions-1280.webp",
+      "sha256": "634a493f26d2a8583feb3a00c87e84fa5437ffebc51caa7269dddcc3563c30e4",
+      "bytes": 75224,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/abdominal-regions-1600.webp",
+      "sha256": "98c045f7b652eee150a4a4231c67d6281fcfb593667e105e803c2cd527ec229b",
+      "bytes": 18174,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/cuboidal-section-320.webp",
+      "sha256": "cc60ac23e20c834d80af44af5a2e4cea5c121ebc3803af36e153936254a8e17c",
+      "bytes": 36154,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/cuboidal-section-640.webp",
+      "sha256": "00247906c430ec85427215163ed07f4b9897c51452a11605c1da02714daaa0db",
+      "bytes": 124330,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/cuboidal-section-1280.webp",
+      "sha256": "48f9d5cbac042ec0f0a3a58cfc743c91f41b3183fff9da82760d6e9b2212d556",
+      "bytes": 421918,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/cuboidal-section-3264.webp",
+      "sha256": "976bd81e45e898aab2e4fb48407227aaf160312b731959dee674d00a922a560b",
+      "bytes": 1381764,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/squamous-section-320.webp",
+      "sha256": "80dd75bcc3206f55fd8dfae7988529691c96d64d4475588fa6e2f06d71ac9cd1",
+      "bytes": 26982,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/squamous-section-640.webp",
+      "sha256": "15dd166829ecc36e524f456e875c327f09246ec02b5c9f01cd98aa113388f016",
+      "bytes": 97638,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/squamous-section-1280.webp",
+      "sha256": "fa4376c6fa2c551791dc760d892de5cc658193cb88d15d0e1d259ef0cef6b9b4",
+      "bytes": 356222,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/squamous-section-3264.webp",
+      "sha256": "9e3b8a4e275b3280b2b37a6942337bdf2bd1b5bcffea31edd9ae5d9ef608ff03",
+      "bytes": 1227818,
+      "evidence": "docs/FIGURE_PLACEMENTS.md"
+    }
+  ]
+}

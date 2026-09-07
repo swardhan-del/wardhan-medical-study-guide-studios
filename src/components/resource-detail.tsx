@@ -1,7 +1,12 @@
+import { FigureGallery } from "./educational-figure";
+import { figuresForResource } from "@/lib/figures";
+import { LessonVideos } from "./lesson-videos";
 import Link from "next/link";
-import { subjectInterests } from "@/content/subjects";
 import type { CatalogRecord } from "@/lib/catalog-types";
 import { formatBytes } from "@/lib/catalog-types";
+import { publicCatalog } from "@/lib/catalog";
+import { resourceNodes, recordsForNode, taxonomyNodes } from "@/lib/taxonomy";
+import { ResourceBreadcrumbs } from "./taxonomy-navigation";
 import { SaveButton } from "./catalog-browser";
 export function ResourceDetail({
   record,
@@ -10,16 +15,23 @@ export function ResourceDetail({
   record: CatalogRecord;
   review?: boolean;
 }) {
-  const subject = subjectInterests.find((item) => item.id === record.subject);
+  const file =
+    record.format === "PDF"
+      ? record.downloadUrl || record.href
+      : record.downloadUrl;
+  const node = resourceNodes(record.id)[0];
+  const related = (
+    node
+      ? recordsForNode(
+          taxonomyNodes.find((n) => n.id === node.parentId) || node,
+        )
+      : publicCatalog.filter((r) => r.subject === record.subject)
+  )
+    .filter((r) => r.id !== record.id)
+    .slice(0, 4);
   return (
-    <div className="site-container detail-page">
-      <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <Link href={review ? "/review" : "/library"}>
-          {review ? "Local review" : "Library"}
-        </Link>
-        <span aria-hidden="true">/</span>
-        <Link href={`/subjects/${record.subject}`}>{subject?.title}</Link>
-      </nav>
+    <article className="site-container detail-page">
+      {!review && <ResourceBreadcrumbs id={record.id} />}
       <p className="eyebrow">
         {record.kind} · {record.format}
       </p>
@@ -27,53 +39,97 @@ export function ResourceDetail({
       <p className="interior-lede">{record.summary}</p>
       <dl className="resource-facts">
         <div>
-          <dt>Subject</dt>
-          <dd>{subject?.title}</dd>
+          <dt>Type</dt>
+          <dd>{record.kind}</dd>
         </div>
         <div>
           <dt>Format</dt>
           <dd>{record.format}</dd>
         </div>
         <div>
-          <dt>File size</dt>
-          <dd>{formatBytes(record.bytes)}</dd>
-        </div>
-        <div>
-          <dt>Source updated</dt>
+          <dt>Updated</dt>
           <dd>
             <time dateTime={record.updatedAt}>{record.updatedAt}</time>
           </dd>
         </div>
-      </dl>
-      <div className="action-row">
-        {!review && record.downloadUrl ? (
-          <a
-            className="button button-primary"
-            href={record.downloadUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open {record.format}{" "}
-            <span className="visually-hidden">in a new tab</span>
-            <span aria-hidden="true">↗</span>
-          </a>
-        ) : (
-          <p className="availability-message">
-            {review
-              ? "This resource is available for local catalog review. Downloads have not been released."
-              : "The download for this resource is being prepared."}
-          </p>
+        {record.bytes > 0 && (
+          <div>
+            <dt>File size</dt>
+            <dd>{formatBytes(record.bytes)}</dd>
+          </div>
         )}
-        {!review ? <SaveButton id={record.id} title={record.title} /> : null}
-      </div>
-      <section className="detail-note">
-        <h2>{review ? "Review the source edition" : "Using this resource"}</h2>
-        <p>
-          {review
-            ? "This record comes from the curated September 2, 2026 snapshot. Confirm the edition before releasing it; later Dropbox revisions are not automatically substituted."
-            : "Check the file format and update date before opening. Save this resource to keep it in your reading list for a later session."}
-        </p>
-      </section>
-    </div>
+      </dl>
+      {review ? (
+        <p>Local catalog review only. Downloads have not been released.</p>
+      ) : (
+        <>
+          <div className="action-row">
+            {file ? (
+              <>
+                <a className="button button-primary" href={file} download>
+                  Download {record.format}
+                </a>
+                <a
+                  className="text-link"
+                  href={file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open full-size {record.format}
+                  <span className="sr-only"> in a new tab</span>
+                </a>
+              </>
+            ) : record.href ? (
+              <Link className="button button-primary" href={record.href}>
+                {record.format === "ACTIVITY"
+                  ? "Start practice"
+                  : "Open lesson"}{" "}
+                →
+              </Link>
+            ) : (
+              <p>No file is available for this resource.</p>
+            )}
+            <SaveButton id={record.id} title={record.title} />
+          </div>
+          <FigureGallery figures={figuresForResource(record.id)} />
+          {file && record.format === "PDF" && (
+            <section className="native-preview" aria-label="Document preview">
+              <h2>Read the document</h2>
+              <object
+                data={file}
+                type="application/pdf"
+                aria-label={record.title + " PDF preview"}
+              >
+                <p>
+                  Your browser cannot display this PDF inline.{" "}
+                  <a href={file}>Open the PDF</a> or use the download button
+                  above.
+                </p>
+              </object>
+              <p>
+                On a small screen, open the full-size document or download it
+                for your reader.
+              </p>
+            </section>
+          )}
+          <LessonVideos lessonId={record.id} />
+          <nav className="native-related" aria-label="Related resources">
+            <h2>Continue studying</h2>
+            <ul>
+              {related.map((r) => (
+                <li key={r.id}>
+                  <Link href={"/library/" + r.id}>{r.title}</Link>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href={node ? "/topics/" + node.id : "/subjects/" + record.subject}
+            >
+              Back to topic →
+            </Link>
+          </nav>
+        </>
+      )}
+    </article>
   );
 }

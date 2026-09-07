@@ -1,32 +1,15 @@
 import { test, expect } from "@playwright/test";
-
-test("authored guides connect reading, questions and exact Dropbox files", async ({ page }, info) => {
-  await page.goto("/subjects/genetics");
-  const guides = page.locator("#authored-guides");
-  await expect(guides.locator(".authored-card")).toHaveCount(5);
-  await expect(guides.getByText(/require an account with access/)).toBeVisible();
-  await guides.getByLabel("Search these guides").fill("epigenetics");
-  await expect(guides.locator(".authored-card")).toHaveCount(1);
-  await guides.getByText("Explore topics in this guide").click();
-  await expect(guides.getByText("Epigenetics", { exact: true })).toBeVisible();
-  await expect(guides.getByRole("link", { name: /Open integrated guide/ })).toHaveAttribute("href", /Question_Runons_Repaired_Zight_Video_Verified_2026-07-30\.docx\?context=standalone_preview&role=personal$/);
-  await guides.getByLabel("Search these guides").fill("");
-  await guides.getByLabel("Study activity").selectOption("practice");
-  await expect(guides.locator(".authored-card")).toHaveCount(2);
-  await expect(guides.getByRole("link", { name: /Open 200-question PDF/ })).toHaveAttribute("target", "_blank");
-  await expect(guides.getByRole("link", { name: /Open separate answer key/ })).toHaveAttribute("href", /Answer_Key_Rev02_2026-08-23\.md\?/);
-  await guides.getByLabel("Search these guides").fill("unknown-topic-000");
-  await expect(guides.getByRole("heading", { name: "No study guides match these filters." })).toBeVisible();
-  await guides.getByRole("button", { name: "Show all study guides" }).click();
-  await expect(guides.locator(".authored-card")).toHaveCount(5);
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await guides.scrollIntoViewIfNeeded();
-  await page.screenshot({ path: info.outputPath("authored-study-guides.png") });
-  await guides.getByRole("link", { name: "Inheritance and pedigrees →", exact: true }).first().click();
-  await expect(page).toHaveURL(/\/library\/inheritance$/);
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("Inheritance");
-  await page.goto("/subjects/immunology");
-  await expect(page.locator("#authored-guides .authored-card")).toHaveCount(5);
-  await page.locator("#archive-directory:visible > summary").click();
-  await expect(page.locator("#dropbox-directory:visible")).toBeVisible();
+test("genetics and immunology browse released resources without private guide links", async ({
+  page,
+}) => {
+  for (const subject of ["genetics", "immunology"]) {
+    await page.goto("/subjects/" + subject);
+    await expect(page.locator('a[href*="dropbox"]')).toHaveCount(0);
+    await expect(page.locator(".resource-card").first()).toBeVisible();
+  }
+  await page.goto("/videos");
+  await expect(
+    page.getByRole("heading", { name: "Video library", exact: true }),
+  ).toBeVisible();
+  await expect(page.getByText(/No videos have been released/)).toBeVisible();
 });

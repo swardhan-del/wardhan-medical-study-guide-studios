@@ -21,9 +21,7 @@ export const formatLabels: Record<CatalogRecord["format"], string> = {
   PPTX: "PPTX",
 };
 export function resourceHref(record: CatalogRecord, basePath = "/library") {
-  return record.status === "public" && record.href
-    ? record.href
-    : `${basePath}/${record.id}`;
+  return `${basePath}/${record.id}`;
 }
 export function formatBytes(bytes: number) {
   if (bytes < 1024 * 1024) return `${Math.max(1, Math.round(bytes / 1024))} KB`;

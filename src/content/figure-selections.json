@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "figures": [
+    {
+      "id": "thoracic-plane",
+      "title": "The transverse thoracic plane",
+      "sourceAsset": "images/anatomy/mediastinal-plane.svg",
+      "kind": "diagram",
+      "alt": "Orientation diagram aligning the sternal angle with the T4-T5 intervertebral disc; superior mediastinum is above the line and inferior mediastinum below.",
+      "caption": "The sternal angle and T4-T5 disc mark one dividing plane. Orientation schematic only; organ positions and inferior subdivisions are not shown. Not to scale.",
+      "rights": "Original website teaching schematic",
+      "evidence": "docs/STUDENT_AUDIT_IMPLEMENTATION_2026-09-07.md",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK459336/",
+      "subjectIds": [
+        "anatomy"
+      ],
+      "topicIds": [
+        "anatomy-regions",
+        "topic-anatomy-thorax"
+      ],
+      "resourceIds": [
+        "anatomy-thorax"
+      ]
+    },
+    {
+      "id": "abdominal-regions",
+      "title": "Nine abdominal regions",
+      "sourceAsset": "images/anatomy/volume-2.png",
+      "kind": "diagram",
+      "alt": "Three-by-three abdominal region grid: right hypochondriac, epigastric, left hypochondriac; right lumbar, umbilical, left lumbar; right inguinal, hypogastric, left inguinal.",
+      "caption": "Read right and left from the patient’s perspective. This recall schematic names the nine regions; it does not show organ boundaries or diagnostic findings.",
+      "rights": "Original volume schematic; previously released website copy",
+      "evidence": "docs/ANATOMY_PREVIEWS.md",
+      "sourceUrl": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
+      "subjectIds": [
+        "anatomy"
+      ],
+      "topicIds": [
+        "anatomy-regions",
+        "topic-anatomy-abdomen"
+      ],
+      "resourceIds": [
+        "anatomy-abdomen"
+      ]
+    },
+    {
+      "id": "cuboidal-section",
+      "title": "Simple cuboidal epithelium",
+      "sourceAsset": "images/histology/micrograph-a.jpg",
+      "kind": "micrograph",
+      "alt": "Pink kidney tissue with open tubular profiles encircled by cuboidal cells and rounded purple nuclei.",
+      "caption": "Kidney tubule section, identified by the source as simple cuboidal epithelium at 200×. Follow the lining around a lumen. Screen size is not a calibrated scale; this view alone does not establish a specific nephron segment.",
+      "rights": "Berkshire Community College Bioscience Image Library; CC0 1.0",
+      "evidence": "src/content/visual-sources.json",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(39914418360).jpg",
+      "subjectIds": [
+        "histology",
+        "histology-i"
+      ],
+      "topicIds": [
+        "histology-basic-tissues",
+        "histology-i-histology-basic-tissues",
+        "topic-epithelia",
+        "topic-microscopy",
+        "topic-renal-histology"
+      ],
+      "resourceIds": [
+        "epithelia",
+        "microscopy",
+        "renal-histology"
+      ]
+    },
+    {
+      "id": "squamous-section",
+      "title": "Stratified squamous epithelium",
+      "sourceAsset": "images/histology/micrograph-b.jpg",
+      "kind": "micrograph",
+      "alt": "A thick epithelial lining curves around a pale lumen, with multiple cell layers and flattened cells at the free surface.",
+      "caption": "Source-identified stratified squamous epithelium at 100×. Compare the multiple layers and superficial cell shape with the cuboidal section. The two images have different source magnifications; displayed sizes are not directly comparable.",
+      "rights": "Berkshire Community College Bioscience Image Library; CC0 1.0",
+      "evidence": "src/content/visual-sources.json",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Stratified_Squamous_Epithelium_(40230837610).jpg",
+      "subjectIds": [],
+      "topicIds": [
+        "histology-basic-tissues",
+        "histology-i-histology-basic-tissues",
+        "topic-epithelia"
+      ],
+      "resourceIds": [
+        "epithelia"
+      ]
+    }
+  ]
+}

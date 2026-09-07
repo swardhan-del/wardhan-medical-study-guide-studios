@@ -1,3 +1,4 @@
+import { librarySubjects, subjectRecords } from "@/lib/taxonomy";
 import Link from "next/link";
 import { subjectInterests } from "@/content/subjects";
 import { CatalogBrowser } from "@/components/catalog-browser";
@@ -30,10 +31,22 @@ export default async function LibraryPage({
           source-based lesson, test a concept, or save your next study session.
         </p>
       </header>
-      <p className="library-guide-link">
-        Looking for the original printable guides?{" "}
-        <Link className="text-link" href="/subjects/genetics#authored-guides">Open genetics & immunology study guides →</Link>
-        {" · "}<Link className="text-link" href="/subjects/histology#authored-guides">Open microscopic anatomy & histology guides →</Link>
+      <nav
+        className="library-subjects"
+        aria-label="Explore subjects and topics"
+      >
+        {librarySubjects
+          .filter((s) => subjectRecords(s.id).length > 0)
+          .map((s) => (
+            <Link key={s.id} href={"/subjects/" + s.id}>
+              {s.title}
+            </Link>
+          ))}
+      </nav>
+      <p>
+        <Link className="text-link" href="/videos">
+          Browse the video library →
+        </Link>
       </p>
       <CatalogBrowser
         key={`${subject}:${query}`}

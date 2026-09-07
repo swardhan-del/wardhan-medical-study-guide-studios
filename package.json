@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "prebuild": "node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs",
-    "content:check": "node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs",
+    "prebuild": "node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs",
+    "content:check": "node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs",
     "content:library": "node scripts/build-library-catalog.mjs",
     "content:import": "node scripts/import-curation.mjs",
     "review": "node scripts/local-review.mjs",
@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit",
     "test:e2e": "playwright test",
     "postbuild": "node scripts/check-build.mjs",
-    "content:directory": "node scripts/generate-subject-directory.mjs"
+    "content:directory": "node scripts/check-subject-directory.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

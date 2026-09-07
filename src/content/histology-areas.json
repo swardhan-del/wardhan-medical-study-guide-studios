@@ -10,193 +10,56 @@
         "connective-tissue",
         "muscle-histology"
       ],
-      "sources": [
-        {
-          "label": "Microscopy and methods",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Course_Roadmap_Histological_Methods_and_Microscopy"
-        },
-        {
-          "label": "Epithelia and glands",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/02_Epithelial_Tissues_Glands_and_Cell_Junctions"
-        },
-        {
-          "label": "Connective tissue, cartilage and bone",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/03_Connective_Tissue_Adipose_Cartilage_and_Bone"
-        },
-        {
-          "label": "Muscle tissue",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/05_Muscle_Tissue_Skeletal_Cardiac_and_Smooth"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "blood-lymphoid",
       "title": "Blood, vessels and lymphoid organs",
       "description": "Compare blood-cell lineages, bone marrow and vessel walls, then identify the organization of lymph node, spleen and thymus. Relate each tissue’s arrangement to its role in circulation or immune-cell organization.",
-      "lessons": [
-        "blood-marrow",
-        "vessel-histology",
-        "lymphoid-organs"
-      ],
-      "sources": [
-        {
-          "label": "Blood, marrow and lymphoid tissues",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/04_Blood_Bone_Marrow_Hematopoiesis_and_Lymphoid_Tissues"
-        },
-        {
-          "label": "Blood-vessel slide atlas",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Original_Histology_Slide_Atlas/01_PART_II_Foundations_and_Basic_Tissues/07_Blood_Vessels_and_Circulatory_Histology"
-        }
-      ]
+      "lessons": ["blood-marrow", "vessel-histology", "lymphoid-organs"],
+      "sources": []
     },
     {
       "id": "respiratory-urinary",
       "title": "Respiratory and urinary systems",
       "description": "Follow the changing architecture from conducting airways to alveoli, and from renal corpuscles and tubules to ureter and bladder. Practice recognizing lining epithelia, supporting tissue and exchange surfaces.",
-      "lessons": [
-        "respiratory-histology",
-        "renal-histology"
-      ],
-      "sources": [
-        {
-          "label": "Trachea, bronchi and bronchioles",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Original_Histology_Slide_Atlas/02_Trachea_Bronchi_and_Bronchioles"
-        },
-        {
-          "label": "Lung and alveoli",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Original_Histology_Slide_Atlas/03_Lung_and_Alveoli"
-        },
-        {
-          "label": "Kidney slide atlas",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Original_Histology_Slide_Atlas/01_Kidney"
-        },
-        {
-          "label": "Ureter and bladder",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Original_Histology_Slide_Atlas/02_Ureter_and_Urinary_Bladder"
-        }
-      ]
+      "lessons": ["respiratory-histology", "renal-histology"],
+      "sources": []
     },
     {
       "id": "digestive",
       "title": "Oral cavity and digestive organs",
       "description": "Use the layers of the gut wall as an organizing pattern. Compare oral and dental structures, salivary glands, esophagus, stomach, intestines, liver, gallbladder and pancreas through their distinctive glands, ducts and tissue arrangements.",
-      "lessons": [
-        "gi-histology",
-        "liver-pancreas"
-      ],
-      "sources": [
-        {
-          "label": "Oral cavity, teeth and salivary glands",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/08_Oral_Cavity_Tongue_Teeth_Salivary_Glands_and_Esophagus"
-        },
-        {
-          "label": "Stomach, intestines, liver and pancreas",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/09_Stomach_Intestines_Liver_Gallbladder_and_Pancreas"
-        }
-      ]
+      "lessons": ["gi-histology", "liver-pancreas"],
+      "sources": []
     },
     {
       "id": "reproduction-development",
       "title": "Reproduction and early development",
       "description": "Connect male and female reproductive histology with gamete production, cyclic tissue changes, implantation and placental organization. Follow developmental stages alongside the structures seen in mature tissue sections.",
-      "lessons": [
-        "reproductive-histology",
-        "placenta"
-      ],
-      "sources": [
-        {
-          "label": "Reproductive histology and early embryology",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Original_Histology_Slide_Atlas/07_PART_VII_Reproductive_Histology_and_Early_Embryology"
-        },
-        {
-          "label": "Placenta and mammary gland",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/01_Original_Histology_Slide_Atlas/07_PART_VII_Reproductive_Histology_and_Early_Embryology/03_Placenta_and_Mammary_Gland"
-        }
-      ]
+      "lessons": ["reproductive-histology", "placenta"],
+      "sources": []
     },
     {
       "id": "neurodevelopment",
       "title": "Nervous tissue and neurodevelopment",
       "description": "Study neurons, glia and nervous-system organization together with neurulation, brain-vesicle development, neural crest and placodes. Link developmental origins to the later arrangement of the brain, spinal cord and peripheral structures.",
-      "lessons": [
-        "neurulation"
-      ],
-      "sources": [
-        {
-          "label": "Nervous tissue and CNS microscopy",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/13_Nervous_Tissue_Neurodevelopment_CNS_Histology_and_Higher_CNS_Microscopy"
-        },
-        {
-          "label": "Neurulation and neural tube",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/12_Neurulation_and_Neural_Tube"
-        },
-        {
-          "label": "Brain vesicles",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/13_Development_of_Brain_Vesicles"
-        },
-        {
-          "label": "Neural crest and placodes",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/14_Neural_Crest_and_Placodes"
-        }
-      ]
+      "lessons": ["neurulation"],
+      "sources": []
     },
     {
       "id": "reflexes-endocrine",
       "title": "Spinal cord, reflexes and endocrine connections",
       "description": "Trace sensory input, central connections and motor or autonomic output. Use the spinal-cord and reflex collections alongside the selected endocrine guide to relate pathways, nuclei and glandular organization.",
       "lessons": [],
-      "sources": [
-        {
-          "label": "Spinal-cord fine structure",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/20_Fine_Structure_of_Spinal_Cord"
-        },
-        {
-          "label": "Proprioceptive reflexes",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/21_Proprioceptive_Reflexes"
-        },
-        {
-          "label": "Nociceptive reflexes",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/22_Nociceptive_Reflexes"
-        },
-        {
-          "label": "Autonomic reflexes",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/23_Autonomic_Reflexes"
-        }
-      ]
+      "sources": []
     },
     {
       "id": "special-senses",
       "title": "Special senses, skin and practical recognition",
       "description": "Explore eye and ear development, auditory and vestibular structures, olfaction and taste. Extend the same structure–function approach to skin and maxillofacial topics, then use the practical collection for slide descriptions and drawing practice.",
-      "lessons": [
-        "microscopy"
-      ],
-      "sources": [
-        {
-          "label": "Eye and ear development",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/15_Development_of_Eye_and_Ear"
-        },
-        {
-          "label": "Auditory and vestibular systems",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/17_Ear_Auditory_Vestibular_and_Ear_Development"
-        },
-        {
-          "label": "Olfaction",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/59_Olfactory_Organ_and_Pathway"
-        },
-        {
-          "label": "Taste",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/60_Taste_Organ_and_Central_Processing"
-        },
-        {
-          "label": "Skin and maxillofacial topics",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/19_Skin_Maxillofacial_and_Remaining_EMII_Topics"
-        },
-        {
-          "label": "Practical atlas, oral review and drawing bank",
-          "url": "https://www.dropbox.com/home/study%20guide/08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology/20_Integrated_Practical_Slide_Atlas_Oral_Exam_Review_and_Drawing_Bank"
-        }
-      ]
+      "lessons": ["microscopy"],
+      "sources": []
     }
   ]
 }

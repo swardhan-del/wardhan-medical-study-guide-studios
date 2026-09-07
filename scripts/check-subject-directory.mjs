@@ -1,23 +1,9 @@
-import fs from "node:fs";
-import assert from "node:assert/strict";
-import { validateDirectory } from "./directory-schema.mjs";
-const data = validateDirectory(
-  JSON.parse(
-    fs.readFileSync(
-      new URL("../src/content/subject-directory.json", import.meta.url),
-    ),
-  ),
+import { readFileSync } from "node:fs";
+import { validateTaxonomy } from "./taxonomy-schema.mjs";
+const read = (p) =>
+  JSON.parse(readFileSync(new URL(p, import.meta.url), "utf8"));
+validateTaxonomy(
+  read("../src/content/library-taxonomy.json"),
+  read("../src/content/public-catalog.json"),
 );
-const routes = JSON.parse(
-  fs.readFileSync(
-    new URL("../src/content/directory-routes.json", import.meta.url),
-  ),
-);
-assert.deepEqual(
-  routes,
-  data.subjects.map((s) => s.id),
-  "Directory route guard is stale; regenerate the directory.",
-);
-console.log(
-  `Directory checks passed: ${data.subjects.length} subject views and ${data.entries.length} verified-path links.`,
-);
+console.log("Native taxonomy checks passed.");
