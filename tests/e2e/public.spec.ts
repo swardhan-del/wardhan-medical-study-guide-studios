@@ -155,7 +155,7 @@ test("reading list clearing is deliberate and persists after reload", async ({
   );
   await page.reload();
   await page
-    .getByRole("button", { name: "Clear reading list", exact: true })
+    .getByRole("button", { name: "Clear saved resources", exact: true })
     .click();
   await page.getByRole("button", { name: "Keep list" }).click();
   expect(
@@ -164,7 +164,7 @@ test("reading list clearing is deliberate and persists after reload", async ({
     ),
   ).toEqual(["a-saved-resource"]);
   await page
-    .getByRole("button", { name: "Clear reading list", exact: true })
+    .getByRole("button", { name: "Clear saved resources", exact: true })
     .click();
   await page.getByRole("button", { name: "Yes, clear list" }).click();
   await page.reload();

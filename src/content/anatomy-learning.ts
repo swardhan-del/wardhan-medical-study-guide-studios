@@ -22,7 +22,7 @@ export const anatomyLearningPages: AnatomyLearningPage[] = [
     slug: "regional-anatomy", title: "Regional anatomy",
     description: "Connect the body’s regions through landmarks, boundaries and the structures that travel between them.",
     introduction: "Choose a region to see how its anatomy fits together. Each study note points to the relevant volume, and the related pages let you continue into more detail.",
-    image: { src: "/images/anatomy/volume-5.png", alt: "Hip bones and landmarks shown from several anatomical views.", caption: "Hip bones and landmarks · STEM Visualizer collection" },
+    image: { src: "/images/anatomy/volume-5.png", alt: "Hip bones and landmarks shown from several anatomical views.", caption: "Compare hip-bone landmarks across several anatomical views." },
     sources: [volumeI, volumeII, volumeIII, volumeV],
     lessons: [
       { id: "chest", title: "Thorax", activity: "thorax", explanation: "Build a three-dimensional understanding of the chest: its protective wall, two pleural sacs, central mediastinum and muscular diaphragm. Explore their locations, connect structure with breathing, then test what you understand through image identification, twelve explained questions and four short-answer challenges.",

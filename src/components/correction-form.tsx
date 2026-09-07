@@ -43,7 +43,7 @@ export function CorrectionForm({
             setSection(e.target.value);
             setDraft("");
           }}
-          placeholder="For example: Renal clearance, question 2"
+          placeholder="Clearance, question 2"
         />
       </label>
       <label>

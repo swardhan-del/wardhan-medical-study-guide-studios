@@ -138,6 +138,9 @@
   align-self: start;
   padding-top: 3px;
 }
+.course-lessons .lesson-number {
+  opacity: 1;
+}
 .lesson-layout {
   display: grid;
   grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.7fr);
@@ -3853,3 +3856,7 @@ select:focus-visible {
 .study-hero h1, .interior-hero h1, .library-heading h1 { text-wrap: balance; }
 .resource-bottom { flex-wrap: wrap; }
 .save-button { white-space: normal; text-align: center; }
+
+.section-heading + .learning-collection {
+  margin-top: 2rem;
+}

@@ -85,7 +85,7 @@ export default function MusculoskeletalPage() {
       <section id="sources" className="msk-section" aria-labelledby="sources-title">
         <p className="eyebrow">The material behind this study map</p>
         <h2 id="sources-title">Source guides & teaching decks</h2>
-        <p>These notes identify the editions, chapters and slides used for this preview. The full books and teaching decks are being prepared for release; this page provides study summaries and references.</p>
+        <p>These notes identify the editions, chapters and slides used for these study summaries. The full books and teaching decks are not available for download here.</p>
         <div className="msk-topic-grid">
           {musculoskeletalSources.map((source) => (
             <article className="msk-topic msk-source" id={`source-${source.id}`} key={source.id}>
