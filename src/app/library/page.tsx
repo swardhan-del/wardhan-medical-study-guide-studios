@@ -30,6 +30,10 @@ export default async function LibraryPage({
           source-based lesson, test a concept, or save your next study session.
         </p>
       </header>
+      <p className="library-guide-link">
+        Looking for the original printable guides?{" "}
+        <Link className="text-link" href="/subjects/genetics#authored-guides">Open genetics & immunology study guides →</Link>
+      </p>
       <CatalogBrowser
         key={`${subject}:${query}`}
         records={publicCatalog}

@@ -8,6 +8,7 @@ import { AnatomyVolumes } from "@/components/anatomy-volumes";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 import { SubjectDirectory } from "@/components/subject-directory";
 import { directorySubjects } from "@/lib/subject-directory";
+import { AuthoredGuides } from "@/components/authored-guides";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
   return [
@@ -45,6 +46,9 @@ export default async function SubjectPage({ params }: Props) {
         <h1>{title}</h1>
         <p className="interior-lede">{description}</p>
         <p>
+          {(slug === "genetics" || slug === "immunology") && (
+            <><a className="text-link" href="#authored-guides">Open selected study guides ↓</a>{" · "}</>
+          )}
           <a className="text-link" href="#dropbox-directory">
             Browse Dropbox guides & subtopics ↓
           </a>
@@ -84,6 +88,7 @@ export default async function SubjectPage({ params }: Props) {
           </Link>
         </nav>
       )}
+      {(slug === "genetics" || slug === "immunology") && <AuthoredGuides />}
       <SubjectDirectory id={slug} />
       {learningId && (
         <section
