@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       process.env.VERCEL_ENV === "production" ? "1" : "0",
   },
   poweredByHeader: false,
-  outputFileTracingExcludes: { "/*": ["./.private/**/*"] },
+  outputFileTracingExcludes: { "/*": ["./.private/**/*", "./.private/catalog.json"] },
   async redirects() {
     return [{ source: "/images/anatomy/volume-1.png", destination: "/images/anatomy/mediastinal-plane.svg", permanent: true }];
   },

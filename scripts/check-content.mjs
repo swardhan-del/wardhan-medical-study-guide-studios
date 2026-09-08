@@ -38,8 +38,10 @@ for (const asset of learningAssets) {
 if (
   entries.some(
     (name) =>
-      /\.(pdf|docx|pptx|xlsx|zip)$/i.test(String(name)) &&
-      !learningAssets.some((asset) => asset.path === String(name)),
+      /\.(pdf|docx|pptx|xlsx|zip)$/i.test(String(name).replaceAll("\\", "/")) &&
+      !learningAssets.some(
+        (asset) => asset.path === String(name).replaceAll("\\", "/"),
+      ),
   )
 )
   throw new Error(

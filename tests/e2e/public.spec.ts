@@ -155,7 +155,7 @@ test("reading list clearing is deliberate and persists after reload", async ({
   );
   await page.reload();
   await page
-    .getByRole("button", { name: "Clear reading list", exact: true })
+    .getByRole("button", { name: "Clear saved resources", exact: true })
     .click();
   await page.getByRole("button", { name: "Keep list" }).click();
   expect(
@@ -164,7 +164,7 @@ test("reading list clearing is deliberate and persists after reload", async ({
     ),
   ).toEqual(["a-saved-resource"]);
   await page
-    .getByRole("button", { name: "Clear reading list", exact: true })
+    .getByRole("button", { name: "Clear saved resources", exact: true })
     .click();
   await page.getByRole("button", { name: "Yes, clear list" }).click();
   await page.reload();
@@ -217,7 +217,7 @@ test("challenge saves mistakes, produces a next step and supports review after r
 }, testInfo) => {
   await page.goto("/");
   await page
-    .getByRole("link", { name: /Try a five-minute renal challenge/ })
+    .getByRole("link", { name: /Try the renal challenge/ })
     .click();
   const quiz = page.getByRole("region", {
     name: "Your five-minute renal challenge",
@@ -242,7 +242,7 @@ test("challenge saves mistakes, produces a next step and supports review after r
   await expect(
     quiz.getByRole("heading", { name: "Here is your next step." }),
   ).toBeVisible();
-  await quiz.getByRole("link", { name: "My study dashboard" }).click();
+  await quiz.getByRole("link", { name: "My Study" }).click();
   await expect(
     page.getByRole("button", { name: "Review my mistakes (5)" }),
   ).toBeEnabled();
@@ -333,7 +333,7 @@ test("oral rubrics, histology clues and exam planning are usable", async ({
     page.getByText("1 of 4 points self-assessed.", { exact: false }),
   ).toBeVisible();
   await page
-    .getByRole("button", { name: "Save that I practiced this topic" })
+    .getByRole("button", { name: "Save that I practised this topic" })
     .click();
   await page.reload();
   await expect(page.getByRole("textbox", { name: "My answer" })).toHaveValue(/Blood enters the afferent/);
@@ -413,10 +413,10 @@ test("library filters expose useful resources in every subject and retain direct
   );
   await page.goto("/subjects/histology");
   await page
-    .getByRole("link", { name: "Integrated embryology", exact: true })
+    .getByRole("heading", { name: "Reproductive histology and embryology", exact: true }).getByRole("link")
     .click();
-  await expect(page).toHaveURL(/subject=histology&q=Integrated%20embryology/);
-  await expect(page.locator(".resource-card")).toHaveCount(3);
+  await expect(page).toHaveURL(/topics\/histology-development$/);
+  await expect(page.locator(".catalog-browser .resource-card")).toHaveCount(3);
 });
 
 test("catalog format, empty search and pagination remain usable", async ({
@@ -435,7 +435,7 @@ test("catalog format, empty search and pagination remain usable", async ({
       name: "Renal physiology revision sheet",
       exact: true,
     }),
-  ).toHaveAttribute("href", "/downloads/renal-revision-sheet.pdf");
+  ).toHaveAttribute("href", "/library/renal-revision-sheet");
   await page.getByRole("searchbox").fill("nonsense-unmatched");
   await expect(
     page.getByRole("heading", { name: "No matching resources." }),
@@ -480,7 +480,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   await expect(
     page.getByText(/Alveoli need a short diffusion distance/),
   ).toBeVisible();
-  await page.getByRole("button", { name: /Save Epithelia:/ }).click();
+  await page.getByRole("button", { name: /Save to My Study: Epithelia:/ }).click();
   await page.goto("/reading-list");
   await expect(page).toHaveURL(/\/study#saved-learning$/);
   await expect(
@@ -530,7 +530,7 @@ test("cross-subject lessons render sources and fit the viewport", async ({
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).toContain("/library/placenta");
   expect(sitemap).toContain("/library/pcr");
-  expect(sitemap).not.toContain("/library/renal-kidney-map");
+  expect(sitemap).toContain("/library/renal-kidney-map");
   await page.goto("/library?subject=histology");
   await page.screenshot({
     path: testInfo.outputPath("histology-library.png"),

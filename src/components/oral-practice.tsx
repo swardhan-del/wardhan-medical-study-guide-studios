@@ -50,7 +50,7 @@ function OralPrompt({ lesson }: { lesson: RenalLesson }) {
             >
               {data.oral.includes(lesson.slug)
                 ? "Self-assessment saved"
-                : "Save that I practiced this topic"}
+                : "Save that I practised this topic"}
             </button>
             <Link className="text-link" href={renalLessonHref(lesson.slug)}>
               Revisit the explanation →

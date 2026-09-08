@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "figures": [
+    {
+      "id": "thoracic-plane",
+      "title": "The transverse thoracic plane",
+      "sourceAsset": "images/anatomy/mediastinal-plane.svg",
+      "kind": "diagram",
+      "alt": "Orientation diagram aligning the sternal angle with the T4-T5 intervertebral disc; superior mediastinum is above the line and inferior mediastinum below.",
+      "caption": "The sternal angle and T4-T5 disc mark one dividing plane. Orientation schematic only; organ positions and inferior subdivisions are not shown. Not to scale.",
+      "rights": "Original website teaching schematic",
+      "evidence": "docs/STUDENT_AUDIT_IMPLEMENTATION_2026-09-07.md",
+      "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK459336/",
+      "subjectIds": [
+        "anatomy"
+      ],
+      "topicIds": [
+        "anatomy-regions",
+        "topic-anatomy-thorax"
+      ],
+      "resourceIds": [
+        "anatomy-thorax"
+      ],
+      "width": 900,
+      "height": 760,
+      "src": "/images/figures/thoracic-plane-900.webp",
+      "variants": [
+        {
+          "src": "/images/figures/thoracic-plane-320.webp",
+          "width": 320,
+          "height": 270,
+          "bytes": 12094
+        },
+        {
+          "src": "/images/figures/thoracic-plane-640.webp",
+          "width": 640,
+          "height": 540,
+          "bytes": 25558
+        },
+        {
+          "src": "/images/figures/thoracic-plane-900.webp",
+          "width": 900,
+          "height": 760,
+          "bytes": 33088
+        }
+      ],
+      "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+    },
+    {
+      "id": "abdominal-regions",
+      "title": "Nine abdominal regions",
+      "sourceAsset": "images/anatomy/volume-2.png",
+      "kind": "diagram",
+      "alt": "Three-by-three abdominal region grid: right hypochondriac, epigastric, left hypochondriac; right lumbar, umbilical, left lumbar; right inguinal, hypogastric, left inguinal.",
+      "caption": "Read right and left from the patient’s perspective. This recall schematic names the nine regions; it does not show organ boundaries or diagnostic findings.",
+      "rights": "Original volume schematic; previously released website copy",
+      "evidence": "docs/ANATOMY_PREVIEWS.md",
+      "sourceUrl": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
+      "subjectIds": [
+        "anatomy"
+      ],
+      "topicIds": [
+        "anatomy-regions",
+        "topic-anatomy-abdomen"
+      ],
+      "resourceIds": [
+        "anatomy-abdomen"
+      ],
+      "width": 1600,
+      "height": 980,
+      "src": "/images/figures/abdominal-regions-1600.webp",
+      "variants": [
+        {
+          "src": "/images/figures/abdominal-regions-320.webp",
+          "width": 320,
+          "height": 196,
+          "bytes": 13936
+        },
+        {
+          "src": "/images/figures/abdominal-regions-640.webp",
+          "width": 640,
+          "height": 392,
+          "bytes": 31494
+        },
+        {
+          "src": "/images/figures/abdominal-regions-1280.webp",
+          "width": 1280,
+          "height": 784,
+          "bytes": 75224
+        },
+        {
+          "src": "/images/figures/abdominal-regions-1600.webp",
+          "width": 1600,
+          "height": 980,
+          "bytes": 18174
+        }
+      ],
+      "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+    },
+    {
+      "id": "cuboidal-section",
+      "title": "Simple cuboidal epithelium",
+      "sourceAsset": "images/histology/micrograph-a.jpg",
+      "kind": "micrograph",
+      "alt": "Pink kidney tissue with open tubular profiles encircled by cuboidal cells and rounded purple nuclei.",
+      "caption": "Kidney tubule section, identified by the source as simple cuboidal epithelium at 200×. Follow the lining around a lumen. Screen size is not a calibrated scale; this view alone does not establish a specific nephron segment.",
+      "rights": "Berkshire Community College Bioscience Image Library; CC0 1.0",
+      "evidence": "src/content/visual-sources.json",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(39914418360).jpg",
+      "subjectIds": [
+        "histology",
+        "histology-i"
+      ],
+      "topicIds": [
+        "histology-basic-tissues",
+        "histology-i-histology-basic-tissues",
+        "topic-epithelia",
+        "topic-microscopy",
+        "topic-renal-histology"
+      ],
+      "resourceIds": [
+        "epithelia",
+        "microscopy",
+        "renal-histology"
+      ],
+      "width": 3264,
+      "height": 1840,
+      "src": "/images/figures/cuboidal-section-3264.webp",
+      "variants": [
+        {
+          "src": "/images/figures/cuboidal-section-320.webp",
+          "width": 320,
+          "height": 180,
+          "bytes": 36154
+        },
+        {
+          "src": "/images/figures/cuboidal-section-640.webp",
+          "width": 640,
+          "height": 361,
+          "bytes": 124330
+        },
+        {
+          "src": "/images/figures/cuboidal-section-1280.webp",
+          "width": 1280,
+          "height": 722,
+          "bytes": 421918
+        },
+        {
+          "src": "/images/figures/cuboidal-section-3264.webp",
+          "width": 3264,
+          "height": 1840,
+          "bytes": 1381764
+        }
+      ],
+      "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+    },
+    {
+      "id": "squamous-section",
+      "title": "Stratified squamous epithelium",
+      "sourceAsset": "images/histology/micrograph-b.jpg",
+      "kind": "micrograph",
+      "alt": "A thick epithelial lining curves around a pale lumen, with multiple cell layers and flattened cells at the free surface.",
+      "caption": "Source-identified stratified squamous epithelium at 100×. Compare the multiple layers and superficial cell shape with the cuboidal section. The two images have different source magnifications; displayed sizes are not directly comparable.",
+      "rights": "Berkshire Community College Bioscience Image Library; CC0 1.0",
+      "evidence": "src/content/visual-sources.json",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Stratified_Squamous_Epithelium_(40230837610).jpg",
+      "subjectIds": [],
+      "topicIds": [
+        "histology-basic-tissues",
+        "histology-i-histology-basic-tissues",
+        "topic-epithelia"
+      ],
+      "resourceIds": [
+        "epithelia"
+      ],
+      "width": 3264,
+      "height": 1840,
+      "src": "/images/figures/squamous-section-3264.webp",
+      "variants": [
+        {
+          "src": "/images/figures/squamous-section-320.webp",
+          "width": 320,
+          "height": 180,
+          "bytes": 26982
+        },
+        {
+          "src": "/images/figures/squamous-section-640.webp",
+          "width": 640,
+          "height": 361,
+          "bytes": 97638
+        },
+        {
+          "src": "/images/figures/squamous-section-1280.webp",
+          "width": 1280,
+          "height": 722,
+          "bytes": 356222
+        },
+        {
+          "src": "/images/figures/squamous-section-3264.webp",
+          "width": 3264,
+          "height": 1840,
+          "bytes": 1227818
+        }
+      ],
+      "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+    }
+  ]
+}

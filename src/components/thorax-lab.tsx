@@ -51,7 +51,7 @@ function ThoraxQuestions({ answers, onAnswer, onReset }: Props) {
         <button type="submit" className="button button-primary" disabled={!response || response.checked}>Check thorax answer</button>
         <div className="quiz-feedback thorax-feedback" role="status" aria-live="polite">
           {response?.checked ? <>
-            <p><strong>{response.choice === question.answer ? "Correct." : "Keep practicing."} Correct answer: {question.options[question.answer]}.</strong> {question.explanations[question.answer]}</p>
+            <p><strong>{response.choice === question.answer ? "Correct." : "Keep practising."} Correct answer: {question.options[question.answer]}.</strong> {question.explanations[question.answer]}</p>
             <h5>Why the other answers do not fit</h5>
             <ul>{question.options.map((option, optionIndex) => optionIndex === question.answer ? null : <li key={option}><strong>{option}:</strong> {question.explanations[optionIndex]}</li>)}</ul>
             <SourceLink source={question.source} />
@@ -70,7 +70,7 @@ function ThoraxQuestions({ answers, onAnswer, onReset }: Props) {
         })}
       </div>
       {checked.length === 12 ? <p className="thorax-complete">{correct === 12 ? "All twelve questions correct. Now explain a relationship in your own words below." : `You have checked all twelve questions. Review the ${missed.length} you missed, then try a short answer below.`}</p> : null}
-      <p className="thorax-small-note">Answers stay while you change topics on this page. Checked answers and written responses are saved in this browser and appear in My study. Reset starts a fresh round without deleting your history.</p>
+      <p className="thorax-small-note">Answers stay while you change topics on this page. Checked answers and written responses are saved in this browser and appear in My Study. Reset starts a fresh round without deleting your history.</p>
     </section>
   );
 }
@@ -113,7 +113,7 @@ export function ThoraxLab(props: Props) {
       <ThoraxRecall />
       <details className="thorax-references">
         <summary>Sources for this Thorax activity</summary>
-        <p>Original summaries and questions developed from your curated Volume I, with the references below used to check anatomical relationships. Source check: {practice.reviewedAt}. This is an educational practice activity.</p>
+        <p>Original summaries and questions developed from the Volume I anatomy study guide, with the references below used to check anatomical relationships. Source check: {practice.reviewedAt}. This is an educational practice activity.</p>
         <ul>{practice.sources.map((source) => <li key={source.id}><a href={source.url}>{source.title}</a>{"sections" in source ? <p>{source.sections}</p> : null}</li>)}</ul>
       </details>
     </div>

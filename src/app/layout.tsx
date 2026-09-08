@@ -6,7 +6,7 @@ import "./globals.css";
 
 const siteTitle = "Wardhan Medical Study Guide Studios";
 const siteDescription =
-  "Free renal physiology lessons, interactive models and explained quizzes. Build understanding, save your progress and review your mistakes.";
+  "Explore focused lessons, visual explanations, and practice questions across the medical sciences. Study a topic, check your understanding, and return to the concepts you want to strengthen.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
     url: "/",
-    locale: "en_US",
+    locale: "en_GB",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: `${siteTitle} — Helping students learn medical sciences.`,
+        alt: `${siteTitle} — Focused resources for learning medical sciences.`,
       },
     ],
   },
@@ -55,7 +55,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en-GB">
       <body>
         <SiteShell>{children}</SiteShell>
         <LearningAnalytics />

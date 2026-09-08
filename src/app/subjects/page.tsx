@@ -1,115 +1,62 @@
+import { FigureThumbnail } from "@/components/educational-figure";
+import { figureForSubject } from "@/lib/figures";
 import Link from "next/link";
-import { DirectoryBrowser } from "@/components/directory-browser";
 import {
-  directoryEntries,
-  directorySubjects,
-  directoryUpdatedAt,
-} from "@/lib/subject-directory";
-
+  librarySubjects,
+  taxonomyNodes,
+  recordsForNode,
+  subjectRecords,
+} from "@/lib/taxonomy";
+import { TopicSearch } from "@/components/topic-search";
 export const metadata = {
-  title: "Medical subject directory",
+  title: "Medical subjects",
   description:
-    "Browse medical subjects, subtopics, printable study-guide collections and their original Dropbox folders.",
+    "Browse medical subjects, systems, topics and available study resources.",
   alternates: { canonical: "/subjects" },
 };
-
 export default function SubjectsPage() {
-  const folders = directoryEntries.filter((e) => e.kind === "folder").length;
   return (
-    <div className="site-container directory-page">
+    <div className="site-container library-page">
       <header className="library-heading">
-        <p className="eyebrow">Medical subject directory</p>
-        <h1>Your subjects. Your guides. One directory.</h1>
+        <p className="eyebrow">Medical library</p>
+        <h1>Explore the medical sciences</h1>
         <p className="interior-lede">
-          Find a medical subject, follow its subtopics, and open the original
-          study-guide folders in Dropbox.
-        </p>
-        <div className="directory-stats">
-          <span>
-            <strong>{directorySubjects.length}</strong> subject views
-          </span>
-          <span>
-            <strong>{folders.toLocaleString("en-US")}</strong> folder links
-          </span>
-          <span>
-            <strong>{directoryEntries.length - folders}</strong> reference &
-            guide files
-          </span>
-        </div>
-        <p className="directory-access">
-          Dropbox links open in a new tab using your existing access. Sign in to
-          the Dropbox account that contains these folders.
+          Browse by subject and connect structure, function, development, and disease mechanisms as you study.
         </p>
       </header>
-      <DirectoryBrowser
-        entries={directoryEntries}
-        subjects={directorySubjects}
-        overview
-      />
       <section
-        className="directory-subjects"
-        aria-labelledby="directory-subjects-title"
+        aria-label="Browse by subject"
+        className="directory-subject-grid"
       >
-        <div className="directory-section-heading">
-          <h2 id="directory-subjects-title">Browse by subject</h2>
-          <Link className="text-link" href="/library">
-            Study the website lessons →
-          </Link>
-        </div>
-        <div className="directory-subject-grid">
-          {directorySubjects.map((subject, i) => {
-            const count = directoryEntries.filter((e) =>
-              e.subjects.includes(subject.id),
-            ).length;
-            return (
-              <article className="directory-subject-card" key={subject.id}>
-                <p className="eyebrow">
-                  {String(i + 1).padStart(2, "0")} · {count} directory links
-                </p>
-                <h3>
-                  <Link href={`/subjects/${subject.id}`}>{subject.title}</Link>
-                </h3>
-                <p>{subject.description}</p>
-                <Link
-                  className="text-link"
-                  href={`/subjects/${subject.id}`}
-                  aria-label={`Explore subject for ${subject.title}`}
-                >
-                  Browse subtopics →
-                </Link>
-                {subject.printableUrl && (
-                  <a
-                    className="directory-print-link"
-                    href={subject.printableUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Printable guide collection ↗
-                    <span className="sr-only">
-                      {" "}
-                      — {subject.title}, Dropbox, new tab
-                    </span>
-                  </a>
-                )}
-              </article>
-            );
-          })}
-        </div>
+        {librarySubjects.map((s) => (
+          <article className="directory-subject-card" key={s.id}>
+            <FigureThumbnail figure={figureForSubject(s.id)} />
+            <h2>
+              <Link href={"/subjects/" + s.id}>{s.title}</Link>
+            </h2>
+            <p>{s.description}</p>
+            <p>{subjectRecords(s.id).length} resources available</p>
+            <Link
+              className="text-link"
+              aria-label={"Explore subject for " + s.title}
+              href={"/subjects/" + s.id}
+            >
+              Browse subtopics →
+            </Link>
+          </article>
+        ))}
       </section>
-      <aside className="directory-note">
-        <h2>A map of the source library</h2>
-        <p>
-          The directory follows the medical folders and the curated concept
-          library. Shared collections appear in both relevant subjects. Expand
-          folders to see the hierarchy, or search for a concept across subjects.
-        </p>
-        <p>
-          Checked {directoryUpdatedAt}. Working files, rendering output,
-          duplicate quarantines and administrative records are excluded. Open
-          the original subject folder to inspect its complete contents and
-          versions.
-        </p>
-      </aside>
+      <h2 className="native-section-title">Find a topic across subjects</h2>
+      <TopicSearch
+        items={taxonomyNodes.map((n) => ({
+          id: n.id,
+          title: n.title,
+          subject: n.subject,
+          subjectTitle: librarySubjects.find((s) => s.id === n.subject)!.title,
+          kind: n.kind,
+          count: recordsForNode(n).length,
+        }))}
+      />
     </div>
   );
 }

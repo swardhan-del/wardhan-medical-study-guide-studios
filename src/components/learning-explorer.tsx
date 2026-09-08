@@ -26,7 +26,7 @@ export function LearningExplorer({ lessons, initialLessonId }: { lessons: StudyL
     <section id="explore" className="learning-explorer" aria-labelledby="explorer-title">
       <header className="explorer-heading">
         <div><p className="eyebrow">Explore & recall</p><h2 id="explorer-title">Choose a topic.</h2></div>
-        <p className="learning-progress" role="status" aria-live="polite">{correct} of {questions.length} answered correctly in this round · history saved in My study</p>
+        <p className="learning-progress" role="status" aria-live="polite">{correct} of {questions.length} answered correctly in this round · history saved in My Study</p>
       </header>
       <div className="explorer-layout">
         <div className="lesson-selector" role="group" aria-label="Choose a study topic">

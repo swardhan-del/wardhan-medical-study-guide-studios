@@ -43,7 +43,7 @@ export default function ChallengePage() {
       />
       <ShareChallenge />
       <p className="source-note">
-        Original questions adapted from the curated renal guide.{" "}
+        Original questions adapted from the renal study guide.{" "}
         <Link className="text-link" href="/learn/renal#sources">
           Authorship, sources and revision details →
         </Link>

@@ -11,8 +11,8 @@ export function CorrectionForm({
   const [section, setSection] = useState("");
   const [details, setDetails] = useState("");
   const [draft, setDraft] = useState("");
-  const title = `Study correction: ${lesson || "General feedback"}`;
-  const body = `Page: ${lesson || "Not specified"}\nSection: ${section}\n\nWhat needs changing:\n${details}\n`;
+  const title = `Study feedback: ${lesson || "General feedback"}`;
+  const body = `Page: ${lesson || "Not specified"}\nSection: ${section}\n\nFeedback or correction:\n${details}\n`;
   const href = email
     ? `mailto:${email}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`
     : `https://github.com/swardhan-del/wardhan-medical-study-guide-studios/issues/new?${new URLSearchParams({ title, body })}`;
@@ -26,15 +26,16 @@ export function CorrectionForm({
     >
       <p>
         {email
-          ? "Prepare an email to the studio."
+          ? "Create an email draft to review in your email application."
           : "Prepare a correction for our public GitHub issue tracker. A free GitHub account is needed to submit it."}{" "}
-        Do not include personal or patient information.
+        Please do not include patient information or other sensitive personal
+        details.
       </p>
       <p>
         <strong>Page:</strong> {lesson || "General feedback"}
       </p>
       <label>
-        Section or question
+        Page title, section or question
         <input
           maxLength={120}
           value={section}
@@ -42,11 +43,11 @@ export function CorrectionForm({
             setSection(e.target.value);
             setDraft("");
           }}
-          placeholder="For example: Two paths, one organ"
+          placeholder="Clearance, question 2"
         />
       </label>
       <label>
-        What should we correct?
+        Your feedback or correction
         <textarea
           required
           minLength={10}
@@ -61,7 +62,7 @@ export function CorrectionForm({
         />
       </label>
       <button className="button button-primary" type="submit">
-        Prepare correction
+        {email ? "Prepare feedback email" : "Prepare GitHub feedback"}
       </button>
       {draft && (
         <div role="status" className="study-notice">

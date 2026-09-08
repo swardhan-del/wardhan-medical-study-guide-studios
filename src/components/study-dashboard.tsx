@@ -51,12 +51,12 @@ export function StudyDashboard() {
     <div className="study-stack">
       <p className="study-notice">
         {persistent
-          ? "Saved on this browser only. No account is needed. Clearing site data removes this progress."
+          ? "No account is needed. Clearing site data removes your saved progress."
           : "Browser storage is unavailable. Progress may disappear when you leave."}
       </p>
       <div className="metric-row">
         <div>
-          <strong>{renalLessons.filter((l) => data.lessons.includes(l.slug)).length}/8</strong>
+          <strong>{renalLessons.filter((l) => data.lessons.includes(l.slug)).length}/{renalLessons.length}</strong>
           <span>Renal lessons marked complete</span>
         </div>
         <div>
@@ -144,12 +144,12 @@ export function StudyDashboard() {
             Plan for my exam →
           </Link>
           <Link className="text-link" href="/practice/oral">
-            Practice an oral answer →
+            Practise an oral answer →
           </Link>
         </div>
       </section>
       <details className="study-details">
-        <summary>Manage my saved learning</summary>
+        <summary>Manage study progress</summary>
         <p>
           Download a JSON record of this browser’s progress, or clear it. The
           saved lessons and activities are below. Clearing progress keeps those bookmarks.
@@ -287,7 +287,7 @@ export function ExamPlanner() {
             <p className="study-notice">
               This leaves about {result.unfinishedMinutes} minutes of the first
               learning-and-recall pass unfinished. Increase daily time or
-              prioritize your weakest topics. This plan cannot guarantee full
+              prioritise your weakest topics. This plan cannot guarantee full
               coverage.
             </p>
           )}

@@ -1,3 +1,5 @@
+import videoData from "@/content/public-videos.json";
+import taxonomy from "@/content/library-taxonomy.json";
 import { renalLessons } from "@/content/renal-course";
 import { NextResponse, type NextRequest } from "next/server";
 import catalog from "@/content/public-catalog.json";
@@ -36,7 +38,22 @@ export function proxy(request: NextRequest) {
     (parts.length !== 3 ||
       (!renalLessons.some((lesson) => lesson.slug === parts[2]) &&
         parts[2] !== "opengraph-image"));
-  if (blockedReview || missingResource || missingSubject || missingLesson) {
+  const missingVideo =
+    parts[0] === "videos" &&
+    parts.length > 1 &&
+    (parts.length !== 2 ||
+      !(videoData.records as { id: string }[]).some((v) => v.id === parts[1]));
+  const missingTopic =
+    parts[0] === "topics" &&
+    (parts.length !== 2 || !taxonomy.nodes.some((n) => n.id === parts[1]));
+  if (
+    blockedReview ||
+    missingResource ||
+    missingSubject ||
+    missingLesson ||
+    missingTopic ||
+    missingVideo
+  ) {
     return new NextResponse(
       '<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found</title></head><body><main><h1>Page not found</h1><p>This page is not available.</p><a href="/library">Return to the library</a></main></body></html>',
       {
@@ -53,6 +70,8 @@ export function proxy(request: NextRequest) {
 }
 export const config = {
   matcher: [
+    "/videos/:path*",
+    "/topics/:path*",
     "/review/:path*",
     "/library/:path*",
     "/subjects/:path*",

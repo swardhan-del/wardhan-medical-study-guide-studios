@@ -17,14 +17,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div>
             <p className="footer-title">Wardhan Medical Study Guide Studios</p>
             <p className="footer-note">
-              Helping students learn medical sciences.
+              Focused resources for learning medical sciences.
             </p>
           </div>
           <div className="footer-meta">
-            <span>Created independently by {studio.founderName}.</span>
+            <span>An independent educational project by {studio.founderName}.</span>
             <Link href="/contact">Contact</Link>
             <Link href="/privacy">Privacy</Link>
-            <Link href="/study#saved-learning">Saved learning</Link>
+            <Link href="/study#saved-learning">My Study</Link>
             <Link href="/about">About</Link>
           </div>
         </div>

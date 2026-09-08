@@ -11,7 +11,7 @@ export function SubjectCard({ subject }: { subject: SubjectInterest }) {
       <div className="subject-card-topline">
         <span className="subject-number">{subject.number}</span>
         <span className="status-chip">
-          {count ? `${count} study resources` : "Public release in preparation"}
+          {count ? `${count} study resources` : "No resources available yet"}
         </span>
       </div>
       <h3>{subject.title}</h3>

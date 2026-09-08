@@ -128,7 +128,7 @@ const data = validateCatalog({ version: 1, records });
 const path = new URL("../src/content/public-catalog.json", import.meta.url);
 const output = JSON.stringify(data, null, 2) + "\n";
 if (process.argv.includes("--check")) {
-  if (readFileSync(path, "utf8") !== output)
+  if (readFileSync(path, "utf8").replaceAll("\r\n", "\n") !== output)
     throw new Error(
       "Public library is stale. Run node scripts/build-library-catalog.mjs.",
     );

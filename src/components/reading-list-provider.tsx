@@ -100,8 +100,7 @@ export function ReadingListNotice() {
   return (
     <div className="reading-notice">
       <p>
-        Your saved resources stay in this browser. They do not sync between
-        devices.
+        Your saved resources and progress are stored in this browser. They do not sync between devices.
       </p>
       {message ? <p role="status">{message}</p> : null}
       {saved.length ? (
@@ -123,7 +122,7 @@ export function ReadingListNotice() {
           </div>
         ) : (
           <button className="plain-button" onClick={() => setConfirm(true)}>
-            Clear reading list
+            Clear saved resources
           </button>
         )
       ) : null}

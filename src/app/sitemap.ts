@@ -1,9 +1,14 @@
+import { publicVideos } from "@/lib/videos";
 import { renalLessons, renalLessonHref } from "@/content/renal-course";
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site-url";
 import { subjectInterests } from "@/content/subjects";
 import { publicCatalog } from "@/lib/catalog";
-import { directorySubjects } from "@/lib/subject-directory";
+import {
+  librarySubjects as directorySubjects,
+  taxonomyNodes,
+  topicHref,
+} from "@/lib/taxonomy";
 import {
   anatomyTopicLinks,
   anatomyTopicHref,
@@ -15,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/subjects",
     "/library",
+    "/videos",
+    ...publicVideos.map((v) => "/videos/" + v.id),
+    ...taxonomyNodes.map((n) => topicHref(n.id)),
     "/contact",
     "/privacy",
     "/learn/renal",
@@ -37,12 +45,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${origin}${route}`,
       priority: route === "/" ? 1 : 0.7,
     })),
-    ...publicCatalog
-      .filter((record) => !record.href)
-      .map((record) => ({
-        url: `${origin}/library/${record.id}`,
-        lastModified: record.updatedAt,
-        priority: 0.8,
-      })),
+    ...publicCatalog.map((record) => ({
+      url: `${origin}/library/${record.id}`,
+      lastModified: record.updatedAt,
+      priority: 0.8,
+    })),
   ];
 }

@@ -1,148 +1,104 @@
 import { test, expect } from "@playwright/test";
-
-test("medical directory lists the real courses and searches Dropbox subtopics", async ({
+import taxonomy from "../../src/content/library-taxonomy.json";
+import catalog from "../../src/content/public-catalog.json";
+test("library to subject to system to topic to PDF and download", async ({
   page,
+  request,
 }, info) => {
-  await page.goto("/subjects");
-  await expect(page.locator(".directory-subject-card")).toHaveCount(10);
-  await expect(
-    page.getByRole("link", {
-      name: "Microscopic Anatomy & Embryology II",
+  await page.goto("/library");
+  await page
+    .getByRole("navigation", { name: "Explore subjects and topics" })
+    .getByRole("link", { name: "Medical Physiology", exact: true })
+    .click();
+  await expect(page).toHaveURL(/subjects\/physiology$/);
+  await page
+    .getByRole("heading", {
+      name: "Renal and acid-base physiology",
       exact: true,
-    }),
-  ).toBeVisible();
-  await page.screenshot({
-    path: info.outputPath("subject-directory.png"),
-    fullPage: true,
-  });
-  const browser = page.locator(".directory-browser:visible");
-  await browser.getByRole("searchbox").fill("complement");
-  await browser.getByLabel("Directory subject").selectOption("immunology");
-  await expect(browser.locator(".directory-results>li").first()).toBeVisible();
-  const links = await browser
-    .locator(".directory-results a")
-    .evaluateAll((a) =>
-      a.map((e) => ({
-        href: e.getAttribute("href"),
-        target: e.getAttribute("target"),
-      })),
-    );
-  expect(links.length).toBeGreaterThan(0);
-  expect(
-    links.every(
-      (l) =>
-        l.href?.startsWith("https://www.dropbox.com/home/study%20guide/") &&
-        l.target === "_blank",
-    ),
-  ).toBe(true);
-  await browser.getByRole("searchbox").fill("no-such-medical-concept-999");
-  await expect(
-    browser.getByRole("heading", { name: "No matching folders or guides." }),
-  ).toBeVisible();
-  await browser
-    .getByRole("button", { name: "Reset directory filters" })
+    })
+    .getByRole("link")
     .click();
-  await expect(browser.getByRole("searchbox")).toHaveValue("");
-  await expect(browser.getByLabel("Directory subject")).toHaveValue("");
-});
-
-test("physiology preserves folder hierarchy and printable-guide destinations", async ({
-  page,
-}, info) => {
-  await page.goto("/subjects/physiology");
-  await page.locator("#archive-directory:visible > summary").click();
-  const directory = page.locator("#dropbox-directory:visible");
-  await expect(
-    directory.getByRole("link", { name: /^Start here Final printable/ }),
-  ).toHaveAttribute(
-    "href",
-    /05_Medical_Physiology\/06_Final_Printable_Guides$/,
-  );
-  await directory
-    .getByRole("button", { name: "Expand Subject folder", exact: true })
+  await expect(page).toHaveURL(/topics\/physiology-renal$/);
+  await page
+    .getByRole("heading", {
+      name: "Renal physiology revision sheet",
+      exact: true,
+    })
+    .first()
+    .getByRole("link")
     .click();
-  await directory
-    .getByRole("button", { name: "Expand Final Printable Guides", exact: true })
+  await expect(page).toHaveURL(/topics\/topic-renal-revision-sheet$/);
+  await page
+    .getByRole("heading", {
+      name: "Renal physiology revision sheet",
+      exact: true,
+    })
+    .getByRole("link")
     .click();
-  await expect(
-    directory.getByRole("link", {
-      name: /^Divided Study Guide Medical Physiology/,
-    }),
-  ).toHaveAttribute("href", /04_Divided_Study_Guide_Medical_Physiology$/);
-  await directory.getByRole("button", { name: "Expand all folders" }).click();
+  await expect(page).toHaveURL(/library\/renal-revision-sheet$/);
+  await expect(page.locator('object[type="application/pdf"]')).toBeVisible();
+  const download = page.waitForEvent("download");
+  await page.getByRole("link", { name: "Download PDF", exact: true }).click();
+  expect((await download).suggestedFilename()).toBe("renal-revision-sheet.pdf");
+  const pdf = await request.get("/downloads/renal-revision-sheet.pdf");
+  expect(pdf.status()).toBe(200);
+  expect((await pdf.body()).subarray(0, 5).toString()).toBe("%PDF-");
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
-  await directory.getByRole("button", { name: "Collapse all folders" }).click();
-  await directory.getByRole("searchbox").fill("renal circulation");
-  await expect(
-    directory.locator(".directory-results>li").first(),
-  ).toBeVisible();
-  await directory.scrollIntoViewIfNeeded();
-  await page.screenshot({ path: info.outputPath("physiology-directory.png") });
+  await page.screenshot({ path: info.outputPath("native-resource.png") });
 });
-
-test("course views and reference-only subjects open without false availability notices", async ({
+test("topic filtering, lesson journey, breadcrumbs and related links", async ({
   page,
-}) => {
-  for (const [id, title] of [
-    ["histology-i", "Microscopic Anatomy & Embryology I"],
-    ["histology-ii", "Microscopic Anatomy & Embryology II"],
-    ["immunology", "Immunology"],
-    ["microbiology", "Microbiology & Antimicrobials"],
-    ["biostatistics", "Biostatistics"],
-  ]) {
-    expect((await page.goto(`/subjects/${id}`))?.status()).toBe(200);
-    await expect(
-      page.getByRole("heading", { name: title, level: 1, exact: true }),
-    ).toBeVisible();
-    await page.locator("#archive-directory:visible > summary").click();
-    await expect(page.locator("#dropbox-directory:visible")).toBeVisible();
-    await expect(
-      page.getByRole("heading", { name: "This collection is in preparation." }),
-    ).toHaveCount(0);
-    expect(
-      await page.evaluate(
-        () => document.documentElement.scrollWidth <= innerWidth,
-      ),
-    ).toBe(true);
-  }
-  await page.goto("/subjects/microbiology");
-  await page.locator("#archive-directory:visible > summary").click();
-  await page
-    .locator("#dropbox-directory")
-    .getByRole("searchbox")
-    .fill("antibiotics");
-  await expect(page.locator(".directory-results a").first()).toHaveAttribute(
-    "href",
-    /^https:\/\/www\.dropbox\.com\/preview\/study%20guide\/.*Antibiotics\.pdf\?context=standalone_preview&role=personal$/,
-  );
-});
-
-test("directory search paginates and the new course routes enter the sitemap", async ({
-  page,
-  request,
 }) => {
   await page.goto("/subjects");
-  const browser = page.locator(".directory-browser:visible");
-  await browser.getByRole("searchbox").fill("physiology");
-  await expect(browser.locator(".directory-results>li")).toHaveCount(30);
-  await browser
-    .getByRole("button", { name: "Show more directory results" })
+  await page.getByRole("searchbox", { name: "Search topics" }).fill("renal");
+  await page.getByLabel("Topic subject").selectOption("physiology");
+  await page
+    .locator(".native-topic-results")
+    .getByRole("link", { name: "Renal and acid-base physiology", exact: true })
     .click();
-  await expect(browser.locator(".directory-results>li")).toHaveCount(60);
-  await browser.getByLabel("Collection type").selectOption("printable");
-  await expect(browser.getByRole("status")).not.toHaveText("0 matching links");
-  const sitemap = await (await request.get("/sitemap.xml")).text();
-  for (const slug of [
-    "histology-i",
-    "histology-ii",
-    "immunology",
-    "microbiology",
-    "biostatistics",
+  await expect(
+    page.getByRole("navigation", { name: "Breadcrumb" }),
+  ).toContainText("Medical Physiology");
+  await page.getByLabel("Search resources").fill("clearance");
+  await page
+    .locator(".resource-card")
+    .getByRole("link", { name: "Read lesson", exact: false })
+    .click();
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(
+    "clearance",
+  );
+  await page.getByRole("link", { name: "Read lesson", exact: false }).click();
+  await expect(page).toHaveURL(/learn\/renal\/filtration-and-clearance$/);
+});
+test("all native routes and public assets resolve without archive exposure", async ({
+  request,
+}, info) => {
+  test.setTimeout(180000);
+  if (info.project.name !== "desktop") return;
+  for (const url of [
+    ...taxonomy.subjects.map((s) => "/subjects/" + s.id),
+    ...taxonomy.nodes.map((n) => "/topics/" + n.id),
+    ...catalog.records.map((r) => "/library/" + r.id),
+  ]) {
+    const res = await request.get(url);
+    expect(res.status(), url).toBe(200);
+    const html = await res.text();
+    expect(html, url).not.toMatch(
+      /https?:[^"<>]*dropbox|original_dropbox_path|destination_dropbox_path|study%20guide/,
+    );
+  }
+  for (const url of [
+    "/topics/missing",
+    "/videos/unapproved",
+    "/library/private",
+    "/review",
   ])
-    expect(sitemap).toContain(`/subjects/${slug}`);
-  expect(sitemap).not.toContain("dropbox.com");
+    expect((await request.get(url)).status()).toBe(404);
+  const sitemap = await (await request.get("/sitemap.xml")).text();
+  expect(sitemap).toContain("/topics/physiology-renal");
+  expect(sitemap).not.toContain("dropbox");
 });
