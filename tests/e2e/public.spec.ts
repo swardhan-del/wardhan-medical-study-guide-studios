@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import catalog from "../../src/content/public-catalog.json";
 test("public routes render and fit the viewport without runtime errors", async ({
   page,
 }) => {
@@ -22,7 +23,7 @@ test("public routes render and fit the viewport without runtime errors", async (
   ]) {
     const response = await page.goto(route);
     expect(response?.status()).toBe(200);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= window.innerWidth,
@@ -112,7 +113,7 @@ test("subject cards lead to subject pages and reading list survives invalid brow
   );
   await page.goto("/reading-list");
   await expect(page).toHaveURL(/\/study#saved-learning$/);
-  await expect(page.getByText("A place for your next session.")).toBeVisible();
+  await expect(page.locator("#saved-learning").getByRole("heading", { name: "No saved resources yet" })).toBeVisible();
 });
 test("private review and unknown guide IDs cannot be accessed in a public build", async ({
   request,
@@ -198,7 +199,7 @@ test("renal course, lab and study pages fit both viewports", async ({
     "/study/planner",
   ]) {
     expect((await page.goto(route))?.status()).toBe(200);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
@@ -382,20 +383,19 @@ test("library filters expose useful resources in every subject and retain direct
   await page.goto("/library");
   // Streaming can briefly retain a hidden copy; assert the accessible result.
   const summary = page.getByRole("status");
-  await expect(summary).toHaveText("58 resources");
-  for (const [subject, count] of [
-    ["anatomy", 5],
-    ["histology", 17],
-    ["cell-biology", 7],
-    ["biochemistry", 6],
-    ["physiology", 17],
-    ["genetics", 6],
-  ] as const) {
+  await expect(summary).toHaveText(String(catalog.records.length) + " resources");
+  for (const subject of ["anatomy", "histology", "cell-biology", "biochemistry", "physiology", "genetics"]) {
+    const count = catalog.records.filter(record => record.subject === subject).length;
+    expect(count).toBeGreaterThan(0);
     await page
       .getByRole("combobox", { name: "Subject", exact: true })
       .selectOption(subject);
     await expect(summary).toHaveText(`${count} resources`);
-    await expect(page.locator(".resource-card")).toHaveCount(count);
+    await expect(page.locator(".resource-card:visible")).toHaveCount(Math.min(count, 18));
+    for (let shown = 18; shown < count; shown += 18) {
+      await page.getByRole("button", { name: "Show more resources" }).click();
+      await expect(page.locator(".resource-card:visible")).toHaveCount(Math.min(shown + 18, count));
+    }
   }
   await page
     .getByRole("combobox", { name: "Subject", exact: true })
@@ -408,7 +408,7 @@ test("library filters expose useful resources in every subject and retain direct
       exact: true,
     })
     .click();
-  await expect(page.locator("h1")).toHaveText(
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "PCR, qPCR and reverse transcription",
   );
   await page.goto("/subjects/histology");
@@ -445,7 +445,7 @@ test("catalog format, empty search and pagination remain usable", async ({
     .first()
     .click();
   await expect(page.getByRole("status")).toHaveText(
-    "58 resources",
+    String(catalog.records.length) + " resources",
   );
 });
 
@@ -456,7 +456,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   const check = page.locator("#concept-check-title");
   await page.locator(".concept-sequence summary").nth(1).click();
   await expect(
-    page.getByText(/Pseudostratified epithelium appears multilayered/),
+    page.locator(".concept-sequence").getByText(/Pseudostratified epithelium appears multilayered/),
   ).toBeVisible();
   await expect(
     check.getByRole("button", { name: "Check answer", exact: true }),
@@ -478,7 +478,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   await expect(check.locator(".concept-feedback > p").first()).toHaveText("Correct.");
   await page.getByText("Reveal a model answer", { exact: true }).click();
   await expect(
-    page.getByText(/Alveoli need a short diffusion distance/),
+    page.getByRole("region", { name: "Practise an oral answer" }).getByText(/Alveoli need a short diffusion distance/),
   ).toBeVisible();
   await page.getByRole("button", { name: /Save to My Study: Epithelia:/ }).click();
   await page.goto("/reading-list");

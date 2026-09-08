@@ -1,7 +1,7 @@
 {
   "version": 1,
   "baselineCommit": "cc02a695145ed205e51fe95b08507b7a5ffa727c",
-  "scope": "Existing released web adaptations and selected preview assets only. Private archive approvals do not authorize public files.",
+  "scope": "Retained released adaptations and exact assets, plus the individually reviewed subject learning expansion authorised by the owner on 8 September 2026. Complete source manuscripts and unresolved archive material remain private.",
   "resourceIds": [
     "anatomy-abdomen",
     "anatomy-embryology",
@@ -60,7 +60,26 @@
     "renal-course",
     "ventilation-perfusion",
     "renal-volume-and-osmolality",
-    "renal-filtration-and-clearance"
+    "renal-filtration-and-clearance",
+    "fluid-and-membrane-transport",
+    "muscle-contraction",
+    "autonomic-signalling",
+    "cardiac-cycle",
+    "respiratory-mechanics",
+    "renal-water-balance",
+    "blood-and-haemostasis",
+    "digestive-control",
+    "energy-balance",
+    "endocrine-feedback",
+    "reproductive-cycles",
+    "synaptic-integration",
+    "special-senses",
+    "lymph-and-fluid-exchange",
+    "thorax-nerve-relations",
+    "abdomen-portal-relations",
+    "pelvis-urinary-route",
+    "head-neck-tongue-map",
+    "limbs-plexus-and-joints"
   ],
   "assets": [
     {
@@ -206,6 +225,800 @@
       "sha256": "9e3b8a4e275b3280b2b37a6942337bdf2bd1b5bcffea31edd9ae5d9ef608ff03",
       "bytes": 1227818,
       "evidence": "docs/FIGURE_PLACEMENTS.md"
+    },
+    {
+      "path": "images/figures/thorax-320.webp",
+      "sha256": "cf21d95c70e1c16be69345aa35a2c653b6bbda4100e9175b5778c72405f74788",
+      "bytes": 8502,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/thorax-640.webp",
+      "sha256": "f5caf2413c9bb84dedea5d9025c90d281c385881fbff8f95a363ad270e0a7f2e",
+      "bytes": 20588,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/thorax-1280.webp",
+      "sha256": "85f2450acd9274c67dae78de0260199c7c31a724989a959a5f5ddd1083c4bda7",
+      "bytes": 49616,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/thorax-1800.webp",
+      "sha256": "380232887260fb4b2da8ce2233456fdce5d1586fd53b009a006df077d8c24e31",
+      "bytes": 15766,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/portal-triad-320.webp",
+      "sha256": "47e9a676b866d56ea00405102ecef346bc596f4f5af886a0ba39efff653acf0a",
+      "bytes": 10638,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/portal-triad-640.webp",
+      "sha256": "3f5bb5d70c045f374637d7663236e5e48980a9a7b3271ed4de01b1f4d2b95636",
+      "bytes": 25846,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/portal-triad-1280.webp",
+      "sha256": "87105d3a7907a1475ffd9d5b17a7e90db038aad4bdeee70c283c4107c0410281",
+      "bytes": 67146,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/portal-triad-1800.webp",
+      "sha256": "d159c352aa25b964df25e6e8f56433ea6006bd1476728c203a33d896be377204",
+      "bytes": 22566,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/renal-development-320.webp",
+      "sha256": "f847900ad6f40310d98dc16010984d1125c6bbf63321b9b3931f66b2cf4c1845",
+      "bytes": 18340,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/renal-development-640.webp",
+      "sha256": "2251eac6309ff2060f4eff5e52ef0a7dcdc7506b35bca372a1813d4fef59e939",
+      "bytes": 48610,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/renal-development-1280.webp",
+      "sha256": "d1bdb504d10a81e3003866266bdf6d290b5c943e91561e781ee0944c18f2d92f",
+      "bytes": 118860,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/renal-development-1800.webp",
+      "sha256": "60ae0506aadc88a2cbd9d8093f2d3a2dde09ca64e2a78823da41be1635e225d9",
+      "bytes": 48656,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/tongue-innervation-320.webp",
+      "sha256": "bf3e9cbbb19c44841221a92dfa85f00f3a4c875672e75ac2d697ddd23cca0a18",
+      "bytes": 8382,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/tongue-innervation-640.webp",
+      "sha256": "b18e96f40b8a1ff96bd4a5431f09fe4e5e6ae4cde28976ee886d307adca5e2b5",
+      "bytes": 20172,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/tongue-innervation-1280.webp",
+      "sha256": "12725998d0e89abee6660cf85dda6d55d450df1bfc305ef8139652347aa39524",
+      "bytes": 49388,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/tongue-innervation-1800.webp",
+      "sha256": "ebe9267c19173935bc2fa0e1707a392e36c5613c4c2e4d5b2b8a4e19a7c77339",
+      "bytes": 20200,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/brachial-plexus-map-320.webp",
+      "sha256": "ec7560b5dc5a0f9f7cd62d35cd1b9164be96dcc20874be6b16c7fd9bae71281a",
+      "bytes": 13142,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/brachial-plexus-map-640.webp",
+      "sha256": "661ae7157143e2269cb28431d9746009dc29bb75876786de210001742237cd88",
+      "bytes": 30870,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/brachial-plexus-map-1280.webp",
+      "sha256": "3a0283fac9dc5d72dfbf71fbb77002a6814ca924b7fd2568cd316f91788ae014",
+      "bytes": 74576,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/brachial-plexus-map-2400.webp",
+      "sha256": "0adc9cc9c99a57503aee60a34bb80eead6b73a28f668326c67558ce31b9101f9",
+      "bytes": 107214,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/neuronal-conductance-320.webp",
+      "sha256": "4cd2a49b9adec7960eff077d3c88f1e466313727b2c42d0c6710c0615f2a2e06",
+      "bytes": 14798,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/neuronal-conductance-640.webp",
+      "sha256": "1b54126869bdedd6f6234c4024ed866fde1daf603bf99aa5ef17d4abeb698254",
+      "bytes": 37398,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/neuronal-conductance-1280.webp",
+      "sha256": "0566d2c2f9f7b3d49adab5e86a98c0744058d0caa4b6703de28ca6691d539c6c",
+      "bytes": 93772,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/neuronal-conductance-2600.webp",
+      "sha256": "46c4d82869b3369492d4faa04abe47ed62447a41018e00b23e5e9b822c423b96",
+      "bytes": 42220,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/ventricular-pressure-volume-320.webp",
+      "sha256": "f59199a88bb61df95e729ce0a4467b2cd90baf648bce615ab13c8b5d5cf429dc",
+      "bytes": 20458,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/ventricular-pressure-volume-640.webp",
+      "sha256": "56ad75ba2090ea7091dc9f17d3333c5667c067089815e49a08b0d57b1abe7c08",
+      "bytes": 47530,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/ventricular-pressure-volume-1280.webp",
+      "sha256": "9ad1e3a8be0206f22169ec1fa628e765605658659e3232b8ebc3c278d60e8f13",
+      "bytes": 111314,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/ventricular-pressure-volume-2200.webp",
+      "sha256": "fb3f34d184c0fcd2c74ffeb5420c61187d011ee1778277e7132a428aa96606f4",
+      "bytes": 36738,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/airway-dead-space-320.webp",
+      "sha256": "79b38c66563cce72ac387198e02f7bd4671667495b4fbc429c5cc1f05c25dfc9",
+      "bytes": 43324,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/airway-dead-space-640.webp",
+      "sha256": "9ff4ed4369d22922a39a1b6c79a16e8d9bbd99e95d526ab62e050c05c333bacc",
+      "bytes": 169152,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/airway-dead-space-1280.webp",
+      "sha256": "ec9d8d3032398d429f52de1a67c2a3f9705195dad3b712109963ffe3e8f9be62",
+      "bytes": 603060,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "images/figures/airway-dead-space-1536.webp",
+      "sha256": "2dec532f9b3eca5e3f61499c02d829c9892e7b7573b65a81b644fdb34adaaae5",
+      "bytes": 806602,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/abdomen-portal-relations.mp3",
+      "sha256": "461877478e0f3e91ad23d6bd1547e28b7c9164c64e79be446627146149793901",
+      "bytes": 420878,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/abdomen-portal-relations.mp4",
+      "sha256": "6b479bc0ad70524b28d5c51a4c38605d574985fc30940d026023a4cea5a6c18f",
+      "bytes": 440473,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/abdomen-portal-relations.vtt",
+      "sha256": "a8143bf032554780d18425e450367c310b3cfb8dbb768ae5644389c353c46e9b",
+      "bytes": 920,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/abdomen-portal-relations.webp",
+      "sha256": "9701fa4daa7c2e8cfa762a21eb384dc1d7337a02475dfa0510832d632223fba2",
+      "bytes": 11020,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/autonomic-signalling.mp3",
+      "sha256": "a136ffe65b66390e8993d4011a8f73fea82533a885397e2ebc94c9af93995be2",
+      "bytes": 438380,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/autonomic-signalling.mp4",
+      "sha256": "55463e852dadd95408322abeec6288677ddab1fc01329655db3c4b4a6376da86",
+      "bytes": 470920,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/autonomic-signalling.vtt",
+      "sha256": "0c9c61c0a1ac9e5ef0a173c397facc3e5618d6e9bf89e134e588d2122feccb17",
+      "bytes": 831,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/autonomic-signalling.webp",
+      "sha256": "2ff1910931f0f414afd8396d2d0ce07a49b32fb9762d32982c4622e8a8ac0a6e",
+      "bytes": 11274,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/blood-and-haemostasis.mp3",
+      "sha256": "2a9b54b36b91f2bd61a96d309bf403a9d9b3dd7cfe30752b2a667ba0f62f2754",
+      "bytes": 426102,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/blood-and-haemostasis.mp4",
+      "sha256": "e301acaff8e652ecec082626b7246bf14815af220249fa58e20ec5f304c99173",
+      "bytes": 442862,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/blood-and-haemostasis.vtt",
+      "sha256": "6f67ee7a31867ca17c34dc41b28d9e2bfee9384173ab11aae3c3e4ef22d70ff2",
+      "bytes": 767,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/blood-and-haemostasis.webp",
+      "sha256": "165f4af63b32834a03673774469ea0c80fb960ed46e55613aabf5bf1d8a16c02",
+      "bytes": 10872,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/cardiac-cycle.mp3",
+      "sha256": "e427b7ce88b82ac152924f43080ac3370c646219fc48060506b5cf4448abad8a",
+      "bytes": 457188,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/cardiac-cycle.mp4",
+      "sha256": "54c265d5640f26cc2fd195f7bae854d54939edfd0bf0311eb229b5d5b3be658a",
+      "bytes": 472491,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/cardiac-cycle.vtt",
+      "sha256": "d2c8074ae84c1ae126c465c147fae3a2dced1fea79162964e9f903392fbc6ab5",
+      "bytes": 862,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/cardiac-cycle.webp",
+      "sha256": "e7902101c38f251b3adb2d5992db62bda952e777457508823a21ec385cfc8ea2",
+      "bytes": 11008,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/complement.mp3",
+      "sha256": "fb4d8440f5e6b307a1daee710cd2be6f719b09b40f2d0301688259102df7d6bf",
+      "bytes": 385090,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/complement.mp4",
+      "sha256": "df02a135cea9c2a5651ecd5f89f2e0913f0f519b932ff66c088e0cbe88a1b84c",
+      "bytes": 424558,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/complement.vtt",
+      "sha256": "bacbe0f4dfd012c8d1bfdfa5fda9949036b0c43ca4ec6aef1c0a44514bee35fa",
+      "bytes": 801,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/complement.webp",
+      "sha256": "b07c88e7f174e31a78d651dc92f6ede474da5188cfadd7195bd9e4d88d10273b",
+      "bytes": 12286,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/digestive-control.mp3",
+      "sha256": "9e0de4ab3a404dd476ae84aa50b0038d88157ee4626617489efcf0bb8f524810",
+      "bytes": 423229,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/digestive-control.mp4",
+      "sha256": "f3550d09fa6ad49fc6fa062f35607144e312f8af1a754505fa138c219a0aec94",
+      "bytes": 442219,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/digestive-control.vtt",
+      "sha256": "fc658ea981aee2897f6b774dac20ab8b5abea8b2918135deda004812aa47fe74",
+      "bytes": 841,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/digestive-control.webp",
+      "sha256": "28f9737d228d521e726701d18f17a257f0cc8a1b6804a78a8f177affda660e32",
+      "bytes": 11144,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/endocrine-feedback.mp3",
+      "sha256": "4c20350c7f74fe4a3c752c98ccf2b6894825da0f46f4d53d31ce85ed5ee521a8",
+      "bytes": 480959,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/endocrine-feedback.mp4",
+      "sha256": "bb5e33d8770cd73db3c71193bef0bfc93425eed3389ba522a82a9335d8ecda78",
+      "bytes": 498301,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/endocrine-feedback.vtt",
+      "sha256": "a95a399021c49b3891f9ba83711bd1d2278ddb93befe2f00f55ebd831d07122f",
+      "bytes": 990,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/endocrine-feedback.webp",
+      "sha256": "44b6ccb994a18b6d59f4988dba4ccda8f3adedac0603e8d4c1d6f3f6c3247811",
+      "bytes": 11016,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/energy-balance.mp3",
+      "sha256": "2ae6daedc99895c67303ae6a446871fe32ce4ff1d944cdb992e8173444ec30f8",
+      "bytes": 379082,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/energy-balance.mp4",
+      "sha256": "4c2e86da3cc480cf0e531824f17f241b0121384caf37165d186b01b39d10becf",
+      "bytes": 405882,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/energy-balance.vtt",
+      "sha256": "277d1db6e79e096d77d7775d364523abdbe3ccfd07c0787c864357c8d14e03bf",
+      "bytes": 802,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/energy-balance.webp",
+      "sha256": "079cf361c6ad52c23efa6e18d5a4db1c889417936cad51d7ac271b045747dc05",
+      "bytes": 11310,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/enzyme-kinetics.mp3",
+      "sha256": "11f68b9bdb56b14cada09bc15b415a8dfe479a66d962c8f7c86bc42e7e6bf31e",
+      "bytes": 388486,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/enzyme-kinetics.mp4",
+      "sha256": "f802563edeac82c7f6c2e069967bea21f12290e7804abd6e9466497a72ee5f0a",
+      "bytes": 414556,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/enzyme-kinetics.vtt",
+      "sha256": "d15d372f348493e30182074fe9bf6e72a40f2edbf026527da6fb4f971a863db1",
+      "bytes": 812,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/enzyme-kinetics.webp",
+      "sha256": "d1b72abac7e84dd9ce722cff91b1597cc6d8e450e7b864e01532a35f37426656",
+      "bytes": 10878,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/epithelia.mp3",
+      "sha256": "0784a29079cc6a047b48cb1cfed5bd6dc55ec03d27e065b5775b34bd605276ab",
+      "bytes": 369678,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/epithelia.mp4",
+      "sha256": "245f4351c3abbe31f5992dbac57950472d8a311bbf777d207a860e9685323f13",
+      "bytes": 378971,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/epithelia.vtt",
+      "sha256": "4c569b939a5d432eb98059a8ae16e3594c2b7397540454e266ac52a760960b60",
+      "bytes": 754,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/epithelia.webp",
+      "sha256": "9da1ea408618f6b83e3ca2291f4c47dd55403196893b217517cde9c23c4df2eb",
+      "bytes": 10590,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/fluid-and-membrane-transport.mp3",
+      "sha256": "1f9bf1445ae12640131b410c68892e50a95743d498c31d36d1c8e89b1aec689e",
+      "bytes": 449874,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/fluid-and-membrane-transport.mp4",
+      "sha256": "cee060f332fc6e529ceae21a6ae32f8f4d0b4bbfb1e5144f49d1cfcf2a032e6b",
+      "bytes": 458485,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/fluid-and-membrane-transport.vtt",
+      "sha256": "a4e421421f3bc5c84a37f953866014b2eb9ce2cffa0ad46ca87c17d29d56d503",
+      "bytes": 873,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/fluid-and-membrane-transport.webp",
+      "sha256": "d74bb802f07a7277762e8e8e61599a81d23d62ad9d983694674711d399910d48",
+      "bytes": 10918,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/head-neck-tongue-map.mp3",
+      "sha256": "64690a6a697c975cacbd4e5e2ee2f79890f2d588913986280da5dd49c4cf8b6d",
+      "bytes": 453531,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/head-neck-tongue-map.mp4",
+      "sha256": "bbae393e181d305fff4b831ca0d75adf0f9eb15c0696341a9b0af483ce47403f",
+      "bytes": 474821,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/head-neck-tongue-map.vtt",
+      "sha256": "6d500c51c9b41e86068ba981095e98dbe52eb34072d13cda91fae07fb7bdff92",
+      "bytes": 853,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/head-neck-tongue-map.webp",
+      "sha256": "1dc8a4aadc7460a8562f96596206b6abf890deb3b083b256d3edf21a0a0c2e7c",
+      "bytes": 11230,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/limbs-plexus-and-joints.mp3",
+      "sha256": "573cb12fdee5aa4d721125a506ef542ec7696a634cc0e1b60a31ec39f9fb97c3",
+      "bytes": 412519,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/limbs-plexus-and-joints.mp4",
+      "sha256": "62f8d5bfb8381fab18172d19ac9175e0bedc0aa82877a81239e8c343a91d7a7a",
+      "bytes": 424017,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/limbs-plexus-and-joints.vtt",
+      "sha256": "f5fcde728ad2ddf6a03ab381c2c790c96d72691b07c347537134b0941fa08c4b",
+      "bytes": 796,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/limbs-plexus-and-joints.webp",
+      "sha256": "be6901c1701041d2623e2a77272c917b9462d34088357c00c50833473024f36f",
+      "bytes": 11432,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/lymph-and-fluid-exchange.mp3",
+      "sha256": "07424104745a378118a981a0b87ddbb5411c79765a89a9a62055cf2e924ece51",
+      "bytes": 403114,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/lymph-and-fluid-exchange.mp4",
+      "sha256": "6dd1ad4c4c5d3a99f0be8cef82904f98bb08b6514f4bbe99b3bd9ab53643d239",
+      "bytes": 426275,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/lymph-and-fluid-exchange.vtt",
+      "sha256": "22681cb805e8d53596999c493e263e66191cc0510286f2ce52c8621e585b294a",
+      "bytes": 836,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/lymph-and-fluid-exchange.webp",
+      "sha256": "e7b154fcbcd6c923f3ca7aad85b5bd9eae22c300cf2333c547f1d21f8711275d",
+      "bytes": 10558,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/muscle-contraction.mp3",
+      "sha256": "93026d67c8d44db1d82583a7efee6b05b68d7460aed7076eea4135f09b486565",
+      "bytes": 464763,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/muscle-contraction.mp4",
+      "sha256": "8b609a86b42f0dc4d199438e0217255ed0193135bd5d9df9b92398c87b3d2849",
+      "bytes": 491517,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/muscle-contraction.vtt",
+      "sha256": "c61c972416c3d8983f2f196ba7cf7280821eae84fe02aa7956d400d85e3a31be",
+      "bytes": 918,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/muscle-contraction.webp",
+      "sha256": "ebe295e866b95110c648ff88ba3f29a567776fff1ec2243b585c0919153fbe46",
+      "bytes": 10738,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pcr.mp3",
+      "sha256": "872c530505a3a98225a68eb7ba04838c9b4b3f266e9a325c0439f6c2c5b2ecf7",
+      "bytes": 343294,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pcr.mp4",
+      "sha256": "616a32ba3b936de8116edeb7a9fa9f6a2115ebbd8addc77f4b6f585a9087e200",
+      "bytes": 364892,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pcr.vtt",
+      "sha256": "cbf345ce8bb878d5c855acf6c2c0b8642c3826d239ae67e6090827df341719f4",
+      "bytes": 739,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pcr.webp",
+      "sha256": "81733b394a9afdce5b64886c59aa8a6002e26f773ab7acb3e789fe988bebbfbf",
+      "bytes": 10958,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pelvis-urinary-route.mp3",
+      "sha256": "1e9ed5d1a04fbf4591642658499dbb065dccbba9f15159abe5d42582f5848f66",
+      "bytes": 370200,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pelvis-urinary-route.mp4",
+      "sha256": "3fff447020d5698b23046ad819f73d3223940c16e514294ee94814019eca080a",
+      "bytes": 391413,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pelvis-urinary-route.vtt",
+      "sha256": "85f2a968596bc8f54385553c6daf26140d63802b01a3d29317606739f8ce600e",
+      "bytes": 789,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/pelvis-urinary-route.webp",
+      "sha256": "f0c5df0ec6b36b6a9ac2c0ad0dcfd8def25cacc2b5749f9f1d532dd560e9d84a",
+      "bytes": 11130,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/renal-water-balance.mp3",
+      "sha256": "fbd458198a9e2b2f4519c9111e4a3eb10d14b0facbbee328899328a0b35f8351",
+      "bytes": 446478,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/renal-water-balance.mp4",
+      "sha256": "5588d55b985dec25c36e94eba9cbebc2ee341027a6a97924df94e5853f7be479",
+      "bytes": 460048,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/renal-water-balance.vtt",
+      "sha256": "e8ab0377a89780888d5eaa6c5c86372a687d67911178a7ba1cbcac8e28f5615c",
+      "bytes": 825,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/renal-water-balance.webp",
+      "sha256": "54f2e03b6a291624cade53e9a5206ddfc1e1fc512cf19117365d55f501eb3a10",
+      "bytes": 11778,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/reproductive-cycles.mp3",
+      "sha256": "550e09820501cc0baf926fd2f61046083b0bac05705bb436ad5d99695cdd0fe3",
+      "bytes": 453270,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/reproductive-cycles.mp4",
+      "sha256": "65d40640e2a43b35471dbb0199a507a55d7b448e34a5e422a2173c46f5378bce",
+      "bytes": 474714,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/reproductive-cycles.vtt",
+      "sha256": "d2ec18f9106ea377df2b4fed9a520dd57404df99f8f3ba0d7d5ed952dc1567cc",
+      "bytes": 826,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/reproductive-cycles.webp",
+      "sha256": "d59363d20d9e2ce0e085c432ca44b43cff261f4cfd5edb4d7ac3504cbaf9d642",
+      "bytes": 11792,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/respiratory-mechanics.mp3",
+      "sha256": "8add741f59ca3355eb686d84c746a18b4dccc969529e58d7f8c12b778da28923",
+      "bytes": 521710,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/respiratory-mechanics.mp4",
+      "sha256": "29b9ee3e38df7707e3e440922b5a78adb5e8bdf026b378f50cca2f6919568650",
+      "bytes": 538794,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/respiratory-mechanics.vtt",
+      "sha256": "d9520435f7e27df69924d8da0eca7227c8858a498f12d5e63eb8f87e7792ca74",
+      "bytes": 890,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/respiratory-mechanics.webp",
+      "sha256": "4861f5058a047853d88680622280820f4b24796f6f0862f64dbc2c2221fbe9c5",
+      "bytes": 10526,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/special-senses.mp3",
+      "sha256": "702ef3a1ee80ff9a012c827508b4b9038429ba0b588b55acc1fae2278255a37e",
+      "bytes": 428976,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/special-senses.mp4",
+      "sha256": "5d1b46e3358fd6deb3155e440f6153bd4fe3d056d83fd7c22ee3be6ec48cf55f",
+      "bytes": 457946,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/special-senses.vtt",
+      "sha256": "03926372f1380bee42b044008d96ec566e7eef9603e3055631b5d5d069b51961",
+      "bytes": 863,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/special-senses.webp",
+      "sha256": "4f271fb69aa705c3855c7d4cb039223324c413548a21c06c0af7d8f54621229a",
+      "bytes": 11260,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/synaptic-integration.mp3",
+      "sha256": "7f273bc16ac0a7dfd20ce6236a9b62ada8c5ce5f0036d15da8be2d657095543f",
+      "bytes": 411212,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/synaptic-integration.mp4",
+      "sha256": "cf70a8787c193c858071744a38a7fd9a97d191c974d495b7dfea36492f7fef75",
+      "bytes": 433576,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/synaptic-integration.vtt",
+      "sha256": "ed8d79bcad9f24ff40f881b748d34734021b248c21a18782412212d46a43378e",
+      "bytes": 825,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/synaptic-integration.webp",
+      "sha256": "d2924d859849e99117e612499c72fcbba5a972d2ff4e2e492ed353f29e400859",
+      "bytes": 10856,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/thorax-nerve-relations.mp3",
+      "sha256": "02704f191f5d43c27c3ddeee7f6cbf6c7ec8e8bf7eb555ece5e381d8568f382a",
+      "bytes": 411212,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/thorax-nerve-relations.mp4",
+      "sha256": "c3af11f2895ca504cf31b408be1c3de2d48aa141cc87f685433bbe5481ba4ae3",
+      "bytes": 421278,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/thorax-nerve-relations.vtt",
+      "sha256": "857e804d0b56fa1d7c4fd8cbd49e99f66dd4dddfb15d15af2235b0efd9bc38cb",
+      "bytes": 891,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/recaps/thorax-nerve-relations.webp",
+      "sha256": "a9743a478dc7ed23fdc65cf5f80edb6f87a51c4ebaff61a9ce45679fe3bfcf5c",
+      "bytes": 10980,
+      "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
     }
+  ],
+  "videoIds": [
+    "recap-fluid-and-membrane-transport",
+    "recap-muscle-contraction",
+    "recap-autonomic-signalling",
+    "recap-cardiac-cycle",
+    "recap-respiratory-mechanics",
+    "recap-renal-water-balance",
+    "recap-blood-and-haemostasis",
+    "recap-digestive-control",
+    "recap-energy-balance",
+    "recap-endocrine-feedback",
+    "recap-reproductive-cycles",
+    "recap-synaptic-integration",
+    "recap-special-senses",
+    "recap-lymph-and-fluid-exchange",
+    "recap-thorax-nerve-relations",
+    "recap-abdomen-portal-relations",
+    "recap-pelvis-urinary-route",
+    "recap-head-neck-tongue-map",
+    "recap-limbs-plexus-and-joints",
+    "recap-epithelia",
+    "recap-pcr",
+    "recap-enzyme-kinetics",
+    "recap-complement"
+  ],
+  "audioLessonIds": [
+    "fluid-and-membrane-transport",
+    "muscle-contraction",
+    "autonomic-signalling",
+    "cardiac-cycle",
+    "respiratory-mechanics",
+    "renal-water-balance",
+    "blood-and-haemostasis",
+    "digestive-control",
+    "energy-balance",
+    "endocrine-feedback",
+    "reproductive-cycles",
+    "synaptic-integration",
+    "special-senses",
+    "lymph-and-fluid-exchange",
+    "thorax-nerve-relations",
+    "abdomen-portal-relations",
+    "pelvis-urinary-route",
+    "head-neck-tongue-map",
+    "limbs-plexus-and-joints",
+    "epithelia",
+    "pcr",
+    "enzyme-kinetics",
+    "complement"
   ]
 }

@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subjects",
     "/library",
     "/videos",
+    ...subjectInterests.map(s => "/study/" + s.id),
     ...publicVideos.map((v) => "/videos/" + v.id),
     ...taxonomyNodes.map((n) => topicHref(n.id)),
     "/contact",

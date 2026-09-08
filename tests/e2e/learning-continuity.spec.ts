@@ -130,7 +130,7 @@ test("histology lessons and native topics remain reachable on small screens", as
   page,
 }) => {
   await page.goto("/subjects/histology");
-  await expect(page.locator("#website-lessons")).toBeVisible();
+  await expect(page.locator("#website-lessons:visible")).toBeVisible();
   await expect(page.locator("a[href*=dropbox]")).toHaveCount(0);
-  await expect(page.locator(".taxonomy-grid")).toBeVisible();
+  await expect(page.locator(".taxonomy-grid:visible")).toBeVisible();
 });

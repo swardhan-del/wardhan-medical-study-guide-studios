@@ -1,3 +1,4 @@
+import { studySubjects } from "@/lib/study-collections";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 import { SubjectLearningPath } from "@/components/subject-learning-path";
 import Link from "next/link";
@@ -38,6 +39,7 @@ export default async function SubjectPage({ params }: Props) {
         <h1>{s.title}</h1>
         <p className="interior-lede">{slug === "histology" ? "Learn to identify tissues by their architecture, cells, and extracellular features. Connect what you see with how the tissue functions and develops." : s.description}</p>
       </header>
+      {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={"/study/" + (s.learningSubject || slug)}>Open lessons and recaps in My Study</Link></div>}
       {slug === "anatomy" && <AnatomyTopicNav />}
       <SubjectLearningPath subject={slug === "immunology" ? slug : s.learningSubject || slug} />
       <section id="archive-directory" aria-label="Systems and topics">

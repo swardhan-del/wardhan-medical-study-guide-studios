@@ -1,8 +1,13 @@
 import { EducationalFigure, FigureGallery } from "./educational-figure";
 import { figuresForResource } from "@/lib/figures";
+import { videosForLesson } from "@/lib/videos";
 import { LessonVideos } from "./lesson-videos";
 import { ResourceBreadcrumbs } from "./taxonomy-navigation";
 import references from "@/content/lesson-references.json";
+import studio from "@/content/study-questions.json";
+import audioData from "@/content/study-audio.json";
+import { StudyAudio, type StudyAudioRecord } from "./study-audio";
+import { StudyReel } from "./study-reel";
 import transfer from "@/content/transfer-practice.json";
 import { PracticeQuestion } from "./practice-question";
 import { SavedRecall } from "./saved-recall";
@@ -66,14 +71,15 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         <h1>{lesson.title}</h1>
         <p className="interior-lede">{lesson.summary}</p>
         <p className="muted-note">
-          A focused introduction for revision. Use the source guide and further
-          reading for the full topic.
+          Read the explanation, check your understanding and revisit the recap. Further reading and editorial notes are included below.
         </p>
         <div className="action-row">
           <a className="button button-primary" href="#concept-check-title">
             Try the question ↓
           </a>
           <SaveButton id={lesson.id} title={lesson.title} />
+          {videosForLesson(lesson.id).length > 0 && <a className="text-link" href="#lesson-videos">Watch video</a>}
+          {(audioData.records as StudyAudioRecord[]).some(a => a.lessonId === lesson.id) && <a className="text-link" href="#audio-recap">Listen to audio recap</a>}
           <a href="#lesson-source" className="text-link">
             Guide and sources
           </a>
@@ -157,11 +163,14 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
               </p>
             </section>
           )}
+          {!["epithelia", "microscopy", "renal-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id)} title="Connect the figure with the explanation" />}
+          <StudyReel title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", body: lesson.recall.prompt }]} />
           <ConceptCheck
             key={lesson.id}
             lesson={{ id: lesson.id, question: lesson.question }}
           />
-          {transfer.questions
+          <span id="studio-practice" />
+          {[...transfer.questions, ...studio.questions]
             .filter((q) => q.topic === lesson.id)
             .map((q) => (
               <PracticeQuestion
@@ -248,15 +257,16 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
       <nav className="action-row concept-end" aria-label="Continue studying">
         <Link
           className="button button-primary"
-          href={`/library?subject=${subject.id}`}
+          href={`/study/${subject.id}`}
         >
-          More {subject.title} →
+          {subject.title} in My Study →
         </Link>
         <Link className="text-link" href="/library">
           Explore all subjects
         </Link>
       </nav>
       <LessonVideos lessonId={lesson.id} />
+      {(audioData.records as StudyAudioRecord[]).filter(a => a.lessonId === lesson.id).map(a => <StudyAudio key={a.lessonId} audio={a} />)}
     </article>
   );
 }
