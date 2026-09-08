@@ -9,6 +9,7 @@ export function StudyCollectionBrowser({ cards, groups }: { cards: LessonCard[];
   const id = useId();
   const filtered = cards.filter(c => (group === "all" || c.group === group) && (format !== "video" || c.videoId) && (format !== "audio" || c.audio) && (format !== "figures" || c.figure) && query.trim().toLowerCase().split(/\s+/).every(word => (c.title + " " + c.summary + " " + c.tags.join(" ")).toLowerCase().includes(word)));
   return <section aria-label="Browse subject lessons">
+    <nav className="studio-jump" aria-label="Choose a study section">{groups.map(g => <button key={g.id} aria-pressed={group === g.id} onClick={() => { setGroup(g.id); setQuery(""); setFormat("all"); }}>{g.title}</button>)}</nav>
     <div className="studio-filters">
       <label htmlFor={id + "-search"}>Search this subject<input id={id + "-search"} type="search" placeholder="Search topics, lessons, or keywords" value={query} onChange={e => setQuery(e.target.value)} /></label>
       <label htmlFor={id + "-topic"}>Section<select id={id + "-topic"} value={group} onChange={e => setGroup(e.target.value)}><option value="all">All sections</option>{groups.map(g => <option key={g.id} value={g.id}>{g.title}</option>)}</select></label>

@@ -3935,3 +3935,7 @@ select:focus-visible {
   .revision-page .revision-source{font-size:8pt}
   @page{size:A4;margin:16mm}
 }
+
+.studio-jump button {border:1px solid var(--line);border-radius:24px;padding:.65rem 1rem;font:inherit;font-size:.95rem;background:transparent;color:var(--ink);cursor:pointer;text-align:left;}
+.studio-jump button[aria-pressed="true"] {background:var(--teal);color:white;border-color:var(--teal);}
+@media(max-width:640px){.studio-jump button{font-size:.85rem}}
