@@ -3860,3 +3860,35 @@ select:focus-visible {
 .section-heading + .learning-collection {
   margin-top: 2rem;
 }
+
+.study-courses {
+  margin-bottom: 3rem;
+}
+.study-subject h3 {
+  margin: 0 0 1.2rem;
+  font: 400 1.65rem/1.3 var(--serif);
+  color: var(--teal);
+}
+.study-course {
+  border-top: 1px solid var(--line);
+  padding-top: 1.2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5rem;
+}
+.study-course h4 {
+  margin: 0 0 0.6rem;
+  font: 400 1.4rem/1.3 var(--serif);
+}
+.study-course p {
+  margin: 0.5rem 0;
+}
+.study-course a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 620px) {
+  .study-course {
+    grid-template-columns: 1fr;
+  }
+}

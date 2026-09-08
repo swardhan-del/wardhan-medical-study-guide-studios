@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { href: "/library", label: "Library" },
   { href: "/study", label: "My Study" },
-  { href: "/learn/renal", label: "Renal course" },
   { href: "/subjects", label: "Subjects" },
   { href: "/contact", label: "Contact" },
 ];
@@ -44,13 +43,16 @@ export function SiteNav() {
             </li>
             {navItems.map((item) => {
               const isActive =
-                pathname === item.href || pathname.startsWith(`${item.href}/`);
+                pathname === item.href ||
+                pathname.startsWith(`${item.href}/`) ||
+                (item.href === "/study" &&
+                  (pathname === "/learn/renal" || pathname.startsWith("/learn/renal/")));
               return (
                 <li key={item.href}>
                   <Link
                     className={`nav-link${isActive ? " is-active" : ""}`}
                     href={item.href}
-                    aria-current={isActive ? "page" : undefined}
+                    aria-current={pathname === item.href ? "page" : undefined}
                   >
                     {item.label}
                   </Link>
