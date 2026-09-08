@@ -6,3 +6,11 @@ out/
 .env*
 !.env.example
 .vercel/
+.private/
+playwright-report/
+test-results/
+
+*.tsbuildinfo
+
+output/
+.vercel

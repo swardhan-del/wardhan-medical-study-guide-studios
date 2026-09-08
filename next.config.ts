@@ -1,7 +1,40 @@
 import type { NextConfig } from "next";
-
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_LEARNING_ANALYTICS:
+      process.env.VERCEL_ENV === "production" ? "1" : "0",
+  },
+  poweredByHeader: false,
+  outputFileTracingExcludes: { "/*": ["./.private/**/*", "./.private/catalog.json"] },
+  async redirects() {
+    return [{ source: "/images/anatomy/volume-1.png", destination: "/images/anatomy/mediastinal-plane.svg", permanent: true }];
+  },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "X-Frame-Options", value: "DENY" },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
+          ...(process.env.VERCEL_ENV !== "production"
+            ? [{ key: "X-Robots-Tag", value: "noindex, nofollow" }]
+            : []),
+        ],
+      },
+      {
+        source: "/review/:path*",
+        headers: [
+          { key: "Cache-Control", value: "private, no-store" },
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+        ],
+      },
+    ];
+  },
 };
-
 export default nextConfig;

@@ -1,0 +1,165 @@
+{
+  "questions": [
+    {
+      "id": "epithelia-transfer-1",
+      "topic": "epithelia",
+      "subject": "histology",
+      "title": "Epithelia: layers, shape and function",
+      "href": "/library/epithelia#apply-the-concept",
+      "prompt": "A lining has nuclei at different heights. What additional observation best distinguishes pseudostratified from stratified epithelium?",
+      "options": [
+        {
+          "text": "Trace whether every cell reaches the basement membrane.",
+          "explanation": "In pseudostratified epithelium all cells reach the basement membrane, although some do not reach the lumen; true stratification includes cells above the basal layer."
+        },
+        {
+          "text": "Count all nuclei seen in the section, regardless of cell boundaries.",
+          "explanation": "Nuclear height or the total number of nuclear profiles alone cannot establish the number of epithelial layers."
+        },
+        {
+          "text": "Check whether the superficial cells are taller than they are wide.",
+          "explanation": "Surface-cell shape helps name an epithelium, but columnar cells can occur in both arrangements."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "epithelia-transfer-2",
+      "topic": "epithelia",
+      "subject": "histology",
+      "title": "Epithelia: layers, shape and function",
+      "href": "/library/epithelia#apply-the-concept",
+      "prompt": "A model exchange surface changes from one thin cell layer to several layers. With other variables fixed, what is the most direct consequence?",
+      "options": [
+        {
+          "text": "Diffusion becomes faster because there are more cells.",
+          "explanation": "Adding layers increases the diffusion path; cell number alone does not improve passive exchange."
+        },
+        {
+          "text": "The diffusion path increases, making passive exchange slower.",
+          "explanation": "A thin barrier shortens the path for diffusion. Several layers may help resist abrasion but impose a longer exchange path."
+        },
+        {
+          "text": "Transport is unchanged as long as the surface area is unchanged.",
+          "explanation": "Diffusion depends on barrier thickness as well as area and the concentration or partial-pressure gradient."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "nitrogen-transfer",
+      "topic": "nitrogen-metabolism",
+      "subject": "biochemistry",
+      "title": "Amino-acid nitrogen and urea",
+      "href": "/library/nitrogen-metabolism#apply-the-concept",
+      "prompt": "Why can transferring an amino group to glutamate not, by itself, complete nitrogen disposal?",
+      "options": [
+        {
+          "text": "The nitrogen has changed carrier but still needs a route to elimination.",
+          "explanation": "Transamination redistributes nitrogen. The amino nitrogen must still be processed and ultimately excreted; the carbon skeleton follows its own metabolic fate."
+        },
+        {
+          "text": "Transamination always converts the amino nitrogen directly into urea.",
+          "explanation": "Urea formation requires the urea-cycle reactions. An amino-group transfer is not the complete disposal pathway."
+        },
+        {
+          "text": "Once nitrogen reaches glutamate it cannot enter another pathway.",
+          "explanation": "Glutamate collects and transfers nitrogen; it is a metabolic intermediate rather than a permanent endpoint."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "renal-experiment-efferent",
+      "topic": "renal-experiments",
+      "subject": "physiology",
+      "title": "Predict a renal circuit response",
+      "href": "/practice/physiology#renal",
+      "prompt": "In the fixed-pressure two-resistor model, double efferent resistance while keeping afferent resistance at 1. What happens relative to baseline?",
+      "options": [
+        {
+          "text": "Flow falls and glomerular pressure rises.",
+          "explanation": "Total resistance increases, lowering flow. A larger share of the fixed pressure drop is across the efferent resistance, raising pressure upstream of it. This circuit does not calculate GFR."
+        },
+        {
+          "text": "Flow and glomerular pressure both fall.",
+          "explanation": "Flow falls, but efferent resistance is downstream of the glomerular node; pressure at that node rises in this fixed-pressure model."
+        },
+        {
+          "text": "Flow rises because glomerular pressure rises.",
+          "explanation": "Pressure at an intermediate point is not the same as flow through the circuit. Total resistance has increased."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "renal-experiment-afferent",
+      "topic": "renal-experiments",
+      "subject": "physiology",
+      "title": "Predict a renal circuit response",
+      "href": "/practice/physiology#renal",
+      "prompt": "Now double only afferent resistance. Which prediction follows from the same model?",
+      "options": [
+        {
+          "text": "Flow falls but glomerular pressure rises.",
+          "explanation": "That was the downstream-resistance manipulation. Increasing upstream resistance lowers pressure at the glomerular node."
+        },
+        {
+          "text": "Flow and glomerular pressure both fall.",
+          "explanation": "The total resistance rises and more of the pressure drop occurs before the glomerular node. This is a circuit prediction, not a clinical GFR estimate."
+        },
+        {
+          "text": "Flow is unchanged because arterial pressure is fixed.",
+          "explanation": "A fixed driving pressure does not fix flow when total resistance changes."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "micrograph-a-check",
+      "topic": "histology-micrographs",
+      "subject": "histology",
+      "title": "Real section A",
+      "href": "/practice/histology?visual=a#microscope-sequence",
+      "prompt": "Which classification best describes the lining of the large open tubule in section A?",
+      "options": [
+        {
+          "text": "Simple cuboidal epithelium",
+          "explanation": "The lining forms one layer of cells with roughly similar height and width. Follow a single tubule wall; nearby tubules are separate structures, not extra epithelial layers."
+        },
+        {
+          "text": "Stratified cuboidal epithelium",
+          "explanation": "Several adjacent tubules can mimic layers. A stratified epithelium has multiple layers within one lining between its basal boundary and free surface."
+        },
+        {
+          "text": "Simple squamous epithelium",
+          "explanation": "Squamous cells are flattened. These tubular cells have appreciable cytoplasm around rounded nuclear profiles."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "micrograph-b-check",
+      "topic": "histology-micrographs",
+      "subject": "histology",
+      "title": "Transfer section B",
+      "href": "/practice/histology?visual=b#microscope-sequence",
+      "prompt": "How should the thick lining facing the broad pale space in section B be classified?",
+      "options": [
+        {
+          "text": "Simple columnar epithelium",
+          "explanation": "One layer of tall cells would connect the basal boundary to the surface. This lining contains many cell layers."
+        },
+        {
+          "text": "Pseudostratified columnar epithelium",
+          "explanation": "Uneven nuclear heights alone do not make an epithelium stratified. Here the tissue has distinct stacked layers with flattening toward the free surface."
+        },
+        {
+          "text": "Stratified squamous epithelium",
+          "explanation": "Multiple layers lie between the basal boundary and the free surface. Superficial cells flatten, so classification uses the surface cells rather than the deeper rounded cells."
+        }
+      ],
+      "answer": 2
+    }
+  ]
+}

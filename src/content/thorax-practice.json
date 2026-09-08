@@ -1,0 +1,342 @@
+{
+  "reviewedAt": "2026-09-07",
+  "sources": [
+    {
+      "id": "volume-i",
+      "title": "Your curated Volume I — Thorax, Heart, Lungs & Mediastinum",
+      "url": "#source-volume-i",
+      "sections": "Thoracic Wall 1–4; Diaphragm 18–22; Pleura 24–27; Lungs 36–38; Mediastinum 2–4 and 19–22."
+    },
+    {
+      "id": "lungs",
+      "title": "OpenStax — The lungs",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+    },
+    {
+      "id": "breathing",
+      "title": "OpenStax — The process of breathing",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+    },
+    {
+      "id": "cage",
+      "title": "OpenStax — The thoracic cage",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+    },
+    {
+      "id": "mediastinum",
+      "title": "NCBI Bookshelf — Anatomy of the mediastinum",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK539819/"
+    },
+    {
+      "id": "phrenic",
+      "title": "NCBI Bookshelf — Phrenic nerves",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK513325/"
+    }
+  ],
+  "structures": [
+    {
+      "id": "right-lung",
+      "name": "Right lung",
+      "x": 27,
+      "y": 44,
+      "description": "On the person’s right, which appears on your left in this front view. It has three lobes: superior, middle and inferior. Its base rests against the diaphragm.",
+      "connection": "Compare the right lung’s three lobes with the left lung’s two.",
+      "source": "lungs"
+    },
+    {
+      "id": "left-lung",
+      "name": "Left lung",
+      "x": 74,
+      "y": 44,
+      "description": "On the person’s left, shown on your right. It has superior and inferior lobes. The cardiac notch accommodates the heart; the lingula belongs to the superior lobe.",
+      "connection": "The lingula is a projection of the superior lobe, not a third lobe.",
+      "source": "lungs"
+    },
+    {
+      "id": "mediastinum",
+      "name": "Mediastinum",
+      "x": 50,
+      "y": 37,
+      "description": "The central region between the two pleural sacs. It contains the heart and pericardium, great vessels, trachea, esophagus and other structures. The heart and pericardium occupy its middle subdivision.",
+      "connection": "The lungs lie to either side of the mediastinum. The mediastinum is a region containing structures, not an empty air space.",
+      "source": "mediastinum"
+    },
+    {
+      "id": "diaphragm",
+      "name": "Diaphragm",
+      "x": 50,
+      "y": 79,
+      "description": "The muscular partition between the chest and abdomen. Its domes descend as it contracts during inspiration, increasing the vertical dimension of the thorax. Each half receives motor supply from its phrenic nerve (C3–C5).",
+      "connection": "Follow structure → movement → volume: contraction lowers the domes and helps expand the chest.",
+      "source": "phrenic"
+    },
+    {
+      "id": "trachea",
+      "name": "Trachea",
+      "x": 50,
+      "y": 18,
+      "description": "The central conducting airway descends into the chest and divides into the right and left main bronchi. Each bronchus enters its lung at the root.",
+      "connection": "Trace the route: trachea → main bronchus → smaller airways. Air is inside airways, not inside the pleural cavity.",
+      "source": "volume-i"
+    },
+    {
+      "id": "pleura",
+      "name": "Pleural layers",
+      "x": 17,
+      "y": 60,
+      "description": "Visceral pleura follows the lung surface; parietal pleura lines the chest wall, diaphragm and mediastinal boundary. The thin potential space between them contains a film of fluid.",
+      "connection": "The outlines are deliberately separated in this schematic so you can see them. They do not represent a large, normally air-filled gap.",
+      "source": "lungs"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Start with the boundaries",
+      "text": "The thoracic wall combines the sternum at the front, ribs and intercostal tissues at the sides, and thoracic vertebrae behind. The superior opening communicates with the neck; the diaphragm separates the thorax from the abdomen below."
+    },
+    {
+      "title": "Separate the compartments",
+      "text": "Each lung is enclosed by its own pleural sac. Between those sacs, the mediastinum extends from sternum to vertebral column. The heart sits within the pericardium in the middle mediastinum. Distinguish these nested coverings from the organs they surround."
+    },
+    {
+      "title": "Use a landmark to organize depth",
+      "text": "The sternal angle is the joint between the manubrium and body of the sternum. Its approximate plane through the T4–T5 intervertebral disc separates superior from inferior mediastinum. The inferior region has anterior, middle and posterior subdivisions."
+    }
+  ],
+  "questions": [
+    {
+      "id": "thorax-compartment",
+      "prompt": "Which region lies between the right and left pleural sacs?",
+      "options": [
+        "Mediastinum",
+        "Peritoneal cavity",
+        "Interior of the trachea"
+      ],
+      "answer": 0,
+      "explanations": [
+        "The mediastinum is the central thoracic region between the pleural sacs.",
+        "The peritoneal cavity belongs to the abdomen and pelvis, below the diaphragm.",
+        "The trachea has an airway lumen, but that lumen is not the central thoracic region."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-visceral",
+      "prompt": "Which layer follows the lung surface and extends into its fissures?",
+      "options": [
+        "Parietal pleura",
+        "Visceral pleura",
+        "Fibrous pericardium"
+      ],
+      "answer": 1,
+      "explanations": [
+        "Parietal pleura lines the surrounding thoracic boundaries.",
+        "Visceral pleura is the layer directly covering the lung, including the fissures.",
+        "The fibrous pericardium is an outer covering around the heart, not the lung."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-potential",
+      "prompt": "What normally occupies the pleural cavity?",
+      "options": [
+        "A reservoir of inhaled air",
+        "The heart",
+        "A thin film of serous fluid"
+      ],
+      "answer": 2,
+      "explanations": [
+        "Inhaled air travels through the airways into the lungs. Air in the pleural space is abnormal.",
+        "The heart lies in its pericardial sac within the mediastinum.",
+        "This is a potential space with a small amount of lubricating fluid between the pleural layers."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-wall",
+      "prompt": "Which structure forms the central bony part of the anterior thoracic wall?",
+      "options": [
+        "Sternum",
+        "Thoracic vertebral column",
+        "Diaphragm"
+      ],
+      "answer": 0,
+      "explanations": [
+        "The sternum is the midline bone at the front of the chest.",
+        "The thoracic vertebrae form the posterior part of the bony framework.",
+        "The diaphragm is a muscle forming the inferior partition, not an anterior midline bone."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-angle",
+      "prompt": "The sternal angle marks the junction of which two structures?",
+      "options": [
+        "Clavicle and first rib",
+        "Manubrium and body of the sternum",
+        "Body of the sternum and xiphoid process"
+      ],
+      "answer": 1,
+      "explanations": [
+        "Neither the clavicle nor first rib forms the sternal angle.",
+        "The manubriosternal joint forms the sternal angle and helps locate the approximate T4–T5 plane.",
+        "The xiphisternal joint lies lower; it is a different landmark."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-boundary",
+      "prompt": "Which structure separates the thoracic and abdominal cavities?",
+      "options": [
+        "Mediastinal pleura",
+        "Sternal angle",
+        "Diaphragm"
+      ],
+      "answer": 2,
+      "explanations": [
+        "Mediastinal pleura forms a lateral boundary of the mediastinum.",
+        "The sternal angle is a surface landmark within the thoracic region.",
+        "The diaphragm is the muscular partition between thorax and abdomen, with openings for structures that cross it."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-inspiration",
+      "prompt": "During quiet inspiration, what does contraction of the diaphragm do?",
+      "options": [
+        "Lowers its domes and increases thoracic volume",
+        "Raises its domes and reduces thoracic volume",
+        "Turns the pleural cavity into an air-filled chamber"
+      ],
+      "answer": 0,
+      "explanations": [
+        "The contracting diaphragm descends, increasing the vertical dimension of the chest.",
+        "Rising of the relaxed domes is associated with quiet expiration.",
+        "The pleural cavity remains a fluid-lined potential space during normal breathing."
+      ],
+      "source": "breathing"
+    },
+    {
+      "id": "thorax-phrenic",
+      "prompt": "Which nerve provides motor supply to the diaphragm?",
+      "options": [
+        "Vagus nerve",
+        "Phrenic nerve (C3–C5)",
+        "Intercostobrachial nerve"
+      ],
+      "answer": 1,
+      "explanations": [
+        "The vagus carries important autonomic pathways but is not the diaphragm’s motor nerve.",
+        "The right and left phrenic nerves supply the respective halves of the diaphragm.",
+        "The intercostobrachial nerve is mainly a cutaneous sensory nerve, not a motor nerve for the diaphragm."
+      ],
+      "source": "phrenic"
+    },
+    {
+      "id": "thorax-lobes",
+      "prompt": "Which normal lung-lobe comparison is correct?",
+      "options": [
+        "Right: two; left: three",
+        "Both: three",
+        "Right: three; left: two"
+      ],
+      "answer": 2,
+      "explanations": [
+        "This reverses the usual right and left counts.",
+        "The left lung has no separate middle lobe.",
+        "The right has superior, middle and inferior lobes; the left has superior and inferior lobes."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-lingula",
+      "prompt": "The lingula is part of which lobe?",
+      "options": [
+        "Right middle lobe",
+        "Left superior lobe",
+        "Left inferior lobe"
+      ],
+      "answer": 1,
+      "explanations": [
+        "The right middle lobe is on the opposite side and is a separate lobe.",
+        "The lingula is a projection of the left superior lobe.",
+        "The lingula does not belong to the left inferior lobe."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-heart",
+      "prompt": "The heart and its pericardial sac lie primarily in which mediastinal subdivision?",
+      "options": [
+        "Middle mediastinum",
+        "Posterior mediastinum",
+        "Anterior mediastinum"
+      ],
+      "answer": 0,
+      "explanations": [
+        "The middle mediastinum contains the heart and pericardium.",
+        "The posterior mediastinum lies behind the pericardium and includes the esophagus and descending thoracic aorta.",
+        "The anterior mediastinum is the region between the sternum and pericardium."
+      ],
+      "source": "volume-i"
+    },
+    {
+      "id": "thorax-orientation",
+      "prompt": "In a front view of a person facing you, where is that person’s right lung on your screen?",
+      "options": [
+        "On your right",
+        "Always in the middle",
+        "On your left"
+      ],
+      "answer": 2,
+      "explanations": [
+        "Your right corresponds to the person’s left when you face one another.",
+        "The lungs are paired lateral organs, with the mediastinum between them.",
+        "Anatomical right and left refer to the person, so their right appears on the viewer’s left."
+      ],
+      "source": "volume-i"
+    }
+  ],
+  "oral": [
+    {
+      "id": "boundaries",
+      "prompt": "Describe the boundaries and main compartments of the thorax in 60 seconds.",
+      "answer": "Name the sternum anteriorly, thoracic vertebral column posteriorly and ribs/intercostal tissues laterally. Add the superior opening toward the neck and the diaphragm below. Then locate the two pleural sacs with the mediastinum between them.",
+      "checklist": [
+        "I named anterior, posterior and lateral boundaries.",
+        "I included the superior opening and diaphragm.",
+        "I separated the pleural sacs from the mediastinum."
+      ]
+    },
+    {
+      "id": "coverings",
+      "prompt": "Explain why the lung is not floating in a large pleural cavity.",
+      "answer": "Visceral pleura is attached to the lung surface. Parietal pleura lines the thoracic boundaries. Their close apposition leaves a fluid-lined potential space, which reduces friction during breathing. The lung lies within a pleural sac; air normally enters the lung through its airways.",
+      "checklist": [
+        "I distinguished visceral and parietal pleura.",
+        "I described a potential space and a fluid film.",
+        "I kept airway air separate from the pleural space."
+      ]
+    },
+    {
+      "id": "breathing",
+      "prompt": "Connect the diaphragm’s position, nerve supply and action during inspiration.",
+      "answer": "The diaphragm separates chest and abdomen. Phrenic nerves from C3–C5 provide its motor supply. During inspiration its muscle contracts, lowering the domes and increasing thoracic volume. In quiet expiration it relaxes as elastic recoil helps the domes rise again.",
+      "checklist": [
+        "I located the diaphragm.",
+        "I named the phrenic nerves and C3–C5.",
+        "I connected contraction, descent and increased volume."
+      ]
+    },
+    {
+      "id": "comparison",
+      "prompt": "Compare the right and left lungs, then place the heart between them.",
+      "answer": "The right lung has three lobes and the left has two. The lingula is part of the left superior lobe. Each lung is enclosed by a separate pleural sac. Between them, the mediastinum contains the heart and pericardium in its middle subdivision.",
+      "checklist": [
+        "I gave the correct lobe counts.",
+        "I located the lingula.",
+        "I placed the heart and pericardium in the middle mediastinum."
+      ]
+    }
+  ]
+}

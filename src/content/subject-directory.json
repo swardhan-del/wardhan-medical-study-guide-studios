@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "updatedAt": "2026-09-07",
+  "subjects": [
+    {
+      "id": "anatomy",
+      "title": "Macroscopic Anatomy & Embryology",
+      "description": "Regional anatomy, five volumes and developmental connections.",
+      "learningSubject": "anatomy"
+    },
+    {
+      "id": "histology",
+      "title": "Microscopic Anatomy, Histology & Embryology",
+      "description": "Microscopy, basic tissues, organs and development across both courses.",
+      "learningSubject": "histology"
+    },
+    {
+      "id": "histology-i",
+      "title": "Microscopic Anatomy & Embryology I",
+      "description": "Build a foundation in microscopy and the four basic tissues, then explore blood, vessels, lymphoid organs, digestive, respiratory, urinary and reproductive histology, implantation and placental development.",
+      "learningSubject": "histology"
+    },
+    {
+      "id": "histology-ii",
+      "title": "Microscopic Anatomy & Embryology II",
+      "description": "Connect nervous-tissue structure with neurulation, brain and spinal-cord organization, sensory and motor pathways, autonomic reflexes, endocrine organs, special senses and their developmental origins.",
+      "learningSubject": "histology"
+    },
+    {
+      "id": "cell-biology",
+      "title": "Molecular & Cell Biology",
+      "description": "Molecular mechanisms, cellular structures and laboratory techniques.",
+      "learningSubject": "cell-biology"
+    },
+    {
+      "id": "biochemistry",
+      "title": "Biochemistry",
+      "description": "Biomolecules, enzymes, metabolism and the topic-based guide collection.",
+      "learningSubject": "biochemistry"
+    },
+    {
+      "id": "physiology",
+      "title": "Medical Physiology",
+      "description": "Cellular, cardiovascular, respiratory, renal, blood, gastrointestinal, endocrine and nervous-system physiology.",
+      "learningSubject": "physiology"
+    },
+    {
+      "id": "genetics",
+      "title": "Medical Genetics",
+      "description": "Inheritance, cytogenetics, pedigrees and diagnostic methods.",
+      "learningSubject": "genetics"
+    },
+    {
+      "id": "immunology",
+      "title": "Immunology",
+      "description": "Innate and adaptive immunity, antigen presentation, complement, vaccines and therapies.",
+      "learningSubject": "genetics"
+    },
+    {
+      "id": "microbiology",
+      "title": "Microbiology & Antimicrobials",
+      "description": "The existing sterilisation, disinfection and antibiotic source collection.",
+      "learningSubject": null
+    },
+    {
+      "id": "biostatistics",
+      "title": "Biostatistics",
+      "description": "The medical statistics reference collection.",
+      "learningSubject": null
+    }
+  ],
+  "entries": []
+}

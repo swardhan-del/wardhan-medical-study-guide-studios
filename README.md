@@ -1,21 +1,9 @@
 # Wardhan Medical Study Guide Studios
 
-Public landing site for Wardhan Medical Study Guide Studios.
+Native medical library with subject, system, topic and resource pages; searchable released lessons, practice and PDF viewing/download. Dropbox remains the controlled source archive.
 
-The public content pack was empty at build time, so this release intentionally contains no public collections, downloadable assets, source files, or collection-specific study-guide content. The subject map is interest-only and every card is marked “Public release in preparation.”
+See [Native library](docs/NATIVE_LIBRARY.md) for the content model, release boundary, update workflow and hosting dependencies.
 
-## Routes
+Run `npm ci`, `npm run content:check`, `npm test`, `npm run typecheck`, `npm run lint`, `npm run build` and `npm run test:e2e`.
 
-- `/`
-- `/about`
-- `/subjects`
-- `/contact`
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-Build validation uses `npm run build`; linting uses `npm run lint`.
+This work targets a Vercel preview. Production promotion is a separate step.

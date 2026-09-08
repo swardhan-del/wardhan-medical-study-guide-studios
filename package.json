@@ -6,19 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prebuild": "node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs",
+    "content:check": "node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs",
+    "content:library": "node scripts/build-library-catalog.mjs",
+    "content:import": "node scripts/import-curation.mjs",
+    "review": "node scripts/local-review.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "postbuild": "node scripts/check-build.mjs",
+    "content:directory": "node scripts/check-subject-directory.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.0.0",
     "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=24 <27"
   }
 }

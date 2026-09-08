@@ -3,46 +3,71 @@ export type SubjectInterest = {
   number: string;
   title: string;
   description: string;
+  topics: readonly string[];
 };
-
 export const subjectInterests: ReadonlyArray<SubjectInterest> = [
   {
-    id: "anatomy-structure",
+    id: "anatomy",
     number: "01",
-    title: "Anatomy & structure",
-    description: "A place for future resources that make structure easier to return to.",
+    title: "Macroscopic Anatomy & Embryology",
+    description:
+      "Study the organisation of the human body and connect anatomical relationships with development.",
+    topics: [
+      "Regional anatomy",
+      "Thorax",
+      "Abdomen",
+      "Musculoskeletal system",
+      "Embryology",
+    ],
   },
   {
-    id: "physiology-systems",
+    id: "histology",
     number: "02",
-    title: "Physiology & systems",
-    description: "A future home for resources that connect systems with clear sequence.",
+    title: "Microscopic Anatomy, Histology & Embryology",
+    description:
+      "Recognise cells, tissues, and organs, and connect microscopic structure with function and development.",
+    topics: [
+      "Cells and tissues",
+      "Organ histology",
+      "Microscopic structure",
+      "Integrated embryology",
+    ],
   },
   {
-    id: "molecular-foundations",
+    id: "cell-biology",
     number: "03",
-    title: "Molecular foundations",
-    description: "A future home for independently authored molecular-science learning resources.",
+    title: "Molecular & Cell Biology",
+    description:
+      "Explore how cells organise, communicate, divide, and maintain their genetic information.",
+    topics: ["Cell organization", "Molecular mechanisms", "Cell signaling"],
   },
   {
-    id: "cellular-organization",
+    id: "biochemistry",
     number: "04",
-    title: "Cellular organization",
-    description: "A future home for carefully structured ways to revisit cellular ideas.",
+    title: "Biochemistry",
+    description:
+      "Connect molecular structure, enzyme activity, and metabolic pathways to the workings of the body.",
+    topics: ["Biomolecules", "Metabolic pathways", "Molecular foundations"],
   },
   {
-    id: "genetics-immunity",
+    id: "physiology",
     number: "05",
-    title: "Genetics & immunity",
-    description: "A future home for resources built around connections worth remembering.",
+    title: "Medical Physiology",
+    description:
+      "Understand how body systems function, interact, and maintain a stable internal environment.",
+    topics: [
+      "Cellular physiology",
+      "Cardiovascular physiology",
+      "Respiratory physiology",
+      "Renal and acid–base physiology",
+    ],
   },
   {
-    id: "clinical-study-skills",
+    id: "genetics",
     number: "06",
-    title: "Clinical study skills",
-    description: "A future home for practical approaches to building a durable study practice.",
+    title: "Genetics & Immunology",
+    description:
+      "Study inheritance, genetic variation, and immune responses through connected explanations and practice.",
+    topics: ["Genetics", "Inheritance and variation", "Immunology"],
   },
 ];
-
-// Intentionally empty until a separate public release decision is recorded.
-export const publicCollections: ReadonlyArray<never> = [];

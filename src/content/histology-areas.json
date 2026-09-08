@@ -1,0 +1,65 @@
+{
+  "areas": [
+    {
+      "id": "foundations",
+      "title": "Microscopy and the basic tissues",
+      "description": "Learn how preparation and staining influence what you see. Build recognition around epithelial, connective, muscle and nervous tissues, then describe cells, fibers, boundaries and their arrangement.",
+      "lessons": [
+        "microscopy",
+        "epithelia",
+        "connective-tissue",
+        "muscle-histology"
+      ],
+      "sources": []
+    },
+    {
+      "id": "blood-lymphoid",
+      "title": "Blood, vessels and lymphoid organs",
+      "description": "Compare blood-cell lineages, bone marrow and vessel walls, then identify the organization of lymph node, spleen and thymus. Relate each tissue’s arrangement to its role in circulation or immune-cell organization.",
+      "lessons": ["blood-marrow", "vessel-histology", "lymphoid-organs"],
+      "sources": []
+    },
+    {
+      "id": "respiratory-urinary",
+      "title": "Respiratory and urinary systems",
+      "description": "Follow the changing architecture from conducting airways to alveoli, and from renal corpuscles and tubules to ureter and bladder. Practice recognizing lining epithelia, supporting tissue and exchange surfaces.",
+      "lessons": ["respiratory-histology", "renal-histology"],
+      "sources": []
+    },
+    {
+      "id": "digestive",
+      "title": "Oral cavity and digestive organs",
+      "description": "Use the layers of the gut wall as an organizing pattern. Compare oral and dental structures, salivary glands, esophagus, stomach, intestines, liver, gallbladder and pancreas through their distinctive glands, ducts and tissue arrangements.",
+      "lessons": ["gi-histology", "liver-pancreas"],
+      "sources": []
+    },
+    {
+      "id": "reproduction-development",
+      "title": "Reproduction and early development",
+      "description": "Connect male and female reproductive histology with gamete production, cyclic tissue changes, implantation and placental organization. Follow developmental stages alongside the structures seen in mature tissue sections.",
+      "lessons": ["reproductive-histology", "placenta"],
+      "sources": []
+    },
+    {
+      "id": "neurodevelopment",
+      "title": "Nervous tissue and neurodevelopment",
+      "description": "Study neurons, glia and nervous-system organization together with neurulation, brain-vesicle development, neural crest and placodes. Link developmental origins to the later arrangement of the brain, spinal cord and peripheral structures.",
+      "lessons": ["neurulation"],
+      "sources": []
+    },
+    {
+      "id": "reflexes-endocrine",
+      "title": "Spinal cord, reflexes and endocrine connections",
+      "description": "Trace sensory input, central connections and motor or autonomic output. Use the spinal-cord and reflex collections alongside the selected endocrine guide to relate pathways, nuclei and glandular organization.",
+      "lessons": [],
+      "sources": []
+    },
+    {
+      "id": "special-senses",
+      "title": "Special senses, skin and practical recognition",
+      "description": "Explore eye and ear development, auditory and vestibular structures, olfaction and taste. Extend the same structure–function approach to skin and maxillofacial topics, then use the practical collection for slide descriptions and drawing practice.",
+      "lessons": ["microscopy"],
+      "sources": []
+    }
+  ]
+}

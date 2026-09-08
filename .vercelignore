@@ -1,0 +1,13 @@
+.private
+.private/
+.private/**
+test-results/
+playwright-report/
+tests/
+.git/
+node_modules/
+.next/
+
+output/
+
+.env*

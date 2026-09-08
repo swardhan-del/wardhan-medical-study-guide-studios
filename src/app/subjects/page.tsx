@@ -1,34 +1,62 @@
-import { SubjectCard } from "@/components/subject-card";
-import { publicCollections, subjectInterests } from "@/content/subjects";
-
+import { FigureThumbnail } from "@/components/educational-figure";
+import { figureForSubject } from "@/lib/figures";
+import Link from "next/link";
+import {
+  librarySubjects,
+  taxonomyNodes,
+  recordsForNode,
+  subjectRecords,
+} from "@/lib/taxonomy";
+import { TopicSearch } from "@/components/topic-search";
 export const metadata = {
-  title: "Subjects",
-  description: "Subject interests and public-release availability from Wardhan Medical Study Guide Studios.",
+  title: "Medical subjects",
+  description:
+    "Browse medical subjects, systems, topics and available study resources.",
+  alternates: { canonical: "/subjects" },
 };
-
 export default function SubjectsPage() {
-  const hasPublicCollections = publicCollections.length > 0;
-
   return (
-    <div className="page-stack page-interior">
-      <section className="interior-hero site-container" aria-labelledby="subjects-heading">
-        <p className="eyebrow">Subject interests</p>
-        <h1 id="subjects-heading">The fields the library is being shaped around.</h1>
-        <p className="interior-lede">These are areas of interest, not a catalogue of released study-guide content. Every card carries its current public status.</p>
+    <div className="site-container library-page">
+      <header className="library-heading">
+        <p className="eyebrow">Medical library</p>
+        <h1>Explore the medical sciences</h1>
+        <p className="interior-lede">
+          Browse by subject and connect structure, function, development, and disease mechanisms as you study.
+        </p>
+      </header>
+      <section
+        aria-label="Browse by subject"
+        className="directory-subject-grid"
+      >
+        {librarySubjects.map((s) => (
+          <article className="directory-subject-card" key={s.id}>
+            <FigureThumbnail figure={figureForSubject(s.id)} />
+            <h2>
+              <Link href={"/subjects/" + s.id}>{s.title}</Link>
+            </h2>
+            <p>{s.description}</p>
+            <p>{subjectRecords(s.id).length} resources available</p>
+            <Link
+              className="text-link"
+              aria-label={"Explore subject for " + s.title}
+              href={"/subjects/" + s.id}
+            >
+              Browse subtopics →
+            </Link>
+          </article>
+        ))}
       </section>
-      <section className="subjects-section site-container" aria-labelledby="availability-heading">
-        <div className="empty-state" role="status" aria-live="polite">
-          <span className="empty-state-code">{hasPublicCollections ? "01" : "00"}</span>
-          <div>
-            <p className="eyebrow">Public collections</p>
-            <h2 id="availability-heading">{hasPublicCollections ? "A public collection is in preparation." : "No public collections are available yet."}</h2>
-            <p>{hasPublicCollections ? "The first release will appear here after review." : "The subject map is ready; the public release layer is still being prepared."}</p>
-          </div>
-        </div>
-        <div className="subject-grid subjects-grid-page">
-          {subjectInterests.map((subject) => <SubjectCard key={subject.id} subject={subject} />)}
-        </div>
-      </section>
+      <h2 className="native-section-title">Find a topic across subjects</h2>
+      <TopicSearch
+        items={taxonomyNodes.map((n) => ({
+          id: n.id,
+          title: n.title,
+          subject: n.subject,
+          subjectTitle: librarySubjects.find((s) => s.id === n.subject)!.title,
+          kind: n.kind,
+          count: recordsForNode(n).length,
+        }))}
+      />
     </div>
   );
 }
