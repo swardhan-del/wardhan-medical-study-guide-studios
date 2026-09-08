@@ -5,7 +5,7 @@ export function LessonVideos({ lessonId }: { lessonId: string }) {
   const videos = videosForLesson(lessonId);
   if (!videos.length) return null;
   return (
-    <section aria-label="Related videos">
+    <section id="lesson-videos" aria-label="Related videos">
       <h2>Watch this topic</h2>
       {videos.map((video) => (
         <article key={video.id}>

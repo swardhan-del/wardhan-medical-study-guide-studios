@@ -98,8 +98,7 @@ export function VideoPlayer({ video }: { video: PublicVideo }) {
       </a>
       {video.aiGenerated && (
         <p className="muted-note">
-          AI-generated educational material. The release review does not replace
-          clinical guidance.
+          AI-assisted educational recap with synthetic voices. The script was checked against the lesson sources; independent clinical peer review has not been completed.
         </p>
       )}
       <details className="study-details">

@@ -899,6 +899,296 @@
       "resources": [
         "neurulation"
       ]
+    },
+    {
+      "id": "topic-fluid-and-membrane-transport",
+      "title": "Cell transport: follow the energy",
+      "description": "Connect membrane permeability, the sodium–potassium pump and secondary active transport before predicting where a solute moves.",
+      "subject": "physiology",
+      "parentId": "physiology-cellular",
+      "kind": "topic",
+      "resources": [
+        "fluid-and-membrane-transport"
+      ]
+    },
+    {
+      "id": "topic-muscle-contraction",
+      "title": "Three muscle types, three calcium stories",
+      "description": "Compare how skeletal, cardiac and smooth muscle convert a calcium signal into force, and explain why their responses differ.",
+      "subject": "physiology",
+      "parentId": "physiology-cellular",
+      "kind": "topic",
+      "resources": [
+        "muscle-contraction"
+      ]
+    },
+    {
+      "id": "topic-autonomic-signalling",
+      "title": "Autonomic signals: receptor before response",
+      "description": "Use receptor location and intracellular signalling to predict an autonomic response without memorising one effect for every organ.",
+      "subject": "physiology",
+      "parentId": "physiology-cellular",
+      "kind": "topic",
+      "resources": [
+        "autonomic-signalling"
+      ]
+    },
+    {
+      "id": "topic-cardiac-cycle",
+      "title": "The cardiac cycle: pressure opens the valves",
+      "description": "Read valve events and ventricular volume together, then predict the isolated effects of preload, afterload and contractility.",
+      "subject": "physiology",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "cardiac-cycle"
+      ]
+    },
+    {
+      "id": "topic-respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "description": "Connect pressure-driven breathing with dead space and calculate why equal minute ventilation can give different alveolar ventilation.",
+      "subject": "physiology",
+      "parentId": "physiology-respiratory",
+      "kind": "topic",
+      "resources": [
+        "respiratory-mechanics"
+      ]
+    },
+    {
+      "id": "topic-renal-water-balance",
+      "title": "Water balance: distinguish ADH from aldosterone",
+      "description": "Follow the separate signals for osmolality and effective circulating volume, and connect them to collecting-duct transport.",
+      "subject": "physiology",
+      "parentId": "physiology-renal",
+      "kind": "topic",
+      "resources": [
+        "renal-water-balance"
+      ]
+    },
+    {
+      "id": "physiology-blood",
+      "title": "Blood and haemostasis",
+      "description": "Study blood and haemostasis through focused lessons, diagrams and explained questions.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "description": "Distinguish platelet adhesion, platelet aggregation and fibrin formation, then locate intrinsic tenase in the sequence.",
+      "subject": "physiology",
+      "parentId": "physiology-blood",
+      "kind": "topic",
+      "resources": [
+        "blood-and-haemostasis"
+      ]
+    },
+    {
+      "id": "physiology-digestive",
+      "title": "Gastrointestinal physiology and energy balance",
+      "description": "Study gastrointestinal physiology and energy balance through focused lessons, diagrams and explained questions.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-digestive-control",
+      "title": "Digestion: coordinate movement and secretion",
+      "description": "Connect enteric circuits, local signals and gastrointestinal hormones to explain how a meal is processed.",
+      "subject": "physiology",
+      "parentId": "physiology-digestive",
+      "kind": "topic",
+      "resources": [
+        "digestive-control"
+      ]
+    },
+    {
+      "id": "topic-energy-balance",
+      "title": "Energy balance: connect intake, storage and use",
+      "description": "Follow energy through the fed and fasting states and distinguish long-term balance from a single meal.",
+      "subject": "physiology",
+      "parentId": "physiology-digestive",
+      "kind": "topic",
+      "resources": [
+        "energy-balance"
+      ]
+    },
+    {
+      "id": "physiology-endocrine",
+      "title": "Endocrine and reproductive physiology",
+      "description": "Study endocrine and reproductive physiology through focused lessons, diagrams and explained questions.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-endocrine-feedback",
+      "title": "Endocrine axes: read the feedback loop",
+      "description": "Track a hypothalamic–pituitary–target-gland axis and use the pattern of hormones to explain negative feedback.",
+      "subject": "physiology",
+      "parentId": "physiology-endocrine",
+      "kind": "topic",
+      "resources": [
+        "endocrine-feedback"
+      ]
+    },
+    {
+      "id": "topic-reproductive-cycles",
+      "title": "Reproductive physiology: connect the two cycles",
+      "description": "Relate ovarian events to endometrial changes and explain the transition from negative to positive feedback around ovulation.",
+      "subject": "physiology",
+      "parentId": "physiology-endocrine",
+      "kind": "topic",
+      "resources": [
+        "reproductive-cycles"
+      ]
+    },
+    {
+      "id": "physiology-nervous",
+      "title": "Nervous system and special senses",
+      "description": "Study nervous system and special senses through focused lessons, diagrams and explained questions.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-synaptic-integration",
+      "title": "Neural integration: from release to a response",
+      "description": "Follow chemical transmission across a synapse, then explain how a neuron combines excitatory and inhibitory inputs.",
+      "subject": "physiology",
+      "parentId": "physiology-nervous",
+      "kind": "topic",
+      "resources": [
+        "synaptic-integration"
+      ]
+    },
+    {
+      "id": "topic-special-senses",
+      "title": "Special senses: convert a stimulus into a signal",
+      "description": "Compare how photoreceptors and inner-ear hair cells convert physical stimuli into changes in neurotransmitter release.",
+      "subject": "physiology",
+      "parentId": "physiology-nervous",
+      "kind": "topic",
+      "resources": [
+        "special-senses"
+      ]
+    },
+    {
+      "id": "topic-lymph-and-fluid-exchange",
+      "title": "Microcirculation: return the filtered fluid",
+      "description": "Connect capillary filtration, the endothelial barrier and lymphatic return without assuming that every capillary reabsorbs fluid at its venous end.",
+      "subject": "physiology",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "lymph-and-fluid-exchange"
+      ]
+    },
+    {
+      "id": "anatomy-volume-1",
+      "title": "Volume I · Thorax",
+      "description": "Study volume i · thorax through focused lessons, diagrams and explained questions.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-thorax-nerve-relations",
+      "title": "Volume I: orient the thorax around the lung root",
+      "description": "Use the lung root, diaphragm and transverse thoracic plane to organise thoracic relationships before adding detail.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "thorax-nerve-relations"
+      ]
+    },
+    {
+      "id": "anatomy-volume-2",
+      "title": "Volume II · Abdomen",
+      "description": "Study volume ii · abdomen through focused lessons, diagrams and explained questions.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-abdomen-portal-relations",
+      "title": "Volume II: connect peritoneum and the portal triad",
+      "description": "Identify the portal-triad relationship and use peritoneal attachments to explain how abdominal organs are organised.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "abdomen-portal-relations"
+      ]
+    },
+    {
+      "id": "anatomy-volume-3",
+      "title": "Volume III · Pelvis and urogenital anatomy",
+      "description": "Study volume iii · pelvis and urogenital anatomy through focused lessons, diagrams and explained questions.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-pelvis-urinary-route",
+      "title": "Volume III: follow urine through the pelvis",
+      "description": "Trace the kidney-to-bladder route, distinguish ureter from urethra and connect urinary anatomy with pelvic support.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "pelvis-urinary-route"
+      ]
+    },
+    {
+      "id": "anatomy-volume-4",
+      "title": "Volume IV · Head, neck and neuroanatomy",
+      "description": "Study volume iv · head, neck and neuroanatomy through focused lessons, diagrams and explained questions.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-head-neck-tongue-map",
+      "title": "Volume IV: separate taste, sensation and movement",
+      "description": "Use tongue innervation to practise a cranial-nerve explanation based on territory and function.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "head-neck-tongue-map"
+      ]
+    },
+    {
+      "id": "anatomy-volume-5",
+      "title": "Volume V · Musculoskeletal anatomy",
+      "description": "Study volume v · musculoskeletal anatomy through focused lessons, diagrams and explained questions.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-limbs-plexus-and-joints",
+      "title": "Volume V: trace a limb nerve through the plexus",
+      "description": "Organise the brachial plexus from roots to branches, then connect peripheral nerves with joint movement and limb development.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "limbs-plexus-and-joints"
+      ]
     }
   ]
 }

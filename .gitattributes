@@ -1,1 +1,11 @@
 *.svg text eol=lf
+
+# Preserve approved asset bytes on Windows and Linux.
+*.pdf -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.webp -text
+*.mp4 -text
+*.mp3 -text
+*.vtt text eol=lf

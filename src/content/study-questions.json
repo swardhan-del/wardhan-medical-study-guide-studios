@@ -1,0 +1,534 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "studio-apply-fluid-and-membrane-transport",
+      "topic": "fluid-and-membrane-transport",
+      "title": "Cell transport: follow the energy",
+      "subject": "physiology",
+      "href": "/library/fluid-and-membrane-transport#studio-practice",
+      "prompt": "The sodium–potassium pump is inhibited in a teaching model. Why might sodium–glucose uptake weaken later?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The sodium gradient gradually becomes less able to power cotransport",
+          "explanation": "The pump maintains the gradient; its loss eventually reduces the energy available to secondary transport."
+        },
+        {
+          "text": "The glucose cotransporter has started hydrolysing ATP directly",
+          "explanation": "The cotransporter does not become an ATPase when the pump is inhibited."
+        },
+        {
+          "text": "Every membrane channel becomes physically sealed",
+          "explanation": "Pump inhibition does not imply physical closure of all channels."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-muscle-contraction",
+      "topic": "muscle-contraction",
+      "title": "Three muscle types, three calcium stories",
+      "subject": "physiology",
+      "href": "/library/muscle-contraction#studio-practice",
+      "prompt": "Why can normal skeletal muscle produce tetanic force while normal cardiac working muscle cannot?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Cardiac muscle contains no calcium",
+          "explanation": "Cardiac contraction critically depends on calcium."
+        },
+        {
+          "text": "The cardiac refractory period overlaps much of its contraction",
+          "explanation": "The long refractory period limits repeated excitation and summation into tetanus, preserving filling between beats."
+        },
+        {
+          "text": "Skeletal muscle has no electrical activity",
+          "explanation": "Skeletal-muscle excitation normally involves action potentials."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-autonomic-signalling",
+      "topic": "autonomic-signalling",
+      "title": "Autonomic signals: receptor before response",
+      "subject": "physiology",
+      "href": "/library/autonomic-signalling#studio-practice",
+      "prompt": "A learner says every sympathetic postganglionic neuron releases noradrenaline. Which example corrects the claim?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "All parasympathetic preganglionic neurons release dopamine",
+          "explanation": "Parasympathetic preganglionic transmission is cholinergic, not dopaminergic."
+        },
+        {
+          "text": "All sympathetic ganglia release insulin",
+          "explanation": "Insulin is not the general autonomic ganglionic transmitter."
+        },
+        {
+          "text": "Sympathetic fibres to eccrine sweat glands release acetylcholine",
+          "explanation": "Eccrine sweat-gland innervation is the important sympathetic cholinergic exception."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-cardiac-cycle",
+      "topic": "cardiac-cycle",
+      "title": "The cardiac cycle: pressure opens the valves",
+      "subject": "physiology",
+      "href": "/library/cardiac-cycle#studio-practice",
+      "prompt": "In a simplified ventricle, end-diastolic volume is 120 mL and end-systolic volume is 50 mL. What is stroke volume?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "70 mL",
+          "explanation": "Subtract end-systolic from end-diastolic volume: 120 minus 50 equals 70 mL."
+        },
+        {
+          "text": "170 mL",
+          "explanation": "Adding the volumes does not measure the volume ejected."
+        },
+        {
+          "text": "50 mL",
+          "explanation": "This is the residual end-systolic volume."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-respiratory-mechanics",
+      "topic": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "href": "/library/respiratory-mechanics#studio-practice",
+      "prompt": "At the same 6 L/min minute ventilation and a fixed 150 mL dead space, which pattern gives greater alveolar ventilation?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "300 mL at 20 breaths/min",
+          "explanation": "This gives (300−150)×20 = 3 L/min."
+        },
+        {
+          "text": "500 mL at 12 breaths/min",
+          "explanation": "This gives (500−150)×12 = 4.2 L/min, because less of total ventilation is wasted in dead space."
+        },
+        {
+          "text": "Both necessarily give equal alveolar ventilation",
+          "explanation": "Equal total ventilation does not imply equal gas-exchanging ventilation."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-renal-water-balance",
+      "topic": "renal-water-balance",
+      "title": "Water balance: distinguish ADH from aldosterone",
+      "subject": "physiology",
+      "href": "/library/renal-water-balance#studio-practice",
+      "prompt": "ADH rises, but the medullary osmotic gradient is greatly reduced. What limits water recovery?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "ADH can no longer bind any receptor by definition",
+          "explanation": "A weakened gradient does not itself establish loss of receptor binding."
+        },
+        {
+          "text": "Aldosterone becomes a substitute physical osmotic gradient",
+          "explanation": "A hormone cannot substitute for the physical water-potential difference."
+        },
+        {
+          "text": "Increased permeability still needs an osmotic driving force",
+          "explanation": "ADH makes a pathway available; the medullary gradient supplies the driving force."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-blood-and-haemostasis",
+      "topic": "blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "subject": "physiology",
+      "href": "/library/blood-and-haemostasis#studio-practice",
+      "prompt": "A student confuses prothrombinase with intrinsic tenase. Which reaction belongs to prothrombinase?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Prothrombin to thrombin",
+          "explanation": "Xa with Va forms prothrombinase and supports thrombin generation."
+        },
+        {
+          "text": "Factor X to Xa by IXa–VIIIa",
+          "explanation": "IXa–VIIIa is intrinsic tenase, not prothrombinase."
+        },
+        {
+          "text": "Fibrin crosslinking by XIIIa",
+          "explanation": "Crosslinking stabilises fibrin after its formation; it is not the prothrombinase reaction."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-digestive-control",
+      "topic": "digestive-control",
+      "title": "Digestion: coordinate movement and secretion",
+      "subject": "physiology",
+      "href": "/library/digestive-control#studio-practice",
+      "prompt": "Fat enters the duodenum. Which coordinated response fits its digestion?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Stopping all pancreatic enzyme secretion",
+          "explanation": "Pancreatic enzymes contribute to digestion of the meal."
+        },
+        {
+          "text": "CCK supporting enzyme secretion and gallbladder contraction",
+          "explanation": "CCK helps match enzyme and bile delivery to the incoming nutrient load."
+        },
+        {
+          "text": "Converting bile into a protein-digesting enzyme",
+          "explanation": "Bile assists lipid handling but is not a protein-digesting enzyme."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-energy-balance",
+      "topic": "energy-balance",
+      "title": "Energy balance: connect intake, storage and use",
+      "subject": "physiology",
+      "href": "/library/energy-balance#studio-practice",
+      "prompt": "Which statement best connects fasting to ongoing cellular work?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Energy expenditure falls to exactly zero",
+          "explanation": "Basal cellular work continues even without a meal."
+        },
+        {
+          "text": "The liver creates energy without using substrate",
+          "explanation": "Hepatic metabolic pathways transform substrates and require energy; they do not create it."
+        },
+        {
+          "text": "Stored substrates are mobilised to support continued metabolism",
+          "explanation": "Fasting changes fuel sources while tissues continue to use energy."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-endocrine-feedback",
+      "topic": "endocrine-feedback",
+      "title": "Endocrine axes: read the feedback loop",
+      "subject": "physiology",
+      "href": "/library/endocrine-feedback#studio-practice",
+      "prompt": "Low thyroid hormone is accompanied by a TSH that is not appropriately elevated. What does this challenge in a simple model?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The assumption that the central feedback response is intact",
+          "explanation": "An intact pituitary response to primary thyroid failure would usually raise TSH; central influences merit consideration."
+        },
+        {
+          "text": "The existence of any thyroid receptors",
+          "explanation": "The pattern does not prove absence of tissue receptors."
+        },
+        {
+          "text": "The fact that hormones circulate in blood",
+          "explanation": "The pattern concerns regulation, not whether hormones circulate."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-reproductive-cycles",
+      "topic": "reproductive-cycles",
+      "title": "Reproductive physiology: connect the two cycles",
+      "subject": "physiology",
+      "href": "/library/reproductive-cycles#studio-practice",
+      "prompt": "After ovulation, which hormone most directly supports secretory differentiation of the endometrium?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Adrenaline acting as the only ovarian hormone",
+          "explanation": "Adrenaline is not the principal luteal endometrial signal."
+        },
+        {
+          "text": "Progesterone from the corpus luteum",
+          "explanation": "Luteal progesterone supports secretory changes following estradiol-driven proliferation."
+        },
+        {
+          "text": "A complete absence of all ovarian hormones",
+          "explanation": "Withdrawal of luteal hormones contributes to menstruation rather than maintenance of secretory endometrium."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-synaptic-integration",
+      "topic": "synaptic-integration",
+      "title": "Neural integration: from release to a response",
+      "subject": "physiology",
+      "href": "/library/synaptic-integration#studio-practice",
+      "prompt": "Repeated small inputs at the same synapse arrive close together and have a larger combined effect. What is this?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Renal filtration",
+          "explanation": "Filtration describes a different physiological process."
+        },
+        {
+          "text": "Spatial summation only",
+          "explanation": "Spatial summation combines inputs from different locations."
+        },
+        {
+          "text": "Temporal summation",
+          "explanation": "Temporal summation combines effects of closely timed inputs."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-special-senses",
+      "topic": "special-senses",
+      "title": "Special senses: convert a stimulus into a signal",
+      "subject": "physiology",
+      "href": "/library/special-senses#studio-practice",
+      "prompt": "A hair bundle is deflected in its excitatory direction. Which initial response is expected?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Opening of mechanotransduction channels and depolarisation",
+          "explanation": "Mechanical channel opening permits a depolarising current under the inner-ear ionic conditions."
+        },
+        {
+          "text": "Closure of every channel and immediate cell death",
+          "explanation": "Normal sensory transduction does not imply injury or universal channel closure."
+        },
+        {
+          "text": "Conversion of the hair cell into a photoreceptor",
+          "explanation": "The receptor retains its hair-cell identity."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-lymph-and-fluid-exchange",
+      "topic": "lymph-and-fluid-exchange",
+      "title": "Microcirculation: return the filtered fluid",
+      "subject": "physiology",
+      "href": "/library/lymph-and-fluid-exchange#studio-practice",
+      "prompt": "Two examples cause oedema: increased venous pressure and lymphatic obstruction. What differs?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Only one involves interstitial fluid",
+          "explanation": "Both can increase interstitial fluid."
+        },
+        {
+          "text": "One can increase filtration; the other reduces return",
+          "explanation": "They change different sides of the filtration–return balance."
+        },
+        {
+          "text": "Neither has any relationship to fluid balance",
+          "explanation": "Both are mechanisms relevant to tissue-fluid accumulation."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-thorax-nerve-relations",
+      "topic": "thorax-nerve-relations",
+      "title": "Volume I: orient the thorax around the lung root",
+      "subject": "anatomy",
+      "href": "/library/thorax-nerve-relations#studio-practice",
+      "prompt": "A diagram places the diaphragm low in the thorax. Why does this not imply thoracic motor roots?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Diaphragm contraction never uses nerves",
+          "explanation": "The diaphragm requires motor innervation for normal contraction."
+        },
+        {
+          "text": "The vagus is its only somatic motor supply",
+          "explanation": "The phrenic nerves provide the principal motor supply."
+        },
+        {
+          "text": "Its phrenic motor supply principally comes from C3–C5",
+          "explanation": "Adult position and developmental history must be distinguished from segmental motor supply."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-abdomen-portal-relations",
+      "topic": "abdomen-portal-relations",
+      "title": "Volume II: connect peritoneum and the portal triad",
+      "subject": "anatomy",
+      "href": "/library/abdomen-portal-relations#studio-practice",
+      "prompt": "In a conventional anterior view of the portal triad, where is the bile duct relative to the proper hepatic artery?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "On the patient's right",
+          "explanation": "The duct conventionally lies to the patient's right of the proper hepatic artery; variants exist."
+        },
+        {
+          "text": "Always behind the portal vein",
+          "explanation": "The portal vein is generally the posterior triad member."
+        },
+        {
+          "text": "On whichever side the viewer calls right",
+          "explanation": "Anatomical right and left refer to the patient, not the viewer."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-pelvis-urinary-route",
+      "topic": "pelvis-urinary-route",
+      "title": "Volume III: follow urine through the pelvis",
+      "subject": "anatomy",
+      "href": "/library/pelvis-urinary-route#studio-practice",
+      "prompt": "Which developmental pairing is correct?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Urethra forms every nephron",
+          "explanation": "The urethra does not give rise to renal nephrons."
+        },
+        {
+          "text": "Ureteric bud forms the collecting system; metanephric mesenchyme forms nephrons",
+          "explanation": "Reciprocal interaction between these tissues connects nephrons to the collecting system."
+        },
+        {
+          "text": "Renal blood vessels become all collecting ducts",
+          "explanation": "Vascular and collecting structures are distinct developmental components."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-head-neck-tongue-map",
+      "topic": "head-neck-tongue-map",
+      "title": "Volume IV: separate taste, sensation and movement",
+      "subject": "anatomy",
+      "href": "/library/head-neck-tongue-map#studio-practice",
+      "prompt": "Which exception should accompany an anterior-versus-posterior tongue taste map?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "XII supplies all taste",
+          "explanation": "XII is principally a motor nerve for the tongue."
+        },
+        {
+          "text": "V3 supplies all circumvallate taste",
+          "explanation": "General sensation through V3 does not establish this taste supply."
+        },
+        {
+          "text": "Circumvallate papillae receive taste fibres from IX",
+          "explanation": "Circumvallate papillae lie just anterior to the terminal sulcus but have IX taste innervation."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-limbs-plexus-and-joints",
+      "topic": "limbs-plexus-and-joints",
+      "title": "Volume V: trace a limb nerve through the plexus",
+      "subject": "anatomy",
+      "href": "/library/limbs-plexus-and-joints#studio-practice",
+      "prompt": "A diagram labels the posterior cord. Posterior relative to what?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The second part of the axillary artery",
+          "explanation": "The artery provides the conventional landmark for brachial-plexus cord names."
+        },
+        {
+          "text": "Every point on the skin surface",
+          "explanation": "Cord names are not defined relative to all skin surfaces."
+        },
+        {
+          "text": "The posterior tibial artery",
+          "explanation": "This vessel is in the lower limb and does not define brachial-plexus cord position."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-epithelia",
+      "topic": "epithelia",
+      "title": "Epithelia: layers, shape and function",
+      "subject": "histology",
+      "href": "/library/epithelia#studio-practice",
+      "prompt": "A section has nuclei at different heights, but every cell contacts the basal lamina. Which interpretation fits?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Stratified epithelium is certain",
+          "explanation": "Several nuclear heights do not by themselves establish multiple cell layers."
+        },
+        {
+          "text": "Pseudostratified epithelium is possible",
+          "explanation": "In pseudostratified epithelium all cells contact the basal lamina, although not all reach the surface."
+        },
+        {
+          "text": "It cannot be epithelium",
+          "explanation": "This arrangement is compatible with epithelial organisation."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-pcr",
+      "topic": "pcr",
+      "title": "PCR, qPCR and reverse transcription",
+      "subject": "cell-biology",
+      "href": "/library/pcr#studio-practice",
+      "prompt": "A PCR tube lacks one of the two primers. What is the main consequence for the intended target?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "The target's sequence becomes irrelevant",
+          "explanation": "Primer binding and template sequence determine specificity."
+        },
+        {
+          "text": "DNA polymerase begins every strand without a starting point",
+          "explanation": "DNA polymerase needs an appropriate primer-template starting point."
+        },
+        {
+          "text": "Efficient exponential amplification of the bounded target is lost",
+          "explanation": "The two primers define opposite ends and support amplification of both strands."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-enzyme-kinetics",
+      "topic": "enzyme-kinetics",
+      "title": "Enzyme catalysis and inhibition",
+      "subject": "biochemistry",
+      "href": "/library/enzyme-kinetics#studio-practice",
+      "prompt": "In a simple reversible competitive-inhibition model, what can increasing substrate concentration do?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Reduce the inhibitor's effect on the observed rate",
+          "explanation": "Substrate competes for binding; sufficiently high substrate can approach the same Vmax in the ideal model."
+        },
+        {
+          "text": "Permanently destroy the inhibitor molecule",
+          "explanation": "Competition does not require chemical destruction of the inhibitor."
+        },
+        {
+          "text": "Lower the uninhibited maximum rate by definition",
+          "explanation": "The defining ideal competitive model changes apparent Km, not Vmax."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-complement",
+      "topic": "complement",
+      "title": "Complement pathways and their shared effectors",
+      "subject": "genetics",
+      "href": "/library/complement#studio-practice",
+      "prompt": "Why can different complement activation pathways have common downstream effects?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "They all begin with an identical recognition event",
+          "explanation": "The classical, lectin and alternative pathways have distinct initiation mechanisms."
+        },
+        {
+          "text": "They converge on C3 activation and shared downstream components",
+          "explanation": "Convergence explains shared effects such as C3b-mediated opsonisation despite different triggers."
+        },
+        {
+          "text": "They never interact with innate immunity",
+          "explanation": "Complement is a major component of innate defence and connects with adaptive responses."
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import { anatomyLearningPages } from "./anatomy-learning";
 import { renalLessons, renalQuestions, renalLessonHref } from "./renal-course";
 import { abgCases } from "./abg-cases";
 import { histologyTissues } from "./histology-tissues";
+import studio from "./study-questions.json";
 import transfer from "./transfer-practice.json";
 
 export type PracticeItem = {
@@ -17,6 +18,7 @@ export type PracticeItem = {
   answer?: number;
 };
 export const practiceItems: PracticeItem[] = [
+  ...studio.questions,
   ...renalQuestions.map((q) => ({
     ...q, topic: q.lesson, subject: "physiology",
     title: renalLessons.find((l) => l.slug === q.lesson)!.title,

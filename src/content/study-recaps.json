@@ -1,0 +1,672 @@
+{
+  "version": 1,
+  "recaps": [
+    {
+      "lessonId": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "slides": [
+        "A gradient needs a pathway.",
+        "The sodium–potassium pump spends ATP.",
+        "Cotransport uses the stored sodium gradient.",
+        "Tonicity depends on effective, non-penetrating solutes."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain how ATP can support glucose uptake without binding to its cotransporter."
+        },
+        {
+          "speaker": "Guide",
+          "text": "ATP powers the sodium–potassium pump, which maintains a low intracellular sodium concentration. Sodium then enters through a cotransporter down its electrochemical gradient, providing energy for coupled glucose uptake."
+        },
+        {
+          "speaker": "Host",
+          "text": "The sodium–potassium pump is inhibited in a teaching model. Why might sodium–glucose uptake weaken later?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "The sodium gradient gradually becomes less able to power cotransport. The pump maintains the gradient; its loss eventually reduces the energy available to secondary transport."
+        }
+      ]
+    },
+    {
+      "lessonId": "muscle-contraction",
+      "subject": "physiology",
+      "title": "Three muscle types, three calcium stories",
+      "slides": [
+        "Calcium links excitation to force.",
+        "Skeletal muscle releases stored calcium through voltage coupling.",
+        "Cardiac trigger calcium recruits more calcium release.",
+        "Smooth muscle uses calmodulin and myosin light-chain kinase."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Compare the role of calcium in skeletal, cardiac and smooth muscle."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Skeletal and cardiac muscle use troponin C to regulate actin access. Skeletal coupling primarily releases stored calcium through voltage-sensor coupling; cardiac muscle needs trigger calcium entry. Smooth muscle uses calcium–calmodulin and myosin light-chain kinase to regulate myosin."
+        },
+        {
+          "speaker": "Host",
+          "text": "Why can normal skeletal muscle produce tetanic force while normal cardiac working muscle cannot?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "The cardiac refractory period overlaps much of its contraction. The long refractory period limits repeated excitation and summation into tetanus, preserving filling between beats."
+        }
+      ]
+    },
+    {
+      "lessonId": "autonomic-signalling",
+      "subject": "physiology",
+      "title": "Autonomic signals: receptor before response",
+      "slides": [
+        "Begin with the receptor and its location.",
+        "Autonomic ganglia use acetylcholine and nicotinic receptors.",
+        "M2 signalling helps slow the heart.",
+        "The tissue determines what a second messenger does."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Give a receptor-to-response explanation of slowing at the sinoatrial node."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Acetylcholine activates cardiac M2 receptors. Gi/o signalling reduces cyclic AMP, while beta–gamma subunits can activate GIRK potassium channels. These changes reduce pacemaker activity and slow the heart."
+        },
+        {
+          "speaker": "Host",
+          "text": "A learner says every sympathetic postganglionic neuron releases noradrenaline. Which example corrects the claim?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Sympathetic fibres to eccrine sweat glands release acetylcholine. Eccrine sweat-gland innervation is the important sympathetic cholinergic exception."
+        }
+      ]
+    },
+    {
+      "lessonId": "cardiac-cycle",
+      "subject": "physiology",
+      "title": "The cardiac cycle: pressure opens the valves",
+      "slides": [
+        "Valves respond to pressure differences.",
+        "Both valves are closed during isovolumetric phases.",
+        "Loop width represents stroke volume.",
+        "Compare one isolated loading change at a time."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Predict the immediate effect of an isolated afterload increase on a pressure–volume loop."
+        },
+        {
+          "speaker": "Guide",
+          "text": "At unchanged preload and contractility, the ventricle must develop more pressure before ejection. It generally ejects less on that beat, leaving a larger end-systolic volume and a narrower loop. Later reflex and filling responses may modify this."
+        },
+        {
+          "speaker": "Host",
+          "text": "In a simplified ventricle, end-diastolic volume is 120 mL and end-systolic volume is 50 mL. What is stroke volume?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "70 mL. Subtract end-systolic from end-diastolic volume: 120 minus 50 equals 70 mL."
+        }
+      ]
+    },
+    {
+      "lessonId": "respiratory-mechanics",
+      "subject": "physiology",
+      "title": "Ventilation: make each breath count",
+      "slides": [
+        "Air flows down a pressure difference.",
+        "Minute ventilation includes dead space.",
+        "Subtract dead space before multiplying by rate.",
+        "Equal minute ventilation need not mean equal alveolar ventilation."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain why rapid shallow breaths can be less efficient than slower deeper breaths at the same minute ventilation."
+        },
+        {
+          "speaker": "Guide",
+          "text": "A fixed conducting-airway volume takes up more of each small breath. After subtracting dead space, less fresh air reaches gas-exchanging alveoli each minute, even when total minute ventilation is unchanged."
+        },
+        {
+          "speaker": "Host",
+          "text": "At the same 6 L/min minute ventilation and a fixed 150 mL dead space, which pattern gives greater alveolar ventilation?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "500 mL at 12 breaths/min. This gives (500−150)×12 = 4.2 L/min, because less of total ventilation is wasted in dead space."
+        }
+      ]
+    },
+    {
+      "lessonId": "renal-water-balance",
+      "subject": "physiology",
+      "title": "Water balance: distinguish ADH from aldosterone",
+      "slides": [
+        "Ask whether the disturbance concerns volume or osmolality.",
+        "ADH inserts aquaporin-2 water channels.",
+        "The medullary gradient supplies the driving force.",
+        "Aldosterone mainly adjusts sodium and potassium transport."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Distinguish what ADH changes from what aldosterone changes."
+        },
+        {
+          "speaker": "Guide",
+          "text": "ADH increases collecting-duct water permeability through aquaporin-2 trafficking. Aldosterone enhances distal sodium reabsorption and potassium secretion. Their effects interact with medullary gradients, intake and circulating-volume signals."
+        },
+        {
+          "speaker": "Host",
+          "text": "ADH rises, but the medullary osmotic gradient is greatly reduced. What limits water recovery?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Increased permeability still needs an osmotic driving force. ADH makes a pathway available; the medullary gradient supplies the driving force."
+        }
+      ]
+    },
+    {
+      "lessonId": "blood-and-haemostasis",
+      "subject": "physiology",
+      "title": "Haemostasis: build and stabilise the plug",
+      "slides": [
+        "Adhesion anchors the first platelets.",
+        "Aggregation links activated platelets together.",
+        "IXa and VIIIa form intrinsic tenase.",
+        "Thrombin generates fibrin; XIIIa crosslinks it."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain the difference between adhesion, aggregation and fibrin stabilisation."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Adhesion anchors platelets to an injured surface. Aggregation joins activated platelets through fibrinogen bridges between alpha-IIb-beta-3 receptors. Coagulation generates thrombin and fibrin, and factor XIIIa crosslinks fibrin to stabilise the plug."
+        },
+        {
+          "speaker": "Host",
+          "text": "A student confuses prothrombinase with intrinsic tenase. Which reaction belongs to prothrombinase?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Prothrombin to thrombin. Xa with Va forms prothrombinase and supports thrombin generation."
+        }
+      ]
+    },
+    {
+      "lessonId": "digestive-control",
+      "subject": "physiology",
+      "title": "Digestion: coordinate movement and secretion",
+      "slides": [
+        "Enteric circuits coordinate local responses.",
+        "Secretin helps match bicarbonate secretion to acid.",
+        "CCK supports enzyme secretion and gallbladder contraction.",
+        "Mixing, propulsion and absorption are distinct tasks."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain how a meal containing fat and acid can recruit different pancreatic responses."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Duodenal acid stimulates secretin and bicarbonate-rich ductal secretion. Fat and protein products stimulate cholecystokinin and enzyme-rich secretion, with neural signals coordinating the response. The pathways interact rather than operating as isolated switches."
+        },
+        {
+          "speaker": "Host",
+          "text": "Fat enters the duodenum. Which coordinated response fits its digestion?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "CCK supporting enzyme secretion and gallbladder contraction. CCK helps match enzyme and bile delivery to the incoming nutrient load."
+        }
+      ]
+    },
+    {
+      "lessonId": "energy-balance",
+      "subject": "physiology",
+      "title": "Energy balance: connect intake, storage and use",
+      "slides": [
+        "Choose the time interval before discussing energy balance.",
+        "Intake and expenditure change stored energy.",
+        "The fed state favours nutrient use and storage.",
+        "Fasting mobilises stored fuels; water also changes body mass."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Compare nutrient handling after a meal and during fasting."
+        },
+        {
+          "speaker": "Guide",
+          "text": "The fed state favours use and storage of absorbed nutrients under a higher insulin signal. Fasting promotes mobilisation of stored fuels and hepatic glucose production under a lower insulin-to-glucagon signal. Energy is transferred and transformed, not created."
+        },
+        {
+          "speaker": "Host",
+          "text": "Which statement best connects fasting to ongoing cellular work?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Stored substrates are mobilised to support continued metabolism. Fasting changes fuel sources while tissues continue to use energy."
+        }
+      ]
+    },
+    {
+      "lessonId": "endocrine-feedback",
+      "subject": "physiology",
+      "title": "Endocrine axes: read the feedback loop",
+      "slides": [
+        "Separate hypothalamus, pituitary and target gland.",
+        "TRH supports TSH; TSH stimulates the thyroid.",
+        "Thyroid hormones reduce upstream stimulation.",
+        "Opposite hormone changes can reveal feedback logic."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain why a target-gland hormone and its pituitary signal can move in opposite directions."
+        },
+        {
+          "speaker": "Guide",
+          "text": "A target-gland hormone can inhibit its upstream control signals. When target-gland secretion falls, reduced negative feedback permits the pituitary signal to rise, provided the central components of the axis remain functional."
+        },
+        {
+          "speaker": "Host",
+          "text": "Low thyroid hormone is accompanied by a TSH that is not appropriately elevated. What does this challenge in a simple model?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "The assumption that the central feedback response is intact. An intact pituitary response to primary thyroid failure would usually raise TSH; central influences merit consideration."
+        }
+      ]
+    },
+    {
+      "lessonId": "reproductive-cycles",
+      "subject": "physiology",
+      "title": "Reproductive physiology: connect the two cycles",
+      "slides": [
+        "Gonadotrophins coordinate gonadal function.",
+        "Follicular estradiol supports endometrial growth.",
+        "Sustained high estradiol can trigger the LH surge.",
+        "Luteal progesterone supports the secretory endometrium."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Relate the ovarian and endometrial phases without assuming a fixed calendar."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Follicular estradiol supports endometrial proliferation. A sustained estradiol rise can trigger an LH surge and ovulation. Luteal progesterone supports secretory endometrium; falling luteal hormones contribute to menstruation when pregnancy does not maintain the corpus luteum."
+        },
+        {
+          "speaker": "Host",
+          "text": "After ovulation, which hormone most directly supports secretory differentiation of the endometrium?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Progesterone from the corpus luteum. Luteal progesterone supports secretory changes following estradiol-driven proliferation."
+        }
+      ]
+    },
+    {
+      "lessonId": "synaptic-integration",
+      "subject": "physiology",
+      "title": "Neural integration: from release to a response",
+      "slides": [
+        "An arriving action potential opens presynaptic calcium channels.",
+        "Calcium triggers vesicle fusion.",
+        "Receptors change postsynaptic signalling or conductance.",
+        "Inputs combine across both time and space."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Distinguish chemical transmission from temporal and spatial summation."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Chemical transmission releases a transmitter that changes postsynaptic signalling or conductance. Temporal summation combines closely timed inputs; spatial summation combines inputs at different sites. Their combined effect helps determine whether the receiving neuron fires."
+        },
+        {
+          "speaker": "Host",
+          "text": "Repeated small inputs at the same synapse arrive close together and have a larger combined effect. What is this?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Temporal summation. Temporal summation combines effects of closely timed inputs."
+        }
+      ]
+    },
+    {
+      "lessonId": "special-senses",
+      "subject": "physiology",
+      "title": "Special senses: convert a stimulus into a signal",
+      "slides": [
+        "Sensory receptors transform physical stimuli.",
+        "Light hyperpolarises rods and cones.",
+        "Excitatory hair-bundle movement depolarises hair cells.",
+        "A graded receptor response can control transmitter release."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Compare the direction of the initial receptor response to light and to excitatory hair-bundle deflection."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Light closes cyclic-GMP-gated channels and hyperpolarises a photoreceptor. Excitatory hair-bundle deflection opens mechanically gated channels and depolarises a hair cell. Both graded responses regulate transmitter release."
+        },
+        {
+          "speaker": "Host",
+          "text": "A hair bundle is deflected in its excitatory direction. Which initial response is expected?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Opening of mechanotransduction channels and depolarisation. Mechanical channel opening permits a depolarising current under the inner-ear ionic conditions."
+        }
+      ]
+    },
+    {
+      "lessonId": "lymph-and-fluid-exchange",
+      "subject": "physiology",
+      "title": "Microcirculation: return the filtered fluid",
+      "slides": [
+        "Filtration depends on forces and the endothelial barrier.",
+        "Lymphatics return filtered fluid and proteins.",
+        "Venous-end reabsorption is not universal.",
+        "Name the changed mechanism before explaining oedema."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain how venous pressure and lymphatic obstruction can both produce fluid accumulation."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Higher venous pressure can increase capillary hydrostatic pressure and filtration. Lymphatic obstruction reduces the route that returns filtered fluid and proteins. Both can increase interstitial fluid, but through different parts of the balance."
+        },
+        {
+          "speaker": "Host",
+          "text": "Two examples cause oedema: increased venous pressure and lymphatic obstruction. What differs?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "One can increase filtration; the other reduces return. They change different sides of the filtration–return balance."
+        }
+      ]
+    },
+    {
+      "lessonId": "thorax-nerve-relations",
+      "subject": "anatomy",
+      "title": "Volume I: orient the thorax around the lung root",
+      "slides": [
+        "Use the sternal angle to establish orientation.",
+        "The phrenic nerve passes anterior to the lung root.",
+        "The vagus passes posterior to the root.",
+        "Phrenic motor fibres chiefly come from C3 to C5."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Orient the two nerves at the lung root and connect one to its main motor target."
+        },
+        {
+          "speaker": "Guide",
+          "text": "The phrenic nerve runs anterior to the lung root and supplies the diaphragm through fibres principally from C3–C5. The vagus runs posterior to the root and contributes to thoracic autonomic networks."
+        },
+        {
+          "speaker": "Host",
+          "text": "A diagram places the diaphragm low in the thorax. Why does this not imply thoracic motor roots?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Its phrenic motor supply principally comes from C3–C5. Adult position and developmental history must be distinguished from segmental motor supply."
+        }
+      ]
+    },
+    {
+      "lessonId": "abdomen-portal-relations",
+      "subject": "anatomy",
+      "title": "Volume II: connect peritoneum and the portal triad",
+      "slides": [
+        "Peritoneal covering and attachment are distinct relationships.",
+        "The portal triad lies in the hepatoduodenal ligament.",
+        "The portal vein is posterior to the duct–artery pair.",
+        "Gut development helps explain adult attachments and territories."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Describe the portal triad while distinguishing the figure's main relationship from its simplification."
+        },
+        {
+          "speaker": "Guide",
+          "text": "The portal vein is posterior; the bile duct and proper hepatic artery are anterior. Conventionally the duct is right and artery left from the patient's perspective. The figure is a front–back relationship schematic rather than a complete operative view."
+        },
+        {
+          "speaker": "Host",
+          "text": "In a conventional anterior view of the portal triad, where is the bile duct relative to the proper hepatic artery?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "On the patient's right. The duct conventionally lies to the patient's right of the proper hepatic artery; variants exist."
+        }
+      ]
+    },
+    {
+      "lessonId": "pelvis-urinary-route",
+      "subject": "anatomy",
+      "title": "Volume III: follow urine through the pelvis",
+      "slides": [
+        "Keep the blood and urinary routes separate.",
+        "Calyces lead to the renal pelvis and ureter.",
+        "The ureter reaches the bladder; the urethra leaves it.",
+        "Nephrons and the collecting system develop from interacting tissues."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Connect the urinary route to its two renal developmental components."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Nephrons derived from metanephric mesenchyme connect to the collecting system derived from the ureteric bud. Urine passes through collecting ducts to calyces, renal pelvis, ureter and bladder, then exits through the urethra."
+        },
+        {
+          "speaker": "Host",
+          "text": "Which developmental pairing is correct?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Ureteric bud forms the collecting system; metanephric mesenchyme forms nephrons. Reciprocal interaction between these tissues connects nephrons to the collecting system."
+        }
+      ]
+    },
+    {
+      "lessonId": "head-neck-tongue-map",
+      "subject": "anatomy",
+      "title": "Volume IV: separate taste, sensation and movement",
+      "slides": [
+        "First name the territory and sensory modality.",
+        "Anterior general sensation mainly uses V3.",
+        "Most anterior taste uses VII; posterior taste uses IX.",
+        "Most tongue movement uses XII, with palatoglossus as an exception."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain why a single tongue map cannot replace a modality-specific answer."
+        },
+        {
+          "speaker": "Guide",
+          "text": "General sensation, taste and movement use different pathways. Most anterior general sensation uses V3, anterior taste uses VII, posterior sensation and taste use IX, and most motor supply uses XII. Circumvallate papillae and palatoglossus are important exceptions."
+        },
+        {
+          "speaker": "Host",
+          "text": "Which exception should accompany an anterior-versus-posterior tongue taste map?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Circumvallate papillae receive taste fibres from IX. Circumvallate papillae lie just anterior to the terminal sulcus but have IX taste innervation."
+        }
+      ]
+    },
+    {
+      "lessonId": "limbs-plexus-and-joints",
+      "subject": "anatomy",
+      "title": "Volume V: trace a limb nerve through the plexus",
+      "slides": [
+        "Follow roots, trunks, divisions, cords and branches.",
+        "The usual roots are ventral rami C5 to T1.",
+        "Cord names refer to the axillary artery.",
+        "Explain movement with the muscle, joint and nerve together."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Trace C5–T1 through the plexus and explain how the cords are named."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Ventral rami C5–T1 form upper, middle and lower trunks, each dividing into anterior and posterior divisions. These combine into lateral, medial and posterior cords, named relative to the second part of the axillary artery, and then give terminal branches."
+        },
+        {
+          "speaker": "Host",
+          "text": "A diagram labels the posterior cord. Posterior relative to what?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "The second part of the axillary artery. The artery provides the conventional landmark for brachial-plexus cord names."
+        }
+      ]
+    },
+    {
+      "lessonId": "epithelia",
+      "subject": "histology",
+      "title": "Epithelia: layers, shape and function",
+      "slides": [
+        "Distinguish simple, stratified and pseudostratified epithelia and connect their structure to their job.",
+        "Find the two surfaces",
+        "Count layers, then name the surface cells",
+        "Connect architecture to function"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Why does alveolar epithelium differ from esophageal epithelium?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Alveoli need a short diffusion distance and use thin squamous cells. The esophagus resists abrasion with a nonkeratinized stratified squamous lining."
+        },
+        {
+          "speaker": "Host",
+          "text": "A section has nuclei at different heights, but every cell contacts the basal lamina. Which interpretation fits?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Pseudostratified epithelium is possible. In pseudostratified epithelium all cells contact the basal lamina, although not all reach the surface."
+        }
+      ]
+    },
+    {
+      "lessonId": "pcr",
+      "subject": "cell-biology",
+      "title": "PCR, qPCR and reverse transcription",
+      "slides": [
+        "Distinguish amplification, real-time measurement and the conversion of RNA to DNA.",
+        "Define the target",
+        "Distinguish the abbreviations",
+        "Interpret with controls"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "What does a positive no-template control suggest?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "It suggests contamination or nonspecific signal and requires investigation before interpreting the samples. It is not evidence of a true target in every specimen."
+        },
+        {
+          "speaker": "Host",
+          "text": "A PCR tube lacks one of the two primers. What is the main consequence for the intended target?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Efficient exponential amplification of the bounded target is lost. The two primers define opposite ends and support amplification of both strands."
+        }
+      ]
+    },
+    {
+      "lessonId": "enzyme-kinetics",
+      "subject": "biochemistry",
+      "title": "Enzyme catalysis and inhibition",
+      "slides": [
+        "Separate reaction rate from equilibrium and compare substrate competition with loss of catalytic capacity.",
+        "Change the route, not the equilibrium",
+        "Read a saturation curve",
+        "State the inhibition model"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Why can adding enzyme accelerate a reaction without changing its final equilibrium?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Catalysis lowers the kinetic barrier for forward and reverse reaction paths. It changes how quickly equilibrium is reached, not the relative free energies of reactants and products."
+        },
+        {
+          "speaker": "Host",
+          "text": "In a simple reversible competitive-inhibition model, what can increasing substrate concentration do?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "Reduce the inhibitor's effect on the observed rate. Substrate competes for binding; sufficiently high substrate can approach the same Vmax in the ideal model."
+        }
+      ]
+    },
+    {
+      "lessonId": "complement",
+      "subject": "genetics",
+      "title": "Complement pathways and their shared effectors",
+      "slides": [
+        "Follow three initiation routes toward opsonization, inflammation and terminal complex formation.",
+        "Converge on C3",
+        "Separate the outputs",
+        "Protect host tissue"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "text": "Explain why activating complement and limiting complement are both necessary."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Activation labels and attacks targets and recruits responses. Regulation limits amplification and terminal injury on host surfaces, preserving useful defense without uncontrolled tissue damage."
+        },
+        {
+          "speaker": "Host",
+          "text": "Why can different complement activation pathways have common downstream effects?"
+        },
+        {
+          "speaker": "Guide",
+          "text": "They converge on C3 activation and shared downstream components. Convergence explains shared effects such as C3b-mediated opsonisation despite different triggers."
+        }
+      ]
+    }
+  ]
+}

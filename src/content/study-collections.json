@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "id": "physiology-cellular",
+      "title": "Cellular physiology and muscle",
+      "subject": "physiology",
+      "lessonIds": [
+        "fluid-and-membrane-transport",
+        "muscle-contraction",
+        "autonomic-signalling",
+        "membrane-potentials"
+      ]
+    },
+    {
+      "id": "physiology-cardiovascular",
+      "title": "Cardiovascular physiology",
+      "subject": "physiology",
+      "lessonIds": [
+        "cardiac-cycle",
+        "lymph-and-fluid-exchange",
+        "cardiac-output",
+        "baroreflex"
+      ]
+    },
+    {
+      "id": "physiology-respiratory",
+      "title": "Respiratory physiology",
+      "subject": "physiology",
+      "lessonIds": [
+        "respiratory-mechanics",
+        "ventilation-perfusion"
+      ]
+    },
+    {
+      "id": "physiology-renal",
+      "title": "Renal and acid–base physiology",
+      "subject": "physiology",
+      "lessonIds": [
+        "renal-water-balance"
+      ]
+    },
+    {
+      "id": "physiology-blood",
+      "title": "Blood and haemostasis",
+      "subject": "physiology",
+      "lessonIds": [
+        "blood-and-haemostasis"
+      ]
+    },
+    {
+      "id": "physiology-digestive",
+      "title": "Gastrointestinal physiology and energy balance",
+      "subject": "physiology",
+      "lessonIds": [
+        "digestive-control",
+        "energy-balance"
+      ]
+    },
+    {
+      "id": "physiology-endocrine",
+      "title": "Endocrine and reproductive physiology",
+      "subject": "physiology",
+      "lessonIds": [
+        "endocrine-feedback",
+        "reproductive-cycles"
+      ]
+    },
+    {
+      "id": "physiology-nervous",
+      "title": "Nervous system and special senses",
+      "subject": "physiology",
+      "lessonIds": [
+        "synaptic-integration",
+        "special-senses"
+      ]
+    },
+    {
+      "id": "anatomy-volume-1",
+      "title": "Volume I · Thorax",
+      "subject": "anatomy",
+      "lessonIds": [
+        "thorax-nerve-relations"
+      ]
+    },
+    {
+      "id": "anatomy-volume-2",
+      "title": "Volume II · Abdomen",
+      "subject": "anatomy",
+      "lessonIds": [
+        "abdomen-portal-relations"
+      ]
+    },
+    {
+      "id": "anatomy-volume-3",
+      "title": "Volume III · Pelvis and urogenital anatomy",
+      "subject": "anatomy",
+      "lessonIds": [
+        "pelvis-urinary-route"
+      ]
+    },
+    {
+      "id": "anatomy-volume-4",
+      "title": "Volume IV · Head, neck and neuroanatomy",
+      "subject": "anatomy",
+      "lessonIds": [
+        "head-neck-tongue-map"
+      ]
+    },
+    {
+      "id": "anatomy-volume-5",
+      "title": "Volume V · Musculoskeletal anatomy",
+      "subject": "anatomy",
+      "lessonIds": [
+        "limbs-plexus-and-joints"
+      ]
+    },
+    {
+      "id": "study-histology",
+      "title": "Tissues, organs and development",
+      "subject": "histology",
+      "lessonIds": [
+        "microscopy",
+        "epithelia",
+        "cell-junctions",
+        "connective-tissue",
+        "cartilage-bone",
+        "blood-marrow",
+        "muscle-histology",
+        "vessel-histology",
+        "lymphoid-organs",
+        "respiratory-histology",
+        "gi-histology",
+        "liver-pancreas",
+        "renal-histology",
+        "reproductive-histology",
+        "placenta",
+        "neurulation"
+      ]
+    },
+    {
+      "id": "study-cell-biology",
+      "title": "Molecular and cellular mechanisms",
+      "subject": "cell-biology",
+      "lessonIds": [
+        "dna-replication",
+        "dna-repair",
+        "rna-processing",
+        "translation",
+        "protein-trafficking",
+        "pcr",
+        "cell-signaling"
+      ]
+    },
+    {
+      "id": "study-biochemistry",
+      "title": "Molecules and metabolism",
+      "subject": "biochemistry",
+      "lessonIds": [
+        "protein-structure",
+        "enzyme-kinetics",
+        "glycolysis",
+        "pdh-tca",
+        "lipid-metabolism",
+        "nitrogen-metabolism"
+      ]
+    },
+    {
+      "id": "study-genetics",
+      "title": "Inheritance and immune responses",
+      "subject": "genetics",
+      "lessonIds": [
+        "meiosis",
+        "inheritance",
+        "genetic-testing",
+        "innate-adaptive",
+        "antigen-presentation",
+        "complement"
+      ]
+    }
+  ]
+}

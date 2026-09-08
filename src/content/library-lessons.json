@@ -2282,6 +2282,1056 @@
       ],
       "updatedAt": "2026-09-06",
       "minutes": 5
+    },
+    {
+      "id": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "summary": "Connect membrane permeability, the sodium–potassium pump and secondary active transport before predicting where a solute moves.",
+      "source": "guide-cellular",
+      "section": "Sections 1.1–1.2: fluid compartments, tonicity and membrane transport",
+      "steps": [
+        {
+          "title": "Separate a gradient from a pathway",
+          "body": "A concentration gradient can favour movement without providing a route across a membrane. The lipid bilayer limits the movement of most ions and polar solutes. Channels provide selective pores; carriers bind and change conformation. For an ion, both concentration and voltage contribute to its electrochemical gradient."
+        },
+        {
+          "title": "Locate the ATP-consuming step",
+          "body": "The sodium–potassium ATPase moves three sodium ions out and two potassium ions in per ATP hydrolysed. It maintains the gradients used by excitable cells and transport epithelia. A sodium–glucose cotransporter does not hydrolyse ATP directly: it couples inward sodium movement down its electrochemical gradient to glucose transport."
+        },
+        {
+          "title": "Distinguish osmolarity from tonicity",
+          "body": "Osmolarity counts dissolved particles per litre of solution. Tonicity predicts the sustained effect on cell volume and depends on solutes that do not readily cross the relevant membrane. A solution can be isosmotic without being isotonic when its solute enters the cell. Always state which membrane and time scale you are considering."
+        }
+      ],
+      "question": {
+        "prompt": "Which process directly hydrolyses ATP?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Sodium–glucose cotransport",
+            "reason": "This uses the sodium gradient; the sodium–potassium pump supplies the energy indirectly."
+          },
+          {
+            "text": "Sodium–potassium ATPase transport",
+            "reason": "The ATPase directly couples ATP hydrolysis to ion transport against the maintained gradients."
+          },
+          {
+            "text": "Potassium flow through an open channel",
+            "reason": "Channel-mediated flow is passive down the electrochemical gradient."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain how ATP can support glucose uptake without binding to its cotransporter.",
+        "answer": "ATP powers the sodium–potassium pump, which maintains a low intracellular sodium concentration. Sodium then enters through a cotransporter down its electrochemical gradient, providing energy for coupled glucose uptake."
+      },
+      "related": [
+        "membrane-potentials",
+        "protein-trafficking"
+      ],
+      "tags": [
+        "Cellular physiology and muscle",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "muscle-contraction",
+      "subject": "physiology",
+      "title": "Three muscle types, three calcium stories",
+      "summary": "Compare how skeletal, cardiac and smooth muscle convert a calcium signal into force, and explain why their responses differ.",
+      "source": "guide-cellular",
+      "section": "Sections on skeletal, cardiac and smooth muscle excitation–contraction coupling",
+      "steps": [
+        {
+          "title": "Skeletal muscle: activate the thin filament",
+          "body": "At the neuromuscular junction, acetylcholine produces an end-plate depolarisation that can initiate a muscle action potential. In skeletal muscle, the T-tubule voltage sensor couples to sarcoplasmic-reticulum calcium release. Calcium binds troponin C, moving the tropomyosin constraint on actin–myosin interaction. ATP supports cross-bridge cycling and calcium reuptake."
+        },
+        {
+          "title": "Cardiac muscle: trigger calcium-induced release",
+          "body": "In cardiac working myocytes, calcium entering through L-type channels triggers further calcium release from the sarcoplasmic reticulum. Troponin C again regulates the thin filament. The prolonged action potential and refractory period strongly limit summation into tetanus, allowing filling between contractions. This working-myocyte model differs from nodal pacemaker activity."
+        },
+        {
+          "title": "Smooth muscle: regulate myosin",
+          "body": "Smooth muscle uses calcium–calmodulin to activate myosin light-chain kinase. Phosphorylation of myosin supports interaction with actin; myosin light-chain phosphatase favours relaxation. Smooth muscle lacks the troponin switch used in striated muscle. Stretch, local signals and autonomic input can regulate force, sometimes without a full action potential."
+        }
+      ],
+      "question": {
+        "prompt": "What is the main calcium-dependent regulatory switch in smooth muscle?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "Calcium binding to troponin C",
+            "reason": "Troponin regulates skeletal and cardiac thin filaments, not the principal smooth-muscle switch."
+          },
+          {
+            "text": "Opening of skeletal-muscle nicotinic receptors",
+            "reason": "These initiate neuromuscular transmission; they do not describe smooth-muscle contractile regulation."
+          },
+          {
+            "text": "Calcium–calmodulin activation of myosin light-chain kinase",
+            "reason": "This promotes myosin phosphorylation and permits effective actin–myosin interaction."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Compare the role of calcium in skeletal, cardiac and smooth muscle.",
+        "answer": "Skeletal and cardiac muscle use troponin C to regulate actin access. Skeletal coupling primarily releases stored calcium through voltage-sensor coupling; cardiac muscle needs trigger calcium entry. Smooth muscle uses calcium–calmodulin and myosin light-chain kinase to regulate myosin."
+      },
+      "related": [
+        "muscle-histology",
+        "cardiac-output"
+      ],
+      "tags": [
+        "Cellular physiology and muscle",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "autonomic-signalling",
+      "subject": "physiology",
+      "title": "Autonomic signals: receptor before response",
+      "summary": "Use receptor location and intracellular signalling to predict an autonomic response without memorising one effect for every organ.",
+      "source": "guide-cellular",
+      "section": "Signal transduction and autonomic receptor comparison sections",
+      "steps": [
+        {
+          "title": "Start with the wiring",
+          "body": "Both sympathetic and parasympathetic preganglionic neurons release acetylcholine onto neuronal nicotinic receptors. Most sympathetic postganglionic neurons release noradrenaline, whereas most parasympathetic postganglionic neurons release acetylcholine onto muscarinic receptors. Sympathetic innervation of eccrine sweat glands is an important cholinergic exception."
+        },
+        {
+          "title": "Follow the receptor pathway",
+          "body": "Many beta-adrenoceptor responses use Gs, adenylyl cyclase and cyclic AMP. Alpha-1 responses commonly use Gq, phospholipase C, IP3 and intracellular calcium. M2 receptors in the heart couple to Gi/o; reduced cyclic AMP and G-protein beta–gamma regulation of potassium channels help slow nodal activity. These are useful dominant pathways, not an exhaustive catalogue."
+        },
+        {
+          "title": "Predict the tissue response",
+          "body": "The same second messenger can produce different effects in different tissues because the target proteins differ. Beta-1 stimulation supports cardiac rate and force, while beta-2 stimulation can relax bronchial smooth muscle. Name the receptor, cell and effector before predicting a change; avoid treating sympathetic activity as a universal contraction signal."
+        }
+      ],
+      "question": {
+        "prompt": "Why can beta stimulation increase cardiac force but relax bronchial smooth muscle?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "The target cells contain different downstream effector machinery",
+            "reason": "A shared signalling pathway can act on different proteins and produce tissue-specific responses."
+          },
+          {
+            "text": "Cyclic AMP has no role in either tissue",
+            "reason": "Gs and cyclic AMP participate in these receptor pathways."
+          },
+          {
+            "text": "All sympathetic postganglionic neurons release acetylcholine",
+            "reason": "Most release noradrenaline; the statement also fails to explain receptor-specific effects."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Give a receptor-to-response explanation of slowing at the sinoatrial node.",
+        "answer": "Acetylcholine activates cardiac M2 receptors. Gi/o signalling reduces cyclic AMP, while beta–gamma subunits can activate GIRK potassium channels. These changes reduce pacemaker activity and slow the heart."
+      },
+      "related": [
+        "cell-signaling",
+        "baroreflex"
+      ],
+      "tags": [
+        "Cellular physiology and muscle",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "cardiac-cycle",
+      "subject": "physiology",
+      "title": "The cardiac cycle: pressure opens the valves",
+      "summary": "Read valve events and ventricular volume together, then predict the isolated effects of preload, afterload and contractility.",
+      "source": "guide-cardio",
+      "section": "Sections 2.3–2.4: cardiac cycle and pressure–volume loops",
+      "steps": [
+        {
+          "title": "Use pressure differences to order the cycle",
+          "body": "During filling, atrial pressure exceeds ventricular pressure and the atrioventricular valve is open. As ventricular pressure rises above atrial pressure, that valve closes. Before ventricular pressure exceeds arterial pressure, both valves are closed: pressure rises at almost constant volume. The arterial valve opens when the ventricular-to-arterial pressure difference favours ejection."
+        },
+        {
+          "title": "Read the loop rather than its shape alone",
+          "body": "The width of a ventricular pressure–volume loop is stroke volume: end-diastolic minus end-systolic volume. Its area represents external stroke work. Isovolumetric contraction and relaxation are nearly vertical because volume changes little while pressure changes. Real measurements depend on loading conditions and valve function; a teaching loop simplifies these details."
+        },
+        {
+          "title": "Change one variable at a time",
+          "body": "With other conditions held fixed, increased filling can raise stroke volume through the Frank–Starling mechanism. An isolated increase in afterload tends to increase end-systolic volume and reduce stroke volume on that beat. Increased contractility tends to reduce end-systolic volume. In an intact circulation, reflexes and subsequent filling can change the later response."
+        }
+      ],
+      "question": {
+        "prompt": "Both ventricular valves are closed while pressure rises. Which phase is this?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Ventricular ejection",
+            "reason": "Ejection requires an open arterial valve and a falling ventricular volume."
+          },
+          {
+            "text": "Isovolumetric contraction",
+            "reason": "Pressure rises before the arterial valve opens, with little change in chamber volume."
+          },
+          {
+            "text": "Rapid ventricular filling",
+            "reason": "Filling requires an open atrioventricular valve and an increasing volume."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Predict the immediate effect of an isolated afterload increase on a pressure–volume loop.",
+        "answer": "At unchanged preload and contractility, the ventricle must develop more pressure before ejection. It generally ejects less on that beat, leaving a larger end-systolic volume and a narrower loop. Later reflex and filling responses may modify this."
+      },
+      "related": [
+        "cardiac-output",
+        "baroreflex"
+      ],
+      "tags": [
+        "Cardiovascular physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "respiratory-mechanics",
+      "subject": "physiology",
+      "title": "Ventilation: make each breath count",
+      "summary": "Connect pressure-driven breathing with dead space and calculate why equal minute ventilation can give different alveolar ventilation.",
+      "source": "guide-respiratory",
+      "section": "Section 3.1: respiratory mechanics, dead space and alveolar ventilation",
+      "steps": [
+        {
+          "title": "Create a pressure gradient",
+          "body": "During quiet inspiration, diaphragm contraction expands the thorax. Alveolar pressure transiently falls below atmospheric pressure, so air flows inward. Airflow stops when the pressures equalise. Quiet expiration is mainly driven by elastic recoil. The diaphragm receives motor supply through the phrenic nerves, principally from C3–C5."
+        },
+        {
+          "title": "Subtract the non-exchanging volume",
+          "body": "Minute ventilation equals tidal volume multiplied by respiratory rate. Alveolar ventilation is approximated by (tidal volume minus dead-space volume) multiplied by rate, using consistent units. Anatomic dead space is conducting-airway volume; alveolar dead space is ventilation that receives little or no effective perfusion."
+        },
+        {
+          "title": "Compare two fictional breathing patterns",
+          "body": "With a fixed dead space of 150 mL, 500 mL breaths at 12/min give 4.2 L/min alveolar ventilation. Breaths of 300 mL at 20/min give only 3.0 L/min, despite the same 6.0 L/min minute ventilation. This is a simplified teaching calculation. Actual dead space and carbon-dioxide production vary; these examples are not ventilation prescriptions."
+        }
+      ],
+      "question": {
+        "prompt": "At 500 mL per breath, 150 mL dead space and 12 breaths/min, what is alveolar ventilation?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "6.0 L/min",
+            "reason": "This is total minute ventilation and includes dead-space ventilation."
+          },
+          {
+            "text": "1.8 L/min",
+            "reason": "This is the dead-space component: 150 mL multiplied by 12."
+          },
+          {
+            "text": "4.2 L/min",
+            "reason": "Subtract 150 from 500 mL, multiply by 12, then convert 4200 mL/min to litres/min."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain why rapid shallow breaths can be less efficient than slower deeper breaths at the same minute ventilation.",
+        "answer": "A fixed conducting-airway volume takes up more of each small breath. After subtracting dead space, less fresh air reaches gas-exchanging alveoli each minute, even when total minute ventilation is unchanged."
+      },
+      "related": [
+        "ventilation-perfusion",
+        "renal-abg-interpretation"
+      ],
+      "tags": [
+        "Respiratory physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "renal-water-balance",
+      "subject": "physiology",
+      "title": "Water balance: distinguish ADH from aldosterone",
+      "summary": "Follow the separate signals for osmolality and effective circulating volume, and connect them to collecting-duct transport.",
+      "source": "guide-renal",
+      "section": "Section 4.4 and integrated body-fluid regulation addendum",
+      "steps": [
+        {
+          "title": "Identify the regulated variable",
+          "body": "Osmolality describes the concentration of osmotically active particles, whereas extracellular volume reflects the amount of fluid in that compartment. Sodium balance is a major determinant of extracellular volume; water balance strongly influences osmolality. The two variables interact, but an explanation should identify which change is driving the response."
+        },
+        {
+          "title": "Use ADH to alter water permeability",
+          "body": "ADH binds basolateral V2 receptors on collecting-duct principal cells and promotes insertion of aquaporin-2 into the apical membrane. Water can then move into the hyperosmotic medullary interstitium. ADH uses the gradient; it does not create the entire countercurrent system by itself. Both osmotic signals and sufficiently strong volume signals can regulate its release."
+        },
+        {
+          "title": "Use aldosterone to adjust sodium and potassium handling",
+          "body": "Aldosterone promotes sodium reabsorption and potassium secretion in responsive distal nephron cells by altering transport proteins, including epithelial sodium channels and the sodium–potassium ATPase. Angiotensin II and plasma potassium are important regulators. Predicting water retention additionally requires attention to water permeability, intake and the other control systems."
+        }
+      ],
+      "question": {
+        "prompt": "What directly increases collecting-duct apical water permeability?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "ADH-dependent aquaporin-2 insertion",
+            "reason": "ADH promotes aquaporin-2 trafficking, allowing water to follow the medullary osmotic gradient."
+          },
+          {
+            "text": "Aldosterone directly opening aquaporin-2 channels",
+            "reason": "Aldosterone chiefly regulates sodium and potassium transport; this is not its direct water-channel mechanism."
+          },
+          {
+            "text": "Blocking all sodium transport in the loop of Henle",
+            "reason": "This can weaken the medullary gradient rather than directly increasing apical water permeability."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Distinguish what ADH changes from what aldosterone changes.",
+        "answer": "ADH increases collecting-duct water permeability through aquaporin-2 trafficking. Aldosterone enhances distal sodium reabsorption and potassium secretion. Their effects interact with medullary gradients, intake and circulating-volume signals."
+      },
+      "related": [
+        "renal-volume-and-osmolality",
+        "renal-concentrating-urine"
+      ],
+      "tags": [
+        "Renal and acid–base physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "blood-and-haemostasis",
+      "subject": "physiology",
+      "title": "Haemostasis: build and stabilise the plug",
+      "summary": "Distinguish platelet adhesion, platelet aggregation and fibrin formation, then locate intrinsic tenase in the sequence.",
+      "source": "guide-blood",
+      "section": "Sections 5.2–5.3: primary haemostasis, intrinsic tenase and coagulation",
+      "steps": [
+        {
+          "title": "Anchor platelets at an injured surface",
+          "body": "Vascular injury exposes adhesive structures and immobilised von Willebrand factor. Platelet GPIb-IX-V binds von Willebrand factor, while collagen receptors help stabilise adhesion. Platelets then change shape, release mediators and recruit further platelets. Adhesion attaches a platelet to the injured surface; it is not the same event as platelet-to-platelet aggregation."
+        },
+        {
+          "title": "Connect platelets to one another",
+          "body": "Activation changes the affinity of integrin alpha-IIb-beta-3, also called GPIIb/IIIa. Fibrinogen can bridge these receptors on neighbouring platelets. ADP, thromboxane and thrombin help amplify activation. Platelets also expose a phospholipid surface that supports coagulation-complex assembly, linking primary and secondary haemostasis."
+        },
+        {
+          "title": "Amplify thrombin and stabilise fibrin",
+          "body": "Intrinsic tenase contains factor IXa with its cofactor VIIIa on a calcium-dependent phospholipid surface; it activates factor X. Factor Xa with Va forms prothrombinase, producing thrombin from prothrombin. Thrombin converts fibrinogen to fibrin, and factor XIIIa crosslinks fibrin. These overlapping processes stabilise the plug; they are not two completely separate timelines."
+        }
+      ],
+      "question": {
+        "prompt": "Which enzyme–cofactor pair forms intrinsic tenase?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Xa with Va",
+            "reason": "This forms prothrombinase, which converts prothrombin to thrombin."
+          },
+          {
+            "text": "IXa with VIIIa",
+            "reason": "On an appropriate phospholipid surface with calcium, this complex efficiently activates factor X."
+          },
+          {
+            "text": "Thrombin with fibrinogen",
+            "reason": "Thrombin cleaves fibrinogen to form fibrin; this is not the intrinsic-tenase complex."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain the difference between adhesion, aggregation and fibrin stabilisation.",
+        "answer": "Adhesion anchors platelets to an injured surface. Aggregation joins activated platelets through fibrinogen bridges between alpha-IIb-beta-3 receptors. Coagulation generates thrombin and fibrin, and factor XIIIa crosslinks fibrin to stabilise the plug."
+      },
+      "related": [
+        "blood-marrow",
+        "vessel-histology"
+      ],
+      "tags": [
+        "Blood and haemostasis",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "digestive-control",
+      "subject": "physiology",
+      "title": "Digestion: coordinate movement and secretion",
+      "summary": "Connect enteric circuits, local signals and gastrointestinal hormones to explain how a meal is processed.",
+      "source": "guide-digestive",
+      "section": "Sections 6.1–6.5: enteric control, motility, secretion and absorption",
+      "steps": [
+        {
+          "title": "Give the gut a local control loop",
+          "body": "The enteric nervous system contains interconnected networks in the myenteric and submucosal plexuses. Myenteric circuits are strongly involved in motility, while submucosal circuits help regulate secretion and local blood flow. Autonomic input modifies these circuits. Local sensory input can therefore coordinate a response without requiring every step to be commanded by the brain."
+        },
+        {
+          "title": "Match the hormone to the incoming material",
+          "body": "Acid arriving in the duodenum stimulates secretin release, supporting pancreatic ductal bicarbonate secretion. Fat and protein digestion products stimulate cholecystokinin, supporting pancreatic enzyme secretion and gallbladder contraction. These signals help match the composition of secretions to what the meal requires."
+        },
+        {
+          "title": "Separate mixing, propulsion and absorption",
+          "body": "Segmentation mainly mixes intestinal contents and increases contact with the mucosa, whereas coordinated peristalsis produces forward propulsion. Digestion breaks macromolecules into absorbable components; absorption moves those components across the epithelium. Pancreatic enzymes, bile-mediated lipid handling and membrane transport each contribute different steps."
+        }
+      ],
+      "question": {
+        "prompt": "Which response is most directly associated with acid entering the duodenum?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "Secretin chiefly causing gastric acid secretion",
+            "reason": "Secretin helps neutralise the duodenal acid load rather than acting chiefly to increase it."
+          },
+          {
+            "text": "CCK acting as the only controller of bicarbonate secretion",
+            "reason": "CCK and secretin have overlapping interactions, but acid-driven ductal bicarbonate secretion is classically linked to secretin."
+          },
+          {
+            "text": "Secretin supporting pancreatic ductal bicarbonate secretion",
+            "reason": "Bicarbonate helps neutralise acidic chyme and provides a suitable environment for intestinal digestion."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain how a meal containing fat and acid can recruit different pancreatic responses.",
+        "answer": "Duodenal acid stimulates secretin and bicarbonate-rich ductal secretion. Fat and protein products stimulate cholecystokinin and enzyme-rich secretion, with neural signals coordinating the response. The pathways interact rather than operating as isolated switches."
+      },
+      "related": [
+        "gi-histology",
+        "liver-pancreas"
+      ],
+      "tags": [
+        "Gastrointestinal physiology and energy balance",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "energy-balance",
+      "subject": "physiology",
+      "title": "Energy balance: connect intake, storage and use",
+      "summary": "Follow energy through the fed and fasting states and distinguish long-term balance from a single meal.",
+      "source": "guide-digestive",
+      "section": "Section 6.6: energy balance, food intake and body weight",
+      "steps": [
+        {
+          "title": "Use a conservation statement",
+          "body": "Over a defined interval, the change in stored body energy reflects absorbed energy intake minus energy expenditure. Expenditure includes basal cellular work, physical activity and the thermic effect of food. Body mass also changes with water and gastrointestinal contents, so a short-term weight change is not a direct measurement of a change in fat energy."
+        },
+        {
+          "title": "Connect the fed state to storage",
+          "body": "After a mixed meal, insulin supports storage and use of absorbed nutrients. Glucose can enter insulin-responsive tissues, glycogen stores can be replenished, and lipid storage is favoured. The exact response depends on tissue transporters and metabolic pathways; not every tissue requires insulin for glucose uptake."
+        },
+        {
+          "title": "Connect fasting to mobilisation",
+          "body": "As the interval since eating increases, a lower insulin-to-glucagon signal supports hepatic glucose production and mobilisation of stored fuels. Glycogenolysis and gluconeogenesis contribute on different time scales, while fatty acids supply many tissues. Hormonal control redistributes available fuels; it does not create energy from nothing."
+        }
+      ],
+      "question": {
+        "prompt": "Why is one day's body-mass change an unreliable measure of fat-energy change?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Water and gut contents also contribute to measured mass",
+            "reason": "Short-term mass changes can occur without an equivalent change in stored fat energy."
+          },
+          {
+            "text": "Conservation of energy does not apply to humans",
+            "reason": "Energy balance still applies; interpreting mass requires knowing what changed."
+          },
+          {
+            "text": "All tissues stop consuming energy during fasting",
+            "reason": "Basal cellular work continues and fasting recruits stored fuels."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Compare nutrient handling after a meal and during fasting.",
+        "answer": "The fed state favours use and storage of absorbed nutrients under a higher insulin signal. Fasting promotes mobilisation of stored fuels and hepatic glucose production under a lower insulin-to-glucagon signal. Energy is transferred and transformed, not created."
+      },
+      "related": [
+        "glycolysis",
+        "lipid-metabolism"
+      ],
+      "tags": [
+        "Gastrointestinal physiology and energy balance",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "endocrine-feedback",
+      "subject": "physiology",
+      "title": "Endocrine axes: read the feedback loop",
+      "summary": "Track a hypothalamic–pituitary–target-gland axis and use the pattern of hormones to explain negative feedback.",
+      "source": "guide-endocrine",
+      "section": "Sections 7.1 and 7.3: hypothalamic–pituitary control and thyroid physiology",
+      "steps": [
+        {
+          "title": "Name the three levels",
+          "body": "In the hypothalamic–pituitary–thyroid axis, hypothalamic TRH supports pituitary TSH release, and TSH stimulates the thyroid. Thyroid hormones then act on many target tissues. Drawing the levels separately helps distinguish a gland's response to stimulation from the actions of its hormone elsewhere in the body."
+        },
+        {
+          "title": "Close the feedback loop",
+          "body": "Thyroid hormone feeds back on the hypothalamus and pituitary, reducing stimulation when hormone availability rises. Feedback is a regulatory relationship, not simply a label attached to every endocrine pathway. Some hormones use different controlling variables, and secretion can be pulsatile or follow daily rhythms."
+        },
+        {
+          "title": "Explain a simplified pattern",
+          "body": "In a simplified primary thyroid-gland failure model, reduced thyroid hormone removes inhibitory feedback and TSH rises if the pituitary can respond. If the defect instead lies centrally, TSH may be low or inappropriately normal despite low thyroid hormone. Real interpretation requires clinical context, assay limitations and other influences; this example teaches the feedback logic."
+        }
+      ],
+      "question": {
+        "prompt": "In a simplified primary thyroid-gland failure model, what happens to TSH?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "It must be suppressed because the thyroid is underactive",
+            "reason": "Reduced thyroid hormone removes feedback inhibition, rather than directly suppressing pituitary TSH."
+          },
+          {
+            "text": "It rises if the pituitary response is intact",
+            "reason": "Lower thyroid hormone permits increased hypothalamic–pituitary stimulation."
+          },
+          {
+            "text": "It directly becomes thyroid hormone",
+            "reason": "TSH is a pituitary signal to the thyroid, not a precursor converted into thyroid hormone."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain why a target-gland hormone and its pituitary signal can move in opposite directions.",
+        "answer": "A target-gland hormone can inhibit its upstream control signals. When target-gland secretion falls, reduced negative feedback permits the pituitary signal to rise, provided the central components of the axis remain functional."
+      },
+      "related": [
+        "cell-signaling",
+        "autonomic-signalling"
+      ],
+      "tags": [
+        "Endocrine and reproductive physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "reproductive-cycles",
+      "subject": "physiology",
+      "title": "Reproductive physiology: connect the two cycles",
+      "summary": "Relate ovarian events to endometrial changes and explain the transition from negative to positive feedback around ovulation.",
+      "source": "guide-endocrine",
+      "section": "Sections 7.7–7.9: reproductive function, ovarian cycle and pregnancy",
+      "steps": [
+        {
+          "title": "Begin with a coordinated axis",
+          "body": "Pulsatile hypothalamic GnRH supports pituitary LH and FSH secretion. In the ovary, gonadotrophins support follicular development and steroid production. In the testis, LH supports Leydig-cell testosterone production, while FSH acts on Sertoli cells in support of spermatogenesis. The same pituitary signals act within different tissue arrangements."
+        },
+        {
+          "title": "Connect follicular growth to ovulation",
+          "body": "Developing ovarian follicles produce estradiol. During most of the cycle, ovarian hormones contribute inhibitory feedback. Sustained sufficiently high estradiol near ovulation can instead generate positive feedback and an LH surge. The surge promotes final oocyte maturation, ovulation and luteinisation. A 28-day diagram is an illustration, not a schedule every person must follow."
+        },
+        {
+          "title": "Match the endometrium to ovarian hormones",
+          "body": "Estradiol supports proliferative endometrial growth. After ovulation, the corpus luteum produces progesterone, promoting secretory differentiation. If pregnancy does not maintain luteal function, falling progesterone and estradiol contribute to menstruation. Fertilisation usually occurs in the uterine-tube ampulla; implantation is a later, distinct event in the uterus."
+        }
+      ],
+      "question": {
+        "prompt": "Which change normally links the late follicular phase to ovulation?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "A permanent absence of GnRH pulses",
+            "reason": "Normal gonadotrophin secretion depends on appropriate pulsatile stimulation."
+          },
+          {
+            "text": "Progesterone replacing all ovarian follicular activity before growth begins",
+            "reason": "Progesterone is especially associated with the post-ovulatory corpus luteum."
+          },
+          {
+            "text": "Sustained high estradiol contributing to an LH surge",
+            "reason": "The feedback switch near ovulation supports the surge that triggers ovulatory events."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Relate the ovarian and endometrial phases without assuming a fixed calendar.",
+        "answer": "Follicular estradiol supports endometrial proliferation. A sustained estradiol rise can trigger an LH surge and ovulation. Luteal progesterone supports secretory endometrium; falling luteal hormones contribute to menstruation when pregnancy does not maintain the corpus luteum."
+      },
+      "related": [
+        "reproductive-histology",
+        "placenta"
+      ],
+      "tags": [
+        "Endocrine and reproductive physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "synaptic-integration",
+      "subject": "physiology",
+      "title": "Neural integration: from release to a response",
+      "summary": "Follow chemical transmission across a synapse, then explain how a neuron combines excitatory and inhibitory inputs.",
+      "source": "guide-nervous",
+      "section": "Section 8.1: chemical synapses, postsynaptic potentials and summation",
+      "steps": [
+        {
+          "title": "Release a chemical signal",
+          "body": "An action potential reaching a presynaptic terminal opens voltage-gated calcium channels. Local calcium entry activates the vesicle-fusion machinery, allowing neurotransmitter release into the synaptic cleft. The transmitter then acts on postsynaptic receptors. Calcium links the arriving electrical event to release; it is not the transmitter crossing the cleft."
+        },
+        {
+          "title": "Interpret the postsynaptic conductance change",
+          "body": "Ionotropic receptors directly regulate channel opening, whereas metabotropic receptors recruit intracellular signalling. Whether an input is excitatory or inhibitory depends on the conductance change, its reversal potential and the receiving cell's state. Inhibitory input can reduce excitability by shunting current even when the membrane does not become much more negative."
+        },
+        {
+          "title": "Combine inputs in time and space",
+          "body": "Temporal summation combines inputs arriving close together in time. Spatial summation combines inputs from different locations. Dendritic filtering, synapse position and inhibitory conductance shape the result. An action potential is generated when the combined effect reaches the relevant threshold; a single postsynaptic potential need not cause a spike."
+        }
+      ],
+      "question": {
+        "prompt": "Which event most directly triggers rapid neurotransmitter release at a typical chemical synapse?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Calcium entering the presynaptic terminal",
+            "reason": "A local calcium rise activates the release sensor and vesicle-fusion machinery."
+          },
+          {
+            "text": "Calcium carrying the transmitter across the cleft",
+            "reason": "Transmitter diffuses after release; calcium is a presynaptic release signal."
+          },
+          {
+            "text": "A postsynaptic action potential returning through every vesicle",
+            "reason": "This is not the normal causal sequence of chemical transmission."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Distinguish chemical transmission from temporal and spatial summation.",
+        "answer": "Chemical transmission releases a transmitter that changes postsynaptic signalling or conductance. Temporal summation combines closely timed inputs; spatial summation combines inputs at different sites. Their combined effect helps determine whether the receiving neuron fires."
+      },
+      "related": [
+        "membrane-potentials",
+        "cell-signaling"
+      ],
+      "tags": [
+        "Nervous system and special senses",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "special-senses",
+      "subject": "physiology",
+      "title": "Special senses: convert a stimulus into a signal",
+      "summary": "Compare how photoreceptors and inner-ear hair cells convert physical stimuli into changes in neurotransmitter release.",
+      "source": "guide-nervous",
+      "section": "Special-sense sections: vision, phototransduction, hearing and vestibular function",
+      "steps": [
+        {
+          "title": "Light reduces photoreceptor depolarisation",
+          "body": "In darkness, cyclic-GMP-dependent channels support the photoreceptor dark current. Light activates the phototransduction cascade, reducing cyclic GMP and closing these channels. The photoreceptor hyperpolarises and releases less glutamate. This is a graded receptor response; it is not a conventional all-or-none action potential in the rod or cone."
+        },
+        {
+          "title": "Hair bundles gate a mechanically sensitive current",
+          "body": "Deflection of a sensory hair bundle in its excitatory direction opens mechanotransduction channels. Potassium-rich endolymph and the electrochemical arrangement favour an inward current that depolarises the hair cell. This changes calcium entry and transmitter release to sensory afferents. Deflection in the opposite direction reduces the response."
+        },
+        {
+          "title": "Keep the sensory code and route separate",
+          "body": "Cochlear position helps encode sound frequency because different parts of the basilar membrane respond best to different frequencies. Vestibular organs instead contribute information about head movement and orientation. A complete explanation names the stimulus, receptor response, transmitter change and afferent pathway, rather than saying that every sensory receptor fires in the same way."
+        }
+      ],
+      "question": {
+        "prompt": "What does light normally do to a vertebrate rod photoreceptor?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Opens more cyclic-GMP-gated channels and increases the dark current",
+            "reason": "The light-activated cascade lowers cyclic GMP and closes these channels."
+          },
+          {
+            "text": "Hyperpolarises it and reduces glutamate release",
+            "reason": "Channel closure reduces the inward dark current and changes graded transmitter release."
+          },
+          {
+            "text": "Causes the rod to fire a conventional motor-neuron action potential",
+            "reason": "Rod signalling is graded; retinal ganglion cells provide the spiking output."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Compare the direction of the initial receptor response to light and to excitatory hair-bundle deflection.",
+        "answer": "Light closes cyclic-GMP-gated channels and hyperpolarises a photoreceptor. Excitatory hair-bundle deflection opens mechanically gated channels and depolarises a hair cell. Both graded responses regulate transmitter release."
+      },
+      "related": [
+        "synaptic-integration",
+        "protein-trafficking"
+      ],
+      "tags": [
+        "Nervous system and special senses",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "lymph-and-fluid-exchange",
+      "subject": "physiology",
+      "title": "Microcirculation: return the filtered fluid",
+      "summary": "Connect capillary filtration, the endothelial barrier and lymphatic return without assuming that every capillary reabsorbs fluid at its venous end.",
+      "source": "guide-cardio",
+      "section": "Sections 2.7–2.8: microcirculation, Starling forces and venous return",
+      "steps": [
+        {
+          "title": "Separate pressure from permeability",
+          "body": "Capillary hydrostatic pressure favours outward fluid movement. Plasma proteins contribute an opposing colloid osmotic effect, but the endothelial barrier and its glycocalyx determine how those forces act. A pressure change alone does not fully describe exchange when permeability or protein distribution also changes."
+        },
+        {
+          "title": "Include the lymphatic route",
+          "body": "Lymphatic vessels return filtered interstitial fluid and proteins to the circulation. Sustained venous-end reabsorption is not a universal feature of all systemic capillaries. In many tissues, lymphatic return handles much of the net filtration. Different organs have specialised exchange arrangements, so one diagram should not be treated as a universal map."
+        },
+        {
+          "title": "Build an oedema mechanism",
+          "body": "Oedema can result when filtration exceeds the capacity for return. Increased venous pressure, increased permeability, reduced plasma protein concentration or impaired lymphatic drainage can contribute through different mechanisms. In a teaching explanation, specify which part changed and then trace its effect; appearance alone does not establish a cause."
+        }
+      ],
+      "question": {
+        "prompt": "Which statement best represents the role of lymphatics in tissue-fluid balance?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "They carry only cells and never return proteins",
+            "reason": "Lymphatic vessels return interstitial fluid and proteins as well as transporting immune cells."
+          },
+          {
+            "text": "They are unnecessary because all filtered fluid is reabsorbed at venous capillary ends",
+            "reason": "This is an oversimplification; sustained venous-end reabsorption is not universal."
+          },
+          {
+            "text": "They return net filtered fluid and proteins to the circulation",
+            "reason": "Lymphatic return is a major component of tissue-fluid balance."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain how venous pressure and lymphatic obstruction can both produce fluid accumulation.",
+        "answer": "Higher venous pressure can increase capillary hydrostatic pressure and filtration. Lymphatic obstruction reduces the route that returns filtered fluid and proteins. Both can increase interstitial fluid, but through different parts of the balance."
+      },
+      "related": [
+        "vessel-histology",
+        "lymphoid-organs"
+      ],
+      "tags": [
+        "Cardiovascular physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "thorax-nerve-relations",
+      "subject": "anatomy",
+      "title": "Volume I: orient the thorax around the lung root",
+      "summary": "Use the lung root, diaphragm and transverse thoracic plane to organise thoracic relationships before adding detail.",
+      "source": "guide-volume-1",
+      "section": "Sternal angle; diaphragm innervation; lung roots; phrenic and vagus relationships",
+      "steps": [
+        {
+          "title": "Find a reproducible landmark",
+          "body": "The sternal angle marks the manubriosternal junction and helps locate the second rib for rib counting. Its conventional transverse plane passes near the T4–T5 intervertebral level and divides the superior from the inferior mediastinum. These are orientation relationships; organ positions can vary with respiration, posture and individual anatomy."
+        },
+        {
+          "title": "Place the nerves around the root",
+          "body": "The phrenic nerve passes anterior to the lung root, while the vagus passes posterior to it. The phrenic nerve continues towards the diaphragm and supplies its motor function. The vagus contributes to pulmonary and oesophageal autonomic networks. A simple anterior–posterior schematic teaches this relationship without reproducing the complete mediastinal course."
+        },
+        {
+          "title": "Connect the diaphragm to function and development",
+          "body": "The phrenic nerves carry motor fibres principally from C3–C5. The diaphragm expands the thoracic cavity during inspiration and separates thoracic and abdominal compartments. Development involves several contributing structures, including the septum transversum and pleuroperitoneal membranes; its mature position should not be used to infer a thoracic origin for all its motor fibres."
+        }
+      ],
+      "question": {
+        "prompt": "At the lung root, which anterior–posterior relationship is correct?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Vagus anterior and phrenic posterior",
+            "reason": "This reverses the standard relationship used for orientation."
+          },
+          {
+            "text": "Phrenic anterior and vagus posterior",
+            "reason": "The phrenic nerve passes in front of the root and the vagus behind it."
+          },
+          {
+            "text": "Both nerves travel inside a pulmonary artery",
+            "reason": "Neither relationship is described by an intravascular course."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Orient the two nerves at the lung root and connect one to its main motor target.",
+        "answer": "The phrenic nerve runs anterior to the lung root and supplies the diaphragm through fibres principally from C3–C5. The vagus runs posterior to the root and contributes to thoracic autonomic networks."
+      },
+      "related": [
+        "anatomy-thorax",
+        "respiratory-mechanics"
+      ],
+      "tags": [
+        "Volume I · Thorax",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "abdomen-portal-relations",
+      "subject": "anatomy",
+      "title": "Volume II: connect peritoneum and the portal triad",
+      "summary": "Identify the portal-triad relationship and use peritoneal attachments to explain how abdominal organs are organised.",
+      "source": "guide-volume-2",
+      "section": "Peritoneal spaces; hepatoduodenal ligament; portal vein; gut-tube development",
+      "steps": [
+        {
+          "title": "Describe peritoneal relationships precisely",
+          "body": "Visceral peritoneum covers organs and parietal peritoneum lines the wall. Mesenteries connect selected organs to the wall and carry vessels, nerves and lymphatics. Intraperitoneal does not mean that an organ lies loose inside the fluid-filled peritoneal cavity: it describes its covering and attachment relationships."
+        },
+        {
+          "title": "Locate the portal triad",
+          "body": "Within the hepatoduodenal ligament, the portal vein lies posterior to the bile duct and proper hepatic artery. Conventionally, the bile duct is on the patient's right and the proper hepatic artery on the left in the anterior pair. The supplied figure intentionally emphasises front–back order; its left–right arrangement is schematic."
+        },
+        {
+          "title": "Connect rotation to adult position",
+          "body": "The embryonic gut tube lengthens, rotates and acquires different attachments. These changes help explain mesenteries and secondary retroperitoneal relationships. Foregut, midgut and hindgut divisions also organise major arterial territories. Arterial territory, peritoneal covering and venous drainage answer different questions and should not be used interchangeably."
+        }
+      ],
+      "question": {
+        "prompt": "Which portal-triad structure lies behind the anterior duct–artery pair?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Portal vein",
+            "reason": "The portal vein is the posterior member of the triad in the hepatoduodenal ligament."
+          },
+          {
+            "text": "Common bile duct",
+            "reason": "The bile duct belongs to the anterior pair and conventionally lies on the patient's right."
+          },
+          {
+            "text": "Proper hepatic artery",
+            "reason": "The proper hepatic artery belongs to the anterior pair and conventionally lies on the patient's left."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Describe the portal triad while distinguishing the figure's main relationship from its simplification.",
+        "answer": "The portal vein is posterior; the bile duct and proper hepatic artery are anterior. Conventionally the duct is right and artery left from the patient's perspective. The figure is a front–back relationship schematic rather than a complete operative view."
+      },
+      "related": [
+        "anatomy-abdomen",
+        "digestive-control"
+      ],
+      "tags": [
+        "Volume II · Abdomen",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "pelvis-urinary-route",
+      "subject": "anatomy",
+      "title": "Volume III: follow urine through the pelvis",
+      "summary": "Trace the kidney-to-bladder route, distinguish ureter from urethra and connect urinary anatomy with pelvic support.",
+      "source": "guide-volume-3",
+      "section": "Kidney collecting system; ureter; urinary bladder; pelvic diaphragm; urogenital development",
+      "steps": [
+        {
+          "title": "Trace a continuous collecting route",
+          "body": "Urine leaving renal papillae enters minor calyces, then major calyces and the renal pelvis. The ureter transports it to the urinary bladder. The urethra carries urine from the bladder to the exterior. These are distinct segments; the ureter is not a continuation of the urethra, and blood follows a separate vascular route."
+        },
+        {
+          "title": "Use relations to orient the ureter",
+          "body": "The ureters descend towards the pelvis and enter the bladder wall obliquely. In the female pelvis, the ureter passes beneath the uterine artery near the cervix. This is a relationship to recognise in anatomical study, not an instruction for locating or manipulating structures during a procedure."
+        },
+        {
+          "title": "Connect support and development",
+          "body": "The pelvic diaphragm supports pelvic viscera and is mainly formed by levator ani and coccygeus. The urinary collecting system and renal nephrons have different embryological origins: the ureteric bud contributes the collecting system, while metanephric mesenchyme contributes nephrons. Their interaction connects two developing systems into a continuous urinary route."
+        }
+      ],
+      "question": {
+        "prompt": "Which sequence correctly follows urine beyond a renal papilla?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "Renal artery → renal vein → bladder",
+            "reason": "This confuses the vascular and urinary pathways."
+          },
+          {
+            "text": "Urethra → ureter → renal pelvis",
+            "reason": "This reverses the route and interchanges ureter and urethra."
+          },
+          {
+            "text": "Minor calyx → major calyx → renal pelvis → ureter",
+            "reason": "This follows the collecting route towards the bladder."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Connect the urinary route to its two renal developmental components.",
+        "answer": "Nephrons derived from metanephric mesenchyme connect to the collecting system derived from the ureteric bud. Urine passes through collecting ducts to calyces, renal pelvis, ureter and bladder, then exits through the urethra."
+      },
+      "related": [
+        "renal-kidney-map",
+        "anatomy-embryology"
+      ],
+      "tags": [
+        "Volume III · Pelvis and urogenital anatomy",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "head-neck-tongue-map",
+      "subject": "anatomy",
+      "title": "Volume IV: separate taste, sensation and movement",
+      "summary": "Use tongue innervation to practise a cranial-nerve explanation based on territory and function.",
+      "source": "guide-volume-4",
+      "section": "Tongue innervation; cranial nerves V, VII, IX, X and XII; pharyngeal development",
+      "steps": [
+        {
+          "title": "Ask which sensory function is being tested",
+          "body": "For the anterior two-thirds of the tongue, general sensation mainly travels through the lingual nerve, a branch of V3. Taste from most of this region travels with chorda tympani fibres from VII that join the lingual nerve. Sharing part of a peripheral route does not make taste and general sensation the same cranial-nerve function."
+        },
+        {
+          "title": "Check the posterior territory and the exception",
+          "body": "The glossopharyngeal nerve, IX, carries general sensation and taste from the posterior third. The circumvallate papillae lie just anterior to the terminal sulcus but receive taste innervation from IX. Sensory and taste fibres from the epiglottic region mainly travel through X. The regional figure is a useful summary but does not draw every boundary exception."
+        },
+        {
+          "title": "Keep motor supply separate",
+          "body": "Most tongue muscles receive motor supply from XII. Palatoglossus is the major exception, receiving motor supply through the vagal pharyngeal plexus. Different developmental contributions to tongue regions help explain the mixed sensory map. An oral answer should name territory, modality and nerve before discussing a lesion."
+        }
+      ],
+      "question": {
+        "prompt": "Which nerve carries taste from most of the anterior two-thirds of the tongue?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Lingual nerve fibres originating from V3",
+            "reason": "The lingual nerve provides the general-sensation route; taste fibres joining it originate from VII."
+          },
+          {
+            "text": "Chorda tympani fibres of VII",
+            "reason": "These fibres join the lingual nerve and carry taste from most of the anterior two-thirds."
+          },
+          {
+            "text": "Hypoglossal nerve XII",
+            "reason": "XII mainly supplies tongue movement rather than this taste pathway."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain why a single tongue map cannot replace a modality-specific answer.",
+        "answer": "General sensation, taste and movement use different pathways. Most anterior general sensation uses V3, anterior taste uses VII, posterior sensation and taste use IX, and most motor supply uses XII. Circumvallate papillae and palatoglossus are important exceptions."
+      },
+      "related": [
+        "special-senses",
+        "synaptic-integration"
+      ],
+      "tags": [
+        "Volume IV · Head, neck and neuroanatomy",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "limbs-plexus-and-joints",
+      "subject": "anatomy",
+      "title": "Volume V: trace a limb nerve through the plexus",
+      "summary": "Organise the brachial plexus from roots to branches, then connect peripheral nerves with joint movement and limb development.",
+      "source": "guide-volume-5",
+      "section": "Brachial plexus; synovial joints; limb compartments; embryological segmental organisation",
+      "steps": [
+        {
+          "title": "Keep each plexus level distinct",
+          "body": "The usual brachial plexus begins with ventral rami C5–T1, then forms trunks, divisions, cords and terminal branches. The upper trunk usually combines C5–C6, the middle continues C7, and the lower combines C8–T1. Roots, trunks and cords are different organisational levels; the names should not be substituted for one another."
+        },
+        {
+          "title": "Relate cords to an anatomical landmark",
+          "body": "Lateral, medial and posterior cords are named relative to the second part of the axillary artery. The musculocutaneous nerve arises from the lateral cord, the ulnar from the medial, and the axillary and radial from the posterior. The median nerve usually receives contributions from both lateral and medial cords. Normal anatomical variation should be expected."
+        },
+        {
+          "title": "Explain movement using more than a nerve name",
+          "body": "A movement requires an appropriate muscle action, joint axis, intact nerve supply and mechanical conditions. Synovial joints have a cavity, capsule, articular surfaces and synovial lining; accessory structures vary. Developmental limb rotation helps explain adult compartment relationships, but a simplified plexus diagram does not show every muscle, cutaneous territory or variant branch."
+        }
+      ],
+      "question": {
+        "prompt": "Which organisation correctly orders the usual brachial plexus?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Roots → trunks → divisions → cords → terminal branches",
+            "reason": "This preserves the sequence and separates its distinct anatomical levels."
+          },
+          {
+            "text": "Roots → cords → trunks → arteries → divisions",
+            "reason": "This mixes levels and inserts a vessel into the neural branching sequence."
+          },
+          {
+            "text": "Terminal branches → lymph nodes → roots",
+            "reason": "Lymphatic structures are not stages of brachial-plexus organisation."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Trace C5–T1 through the plexus and explain how the cords are named.",
+        "answer": "Ventral rami C5–T1 form upper, middle and lower trunks, each dividing into anterior and posterior divisions. These combine into lateral, medial and posterior cords, named relative to the second part of the axillary artery, and then give terminal branches."
+      },
+      "related": [
+        "anatomy-musculoskeletal",
+        "muscle-contraction"
+      ],
+      "tags": [
+        "Volume V · Musculoskeletal anatomy",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7,
+      "updatedAt": "2026-09-08"
     }
   ]
 }

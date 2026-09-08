@@ -95,6 +95,96 @@
       "status": "public",
       "updatedAt": "2026-09-06",
       "bytes": 0,
+      "id": "thorax-nerve-relations",
+      "title": "Volume I: orient the thorax around the lung root",
+      "subject": "anatomy",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Use the lung root, diaphragm and transverse thoracic plane to organise thoracic relationships before adding detail.",
+      "tags": [
+        "Volume I · Thorax",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "abdomen-portal-relations",
+      "title": "Volume II: connect peritoneum and the portal triad",
+      "subject": "anatomy",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Identify the portal-triad relationship and use peritoneal attachments to explain how abdominal organs are organised.",
+      "tags": [
+        "Volume II · Abdomen",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "pelvis-urinary-route",
+      "title": "Volume III: follow urine through the pelvis",
+      "subject": "anatomy",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Trace the kidney-to-bladder route, distinguish ureter from urethra and connect urinary anatomy with pelvic support.",
+      "tags": [
+        "Volume III · Pelvis and urogenital anatomy",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "head-neck-tongue-map",
+      "title": "Volume IV: separate taste, sensation and movement",
+      "subject": "anatomy",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Use tongue innervation to practise a cranial-nerve explanation based on territory and function.",
+      "tags": [
+        "Volume IV · Head, neck and neuroanatomy",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "limbs-plexus-and-joints",
+      "title": "Volume V: trace a limb nerve through the plexus",
+      "subject": "anatomy",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Organise the brachial plexus from roots to branches, then connect peripheral nerves with joint movement and limb development.",
+      "tags": [
+        "Volume V · Musculoskeletal anatomy",
+        "anatomy",
+        "embryology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
       "id": "nitrogen-metabolism",
       "title": "Amino-acid nitrogen and urea",
       "subject": "biochemistry",
@@ -835,6 +925,91 @@
       "status": "public",
       "updatedAt": "2026-09-06",
       "bytes": 0,
+      "id": "autonomic-signalling",
+      "title": "Autonomic signals: receptor before response",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Use receptor location and intracellular signalling to predict an autonomic response without memorising one effect for every organ.",
+      "tags": [
+        "Cellular physiology and muscle",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "fluid-and-membrane-transport",
+      "title": "Cell transport: follow the energy",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect membrane permeability, the sodium–potassium pump and secondary active transport before predicting where a solute moves.",
+      "tags": [
+        "Cellular physiology and muscle",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "digestive-control",
+      "title": "Digestion: coordinate movement and secretion",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect enteric circuits, local signals and gastrointestinal hormones to explain how a meal is processed.",
+      "tags": [
+        "Gastrointestinal physiology and energy balance",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "endocrine-feedback",
+      "title": "Endocrine axes: read the feedback loop",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Track a hypothalamic–pituitary–target-gland axis and use the pattern of hormones to explain negative feedback.",
+      "tags": [
+        "Endocrine and reproductive physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "energy-balance",
+      "title": "Energy balance: connect intake, storage and use",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Follow energy through the fed and fasting states and distinguish long-term balance from a single meal.",
+      "tags": [
+        "Gastrointestinal physiology and energy balance",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
       "id": "renal-challenge",
       "title": "Five-minute renal challenge",
       "subject": "physiology",
@@ -867,6 +1042,23 @@
         "Follow the blood. Follow the filtrate."
       ],
       "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Distinguish platelet adhesion, platelet aggregation and fibrin formation, then locate intrinsic tenase in the sequence.",
+      "tags": [
+        "Blood and haemostasis",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
     },
     {
       "status": "public",
@@ -905,6 +1097,40 @@
         "How to interpret an arterial blood gas"
       ],
       "minutes": 12
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "lymph-and-fluid-exchange",
+      "title": "Microcirculation: return the filtered fluid",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect capillary filtration, the endothelial barrier and lymphatic return without assuming that every capillary reabsorbs fluid at its venous end.",
+      "tags": [
+        "Cardiovascular physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "synaptic-integration",
+      "title": "Neural integration: from release to a response",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Follow chemical transmission across a synapse, then explain how a neuron combines excitatory and inhibitory inputs.",
+      "tags": [
+        "Nervous system and special senses",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
     },
     {
       "status": "public",
@@ -964,7 +1190,7 @@
     {
       "status": "public",
       "updatedAt": "2026-09-06",
-      "bytes": 6520,
+      "bytes": 6633,
       "id": "renal-revision-sheet",
       "title": "Renal physiology revision sheet",
       "subject": "physiology",
@@ -977,6 +1203,23 @@
         "printable",
         "summary"
       ]
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "reproductive-cycles",
+      "title": "Reproductive physiology: connect the two cycles",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Relate ovarian events to endometrial changes and explain the transition from negative to positive feedback around ovulation.",
+      "tags": [
+        "Endocrine and reproductive physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
     },
     {
       "status": "public",
@@ -996,6 +1239,23 @@
         "neurons"
       ],
       "minutes": 5
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "special-senses",
+      "title": "Special senses: convert a stimulus into a signal",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Compare how photoreceptors and inner-ear hair cells convert physical stimuli into changes in neurotransmitter release.",
+      "tags": [
+        "Nervous system and special senses",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
     },
     {
       "status": "public",
@@ -1040,6 +1300,23 @@
       "status": "public",
       "updatedAt": "2026-09-06",
       "bytes": 0,
+      "id": "cardiac-cycle",
+      "title": "The cardiac cycle: pressure opens the valves",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Read valve events and ventricular volume together, then predict the isolated effects of preload, afterload and contractility.",
+      "tags": [
+        "Cardiovascular physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
       "id": "renal-course",
       "title": "The complete renal mini-course",
       "subject": "physiology",
@@ -1053,6 +1330,23 @@
       "kind": "Practice",
       "format": "ACTIVITY",
       "minutes": 5
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "muscle-contraction",
+      "title": "Three muscle types, three calcium stories",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Compare how skeletal, cardiac and smooth muscle convert a calcium signal into force, and explain why their responses differ.",
+      "tags": [
+        "Cellular physiology and muscle",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
     },
     {
       "status": "public",
@@ -1078,6 +1372,23 @@
       "status": "public",
       "updatedAt": "2026-09-06",
       "bytes": 0,
+      "id": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect pressure-driven breathing with dead space and calculate why equal minute ventilation can give different alveolar ventilation.",
+      "tags": [
+        "Respiratory physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
       "id": "renal-volume-and-osmolality",
       "title": "Volume and osmolality ask different questions.",
       "subject": "physiology",
@@ -1092,6 +1403,23 @@
         "Volume and osmolality ask different questions."
       ],
       "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "renal-water-balance",
+      "title": "Water balance: distinguish ADH from aldosterone",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Follow the separate signals for osmolality and effective circulating volume, and connect them to collecting-duct transport.",
+      "tags": [
+        "Renal and acid–base physiology",
+        "physiology",
+        "guided revision"
+      ],
+      "minutes": 7
     },
     {
       "status": "public",
