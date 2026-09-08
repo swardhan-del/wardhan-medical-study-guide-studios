@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const origin = getSiteUrl();
   const routes = [
     "/",
+    "/start",
     "/about",
     "/subjects",
     "/library",

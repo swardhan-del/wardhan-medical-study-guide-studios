@@ -529,6 +529,75 @@
           "explanation": "Complement is a major component of innate defence and connects with adaptive responses."
         }
       ]
+    },
+    {
+      "id": "studio-respiratory-pressure-reading",
+      "topic": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "href": "/library/respiratory-mechanics#studio-practice",
+      "prompt": "An open airway connects atmosphere (0 cm H₂O) with an alveolus (−1 cm H₂O), as shown in the diagram. Which direction does air flow?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Into the alveolus",
+          "explanation": "Flow follows the gradient from higher to lower pressure."
+        },
+        {
+          "text": "Out towards the atmosphere",
+          "explanation": "That requires alveolar pressure above atmospheric pressure."
+        },
+        {
+          "text": "No flow",
+          "explanation": "No flow requires equal pressures in this simplified model."
+        }
+      ]
+    },
+    {
+      "id": "studio-respiratory-quiet-expiration",
+      "topic": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "href": "/library/respiratory-mechanics#studio-practice",
+      "prompt": "After quiet inspiration, inspiratory muscles relax. What normally drives quiet expiration?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Active diaphragm contraction",
+          "explanation": "Diaphragm contraction supports inspiration, not quiet expiration."
+        },
+        {
+          "text": "Elastic recoil of the lungs",
+          "explanation": "Recoil reduces volume and raises alveolar pressure."
+        },
+        {
+          "text": "Alveolar pressure staying below atmospheric pressure",
+          "explanation": "That pressure gradient would favour inward airflow."
+        }
+      ]
+    },
+    {
+      "id": "studio-respiratory-airway-resistance",
+      "topic": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "href": "/library/respiratory-mechanics#studio-practice",
+      "prompt": "In a model, airflow = pressure difference / resistance. Resistance doubles while pressure difference stays fixed. What happens to airflow?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "It doubles",
+          "explanation": "Higher resistance opposes flow; it does not increase it."
+        },
+        {
+          "text": "It is unchanged",
+          "explanation": "Unchanged pressure does not cancel the resistance change."
+        },
+        {
+          "text": "It halves",
+          "explanation": "Dividing by twice the resistance halves the flow."
+        }
+      ]
     }
   ]
 }

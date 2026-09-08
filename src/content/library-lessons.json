@@ -2516,6 +2516,10 @@
           "body": "During quiet inspiration, diaphragm contraction expands the thorax. Alveolar pressure transiently falls below atmospheric pressure, so air flows inward. Airflow stops when the pressures equalise. Quiet expiration is mainly driven by elastic recoil. The diaphragm receives motor supply through the phrenic nerves, principally from C3–C5."
         },
         {
+          "title": "Distinguish pressure from resistance",
+          "body": "For a simplified airway, airflow equals the pressure difference divided by airway resistance. At the same pressure difference, doubling resistance halves airflow. Use this relationship to interpret the pressure diagram and resistance question below."
+        },
+        {
           "title": "Subtract the non-exchanging volume",
           "body": "Minute ventilation equals tidal volume multiplied by respiratory rate. Alveolar ventilation is approximated by (tidal volume minus dead-space volume) multiplied by rate, using consistent units. Anatomic dead space is conducting-airway volume; alveolar dead space is ventilation that receives little or no effective perfusion."
         },
@@ -2555,8 +2559,8 @@
         "physiology",
         "guided revision"
       ],
-      "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "minutes": 9,
+      "updatedAt": "2026-09-09"
     },
     {
       "id": "renal-water-balance",

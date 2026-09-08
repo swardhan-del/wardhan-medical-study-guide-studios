@@ -4,9 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
+  { href: "/start", label: "Start here" },
+  { href: "/subjects", label: "Subjects" },
   { href: "/library", label: "Library" },
   { href: "/study", label: "My Study" },
-  { href: "/subjects", label: "Subjects" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -44,9 +45,10 @@ export function SiteNav() {
             {navItems.map((item) => {
               const isActive =
                 pathname === item.href ||
-                pathname.startsWith(`${item.href}/`) ||
+                (item.href !== "/study" && pathname.startsWith(`${item.href}/`)) ||
+                (item.href === "/subjects" && pathname.startsWith("/study/") && !pathname.startsWith("/study/planner")) ||
                 (item.href === "/study" &&
-                  (pathname === "/learn/renal" || pathname.startsWith("/learn/renal/")));
+                  (pathname === "/study/planner" || pathname === "/learn/renal" || pathname.startsWith("/learn/renal/")));
               return (
                 <li key={item.href}>
                   <Link

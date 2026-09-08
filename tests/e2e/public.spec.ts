@@ -456,7 +456,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   const check = page.locator("#concept-check-title");
   await page.locator(".concept-sequence summary").nth(1).click();
   await expect(
-    page.locator(".concept-sequence").getByText(/Pseudostratified epithelium appears multilayered/),
+    page.locator("#main-content .concept-sequence").getByText(/Pseudostratified epithelium appears multilayered/),
   ).toBeVisible();
   await expect(
     check.getByRole("button", { name: "Check answer", exact: true }),

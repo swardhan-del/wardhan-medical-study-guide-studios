@@ -55,7 +55,7 @@ test("topic filtering, lesson journey, breadcrumbs and related links", async ({
 }) => {
   await page.goto("/subjects");
   await page.getByRole("searchbox", { name: "Search topics" }).fill("renal");
-  await page.getByLabel("Topic subject").selectOption("physiology");
+  await page.getByRole("region", { name: "Find a topic" }).getByRole("combobox", { name: "Topic subject", exact: true }).selectOption("physiology");
   await page
     .locator(".native-topic-results")
     .getByRole("link", { name: "Renal and acid-base physiology", exact: true })
