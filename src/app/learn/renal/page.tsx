@@ -41,11 +41,15 @@ export default function RenalCourse() {
           __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
         }}
       />
+      <nav className="breadcrumbs" aria-label="Breadcrumb">
+        <Link href="/study">My Study</Link>
+        <span aria-hidden="true">/</span>
+        <Link href="/subjects/physiology">Physiology</Link>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Renal physiology</span>
+      </nav>
       <header className="study-hero">
         <SaveButton id="renal-course" title="Renal physiology course" />
-        <Link className="text-link" href="/library">
-          ← Learning library
-        </Link>
         <p className="eyebrow">Free mini-course · Medical physiology</p>
         <h1>Understand renal physiology from filtration to fluid balance</h1>
         <p className="interior-lede">
