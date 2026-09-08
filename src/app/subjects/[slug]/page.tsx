@@ -36,7 +36,7 @@ export default async function SubjectPage({ params }: Props) {
       <header className="library-heading">
         <p className="eyebrow">Subject</p>
         <h1>{s.title}</h1>
-        <p className="interior-lede">{s.description}</p>
+        <p className="interior-lede">{slug === "histology" ? "Learn to identify tissues by their architecture, cells, and extracellular features. Connect what you see with how the tissue functions and develops." : s.description}</p>
       </header>
       {slug === "anatomy" && <AnatomyTopicNav />}
       <SubjectLearningPath subject={slug === "immunology" ? slug : s.learningSubject || slug} />
@@ -53,7 +53,7 @@ export default async function SubjectPage({ params }: Props) {
       ) : (
         <section id="website-lessons">
           <span id="authored-guides" />
-          <h2 className="native-section-title">Available resources</h2>
+          <h2 className="native-section-title">Lessons and study resources</h2>
           <CatalogBrowser records={records} />
         </section>
       )}

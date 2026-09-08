@@ -28,9 +28,9 @@ export default function MusculoskeletalPage() {
       <section className="msk-overview" aria-labelledby="msk-start">
         <figure>
           <a href="/images/anatomy/volume-5.png" target="_blank" rel="noopener noreferrer" aria-label="Enlarge hip-bone illustration (opens in a new tab)">
-            <Image src="/images/anatomy/volume-5.png" alt="Anterior, lateral and posterior views of hip bones with labeled landmarks." width={1055} height={1491} sizes="(max-width: 760px) 90vw, 35vw" />
+            <Image src="/images/anatomy/volume-5.png" alt="Anterior, lateral and posterior views of hip bones with labelled landmarks." width={1055} height={1491} sizes="(max-width: 760px) 90vw, 35vw" />
           </a>
-          <figcaption>Hip bones and landmarks · STEM Visualizer collection. Select the image to enlarge.</figcaption>
+          <figcaption>Compare the labelled landmarks across the views of the hip bones. Select the image to enlarge.</figcaption>
         </figure>
         <div>
           <p className="eyebrow">Begin with relationships</p>
@@ -85,7 +85,7 @@ export default function MusculoskeletalPage() {
       <section id="sources" className="msk-section" aria-labelledby="sources-title">
         <p className="eyebrow">The material behind this study map</p>
         <h2 id="sources-title">Source guides & teaching decks</h2>
-        <p>These notes identify the editions, chapters and slides used for this preview. The full books and teaching decks are being prepared for release; this page provides study summaries and references.</p>
+        <p>These notes identify the editions, chapters and slides used for these study summaries. The full books and teaching decks are not available for download here.</p>
         <div className="msk-topic-grid">
           {musculoskeletalSources.map((source) => (
             <article className="msk-topic msk-source" id={`source-${source.id}`} key={source.id}>

@@ -66,12 +66,12 @@ test("topic filtering, lesson journey, breadcrumbs and related links", async ({
   await page.getByLabel("Search resources").fill("clearance");
   await page
     .locator(".resource-card")
-    .getByRole("link", { name: "Open lesson", exact: false })
+    .getByRole("link", { name: "Read lesson", exact: false })
     .click();
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
     "clearance",
   );
-  await page.getByRole("link", { name: "Open lesson", exact: false }).click();
+  await page.getByRole("link", { name: "Read lesson", exact: false }).click();
   await expect(page).toHaveURL(/learn\/renal\/filtration-and-clearance$/);
 });
 test("all native routes and public assets resolve without archive exposure", async ({

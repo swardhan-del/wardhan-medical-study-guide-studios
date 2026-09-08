@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         <p>
           When you save a resource, its identifier is stored in this browser’s
           local storage. The site does not send your reading list to a server.
-          Clear it from Saved learning in My Study, or delete this site’s browser
+          Clear it from Your saved resources in My Study, or delete this site’s browser
           data.
         </p>
         <h2>Learning progress</h2>
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
           Lesson completion, quiz attempts, review dates, study-day counts, oral
           self-assessment and your exam plan are stored in this browser. They
           stay in this browser as detailed records. Aggregate activity events
-          are described below. Open My study to download a progress record or
+          are described below. Open My Study to download a progress record or
           clear it. This does not synchronize between browsers or devices. Written
           explanations, oral drafts and self-checks are also saved in this
           browser, so they survive reloads and topic changes. They are included
@@ -55,13 +55,13 @@ export default function PrivacyPage() {
           Events contain fixed lesson or quiz identifiers, or a
           returning-study-day flag; they do not include answer text, scores,
           oral drafts or exam dates. Query strings and personal study pages are
-          excluded from page-view tracking. This site honors Do Not Track and
+          excluded from page-view tracking. This site honours Do Not Track and
           Global Privacy Control signals.
         </p>
         <h2>Analytics preference</h2>
         <p>
           You can opt out on this browser. The setting does not change your
-          saved learning progress.
+          study progress.
         </p>
         <AnalyticsPreference />
       </div>

@@ -5,7 +5,7 @@ import { VideoBrowser } from "@/components/video-browser";
 export const metadata = {
   title: "Video library",
   description:
-    "Watch released educational videos and continue with related medical study lessons.",
+    publicVideos.length ? "Watch educational videos and continue with related medical study lessons." : "No videos are available yet. Explore the written lessons and practice activities in the study library.",
   alternates: { canonical: "/videos" },
 };
 export default function VideosPage() {
@@ -16,10 +16,10 @@ export default function VideosPage() {
         <span aria-current="page"> / Videos</span>
       </nav>
       <header className="library-heading">
-        <p className="eyebrow">Watch and understand</p>
+        <p className="eyebrow">Study videos</p>
         <h1>Video library</h1>
         <p className="interior-lede">
-          Short explanations connected to the subjects and lessons you study.
+          {publicVideos.length ? "Watch explanations connected to the subjects and lessons you study." : "No videos are available yet. Explore the written lessons and practice activities in the meantime."}
         </p>
       </header>
       <VideoBrowser

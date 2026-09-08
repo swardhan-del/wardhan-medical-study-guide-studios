@@ -10,8 +10,7 @@ export function SavedLearning({ records }: { records: CatalogRecord[] }) {
       className="saved-learning"
       aria-labelledby="saved-learning-title"
     >
-      <p className="eyebrow">Your saved learning</p>
-      <h2 id="saved-learning-title">Lessons and activities for later</h2>
+      <h2 id="saved-learning-title">Your saved resources</h2>
       <ReadingListNotice />
       <CatalogBrowser records={records} savedOnly />
     </section>

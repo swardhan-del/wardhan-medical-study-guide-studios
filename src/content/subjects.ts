@@ -11,7 +11,7 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
     number: "01",
     title: "Macroscopic Anatomy & Embryology",
     description:
-      "Explore the organization of the body, from regional anatomy to development.",
+      "Study the organisation of the human body and connect anatomical relationships with development.",
     topics: [
       "Regional anatomy",
       "Thorax",
@@ -24,7 +24,8 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
     id: "histology",
     number: "02",
     title: "Microscopic Anatomy, Histology & Embryology",
-    description: "Explore how cells and tissues form organs, how microscopic structure supports function, and how these structures develop. Study microscopy, basic tissues, organ histology, reproductive development, the nervous system and special senses through curated guides, slide collections and web lessons.",
+    description:
+      "Recognise cells, tissues, and organs, and connect microscopic structure with function and development.",
     topics: [
       "Cells and tissues",
       "Organ histology",
@@ -36,7 +37,8 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
     id: "cell-biology",
     number: "03",
     title: "Molecular & Cell Biology",
-    description: "Follow the molecular processes that shape cellular life.",
+    description:
+      "Explore how cells organise, communicate, divide, and maintain their genetic information.",
     topics: ["Cell organization", "Molecular mechanisms", "Cell signaling"],
   },
   {
@@ -44,7 +46,7 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
     number: "04",
     title: "Biochemistry",
     description:
-      "Organize the molecules, pathways, and reactions that underpin medical science.",
+      "Connect molecular structure, enzyme activity, and metabolic pathways to the workings of the body.",
     topics: ["Biomolecules", "Metabolic pathways", "Molecular foundations"],
   },
   {
@@ -52,7 +54,7 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
     number: "05",
     title: "Medical Physiology",
     description:
-      "Build connections between cellular mechanisms and the function of whole systems.",
+      "Understand how body systems function, interact, and maintain a stable internal environment.",
     topics: [
       "Cellular physiology",
       "Cardiovascular physiology",
@@ -65,7 +67,7 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
     number: "06",
     title: "Genetics & Immunology",
     description:
-      "Revisit inheritance, variation, and the organization of immune responses.",
+      "Study inheritance, genetic variation, and immune responses through connected explanations and practice.",
     topics: ["Genetics", "Inheritance and variation", "Immunology"],
   },
 ];

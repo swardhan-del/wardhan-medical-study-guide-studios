@@ -50,7 +50,7 @@ export function VideoBrowser({
             setTopic("");
           }}
         >
-          Clear video filters
+          Clear filters
         </button>
       )}
       <div className="resource-grid">
@@ -73,14 +73,24 @@ export function VideoBrowser({
               <Link href={"/videos/" + v.id}>{v.title}</Link>
             </h2>
             <p>{v.summary}</p>
+            <p>
+              {v.captions.length
+                ? "Captions available"
+                : v.audioContent === "silent"
+                  ? "Silent video"
+                  : "Captions unavailable"}
+            </p>
+            <Link className="text-link" href={"/videos/" + v.id}>
+              Watch video
+            </Link>
           </article>
         ))}
       </div>
       {!shown.length && (
         <p className="catalog-empty">
           {videos.length
-            ? "No matching videos. Try clearing your filters."
-            : "No videos have been released here yet. Explore the available written lessons while the video collection is prepared."}
+            ? "No videos match these filters. Try a broader search or clear your filters."
+            : "Browse the study library for available lessons and practice activities."}
         </p>
       )}
     </section>

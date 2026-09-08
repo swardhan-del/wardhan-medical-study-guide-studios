@@ -4,9 +4,9 @@ test("saved renal and cross-subject lessons share My Study and survive reload", 
   page,
 }) => {
   await page.goto("/learn/renal/kidney-map");
-  await page.getByRole("button", { name: /Save Follow the blood/ }).click();
+  await page.getByRole("button", { name: /Save to My Study: Follow the blood/ }).click();
   await page.goto("/library/epithelia");
-  await page.getByRole("button", { name: /Save Epithelia/ }).click();
+  await page.getByRole("button", { name: /Save to My Study: Epithelia/ }).click();
   await page.goto("/reading-list");
   await expect(page).toHaveURL(/\/study#saved-learning$/);
   const saved = page.locator("#saved-learning");
@@ -23,7 +23,7 @@ test("saved renal and cross-subject lessons share My Study and survive reload", 
     }),
   ).toBeVisible();
   await page.reload();
-  await saved.getByRole("button", { name: /Remove Follow the blood/ }).click();
+  await saved.getByRole("button", { name: /Saved to My Study: Follow the blood/ }).click();
   await expect(
     saved.getByRole("link", {
       name: "Follow the blood. Follow the filtrate.",
@@ -65,11 +65,11 @@ test("correction preserves lesson context and prepares a draft without submittin
   await page.goto("/learn/renal/kidney-map");
   await page.getByRole("link", { name: "Report a correction" }).click();
   await expect(page).toHaveURL(/lesson=%2Flearn%2Frenal%2Fkidney-map/);
-  await page.getByLabel("Section or question").fill("Two paths, one organ");
+  await page.getByLabel("Page title, section or question").fill("Two paths, one organ");
   await page
-    .getByLabel("What should we correct?")
+    .getByLabel("Your feedback or correction")
     .fill("Please clarify the distinction in this explanation.");
-  await page.getByRole("button", { name: "Prepare correction" }).click();
+  await page.getByRole("button", { name: "Prepare feedback email" }).click();
   await expect(page.getByRole("status")).toContainText("Nothing has been sent");
   const draft = page.getByRole("link", {
     name: /Review and submit on GitHub|Open email draft/,

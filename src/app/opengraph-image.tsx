@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { studio } from "@/content/studio";
 
 export const alt =
-  "Wardhan Medical Study Guide Studios — Helping students learn medical sciences.";
+  "Wardhan Medical Study Guide Studios — Focused resources for learning medical sciences.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -44,7 +44,7 @@ export default function OpenGraphImage() {
           Wardhan Medical Study Guide Studios
         </div>
         <div style={{ color: "#d6e1dc", display: "flex", fontSize: 30 }}>
-          Helping students learn medical sciences.
+          Focused resources for learning medical sciences.
         </div>
       </div>
       <div

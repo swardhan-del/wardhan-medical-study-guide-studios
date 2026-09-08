@@ -9,7 +9,7 @@ export default function PlannerPage() {
     <div className="site-container study-page">
       <header className="study-hero">
         <Link className="text-link" href="/study">
-          ← My study dashboard
+          ← My Study
         </Link>
         <p className="eyebrow">Exam countdown planner</p>
         <h1>

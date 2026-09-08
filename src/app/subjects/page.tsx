@@ -11,7 +11,7 @@ import { TopicSearch } from "@/components/topic-search";
 export const metadata = {
   title: "Medical subjects",
   description:
-    "Browse medical subjects, systems, topics and released resources on this website.",
+    "Browse medical subjects, systems, topics and available study resources.",
   alternates: { canonical: "/subjects" },
 };
 export default function SubjectsPage() {
@@ -19,10 +19,9 @@ export default function SubjectsPage() {
     <div className="site-container library-page">
       <header className="library-heading">
         <p className="eyebrow">Medical library</p>
-        <h1>Your subjects. Connected.</h1>
+        <h1>Explore the medical sciences</h1>
         <p className="interior-lede">
-          Explore systems and topics, read a lesson, then practice or download a
-          released resource.
+          Browse by subject and connect structure, function, development, and disease mechanisms as you study.
         </p>
       </header>
       <section

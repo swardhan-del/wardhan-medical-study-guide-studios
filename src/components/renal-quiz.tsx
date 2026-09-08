@@ -74,7 +74,7 @@ export function RenalQuiz({
     <section className="study-panel renal-quiz" aria-label={title}>
       <p className="eyebrow">Active recall · {questions.length} questions</p>
       <h2>{title}</h2>
-      <p className="muted-note">Checked answers are saved in My study. This quiz opens a fresh practice round; earlier results remain in your history. Same-day retries do not advance spaced review.</p>
+      <p className="muted-note">Checked answers are saved in My Study. This quiz opens a fresh practice round; earlier results remain in your history. Same-day retries do not advance spaced review.</p>
       {!persistent && (
         <p className="study-notice" role="status">
           Browser storage is unavailable. This session works, but progress may
@@ -102,7 +102,7 @@ export function RenalQuiz({
           ))}
           <div className="action-row">
             <Link className="button button-primary" href="/study">
-              My study dashboard
+              My Study
             </Link>
             <button className="button button-secondary" onClick={restart}>
               Try this set again

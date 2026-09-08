@@ -318,7 +318,7 @@ export function AbgPractice({ initialCase = 0, review = false }: { initialCase?:
         >
           Merck Manual: Acid–Base Disorders
         </a>
-        . Cases and explanations are original teaching adaptations. Checked answers are saved in My study on this browser.
+        . Cases and explanations are original teaching adaptations. Checked answers are saved in My Study on this browser.
       </p>
     </section>
   );

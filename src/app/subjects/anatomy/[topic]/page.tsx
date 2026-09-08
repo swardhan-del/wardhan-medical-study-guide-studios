@@ -115,9 +115,9 @@ export default async function AnatomyTopicPage({
           .
         </p>
         <p>
-          These summaries and recall activities draw from the curated
+          These summaries and recall activities draw from the
           study-guide editions. References name the source sections used. Full
-          manuscripts are being prepared for release.
+          manuscripts are not available for download here.
         </p>
         <div className="msk-topic-grid">
           {page.sources.map((source) => (
