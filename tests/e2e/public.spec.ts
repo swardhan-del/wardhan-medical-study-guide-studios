@@ -23,7 +23,7 @@ test("public routes render and fit the viewport without runtime errors", async (
   ]) {
     const response = await page.goto(route);
     expect(response?.status()).toBe(200);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= window.innerWidth,
@@ -199,7 +199,7 @@ test("renal course, lab and study pages fit both viewports", async ({
     "/study/planner",
   ]) {
     expect((await page.goto(route))?.status()).toBe(200);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
@@ -408,7 +408,7 @@ test("library filters expose useful resources in every subject and retain direct
       exact: true,
     })
     .click();
-  await expect(page.locator("h1")).toHaveText(
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "PCR, qPCR and reverse transcription",
   );
   await page.goto("/subjects/histology");
