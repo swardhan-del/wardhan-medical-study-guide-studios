@@ -46,7 +46,7 @@ export default function SubjectsPage() {
             <Link
               className="text-link"
               aria-label={"Explore subject for " + s.title}
-              href={"/subjects/" + s.id}
+              href={s.id === "genetics" ? "/library?subject=genetics-all" : "/subjects/" + s.id}
             >
               Reference directory →
             </Link>
@@ -59,8 +59,8 @@ export default function SubjectsPage() {
         items={taxonomyNodes.map((n) => ({
           id: n.id,
           title: taxonomyNodes.some(other => other.id !== n.id && other.subject === n.subject && other.title === n.title) ? `${n.title} — ${n.parentId ? "focused topic" : "topic collection"}` : n.title,
-          subject: n.subject,
-          subjectTitle: librarySubjects.find((s) => s.id === n.subject)!.title,
+          subject: librarySubjects.find(s => s.id === n.subject)?.learningSubject || n.subject,
+          subjectTitle: studySubjects.find(s => s.id === (librarySubjects.find(item => item.id === n.subject)?.learningSubject || n.subject))!.title,
           kind: n.kind,
           count: recordsForNode(n).length,
         }))}

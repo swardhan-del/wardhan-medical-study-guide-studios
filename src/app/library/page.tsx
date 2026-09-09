@@ -34,7 +34,7 @@ export default async function LibraryPage({
       <CatalogBrowser key={`${subject}:${query}`} records={publicCatalog} initialSubject={subject} initialQuery={query} />
       <details className="study-details"><summary>Subject directories and video recaps</summary>
       <nav className="library-subjects" aria-label="Explore subjects and topics">
-        {studySubjects.map(s => <Link key={s.id} href={"/subjects/" + s.id}>{s.title}</Link>)}
+        {studySubjects.map(s => <Link key={s.id} href={s.id === "genetics" ? "/study/genetics" : "/subjects/" + s.id}>{s.title}</Link>)}
       </nav><Link href="/videos">Browse the video library →</Link></details>
       <aside className="library-source-note">
         <p className="eyebrow">Study and revise</p>
