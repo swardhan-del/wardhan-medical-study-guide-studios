@@ -1,0 +1,751 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-09",
+  "parts": [
+    {
+      "id": "histology-part-01",
+      "subject": "histology",
+      "number": "01",
+      "title": "Course Roadmap Histological Methods and Microscopy",
+      "lessonIds": [
+        "microscopy"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-02",
+      "subject": "histology",
+      "number": "02",
+      "title": "Epithelial Tissues Glands and Cell Junctions",
+      "lessonIds": [
+        "epithelia",
+        "cell-junctions"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-03",
+      "subject": "histology",
+      "number": "03",
+      "title": "Connective Tissue Adipose Cartilage and Bone",
+      "lessonIds": [
+        "connective-tissue",
+        "cartilage-bone"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-04",
+      "subject": "histology",
+      "number": "04",
+      "title": "Blood Bone Marrow Hematopoiesis and Lymphoid Tissues",
+      "lessonIds": [
+        "blood-marrow",
+        "lymphoid-organs"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-05",
+      "subject": "histology",
+      "number": "05",
+      "title": "Muscle Tissue Skeletal Cardiac and Smooth",
+      "lessonIds": [
+        "muscle-histology"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-06",
+      "subject": "histology",
+      "number": "06",
+      "title": "Circulatory System Blood Vessels and Microcirculation",
+      "lessonIds": [
+        "vessel-histology"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-07",
+      "subject": "histology",
+      "number": "07",
+      "title": "Respiratory System",
+      "lessonIds": [
+        "respiratory-histology"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-08",
+      "subject": "histology",
+      "number": "08",
+      "title": "Oral Cavity Tongue Teeth Salivary Glands and Esophagus",
+      "lessonIds": [
+        "gi-histology"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-09",
+      "subject": "histology",
+      "number": "09",
+      "title": "Stomach Intestines Liver Gallbladder and Pancreas",
+      "lessonIds": [
+        "liver-pancreas"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-10",
+      "subject": "histology",
+      "number": "10",
+      "title": "Urinary System Kidney Nephron Ureter and Bladder",
+      "lessonIds": [
+        "renal-histology"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-11",
+      "subject": "histology",
+      "number": "11",
+      "title": "Male Reproductive System",
+      "lessonIds": [
+        "reproductive-histology"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-12",
+      "subject": "histology",
+      "number": "12",
+      "title": "Female Reproductive System Placenta and Mammary Gland",
+      "lessonIds": [
+        "placenta"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-13",
+      "subject": "histology",
+      "number": "13",
+      "title": "Nervous Tissue Neurodevelopment CNS Histology and Higher CNS Microscopy",
+      "lessonIds": [
+        "neurulation",
+        "myelin-and-glial-cells",
+        "brain-and-csf-barriers"
+      ],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "Selected web adaptations; source part is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-14",
+      "subject": "histology",
+      "number": "14",
+      "title": "Sensory Motor Reflex Brainstem and Descending Systems",
+      "lessonIds": [],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-15",
+      "subject": "histology",
+      "number": "15",
+      "title": "Autonomic Visceral Hypothalamic and Endocrine Systems",
+      "lessonIds": [],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-16",
+      "subject": "histology",
+      "number": "16",
+      "title": "Eye Visual System and Eye Development",
+      "lessonIds": [],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-17",
+      "subject": "histology",
+      "number": "17",
+      "title": "Ear Auditory Vestibular and Ear Development",
+      "lessonIds": [],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-18",
+      "subject": "histology",
+      "number": "18",
+      "title": "Olfactory Taste Limbic Behaviour Cognition and Circadian Systems",
+      "lessonIds": [],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-19",
+      "subject": "histology",
+      "number": "19",
+      "title": "Skin Maxillofacial and Remaining EMII Topics",
+      "lessonIds": [],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "histology-part-20",
+      "subject": "histology",
+      "number": "20",
+      "title": "Integrated Practical Slide Atlas Oral Exam Review and Drawing Bank",
+      "lessonIds": [],
+      "basis": "Divided printable guide, Revision 4, 3 August 2026",
+      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "practiceHref": "/practice/histology"
+    },
+    {
+      "id": "anatomy-volume-1",
+      "subject": "anatomy",
+      "number": "01",
+      "title": "Volume I \u00b7 Thorax",
+      "lessonIds": [
+        "thorax-nerve-relations"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "anatomy-volume-2",
+      "subject": "anatomy",
+      "number": "02",
+      "title": "Volume II \u00b7 Abdomen",
+      "lessonIds": [
+        "abdomen-portal-relations",
+        "inguinal-canal-relations"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "anatomy-volume-3",
+      "subject": "anatomy",
+      "number": "03",
+      "title": "Volume III \u00b7 Pelvis and urogenital anatomy",
+      "lessonIds": [
+        "pelvis-urinary-route"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "anatomy-volume-4",
+      "subject": "anatomy",
+      "number": "04",
+      "title": "Volume IV \u00b7 Head, neck and neuroanatomy",
+      "lessonIds": [
+        "head-neck-tongue-map"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "anatomy-volume-5",
+      "subject": "anatomy",
+      "number": "05",
+      "title": "Volume V \u00b7 Musculoskeletal anatomy",
+      "lessonIds": [
+        "limbs-plexus-and-joints"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "study-cell-biology",
+      "subject": "cell-biology",
+      "number": "01",
+      "title": "Molecular and cellular mechanisms",
+      "lessonIds": [
+        "dna-replication",
+        "dna-repair",
+        "rna-processing",
+        "translation",
+        "protein-trafficking",
+        "pcr",
+        "cell-signaling",
+        "chromatin-access-and-topology",
+        "er-protein-quality-control"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-cellular",
+      "subject": "physiology",
+      "number": "01",
+      "title": "Cellular physiology and muscle",
+      "lessonIds": [
+        "fluid-and-membrane-transport",
+        "muscle-contraction",
+        "autonomic-signalling",
+        "membrane-potentials",
+        "indicator-dilution"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-cardiovascular",
+      "subject": "physiology",
+      "number": "02",
+      "title": "Cardiovascular physiology",
+      "lessonIds": [
+        "cardiac-cycle",
+        "lymph-and-fluid-exchange",
+        "cardiac-output",
+        "baroreflex",
+        "ecg-time-and-vectors"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-respiratory",
+      "subject": "physiology",
+      "number": "03",
+      "title": "Respiratory physiology",
+      "lessonIds": [
+        "respiratory-mechanics",
+        "ventilation-perfusion",
+        "alveolar-ventilation-calculations"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-renal",
+      "subject": "physiology",
+      "number": "04",
+      "title": "Renal and acid\u2013base physiology",
+      "lessonIds": [
+        "renal-water-balance"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-blood",
+      "subject": "physiology",
+      "number": "05",
+      "title": "Blood and haemostasis",
+      "lessonIds": [
+        "blood-and-haemostasis"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-digestive",
+      "subject": "physiology",
+      "number": "06",
+      "title": "Gastrointestinal physiology and energy balance",
+      "lessonIds": [
+        "digestive-control",
+        "energy-balance"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-endocrine",
+      "subject": "physiology",
+      "number": "07",
+      "title": "Endocrine and reproductive physiology",
+      "lessonIds": [
+        "endocrine-feedback",
+        "reproductive-cycles"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "physiology-nervous",
+      "subject": "physiology",
+      "number": "08",
+      "title": "Nervous system and special senses",
+      "lessonIds": [
+        "synaptic-integration",
+        "special-senses"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "study-genetics",
+      "subject": "genetics",
+      "number": "01",
+      "title": "Medical genetics",
+      "lessonIds": [
+        "meiosis",
+        "inheritance",
+        "genetic-testing",
+        "recessive-conditional-probability"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "study-immunology",
+      "subject": "genetics",
+      "number": "02",
+      "title": "Immunology",
+      "lessonIds": [
+        "innate-adaptive",
+        "antigen-presentation",
+        "complement",
+        "hypersensitivity-mechanisms"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-optics",
+      "subject": "biophysics",
+      "number": "01",
+      "title": "Optics and light",
+      "lessonIds": [
+        "biophysics-radiation-optics",
+        "biophysics-image-formation",
+        "biophysics-wave-optics",
+        "biophysics-light-duality",
+        "biophysics-atomic-models",
+        "biophysics-molecular-interactions"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-matter",
+      "subject": "biophysics",
+      "number": "02",
+      "title": "Matter and optical methods",
+      "lessonIds": [
+        "biophysics-gases-statistics",
+        "biophysics-condensed-matter",
+        "biophysics-absorption-scattering",
+        "biophysics-thermal-radiation",
+        "biophysics-luminescence",
+        "biophysics-lasers"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-nuclear",
+      "subject": "biophysics",
+      "number": "03",
+      "title": "Nuclear physics and imaging",
+      "lessonIds": [
+        "biophysics-nuclear-structure",
+        "biophysics-decay-interactions",
+        "biophysics-radiation-detection",
+        "biophysics-dosimetry",
+        "biophysics-isotope-diagnostics",
+        "biophysics-nuclear-imaging"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-signals-imaging",
+      "subject": "biophysics",
+      "number": "04",
+      "title": "Signals and X-ray imaging",
+      "lessonIds": [
+        "biophysics-signals",
+        "biophysics-xray-production",
+        "biophysics-ct-imaging"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-transport",
+      "subject": "biophysics",
+      "number": "05",
+      "title": "Flow, diffusion and thermodynamics",
+      "lessonIds": [
+        "biophysics-fluid-flow",
+        "biophysics-diffusion-osmosis",
+        "biophysics-energy-first-law",
+        "biophysics-entropy-potentials"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-membranes",
+      "subject": "biophysics",
+      "number": "06",
+      "title": "Membranes and ultrasound",
+      "lessonIds": [
+        "biophysics-resting-potential",
+        "biophysics-action-potentials",
+        "biophysics-ultrasound"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-systems",
+      "subject": "biophysics",
+      "number": "07",
+      "title": "Biomolecules and body systems",
+      "lessonIds": [
+        "biophysics-water-biopolymers",
+        "biophysics-sensory-biophysics",
+        "biophysics-biomechanics",
+        "biophysics-molecular-motors",
+        "biophysics-structural-methods",
+        "biophysics-magnetic-resonance",
+        "biophysics-circulation-ecg",
+        "biophysics-respiratory-physics"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-practicals",
+      "subject": "biophysics",
+      "number": "08",
+      "title": "Measurement practicals",
+      "lessonIds": [
+        "biophysics-practical-lenses",
+        "biophysics-practical-refractometry",
+        "biophysics-practical-absorbance",
+        "biophysics-practical-polarimetry",
+        "biophysics-practical-eye",
+        "biophysics-practical-spectra",
+        "biophysics-practical-attenuation",
+        "biophysics-practical-oscillations",
+        "biophysics-practical-impedance",
+        "biophysics-practical-amplifiers",
+        "biophysics-practical-coulter",
+        "biophysics-practical-diffusion",
+        "biophysics-practical-audiometry",
+        "biophysics-practical-biosignals"
+      ],
+      "basis": "Website teaching sequence",
+      "coverage": "Selected web adaptations; this is not the full source manuscript.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-01",
+      "subject": "biochemistry",
+      "number": "01",
+      "title": "Proteins, amino acids and collagen",
+      "lessonIds": [
+        "protein-structure"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-02",
+      "subject": "biochemistry",
+      "number": "02",
+      "title": "Enzymes: catalysis and regulation",
+      "lessonIds": [
+        "enzyme-kinetics"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-03",
+      "subject": "biochemistry",
+      "number": "03",
+      "title": "Glycolysis and gluconeogenesis",
+      "lessonIds": [
+        "glycolysis"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-04",
+      "subject": "biochemistry",
+      "number": "04",
+      "title": "Glycogen metabolism",
+      "lessonIds": [],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "This source section does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-05",
+      "subject": "biochemistry",
+      "number": "05",
+      "title": "Ethanol and ketone body metabolism",
+      "lessonIds": [
+        "ketone-production-and-use"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-06",
+      "subject": "biochemistry",
+      "number": "06",
+      "title": "Bioenergetics",
+      "lessonIds": [],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "This source section does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-07",
+      "subject": "biochemistry",
+      "number": "07",
+      "title": "Pyruvate dehydrogenase and the citric acid cycle",
+      "lessonIds": [
+        "pdh-tca"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-08",
+      "subject": "biochemistry",
+      "number": "08",
+      "title": "Cholesterol and lipoprotein transport",
+      "lessonIds": [
+        "lipoprotein-routes"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-09",
+      "subject": "biochemistry",
+      "number": "09",
+      "title": "Biotransformation and steroid synthesis",
+      "lessonIds": [],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "This source section does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-10",
+      "subject": "biochemistry",
+      "number": "10",
+      "title": "Fatty acid and lipid synthesis",
+      "lessonIds": [
+        "lipid-metabolism"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-11",
+      "subject": "biochemistry",
+      "number": "11",
+      "title": "Amino acid metabolism and nitrogen balance",
+      "lessonIds": [
+        "nitrogen-metabolism"
+      ],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "Selected web adaptations; source section is broader.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-12",
+      "subject": "biochemistry",
+      "number": "12",
+      "title": "Haem metabolism and iron homeostasis",
+      "lessonIds": [],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "This source section does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-13",
+      "subject": "biochemistry",
+      "number": "13",
+      "title": "Vitamin B12 and folate",
+      "lessonIds": [],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "This source section does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-part-14",
+      "subject": "biochemistry",
+      "number": "14",
+      "title": "Tissue metabolism and metabolic regulation",
+      "lessonIds": [],
+      "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
+      "coverage": "This source section does not yet have a dedicated web lesson.",
+      "practiceHref": null
+    }
+  ]
+}

@@ -4039,3 +4039,26 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .concept-heading .interior-lede { font-size: 1.2rem; line-height: 1.5; }
 .start-sequence li { margin-block: .6rem; }
 @media (max-width: 700px) { .hero-section.learning-home { padding-top: 20px; gap: 24px; } .home-subject-links a { min-height: 44px; display: flex; align-items: center; } }
+
+/* Printable guide parts share one selection and answer-key boundary. */
+.guide-selector { margin: 2rem 0; border: 1px solid var(--line); padding: 1rem; min-width: 0; }
+.guide-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: .7rem; margin: 1rem 0; }
+.guide-options label { display: flex; align-items: baseline; gap: .5rem; }
+.guide-selector input { flex-shrink: 0; }
+.guide-contents { margin: 2rem 0; padding: 1rem; background: var(--surface); border: 1px solid var(--line); }
+.guide-contents li { margin-block: .5rem; }
+.guide-divider { border-block: 2px solid var(--line); padding: 2rem 0; }
+.guide-part, .revision-section { scroll-margin-top: 6rem; overflow-wrap: anywhere; }
+@media print {
+  .guide-divider { break-before: page; break-after: page; padding-top: 4cm; min-height: 16cm; }
+  .guide-contents { break-after: page; }
+  .guide-divider h2 { font-size: 24pt; }
+}
+
+.guide-contents ol { list-style: none; padding-left: 0; }
+@media print { .revision-attribution { display: none; } }
+@media print {
+  .revision-section, .revision-answers { margin: 0; }
+  .revision-section:last-child { padding-bottom: 0; }
+}
+@media print { .revision-page p:last-child { margin-bottom: 0; } }
