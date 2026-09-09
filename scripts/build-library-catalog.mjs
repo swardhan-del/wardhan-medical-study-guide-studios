@@ -13,6 +13,7 @@ const records = lessons.map((l) => ({
   ...base,
   updatedAt: l.updatedAt,
   id: l.id,
+  updatedAt: l.updatedAt,
   title: l.title,
   subject: l.subject,
   kind: "Study lesson",
@@ -48,6 +49,14 @@ for (const l of renalLessons)
     minutes: l.minutes,
   });
 for (const [id, title, subject, href, summary, tags] of [
+  [
+    "biophysics-lab",
+    "Biophysics: predict and calculate",
+    "biophysics",
+    "/practice/biophysics",
+    "Explore six coded models for lenses, attenuation, membrane charging, diffusion, flow and ultrasound.",
+    ["Biophysics", "Practical calculations", "Physical principles"],
+  ],
   [
     "renal-course",
     "The complete renal mini-course",

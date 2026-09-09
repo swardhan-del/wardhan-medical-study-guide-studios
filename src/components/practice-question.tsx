@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { AirwayPressureDiagram } from "./airway-pressure-diagram";
 import Link from "next/link";
 import type { PracticeItem } from "@/content/practice-registry";
 import { recordAnswer, recordVisit, useLearning } from "./learning-store";
@@ -17,6 +18,7 @@ export function PracticeQuestion({ item, title = "Check your understanding", fre
   if (!item.options || item.answer === undefined) return <section className="study-panel"><h3>{item.title}</h3><p>{item.prompt}</p><p>This question uses a specimen or a clinical data table. Open the activity to review it with its visual context.</p><Link className="button button-primary" href={activityHref}>Open activity →</Link></section>;
   return <section className="study-panel practice-question" aria-label={title}>
     <h3>{title}</h3>
+    {item.id === "studio-respiratory-pressure-reading" && <AirwayPressureDiagram />}
     {previous && <p className="muted-note">Saved history: first attempt {previous.firstCorrect === null ? "not recorded" : previous.firstCorrect ? "correct" : "incorrect"}; latest attempt {previous.lastCorrect ? "correct" : "incorrect"}{previous.assisted ? " (same-day retry or hint used)" : ""}.</p>}
     {/* Scope the native radio group to this instance, including during streamed page replacement. */}
     <form onSubmit={event => event.preventDefault()}>

@@ -7,6 +7,7 @@ import {
   recordsForNode,
   subjectRecords,
 } from "@/lib/taxonomy";
+import { subjectLessons } from "@/lib/study-collections";
 import { TopicSearch } from "@/components/topic-search";
 export const metadata = {
   title: "Medical subjects",
@@ -21,7 +22,7 @@ export default function SubjectsPage() {
         <p className="eyebrow">Medical library</p>
         <h1>Explore the medical sciences</h1>
         <p className="interior-lede">
-          Browse by subject and connect structure, function, development, and disease mechanisms as you study.
+          Choose a subject learning path to start a lesson and see topic coverage. Use the directory below each path to explore resources by topic.
         </p>
       </header>
       <section
@@ -32,10 +33,11 @@ export default function SubjectsPage() {
           <article className="directory-subject-card" key={s.id}>
             <FigureThumbnail figure={figureForSubject(s.id)} />
             <h2>
-              <Link href={"/subjects/" + s.id}>{s.title}</Link>
+              <Link href={(subjectLessons(s.id).length ? "/study/" : "/subjects/") + s.id}>{s.title}</Link>
             </h2>
             <p>{s.description}</p>
-            <p>{subjectRecords(s.id).length} resources available</p>
+            <p>{subjectLessons(s.id).length > 0 && <>{subjectLessons(s.id).length} lesson introductions · </>}{subjectRecords(s.id).length} library resources across formats</p>
+            {subjectLessons(s.id).length > 0 && <p><Link className="button button-primary" href={"/study/" + s.id}>Open learning path and coverage</Link></p>}
             <Link
               className="text-link"
               aria-label={"Explore subject for " + s.title}

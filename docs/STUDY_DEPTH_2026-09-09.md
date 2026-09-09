@@ -1,6 +1,6 @@
 # Study depth expansion
 
-The existing native collection contained 58 short lessons. This batch adds 12 original guided lessons (70 total) with learning objectives, preparation links, four explanatory steps, a worked example with hidden reasoning, an explained multiple-choice question and an oral model answer. Existing lesson IDs and the eight-lesson renal course are preserved.
+The existing native collection contained 58 short lessons. This batch adds 12 original guided lessons (120 total after preserving the 50 Biophysics lessons added to main) with learning objectives, preparation links, four explanatory steps, a worked example with hidden reasoning, an explained multiple-choice question and an oral model answer. Existing lesson IDs and the eight-lesson renal course are preserved.
 
 The new `/study/map` describes 257 topics across 37 source sections. It is a development map, not 257 finished lessons. Linked nodes explicitly say “Introduction available”; unlinked nodes say “Planned adaptation”. Biostatistics remains a ten-topic original-course proposal. Genetics and immunology have separate groups within the existing collection URL.
 
