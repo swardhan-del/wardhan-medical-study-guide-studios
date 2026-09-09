@@ -33,7 +33,7 @@ test("curated records can be searched, filtered, reset and opened without source
     .toBe(true);
   await page.getByRole("combobox", { name: "Sort by" }).selectOption("recent");
   await page.getByRole("link", { name: "View resource" }).first().click();
-  await expect(page.locator("h1")).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await expect(
     page.getByText("Downloads have not been released.", { exact: false }),
   ).toBeVisible();

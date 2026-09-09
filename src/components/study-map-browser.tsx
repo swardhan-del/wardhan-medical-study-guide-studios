@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 type Topic = { id: string; title: string; href: string | null; status: string };
 type Group = { id: string; subject: string; title: string; sourceLabel: string; topics: Topic[] };
@@ -38,7 +37,7 @@ export function StudyMapBrowser({ groups }: { groups: Group[] }) {
       <h2 id={`${g.id}-heading`}>{g.title}</h2>
       <p className="muted-note">Source structure: {g.sourceLabel}</p>
       <ol className="study-map-topics">{g.topics.map(t => <li key={t.id}>
-        <div>{t.href ? <Link href={t.href}>{t.title}</Link> : <span>{t.title}</span>}</div>
+        <div>{t.href ? <a href={t.href}>{t.title}</a> : <span>{t.title}</span>}</div>
         <small>{t.href ? "Introduction available" : "Planned adaptation"}</small>
       </li>)}</ol>
     </section>)}</div>
