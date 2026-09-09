@@ -64,9 +64,9 @@ test('renal results and old bookmarks open the lesson without a second read butt
 test('plexus recall hides labels and applied questions explain alternatives',async({page},info)=>{
   await page.goto('/library/limbs-plexus-and-joints');
   await page.getByRole('button',{name:'Hide plexus labels'}).click();
-  await expect(page.locator('.plexus-recall-map')).not.toContainText('Posterior cord');
+  await expect(page.getByRole('list',{name:'Five levels of the brachial plexus',exact:true})).not.toContainText('Posterior cord');
   await page.getByRole('button',{name:'Show plexus labels'}).click();
-  const question=page.locator('.practice-question').filter({hasText:'In a simplified plexus map'});
+  const question=page.locator('.practice-question:visible').filter({hasText:'In a simplified plexus map'});
   await question.getByRole('radio',{name:'Upper trunk → posterior division → posterior cord',exact:true}).check();
   await question.getByRole('button',{name:'Check answer',exact:true}).click();
   await expect(question.getByRole('status')).toContainText('Correct');
