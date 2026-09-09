@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/renal",
     "/practice/renal-challenge",
     "/practice/physiology",
+    "/practice/biophysics",
     "/practice/oral",
     "/practice/histology",
     ...renalLessons.map((l) => renalLessonHref(l.slug)),

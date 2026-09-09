@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BiophysicsCourseIntro } from "@/components/biophysics-course";
 import { SubjectCoverage } from "@/components/subject-coverage";
 import { notFound } from "next/navigation";
 import { studySubjects, studyGroups, subjectLessons } from "@/lib/study-collections";
@@ -21,6 +22,7 @@ export default async function SubjectStudyPage({ params }: Props) {
    <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><p className="interior-lede">{s.description}</p><p>Study a mechanism, explain an answer, then revise it with recap cards, narrated videos or audio where available.</p>
      <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/subjects/" + subject}>Browse the subject directory</Link></div>
    </header>
+   {subject === "biophysics" && <BiophysicsCourseIntro />}
    <SubjectCoverage subject={subject} />
    {subject === "physiology" && <section className="study-panel" aria-labelledby="renal-course-heading"><p className="eyebrow">Renal and acid–base physiology · Guided course</p><h2 id="renal-course-heading">Renal physiology, step by step</h2><p>{renalLessons.length} lessons and {renalQuestions.length} questions with explanations, plus interactive circulation and acid–base activities.</p><Link className="button button-primary" href="/learn/renal">Open renal physiology course</Link></section>}
    <StudyCollectionBrowser cards={cards} groups={groups} />

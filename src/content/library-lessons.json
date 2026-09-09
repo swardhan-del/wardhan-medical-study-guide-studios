@@ -3336,6 +3336,3298 @@
       ],
       "minutes": 7,
       "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "biophysics-radiation-optics",
+      "subject": "biophysics",
+      "title": "Radiation, units and geometric optics",
+      "summary": "Distinguish waves from particles, quantify a beam and predict reflection or refraction.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "Snell",
+        "Fermat",
+        "irradiance",
+        "refraction"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 1; combined theory prompts 1–9",
+      "steps": [
+        {
+          "title": "Describe what travels",
+          "body": "Radiation transports energy away from a source. Electromagnetic radiation can propagate through vacuum; sound requires matter. Photons carry energy hf and momentum h/λ, whereas massive particles also have rest mass. Neither visible light nor an ultrasound wave should be described as a stream of electrons."
+        },
+        {
+          "title": "Measure the beam",
+          "body": "Radiant energy is measured in joules and radiant power in watts. Irradiance is power per receiving area, in W/m²; radiant intensity is power per solid angle, in W/sr. For an isotropic point source without attenuation, irradiance falls as 1/r². Tilting a surface introduces a cosine factor in intercepted power."
+        },
+        {
+          "title": "Trace a ray",
+          "body": "Geometric optics applies when wavelength is small relative to the relevant structures. Fermat's stationary optical-path principle leads to reflection and Snell's law: n₁ sin θ₁ = n₂ sin θ₂, with angles measured from the normal. At a boundary frequency stays fixed; wavelength and speed change together."
+        },
+        {
+          "title": "Work the boundary",
+          "body": "A ray travelling from glass with n = 1.50 into air has critical angle arcsin(1/1.50) ≈ 41.8°. Total internal reflection requires incidence above that angle and travel toward the lower-index medium. This explains fibre guidance; it cannot occur for light entering glass from air."
+        },
+        {
+          "title": "Check the model",
+          "body": "A doubled distance gives one quarter the irradiance only for the point-source model. Refraction does not mean every ray reaches the second medium: reflection may occur simultaneously. At apertures comparable with wavelength, use wave optics rather than extending ray diagrams beyond their assumptions."
+        }
+      ],
+      "question": {
+        "prompt": "A point source is moved from 1 m to 3 m. Ignoring attenuation, what fraction of irradiance remains?",
+        "options": [
+          {
+            "text": "1/9",
+            "reason": "Irradiance scales as 1/r², so the ratio is 1/3²."
+          },
+          {
+            "text": "1/3",
+            "reason": "Irradiance depends on squared distance, not distance alone."
+          },
+          {
+            "text": "3",
+            "reason": "Moving farther away reduces irradiance in this model."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain radiation, units and geometric optics: state the mechanism, work an example and name one assumption.",
+        "answer": "Irradiance scales as 1/r², so the ratio is 1/3². Both index ordering and an angle above the critical angle are required. A doubled distance gives one quarter the irradiance only for the point-source model. Refraction does not mean every ray reaches the second medium: reflection may occur simultaneously. At apertures comparable with wavelength, use wave optics rather than extending ray diagrams beyond their assumptions."
+      },
+      "related": [
+        "biophysics-practical-biosignals",
+        "biophysics-image-formation"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-image-formation",
+      "subject": "biophysics",
+      "title": "Lenses, magnification and the microscope",
+      "summary": "Construct real and virtual images and separate magnification from useful optical detail.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "dioptre",
+        "microscope",
+        "magnification"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 2; combined theory prompts 10–18",
+      "steps": [
+        {
+          "title": "Choose a sign convention",
+          "body": "For a thin lens in air, use 1/f = 1/u + 1/v with u positive for a real object and v positive for a real image on the outgoing side. A converging lens has positive f. State the convention before interpreting a negative value; diagrams and equations must describe the same geometry."
+        },
+        {
+          "title": "Construct the image",
+          "body": "Trace a parallel ray through the far focus and a central ray approximately undeviated. An object beyond f gives a real inverted image; one inside f gives a virtual upright enlarged image. Exactly at f the emerging rays are parallel. A virtual image is located by backward extensions and cannot be caught directly on a screen."
+        },
+        {
+          "title": "Combine optical elements",
+          "body": "Power P = 1/f in metres is measured in dioptres. Powers add for thin lenses in contact, but separation changes the equivalent system. A microscope objective forms an enlarged intermediate image; an eyepiece acts as a magnifier. Total nominal magnification is the product, whereas resolution depends on wavelength and numerical aperture."
+        },
+        {
+          "title": "Calculate an image",
+          "body": "For f = 10 cm and u = 30 cm, 1/v = 1/10 − 1/30, so v = 15 cm. Magnification m = −v/u = −0.5: the real image is inverted and half the object height. The lens power is +10 D, because f = 0.10 m."
+        },
+        {
+          "title": "Connect to the eye",
+          "body": "The cornea and lens focus a real inverted image on the retina. Accommodation changes lens power; it does not move a screen-like retina. Spherical and chromatic aberrations are departures from the ideal thin-lens model. Enlarging an already blurred image adds size without recovering lost spatial information."
+        }
+      ],
+      "question": {
+        "prompt": "A converging lens has f = 0.25 m. What is its power?",
+        "options": [
+          {
+            "text": "−4 D",
+            "reason": "A converging lens in this convention has positive power."
+          },
+          {
+            "text": "+4 D",
+            "reason": "1/0.25 m = +4 m⁻¹, or +4 dioptres."
+          },
+          {
+            "text": "+0.25 D",
+            "reason": "Power is the reciprocal of focal length in metres."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain lenses, magnification and the microscope: state the mechanism, work an example and name one assumption.",
+        "answer": "1/0.25 m = +4 m⁻¹, or +4 dioptres. Inside the focal length, backward ray extensions locate an enlarged upright virtual image. The cornea and lens focus a real inverted image on the retina. Accommodation changes lens power; it does not move a screen-like retina. Spherical and chromatic aberrations are departures from the ideal thin-lens model. Enlarging an already blurred image adds size without recovering lost spatial information."
+      },
+      "related": [
+        "biophysics-radiation-optics",
+        "biophysics-wave-optics"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-wave-optics",
+      "subject": "biophysics",
+      "title": "Interference, diffraction and optical resolution",
+      "summary": "Use phase, wavelength and aperture to explain what an optical instrument can distinguish.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "diffraction",
+        "interference",
+        "polarisation",
+        "aperture"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 3; combined theory prompts 19–28",
+      "steps": [
+        {
+          "title": "Track phase",
+          "body": "A harmonic oscillation repeats with frequency f and period 1/f. A travelling wave obeys v = fλ. Superposition adds amplitudes, including their signs and phases: equal coherent waves can reinforce or cancel. Stable interference requires a sufficiently stable phase relationship, not merely two beams of the same colour."
+        },
+        {
+          "title": "Explain diffraction",
+          "body": "Huygens–Fresnel reasoning treats each part of a wavefront as contributing secondary waves. A finite aperture spreads light; narrowing it generally broadens the diffraction pattern. For a grating at normal incidence, d sin θ = mλ locates principal maxima. Different wavelengths therefore emerge at different angles."
+        },
+        {
+          "title": "Distinguish resolution from magnification",
+          "body": "A common microscope estimate is d ≈ 0.61λ/NA, where NA = n sin α and α is the collection half-angle. Shorter wavelength or larger numerical aperture reduces the resolvable spacing. This is a model-dependent criterion, not a promise that every specimen will show that detail despite noise and poor contrast."
+        },
+        {
+          "title": "Use polarisation and phase",
+          "body": "Linear polarisation specifies the electric-field orientation. An ideal analyser transmits intensity I = I₀ cos²θ for linearly polarised input. Birefringent material gives different phase delays to orthogonal components. A phase-contrast microscope converts specimen phase differences into visible intensity differences, enabling observation of weakly absorbing structures."
+        },
+        {
+          "title": "Work a comparison",
+          "body": "At fixed NA, changing illumination from 600 nm to 450 nm reduces the estimated resolution distance to 450/600 = 0.75 of its former value. A stronger eyepiece alone does not change this distance. Draw both the specimen spacing and diffraction spots before claiming that two points are resolved."
+        }
+      ],
+      "question": {
+        "prompt": "At fixed wavelength, what happens when numerical aperture doubles?",
+        "options": [
+          {
+            "text": "Spacing doubles",
+            "reason": "Numerical aperture is in the denominator of the resolution estimate."
+          },
+          {
+            "text": "Only magnification changes",
+            "reason": "Aperture changes diffraction-limited resolution, not just displayed size."
+          },
+          {
+            "text": "Estimated resolvable spacing halves",
+            "reason": "In d ≈ 0.61λ/NA, doubling NA halves d."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain interference, diffraction and optical resolution: state the mechanism, work an example and name one assumption.",
+        "answer": "In d ≈ 0.61λ/NA, doubling NA halves d. Malus's law gives cos²90° = 0 for crossed linear axes. At fixed NA, changing illumination from 600 nm to 450 nm reduces the estimated resolution distance to 450/600 = 0.75 of its former value. A stronger eyepiece alone does not change this distance. Draw both the specimen spacing and diffraction spots before claiming that two points are resolved."
+      },
+      "related": [
+        "biophysics-image-formation",
+        "biophysics-light-duality"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-light-duality",
+      "subject": "biophysics",
+      "title": "Photons, matter waves and electron microscopy",
+      "summary": "Connect interference and quantised energy transfer without confusing their experimental evidence.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "photoelectric",
+        "deBroglie",
+        "electron",
+        "photons"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 4; combined theory prompts 29–37",
+      "steps": [
+        {
+          "title": "Separate the experiments",
+          "body": "Interference reveals wave behaviour; the photoelectric effect reveals quantised energy exchange. Increasing light intensity increases photon arrival rate at a fixed frequency. Increasing frequency increases each photon's energy. One description is not a licence to use a classical wave-energy argument for the photoelectric threshold."
+        },
+        {
+          "title": "Apply the photoelectric equation",
+          "body": "The maximum emitted electron kinetic energy is Kmax = hf − φ, where φ is the material's work function. Below threshold hf < φ, increasing intensity does not produce ordinary single-photon photoemission. Above threshold, intensity mainly changes the number of emitted electrons, not their maximum kinetic energy."
+        },
+        {
+          "title": "Compare matter waves",
+          "body": "A particle with momentum p has de Broglie wavelength λ = h/p. Electron diffraction demonstrates that this relation is experimentally meaningful. Electron microscopes use accelerated electrons and electromagnetic lenses; their short wavelengths permit high resolution, but specimen preparation, lens aberrations and beam damage constrain useful detail."
+        },
+        {
+          "title": "Work a photon example",
+          "body": "Using hc ≈ 1240 eV·nm, a 400 nm photon carries 3.10 eV. If the work function is 2.00 eV, the maximum photoelectron energy is 1.10 eV. Doubling photon flux doubles the potential event rate in an ideal unsaturated detector without changing this maximum energy."
+        },
+        {
+          "title": "Connect momentum to force",
+          "body": "Light changes momentum when absorbed or redirected. Optical traps use focused-beam forces to confine suitable small particles; heating, particle refractive properties and geometry matter. The electromagnetic spectrum orders frequency and wavelength continuously: labels such as visible or X-ray do not introduce a new photon energy law."
+        }
+      ],
+      "question": {
+        "prompt": "Above threshold, light frequency is fixed and intensity doubles. What changes most directly?",
+        "options": [
+          {
+            "text": "Photoelectron emission rate",
+            "reason": "More photons can eject more electrons while the maximum energy stays fixed."
+          },
+          {
+            "text": "Maximum electron energy doubles",
+            "reason": "Maximum energy is set by hf minus work function."
+          },
+          {
+            "text": "Work function doubles",
+            "reason": "The work function is a property of the surface, not light intensity."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain photons, matter waves and electron microscopy: state the mechanism, work an example and name one assumption.",
+        "answer": "More photons can eject more electrons while the maximum energy stays fixed. The relation λ = h/p predicts half the wavelength. Light changes momentum when absorbed or redirected. Optical traps use focused-beam forces to confine suitable small particles; heating, particle refractive properties and geometry matter. The electromagnetic spectrum orders frequency and wavelength continuously: labels such as visible or X-ray do not introduce a new photon energy law."
+      },
+      "related": [
+        "biophysics-wave-optics",
+        "biophysics-atomic-models"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-atomic-models",
+      "subject": "biophysics",
+      "title": "Atomic models, energy levels and uncertainty",
+      "summary": "Use historical models to identify what each experiment explains and what it cannot.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "Bohr",
+        "orbital",
+        "uncertainty",
+        "Franck-Hertz"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 5; combined theory prompts 38–44",
+      "steps": [
+        {
+          "title": "Follow the evidence",
+          "body": "Dalton's atom model organised chemical composition; Thomson introduced embedded electrons; scattering experiments required a small concentrated positive nucleus. A classical planetary electron would radiate and collapse, so it cannot explain stable atomic structure. Model revision follows a failed prediction, not simply a more detailed drawing."
+        },
+        {
+          "title": "Quantise energy",
+          "body": "Bohr's hydrogen model allows selected energies and photons with hf = |ΔE| between levels. It explains important hydrogen spectral features but does not supply a general picture of multi-electron atoms. The quantum model uses orbitals as probability distributions, not narrow tracks traversed by miniature planets."
+        },
+        {
+          "title": "Use quantum numbers",
+          "body": "Principal, angular-momentum, magnetic and spin quantum numbers organise electron states. Pauli exclusion prevents two electrons in an atom from sharing the full set. Shell filling, effective nuclear charge and shielding help explain periodic chemical properties. An orbital's spatial extent is different from a measured instantaneous electron position."
+        },
+        {
+          "title": "Interpret uncertainty",
+          "body": "The relation Δx Δp ≥ ħ/2 constrains a state's position and momentum spreads. It is not merely a poor microscope or a statement that electrons have no measurable properties. Wave packets require a range of momenta to localise a particle; tighter localisation broadens that distribution."
+        },
+        {
+          "title": "Read experimental transitions",
+          "body": "In a Franck–Hertz-type experiment, electrons lose discrete amounts of energy when exciting atoms. A 5 eV excitation would correspond to a photon of roughly 248 nm if the atom returned directly by emitting one photon. Multiple allowed decay pathways can produce several spectral lines instead."
+        }
+      ],
+      "question": {
+        "prompt": "What does an atomic orbital represent?",
+        "options": [
+          {
+            "text": "The nucleus's mechanical orbit",
+            "reason": "Electronic orbitals describe electron states."
+          },
+          {
+            "text": "A quantum state with a spatial probability distribution",
+            "reason": "An orbital supports predictions about measurement probabilities rather than a fixed electron path."
+          },
+          {
+            "text": "A fixed circular electron track",
+            "reason": "Orbitals are not classical planetary trajectories."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain atomic models, energy levels and uncertainty: state the mechanism, work an example and name one assumption.",
+        "answer": "An orbital supports predictions about measurement probabilities rather than a fixed electron path. E = hc/λ makes doubled energy correspond to halved wavelength. In a Franck–Hertz-type experiment, electrons lose discrete amounts of energy when exciting atoms. A 5 eV excitation would correspond to a photon of roughly 248 nm if the atom returned directly by emitting one photon. Multiple allowed decay pathways can produce several spectral lines instead."
+      },
+      "related": [
+        "biophysics-light-duality",
+        "biophysics-molecular-interactions"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-molecular-interactions",
+      "subject": "biophysics",
+      "title": "Bonds, interaction energies and scanning probes",
+      "summary": "Connect the shape of an interaction potential to molecular structure and measurement.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "AFM",
+        "STM",
+        "bonds",
+        "electronegativity"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 6; combined theory prompts 45–49",
+      "steps": [
+        {
+          "title": "Read an energy curve",
+          "body": "A stable separation lies near a potential-energy minimum where net force is zero and curvature is positive. Attraction dominates over one distance range and steep repulsion prevents unlimited approach. Force is the negative spatial derivative of potential energy: zero potential is not the same thing as zero force."
+        },
+        {
+          "title": "Compare chemical interactions",
+          "body": "Covalent bonding involves shared electron density; ionic interactions involve charges and depend strongly on the medium. Electronegativity differences help predict bond polarity. Hydrogen bonds are directional interactions involving suitable donors and acceptors. Dispersion forces occur even in nonpolar molecules through fluctuating charge distributions."
+        },
+        {
+          "title": "Connect many weak interactions",
+          "body": "Thermal energy kBT competes with interaction energies. Individually modest noncovalent contacts can stabilise a large macromolecule when many act together. Solvent and entropy affect the free-energy balance, so counting bonds alone does not predict whether a complex forms. Hydrophobic association is a solvent-related effect rather than a new covalent bond."
+        },
+        {
+          "title": "Measure surfaces",
+          "body": "Scanning tunnelling microscopy senses a tunnelling current that depends sharply on tip–sample separation and electronic states, requiring a suitable conducting pathway. Atomic force microscopy senses tip forces through a cantilever and can study insulating samples. Neither instrument produces an ordinary colour photograph of atoms."
+        },
+        {
+          "title": "Predict a perturbation",
+          "body": "Moving particles slightly away from a stable minimum produces a restoring tendency. Raising temperature may increase fluctuations enough to disrupt weak associations, but no single temperature applies to every interaction. For a probe image, ask whether apparent height reflects topography, electronic structure or the chosen force-feedback mode."
+        }
+      ],
+      "question": {
+        "prompt": "Where is a stable equilibrium on a potential-energy graph?",
+        "options": [
+          {
+            "text": "At every point where potential equals zero",
+            "reason": "The zero of potential can be chosen arbitrarily."
+          },
+          {
+            "text": "At a local maximum",
+            "reason": "A small displacement from a maximum tends to grow."
+          },
+          {
+            "text": "At a local minimum",
+            "reason": "A local minimum has restoring forces for small displacements."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain bonds, interaction energies and scanning probes: state the mechanism, work an example and name one assumption.",
+        "answer": "A local minimum has restoring forces for small displacements. AFM measures interaction forces and does not require a tunnelling current. Moving particles slightly away from a stable minimum produces a restoring tendency. Raising temperature may increase fluctuations enough to disrupt weak associations, but no single temperature applies to every interaction. For a probe image, ask whether apparent height reflects topography, electronic structure or the chosen force-feedback mode."
+      },
+      "related": [
+        "biophysics-atomic-models",
+        "biophysics-gases-statistics"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-gases-statistics",
+      "subject": "biophysics",
+      "title": "Gas laws, Boltzmann statistics and thermal energy",
+      "summary": "Move between molecular motion, bulk pressure and equilibrium populations.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "Boltzmann",
+        "Maxwell",
+        "Arrhenius",
+        "entropy"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 7; combined theory prompts 50–62",
+      "steps": [
+        {
+          "title": "Connect microscopic motion to pressure",
+          "body": "Gas pressure comes from momentum transfer in collisions with container walls. For a dilute ideal gas, pV = NkBT = nRT. Absolute temperature is required. The model neglects molecular volume and intermolecular potential energy; high density and proximity to condensation make those assumptions unreliable."
+        },
+        {
+          "title": "Describe speeds statistically",
+          "body": "A Maxwell–Boltzmann distribution describes speeds in a classical equilibrium gas. Molecules do not all share the mean speed. Raising temperature broadens the distribution and shifts characteristic speeds upward; heavier particles have lower characteristic speeds at the same temperature. Mean translational energy is 3kBT/2 per particle."
+        },
+        {
+          "title": "Compare energy populations",
+          "body": "For equal degeneracy, relative occupation of two states is exp(−ΔE/kBT). Larger energy gaps reduce high-energy occupation, while warming makes it less strongly suppressed. Barometric density variation is a spatial version of this balance in gravity. Degeneracy must be included when states have unequal multiplicity."
+        },
+        {
+          "title": "Recognise nonideal behaviour",
+          "body": "The van der Waals equation introduces finite molecular volume and attractive forces. These corrections explain why an ideal-gas extrapolation can fail. At equilibrium chemical reactions balance forward and reverse rates; Arrhenius temperature dependence describes barrier crossing, not proof that every collision reacts."
+        },
+        {
+          "title": "Work and interpret",
+          "body": "An ideal gas warmed from 300 K to 330 K at fixed volume has pressure multiplied by 330/300 = 1.10. Celsius temperatures would give the wrong ratio. Entropy S = kB ln Ω connects accessible microstates with bulk thermodynamics, but Ω must refer to states consistent with the specified macroscopic constraints."
+        }
+      ],
+      "question": {
+        "prompt": "At fixed volume, an ideal gas warms from 300 K to 600 K. Its pressure…",
+        "options": [
+          {
+            "text": "Doubles",
+            "reason": "p = NkBT/V gives a twofold increase."
+          },
+          {
+            "text": "Stays fixed",
+            "reason": "Fixed volume does not fix pressure when temperature changes."
+          },
+          {
+            "text": "Halves",
+            "reason": "Pressure is proportional, not inversely proportional, to absolute temperature."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain gas laws, boltzmann statistics and thermal energy: state the mechanism, work an example and name one assumption.",
+        "answer": "p = NkBT/V gives a twofold increase. exp(−ΔE/kBT) decreases as a positive ΔE increases. An ideal gas warmed from 300 K to 330 K at fixed volume has pressure multiplied by 330/300 = 1.10. Celsius temperatures would give the wrong ratio. Entropy S = kB ln Ω connects accessible microstates with bulk thermodynamics, but Ω must refer to states consistent with the specified macroscopic constraints."
+      },
+      "related": [
+        "biophysics-molecular-interactions",
+        "biophysics-condensed-matter"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-condensed-matter",
+      "subject": "biophysics",
+      "title": "Solids, liquids, liquid crystals and energy bands",
+      "summary": "Explain material properties from molecular order and accessible electronic states.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "semiconductor",
+        "liquid-crystal",
+        "bands"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 8; combined theory prompts 63–73",
+      "steps": [
+        {
+          "title": "Compare forms of order",
+          "body": "A crystal has long-range positional order; an amorphous solid lacks that periodic arrangement. Liquids retain short-range correlations while molecules rearrange. Liquid crystals combine fluidity with partial orientational or positional order, so their response depends on direction. A biological membrane is not a rigid three-dimensional crystal."
+        },
+        {
+          "title": "Distinguish liquid-crystal classes",
+          "body": "Thermotropic phases change principally with temperature. Lyotropic phases depend on composition and solvent concentration as well as temperature. Anisotropy can alter optical propagation; applied fields can reorient suitable molecules, changing transmitted light between polarisers. This is an electro-optical effect, not light being electrically charged."
+        },
+        {
+          "title": "Use the band picture",
+          "body": "Closely spaced atomic states form bands in a solid. Conductors have accessible nearby states for mobile carriers; insulators have a substantial gap between occupied and accessible empty bands. Semiconductors have a smaller relevant gap. Conductivity depends on both carrier concentration and mobility, not just the number of atoms."
+        },
+        {
+          "title": "Compare intrinsic and doped material",
+          "body": "Thermal excitation in an intrinsic semiconductor creates electrons and holes. Donor and acceptor dopants favour electron or hole conduction. Both carrier types contribute according to their concentration and mobility. Temperature may increase carrier density while also changing scattering, so different materials need not share one simple conductivity trend."
+        },
+        {
+          "title": "Apply the distinction",
+          "body": "A thermistor uses a reproducible resistance–temperature relationship; it requires calibration rather than an assumption that every resistance doubles with temperature. A liquid-crystal display controls optical transmission by changing molecular alignment. Describe the measured quantity and the intervening mechanism before treating either device as a direct thermometer or light source."
+        }
+      ],
+      "question": {
+        "prompt": "Why can a liquid crystal have direction-dependent optical properties?",
+        "options": [
+          {
+            "text": "Light acquires electric charge inside it",
+            "reason": "Optical anisotropy does not require charging photons."
+          },
+          {
+            "text": "Its molecules retain partial orientational order",
+            "reason": "Partial order makes the optical response depend on orientation."
+          },
+          {
+            "text": "Every molecule occupies a rigid crystal lattice",
+            "reason": "Liquid-crystal phases retain fluidity and need not have full positional order."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain solids, liquids, liquid crystals and energy bands: state the mechanism, work an example and name one assumption.",
+        "answer": "Partial order makes the optical response depend on orientation. Acceptor doping increases hole availability in a p-type semiconductor. A thermistor uses a reproducible resistance–temperature relationship; it requires calibration rather than an assumption that every resistance doubles with temperature. A liquid-crystal display controls optical transmission by changing molecular alignment. Describe the measured quantity and the intervening mechanism before treating either device as a direct thermometer or light source."
+      },
+      "related": [
+        "biophysics-gases-statistics",
+        "biophysics-absorption-scattering"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-absorption-scattering",
+      "subject": "biophysics",
+      "title": "Absorption, scattering and optical spectroscopy",
+      "summary": "Separate loss mechanisms and use a spectrum to infer molecular information.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "Beer-Lambert",
+        "Rayleigh",
+        "Mie",
+        "spectroscopy"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 9; combined theory prompts 74–80",
+      "steps": [
+        {
+          "title": "Track the missing beam",
+          "body": "A detector placed directly behind a sample measures transmitted light. Reduced transmission can reflect absorption, scattering out of the beam or reflection. Only absorbed energy is necessarily transferred internally to the sample. Geometry and collection optics determine whether scattered light contributes to the measured signal."
+        },
+        {
+          "title": "Apply Beer–Lambert carefully",
+          "body": "For a homogeneous non-scattering dilute solution under suitable monochromatic conditions, A = log₁₀(I₀/I) = εcl. Absorbance is dimensionless, c is concentration and l is path length; ε must use compatible units. A blank corrects for solvent and container contributions, not for every possible sample artifact."
+        },
+        {
+          "title": "Explain spectral structure",
+          "body": "Molecules absorb when photon energy matches allowed electronic, vibrational or rotational transitions. A spectrometer separates wavelengths and measures a response across them. Broad molecular bands differ from isolated atomic lines. Peaks alone may not identify a compound uniquely, especially when several absorbing species overlap."
+        },
+        {
+          "title": "Compare scattering",
+          "body": "Rayleigh scattering applies to particles much smaller than wavelength and has a strong inverse wavelength dependence. Mie scattering describes larger spherical-particle regimes with more complex angular behaviour. Dynamic light scattering analyses fluctuations caused by particle motion, linking correlation times to diffusion under a model rather than directly photographing particle diameters."
+        },
+        {
+          "title": "Work a transmission result",
+          "body": "If I/I₀ = 0.01, absorbance is 2. Increasing concentration twofold at fixed ε and l predicts A = 4, or transmission 0.0001. Such tiny signals may exceed useful instrument range because stray light and noise matter. A linear equation does not guarantee reliable measurements at arbitrary concentration."
+        }
+      ],
+      "question": {
+        "prompt": "A sample transmits 10% of the blank intensity. Its absorbance is…",
+        "options": [
+          {
+            "text": "0.1",
+            "reason": "Transmission fraction and logarithmic absorbance are different quantities."
+          },
+          {
+            "text": "10",
+            "reason": "Absorbance is log₁₀(1/0.1), not its unlogged ratio."
+          },
+          {
+            "text": "1",
+            "reason": "A = −log₁₀0.1 = 1."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain absorption, scattering and optical spectroscopy: state the mechanism, work an example and name one assumption.",
+        "answer": "A = −log₁₀0.1 = 1. A transmission measurement alone does not separate absorption from scattering losses. If I/I₀ = 0.01, absorbance is 2. Increasing concentration twofold at fixed ε and l predicts A = 4, or transmission 0.0001. Such tiny signals may exceed useful instrument range because stray light and noise matter. A linear equation does not guarantee reliable measurements at arbitrary concentration."
+      },
+      "related": [
+        "biophysics-condensed-matter",
+        "biophysics-thermal-radiation"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-thermal-radiation",
+      "subject": "biophysics",
+      "title": "Blackbody radiation and thermal imaging",
+      "summary": "Relate a temperature distribution to emitted power and spectral shape.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "Wien",
+        "Planck",
+        "Stefan-Boltzmann",
+        "thermography"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 10; combined theory prompts 81–89",
+      "steps": [
+        {
+          "title": "Define an ideal reference",
+          "body": "A blackbody absorbs incident radiation completely and emits a temperature-dependent equilibrium spectrum. Real surfaces are described using emissivity, which can depend on wavelength, angle and temperature. A dark appearance in visible light does not automatically imply identical behaviour in thermal infrared."
+        },
+        {
+          "title": "Read the laws together",
+          "body": "Planck's law gives the spectral distribution. Wien's wavelength displacement law gives λmax T ≈ 2.898 × 10⁻³ m·K. Stefan–Boltzmann gives total blackbody radiant exitance M = σT⁴. The peak location and total area describe different aspects of one spectrum; use kelvin in both relations."
+        },
+        {
+          "title": "Account for surroundings",
+          "body": "For an idealised grey surface exchanging radiation with a large enclosure, net power is approximately εσA(T⁴ − Tenv⁴). Emission alone is not net cooling because the body also absorbs radiation. Kirchhoff's relation links emissivity and absorptivity at thermal equilibrium under corresponding spectral and directional conditions."
+        },
+        {
+          "title": "Work a thermal scale",
+          "body": "At 300 K, Wien's relation gives a peak near 9.7 μm, in the infrared. Doubling absolute temperature multiplies ideal total emitted power per area by 16 and halves peak wavelength. A small rise around body temperature is not equivalent to doubling kelvin temperature."
+        },
+        {
+          "title": "Interpret an image",
+          "body": "A thermal camera estimates apparent surface temperature from detected infrared radiation and assumptions about emissivity and surroundings. Reflections, sweat, coverings and environment affect readings. The image represents surface radiance, not a direct map of deep internal temperature or a diagnosis by colour alone."
+        }
+      ],
+      "question": {
+        "prompt": "An ideal blackbody's absolute temperature doubles. Total emitted power per area changes by…",
+        "options": [
+          {
+            "text": "A factor of 16",
+            "reason": "Stefan–Boltzmann scaling gives 2⁴ = 16."
+          },
+          {
+            "text": "A factor of 2",
+            "reason": "Total emission follows the fourth power, not a linear law."
+          },
+          {
+            "text": "A factor of 1/2",
+            "reason": "The peak wavelength halves, but total emission rises."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain blackbody radiation and thermal imaging: state the mechanism, work an example and name one assumption.",
+        "answer": "Stefan–Boltzmann scaling gives 2⁴ = 16. Net exchange subtracts incoming absorbed radiation from outgoing emission. A thermal camera estimates apparent surface temperature from detected infrared radiation and assumptions about emissivity and surroundings. Reflections, sweat, coverings and environment affect readings. The image represents surface radiance, not a direct map of deep internal temperature or a diagnosis by colour alone."
+      },
+      "related": [
+        "biophysics-absorption-scattering",
+        "biophysics-luminescence"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-luminescence",
+      "subject": "biophysics",
+      "title": "Fluorescence, phosphorescence and molecular probes",
+      "summary": "Follow excitation and relaxation pathways to interpret luminescence measurements.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "fluorescence",
+        "phosphorescence",
+        "Kasha",
+        "lifetime"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 11; combined theory prompts 90–102",
+      "steps": [
+        {
+          "title": "Build an energy diagram",
+          "body": "Absorption promotes a molecule into an excited state. Vibrational relaxation and internal conversion can reduce its energy without photon emission. Fluorescence commonly occurs from the lowest excited singlet state to the ground state, consistent with Kasha's rule in many molecules. Exceptions exist, so the rule is not an absolute prohibition."
+        },
+        {
+          "title": "Distinguish delayed emission",
+          "body": "Intersystem crossing changes spin multiplicity and can populate a triplet state. Phosphorescence commonly involves a spin-forbidden triplet-to-singlet transition and is often longer lived than fluorescence. Both are luminescence; neither requires a body to have the blackbody temperature corresponding to the emitted colour."
+        },
+        {
+          "title": "Measure yield and lifetime",
+          "body": "Quantum yield is emitted photons divided by absorbed photons. Lifetime describes excited-state population decay, often approximately exponential. Nonradiative pathways reduce yield and can shorten lifetime. Intensity also depends on illumination, concentration, collection and detector response, so dim emission alone does not uniquely identify the cause."
+        },
+        {
+          "title": "Separate excitation from detection",
+          "body": "A fluorimeter selects excitation and observes emission with spectral separation, often using a right-angle geometry to reduce direct excitation light. Fluorescence microscopy uses labels and filters to localise signals. A Stokes shift places common emission at longer wavelength than excitation because some energy is lost before photon emission."
+        },
+        {
+          "title": "Work a decay",
+          "body": "For a single lifetime τ = 4 ns, the excited population remaining after 4 ns is e⁻¹ ≈ 37%. A 40% quantum yield means about 40 emitted photons per 100 absorbed on average, not that every molecule emits a photon with 40% of the excitation energy."
+        }
+      ],
+      "question": {
+        "prompt": "A quantum yield of 0.25 means…",
+        "options": [
+          {
+            "text": "The lifetime is 0.25 seconds",
+            "reason": "Quantum yield is dimensionless and does not specify lifetime."
+          },
+          {
+            "text": "About 25 photons emitted per 100 absorbed on average",
+            "reason": "Quantum yield compares emitted and absorbed photon numbers."
+          },
+          {
+            "text": "Each photon has one quarter the excitation energy",
+            "reason": "Yield counts photons; it is not a photon-energy fraction."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain fluorescence, phosphorescence and molecular probes: state the mechanism, work an example and name one assumption.",
+        "answer": "Quantum yield compares emitted and absorbed photon numbers. Relaxation before emission reduces photon energy and increases wavelength. For a single lifetime τ = 4 ns, the excited population remaining after 4 ns is e⁻¹ ≈ 37%. A 40% quantum yield means about 40 emitted photons per 100 absorbed on average, not that every molecule emits a photon with 40% of the excitation energy."
+      },
+      "related": [
+        "biophysics-thermal-radiation",
+        "biophysics-lasers"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-lasers",
+      "subject": "biophysics",
+      "title": "Stimulated emission and medical laser principles",
+      "summary": "Explain how pumping and feedback produce a laser beam and why tissue response varies.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "stimulated",
+        "emission",
+        "resonator",
+        "laser"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 12; combined theory prompts 103–108",
+      "steps": [
+        {
+          "title": "Compare emission processes",
+          "body": "Spontaneous emission occurs without an incoming matching photon. Stimulated emission is induced by the electromagnetic field and adds radiation in the stimulating mode. Absorption competes with gain. Population inversion supplies more emitters than absorbers for the relevant laser transition; thermal equilibrium alone does not normally provide it."
+        },
+        {
+          "title": "Build the device",
+          "body": "A pump transfers energy into the active medium. Metastable states can help sustain inversion, while an optical resonator provides feedback and selects modes. An output coupler lets part of the light leave. Gas, solid-state and semiconductor lasers use different media and pumping arrangements but share the need for gain and controlled losses."
+        },
+        {
+          "title": "Interpret beam properties",
+          "body": "Laser light can be highly directional, spectrally narrow and coherent, but those properties have finite limits. Continuous and pulsed operation differ in peak power and timing. Average power equals pulse energy times repetition rate for a regular pulse train; a low average power can still accompany a high short-pulse peak."
+        },
+        {
+          "title": "Connect wavelength to tissue",
+          "body": "Absorption by water, pigments and other chromophores determines where energy is deposited. Heating, photochemical effects and mechanical disruption depend on wavelength, irradiance and exposure time. The word laser alone does not specify depth, effect or clinical suitability. Eye exposure risk also depends on focusing and wavelength."
+        },
+        {
+          "title": "Work a pulse train",
+          "body": "A teaching source emits 2 mJ pulses at 100 pulses/s. Average power is 0.002 J × 100/s = 0.2 W. If each pulse lasts 1 μs with an ideal flat profile, pulse power is 2000 W. These are different descriptors; neither calculation defines a treatment setting."
+        }
+      ],
+      "question": {
+        "prompt": "What supplies the energy for sustained laser emission?",
+        "options": [
+          {
+            "text": "The mirrors creating energy",
+            "reason": "Mirrors provide feedback but do not supply energy."
+          },
+          {
+            "text": "Coherence violating energy conservation",
+            "reason": "Coherence does not remove the need for an energy source."
+          },
+          {
+            "text": "The pump acting on the gain medium",
+            "reason": "Pumping maintains gain against losses and extracted output."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain stimulated emission and medical laser principles: state the mechanism, work an example and name one assumption.",
+        "answer": "Pumping maintains gain against losses and extracted output. 0.001 J × 500/s = 0.5 W. A teaching source emits 2 mJ pulses at 100 pulses/s. Average power is 0.002 J × 100/s = 0.2 W. If each pulse lasts 1 μs with an ideal flat profile, pulse power is 2000 W. These are different descriptors; neither calculation defines a treatment setting."
+      },
+      "related": [
+        "biophysics-luminescence",
+        "biophysics-nuclear-structure"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-nuclear-structure",
+      "subject": "biophysics",
+      "title": "Nuclei, isotopes and radioactive transformations",
+      "summary": "Identify nuclear changes from conservation laws rather than memorising radiation names.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "isotope",
+        "alpha",
+        "beta",
+        "gamma"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 13; combined theory prompts 109–119",
+      "steps": [
+        {
+          "title": "Identify the nucleus",
+          "body": "Atomic number Z counts protons; mass number A counts protons plus neutrons. Isotopes share Z but differ in neutron number. Nuclear stability reflects competing interactions and neutron–proton balance; binding energy per nucleon helps compare nuclear configurations. Atomic chemistry and nuclear transformation are distinct processes."
+        },
+        {
+          "title": "Balance charged-particle decay",
+          "body": "Alpha emission lowers A by 4 and Z by 2. In beta-minus decay a neutron becomes a proton with an electron and antineutrino emitted, leaving A unchanged and increasing Z by 1. Beta-plus decay lowers Z by 1 with a positron and neutrino emitted; electron capture also lowers Z by 1."
+        },
+        {
+          "title": "Separate de-excitation",
+          "body": "Gamma emission releases nuclear excitation energy without changing A or Z. A daughter may remain excited after another decay and subsequently emit gamma radiation. Beta spectra are continuous because energy is shared with another emitted particle; many alpha and gamma emissions have characteristic discrete energies."
+        },
+        {
+          "title": "Explain production",
+          "body": "Radionuclides can be produced by nuclear reactions in reactors or accelerators, or obtained from decay of a parent in a generator. The daughter element follows charge and nucleon bookkeeping. Production route, chemical separation, purity and half-life all influence whether a radionuclide is useful as a tracer."
+        },
+        {
+          "title": "Work nuclear bookkeeping",
+          "body": "An alpha decay of a nucleus with A = 226 and Z = 88 produces a daughter with A = 222 and Z = 86. A following gamma emission leaves those numbers unchanged. Do not subtract four electrons or interpret a gamma photon as a lost nucleon."
+        }
+      ],
+      "question": {
+        "prompt": "Beta-minus decay changes the daughter atomic number by…",
+        "options": [
+          {
+            "text": "+1 with mass number unchanged",
+            "reason": "A neutron converts into a proton, increasing Z without changing A."
+          },
+          {
+            "text": "−1 with mass number unchanged",
+            "reason": "That direction applies to beta-plus decay or electron capture."
+          },
+          {
+            "text": "−2 with mass number reduced by 4",
+            "reason": "That bookkeeping describes alpha decay."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain nuclei, isotopes and radioactive transformations: state the mechanism, work an example and name one assumption.",
+        "answer": "A neutron converts into a proton, increasing Z without changing A. The nucleus moves to a lower energy state without changing its composition. An alpha decay of a nucleus with A = 226 and Z = 88 produces a daughter with A = 222 and Z = 86. A following gamma emission leaves those numbers unchanged. Do not subtract four electrons or interpret a gamma photon as a lost nucleon."
+      },
+      "related": [
+        "biophysics-lasers",
+        "biophysics-decay-interactions"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-decay-interactions",
+      "subject": "biophysics",
+      "title": "Decay law and radiation interactions with matter",
+      "summary": "Calculate activity changes and distinguish how different radiations deposit energy.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "half-life",
+        "Compton",
+        "photoelectric",
+        "Bragg"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 14; combined theory prompts 120–128",
+      "steps": [
+        {
+          "title": "Use the decay law",
+          "body": "For one radionuclide, N(t) = N₀e⁻λt and activity A(t) = λN(t). Activity is measured in becquerels, meaning decays per second. Half-life T½ = ln 2/λ and mean lifetime τ = 1/λ are different. Individual decays are random even though large populations follow a predictable statistical curve."
+        },
+        {
+          "title": "Track charged particles",
+          "body": "Alpha particles produce dense ionisation over a short range. Electrons and positrons lose energy through interactions with matter; positrons eventually annihilate with electrons, commonly producing two approximately 511 keV photons. Fast protons have a depth-dependent energy deposition with a Bragg peak near the end of their range."
+        },
+        {
+          "title": "Distinguish photon mechanisms",
+          "body": "Photoelectric absorption transfers photon energy to an electron, with binding-energy bookkeeping. Compton scattering transfers some energy to an electron and leaves a redirected lower-energy photon. Pair production requires at least 1.022 MeV near a suitable interaction partner, producing an electron and positron."
+        },
+        {
+          "title": "Apply attenuation",
+          "body": "A narrow monoenergetic photon beam can follow I = I₀e⁻μx through a uniform absorber. Attenuation includes photons removed by scattering as well as absorption. Its coefficient depends on energy and material; it is not a universal percentage per centimetre. Neutrons interact chiefly with nuclei rather than by direct electric ionisation."
+        },
+        {
+          "title": "Work a time example",
+          "body": "An 800 Bq sample with a 2-hour half-life has expected activity 100 Bq after 6 hours: three half-lives leave one eighth. This does not mean every original nucleus survived exactly two hours. A detector count rate also depends on efficiency, geometry and background."
+        }
+      ],
+      "question": {
+        "prompt": "After three half-lives, what fraction of the original activity remains for one radionuclide?",
+        "options": [
+          {
+            "text": "Zero",
+            "reason": "Exponential decay approaches zero statistically rather than stopping after three half-lives."
+          },
+          {
+            "text": "1/8",
+            "reason": "Three successive factors of one half give one eighth."
+          },
+          {
+            "text": "1/3",
+            "reason": "Half-life changes are multiplicative, not a division by elapsed count."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain decay law and radiation interactions with matter: state the mechanism, work an example and name one assumption.",
+        "answer": "Three successive factors of one half give one eighth. Compton scattering redistributes energy between a lower-energy photon and an electron. An 800 Bq sample with a 2-hour half-life has expected activity 100 Bq after 6 hours: three half-lives leave one eighth. This does not mean every original nucleus survived exactly two hours. A detector count rate also depends on efficiency, geometry and background."
+      },
+      "related": [
+        "biophysics-nuclear-structure",
+        "biophysics-radiation-detection"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-radiation-detection",
+      "subject": "biophysics",
+      "title": "Detectors, count statistics and pulse spectra",
+      "summary": "Follow a radiation event through conversion, amplification and discrimination.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "scintillator",
+        "photomultiplier",
+        "Geiger",
+        "Poisson"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 15; combined theory prompts 129–134",
+      "steps": [
+        {
+          "title": "Convert an event",
+          "body": "A scintillator converts some deposited energy into light. A photomultiplier converts that light into photoelectrons and amplifies their number through dynodes. Pulse height can track deposited energy under calibrated conditions; pulse count tracks detected events. Neither is automatically equal to source activity."
+        },
+        {
+          "title": "Compare gas detectors",
+          "body": "An ionisation chamber collects primary ionisation charge. A proportional counter uses gas multiplication while retaining information about initial ionisation. In a Geiger–Müller tube, avalanches make pulse sizes largely independent of incident energy, so it is useful for counting but not ordinary pulse-height energy spectroscopy."
+        },
+        {
+          "title": "Use semiconductor detectors",
+          "body": "Energy deposition creates electron–hole pairs that can be collected as charge. Detector material, thickness, noise and energy resolution affect performance. A discriminator rejects pulses below a threshold, reducing some noise but potentially rejecting genuine events. Calibration is needed to associate a channel number with an energy."
+        },
+        {
+          "title": "Interpret counts statistically",
+          "body": "For independent Poisson events, the standard deviation of N counts is approximately √N. Relative counting uncertainty is about 1/√N. Background subtraction introduces uncertainty from both measurements. Dead time causes missed events at high rates, so observed counts need not rise linearly without limit."
+        },
+        {
+          "title": "Work precision and gain",
+          "body": "Collecting 10,000 counts gives about 1% counting uncertainty before other errors, compared with 10% for 100 counts. Eight ideal dynodes each multiplying electrons by 3 give gain 3⁸ = 6561. Gain increases pulse amplitude, not the number of radioactive decays occurring in the sample."
+        }
+      ],
+      "question": {
+        "prompt": "To halve relative Poisson counting uncertainty, how many counts are needed?",
+        "options": [
+          {
+            "text": "Twice as many",
+            "reason": "Relative uncertainty decreases with the square root of count number."
+          },
+          {
+            "text": "Half as many",
+            "reason": "Fewer counts increase relative uncertainty."
+          },
+          {
+            "text": "Four times as many",
+            "reason": "1/√N halves when N increases fourfold."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain detectors, count statistics and pulse spectra: state the mechanism, work an example and name one assumption.",
+        "answer": "1/√N halves when N increases fourfold. Geiger avalanches largely remove the dependence of pulse size on initial ionisation. Collecting 10,000 counts gives about 1% counting uncertainty before other errors, compared with 10% for 100 counts. Eight ideal dynodes each multiplying electrons by 3 give gain 3⁸ = 6561. Gain increases pulse amplitude, not the number of radioactive decays occurring in the sample."
+      },
+      "related": [
+        "biophysics-decay-interactions",
+        "biophysics-dosimetry"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-dosimetry",
+      "subject": "biophysics",
+      "title": "Absorbed dose, biological weighting and protection",
+      "summary": "Keep activity, deposited energy and protection quantities separate.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "dose",
+        "gray",
+        "sievert",
+        "ALARA"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 16; combined theory prompts 135–147",
+      "steps": [
+        {
+          "title": "Separate units",
+          "body": "Activity in Bq counts decays per second; absorbed dose D in gray is energy deposited per mass, with 1 Gy = 1 J/kg. Exposure is a charge-per-mass quantity defined for photon ionisation in air, not a general tissue dose. No universal Bq-to-Gy conversion exists without geometry, energies, time and biokinetics."
+        },
+        {
+          "title": "Explain weighting",
+          "body": "Equivalent dose weights organ absorbed dose for radiation type. Effective dose additionally combines tissue-weighted contributions as a protection quantity. Both use sieverts, but identical units do not make them interchangeable with gray or with an individual patient's predicted injury. Weighting factors belong to a specified protection framework."
+        },
+        {
+          "title": "Follow damage pathways",
+          "body": "Radiation can affect a target directly or indirectly through chemical species produced in surrounding material, notably water. Physical interactions precede chemical and biological responses. Tissue reactions and stochastic effects have different dose–response concepts. A dose number alone omits distribution, dose rate and biological context."
+        },
+        {
+          "title": "Use protection principles",
+          "body": "Justification asks whether an exposure is warranted; optimisation seeks an appropriate balance while limiting unnecessary exposure. Time, distance and suitable shielding alter exposure pathways. Dose limits in regulated exposure categories are not interchangeable with patient medical exposures, and current local requirements must be checked separately."
+        },
+        {
+          "title": "Work energy per mass",
+          "body": "If 0.02 J is deposited uniformly in 0.10 kg, absorbed dose is 0.20 Gy. Without radiation type and distribution this result cannot be relabelled as effective dose. Doubling mass at the same deposited energy halves absorbed dose; doubling activity alone does not determine the dose change."
+        }
+      ],
+      "question": {
+        "prompt": "0.06 J is deposited in 0.30 kg. What is absorbed dose?",
+        "options": [
+          {
+            "text": "0.20 Gy",
+            "reason": "D = 0.06/0.30 = 0.20 J/kg = 0.20 Gy."
+          },
+          {
+            "text": "0.018 Gy",
+            "reason": "Dose divides energy by mass rather than multiplying."
+          },
+          {
+            "text": "0.20 Bq",
+            "reason": "Becquerels measure decay rate, not deposited energy per mass."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain absorbed dose, biological weighting and protection: state the mechanism, work an example and name one assumption.",
+        "answer": "D = 0.06/0.30 = 0.20 J/kg = 0.20 Gy. Activity alone does not specify energy deposition or tissue weighting. If 0.02 J is deposited uniformly in 0.10 kg, absorbed dose is 0.20 Gy. Without radiation type and distribution this result cannot be relabelled as effective dose. Doubling mass at the same deposited energy halves absorbed dose; doubling activity alone does not determine the dose change."
+      },
+      "related": [
+        "biophysics-radiation-detection",
+        "biophysics-isotope-diagnostics"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-isotope-diagnostics",
+      "subject": "biophysics",
+      "title": "Tracers, biological clearance and effective half-life",
+      "summary": "Choose a diagnostic tracer conceptually and distinguish physical decay from movement through the body.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "tracer",
+        "technetium",
+        "clearance",
+        "half-life"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 17; combined theory prompts 148–154",
+      "steps": [
+        {
+          "title": "Follow the labelled molecule",
+          "body": "A radiopharmaceutical combines a radionuclide with a chemical form that determines distribution. A detected signal can report uptake, transport or clearance, depending on the tracer and timing. Nuclear half-life is a property of the radionuclide; biological behaviour depends on chemistry and the system being observed."
+        },
+        {
+          "title": "Match the measurement",
+          "body": "A useful tracer must provide emissions that the intended detector can measure, with suitable energy and timing. Chemical targeting, image contrast, radiation burden and practical supply all matter. An arbitrarily long half-life is not automatically useful, and choosing photon energy independently of detector and attenuation is incomplete."
+        },
+        {
+          "title": "Combine removal processes",
+          "body": "When physical decay and biological elimination are independent first-order processes, λeff = λphys + λbio. Therefore 1/Teff = 1/Tphys + 1/Tbio. Effective half-life is shorter than either component. Real uptake and clearance can be multicompartmental, so one exponential may be only an approximation."
+        },
+        {
+          "title": "Explain generators and curves",
+          "body": "A parent–daughter generator allows chemical separation of a useful daughter radionuclide, as in technetium-99m supply from molybdenum-99. An uptake curve combines delivery, accumulation, elimination and decay. Correcting for physical decay is necessary before treating the remaining curve as purely biological."
+        },
+        {
+          "title": "Work the combination",
+          "body": "With a physical half-life of 6 hours and a biological half-life of 3 hours, 1/Teff = 1/6 + 1/3 = 1/2, giving 2 hours. Adding the half-lives to obtain 9 hours reverses the effect: two independent removal routes empty the pool faster."
+        }
+      ],
+      "question": {
+        "prompt": "Physical half-life is 8 h and biological half-life is 8 h under independent first-order removal. Effective half-life is…",
+        "options": [
+          {
+            "text": "8 h",
+            "reason": "Two active loss processes remove material faster than either alone."
+          },
+          {
+            "text": "4 h",
+            "reason": "1/Teff = 1/8 + 1/8 = 1/4 h⁻¹."
+          },
+          {
+            "text": "16 h",
+            "reason": "Independent loss rates add; half-lives do not."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain tracers, biological clearance and effective half-life: state the mechanism, work an example and name one assumption.",
+        "answer": "1/Teff = 1/8 + 1/8 = 1/4 h⁻¹. The labelled chemical form and biological handling govern distribution. With a physical half-life of 6 hours and a biological half-life of 3 hours, 1/Teff = 1/6 + 1/3 = 1/2, giving 2 hours. Adding the half-lives to obtain 9 hours reverses the effect: two independent removal routes empty the pool faster."
+      },
+      "related": [
+        "biophysics-dosimetry",
+        "biophysics-nuclear-imaging"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-nuclear-imaging",
+      "subject": "biophysics",
+      "title": "Gamma cameras, SPECT, PET and radiotherapy geometry",
+      "summary": "Compare information pathways in nuclear imaging and explain spatial dose targeting.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "PET",
+        "SPECT",
+        "scintigraphy",
+        "brachytherapy"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 18; combined theory prompts 155–164",
+      "steps": [
+        {
+          "title": "Localise single photons",
+          "body": "A gamma camera uses a collimator to restrict photon directions, a detector to register events and electronics to estimate position and energy. Collimation improves spatial information but rejects many photons. A planar image combines depth information in projection; rotating views support SPECT reconstruction."
+        },
+        {
+          "title": "Localise annihilation events",
+          "body": "PET detects near-coincident photons from positron annihilation and assigns a line of response between detectors. Many such events support reconstruction. Positron range, non-collinearity, scatter and random coincidences affect resolution and accuracy. PET measures a tracer distribution, not a direct photograph of every metabolic reaction."
+        },
+        {
+          "title": "Combine modalities",
+          "body": "PET/CT and SPECT/CT combine functional tracer information with anatomical localisation and attenuation correction. Registration errors can arise from motion or mismatched acquisition conditions. Hybrid imaging does not remove the distinct limitations of each component; the physical origin of each image should remain clear."
+        },
+        {
+          "title": "Shape therapeutic dose",
+          "body": "External-beam therapy directs radiation from outside; brachytherapy places sources near or within a treatment region. Multiple beam directions and collimation can concentrate dose geometrically. Charged-particle range and photon depth-dose behaviour differ. Planning must balance target coverage and surrounding tissues rather than assuming one beam only affects its target."
+        },
+        {
+          "title": "Reason about sensitivity",
+          "body": "Narrower collimator acceptance commonly improves directional selection while reducing detected counts. More counts can improve statistical precision but are not equivalent to better intrinsic spatial resolution. Draw a line of response for PET and a collimated ray for a gamma camera to explain why their localisation mechanisms differ."
+        }
+      ],
+      "question": {
+        "prompt": "What provides a PET line of response?",
+        "options": [
+          {
+            "text": "One visible fluorescence photon in the skin",
+            "reason": "PET does not localise events using skin fluorescence."
+          },
+          {
+            "text": "A mechanical ultrasound echo",
+            "reason": "An acoustic echo belongs to ultrasound imaging."
+          },
+          {
+            "text": "Two near-coincident annihilation photons registered by opposing detectors",
+            "reason": "Coincidence detection links an event to the line joining the detector pair."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain gamma cameras, spect, pet and radiotherapy geometry: state the mechanism, work an example and name one assumption.",
+        "answer": "Coincidence detection links an event to the line joining the detector pair. Improved directional restriction commonly costs detected counts. Narrower collimator acceptance commonly improves directional selection while reducing detected counts. More counts can improve statistical precision but are not equivalent to better intrinsic spatial resolution. Draw a line of response for PET and a collimated ray for a gamma camera to explain why their localisation mechanisms differ."
+      },
+      "related": [
+        "biophysics-isotope-diagnostics",
+        "biophysics-signals"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-signals",
+      "subject": "biophysics",
+      "title": "Biological signals, filtering and digitisation",
+      "summary": "Trace a physiological signal from a transducer to a sampled record.",
+      "tags": [
+        "Signals and X-ray imaging",
+        "Biophysics",
+        "Physical principles",
+        "Nyquist",
+        "Fourier",
+        "filtering",
+        "digitisation"
+      ],
+      "source": "biophysics",
+      "section": "Medical Biophysics I, topic 19; combined theory prompts 165–173",
+      "steps": [
+        {
+          "title": "Classify the information",
+          "body": "Signals may be continuous or discrete in time, analogue or quantised in amplitude, periodic or aperiodic. A biological process must first be converted into a measurable quantity by a transducer. Distinguish the original signal from the displayed trace, which has already passed through sensors and processing."
+        },
+        {
+          "title": "Read time and frequency",
+          "body": "Amplitude describes size; frequency describes repetition rate. Fourier analysis represents suitable signals as combinations of frequency components. A short pulse contains a broad frequency range. Changing a waveform's shape can therefore change its spectrum even when the main repetition period is unchanged."
+        },
+        {
+          "title": "Explain filtering and amplification",
+          "body": "Low-pass filters attenuate higher frequencies; high-pass filters attenuate lower ones; band-pass filters select a range. Amplification scales signals but also acts on noise within its bandwidth. Filtering can remove interference and also distort meaningful features, so cutoffs must relate to the physiological question."
+        },
+        {
+          "title": "Sample without inventing detail",
+          "body": "For a band-limited signal, the sampling rate must exceed twice the highest frequency to avoid aliasing under ideal reconstruction assumptions. An analogue anti-alias filter acts before sampling. Quantisation maps amplitudes into discrete levels; more bits reduce the step size for a fixed range but do not cure sensor noise."
+        },
+        {
+          "title": "Work a sampling choice",
+          "body": "A signal restricted below 100 Hz needs a sampling rate above 200 samples/s, with practical margin for real filters. Sampling at 150 samples/s can misrepresent high-frequency content as lower-frequency variation. Upsampling that record later cannot recover information already aliased at acquisition."
+        }
+      ],
+      "question": {
+        "prompt": "Where should an anti-alias filter act?",
+        "options": [
+          {
+            "text": "Before analogue-to-digital sampling",
+            "reason": "Bandwidth must be limited before sampling creates frequency ambiguity."
+          },
+          {
+            "text": "Only after displaying the aliased signal",
+            "reason": "Filtering after aliasing cannot identify which folded frequencies were originally present."
+          },
+          {
+            "text": "Only on the power cable",
+            "reason": "Power filtering is not the required signal bandwidth restriction."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain biological signals, filtering and digitisation: state the mechanism, work an example and name one assumption.",
+        "answer": "Bandwidth must be limited before sampling creates frequency ambiguity. 250 samples/s exceeds 160 samples/s; real systems also need appropriate filtering. A signal restricted below 100 Hz needs a sampling rate above 200 samples/s, with practical margin for real filters. Sampling at 150 samples/s can misrepresent high-frequency content as lower-frequency variation. Upsampling that record later cannot recover information already aliased at acquisition."
+      },
+      "related": [
+        "biophysics-nuclear-imaging",
+        "biophysics-xray-production"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-xray-production",
+      "subject": "biophysics",
+      "title": "X-ray tubes, spectra and beam quality",
+      "summary": "Separate tube voltage, current and target material when predicting an X-ray spectrum.",
+      "tags": [
+        "Signals and X-ray imaging",
+        "Biophysics",
+        "Physical principles",
+        "bremsstrahlung",
+        "Duane-Hunt",
+        "kVp",
+        "filtration"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 20; combined theory prompts 174–179",
+      "steps": [
+        {
+          "title": "Follow the electrons",
+          "body": "A heated cathode supplies electrons that accelerate toward an anode through a potential difference. Their maximum kinetic energy is eV. Most deposited energy becomes heat; only a fraction becomes X-rays. Target design and cooling manage this energy load rather than implying perfect conversion into useful photons."
+        },
+        {
+          "title": "Explain two spectral components",
+          "body": "Bremsstrahlung results from electron deceleration and produces a continuum up to a maximum photon energy. Characteristic lines arise when inner-shell vacancies are filled, with energies determined by the target element's atomic levels. Raising current increases electron delivery; it does not change those characteristic transition energies."
+        },
+        {
+          "title": "Relate voltage and wavelength",
+          "body": "The short-wavelength cutoff follows λmin = hc/(eV), the Duane–Hunt relation. Increasing tube voltage raises the maximum photon energy and generally changes the spectrum and output. It is incorrect to describe every emitted photon as having the maximum energy, because the spectrum contains a range."
+        },
+        {
+          "title": "Explain filtration and attenuation",
+          "body": "Added filtration preferentially removes lower-energy photons and hardens the beam. Attenuation depends on material composition, thickness and photon energy, with both photoelectric and Compton contributions. A beam's effective attenuation can change with depth as its spectral composition changes."
+        },
+        {
+          "title": "Work a cutoff",
+          "body": "At 50 kV, maximum photon energy is 50 keV. Using hc ≈ 1.240 keV·nm gives λmin ≈ 0.0248 nm. Doubling tube current at the same voltage chiefly raises photon output under otherwise fixed conditions; it does not halve this cutoff wavelength."
+        }
+      ],
+      "question": {
+        "prompt": "A tube voltage of 80 kV sets a maximum photon energy of…",
+        "options": [
+          {
+            "text": "Exactly 80 keV for every photon",
+            "reason": "The spectrum includes lower energies as well."
+          },
+          {
+            "text": "80 keV",
+            "reason": "Maximum photon energy equals the maximum electron energy eV."
+          },
+          {
+            "text": "80 eV",
+            "reason": "An electron accelerated through 80,000 V gains 80,000 eV."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain x-ray tubes, spectra and beam quality: state the mechanism, work an example and name one assumption.",
+        "answer": "Maximum photon energy equals the maximum electron energy eV. More electrons strike the target per second, increasing output in the usual model. At 50 kV, maximum photon energy is 50 keV. Using hc ≈ 1.240 keV·nm gives λmin ≈ 0.0248 nm. Doubling tube current at the same voltage chiefly raises photon output under otherwise fixed conditions; it does not halve this cutoff wavelength."
+      },
+      "related": [
+        "biophysics-signals",
+        "biophysics-ct-imaging"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-ct-imaging",
+      "subject": "biophysics",
+      "title": "Projection radiography, CT reconstruction and windowing",
+      "summary": "Understand why a projection is ambiguous and how CT estimates a cross-section.",
+      "tags": [
+        "Signals and X-ray imaging",
+        "Biophysics",
+        "Physical principles",
+        "CT",
+        "Hounsfield",
+        "reconstruction",
+        "windowing"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 21; combined theory prompts 180–187",
+      "steps": [
+        {
+          "title": "Read a projection",
+          "body": "A radiograph records transmitted X-rays after passage through many structures along each path. Stronger attenuation reduces detector exposure along that line. Different arrangements can produce the same integrated attenuation, so a single projection cannot uniquely reveal depth or separate overlapping structures."
+        },
+        {
+          "title": "Build a tomographic idea",
+          "body": "CT acquires many angular projections and reconstructs spatial attenuation estimates. A simple sum of backprojected rays blurs the image; filtered or iterative methods address the reconstruction problem. Patient motion, scatter, beam hardening and incomplete data can introduce artifacts despite a visually sharp display."
+        },
+        {
+          "title": "Define the CT scale",
+          "body": "Hounsfield units are defined approximately as HU = 1000(μtissue − μwater)/μwater under the measurement conditions. Water is near 0 HU and air near −1000 HU. Values depend on composition, energy and acquisition; a tissue name does not guarantee a single universal HU value."
+        },
+        {
+          "title": "Separate display from measurement",
+          "body": "Window width sets the displayed attenuation range and window level its centre. Narrow windows improve visibility of small differences within that interval but clip values outside it. Adjusting a window changes how existing data appear; it does not acquire missing spatial detail or remove a physical artifact."
+        },
+        {
+          "title": "Work a relative attenuation",
+          "body": "If a reconstructed material has μ = 1.2 μwater, its value is 200 HU. Two differently placed absorbers with the same summed line attenuation may look identical in one projection but differ across other viewing angles. Explain the value of rotation using that ambiguity before memorising scanner component names."
+        }
+      ],
+      "question": {
+        "prompt": "A material has attenuation coefficient 1.5 times water. Its CT value is…",
+        "options": [
+          {
+            "text": "1500 HU",
+            "reason": "The HU definition subtracts the water reference before multiplying."
+          },
+          {
+            "text": "−500 HU",
+            "reason": "Attenuation above water produces a positive value."
+          },
+          {
+            "text": "500 HU",
+            "reason": "1000(1.5 − 1) = 500 HU."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain projection radiography, ct reconstruction and windowing: state the mechanism, work an example and name one assumption.",
+        "answer": "1000(1.5 − 1) = 500 HU. Windowing remaps the existing reconstructed values to a visible range. If a reconstructed material has μ = 1.2 μwater, its value is 200 HU. Two differently placed absorbers with the same summed line attenuation may look identical in one projection but differ across other viewing angles. Explain the value of rotation using that ambiguity before memorising scanner component names."
+      },
+      "related": [
+        "biophysics-xray-production",
+        "biophysics-fluid-flow"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-fluid-flow",
+      "subject": "biophysics",
+      "title": "Continuity, viscosity and resistance to flow",
+      "summary": "Predict flow changes while stating when ideal fluid and tube models apply.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "Poiseuille",
+        "Bernoulli",
+        "Reynolds",
+        "Stokes"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 22; combined theory prompts 188–196",
+      "steps": [
+        {
+          "title": "Conserve volume",
+          "body": "For steady incompressible flow, Q = Av and the same volume flow passes successive cross-sections without leaks. A smaller total area therefore means greater mean speed at fixed Q. In a branching network, use the sum of parallel cross-sectional areas rather than comparing only one small vessel with one large vessel."
+        },
+        {
+          "title": "Distinguish ideal and viscous descriptions",
+          "body": "Bernoulli's equation relates pressure, speed and height along an ideal steady streamline without dissipative losses. Real viscous flow loses mechanical energy. Newtonian shear stress obeys τ = η dv/dy. Blood's apparent viscosity depends on flow conditions and cellular content, so it is not a universal constant."
+        },
+        {
+          "title": "Use Poiseuille's law",
+          "body": "For steady fully developed laminar flow of a Newtonian fluid in a rigid circular tube, Q = πr⁴Δp/(8ηL). Resistance is 8ηL/(πr⁴). Radius has a strong fourth-power effect. Pulsatile blood vessels with flexible walls and non-Newtonian behaviour depart from this exact model."
+        },
+        {
+          "title": "Compare regimes and drag",
+          "body": "Reynolds number Re = ρvD/η compares inertial and viscous tendencies; geometry and disturbances affect transition. Stokes drag F = 6πηrv applies to a small sphere at low Reynolds number. Plasma skimming and cell distribution at branches can change local blood composition as well as flow."
+        },
+        {
+          "title": "Work a radius change",
+          "body": "At fixed pressure difference, length and viscosity, doubling radius predicts 16 times the flow. At fixed flow, the same change reduces the required pressure difference to one sixteenth. These are different experimental constraints; always state what is held constant."
+        }
+      ],
+      "question": {
+        "prompt": "Tube radius halves under Poiseuille assumptions with fixed pressure difference. Flow becomes…",
+        "options": [
+          {
+            "text": "1/16 as large",
+            "reason": "(1/2)⁴ = 1/16 at fixed driving pressure."
+          },
+          {
+            "text": "1/2 as large",
+            "reason": "The radius enters as the fourth power."
+          },
+          {
+            "text": "16 times as large",
+            "reason": "Narrowing increases resistance and reduces flow."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain continuity, viscosity and resistance to flow: state the mechanism, work an example and name one assumption.",
+        "answer": "(1/2)⁴ = 1/16 at fixed driving pressure. Mean network speed reflects total area, not one capillary's diameter. At fixed pressure difference, length and viscosity, doubling radius predicts 16 times the flow. At fixed flow, the same change reduces the required pressure difference to one sixteenth. These are different experimental constraints; always state what is held constant."
+      },
+      "related": [
+        "biophysics-ct-imaging",
+        "biophysics-diffusion-osmosis"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-diffusion-osmosis",
+      "subject": "biophysics",
+      "title": "Diffusion, osmosis and heat transport",
+      "summary": "Connect gradients, random motion and the time needed to cross a distance.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "Fick",
+        "osmosis",
+        "Stokes-Einstein",
+        "Fourier"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 23; combined theory prompts 197–206",
+      "steps": [
+        {
+          "title": "Start from random motion",
+          "body": "Brownian motion is irregular motion driven by molecular impacts. Net diffusion emerges statistically from concentration differences, not from molecules intentionally seeking dilute regions. Fick's first law J = −D dc/dx expresses flux down a gradient, with the minus sign indicating direction."
+        },
+        {
+          "title": "Follow time dependence",
+          "body": "Fick's second law describes how concentration changes as diffusion redistributes material. In one dimension, mean squared displacement is 2Dt for free diffusion. Typical diffusion time therefore grows with distance squared. Diffusion is effective over short cellular distances but rapidly becomes slow across much larger distances."
+        },
+        {
+          "title": "Relate size and transport",
+          "body": "For a sphere in a suitable dilute fluid, Stokes–Einstein gives D = kBT/(6πηr). Higher temperature tends to increase D, while greater viscosity or particle radius reduces it in this model. Binding, crowding and membranes can make transport in tissue differ from free diffusion."
+        },
+        {
+          "title": "Explain osmotic and thermal driving",
+          "body": "Osmosis is solvent movement associated with a chemical-potential difference across a selectively permeable boundary. For ideal dilute solutions, osmotic pressure is approximately cRT for solute particle concentration c. Fourier's heat law has a similar gradient form, with heat flux proportional to negative temperature gradient; thermodiffusion couples temperature and material transport."
+        },
+        {
+          "title": "Work a distance comparison",
+          "body": "If diffusion across 10 μm takes a characteristic time t, crossing 100 μm under the same conditions takes roughly 100t. In alveolar exchange, area, barrier thickness and partial-pressure gradients influence transfer. Convection brings gases to the exchange surface; diffusion carries them across the thin barrier."
+        }
+      ],
+      "question": {
+        "prompt": "A diffusion distance triples while D stays fixed. Characteristic time changes by…",
+        "options": [
+          {
+            "text": "A factor of 1/3",
+            "reason": "Longer diffusion distance increases, not decreases, the time."
+          },
+          {
+            "text": "A factor of 9",
+            "reason": "t scales as L²/D, so 3² gives a factor of nine."
+          },
+          {
+            "text": "A factor of 3",
+            "reason": "Diffusion time scales with squared distance."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain diffusion, osmosis and heat transport: state the mechanism, work an example and name one assumption.",
+        "answer": "t scales as L²/D, so 3² gives a factor of nine. Unequal numbers available to cross create a net flux while individual motion remains random. If diffusion across 10 μm takes a characteristic time t, crossing 100 μm under the same conditions takes roughly 100t. In alveolar exchange, area, barrier thickness and partial-pressure gradients influence transfer. Convection brings gases to the exchange surface; diffusion carries them across the thin barrier."
+      },
+      "related": [
+        "biophysics-fluid-flow",
+        "biophysics-energy-first-law"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-energy-first-law",
+      "subject": "biophysics",
+      "title": "Thermodynamic systems and the first law",
+      "summary": "Account for energy transfers without confusing heat, work and stored energy.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "heat",
+        "work",
+        "isothermal",
+        "adiabatic"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 24; combined theory prompts 207–210, 213, 216",
+      "steps": [
+        {
+          "title": "Choose the boundary",
+          "body": "An open system exchanges matter and energy; a closed system exchanges energy but not matter; an isolated system exchanges neither. The boundary determines which flows must be counted. A living organism is typically open, while a sealed but heated container is closed rather than isolated."
+        },
+        {
+          "title": "Distinguish state and transfer",
+          "body": "Internal energy is a state property incorporating microscopic contributions. Heat and work describe energy transfer processes, not substances stored separately inside an object. Temperature is an intensive state variable and is not the total thermal energy. Extensive quantities such as mass and total energy scale with system size."
+        },
+        {
+          "title": "State the sign convention",
+          "body": "Using work W done by the system, the first law for a closed system is ΔU = Q − W. Expansion against external pressure transfers work outward. With the alternative convention of work done on the system, the sign changes. Neither convention is wrong if it is explicitly and consistently used."
+        },
+        {
+          "title": "Compare processes",
+          "body": "Isochoric means constant volume, isobaric constant pressure, isothermal constant temperature and adiabatic no heat transfer. An isothermal process need not be isolated or adiabatic. For an ideal gas, internal energy depends on temperature, so isothermal expansion can require heat input to balance work output."
+        },
+        {
+          "title": "Work an energy balance",
+          "body": "A closed system absorbs 150 J of heat and performs 40 J of work on its surroundings. Its internal energy rises by 110 J. If the same system instead has 40 J of work done on it, the increase is 190 J. A diagram of boundary arrows prevents most sign errors."
+        }
+      ],
+      "question": {
+        "prompt": "A system receives 100 J of heat and does 30 J of work. ΔU is…",
+        "options": [
+          {
+            "text": "+130 J",
+            "reason": "Work done by the system leaves it under this sign convention."
+          },
+          {
+            "text": "−70 J",
+            "reason": "More energy enters as heat than leaves as work."
+          },
+          {
+            "text": "+70 J",
+            "reason": "ΔU = Q − W = 100 − 30 = 70 J."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain thermodynamic systems and the first law: state the mechanism, work an example and name one assumption.",
+        "answer": "ΔU = Q − W = 100 − 30 = 70 J. The boundary permits energy transfer but prevents matter exchange. A closed system absorbs 150 J of heat and performs 40 J of work on its surroundings. Its internal energy rises by 110 J. If the same system instead has 40 J of work done on it, the increase is 190 J. A diagram of boundary arrows prevents most sign errors."
+      },
+      "related": [
+        "biophysics-diffusion-osmosis",
+        "biophysics-entropy-potentials"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-entropy-potentials",
+      "subject": "biophysics",
+      "title": "Entropy, free energy and equilibrium",
+      "summary": "Choose the correct thermodynamic criterion for the constraints of a biological process.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "Gibbs",
+        "Helmholtz",
+        "entropy",
+        "equilibrium"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 25; combined theory prompts 211–212, 214–215, 217–218",
+      "steps": [
+        {
+          "title": "Interpret the second law",
+          "body": "For an isolated system, total entropy cannot decrease in a spontaneous process. A subsystem can become more ordered while exporting heat or matter, so local order does not violate the second law. Biological organisation requires an energy and entropy balance with the surroundings rather than a claim that organisms escape thermodynamics."
+        },
+        {
+          "title": "Connect microscopic and macroscopic views",
+          "body": "Boltzmann entropy S = kB ln Ω links multiplicity with entropy for an appropriate statistical description. For a reversible heat transfer, dS = δQrev/T. Irreversible processes generate entropy. The third law concerns entropy as temperature approaches absolute zero under specified conditions; it does not say ordinary biological entropy is zero."
+        },
+        {
+          "title": "Choose a potential",
+          "body": "Helmholtz free energy F = U − TS is useful at fixed temperature and volume. Gibbs free energy G = H − TS, with H = U + pV, is useful at fixed temperature and pressure. Under appropriate closed-system constraints, spontaneous change lowers the relevant potential toward equilibrium."
+        },
+        {
+          "title": "Separate favourability and rate",
+          "body": "A negative reaction ΔG indicates thermodynamic favourability in the specified state, not a fast reaction. Activation barriers determine kinetics. Concentrations affect ΔG through chemical potentials, so a standard free-energy value alone does not specify the direction under every cellular condition. Coupling can make a combined process favourable."
+        },
+        {
+          "title": "Work a balance",
+          "body": "At fixed temperature and pressure, let ΔH = 20 kJ/mol and TΔS = 30 kJ/mol. Then ΔG = −10 kJ/mol, despite positive enthalpy change. If the entropy contribution changes with conditions, the result may differ. State units consistently and do not multiply a Celsius value into TΔS."
+        }
+      ],
+      "question": {
+        "prompt": "At fixed T and p, ΔH = 10 kJ/mol and TΔS = 15 kJ/mol. ΔG is…",
+        "options": [
+          {
+            "text": "−5 kJ/mol",
+            "reason": "ΔG = ΔH − TΔS = −5 kJ/mol."
+          },
+          {
+            "text": "+25 kJ/mol",
+            "reason": "Gibbs change subtracts the entropy contribution."
+          },
+          {
+            "text": "+5 kJ/mol",
+            "reason": "10 minus 15 is negative."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain entropy, free energy and equilibrium: state the mechanism, work an example and name one assumption.",
+        "answer": "ΔG = ΔH − TΔS = −5 kJ/mol. Kinetics and thermodynamic driving force answer different questions. At fixed temperature and pressure, let ΔH = 20 kJ/mol and TΔS = 30 kJ/mol. Then ΔG = −10 kJ/mol, despite positive enthalpy change. If the entropy contribution changes with conditions, the result may differ. State units consistently and do not multiply a Celsius value into TΔS."
+      },
+      "related": [
+        "biophysics-energy-first-law",
+        "biophysics-resting-potential"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-resting-potential",
+      "subject": "biophysics",
+      "title": "Membrane potentials, permeability and the RC model",
+      "summary": "Connect ion gradients to voltage and explain passive charging and spread.",
+      "tags": [
+        "Membranes and ultrasound",
+        "Biophysics",
+        "Physical principles",
+        "Nernst",
+        "Goldman",
+        "Donnan",
+        "RC"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 26; combined theory prompts 219–226",
+      "steps": [
+        {
+          "title": "Build an electrochemical balance",
+          "body": "An ion moves under both concentration and electrical influences. For one permeant ion at equilibrium, the Nernst equation gives E = RT/(zF) ln(coutside/cinside) using inside potential relative to outside. The sign depends on valence as well as the concentration ratio. Equilibrium for one ion need not mean zero current for every ion."
+        },
+        {
+          "title": "Use selective permeability",
+          "body": "The resting membrane potential reflects gradients and relative permeabilities. The Goldman–Hodgkin–Katz voltage equation extends the comparison to several permeant monovalent ions under its assumptions, with anion concentrations appearing in reversed positions. Pumps maintain gradients over time; the voltage is not simply a direct count of pump cycles."
+        },
+        {
+          "title": "Model electrical storage",
+          "body": "A membrane separates charge and behaves capacitively, while conducting pathways provide resistance. An elementary RC model has time constant τ = RC. After one time constant, a charging response has completed about 63% of its final change. This does not mean ions have all reached their equilibrium distributions."
+        },
+        {
+          "title": "Explain spatial spread and Donnan effects",
+          "body": "Passive voltage changes decay along a leaky cable; length constant describes the distance over which amplitude falls to 1/e in a simple model. Regenerative action potentials are different. Impermeant charged solutes can create Donnan ion distributions and osmotic effects, constrained in cells by pumps and volume regulation."
+        },
+        {
+          "title": "Work a Nernst estimate",
+          "body": "For K⁺ at about 37°C with outside/inside concentration ratio 0.1, E is approximately −61.5 mV. Increasing outside K⁺ makes that equilibrium potential less negative. Predict the direction before calculating, and distinguish this single-ion value from a full resting-potential estimate."
+        }
+      ],
+      "question": {
+        "prompt": "At 37°C, a monovalent cation has outside/inside ratio 0.1. Its Nernst potential is approximately…",
+        "options": [
+          {
+            "text": "0 mV",
+            "reason": "The concentrations are unequal, so the equilibrium voltage is not zero."
+          },
+          {
+            "text": "−61.5 mV",
+            "reason": "E ≈ 61.5 log₁₀(0.1) mV = −61.5 mV."
+          },
+          {
+            "text": "+61.5 mV",
+            "reason": "The logarithm of 0.1 is negative for a positive ion."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain membrane potentials, permeability and the rc model: state the mechanism, work an example and name one assumption.",
+        "answer": "E ≈ 61.5 log₁₀(0.1) mV = −61.5 mV. 1 − e⁻¹ ≈ 0.632 describes the completed charging fraction. For K⁺ at about 37°C with outside/inside concentration ratio 0.1, E is approximately −61.5 mV. Increasing outside K⁺ makes that equilibrium potential less negative. Predict the direction before calculating, and distinguish this single-ion value from a full resting-potential estimate."
+      },
+      "related": [
+        "biophysics-entropy-potentials",
+        "biophysics-action-potentials"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-action-potentials",
+      "subject": "biophysics",
+      "title": "Action potentials and impulse propagation",
+      "summary": "Separate regenerative signalling from passive current spread.",
+      "tags": [
+        "Membranes and ultrasound",
+        "Biophysics",
+        "Physical principles",
+        "refractory",
+        "myelin",
+        "propagation",
+        "channels"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 27; combined theory prompts 227–231",
+      "steps": [
+        {
+          "title": "Start with positive feedback",
+          "body": "In a typical axon, sufficient depolarisation activates voltage-gated inward current, producing further depolarisation. Threshold marks a balance where regenerative activation can outpace opposing processes. The detailed channel types and waveform vary among excitable cells, so a neuronal sodium spike is not every action potential."
+        },
+        {
+          "title": "Follow recovery",
+          "body": "Sodium-channel inactivation and delayed outward potassium current help repolarise a typical axon. Refractoriness reflects channel state and conductances: during an absolute refractory interval, another normal spike cannot be triggered; during a relative interval, excitability is reduced. It is not simply that all ions have been used up."
+        },
+        {
+          "title": "Explain propagation",
+          "body": "Local circuit currents depolarise adjacent membrane, where new regenerative current develops. The passive current spreads with decrement, but a normal propagated action potential is repeatedly renewed rather than exponentially shrinking along the entire axon. Refractory membrane behind the front supports forward progression after initiation."
+        },
+        {
+          "title": "Compare fibre properties",
+          "body": "Increasing diameter reduces internal resistance and can increase conduction speed. Myelin reduces current leakage and effective membrane charging requirements between nodes; regeneration occurs at nodes of Ranvier. Saltatory conduction does not mean ions leap through empty space from one node to the next."
+        },
+        {
+          "title": "Connect to recording",
+          "body": "An intracellular voltage and a surface extracellular potential are different measurements. Surface signals depend on spatial current distributions, orientation and volume conduction. Stronger stimulation often changes recruitment or firing rate rather than increasing the height of each all-or-none spike in one healthy axon."
+        }
+      ],
+      "question": {
+        "prompt": "Why does a normal action potential maintain its size along an axon?",
+        "options": [
+          {
+            "text": "Passive voltage never decays with distance",
+            "reason": "Passive cable signals do decay; regeneration is the crucial distinction."
+          },
+          {
+            "text": "Each electron travels the entire axon instantly",
+            "reason": "Propagation is not instantaneous long-distance travel of one electron."
+          },
+          {
+            "text": "Local membrane currents regenerate the spike",
+            "reason": "Adjacent excitable membrane renews the signal through voltage-dependent currents."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain action potentials and impulse propagation: state the mechanism, work an example and name one assumption.",
+        "answer": "Adjacent excitable membrane renews the signal through voltage-dependent currents. Incomplete recovery and persisting conductances make excitation harder. An intracellular voltage and a surface extracellular potential are different measurements. Surface signals depend on spatial current distributions, orientation and volume conduction. Stronger stimulation often changes recruitment or firing rate rather than increasing the height of each all-or-none spike in one healthy axon."
+      },
+      "related": [
+        "biophysics-resting-potential",
+        "biophysics-ultrasound"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-ultrasound",
+      "subject": "biophysics",
+      "title": "Ultrasound echoes, Doppler shifts and energy deposition",
+      "summary": "Link an acoustic measurement to depth or motion while recognising its assumptions.",
+      "tags": [
+        "Membranes and ultrasound",
+        "Biophysics",
+        "Physical principles",
+        "piezoelectric",
+        "Doppler",
+        "acoustic",
+        "impedance"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 28; combined theory prompts 232–240",
+      "steps": [
+        {
+          "title": "Generate and receive sound",
+          "body": "A piezoelectric transducer converts electrical drive into mechanical vibration and returning pressure variations into an electrical signal. Ultrasound is a mechanical wave above the usual audible frequency range. Its speed depends on the medium; diagnostic calculations often use an approximate soft-tissue speed rather than a universal value."
+        },
+        {
+          "title": "Explain interfaces",
+          "body": "Acoustic impedance Z = ρc influences reflection. At normal incidence between ideal media, intensity reflection coefficient is ((Z₂ − Z₁)/(Z₂ + Z₁))². A large air–tissue mismatch impedes transmission, which is why coupling matters. Attenuation and scattering also reduce returning signals with depth."
+        },
+        {
+          "title": "Use pulse timing and display modes",
+          "body": "For a pulse returning after time t, reflector depth is d = ct/2 because travel is outward and back. A-mode displays amplitude along a line; B-mode maps brightness; M-mode tracks a selected line over time. Finite pulse length and beam width constrain resolution."
+        },
+        {
+          "title": "Interpret Doppler and therapy",
+          "body": "For backscattered sound at small flow speed, Δf ≈ 2f₀v cos θ/c. Angle uncertainty therefore affects inferred velocity. Therapeutic ultrasound uses acoustic energy deposition and mechanical effects; absence of ionising radiation does not imply absence of biological effects."
+        },
+        {
+          "title": "Work an echo",
+          "body": "With c = 1540 m/s and return time 100 μs, depth is 0.077 m, or 7.7 cm. Omitting the factor of two doubles the estimate. Higher frequency can improve detail but often increases attenuation, creating a resolution–penetration tradeoff."
+        }
+      ],
+      "question": {
+        "prompt": "At c = 1540 m/s, a 40 μs echo return corresponds to depth…",
+        "options": [
+          {
+            "text": "3.08 cm",
+            "reason": "1540 × 40 × 10⁻⁶ / 2 = 0.0308 m = 3.08 cm."
+          },
+          {
+            "text": "6.16 cm",
+            "reason": "The total path is twice the reflector depth."
+          },
+          {
+            "text": "0.0308 cm",
+            "reason": "Convert metres to centimetres after applying the round-trip factor."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain ultrasound echoes, doppler shifts and energy deposition: state the mechanism, work an example and name one assumption.",
+        "answer": "1540 × 40 × 10⁻⁶ / 2 = 0.0308 m = 3.08 cm. Only the velocity component along the beam contributes in this model. With c = 1540 m/s and return time 100 μs, depth is 0.077 m, or 7.7 cm. Omitting the factor of two doubles the estimate. Higher frequency can improve detail but often increases attenuation, creating a resolution–penetration tradeoff."
+      },
+      "related": [
+        "biophysics-action-potentials",
+        "biophysics-water-biopolymers"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-water-biopolymers",
+      "subject": "biophysics",
+      "title": "Water, protein folding and polymer elasticity",
+      "summary": "Explain how solvent and molecular flexibility shape biological material behaviour.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "folding",
+        "DNA",
+        "polymer",
+        "water"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 29; combined theory prompts 241–249",
+      "steps": [
+        {
+          "title": "Connect water structure to properties",
+          "body": "Water's polar molecules form a dynamic hydrogen-bond network. Its phase behaviour and unusual density change on freezing reflect molecular arrangement, not permanent rigid bonds between all molecules. High heat capacity helps buffer temperature changes; phase diagrams specify pressure and temperature rather than one universal boiling point."
+        },
+        {
+          "title": "Organise macromolecular structure",
+          "body": "Protein primary structure is sequence; secondary structures organise local backbone patterns; tertiary and quaternary structures describe larger folding and assembly. Hydrogen bonding, electrostatic interactions, dispersion, covalent links and solvent effects contribute. DNA and polysaccharides have different repeating units and structural constraints."
+        },
+        {
+          "title": "Explain folding energetics",
+          "body": "Folding balances intramolecular contacts, solvent effects and conformational entropy. Many sequences have a preferred native ensemble under particular conditions, but misfolding and kinetic trapping can occur. A favourable free-energy difference does not guarantee rapid folding without barriers or assistance."
+        },
+        {
+          "title": "Distinguish elastic mechanisms",
+          "body": "Stretching a flexible polymer initially restricts available conformations, producing an entropic restoring tendency. At greater extension, bond-angle and bond-stretching energies become more important. Persistence length quantifies bending stiffness in a chain model. A polymer is not an indefinitely extensible ideal spring."
+        },
+        {
+          "title": "Interpret a force–extension curve",
+          "body": "A chain can become much harder to extend near its contour length even without adding new crosslinks. Double-stranded DNA combines bending flexibility at larger scales with molecular stiffness at shorter scales. State the length scale, solvent and force regime before assigning one universal elastic constant."
+        }
+      ],
+      "question": {
+        "prompt": "Why can stretching a flexible polymer create a restoring force?",
+        "options": [
+          {
+            "text": "The polymer creates energy without input",
+            "reason": "Work must be supplied to constrain the chain."
+          },
+          {
+            "text": "Stretching reduces accessible conformations",
+            "reason": "Reducing conformational entropy can produce an entropic restoring force."
+          },
+          {
+            "text": "Every covalent bond must immediately break",
+            "reason": "Entropic elasticity occurs without breaking every bond."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain water, protein folding and polymer elasticity: state the mechanism, work an example and name one assumption.",
+        "answer": "Reducing conformational entropy can produce an entropic restoring force. Primary structure identifies the linear sequence of residues. A chain can become much harder to extend near its contour length even without adding new crosslinks. Double-stranded DNA combines bending flexibility at larger scales with molecular stiffness at shorter scales. State the length scale, solvent and force regime before assigning one universal elastic constant."
+      },
+      "related": [
+        "biophysics-ultrasound",
+        "biophysics-sensory-biophysics"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-sensory-biophysics",
+      "subject": "biophysics",
+      "title": "Vision, hearing and sensory coding",
+      "summary": "Connect stimulus energy to receptor responses and perceived intensity.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "hearing",
+        "vision",
+        "phon",
+        "sone"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 30; combined theory prompts 250–265",
+      "steps": [
+        {
+          "title": "Separate transduction from perception",
+          "body": "Receptors convert a stimulus into a graded electrical response; downstream spike rate, timing and population activity can encode information. Adaptation changes response during sustained stimulation. Equal physical changes need not produce equal perceptual changes, and a receptor potential is not itself an all-or-none axonal spike."
+        },
+        {
+          "title": "Compare psychophysical laws",
+          "body": "Weber–Fechner relates sensation approximately to a logarithm of stimulus intensity over suitable ranges. Stevens's power law uses a modality-dependent exponent. These are empirical descriptions with domains of usefulness. Absolute threshold and difference threshold ask different questions, so one number cannot describe the entire sensory system."
+        },
+        {
+          "title": "Trace hearing",
+          "body": "The outer ear guides sound; the middle ear improves energy transfer toward cochlear fluids. Travelling waves along the basilar membrane create place-dependent frequency sensitivity. Hair-cell bundle displacement changes transduction currents; outer hair cells contribute active mechanical amplification. Sound level in decibels is not identical to subjective loudness."
+        },
+        {
+          "title": "Trace vision",
+          "body": "Phototransduction alters photoreceptor membrane currents after photon absorption. Rods support sensitive low-light vision; cones support colour and high-acuity vision under suitable illumination. Colour depends on comparing receptor signals rather than assigning one wavelength to every perceived colour. The optic-disc blind spot lacks photoreceptors."
+        },
+        {
+          "title": "Compare loudness scales",
+          "body": "Phon is a loudness level defined by comparison with a 1 kHz reference tone. Sone expresses relative loudness; the conventional reference is 1 sone at 40 phon. Equal decibel levels at different frequencies need not sound equally loud. Describe frequency and reference conditions when interpreting an audiogram."
+        }
+      ],
+      "question": {
+        "prompt": "What is a receptor potential?",
+        "options": [
+          {
+            "text": "Always an all-or-none axonal spike",
+            "reason": "Receptor potentials are generally graded rather than identical axonal spikes."
+          },
+          {
+            "text": "The external stimulus intensity in watts",
+            "reason": "It is an electrical response, not the stimulus's power."
+          },
+          {
+            "text": "A graded response associated with stimulus transduction",
+            "reason": "Transduction creates a graded electrical signal that can influence later neural firing."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain vision, hearing and sensory coding: state the mechanism, work an example and name one assumption.",
+        "answer": "Transduction creates a graded electrical signal that can influence later neural firing. Equal physical level is not equivalent to equal perceived loudness. Phon is a loudness level defined by comparison with a 1 kHz reference tone. Sone expresses relative loudness; the conventional reference is 1 sone at 40 phon. Equal decibel levels at different frequencies need not sound equally loud. Describe frequency and reference conditions when interpreting an audiogram."
+      },
+      "related": [
+        "biophysics-water-biopolymers",
+        "biophysics-biomechanics"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-biomechanics",
+      "subject": "biophysics",
+      "title": "Stress, strain and viscoelastic tissues",
+      "summary": "Distinguish material stiffness from geometry and time-dependent response.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "Young",
+        "Laplace",
+        "viscoelastic",
+        "creep"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 31; combined theory prompts 266–272",
+      "steps": [
+        {
+          "title": "Normalise force and deformation",
+          "body": "Stress is force per area, measured in pascals. Strain is relative deformation and is dimensionless. In a linear uniaxial elastic regime, stress = E × strain, where E is Young's modulus. A sample's overall stiffness also depends on its length and cross-sectional area."
+        },
+        {
+          "title": "Compare elastic and viscous elements",
+          "body": "An ideal spring responds elastically; a dashpot represents rate-dependent viscous response. Maxwell and Kelvin–Voigt arrangements combine these elements differently. Biological tissues often show creep, stress relaxation and hysteresis, so one instantaneous modulus cannot capture every loading protocol."
+        },
+        {
+          "title": "Explain time-dependent behaviour",
+          "body": "Under fixed strain, stress relaxation is a decline in required stress over time. Under fixed stress, creep is increasing strain. Hysteresis means loading and unloading follow different paths, with loop area representing dissipated energy. These are experimentally distinguishable behaviours, not interchangeable labels."
+        },
+        {
+          "title": "Apply geometry to walls",
+          "body": "Thin-wall Laplace approximations link transmural pressure, radius and wall stress. For a cylinder, circumferential stress is approximately Pr/h; for a sphere it is Pr/(2h). Shape and thin-wall assumptions matter. Larger radius at fixed pressure and thickness increases the required wall stress."
+        },
+        {
+          "title": "Connect tissue architecture",
+          "body": "Bone and enamel combine mineral and organic structure, giving different stiffness and toughness profiles. Arteries show nonlinear elastic and viscoelastic responses as structural fibres are recruited. For stress 2 MPa and strain 0.01 in a linear test, E = 200 MPa; changing sample geometry alone does not redefine that material modulus."
+        }
+      ],
+      "question": {
+        "prompt": "At constant strain, measured stress falls with time. This is…",
+        "options": [
+          {
+            "text": "Stress relaxation",
+            "reason": "Stress relaxation is a time-dependent decrease in stress at fixed deformation."
+          },
+          {
+            "text": "Creep under constant stress",
+            "reason": "Creep uses a fixed stress and observes changing strain."
+          },
+          {
+            "text": "A definition of perfectly elastic behaviour",
+            "reason": "A perfectly elastic spring would maintain stress at fixed strain."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain stress, strain and viscoelastic tissues: state the mechanism, work an example and name one assumption.",
+        "answer": "Stress relaxation is a time-dependent decrease in stress at fixed deformation. The thin-cylinder expression σ ≈ Pr/h predicts a twofold increase. Bone and enamel combine mineral and organic structure, giving different stiffness and toughness profiles. Arteries show nonlinear elastic and viscoelastic responses as structural fibres are recruited. For stress 2 MPa and strain 0.01 in a linear test, E = 200 MPa; changing sample geometry alone does not redefine that material modulus."
+      },
+      "related": [
+        "biophysics-sensory-biophysics",
+        "biophysics-molecular-motors"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-molecular-motors",
+      "subject": "biophysics",
+      "title": "Muscle mechanics and molecular motors",
+      "summary": "Relate ATP-driven cycles to force, movement and external work.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "myosin",
+        "kinesin",
+        "dynein",
+        "crossbridge"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 32; combined theory prompts 273–277, 279–280",
+      "steps": [
+        {
+          "title": "Identify motor functions",
+          "body": "Myosin, kinesin and dynein convert chemical free energy into coordinated mechanical steps. Processivity describes how many steps a motor can take before detaching, not simply its maximum speed. Load, ATP availability and track properties influence motion. Thermal fluctuations coexist with directed molecular transport."
+        },
+        {
+          "title": "Explain sliding filaments",
+          "body": "Muscle shortening arises from relative sliding of actin and myosin, not wholesale shortening of the filaments. Cross-bridge attachment, force generation and detachment form a cycle coupled to ATP chemistry. Calcium regulation makes suitable binding interactions available; ATP is also needed for detachment."
+        },
+        {
+          "title": "Compare contraction conditions",
+          "body": "Isometric means fixed overall muscle length; isotonic describes an idealised constant-load condition. External mechanical work is force times displacement along the force direction, so a strictly isometric contraction performs no external shortening work despite consuming energy. Internal processes and heat production continue."
+        },
+        {
+          "title": "Read force and timing",
+          "body": "Repeated activation can sum twitches and, in suitable muscle, produce tetanus. Force–velocity behaviour links shortening speed to load; maximum shortening speed is not the point of maximum power because power also requires force. Muscle length affects overlap and force-generating capacity."
+        },
+        {
+          "title": "Work and interpret",
+          "body": "A constant 20 N force moving a load 0.05 m performs 1 J of work. At zero displacement external work is zero even if tension is 20 N. Compare this with energy consumed rather than equating mechanical output with every ATP molecule's free-energy change."
+        }
+      ],
+      "question": {
+        "prompt": "During a strictly isometric contraction, external shortening work is…",
+        "options": [
+          {
+            "text": "Equal to every joule of chemical energy used",
+            "reason": "Chemical energy can become heat or support internal processes."
+          },
+          {
+            "text": "Zero, despite ongoing energy consumption",
+            "reason": "External work FΔx vanishes when overall shortening is zero."
+          },
+          {
+            "text": "Maximal because force is present",
+            "reason": "Work also requires displacement along the force."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain muscle mechanics and molecular motors: state the mechanism, work an example and name one assumption.",
+        "answer": "External work FΔx vanishes when overall shortening is zero. A processive motor remains attached through multiple successive steps. A constant 20 N force moving a load 0.05 m performs 1 J of work. At zero displacement external work is zero even if tension is 20 N. Compare this with energy consumed rather than equating mechanical output with every ATP molecule's free-energy change."
+      },
+      "related": [
+        "biophysics-biomechanics",
+        "biophysics-structural-methods"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-structural-methods",
+      "subject": "biophysics",
+      "title": "X-ray diffraction and mass spectrometry",
+      "summary": "Compare structural inference from diffraction with separation by mass-to-charge ratio.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "Bragg",
+        "MALDI",
+        "ESI",
+        "mass",
+        "spectrometry"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 33; combined theory prompts 278, 281–284",
+      "steps": [
+        {
+          "title": "Read a diffraction condition",
+          "body": "A periodic lattice scatters X-rays into directions that depend on spatial arrangement. Bragg's relation nλ = 2d sin θ links wavelength, plane spacing and angle. The measured pattern is not a magnified shadow of the molecule. Inferring structure requires reconstruction, including treatment of phase information."
+        },
+        {
+          "title": "Connect crystal to model",
+          "body": "A crystal contains repeated units whose scattering adds coherently in selected directions. Data quality, resolution, disorder and model fitting affect the resulting molecular structure. A fitted atomic model is an interpretation constrained by measurements; flexible regions may be poorly represented or unresolved."
+        },
+        {
+          "title": "Create ions for mass analysis",
+          "body": "Mass spectrometry measures ions according to mass-to-charge ratio, m/z. Electrospray and MALDI can introduce large biomolecules using different ionisation processes. Multiple charge states and fragmentation complicate direct conversion from peak position to molecular mass. Neutral molecules must first become measurable ions."
+        },
+        {
+          "title": "Explain time of flight",
+          "body": "In a simplified time-of-flight analyser with the same accelerating potential, flight time scales as √(m/q) for the same path. A lighter or more highly charged ion arrives earlier under those conditions. The instrument requires calibration and controlled starting conditions, not just a stopwatch."
+        },
+        {
+          "title": "Work a comparison",
+          "body": "Two ions with equal charge and a fourfold mass difference have flight times in a 2:1 ratio in the ideal model. In diffraction, increasing plane spacing at fixed wavelength lowers the first-order Bragg angle. State which experimental variable is fixed before making either prediction."
+        }
+      ],
+      "question": {
+        "prompt": "With equal charge and acceleration voltage, a fourfold ion mass gives what ideal flight-time factor?",
+        "options": [
+          {
+            "text": "4",
+            "reason": "Flight time scales with the square root of mass-to-charge ratio."
+          },
+          {
+            "text": "1/4",
+            "reason": "A heavier ion at equal charge does not arrive faster in this model."
+          },
+          {
+            "text": "2",
+            "reason": "√4 = 2 for the same path and accelerating potential."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain x-ray diffraction and mass spectrometry: state the mechanism, work an example and name one assumption.",
+        "answer": "√4 = 2 for the same path and accelerating potential. Ion separation is generally expressed as m/z, so charge state matters. Two ions with equal charge and a fourfold mass difference have flight times in a 2:1 ratio in the ideal model. In diffraction, increasing plane spacing at fixed wavelength lowers the first-order Bragg angle. State which experimental variable is fixed before making either prediction."
+      },
+      "related": [
+        "biophysics-molecular-motors",
+        "biophysics-magnetic-resonance"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-magnetic-resonance",
+      "subject": "biophysics",
+      "title": "Spin, NMR, ESR and MRI contrast",
+      "summary": "Connect resonance and relaxation to spatially encoded images.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "NMR",
+        "ESR",
+        "MRI",
+        "Larmor",
+        "relaxation"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 34; combined theory prompts 285–293",
+      "steps": [
+        {
+          "title": "Introduce spin and resonance",
+          "body": "Particles with appropriate magnetic moments interact with an applied field. The Stern–Gerlach experiment illustrates quantised angular-momentum projections. NMR probes suitable nuclei, while ESR probes unpaired electron spins. Resonance frequency follows the Larmor relation ω₀ = γB₀, or f₀ = γB₀/(2π)."
+        },
+        {
+          "title": "Excite and detect",
+          "body": "A radiofrequency field near resonance perturbs net magnetisation. The subsequent changing transverse magnetisation induces a measurable signal. Chemical shielding shifts resonance slightly, producing chemical-shift information in spectroscopy. A resonance peak is not generated by physically spinning the entire sample at the radiofrequency."
+        },
+        {
+          "title": "Separate relaxation times",
+          "body": "T1 describes longitudinal recovery toward equilibrium; T2 describes loss of transverse coherence from spin interactions. Field inhomogeneity adds dephasing captured by T2*, which is generally no longer than T2. These processes overlap in time but describe different magnetisation components."
+        },
+        {
+          "title": "Encode location and contrast",
+          "body": "Magnetic-field gradients make resonance behaviour position dependent, supporting spatial encoding. Pulse sequence choices control contrast weighting, including sensitivity to relaxation and proton density. A bright region therefore depends on the sequence; brightness does not identify one tissue universally."
+        },
+        {
+          "title": "Work a recovery example",
+          "body": "For ideal recovery from zero longitudinal magnetisation, Mz/M0 = 1 − e⁻t/T1. At t = T1, recovery is about 63%. Doubling the main field doubles Larmor frequency for the same nucleus. MRI uses no ionising photons for this signal, but magnetic and radiofrequency fields still require controlled use."
+        }
+      ],
+      "question": {
+        "prompt": "After one T1 from zero longitudinal magnetisation, ideal recovery is about…",
+        "options": [
+          {
+            "text": "63%",
+            "reason": "1 − e⁻¹ gives approximately 63% recovery."
+          },
+          {
+            "text": "37%",
+            "reason": "37% is the unrecovered fraction in this model."
+          },
+          {
+            "text": "100%",
+            "reason": "Recovery is exponential and not complete at one time constant."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain spin, nmr, esr and mri contrast: state the mechanism, work an example and name one assumption.",
+        "answer": "1 − e⁻¹ gives approximately 63% recovery. Gradients make resonance phase and frequency vary with position. For ideal recovery from zero longitudinal magnetisation, Mz/M0 = 1 − e⁻t/T1. At t = T1, recovery is about 63%. Doubling the main field doubles Larmor frequency for the same nucleus. MRI uses no ionising photons for this signal, but magnetic and radiofrequency fields still require controlled use."
+      },
+      "related": [
+        "biophysics-structural-methods",
+        "biophysics-circulation-ecg"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-circulation-ecg",
+      "subject": "biophysics",
+      "title": "Circulation, cardiac work and the ECG",
+      "summary": "Connect pressure, flow and electrical recordings without treating them as the same signal.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "ECG",
+        "Windkessel",
+        "cardiac",
+        "cycle"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 35; combined theory prompts 294–303",
+      "steps": [
+        {
+          "title": "Follow pressure and resistance",
+          "body": "Flow is driven by a pressure difference and limited by vascular resistance. Mean pressure falls along the systemic circuit, with major regulation in resistance vessels. A pressure value at one point does not by itself determine flow; the downstream pressure and resistance also matter."
+        },
+        {
+          "title": "Explain the Windkessel effect",
+          "body": "Elastic large arteries store some energy during ejection and release it during diastole, smoothing flow. This compliance effect is distinct from active cardiac pumping. Total cross-sectional area changes through the network, so mean speed need not follow pressure with the same spatial pattern."
+        },
+        {
+          "title": "Read a pressure–volume loop",
+          "body": "Ventricular filling, isovolumetric contraction, ejection and isovolumetric relaxation form an idealised cycle. The enclosed loop area represents external pressure–volume work per beat. Stroke volume is the difference between end-diastolic and end-systolic volumes, not the absolute volume at either corner."
+        },
+        {
+          "title": "Connect electrical sequence",
+          "body": "The ECG records body-surface potential differences generated by cardiac electrical activity. P, QRS and T relate broadly to atrial depolarisation, ventricular depolarisation and ventricular repolarisation. Mechanical contraction follows electrical activation but is not directly drawn as voltage. Lead orientation affects waveform size and polarity."
+        },
+        {
+          "title": "Work two checks",
+          "body": "For a simplified mean ejection pressure of 100 mmHg and stroke volume 70 mL, pressure times volume is roughly 0.93 J, an approximation to external work. For ideal limb-lead voltages with consistent sign convention, lead II = lead I + lead III. Check calibration before converting millimetres into time or millivolts."
+        }
+      ],
+      "question": {
+        "prompt": "What does the enclosed area of a ventricular pressure–volume loop represent?",
+        "options": [
+          {
+            "text": "Heart rate alone",
+            "reason": "Cycle frequency is not the area of one pressure–volume loop."
+          },
+          {
+            "text": "External work per beat",
+            "reason": "Pressure integrated over volume change gives mechanical work."
+          },
+          {
+            "text": "The ECG voltage amplitude",
+            "reason": "The loop axes are pressure and volume, not voltage."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain circulation, cardiac work and the ecg: state the mechanism, work an example and name one assumption.",
+        "answer": "Pressure integrated over volume change gives mechanical work. III = II − I = 1.0 − 0.3 = 0.7 mV. For a simplified mean ejection pressure of 100 mmHg and stroke volume 70 mL, pressure times volume is roughly 0.93 J, an approximation to external work. For ideal limb-lead voltages with consistent sign convention, lead II = lead I + lead III. Check calibration before converting millimetres into time or millivolts."
+      },
+      "related": [
+        "biophysics-magnetic-resonance",
+        "biophysics-respiratory-physics"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-respiratory-physics",
+      "subject": "biophysics",
+      "title": "Breathing mechanics, gas exchange and physical examination",
+      "summary": "Use pressure differences and volume definitions to explain quiet breathing.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "FRC",
+        "compliance",
+        "spirometry",
+        "Henry"
+      ],
+      "source": "biophysics",
+      "section": "Biophysics II, topic 36; combined theory prompts 304–314",
+      "steps": [
+        {
+          "title": "Separate the pressures",
+          "body": "Airflow depends on pressure difference between airway opening and alveoli. Transpulmonary pressure is alveolar minus pleural pressure and helps describe lung distension. It is not the pressure across the chest wall. Pleural pressure is normally subatmospheric during quiet breathing but need not always be negative."
+        },
+        {
+          "title": "Follow a quiet breath",
+          "body": "Inspiratory muscle activity expands the thorax, changes pleural pressure and expands the lung; alveolar pressure falls slightly below atmospheric pressure during inward flow. Quiet expiration is mainly passive recoil. At moments of zero flow, alveolar pressure may equal atmospheric pressure even though the lung remains expanded."
+        },
+        {
+          "title": "Define the volumes",
+          "body": "Tidal volume is the volume of an ordinary breath. Residual volume remains after maximal expiration. Functional residual capacity is the volume after an ordinary passive expiration: expiratory reserve volume plus residual volume. Spirometry alone cannot directly measure residual volume or capacities containing it."
+        },
+        {
+          "title": "Connect mechanics and exchange",
+          "body": "Compliance is ΔV/ΔP over a specified range; resistance opposes flow. Restrictive and obstructive processes affect these differently. Henry's law links dissolved gas concentration to partial pressure through a gas–liquid-specific coefficient. Diffusion, ventilation and perfusion all contribute to exchange, so no single volume establishes adequate gas transfer."
+        },
+        {
+          "title": "Interpret examination physics",
+          "body": "Inspection observes motion; palpation senses mechanical transmission; percussion probes the response of tissue and air-containing structures to an impulse; auscultation listens to sound generated and transmitted through the system. None gives a unique diagnosis from one sound. If ERV = 1.0 L and RV = 1.2 L, FRC = 2.2 L."
+        }
+      ],
+      "question": {
+        "prompt": "Which expression defines functional residual capacity?",
+        "options": [
+          {
+            "text": "Tidal volume alone",
+            "reason": "FRC is the volume remaining after an ordinary expiration, not one breath's size."
+          },
+          {
+            "text": "Inspiratory reserve volume + tidal volume",
+            "reason": "That combination is inspiratory capacity."
+          },
+          {
+            "text": "ERV + RV",
+            "reason": "FRC includes expiratory reserve volume and residual volume."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain breathing mechanics, gas exchange and physical examination: state the mechanism, work an example and name one assumption.",
+        "answer": "FRC includes expiratory reserve volume and residual volume. Relaxation of inspiratory muscles permits elastic recoil to drive outward flow. Inspection observes motion; palpation senses mechanical transmission; percussion probes the response of tissue and air-containing structures to an impulse; auscultation listens to sound generated and transmitted through the system. None gives a unique diagnosis from one sound. If ERV = 1.0 L and RV = 1.2 L, FRC = 2.2 L."
+      },
+      "related": [
+        "biophysics-circulation-ecg",
+        "biophysics-practical-lenses"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 8
+    },
+    {
+      "id": "biophysics-practical-lenses",
+      "subject": "biophysics",
+      "title": "Practical: lens power and microscope calibration",
+      "summary": "Solve image and calibration problems while keeping units and sign conventions visible.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "eyepiece",
+        "calibration",
+        "lens",
+        "micrometer"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 1–13",
+      "steps": [
+        {
+          "title": "Set up the measurement",
+          "body": "Record focal length in metres before using P = 1/f. For image distance, state the thin-lens sign convention and place object, lens and focal points on a sketch. The 17 mm focal length of a simplified optical system corresponds to about 58.8 D, not 0.0588 D."
+        },
+        {
+          "title": "Calibrate the eyepiece",
+          "body": "An eyepiece scale has arbitrary divisions until compared with a stage micrometer. If 40 eyepiece divisions span 100 μm, each division represents 2.5 μm for that objective and configuration. Changing the objective requires a new calibration; changing magnification is not a licence to reuse the old conversion."
+        },
+        {
+          "title": "Work an unknown length",
+          "body": "A structure spanning 12 calibrated divisions is 30 μm in this example. Repeat measurements across suitable boundaries and report meaningful precision. A thick or oblique section can change apparent size independently of the optical calibration."
+        },
+        {
+          "title": "Predict before calculating",
+          "body": "For a converging lens, an object beyond twice the focal length produces a reduced real image. Between one and two focal lengths it produces an enlarged real image. Inside the focal length it produces a virtual enlarged image; exactly at the focus is the parallel-ray limiting case."
+        }
+      ],
+      "question": {
+        "prompt": "40 eyepiece divisions equal 100 μm. How long is a 20-division object?",
+        "options": [
+          {
+            "text": "50 μm",
+            "reason": "20 × 2.5 μm = 50 μm."
+          },
+          {
+            "text": "200 μm",
+            "reason": "Each division is 100/40 = 2.5 μm, not 10 μm."
+          },
+          {
+            "text": "8 μm",
+            "reason": "Divide the calibration length by its division count before scaling."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain lens power and microscope calibration: state the mechanism, work an example and name one assumption.",
+        "answer": "20 × 2.5 μm = 50 μm. Calibration belongs to the optical configuration used for measurement. For a converging lens, an object beyond twice the focal length produces a reduced real image. Between one and two focal lengths it produces an enlarged real image. Inside the focal length it produces a virtual enlarged image; exactly at the focus is the parallel-ray limiting case."
+      },
+      "related": [
+        "biophysics-respiratory-physics",
+        "biophysics-practical-refractometry"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-refractometry",
+      "subject": "biophysics",
+      "title": "Practical: refractive index and concentration",
+      "summary": "Read a refractometer result as a calibrated, condition-dependent measurement.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "Abbe",
+        "refractometer",
+        "concentration"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 14–21",
+      "steps": [
+        {
+          "title": "Identify the principle",
+          "body": "An Abbe refractometer relates a boundary angle to sample refractive index using prisms of known optical properties. The light–dark boundary is a measurement feature, not a molecular image. Dispersion compensation helps compare wavelengths when using suitable illumination."
+        },
+        {
+          "title": "Control the conditions",
+          "body": "Refractive index depends on wavelength, temperature and composition. A concentration estimate therefore requires a calibration for the relevant mixture under matching conditions. A water reference is not a universal constant equal to exactly one; that value is approximately for air relative to vacuum."
+        },
+        {
+          "title": "Use a calibration",
+          "body": "Suppose a validated local calibration is n = 1.333 + 0.0015c with c in the calibration's stated concentration units. A reading of 1.348 gives c = (1.348 − 1.333)/0.0015 = 10 units. The numerical relation cannot be transferred to an unrelated solute without evidence."
+        },
+        {
+          "title": "Judge the uncertainty",
+          "body": "A temperature drift or poorly defined boundary can shift the reading without a true concentration change. Record the calibration, temperature and wavelength specification with the result. For a nonlinear calibration curve, interpolate within the measured range rather than extrapolating a straight line indefinitely."
+        }
+      ],
+      "question": {
+        "prompt": "Using n = 1.333 + 0.0015c, a reading of 1.363 gives c…",
+        "options": [
+          {
+            "text": "2 calibration units",
+            "reason": "0.030/0.0015 equals 20, not 2."
+          },
+          {
+            "text": "20 calibration units",
+            "reason": "Subtract the intercept and divide by the calibration slope."
+          },
+          {
+            "text": "0.030 calibration units",
+            "reason": "The index difference must be divided by the slope."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain refractive index and concentration: state the mechanism, work an example and name one assumption.",
+        "answer": "Subtract the intercept and divide by the calibration slope. A valid concentration comparison requires matched or corrected measurement conditions. A temperature drift or poorly defined boundary can shift the reading without a true concentration change. Record the calibration, temperature and wavelength specification with the result. For a nonlinear calibration curve, interpolate within the measured range rather than extrapolating a straight line indefinitely."
+      },
+      "related": [
+        "biophysics-practical-lenses",
+        "biophysics-practical-absorbance"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-absorbance",
+      "subject": "biophysics",
+      "title": "Practical: blanks, dilution and absorbance",
+      "summary": "Convert transmission into absorbance and design a defensible concentration measurement.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "absorbance",
+        "blank",
+        "dilution",
+        "spectrophotometry"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 22–32",
+      "steps": [
+        {
+          "title": "Establish the reference",
+          "body": "Measure a blank containing the appropriate solvent and container contribution. Then compare sample intensity I with blank intensity I₀. Use A = −log₁₀(I/I₀), taking transmission as a fraction rather than a percentage. A monochromator selects a wavelength range; it does not remove every instrumental error."
+        },
+        {
+          "title": "Compare two samples",
+          "body": "Absorbance 1 means 10% transmission and absorbance 3 means 0.1%. The second transmits 100 times less light, although its absorbance is only three times as large. Under Beer–Lambert assumptions, concentration is proportional to absorbance at fixed wavelength and path length."
+        },
+        {
+          "title": "Work a dilution",
+          "body": "A fivefold diluted sample has A = 0.40, and the calibration gives concentration 2 units per absorbance unit. Diluted concentration is 0.80 units; original concentration is 4.0 units. Apply the dilution factor after using the calibration, and keep concentration units consistent."
+        },
+        {
+          "title": "Recognise failed assumptions",
+          "body": "Stray light, turbidity, chemical changes and detector limits can bend a calibration. A reading beyond the validated range should prompt suitable dilution or method review. A blank cannot make a scattering suspension behave like an ideal clear solution."
+        }
+      ],
+      "question": {
+        "prompt": "Absorbance changes from 1 to 3. Transmission changes by…",
+        "options": [
+          {
+            "text": "A factor of 1/3",
+            "reason": "Absorbance is logarithmic, so transmission does not follow its simple ratio."
+          },
+          {
+            "text": "A factor of 100",
+            "reason": "Higher absorbance means lower transmission."
+          },
+          {
+            "text": "A factor of 1/100",
+            "reason": "10⁻³/10⁻¹ = 10⁻², or one hundredth."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain blanks, dilution and absorbance: state the mechanism, work an example and name one assumption.",
+        "answer": "10⁻³/10⁻¹ = 10⁻², or one hundredth. 0.6 × 10 = 6 concentration units. Stray light, turbidity, chemical changes and detector limits can bend a calibration. A reading beyond the validated range should prompt suitable dilution or method review. A blank cannot make a scattering suspension behave like an ideal clear solution."
+      },
+      "related": [
+        "biophysics-practical-refractometry",
+        "biophysics-practical-polarimetry"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-polarimetry",
+      "subject": "biophysics",
+      "title": "Practical: optical rotation and chirality",
+      "summary": "Distinguish optical rotation from absorption and use a polarimetric calibration.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "Biot",
+        "optical",
+        "rotation",
+        "enantiomer"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 33–42",
+      "steps": [
+        {
+          "title": "Prepare a polarised reference",
+          "body": "A polariser produces a defined polarisation state; an analyser compares the emerging orientation. Optical activity rotates the plane of linearly polarised light in suitable chiral media. Linear, circular and elliptical polarisation describe field evolution, not different photon charges."
+        },
+        {
+          "title": "State Biot's relation",
+          "body": "For suitable conditions, rotation α = [α]lc, with specific rotation [α], path length l and concentration c in the convention used by the calibration. Temperature and wavelength must be specified. Opposite enantiomers can rotate equally in opposite directions; a racemic mixture may cancel net rotation."
+        },
+        {
+          "title": "Work a path change",
+          "body": "A sample rotates light by +8° in a 1 dm cell. Under the same conditions, a 2 dm cell gives +16°. If concentration also halves, the rotation returns to +8°. Keep the sign because clockwise and counterclockwise rotations should not be reduced to unsigned brightness values."
+        },
+        {
+          "title": "Interpret a null result",
+          "body": "Zero net rotation does not prove that no chiral molecules are present. Opposite contributions may cancel, concentration may be too low, or the measurement may be unsuitable. A polarimeter alone also does not determine a molecule's complete three-dimensional structure."
+        }
+      ],
+      "question": {
+        "prompt": "Path length doubles while concentration halves. Ideal optical rotation…",
+        "options": [
+          {
+            "text": "Stays the same",
+            "reason": "In α = [α]lc, multiplying l by 2 and c by 1/2 cancels."
+          },
+          {
+            "text": "Doubles",
+            "reason": "Both path length and concentration must be included."
+          },
+          {
+            "text": "Becomes zero necessarily",
+            "reason": "The product lc remains unchanged rather than vanishing."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain optical rotation and chirality: state the mechanism, work an example and name one assumption.",
+        "answer": "In α = [α]lc, multiplying l by 2 and c by 1/2 cancels. A null net signal can reflect cancellation rather than absence of chiral species. Zero net rotation does not prove that no chiral molecules are present. Opposite contributions may cancel, concentration may be too low, or the measurement may be unsuitable. A polarimeter alone also does not determine a molecule's complete three-dimensional structure."
+      },
+      "related": [
+        "biophysics-practical-absorbance",
+        "biophysics-practical-eye"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-eye",
+      "subject": "biophysics",
+      "title": "Practical: eye optics and visual acuity",
+      "summary": "Relate refractive error and angular resolution to the eye's optical system.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "myopia",
+        "hyperopia",
+        "presbyopia",
+        "acuity"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 43–58",
+      "steps": [
+        {
+          "title": "Use a simplified eye",
+          "body": "The eye's combined optical power is often approximated near 60 D, with a major contribution from the cornea. Accommodation changes lens shape and power. This reduced-eye model is useful for reasoning but does not capture every refracting surface or individual variation."
+        },
+        {
+          "title": "Locate the focus",
+          "body": "In myopia, parallel rays focus in front of the retina in the uncorrected relaxed eye; a diverging correction reduces effective convergence. In hyperopia, the relaxed focus would lie behind the retina; a converging correction can help. Presbyopia concerns reduced accommodation rather than being identical to either axial refractive error."
+        },
+        {
+          "title": "Interpret acuity",
+          "body": "Acuity tests assess the smallest resolvable angular detail under defined conditions. If minimum resolvable angle is 2 arcminutes, decimal acuity under the conventional reciprocal relation is 0.5. Viewing distance, contrast and correct use of the chart matter; an acuity value alone does not measure all aspects of vision."
+        },
+        {
+          "title": "Explain the blind spot",
+          "body": "The optic disc lacks photoreceptors where the nerve exits. A target can disappear at the corresponding visual-field position despite intact surrounding vision. This is anatomically different from optical blur caused by defocus, and it is not the same structure as the fovea."
+        }
+      ],
+      "question": {
+        "prompt": "What optical correction is used conceptually for myopia?",
+        "options": [
+          {
+            "text": "A lens that moves the retina physically",
+            "reason": "A spectacle lens alters ray convergence, not retinal position."
+          },
+          {
+            "text": "A diverging lens",
+            "reason": "Reducing convergence helps move the focus back toward the retina."
+          },
+          {
+            "text": "A converging lens that adds more positive power",
+            "reason": "More convergence would move the relaxed focus farther in front of the retina."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain eye optics and visual acuity: state the mechanism, work an example and name one assumption.",
+        "answer": "Reducing convergence helps move the focus back toward the retina. Decimal acuity is 1/2 = 0.5 for this convention. The optic disc lacks photoreceptors where the nerve exits. A target can disappear at the corresponding visual-field position despite intact surrounding vision. This is anatomically different from optical blur caused by defocus, and it is not the same structure as the fovea."
+      },
+      "related": [
+        "biophysics-practical-polarimetry",
+        "biophysics-practical-spectra"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-spectra",
+      "subject": "biophysics",
+      "title": "Practical: scintillation spectra and background",
+      "summary": "Distinguish pulse height, energy calibration and count rate.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "scintillation",
+        "PMT",
+        "background",
+        "spectrum"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 59–66, 127–132",
+      "steps": [
+        {
+          "title": "Trace the chain",
+          "body": "Scintillator light produces photoelectrons, dynodes amplify them and electronics shape a pulse. A spectrum bins pulses by height; calibration relates channel to deposited energy. Increasing photomultiplier gain can shift a peak along the channel axis without changing the radionuclide's emission energy."
+        },
+        {
+          "title": "Account for background",
+          "body": "Subtract expected background counts with an appropriate time scaling. For independent counts, variances add when subtracting. A discriminator can reject low pulses, but raising the threshold may remove true low-energy events as well as noise. Signal-to-noise improvement must be assessed, not assumed."
+        },
+        {
+          "title": "Work a rate",
+          "body": "A sample-plus-background count of 1200 over 60 s gives 20 counts/s. Background 300 over 60 s gives 5 counts/s, so net rate is 15 counts/s. The uncertainty of the difference is based on both counts, approximately √1500/60 ≈ 0.65 counts/s in the simple Poisson model."
+        },
+        {
+          "title": "Separate efficiency from activity",
+          "body": "A source with 1000 decays/s may produce far fewer detected counts because of geometry, branching and detector efficiency. Changing source distance alters count rate without changing physical activity. Dead time and pile-up complicate high-rate measurements and can distort both counts and spectral shapes."
+        }
+      ],
+      "question": {
+        "prompt": "Detector gain increases and a peak moves to a higher channel. The emitted photon energy…",
+        "options": [
+          {
+            "text": "Must have increased in the source",
+            "reason": "Electronic amplification does not change nuclear transition energies."
+          },
+          {
+            "text": "Must now be zero",
+            "reason": "A channel shift does not imply missing energy."
+          },
+          {
+            "text": "Need not have changed",
+            "reason": "Gain changes the channel–energy mapping and requires suitable calibration."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain scintillation spectra and background: state the mechanism, work an example and name one assumption.",
+        "answer": "Gain changes the channel–energy mapping and requires suitable calibration. Net rate is 30 − 8 = 22 counts/s. A source with 1000 decays/s may produce far fewer detected counts because of geometry, branching and detector efficiency. Changing source distance alters count rate without changing physical activity. Dead time and pile-up complicate high-rate measurements and can distort both counts and spectral shapes."
+      },
+      "related": [
+        "biophysics-practical-eye",
+        "biophysics-practical-attenuation"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-attenuation",
+      "subject": "biophysics",
+      "title": "Practical: half-value layers and shielding curves",
+      "summary": "Translate exponential attenuation into thickness while recognising beam assumptions.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "HVL",
+        "TVL",
+        "attenuation",
+        "shielding"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 67–75",
+      "steps": [
+        {
+          "title": "Define attenuation quantities",
+          "body": "For a narrow monoenergetic beam in a uniform material, I/I₀ = e⁻μx. Linear attenuation coefficient μ has inverse-length units. Mass attenuation coefficient μ/ρ separates density, and areal density ρx has mass-per-area units. Absorption and removal from the direct beam are not identical."
+        },
+        {
+          "title": "Use layer definitions",
+          "body": "Half-value layer is ln 2/μ; tenth-value layer is ln 10/μ. Two half-value layers leave one quarter and three leave one eighth. For a broad polyenergetic beam, scatter and beam hardening can prevent a single constant half-value layer from describing every depth."
+        },
+        {
+          "title": "Work thickness",
+          "body": "If the half-value layer is 2 cm in the stated model, reducing direct intensity to 1/16 requires four layers, or 8 cm. This is a mathematical teaching example, not a shielding design specification. Actual shielding depends on the spectrum, geometry and regulatory context."
+        },
+        {
+          "title": "Compare materials fairly",
+          "body": "Lead attenuation varies with photon energy; it has no universal percentage reduction per millimetre. Water and steam at the same thickness have different areal densities. At equal composition and appropriate energy, using mass thickness clarifies why density changes the linear attenuation."
+        }
+      ],
+      "question": {
+        "prompt": "Three half-value layers leave what direct-beam fraction?",
+        "options": [
+          {
+            "text": "1/8",
+            "reason": "Each half-value layer halves the remaining direct beam, so three layers give (1/2)³ = 1/8."
+          },
+          {
+            "text": "1/3",
+            "reason": "Each layer halves the remaining beam."
+          },
+          {
+            "text": "3/2",
+            "reason": "Attenuation cannot increase the direct beam under this model."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain half-value layers and shielding curves: state the mechanism, work an example and name one assumption.",
+        "answer": "(1/2)³ = 1/8. cm⁻¹ multiplied by cm gives a dimensionless exponent. Lead attenuation varies with photon energy; it has no universal percentage reduction per millimetre. Water and steam at the same thickness have different areal densities. At equal composition and appropriate energy, using mass thickness clarifies why density changes the linear attenuation."
+      },
+      "related": [
+        "biophysics-practical-spectra",
+        "biophysics-practical-oscillations"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-oscillations",
+      "subject": "biophysics",
+      "title": "Practical: oscillations, damping and resonance",
+      "summary": "Predict frequency changes and interpret a driven oscillator's response.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "resonance",
+        "damping",
+        "oscillator",
+        "spring"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 76–83",
+      "steps": [
+        {
+          "title": "Start with an ideal oscillator",
+          "body": "For a mass on an ideal spring, f = (1/2π)√(k/m). Displacement, velocity and acceleration have related but different phases. The model requires small motion in a linear spring regime; a biological structure may be nonlinear or have several modes."
+        },
+        {
+          "title": "Add damping and driving",
+          "body": "Damping dissipates mechanical energy and reduces free-oscillation amplitude. Periodic forcing produces a frequency-dependent response, with resonance shaped by damping. Greater damping usually broadens and lowers the resonance peak. Resonance does not mean a device produces energy without external input."
+        },
+        {
+          "title": "Work a change",
+          "body": "Doubling mass at fixed k multiplies frequency by 1/√2 ≈ 0.707. Doubling k at fixed mass multiplies frequency by √2. A cantilever can act as a mechanical sensor because changes in effective stiffness or mass affect its oscillation response."
+        },
+        {
+          "title": "Read a decay curve",
+          "body": "An exponentially decaying amplitude should not be confused with the energy envelope: in a simple harmonic mode, energy scales with amplitude squared. A halved amplitude therefore corresponds to one quarter of the oscillation energy under the same stiffness."
+        }
+      ],
+      "question": {
+        "prompt": "Mass quadruples at unchanged spring stiffness. Frequency…",
+        "options": [
+          {
+            "text": "Falls to one quarter",
+            "reason": "The square root makes the factor one half."
+          },
+          {
+            "text": "Halves",
+            "reason": "f scales as 1/√m, so a fourfold mass halves frequency."
+          },
+          {
+            "text": "Doubles",
+            "reason": "Mass appears in the denominator inside the square root."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain oscillations, damping and resonance: state the mechanism, work an example and name one assumption.",
+        "answer": "f scales as 1/√m, so a fourfold mass halves frequency. The energy ratio is (1/2)² = 1/4. An exponentially decaying amplitude should not be confused with the energy envelope: in a simple harmonic mode, energy scales with amplitude squared. A halved amplitude therefore corresponds to one quarter of the oscillation energy under the same stiffness."
+      },
+      "related": [
+        "biophysics-practical-attenuation",
+        "biophysics-practical-impedance"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-impedance",
+      "subject": "biophysics",
+      "title": "Practical: resistance, capacitance and biological impedance",
+      "summary": "Explain why tissue response depends on signal frequency and electrode arrangement.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "reactance",
+        "capacitance",
+        "RMS",
+        "impedance"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 84–93",
+      "steps": [
+        {
+          "title": "Separate electrical quantities",
+          "body": "Resistance relates voltage and current for an ideal resistor, V = IR. Resistivity also accounts for geometry through R = ρL/A. A capacitor stores separated charge, Q = CV, and has capacitive reactance magnitude Xc = 1/(2πfC). Reactance introduces a phase relationship as well as a magnitude."
+        },
+        {
+          "title": "Model a membrane or skin interface",
+          "body": "An RC equivalent circuit can represent some frequency-dependent behaviour, but real tissue and electrode interfaces are more complex. Higher frequency reduces capacitive reactance. Electrode placement, contact quality and geometry influence a measured impedance; it is not an intrinsic tissue number independent of the method."
+        },
+        {
+          "title": "Work a frequency change",
+          "body": "For C = 1 μF at f = 1000 Hz, Xc ≈ 159 Ω. At 2000 Hz it is about 79.6 Ω. An ideal capacitor blocks steady DC after charging but can carry changing current; this does not mean charge crosses its insulating layer as in a resistor."
+        },
+        {
+          "title": "Distinguish peak and RMS",
+          "body": "For a sinusoidal voltage, Vrms = Vpeak/√2. Resistive power uses Vrms²/R for that waveform. Combining peak voltage with an RMS power formula produces a factor-of-two error. Classroom circuit equations do not establish safe currents or electrode procedures for use on people."
+        }
+      ],
+      "question": {
+        "prompt": "Frequency doubles for an ideal capacitor. Reactance magnitude…",
+        "options": [
+          {
+            "text": "Doubles",
+            "reason": "Frequency is in the denominator of 1/(2πfC)."
+          },
+          {
+            "text": "Stays fixed like ideal resistance",
+            "reason": "Capacitive reactance is frequency dependent."
+          },
+          {
+            "text": "Halves",
+            "reason": "Doubling f halves Xc at fixed capacitance."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain resistance, capacitance and biological impedance: state the mechanism, work an example and name one assumption.",
+        "answer": "Doubling f halves Xc at fixed capacitance. 10/√2 ≈ 7.07 V. For a sinusoidal voltage, Vrms = Vpeak/√2. Resistive power uses Vrms²/R for that waveform. Combining peak voltage with an RMS power formula produces a factor-of-two error. Classroom circuit equations do not establish safe currents or electrode procedures for use on people."
+      },
+      "related": [
+        "biophysics-practical-oscillations",
+        "biophysics-practical-amplifiers"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-amplifiers",
+      "subject": "biophysics",
+      "title": "Practical: gain, decibels and bandwidth",
+      "summary": "Use gain ratios correctly and recognise when amplification loses information.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "gain",
+        "decibel",
+        "bandwidth",
+        "amplifier"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 94–103",
+      "steps": [
+        {
+          "title": "Define the ratio",
+          "body": "Voltage gain is output voltage divided by input voltage. For a voltage ratio, gain in decibels is 20 log₁₀|Vout/Vin|; interpreting that as power gain requires appropriate impedance conditions. Power ratios use 10 log₁₀(Pout/Pin). A decibel value needs its reference and quantity."
+        },
+        {
+          "title": "Read a frequency response",
+          "body": "Amplifier gain can vary with frequency. Bandwidth identifies a useful range under a stated criterion, commonly relative to a midband level. Negative feedback can improve stability and linearity while changing gain and bandwidth. It cannot recover information already clipped at an earlier stage."
+        },
+        {
+          "title": "Work a gain",
+          "body": "A 2 mV input becomes 200 mV, giving voltage gain 100 and 40 dB. A further stage with gain 10 gives total gain 1000, or 60 dB. Linear gains multiply, while their decibel values add when defined consistently."
+        },
+        {
+          "title": "Check clipping and loading",
+          "body": "A signal that exceeds available output range clips, distorting the waveform and adding spectral components. A voltage divider's output also changes when a load draws current. Write down input range, output limit and loading assumptions before treating an amplifier as a perfect multiplier."
+        }
+      ],
+      "question": {
+        "prompt": "A voltage gain of 10 corresponds to…",
+        "options": [
+          {
+            "text": "20 dB",
+            "reason": "20 log₁₀10 = 20 dB."
+          },
+          {
+            "text": "10 dB",
+            "reason": "Voltage gain uses 20 log₁₀ of the ratio."
+          },
+          {
+            "text": "100 dB",
+            "reason": "Decibel gain is logarithmic, not the square of the ratio."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain gain, decibels and bandwidth: state the mechanism, work an example and name one assumption.",
+        "answer": "20 log₁₀10 = 20 dB. The first multiplies by 5 and the second by 4, giving 20. A signal that exceeds available output range clips, distorting the waveform and adding spectral components. A voltage divider's output also changes when a load draws current. Write down input range, output limit and loading assumptions before treating an amplifier as a perfect multiplier."
+      },
+      "related": [
+        "biophysics-practical-impedance",
+        "biophysics-practical-coulter"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-coulter",
+      "subject": "biophysics",
+      "title": "Practical: electrical cell counting",
+      "summary": "Connect an impedance pulse to particle volume and identify coincidence errors.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "Coulter",
+        "cell",
+        "counting",
+        "coincidence"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 104–111",
+      "steps": [
+        {
+          "title": "Explain the aperture",
+          "body": "In a Coulter-type measurement, particles suspended in conducting electrolyte pass through a small aperture. A particle displaces conducting liquid and changes electrical resistance, producing a pulse. Under calibrated conditions, pulse size relates to displaced volume, while pulse count relates to the number of detected passages."
+        },
+        {
+          "title": "Control the suspension",
+          "body": "An appropriate electrolyte and suspension preserve meaningful particle behaviour. Dilution reduces the chance that two particles occupy the sensing region together. Debris, aggregation and particles outside the calibrated range can distort a distribution; the instrument does not identify every cell type from volume alone."
+        },
+        {
+          "title": "Work a dilution correction",
+          "body": "A diluted sample yields 200 counted particles per μL after the instrument's volume calculation. With a 100-fold dilution, the original estimate is 20,000 per μL. This assumes representative mixing, correct sampled volume and negligible unresolved coincidence."
+        },
+        {
+          "title": "Interpret coincidence",
+          "body": "Two cells passing together may generate one larger event, biasing both count and apparent size. Lowering concentration can test whether coincidence contributes. A histogram peak is a population pattern, not proof that every event represents one normal cell."
+        }
+      ],
+      "question": {
+        "prompt": "What most directly influences pulse height in a calibrated Coulter measurement?",
+        "options": [
+          {
+            "text": "The cell's DNA sequence directly",
+            "reason": "The method senses an electrical displacement effect, not sequence."
+          },
+          {
+            "text": "Particle displaced volume",
+            "reason": "Pulse amplitude is related to the volume displacing conducting electrolyte."
+          },
+          {
+            "text": "Only the number of cells in the entire tube",
+            "reason": "Total sample count and individual pulse height are different measurements."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain electrical cell counting: state the mechanism, work an example and name one assumption.",
+        "answer": "Pulse amplitude is related to the volume displacing conducting electrolyte. Reduced concentration lowers coincidence probability under suitable counting conditions. Two cells passing together may generate one larger event, biasing both count and apparent size. Lowering concentration can test whether coincidence contributes. A histogram peak is a population pattern, not proof that every event represents one normal cell."
+      },
+      "related": [
+        "biophysics-practical-amplifiers",
+        "biophysics-practical-diffusion"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-diffusion",
+      "subject": "biophysics",
+      "title": "Practical: diffusion slopes and uncertainty",
+      "summary": "Calculate a diffusion scale and explain why a straight-line plot needs a model.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "diffusion",
+        "displacement",
+        "Brownian"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 112–116",
+      "steps": [
+        {
+          "title": "Choose the observed quantity",
+          "body": "For one-dimensional free diffusion, ⟨x²⟩ = 2Dt, so a mean-squared-displacement versus time slope estimates 2D. A concentration profile requires a different fit and suitable boundary conditions. Individual trajectories fluctuate; one displacement is not the ensemble average."
+        },
+        {
+          "title": "Work a scale",
+          "body": "With D = 2 × 10⁻¹⁰ m²/s and t = 1 s, root-mean-square displacement is √(2Dt) = 2 × 10⁻⁵ m, or 20 μm. At 4 s it is 40 μm. The distance grows with the square root of time, not linearly."
+        },
+        {
+          "title": "Test the interpretation",
+          "body": "Drift adds directed motion and can make a simple diffusion estimate misleading. Temperature, viscosity, particle size, confinement and binding also matter. In an optical concentration experiment, converting signal into concentration introduces calibration uncertainty before the transport model is fitted."
+        },
+        {
+          "title": "Compare transport routes",
+          "body": "Convection carries material with bulk flow; diffusion reflects random motion and concentration redistribution. A membrane may add a permeability barrier rather than merely extending a free-fluid distance. State which region and transport mechanism the measured coefficient describes."
+        }
+      ],
+      "question": {
+        "prompt": "For 1D diffusion, the slope of mean squared displacement versus time is…",
+        "options": [
+          {
+            "text": "D²",
+            "reason": "The standard relation is ⟨x²⟩ = 2Dt."
+          },
+          {
+            "text": "1/D",
+            "reason": "Faster diffusion produces a larger, not inverse, slope."
+          },
+          {
+            "text": "2D",
+            "reason": "Differentiating ⟨x²⟩ = 2Dt gives slope 2D."
+          }
+        ],
+        "answer": 2
+      },
+      "recall": {
+        "prompt": "Explain diffusion slopes and uncertainty: state the mechanism, work an example and name one assumption.",
+        "answer": "Differentiating ⟨x²⟩ = 2Dt gives slope 2D. √9 = 3 gives a threefold distance scale. Convection carries material with bulk flow; diffusion reflects random motion and concentration redistribution. A membrane may add a permeability barrier rather than merely extending a free-fluid distance. State which region and transport mechanism the measured coefficient describes."
+      },
+      "related": [
+        "biophysics-practical-coulter",
+        "biophysics-practical-audiometry"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "summary": "Distinguish physical sound level from a frequency-dependent hearing threshold.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "audiogram",
+        "decibel",
+        "loudness",
+        "masking"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 133–142",
+      "steps": [
+        {
+          "title": "Use a reference",
+          "body": "Intensity level is 10 log₁₀(I/Iref). Sound-pressure level uses 20 log₁₀(prms/pref) under the corresponding acoustic conditions. A 10 dB intensity-level increase means ten times the intensity, not necessarily ten times perceived loudness. A level without its reference is incomplete."
+        },
+        {
+          "title": "Read the axes",
+          "body": "An audiogram plots hearing threshold against frequency using a specified hearing-level reference. It does not directly plot a sound wave or the cochlear displacement. Test conditions and masking can matter when distinguishing responses of the two ears; a curve alone should not be treated as a full diagnosis."
+        },
+        {
+          "title": "Compare perception",
+          "body": "Equal-loudness contours show frequency dependence of perception. Phon compares loudness with a 1 kHz tone; sone expresses relative loudness. In the conventional relation above the reference region, a 10-phon increase corresponds approximately to doubled sones, distinct from the physical intensity ratio."
+        },
+        {
+          "title": "Work a level difference",
+          "body": "An intensity rises from I to 100I, giving a 20 dB increase. If RMS pressure doubles in the same medium, sound-pressure level rises by about 6 dB. These two examples use different underlying ratios, which is why their logarithmic multipliers differ."
+        }
+      ],
+      "question": {
+        "prompt": "Intensity increases by a factor of 100. Level rises by…",
+        "options": [
+          {
+            "text": "20 dB",
+            "reason": "10 log₁₀100 = 20 dB."
+          },
+          {
+            "text": "100 dB",
+            "reason": "Intensity level uses the logarithm of the ratio."
+          },
+          {
+            "text": "40 dB",
+            "reason": "The 20 multiplier applies to a pressure ratio, not this intensity ratio."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain sound levels and audiograms: state the mechanism, work an example and name one assumption.",
+        "answer": "10 log₁₀100 = 20 dB. 20 log₁₀2 ≈ 6.02 dB. An intensity rises from I to 100I, giving a 20 dB increase. If RMS pressure doubles in the same medium, sound-pressure level rises by about 6 dB. These two examples use different underlying ratios, which is why their logarithmic multipliers differ."
+      },
+      "related": [
+        "biophysics-practical-diffusion",
+        "biophysics-practical-biosignals"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
+    },
+    {
+      "id": "biophysics-practical-biosignals",
+      "subject": "biophysics",
+      "title": "Practical: ECG calibration and pulse timing",
+      "summary": "Convert a recorded trace into voltage and time, and distinguish pulse-generator behaviours.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "ECG",
+        "pacemaker",
+        "monostable",
+        "pulse"
+      ],
+      "source": "biophysics",
+      "section": "Combined notes, practical questions 143–157",
+      "steps": [
+        {
+          "title": "Read calibration first",
+          "body": "An ECG trace needs both voltage and paper-speed calibration. At 10 mm/mV, a 12 mm deflection represents 1.2 mV. At 25 mm/s, a 2 mm interval is 0.08 s. These are measurement exercises; voltage or timing alone is insufficient for a clinical interpretation."
+        },
+        {
+          "title": "Compare leads and rejection",
+          "body": "Standard limb leads obey II = I + III in the ideal consistent-sign description. Differential amplifiers measure a voltage difference and aim to reject common-mode interference. Poor contact and motion can still introduce artifacts; a large recorded deflection need not reflect a larger cardiac source."
+        },
+        {
+          "title": "Classify pulse behaviour",
+          "body": "An astable circuit oscillates without a stable resting state, a monostable returns to its stable state after a triggered pulse, and a bistable has two stable states. These concepts help explain timing electronics. A conceptual pulse exercise is not an instruction to construct or program a pacemaker."
+        },
+        {
+          "title": "Work a pulse train",
+          "body": "A period of 1 s gives frequency 1 Hz. A pulse lasting 2 ms every second has duty cycle 0.2%. For an ideal rectangular voltage pulse across a resistor, energy is V²t/R. Shape, load and safety controls matter in real devices, so this ideal expression is used only for the classroom model."
+        }
+      ],
+      "question": {
+        "prompt": "At 25 mm/s, a 5 mm interval corresponds to…",
+        "options": [
+          {
+            "text": "5 s",
+            "reason": "Millimetres are not seconds without applying the calibration."
+          },
+          {
+            "text": "0.20 s",
+            "reason": "5 mm divided by 25 mm/s equals 0.20 s."
+          },
+          {
+            "text": "0.05 s",
+            "reason": "Divide length by speed: 5/25 seconds."
+          }
+        ],
+        "answer": 1
+      },
+      "recall": {
+        "prompt": "Explain ecg calibration and pulse timing: state the mechanism, work an example and name one assumption.",
+        "answer": "5 mm divided by 25 mm/s equals 0.20 s. A monostable temporarily leaves its single stable state after a trigger. A period of 1 s gives frequency 1 Hz. A pulse lasting 2 ms every second has duty cycle 0.2%. For an ideal rectangular voltage pulse across a resistor, energy is V²t/R. Shape, load and safety controls matter in real devices, so this ideal expression is used only for the classroom model."
+      },
+      "related": [
+        "biophysics-practical-audiometry",
+        "biophysics-radiation-optics"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 6
     }
   ]
 }

@@ -177,6 +177,112 @@
         "antigen-presentation",
         "complement"
       ]
+    },
+    {
+      "id": "biophysics-optics",
+      "title": "Optics and light",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-radiation-optics",
+        "biophysics-image-formation",
+        "biophysics-wave-optics",
+        "biophysics-light-duality",
+        "biophysics-atomic-models",
+        "biophysics-molecular-interactions"
+      ]
+    },
+    {
+      "id": "biophysics-matter",
+      "title": "Matter and optical methods",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-gases-statistics",
+        "biophysics-condensed-matter",
+        "biophysics-absorption-scattering",
+        "biophysics-thermal-radiation",
+        "biophysics-luminescence",
+        "biophysics-lasers"
+      ]
+    },
+    {
+      "id": "biophysics-nuclear",
+      "title": "Nuclear physics and imaging",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-nuclear-structure",
+        "biophysics-decay-interactions",
+        "biophysics-radiation-detection",
+        "biophysics-dosimetry",
+        "biophysics-isotope-diagnostics",
+        "biophysics-nuclear-imaging"
+      ]
+    },
+    {
+      "id": "biophysics-signals-imaging",
+      "title": "Signals and X-ray imaging",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-signals",
+        "biophysics-xray-production",
+        "biophysics-ct-imaging"
+      ]
+    },
+    {
+      "id": "biophysics-transport",
+      "title": "Flow, diffusion and thermodynamics",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-fluid-flow",
+        "biophysics-diffusion-osmosis",
+        "biophysics-energy-first-law",
+        "biophysics-entropy-potentials"
+      ]
+    },
+    {
+      "id": "biophysics-membranes",
+      "title": "Membranes and ultrasound",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-resting-potential",
+        "biophysics-action-potentials",
+        "biophysics-ultrasound"
+      ]
+    },
+    {
+      "id": "biophysics-systems",
+      "title": "Biomolecules and body systems",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-water-biopolymers",
+        "biophysics-sensory-biophysics",
+        "biophysics-biomechanics",
+        "biophysics-molecular-motors",
+        "biophysics-structural-methods",
+        "biophysics-magnetic-resonance",
+        "biophysics-circulation-ecg",
+        "biophysics-respiratory-physics"
+      ]
+    },
+    {
+      "id": "biophysics-practicals",
+      "title": "Measurement practicals",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-practical-lenses",
+        "biophysics-practical-refractometry",
+        "biophysics-practical-absorbance",
+        "biophysics-practical-polarimetry",
+        "biophysics-practical-eye",
+        "biophysics-practical-spectra",
+        "biophysics-practical-attenuation",
+        "biophysics-practical-oscillations",
+        "biophysics-practical-impedance",
+        "biophysics-practical-amplifiers",
+        "biophysics-practical-coulter",
+        "biophysics-practical-diffusion",
+        "biophysics-practical-audiometry",
+        "biophysics-practical-biosignals"
+      ]
     }
   ]
 }

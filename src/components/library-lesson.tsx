@@ -14,6 +14,7 @@ import { SavedRecall } from "./saved-recall";
 import { HistologyVisualLesson } from "./histology-visual-lesson";
 import { CorrectionLink } from "./correction-link";
 import Link from "next/link";
+import { BiophysicsLessonSequence } from "./biophysics-course";
 import { subjectInterests } from "@/content/subjects";
 import sourceData from "@/content/library-sources.json";
 import { publicCatalog } from "@/lib/catalog";
@@ -85,6 +86,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           </a>
         </div>
       </header>
+      {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
       <div className="concept-layout">
         <div>
           <section

@@ -9,8 +9,9 @@ for(const q of questions){assert(lessons.some(l=>l.id===q.topic&&l.subject===q.s
 assert.deepEqual(videos.map(v=>v.id).sort(),[...release.videoIds].sort(),'Videos differ from explicit media release');
 assert.deepEqual(audios.map(a=>a.lessonId).sort(),[...release.audioLessonIds].sort(),'Audio differs from explicit media release');
 assert.deepEqual(recaps.map(r=>r.lessonId).sort(),audios.map(a=>a.lessonId).sort(),'Scripts must match released recap set');
-const subjects=new Set(lessons.map(l=>l.subject));
-for(const subject of subjects){assert(videos.some(v=>v.subject===subject),'Subject lacks a released narrated recap');}
+// New text/model subjects do not imply a recording release. Preserve explicit media coverage.
+assert.deepEqual([...new Set(videos.map(v=>v.subject))].sort(), [...release.narratedSubjects].sort(), 'Narrated subject scope differs from release');
+for(const subject of release.narratedSubjects){assert(lessons.some(l=>l.subject===subject),'Narrated subject lacks lessons');}
 let total=0;
 for(const v of videos){
  const a=audios.find(a=>v.lessonIds.includes(a.lessonId));assert(a&&a.durationSeconds===v.durationSeconds);assert.deepEqual(a.transcript.map(l=>l.speaker+': '+l.text),v.transcript.map(l=>l.text));

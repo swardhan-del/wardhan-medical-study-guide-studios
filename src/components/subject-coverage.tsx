@@ -23,8 +23,8 @@ export function SubjectCoverage({ subject }: { subject: string }) {
       })}</ul>
     </details>)}
     {subject === "physiology" && <p><Link href="/learn/renal">The separate eight-lesson renal course</Link> develops renal topics further. It overlaps this collection and should not be counted as eight additional syllabus areas.</p>}
-    <h3>Still needs fuller lessons</h3>
-    <p>Selected gaps identified in the source review; this is not an exhaustive list or a release schedule.</p>
-    <ul>{path.gaps.map(gap => <li key={gap}>{gap} — Not yet covered in depth</li>)}</ul>
+    <h3>{subject === "biophysics" ? "What to study alongside this course" : "Still needs fuller lessons"}</h3>
+    <p>{subject === "biophysics" ? "The native lessons cover the supplied topic structure. These additional checks and experiences remain necessary." : "Selected gaps identified in the source review; this is not an exhaustive list or a release schedule."}</p>
+    <ul>{path.gaps.map(gap => <li key={gap}>{gap}{subject !== "biophysics" && " — Not yet covered in depth"}</li>)}</ul>
   </section>;
 }

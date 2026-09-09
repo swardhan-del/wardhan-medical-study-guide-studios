@@ -2,6 +2,11 @@ export type StudyPath = { start: string; preparation: string; gaps: string[] };
 
 // Editorial study map, not an official syllabus or an exam-readiness score.
 export const studyPaths: Record<string, StudyPath> = {
+  biophysics: {
+    start: "biophysics-radiation-optics",
+    preparation: "Review SI units, powers of ten, logarithms and rearranging equations. Follow the theory sequence, then use the practical lessons to apply each model.",
+    gaps: ["Current university syllabus alignment beyond the historical notes", "Supervised instrument handling and interpretation of original experimental images", "Independent specialist review and a larger assessment bank"],
+  },
   anatomy: {
     start: "thorax-nerve-relations",
     preparation: "Review anatomical position, directional terms and body planes. Use the thorax directory for regional orientation.",
