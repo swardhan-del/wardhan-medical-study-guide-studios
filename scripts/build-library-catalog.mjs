@@ -156,6 +156,8 @@ const searchIndex = Object.fromEntries(records.map(record => {
   const anatomy = anatomyLearningPages.find(l => record.id === `anatomy-${l.slug}`);
   const parts = [
     ...(lesson?.steps.flatMap(s => [s.title, s.body]) ?? []),
+    ...(lesson?.objectives ?? []),
+    ...(lesson?.workedExample ? [lesson.workedExample.title, lesson.workedExample.prompt, ...lesson.workedExample.solution] : []),
     ...(renal?.sections.flatMap(s => [s.title, s.text]) ?? []),
     ...(renal?.objectives ?? []),
     // These are the same public lesson objects rendered by LearningExplorer.

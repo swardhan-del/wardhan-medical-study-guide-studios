@@ -4,15 +4,15 @@ All 12 public subject entries checked. Counts describe released resources, not s
 
 | Subject | Lesson records | Other resources | Availability |
 |---|---:|---:|---|
-| Macroscopic Anatomy & Embryology | 5 | 5 | Available |
-| Microscopic Anatomy, Histology & Embryology | 16 | 1 | Available |
+| Macroscopic Anatomy & Embryology | 6 | 5 | Available |
+| Microscopic Anatomy, Histology & Embryology | 18 | 1 | Available |
 | Microscopic Anatomy & Embryology I | 16 | 1 | Shared subset; not additional lessons |
 | Microscopic Anatomy & Embryology II | 1 | 0 | Shared subset; not additional lessons |
-| Molecular & Cell Biology | 7 | 0 | Available |
-| Biochemistry | 6 | 0 | Available |
-| Medical Physiology | 26 | 5 | Available |
-| Medical Genetics | 3 | 0 | Available |
-| Immunology | 3 | 0 | Shared subset; not additional lessons |
+| Molecular & Cell Biology | 9 | 0 | Available |
+| Biochemistry | 8 | 0 | Available |
+| Medical Physiology | 29 | 5 | Available |
+| Medical Genetics | 4 | 0 | Available |
+| Immunology | 4 | 0 | Shared subset; not additional lessons |
 | Microbiology & Antimicrobials | 0 | 0 | No public lessons released |
 | Biostatistics | 0 | 0 | No public lessons released |
 | Biophysics | 50 | 1 | Available |
@@ -36,4 +36,8 @@ All 12 public subject entries checked. Counts describe released resources, not s
 
 ## Verification
 
-39 unit tests, lint, production build with public-content/privacy gates. Desktop/mobile regression results and production deployment evidence are reported in the release handoff. Browser coverage includes all subjects and filters, body-text search, typo recovery, direct legacy routes, applied anatomy and progress transfer.
+42 unit tests, lint, production build with public-content/privacy gates. Desktop/mobile regression results and production deployment evidence are reported in the release handoff. Browser coverage includes all subjects and filters, body-text search, typo recovery, direct legacy routes, applied anatomy and progress transfer.
+
+## Concurrent release integrated
+
+Merged main through 7e4271b, preserving twelve new guided lessons, their worked examples, the study map, and streamed-radio fixes. Rebuilt the search index for all 140 resources, including worked examples and objectives. The combined collection has 120 native lessons plus eight renal course lessons; topic collections and shared subject views are not additional lessons.

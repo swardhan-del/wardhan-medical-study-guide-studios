@@ -1,0 +1,1881 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-09",
+  "groups": [
+    {
+      "id": "physiology-1",
+      "subject": "physiology",
+      "title": "Cellular physiology and excitable tissues",
+      "sourceLabel": "Physiology Part 1",
+      "sourceId": "00",
+      "topics": [
+        {
+          "id": "physiology-1-01",
+          "title": "1.1 · Body-Fluid Compartments and Their Determination",
+          "href": "/library/indicator-dilution",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-1-02",
+          "title": "1.2 · Cell Membrane Structure, Permeability, and Transport",
+          "href": "/library/fluid-and-membrane-transport",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-1-03",
+          "title": "1.3 · Signal Transduction: Receptors, G Proteins, and Second Messengers",
+          "href": "/library/autonomic-signalling",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-1-04",
+          "title": "1.4 · Ion-Channel Classification and Voltage-Gated Channels",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-1-05",
+          "title": "1.5 · Resting Membrane and Electrotonic Potentials",
+          "href": "/library/membrane-potentials",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-1-06",
+          "title": "1.6 · Action Potentials in Excitable Cells",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-1-07",
+          "title": "1.7 · Neurons and Synaptic Transmission",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-1-08",
+          "title": "1.8 · Smooth-Muscle Physiology",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-1-09",
+          "title": "1.9 · Neuromuscular Junction and Skeletal Muscle",
+          "href": "/library/muscle-contraction",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-1-10",
+          "title": "1.10 · Autonomic Efferent Mechanisms",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "physiology-2",
+      "subject": "physiology",
+      "title": "Cardiovascular physiology",
+      "sourceLabel": "Physiology Part 2",
+      "sourceId": "01",
+      "topics": [
+        {
+          "id": "physiology-2-01",
+          "title": "2.1 · Cardiac Pacemaker Activity and Conduction",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-02",
+          "title": "2.2 · Electrocardiography",
+          "href": "/library/ecg-time-and-vectors",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-2-03",
+          "title": "2.3 · The Cardiac Cycle",
+          "href": "/library/cardiac-cycle",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-2-04",
+          "title": "2.4 · Cardiac Pump Function and Output",
+          "href": "/library/cardiac-output",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-2-05",
+          "title": "2.5 · Circulatory Organization and Hemodynamics",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-06",
+          "title": "2.6 · Arterial Blood Pressure",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-07",
+          "title": "2.7 · Microcirculation and Starling Forces",
+          "href": "/library/lymph-and-fluid-exchange",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-2-08",
+          "title": "2.8 · Venous Circulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-09",
+          "title": "2.9 · Local Control of Circulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-10",
+          "title": "2.10 · Reflex and Neurohormonal Control of Circulation",
+          "href": "/library/baroreflex",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-2-11",
+          "title": "2.11 · Skeletal-Muscle, Exercise, and Splanchnic Circulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-12",
+          "title": "2.12 · Coronary and Cerebral Circulation, CSF, and Blood-Brain Barrier",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-13",
+          "title": "2.13 · Renal Circulation and Autoregulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-14",
+          "title": "2.14 · Circulatory Shock and Compensation for Volume Deficits",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-15",
+          "title": "2.15 · Fetal and Neonatal Circulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-2-16",
+          "title": "2.16 · Thermoregulation and Cardiovascular Integration",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "physiology-3",
+      "subject": "physiology",
+      "title": "Respiratory physiology",
+      "sourceLabel": "Physiology Part 3",
+      "sourceId": "02",
+      "topics": [
+        {
+          "id": "physiology-3-01",
+          "title": "3.1 · Lung Volumes, Ventilation, and Respiratory Mechanics",
+          "href": "/library/alveolar-ventilation-calculations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-3-02",
+          "title": "3.2 · Pulmonary Gas Exchange and Circulation",
+          "href": "/library/ventilation-perfusion",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-3-03",
+          "title": "3.3 · O2 and CO2 Transport and Hypoxia",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-3-04",
+          "title": "3.4 · Neural and Chemical Control of Respiration",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-3-05",
+          "title": "3.5 · Cardiopulmonary Adaptation to Posture and Exercise",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "physiology-4",
+      "subject": "physiology",
+      "title": "Renal and acid–base physiology",
+      "sourceLabel": "Physiology Part 4",
+      "sourceId": "03",
+      "topics": [
+        {
+          "id": "physiology-4-01",
+          "title": "4.1 · Renal Circulation and Glomerular Filtration",
+          "href": "/learn/renal/filtration-and-clearance",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-4-02",
+          "title": "4.2 · Tubular Transport",
+          "href": "/learn/renal/tubular-transport",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-4-03",
+          "title": "4.3 · Urine Concentration, Dilution, and Micturition",
+          "href": "/learn/renal/concentrating-urine",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-4-04",
+          "title": "4.4 · Body-Fluid Volume and Osmolality Control",
+          "href": "/library/renal-water-balance",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-4-05",
+          "title": "4.5 · Acid-Base Balance and Compensation",
+          "href": "/learn/renal/renal-acid-base",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "physiology-5",
+      "subject": "physiology",
+      "title": "Blood and haemostasis",
+      "sourceLabel": "Physiology Part 5",
+      "sourceId": "04",
+      "topics": [
+        {
+          "id": "physiology-5-01",
+          "title": "5.1 · Hematopoiesis and Blood Composition",
+          "href": "/library/blood-and-haemostasis",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-5-02",
+          "title": "5.2-5.3 · Hemostasis and Coagulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-5-03",
+          "title": "5.4 · Blood Groups and Transfusion",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "physiology-6",
+      "subject": "physiology",
+      "title": "Digestion and energy balance",
+      "sourceLabel": "Physiology Part 6",
+      "sourceId": "05",
+      "topics": [
+        {
+          "id": "physiology-6-01",
+          "title": "6.1 · Enteric and Hormonal Control of the GI Tract",
+          "href": "/library/digestive-control",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-6-02",
+          "title": "6.2 · Gastrointestinal Motility",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-6-03",
+          "title": "6.3 · Salivary Secretion",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-6-04",
+          "title": "6.4 · Pancreatic Secretion, Bile, and Bile Pigments",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-6-05",
+          "title": "6.5 · Digestion and Absorption",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-6-06",
+          "title": "6.6 · Energy Balance, Food Intake, and Body Weight",
+          "href": "/library/energy-balance",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "physiology-7",
+      "subject": "physiology",
+      "title": "Endocrine and reproductive physiology",
+      "sourceLabel": "Physiology Part 7",
+      "sourceId": "06",
+      "topics": [
+        {
+          "id": "physiology-7-01",
+          "title": "7.1 · Hypothalamic-Pituitary System and Growth Hormone",
+          "href": "/library/endocrine-feedback",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-7-02",
+          "title": "7.2 · Adrenal Cortex",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-7-03",
+          "title": "7.3 · Thyroid Hormones",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-7-04",
+          "title": "7.4 · Insulin and Diabetes Mellitus",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-7-05",
+          "title": "7.5 · Glucagon, Counterregulation, Fasting, and Exercise",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-7-06",
+          "title": "7.6 · Calcium Metabolism, Bone, and Growth",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-7-07",
+          "title": "7.7 · Sexual Development and Male Reproduction",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-7-08",
+          "title": "7.8 · Female Reproductive Endocrinology",
+          "href": "/library/reproductive-cycles",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-7-09",
+          "title": "7.9 · Pregnancy, Parturition, and Lactation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-7-10",
+          "title": "7.10 · Adrenal Medulla and Stress Adaptation",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "physiology-8",
+      "subject": "physiology",
+      "title": "Nervous systems and special senses",
+      "sourceLabel": "Physiology Part 8",
+      "sourceId": "07",
+      "topics": [
+        {
+          "id": "physiology-8-01",
+          "title": "8.1 · Neurons and Glia",
+          "href": "/library/synaptic-integration",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-8-02",
+          "title": "8.2 · Somatovisceral Sensory Physiology and Touch",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-03",
+          "title": "8.3 · Pain",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-04",
+          "title": "8.4 · Vision",
+          "href": "/library/special-senses",
+          "status": "introduction-available"
+        },
+        {
+          "id": "physiology-8-05",
+          "title": "8.5 · Hearing",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-06",
+          "title": "8.6 · Equilibrium, Taste, and Smell",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-07",
+          "title": "8.7 · Spinal Motor Functions and Reflexes",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-08",
+          "title": "8.8 · Supraspinal Motor Control and Posture",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-09",
+          "title": "8.9 · Cerebellum and Basal Ganglia",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-10",
+          "title": "8.10 · Thermoregulation and Skin Circulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-11",
+          "title": "8.11 · EEG, Sleep, Learning, and Memory",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "physiology-8-12",
+          "title": "8.12 · Autonomic and Behavioral Integration",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-1",
+      "subject": "histology",
+      "title": "Microscopy and preparation",
+      "sourceLabel": "Histology Part 1",
+      "sourceId": "08",
+      "topics": [
+        {
+          "id": "histology-1-01",
+          "title": "Section planes and artefacts",
+          "href": "/library/microscopy",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-1-02",
+          "title": "Stains and contrast",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-1-03",
+          "title": "Magnification and resolution",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-2",
+      "subject": "histology",
+      "title": "Epithelia and glands",
+      "sourceLabel": "Histology Part 2",
+      "sourceId": "09",
+      "topics": [
+        {
+          "id": "histology-2-01",
+          "title": "Epithelial classification",
+          "href": "/library/epithelia",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-2-02",
+          "title": "Cell junctions and polarity",
+          "href": "/library/cell-junctions",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-2-03",
+          "title": "Exocrine gland organisation",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-3",
+      "subject": "histology",
+      "title": "Connective tissues",
+      "sourceLabel": "Histology Part 3",
+      "sourceId": "10",
+      "topics": [
+        {
+          "id": "histology-3-01",
+          "title": "Matrix and fibres",
+          "href": "/library/connective-tissue",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-3-02",
+          "title": "Adipose tissue",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-3-03",
+          "title": "Cartilage and bone",
+          "href": "/library/cartilage-bone",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "histology-4",
+      "subject": "histology",
+      "title": "Blood and lymphoid tissue",
+      "sourceLabel": "Histology Part 4",
+      "sourceId": "11",
+      "topics": [
+        {
+          "id": "histology-4-01",
+          "title": "Blood-cell recognition",
+          "href": "/library/blood-marrow",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-4-02",
+          "title": "Marrow and haematopoiesis",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-4-03",
+          "title": "Lymphoid architecture",
+          "href": "/library/lymphoid-organs",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "histology-5",
+      "subject": "histology",
+      "title": "Muscle tissue",
+      "sourceLabel": "Histology Part 5",
+      "sourceId": "12",
+      "topics": [
+        {
+          "id": "histology-5-01",
+          "title": "Skeletal muscle identification",
+          "href": "/library/muscle-histology",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-5-02",
+          "title": "Cardiac versus smooth muscle",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-6",
+      "subject": "histology",
+      "title": "Vessels and microcirculation",
+      "sourceLabel": "Histology Part 6",
+      "sourceId": "13",
+      "topics": [
+        {
+          "id": "histology-6-01",
+          "title": "Arteries versus veins",
+          "href": "/library/vessel-histology",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-6-02",
+          "title": "Capillary types and exchange",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-7",
+      "subject": "histology",
+      "title": "Respiratory system",
+      "sourceLabel": "Histology Part 7",
+      "sourceId": "14",
+      "topics": [
+        {
+          "id": "histology-7-01",
+          "title": "Conducting airways",
+          "href": "/library/respiratory-histology",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-7-02",
+          "title": "Alveoli and the blood–air interface",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-8",
+      "subject": "histology",
+      "title": "Oral cavity and oesophagus",
+      "sourceLabel": "Histology Part 8",
+      "sourceId": "15",
+      "topics": [
+        {
+          "id": "histology-8-01",
+          "title": "Oral mucosa and tongue",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-8-02",
+          "title": "Salivary glands",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-8-03",
+          "title": "Oesophageal wall",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-9",
+      "subject": "histology",
+      "title": "Digestive organs",
+      "sourceLabel": "Histology Part 9",
+      "sourceId": "16",
+      "topics": [
+        {
+          "id": "histology-9-01",
+          "title": "Stomach and intestinal recognition",
+          "href": "/library/gi-histology",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-9-02",
+          "title": "Liver lobules and portal tracts",
+          "href": "/library/liver-pancreas",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-9-03",
+          "title": "Pancreas and gallbladder",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-10",
+      "subject": "histology",
+      "title": "Urinary system",
+      "sourceLabel": "Histology Part 10",
+      "sourceId": "17",
+      "topics": [
+        {
+          "id": "histology-10-01",
+          "title": "Renal cortex and medulla",
+          "href": "/library/renal-histology",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-10-02",
+          "title": "Tubules and filtration barrier",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-10-03",
+          "title": "Ureter and bladder",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-11",
+      "subject": "histology",
+      "title": "Male reproductive system",
+      "sourceLabel": "Histology Part 11",
+      "sourceId": "18",
+      "topics": [
+        {
+          "id": "histology-11-01",
+          "title": "Testis and spermatogenesis",
+          "href": "/library/reproductive-histology",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-11-02",
+          "title": "Epididymis and accessory glands",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-12",
+      "subject": "histology",
+      "title": "Female reproduction and placenta",
+      "sourceLabel": "Histology Part 12",
+      "sourceId": "19",
+      "topics": [
+        {
+          "id": "histology-12-01",
+          "title": "Ovary and uterine cycle",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-12-02",
+          "title": "Placenta and mammary gland",
+          "href": "/library/placenta",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "histology-13",
+      "subject": "histology",
+      "title": "Nervous tissue and development",
+      "sourceLabel": "Histology Part 13",
+      "sourceId": "20",
+      "topics": [
+        {
+          "id": "histology-13-01",
+          "title": "Myelin and supporting cells",
+          "href": "/library/myelin-and-glial-cells",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-13-02",
+          "title": "Blood–brain and blood–CSF barriers",
+          "href": "/library/brain-and-csf-barriers",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-13-03",
+          "title": "Neural tube and neural crest",
+          "href": "/library/neurulation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "histology-13-04",
+          "title": "Cortex and spinal-cord organisation",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-14",
+      "subject": "histology",
+      "title": "Sensory and motor pathways",
+      "sourceLabel": "Histology Part 14",
+      "sourceId": "21",
+      "topics": [
+        {
+          "id": "histology-14-01",
+          "title": "Brainstem and cranial-nerve nuclei",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-14-02",
+          "title": "Ascending and descending pathways",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-15",
+      "subject": "histology",
+      "title": "Autonomic and endocrine systems",
+      "sourceLabel": "Histology Part 15",
+      "sourceId": "22",
+      "topics": [
+        {
+          "id": "histology-15-01",
+          "title": "Hypothalamus and pituitary",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-15-02",
+          "title": "Thyroid and parathyroid",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-15-03",
+          "title": "Adrenal cortex and medulla",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-16",
+      "subject": "histology",
+      "title": "Eye and development",
+      "sourceLabel": "Histology Part 16",
+      "sourceId": "23",
+      "topics": [
+        {
+          "id": "histology-16-01",
+          "title": "Retinal layers and signal flow",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-16-02",
+          "title": "Cornea lens and ocular development",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-17",
+      "subject": "histology",
+      "title": "Ear and development",
+      "sourceLabel": "Histology Part 17",
+      "sourceId": "24",
+      "topics": [
+        {
+          "id": "histology-17-01",
+          "title": "Cochlea and organ of Corti",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-17-02",
+          "title": "Vestibular organs and ear development",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-18",
+      "subject": "histology",
+      "title": "Limbic and special-sense integration",
+      "sourceLabel": "Histology Part 18",
+      "sourceId": "25",
+      "topics": [
+        {
+          "id": "histology-18-01",
+          "title": "Olfactory and taste pathways",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-18-02",
+          "title": "Limbic and circadian organisation",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-19",
+      "subject": "histology",
+      "title": "Skin and appendages",
+      "sourceLabel": "Histology Part 19",
+      "sourceId": "26",
+      "topics": [
+        {
+          "id": "histology-19-01",
+          "title": "Epidermis and dermis",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-19-02",
+          "title": "Hair follicles and cutaneous glands",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "histology-20",
+      "subject": "histology",
+      "title": "Practical recognition and oral revision",
+      "sourceLabel": "Histology Part 20",
+      "sourceId": "27",
+      "topics": [
+        {
+          "id": "histology-20-01",
+          "title": "Compare look-alike sections",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-20-02",
+          "title": "Build a labelled drawing",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "histology-20-03",
+          "title": "Defend an identification",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-1",
+      "subject": "anatomy",
+      "title": "Thorax",
+      "sourceLabel": "Anatomy Volume 1",
+      "sourceId": "29",
+      "topics": [
+        {
+          "id": "anatomy-1-01",
+          "title": "Thoracic wall and intercostal spaces",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-1-02",
+          "title": "Pleura and lung root",
+          "href": "/library/thorax-nerve-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "anatomy-1-03",
+          "title": "Mediastinal compartments",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-1-04",
+          "title": "Pericardium and heart relations",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-1-05",
+          "title": "Coronary vessels",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-1-06",
+          "title": "Great vessels and azygos routes",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-1-07",
+          "title": "Diaphragm and openings",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-1-08",
+          "title": "Thoracic development",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-2",
+      "subject": "anatomy",
+      "title": "Abdomen",
+      "sourceLabel": "Anatomy Volume 2",
+      "sourceId": "30",
+      "topics": [
+        {
+          "id": "anatomy-2-01",
+          "title": "Abdominal wall and rectus sheath",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-2-02",
+          "title": "Inguinal canal and hernia routes",
+          "href": "/library/inguinal-canal-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "anatomy-2-03",
+          "title": "Peritoneal spaces and attachments",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-2-04",
+          "title": "Stomach and duodenum",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-2-05",
+          "title": "Small and large bowel",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-2-06",
+          "title": "Liver and portal triad",
+          "href": "/library/abdomen-portal-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "anatomy-2-07",
+          "title": "Pancreas and spleen",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-2-08",
+          "title": "Posterior wall and retroperitoneum",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-3",
+      "subject": "anatomy",
+      "title": "Pelvis and urogenital anatomy",
+      "sourceLabel": "Anatomy Volume 3",
+      "sourceId": "31",
+      "topics": [
+        {
+          "id": "anatomy-3-01",
+          "title": "Pelvic walls and floor",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-3-02",
+          "title": "Ureter bladder and urethra",
+          "href": "/library/pelvis-urinary-route",
+          "status": "introduction-available"
+        },
+        {
+          "id": "anatomy-3-03",
+          "title": "Male pelvic organs",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-3-04",
+          "title": "Female pelvic organs",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-3-05",
+          "title": "Perineal compartments",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-3-06",
+          "title": "Pelvic vessels and autonomic nerves",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-3-07",
+          "title": "Lymphatic drainage",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-3-08",
+          "title": "Urogenital development",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-4",
+      "subject": "anatomy",
+      "title": "Head and neck",
+      "sourceLabel": "Anatomy Volume 4",
+      "sourceId": "32",
+      "topics": [
+        {
+          "id": "anatomy-4-01",
+          "title": "Skull foramina and contents",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-4-02",
+          "title": "Neck triangles and fascia",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-4-03",
+          "title": "Carotid and jugular relations",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-4-04",
+          "title": "Tongue sensation taste and movement",
+          "href": "/library/head-neck-tongue-map",
+          "status": "introduction-available"
+        },
+        {
+          "id": "anatomy-4-05",
+          "title": "Pharynx and larynx",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-4-06",
+          "title": "Orbit and eye movements",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-4-07",
+          "title": "Cranial-nerve routes",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-4-08",
+          "title": "Pharyngeal apparatus development",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-5",
+      "subject": "anatomy",
+      "title": "Musculoskeletal anatomy",
+      "sourceLabel": "Anatomy Volume 5",
+      "sourceId": "33",
+      "topics": [
+        {
+          "id": "anatomy-5-01",
+          "title": "Joint classification and movement",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-5-02",
+          "title": "Shoulder and axilla",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-5-03",
+          "title": "Brachial plexus",
+          "href": "/library/limbs-plexus-and-joints",
+          "status": "introduction-available"
+        },
+        {
+          "id": "anatomy-5-04",
+          "title": "Arm forearm and hand compartments",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-5-05",
+          "title": "Hip and femoral triangle",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-5-06",
+          "title": "Knee and popliteal fossa",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-5-07",
+          "title": "Leg ankle and foot compartments",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "anatomy-5-08",
+          "title": "Limb development and segmental supply",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "cell-biology-39",
+      "subject": "cell-biology",
+      "title": "The 39-topic molecular cell biology sequence",
+      "sourceLabel": "Molecular cell biology",
+      "sourceId": "28",
+      "topics": [
+        {
+          "id": "cell-biology-39-01",
+          "title": "Chemical structure of nucleotides; primary and secondary structures of nucleic acids (DNA and various RNAs)",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-02",
+          "title": "Condensation levels of DNA in the eukaryotic cells; the role of topoisomerases and chromatin proteins",
+          "href": "/library/chromatin-access-and-topology",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-03",
+          "title": "The structure of the human genome; coding and gene expression regulatory sequences (enhancers, insulators)",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-04",
+          "title": "The non-coding regions of the human genome: structuring and function of pseudogenes, transposons and repetitive sequences",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-05",
+          "title": "Principles of the semiconservative DNA replication; replication fork, leading and lagging strand",
+          "href": "/library/dna-replication",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-06",
+          "title": "DNA replication in the pro- and eukaryotic cells; comparison of the enzymes, proteins involved",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-07",
+          "title": "The telomere; function of the telomerase, biological and medical significance of its presence or absence",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-08",
+          "title": "Common types of DNA damage and repair mechanisms; DNA lesions versus mutations",
+          "href": "/library/dna-repair",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-09",
+          "title": "Formation and repair of DNA deamination",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-10",
+          "title": "Formation and repair of thymine dimers",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-11",
+          "title": "Formation and repair of DNA mismatch",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-12",
+          "title": "Formation of point mutations spontaneously, i.e., without exposure to chemical or physical mutagenicity",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-13",
+          "title": "Possible effects of point mutations or single-nucleotide polymorphisms on the encoded proteins",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-14",
+          "title": "The principles and mechanisms of PCR and real-time PCR, their application in research and medicine",
+          "href": "/library/pcr",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-15",
+          "title": "Concept of genetic mutations and polymorphisms, and methods of their analysis (DNA sequencing and targeted techniques)",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-16",
+          "title": "Structure and function of RNA polymerase of E. coli; initiation of transcription in prokaryotes; the prokaryotic transcription unit",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-17",
+          "title": "Termination of transcription in prokaryotes; post-transcriptional RNA modifications in prokaryotic cells",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-18",
+          "title": "Regulation of transcription in prokaryotes",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-19",
+          "title": "The eukaryotic transcription unit; initiation and termination of transcription in the eukaryotic cells",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-20",
+          "title": "Regulation of transcription in eukaryotes",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-21",
+          "title": "Maturation of mRNA",
+          "href": "/library/rna-processing",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-22",
+          "title": "Regulation of the eukaryotic gene expression by proteins binding to UTR segments of mRNA",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-23",
+          "title": "Formation and regulatory functions of microRNAs in eukaryotic cells",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-24",
+          "title": "Significance of DNA methylation and histone modifications",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-25",
+          "title": "Alternative maturation of eukaryotic mRNA, and subsequent modifications in their coding sequence - their roles in the control of gene expression",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-26",
+          "title": "In vitro analysis of gene expression by reverse transcription, real-time PCR, and DNA microarray",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-27",
+          "title": "The genetic code; codon-anticodon interaction; function and role of aminoacyl-tRNA synthetases",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-28",
+          "title": "Structure and function of the ribosome; the ribosome cycle; role of tRNA in translation",
+          "href": "/library/translation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-29",
+          "title": "Initiation of translation in pro- and eukaryotic cells",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-30",
+          "title": "Regulation of eukaryotic translation; the role of eIF2alpha phosphorylation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-31",
+          "title": "Elongation and termination of translation in pro- and eukaryotic cells; pharmacological inhibitors of translation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-32",
+          "title": "Protein folding and chaperon proteins",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-33",
+          "title": "Posttranslational modifications of collagen, posttranslational modifications responsible for membrane tethering, protein phosphorylation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-34",
+          "title": "Posttranslational modifications in the endoplasmic reticulum",
+          "href": "/library/protein-trafficking",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-35",
+          "title": "N-glycosylation of proteins and its role in the quality control; ERAD",
+          "href": "/library/er-protein-quality-control",
+          "status": "introduction-available"
+        },
+        {
+          "id": "cell-biology-39-36",
+          "title": "Formation of the proteome of subcellular organelles; principles and mechanisms of protein sorting",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-37",
+          "title": "Intracellular protein trafficking by gated transport and by transmembrane transport",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-38",
+          "title": "The role of genetic variations in the development of diseases; the importance and possibilities of identifying genetic factors",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "cell-biology-39-39",
+          "title": "Production of recombinant DNA (cloning), and its main applications (reporter and expression vectors)",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-28",
+      "subject": "biochemistry",
+      "title": "The active 28-chapter biochemistry sequence",
+      "sourceLabel": "Biochemistry active guide",
+      "sourceId": "S14",
+      "topics": [
+        {
+          "id": "biochemistry-28-01",
+          "title": "Proteins",
+          "href": "/library/protein-structure",
+          "status": "introduction-available"
+        },
+        {
+          "id": "biochemistry-28-02",
+          "title": "Enzymes: Catalysts of Life",
+          "href": "/library/enzyme-kinetics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "biochemistry-28-03",
+          "title": "Strategies for Metabolic Flux Regulation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-04",
+          "title": "Glycolysis: The Fundamental Pathway of Carbohydrate Metabolism",
+          "href": "/library/glycolysis",
+          "status": "introduction-available"
+        },
+        {
+          "id": "biochemistry-28-05",
+          "title": "Bioenergetics: The Currency of Life",
+          "href": "/library/pdh-tca",
+          "status": "introduction-available"
+        },
+        {
+          "id": "biochemistry-28-06",
+          "title": "Tumor Metabolism",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-07",
+          "title": "Liver Disease: Metabolic Consequences",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-08",
+          "title": "Cholesterol Metabolism",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-09",
+          "title": "Biotransformation: Unlocking the Secrets of Metabolism",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-10",
+          "title": "Intermediary Metabolism",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-11",
+          "title": "Lipid Metabolism I: Digestion and Absorption of Lipids",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-12",
+          "title": "Lipid Metabolism II: Transport of Lipids",
+          "href": "/library/lipoprotein-routes",
+          "status": "introduction-available"
+        },
+        {
+          "id": "biochemistry-28-13",
+          "title": "Lipid Metabolism III: Oxidation of Fatty Acids, Synthesis and Oxidation of Ketone Bodies",
+          "href": "/library/ketone-production-and-use",
+          "status": "introduction-available"
+        },
+        {
+          "id": "biochemistry-28-14",
+          "title": "Metabolism of Amino Acids: Protein Digestion and N-Balance:",
+          "href": "/library/nitrogen-metabolism",
+          "status": "introduction-available"
+        },
+        {
+          "id": "biochemistry-28-15",
+          "title": "Metabolism of Haem and Homeostasis of Iron",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-16",
+          "title": "Vitamin B12 Deficiency and Folic Acid Deficiency",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-17",
+          "title": "Metabolism of Nucleotides",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-18",
+          "title": "Ion Channels: General Properties and Physiological Context",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-19",
+          "title": "Fibrinolysis: Basic Molecular Mechanisms",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-20",
+          "title": "Overview of Haemostasis and Thrombosis",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-21",
+          "title": "Thyroid Hormones: Metabolic Regulation and Molecular Mechanisms",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-22",
+          "title": "Integrated Tissue Metabolism",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-23",
+          "title": "Plasma Membrane & Transport Systems: Advanced Study Notes",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-24",
+          "title": "Signal Transduction I",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-25",
+          "title": "Neurotransmission Fundamentals",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-26",
+          "title": "Brain Metabolism: Comprehensive Study Notes",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-27",
+          "title": "Metabolic Regulation and Cellular Energy Sensing",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "biochemistry-28-28",
+          "title": "Practical Exam Topics for the Biochemistry II Comprehensive Examination",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "genetics-immunology-22",
+      "subject": "genetics",
+      "title": "Genetics and immunology learning paths",
+      "sourceLabel": "Supplementary guide or reference",
+      "sourceId": "S5",
+      "topics": [
+        {
+          "id": "genetics-immunology-22-01",
+          "title": "Genome organisation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-02",
+          "title": "Mitosis meiosis and chromosome segregation",
+          "href": "/library/meiosis",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetics-immunology-22-03",
+          "title": "Variants and repair",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-04",
+          "title": "Cytogenetics and karyotype interpretation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-05",
+          "title": "Epigenetics imprinting and X inactivation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-06",
+          "title": "Mendelian inheritance and conditional probability",
+          "href": "/library/recessive-conditional-probability",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetics-immunology-22-07",
+          "title": "Pedigree analysis",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-08",
+          "title": "Molecular diagnostic methods",
+          "href": "/library/genetic-testing",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetics-immunology-22-09",
+          "title": "Sex-linked inheritance",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-10",
+          "title": "Immune-system organisation",
+          "href": "/library/innate-adaptive",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetics-immunology-22-11",
+          "title": "Innate barriers and recognition",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-12",
+          "title": "Complement pathways and regulation",
+          "href": "/library/complement",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetics-immunology-22-13",
+          "title": "Inflammation and cytokines",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-14",
+          "title": "Antigen presentation and MHC",
+          "href": "/library/antigen-presentation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetics-immunology-22-15",
+          "title": "Antigen receptors and diversity",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-16",
+          "title": "T-cell activation and differentiation",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-17",
+          "title": "B-cell activation and germinal centres",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-18",
+          "title": "Antibody structure and effector function",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-19",
+          "title": "Tolerance and autoimmunity",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-20",
+          "title": "Hypersensitivity mechanisms",
+          "href": "/library/hypersensitivity-mechanisms",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetics-immunology-22-21",
+          "title": "Immunodeficiency",
+          "href": null,
+          "status": "planned"
+        },
+        {
+          "id": "genetics-immunology-22-22",
+          "title": "Immunological laboratory methods",
+          "href": null,
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "biostatistics-10",
+      "subject": "biostatistics",
+      "title": "Biostatistics: original course to develop",
+      "sourceId": "original-course-proposal",
+      "sourceLabel": "New authoring required; no existing authored course established",
+      "topics": [
+        {
+          "id": "biostatistics-01",
+          "title": "Variables and study design",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-02",
+          "title": "Distributions and graphical summaries",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-03",
+          "title": "Mean median and variability",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-04",
+          "title": "Probability and conditional probability",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-05",
+          "title": "Sampling and standard error",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-06",
+          "title": "Confidence intervals",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-07",
+          "title": "Hypothesis tests and p-values",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-08",
+          "title": "Effect size and statistical power",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-09",
+          "title": "Diagnostic-test interpretation",
+          "status": "planned",
+          "href": null
+        },
+        {
+          "id": "biostatistics-10",
+          "title": "Association regression and confounding",
+          "status": "planned",
+          "href": null
+        }
+      ]
+    }
+  ]
+}

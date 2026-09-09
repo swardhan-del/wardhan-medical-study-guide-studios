@@ -16,6 +16,9 @@ export type LibraryLesson = {
   related: string[];
   updatedAt: string;
   minutes: number;
+  objectives?: string[];
+  prerequisites?: string[];
+  workedExample?: { title: string; prompt: string; solution: string[] };
 };
 export type LibrarySource = {
   title: string;

@@ -3939,6 +3939,14 @@ select:focus-visible {
 .studio-jump button {border:1px solid var(--line);border-radius:24px;padding:.65rem 1rem;font:inherit;font-size:.95rem;background:transparent;color:var(--ink);cursor:pointer;text-align:left;}
 .studio-jump button[aria-pressed="true"] {background:var(--teal);color:white;border-color:var(--teal);}
 @media(max-width:640px){.studio-jump button{font-size:.85rem}}
+:root { --study-map-gap: 1rem; }
+.study-map-filters { display: flex; flex-wrap: wrap; align-items: end; gap: var(--study-map-gap); }
+.study-map-filters label { display: grid; gap: .5rem; flex: 1 1 13rem; min-width: 0; }
+.study-map-filters input, .study-map-filters select { width: 100%; min-height: 44px; padding: .65rem; color: inherit; background: var(--surface, #fff); border: 1px solid #81939a; border-radius: .4rem; font: inherit; }
+.study-map-groups { display: grid; gap: 1.25rem; }
+.study-map-topics { padding-left: 1.5rem; }
+.study-map-topics li { padding: .65rem .2rem; border-bottom: 1px solid #d8dfe1; overflow-wrap: anywhere; }
+.study-map-topics small { display: block; margin-top: .25rem; }
 
 .bp-model-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin:2rem 0;}
 .bp-model-grid > section {min-width:0;scroll-margin-top:6rem;margin:0;}
