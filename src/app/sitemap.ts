@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/start",
     ...Object.keys(foundations).map(subject => "/learn/foundations/" + subject),
+    "/start/anatomy",
     "/about",
     "/subjects",
     "/library",

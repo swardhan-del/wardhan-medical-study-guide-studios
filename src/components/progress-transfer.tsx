@@ -16,10 +16,10 @@ export function ProgressTransfer() {
   function exportFile() { return new File([JSON.stringify({ format: "wardhan-study-export", version: 1, progress: data, saved }, null, 2)], `wardhan-study-${localDate()}.json`, { type: "application/json" }); }
   return <section className="study-panel" id="progress-transfer" aria-labelledby="transfer-title">
     <h2 id="transfer-title">Move your study progress between devices</h2>
-    <p>Download a file here, transfer it to your other device, then import it in My Study. It includes answers, written notes, your plan and saved resources. Keep the file somewhere private.</p>
+    <p>Your progress is saved on this browser only. To continue on another device:</p><ol><li>Export your latest progress from the device you just used.</li><li>Transfer the file to your other device using your own storage or the share button below.</li><li>Open My Study there, import the file, review the preview and choose Merge imported progress.</li></ol><p>Repeat when you switch back. Keep a backup before clearing browser data. The file includes answers, written notes, your plan and saved resources; keep it private.</p>
     <button className="button button-secondary" disabled={!ready} onClick={() => {
       const url = URL.createObjectURL(new Blob([JSON.stringify({ format: "wardhan-study-export", version: 1, progress: data, saved }, null, 2)], { type: "application/json" }));
-      const a = document.createElement("a"); a.href = url; a.download = `wardhan-study-${localDate()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+      const a = document.createElement("a"); a.href = url; a.download = `wardhan-study-${localDate()}.json`; a.click(); setMessage("Backup download requested. Check your downloads, then import the file in My Study on your other device."); setTimeout(() => URL.revokeObjectURL(url), 1000);
     }}>Export progress and saved resources</button>
     <button className="button button-secondary" disabled={!ready} onClick={async () => {
       const file = exportFile();

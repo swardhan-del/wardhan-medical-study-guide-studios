@@ -9,7 +9,7 @@ This release follows the 347-URL production experience audit from 9 September 20
 - F03: Histology II includes neurulation, myelin/glia and brain/CSF barriers.
 - F04: every native lesson has an explicit learning aim, a subject vocabulary reminder and a linked preparation page. Seven foundation pages provide terms, a worked distinction and recall. Sequenced next-lesson links support continued learning. This does not turn all concise introductions into comprehensive chapters.
 - F05: a deterministic presentation permutation varies quiz choice order without changing original question IDs, correct indices or saved choices. Nine weak distractor sets were revised. Printed answer letters use the same permutation. The bank still needs broader subject-expert question development.
-- F06: homepage and Start here expose all 12 directory subjects with current availability; shared subsets are labelled. The map includes all 50 biophysics lessons and its next action leads to subject selection.
+- F06: homepage and Start here use seven main learning subjects, with explicit links to four shared subsets and two unreleased subjects. All 12 directory entries remain discoverable without presenting subsets as separate new courses. The map includes all 50 biophysics lessons and its next action leads to subject selection.
 - F07: single-resource leaf topic cards open learning directly. Old topic URLs remain valid with a clear resource action. Three repeated parent/child labels are differentiated.
 - F08: planner and oral-explanation entry points explicitly state their renal scope.
 - F09: guided external real-slide exercises cover connective, muscle and nervous tissue. Specimens remain on the verified provider's website. The local image bank has not been expanded with unapproved material.
@@ -26,3 +26,7 @@ More complete chapters and worked examples across the curriculum; a larger local
 The release is gated by content/privacy checks, unit tests, lint, TypeScript, production build and desktop/mobile/local-review browser tests. The post-deployment audit preserves one register row and desktop/mobile screenshots for every discovered public URL, with redirect destinations, missing anchors, media/asset results and remaining coverage observations. Evidence is stored in Dropbox under `audits/student-audit-release-2026-09-09/`; the previous audit remains intact.
 
 Scientific references are linked with the new foundations, diagrams and external exercises. Existing source assets and private curation files are unchanged. Original answer indices remain the stored values, so existing progress imports and saved histories retain their meaning.
+
+## Concurrent release integration
+
+Integrated main commit `7905f46` (PR #9), preserving its compact homepage, seven-subject hierarchy, anatomy orientation, shared beginner sequences, printable discovery and progress-transfer guidance. The map uses one set of 50 biophysics topics; it does not append the same topics twice.

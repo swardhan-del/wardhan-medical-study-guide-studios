@@ -1,0 +1,4 @@
+import Link from "next/link";
+export function SubjectSubsets() {
+  return <section className="study-panel"><h2>Course subsets and future subjects</h2><p>Histology I and II share the histology collection. Medical Genetics and Immunology share the combined collection. These filters reuse the same lessons and saved progress.</p><nav className="quick-links" aria-label="Course subsets and unreleased subjects"><Link href="/library?subject=histology-i">Histology I subset</Link><Link href="/library?subject=histology-ii">Histology II subset</Link><Link href="/library?subject=genetics">Medical Genetics subset</Link><Link href="/library?subject=immunology">Immunology subset</Link><Link href="/subjects/microbiology">Microbiology: no public lessons yet</Link><Link href="/subjects/biostatistics">Biostatistics: no public lessons yet</Link></nav></section>;
+}

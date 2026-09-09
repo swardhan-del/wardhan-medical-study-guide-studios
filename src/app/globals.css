@@ -4023,3 +4023,19 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 
 .diagram-scroll-hint { display: none; }
 @media screen and (max-width: 640px) { .teaching-diagram svg { min-width: 640px; } .diagram-scroll-hint { display: block; } }
+/* First-visit hierarchy: show study choices and teaching content sooner. */
+.hero-section.learning-home { min-height: 0; padding-top: 32px; padding-bottom: 36px; gap: 5%; }
+.learning-home h1 { font-size: clamp(2.3rem, 4vw, 3.5rem); }
+.learning-home .hero-lede { font-size: 1.2rem; line-height: 1.5; }
+.home-subject-links { display: grid; gap: .5rem; }
+.home-subject-links a { padding-block: .35rem; line-height: 1.4; }
+.learning-home .hero-aside { gap: 12px; }
+.learning-home .hero-aside h2 { font-size: 1.6rem; margin-bottom: 1rem; }
+.concept-heading h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.12; }
+.concept-page { padding-top: 24px; }
+.concept-heading { padding-block: 0; margin: 20px 0 16px; }
+.concept-heading h1 { margin-block: 12px 16px; }
+.concept-heading .action-row { margin-top: 18px; }
+.concept-heading .interior-lede { font-size: 1.2rem; line-height: 1.5; }
+.start-sequence li { margin-block: .6rem; }
+@media (max-width: 700px) { .hero-section.learning-home { padding-top: 20px; gap: 24px; } .home-subject-links a { min-height: 44px; display: flex; align-items: center; } }

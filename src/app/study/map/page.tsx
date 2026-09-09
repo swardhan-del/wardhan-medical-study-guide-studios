@@ -10,15 +10,16 @@ export const metadata = {
 };
 
 export default function StudyMapPage() {
-  const total = data.groups.reduce((n, g) => n + g.topics.length, 0);
+  const groups = data.groups;
+  const total = groups.reduce((n, g) => n + g.topics.length, 0);
   return <div className="site-container study-page">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/study">My Study</Link><span aria-hidden="true"> / </span><span aria-current="page">Study map</span></nav>
     <header className="study-hero"><p className="eyebrow">Plan your learning</p><h1>See how the subjects connect</h1>
-      <p className="interior-lede">{total} topics across {data.groups.length} source sections, from regional anatomy to molecular mechanisms.</p>
-      <p>The native collection currently contains {studyLessons.length} lessons, alongside the separate renal course. Linked topics have an introduction available; this does not mean their full scope is complete. Planned adaptations are a development sequence, not finished lessons or a measure of syllabus coverage.</p>
-      <p>Biostatistics needs a newly authored course. Its topics are proposals rather than an imported textbook.</p>
-      <Link className="button button-primary" href="/subjects">Choose an available lesson</Link>
+      <p className="interior-lede">{total} topics across {groups.length} teaching sections, from regional anatomy to molecular mechanisms.</p>
+      <p>The website currently contains {studyLessons.length} lessons, alongside the separate renal course. Linked topics have an introduction available; this does not mean their full scope is complete. Planned topics are shown so you can see the gaps; they are not finished lessons.</p>
+      <p>Biostatistics has no published lessons yet. Use the availability filter to show only topics you can study now.</p>
+      <Link className="button button-primary" href="/library">Choose an available lesson</Link>
     </header>
-    <StudyMapBrowser groups={data.groups} />
+    <StudyMapBrowser groups={groups} />
   </div>;
 }

@@ -30,7 +30,7 @@ test('all twelve subjects show their released resources or honest empty state', 
       const link = browser.locator('.resource-card h2 a').first();
       await link.click();
       await expect(page.getByRole('heading',{level:1})).toBeVisible();
-    } else await expect(page.getByText('No resources have been released for this subject yet.',{exact:false})).toBeVisible();
+    } else await expect(page.getByRole('heading', { name: 'No public lessons yet', exact: true })).toBeVisible();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),subject.id).toBe(true);
     await page.goto('/library?subject='+subject.id);
     await expect(page.getByRole('combobox',{name:'Subject',exact:true})).toHaveValue(subject.id);

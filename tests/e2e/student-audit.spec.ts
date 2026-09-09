@@ -1,5 +1,5 @@
 import data from "../../src/content/library-lessons.json";
-import taxonomy from "../../src/content/library-taxonomy.json";
+import { subjectInterests } from "../../src/content/subjects";
 import { test, expect } from "@playwright/test";
 
 test("saved renal and cross-subject lessons share My Study and survive reload", async ({
@@ -115,9 +115,9 @@ test("nephron diagram supports recall and fits the page on small screens", async
 test('all twelve subjects are discoverable from the homepage and first visit', async ({ page }) => {
   for (const path of ['/', '/start']) {
     await page.goto(path);
-    for (const name of taxonomy.subjects.map(s => s.title)) await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
+    for (const name of subjectInterests.map(s => s.title)) await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
   }
-  await expect(page.getByText('No public lessons released yet.', { exact: true })).toHaveCount(2);
+  await expect(page.getByRole('navigation', { name: 'Course subsets and unreleased subjects' }).getByRole('link')).toHaveCount(6);
 });
 
 test('figure navigation matches real figures and foundations are usable', async ({ page }) => {
@@ -137,7 +137,7 @@ test('biophysics is selectable on the map and the next action exits the map', as
   await page.getByRole('combobox', { name: 'Subject', exact: true }).selectOption('biophysics');
   await expect(page.getByRole('status')).toContainText('50 topics');
   await page.getByRole('link', { name: 'Choose an available lesson', exact: true }).click();
-  await expect(page).toHaveURL(/\/subjects$/);
+  await expect(page).toHaveURL(/\/library$/);
 });
 
 test('printed revision includes reasoning, diagrams and matching shuffled answer keys', async ({ page }) => {

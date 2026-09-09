@@ -15,7 +15,7 @@ test("first visit reaches each subject coverage map and a real starting lesson",
     const map = page.locator("#coverage");
     await expect(map).toContainText("Still needs fuller lessons");
     await map.getByRole("link",{name:/^Start with/}).click();
-    await expect(page).toHaveURL(/\/library\//);
+    await expect(page).toHaveURL(subject === "anatomy" ? /\/start\/anatomy$/ : /\/library\//);
     await expect(page.locator("h1")).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   }
@@ -67,4 +67,48 @@ test("export imports into another browser with preview, preserves local work and
     await expect(target.locator("#progress-transfer [role=status]")).toContainText("not a recognised");
     expect(await target.evaluate(() => Object.keys(JSON.parse(localStorage.getItem("wardhan-learning:v1")!).answers))).toHaveLength(1);
   } finally { await other.close(); }
+});
+
+
+test("first-visitor navigation exposes consistent subjects, printable notes and available map lessons", async ({ page }) => {
+  await page.goto("/subjects");
+  await expect(page.locator(".directory-subject-card")).toHaveCount(7);
+  await expect(page.locator(".directory-subject-card").getByRole("heading", { name: "Genetics & Immunology", exact: true })).toBeVisible();
+  await page.getByRole("searchbox", { name: "Search topics", exact: true }).fill("Regional anatomy");
+  await expect(page.getByRole("link", { name: "Regional anatomy", exact: true })).toBeVisible();
+  await page.getByRole("searchbox", { name: "Search topics", exact: true }).fill("Body regions");
+  await expect(page.getByRole("link", { name: "Body regions and orientation", exact: true })).toBeVisible();
+  await page.goto("/study/map");
+  await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("biophysics");
+  await expect(page.getByRole("status")).toContainText("50 topics");
+  await expect(page.locator(".study-map-topics a")).toHaveCount(50);
+  await page.getByRole("link", { name: "Choose an available lesson", exact: true }).click();
+  await expect(page).toHaveURL(/\/library$/);
+  await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("genetics-all");
+  await expect(page.getByRole("status")).toContainText("8 resources");
+  await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("immunology");
+  await expect(page.getByRole("status")).toContainText("4 resources");
+  await page.getByRole("button", { name: "Clear filters", exact: true }).click();
+  await page.getByRole("combobox", { name: "Format", exact: true }).selectOption("PDF");
+  await expect(page.getByText("The PDF results list downloadable files.", { exact: false })).toBeVisible();
+  await page.locator("#printable-notes summary").click();
+  await expect(page.getByRole("navigation", { name: "Printable revision subjects" }).getByRole("link")).toHaveCount(7);
+  await page.getByRole("navigation", { name: "Printable revision subjects" }).getByRole("link", { name: "Biochemistry", exact: true }).click();
+  await expect(page).toHaveURL(/\/study\/biochemistry\/revision$/);
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("revision notes");
+});
+
+test("anatomy starts with foundations and empty subjects offer a usable next step", async ({ page }) => {
+  await page.goto("/start");
+  await page.getByRole("link", { name: "Start Macroscopic Anatomy & Embryology", exact: true }).click();
+  await expect(page).toHaveURL(/\/start\/anatomy$/);
+  await page.locator("summary").click();
+  await expect(page.getByText("The coronal plane.", { exact: false })).toBeVisible();
+  await page.getByRole("link", { name: /Next: orient the thorax/ }).click();
+  await expect(page).toHaveURL(/\/library\/thorax-nerve-relations$/);
+  await page.goto("/subjects/microbiology");
+  await expect(page.getByRole("heading", { name: "No public lessons yet" })).toBeVisible();
+  await page.getByRole("link", { name: "Choose a subject with lessons", exact: true }).click();
+  await expect(page).toHaveURL(/\/subjects$/);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 });

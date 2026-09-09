@@ -28,7 +28,8 @@ export function CatalogBrowser({
   const [sort, setSort] = useState("title");
   const [visibleCount, setVisibleCount] = useState(18);
   const { saved, ready } = useReadingList();
-  const scoped = records.filter(record => (!savedOnly || saved.includes(record.id)) && (!subject || (record.status === "private-review" ? record.subject === subject : taxonomy.nodes.some(n => n.subject === subject && n.resources.includes(record.id)))) && (!format || record.format === format));
+  const matchesSubject = (record: CatalogRecord) => !subject || (subject === "genetics-all" ? record.subject === "genetics" : record.status === "private-review" ? record.subject === subject : taxonomy.nodes.some(n => n.subject === subject && n.resources.includes(record.id)));
+  const scoped = records.filter(record => (!savedOnly || saved.includes(record.id)) && matchesSubject(record) && (!format || record.format === format));
   const filtered = scoped
     .filter(
       (record) =>
@@ -49,7 +50,7 @@ export function CatalogBrowser({
   const availableFormats = [
     ...new Set(
       records
-        .filter((record) => !subject || (record.status === "private-review" ? record.subject === subject : taxonomy.nodes.some(n => n.subject === subject && n.resources.includes(record.id))))
+        .filter(matchesSubject)
         .map((record) => record.format),
     ),
   ];
@@ -93,11 +94,9 @@ export function CatalogBrowser({
             }}
           >
             <option value="">All subjects</option>
-            {taxonomy.subjects.map((item) => (
-              <option key={item.id} value={item.id}>
-                {item.title}
-              </option>
-            ))}
+            <optgroup label="Subjects">{subjectInterests.map(item => <option key={item.id} value={item.id === "genetics" ? "genetics-all" : item.id}>{item.title}</option>)}</optgroup>
+            <optgroup label="No public lessons yet">{taxonomy.subjects.filter(item => ["microbiology", "biostatistics"].includes(item.id)).map(item => <option key={item.id} value={item.id}>{item.title} — no lessons yet</option>)}</optgroup>
+            <optgroup label="Course subsets">{taxonomy.subjects.filter(item => ["histology-i", "histology-ii", "genetics", "immunology"].includes(item.id)).map(item => <option key={item.id} value={item.id}>{item.title} subset</option>)}</optgroup>
           </select>
         </label>
         <label>
@@ -145,6 +144,7 @@ export function CatalogBrowser({
           </button>
         ) : null}
       </div>
+      {!savedOnly && format === "PDF" && <p className="study-notice">The PDF results list downloadable files. <Link href="/library#printable-notes">Printable revision notes for all seven subjects</Link> are also available as web pages you can print or save as PDF.</p>}
       {filtered.length ? (
         <div className="resource-grid">
           {shownRecords.map((record) => (
