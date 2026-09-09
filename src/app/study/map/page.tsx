@@ -1,6 +1,6 @@
 import Link from "next/link";
 import data from "@/content/study-map.json";
-import { studyLessons, studyGroups } from "@/lib/study-collections";
+import { studyLessons } from "@/lib/study-collections";
 import { StudyMapBrowser } from "@/components/study-map-browser";
 
 export const metadata = {
@@ -10,11 +10,7 @@ export const metadata = {
 };
 
 export default function StudyMapPage() {
-  const biophysics = studyGroups.filter(g => g.subject === "biophysics").map(g => ({
-    id: g.id, subject: g.subject, title: g.title, sourceLabel: "Biophysics teaching sequence",
-    topics: g.lessonIds.map(id => ({ id, title: studyLessons.find(l => l.id === id)!.title, href: `/library/${id}`, status: "introduction-available" })),
-  }));
-  const groups = [...data.groups, ...biophysics];
+  const groups = data.groups;
   const total = groups.reduce((n, g) => n + g.topics.length, 0);
   return <div className="site-container study-page">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/study">My Study</Link><span aria-hidden="true"> / </span><span aria-current="page">Study map</span></nav>

@@ -1,10 +1,11 @@
+import data from "../../src/content/library-lessons.json";
 import { test, expect } from "@playwright/test";
 test("concept answers and written reasoning survive reload and enter shared review", async ({
   page,
 }) => {
   await page.goto("/library/nitrogen-metabolism");
   const check = page.locator("#concept-check-title");
-  await check.getByRole("radio").nth(1).check();
+  await check.getByRole("radio", { name: data.lessons.find(l => l.id === "nitrogen-metabolism")!.question.options[1].text, exact: true }).check();
   await check
     .getByRole("button", { name: "Check answer", exact: true })
     .click();
@@ -12,7 +13,7 @@ test("concept answers and written reasoning survive reload and enter shared revi
     .getByRole("textbox", { name: "My explanation", exact: true })
     .fill("Transamination transfers nitrogen; it does not excrete it.");
   await page.reload();
-  await expect(check.getByRole("radio").nth(1)).toBeChecked();
+  await expect(check.getByRole("radio", { name: data.lessons.find(l => l.id === "nitrogen-metabolism")!.question.options[1].text, exact: true })).toBeChecked();
   await expect(
     page.getByRole("textbox", { name: "My explanation", exact: true }),
   ).toHaveValue(/Transamination/);

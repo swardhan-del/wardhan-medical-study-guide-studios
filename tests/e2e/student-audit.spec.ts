@@ -1,3 +1,5 @@
+import data from "../../src/content/library-lessons.json";
+import { subjectInterests } from "../../src/content/subjects";
 import { test, expect } from "@playwright/test";
 
 test("saved renal and cross-subject lessons share My Study and survive reload", async ({
@@ -108,4 +110,45 @@ test("nephron diagram supports recall and fits the page on small screens", async
       path: testInfo.outputPath("nephron-map.png"),
       animations: "disabled",
     });
+});
+
+test('all twelve subjects are discoverable from the homepage and first visit', async ({ page }) => {
+  for (const path of ['/', '/start']) {
+    await page.goto(path);
+    for (const name of subjectInterests.map(s => s.title)) await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
+  }
+  await expect(page.getByRole('navigation', { name: 'Course subsets and unreleased subjects' }).getByRole('link')).toHaveCount(6);
+});
+
+test('figure navigation matches real figures and foundations are usable', async ({ page }) => {
+  await page.goto('/library/dna-replication');
+  await page.getByRole('link', { name: 'Figures', exact: true }).click();
+  await expect(page.locator('[data-teaching-figure="dna-replication"]:visible')).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  await page.getByRole('link', { name: 'New to this subject? Learn the starting vocabulary' }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+  await expect(page.locator('.foundation-terms dt')).not.toHaveCount(0);
+  await page.goto('/library/innate-adaptive');
+  await expect(page.getByRole('link', { name: 'Figures', exact: true })).toHaveCount(0);
+});
+
+test('biophysics is selectable on the map and the next action exits the map', async ({ page }) => {
+  await page.goto('/study/map');
+  await page.getByRole('combobox', { name: 'Subject', exact: true }).selectOption('biophysics');
+  await expect(page.getByRole('status')).toContainText('50 topics');
+  await page.getByRole('link', { name: 'Choose an available lesson', exact: true }).click();
+  await expect(page).toHaveURL(/\/library$/);
+});
+
+test('printed revision includes reasoning, diagrams and matching shuffled answer keys', async ({ page }) => {
+  await page.goto('/study/cell-biology/revision');
+  await page.emulateMedia({ media: 'print' });
+  await expect(page.locator('.revision-worked-example').first()).toBeVisible();
+  await expect(page.locator('[data-teaching-figure="dna-replication"]:visible')).toBeVisible();
+  const lesson = data.lessons.find(l => l.id === 'dna-replication')!;
+  const section = page.locator('.revision-lesson').filter({ has: page.getByRole('heading', { name: lesson.title, exact: true }) });
+  const options = await section.locator('ol[type="A"]').first().locator('li').allTextContents();
+  const letter = String.fromCharCode(65 + options.indexOf(lesson.question.options[lesson.question.answer].text));
+  const key = page.locator('.revision-answers section').filter({ has: page.getByRole('heading', { name: lesson.title, exact: true }) });
+  await expect(key).toContainText(`${letter}. ${lesson.question.options[lesson.question.answer].text}`);
 });

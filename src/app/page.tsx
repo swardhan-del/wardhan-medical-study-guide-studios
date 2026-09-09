@@ -1,7 +1,8 @@
 import { QuickSearch } from "@/components/quick-search";
 import Link from "next/link";
 import { SubjectCard } from "@/components/subject-card";
-import { subjectInterests } from "@/content/subjects";
+import { studySubjects } from "@/lib/study-collections";
+import { SubjectSubsets } from "@/components/subject-subsets";
 import { renalLessons, renalQuestions } from "@/content/renal-course";
 import { LearningCollection } from "@/components/learning-collection";
 export const metadata = { alternates: { canonical: "/" } };
@@ -30,7 +31,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <aside className="hero-aside" aria-label="Your first study session"><p className="eyebrow">Start learning</p><h2>Choose your subject</h2><nav className="home-subject-links" aria-label="Start a subject">{subjectInterests.map(s => <Link key={s.id} href={`/study/${s.id}`}>{s.title} →</Link>)}</nav></aside>
+        <aside className="hero-aside" aria-label="Your first study session"><p className="eyebrow">Start learning</p><h2>Choose your subject</h2><nav className="home-subject-links" aria-label="Start a subject">{studySubjects.map(s => <Link key={s.id} href={`/study/${s.id}`}>{s.title} →</Link>)}</nav></aside>
       </section>
       <section
         className="content-section site-container"
@@ -44,10 +45,11 @@ export default function Home() {
           </p>
         </div>
         <div className="subject-grid">
-          {subjectInterests.map((subject) => (
+          {studySubjects.map((subject) => (
             <SubjectCard key={subject.id} subject={subject} />
           ))}
         </div>
+        <SubjectSubsets />
       </section>
       <section
         className="content-section site-container"

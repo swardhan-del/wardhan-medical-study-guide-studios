@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { optionOrder } from "@/lib/option-order";
 import { AirwayPressureDiagram } from "./airway-pressure-diagram";
 import Link from "next/link";
 import type { PracticeItem } from "@/content/practice-registry";
@@ -22,7 +23,7 @@ export function PracticeQuestion({ item, title = "Check your understanding", fre
     {previous && <p className="muted-note">Saved history: first attempt {previous.firstCorrect === null ? "not recorded" : previous.firstCorrect ? "correct" : "incorrect"}; latest attempt {previous.lastCorrect ? "correct" : "incorrect"}{previous.assisted ? " (same-day retry or hint used)" : ""}.</p>}
     {/* Scope the native radio group to this instance, including during streamed page replacement. */}
     <form onSubmit={event => event.preventDefault()}>
-      <fieldset disabled={checked || !ready}><legend>{item.prompt}</legend><div className="concept-options">{item.options.map((option, i) => <label key={option.text}><input type="radio" name={item.id} checked={choice === i} onChange={() => setDraft(i)} /><span>{option.text}</span></label>)}</div></fieldset>
+      <fieldset disabled={checked || !ready}><legend>{item.prompt}</legend><div className="concept-options">{optionOrder(item.id, item.options.length).map(i => <label key={item.options![i].text}><input type="radio" name={item.id} checked={choice === i} onChange={() => setDraft(i)} /><span>{item.options![i].text}</span></label>)}</div></fieldset>
     </form>
     <button className="button button-primary" disabled={!ready || choice === null || checked} onClick={() => { if (choice === null) return; recordAnswer(item.id, choice === item.answer, choice, feedbackSeen); recordVisit(); setSubmitted(true); }}>Check answer</button>
     {checked && <div className="concept-feedback" role="status"><p><strong>{choice === item.answer ? "Correct." : "Review the distinction."}</strong></p><p>Correct answer: {item.options[item.answer].text}</p><ul>{item.options.map((o, i) => <li key={o.text}><strong>{i === item.answer ? "Why it works" : "Why not"}: {o.text}</strong><p>{o.explanation}</p></li>)}</ul><p>Retries within 24 hours help you correct a misconception, but do not advance your spaced-review streak.</p><button className="button button-secondary" onClick={() => { setDraft(null); setSubmitted(false); setFeedbackSeen(true); }}>Try without feedback</button></div>}

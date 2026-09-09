@@ -1876,6 +1876,378 @@
           "href": null
         }
       ]
+    },
+    {
+      "id": "map-biophysics-optics",
+      "subject": "biophysics",
+      "title": "Optics and light",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-radiation-optics",
+          "title": "Radiation, units and geometric optics",
+          "href": "/library/biophysics-radiation-optics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-image-formation",
+          "title": "Lenses, magnification and the microscope",
+          "href": "/library/biophysics-image-formation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-wave-optics",
+          "title": "Interference, diffraction and optical resolution",
+          "href": "/library/biophysics-wave-optics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-light-duality",
+          "title": "Photons, matter waves and electron microscopy",
+          "href": "/library/biophysics-light-duality",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-atomic-models",
+          "title": "Atomic models, energy levels and uncertainty",
+          "href": "/library/biophysics-atomic-models",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-molecular-interactions",
+          "title": "Bonds, interaction energies and scanning probes",
+          "href": "/library/biophysics-molecular-interactions",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "map-biophysics-matter",
+      "subject": "biophysics",
+      "title": "Matter and optical methods",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-gases-statistics",
+          "title": "Gas laws, Boltzmann statistics and thermal energy",
+          "href": "/library/biophysics-gases-statistics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-condensed-matter",
+          "title": "Solids, liquids, liquid crystals and energy bands",
+          "href": "/library/biophysics-condensed-matter",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-absorption-scattering",
+          "title": "Absorption, scattering and optical spectroscopy",
+          "href": "/library/biophysics-absorption-scattering",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-thermal-radiation",
+          "title": "Blackbody radiation and thermal imaging",
+          "href": "/library/biophysics-thermal-radiation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-luminescence",
+          "title": "Fluorescence, phosphorescence and molecular probes",
+          "href": "/library/biophysics-luminescence",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-lasers",
+          "title": "Stimulated emission and medical laser principles",
+          "href": "/library/biophysics-lasers",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "map-biophysics-nuclear",
+      "subject": "biophysics",
+      "title": "Nuclear physics and imaging",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-nuclear-structure",
+          "title": "Nuclei, isotopes and radioactive transformations",
+          "href": "/library/biophysics-nuclear-structure",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-decay-interactions",
+          "title": "Decay law and radiation interactions with matter",
+          "href": "/library/biophysics-decay-interactions",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-radiation-detection",
+          "title": "Detectors, count statistics and pulse spectra",
+          "href": "/library/biophysics-radiation-detection",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-dosimetry",
+          "title": "Absorbed dose, biological weighting and protection",
+          "href": "/library/biophysics-dosimetry",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-isotope-diagnostics",
+          "title": "Tracers, biological clearance and effective half-life",
+          "href": "/library/biophysics-isotope-diagnostics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-nuclear-imaging",
+          "title": "Gamma cameras, SPECT, PET and radiotherapy geometry",
+          "href": "/library/biophysics-nuclear-imaging",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "map-biophysics-signals-imaging",
+      "subject": "biophysics",
+      "title": "Signals and X-ray imaging",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-signals",
+          "title": "Biological signals, filtering and digitisation",
+          "href": "/library/biophysics-signals",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-xray-production",
+          "title": "X-ray tubes, spectra and beam quality",
+          "href": "/library/biophysics-xray-production",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-ct-imaging",
+          "title": "Projection radiography, CT reconstruction and windowing",
+          "href": "/library/biophysics-ct-imaging",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "map-biophysics-transport",
+      "subject": "biophysics",
+      "title": "Flow, diffusion and thermodynamics",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-fluid-flow",
+          "title": "Continuity, viscosity and resistance to flow",
+          "href": "/library/biophysics-fluid-flow",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-diffusion-osmosis",
+          "title": "Diffusion, osmosis and heat transport",
+          "href": "/library/biophysics-diffusion-osmosis",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-energy-first-law",
+          "title": "Thermodynamic systems and the first law",
+          "href": "/library/biophysics-energy-first-law",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-entropy-potentials",
+          "title": "Entropy, free energy and equilibrium",
+          "href": "/library/biophysics-entropy-potentials",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "map-biophysics-membranes",
+      "subject": "biophysics",
+      "title": "Membranes and ultrasound",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-resting-potential",
+          "title": "Membrane potentials, permeability and the RC model",
+          "href": "/library/biophysics-resting-potential",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-action-potentials",
+          "title": "Action potentials and impulse propagation",
+          "href": "/library/biophysics-action-potentials",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-ultrasound",
+          "title": "Ultrasound echoes, Doppler shifts and energy deposition",
+          "href": "/library/biophysics-ultrasound",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "map-biophysics-systems",
+      "subject": "biophysics",
+      "title": "Biomolecules and body systems",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-water-biopolymers",
+          "title": "Water, protein folding and polymer elasticity",
+          "href": "/library/biophysics-water-biopolymers",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-sensory-biophysics",
+          "title": "Vision, hearing and sensory coding",
+          "href": "/library/biophysics-sensory-biophysics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-biomechanics",
+          "title": "Stress, strain and viscoelastic tissues",
+          "href": "/library/biophysics-biomechanics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-molecular-motors",
+          "title": "Muscle mechanics and molecular motors",
+          "href": "/library/biophysics-molecular-motors",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-structural-methods",
+          "title": "X-ray diffraction and mass spectrometry",
+          "href": "/library/biophysics-structural-methods",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-magnetic-resonance",
+          "title": "Spin, NMR, ESR and MRI contrast",
+          "href": "/library/biophysics-magnetic-resonance",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-circulation-ecg",
+          "title": "Circulation, cardiac work and the ECG",
+          "href": "/library/biophysics-circulation-ecg",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-respiratory-physics",
+          "title": "Breathing mechanics, gas exchange and physical examination",
+          "href": "/library/biophysics-respiratory-physics",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "map-biophysics-practicals",
+      "subject": "biophysics",
+      "title": "Measurement practicals",
+      "sourceLabel": "Biophysics theory and practical sequence",
+      "sourceId": "biophysics",
+      "topics": [
+        {
+          "id": "map-biophysics-practical-lenses",
+          "title": "Practical: lens power and microscope calibration",
+          "href": "/library/biophysics-practical-lenses",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-refractometry",
+          "title": "Practical: refractive index and concentration",
+          "href": "/library/biophysics-practical-refractometry",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-absorbance",
+          "title": "Practical: blanks, dilution and absorbance",
+          "href": "/library/biophysics-practical-absorbance",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-polarimetry",
+          "title": "Practical: optical rotation and chirality",
+          "href": "/library/biophysics-practical-polarimetry",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-eye",
+          "title": "Practical: eye optics and visual acuity",
+          "href": "/library/biophysics-practical-eye",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-spectra",
+          "title": "Practical: scintillation spectra and background",
+          "href": "/library/biophysics-practical-spectra",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-attenuation",
+          "title": "Practical: half-value layers and shielding curves",
+          "href": "/library/biophysics-practical-attenuation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-oscillations",
+          "title": "Practical: oscillations, damping and resonance",
+          "href": "/library/biophysics-practical-oscillations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-impedance",
+          "title": "Practical: resistance, capacitance and biological impedance",
+          "href": "/library/biophysics-practical-impedance",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-amplifiers",
+          "title": "Practical: gain, decibels and bandwidth",
+          "href": "/library/biophysics-practical-amplifiers",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-coulter",
+          "title": "Practical: electrical cell counting",
+          "href": "/library/biophysics-practical-coulter",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-diffusion",
+          "title": "Practical: diffusion slopes and uncertainty",
+          "href": "/library/biophysics-practical-diffusion",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-audiometry",
+          "title": "Practical: sound levels and audiograms",
+          "href": "/library/biophysics-practical-audiometry",
+          "status": "introduction-available"
+        },
+        {
+          "id": "map-biophysics-practical-biosignals",
+          "title": "Practical: ECG calibration and pulse timing",
+          "href": "/library/biophysics-practical-biosignals",
+          "status": "introduction-available"
+        }
+      ]
     }
   ]
 }

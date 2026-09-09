@@ -464,7 +464,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   await expect(
     check.getByRole("button", { name: "Check answer", exact: true }),
   ).toBeDisabled();
-  await check.getByRole("radio").first().check();
+  await check.getByRole("radio", { name: "All nuclei are at the same height", exact: true }).check();
   await check.getByRole("button", { name: "Check answer", exact: true }).click();
   await expect(check.locator(".concept-feedback")).toContainText(
     "Review the distinction.",
@@ -521,7 +521,7 @@ test("cross-subject lessons render sources and fit the viewport", async ({
     "cardiac-output",
   ]) {
     expect((await page.goto(`/library/${id}`))?.status()).toBe(200);
-    await expect(page.locator("#lesson-source")).toContainText(
+    await expect(page.locator("#lesson-source:visible")).toContainText(
       "Source section:",
     );
     expect(

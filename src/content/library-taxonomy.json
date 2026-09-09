@@ -86,7 +86,7 @@
     },
     {
       "id": "topic-anatomy-regional-anatomy",
-      "title": "Regional anatomy",
+      "title": "Body regions and orientation",
       "description": "Explore regional anatomy through explanations, visual teaching material, source references and recall practice.",
       "subject": "anatomy",
       "parentId": "anatomy-regions",
@@ -139,7 +139,7 @@
     },
     {
       "id": "topic-anatomy-embryology",
-      "title": "Embryology",
+      "title": "Early development: orientation",
       "description": "Explore embryology through explanations, visual teaching material, source references and recall practice.",
       "subject": "anatomy",
       "parentId": "anatomy-development",
@@ -605,7 +605,7 @@
     },
     {
       "id": "topic-innate-adaptive",
-      "title": "Innate and adaptive immunity",
+      "title": "Immune recognition and activation",
       "description": "Compare recognition strategies and follow the connection from a tissue barrier to lymphocyte activation.",
       "subject": "immunology",
       "parentId": "immunology-immune-responses",
@@ -897,13 +897,15 @@
     },
     {
       "id": "histology-ii-histology-development",
-      "title": "Nervous-system development",
-      "description": "Connect neural tube development with the nervous-system focus of the second course.",
+      "title": "Nervous tissue, barriers and development",
+      "description": "Study supporting cells, myelin, CNS barriers and neural-tube development.",
       "subject": "histology-ii",
       "parentId": null,
       "kind": "system",
       "resources": [
-        "neurulation"
+        "neurulation",
+        "myelin-and-glial-cells",
+        "brain-and-csf-barriers"
       ]
     },
     {

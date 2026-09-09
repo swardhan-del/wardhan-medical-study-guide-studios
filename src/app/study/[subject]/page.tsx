@@ -11,6 +11,7 @@ import { videosForLesson } from "@/lib/videos";
 import { videoDuration } from "@/lib/video-types";
 import audioData from "@/content/study-audio.json";
 import { renalLessons, renalQuestions } from "@/content/renal-course";
+import { beginnerSequences } from "@/content/study-paths";
 type Props = { params: Promise<{ subject: string }> };
 export function generateStaticParams() { return studySubjects.map(s => ({ subject: s.id })); }
 export async function generateMetadata({ params }: Props) { const { subject } = await params; const s = studySubjects.find(s => s.id === subject); return { title: s ? s.title + " · Subject learning" : "Subject not found", description: s?.description, alternates: { canonical: "/study/" + subject } }; }
@@ -21,7 +22,7 @@ export default async function SubjectStudyPage({ params }: Props) {
  const cards = lessons.map(l => { const g = groups.find(g => g.lessonIds.includes(l.id))!; const video = videosForLesson(l.id)[0]; return { id: l.id, title: l.title, summary: l.summary, tags: l.tags, searchText: (searchIndex as Record<string, string>)[l.id], minutes: l.minutes, group: g.id, groupTitle: g.title, figure: figuresForResource(l.id)[0], videoId: video?.id, duration: video ? videoDuration(video.durationSeconds) : undefined, audio: audio.some(a => a.lessonId === l.id) }; });
  return <div className="site-container study-page">
    <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/subjects">Subjects</Link><span aria-hidden="true"> / </span><span aria-current="page">{s.title}</span></nav>
-   <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><p className="interior-lede">{s.description}</p><p>Study a mechanism, explain an answer, then revise it with recap cards, narrated videos or audio where available.</p>
+   <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><div className="action-row"><Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start the first lesson</Link><Link href={`/learn/foundations/${subject}`}>Learn the foundations</Link></div><p className="interior-lede">{s.description}</p>
      <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link></div>
    </header>
    <BeginnerSequence subject={subject} />

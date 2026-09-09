@@ -29,14 +29,6 @@ test("library to subject to system to topic to PDF and download", async ({
     .first()
     .getByRole("link")
     .click();
-  await expect(page).toHaveURL(/topics\/topic-renal-revision-sheet$/);
-  await page
-    .getByRole("heading", {
-      name: "Renal physiology revision sheet",
-      exact: true,
-    })
-    .getByRole("link")
-    .click();
   await expect(page).toHaveURL(/library\/renal-revision-sheet$/);
   await expect(page.locator('object[type="application/pdf"]')).toBeVisible();
   const download = page.waitForEvent("download");

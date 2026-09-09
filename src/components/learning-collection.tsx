@@ -33,10 +33,10 @@ export function LearningCollection({ compact = false }: { compact?: boolean }) {
     ],
     [
       "05 · Oral practice",
-      "Prepare an oral explanation",
+      "Prepare a renal oral explanation",
       "Organise your answer with structured prompts, self-assessment criteria, and follow-up questions.",
       "/practice/oral",
-      "Practise an oral answer",
+      "Practise a renal oral answer",
     ],
     [
       "06 · Your next session",

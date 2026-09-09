@@ -4,7 +4,7 @@ test("first visit reaches each subject coverage map and a real starting lesson",
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));
   await page.goto("/");
-  const subjects = page.locator("section[aria-labelledby=subject-heading]");
+  const subjects = page.locator("section[aria-labelledby=subject-heading]:visible");
   expect(await subjects.evaluate(el => !!(el.compareDocumentPosition(document.querySelector("section[aria-labelledby=learning-heading]")!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
   await page.locator(".hero-copy").getByRole("link", {name:"Start here", exact:true}).click();
   await expect(page).toHaveURL(/\/start$/);
@@ -75,8 +75,9 @@ test("first-visitor navigation exposes consistent subjects, printable notes and 
   await expect(page.locator(".directory-subject-card")).toHaveCount(7);
   await expect(page.locator(".directory-subject-card").getByRole("heading", { name: "Genetics & Immunology", exact: true })).toBeVisible();
   await page.getByRole("searchbox", { name: "Search topics", exact: true }).fill("Regional anatomy");
-  await expect(page.getByRole("link", { name: "Regional anatomy — topic collection", exact: true })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Regional anatomy — focused topic", exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Regional anatomy", exact: true })).toBeVisible();
+  await page.getByRole("searchbox", { name: "Search topics", exact: true }).fill("Body regions");
+  await expect(page.getByRole("link", { name: "Body regions and orientation", exact: true })).toBeVisible();
   await page.goto("/study/map");
   await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("biophysics");
   await expect(page.getByRole("status")).toContainText("50 topics");
