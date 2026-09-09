@@ -4061,3 +4061,4 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .revision-section, .revision-answers { margin: 0; }
   .revision-section:last-child { padding-bottom: 0; }
 }
+@media print { .revision-page p:last-child { margin-bottom: 0; } }
