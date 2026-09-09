@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { validateLibraryLessons } from '../scripts/library-schema.mjs';
+import { beginnerSequences } from '../src/content/study-paths.ts';
 import { renalLessons } from '../src/content/renal-course.ts';
 const read = name => JSON.parse(fs.readFileSync(new URL('../src/content/'+name+'.json',import.meta.url),'utf8'));
 const lessons=read('library-lessons'), catalog=read('public-catalog'), sources=read('library-sources');
@@ -39,5 +40,15 @@ test('new guided lessons have explicit references and explanations for every opt
   for(const lesson of lessons.lessons.filter(l=>l.workedExample)){
     assert(refs[lesson.id]);assert(lesson.steps.length>=4);
     assert(lesson.question.options.every(o=>o.reason.length>30));
+  }
+});
+
+test('beginner paths lead to published pages and agree with subject entry points',()=>{
+  const urls=new Set([...catalog.records.map(r=>r.href||'/library/'+r.id),'/start/anatomy']);
+  assert.equal(Object.keys(beginnerSequences).length,7);
+  assert.equal(beginnerSequences.anatomy[0].href,'/start/anatomy');
+  for(const steps of Object.values(beginnerSequences)){
+    assert.equal(steps.length,3);
+    for(const step of steps) assert(urls.has(step.href),'Unpublished beginner destination: '+step.href);
   }
 });

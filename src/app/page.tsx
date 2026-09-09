@@ -19,9 +19,7 @@ export default function Home() {
             Understand the science. Connect the concepts.
           </h1>
           <p className="hero-lede">
-            Explore focused lessons, visual explanations, and practice questions
-            across the medical sciences. Study a topic, check your
-            understanding, and return to the concepts you want to strengthen.
+            Choose a subject, study one idea, and check your understanding. Focused introductions and practice across seven medical sciences.
           </p>
           <div className="action-row">
             <Link className="button button-primary" href="/start">
@@ -32,11 +30,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <aside className="hero-aside" aria-label="Your first study session">
-          <p className="eyebrow">New here?</p><h2>One lesson. One clear next step.</h2>
-          <ol className="hero-path"><li><span>01</span> Choose your subject and check topic coverage</li><li><span>02</span> Read, then explain it without looking</li><li><span>03</span> Answer questions and review mistakes</li></ol>
-          <Link className="text-link" href="/start">Plan your first 15 minutes →</Link>
-        </aside>
+        <aside className="hero-aside" aria-label="Your first study session"><p className="eyebrow">Start learning</p><h2>Choose your subject</h2><nav className="home-subject-links" aria-label="Start a subject">{subjectInterests.map(s => <Link key={s.id} href={`/study/${s.id}`}>{s.title} →</Link>)}</nav></aside>
       </section>
       <section
         className="content-section site-container"

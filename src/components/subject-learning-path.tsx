@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { BeginnerSequence } from "./beginner-sequence";
+import { beginnerSequences } from "@/content/study-paths";
 const paths: Record<string, [string, string, string][]> = {
   biophysics: [["Begin with light and units", "/library/biophysics-radiation-optics", "Establish quantities and assumptions before using equations."], ["Follow the full course", "/study/biophysics", "Work through 36 theory topics and 14 practical lessons."], ["Test a prediction", "/practice/biophysics", "Change a model, inspect the graph and explain the result."]],
   anatomy: [["Orient the regions", "/subjects/anatomy/regional-anatomy", "Find landmarks and connect neighbouring regions."], ["Study the thorax", "/subjects/anatomy/thorax", "Explore the chest map, breathing model and twelve questions."], ["Connect abdominal development", "/subjects/anatomy/abdomen", "Follow the peritoneum and arterial territories."]],
@@ -10,6 +12,7 @@ const paths: Record<string, [string, string, string][]> = {
   immunology: [["Organise the response", "/library/innate-adaptive", "Distinguish immediate recognition from adaptive specificity."], ["Present an antigen", "/library/antigen-presentation", "Connect processing pathways with T-cell recognition."], ["Follow complement", "/library/complement", "Separate activation routes from shared effector functions."]],
 };
 export function SubjectLearningPath({ subject }: { subject: string }) {
+  if (beginnerSequences[subject]) return <BeginnerSequence subject={subject} />;
   const steps = paths[subject];
   if (!steps) return null;
   return <section className="study-panel subject-learning-path" aria-labelledby="subject-path-title"><p className="eyebrow">Suggested learning sequence</p><h2 id="subject-path-title">Start with these topics</h2><p>Follow the suggested sequence or choose the topic you need to review.</p><ol className="study-grid three">{steps.map(([title, href, explanation]) => <li key={href}><h3><Link className="text-link" href={href}>{title} →</Link></h3><p>{explanation}</p></li>)}</ol><Link className="text-link" href="/study">Open My Study →</Link></section>;

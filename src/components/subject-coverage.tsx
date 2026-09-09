@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { studyPaths } from "@/content/study-paths";
+import { studyPaths, beginnerSequences } from "@/content/study-paths";
 import { studyGroups, subjectLessons } from "@/lib/study-collections";
 import { practiceItems } from "@/content/practice-registry";
 
@@ -11,7 +11,7 @@ export function SubjectCoverage({ subject }: { subject: string }) {
     <p className="eyebrow">Start here · Topic coverage</p>
     <h2 id="coverage-title">What you can study here</h2>
     <p>{path.preparation}</p>
-    <Link className="button button-primary" href={`/library/${first.id}`}>Start with {first.title}</Link>
+    <Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start with {subject === "anatomy" ? beginnerSequences[subject][0].title : first.title}</Link>
     <p>{lessons.length} focused lesson introductions. Library resource totals also include other formats and activities; they are not additional lessons or a measure of syllabus completion.</p>
     <p>This map covers the current collection. An available introduction is a starting point, not complete preparation for an examination. Compare it with your course syllabus.</p>
     {studyGroups.filter(g => g.subject === subject).map(group => <details className="study-details" key={group.id}>

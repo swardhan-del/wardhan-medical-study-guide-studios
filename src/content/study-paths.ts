@@ -38,3 +38,14 @@ export const studyPaths: Record<string, StudyPath> = {
     gaps: ["Population and quantitative genetics", "Detailed genetic laboratory methods", "Hypersensitivity and immune deficiency", "Transplantation and tumour immunology"],
   },
 };
+
+// The same first steps appear on Start Here and each subject learning page.
+export const beginnerSequences: Record<string, { title: string; href: string }[]> = {
+  anatomy: [{ title: "Anatomical position, directions and planes", href: "/start/anatomy" }, { title: "Orient the thorax around the lung root", href: "/library/thorax-nerve-relations" }, { title: "Explore the thorax sequence", href: "/subjects/anatomy/thorax" }],
+  histology: [{ title: "Read a histology section", href: "/library/microscopy" }, { title: "Classify epithelia", href: "/library/epithelia" }, { title: "Connect cells to their matrix", href: "/library/connective-tissue" }],
+  "cell-biology": [{ title: "Follow DNA replication", href: "/library/dna-replication" }, { title: "Process an RNA message", href: "/library/rna-processing" }, { title: "Translate the message", href: "/library/translation" }],
+  biochemistry: [{ title: "Connect protein structure to function", href: "/library/protein-structure" }, { title: "Explain enzyme kinetics", href: "/library/enzyme-kinetics" }, { title: "Follow glycolysis", href: "/library/glycolysis" }],
+  physiology: [{ title: "Fluid compartments and membrane transport", href: "/library/fluid-and-membrane-transport" }, { title: "Explain membrane potentials", href: "/library/membrane-potentials" }, { title: "Connect excitation to muscle contraction", href: "/library/muscle-contraction" }],
+  genetics: [{ title: "Follow chromosomes through meiosis", href: "/library/meiosis" }, { title: "Reason through inheritance", href: "/library/inheritance" }, { title: "Compare innate and adaptive responses", href: "/library/innate-adaptive" }],
+  biophysics: [{ title: "Begin with light and units", href: "/library/biophysics-radiation-optics" }, { title: "Form an image", href: "/library/biophysics-image-formation" }, { title: "Explain wave optics", href: "/library/biophysics-wave-optics" }],
+};

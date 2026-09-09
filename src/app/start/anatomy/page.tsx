@@ -1,0 +1,10 @@
+import Link from "next/link";
+export const metadata = { title: "Anatomy: before your first lesson", description: "Review anatomical position, directions and body planes before studying the thorax.", alternates: { canonical: "/start/anatomy" } };
+export default function AnatomyStart() {
+  return <article className="site-container study-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/start">Start here</Link><span> / Anatomy foundations</span></nav><header className="study-hero"><p className="eyebrow">Anatomy · First step · 3 minutes</p><h1>Position, directions and planes</h1><p className="interior-lede">Use these terms before describing where a nerve lies.</p></header>
+  <section className="study-panel"><h2>1. Set the reference position</h2><p>Picture a person standing upright, facing forwards, with palms facing forwards. Right and left belong to that person, not the viewer.</p></section>
+  <section className="study-panel"><h2>2. Describe a relationship</h2><ul><li>Anterior: towards the front. Posterior: towards the back.</li><li>Superior: towards the head. Inferior: towards the feet.</li><li>Medial: towards the midline. Lateral: away from it.</li></ul></section>
+  <section className="study-panel"><h2>3. Identify the plane</h2><ul><li>Sagittal: separates right and left portions.</li><li>Coronal: separates front and back portions.</li><li>Transverse: separates upper and lower portions.</li></ul><details className="study-details"><summary>Recall: which plane separates front from back?</summary><p>The coronal plane. Now explain how it differs from a transverse plane.</p></details></section>
+  <p>Original introductory summary checked against <a href="https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology">OpenStax Anatomy and Physiology 2e, section 1.6</a>. Updated 9 September 2026. AI-assisted preparation; independent clinical peer review has not been completed.</p>
+  <Link className="button button-primary" href="/library/thorax-nerve-relations">Next: orient the thorax around the lung root →</Link></article>;
+}
