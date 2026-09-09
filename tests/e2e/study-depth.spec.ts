@@ -1,6 +1,21 @@
 import { test, expect } from '@playwright/test';
 import data from '../../src/content/library-lessons.json';
 
+test('a pending radio copy cannot interfere with an active practice question',async({page})=>{
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('/library/indicator-dilution');
+  // Reproduce a same-named input in a not-yet-hydrated streaming copy.
+  await page.evaluate(()=>{
+    const pending=document.createElement('input');pending.type='radio';
+    pending.name='concept-indicator-dilution';pending.hidden=true;document.body.append(pending);
+  });
+  const check=page.locator('#concept-check-title:visible');
+  await check.getByRole('radio').nth(1).check();
+  await check.getByRole('button',{name:'Check answer',exact:true}).click();
+  await expect(check.getByRole('status')).toContainText('Correct.');
+  expect(errors).toEqual([]);
+});
+
 test('map filters separate available introductions from planned adaptations',async({page},info)=>{
   await page.goto('/study');
   await page.getByRole('link',{name:'Open study map',exact:true}).click();

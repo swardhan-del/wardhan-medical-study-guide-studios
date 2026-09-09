@@ -31,7 +31,7 @@ export function StudyMapBrowser({ groups }: { groups: Group[] }) {
       <label htmlFor="map-availability">Availability<select id="map-availability" value={availability} onChange={e => setAvailability(e.target.value)}><option value="all">All topics</option><option value="available">Introduction available</option><option value="planned">Planned adaptation</option></select></label>
       <button type="button" className="button button-secondary" onClick={() => { setQuery(""); setSubject("all"); setAvailability("all"); }}>Clear filters</button>
     </section>
-    <p role="status">{count} topics in {visible.length} sections</p>
+    <p role="status">{count} {count === 1 ? "topic" : "topics"} in {visible.length} {visible.length === 1 ? "section" : "sections"}</p>
     {count === 0 && <p className="study-panel">No topics match these filters. Try a broader term or clear the filters.</p>}
     <div className="study-map-groups">{visible.map(g => <section className="study-panel" key={g.id} aria-labelledby={`${g.id}-heading`}>
       <p className="eyebrow">{subjects.find(([id]) => id === g.subject)?.[1]}</p>
