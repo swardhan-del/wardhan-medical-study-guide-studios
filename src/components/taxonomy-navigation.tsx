@@ -1,6 +1,7 @@
 import { FigureThumbnail } from "./educational-figure";
 import { figuresForTopic } from "@/lib/figures";
 import Link from "next/link";
+import { resourceHref } from "@/lib/catalog-types";
 import {
   ancestors,
   librarySubjects,
@@ -56,6 +57,10 @@ export function TopicCards({
   const nodes = taxonomyNodes.filter(
     (n) => n.subject === subject && n.parentId === parentId,
   );
+  const destination = (node: TaxonomyNode) => {
+    const records = recordsForNode(node);
+    return records.length === 1 && !taxonomyNodes.some(child => child.parentId === node.id) ? resourceHref(records[0]) : topicHref(node.id);
+  };
   return (
     <div className="resource-grid taxonomy-grid">
       {nodes.map((n) => (
@@ -66,11 +71,11 @@ export function TopicCards({
             {recordsForNode(n).length === 1 ? "resource" : "resources"}
           </p>
           <h2>
-            <Link href={topicHref(n.id)}>{n.title}</Link>
+            <Link href={destination(n)}>{n.title}</Link>
           </h2>
           <p>{n.description}</p>
-          <Link className="text-link" href={topicHref(n.id)}>
-            Explore topic →
+          <Link className="text-link" href={destination(n)}>
+            Open available learning →
           </Link>
         </article>
       ))}

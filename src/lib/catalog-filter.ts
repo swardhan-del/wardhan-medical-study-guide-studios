@@ -10,12 +10,20 @@ const aliases: Record<string, string> = {
   remodelling: "remodeling", signalling: "signaling", specialisations: "specializations",
 };
 const canonical = (value: string) => normalizeSearch(value).split(" ").map(w => aliases[w] ?? w).join(" ");
+export function searchTerms(query: string) {
+  const text = canonical(query.slice(0, 200));
+  const question = text.replace(/^(?:can you |please )?(?:explain|describe|tell me about)\s+/, "")
+    .replace(/^(?:what (?:is|are)|how (?:does|do)|why (?:does|do))\s+/, "");
+  const useful = /^how (?:does|do) /.test(text) ? question.replace(/\s+works?$/, "") : question;
+  return useful.split(" ").filter(word => word && !["the", "a", "an"].includes(word));
+}
 export function catalogSearchText(record: CatalogRecord, subjectTitle = "") {
   return [record.title, record.summary, record.kind, subjectTitle, ...(record.tags ?? []), record.searchText ?? ""].join(" ");
 }
 export function matchesSearchText(text: string, query: string) {
   const haystack = canonical(text);
-  return canonical(query.slice(0, 200)).split(" ").filter(Boolean).every(word => haystack.includes(word));
+  const words = new Set(haystack.split(" "));
+  return searchTerms(query).every(word => words.has(word));
 }
 export function matchesCatalogQuery(record: CatalogRecord, query: string, subjectTitle = "") {
   return matchesSearchText(catalogSearchText(record, subjectTitle), query);

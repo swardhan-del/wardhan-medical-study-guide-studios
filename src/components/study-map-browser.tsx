@@ -8,7 +8,7 @@ const subjects = [
   ["anatomy", "Anatomy"], ["histology", "Histology and embryology"],
   ["physiology", "Physiology"], ["cell-biology", "Molecular cell biology"],
   ["biochemistry", "Biochemistry"], ["genetics", "Genetics and immunology"],
-  ["biostatistics", "Biostatistics"],
+  ["biostatistics", "Biostatistics"], ["biophysics", "Biophysics"],
 ];
 
 export function StudyMapBrowser({ groups }: { groups: Group[] }) {

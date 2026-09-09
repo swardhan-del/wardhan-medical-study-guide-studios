@@ -142,10 +142,10 @@ export function StudyDashboard() {
         </p>
         <div className="action-row">
           <Link className="text-link" href="/study/planner">
-            Plan for my exam →
+            Plan my renal revision →
           </Link>
           <Link className="text-link" href="/practice/oral">
-            Practise an oral answer →
+            Practise a renal oral answer →
           </Link>
         </div>
       </section>

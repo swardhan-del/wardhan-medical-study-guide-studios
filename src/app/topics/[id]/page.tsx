@@ -8,6 +8,7 @@ import {
   TopicCards,
 } from "@/components/taxonomy-navigation";
 import { CatalogBrowser } from "@/components/catalog-browser";
+import { resourceHref } from "@/lib/catalog-types";
 type Props = { params: Promise<{ id: string }> };
 export function generateStaticParams() {
   return taxonomyNodes.map((n) => ({ id: n.id }));
@@ -25,6 +26,7 @@ export default async function TopicPage({ params }: Props) {
   const { id } = await params;
   const n = taxonomyNodes.find((n) => n.id === id);
   if (!n) notFound();
+  const resources = recordsForNode(n);
   const siblings = taxonomyNodes.filter(
     (s) =>
       s.subject === n.subject && s.parentId === n.parentId && s.id !== n.id,
@@ -40,7 +42,7 @@ export default async function TopicPage({ params }: Props) {
       <TopicCards subject={n.subject} parentId={n.id} />
       <section aria-label="Topic resources">
         <h2 className="native-section-title">Available resources</h2>
-        <CatalogBrowser records={recordsForNode(n)} />
+        {resources.length === 1 ? <article className="study-panel"><h3>{resources[0].title}</h3><p>{resources[0].summary}</p><Link className="button button-primary" href={resourceHref(resources[0])}>{resources[0].kind.includes("outline") || resources[0].id === "anatomy-musculoskeletal" ? "Open available study outline" : "Open learning resource"}</Link></article> : <CatalogBrowser records={resources} />}
       </section>
       <FigureGallery
         figures={figuresForTopic(n.id)}

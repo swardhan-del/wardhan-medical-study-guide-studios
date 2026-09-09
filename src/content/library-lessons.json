@@ -211,12 +211,12 @@
             "reason": "Correct: aligned bundles suit the principal direction of force transmission."
           },
           {
-            "text": "It creates a secretory epithelial surface",
-            "reason": "Tendon is connective tissue, not a secretory epithelium."
+            "text": "It distributes tensile force equally in every direction",
+            "reason": "Parallel bundles preferentially resist force along their long axis; a multidirectional network has a different arrangement."
           },
           {
-            "text": "It makes tendon an electrically excitable tissue",
-            "reason": "Fiber orientation chiefly explains mechanical behavior here."
+            "text": "It primarily resists compression through a highly hydrated matrix",
+            "reason": "A hydrated matrix is particularly important for compression resistance in cartilage; the question concerns tensile loading in tendon."
           }
         ],
         "answer": 0
@@ -230,7 +230,7 @@
         "protein-structure",
         "muscle-histology"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -616,16 +616,16 @@
         "prompt": "Which structure most strongly supports duodenum?",
         "options": [
           {
-            "text": "Hassall corpuscles",
-            "reason": "These are characteristic of thymic medulla."
+            "text": "Peyer patches concentrated in the mucosa and submucosa",
+            "reason": "Prominent aggregated lymphoid nodules support ileum rather than the characteristic duodenal submucosal glands."
           },
           {
             "text": "Submucosal Brunner glands",
             "reason": "Correct: their location is a particularly useful duodenal clue."
           },
           {
-            "text": "Renal corpuscles",
-            "reason": "These locate kidney cortex."
+            "text": "Long straight crypts without villi",
+            "reason": "Crypts without villi favour large intestine rather than duodenum."
           }
         ],
         "answer": 1
@@ -639,7 +639,7 @@
         "liver-pancreas",
         "glycolysis"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -791,16 +791,16 @@
         "prompt": "Where are Leydig cells found?",
         "options": [
           {
-            "text": "Inside the oocyte",
-            "reason": "Leydig cells belong to the testis, not the ovary."
+            "text": "Within the seminiferous epithelium alongside developing germ cells",
+            "reason": "That position fits Sertoli cells rather than interstitial Leydig cells."
           },
           {
             "text": "In the interstitial tissue between seminiferous tubules",
             "reason": "Correct: their location distinguishes them from supporting Sertoli cells within tubules."
           },
           {
-            "text": "In uterine glands",
-            "reason": "Those are endometrial epithelial structures."
+            "text": "In the epididymal epithelial lining",
+            "reason": "The epididymal lining supports sperm maturation and transport; Leydig cells are in testicular interstitium."
           }
         ],
         "answer": 1
@@ -814,7 +814,7 @@
         "meiosis",
         "epithelia"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -988,7 +988,7 @@
         "meiosis",
         "pcr"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -1222,7 +1222,7 @@
         "cell-junctions",
         "protein-structure"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -1515,7 +1515,7 @@
         "lipid-metabolism",
         "enzyme-kinetics"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -1676,8 +1676,8 @@
             "reason": "Correct: homologs segregate while sister chromatids remain paired."
           },
           {
-            "text": "All chromosomes are destroyed",
-            "reason": "Meiosis segregates genetic material rather than destroying it."
+            "text": "Homologous chromosomes remain paired while sister chromatids separate",
+            "reason": "That describes the wrong separation for meiosis I: homologues separate while sister chromatids normally remain together."
           }
         ],
         "answer": 1
@@ -1691,7 +1691,7 @@
         "inheritance",
         "genetic-testing"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -1845,16 +1845,16 @@
         "prompt": "Which cell is especially important for priming naive T cells?",
         "options": [
           {
-            "text": "Mature erythrocyte",
-            "reason": "An erythrocyte is not a professional antigen-presenting cell."
+            "text": "Neutrophils arriving first at an infected tissue",
+            "reason": "Neutrophils are important early effectors; dendritic cells are especially important for priming naive T cells."
           },
           {
             "text": "Dendritic cell",
             "reason": "Correct: dendritic cells link antigen capture, presentation and activation of naive T cells."
           },
           {
-            "text": "Platelet alone",
-            "reason": "Platelets have inflammatory roles but are not the standard naive-T-cell priming cell."
+            "text": "Mature plasma cells secreting antibody",
+            "reason": "Plasma cells are antibody-secreting effectors rather than the principal cells that prime naive T cells."
           }
         ],
         "answer": 1
@@ -1868,7 +1868,7 @@
         "antigen-presentation",
         "complement"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -1908,8 +1908,8 @@
             "reason": "CD8 is conventionally associated with class I recognition."
           },
           {
-            "text": "Free antibody with a ribosome",
-            "reason": "This is unrelated to conventional T-cell peptide recognition."
+            "text": "MHC I presenting an intracellular peptide to a CD8 T cell",
+            "reason": "This is the conventional class I pathway; the question asks about class II recognition."
           },
           {
             "text": "Peptide–MHC II with a CD4 T cell",
@@ -1927,7 +1927,7 @@
         "lymphoid-organs",
         "protein-trafficking"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -2080,12 +2080,12 @@
         "prompt": "For an illustrative heart rate of 60/min and stroke volume of 70 mL, what is cardiac output?",
         "options": [
           {
-            "text": "70 mL/min",
-            "reason": "This ignores the number of beats per minute."
+            "text": "0.07 L/min",
+            "reason": "This is stroke volume expressed in litres without multiplying by beats per minute."
           },
           {
-            "text": "130 L/min",
-            "reason": "Heart rate and stroke volume are multiplied, not added."
+            "text": "420 L/min",
+            "reason": "Convert 4200 mL/min to litres by dividing by 1000, not by 10."
           },
           {
             "text": "4.2 L/min",
@@ -2103,7 +2103,7 @@
         "muscle-histology",
         "vessel-histology"
       ],
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "minutes": 5
     },
     {
@@ -3091,8 +3091,8 @@
             "reason": "The phrenic nerve passes in front of the root and the vagus behind it."
           },
           {
-            "text": "Both nerves travel inside a pulmonary artery",
-            "reason": "Neither relationship is described by an intravascular course."
+            "text": "Both nerves pass posterior to the lung root",
+            "reason": "The vagus is posterior, but the phrenic nerve passes anterior to the root."
           }
         ]
       },
@@ -3195,12 +3195,12 @@
         "answer": 2,
         "options": [
           {
-            "text": "Renal artery → renal vein → bladder",
-            "reason": "This confuses the vascular and urinary pathways."
+            "text": "Renal pelvis → minor calyx → major calyx → ureter",
+            "reason": "This reverses the order: minor calyces receive urine before major calyces and the renal pelvis."
           },
           {
-            "text": "Urethra → ureter → renal pelvis",
-            "reason": "This reverses the route and interchanges ureter and urethra."
+            "text": "Minor calyx → renal pelvis → major calyx → urethra",
+            "reason": "Major calyces precede the renal pelvis, and urine next enters the ureter; the urethra is downstream of the bladder."
           },
           {
             "text": "Minor calyx → major calyx → renal pelvis → ureter",
@@ -3223,7 +3223,7 @@
         "guided revision"
       ],
       "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "updatedAt": "2026-09-09"
     },
     {
       "id": "head-neck-tongue-map",

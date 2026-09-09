@@ -1,4 +1,7 @@
 import { PlexusRecall } from "./plexus-recall";
+import { TeachingDiagram, hasTeachingDiagram } from "./teaching-diagram";
+import { foundations } from "@/content/foundations";
+import { studyGroups, studyLessons } from "@/lib/study-collections";
 import { EducationalFigure, FigureGallery } from "./educational-figure";
 import { figuresForResource } from "@/lib/figures";
 import { videosForLesson } from "@/lib/videos";
@@ -29,6 +32,12 @@ import { SaveButton } from "./catalog-browser";
 import { ConceptCheck } from "./concept-check";
 
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
+  const figures = figuresForResource(lesson.id);
+  const hasFigures = figures.length > 0 || hasTeachingDiagram(lesson.id);
+  const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
+  const foundation = foundations[lesson.subject];
+  const sequence = studyGroups.filter(group => group.subject === lesson.subject).flatMap(group => group.lessonIds);
+  const nextLesson = studyLessons.find(candidate => candidate.id === sequence[sequence.indexOf(lesson.id) + 1]);
   const subject = subjectInterests.find((s) => s.id === lesson.subject)!;
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
   const reference = (
@@ -88,17 +97,19 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         </div>
       </header>
       {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
-      <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a><a href="#lesson-figures">Figures</a><a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>
+      <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>
       <div className="concept-layout">
         <div>
-          {lesson.objectives && <section className="study-panel" aria-labelledby="lesson-objectives">
+          <section className="study-panel lesson-preparation" aria-labelledby="lesson-objectives">
             <h2 id="lesson-objectives">What you will be able to explain</h2>
-            <ul>{lesson.objectives.map(objective => <li key={objective}>{objective}</li>)}</ul>
+            <ul>{(lesson.objectives ?? [lesson.summary]).map(objective => <li key={objective}>{objective}</li>)}</ul>
+            <p><Link href={`/learn/foundations/${lesson.subject}`}>New to this subject? Learn the starting vocabulary</Link></p>
+            {foundation && <details><summary>Subject vocabulary reminder</summary><dl className="foundation-terms">{foundation.terms.map(([term, definition]) => <div key={term}><dt>{term}</dt><dd>{definition}</dd></div>)}</dl><a href={foundation.source}>Vocabulary reference</a></details>}
             {lesson.prerequisites && <><h3>Useful preparation</h3><ul>{lesson.prerequisites.map(id => {
               const resource = publicCatalog.find(r => r.id === id);
               return resource ? <li key={id}><Link href={resourceHref(resource)}>{resource.title}</Link></li> : null;
             })}</ul></>}
-          </section>}
+          </section>
           <section
             className="concept-explanations"
             aria-labelledby="concept-map-title"
@@ -134,7 +145,8 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             <p>{lesson.workedExample.prompt}</p>
             <details><summary>Show the reasoning</summary><ol>{lesson.workedExample.solution.map(step => <li key={step}>{step}</li>)}</ol></details>
           </section>}
-          <span id="lesson-figures" />
+          {hasFigures && <span id="lesson-figures" />}
+          <TeachingDiagram lessonId={lesson.id} />
           {lesson.id === "epithelia" && (
             <>
               <HistologyVisualLesson />
@@ -215,6 +227,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
               Try explaining the mechanism aloud before revealing the answer.
             </p>
           </section>
+          <nav className="study-panel" aria-label="Continue the subject sequence"><h2>Your next step</h2><p>Explain the answer above without looking, then compare it with the model. Revisit any term you could not explain before moving on.</p>{nextLesson ? <Link className="button button-primary" href={`/library/${nextLesson.id}`}>Next lesson: {nextLesson.title}</Link> : <Link className="button button-primary" href={`/study/${lesson.subject}`}>Return to this subject and choose revision</Link>}</nav>
         </div>
         <aside className="concept-sidebar">
           <p className="eyebrow">Connect the subjects</p>

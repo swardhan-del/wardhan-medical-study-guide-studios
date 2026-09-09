@@ -3981,3 +3981,45 @@ select:focus-visible {
 .plexus-recall-map { display: grid; gap: 1rem; padding-left: 1.5rem; }
 .plexus-recall-map > li { padding: .75rem; border-bottom: 1px solid var(--line, #b3b4ae); }
 .plexus-recall-map ul { padding-left: 1.25rem; }
+
+/* Keep learning actions and long scientific names usable on narrow screens. */
+main h1, main h2, main h3 { overflow-wrap: anywhere; }
+.foundation-terms { display: grid; gap: .8rem; }
+.foundation-terms dt { font-weight: 700; }
+.foundation-terms dd { margin: .2rem 0 0; }
+.lesson-preparation summary { cursor: pointer; padding: .7rem 0; }
+.diagram-scroll { overflow-x: auto; max-width: 100%; border: 1px solid #b7c8c4; background: #fff; }
+.teaching-diagram svg { display: block; width: 100%; min-width: 0; height: auto; color: #153b42; }
+.teaching-diagram svg text { font: 22px system-ui, sans-serif; fill: #153b42; }
+.teaching-diagram svg line, .teaching-diagram svg path { stroke: #153b42; stroke-width: 3; fill: none; }
+.teaching-diagram svg circle { fill: #153b42; }
+.teaching-diagram svg .diagram-product { stroke: #a34c23; stroke-width: 5; }
+.teaching-diagram svg .diagram-ray { stroke: #347c83; stroke-width: 2; }
+.teaching-diagram svg .diagram-lens { stroke: #347c83; stroke-width: 7; }
+.teaching-diagram svg .diagram-myelin { fill: #bfdfd4; stroke: #153b42; stroke-width: 2; }
+.teaching-flow { display: flex; flex-wrap: wrap; gap: 1rem; padding: 0; list-style: none; }
+.teaching-flow li { flex: 1 1 160px; border: 1px solid #799c92; padding: 1rem; background: #eef5f1; }
+.teaching-flow li:not(:last-child)::after { content: "→"; font-size: 1.5rem; }
+@media(max-width:600px) {
+  .study-hero { padding-top: 1rem; margin-bottom: 1.25rem; }
+  .study-hero h1, .library-page > h1 { font-size: 2rem; line-height: 1.12; }
+  .study-hero .interior-lede, .library-page > .interior-lede { font-size: 1rem; }
+  .study-hero .action-row { gap: .7rem; }
+  .teaching-flow { display: block; }
+  .teaching-flow li { margin-bottom: .6rem; }
+  .teaching-flow li:not(:last-child)::after { content: "↓"; }
+}
+@media print {
+  .diagram-scroll { overflow: visible; }
+  .teaching-diagram svg { min-width: 0; }
+  .teaching-diagram, .revision-worked-example { break-inside: avoid; }
+}
+
+.revision-figure img { max-width: 100%; height: auto; }
+@media print { .revision-figure { break-inside: avoid; } .revision-figure img { max-height: 18cm; width: auto; max-width: 100%; object-fit: contain; } }
+
+.concept-layout > * { min-width: 0; }
+.teaching-diagram { min-width: 0; max-width: 100%; margin-inline: 0; }
+
+.diagram-scroll-hint { display: none; }
+@media screen and (max-width: 640px) { .teaching-diagram svg { min-width: 640px; } .diagram-scroll-hint { display: block; } }

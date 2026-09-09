@@ -1,4 +1,5 @@
 import { publicVideos } from "@/lib/videos";
+import { foundations } from "@/content/foundations";
 import { renalLessons, renalLessonHref } from "@/content/renal-course";
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site-url";
@@ -18,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "/",
     "/start",
+    ...Object.keys(foundations).map(subject => "/learn/foundations/" + subject),
     "/about",
     "/subjects",
     "/library",

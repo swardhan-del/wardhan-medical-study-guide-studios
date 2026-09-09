@@ -7,7 +7,7 @@ import {
   recordsForNode,
   subjectRecords,
 } from "@/lib/taxonomy";
-import { subjectLessons } from "@/lib/study-collections";
+import { subjectDestination } from "@/lib/student-subjects";
 import { TopicSearch } from "@/components/topic-search";
 export const metadata = {
   title: "Medical subjects",
@@ -18,7 +18,7 @@ export const metadata = {
 export default function SubjectsPage() {
   const available = (id: string) => subjectRecords(id);
   const lessonCount = (id: string) => available(id).filter(r => r.kind === "Study lesson" || r.kind === "Renal course lesson").length;
-  const landing = (id: string) => subjectLessons(id).length && id !== "genetics" ? `/study/${id}` : available(id).length ? `/library?subject=${id}` : `/subjects/${id}`;
+  const landing = subjectDestination;
   return (
     <div className="site-container library-page">
       <header className="library-heading">

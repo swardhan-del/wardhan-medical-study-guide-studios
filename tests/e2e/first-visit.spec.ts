@@ -4,7 +4,7 @@ test("first visit reaches each subject coverage map and a real starting lesson",
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));
   await page.goto("/");
-  const subjects = page.locator("section[aria-labelledby=subject-heading]");
+  const subjects = page.locator("section[aria-labelledby=subject-heading]:visible");
   expect(await subjects.evaluate(el => !!(el.compareDocumentPosition(document.querySelector("section[aria-labelledby=learning-heading]")!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
   await page.locator(".hero-copy").getByRole("link", {name:"Start here", exact:true}).click();
   await expect(page).toHaveURL(/\/start$/);

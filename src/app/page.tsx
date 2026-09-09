@@ -1,7 +1,7 @@
 import { QuickSearch } from "@/components/quick-search";
 import Link from "next/link";
 import { SubjectCard } from "@/components/subject-card";
-import { subjectInterests } from "@/content/subjects";
+import { studentSubjects } from "@/lib/student-subjects";
 import { renalLessons, renalQuestions } from "@/content/renal-course";
 import { LearningCollection } from "@/components/learning-collection";
 export const metadata = { alternates: { canonical: "/" } };
@@ -50,7 +50,7 @@ export default function Home() {
           </p>
         </div>
         <div className="subject-grid">
-          {subjectInterests.map((subject) => (
+          {studentSubjects.map((subject) => (
             <SubjectCard key={subject.id} subject={subject} />
           ))}
         </div>

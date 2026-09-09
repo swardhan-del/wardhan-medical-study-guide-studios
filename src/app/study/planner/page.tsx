@@ -11,7 +11,7 @@ export default function PlannerPage() {
         <Link className="text-link" href="/study">
           ← My Study
         </Link>
-        <p className="eyebrow">Exam countdown planner</p>
+        <p className="eyebrow">Renal revision planner</p>
         <h1>
           Make time
           <br />

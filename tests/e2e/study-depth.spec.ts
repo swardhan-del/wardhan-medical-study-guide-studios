@@ -10,7 +10,7 @@ test('a pending radio copy cannot interfere with an active practice question',as
     pending.name='concept-indicator-dilution';pending.hidden=true;document.body.append(pending);
   });
   const check=page.locator('#concept-check-title:visible');
-  await check.getByRole('radio').nth(1).check();
+  await check.getByRole('radio', { name: data.lessons.find(l => l.id === 'indicator-dilution')!.question.options[1].text, exact: true }).check();
   await check.getByRole('button',{name:'Check answer',exact:true}).click();
   await expect(check.getByRole('status')).toContainText('Correct.');
   expect(errors).toEqual([]);
@@ -43,11 +43,11 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     await worked.locator('summary').click();
     await expect(worked.locator('ol')).toBeVisible();
     const check=page.locator('#concept-check-title:visible');
-    await check.getByRole('radio').nth(lesson.question.answer).check();
+    await check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
     await check.getByRole('button',{name:'Check answer',exact:true}).click();
     await expect(check.getByRole('status')).toContainText('Correct.');
     await page.reload();
-    await expect(check.getByRole('radio').nth(lesson.question.answer)).toBeChecked();
+    await expect(check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeChecked();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     expect(errors).toEqual([]);
     if(lesson.id==='indicator-dilution') await page.screenshot({path:info.outputPath('guided-lesson.png'),fullPage:true});

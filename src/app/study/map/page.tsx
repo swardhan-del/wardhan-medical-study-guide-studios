@@ -17,7 +17,7 @@ export default function StudyMapPage() {
       <p className="interior-lede">{total} topics across {data.groups.length} source sections, from regional anatomy to molecular mechanisms.</p>
       <p>The native collection currently contains {studyLessons.length} lessons, alongside the separate renal course. Linked topics have an introduction available; this does not mean their full scope is complete. Planned adaptations are a development sequence, not finished lessons or a measure of syllabus coverage.</p>
       <p>Biostatistics needs a newly authored course. Its topics are proposals rather than an imported textbook.</p>
-      <Link className="button button-primary" href="/study">Choose an available lesson</Link>
+      <Link className="button button-primary" href="/subjects">Choose an available lesson</Link>
     </header>
     <StudyMapBrowser groups={data.groups} />
   </div>;
