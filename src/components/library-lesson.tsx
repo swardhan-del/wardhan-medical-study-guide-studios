@@ -14,6 +14,7 @@ import { SavedRecall } from "./saved-recall";
 import { HistologyVisualLesson } from "./histology-visual-lesson";
 import { CorrectionLink } from "./correction-link";
 import Link from "next/link";
+import { BiophysicsLessonSequence } from "./biophysics-course";
 import { subjectInterests } from "@/content/subjects";
 import sourceData from "@/content/library-sources.json";
 import { publicCatalog } from "@/lib/catalog";
@@ -85,13 +86,14 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           </a>
         </div>
       </header>
+      {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
       <div className="concept-layout">
         <div>
           <section
             className="concept-explanations"
             aria-labelledby="concept-map-title"
           >
-            <p className="eyebrow">Three ideas to connect</p>
+            <p className="eyebrow">{lesson.steps.length} ideas to connect</p>
             <h2 id="concept-map-title">Build the explanation</h2>
             <p>Open each idea, then explain how it relates to the next.</p>
             <div className="concept-sequence">
@@ -164,7 +166,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             </section>
           )}
           {!["epithelia", "microscopy", "renal-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id)} title="Connect the figure with the explanation" />}
-          <StudyReel title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", body: lesson.recall.prompt }]} />
+          <StudyReel key={lesson.id} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
           <ConceptCheck
             key={lesson.id}
             lesson={{ id: lesson.id, question: lesson.question }}
@@ -259,10 +261,10 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           className="button button-primary"
           href={`/study/${subject.id}`}
         >
-          {subject.title} in My Study →
+          {subject.title} learning path →
         </Link>
         <Link className="text-link" href="/library">
-          Explore all subjects
+          Search the library
         </Link>
       </nav>
       <LessonVideos lessonId={lesson.id} />

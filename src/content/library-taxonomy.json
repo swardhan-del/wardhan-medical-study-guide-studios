@@ -66,6 +66,12 @@
       "title": "Biostatistics",
       "description": "The medical statistics reference collection.",
       "learningSubject": null
+    },
+    {
+      "id": "biophysics",
+      "title": "Biophysics",
+      "description": "Study optics, radiation, imaging, transport and the physical principles of living systems through mechanisms and worked measurements.",
+      "learningSubject": "biophysics"
     }
   ],
   "nodes": [
@@ -1188,6 +1194,147 @@
       "kind": "topic",
       "resources": [
         "limbs-plexus-and-joints"
+      ]
+    },
+    {
+      "id": "biophysics-optics",
+      "title": "Optics and light",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-radiation-optics",
+        "biophysics-image-formation",
+        "biophysics-wave-optics",
+        "biophysics-light-duality",
+        "biophysics-atomic-models",
+        "biophysics-molecular-interactions"
+      ]
+    },
+    {
+      "id": "biophysics-matter",
+      "title": "Matter and optical methods",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-gases-statistics",
+        "biophysics-condensed-matter",
+        "biophysics-absorption-scattering",
+        "biophysics-thermal-radiation",
+        "biophysics-luminescence",
+        "biophysics-lasers"
+      ]
+    },
+    {
+      "id": "biophysics-nuclear",
+      "title": "Nuclear physics and imaging",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-nuclear-structure",
+        "biophysics-decay-interactions",
+        "biophysics-radiation-detection",
+        "biophysics-dosimetry",
+        "biophysics-isotope-diagnostics",
+        "biophysics-nuclear-imaging"
+      ]
+    },
+    {
+      "id": "biophysics-signals-imaging",
+      "title": "Signals and X-ray imaging",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-signals",
+        "biophysics-xray-production",
+        "biophysics-ct-imaging"
+      ]
+    },
+    {
+      "id": "biophysics-transport",
+      "title": "Flow, diffusion and thermodynamics",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-fluid-flow",
+        "biophysics-diffusion-osmosis",
+        "biophysics-energy-first-law",
+        "biophysics-entropy-potentials"
+      ]
+    },
+    {
+      "id": "biophysics-membranes",
+      "title": "Membranes and ultrasound",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-resting-potential",
+        "biophysics-action-potentials",
+        "biophysics-ultrasound"
+      ]
+    },
+    {
+      "id": "biophysics-systems",
+      "title": "Biomolecules and body systems",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-water-biopolymers",
+        "biophysics-sensory-biophysics",
+        "biophysics-biomechanics",
+        "biophysics-molecular-motors",
+        "biophysics-structural-methods",
+        "biophysics-magnetic-resonance",
+        "biophysics-circulation-ecg",
+        "biophysics-respiratory-physics"
+      ]
+    },
+    {
+      "id": "biophysics-practicals",
+      "title": "Measurement practicals",
+      "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "biophysics-practical-lenses",
+        "biophysics-practical-refractometry",
+        "biophysics-practical-absorbance",
+        "biophysics-practical-polarimetry",
+        "biophysics-practical-eye",
+        "biophysics-practical-spectra",
+        "biophysics-practical-attenuation",
+        "biophysics-practical-oscillations",
+        "biophysics-practical-impedance",
+        "biophysics-practical-amplifiers",
+        "biophysics-practical-coulter",
+        "biophysics-practical-diffusion",
+        "biophysics-practical-audiometry",
+        "biophysics-practical-biosignals"
+      ]
+    },
+    {
+      "id": "biophysics-models",
+      "title": "Interactive biophysics models",
+      "description": "Predict and explore lenses, attenuation, membrane charging, diffusion, flow and ultrasound timing.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "category",
+      "resources": [
+        "biophysics-lab"
       ]
     }
   ]

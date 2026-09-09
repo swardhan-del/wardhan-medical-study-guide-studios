@@ -1,5 +1,6 @@
 export const formats = ["WEB", "ACTIVITY", "PDF", "DOCX", "PPTX"];
 export const subjects = [
+  "biophysics",
   "anatomy",
   "histology",
   "cell-biology",

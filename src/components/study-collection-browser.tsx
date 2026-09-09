@@ -13,7 +13,7 @@ export function StudyCollectionBrowser({ cards, groups }: { cards: LessonCard[];
     <div className="studio-filters">
       <label htmlFor={id + "-search"}>Search this subject<input id={id + "-search"} type="search" placeholder="Search topics, lessons, or keywords" value={query} onChange={e => setQuery(e.target.value)} /></label>
       <label htmlFor={id + "-topic"}>Section<select id={id + "-topic"} value={group} onChange={e => setGroup(e.target.value)}><option value="all">All sections</option>{groups.map(g => <option key={g.id} value={g.id}>{g.title}</option>)}</select></label>
-      <label htmlFor={id + "-format"}>Study format<select id={id + "-format"} value={format} onChange={e => setFormat(e.target.value)}><option value="all">All lessons and recap cards</option><option value="video">With narrated video</option><option value="audio">With audio recap</option><option value="figures">With study figures</option></select></label>
+      <label htmlFor={id + "-format"}>Study format<select id={id + "-format"} value={format} onChange={e => setFormat(e.target.value)}><option value="all">All lessons and recap cards</option>{cards.some(c=>c.videoId) && <option value="video">With narrated video</option>}{cards.some(c=>c.audio) && <option value="audio">With audio recap</option>}{cards.some(c=>c.figure) && <option value="figures">With study figures</option>}</select></label>
       <button className="button button-secondary" onClick={() => { setQuery(""); setGroup("all"); setFormat("all"); }}>Clear filters</button>
     </div>
     <p role="status">{filtered.length} {filtered.length === 1 ? "lesson" : "lessons"} available</p>

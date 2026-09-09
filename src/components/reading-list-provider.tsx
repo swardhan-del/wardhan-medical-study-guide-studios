@@ -57,7 +57,8 @@ const Context = createContext<{
   message: string;
   toggle: (id: string) => void;
   clear: () => void;
-}>({ saved: [], ready: false, message: "", toggle: () => {}, clear: () => {} });
+  add: (ids: string[]) => void;
+}>({ saved: [], ready: false, message: "", toggle: () => {}, clear: () => {}, add: () => {} });
 export function ReadingListProvider({ children }: { children: ReactNode }) {
   const raw = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const saved = useMemo(() => parseList(raw), [raw]);
@@ -85,7 +86,7 @@ export function ReadingListProvider({ children }: { children: ReactNode }) {
   }
   return (
     <Context.Provider
-      value={{ saved, ready, message, toggle, clear: () => persist([]) }}
+      value={{ saved, ready, message, toggle, clear: () => persist([]), add: ids => persist([...new Set([...parseList(getSnapshot()), ...ids])].slice(0, 500)) }}
     >
       {children}
     </Context.Provider>
@@ -100,7 +101,7 @@ export function ReadingListNotice() {
   return (
     <div className="reading-notice">
       <p>
-        Your saved resources and progress are stored in this browser. They do not sync between devices.
+        Your saved resources and progress are stored in this browser. Use the progress transfer above to move them between devices; automatic sync is not available.
       </p>
       {message ? <p role="status">{message}</p> : null}
       {saved.length ? (

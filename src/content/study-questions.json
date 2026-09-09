@@ -529,6 +529,1225 @@
           "explanation": "Complement is a major component of innate defence and connects with adaptive responses."
         }
       ]
+    },
+    {
+      "id": "studio-respiratory-pressure-reading",
+      "topic": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "href": "/library/respiratory-mechanics#studio-practice",
+      "prompt": "An open airway connects atmosphere (0 cm H₂O) with an alveolus (−1 cm H₂O), as shown in the diagram. Which direction does air flow?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Into the alveolus",
+          "explanation": "Flow follows the gradient from higher to lower pressure."
+        },
+        {
+          "text": "Out towards the atmosphere",
+          "explanation": "That requires alveolar pressure above atmospheric pressure."
+        },
+        {
+          "text": "No flow",
+          "explanation": "No flow requires equal pressures in this simplified model."
+        }
+      ]
+    },
+    {
+      "id": "studio-respiratory-quiet-expiration",
+      "topic": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "href": "/library/respiratory-mechanics#studio-practice",
+      "prompt": "After quiet inspiration, inspiratory muscles relax. What normally drives quiet expiration?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Active diaphragm contraction",
+          "explanation": "Diaphragm contraction supports inspiration, not quiet expiration."
+        },
+        {
+          "text": "Elastic recoil of the lungs",
+          "explanation": "Recoil reduces volume and raises alveolar pressure."
+        },
+        {
+          "text": "Alveolar pressure staying below atmospheric pressure",
+          "explanation": "That pressure gradient would favour inward airflow."
+        }
+      ]
+    },
+    {
+      "id": "studio-respiratory-airway-resistance",
+      "topic": "respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "subject": "physiology",
+      "href": "/library/respiratory-mechanics#studio-practice",
+      "prompt": "In a model, airflow = pressure difference / resistance. Resistance doubles while pressure difference stays fixed. What happens to airflow?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "It doubles",
+          "explanation": "Higher resistance opposes flow; it does not increase it."
+        },
+        {
+          "text": "It is unchanged",
+          "explanation": "Unchanged pressure does not cancel the resistance change."
+        },
+        {
+          "text": "It halves",
+          "explanation": "Dividing by twice the resistance halves the flow."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-biophysics-radiation-optics",
+      "topic": "biophysics-radiation-optics",
+      "title": "Radiation, units and geometric optics",
+      "subject": "biophysics",
+      "href": "/library/biophysics-radiation-optics#studio-practice",
+      "prompt": "Which boundary can support total internal reflection?",
+      "options": [
+        {
+          "text": "Glass to air at normal incidence",
+          "explanation": "Normal incidence is below the critical angle."
+        },
+        {
+          "text": "Glass to air above the critical angle",
+          "explanation": "Both index ordering and an angle above the critical angle are required."
+        },
+        {
+          "text": "Air to glass at any angle",
+          "explanation": "Total internal reflection requires travel toward a lower refractive index."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-image-formation",
+      "topic": "biophysics-image-formation",
+      "title": "Lenses, magnification and the microscope",
+      "subject": "biophysics",
+      "href": "/library/biophysics-image-formation#studio-practice",
+      "prompt": "An object lies halfway between a converging lens and its focus. What image results?",
+      "options": [
+        {
+          "text": "Real, inverted and reduced",
+          "explanation": "A real image forms for a real object beyond the focal length."
+        },
+        {
+          "text": "At infinity with parallel emerging rays",
+          "explanation": "That special case requires the object exactly at the focus."
+        },
+        {
+          "text": "Virtual, upright and enlarged",
+          "explanation": "Inside the focal length, backward ray extensions locate an enlarged upright virtual image."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-wave-optics",
+      "topic": "biophysics-wave-optics",
+      "title": "Interference, diffraction and optical resolution",
+      "subject": "biophysics",
+      "href": "/library/biophysics-wave-optics#studio-practice",
+      "prompt": "An ideal analyser turns 90° relative to linearly polarised incident light. What is transmitted?",
+      "options": [
+        {
+          "text": "Zero in the ideal model",
+          "explanation": "Malus's law gives cos²90° = 0 for crossed linear axes."
+        },
+        {
+          "text": "All the incident intensity",
+          "explanation": "Parallel, rather than crossed, axes transmit all ideal incident intensity."
+        },
+        {
+          "text": "Half at every angle",
+          "explanation": "Half applies to unpolarised input through one ideal polariser, not this case."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-light-duality",
+      "topic": "biophysics-light-duality",
+      "title": "Photons, matter waves and electron microscopy",
+      "subject": "biophysics",
+      "href": "/library/biophysics-light-duality#studio-practice",
+      "prompt": "For the same particle, momentum doubles. What happens to de Broglie wavelength?",
+      "options": [
+        {
+          "text": "It stays fixed",
+          "explanation": "Matter wavelength depends on momentum."
+        },
+        {
+          "text": "It halves",
+          "explanation": "The relation λ = h/p predicts half the wavelength."
+        },
+        {
+          "text": "It doubles",
+          "explanation": "Momentum is in the denominator of h/p."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-atomic-models",
+      "topic": "biophysics-atomic-models",
+      "title": "Atomic models, energy levels and uncertainty",
+      "subject": "biophysics",
+      "href": "/library/biophysics-atomic-models#studio-practice",
+      "prompt": "A transition releases 2 eV. A second releases 4 eV. How do the photon wavelengths compare?",
+      "options": [
+        {
+          "text": "The second wavelength is twice the first",
+          "explanation": "Photon wavelength is inversely proportional to transition energy."
+        },
+        {
+          "text": "The wavelengths must be identical",
+          "explanation": "Different transition energies produce different photon frequencies."
+        },
+        {
+          "text": "The second wavelength is half the first",
+          "explanation": "E = hc/λ makes doubled energy correspond to halved wavelength."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-molecular-interactions",
+      "topic": "biophysics-molecular-interactions",
+      "title": "Bonds, interaction energies and scanning probes",
+      "subject": "biophysics",
+      "href": "/library/biophysics-molecular-interactions#studio-practice",
+      "prompt": "Which probe can study an insulating surface by sensing cantilever forces?",
+      "options": [
+        {
+          "text": "Atomic force microscopy",
+          "explanation": "AFM measures interaction forces and does not require a tunnelling current."
+        },
+        {
+          "text": "A conventional tunnelling-current measurement with no conductive path",
+          "explanation": "Tunnelling-current measurement requires an appropriate conducting pathway."
+        },
+        {
+          "text": "An ordinary light microscope resolving individual atoms",
+          "explanation": "Visible-light diffraction prevents ordinary atomic resolution."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-gases-statistics",
+      "topic": "biophysics-gases-statistics",
+      "title": "Gas laws, Boltzmann statistics and thermal energy",
+      "subject": "biophysics",
+      "href": "/library/biophysics-gases-statistics#studio-practice",
+      "prompt": "At fixed temperature, increasing an energy gap does what to the higher state's relative population?",
+      "options": [
+        {
+          "text": "Makes all states equally occupied",
+          "explanation": "Equal occupancy is not the general finite-temperature result."
+        },
+        {
+          "text": "Reduces it for equal degeneracy",
+          "explanation": "exp(−ΔE/kBT) decreases as a positive ΔE increases."
+        },
+        {
+          "text": "Increases it exponentially",
+          "explanation": "The Boltzmann exponent is negative for a positive energy gap."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-condensed-matter",
+      "topic": "biophysics-condensed-matter",
+      "title": "Solids, liquids, liquid crystals and energy bands",
+      "subject": "biophysics",
+      "href": "/library/biophysics-condensed-matter#studio-practice",
+      "prompt": "An acceptor dopant commonly favours which carrier type?",
+      "options": [
+        {
+          "text": "Protons moving through the semiconductor lattice",
+          "explanation": "Electronic conduction is not normally proton transport."
+        },
+        {
+          "text": "Only photons",
+          "explanation": "Photons are not the charge carriers in this description."
+        },
+        {
+          "text": "Holes",
+          "explanation": "Acceptor doping increases hole availability in a p-type semiconductor."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-absorption-scattering",
+      "topic": "biophysics-absorption-scattering",
+      "title": "Absorption, scattering and optical spectroscopy",
+      "subject": "biophysics",
+      "href": "/library/biophysics-absorption-scattering#studio-practice",
+      "prompt": "A cloudy sample shows reduced direct transmission. Can it all be called absorption?",
+      "options": [
+        {
+          "text": "No; scattering can remove light from the collected beam",
+          "explanation": "A transmission measurement alone does not separate absorption from scattering losses."
+        },
+        {
+          "text": "Yes; every missing photon has been absorbed",
+          "explanation": "Light can be redirected without absorption."
+        },
+        {
+          "text": "No; absorption never occurs in cloudy samples",
+          "explanation": "Absorption and scattering can coexist."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-thermal-radiation",
+      "topic": "biophysics-thermal-radiation",
+      "title": "Blackbody radiation and thermal imaging",
+      "subject": "biophysics",
+      "href": "/library/biophysics-thermal-radiation#studio-practice",
+      "prompt": "Why does emitted power alone overestimate net radiative cooling?",
+      "options": [
+        {
+          "text": "Emissivity must always equal zero",
+          "explanation": "Real emissivity is not generally zero."
+        },
+        {
+          "text": "The object also absorbs radiation from its surroundings",
+          "explanation": "Net exchange subtracts incoming absorbed radiation from outgoing emission."
+        },
+        {
+          "text": "A warm object emits no infrared",
+          "explanation": "Warm objects do emit thermal radiation."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-luminescence",
+      "topic": "biophysics-luminescence",
+      "title": "Fluorescence, phosphorescence and molecular probes",
+      "subject": "biophysics",
+      "href": "/library/biophysics-luminescence#studio-practice",
+      "prompt": "Why is ordinary fluorescence often at a longer wavelength than excitation?",
+      "options": [
+        {
+          "text": "The emitted photon gains energy from nowhere",
+          "explanation": "Longer wavelength means lower photon energy."
+        },
+        {
+          "text": "Longer wavelength means greater photon energy",
+          "explanation": "E = hc/λ has inverse wavelength dependence."
+        },
+        {
+          "text": "Energy is lost nonradiatively before emission",
+          "explanation": "Relaxation before emission reduces photon energy and increases wavelength."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-lasers",
+      "topic": "biophysics-lasers",
+      "title": "Stimulated emission and medical laser principles",
+      "subject": "biophysics",
+      "href": "/library/biophysics-lasers#studio-practice",
+      "prompt": "A laser emits 1 mJ per pulse at 500 pulses/s. Average power is…",
+      "options": [
+        {
+          "text": "0.5 W",
+          "explanation": "0.001 J × 500/s = 0.5 W."
+        },
+        {
+          "text": "500 W",
+          "explanation": "Convert millijoules to joules before multiplying by frequency."
+        },
+        {
+          "text": "0.002 W",
+          "explanation": "Average power is pulse energy multiplied by repetition rate."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-nuclear-structure",
+      "topic": "biophysics-nuclear-structure",
+      "title": "Nuclei, isotopes and radioactive transformations",
+      "subject": "biophysics",
+      "href": "/library/biophysics-nuclear-structure#studio-practice",
+      "prompt": "What changes in a pure gamma transition?",
+      "options": [
+        {
+          "text": "Z necessarily increases by one",
+          "explanation": "Gamma de-excitation does not itself change proton count."
+        },
+        {
+          "text": "Nuclear energy, with A and Z unchanged",
+          "explanation": "The nucleus moves to a lower energy state without changing its composition."
+        },
+        {
+          "text": "The nucleus loses four nucleons",
+          "explanation": "A gamma photon is not an alpha particle."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-decay-interactions",
+      "topic": "biophysics-decay-interactions",
+      "title": "Decay law and radiation interactions with matter",
+      "subject": "biophysics",
+      "href": "/library/biophysics-decay-interactions#studio-practice",
+      "prompt": "A photon undergoes Compton scattering. What remains after the interaction?",
+      "options": [
+        {
+          "text": "Only an electron–positron pair",
+          "explanation": "That describes pair production, which has an energy threshold."
+        },
+        {
+          "text": "The same photon with increased energy in the usual stationary-electron model",
+          "explanation": "The photon transfers energy to the recoil electron."
+        },
+        {
+          "text": "A scattered photon and a recoil electron",
+          "explanation": "Compton scattering redistributes energy between a lower-energy photon and an electron."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-radiation-detection",
+      "topic": "biophysics-radiation-detection",
+      "title": "Detectors, count statistics and pulse spectra",
+      "subject": "biophysics",
+      "href": "/library/biophysics-radiation-detection#studio-practice",
+      "prompt": "Which detector typically cannot infer incident energy from pulse height?",
+      "options": [
+        {
+          "text": "Geiger–Müller tube",
+          "explanation": "Geiger avalanches largely remove the dependence of pulse size on initial ionisation."
+        },
+        {
+          "text": "A calibrated scintillation spectrometer",
+          "explanation": "Scintillation pulse height can provide deposited-energy information."
+        },
+        {
+          "text": "A suitable semiconductor spectrometer",
+          "explanation": "Charge collection can preserve energy information."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-dosimetry",
+      "topic": "biophysics-dosimetry",
+      "title": "Absorbed dose, biological weighting and protection",
+      "subject": "biophysics",
+      "href": "/library/biophysics-dosimetry#studio-practice",
+      "prompt": "Can a source's activity alone determine a patient's effective dose?",
+      "options": [
+        {
+          "text": "Yes; detector gain supplies the missing conversion",
+          "explanation": "Detector amplification does not establish tissue dose."
+        },
+        {
+          "text": "No; energy, distribution and exposure history also matter",
+          "explanation": "Activity alone does not specify energy deposition or tissue weighting."
+        },
+        {
+          "text": "Yes; one becquerel always equals one sievert",
+          "explanation": "The quantities have different dimensions and purposes."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-isotope-diagnostics",
+      "topic": "biophysics-isotope-diagnostics",
+      "title": "Tracers, biological clearance and effective half-life",
+      "subject": "biophysics",
+      "href": "/library/biophysics-isotope-diagnostics#studio-practice",
+      "prompt": "What mainly determines which organ a radiopharmaceutical targets?",
+      "options": [
+        {
+          "text": "Only the detector's display colour",
+          "explanation": "Display colour does not determine tracer distribution."
+        },
+        {
+          "text": "Only the radionuclide's half-life",
+          "explanation": "Half-life describes decay timing, not complete biological targeting."
+        },
+        {
+          "text": "Its chemical and biological behaviour",
+          "explanation": "The labelled chemical form and biological handling govern distribution."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-nuclear-imaging",
+      "topic": "biophysics-nuclear-imaging",
+      "title": "Gamma cameras, SPECT, PET and radiotherapy geometry",
+      "subject": "biophysics",
+      "href": "/library/biophysics-nuclear-imaging#studio-practice",
+      "prompt": "Tightening gamma-camera collimation usually has which tradeoff?",
+      "options": [
+        {
+          "text": "Better directional selection but fewer accepted photons",
+          "explanation": "Improved directional restriction commonly costs detected counts."
+        },
+        {
+          "text": "More accepted photons at every angle",
+          "explanation": "A tighter angular selection rejects more incoming directions."
+        },
+        {
+          "text": "No effect on sensitivity",
+          "explanation": "Collimator acceptance directly affects sensitivity."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-signals",
+      "topic": "biophysics-signals",
+      "title": "Biological signals, filtering and digitisation",
+      "subject": "biophysics",
+      "href": "/library/biophysics-signals#studio-practice",
+      "prompt": "For an ideal signal with content up to 80 Hz, which rate has a suitable margin above the Nyquist boundary?",
+      "options": [
+        {
+          "text": "80 samples/s",
+          "explanation": "Sampling once per highest-frequency cycle is inadequate."
+        },
+        {
+          "text": "250 samples/s",
+          "explanation": "250 samples/s exceeds 160 samples/s; real systems also need appropriate filtering."
+        },
+        {
+          "text": "100 samples/s",
+          "explanation": "100 samples/s is below twice 80 Hz."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-xray-production",
+      "topic": "biophysics-xray-production",
+      "title": "X-ray tubes, spectra and beam quality",
+      "subject": "biophysics",
+      "href": "/library/biophysics-xray-production#studio-practice",
+      "prompt": "At fixed tube voltage, doubling current mainly changes…",
+      "options": [
+        {
+          "text": "The characteristic line energies",
+          "explanation": "Line energies depend on the target's atomic energy levels."
+        },
+        {
+          "text": "The maximum energy by a factor of two",
+          "explanation": "Maximum energy is controlled by voltage, not current."
+        },
+        {
+          "text": "The number of emitted photons",
+          "explanation": "More electrons strike the target per second, increasing output in the usual model."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-ct-imaging",
+      "topic": "biophysics-ct-imaging",
+      "title": "Projection radiography, CT reconstruction and windowing",
+      "subject": "biophysics",
+      "href": "/library/biophysics-ct-imaging#studio-practice",
+      "prompt": "What does changing CT window width directly change?",
+      "options": [
+        {
+          "text": "The attenuation range mapped to displayed shades",
+          "explanation": "Windowing remaps the existing reconstructed values to a visible range."
+        },
+        {
+          "text": "The patient's already acquired projection data",
+          "explanation": "Display settings do not reacquire measurements."
+        },
+        {
+          "text": "The number of original detector elements",
+          "explanation": "A display window cannot change detector construction."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-fluid-flow",
+      "topic": "biophysics-fluid-flow",
+      "title": "Continuity, viscosity and resistance to flow",
+      "subject": "biophysics",
+      "href": "/library/biophysics-fluid-flow#studio-practice",
+      "prompt": "Why can flow speed be low in the capillary bed despite tiny individual vessels?",
+      "options": [
+        {
+          "text": "Blood volume must vanish at each branch",
+          "explanation": "Branching redistributes flow without destroying volume."
+        },
+        {
+          "text": "The total parallel cross-sectional area is large",
+          "explanation": "Mean network speed reflects total area, not one capillary's diameter."
+        },
+        {
+          "text": "Continuity no longer applies anywhere",
+          "explanation": "Mass conservation still applies to the network."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-diffusion-osmosis",
+      "topic": "biophysics-diffusion-osmosis",
+      "title": "Diffusion, osmosis and heat transport",
+      "subject": "biophysics",
+      "href": "/library/biophysics-diffusion-osmosis#studio-practice",
+      "prompt": "Why does a concentration gradient produce net diffusion despite random individual motion?",
+      "options": [
+        {
+          "text": "Each particle senses the destination concentration",
+          "explanation": "Random thermal motion does not require sensing a distant concentration."
+        },
+        {
+          "text": "Only particles on the dilute side move",
+          "explanation": "Particles move on both sides."
+        },
+        {
+          "text": "More particles statistically cross from the concentrated side",
+          "explanation": "Unequal numbers available to cross create a net flux while individual motion remains random."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-energy-first-law",
+      "topic": "biophysics-energy-first-law",
+      "title": "Thermodynamic systems and the first law",
+      "subject": "biophysics",
+      "href": "/library/biophysics-energy-first-law#studio-practice",
+      "prompt": "A sealed container is heated through its wall. Which classification fits?",
+      "options": [
+        {
+          "text": "Closed but not isolated",
+          "explanation": "The boundary permits energy transfer but prevents matter exchange."
+        },
+        {
+          "text": "Open because heat enters",
+          "explanation": "Open requires matter exchange, not merely energy transfer."
+        },
+        {
+          "text": "Isolated because no matter escapes",
+          "explanation": "An isolated system cannot exchange energy either."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-entropy-potentials",
+      "topic": "biophysics-entropy-potentials",
+      "title": "Entropy, free energy and equilibrium",
+      "subject": "biophysics",
+      "href": "/library/biophysics-entropy-potentials#studio-practice",
+      "prompt": "A reaction has negative ΔG but is very slow. Is that contradictory?",
+      "options": [
+        {
+          "text": "Yes; entropy must be negative",
+          "explanation": "The sign of ΔG does not uniquely fix the entropy change."
+        },
+        {
+          "text": "No; an activation barrier can make it slow",
+          "explanation": "Kinetics and thermodynamic driving force answer different questions."
+        },
+        {
+          "text": "Yes; every favourable reaction is instantaneous",
+          "explanation": "Thermodynamic favourability does not specify a rate."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-resting-potential",
+      "topic": "biophysics-resting-potential",
+      "title": "Membrane potentials, permeability and the RC model",
+      "subject": "biophysics",
+      "href": "/library/biophysics-resting-potential#studio-practice",
+      "prompt": "After one time constant, an ideal RC charging response has completed about…",
+      "options": [
+        {
+          "text": "100% of its final change",
+          "explanation": "The exponential approaches its final value gradually."
+        },
+        {
+          "text": "37% of its final change",
+          "explanation": "37% is the remaining gap, not the completed change."
+        },
+        {
+          "text": "63% of its final change",
+          "explanation": "1 − e⁻¹ ≈ 0.632 describes the completed charging fraction."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-action-potentials",
+      "topic": "biophysics-action-potentials",
+      "title": "Action potentials and impulse propagation",
+      "subject": "biophysics",
+      "href": "/library/biophysics-action-potentials#studio-practice",
+      "prompt": "During relative refractoriness, a second spike generally requires…",
+      "options": [
+        {
+          "text": "A stronger depolarising stimulus",
+          "explanation": "Incomplete recovery and persisting conductances make excitation harder."
+        },
+        {
+          "text": "No stimulus at all",
+          "explanation": "Reduced excitability does not imply spontaneous firing."
+        },
+        {
+          "text": "Removal of all potassium ions",
+          "explanation": "Refractoriness concerns channel states and conductance, not complete ion removal."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-ultrasound",
+      "topic": "biophysics-ultrasound",
+      "title": "Ultrasound echoes, Doppler shifts and energy deposition",
+      "subject": "biophysics",
+      "href": "/library/biophysics-ultrasound#studio-practice",
+      "prompt": "In the simple Doppler model, flow perpendicular to the beam gives…",
+      "options": [
+        {
+          "text": "A shift independent of flow direction",
+          "explanation": "Direction enters through the beam–flow angle."
+        },
+        {
+          "text": "Zero frequency shift",
+          "explanation": "Only the velocity component along the beam contributes in this model."
+        },
+        {
+          "text": "The maximum shift",
+          "explanation": "The cosine factor is zero at 90°, not maximal."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-water-biopolymers",
+      "topic": "biophysics-water-biopolymers",
+      "title": "Water, protein folding and polymer elasticity",
+      "subject": "biophysics",
+      "href": "/library/biophysics-water-biopolymers#studio-practice",
+      "prompt": "Which level describes an amino-acid sequence?",
+      "options": [
+        {
+          "text": "Quaternary structure",
+          "explanation": "Quaternary structure concerns assembly of multiple subunits."
+        },
+        {
+          "text": "Only secondary structure",
+          "explanation": "Secondary structure concerns local backbone arrangements."
+        },
+        {
+          "text": "Primary structure",
+          "explanation": "Primary structure identifies the linear sequence of residues."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-sensory-biophysics",
+      "topic": "biophysics-sensory-biophysics",
+      "title": "Vision, hearing and sensory coding",
+      "subject": "biophysics",
+      "href": "/library/biophysics-sensory-biophysics#studio-practice",
+      "prompt": "Why can equal sound-pressure levels at different frequencies sound unequal?",
+      "options": [
+        {
+          "text": "Hearing sensitivity varies with frequency",
+          "explanation": "Equal physical level is not equivalent to equal perceived loudness."
+        },
+        {
+          "text": "Decibels eliminate all frequency dependence of perception",
+          "explanation": "Decibels describe a physical ratio, not complete perception."
+        },
+        {
+          "text": "Every frequency activates the identical cochlear location",
+          "explanation": "Cochlear mechanics support frequency-dependent place sensitivity."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-biomechanics",
+      "topic": "biophysics-biomechanics",
+      "title": "Stress, strain and viscoelastic tissues",
+      "subject": "biophysics",
+      "href": "/library/biophysics-biomechanics#studio-practice",
+      "prompt": "A thin cylindrical wall doubles radius with pressure and thickness fixed. Its hoop stress approximately…",
+      "options": [
+        {
+          "text": "Stays fixed",
+          "explanation": "Geometry affects wall stress even at unchanged pressure."
+        },
+        {
+          "text": "Doubles",
+          "explanation": "The thin-cylinder expression σ ≈ Pr/h predicts a twofold increase."
+        },
+        {
+          "text": "Halves",
+          "explanation": "Radius is in the numerator of Pr/h."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-molecular-motors",
+      "topic": "biophysics-molecular-motors",
+      "title": "Muscle mechanics and molecular motors",
+      "subject": "biophysics",
+      "href": "/library/biophysics-molecular-motors#studio-practice",
+      "prompt": "What does motor processivity describe?",
+      "options": [
+        {
+          "text": "Only the greatest instantaneous speed",
+          "explanation": "Speed and run length are different properties."
+        },
+        {
+          "text": "The optical resolution of the track",
+          "explanation": "Processivity is a motor behaviour, not an imaging limit."
+        },
+        {
+          "text": "Steps taken before detachment",
+          "explanation": "A processive motor remains attached through multiple successive steps."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-structural-methods",
+      "topic": "biophysics-structural-methods",
+      "title": "X-ray diffraction and mass spectrometry",
+      "subject": "biophysics",
+      "href": "/library/biophysics-structural-methods#studio-practice",
+      "prompt": "What does a mass spectrum's horizontal coordinate commonly represent?",
+      "options": [
+        {
+          "text": "Mass-to-charge ratio",
+          "explanation": "Ion separation is generally expressed as m/z, so charge state matters."
+        },
+        {
+          "text": "Mass alone regardless of charge",
+          "explanation": "Different charge states can shift peak positions for the same molecule."
+        },
+        {
+          "text": "X-ray diffraction angle",
+          "explanation": "Diffraction angle belongs to a different measurement method."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-magnetic-resonance",
+      "topic": "biophysics-magnetic-resonance",
+      "title": "Spin, NMR, ESR and MRI contrast",
+      "subject": "biophysics",
+      "href": "/library/biophysics-magnetic-resonance#studio-practice",
+      "prompt": "What supplies spatial encoding in MRI?",
+      "options": [
+        {
+          "text": "A universal tissue brightness independent of sequence",
+          "explanation": "MRI contrast changes with sequence choices."
+        },
+        {
+          "text": "Controlled magnetic-field gradients",
+          "explanation": "Gradients make resonance phase and frequency vary with position."
+        },
+        {
+          "text": "X-ray attenuation projections",
+          "explanation": "Those are used by CT, not magnetic-resonance signal encoding."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-circulation-ecg",
+      "topic": "biophysics-circulation-ecg",
+      "title": "Circulation, cardiac work and the ECG",
+      "subject": "biophysics",
+      "href": "/library/biophysics-circulation-ecg#studio-practice",
+      "prompt": "Lead I is 0.3 mV and lead II is 1.0 mV. Ideal lead III is…",
+      "options": [
+        {
+          "text": "1.3 mV",
+          "explanation": "Use II = I + III, so subtract I from II."
+        },
+        {
+          "text": "−0.7 mV",
+          "explanation": "The stated sign convention gives a positive difference."
+        },
+        {
+          "text": "0.7 mV",
+          "explanation": "III = II − I = 1.0 − 0.3 = 0.7 mV."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-respiratory-physics",
+      "topic": "biophysics-respiratory-physics",
+      "title": "Breathing mechanics, gas exchange and physical examination",
+      "subject": "biophysics",
+      "href": "/library/biophysics-respiratory-physics#studio-practice",
+      "prompt": "During ordinary quiet expiration, the main driver is…",
+      "options": [
+        {
+          "text": "Passive elastic recoil",
+          "explanation": "Relaxation of inspiratory muscles permits elastic recoil to drive outward flow."
+        },
+        {
+          "text": "Mandatory strong internal-intercostal contraction",
+          "explanation": "Active expiratory muscles are not required for ordinary quiet expiration."
+        },
+        {
+          "text": "A permanently positive pleural pressure",
+          "explanation": "Pleural pressure need not become positive during quiet expiration."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-practical-lenses",
+      "topic": "biophysics-practical-lenses",
+      "title": "Practical: lens power and microscope calibration",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-lenses#studio-practice",
+      "prompt": "After changing microscope objectives, what should you do before measuring?",
+      "options": [
+        {
+          "text": "Assume each division is one micrometre",
+          "explanation": "Eyepiece divisions have no universal specimen length."
+        },
+        {
+          "text": "Use the calibration for the new objective",
+          "explanation": "Calibration belongs to the optical configuration used for measurement."
+        },
+        {
+          "text": "Keep the old division-to-length value automatically",
+          "explanation": "The specimen scale per eyepiece division changes with the objective."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-practical-refractometry",
+      "topic": "biophysics-practical-refractometry",
+      "title": "Practical: refractive index and concentration",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-refractometry#studio-practice",
+      "prompt": "Why specify temperature for refractometry?",
+      "options": [
+        {
+          "text": "Temperature only changes the printed scale font",
+          "explanation": "The optical measurement itself can be affected."
+        },
+        {
+          "text": "All liquids have identical index at all temperatures",
+          "explanation": "Refractive index is material- and condition-dependent."
+        },
+        {
+          "text": "Refractive index can change with temperature",
+          "explanation": "A valid concentration comparison requires matched or corrected measurement conditions."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-practical-absorbance",
+      "topic": "biophysics-practical-absorbance",
+      "title": "Practical: blanks, dilution and absorbance",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-absorbance#studio-practice",
+      "prompt": "A tenfold dilution measures 0.6 concentration units. Original concentration is…",
+      "options": [
+        {
+          "text": "6 units",
+          "explanation": "0.6 × 10 = 6 concentration units."
+        },
+        {
+          "text": "0.06 units",
+          "explanation": "Undoing dilution requires multiplication by its factor."
+        },
+        {
+          "text": "0.6 units",
+          "explanation": "The measured diluted concentration is not the original concentration."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-practical-polarimetry",
+      "topic": "biophysics-practical-polarimetry",
+      "title": "Practical: optical rotation and chirality",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-polarimetry#studio-practice",
+      "prompt": "A solution has zero net optical rotation. Which interpretation is possible?",
+      "options": [
+        {
+          "text": "Every molecule must absorb all light",
+          "explanation": "Rotation and complete absorption are different phenomena."
+        },
+        {
+          "text": "Equal opposing rotations from enantiomers",
+          "explanation": "A null net signal can reflect cancellation rather than absence of chiral species."
+        },
+        {
+          "text": "There cannot be any chiral molecules",
+          "explanation": "A racemic mixture can contain chiral molecules with cancelling rotations."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-practical-eye",
+      "topic": "biophysics-practical-eye",
+      "title": "Practical: eye optics and visual acuity",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-eye#studio-practice",
+      "prompt": "Minimum resolvable angle is 2 arcminutes. Conventional decimal acuity is…",
+      "options": [
+        {
+          "text": "2",
+          "explanation": "The conventional relation is reciprocal to the angle in arcminutes."
+        },
+        {
+          "text": "60",
+          "explanation": "A unit conversion alone does not produce the acuity ratio."
+        },
+        {
+          "text": "0.5",
+          "explanation": "Decimal acuity is 1/2 = 0.5 for this convention."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-practical-spectra",
+      "topic": "biophysics-practical-spectra",
+      "title": "Practical: scintillation spectra and background",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-spectra#studio-practice",
+      "prompt": "Sample plus background is 30 counts/s; background is 8 counts/s. Net rate is…",
+      "options": [
+        {
+          "text": "22 counts/s",
+          "explanation": "Net rate is 30 − 8 = 22 counts/s."
+        },
+        {
+          "text": "38 counts/s",
+          "explanation": "Background should be subtracted from the combined rate."
+        },
+        {
+          "text": "3.75 counts/s",
+          "explanation": "A ratio is not the net count rate."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-practical-attenuation",
+      "topic": "biophysics-practical-attenuation",
+      "title": "Practical: half-value layers and shielding curves",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-attenuation#studio-practice",
+      "prompt": "If μ is measured in cm⁻¹, which thickness unit belongs in exp(−μx)?",
+      "options": [
+        {
+          "text": "Seconds",
+          "explanation": "Attenuation distance is not elapsed time in this expression."
+        },
+        {
+          "text": "Centimetres",
+          "explanation": "cm⁻¹ multiplied by cm gives a dimensionless exponent."
+        },
+        {
+          "text": "Kilograms",
+          "explanation": "The exponent must be dimensionless, so mass alone is unsuitable."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-practical-oscillations",
+      "topic": "biophysics-practical-oscillations",
+      "title": "Practical: oscillations, damping and resonance",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-oscillations#studio-practice",
+      "prompt": "For the same harmonic oscillator, amplitude halves. Stored oscillation energy becomes…",
+      "options": [
+        {
+          "text": "One half",
+          "explanation": "Energy depends on amplitude squared."
+        },
+        {
+          "text": "Twice as large",
+          "explanation": "Reducing amplitude reduces stored energy."
+        },
+        {
+          "text": "One quarter",
+          "explanation": "The energy ratio is (1/2)² = 1/4."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-practical-impedance",
+      "topic": "biophysics-practical-impedance",
+      "title": "Practical: resistance, capacitance and biological impedance",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-impedance#studio-practice",
+      "prompt": "A sinusoid has peak voltage 10 V. Its RMS voltage is about…",
+      "options": [
+        {
+          "text": "7.07 V",
+          "explanation": "For a sinusoid, RMS voltage is peak voltage divided by √2: 10/√2 ≈ 7.07 V."
+        },
+        {
+          "text": "14.14 V",
+          "explanation": "RMS divides peak by √2 rather than multiplying."
+        },
+        {
+          "text": "10 V for every waveform",
+          "explanation": "Peak and RMS differ for a sinusoid."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-practical-amplifiers",
+      "topic": "biophysics-practical-amplifiers",
+      "title": "Practical: gain, decibels and bandwidth",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-amplifiers#studio-practice",
+      "prompt": "Two linear voltage gains of 5 and 4 in cascade give total gain…",
+      "options": [
+        {
+          "text": "1.25",
+          "explanation": "Division does not describe two successive amplifications."
+        },
+        {
+          "text": "20",
+          "explanation": "The first multiplies by 5 and the second by 4, giving 20."
+        },
+        {
+          "text": "9",
+          "explanation": "Cascaded linear gains multiply, rather than add."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-practical-coulter",
+      "topic": "biophysics-practical-coulter",
+      "title": "Practical: electrical cell counting",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-coulter#studio-practice",
+      "prompt": "Why dilute a suspension for electrical counting?",
+      "options": [
+        {
+          "text": "To make each cell's true volume zero",
+          "explanation": "Dilution changes concentration, not valid cell volume to zero."
+        },
+        {
+          "text": "To guarantee every event is a particular leukocyte type",
+          "explanation": "Dilution does not establish cell identity."
+        },
+        {
+          "text": "To reduce simultaneous particles in the sensing aperture",
+          "explanation": "Reduced concentration lowers coincidence probability under suitable counting conditions."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-apply-biophysics-practical-diffusion",
+      "topic": "biophysics-practical-diffusion",
+      "title": "Practical: diffusion slopes and uncertainty",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-diffusion#studio-practice",
+      "prompt": "Time increases ninefold at fixed D. RMS diffusion distance…",
+      "options": [
+        {
+          "text": "Triples",
+          "explanation": "√9 = 3 gives a threefold distance scale."
+        },
+        {
+          "text": "Increases ninefold",
+          "explanation": "RMS distance follows the square root of time."
+        },
+        {
+          "text": "Decreases to one third",
+          "explanation": "Longer diffusion time increases the displacement scale."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-apply-biophysics-practical-audiometry",
+      "topic": "biophysics-practical-audiometry",
+      "title": "Practical: sound levels and audiograms",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-audiometry#studio-practice",
+      "prompt": "RMS sound pressure doubles under comparable conditions. SPL rises by approximately…",
+      "options": [
+        {
+          "text": "20 dB",
+          "explanation": "A factor of ten in pressure gives 20 dB."
+        },
+        {
+          "text": "6 dB",
+          "explanation": "20 log₁₀2 ≈ 6.02 dB."
+        },
+        {
+          "text": "3 dB",
+          "explanation": "About 3 dB corresponds to doubled intensity, not doubled pressure."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-apply-biophysics-practical-biosignals",
+      "topic": "biophysics-practical-biosignals",
+      "title": "Practical: ECG calibration and pulse timing",
+      "subject": "biophysics",
+      "href": "/library/biophysics-practical-biosignals#studio-practice",
+      "prompt": "Which circuit has one stable state and returns after a triggered pulse?",
+      "options": [
+        {
+          "text": "Bistable",
+          "explanation": "A bistable has two stable states."
+        },
+        {
+          "text": "Astable",
+          "explanation": "An astable oscillates rather than resting in one stable state."
+        },
+        {
+          "text": "Monostable",
+          "explanation": "A monostable temporarily leaves its single stable state after a trigger."
+        }
+      ],
+      "answer": 2
     }
   ]
 }

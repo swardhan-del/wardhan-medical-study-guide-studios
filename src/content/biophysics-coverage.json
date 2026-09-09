@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-09",
+  "scope": "36 theory chapters and 14 practical themes from three overlapping note sets. This is topic-level coverage, not a claim that every historical examination prompt has been reproduced or validated.",
+  "lessons": [
+    {
+      "lessonId": "biophysics-radiation-optics",
+      "title": "Radiation, units and geometric optics",
+      "track": "theory",
+      "topic": 1,
+      "sourceSection": "Medical Biophysics I, topic 1; combined theory prompts 1–9"
+    },
+    {
+      "lessonId": "biophysics-image-formation",
+      "title": "Lenses, magnification and the microscope",
+      "track": "theory",
+      "topic": 2,
+      "sourceSection": "Medical Biophysics I, topic 2; combined theory prompts 10–18"
+    },
+    {
+      "lessonId": "biophysics-wave-optics",
+      "title": "Interference, diffraction and optical resolution",
+      "track": "theory",
+      "topic": 3,
+      "sourceSection": "Medical Biophysics I, topic 3; combined theory prompts 19–28"
+    },
+    {
+      "lessonId": "biophysics-light-duality",
+      "title": "Photons, matter waves and electron microscopy",
+      "track": "theory",
+      "topic": 4,
+      "sourceSection": "Medical Biophysics I, topic 4; combined theory prompts 29–37"
+    },
+    {
+      "lessonId": "biophysics-atomic-models",
+      "title": "Atomic models, energy levels and uncertainty",
+      "track": "theory",
+      "topic": 5,
+      "sourceSection": "Medical Biophysics I, topic 5; combined theory prompts 38–44"
+    },
+    {
+      "lessonId": "biophysics-molecular-interactions",
+      "title": "Bonds, interaction energies and scanning probes",
+      "track": "theory",
+      "topic": 6,
+      "sourceSection": "Medical Biophysics I, topic 6; combined theory prompts 45–49"
+    },
+    {
+      "lessonId": "biophysics-gases-statistics",
+      "title": "Gas laws, Boltzmann statistics and thermal energy",
+      "track": "theory",
+      "topic": 7,
+      "sourceSection": "Medical Biophysics I, topic 7; combined theory prompts 50–62"
+    },
+    {
+      "lessonId": "biophysics-condensed-matter",
+      "title": "Solids, liquids, liquid crystals and energy bands",
+      "track": "theory",
+      "topic": 8,
+      "sourceSection": "Medical Biophysics I, topic 8; combined theory prompts 63–73"
+    },
+    {
+      "lessonId": "biophysics-absorption-scattering",
+      "title": "Absorption, scattering and optical spectroscopy",
+      "track": "theory",
+      "topic": 9,
+      "sourceSection": "Medical Biophysics I, topic 9; combined theory prompts 74–80"
+    },
+    {
+      "lessonId": "biophysics-thermal-radiation",
+      "title": "Blackbody radiation and thermal imaging",
+      "track": "theory",
+      "topic": 10,
+      "sourceSection": "Medical Biophysics I, topic 10; combined theory prompts 81–89"
+    },
+    {
+      "lessonId": "biophysics-luminescence",
+      "title": "Fluorescence, phosphorescence and molecular probes",
+      "track": "theory",
+      "topic": 11,
+      "sourceSection": "Medical Biophysics I, topic 11; combined theory prompts 90–102"
+    },
+    {
+      "lessonId": "biophysics-lasers",
+      "title": "Stimulated emission and medical laser principles",
+      "track": "theory",
+      "topic": 12,
+      "sourceSection": "Medical Biophysics I, topic 12; combined theory prompts 103–108"
+    },
+    {
+      "lessonId": "biophysics-nuclear-structure",
+      "title": "Nuclei, isotopes and radioactive transformations",
+      "track": "theory",
+      "topic": 13,
+      "sourceSection": "Medical Biophysics I, topic 13; combined theory prompts 109–119"
+    },
+    {
+      "lessonId": "biophysics-decay-interactions",
+      "title": "Decay law and radiation interactions with matter",
+      "track": "theory",
+      "topic": 14,
+      "sourceSection": "Medical Biophysics I, topic 14; combined theory prompts 120–128"
+    },
+    {
+      "lessonId": "biophysics-radiation-detection",
+      "title": "Detectors, count statistics and pulse spectra",
+      "track": "theory",
+      "topic": 15,
+      "sourceSection": "Medical Biophysics I, topic 15; combined theory prompts 129–134"
+    },
+    {
+      "lessonId": "biophysics-dosimetry",
+      "title": "Absorbed dose, biological weighting and protection",
+      "track": "theory",
+      "topic": 16,
+      "sourceSection": "Medical Biophysics I, topic 16; combined theory prompts 135–147"
+    },
+    {
+      "lessonId": "biophysics-isotope-diagnostics",
+      "title": "Tracers, biological clearance and effective half-life",
+      "track": "theory",
+      "topic": 17,
+      "sourceSection": "Medical Biophysics I, topic 17; combined theory prompts 148–154"
+    },
+    {
+      "lessonId": "biophysics-nuclear-imaging",
+      "title": "Gamma cameras, SPECT, PET and radiotherapy geometry",
+      "track": "theory",
+      "topic": 18,
+      "sourceSection": "Medical Biophysics I, topic 18; combined theory prompts 155–164"
+    },
+    {
+      "lessonId": "biophysics-signals",
+      "title": "Biological signals, filtering and digitisation",
+      "track": "theory",
+      "topic": 19,
+      "sourceSection": "Medical Biophysics I, topic 19; combined theory prompts 165–173"
+    },
+    {
+      "lessonId": "biophysics-xray-production",
+      "title": "X-ray tubes, spectra and beam quality",
+      "track": "theory",
+      "topic": 20,
+      "sourceSection": "Biophysics II, topic 20; combined theory prompts 174–179"
+    },
+    {
+      "lessonId": "biophysics-ct-imaging",
+      "title": "Projection radiography, CT reconstruction and windowing",
+      "track": "theory",
+      "topic": 21,
+      "sourceSection": "Biophysics II, topic 21; combined theory prompts 180–187"
+    },
+    {
+      "lessonId": "biophysics-fluid-flow",
+      "title": "Continuity, viscosity and resistance to flow",
+      "track": "theory",
+      "topic": 22,
+      "sourceSection": "Biophysics II, topic 22; combined theory prompts 188–196"
+    },
+    {
+      "lessonId": "biophysics-diffusion-osmosis",
+      "title": "Diffusion, osmosis and heat transport",
+      "track": "theory",
+      "topic": 23,
+      "sourceSection": "Biophysics II, topic 23; combined theory prompts 197–206"
+    },
+    {
+      "lessonId": "biophysics-energy-first-law",
+      "title": "Thermodynamic systems and the first law",
+      "track": "theory",
+      "topic": 24,
+      "sourceSection": "Biophysics II, topic 24; combined theory prompts 207–210, 213, 216"
+    },
+    {
+      "lessonId": "biophysics-entropy-potentials",
+      "title": "Entropy, free energy and equilibrium",
+      "track": "theory",
+      "topic": 25,
+      "sourceSection": "Biophysics II, topic 25; combined theory prompts 211–212, 214–215, 217–218"
+    },
+    {
+      "lessonId": "biophysics-resting-potential",
+      "title": "Membrane potentials, permeability and the RC model",
+      "track": "theory",
+      "topic": 26,
+      "sourceSection": "Biophysics II, topic 26; combined theory prompts 219–226"
+    },
+    {
+      "lessonId": "biophysics-action-potentials",
+      "title": "Action potentials and impulse propagation",
+      "track": "theory",
+      "topic": 27,
+      "sourceSection": "Biophysics II, topic 27; combined theory prompts 227–231"
+    },
+    {
+      "lessonId": "biophysics-ultrasound",
+      "title": "Ultrasound echoes, Doppler shifts and energy deposition",
+      "track": "theory",
+      "topic": 28,
+      "sourceSection": "Biophysics II, topic 28; combined theory prompts 232–240"
+    },
+    {
+      "lessonId": "biophysics-water-biopolymers",
+      "title": "Water, protein folding and polymer elasticity",
+      "track": "theory",
+      "topic": 29,
+      "sourceSection": "Biophysics II, topic 29; combined theory prompts 241–249"
+    },
+    {
+      "lessonId": "biophysics-sensory-biophysics",
+      "title": "Vision, hearing and sensory coding",
+      "track": "theory",
+      "topic": 30,
+      "sourceSection": "Biophysics II, topic 30; combined theory prompts 250–265"
+    },
+    {
+      "lessonId": "biophysics-biomechanics",
+      "title": "Stress, strain and viscoelastic tissues",
+      "track": "theory",
+      "topic": 31,
+      "sourceSection": "Biophysics II, topic 31; combined theory prompts 266–272"
+    },
+    {
+      "lessonId": "biophysics-molecular-motors",
+      "title": "Muscle mechanics and molecular motors",
+      "track": "theory",
+      "topic": 32,
+      "sourceSection": "Biophysics II, topic 32; combined theory prompts 273–277, 279–280"
+    },
+    {
+      "lessonId": "biophysics-structural-methods",
+      "title": "X-ray diffraction and mass spectrometry",
+      "track": "theory",
+      "topic": 33,
+      "sourceSection": "Biophysics II, topic 33; combined theory prompts 278, 281–284"
+    },
+    {
+      "lessonId": "biophysics-magnetic-resonance",
+      "title": "Spin, NMR, ESR and MRI contrast",
+      "track": "theory",
+      "topic": 34,
+      "sourceSection": "Biophysics II, topic 34; combined theory prompts 285–293"
+    },
+    {
+      "lessonId": "biophysics-circulation-ecg",
+      "title": "Circulation, cardiac work and the ECG",
+      "track": "theory",
+      "topic": 35,
+      "sourceSection": "Biophysics II, topic 35; combined theory prompts 294–303"
+    },
+    {
+      "lessonId": "biophysics-respiratory-physics",
+      "title": "Breathing mechanics, gas exchange and physical examination",
+      "track": "theory",
+      "topic": 36,
+      "sourceSection": "Biophysics II, topic 36; combined theory prompts 304–314"
+    },
+    {
+      "lessonId": "biophysics-practical-lenses",
+      "title": "Practical: lens power and microscope calibration",
+      "track": "practical",
+      "topic": 1,
+      "sourceSection": "Combined notes, practical questions 1–13"
+    },
+    {
+      "lessonId": "biophysics-practical-refractometry",
+      "title": "Practical: refractive index and concentration",
+      "track": "practical",
+      "topic": 2,
+      "sourceSection": "Combined notes, practical questions 14–21"
+    },
+    {
+      "lessonId": "biophysics-practical-absorbance",
+      "title": "Practical: blanks, dilution and absorbance",
+      "track": "practical",
+      "topic": 3,
+      "sourceSection": "Combined notes, practical questions 22–32"
+    },
+    {
+      "lessonId": "biophysics-practical-polarimetry",
+      "title": "Practical: optical rotation and chirality",
+      "track": "practical",
+      "topic": 4,
+      "sourceSection": "Combined notes, practical questions 33–42"
+    },
+    {
+      "lessonId": "biophysics-practical-eye",
+      "title": "Practical: eye optics and visual acuity",
+      "track": "practical",
+      "topic": 5,
+      "sourceSection": "Combined notes, practical questions 43–58"
+    },
+    {
+      "lessonId": "biophysics-practical-spectra",
+      "title": "Practical: scintillation spectra and background",
+      "track": "practical",
+      "topic": 6,
+      "sourceSection": "Combined notes, practical questions 59–66, 127–132"
+    },
+    {
+      "lessonId": "biophysics-practical-attenuation",
+      "title": "Practical: half-value layers and shielding curves",
+      "track": "practical",
+      "topic": 7,
+      "sourceSection": "Combined notes, practical questions 67–75"
+    },
+    {
+      "lessonId": "biophysics-practical-oscillations",
+      "title": "Practical: oscillations, damping and resonance",
+      "track": "practical",
+      "topic": 8,
+      "sourceSection": "Combined notes, practical questions 76–83"
+    },
+    {
+      "lessonId": "biophysics-practical-impedance",
+      "title": "Practical: resistance, capacitance and biological impedance",
+      "track": "practical",
+      "topic": 9,
+      "sourceSection": "Combined notes, practical questions 84–93"
+    },
+    {
+      "lessonId": "biophysics-practical-amplifiers",
+      "title": "Practical: gain, decibels and bandwidth",
+      "track": "practical",
+      "topic": 10,
+      "sourceSection": "Combined notes, practical questions 94–103"
+    },
+    {
+      "lessonId": "biophysics-practical-coulter",
+      "title": "Practical: electrical cell counting",
+      "track": "practical",
+      "topic": 11,
+      "sourceSection": "Combined notes, practical questions 104–111"
+    },
+    {
+      "lessonId": "biophysics-practical-diffusion",
+      "title": "Practical: diffusion slopes and uncertainty",
+      "track": "practical",
+      "topic": 12,
+      "sourceSection": "Combined notes, practical questions 112–116"
+    },
+    {
+      "lessonId": "biophysics-practical-audiometry",
+      "title": "Practical: sound levels and audiograms",
+      "track": "practical",
+      "topic": 13,
+      "sourceSection": "Combined notes, practical questions 133–142"
+    },
+    {
+      "lessonId": "biophysics-practical-biosignals",
+      "title": "Practical: ECG calibration and pulse timing",
+      "track": "practical",
+      "topic": 14,
+      "sourceSection": "Combined notes, practical questions 143–157"
+    }
+  ],
+  "additionalPracticalMapping": [
+    {
+      "sourceSection": "Combined practical questions 117–126",
+      "lessonId": "biophysics-xray-production"
+    },
+    {
+      "sourceSection": "Combined practical questions 158–163",
+      "lessonId": "biophysics-ct-imaging"
+    }
+  ]
+}

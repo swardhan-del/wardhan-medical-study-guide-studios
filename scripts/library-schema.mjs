@@ -39,7 +39,7 @@ export function validateLibraryLessons(data, catalog, sources) {
       !text(q.prompt, 15) ||
       !Array.isArray(q.options) ||
       q.options.length < 3 ||
-      q.options.some((o) => !text(o.text, 2) || !text(o.reason, 15)) ||
+      q.options.some((o) => !text(o.text, 1) || !text(o.reason, 15)) ||
       !Number.isInteger(q.answer) ||
       q.answer < 0 ||
       q.answer >= q.options.length

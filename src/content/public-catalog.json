@@ -93,7 +93,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "thorax-nerve-relations",
       "title": "Volume I: orient the thorax around the lung root",
@@ -111,7 +111,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "abdomen-portal-relations",
       "title": "Volume II: connect peritoneum and the portal triad",
@@ -129,7 +129,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "pelvis-urinary-route",
       "title": "Volume III: follow urine through the pelvis",
@@ -147,7 +147,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "head-neck-tongue-map",
       "title": "Volume IV: separate taste, sensation and movement",
@@ -165,7 +165,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "limbs-plexus-and-joints",
       "title": "Volume V: trace a limb nerve through the plexus",
@@ -183,7 +183,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-07",
       "bytes": 0,
       "id": "nitrogen-metabolism",
       "title": "Amino-acid nitrogen and urea",
@@ -298,6 +298,1072 @@
         "pyruvate"
       ],
       "minutes": 5
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-dosimetry",
+      "title": "Absorbed dose, biological weighting and protection",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Keep activity, deposited energy and protection quantities separate.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "dose",
+        "gray",
+        "sievert",
+        "ALARA"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-absorption-scattering",
+      "title": "Absorption, scattering and optical spectroscopy",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Separate loss mechanisms and use a spectrum to infer molecular information.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "Beer-Lambert",
+        "Rayleigh",
+        "Mie",
+        "spectroscopy"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-action-potentials",
+      "title": "Action potentials and impulse propagation",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Separate regenerative signalling from passive current spread.",
+      "tags": [
+        "Membranes and ultrasound",
+        "Biophysics",
+        "Physical principles",
+        "refractory",
+        "myelin",
+        "propagation",
+        "channels"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-atomic-models",
+      "title": "Atomic models, energy levels and uncertainty",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Use historical models to identify what each experiment explains and what it cannot.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "Bohr",
+        "orbital",
+        "uncertainty",
+        "Franck-Hertz"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-signals",
+      "title": "Biological signals, filtering and digitisation",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Trace a physiological signal from a transducer to a sampled record.",
+      "tags": [
+        "Signals and X-ray imaging",
+        "Biophysics",
+        "Physical principles",
+        "Nyquist",
+        "Fourier",
+        "filtering",
+        "digitisation"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-06",
+      "bytes": 0,
+      "id": "biophysics-lab",
+      "title": "Biophysics: predict and calculate",
+      "subject": "biophysics",
+      "href": "/practice/biophysics",
+      "summary": "Explore six coded models for lenses, attenuation, membrane charging, diffusion, flow and ultrasound.",
+      "tags": [
+        "Biophysics",
+        "Practical calculations",
+        "Physical principles"
+      ],
+      "kind": "Practice",
+      "format": "ACTIVITY",
+      "minutes": 5
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-thermal-radiation",
+      "title": "Blackbody radiation and thermal imaging",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Relate a temperature distribution to emitted power and spectral shape.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "Wien",
+        "Planck",
+        "Stefan-Boltzmann",
+        "thermography"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-molecular-interactions",
+      "title": "Bonds, interaction energies and scanning probes",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect the shape of an interaction potential to molecular structure and measurement.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "AFM",
+        "STM",
+        "bonds",
+        "electronegativity"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-respiratory-physics",
+      "title": "Breathing mechanics, gas exchange and physical examination",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Use pressure differences and volume definitions to explain quiet breathing.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "FRC",
+        "compliance",
+        "spirometry",
+        "Henry"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-circulation-ecg",
+      "title": "Circulation, cardiac work and the ECG",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect pressure, flow and electrical recordings without treating them as the same signal.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "ECG",
+        "Windkessel",
+        "cardiac",
+        "cycle"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-fluid-flow",
+      "title": "Continuity, viscosity and resistance to flow",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Predict flow changes while stating when ideal fluid and tube models apply.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "Poiseuille",
+        "Bernoulli",
+        "Reynolds",
+        "Stokes"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-decay-interactions",
+      "title": "Decay law and radiation interactions with matter",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Calculate activity changes and distinguish how different radiations deposit energy.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "half-life",
+        "Compton",
+        "photoelectric",
+        "Bragg"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-radiation-detection",
+      "title": "Detectors, count statistics and pulse spectra",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Follow a radiation event through conversion, amplification and discrimination.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "scintillator",
+        "photomultiplier",
+        "Geiger",
+        "Poisson"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-diffusion-osmosis",
+      "title": "Diffusion, osmosis and heat transport",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect gradients, random motion and the time needed to cross a distance.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "Fick",
+        "osmosis",
+        "Stokes-Einstein",
+        "Fourier"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-entropy-potentials",
+      "title": "Entropy, free energy and equilibrium",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Choose the correct thermodynamic criterion for the constraints of a biological process.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "Gibbs",
+        "Helmholtz",
+        "entropy",
+        "equilibrium"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-luminescence",
+      "title": "Fluorescence, phosphorescence and molecular probes",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Follow excitation and relaxation pathways to interpret luminescence measurements.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "fluorescence",
+        "phosphorescence",
+        "Kasha",
+        "lifetime"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-nuclear-imaging",
+      "title": "Gamma cameras, SPECT, PET and radiotherapy geometry",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Compare information pathways in nuclear imaging and explain spatial dose targeting.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "PET",
+        "SPECT",
+        "scintigraphy",
+        "brachytherapy"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-gases-statistics",
+      "title": "Gas laws, Boltzmann statistics and thermal energy",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Move between molecular motion, bulk pressure and equilibrium populations.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "Boltzmann",
+        "Maxwell",
+        "Arrhenius",
+        "entropy"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-wave-optics",
+      "title": "Interference, diffraction and optical resolution",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Use phase, wavelength and aperture to explain what an optical instrument can distinguish.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "diffraction",
+        "interference",
+        "polarisation",
+        "aperture"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-image-formation",
+      "title": "Lenses, magnification and the microscope",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Construct real and virtual images and separate magnification from useful optical detail.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "dioptre",
+        "microscope",
+        "magnification"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-resting-potential",
+      "title": "Membrane potentials, permeability and the RC model",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect ion gradients to voltage and explain passive charging and spread.",
+      "tags": [
+        "Membranes and ultrasound",
+        "Biophysics",
+        "Physical principles",
+        "Nernst",
+        "Goldman",
+        "Donnan",
+        "RC"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-molecular-motors",
+      "title": "Muscle mechanics and molecular motors",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Relate ATP-driven cycles to force, movement and external work.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "myosin",
+        "kinesin",
+        "dynein",
+        "crossbridge"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-nuclear-structure",
+      "title": "Nuclei, isotopes and radioactive transformations",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Identify nuclear changes from conservation laws rather than memorising radiation names.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "isotope",
+        "alpha",
+        "beta",
+        "gamma"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-light-duality",
+      "title": "Photons, matter waves and electron microscopy",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect interference and quantised energy transfer without confusing their experimental evidence.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "photoelectric",
+        "deBroglie",
+        "electron",
+        "photons"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-absorbance",
+      "title": "Practical: blanks, dilution and absorbance",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Convert transmission into absorbance and design a defensible concentration measurement.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "absorbance",
+        "blank",
+        "dilution",
+        "spectrophotometry"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-diffusion",
+      "title": "Practical: diffusion slopes and uncertainty",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Calculate a diffusion scale and explain why a straight-line plot needs a model.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "diffusion",
+        "displacement",
+        "Brownian"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-biosignals",
+      "title": "Practical: ECG calibration and pulse timing",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Convert a recorded trace into voltage and time, and distinguish pulse-generator behaviours.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "ECG",
+        "pacemaker",
+        "monostable",
+        "pulse"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-coulter",
+      "title": "Practical: electrical cell counting",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect an impedance pulse to particle volume and identify coincidence errors.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "Coulter",
+        "cell",
+        "counting",
+        "coincidence"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-eye",
+      "title": "Practical: eye optics and visual acuity",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Relate refractive error and angular resolution to the eye's optical system.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "myopia",
+        "hyperopia",
+        "presbyopia",
+        "acuity"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-amplifiers",
+      "title": "Practical: gain, decibels and bandwidth",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Use gain ratios correctly and recognise when amplification loses information.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "gain",
+        "decibel",
+        "bandwidth",
+        "amplifier"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-attenuation",
+      "title": "Practical: half-value layers and shielding curves",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Translate exponential attenuation into thickness while recognising beam assumptions.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "HVL",
+        "TVL",
+        "attenuation",
+        "shielding"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-lenses",
+      "title": "Practical: lens power and microscope calibration",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Solve image and calibration problems while keeping units and sign conventions visible.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "eyepiece",
+        "calibration",
+        "lens",
+        "micrometer"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-polarimetry",
+      "title": "Practical: optical rotation and chirality",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Distinguish optical rotation from absorption and use a polarimetric calibration.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "Biot",
+        "optical",
+        "rotation",
+        "enantiomer"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-oscillations",
+      "title": "Practical: oscillations, damping and resonance",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Predict frequency changes and interpret a driven oscillator's response.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "resonance",
+        "damping",
+        "oscillator",
+        "spring"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-refractometry",
+      "title": "Practical: refractive index and concentration",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Read a refractometer result as a calibrated, condition-dependent measurement.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "Abbe",
+        "refractometer",
+        "concentration"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-impedance",
+      "title": "Practical: resistance, capacitance and biological impedance",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Explain why tissue response depends on signal frequency and electrode arrangement.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "reactance",
+        "capacitance",
+        "RMS",
+        "impedance"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-spectra",
+      "title": "Practical: scintillation spectra and background",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Distinguish pulse height, energy calibration and count rate.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "scintillation",
+        "PMT",
+        "background",
+        "spectrum"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-practical-audiometry",
+      "title": "Practical: sound levels and audiograms",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Distinguish physical sound level from a frequency-dependent hearing threshold.",
+      "tags": [
+        "Measurement practicals",
+        "Biophysics",
+        "Practical calculations",
+        "audiogram",
+        "decibel",
+        "loudness",
+        "masking"
+      ],
+      "minutes": 6
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-ct-imaging",
+      "title": "Projection radiography, CT reconstruction and windowing",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Understand why a projection is ambiguous and how CT estimates a cross-section.",
+      "tags": [
+        "Signals and X-ray imaging",
+        "Biophysics",
+        "Physical principles",
+        "CT",
+        "Hounsfield",
+        "reconstruction",
+        "windowing"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-radiation-optics",
+      "title": "Radiation, units and geometric optics",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Distinguish waves from particles, quantify a beam and predict reflection or refraction.",
+      "tags": [
+        "Optics and light",
+        "Biophysics",
+        "Physical principles",
+        "Snell",
+        "Fermat",
+        "irradiance",
+        "refraction"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-condensed-matter",
+      "title": "Solids, liquids, liquid crystals and energy bands",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Explain material properties from molecular order and accessible electronic states.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "semiconductor",
+        "liquid-crystal",
+        "bands"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-magnetic-resonance",
+      "title": "Spin, NMR, ESR and MRI contrast",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect resonance and relaxation to spatially encoded images.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "NMR",
+        "ESR",
+        "MRI",
+        "Larmor",
+        "relaxation"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-lasers",
+      "title": "Stimulated emission and medical laser principles",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Explain how pumping and feedback produce a laser beam and why tissue response varies.",
+      "tags": [
+        "Matter and optical methods",
+        "Biophysics",
+        "Physical principles",
+        "stimulated",
+        "emission",
+        "resonator",
+        "laser"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-biomechanics",
+      "title": "Stress, strain and viscoelastic tissues",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Distinguish material stiffness from geometry and time-dependent response.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "Young",
+        "Laplace",
+        "viscoelastic",
+        "creep"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-energy-first-law",
+      "title": "Thermodynamic systems and the first law",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Account for energy transfers without confusing heat, work and stored energy.",
+      "tags": [
+        "Flow, diffusion and thermodynamics",
+        "Biophysics",
+        "Physical principles",
+        "heat",
+        "work",
+        "isothermal",
+        "adiabatic"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-isotope-diagnostics",
+      "title": "Tracers, biological clearance and effective half-life",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Choose a diagnostic tracer conceptually and distinguish physical decay from movement through the body.",
+      "tags": [
+        "Nuclear physics and imaging",
+        "Biophysics",
+        "Physical principles",
+        "tracer",
+        "technetium",
+        "clearance",
+        "half-life"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-ultrasound",
+      "title": "Ultrasound echoes, Doppler shifts and energy deposition",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Link an acoustic measurement to depth or motion while recognising its assumptions.",
+      "tags": [
+        "Membranes and ultrasound",
+        "Biophysics",
+        "Physical principles",
+        "piezoelectric",
+        "Doppler",
+        "acoustic",
+        "impedance"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-sensory-biophysics",
+      "title": "Vision, hearing and sensory coding",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Connect stimulus energy to receptor responses and perceived intensity.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "hearing",
+        "vision",
+        "phon",
+        "sone"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-water-biopolymers",
+      "title": "Water, protein folding and polymer elasticity",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Explain how solvent and molecular flexibility shape biological material behaviour.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "folding",
+        "DNA",
+        "polymer",
+        "water"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-structural-methods",
+      "title": "X-ray diffraction and mass spectrometry",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Compare structural inference from diffraction with separation by mass-to-charge ratio.",
+      "tags": [
+        "Biomolecules and body systems",
+        "Biophysics",
+        "Physical principles",
+        "Bragg",
+        "MALDI",
+        "ESI",
+        "mass",
+        "spectrometry"
+      ],
+      "minutes": 8
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-09-09",
+      "bytes": 0,
+      "id": "biophysics-xray-production",
+      "title": "X-ray tubes, spectra and beam quality",
+      "subject": "biophysics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Separate tube voltage, current and target material when predicting an X-ray spectrum.",
+      "tags": [
+        "Signals and X-ray imaging",
+        "Biophysics",
+        "Physical principles",
+        "bremsstrahlung",
+        "Duane-Hunt",
+        "kVp",
+        "filtration"
+      ],
+      "minutes": 8
     },
     {
       "status": "public",
@@ -656,7 +1722,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-07",
       "bytes": 0,
       "id": "epithelia",
       "title": "Epithelia: layers, shape and function",
@@ -923,7 +1989,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "autonomic-signalling",
       "title": "Autonomic signals: receptor before response",
@@ -940,7 +2006,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "fluid-and-membrane-transport",
       "title": "Cell transport: follow the energy",
@@ -957,7 +2023,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "digestive-control",
       "title": "Digestion: coordinate movement and secretion",
@@ -974,7 +2040,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "endocrine-feedback",
       "title": "Endocrine axes: read the feedback loop",
@@ -991,7 +2057,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "energy-balance",
       "title": "Energy balance: connect intake, storage and use",
@@ -1045,7 +2111,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "blood-and-haemostasis",
       "title": "Haemostasis: build and stabilise the plug",
@@ -1100,7 +2166,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "lymph-and-fluid-exchange",
       "title": "Microcirculation: return the filtered fluid",
@@ -1117,7 +2183,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "synaptic-integration",
       "title": "Neural integration: from release to a response",
@@ -1206,7 +2272,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "reproductive-cycles",
       "title": "Reproductive physiology: connect the two cycles",
@@ -1242,7 +2308,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "special-senses",
       "title": "Special senses: convert a stimulus into a signal",
@@ -1298,7 +2364,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "cardiac-cycle",
       "title": "The cardiac cycle: pressure opens the valves",
@@ -1333,7 +2399,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "muscle-contraction",
       "title": "Three muscle types, three calcium stories",
@@ -1370,7 +2436,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-09",
       "bytes": 0,
       "id": "respiratory-mechanics",
       "title": "Ventilation: make each breath count",
@@ -1383,7 +2449,7 @@
         "physiology",
         "guided revision"
       ],
-      "minutes": 7
+      "minutes": 9
     },
     {
       "status": "public",
@@ -1406,7 +2472,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-09-08",
       "bytes": 0,
       "id": "renal-water-balance",
       "title": "Water balance: distinguish ADH from aldosterone",

@@ -70,4 +70,11 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
       "Study inheritance, genetic variation, and immune responses through connected explanations and practice.",
     topics: ["Genetics", "Inheritance and variation", "Immunology"],
   },
+  {
+    id: "biophysics",
+    number: "07",
+    title: "Biophysics",
+    description: "Connect physics with medicine through optics, radiation, imaging, transport, membranes and worked practical measurements.",
+    topics: ["Physical principles", "Practical calculations", "Biophysics"],
+  },
 ];

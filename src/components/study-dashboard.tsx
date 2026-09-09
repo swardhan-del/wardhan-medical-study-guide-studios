@@ -1,4 +1,5 @@
 "use client";
+import { ProgressTransfer } from "./progress-transfer";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
@@ -87,9 +88,9 @@ export function StudyDashboard() {
         <div className="action-row">
           <Link
             className="button button-primary"
-            href={lastPracticed?.href ?? renalLessonHref(next.slug)}
+            href={lastPracticed?.href ?? (data.lessons.length ? renalLessonHref(next.slug) : "/start")}
           >
-            Continue learning
+            {lastPracticed || data.lessons.length ? "Continue learning" : "Choose my first lesson"}
           </Link>
           <button
             className="button button-secondary"
@@ -148,6 +149,7 @@ export function StudyDashboard() {
           </Link>
         </div>
       </section>
+      <ProgressTransfer />
       <details className="study-details">
         <summary>Manage study progress</summary>
         <p>
