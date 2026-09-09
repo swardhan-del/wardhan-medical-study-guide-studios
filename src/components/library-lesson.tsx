@@ -66,7 +66,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
       <ResourceBreadcrumbs id={lesson.id} />
       <header className="concept-heading">
         <p className="eyebrow">
-          {subject.title} · {lesson.minutes} minute concept introduction
+          {subject.title} · {lesson.minutes} minute {lesson.workedExample ? "guided lesson" : "concept introduction"}
         </p>
         <h1>{lesson.title}</h1>
         <p className="interior-lede">{lesson.summary}</p>
@@ -87,11 +87,19 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
       </header>
       <div className="concept-layout">
         <div>
+          {lesson.objectives && <section className="study-panel" aria-labelledby="lesson-objectives">
+            <h2 id="lesson-objectives">What you will be able to explain</h2>
+            <ul>{lesson.objectives.map(objective => <li key={objective}>{objective}</li>)}</ul>
+            {lesson.prerequisites && <><h3>Useful preparation</h3><ul>{lesson.prerequisites.map(id => {
+              const resource = publicCatalog.find(r => r.id === id);
+              return resource ? <li key={id}><Link href={resourceHref(resource)}>{resource.title}</Link></li> : null;
+            })}</ul></>}
+          </section>}
           <section
             className="concept-explanations"
             aria-labelledby="concept-map-title"
           >
-            <p className="eyebrow">Three ideas to connect</p>
+            <p className="eyebrow">{lesson.steps.length} ideas to connect</p>
             <h2 id="concept-map-title">Build the explanation</h2>
             <p>Open each idea, then explain how it relates to the next.</p>
             <div className="concept-sequence">
@@ -116,6 +124,12 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
               ))}
             </div>
           </section>
+          {lesson.workedExample && <section className="study-panel" aria-labelledby="worked-example-heading">
+            <p className="eyebrow">Work it through</p>
+            <h2 id="worked-example-heading">{lesson.workedExample.title}</h2>
+            <p>{lesson.workedExample.prompt}</p>
+            <details><summary>Show the reasoning</summary><ol>{lesson.workedExample.solution.map(step => <li key={step}>{step}</li>)}</ol></details>
+          </section>}
           {lesson.id === "epithelia" && (
             <>
               <HistologyVisualLesson />

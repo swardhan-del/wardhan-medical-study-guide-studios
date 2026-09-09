@@ -34,6 +34,15 @@ export function validateLibraryLessons(data, catalog, sources) {
     )
       throw new Error(`Incomplete teaching content: ${lesson.id}`);
     const q = lesson.question;
+    if (lesson.objectives || lesson.prerequisites || lesson.workedExample) {
+      if (!Array.isArray(lesson.objectives) || lesson.objectives.length < 3 || lesson.objectives.some(o => !text(o, 15)))
+        throw new Error(`Incomplete objectives: ${lesson.id}`);
+      if (!Array.isArray(lesson.prerequisites) || lesson.prerequisites.some(id => id === lesson.id || !records.has(id)))
+        throw new Error(`Broken prerequisite: ${lesson.id}`);
+      const example = lesson.workedExample;
+      if (!example || !text(example.title, 5) || !text(example.prompt, 30) || !Array.isArray(example.solution) || example.solution.length < 3 || example.solution.some(s => !text(s, 20)))
+        throw new Error(`Incomplete worked example: ${lesson.id}`);
+    }
     if (
       !q ||
       !text(q.prompt, 15) ||

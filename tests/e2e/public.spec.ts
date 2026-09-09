@@ -87,7 +87,7 @@ test("anatomy recall supports correction and keeps answers when changing topics"
     .check();
   await panel.getByRole("button", { name: "Check answer" }).click();
   await expect(panel.getByRole("status")).toContainText("Correct.");
-  await expect(page.locator(".learning-progress")).toContainText("1 of 15");
+  await expect(page.locator(".learning-progress:visible")).toContainText("1 of 15");
   await page.getByRole("button", { name: "Next topic" }).click();
   await expect(
     panel.getByRole("heading", { name: "Pleura & pleural cavity" }),

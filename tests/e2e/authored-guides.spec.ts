@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import videos from "../../src/content/public-videos.json";
+import lessons from "../../src/content/library-lessons.json";
 test("genetics and immunology browse released resources without private guide links", async ({
   page,
 }) => {
@@ -21,7 +22,7 @@ test("genetics and immunology browse released resources without private guide li
 test("subject sections recover from conflicting filters and open native lessons", async ({ page }) => {
   await page.goto("/study/physiology");
   const browser = page.getByRole("region", { name: "Browse subject lessons" });
-  await expect(browser.getByRole("status")).toHaveText("18 lessons available");
+  await expect(browser.getByRole("status")).toHaveText(`${lessons.lessons.filter(l => l.subject === "physiology").length} lessons available`);
   await browser.getByRole("searchbox").fill("no-matching-concept");
   await browser.getByLabel("Study format").selectOption("figures");
   await expect(browser.getByRole("status")).toHaveText("0 lessons available");

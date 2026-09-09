@@ -21,6 +21,12 @@ export default function StudyPage() {
           topic.
         </p>
       </header>
+      <section className="study-panel" aria-labelledby="study-map-title">
+        <p className="eyebrow">The wider course</p>
+        <h2 id="study-map-title">Explore the study map</h2>
+        <p>Follow the source-based sequence across subjects and see which topics have an introduction available and which are planned.</p>
+        <Link className="button button-secondary" href="/study/map">Open study map</Link>
+      </section>
       <section className="study-courses" aria-labelledby="study-courses-title">
         <h2 id="study-courses-title">Study by subject</h2>
         <div className="study-panel study-subject">
