@@ -4057,3 +4057,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 
 .guide-contents ol { list-style: none; padding-left: 0; }
 @media print { .revision-attribution { display: none; } }
+@media print {
+  .revision-section, .revision-answers { margin: 0; }
+  .revision-section:last-child { padding-bottom: 0; }
+}
