@@ -3338,6 +3338,936 @@
       "updatedAt": "2026-09-08"
     },
     {
+      "id": "indicator-dilution",
+      "subject": "physiology",
+      "title": "Measure body-fluid compartments by indicator dilution",
+      "summary": "Choose a tracer, correct for losses and calculate measured and derived fluid volumes with consistent units.",
+      "tags": [
+        "Measure body-fluid compartments by indicator dilution",
+        "physiology",
+        "Mechanisms and applications"
+      ],
+      "source": "guide-cellular",
+      "section": "1.1 Body-Fluid Compartments and Their Determination",
+      "steps": [
+        {
+          "title": "Begin with conservation of the indicator",
+          "body": "A known amount of indicator is placed into an unknown fluid volume. After mixing, concentration equals the amount remaining divided by that volume. Rearranging gives volume = amount remaining / equilibrated concentration. The indicator should mix throughout the compartment of interest, remain measurable and avoid appreciable entry into other compartments during the measurement. The calculation measures the distribution space of the tracer; naming that space requires understanding its behaviour."
+        },
+        {
+          "title": "Match the tracer to the compartment",
+          "body": "Labelled water can distribute across cell membranes and therefore estimates total body water. An extracellular marker that is largely excluded from cells estimates extracellular fluid. An indicator retained with plasma proteins estimates plasma volume. Intracellular fluid is usually derived as total body water minus extracellular fluid. Interstitial fluid is approximately extracellular fluid minus plasma volume; whether small transcellular spaces are included depends on the tracer and measurement convention."
+        },
+        {
+          "title": "Correct the numerator before dividing",
+          "body": "If an indicator is excreted or otherwise lost before the equilibrium sample, subtract that loss from the administered amount. Dividing the full administered amount by a concentration already reduced by loss overestimates volume. Concentration must use units compatible with the dose: milligrams divided by milligrams per litre gives litres. A concentration in milligrams per millilitre instead gives millilitres. Do the unit cancellation explicitly before deciding whether an answer is plausible."
+        },
+        {
+          "title": "Interpret the estimate rather than memorising a person",
+          "body": "The familiar total-body-water fraction is an illustrative average, not a constant for every person. Body composition and age alter the fractions. A result may also be distorted by sampling before complete mixing, indicator leakage or uncorrected disappearance. Subtraction combines the uncertainty of two measurements. Blood volume and plasma volume are different: in a simplified model, blood volume = plasma volume / (1 − haematocrit), with haematocrit expressed as a fraction."
+        }
+      ],
+      "objectives": [
+        "Choose a tracer from the barrier it can cross.",
+        "Calculate compartment volume after correcting indicator loss.",
+        "Distinguish measured volume from a volume found by subtraction."
+      ],
+      "prerequisites": [
+        "fluid-and-membrane-transport",
+        "renal-water-balance"
+      ],
+      "workedExample": {
+        "title": "A loss-corrected measurement",
+        "prompt": "A fictional extracellular tracer dose is 150 mg. By sampling, 10 mg has been lost and the equilibrated concentration is 10 mg/L. Total body water was measured separately as 42 L. Find extracellular and intracellular volumes.",
+        "solution": [
+          "Remaining tracer = 150 − 10 = 140 mg.",
+          "Extracellular volume = 140 mg / 10 mg/L = 14 L.",
+          "Intracellular volume = 42 − 14 = 28 L.",
+          "Using 150 mg would give 15 L and overestimate extracellular volume by 1 L."
+        ]
+      },
+      "question": {
+        "prompt": "What happens if indicator loss is ignored but the final concentration is correctly measured?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "The estimated volume becomes smaller",
+            "reason": "The numerator is too large when loss is ignored, so the calculated volume rises."
+          },
+          {
+            "text": "The estimated volume becomes larger",
+            "reason": "The administered amount exceeds the amount remaining; dividing that larger numerator by the same concentration overestimates volume."
+          },
+          {
+            "text": "The result is unaffected",
+            "reason": "The numerator and denominator must refer to the same amount of indicator at the measurement time."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain why intracellular volume is usually calculated indirectly.",
+        "answer": "A total-body-water tracer enters both intracellular and extracellular water, while an extracellular tracer is largely excluded from cells. Subtracting the extracellular estimate from total body water gives intracellular volume. The result depends on the assumptions and measurement error of both tracer studies."
+      },
+      "related": [
+        "fluid-and-membrane-transport",
+        "renal-water-balance"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "ecg-time-and-vectors",
+      "subject": "physiology",
+      "title": "ECG: connect time, conduction and lead direction",
+      "summary": "Read a basic ECG as a timed electrical signal, calculate rate and distinguish a lead projection from the spread of activation.",
+      "tags": [
+        "ECG: connect time, conduction and lead direction",
+        "physiology",
+        "Mechanisms and applications"
+      ],
+      "source": "guide-cardio",
+      "section": "2.2 Cardiac vector and electrocardiography",
+      "steps": [
+        {
+          "title": "Keep the electrical and mechanical stories separate",
+          "body": "The ECG records changing voltage differences at the body surface. The P wave reflects atrial depolarisation, the QRS complex ventricular depolarisation and the T wave ventricular repolarisation. Atrial repolarisation is usually obscured by the much larger QRS. These are electrical events that precede or overlap mechanical events. A QRS complex is not itself a measurement of ejection or stroke volume, and an electrical tracing alone does not establish effective blood flow."
+        },
+        {
+          "title": "Read the calibration first",
+          "body": "At a paper speed of 25 mm/s, one 1-mm small square represents 0.04 s and one 5-mm large square represents 0.20 s. At 50 mm/s the same distances represent half those times. Standard voltage calibration is often 10 mm/mV, but it must be checked rather than assumed. For a regular rhythm, heart rate in beats/min = 60 / R–R interval in seconds. Counting large squares with the 300 rule only applies at 25 mm/s."
+        },
+        {
+          "title": "Define the interval endpoints",
+          "body": "The PR interval starts at P-wave onset and ends at QRS onset. It includes atrial depolarisation and conduction toward the ventricles; it is not simply the duration of the AV node alone. The PR segment begins after the P wave ends. QRS duration measures ventricular depolarisation. The QT interval extends from QRS onset to T-wave end and includes ventricular depolarisation and repolarisation. QT varies with rate, so a raw interval is not interpreted independently of heart rate."
+        },
+        {
+          "title": "Project the vector onto a lead",
+          "body": "A lead has a positive and a negative direction. A net depolarisation vector toward its positive electrode produces an upward deflection; a vector pointing away produces a downward deflection. A nearly perpendicular vector can produce a small or biphasic signal. The same activation can therefore look different in different leads. Limb leads sample the frontal plane and chest leads the horizontal plane. Begin with calibration, rate, regularity, P-to-QRS relationship and intervals before making an interpretation."
+        }
+      ],
+      "objectives": [
+        "Relate P, QRS and T to electrical events.",
+        "Convert ECG grid distances into time and rate.",
+        "Predict how a lead records a depolarisation vector."
+      ],
+      "prerequisites": [
+        "cardiac-cycle",
+        "cardiac-output"
+      ],
+      "workedExample": {
+        "title": "Read a calibrated strip",
+        "prompt": "A fictional regular tracing at 25 mm/s has four large squares between successive R peaks and four small squares from P onset to QRS onset. Calculate rate and PR interval.",
+        "solution": [
+          "R–R = 4 × 0.20 = 0.80 s.",
+          "Rate = 60 / 0.80 = 75 beats/min.",
+          "PR = 4 × 0.04 = 0.16 s.",
+          "If the speed were 50 mm/s, the same distances would instead represent 150 beats/min and 0.08 s. Calibration is essential."
+        ]
+      },
+      "question": {
+        "prompt": "At 25 mm/s, a regular R–R interval of five large squares corresponds to which rate?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "120 beats/min",
+            "reason": "Five large squares last 1 second at this speed, not half a second."
+          },
+          {
+            "text": "75 beats/min",
+            "reason": "That rate corresponds to four large squares at 25 mm/s."
+          },
+          {
+            "text": "60 beats/min",
+            "reason": "Five times 0.20 s is 1 s per beat, so there are 60 beats per minute."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Why can one depolarisation produce different deflections in two leads?",
+        "answer": "Each lead records the component of the changing electrical vector along its own axis. A vector toward one positive electrode may be nearly perpendicular to another lead. The leads are different views of the same activation, not different cardiac contractions."
+      },
+      "related": [
+        "cardiac-cycle",
+        "cardiac-output"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "alveolar-ventilation-calculations",
+      "subject": "physiology",
+      "title": "Alveolar ventilation: why breathing pattern matters",
+      "summary": "Compare equal minute ventilations, account for dead space and predict carbon dioxide changes under stated assumptions.",
+      "tags": [
+        "Alveolar ventilation: why breathing pattern matters",
+        "physiology",
+        "Mechanisms and applications"
+      ],
+      "source": "guide-respiratory",
+      "section": "Dead space, alveolar ventilation and gas transport",
+      "steps": [
+        {
+          "title": "Separate total movement from useful ventilation",
+          "body": "Minute ventilation is tidal volume multiplied by breathing frequency. It measures the air moved at the airway opening per minute. Some air fills conducting passages and does not exchange gas with blood. In a simple model, alveolar ventilation = (tidal volume − dead-space volume) × frequency. Use the same units for both volumes. The expression describes effective ventilation only as well as the dead-space estimate represents the non-exchanging volume."
+        },
+        {
+          "title": "Distinguish the two sources of dead space",
+          "body": "Anatomical dead space is the conducting-airway volume. Alveolar dead space represents ventilation reaching alveoli with absent or inadequate perfusion. Physiological dead space combines the two. The fixed anatomical value used in a classroom exercise is an assumption, not a universal patient measurement. A ventilation–perfusion disturbance may change physiological dead space even when conducting-airway anatomy has not changed."
+        },
+        {
+          "title": "Compare patterns at the same minute ventilation",
+          "body": "For each breath, dead-space filling is paid before the remainder contributes to alveolar ventilation. When tidal volume is small, that cost takes a larger fraction of each breath. Increasing frequency can preserve minute ventilation while alveolar ventilation falls. This explains why the total litres breathed per minute cannot by itself tell you how effectively carbon dioxide is being removed."
+        },
+        {
+          "title": "State the assumptions of the carbon dioxide prediction",
+          "body": "At steady state, arterial carbon dioxide tension varies approximately with carbon dioxide production divided by alveolar ventilation. If production is unchanged and alveolar ventilation halves, carbon dioxide tension tends to double. The relationship is a physiological model, not an instruction for setting a ventilator. Changing metabolism, non-steady-state conditions and altered gas exchange can make a simple numerical prediction inappropriate. Oxygenation also depends on inspired oxygen and gas-exchange matching, not ventilation alone."
+        }
+      ],
+      "objectives": [
+        "Calculate minute and alveolar ventilation.",
+        "Explain why rapid shallow breaths waste more ventilation.",
+        "Use the inverse relationship between alveolar ventilation and carbon dioxide cautiously."
+      ],
+      "prerequisites": [
+        "respiratory-mechanics",
+        "ventilation-perfusion"
+      ],
+      "workedExample": {
+        "title": "Same total ventilation, different result",
+        "prompt": "Compare pattern A: 500 mL × 12/min and pattern B: 250 mL × 24/min. Assume a fixed 150 mL dead space.",
+        "solution": [
+          "Both patterns give minute ventilation of 6,000 mL/min, or 6 L/min.",
+          "A: (500 − 150) × 12 = 4,200 mL/min alveolar ventilation.",
+          "B: (250 − 150) × 24 = 2,400 mL/min alveolar ventilation.",
+          "B has less alveolar ventilation despite the same total ventilation. At unchanged carbon dioxide production, steady-state carbon dioxide tension would tend to rise."
+        ]
+      },
+      "question": {
+        "prompt": "With 150 mL dead space, what is alveolar ventilation for 400 mL breaths at 15/min?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "3.75 L/min",
+            "reason": "Subtract 150 from 400 first, then multiply 250 mL by 15 and convert to litres."
+          },
+          {
+            "text": "6 L/min",
+            "reason": "This is minute ventilation and includes air that fills dead space."
+          },
+          {
+            "text": "0.25 L/min",
+            "reason": "This is the alveolar portion of one breath in litres, before multiplying by frequency."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain why a normal-looking minute ventilation can hide ineffective ventilation.",
+        "answer": "Minute ventilation includes dead-space ventilation. Smaller, more frequent breaths can move the same total volume but devote a larger share to dead space. Increased alveolar dead space also reduces effective gas exchange. Calculate or assess the useful component before drawing conclusions about carbon dioxide removal."
+      },
+      "related": [
+        "respiratory-mechanics",
+        "ventilation-perfusion"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Myelin and glia: identify the cell before the function",
+      "summary": "Connect CNS and PNS supporting cells with internodes, conduction and the limits of routine histological identification.",
+      "tags": [
+        "Myelin and glia: identify the cell before the function",
+        "histology",
+        "Mechanisms and applications"
+      ],
+      "source": "histology-neuro-r20260907",
+      "section": "Supporting Cells; Myelination; Peripheral Nerve Structure",
+      "steps": [
+        {
+          "title": "Begin with location and relationships",
+          "body": "A supporting cell should be interpreted in its tissue context. Astrocytes regulate the neuronal environment, including extracellular potassium and transmitter handling. Oligodendrocytes form CNS myelin, while microglia are resident immune cells. Ependymal cells line most ventricular surfaces. In peripheral ganglia, satellite cells surround neuronal cell bodies. Schwann cells associate with peripheral axons. The word glia groups several distinct cell types rather than describing one universal support function."
+        },
+        {
+          "title": "Count internodes rather than whole axons",
+          "body": "One myelinating Schwann cell forms one internode of one peripheral axon. A long axon therefore needs many successive Schwann cells. A single oligodendrocyte can extend processes to form internodes on several CNS axons. Nodes of Ranvier interrupt the myelin sheath and contain membrane specialised for regenerating the action potential. Myelin increases membrane resistance and reduces effective capacitance, helping local current spread toward the next node."
+        },
+        {
+          "title": "Do not equate unmyelinated with unsupported",
+          "body": "Small peripheral axons can lie in grooves within a non-myelinating Schwann cell as a Remak bundle. They have Schwann-cell support without a compact multilamellar myelin sheath. Electrical conduction along axonal membrane is also different from axonal transport. Microtubule-based transport moves vesicles, proteins and organelles inside the axon; the propagation of a voltage change does not carry those materials down the nerve."
+        },
+        {
+          "title": "Use the coverings to recognise a peripheral nerve",
+          "body": "In a transverse section, identify bundles bounded by perineurium before interpreting individual profiles. Endoneurial connective tissue lies among nerve fibres within a fascicle; epineurium surrounds and connects fascicles and contains larger vessels. Routine processing can dissolve myelin lipid, leaving pale rings or spaces. A single dark glial nucleus usually cannot establish a precise glial subtype without context or special methods. State what the preparation demonstrates and what remains inferred."
+        }
+      ],
+      "objectives": [
+        "Compare Schwann cells with oligodendrocytes.",
+        "Distinguish myelination from axonal transport.",
+        "Use tissue organisation to recognise a peripheral nerve."
+      ],
+      "prerequisites": [
+        "neurulation",
+        "membrane-potentials"
+      ],
+      "workedExample": {
+        "title": "Reconstruct a nerve from a description",
+        "prompt": "A section shows several rounded fascicles, each with a concentric cellular boundary. Fine connective tissue surrounds individual fibres; thicker connective tissue lies between bundles.",
+        "solution": [
+          "The boundary of each fascicle is perineurium.",
+          "The delicate tissue within the fascicle is endoneurium.",
+          "The tissue joining and surrounding fascicles is epineurium.",
+          "These relations support peripheral-nerve identification. They do not by themselves prove the physiological class of each fibre."
+        ]
+      },
+      "question": {
+        "prompt": "Which statement correctly compares myelinating cells?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "One Schwann cell myelinates the entire length of a peripheral axon",
+            "reason": "Each cell forms one internode, so long axons require many Schwann cells."
+          },
+          {
+            "text": "An oligodendrocyte can form internodes on multiple CNS axons",
+            "reason": "Its processes can contact several axons, unlike the one-internode arrangement of a myelinating Schwann cell."
+          },
+          {
+            "text": "An unmyelinated peripheral axon cannot contact a Schwann cell",
+            "reason": "Remak bundles contain small axons supported by non-myelinating Schwann cells."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Give a structured oral comparison of CNS and PNS myelin.",
+        "answer": "Name oligodendrocytes in the CNS and Schwann cells in the PNS. Compare one cell serving several CNS internodes with one Schwann cell per peripheral internode. Explain the nodes and saltatory conduction, then distinguish compact myelin from non-myelinating Schwann-cell support."
+      },
+      "related": [
+        "neurulation",
+        "membrane-potentials"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Locate the blood–brain and blood–CSF barriers",
+      "summary": "Trace two routes out of blood and identify the cell layer that forms each barrier rather than confusing support cells with the seal.",
+      "tags": [
+        "Locate the blood–brain and blood–CSF barriers",
+        "histology",
+        "Mechanisms and applications"
+      ],
+      "source": "histology-neuro-r20260907",
+      "section": "Official Lecture Expansion — Glia Limitans and CNS Barriers",
+      "steps": [
+        {
+          "title": "Trace blood toward brain interstitial fluid",
+          "body": "At typical CNS capillaries, endothelial cells are joined by tight junctions and show restricted nonspecific transcytosis. These endothelial properties form the principal blood–brain barrier. Crossing from blood to brain therefore requires an appropriate transcellular route for many substances. A barrier is selective rather than absolutely impermeable: oxygen can diffuse, and transport proteins support the regulated passage of needed nutrients."
+        },
+        {
+          "title": "Place support cells around the endothelial seal",
+          "body": "Pericytes, basement membranes and astrocytic endfeet contribute to the neurovascular environment and maintenance of barrier properties. Astrocytes are important, but their endfeet are not the endothelial tight junctions themselves. When explaining a labelled drawing, distinguish the luminal endothelial lining from the cells and processes outside it. Saying that astrocytes simply form the seal hides the most important anatomical boundary."
+        },
+        {
+          "title": "Take the choroid-plexus route separately",
+          "body": "Choroid-plexus capillaries are fenestrated. The blood–CSF barrier lies principally at tight junctions between the specialised choroid-plexus epithelial cells. These epithelial cells regulate the passage from the vascular connective-tissue core toward ventricular CSF. Thus the blood–brain route has an endothelial seal, whereas the choroid-plexus route has an epithelial seal. Ordinary ventricular ependyma should not be assigned the same tight barrier properties as the specialised choroid-plexus epithelium."
+        },
+        {
+          "title": "Keep the glia limitans distinct",
+          "body": "Astrocytic endfeet and associated basal laminae contribute to the superficial glia limitans beneath the pia and to perivascular boundaries. These structures belong on a CNS barrier map but are not interchangeable with capillary endothelium. A routine light micrograph may show choroid-plexus fronds and epithelial lining but cannot directly resolve individual tight-junction strands. Connect visible architecture to mechanism while making the level of observation clear."
+        }
+      ],
+      "objectives": [
+        "Locate the sealing junctions in each barrier.",
+        "Explain the contribution of astrocytes and pericytes.",
+        "Distinguish ordinary ependyma from choroid-plexus epithelium."
+      ],
+      "prerequisites": [
+        "myelin-and-glial-cells",
+        "cell-junctions"
+      ],
+      "workedExample": {
+        "title": "Follow a tracer into a choroid-plexus frond",
+        "prompt": "A schematic shows tracer passing out of a fenestrated capillary into the connective-tissue core, but not freely between epithelial cells into ventricular CSF. Identify the remaining boundary.",
+        "solution": [
+          "The tracer has crossed the capillary wall in the choroid plexus.",
+          "It still faces tight junctions between the specialised epithelial cells.",
+          "This illustrates the blood–CSF barrier; it does not mean the blood–brain barrier is generally leaky."
+        ]
+      },
+      "question": {
+        "prompt": "Where is the principal sealing layer of the blood–CSF barrier in the choroid plexus?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "Between astrocytic endfeet",
+            "reason": "Astrocytes support CNS barriers but are not the choroid-plexus epithelial seal."
+          },
+          {
+            "text": "At the fenestrations of its capillaries",
+            "reason": "The capillaries are fenestrated; the selective epithelial boundary remains beyond them."
+          },
+          {
+            "text": "Between specialised choroid-plexus epithelial cells",
+            "reason": "Their tight junctions restrict the paracellular route toward CSF."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Compare the two barriers without using the word barrier alone.",
+        "answer": "For blood to brain interstitial fluid, identify capillary endothelial tight junctions with supporting pericytes and astrocytes. For blood to ventricular CSF at the choroid plexus, identify specialised epithelial tight junctions beyond fenestrated capillaries. Name the cellular seal in each route."
+      },
+      "related": [
+        "myelin-and-glial-cells",
+        "cell-junctions"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "chromatin-access-and-topology",
+      "subject": "cell-biology",
+      "title": "Chromatin: separate access, packaging and topology",
+      "summary": "Explain nucleosomes, chromatin accessibility and torsional stress without treating compaction as a simple on–off switch.",
+      "tags": [
+        "Chromatin: separate access, packaging and topology",
+        "cell-biology",
+        "Mechanisms and applications"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 2, 3 and 24: chromatin proteins, regulatory sequences and histone modifications",
+      "steps": [
+        {
+          "title": "Build the nucleosome first",
+          "body": "The nucleosome core consists of DNA wrapped around a histone octamer containing two copies each of H2A, H2B, H3 and H4. Linker DNA connects neighbouring cores; H1 associates with linker and entry/exit regions rather than replacing a core histone. Packaging reduces the space occupied by DNA but also changes access for proteins that replicate, repair and transcribe it. Chromatin therefore has a regulatory role as well as a structural one."
+        },
+        {
+          "title": "Treat accessibility as a regulated property",
+          "body": "Less compact regions are often more accessible, but an open region is not automatically being transcribed. The relevant transcription factors, promoter machinery and regulatory signals must also be present. ATP-dependent remodellers can change nucleosome positions or composition. Histone modifications can alter interactions and recruit proteins that read particular marks. The effect of a modification depends on its location and context; histone methylation is not a universal repression signal."
+        },
+        {
+          "title": "Connect distant regulatory DNA",
+          "body": "Enhancers can influence a promoter through interactions organised in three-dimensional chromatin. Their position need not be immediately upstream of the coding sequence. Promoters, enhancers and boundary elements perform different jobs. A mutation in a regulatory sequence can change the amount, timing or tissue distribution of expression without changing the amino-acid sequence. This is a different explanation from a coding change that alters protein structure."
+        },
+        {
+          "title": "Resolve the stress caused by opening DNA",
+          "body": "Helicases separate strands during processes such as replication. Opening a constrained DNA duplex produces torsional stress ahead of the moving machinery. Topoisomerases relieve or change topology by temporarily breaking and resealing DNA strands. Type I enzymes cut one strand; type II enzymes cut both strands and pass another duplex segment through the break. DNA gyrase is a bacterial type II example. Do not describe topoisomerase as simply another name for helicase."
+        }
+      ],
+      "objectives": [
+        "Describe a nucleosome and distinguish linker histone H1.",
+        "Explain how chromatin organisation influences transcription.",
+        "Distinguish topoisomerases from helicases."
+      ],
+      "prerequisites": [
+        "dna-replication",
+        "rna-processing"
+      ],
+      "workedExample": {
+        "title": "Interpret an expression experiment",
+        "prompt": "A fictional experiment increases promoter accessibility but the transcript remains undetectable. Does this show that chromatin has no regulatory role?",
+        "solution": [
+          "No. Accessibility can permit binding without supplying the required transcription factor.",
+          "Check whether the relevant activator and transcription machinery are present and whether the assay can detect the transcript.",
+          "The result separates a permissive chromatin state from sufficient conditions for active transcription."
+        ]
+      },
+      "question": {
+        "prompt": "Which statement best explains a topoisomerase action?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "It transiently cuts and reseals DNA to alter topology",
+            "reason": "This permits relief of torsional stress or passage of DNA segments without leaving a permanent break in normal catalysis."
+          },
+          {
+            "text": "It reads mRNA codons at the ribosome",
+            "reason": "Decoding belongs to translation, not DNA topology control."
+          },
+          {
+            "text": "It is the core histone that replaces H1",
+            "reason": "Topoisomerases are enzymes acting on DNA, not nucleosome-core histones."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain why an unchanged coding sequence can still produce altered gene expression.",
+        "answer": "Regulatory DNA, transcription factors and chromatin organisation determine when and where a gene is expressed. A change in an enhancer or promoter can alter transcription while leaving the encoded amino-acid sequence unchanged. Open chromatin supports access but does not by itself guarantee transcription."
+      },
+      "related": [
+        "dna-replication",
+        "rna-processing"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "er-protein-quality-control",
+      "subject": "cell-biology",
+      "title": "ER quality control: folding, glycan checks and ERAD",
+      "summary": "Follow a secretory protein through folding attempts, retention and degradation, and distinguish disposal from the stress response.",
+      "tags": [
+        "ER quality control: folding, glycan checks and ERAD",
+        "cell-biology",
+        "Mechanisms and applications"
+      ],
+      "source": "cell-biology",
+      "section": "Topics 32, 34 and 35: chaperones, ER modifications and N-glycosylation/ERAD",
+      "steps": [
+        {
+          "title": "Place the protein in the right compartment",
+          "body": "Many secreted and membrane proteins enter the endoplasmic reticulum during synthesis after an ER-targeting signal is recognised. The ER lumen provides chaperones and an environment suited to disulfide-bond formation. A newly made chain is not ready for export just because translation has ended: it must acquire an appropriate conformation and, where relevant, assemble with partner chains. Cytosolic proteins do not all travel through this pathway."
+        },
+        {
+          "title": "Use a glycan as part of the folding check",
+          "body": "N-linked glycosylation attaches an oligosaccharide to suitable asparagine sites, commonly described by Asn-X-Ser/Thr with X not proline. The presence of that sequence does not guarantee every site is modified. Glycan processing helps recruit lectin chaperones such as calnexin and calreticulin. These interactions support folding and retention while a protein is checked. A carbohydrate modification can therefore have a quality-control role rather than serving only as an extracellular recognition label."
+        },
+        {
+          "title": "Separate another attempt from disposal",
+          "body": "Chaperones can help prevent aggregation and allow additional folding attempts. Persistently defective proteins may enter ER-associated degradation, or ERAD. In the canonical route, the defective substrate is moved toward the cytosol, tagged through ubiquitin-dependent machinery and degraded by the proteasome. This prevents export of many nonfunctional products. Not every disposal route for every ER substrate is identical, so the canonical sequence should not be turned into an absolute rule for all proteins."
+        },
+        {
+          "title": "Distinguish ERAD from the unfolded protein response",
+          "body": "ERAD is a route for removing defective substrates. The unfolded protein response is a signalling programme activated when folding demand exceeds capacity. It can reduce incoming protein load and increase folding and disposal capacity; sustained severe stress can have different outcomes. A reduced amount of secreted protein could reflect impaired synthesis, failed targeting, retention, increased degradation or a transport defect. Identify the stage with evidence rather than assuming that low secretion means low transcription."
+        }
+      ],
+      "objectives": [
+        "Follow a protein from ER entry to a folding decision.",
+        "Explain how glycans help quality control.",
+        "Distinguish ERAD from the unfolded protein response."
+      ],
+      "prerequisites": [
+        "protein-trafficking",
+        "translation"
+      ],
+      "workedExample": {
+        "title": "Locate a defect with a pulse–chase experiment",
+        "prompt": "Newly labelled protein appears in the ER but disappears before reaching the medium. Inhibiting proteasomal degradation increases its intracellular amount. What does this support?",
+        "solution": [
+          "ER entry has occurred, so complete failure of targeting is unlikely.",
+          "Proteasome-sensitive disappearance supports a degradation contribution, consistent with ERAD.",
+          "This does not prove the accumulated protein is correctly folded or functional; blocking disposal can increase defective material."
+        ]
+      },
+      "question": {
+        "prompt": "Which observation best separates protein disposal from successful rescue?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "The intracellular amount rises after blocking degradation",
+            "reason": "More protein may simply reflect retained defective substrate."
+          },
+          {
+            "text": "The protein acquires normal function and reaches its correct destination",
+            "reason": "Function and correct delivery provide stronger evidence of rescue than abundance alone."
+          },
+          {
+            "text": "Its mRNA can be detected",
+            "reason": "A transcript establishes neither correct folding nor successful secretion."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain ERAD and the unfolded protein response as different answers to folding stress.",
+        "answer": "ERAD identifies and removes defective proteins, commonly through export toward the cytosol and proteasomal degradation. The unfolded protein response changes cellular capacity and incoming load through signalling. One is a substrate-disposal route; the other coordinates an adaptive response that can include increased disposal."
+      },
+      "related": [
+        "protein-trafficking",
+        "translation"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "ketone-production-and-use",
+      "subject": "biochemistry",
+      "title": "Ketone bodies: connect liver production with tissue use",
+      "summary": "Follow fasting fuel flow and explain why the liver produces ketone bodies that other tissues can oxidise.",
+      "tags": [
+        "Ketone bodies: connect liver production with tissue use",
+        "biochemistry",
+        "Mechanisms and applications"
+      ],
+      "source": "biochemistry-active-july18",
+      "section": "Chapter 13: fatty-acid oxidation, synthesis and oxidation of ketone bodies",
+      "steps": [
+        {
+          "title": "Follow the incoming fuel",
+          "body": "During fasting, the hormonal environment favours mobilisation of stored triacylglycerol. Released fatty acids travel to tissues, including liver, where mitochondrial beta-oxidation supplies acetyl-CoA and reducing equivalents. The acetyl-CoA has several possible fates. Its accumulation alone is not a complete explanation of ketosis: substrate supply, hepatic redox state and the availability of oxaloacetate for the citric-acid cycle all matter."
+        },
+        {
+          "title": "Explain the hepatic branch point",
+          "body": "In liver mitochondria, acetyl-CoA can be channelled through HMG-CoA intermediates toward acetoacetate. Acetoacetate can be reduced to beta-hydroxybutyrate according to the mitochondrial redox state or contribute to acetone formation. Beta-hydroxybutyrate is grouped with ketone bodies physiologically even though it is not chemically a ketone. Mitochondrial ketogenesis should be distinguished from the cytosolic pathway using HMG-CoA in cholesterol synthesis."
+        },
+        {
+          "title": "Ask which tissue can use the exported fuel",
+          "body": "Extrahepatic tissues with mitochondria can convert ketone bodies toward acetyl-CoA for oxidation. The liver lacks the key SCOT enzyme required for the usual ketolytic activation step and therefore exports rather than substantially consuming the ketone bodies it makes. Mature red blood cells lack mitochondria and cannot obtain ATP by ketone oxidation. The brain can increase ketone use during prolonged fasting, but this does not mean every tissue stops requiring glucose."
+        },
+        {
+          "title": "Interpret fuel patterns in context",
+          "body": "Ketone production is part of fasting adaptation, but markedly abnormal accumulation can occur in other metabolic settings. A measured ketone result alone does not establish its cause or acid–base consequence. In a mechanistic answer, name production, transport, tissue uptake and oxidation separately. Avoid the misleading statement that fatty acids become net glucose through acetyl-CoA: the even-chain fatty-acid acetyl units do not provide net glucose in humans, although glycerol and odd-chain contributions are separate cases."
+        }
+      ],
+      "objectives": [
+        "Trace fatty acids toward hepatic ketogenesis.",
+        "Explain why liver and red cells cannot use ketones in the same way as other tissues.",
+        "Distinguish physiological fuel adaptation from a diagnosis."
+      ],
+      "prerequisites": [
+        "lipid-metabolism",
+        "pdh-tca"
+      ],
+      "workedExample": {
+        "title": "Compare two tissues",
+        "prompt": "A fictional fasting model delivers labelled beta-hydroxybutyrate to heart muscle and mature red blood cells. Which can use its carbon for mitochondrial ATP production?",
+        "solution": [
+          "Heart muscle has mitochondria and ketolytic capacity, so it can oxidise the ketone carbon.",
+          "Mature red cells have no mitochondria and rely on glycolysis for ATP.",
+          "A circulating fuel can be available to both cells without being usable by both."
+        ]
+      },
+      "question": {
+        "prompt": "Why does the liver export the ketone bodies it produces?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "The liver has no mitochondria",
+            "reason": "Hepatocytes have mitochondria; ketogenesis occurs within them."
+          },
+          {
+            "text": "Ketone bodies cannot cross tissue boundaries",
+            "reason": "Their distribution in blood supplies extrahepatic tissues."
+          },
+          {
+            "text": "The liver lacks the key SCOT step of ketone utilisation",
+            "reason": "This helps separate hepatic production from extrahepatic oxidation."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Give the fasting fuel story without listing enzymes alone.",
+        "answer": "Adipose tissue releases fatty acids; hepatic beta-oxidation supplies acetyl-CoA, some of which enters ketogenesis. Ketone bodies leave the liver and can be oxidised by suitable extrahepatic tissues. The liver lacks the usual SCOT step, and mature red cells lack mitochondria, so neither uses the exported fuel in the same way as heart or other oxidative tissues."
+      },
+      "related": [
+        "lipid-metabolism",
+        "pdh-tca"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "lipoprotein-routes",
+      "subject": "biochemistry",
+      "title": "Lipoproteins: follow the cargo and the particle",
+      "summary": "Distinguish dietary and hepatic lipid transport, triglyceride removal and receptor-mediated cholesterol delivery.",
+      "tags": [
+        "Lipoproteins: follow the cargo and the particle",
+        "biochemistry",
+        "Mechanisms and applications"
+      ],
+      "source": "biochemistry-active-july18",
+      "section": "Chapters 8.1 and 12: cholesterol transport and transport of lipids",
+      "steps": [
+        {
+          "title": "Start with the packaging problem",
+          "body": "Triacylglycerols and cholesteryl esters are poorly soluble in plasma. Lipoprotein particles package hydrophobic cargo inside a surface containing phospholipids, free cholesterol and apolipoproteins. A particle is not simply cholesterol with a different name. Its size, composition and apolipoproteins affect transport and recognition. Plasma cholesterol measurements describe transported lipid; they are not direct counts of all particles or a complete account of their metabolism."
+        },
+        {
+          "title": "Follow the intestinal route",
+          "body": "Enterocytes assemble chylomicrons carrying much of the absorbed dietary lipid. In capillary beds, lipoprotein lipase hydrolyses particle triacylglycerol so fatty acids can be taken up by tissues. ApoC-II supports this enzyme interaction. After substantial triacylglycerol removal, chylomicron remnants are taken up by the liver through pathways involving apoE. The enzyme that removes lipid cargo and the receptor that removes a remnant are different steps."
+        },
+        {
+          "title": "Follow the hepatic route",
+          "body": "The liver secretes VLDL to export triacylglycerol. Lipid removal and remodelling generate remnant particles, including IDL, with some continuing toward LDL. LDL is relatively enriched in cholesterol and contains apoB-100, which participates in LDL-receptor recognition. Receptor-mediated endocytosis brings the particle into the cell, where components are processed. The sequence is not that VLDL is manufactured by the intestine or that LDL is the same thing as a free cholesterol molecule."
+        },
+        {
+          "title": "Place HDL in a transport network",
+          "body": "HDL participates in cholesterol movement from peripheral cells and in exchange and delivery processes that involve other particles and liver. LCAT esterifies cholesterol on HDL, supporting movement into its hydrophobic core. This is a network with multiple pathways, not a one-way vacuum cleaner. Familiar good and bad labels can obscure the mechanisms. For an oral answer, track origin, dominant cargo, key processing step and destination, then discuss any measurement separately."
+        }
+      ],
+      "objectives": [
+        "Follow chylomicrons and VLDL from their organs of origin.",
+        "Distinguish lipoprotein lipase from an uptake receptor.",
+        "Explain why particle identity changes as cargo is removed."
+      ],
+      "prerequisites": [
+        "lipid-metabolism",
+        "protein-trafficking"
+      ],
+      "workedExample": {
+        "title": "Find the blocked step",
+        "prompt": "In a fictional model, triglyceride-rich particles enter blood normally but capillary lipoprotein-lipase activity is markedly reduced. Predict the immediate transport problem.",
+        "solution": [
+          "Hydrolysis of particle triacylglycerol is impaired.",
+          "Delivery of fatty acids through this pathway falls and triglyceride-rich particles persist longer.",
+          "This is a processing defect, not proof that intestinal particle synthesis or LDL-receptor binding has failed."
+        ]
+      },
+      "question": {
+        "prompt": "Which pairing correctly identifies an origin and transport route?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Liver → VLDL export",
+            "reason": "VLDL carries hepatic triacylglycerol into the circulation."
+          },
+          {
+            "text": "Intestine → newly assembled LDL as the main dietary particle",
+            "reason": "Dietary lipid is initially packaged chiefly into chylomicrons, not LDL."
+          },
+          {
+            "text": "Lipoprotein lipase → synthesis of cholesterol inside LDL",
+            "reason": "The enzyme hydrolyses triacylglycerol; it does not synthesise cholesterol inside particles."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Compare the dietary and hepatic routes in four sentences.",
+        "answer": "The intestine packages dietary lipid in chylomicrons. Lipoprotein lipase removes triacylglycerol and remnants return to liver. The liver exports triacylglycerol in VLDL, which is remodelled toward remnant particles and LDL. LDL-receptor uptake supports cholesterol delivery, while HDL participates in cholesterol transport and exchange."
+      },
+      "related": [
+        "lipid-metabolism",
+        "protein-trafficking"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "inguinal-canal-relations",
+      "subject": "anatomy",
+      "title": "Inguinal canal: build the walls and trace a hernia",
+      "summary": "Reconstruct the canal from its layers and use inferior epigastric vessels to distinguish direct and indirect routes.",
+      "tags": [
+        "Inguinal canal: build the walls and trace a hernia",
+        "anatomy",
+        "Mechanisms and applications"
+      ],
+      "source": "guide-volume-2",
+      "section": "Inguinal Canal and Hernia Anatomy",
+      "steps": [
+        {
+          "title": "Locate the oblique passage",
+          "body": "The inguinal canal lies in the lower anterior abdominal wall above the medial portion of the inguinal ligament. Its deep ring opens in transversalis fascia, lateral to the inferior epigastric vessels. Its superficial ring opens in the external oblique aponeurosis near the pubic tubercle. Naming the fascial layer is more informative than simply saying that one ring is deeper, because the coverings and hernia routes follow these layers."
+        },
+        {
+          "title": "Reconstruct four walls",
+          "body": "The anterior wall is chiefly external oblique aponeurosis, reinforced laterally by internal oblique. The posterior wall is chiefly transversalis fascia, reinforced medially by the conjoint tendon where present. The roof consists of arching fibres of internal oblique and transversus abdominis. The floor is formed by the inguinal ligament, with medial contribution from the lacunar ligament. These overlapping layers help explain why the canal is an oblique passage rather than a straight hole."
+        },
+        {
+          "title": "Separate contents from the entry route",
+          "body": "The canal transmits the spermatic cord or the round ligament of the uterus. The ilioinguinal nerve travels through part of the canal and exits at the superficial ring, but does not enter through the deep ring. This is a useful exception to the tempting assumption that everything found in a canal must pass through both ends. When describing the cord, do not indiscriminately include every nearby nerve within its fascial contents."
+        },
+        {
+          "title": "Use a fixed vascular landmark",
+          "body": "An indirect inguinal hernia enters the deep ring lateral to the inferior epigastric vessels and follows the canal. A direct inguinal hernia protrudes through the posterior wall medial to those vessels, in the inguinal triangle. The triangle is bounded by the lateral edge of rectus abdominis, the inferior epigastric vessels and the inguinal ligament. A femoral hernia uses a different route below the ligament; it should not be classified by borrowing the direct/indirect inguinal labels."
+        }
+      ],
+      "objectives": [
+        "Name both rings and the layers they pierce.",
+        "Reconstruct the four walls.",
+        "Classify the hernia route relative to the inferior epigastric vessels."
+      ],
+      "prerequisites": [
+        "abdomen-portal-relations",
+        "limbs-plexus-and-joints"
+      ],
+      "workedExample": {
+        "title": "Draw before naming",
+        "prompt": "On an internal-view sketch, a sac enters an opening lateral to the inferior epigastric vessels and then follows the inguinal canal. Identify its route.",
+        "solution": [
+          "Label the inferior epigastric vessels first.",
+          "The lateral opening is the deep inguinal ring.",
+          "Entry there followed by passage through the canal describes an indirect inguinal route.",
+          "An external bulge alone would not establish all these internal relationships."
+        ]
+      },
+      "question": {
+        "prompt": "Which structure passes through part of the canal without entering at the deep ring?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "The spermatic cord",
+            "reason": "The cord enters through the deep ring in its normal course."
+          },
+          {
+            "text": "The ilioinguinal nerve",
+            "reason": "It enters the canal through the abdominal wall and exits through the superficial ring."
+          },
+          {
+            "text": "An indirect inguinal hernia sac",
+            "reason": "Its defining route is entry at the deep ring lateral to the inferior epigastric vessels."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Give a one-minute answer linking walls, rings and hernia routes.",
+        "answer": "Locate the canal above the inguinal ligament, name the deep ring in transversalis fascia and superficial ring in external oblique aponeurosis, then describe anterior, posterior, roof and floor boundaries. Finish with indirect lateral/deep-ring passage versus direct medial/posterior-wall protrusion relative to inferior epigastric vessels."
+      },
+      "related": [
+        "abdomen-portal-relations",
+        "limbs-plexus-and-joints"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "recessive-conditional-probability",
+      "subject": "genetics",
+      "title": "Recessive inheritance: update probability after new information",
+      "summary": "Use a fictional Mendelian cross to distinguish pregnancy risk from carrier probability conditioned on being unaffected.",
+      "tags": [
+        "Recessive inheritance: update probability after new information",
+        "genetics",
+        "Mechanisms and applications"
+      ],
+      "source": "genetics-integrated-aug6",
+      "section": "Mendelian inheritance; autosomal recessive pedigrees and penetrance",
+      "steps": [
+        {
+          "title": "Define the model before calculating",
+          "body": "Let A be a functional allele and a a disease-associated recessive allele. In a simplified single-gene model, both parents are known heterozygotes Aa. Each contributes A or a with probability one half, independently of the other parent. The four equally likely transmissions produce AA, Aa, aA and aa. Aa and aA describe the same heterozygous genotype, but arise from two different transmission combinations."
+        },
+        {
+          "title": "Distinguish the initial probabilities",
+          "body": "Before any phenotype information about a child, the genotype probabilities are one quarter AA, one half heterozygous and one quarter aa. Under the stated complete-penetrance model, aa is affected and the other three transmission outcomes are unaffected. These are probabilities for each pregnancy. An affected earlier child does not mechanically use up the affected outcome for a later pregnancy; independent transmissions do not follow a quota."
+        },
+        {
+          "title": "Condition on what is now known",
+          "body": "If the child is known to be unaffected under this model, the aa outcome is excluded. Three equally likely original transmission outcomes remain: AA, Aa and aA. Two represent carriers. Therefore carrier probability among unaffected children is two thirds, not one half. The denominator changed from all outcomes to the outcomes compatible with the observation. This is an application of conditional probability, not a new rule of meiosis."
+        },
+        {
+          "title": "Respect the model limits",
+          "body": "The calculation assumes the parental genotypes, the disease model and reliable phenotype classification. Age-dependent or incomplete penetrance can prevent an unaffected observation from excluding aa. Variant interpretation, testing limitations and different genetic mechanisms also matter. A negative test updates probability according to its detection properties; it is not automatically the same evidence as an unaffected phenotype. These exercises teach reasoning and are not individual genetic-risk assessments."
+        }
+      ],
+      "objectives": [
+        "Construct the Aa × Aa outcome space.",
+        "Calculate carrier probability after excluding affected outcomes.",
+        "State the assumptions before applying a Mendelian calculation."
+      ],
+      "prerequisites": [
+        "inheritance",
+        "meiosis"
+      ],
+      "workedExample": {
+        "title": "Add a known carrier partner",
+        "prompt": "An unaffected child of two known Aa parents later has a partner known to be Aa. Within the same simplified model, calculate the probability that their child is aa.",
+        "solution": [
+          "The unaffected individual has carrier probability 2/3.",
+          "If that individual is Aa, an Aa × Aa cross has aa probability 1/4.",
+          "Multiply: (2/3) × (1/4) = 1/6.",
+          "The calculation assumes the same locus, complete penetrance and the stated parental and partner genotypes."
+        ]
+      },
+      "question": {
+        "prompt": "Why is the carrier probability two thirds after an Aa × Aa child is known to be unaffected?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "The recessive allele becomes more likely to segregate",
+            "reason": "Segregation is unchanged; the calculation conditions on an observation."
+          },
+          {
+            "text": "Two of four outcomes are carriers",
+            "reason": "That gives the unconditional probability of one half and fails to exclude the affected outcome."
+          },
+          {
+            "text": "Two of the three remaining transmission outcomes are heterozygous",
+            "reason": "Excluding aa leaves AA, Aa and aA; two of these three outcomes are carriers."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Explain the difference between one half and two thirds in this cross.",
+        "answer": "One half is the carrier probability before learning the child’s phenotype. Two thirds is the carrier probability conditional on being unaffected, assuming aa would always be recognisably affected. Conditioning removes aa from the denominator while retaining both heterozygous transmission outcomes."
+      },
+      "related": [
+        "inheritance",
+        "meiosis"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
+      "id": "hypersensitivity-mechanisms",
+      "subject": "genetics",
+      "title": "Hypersensitivity: classify the mechanism of tissue injury",
+      "summary": "Distinguish IgE activation, antibody against fixed targets, immune complexes and T-cell responses through original comparison cases.",
+      "tags": [
+        "Hypersensitivity: classify the mechanism of tissue injury",
+        "genetics",
+        "Mechanisms and applications"
+      ],
+      "source": "genetics-integrated-aug6",
+      "section": "Immunology teaching sections: antibodies, effector mechanisms and hypersensitivity",
+      "steps": [
+        {
+          "title": "Start with the cause of injury",
+          "body": "Hypersensitivity describes immune responses that cause tissue damage. The traditional four-type framework organises mechanisms; a real disorder can involve more than one. Classification requires identifying antigen location, effector molecules or cells, and the process causing injury. The words rapid and delayed are clues, but timing by itself is not a complete mechanism. Do not call every inflammatory response IgE-mediated allergy."
+        },
+        {
+          "title": "Connect IgE with a sensitised mast cell",
+          "body": "In type I reactions, antigen cross-links specific IgE already bound to high-affinity receptors on mast cells or basophils. This triggers mediator release and subsequent inflammatory events. Sensitisation and the later effector response are distinct stages. An immediate component can be followed by later inflammation, so a later phase does not automatically convert the response into type IV. The key is the IgE-linked activation pathway."
+        },
+        {
+          "title": "Distinguish the two antibody patterns",
+          "body": "Type II involves antibodies directed against cell-surface or extracellular-matrix targets. Effects can include complement activation, phagocyte-mediated injury or altered receptor function; cell destruction is not the only possible result. Type III involves antigen–antibody complexes whose deposition and associated inflammation injure tissues. Ask whether the antibody targets a fixed structure directly or whether complexes form and deposit. Both may recruit complement, so complement alone cannot separate them."
+        },
+        {
+          "title": "Recognise a T-cell effector response",
+          "body": "Type IV responses are mediated principally by antigen-specific T cells. CD4 T-cell cytokines can recruit and activate inflammatory cells, while CD8 T cells can injure target cells directly. Contact dermatitis is a classic teaching context. The time needed for recruitment helps explain a delayed response, but the defining feature is the effector mechanism. Naming a cytokine or a time interval without identifying the cells leaves the explanation incomplete."
+        }
+      ],
+      "objectives": [
+        "Identify the effector rather than classify by timing alone.",
+        "Separate fixed-target antibodies from deposited immune complexes.",
+        "Explain why type IV does not require antibody as its principal effector."
+      ],
+      "prerequisites": [
+        "innate-adaptive",
+        "antigen-presentation"
+      ],
+      "workedExample": {
+        "title": "Classify an original comparison case",
+        "prompt": "Case A: antibody binds a receptor and changes its function. Case B: soluble antigen–antibody complexes deposit and recruit inflammatory cells. Case C: sensitised T cells drive local inflammation after contact exposure.",
+        "solution": [
+          "A follows a type II mechanism because antibody acts against a fixed target; receptor effects need not lyse the cell.",
+          "B follows a type III mechanism because deposited complexes drive the injury.",
+          "C follows a type IV mechanism because T cells are the principal specific effectors."
+        ]
+      },
+      "question": {
+        "prompt": "Which distinction best separates type II from type III injury?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Antibody against a fixed target versus deposited immune complexes",
+            "reason": "The location and form of the antigen–antibody interaction distinguish these mechanisms."
+          },
+          {
+            "text": "Any complement activation versus no complement activation",
+            "reason": "Complement can contribute to both, so this distinction is unreliable."
+          },
+          {
+            "text": "Bacterial antigen versus viral antigen",
+            "reason": "Microbial category does not define the type II/type III division."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Give a mechanism-first comparison of all four types.",
+        "answer": "Type I links antigen to IgE-bearing effector cells. Type II links antibody to a fixed cellular or matrix target and can change receptor function or cause injury. Type III links deposited immune complexes to inflammation. Type IV uses antigen-specific T cells as the main effectors. Actual disorders may combine pathways."
+      },
+      "related": [
+        "innate-adaptive",
+        "antigen-presentation"
+      ],
+      "updatedAt": "2026-09-09",
+      "minutes": 10
+    },
+    {
       "id": "biophysics-radiation-optics",
       "subject": "biophysics",
       "title": "Radiation, units and geometric optics",

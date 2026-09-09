@@ -87,7 +87,7 @@ test("anatomy recall supports correction and keeps answers when changing topics"
     .check();
   await panel.getByRole("button", { name: "Check answer" }).click();
   await expect(panel.getByRole("status")).toContainText("Correct.");
-  await expect(page.locator(".learning-progress")).toContainText("1 of 15");
+  await expect(page.locator(".learning-progress:visible")).toContainText("1 of 15");
   await page.getByRole("button", { name: "Next topic" }).click();
   await expect(
     panel.getByRole("heading", { name: "Pleura & pleural cavity" }),
@@ -456,7 +456,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   const check = page.locator("#concept-check-title");
   await page.locator(".concept-sequence summary").nth(1).click();
   await expect(
-    page.locator("#main-content .concept-sequence").getByText(/Pseudostratified epithelium appears multilayered/),
+    page.locator(".concept-sequence:visible").getByText(/Pseudostratified epithelium appears multilayered/),
   ).toBeVisible();
   await expect(
     check.getByRole("button", { name: "Check answer", exact: true }),

@@ -11,6 +11,7 @@ const { lessons } = read("../src/content/library-lessons.json");
 const base = { status: "public", updatedAt: "2026-09-06", bytes: 0 };
 const records = lessons.map((l) => ({
   ...base,
+  updatedAt: l.updatedAt,
   id: l.id,
   updatedAt: l.updatedAt,
   title: l.title,

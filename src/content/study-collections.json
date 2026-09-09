@@ -9,7 +9,8 @@
         "fluid-and-membrane-transport",
         "muscle-contraction",
         "autonomic-signalling",
-        "membrane-potentials"
+        "membrane-potentials",
+        "indicator-dilution"
       ]
     },
     {
@@ -20,7 +21,8 @@
         "cardiac-cycle",
         "lymph-and-fluid-exchange",
         "cardiac-output",
-        "baroreflex"
+        "baroreflex",
+        "ecg-time-and-vectors"
       ]
     },
     {
@@ -29,7 +31,8 @@
       "subject": "physiology",
       "lessonIds": [
         "respiratory-mechanics",
-        "ventilation-perfusion"
+        "ventilation-perfusion",
+        "alveolar-ventilation-calculations"
       ]
     },
     {
@@ -88,7 +91,8 @@
       "title": "Volume II · Abdomen",
       "subject": "anatomy",
       "lessonIds": [
-        "abdomen-portal-relations"
+        "abdomen-portal-relations",
+        "inguinal-canal-relations"
       ]
     },
     {
@@ -135,7 +139,9 @@
         "renal-histology",
         "reproductive-histology",
         "placenta",
-        "neurulation"
+        "neurulation",
+        "myelin-and-glial-cells",
+        "brain-and-csf-barriers"
       ]
     },
     {
@@ -149,7 +155,9 @@
         "translation",
         "protein-trafficking",
         "pcr",
-        "cell-signaling"
+        "cell-signaling",
+        "chromatin-access-and-topology",
+        "er-protein-quality-control"
       ]
     },
     {
@@ -162,20 +170,31 @@
         "glycolysis",
         "pdh-tca",
         "lipid-metabolism",
-        "nitrogen-metabolism"
+        "nitrogen-metabolism",
+        "ketone-production-and-use",
+        "lipoprotein-routes"
       ]
     },
     {
       "id": "study-genetics",
-      "title": "Inheritance and immune responses",
+      "title": "Medical genetics",
       "subject": "genetics",
       "lessonIds": [
         "meiosis",
         "inheritance",
         "genetic-testing",
+        "recessive-conditional-probability"
+      ]
+    },
+    {
+      "id": "study-immunology",
+      "title": "Immunology",
+      "subject": "genetics",
+      "lessonIds": [
         "innate-adaptive",
         "antigen-presentation",
-        "complement"
+        "complement",
+        "hypersensitivity-mechanisms"
       ]
     },
     {

@@ -1197,6 +1197,147 @@
       ]
     },
     {
+      "id": "histology-neuro",
+      "title": "Nervous tissue and CNS barriers",
+      "description": "Connect glial cells, myelin and the cellular boundaries of the central nervous system.",
+      "subject": "histology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-indicator-dilution",
+      "title": "Measure body-fluid compartments by indicator dilution",
+      "description": "Choose a tracer, correct for losses and calculate measured and derived fluid volumes with consistent units.",
+      "subject": "physiology",
+      "parentId": "physiology-cellular",
+      "kind": "topic",
+      "resources": [
+        "indicator-dilution"
+      ]
+    },
+    {
+      "id": "topic-ecg-time-and-vectors",
+      "title": "ECG: connect time, conduction and lead direction",
+      "description": "Read a basic ECG as a timed electrical signal, calculate rate and distinguish a lead projection from the spread of activation.",
+      "subject": "physiology",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "ecg-time-and-vectors"
+      ]
+    },
+    {
+      "id": "topic-alveolar-ventilation-calculations",
+      "title": "Alveolar ventilation: why breathing pattern matters",
+      "description": "Compare equal minute ventilations, account for dead space and predict carbon dioxide changes under stated assumptions.",
+      "subject": "physiology",
+      "parentId": "physiology-respiratory",
+      "kind": "topic",
+      "resources": [
+        "alveolar-ventilation-calculations"
+      ]
+    },
+    {
+      "id": "topic-myelin-and-glial-cells",
+      "title": "Myelin and glia: identify the cell before the function",
+      "description": "Connect CNS and PNS supporting cells with internodes, conduction and the limits of routine histological identification.",
+      "subject": "histology",
+      "parentId": "histology-neuro",
+      "kind": "topic",
+      "resources": [
+        "myelin-and-glial-cells"
+      ]
+    },
+    {
+      "id": "topic-brain-and-csf-barriers",
+      "title": "Locate the blood–brain and blood–CSF barriers",
+      "description": "Trace two routes out of blood and identify the cell layer that forms each barrier rather than confusing support cells with the seal.",
+      "subject": "histology",
+      "parentId": "histology-neuro",
+      "kind": "topic",
+      "resources": [
+        "brain-and-csf-barriers"
+      ]
+    },
+    {
+      "id": "topic-chromatin-access-and-topology",
+      "title": "Chromatin: separate access, packaging and topology",
+      "description": "Explain nucleosomes, chromatin accessibility and torsional stress without treating compaction as a simple on–off switch.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-molecular-mechanisms",
+      "kind": "topic",
+      "resources": [
+        "chromatin-access-and-topology"
+      ]
+    },
+    {
+      "id": "topic-er-protein-quality-control",
+      "title": "ER quality control: folding, glycan checks and ERAD",
+      "description": "Follow a secretory protein through folding attempts, retention and degradation, and distinguish disposal from the stress response.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-cell-organization",
+      "kind": "topic",
+      "resources": [
+        "er-protein-quality-control"
+      ]
+    },
+    {
+      "id": "topic-ketone-production-and-use",
+      "title": "Ketone bodies: connect liver production with tissue use",
+      "description": "Follow fasting fuel flow and explain why the liver produces ketone bodies that other tissues can oxidise.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "ketone-production-and-use"
+      ]
+    },
+    {
+      "id": "topic-lipoprotein-routes",
+      "title": "Lipoproteins: follow the cargo and the particle",
+      "description": "Distinguish dietary and hepatic lipid transport, triglyceride removal and receptor-mediated cholesterol delivery.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "lipoprotein-routes"
+      ]
+    },
+    {
+      "id": "topic-inguinal-canal-relations",
+      "title": "Inguinal canal: build the walls and trace a hernia",
+      "description": "Reconstruct the canal from its layers and use inferior epigastric vessels to distinguish direct and indirect routes.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "inguinal-canal-relations"
+      ]
+    },
+    {
+      "id": "topic-recessive-conditional-probability",
+      "title": "Recessive inheritance: update probability after new information",
+      "description": "Use a fictional Mendelian cross to distinguish pregnancy risk from carrier probability conditioned on being unaffected.",
+      "subject": "genetics",
+      "parentId": "genetics-inheritance",
+      "kind": "topic",
+      "resources": [
+        "recessive-conditional-probability"
+      ]
+    },
+    {
+      "id": "topic-hypersensitivity-mechanisms",
+      "title": "Hypersensitivity: classify the mechanism of tissue injury",
+      "description": "Distinguish IgE activation, antibody against fixed targets, immune complexes and T-cell responses through original comparison cases.",
+      "subject": "immunology",
+      "parentId": "immunology-immune-responses",
+      "kind": "topic",
+      "resources": [
+        "hypersensitivity-mechanisms"
+      ]
+    },
+    {
       "id": "biophysics-optics",
       "title": "Optics and light",
       "description": "Connect physical principles with worked examples, explained questions and medical measurements.",
