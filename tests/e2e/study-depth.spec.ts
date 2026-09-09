@@ -16,7 +16,7 @@ test('a pending radio copy cannot interfere with an active practice question',as
   expect(errors).toEqual([]);
 });
 
-test('map filters separate available introductions from planned adaptations',async({page},info)=>{
+test('map filters separate available introductions from planned adaptations',async({page})=>{
   await page.goto('/study');
   await page.getByRole('link',{name:'Open study map',exact:true}).click();
   await expect(page.getByRole('heading',{level:1})).toHaveText('See how the subjects connect');
@@ -27,9 +27,9 @@ test('map filters separate available introductions from planned adaptations',asy
   await page.getByRole('button',{name:'Clear filters'}).click();
   await page.getByRole('searchbox',{name:'Find a topic'}).fill('myelin');
   await expect(page.getByRole('link',{name:'Myelin and supporting cells'})).toBeVisible();
-  await page.screenshot({path:info.outputPath('study-map.png'),fullPage:true});
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.getByRole('link',{name:'Myelin and supporting cells'}).click();
+  await expect(page).toHaveURL(/\/library\/myelin-and-glial-cells$/);
   await expect(page.getByRole('heading',{level:1})).toContainText('Myelin and glia');
 });
 
