@@ -36,18 +36,19 @@ test("all six models respond to keyboard input including the focal singularity",
   await expect(lens.locator("output")).toContainText("no finite image distance");
   await distance.press("End");
   await expect(lens.locator("output")).toContainText("real image");
-  const attenuation=page.locator("#attenuation");
+  // Role locators exclude Next.js's hidden streamed duplicate while a page settles.
+  const attenuation=page.getByRole("region",{name:"How much of the beam remains?"});
   await attenuation.getByRole("slider").focus(); await attenuation.getByRole("slider").press("End");
   await expect(attenuation.locator("output")).toContainText("1.56%");
-  const membrane=page.locator("#membrane");
+  const membrane=page.getByRole("region",{name:"Does one time constant finish charging?"});
   await expect(membrane.locator("output")).toContainText("63.2%");
-  const diffusion=page.locator("#diffusion");
+  const diffusion=page.getByRole("region",{name:"How far does random motion reach?"});
   await diffusion.getByRole("slider").focus(); await diffusion.getByRole("slider").press("End");
   await expect(diffusion.locator("output")).toContainText("80.0 μm");
-  const flow=page.locator("#flow");
+  const flow=page.getByRole("region",{name:"Why does radius matter so much?"});
   await flow.getByRole("slider").focus(); await flow.getByRole("slider").press("End");
   await expect(flow.locator("output")).toContainText("16.0000");
-  const ultrasound=page.locator("#ultrasound");
+  const ultrasound=page.getByRole("region",{name:"Turn an echo time into depth"});
   await ultrasound.getByRole("slider").focus(); await ultrasound.getByRole("slider").press("End");
   await expect(ultrasound.locator("output")).toContainText("15.40 cm");
   await ultrasound.getByText("Explain the result",{exact:true}).click();
