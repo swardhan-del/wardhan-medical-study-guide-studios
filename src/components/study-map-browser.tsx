@@ -1,15 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { subjectInterests } from "@/content/subjects";
 
 type Topic = { id: string; title: string; href: string | null; status: string };
 type Group = { id: string; subject: string; title: string; sourceLabel: string; topics: Topic[] };
-const subjects = [
-  ["anatomy", "Anatomy"], ["histology", "Histology and embryology"],
-  ["physiology", "Physiology"], ["cell-biology", "Molecular cell biology"],
-  ["biochemistry", "Biochemistry"], ["genetics", "Genetics and immunology"],
-  ["biostatistics", "Biostatistics"],
-];
+const subjects = [...subjectInterests.map(s => [s.id, s.title]), ["biostatistics", "Biostatistics"]];
 
 export function StudyMapBrowser({ groups }: { groups: Group[] }) {
   const [query, setQuery] = useState("");

@@ -42,10 +42,7 @@ export default async function SubjectPage({ params }: Props) {
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link></div>}
       {slug === "anatomy" && <AnatomyTopicNav />}
       {records.length === 0 ? (
-        <p className="catalog-empty">
-          No resources have been released for this subject yet. New lessons will
-          appear here when available.
-        </p>
+        <section className="catalog-empty"><h2>No public lessons yet</h2><p>No resources have been released for this subject yet. Choose another subject to begin studying today.</p><Link className="button button-primary" href="/subjects">Choose a subject with lessons</Link></section>
       ) : (
         <section id="website-lessons">
           <span id="authored-guides" />
@@ -53,14 +50,14 @@ export default async function SubjectPage({ params }: Props) {
           <CatalogBrowser records={records} />
         </section>
       )}
-      <details className="study-details"><summary>Browse the regional directory and suggested sequence</summary>
+      {records.length > 0 && <details className="study-details"><summary>Browse the regional directory and suggested sequence</summary>
       <SubjectLearningPath subject={slug === "immunology" ? slug : s.learningSubject || slug} />
       <section id="archive-directory" aria-label="Systems and topics">
         <span id="dropbox-directory" />
         <h2>Systems and topics</h2>
         <TopicCards subject={slug} />
       </section>
-      </details>
+      </details>}
       {slug === "anatomy" && <AnatomyVolumes />}
       {slug === "histology" && <HistologyOverview />}
     </div>
