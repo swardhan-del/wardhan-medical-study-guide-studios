@@ -4,6 +4,8 @@ import {
   anatomyTopicLinks,
   anatomyTopicHref,
 } from "../src/content/anatomy-navigation.ts";
+import { anatomyLearningPages } from "../src/content/anatomy-learning.ts";
+import { musculoskeletalTopics, musculoskeletalRecall } from "../src/content/musculoskeletal.ts";
 import { validateCatalog } from "./catalog-schema.mjs";
 const read = (path) =>
   JSON.parse(readFileSync(new URL(path, import.meta.url), "utf8"));
@@ -11,7 +13,6 @@ const { lessons } = read("../src/content/library-lessons.json");
 const base = { status: "public", updatedAt: "2026-09-06", bytes: 0 };
 const records = lessons.map((l) => ({
   ...base,
-  updatedAt: l.updatedAt,
   id: l.id,
   updatedAt: l.updatedAt,
   title: l.title,
@@ -28,9 +29,9 @@ for (const topic of anatomyTopicLinks)
     id: `anatomy-${topic.slug}`,
     title: topic.label,
     subject: "anatomy",
-    kind: "Topic explorer",
+    kind: topic.slug === "musculoskeletal" ? "Study map and available lessons" : "Interactive topic lessons",
     format: "WEB",
-    summary: `Explore ${topic.label.toLowerCase()} through explanations, visual teaching material, source references and recall practice.`,
+    summary: topic.slug === "musculoskeletal" ? "Open the available plexus lesson and recall examples. Other regional sections are study outlines; the full guide and decks are not available here." : `Study ${topic.label.toLowerCase()} through explanations, visual teaching material and recall practice.`,
     href: anatomyTopicHref(topic.slug),
     tags: [topic.label, "anatomy", "embryology"],
     minutes: 10,
@@ -146,3 +147,29 @@ if (process.argv.includes("--check")) {
 console.log(
   `Library catalog: ${records.length} resources across ${new Set(records.map((r) => r.subject)).size} subjects.`,
 );
+
+const figures = read("../src/content/public-figures.json").figures;
+const recaps = read("../src/content/study-recaps.json").recaps;
+const searchIndex = Object.fromEntries(records.map(record => {
+  const lesson = lessons.find(l => l.id === record.id);
+  const renal = renalLessons.find(l => record.id === `renal-${l.slug}`);
+  const anatomy = anatomyLearningPages.find(l => record.id === `anatomy-${l.slug}`);
+  const parts = [
+    ...(lesson?.steps.flatMap(s => [s.title, s.body]) ?? []),
+    ...(lesson?.objectives ?? []),
+    ...(lesson?.workedExample ? [lesson.workedExample.title, lesson.workedExample.prompt, ...lesson.workedExample.solution] : []),
+    ...(renal?.sections.flatMap(s => [s.title, s.text]) ?? []),
+    ...(renal?.objectives ?? []),
+    // These are the same public lesson objects rendered by LearningExplorer.
+    ...(anatomy ? [JSON.stringify(anatomy.lessons)] : []),
+    ...(record.id === "anatomy-musculoskeletal" ? musculoskeletalTopics.map(t => t.title + " " + t.description).concat(musculoskeletalRecall.map(r => r.question + " " + r.answer)) : []),
+    ...figures.filter(f => f.resourceIds.includes(record.id)).flatMap(f => [f.title, f.alt, f.caption]),
+    ...recaps.filter(r => r.lessonId === record.id).flatMap(r => r.dialogue.map(d => d.text)),
+  ];
+  return [record.id, parts.join(" ")];
+}));
+const searchPath = new URL("../src/content/public-search.json", import.meta.url);
+const searchOutput = JSON.stringify(searchIndex, null, 2) + "\n";
+if (process.argv.includes("--check")) {
+  if (readFileSync(searchPath, "utf8").replaceAll("\r\n", "\n") !== searchOutput) throw new Error("Public search index is stale. Run npm run content:library.");
+} else writeFileSync(searchPath, searchOutput);

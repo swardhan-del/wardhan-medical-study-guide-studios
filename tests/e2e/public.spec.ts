@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import taxonomy from "../../src/content/library-taxonomy.json";
 import catalog from "../../src/content/public-catalog.json";
 test("public routes render and fit the viewport without runtime errors", async ({
   page,
@@ -385,7 +386,8 @@ test("library filters expose useful resources in every subject and retain direct
   const summary = page.getByRole("status");
   await expect(summary).toHaveText(String(catalog.records.length) + " resources");
   for (const subject of ["anatomy", "histology", "cell-biology", "biochemistry", "physiology", "genetics"]) {
-    const count = catalog.records.filter(record => record.subject === subject).length;
+    const ids = new Set(taxonomy.nodes.filter(n => n.subject === subject).flatMap(n => n.resources));
+    const count = catalog.records.filter(record => ids.has(record.id)).length;
     expect(count).toBeGreaterThan(0);
     await page
       .getByRole("combobox", { name: "Subject", exact: true })
@@ -412,6 +414,7 @@ test("library filters expose useful resources in every subject and retain direct
     "PCR, qPCR and reverse transcription",
   );
   await page.goto("/subjects/histology");
+  await page.getByText("Browse the regional directory and suggested sequence", { exact: true }).filter({ visible: true }).click();
   await page
     .getByRole("heading", { name: "Reproductive histology and embryology", exact: true }).getByRole("link")
     .click();
@@ -454,7 +457,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
 }, testInfo) => {
   await page.goto("/library/epithelia");
   const check = page.locator("#concept-check-title");
-  await page.locator(".concept-sequence summary").nth(1).click();
+  await expect(page.locator("#main-content .concept-sequence details").nth(1)).toHaveAttribute("open", "");
   await expect(
     page.locator(".concept-sequence:visible").getByText(/Pseudostratified epithelium appears multilayered/),
   ).toBeVisible();

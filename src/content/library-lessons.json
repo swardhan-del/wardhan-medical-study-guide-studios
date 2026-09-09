@@ -3311,12 +3311,12 @@
             "reason": "This preserves the sequence and separates its distinct anatomical levels."
           },
           {
-            "text": "Roots → cords → trunks → arteries → divisions",
-            "reason": "This mixes levels and inserts a vessel into the neural branching sequence."
+            "text": "Roots → divisions → trunks → cords → terminal branches",
+            "reason": "Trunks form before divisions. Each trunk then divides before the cords are formed."
           },
           {
-            "text": "Terminal branches → lymph nodes → roots",
-            "reason": "Lymphatic structures are not stages of brachial-plexus organisation."
+            "text": "Roots → trunks → cords → divisions → terminal branches",
+            "reason": "Divisions are between trunks and cords. Exchanging these levels loses the organisation of the plexus."
           }
         ]
       },
@@ -3335,7 +3335,7 @@
         "guided revision"
       ],
       "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "updatedAt": "2026-09-09"
     },
     {
       "id": "indicator-dilution",

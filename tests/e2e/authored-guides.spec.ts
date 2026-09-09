@@ -23,10 +23,10 @@ test("subject sections recover from conflicting filters and open native lessons"
   await page.goto("/study/physiology");
   const browser = page.getByRole("region", { name: "Browse subject lessons" });
   await expect(browser.getByRole("status")).toHaveText(`${lessons.lessons.filter(l => l.subject === "physiology").length} lessons available`);
-  await browser.getByRole("searchbox").fill("no-matching-concept");
+  await browser.getByRole("searchbox").fill("zzzzunmatchedterm");
   await browser.getByLabel("Study format").selectOption("figures");
   await expect(browser.getByRole("status")).toHaveText("0 lessons available");
-  await browser.getByRole("button", { name: "Blood and haemostasis", exact: true }).click();
+  await browser.getByLabel("Section").selectOption({ label: "Blood and haemostasis" });
   await expect(browser.getByRole("searchbox")).toHaveValue("");
   await expect(browser.getByLabel("Study format")).toHaveValue("all");
   await expect(browser.getByRole("status")).toHaveText("1 lesson available");
@@ -48,7 +48,7 @@ test("released video and audio offer captions, transcripts and conservative load
   await expect(player.locator("track")).toHaveAttribute("src", video.captions[0].src);
   await page.getByLabel("Playback speed").selectOption("1.5");
   await expect.poll(() => player.evaluate((el: HTMLVideoElement) => el.playbackRate)).toBe(1.5);
-  await page.getByText("Read transcript", { exact: true }).click();
+  await page.getByText("Read transcript", { exact: true }).filter({ visible: true }).click();
   await expect(page.locator(".video-transcript:visible li")).toHaveCount(video.transcript.length);
   const captions = await request.get(video.captions[0].src);
   expect(captions.status()).toBe(200);
@@ -57,9 +57,9 @@ test("released video and audio offer captions, transcripts and conservative load
   const audio = page.locator("audio:visible");
   await expect(audio).toHaveAttribute("preload", "none");
   await expect(audio).not.toHaveAttribute("autoplay");
-  await page.getByLabel("Audio speed").selectOption("1.25");
+  await page.getByLabel("Audio speed").filter({ visible: true }).selectOption("1.25");
   await expect.poll(() => audio.evaluate((el: HTMLAudioElement) => el.playbackRate)).toBe(1.25);
-  await page.getByText("Read audio transcript", { exact: true }).click();
+  await page.getByText("Read audio transcript", { exact: true }).filter({ visible: true }).click();
   await expect(page.locator("#audio-recap .video-transcript li").first()).toBeVisible();
   const download = page.getByRole("link", { name: "Download audio recap" });
   await expect(download).toHaveAttribute("download", "");

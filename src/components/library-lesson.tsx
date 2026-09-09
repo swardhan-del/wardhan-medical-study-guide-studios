@@ -1,3 +1,4 @@
+import { PlexusRecall } from "./plexus-recall";
 import { EducationalFigure, FigureGallery } from "./educational-figure";
 import { figuresForResource } from "@/lib/figures";
 import { videosForLesson } from "@/lib/videos";
@@ -87,6 +88,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         </div>
       </header>
       {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
+      <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a><a href="#lesson-figures">Figures</a><a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>
       <div className="concept-layout">
         <div>
           {lesson.objectives && <section className="study-panel" aria-labelledby="lesson-objectives">
@@ -103,10 +105,10 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           >
             <p className="eyebrow">{lesson.steps.length} ideas to connect</p>
             <h2 id="concept-map-title">Build the explanation</h2>
-            <p>Open each idea, then explain how it relates to the next.</p>
+            <p>Read the connected steps, then explain them without looking.</p>
             <div className="concept-sequence">
               {lesson.steps.map((step, index) => (
-                <details key={step.title} open={index === 0}>
+                <details key={step.title} open>
                   <summary>
                     <span className="concept-number" aria-hidden="true">
                       0{index + 1}
@@ -132,6 +134,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             <p>{lesson.workedExample.prompt}</p>
             <details><summary>Show the reasoning</summary><ol>{lesson.workedExample.solution.map(step => <li key={step}>{step}</li>)}</ol></details>
           </section>}
+          <span id="lesson-figures" />
           {lesson.id === "epithelia" && (
             <>
               <HistologyVisualLesson />
@@ -180,12 +183,13 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             </section>
           )}
           {!["epithelia", "microscopy", "renal-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id)} title="Connect the figure with the explanation" />}
+          {lesson.id === "limbs-plexus-and-joints" && <PlexusRecall />}
           <StudyReel key={lesson.id} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
           <ConceptCheck
             key={lesson.id}
             lesson={{ id: lesson.id, question: lesson.question }}
           />
-          <span id="studio-practice" />
+          <span id="studio-practice" /><span id="apply-the-concept" />
           {[...transfer.questions, ...studio.questions]
             .filter((q) => q.topic === lesson.id)
             .map((q) => (

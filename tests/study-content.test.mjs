@@ -25,7 +25,9 @@ test("public micrographs match the recorded original files and license provenanc
 });
 test("new transfer questions have unique ids, valid answers and explained alternatives", () => {
   const qs = read("../src/content/transfer-practice.json").questions;
-  assert.equal(qs.length, 7);
+  assert.ok(qs.length >= 9);
+  assert.ok(qs.some(q => q.id === "plexus-route-application"));
+  assert.ok(qs.some(q => q.id === "plexus-landmark-application"));
   assert.equal(new Set(qs.map((q) => q.id)).size, qs.length);
   for (const q of qs) { assert(q.options[q.answer]); assert(q.options.every((o) => o.explanation.length > 30)); assert(q.href.startsWith("/")); }
 });

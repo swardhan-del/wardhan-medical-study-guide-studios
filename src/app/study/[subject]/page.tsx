@@ -1,3 +1,4 @@
+import searchIndex from "@/content/public-search.json";
 import Link from "next/link";
 import { BiophysicsCourseIntro } from "@/components/biophysics-course";
 import { SubjectCoverage } from "@/components/subject-coverage";
@@ -16,16 +17,19 @@ export default async function SubjectStudyPage({ params }: Props) {
  const { subject } = await params, s = studySubjects.find(s => s.id === subject); if (!s) notFound();
  const lessons = subjectLessons(subject), groups = studyGroups.filter(g => g.subject === subject);
  const audio = audioData.records as { lessonId: string }[];
- const cards = lessons.map(l => { const g = groups.find(g => g.lessonIds.includes(l.id))!; const video = videosForLesson(l.id)[0]; return { id: l.id, title: l.title, summary: l.summary, tags: l.tags, minutes: l.minutes, group: g.id, groupTitle: g.title, figure: figuresForResource(l.id)[0], videoId: video?.id, duration: video ? videoDuration(video.durationSeconds) : undefined, audio: audio.some(a => a.lessonId === l.id) }; });
+ const cards = lessons.map(l => { const g = groups.find(g => g.lessonIds.includes(l.id))!; const video = videosForLesson(l.id)[0]; return { id: l.id, title: l.title, summary: l.summary, tags: l.tags, searchText: (searchIndex as Record<string, string>)[l.id], minutes: l.minutes, group: g.id, groupTitle: g.title, figure: figuresForResource(l.id)[0], videoId: video?.id, duration: video ? videoDuration(video.durationSeconds) : undefined, audio: audio.some(a => a.lessonId === l.id) }; });
  return <div className="site-container study-page">
    <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/subjects">Subjects</Link><span aria-hidden="true"> / </span><span aria-current="page">{s.title}</span></nav>
    <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><p className="interior-lede">{s.description}</p><p>Study a mechanism, explain an answer, then revise it with recap cards, narrated videos or audio where available.</p>
-     <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/subjects/" + subject}>Browse the subject directory</Link></div>
+     <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link></div>
    </header>
+   {subject === "anatomy" && <section className="study-panel"><h2>Study a complete regional sequence</h2><p>The thorax collection connects landmarks, pleura and mediastinum with an interactive map, twelve applied questions and oral recall. It is a focused regional sequence, not a complete anatomy syllabus.</p><Link className="button button-primary" href="/subjects/anatomy/thorax">Start the thorax sequence</Link><p><Link href="/library/limbs-plexus-and-joints">Trace the brachial plexus with a labelled or recall diagram</Link></p></section>}
+   {subject === "histology" && <section className="study-panel"><h2>Practise recognising real sections</h2><p>Start with epithelial structure, hide the labels, then compare the two available microscope sections. Renal tubule practice begins with three schematics and links to further public slide practice.</p><div className="action-row"><Link href="/library/epithelia">Study epithelium and compare sections</Link><Link href="/practice/histology">Open tissue identification practice</Link></div></section>}
    {subject === "biophysics" && <BiophysicsCourseIntro />}
-   <SubjectCoverage subject={subject} />
+   <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>
    {subject === "physiology" && <section className="study-panel" aria-labelledby="renal-course-heading"><p className="eyebrow">Renal and acid–base physiology · Guided course</p><h2 id="renal-course-heading">Renal physiology, step by step</h2><p>{renalLessons.length} lessons and {renalQuestions.length} questions with explanations, plus interactive circulation and acid–base activities.</p><Link className="button button-primary" href="/learn/renal">Open renal physiology course</Link></section>}
-   <StudyCollectionBrowser cards={cards} groups={groups} />
+   <div id="subject-lessons"><StudyCollectionBrowser cards={cards} groups={groups} /></div>
+   <SubjectCoverage subject={subject} />
    <p className="muted-note">These are focused teaching adaptations, with source references on each lesson. AI-assisted educational content; independent clinical peer review has not been completed. Your practice stays in this browser.</p>
  </div>;
 }

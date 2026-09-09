@@ -3961,3 +3961,23 @@ select:focus-visible {
 .bp-sequence .action-row {flex-wrap:wrap;gap:1rem;}
 .bp-sequence a {max-width:100%;overflow-wrap:anywhere;}
 @media(max-width:800px){.bp-model-grid{grid-template-columns:1fr}.bp-model-grid .study-panel{padding:1.25rem}.bp-sequence{padding:1rem}}
+
+/* Reach a concept before the introductory content on desktop and mobile. */
+.quick-start { padding-top: 1.25rem; padding-bottom: .5rem; }
+.quick-search label { display: block; font-weight: 700; margin-bottom: .5rem; }
+.quick-search > div { display: flex; gap: .5rem; }
+.quick-search input { min-width: 0; flex: 1; padding: .85rem; border: 1px solid var(--line, #b3b4ae); background: #fff; color: #172329; font: inherit; font-size: 1rem; }
+.quick-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .75rem; font-size: .9rem; }
+.library-page > .library-heading { margin-bottom: 1.25rem; }
+.search-match-note { font-size: .85rem; color: #385853; }
+.lesson-jumps { display: flex; flex-wrap: wrap; gap: 1rem; padding: .75rem 0; }
+@media (max-width: 600px) {
+  .library-page { padding-top: 1.25rem; }
+  .library-heading h1 { font-size: 2rem; }
+  .library-heading .interior-lede { font-size: 1rem; margin: .5rem 0; }
+  .catalog-controls { gap: .65rem; }
+  .quick-search .button { padding-left: 1rem; padding-right: 1rem; }
+}
+.plexus-recall-map { display: grid; gap: 1rem; padding-left: 1.5rem; }
+.plexus-recall-map > li { padding: .75rem; border-bottom: 1px solid var(--line, #b3b4ae); }
+.plexus-recall-map ul { padding-left: 1.25rem; }

@@ -1,6 +1,5 @@
 import { librarySubjects, subjectRecords } from "@/lib/taxonomy";
 import Link from "next/link";
-import { subjectInterests } from "@/content/subjects";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { publicCatalog } from "@/lib/catalog";
 export const metadata = {
@@ -17,7 +16,7 @@ export default async function LibraryPage({
   const filters = await searchParams;
   const subject =
     typeof filters.subject === "string" &&
-    subjectInterests.some((s) => s.id === filters.subject)
+    librarySubjects.some((s) => s.id === filters.subject)
       ? filters.subject
       : "";
   const query = typeof filters.q === "string" ? filters.q.slice(0, 200) : "";
@@ -30,30 +29,11 @@ export default async function LibraryPage({
           Browse lessons, practice activities, and available revision resources. Search for a topic or filter by subject and format.
         </p>
       </header>
-      <nav
-        className="library-subjects"
-        aria-label="Explore subjects and topics"
-      >
-        {librarySubjects
-          .filter((s) => subjectRecords(s.id).length > 0)
-          .map((s) => (
-            <Link key={s.id} href={"/subjects/" + s.id}>
-              {s.title}
-            </Link>
-          ))}
-      </nav>
-      <p>
-        <Link className="text-link" href="/videos">
-          Browse the video library →
-        </Link>
-      </p>
-      <CatalogBrowser
-        key={`${subject}:${query}`}
-        records={publicCatalog}
-        initialSubject={subject}
-        initialQuery={query}
-        showSubjectNavigation
-      />
+      <CatalogBrowser key={`${subject}:${query}`} records={publicCatalog} initialSubject={subject} initialQuery={query} />
+      <details className="study-details"><summary>Subject directories and video recaps</summary>
+      <nav className="library-subjects" aria-label="Explore subjects and topics">
+        {librarySubjects.filter(s => subjectRecords(s.id).length > 0).map(s => <Link key={s.id} href={"/subjects/" + s.id}>{s.title}</Link>)}
+      </nav><Link href="/videos">Browse the video library →</Link></details>
       <aside className="library-source-note">
         <p className="eyebrow">Study and revise</p>
         <h2>Read. Connect. Recall.</h2>

@@ -4,7 +4,8 @@ import { useState } from "react";
 import { subjectInterests } from "@/content/subjects";
 import type { CatalogRecord } from "@/lib/catalog-types";
 import { formatBytes, formatLabels, resourceHref } from "@/lib/catalog-types";
-import { matchesCatalogQuery } from "@/lib/catalog-filter";
+import taxonomy from "@/content/library-taxonomy.json";
+import { catalogSearchText, suggestQuery, searchRank, matchesCatalogQuery } from "@/lib/catalog-filter";
 import { useReadingList } from "./reading-list-provider";
 
 type Props = {
@@ -13,7 +14,6 @@ type Props = {
   savedOnly?: boolean;
   initialSubject?: string;
   initialQuery?: string;
-  showSubjectNavigation?: boolean;
 };
 export function CatalogBrowser({
   records,
@@ -21,7 +21,6 @@ export function CatalogBrowser({
   savedOnly = false,
   initialSubject = "",
   initialQuery = "",
-  showSubjectNavigation = false,
 }: Props) {
   const [query, setQuery] = useState(initialQuery);
   const [subject, setSubject] = useState(initialSubject);
@@ -29,12 +28,10 @@ export function CatalogBrowser({
   const [sort, setSort] = useState("title");
   const [visibleCount, setVisibleCount] = useState(18);
   const { saved, ready } = useReadingList();
-  const filtered = records
+  const scoped = records.filter(record => (!savedOnly || saved.includes(record.id)) && (!subject || (record.status === "private-review" ? record.subject === subject : taxonomy.nodes.some(n => n.subject === subject && n.resources.includes(record.id)))) && (!format || record.format === format));
+  const filtered = scoped
     .filter(
       (record) =>
-        (!savedOnly || saved.includes(record.id)) &&
-        (!subject || record.subject === subject) &&
-        (!format || record.format === format) &&
         matchesCatalogQuery(
           record,
           query,
@@ -45,13 +42,14 @@ export function CatalogBrowser({
       sort === "recent"
         ? b.updatedAt.localeCompare(a.updatedAt) ||
           a.title.localeCompare(b.title)
-        : a.title.localeCompare(b.title),
+        : searchRank(b, query) - searchRank(a, query) || a.title.localeCompare(b.title),
     );
+  const suggestion = query && !filtered.length ? suggestQuery(scoped.map(r => catalogSearchText(r)), query) : null;
   const hasFilters = Boolean(query || subject || format);
   const availableFormats = [
     ...new Set(
       records
-        .filter((record) => !subject || record.subject === subject)
+        .filter((record) => !subject || (record.status === "private-review" ? record.subject === subject : taxonomy.nodes.some(n => n.subject === subject && n.resources.includes(record.id))))
         .map((record) => record.format),
     ),
   ];
@@ -65,22 +63,6 @@ export function CatalogBrowser({
   }
   return (
     <div className="catalog-browser">
-      {showSubjectNavigation && (
-        <nav className="library-subjects" aria-label="Browse library subjects">
-          {subjectInterests.map((item) => (
-            <Link
-              key={item.id}
-              href={`/library?subject=${item.id}`}
-              aria-current={subject === item.id ? "true" : undefined}
-            >
-              <span>{item.title}</span>
-              <strong>
-                {records.filter((record) => record.subject === item.id).length}
-              </strong>
-            </Link>
-          ))}
-        </nav>
-      )}
       <div
         className="catalog-controls"
         role="search"
@@ -90,6 +72,7 @@ export function CatalogBrowser({
           Search resources
           <input
             type="search"
+            maxLength={200}
             value={query}
             onChange={(event) => {
               setQuery(event.target.value);
@@ -110,7 +93,7 @@ export function CatalogBrowser({
             }}
           >
             <option value="">All subjects</option>
-            {subjectInterests.map((item) => (
+            {taxonomy.subjects.map((item) => (
               <option key={item.id} value={item.id}>
                 {item.title}
               </option>
@@ -145,7 +128,7 @@ export function CatalogBrowser({
               setVisibleCount(18);
             }}
           >
-            <option value="title">Title A–Z</option>
+            <option value="title">{query ? "Relevance" : "Title A–Z"}</option>
             <option value="recent">Recently updated</option>
           </select>
         </label>
@@ -167,7 +150,7 @@ export function CatalogBrowser({
           {shownRecords.map((record) => (
             <article className="resource-card" key={record.id}>
               <div className="resource-topline">
-                <span>{formatLabels[record.format]}</span>
+                <span>{record.kind.includes("Study map") ? "Study outline" : record.kind === "Study lesson" ? "Concept introduction" : record.kind === "Interactive topic lessons" ? "Interactive topic lessons" : formatLabels[record.format]}</span>
                 <span>
                   {record.minutes
                     ? `${record.minutes} min`
@@ -186,12 +169,13 @@ export function CatalogBrowser({
                 </Link>
               </h2>
               <p>{record.summary}</p>
+              {query && searchRank(record, query) === 1 && <p className="search-match-note">Matches lesson explanation, figure caption or recap</p>}
               <div className="resource-bottom">
                 <Link
                   className="card-link"
                   href={resourceHref(record, basePath)}
                 >
-                  {record.format === "WEB"
+                  {record.kind.includes("Study map") ? "Open study outline" : record.format === "WEB"
                     ? "Read lesson"
                     : record.format === "ACTIVITY"
                       ? "Start practice"
@@ -230,6 +214,7 @@ export function CatalogBrowser({
                 ? "Save a lesson or activity from the library to find it here for your next study session."
                 : "Browse the subjects to find available lessons and activities."}
           </p>
+          {suggestion && <p>Did you mean <button className="plain-button" onClick={() => { setQuery(suggestion); setVisibleCount(18); }}>{suggestion}</button>?</p>}
           {hasFilters ? (
             <button
               className="button button-secondary"

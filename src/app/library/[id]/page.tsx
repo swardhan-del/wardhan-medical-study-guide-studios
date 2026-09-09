@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getPublicRecord, publicCatalog } from "@/lib/catalog";
 import { ResourceDetail } from "@/components/resource-detail";
 import lessonData from "@/content/library-lessons.json";
@@ -14,13 +14,14 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: r?.title || "Resource not found",
     description: r?.summary,
-    alternates: { canonical: "/library/" + id },
+    alternates: { canonical: r?.href && ["WEB", "ACTIVITY"].includes(r.format) ? r.href : "/library/" + id },
   };
 }
 export default async function ResourcePage({ params }: Props) {
   const { id } = await params;
   const r = getPublicRecord(id);
   if (!r) notFound();
+  if (r.href && ["WEB", "ACTIVITY"].includes(r.format)) redirect(r.href);
   const lesson = (lessonData.lessons as Lesson[]).find((l) => l.id === id);
   return lesson ? (
     <LibraryLesson lesson={lesson} />

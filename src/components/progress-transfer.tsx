@@ -13,6 +13,7 @@ export function ProgressTransfer() {
   const [pending, setPending] = useState<ReturnType<typeof readTransfer> | null>(null);
   const [message, setMessage] = useState("");
   const request = useRef(0);
+  function exportFile() { return new File([JSON.stringify({ format: "wardhan-study-export", version: 1, progress: data, saved }, null, 2)], `wardhan-study-${localDate()}.json`, { type: "application/json" }); }
   return <section className="study-panel" id="progress-transfer" aria-labelledby="transfer-title">
     <h2 id="transfer-title">Move your study progress between devices</h2>
     <p>Download a file here, transfer it to your other device, then import it in My Study. It includes answers, written notes, your plan and saved resources. Keep the file somewhere private.</p>
@@ -20,6 +21,12 @@ export function ProgressTransfer() {
       const url = URL.createObjectURL(new Blob([JSON.stringify({ format: "wardhan-study-export", version: 1, progress: data, saved }, null, 2)], { type: "application/json" }));
       const a = document.createElement("a"); a.href = url; a.download = `wardhan-study-${localDate()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
     }}>Export progress and saved resources</button>
+    <button className="button button-secondary" disabled={!ready} onClick={async () => {
+      const file = exportFile();
+      if (!navigator.canShare?.({ files: [file] })) { setMessage("File sharing is unavailable in this browser. Use Export progress and saved resources, then transfer the file to your other device."); return; }
+      try { await navigator.share({ files: [file], title: "My study progress" }); setMessage("Transfer file shared. Open My Study on the receiving device and import that file; progress is not automatically synchronised."); } catch (error) { if (!(error instanceof Error && error.name === "AbortError")) setMessage("The file could not be shared. Use Export progress and saved resources instead."); }
+    }}>Share a transfer file</button>
+    <p className="muted-note">The share sheet lets you choose a destination. This file contains your written notes and answers; share it only with your own device or storage.</p>
     <label className="study-form">Import a progress file<input type="file" accept=".json,application/json" disabled={!ready} onChange={async e => {
       const token = ++request.current;
       const file = e.target.files?.[0]; e.target.value = ""; setPending(null); setMessage("");

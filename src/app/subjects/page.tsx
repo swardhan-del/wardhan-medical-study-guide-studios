@@ -16,6 +16,9 @@ export const metadata = {
   alternates: { canonical: "/subjects" },
 };
 export default function SubjectsPage() {
+  const available = (id: string) => subjectRecords(id);
+  const lessonCount = (id: string) => available(id).filter(r => r.kind === "Study lesson" || r.kind === "Renal course lesson").length;
+  const landing = (id: string) => subjectLessons(id).length && id !== "genetics" ? `/study/${id}` : available(id).length ? `/library?subject=${id}` : `/subjects/${id}`;
   return (
     <div className="site-container library-page">
       <header className="library-heading">
@@ -33,17 +36,18 @@ export default function SubjectsPage() {
           <article className="directory-subject-card" key={s.id}>
             <FigureThumbnail figure={figureForSubject(s.id)} />
             <h2>
-              <Link href={(subjectLessons(s.id).length ? "/study/" : "/subjects/") + s.id}>{s.title}</Link>
+              <Link href={landing(s.id)}>{s.title}</Link>
             </h2>
             <p>{s.description}</p>
-            <p>{subjectLessons(s.id).length > 0 && <>{subjectLessons(s.id).length} lesson introductions · </>}{subjectRecords(s.id).length} library resources across formats</p>
-            {subjectLessons(s.id).length > 0 && <p><Link className="button button-primary" href={"/study/" + s.id}>Open learning path and coverage</Link></p>}
+            <p>{available(s.id).length ? `${lessonCount(s.id)} concept/course lessons · ${available(s.id).length - lessonCount(s.id)} activities, topic collections or revision resources` : "No public lessons released yet"}</p>
+            {s.learningSubject && s.learningSubject !== s.id && <p className="muted-note">A filtered part of the {s.learningSubject === "genetics" ? "genetics and immunology" : s.learningSubject} collection. Shared lessons are not additional content.</p>}
+            {available(s.id).length > 0 && <p><Link className="button button-primary" href={landing(s.id)}>Open available lessons</Link></p>}
             <Link
               className="text-link"
               aria-label={"Explore subject for " + s.title}
               href={"/subjects/" + s.id}
             >
-              Browse subtopics →
+              Reference directory →
             </Link>
           </article>
         ))}
