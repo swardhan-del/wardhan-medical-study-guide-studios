@@ -1,3 +1,4 @@
+import { QuickSearch } from "@/components/quick-search";
 import Link from "next/link";
 import { SubjectCard } from "@/components/subject-card";
 import { subjectInterests } from "@/content/subjects";
@@ -7,6 +8,7 @@ export const metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   return (
     <div className="page-stack">
+      <div className="site-container quick-start"><QuickSearch /><nav className="quick-links" aria-label="Quick study access"><Link href="/subjects">All subjects and coverage</Link><Link href="/study">Continue studying</Link><Link href="/study#saved-learning">Saved resources</Link></nav></div>
       <section
         className="hero-section site-container learning-home"
         aria-labelledby="home-heading"

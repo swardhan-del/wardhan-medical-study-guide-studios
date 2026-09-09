@@ -12,6 +12,7 @@ export type CatalogRecord = {
   href?: string;
   tags?: string[];
   minutes?: number;
+  searchText?: string;
 };
 export const formatLabels: Record<CatalogRecord["format"], string> = {
   WEB: "Web lesson",
@@ -21,6 +22,7 @@ export const formatLabels: Record<CatalogRecord["format"], string> = {
   PPTX: "PPTX",
 };
 export function resourceHref(record: CatalogRecord, basePath = "/library") {
+  if (basePath === "/library" && record.status === "public" && record.href && ["WEB", "ACTIVITY"].includes(record.format)) return record.href;
   return `${basePath}/${record.id}`;
 }
 export function formatBytes(bytes: number) {

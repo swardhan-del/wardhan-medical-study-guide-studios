@@ -18,6 +18,8 @@ export default function MusculoskeletalPage() {
         <p className="eyebrow subject-eyebrow">Volume V · Study preview</p>
         <h1>Musculoskeletal system</h1>
         <p className="interior-lede">A guided route through bones, joints, muscles and regional anatomy, drawn from the Volume V study guide and three companion teaching decks.</p>
+        <p>This page contains study outlines and three recall examples. The complete guide, decks and 81-question source bank are not available here.</p>
+        <Link className="button button-primary" href="/library/limbs-plexus-and-joints">Open the available brachial plexus lesson</Link>
         <AnatomyTopicNav current="musculoskeletal" />
         <div className="msk-actions">
           <a className="button button-primary" href="#study-map">Explore the study map</a>
@@ -58,6 +60,10 @@ export default function MusculoskeletalPage() {
               <p className="eyebrow">Part {index + 1}</p>
               <h3>{topic.title}</h3>
               <p>{topic.description}</p>
+              <p className="muted-note">Study outline · full regional lesson not yet available</p>
+              {topic.id === "upper-limb" && <Link href="/library/limbs-plexus-and-joints">Available introduction: brachial plexus →</Link>}
+              {topic.id === "trunk" && <Link href="/subjects/anatomy/thorax">Available regional sequence: thorax →</Link>}
+              {topic.id === "recall" && <a href="#recall-title">Try the three available recall examples →</a>}
               <p className="msk-reference">{topic.reference}</p>
               <ul className="msk-source-links" aria-label={`Sources for ${topic.title}`}>
                 {topic.sources.map((id) => <li key={id}><a href={`#source-${id}`}>{id === "volume-v" ? "Volume V source notes" : musculoskeletalSources.find((source) => source.id === id)?.title} →</a></li>)}

@@ -1,6 +1,8 @@
 import data from "@/content/library-taxonomy.json";
+import searchIndex from "@/content/public-search.json";
 import catalog from "@/content/public-catalog.json";
 import type { CatalogRecord } from "./catalog-types";
+const records = (catalog.records as CatalogRecord[]).map(r => ({ ...r, searchText: (searchIndex as Record<string, string>)[r.id] ?? "" }));
 export const librarySubjects = data.subjects;
 export const taxonomyNodes = data.nodes;
 export type TaxonomyNode = (typeof taxonomyNodes)[number];
@@ -26,11 +28,11 @@ export function recordsForNode(node: TaxonomyNode): CatalogRecord[] {
     }
   };
   visit(node.id);
-  return (catalog.records as CatalogRecord[]).filter((r) => ids.has(r.id));
+  return records.filter((r) => ids.has(r.id));
 }
 export function subjectRecords(id: string): CatalogRecord[] {
   const ids = new Set(
     taxonomyNodes.filter((n) => n.subject === id).flatMap((n) => n.resources),
   );
-  return (catalog.records as CatalogRecord[]).filter((r) => ids.has(r.id));
+  return records.filter((r) => ids.has(r.id));
 }

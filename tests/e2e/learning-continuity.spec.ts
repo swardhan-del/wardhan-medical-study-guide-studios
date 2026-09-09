@@ -132,5 +132,6 @@ test("histology lessons and native topics remain reachable on small screens", as
   await page.goto("/subjects/histology");
   await expect(page.locator("#website-lessons:visible")).toBeVisible();
   await expect(page.locator("a[href*=dropbox]")).toHaveCount(0);
+  await page.getByText("Browse the regional directory and suggested sequence", { exact: true }).filter({ visible: true }).click();
   await expect(page.locator(".taxonomy-grid:visible")).toBeVisible();
 });

@@ -6,11 +6,13 @@ test("library to subject to system to topic to PDF and download", async ({
   request,
 }, info) => {
   await page.goto("/library");
+  await page.getByText("Subject directories and video recaps", { exact: true }).filter({ visible: true }).click();
   await page
     .getByRole("navigation", { name: "Explore subjects and topics" })
     .getByRole("link", { name: "Medical Physiology", exact: true })
     .click();
   await expect(page).toHaveURL(/subjects\/physiology$/);
+  await page.getByText("Browse the regional directory and suggested sequence", { exact: true }).filter({ visible: true }).click();
   await page
     .getByRole("heading", {
       name: "Renal and acid-base physiology",
@@ -66,12 +68,12 @@ test("topic filtering, lesson journey, breadcrumbs and related links", async ({
   await page.getByLabel("Search resources").fill("clearance");
   await page
     .locator(".resource-card")
+    .filter({ has: page.getByRole("heading", { name: "What does renal clearance actually measure?", exact: true }) })
     .getByRole("link", { name: "Read lesson", exact: false })
     .click();
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
     "clearance",
   );
-  await page.getByRole("link", { name: "Read lesson", exact: false }).click();
   await expect(page).toHaveURL(/learn\/renal\/filtration-and-clearance$/);
 });
 test("all native routes and public assets resolve without archive exposure", async ({

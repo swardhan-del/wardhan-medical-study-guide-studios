@@ -35,18 +35,12 @@ export default async function SubjectPage({ params }: Props) {
         <span aria-current="page"> / {s.title}</span>
       </nav>
       <header className="library-heading">
-        <p className="eyebrow">Subject</p>
+        <p className="eyebrow">Subject reference directory</p>
         <h1>{s.title}</h1>
         <p className="interior-lede">{slug === "histology" ? "Learn to identify tissues by their architecture, cells, and extracellular features. Connect what you see with how the tissue functions and develops." : s.description}</p>
       </header>
-      {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={"/study/" + (s.learningSubject || slug)}>Open lessons and recaps in My Study</Link></div>}
+      {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link></div>}
       {slug === "anatomy" && <AnatomyTopicNav />}
-      <SubjectLearningPath subject={slug === "immunology" ? slug : s.learningSubject || slug} />
-      <section id="archive-directory" aria-label="Systems and topics">
-        <span id="dropbox-directory" />
-        <h2>Systems and topics</h2>
-        <TopicCards subject={slug} />
-      </section>
       {records.length === 0 ? (
         <p className="catalog-empty">
           No resources have been released for this subject yet. New lessons will
@@ -59,6 +53,14 @@ export default async function SubjectPage({ params }: Props) {
           <CatalogBrowser records={records} />
         </section>
       )}
+      <details className="study-details"><summary>Browse the regional directory and suggested sequence</summary>
+      <SubjectLearningPath subject={slug === "immunology" ? slug : s.learningSubject || slug} />
+      <section id="archive-directory" aria-label="Systems and topics">
+        <span id="dropbox-directory" />
+        <h2>Systems and topics</h2>
+        <TopicCards subject={slug} />
+      </section>
+      </details>
       {slug === "anatomy" && <AnatomyVolumes />}
       {slug === "histology" && <HistologyOverview />}
     </div>

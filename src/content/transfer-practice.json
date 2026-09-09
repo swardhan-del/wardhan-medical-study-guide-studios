@@ -160,6 +160,52 @@
         }
       ],
       "answer": 2
+    },
+    {
+      "topic": "limbs-plexus-and-joints",
+      "subject": "anatomy",
+      "title": "Volume V: trace a limb nerve through the plexus",
+      "href": "/library/limbs-plexus-and-joints#apply-the-concept",
+      "id": "plexus-route-application",
+      "prompt": "In a simplified plexus map, trace a C5 fibre into the axillary nerve. Which route fits?",
+      "options": [
+        {
+          "text": "Upper trunk → posterior division → posterior cord",
+          "explanation": "C5 contributes to the upper trunk; its posterior division contributes to the posterior cord, from which the axillary nerve arises."
+        },
+        {
+          "text": "Upper trunk → anterior division → lateral cord",
+          "explanation": "The upper trunk is correct, but its anterior division contributes to the lateral cord, not the cord giving rise to the axillary nerve."
+        },
+        {
+          "text": "Lower trunk → posterior division → posterior cord",
+          "explanation": "The cord fits, but the usual lower trunk combines C8–T1 rather than C5."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "topic": "limbs-plexus-and-joints",
+      "subject": "anatomy",
+      "title": "Volume V: trace a limb nerve through the plexus",
+      "href": "/library/limbs-plexus-and-joints#apply-the-concept",
+      "id": "plexus-landmark-application",
+      "prompt": "A model shows the three cords beside an artery deep to pectoralis minor. What identifies the landmark used to name the cords?",
+      "options": [
+        {
+          "text": "The axillary artery before it reaches pectoralis minor",
+          "explanation": "That is the first part. Cord names refer to their relations to the second part."
+        },
+        {
+          "text": "The second part of the axillary artery",
+          "explanation": "Pectoralis minor divides the artery into parts; the second part lies deep to the muscle and defines the cord names."
+        },
+        {
+          "text": "The brachial artery below teres major",
+          "explanation": "This is distal to the axillary artery and is not the landmark defining the cord names."
+        }
+      ],
+      "answer": 1
     }
   ]
 }
