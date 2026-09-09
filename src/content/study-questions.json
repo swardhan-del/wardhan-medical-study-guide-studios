@@ -1571,7 +1571,7 @@
       "title": "Practical: half-value layers and shielding curves",
       "subject": "biophysics",
       "href": "/library/biophysics-practical-attenuation#studio-practice",
-      "prompt": "If μ is measured in cm⁻¹, which thickness unit belongs in e⁻μx?",
+      "prompt": "If μ is measured in cm⁻¹, which thickness unit belongs in exp(−μx)?",
       "options": [
         {
           "text": "Seconds",

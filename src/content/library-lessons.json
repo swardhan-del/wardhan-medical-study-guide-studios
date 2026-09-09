@@ -4225,7 +4225,7 @@
       "steps": [
         {
           "title": "Use the decay law",
-          "body": "For one radionuclide, N(t) = N₀e⁻λt and activity A(t) = λN(t). Activity is measured in becquerels, meaning decays per second. Half-life T½ = ln 2/λ and mean lifetime τ = 1/λ are different. Individual decays are random even though large populations follow a predictable statistical curve."
+          "body": "For one radionuclide, N(t) = N₀exp(−λt) and activity A(t) = λN(t). Activity is measured in becquerels, meaning decays per second. Half-life T½ = ln 2/λ and mean lifetime τ = 1/λ are different. Individual decays are random even though large populations follow a predictable statistical curve."
         },
         {
           "title": "Track charged particles",
@@ -4237,7 +4237,7 @@
         },
         {
           "title": "Apply attenuation",
-          "body": "A narrow monoenergetic photon beam can follow I = I₀e⁻μx through a uniform absorber. Attenuation includes photons removed by scattering as well as absorption. Its coefficient depends on energy and material; it is not a universal percentage per centimetre. Neutrons interact chiefly with nuclei rather than by direct electric ionisation."
+          "body": "A narrow monoenergetic photon beam can follow I = I₀exp(−μx) through a uniform absorber. Attenuation includes photons removed by scattering as well as absorption. Its coefficient depends on energy and material; it is not a universal percentage per centimetre. Neutrons interact chiefly with nuclei rather than by direct electric ionisation."
         },
         {
           "title": "Work a time example",
@@ -5583,7 +5583,7 @@
         },
         {
           "title": "Work a recovery example",
-          "body": "For ideal recovery from zero longitudinal magnetisation, Mz/M0 = 1 − e⁻t/T1. At t = T1, recovery is about 63%. Doubling the main field doubles Larmor frequency for the same nucleus. MRI uses no ionising photons for this signal, but magnetic and radiofrequency fields still require controlled use."
+          "body": "For ideal recovery from zero longitudinal magnetisation, Mz/M0 = 1 − exp(−t/T1). At t = T1, recovery is about 63%. Doubling the main field doubles Larmor frequency for the same nucleus. MRI uses no ionising photons for this signal, but magnetic and radiofrequency fields still require controlled use."
         }
       ],
       "question": {
@@ -5606,7 +5606,7 @@
       },
       "recall": {
         "prompt": "Explain spin, nmr, esr and mri contrast: state the mechanism, work an example and name one assumption.",
-        "answer": "1 − e⁻¹ gives approximately 63% recovery. Gradients make resonance phase and frequency vary with position. For ideal recovery from zero longitudinal magnetisation, Mz/M0 = 1 − e⁻t/T1. At t = T1, recovery is about 63%. Doubling the main field doubles Larmor frequency for the same nucleus. MRI uses no ionising photons for this signal, but magnetic and radiofrequency fields still require controlled use."
+        "answer": "1 − e⁻¹ gives approximately 63% recovery. Gradients make resonance phase and frequency vary with position. For ideal recovery from zero longitudinal magnetisation, Mz/M0 = 1 − exp(−t/T1). At t = T1, recovery is about 63%. Doubling the main field doubles Larmor frequency for the same nucleus. MRI uses no ionising photons for this signal, but magnetic and radiofrequency fields still require controlled use."
       },
       "related": [
         "biophysics-structural-methods",
@@ -6145,7 +6145,7 @@
       "steps": [
         {
           "title": "Define attenuation quantities",
-          "body": "For a narrow monoenergetic beam in a uniform material, I/I₀ = e⁻μx. Linear attenuation coefficient μ has inverse-length units. Mass attenuation coefficient μ/ρ separates density, and areal density ρx has mass-per-area units. Absorption and removal from the direct beam are not identical."
+          "body": "For a narrow monoenergetic beam in a uniform material, I/I₀ = exp(−μx). Linear attenuation coefficient μ has inverse-length units. Mass attenuation coefficient μ/ρ separates density, and areal density ρx has mass-per-area units. Absorption and removal from the direct beam are not identical."
         },
         {
           "title": "Use layer definitions",
