@@ -179,3 +179,15 @@ This session cannot claim integration with the user's actual Dropbox study-guide
 3. **Read access to the specific path named in the authorization** — `Dropbox/study guide/wardhan-medical-study-guide-studios/.private/MASTER_PLAN_SUBSCRIPTION_STUDY_PLATFORM_2026-09-10_REV02.md` — confirmed absent from this git checkout (it's gitignored via `.private/` and not present on this container's filesystem at all; there is no local Dropbox mount). It can only be reached through the Dropbox connector in point 1.
 
 Until one of these is available, work that genuinely requires the private archive (master-plan review, full-source consolidation into a master document, independent verification of the musculoskeletal "Volume V" and the retired five genetics/immunology guides' actual content) remains blocked and is not claimed as done. Repository-only fixes (Addendum A above) proceeded without it, as authorized.
+
+### Build/test verification (added after Addendum A, same session)
+
+Since the affected pages could not be checked in a live browser (no reachable preview — see Addendum A), dependencies were installed (`npm ci`, 351 packages, clean) and the full local verification suite was run against the fixed tree instead:
+
+- `npm run content:check` — passes (anatomy course, taxonomy, library catalog, 234 lessons, 254 public records, release allowlist with **"no private paths or archive URLs"**, figures, study collections all verified).
+- `npm run typecheck` (`tsc --noEmit`) — passes, no errors.
+- `npm run build` (`next build`, includes the `check-build.mjs` postbuild privacy check) — passes, exit code 0. Every affected page was statically prerendered successfully, including all 254 `/library/[id]` pages (covering all 120 anatomy lessons) and all `/study/[subject]` and `/subjects/[slug]` routes. Postbuild check reports "Deployment trace and rendered privacy checks passed."
+- `npm run lint` (`eslint .`) — passes, no issues.
+- `npm test` — 49/49 tests pass.
+
+This is the strongest available substitute for a live-browser check in this environment: it confirms the fixed content builds, prerenders, and passes every automated content/privacy/navigation check the repository itself defines, without needing the unreachable Vercel preview. `node_modules` and `.next` are gitignored and were not committed.
