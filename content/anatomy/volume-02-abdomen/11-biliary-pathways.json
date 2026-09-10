@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Common hepatic and cystic ducts",
-          "reason": "The right and left hepatic ducts form the common hepatic duct. Joining the cystic duct creates the common bile duct; bile does not have to traverse the gallbladder on its way from liver to duodenum. Flow in the cystic duct can be toward storage or away during emptying. The common bile duct passes behind the proximal duodenum and through or behind the pancreatic head before usually joining the pancreatic duct. Variants are common, so this is the typical pattern."
+          "reason": "Answer: Common hepatic and cystic ducts. The right and left hepatic ducts form the common hepatic duct. Joining the cystic duct creates the common bile duct; bile does not have to traverse the gallbladder on its way from liver to duodenum. Flow in the cystic duct can be toward storage or away during emptying. The common bile duct passes behind the proximal duodenum and through or behind the pancreatic head before usually joining the pancreatic duct. Variants are common, so this is the typical pattern."
         },
         {
           "text": "Right hepatic and pancreatic ducts",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain gallbladder and extrahepatic biliary pathways using the main anatomical relationships, then justify your answer to: Which ducts unite to form the common bile duct?",
-      "answer": "The right and left hepatic ducts form the common hepatic duct. Joining the cystic duct creates the common bile duct; bile does not have to traverse the gallbladder on its way from liver to duodenum. Flow in the cystic duct can be toward storage or away during emptying. The common bile duct passes behind the proximal duodenum and through or behind the pancreatic head before usually joining the pancreatic duct. Variants are common, so this is the typical pattern."
+      "answer": "Answer: Common hepatic and cystic ducts. The right and left hepatic ducts form the common hepatic duct. Joining the cystic duct creates the common bile duct; bile does not have to traverse the gallbladder on its way from liver to duodenum. Flow in the cystic duct can be toward storage or away during emptying. The common bile duct passes behind the proximal duodenum and through or behind the pancreatic head before usually joining the pancreatic duct. Variants are common, so this is the typical pattern."
     },
     "related": [
       "liver-segments-and-porta",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which ducts unite to form the common bile duct? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The right and left hepatic ducts form the common hepatic duct.",
+        "Answer: Common hepatic and cystic ducts. The right and left hepatic ducts form the common hepatic duct.",
         "Joining the cystic duct creates the common bile duct; bile does not have to traverse the gallbladder on its way from liver to duodenum. Flow in the cystic duct can be toward storage or away during emptying. The common bile duct passes behind the proximal duodenum and through or behind the pancreatic head before usually joining the pancreatic duct.",
         "Variants are common, so this is the typical pattern."
       ]

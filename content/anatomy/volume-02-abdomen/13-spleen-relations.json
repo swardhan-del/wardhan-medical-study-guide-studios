@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Splenorenal ligament",
-          "reason": "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+          "reason": "Answer: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
         },
         {
           "text": "Falciform ligament",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain spleen, hilum and splenic ligaments using the main anatomical relationships, then justify your answer to: Which ligament carries the pancreatic tail toward the splenic hilum?",
-      "answer": "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+      "answer": "Answer: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
     },
     "related": [
       "pancreas-relations",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which ligament carries the pancreatic tail toward the splenic hilum? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.",
+        "Answer: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.",
         "Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail.",
         "Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
       ]

@@ -35,7 +35,7 @@ The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extens
 
 Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation.
+1. Answer: Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation.
 2. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution.
 3. Compare motor action, reflex and sensory pattern together.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together.
+1. Femoral nerve. Answer: Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together.
 
 2. A dermatome corresponds broadly to a spinal sensory root, while a peripheral nerve usually contains fibers from multiple roots redistributed through a plexus. Their maps therefore overlap differently. The saphenous territory along the medial leg is a named-nerve distribution, while root-level sensory maps divide the limb by segmental contributions. Both show variation and overlap. Compare sensory change with muscle actions and reflexes before assigning a level; one patch of skin alone rarely describes the entire anatomical pathway.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain lumbar and sacral plexuses across the limb using the main anatomical relationships, then justify your answer to: Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch?
 
-The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together.
+Answer: Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together.
 
 ## Sources and editorial record
 

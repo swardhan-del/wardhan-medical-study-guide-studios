@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Lingual nerve from V3",
-          "reason": "Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+          "reason": "Answer: Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
         },
         {
           "text": "Chorda tympani alone",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain tongue structure, function and nerve map using the main anatomical relationships, then justify your answer to: Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue?",
-      "answer": "Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+      "answer": "Answer: Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
     },
     "related": [
       "oral-cavity-palate-teeth",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Separate modality from region.",
+        "Answer: Lingual nerve from V3. Separate modality from region.",
         "Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply.",
         "A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
       ]

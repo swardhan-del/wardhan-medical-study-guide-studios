@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "A blind recess behind the left atrium",
-          "reason": "Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships."
+          "reason": "Answer: A blind recess behind the left atrium. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships."
         },
         {
           "text": "Inside the left ventricle",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain pericardial layers and reflections using the main anatomical relationships, then justify your answer to: Where is the oblique pericardial sinus?",
-      "answer": "Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships."
+      "answer": "Answer: A blind recess behind the left atrium. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships."
     },
     "related": [
       "posterior-mediastinum-lymph",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Where is the oblique pericardial sinus? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon.",
+        "Answer: A blind recess behind the left atrium. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon.",
         "Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume.",
         "Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships."
       ]

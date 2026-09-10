@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Abducens VI",
-          "reason": "Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings."
+          "reason": "Answer: Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings."
         },
         {
           "text": "Trochlear IV",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain ocular motor nerves and lesion localization using the main anatomical relationships, then justify your answer to: Which nerve supplies lateral rectus?",
-      "answer": "Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings."
+      "answer": "Answer: Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings."
     },
     "related": [
       "cranial-nerve-organization",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve supplies lateral rectus? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement.",
+        "Answer: Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement.",
         "IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation.",
         "A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings."
       ]

@@ -46,7 +46,7 @@
       "options": [
         {
           "text": "Uncinate process and inferior head",
-          "reason": "Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+          "reason": "Answer: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
         },
         {
           "text": "Tail alone",
@@ -61,7 +61,7 @@
     },
     "recall": {
       "prompt": "Explain foregut rotation and organ development using the main anatomical relationships, then justify your answer to: Which pancreatic part is principally derived from the ventral bud?",
-      "answer": "Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+      "answer": "Answer: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
     },
     "related": [
       "abdominal-lymph-autonomics",
@@ -81,7 +81,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which pancreatic part is principally derived from the ventral bud? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Rotation changes adult relationships without changing tissue lineage.",
+        "Answer: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage.",
         "The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds.",
         "Explain adult position, duct formation and germ-layer origin as separate outcomes."
       ]

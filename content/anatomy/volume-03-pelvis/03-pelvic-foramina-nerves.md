@@ -39,7 +39,7 @@ Ligaments convert notches into foramina; piriformis then divides the greater for
 
 What passes above piriformis through the greater sciatic foramen? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments.
+1. Answer: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments.
 2. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock.
 3. Variation exists, especially in sciatic nerve division around piriformis.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis.
+1. Superior gluteal nerve and vessels. Answer: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis.
 
 2. Both involve S2-S4, but root level does not specify function. Pudendal nerve carries somatic sensory and motor fibers to perineal skin and skeletal muscles, including external sphincter pathways. Pelvic splanchnic nerves carry parasympathetic preganglionic fibers to pelvic plexuses and viscera, with visceral afferents also using related routes. They follow different courses and targets. A learner who labels every S2-S4 branch pudendal would lose the distinction between voluntary skeletal control and visceral autonomic regulation.
 
@@ -97,7 +97,7 @@ Greater sciatic foramen transmits piriformis and structures passing above or bel
 
 Explain sciatic foramina and pelvic nerve routes using the main anatomical relationships, then justify your answer to: What passes above piriformis through the greater sciatic foramen?
 
-Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis.
+Answer: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis.
 
 ## Sources and editorial record
 

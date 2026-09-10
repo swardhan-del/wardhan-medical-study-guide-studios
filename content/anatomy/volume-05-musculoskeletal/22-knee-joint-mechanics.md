@@ -35,7 +35,7 @@ ACL and PCL names describe their tibial attachments, and their actions should sp
 
 Relative to a fixed femur, what does the ACL principally restrain? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which.
+1. Answer: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which.
 2. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial.
 3. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains.
+1. Anterior tibial translation. Answer: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains.
 
 2. Its stronger capsular and medial collateral attachments constrain movement compared with the lateral meniscus, which is separated from the fibular collateral ligament by the popliteus tendon relationship. Meniscal mobility matters as femoral condyles move during flexion and rotation. Both menisci distribute load and improve congruence, but their attachments and shapes differ. A symmetric pair of identical rings is therefore a poor teaching diagram. Include the collateral relationships and popliteus route to explain the asymmetry.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain knee ligaments, menisci and movement using the main anatomical relationships, then justify your answer to: Relative to a fixed femur, what does the ACL principally restrain?
 
-ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains.
+Answer: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains.
 
 ## Sources and editorial record
 

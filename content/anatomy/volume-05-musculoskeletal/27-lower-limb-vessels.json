@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Anterior tibial artery",
-          "reason": "Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical."
+          "reason": "Answer: Anterior tibial artery. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical."
         },
         {
           "text": "Fibular artery",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain lower limb arteries, veins and lymphatics using the main anatomical relationships, then justify your answer to: Which artery continues as dorsalis pedis at the ankle?",
-      "answer": "Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical."
+      "answer": "Answer: Anterior tibial artery. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical."
     },
     "related": [
       "plantar-foot",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which artery continues as dorsalis pedis at the ankle? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot.",
+        "Answer: Anterior tibial artery. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot.",
         "Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region.",
         "Superficial and deep routes communicate but are not identical."
       ]

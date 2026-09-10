@@ -35,7 +35,7 @@ Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movemen
 
 Which nerve supplies lateral rectus? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement.
+1. Answer: Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement.
 2. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation.
 3. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings.
+1. Abducens VI. Answer: Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings.
 
 2. Trochlear fibers cross within the brainstem before exiting dorsally. A lesion of the nucleus therefore affects the superior oblique on the opposite side, while a lesion of the already crossed peripheral nerve affects the muscle on the same side as that nerve. This is a specific crossing rule, not a general rule for all cranial nerves. State whether the proposed lesion is nuclear, fascicular or peripheral before assigning laterality, and connect the muscle action to the eye's position.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain ocular motor nerves and lesion localization using the main anatomical relationships, then justify your answer to: Which nerve supplies lateral rectus?
 
-Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings.
+Answer: Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings.
 
 ## Sources and editorial record
 

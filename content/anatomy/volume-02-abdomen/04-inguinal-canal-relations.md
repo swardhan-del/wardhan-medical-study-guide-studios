@@ -35,7 +35,7 @@ The inferior epigastric vessels are the key discriminator, not the eventual size
 
 A hernia enters the deep ring lateral to the inferior epigastric vessels. Which route is this? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling.
+1. Answer: Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling.
 2. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein.
 3. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord.
+1. Indirect inguinal. Answer: Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord.
 
 2. As the testicular route traverses the wall, coverings derive from selected layers: internal spermatic fascia from transversalis fascia, cremasteric muscle and fascia chiefly from internal oblique, and external spermatic fascia from external oblique aponeurosis. Transversus abdominis arches over the route and does not contribute an equivalent named covering. These layer relationships explain the canal's construction. The cord coverings should not be confused with the tunica albuginea of the testis or with the peritoneal tunica vaginalis.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain inguinal canal and hernia relationships using the main anatomical relationships, then justify your answer to: A hernia enters the deep ring lateral to the inferior epigastric vessels. Which route is this?
 
-The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord.
+Answer: Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord.
 
 ## Sources and editorial record
 

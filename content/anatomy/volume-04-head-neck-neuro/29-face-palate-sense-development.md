@@ -45,7 +45,7 @@ Inductive interactions connect tissues with different origins. The optic vesicle
 
 Which embryonic source forms the lens? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Inductive interactions connect tissues with different origins.
+1. Answer: Surface ectoderm. Inductive interactions connect tissues with different origins.
 2. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation.
 3. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately.
+1. Surface ectoderm. Answer: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately.
 
 2. Thyroid follicular tissue descends from a median pharyngeal origin associated with the foramen cecum and thyroglossal tract. Parathyroids arise from pouch-associated tissues and migrate along different routes, with inferior glands linked to third-pouch descent. Their final adjacency in the neck does not mean they began as one gland. Likewise, anterior and posterior pituitary have different embryonic contributions. Adult neighbors can have distinct lineages, so migration explains ectopic positions more effectively than simply memorizing normal final locations.
 
@@ -103,7 +103,7 @@ Frontonasal, maxillary, and mandibular prominences shape face. Primary palate fo
 
 Explain development of face, palate and special senses using the main anatomical relationships, then justify your answer to: Which embryonic source forms the lens?
 
-Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately.
+Answer: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately.
 
 ## Sources and editorial record
 

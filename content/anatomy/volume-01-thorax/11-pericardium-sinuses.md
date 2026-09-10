@@ -35,7 +35,7 @@ Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly t
 
 Where is the oblique pericardial sinus? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon.
+1. Answer: A blind recess behind the left atrium. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon.
 2. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume.
 3. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. A blind recess behind the left atrium. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships.
+1. A blind recess behind the left atrium. Answer: A blind recess behind the left atrium. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships.
 
 2. The pericardial enclosure has limited short-term compliance. Rapid accumulation can raise pressure before the sac adapts, restricting chamber filling and affecting output. Slower accumulation may allow more stretching, though it can still become clinically important. The anatomical principle is pressure-volume behavior in a constrained space, not a universal volume threshold. Keep this separate from pleural effusion, which occupies a different cavity and primarily changes lung mechanics rather than directly surrounding the heart.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain pericardial layers and reflections using the main anatomical relationships, then justify your answer to: Where is the oblique pericardial sinus?
 
-Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships.
+Answer: A blind recess behind the left atrium. Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon. Serous pericardium has parietal and visceral layers, with the latter forming epicardium. Their reflections around great vessels create the transverse passage and oblique recess. Rapid fluid accumulation can impair filling because available space and compliance are limited; the speed of accumulation matters as well as volume. Pericardial fluid and pleural fluid occupy different potential spaces despite close regional relationships.
 
 ## Sources and editorial record
 

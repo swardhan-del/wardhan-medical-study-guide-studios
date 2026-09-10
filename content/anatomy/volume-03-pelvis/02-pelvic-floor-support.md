@@ -35,7 +35,7 @@ Puborectalis is part of levator ani and helps maintain the anorectal angle. Rela
 
 Which muscle forms a sling around the anorectal junction? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Puborectalis is part of levator ani and helps maintain the anorectal angle.
+1. Answer: Puborectalis. Puborectalis is part of levator ani and helps maintain the anorectal angle.
 2. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes.
 3. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Puborectalis. Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve.
+1. Puborectalis. Answer: Puborectalis. Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve.
 
 2. The floor has openings for outlets and is shaped around them, so support depends on muscle tone, connective-tissue attachments and the perineal body. Pressure rises during coughing or lifting must be resisted without permanently closing those outlets. Puborectalis changes anorectal geometry, while other levator fibers support adjacent viscera. Injury or weakness can alter several relationships simultaneously. The perineal membrane lies below the levator complex in the urogenital region and should not be drawn as the entire pelvic diaphragm.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain pelvic diaphragm and visceral support using the main anatomical relationships, then justify your answer to: Which muscle forms a sling around the anorectal junction?
 
-Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve.
+Answer: Puborectalis. Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve.
 
 ## Sources and editorial record
 

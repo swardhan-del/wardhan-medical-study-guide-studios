@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Third pouch",
-          "reason": "Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists."
+          "reason": "Answer: Third pouch. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists."
         },
         {
           "text": "First pouch",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain pharyngeal arches, pouches and arch arteries using the main anatomical relationships, then justify your answer to: Which pouch gives rise to the thymic epithelial component and inferior parathyroids?",
-      "answer": "Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists."
+      "answer": "Answer: Third pouch. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists."
     },
     "related": [
       "spinal-cord-tracts",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which pouch gives rise to the thymic epithelial component and inferior parathyroids? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves.",
+        "Answer: Third pouch. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves.",
         "The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes.",
         "The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists."
       ]

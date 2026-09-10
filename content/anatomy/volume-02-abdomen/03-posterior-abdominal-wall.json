@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Genitofemoral nerve",
-          "reason": "The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+          "reason": "Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
         },
         {
           "text": "Phrenic nerve",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain posterior abdominal wall and lumbar relations using the main anatomical relationships, then justify your answer to: Which nerve is characteristically seen on the anterior surface of psoas major?",
-      "answer": "The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+      "answer": "Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
     },
     "related": [
       "abdominal-wall-layers",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve is characteristically seen on the anterior surface of psoas major? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The lumbar plexus forms within the posterior part of psoas major.",
+        "Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major.",
         "Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch.",
         "Trace a structure toward its destination before naming it on a section."
       ]

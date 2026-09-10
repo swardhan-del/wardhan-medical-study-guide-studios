@@ -35,7 +35,7 @@ The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-t
 
 Which ligament carries the pancreatic tail toward the splenic hilum? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.
+1. Answer: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.
 2. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail.
 3. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy.
+1. Splenorenal ligament. Answer: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy.
 
 2. The spleen lies below the diaphragm but projects deep to the left lower ribs, classically around ribs 9-11 with its long axis near the tenth rib. The diaphragm separates it from pleura and lung above. A surface view can therefore place ribs over an abdominal organ without relocating that organ into the thorax. Its thin capsule, vascular parenchyma and nearby pancreatic tail explain the importance of regional relationships. Spleen size and position vary with body form and disease.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain spleen, hilum and splenic ligaments using the main anatomical relationships, then justify your answer to: Which ligament carries the pancreatic tail toward the splenic hilum?
 
-The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy.
+Answer: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy.
 
 ## Sources and editorial record
 

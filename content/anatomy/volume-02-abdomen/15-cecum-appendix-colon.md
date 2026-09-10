@@ -39,7 +39,7 @@ The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae gui
 
 What reliably locates the appendiceal base despite variation in the tip? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base.
+1. Answer: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base.
 2. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows.
 3. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum.
+1. Convergence of the three teniae coli. Answer: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum.
 
 2. Transverse and sigmoid colon usually retain mesocolons, allowing substantial mobility. Ascending and descending colon are commonly fixed secondarily to the posterior abdominal wall, although variation occurs. These attachments explain why a loop's position on one image may be misleading and why the mesenteric border is an important orientation clue. Teniae coli condense longitudinal muscle in the colon and converge at the appendix base; at the rectum the longitudinal layer becomes continuous rather than remaining as three distinct bands.
 
@@ -97,7 +97,7 @@ Appendix base is located where the three teniae coli converge. Surface projectio
 
 Explain cecum, appendix and colon using the main anatomical relationships, then justify your answer to: What reliably locates the appendiceal base despite variation in the tip?
 
-The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum.
+Answer: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum.
 
 ## Sources and editorial record
 

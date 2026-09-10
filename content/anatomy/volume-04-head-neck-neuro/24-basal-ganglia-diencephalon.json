@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Thalamus",
-          "reason": "The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+          "reason": "Answer: Thalamus. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
         },
         {
           "text": "Lentiform nucleus",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain basal ganglia, internal capsule and diencephalon using the main anatomical relationships, then justify your answer to: What lies medial to the posterior limb of the internal capsule?",
-      "answer": "The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+      "answer": "Answer: Thalamus. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
     },
     "related": [
       "ventricles-csf",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What lies medial to the posterior limb of the internal capsule? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The internal capsule is white matter between deep gray-matter structures.",
+        "Answer: Thalamus. The internal capsule is white matter between deep gray-matter structures.",
         "Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle.",
         "Thalamic and hypothalamic functions also need to be distinguished."
       ]

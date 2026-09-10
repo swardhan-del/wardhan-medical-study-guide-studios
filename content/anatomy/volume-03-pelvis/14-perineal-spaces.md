@@ -45,7 +45,7 @@ The perineum lies below the pelvic diaphragm. A line between the ischial tuberos
 
 What separates the superficial perineal pouch from the deep perineal region? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The perineum lies below the pelvic diaphragm.
+1. Answer: Perineal membrane. The perineum lies below the pelvic diaphragm.
 2. A line between the ischial tuberosities divides urogenital and anal triangles; these are regional subdivisions, not layers. The perineal membrane is a key boundary in the urogenital triangle. Traditional descriptions of a closed urogenital diaphragm can obscure the actual sphincter and connective-tissue arrangement, especially in females.
 3. Name the membrane, sphincter complex and pelvic diaphragm separately rather than treating them as interchangeable structures.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Perineal membrane. The perineum lies below the pelvic diaphragm. A line between the ischial tuberosities divides urogenital and anal triangles; these are regional subdivisions, not layers. The perineal membrane is a key boundary in the urogenital triangle. Traditional descriptions of a closed urogenital diaphragm can obscure the actual sphincter and connective-tissue arrangement, especially in females. Name the membrane, sphincter complex and pelvic diaphragm separately rather than treating them as interchangeable structures.
+1. Perineal membrane. Answer: Perineal membrane. The perineum lies below the pelvic diaphragm. A line between the ischial tuberosities divides urogenital and anal triangles; these are regional subdivisions, not layers. The perineal membrane is a key boundary in the urogenital triangle. Traditional descriptions of a closed urogenital diaphragm can obscure the actual sphincter and connective-tissue arrangement, especially in females. Name the membrane, sphincter complex and pelvic diaphragm separately rather than treating them as interchangeable structures.
 
 2. The superficial pouch lies between the perineal membrane and membranous superficial fascia. Attachments of that fascia to the perineal margins constrain some routes while continuity with superficial abdominal fascia permits others. The resulting pattern depends on which tissue layer contains the fluid and where a breach occurs. This is why drawing only muscles without fascia gives an incomplete explanation. The deep perineal region has different boundaries and should not be assumed to communicate with every superficial compartment in the same way.
 
@@ -103,7 +103,7 @@ Urogenital triangle contains external genitalia and urethral structures. Anal tr
 
 Explain perineal triangles, pouches and perineal body using the main anatomical relationships, then justify your answer to: What separates the superficial perineal pouch from the deep perineal region?
 
-The perineum lies below the pelvic diaphragm. A line between the ischial tuberosities divides urogenital and anal triangles; these are regional subdivisions, not layers. The perineal membrane is a key boundary in the urogenital triangle. Traditional descriptions of a closed urogenital diaphragm can obscure the actual sphincter and connective-tissue arrangement, especially in females. Name the membrane, sphincter complex and pelvic diaphragm separately rather than treating them as interchangeable structures.
+Answer: Perineal membrane. The perineum lies below the pelvic diaphragm. A line between the ischial tuberosities divides urogenital and anal triangles; these are regional subdivisions, not layers. The perineal membrane is a key boundary in the urogenital triangle. Traditional descriptions of a closed urogenital diaphragm can obscure the actual sphincter and connective-tissue arrangement, especially in females. Name the membrane, sphincter complex and pelvic diaphragm separately rather than treating them as interchangeable structures.
 
 ## Sources and editorial record
 

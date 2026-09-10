@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "No; they drain directly into the inferior vena cava",
-          "reason": "The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+          "reason": "Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
         },
         {
           "text": "Yes; they accompany the bile duct through the porta",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain liver surfaces, porta hepatis and functional divisions using the main anatomical relationships, then justify your answer to: Do the hepatic veins normally pass through the porta hepatis?",
-      "answer": "The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+      "answer": "Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
     },
     "related": [
       "duodenum-relations",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Do the hepatic veins normally pass through the porta hepatis? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.",
+        "Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.",
         "Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava.",
         "Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
       ]

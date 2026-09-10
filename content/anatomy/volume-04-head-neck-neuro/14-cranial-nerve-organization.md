@@ -35,7 +35,7 @@ Opening of the fourth-ventricle region spreads the dorsal sensory plates lateral
 
 Which functional region generally lies medial to the sulcus limitans in the developing brainstem? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.
+1. Answer: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.
 2. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic.
 3. Functional modality should be identified before naming a nucleus.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus.
+1. Motor columns. Answer: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus.
 
 2. A ganglion generally contains primary sensory neuron cell bodies outside the central nervous system; a sensory nucleus contains central neuronal groups receiving or processing those inputs. The trigeminal ganglion and trigeminal sensory nuclei are therefore successive but different structures. Mesencephalic trigeminal proprioceptive neurons are a notable exception to the usual peripheral location of primary sensory cell bodies. Motor nuclei instead contain neurons whose axons project toward targets. Distinguishing ganglion, nucleus and nerve avoids confusing cell-body location with the bundled axon route.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain cranial nerve nuclei and functional columns using the main anatomical relationships, then justify your answer to: Which functional region generally lies medial to the sulcus limitans in the developing brainstem?
 
-Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus.
+Answer: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus.
 
 ## Sources and editorial record
 

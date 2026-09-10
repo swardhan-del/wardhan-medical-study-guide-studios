@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Hepatoduodenal ligament",
-          "reason": "The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+          "reason": "Answer: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
         },
         {
           "text": "Inferior vena cava",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain omenta, lesser sac and epiploic foramen using the main anatomical relationships, then justify your answer to: What forms the anterior boundary of the epiploic foramen?",
-      "answer": "The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+      "answer": "Answer: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
     },
     "related": [
       "peritoneal-organization",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What forms the anterior boundary of the epiploic foramen? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum.",
+        "Answer: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum.",
         "At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary.",
         "Thus a space, its opening and the contents of one boundary must be named separately."
       ]

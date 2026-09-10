@@ -35,7 +35,7 @@ Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial
 
 Which artery continues as dorsalis pedis at the ankle? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot.
+1. Answer: Anterior tibial artery. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot.
 2. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region.
 3. Superficial and deep routes communicate but are not identical.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Anterior tibial artery. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical.
+1. Anterior tibial artery. Answer: Anterior tibial artery. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical.
 
 2. Perforators pass through deep fascia between superficial veins and deep veins accompanying arteries. Valves and the muscle pump normally favor organized return toward the heart, while calf contraction compresses deep channels. The great and small saphenous veins are superficial routes with characteristic junctions, not substitutes for the deep system. Vessel names describe location and continuity, while flow depends on pressure and valve function. A useful lower-limb venous diagram includes fascia and perforators as well as the two named superficial veins.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain lower limb arteries, veins and lymphatics using the main anatomical relationships, then justify your answer to: Which artery continues as dorsalis pedis at the ankle?
 
-Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical.
+Answer: Anterior tibial artery. Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot. Branching patterns vary, including the length of the tibioperoneal trunk. Dorsalis pedis continues the anterior tibial route; posterior tibial branches feed plantar circulation. Great saphenous travels anterior to the medial malleolus and toward superficial inguinal drainage, while small saphenous passes posterior to the lateral malleolus toward the popliteal region. Superficial and deep routes communicate but are not identical.
 
 ## Sources and editorial record
 

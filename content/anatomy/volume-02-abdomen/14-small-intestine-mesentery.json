@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Fewer arterial arcades and longer vasa recta",
-          "reason": "Jejunum and ileum blend gradually; there is no sharp external boundary. Compare several features together: jejunum tends to have thicker walls, larger folds, less mesenteric fat near the bowel and longer straight vessels. Ileum tends to have more arcades, shorter straight vessels and more aggregated lymphoid nodules. The long mobile bowel attaches to a much shorter oblique mesenteric root, so a loop's current position alone is unreliable for identification."
+          "reason": "Answer: Fewer arterial arcades and longer vasa recta. Jejunum and ileum blend gradually; there is no sharp external boundary. Compare several features together: jejunum tends to have thicker walls, larger folds, less mesenteric fat near the bowel and longer straight vessels. Ileum tends to have more arcades, shorter straight vessels and more aggregated lymphoid nodules. The long mobile bowel attaches to a much shorter oblique mesenteric root, so a loop's current position alone is unreliable for identification."
         },
         {
           "text": "More arterial arcades and shorter vasa recta",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain jejunum, ileum and the mesenteric root using the main anatomical relationships, then justify your answer to: Which vascular pattern is typical of jejunum compared with ileum?",
-      "answer": "Jejunum and ileum blend gradually; there is no sharp external boundary. Compare several features together: jejunum tends to have thicker walls, larger folds, less mesenteric fat near the bowel and longer straight vessels. Ileum tends to have more arcades, shorter straight vessels and more aggregated lymphoid nodules. The long mobile bowel attaches to a much shorter oblique mesenteric root, so a loop's current position alone is unreliable for identification."
+      "answer": "Answer: Fewer arterial arcades and longer vasa recta. Jejunum and ileum blend gradually; there is no sharp external boundary. Compare several features together: jejunum tends to have thicker walls, larger folds, less mesenteric fat near the bowel and longer straight vessels. Ileum tends to have more arcades, shorter straight vessels and more aggregated lymphoid nodules. The long mobile bowel attaches to a much shorter oblique mesenteric root, so a loop's current position alone is unreliable for identification."
     },
     "related": [
       "spleen-relations",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which vascular pattern is typical of jejunum compared with ileum? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Jejunum and ileum blend gradually; there is no sharp external boundary.",
+        "Answer: Fewer arterial arcades and longer vasa recta. Jejunum and ileum blend gradually; there is no sharp external boundary.",
         "Compare several features together: jejunum tends to have thicker walls, larger folds, less mesenteric fat near the bowel and longer straight vessels. Ileum tends to have more arcades, shorter straight vessels and more aggregated lymphoid nodules.",
         "The long mobile bowel attaches to a much shorter oblique mesenteric root, so a loop's current position alone is unreliable for identification."
       ]

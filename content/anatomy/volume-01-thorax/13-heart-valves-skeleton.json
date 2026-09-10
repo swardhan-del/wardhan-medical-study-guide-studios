@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Prevent AV valve prolapse toward the atria",
-          "reason": "Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+          "reason": "Answer: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
         },
         {
           "text": "Pull semilunar valves open",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain valves and fibrous support using the main anatomical relationships, then justify your answer to: What is the main role of papillary muscles and chordae during ventricular systole?",
-      "answer": "Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+      "answer": "Answer: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
     },
     "related": [
       "heart-chambers-surfaces",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What is the main role of papillary muscles and chordae during ventricular systole? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Valves move in response to pressure differences.",
+        "Answer: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences.",
         "Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves.",
         "This explains why projection and listening landmarks differ."
       ]

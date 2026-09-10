@@ -46,7 +46,7 @@
       "options": [
         {
           "text": "Two ureteric openings and the internal urethral opening",
-          "reason": "The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them."
+          "reason": "Answer: Two ureteric openings and the internal urethral opening. The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them."
         },
         {
           "text": "Three urethral openings",
@@ -61,7 +61,7 @@
     },
     "recall": {
       "prompt": "Explain bladder, trigone and urethral differences using the main anatomical relationships, then justify your answer to: What marks the three corners of the bladder trigone?",
-      "answer": "The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them."
+      "answer": "Answer: Two ureteric openings and the internal urethral opening. The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them."
     },
     "related": [
       "pelvis-urinary-route",
@@ -81,7 +81,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What marks the three corners of the bladder trigone? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The trigone is a smooth internal region, not the whole bladder base viewed from outside.",
+        "Answer: Two ureteric openings and the internal urethral opening. The trigone is a smooth internal region, not the whole bladder base viewed from outside.",
         "The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening.",
         "Use the same proximal-to-distal direction when comparing them."
       ]

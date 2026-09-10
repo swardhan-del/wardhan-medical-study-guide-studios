@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Left side of pelvis drops",
-          "reason": "The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+          "reason": "Answer: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
         },
         {
           "text": "Right shoulder alone drops",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain gluteal region and the piriformis landmark using the main anatomical relationships, then justify your answer to: A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance?",
-      "answer": "The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+      "answer": "Answer: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
     },
     "related": [
       "hip-joint-stability",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping.",
+        "Answer: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping.",
         "A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment.",
         "Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
       ]

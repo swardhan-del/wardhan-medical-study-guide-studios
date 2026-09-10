@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Heart within pericardium",
-          "reason": "The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching."
+          "reason": "Answer: Heart within pericardium. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching."
         },
         {
           "text": "Descending thoracic aorta throughout its course",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain mediastinal compartments and vessels using the main anatomical relationships, then justify your answer to: Which structure belongs principally to the middle mediastinum?",
-      "answer": "The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching."
+      "answer": "Answer: Heart within pericardium. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching."
     },
     "related": [
       "bronchopulmonary-segments",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which structure belongs principally to the middle mediastinum? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The mediastinum lies between the pleural sacs and extends from inlet to diaphragm.",
+        "Answer: Heart within pericardium. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm.",
         "The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC.",
         "Similar names do not imply symmetrical arterial and venous branching."
       ]

@@ -39,7 +39,7 @@ The TMJ disc divides the joint into compartments supporting rotation and transla
 
 What accompanies wider mouth opening after the early hinge phase? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The TMJ disc divides the joint into compartments supporting rotation and translation.
+1. Answer: Anterior translation of the condyle-disc complex. The TMJ disc divides the joint into compartments supporting rotation and translation.
 2. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits.
 3. Link a nerve to its foramen before following its distal branches.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Anterior translation of the condyle-disc complex. The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches.
+1. Anterior translation of the condyle-disc complex. Answer: Anterior translation of the condyle-disc complex. The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches.
 
 2. It is a small space with several communications to orbit, nasal cavity, palate, pharynx and adjacent deep facial regions. V2, terminal maxillary arterial branches and pterygopalatine ganglion relationships meet there before branches disperse. Postganglionic parasympathetic fibers can travel with sensory branches toward glands, so the carrier branch name does not identify the original autonomic source. A useful map starts with the fossa and then follows each exit to its destination rather than memorizing contents without their onward routes.
 
@@ -97,7 +97,7 @@ Early mouth opening is mainly hinge movement; wider opening involves anterior tr
 
 Explain mastication, tmj and deep facial spaces using the main anatomical relationships, then justify your answer to: What accompanies wider mouth opening after the early hinge phase?
 
-The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches.
+Answer: Anterior translation of the condyle-disc complex. The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches.
 
 ## Sources and editorial record
 

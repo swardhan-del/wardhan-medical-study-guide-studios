@@ -35,7 +35,7 @@ The cervix projects into the superior vagina, creating anterior, posterior and l
 
 Which vaginal fornix is closest to the rectouterine pouch? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The cervix projects into the superior vagina, creating anterior, posterior and lateral recesses called fornices.
+1. Answer: Posterior fornix. The cervix projects into the superior vagina, creating anterior, posterior and lateral recesses called fornices.
 2. The posterior fornix is adjacent to the rectouterine pouch; the anterior vaginal wall relates to bladder and urethra. Lateral fornices lie near ureteric and uterine-vessel relationships. The vaginal wall is a fibromuscular tube with mucosa, muscular tissue and adventitia, not a peritoneal tube throughout its length.
 3. Drainage patterns change along its upper and lower regions.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Posterior fornix. The cervix projects into the superior vagina, creating anterior, posterior and lateral recesses called fornices. The posterior fornix is adjacent to the rectouterine pouch; the anterior vaginal wall relates to bladder and urethra. Lateral fornices lie near ureteric and uterine-vessel relationships. The vaginal wall is a fibromuscular tube with mucosa, muscular tissue and adventitia, not a peritoneal tube throughout its length. Drainage patterns change along its upper and lower regions.
+1. Posterior fornix. Answer: Posterior fornix. The cervix projects into the superior vagina, creating anterior, posterior and lateral recesses called fornices. The posterior fornix is adjacent to the rectouterine pouch; the anterior vaginal wall relates to bladder and urethra. Lateral fornices lie near ureteric and uterine-vessel relationships. The vaginal wall is a fibromuscular tube with mucosa, muscular tissue and adventitia, not a peritoneal tube throughout its length. Drainage patterns change along its upper and lower regions.
 
 2. The perineal body is a fibromuscular convergence between the vaginal outlet and anal region, linking several supporting muscles and fasciae. It contributes to the integrity of the perineal support system rather than acting as a separate organ. The upper posterior vaginal region instead relates to the rectouterine pouch, so superior and inferior relations differ substantially. A complete account should trace anterior, posterior and lateral relations along the tube's length, not apply the fornix relationships to the entire vaginal wall.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain vagina and its pelvic relations using the main anatomical relationships, then justify your answer to: Which vaginal fornix is closest to the rectouterine pouch?
 
-The cervix projects into the superior vagina, creating anterior, posterior and lateral recesses called fornices. The posterior fornix is adjacent to the rectouterine pouch; the anterior vaginal wall relates to bladder and urethra. Lateral fornices lie near ureteric and uterine-vessel relationships. The vaginal wall is a fibromuscular tube with mucosa, muscular tissue and adventitia, not a peritoneal tube throughout its length. Drainage patterns change along its upper and lower regions.
+Answer: Posterior fornix. The cervix projects into the superior vagina, creating anterior, posterior and lateral recesses called fornices. The posterior fornix is adjacent to the rectouterine pouch; the anterior vaginal wall relates to bladder and urethra. Lateral fornices lie near ureteric and uterine-vessel relationships. The vaginal wall is a fibromuscular tube with mucosa, muscular tissue and adventitia, not a peritoneal tube throughout its length. Drainage patterns change along its upper and lower regions.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ The external acoustic meatus conducts sound to the tympanic membrane. Malleus, i
 
 Which ossicle transmits vibration to the oval window? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The external acoustic meatus conducts sound to the tympanic membrane.
+1. Answer: Stapes. The external acoustic meatus conducts sound to the tympanic membrane.
 2. Malleus, incus and stapes transmit vibration through the middle ear to the oval window; round-window movement accommodates inner-ear fluid displacement. The auditory tube connects middle ear to nasopharynx. The cochlea encodes sound, while semicircular ducts detect angular acceleration and utricle and saccule detect linear acceleration and head tilt.
 3. CN VIII carries sensory information; it is not the motor nerve to middle-ear muscles.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Stapes. The external acoustic meatus conducts sound to the tympanic membrane. Malleus, incus and stapes transmit vibration through the middle ear to the oval window; round-window movement accommodates inner-ear fluid displacement. The auditory tube connects middle ear to nasopharynx. The cochlea encodes sound, while semicircular ducts detect angular acceleration and utricle and saccule detect linear acceleration and head tilt. CN VIII carries sensory information; it is not the motor nerve to middle-ear muscles.
+1. Stapes. Answer: Stapes. The external acoustic meatus conducts sound to the tympanic membrane. Malleus, incus and stapes transmit vibration through the middle ear to the oval window; round-window movement accommodates inner-ear fluid displacement. The auditory tube connects middle ear to nasopharynx. The cochlea encodes sound, while semicircular ducts detect angular acceleration and utricle and saccule detect linear acceleration and head tilt. CN VIII carries sensory information; it is not the motor nerve to middle-ear muscles.
 
 2. Conductive loss concerns transmission through external or middle-ear structures, such as the tympanic membrane or ossicular chain. Sensorineural loss involves cochlear sensory mechanisms or neural pathways, including CN VIII. The auditory tube ventilates the middle-ear cavity but is not the route carrying auditory nerve signals. Vestibular structures share the inner ear and VIII association yet encode balance-related information. Similar location does not make hearing and balance the same sensory system or imply that every ear problem affects both equally.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain external, middle and inner ear using the main anatomical relationships, then justify your answer to: Which ossicle transmits vibration to the oval window?
 
-The external acoustic meatus conducts sound to the tympanic membrane. Malleus, incus and stapes transmit vibration through the middle ear to the oval window; round-window movement accommodates inner-ear fluid displacement. The auditory tube connects middle ear to nasopharynx. The cochlea encodes sound, while semicircular ducts detect angular acceleration and utricle and saccule detect linear acceleration and head tilt. CN VIII carries sensory information; it is not the motor nerve to middle-ear muscles.
+Answer: Stapes. The external acoustic meatus conducts sound to the tympanic membrane. Malleus, incus and stapes transmit vibration through the middle ear to the oval window; round-window movement accommodates inner-ear fluid displacement. The auditory tube connects middle ear to nasopharynx. The cochlea encodes sound, while semicircular ducts detect angular acceleration and utricle and saccule detect linear acceleration and head tilt. CN VIII carries sensory information; it is not the motor nerve to middle-ear muscles.
 
 ## Sources and editorial record
 

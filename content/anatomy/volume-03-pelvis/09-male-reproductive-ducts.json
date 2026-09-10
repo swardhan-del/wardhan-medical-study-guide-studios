@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Prostatic urethra",
-          "reason": "Sperm travels from seminiferous tubules through straight tubules, rete testis, efferent ductules, epididymis and ductus deferens. The duct of the seminal vesicle joins the deferent duct to form an ejaculatory duct through the prostate. The seminal vesicle contributes secretion; it is not a storage sac through which sperm must pass. The prostate surrounds the proximal urethral route, while its posterior surface faces the rectum, explaining a clinically useful relationship."
+          "reason": "Answer: Prostatic urethra. Sperm travels from seminiferous tubules through straight tubules, rete testis, efferent ductules, epididymis and ductus deferens. The duct of the seminal vesicle joins the deferent duct to form an ejaculatory duct through the prostate. The seminal vesicle contributes secretion; it is not a storage sac through which sperm must pass. The prostate surrounds the proximal urethral route, while its posterior surface faces the rectum, explaining a clinically useful relationship."
         },
         {
           "text": "Membranous urethra",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain sperm pathway, seminal vesicles and prostate using the main anatomical relationships, then justify your answer to: Where do ejaculatory ducts open?",
-      "answer": "Sperm travels from seminiferous tubules through straight tubules, rete testis, efferent ductules, epididymis and ductus deferens. The duct of the seminal vesicle joins the deferent duct to form an ejaculatory duct through the prostate. The seminal vesicle contributes secretion; it is not a storage sac through which sperm must pass. The prostate surrounds the proximal urethral route, while its posterior surface faces the rectum, explaining a clinically useful relationship."
+      "answer": "Answer: Prostatic urethra. Sperm travels from seminiferous tubules through straight tubules, rete testis, efferent ductules, epididymis and ductus deferens. The duct of the seminal vesicle joins the deferent duct to form an ejaculatory duct through the prostate. The seminal vesicle contributes secretion; it is not a storage sac through which sperm must pass. The prostate surrounds the proximal urethral route, while its posterior surface faces the rectum, explaining a clinically useful relationship."
     },
     "related": [
       "testis-spermatic-cord",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Where do ejaculatory ducts open? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Sperm travels from seminiferous tubules through straight tubules, rete testis, efferent ductules, epididymis and ductus deferens.",
+        "Answer: Prostatic urethra. Sperm travels from seminiferous tubules through straight tubules, rete testis, efferent ductules, epididymis and ductus deferens.",
         "The duct of the seminal vesicle joins the deferent duct to form an ejaculatory duct through the prostate. The seminal vesicle contributes secretion; it is not a storage sac through which sperm must pass.",
         "The prostate surrounds the proximal urethral route, while its posterior surface faces the rectum, explaining a clinically useful relationship."
       ]

@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Testosterone",
-          "reason": "Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+          "reason": "Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
         },
         {
           "text": "Anti-Mullerian hormone alone",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain gonadal differentiation and genital ducts using the main anatomical relationships, then justify your answer to: Which signal supports persistence of the mesonephric duct in typical male development?",
-      "answer": "Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+      "answer": "Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
     },
     "related": [
       "urinary-development",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which signal supports persistence of the mesonephric duct in typical male development? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.",
+        "Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.",
         "Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing.",
         "Classical duct maps are useful but simplify the developmental contributions to the vagina."
       ]

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Axillary nerve",
-          "reason": "The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+          "reason": "Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
         },
         {
           "text": "Radial nerve",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain axilla, axillary artery and scapular spaces using the main anatomical relationships, then justify your answer to: Which nerve passes through the quadrangular space?",
-      "answer": "The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+      "answer": "Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
     },
     "related": [
       "rotator-cuff-shoulder",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve passes through the quadrangular space? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.",
+        "Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.",
         "The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches.",
         "The brachial plexus cords are named relative to the second part of that artery."
       ]

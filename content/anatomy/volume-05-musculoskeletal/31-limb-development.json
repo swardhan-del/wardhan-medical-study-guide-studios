@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Zone of polarizing activity",
-          "reason": "Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+          "reason": "Answer: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
         },
         {
           "text": "Apical ectodermal ridge through SHH alone",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain early patterning and limb development using the main anatomical relationships, then justify your answer to: Which signaling center organizes anteroposterior limb patterning through SHH?",
-      "answer": "Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+      "answer": "Answer: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
     },
     "related": [
       "regional-lymphatics",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which signaling center organizes anteroposterior limb patterning through SHH? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Limb patterning has several axes.",
+        "Answer: Zone of polarizing activity. Limb patterning has several axes.",
         "The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb.",
         "Muscle precursors and skeletal mesenchyme also have different developmental sources."
       ]

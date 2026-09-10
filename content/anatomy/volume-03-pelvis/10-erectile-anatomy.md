@@ -39,7 +39,7 @@ The paired corpora cavernosa continue proximally as crura; the corpus spongiosum
 
 Which tissue surrounds the spongy urethra? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally.
+1. Answer: Corpus spongiosum. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally.
 2. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event.
 3. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Corpus spongiosum. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris.
+1. Corpus spongiosum. Answer: Corpus spongiosum. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris.
 
 2. Corpus spongiosum surrounds the spongy urethral route and expands into bulb and glans, while paired cavernosa provide the principal rigid erectile bodies. Their connective-tissue and vascular arrangements differ, allowing the urethral channel to remain a distinct structure during erectile changes. The crura are cavernous attachments, whereas the bulb belongs to spongiosum. Labeling all erectile tissue identically would obscure the urethral course and the correspondence between root, body and distal expansions.
 
@@ -97,7 +97,7 @@ The penile root includes a single bulb and paired crura attached in the perineum
 
 Explain erectile tissues and external genital anatomy using the main anatomical relationships, then justify your answer to: Which tissue surrounds the spongy urethra?
 
-The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris.
+Answer: Corpus spongiosum. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris.
 
 ## Sources and editorial record
 

@@ -29,13 +29,13 @@ Visceral afferents converge with somatic pathways at spinal levels, so early vis
 
 ## Apply the anatomy and resolve a common confusion
 
-Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
+Conventional axial images are viewed as if looking from the patient's feet toward the head. The patient's right therefore appears on the viewer's left; check the image's orientation markers before using this convention. Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
 
 ## Worked example
 
 On a conventional axial image viewed from the feet, where is the patient's right side displayed? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it.
+1. Answer: on the viewer's left. Looking from the patient's feet toward the head reverses the patient's right and left relative to the viewer. Confirm the displayed orientation markers first.
 2. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ.
 3. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. On the viewer's left. Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
+1. On the viewer's left. Answer: On the viewer's left. Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
 
 2. Visceral afferents converge with somatic pathways at spinal levels, so early visceral pain is often perceived in a broad midline region related to embryological origin. Irritation of parietal peritoneum recruits more localized somatic sensation. Thus a student should distinguish the projected position of an organ, its visceral pain referral and secondary local tenderness. Body habitus, organ filling and posture also change surface projections; the nine-region grid is an orientation tool, not an exact map of organ boundaries.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain abdominal regions and sectional orientation using the main anatomical relationships, then justify your answer to: On a conventional axial image viewed from the feet, where is the patient's right side displayed?
 
-Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
+Answer: On the viewer's left. Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
 
 ## Sources and editorial record
 

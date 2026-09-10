@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Pulmonary trunk region to descending aorta",
-          "reason": "The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath."
+          "reason": "Answer: Pulmonary trunk region to descending aorta. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath."
         },
         {
           "text": "Left atrium to right atrium",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain fetal shunts and adult remnants using the main anatomical relationships, then justify your answer to: What does the ductus arteriosus connect in fetal circulation?",
-      "answer": "The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath."
+      "answer": "Answer: Pulmonary trunk region to descending aorta. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath."
     },
     "related": [
       "heart-looping-septation",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What does the ductus arteriosus connect in fetal circulation? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles.",
+        "Answer: Pulmonary trunk region to descending aorta. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles.",
         "The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows.",
         "Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath."
       ]

@@ -35,7 +35,7 @@ The lumbar plexus forms within the posterior part of psoas major. Its branches e
 
 Which nerve is characteristically seen on the anterior surface of psoas major? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The lumbar plexus forms within the posterior part of psoas major.
+1. Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major.
 2. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch.
 3. Trace a structure toward its destination before naming it on a section.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section.
+1. Genitofemoral nerve. Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section.
 
 2. Psoas connects lumbar vertebral structures with the femur through the iliopsoas tendon, linking spine and hip mechanically. The lumbar plexus forms within it, and nerves emerge around its borders. Ureter and retroperitoneal vessels lie nearby but remain distinct structures with separate functions. In a sectional image, finding psoas on both sides of the vertebral bodies gives a stable reference for locating kidneys, ureters and major vessels. Muscle position organizes a region without making every neighboring structure part of that muscle.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain posterior abdominal wall and lumbar relations using the main anatomical relationships, then justify your answer to: Which nerve is characteristically seen on the anterior surface of psoas major?
 
-The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section.
+Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section.
 
 ## Sources and editorial record
 

@@ -45,7 +45,7 @@ Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth
 
 Which signaling center organizes anteroposterior limb patterning through SHH? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Limb patterning has several axes.
+1. Answer: Zone of polarizing activity. Limb patterning has several axes.
 2. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb.
 3. Muscle precursors and skeletal mesenchyme also have different developmental sources.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources.
+1. Zone of polarizing activity. Answer: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources.
 
 2. Limb skeletal and connective tissues derive largely from lateral plate mesodermal mesenchyme, while skeletal muscle precursors migrate from somites. Their coordinated patterning creates compartments and attachment relationships, but they do not originate as one homogeneous tissue mass. Nerves grow into developing targets and preserve segmental contributions as the limb elongates and rotates. This helps explain the adult mixture of segmental root maps and regional peripheral nerves. Gene-signal diagrams should be connected to these migrating cell populations and spatial axes.
 
@@ -103,7 +103,7 @@ Spermatogonia become primary spermatocytes, secondary spermatocytes, spermatids,
 
 Explain early patterning and limb development using the main anatomical relationships, then justify your answer to: Which signaling center organizes anteroposterior limb patterning through SHH?
 
-Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources.
+Answer: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources.
 
 ## Sources and editorial record
 

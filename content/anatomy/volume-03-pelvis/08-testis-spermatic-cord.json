@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Lumbar para-aortic nodes",
-          "reason": "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+          "reason": "Answer: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
         },
         {
           "text": "Superficial inguinal nodes only",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain testis, scrotum and spermatic cord using the main anatomical relationships, then justify your answer to: Where does testicular lymph primarily drain?",
-      "answer": "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+      "answer": "Answer: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
     },
     "related": [
       "bladder-urethrae",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Where does testicular lymph primarily drain? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.",
+        "Answer: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.",
         "Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content.",
         "Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
       ]

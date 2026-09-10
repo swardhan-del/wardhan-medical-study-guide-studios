@@ -39,7 +39,7 @@ Portal means blood reaches a second capillary bed before returning to the heart.
 
 Which vessel drains liver blood into systemic venous circulation? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Portal means blood reaches a second capillary bed before returning to the heart.
+1. Answer: Hepatic vein. Portal means blood reaches a second capillary bed before returning to the heart.
 2. Gut capillaries drain into portal tributaries, the portal vein feeds hepatic sinusoids, and hepatic veins drain into the inferior vena cava. Portal-systemic connections provide alternate venous routes when portal pressure rises. They are not arterial shunts.
 3. Rectal venous anastomoses exist, but common hemorrhoidal disease should not be equated automatically with portal hypertension or rectal varices.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Hepatic vein. Portal means blood reaches a second capillary bed before returning to the heart. Gut capillaries drain into portal tributaries, the portal vein feeds hepatic sinusoids, and hepatic veins drain into the inferior vena cava. Portal-systemic connections provide alternate venous routes when portal pressure rises. They are not arterial shunts. Rectal venous anastomoses exist, but common hemorrhoidal disease should not be equated automatically with portal hypertension or rectal varices.
+1. Hepatic vein. Answer: Hepatic vein. Portal means blood reaches a second capillary bed before returning to the heart. Gut capillaries drain into portal tributaries, the portal vein feeds hepatic sinusoids, and hepatic veins drain into the inferior vena cava. Portal-systemic connections provide alternate venous routes when portal pressure rises. They are not arterial shunts. Rectal venous anastomoses exist, but common hemorrhoidal disease should not be equated automatically with portal hypertension or rectal varices.
 
 2. Portal vein enters the liver and branches toward sinusoids, bringing blood from abdominal digestive territories and associated organs. Hepatic veins collect blood after sinusoidal passage and leave for the inferior vena cava. Hepatic artery also enters but provides a different inflow source. Drawing both portal and hepatic veins as equivalent exits reverses the circuit. To check a diagram, follow one red cell from intestinal capillary to heart and ensure that it passes through liver microcirculation before entering systemic venous return.
 
@@ -97,7 +97,7 @@ Lower esophagus: left gastric vein with azygos system. Around umbilicus: paraumb
 
 Explain portal venous routes and systemic connections using the main anatomical relationships, then justify your answer to: Which vessel drains liver blood into systemic venous circulation?
 
-Portal means blood reaches a second capillary bed before returning to the heart. Gut capillaries drain into portal tributaries, the portal vein feeds hepatic sinusoids, and hepatic veins drain into the inferior vena cava. Portal-systemic connections provide alternate venous routes when portal pressure rises. They are not arterial shunts. Rectal venous anastomoses exist, but common hemorrhoidal disease should not be equated automatically with portal hypertension or rectal varices.
+Answer: Hepatic vein. Portal means blood reaches a second capillary bed before returning to the heart. Gut capillaries drain into portal tributaries, the portal vein feeds hepatic sinusoids, and hepatic veins drain into the inferior vena cava. Portal-systemic connections provide alternate venous routes when portal pressure rises. They are not arterial shunts. Rectal venous anastomoses exist, but common hemorrhoidal disease should not be equated automatically with portal hypertension or rectal varices.
 
 ## Sources and editorial record
 

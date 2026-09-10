@@ -35,7 +35,7 @@ The deep acetabulum and labrum provide bony and fibrocartilaginous stability, wh
 
 Which vessels provide the major adult femoral-head supply in the usual pattern? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension.
+1. Answer: Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension.
 2. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply.
 3. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship.
+1. Retinacular branches chiefly from medial circumflex femoral artery. Answer: Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship.
 
 2. The spiral arrangement of the iliofemoral, pubofemoral and ischiofemoral supports tends to tighten with extension, limiting excessive movement and helping stabilize standing with reduced muscular effort. Flexion relaxes parts of this capsular arrangement and permits greater mobility. This mechanical pattern differs from the shoulder's reliance on dynamic muscular centering around a shallow socket. The ligament of the head lies within the joint region but is not the principal adult restraint replacing those capsular supports.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain hip joint stability and femoral head supply using the main anatomical relationships, then justify your answer to: Which vessels provide the major adult femoral-head supply in the usual pattern?
 
-The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship.
+Answer: Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ Articular cartilage reduces friction and distributes load, while the fibrous cap
 
 Does synovial membrane normally cover articular cartilage? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.
+1. Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.
 2. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity.
 3. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation.
+1. No; it lines non-articular internal capsular surfaces. Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation.
 
 2. Articular cartilage is avascular and depends substantially on diffusion from the synovial environment, assisted by changing compression and fluid movement during loading. Its matrix distributes force across the joint surfaces while maintaining a low-friction interface. The underlying subchondral bone supports it mechanically but is a distinct tissue. This explains why cartilage, synovium and bone respond differently to injury. A joint section should show all three rather than treating the smooth articular covering as simply exposed bone.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain synovial joint design and movement using the main anatomical relationships, then justify your answer to: Does synovial membrane normally cover articular cartilage?
 
-Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation.
+Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation.
 
 ## Sources and editorial record
 

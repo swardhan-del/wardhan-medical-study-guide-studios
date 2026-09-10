@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "An organ is largely invested by visceral peritoneum",
-          "reason": "The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+          "reason": "Answer: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
         },
         {
           "text": "The organ floats inside the fluid-filled peritoneal cavity",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain peritoneum and organ position using the main anatomical relationships, then justify your answer to: What does intraperitoneal mean?",
-      "answer": "The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+      "answer": "Answer: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
     },
     "related": [
       "inguinal-canal-relations",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What does intraperitoneal mean? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The cavity is the narrow potential space between serosal surfaces.",
+        "Answer: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces.",
         "An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ.",
         "Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
       ]

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Femoral nerve",
-          "reason": "The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal. The sheath encloses arterial, venous and canal compartments but excludes the nerve. The canal allows venous expansion and contains lymphatic tissue; its ring lies medial to the vein. In the adductor canal, the femoral vessels proceed toward the hiatus, while the saphenous nerve leaves without passing through it. A shared route proximally does not guarantee a shared distal exit."
+          "reason": "Answer: Femoral nerve. The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal. The sheath encloses arterial, venous and canal compartments but excludes the nerve. The canal allows venous expansion and contains lymphatic tissue; its ring lies medial to the vein. In the adductor canal, the femoral vessels proceed toward the hiatus, while the saphenous nerve leaves without passing through it. A shared route proximally does not guarantee a shared distal exit."
         },
         {
           "text": "Femoral artery",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain femoral triangle, sheath and adductor canal using the main anatomical relationships, then justify your answer to: Which structure lies outside the femoral sheath?",
-      "answer": "The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal. The sheath encloses arterial, venous and canal compartments but excludes the nerve. The canal allows venous expansion and contains lymphatic tissue; its ring lies medial to the vein. In the adductor canal, the femoral vessels proceed toward the hiatus, while the saphenous nerve leaves without passing through it. A shared route proximally does not guarantee a shared distal exit."
+      "answer": "Answer: Femoral nerve. The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal. The sheath encloses arterial, venous and canal compartments but excludes the nerve. The canal allows venous expansion and contains lymphatic tissue; its ring lies medial to the vein. In the adductor canal, the femoral vessels proceed toward the hiatus, while the saphenous nerve leaves without passing through it. A shared route proximally does not guarantee a shared distal exit."
     },
     "related": [
       "thigh-compartments",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which structure lies outside the femoral sheath? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal.",
+        "Answer: Femoral nerve. The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal.",
         "The sheath encloses arterial, venous and canal compartments but excludes the nerve. The canal allows venous expansion and contains lymphatic tissue; its ring lies medial to the vein. In the adductor canal, the femoral vessels proceed toward the hiatus, while the saphenous nerve leaves without passing through it.",
         "A shared route proximally does not guarantee a shared distal exit."
       ]

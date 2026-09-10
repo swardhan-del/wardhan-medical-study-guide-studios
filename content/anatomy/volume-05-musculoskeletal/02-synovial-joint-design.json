@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "No; it lines non-articular internal capsular surfaces",
-          "reason": "Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+          "reason": "Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
         },
         {
           "text": "Yes; it covers the entire cartilage surface",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain synovial joint design and movement using the main anatomical relationships, then justify your answer to: Does synovial membrane normally cover articular cartilage?",
-      "answer": "Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+      "answer": "Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
     },
     "related": [
       "bones-and-connections",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Does synovial membrane normally cover articular cartilage? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.",
+        "Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.",
         "Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity.",
         "Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
       ]

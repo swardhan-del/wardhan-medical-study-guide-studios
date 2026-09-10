@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Right ventricle",
-          "reason": "The heart is oblique, so chamber names do not translate directly into front-back positions. The right ventricle is mainly anterior, the left atrium contributes most of the posterior base, and the left ventricle forms the apex. The esophagus lies behind the left atrium. Internally, atrial pectinate muscles differ from ventricular trabeculae carneae; the right atrium has a crista terminalis separating smooth and rough regions. Use external position and internal texture together to identify a chamber."
+          "reason": "Answer: Right ventricle. The heart is oblique, so chamber names do not translate directly into front-back positions. The right ventricle is mainly anterior, the left atrium contributes most of the posterior base, and the left ventricle forms the apex. The esophagus lies behind the left atrium. Internally, atrial pectinate muscles differ from ventricular trabeculae carneae; the right atrium has a crista terminalis separating smooth and rough regions. Use external position and internal texture together to identify a chamber."
         },
         {
           "text": "Left atrium",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain chambers and internal landmarks using the main anatomical relationships, then justify your answer to: Which chamber forms most of the sternocostal surface?",
-      "answer": "The heart is oblique, so chamber names do not translate directly into front-back positions. The right ventricle is mainly anterior, the left atrium contributes most of the posterior base, and the left ventricle forms the apex. The esophagus lies behind the left atrium. Internally, atrial pectinate muscles differ from ventricular trabeculae carneae; the right atrium has a crista terminalis separating smooth and rough regions. Use external position and internal texture together to identify a chamber."
+      "answer": "Answer: Right ventricle. The heart is oblique, so chamber names do not translate directly into front-back positions. The right ventricle is mainly anterior, the left atrium contributes most of the posterior base, and the left ventricle forms the apex. The esophagus lies behind the left atrium. Internally, atrial pectinate muscles differ from ventricular trabeculae carneae; the right atrium has a crista terminalis separating smooth and rough regions. Use external position and internal texture together to identify a chamber."
     },
     "related": [
       "pericardium-sinuses",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which chamber forms most of the sternocostal surface? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The heart is oblique, so chamber names do not translate directly into front-back positions.",
+        "Answer: Right ventricle. The heart is oblique, so chamber names do not translate directly into front-back positions.",
         "The right ventricle is mainly anterior, the left atrium contributes most of the posterior base, and the left ventricle forms the apex. The esophagus lies behind the left atrium. Internally, atrial pectinate muscles differ from ventricular trabeculae carneae; the right atrium has a crista terminalis separating smooth and rough regions.",
         "Use external position and internal texture together to identify a chamber."
       ]

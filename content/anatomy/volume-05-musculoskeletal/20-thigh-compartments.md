@@ -35,7 +35,7 @@ Compartment rules connect action and innervation: anterior thigh largely uses fe
 
 Which part of biceps femoris receives common fibular division supply? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions.
+1. Answer: Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions.
 2. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip.
 3. Crossing one joint or two predicts which movements a muscle can influence.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence.
+1. Short head. Answer: Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence.
 
 2. Most hamstrings arise from the ischial tuberosity and cross both hip and knee, allowing hip extension and knee flexion depending on fixation. Their rotational effects at a flexed knee differ with medial versus lateral insertions. The short head of biceps crosses only the knee, so it cannot extend the hip despite joining the same distal tendon complex. This exception illustrates why attachments are more informative than a group name alone. Innervation divisions reinforce, but do not replace, the attachment-based explanation.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain thigh compartments and muscle actions using the main anatomical relationships, then justify your answer to: Which part of biceps femoris receives common fibular division supply?
 
-Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence.
+Answer: Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence.
 
 ## Sources and editorial record
 

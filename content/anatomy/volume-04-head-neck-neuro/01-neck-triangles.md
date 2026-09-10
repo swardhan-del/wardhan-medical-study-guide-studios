@@ -39,7 +39,7 @@ Surface triangles organize access to deeper structures; they are not walled comp
 
 Which muscle separates the anterior and posterior neck triangles? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Surface triangles organize access to deeper structures; they are not walled compartments.
+1. Answer: Sternocleidomastoid. Surface triangles organize access to deeper structures; they are not walled compartments.
 2. The anterior triangle is subdivided by digastric and omohyoid muscles, while the inferior belly of omohyoid divides the posterior triangle. The accessory nerve crosses the posterior triangle toward trapezius. Cutaneous cervical plexus branches emerge near the posterior border of sternocleidomastoid, whereas the phrenic nerve descends on anterior scalene deeper in the neck.
 3. Learn depth as well as surface outline.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Sternocleidomastoid. Surface triangles organize access to deeper structures; they are not walled compartments. The anterior triangle is subdivided by digastric and omohyoid muscles, while the inferior belly of omohyoid divides the posterior triangle. The accessory nerve crosses the posterior triangle toward trapezius. Cutaneous cervical plexus branches emerge near the posterior border of sternocleidomastoid, whereas the phrenic nerve descends on anterior scalene deeper in the neck. Learn depth as well as surface outline.
+1. Sternocleidomastoid. Answer: Sternocleidomastoid. Surface triangles organize access to deeper structures; they are not walled compartments. The anterior triangle is subdivided by digastric and omohyoid muscles, while the inferior belly of omohyoid divides the posterior triangle. The accessory nerve crosses the posterior triangle toward trapezius. Cutaneous cervical plexus branches emerge near the posterior border of sternocleidomastoid, whereas the phrenic nerve descends on anterior scalene deeper in the neck. Learn depth as well as surface outline.
 
 2. After supplying sternocleidomastoid, the spinal accessory nerve crosses the posterior triangle relatively superficially toward trapezius. Weakness of trapezius can impair scapular elevation and upward rotation, even though the nerve passes through a neck region. This links a local neck course to shoulder function. By contrast, nearby cervical plexus cutaneous branches serve skin and do not replace accessory motor supply. A triangle map should therefore include both the route and the distant muscle action that makes the route functionally important.
 
@@ -97,7 +97,7 @@ Anterior triangle lies between midline, mandible, and anterior border of sternoc
 
 Explain neck triangles and surface orientation using the main anatomical relationships, then justify your answer to: Which muscle separates the anterior and posterior neck triangles?
 
-Surface triangles organize access to deeper structures; they are not walled compartments. The anterior triangle is subdivided by digastric and omohyoid muscles, while the inferior belly of omohyoid divides the posterior triangle. The accessory nerve crosses the posterior triangle toward trapezius. Cutaneous cervical plexus branches emerge near the posterior border of sternocleidomastoid, whereas the phrenic nerve descends on anterior scalene deeper in the neck. Learn depth as well as surface outline.
+Answer: Sternocleidomastoid. Surface triangles organize access to deeper structures; they are not walled compartments. The anterior triangle is subdivided by digastric and omohyoid muscles, while the inferior belly of omohyoid divides the posterior triangle. The accessory nerve crosses the posterior triangle toward trapezius. Cutaneous cervical plexus branches emerge near the posterior border of sternocleidomastoid, whereas the phrenic nerve descends on anterior scalene deeper in the neck. Learn depth as well as surface outline.
 
 ## Sources and editorial record
 

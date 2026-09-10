@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Subarachnoid space",
-          "reason": "Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms."
+          "reason": "Answer: Subarachnoid space. Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms."
         },
         {
           "text": "Between the two cranial dural layers everywhere",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain meninges, dural folds and intracranial spaces using the main anatomical relationships, then justify your answer to: Where does CSF normally surround the brain?",
-      "answer": "Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms."
+      "answer": "Answer: Subarachnoid space. Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms."
     },
     "related": [
       "cranial-parasympathetics",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Where does CSF normally surround the brain? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Dura forms folds supporting and separating brain regions.",
+        "Answer: Subarachnoid space. Dura forms folds supporting and separating brain regions.",
         "Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate.",
         "Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms."
       ]

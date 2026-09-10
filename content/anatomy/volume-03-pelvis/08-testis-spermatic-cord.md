@@ -39,7 +39,7 @@ The testis develops high on the posterior abdominal wall and retains abdominal v
 
 Where does testicular lymph primarily drain? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.
+1. Answer: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.
 2. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content.
 3. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions.
+1. Lumbar para-aortic nodes. Answer: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions.
 
 2. The pampiniform venous plexus surrounds incoming arterial channels and supports countercurrent heat exchange, reducing the temperature of arterial blood approaching the testis. Cremaster changes testicular position relative to the body, while dartos alters scrotal skin configuration. These mechanisms operate together and do not replace the need for vascular perfusion. The plexus eventually drains to testicular veins, with the right typically entering IVC and the left entering left renal vein. Venous drainage asymmetry is separate from the bilateral arterial origin from aorta.
 
@@ -97,7 +97,7 @@ Testis has superior and inferior poles, medial/lateral surfaces, anterior/poster
 
 Explain testis, scrotum and spermatic cord using the main anatomical relationships, then justify your answer to: Where does testicular lymph primarily drain?
 
-The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions.
+Answer: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions.
 
 ## Sources and editorial record
 

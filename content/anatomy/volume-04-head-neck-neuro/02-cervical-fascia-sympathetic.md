@@ -39,7 +39,7 @@ The vagus lies posteriorly between the main vascular elements of the sheath; the
 
 Which nerve lies within the carotid sheath with the artery and internal jugular vein? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it.
+1. Answer: Vagus nerve. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it.
 2. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum.
 3. Do not merge every posterior pharyngeal space into one cavity.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Vagus nerve. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity.
+1. Vagus nerve. Answer: Vagus nerve. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity.
 
 2. Descending central pathways connect to upper thoracic sympathetic neurons, whose axons ascend to the superior cervical ganglion. Postganglionic fibers then reach ocular smooth-muscle targets along carotid-associated routes. Interruption can produce miosis and mild ptosis through loss of dilator and superior tarsal muscle activity. This is different from a III lesion affecting skeletal levator function and pupillary constriction pathways. Anhidrosis depends on lesion location because sudomotor fibers diverge along different arterial routes.
 
@@ -97,7 +97,7 @@ Investing fascia surrounds sternocleidomastoid and trapezius. Pretracheal fascia
 
 Explain cervical fascia, carotid sheath and sympathetic trunk using the main anatomical relationships, then justify your answer to: Which nerve lies within the carotid sheath with the artery and internal jugular vein?
 
-The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity.
+Answer: Vagus nerve. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity.
 
 ## Sources and editorial record
 

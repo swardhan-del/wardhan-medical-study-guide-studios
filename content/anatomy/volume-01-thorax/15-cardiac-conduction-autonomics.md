@@ -35,7 +35,7 @@ The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV
 
 What is the normal electrical bridge across the cardiac fibrous skeleton? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.
+1. Answer: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.
 2. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band.
 3. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction.
+1. AV bundle. Answer: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction.
 
 2. Cardiac pacemaker and conduction cells have intrinsic electrical properties that generate and distribute impulses. Sympathetic and parasympathetic inputs modify those properties, changing rate and conduction rather than triggering each contraction through a somatic neuromuscular junction. The myocardium then contracts through excitation-contraction coupling. This explains why the anatomical conduction system remains central even when autonomic influence changes. Distinguish pacemaker initiation, conduction timing and contractile response rather than treating them as one electrical event.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain conduction and autonomic modulation using the main anatomical relationships, then justify your answer to: What is the normal electrical bridge across the cardiac fibrous skeleton?
 
-The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction.
+Answer: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction.
 
 ## Sources and editorial record
 

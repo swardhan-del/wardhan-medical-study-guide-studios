@@ -45,7 +45,7 @@ Anteversion compares the cervix with the vagina; anteflexion compares the uterin
 
 Which relation is especially important beside the cervix? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix.
+1. Answer: Uterine artery crosses superior to the ureter. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix.
 2. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically.
 3. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Uterine artery crosses superior to the ureter. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament.
+1. Uterine artery crosses superior to the ureter. Answer: Uterine artery crosses superior to the ureter. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament.
 
 2. Version compares the cervical or uterine orientation with the vaginal axis; flexion compares the body with the cervix. A uterus can therefore change one angle without the same change in the other. The usual anteverted, anteflexed pattern is common but not obligatory. Bladder filling, support and individual anatomy influence position. A sagittal sketch should include vagina, cervix and body as separate segments, otherwise two different spatial relationships collapse into the vague statement that the uterus points forward.
 
@@ -103,7 +103,7 @@ Anteversion: cervix/uterus axis inclines forward relative to vagina. Anteflexion
 
 Explain uterus, supports and uterine vessel relations using the main anatomical relationships, then justify your answer to: Which relation is especially important beside the cervix?
 
-Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament.
+Answer: Uterine artery crosses superior to the ureter. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament.
 
 ## Sources and editorial record
 

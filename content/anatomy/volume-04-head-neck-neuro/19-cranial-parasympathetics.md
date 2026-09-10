@@ -35,7 +35,7 @@ Autonomic and sensory ganglia have different jobs. The four named cranial parasy
 
 Where do parotid secretomotor fibers synapse? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Autonomic and sensory ganglia have different jobs.
+1. Answer: Otic ganglion. Autonomic and sensory ganglia have different jobs.
 2. The four named cranial parasympathetic ganglia are ciliary, pterygopalatine, submandibular and otic. Preganglionic fibers arise with III, VII or IX and synapse there; postganglionic fibers often travel with trigeminal branches. Passing through or alongside a sensory ganglion does not make it the autonomic synapse.
 3. Vagus generally uses ganglia near or within its distant target organs rather than one of these four head ganglia.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Otic ganglion. Autonomic and sensory ganglia have different jobs. The four named cranial parasympathetic ganglia are ciliary, pterygopalatine, submandibular and otic. Preganglionic fibers arise with III, VII or IX and synapse there; postganglionic fibers often travel with trigeminal branches. Passing through or alongside a sensory ganglion does not make it the autonomic synapse. Vagus generally uses ganglia near or within its distant target organs rather than one of these four head ganglia.
+1. Otic ganglion. Answer: Otic ganglion. Autonomic and sensory ganglia have different jobs. The four named cranial parasympathetic ganglia are ciliary, pterygopalatine, submandibular and otic. Preganglionic fibers arise with III, VII or IX and synapse there; postganglionic fibers often travel with trigeminal branches. Passing through or alongside a sensory ganglion does not make it the autonomic synapse. Vagus generally uses ganglia near or within its distant target organs rather than one of these four head ganglia.
 
 2. Postganglionic autonomic fibers use existing peripheral routes to reach targets. For example, parotid fibers arise through IX, synapse in the otic ganglion and then travel with auriculotemporal V3 branches. The branch serves as a carrier rather than the original source of those fibers. Likewise, sensory fibers may pass near an autonomic ganglion without synapsing there. A complete pathway should label origin, fiber type before and after the synapse, ganglion and final carrier.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain cranial parasympathetic ganglia using the main anatomical relationships, then justify your answer to: Where do parotid secretomotor fibers synapse?
 
-Autonomic and sensory ganglia have different jobs. The four named cranial parasympathetic ganglia are ciliary, pterygopalatine, submandibular and otic. Preganglionic fibers arise with III, VII or IX and synapse there; postganglionic fibers often travel with trigeminal branches. Passing through or alongside a sensory ganglion does not make it the autonomic synapse. Vagus generally uses ganglia near or within its distant target organs rather than one of these four head ganglia.
+Answer: Otic ganglion. Autonomic and sensory ganglia have different jobs. The four named cranial parasympathetic ganglia are ciliary, pterygopalatine, submandibular and otic. Preganglionic fibers arise with III, VII or IX and synapse there; postganglionic fibers often travel with trigeminal branches. Passing through or alongside a sensory ganglion does not make it the autonomic synapse. Vagus generally uses ganglia near or within its distant target organs rather than one of these four head ganglia.
 
 ## Sources and editorial record
 

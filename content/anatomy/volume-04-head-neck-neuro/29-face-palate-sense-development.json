@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Surface ectoderm",
-          "reason": "Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+          "reason": "Answer: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
         },
         {
           "text": "Optic-cup neural retina",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain development of face, palate and special senses using the main anatomical relationships, then justify your answer to: Which embryonic source forms the lens?",
-      "answer": "Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+      "answer": "Answer: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
     },
     "related": [
       "pharyngeal-arch-development",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which embryonic source forms the lens? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Inductive interactions connect tissues with different origins.",
+        "Answer: Surface ectoderm. Inductive interactions connect tissues with different origins.",
         "The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation.",
         "A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
       ]

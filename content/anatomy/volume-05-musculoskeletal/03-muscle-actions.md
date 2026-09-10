@@ -35,7 +35,7 @@ A muscle produces torque according to force and moment arm. A large physiologica
 
 Why can a muscle's action change with joint position? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. A muscle produces torque according to force and moment arm.
+1. Answer: Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm.
 2. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities.
 3. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name.
+1. Its line of pull relative to the axis changes. Answer: Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name.
 
 2. A muscle's effect depends on which segment is fixed, the direction of external load and simultaneous activity of other muscles. During one movement it may shorten to rotate a bone; during another it may act isometrically to hold an attachment stable. Antagonists can co-contract to improve joint control. Origin and insertion labels describe conventional attachments but do not require one end to remain fixed in every task. Predict action from geometry and conditions, then compare that prediction with the familiar textbook action.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain muscle architecture, actions and innervation using the main anatomical relationships, then justify your answer to: Why can a muscle's action change with joint position?
 
-A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name.
+Answer: Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name.
 
 ## Sources and editorial record
 

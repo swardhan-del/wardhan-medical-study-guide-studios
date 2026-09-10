@@ -39,7 +39,7 @@ A plexus mixes fibers with different directions and functions. Sympathetic effer
 
 What carries parasympathetic fibers to the hindgut? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. A plexus mixes fibers with different directions and functions.
+1. Answer: Pelvic splanchnic nerves S2-S4. A plexus mixes fibers with different directions and functions.
 2. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes.
 3. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Pelvic splanchnic nerves S2-S4. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable.
+1. Pelvic splanchnic nerves S2-S4. Answer: Pelvic splanchnic nerves S2-S4. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable.
 
 2. Many sympathetic preganglionic fibers reach prevertebral ganglia, after which postganglionic fibers follow arterial routes to viscera. Parasympathetic fibers generally synapse near or within the organ in enteric or terminal ganglia. Enteric circuits coordinate local motility and secretion while receiving autonomic modulation. Thus a plexus near an artery contains a mixture of passing fibers and ganglionic structures rather than one uniform neuron type. Sensory afferents returning from viscera must be kept distinct from either autonomic motor pathway.
 
@@ -97,7 +97,7 @@ Foregut lymph drains toward celiac nodes. Midgut lymph drains toward superior me
 
 Explain abdominal lymphatics and autonomic pathways using the main anatomical relationships, then justify your answer to: What carries parasympathetic fibers to the hindgut?
 
-A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable.
+Answer: Pelvic splanchnic nerves S2-S4. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable.
 
 ## Sources and editorial record
 

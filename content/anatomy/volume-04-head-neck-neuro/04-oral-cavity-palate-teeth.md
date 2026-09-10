@@ -45,7 +45,7 @@ The vestibule lies between lips or cheeks and teeth, whereas the oral cavity pro
 
 Where does the parotid duct open? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches.
+1. Answer: Oral vestibule opposite the upper second molar. The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches.
 2. This distinction localizes duct openings: parotid opens into the vestibule, submandibular into the floor of the cavity proper. Hard palate separates oral and nasal cavities; soft palate moves during swallowing. Maxillary teeth receive V2 branches and mandibular teeth V3 branches.
 3. Motor supply to palate is chiefly vagal, with tensor veli palatini supplied by V3.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Oral vestibule opposite the upper second molar. The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches. This distinction localizes duct openings: parotid opens into the vestibule, submandibular into the floor of the cavity proper. Hard palate separates oral and nasal cavities; soft palate moves during swallowing. Maxillary teeth receive V2 branches and mandibular teeth V3 branches. Motor supply to palate is chiefly vagal, with tensor veli palatini supplied by V3.
+1. Oral vestibule opposite the upper second molar. Answer: Oral vestibule opposite the upper second molar. The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches. This distinction localizes duct openings: parotid opens into the vestibule, submandibular into the floor of the cavity proper. Hard palate separates oral and nasal cavities; soft palate moves during swallowing. Maxillary teeth receive V2 branches and mandibular teeth V3 branches. Motor supply to palate is chiefly vagal, with tensor veli palatini supplied by V3.
 
 2. Mylohyoid forms a muscular sling beneath the oral floor, with geniohyoid and tongue structures above it. Depending on fixation, suprahyoid contraction can elevate the hyoid or help depress the mandible. The submandibular duct and lingual nerve have close relationships in this region, while the hypoglossal nerve supplies tongue motor function. A floor-of-mouth diagram should distinguish muscle, duct and sensory nerve rather than treating every cord-like structure as the same kind of pathway.
 
@@ -103,7 +103,7 @@ Roof: hard and soft palate. Floor: mylohyoid, geniohyoid, tongue, and mucosa of 
 
 Explain oral cavity, palate and teeth using the main anatomical relationships, then justify your answer to: Where does the parotid duct open?
 
-The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches. This distinction localizes duct openings: parotid opens into the vestibule, submandibular into the floor of the cavity proper. Hard palate separates oral and nasal cavities; soft palate moves during swallowing. Maxillary teeth receive V2 branches and mandibular teeth V3 branches. Motor supply to palate is chiefly vagal, with tensor veli palatini supplied by V3.
+Answer: Oral vestibule opposite the upper second molar. The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches. This distinction localizes duct openings: parotid opens into the vestibule, submandibular into the floor of the cavity proper. Hard palate separates oral and nasal cavities; soft palate moves during swallowing. Maxillary teeth receive V2 branches and mandibular teeth V3 branches. Motor supply to palate is chiefly vagal, with tensor veli palatini supplied by V3.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ Intrinsic back muscles retain segmental posterior-ramus supply and act on the ve
 
 Which rami primarily supply intrinsic back muscles? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Intrinsic back muscles retain segmental posterior-ramus supply and act on the vertebral column.
+1. Answer: Posterior rami of spinal nerves. Intrinsic back muscles retain segmental posterior-ramus supply and act on the vertebral column.
 2. Extrinsic muscles such as trapezius and latissimus move the shoulder girdle or humerus and have different innervation. Bilateral contraction can extend the spine, while unilateral action depends on fiber direction and may produce rotation or lateral flexion. Do not assume every muscle visible on the back is an intrinsic back muscle.
 3. Depth and attachment help separate the groups.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Posterior rami of spinal nerves. Intrinsic back muscles retain segmental posterior-ramus supply and act on the vertebral column. Extrinsic muscles such as trapezius and latissimus move the shoulder girdle or humerus and have different innervation. Bilateral contraction can extend the spine, while unilateral action depends on fiber direction and may produce rotation or lateral flexion. Do not assume every muscle visible on the back is an intrinsic back muscle. Depth and attachment help separate the groups.
+1. Posterior rami of spinal nerves. Answer: Posterior rami of spinal nerves. Intrinsic back muscles retain segmental posterior-ramus supply and act on the vertebral column. Extrinsic muscles such as trapezius and latissimus move the shoulder girdle or humerus and have different innervation. Bilateral contraction can extend the spine, while unilateral action depends on fiber direction and may produce rotation or lateral flexion. Do not assume every muscle visible on the back is an intrinsic back muscle. Depth and attachment help separate the groups.
 
 2. Transversospinalis muscles run from transverse processes toward spinous processes at higher levels, so unilateral contraction tends to rotate segments toward the opposite side while bilateral activity contributes to extension and stabilization. Erector spinae has a more longitudinal arrangement supporting extension and lateral flexion. Actual movement is coordinated across many small segments and muscles. A deep muscle may primarily stabilize rather than produce a large visible movement. Its short span and posterior-ramus supply help distinguish it from superficial shoulder movers.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain back muscle layers and segmental innervation using the main anatomical relationships, then justify your answer to: Which rami primarily supply intrinsic back muscles?
 
-Intrinsic back muscles retain segmental posterior-ramus supply and act on the vertebral column. Extrinsic muscles such as trapezius and latissimus move the shoulder girdle or humerus and have different innervation. Bilateral contraction can extend the spine, while unilateral action depends on fiber direction and may produce rotation or lateral flexion. Do not assume every muscle visible on the back is an intrinsic back muscle. Depth and attachment help separate the groups.
+Answer: Posterior rami of spinal nerves. Intrinsic back muscles retain segmental posterior-ramus supply and act on the vertebral column. Extrinsic muscles such as trapezius and latissimus move the shoulder girdle or humerus and have different innervation. Bilateral contraction can extend the spine, while unilateral action depends on fiber direction and may produce rotation or lateral flexion. Do not assume every muscle visible on the back is an intrinsic back muscle. Depth and attachment help separate the groups.
 
 ## Sources and editorial record
 

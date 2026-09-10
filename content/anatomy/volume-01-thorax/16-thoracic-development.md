@@ -35,7 +35,7 @@ The respiratory diverticulum grows from ventral foregut, with surrounding mesode
 
 Which tissue forms most lower respiratory epithelium? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.
+1. Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.
 2. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth.
 3. The consequence is not merely an abnormal opening but altered development of the space available to the lung.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung.
+1. Foregut endoderm. Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung.
 
 2. If abdominal contents occupy thoracic space during development, the growing lungs can have reduced room and altered vascular development. The consequence can therefore include pulmonary hypoplasia rather than merely an unusual adult arrangement of otherwise normal organs. Defect position, timing and extent matter. The traditional diaphragm component map helps explain common posterolateral locations, while respiratory maturation describes a separate but interacting process. A complete developmental account connects the partition defect with its effect on neighboring tissues.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain respiratory and diaphragmatic development using the main anatomical relationships, then justify your answer to: Which tissue forms most lower respiratory epithelium?
 
-The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung.
+Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung.
 
 ## Sources and editorial record
 

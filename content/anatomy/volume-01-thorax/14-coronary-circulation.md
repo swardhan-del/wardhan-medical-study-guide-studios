@@ -35,7 +35,7 @@ The coronary arteries arise from the aortic sinuses and distribute across the ep
 
 What defines conventional coronary dominance? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium.
+1. Answer: Origin of the posterior interventricular artery. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium.
 2. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes.
 3. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Origin of the posterior interventricular artery. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart.
+1. Origin of the posterior interventricular artery. Answer: Origin of the posterior interventricular artery. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart.
 
 2. During systole, contracting left ventricular myocardium compresses intramural vessels, limiting flow particularly in deeper layers. During diastole the muscle relaxes while aortic pressure continues to drive coronary inflow. This links coronary anatomy to the cardiac cycle without making all coronary flow exclusively diastolic or identical in both ventricles. Epicardial arterial position, intramural compression and aortic driving pressure are separate parts of the explanation. Dominance describes branching origin, not the phase in which flow occurs.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain coronary arteries and venous return using the main anatomical relationships, then justify your answer to: What defines conventional coronary dominance?
 
-The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart.
+Answer: Origin of the posterior interventricular artery. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart.
 
 ## Sources and editorial record
 

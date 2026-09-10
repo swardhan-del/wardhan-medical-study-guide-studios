@@ -39,7 +39,7 @@ Sclerotome cells surround the notochord and neural tube, then resegment so adjac
 
 What forms the nucleus pulposus in the classic developmental account? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra.
+1. Answer: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra.
 2. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins.
 3. Avoid applying one germ-layer rule to every skull bone.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone.
+1. Notochordal tissue. Answer: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone.
 
 2. Combining adjacent sclerotome halves places developing vertebral bodies out of register with the original somite segments. Muscles can then span joints between vertebrae, while segmental nerves emerge through intervertebral regions. The disc occupies a distinct boundary area with annular mesenchyme around notochord-associated tissue. A drawing with one somite becoming one entire vertebra misses this relationship. Follow two neighboring segments through the rearrangement and label muscle and nerve positions alongside the skeletal elements.
 
@@ -97,7 +97,7 @@ Neurocranium: frontal, parietal, temporal, occipital, sphenoid, ethmoid. Viscero
 
 Explain vertebral and skull development using the main anatomical relationships, then justify your answer to: What forms the nucleus pulposus in the classic developmental account?
 
-Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone.
+Answer: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone.
 
 ## Sources and editorial record
 

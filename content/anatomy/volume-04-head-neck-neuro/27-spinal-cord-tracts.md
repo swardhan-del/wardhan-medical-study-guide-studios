@@ -35,7 +35,7 @@ Dorsal columns carry discriminative touch, vibration and conscious proprioceptio
 
 Where do dorsal-column body sensory fibers first cross in the classic pathway? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.
+1. Answer: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.
 2. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion.
 3. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther.
+1. Medulla after synapsing in gracile or cuneate nuclei. Answer: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther.
 
 2. During growth the vertebral column lengthens more than the spinal cord. Lower cord segments therefore lie above the correspondingly named vertebrae, and their roots descend within the canal before exiting. The conus is the tapering cord end, while cauda equina consists of roots below it. A vertebral injury can affect a different segment than its bone number suggests. Distinguish bone, cord segment and exiting root labels on the same diagram before predicting a neurological distribution.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain spinal cord, meninges and long pathways using the main anatomical relationships, then justify your answer to: Where do dorsal-column body sensory fibers first cross in the classic pathway?
 
-Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther.
+Answer: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther.
 
 ## Sources and editorial record
 

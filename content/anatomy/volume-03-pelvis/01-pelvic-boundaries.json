@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Pelvic brim",
-          "reason": "The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane."
+          "reason": "Answer: Pelvic brim. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane."
         },
         {
           "text": "Perineal membrane",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain pelvic inlet, outlet and walls using the main anatomical relationships, then justify your answer to: Which structure separates the greater from the lesser pelvis?",
-      "answer": "The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane."
+      "answer": "Answer: Pelvic brim. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane."
     },
     "related": [
       "pelvic-floor-support",
@@ -75,7 +75,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which structure separates the greater from the lesser pelvis? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them.",
+        "Answer: Pelvic brim. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them.",
         "The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal.",
         "Place the ischial spines between inlet and outlet to understand the midpelvic plane."
       ]

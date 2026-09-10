@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Posterior to the neck",
-          "reason": "Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+          "reason": "Answer: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
         },
         {
           "text": "Anterior to the neck",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain pancreas and its duct relationships using the main anatomical relationships, then justify your answer to: Where is the portal vein formed relative to the pancreatic neck?",
-      "answer": "Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+      "answer": "Answer: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
     },
     "related": [
       "biliary-pathways",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Where is the portal vein formed relative to the pancreatic neck? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Use the neck as the reference plane.",
+        "Answer: Posterior to the neck. Use the neck as the reference plane.",
         "The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum.",
         "These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
       ]

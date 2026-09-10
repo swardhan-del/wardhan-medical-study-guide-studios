@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Internal pudendal artery",
-          "reason": "Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint."
+          "reason": "Answer: Internal pudendal artery. Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint."
         },
         {
           "text": "External iliac artery",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain pelvic vessels and lymphatic drainage using the main anatomical relationships, then justify your answer to: Which vessel primarily supplies the perineum after leaving and re-entering through the sciatic foramina?",
-      "answer": "Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint."
+      "answer": "Answer: Internal pudendal artery. Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint."
     },
     "related": [
       "pelvic-foramina-nerves",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which vessel primarily supplies the perineum after leaving and re-entering through the sciatic foramina? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Internal iliac branching is variable, so start with territories and then learn the usual named branches.",
+        "Answer: Internal pudendal artery. Internal iliac branching is variable, so start with territories and then learn the usual named branches.",
         "Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development.",
         "Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint."
       ]

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Short head",
-          "reason": "Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence."
+          "reason": "Answer: Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence."
         },
         {
           "text": "Long head only",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain thigh compartments and muscle actions using the main anatomical relationships, then justify your answer to: Which part of biceps femoris receives common fibular division supply?",
-      "answer": "Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence."
+      "answer": "Answer: Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence."
     },
     "related": [
       "gluteal-region",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which part of biceps femoris receives common fibular division supply? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions.",
+        "Answer: Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions.",
         "Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip.",
         "Crossing one joint or two predicts which movements a muscle can influence."
       ]

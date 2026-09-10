@@ -35,7 +35,7 @@ Passing through a gland does not mean innervating its secretion. Facial motor br
 
 Which cranial nerve supplies the preganglionic parasympathetic pathway to parotid? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Passing through a gland does not mean innervating its secretion.
+1. Answer: Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion.
 2. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion.
 3. Distinguish preganglionic source, synapse and postganglionic carrier.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier.
+1. Glossopharyngeal IX. Answer: Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier.
 
 2. The lingual nerve changes its relationship as it loops around the duct in the floor of the mouth. A single statement such as medial or lateral is incomplete unless the point along the route is specified. The nerve carries general sensory fibers from V3 and associated chorda-tympani taste and parasympathetic fibers, while the duct carries saliva. Following each structure continuously explains how they can cross without becoming the same pathway or sharing the same origin.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain salivary glands and their nerve routes using the main anatomical relationships, then justify your answer to: Which cranial nerve supplies the preganglionic parasympathetic pathway to parotid?
 
-Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier.
+Answer: Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier.
 
 ## Sources and editorial record
 

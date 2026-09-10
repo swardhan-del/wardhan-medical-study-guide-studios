@@ -39,7 +39,7 @@ The internal carotid supplies intracranial and orbital territories after ascendi
 
 Which carotid branch has no usual branches in the neck? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.
+1. Answer: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.
 2. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain.
 3. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map.
+1. Internal carotid artery. Answer: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map.
 
 2. The sinus is a dilation associated with stretch-sensitive baroreceptors, whereas the body is a small chemoreceptor organ near the bifurcation. Their signals concern different physiological variables even though both have important glossopharyngeal afferent connections. The internal jugular vein and vagus lie nearby in the carotid sheath, but proximity does not make vagus the only sensory pathway at the bifurcation. Describe receptor type, location and afferent route separately to avoid confusing vascular anatomy with reflex function.
 
@@ -97,7 +97,7 @@ Right common carotid comes from brachiocephalic trunk; left common carotid comes
 
 Explain head and neck arteries, veins and lymphatics using the main anatomical relationships, then justify your answer to: Which carotid branch has no usual branches in the neck?
 
-The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map.
+Answer: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map.
 
 ## Sources and editorial record
 

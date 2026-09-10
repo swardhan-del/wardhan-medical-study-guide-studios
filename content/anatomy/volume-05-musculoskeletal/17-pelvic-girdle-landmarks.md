@@ -35,7 +35,7 @@ Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is cen
 
 Which hip-bone region articulates with the femoral head? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Ilium, ischium and pubis meet around the acetabulum.
+1. Answer: Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum.
 2. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles.
 3. A named prominence should be linked to its function and neighboring route.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route.
+1. Acetabular lunate surface. Answer: Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route.
 
 2. The sacrum receives axial load from the vertebral column and transmits it through sacroiliac articulations and strong ligamentous supports to the hip bones. The pelvic ring distributes force toward acetabula and femora. The pubic symphysis completes the anterior connection but is not the sole load-bearing bridge. This ring structure means forces at one location affect neighboring connections. On a pelvic diagram, show sacrum, both sacroiliac joints, acetabula and symphysis together rather than learning each landmark without the load pathway.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain pelvic girdle and hip bone landmarks using the main anatomical relationships, then justify your answer to: Which hip-bone region articulates with the femoral head?
 
-Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route.
+Answer: Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route.
 
 ## Sources and editorial record
 

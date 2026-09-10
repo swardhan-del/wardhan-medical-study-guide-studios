@@ -35,7 +35,7 @@ A nerve can carry hitchhiking fibers from another source. C1 fibers travel with 
 
 Which fibers reach thyrohyoid by traveling with XII? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. A nerve can carry hitchhiking fibers from another source.
+1. Answer: C1 spinal fibers. A nerve can carry hitchhiking fibers from another source.
 2. C1 fibers travel with XII to thyrohyoid and geniohyoid, while most infrahyoids receive ansa cervicalis. Suprahyoid muscles can elevate the hyoid or depress the mandible depending on which attachment is stabilized. Sternocleidomastoid rotates the face contralaterally during unilateral contraction and receives XI motor supply.
 3. Distinguish the visible carrier nerve from the spinal origin and the mechanical task of the muscle.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. C1 spinal fibers. A nerve can carry hitchhiking fibers from another source. C1 fibers travel with XII to thyrohyoid and geniohyoid, while most infrahyoids receive ansa cervicalis. Suprahyoid muscles can elevate the hyoid or depress the mandible depending on which attachment is stabilized. Sternocleidomastoid rotates the face contralaterally during unilateral contraction and receives XI motor supply. Distinguish the visible carrier nerve from the spinal origin and the mechanical task of the muscle.
+1. C1 spinal fibers. Answer: C1 spinal fibers. A nerve can carry hitchhiking fibers from another source. C1 fibers travel with XII to thyrohyoid and geniohyoid, while most infrahyoids receive ansa cervicalis. Suprahyoid muscles can elevate the hyoid or depress the mandible depending on which attachment is stabilized. Sternocleidomastoid rotates the face contralaterally during unilateral contraction and receives XI motor supply. Distinguish the visible carrier nerve from the spinal origin and the mechanical task of the muscle.
 
 2. If the mandible is stabilized, suprahyoid muscles can elevate the hyoid and help move the laryngeal complex during swallowing. If the hyoid is stabilized by other muscles, some of the same muscles help depress the mandible. The effect depends on which attachment is fixed and the coordinated activity of neighboring groups. Infrahyoids therefore provide a functional reference point rather than simply acting as antagonists in every situation. Include both attachments when explaining action, and keep their mixed nerve sources distinct.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain neck muscles and hyoid relationships using the main anatomical relationships, then justify your answer to: Which fibers reach thyrohyoid by traveling with XII?
 
-A nerve can carry hitchhiking fibers from another source. C1 fibers travel with XII to thyrohyoid and geniohyoid, while most infrahyoids receive ansa cervicalis. Suprahyoid muscles can elevate the hyoid or depress the mandible depending on which attachment is stabilized. Sternocleidomastoid rotates the face contralaterally during unilateral contraction and receives XI motor supply. Distinguish the visible carrier nerve from the spinal origin and the mechanical task of the muscle.
+Answer: C1 spinal fibers. A nerve can carry hitchhiking fibers from another source. C1 fibers travel with XII to thyrohyoid and geniohyoid, while most infrahyoids receive ansa cervicalis. Suprahyoid muscles can elevate the hyoid or depress the mandible depending on which attachment is stabilized. Sternocleidomastoid rotates the face contralaterally during unilateral contraction and receives XI motor supply. Distinguish the visible carrier nerve from the spinal origin and the mechanical task of the muscle.
 
 ## Sources and editorial record
 

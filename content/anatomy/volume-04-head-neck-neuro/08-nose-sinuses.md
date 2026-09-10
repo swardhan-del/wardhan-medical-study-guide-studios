@@ -35,7 +35,7 @@ A meatus lies below its corresponding concha. The inferior meatus receives tears
 
 Where does the nasolacrimal duct drain? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. A meatus lies below its corresponding concha.
+1. Answer: Inferior nasal meatus. A meatus lies below its corresponding concha.
 2. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess.
 3. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point.
+1. Inferior nasal meatus. Answer: Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point.
 
 2. Olfactory epithelium occupies the superior region near the roof and upper septal and conchal surfaces. General sensation over much of the nasal cavity uses trigeminal branches, with anterior-superior and posterior-inferior territories supplied through different routes. Olfactory fibers pass through cribriform foramina, while most general sensory fibers do not. The septal vascular plexus is yet another layer of organization. Smell, irritation sensation and blood supply should therefore be shown separately on a nasal diagram.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain nasal cavity and paranasal drainage using the main anatomical relationships, then justify your answer to: Where does the nasolacrimal duct drain?
 
-A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point.
+Answer: Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point.
 
 ## Sources and editorial record
 

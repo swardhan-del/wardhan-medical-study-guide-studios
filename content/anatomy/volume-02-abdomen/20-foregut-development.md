@@ -51,7 +51,7 @@ Rotation changes adult relationships without changing tissue lineage. The ventra
 
 Which pancreatic part is principally derived from the ventral bud? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Rotation changes adult relationships without changing tissue lineage.
+1. Answer: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage.
 2. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds.
 3. Explain adult position, duct formation and germ-layer origin as separate outcomes.
 
@@ -91,7 +91,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes.
+1. Uncinate process and inferior head. Answer: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes.
 
 2. The dorsal mesentery extends broadly along the gut, whereas ventral mesentery persists mainly in the foregut region. Stomach rotation and differential growth expand dorsal mesogastric derivatives, including greater-omental and splenic relationships. Ventral mesenteric derivatives include lesser omentum and falciform ligament, associated with the developing liver. Naming an adult ligament without its attachments can hide this pattern. First identify which organs it connects, then relate those attachments to the embryonic mesentery from which the fold developed.
 
@@ -109,7 +109,7 @@ Foregut is supplied by celiac trunk in adult anatomy. Midgut is supplied by supe
 
 Explain foregut rotation and organ development using the main anatomical relationships, then justify your answer to: Which pancreatic part is principally derived from the ventral bud?
 
-Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes.
+Answer: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes.
 
 ## Sources and editorial record
 

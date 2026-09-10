@@ -51,7 +51,7 @@ Begin with orientation, then identify solid reference structures rather than gue
 
 In an upper abdominal section, what lies between stomach and pancreas? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape.
+1. Answer: The lesser sac. Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape.
 2. The stomach is anterior to the lesser sac and pancreas; the pancreatic neck is anterior to portal vein formation. The third duodenal part lies behind the superior mesenteric vessels. Combining these independent relationships lets you check a proposed label against its neighbours.
 3. A single axial slice is insufficient to establish the complete course of a duct or vessel: follow adjacent levels.
 
@@ -91,7 +91,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. The lesser sac. Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape. The stomach is anterior to the lesser sac and pancreas; the pancreatic neck is anterior to portal vein formation. The third duodenal part lies behind the superior mesenteric vessels. Combining these independent relationships lets you check a proposed label against its neighbours. A single axial slice is insufficient to establish the complete course of a duct or vessel: follow adjacent levels.
+1. The lesser sac. Answer: The lesser sac. Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape. The stomach is anterior to the lesser sac and pancreas; the pancreatic neck is anterior to portal vein formation. The third duodenal part lies behind the superior mesenteric vessels. Combining these independent relationships lets you check a proposed label against its neighbours. A single axial slice is insufficient to establish the complete course of a duct or vessel: follow adjacent levels.
 
 2. Use multiple independent relations: the pancreas is behind the stomach and lesser sac, the head lies within the duodenal curve, and the neck is anterior to portal venous formation. The body extends toward the splenic hilum, with splenic vein posteriorly. Not every relation appears at one axial level, so follow neighboring slices or a multiplanar reconstruction. If a proposed structure violates several relationships, reconsider orientation before memorizing its appearance. Anatomy is a connected spatial model, not a collection of isolated silhouettes.
 
@@ -109,7 +109,7 @@ Anterior wall of the lesser sac includes stomach, lesser omentum, and gastrocoli
 
 Explain reconstruct an upper abdominal section using the main anatomical relationships, then justify your answer to: In an upper abdominal section, what lies between stomach and pancreas?
 
-Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape. The stomach is anterior to the lesser sac and pancreas; the pancreatic neck is anterior to portal vein formation. The third duodenal part lies behind the superior mesenteric vessels. Combining these independent relationships lets you check a proposed label against its neighbours. A single axial slice is insufficient to establish the complete course of a duct or vessel: follow adjacent levels.
+Answer: The lesser sac. Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape. The stomach is anterior to the lesser sac and pancreas; the pancreatic neck is anterior to portal vein formation. The third duodenal part lies behind the superior mesenteric vessels. Combining these independent relationships lets you check a proposed label against its neighbours. A single axial slice is insufficient to establish the complete course of a duct or vessel: follow adjacent levels.
 
 ## Sources and editorial record
 

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Ampulla",
-          "reason": "The tube opens into the peritoneal cavity near the ovary; it is not directly sealed to the ovarian surface. Fimbriae help guide the released oocyte toward the infundibulum, then ampulla, isthmus and intramural segment. The suspensory ligament carries ovarian vessels from the lateral pelvic wall, whereas the ovarian ligament links ovary to uterus. The ovarian surface epithelium is historically called germinal epithelium, but it does not generate the oocytes."
+          "reason": "Answer: Ampulla. The tube opens into the peritoneal cavity near the ovary; it is not directly sealed to the ovarian surface. Fimbriae help guide the released oocyte toward the infundibulum, then ampulla, isthmus and intramural segment. The suspensory ligament carries ovarian vessels from the lateral pelvic wall, whereas the ovarian ligament links ovary to uterus. The ovarian surface epithelium is historically called germinal epithelium, but it does not generate the oocytes."
         },
         {
           "text": "Intramural part",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain ovary and uterine tube relationships using the main anatomical relationships, then justify your answer to: Which part of the uterine tube is the usual fertilization site?",
-      "answer": "The tube opens into the peritoneal cavity near the ovary; it is not directly sealed to the ovarian surface. Fimbriae help guide the released oocyte toward the infundibulum, then ampulla, isthmus and intramural segment. The suspensory ligament carries ovarian vessels from the lateral pelvic wall, whereas the ovarian ligament links ovary to uterus. The ovarian surface epithelium is historically called germinal epithelium, but it does not generate the oocytes."
+      "answer": "Answer: Ampulla. The tube opens into the peritoneal cavity near the ovary; it is not directly sealed to the ovarian surface. Fimbriae help guide the released oocyte toward the infundibulum, then ampulla, isthmus and intramural segment. The suspensory ligament carries ovarian vessels from the lateral pelvic wall, whereas the ovarian ligament links ovary to uterus. The ovarian surface epithelium is historically called germinal epithelium, but it does not generate the oocytes."
     },
     "related": [
       "erectile-anatomy",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which part of the uterine tube is the usual fertilization site? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The tube opens into the peritoneal cavity near the ovary; it is not directly sealed to the ovarian surface.",
+        "Answer: Ampulla. The tube opens into the peritoneal cavity near the ovary; it is not directly sealed to the ovarian surface.",
         "Fimbriae help guide the released oocyte toward the infundibulum, then ampulla, isthmus and intramural segment. The suspensory ligament carries ovarian vessels from the lateral pelvic wall, whereas the ovarian ligament links ovary to uterus.",
         "The ovarian surface epithelium is historically called germinal epithelium, but it does not generate the oocytes."
       ]

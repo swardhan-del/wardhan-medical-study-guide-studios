@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Its line of pull relative to the axis changes",
-          "reason": "A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name."
+          "reason": "Answer: Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name."
         },
         {
           "text": "Its nerve changes at each angle",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain muscle architecture, actions and innervation using the main anatomical relationships, then justify your answer to: Why can a muscle's action change with joint position?",
-      "answer": "A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name."
+      "answer": "Answer: Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name."
     },
     "related": [
       "synovial-joint-design",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Why can a muscle's action change with joint position? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "A muscle produces torque according to force and moment arm.",
+        "Answer: Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm.",
         "A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities.",
         "To predict action, locate attachments, joint axis and line of pull before relying on a muscle name."
       ]

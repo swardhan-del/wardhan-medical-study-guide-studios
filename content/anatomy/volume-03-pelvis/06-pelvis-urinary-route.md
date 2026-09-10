@@ -35,7 +35,7 @@ Trace the ureter continuously from renal pelvis to bladder rather than memorizin
 
 Near the cervix, the ureter usually passes beneath which structure? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points.
+1. Answer: Uterine artery. Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points.
 2. It descends retroperitoneally, crosses the pelvic brim near iliac vessels and passes beneath the uterine artery in the female pelvis or beneath the ductus deferens in the male pelvis. Its oblique intramural course helps resist reflux as bladder pressure rises.
 3. A crossing landmark and a functional narrowing are related concepts but are not identical claims about every ureter.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Uterine artery. Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points. It descends retroperitoneally, crosses the pelvic brim near iliac vessels and passes beneath the uterine artery in the female pelvis or beneath the ductus deferens in the male pelvis. Its oblique intramural course helps resist reflux as bladder pressure rises. A crossing landmark and a functional narrowing are related concepts but are not identical claims about every ureter.
+1. Uterine artery. Answer: Uterine artery. Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points. It descends retroperitoneally, crosses the pelvic brim near iliac vessels and passes beneath the uterine artery in the female pelvis or beneath the ductus deferens in the male pelvis. Its oblique intramural course helps resist reflux as bladder pressure rises. A crossing landmark and a functional narrowing are related concepts but are not identical claims about every ureter.
 
 2. Branches reach the ureter from nearby renal, gonadal, iliac and pelvic arterial sources along its course. These create longitudinal communications in surrounding tissue rather than one single artery running from kidney to bladder. The regional sources explain why abdominal and pelvic segments have different vascular neighbors. Peristaltic urine transport occurs in the muscular ureteral wall, while the intramural course at the bladder supports resistance to reflux. Blood supply, propulsion and anti-reflux geometry are distinct parts of its functional anatomy.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain ureters and the route into the bladder using the main anatomical relationships, then justify your answer to: Near the cervix, the ureter usually passes beneath which structure?
 
-Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points. It descends retroperitoneally, crosses the pelvic brim near iliac vessels and passes beneath the uterine artery in the female pelvis or beneath the ductus deferens in the male pelvis. Its oblique intramural course helps resist reflux as bladder pressure rises. A crossing landmark and a functional narrowing are related concepts but are not identical claims about every ureter.
+Answer: Uterine artery. Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points. It descends retroperitoneally, crosses the pelvic brim near iliac vessels and passes beneath the uterine artery in the female pelvis or beneath the ductus deferens in the male pelvis. Its oblique intramural course helps resist reflux as bladder pressure rises. A crossing landmark and a functional narrowing are related concepts but are not identical claims about every ureter.
 
 ## Sources and editorial record
 

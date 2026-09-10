@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Glossopharyngeal IX",
-          "reason": "Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier."
+          "reason": "Answer: Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier."
         },
         {
           "text": "Facial VII through its parotid branches",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain salivary glands and their nerve routes using the main anatomical relationships, then justify your answer to: Which cranial nerve supplies the preganglionic parasympathetic pathway to parotid?",
-      "answer": "Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier."
+      "answer": "Answer: Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier."
     },
     "related": [
       "head-neck-tongue-map",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which cranial nerve supplies the preganglionic parasympathetic pathway to parotid? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Passing through a gland does not mean innervating its secretion.",
+        "Answer: Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion.",
         "Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion.",
         "Distinguish preganglionic source, synapse and postganglionic carrier."
       ]

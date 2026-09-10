@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Internal carotid artery",
-          "reason": "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+          "reason": "Answer: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
         },
         {
           "text": "External carotid artery",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain head and neck arteries, veins and lymphatics using the main anatomical relationships, then justify your answer to: Which carotid branch has no usual branches in the neck?",
-      "answer": "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+      "answer": "Answer: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
     },
     "related": [
       "cervical-fascia-sympathetic",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which carotid branch has no usual branches in the neck? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.",
+        "Answer: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.",
         "The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain.",
         "An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
       ]

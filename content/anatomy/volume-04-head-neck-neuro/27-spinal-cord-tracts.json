@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Medulla after synapsing in gracile or cuneate nuclei",
-          "reason": "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+          "reason": "Answer: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
         },
         {
           "text": "Immediately on entering every spinal segment",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain spinal cord, meninges and long pathways using the main anatomical relationships, then justify your answer to: Where do dorsal-column body sensory fibers first cross in the classic pathway?",
-      "answer": "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+      "answer": "Answer: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
     },
     "related": [
       "cerebellum-connections",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Where do dorsal-column body sensory fibers first cross in the classic pathway? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.",
+        "Answer: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.",
         "Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion.",
         "Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
       ]

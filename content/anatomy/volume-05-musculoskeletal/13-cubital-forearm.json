@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Ulnar nerve",
-          "reason": "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+          "reason": "Answer: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
         },
         {
           "text": "Median nerve",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain cubital fossa and forearm compartments using the main anatomical relationships, then justify your answer to: Which nerve supplies flexor carpi ulnaris?",
-      "answer": "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+      "answer": "Answer: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
     },
     "related": [
       "arm-elbow",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve supplies flexor carpi ulnaris? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.",
+        "Answer: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.",
         "The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins.",
         "Surface and deep structures must be placed in separate layers."
       ]

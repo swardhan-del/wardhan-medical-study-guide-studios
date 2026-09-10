@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Foregut endoderm",
-          "reason": "The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+          "reason": "Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
         },
         {
           "text": "Surface ectoderm",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain respiratory and diaphragmatic development using the main anatomical relationships, then justify your answer to: Which tissue forms most lower respiratory epithelium?",
-      "answer": "The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+      "answer": "Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
     },
     "related": [
       "cardiac-conduction-autonomics",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which tissue forms most lower respiratory epithelium? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.",
+        "Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.",
         "Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth.",
         "The consequence is not merely an abnormal opening but altered development of the space available to the lung."
       ]

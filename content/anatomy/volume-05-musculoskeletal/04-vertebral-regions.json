@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Costal facets",
-          "reason": "Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+          "reason": "Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
         },
         {
           "text": "A dens",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain vertebral column and regional vertebrae using the main anatomical relationships, then justify your answer to: Which feature most strongly suggests a typical thoracic vertebra?",
-      "answer": "Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+      "answer": "Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
     },
     "related": [
       "muscle-actions",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which feature most strongly suggests a typical thoracic vertebra? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.",
+        "Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.",
         "C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies.",
         "Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
       ]

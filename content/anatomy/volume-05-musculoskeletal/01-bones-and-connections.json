@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Synovial joint",
-          "reason": "Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+          "reason": "Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
         },
         {
           "text": "Suture",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain bone structure and connections between bones using the main anatomical relationships, then justify your answer to: Which connection contains a joint cavity?",
-      "answer": "Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+      "answer": "Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
     },
     "related": [
       "synovial-joint-design",
@@ -71,7 +71,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which connection contains a joint cavity? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.",
+        "Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.",
         "Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection.",
         "Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
       ]

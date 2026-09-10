@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Origin of the posterior interventricular artery",
-          "reason": "The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart."
+          "reason": "Answer: Origin of the posterior interventricular artery. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart."
         },
         {
           "text": "Which coronary artery is physically largest",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain coronary arteries and venous return using the main anatomical relationships, then justify your answer to: What defines conventional coronary dominance?",
-      "answer": "The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart."
+      "answer": "Answer: Origin of the posterior interventricular artery. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium. LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes. Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart."
     },
     "related": [
       "heart-valves-skeleton",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What defines conventional coronary dominance? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium.",
+        "Answer: Origin of the posterior interventricular artery. The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium.",
         "LAD supplies important anterior ventricular and septal territories; circumflex follows the left atrioventricular groove. Dominance concerns posterior interventricular origin and varies between people. Coronary sinus drainage reaches the right atrium, but anterior cardiac and smallest cardiac veins provide additional routes.",
         "Territory maps are typical patterns, not guarantees that one named blockage produces identical damage in every heart."
       ]

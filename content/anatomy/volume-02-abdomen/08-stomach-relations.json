@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Right and left gastric arteries",
-          "reason": "Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+          "reason": "Answer: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
         },
         {
           "text": "Right and left gastro-omental arteries",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain stomach position, relations and neurovascular supply using the main anatomical relationships, then justify your answer to: Which vessels run along the lesser curvature?",
-      "answer": "Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+      "answer": "Answer: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
     },
     "related": [
       "peritoneal-fluid-routes",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which vessels run along the lesser curvature? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Follow the curves before memorizing arteries.",
+        "Answer: Right and left gastric arteries. Follow the curves before memorizing arteries.",
         "The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations.",
         "Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
       ]

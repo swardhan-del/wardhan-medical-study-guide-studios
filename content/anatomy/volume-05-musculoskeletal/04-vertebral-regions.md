@@ -39,7 +39,7 @@ Typical cervical vertebrae have transverse foramina, thoracic vertebrae articula
 
 Which feature most strongly suggests a typical thoracic vertebra? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.
+1. Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.
 2. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies.
 3. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture.
+1. Costal facets. Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture.
 
 2. Lumbar bodies are large because they bear substantial load, while facet orientations influence permitted movement and resistance to rotation. Thoracic rib attachments add stability and alter regional mobility. Cervical vertebrae support head movement with smaller bodies and specialized upper joints. These are tendencies rather than one rule for every vertebra. Transitional levels often combine features. On an unknown bone, compare body proportions, foramina, costal facets and articular orientation before deciding the region from a single feature.
 
@@ -97,7 +97,7 @@ The usual count is 33: 7 cervical, 12 thoracic, 5 lumbar, 5 sacral and commonly 
 
 Explain vertebral column and regional vertebrae using the main anatomical relationships, then justify your answer to: Which feature most strongly suggests a typical thoracic vertebra?
 
-Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture.
+Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture.
 
 ## Sources and editorial record
 

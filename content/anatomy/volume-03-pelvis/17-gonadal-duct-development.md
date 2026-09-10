@@ -45,7 +45,7 @@ Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while L
 
 Which signal supports persistence of the mesonephric duct in typical male development? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.
+1. Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.
 2. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing.
 3. Classical duct maps are useful but simplify the developmental contributions to the vagina.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina.
+1. Testosterone. Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina.
 
 2. They arise from different testicular cell populations and act on different targets. Sertoli-derived AMH promotes paramesonephric regression, while Leydig-derived testosterone supports mesonephric differentiation. Conversion to DHT contributes to external genital and prostatic development. A map with one arrow labeled male hormone hides these distinctions and cannot explain selective changes in one pathway. The same principle applies to separating gonadal differentiation from duct development and external genital patterning: these processes interact but are not a single anatomical event.
 
@@ -103,7 +103,7 @@ Primordial germ cells migrate along dorsal mesentery to gonadal ridge. SRY/testi
 
 Explain gonadal differentiation and genital ducts using the main anatomical relationships, then justify your answer to: Which signal supports persistence of the mesonephric duct in typical male development?
 
-Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina.
+Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina.
 
 ## Sources and editorial record
 

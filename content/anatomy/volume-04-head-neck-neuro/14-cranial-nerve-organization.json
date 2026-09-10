@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Motor columns",
-          "reason": "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+          "reason": "Answer: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
         },
         {
           "text": "Sensory columns",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain cranial nerve nuclei and functional columns using the main anatomical relationships, then justify your answer to: Which functional region generally lies medial to the sulcus limitans in the developing brainstem?",
-      "answer": "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+      "answer": "Answer: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
     },
     "related": [
       "ear-anatomy",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which functional region generally lies medial to the sulcus limitans in the developing brainstem? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.",
+        "Answer: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.",
         "This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic.",
         "Functional modality should be identified before naming a nucleus."
       ]

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "AV bundle",
-          "reason": "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+          "reason": "Answer: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
         },
         {
           "text": "Chordae tendineae",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain conduction and autonomic modulation using the main anatomical relationships, then justify your answer to: What is the normal electrical bridge across the cardiac fibrous skeleton?",
-      "answer": "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+      "answer": "Answer: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
     },
     "related": [
       "coronary-circulation",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What is the normal electrical bridge across the cardiac fibrous skeleton? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.",
+        "Answer: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.",
         "The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band.",
         "Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
       ]

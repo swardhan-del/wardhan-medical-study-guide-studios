@@ -35,7 +35,7 @@ Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles ch
 
 Which nerve supplies the anterior leg compartment? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply.
+1. Answer: Deep fibular nerve. Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply.
 2. Posterior compartments use tibial supply for plantarflexion and toe flexion, with deep muscles also supporting arches and inversion. Fibularis longus and tibialis posterior can both support the foot despite differing actions.
 3. A common fibular lesion can affect both anterior and lateral compartments, whereas an isolated deep branch lesion has a narrower pattern.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Deep fibular nerve. Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply. Posterior compartments use tibial supply for plantarflexion and toe flexion, with deep muscles also supporting arches and inversion. Fibularis longus and tibialis posterior can both support the foot despite differing actions. A common fibular lesion can affect both anterior and lateral compartments, whereas an isolated deep branch lesion has a narrower pattern.
+1. Deep fibular nerve. Answer: Deep fibular nerve. Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply. Posterior compartments use tibial supply for plantarflexion and toe flexion, with deep muscles also supporting arches and inversion. Fibularis longus and tibialis posterior can both support the foot despite differing actions. A common fibular lesion can affect both anterior and lateral compartments, whereas an isolated deep branch lesion has a narrower pattern.
 
 2. Tibialis posterior is supplied by the tibial nerve in the deep posterior compartment and contributes strongly to inversion. Tibialis anterior, supplied by deep fibular nerve, also inverts but adds dorsiflexion. A common fibular lesion can weaken dorsiflexion and eversion while leaving tibial-supplied inversion activity. This pattern helps distinguish a peripheral nerve lesion from broader root involvement. The anatomical reasoning requires actions shared across compartments rather than a one-action-per-nerve mnemonic.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain leg compartments and ankle actions using the main anatomical relationships, then justify your answer to: Which nerve supplies the anterior leg compartment?
 
-Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply. Posterior compartments use tibial supply for plantarflexion and toe flexion, with deep muscles also supporting arches and inversion. Fibularis longus and tibialis posterior can both support the foot despite differing actions. A common fibular lesion can affect both anterior and lateral compartments, whereas an isolated deep branch lesion has a narrower pattern.
+Answer: Deep fibular nerve. Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply. Posterior compartments use tibial supply for plantarflexion and toe flexion, with deep muscles also supporting arches and inversion. Fibularis longus and tibialis posterior can both support the foot despite differing actions. A common fibular lesion can affect both anterior and lateral compartments, whereas an isolated deep branch lesion has a narrower pattern.
 
 ## Sources and editorial record
 

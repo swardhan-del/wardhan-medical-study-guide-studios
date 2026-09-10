@@ -39,7 +39,7 @@ The cavity is the narrow potential space between serosal surfaces. An intraperit
 
 What does intraperitoneal mean? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The cavity is the narrow potential space between serosal surfaces.
+1. Answer: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces.
 2. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ.
 3. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions.
+1. An organ is largely invested by visceral peritoneum. Answer: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions.
 
 2. Kidneys develop and remain behind the peritoneal cavity and are described as primarily retroperitoneal. The ascending colon initially has a mesenteric relationship that usually becomes fixed by fusion with the posterior abdominal wall, making it secondarily retroperitoneal. Adult position alone does not reveal that history. Likewise, the pancreas is mostly secondarily retroperitoneal, but its tail retains a peritoneal-ligament relationship near the spleen. Qualifiers such as mostly and usually matter because regional exceptions and variation are part of anatomy.
 
@@ -97,7 +97,7 @@ Parietal peritoneum has somatic pain sensitivity and is regionally innervated by
 
 Explain peritoneum and organ position using the main anatomical relationships, then justify your answer to: What does intraperitoneal mean?
 
-The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions.
+Answer: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions.
 
 ## Sources and editorial record
 

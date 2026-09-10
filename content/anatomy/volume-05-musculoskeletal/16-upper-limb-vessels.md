@@ -39,7 +39,7 @@ The arterial route changes names at landmarks: subclavian becomes axillary at th
 
 Which artery usually contributes most to the superficial palmar arch? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major.
+1. Answer: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major.
 2. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes.
 3. Do not assume one rigid drainage pattern for every person.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person.
+1. Ulnar artery. Answer: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person.
 
 2. The superficial arch is usually predominantly ulnar and the deep arch predominantly radial, with communicating contributions that vary. They distribute blood to different branches and levels of the palm while providing potential collateral routes. An incomplete arch or altered vessel caliber changes that capacity. Venous return and lymphatic drainage use different networks, so an arterial arch drawing should not be reused unchanged for them. Identify the dominant source, connecting contribution and distal branches for each arch.
 
@@ -97,7 +97,7 @@ Radial artery crosses the anatomical snuffbox and contributes mainly to the deep
 
 Explain upper limb vessels and lymphatic routes using the main anatomical relationships, then justify your answer to: Which artery usually contributes most to the superficial palmar arch?
 
-The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person.
+Answer: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person.
 
 ## Sources and editorial record
 

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Relative spatial arrangement of developing chambers",
-          "reason": "Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+          "reason": "Answer: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
         },
         {
           "text": "The final number of adult alveoli",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain heart tube and partitioning using the main anatomical relationships, then justify your answer to: What does cardiac looping mainly establish?",
-      "answer": "Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+      "answer": "Answer: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
     },
     "related": [
       "thoracic-development",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What does cardiac looping mainly establish? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes.",
+        "Answer: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes.",
         "Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects.",
         "Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
       ]

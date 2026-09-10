@@ -35,7 +35,7 @@ Use the neck as the reference plane. The superior mesenteric and splenic veins u
 
 Where is the portal vein formed relative to the pancreatic neck? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Use the neck as the reference plane.
+1. Answer: Posterior to the neck. Use the neck as the reference plane.
 2. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum.
 3. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists.
+1. Posterior to the neck. Answer: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists.
 
 2. The main duct generally runs from tail toward head and joins the bile-duct outlet region; an accessory duct may open separately at the minor papilla. Pancreaticoduodenal arcades supply the head around the duodenal curve, while branches of the splenic artery supply much of body and tail. Thus the organ spans linked arterial territories and a longitudinal drainage route. Endocrine secretions enter blood directly, whereas exocrine secretions use ducts; those two outputs should not be drawn as one pathway.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain pancreas and its duct relationships using the main anatomical relationships, then justify your answer to: Where is the portal vein formed relative to the pancreatic neck?
 
-Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists.
+Answer: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists.
 
 ## Sources and editorial record
 

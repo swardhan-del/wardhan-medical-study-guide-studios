@@ -35,7 +35,7 @@ The posterior mediastinum contains the esophagus, descending aorta, thoracic duc
 
 Where does the thoracic duct usually terminate? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The posterior mediastinum contains the esophagus, descending aorta, thoracic duct and azygos pathways among other structures.
+1. Answer: Left venous angle. The posterior mediastinum contains the esophagus, descending aorta, thoracic duct and azygos pathways among other structures.
 2. The thoracic duct ascends from the abdomen, usually crosses toward the left in the thorax and reaches the junction of left internal jugular and subclavian veins. It drains most of the body except the right upper quadrant. Azygos veins provide systemic venous connections and enter the SVC; they are not lymphatic channels.
 3. Both networks vary, so recognize a typical map rather than a mandatory single tube pattern.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Left venous angle. The posterior mediastinum contains the esophagus, descending aorta, thoracic duct and azygos pathways among other structures. The thoracic duct ascends from the abdomen, usually crosses toward the left in the thorax and reaches the junction of left internal jugular and subclavian veins. It drains most of the body except the right upper quadrant. Azygos veins provide systemic venous connections and enter the SVC; they are not lymphatic channels. Both networks vary, so recognize a typical map rather than a mandatory single tube pattern.
+1. Left venous angle. Answer: Left venous angle. The posterior mediastinum contains the esophagus, descending aorta, thoracic duct and azygos pathways among other structures. The thoracic duct ascends from the abdomen, usually crosses toward the left in the thorax and reaches the junction of left internal jugular and subclavian veins. It drains most of the body except the right upper quadrant. Azygos veins provide systemic venous connections and enter the SVC; they are not lymphatic channels. Both networks vary, so recognize a typical map rather than a mandatory single tube pattern.
 
 2. It connects systemic venous territories along the thoracic and abdominal walls and ultimately drains toward SVC. Portal circulation instead links a first capillary bed to liver sinusoids before systemic return. The azygos route can communicate with other systemic channels when major flow paths are altered, but it does not normally insert a second organ capillary bed in that manner. Distinguish the azygos vein from the adjacent thoracic duct, which carries lymph to a venous junction.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain posterior mediastinal routes using the main anatomical relationships, then justify your answer to: Where does the thoracic duct usually terminate?
 
-The posterior mediastinum contains the esophagus, descending aorta, thoracic duct and azygos pathways among other structures. The thoracic duct ascends from the abdomen, usually crosses toward the left in the thorax and reaches the junction of left internal jugular and subclavian veins. It drains most of the body except the right upper quadrant. Azygos veins provide systemic venous connections and enter the SVC; they are not lymphatic channels. Both networks vary, so recognize a typical map rather than a mandatory single tube pattern.
+Answer: Left venous angle. The posterior mediastinum contains the esophagus, descending aorta, thoracic duct and azygos pathways among other structures. The thoracic duct ascends from the abdomen, usually crosses toward the left in the thorax and reaches the junction of left internal jugular and subclavian veins. It drains most of the body except the right upper quadrant. Azygos veins provide systemic venous connections and enter the SVC; they are not lymphatic channels. Both networks vary, so recognize a typical map rather than a mandatory single tube pattern.
 
 ## Sources and editorial record
 

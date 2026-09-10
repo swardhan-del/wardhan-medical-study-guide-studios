@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Mandibular V3",
-          "reason": "V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers. The trigeminal ganglion contains most primary sensory neuron cell bodies, but proprioceptive neurons associated with the mesencephalic nucleus are a notable exception. For the corneal reflex, V1 is the afferent limb and VII closes the eyelids. A facial sensory deficit and facial muscle weakness therefore point to different functional pathways even when both involve the face."
+          "reason": "Answer: Mandibular V3. V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers. The trigeminal ganglion contains most primary sensory neuron cell bodies, but proprioceptive neurons associated with the mesencephalic nucleus are a notable exception. For the corneal reflex, V1 is the afferent limb and VII closes the eyelids. A facial sensory deficit and facial muscle weakness therefore point to different functional pathways even when both involve the face."
         },
         {
           "text": "Ophthalmic V1",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain trigeminal divisions and sensory territories using the main anatomical relationships, then justify your answer to: Which trigeminal division carries the motor supply to mastication?",
-      "answer": "V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers. The trigeminal ganglion contains most primary sensory neuron cell bodies, but proprioceptive neurons associated with the mesencephalic nucleus are a notable exception. For the corneal reflex, V1 is the afferent limb and VII closes the eyelids. A facial sensory deficit and facial muscle weakness therefore point to different functional pathways even when both involve the face."
+      "answer": "Answer: Mandibular V3. V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers. The trigeminal ganglion contains most primary sensory neuron cell bodies, but proprioceptive neurons associated with the mesencephalic nucleus are a notable exception. For the corneal reflex, V1 is the afferent limb and VII closes the eyelids. A facial sensory deficit and facial muscle weakness therefore point to different functional pathways even when both involve the face."
     },
     "related": [
       "ocular-motor-nerves",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which trigeminal division carries the motor supply to mastication? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers.",
+        "Answer: Mandibular V3. V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers.",
         "The trigeminal ganglion contains most primary sensory neuron cell bodies, but proprioceptive neurons associated with the mesencephalic nucleus are a notable exception. For the corneal reflex, V1 is the afferent limb and VII closes the eyelids.",
         "A facial sensory deficit and facial muscle weakness therefore point to different functional pathways even when both involve the face."
       ]

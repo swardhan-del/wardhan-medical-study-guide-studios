@@ -45,7 +45,7 @@ Swallowing coordinates several barriers and propulsive actions. The tongue drive
 
 What closes the nasopharyngeal route during swallowing? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Swallowing coordinates several barriers and propulsive actions.
+1. Answer: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions.
 2. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X.
 3. A single nerve injury can disrupt several coordinated actions.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions.
+1. Elevation of the soft palate. Answer: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions.
 
 2. They lie lateral to the laryngeal inlet within the laryngopharynx and help channel swallowed material around the airway opening toward the esophagus. The internal laryngeal nerve lies close beneath the mucosa in this region, linking a local anatomical relation with supraglottic sensation. The recess should not be drawn inside the trachea or confused with the laryngeal ventricle between folds. Position relative to the inlet distinguishes pharyngeal from laryngeal spaces.
 
@@ -103,7 +103,7 @@ Nasopharynx communicates with nasal cavity through choanae and with middle ear t
 
 Explain pharynx, tonsils and swallowing using the main anatomical relationships, then justify your answer to: What closes the nasopharyngeal route during swallowing?
 
-Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions.
+Answer: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions.
 
 ## Sources and editorial record
 

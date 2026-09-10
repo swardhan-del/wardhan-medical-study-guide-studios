@@ -39,7 +39,7 @@ The axillary nerve travels with posterior circumflex humeral vessels around the 
 
 Which nerve passes through the quadrangular space? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.
+1. Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.
 2. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches.
 3. The brachial plexus cords are named relative to the second part of that artery.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery.
+1. Axillary nerve. Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery.
 
 2. It divides the axillary artery into proximal, posterior and distal parts. The usual pattern assigns one branch to the first part, two to the second and three to the third, including subscapular and circumflex humeral routes distally. Branching varies, so the pattern is a learning framework rather than an invariant count. Trace each branch toward thoracic wall, scapular region or humeral neck. The associated plexus cords use the second arterial part as their naming reference, linking vascular and neural maps.
 
@@ -97,7 +97,7 @@ Apex: cervicoaxillary canal. Base: skin, superficial fascia, axillary fascia. An
 
 Explain axilla, axillary artery and scapular spaces using the main anatomical relationships, then justify your answer to: Which nerve passes through the quadrangular space?
 
-The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery.
+Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery.
 
 ## Sources and editorial record
 

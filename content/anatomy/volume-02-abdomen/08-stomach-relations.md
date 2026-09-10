@@ -39,7 +39,7 @@ Follow the curves before memorizing arteries. The lesser curvature receives gast
 
 Which vessels run along the lesser curvature? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Follow the curves before memorizing arteries.
+1. Answer: Right and left gastric arteries. Follow the curves before memorizing arteries.
 2. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations.
 3. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses.
+1. Right and left gastric arteries. Answer: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses.
 
 2. During development the stomach's left surface becomes predominantly anterior and its right surface predominantly posterior. The left vagus consequently contributes mainly to the anterior vagal trunk and the right mainly to the posterior trunk. Plexus mixing means the adult trunks are not perfectly isolated left and right cables. This developmental account connects nerve position with peritoneal and curvature changes. It also illustrates why anterior in an adult diagram need not correspond to anterior in the earliest embryonic tube.
 
@@ -97,7 +97,7 @@ Anterior relations include diaphragm, left lobe of liver, and anterior abdominal
 
 Explain stomach position, relations and neurovascular supply using the main anatomical relationships, then justify your answer to: Which vessels run along the lesser curvature?
 
-Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses.
+Answer: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses.
 
 ## Sources and editorial record
 

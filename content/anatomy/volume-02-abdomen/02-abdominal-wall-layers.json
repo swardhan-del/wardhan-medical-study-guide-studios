@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "All three flat-muscle aponeuroses pass anterior to rectus",
-          "reason": "An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+          "reason": "Answer: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
         },
         {
           "text": "The transversalis fascia disappears",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain abdominal wall layers and rectus sheath using the main anatomical relationships, then justify your answer to: What changes below the arcuate line?",
-      "answer": "An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+      "answer": "Answer: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
     },
     "related": [
       "abdominal-surface-map",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What changes below the arcuate line? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer.",
+        "Answer: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer.",
         "Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain.",
         "Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
       ]

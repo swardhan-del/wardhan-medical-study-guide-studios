@@ -35,7 +35,7 @@ A hilum is the entry-exit area on the lung surface; the root is the bundle passi
 
 Which nerve passes posterior to the lung root? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it.
+1. Answer: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it.
 2. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS.
 3. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching.
+1. Vagus nerve. Answer: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching.
 
 2. Its typical wider caliber, shorter length and more vertical alignment make entry mechanically more likely for many aspirated objects. However, body position, object size, airflow and distal branching influence where material finally lodges. An upright route and a supine route may favor different downstream segments. The anatomy supports a tendency rather than certainty. A complete answer states the usual right-sided geometry and then explains why clinical distribution cannot be inferred from that feature alone.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain airway and root relationships using the main anatomical relationships, then justify your answer to: Which nerve passes posterior to the lung root?
 
-A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching.
+Answer: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching.
 
 ## Sources and editorial record
 

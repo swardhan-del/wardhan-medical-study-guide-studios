@@ -35,7 +35,7 @@ Separate modality from region. Lingual nerve supplies general sensation to most 
 
 Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Separate modality from region.
+1. Answer: Lingual nerve from V3. Separate modality from region.
 2. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply.
 3. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source.
+1. Lingual nerve from V3. Answer: Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source.
 
 2. Tongue lymphatic channels communicate across the midline, particularly in central and posterior regions. The tip commonly reaches submental routes, lateral anterior regions submandibular routes, and deeper or posterior regions deep cervical nodes. These are major patterns with overlap. Sensory nerve territories instead describe modality-specific neural supply, and motor innervation follows muscle targets. One color map cannot accurately represent all three systems. Separate lymph, sensation and motor layers when revising tongue anatomy.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain tongue structure, function and nerve map using the main anatomical relationships, then justify your answer to: Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue?
 
-Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source.
+Answer: Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source.
 
 ## Sources and editorial record
 

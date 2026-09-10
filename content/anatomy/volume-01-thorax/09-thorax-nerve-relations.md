@@ -35,7 +35,7 @@ Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; 
 
 Why can an aortic arch lesion affect voice? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses.
+1. Answer: The left recurrent laryngeal nerve loops beneath the arch. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses.
 2. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter.
 3. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. The left recurrent laryngeal nerve loops beneath the arch. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder.
+1. The left recurrent laryngeal nerve loops beneath the arch. Answer: The left recurrent laryngeal nerve loops beneath the arch. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder.
 
 2. Phrenic motor fibers activate diaphragm muscle, whereas sensory fibers return information from central diaphragmatic and pericardial regions. Shared spinal levels with somatic shoulder territories contribute to referred pain perception. A motor lesion can impair diaphragm movement without reproducing the same sensory pattern, and irritation can cause pain without complete paralysis. The nerve name alone is therefore insufficient: identify the fiber type, direction and target when explaining a clinical anatomical example.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain phrenic, vagal and recurrent pathways using the main anatomical relationships, then justify your answer to: Why can an aortic arch lesion affect voice?
 
-Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder.
+Answer: The left recurrent laryngeal nerve loops beneath the arch. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder.
 
 ## Sources and editorial record
 

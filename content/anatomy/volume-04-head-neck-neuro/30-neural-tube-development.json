@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Diencephalon",
-          "reason": "The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin."
+          "reason": "Answer: Diencephalon. The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin."
         },
         {
           "text": "Telencephalon",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain brain vesicles, neural tube and spinal development using the main anatomical relationships, then justify your answer to: Which secondary brain vesicle encloses the future third ventricle?",
-      "answer": "The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin."
+      "answer": "Answer: Diencephalon. The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin."
     },
     "related": [
       "face-palate-sense-development",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which secondary brain vesicle encloses the future third ventricle? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The lumen is preserved as surrounding neural tissue expands.",
+        "Answer: Diencephalon. The lumen is preserved as surrounding neural tissue expands.",
         "Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures.",
         "Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin."
       ]

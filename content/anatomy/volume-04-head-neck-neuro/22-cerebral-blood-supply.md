@@ -35,7 +35,7 @@ ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral 
 
 Which artery primarily supplies much of the lateral cerebral hemisphere? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories.
+1. Answer: Middle cerebral artery. ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories.
 2. Deep perforators supply structures such as the internal capsule, so a small deep lesion can produce substantial deficits. The circle of Willis offers potential collateral connections, but variation and vessel caliber limit protection.
 3. MCA is a major branch leaving the circle, not one of the arteries forming its closed ring.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Middle cerebral artery. ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories. Deep perforators supply structures such as the internal capsule, so a small deep lesion can produce substantial deficits. The circle of Willis offers potential collateral connections, but variation and vessel caliber limit protection. MCA is a major branch leaving the circle, not one of the arteries forming its closed ring.
+1. Middle cerebral artery. Answer: Middle cerebral artery. ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories. Deep perforators supply structures such as the internal capsule, so a small deep lesion can produce substantial deficits. The circle of Willis offers potential collateral connections, but variation and vessel caliber limit protection. MCA is a major branch leaving the circle, not one of the arteries forming its closed ring.
 
 2. Projection fibers converge through a relatively compact white-matter corridor between deep nuclei. Damage to a small portion can therefore interrupt many descending or ascending pathways that were spread widely across the cortex. Deep perforating arteries supply this region, creating a vascular context different from a broad cortical branch territory. A small lesion volume does not imply a minor functional effect. To understand this, trace cortex-to-brainstem fibers through the capsule rather than considering only surface arterial maps.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain cerebral arteries, territories and collateral routes using the main anatomical relationships, then justify your answer to: Which artery primarily supplies much of the lateral cerebral hemisphere?
 
-ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories. Deep perforators supply structures such as the internal capsule, so a small deep lesion can produce substantial deficits. The circle of Willis offers potential collateral connections, but variation and vessel caliber limit protection. MCA is a major branch leaving the circle, not one of the arteries forming its closed ring.
+Answer: Middle cerebral artery. ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories. Deep perforators supply structures such as the internal capsule, so a small deep lesion can produce substantial deficits. The circle of Willis offers potential collateral connections, but variation and vessel caliber limit protection. MCA is a major branch leaving the circle, not one of the arteries forming its closed ring.
 
 ## Sources and editorial record
 

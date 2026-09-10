@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Indirect inguinal",
-          "reason": "The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord."
+          "reason": "Answer: Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord."
         },
         {
           "text": "Direct inguinal",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain inguinal canal and hernia relationships using the main anatomical relationships, then justify your answer to: A hernia enters the deep ring lateral to the inferior epigastric vessels. Which route is this?",
-      "answer": "The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord."
+      "answer": "Answer: Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord."
     },
     "related": [
       "posterior-abdominal-wall",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "A hernia enters the deep ring lateral to the inferior epigastric vessels. Which route is this? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling.",
+        "Answer: Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling.",
         "An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein.",
         "The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord."
       ]

@@ -39,7 +39,7 @@ Abduction opens the rima glottidis; adduction brings the folds together. Cricoth
 
 Which intrinsic laryngeal muscle is the principal abductor of the vocal folds? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Abduction opens the rima glottidis; adduction brings the folds together.
+1. Answer: Posterior cricoarytenoid. Abduction opens the rima glottidis; adduction brings the folds together.
 2. Cricothyroid changes tension by altering thyroid-cricoid relationships and is supplied by the external branch of the superior laryngeal nerve. Other intrinsic muscles receive recurrent laryngeal motor supply. The internal superior laryngeal branch carries sensation above the folds, while recurrent laryngeal fibers serve below them.
 3. Distinguish movement, tension and sensory level when interpreting a nerve lesion.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Posterior cricoarytenoid. Abduction opens the rima glottidis; adduction brings the folds together. Cricothyroid changes tension by altering thyroid-cricoid relationships and is supplied by the external branch of the superior laryngeal nerve. Other intrinsic muscles receive recurrent laryngeal motor supply. The internal superior laryngeal branch carries sensation above the folds, while recurrent laryngeal fibers serve below them. Distinguish movement, tension and sensory level when interpreting a nerve lesion.
+1. Posterior cricoarytenoid. Answer: Posterior cricoarytenoid. Abduction opens the rima glottidis; adduction brings the folds together. Cricothyroid changes tension by altering thyroid-cricoid relationships and is supplied by the external branch of the superior laryngeal nerve. Other intrinsic muscles receive recurrent laryngeal motor supply. The internal superior laryngeal branch carries sensation above the folds, while recurrent laryngeal fibers serve below them. Distinguish movement, tension and sensory level when interpreting a nerve lesion.
 
 2. The vocal ligament forms a connective-tissue core associated with the superior free edge of the conus elasticus. The vocal fold includes that ligament, muscle and mucosal covering. The rima glottidis is the opening between the folds and posterior arytenoid region, changing shape during breathing and phonation. Naming a ligament, a fold and an opening interchangeably obscures movement. Arytenoid rotation and gliding alter the opening, while tension changes affect vibration characteristics.
 
@@ -97,7 +97,7 @@ Unpaired cartilages: thyroid, cricoid, epiglottic. Paired cartilages: arytenoid,
 
 Explain laryngeal skeleton, muscles and innervation using the main anatomical relationships, then justify your answer to: Which intrinsic laryngeal muscle is the principal abductor of the vocal folds?
 
-Abduction opens the rima glottidis; adduction brings the folds together. Cricothyroid changes tension by altering thyroid-cricoid relationships and is supplied by the external branch of the superior laryngeal nerve. Other intrinsic muscles receive recurrent laryngeal motor supply. The internal superior laryngeal branch carries sensation above the folds, while recurrent laryngeal fibers serve below them. Distinguish movement, tension and sensory level when interpreting a nerve lesion.
+Answer: Posterior cricoarytenoid. Abduction opens the rima glottidis; adduction brings the folds together. Cricothyroid changes tension by altering thyroid-cricoid relationships and is supplied by the external branch of the superior laryngeal nerve. Other intrinsic muscles receive recurrent laryngeal motor supply. The internal superior laryngeal branch carries sensation above the folds, while recurrent laryngeal fibers serve below them. Distinguish movement, tension and sensory level when interpreting a nerve lesion.
 
 ## Sources and editorial record
 

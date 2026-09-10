@@ -39,7 +39,7 @@ The lumen is preserved as surrounding neural tissue expands. Telencephalic growt
 
 Which secondary brain vesicle encloses the future third ventricle? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The lumen is preserved as surrounding neural tissue expands.
+1. Answer: Diencephalon. The lumen is preserved as surrounding neural tissue expands.
 2. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures.
 3. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Diencephalon. The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin.
+1. Diencephalon. Answer: Diencephalon. The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin.
 
 2. Neural crest contributes sensory and autonomic ganglia and Schwann cells, among other derivatives, but peripheral axons may originate from motor neurons whose cell bodies remain in the neural tube. Cranial sensory structures can also receive placodal contributions. The phrase PNS from neural crest is therefore a useful shorthand with limits. Separate neuron cell bodies, axons, supporting cells and specialized sensory epithelia when assigning lineage, and avoid extending a broad germ-layer summary beyond the structures it actually describes.
 
@@ -97,7 +97,7 @@ Prosencephalon gives telencephalon and diencephalon. Telencephalon forms cerebra
 
 Explain brain vesicles, neural tube and spinal development using the main anatomical relationships, then justify your answer to: Which secondary brain vesicle encloses the future third ventricle?
 
-The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin.
+Answer: Diencephalon. The lumen is preserved as surrounding neural tissue expands. Telencephalic growth surrounds the lateral ventricles, diencephalon surrounds the third ventricle, and midbrain surrounds the aqueduct. Hindbrain derivatives relate to the fourth ventricle. Basal and alar plates organize motor and sensory regions, while neural crest migrates to form many peripheral structures. Schwann cells are neural-crest derivatives, whereas central oligodendrocytes arise from neural tube lineages; not every support cell has the same origin.
 
 ## Sources and editorial record
 

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Anal canal below the pectinate line",
-          "reason": "The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions."
+          "reason": "Answer: Anal canal below the pectinate line. The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions."
         },
         {
           "text": "Upper rectum only",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain rectum and the anal transition using the main anatomical relationships, then justify your answer to: Which territory has somatic pain sensation through inferior rectal nerves?",
-      "answer": "The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions."
+      "answer": "Answer: Anal canal below the pectinate line. The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions."
     },
     "related": [
       "cecum-appendix-colon",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which territory has somatic pain sensation through inferior rectal nerves? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The pectinate line marks a developmental and neurovascular transition within the anal canal.",
+        "Answer: Anal canal below the pectinate line. The pectinate line marks a developmental and neurovascular transition within the anal canal.",
         "Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra.",
         "Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions."
       ]

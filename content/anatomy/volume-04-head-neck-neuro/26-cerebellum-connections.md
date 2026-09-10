@@ -35,7 +35,7 @@ The middle peduncle carries extensive input from pontine nuclei, the inferior pe
 
 Which peduncle carries the major pontocerebellar input? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route.
+1. Answer: Middle cerebellar peduncle. The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route.
 2. These are broad rules with exceptions. Cerebellar circuitry calibrates timing, coordination and error correction; it does not initiate movement by directly innervating limb muscles. Cerebellar deficits often appear ipsilateral because of the arrangement of crossed and recrossed connections.
 3. The fourth ventricle lies between cerebellum and brainstem.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Middle cerebellar peduncle. The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route. These are broad rules with exceptions. Cerebellar circuitry calibrates timing, coordination and error correction; it does not initiate movement by directly innervating limb muscles. Cerebellar deficits often appear ipsilateral because of the arrangement of crossed and recrossed connections. The fourth ventricle lies between cerebellum and brainstem.
+1. Middle cerebellar peduncle. Answer: Middle cerebellar peduncle. The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route. These are broad rules with exceptions. Cerebellar circuitry calibrates timing, coordination and error correction; it does not initiate movement by directly innervating limb muscles. Cerebellar deficits often appear ipsilateral because of the arrangement of crossed and recrossed connections. The fourth ventricle lies between cerebellum and brainstem.
 
 2. Cerebellar cortex and deep nuclei process incoming copies of motor plans and sensory information. Outputs influence brainstem and thalamocortical motor systems, which then affect descending pathways. This indirect architecture supports coordination and correction rather than direct lower motor neuron innervation. A cerebellar problem can disrupt timing, trajectory and balance while leaving basic muscle force relatively preserved. The peduncles are connecting highways with different input-output emphases, so drawing all three as identical one-way nerves would misrepresent the network.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain cerebellum, peduncles and fourth ventricle using the main anatomical relationships, then justify your answer to: Which peduncle carries the major pontocerebellar input?
 
-The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route. These are broad rules with exceptions. Cerebellar circuitry calibrates timing, coordination and error correction; it does not initiate movement by directly innervating limb muscles. Cerebellar deficits often appear ipsilateral because of the arrangement of crossed and recrossed connections. The fourth ventricle lies between cerebellum and brainstem.
+Answer: Middle cerebellar peduncle. The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route. These are broad rules with exceptions. Cerebellar circuitry calibrates timing, coordination and error correction; it does not initiate movement by directly innervating limb muscles. Cerebellar deficits often appear ipsilateral because of the arrangement of crossed and recrossed connections. The fourth ventricle lies between cerebellum and brainstem.
 
 ## Sources and editorial record
 

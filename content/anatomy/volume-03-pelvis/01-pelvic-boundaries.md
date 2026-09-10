@@ -45,7 +45,7 @@ The inlet is a ring, the outlet another boundary, and the pelvic cavity lies bet
 
 Which structure separates the greater from the lesser pelvis? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them.
+1. Answer: Pelvic brim. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them.
 2. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal.
 3. Place the ischial spines between inlet and outlet to understand the midpelvic plane.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Pelvic brim. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane.
+1. Pelvic brim. Answer: Pelvic brim. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane.
 
 2. The ligaments bridge bony landmarks and convert the greater and lesser sciatic notches into foramina. Sacrospinous attaches near the ischial spine, while sacrotuberous extends toward the ischial tuberosity. Piriformis traverses the greater opening, creating superior and inferior routes for nerves and vessels. The lesser opening provides access toward the perineum. A bone alone therefore does not show the final soft-tissue-defined passage. Add the ligaments before trying to trace the pudendal or obturator-internus routes.
 
@@ -103,7 +103,7 @@ The pelvic brim follows the sacral promontory and alae, arcuate lines, pectineal
 
 Explain pelvic inlet, outlet and walls using the main anatomical relationships, then justify your answer to: Which structure separates the greater from the lesser pelvis?
 
-The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane.
+Answer: Pelvic brim. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane.
 
 ## Sources and editorial record
 

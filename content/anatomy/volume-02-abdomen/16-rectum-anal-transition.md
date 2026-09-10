@@ -39,7 +39,7 @@ The pectinate line marks a developmental and neurovascular transition within the
 
 Which territory has somatic pain sensation through inferior rectal nerves? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The pectinate line marks a developmental and neurovascular transition within the anal canal.
+1. Answer: Anal canal below the pectinate line. The pectinate line marks a developmental and neurovascular transition within the anal canal.
 2. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra.
 3. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Anal canal below the pectinate line. The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions.
+1. Anal canal below the pectinate line. Answer: Anal canal below the pectinate line. The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions.
 
 2. The internal anal sphincter is a thickening of smooth muscle and contributes involuntary resting tone. The external anal sphincter is skeletal muscle with somatic innervation and contributes voluntary control. Puborectalis is a separate sling affecting the anorectal angle. Continence depends on coordinated sphincters, pelvic support, rectal sensation and stool properties, so no single ring explains it fully. The pectinate line is a mucosal developmental landmark within the canal and is not identical to either sphincter's full extent.
 
@@ -97,7 +97,7 @@ Upper rectum is related to peritoneum anteriorly and laterally; lower rectum bec
 
 Explain rectum and the anal transition using the main anatomical relationships, then justify your answer to: Which territory has somatic pain sensation through inferior rectal nerves?
 
-The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions.
+Answer: Anal canal below the pectinate line. The pectinate line marks a developmental and neurovascular transition within the anal canal. Above it, visceral afferents predominate; below it, somatic afferents convey well-localized pain. Venous and lymphatic territories overlap rather than forming impermeable borders. The rectum has no discrete teniae coli or haustra. Distinguish a mucosal landmark from the anorectal junction at the pelvic floor: they are at different levels and answer different anatomical questions.
 
 ## Sources and editorial record
 

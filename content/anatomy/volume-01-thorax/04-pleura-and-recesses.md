@@ -35,7 +35,7 @@ Visceral pleura follows the lung into fissures, while parietal pleura lines the 
 
 Which pleural region is supplied for pain by intercostal nerves? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Visceral pleura follows the lung into fissures, while parietal pleura lines the wall, diaphragm and mediastinum.
+1. Answer: Costal parietal pleura. Visceral pleura follows the lung into fissures, while parietal pleura lines the wall, diaphragm and mediastinum.
 2. A thin fluid film couples their surfaces mechanically while allowing sliding. The pleural cavity is a potential space, not normally a large air-filled chamber. Costal and peripheral diaphragmatic parietal pleura have intercostal sensory supply; central diaphragmatic and mediastinal regions use phrenic afferents.
 3. Recesses are areas where parietal surfaces can oppose beyond the resting lung margin.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Costal parietal pleura. Visceral pleura follows the lung into fissures, while parietal pleura lines the wall, diaphragm and mediastinum. A thin fluid film couples their surfaces mechanically while allowing sliding. The pleural cavity is a potential space, not normally a large air-filled chamber. Costal and peripheral diaphragmatic parietal pleura have intercostal sensory supply; central diaphragmatic and mediastinal regions use phrenic afferents. Recesses are areas where parietal surfaces can oppose beyond the resting lung margin.
+1. Costal parietal pleura. Answer: Costal parietal pleura. Visceral pleura follows the lung into fissures, while parietal pleura lines the wall, diaphragm and mediastinum. A thin fluid film couples their surfaces mechanically while allowing sliding. The pleural cavity is a potential space, not normally a large air-filled chamber. Costal and peripheral diaphragmatic parietal pleura have intercostal sensory supply; central diaphragmatic and mediastinal regions use phrenic afferents. Recesses are areas where parietal surfaces can oppose beyond the resting lung margin.
 
 2. The thin pleural fluid layer permits low-friction sliding while transmitting forces between opposing pleural surfaces. As the thoracic cage expands, the pressure relationship across the lung promotes expansion. The lung and chest wall have different elastic tendencies, and the closed pleural arrangement couples their behavior. Air entering the pleural space can disrupt this coupling. The explanation is mechanical and depends on pressure differences; it does not require the pleural layers to be permanently fused together.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain pleural layers and recesses using the main anatomical relationships, then justify your answer to: Which pleural region is supplied for pain by intercostal nerves?
 
-Visceral pleura follows the lung into fissures, while parietal pleura lines the wall, diaphragm and mediastinum. A thin fluid film couples their surfaces mechanically while allowing sliding. The pleural cavity is a potential space, not normally a large air-filled chamber. Costal and peripheral diaphragmatic parietal pleura have intercostal sensory supply; central diaphragmatic and mediastinal regions use phrenic afferents. Recesses are areas where parietal surfaces can oppose beyond the resting lung margin.
+Answer: Costal parietal pleura. Visceral pleura follows the lung into fissures, while parietal pleura lines the wall, diaphragm and mediastinum. A thin fluid film couples their surfaces mechanically while allowing sliding. The pleural cavity is a potential space, not normally a large air-filled chamber. Costal and peripheral diaphragmatic parietal pleura have intercostal sensory supply; central diaphragmatic and mediastinal regions use phrenic afferents. Recesses are areas where parietal surfaces can oppose beyond the resting lung margin.
 
 ## Sources and editorial record
 

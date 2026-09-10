@@ -35,7 +35,7 @@ The processus vaginalis is a peritoneal extension that precedes testicular desce
 
 What normally remains from the distal processus vaginalis around the testis? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The processus vaginalis is a peritoneal extension that precedes testicular descent.
+1. Answer: Tunica vaginalis. The processus vaginalis is a peritoneal extension that precedes testicular descent.
 2. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity.
 3. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Tunica vaginalis. The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal.
+1. Tunica vaginalis. Answer: Tunica vaginalis. The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal.
 
 2. A persistent peritoneal communication can allow fluid to collect or abdominal contents to protrude along the inguinal route. Fluid accumulation and herniation are different contents and behaviors of a related developmental pathway. The distal tunica vaginalis can also contain fluid without a fully patent proximal tract. Thus observing a scrotal swelling does not by itself identify which mechanism is present. For anatomy, trace the channel, identify whether it communicates and distinguish its serous covering from the testicular fibrous capsule.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain external genital development and gonadal descent using the main anatomical relationships, then justify your answer to: What normally remains from the distal processus vaginalis around the testis?
 
-The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal.
+Answer: Tunica vaginalis. The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ The artery lies deepest against the fossa floor, while the tibial nerve is most 
 
 What is the typical superficial-to-deep order of the central popliteal bundle? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle.
+1. Answer: Tibial nerve, popliteal vein, popliteal artery. The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle.
 2. The common fibular nerve follows the lateral boundary toward the fibular neck rather than remaining central. Gastrocnemius and hamstring borders frame the diamond-shaped region. Depth matters when identifying a structure on dissection or an image: a vessel's pulsation does not imply it is the most superficial structure.
 3. Trace continuity above and below the knee to confirm identity.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Tibial nerve, popliteal vein, popliteal artery. The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle. The common fibular nerve follows the lateral boundary toward the fibular neck rather than remaining central. Gastrocnemius and hamstring borders frame the diamond-shaped region. Depth matters when identifying a structure on dissection or an image: a vessel's pulsation does not imply it is the most superficial structure. Trace continuity above and below the knee to confirm identity.
+1. Tibial nerve, popliteal vein, popliteal artery. Answer: Tibial nerve, popliteal vein, popliteal artery. The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle. The common fibular nerve follows the lateral boundary toward the fibular neck rather than remaining central. Gastrocnemius and hamstring borders frame the diamond-shaped region. Depth matters when identifying a structure on dissection or an image: a vessel's pulsation does not imply it is the most superficial structure. Trace continuity above and below the knee to confirm identity.
 
 2. The nerve follows the lateral border along biceps femoris and then winds around the fibular neck, where its superficial course makes it anatomically exposed. It later divides into deep and superficial branches for anterior and lateral leg compartments. The tibial nerve instead continues centrally and into posterior leg routes. A lesion near the neck can therefore involve two distal compartments while sparing tibial targets. Follow the nerve beyond the fossa boundary to connect local course with distal function.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain popliteal fossa and neurovascular depth using the main anatomical relationships, then justify your answer to: What is the typical superficial-to-deep order of the central popliteal bundle?
 
-The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle. The common fibular nerve follows the lateral boundary toward the fibular neck rather than remaining central. Gastrocnemius and hamstring borders frame the diamond-shaped region. Depth matters when identifying a structure on dissection or an image: a vessel's pulsation does not imply it is the most superficial structure. Trace continuity above and below the knee to confirm identity.
+Answer: Tibial nerve, popliteal vein, popliteal artery. The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle. The common fibular nerve follows the lateral boundary toward the fibular neck rather than remaining central. Gastrocnemius and hamstring borders frame the diamond-shaped region. Depth matters when identifying a structure on dissection or an image: a vessel's pulsation does not imply it is the most superficial structure. Trace continuity above and below the knee to confirm identity.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ The facial nerve gives off branches at different points in its course. A proxima
 
 Does an isolated lesion after the stylomastoid foramen usually remove anterior tongue taste? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The facial nerve gives off branches at different points in its course.
+1. Answer: No; chorda tympani has already branched within the temporal bone. The facial nerve gives off branches at different points in its course.
 2. A proximal lesion can affect lacrimation, stapedius function or taste as well as facial movement, depending on its level. A lesion distal to the stylomastoid foramen mainly affects motor targets supplied after that exit. The named parotid branches distribute to facial expression muscles; they are not parotid secretomotor fibers.
 3. Use spared functions to localize a lesion along the route.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. No; chorda tympani has already branched within the temporal bone. The facial nerve gives off branches at different points in its course. A proximal lesion can affect lacrimation, stapedius function or taste as well as facial movement, depending on its level. A lesion distal to the stylomastoid foramen mainly affects motor targets supplied after that exit. The named parotid branches distribute to facial expression muscles; they are not parotid secretomotor fibers. Use spared functions to localize a lesion along the route.
+1. No; chorda tympani has already branched within the temporal bone. Answer: No; chorda tympani has already branched within the temporal bone. The facial nerve gives off branches at different points in its course. A proximal lesion can affect lacrimation, stapedius function or taste as well as facial movement, depending on its level. A lesion distal to the stylomastoid foramen mainly affects motor targets supplied after that exit. The named parotid branches distribute to facial expression muscles; they are not parotid secretomotor fibers. Use spared functions to localize a lesion along the route.
 
 2. Corticobulbar control of upper facial motor regions is often more bilateral than control of lower facial regions. A unilateral supranuclear lesion therefore commonly affects contralateral lower facial movement more than forehead movement. A peripheral facial nerve lesion can affect upper and lower muscles on its own side. These are useful patterns rather than absolute diagnostic rules. Branch-level lesions can be even more restricted, so anatomy should be localized from the distribution of weakness and associated taste, hearing or glandular findings.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain facial nerve course and branch functions using the main anatomical relationships, then justify your answer to: Does an isolated lesion after the stylomastoid foramen usually remove anterior tongue taste?
 
-The facial nerve gives off branches at different points in its course. A proximal lesion can affect lacrimation, stapedius function or taste as well as facial movement, depending on its level. A lesion distal to the stylomastoid foramen mainly affects motor targets supplied after that exit. The named parotid branches distribute to facial expression muscles; they are not parotid secretomotor fibers. Use spared functions to localize a lesion along the route.
+Answer: No; chorda tympani has already branched within the temporal bone. The facial nerve gives off branches at different points in its course. A proximal lesion can affect lacrimation, stapedius function or taste as well as facial movement, depending on its level. A lesion distal to the stylomastoid foramen mainly affects motor targets supplied after that exit. The named parotid branches distribute to facial expression muscles; they are not parotid secretomotor fibers. Use spared functions to localize a lesion along the route.
 
 ## Sources and editorial record
 

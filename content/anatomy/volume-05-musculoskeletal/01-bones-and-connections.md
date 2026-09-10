@@ -39,7 +39,7 @@ Bone shape predicts broad mechanical roles, but size alone does not define the c
 
 Which connection contains a joint cavity? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.
+1. Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.
 2. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection.
 3. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions.
+1. Synovial joint. Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions.
 
 2. Structural classes identify what joins the bones and whether a cavity exists. Fibrous joints can range from nearly immobile sutures to more permissive syndesmoses; cartilaginous joints also differ in function. Synovial shape influences potential movement, but ligaments, capsule and muscles determine what is actually permitted. A pivot-shaped surface alone does not make a joint freely rotate without restraint. Classify tissue, identify articular geometry and then describe the permitted movement with its axis and stabilizers.
 
@@ -97,7 +97,7 @@ Long bones act as levers and have a shaft with two ends. Short bones provide com
 
 Explain bone structure and connections between bones using the main anatomical relationships, then justify your answer to: Which connection contains a joint cavity?
 
-Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions.
+Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions.
 
 ## Sources and editorial record
 

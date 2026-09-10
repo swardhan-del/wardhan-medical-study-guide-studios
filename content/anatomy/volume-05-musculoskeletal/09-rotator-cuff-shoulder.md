@@ -39,7 +39,7 @@ The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis
 
 Which muscle is not part of the rotator cuff? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis.
+1. Answer: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis.
 2. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action.
 3. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply.
+1. Teres major. Answer: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply.
 
 2. The glenoid is relatively shallow compared with the humeral head, so muscles and capsule provide substantial dynamic support. Cuff forces compress and center the head while larger movers generate torque. The labrum deepens the rim and increases effective contact, but it does not turn the shoulder into a deeply constrained hip-like socket. Capsular support is not uniform around the joint. Understanding this balance explains how a highly mobile joint can be stable during coordinated movement yet vulnerable when forces or supports change.
 
@@ -97,7 +97,7 @@ Surfaces: humeral head and glenoid cavity. Capsule attaches to glenoid margin an
 
 Explain glenohumeral joint and rotator cuff using the main anatomical relationships, then justify your answer to: Which muscle is not part of the rotator cuff?
 
-The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply.
+Answer: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply.
 
 ## Sources and editorial record
 

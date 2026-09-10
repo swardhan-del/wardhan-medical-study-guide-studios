@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Hypoglossal XII",
-          "reason": "IX, X and XI share the jugular foramen, while XII has a separate exit. XII supplies most tongue muscles; a lower motor neuron lesion weakens the ipsilateral side and the protruded tongue tends to deviate toward it. Spinal XI supplies sternocleidomastoid and trapezius. IX has a distinctive stylopharyngeus motor target and carotid sensory role, while X supplies most palate, pharynx and larynx. Shared exits predict combinations of deficits, not identical functions."
+          "reason": "Answer: Hypoglossal XII. IX, X and XI share the jugular foramen, while XII has a separate exit. XII supplies most tongue muscles; a lower motor neuron lesion weakens the ipsilateral side and the protruded tongue tends to deviate toward it. Spinal XI supplies sternocleidomastoid and trapezius. IX has a distinctive stylopharyngeus motor target and carotid sensory role, while X supplies most palate, pharynx and larynx. Shared exits predict combinations of deficits, not identical functions."
         },
         {
           "text": "Vagus X",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain glossopharyngeal, vagus, accessory and hypoglossal nerves using the main anatomical relationships, then justify your answer to: Which nerve exits through the hypoglossal canal?",
-      "answer": "IX, X and XI share the jugular foramen, while XII has a separate exit. XII supplies most tongue muscles; a lower motor neuron lesion weakens the ipsilateral side and the protruded tongue tends to deviate toward it. Spinal XI supplies sternocleidomastoid and trapezius. IX has a distinctive stylopharyngeus motor target and carotid sensory role, while X supplies most palate, pharynx and larynx. Shared exits predict combinations of deficits, not identical functions."
+      "answer": "Answer: Hypoglossal XII. IX, X and XI share the jugular foramen, while XII has a separate exit. XII supplies most tongue muscles; a lower motor neuron lesion weakens the ipsilateral side and the protruded tongue tends to deviate toward it. Spinal XI supplies sternocleidomastoid and trapezius. IX has a distinctive stylopharyngeus motor target and carotid sensory role, while X supplies most palate, pharynx and larynx. Shared exits predict combinations of deficits, not identical functions."
     },
     "related": [
       "facial-nerve-course",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve exits through the hypoglossal canal? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "IX, X and XI share the jugular foramen, while XII has a separate exit.",
+        "Answer: Hypoglossal XII. IX, X and XI share the jugular foramen, while XII has a separate exit.",
         "XII supplies most tongue muscles; a lower motor neuron lesion weakens the ipsilateral side and the protruded tongue tends to deviate toward it. Spinal XI supplies sternocleidomastoid and trapezius. IX has a distinctive stylopharyngeus motor target and carotid sensory role, while X supplies most palate, pharynx and larynx.",
         "Shared exits predict combinations of deficits, not identical functions."
       ]

@@ -35,7 +35,7 @@ The diaphragm combines a central tendon with peripheral muscle attached to stern
 
 Which major structure passes through the esophageal hiatus? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures.
+1. Answer: Esophagus with vagal trunks. The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures.
 2. Contraction lowers the domes and expands the thorax. The main opening levels are conventionally T8 for cava, T10 for esophagus and T12 for aorta, but their construction differs: the caval opening is tendinous, the esophageal hiatus muscular, and the aorta passes posteriorly beneath the median arcuate ligament.
 3. Memorize structure and relationship with the level.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Esophagus with vagal trunks. The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures. Contraction lowers the domes and expands the thorax. The main opening levels are conventionally T8 for cava, T10 for esophagus and T12 for aorta, but their construction differs: the caval opening is tendinous, the esophageal hiatus muscular, and the aorta passes posteriorly beneath the median arcuate ligament. Memorize structure and relationship with the level.
+1. Esophagus with vagal trunks. Answer: Esophagus with vagal trunks. The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures. Contraction lowers the domes and expands the thorax. The main opening levels are conventionally T8 for cava, T10 for esophagus and T12 for aorta, but their construction differs: the caval opening is tendinous, the esophageal hiatus muscular, and the aorta passes posteriorly beneath the median arcuate ligament. Memorize structure and relationship with the level.
 
 2. The esophageal opening is formed largely within muscular crural tissue, so diaphragmatic activity contributes to the functional anti-reflux region around the esophagus. The aorta passes behind the diaphragm under an arcuate ligament rather than through the contractile central muscle in the same way. The caval opening lies in tendon and changes with diaphragmatic movement differently again. The T8-T10-T12 mnemonic is useful only when paired with these material and positional differences.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain diaphragm structure and sensation using the main anatomical relationships, then justify your answer to: Which major structure passes through the esophageal hiatus?
 
-The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures. Contraction lowers the domes and expands the thorax. The main opening levels are conventionally T8 for cava, T10 for esophagus and T12 for aorta, but their construction differs: the caval opening is tendinous, the esophageal hiatus muscular, and the aorta passes posteriorly beneath the median arcuate ligament. Memorize structure and relationship with the level.
+Answer: Esophagus with vagal trunks. The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures. Contraction lowers the domes and expands the thorax. The main opening levels are conventionally T8 for cava, T10 for esophagus and T12 for aorta, but their construction differs: the caval opening is tendinous, the esophageal hiatus muscular, and the aorta passes posteriorly beneath the median arcuate ligament. Memorize structure and relationship with the level.
 
 ## Sources and editorial record
 

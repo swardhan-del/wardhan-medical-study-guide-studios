@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Superior mesenteric artery",
-          "reason": "The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+          "reason": "Answer: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
         },
         {
           "text": "Celiac trunk",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain celiac, superior mesenteric and inferior mesenteric territories using the main anatomical relationships, then justify your answer to: Which artery primarily supplies the midgut?",
-      "answer": "The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+      "answer": "Answer: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
     },
     "related": [
       "rectum-anal-transition",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which artery primarily supplies the midgut? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The three unpaired arteries organize gut territories, but anastomoses bridge their borders.",
+        "Answer: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders.",
         "Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection.",
         "Both involve vessels, but the pressures, directions and clinical implications differ."
       ]

@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Tunica vaginalis",
-          "reason": "The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal."
+          "reason": "Answer: Tunica vaginalis. The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal."
         },
         {
           "text": "Tunica albuginea",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain external genital development and gonadal descent using the main anatomical relationships, then justify your answer to: What normally remains from the distal processus vaginalis around the testis?",
-      "answer": "The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal."
+      "answer": "Answer: Tunica vaginalis. The processus vaginalis is a peritoneal extension that precedes testicular descent. Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity. In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal."
     },
     "related": [
       "gonadal-duct-development",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What normally remains from the distal processus vaginalis around the testis? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The processus vaginalis is a peritoneal extension that precedes testicular descent.",
+        "Answer: Tunica vaginalis. The processus vaginalis is a peritoneal extension that precedes testicular descent.",
         "Its proximal connection normally closes, while the distal sac remains as tunica vaginalis. Persistent communication can permit fluid or abdominal contents to follow that route. Tunica albuginea is the fibrous testicular capsule and has a different identity.",
         "In females the gubernaculum is interrupted by the uterus and contributes to the ovarian and round ligaments, rather than carrying the ovary through the inguinal canal."
       ]

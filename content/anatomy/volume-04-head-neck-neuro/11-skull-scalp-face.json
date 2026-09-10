@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Maxillary division V2",
-          "reason": "A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+          "reason": "Answer: Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
         },
         {
           "text": "Mandibular division V3",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain skull foramina, scalp and facial layers using the main anatomical relationships, then justify your answer to: Which structure passes through foramen rotundum?",
-      "answer": "A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+      "answer": "Answer: Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
     },
     "related": [
       "larynx-voice-airway",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which structure passes through foramen rotundum? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "A skull opening is a route, not a nerve's destination.",
+        "Answer: Maxillary division V2. A skull opening is a route, not a nerve's destination.",
         "Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal.",
         "Motor movement and skin sensation require separate maps."
       ]

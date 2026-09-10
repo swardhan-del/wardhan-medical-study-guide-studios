@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Deep branch of ulnar nerve",
-          "reason": "Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions. Lumbricals share the MCP-flexion/IP-extension action but have split median and ulnar supply. Most thenar muscles use recurrent median supply, while adductor pollicis is ulnar. A pinch problem may reflect thumb adduction weakness rather than loss of opposition. Radial nerve supplies extrinsic extensors, not intrinsic hand muscles."
+          "reason": "Answer: Deep branch of ulnar nerve. Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions. Lumbricals share the MCP-flexion/IP-extension action but have split median and ulnar supply. Most thenar muscles use recurrent median supply, while adductor pollicis is ulnar. A pinch problem may reflect thumb adduction weakness rather than loss of opposition. Radial nerve supplies extrinsic extensors, not intrinsic hand muscles."
         },
         {
           "text": "Radial nerve",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain intrinsic hand muscles and functional nerve tests using the main anatomical relationships, then justify your answer to: Which nerve supplies the interossei?",
-      "answer": "Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions. Lumbricals share the MCP-flexion/IP-extension action but have split median and ulnar supply. Most thenar muscles use recurrent median supply, while adductor pollicis is ulnar. A pinch problem may reflect thumb adduction weakness rather than loss of opposition. Radial nerve supplies extrinsic extensors, not intrinsic hand muscles."
+      "answer": "Answer: Deep branch of ulnar nerve. Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions. Lumbricals share the MCP-flexion/IP-extension action but have split median and ulnar supply. Most thenar muscles use recurrent median supply, while adductor pollicis is ulnar. A pinch problem may reflect thumb adduction weakness rather than loss of opposition. Radial nerve supplies extrinsic extensors, not intrinsic hand muscles."
     },
     "related": [
       "wrist-carpal-tunnel",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve supplies the interossei? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions.",
+        "Answer: Deep branch of ulnar nerve. Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions.",
         "Lumbricals share the MCP-flexion/IP-extension action but have split median and ulnar supply. Most thenar muscles use recurrent median supply, while adductor pollicis is ulnar. A pinch problem may reflect thumb adduction weakness rather than loss of opposition.",
         "Radial nerve supplies extrinsic extensors, not intrinsic hand muscles."
       ]

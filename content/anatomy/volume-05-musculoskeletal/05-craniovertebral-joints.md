@@ -35,7 +35,7 @@ The atlas forms a ring around the dens and articulates with occipital condyles a
 
 What prevents the dens from moving posteriorly against the spinal cord in normal alignment? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The atlas forms a ring around the dens and articulates with occipital condyles above.
+1. Answer: Transverse ligament of the atlas. The atlas forms a ring around the dens and articulates with occipital condyles above.
 2. Atlanto-occipital movement chiefly supports nodding, while atlantoaxial rotation contributes substantially to turning the head. The transverse ligament holds the dens against the anterior arch; alar ligaments restrain excessive rotation.
 3. These are stabilizing relationships around neural structures, so movement should be understood as constrained motion rather than a free pivot without limits.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Transverse ligament of the atlas. The atlas forms a ring around the dens and articulates with occipital condyles above. Atlanto-occipital movement chiefly supports nodding, while atlantoaxial rotation contributes substantially to turning the head. The transverse ligament holds the dens against the anterior arch; alar ligaments restrain excessive rotation. These are stabilizing relationships around neural structures, so movement should be understood as constrained motion rather than a free pivot without limits.
+1. Transverse ligament of the atlas. Answer: Transverse ligament of the atlas. The atlas forms a ring around the dens and articulates with occipital condyles above. Atlanto-occipital movement chiefly supports nodding, while atlantoaxial rotation contributes substantially to turning the head. The transverse ligament holds the dens against the anterior arch; alar ligaments restrain excessive rotation. These are stabilizing relationships around neural structures, so movement should be understood as constrained motion rather than a free pivot without limits.
 
 2. Occipital condyles articulate with atlas to permit chiefly flexion-extension and some lateral flexion. Atlas rotates around the dens through the median and paired lateral atlantoaxial joints. Combining them into one head-on-spine hinge obscures how rotation occurs and which ligaments restrain it. The spinal cord and vertebral arteries lie close to these moving structures, making the limits of motion anatomically important. A clear diagram separates the two levels and shows the dens as part of axis rather than atlas.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain atlas, axis and craniovertebral movement using the main anatomical relationships, then justify your answer to: What prevents the dens from moving posteriorly against the spinal cord in normal alignment?
 
-The atlas forms a ring around the dens and articulates with occipital condyles above. Atlanto-occipital movement chiefly supports nodding, while atlantoaxial rotation contributes substantially to turning the head. The transverse ligament holds the dens against the anterior arch; alar ligaments restrain excessive rotation. These are stabilizing relationships around neural structures, so movement should be understood as constrained motion rather than a free pivot without limits.
+Answer: Transverse ligament of the atlas. The atlas forms a ring around the dens and articulates with occipital condyles above. Atlanto-occipital movement chiefly supports nodding, while atlantoaxial rotation contributes substantially to turning the head. The transverse ligament holds the dens against the anterior arch; alar ligaments restrain excessive rotation. These are stabilizing relationships around neural structures, so movement should be understood as constrained motion rather than a free pivot without limits.
 
 ## Sources and editorial record
 

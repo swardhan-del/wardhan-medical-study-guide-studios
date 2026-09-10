@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "270 degrees counterclockwise",
-          "reason": "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+          "reason": "Answer: 270 degrees counterclockwise. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
         },
         {
           "text": "90 degrees clockwise",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain midgut herniation, rotation and fixation using the main anatomical relationships, then justify your answer to: From the front, what is the conventional total midgut rotation around the SMA?",
-      "answer": "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+      "answer": "Answer: 270 degrees counterclockwise. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
     },
     "related": [
       "foregut-development",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "From the front, what is the conventional total midgut rotation around the SMA? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return.",
+        "Answer: 270 degrees counterclockwise. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return.",
         "State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels.",
         "Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
       ]

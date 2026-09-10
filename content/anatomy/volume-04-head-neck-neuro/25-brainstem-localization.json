@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "It can affect a local cranial pathway and corticospinal fibers before their decussation",
-          "reason": "Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+          "reason": "Answer: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
         },
         {
           "text": "Every cranial nerve crosses with the pyramids",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain brainstem landmarks and crossed findings using the main anatomical relationships, then justify your answer to: Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness?",
-      "answer": "Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+      "answer": "Answer: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
     },
     "related": [
       "basal-ganglia-diencephalon",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Localization combines level, side and pathway.",
+        "Answer: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway.",
         "Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities.",
         "A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
       ]

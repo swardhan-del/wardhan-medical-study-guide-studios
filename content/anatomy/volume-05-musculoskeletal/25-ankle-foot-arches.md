@@ -35,7 +35,7 @@ The talocrural mortise mainly permits dorsiflexion and plantarflexion. Inversion
 
 Where do inversion and eversion mainly occur? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The talocrural mortise mainly permits dorsiflexion and plantarflexion.
+1. Answer: Subtalar and transverse tarsal joints. The talocrural mortise mainly permits dorsiflexion and plantarflexion.
 2. Inversion and eversion involve joints below and distal to the talus, so ankle movement is not a single-joint process. The medial longitudinal arch depends on bone shape, plantar ligaments and aponeurosis, plus dynamic muscular support. The tarsal tunnel lies behind the medial malleolus and carries flexor tendons and the posterior tibial neurovascular bundle.
 3. Distinguish the arch-support system from the structures merely passing nearby.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Subtalar and transverse tarsal joints. The talocrural mortise mainly permits dorsiflexion and plantarflexion. Inversion and eversion involve joints below and distal to the talus, so ankle movement is not a single-joint process. The medial longitudinal arch depends on bone shape, plantar ligaments and aponeurosis, plus dynamic muscular support. The tarsal tunnel lies behind the medial malleolus and carries flexor tendons and the posterior tibial neurovascular bundle. Distinguish the arch-support system from the structures merely passing nearby.
+1. Subtalar and transverse tarsal joints. Answer: Subtalar and transverse tarsal joints. The talocrural mortise mainly permits dorsiflexion and plantarflexion. Inversion and eversion involve joints below and distal to the talus, so ankle movement is not a single-joint process. The medial longitudinal arch depends on bone shape, plantar ligaments and aponeurosis, plus dynamic muscular support. The tarsal tunnel lies behind the medial malleolus and carries flexor tendons and the posterior tibial neurovascular bundle. Distinguish the arch-support system from the structures merely passing nearby.
 
 2. The plantar aponeurosis acts as a tensile tie between hindfoot and forefoot, while toe extension can increase its tension through the windlass mechanism. Long tendons and intrinsic muscles provide dynamic support, and ligaments such as the plantar calcaneonavicular ligament support particular bony relationships. No single structure alone explains the arch under all loads. Distinguish static connective-tissue restraint, active muscular control and bony geometry when interpreting an arch diagram or a change during weight bearing.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain ankle, tarsal tunnel and foot arches using the main anatomical relationships, then justify your answer to: Where do inversion and eversion mainly occur?
 
-The talocrural mortise mainly permits dorsiflexion and plantarflexion. Inversion and eversion involve joints below and distal to the talus, so ankle movement is not a single-joint process. The medial longitudinal arch depends on bone shape, plantar ligaments and aponeurosis, plus dynamic muscular support. The tarsal tunnel lies behind the medial malleolus and carries flexor tendons and the posterior tibial neurovascular bundle. Distinguish the arch-support system from the structures merely passing nearby.
+Answer: Subtalar and transverse tarsal joints. The talocrural mortise mainly permits dorsiflexion and plantarflexion. Inversion and eversion involve joints below and distal to the talus, so ankle movement is not a single-joint process. The medial longitudinal arch depends on bone shape, plantar ligaments and aponeurosis, plus dynamic muscular support. The tarsal tunnel lies behind the medial malleolus and carries flexor tendons and the posterior tibial neurovascular bundle. Distinguish the arch-support system from the structures merely passing nearby.
 
 ## Sources and editorial record
 

@@ -51,7 +51,7 @@ The trigone is a smooth internal region, not the whole bladder base viewed from 
 
 What marks the three corners of the bladder trigone? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The trigone is a smooth internal region, not the whole bladder base viewed from outside.
+1. Answer: Two ureteric openings and the internal urethral opening. The trigone is a smooth internal region, not the whole bladder base viewed from outside.
 2. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening.
 3. Use the same proximal-to-distal direction when comparing them.
 
@@ -91,7 +91,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Two ureteric openings and the internal urethral opening. The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them.
+1. Two ureteric openings and the internal urethral opening. Answer: Two ureteric openings and the internal urethral opening. The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them.
 
 2. An empty bladder lies mainly within the pelvis behind the pubic symphysis. As it fills, its superior part rises and changes the position of the peritoneal reflection and adjacent viscera. The neck remains relatively fixed compared with the expanding body. Thus a single outline cannot represent every filling state. The internal trigone remains a useful outlet landmark, while the detrusor wall expands and later contracts. Always state whether an anatomical description assumes an empty or distended bladder.
 
@@ -109,7 +109,7 @@ Empty bladder lies mostly in pelvis; full bladder rises into abdomen. Apex point
 
 Explain bladder, trigone and urethral differences using the main anatomical relationships, then justify your answer to: What marks the three corners of the bladder trigone?
 
-The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them.
+Answer: Two ureteric openings and the internal urethral opening. The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ The annulus resists tensile stresses around a hydrated nucleus, distributing com
 
 A usual posterolateral L4-L5 disc herniation most often affects which root? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads.
+1. Answer: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads.
 2. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible.
 3. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies.
+1. Traversing L5 root. Answer: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies.
 
 2. The ligament reinforces posterior vertebral-body and disc surfaces but does not create a uniform impenetrable barrier around the entire disc circumference. Posterolateral regions can remain vulnerable, and annular degeneration or loading patterns influence failure. The location of displaced disc material determines which root is threatened. Thus naming the ligament does not predict the outcome without a sectional map. Distinguish the annulus, ligament, canal, foraminal exit and traversing root before reasoning from a disc level to a symptom distribution.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain intervertebral discs and spinal ligaments using the main anatomical relationships, then justify your answer to: A usual posterolateral L4-L5 disc herniation most often affects which root?
 
-The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies.
+Answer: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies.
 
 ## Sources and editorial record
 

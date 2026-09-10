@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Uterine artery crosses superior to the ureter",
-          "reason": "Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament."
+          "reason": "Answer: Uterine artery crosses superior to the ureter. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament."
         },
         {
           "text": "Ureter passes through the uterine cavity",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain uterus, supports and uterine vessel relations using the main anatomical relationships, then justify your answer to: Which relation is especially important beside the cervix?",
-      "answer": "Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament."
+      "answer": "Answer: Uterine artery crosses superior to the ureter. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix. Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically. Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament."
     },
     "related": [
       "ovary-uterine-tube",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which relation is especially important beside the cervix? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix.",
+        "Answer: Uterine artery crosses superior to the ureter. Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix.",
         "Support comes from coordinated pelvic-floor, fascial and ligamentous structures. The broad ligament is mainly a peritoneal fold, not the principal load-bearing support. Cardinal and uterosacral support and the levator complex matter more mechanically.",
         "Uterine lymph can follow more than one route, including a fundal route toward superficial inguinal nodes along the round ligament."
       ]

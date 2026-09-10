@@ -35,7 +35,7 @@ The cavernous sinus is lateral to the sella. III, IV, V1 and V2 lie in its later
 
 Which ocular motor nerve runs beside the internal carotid artery within the cavernous sinus proper? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The cavernous sinus is lateral to the sella.
+1. Answer: Abducens VI. The cavernous sinus is lateral to the sella.
 2. III, IV, V1 and V2 lie in its lateral wall in superior-to-inferior order; VI travels near the carotid artery within the venous compartment. This makes combinations of ocular movement and facial sensory changes anatomically plausible. Venous drainage connects to ophthalmic veins and petrosal routes, but the sinus is not a CSF reservoir.
 3. A complete localization also considers nearby optic and pituitary structures separately.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Abducens VI. The cavernous sinus is lateral to the sella. III, IV, V1 and V2 lie in its lateral wall in superior-to-inferior order; VI travels near the carotid artery within the venous compartment. This makes combinations of ocular movement and facial sensory changes anatomically plausible. Venous drainage connects to ophthalmic veins and petrosal routes, but the sinus is not a CSF reservoir. A complete localization also considers nearby optic and pituitary structures separately.
+1. Abducens VI. Answer: Abducens VI. The cavernous sinus is lateral to the sella. III, IV, V1 and V2 lie in its lateral wall in superior-to-inferior order; VI travels near the carotid artery within the venous compartment. This makes combinations of ocular movement and facial sensory changes anatomically plausible. Venous drainage connects to ophthalmic veins and petrosal routes, but the sinus is not a CSF reservoir. A complete localization also considers nearby optic and pituitary structures separately.
 
 2. A typical route runs toward the confluence, through a transverse sinus and then sigmoid sinus to the jugular foramen and internal jugular vein. Individual dominance and communications vary, so a perfectly symmetrical drawing is a simplification. The straight sinus collects deep venous pathways as well as inferior sagittal drainage. These venous channels are contained by dura and lack the same wall structure as ordinary veins. They transport blood, whereas nearby subarachnoid spaces transport CSF.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain dural venous sinuses and cavernous sinus relations using the main anatomical relationships, then justify your answer to: Which ocular motor nerve runs beside the internal carotid artery within the cavernous sinus proper?
 
-The cavernous sinus is lateral to the sella. III, IV, V1 and V2 lie in its lateral wall in superior-to-inferior order; VI travels near the carotid artery within the venous compartment. This makes combinations of ocular movement and facial sensory changes anatomically plausible. Venous drainage connects to ophthalmic veins and petrosal routes, but the sinus is not a CSF reservoir. A complete localization also considers nearby optic and pituitary structures separately.
+Answer: Abducens VI. The cavernous sinus is lateral to the sella. III, IV, V1 and V2 lie in its lateral wall in superior-to-inferior order; VI travels near the carotid artery within the venous compartment. This makes combinations of ocular movement and facial sensory changes anatomically plausible. Venous drainage connects to ophthalmic veins and petrosal routes, but the sinus is not a CSF reservoir. A complete localization also considers nearby optic and pituitary structures separately.
 
 ## Sources and editorial record
 

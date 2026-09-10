@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Vagus nerve",
-          "reason": "The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity."
+          "reason": "Answer: Vagus nerve. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity."
         },
         {
           "text": "Cervical sympathetic trunk",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain cervical fascia, carotid sheath and sympathetic trunk using the main anatomical relationships, then justify your answer to: Which nerve lies within the carotid sheath with the artery and internal jugular vein?",
-      "answer": "The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity."
+      "answer": "Answer: Vagus nerve. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it. Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum. Do not merge every posterior pharyngeal space into one cavity."
     },
     "related": [
       "neck-triangles",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which nerve lies within the carotid sheath with the artery and internal jugular vein? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it.",
+        "Answer: Vagus nerve. The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it.",
         "Fascial planes explain how disease can spread beyond its surface origin. Distinguish the retropharyngeal space from the deeper danger space: terminology and inferior limits differ among descriptions, but the danger space provides a route toward the posterior mediastinum.",
         "Do not merge every posterior pharyngeal space into one cavity."
       ]

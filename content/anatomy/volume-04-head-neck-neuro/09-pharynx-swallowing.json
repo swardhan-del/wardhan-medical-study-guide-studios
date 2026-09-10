@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Elevation of the soft palate",
-          "reason": "Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+          "reason": "Answer: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
         },
         {
           "text": "Opening of the auditory tube alone",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain pharynx, tonsils and swallowing using the main anatomical relationships, then justify your answer to: What closes the nasopharyngeal route during swallowing?",
-      "answer": "Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+      "answer": "Answer: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
     },
     "related": [
       "nose-sinuses",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "What closes the nasopharyngeal route during swallowing? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Swallowing coordinates several barriers and propulsive actions.",
+        "Answer: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions.",
         "The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X.",
         "A single nerve injury can disrupt several coordinated actions."
       ]

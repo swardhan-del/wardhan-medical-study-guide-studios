@@ -35,7 +35,7 @@ Most anterior forearm muscles receive median supply, but flexor carpi ulnaris an
 
 Which nerve supplies flexor carpi ulnaris? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.
+1. Answer: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.
 2. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins.
 3. Surface and deep structures must be placed in separate layers.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers.
+1. Ulnar nerve. Answer: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers.
 
 2. The radius rotates relative to ulna at proximal and distal radioulnar joints, carrying the hand with it. In pronation the radius crosses the ulna; in supination they are approximately parallel. The wrist articulations then position the hand on this rotating framework. Supinator and biceps contribute to supination, while pronator teres and quadratus contribute to pronation. A drawing that puts all rotation at the radiocarpal joint would miss the long-bone mechanics and the two radioulnar articulations.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain cubital fossa and forearm compartments using the main anatomical relationships, then justify your answer to: Which nerve supplies flexor carpi ulnaris?
 
-Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers.
+Answer: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers.
 
 ## Sources and editorial record
 

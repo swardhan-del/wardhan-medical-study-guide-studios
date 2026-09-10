@@ -35,7 +35,7 @@ Localization combines level, side and pathway. Cranial nerve nuclei or exiting f
 
 Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Localization combines level, side and pathway.
+1. Answer: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway.
 2. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities.
 3. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis.
+1. It can affect a local cranial pathway and corticospinal fibers before their decussation. Answer: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis.
 
 2. Different pathways cross at different levels and occupy different positions. Dorsal-column information crosses in the medulla before ascending as medial lemniscus, while anterolateral pain-temperature pathways have already crossed in the spinal cord. Trigeminal facial sensation has its own nuclei and ascending routes. A lesion can therefore combine facial and body findings with different sides and modalities. Begin with the affected tract and its crossing history rather than applying a blanket rule that all brainstem sensation is contralateral.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain brainstem landmarks and crossed findings using the main anatomical relationships, then justify your answer to: Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness?
 
-Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis.
+Answer: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis.
 
 ## Sources and editorial record
 

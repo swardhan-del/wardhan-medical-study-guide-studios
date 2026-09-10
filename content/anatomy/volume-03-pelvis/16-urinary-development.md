@@ -45,7 +45,7 @@ Permanent kidney development requires reciprocal interaction between ureteric bu
 
 Which structure forms the ureter and collecting-system branches? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme.
+1. Answer: Ureteric bud. Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme.
 2. The bud forms ureter, pelvis, calyces and collecting ducts; mesenchyme forms nephron epithelia through the distal tubule. Positional ascent is accompanied by changing arterial supply, explaining accessory renal arteries. Most bladder epithelium derives from urogenital sinus endoderm.
 3. Classical diagrams simplify trigonal and distal urethral development; distinguish a teaching model from a claim that every adult tissue has one uncontroversial lineage.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Ureteric bud. Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme. The bud forms ureter, pelvis, calyces and collecting ducts; mesenchyme forms nephron epithelia through the distal tubule. Positional ascent is accompanied by changing arterial supply, explaining accessory renal arteries. Most bladder epithelium derives from urogenital sinus endoderm. Classical diagrams simplify trigonal and distal urethral development; distinguish a teaching model from a claim that every adult tissue has one uncontroversial lineage.
+1. Ureteric bud. Answer: Ureteric bud. Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme. The bud forms ureter, pelvis, calyces and collecting ducts; mesenchyme forms nephron epithelia through the distal tubule. Positional ascent is accompanied by changing arterial supply, explaining accessory renal arteries. Most bladder epithelium derives from urogenital sinus endoderm. Classical diagrams simplify trigonal and distal urethral development; distinguish a teaching model from a claim that every adult tissue has one uncontroversial lineage.
 
 2. The ureteric bud and metanephric mesenchyme signal to each other: branching of the collecting system and differentiation of nephron elements depend on their interaction. One structure does not simply grow into a fully formed kidney. Nephrons must connect to collecting ducts to create a continuous urinary route. During positional ascent, successive arterial supplies develop and some may persist as accessory vessels. Development therefore explains both the different epithelial components and common adult vascular variations.
 
@@ -103,7 +103,7 @@ Intermediate mesoderm lies between paraxial and lateral plate mesoderm. Nephroge
 
 Explain development of kidneys, bladder and urethra using the main anatomical relationships, then justify your answer to: Which structure forms the ureter and collecting-system branches?
 
-Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme. The bud forms ureter, pelvis, calyces and collecting ducts; mesenchyme forms nephron epithelia through the distal tubule. Positional ascent is accompanied by changing arterial supply, explaining accessory renal arteries. Most bladder epithelium derives from urogenital sinus endoderm. Classical diagrams simplify trigonal and distal urethral development; distinguish a teaching model from a claim that every adult tissue has one uncontroversial lineage.
+Answer: Ureteric bud. Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme. The bud forms ureter, pelvis, calyces and collecting ducts; mesenchyme forms nephron epithelia through the distal tubule. Positional ascent is accompanied by changing arterial supply, explaining accessory renal arteries. Most bladder epithelium derives from urogenital sinus endoderm. Classical diagrams simplify trigonal and distal urethral development; distinguish a teaching model from a claim that every adult tissue has one uncontroversial lineage.
 
 ## Sources and editorial record
 

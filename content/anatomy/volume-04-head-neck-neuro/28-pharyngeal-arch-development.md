@@ -45,7 +45,7 @@ Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal ti
 
 Which pouch gives rise to the thymic epithelial component and inferior parathyroids? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves.
+1. Answer: Third pouch. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves.
 2. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes.
 3. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Third pouch. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists.
+1. Third pouch. Answer: Third pouch. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists.
 
 2. The nerves become related to developing arch arteries while the heart and great vessels change position. Persistence of the left distal sixth-arch connection as ductus arteriosus helps retain the left recurrent route beneath the aortic arch region. On the right, regression of the corresponding distal connection leaves the nerve looping under the right subclavian route. This links adult nerve topography with vascular remodeling. The explanation concerns developmental relationships, not the nerve being pulled randomly downward after its adult course is established.
 
@@ -103,7 +103,7 @@ First arch: maxillary/mandibular structures; muscles of mastication; nerve V. Se
 
 Explain pharyngeal arches, pouches and arch arteries using the main anatomical relationships, then justify your answer to: Which pouch gives rise to the thymic epithelial component and inferior parathyroids?
 
-Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists.
+Answer: Third pouch. Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves. The third-pouch thymic component descends and carries its parathyroid partner inferiorly, explaining why third-pouch parathyroids end below fourth-pouch parathyroids. Arch arteries remodel asymmetrically, contributing to the different recurrent laryngeal routes. The arch-number mnemonic must specify whether it refers to a muscle, nerve, artery, pouch or groove; these are related but distinct derivative lists.
 
 ## Sources and editorial record
 

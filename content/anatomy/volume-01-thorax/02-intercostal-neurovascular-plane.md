@@ -35,7 +35,7 @@ The main bundle lies near the inferior border of the rib above, with vein, arter
 
 Where does the main intercostal neurovascular bundle run? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The main bundle lies near the inferior border of the rib above, with vein, artery and nerve ordered superior to inferior.
+1. Answer: Between internal and innermost intercostal layers. The main bundle lies near the inferior border of the rib above, with vein, artery and nerve ordered superior to inferior.
 2. Collateral branches also exist, so the main-bundle mnemonic does not define a risk-free procedural path. Intercostal nerves are anterior rami of T1-T11; the T12 anterior ramus is subcostal. Lower intercostal nerves continue into the abdominal wall.
 3. Relate the nerve's segmental origin to both its muscular and cutaneous targets.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Between internal and innermost intercostal layers. The main bundle lies near the inferior border of the rib above, with vein, artery and nerve ordered superior to inferior. Collateral branches also exist, so the main-bundle mnemonic does not define a risk-free procedural path. Intercostal nerves are anterior rami of T1-T11; the T12 anterior ramus is subcostal. Lower intercostal nerves continue into the abdominal wall. Relate the nerve's segmental origin to both its muscular and cutaneous targets.
+1. Between internal and innermost intercostal layers. Answer: Between internal and innermost intercostal layers. The main bundle lies near the inferior border of the rib above, with vein, artery and nerve ordered superior to inferior. Collateral branches also exist, so the main-bundle mnemonic does not define a risk-free procedural path. Intercostal nerves are anterior rami of T1-T11; the T12 anterior ramus is subcostal. Lower intercostal nerves continue into the abdominal wall. Relate the nerve's segmental origin to both its muscular and cutaneous targets.
 
 2. The thoracic wall receives branches approaching from the aortic side posteriorly and the internal thoracic system anteriorly. Their communications supply the elongated intercostal space and create collateral routes. The highest and lowest spaces differ from the standard middle-space pattern, so one drawing should be labeled as typical rather than universal. Nerves and vessels share a plane but have different origins and directions. Trace arterial inflow separately from venous return and segmental nerve distribution.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain intercostal muscles and supply using the main anatomical relationships, then justify your answer to: Where does the main intercostal neurovascular bundle run?
 
-The main bundle lies near the inferior border of the rib above, with vein, artery and nerve ordered superior to inferior. Collateral branches also exist, so the main-bundle mnemonic does not define a risk-free procedural path. Intercostal nerves are anterior rami of T1-T11; the T12 anterior ramus is subcostal. Lower intercostal nerves continue into the abdominal wall. Relate the nerve's segmental origin to both its muscular and cutaneous targets.
+Answer: Between internal and innermost intercostal layers. The main bundle lies near the inferior border of the rib above, with vein, artery and nerve ordered superior to inferior. Collateral branches also exist, so the main-bundle mnemonic does not define a risk-free procedural path. Intercostal nerves are anterior rami of T1-T11; the T12 anterior ramus is subcostal. Lower intercostal nerves continue into the abdominal wall. Relate the nerve's segmental origin to both its muscular and cutaneous targets.
 
 ## Sources and editorial record
 

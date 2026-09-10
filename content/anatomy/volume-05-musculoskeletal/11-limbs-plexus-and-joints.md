@@ -35,7 +35,7 @@ Roots combine into trunks, split into anterior and posterior divisions, and reco
 
 Relative to what are the brachial plexus cords named? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords.
+1. Answer: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords.
 2. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles.
 3. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships.
+1. Second part of the axillary artery. Answer: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships.
 
 2. The upper trunk contains contributions that later distribute into several terminal nerves. Injury there can affect shoulder abduction, elbow flexion and other C5-C6-dominant actions through multiple routes. An isolated axillary lesion primarily affects its own targets such as deltoid and teres minor with a more limited sensory territory. Root and trunk patterns are therefore broader than one distal nerve territory. To localize, trace the affected muscles backward to their nerves and look for the lowest common branching point.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain brachial plexus from roots to terminal nerves using the main anatomical relationships, then justify your answer to: Relative to what are the brachial plexus cords named?
 
-Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships.
+Answer: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ The porta carries portal inflow, arterial inflow and biliary outflow, with nerve
 
 Do the hepatic veins normally pass through the porta hepatis? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.
+1. Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.
 2. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava.
 3. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them.
+1. No; they drain directly into the inferior vena cava. Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them.
 
 2. Surface ligaments divide visible lobes, but functional segments are organized around portal pedicles containing branches of portal vein, hepatic artery and bile duct. Major hepatic veins pass between territories and drain posteriorly. This arrangement explains how one segment can have its own inflow and biliary drainage while sharing venous boundary planes. The caudate region has particularly independent connections. A beginner should first distinguish inflow, outflow and surface landmarks before trying to memorize numbered segment positions on a flat drawing.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain liver surfaces, porta hepatis and functional divisions using the main anatomical relationships, then justify your answer to: Do the hepatic veins normally pass through the porta hepatis?
 
-The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them.
+Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them.
 
 ## Sources and editorial record
 

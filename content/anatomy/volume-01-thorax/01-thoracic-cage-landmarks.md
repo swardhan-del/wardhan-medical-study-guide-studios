@@ -29,13 +29,13 @@ Each rib rotates through its vertebral articulations with a three-dimensional ax
 
 ## Apply the anatomy and resolve a common confusion
 
-The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin.
+The second costal cartilage articulates at the sternal angle, so it is the landmark from which the other ribs can be counted. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin.
 
 ## Worked example
 
 Which costal cartilage is identified at the sternal angle? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting.
+1. The second costal cartilage articulates at the sternal angle, the junction of the manubrium and body of the sternum. This gives a palpable starting point for rib counting.
 2. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person.
 3. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin.
+1. Second. Answer: Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin.
 
 2. Each rib rotates through its vertebral articulations with a three-dimensional axis. The visible result includes changes in both anteroposterior and transverse chest dimensions, with different emphases at different levels. Pump-handle and bucket-handle descriptions isolate components to make the movement understandable. Cartilage compliance and sternum movement also contribute. A rib is therefore not a simple lever restricted to one plane, and normal respiration combines rib motion with diaphragm descent and changes in abdominal pressure.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain thoracic cage and landmarks using the main anatomical relationships, then justify your answer to: Which costal cartilage is identified at the sternal angle?
 
-The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin.
+Answer: Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin.
 
 ## Sources and editorial record
 

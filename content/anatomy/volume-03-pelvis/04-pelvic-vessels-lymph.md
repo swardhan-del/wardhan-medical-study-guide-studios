@@ -39,7 +39,7 @@ Internal iliac branching is variable, so start with territories and then learn t
 
 Which vessel primarily supplies the perineum after leaving and re-entering through the sciatic foramina? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Internal iliac branching is variable, so start with territories and then learn the usual named branches.
+1. Answer: Internal pudendal artery. Internal iliac branching is variable, so start with territories and then learn the usual named branches.
 2. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development.
 3. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Internal pudendal artery. Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint.
+1. Internal pudendal artery. Answer: Internal pudendal artery. Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint.
 
 2. Ovaries and testes develop on the posterior abdominal wall and retain lymphatic connections toward lumbar nodes. Other pelvic organs drain through internal, external or sacral iliac routes according to region and connections. The uterine fundus can also use ovarian-associated and round-ligament pathways, illustrating overlapping routes. Therefore present-day organ location alone cannot predict the first node group. Tissue origin and vascular companions provide additional clues, but a complete map should acknowledge communications rather than assigning one exclusive node to every organ.
 
@@ -97,7 +97,7 @@ Parietal branches supply pelvic wall, gluteal region, and perineum. Visceral bra
 
 Explain pelvic vessels and lymphatic drainage using the main anatomical relationships, then justify your answer to: Which vessel primarily supplies the perineum after leaving and re-entering through the sciatic foramina?
 
-Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint.
+Answer: Internal pudendal artery. Internal iliac branching is variable, so start with territories and then learn the usual named branches. Internal pudendal branches accompany the pudendal nerve into the perineum; superior gluteal branches pass above piriformis. Lymphatic drainage is not a simple copy of arterial supply: organs may have multiple routes, and gonads retain lumbar drainage related to development. Follow a node chain toward common iliac and lumbar nodes rather than treating each node group as an isolated endpoint.
 
 ## Sources and editorial record
 

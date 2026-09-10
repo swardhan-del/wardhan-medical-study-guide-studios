@@ -39,7 +39,7 @@ CSF flows from lateral ventricles through interventricular foramina to the third
 
 What connects the third and fourth ventricles? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth.
+1. Answer: Cerebral aqueduct. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth.
 2. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes.
 3. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections.
 
@@ -79,7 +79,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Cerebral aqueduct. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections.
+1. Cerebral aqueduct. Answer: Cerebral aqueduct. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections.
 
 2. A blockage interrupts a connected fluid route, so cavities upstream can enlarge differently from those downstream. Aqueduct obstruction separates lateral and third ventricles from the fourth-ventricular outlet route. Obstruction farther downstream can affect a broader ventricular pattern. This is a topological reasoning exercise, not a diagnosis based only on ventricle size. CSF production, drainage, tissue compliance and chronicity also influence appearance, so the map provides one necessary part of interpretation rather than the whole explanation.
 
@@ -97,7 +97,7 @@ Lateral ventricles communicate with third ventricle through foramina of Monro. T
 
 Explain ventricles, csf flow and internal landmarks using the main anatomical relationships, then justify your answer to: What connects the third and fourth ventricles?
 
-CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections.
+Answer: Cerebral aqueduct. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections.
 
 ## Sources and editorial record
 

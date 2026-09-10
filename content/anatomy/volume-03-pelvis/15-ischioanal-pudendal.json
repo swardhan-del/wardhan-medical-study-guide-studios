@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Lateral wall in obturator fascia",
-          "reason": "The ischioanal fossa contains fat that permits expansion of the anal canal. Its medial boundary includes levator ani and the external sphincter; laterally lie obturator internus and its fascia. Inferior rectal branches cross the fat toward the anal region, whereas the main pudendal bundle travels in the lateral fascial canal. Distinguish the smooth internal sphincter from the skeletal external sphincter, and the pectinate mucosal line from the pelvic-floor boundary."
+          "reason": "Answer: Lateral wall in obturator fascia. The ischioanal fossa contains fat that permits expansion of the anal canal. Its medial boundary includes levator ani and the external sphincter; laterally lie obturator internus and its fascia. Inferior rectal branches cross the fat toward the anal region, whereas the main pudendal bundle travels in the lateral fascial canal. Distinguish the smooth internal sphincter from the skeletal external sphincter, and the pectinate mucosal line from the pelvic-floor boundary."
         },
         {
           "text": "Medial wall inside the anal lumen",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain ischioanal fossa, pudendal canal and anal region using the main anatomical relationships, then justify your answer to: In which wall of the ischioanal fossa is the pudendal canal located?",
-      "answer": "The ischioanal fossa contains fat that permits expansion of the anal canal. Its medial boundary includes levator ani and the external sphincter; laterally lie obturator internus and its fascia. Inferior rectal branches cross the fat toward the anal region, whereas the main pudendal bundle travels in the lateral fascial canal. Distinguish the smooth internal sphincter from the skeletal external sphincter, and the pectinate mucosal line from the pelvic-floor boundary."
+      "answer": "Answer: Lateral wall in obturator fascia. The ischioanal fossa contains fat that permits expansion of the anal canal. Its medial boundary includes levator ani and the external sphincter; laterally lie obturator internus and its fascia. Inferior rectal branches cross the fat toward the anal region, whereas the main pudendal bundle travels in the lateral fascial canal. Distinguish the smooth internal sphincter from the skeletal external sphincter, and the pectinate mucosal line from the pelvic-floor boundary."
     },
     "related": [
       "perineal-spaces",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "In which wall of the ischioanal fossa is the pudendal canal located? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The ischioanal fossa contains fat that permits expansion of the anal canal.",
+        "Answer: Lateral wall in obturator fascia. The ischioanal fossa contains fat that permits expansion of the anal canal.",
         "Its medial boundary includes levator ani and the external sphincter; laterally lie obturator internus and its fascia. Inferior rectal branches cross the fat toward the anal region, whereas the main pudendal bundle travels in the lateral fascial canal.",
         "Distinguish the smooth internal sphincter from the skeletal external sphincter, and the pectinate mucosal line from the pelvic-floor boundary."
       ]

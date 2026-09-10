@@ -42,7 +42,7 @@
       "options": [
         {
           "text": "Minor calyx",
-          "reason": "Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+          "reason": "Answer: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
         },
         {
           "text": "Renal vein",
@@ -57,7 +57,7 @@
     },
     "recall": {
       "prompt": "Explain kidney coverings, hilum and collecting system using the main anatomical relationships, then justify your answer to: Which structure directly receives urine from a renal papilla?",
-      "answer": "Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+      "answer": "Answer: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
     },
     "related": [
       "pelvic-vessels-lymph",
@@ -77,7 +77,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which structure directly receives urine from a renal papilla? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "Urine and blood travel through different branching systems.",
+        "Answer: Minor calyx. Urine and blood travel through different branching systems.",
         "Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis.",
         "This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
       ]

@@ -35,7 +35,7 @@ The mediastinum lies between the pleural sacs and extends from inlet to diaphrag
 
 Which structure belongs principally to the middle mediastinum? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm.
+1. Answer: Heart within pericardium. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm.
 2. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC.
 3. Similar names do not imply symmetrical arterial and venous branching.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Heart within pericardium. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching.
+1. Heart within pericardium. Answer: Heart within pericardium. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching.
 
 2. Living structures move with respiration, posture and changes in organ volume. The T4-T5 association is a conventional reference that organizes the mediastinum and several important landmarks, including the tracheal bifurcation and aortic arch region. Individual measurements vary. The plane is most useful as a relational guide, not as proof that every listed structure occupies one mathematical slice. State the approximate level and use neighboring structures to confirm orientation.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain mediastinal compartments and vessels using the main anatomical relationships, then justify your answer to: Which structure belongs principally to the middle mediastinum?
 
-The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching.
+Answer: Heart within pericardium. The mediastinum lies between the pleural sacs and extends from inlet to diaphragm. The sternal-angle plane separates superior from inferior parts; pericardium then helps divide the inferior part into anterior, middle and posterior regions. The aortic arch gives brachiocephalic, left common carotid and left subclavian branches in the usual pattern. Brachiocephalic veins instead form by internal jugular-subclavian union and join as the SVC. Similar names do not imply symmetrical arterial and venous branching.
 
 ## Sources and editorial record
 

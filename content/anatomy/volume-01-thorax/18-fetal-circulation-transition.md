@@ -35,7 +35,7 @@ The placenta provides exchange, while fetal shunts redistribute blood around org
 
 What does the ductus arteriosus connect in fetal circulation? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles.
+1. Answer: Pulmonary trunk region to descending aorta. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles.
 2. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows.
 3. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Pulmonary trunk region to descending aorta. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath.
+1. Pulmonary trunk region to descending aorta. Answer: Pulmonary trunk region to descending aorta. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath.
 
 2. A pressure change can appose a flap or reduce flow before tissues remodel into a permanent remnant. Foramen ovale closure initially depends on atrial pressure relationships, while ductal constriction and later remodeling have their own timing. Persistence of a potential channel is not identical to ongoing large flow through it. Adult names such as ligamentum arteriosum refer to later tissue states. Draw the immediate circulatory transition separately from the eventual anatomical remnants to avoid implying that all fetal structures disappear instantly.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain fetal shunts and adult remnants using the main anatomical relationships, then justify your answer to: What does the ductus arteriosus connect in fetal circulation?
 
-The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath.
+Answer: Pulmonary trunk region to descending aorta. The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles. The ductus venosus permits part of umbilical venous return to bypass hepatic sinusoids; the foramen ovale routes blood from right to left atrium; the ductus arteriosus links pulmonary outflow with aorta. At birth, reduced pulmonary resistance and loss of placental circulation change pressures and flows. Functional closure and anatomical remodeling occur on different timescales, so adult remnants do not appear instantly with the first breath.
 
 ## Sources and editorial record
 

@@ -35,7 +35,7 @@ The tunnel contains the median nerve and nine long flexor tendons: four superfic
 
 Which structure is outside the carpal tunnel? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor.
+1. Answer: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor.
 2. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content.
 3. Use boundaries to predict which structures share compression risk.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk.
+1. Ulnar nerve. Answer: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk.
 
 2. The palmar cutaneous branch of the median nerve usually arises proximal to the tunnel and travels superficial to the flexor retinaculum. It therefore does not share the same confined route as the main median nerve. This anatomical branching can distinguish a distal tunnel pattern from a more proximal median lesion, though actual findings vary. The recurrent motor branch and digital branches arise distally and have their own courses. Map where branches leave the nerve before interpreting which functions a localized compression can affect.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain wrist, carpal tunnel and anatomical snuffbox using the main anatomical relationships, then justify your answer to: Which structure is outside the carpal tunnel?
 
-The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk.
+Answer: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk.
 
 ## Sources and editorial record
 

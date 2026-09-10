@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Optic nerve and ophthalmic artery",
-          "reason": "The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles. Its medial wall and floor are relatively thin and border ethmoidal and maxillary spaces. The globe has an outer fibrous coat, vascular middle coat and neural retina. Light passes through cornea, aqueous, pupil, lens and vitreous before reaching retina; neural signals leave through the optic nerve. Nasal retinal fibers cross at the chiasm, while temporal fibers do not."
+          "reason": "Answer: Optic nerve and ophthalmic artery. The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles. Its medial wall and floor are relatively thin and border ethmoidal and maxillary spaces. The globe has an outer fibrous coat, vascular middle coat and neural retina. Light passes through cornea, aqueous, pupil, lens and vitreous before reaching retina; neural signals leave through the optic nerve. Nasal retinal fibers cross at the chiasm, while temporal fibers do not."
         },
         {
           "text": "All ocular motor nerves",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain orbit, eyeball and visual pathway using the main anatomical relationships, then justify your answer to: Which structures pass through the optic canal?",
-      "answer": "The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles. Its medial wall and floor are relatively thin and border ethmoidal and maxillary spaces. The globe has an outer fibrous coat, vascular middle coat and neural retina. Light passes through cornea, aqueous, pupil, lens and vitreous before reaching retina; neural signals leave through the optic nerve. Nasal retinal fibers cross at the chiasm, while temporal fibers do not."
+      "answer": "Answer: Optic nerve and ophthalmic artery. The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles. Its medial wall and floor are relatively thin and border ethmoidal and maxillary spaces. The globe has an outer fibrous coat, vascular middle coat and neural retina. Light passes through cornea, aqueous, pupil, lens and vitreous before reaching retina; neural signals leave through the optic nerve. Nasal retinal fibers cross at the chiasm, while temporal fibers do not."
     },
     "related": [
       "skull-scalp-face",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Which structures pass through the optic canal? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles.",
+        "Answer: Optic nerve and ophthalmic artery. The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles.",
         "Its medial wall and floor are relatively thin and border ethmoidal and maxillary spaces. The globe has an outer fibrous coat, vascular middle coat and neural retina. Light passes through cornea, aqueous, pupil, lens and vitreous before reaching retina; neural signals leave through the optic nerve.",
         "Nasal retinal fibers cross at the chiasm, while temporal fibers do not."
       ]

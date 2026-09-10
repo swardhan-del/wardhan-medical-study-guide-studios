@@ -35,7 +35,7 @@ Lymphatic maps depend on tissue identity and development, not just present-day s
 
 Why does testicular drainage differ from most external genital skin drainage? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Lymphatic maps depend on tissue identity and development, not just present-day surface location.
+1. Answer: Testes retain lumbar drainage related to their abdominal development. Lymphatic maps depend on tissue identity and development, not just present-day surface location.
 2. Testicular lymph reaches lumbar nodes while scrotal skin chiefly reaches superficial inguinal nodes. Breast drainage is predominantly axillary but includes parasternal and other routes that can cross the midline. Deep cervical nodes receive multiple head and neck pathways.
 3. Treat named drainage patterns as major routes with communications rather than perfectly sealed territories.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Testes retain lumbar drainage related to their abdominal development. Lymphatic maps depend on tissue identity and development, not just present-day surface location. Testicular lymph reaches lumbar nodes while scrotal skin chiefly reaches superficial inguinal nodes. Breast drainage is predominantly axillary but includes parasternal and other routes that can cross the midline. Deep cervical nodes receive multiple head and neck pathways. Treat named drainage patterns as major routes with communications rather than perfectly sealed territories.
+1. Testes retain lumbar drainage related to their abdominal development. Answer: Testes retain lumbar drainage related to their abdominal development. Lymphatic maps depend on tissue identity and development, not just present-day surface location. Testicular lymph reaches lumbar nodes while scrotal skin chiefly reaches superficial inguinal nodes. Breast drainage is predominantly axillary but includes parasternal and other routes that can cross the midline. Deep cervical nodes receive multiple head and neck pathways. Treat named drainage patterns as major routes with communications rather than perfectly sealed territories.
 
 2. Lymphatic networks communicate across tissue planes and midline regions. Although axillary drainage is predominant for much of the breast, medial regions have parasternal connections and additional pathways exist. The breast also has superficial and deeper networks, so a single arrow to one node group is incomplete. This anatomical variability matters when interpreting regional spread, but a teaching map does not predict an individual's exact drainage. Show major routes and communications without claiming that quadrants are sealed lymphatic compartments.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain regional lymph drainage and crossing territories using the main anatomical relationships, then justify your answer to: Why does testicular drainage differ from most external genital skin drainage?
 
-Lymphatic maps depend on tissue identity and development, not just present-day surface location. Testicular lymph reaches lumbar nodes while scrotal skin chiefly reaches superficial inguinal nodes. Breast drainage is predominantly axillary but includes parasternal and other routes that can cross the midline. Deep cervical nodes receive multiple head and neck pathways. Treat named drainage patterns as major routes with communications rather than perfectly sealed territories.
+Answer: Testes retain lumbar drainage related to their abdominal development. Lymphatic maps depend on tissue identity and development, not just present-day surface location. Testicular lymph reaches lumbar nodes while scrotal skin chiefly reaches superficial inguinal nodes. Breast drainage is predominantly axillary but includes parasternal and other routes that can cross the midline. Deep cervical nodes receive multiple head and neck pathways. Treat named drainage patterns as major routes with communications rather than perfectly sealed territories.
 
 ## Sources and editorial record
 

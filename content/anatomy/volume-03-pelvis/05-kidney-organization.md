@@ -45,7 +45,7 @@ Urine and blood travel through different branching systems. Collecting ducts end
 
 Which structure directly receives urine from a renal papilla? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Urine and blood travel through different branching systems.
+1. Answer: Minor calyx. Urine and blood travel through different branching systems.
 2. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis.
 3. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant.
 
@@ -85,7 +85,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant.
+1. Minor calyx. Answer: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant.
 
 2. A renal lobe includes a medullary pyramid and its associated overlying cortex. A cortical lobule is a smaller cortical organization centered around a medullary ray and associated tubules. Renal columns are cortex extending between pyramids, despite their position among medullary structures. These different scales are easy to confuse when moving between gross sections and microscopic images. Start by locating cortex, medulla, papilla and collecting space, then add the smaller histological units without replacing the gross landmarks.
 
@@ -103,7 +103,7 @@ Right kidney lies slightly lower than left. Capsules from inside outward: fibrou
 
 Explain kidney coverings, hilum and collecting system using the main anatomical relationships, then justify your answer to: Which structure directly receives urine from a renal papilla?
 
-Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant.
+Answer: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant.
 
 ## Sources and editorial record
 

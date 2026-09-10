@@ -38,7 +38,7 @@
       "options": [
         {
           "text": "Inferior nasal meatus",
-          "reason": "A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+          "reason": "Answer: Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
         },
         {
           "text": "Superior nasal meatus",
@@ -53,7 +53,7 @@
     },
     "recall": {
       "prompt": "Explain nasal cavity and paranasal drainage using the main anatomical relationships, then justify your answer to: Where does the nasolacrimal duct drain?",
-      "answer": "A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+      "answer": "Answer: Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
     },
     "related": [
       "tmj-deep-fossae",
@@ -73,7 +73,7 @@
       "title": "Reason from the anatomical relationships",
       "prompt": "Where does the nasolacrimal duct drain? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
       "solution": [
-        "A meatus lies below its corresponding concha.",
+        "Answer: Inferior nasal meatus. A meatus lies below its corresponding concha.",
         "The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess.",
         "The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
       ]

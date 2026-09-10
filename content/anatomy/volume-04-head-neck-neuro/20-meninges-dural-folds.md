@@ -35,7 +35,7 @@ Dura forms folds supporting and separating brain regions. Arachnoid bridges over
 
 Where does CSF normally surround the brain? Identify the relevant structure, explain the relationship and distinguish the alternatives.
 
-1. Dura forms folds supporting and separating brain regions.
+1. Answer: Subarachnoid space. Dura forms folds supporting and separating brain regions.
 2. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate.
 3. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms.
 
@@ -75,7 +75,7 @@ Draw and identify
 
 ## Answers and explanations
 
-1. Subarachnoid space. Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms.
+1. Subarachnoid space. Answer: Subarachnoid space. Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms.
 
 2. The tentorium forms a dural shelf separating much of the occipital cerebrum from the cerebellum. Its free margin bounds the tentorial notch, through which the midbrain region passes. This supports compartments while preserving continuity of neural structures. Pressure-related displacement can threaten structures near a constrained opening, which explains the anatomical importance of the notch. The falx cerebri is a different fold between cerebral hemispheres; their junction also relates to venous sinus pathways.
 
@@ -89,7 +89,7 @@ Draw and identify
 
 Explain meninges, dural folds and intracranial spaces using the main anatomical relationships, then justify your answer to: Where does CSF normally surround the brain?
 
-Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms.
+Answer: Subarachnoid space. Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms.
 
 ## Sources and editorial record
 
