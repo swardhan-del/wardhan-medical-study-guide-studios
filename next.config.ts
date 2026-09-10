@@ -1,4 +1,24 @@
 import type { NextConfig } from "next";
+// Static Next.js pages need inline bootstrap scripts. Keep that exception narrow:
+// no inline event handlers, production eval, external scripts or external forms.
+const isDev = process.env.NODE_ENV === "development";
+const contentSecurityPolicy = [
+  "default-src 'self'",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  "script-src-attr 'none'",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob:",
+  "font-src 'self'",
+  `connect-src 'self'${isDev ? " ws: wss:" : ""}`,
+  "media-src 'self'",
+  // The library embeds its own approved PDFs with <object>.
+  "object-src 'self'",
+  "frame-src 'self'",
+  "frame-ancestors 'none'",
+  "base-uri 'none'",
+  "form-action 'self'",
+  ...(process.env.VERCEL ? ["upgrade-insecure-requests"] : []),
+].join("; ");
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   env: {
@@ -15,6 +35,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         headers: [
+          { key: "Content-Security-Policy", value: contentSecurityPolicy },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "X-Frame-Options", value: "DENY" },
@@ -25,6 +46,17 @@ const nextConfig: NextConfig = {
           ...(process.env.VERCEL_ENV !== "production"
             ? [{ key: "X-Robots-Tag", value: "noindex, nofollow" }]
             : []),
+        ],
+      },
+      {
+        // Permit the site's PDF reader without allowing external sites to frame it.
+        source: "/downloads/:path*",
+        headers: [
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          {
+            key: "Content-Security-Policy",
+            value: contentSecurityPolicy.replace("frame-ancestors 'none'", "frame-ancestors 'self'"),
+          },
         ],
       },
       {
