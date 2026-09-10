@@ -83,7 +83,7 @@ Draw and identify
 
 4. Rectouterine pouch. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source.
 
-5. Check your labels against these relationships: Peritoneal recesses are spaces formed by peritoneal reflections. In the pelvis, the lowest peritoneal pouches differ between males and females and are important for fluid collection. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source.
+5. Check your labels against these relationships: Peritoneal recesses are spaces formed by peritoneal reflections. In the pelvis, the lowest peritoneal pouches differ between males and females and are important for fluid collection. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

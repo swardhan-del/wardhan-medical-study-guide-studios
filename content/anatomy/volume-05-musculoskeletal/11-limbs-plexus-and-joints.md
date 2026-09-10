@@ -83,7 +83,7 @@ Draw and identify
 
 4. Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships.
 
-5. Check your labels against these relationships: The brachial plexus is formed by roots C5-T1 and is organized as roots, trunks, divisions, cords, and terminal branches. The terminal branches are musculocutaneous, axillary, radial, median, and ulnar nerves. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships.
+5. Check your labels against these relationships: The brachial plexus is formed by roots C5-T1 and is organized as roots, trunks, divisions, cords, and terminal branches. The terminal branches are musculocutaneous, axillary, radial, median, and ulnar nerves. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

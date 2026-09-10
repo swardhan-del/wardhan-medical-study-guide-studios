@@ -83,7 +83,7 @@ Draw and identify
 
 4. Common hepatic and cystic ducts. The right and left hepatic ducts form the common hepatic duct. Joining the cystic duct creates the common bile duct; bile does not have to traverse the gallbladder on its way from liver to duodenum. Flow in the cystic duct can be toward storage or away during emptying. The common bile duct passes behind the proximal duodenum and through or behind the pancreatic head before usually joining the pancreatic duct. Variants are common, so this is the typical pattern.
 
-5. Check your labels against these relationships: The gallbladder stores and concentrates bile and lies on the visceral surface of the liver. Right and left hepatic ducts form the common hepatic duct; its junction with the cystic duct forms the common bile duct. The cystic duct permits filling and emptying of the gallbladder. The right and left hepatic ducts form the common hepatic duct. Joining the cystic duct creates the common bile duct; bile does not have to traverse the gallbladder on its way from liver to duodenum. Flow in the cystic duct can be toward storage or away during emptying. The common bile duct passes behind the proximal duodenum and through or behind the pancreatic head before usually joining the pancreatic duct. Variants are common, so this is the typical pattern.
+5. Check your labels against these relationships: The gallbladder stores and concentrates bile and lies on the visceral surface of the liver. Right and left hepatic ducts form the common hepatic duct; its junction with the cystic duct forms the common bile duct. The cystic duct permits filling and emptying of the gallbladder. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

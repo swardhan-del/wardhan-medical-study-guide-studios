@@ -97,7 +97,7 @@ Male contents: bulb and crura of penis, proximal spongy urethra region, ischioca
 
 5. Check your labels against these relationships: The perineum is a diamond-shaped region bounded by pubic symphysis anteriorly, coccyx posteriorly, and ischial tuberosities laterally. A line between ischial tuberosities divides it into anterior urogenital triangle and posterior anal triangle.
 
-Urogenital triangle contains external genitalia and urethral structures. Anal triangle contains anal canal, external anal sphincter, and ischioanal fossae. Perineal body is a central fibromuscular node between urogenital and anal triangles. Perineal membrane closes much of the urogenital triangle deep to superficial pouch. Pelvic diaphragm forms roof of the perineum. The perineum lies below the pelvic diaphragm. A line between the ischial tuberosities divides urogenital and anal triangles; these are regional subdivisions, not layers. The perineal membrane is a key boundary in the urogenital triangle. Traditional descriptions of a closed urogenital diaphragm can obscure the actual sphincter and connective-tissue arrangement, especially in females. Name the membrane, sphincter complex and pelvic diaphragm separately rather than treating them as interchangeable structures.
+Urogenital triangle contains external genitalia and urethral structures. Anal triangle contains anal canal, external anal sphincter, and ischioanal fossae. Perineal body is a central fibromuscular node between urogenital and anal triangles. Perineal membrane closes much of the urogenital triangle deep to superficial pouch. Pelvic diaphragm forms roof of the perineum. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

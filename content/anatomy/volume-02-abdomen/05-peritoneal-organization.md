@@ -91,7 +91,7 @@ Intraperitoneal organs include stomach, liver, spleen, jejunum, ileum, transvers
 
 5. Check your labels against these relationships: The peritoneum is a serous membrane with parietal and visceral layers. Parietal peritoneum lines the abdominal wall; visceral peritoneum covers organs. The peritoneal cavity is a potential space containing serous fluid.
 
-Parietal peritoneum has somatic pain sensitivity and is regionally innervated by body wall nerves. Visceral peritoneum has visceral afferent pain that follows autonomic pathways and is poorly localized. The greater sac is the main peritoneal cavity. The lesser sac is the omental bursa behind the stomach and lesser omentum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions.
+Parietal peritoneum has somatic pain sensitivity and is regionally innervated by body wall nerves. Visceral peritoneum has visceral afferent pain that follows autonomic pathways and is poorly localized. The greater sac is the main peritoneal cavity. The lesser sac is the omental bursa behind the stomach and lesser omentum. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

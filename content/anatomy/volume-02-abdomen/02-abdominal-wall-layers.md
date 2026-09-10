@@ -97,7 +97,7 @@ Above the arcuate line, the anterior sheath is formed by external oblique plus a
 
 5. Check your labels against these relationships: The anterolateral abdominal wall is formed by skin, superficial fascia, three flat muscles, rectus abdominis with pyramidalis, transversalis fascia, extraperitoneal fascia, and parietal peritoneum. Its muscles protect viscera, compress the abdomen, assist expiration, and stabilize the trunk.
 
-Flat muscles are external oblique, internal oblique, and transversus abdominis. Vertical muscles are rectus abdominis and pyramidalis. External oblique fibers run inferomedially; internal oblique fibers run superomedially; transversus fibers run horizontally. Innervation is mainly lower thoracoabdominal nerves plus L1 through iliohypogastric and ilioinguinal nerves. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height.
+Flat muscles are external oblique, internal oblique, and transversus abdominis. Vertical muscles are rectus abdominis and pyramidalis. External oblique fibers run inferomedially; internal oblique fibers run superomedially; transversus fibers run horizontally. Innervation is mainly lower thoracoabdominal nerves plus L1 through iliohypogastric and ilioinguinal nerves. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

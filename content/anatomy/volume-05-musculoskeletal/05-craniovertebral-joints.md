@@ -83,7 +83,7 @@ Draw and identify
 
 4. Transverse ligament of the atlas. The atlas forms a ring around the dens and articulates with occipital condyles above. Atlanto-occipital movement chiefly supports nodding, while atlantoaxial rotation contributes substantially to turning the head. The transverse ligament holds the dens against the anterior arch; alar ligaments restrain excessive rotation. These are stabilizing relationships around neural structures, so movement should be understood as constrained motion rather than a free pivot without limits.
 
-5. Check your labels against these relationships: The atlas has no body and supports the skull; the axis has the dens, which acts as the pivot for rotation. The atlantooccipital joint produces the yes movement; the atlantoaxial joint produces the no movement. The atlas forms a ring around the dens and articulates with occipital condyles above. Atlanto-occipital movement chiefly supports nodding, while atlantoaxial rotation contributes substantially to turning the head. The transverse ligament holds the dens against the anterior arch; alar ligaments restrain excessive rotation. These are stabilizing relationships around neural structures, so movement should be understood as constrained motion rather than a free pivot without limits.
+5. Check your labels against these relationships: The atlas has no body and supports the skull; the axis has the dens, which acts as the pivot for rotation. The atlantooccipital joint produces the yes movement; the atlantoaxial joint produces the no movement. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

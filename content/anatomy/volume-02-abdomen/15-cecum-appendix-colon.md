@@ -91,7 +91,7 @@ Large intestine has teniae coli, haustra, and omental/epiploic appendages. Ascen
 
 5. Check your labels against these relationships: The cecum is the first part of the large intestine in the right iliac fossa. The appendix is a narrow lymphoid diverticulum from the posteromedial cecum, with variable position, commonly retrocecal or pelvic.
 
-Appendix base is located where the three teniae coli converge. Surface projection is commonly near McBurney point, between umbilicus and right ASIS. Appendicular artery usually comes from ileocolic artery. Pain may begin as visceral periumbilical pain and later localize to right iliac fossa when parietal peritoneum is irritated. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum.
+Appendix base is located where the three teniae coli converge. Surface projection is commonly near McBurney point, between umbilicus and right ASIS. Appendicular artery usually comes from ileocolic artery. Pain may begin as visceral periumbilical pain and later localize to right iliac fossa when parietal peritoneum is irritated. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

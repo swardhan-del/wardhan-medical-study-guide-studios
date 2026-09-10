@@ -83,7 +83,7 @@ Draw and identify
 
 4. Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers.
 
-5. Check your labels against these relationships: The cubital fossa is the anterior elbow triangle. Its deep contents are biceps tendon, brachial artery, median nerve, and radial nerve laterally; the median cubital vein is superficial. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers.
+5. Check your labels against these relationships: The cubital fossa is the anterior elbow triangle. Its deep contents are biceps tendon, brachial artery, median nerve, and radial nerve laterally; the median cubital vein is superficial. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

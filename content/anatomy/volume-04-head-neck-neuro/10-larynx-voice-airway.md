@@ -91,7 +91,7 @@ Posterior cricoarytenoid abducts vocal folds and opens rima glottidis. Lateral c
 
 5. Check your labels against these relationships: The larynx is a cartilaginous, ligamentous, and muscular airway organ for phonation, airway protection, and respiration. It extends approximately from C4 to C6.
 
-Unpaired cartilages: thyroid, cricoid, epiglottic. Paired cartilages: arytenoid, corniculate, cuneiform. Cricothyroid and cricoarytenoid joints are the main laryngeal joints. Conus elasticus gives rise superiorly to vocal ligament. Quadrangular membrane contributes to vestibular fold and aryepiglottic fold. Cavity parts: vestibule, ventricle, and infraglottic cavity. Abduction opens the rima glottidis; adduction brings the folds together. Cricothyroid changes tension by altering thyroid-cricoid relationships and is supplied by the external branch of the superior laryngeal nerve. Other intrinsic muscles receive recurrent laryngeal motor supply. The internal superior laryngeal branch carries sensation above the folds, while recurrent laryngeal fibers serve below them. Distinguish movement, tension and sensory level when interpreting a nerve lesion.
+Unpaired cartilages: thyroid, cricoid, epiglottic. Paired cartilages: arytenoid, corniculate, cuneiform. Cricothyroid and cricoarytenoid joints are the main laryngeal joints. Conus elasticus gives rise superiorly to vocal ligament. Quadrangular membrane contributes to vestibular fold and aryepiglottic fold. Cavity parts: vestibule, ventricle, and infraglottic cavity. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

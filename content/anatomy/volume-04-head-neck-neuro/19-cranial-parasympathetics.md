@@ -83,7 +83,7 @@ Draw and identify
 
 4. Otic ganglion. Autonomic and sensory ganglia have different jobs. The four named cranial parasympathetic ganglia are ciliary, pterygopalatine, submandibular and otic. Preganglionic fibers arise with III, VII or IX and synapse there; postganglionic fibers often travel with trigeminal branches. Passing through or alongside a sensory ganglion does not make it the autonomic synapse. Vagus generally uses ganglia near or within its distant target organs rather than one of these four head ganglia.
 
-5. Check your labels against these relationships: Four named parasympathetic ganglia are high-yield: ciliary, pterygopalatine, submandibular, and otic. Preganglionic fibers arrive from CN III, VII, or IX; postganglionic fibers often hitchhike on trigeminal branches. Autonomic and sensory ganglia have different jobs. The four named cranial parasympathetic ganglia are ciliary, pterygopalatine, submandibular and otic. Preganglionic fibers arise with III, VII or IX and synapse there; postganglionic fibers often travel with trigeminal branches. Passing through or alongside a sensory ganglion does not make it the autonomic synapse. Vagus generally uses ganglia near or within its distant target organs rather than one of these four head ganglia.
+5. Check your labels against these relationships: Four named parasympathetic ganglia are high-yield: ciliary, pterygopalatine, submandibular, and otic. Preganglionic fibers arrive from CN III, VII, or IX; postganglionic fibers often hitchhike on trigeminal branches. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

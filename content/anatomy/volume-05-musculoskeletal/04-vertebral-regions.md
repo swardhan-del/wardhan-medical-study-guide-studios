@@ -91,7 +91,7 @@ Cervical vertebrae: small body, large triangular foramen, transverse foramina, o
 
 5. Check your labels against these relationships: The vertebral column consists of cervical, thoracic, lumbar, sacral, and coccygeal vertebrae. It supports the body, protects the spinal cord, transmits weight to the pelvis, and provides attachment for muscles and ligaments.
 
-The usual count is 33: 7 cervical, 12 thoracic, 5 lumbar, 5 sacral and commonly 4 coccygeal vertebrae. Coccygeal number and transitional anatomy vary. Primary curvatures are thoracic and sacral kyphoses. Secondary curvatures are cervical and lumbar lordoses. The vertebral canal is formed by successive vertebral foramina. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture.
+The usual count is 33: 7 cervical, 12 thoracic, 5 lumbar, 5 sacral and commonly 4 coccygeal vertebrae. Coccygeal number and transitional anatomy vary. Primary curvatures are thoracic and sacral kyphoses. Secondary curvatures are cervical and lumbar lordoses. The vertebral canal is formed by successive vertebral foramina. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

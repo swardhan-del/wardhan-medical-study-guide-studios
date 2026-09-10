@@ -83,7 +83,7 @@ Draw and identify
 
 4. Short head. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence.
 
-5. Check your labels against these relationships: The thigh has anterior extensor/flexor-at-hip compartment supplied by femoral nerve, medial adductor compartment supplied mainly by obturator nerve, and posterior hamstring compartment supplied by sciatic nerve divisions. Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions. Exceptions refine the map. The hamstring part of adductor magnus uses the tibial division, while its adductor part uses obturator supply. The short head of biceps femoris uses common fibular division and does not cross the hip. Crossing one joint or two predicts which movements a muscle can influence.
+5. Check your labels against these relationships: The thigh has anterior extensor/flexor-at-hip compartment supplied by femoral nerve, medial adductor compartment supplied mainly by obturator nerve, and posterior hamstring compartment supplied by sciatic nerve divisions. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

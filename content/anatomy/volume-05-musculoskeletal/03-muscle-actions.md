@@ -83,7 +83,7 @@ Draw and identify
 
 4. Its line of pull relative to the axis changes. A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name.
 
-5. Check your labels against these relationships: A muscle answer should include origin, insertion, innervation, and action. The origin is usually the more fixed attachment; the insertion is usually the more mobile attachment. The examiner often cares more about function and nerve supply than poetic detail. A muscle produces torque according to force and moment arm. A large physiological cross-sectional area favors force, while longer fibers permit greater excursion. Pennation can pack more fibers into a volume but changes the direction in which their force reaches the tendon. Agonist, antagonist and stabilizer describe roles in a task rather than permanent identities. To predict action, locate attachments, joint axis and line of pull before relying on a muscle name.
+5. Check your labels against these relationships: A muscle answer should include origin, insertion, innervation, and action. The origin is usually the more fixed attachment; the insertion is usually the more mobile attachment. The examiner often cares more about function and nerve supply than poetic detail. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

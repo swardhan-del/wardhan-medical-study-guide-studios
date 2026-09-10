@@ -83,7 +83,7 @@ Draw and identify
 
 4. Mandibular V3. V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers. The trigeminal ganglion contains most primary sensory neuron cell bodies, but proprioceptive neurons associated with the mesencephalic nucleus are a notable exception. For the corneal reflex, V1 is the afferent limb and VII closes the eyelids. A facial sensory deficit and facial muscle weakness therefore point to different functional pathways even when both involve the face.
 
-5. Check your labels against these relationships: The trigeminal nerve is the major sensory nerve of the face and motor nerve to muscles of mastication. It has ophthalmic V1, maxillary V2, and mandibular V3 divisions. V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers. The trigeminal ganglion contains most primary sensory neuron cell bodies, but proprioceptive neurons associated with the mesencephalic nucleus are a notable exception. For the corneal reflex, V1 is the afferent limb and VII closes the eyelids. A facial sensory deficit and facial muscle weakness therefore point to different functional pathways even when both involve the face.
+5. Check your labels against these relationships: The trigeminal nerve is the major sensory nerve of the face and motor nerve to muscles of mastication. It has ophthalmic V1, maxillary V2, and mandibular V3 divisions. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

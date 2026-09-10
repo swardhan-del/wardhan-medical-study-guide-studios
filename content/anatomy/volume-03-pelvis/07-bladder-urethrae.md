@@ -103,7 +103,7 @@ Angles of trigone: right ureteric orifice, left ureteric orifice, internal ureth
 
 5. Check your labels against these relationships: The urinary bladder is a distensible muscular reservoir in the anterior pelvis behind the pubic symphysis. Its main parts are apex, body, fundus/base, neck, and trigone. The detrusor muscle forms the muscular wall.
 
-Empty bladder lies mostly in pelvis; full bladder rises into abdomen. Apex points anteriorly toward the median umbilical ligament. Base/fundus faces posteriorly; neck is inferior and continuous with urethra. Detrusor muscle contracts during micturition. Peritoneum covers superior surface and reflects to rectum in male or uterus in female. The trigone is a smooth internal region, not the whole bladder base viewed from outside. The detrusor forms the contractile bladder wall; the striated external urethral sphincter contributes voluntary outlet control. In the male, distinguish prostatic, intermediate or membranous, and spongy portions; some schemes also name the intramural preprostatic segment. The shorter female urethra opens separately into the vestibule anterior to the vaginal opening. Use the same proximal-to-distal direction when comparing them.
+Empty bladder lies mostly in pelvis; full bladder rises into abdomen. Apex points anteriorly toward the median umbilical ligament. Base/fundus faces posteriorly; neck is inferior and continuous with urethra. Detrusor muscle contracts during micturition. Peritoneum covers superior surface and reflects to rectum in male or uterus in female. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

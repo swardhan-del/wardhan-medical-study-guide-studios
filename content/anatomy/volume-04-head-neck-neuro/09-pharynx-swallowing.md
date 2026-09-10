@@ -97,7 +97,7 @@ Pharyngeal tonsil lies in roof/posterior wall of nasopharynx; hypertrophy is cal
 
 5. Check your labels against these relationships: The pharynx is a muscular tube from skull base to C6, divided into nasopharynx, oropharynx, and laryngopharynx. It participates in swallowing, breathing, speech resonance, and immune defense through tonsillar tissue.
 
-Nasopharynx communicates with nasal cavity through choanae and with middle ear through auditory tube. Oropharynx communicates with oral cavity through isthmus of fauces. Laryngopharynx contains piriform recesses and leads to laryngeal inlet and esophagus. Pharyngeal constrictors insert into median pharyngeal raphe. Retropharyngeal space lies behind pharynx and can communicate with posterior mediastinum. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions.
+Nasopharynx communicates with nasal cavity through choanae and with middle ear through auditory tube. Oropharynx communicates with oral cavity through isthmus of fauces. Laryngopharynx contains piriform recesses and leads to laryngeal inlet and esophagus. Pharyngeal constrictors insert into median pharyngeal raphe. Retropharyngeal space lies behind pharynx and can communicate with posterior mediastinum. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

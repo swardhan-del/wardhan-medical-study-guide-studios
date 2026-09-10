@@ -83,7 +83,7 @@ Draw and identify
 
 4. Tibial nerve, popliteal vein, popliteal artery. The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle. The common fibular nerve follows the lateral boundary toward the fibular neck rather than remaining central. Gastrocnemius and hamstring borders frame the diamond-shaped region. Depth matters when identifying a structure on dissection or an image: a vessel's pulsation does not imply it is the most superficial structure. Trace continuity above and below the knee to confirm identity.
 
-5. Check your labels against these relationships: The popliteal fossa is the posterior knee diamond. Its main contents from superficial to deep are tibial nerve, popliteal vein, and popliteal artery. The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle. The common fibular nerve follows the lateral boundary toward the fibular neck rather than remaining central. Gastrocnemius and hamstring borders frame the diamond-shaped region. Depth matters when identifying a structure on dissection or an image: a vessel's pulsation does not imply it is the most superficial structure. Trace continuity above and below the knee to confirm identity.
+5. Check your labels against these relationships: The popliteal fossa is the posterior knee diamond. Its main contents from superficial to deep are tibial nerve, popliteal vein, and popliteal artery. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -97,7 +97,7 @@ Hard palate is formed mainly by palatine processes of maxilla and horizontal pla
 
 5. Check your labels against these relationships: The oral cavity is divided into the vestibule and oral cavity proper. The vestibule lies between lips/cheeks and dental arches. The oral cavity proper lies inside the dental arches and extends posteriorly to the oropharynx through the isthmus of the fauces.
 
-Roof: hard and soft palate. Floor: mylohyoid, geniohyoid, tongue, and mucosa of the oral floor. Lateral/anterior boundaries: teeth, gingivae, alveolar arches, lips, and cheeks. Posterior opening: isthmus of the fauces, bounded by soft palate, palatoglossal arches, and tongue. Parotid duct opens into the vestibule opposite the upper second molar. The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches. This distinction localizes duct openings: parotid opens into the vestibule, submandibular into the floor of the cavity proper. Hard palate separates oral and nasal cavities; soft palate moves during swallowing. Maxillary teeth receive V2 branches and mandibular teeth V3 branches. Motor supply to palate is chiefly vagal, with tensor veli palatini supplied by V3.
+Roof: hard and soft palate. Floor: mylohyoid, geniohyoid, tongue, and mucosa of the oral floor. Lateral/anterior boundaries: teeth, gingivae, alveolar arches, lips, and cheeks. Posterior opening: isthmus of the fauces, bounded by soft palate, palatoglossal arches, and tongue. Parotid duct opens into the vestibule opposite the upper second molar. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

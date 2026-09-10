@@ -83,7 +83,7 @@ Draw and identify
 
 4. Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk.
 
-5. Check your labels against these relationships: The carpal tunnel is a fibro-osseous canal deep to the flexor retinaculum. It contains the median nerve and tendons of FDS, FDP, and FPL. The ulnar nerve and artery are not in the carpal tunnel; they pass through Guyon canal. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk.
+5. Check your labels against these relationships: The carpal tunnel is a fibro-osseous canal deep to the flexor retinaculum. It contains the median nerve and tendons of FDS, FDP, and FPL. The ulnar nerve and artery are not in the carpal tunnel; they pass through Guyon canal. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

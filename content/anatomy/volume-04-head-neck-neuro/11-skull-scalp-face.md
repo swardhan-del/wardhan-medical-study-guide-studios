@@ -83,7 +83,7 @@ Draw and identify
 
 4. Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps.
 
-5. Check your labels against these relationships: Cranial nerve lesion questions become easier if you first localize the nerve by skull exit. The exit predicts associated structures and clinical syndromes. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps.
+5. Check your labels against these relationships: Cranial nerve lesion questions become easier if you first localize the nerve by skull exit. The exit predicts associated structures and clinical syndromes. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

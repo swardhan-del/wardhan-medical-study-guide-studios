@@ -83,7 +83,7 @@ Draw and identify
 
 4. Sternoclavicular joint. The clavicle acts as a strut supporting the scapula away from the thorax. Sternoclavicular and acromioclavicular joints permit coordinated girdle movement; scapulothoracic motion is a functional sliding relationship rather than a true synovial joint. Coracoclavicular ligaments link scapula and clavicle, supporting acromioclavicular alignment. Arm elevation combines glenohumeral movement with scapular upward rotation, so a shoulder examination or movement diagram should not isolate the humeral joint from the girdle.
 
-5. Check your labels against these relationships: The sternoclavicular joint is the only true bony articulation between upper limb and axial skeleton. The acromioclavicular joint allows scapular rotation. Together they position the scapula for shoulder movement. The clavicle acts as a strut supporting the scapula away from the thorax. Sternoclavicular and acromioclavicular joints permit coordinated girdle movement; scapulothoracic motion is a functional sliding relationship rather than a true synovial joint. Coracoclavicular ligaments link scapula and clavicle, supporting acromioclavicular alignment. Arm elevation combines glenohumeral movement with scapular upward rotation, so a shoulder examination or movement diagram should not isolate the humeral joint from the girdle.
+5. Check your labels against these relationships: The sternoclavicular joint is the only true bony articulation between upper limb and axial skeleton. The acromioclavicular joint allows scapular rotation. Together they position the scapula for shoulder movement. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

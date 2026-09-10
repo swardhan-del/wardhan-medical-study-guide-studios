@@ -83,7 +83,7 @@ Draw and identify
 
 4. Subarachnoid space. Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms.
 
-5. Check your labels against these relationships: The cranial meninges are dura mater, arachnoid mater, and pia mater. Cranial dura has periosteal and meningeal layers; meningeal dura forms dural reflections that partition the cranial cavity. Dura forms folds supporting and separating brain regions. Arachnoid bridges over sulci, while pia closely follows the brain surface; the real CSF-containing subarachnoid space lies between them. Cranial epidural and subdural spaces are normally potential tissue interfaces, unlike the spinal epidural space containing fat and venous plexuses. Dural venous sinuses form where dural layers separate. Keep a CSF space distinct from a venous channel even when they communicate through drainage mechanisms.
+5. Check your labels against these relationships: The cranial meninges are dura mater, arachnoid mater, and pia mater. Cranial dura has periosteal and meningeal layers; meningeal dura forms dural reflections that partition the cranial cavity. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

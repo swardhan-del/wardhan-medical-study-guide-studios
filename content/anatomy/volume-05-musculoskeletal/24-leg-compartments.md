@@ -83,7 +83,7 @@ Draw and identify
 
 4. Deep fibular nerve. Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply. Posterior compartments use tibial supply for plantarflexion and toe flexion, with deep muscles also supporting arches and inversion. Fibularis longus and tibialis posterior can both support the foot despite differing actions. A common fibular lesion can affect both anterior and lateral compartments, whereas an isolated deep branch lesion has a narrower pattern.
 
-5. Check your labels against these relationships: The leg has anterior dorsiflexor/extensor, lateral evertor, posterior superficial plantarflexor, and posterior deep flexor-invertor compartments. Nerve supply follows function: deep fibular anterior, superficial fibular lateral, tibial posterior. Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply. Posterior compartments use tibial supply for plantarflexion and toe flexion, with deep muscles also supporting arches and inversion. Fibularis longus and tibialis posterior can both support the foot despite differing actions. A common fibular lesion can affect both anterior and lateral compartments, whereas an isolated deep branch lesion has a narrower pattern.
+5. Check your labels against these relationships: The leg has anterior dorsiflexor/extensor, lateral evertor, posterior superficial plantarflexor, and posterior deep flexor-invertor compartments. Nerve supply follows function: deep fibular anterior, superficial fibular lateral, tibial posterior. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -83,7 +83,7 @@ Draw and identify
 
 4. Fewer arterial arcades and longer vasa recta. Jejunum and ileum blend gradually; there is no sharp external boundary. Compare several features together: jejunum tends to have thicker walls, larger folds, less mesenteric fat near the bowel and longer straight vessels. Ileum tends to have more arcades, shorter straight vessels and more aggregated lymphoid nodules. The long mobile bowel attaches to a much shorter oblique mesenteric root, so a loop's current position alone is unreliable for identification.
 
-5. Check your labels against these relationships: Jejunum and ileum are intraperitoneal midgut structures suspended by the mesentery proper. Jejunum is usually more proximal, thicker-walled, more vascular, and has more prominent circular folds than ileum. Jejunum and ileum blend gradually; there is no sharp external boundary. Compare several features together: jejunum tends to have thicker walls, larger folds, less mesenteric fat near the bowel and longer straight vessels. Ileum tends to have more arcades, shorter straight vessels and more aggregated lymphoid nodules. The long mobile bowel attaches to a much shorter oblique mesenteric root, so a loop's current position alone is unreliable for identification.
+5. Check your labels against these relationships: Jejunum and ileum are intraperitoneal midgut structures suspended by the mesentery proper. Jejunum is usually more proximal, thicker-walled, more vascular, and has more prominent circular folds than ileum. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -91,7 +91,7 @@ Anterior wall of the lesser sac includes stomach, lesser omentum, and gastrocoli
 
 5. Check your labels against these relationships: The omenta are peritoneal folds related to the stomach. The lesser omentum connects liver to lesser curvature of stomach and proximal duodenum. The greater omentum descends from the greater curvature and proximal duodenum, then turns back to the transverse colon.
 
-Lesser omentum consists of hepatogastric and hepatoduodenal ligaments. Hepatoduodenal ligament contains portal triad: bile duct, hepatic artery proper, and portal vein. Greater omentum includes gastrocolic portion and can adhere to inflamed areas. Peritoneal ligaments may connect organ to organ or organ to body wall while carrying vessels and nerves. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately.
+Lesser omentum consists of hepatogastric and hepatoduodenal ligaments. Hepatoduodenal ligament contains portal triad: bile duct, hepatic artery proper, and portal vein. Greater omentum includes gastrocolic portion and can adhere to inflamed areas. Peritoneal ligaments may connect organ to organ or organ to body wall while carrying vessels and nerves. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

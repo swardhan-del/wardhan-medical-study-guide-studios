@@ -83,7 +83,7 @@ Draw and identify
 
 4. Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section.
 
-5. Check your labels against these relationships: The posterior abdominal wall is formed by lumbar vertebrae, psoas major, iliacus, quadratus lumborum, diaphragm crura, transversalis fascia, nerves, vessels, kidneys, ureters, and retroperitoneal structures. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section.
+5. Check your labels against these relationships: The posterior abdominal wall is formed by lumbar vertebrae, psoas major, iliacus, quadratus lumborum, diaphragm crura, transversalis fascia, nerves, vessels, kidneys, ureters, and retroperitoneal structures. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

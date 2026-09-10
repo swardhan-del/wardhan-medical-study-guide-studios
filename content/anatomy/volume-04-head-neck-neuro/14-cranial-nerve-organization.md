@@ -83,7 +83,7 @@ Draw and identify
 
 4. Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus.
 
-5. Check your labels against these relationships: Cranial nerves are organized by functional fiber type and brainstem nuclei. Motor nuclei are generally more medial, sensory nuclei more lateral, with the sulcus limitans as an embryological dividing line. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus.
+5. Check your labels against these relationships: Cranial nerves are organized by functional fiber type and brainstem nuclei. Motor nuclei are generally more medial, sensory nuclei more lateral, with the sulcus limitans as an embryological dividing line. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

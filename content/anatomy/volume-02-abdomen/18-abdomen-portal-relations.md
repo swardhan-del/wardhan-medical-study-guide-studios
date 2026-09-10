@@ -91,7 +91,7 @@ Inferior mesenteric vein usually drains into splenic vein. Portal vein enters th
 
 5. Check your labels against these relationships: Portal-systemic anastomoses are venous communications between portal tributaries and systemic veins. They are clinically important when portal pressure rises.
 
-Lower esophagus: left gastric vein with azygos system. Around umbilicus: paraumbilical veins with superficial epigastric veins. Anal canal: superior rectal vein with middle and inferior rectal veins. Retroperitoneal colon region: colic veins with retroperitoneal body wall veins. Portal means blood reaches a second capillary bed before returning to the heart. Gut capillaries drain into portal tributaries, the portal vein feeds hepatic sinusoids, and hepatic veins drain into the inferior vena cava. Portal-systemic connections provide alternate venous routes when portal pressure rises. They are not arterial shunts. Rectal venous anastomoses exist, but common hemorrhoidal disease should not be equated automatically with portal hypertension or rectal varices.
+Lower esophagus: left gastric vein with azygos system. Around umbilicus: paraumbilical veins with superficial epigastric veins. Anal canal: superior rectal vein with middle and inferior rectal veins. Retroperitoneal colon region: colic veins with retroperitoneal body wall veins. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

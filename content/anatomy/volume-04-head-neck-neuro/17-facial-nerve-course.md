@@ -83,7 +83,7 @@ Draw and identify
 
 4. No; chorda tympani has already branched within the temporal bone. The facial nerve gives off branches at different points in its course. A proximal lesion can affect lacrimation, stapedius function or taste as well as facial movement, depending on its level. A lesion distal to the stylomastoid foramen mainly affects motor targets supplied after that exit. The named parotid branches distribute to facial expression muscles; they are not parotid secretomotor fibers. Use spared functions to localize a lesion along the route.
 
-5. Check your labels against these relationships: The facial nerve supplies muscles of facial expression and carries taste from anterior two thirds of tongue plus parasympathetic fibers to lacrimal, submandibular, and sublingual glands. The facial nerve gives off branches at different points in its course. A proximal lesion can affect lacrimation, stapedius function or taste as well as facial movement, depending on its level. A lesion distal to the stylomastoid foramen mainly affects motor targets supplied after that exit. The named parotid branches distribute to facial expression muscles; they are not parotid secretomotor fibers. Use spared functions to localize a lesion along the route.
+5. Check your labels against these relationships: The facial nerve supplies muscles of facial expression and carries taste from anterior two thirds of tongue plus parasympathetic fibers to lacrimal, submandibular, and sublingual glands. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

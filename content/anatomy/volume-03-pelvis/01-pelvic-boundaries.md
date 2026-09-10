@@ -97,7 +97,7 @@ True conjugate runs from sacral promontory to superior margin of pubic symphysis
 
 5. Check your labels against these relationships: The true pelvis is the part of the pelvis below the pelvic brim. It contains the pelvic viscera, including urinary bladder, internal genital organs, rectum, vessels, nerves, lymphatics, and pelvic fascia. The pelvic brim separates the false pelvis above from the lesser or true pelvis below.
 
-The pelvic brim follows the sacral promontory and alae, arcuate lines, pectineal lines, pubic crests and superior symphyseal border. The false pelvis supports abdominal viscera; the true pelvis encloses pelvic organs. The pelvis opens inferiorly into the perineum through the pelvic outlet. The pelvic cavity communicates with the abdomen superiorly and perineum inferiorly. The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them. The brim follows the sacral promontory and ala, arcuate and pectineal lines, pubic crest and superior symphyseal margin. The obstetric conjugate concerns the anteroposterior inlet dimension; it is not a description of every narrow point throughout the birth canal. Place the ischial spines between inlet and outlet to understand the midpelvic plane.
+The pelvic brim follows the sacral promontory and alae, arcuate lines, pectineal lines, pubic crests and superior symphyseal border. The false pelvis supports abdominal viscera; the true pelvis encloses pelvic organs. The pelvis opens inferiorly into the perineum through the pelvic outlet. The pelvic cavity communicates with the abdomen superiorly and perineum inferiorly. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

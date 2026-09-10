@@ -83,7 +83,7 @@ Draw and identify
 
 4. Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point.
 
-5. Check your labels against these relationships: The nasal cavity extends from nostrils to choanae and is divided by the nasal septum. Its lateral wall has conchae and meatuses that receive drainage from paranasal sinuses and nasolacrimal duct. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point.
+5. Check your labels against these relationships: The nasal cavity extends from nostrils to choanae and is divided by the nasal septum. Its lateral wall has conchae and meatuses that receive drainage from paranasal sinuses and nasolacrimal duct. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

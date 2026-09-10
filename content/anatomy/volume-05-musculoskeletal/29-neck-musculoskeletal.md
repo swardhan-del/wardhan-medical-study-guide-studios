@@ -83,7 +83,7 @@ Draw and identify
 
 4. C1 spinal fibers. A nerve can carry hitchhiking fibers from another source. C1 fibers travel with XII to thyrohyoid and geniohyoid, while most infrahyoids receive ansa cervicalis. Suprahyoid muscles can elevate the hyoid or depress the mandible depending on which attachment is stabilized. Sternocleidomastoid rotates the face contralaterally during unilateral contraction and receives XI motor supply. Distinguish the visible carrier nerve from the spinal origin and the mechanical task of the muscle.
 
-5. Check your labels against these relationships: Neck muscle questions are easiest if grouped by layer and nerve. Sternocleidomastoid and trapezius are supplied by the accessory nerve. Suprahyoids elevate hyoid/floor of mouth; infrahyoids depress/stabilize hyoid and larynx. A nerve can carry hitchhiking fibers from another source. C1 fibers travel with XII to thyrohyoid and geniohyoid, while most infrahyoids receive ansa cervicalis. Suprahyoid muscles can elevate the hyoid or depress the mandible depending on which attachment is stabilized. Sternocleidomastoid rotates the face contralaterally during unilateral contraction and receives XI motor supply. Distinguish the visible carrier nerve from the spinal origin and the mechanical task of the muscle.
+5. Check your labels against these relationships: Neck muscle questions are easiest if grouped by layer and nerve. Sternocleidomastoid and trapezius are supplied by the accessory nerve. Suprahyoids elevate hyoid/floor of mouth; infrahyoids depress/stabilize hyoid and larynx. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -83,7 +83,7 @@ Draw and identify
 
 4. Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists.
 
-5. Check your labels against these relationships: The pancreas is a mostly secondarily retroperitoneal foregut organ behind the stomach and related to the C-loop of duodenum and splenic vessels. It has head, uncinate process, neck, body, and tail. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists.
+5. Check your labels against these relationships: The pancreas is a mostly secondarily retroperitoneal foregut organ behind the stomach and related to the C-loop of duodenum and splenic vessels. It has head, uncinate process, neck, body, and tail. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -83,7 +83,7 @@ Draw and identify
 
 4. Glossopharyngeal IX. Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier.
 
-5. Check your labels against these relationships: The major salivary glands are parotid, submandibular, and sublingual. Their exam importance is mainly ducts, relations, parasympathetic pathways, and lymphatic drainage. Passing through a gland does not mean innervating its secretion. Facial motor branches traverse parotid on their way to facial muscles. Parotid secretomotor fibers instead run from IX through tympanic and lesser petrosal pathways, synapse in the otic ganglion and travel with auriculotemporal V3 branches. Submandibular and sublingual pathways arise from VII via chorda tympani and the submandibular ganglion. Distinguish preganglionic source, synapse and postganglionic carrier.
+5. Check your labels against these relationships: The major salivary glands are parotid, submandibular, and sublingual. Their exam importance is mainly ducts, relations, parasympathetic pathways, and lymphatic drainage. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

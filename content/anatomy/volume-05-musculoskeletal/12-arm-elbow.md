@@ -83,7 +83,7 @@ Draw and identify
 
 4. Radial nerve. Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles.
 
-5. Check your labels against these relationships: The arm has anterior flexor and posterior extensor compartments. The elbow is a compound joint involving humeroulnar, humeroradial, and proximal radioulnar articulations. Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles.
+5. Check your labels against these relationships: The arm has anterior flexor and posterior extensor compartments. The elbow is a compound joint involving humeroulnar, humeroradial, and proximal radioulnar articulations. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

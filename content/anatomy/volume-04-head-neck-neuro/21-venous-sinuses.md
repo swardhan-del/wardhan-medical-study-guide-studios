@@ -83,7 +83,7 @@ Draw and identify
 
 4. Abducens VI. The cavernous sinus is lateral to the sella. III, IV, V1 and V2 lie in its lateral wall in superior-to-inferior order; VI travels near the carotid artery within the venous compartment. This makes combinations of ocular movement and facial sensory changes anatomically plausible. Venous drainage connects to ophthalmic veins and petrosal routes, but the sinus is not a CSF reservoir. A complete localization also considers nearby optic and pituitary structures separately.
 
-5. Check your labels against these relationships: Dural venous sinuses are endothelial venous channels between dural layers. The cavernous sinus is clinically special because cranial nerves and the internal carotid artery pass through or along it. The cavernous sinus is lateral to the sella. III, IV, V1 and V2 lie in its lateral wall in superior-to-inferior order; VI travels near the carotid artery within the venous compartment. This makes combinations of ocular movement and facial sensory changes anatomically plausible. Venous drainage connects to ophthalmic veins and petrosal routes, but the sinus is not a CSF reservoir. A complete localization also considers nearby optic and pituitary structures separately.
+5. Check your labels against these relationships: Dural venous sinuses are endothelial venous channels between dural layers. The cavernous sinus is clinically special because cranial nerves and the internal carotid artery pass through or along it. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

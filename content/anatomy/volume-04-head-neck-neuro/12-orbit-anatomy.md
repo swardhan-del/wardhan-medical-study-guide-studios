@@ -91,7 +91,7 @@ CN III exits interpeduncular fossa and enters orbit through superior orbital fis
 
 5. Check your labels against these relationships: CN I olfactory nerve carries smell fibers from olfactory mucosa through cribriform plate to olfactory bulb. CN II optic nerve carries vision from retina through optic canal to optic chiasm and optic tract.
 
-Olfactory fibers pass through cribriform plate of ethmoid. Olfactory nerve has no brainstem nucleus. Optic nerve is an extension of diencephalon and is covered by meninges. Optic canal transmits optic nerve and ophthalmic artery. Nasal retinal fibers cross at optic chiasm; temporal retinal fibers remain ipsilateral. The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles. Its medial wall and floor are relatively thin and border ethmoidal and maxillary spaces. The globe has an outer fibrous coat, vascular middle coat and neural retina. Light passes through cornea, aqueous, pupil, lens and vitreous before reaching retina; neural signals leave through the optic nerve. Nasal retinal fibers cross at the chiasm, while temporal fibers do not.
+Olfactory fibers pass through cribriform plate of ethmoid. Olfactory nerve has no brainstem nucleus. Optic nerve is an extension of diencephalon and is covered by meninges. Optic canal transmits optic nerve and ophthalmic artery. Nasal retinal fibers cross at optic chiasm; temporal retinal fibers remain ipsilateral. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

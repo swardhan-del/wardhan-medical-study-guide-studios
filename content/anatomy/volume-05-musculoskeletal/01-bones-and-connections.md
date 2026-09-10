@@ -91,7 +91,7 @@ Syndesmosis is fibrous connection. Synchondrosis is cartilage connection. Symphy
 
 5. Check your labels against these relationships: Bones form the rigid framework of the body. They protect organs, provide levers for muscles, store minerals, and contain marrow. In an oral exam, classify the bone first, then give its functional reason.
 
-Long bones act as levers and have a shaft with two ends. Short bones provide compact stability. Flat bones protect and provide broad muscle attachment. Irregular bones have complex topographic shapes. Sesamoid bones develop in tendons and improve leverage. Pneumatic bones contain air-filled cavities. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions.
+Long bones act as levers and have a shaft with two ends. Short bones provide compact stability. Flat bones protect and provide broad muscle attachment. Irregular bones have complex topographic shapes. Sesamoid bones develop in tendons and improve leverage. Pneumatic bones contain air-filled cavities. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

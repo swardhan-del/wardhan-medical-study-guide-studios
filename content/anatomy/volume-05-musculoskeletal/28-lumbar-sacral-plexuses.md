@@ -83,7 +83,7 @@ Draw and identify
 
 4. Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together.
 
-5. Check your labels against these relationships: The cervical plexus comes from C1-C4, the lumbar plexus mainly from L1-L4, and the sacral plexus mainly from L4-S4. Plexus knowledge lets you predict sensory and motor deficits. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together.
+5. Check your labels against these relationships: The cervical plexus comes from C1-C4, the lumbar plexus mainly from L1-L4, and the sacral plexus mainly from L4-S4. Plexus knowledge lets you predict sensory and motor deficits. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

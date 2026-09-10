@@ -83,7 +83,7 @@ Draw and identify
 
 4. Abducens VI. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings.
 
-5. Check your labels against these relationships: Oculomotor, trochlear, and abducent nerves control extraocular muscles. CN III also carries parasympathetic fibers to ciliary ganglion for pupillary constriction and accommodation. Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings.
+5. Check your labels against these relationships: Oculomotor, trochlear, and abducent nerves control extraocular muscles. CN III also carries parasympathetic fibers to ciliary ganglion for pupillary constriction and accommodation. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -83,7 +83,7 @@ Draw and identify
 
 4. Subtalar and transverse tarsal joints. The talocrural mortise mainly permits dorsiflexion and plantarflexion. Inversion and eversion involve joints below and distal to the talus, so ankle movement is not a single-joint process. The medial longitudinal arch depends on bone shape, plantar ligaments and aponeurosis, plus dynamic muscular support. The tarsal tunnel lies behind the medial malleolus and carries flexor tendons and the posterior tibial neurovascular bundle. Distinguish the arch-support system from the structures merely passing nearby.
 
-5. Check your labels against these relationships: The talocrural ankle joint is formed by the tibia, medial malleolus, lateral malleolus, and trochlea of talus. It mainly performs dorsiflexion and plantarflexion. Inversion and eversion occur mainly at subtalar and transverse tarsal joints. The talocrural mortise mainly permits dorsiflexion and plantarflexion. Inversion and eversion involve joints below and distal to the talus, so ankle movement is not a single-joint process. The medial longitudinal arch depends on bone shape, plantar ligaments and aponeurosis, plus dynamic muscular support. The tarsal tunnel lies behind the medial malleolus and carries flexor tendons and the posterior tibial neurovascular bundle. Distinguish the arch-support system from the structures merely passing nearby.
+5. Check your labels against these relationships: The talocrural ankle joint is formed by the tibia, medial malleolus, lateral malleolus, and trochlea of talus. It mainly performs dorsiflexion and plantarflexion. Inversion and eversion occur mainly at subtalar and transverse tarsal joints. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

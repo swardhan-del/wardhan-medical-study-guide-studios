@@ -83,7 +83,7 @@ Draw and identify
 
 4. On the viewer's left. Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
 
-5. Check your labels against these relationships: The abdomen is divided clinically into four quadrants or anatomically into nine regions. The nine-region scheme uses two vertical midclavicular lines and two horizontal planes, commonly the subcostal and transtubercular planes. Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it. The aorta usually lies to the patient's left of the vertebral body and the inferior vena cava to the right. These relationships check your orientation before you name an organ. A surface region describes a projection, not a sealed internal compartment: an enlarged or mobile organ can cross several regions.
+5. Check your labels against these relationships: The abdomen is divided clinically into four quadrants or anatomically into nine regions. The nine-region scheme uses two vertical midclavicular lines and two horizontal planes, commonly the subcostal and transtubercular planes. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

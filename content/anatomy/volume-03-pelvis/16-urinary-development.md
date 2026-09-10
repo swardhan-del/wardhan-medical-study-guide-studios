@@ -97,7 +97,7 @@ Pronephros is transient and nonfunctional. Mesonephros is temporary and contribu
 
 5. Check your labels against these relationships: The urogenital system develops mainly from intermediate mesoderm, which forms the urogenital ridge. This ridge gives rise to nephrogenic cord for urinary organs and gonadal ridge for reproductive organs.
 
-Intermediate mesoderm lies between paraxial and lateral plate mesoderm. Nephrogenic cord forms pronephros, mesonephros, and metanephros in sequence. Gonadal ridge receives primordial germ cells. Cloaca and urogenital sinus contribute to lower urinary and genital outlet structures. Mesonephric and paramesonephric ducts are central to genital tract development. Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme. The bud forms ureter, pelvis, calyces and collecting ducts; mesenchyme forms nephron epithelia through the distal tubule. Positional ascent is accompanied by changing arterial supply, explaining accessory renal arteries. Most bladder epithelium derives from urogenital sinus endoderm. Classical diagrams simplify trigonal and distal urethral development; distinguish a teaching model from a claim that every adult tissue has one uncontroversial lineage.
+Intermediate mesoderm lies between paraxial and lateral plate mesoderm. Nephrogenic cord forms pronephros, mesonephros, and metanephros in sequence. Gonadal ridge receives primordial germ cells. Cloaca and urogenital sinus contribute to lower urinary and genital outlet structures. Mesonephric and paramesonephric ducts are central to genital tract development. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

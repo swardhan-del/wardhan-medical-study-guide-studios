@@ -83,7 +83,7 @@ Draw and identify
 
 4. It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis.
 
-5. Check your labels against these relationships: The brainstem consists of midbrain, pons, and medulla. It contains cranial nerve nuclei, ascending and descending tracts, reticular formation, and vital autonomic centers. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis.
+5. Check your labels against these relationships: The brainstem consists of midbrain, pons, and medulla. It contains cranial nerve nuclei, ascending and descending tracts, reticular formation, and vital autonomic centers. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

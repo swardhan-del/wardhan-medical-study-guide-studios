@@ -83,7 +83,7 @@ Draw and identify
 
 4. Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route.
 
-5. Check your labels against these relationships: The pelvic girdle consists of right hip bone, left hip bone, sacrum, and coccyx. Each hip bone is made of ilium, ischium, and pubis, which meet at the acetabulum. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route.
+5. Check your labels against these relationships: The pelvic girdle consists of right hip bone, left hip bone, sacrum, and coccyx. Each hip bone is made of ilium, ischium, and pubis, which meet at the acetabulum. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

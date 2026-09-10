@@ -91,7 +91,7 @@ Femoral ring boundaries: anterior inguinal ligament, posterior pectineal ligamen
 
 5. Check your labels against these relationships: The femoral triangle is bounded by inguinal ligament, sartorius, and adductor longus. Its contents from lateral to medial are femoral nerve, artery, vein, and canal. The adductor canal transmits femoral vessels toward the adductor hiatus.
 
-Femoral triangle floor: iliopsoas and pectineus. Femoral triangle roof: fascia lata. Contents lateral to medial: N A V C. Adductor canal boundaries: vastus medialis anterolateral, adductor longus/magnus posterior, sartorius/vastoadductor membrane roof. Femoral artery becomes popliteal artery after passing through the adductor hiatus. The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal. The sheath encloses arterial, venous and canal compartments but excludes the nerve. The canal allows venous expansion and contains lymphatic tissue; its ring lies medial to the vein. In the adductor canal, the femoral vessels proceed toward the hiatus, while the saphenous nerve leaves without passing through it. A shared route proximally does not guarantee a shared distal exit.
+Femoral triangle floor: iliopsoas and pectineus. Femoral triangle roof: fascia lata. Contents lateral to medial: N A V C. Adductor canal boundaries: vastus medialis anterolateral, adductor longus/magnus posterior, sartorius/vastoadductor membrane roof. Femoral artery becomes popliteal artery after passing through the adductor hiatus. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

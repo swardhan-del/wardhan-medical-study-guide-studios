@@ -83,7 +83,7 @@ Draw and identify
 
 4. Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship.
 
-5. Check your labels against these relationships: The hip joint is a multiaxial ball-and-socket joint between the femoral head and acetabulum. It sacrifices some mobility for stability through a deep socket, acetabular labrum, strong capsule, and spiral ligaments. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship.
+5. Check your labels against these relationships: The hip joint is a multiaxial ball-and-socket joint between the femoral head and acetabulum. It sacrifices some mobility for stability through a deep socket, acetabular labrum, strong capsule, and spiral ligaments. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

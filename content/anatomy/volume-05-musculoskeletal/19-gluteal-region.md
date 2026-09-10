@@ -83,7 +83,7 @@ Draw and identify
 
 4. Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation.
 
-5. Check your labels against these relationships: The gluteal region is organized by the piriformis muscle. The superior gluteal nerve and vessels pass above piriformis; the sciatic nerve and most other structures pass below piriformis. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation.
+5. Check your labels against these relationships: The gluteal region is organized by the piriformis muscle. The superior gluteal nerve and vessels pass above piriformis; the sciatic nerve and most other structures pass below piriformis. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

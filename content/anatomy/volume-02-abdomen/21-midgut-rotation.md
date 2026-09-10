@@ -83,7 +83,7 @@ Draw and identify
 
 4. 270 degrees counterclockwise. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return.
 
-5. Check your labels against these relationships: The midgut elongates rapidly, forms a primary intestinal loop, temporarily herniates into the umbilical cord, rotates around the superior mesenteric artery, and later returns to the abdomen. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return.
+5. Check your labels against these relationships: The midgut elongates rapidly, forms a primary intestinal loop, temporarily herniates into the umbilical cord, rotates around the superior mesenteric artery, and later returns to the abdomen. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

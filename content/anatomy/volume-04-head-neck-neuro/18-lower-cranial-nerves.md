@@ -83,7 +83,7 @@ Draw and identify
 
 4. Hypoglossal XII. IX, X and XI share the jugular foramen, while XII has a separate exit. XII supplies most tongue muscles; a lower motor neuron lesion weakens the ipsilateral side and the protruded tongue tends to deviate toward it. Spinal XI supplies sternocleidomastoid and trapezius. IX has a distinctive stylopharyngeus motor target and carotid sensory role, while X supplies most palate, pharynx and larynx. Shared exits predict combinations of deficits, not identical functions.
 
-5. Check your labels against these relationships: The lower cranial nerves organize swallowing, laryngeal function, tongue movement, posterior tongue sensation, autonomic thoracoabdominal supply, and sternocleidomastoid/trapezius motor supply. IX, X and XI share the jugular foramen, while XII has a separate exit. XII supplies most tongue muscles; a lower motor neuron lesion weakens the ipsilateral side and the protruded tongue tends to deviate toward it. Spinal XI supplies sternocleidomastoid and trapezius. IX has a distinctive stylopharyngeus motor target and carotid sensory role, while X supplies most palate, pharynx and larynx. Shared exits predict combinations of deficits, not identical functions.
+5. Check your labels against these relationships: The lower cranial nerves organize swallowing, laryngeal function, tongue movement, posterior tongue sensation, autonomic thoracoabdominal supply, and sternocleidomastoid/trapezius motor supply. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

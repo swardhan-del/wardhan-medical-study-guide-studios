@@ -83,7 +83,7 @@ Draw and identify
 
 4. Stapes. The external acoustic meatus conducts sound to the tympanic membrane. Malleus, incus and stapes transmit vibration through the middle ear to the oval window; round-window movement accommodates inner-ear fluid displacement. The auditory tube connects middle ear to nasopharynx. The cochlea encodes sound, while semicircular ducts detect angular acceleration and utricle and saccule detect linear acceleration and head tilt. CN VIII carries sensory information; it is not the motor nerve to middle-ear muscles.
 
-5. Check your labels against these relationships: The vestibulocochlear nerve is special sensory for hearing and balance. It has cochlear and vestibular components entering the brainstem at the cerebellopontine angle after passing through internal acoustic meatus. The external acoustic meatus conducts sound to the tympanic membrane. Malleus, incus and stapes transmit vibration through the middle ear to the oval window; round-window movement accommodates inner-ear fluid displacement. The auditory tube connects middle ear to nasopharynx. The cochlea encodes sound, while semicircular ducts detect angular acceleration and utricle and saccule detect linear acceleration and head tilt. CN VIII carries sensory information; it is not the motor nerve to middle-ear muscles.
+5. Check your labels against these relationships: The vestibulocochlear nerve is special sensory for hearing and balance. It has cochlear and vestibular components entering the brainstem at the cerebellopontine angle after passing through internal acoustic meatus. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

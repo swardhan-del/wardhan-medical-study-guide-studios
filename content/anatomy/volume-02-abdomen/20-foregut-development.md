@@ -103,7 +103,7 @@ The left side of stomach becomes anterior and receives anterior vagal trunk; rig
 
 5. Check your labels against these relationships: The primitive gut tube is formed during folding of the embryo and is divided into foregut, midgut, and hindgut. Endoderm forms most epithelial lining and glands, while surrounding splanchnic mesoderm forms connective tissue, smooth muscle, vessels, and visceral peritoneum.
 
-Foregut is supplied by celiac trunk in adult anatomy. Midgut is supplied by superior mesenteric artery. Hindgut is supplied by inferior mesenteric artery. Dorsal mesentery is broadly present; ventral mesentery persists mainly in the foregut region and contributes to lesser omentum and falciform ligament. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes.
+Foregut is supplied by celiac trunk in adult anatomy. Midgut is supplied by superior mesenteric artery. Hindgut is supplied by inferior mesenteric artery. Dorsal mesentery is broadly present; ventral mesentery persists mainly in the foregut region and contributes to lesser omentum and falciform ligament. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

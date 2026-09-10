@@ -103,7 +103,7 @@ First part is partly intraperitoneal and is related posteriorly to bile duct, po
 
 5. Check your labels against these relationships: The lesser sac is the omental bursa behind the stomach and lesser omentum. It communicates with the greater sac through the epiploic foramen, also called the omental foramen.
 
-Anterior wall of the lesser sac includes stomach, lesser omentum, and gastrocolic ligament. Posterior wall relates to pancreas, left kidney, left suprarenal gland, aorta, and related retroperitoneal structures. Epiploic foramen boundaries: anterior hepatoduodenal ligament, posterior IVC, superior caudate lobe, inferior first part of duodenum. Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape. The stomach is anterior to the lesser sac and pancreas; the pancreatic neck is anterior to portal vein formation. The third duodenal part lies behind the superior mesenteric vessels. Combining these independent relationships lets you check a proposed label against its neighbours. A single axial slice is insufficient to establish the complete course of a duct or vessel: follow adjacent levels.
+Anterior wall of the lesser sac includes stomach, lesser omentum, and gastrocolic ligament. Posterior wall relates to pancreas, left kidney, left suprarenal gland, aorta, and related retroperitoneal structures. Epiploic foramen boundaries: anterior hepatoduodenal ligament, posterior IVC, superior caudate lobe, inferior first part of duodenum. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

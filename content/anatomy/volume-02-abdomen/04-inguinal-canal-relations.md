@@ -83,7 +83,7 @@ Draw and identify
 
 4. Indirect inguinal. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord.
 
-5. Check your labels against these relationships: The inguinal canal is an oblique passage in the lower anterior abdominal wall above the medial half of the inguinal ligament. It transmits the spermatic cord in males and the round ligament of the uterus in females. The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling. An indirect route begins at the deep ring and can traverse the canal. A direct route crosses the posterior wall in the inguinal triangle, medial to those vessels. A femoral route lies below the inguinal ligament, medial to the femoral vein. The ilioinguinal nerve enters the canal through the wall; it does not enter through the deep ring with the cord.
+5. Check your labels against these relationships: The inguinal canal is an oblique passage in the lower anterior abdominal wall above the medial half of the inguinal ligament. It transmits the spermatic cord in males and the round ligament of the uterus in females. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

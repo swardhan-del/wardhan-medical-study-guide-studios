@@ -91,7 +91,7 @@ Quadrangular space: teres minor superior, teres major inferior, long head tricep
 
 5. Check your labels against these relationships: The axilla is a pyramidal passage between neck and upper limb. It contains the axillary vessels, cords and branches of the brachial plexus, axillary lymph nodes, and fat.
 
-Apex: cervicoaxillary canal. Base: skin, superficial fascia, axillary fascia. Anterior wall: pectoralis major/minor and clavipectoral fascia. Posterior wall: subscapularis, teres major, latissimus dorsi. Medial wall: serratus anterior and thoracic wall. Lateral wall: humerus, coracobrachialis, short head of biceps. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery.
+Apex: cervicoaxillary canal. Base: skin, superficial fascia, axillary fascia. Anterior wall: pectoralis major/minor and clavipectoral fascia. Posterior wall: subscapularis, teres major, latissimus dorsi. Medial wall: serratus anterior and thoracic wall. Lateral wall: humerus, coracobrachialis, short head of biceps. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

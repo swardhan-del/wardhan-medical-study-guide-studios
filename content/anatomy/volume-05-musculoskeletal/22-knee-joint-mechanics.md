@@ -83,7 +83,7 @@ Draw and identify
 
 4. Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains.
 
-5. Check your labels against these relationships: The knee is a modified hinge joint between femoral condyles, tibial plateaus, and patella. The fibula is not part of the knee joint. Menisci improve congruence and the cruciate ligaments control anterior-posterior translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains.
+5. Check your labels against these relationships: The knee is a modified hinge joint between femoral condyles, tibial plateaus, and patella. The fibula is not part of the knee joint. Menisci improve congruence and the cruciate ligaments control anterior-posterior translation. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -83,7 +83,7 @@ Draw and identify
 
 4. No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation.
 
-5. Check your labels against these relationships: A synovial joint is a discontinuous joint with articular surfaces covered by cartilage, an articular cavity, capsule, synovial membrane, and synovial fluid. Accessory structures improve congruence, stability, and tendon movement. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation.
+5. Check your labels against these relationships: A synovial joint is a discontinuous joint with articular surfaces covered by cartilage, an articular cavity, capsule, synovial membrane, and synovial fluid. Accessory structures improve congruence, stability, and tendon movement. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

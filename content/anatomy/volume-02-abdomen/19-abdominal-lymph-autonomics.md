@@ -91,7 +91,7 @@ Vagus supplies parasympathetic innervation to foregut and midgut derivatives up 
 
 5. Check your labels against these relationships: Abdominal lymph drainage follows arteries toward pre-aortic nodes for gut organs and para-aortic nodes for posterior abdominal wall and paired retroperitoneal organs. Lymph eventually reaches intestinal and lumbar trunks and cisterna chyli.
 
-Foregut lymph drains toward celiac nodes. Midgut lymph drains toward superior mesenteric nodes. Hindgut lymph drains toward inferior mesenteric nodes. Kidneys, gonads, suprarenal glands, and posterior abdominal wall drain toward lumbar/para-aortic nodes. Cisterna chyli receives intestinal and lumbar trunks and continues as thoracic duct. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable.
+Foregut lymph drains toward celiac nodes. Midgut lymph drains toward superior mesenteric nodes. Hindgut lymph drains toward inferior mesenteric nodes. Kidneys, gonads, suprarenal glands, and posterior abdominal wall drain toward lumbar/para-aortic nodes. Cisterna chyli receives intestinal and lumbar trunks and continues as thoracic duct. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

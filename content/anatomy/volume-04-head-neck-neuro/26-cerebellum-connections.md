@@ -83,7 +83,7 @@ Draw and identify
 
 4. Middle cerebellar peduncle. The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route. These are broad rules with exceptions. Cerebellar circuitry calibrates timing, coordination and error correction; it does not initiate movement by directly innervating limb muscles. Cerebellar deficits often appear ipsilateral because of the arrangement of crossed and recrossed connections. The fourth ventricle lies between cerebellum and brainstem.
 
-5. Check your labels against these relationships: The cerebellum coordinates movement, posture, tone, balance, and motor learning. The fourth ventricle lies between pons/open medulla anteriorly and cerebellum posteriorly. The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route. These are broad rules with exceptions. Cerebellar circuitry calibrates timing, coordination and error correction; it does not initiate movement by directly innervating limb muscles. Cerebellar deficits often appear ipsilateral because of the arrangement of crossed and recrossed connections. The fourth ventricle lies between cerebellum and brainstem.
+5. Check your labels against these relationships: The cerebellum coordinates movement, posture, tone, balance, and motor learning. The fourth ventricle lies between pons/open medulla anteriorly and cerebellum posteriorly. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -83,7 +83,7 @@ Draw and identify
 
 4. Middle cerebral artery. ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories. Deep perforators supply structures such as the internal capsule, so a small deep lesion can produce substantial deficits. The circle of Willis offers potential collateral connections, but variation and vessel caliber limit protection. MCA is a major branch leaving the circle, not one of the arteries forming its closed ring.
 
-5. Check your labels against these relationships: Brain arterial supply comes from internal carotid and vertebrobasilar systems. The circle of Willis connects anterior and posterior circulations around the optic chiasm, infundibulum, and hypothalamic region. ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories. Deep perforators supply structures such as the internal capsule, so a small deep lesion can produce substantial deficits. The circle of Willis offers potential collateral connections, but variation and vessel caliber limit protection. MCA is a major branch leaving the circle, not one of the arteries forming its closed ring.
+5. Check your labels against these relationships: Brain arterial supply comes from internal carotid and vertebrobasilar systems. The circle of Willis connects anterior and posterior circulations around the optic chiasm, infundibulum, and hypothalamic region. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

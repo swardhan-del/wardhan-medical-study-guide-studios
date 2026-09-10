@@ -83,7 +83,7 @@ Draw and identify
 
 4. Superior mesenteric artery and vein. The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop.
 
-5. Check your labels against these relationships: The duodenum is the first part of the small intestine and forms a C-shaped curve around the head of the pancreas. It has superior, descending, horizontal, and ascending parts. Most of it is secondarily retroperitoneal except the proximal first part. The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop.
+5. Check your labels against these relationships: The duodenum is the first part of the small intestine and forms a C-shaped curve around the head of the pancreas. It has superior, descending, horizontal, and ascending parts. Most of it is secondarily retroperitoneal except the proximal first part. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

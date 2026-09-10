@@ -97,7 +97,7 @@ Pudendal nerve roots: S2-S4. Route: greater sciatic foramen below piriformis, ar
 
 5. Check your labels against these relationships: The ischioanal fossa is a fat-filled wedge-shaped space in the anal triangle. It allows expansion of the anal canal and transmits inferior rectal vessels and nerves. Its lateral wall includes obturator internus fascia with pudendal canal.
 
-Medial wall: external anal sphincter and levator ani/pelvic diaphragm. Lateral wall: obturator internus muscle and fascia. Posterior boundary: sacrotuberous ligament and gluteus maximus region. Anterior recess extends into urogenital triangle above perineal membrane region. Contents: fat, inferior rectal nerve/vessels, lymphatics. The ischioanal fossa contains fat that permits expansion of the anal canal. Its medial boundary includes levator ani and the external sphincter; laterally lie obturator internus and its fascia. Inferior rectal branches cross the fat toward the anal region, whereas the main pudendal bundle travels in the lateral fascial canal. Distinguish the smooth internal sphincter from the skeletal external sphincter, and the pectinate mucosal line from the pelvic-floor boundary.
+Medial wall: external anal sphincter and levator ani/pelvic diaphragm. Lateral wall: obturator internus muscle and fascia. Posterior boundary: sacrotuberous ligament and gluteus maximus region. Anterior recess extends into urogenital triangle above perineal membrane region. Contents: fat, inferior rectal nerve/vessels, lymphatics. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 

@@ -97,7 +97,7 @@ Cortex includes cortical labyrinth and medullary rays. Medulla is organized into
 
 5. Check your labels against these relationships: The kidneys are paired retroperitoneal organs on the posterior abdominal wall, roughly from T12 to L3, with the right kidney slightly lower because of the liver. Each kidney has fibrous capsule, perirenal fat, renal fascia, and pararenal fat. The medial hilum opens into the renal sinus.
 
-Right kidney lies slightly lower than left. Capsules from inside outward: fibrous capsule, perirenal fat/adipose capsule, renal fascia, pararenal fat. Hilum is the medial entry-exit cleft. Renal sinus contains renal pelvis, major and minor calyces, renal vessels, lymphatics, nerves, and fat. Typical anterior-posterior order at hilum: vein, artery, pelvis/ureter. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant.
+Right kidney lies slightly lower than left. Capsules from inside outward: fibrous capsule, perirenal fat/adipose capsule, renal fascia, pararenal fat. Hilum is the medial entry-exit cleft. Renal sinus contains renal pelvis, major and minor calyces, renal vessels, lymphatics, nerves, and fat. Typical anterior-posterior order at hilum: vein, artery, pelvis/ureter. Compare each labelled structure in your drawing against the checkpoints listed above.
 
 ## Oral recap
 
