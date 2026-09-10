@@ -12,7 +12,7 @@ export default defineConfig({
     {
       name: "desktop",
       testMatch:
-        /(?:printable-guides|resource-access|biophysics|first-visit|figures|public|student-audit|learning-continuity|directory|authored-guides|histology-resources|thorax|study-depth)\.spec\.ts/,
+        /(?:security|printable-guides|resource-access|biophysics|first-visit|figures|public|student-audit|learning-continuity|directory|authored-guides|histology-resources|thorax|study-depth)\.spec\.ts/,
       use: {
         baseURL: "http://127.0.0.1:3101",
         viewport: { width: 1440, height: 1000 },
@@ -21,7 +21,7 @@ export default defineConfig({
     {
       name: "mobile",
       testMatch:
-        /(?:printable-guides|resource-access|biophysics|first-visit|figures|public|student-audit|learning-continuity|directory|authored-guides|histology-resources|thorax|study-depth)\.spec\.ts/,
+        /(?:security|printable-guides|resource-access|biophysics|first-visit|figures|public|student-audit|learning-continuity|directory|authored-guides|histology-resources|thorax|study-depth)\.spec\.ts/,
       use: {
         baseURL: "http://127.0.0.1:3101",
         viewport: { width: 390, height: 844 },
