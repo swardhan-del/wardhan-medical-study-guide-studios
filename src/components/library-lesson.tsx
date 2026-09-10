@@ -1,3 +1,4 @@
+import { AnatomyLessonNavigation, AnatomyIdentification, AnatomyPractice } from "./anatomy-course";
 import { PlexusRecall } from "./plexus-recall";
 import { TeachingDiagram, hasTeachingDiagram } from "./teaching-diagram";
 import { foundations } from "@/content/foundations";
@@ -99,6 +100,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
       {lesson.id === "thorax-nerve-relations" && <p className="study-notice">New to anatomy? <Link href="/start/anatomy">Review position, directions and body planes first</Link>.</p>}
       {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
       <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>
+      <AnatomyLessonNavigation lessonId={lesson.id} />
       <div className="concept-layout">
         <div>
           <section className="study-panel lesson-preparation" aria-labelledby="lesson-objectives">
@@ -106,7 +108,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             <ul>{(lesson.objectives ?? [lesson.summary]).map(objective => <li key={objective}>{objective}</li>)}</ul>
             <p><Link href={`/learn/foundations/${lesson.subject}`}>New to this subject? Learn the starting vocabulary</Link></p>
             {foundation && <details><summary>Subject vocabulary reminder</summary><dl className="foundation-terms">{foundation.terms.map(([term, definition]) => <div key={term}><dt>{term}</dt><dd>{definition}</dd></div>)}</dl><a href={foundation.source}>Vocabulary reference</a></details>}
-            {lesson.prerequisites && <><h3>Useful preparation</h3><ul>{lesson.prerequisites.map(id => {
+            {lesson.prerequisites && <><h3>Useful preparation</h3>{lesson.subject === "anatomy" && <p>Know anatomical position, planes and directional terms, and distinguish an artery, vein, nerve and duct. The previous lesson is a useful sequence step; use the volume contents if you already know it.</p>}<ul>{lesson.prerequisites.map(id => {
               const resource = publicCatalog.find(r => r.id === id);
               return resource ? <li key={id}><Link href={resourceHref(resource)}>{resource.title}</Link></li> : null;
             })}</ul></>}
@@ -130,7 +132,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
                       +
                     </span>
                   </summary>
-                  <p>{step.body}</p>
+                  {step.body.split("\n\n").map((paragraph, i) => <p key={i}>{paragraph}</p>)}
                   {((lesson.id === "microscopy" && index === 0) ||
                     (lesson.id === "renal-histology" && index === 2)) &&
                     figuresForResource(lesson.id).map((f) => (
@@ -146,6 +148,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             <p>{lesson.workedExample.prompt}</p>
             <details><summary>Show the reasoning</summary><ol>{lesson.workedExample.solution.map(step => <li key={step}>{step}</li>)}</ol></details>
           </section>}
+          <AnatomyIdentification lessonId={lesson.id} />
           {hasFigures && <span id="lesson-figures" />}
           <TeachingDiagram lessonId={lesson.id} />
           {lesson.id === "epithelia" && (
@@ -202,6 +205,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             key={lesson.id}
             lesson={{ id: lesson.id, question: lesson.question }}
           />
+          <AnatomyPractice lessonId={lesson.id} />
           <span id="studio-practice" /><span id="apply-the-concept" />
           {[...transfer.questions, ...studio.questions]
             .filter((q) => q.topic === lesson.id)

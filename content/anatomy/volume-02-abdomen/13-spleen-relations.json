@@ -1,0 +1,130 @@
+{
+  "volume": 2,
+  "order": 13,
+  "lesson": {
+    "id": "spleen-relations",
+    "subject": "anatomy",
+    "title": "Spleen, hilum and splenic ligaments",
+    "summary": "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Spleen, hilum and splenic ligaments",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "20. Spleen",
+    "steps": [
+      {
+        "title": "Spleen",
+        "body": "The spleen is an intraperitoneal lymphoid organ in the left hypochondrium, commonly related to ribs 9-11. It has diaphragmatic and visceral surfaces, a hilum, and peritoneal ligaments to stomach and posterior abdominal wall."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Visceral surface relates to stomach, left kidney, colon, and pancreatic tail. Gastrosplenic ligament carries short gastric and left gastro-omental vessels. Splenorenal ligament carries splenic vessels and pancreatic tail. Splenic artery is a tortuous branch of the celiac trunk. Branches of the splenic artery: pancreatic branches, short gastric arteries, left gastro-omental artery, and terminal splenic branches entering the splenic hilum."
+      },
+      {
+        "title": "Why is the spleen's relation to the lower ribs important without making it an intrathoracic organ?",
+        "body": "The spleen lies below the diaphragm but projects deep to the left lower ribs, classically around ribs 9-11 with its long axis near the tenth rib. The diaphragm separates it from pleura and lung above. A surface view can therefore place ribs over an abdominal organ without relocating that organ into the thorax. Its thin capsule, vascular parenchyma and nearby pancreatic tail explain the importance of regional relationships. Spleen size and position vary with body form and disease."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+      }
+    ],
+    "question": {
+      "prompt": "Which ligament carries the pancreatic tail toward the splenic hilum?",
+      "options": [
+        {
+          "text": "Splenorenal ligament",
+          "reason": "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+        },
+        {
+          "text": "Falciform ligament",
+          "reason": "The correct relationship is: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+        },
+        {
+          "text": "Hepatoduodenal ligament",
+          "reason": "The correct relationship is: Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain spleen, hilum and splenic ligaments using the main anatomical relationships, then justify your answer to: Which ligament carries the pancreatic tail toward the splenic hilum?",
+      "answer": "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+    },
+    "related": [
+      "pancreas-relations",
+      "small-intestine-mesentery"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of spleen, hilum and splenic ligaments.",
+      "Answer with anatomical reasons: Which ligament carries the pancreatic tail toward the splenic hilum?",
+      "Draw stomach, spleen, left kidney and pancreatic tail. Connect the two named ligaments and label what each carries."
+    ],
+    "prerequisites": [
+      "pancreas-relations"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which ligament carries the pancreatic tail toward the splenic hilum? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.",
+        "Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail.",
+        "Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw stomach, spleen, left kidney and pancreatic tail. Connect the two named ligaments and label what each carries.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Splenorenal ligament",
+      "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.",
+      "Its adult celiac supply does not make it a foregut epithelial derivative."
+    ]
+  },
+  "practice": [
+    {
+      "id": "spleen-relations-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is the spleen's relation to the lower ribs important without making it an intrathoracic organ?",
+      "answer": "The spleen lies below the diaphragm but projects deep to the left lower ribs, classically around ribs 9-11 with its long axis near the tenth rib. The diaphragm separates it from pleura and lung above. A surface view can therefore place ribs over an abdominal organ without relocating that organ into the thorax. Its thin capsule, vascular parenchyma and nearby pancreatic tail explain the importance of regional relationships. Spleen size and position vary with body form and disease."
+    },
+    {
+      "id": "spleen-relations-relations",
+      "kind": "Relationship recall",
+      "prompt": "In spleen, hilum and splenic ligaments, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Visceral surface relates to stomach, left kidney, colon, and pancreatic tail. Gastrosplenic ligament carries short gastric and left gastro-omental vessels. Splenorenal ligament carries splenic vessels and pancreatic tail. Splenic artery is a tortuous branch of the celiac trunk. Branches of the splenic artery: pancreatic branches, short gastric arteries, left gastro-omental artery, and terminal splenic branches entering the splenic hilum."
+    },
+    {
+      "id": "spleen-relations-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Falciform ligament” to the question “Which ligament carries the pancreatic tail toward the splenic hilum?” Explain what needs correcting.",
+      "answer": "Splenorenal ligament. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+    },
+    {
+      "id": "spleen-relations-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw stomach, spleen, left kidney and pancreatic tail. Connect the two named ligaments and label what each carries.",
+      "answer": "Check your labels against these relationships: The spleen is an intraperitoneal lymphoid organ in the left hypochondrium, commonly related to ribs 9-11. It has diaphragmatic and visceral surfaces, a hilum, and peritoneal ligaments to stomach and posterior abdominal wall. The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth. Its adult celiac supply does not make it a foregut epithelial derivative. The gastrosplenic ligament connects it with the stomach and carries short gastric and left gastro-omental vessels. The splenorenal ligament contains splenic vessels and the pancreatic tail. Naming the ligament predicts the adjacent structures that must be considered in regional anatomy."
+    }
+  ],
+  "sourceSections": [
+    "20. Spleen"
+  ],
+  "furtherReading": {
+    "title": "Lymphatic system anatomy",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

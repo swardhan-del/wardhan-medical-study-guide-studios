@@ -1,0 +1,131 @@
+{
+  "volume": 3,
+  "order": 8,
+  "lesson": {
+    "id": "testis-spermatic-cord",
+    "subject": "anatomy",
+    "title": "Testis, scrotum and spermatic cord",
+    "summary": "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.",
+    "tags": [
+      "anatomy",
+      "Volume 3",
+      "Pelvis and urogenital anatomy",
+      "Testis, scrotum and spermatic cord",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-3",
+    "section": "17. Testis and Scrotum; 19. Spermatic Cord Coverings and Contents",
+    "steps": [
+      {
+        "title": "Testis and Scrotum",
+        "body": "The testis is a paired male gonad located in the scrotum. It produces spermatozoa in seminiferous tubules and testosterone from interstitial Leydig cells. It is covered by tunica albuginea and partially by tunica vaginalis, a remnant of processus vaginalis.\n\nTestis has superior and inferior poles, medial/lateral surfaces, anterior/posterior borders. Epididymis lies along posterior aspect of testis. Tunica vaginalis has parietal and visceral layers around the anterior/lateral testis region. Arterial supply is testicular artery from abdominal aorta. Venous drainage is pampiniform plexus to testicular veins: right to IVC, left to left renal vein. Lymph drains to lumbar/para-aortic nodes, not superficial inguinal nodes. Developmental orientation: the testis develops high on the posterior abdominal wall near the kidney region, then descends through the inguinal canal into the scrotum. Thermoregulation has three practical mechanisms: dartos wrinkles scrotal skin, cremaster elevates the testis, and the pampiniform plexus cools testicular arterial blood by countercurrent heat exchange."
+      },
+      {
+        "title": "Spermatic Cord Coverings and Contents",
+        "body": "The spermatic cord extends from deep inguinal ring to testis and contains ductus deferens, testicular vessels, pampiniform plexus, autonomic nerves, lymphatics, genital branch of genitofemoral nerve, and remnants of processus vaginalis. Its coverings derive from layers of the abdominal wall.\n\nExternal spermatic fascia derives from external oblique aponeurosis. Cremaster muscle/fascia derives from internal oblique. Internal spermatic fascia derives from transversalis fascia. Contents include ductus deferens, artery to ductus deferens, testicular artery, pampiniform plexus, lymphatics, autonomic plexus, genital branch of genitofemoral nerve, and processus vaginalis remnants. Add the cremasteric artery when giving a full contents answer. The artery to the ductus deferens usually arises from the vesical artery system of the internal iliac artery. Keep the examiner trap: ilioinguinal nerve passes through the inguinal canal but is not a true spermatic cord content."
+      },
+      {
+        "title": "How do the pampiniform plexus and cremaster contribute to temperature regulation?",
+        "body": "The pampiniform venous plexus surrounds incoming arterial channels and supports countercurrent heat exchange, reducing the temperature of arterial blood approaching the testis. Cremaster changes testicular position relative to the body, while dartos alters scrotal skin configuration. These mechanisms operate together and do not replace the need for vascular perfusion. The plexus eventually drains to testicular veins, with the right typically entering IVC and the left entering left renal vein. Venous drainage asymmetry is separate from the bilateral arterial origin from aorta."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+      }
+    ],
+    "question": {
+      "prompt": "Where does testicular lymph primarily drain?",
+      "options": [
+        {
+          "text": "Lumbar para-aortic nodes",
+          "reason": "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+        },
+        {
+          "text": "Superficial inguinal nodes only",
+          "reason": "The correct relationship is: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+        },
+        {
+          "text": "Axillary nodes",
+          "reason": "The correct relationship is: Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain testis, scrotum and spermatic cord using the main anatomical relationships, then justify your answer to: Where does testicular lymph primarily drain?",
+      "answer": "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+    },
+    "related": [
+      "bladder-urethrae",
+      "male-reproductive-ducts"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 11,
+    "objectives": [
+      "Describe the location and organization of testis, scrotum and spermatic cord.",
+      "Answer with anatomical reasons: Where does testicular lymph primarily drain?",
+      "Draw a descended testis with an arterial and lymphatic line returning toward the abdomen, then add a separate scrotal-skin lymph route."
+    ],
+    "prerequisites": [
+      "bladder-urethrae"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Where does testicular lymph primarily drain? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.",
+        "Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content.",
+        "Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a descended testis with an arterial and lymphatic line returning toward the abdomen, then add a separate scrotal-skin lymph route.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Lumbar para-aortic nodes",
+      "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.",
+      "Scrotal skin has a different superficial inguinal drainage pattern."
+    ]
+  },
+  "practice": [
+    {
+      "id": "testis-spermatic-cord-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How do the pampiniform plexus and cremaster contribute to temperature regulation?",
+      "answer": "The pampiniform venous plexus surrounds incoming arterial channels and supports countercurrent heat exchange, reducing the temperature of arterial blood approaching the testis. Cremaster changes testicular position relative to the body, while dartos alters scrotal skin configuration. These mechanisms operate together and do not replace the need for vascular perfusion. The plexus eventually drains to testicular veins, with the right typically entering IVC and the left entering left renal vein. Venous drainage asymmetry is separate from the bilateral arterial origin from aorta."
+    },
+    {
+      "id": "testis-spermatic-cord-relations",
+      "kind": "Relationship recall",
+      "prompt": "In testis, scrotum and spermatic cord, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The spermatic cord extends from deep inguinal ring to testis and contains ductus deferens, testicular vessels, pampiniform plexus, autonomic nerves, lymphatics, genital branch of genitofemoral nerve, and remnants of processus vaginalis. Its coverings derive from layers of the abdominal wall.\n\nExternal spermatic fascia derives from external oblique aponeurosis. Cremaster muscle/fascia derives from internal oblique. Internal spermatic fascia derives from transversalis fascia. Contents include ductus deferens, artery to ductus deferens, testicular artery, pampiniform plexus, lymphatics, autonomic plexus, genital branch of genitofemoral nerve, and processus vaginalis remnants. Add the cremasteric artery when giving a full contents answer. The artery to the ductus deferens usually arises from the vesical artery system of the internal iliac artery. Keep the examiner trap: ilioinguinal nerve passes through the inguinal canal but is not a true spermatic cord content."
+    },
+    {
+      "id": "testis-spermatic-cord-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Superficial inguinal nodes only” to the question “Where does testicular lymph primarily drain?” Explain what needs correcting.",
+      "answer": "Lumbar para-aortic nodes. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+    },
+    {
+      "id": "testis-spermatic-cord-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a descended testis with an arterial and lymphatic line returning toward the abdomen, then add a separate scrotal-skin lymph route.",
+      "answer": "Check your labels against these relationships: The testis is a paired male gonad located in the scrotum. It produces spermatozoa in seminiferous tubules and testosterone from interstitial Leydig cells. It is covered by tunica albuginea and partially by tunica vaginalis, a remnant of processus vaginalis.\n\nTestis has superior and inferior poles, medial/lateral surfaces, anterior/posterior borders. Epididymis lies along posterior aspect of testis. Tunica vaginalis has parietal and visceral layers around the anterior/lateral testis region. Arterial supply is testicular artery from abdominal aorta. Venous drainage is pampiniform plexus to testicular veins: right to IVC, left to left renal vein. Lymph drains to lumbar/para-aortic nodes, not superficial inguinal nodes. Developmental orientation: the testis develops high on the posterior abdominal wall near the kidney region, then descends through the inguinal canal into the scrotum. Thermoregulation has three practical mechanisms: dartos wrinkles scrotal skin, cremaster elevates the testis, and the pampiniform plexus cools testicular arterial blood by countercurrent heat exchange. The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent. Scrotal skin has a different superficial inguinal drainage pattern. The cord carries ductus deferens, testicular vessels, pampiniform plexus and associated structures; the ilioinguinal nerve runs in the canal but is not enclosed as a true cord content. Preserve the distinction between testis, its coverings and the surrounding skin when answering vessel or lymph questions."
+    }
+  ],
+  "sourceSections": [
+    "17. Testis and Scrotum",
+    "19. Spermatic Cord Coverings and Contents"
+  ],
+  "furtherReading": {
+    "title": "Male reproductive anatomy",
+    "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

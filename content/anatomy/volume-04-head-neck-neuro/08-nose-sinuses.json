@@ -1,0 +1,130 @@
+{
+  "volume": 4,
+  "order": 8,
+  "lesson": {
+    "id": "nose-sinuses",
+    "subject": "anatomy",
+    "title": "Nasal cavity and paranasal drainage",
+    "summary": "A meatus lies below its corresponding concha.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Nasal cavity and paranasal drainage",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "14. Nasal Cavity and Paranasal Sinuses",
+    "steps": [
+      {
+        "title": "Nasal Cavity and Paranasal Sinuses",
+        "body": "The nasal cavity extends from nostrils to choanae and is divided by the nasal septum. Its lateral wall has conchae and meatuses that receive drainage from paranasal sinuses and nasolacrimal duct."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Nasal septum: septal cartilage, perpendicular plate of ethmoid, and vomer. Floor: palatine process of maxilla and horizontal plate of palatine bone. Superior meatus receives posterior ethmoidal cells. Middle meatus receives frontal, maxillary, and anterior/middle ethmoidal drainage. Inferior meatus receives nasolacrimal duct. Sphenoidal sinus drains into sphenoethmoidal recess."
+      },
+      {
+        "title": "How do sensory and olfactory regions differ in the nasal cavity?",
+        "body": "Olfactory epithelium occupies the superior region near the roof and upper septal and conchal surfaces. General sensation over much of the nasal cavity uses trigeminal branches, with anterior-superior and posterior-inferior territories supplied through different routes. Olfactory fibers pass through cribriform foramina, while most general sensory fibers do not. The septal vascular plexus is yet another layer of organization. Smell, irritation sensation and blood supply should therefore be shown separately on a nasal diagram."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+      }
+    ],
+    "question": {
+      "prompt": "Where does the nasolacrimal duct drain?",
+      "options": [
+        {
+          "text": "Inferior nasal meatus",
+          "reason": "A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+        },
+        {
+          "text": "Superior nasal meatus",
+          "reason": "The correct relationship is: Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+        },
+        {
+          "text": "Sphenoethmoidal recess",
+          "reason": "The correct relationship is: Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain nasal cavity and paranasal drainage using the main anatomical relationships, then justify your answer to: Where does the nasolacrimal duct drain?",
+      "answer": "A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+    },
+    "related": [
+      "tmj-deep-fossae",
+      "pharynx-swallowing"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of nasal cavity and paranasal drainage.",
+      "Answer with anatomical reasons: Where does the nasolacrimal duct drain?",
+      "Draw a lateral nasal wall with three conchae and place each drainage opening beneath the correct concha or above the superior concha."
+    ],
+    "prerequisites": [
+      "tmj-deep-fossae"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Where does the nasolacrimal duct drain? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "A meatus lies below its corresponding concha.",
+        "The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess.",
+        "The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a lateral nasal wall with three conchae and place each drainage opening beneath the correct concha or above the superior concha.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Inferior nasal meatus",
+      "A meatus lies below its corresponding concha.",
+      "The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus."
+    ]
+  },
+  "practice": [
+    {
+      "id": "nose-sinuses-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How do sensory and olfactory regions differ in the nasal cavity?",
+      "answer": "Olfactory epithelium occupies the superior region near the roof and upper septal and conchal surfaces. General sensation over much of the nasal cavity uses trigeminal branches, with anterior-superior and posterior-inferior territories supplied through different routes. Olfactory fibers pass through cribriform foramina, while most general sensory fibers do not. The septal vascular plexus is yet another layer of organization. Smell, irritation sensation and blood supply should therefore be shown separately on a nasal diagram."
+    },
+    {
+      "id": "nose-sinuses-relations",
+      "kind": "Relationship recall",
+      "prompt": "In nasal cavity and paranasal drainage, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Nasal septum: septal cartilage, perpendicular plate of ethmoid, and vomer. Floor: palatine process of maxilla and horizontal plate of palatine bone. Superior meatus receives posterior ethmoidal cells. Middle meatus receives frontal, maxillary, and anterior/middle ethmoidal drainage. Inferior meatus receives nasolacrimal duct. Sphenoidal sinus drains into sphenoethmoidal recess."
+    },
+    {
+      "id": "nose-sinuses-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Superior nasal meatus” to the question “Where does the nasolacrimal duct drain?” Explain what needs correcting.",
+      "answer": "Inferior nasal meatus. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+    },
+    {
+      "id": "nose-sinuses-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a lateral nasal wall with three conchae and place each drainage opening beneath the correct concha or above the superior concha.",
+      "answer": "Check your labels against these relationships: The nasal cavity extends from nostrils to choanae and is divided by the nasal septum. Its lateral wall has conchae and meatuses that receive drainage from paranasal sinuses and nasolacrimal duct. A meatus lies below its corresponding concha. The inferior meatus receives tears through the nasolacrimal duct rather than drainage from a paranasal sinus. Most anterior sinus drainage reaches the middle meatus; posterior ethmoidal cells drain superiorly and the sphenoidal sinus into the sphenoethmoidal recess. The maxillary sinus opening is high on its medial wall, so drainage depends on mucociliary transport, not simply an outlet at the lowest point."
+    }
+  ],
+  "sourceSections": [
+    "14. Nasal Cavity and Paranasal Sinuses"
+  ],
+  "furtherReading": {
+    "title": "Respiratory organs and structures",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

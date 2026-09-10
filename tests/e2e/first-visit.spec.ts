@@ -13,7 +13,7 @@ test("first visit reaches each subject coverage map and a real starting lesson",
   for (const subject of ["anatomy","histology","cell-biology","biochemistry","physiology","genetics"]) {
     await page.goto(`/study/${subject}#coverage`);
     const map = page.locator("#coverage");
-    await expect(map).toContainText("Still needs fuller lessons");
+    await expect(map).toContainText(subject === "anatomy" ? "What to study alongside this course" : "Still needs fuller lessons");
     await map.getByRole("link",{name:/^Start with/}).click();
     await expect(page).toHaveURL(subject === "anatomy" ? /\/start\/anatomy$/ : /\/library\//);
     await expect(page.locator("h1")).toBeVisible();
@@ -104,8 +104,8 @@ test("anatomy starts with foundations and empty subjects offer a usable next ste
   await expect(page).toHaveURL(/\/start\/anatomy$/);
   await page.locator("summary").click();
   await expect(page.getByText("The coronal plane.", { exact: false })).toBeVisible();
-  await page.getByRole("link", { name: /Next: orient the thorax/ }).click();
-  await expect(page).toHaveURL(/\/library\/thorax-nerve-relations$/);
+  await page.getByRole("link", { name: /Next: identify thoracic cage/ }).click();
+  await expect(page).toHaveURL(/\/library\/thoracic-cage-landmarks$/);
   await page.goto("/subjects/microbiology");
   await expect(page.getByRole("heading", { name: "No public lessons yet" })).toBeVisible();
   await page.getByRole("link", { name: "Choose a subject with lessons", exact: true }).click();

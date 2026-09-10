@@ -1,0 +1,131 @@
+{
+  "volume": 4,
+  "order": 23,
+  "lesson": {
+    "id": "ventricles-csf",
+    "subject": "anatomy",
+    "title": "Ventricles, CSF flow and internal landmarks",
+    "summary": "CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Ventricles, CSF flow and internal landmarks",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "32. Ventricular System and CSF Flow; 33. Lateral Ventricles and Internal Brain Landmarks",
+    "steps": [
+      {
+        "title": "Ventricular System and CSF Flow",
+        "body": "The ventricular system contains CSF and consists of paired lateral ventricles, third ventricle, cerebral aqueduct, and fourth ventricle. CSF exits the fourth ventricle into subarachnoid space through median and lateral apertures.\n\nLateral ventricles communicate with third ventricle through foramina of Monro. Third ventricle communicates with fourth ventricle through cerebral aqueduct. Fourth ventricle opens via median aperture of Magendie and lateral apertures of Luschka. CSF is produced mainly by choroid plexus. CSF drainage includes arachnoid granulations into dural venous pathways and additional lymphatic-associated routes."
+      },
+      {
+        "title": "Lateral Ventricles and Internal Brain Landmarks",
+        "body": "The lateral ventricles have anterior horn, body, atrium, posterior horn, and inferior horn. They are useful landmarks for caudate nucleus, corpus callosum, fornix, thalamus, hippocampus, and internal capsule.\n\nAnterior horn lies in frontal lobe; body lies under corpus callosum. Atrium is the junction region of body, posterior horn, and inferior horn. Posterior horn extends into occipital lobe. Inferior horn extends into temporal lobe and relates to hippocampal formation. Caudate nucleus follows the C-shaped contour of lateral ventricle. Septum pellucidum separates anterior horns."
+      },
+      {
+        "title": "Why do ventricular enlargement patterns help identify the site of obstruction?",
+        "body": "A blockage interrupts a connected fluid route, so cavities upstream can enlarge differently from those downstream. Aqueduct obstruction separates lateral and third ventricles from the fourth-ventricular outlet route. Obstruction farther downstream can affect a broader ventricular pattern. This is a topological reasoning exercise, not a diagnosis based only on ventricle size. CSF production, drainage, tissue compliance and chronicity also influence appearance, so the map provides one necessary part of interpretation rather than the whole explanation."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+      }
+    ],
+    "question": {
+      "prompt": "What connects the third and fourth ventricles?",
+      "options": [
+        {
+          "text": "Cerebral aqueduct",
+          "reason": "CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+        },
+        {
+          "text": "Interventricular foramen",
+          "reason": "The correct relationship is: Cerebral aqueduct. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+        },
+        {
+          "text": "Central retinal artery",
+          "reason": "The correct relationship is: Cerebral aqueduct. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain ventricles, csf flow and internal landmarks using the main anatomical relationships, then justify your answer to: What connects the third and fourth ventricles?",
+      "answer": "CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+    },
+    "related": [
+      "cerebral-blood-supply",
+      "basal-ganglia-diencephalon"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of ventricles, csf flow and internal landmarks.",
+      "Answer with anatomical reasons: What connects the third and fourth ventricles?",
+      "Draw the complete ventricular sequence with one-way flow arrows and place a hypothetical blockage at the aqueduct."
+    ],
+    "prerequisites": [
+      "cerebral-blood-supply"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What connects the third and fourth ventricles? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth.",
+        "It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes.",
+        "The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the complete ventricular sequence with one-way flow arrows and place a hypothetical blockage at the aqueduct.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Cerebral aqueduct",
+      "CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth.",
+      "It reaches subarachnoid spaces through median and lateral apertures."
+    ]
+  },
+  "practice": [
+    {
+      "id": "ventricles-csf-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why do ventricular enlargement patterns help identify the site of obstruction?",
+      "answer": "A blockage interrupts a connected fluid route, so cavities upstream can enlarge differently from those downstream. Aqueduct obstruction separates lateral and third ventricles from the fourth-ventricular outlet route. Obstruction farther downstream can affect a broader ventricular pattern. This is a topological reasoning exercise, not a diagnosis based only on ventricle size. CSF production, drainage, tissue compliance and chronicity also influence appearance, so the map provides one necessary part of interpretation rather than the whole explanation."
+    },
+    {
+      "id": "ventricles-csf-relations",
+      "kind": "Relationship recall",
+      "prompt": "In ventricles, csf flow and internal landmarks, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The lateral ventricles have anterior horn, body, atrium, posterior horn, and inferior horn. They are useful landmarks for caudate nucleus, corpus callosum, fornix, thalamus, hippocampus, and internal capsule.\n\nAnterior horn lies in frontal lobe; body lies under corpus callosum. Atrium is the junction region of body, posterior horn, and inferior horn. Posterior horn extends into occipital lobe. Inferior horn extends into temporal lobe and relates to hippocampal formation. Caudate nucleus follows the C-shaped contour of lateral ventricle. Septum pellucidum separates anterior horns."
+    },
+    {
+      "id": "ventricles-csf-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Interventricular foramen” to the question “What connects the third and fourth ventricles?” Explain what needs correcting.",
+      "answer": "Cerebral aqueduct. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+    },
+    {
+      "id": "ventricles-csf-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the complete ventricular sequence with one-way flow arrows and place a hypothetical blockage at the aqueduct.",
+      "answer": "Check your labels against these relationships: The ventricular system contains CSF and consists of paired lateral ventricles, third ventricle, cerebral aqueduct, and fourth ventricle. CSF exits the fourth ventricle into subarachnoid space through median and lateral apertures.\n\nLateral ventricles communicate with third ventricle through foramina of Monro. Third ventricle communicates with fourth ventricle through cerebral aqueduct. Fourth ventricle opens via median aperture of Magendie and lateral apertures of Luschka. CSF is produced mainly by choroid plexus. CSF drainage includes arachnoid granulations into dural venous pathways and additional lymphatic-associated routes. CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth. It reaches subarachnoid spaces through median and lateral apertures. Obstruction at the aqueduct can enlarge upstream ventricles while sparing the fourth from that direct upstream dilation pattern. Choroid plexus produces much CSF; drainage includes arachnoid and lymphatic-associated routes. The caudate and hippocampus help orient the C-shaped lateral ventricle on sections."
+    }
+  ],
+  "sourceSections": [
+    "32. Ventricular System and CSF Flow",
+    "33. Lateral Ventricles and Internal Brain Landmarks"
+  ],
+  "furtherReading": {
+    "title": "The central nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

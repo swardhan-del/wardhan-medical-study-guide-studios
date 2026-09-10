@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 15,
+  "lesson": {
+    "id": "cardiac-conduction-autonomics",
+    "subject": "anatomy",
+    "title": "Conduction and autonomic modulation",
+    "summary": "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Conduction and autonomic modulation",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Pericardium and Coronary sections 23-31",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "The SA node lies near the SVC-right atrial junction. The AV node is located in the inferior right atrial septal region near landmarks of the triangle of Koch. The AV bundle passes into the interventricular septal region and divides into right and left branches before distributing through the ventricular conduction network."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "Sympathetic cardiac input generally increases rate, conduction and contractile force; vagal input slows nodal activity. Visceral pain afferents often accompany sympathetic pathways to upper thoracic spinal levels, contributing to referred pain patterns. These afferents do not become sympathetic motor fibers merely by sharing a route. Electrical excitation spreads through specialized cardiac cells rather than conventional somatic motor nerves."
+      },
+      {
+        "title": "Why can autonomic input alter rate without acting like a skeletal motor nerve?",
+        "body": "Cardiac pacemaker and conduction cells have intrinsic electrical properties that generate and distribute impulses. Sympathetic and parasympathetic inputs modify those properties, changing rate and conduction rather than triggering each contraction through a somatic neuromuscular junction. The myocardium then contracts through excitation-contraction coupling. This explains why the anatomical conduction system remains central even when autonomic influence changes. Distinguish pacemaker initiation, conduction timing and contractile response rather than treating them as one electrical event."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+      }
+    ],
+    "question": {
+      "prompt": "What is the normal electrical bridge across the cardiac fibrous skeleton?",
+      "options": [
+        {
+          "text": "AV bundle",
+          "reason": "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+        },
+        {
+          "text": "Chordae tendineae",
+          "reason": "The correct relationship is: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+        },
+        {
+          "text": "Pulmonary vein wall alone",
+          "reason": "The correct relationship is: AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain conduction and autonomic modulation using the main anatomical relationships, then justify your answer to: What is the normal electrical bridge across the cardiac fibrous skeleton?",
+      "answer": "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+    },
+    "related": [
+      "coronary-circulation",
+      "thoracic-development"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of conduction and autonomic modulation.",
+      "Answer with anatomical reasons: What is the normal electrical bridge across the cardiac fibrous skeleton?",
+      "Draw the conduction sequence on four chambers, marking the AV bundle's passage through the insulating skeleton."
+    ],
+    "prerequisites": [
+      "coronary-circulation"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What is the normal electrical bridge across the cardiac fibrous skeleton? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.",
+        "The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band.",
+        "Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the conduction sequence on four chambers, marking the AV bundle's passage through the insulating skeleton.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "AV bundle",
+      "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.",
+      "The AV nodal delay helps coordinate ventricular filling before ventricular activation."
+    ]
+  },
+  "practice": [
+    {
+      "id": "cardiac-conduction-autonomics-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why can autonomic input alter rate without acting like a skeletal motor nerve?",
+      "answer": "Cardiac pacemaker and conduction cells have intrinsic electrical properties that generate and distribute impulses. Sympathetic and parasympathetic inputs modify those properties, changing rate and conduction rather than triggering each contraction through a somatic neuromuscular junction. The myocardium then contracts through excitation-contraction coupling. This explains why the anatomical conduction system remains central even when autonomic influence changes. Distinguish pacemaker initiation, conduction timing and contractile response rather than treating them as one electrical event."
+    },
+    {
+      "id": "cardiac-conduction-autonomics-relations",
+      "kind": "Relationship recall",
+      "prompt": "In conduction and autonomic modulation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Sympathetic cardiac input generally increases rate, conduction and contractile force; vagal input slows nodal activity. Visceral pain afferents often accompany sympathetic pathways to upper thoracic spinal levels, contributing to referred pain patterns. These afferents do not become sympathetic motor fibers merely by sharing a route. Electrical excitation spreads through specialized cardiac cells rather than conventional somatic motor nerves."
+    },
+    {
+      "id": "cardiac-conduction-autonomics-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Chordae tendineae” to the question “What is the normal electrical bridge across the cardiac fibrous skeleton?” Explain what needs correcting.",
+      "answer": "AV bundle. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+    },
+    {
+      "id": "cardiac-conduction-autonomics-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the conduction sequence on four chambers, marking the AV bundle's passage through the insulating skeleton.",
+      "answer": "Check your labels against these relationships: The SA node lies near the SVC-right atrial junction. The AV node is located in the inferior right atrial septal region near landmarks of the triangle of Koch. The AV bundle passes into the interventricular septal region and divides into right and left branches before distributing through the ventricular conduction network. The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers. The AV nodal delay helps coordinate ventricular filling before ventricular activation. Autonomic input changes rate and conduction but does not normally supply a new motor impulse for each heartbeat. The right bundle has fibers associated with the moderator band. Electrical pathway anatomy should be distinguished from coronary arterial supply even though ischemia can affect conduction."
+    }
+  ],
+  "sourceSections": [
+    "Pericardium and Coronary sections 23-31"
+  ],
+  "furtherReading": {
+    "title": "Heart anatomy and thoracic relationships",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

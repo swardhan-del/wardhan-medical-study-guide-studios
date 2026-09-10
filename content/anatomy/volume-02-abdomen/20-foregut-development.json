@@ -1,0 +1,141 @@
+{
+  "volume": 2,
+  "order": 20,
+  "lesson": {
+    "id": "foregut-development",
+    "subject": "anatomy",
+    "title": "Foregut rotation and organ development",
+    "summary": "Rotation changes adult relationships without changing tissue lineage.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Foregut rotation and organ development",
+      "embryology"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "36. Gut Tube Overview; 37. Stomach Rotation and Peritoneal Consequences; 38. Duodenum, Pancreas, and Biliary Development; 39. Liver, Gallbladder, and Spleen Development",
+    "steps": [
+      {
+        "title": "Gut Tube Overview",
+        "body": "The primitive gut tube is formed during folding of the embryo and is divided into foregut, midgut, and hindgut. Endoderm forms most epithelial lining and glands, while surrounding splanchnic mesoderm forms connective tissue, smooth muscle, vessels, and visceral peritoneum.\n\nForegut is supplied by celiac trunk in adult anatomy. Midgut is supplied by superior mesenteric artery. Hindgut is supplied by inferior mesenteric artery. Dorsal mesentery is broadly present; ventral mesentery persists mainly in the foregut region and contributes to lesser omentum and falciform ligament."
+      },
+      {
+        "title": "Stomach Rotation and Peritoneal Consequences",
+        "body": "The stomach dilates from the foregut and rotates around longitudinal and anteroposterior axes. Rotation helps create the lesser sac and changes the positions of vagal trunks, curvatures, and peritoneal attachments.\n\nThe left side of stomach becomes anterior and receives anterior vagal trunk; right side becomes posterior and receives posterior vagal trunk. Greater curvature grows faster and becomes the large convex border. Dorsal mesogastrium expands and contributes to greater omentum and spaces related to the lesser sac. Ventral mesogastrium contributes to lesser omentum and falciform ligament."
+      },
+      {
+        "title": "Duodenum, Pancreas, and Biliary Development",
+        "body": "The duodenum rotates with the stomach and becomes mostly secondarily retroperitoneal. The pancreas develops from dorsal and ventral pancreatic buds; the ventral bud rotates posteriorly to fuse with the dorsal bud.\n\nVentral pancreatic bud forms uncinate process and inferior part of pancreatic head. Dorsal pancreatic bud forms most of the head, body, and tail. Main pancreatic duct is formed from ventral duct and distal dorsal duct; accessory duct may persist from proximal dorsal duct. Hepatic diverticulum gives rise to liver parenchyma, bile ducts, and gallbladder/biliary apparatus components."
+      },
+      {
+        "title": "Liver, Gallbladder, and Spleen Development",
+        "body": "The liver and biliary system develop from foregut endodermal hepatic diverticulum growing into septum transversum mesenchyme. The spleen is not an endodermal gut derivative; it develops from mesenchyme in the dorsal mesogastrium.\n\nHepatocytes and biliary epithelium are endodermal in origin. Connective tissue and vascular elements are mesenchymal. Falciform ligament and lesser omentum relate to ventral mesentery. Spleen develops in dorsal mesogastrium and is associated with gastrosplenic and splenorenal ligaments."
+      },
+      {
+        "title": "Why are dorsal and ventral mesenteries not interchangeable?",
+        "body": "The dorsal mesentery extends broadly along the gut, whereas ventral mesentery persists mainly in the foregut region. Stomach rotation and differential growth expand dorsal mesogastric derivatives, including greater-omental and splenic relationships. Ventral mesenteric derivatives include lesser omentum and falciform ligament, associated with the developing liver. Naming an adult ligament without its attachments can hide this pattern. First identify which organs it connects, then relate those attachments to the embryonic mesentery from which the fold developed."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+      }
+    ],
+    "question": {
+      "prompt": "Which pancreatic part is principally derived from the ventral bud?",
+      "options": [
+        {
+          "text": "Uncinate process and inferior head",
+          "reason": "Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+        },
+        {
+          "text": "Tail alone",
+          "reason": "The correct relationship is: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+        },
+        {
+          "text": "Entire pancreatic body and tail",
+          "reason": "The correct relationship is: Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain foregut rotation and organ development using the main anatomical relationships, then justify your answer to: Which pancreatic part is principally derived from the ventral bud?",
+      "answer": "Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+    },
+    "related": [
+      "abdominal-lymph-autonomics",
+      "midgut-rotation"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 11,
+    "objectives": [
+      "Describe the location and organization of foregut rotation and organ development.",
+      "Answer with anatomical reasons: Which pancreatic part is principally derived from the ventral bud?",
+      "Draw dorsal and ventral pancreatic buds before and after rotation; distinguish the two contributions with labels or hatch patterns."
+    ],
+    "prerequisites": [
+      "abdominal-lymph-autonomics"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which pancreatic part is principally derived from the ventral bud? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Rotation changes adult relationships without changing tissue lineage.",
+        "The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds.",
+        "Explain adult position, duct formation and germ-layer origin as separate outcomes."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw dorsal and ventral pancreatic buds before and after rotation; distinguish the two contributions with labels or hatch patterns.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Uncinate process and inferior head",
+      "Rotation changes adult relationships without changing tissue lineage.",
+      "The ventral pancreatic bud moves around the duodenum to join the dorsal bud."
+    ]
+  },
+  "practice": [
+    {
+      "id": "foregut-development-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why are dorsal and ventral mesenteries not interchangeable?",
+      "answer": "The dorsal mesentery extends broadly along the gut, whereas ventral mesentery persists mainly in the foregut region. Stomach rotation and differential growth expand dorsal mesogastric derivatives, including greater-omental and splenic relationships. Ventral mesenteric derivatives include lesser omentum and falciform ligament, associated with the developing liver. Naming an adult ligament without its attachments can hide this pattern. First identify which organs it connects, then relate those attachments to the embryonic mesentery from which the fold developed."
+    },
+    {
+      "id": "foregut-development-relations",
+      "kind": "Relationship recall",
+      "prompt": "In foregut rotation and organ development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The stomach dilates from the foregut and rotates around longitudinal and anteroposterior axes. Rotation helps create the lesser sac and changes the positions of vagal trunks, curvatures, and peritoneal attachments.\n\nThe left side of stomach becomes anterior and receives anterior vagal trunk; right side becomes posterior and receives posterior vagal trunk. Greater curvature grows faster and becomes the large convex border. Dorsal mesogastrium expands and contributes to greater omentum and spaces related to the lesser sac. Ventral mesogastrium contributes to lesser omentum and falciform ligament."
+    },
+    {
+      "id": "foregut-development-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Tail alone” to the question “Which pancreatic part is principally derived from the ventral bud?” Explain what needs correcting.",
+      "answer": "Uncinate process and inferior head. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+    },
+    {
+      "id": "foregut-development-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw dorsal and ventral pancreatic buds before and after rotation; distinguish the two contributions with labels or hatch patterns.",
+      "answer": "Check your labels against these relationships: The primitive gut tube is formed during folding of the embryo and is divided into foregut, midgut, and hindgut. Endoderm forms most epithelial lining and glands, while surrounding splanchnic mesoderm forms connective tissue, smooth muscle, vessels, and visceral peritoneum.\n\nForegut is supplied by celiac trunk in adult anatomy. Midgut is supplied by superior mesenteric artery. Hindgut is supplied by inferior mesenteric artery. Dorsal mesentery is broadly present; ventral mesentery persists mainly in the foregut region and contributes to lesser omentum and falciform ligament. Rotation changes adult relationships without changing tissue lineage. The ventral pancreatic bud moves around the duodenum to join the dorsal bud. Their ducts usually combine, while duct variants can persist. Stomach rotation carries the left vagus mainly anteriorly and the right vagus mainly posteriorly. The spleen develops within dorsal mesogastric mesenchyme, unlike the endodermal epithelium of the gut and pancreatic buds. Explain adult position, duct formation and germ-layer origin as separate outcomes."
+    }
+  ],
+  "sourceSections": [
+    "36. Gut Tube Overview",
+    "37. Stomach Rotation and Peritoneal Consequences",
+    "38. Duodenum, Pancreas, and Biliary Development",
+    "39. Liver, Gallbladder, and Spleen Development"
+  ],
+  "furtherReading": {
+    "title": "Embryonic development",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

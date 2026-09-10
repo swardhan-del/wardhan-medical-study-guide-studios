@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 9,
+  "lesson": {
+    "id": "thorax-nerve-relations",
+    "subject": "anatomy",
+    "title": "Phrenic, vagal and recurrent pathways",
+    "summary": "Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Phrenic, vagal and recurrent pathways",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Mediastinum sections 14-18, 32-34, 36",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "The vagus carries parasympathetic and visceral sensory pathways into thoracic organs and forms esophageal plexuses. These reorganize mainly into anterior and posterior vagal trunks below, with left and right vagal contributions predominating respectively. Phrenic nerves accompany pericardiacophrenic vessels along pericardial surfaces to reach the diaphragm."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "Sympathetic trunks lie posteriorly near rib heads. Thoracic splanchnic nerves carry preganglionic sympathetic fibers onward toward abdominal ganglia, while cardiac and pulmonary sympathetic pathways have different branching destinations. A named nerve bundle may contain afferent as well as efferent fibers. Direction and target should therefore accompany the nerve name in a functional explanation."
+      },
+      {
+        "title": "How do referred pain and motor weakness arise from different fiber functions?",
+        "body": "Phrenic motor fibers activate diaphragm muscle, whereas sensory fibers return information from central diaphragmatic and pericardial regions. Shared spinal levels with somatic shoulder territories contribute to referred pain perception. A motor lesion can impair diaphragm movement without reproducing the same sensory pattern, and irritation can cause pain without complete paralysis. The nerve name alone is therefore insufficient: identify the fiber type, direction and target when explaining a clinical anatomical example."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+      }
+    ],
+    "question": {
+      "prompt": "Why can an aortic arch lesion affect voice?",
+      "options": [
+        {
+          "text": "The left recurrent laryngeal nerve loops beneath the arch",
+          "reason": "Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+        },
+        {
+          "text": "The hypoglossal nerve crosses the coronary sinus",
+          "reason": "The correct relationship is: The left recurrent laryngeal nerve loops beneath the arch. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+        },
+        {
+          "text": "The right recurrent laryngeal nerve loops beneath the diaphragm",
+          "reason": "The correct relationship is: The left recurrent laryngeal nerve loops beneath the arch. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain phrenic, vagal and recurrent pathways using the main anatomical relationships, then justify your answer to: Why can an aortic arch lesion affect voice?",
+      "answer": "Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+    },
+    "related": [
+      "mediastinum-great-vessels",
+      "posterior-mediastinum-lymph"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of phrenic, vagal and recurrent pathways.",
+      "Answer with anatomical reasons: Why can an aortic arch lesion affect voice?",
+      "Trace phrenic and vagus on each side of a lung root, then add different right and left recurrent laryngeal loops."
+    ],
+    "prerequisites": [
+      "mediastinum-great-vessels"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Why can an aortic arch lesion affect voice? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses.",
+        "The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter.",
+        "Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Trace phrenic and vagus on each side of a lung root, then add different right and left recurrent laryngeal loops.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "The left recurrent laryngeal nerve loops beneath the arch",
+      "Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses.",
+      "The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery."
+    ]
+  },
+  "practice": [
+    {
+      "id": "thorax-nerve-relations-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How do referred pain and motor weakness arise from different fiber functions?",
+      "answer": "Phrenic motor fibers activate diaphragm muscle, whereas sensory fibers return information from central diaphragmatic and pericardial regions. Shared spinal levels with somatic shoulder territories contribute to referred pain perception. A motor lesion can impair diaphragm movement without reproducing the same sensory pattern, and irritation can cause pain without complete paralysis. The nerve name alone is therefore insufficient: identify the fiber type, direction and target when explaining a clinical anatomical example."
+    },
+    {
+      "id": "thorax-nerve-relations-relations",
+      "kind": "Relationship recall",
+      "prompt": "In phrenic, vagal and recurrent pathways, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Sympathetic trunks lie posteriorly near rib heads. Thoracic splanchnic nerves carry preganglionic sympathetic fibers onward toward abdominal ganglia, while cardiac and pulmonary sympathetic pathways have different branching destinations. A named nerve bundle may contain afferent as well as efferent fibers. Direction and target should therefore accompany the nerve name in a functional explanation."
+    },
+    {
+      "id": "thorax-nerve-relations-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “The hypoglossal nerve crosses the coronary sinus” to the question “Why can an aortic arch lesion affect voice?” Explain what needs correcting.",
+      "answer": "The left recurrent laryngeal nerve loops beneath the arch. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+    },
+    {
+      "id": "thorax-nerve-relations-identification",
+      "kind": "Draw and identify",
+      "prompt": "Trace phrenic and vagus on each side of a lung root, then add different right and left recurrent laryngeal loops.",
+      "answer": "Check your labels against these relationships: The vagus carries parasympathetic and visceral sensory pathways into thoracic organs and forms esophageal plexuses. These reorganize mainly into anterior and posterior vagal trunks below, with left and right vagal contributions predominating respectively. Phrenic nerves accompany pericardiacophrenic vessels along pericardial surfaces to reach the diaphragm. Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses. The left recurrent laryngeal branch loops near the ligamentum arteriosum under the aortic arch, while the right loops beneath the right subclavian artery. Thus a lesion's side and height matter. Referred shoulder pain from central diaphragmatic irritation reflects phrenic sensory levels, not a motor nerve physically ending at the shoulder."
+    }
+  ],
+  "sourceSections": [
+    "Mediastinum sections 14-18, 32-34, 36"
+  ],
+  "furtherReading": {
+    "title": "Peripheral nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "volume": 2,
+  "order": 5,
+  "lesson": {
+    "id": "peritoneal-organization",
+    "subject": "anatomy",
+    "title": "Peritoneum and organ position",
+    "summary": "The cavity is the narrow potential space between serosal surfaces.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Peritoneum and organ position",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "8. Serous Membranes and the Peritoneal Cavity; 9. Intraperitoneal, Retroperitoneal, and Infraperitoneal Organs",
+    "steps": [
+      {
+        "title": "Serous Membranes and the Peritoneal Cavity",
+        "body": "The peritoneum is a serous membrane with parietal and visceral layers. Parietal peritoneum lines the abdominal wall; visceral peritoneum covers organs. The peritoneal cavity is a potential space containing serous fluid.\n\nParietal peritoneum has somatic pain sensitivity and is regionally innervated by body wall nerves. Visceral peritoneum has visceral afferent pain that follows autonomic pathways and is poorly localized. The greater sac is the main peritoneal cavity. The lesser sac is the omental bursa behind the stomach and lesser omentum."
+      },
+      {
+        "title": "Intraperitoneal, Retroperitoneal, and Infraperitoneal Organs",
+        "body": "Intraperitoneal organs are mostly covered by visceral peritoneum and usually suspended by mesentery. Retroperitoneal organs lie posterior to the peritoneum. Infraperitoneal organs are below the peritoneal reflection in the pelvis.\n\nIntraperitoneal organs include stomach, liver, spleen, jejunum, ileum, transverse colon, sigmoid colon, and appendix. Secondarily retroperitoneal organs include most duodenum, pancreas except tail, ascending colon, and descending colon. Primarily retroperitoneal organs include kidneys, suprarenal glands, ureters, aorta, and inferior vena cava. Infraperitoneal parts include the lower rectum and much of the urinary bladder region."
+      },
+      {
+        "title": "Why are kidneys and the ascending colon both retroperitoneal but developmentally different?",
+        "body": "Kidneys develop and remain behind the peritoneal cavity and are described as primarily retroperitoneal. The ascending colon initially has a mesenteric relationship that usually becomes fixed by fusion with the posterior abdominal wall, making it secondarily retroperitoneal. Adult position alone does not reveal that history. Likewise, the pancreas is mostly secondarily retroperitoneal, but its tail retains a peritoneal-ligament relationship near the spleen. Qualifiers such as mostly and usually matter because regional exceptions and variation are part of anatomy."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+      }
+    ],
+    "question": {
+      "prompt": "What does intraperitoneal mean?",
+      "options": [
+        {
+          "text": "An organ is largely invested by visceral peritoneum",
+          "reason": "The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+        },
+        {
+          "text": "The organ floats inside the fluid-filled peritoneal cavity",
+          "reason": "The correct relationship is: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+        },
+        {
+          "text": "The organ lies behind the posterior parietal peritoneum",
+          "reason": "The correct relationship is: An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain peritoneum and organ position using the main anatomical relationships, then justify your answer to: What does intraperitoneal mean?",
+      "answer": "The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+    },
+    "related": [
+      "inguinal-canal-relations",
+      "omenta-and-lesser-sac"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of peritoneum and organ position.",
+      "Answer with anatomical reasons: What does intraperitoneal mean?",
+      "Draw a wall, a double-layer mesentery and an intestinal loop. Shade only the potential cavity, leaving the bowel lumen unshaded."
+    ],
+    "prerequisites": [
+      "inguinal-canal-relations"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What does intraperitoneal mean? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The cavity is the narrow potential space between serosal surfaces.",
+        "An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ.",
+        "Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a wall, a double-layer mesentery and an intestinal loop. Shade only the potential cavity, leaving the bowel lumen unshaded.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "An organ is largely invested by visceral peritoneum",
+      "The cavity is the narrow potential space between serosal surfaces.",
+      "An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon."
+    ]
+  },
+  "practice": [
+    {
+      "id": "peritoneal-organization-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why are kidneys and the ascending colon both retroperitoneal but developmentally different?",
+      "answer": "Kidneys develop and remain behind the peritoneal cavity and are described as primarily retroperitoneal. The ascending colon initially has a mesenteric relationship that usually becomes fixed by fusion with the posterior abdominal wall, making it secondarily retroperitoneal. Adult position alone does not reveal that history. Likewise, the pancreas is mostly secondarily retroperitoneal, but its tail retains a peritoneal-ligament relationship near the spleen. Qualifiers such as mostly and usually matter because regional exceptions and variation are part of anatomy."
+    },
+    {
+      "id": "peritoneal-organization-relations",
+      "kind": "Relationship recall",
+      "prompt": "In peritoneum and organ position, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Intraperitoneal organs are mostly covered by visceral peritoneum and usually suspended by mesentery. Retroperitoneal organs lie posterior to the peritoneum. Infraperitoneal organs are below the peritoneal reflection in the pelvis.\n\nIntraperitoneal organs include stomach, liver, spleen, jejunum, ileum, transverse colon, sigmoid colon, and appendix. Secondarily retroperitoneal organs include most duodenum, pancreas except tail, ascending colon, and descending colon. Primarily retroperitoneal organs include kidneys, suprarenal glands, ureters, aorta, and inferior vena cava. Infraperitoneal parts include the lower rectum and much of the urinary bladder region."
+    },
+    {
+      "id": "peritoneal-organization-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “The organ floats inside the fluid-filled peritoneal cavity” to the question “What does intraperitoneal mean?” Explain what needs correcting.",
+      "answer": "An organ is largely invested by visceral peritoneum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+    },
+    {
+      "id": "peritoneal-organization-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a wall, a double-layer mesentery and an intestinal loop. Shade only the potential cavity, leaving the bowel lumen unshaded.",
+      "answer": "Check your labels against these relationships: The peritoneum is a serous membrane with parietal and visceral layers. Parietal peritoneum lines the abdominal wall; visceral peritoneum covers organs. The peritoneal cavity is a potential space containing serous fluid.\n\nParietal peritoneum has somatic pain sensitivity and is regionally innervated by body wall nerves. Visceral peritoneum has visceral afferent pain that follows autonomic pathways and is poorly localized. The greater sac is the main peritoneal cavity. The lesser sac is the omental bursa behind the stomach and lesser omentum. The cavity is the narrow potential space between serosal surfaces. An intraperitoneal organ bulges into the peritoneal sac while remaining outside its potential lumen, like a fist indenting a balloon. A mesentery is a double layer carrying supply to the organ. Secondary retroperitoneal fixation occurs when a former mesentery fuses with the posterior wall; this explains why position and developmental history are different questions."
+    }
+  ],
+  "sourceSections": [
+    "8. Serous Membranes and the Peritoneal Cavity",
+    "9. Intraperitoneal, Retroperitoneal, and Infraperitoneal Organs"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

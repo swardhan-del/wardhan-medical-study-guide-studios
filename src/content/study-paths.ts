@@ -8,9 +8,9 @@ export const studyPaths: Record<string, StudyPath> = {
     gaps: ["Current university syllabus alignment beyond the historical notes", "Supervised instrument handling and interpretation of original experimental images", "Independent specialist review and a larger assessment bank"],
   },
   anatomy: {
-    start: "thorax-nerve-relations",
-    preparation: "Review anatomical position, directional terms and body planes. Use the thorax directory for regional orientation.",
-    gaps: ["Systematic regional embryology", "Detailed head and neck pathways", "Complete limb compartment and joint coverage"],
+    start: "thoracic-cage-landmarks",
+    preparation: "Review anatomical position, directional terms and body planes. Follow the five-volume course from landmarks to regional relationships and development.",
+    gaps: ["University-specific syllabus alignment and supervised dissection", "A comprehensive labelled cadaveric and radiological identification atlas", "Independent specialist review and additional advanced regional detail"],
   },
   histology: {
     start: "microscopy",
@@ -41,7 +41,7 @@ export const studyPaths: Record<string, StudyPath> = {
 
 // The same first steps appear on Start Here and each subject learning page.
 export const beginnerSequences: Record<string, { title: string; href: string }[]> = {
-  anatomy: [{ title: "Anatomical position, directions and planes", href: "/start/anatomy" }, { title: "Orient the thorax around the lung root", href: "/library/thorax-nerve-relations" }, { title: "Explore the thorax sequence", href: "/subjects/anatomy/thorax" }],
+  anatomy: [{ title: "Anatomical position, directions and planes", href: "/start/anatomy" }, { title: "Identify thoracic cage landmarks", href: "/library/thoracic-cage-landmarks" }, { title: "Choose a volume in the 120-lesson course", href: "/study/anatomy/guide" }],
   histology: [{ title: "Read a histology section", href: "/library/microscopy" }, { title: "Classify epithelia", href: "/library/epithelia" }, { title: "Connect cells to their matrix", href: "/library/connective-tissue" }],
   "cell-biology": [{ title: "Follow DNA replication", href: "/library/dna-replication" }, { title: "Process an RNA message", href: "/library/rna-processing" }, { title: "Translate the message", href: "/library/translation" }],
   biochemistry: [{ title: "Connect protein structure to function", href: "/library/protein-structure" }, { title: "Explain enzyme kinetics", href: "/library/enzyme-kinetics" }, { title: "Follow glycolysis", href: "/library/glycolysis" }],

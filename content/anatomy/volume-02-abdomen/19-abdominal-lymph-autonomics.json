@@ -1,0 +1,131 @@
+{
+  "volume": 2,
+  "order": 19,
+  "lesson": {
+    "id": "abdominal-lymph-autonomics",
+    "subject": "anatomy",
+    "title": "Abdominal lymphatics and autonomic pathways",
+    "summary": "A plexus mixes fibers with different directions and functions.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Abdominal lymphatics and autonomic pathways",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "32. Abdominal Lymphatics; 33. Autonomic Innervation of Abdominal Viscera",
+    "steps": [
+      {
+        "title": "Abdominal Lymphatics",
+        "body": "Abdominal lymph drainage follows arteries toward pre-aortic nodes for gut organs and para-aortic nodes for posterior abdominal wall and paired retroperitoneal organs. Lymph eventually reaches intestinal and lumbar trunks and cisterna chyli.\n\nForegut lymph drains toward celiac nodes. Midgut lymph drains toward superior mesenteric nodes. Hindgut lymph drains toward inferior mesenteric nodes. Kidneys, gonads, suprarenal glands, and posterior abdominal wall drain toward lumbar/para-aortic nodes. Cisterna chyli receives intestinal and lumbar trunks and continues as thoracic duct."
+      },
+      {
+        "title": "Autonomic Innervation of Abdominal Viscera",
+        "body": "Abdominal viscera receive sympathetic and parasympathetic fibers through prevertebral plexuses. Sympathetic fibers travel mainly through thoracic and lumbar splanchnic nerves; parasympathetic fibers come from vagus nerve and pelvic splanchnic nerves.\n\nVagus supplies parasympathetic innervation to foregut and midgut derivatives up to proximal transverse colon. Pelvic splanchnic nerves S2-S4 supply parasympathetic innervation to hindgut derivatives from distal transverse colon onward. Sympathetic efferents generally reduce gut motility and constrict vessels. Visceral pain afferents often accompany sympathetic routes but are distinct sensory fibers. Visceral afferent pain localization follows embryologic origin: foregut epigastric, midgut periumbilical, hindgut hypogastric."
+      },
+      {
+        "title": "Where do autonomic fibers synapse, and why is the distinction useful?",
+        "body": "Many sympathetic preganglionic fibers reach prevertebral ganglia, after which postganglionic fibers follow arterial routes to viscera. Parasympathetic fibers generally synapse near or within the organ in enteric or terminal ganglia. Enteric circuits coordinate local motility and secretion while receiving autonomic modulation. Thus a plexus near an artery contains a mixture of passing fibers and ganglionic structures rather than one uniform neuron type. Sensory afferents returning from viscera must be kept distinct from either autonomic motor pathway."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+      }
+    ],
+    "question": {
+      "prompt": "What carries parasympathetic fibers to the hindgut?",
+      "options": [
+        {
+          "text": "Pelvic splanchnic nerves S2-S4",
+          "reason": "A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+        },
+        {
+          "text": "Thoracic sympathetic splanchnic nerves",
+          "reason": "The correct relationship is: Pelvic splanchnic nerves S2-S4. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+        },
+        {
+          "text": "Lumbar sympathetic trunk alone",
+          "reason": "The correct relationship is: Pelvic splanchnic nerves S2-S4. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain abdominal lymphatics and autonomic pathways using the main anatomical relationships, then justify your answer to: What carries parasympathetic fibers to the hindgut?",
+      "answer": "A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+    },
+    "related": [
+      "abdomen-portal-relations",
+      "foregut-development"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of abdominal lymphatics and autonomic pathways.",
+      "Answer with anatomical reasons: What carries parasympathetic fibers to the hindgut?",
+      "Use separate arrows for lymph drainage, sympathetic efferents and parasympathetic efferents around a schematic gut tube."
+    ],
+    "prerequisites": [
+      "abdomen-portal-relations"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What carries parasympathetic fibers to the hindgut? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "A plexus mixes fibers with different directions and functions.",
+        "Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes.",
+        "Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Use separate arrows for lymph drainage, sympathetic efferents and parasympathetic efferents around a schematic gut tube.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Pelvic splanchnic nerves S2-S4",
+      "A plexus mixes fibers with different directions and functions.",
+      "Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction."
+    ]
+  },
+  "practice": [
+    {
+      "id": "abdominal-lymph-autonomics-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Where do autonomic fibers synapse, and why is the distinction useful?",
+      "answer": "Many sympathetic preganglionic fibers reach prevertebral ganglia, after which postganglionic fibers follow arterial routes to viscera. Parasympathetic fibers generally synapse near or within the organ in enteric or terminal ganglia. Enteric circuits coordinate local motility and secretion while receiving autonomic modulation. Thus a plexus near an artery contains a mixture of passing fibers and ganglionic structures rather than one uniform neuron type. Sensory afferents returning from viscera must be kept distinct from either autonomic motor pathway."
+    },
+    {
+      "id": "abdominal-lymph-autonomics-relations",
+      "kind": "Relationship recall",
+      "prompt": "In abdominal lymphatics and autonomic pathways, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Abdominal viscera receive sympathetic and parasympathetic fibers through prevertebral plexuses. Sympathetic fibers travel mainly through thoracic and lumbar splanchnic nerves; parasympathetic fibers come from vagus nerve and pelvic splanchnic nerves.\n\nVagus supplies parasympathetic innervation to foregut and midgut derivatives up to proximal transverse colon. Pelvic splanchnic nerves S2-S4 supply parasympathetic innervation to hindgut derivatives from distal transverse colon onward. Sympathetic efferents generally reduce gut motility and constrict vessels. Visceral pain afferents often accompany sympathetic routes but are distinct sensory fibers. Visceral afferent pain localization follows embryologic origin: foregut epigastric, midgut periumbilical, hindgut hypogastric."
+    },
+    {
+      "id": "abdominal-lymph-autonomics-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Thoracic sympathetic splanchnic nerves” to the question “What carries parasympathetic fibers to the hindgut?” Explain what needs correcting.",
+      "answer": "Pelvic splanchnic nerves S2-S4. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+    },
+    {
+      "id": "abdominal-lymph-autonomics-identification",
+      "kind": "Draw and identify",
+      "prompt": "Use separate arrows for lymph drainage, sympathetic efferents and parasympathetic efferents around a schematic gut tube.",
+      "answer": "Check your labels against these relationships: Abdominal lymph drainage follows arteries toward pre-aortic nodes for gut organs and para-aortic nodes for posterior abdominal wall and paired retroperitoneal organs. Lymph eventually reaches intestinal and lumbar trunks and cisterna chyli.\n\nForegut lymph drains toward celiac nodes. Midgut lymph drains toward superior mesenteric nodes. Hindgut lymph drains toward inferior mesenteric nodes. Kidneys, gonads, suprarenal glands, and posterior abdominal wall drain toward lumbar/para-aortic nodes. Cisterna chyli receives intestinal and lumbar trunks and continues as thoracic duct. A plexus mixes fibers with different directions and functions. Sympathetic efferents reach prevertebral ganglia through splanchnic routes, while visceral afferents often travel alongside them in the opposite direction. Vagal parasympathetic supply extends through the midgut; pelvic splanchnics serve the hindgut. Lymphatic vessels are a separate transport system, often following arterial routes toward regional nodes. Sharing an anatomical corridor does not make nerve, blood and lymph pathways interchangeable."
+    }
+  ],
+  "sourceSections": [
+    "32. Abdominal Lymphatics",
+    "33. Autonomic Innervation of Abdominal Viscera"
+  ],
+  "furtherReading": {
+    "title": "Lymphatic system anatomy",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

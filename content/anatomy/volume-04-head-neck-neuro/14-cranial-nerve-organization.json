@@ -1,0 +1,130 @@
+{
+  "volume": 4,
+  "order": 14,
+  "lesson": {
+    "id": "cranial-nerve-organization",
+    "subject": "anatomy",
+    "title": "Cranial nerve nuclei and functional columns",
+    "summary": "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Cranial nerve nuclei and functional columns",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "20. Cranial Nerve Nuclei and Fiber Types",
+    "steps": [
+      {
+        "title": "Cranial Nerve Nuclei and Fiber Types",
+        "body": "Cranial nerves are organized by functional fiber type and brainstem nuclei. Motor nuclei are generally more medial, sensory nuclei more lateral, with the sulcus limitans as an embryological dividing line."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "The optic nerve is a central nervous system tract. Olfactory receptor axons cross the cribriform plate to the olfactory bulb; neither pathway uses a typical brainstem sensory nucleus. CN III and IV nuclei are in midbrain. CN V through VIII nuclei are mainly pontine, with V sensory nucleus extending into medulla/cervical cord. IX, X and XII have major medullary nuclei; the spinal accessory nucleus is in upper cervical cord. Nucleus ambiguus supplies branchial motor fibers to IX, X, and cranial XI components. Solitary nucleus receives taste and visceral afferents."
+      },
+      {
+        "title": "Why is a sensory ganglion different from a brainstem sensory nucleus?",
+        "body": "A ganglion generally contains primary sensory neuron cell bodies outside the central nervous system; a sensory nucleus contains central neuronal groups receiving or processing those inputs. The trigeminal ganglion and trigeminal sensory nuclei are therefore successive but different structures. Mesencephalic trigeminal proprioceptive neurons are a notable exception to the usual peripheral location of primary sensory cell bodies. Motor nuclei instead contain neurons whose axons project toward targets. Distinguishing ganglion, nucleus and nerve avoids confusing cell-body location with the bundled axon route."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+      }
+    ],
+    "question": {
+      "prompt": "Which functional region generally lies medial to the sulcus limitans in the developing brainstem?",
+      "options": [
+        {
+          "text": "Motor columns",
+          "reason": "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+        },
+        {
+          "text": "Sensory columns",
+          "reason": "The correct relationship is: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+        },
+        {
+          "text": "The external carotid artery",
+          "reason": "The correct relationship is: Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain cranial nerve nuclei and functional columns using the main anatomical relationships, then justify your answer to: Which functional region generally lies medial to the sulcus limitans in the developing brainstem?",
+      "answer": "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+    },
+    "related": [
+      "ear-anatomy",
+      "ocular-motor-nerves"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of cranial nerve nuclei and functional columns.",
+      "Answer with anatomical reasons: Which functional region generally lies medial to the sulcus limitans in the developing brainstem?",
+      "Draw a simplified brainstem cross-section with medial motor and lateral sensory columns, then note the long trigeminal sensory extent."
+    ],
+    "prerequisites": [
+      "ear-anatomy"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which functional region generally lies medial to the sulcus limitans in the developing brainstem? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.",
+        "This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic.",
+        "Functional modality should be identified before naming a nucleus."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a simplified brainstem cross-section with medial motor and lateral sensory columns, then note the long trigeminal sensory extent.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Motor columns",
+      "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.",
+      "This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks."
+    ]
+  },
+  "practice": [
+    {
+      "id": "cranial-nerve-organization-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is a sensory ganglion different from a brainstem sensory nucleus?",
+      "answer": "A ganglion generally contains primary sensory neuron cell bodies outside the central nervous system; a sensory nucleus contains central neuronal groups receiving or processing those inputs. The trigeminal ganglion and trigeminal sensory nuclei are therefore successive but different structures. Mesencephalic trigeminal proprioceptive neurons are a notable exception to the usual peripheral location of primary sensory cell bodies. Motor nuclei instead contain neurons whose axons project toward targets. Distinguishing ganglion, nucleus and nerve avoids confusing cell-body location with the bundled axon route."
+    },
+    {
+      "id": "cranial-nerve-organization-relations",
+      "kind": "Relationship recall",
+      "prompt": "In cranial nerve nuclei and functional columns, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The optic nerve is a central nervous system tract. Olfactory receptor axons cross the cribriform plate to the olfactory bulb; neither pathway uses a typical brainstem sensory nucleus. CN III and IV nuclei are in midbrain. CN V through VIII nuclei are mainly pontine, with V sensory nucleus extending into medulla/cervical cord. IX, X and XII have major medullary nuclei; the spinal accessory nucleus is in upper cervical cord. Nucleus ambiguus supplies branchial motor fibers to IX, X, and cranial XI components. Solitary nucleus receives taste and visceral afferents."
+    },
+    {
+      "id": "cranial-nerve-organization-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Sensory columns” to the question “Which functional region generally lies medial to the sulcus limitans in the developing brainstem?” Explain what needs correcting.",
+      "answer": "Motor columns. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+    },
+    {
+      "id": "cranial-nerve-organization-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a simplified brainstem cross-section with medial motor and lateral sensory columns, then note the long trigeminal sensory extent.",
+      "answer": "Check your labels against these relationships: Cranial nerves are organized by functional fiber type and brainstem nuclei. Motor nuclei are generally more medial, sensory nuclei more lateral, with the sulcus limitans as an embryological dividing line. Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial. This organizing rule helps, but adult nuclei extend across levels and do not form twelve isolated blocks. Trigeminal sensory nuclei span midbrain to upper cervical cord; vestibular nuclei cross pontomedullary territory. The spinal accessory nucleus is in upper cervical cord, an exception to a simple IX-XII equals medulla mnemonic. Functional modality should be identified before naming a nucleus."
+    }
+  ],
+  "sourceSections": [
+    "20. Cranial Nerve Nuclei and Fiber Types"
+  ],
+  "furtherReading": {
+    "title": "Peripheral nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

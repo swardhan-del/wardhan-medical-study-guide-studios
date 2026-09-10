@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 28,
+  "lesson": {
+    "id": "lumbar-sacral-plexuses",
+    "subject": "anatomy",
+    "title": "Lumbar and sacral plexuses across the limb",
+    "summary": "The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Lumbar and sacral plexuses across the limb",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "37. Cervical, Lumbar, and Sacral Plexuses",
+    "steps": [
+      {
+        "title": "Cervical, Lumbar, and Sacral Plexuses",
+        "body": "The cervical plexus comes from C1-C4, the lumbar plexus mainly from L1-L4, and the sacral plexus mainly from L4-S4. Plexus knowledge lets you predict sensory and motor deficits."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Cervical cutaneous branches: lesser occipital, greater auricular, transverse cervical, supraclavicular nerves. Ansa cervicalis supplies most infrahyoid muscles. Phrenic nerve is C3-C5. Lumbar plexus branches include iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous, femoral, and obturator nerves. Sacral plexus branches include sciatic, tibial, common fibular, superior/inferior gluteal, and pudendal nerves."
+      },
+      {
+        "title": "Why is a dermatome not identical to a peripheral nerve sensory territory?",
+        "body": "A dermatome corresponds broadly to a spinal sensory root, while a peripheral nerve usually contains fibers from multiple roots redistributed through a plexus. Their maps therefore overlap differently. The saphenous territory along the medial leg is a named-nerve distribution, while root-level sensory maps divide the limb by segmental contributions. Both show variation and overlap. Compare sensory change with muscle actions and reflexes before assigning a level; one patch of skin alone rarely describes the entire anatomical pathway."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch?",
+      "options": [
+        {
+          "text": "Femoral nerve",
+          "reason": "The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together."
+        },
+        {
+          "text": "Obturator nerve",
+          "reason": "The correct relationship is: Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together."
+        },
+        {
+          "text": "Superior gluteal nerve",
+          "reason": "The correct relationship is: Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain lumbar and sacral plexuses across the limb using the main anatomical relationships, then justify your answer to: Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch?",
+      "answer": "The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together."
+    },
+    "related": [
+      "lower-limb-vessels",
+      "neck-musculoskeletal"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of lumbar and sacral plexuses across the limb.",
+      "Answer with anatomical reasons: Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch?",
+      "Draw L2-L4 contributions to femoral and obturator nerves, then contrast them with the sciatic division into tibial and common fibular components."
+    ],
+    "prerequisites": [
+      "lower-limb-vessels"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation.",
+        "Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution.",
+        "Compare motor action, reflex and sensory pattern together."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw L2-L4 contributions to femoral and obturator nerves, then contrast them with the sciatic division into tibial and common fibular components.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Femoral nerve",
+      "The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation.",
+      "Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions."
+    ]
+  },
+  "practice": [
+    {
+      "id": "lumbar-sacral-plexuses-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is a dermatome not identical to a peripheral nerve sensory territory?",
+      "answer": "A dermatome corresponds broadly to a spinal sensory root, while a peripheral nerve usually contains fibers from multiple roots redistributed through a plexus. Their maps therefore overlap differently. The saphenous territory along the medial leg is a named-nerve distribution, while root-level sensory maps divide the limb by segmental contributions. Both show variation and overlap. Compare sensory change with muscle actions and reflexes before assigning a level; one patch of skin alone rarely describes the entire anatomical pathway."
+    },
+    {
+      "id": "lumbar-sacral-plexuses-relations",
+      "kind": "Relationship recall",
+      "prompt": "In lumbar and sacral plexuses across the limb, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Cervical cutaneous branches: lesser occipital, greater auricular, transverse cervical, supraclavicular nerves. Ansa cervicalis supplies most infrahyoid muscles. Phrenic nerve is C3-C5. Lumbar plexus branches include iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous, femoral, and obturator nerves. Sacral plexus branches include sciatic, tibial, common fibular, superior/inferior gluteal, and pudendal nerves."
+    },
+    {
+      "id": "lumbar-sacral-plexuses-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Obturator nerve” to the question “Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch?” Explain what needs correcting.",
+      "answer": "Femoral nerve. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together."
+    },
+    {
+      "id": "lumbar-sacral-plexuses-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw L2-L4 contributions to femoral and obturator nerves, then contrast them with the sciatic division into tibial and common fibular components.",
+      "answer": "Check your labels against these relationships: The cervical plexus comes from C1-C4, the lumbar plexus mainly from L1-L4, and the sacral plexus mainly from L4-S4. Plexus knowledge lets you predict sensory and motor deficits. The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation. Obturator L2-L4 chiefly serves thigh adductors, while sciatic L4-S3 continues into tibial and common fibular divisions. Similar roots do not mean identical peripheral territories. A root lesion can affect muscles supplied by several named nerves; a peripheral nerve lesion follows that nerve's distribution. Compare motor action, reflex and sensory pattern together."
+    }
+  ],
+  "sourceSections": [
+    "37. Cervical, Lumbar, and Sacral Plexuses"
+  ],
+  "furtherReading": {
+    "title": "Peripheral nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

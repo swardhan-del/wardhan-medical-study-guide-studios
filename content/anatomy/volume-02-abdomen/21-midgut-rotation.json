@@ -1,0 +1,130 @@
+{
+  "volume": 2,
+  "order": 21,
+  "lesson": {
+    "id": "midgut-rotation",
+    "subject": "anatomy",
+    "title": "Midgut herniation, rotation and fixation",
+    "summary": "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Midgut herniation, rotation and fixation",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "40. Midgut Herniation and Rotation",
+    "steps": [
+      {
+        "title": "Midgut Herniation and Rotation",
+        "body": "The midgut elongates rapidly, forms a primary intestinal loop, temporarily herniates into the umbilical cord, rotates around the superior mesenteric artery, and later returns to the abdomen."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Physiologic umbilical herniation occurs because the midgut grows faster than the early abdominal cavity. Total rotation is classically described as 270 degrees counterclockwise around SMA when viewed from the front. Cecal bud initially lies high and later descends toward the right iliac fossa. Errors can cause malrotation, volvulus risk, nonrotation, reversed rotation, or abnormal fixation."
+      },
+      {
+        "title": "Why does abnormal fixation matter even after bowel has returned to the abdomen?",
+        "body": "Return and rotation place bowel in a general arrangement, but mesenteric fixation determines how broad and stable its attachment becomes. A narrow mesenteric base can allow bowel and vessels to twist together, threatening perfusion. The cecum normally migrates from a relatively high position toward the right iliac region, while different mesenteries remain mobile or fuse. These later spatial events mean that being inside the abdominal cavity is not enough to establish normal rotational and fixation anatomy."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+      }
+    ],
+    "question": {
+      "prompt": "From the front, what is the conventional total midgut rotation around the SMA?",
+      "options": [
+        {
+          "text": "270 degrees counterclockwise",
+          "reason": "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+        },
+        {
+          "text": "90 degrees clockwise",
+          "reason": "The correct relationship is: 270 degrees counterclockwise. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+        },
+        {
+          "text": "No rotation after herniation",
+          "reason": "The correct relationship is: 270 degrees counterclockwise. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain midgut herniation, rotation and fixation using the main anatomical relationships, then justify your answer to: From the front, what is the conventional total midgut rotation around the SMA?",
+      "answer": "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+    },
+    "related": [
+      "foregut-development",
+      "abdominal-regional-reasoning"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of midgut herniation, rotation and fixation.",
+      "Answer with anatomical reasons: From the front, what is the conventional total midgut rotation around the SMA?",
+      "Draw a fixed SMA axis and three stages of the intestinal loop, marking the observer as anterior."
+    ],
+    "prerequisites": [
+      "foregut-development"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "From the front, what is the conventional total midgut rotation around the SMA? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return.",
+        "State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels.",
+        "Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a fixed SMA axis and three stages of the intestinal loop, marking the observer as anterior.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "270 degrees counterclockwise",
+      "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return.",
+      "State the viewing direction because reversing the view reverses apparent clockwise movement."
+    ]
+  },
+  "practice": [
+    {
+      "id": "midgut-rotation-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does abnormal fixation matter even after bowel has returned to the abdomen?",
+      "answer": "Return and rotation place bowel in a general arrangement, but mesenteric fixation determines how broad and stable its attachment becomes. A narrow mesenteric base can allow bowel and vessels to twist together, threatening perfusion. The cecum normally migrates from a relatively high position toward the right iliac region, while different mesenteries remain mobile or fuse. These later spatial events mean that being inside the abdominal cavity is not enough to establish normal rotational and fixation anatomy."
+    },
+    {
+      "id": "midgut-rotation-relations",
+      "kind": "Relationship recall",
+      "prompt": "In midgut herniation, rotation and fixation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Physiologic umbilical herniation occurs because the midgut grows faster than the early abdominal cavity. Total rotation is classically described as 270 degrees counterclockwise around SMA when viewed from the front. Cecal bud initially lies high and later descends toward the right iliac fossa. Errors can cause malrotation, volvulus risk, nonrotation, reversed rotation, or abnormal fixation."
+    },
+    {
+      "id": "midgut-rotation-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “90 degrees clockwise” to the question “From the front, what is the conventional total midgut rotation around the SMA?” Explain what needs correcting.",
+      "answer": "270 degrees counterclockwise. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+    },
+    {
+      "id": "midgut-rotation-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a fixed SMA axis and three stages of the intestinal loop, marking the observer as anterior.",
+      "answer": "Check your labels against these relationships: The midgut elongates rapidly, forms a primary intestinal loop, temporarily herniates into the umbilical cord, rotates around the superior mesenteric artery, and later returns to the abdomen. The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return. State the viewing direction because reversing the view reverses apparent clockwise movement. After return, the cecum descends and mesenteries fix selectively. A narrow mesenteric attachment in malrotation permits twisting of bowel and its vessels. Normal temporary herniation is not the same as persistence of bowel outside the abdominal cavity after the expected return."
+    }
+  ],
+  "sourceSections": [
+    "40. Midgut Herniation and Rotation"
+  ],
+  "furtherReading": {
+    "title": "Embryonic development",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

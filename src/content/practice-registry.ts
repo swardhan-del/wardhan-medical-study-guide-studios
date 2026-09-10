@@ -1,3 +1,4 @@
+import anatomyCourse from "./anatomy-practice-index.json";
 import library from "./library-lessons.json";
 import thorax from "./thorax-practice.json";
 import { anatomyLearningPages } from "./anatomy-learning";
@@ -19,6 +20,7 @@ export type PracticeItem = {
 };
 export const practiceItems: PracticeItem[] = [
   ...studio.questions,
+  ...anatomyCourse.records.flatMap(r => r.practice.map(q => ({ id: q.id, topic: r.lessonId, title: r.title, subject: "anatomy", href: "/library/" + r.lessonId + "#anatomy-practice-heading", prompt: q.prompt }))),
   ...renalQuestions.map((q) => ({
     ...q, topic: q.lesson, subject: "physiology",
     title: renalLessons.find((l) => l.slug === q.lesson)!.title,

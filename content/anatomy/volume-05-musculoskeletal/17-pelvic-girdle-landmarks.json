@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 17,
+  "lesson": {
+    "id": "pelvic-girdle-landmarks",
+    "subject": "anatomy",
+    "title": "Pelvic girdle and hip bone landmarks",
+    "summary": "Ilium, ischium and pubis meet around the acetabulum.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Pelvic girdle and hip bone landmarks",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "26. Pelvic Girdle and Hip Bone Landmarks",
+    "steps": [
+      {
+        "title": "Pelvic Girdle and Hip Bone Landmarks",
+        "body": "The pelvic girdle consists of right hip bone, left hip bone, sacrum, and coccyx. Each hip bone is made of ilium, ischium, and pubis, which meet at the acetabulum."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Important landmarks: iliac crest, ASIS, AIIS, PSIS, greater and lesser sciatic notches, obturator foramen, acetabulum. Greater and lesser sciatic notches are converted into foramina by sacrospinous and sacrotuberous ligaments. Obturator foramen is closed mostly by obturator membrane. Acetabulum receives the femoral head."
+      },
+      {
+        "title": "How does the sacroiliac region transfer load toward the lower limbs?",
+        "body": "The sacrum receives axial load from the vertebral column and transmits it through sacroiliac articulations and strong ligamentous supports to the hip bones. The pelvic ring distributes force toward acetabula and femora. The pubic symphysis completes the anterior connection but is not the sole load-bearing bridge. This ring structure means forces at one location affect neighboring connections. On a pelvic diagram, show sacrum, both sacroiliac joints, acetabula and symphysis together rather than learning each landmark without the load pathway."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route."
+      }
+    ],
+    "question": {
+      "prompt": "Which hip-bone region articulates with the femoral head?",
+      "options": [
+        {
+          "text": "Acetabular lunate surface",
+          "reason": "Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route."
+        },
+        {
+          "text": "Obturator membrane",
+          "reason": "The correct relationship is: Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route."
+        },
+        {
+          "text": "Iliac crest",
+          "reason": "The correct relationship is: Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain pelvic girdle and hip bone landmarks using the main anatomical relationships, then justify your answer to: Which hip-bone region articulates with the femoral head?",
+      "answer": "Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route."
+    },
+    "related": [
+      "upper-limb-vessels",
+      "hip-joint-stability"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of pelvic girdle and hip bone landmarks.",
+      "Answer with anatomical reasons: Which hip-bone region articulates with the femoral head?",
+      "Draw one hip bone and label acetabulum, obturator foramen, ischial spine, ischial tuberosity and ASIS."
+    ],
+    "prerequisites": [
+      "upper-limb-vessels"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which hip-bone region articulates with the femoral head? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Ilium, ischium and pubis meet around the acetabulum.",
+        "The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles.",
+        "A named prominence should be linked to its function and neighboring route."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw one hip bone and label acetabulum, obturator foramen, ischial spine, ischial tuberosity and ASIS.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Acetabular lunate surface",
+      "Ilium, ischium and pubis meet around the acetabulum.",
+      "The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage."
+    ]
+  },
+  "practice": [
+    {
+      "id": "pelvic-girdle-landmarks-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How does the sacroiliac region transfer load toward the lower limbs?",
+      "answer": "The sacrum receives axial load from the vertebral column and transmits it through sacroiliac articulations and strong ligamentous supports to the hip bones. The pelvic ring distributes force toward acetabula and femora. The pubic symphysis completes the anterior connection but is not the sole load-bearing bridge. This ring structure means forces at one location affect neighboring connections. On a pelvic diagram, show sacrum, both sacroiliac joints, acetabula and symphysis together rather than learning each landmark without the load pathway."
+    },
+    {
+      "id": "pelvic-girdle-landmarks-relations",
+      "kind": "Relationship recall",
+      "prompt": "In pelvic girdle and hip bone landmarks, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Important landmarks: iliac crest, ASIS, AIIS, PSIS, greater and lesser sciatic notches, obturator foramen, acetabulum. Greater and lesser sciatic notches are converted into foramina by sacrospinous and sacrotuberous ligaments. Obturator foramen is closed mostly by obturator membrane. Acetabulum receives the femoral head."
+    },
+    {
+      "id": "pelvic-girdle-landmarks-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Obturator membrane” to the question “Which hip-bone region articulates with the femoral head?” Explain what needs correcting.",
+      "answer": "Acetabular lunate surface. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route."
+    },
+    {
+      "id": "pelvic-girdle-landmarks-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw one hip bone and label acetabulum, obturator foramen, ischial spine, ischial tuberosity and ASIS.",
+      "answer": "Check your labels against these relationships: The pelvic girdle consists of right hip bone, left hip bone, sacrum, and coccyx. Each hip bone is made of ilium, ischium, and pubis, which meet at the acetabulum. Ilium, ischium and pubis meet around the acetabulum. The acetabular fossa is central and non-articular, while the lunate surface bears articular cartilage. The obturator foramen is largely closed by membrane, leaving a canal for the obturator neurovascular bundle. Ischial spine and tuberosity are different landmarks: the spine helps orient pelvic nerve routes, the tuberosity supports sitting and anchors muscles. A named prominence should be linked to its function and neighboring route."
+    }
+  ],
+  "sourceSections": [
+    "26. Pelvic Girdle and Hip Bone Landmarks"
+  ],
+  "furtherReading": {
+    "title": "Pelvic girdle and lower limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "volume": 4,
+  "order": 25,
+  "lesson": {
+    "id": "brainstem-localization",
+    "subject": "anatomy",
+    "title": "Brainstem landmarks and crossed findings",
+    "summary": "Localization combines level, side and pathway.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Brainstem landmarks and crossed findings",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "36. Brainstem External Anatomy",
+    "steps": [
+      {
+        "title": "Brainstem External Anatomy",
+        "body": "The brainstem consists of midbrain, pons, and medulla. It contains cranial nerve nuclei, ascending and descending tracts, reticular formation, and vital autonomic centers."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Midbrain contains cerebral peduncles, tectum, superior/inferior colliculi, and CN III/IV levels. Pons shows basilar pons, middle cerebellar peduncles, and CN V/VII/VIII relations. Medulla shows pyramids, olives, preolivary sulcus for CN XII, and postolivary sulcus for IX/X/XI. Pyramidal decussation lies caudally in medulla. Cerebellar peduncles connect brainstem and cerebellum."
+      },
+      {
+        "title": "Why should sensory modalities be separated when reasoning about a crossed brainstem pattern?",
+        "body": "Different pathways cross at different levels and occupy different positions. Dorsal-column information crosses in the medulla before ascending as medial lemniscus, while anterolateral pain-temperature pathways have already crossed in the spinal cord. Trigeminal facial sensation has its own nuclei and ascending routes. A lesion can therefore combine facial and body findings with different sides and modalities. Begin with the affected tract and its crossing history rather than applying a blanket rule that all brainstem sensation is contralateral."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+      }
+    ],
+    "question": {
+      "prompt": "Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness?",
+      "options": [
+        {
+          "text": "It can affect a local cranial pathway and corticospinal fibers before their decussation",
+          "reason": "Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+        },
+        {
+          "text": "Every cranial nerve crosses with the pyramids",
+          "reason": "The correct relationship is: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+        },
+        {
+          "text": "All motor pathways remain uncrossed",
+          "reason": "The correct relationship is: It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain brainstem landmarks and crossed findings using the main anatomical relationships, then justify your answer to: Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness?",
+      "answer": "Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+    },
+    "related": [
+      "basal-ganglia-diencephalon",
+      "cerebellum-connections"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of brainstem landmarks and crossed findings.",
+      "Answer with anatomical reasons: Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness?",
+      "Draw a cranial nerve exiting one side of brainstem beside a descending tract that crosses farther caudally."
+    ],
+    "prerequisites": [
+      "basal-ganglia-diencephalon"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Localization combines level, side and pathway.",
+        "Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities.",
+        "A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a cranial nerve exiting one side of brainstem beside a descending tract that crosses farther caudally.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "It can affect a local cranial pathway and corticospinal fibers before their decussation",
+      "Localization combines level, side and pathway.",
+      "Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body."
+    ]
+  },
+  "practice": [
+    {
+      "id": "brainstem-localization-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why should sensory modalities be separated when reasoning about a crossed brainstem pattern?",
+      "answer": "Different pathways cross at different levels and occupy different positions. Dorsal-column information crosses in the medulla before ascending as medial lemniscus, while anterolateral pain-temperature pathways have already crossed in the spinal cord. Trigeminal facial sensation has its own nuclei and ascending routes. A lesion can therefore combine facial and body findings with different sides and modalities. Begin with the affected tract and its crossing history rather than applying a blanket rule that all brainstem sensation is contralateral."
+    },
+    {
+      "id": "brainstem-localization-relations",
+      "kind": "Relationship recall",
+      "prompt": "In brainstem landmarks and crossed findings, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Midbrain contains cerebral peduncles, tectum, superior/inferior colliculi, and CN III/IV levels. Pons shows basilar pons, middle cerebellar peduncles, and CN V/VII/VIII relations. Medulla shows pyramids, olives, preolivary sulcus for CN XII, and postolivary sulcus for IX/X/XI. Pyramidal decussation lies caudally in medulla. Cerebellar peduncles connect brainstem and cerebellum."
+    },
+    {
+      "id": "brainstem-localization-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Every cranial nerve crosses with the pyramids” to the question “Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness?” Explain what needs correcting.",
+      "answer": "It can affect a local cranial pathway and corticospinal fibers before their decussation. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+    },
+    {
+      "id": "brainstem-localization-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a cranial nerve exiting one side of brainstem beside a descending tract that crosses farther caudally.",
+      "answer": "Check your labels against these relationships: The brainstem consists of midbrain, pons, and medulla. It contains cranial nerve nuclei, ascending and descending tracts, reticular formation, and vital autonomic centers. Localization combines level, side and pathway. Cranial nerve nuclei or exiting fibers identify a brainstem level; a nearby long tract can produce a deficit elsewhere in the body. Most corticospinal fibers cross in the caudal medulla, so damage above that crossing affects the opposite body side. Sensory tracts cross at different places, preventing a single crossing rule for all modalities. A mixed pattern is a clue to neighboring pathways, not proof of one diagnosis."
+    }
+  ],
+  "sourceSections": [
+    "36. Brainstem External Anatomy"
+  ],
+  "furtherReading": {
+    "title": "The central nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

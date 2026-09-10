@@ -1,0 +1,131 @@
+{
+  "volume": 4,
+  "order": 7,
+  "lesson": {
+    "id": "tmj-deep-fossae",
+    "subject": "anatomy",
+    "title": "Mastication, TMJ and deep facial spaces",
+    "summary": "The TMJ disc divides the joint into compartments supporting rotation and translation.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Mastication, TMJ and deep facial spaces",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "11. Temporomandibular Joint and Mastication; 13. Infratemporal and Pterygopalatine Fossae",
+    "steps": [
+      {
+        "title": "Temporomandibular Joint and Mastication",
+        "body": "The temporomandibular joint is a synovial joint between the mandibular condyle and mandibular fossa/articular tubercle of temporal bone. It contains an articular disc and permits hinge and gliding movements.\n\nEarly mouth opening is mainly hinge movement; wider opening involves anterior translation of the condyle onto the articular tubercle. Muscles of mastication are masseter, temporalis, medial pterygoid, and lateral pterygoid. Motor supply is mandibular division of trigeminal nerve, V3. Lateral pterygoid helps protrude and depress the mandible and acts on the disc/condyle. Auriculotemporal nerve and masseteric/deep temporal branches are important around the joint."
+      },
+      {
+        "title": "Infratemporal and Pterygopalatine Fossae",
+        "body": "The infratemporal and pterygopalatine fossae are deep face spaces. They are high-yield because they contain V3 branches, maxillary artery branches, venous plexuses, and autonomic ganglia.\n\nInfratemporal fossa contains muscles of mastication, mandibular nerve branches, maxillary artery, pterygoid venous plexus, and chorda tympani joining lingual nerve. Pterygopalatine fossa contains maxillary nerve V2, pterygopalatine ganglion, and terminal maxillary artery branches. Greater petrosal nerve carries preganglionic parasympathetic fibers to pterygopalatine ganglion. Postganglionic fibers from pterygopalatine ganglion reach lacrimal, nasal, palatine, and pharyngeal glands. Foramen rotundum brings V2 into pterygopalatine fossa."
+      },
+      {
+        "title": "Why is the pterygopalatine fossa a useful anatomical distribution hub?",
+        "body": "It is a small space with several communications to orbit, nasal cavity, palate, pharynx and adjacent deep facial regions. V2, terminal maxillary arterial branches and pterygopalatine ganglion relationships meet there before branches disperse. Postganglionic parasympathetic fibers can travel with sensory branches toward glands, so the carrier branch name does not identify the original autonomic source. A useful map starts with the fossa and then follows each exit to its destination rather than memorizing contents without their onward routes."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches."
+      }
+    ],
+    "question": {
+      "prompt": "What accompanies wider mouth opening after the early hinge phase?",
+      "options": [
+        {
+          "text": "Anterior translation of the condyle-disc complex",
+          "reason": "The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches."
+        },
+        {
+          "text": "Fusion of the condyle to the temporal bone",
+          "reason": "The correct relationship is: Anterior translation of the condyle-disc complex. The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches."
+        },
+        {
+          "text": "Pure rotation without translation at every opening angle",
+          "reason": "The correct relationship is: Anterior translation of the condyle-disc complex. The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain mastication, tmj and deep facial spaces using the main anatomical relationships, then justify your answer to: What accompanies wider mouth opening after the early hinge phase?",
+      "answer": "The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches."
+    },
+    "related": [
+      "salivary-glands",
+      "nose-sinuses"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of mastication, tmj and deep facial spaces.",
+      "Answer with anatomical reasons: What accompanies wider mouth opening after the early hinge phase?",
+      "Sketch a closed and open TMJ and place foramen ovale with V3 separately from foramen rotundum with V2."
+    ],
+    "prerequisites": [
+      "salivary-glands"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What accompanies wider mouth opening after the early hinge phase? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The TMJ disc divides the joint into compartments supporting rotation and translation.",
+        "The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits.",
+        "Link a nerve to its foramen before following its distal branches."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Sketch a closed and open TMJ and place foramen ovale with V3 separately from foramen rotundum with V2.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Anterior translation of the condyle-disc complex",
+      "The TMJ disc divides the joint into compartments supporting rotation and translation.",
+      "The condyle moves toward the articular tubercle during wider opening."
+    ]
+  },
+  "practice": [
+    {
+      "id": "tmj-deep-fossae-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is the pterygopalatine fossa a useful anatomical distribution hub?",
+      "answer": "It is a small space with several communications to orbit, nasal cavity, palate, pharynx and adjacent deep facial regions. V2, terminal maxillary arterial branches and pterygopalatine ganglion relationships meet there before branches disperse. Postganglionic parasympathetic fibers can travel with sensory branches toward glands, so the carrier branch name does not identify the original autonomic source. A useful map starts with the fossa and then follows each exit to its destination rather than memorizing contents without their onward routes."
+    },
+    {
+      "id": "tmj-deep-fossae-relations",
+      "kind": "Relationship recall",
+      "prompt": "In mastication, tmj and deep facial spaces, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The infratemporal and pterygopalatine fossae are deep face spaces. They are high-yield because they contain V3 branches, maxillary artery branches, venous plexuses, and autonomic ganglia.\n\nInfratemporal fossa contains muscles of mastication, mandibular nerve branches, maxillary artery, pterygoid venous plexus, and chorda tympani joining lingual nerve. Pterygopalatine fossa contains maxillary nerve V2, pterygopalatine ganglion, and terminal maxillary artery branches. Greater petrosal nerve carries preganglionic parasympathetic fibers to pterygopalatine ganglion. Postganglionic fibers from pterygopalatine ganglion reach lacrimal, nasal, palatine, and pharyngeal glands. Foramen rotundum brings V2 into pterygopalatine fossa."
+    },
+    {
+      "id": "tmj-deep-fossae-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Fusion of the condyle to the temporal bone” to the question “What accompanies wider mouth opening after the early hinge phase?” Explain what needs correcting.",
+      "answer": "Anterior translation of the condyle-disc complex. The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches."
+    },
+    {
+      "id": "tmj-deep-fossae-identification",
+      "kind": "Draw and identify",
+      "prompt": "Sketch a closed and open TMJ and place foramen ovale with V3 separately from foramen rotundum with V2.",
+      "answer": "Check your labels against these relationships: The temporomandibular joint is a synovial joint between the mandibular condyle and mandibular fossa/articular tubercle of temporal bone. It contains an articular disc and permits hinge and gliding movements.\n\nEarly mouth opening is mainly hinge movement; wider opening involves anterior translation of the condyle onto the articular tubercle. Muscles of mastication are masseter, temporalis, medial pterygoid, and lateral pterygoid. Motor supply is mandibular division of trigeminal nerve, V3. Lateral pterygoid helps protrude and depress the mandible and acts on the disc/condyle. Auriculotemporal nerve and masseteric/deep temporal branches are important around the joint. The TMJ disc divides the joint into compartments supporting rotation and translation. The condyle moves toward the articular tubercle during wider opening. Mastication is supplied by V3, which enters the infratemporal region through foramen ovale. V2 instead reaches the pterygopalatine fossa through foramen rotundum. These neighboring spaces communicate, but each has its own contents and exits. Link a nerve to its foramen before following its distal branches."
+    }
+  ],
+  "sourceSections": [
+    "11. Temporomandibular Joint and Mastication",
+    "13. Infratemporal and Pterygopalatine Fossae"
+  ],
+  "furtherReading": {
+    "title": "Head, neck and back muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

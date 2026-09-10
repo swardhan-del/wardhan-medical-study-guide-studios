@@ -1,0 +1,131 @@
+{
+  "volume": 3,
+  "order": 10,
+  "lesson": {
+    "id": "erectile-anatomy",
+    "subject": "anatomy",
+    "title": "Erectile tissues and external genital anatomy",
+    "summary": "The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally.",
+    "tags": [
+      "anatomy",
+      "Volume 3",
+      "Pelvis and urogenital anatomy",
+      "Erectile tissues and external genital anatomy",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-3",
+    "section": "22. Penis and Mechanism of Erection; 29. External Female Genital Organs",
+    "steps": [
+      {
+        "title": "Penis and Mechanism of Erection",
+        "body": "The penis contains paired corpora cavernosa dorsally and one corpus spongiosum ventrally surrounding the spongy urethra. Erection depends on parasympathetic vasodilation through cavernous nerves, arterial inflow, and venous compression within erectile tissue.\n\nThe penile root includes a single bulb and paired crura attached in the perineum. Body contains corpora cavernosa and corpus spongiosum. Glans is expansion of corpus spongiosum. Deep arteries of penis supply corpora cavernosa; dorsal artery supplies glans/skin region. Parasympathetic pathways support erection; sympathetic pathways contribute to emission, and somatic pudendal pathways contribute to ejaculatory expulsion. The suspensory ligament of the penis attaches the root/body region to the pubic symphysis and stabilizes the penis during erection. Specimen orientation: paired crura belong to the corpora cavernosa; the bulb belongs to the corpus spongiosum and continues into the glans."
+      },
+      {
+        "title": "External Female Genital Organs",
+        "body": "External female genital organs include mons pubis, labia majora, labia minora, clitoris, vestibule, external urethral opening, vaginal opening, bulbs of vestibule, and greater vestibular glands. They are mainly supplied by internal pudendal vessels and pudendal nerve branches.\n\nClitoris contains erectile tissue homologous to corpora cavernosa. Bulbs of vestibule are erectile tissue homologous to bulb of penis/corpus spongiosum region. Greater vestibular glands open into vestibule posterolateral to vaginal opening. Perineal nerve and dorsal nerve of clitoris are branches of pudendal nerve. Lymph from external genitalia largely drains to superficial inguinal nodes."
+      },
+      {
+        "title": "Why is the urethra associated with corpus spongiosum rather than enclosed between the cavernosa?",
+        "body": "Corpus spongiosum surrounds the spongy urethral route and expands into bulb and glans, while paired cavernosa provide the principal rigid erectile bodies. Their connective-tissue and vascular arrangements differ, allowing the urethral channel to remain a distinct structure during erectile changes. The crura are cavernous attachments, whereas the bulb belongs to spongiosum. Labeling all erectile tissue identically would obscure the urethral course and the correspondence between root, body and distal expansions."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+      }
+    ],
+    "question": {
+      "prompt": "Which tissue surrounds the spongy urethra?",
+      "options": [
+        {
+          "text": "Corpus spongiosum",
+          "reason": "The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+        },
+        {
+          "text": "Paired corpora cavernosa",
+          "reason": "The correct relationship is: Corpus spongiosum. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+        },
+        {
+          "text": "Dartos muscle",
+          "reason": "The correct relationship is: Corpus spongiosum. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain erectile tissues and external genital anatomy using the main anatomical relationships, then justify your answer to: Which tissue surrounds the spongy urethra?",
+      "answer": "The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+    },
+    "related": [
+      "male-reproductive-ducts",
+      "ovary-uterine-tube"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of erectile tissues and external genital anatomy.",
+      "Answer with anatomical reasons: Which tissue surrounds the spongy urethra?",
+      "Draw a transverse penile section and identify the paired cavernosa, single spongiosum and urethral lumen."
+    ],
+    "prerequisites": [
+      "male-reproductive-ducts"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which tissue surrounds the spongy urethra? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally.",
+        "Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event.",
+        "Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a transverse penile section and identify the paired cavernosa, single spongiosum and urethral lumen.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Corpus spongiosum",
+      "The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally.",
+      "Vascular filling depends strongly on parasympathetic and local signaling."
+    ]
+  },
+  "practice": [
+    {
+      "id": "erectile-anatomy-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is the urethra associated with corpus spongiosum rather than enclosed between the cavernosa?",
+      "answer": "Corpus spongiosum surrounds the spongy urethral route and expands into bulb and glans, while paired cavernosa provide the principal rigid erectile bodies. Their connective-tissue and vascular arrangements differ, allowing the urethral channel to remain a distinct structure during erectile changes. The crura are cavernous attachments, whereas the bulb belongs to spongiosum. Labeling all erectile tissue identically would obscure the urethral course and the correspondence between root, body and distal expansions."
+    },
+    {
+      "id": "erectile-anatomy-relations",
+      "kind": "Relationship recall",
+      "prompt": "In erectile tissues and external genital anatomy, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "External female genital organs include mons pubis, labia majora, labia minora, clitoris, vestibule, external urethral opening, vaginal opening, bulbs of vestibule, and greater vestibular glands. They are mainly supplied by internal pudendal vessels and pudendal nerve branches.\n\nClitoris contains erectile tissue homologous to corpora cavernosa. Bulbs of vestibule are erectile tissue homologous to bulb of penis/corpus spongiosum region. Greater vestibular glands open into vestibule posterolateral to vaginal opening. Perineal nerve and dorsal nerve of clitoris are branches of pudendal nerve. Lymph from external genitalia largely drains to superficial inguinal nodes."
+    },
+    {
+      "id": "erectile-anatomy-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Paired corpora cavernosa” to the question “Which tissue surrounds the spongy urethra?” Explain what needs correcting.",
+      "answer": "Corpus spongiosum. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+    },
+    {
+      "id": "erectile-anatomy-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a transverse penile section and identify the paired cavernosa, single spongiosum and urethral lumen.",
+      "answer": "Check your labels against these relationships: The penis contains paired corpora cavernosa dorsally and one corpus spongiosum ventrally surrounding the spongy urethra. Erection depends on parasympathetic vasodilation through cavernous nerves, arterial inflow, and venous compression within erectile tissue.\n\nThe penile root includes a single bulb and paired crura attached in the perineum. Body contains corpora cavernosa and corpus spongiosum. Glans is expansion of corpus spongiosum. Deep arteries of penis supply corpora cavernosa; dorsal artery supplies glans/skin region. Parasympathetic pathways support erection; sympathetic pathways contribute to emission, and somatic pudendal pathways contribute to ejaculatory expulsion. The suspensory ligament of the penis attaches the root/body region to the pubic symphysis and stabilizes the penis during erection. Specimen orientation: paired crura belong to the corpora cavernosa; the bulb belongs to the corpus spongiosum and continues into the glans. The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally. Vascular filling depends strongly on parasympathetic and local signaling. Emission involves sympathetic pathways, while expulsion also needs somatic rhythmic muscle activity through pudendal pathways. Thus ejaculation cannot be explained as a purely sympathetic event. Homologous erectile structures exist in the clitoris and vestibular bulbs, but the female urethra does not run through the clitoris."
+    }
+  ],
+  "sourceSections": [
+    "22. Penis and Mechanism of Erection",
+    "29. External Female Genital Organs"
+  ],
+  "furtherReading": {
+    "title": "Male reproductive anatomy",
+    "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

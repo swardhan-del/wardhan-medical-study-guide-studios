@@ -12,19 +12,19 @@ export function SubjectCoverage({ subject }: { subject: string }) {
     <h2 id="coverage-title">What you can study here</h2>
     <p>{path.preparation}</p>
     <Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start with {subject === "anatomy" ? beginnerSequences[subject][0].title : first.title}</Link>
-    <p>{lessons.length} focused lesson introductions. Library resource totals also include other formats and activities; they are not additional lessons or a measure of syllabus completion.</p>
+    <p>{lessons.length} {subject === "anatomy" ? "written course lessons" : "focused lesson introductions"}. Library resource totals also include other formats and activities; they are not additional lessons or a measure of syllabus completion.</p>
     <p>This map covers the current collection. An available introduction is a starting point, not complete preparation for an examination. Compare it with your course syllabus.</p>
     {studyGroups.filter(g => g.subject === subject).map(group => <details className="study-details" key={group.id}>
-      <summary>{group.title} · {group.lessonIds.length} introductions available</summary>
+      <summary>{group.title} · {group.lessonIds.length} {subject === "anatomy" ? "lessons available" : "introductions available"}</summary>
       <ul>{group.lessonIds.map(id => {
         const lesson = lessons.find(l => l.id === id)!;
-        const count = practiceItems.filter(q => q.topic === id).length;
-        return <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link> — Introduction available · {count} practice {count === 1 ? "question" : "questions"}</li>;
+        const count = subject === "anatomy" ? 5 : practiceItems.filter(q => q.topic === id).length;
+        return <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link> — {subject === "anatomy" ? "Lesson available" : "Introduction available"} · {count} practice {count === 1 ? "question" : "questions"}</li>;
       })}</ul>
     </details>)}
     {subject === "physiology" && <p><Link href="/learn/renal">The separate eight-lesson renal course</Link> develops renal topics further. It overlaps this collection and should not be counted as eight additional syllabus areas.</p>}
-    <h3>{subject === "biophysics" ? "What to study alongside this course" : "Still needs fuller lessons"}</h3>
-    <p>{subject === "biophysics" ? "The native lessons cover the supplied topic structure. These additional checks and experiences remain necessary." : "Selected gaps identified in the source review; this is not an exhaustive list or a release schedule."}</p>
-    <ul>{path.gaps.map(gap => <li key={gap}>{gap}{subject !== "biophysics" && " — Not yet covered in depth"}</li>)}</ul>
+    <h3>{["biophysics", "anatomy"].includes(subject) ? "What to study alongside this course" : "Still needs fuller lessons"}</h3>
+    <p>{["biophysics", "anatomy"].includes(subject) ? "The native lessons cover the supplied topic structure. These additional checks and experiences remain necessary." : "Selected gaps identified in the source review; this is not an exhaustive list or a release schedule."}</p>
+    <ul>{path.gaps.map(gap => <li key={gap}>{gap}{!["biophysics", "anatomy"].includes(subject) && " — Not yet covered in depth"}</li>)}</ul>
   </section>;
 }

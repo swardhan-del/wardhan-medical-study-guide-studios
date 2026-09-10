@@ -1,0 +1,130 @@
+{
+  "volume": 3,
+  "order": 2,
+  "lesson": {
+    "id": "pelvic-floor-support",
+    "subject": "anatomy",
+    "title": "Pelvic diaphragm and visceral support",
+    "summary": "Puborectalis is part of levator ani and helps maintain the anorectal angle.",
+    "tags": [
+      "anatomy",
+      "Volume 3",
+      "Pelvis and urogenital anatomy",
+      "Pelvic diaphragm and visceral support",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-3",
+    "section": "5. Pelvic Diaphragm and Levator Ani",
+    "steps": [
+      {
+        "title": "Pelvic Diaphragm and Levator Ani",
+        "body": "The pelvic diaphragm is formed by levator ani and coccygeus muscles with their fasciae. It supports pelvic organs, maintains continence, resists increases in intra-abdominal pressure, and separates pelvic cavity from perineum."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Levator ani includes puborectalis, pubococcygeus, and iliococcygeus. Coccygeus lies posteriorly on the sacrospinous ligament region. Anal hiatus transmits anal canal. Urogenital hiatus transmits urethra in male and urethra plus vagina in female. Innervation is mainly from nerve to levator ani and branches from sacral plexus/pudendal region."
+      },
+      {
+        "title": "Why does supporting pelvic organs require more than a flat sheet of muscle?",
+        "body": "The floor has openings for outlets and is shaped around them, so support depends on muscle tone, connective-tissue attachments and the perineal body. Pressure rises during coughing or lifting must be resisted without permanently closing those outlets. Puborectalis changes anorectal geometry, while other levator fibers support adjacent viscera. Injury or weakness can alter several relationships simultaneously. The perineal membrane lies below the levator complex in the urogenital region and should not be drawn as the entire pelvic diaphragm."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+      }
+    ],
+    "question": {
+      "prompt": "Which muscle forms a sling around the anorectal junction?",
+      "options": [
+        {
+          "text": "Puborectalis",
+          "reason": "Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+        },
+        {
+          "text": "Obturator internus",
+          "reason": "The correct relationship is: Puborectalis. Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+        },
+        {
+          "text": "Piriformis",
+          "reason": "The correct relationship is: Puborectalis. Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain pelvic diaphragm and visceral support using the main anatomical relationships, then justify your answer to: Which muscle forms a sling around the anorectal junction?",
+      "answer": "Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+    },
+    "related": [
+      "pelvic-boundaries",
+      "pelvic-foramina-nerves"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of pelvic diaphragm and visceral support.",
+      "Answer with anatomical reasons: Which muscle forms a sling around the anorectal junction?",
+      "Draw a sagittal anorectal junction with a posterior puborectalis sling and a separate external sphincter ring."
+    ],
+    "prerequisites": [
+      "pelvic-boundaries"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which muscle forms a sling around the anorectal junction? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Puborectalis is part of levator ani and helps maintain the anorectal angle.",
+        "Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes.",
+        "Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a sagittal anorectal junction with a posterior puborectalis sling and a separate external sphincter ring.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Puborectalis",
+      "Puborectalis is part of levator ani and helps maintain the anorectal angle.",
+      "Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter."
+    ]
+  },
+  "practice": [
+    {
+      "id": "pelvic-floor-support-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does supporting pelvic organs require more than a flat sheet of muscle?",
+      "answer": "The floor has openings for outlets and is shaped around them, so support depends on muscle tone, connective-tissue attachments and the perineal body. Pressure rises during coughing or lifting must be resisted without permanently closing those outlets. Puborectalis changes anorectal geometry, while other levator fibers support adjacent viscera. Injury or weakness can alter several relationships simultaneously. The perineal membrane lies below the levator complex in the urogenital region and should not be drawn as the entire pelvic diaphragm."
+    },
+    {
+      "id": "pelvic-floor-support-relations",
+      "kind": "Relationship recall",
+      "prompt": "In pelvic diaphragm and visceral support, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Levator ani includes puborectalis, pubococcygeus, and iliococcygeus. Coccygeus lies posteriorly on the sacrospinous ligament region. Anal hiatus transmits anal canal. Urogenital hiatus transmits urethra in male and urethra plus vagina in female. Innervation is mainly from nerve to levator ani and branches from sacral plexus/pudendal region."
+    },
+    {
+      "id": "pelvic-floor-support-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Obturator internus” to the question “Which muscle forms a sling around the anorectal junction?” Explain what needs correcting.",
+      "answer": "Puborectalis. Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+    },
+    {
+      "id": "pelvic-floor-support-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a sagittal anorectal junction with a posterior puborectalis sling and a separate external sphincter ring.",
+      "answer": "Check your labels against these relationships: The pelvic diaphragm is formed by levator ani and coccygeus muscles with their fasciae. It supports pelvic organs, maintains continence, resists increases in intra-abdominal pressure, and separates pelvic cavity from perineum. Puborectalis is part of levator ani and helps maintain the anorectal angle. Relaxation during defecation allows that angle to change; it is not the same structure as the circular external anal sphincter. Levator ani also supports pelvic organs during pressure changes. Its direct sacral innervation, chiefly through the nerve to levator ani, should not be reduced to a statement that every pelvic-floor muscle is supplied only by the pudendal nerve."
+    }
+  ],
+  "sourceSections": [
+    "5. Pelvic Diaphragm and Levator Ani"
+  ],
+  "furtherReading": {
+    "title": "Pelvic floor anatomy",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK482200/"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

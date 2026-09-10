@@ -10,10 +10,10 @@ test('search is visible before scrolling and finds lesson text with spelling rec
   await page.getByRole('button', {name:'Search', exact:true}).click();
   await expect(page).toHaveURL(/q=axillary/);
   await expect(page.getByRole('searchbox', {name:'Search resources'})).toBeInViewport();
-  await expect(page.getByRole('link', {name:'Volume V: trace a limb nerve through the plexus', exact:true})).toBeVisible();
+  await expect(page.getByRole('link', {name:'Brachial plexus from roots to terminal nerves', exact:true})).toBeVisible();
   await page.getByRole('searchbox', {name:'Search resources'}).fill('brachal plexus');
   await page.getByRole('button', {name:'brachial plexus',exact:true}).click();
-  await expect(page.getByRole('link', {name:'Volume V: trace a limb nerve through the plexus',exact:true})).toBeVisible();
+  await expect(page.getByRole('link', {name:'Brachial plexus from roots to terminal nerves',exact:true})).toBeVisible();
   await page.screenshot({path:info.outputPath('search.png')});
 });
 
@@ -79,4 +79,23 @@ test('unsupported native sharing offers the existing export fallback',async({pag
   await page.getByRole('button',{name:'Share a transfer file',exact:true}).click();
   await expect(page.locator('#progress-transfer [role=status]')).toContainText('Use Export progress and saved resources');
   await expect(page.getByRole('button',{name:'Export progress and saved resources',exact:true})).toBeEnabled();
+});
+
+test('anatomy course connects all five volumes to lessons and printable collections', async ({ page }) => {
+  await page.goto('/study/anatomy');
+  await expect(page.getByRole('heading', { name: '120 lessons, from landmarks to regional reasoning' })).toBeVisible();
+  await page.getByRole('link', { name: 'Begin Volume I', exact: true }).click();
+  await expect(page).toHaveURL(/\/library\/thoracic-cage-landmarks$/);
+  await expect(page.getByRole('navigation', { name: 'Anatomy volume navigation' })).toContainText('Lesson 1 of 18');
+  await page.getByRole('link', { name: 'Volume contents', exact: true }).click();
+  await expect(page.locator('.guide-part')).toHaveCount(5);
+  const expected=[18,22,18,30,32];
+  for (let i=0;i<5;i++) await expect(page.locator(`#anatomy-volume-${i+1}`)).toContainText(`${expected[i]} available lessons`);
+  await page.getByRole('link', { name: 'Choose parts and print notes', exact: true }).click();
+  await expect(page.locator('.revision-lesson')).toHaveCount(120);
+  await page.getByRole('button', { name: 'Clear selection' }).click();
+  await page.locator('.guide-options input').nth(4).check();
+  await expect(page.locator('.revision-lesson')).toHaveCount(32);
+  await expect(page.locator('.revision-answers')).toContainText('Vertebral and skull development');
+  await expect(page.locator('.revision-answers')).not.toContainText('Fetal shunts and adult remnants');
 });

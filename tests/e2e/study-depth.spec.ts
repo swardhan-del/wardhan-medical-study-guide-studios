@@ -1,3 +1,4 @@
+import { mkdirSync } from "node:fs";
 import { test, expect } from '@playwright/test';
 import data from '../../src/content/library-lessons.json';
 
@@ -50,6 +51,14 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     await expect(check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeChecked();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     expect(errors).toEqual([]);
+    if (lesson.subject === 'anatomy') {
+      await expect(page.getByRole('navigation', { name: 'Anatomy volume navigation' })).toBeVisible();
+      await expect(page.locator('.anatomy-practice-item')).toHaveCount(4);
+      await page.getByText('Reveal explanation for item 2', { exact: true }).click();
+      await expect(page.locator('.anatomy-practice-item').first().locator('details')).toHaveAttribute('open', '');
+      const shots = process.env.ANATOMY_SCREENSHOT_DIR;
+      if (shots) { mkdirSync(shots, { recursive: true }); await page.screenshot({path: `${shots}/${lesson.id}-${info.project.name}.jpg`, fullPage:true, quality:65}); }
+    }
     if(lesson.id==='indicator-dilution') await page.screenshot({path:info.outputPath('guided-lesson.png'),fullPage:true});
   });
 }

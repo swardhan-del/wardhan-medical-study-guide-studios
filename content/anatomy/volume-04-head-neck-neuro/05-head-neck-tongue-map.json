@@ -1,0 +1,130 @@
+{
+  "volume": 4,
+  "order": 5,
+  "lesson": {
+    "id": "head-neck-tongue-map",
+    "subject": "anatomy",
+    "title": "Tongue structure, function and nerve map",
+    "summary": "Separate modality from region.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Tongue structure, function and nerve map",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "10. Tongue Structure and Innervation",
+    "steps": [
+      {
+        "title": "Tongue Structure and Innervation",
+        "body": "The tongue is a muscular organ for speech, mastication, taste, and swallowing. The sulcus terminalis divides it into anterior two thirds and posterior one third. Motor supply is hypoglossal nerve except palatoglossus, supplied by vagus."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Anterior two thirds: general sensation by lingual nerve V3; taste by chorda tympani VII. Posterior one third: general sensation and taste by glossopharyngeal nerve IX. Epiglottic/root region: vagus nerve contribution. Extrinsic muscles: genioglossus, hyoglossus, styloglossus, palatoglossus. Intrinsic muscles change tongue shape; extrinsic muscles move tongue as a whole."
+      },
+      {
+        "title": "Why does tongue lymphatic drainage not follow a simple right-versus-left nerve map?",
+        "body": "Tongue lymphatic channels communicate across the midline, particularly in central and posterior regions. The tip commonly reaches submental routes, lateral anterior regions submandibular routes, and deeper or posterior regions deep cervical nodes. These are major patterns with overlap. Sensory nerve territories instead describe modality-specific neural supply, and motor innervation follows muscle targets. One color map cannot accurately represent all three systems. Separate lymph, sensation and motor layers when revising tongue anatomy."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue?",
+      "options": [
+        {
+          "text": "Lingual nerve from V3",
+          "reason": "Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+        },
+        {
+          "text": "Chorda tympani alone",
+          "reason": "The correct relationship is: Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+        },
+        {
+          "text": "Hypoglossal nerve",
+          "reason": "The correct relationship is: Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain tongue structure, function and nerve map using the main anatomical relationships, then justify your answer to: Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue?",
+      "answer": "Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+    },
+    "related": [
+      "oral-cavity-palate-teeth",
+      "salivary-glands"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of tongue structure, function and nerve map.",
+      "Answer with anatomical reasons: Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue?",
+      "Make a tongue map with separate rows for general sensation, taste and motor supply, including the circumvallate exception."
+    ],
+    "prerequisites": [
+      "oral-cavity-palate-teeth"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Separate modality from region.",
+        "Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply.",
+        "A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Make a tongue map with separate rows for general sensation, taste and motor supply, including the circumvallate exception.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Lingual nerve from V3",
+      "Separate modality from region.",
+      "Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it."
+    ]
+  },
+  "practice": [
+    {
+      "id": "head-neck-tongue-map-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does tongue lymphatic drainage not follow a simple right-versus-left nerve map?",
+      "answer": "Tongue lymphatic channels communicate across the midline, particularly in central and posterior regions. The tip commonly reaches submental routes, lateral anterior regions submandibular routes, and deeper or posterior regions deep cervical nodes. These are major patterns with overlap. Sensory nerve territories instead describe modality-specific neural supply, and motor innervation follows muscle targets. One color map cannot accurately represent all three systems. Separate lymph, sensation and motor layers when revising tongue anatomy."
+    },
+    {
+      "id": "head-neck-tongue-map-relations",
+      "kind": "Relationship recall",
+      "prompt": "In tongue structure, function and nerve map, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Anterior two thirds: general sensation by lingual nerve V3; taste by chorda tympani VII. Posterior one third: general sensation and taste by glossopharyngeal nerve IX. Epiglottic/root region: vagus nerve contribution. Extrinsic muscles: genioglossus, hyoglossus, styloglossus, palatoglossus. Intrinsic muscles change tongue shape; extrinsic muscles move tongue as a whole."
+    },
+    {
+      "id": "head-neck-tongue-map-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Chorda tympani alone” to the question “Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue?” Explain what needs correcting.",
+      "answer": "Lingual nerve from V3. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+    },
+    {
+      "id": "head-neck-tongue-map-identification",
+      "kind": "Draw and identify",
+      "prompt": "Make a tongue map with separate rows for general sensation, taste and motor supply, including the circumvallate exception.",
+      "answer": "Check your labels against these relationships: The tongue is a muscular organ for speech, mastication, taste, and swallowing. The sulcus terminalis divides it into anterior two thirds and posterior one third. Motor supply is hypoglossal nerve except palatoglossus, supplied by vagus. Separate modality from region. Lingual nerve supplies general sensation to most anterior tongue, while chorda tympani brings taste fibers that travel with it. Circumvallate papillae are an important exception: IX supplies them despite their position anterior to the terminal sulcus. XII supplies intrinsic and most extrinsic muscles; palatoglossus receives vagal motor supply. A nerve can carry another nerve's fibers for part of a route without changing the original cranial-nerve source."
+    }
+  ],
+  "sourceSections": [
+    "10. Tongue Structure and Innervation"
+  ],
+  "furtherReading": {
+    "title": "Head, neck and back muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

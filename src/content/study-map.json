@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "groups": [
     {
       "id": "physiology-1",
@@ -957,291 +957,6 @@
         {
           "id": "histology-20-03",
           "title": "Defend an identification",
-          "href": null,
-          "status": "planned"
-        }
-      ]
-    },
-    {
-      "id": "anatomy-1",
-      "subject": "anatomy",
-      "title": "Thorax",
-      "sourceLabel": "Anatomy Volume 1",
-      "sourceId": "29",
-      "topics": [
-        {
-          "id": "anatomy-1-01",
-          "title": "Thoracic wall and intercostal spaces",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-1-02",
-          "title": "Pleura and lung root",
-          "href": "/library/thorax-nerve-relations",
-          "status": "introduction-available"
-        },
-        {
-          "id": "anatomy-1-03",
-          "title": "Mediastinal compartments",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-1-04",
-          "title": "Pericardium and heart relations",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-1-05",
-          "title": "Coronary vessels",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-1-06",
-          "title": "Great vessels and azygos routes",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-1-07",
-          "title": "Diaphragm and openings",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-1-08",
-          "title": "Thoracic development",
-          "href": null,
-          "status": "planned"
-        }
-      ]
-    },
-    {
-      "id": "anatomy-2",
-      "subject": "anatomy",
-      "title": "Abdomen",
-      "sourceLabel": "Anatomy Volume 2",
-      "sourceId": "30",
-      "topics": [
-        {
-          "id": "anatomy-2-01",
-          "title": "Abdominal wall and rectus sheath",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-2-02",
-          "title": "Inguinal canal and hernia routes",
-          "href": "/library/inguinal-canal-relations",
-          "status": "introduction-available"
-        },
-        {
-          "id": "anatomy-2-03",
-          "title": "Peritoneal spaces and attachments",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-2-04",
-          "title": "Stomach and duodenum",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-2-05",
-          "title": "Small and large bowel",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-2-06",
-          "title": "Liver and portal triad",
-          "href": "/library/abdomen-portal-relations",
-          "status": "introduction-available"
-        },
-        {
-          "id": "anatomy-2-07",
-          "title": "Pancreas and spleen",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-2-08",
-          "title": "Posterior wall and retroperitoneum",
-          "href": null,
-          "status": "planned"
-        }
-      ]
-    },
-    {
-      "id": "anatomy-3",
-      "subject": "anatomy",
-      "title": "Pelvis and urogenital anatomy",
-      "sourceLabel": "Anatomy Volume 3",
-      "sourceId": "31",
-      "topics": [
-        {
-          "id": "anatomy-3-01",
-          "title": "Pelvic walls and floor",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-3-02",
-          "title": "Ureter bladder and urethra",
-          "href": "/library/pelvis-urinary-route",
-          "status": "introduction-available"
-        },
-        {
-          "id": "anatomy-3-03",
-          "title": "Male pelvic organs",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-3-04",
-          "title": "Female pelvic organs",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-3-05",
-          "title": "Perineal compartments",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-3-06",
-          "title": "Pelvic vessels and autonomic nerves",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-3-07",
-          "title": "Lymphatic drainage",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-3-08",
-          "title": "Urogenital development",
-          "href": null,
-          "status": "planned"
-        }
-      ]
-    },
-    {
-      "id": "anatomy-4",
-      "subject": "anatomy",
-      "title": "Head and neck",
-      "sourceLabel": "Anatomy Volume 4",
-      "sourceId": "32",
-      "topics": [
-        {
-          "id": "anatomy-4-01",
-          "title": "Skull foramina and contents",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-4-02",
-          "title": "Neck triangles and fascia",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-4-03",
-          "title": "Carotid and jugular relations",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-4-04",
-          "title": "Tongue sensation taste and movement",
-          "href": "/library/head-neck-tongue-map",
-          "status": "introduction-available"
-        },
-        {
-          "id": "anatomy-4-05",
-          "title": "Pharynx and larynx",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-4-06",
-          "title": "Orbit and eye movements",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-4-07",
-          "title": "Cranial-nerve routes",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-4-08",
-          "title": "Pharyngeal apparatus development",
-          "href": null,
-          "status": "planned"
-        }
-      ]
-    },
-    {
-      "id": "anatomy-5",
-      "subject": "anatomy",
-      "title": "Musculoskeletal anatomy",
-      "sourceLabel": "Anatomy Volume 5",
-      "sourceId": "33",
-      "topics": [
-        {
-          "id": "anatomy-5-01",
-          "title": "Joint classification and movement",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-5-02",
-          "title": "Shoulder and axilla",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-5-03",
-          "title": "Brachial plexus",
-          "href": "/library/limbs-plexus-and-joints",
-          "status": "introduction-available"
-        },
-        {
-          "id": "anatomy-5-04",
-          "title": "Arm forearm and hand compartments",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-5-05",
-          "title": "Hip and femoral triangle",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-5-06",
-          "title": "Knee and popliteal fossa",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-5-07",
-          "title": "Leg ankle and foot compartments",
-          "href": null,
-          "status": "planned"
-        },
-        {
-          "id": "anatomy-5-08",
-          "title": "Limb development and segmental supply",
           "href": null,
           "status": "planned"
         }
@@ -2245,6 +1960,771 @@
           "id": "map-biophysics-practical-biosignals",
           "title": "Practical: ECG calibration and pulse timing",
           "href": "/library/biophysics-practical-biosignals",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-volume-1",
+      "subject": "anatomy",
+      "title": "Volume I · Thorax",
+      "sourceLabel": "Authored Volume 1: mapped lesson course",
+      "sourceId": "guide-volume-1",
+      "topics": [
+        {
+          "id": "course-thoracic-cage-landmarks",
+          "title": "1. Thoracic cage and landmarks",
+          "href": "/library/thoracic-cage-landmarks",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-intercostal-neurovascular-plane",
+          "title": "2. Intercostal muscles and supply",
+          "href": "/library/intercostal-neurovascular-plane",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-diaphragm-openings",
+          "title": "3. Diaphragm structure and sensation",
+          "href": "/library/diaphragm-openings",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pleura-and-recesses",
+          "title": "4. Pleural layers and recesses",
+          "href": "/library/pleura-and-recesses",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-lung-lobes-surface",
+          "title": "5. Lung surfaces and lobes",
+          "href": "/library/lung-lobes-surface",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-lung-roots-bronchi",
+          "title": "6. Airway and root relationships",
+          "href": "/library/lung-roots-bronchi",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-bronchopulmonary-segments",
+          "title": "7. Segments, blood and lymph",
+          "href": "/library/bronchopulmonary-segments",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-mediastinum-great-vessels",
+          "title": "8. Mediastinal compartments and vessels",
+          "href": "/library/mediastinum-great-vessels",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-thorax-nerve-relations",
+          "title": "9. Phrenic, vagal and recurrent pathways",
+          "href": "/library/thorax-nerve-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-posterior-mediastinum-lymph",
+          "title": "10. Posterior mediastinal routes",
+          "href": "/library/posterior-mediastinum-lymph",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pericardium-sinuses",
+          "title": "11. Pericardial layers and reflections",
+          "href": "/library/pericardium-sinuses",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-heart-chambers-surfaces",
+          "title": "12. Chambers and internal landmarks",
+          "href": "/library/heart-chambers-surfaces",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-heart-valves-skeleton",
+          "title": "13. Valves and fibrous support",
+          "href": "/library/heart-valves-skeleton",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-coronary-circulation",
+          "title": "14. Coronary arteries and venous return",
+          "href": "/library/coronary-circulation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cardiac-conduction-autonomics",
+          "title": "15. Conduction and autonomic modulation",
+          "href": "/library/cardiac-conduction-autonomics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-thoracic-development",
+          "title": "16. Respiratory and diaphragmatic development",
+          "href": "/library/thoracic-development",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-heart-looping-septation",
+          "title": "17. Heart tube and partitioning",
+          "href": "/library/heart-looping-septation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-fetal-circulation-transition",
+          "title": "18. Fetal shunts and adult remnants",
+          "href": "/library/fetal-circulation-transition",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-volume-2",
+      "subject": "anatomy",
+      "title": "Volume II · Abdomen",
+      "sourceLabel": "Authored Volume 2: mapped lesson course",
+      "sourceId": "guide-volume-2",
+      "topics": [
+        {
+          "id": "course-abdominal-surface-map",
+          "title": "1. Abdominal regions and sectional orientation",
+          "href": "/library/abdominal-surface-map",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-abdominal-wall-layers",
+          "title": "2. Abdominal wall layers and rectus sheath",
+          "href": "/library/abdominal-wall-layers",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-posterior-abdominal-wall",
+          "title": "3. Posterior abdominal wall and lumbar relations",
+          "href": "/library/posterior-abdominal-wall",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-inguinal-canal-relations",
+          "title": "4. Inguinal canal and hernia relationships",
+          "href": "/library/inguinal-canal-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-peritoneal-organization",
+          "title": "5. Peritoneum and organ position",
+          "href": "/library/peritoneal-organization",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-omenta-and-lesser-sac",
+          "title": "6. Omenta, lesser sac and epiploic foramen",
+          "href": "/library/omenta-and-lesser-sac",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-peritoneal-fluid-routes",
+          "title": "7. Peritoneal recesses and fluid routes",
+          "href": "/library/peritoneal-fluid-routes",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-stomach-relations",
+          "title": "8. Stomach position, relations and neurovascular supply",
+          "href": "/library/stomach-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-duodenum-relations",
+          "title": "9. Duodenum and retroperitoneal relationships",
+          "href": "/library/duodenum-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-liver-segments-and-porta",
+          "title": "10. Liver surfaces, porta hepatis and functional divisions",
+          "href": "/library/liver-segments-and-porta",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-biliary-pathways",
+          "title": "11. Gallbladder and extrahepatic biliary pathways",
+          "href": "/library/biliary-pathways",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pancreas-relations",
+          "title": "12. Pancreas and its duct relationships",
+          "href": "/library/pancreas-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-spleen-relations",
+          "title": "13. Spleen, hilum and splenic ligaments",
+          "href": "/library/spleen-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-small-intestine-mesentery",
+          "title": "14. Jejunum, ileum and the mesenteric root",
+          "href": "/library/small-intestine-mesentery",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cecum-appendix-colon",
+          "title": "15. Cecum, appendix and colon",
+          "href": "/library/cecum-appendix-colon",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-rectum-anal-transition",
+          "title": "16. Rectum and the anal transition",
+          "href": "/library/rectum-anal-transition",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-abdominal-arterial-territories",
+          "title": "17. Celiac, superior mesenteric and inferior mesenteric territories",
+          "href": "/library/abdominal-arterial-territories",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-abdomen-portal-relations",
+          "title": "18. Portal venous routes and systemic connections",
+          "href": "/library/abdomen-portal-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-abdominal-lymph-autonomics",
+          "title": "19. Abdominal lymphatics and autonomic pathways",
+          "href": "/library/abdominal-lymph-autonomics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-foregut-development",
+          "title": "20. Foregut rotation and organ development",
+          "href": "/library/foregut-development",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-midgut-rotation",
+          "title": "21. Midgut herniation, rotation and fixation",
+          "href": "/library/midgut-rotation",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-abdominal-regional-reasoning",
+          "title": "22. Reconstruct an upper abdominal section",
+          "href": "/library/abdominal-regional-reasoning",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-volume-3",
+      "subject": "anatomy",
+      "title": "Volume III · Pelvis and urogenital anatomy",
+      "sourceLabel": "Authored Volume 3: mapped lesson course",
+      "sourceId": "guide-volume-3",
+      "topics": [
+        {
+          "id": "course-pelvic-boundaries",
+          "title": "1. Pelvic inlet, outlet and walls",
+          "href": "/library/pelvic-boundaries",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pelvic-floor-support",
+          "title": "2. Pelvic diaphragm and visceral support",
+          "href": "/library/pelvic-floor-support",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pelvic-foramina-nerves",
+          "title": "3. Sciatic foramina and pelvic nerve routes",
+          "href": "/library/pelvic-foramina-nerves",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pelvic-vessels-lymph",
+          "title": "4. Pelvic vessels and lymphatic drainage",
+          "href": "/library/pelvic-vessels-lymph",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-kidney-organization",
+          "title": "5. Kidney coverings, hilum and collecting system",
+          "href": "/library/kidney-organization",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pelvis-urinary-route",
+          "title": "6. Ureters and the route into the bladder",
+          "href": "/library/pelvis-urinary-route",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-bladder-urethrae",
+          "title": "7. Bladder, trigone and urethral differences",
+          "href": "/library/bladder-urethrae",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-testis-spermatic-cord",
+          "title": "8. Testis, scrotum and spermatic cord",
+          "href": "/library/testis-spermatic-cord",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-male-reproductive-ducts",
+          "title": "9. Sperm pathway, seminal vesicles and prostate",
+          "href": "/library/male-reproductive-ducts",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-erectile-anatomy",
+          "title": "10. Erectile tissues and external genital anatomy",
+          "href": "/library/erectile-anatomy",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-ovary-uterine-tube",
+          "title": "11. Ovary and uterine tube relationships",
+          "href": "/library/ovary-uterine-tube",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-uterus-support-vessels",
+          "title": "12. Uterus, supports and uterine vessel relations",
+          "href": "/library/uterus-support-vessels",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-vagina-pelvic-relations",
+          "title": "13. Vagina and its pelvic relations",
+          "href": "/library/vagina-pelvic-relations",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-perineal-spaces",
+          "title": "14. Perineal triangles, pouches and perineal body",
+          "href": "/library/perineal-spaces",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-ischioanal-pudendal",
+          "title": "15. Ischioanal fossa, pudendal canal and anal region",
+          "href": "/library/ischioanal-pudendal",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-urinary-development",
+          "title": "16. Development of kidneys, bladder and urethra",
+          "href": "/library/urinary-development",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-gonadal-duct-development",
+          "title": "17. Gonadal differentiation and genital ducts",
+          "href": "/library/gonadal-duct-development",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-gonadal-descent",
+          "title": "18. External genital development and gonadal descent",
+          "href": "/library/gonadal-descent",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-volume-4",
+      "subject": "anatomy",
+      "title": "Volume IV · Head, neck and neuroanatomy",
+      "sourceLabel": "Authored Volume 4: mapped lesson course",
+      "sourceId": "guide-volume-4",
+      "topics": [
+        {
+          "id": "course-neck-triangles",
+          "title": "1. Neck triangles and surface orientation",
+          "href": "/library/neck-triangles",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cervical-fascia-sympathetic",
+          "title": "2. Cervical fascia, carotid sheath and sympathetic trunk",
+          "href": "/library/cervical-fascia-sympathetic",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-head-neck-vessels-lymph",
+          "title": "3. Head and neck arteries, veins and lymphatics",
+          "href": "/library/head-neck-vessels-lymph",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-oral-cavity-palate-teeth",
+          "title": "4. Oral cavity, palate and teeth",
+          "href": "/library/oral-cavity-palate-teeth",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-head-neck-tongue-map",
+          "title": "5. Tongue structure, function and nerve map",
+          "href": "/library/head-neck-tongue-map",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-salivary-glands",
+          "title": "6. Salivary glands and their nerve routes",
+          "href": "/library/salivary-glands",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-tmj-deep-fossae",
+          "title": "7. Mastication, TMJ and deep facial spaces",
+          "href": "/library/tmj-deep-fossae",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-nose-sinuses",
+          "title": "8. Nasal cavity and paranasal drainage",
+          "href": "/library/nose-sinuses",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pharynx-swallowing",
+          "title": "9. Pharynx, tonsils and swallowing",
+          "href": "/library/pharynx-swallowing",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-larynx-voice-airway",
+          "title": "10. Laryngeal skeleton, muscles and innervation",
+          "href": "/library/larynx-voice-airway",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-skull-scalp-face",
+          "title": "11. Skull foramina, scalp and facial layers",
+          "href": "/library/skull-scalp-face",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-orbit-anatomy",
+          "title": "12. Orbit, eyeball and visual pathway",
+          "href": "/library/orbit-anatomy",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-ear-anatomy",
+          "title": "13. External, middle and inner ear",
+          "href": "/library/ear-anatomy",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cranial-nerve-organization",
+          "title": "14. Cranial nerve nuclei and functional columns",
+          "href": "/library/cranial-nerve-organization",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-ocular-motor-nerves",
+          "title": "15. Ocular motor nerves and lesion localization",
+          "href": "/library/ocular-motor-nerves",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-trigeminal-pathways",
+          "title": "16. Trigeminal divisions and sensory territories",
+          "href": "/library/trigeminal-pathways",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-facial-nerve-course",
+          "title": "17. Facial nerve course and branch functions",
+          "href": "/library/facial-nerve-course",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-lower-cranial-nerves",
+          "title": "18. Glossopharyngeal, vagus, accessory and hypoglossal nerves",
+          "href": "/library/lower-cranial-nerves",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cranial-parasympathetics",
+          "title": "19. Cranial parasympathetic ganglia",
+          "href": "/library/cranial-parasympathetics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-meninges-dural-folds",
+          "title": "20. Meninges, dural folds and intracranial spaces",
+          "href": "/library/meninges-dural-folds",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-venous-sinuses",
+          "title": "21. Dural venous sinuses and cavernous sinus relations",
+          "href": "/library/venous-sinuses",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cerebral-blood-supply",
+          "title": "22. Cerebral arteries, territories and collateral routes",
+          "href": "/library/cerebral-blood-supply",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-ventricles-csf",
+          "title": "23. Ventricles, CSF flow and internal landmarks",
+          "href": "/library/ventricles-csf",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-basal-ganglia-diencephalon",
+          "title": "24. Basal ganglia, internal capsule and diencephalon",
+          "href": "/library/basal-ganglia-diencephalon",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-brainstem-localization",
+          "title": "25. Brainstem landmarks and crossed findings",
+          "href": "/library/brainstem-localization",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cerebellum-connections",
+          "title": "26. Cerebellum, peduncles and fourth ventricle",
+          "href": "/library/cerebellum-connections",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-spinal-cord-tracts",
+          "title": "27. Spinal cord, meninges and long pathways",
+          "href": "/library/spinal-cord-tracts",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pharyngeal-arch-development",
+          "title": "28. Pharyngeal arches, pouches and arch arteries",
+          "href": "/library/pharyngeal-arch-development",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-face-palate-sense-development",
+          "title": "29. Development of face, palate and special senses",
+          "href": "/library/face-palate-sense-development",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-neural-tube-development",
+          "title": "30. Brain vesicles, neural tube and spinal development",
+          "href": "/library/neural-tube-development",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "anatomy-volume-5",
+      "subject": "anatomy",
+      "title": "Volume V · Musculoskeletal anatomy",
+      "sourceLabel": "Authored Volume 5: mapped lesson course",
+      "sourceId": "guide-volume-5",
+      "topics": [
+        {
+          "id": "course-bones-and-connections",
+          "title": "1. Bone structure and connections between bones",
+          "href": "/library/bones-and-connections",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-synovial-joint-design",
+          "title": "2. Synovial joint design and movement",
+          "href": "/library/synovial-joint-design",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-muscle-actions",
+          "title": "3. Muscle architecture, actions and innervation",
+          "href": "/library/muscle-actions",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-vertebral-regions",
+          "title": "4. Vertebral column and regional vertebrae",
+          "href": "/library/vertebral-regions",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-craniovertebral-joints",
+          "title": "5. Atlas, axis and craniovertebral movement",
+          "href": "/library/craniovertebral-joints",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-spinal-discs-ligaments",
+          "title": "6. Intervertebral discs and spinal ligaments",
+          "href": "/library/spinal-discs-ligaments",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-back-muscle-layers",
+          "title": "7. Back muscle layers and segmental innervation",
+          "href": "/library/back-muscle-layers",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-shoulder-girdle-joints",
+          "title": "8. Clavicle, scapula and shoulder girdle joints",
+          "href": "/library/shoulder-girdle-joints",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-rotator-cuff-shoulder",
+          "title": "9. Glenohumeral joint and rotator cuff",
+          "href": "/library/rotator-cuff-shoulder",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-axilla-scapular-spaces",
+          "title": "10. Axilla, axillary artery and scapular spaces",
+          "href": "/library/axilla-scapular-spaces",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-limbs-plexus-and-joints",
+          "title": "11. Brachial plexus from roots to terminal nerves",
+          "href": "/library/limbs-plexus-and-joints",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-arm-elbow",
+          "title": "12. Arm compartments and elbow relationships",
+          "href": "/library/arm-elbow",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-cubital-forearm",
+          "title": "13. Cubital fossa and forearm compartments",
+          "href": "/library/cubital-forearm",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-wrist-carpal-tunnel",
+          "title": "14. Wrist, carpal tunnel and anatomical snuffbox",
+          "href": "/library/wrist-carpal-tunnel",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-hand-intrinsics",
+          "title": "15. Intrinsic hand muscles and functional nerve tests",
+          "href": "/library/hand-intrinsics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-upper-limb-vessels",
+          "title": "16. Upper limb vessels and lymphatic routes",
+          "href": "/library/upper-limb-vessels",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-pelvic-girdle-landmarks",
+          "title": "17. Pelvic girdle and hip bone landmarks",
+          "href": "/library/pelvic-girdle-landmarks",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-hip-joint-stability",
+          "title": "18. Hip joint stability and femoral head supply",
+          "href": "/library/hip-joint-stability",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-gluteal-region",
+          "title": "19. Gluteal region and the piriformis landmark",
+          "href": "/library/gluteal-region",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-thigh-compartments",
+          "title": "20. Thigh compartments and muscle actions",
+          "href": "/library/thigh-compartments",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-femoral-triangle-canal",
+          "title": "21. Femoral triangle, sheath and adductor canal",
+          "href": "/library/femoral-triangle-canal",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-knee-joint-mechanics",
+          "title": "22. Knee ligaments, menisci and movement",
+          "href": "/library/knee-joint-mechanics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-popliteal-fossa",
+          "title": "23. Popliteal fossa and neurovascular depth",
+          "href": "/library/popliteal-fossa",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-leg-compartments",
+          "title": "24. Leg compartments and ankle actions",
+          "href": "/library/leg-compartments",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-ankle-foot-arches",
+          "title": "25. Ankle, tarsal tunnel and foot arches",
+          "href": "/library/ankle-foot-arches",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-plantar-foot",
+          "title": "26. Plantar muscles and nerve territories",
+          "href": "/library/plantar-foot",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-lower-limb-vessels",
+          "title": "27. Lower limb arteries, veins and lymphatics",
+          "href": "/library/lower-limb-vessels",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-lumbar-sacral-plexuses",
+          "title": "28. Lumbar and sacral plexuses across the limb",
+          "href": "/library/lumbar-sacral-plexuses",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-neck-musculoskeletal",
+          "title": "29. Neck muscles and hyoid relationships",
+          "href": "/library/neck-musculoskeletal",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-regional-lymphatics",
+          "title": "30. Regional lymph drainage and crossing territories",
+          "href": "/library/regional-lymphatics",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-limb-development",
+          "title": "31. Early patterning and limb development",
+          "href": "/library/limb-development",
+          "status": "introduction-available"
+        },
+        {
+          "id": "course-axial-skeleton-development",
+          "title": "32. Vertebral and skull development",
+          "href": "/library/axial-skeleton-development",
           "status": "introduction-available"
         }
       ]

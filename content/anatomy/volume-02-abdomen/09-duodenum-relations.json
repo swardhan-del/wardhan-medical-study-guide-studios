@@ -1,0 +1,130 @@
+{
+  "volume": 2,
+  "order": 9,
+  "lesson": {
+    "id": "duodenum-relations",
+    "subject": "anatomy",
+    "title": "Duodenum and retroperitoneal relationships",
+    "summary": "The descending part receives the main biliary and pancreatic drainage.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Duodenum and retroperitoneal relationships",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "16. Duodenum",
+    "steps": [
+      {
+        "title": "Duodenum",
+        "body": "The duodenum is the first part of the small intestine and forms a C-shaped curve around the head of the pancreas. It has superior, descending, horizontal, and ascending parts. Most of it is secondarily retroperitoneal except the proximal first part."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "First part is partly intraperitoneal and is related posteriorly to bile duct, portal vein, and IVC. Second part receives bile duct and main pancreatic duct at the major duodenal papilla; accessory pancreatic duct may open at the minor papilla. Third part crosses anterior to IVC and aorta and posterior to superior mesenteric vessels. Fourth part ascends to the duodenojejunal flexure, supported by the suspensory muscle/ligament of duodenum."
+      },
+      {
+        "title": "Why does the duodenum receive both celiac and superior mesenteric arterial contributions?",
+        "body": "The foregut-midgut boundary lies in the duodenal region near the biliary entry, so proximal and distal territories receive different primary arterial sources. Superior pancreaticoduodenal branches arise through the gastroduodenal route, while inferior pancreaticoduodenal branches come from the superior mesenteric artery. Their arcades connect the territories around the pancreatic head. This is an arterial anastomosis, not a portal-systemic venous channel. Developmental territory and adult collateral connections should both appear in a complete account of its supply."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+      }
+    ],
+    "question": {
+      "prompt": "The third part of the duodenum passes behind which vessels?",
+      "options": [
+        {
+          "text": "Superior mesenteric artery and vein",
+          "reason": "The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+        },
+        {
+          "text": "Portal vein and hepatic artery proper",
+          "reason": "The correct relationship is: Superior mesenteric artery and vein. The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+        },
+        {
+          "text": "Right and left gastric arteries",
+          "reason": "The correct relationship is: Superior mesenteric artery and vein. The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain duodenum and retroperitoneal relationships using the main anatomical relationships, then justify your answer to: The third part of the duodenum passes behind which vessels?",
+      "answer": "The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+    },
+    "related": [
+      "stomach-relations",
+      "liver-segments-and-porta"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of duodenum and retroperitoneal relationships.",
+      "Answer with anatomical reasons: The third part of the duodenum passes behind which vessels?",
+      "Draw the four duodenal parts around the pancreatic head and show the mesenteric vessels crossing the third part."
+    ],
+    "prerequisites": [
+      "stomach-relations"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "The third part of the duodenum passes behind which vessels? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The descending part receives the main biliary and pancreatic drainage.",
+        "The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure.",
+        "Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the four duodenal parts around the pancreatic head and show the mesenteric vessels crossing the third part.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Superior mesenteric artery and vein",
+      "The descending part receives the main biliary and pancreatic drainage.",
+      "The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels."
+    ]
+  },
+  "practice": [
+    {
+      "id": "duodenum-relations-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does the duodenum receive both celiac and superior mesenteric arterial contributions?",
+      "answer": "The foregut-midgut boundary lies in the duodenal region near the biliary entry, so proximal and distal territories receive different primary arterial sources. Superior pancreaticoduodenal branches arise through the gastroduodenal route, while inferior pancreaticoduodenal branches come from the superior mesenteric artery. Their arcades connect the territories around the pancreatic head. This is an arterial anastomosis, not a portal-systemic venous channel. Developmental territory and adult collateral connections should both appear in a complete account of its supply."
+    },
+    {
+      "id": "duodenum-relations-relations",
+      "kind": "Relationship recall",
+      "prompt": "In duodenum and retroperitoneal relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "First part is partly intraperitoneal and is related posteriorly to bile duct, portal vein, and IVC. Second part receives bile duct and main pancreatic duct at the major duodenal papilla; accessory pancreatic duct may open at the minor papilla. Third part crosses anterior to IVC and aorta and posterior to superior mesenteric vessels. Fourth part ascends to the duodenojejunal flexure, supported by the suspensory muscle/ligament of duodenum."
+    },
+    {
+      "id": "duodenum-relations-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Portal vein and hepatic artery proper” to the question “The third part of the duodenum passes behind which vessels?” Explain what needs correcting.",
+      "answer": "Superior mesenteric artery and vein. The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+    },
+    {
+      "id": "duodenum-relations-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the four duodenal parts around the pancreatic head and show the mesenteric vessels crossing the third part.",
+      "answer": "Check your labels against these relationships: The duodenum is the first part of the small intestine and forms a C-shaped curve around the head of the pancreas. It has superior, descending, horizontal, and ascending parts. Most of it is secondarily retroperitoneal except the proximal first part. The descending part receives the main biliary and pancreatic drainage. The horizontal third part crosses the midline anterior to the aorta and inferior vena cava but posterior to the superior mesenteric vessels. This creates an anatomical compression corridor between the aorta and superior mesenteric artery. The fourth part ascends toward the duodenojejunal flexure. Identifying the part is essential: a relation of one segment should not be transferred to the entire C-loop."
+    }
+  ],
+  "sourceSections": [
+    "16. Duodenum"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

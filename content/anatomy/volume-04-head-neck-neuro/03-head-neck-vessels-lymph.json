@@ -1,0 +1,131 @@
+{
+  "volume": 4,
+  "order": 3,
+  "lesson": {
+    "id": "head-neck-vessels-lymph",
+    "subject": "anatomy",
+    "title": "Head and neck arteries, veins and lymphatics",
+    "summary": "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Head and neck arteries, veins and lymphatics",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "5. Head and Neck Arterial Supply; 6. Venous Drainage and Lymphatics of Head and Neck",
+    "steps": [
+      {
+        "title": "Head and Neck Arterial Supply",
+        "body": "The common carotid artery divides near the upper border of the thyroid cartilage into internal and external carotid arteries. The internal carotid supplies the brain and orbit; the external carotid supplies most superficial and deep structures of the face, scalp, oral cavity, pharynx, larynx, and neck.\n\nRight common carotid comes from brachiocephalic trunk; left common carotid comes from aortic arch. External carotid branches can be remembered as: superior thyroid, ascending pharyngeal, lingual, facial, occipital, posterior auricular, maxillary, superficial temporal. Carotid sinus is a baroreceptor; carotid body is a chemoreceptor. Vertebral artery arises from subclavian artery, passes through transverse foramina, and enters skull through foramen magnum. Maxillary artery contributes to deep face, nasal cavity, teeth, palate, and dura through middle meningeal artery."
+      },
+      {
+        "title": "Venous Drainage and Lymphatics of Head and Neck",
+        "body": "Venous drainage of the head and neck converges mainly toward the internal jugular vein, external jugular vein, facial vein, pterygoid venous plexus, and dural venous sinuses. Lymph drains through superficial nodes into deep cervical nodes along the internal jugular vein.\n\nInternal jugular vein begins as continuation of sigmoid sinus at jugular foramen. Facial vein communicates with cavernous sinus through ophthalmic venous connections and pterygoid plexus pathways. Pterygoid venous plexus communicates with facial vein and cavernous sinus. Superficial nodes include occipital, mastoid, parotid, submandibular, and submental nodes. Deep cervical nodes receive lymph from most head and neck regions and drain toward jugular lymphatic trunks."
+      },
+      {
+        "title": "Why distinguish carotid sinus from carotid body when describing afferents?",
+        "body": "The sinus is a dilation associated with stretch-sensitive baroreceptors, whereas the body is a small chemoreceptor organ near the bifurcation. Their signals concern different physiological variables even though both have important glossopharyngeal afferent connections. The internal jugular vein and vagus lie nearby in the carotid sheath, but proximity does not make vagus the only sensory pathway at the bifurcation. Describe receptor type, location and afferent route separately to avoid confusing vascular anatomy with reflex function."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+      }
+    ],
+    "question": {
+      "prompt": "Which carotid branch has no usual branches in the neck?",
+      "options": [
+        {
+          "text": "Internal carotid artery",
+          "reason": "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+        },
+        {
+          "text": "External carotid artery",
+          "reason": "The correct relationship is: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+        },
+        {
+          "text": "Common carotid bifurcation itself",
+          "reason": "The correct relationship is: Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain head and neck arteries, veins and lymphatics using the main anatomical relationships, then justify your answer to: Which carotid branch has no usual branches in the neck?",
+      "answer": "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+    },
+    "related": [
+      "cervical-fascia-sympathetic",
+      "oral-cavity-palate-teeth"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of head and neck arteries, veins and lymphatics.",
+      "Answer with anatomical reasons: Which carotid branch has no usual branches in the neck?",
+      "Draw common carotid bifurcation, several external carotid branches and the unbranched cervical internal carotid; add the deep cervical node chain separately."
+    ],
+    "prerequisites": [
+      "cervical-fascia-sympathetic"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which carotid branch has no usual branches in the neck? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.",
+        "The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain.",
+        "An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw common carotid bifurcation, several external carotid branches and the unbranched cervical internal carotid; add the deep cervical node chain separately.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Internal carotid artery",
+      "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.",
+      "The external carotid distributes branches to face, scalp and deep head structures."
+    ]
+  },
+  "practice": [
+    {
+      "id": "head-neck-vessels-lymph-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why distinguish carotid sinus from carotid body when describing afferents?",
+      "answer": "The sinus is a dilation associated with stretch-sensitive baroreceptors, whereas the body is a small chemoreceptor organ near the bifurcation. Their signals concern different physiological variables even though both have important glossopharyngeal afferent connections. The internal jugular vein and vagus lie nearby in the carotid sheath, but proximity does not make vagus the only sensory pathway at the bifurcation. Describe receptor type, location and afferent route separately to avoid confusing vascular anatomy with reflex function."
+    },
+    {
+      "id": "head-neck-vessels-lymph-relations",
+      "kind": "Relationship recall",
+      "prompt": "In head and neck arteries, veins and lymphatics, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Venous drainage of the head and neck converges mainly toward the internal jugular vein, external jugular vein, facial vein, pterygoid venous plexus, and dural venous sinuses. Lymph drains through superficial nodes into deep cervical nodes along the internal jugular vein.\n\nInternal jugular vein begins as continuation of sigmoid sinus at jugular foramen. Facial vein communicates with cavernous sinus through ophthalmic venous connections and pterygoid plexus pathways. Pterygoid venous plexus communicates with facial vein and cavernous sinus. Superficial nodes include occipital, mastoid, parotid, submandibular, and submental nodes. Deep cervical nodes receive lymph from most head and neck regions and drain toward jugular lymphatic trunks."
+    },
+    {
+      "id": "head-neck-vessels-lymph-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “External carotid artery” to the question “Which carotid branch has no usual branches in the neck?” Explain what needs correcting.",
+      "answer": "Internal carotid artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+    },
+    {
+      "id": "head-neck-vessels-lymph-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw common carotid bifurcation, several external carotid branches and the unbranched cervical internal carotid; add the deep cervical node chain separately.",
+      "answer": "Check your labels against these relationships: The common carotid artery divides near the upper border of the thyroid cartilage into internal and external carotid arteries. The internal carotid supplies the brain and orbit; the external carotid supplies most superficial and deep structures of the face, scalp, oral cavity, pharynx, larynx, and neck.\n\nRight common carotid comes from brachiocephalic trunk; left common carotid comes from aortic arch. External carotid branches can be remembered as: superior thyroid, ascending pharyngeal, lingual, facial, occipital, posterior auricular, maxillary, superficial temporal. Carotid sinus is a baroreceptor; carotid body is a chemoreceptor. Vertebral artery arises from subclavian artery, passes through transverse foramina, and enters skull through foramen magnum. Maxillary artery contributes to deep face, nasal cavity, teeth, palate, and dura through middle meningeal artery. The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches. The external carotid distributes branches to face, scalp and deep head structures. The carotid sinus senses stretch; the carotid body senses blood chemistry. Venous communications connect superficial facial and deep intracranial pathways, while lymph reaches regional nodes and the deep cervical chain. An arterial territory is therefore not a reliable substitute for a venous or lymphatic map."
+    }
+  ],
+  "sourceSections": [
+    "5. Head and Neck Arterial Supply",
+    "6. Venous Drainage and Lymphatics of Head and Neck"
+  ],
+  "furtherReading": {
+    "title": "Circulatory pathways",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

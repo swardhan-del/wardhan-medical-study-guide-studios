@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 13,
+  "lesson": {
+    "id": "cubital-forearm",
+    "subject": "anatomy",
+    "title": "Cubital fossa and forearm compartments",
+    "summary": "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Cubital fossa and forearm compartments",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "22. Cubital Fossa and Forearm Compartments",
+    "steps": [
+      {
+        "title": "Cubital Fossa and Forearm Compartments",
+        "body": "The cubital fossa is the anterior elbow triangle. Its deep contents are biceps tendon, brachial artery, median nerve, and radial nerve laterally; the median cubital vein is superficial."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Borders: superior interepicondylar line, medial pronator teres, lateral brachioradialis. Floor: brachialis and supinator. Roof: cubital fascia and bicipital aponeurosis. Anterior forearm is mainly flexor-pronator and mostly median nerve. FCU and medial half of FDP are ulnar nerve. Posterior forearm is extensor-supinator and radial/deep radial/posterior interosseous nerve."
+      },
+      {
+        "title": "Why is pronation-supination not simply rotation of the hand at the wrist?",
+        "body": "The radius rotates relative to ulna at proximal and distal radioulnar joints, carrying the hand with it. In pronation the radius crosses the ulna; in supination they are approximately parallel. The wrist articulations then position the hand on this rotating framework. Supinator and biceps contribute to supination, while pronator teres and quadratus contribute to pronation. A drawing that puts all rotation at the radiocarpal joint would miss the long-bone mechanics and the two radioulnar articulations."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve supplies flexor carpi ulnaris?",
+      "options": [
+        {
+          "text": "Ulnar nerve",
+          "reason": "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+        },
+        {
+          "text": "Median nerve",
+          "reason": "The correct relationship is: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+        },
+        {
+          "text": "Axillary nerve",
+          "reason": "The correct relationship is: Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain cubital fossa and forearm compartments using the main anatomical relationships, then justify your answer to: Which nerve supplies flexor carpi ulnaris?",
+      "answer": "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+    },
+    "related": [
+      "arm-elbow",
+      "wrist-carpal-tunnel"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of cubital fossa and forearm compartments.",
+      "Answer with anatomical reasons: Which nerve supplies flexor carpi ulnaris?",
+      "Draw the cubital fossa from superficial to deep, then list the two major ulnar-supplied anterior forearm exceptions."
+    ],
+    "prerequisites": [
+      "arm-elbow"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve supplies flexor carpi ulnaris? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.",
+        "The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins.",
+        "Surface and deep structures must be placed in separate layers."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the cubital fossa from superficial to deep, then list the two major ulnar-supplied anterior forearm exceptions.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Ulnar nerve",
+      "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.",
+      "The posterior compartment uses radial-derived branches."
+    ]
+  },
+  "practice": [
+    {
+      "id": "cubital-forearm-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is pronation-supination not simply rotation of the hand at the wrist?",
+      "answer": "The radius rotates relative to ulna at proximal and distal radioulnar joints, carrying the hand with it. In pronation the radius crosses the ulna; in supination they are approximately parallel. The wrist articulations then position the hand on this rotating framework. Supinator and biceps contribute to supination, while pronator teres and quadratus contribute to pronation. A drawing that puts all rotation at the radiocarpal joint would miss the long-bone mechanics and the two radioulnar articulations."
+    },
+    {
+      "id": "cubital-forearm-relations",
+      "kind": "Relationship recall",
+      "prompt": "In cubital fossa and forearm compartments, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Borders: superior interepicondylar line, medial pronator teres, lateral brachioradialis. Floor: brachialis and supinator. Roof: cubital fascia and bicipital aponeurosis. Anterior forearm is mainly flexor-pronator and mostly median nerve. FCU and medial half of FDP are ulnar nerve. Posterior forearm is extensor-supinator and radial/deep radial/posterior interosseous nerve."
+    },
+    {
+      "id": "cubital-forearm-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Median nerve” to the question “Which nerve supplies flexor carpi ulnaris?” Explain what needs correcting.",
+      "answer": "Ulnar nerve. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+    },
+    {
+      "id": "cubital-forearm-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the cubital fossa from superficial to deep, then list the two major ulnar-supplied anterior forearm exceptions.",
+      "answer": "Check your labels against these relationships: The cubital fossa is the anterior elbow triangle. Its deep contents are biceps tendon, brachial artery, median nerve, and radial nerve laterally; the median cubital vein is superficial. Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions. The posterior compartment uses radial-derived branches. In the cubital fossa, biceps tendon, brachial artery and median nerve lie in a lateral-to-medial sequence, with the radial nerve farther laterally. The bicipital aponeurosis separates deeper neurovascular structures from superficial veins. Surface and deep structures must be placed in separate layers."
+    }
+  ],
+  "sourceSections": [
+    "22. Cubital Fossa and Forearm Compartments"
+  ],
+  "furtherReading": {
+    "title": "Pectoral girdle and upper limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

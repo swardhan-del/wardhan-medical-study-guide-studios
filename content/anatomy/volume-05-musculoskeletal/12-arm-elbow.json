@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 12,
+  "lesson": {
+    "id": "arm-elbow",
+    "subject": "anatomy",
+    "title": "Arm compartments and elbow relationships",
+    "summary": "Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Arm compartments and elbow relationships",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "21. Arm Compartments and Elbow",
+    "steps": [
+      {
+        "title": "Arm Compartments and Elbow",
+        "body": "The arm has anterior flexor and posterior extensor compartments. The elbow is a compound joint involving humeroulnar, humeroradial, and proximal radioulnar articulations."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Anterior arm muscles: biceps brachii, brachialis, coracobrachialis; mainly musculocutaneous nerve. Posterior arm muscles: triceps brachii and anconeus; radial nerve. Musculocutaneous nerve pierces coracobrachialis. Radial nerve runs with profunda brachii artery in radial groove. Ulnar nerve passes behind medial epicondyle. Median nerve runs with brachial artery and crosses it."
+      },
+      {
+        "title": "Why does forearm position affect the mechanical role of biceps?",
+        "body": "Biceps inserts on the radial tuberosity and can supinate the forearm as well as flex the elbow. Its contribution depends on elbow angle, load and whether the forearm starts pronated or supinated. Brachialis attaches to ulna and provides a more position-independent elbow-flexion contribution. Triceps acts through olecranon for extension. A muscle's distal bone attachment therefore helps explain why two elbow flexors do not have identical roles. Follow the tendon to radius or ulna rather than using the compartment label alone."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve runs with profunda brachii in the radial groove?",
+      "options": [
+        {
+          "text": "Radial nerve",
+          "reason": "Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+        },
+        {
+          "text": "Ulnar nerve",
+          "reason": "The correct relationship is: Radial nerve. Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+        },
+        {
+          "text": "Musculocutaneous nerve",
+          "reason": "The correct relationship is: Radial nerve. Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain arm compartments and elbow relationships using the main anatomical relationships, then justify your answer to: Which nerve runs with profunda brachii in the radial groove?",
+      "answer": "Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+    },
+    "related": [
+      "limbs-plexus-and-joints",
+      "cubital-forearm"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of arm compartments and elbow relationships.",
+      "Answer with anatomical reasons: Which nerve runs with profunda brachii in the radial groove?",
+      "Draw a humerus with radial groove posteriorly and medial epicondyle distally; map radial and ulnar nerve courses separately."
+    ],
+    "prerequisites": [
+      "limbs-plexus-and-joints"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve runs with profunda brachii in the radial groove? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply.",
+        "The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally.",
+        "Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a humerus with radial groove posteriorly and medial epicondyle distally; map radial and ulnar nerve courses separately.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Radial nerve",
+      "Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply.",
+      "The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery."
+    ]
+  },
+  "practice": [
+    {
+      "id": "arm-elbow-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does forearm position affect the mechanical role of biceps?",
+      "answer": "Biceps inserts on the radial tuberosity and can supinate the forearm as well as flex the elbow. Its contribution depends on elbow angle, load and whether the forearm starts pronated or supinated. Brachialis attaches to ulna and provides a more position-independent elbow-flexion contribution. Triceps acts through olecranon for extension. A muscle's distal bone attachment therefore helps explain why two elbow flexors do not have identical roles. Follow the tendon to radius or ulna rather than using the compartment label alone."
+    },
+    {
+      "id": "arm-elbow-relations",
+      "kind": "Relationship recall",
+      "prompt": "In arm compartments and elbow relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Anterior arm muscles: biceps brachii, brachialis, coracobrachialis; mainly musculocutaneous nerve. Posterior arm muscles: triceps brachii and anconeus; radial nerve. Musculocutaneous nerve pierces coracobrachialis. Radial nerve runs with profunda brachii artery in radial groove. Ulnar nerve passes behind medial epicondyle. Median nerve runs with brachial artery and crosses it."
+    },
+    {
+      "id": "arm-elbow-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Ulnar nerve” to the question “Which nerve runs with profunda brachii in the radial groove?” Explain what needs correcting.",
+      "answer": "Radial nerve. Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+    },
+    {
+      "id": "arm-elbow-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a humerus with radial groove posteriorly and medial epicondyle distally; map radial and ulnar nerve courses separately.",
+      "answer": "Check your labels against these relationships: The arm has anterior flexor and posterior extensor compartments. The elbow is a compound joint involving humeroulnar, humeroradial, and proximal radioulnar articulations. Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply. The ulnar nerve passes behind the medial epicondyle, whereas the median nerve remains anterior near the brachial artery. A midshaft humeral injury threatens structures in the radial groove, not every nerve around the elbow equally. Brachialis can receive a small radial contribution, reminding you that compartment rules have exceptions while remaining useful organizing principles."
+    }
+  ],
+  "sourceSections": [
+    "21. Arm Compartments and Elbow"
+  ],
+  "furtherReading": {
+    "title": "Pectoral girdle and upper limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

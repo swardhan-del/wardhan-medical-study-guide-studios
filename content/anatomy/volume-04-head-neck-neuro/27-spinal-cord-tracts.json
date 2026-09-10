@@ -1,0 +1,130 @@
+{
+  "volume": 4,
+  "order": 27,
+  "lesson": {
+    "id": "spinal-cord-tracts",
+    "subject": "anatomy",
+    "title": "Spinal cord, meninges and long pathways",
+    "summary": "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Spinal cord, meninges and long pathways",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "38. Spinal Cord and Spinal Meninges",
+    "steps": [
+      {
+        "title": "Spinal Cord and Spinal Meninges",
+        "body": "The spinal cord continues from the medulla and gives rise to spinal nerves through dorsal and ventral roots. Its meninges are continuous with cranial meninges, but the spinal epidural space is a real fat-filled venous space."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Spinal cord ends around L1-L2 in adults as conus medullaris. Cauda equina consists of lumbar, sacral, and coccygeal roots below the cord termination. Denticulate ligaments anchor spinal cord laterally to dura. Filum terminale extends inferiorly from conus region. The lumbar cistern extends below the usual adult cord termination and contains cauda equina roots in CSF; this spatial relation explains commonly discussed lumbar access levels."
+      },
+      {
+        "title": "Why is a vertebral level not identical to a spinal cord segment in the lower back?",
+        "body": "During growth the vertebral column lengthens more than the spinal cord. Lower cord segments therefore lie above the correspondingly named vertebrae, and their roots descend within the canal before exiting. The conus is the tapering cord end, while cauda equina consists of roots below it. A vertebral injury can affect a different segment than its bone number suggests. Distinguish bone, cord segment and exiting root labels on the same diagram before predicting a neurological distribution."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+      }
+    ],
+    "question": {
+      "prompt": "Where do dorsal-column body sensory fibers first cross in the classic pathway?",
+      "options": [
+        {
+          "text": "Medulla after synapsing in gracile or cuneate nuclei",
+          "reason": "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+        },
+        {
+          "text": "Immediately on entering every spinal segment",
+          "reason": "The correct relationship is: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+        },
+        {
+          "text": "At the neuromuscular junction",
+          "reason": "The correct relationship is: Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain spinal cord, meninges and long pathways using the main anatomical relationships, then justify your answer to: Where do dorsal-column body sensory fibers first cross in the classic pathway?",
+      "answer": "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+    },
+    "related": [
+      "cerebellum-connections",
+      "pharyngeal-arch-development"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of spinal cord, meninges and long pathways.",
+      "Answer with anatomical reasons: Where do dorsal-column body sensory fibers first cross in the classic pathway?",
+      "Draw three parallel pathways and mark their different crossing levels; label the adult conus and the cauda equina separately."
+    ],
+    "prerequisites": [
+      "cerebellum-connections"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Where do dorsal-column body sensory fibers first cross in the classic pathway? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.",
+        "Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion.",
+        "Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw three parallel pathways and mark their different crossing levels; label the adult conus and the cauda equina separately.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Medulla after synapsing in gracile or cuneate nuclei",
+      "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.",
+      "Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments."
+    ]
+  },
+  "practice": [
+    {
+      "id": "spinal-cord-tracts-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is a vertebral level not identical to a spinal cord segment in the lower back?",
+      "answer": "During growth the vertebral column lengthens more than the spinal cord. Lower cord segments therefore lie above the correspondingly named vertebrae, and their roots descend within the canal before exiting. The conus is the tapering cord end, while cauda equina consists of roots below it. A vertebral injury can affect a different segment than its bone number suggests. Distinguish bone, cord segment and exiting root labels on the same diagram before predicting a neurological distribution."
+    },
+    {
+      "id": "spinal-cord-tracts-relations",
+      "kind": "Relationship recall",
+      "prompt": "In spinal cord, meninges and long pathways, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Spinal cord ends around L1-L2 in adults as conus medullaris. Cauda equina consists of lumbar, sacral, and coccygeal roots below the cord termination. Denticulate ligaments anchor spinal cord laterally to dura. Filum terminale extends inferiorly from conus region. The lumbar cistern extends below the usual adult cord termination and contains cauda equina roots in CSF; this spatial relation explains commonly discussed lumbar access levels."
+    },
+    {
+      "id": "spinal-cord-tracts-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Immediately on entering every spinal segment” to the question “Where do dorsal-column body sensory fibers first cross in the classic pathway?” Explain what needs correcting.",
+      "answer": "Medulla after synapsing in gracile or cuneate nuclei. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+    },
+    {
+      "id": "spinal-cord-tracts-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw three parallel pathways and mark their different crossing levels; label the adult conus and the cauda equina separately.",
+      "answer": "Check your labels against these relationships: The spinal cord continues from the medulla and gives rise to spinal nerves through dorsal and ventral roots. Its meninges are continuous with cranial meninges, but the spinal epidural space is a real fat-filled venous space. Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing. Anterolateral pain-temperature pathways usually cross near entry over a few spinal segments. Most corticospinal fibers cross in the caudal medulla before descending in the lateral tract. A hemicord lesion therefore can combine ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Cord segment and vertebral level diverge inferiorly because the vertebral column grows farther."
+    }
+  ],
+  "sourceSections": [
+    "38. Spinal Cord and Spinal Meninges"
+  ],
+  "furtherReading": {
+    "title": "The central nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

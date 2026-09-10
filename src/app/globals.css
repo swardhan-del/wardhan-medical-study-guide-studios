@@ -4062,3 +4062,17 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .revision-section:last-child { padding-bottom: 0; }
 }
 @media print { .revision-page p:last-child { margin-bottom: 0; } }
+
+/* Shared anatomy manuscripts: long explanations remain readable on screen and paper. */
+.anatomy-volume-list { display: grid; gap: .8rem; padding-left: 1.5rem; }
+.anatomy-lesson-navigation details { margin-top: 1rem; }
+.anatomy-lesson-navigation ol { columns: 2 19rem; padding-left: 1.5rem; }
+.anatomy-lesson-navigation li { break-inside: avoid; margin-bottom: .6rem; }
+.anatomy-practice-item { border-top: 1px solid var(--line); padding-block: 1rem; }
+.anatomy-practice-item p, .anatomy-identification p { overflow-wrap: anywhere; }
+.drawing-space { min-height: 7rem; border: 1px dashed var(--line); margin-block: 1rem; }
+@media print {
+  .revision-identification { break-inside: avoid; }
+  .drawing-space { min-height: 3cm; }
+  .revision-page .revision-lesson p { white-space: pre-line; }
+}

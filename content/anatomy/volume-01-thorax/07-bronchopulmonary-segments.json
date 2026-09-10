@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 7,
+  "lesson": {
+    "id": "bronchopulmonary-segments",
+    "subject": "anatomy",
+    "title": "Segments, blood and lymph",
+    "summary": "A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Segments, blood and lymph",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Lungs sections 44-50",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "A bronchopulmonary segment is a subdivision supplied by a segmental bronchus and pulmonary arterial branch. Right-sided descriptions commonly list ten segments; left-sided descriptions may combine segments, so counts vary by convention. Segment borders are not always visible as fissures. Distinguish this internal bronchovascular organization from the larger lobar divisions."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "Pulmonary arteries carry right-ventricular blood toward gas-exchange capillaries and pulmonary veins return blood to the left atrium. Bronchial arteries provide systemic nutritive supply. Superficial subpleural and deep peribronchial lymphatic networks drain toward pulmonary and bronchopulmonary nodes, then tracheobronchial pathways. Cross-drainage can occur, so lymphatic territories should not be treated as completely isolated lobar compartments."
+      },
+      {
+        "title": "Why are segmental pulmonary arteries and intersegmental veins arranged differently?",
+        "body": "Bronchi and pulmonary arterial branches distribute together toward the gas-exchanging region within a segment. Venous channels collect from adjacent territories and often follow boundaries between segments. This difference supports the concept of a segment as a bronchovascular unit while explaining why venous drainage is not confined to a matching central bundle. On a schematic, draw two neighboring segments so that the shared boundary vein is visible; one isolated segment diagram can conceal that relationship."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes. This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits. Lobar number alone does not tell you the number of segments."
+      }
+    ],
+    "question": {
+      "prompt": "Where do pulmonary veins mainly run relative to bronchopulmonary segments?",
+      "options": [
+        {
+          "text": "Between segments",
+          "reason": "A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes. This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits. Lobar number alone does not tell you the number of segments."
+        },
+        {
+          "text": "Only beside each segmental bronchus at the center",
+          "reason": "The correct relationship is: Between segments. A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes. This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits. Lobar number alone does not tell you the number of segments."
+        },
+        {
+          "text": "Inside bronchial cartilage",
+          "reason": "The correct relationship is: Between segments. A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes. This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits. Lobar number alone does not tell you the number of segments."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain segments, blood and lymph using the main anatomical relationships, then justify your answer to: Where do pulmonary veins mainly run relative to bronchopulmonary segments?",
+      "answer": "A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes. This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits. Lobar number alone does not tell you the number of segments."
+    },
+    "related": [
+      "lung-roots-bronchi",
+      "mediastinum-great-vessels"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of segments, blood and lymph.",
+      "Answer with anatomical reasons: Where do pulmonary veins mainly run relative to bronchopulmonary segments?",
+      "Draw two adjacent wedge-shaped segments with central bronchus-artery pairs and a pulmonary vein along their shared boundary."
+    ],
+    "prerequisites": [
+      "lung-roots-bronchi"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Where do pulmonary veins mainly run relative to bronchopulmonary segments? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes.",
+        "This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits.",
+        "Lobar number alone does not tell you the number of segments."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw two adjacent wedge-shaped segments with central bronchus-artery pairs and a pulmonary vein along their shared boundary.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Between segments",
+      "A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes.",
+      "This arrangement explains why a segment is a useful anatomical unit."
+    ]
+  },
+  "practice": [
+    {
+      "id": "bronchopulmonary-segments-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why are segmental pulmonary arteries and intersegmental veins arranged differently?",
+      "answer": "Bronchi and pulmonary arterial branches distribute together toward the gas-exchanging region within a segment. Venous channels collect from adjacent territories and often follow boundaries between segments. This difference supports the concept of a segment as a bronchovascular unit while explaining why venous drainage is not confined to a matching central bundle. On a schematic, draw two neighboring segments so that the shared boundary vein is visible; one isolated segment diagram can conceal that relationship."
+    },
+    {
+      "id": "bronchopulmonary-segments-relations",
+      "kind": "Relationship recall",
+      "prompt": "In segments, blood and lymph, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Pulmonary arteries carry right-ventricular blood toward gas-exchange capillaries and pulmonary veins return blood to the left atrium. Bronchial arteries provide systemic nutritive supply. Superficial subpleural and deep peribronchial lymphatic networks drain toward pulmonary and bronchopulmonary nodes, then tracheobronchial pathways. Cross-drainage can occur, so lymphatic territories should not be treated as completely isolated lobar compartments."
+    },
+    {
+      "id": "bronchopulmonary-segments-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Only beside each segmental bronchus at the center” to the question “Where do pulmonary veins mainly run relative to bronchopulmonary segments?” Explain what needs correcting.",
+      "answer": "Between segments. A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes. This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits. Lobar number alone does not tell you the number of segments."
+    },
+    {
+      "id": "bronchopulmonary-segments-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw two adjacent wedge-shaped segments with central bronchus-artery pairs and a pulmonary vein along their shared boundary.",
+      "answer": "Check your labels against these relationships: A bronchopulmonary segment is a subdivision supplied by a segmental bronchus and pulmonary arterial branch. Right-sided descriptions commonly list ten segments; left-sided descriptions may combine segments, so counts vary by convention. Segment borders are not always visible as fissures. Distinguish this internal bronchovascular organization from the larger lobar divisions. A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes. This arrangement explains why a segment is a useful anatomical unit. Pulmonary circulation carries blood for gas exchange; bronchial circulation supplies conducting tissues through systemic branches. Some bronchial venous blood returns through pulmonary veins, so drainage is not wholly separated into two simple circuits. Lobar number alone does not tell you the number of segments."
+    }
+  ],
+  "sourceSections": [
+    "Lungs sections 44-50"
+  ],
+  "furtherReading": {
+    "title": "Respiratory organs and structures",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

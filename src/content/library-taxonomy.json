@@ -1109,8 +1109,8 @@
     },
     {
       "id": "topic-thorax-nerve-relations",
-      "title": "Volume I: orient the thorax around the lung root",
-      "description": "Use the lung root, diaphragm and transverse thoracic plane to organise thoracic relationships before adding detail.",
+      "title": "Phrenic, vagal and recurrent pathways",
+      "description": "Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses.",
       "subject": "anatomy",
       "parentId": "anatomy-volume-1",
       "kind": "topic",
@@ -1129,8 +1129,8 @@
     },
     {
       "id": "topic-abdomen-portal-relations",
-      "title": "Volume II: connect peritoneum and the portal triad",
-      "description": "Identify the portal-triad relationship and use peritoneal attachments to explain how abdominal organs are organised.",
+      "title": "Portal venous routes and systemic connections",
+      "description": "Portal means blood reaches a second capillary bed before returning to the heart.",
       "subject": "anatomy",
       "parentId": "anatomy-volume-2",
       "kind": "topic",
@@ -1149,8 +1149,8 @@
     },
     {
       "id": "topic-pelvis-urinary-route",
-      "title": "Volume III: follow urine through the pelvis",
-      "description": "Trace the kidney-to-bladder route, distinguish ureter from urethra and connect urinary anatomy with pelvic support.",
+      "title": "Ureters and the route into the bladder",
+      "description": "Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points.",
       "subject": "anatomy",
       "parentId": "anatomy-volume-3",
       "kind": "topic",
@@ -1169,8 +1169,8 @@
     },
     {
       "id": "topic-head-neck-tongue-map",
-      "title": "Volume IV: separate taste, sensation and movement",
-      "description": "Use tongue innervation to practise a cranial-nerve explanation based on territory and function.",
+      "title": "Tongue structure, function and nerve map",
+      "description": "Separate modality from region.",
       "subject": "anatomy",
       "parentId": "anatomy-volume-4",
       "kind": "topic",
@@ -1189,8 +1189,8 @@
     },
     {
       "id": "topic-limbs-plexus-and-joints",
-      "title": "Volume V: trace a limb nerve through the plexus",
-      "description": "Organise the brachial plexus from roots to branches, then connect peripheral nerves with joint movement and limb development.",
+      "title": "Brachial plexus from roots to terminal nerves",
+      "description": "Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords.",
       "subject": "anatomy",
       "parentId": "anatomy-volume-5",
       "kind": "topic",
@@ -1308,8 +1308,8 @@
     },
     {
       "id": "topic-inguinal-canal-relations",
-      "title": "Inguinal canal: build the walls and trace a hernia",
-      "description": "Reconstruct the canal from its layers and use inferior epigastric vessels to distinguish direct and indirect routes.",
+      "title": "Inguinal canal and hernia relationships",
+      "description": "The inferior epigastric vessels are the key discriminator, not the eventual size of the swelling.",
       "subject": "anatomy",
       "parentId": "anatomy-volume-2",
       "kind": "topic",
@@ -1478,6 +1478,1260 @@
       "kind": "category",
       "resources": [
         "biophysics-lab"
+      ]
+    },
+    {
+      "id": "topic-thoracic-cage-landmarks",
+      "title": "Thoracic cage and landmarks",
+      "description": "The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "thoracic-cage-landmarks"
+      ]
+    },
+    {
+      "id": "topic-intercostal-neurovascular-plane",
+      "title": "Intercostal muscles and supply",
+      "description": "The main bundle lies near the inferior border of the rib above, with vein, artery and nerve ordered superior to inferior.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "intercostal-neurovascular-plane"
+      ]
+    },
+    {
+      "id": "topic-diaphragm-openings",
+      "title": "Diaphragm structure and sensation",
+      "description": "The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "diaphragm-openings"
+      ]
+    },
+    {
+      "id": "topic-pleura-and-recesses",
+      "title": "Pleural layers and recesses",
+      "description": "Visceral pleura follows the lung into fissures, while parietal pleura lines the wall, diaphragm and mediastinum.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "pleura-and-recesses"
+      ]
+    },
+    {
+      "id": "topic-lung-lobes-surface",
+      "title": "Lung surfaces and lobes",
+      "description": "The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "lung-lobes-surface"
+      ]
+    },
+    {
+      "id": "topic-lung-roots-bronchi",
+      "title": "Airway and root relationships",
+      "description": "A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "lung-roots-bronchi"
+      ]
+    },
+    {
+      "id": "topic-bronchopulmonary-segments",
+      "title": "Segments, blood and lymph",
+      "description": "A segment has a segmental bronchus and accompanying pulmonary arterial branch, while pulmonary veins commonly follow intersegmental planes.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "bronchopulmonary-segments"
+      ]
+    },
+    {
+      "id": "topic-mediastinum-great-vessels",
+      "title": "Mediastinal compartments and vessels",
+      "description": "The mediastinum lies between the pleural sacs and extends from inlet to diaphragm.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "mediastinum-great-vessels"
+      ]
+    },
+    {
+      "id": "topic-posterior-mediastinum-lymph",
+      "title": "Posterior mediastinal routes",
+      "description": "The posterior mediastinum contains the esophagus, descending aorta, thoracic duct and azygos pathways among other structures.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "posterior-mediastinum-lymph"
+      ]
+    },
+    {
+      "id": "topic-pericardium-sinuses",
+      "title": "Pericardial layers and reflections",
+      "description": "Fibrous pericardium forms a relatively inelastic enclosure attached inferiorly to the central tendon.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "pericardium-sinuses"
+      ]
+    },
+    {
+      "id": "topic-heart-chambers-surfaces",
+      "title": "Chambers and internal landmarks",
+      "description": "The heart is oblique, so chamber names do not translate directly into front-back positions.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "heart-chambers-surfaces"
+      ]
+    },
+    {
+      "id": "topic-heart-valves-skeleton",
+      "title": "Valves and fibrous support",
+      "description": "Valves move in response to pressure differences.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "heart-valves-skeleton"
+      ]
+    },
+    {
+      "id": "topic-coronary-circulation",
+      "title": "Coronary arteries and venous return",
+      "description": "The coronary arteries arise from the aortic sinuses and distribute across the epicardial surface before penetrating myocardium.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "coronary-circulation"
+      ]
+    },
+    {
+      "id": "topic-cardiac-conduction-autonomics",
+      "title": "Conduction and autonomic modulation",
+      "description": "The sinoatrial node initiates the usual rhythm, atrial conduction reaches the AV node, and the AV bundle continues into bundle branches and Purkinje fibers.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "cardiac-conduction-autonomics"
+      ]
+    },
+    {
+      "id": "topic-thoracic-development",
+      "title": "Respiratory and diaphragmatic development",
+      "description": "The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "thoracic-development"
+      ]
+    },
+    {
+      "id": "topic-heart-looping-septation",
+      "title": "Heart tube and partitioning",
+      "description": "Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "heart-looping-septation"
+      ]
+    },
+    {
+      "id": "topic-fetal-circulation-transition",
+      "title": "Fetal shunts and adult remnants",
+      "description": "The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-1",
+      "kind": "topic",
+      "resources": [
+        "fetal-circulation-transition"
+      ]
+    },
+    {
+      "id": "topic-abdominal-surface-map",
+      "title": "Abdominal regions and sectional orientation",
+      "description": "Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "abdominal-surface-map"
+      ]
+    },
+    {
+      "id": "topic-abdominal-wall-layers",
+      "title": "Abdominal wall layers and rectus sheath",
+      "description": "An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "abdominal-wall-layers"
+      ]
+    },
+    {
+      "id": "topic-posterior-abdominal-wall",
+      "title": "Posterior abdominal wall and lumbar relations",
+      "description": "The lumbar plexus forms within the posterior part of psoas major.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "posterior-abdominal-wall"
+      ]
+    },
+    {
+      "id": "topic-peritoneal-organization",
+      "title": "Peritoneum and organ position",
+      "description": "The cavity is the narrow potential space between serosal surfaces.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "peritoneal-organization"
+      ]
+    },
+    {
+      "id": "topic-omenta-and-lesser-sac",
+      "title": "Omenta, lesser sac and epiploic foramen",
+      "description": "The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "omenta-and-lesser-sac"
+      ]
+    },
+    {
+      "id": "topic-peritoneal-fluid-routes",
+      "title": "Peritoneal recesses and fluid routes",
+      "description": "Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "peritoneal-fluid-routes"
+      ]
+    },
+    {
+      "id": "topic-stomach-relations",
+      "title": "Stomach position, relations and neurovascular supply",
+      "description": "Follow the curves before memorizing arteries.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "stomach-relations"
+      ]
+    },
+    {
+      "id": "topic-duodenum-relations",
+      "title": "Duodenum and retroperitoneal relationships",
+      "description": "The descending part receives the main biliary and pancreatic drainage.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "duodenum-relations"
+      ]
+    },
+    {
+      "id": "topic-liver-segments-and-porta",
+      "title": "Liver surfaces, porta hepatis and functional divisions",
+      "description": "The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "liver-segments-and-porta"
+      ]
+    },
+    {
+      "id": "topic-biliary-pathways",
+      "title": "Gallbladder and extrahepatic biliary pathways",
+      "description": "The right and left hepatic ducts form the common hepatic duct.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "biliary-pathways"
+      ]
+    },
+    {
+      "id": "topic-pancreas-relations",
+      "title": "Pancreas and its duct relationships",
+      "description": "Use the neck as the reference plane.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "pancreas-relations"
+      ]
+    },
+    {
+      "id": "topic-spleen-relations",
+      "title": "Spleen, hilum and splenic ligaments",
+      "description": "The spleen develops in dorsal mesogastric mesenchyme, not as an endodermal gut-tube outgrowth.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "spleen-relations"
+      ]
+    },
+    {
+      "id": "topic-small-intestine-mesentery",
+      "title": "Jejunum, ileum and the mesenteric root",
+      "description": "Jejunum and ileum blend gradually; there is no sharp external boundary.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "small-intestine-mesentery"
+      ]
+    },
+    {
+      "id": "topic-cecum-appendix-colon",
+      "title": "Cecum, appendix and colon",
+      "description": "The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "cecum-appendix-colon"
+      ]
+    },
+    {
+      "id": "topic-rectum-anal-transition",
+      "title": "Rectum and the anal transition",
+      "description": "The pectinate line marks a developmental and neurovascular transition within the anal canal.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "rectum-anal-transition"
+      ]
+    },
+    {
+      "id": "topic-abdominal-arterial-territories",
+      "title": "Celiac, superior mesenteric and inferior mesenteric territories",
+      "description": "The three unpaired arteries organize gut territories, but anastomoses bridge their borders.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "abdominal-arterial-territories"
+      ]
+    },
+    {
+      "id": "topic-abdominal-lymph-autonomics",
+      "title": "Abdominal lymphatics and autonomic pathways",
+      "description": "A plexus mixes fibers with different directions and functions.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "abdominal-lymph-autonomics"
+      ]
+    },
+    {
+      "id": "topic-foregut-development",
+      "title": "Foregut rotation and organ development",
+      "description": "Rotation changes adult relationships without changing tissue lineage.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "foregut-development"
+      ]
+    },
+    {
+      "id": "topic-midgut-rotation",
+      "title": "Midgut herniation, rotation and fixation",
+      "description": "The standard model describes an initial 90-degree rotation during physiological herniation and a further 180 degrees during return.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "midgut-rotation"
+      ]
+    },
+    {
+      "id": "topic-abdominal-regional-reasoning",
+      "title": "Reconstruct an upper abdominal section",
+      "description": "Begin with orientation, then identify solid reference structures rather than guessing from an isolated shape.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-2",
+      "kind": "topic",
+      "resources": [
+        "abdominal-regional-reasoning"
+      ]
+    },
+    {
+      "id": "topic-pelvic-boundaries",
+      "title": "Pelvic inlet, outlet and walls",
+      "description": "The inlet is a ring, the outlet another boundary, and the pelvic cavity lies between them.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "pelvic-boundaries"
+      ]
+    },
+    {
+      "id": "topic-pelvic-floor-support",
+      "title": "Pelvic diaphragm and visceral support",
+      "description": "Puborectalis is part of levator ani and helps maintain the anorectal angle.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "pelvic-floor-support"
+      ]
+    },
+    {
+      "id": "topic-pelvic-foramina-nerves",
+      "title": "Sciatic foramina and pelvic nerve routes",
+      "description": "Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "pelvic-foramina-nerves"
+      ]
+    },
+    {
+      "id": "topic-pelvic-vessels-lymph",
+      "title": "Pelvic vessels and lymphatic drainage",
+      "description": "Internal iliac branching is variable, so start with territories and then learn the usual named branches.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "pelvic-vessels-lymph"
+      ]
+    },
+    {
+      "id": "topic-kidney-organization",
+      "title": "Kidney coverings, hilum and collecting system",
+      "description": "Urine and blood travel through different branching systems.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "kidney-organization"
+      ]
+    },
+    {
+      "id": "topic-bladder-urethrae",
+      "title": "Bladder, trigone and urethral differences",
+      "description": "The trigone is a smooth internal region, not the whole bladder base viewed from outside.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "bladder-urethrae"
+      ]
+    },
+    {
+      "id": "topic-testis-spermatic-cord",
+      "title": "Testis, scrotum and spermatic cord",
+      "description": "The testis develops high on the posterior abdominal wall and retains abdominal vessels and lymphatic drainage after descent.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "testis-spermatic-cord"
+      ]
+    },
+    {
+      "id": "topic-male-reproductive-ducts",
+      "title": "Sperm pathway, seminal vesicles and prostate",
+      "description": "Sperm travels from seminiferous tubules through straight tubules, rete testis, efferent ductules, epididymis and ductus deferens.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "male-reproductive-ducts"
+      ]
+    },
+    {
+      "id": "topic-erectile-anatomy",
+      "title": "Erectile tissues and external genital anatomy",
+      "description": "The paired corpora cavernosa continue proximally as crura; the corpus spongiosum expands as the bulb proximally and glans distally.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "erectile-anatomy"
+      ]
+    },
+    {
+      "id": "topic-ovary-uterine-tube",
+      "title": "Ovary and uterine tube relationships",
+      "description": "The tube opens into the peritoneal cavity near the ovary; it is not directly sealed to the ovarian surface.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "ovary-uterine-tube"
+      ]
+    },
+    {
+      "id": "topic-uterus-support-vessels",
+      "title": "Uterus, supports and uterine vessel relations",
+      "description": "Anteversion compares the cervix with the vagina; anteflexion compares the uterine body with the cervix.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "uterus-support-vessels"
+      ]
+    },
+    {
+      "id": "topic-vagina-pelvic-relations",
+      "title": "Vagina and its pelvic relations",
+      "description": "The cervix projects into the superior vagina, creating anterior, posterior and lateral recesses called fornices.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "vagina-pelvic-relations"
+      ]
+    },
+    {
+      "id": "topic-perineal-spaces",
+      "title": "Perineal triangles, pouches and perineal body",
+      "description": "The perineum lies below the pelvic diaphragm.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "perineal-spaces"
+      ]
+    },
+    {
+      "id": "topic-ischioanal-pudendal",
+      "title": "Ischioanal fossa, pudendal canal and anal region",
+      "description": "The ischioanal fossa contains fat that permits expansion of the anal canal.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "ischioanal-pudendal"
+      ]
+    },
+    {
+      "id": "topic-urinary-development",
+      "title": "Development of kidneys, bladder and urethra",
+      "description": "Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "urinary-development"
+      ]
+    },
+    {
+      "id": "topic-gonadal-duct-development",
+      "title": "Gonadal differentiation and genital ducts",
+      "description": "Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "gonadal-duct-development"
+      ]
+    },
+    {
+      "id": "topic-gonadal-descent",
+      "title": "External genital development and gonadal descent",
+      "description": "The processus vaginalis is a peritoneal extension that precedes testicular descent.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-3",
+      "kind": "topic",
+      "resources": [
+        "gonadal-descent"
+      ]
+    },
+    {
+      "id": "topic-neck-triangles",
+      "title": "Neck triangles and surface orientation",
+      "description": "Surface triangles organize access to deeper structures; they are not walled compartments.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "neck-triangles"
+      ]
+    },
+    {
+      "id": "topic-cervical-fascia-sympathetic",
+      "title": "Cervical fascia, carotid sheath and sympathetic trunk",
+      "description": "The vagus lies posteriorly between the main vascular elements of the sheath; the sympathetic trunk lies posterior to the sheath rather than inside it.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "cervical-fascia-sympathetic"
+      ]
+    },
+    {
+      "id": "topic-head-neck-vessels-lymph",
+      "title": "Head and neck arteries, veins and lymphatics",
+      "description": "The internal carotid supplies intracranial and orbital territories after ascending through the neck without typical cervical branches.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "head-neck-vessels-lymph"
+      ]
+    },
+    {
+      "id": "topic-oral-cavity-palate-teeth",
+      "title": "Oral cavity, palate and teeth",
+      "description": "The vestibule lies between lips or cheeks and teeth, whereas the oral cavity proper lies inside the dental arches.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "oral-cavity-palate-teeth"
+      ]
+    },
+    {
+      "id": "topic-salivary-glands",
+      "title": "Salivary glands and their nerve routes",
+      "description": "Passing through a gland does not mean innervating its secretion.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "salivary-glands"
+      ]
+    },
+    {
+      "id": "topic-tmj-deep-fossae",
+      "title": "Mastication, TMJ and deep facial spaces",
+      "description": "The TMJ disc divides the joint into compartments supporting rotation and translation.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "tmj-deep-fossae"
+      ]
+    },
+    {
+      "id": "topic-nose-sinuses",
+      "title": "Nasal cavity and paranasal drainage",
+      "description": "A meatus lies below its corresponding concha.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "nose-sinuses"
+      ]
+    },
+    {
+      "id": "topic-pharynx-swallowing",
+      "title": "Pharynx, tonsils and swallowing",
+      "description": "Swallowing coordinates several barriers and propulsive actions.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "pharynx-swallowing"
+      ]
+    },
+    {
+      "id": "topic-larynx-voice-airway",
+      "title": "Laryngeal skeleton, muscles and innervation",
+      "description": "Abduction opens the rima glottidis; adduction brings the folds together.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "larynx-voice-airway"
+      ]
+    },
+    {
+      "id": "topic-skull-scalp-face",
+      "title": "Skull foramina, scalp and facial layers",
+      "description": "A skull opening is a route, not a nerve's destination.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "skull-scalp-face"
+      ]
+    },
+    {
+      "id": "topic-orbit-anatomy",
+      "title": "Orbit, eyeball and visual pathway",
+      "description": "The orbit has a superior roof, medial wall, floor and lateral wall surrounding the globe and extraocular muscles.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "orbit-anatomy"
+      ]
+    },
+    {
+      "id": "topic-ear-anatomy",
+      "title": "External, middle and inner ear",
+      "description": "The external acoustic meatus conducts sound to the tympanic membrane.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "ear-anatomy"
+      ]
+    },
+    {
+      "id": "topic-cranial-nerve-organization",
+      "title": "Cranial nerve nuclei and functional columns",
+      "description": "Opening of the fourth-ventricle region spreads the dorsal sensory plates laterally, leaving motor columns more medial.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "cranial-nerve-organization"
+      ]
+    },
+    {
+      "id": "topic-ocular-motor-nerves",
+      "title": "Ocular motor nerves and lesion localization",
+      "description": "Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "ocular-motor-nerves"
+      ]
+    },
+    {
+      "id": "topic-trigeminal-pathways",
+      "title": "Trigeminal divisions and sensory territories",
+      "description": "V1 and V2 are sensory divisions; V3 carries both sensory and branchial motor fibers.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "trigeminal-pathways"
+      ]
+    },
+    {
+      "id": "topic-facial-nerve-course",
+      "title": "Facial nerve course and branch functions",
+      "description": "The facial nerve gives off branches at different points in its course.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "facial-nerve-course"
+      ]
+    },
+    {
+      "id": "topic-lower-cranial-nerves",
+      "title": "Glossopharyngeal, vagus, accessory and hypoglossal nerves",
+      "description": "IX, X and XI share the jugular foramen, while XII has a separate exit.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "lower-cranial-nerves"
+      ]
+    },
+    {
+      "id": "topic-cranial-parasympathetics",
+      "title": "Cranial parasympathetic ganglia",
+      "description": "Autonomic and sensory ganglia have different jobs.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "cranial-parasympathetics"
+      ]
+    },
+    {
+      "id": "topic-meninges-dural-folds",
+      "title": "Meninges, dural folds and intracranial spaces",
+      "description": "Dura forms folds supporting and separating brain regions.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "meninges-dural-folds"
+      ]
+    },
+    {
+      "id": "topic-venous-sinuses",
+      "title": "Dural venous sinuses and cavernous sinus relations",
+      "description": "The cavernous sinus is lateral to the sella.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "venous-sinuses"
+      ]
+    },
+    {
+      "id": "topic-cerebral-blood-supply",
+      "title": "Cerebral arteries, territories and collateral routes",
+      "description": "ACA mainly serves medial frontal and parietal surfaces, MCA much of the lateral hemisphere, and PCA occipital and inferior temporal territories.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "cerebral-blood-supply"
+      ]
+    },
+    {
+      "id": "topic-ventricles-csf",
+      "title": "Ventricles, CSF flow and internal landmarks",
+      "description": "CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "ventricles-csf"
+      ]
+    },
+    {
+      "id": "topic-basal-ganglia-diencephalon",
+      "title": "Basal ganglia, internal capsule and diencephalon",
+      "description": "The internal capsule is white matter between deep gray-matter structures.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "basal-ganglia-diencephalon"
+      ]
+    },
+    {
+      "id": "topic-brainstem-localization",
+      "title": "Brainstem landmarks and crossed findings",
+      "description": "Localization combines level, side and pathway.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "brainstem-localization"
+      ]
+    },
+    {
+      "id": "topic-cerebellum-connections",
+      "title": "Cerebellum, peduncles and fourth ventricle",
+      "description": "The middle peduncle carries extensive input from pontine nuclei, the inferior peduncle carries multiple spinal, vestibular and medullary connections, and the superior peduncle is predominantly an output route.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "cerebellum-connections"
+      ]
+    },
+    {
+      "id": "topic-spinal-cord-tracts",
+      "title": "Spinal cord, meninges and long pathways",
+      "description": "Dorsal columns carry discriminative touch, vibration and conscious proprioception ipsilaterally to the medulla before crossing.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "spinal-cord-tracts"
+      ]
+    },
+    {
+      "id": "topic-pharyngeal-arch-development",
+      "title": "Pharyngeal arches, pouches and arch arteries",
+      "description": "Pouches are endodermal, grooves are ectodermal and arches contain mesenchymal tissue with characteristic vessels and nerves.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "pharyngeal-arch-development"
+      ]
+    },
+    {
+      "id": "topic-face-palate-sense-development",
+      "title": "Development of face, palate and special senses",
+      "description": "Inductive interactions connect tissues with different origins.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "face-palate-sense-development"
+      ]
+    },
+    {
+      "id": "topic-neural-tube-development",
+      "title": "Brain vesicles, neural tube and spinal development",
+      "description": "The lumen is preserved as surrounding neural tissue expands.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-4",
+      "kind": "topic",
+      "resources": [
+        "neural-tube-development"
+      ]
+    },
+    {
+      "id": "topic-bones-and-connections",
+      "title": "Bone structure and connections between bones",
+      "description": "Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "bones-and-connections"
+      ]
+    },
+    {
+      "id": "topic-synovial-joint-design",
+      "title": "Synovial joint design and movement",
+      "description": "Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "synovial-joint-design"
+      ]
+    },
+    {
+      "id": "topic-muscle-actions",
+      "title": "Muscle architecture, actions and innervation",
+      "description": "A muscle produces torque according to force and moment arm.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "muscle-actions"
+      ]
+    },
+    {
+      "id": "topic-vertebral-regions",
+      "title": "Vertebral column and regional vertebrae",
+      "description": "Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "vertebral-regions"
+      ]
+    },
+    {
+      "id": "topic-craniovertebral-joints",
+      "title": "Atlas, axis and craniovertebral movement",
+      "description": "The atlas forms a ring around the dens and articulates with occipital condyles above.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "craniovertebral-joints"
+      ]
+    },
+    {
+      "id": "topic-spinal-discs-ligaments",
+      "title": "Intervertebral discs and spinal ligaments",
+      "description": "The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "spinal-discs-ligaments"
+      ]
+    },
+    {
+      "id": "topic-back-muscle-layers",
+      "title": "Back muscle layers and segmental innervation",
+      "description": "Intrinsic back muscles retain segmental posterior-ramus supply and act on the vertebral column.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "back-muscle-layers"
+      ]
+    },
+    {
+      "id": "topic-shoulder-girdle-joints",
+      "title": "Clavicle, scapula and shoulder girdle joints",
+      "description": "The clavicle acts as a strut supporting the scapula away from the thorax.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "shoulder-girdle-joints"
+      ]
+    },
+    {
+      "id": "topic-rotator-cuff-shoulder",
+      "title": "Glenohumeral joint and rotator cuff",
+      "description": "The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "rotator-cuff-shoulder"
+      ]
+    },
+    {
+      "id": "topic-axilla-scapular-spaces",
+      "title": "Axilla, axillary artery and scapular spaces",
+      "description": "The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "axilla-scapular-spaces"
+      ]
+    },
+    {
+      "id": "topic-arm-elbow",
+      "title": "Arm compartments and elbow relationships",
+      "description": "Anterior arm muscles mainly flex the elbow and receive musculocutaneous supply; posterior muscles extend through radial supply.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "arm-elbow"
+      ]
+    },
+    {
+      "id": "topic-cubital-forearm",
+      "title": "Cubital fossa and forearm compartments",
+      "description": "Most anterior forearm muscles receive median supply, but flexor carpi ulnaris and the medial part of flexor digitorum profundus are ulnar exceptions.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "cubital-forearm"
+      ]
+    },
+    {
+      "id": "topic-wrist-carpal-tunnel",
+      "title": "Wrist, carpal tunnel and anatomical snuffbox",
+      "description": "The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "wrist-carpal-tunnel"
+      ]
+    },
+    {
+      "id": "topic-hand-intrinsics",
+      "title": "Intrinsic hand muscles and functional nerve tests",
+      "description": "Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "hand-intrinsics"
+      ]
+    },
+    {
+      "id": "topic-upper-limb-vessels",
+      "title": "Upper limb vessels and lymphatic routes",
+      "description": "The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "upper-limb-vessels"
+      ]
+    },
+    {
+      "id": "topic-pelvic-girdle-landmarks",
+      "title": "Pelvic girdle and hip bone landmarks",
+      "description": "Ilium, ischium and pubis meet around the acetabulum.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "pelvic-girdle-landmarks"
+      ]
+    },
+    {
+      "id": "topic-hip-joint-stability",
+      "title": "Hip joint stability and femoral head supply",
+      "description": "The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "hip-joint-stability"
+      ]
+    },
+    {
+      "id": "topic-gluteal-region",
+      "title": "Gluteal region and the piriformis landmark",
+      "description": "The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "gluteal-region"
+      ]
+    },
+    {
+      "id": "topic-thigh-compartments",
+      "title": "Thigh compartments and muscle actions",
+      "description": "Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "thigh-compartments"
+      ]
+    },
+    {
+      "id": "topic-femoral-triangle-canal",
+      "title": "Femoral triangle, sheath and adductor canal",
+      "description": "The lateral-to-medial order under the inguinal ligament is nerve, artery, vein and femoral canal.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "femoral-triangle-canal"
+      ]
+    },
+    {
+      "id": "topic-knee-joint-mechanics",
+      "title": "Knee ligaments, menisci and movement",
+      "description": "ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "knee-joint-mechanics"
+      ]
+    },
+    {
+      "id": "topic-popliteal-fossa",
+      "title": "Popliteal fossa and neurovascular depth",
+      "description": "The artery lies deepest against the fossa floor, while the tibial nerve is most superficial in the central bundle.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "popliteal-fossa"
+      ]
+    },
+    {
+      "id": "topic-leg-compartments",
+      "title": "Leg compartments and ankle actions",
+      "description": "Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "leg-compartments"
+      ]
+    },
+    {
+      "id": "topic-ankle-foot-arches",
+      "title": "Ankle, tarsal tunnel and foot arches",
+      "description": "The talocrural mortise mainly permits dorsiflexion and plantarflexion.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "ankle-foot-arches"
+      ]
+    },
+    {
+      "id": "topic-plantar-foot",
+      "title": "Plantar muscles and nerve territories",
+      "description": "The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "plantar-foot"
+      ]
+    },
+    {
+      "id": "topic-lower-limb-vessels",
+      "title": "Lower limb arteries, veins and lymphatics",
+      "description": "Femoral artery becomes popliteal after the adductor hiatus, then supplies tibial routes toward the foot.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "lower-limb-vessels"
+      ]
+    },
+    {
+      "id": "topic-lumbar-sacral-plexuses",
+      "title": "Lumbar and sacral plexuses across the limb",
+      "description": "The femoral nerve arises from lumbar plexus roots L2-L4 and supplies knee extensors before its saphenous sensory continuation.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "lumbar-sacral-plexuses"
+      ]
+    },
+    {
+      "id": "topic-neck-musculoskeletal",
+      "title": "Neck muscles and hyoid relationships",
+      "description": "A nerve can carry hitchhiking fibers from another source.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "neck-musculoskeletal"
+      ]
+    },
+    {
+      "id": "topic-regional-lymphatics",
+      "title": "Regional lymph drainage and crossing territories",
+      "description": "Lymphatic maps depend on tissue identity and development, not just present-day surface location.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "regional-lymphatics"
+      ]
+    },
+    {
+      "id": "topic-limb-development",
+      "title": "Early patterning and limb development",
+      "description": "Limb patterning has several axes.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "limb-development"
+      ]
+    },
+    {
+      "id": "topic-axial-skeleton-development",
+      "title": "Vertebral and skull development",
+      "description": "Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra.",
+      "subject": "anatomy",
+      "parentId": "anatomy-volume-5",
+      "kind": "topic",
+      "resources": [
+        "axial-skeleton-development"
       ]
     }
   ]

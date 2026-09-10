@@ -1,0 +1,136 @@
+{
+  "volume": 4,
+  "order": 9,
+  "lesson": {
+    "id": "pharynx-swallowing",
+    "subject": "anatomy",
+    "title": "Pharynx, tonsils and swallowing",
+    "summary": "Swallowing coordinates several barriers and propulsive actions.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Pharynx, tonsils and swallowing",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "15. Pharynx and Retropharyngeal Space; 16. Tonsils and Pharyngeal Lymphatic Ring; 19. Swallowing Mechanism",
+    "steps": [
+      {
+        "title": "Pharynx and Retropharyngeal Space",
+        "body": "The pharynx is a muscular tube from skull base to C6, divided into nasopharynx, oropharynx, and laryngopharynx. It participates in swallowing, breathing, speech resonance, and immune defense through tonsillar tissue.\n\nNasopharynx communicates with nasal cavity through choanae and with middle ear through auditory tube. Oropharynx communicates with oral cavity through isthmus of fauces. Laryngopharynx contains piriform recesses and leads to laryngeal inlet and esophagus. Pharyngeal constrictors insert into median pharyngeal raphe. Retropharyngeal space lies behind pharynx and can communicate with posterior mediastinum."
+      },
+      {
+        "title": "Tonsils and Pharyngeal Lymphatic Ring",
+        "body": "Waldeyer pharyngeal lymphatic ring is a circular arrangement of lymphoid tissue guarding entrance to respiratory and digestive tracts. It includes pharyngeal, tubal, palatine, and lingual tonsils.\n\nPharyngeal tonsil lies in roof/posterior wall of nasopharynx; hypertrophy is called adenoid. Tubal tonsils lie around openings of auditory tubes. Palatine tonsils lie in tonsillar fossa between palatoglossal and palatopharyngeal arches. Lingual tonsil lies on posterior tongue. Tonsillar lymph drainage goes mainly to deep cervical nodes, especially jugulodigastric region."
+      },
+      {
+        "title": "Swallowing Mechanism",
+        "body": "Swallowing begins voluntarily in the oral cavity and then becomes a coordinated reflex through pharyngeal and esophageal phases. The goal is to move bolus posteriorly while closing the nasopharynx and protecting the airway.\n\nTongue pushes bolus backward toward oropharynx. Soft palate elevates and tenses to close nasopharynx. Suprahyoid muscles elevate hyoid and larynx. Epiglottis and laryngeal closure protect airway. Pharyngeal constrictors push bolus inferiorly. Upper esophageal sphincter relaxes; peristalsis continues in esophagus."
+      },
+      {
+        "title": "Why are the piriform recesses important landmarks rather than part of the laryngeal lumen?",
+        "body": "They lie lateral to the laryngeal inlet within the laryngopharynx and help channel swallowed material around the airway opening toward the esophagus. The internal laryngeal nerve lies close beneath the mucosa in this region, linking a local anatomical relation with supraglottic sensation. The recess should not be drawn inside the trachea or confused with the laryngeal ventricle between folds. Position relative to the inlet distinguishes pharyngeal from laryngeal spaces."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+      }
+    ],
+    "question": {
+      "prompt": "What closes the nasopharyngeal route during swallowing?",
+      "options": [
+        {
+          "text": "Elevation of the soft palate",
+          "reason": "Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+        },
+        {
+          "text": "Opening of the auditory tube alone",
+          "reason": "The correct relationship is: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+        },
+        {
+          "text": "Depression of the tongue alone",
+          "reason": "The correct relationship is: Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain pharynx, tonsils and swallowing using the main anatomical relationships, then justify your answer to: What closes the nasopharyngeal route during swallowing?",
+      "answer": "Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+    },
+    "related": [
+      "nose-sinuses",
+      "larynx-voice-airway"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of pharynx, tonsils and swallowing.",
+      "Answer with anatomical reasons: What closes the nasopharyngeal route during swallowing?",
+      "Draw a sagittal pharynx and mark the nasal, oral, laryngeal and esophageal routes, with arrows showing the food route during swallowing."
+    ],
+    "prerequisites": [
+      "nose-sinuses"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What closes the nasopharyngeal route during swallowing? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Swallowing coordinates several barriers and propulsive actions.",
+        "The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X.",
+        "A single nerve injury can disrupt several coordinated actions."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a sagittal pharynx and mark the nasal, oral, laryngeal and esophageal routes, with arrows showing the food route during swallowing.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Elevation of the soft palate",
+      "Swallowing coordinates several barriers and propulsive actions.",
+      "The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus."
+    ]
+  },
+  "practice": [
+    {
+      "id": "pharynx-swallowing-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why are the piriform recesses important landmarks rather than part of the laryngeal lumen?",
+      "answer": "They lie lateral to the laryngeal inlet within the laryngopharynx and help channel swallowed material around the airway opening toward the esophagus. The internal laryngeal nerve lies close beneath the mucosa in this region, linking a local anatomical relation with supraglottic sensation. The recess should not be drawn inside the trachea or confused with the laryngeal ventricle between folds. Position relative to the inlet distinguishes pharyngeal from laryngeal spaces."
+    },
+    {
+      "id": "pharynx-swallowing-relations",
+      "kind": "Relationship recall",
+      "prompt": "In pharynx, tonsils and swallowing, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Waldeyer pharyngeal lymphatic ring is a circular arrangement of lymphoid tissue guarding entrance to respiratory and digestive tracts. It includes pharyngeal, tubal, palatine, and lingual tonsils.\n\nPharyngeal tonsil lies in roof/posterior wall of nasopharynx; hypertrophy is called adenoid. Tubal tonsils lie around openings of auditory tubes. Palatine tonsils lie in tonsillar fossa between palatoglossal and palatopharyngeal arches. Lingual tonsil lies on posterior tongue. Tonsillar lymph drainage goes mainly to deep cervical nodes, especially jugulodigastric region."
+    },
+    {
+      "id": "pharynx-swallowing-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Opening of the auditory tube alone” to the question “What closes the nasopharyngeal route during swallowing?” Explain what needs correcting.",
+      "answer": "Elevation of the soft palate. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+    },
+    {
+      "id": "pharynx-swallowing-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a sagittal pharynx and mark the nasal, oral, laryngeal and esophageal routes, with arrows showing the food route during swallowing.",
+      "answer": "Check your labels against these relationships: The pharynx is a muscular tube from skull base to C6, divided into nasopharynx, oropharynx, and laryngopharynx. It participates in swallowing, breathing, speech resonance, and immune defense through tonsillar tissue.\n\nNasopharynx communicates with nasal cavity through choanae and with middle ear through auditory tube. Oropharynx communicates with oral cavity through isthmus of fauces. Laryngopharynx contains piriform recesses and leads to laryngeal inlet and esophagus. Pharyngeal constrictors insert into median pharyngeal raphe. Retropharyngeal space lies behind pharynx and can communicate with posterior mediastinum. Swallowing coordinates several barriers and propulsive actions. The tongue drives the bolus posteriorly, the palate separates the nasopharynx, the larynx elevates and closes, and pharyngeal muscles move the bolus toward the esophagus. Airway protection does not depend on the epiglottis acting alone as a lid. Stylopharyngeus is supplied by IX, whereas most other pharyngeal motor supply comes through X. A single nerve injury can disrupt several coordinated actions."
+    }
+  ],
+  "sourceSections": [
+    "15. Pharynx and Retropharyngeal Space",
+    "16. Tonsils and Pharyngeal Lymphatic Ring",
+    "19. Swallowing Mechanism"
+  ],
+  "furtherReading": {
+    "title": "Head, neck and back muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 18,
+  "lesson": {
+    "id": "hip-joint-stability",
+    "subject": "anatomy",
+    "title": "Hip joint stability and femoral head supply",
+    "summary": "The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Hip joint stability and femoral head supply",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "27. Hip Joint",
+    "steps": [
+      {
+        "title": "Hip Joint",
+        "body": "The hip joint is a multiaxial ball-and-socket joint between the femoral head and acetabulum. It sacrifices some mobility for stability through a deep socket, acetabular labrum, strong capsule, and spiral ligaments."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Surfaces: femoral head and lunate surface of acetabulum. Labrum deepens acetabulum. Capsule attaches to acetabular margin and transverse acetabular ligament proximally. External ligaments: iliofemoral, pubofemoral, ischiofemoral. Internal ligaments: transverse acetabular ligament and ligament of head of femur. Zona orbicularis encircles femoral neck."
+      },
+      {
+        "title": "Why do the capsular ligaments become especially important in upright stance?",
+        "body": "The spiral arrangement of the iliofemoral, pubofemoral and ischiofemoral supports tends to tighten with extension, limiting excessive movement and helping stabilize standing with reduced muscular effort. Flexion relaxes parts of this capsular arrangement and permits greater mobility. This mechanical pattern differs from the shoulder's reliance on dynamic muscular centering around a shallow socket. The ligament of the head lies within the joint region but is not the principal adult restraint replacing those capsular supports."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+      }
+    ],
+    "question": {
+      "prompt": "Which vessels provide the major adult femoral-head supply in the usual pattern?",
+      "options": [
+        {
+          "text": "Retinacular branches chiefly from medial circumflex femoral artery",
+          "reason": "The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+        },
+        {
+          "text": "Artery in the ligament of the head alone",
+          "reason": "The correct relationship is: Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+        },
+        {
+          "text": "Superior mesenteric branches",
+          "reason": "The correct relationship is: Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain hip joint stability and femoral head supply using the main anatomical relationships, then justify your answer to: Which vessels provide the major adult femoral-head supply in the usual pattern?",
+      "answer": "The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+    },
+    "related": [
+      "pelvic-girdle-landmarks",
+      "gluteal-region"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of hip joint stability and femoral head supply.",
+      "Answer with anatomical reasons: Which vessels provide the major adult femoral-head supply in the usual pattern?",
+      "Draw femoral head and neck inside the capsule, with retinacular vessels ascending along the neck toward the head."
+    ],
+    "prerequisites": [
+      "pelvic-girdle-landmarks"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which vessels provide the major adult femoral-head supply in the usual pattern? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension.",
+        "Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply.",
+        "Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw femoral head and neck inside the capsule, with retinacular vessels ascending along the neck toward the head.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Retinacular branches chiefly from medial circumflex femoral artery",
+      "The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension.",
+      "Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures."
+    ]
+  },
+  "practice": [
+    {
+      "id": "hip-joint-stability-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why do the capsular ligaments become especially important in upright stance?",
+      "answer": "The spiral arrangement of the iliofemoral, pubofemoral and ischiofemoral supports tends to tighten with extension, limiting excessive movement and helping stabilize standing with reduced muscular effort. Flexion relaxes parts of this capsular arrangement and permits greater mobility. This mechanical pattern differs from the shoulder's reliance on dynamic muscular centering around a shallow socket. The ligament of the head lies within the joint region but is not the principal adult restraint replacing those capsular supports."
+    },
+    {
+      "id": "hip-joint-stability-relations",
+      "kind": "Relationship recall",
+      "prompt": "In hip joint stability and femoral head supply, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Surfaces: femoral head and lunate surface of acetabulum. Labrum deepens acetabulum. Capsule attaches to acetabular margin and transverse acetabular ligament proximally. External ligaments: iliofemoral, pubofemoral, ischiofemoral. Internal ligaments: transverse acetabular ligament and ligament of head of femur. Zona orbicularis encircles femoral neck."
+    },
+    {
+      "id": "hip-joint-stability-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Artery in the ligament of the head alone” to the question “Which vessels provide the major adult femoral-head supply in the usual pattern?” Explain what needs correcting.",
+      "answer": "Retinacular branches chiefly from medial circumflex femoral artery. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+    },
+    {
+      "id": "hip-joint-stability-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw femoral head and neck inside the capsule, with retinacular vessels ascending along the neck toward the head.",
+      "answer": "Check your labels against these relationships: The hip joint is a multiaxial ball-and-socket joint between the femoral head and acetabulum. It sacrifices some mobility for stability through a deep socket, acetabular labrum, strong capsule, and spiral ligaments. The deep acetabulum and labrum provide bony and fibrocartilaginous stability, while capsular ligaments tighten in extension. Retinacular vessels ascend along the femoral neck and can be disrupted by displaced intracapsular fractures. The artery within the ligament of the head has a variable, usually limited adult contribution and should not be taught as the sole supply. Stability and vascular vulnerability are separate consequences of the same close neck-capsule relationship."
+    }
+  ],
+  "sourceSections": [
+    "27. Hip Joint"
+  ],
+  "furtherReading": {
+    "title": "Pelvic girdle and lower limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}
