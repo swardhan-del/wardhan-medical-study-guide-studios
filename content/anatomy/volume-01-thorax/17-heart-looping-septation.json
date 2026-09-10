@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 17,
+  "lesson": {
+    "id": "heart-looping-septation",
+    "subject": "anatomy",
+    "title": "Heart tube and partitioning",
+    "summary": "Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Heart tube and partitioning",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Embryology sections 7-8",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "Paired early cardiac structures form a heart tube that elongates and loops. The developing atrial region shifts dorsocranially relative to ventricular regions. Endocardial cushions contribute to atrioventricular partitioning and valve development, while septal growth and outflow remodeling establish separated right and left circulation pathways."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "Atrial septation involves septum primum and septum secundum with a fetal route permitting right-to-left flow. Ventricular septation involves muscular growth and closure of the remaining interventricular communication by membranous contributions. Outflow division and alignment depend on coordinated tissues including neural-crest-associated contributions. A defect should be related to the affected developmental step rather than to a single undifferentiated process called heart formation."
+      },
+      {
+        "title": "Why does a ventricular septal defect need more explanation than a hole between ventricles?",
+        "body": "Its location determines relationships to valves, conduction tissue and the muscular or membranous septal components. Developmental failure at a junction of tissues differs from incomplete muscular partitioning elsewhere. After birth, pressure differences influence shunt direction and magnitude, which can change over time. The anatomical description should therefore state position and neighboring structures before discussing flow. Looping, cushion formation and septal closure contribute different parts of this spatial arrangement."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+      }
+    ],
+    "question": {
+      "prompt": "What does cardiac looping mainly establish?",
+      "options": [
+        {
+          "text": "Relative spatial arrangement of developing chambers",
+          "reason": "Answer: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+        },
+        {
+          "text": "The final number of adult alveoli",
+          "reason": "The correct relationship is: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+        },
+        {
+          "text": "Separation of all chambers by itself",
+          "reason": "The correct relationship is: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain heart tube and partitioning using the main anatomical relationships, then justify your answer to: What does cardiac looping mainly establish?",
+      "answer": "Answer: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+    },
+    "related": [
+      "thoracic-development",
+      "fetal-circulation-transition"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of heart tube and partitioning.",
+      "Answer with anatomical reasons: What does cardiac looping mainly establish?",
+      "Draw a straight tube becoming a loop, then add separate septation arrows rather than treating looping as partition formation."
+    ],
+    "prerequisites": [
+      "thoracic-development"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What does cardiac looping mainly establish? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes.",
+        "Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects.",
+        "Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a straight tube becoming a loop, then add separate septation arrows rather than treating looping as partition formation.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Relative spatial arrangement of developing chambers",
+      "Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes.",
+      "Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes."
+    ]
+  },
+  "practice": [
+    {
+      "id": "heart-looping-septation-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does a ventricular septal defect need more explanation than a hole between ventricles?",
+      "answer": "Its location determines relationships to valves, conduction tissue and the muscular or membranous septal components. Developmental failure at a junction of tissues differs from incomplete muscular partitioning elsewhere. After birth, pressure differences influence shunt direction and magnitude, which can change over time. The anatomical description should therefore state position and neighboring structures before discussing flow. Looping, cushion formation and septal closure contribute different parts of this spatial arrangement."
+    },
+    {
+      "id": "heart-looping-septation-relations",
+      "kind": "Relationship recall",
+      "prompt": "In heart tube and partitioning, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Atrial septation involves septum primum and septum secundum with a fetal route permitting right-to-left flow. Ventricular septation involves muscular growth and closure of the remaining interventricular communication by membranous contributions. Outflow division and alignment depend on coordinated tissues including neural-crest-associated contributions. A defect should be related to the affected developmental step rather than to a single undifferentiated process called heart formation."
+    },
+    {
+      "id": "heart-looping-septation-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “The final number of adult alveoli” to the question “What does cardiac looping mainly establish?” Explain what needs correcting.",
+      "answer": "Relative spatial arrangement of developing chambers. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+    },
+    {
+      "id": "heart-looping-septation-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a straight tube becoming a loop, then add separate septation arrows rather than treating looping as partition formation.",
+      "answer": "Check your labels against these relationships: Paired early cardiac structures form a heart tube that elongates and loops. The developing atrial region shifts dorsocranially relative to ventricular regions. Endocardial cushions contribute to atrioventricular partitioning and valve development, while septal growth and outflow remodeling establish separated right and left circulation pathways. Looping bends the early heart tube into a configuration that positions future chambers, but septation and outflow alignment require additional coordinated processes. Atrial septation preserves a fetal communication while ventricular and outflow septation separate pumping routes. The membranous septal region develops at the junction of several components, helping explain its vulnerability to defects. Avoid explaining every congenital heart difference as failed looping: chamber partition, cushion development and neural-crest-associated outflow remodeling are distinct steps."
+    }
+  ],
+  "sourceSections": [
+    "Embryology sections 7-8"
+  ],
+  "furtherReading": {
+    "title": "Development of the heart",
+    "url": "https://openstax.org/books/anatomy-and-physiology/pages/19-5-development-of-the-heart"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

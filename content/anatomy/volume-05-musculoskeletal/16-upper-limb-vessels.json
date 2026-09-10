@@ -1,0 +1,131 @@
+{
+  "volume": 5,
+  "order": 16,
+  "lesson": {
+    "id": "upper-limb-vessels",
+    "subject": "anatomy",
+    "title": "Upper limb vessels and lymphatic routes",
+    "summary": "The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Upper limb vessels and lymphatic routes",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "25. Upper Limb Arteries, Veins, and Lymphatics; 45. Axillary Nodes and Upper Limb Drainage",
+    "steps": [
+      {
+        "title": "Upper Limb Arteries, Veins, and Lymphatics",
+        "body": "Upper limb arteries run subclavian to axillary to brachial to radial and ulnar arteries. Superficial veins are cephalic laterally, basilic medially, and median cubital between them. Upper limb lymph mainly drains to axillary nodes.\n\nRadial artery crosses the anatomical snuffbox and contributes mainly to the deep palmar arch. Ulnar artery contributes mainly to the superficial palmar arch. Cephalic vein travels in the deltopectoral groove and drains to axillary vein. Basilic vein pierces brachial fascia and joins brachial veins. Median cubital vein is a common venipuncture site. Upper limb lymph ultimately reaches axillary nodes."
+      },
+      {
+        "title": "Axillary Nodes and Upper Limb Drainage",
+        "body": "Axillary nodes are arranged into pectoral, subscapular, humeral, central, and apical groups. Most upper limb lymph drains through humeral nodes to central nodes, apical nodes, and the subclavian lymph trunk.\n\nPectoral/anterior nodes drain anterior thoracic wall and lateral breast. Subscapular/posterior nodes drain posterior thoracic wall and scapular region. Humeral/lateral nodes drain most upper limb. Central nodes receive from pectoral, subscapular, and humeral nodes. Apical nodes receive from central nodes and drain to subclavian lymph trunk. Cephalic pathway may pass to deltopectoral/infraclavicular nodes then apical nodes."
+      },
+      {
+        "title": "Why are the superficial and deep palmar arches useful connections rather than perfect duplicates?",
+        "body": "The superficial arch is usually predominantly ulnar and the deep arch predominantly radial, with communicating contributions that vary. They distribute blood to different branches and levels of the palm while providing potential collateral routes. An incomplete arch or altered vessel caliber changes that capacity. Venous return and lymphatic drainage use different networks, so an arterial arch drawing should not be reused unchanged for them. Identify the dominant source, connecting contribution and distal branches for each arch."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person."
+      }
+    ],
+    "question": {
+      "prompt": "Which artery usually contributes most to the superficial palmar arch?",
+      "options": [
+        {
+          "text": "Ulnar artery",
+          "reason": "Answer: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person."
+        },
+        {
+          "text": "Axillary artery directly",
+          "reason": "The correct relationship is: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person."
+        },
+        {
+          "text": "Posterior circumflex humeral artery",
+          "reason": "The correct relationship is: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain upper limb vessels and lymphatic routes using the main anatomical relationships, then justify your answer to: Which artery usually contributes most to the superficial palmar arch?",
+      "answer": "Answer: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person."
+    },
+    "related": [
+      "hand-intrinsics",
+      "pelvic-girdle-landmarks"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of upper limb vessels and lymphatic routes.",
+      "Answer with anatomical reasons: Which artery usually contributes most to the superficial palmar arch?",
+      "Trace the arterial name changes from first rib to palm, then draw cephalic and basilic veins in a different line style."
+    ],
+    "prerequisites": [
+      "hand-intrinsics"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which artery usually contributes most to the superficial palmar arch? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major.",
+        "Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes.",
+        "Do not assume one rigid drainage pattern for every person."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Trace the arterial name changes from first rib to palm, then draw cephalic and basilic veins in a different line style.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Ulnar artery",
+      "The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major.",
+      "Radial and ulnar branches contribute to palmar arches, with variable completeness."
+    ]
+  },
+  "practice": [
+    {
+      "id": "upper-limb-vessels-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why are the superficial and deep palmar arches useful connections rather than perfect duplicates?",
+      "answer": "The superficial arch is usually predominantly ulnar and the deep arch predominantly radial, with communicating contributions that vary. They distribute blood to different branches and levels of the palm while providing potential collateral routes. An incomplete arch or altered vessel caliber changes that capacity. Venous return and lymphatic drainage use different networks, so an arterial arch drawing should not be reused unchanged for them. Identify the dominant source, connecting contribution and distal branches for each arch."
+    },
+    {
+      "id": "upper-limb-vessels-relations",
+      "kind": "Relationship recall",
+      "prompt": "In upper limb vessels and lymphatic routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Axillary nodes are arranged into pectoral, subscapular, humeral, central, and apical groups. Most upper limb lymph drains through humeral nodes to central nodes, apical nodes, and the subclavian lymph trunk.\n\nPectoral/anterior nodes drain anterior thoracic wall and lateral breast. Subscapular/posterior nodes drain posterior thoracic wall and scapular region. Humeral/lateral nodes drain most upper limb. Central nodes receive from pectoral, subscapular, and humeral nodes. Apical nodes receive from central nodes and drain to subclavian lymph trunk. Cephalic pathway may pass to deltopectoral/infraclavicular nodes then apical nodes."
+    },
+    {
+      "id": "upper-limb-vessels-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Axillary artery directly” to the question “Which artery usually contributes most to the superficial palmar arch?” Explain what needs correcting.",
+      "answer": "Ulnar artery. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person."
+    },
+    {
+      "id": "upper-limb-vessels-identification",
+      "kind": "Draw and identify",
+      "prompt": "Trace the arterial name changes from first rib to palm, then draw cephalic and basilic veins in a different line style.",
+      "answer": "Check your labels against these relationships: Upper limb arteries run subclavian to axillary to brachial to radial and ulnar arteries. Superficial veins are cephalic laterally, basilic medially, and median cubital between them. Upper limb lymph mainly drains to axillary nodes.\n\nRadial artery crosses the anatomical snuffbox and contributes mainly to the deep palmar arch. Ulnar artery contributes mainly to the superficial palmar arch. Cephalic vein travels in the deltopectoral groove and drains to axillary vein. Basilic vein pierces brachial fascia and joins brachial veins. Median cubital vein is a common venipuncture site. Upper limb lymph ultimately reaches axillary nodes. The arterial route changes names at landmarks: subclavian becomes axillary at the lateral first rib, then brachial at the inferior border of teres major. Radial and ulnar branches contribute to palmar arches, with variable completeness. Superficial veins follow different paths from deep arteries: cephalic runs laterally and basilic medially. Most lymph reaches axillary groups, but the cephalic-associated route may reach deltopectoral or apical nodes. Do not assume one rigid drainage pattern for every person."
+    }
+  ],
+  "sourceSections": [
+    "25. Upper Limb Arteries, Veins, and Lymphatics",
+    "45. Axillary Nodes and Upper Limb Drainage"
+  ],
+  "furtherReading": {
+    "title": "Circulatory pathways",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

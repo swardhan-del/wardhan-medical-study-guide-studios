@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 6,
+  "lesson": {
+    "id": "lung-roots-bronchi",
+    "subject": "anatomy",
+    "title": "Airway and root relationships",
+    "summary": "A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Airway and root relationships",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Lungs sections 39-43; Mediastinum sections 14-18",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "The trachea bifurcates into main bronchi near the transverse thoracic plane, with the carina at the division. Main bronchi divide into lobar and then segmental bronchi, continuing into smaller conducting airways. Terminal bronchioles mark the end of the conducting zone; respiratory bronchioles begin the region in which alveoli participate in gas exchange."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "Pulmonary veins tend to lie anterior and inferior in the root, while bronchial relationships differ between right and left. The right superior lobar bronchus arises above the pulmonary artery and is called eparterial. Pulmonary ligaments extend below the roots and accommodate movement. Nerves running in front of or behind the root provide an additional orientation check independent of vessel shape."
+      },
+      {
+        "title": "Why is the right main bronchus a common aspiration route without being an absolute rule?",
+        "body": "Its typical wider caliber, shorter length and more vertical alignment make entry mechanically more likely for many aspirated objects. However, body position, object size, airflow and distal branching influence where material finally lodges. An upright route and a supine route may favor different downstream segments. The anatomy supports a tendency rather than certainty. A complete answer states the usual right-sided geometry and then explains why clinical distribution cannot be inferred from that feature alone."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve passes posterior to the lung root?",
+      "options": [
+        {
+          "text": "Vagus nerve",
+          "reason": "Answer: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+        },
+        {
+          "text": "Phrenic nerve",
+          "reason": "The correct relationship is: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+        },
+        {
+          "text": "Hypoglossal nerve",
+          "reason": "The correct relationship is: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain airway and root relationships using the main anatomical relationships, then justify your answer to: Which nerve passes posterior to the lung root?",
+      "answer": "Answer: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+    },
+    "related": [
+      "lung-lobes-surface",
+      "bronchopulmonary-segments"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of airway and root relationships.",
+      "Answer with anatomical reasons: Which nerve passes posterior to the lung root?",
+      "Draw right and left roots with pulmonary artery-to-bronchus relationships and put phrenic anterior and vagus posterior to each root."
+    ],
+    "prerequisites": [
+      "lung-lobes-surface"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve passes posterior to the lung root? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it.",
+        "Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS.",
+        "The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw right and left roots with pulmonary artery-to-bronchus relationships and put phrenic anterior and vagus posterior to each root.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Vagus nerve",
+      "A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it.",
+      "Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway."
+    ]
+  },
+  "practice": [
+    {
+      "id": "lung-roots-bronchi-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is the right main bronchus a common aspiration route without being an absolute rule?",
+      "answer": "Its typical wider caliber, shorter length and more vertical alignment make entry mechanically more likely for many aspirated objects. However, body position, object size, airflow and distal branching influence where material finally lodges. An upright route and a supine route may favor different downstream segments. The anatomy supports a tendency rather than certainty. A complete answer states the usual right-sided geometry and then explains why clinical distribution cannot be inferred from that feature alone."
+    },
+    {
+      "id": "lung-roots-bronchi-relations",
+      "kind": "Relationship recall",
+      "prompt": "In airway and root relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Pulmonary veins tend to lie anterior and inferior in the root, while bronchial relationships differ between right and left. The right superior lobar bronchus arises above the pulmonary artery and is called eparterial. Pulmonary ligaments extend below the roots and accommodate movement. Nerves running in front of or behind the root provide an additional orientation check independent of vessel shape."
+    },
+    {
+      "id": "lung-roots-bronchi-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Phrenic nerve” to the question “Which nerve passes posterior to the lung root?” Explain what needs correcting.",
+      "answer": "Vagus nerve. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+    },
+    {
+      "id": "lung-roots-bronchi-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw right and left roots with pulmonary artery-to-bronchus relationships and put phrenic anterior and vagus posterior to each root.",
+      "answer": "Check your labels against these relationships: The trachea bifurcates into main bronchi near the transverse thoracic plane, with the carina at the division. Main bronchi divide into lobar and then segmental bronchi, continuing into smaller conducting airways. Terminal bronchioles mark the end of the conducting zone; respiratory bronchioles begin the region in which alveoli participate in gas exchange. A hilum is the entry-exit area on the lung surface; the root is the bundle passing through it. Bronchi, pulmonary vessels, bronchial vessels, lymphatics and autonomic fibers share that gateway. At the right root the pulmonary artery is anterior to the bronchus; on the left it is superior, summarized as RALS. The right main bronchus is typically wider, shorter and more vertical, but an aspirated object's final site also depends on posture and branching."
+    }
+  ],
+  "sourceSections": [
+    "Lungs sections 39-43; Mediastinum sections 14-18"
+  ],
+  "furtherReading": {
+    "title": "Respiratory organs and structures",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

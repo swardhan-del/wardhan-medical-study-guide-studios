@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 14,
+  "lesson": {
+    "id": "wrist-carpal-tunnel",
+    "subject": "anatomy",
+    "title": "Wrist, carpal tunnel and anatomical snuffbox",
+    "summary": "The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Wrist, carpal tunnel and anatomical snuffbox",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "23. Wrist, Carpal Tunnel, and Snuffbox",
+    "steps": [
+      {
+        "title": "Wrist, Carpal Tunnel, and Snuffbox",
+        "body": "The carpal tunnel is a fibro-osseous canal deep to the flexor retinaculum. It contains the median nerve and tendons of FDS, FDP, and FPL. The ulnar nerve and artery are not in the carpal tunnel; they pass through Guyon canal."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Carpal tunnel roof: flexor retinaculum. Floor and walls: carpal bones. Contents: median nerve, 4 FDS tendons, 4 FDP tendons, 1 FPL tendon. Not inside: ulnar nerve/artery, FCR tendon, palmaris longus tendon. Anatomical snuffbox: APL/EPB anteriorly, EPL posteriorly, scaphoid/trapezium floor, radial artery deep."
+      },
+      {
+        "title": "Why may central palm sensation be relatively spared in carpal tunnel compression?",
+        "body": "The palmar cutaneous branch of the median nerve usually arises proximal to the tunnel and travels superficial to the flexor retinaculum. It therefore does not share the same confined route as the main median nerve. This anatomical branching can distinguish a distal tunnel pattern from a more proximal median lesion, though actual findings vary. The recurrent motor branch and digital branches arise distally and have their own courses. Map where branches leave the nerve before interpreting which functions a localized compression can affect."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk."
+      }
+    ],
+    "question": {
+      "prompt": "Which structure is outside the carpal tunnel?",
+      "options": [
+        {
+          "text": "Ulnar nerve",
+          "reason": "Answer: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk."
+        },
+        {
+          "text": "Median nerve",
+          "reason": "The correct relationship is: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk."
+        },
+        {
+          "text": "Flexor pollicis longus tendon",
+          "reason": "The correct relationship is: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain wrist, carpal tunnel and anatomical snuffbox using the main anatomical relationships, then justify your answer to: Which structure is outside the carpal tunnel?",
+      "answer": "Answer: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk."
+    },
+    "related": [
+      "cubital-forearm",
+      "hand-intrinsics"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of wrist, carpal tunnel and anatomical snuffbox.",
+      "Answer with anatomical reasons: Which structure is outside the carpal tunnel?",
+      "Draw the flexor retinaculum over the tunnel, count nine tendons, and place the ulnar canal separately on its medial side."
+    ],
+    "prerequisites": [
+      "cubital-forearm"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which structure is outside the carpal tunnel? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor.",
+        "Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content.",
+        "Use boundaries to predict which structures share compression risk."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the flexor retinaculum over the tunnel, count nine tendons, and place the ulnar canal separately on its medial side.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Ulnar nerve",
+      "The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor.",
+      "Ulnar nerve and artery pass through a separate superficial ulnar canal."
+    ]
+  },
+  "practice": [
+    {
+      "id": "wrist-carpal-tunnel-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why may central palm sensation be relatively spared in carpal tunnel compression?",
+      "answer": "The palmar cutaneous branch of the median nerve usually arises proximal to the tunnel and travels superficial to the flexor retinaculum. It therefore does not share the same confined route as the main median nerve. This anatomical branching can distinguish a distal tunnel pattern from a more proximal median lesion, though actual findings vary. The recurrent motor branch and digital branches arise distally and have their own courses. Map where branches leave the nerve before interpreting which functions a localized compression can affect."
+    },
+    {
+      "id": "wrist-carpal-tunnel-relations",
+      "kind": "Relationship recall",
+      "prompt": "In wrist, carpal tunnel and anatomical snuffbox, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Carpal tunnel roof: flexor retinaculum. Floor and walls: carpal bones. Contents: median nerve, 4 FDS tendons, 4 FDP tendons, 1 FPL tendon. Not inside: ulnar nerve/artery, FCR tendon, palmaris longus tendon. Anatomical snuffbox: APL/EPB anteriorly, EPL posteriorly, scaphoid/trapezium floor, radial artery deep."
+    },
+    {
+      "id": "wrist-carpal-tunnel-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Median nerve” to the question “Which structure is outside the carpal tunnel?” Explain what needs correcting.",
+      "answer": "Ulnar nerve. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk."
+    },
+    {
+      "id": "wrist-carpal-tunnel-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the flexor retinaculum over the tunnel, count nine tendons, and place the ulnar canal separately on its medial side.",
+      "answer": "Check your labels against these relationships: The carpal tunnel is a fibro-osseous canal deep to the flexor retinaculum. It contains the median nerve and tendons of FDS, FDP, and FPL. The ulnar nerve and artery are not in the carpal tunnel; they pass through Guyon canal. The tunnel contains the median nerve and nine long flexor tendons: four superficial finger flexors, four deep finger flexors and one long thumb flexor. Ulnar nerve and artery pass through a separate superficial ulnar canal. Flexor carpi radialis has its own compartment and palmaris longus is superficial to the retinaculum. A structure can be a flexor tendon at the wrist without being a carpal-tunnel content. Use boundaries to predict which structures share compression risk."
+    }
+  ],
+  "sourceSections": [
+    "23. Wrist, Carpal Tunnel, and Snuffbox"
+  ],
+  "furtherReading": {
+    "title": "Pectoral girdle and upper limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "volume": 5,
+  "order": 1,
+  "lesson": {
+    "id": "bones-and-connections",
+    "subject": "anatomy",
+    "title": "Bone structure and connections between bones",
+    "summary": "Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Bone structure and connections between bones",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "1. Classification of Bones; 2. Connections Between Bones",
+    "steps": [
+      {
+        "title": "Classification of Bones",
+        "body": "Bones form the rigid framework of the body. They protect organs, provide levers for muscles, store minerals, and contain marrow. In an oral exam, classify the bone first, then give its functional reason.\n\nLong bones act as levers and have a shaft with two ends. Short bones provide compact stability. Flat bones protect and provide broad muscle attachment. Irregular bones have complex topographic shapes. Sesamoid bones develop in tendons and improve leverage. Pneumatic bones contain air-filled cavities."
+      },
+      {
+        "title": "Connections Between Bones",
+        "body": "Bone connections are either continuous or discontinuous. Continuous connections have no true cavity; synovial joints have an articular cavity and allow movement.\n\nSyndesmosis is fibrous connection. Synchondrosis is cartilage connection. Symphysis is fibrocartilage connection. Synostosis is bone fusion. Synovial joints are discontinuous joints with a cavity."
+      },
+      {
+        "title": "Why is structural classification useful before discussing movement?",
+        "body": "Structural classes identify what joins the bones and whether a cavity exists. Fibrous joints can range from nearly immobile sutures to more permissive syndesmoses; cartilaginous joints also differ in function. Synovial shape influences potential movement, but ligaments, capsule and muscles determine what is actually permitted. A pivot-shaped surface alone does not make a joint freely rotate without restraint. Classify tissue, identify articular geometry and then describe the permitted movement with its axis and stabilizers."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+      }
+    ],
+    "question": {
+      "prompt": "Which connection contains a joint cavity?",
+      "options": [
+        {
+          "text": "Synovial joint",
+          "reason": "Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+        },
+        {
+          "text": "Suture",
+          "reason": "The correct relationship is: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+        },
+        {
+          "text": "Synchondrosis",
+          "reason": "The correct relationship is: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain bone structure and connections between bones using the main anatomical relationships, then justify your answer to: Which connection contains a joint cavity?",
+      "answer": "Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+    },
+    "related": [
+      "synovial-joint-design",
+      "muscle-actions"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of bone structure and connections between bones.",
+      "Answer with anatomical reasons: Which connection contains a joint cavity?",
+      "Draw a suture, a synchondrosis, a symphysis and a synovial joint, highlighting what lies between the bones."
+    ],
+    "prerequisites": [],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which connection contains a joint cavity? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.",
+        "Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection.",
+        "Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a suture, a synchondrosis, a symphysis and a synovial joint, highlighting what lies between the bones.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Synovial joint",
+      "Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small.",
+      "Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces."
+    ]
+  },
+  "practice": [
+    {
+      "id": "bones-and-connections-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is structural classification useful before discussing movement?",
+      "answer": "Structural classes identify what joins the bones and whether a cavity exists. Fibrous joints can range from nearly immobile sutures to more permissive syndesmoses; cartilaginous joints also differ in function. Synovial shape influences potential movement, but ligaments, capsule and muscles determine what is actually permitted. A pivot-shaped surface alone does not make a joint freely rotate without restraint. Classify tissue, identify articular geometry and then describe the permitted movement with its axis and stabilizers."
+    },
+    {
+      "id": "bones-and-connections-relations",
+      "kind": "Relationship recall",
+      "prompt": "In bone structure and connections between bones, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Bone connections are either continuous or discontinuous. Continuous connections have no true cavity; synovial joints have an articular cavity and allow movement.\n\nSyndesmosis is fibrous connection. Synchondrosis is cartilage connection. Symphysis is fibrocartilage connection. Synostosis is bone fusion. Synovial joints are discontinuous joints with a cavity."
+    },
+    {
+      "id": "bones-and-connections-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Suture” to the question “Which connection contains a joint cavity?” Explain what needs correcting.",
+      "answer": "Synovial joint. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+    },
+    {
+      "id": "bones-and-connections-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a suture, a synchondrosis, a symphysis and a synovial joint, highlighting what lies between the bones.",
+      "answer": "Check your labels against these relationships: Bones form the rigid framework of the body. They protect organs, provide levers for muscles, store minerals, and contain marrow. In an oral exam, classify the bone first, then give its functional reason.\n\nLong bones act as levers and have a shaft with two ends. Short bones provide compact stability. Flat bones protect and provide broad muscle attachment. Irregular bones have complex topographic shapes. Sesamoid bones develop in tendons and improve leverage. Pneumatic bones contain air-filled cavities. Bone shape predicts broad mechanical roles, but size alone does not define the category: phalanges are long bones despite being small. Fibrous connections use connective tissue, primary cartilaginous joints use hyaline cartilage, and symphyses contain fibrocartilage between bony surfaces. A synostosis is fusion by bone and can develop from an earlier connection. Classify the connecting tissue before describing the amount of movement, because structural and functional classifications answer different questions."
+    }
+  ],
+  "sourceSections": [
+    "1. Classification of Bones",
+    "2. Connections Between Bones"
+  ],
+  "furtherReading": {
+    "title": "Synovial joints",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/9-4-synovial-joints"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

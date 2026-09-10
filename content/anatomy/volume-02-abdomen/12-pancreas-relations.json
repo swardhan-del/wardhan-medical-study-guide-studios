@@ -1,0 +1,130 @@
+{
+  "volume": 2,
+  "order": 12,
+  "lesson": {
+    "id": "pancreas-relations",
+    "subject": "anatomy",
+    "title": "Pancreas and its duct relationships",
+    "summary": "Use the neck as the reference plane.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Pancreas and its duct relationships",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "19. Pancreas",
+    "steps": [
+      {
+        "title": "Pancreas",
+        "body": "The pancreas is a mostly secondarily retroperitoneal foregut organ behind the stomach and related to the C-loop of duodenum and splenic vessels. It has head, uncinate process, neck, body, and tail."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Head lies in the duodenal curve. Uncinate process extends posterior to superior mesenteric vessels. Neck lies anterior to formation of portal vein. Body crosses toward the spleen; splenic artery runs along superior border and splenic vein posterior to the pancreas. Tail reaches the splenic hilum in the splenorenal ligament region."
+      },
+      {
+        "title": "How do the pancreatic duct and arterial patterns fit its position?",
+        "body": "The main duct generally runs from tail toward head and joins the bile-duct outlet region; an accessory duct may open separately at the minor papilla. Pancreaticoduodenal arcades supply the head around the duodenal curve, while branches of the splenic artery supply much of body and tail. Thus the organ spans linked arterial territories and a longitudinal drainage route. Endocrine secretions enter blood directly, whereas exocrine secretions use ducts; those two outputs should not be drawn as one pathway."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+      }
+    ],
+    "question": {
+      "prompt": "Where is the portal vein formed relative to the pancreatic neck?",
+      "options": [
+        {
+          "text": "Posterior to the neck",
+          "reason": "Answer: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+        },
+        {
+          "text": "Anterior to the neck",
+          "reason": "The correct relationship is: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+        },
+        {
+          "text": "Within the pancreatic duct",
+          "reason": "The correct relationship is: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain pancreas and its duct relationships using the main anatomical relationships, then justify your answer to: Where is the portal vein formed relative to the pancreatic neck?",
+      "answer": "Answer: Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+    },
+    "related": [
+      "biliary-pathways",
+      "spleen-relations"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of pancreas and its duct relationships.",
+      "Answer with anatomical reasons: Where is the portal vein formed relative to the pancreatic neck?",
+      "Sketch pancreatic head, uncinate process, neck, body and tail; add the portal vein formation behind the neck."
+    ],
+    "prerequisites": [
+      "biliary-pathways"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Where is the portal vein formed relative to the pancreatic neck? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Posterior to the neck. Use the neck as the reference plane.",
+        "The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum.",
+        "These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Sketch pancreatic head, uncinate process, neck, body and tail; add the portal vein formation behind the neck.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Posterior to the neck",
+      "Use the neck as the reference plane.",
+      "The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels."
+    ]
+  },
+  "practice": [
+    {
+      "id": "pancreas-relations-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How do the pancreatic duct and arterial patterns fit its position?",
+      "answer": "The main duct generally runs from tail toward head and joins the bile-duct outlet region; an accessory duct may open separately at the minor papilla. Pancreaticoduodenal arcades supply the head around the duodenal curve, while branches of the splenic artery supply much of body and tail. Thus the organ spans linked arterial territories and a longitudinal drainage route. Endocrine secretions enter blood directly, whereas exocrine secretions use ducts; those two outputs should not be drawn as one pathway."
+    },
+    {
+      "id": "pancreas-relations-relations",
+      "kind": "Relationship recall",
+      "prompt": "In pancreas and its duct relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Head lies in the duodenal curve. Uncinate process extends posterior to superior mesenteric vessels. Neck lies anterior to formation of portal vein. Body crosses toward the spleen; splenic artery runs along superior border and splenic vein posterior to the pancreas. Tail reaches the splenic hilum in the splenorenal ligament region."
+    },
+    {
+      "id": "pancreas-relations-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Anterior to the neck” to the question “Where is the portal vein formed relative to the pancreatic neck?” Explain what needs correcting.",
+      "answer": "Posterior to the neck. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+    },
+    {
+      "id": "pancreas-relations-identification",
+      "kind": "Draw and identify",
+      "prompt": "Sketch pancreatic head, uncinate process, neck, body and tail; add the portal vein formation behind the neck.",
+      "answer": "Check your labels against these relationships: The pancreas is a mostly secondarily retroperitoneal foregut organ behind the stomach and related to the C-loop of duodenum and splenic vessels. It has head, uncinate process, neck, body, and tail. Use the neck as the reference plane. The superior mesenteric and splenic veins unite behind it; the uncinate process projects behind the superior mesenteric vessels. Farther left, the splenic vein lies posterior to the body and the splenic artery runs along its superior border. The tail enters the splenorenal ligament toward the splenic hilum. These distinctions explain why pancreatic, splenic and portal anatomy must be learned together rather than as isolated organ lists."
+    }
+  ],
+  "sourceSections": [
+    "19. Pancreas"
+  ],
+  "furtherReading": {
+    "title": "Liver, pancreas and gallbladder",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

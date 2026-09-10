@@ -1,0 +1,136 @@
+{
+  "volume": 5,
+  "order": 31,
+  "lesson": {
+    "id": "limb-development",
+    "subject": "anatomy",
+    "title": "Early patterning and limb development",
+    "summary": "Limb patterning has several axes.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Early patterning and limb development",
+      "embryology"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "41. Gametogenesis, Fertilization, and Early Development; 42. Gastrulation, Notochord, and Neurulation; 43. Limb Development",
+    "steps": [
+      {
+        "title": "Gametogenesis, Fertilization, and Early Development",
+        "body": "Spermatogenesis begins at puberty in seminiferous tubules; oogenesis begins prenatally and has meiotic arrests. After fertilization, cleavage produces morula and blastocyst, which implants in endometrium.\n\nSpermatogonia become primary spermatocytes, secondary spermatocytes, spermatids, and spermatozoa. Sertoli cells support developing sperm. Leydig cells produce testosterone. Primary oocytes arrest in prophase I. Secondary oocyte arrests in metaphase II until fertilization. Blastocyst contains trophoblast and embryoblast."
+      },
+      {
+        "title": "Gastrulation, Notochord, and Neurulation",
+        "body": "Gastrulation forms the trilaminar disc. Ectoderm, mesoderm, and endoderm give the basic tissue plan. The notochord defines the body axis, induces the neural plate, and contributes to the nucleus pulposus.\n\nEctoderm gives nervous system and epidermis. Mesoderm gives muscle, bone, connective tissue, vessels, and urogenital system. Endoderm gives gut tube epithelium and respiratory epithelium. Neural tube forms CNS. Neural crest forms much of PNS, melanocytes, and important craniofacial structures. Embryonic folding converts the flat disc into a cylindrical body form."
+      },
+      {
+        "title": "Limb Development",
+        "body": "Limb buds appear during the fourth week, upper limb before lower limb. Lateral plate mesoderm forms bones, tendons, and ligaments, while paraxial mesoderm/somites contribute limb muscles. Patterning depends on AER, ZPA, SHH, Wnt, BMP, and HOX genes.\n\nUpper limb bud appears around day 26. Lower limb bud appears around day 28. AER drives proximodistal outgrowth through FGF. ZPA and SHH pattern anteroposterior identity. Wnt7a patterns dorsal limb; Engrailed-1 patterns ventral limb. BMP participates in apoptosis between digits. Upper limb laterally rotates; lower limb medially rotates."
+      },
+      {
+        "title": "Why do limb muscle and skeletal patterning require separate lineage statements?",
+        "body": "Limb skeletal and connective tissues derive largely from lateral plate mesodermal mesenchyme, while skeletal muscle precursors migrate from somites. Their coordinated patterning creates compartments and attachment relationships, but they do not originate as one homogeneous tissue mass. Nerves grow into developing targets and preserve segmental contributions as the limb elongates and rotates. This helps explain the adult mixture of segmental root maps and regional peripheral nerves. Gene-signal diagrams should be connected to these migrating cell populations and spatial axes."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+      }
+    ],
+    "question": {
+      "prompt": "Which signaling center organizes anteroposterior limb patterning through SHH?",
+      "options": [
+        {
+          "text": "Zone of polarizing activity",
+          "reason": "Answer: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+        },
+        {
+          "text": "Apical ectodermal ridge through SHH alone",
+          "reason": "The correct relationship is: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+        },
+        {
+          "text": "Neural tube central canal",
+          "reason": "The correct relationship is: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain early patterning and limb development using the main anatomical relationships, then justify your answer to: Which signaling center organizes anteroposterior limb patterning through SHH?",
+      "answer": "Answer: Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+    },
+    "related": [
+      "regional-lymphatics",
+      "axial-skeleton-development"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of early patterning and limb development.",
+      "Answer with anatomical reasons: Which signaling center organizes anteroposterior limb patterning through SHH?",
+      "Draw a limb bud with proximal-distal, anterior-posterior and dorsal-ventral axes, placing AER distally and ZPA posteriorly."
+    ],
+    "prerequisites": [
+      "regional-lymphatics"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which signaling center organizes anteroposterior limb patterning through SHH? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Zone of polarizing activity. Limb patterning has several axes.",
+        "The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb.",
+        "Muscle precursors and skeletal mesenchyme also have different developmental sources."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a limb bud with proximal-distal, anterior-posterior and dorsal-ventral axes, placing AER distally and ZPA posteriorly.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Zone of polarizing activity",
+      "Limb patterning has several axes.",
+      "The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity."
+    ]
+  },
+  "practice": [
+    {
+      "id": "limb-development-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why do limb muscle and skeletal patterning require separate lineage statements?",
+      "answer": "Limb skeletal and connective tissues derive largely from lateral plate mesodermal mesenchyme, while skeletal muscle precursors migrate from somites. Their coordinated patterning creates compartments and attachment relationships, but they do not originate as one homogeneous tissue mass. Nerves grow into developing targets and preserve segmental contributions as the limb elongates and rotates. This helps explain the adult mixture of segmental root maps and regional peripheral nerves. Gene-signal diagrams should be connected to these migrating cell populations and spatial axes."
+    },
+    {
+      "id": "limb-development-relations",
+      "kind": "Relationship recall",
+      "prompt": "In early patterning and limb development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Gastrulation forms the trilaminar disc. Ectoderm, mesoderm, and endoderm give the basic tissue plan. The notochord defines the body axis, induces the neural plate, and contributes to the nucleus pulposus.\n\nEctoderm gives nervous system and epidermis. Mesoderm gives muscle, bone, connective tissue, vessels, and urogenital system. Endoderm gives gut tube epithelium and respiratory epithelium. Neural tube forms CNS. Neural crest forms much of PNS, melanocytes, and important craniofacial structures. Embryonic folding converts the flat disc into a cylindrical body form."
+    },
+    {
+      "id": "limb-development-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Apical ectodermal ridge through SHH alone” to the question “Which signaling center organizes anteroposterior limb patterning through SHH?” Explain what needs correcting.",
+      "answer": "Zone of polarizing activity. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+    },
+    {
+      "id": "limb-development-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a limb bud with proximal-distal, anterior-posterior and dorsal-ventral axes, placing AER distally and ZPA posteriorly.",
+      "answer": "Check your labels against these relationships: Spermatogenesis begins at puberty in seminiferous tubules; oogenesis begins prenatally and has meiotic arrests. After fertilization, cleavage produces morula and blastocyst, which implants in endometrium.\n\nSpermatogonia become primary spermatocytes, secondary spermatocytes, spermatids, and spermatozoa. Sertoli cells support developing sperm. Leydig cells produce testosterone. Primary oocytes arrest in prophase I. Secondary oocyte arrests in metaphase II until fertilization. Blastocyst contains trophoblast and embryoblast. Limb patterning has several axes. The apical ectodermal ridge promotes outgrowth through FGF signaling, while posterior mesenchymal ZPA signaling helps specify thumb-to-little-finger identity. Dorsoventral cues and interdigital remodeling add further structure. Upper and lower limbs rotate differently during development, helping explain adult compartment orientation. These signals interact in networks; one molecule should not be presented as independently building an entire limb. Muscle precursors and skeletal mesenchyme also have different developmental sources."
+    }
+  ],
+  "sourceSections": [
+    "41. Gametogenesis, Fertilization, and Early Development",
+    "42. Gastrulation, Notochord, and Neurulation",
+    "43. Limb Development"
+  ],
+  "furtherReading": {
+    "title": "Embryonic development",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

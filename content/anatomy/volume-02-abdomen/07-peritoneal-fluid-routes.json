@@ -1,0 +1,130 @@
+{
+  "volume": 2,
+  "order": 7,
+  "lesson": {
+    "id": "peritoneal-fluid-routes",
+    "subject": "anatomy",
+    "title": "Peritoneal recesses and fluid routes",
+    "summary": "Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Peritoneal recesses and fluid routes",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "12. Peritoneal Recesses and Pelvic Pouches",
+    "steps": [
+      {
+        "title": "Peritoneal Recesses and Pelvic Pouches",
+        "body": "Peritoneal recesses are spaces formed by peritoneal reflections. In the pelvis, the lowest peritoneal pouches differ between males and females and are important for fluid collection."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Male: rectovesical pouch lies between rectum and urinary bladder. Female: rectouterine pouch lies between rectum and uterus/posterior fornix; vesicouterine pouch lies between bladder and uterus. Paracolic gutters allow fluid movement along the lateral colon. Subphrenic and hepatorenal spaces are important upper abdominal spaces."
+      },
+      {
+        "title": "Why is posture relevant to identifying a dependent peritoneal space?",
+        "body": "Gravity acts on free fluid within communicating spaces. In an upright person, pelvic pouches are dependent, while in a supine person posterior upper-abdominal recesses such as the hepatorenal recess can be important. Mesenteries and ligaments constrain spread, and inflammatory adhesions can alter usual communications. A diagram that labels one permanently lowest point without specifying position is therefore incomplete. The anatomical question is both where the fluid can travel and which part becomes dependent in the position under consideration."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source."
+      }
+    ],
+    "question": {
+      "prompt": "Which pouch lies between uterus and rectum?",
+      "options": [
+        {
+          "text": "Rectouterine pouch",
+          "reason": "Answer: Rectouterine pouch. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source."
+        },
+        {
+          "text": "Vesicouterine pouch",
+          "reason": "The correct relationship is: Rectouterine pouch. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source."
+        },
+        {
+          "text": "Rectovesical pouch",
+          "reason": "The correct relationship is: Rectouterine pouch. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain peritoneal recesses and fluid routes using the main anatomical relationships, then justify your answer to: Which pouch lies between uterus and rectum?",
+      "answer": "Answer: Rectouterine pouch. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source."
+    },
+    "related": [
+      "omenta-and-lesser-sac",
+      "stomach-relations"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of peritoneal recesses and fluid routes.",
+      "Answer with anatomical reasons: Which pouch lies between uterus and rectum?",
+      "Sketch the colon framing the abdomen, mark both paracolic gutters, and add pelvic pouches in two sagittal diagrams."
+    ],
+    "prerequisites": [
+      "omenta-and-lesser-sac"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which pouch lies between uterus and rectum? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Rectouterine pouch. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers.",
+        "The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum.",
+        "A dependent collection does not by itself identify its source."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Sketch the colon framing the abdomen, mark both paracolic gutters, and add pelvic pouches in two sagittal diagrams.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Rectouterine pouch",
+      "Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers.",
+      "The right paracolic gutter communicates with upper abdominal recesses."
+    ]
+  },
+  "practice": [
+    {
+      "id": "peritoneal-fluid-routes-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is posture relevant to identifying a dependent peritoneal space?",
+      "answer": "Gravity acts on free fluid within communicating spaces. In an upright person, pelvic pouches are dependent, while in a supine person posterior upper-abdominal recesses such as the hepatorenal recess can be important. Mesenteries and ligaments constrain spread, and inflammatory adhesions can alter usual communications. A diagram that labels one permanently lowest point without specifying position is therefore incomplete. The anatomical question is both where the fluid can travel and which part becomes dependent in the position under consideration."
+    },
+    {
+      "id": "peritoneal-fluid-routes-relations",
+      "kind": "Relationship recall",
+      "prompt": "In peritoneal recesses and fluid routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Male: rectovesical pouch lies between rectum and urinary bladder. Female: rectouterine pouch lies between rectum and uterus/posterior fornix; vesicouterine pouch lies between bladder and uterus. Paracolic gutters allow fluid movement along the lateral colon. Subphrenic and hepatorenal spaces are important upper abdominal spaces."
+    },
+    {
+      "id": "peritoneal-fluid-routes-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Vesicouterine pouch” to the question “Which pouch lies between uterus and rectum?” Explain what needs correcting.",
+      "answer": "Rectouterine pouch. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source."
+    },
+    {
+      "id": "peritoneal-fluid-routes-identification",
+      "kind": "Draw and identify",
+      "prompt": "Sketch the colon framing the abdomen, mark both paracolic gutters, and add pelvic pouches in two sagittal diagrams.",
+      "answer": "Check your labels against these relationships: Peritoneal recesses are spaces formed by peritoneal reflections. In the pelvis, the lowest peritoneal pouches differ between males and females and are important for fluid collection. Peritoneal fluid can move between communicating recesses; its distribution depends on posture, gravity, pressure and local barriers. The right paracolic gutter communicates with upper abdominal recesses. The phrenicocolic ligament limits spread on the left toward the left subphrenic region. In the pelvis, the uterus divides anterior and posterior pouches; without a uterus, the rectovesical pouch lies between bladder and rectum. A dependent collection does not by itself identify its source."
+    }
+  ],
+  "sourceSections": [
+    "12. Peritoneal Recesses and Pelvic Pouches"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

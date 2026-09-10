@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 5,
+  "lesson": {
+    "id": "lung-lobes-surface",
+    "subject": "anatomy",
+    "title": "Lung surfaces and lobes",
+    "summary": "The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Lung surfaces and lobes",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Lungs sections 32-38, 51-53",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "Each lung has an apex, base and costal and mediastinal surfaces. The apex extends into the root of the neck, while the concave base rests on the diaphragm. The mediastinal surface bears the hilum and impressions made by neighboring structures. The right lung is generally shorter and wider, while the left accommodates the cardiac impression."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "The right lung contains superior, middle and inferior lobes; the left contains superior and inferior lobes. The cardiac notch and lingula belong to the left upper lobe. Fissures do not lie in purely horizontal planes, which is why a surface view and a sectional view can show different lobar proportions. Follow a fissure across views before assigning a region to a lobe."
+      },
+      {
+        "title": "Why can a lower lobe occupy much of the posterior chest despite its name?",
+        "body": "The oblique fissure slopes across the lung, placing substantial lower-lobe tissue posteriorly and superiorly compared with a simple stack-of-lobes cartoon. Upper and middle-lobe proportions differ between anterior and posterior views. The term lower lobe describes an anatomical subdivision, not a horizontal block beneath every other lobe at all points. Trace the oblique fissure in three dimensions and compare views before assigning an auscultation or imaging region to a lobe."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure. The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them. Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+      }
+    ],
+    "question": {
+      "prompt": "Which structure belongs to the left upper lobe?",
+      "options": [
+        {
+          "text": "Lingula",
+          "reason": "Answer: Lingula. The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure. The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them. Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+        },
+        {
+          "text": "Right middle lobe",
+          "reason": "The correct relationship is: Lingula. The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure. The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them. Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+        },
+        {
+          "text": "A separate left middle lobe",
+          "reason": "The correct relationship is: Lingula. The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure. The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them. Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain lung surfaces and lobes using the main anatomical relationships, then justify your answer to: Which structure belongs to the left upper lobe?",
+      "answer": "Answer: Lingula. The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure. The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them. Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+    },
+    "related": [
+      "pleura-and-recesses",
+      "lung-roots-bronchi"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of lung surfaces and lobes.",
+      "Answer with anatomical reasons: Which structure belongs to the left upper lobe?",
+      "Draw anterior and posterior lung outlines, placing both oblique fissures and the right horizontal fissure, then label the lingula."
+    ],
+    "prerequisites": [
+      "pleura-and-recesses"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which structure belongs to the left upper lobe? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Lingula. The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure.",
+        "The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them.",
+        "Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw anterior and posterior lung outlines, placing both oblique fissures and the right horizontal fissure, then label the lingula.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Lingula",
+      "The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure.",
+      "The lingula is part of the left upper lobe, not a separate lobe."
+    ]
+  },
+  "practice": [
+    {
+      "id": "lung-lobes-surface-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why can a lower lobe occupy much of the posterior chest despite its name?",
+      "answer": "The oblique fissure slopes across the lung, placing substantial lower-lobe tissue posteriorly and superiorly compared with a simple stack-of-lobes cartoon. Upper and middle-lobe proportions differ between anterior and posterior views. The term lower lobe describes an anatomical subdivision, not a horizontal block beneath every other lobe at all points. Trace the oblique fissure in three dimensions and compare views before assigning an auscultation or imaging region to a lobe."
+    },
+    {
+      "id": "lung-lobes-surface-relations",
+      "kind": "Relationship recall",
+      "prompt": "In lung surfaces and lobes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The right lung contains superior, middle and inferior lobes; the left contains superior and inferior lobes. The cardiac notch and lingula belong to the left upper lobe. Fissures do not lie in purely horizontal planes, which is why a surface view and a sectional view can show different lobar proportions. Follow a fissure across views before assigning a region to a lobe."
+    },
+    {
+      "id": "lung-lobes-surface-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Right middle lobe” to the question “Which structure belongs to the left upper lobe?” Explain what needs correcting.",
+      "answer": "Lingula. The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure. The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them. Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+    },
+    {
+      "id": "lung-lobes-surface-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw anterior and posterior lung outlines, placing both oblique fissures and the right horizontal fissure, then label the lingula.",
+      "answer": "Check your labels against these relationships: Each lung has an apex, base and costal and mediastinal surfaces. The apex extends into the root of the neck, while the concave base rests on the diaphragm. The mediastinal surface bears the hilum and impressions made by neighboring structures. The right lung is generally shorter and wider, while the left accommodates the cardiac impression. The right lung usually has three lobes separated by horizontal and oblique fissures; the left has two separated by an oblique fissure. The lingula is part of the left upper lobe, not a separate lobe. Surface projections move with respiration and vary anatomically. Posteriorly, much of the lower thoracic lung field overlies lower lobes; anterior inspection alone underrepresents them. Lobes, bronchopulmonary segments and externally visible lung surfaces describe different levels of organization."
+    }
+  ],
+  "sourceSections": [
+    "Lungs sections 32-38, 51-53"
+  ],
+  "furtherReading": {
+    "title": "Respiratory organs and structures",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

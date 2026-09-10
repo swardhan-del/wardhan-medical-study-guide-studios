@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 16,
+  "lesson": {
+    "id": "thoracic-development",
+    "subject": "anatomy",
+    "title": "Respiratory and diaphragmatic development",
+    "summary": "The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Respiratory and diaphragmatic development",
+      "embryology"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Embryology sections 2-6",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "Lateral plate mesoderm splits into somatic and splanchnic layers around the developing coelom. Partitioning creates pericardial, pleural and peritoneal regions. Pleuropericardial folds help separate pleural from pericardial spaces and are related to phrenic nerves. The traditional diaphragm model includes septum transversum, pleuroperitoneal membranes, dorsal esophageal mesentery and body-wall muscular contributions."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "Respiratory endoderm forms epithelial components of the lower airway, while surrounding splanchnic mesoderm contributes cartilage, smooth muscle and connective tissues. Branching progresses from major bronchi toward distal airways. Type II pneumocytes produce surfactant, which reduces surface tension at the air-liquid interface. Structural maturation and surfactant sufficiency both matter; a mature-looking airway tree alone does not establish adequate gas exchange."
+      },
+      {
+        "title": "Why does a congenital diaphragmatic defect affect lung development as well as organ position?",
+        "body": "If abdominal contents occupy thoracic space during development, the growing lungs can have reduced room and altered vascular development. The consequence can therefore include pulmonary hypoplasia rather than merely an unusual adult arrangement of otherwise normal organs. Defect position, timing and extent matter. The traditional diaphragm component map helps explain common posterolateral locations, while respiratory maturation describes a separate but interacting process. A complete developmental account connects the partition defect with its effect on neighboring tissues."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+      }
+    ],
+    "question": {
+      "prompt": "Which tissue forms most lower respiratory epithelium?",
+      "options": [
+        {
+          "text": "Foregut endoderm",
+          "reason": "Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+        },
+        {
+          "text": "Surface ectoderm",
+          "reason": "The correct relationship is: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+        },
+        {
+          "text": "Somitic muscle",
+          "reason": "The correct relationship is: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain respiratory and diaphragmatic development using the main anatomical relationships, then justify your answer to: Which tissue forms most lower respiratory epithelium?",
+      "answer": "Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+    },
+    "related": [
+      "cardiac-conduction-autonomics",
+      "heart-looping-septation"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of respiratory and diaphragmatic development.",
+      "Answer with anatomical reasons: Which tissue forms most lower respiratory epithelium?",
+      "Draw foregut with a ventral respiratory bud and a separate diaphragm map showing the traditional four developmental contributions."
+    ],
+    "prerequisites": [
+      "cardiac-conduction-autonomics"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which tissue forms most lower respiratory epithelium? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.",
+        "Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth.",
+        "The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw foregut with a ventral respiratory bud and a separate diaphragm map showing the traditional four developmental contributions.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Foregut endoderm",
+      "The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues.",
+      "Branching creates airways before mature gas-exchange surfaces develop."
+    ]
+  },
+  "practice": [
+    {
+      "id": "thoracic-development-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does a congenital diaphragmatic defect affect lung development as well as organ position?",
+      "answer": "If abdominal contents occupy thoracic space during development, the growing lungs can have reduced room and altered vascular development. The consequence can therefore include pulmonary hypoplasia rather than merely an unusual adult arrangement of otherwise normal organs. Defect position, timing and extent matter. The traditional diaphragm component map helps explain common posterolateral locations, while respiratory maturation describes a separate but interacting process. A complete developmental account connects the partition defect with its effect on neighboring tissues."
+    },
+    {
+      "id": "thoracic-development-relations",
+      "kind": "Relationship recall",
+      "prompt": "In respiratory and diaphragmatic development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Respiratory endoderm forms epithelial components of the lower airway, while surrounding splanchnic mesoderm contributes cartilage, smooth muscle and connective tissues. Branching progresses from major bronchi toward distal airways. Type II pneumocytes produce surfactant, which reduces surface tension at the air-liquid interface. Structural maturation and surfactant sufficiency both matter; a mature-looking airway tree alone does not establish adequate gas exchange."
+    },
+    {
+      "id": "thoracic-development-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Surface ectoderm” to the question “Which tissue forms most lower respiratory epithelium?” Explain what needs correcting.",
+      "answer": "Foregut endoderm. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+    },
+    {
+      "id": "thoracic-development-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw foregut with a ventral respiratory bud and a separate diaphragm map showing the traditional four developmental contributions.",
+      "answer": "Check your labels against these relationships: Lateral plate mesoderm splits into somatic and splanchnic layers around the developing coelom. Partitioning creates pericardial, pleural and peritoneal regions. Pleuropericardial folds help separate pleural from pericardial spaces and are related to phrenic nerves. The traditional diaphragm model includes septum transversum, pleuroperitoneal membranes, dorsal esophageal mesentery and body-wall muscular contributions. The respiratory diverticulum grows from ventral foregut, with surrounding mesoderm contributing support tissues. Branching creates airways before mature gas-exchange surfaces develop. Pseudoglandular, canalicular, saccular and alveolar phases overlap, and alveolar development continues after birth. Diaphragm formation combines several embryonic contributions; a posterolateral defect can allow abdominal organs into the thorax and restrict lung growth. The consequence is not merely an abnormal opening but altered development of the space available to the lung."
+    }
+  ],
+  "sourceSections": [
+    "Embryology sections 2-6"
+  ],
+  "furtherReading": {
+    "title": "Embryonic development",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

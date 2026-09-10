@@ -1,0 +1,130 @@
+{
+  "volume": 4,
+  "order": 11,
+  "lesson": {
+    "id": "skull-scalp-face",
+    "subject": "anatomy",
+    "title": "Skull foramina, scalp and facial layers",
+    "summary": "A skull opening is a route, not a nerve's destination.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Skull foramina, scalp and facial layers",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "28. Skull Exits and Lesion Logic",
+    "steps": [
+      {
+        "title": "Skull Exits and Lesion Logic",
+        "body": "Cranial nerve lesion questions become easier if you first localize the nerve by skull exit. The exit predicts associated structures and clinical syndromes."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Cribriform plate: I. Optic canal: II. Superior orbital fissure: III, IV, V1, VI. Foramen rotundum: V2. Foramen ovale: V3. Internal acoustic meatus: VII, VIII. Jugular foramen: IX, X, XI. Hypoglossal canal: XII."
+      },
+      {
+        "title": "How can a scalp wound and a facial movement deficit involve different tissue layers?",
+        "body": "Scalp vessels are held within dense connective tissue superficial to the epicranial aponeurosis, which can limit vessel retraction after injury. Loose areolar tissue lies deeper and allows mobility of the superficial layers over pericranium. Facial expression muscles instead lie in facial soft tissues and receive facial motor branches, while trigeminal branches provide most cutaneous sensation. Deep skull foramina organize yet another set of pathways. Trace depth from skin to bone before relating a surface finding to a cranial exit."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+      }
+    ],
+    "question": {
+      "prompt": "Which structure passes through foramen rotundum?",
+      "options": [
+        {
+          "text": "Maxillary division V2",
+          "reason": "Answer: Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+        },
+        {
+          "text": "Mandibular division V3",
+          "reason": "The correct relationship is: Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+        },
+        {
+          "text": "Facial nerve VII",
+          "reason": "The correct relationship is: Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain skull foramina, scalp and facial layers using the main anatomical relationships, then justify your answer to: Which structure passes through foramen rotundum?",
+      "answer": "Answer: Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+    },
+    "related": [
+      "larynx-voice-airway",
+      "orbit-anatomy"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of skull foramina, scalp and facial layers.",
+      "Answer with anatomical reasons: Which structure passes through foramen rotundum?",
+      "Draw the five scalp layers beside a skull-base map marking rotundum, ovale and stylomastoid foramen with their different nerves."
+    ],
+    "prerequisites": [
+      "larynx-voice-airway"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which structure passes through foramen rotundum? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Maxillary division V2. A skull opening is a route, not a nerve's destination.",
+        "Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal.",
+        "Motor movement and skin sensation require separate maps."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the five scalp layers beside a skull-base map marking rotundum, ovale and stylomastoid foramen with their different nerves.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Maxillary division V2",
+      "A skull opening is a route, not a nerve's destination.",
+      "Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa."
+    ]
+  },
+  "practice": [
+    {
+      "id": "skull-scalp-face-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How can a scalp wound and a facial movement deficit involve different tissue layers?",
+      "answer": "Scalp vessels are held within dense connective tissue superficial to the epicranial aponeurosis, which can limit vessel retraction after injury. Loose areolar tissue lies deeper and allows mobility of the superficial layers over pericranium. Facial expression muscles instead lie in facial soft tissues and receive facial motor branches, while trigeminal branches provide most cutaneous sensation. Deep skull foramina organize yet another set of pathways. Trace depth from skin to bone before relating a surface finding to a cranial exit."
+    },
+    {
+      "id": "skull-scalp-face-relations",
+      "kind": "Relationship recall",
+      "prompt": "In skull foramina, scalp and facial layers, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Cribriform plate: I. Optic canal: II. Superior orbital fissure: III, IV, V1, VI. Foramen rotundum: V2. Foramen ovale: V3. Internal acoustic meatus: VII, VIII. Jugular foramen: IX, X, XI. Hypoglossal canal: XII."
+    },
+    {
+      "id": "skull-scalp-face-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Mandibular division V3” to the question “Which structure passes through foramen rotundum?” Explain what needs correcting.",
+      "answer": "Maxillary division V2. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+    },
+    {
+      "id": "skull-scalp-face-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the five scalp layers beside a skull-base map marking rotundum, ovale and stylomastoid foramen with their different nerves.",
+      "answer": "Check your labels against these relationships: Cranial nerve lesion questions become easier if you first localize the nerve by skull exit. The exit predicts associated structures and clinical syndromes. A skull opening is a route, not a nerve's destination. Follow V2 into the pterygopalatine fossa and V3 into the infratemporal fossa. The scalp layers are skin, dense connective tissue, epicranial aponeurosis, loose areolar tissue and pericranium. Vessels held open in dense tissue help explain bleeding; emissary veins connect extracranial and intracranial channels. Facial expression muscles receive VII, while most facial skin sensation is trigeminal. Motor movement and skin sensation require separate maps."
+    }
+  ],
+  "sourceSections": [
+    "28. Skull Exits and Lesion Logic"
+  ],
+  "furtherReading": {
+    "title": "Head, neck and back muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "volume": 2,
+  "order": 10,
+  "lesson": {
+    "id": "liver-segments-and-porta",
+    "subject": "anatomy",
+    "title": "Liver surfaces, porta hepatis and functional divisions",
+    "summary": "The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Liver surfaces, porta hepatis and functional divisions",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "17. Liver: Surfaces, Ligaments, and Porta Hepatis",
+    "steps": [
+      {
+        "title": "Liver: Surfaces, Ligaments, and Porta Hepatis",
+        "body": "The liver is a large intraperitoneal foregut organ under the right diaphragm. It has diaphragmatic and visceral surfaces, a bare area, peritoneal ligaments, and a porta hepatis where vessels, ducts, nerves, and lymphatics enter or leave."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Diaphragmatic surface is related to diaphragm and anterior abdominal wall. Visceral surface relates to stomach, duodenum, gallbladder, right kidney, right suprarenal gland, and colon. Falciform ligament attaches liver to anterior abdominal wall; its free edge contains ligamentum teres hepatis. Ligamentum teres is the remnant of left umbilical vein; ligamentum venosum is the remnant of ductus venosus. Porta hepatis transmits portal vein, hepatic artery proper, hepatic ducts, lymphatics, and autonomic nerves."
+      },
+      {
+        "title": "Why distinguish anatomical lobes from functional liver segments?",
+        "body": "Surface ligaments divide visible lobes, but functional segments are organized around portal pedicles containing branches of portal vein, hepatic artery and bile duct. Major hepatic veins pass between territories and drain posteriorly. This arrangement explains how one segment can have its own inflow and biliary drainage while sharing venous boundary planes. The caudate region has particularly independent connections. A beginner should first distinguish inflow, outflow and surface landmarks before trying to memorize numbered segment positions on a flat drawing."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+      }
+    ],
+    "question": {
+      "prompt": "Do the hepatic veins normally pass through the porta hepatis?",
+      "options": [
+        {
+          "text": "No; they drain directly into the inferior vena cava",
+          "reason": "Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+        },
+        {
+          "text": "Yes; they accompany the bile duct through the porta",
+          "reason": "The correct relationship is: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+        },
+        {
+          "text": "Yes; they join the portal vein inside the lesser omentum",
+          "reason": "The correct relationship is: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain liver surfaces, porta hepatis and functional divisions using the main anatomical relationships, then justify your answer to: Do the hepatic veins normally pass through the porta hepatis?",
+      "answer": "Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+    },
+    "related": [
+      "duodenum-relations",
+      "biliary-pathways"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of liver surfaces, porta hepatis and functional divisions.",
+      "Answer with anatomical reasons: Do the hepatic veins normally pass through the porta hepatis?",
+      "Draw two colour-independent arrow systems: portal and arterial blood entering the porta, and hepatic venous blood leaving posteriorly."
+    ],
+    "prerequisites": [
+      "duodenum-relations"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Do the hepatic veins normally pass through the porta hepatis? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.",
+        "Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava.",
+        "Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw two colour-independent arrow systems: portal and arterial blood entering the porta, and hepatic venous blood leaving posteriorly.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "No; they drain directly into the inferior vena cava",
+      "The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics.",
+      "Hepatic veins leave separately posteriorly into the inferior vena cava."
+    ]
+  },
+  "practice": [
+    {
+      "id": "liver-segments-and-porta-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why distinguish anatomical lobes from functional liver segments?",
+      "answer": "Surface ligaments divide visible lobes, but functional segments are organized around portal pedicles containing branches of portal vein, hepatic artery and bile duct. Major hepatic veins pass between territories and drain posteriorly. This arrangement explains how one segment can have its own inflow and biliary drainage while sharing venous boundary planes. The caudate region has particularly independent connections. A beginner should first distinguish inflow, outflow and surface landmarks before trying to memorize numbered segment positions on a flat drawing."
+    },
+    {
+      "id": "liver-segments-and-porta-relations",
+      "kind": "Relationship recall",
+      "prompt": "In liver surfaces, porta hepatis and functional divisions, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Diaphragmatic surface is related to diaphragm and anterior abdominal wall. Visceral surface relates to stomach, duodenum, gallbladder, right kidney, right suprarenal gland, and colon. Falciform ligament attaches liver to anterior abdominal wall; its free edge contains ligamentum teres hepatis. Ligamentum teres is the remnant of left umbilical vein; ligamentum venosum is the remnant of ductus venosus. Porta hepatis transmits portal vein, hepatic artery proper, hepatic ducts, lymphatics, and autonomic nerves."
+    },
+    {
+      "id": "liver-segments-and-porta-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Yes; they accompany the bile duct through the porta” to the question “Do the hepatic veins normally pass through the porta hepatis?” Explain what needs correcting.",
+      "answer": "No; they drain directly into the inferior vena cava. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+    },
+    {
+      "id": "liver-segments-and-porta-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw two colour-independent arrow systems: portal and arterial blood entering the porta, and hepatic venous blood leaving posteriorly.",
+      "answer": "Check your labels against these relationships: The liver is a large intraperitoneal foregut organ under the right diaphragm. It has diaphragmatic and visceral surfaces, a bare area, peritoneal ligaments, and a porta hepatis where vessels, ducts, nerves, and lymphatics enter or leave. The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics. Hepatic veins leave separately posteriorly into the inferior vena cava. Surface lobes separated by the falciform ligament do not equal the functional right and left liver. Functional division follows portal distribution, approximately along a plane from the gallbladder fossa to the inferior vena cava. Segmental portal branches run within segments, while major hepatic veins help define boundaries between them."
+    }
+  ],
+  "sourceSections": [
+    "17. Liver: Surfaces, Ligaments, and Porta Hepatis"
+  ],
+  "furtherReading": {
+    "title": "Liver, pancreas and gallbladder",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

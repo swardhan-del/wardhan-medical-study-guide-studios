@@ -1,0 +1,130 @@
+{
+  "volume": 1,
+  "order": 13,
+  "lesson": {
+    "id": "heart-valves-skeleton",
+    "subject": "anatomy",
+    "title": "Valves and fibrous support",
+    "summary": "Valves move in response to pressure differences.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Valves and fibrous support",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Heart Morphology sections 20-22, 30-38, 42",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "Tricuspid and mitral valves guard atrioventricular openings. Pulmonary and aortic valves are semilunar, each usually with three cusps. AV cusps attach through chordae to papillary muscles. Pressure reversal closes valves, producing vibrations associated with heart sounds; S1 relates primarily to AV closure and S2 to semilunar closure."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "The cardiac skeleton supports valve orifices and muscle attachment while limiting direct electrical continuity between atria and ventricles. Standard listening areas include right second intercostal space for aortic, left second for pulmonary, lower left sternal region for tricuspid and apex for mitral sounds. These areas reflect sound transmission and must not be confused with anatomical valve locations."
+      },
+      {
+        "title": "Why do semilunar valves not need papillary muscles and chordae?",
+        "body": "Their pocket-like cusps close when reverse pressure fills and brings them together, with their attachments and geometry resisting eversion. AV valves instead have broad leaflets supported by chordae and papillary muscles during ventricular pressure rise. Both depend on pressure gradients but use different structural supports. A diagram that adds chordae to an aortic valve confuses these mechanisms. Name the chamber or vessel on each side of a valve before describing which pressure difference opens or closes it."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+      }
+    ],
+    "question": {
+      "prompt": "What is the main role of papillary muscles and chordae during ventricular systole?",
+      "options": [
+        {
+          "text": "Prevent AV valve prolapse toward the atria",
+          "reason": "Answer: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+        },
+        {
+          "text": "Pull semilunar valves open",
+          "reason": "The correct relationship is: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+        },
+        {
+          "text": "Generate the pressure gradient that opens AV valves",
+          "reason": "The correct relationship is: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain valves and fibrous support using the main anatomical relationships, then justify your answer to: What is the main role of papillary muscles and chordae during ventricular systole?",
+      "answer": "Answer: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+    },
+    "related": [
+      "heart-chambers-surfaces",
+      "coronary-circulation"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of valves and fibrous support.",
+      "Answer with anatomical reasons: What is the main role of papillary muscles and chordae during ventricular systole?",
+      "Draw one AV valve with papillary-chordal support beside a semilunar valve without chordae, and add pressure-direction arrows."
+    ],
+    "prerequisites": [
+      "heart-chambers-surfaces"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What is the main role of papillary muscles and chordae during ventricular systole? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences.",
+        "Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves.",
+        "This explains why projection and listening landmarks differ."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw one AV valve with papillary-chordal support beside a semilunar valve without chordae, and add pressure-direction arrows.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Prevent AV valve prolapse toward the atria",
+      "Valves move in response to pressure differences.",
+      "Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them."
+    ]
+  },
+  "practice": [
+    {
+      "id": "heart-valves-skeleton-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why do semilunar valves not need papillary muscles and chordae?",
+      "answer": "Their pocket-like cusps close when reverse pressure fills and brings them together, with their attachments and geometry resisting eversion. AV valves instead have broad leaflets supported by chordae and papillary muscles during ventricular pressure rise. Both depend on pressure gradients but use different structural supports. A diagram that adds chordae to an aortic valve confuses these mechanisms. Name the chamber or vessel on each side of a valve before describing which pressure difference opens or closes it."
+    },
+    {
+      "id": "heart-valves-skeleton-relations",
+      "kind": "Relationship recall",
+      "prompt": "In valves and fibrous support, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The cardiac skeleton supports valve orifices and muscle attachment while limiting direct electrical continuity between atria and ventricles. Standard listening areas include right second intercostal space for aortic, left second for pulmonary, lower left sternal region for tricuspid and apex for mitral sounds. These areas reflect sound transmission and must not be confused with anatomical valve locations."
+    },
+    {
+      "id": "heart-valves-skeleton-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Pull semilunar valves open” to the question “What is the main role of papillary muscles and chordae during ventricular systole?” Explain what needs correcting.",
+      "answer": "Prevent AV valve prolapse toward the atria. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+    },
+    {
+      "id": "heart-valves-skeleton-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw one AV valve with papillary-chordal support beside a semilunar valve without chordae, and add pressure-direction arrows.",
+      "answer": "Check your labels against these relationships: Tricuspid and mitral valves guard atrioventricular openings. Pulmonary and aortic valves are semilunar, each usually with three cusps. AV cusps attach through chordae to papillary muscles. Pressure reversal closes valves, producing vibrations associated with heart sounds; S1 relates primarily to AV closure and S2 to semilunar closure. Valves move in response to pressure differences. Papillary muscles tension chordae to stabilize atrioventricular cusps during contraction rather than actively opening them. Semilunar valves have no chordae. The fibrous skeleton supports valve rings and normally electrically separates atrial from ventricular myocardium, with the AV bundle crossing it. Auscultation sites are chosen for transmitted sound, not as exact surface positions of the valves. This explains why projection and listening landmarks differ."
+    }
+  ],
+  "sourceSections": [
+    "Heart Morphology sections 20-22, 30-38, 42"
+  ],
+  "furtherReading": {
+    "title": "Heart anatomy and thoracic relationships",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

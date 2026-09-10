@@ -1,0 +1,131 @@
+{
+  "volume": 2,
+  "order": 8,
+  "lesson": {
+    "id": "stomach-relations",
+    "subject": "anatomy",
+    "title": "Stomach position, relations and neurovascular supply",
+    "summary": "Follow the curves before memorizing arteries.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Stomach position, relations and neurovascular supply",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "14. Stomach: Position, Parts, and Relations; 15. Stomach Blood Supply, Lymphatics, and Innervation",
+    "steps": [
+      {
+        "title": "Stomach: Position, Parts, and Relations",
+        "body": "The stomach is an intraperitoneal foregut organ in the epigastric and left hypochondriac regions. It has cardia, fundus, body, pyloric antrum, pyloric canal, and pylorus, with lesser and greater curvatures.\n\nAnterior relations include diaphragm, left lobe of liver, and anterior abdominal wall. Posterior relations form the stomach bed: diaphragm, spleen, left kidney, left suprarenal gland, pancreas, transverse mesocolon, and colon. The lesser curvature gives attachment to lesser omentum; greater curvature gives attachment to greater omentum and gastrosplenic ligament. The pylorus is commonly near the transpyloric plane in the supine position."
+      },
+      {
+        "title": "Stomach Blood Supply, Lymphatics, and Innervation",
+        "body": "The stomach is supplied by branches of the celiac trunk. Arteries run mainly along the lesser and greater curvatures and send branches onto the anterior and posterior gastric walls.\n\nLeft and right gastric arteries run along the lesser curvature. Left and right gastro-omental arteries run along the greater curvature. Short gastric arteries supply the fundus. Venous drainage follows arteries to the portal venous system. Parasympathetic supply is from anterior and posterior vagal trunks; sympathetic supply comes through celiac plexus."
+      },
+      {
+        "title": "How does stomach rotation help explain vagal trunk orientation?",
+        "body": "During development the stomach's left surface becomes predominantly anterior and its right surface predominantly posterior. The left vagus consequently contributes mainly to the anterior vagal trunk and the right mainly to the posterior trunk. Plexus mixing means the adult trunks are not perfectly isolated left and right cables. This developmental account connects nerve position with peritoneal and curvature changes. It also illustrates why anterior in an adult diagram need not correspond to anterior in the earliest embryonic tube."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+      }
+    ],
+    "question": {
+      "prompt": "Which vessels run along the lesser curvature?",
+      "options": [
+        {
+          "text": "Right and left gastric arteries",
+          "reason": "Answer: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+        },
+        {
+          "text": "Right and left gastro-omental arteries",
+          "reason": "The correct relationship is: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+        },
+        {
+          "text": "Superior and inferior mesenteric arteries",
+          "reason": "The correct relationship is: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain stomach position, relations and neurovascular supply using the main anatomical relationships, then justify your answer to: Which vessels run along the lesser curvature?",
+      "answer": "Answer: Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+    },
+    "related": [
+      "peritoneal-fluid-routes",
+      "duodenum-relations"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of stomach position, relations and neurovascular supply.",
+      "Answer with anatomical reasons: Which vessels run along the lesser curvature?",
+      "Draw the stomach with both curvatures, label the paired arterial arcades, and place the lesser sac behind it."
+    ],
+    "prerequisites": [
+      "peritoneal-fluid-routes"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which vessels run along the lesser curvature? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Right and left gastric arteries. Follow the curves before memorizing arteries.",
+        "The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations.",
+        "Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the stomach with both curvatures, label the paired arterial arcades, and place the lesser sac behind it.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Right and left gastric arteries",
+      "Follow the curves before memorizing arteries.",
+      "The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches."
+    ]
+  },
+  "practice": [
+    {
+      "id": "stomach-relations-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How does stomach rotation help explain vagal trunk orientation?",
+      "answer": "During development the stomach's left surface becomes predominantly anterior and its right surface predominantly posterior. The left vagus consequently contributes mainly to the anterior vagal trunk and the right mainly to the posterior trunk. Plexus mixing means the adult trunks are not perfectly isolated left and right cables. This developmental account connects nerve position with peritoneal and curvature changes. It also illustrates why anterior in an adult diagram need not correspond to anterior in the earliest embryonic tube."
+    },
+    {
+      "id": "stomach-relations-relations",
+      "kind": "Relationship recall",
+      "prompt": "In stomach position, relations and neurovascular supply, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The stomach is supplied by branches of the celiac trunk. Arteries run mainly along the lesser and greater curvatures and send branches onto the anterior and posterior gastric walls.\n\nLeft and right gastric arteries run along the lesser curvature. Left and right gastro-omental arteries run along the greater curvature. Short gastric arteries supply the fundus. Venous drainage follows arteries to the portal venous system. Parasympathetic supply is from anterior and posterior vagal trunks; sympathetic supply comes through celiac plexus."
+    },
+    {
+      "id": "stomach-relations-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Right and left gastro-omental arteries” to the question “Which vessels run along the lesser curvature?” Explain what needs correcting.",
+      "answer": "Right and left gastric arteries. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+    },
+    {
+      "id": "stomach-relations-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the stomach with both curvatures, label the paired arterial arcades, and place the lesser sac behind it.",
+      "answer": "Check your labels against these relationships: The stomach is an intraperitoneal foregut organ in the epigastric and left hypochondriac regions. It has cardia, fundus, body, pyloric antrum, pyloric canal, and pylorus, with lesser and greater curvatures.\n\nAnterior relations include diaphragm, left lobe of liver, and anterior abdominal wall. Posterior relations form the stomach bed: diaphragm, spleen, left kidney, left suprarenal gland, pancreas, transverse mesocolon, and colon. The lesser curvature gives attachment to lesser omentum; greater curvature gives attachment to greater omentum and gastrosplenic ligament. The pylorus is commonly near the transpyloric plane in the supine position. Follow the curves before memorizing arteries. The lesser curvature receives gastric arteries, the greater curvature gastro-omental arteries, and the fundus short gastric branches. The lesser sac separates much of the posterior stomach from the pancreas and other stomach-bed relations. Posterior gastric disease can therefore affect adjacent structures through these relations. Vagal trunks bring parasympathetic fibers; visceral pain pathways are a different functional component of the gastric plexuses."
+    }
+  ],
+  "sourceSections": [
+    "14. Stomach: Position, Parts, and Relations",
+    "15. Stomach Blood Supply, Lymphatics, and Innervation"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

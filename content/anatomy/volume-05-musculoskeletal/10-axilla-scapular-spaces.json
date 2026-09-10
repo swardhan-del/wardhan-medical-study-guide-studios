@@ -1,0 +1,131 @@
+{
+  "volume": 5,
+  "order": 10,
+  "lesson": {
+    "id": "axilla-scapular-spaces",
+    "subject": "anatomy",
+    "title": "Axilla, axillary artery and scapular spaces",
+    "summary": "The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Axilla, axillary artery and scapular spaces",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "18. Axilla and Axillary Artery; 19. Scapular Spaces",
+    "steps": [
+      {
+        "title": "Axilla and Axillary Artery",
+        "body": "The axilla is a pyramidal passage between neck and upper limb. It contains the axillary vessels, cords and branches of the brachial plexus, axillary lymph nodes, and fat.\n\nApex: cervicoaxillary canal. Base: skin, superficial fascia, axillary fascia. Anterior wall: pectoralis major/minor and clavipectoral fascia. Posterior wall: subscapularis, teres major, latissimus dorsi. Medial wall: serratus anterior and thoracic wall. Lateral wall: humerus, coracobrachialis, short head of biceps."
+      },
+      {
+        "title": "Scapular Spaces",
+        "body": "The scapular spaces are high-yield because they test topographic boundaries and neurovascular contents. The quadrangular space transmits the axillary nerve; the triangular interval transmits the radial nerve.\n\nQuadrangular space: teres minor superior, teres major inferior, long head triceps medial, surgical neck lateral. Triangular space: teres minor superior, teres major inferior, long head triceps lateral; contains circumflex scapular artery. Triangular interval: teres major superior, long head triceps medial, humerus/lateral head lateral; contains radial nerve and profunda brachii artery."
+      },
+      {
+        "title": "How does pectoralis minor organize axillary arterial branches?",
+        "body": "It divides the axillary artery into proximal, posterior and distal parts. The usual pattern assigns one branch to the first part, two to the second and three to the third, including subscapular and circumflex humeral routes distally. Branching varies, so the pattern is a learning framework rather than an invariant count. Trace each branch toward thoracic wall, scapular region or humeral neck. The associated plexus cords use the second arterial part as their naming reference, linking vascular and neural maps."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve passes through the quadrangular space?",
+      "options": [
+        {
+          "text": "Axillary nerve",
+          "reason": "Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+        },
+        {
+          "text": "Radial nerve",
+          "reason": "The correct relationship is: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+        },
+        {
+          "text": "Median nerve",
+          "reason": "The correct relationship is: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain axilla, axillary artery and scapular spaces using the main anatomical relationships, then justify your answer to: Which nerve passes through the quadrangular space?",
+      "answer": "Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+    },
+    "related": [
+      "rotator-cuff-shoulder",
+      "limbs-plexus-and-joints"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of axilla, axillary artery and scapular spaces.",
+      "Answer with anatomical reasons: Which nerve passes through the quadrangular space?",
+      "Draw teres minor, teres major and long head of triceps, then label the three spaces and their distinct contents."
+    ],
+    "prerequisites": [
+      "rotator-cuff-shoulder"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve passes through the quadrangular space? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.",
+        "The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches.",
+        "The brachial plexus cords are named relative to the second part of that artery."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw teres minor, teres major and long head of triceps, then label the three spaces and their distinct contents.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Axillary nerve",
+      "The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck.",
+      "The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space."
+    ]
+  },
+  "practice": [
+    {
+      "id": "axilla-scapular-spaces-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How does pectoralis minor organize axillary arterial branches?",
+      "answer": "It divides the axillary artery into proximal, posterior and distal parts. The usual pattern assigns one branch to the first part, two to the second and three to the third, including subscapular and circumflex humeral routes distally. Branching varies, so the pattern is a learning framework rather than an invariant count. Trace each branch toward thoracic wall, scapular region or humeral neck. The associated plexus cords use the second arterial part as their naming reference, linking vascular and neural maps."
+    },
+    {
+      "id": "axilla-scapular-spaces-relations",
+      "kind": "Relationship recall",
+      "prompt": "In axilla, axillary artery and scapular spaces, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The scapular spaces are high-yield because they test topographic boundaries and neurovascular contents. The quadrangular space transmits the axillary nerve; the triangular interval transmits the radial nerve.\n\nQuadrangular space: teres minor superior, teres major inferior, long head triceps medial, surgical neck lateral. Triangular space: teres minor superior, teres major inferior, long head triceps lateral; contains circumflex scapular artery. Triangular interval: teres major superior, long head triceps medial, humerus/lateral head lateral; contains radial nerve and profunda brachii artery."
+    },
+    {
+      "id": "axilla-scapular-spaces-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Radial nerve” to the question “Which nerve passes through the quadrangular space?” Explain what needs correcting.",
+      "answer": "Axillary nerve. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+    },
+    {
+      "id": "axilla-scapular-spaces-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw teres minor, teres major and long head of triceps, then label the three spaces and their distinct contents.",
+      "answer": "Check your labels against these relationships: The axilla is a pyramidal passage between neck and upper limb. It contains the axillary vessels, cords and branches of the brachial plexus, axillary lymph nodes, and fat.\n\nApex: cervicoaxillary canal. Base: skin, superficial fascia, axillary fascia. Anterior wall: pectoralis major/minor and clavipectoral fascia. Posterior wall: subscapularis, teres major, latissimus dorsi. Medial wall: serratus anterior and thoracic wall. Lateral wall: humerus, coracobrachialis, short head of biceps. The axillary nerve travels with posterior circumflex humeral vessels around the surgical neck. The radial nerve and profunda brachii artery use the triangular interval; the circumflex scapular artery uses the triangular space. Similar names can conceal different boundaries and contents. In the axilla, pectoralis minor divides the axillary artery into three parts and helps orient its branches. The brachial plexus cords are named relative to the second part of that artery."
+    }
+  ],
+  "sourceSections": [
+    "18. Axilla and Axillary Artery",
+    "19. Scapular Spaces"
+  ],
+  "furtherReading": {
+    "title": "Pectoral girdle and upper limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

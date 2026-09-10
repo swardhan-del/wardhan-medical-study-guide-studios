@@ -1,0 +1,131 @@
+{
+  "volume": 5,
+  "order": 9,
+  "lesson": {
+    "id": "rotator-cuff-shoulder",
+    "subject": "anatomy",
+    "title": "Glenohumeral joint and rotator cuff",
+    "summary": "The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Glenohumeral joint and rotator cuff",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "16. Glenohumeral Joint and Rotator Cuff; 17. Shoulder Girdle Muscles",
+    "steps": [
+      {
+        "title": "Glenohumeral Joint and Rotator Cuff",
+        "body": "The shoulder joint is a multiaxial ball-and-socket joint between the humeral head and glenoid cavity. It is highly mobile but relatively unstable. Stability depends on the glenoid labrum, capsule, ligaments, and especially the rotator cuff.\n\nSurfaces: humeral head and glenoid cavity. Capsule attaches to glenoid margin and anatomical neck of humerus. Labrum deepens the glenoid socket. Rotator cuff muscles: supraspinatus, infraspinatus, teres minor, subscapularis. Supraspinatus initiates abduction. Subscapularis medially rotates; infraspinatus and teres minor laterally rotate."
+      },
+      {
+        "title": "Shoulder Girdle Muscles",
+        "body": "Shoulder girdle muscles move the scapula and humerus. For oral exams, memorize each muscle by origin-region, insertion, nerve, and action rather than isolated lists.\n\nTrapezius moves scapula and is supplied by accessory nerve. Latissimus dorsi extends, adducts, and medially rotates humerus; supplied by thoracodorsal nerve. Serratus anterior protracts and rotates scapula; supplied by long thoracic nerve. Rhomboids retract scapula; supplied by dorsal scapular nerve. Deltoid abducts the arm after initiation by supraspinatus; supplied by axillary nerve."
+      },
+      {
+        "title": "How does the cuff stabilize a shallow glenoid while permitting mobility?",
+        "body": "The glenoid is relatively shallow compared with the humeral head, so muscles and capsule provide substantial dynamic support. Cuff forces compress and center the head while larger movers generate torque. The labrum deepens the rim and increases effective contact, but it does not turn the shoulder into a deeply constrained hip-like socket. Capsular support is not uniform around the joint. Understanding this balance explains how a highly mobile joint can be stable during coordinated movement yet vulnerable when forces or supports change."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+      }
+    ],
+    "question": {
+      "prompt": "Which muscle is not part of the rotator cuff?",
+      "options": [
+        {
+          "text": "Teres major",
+          "reason": "Answer: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+        },
+        {
+          "text": "Teres minor",
+          "reason": "The correct relationship is: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+        },
+        {
+          "text": "Subscapularis",
+          "reason": "The correct relationship is: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain glenohumeral joint and rotator cuff using the main anatomical relationships, then justify your answer to: Which muscle is not part of the rotator cuff?",
+      "answer": "Answer: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+    },
+    "related": [
+      "shoulder-girdle-joints",
+      "axilla-scapular-spaces"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of glenohumeral joint and rotator cuff.",
+      "Answer with anatomical reasons: Which muscle is not part of the rotator cuff?",
+      "Draw humeral head and glenoid, placing the four cuff tendons around the joint and teres major outside the cuff group."
+    ],
+    "prerequisites": [
+      "shoulder-girdle-joints"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which muscle is not part of the rotator cuff? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis.",
+        "Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action.",
+        "Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw humeral head and glenoid, placing the four cuff tendons around the joint and teres major outside the cuff group.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Teres major",
+      "The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis.",
+      "Their tendons blend with the capsule and help center the humeral head during movement."
+    ]
+  },
+  "practice": [
+    {
+      "id": "rotator-cuff-shoulder-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How does the cuff stabilize a shallow glenoid while permitting mobility?",
+      "answer": "The glenoid is relatively shallow compared with the humeral head, so muscles and capsule provide substantial dynamic support. Cuff forces compress and center the head while larger movers generate torque. The labrum deepens the rim and increases effective contact, but it does not turn the shoulder into a deeply constrained hip-like socket. Capsular support is not uniform around the joint. Understanding this balance explains how a highly mobile joint can be stable during coordinated movement yet vulnerable when forces or supports change."
+    },
+    {
+      "id": "rotator-cuff-shoulder-relations",
+      "kind": "Relationship recall",
+      "prompt": "In glenohumeral joint and rotator cuff, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Shoulder girdle muscles move the scapula and humerus. For oral exams, memorize each muscle by origin-region, insertion, nerve, and action rather than isolated lists.\n\nTrapezius moves scapula and is supplied by accessory nerve. Latissimus dorsi extends, adducts, and medially rotates humerus; supplied by thoracodorsal nerve. Serratus anterior protracts and rotates scapula; supplied by long thoracic nerve. Rhomboids retract scapula; supplied by dorsal scapular nerve. Deltoid abducts the arm after initiation by supraspinatus; supplied by axillary nerve."
+    },
+    {
+      "id": "rotator-cuff-shoulder-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Teres minor” to the question “Which muscle is not part of the rotator cuff?” Explain what needs correcting.",
+      "answer": "Teres major. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+    },
+    {
+      "id": "rotator-cuff-shoulder-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw humeral head and glenoid, placing the four cuff tendons around the joint and teres major outside the cuff group.",
+      "answer": "Check your labels against these relationships: The shoulder joint is a multiaxial ball-and-socket joint between the humeral head and glenoid cavity. It is highly mobile but relatively unstable. Stability depends on the glenoid labrum, capsule, ligaments, and especially the rotator cuff.\n\nSurfaces: humeral head and glenoid cavity. Capsule attaches to glenoid margin and anatomical neck of humerus. Labrum deepens the glenoid socket. Rotator cuff muscles: supraspinatus, infraspinatus, teres minor, subscapularis. Supraspinatus initiates abduction. Subscapularis medially rotates; infraspinatus and teres minor laterally rotate. The cuff consists of supraspinatus, infraspinatus, teres minor and subscapularis. Their tendons blend with the capsule and help center the humeral head during movement. Deltoid contributes powerful elevation, while serratus anterior and trapezius rotate the scapula. Traditional angular rules about which muscle starts or continues abduction are teaching approximations; muscles overlap in action. Teres major shares a regional name with teres minor but is not a cuff muscle and has a different action and nerve supply."
+    }
+  ],
+  "sourceSections": [
+    "16. Glenohumeral Joint and Rotator Cuff",
+    "17. Shoulder Girdle Muscles"
+  ],
+  "furtherReading": {
+    "title": "Pectoral girdle and upper limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

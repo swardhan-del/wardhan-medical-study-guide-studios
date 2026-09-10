@@ -1,0 +1,136 @@
+{
+  "volume": 4,
+  "order": 29,
+  "lesson": {
+    "id": "face-palate-sense-development",
+    "subject": "anatomy",
+    "title": "Development of face, palate and special senses",
+    "summary": "Inductive interactions connect tissues with different origins.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Development of face, palate and special senses",
+      "embryology"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "40. Face, Palate, Tongue, and Thyroid Development; 45. Skull, Face, Palate, Tooth, and Salivary Development; 46. Eye, Ear, Pituitary, and Neural Crest Derivatives",
+    "steps": [
+      {
+        "title": "Face, Palate, Tongue, and Thyroid Development",
+        "body": "Face and palate development depend on fusion of facial prominences and palatal shelves. Tongue development explains mixed cranial nerve innervation. Thyroid descends from foramen cecum region.\n\nFrontonasal, maxillary, and mandibular prominences shape face. Primary palate forms anterior palate region; secondary palate forms most hard and soft palate. Failure of fusion can produce cleft lip and/or cleft palate. Anterior tongue develops mainly from first arch territory, explaining V3 general sensation. Posterior tongue relates to third arch, explaining IX supply. Thyroid descends from foramen cecum through thyroglossal duct; remnants can form thyroglossal cysts."
+      },
+      {
+        "title": "Skull, Face, Palate, Tooth, and Salivary Development",
+        "body": "Head and neck skeletal development combines neural crest and mesoderm with both intramembranous and endochondral ossification. Facial and palatal fusion defects are classic oral exam traps.\n\nNeural crest contributes heavily to facial skeleton, connective tissue, odontoblasts, and cranial ganglia/supporting tissues. Membranous neurocranium forms much of the cranial vault by intramembranous ossification. Chondrocranium forms much of the cranial base by endochondral ossification. Face forms from frontonasal, maxillary, and mandibular prominences around the stomodeum. Upper lip depends on fusion of maxillary prominences with medial nasal prominences. Secondary palate forms from palatal shelves; failure of shelf elevation/fusion causes cleft palate. Enamel comes from ectodermal enamel organ; dentin and pulp come from neural crest-derived dental papilla. Major salivary glands arise as epithelial buds growing into surrounding mesenchyme."
+      },
+      {
+        "title": "Eye, Ear, Pituitary, and Neural Crest Derivatives",
+        "body": "Sensory organs develop through interactions between neuroectoderm, surface ectoderm, and neural crest/mesenchyme. The safest oral answer is to state the major primordia, then the adult derivative.\n\nOptic vesicle from diencephalon induces lens placode from surface ectoderm. Optic cup forms neural retina and retinal pigment epithelium; optic stalk contributes to optic nerve pathway. Lens comes from surface ectoderm. Otic placode forms otic vesicle, which gives membranous labyrinth for hearing and balance. Middle ear cavity and auditory tube come from first pharyngeal pouch. Pituitary has dual origin: adenohypophysis from Rathke pouch/oral ectoderm and neurohypophysis from diencephalic neuroectoderm. Neural crest contributes to sensory/autonomic ganglia, Schwann cells, melanocytes, craniofacial skeleton/connective tissue, and adrenal medulla."
+      },
+      {
+        "title": "Why do thyroid and parathyroid origins need separate developmental maps?",
+        "body": "Thyroid follicular tissue descends from a median pharyngeal origin associated with the foramen cecum and thyroglossal tract. Parathyroids arise from pouch-associated tissues and migrate along different routes, with inferior glands linked to third-pouch descent. Their final adjacency in the neck does not mean they began as one gland. Likewise, anterior and posterior pituitary have different embryonic contributions. Adult neighbors can have distinct lineages, so migration explains ectopic positions more effectively than simply memorizing normal final locations."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+      }
+    ],
+    "question": {
+      "prompt": "Which embryonic source forms the lens?",
+      "options": [
+        {
+          "text": "Surface ectoderm",
+          "reason": "Answer: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+        },
+        {
+          "text": "Optic-cup neural retina",
+          "reason": "The correct relationship is: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+        },
+        {
+          "text": "First pharyngeal pouch",
+          "reason": "The correct relationship is: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain development of face, palate and special senses using the main anatomical relationships, then justify your answer to: Which embryonic source forms the lens?",
+      "answer": "Answer: Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+    },
+    "related": [
+      "pharyngeal-arch-development",
+      "neural-tube-development"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 11,
+    "objectives": [
+      "Describe the location and organization of development of face, palate and special senses.",
+      "Answer with anatomical reasons: Which embryonic source forms the lens?",
+      "Draw lens placode opposite optic cup, then add a separate palate diagram marking primary and secondary palate fusion."
+    ],
+    "prerequisites": [
+      "pharyngeal-arch-development"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which embryonic source forms the lens? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Surface ectoderm. Inductive interactions connect tissues with different origins.",
+        "The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation.",
+        "A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw lens placode opposite optic cup, then add a separate palate diagram marking primary and secondary palate fusion.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Surface ectoderm",
+      "Inductive interactions connect tissues with different origins.",
+      "The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers."
+    ]
+  },
+  "practice": [
+    {
+      "id": "face-palate-sense-development-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why do thyroid and parathyroid origins need separate developmental maps?",
+      "answer": "Thyroid follicular tissue descends from a median pharyngeal origin associated with the foramen cecum and thyroglossal tract. Parathyroids arise from pouch-associated tissues and migrate along different routes, with inferior glands linked to third-pouch descent. Their final adjacency in the neck does not mean they began as one gland. Likewise, anterior and posterior pituitary have different embryonic contributions. Adult neighbors can have distinct lineages, so migration explains ectopic positions more effectively than simply memorizing normal final locations."
+    },
+    {
+      "id": "face-palate-sense-development-relations",
+      "kind": "Relationship recall",
+      "prompt": "In development of face, palate and special senses, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Head and neck skeletal development combines neural crest and mesoderm with both intramembranous and endochondral ossification. Facial and palatal fusion defects are classic oral exam traps.\n\nNeural crest contributes heavily to facial skeleton, connective tissue, odontoblasts, and cranial ganglia/supporting tissues. Membranous neurocranium forms much of the cranial vault by intramembranous ossification. Chondrocranium forms much of the cranial base by endochondral ossification. Face forms from frontonasal, maxillary, and mandibular prominences around the stomodeum. Upper lip depends on fusion of maxillary prominences with medial nasal prominences. Secondary palate forms from palatal shelves; failure of shelf elevation/fusion causes cleft palate. Enamel comes from ectodermal enamel organ; dentin and pulp come from neural crest-derived dental papilla. Major salivary glands arise as epithelial buds growing into surrounding mesenchyme."
+    },
+    {
+      "id": "face-palate-sense-development-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Optic-cup neural retina” to the question “Which embryonic source forms the lens?” Explain what needs correcting.",
+      "answer": "Surface ectoderm. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+    },
+    {
+      "id": "face-palate-sense-development-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw lens placode opposite optic cup, then add a separate palate diagram marking primary and secondary palate fusion.",
+      "answer": "Check your labels against these relationships: Face and palate development depend on fusion of facial prominences and palatal shelves. Tongue development explains mixed cranial nerve innervation. Thyroid descends from foramen cecum region.\n\nFrontonasal, maxillary, and mandibular prominences shape face. Primary palate forms anterior palate region; secondary palate forms most hard and soft palate. Failure of fusion can produce cleft lip and/or cleft palate. Anterior tongue develops mainly from first arch territory, explaining V3 general sensation. Posterior tongue relates to third arch, explaining IX supply. Thyroid descends from foramen cecum through thyroglossal duct; remnants can form thyroglossal cysts. Inductive interactions connect tissues with different origins. The optic vesicle induces a surface ectodermal lens placode, while the optic cup forms retinal layers. The otic placode forms the membranous labyrinth; first-pouch endoderm forms middle-ear cavity and auditory tube. Palatal shelves elevate and fuse to form the secondary palate, while facial prominences contribute to lip formation. A cleft lip and cleft palate may coexist, but they involve different fusion events and should be mapped separately."
+    }
+  ],
+  "sourceSections": [
+    "40. Face, Palate, Tongue, and Thyroid Development",
+    "45. Skull, Face, Palate, Tooth, and Salivary Development",
+    "46. Eye, Ear, Pituitary, and Neural Crest Derivatives"
+  ],
+  "furtherReading": {
+    "title": "Embryonic development",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

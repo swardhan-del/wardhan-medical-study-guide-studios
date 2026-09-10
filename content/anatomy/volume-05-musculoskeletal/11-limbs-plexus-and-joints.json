@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 11,
+  "lesson": {
+    "id": "limbs-plexus-and-joints",
+    "subject": "anatomy",
+    "title": "Brachial plexus from roots to terminal nerves",
+    "summary": "Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Brachial plexus from roots to terminal nerves",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "20. Brachial Plexus",
+    "steps": [
+      {
+        "title": "Brachial Plexus",
+        "body": "The brachial plexus is formed by roots C5-T1 and is organized as roots, trunks, divisions, cords, and terminal branches. The terminal branches are musculocutaneous, axillary, radial, median, and ulnar nerves."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Roots: C5, C6, C7, C8, T1. Trunks: upper, middle, lower. Divisions: anterior and posterior. Cords: lateral, posterior, medial. Terminal branches: musculocutaneous, axillary, radial, median, ulnar. Important side branches: dorsal scapular, long thoracic, suprascapular, pectoral, subscapular, thoracodorsal."
+      },
+      {
+        "title": "Why does an upper-trunk lesion differ from an isolated axillary nerve lesion?",
+        "body": "The upper trunk contains contributions that later distribute into several terminal nerves. Injury there can affect shoulder abduction, elbow flexion and other C5-C6-dominant actions through multiple routes. An isolated axillary lesion primarily affects its own targets such as deltoid and teres minor with a more limited sensory territory. Root and trunk patterns are therefore broader than one distal nerve territory. To localize, trace the affected muscles backward to their nerves and look for the lowest common branching point."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+      }
+    ],
+    "question": {
+      "prompt": "Relative to what are the brachial plexus cords named?",
+      "options": [
+        {
+          "text": "Second part of the axillary artery",
+          "reason": "Answer: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+        },
+        {
+          "text": "The three scalene muscles",
+          "reason": "The correct relationship is: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+        },
+        {
+          "text": "The radial head",
+          "reason": "The correct relationship is: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain brachial plexus from roots to terminal nerves using the main anatomical relationships, then justify your answer to: Relative to what are the brachial plexus cords named?",
+      "answer": "Answer: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+    },
+    "related": [
+      "axilla-scapular-spaces",
+      "arm-elbow"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of brachial plexus from roots to terminal nerves.",
+      "Answer with anatomical reasons: Relative to what are the brachial plexus cords named?",
+      "Draw C5-T1 roots through trunks, divisions and cords to the five terminal branches, circling the posterior-division convergence."
+    ],
+    "prerequisites": [
+      "axilla-scapular-spaces"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Relative to what are the brachial plexus cords named? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords.",
+        "Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles.",
+        "Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw C5-T1 roots through trunks, divisions and cords to the five terminal branches, circling the posterior-division convergence.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Second part of the axillary artery",
+      "Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords.",
+      "Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves."
+    ]
+  },
+  "practice": [
+    {
+      "id": "limbs-plexus-and-joints-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does an upper-trunk lesion differ from an isolated axillary nerve lesion?",
+      "answer": "The upper trunk contains contributions that later distribute into several terminal nerves. Injury there can affect shoulder abduction, elbow flexion and other C5-C6-dominant actions through multiple routes. An isolated axillary lesion primarily affects its own targets such as deltoid and teres minor with a more limited sensory territory. Root and trunk patterns are therefore broader than one distal nerve territory. To localize, trace the affected muscles backward to their nerves and look for the lowest common branching point."
+    },
+    {
+      "id": "limbs-plexus-and-joints-relations",
+      "kind": "Relationship recall",
+      "prompt": "In brachial plexus from roots to terminal nerves, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Roots: C5, C6, C7, C8, T1. Trunks: upper, middle, lower. Divisions: anterior and posterior. Cords: lateral, posterior, medial. Terminal branches: musculocutaneous, axillary, radial, median, ulnar. Important side branches: dorsal scapular, long thoracic, suprascapular, pectoral, subscapular, thoracodorsal."
+    },
+    {
+      "id": "limbs-plexus-and-joints-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “The three scalene muscles” to the question “Relative to what are the brachial plexus cords named?” Explain what needs correcting.",
+      "answer": "Second part of the axillary artery. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+    },
+    {
+      "id": "limbs-plexus-and-joints-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw C5-T1 roots through trunks, divisions and cords to the five terminal branches, circling the posterior-division convergence.",
+      "answer": "Check your labels against these relationships: The brachial plexus is formed by roots C5-T1 and is organized as roots, trunks, divisions, cords, and terminal branches. The terminal branches are musculocutaneous, axillary, radial, median, and ulnar nerves. Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords. Posterior divisions contribute to the posterior cord, which gives axillary and radial nerves. The lateral and medial cords contribute to the median nerve; musculocutaneous and ulnar arise from lateral and medial cords respectively. Root injury and terminal-nerve injury therefore produce different patterns across muscles. Preserve the branching sequence rather than memorizing five terminal nerves without their upstream relationships."
+    }
+  ],
+  "sourceSections": [
+    "20. Brachial Plexus"
+  ],
+  "furtherReading": {
+    "title": "Peripheral nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

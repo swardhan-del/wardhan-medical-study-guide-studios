@@ -1,0 +1,131 @@
+{
+  "volume": 3,
+  "order": 3,
+  "lesson": {
+    "id": "pelvic-foramina-nerves",
+    "subject": "anatomy",
+    "title": "Sciatic foramina and pelvic nerve routes",
+    "summary": "Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments.",
+    "tags": [
+      "anatomy",
+      "Volume 3",
+      "Pelvis and urogenital anatomy",
+      "Sciatic foramina and pelvic nerve routes",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-3",
+    "section": "4. Greater and Lesser Sciatic Foramina; 7. Lumbar Plexus, Sacral Plexus, and Pudendal Nerve",
+    "steps": [
+      {
+        "title": "Greater and Lesser Sciatic Foramina",
+        "body": "The greater and lesser sciatic foramina are openings created by the sacrospinous and sacrotuberous ligaments. They transmit major nerves and vessels between pelvis, gluteal region, and perineum.\n\nGreater sciatic foramen transmits piriformis and structures passing above or below piriformis. Structures above piriformis: superior gluteal nerve and vessels. Structures below piriformis: inferior gluteal nerve/vessels, sciatic nerve, posterior femoral cutaneous nerve, pudendal nerve, internal pudendal vessels, nerve to obturator internus, nerve to quadratus femoris. Lesser sciatic foramen transmits tendon of obturator internus plus pudendal nerve/internal pudendal vessels returning into the perineum."
+      },
+      {
+        "title": "Lumbar Plexus, Sacral Plexus, and Pudendal Nerve",
+        "body": "The lumbar plexus arises mainly from L1-L4 and the sacral plexus from L4-S4. The pudendal nerve, from S2-S4, is the major somatic nerve of the perineum and supplies external urethral and anal sphincter regions.\n\nLumbar plexus branches include iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous, femoral, and obturator nerves. Sacral plexus branches include superior gluteal, inferior gluteal, sciatic, posterior femoral cutaneous, pudendal, and muscular branches. Pudendal nerve exits the pelvis below piriformis, crosses the ischial spine, enters lesser sciatic foramen, runs in pudendal canal, then gives inferior rectal, perineal, and dorsal nerve of penis/clitoris. Pudendal S2-S4 supply serves external sphincters and perineal structures; direct sacral branches also supply pelvic-floor muscles."
+      },
+      {
+        "title": "How do somatic pudendal fibers differ from pelvic splanchnic fibers despite shared root levels?",
+        "body": "Both involve S2-S4, but root level does not specify function. Pudendal nerve carries somatic sensory and motor fibers to perineal skin and skeletal muscles, including external sphincter pathways. Pelvic splanchnic nerves carry parasympathetic preganglionic fibers to pelvic plexuses and viscera, with visceral afferents also using related routes. They follow different courses and targets. A learner who labels every S2-S4 branch pudendal would lose the distinction between voluntary skeletal control and visceral autonomic regulation."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis."
+      }
+    ],
+    "question": {
+      "prompt": "What passes above piriformis through the greater sciatic foramen?",
+      "options": [
+        {
+          "text": "Superior gluteal nerve and vessels",
+          "reason": "Answer: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis."
+        },
+        {
+          "text": "Pudendal nerve and internal pudendal vessels",
+          "reason": "The correct relationship is: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis."
+        },
+        {
+          "text": "Sciatic nerve in the typical arrangement",
+          "reason": "The correct relationship is: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain sciatic foramina and pelvic nerve routes using the main anatomical relationships, then justify your answer to: What passes above piriformis through the greater sciatic foramen?",
+      "answer": "Answer: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis."
+    },
+    "related": [
+      "pelvic-floor-support",
+      "pelvic-vessels-lymph"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of sciatic foramina and pelvic nerve routes.",
+      "Answer with anatomical reasons: What passes above piriformis through the greater sciatic foramen?",
+      "Draw both sciatic foramina and trace the pudendal route with two crossings rather than one."
+    ],
+    "prerequisites": [
+      "pelvic-floor-support"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What passes above piriformis through the greater sciatic foramen? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments.",
+        "Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock.",
+        "Variation exists, especially in sciatic nerve division around piriformis."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw both sciatic foramina and trace the pudendal route with two crossings rather than one.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Superior gluteal nerve and vessels",
+      "Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments.",
+      "Most major exiting structures are inferior to it."
+    ]
+  },
+  "practice": [
+    {
+      "id": "pelvic-foramina-nerves-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How do somatic pudendal fibers differ from pelvic splanchnic fibers despite shared root levels?",
+      "answer": "Both involve S2-S4, but root level does not specify function. Pudendal nerve carries somatic sensory and motor fibers to perineal skin and skeletal muscles, including external sphincter pathways. Pelvic splanchnic nerves carry parasympathetic preganglionic fibers to pelvic plexuses and viscera, with visceral afferents also using related routes. They follow different courses and targets. A learner who labels every S2-S4 branch pudendal would lose the distinction between voluntary skeletal control and visceral autonomic regulation."
+    },
+    {
+      "id": "pelvic-foramina-nerves-relations",
+      "kind": "Relationship recall",
+      "prompt": "In sciatic foramina and pelvic nerve routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The lumbar plexus arises mainly from L1-L4 and the sacral plexus from L4-S4. The pudendal nerve, from S2-S4, is the major somatic nerve of the perineum and supplies external urethral and anal sphincter regions.\n\nLumbar plexus branches include iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous, femoral, and obturator nerves. Sacral plexus branches include superior gluteal, inferior gluteal, sciatic, posterior femoral cutaneous, pudendal, and muscular branches. Pudendal nerve exits the pelvis below piriformis, crosses the ischial spine, enters lesser sciatic foramen, runs in pudendal canal, then gives inferior rectal, perineal, and dorsal nerve of penis/clitoris. Pudendal S2-S4 supply serves external sphincters and perineal structures; direct sacral branches also supply pelvic-floor muscles."
+    },
+    {
+      "id": "pelvic-foramina-nerves-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Pudendal nerve and internal pudendal vessels” to the question “What passes above piriformis through the greater sciatic foramen?” Explain what needs correcting.",
+      "answer": "Superior gluteal nerve and vessels. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis."
+    },
+    {
+      "id": "pelvic-foramina-nerves-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw both sciatic foramina and trace the pudendal route with two crossings rather than one.",
+      "answer": "Check your labels against these relationships: The greater and lesser sciatic foramina are openings created by the sacrospinous and sacrotuberous ligaments. They transmit major nerves and vessels between pelvis, gluteal region, and perineum.\n\nGreater sciatic foramen transmits piriformis and structures passing above or below piriformis. Structures above piriformis: superior gluteal nerve and vessels. Structures below piriformis: inferior gluteal nerve/vessels, sciatic nerve, posterior femoral cutaneous nerve, pudendal nerve, internal pudendal vessels, nerve to obturator internus, nerve to quadratus femoris. Lesser sciatic foramen transmits tendon of obturator internus plus pudendal nerve/internal pudendal vessels returning into the perineum. Ligaments convert notches into foramina; piriformis then divides the greater foramen into useful compartments. Most major exiting structures are inferior to it. The pudendal bundle leaves below piriformis and turns around the ischial spine to enter the perineum through the lesser foramen. This is a route with an exit and return, not a nerve ending in the buttock. Variation exists, especially in sciatic nerve division around piriformis."
+    }
+  ],
+  "sourceSections": [
+    "4. Greater and Lesser Sciatic Foramina",
+    "7. Lumbar Plexus, Sacral Plexus, and Pudendal Nerve"
+  ],
+  "furtherReading": {
+    "title": "Peripheral nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

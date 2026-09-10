@@ -1,0 +1,136 @@
+{
+  "volume": 2,
+  "order": 17,
+  "lesson": {
+    "id": "abdominal-arterial-territories",
+    "subject": "anatomy",
+    "title": "Celiac, superior mesenteric and inferior mesenteric territories",
+    "summary": "The three unpaired arteries organize gut territories, but anastomoses bridge their borders.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Celiac, superior mesenteric and inferior mesenteric territories",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "28. Celiac Trunk; 29. Superior Mesenteric Artery; 30. Inferior Mesenteric Artery",
+    "steps": [
+      {
+        "title": "Celiac Trunk",
+        "body": "The celiac trunk is the unpaired foregut artery from the abdominal aorta near T12/L1. Its classic branches are left gastric, splenic, and common hepatic arteries.\n\nLeft gastric supplies abdominal esophagus and lesser curvature region. Splenic artery supplies spleen, pancreas, fundus, and greater curvature through branches. Name its branches clearly: pancreatic branches, short gastric arteries to the fundus, left gastro-omental artery along the greater curvature, and terminal splenic branches to the spleen. Common hepatic gives gastroduodenal artery and continues toward proper hepatic artery. The celiac territory includes abdominal foregut organs and the spleen; the spleen is mesodermal rather than a gut endoderm derivative."
+      },
+      {
+        "title": "Superior Mesenteric Artery",
+        "body": "The superior mesenteric artery supplies the midgut from distal duodenum to approximately proximal two-thirds of transverse colon. It arises from the abdominal aorta and passes anterior to the third part of the duodenum.\n\nBranches include inferior pancreaticoduodenal, jejunal and ileal arteries, ileocolic, right colic, and middle colic arteries. It supplies distal duodenum, jejunum, ileum, cecum, appendix, ascending colon, and proximal transverse colon. Superior mesenteric vein joins splenic vein behind the neck of pancreas to form portal vein."
+      },
+      {
+        "title": "Inferior Mesenteric Artery",
+        "body": "The inferior mesenteric artery supplies the hindgut from distal one-third of transverse colon to upper anal canal. Its branches include left colic, sigmoid, and superior rectal arteries.\n\nLeft colic supplies descending colon and participates in marginal artery. Sigmoid arteries supply sigmoid colon. The superior rectal artery supplies the rectum. The superior rectal vein, a separate vessel, participates in portal-systemic venous connections. The marginal artery connects colic branches along the colon."
+      },
+      {
+        "title": "Why are watershed regions vulnerable despite arterial anastomoses?",
+        "body": "An anastomosis provides a possible alternative route, but its capacity depends on caliber, pressure and individual anatomy. Border territories between major arterial supplies may receive less effective flow during generalized low perfusion or proximal obstruction. The splenic flexure is a classic meeting region of superior and inferior mesenteric territories; the rectosigmoid region is another commonly discussed boundary. The existence of a marginal artery therefore does not guarantee protection. Describe the dominant sources, connecting channel and physiological limitation separately."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+      }
+    ],
+    "question": {
+      "prompt": "Which artery primarily supplies the midgut?",
+      "options": [
+        {
+          "text": "Superior mesenteric artery",
+          "reason": "Answer: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+        },
+        {
+          "text": "Celiac trunk",
+          "reason": "The correct relationship is: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+        },
+        {
+          "text": "Inferior mesenteric artery",
+          "reason": "The correct relationship is: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain celiac, superior mesenteric and inferior mesenteric territories using the main anatomical relationships, then justify your answer to: Which artery primarily supplies the midgut?",
+      "answer": "Answer: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+    },
+    "related": [
+      "rectum-anal-transition",
+      "abdomen-portal-relations"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 11,
+    "objectives": [
+      "Describe the location and organization of celiac, superior mesenteric and inferior mesenteric territories.",
+      "Answer with anatomical reasons: Which artery primarily supplies the midgut?",
+      "Draw the celiac, superior mesenteric and inferior mesenteric origins and connect them to foregut, midgut and hindgut territories."
+    ],
+    "prerequisites": [
+      "rectum-anal-transition"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which artery primarily supplies the midgut? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders.",
+        "Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection.",
+        "Both involve vessels, but the pressures, directions and clinical implications differ."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the celiac, superior mesenteric and inferior mesenteric origins and connect them to foregut, midgut and hindgut territories.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Superior mesenteric artery",
+      "The three unpaired arteries organize gut territories, but anastomoses bridge their borders.",
+      "Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches."
+    ]
+  },
+  "practice": [
+    {
+      "id": "abdominal-arterial-territories-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why are watershed regions vulnerable despite arterial anastomoses?",
+      "answer": "An anastomosis provides a possible alternative route, but its capacity depends on caliber, pressure and individual anatomy. Border territories between major arterial supplies may receive less effective flow during generalized low perfusion or proximal obstruction. The splenic flexure is a classic meeting region of superior and inferior mesenteric territories; the rectosigmoid region is another commonly discussed boundary. The existence of a marginal artery therefore does not guarantee protection. Describe the dominant sources, connecting channel and physiological limitation separately."
+    },
+    {
+      "id": "abdominal-arterial-territories-relations",
+      "kind": "Relationship recall",
+      "prompt": "In celiac, superior mesenteric and inferior mesenteric territories, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The superior mesenteric artery supplies the midgut from distal duodenum to approximately proximal two-thirds of transverse colon. It arises from the abdominal aorta and passes anterior to the third part of the duodenum.\n\nBranches include inferior pancreaticoduodenal, jejunal and ileal arteries, ileocolic, right colic, and middle colic arteries. It supplies distal duodenum, jejunum, ileum, cecum, appendix, ascending colon, and proximal transverse colon. Superior mesenteric vein joins splenic vein behind the neck of pancreas to form portal vein."
+    },
+    {
+      "id": "abdominal-arterial-territories-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Celiac trunk” to the question “Which artery primarily supplies the midgut?” Explain what needs correcting.",
+      "answer": "Superior mesenteric artery. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+    },
+    {
+      "id": "abdominal-arterial-territories-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the celiac, superior mesenteric and inferior mesenteric origins and connect them to foregut, midgut and hindgut territories.",
+      "answer": "Check your labels against these relationships: The celiac trunk is the unpaired foregut artery from the abdominal aorta near T12/L1. Its classic branches are left gastric, splenic, and common hepatic arteries.\n\nLeft gastric supplies abdominal esophagus and lesser curvature region. Splenic artery supplies spleen, pancreas, fundus, and greater curvature through branches. Name its branches clearly: pancreatic branches, short gastric arteries to the fundus, left gastro-omental artery along the greater curvature, and terminal splenic branches to the spleen. Common hepatic gives gastroduodenal artery and continues toward proper hepatic artery. The celiac territory includes abdominal foregut organs and the spleen; the spleen is mesodermal rather than a gut endoderm derivative. The three unpaired arteries organize gut territories, but anastomoses bridge their borders. Pancreaticoduodenal arcades connect celiac and superior mesenteric supply; the marginal artery links colic branches. At the splenic flexure, superior and inferior mesenteric territories meet, creating a potential watershed when perfusion is poor. Do not confuse an arterial connection with a portal-systemic venous connection. Both involve vessels, but the pressures, directions and clinical implications differ."
+    }
+  ],
+  "sourceSections": [
+    "28. Celiac Trunk",
+    "29. Superior Mesenteric Artery",
+    "30. Inferior Mesenteric Artery"
+  ],
+  "furtherReading": {
+    "title": "Circulatory pathways",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 6,
+  "lesson": {
+    "id": "spinal-discs-ligaments",
+    "subject": "anatomy",
+    "title": "Intervertebral discs and spinal ligaments",
+    "summary": "The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Intervertebral discs and spinal ligaments",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "8. Intervertebral Discs and Vertebral Ligaments",
+    "steps": [
+      {
+        "title": "Intervertebral Discs and Vertebral Ligaments",
+        "body": "An intervertebral disc consists of an outer annulus fibrosus and inner nucleus pulposus. The nucleus pulposus is derived from the notochord. Disc herniation usually occurs posterolaterally because the posterior longitudinal ligament is weaker laterally."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Annulus fibrosus distributes load. Nucleus pulposus absorbs compression. Anterior longitudinal ligament resists hyperextension. Posterior longitudinal ligament limits posterior disc prolapse. Ligamentum flavum is elastic and lies between laminae. Supraspinous ligament continues superiorly as the nuchal ligament."
+      },
+      {
+        "title": "Why can posterior longitudinal ligament support coexist with posterolateral disc herniation?",
+        "body": "The ligament reinforces posterior vertebral-body and disc surfaces but does not create a uniform impenetrable barrier around the entire disc circumference. Posterolateral regions can remain vulnerable, and annular degeneration or loading patterns influence failure. The location of displaced disc material determines which root is threatened. Thus naming the ligament does not predict the outcome without a sectional map. Distinguish the annulus, ligament, canal, foraminal exit and traversing root before reasoning from a disc level to a symptom distribution."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+      }
+    ],
+    "question": {
+      "prompt": "A usual posterolateral L4-L5 disc herniation most often affects which root?",
+      "options": [
+        {
+          "text": "Traversing L5 root",
+          "reason": "Answer: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+        },
+        {
+          "text": "Exiting L4 root in every case",
+          "reason": "The correct relationship is: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+        },
+        {
+          "text": "C1 root",
+          "reason": "The correct relationship is: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain intervertebral discs and spinal ligaments using the main anatomical relationships, then justify your answer to: A usual posterolateral L4-L5 disc herniation most often affects which root?",
+      "answer": "Answer: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+    },
+    "related": [
+      "craniovertebral-joints",
+      "back-muscle-layers"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of intervertebral discs and spinal ligaments.",
+      "Answer with anatomical reasons: A usual posterolateral L4-L5 disc herniation most often affects which root?",
+      "Draw an L4-L5 disc with both exiting L4 and traversing L5 roots and mark two different herniation positions."
+    ],
+    "prerequisites": [
+      "craniovertebral-joints"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "A usual posterolateral L4-L5 disc herniation most often affects which root? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads.",
+        "A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible.",
+        "Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw an L4-L5 disc with both exiting L4 and traversing L5 roots and mark two different herniation positions.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Traversing L5 root",
+      "The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads.",
+      "A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root."
+    ]
+  },
+  "practice": [
+    {
+      "id": "spinal-discs-ligaments-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why can posterior longitudinal ligament support coexist with posterolateral disc herniation?",
+      "answer": "The ligament reinforces posterior vertebral-body and disc surfaces but does not create a uniform impenetrable barrier around the entire disc circumference. Posterolateral regions can remain vulnerable, and annular degeneration or loading patterns influence failure. The location of displaced disc material determines which root is threatened. Thus naming the ligament does not predict the outcome without a sectional map. Distinguish the annulus, ligament, canal, foraminal exit and traversing root before reasoning from a disc level to a symptom distribution."
+    },
+    {
+      "id": "spinal-discs-ligaments-relations",
+      "kind": "Relationship recall",
+      "prompt": "In intervertebral discs and spinal ligaments, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Annulus fibrosus distributes load. Nucleus pulposus absorbs compression. Anterior longitudinal ligament resists hyperextension. Posterior longitudinal ligament limits posterior disc prolapse. Ligamentum flavum is elastic and lies between laminae. Supraspinous ligament continues superiorly as the nuchal ligament."
+    },
+    {
+      "id": "spinal-discs-ligaments-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Exiting L4 root in every case” to the question “A usual posterolateral L4-L5 disc herniation most often affects which root?” Explain what needs correcting.",
+      "answer": "Traversing L5 root. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+    },
+    {
+      "id": "spinal-discs-ligaments-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw an L4-L5 disc with both exiting L4 and traversing L5 roots and mark two different herniation positions.",
+      "answer": "Check your labels against these relationships: An intervertebral disc consists of an outer annulus fibrosus and inner nucleus pulposus. The nucleus pulposus is derived from the notochord. Disc herniation usually occurs posterolaterally because the posterior longitudinal ligament is weaker laterally. The annulus resists tensile stresses around a hydrated nucleus, distributing compressive loads. A usual posterolateral herniation can reach the root traversing toward the next lower exit, whereas a foraminal or far-lateral lesion can affect the exiting root. Thus the disc level alone is insufficient without the lesion's position. The posterior longitudinal ligament provides support but does not make posterior herniation impossible. Distinguish the elastic ligamenta flava between laminae from the longitudinal ligaments on vertebral bodies."
+    }
+  ],
+  "sourceSections": [
+    "8. Intervertebral Discs and Vertebral Ligaments"
+  ],
+  "furtherReading": {
+    "title": "Vertebral column",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

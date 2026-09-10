@@ -1,0 +1,136 @@
+{
+  "volume": 3,
+  "order": 5,
+  "lesson": {
+    "id": "kidney-organization",
+    "subject": "anatomy",
+    "title": "Kidney coverings, hilum and collecting system",
+    "summary": "Urine and blood travel through different branching systems.",
+    "tags": [
+      "anatomy",
+      "Volume 3",
+      "Pelvis and urogenital anatomy",
+      "Kidney coverings, hilum and collecting system",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-3",
+    "section": "9. Kidney Position, Capsules, Hilum, and Sinus; 10. Kidney Internal Morphology and Collecting System; 11. Kidney Relations, Vessels, Lymphatics, and Nerves",
+    "steps": [
+      {
+        "title": "Kidney Position, Capsules, Hilum, and Sinus",
+        "body": "The kidneys are paired retroperitoneal organs on the posterior abdominal wall, roughly from T12 to L3, with the right kidney slightly lower because of the liver. Each kidney has fibrous capsule, perirenal fat, renal fascia, and pararenal fat. The medial hilum opens into the renal sinus.\n\nRight kidney lies slightly lower than left. Capsules from inside outward: fibrous capsule, perirenal fat/adipose capsule, renal fascia, pararenal fat. Hilum is the medial entry-exit cleft. Renal sinus contains renal pelvis, major and minor calyces, renal vessels, lymphatics, nerves, and fat. Typical anterior-posterior order at hilum: vein, artery, pelvis/ureter."
+      },
+      {
+        "title": "Kidney Internal Morphology and Collecting System",
+        "body": "In coronal section, the kidney has cortex externally and medulla internally. Medullary pyramids project as renal papillae into minor calyces; minor calyces join into major calyces, which form the renal pelvis and then ureter.\n\nCortex includes cortical labyrinth and medullary rays. Medulla is organized into renal pyramids. Renal columns are cortical tissue between pyramids. Papilla drains into minor calyx; minor calyces drain into major calyces; major calyces drain into renal pelvis. A renal lobe is a pyramid plus overlying cortex; a cortical lobule centers around a medullary ray."
+      },
+      {
+        "title": "Kidney Relations, Vessels, Lymphatics, and Nerves",
+        "body": "Kidney relations differ on right and left. The right kidney relates anteriorly to liver, duodenum, right colic flexure, small intestine, and right suprarenal gland. The left kidney relates to stomach, spleen, pancreas, left colic flexure, small intestine, descending colon, and left suprarenal gland. Renal arteries arise from the abdominal aorta and renal veins drain to the inferior vena cava.\n\nRenal arteries are paired visceral branches of the abdominal aorta. Left renal vein is longer and crosses anterior to aorta; it receives left gonadal and left suprarenal veins. Right renal vein is shorter and drains directly to IVC. Lymph drains mainly to lumbar/para-aortic nodes. Autonomic fibers reach kidney through renal plexus."
+      },
+      {
+        "title": "Why should a renal lobe not be confused with a cortical lobule?",
+        "body": "A renal lobe includes a medullary pyramid and its associated overlying cortex. A cortical lobule is a smaller cortical organization centered around a medullary ray and associated tubules. Renal columns are cortex extending between pyramids, despite their position among medullary structures. These different scales are easy to confuse when moving between gross sections and microscopic images. Start by locating cortex, medulla, papilla and collecting space, then add the smaller histological units without replacing the gross landmarks."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+      }
+    ],
+    "question": {
+      "prompt": "Which structure directly receives urine from a renal papilla?",
+      "options": [
+        {
+          "text": "Minor calyx",
+          "reason": "Answer: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+        },
+        {
+          "text": "Renal vein",
+          "reason": "The correct relationship is: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+        },
+        {
+          "text": "Ureter",
+          "reason": "The correct relationship is: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain kidney coverings, hilum and collecting system using the main anatomical relationships, then justify your answer to: Which structure directly receives urine from a renal papilla?",
+      "answer": "Answer: Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+    },
+    "related": [
+      "pelvic-vessels-lymph",
+      "pelvis-urinary-route"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 11,
+    "objectives": [
+      "Describe the location and organization of kidney coverings, hilum and collecting system.",
+      "Answer with anatomical reasons: Which structure directly receives urine from a renal papilla?",
+      "Draw one renal pyramid with cortex above it, a papilla entering a minor calyx, and arrows continuing to the ureter."
+    ],
+    "prerequisites": [
+      "pelvic-vessels-lymph"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which structure directly receives urine from a renal papilla? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Minor calyx. Urine and blood travel through different branching systems.",
+        "Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis.",
+        "This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw one renal pyramid with cortex above it, a papilla entering a minor calyx, and arrows continuing to the ureter.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Minor calyx",
+      "Urine and blood travel through different branching systems.",
+      "Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward."
+    ]
+  },
+  "practice": [
+    {
+      "id": "kidney-organization-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why should a renal lobe not be confused with a cortical lobule?",
+      "answer": "A renal lobe includes a medullary pyramid and its associated overlying cortex. A cortical lobule is a smaller cortical organization centered around a medullary ray and associated tubules. Renal columns are cortex extending between pyramids, despite their position among medullary structures. These different scales are easy to confuse when moving between gross sections and microscopic images. Start by locating cortex, medulla, papilla and collecting space, then add the smaller histological units without replacing the gross landmarks."
+    },
+    {
+      "id": "kidney-organization-relations",
+      "kind": "Relationship recall",
+      "prompt": "In kidney coverings, hilum and collecting system, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "In coronal section, the kidney has cortex externally and medulla internally. Medullary pyramids project as renal papillae into minor calyces; minor calyces join into major calyces, which form the renal pelvis and then ureter.\n\nCortex includes cortical labyrinth and medullary rays. Medulla is organized into renal pyramids. Renal columns are cortical tissue between pyramids. Papilla drains into minor calyx; minor calyces drain into major calyces; major calyces drain into renal pelvis. A renal lobe is a pyramid plus overlying cortex; a cortical lobule centers around a medullary ray."
+    },
+    {
+      "id": "kidney-organization-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Renal vein” to the question “Which structure directly receives urine from a renal papilla?” Explain what needs correcting.",
+      "answer": "Minor calyx. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+    },
+    {
+      "id": "kidney-organization-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw one renal pyramid with cortex above it, a papilla entering a minor calyx, and arrows continuing to the ureter.",
+      "answer": "Check your labels against these relationships: The kidneys are paired retroperitoneal organs on the posterior abdominal wall, roughly from T12 to L3, with the right kidney slightly lower because of the liver. Each kidney has fibrous capsule, perirenal fat, renal fascia, and pararenal fat. The medial hilum opens into the renal sinus.\n\nRight kidney lies slightly lower than left. Capsules from inside outward: fibrous capsule, perirenal fat/adipose capsule, renal fascia, pararenal fat. Hilum is the medial entry-exit cleft. Renal sinus contains renal pelvis, major and minor calyces, renal vessels, lymphatics, nerves, and fat. Typical anterior-posterior order at hilum: vein, artery, pelvis/ureter. Urine and blood travel through different branching systems. Collecting ducts end at papillae, urine enters minor then major calyces and the renal pelvis, and the ureter carries it onward. Renal arteries divide into segmental branches supplying parenchyma; the renal vein returns blood. At the hilum the usual anterior-to-posterior order is vein, artery, pelvis. This positional mnemonic describes a typical arrangement, not every branch or anatomical variant."
+    }
+  ],
+  "sourceSections": [
+    "9. Kidney Position, Capsules, Hilum, and Sinus",
+    "10. Kidney Internal Morphology and Collecting System",
+    "11. Kidney Relations, Vessels, Lymphatics, and Nerves"
+  ],
+  "furtherReading": {
+    "title": "Gross anatomy of the kidney",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

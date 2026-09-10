@@ -1,0 +1,131 @@
+{
+  "volume": 4,
+  "order": 24,
+  "lesson": {
+    "id": "basal-ganglia-diencephalon",
+    "subject": "anatomy",
+    "title": "Basal ganglia, internal capsule and diencephalon",
+    "summary": "The internal capsule is white matter between deep gray-matter structures.",
+    "tags": [
+      "anatomy",
+      "Volume 4",
+      "Head, neck and neuroanatomy",
+      "Basal ganglia, internal capsule and diencephalon",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-4",
+    "section": "34. Basal Ganglia and Internal Capsule; 35. Thalamus and Hypothalamus",
+    "steps": [
+      {
+        "title": "Basal Ganglia and Internal Capsule",
+        "body": "The basal ganglia are deep gray nuclei involved in motor control loops. The internal capsule is the major white matter highway between cortex, thalamus, brainstem, and spinal cord.\n\nCaudate nucleus has head, body, and tail. Lentiform nucleus consists of putamen and globus pallidus. Internal capsule parts: anterior limb, genu, posterior limb, retrolenticular, and sublenticular parts. Anterior limb lies between caudate head and lentiform nucleus. Posterior limb lies between thalamus and lentiform nucleus. Corticospinal fibers pass mainly through posterior limb; corticobulbar fibers pass near genu."
+      },
+      {
+        "title": "Thalamus and Hypothalamus",
+        "body": "The thalamus is the major sensory and motor relay to cortex, while the hypothalamus is the major autonomic, endocrine, homeostatic, and limbic regulatory center forming the floor and lower lateral walls of the third ventricle.\n\nThalamus lies lateral to third ventricle and medial to internal capsule. Pulvinar is the posterior thalamic expansion. Lateral geniculate nucleus relays visual information. Medial geniculate nucleus relays auditory information. Hypothalamus relates to optic chiasm, infundibulum, tuber cinereum, and mammillary bodies. Mammillary bodies are limbic structures involved in memory circuitry."
+      },
+      {
+        "title": "How do the thalamus and hypothalamus differ despite sharing the diencephalon?",
+        "body": "The thalamus participates in major sensory, motor and associative relay circuits, with nuclei specialized for different connections. The hypothalamus coordinates autonomic, endocrine and homeostatic functions through connections including the pituitary and brainstem. Both border the third ventricle but occupy different regions and networks. Lateral and medial geniculate nuclei relay visual and auditory information respectively. Do not identify a function merely from proximity to the ventricle; locate the specific nuclear region and trace its principal connections."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+      }
+    ],
+    "question": {
+      "prompt": "What lies medial to the posterior limb of the internal capsule?",
+      "options": [
+        {
+          "text": "Thalamus",
+          "reason": "Answer: Thalamus. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+        },
+        {
+          "text": "Lentiform nucleus",
+          "reason": "The correct relationship is: Thalamus. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+        },
+        {
+          "text": "Insular cortex",
+          "reason": "The correct relationship is: Thalamus. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain basal ganglia, internal capsule and diencephalon using the main anatomical relationships, then justify your answer to: What lies medial to the posterior limb of the internal capsule?",
+      "answer": "Answer: Thalamus. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+    },
+    "related": [
+      "ventricles-csf",
+      "brainstem-localization"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of basal ganglia, internal capsule and diencephalon.",
+      "Answer with anatomical reasons: What lies medial to the posterior limb of the internal capsule?",
+      "Draw an axial deep-brain section with caudate, lentiform nucleus and thalamus, then insert the V-shaped internal capsule between them."
+    ],
+    "prerequisites": [
+      "ventricles-csf"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What lies medial to the posterior limb of the internal capsule? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Thalamus. The internal capsule is white matter between deep gray-matter structures.",
+        "Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle.",
+        "Thalamic and hypothalamic functions also need to be distinguished."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw an axial deep-brain section with caudate, lentiform nucleus and thalamus, then insert the V-shaped internal capsule between them.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Thalamus",
+      "The internal capsule is white matter between deep gray-matter structures.",
+      "Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus."
+    ]
+  },
+  "practice": [
+    {
+      "id": "basal-ganglia-diencephalon-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How do the thalamus and hypothalamus differ despite sharing the diencephalon?",
+      "answer": "The thalamus participates in major sensory, motor and associative relay circuits, with nuclei specialized for different connections. The hypothalamus coordinates autonomic, endocrine and homeostatic functions through connections including the pituitary and brainstem. Both border the third ventricle but occupy different regions and networks. Lateral and medial geniculate nuclei relay visual and auditory information respectively. Do not identify a function merely from proximity to the ventricle; locate the specific nuclear region and trace its principal connections."
+    },
+    {
+      "id": "basal-ganglia-diencephalon-relations",
+      "kind": "Relationship recall",
+      "prompt": "In basal ganglia, internal capsule and diencephalon, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The thalamus is the major sensory and motor relay to cortex, while the hypothalamus is the major autonomic, endocrine, homeostatic, and limbic regulatory center forming the floor and lower lateral walls of the third ventricle.\n\nThalamus lies lateral to third ventricle and medial to internal capsule. Pulvinar is the posterior thalamic expansion. Lateral geniculate nucleus relays visual information. Medial geniculate nucleus relays auditory information. Hypothalamus relates to optic chiasm, infundibulum, tuber cinereum, and mammillary bodies. Mammillary bodies are limbic structures involved in memory circuitry."
+    },
+    {
+      "id": "basal-ganglia-diencephalon-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Lentiform nucleus” to the question “What lies medial to the posterior limb of the internal capsule?” Explain what needs correcting.",
+      "answer": "Thalamus. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+    },
+    {
+      "id": "basal-ganglia-diencephalon-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw an axial deep-brain section with caudate, lentiform nucleus and thalamus, then insert the V-shaped internal capsule between them.",
+      "answer": "Check your labels against these relationships: The basal ganglia are deep gray nuclei involved in motor control loops. The internal capsule is the major white matter highway between cortex, thalamus, brainstem, and spinal cord.\n\nCaudate nucleus has head, body, and tail. Lentiform nucleus consists of putamen and globus pallidus. Internal capsule parts: anterior limb, genu, posterior limb, retrolenticular, and sublenticular parts. Anterior limb lies between caudate head and lentiform nucleus. Posterior limb lies between thalamus and lentiform nucleus. Corticospinal fibers pass mainly through posterior limb; corticobulbar fibers pass near genu. The internal capsule is white matter between deep gray-matter structures. Its anterior limb separates caudate head from lentiform nucleus, and its posterior limb separates thalamus from lentiform nucleus. Corticospinal fibers are concentrated in the posterior limb, while corticobulbar fibers are associated with the genu. Basal ganglia participate in movement selection through loops; they do not send a simple direct motor nerve to skeletal muscle. Thalamic and hypothalamic functions also need to be distinguished."
+    }
+  ],
+  "sourceSections": [
+    "34. Basal Ganglia and Internal Capsule",
+    "35. Thalamus and Hypothalamus"
+  ],
+  "furtherReading": {
+    "title": "The central nervous system",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 22,
+  "lesson": {
+    "id": "knee-joint-mechanics",
+    "subject": "anatomy",
+    "title": "Knee ligaments, menisci and movement",
+    "summary": "ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Knee ligaments, menisci and movement",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "31. Knee Joint",
+    "steps": [
+      {
+        "title": "Knee Joint",
+        "body": "The knee is a modified hinge joint between femoral condyles, tibial plateaus, and patella. The fibula is not part of the knee joint. Menisci improve congruence and the cruciate ligaments control anterior-posterior translation."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Medial meniscus is C-shaped and attached to the tibial collateral ligament. Lateral meniscus is more circular and separated from fibular collateral ligament by popliteus tendon. ACL prevents anterior translation of tibia. PCL prevents posterior translation of tibia. Oblique popliteal ligament is an expansion of semimembranosus. Rotation occurs mainly when the knee is flexed."
+      },
+      {
+        "title": "Why is the medial meniscus generally less mobile than the lateral?",
+        "body": "Its stronger capsular and medial collateral attachments constrain movement compared with the lateral meniscus, which is separated from the fibular collateral ligament by the popliteus tendon relationship. Meniscal mobility matters as femoral condyles move during flexion and rotation. Both menisci distribute load and improve congruence, but their attachments and shapes differ. A symmetric pair of identical rings is therefore a poor teaching diagram. Include the collateral relationships and popliteus route to explain the asymmetry."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+      }
+    ],
+    "question": {
+      "prompt": "Relative to a fixed femur, what does the ACL principally restrain?",
+      "options": [
+        {
+          "text": "Anterior tibial translation",
+          "reason": "Answer: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+        },
+        {
+          "text": "Posterior tibial translation",
+          "reason": "The correct relationship is: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+        },
+        {
+          "text": "All patellar movement",
+          "reason": "The correct relationship is: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain knee ligaments, menisci and movement using the main anatomical relationships, then justify your answer to: Relative to a fixed femur, what does the ACL principally restrain?",
+      "answer": "Answer: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+    },
+    "related": [
+      "femoral-triangle-canal",
+      "popliteal-fossa"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of knee ligaments, menisci and movement.",
+      "Answer with anatomical reasons: Relative to a fixed femur, what does the ACL principally restrain?",
+      "Draw crossed cruciates in side view and add separate anterior and posterior tibial-translation arrows with their restraining ligament."
+    ],
+    "prerequisites": [
+      "femoral-triangle-canal"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Relative to a fixed femur, what does the ACL principally restrain? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which.",
+        "The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial.",
+        "Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw crossed cruciates in side view and add separate anterior and posterior tibial-translation arrows with their restraining ligament.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Anterior tibial translation",
+      "ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which.",
+      "The PCL restrains posterior tibial displacement."
+    ]
+  },
+  "practice": [
+    {
+      "id": "knee-joint-mechanics-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is the medial meniscus generally less mobile than the lateral?",
+      "answer": "Its stronger capsular and medial collateral attachments constrain movement compared with the lateral meniscus, which is separated from the fibular collateral ligament by the popliteus tendon relationship. Meniscal mobility matters as femoral condyles move during flexion and rotation. Both menisci distribute load and improve congruence, but their attachments and shapes differ. A symmetric pair of identical rings is therefore a poor teaching diagram. Include the collateral relationships and popliteus route to explain the asymmetry."
+    },
+    {
+      "id": "knee-joint-mechanics-relations",
+      "kind": "Relationship recall",
+      "prompt": "In knee ligaments, menisci and movement, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Medial meniscus is C-shaped and attached to the tibial collateral ligament. Lateral meniscus is more circular and separated from fibular collateral ligament by popliteus tendon. ACL prevents anterior translation of tibia. PCL prevents posterior translation of tibia. Oblique popliteal ligament is an expansion of semimembranosus. Rotation occurs mainly when the knee is flexed."
+    },
+    {
+      "id": "knee-joint-mechanics-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Posterior tibial translation” to the question “Relative to a fixed femur, what does the ACL principally restrain?” Explain what needs correcting.",
+      "answer": "Anterior tibial translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+    },
+    {
+      "id": "knee-joint-mechanics-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw crossed cruciates in side view and add separate anterior and posterior tibial-translation arrows with their restraining ligament.",
+      "answer": "Check your labels against these relationships: The knee is a modified hinge joint between femoral condyles, tibial plateaus, and patella. The fibula is not part of the knee joint. Menisci improve congruence and the cruciate ligaments control anterior-posterior translation. ACL and PCL names describe their tibial attachments, and their actions should specify which bone moves relative to which. The PCL restrains posterior tibial displacement. Menisci distribute load and improve congruence; the medial meniscus is less mobile partly because of capsular and medial collateral attachments. Cruciate ligaments are intracapsular but extrasynovial. Rotation becomes more available in flexion, while terminal extension involves a locking mechanism that differs in open versus closed kinetic chains."
+    }
+  ],
+  "sourceSections": [
+    "31. Knee Joint"
+  ],
+  "furtherReading": {
+    "title": "Pelvic girdle and lower limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

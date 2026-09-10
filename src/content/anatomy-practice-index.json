@@ -1,0 +1,2644 @@
+{
+  "records": [
+    {
+      "lessonId": "thoracic-cage-landmarks",
+      "title": "Thoracic cage and landmarks",
+      "practice": [
+        {
+          "id": "thoracic-cage-landmarks-explain",
+          "prompt": "Why are pump-handle and bucket-handle movements useful approximations rather than separate mechanisms?"
+        },
+        {
+          "id": "thoracic-cage-landmarks-relations",
+          "prompt": "In thoracic cage and landmarks, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "thoracic-cage-landmarks-correction",
+          "prompt": "A learner answers “First” to the question “Which costal cartilage is identified at the sternal angle?” Explain what needs correcting."
+        },
+        {
+          "id": "thoracic-cage-landmarks-identification",
+          "prompt": "Draw sternum with manubrium, body and xiphoid, attach the second rib at the angle and extend the approximate T4-T5 plane posteriorly."
+        }
+      ]
+    },
+    {
+      "lessonId": "intercostal-neurovascular-plane",
+      "title": "Intercostal muscles and supply",
+      "practice": [
+        {
+          "id": "intercostal-neurovascular-plane-explain",
+          "prompt": "Why do intercostal arteries have both anterior and posterior sources?"
+        },
+        {
+          "id": "intercostal-neurovascular-plane-relations",
+          "prompt": "In intercostal muscles and supply, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "intercostal-neurovascular-plane-correction",
+          "prompt": "A learner answers “Between skin and external intercostal muscle only” to the question “Where does the main intercostal neurovascular bundle run?” Explain what needs correcting."
+        },
+        {
+          "id": "intercostal-neurovascular-plane-identification",
+          "prompt": "Draw three intercostal muscle layers and label VAN in the plane between the deepest two, adjacent to the rib's inferior border."
+        }
+      ]
+    },
+    {
+      "lessonId": "diaphragm-openings",
+      "title": "Diaphragm structure and sensation",
+      "practice": [
+        {
+          "id": "diaphragm-openings-explain",
+          "prompt": "Why does the esophageal hiatus have a different mechanical relationship from the aortic route?"
+        },
+        {
+          "id": "diaphragm-openings-relations",
+          "prompt": "In diaphragm structure and sensation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "diaphragm-openings-correction",
+          "prompt": "A learner answers “Inferior vena cava” to the question “Which major structure passes through the esophageal hiatus?” Explain what needs correcting."
+        },
+        {
+          "id": "diaphragm-openings-identification",
+          "prompt": "Draw the diaphragm from below, distinguishing a tendinous caval opening, muscular esophageal hiatus and posterior aortic route."
+        }
+      ]
+    },
+    {
+      "lessonId": "pleura-and-recesses",
+      "title": "Pleural layers and recesses",
+      "practice": [
+        {
+          "id": "pleura-and-recesses-explain",
+          "prompt": "Why can the lung follow chest-wall expansion without being glued to the wall?"
+        },
+        {
+          "id": "pleura-and-recesses-relations",
+          "prompt": "In pleural layers and recesses, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pleura-and-recesses-correction",
+          "prompt": "A learner answers “Visceral pleura uniformly” to the question “Which pleural region is supplied for pain by intercostal nerves?” Explain what needs correcting."
+        },
+        {
+          "id": "pleura-and-recesses-identification",
+          "prompt": "Draw lung within its pleural sac and shade the costodiaphragmatic recess below the resting lung edge."
+        }
+      ]
+    },
+    {
+      "lessonId": "lung-lobes-surface",
+      "title": "Lung surfaces and lobes",
+      "practice": [
+        {
+          "id": "lung-lobes-surface-explain",
+          "prompt": "Why can a lower lobe occupy much of the posterior chest despite its name?"
+        },
+        {
+          "id": "lung-lobes-surface-relations",
+          "prompt": "In lung surfaces and lobes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "lung-lobes-surface-correction",
+          "prompt": "A learner answers “Right middle lobe” to the question “Which structure belongs to the left upper lobe?” Explain what needs correcting."
+        },
+        {
+          "id": "lung-lobes-surface-identification",
+          "prompt": "Draw anterior and posterior lung outlines, placing both oblique fissures and the right horizontal fissure, then label the lingula."
+        }
+      ]
+    },
+    {
+      "lessonId": "lung-roots-bronchi",
+      "title": "Airway and root relationships",
+      "practice": [
+        {
+          "id": "lung-roots-bronchi-explain",
+          "prompt": "Why is the right main bronchus a common aspiration route without being an absolute rule?"
+        },
+        {
+          "id": "lung-roots-bronchi-relations",
+          "prompt": "In airway and root relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "lung-roots-bronchi-correction",
+          "prompt": "A learner answers “Phrenic nerve” to the question “Which nerve passes posterior to the lung root?” Explain what needs correcting."
+        },
+        {
+          "id": "lung-roots-bronchi-identification",
+          "prompt": "Draw right and left roots with pulmonary artery-to-bronchus relationships and put phrenic anterior and vagus posterior to each root."
+        }
+      ]
+    },
+    {
+      "lessonId": "bronchopulmonary-segments",
+      "title": "Segments, blood and lymph",
+      "practice": [
+        {
+          "id": "bronchopulmonary-segments-explain",
+          "prompt": "Why are segmental pulmonary arteries and intersegmental veins arranged differently?"
+        },
+        {
+          "id": "bronchopulmonary-segments-relations",
+          "prompt": "In segments, blood and lymph, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "bronchopulmonary-segments-correction",
+          "prompt": "A learner answers “Only beside each segmental bronchus at the center” to the question “Where do pulmonary veins mainly run relative to bronchopulmonary segments?” Explain what needs correcting."
+        },
+        {
+          "id": "bronchopulmonary-segments-identification",
+          "prompt": "Draw two adjacent wedge-shaped segments with central bronchus-artery pairs and a pulmonary vein along their shared boundary."
+        }
+      ]
+    },
+    {
+      "lessonId": "mediastinum-great-vessels",
+      "title": "Mediastinal compartments and vessels",
+      "practice": [
+        {
+          "id": "mediastinum-great-vessels-explain",
+          "prompt": "Why should the sternal-angle plane not be treated as an exact fixed level for every structure?"
+        },
+        {
+          "id": "mediastinum-great-vessels-relations",
+          "prompt": "In mediastinal compartments and vessels, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "mediastinum-great-vessels-correction",
+          "prompt": "A learner answers “Descending thoracic aorta throughout its course” to the question “Which structure belongs principally to the middle mediastinum?” Explain what needs correcting."
+        },
+        {
+          "id": "mediastinum-great-vessels-identification",
+          "prompt": "Draw a sagittal compartment map and a separate anterior view of arch branches and brachiocephalic veins."
+        }
+      ]
+    },
+    {
+      "lessonId": "thorax-nerve-relations",
+      "title": "Phrenic, vagal and recurrent pathways",
+      "practice": [
+        {
+          "id": "thorax-nerve-relations-explain",
+          "prompt": "How do referred pain and motor weakness arise from different fiber functions?"
+        },
+        {
+          "id": "thorax-nerve-relations-relations",
+          "prompt": "In phrenic, vagal and recurrent pathways, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "thorax-nerve-relations-correction",
+          "prompt": "A learner answers “The hypoglossal nerve crosses the coronary sinus” to the question “Why can an aortic arch lesion affect voice?” Explain what needs correcting."
+        },
+        {
+          "id": "thorax-nerve-relations-identification",
+          "prompt": "Trace phrenic and vagus on each side of a lung root, then add different right and left recurrent laryngeal loops."
+        }
+      ]
+    },
+    {
+      "lessonId": "posterior-mediastinum-lymph",
+      "title": "Posterior mediastinal routes",
+      "practice": [
+        {
+          "id": "posterior-mediastinum-lymph-explain",
+          "prompt": "Why is the azygos system a collateral venous route rather than a second portal system?"
+        },
+        {
+          "id": "posterior-mediastinum-lymph-relations",
+          "prompt": "In posterior mediastinal routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "posterior-mediastinum-lymph-correction",
+          "prompt": "A learner answers “Right atrium directly” to the question “Where does the thoracic duct usually terminate?” Explain what needs correcting."
+        },
+        {
+          "id": "posterior-mediastinum-lymph-identification",
+          "prompt": "Draw a posterior thoracic view with aorta on the left, azygos on the right and thoracic duct ascending between them before turning left."
+        }
+      ]
+    },
+    {
+      "lessonId": "pericardium-sinuses",
+      "title": "Pericardial layers and reflections",
+      "practice": [
+        {
+          "id": "pericardium-sinuses-explain",
+          "prompt": "Why can rapid fluid accumulation be more disruptive than a larger slowly accumulated volume?"
+        },
+        {
+          "id": "pericardium-sinuses-relations",
+          "prompt": "In pericardial layers and reflections, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pericardium-sinuses-correction",
+          "prompt": "A learner answers “Inside the left ventricle” to the question “Where is the oblique pericardial sinus?” Explain what needs correcting."
+        },
+        {
+          "id": "pericardium-sinuses-identification",
+          "prompt": "Draw serous layers around the heart and distinguish the transverse passage behind arterial trunks from the blind oblique recess behind the left atrium."
+        }
+      ]
+    },
+    {
+      "lessonId": "heart-chambers-surfaces",
+      "title": "Chambers and internal landmarks",
+      "practice": [
+        {
+          "id": "heart-chambers-surfaces-explain",
+          "prompt": "Why does the left ventricle have a thicker wall without normally pumping more volume than the right?"
+        },
+        {
+          "id": "heart-chambers-surfaces-relations",
+          "prompt": "In chambers and internal landmarks, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "heart-chambers-surfaces-correction",
+          "prompt": "A learner answers “Left atrium” to the question “Which chamber forms most of the sternocostal surface?” Explain what needs correcting."
+        },
+        {
+          "id": "heart-chambers-surfaces-identification",
+          "prompt": "Draw the heart in anterior and posterior views, assigning right ventricle to the anterior surface and left atrium to the base."
+        }
+      ]
+    },
+    {
+      "lessonId": "heart-valves-skeleton",
+      "title": "Valves and fibrous support",
+      "practice": [
+        {
+          "id": "heart-valves-skeleton-explain",
+          "prompt": "Why do semilunar valves not need papillary muscles and chordae?"
+        },
+        {
+          "id": "heart-valves-skeleton-relations",
+          "prompt": "In valves and fibrous support, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "heart-valves-skeleton-correction",
+          "prompt": "A learner answers “Pull semilunar valves open” to the question “What is the main role of papillary muscles and chordae during ventricular systole?” Explain what needs correcting."
+        },
+        {
+          "id": "heart-valves-skeleton-identification",
+          "prompt": "Draw one AV valve with papillary-chordal support beside a semilunar valve without chordae, and add pressure-direction arrows."
+        }
+      ]
+    },
+    {
+      "lessonId": "coronary-circulation",
+      "title": "Coronary arteries and venous return",
+      "practice": [
+        {
+          "id": "coronary-circulation-explain",
+          "prompt": "Why is left ventricular coronary perfusion especially related to diastole?"
+        },
+        {
+          "id": "coronary-circulation-relations",
+          "prompt": "In coronary arteries and venous return, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "coronary-circulation-correction",
+          "prompt": "A learner answers “Which coronary artery is physically largest” to the question “What defines conventional coronary dominance?” Explain what needs correcting."
+        },
+        {
+          "id": "coronary-circulation-identification",
+          "prompt": "Draw coronary grooves with LAD, circumflex and RCA, then show two alternative origins of the posterior interventricular artery."
+        }
+      ]
+    },
+    {
+      "lessonId": "cardiac-conduction-autonomics",
+      "title": "Conduction and autonomic modulation",
+      "practice": [
+        {
+          "id": "cardiac-conduction-autonomics-explain",
+          "prompt": "Why can autonomic input alter rate without acting like a skeletal motor nerve?"
+        },
+        {
+          "id": "cardiac-conduction-autonomics-relations",
+          "prompt": "In conduction and autonomic modulation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cardiac-conduction-autonomics-correction",
+          "prompt": "A learner answers “Chordae tendineae” to the question “What is the normal electrical bridge across the cardiac fibrous skeleton?” Explain what needs correcting."
+        },
+        {
+          "id": "cardiac-conduction-autonomics-identification",
+          "prompt": "Draw the conduction sequence on four chambers, marking the AV bundle's passage through the insulating skeleton."
+        }
+      ]
+    },
+    {
+      "lessonId": "thoracic-development",
+      "title": "Respiratory and diaphragmatic development",
+      "practice": [
+        {
+          "id": "thoracic-development-explain",
+          "prompt": "Why does a congenital diaphragmatic defect affect lung development as well as organ position?"
+        },
+        {
+          "id": "thoracic-development-relations",
+          "prompt": "In respiratory and diaphragmatic development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "thoracic-development-correction",
+          "prompt": "A learner answers “Surface ectoderm” to the question “Which tissue forms most lower respiratory epithelium?” Explain what needs correcting."
+        },
+        {
+          "id": "thoracic-development-identification",
+          "prompt": "Draw foregut with a ventral respiratory bud and a separate diaphragm map showing the traditional four developmental contributions."
+        }
+      ]
+    },
+    {
+      "lessonId": "heart-looping-septation",
+      "title": "Heart tube and partitioning",
+      "practice": [
+        {
+          "id": "heart-looping-septation-explain",
+          "prompt": "Why does a ventricular septal defect need more explanation than a hole between ventricles?"
+        },
+        {
+          "id": "heart-looping-septation-relations",
+          "prompt": "In heart tube and partitioning, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "heart-looping-septation-correction",
+          "prompt": "A learner answers “The final number of adult alveoli” to the question “What does cardiac looping mainly establish?” Explain what needs correcting."
+        },
+        {
+          "id": "heart-looping-septation-identification",
+          "prompt": "Draw a straight tube becoming a loop, then add separate septation arrows rather than treating looping as partition formation."
+        }
+      ]
+    },
+    {
+      "lessonId": "fetal-circulation-transition",
+      "title": "Fetal shunts and adult remnants",
+      "practice": [
+        {
+          "id": "fetal-circulation-transition-explain",
+          "prompt": "Why distinguish functional closure from anatomical closure after birth?"
+        },
+        {
+          "id": "fetal-circulation-transition-relations",
+          "prompt": "In fetal shunts and adult remnants, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "fetal-circulation-transition-correction",
+          "prompt": "A learner answers “Left atrium to right atrium” to the question “What does the ductus arteriosus connect in fetal circulation?” Explain what needs correcting."
+        },
+        {
+          "id": "fetal-circulation-transition-identification",
+          "prompt": "Trace placenta-to-heart flow and label three shunts, then draw separate arrows for lower pulmonary resistance and removal of placental circulation after birth."
+        }
+      ]
+    },
+    {
+      "lessonId": "abdominal-surface-map",
+      "title": "Abdominal regions and sectional orientation",
+      "practice": [
+        {
+          "id": "abdominal-surface-map-explain",
+          "prompt": "Why can pain location differ from the organ's surface projection?"
+        },
+        {
+          "id": "abdominal-surface-map-relations",
+          "prompt": "In abdominal regions and sectional orientation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "abdominal-surface-map-correction",
+          "prompt": "A learner answers “On the viewer's right” to the question “On a conventional axial image viewed from the feet, where is the patient's right side displayed?” Explain what needs correcting."
+        },
+        {
+          "id": "abdominal-surface-map-identification",
+          "prompt": "Sketch the nine regions, then place an axial-section orientation marker beside them."
+        }
+      ]
+    },
+    {
+      "lessonId": "abdominal-wall-layers",
+      "title": "Abdominal wall layers and rectus sheath",
+      "practice": [
+        {
+          "id": "abdominal-wall-layers-explain",
+          "prompt": "How can the abdominal wall affect breathing and movement at the same time?"
+        },
+        {
+          "id": "abdominal-wall-layers-relations",
+          "prompt": "In abdominal wall layers and rectus sheath, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "abdominal-wall-layers-correction",
+          "prompt": "A learner answers “The transversalis fascia disappears” to the question “What changes below the arcuate line?” Explain what needs correcting."
+        },
+        {
+          "id": "abdominal-wall-layers-identification",
+          "prompt": "Draw two wall sections, one between the costal margin and arcuate line and one below the arcuate line. Label the persistent deep layers."
+        }
+      ]
+    },
+    {
+      "lessonId": "posterior-abdominal-wall",
+      "title": "Posterior abdominal wall and lumbar relations",
+      "practice": [
+        {
+          "id": "posterior-abdominal-wall-explain",
+          "prompt": "Why is psoas a useful landmark for both musculoskeletal and visceral anatomy?"
+        },
+        {
+          "id": "posterior-abdominal-wall-relations",
+          "prompt": "In posterior abdominal wall and lumbar relations, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "posterior-abdominal-wall-correction",
+          "prompt": "A learner answers “Phrenic nerve” to the question “Which nerve is characteristically seen on the anterior surface of psoas major?” Explain what needs correcting."
+        },
+        {
+          "id": "posterior-abdominal-wall-identification",
+          "prompt": "Place psoas on a posterior-wall sketch and mark the anterior, medial and lateral nerve exits."
+        }
+      ]
+    },
+    {
+      "lessonId": "inguinal-canal-relations",
+      "title": "Inguinal canal and hernia relationships",
+      "practice": [
+        {
+          "id": "inguinal-canal-relations-explain",
+          "prompt": "How do the abdominal wall layers relate to the coverings of the spermatic cord?"
+        },
+        {
+          "id": "inguinal-canal-relations-relations",
+          "prompt": "In inguinal canal and hernia relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "inguinal-canal-relations-correction",
+          "prompt": "A learner answers “Direct inguinal” to the question “A hernia enters the deep ring lateral to the inferior epigastric vessels. Which route is this?” Explain what needs correcting."
+        },
+        {
+          "id": "inguinal-canal-relations-identification",
+          "prompt": "Draw the inferior epigastric vessels and inguinal ligament first, then add the three hernia routes with labelled arrows."
+        }
+      ]
+    },
+    {
+      "lessonId": "peritoneal-organization",
+      "title": "Peritoneum and organ position",
+      "practice": [
+        {
+          "id": "peritoneal-organization-explain",
+          "prompt": "Why are kidneys and the ascending colon both retroperitoneal but developmentally different?"
+        },
+        {
+          "id": "peritoneal-organization-relations",
+          "prompt": "In peritoneum and organ position, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "peritoneal-organization-correction",
+          "prompt": "A learner answers “The organ floats inside the fluid-filled peritoneal cavity” to the question “What does intraperitoneal mean?” Explain what needs correcting."
+        },
+        {
+          "id": "peritoneal-organization-identification",
+          "prompt": "Draw a wall, a double-layer mesentery and an intestinal loop. Shade only the potential cavity, leaving the bowel lumen unshaded."
+        }
+      ]
+    },
+    {
+      "lessonId": "omenta-and-lesser-sac",
+      "title": "Omenta, lesser sac and epiploic foramen",
+      "practice": [
+        {
+          "id": "omenta-and-lesser-sac-explain",
+          "prompt": "Why does the portal triad matter when describing the free edge of the lesser omentum?"
+        },
+        {
+          "id": "omenta-and-lesser-sac-relations",
+          "prompt": "In omenta, lesser sac and epiploic foramen, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "omenta-and-lesser-sac-correction",
+          "prompt": "A learner answers “Inferior vena cava” to the question “What forms the anterior boundary of the epiploic foramen?” Explain what needs correcting."
+        },
+        {
+          "id": "omenta-and-lesser-sac-identification",
+          "prompt": "Draw a sagittal stomach-pancreas relationship and a separate four-boundary diagram of the epiploic foramen."
+        }
+      ]
+    },
+    {
+      "lessonId": "peritoneal-fluid-routes",
+      "title": "Peritoneal recesses and fluid routes",
+      "practice": [
+        {
+          "id": "peritoneal-fluid-routes-explain",
+          "prompt": "Why is posture relevant to identifying a dependent peritoneal space?"
+        },
+        {
+          "id": "peritoneal-fluid-routes-relations",
+          "prompt": "In peritoneal recesses and fluid routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "peritoneal-fluid-routes-correction",
+          "prompt": "A learner answers “Vesicouterine pouch” to the question “Which pouch lies between uterus and rectum?” Explain what needs correcting."
+        },
+        {
+          "id": "peritoneal-fluid-routes-identification",
+          "prompt": "Sketch the colon framing the abdomen, mark both paracolic gutters, and add pelvic pouches in two sagittal diagrams."
+        }
+      ]
+    },
+    {
+      "lessonId": "stomach-relations",
+      "title": "Stomach position, relations and neurovascular supply",
+      "practice": [
+        {
+          "id": "stomach-relations-explain",
+          "prompt": "How does stomach rotation help explain vagal trunk orientation?"
+        },
+        {
+          "id": "stomach-relations-relations",
+          "prompt": "In stomach position, relations and neurovascular supply, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "stomach-relations-correction",
+          "prompt": "A learner answers “Right and left gastro-omental arteries” to the question “Which vessels run along the lesser curvature?” Explain what needs correcting."
+        },
+        {
+          "id": "stomach-relations-identification",
+          "prompt": "Draw the stomach with both curvatures, label the paired arterial arcades, and place the lesser sac behind it."
+        }
+      ]
+    },
+    {
+      "lessonId": "duodenum-relations",
+      "title": "Duodenum and retroperitoneal relationships",
+      "practice": [
+        {
+          "id": "duodenum-relations-explain",
+          "prompt": "Why does the duodenum receive both celiac and superior mesenteric arterial contributions?"
+        },
+        {
+          "id": "duodenum-relations-relations",
+          "prompt": "In duodenum and retroperitoneal relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "duodenum-relations-correction",
+          "prompt": "A learner answers “Portal vein and hepatic artery proper” to the question “The third part of the duodenum passes behind which vessels?” Explain what needs correcting."
+        },
+        {
+          "id": "duodenum-relations-identification",
+          "prompt": "Draw the four duodenal parts around the pancreatic head and show the mesenteric vessels crossing the third part."
+        }
+      ]
+    },
+    {
+      "lessonId": "liver-segments-and-porta",
+      "title": "Liver surfaces, porta hepatis and functional divisions",
+      "practice": [
+        {
+          "id": "liver-segments-and-porta-explain",
+          "prompt": "Why distinguish anatomical lobes from functional liver segments?"
+        },
+        {
+          "id": "liver-segments-and-porta-relations",
+          "prompt": "In liver surfaces, porta hepatis and functional divisions, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "liver-segments-and-porta-correction",
+          "prompt": "A learner answers “Yes; they accompany the bile duct through the porta” to the question “Do the hepatic veins normally pass through the porta hepatis?” Explain what needs correcting."
+        },
+        {
+          "id": "liver-segments-and-porta-identification",
+          "prompt": "Draw two colour-independent arrow systems: portal and arterial blood entering the porta, and hepatic venous blood leaving posteriorly."
+        }
+      ]
+    },
+    {
+      "lessonId": "biliary-pathways",
+      "title": "Gallbladder and extrahepatic biliary pathways",
+      "practice": [
+        {
+          "id": "biliary-pathways-explain",
+          "prompt": "How can one obstruction affect both biliary and pancreatic drainage?"
+        },
+        {
+          "id": "biliary-pathways-relations",
+          "prompt": "In gallbladder and extrahepatic biliary pathways, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "biliary-pathways-correction",
+          "prompt": "A learner answers “Right hepatic and pancreatic ducts” to the question “Which ducts unite to form the common bile duct?” Explain what needs correcting."
+        },
+        {
+          "id": "biliary-pathways-identification",
+          "prompt": "Draw a branching duct tree with the cystic duct as a side branch and label the common hepatic duct above that junction."
+        }
+      ]
+    },
+    {
+      "lessonId": "pancreas-relations",
+      "title": "Pancreas and its duct relationships",
+      "practice": [
+        {
+          "id": "pancreas-relations-explain",
+          "prompt": "How do the pancreatic duct and arterial patterns fit its position?"
+        },
+        {
+          "id": "pancreas-relations-relations",
+          "prompt": "In pancreas and its duct relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pancreas-relations-correction",
+          "prompt": "A learner answers “Anterior to the neck” to the question “Where is the portal vein formed relative to the pancreatic neck?” Explain what needs correcting."
+        },
+        {
+          "id": "pancreas-relations-identification",
+          "prompt": "Sketch pancreatic head, uncinate process, neck, body and tail; add the portal vein formation behind the neck."
+        }
+      ]
+    },
+    {
+      "lessonId": "spleen-relations",
+      "title": "Spleen, hilum and splenic ligaments",
+      "practice": [
+        {
+          "id": "spleen-relations-explain",
+          "prompt": "Why is the spleen's relation to the lower ribs important without making it an intrathoracic organ?"
+        },
+        {
+          "id": "spleen-relations-relations",
+          "prompt": "In spleen, hilum and splenic ligaments, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "spleen-relations-correction",
+          "prompt": "A learner answers “Falciform ligament” to the question “Which ligament carries the pancreatic tail toward the splenic hilum?” Explain what needs correcting."
+        },
+        {
+          "id": "spleen-relations-identification",
+          "prompt": "Draw stomach, spleen, left kidney and pancreatic tail. Connect the two named ligaments and label what each carries."
+        }
+      ]
+    },
+    {
+      "lessonId": "small-intestine-mesentery",
+      "title": "Jejunum, ileum and the mesenteric root",
+      "practice": [
+        {
+          "id": "small-intestine-mesentery-explain",
+          "prompt": "What does the mesenteric root carry, and why does its short attachment matter?"
+        },
+        {
+          "id": "small-intestine-mesentery-relations",
+          "prompt": "In jejunum, ileum and the mesenteric root, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "small-intestine-mesentery-correction",
+          "prompt": "A learner answers “More arterial arcades and shorter vasa recta” to the question “Which vascular pattern is typical of jejunum compared with ileum?” Explain what needs correcting."
+        },
+        {
+          "id": "small-intestine-mesentery-identification",
+          "prompt": "Draw one jejunal and one ileal mesenteric arcade, keeping the bowel edge and arterial root clearly labelled."
+        }
+      ]
+    },
+    {
+      "lessonId": "cecum-appendix-colon",
+      "title": "Cecum, appendix and colon",
+      "practice": [
+        {
+          "id": "cecum-appendix-colon-explain",
+          "prompt": "Why is colon mobility different in different regions?"
+        },
+        {
+          "id": "cecum-appendix-colon-relations",
+          "prompt": "In cecum, appendix and colon, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cecum-appendix-colon-correction",
+          "prompt": "A learner answers “The lowest point of the cecum in every person” to the question “What reliably locates the appendiceal base despite variation in the tip?” Explain what needs correcting."
+        },
+        {
+          "id": "cecum-appendix-colon-identification",
+          "prompt": "Outline the colon, mark the cecum, and show two possible appendiceal tip positions sharing one base."
+        }
+      ]
+    },
+    {
+      "lessonId": "rectum-anal-transition",
+      "title": "Rectum and the anal transition",
+      "practice": [
+        {
+          "id": "rectum-anal-transition-explain",
+          "prompt": "How do the two anal sphincters differ in tissue and control?"
+        },
+        {
+          "id": "rectum-anal-transition-relations",
+          "prompt": "In rectum and the anal transition, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "rectum-anal-transition-correction",
+          "prompt": "A learner answers “Upper rectum only” to the question “Which territory has somatic pain sensation through inferior rectal nerves?” Explain what needs correcting."
+        },
+        {
+          "id": "rectum-anal-transition-identification",
+          "prompt": "Draw a vertical rectum-anal canal diagram with separate labels for pelvic floor, anorectal junction and pectinate line."
+        }
+      ]
+    },
+    {
+      "lessonId": "abdominal-arterial-territories",
+      "title": "Celiac, superior mesenteric and inferior mesenteric territories",
+      "practice": [
+        {
+          "id": "abdominal-arterial-territories-explain",
+          "prompt": "Why are watershed regions vulnerable despite arterial anastomoses?"
+        },
+        {
+          "id": "abdominal-arterial-territories-relations",
+          "prompt": "In celiac, superior mesenteric and inferior mesenteric territories, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "abdominal-arterial-territories-correction",
+          "prompt": "A learner answers “Celiac trunk” to the question “Which artery primarily supplies the midgut?” Explain what needs correcting."
+        },
+        {
+          "id": "abdominal-arterial-territories-identification",
+          "prompt": "Draw the celiac, superior mesenteric and inferior mesenteric origins and connect them to foregut, midgut and hindgut territories."
+        }
+      ]
+    },
+    {
+      "lessonId": "abdomen-portal-relations",
+      "title": "Portal venous routes and systemic connections",
+      "practice": [
+        {
+          "id": "abdomen-portal-relations-explain",
+          "prompt": "Why is the portal vein different from the hepatic veins on a liver diagram?"
+        },
+        {
+          "id": "abdomen-portal-relations-relations",
+          "prompt": "In portal venous routes and systemic connections, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "abdomen-portal-relations-correction",
+          "prompt": "A learner answers “Portal vein” to the question “Which vessel drains liver blood into systemic venous circulation?” Explain what needs correcting."
+        },
+        {
+          "id": "abdomen-portal-relations-identification",
+          "prompt": "Trace gut capillary bed to portal vein to liver sinusoids to hepatic veins, then add one alternate portal-systemic route."
+        }
+      ]
+    },
+    {
+      "lessonId": "abdominal-lymph-autonomics",
+      "title": "Abdominal lymphatics and autonomic pathways",
+      "practice": [
+        {
+          "id": "abdominal-lymph-autonomics-explain",
+          "prompt": "Where do autonomic fibers synapse, and why is the distinction useful?"
+        },
+        {
+          "id": "abdominal-lymph-autonomics-relations",
+          "prompt": "In abdominal lymphatics and autonomic pathways, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "abdominal-lymph-autonomics-correction",
+          "prompt": "A learner answers “Thoracic sympathetic splanchnic nerves” to the question “What carries parasympathetic fibers to the hindgut?” Explain what needs correcting."
+        },
+        {
+          "id": "abdominal-lymph-autonomics-identification",
+          "prompt": "Use separate arrows for lymph drainage, sympathetic efferents and parasympathetic efferents around a schematic gut tube."
+        }
+      ]
+    },
+    {
+      "lessonId": "foregut-development",
+      "title": "Foregut rotation and organ development",
+      "practice": [
+        {
+          "id": "foregut-development-explain",
+          "prompt": "Why are dorsal and ventral mesenteries not interchangeable?"
+        },
+        {
+          "id": "foregut-development-relations",
+          "prompt": "In foregut rotation and organ development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "foregut-development-correction",
+          "prompt": "A learner answers “Tail alone” to the question “Which pancreatic part is principally derived from the ventral bud?” Explain what needs correcting."
+        },
+        {
+          "id": "foregut-development-identification",
+          "prompt": "Draw dorsal and ventral pancreatic buds before and after rotation; distinguish the two contributions with labels or hatch patterns."
+        }
+      ]
+    },
+    {
+      "lessonId": "midgut-rotation",
+      "title": "Midgut herniation, rotation and fixation",
+      "practice": [
+        {
+          "id": "midgut-rotation-explain",
+          "prompt": "Why does abnormal fixation matter even after bowel has returned to the abdomen?"
+        },
+        {
+          "id": "midgut-rotation-relations",
+          "prompt": "In midgut herniation, rotation and fixation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "midgut-rotation-correction",
+          "prompt": "A learner answers “90 degrees clockwise” to the question “From the front, what is the conventional total midgut rotation around the SMA?” Explain what needs correcting."
+        },
+        {
+          "id": "midgut-rotation-identification",
+          "prompt": "Draw a fixed SMA axis and three stages of the intestinal loop, marking the observer as anterior."
+        }
+      ]
+    },
+    {
+      "lessonId": "abdominal-regional-reasoning",
+      "title": "Reconstruct an upper abdominal section",
+      "practice": [
+        {
+          "id": "abdominal-regional-reasoning-explain",
+          "prompt": "How would you check a proposed pancreatic label on a section?"
+        },
+        {
+          "id": "abdominal-regional-reasoning-relations",
+          "prompt": "In reconstruct an upper abdominal section, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "abdominal-regional-reasoning-correction",
+          "prompt": "A learner answers “The urinary bladder” to the question “In an upper abdominal section, what lies between stomach and pancreas?” Explain what needs correcting."
+        },
+        {
+          "id": "abdominal-regional-reasoning-identification",
+          "prompt": "Draw a schematic axial section including vertebral body, aorta, IVC, pancreas, stomach and portal vein formation; annotate which relations require a different section level."
+        }
+      ]
+    },
+    {
+      "lessonId": "pelvic-boundaries",
+      "title": "Pelvic inlet, outlet and walls",
+      "practice": [
+        {
+          "id": "pelvic-boundaries-explain",
+          "prompt": "How do the sacrospinous and sacrotuberous ligaments change the sciatic notches?"
+        },
+        {
+          "id": "pelvic-boundaries-relations",
+          "prompt": "In pelvic inlet, outlet and walls, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pelvic-boundaries-correction",
+          "prompt": "A learner answers “Perineal membrane” to the question “Which structure separates the greater from the lesser pelvis?” Explain what needs correcting."
+        },
+        {
+          "id": "pelvic-boundaries-identification",
+          "prompt": "Draw inlet, ischial-spine level and outlet as three distinct planes and label the sacrum and pubic symphysis."
+        }
+      ]
+    },
+    {
+      "lessonId": "pelvic-floor-support",
+      "title": "Pelvic diaphragm and visceral support",
+      "practice": [
+        {
+          "id": "pelvic-floor-support-explain",
+          "prompt": "Why does supporting pelvic organs require more than a flat sheet of muscle?"
+        },
+        {
+          "id": "pelvic-floor-support-relations",
+          "prompt": "In pelvic diaphragm and visceral support, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pelvic-floor-support-correction",
+          "prompt": "A learner answers “Obturator internus” to the question “Which muscle forms a sling around the anorectal junction?” Explain what needs correcting."
+        },
+        {
+          "id": "pelvic-floor-support-identification",
+          "prompt": "Draw a sagittal anorectal junction with a posterior puborectalis sling and a separate external sphincter ring."
+        }
+      ]
+    },
+    {
+      "lessonId": "pelvic-foramina-nerves",
+      "title": "Sciatic foramina and pelvic nerve routes",
+      "practice": [
+        {
+          "id": "pelvic-foramina-nerves-explain",
+          "prompt": "How do somatic pudendal fibers differ from pelvic splanchnic fibers despite shared root levels?"
+        },
+        {
+          "id": "pelvic-foramina-nerves-relations",
+          "prompt": "In sciatic foramina and pelvic nerve routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pelvic-foramina-nerves-correction",
+          "prompt": "A learner answers “Pudendal nerve and internal pudendal vessels” to the question “What passes above piriformis through the greater sciatic foramen?” Explain what needs correcting."
+        },
+        {
+          "id": "pelvic-foramina-nerves-identification",
+          "prompt": "Draw both sciatic foramina and trace the pudendal route with two crossings rather than one."
+        }
+      ]
+    },
+    {
+      "lessonId": "pelvic-vessels-lymph",
+      "title": "Pelvic vessels and lymphatic drainage",
+      "practice": [
+        {
+          "id": "pelvic-vessels-lymph-explain",
+          "prompt": "Why is gonadal drainage an exception to a simple pelvic-node rule?"
+        },
+        {
+          "id": "pelvic-vessels-lymph-relations",
+          "prompt": "In pelvic vessels and lymphatic drainage, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pelvic-vessels-lymph-correction",
+          "prompt": "A learner answers “External iliac artery” to the question “Which vessel primarily supplies the perineum after leaving and re-entering through the sciatic foramina?” Explain what needs correcting."
+        },
+        {
+          "id": "pelvic-vessels-lymph-identification",
+          "prompt": "Map pelvic wall, viscera and perineum as three supply territories and label one arterial route and one lymph route for each."
+        }
+      ]
+    },
+    {
+      "lessonId": "kidney-organization",
+      "title": "Kidney coverings, hilum and collecting system",
+      "practice": [
+        {
+          "id": "kidney-organization-explain",
+          "prompt": "Why should a renal lobe not be confused with a cortical lobule?"
+        },
+        {
+          "id": "kidney-organization-relations",
+          "prompt": "In kidney coverings, hilum and collecting system, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "kidney-organization-correction",
+          "prompt": "A learner answers “Renal vein” to the question “Which structure directly receives urine from a renal papilla?” Explain what needs correcting."
+        },
+        {
+          "id": "kidney-organization-identification",
+          "prompt": "Draw one renal pyramid with cortex above it, a papilla entering a minor calyx, and arrows continuing to the ureter."
+        }
+      ]
+    },
+    {
+      "lessonId": "pelvis-urinary-route",
+      "title": "Ureters and the route into the bladder",
+      "practice": [
+        {
+          "id": "pelvis-urinary-route-explain",
+          "prompt": "Why does ureteral blood supply need to be described as segmental?"
+        },
+        {
+          "id": "pelvis-urinary-route-relations",
+          "prompt": "In ureters and the route into the bladder, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pelvis-urinary-route-correction",
+          "prompt": "A learner answers “Ovarian ligament alone” to the question “Near the cervix, the ureter usually passes beneath which structure?” Explain what needs correcting."
+        },
+        {
+          "id": "pelvis-urinary-route-identification",
+          "prompt": "Draw male and female distal ureter routes, keeping the ureter below its respective crossing structure in each sketch."
+        }
+      ]
+    },
+    {
+      "lessonId": "bladder-urethrae",
+      "title": "Bladder, trigone and urethral differences",
+      "practice": [
+        {
+          "id": "bladder-urethrae-explain",
+          "prompt": "Why can bladder filling change its relations to the abdomen?"
+        },
+        {
+          "id": "bladder-urethrae-relations",
+          "prompt": "In bladder, trigone and urethral differences, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "bladder-urethrae-correction",
+          "prompt": "A learner answers “Three urethral openings” to the question “What marks the three corners of the bladder trigone?” Explain what needs correcting."
+        },
+        {
+          "id": "bladder-urethrae-identification",
+          "prompt": "Sketch a trigone inside a bladder and draw separate male and female urethral routes below it."
+        }
+      ]
+    },
+    {
+      "lessonId": "testis-spermatic-cord",
+      "title": "Testis, scrotum and spermatic cord",
+      "practice": [
+        {
+          "id": "testis-spermatic-cord-explain",
+          "prompt": "How do the pampiniform plexus and cremaster contribute to temperature regulation?"
+        },
+        {
+          "id": "testis-spermatic-cord-relations",
+          "prompt": "In testis, scrotum and spermatic cord, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "testis-spermatic-cord-correction",
+          "prompt": "A learner answers “Superficial inguinal nodes only” to the question “Where does testicular lymph primarily drain?” Explain what needs correcting."
+        },
+        {
+          "id": "testis-spermatic-cord-identification",
+          "prompt": "Draw a descended testis with an arterial and lymphatic line returning toward the abdomen, then add a separate scrotal-skin lymph route."
+        }
+      ]
+    },
+    {
+      "lessonId": "male-reproductive-ducts",
+      "title": "Sperm pathway, seminal vesicles and prostate",
+      "practice": [
+        {
+          "id": "male-reproductive-ducts-explain",
+          "prompt": "Why does a posterior bladder diagram help locate the seminal vesicles?"
+        },
+        {
+          "id": "male-reproductive-ducts-relations",
+          "prompt": "In sperm pathway, seminal vesicles and prostate, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "male-reproductive-ducts-correction",
+          "prompt": "A learner answers “Membranous urethra” to the question “Where do ejaculatory ducts open?” Explain what needs correcting."
+        },
+        {
+          "id": "male-reproductive-ducts-identification",
+          "prompt": "Draw the sperm pathway as a continuous line and attach the seminal-vesicle duct as a side branch."
+        }
+      ]
+    },
+    {
+      "lessonId": "erectile-anatomy",
+      "title": "Erectile tissues and external genital anatomy",
+      "practice": [
+        {
+          "id": "erectile-anatomy-explain",
+          "prompt": "Why is the urethra associated with corpus spongiosum rather than enclosed between the cavernosa?"
+        },
+        {
+          "id": "erectile-anatomy-relations",
+          "prompt": "In erectile tissues and external genital anatomy, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "erectile-anatomy-correction",
+          "prompt": "A learner answers “Paired corpora cavernosa” to the question “Which tissue surrounds the spongy urethra?” Explain what needs correcting."
+        },
+        {
+          "id": "erectile-anatomy-identification",
+          "prompt": "Draw a transverse penile section and identify the paired cavernosa, single spongiosum and urethral lumen."
+        }
+      ]
+    },
+    {
+      "lessonId": "ovary-uterine-tube",
+      "title": "Ovary and uterine tube relationships",
+      "practice": [
+        {
+          "id": "ovary-uterine-tube-explain",
+          "prompt": "How can tubal transport occur without a sealed ovary-to-tube duct?"
+        },
+        {
+          "id": "ovary-uterine-tube-relations",
+          "prompt": "In ovary and uterine tube relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "ovary-uterine-tube-correction",
+          "prompt": "A learner answers “Intramural part” to the question “Which part of the uterine tube is the usual fertilization site?” Explain what needs correcting."
+        },
+        {
+          "id": "ovary-uterine-tube-identification",
+          "prompt": "Draw ovary and tube with a small open gap at the fimbrial end, then label the four tubal regions."
+        }
+      ]
+    },
+    {
+      "lessonId": "uterus-support-vessels",
+      "title": "Uterus, supports and uterine vessel relations",
+      "practice": [
+        {
+          "id": "uterus-support-vessels-explain",
+          "prompt": "Why do version and flexion require different reference axes?"
+        },
+        {
+          "id": "uterus-support-vessels-relations",
+          "prompt": "In uterus, supports and uterine vessel relations, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "uterus-support-vessels-correction",
+          "prompt": "A learner answers “Ureter passes through the uterine cavity” to the question “Which relation is especially important beside the cervix?” Explain what needs correcting."
+        },
+        {
+          "id": "uterus-support-vessels-identification",
+          "prompt": "Draw uterus, cervix and vagina with separate axes for version and flexion, then add the ureter beneath the uterine artery."
+        }
+      ]
+    },
+    {
+      "lessonId": "vagina-pelvic-relations",
+      "title": "Vagina and its pelvic relations",
+      "practice": [
+        {
+          "id": "vagina-pelvic-relations-explain",
+          "prompt": "Why is the perineal body relevant to the lower vaginal region?"
+        },
+        {
+          "id": "vagina-pelvic-relations-relations",
+          "prompt": "In vagina and its pelvic relations, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "vagina-pelvic-relations-correction",
+          "prompt": "A learner answers “Anterior fornix” to the question “Which vaginal fornix is closest to the rectouterine pouch?” Explain what needs correcting."
+        },
+        {
+          "id": "vagina-pelvic-relations-identification",
+          "prompt": "Draw the cervix projecting into the vagina and label each fornix, bladder anteriorly and rectum posteriorly."
+        }
+      ]
+    },
+    {
+      "lessonId": "perineal-spaces",
+      "title": "Perineal triangles, pouches and perineal body",
+      "practice": [
+        {
+          "id": "perineal-spaces-explain",
+          "prompt": "How can fascial attachments influence the spread of fluid in the superficial perineal region?"
+        },
+        {
+          "id": "perineal-spaces-relations",
+          "prompt": "In perineal triangles, pouches and perineal body, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "perineal-spaces-correction",
+          "prompt": "A learner answers “Levator ani alone” to the question “What separates the superficial perineal pouch from the deep perineal region?” Explain what needs correcting."
+        },
+        {
+          "id": "perineal-spaces-identification",
+          "prompt": "Draw a side view with pelvic diaphragm above, perineal membrane below and superficial pouch beneath the membrane."
+        }
+      ]
+    },
+    {
+      "lessonId": "ischioanal-pudendal",
+      "title": "Ischioanal fossa, pudendal canal and anal region",
+      "practice": [
+        {
+          "id": "ischioanal-pudendal-explain",
+          "prompt": "Why does the ischioanal fossa contain fat rather than a rigid muscular wall around the anal canal?"
+        },
+        {
+          "id": "ischioanal-pudendal-relations",
+          "prompt": "In ischioanal fossa, pudendal canal and anal region, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "ischioanal-pudendal-correction",
+          "prompt": "A learner answers “Medial wall inside the anal lumen” to the question “In which wall of the ischioanal fossa is the pudendal canal located?” Explain what needs correcting."
+        },
+        {
+          "id": "ischioanal-pudendal-identification",
+          "prompt": "Draw a coronal anal-canal section with fat-filled fossae on both sides and mark the lateral pudendal canals."
+        }
+      ]
+    },
+    {
+      "lessonId": "urinary-development",
+      "title": "Development of kidneys, bladder and urethra",
+      "practice": [
+        {
+          "id": "urinary-development-explain",
+          "prompt": "What is reciprocal induction in permanent kidney formation?"
+        },
+        {
+          "id": "urinary-development-relations",
+          "prompt": "In development of kidneys, bladder and urethra, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "urinary-development-correction",
+          "prompt": "A learner answers “Metanephric mesenchyme alone” to the question “Which structure forms the ureter and collecting-system branches?” Explain what needs correcting."
+        },
+        {
+          "id": "urinary-development-identification",
+          "prompt": "Use two labelled lineages to connect ureteric bud with collecting system and metanephric mesenchyme with nephron."
+        }
+      ]
+    },
+    {
+      "lessonId": "gonadal-duct-development",
+      "title": "Gonadal differentiation and genital ducts",
+      "practice": [
+        {
+          "id": "gonadal-duct-development-explain",
+          "prompt": "Why should AMH and testosterone be placed on separate arrows in a developmental map?"
+        },
+        {
+          "id": "gonadal-duct-development-relations",
+          "prompt": "In gonadal differentiation and genital ducts, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "gonadal-duct-development-correction",
+          "prompt": "A learner answers “Anti-Mullerian hormone alone” to the question “Which signal supports persistence of the mesonephric duct in typical male development?” Explain what needs correcting."
+        },
+        {
+          "id": "gonadal-duct-development-identification",
+          "prompt": "Draw separate mesonephric and paramesonephric ducts, with testosterone and AMH arrows pointing to their distinct targets."
+        }
+      ]
+    },
+    {
+      "lessonId": "gonadal-descent",
+      "title": "External genital development and gonadal descent",
+      "practice": [
+        {
+          "id": "gonadal-descent-explain",
+          "prompt": "How do hydrocele and an indirect hernia differ conceptually along a patent processus vaginalis?"
+        },
+        {
+          "id": "gonadal-descent-relations",
+          "prompt": "In external genital development and gonadal descent, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "gonadal-descent-correction",
+          "prompt": "A learner answers “Tunica albuginea” to the question “What normally remains from the distal processus vaginalis around the testis?” Explain what needs correcting."
+        },
+        {
+          "id": "gonadal-descent-identification",
+          "prompt": "Draw a descending testis with the processus vaginalis, then cross out the normally closed proximal channel while retaining the distal sac."
+        }
+      ]
+    },
+    {
+      "lessonId": "neck-triangles",
+      "title": "Neck triangles and surface orientation",
+      "practice": [
+        {
+          "id": "neck-triangles-explain",
+          "prompt": "Why does the accessory nerve need special attention in the posterior triangle?"
+        },
+        {
+          "id": "neck-triangles-relations",
+          "prompt": "In neck triangles and surface orientation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "neck-triangles-correction",
+          "prompt": "A learner answers “Mylohyoid” to the question “Which muscle separates the anterior and posterior neck triangles?” Explain what needs correcting."
+        },
+        {
+          "id": "neck-triangles-identification",
+          "prompt": "Draw sternocleidomastoid between mandible, mastoid region and clavicle, then outline both triangles and the accessory nerve crossing."
+        }
+      ]
+    },
+    {
+      "lessonId": "cervical-fascia-sympathetic",
+      "title": "Cervical fascia, carotid sheath and sympathetic trunk",
+      "practice": [
+        {
+          "id": "cervical-fascia-sympathetic-explain",
+          "prompt": "How can a sympathetic lesion affect the eye without damaging an ocular motor nerve?"
+        },
+        {
+          "id": "cervical-fascia-sympathetic-relations",
+          "prompt": "In cervical fascia, carotid sheath and sympathetic trunk, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cervical-fascia-sympathetic-correction",
+          "prompt": "A learner answers “Cervical sympathetic trunk” to the question “Which nerve lies within the carotid sheath with the artery and internal jugular vein?” Explain what needs correcting."
+        },
+        {
+          "id": "cervical-fascia-sympathetic-identification",
+          "prompt": "Draw a transverse neck section with carotid sheath contents and a separately labelled sympathetic trunk posterior to it."
+        }
+      ]
+    },
+    {
+      "lessonId": "head-neck-vessels-lymph",
+      "title": "Head and neck arteries, veins and lymphatics",
+      "practice": [
+        {
+          "id": "head-neck-vessels-lymph-explain",
+          "prompt": "Why distinguish carotid sinus from carotid body when describing afferents?"
+        },
+        {
+          "id": "head-neck-vessels-lymph-relations",
+          "prompt": "In head and neck arteries, veins and lymphatics, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "head-neck-vessels-lymph-correction",
+          "prompt": "A learner answers “External carotid artery” to the question “Which carotid branch has no usual branches in the neck?” Explain what needs correcting."
+        },
+        {
+          "id": "head-neck-vessels-lymph-identification",
+          "prompt": "Draw common carotid bifurcation, several external carotid branches and the unbranched cervical internal carotid; add the deep cervical node chain separately."
+        }
+      ]
+    },
+    {
+      "lessonId": "oral-cavity-palate-teeth",
+      "title": "Oral cavity, palate and teeth",
+      "practice": [
+        {
+          "id": "oral-cavity-palate-teeth-explain",
+          "prompt": "How do the floor muscles support both oral and swallowing functions?"
+        },
+        {
+          "id": "oral-cavity-palate-teeth-relations",
+          "prompt": "In oral cavity, palate and teeth, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "oral-cavity-palate-teeth-correction",
+          "prompt": "A learner answers “Sublingual papilla beside the frenulum” to the question “Where does the parotid duct open?” Explain what needs correcting."
+        },
+        {
+          "id": "oral-cavity-palate-teeth-identification",
+          "prompt": "Draw dental arches separating vestibule from cavity proper, mark both major duct openings and label hard versus soft palate."
+        }
+      ]
+    },
+    {
+      "lessonId": "head-neck-tongue-map",
+      "title": "Tongue structure, function and nerve map",
+      "practice": [
+        {
+          "id": "head-neck-tongue-map-explain",
+          "prompt": "Why does tongue lymphatic drainage not follow a simple right-versus-left nerve map?"
+        },
+        {
+          "id": "head-neck-tongue-map-relations",
+          "prompt": "In tongue structure, function and nerve map, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "head-neck-tongue-map-correction",
+          "prompt": "A learner answers “Chorda tympani alone” to the question “Which nerve carries ordinary sensation from most of the anterior two-thirds of the tongue?” Explain what needs correcting."
+        },
+        {
+          "id": "head-neck-tongue-map-identification",
+          "prompt": "Make a tongue map with separate rows for general sensation, taste and motor supply, including the circumvallate exception."
+        }
+      ]
+    },
+    {
+      "lessonId": "salivary-glands",
+      "title": "Salivary glands and their nerve routes",
+      "practice": [
+        {
+          "id": "salivary-glands-explain",
+          "prompt": "What does the relation of the lingual nerve to the submandibular duct illustrate?"
+        },
+        {
+          "id": "salivary-glands-relations",
+          "prompt": "In salivary glands and their nerve routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "salivary-glands-correction",
+          "prompt": "A learner answers “Facial VII through its parotid branches” to the question “Which cranial nerve supplies the preganglionic parasympathetic pathway to parotid?” Explain what needs correcting."
+        },
+        {
+          "id": "salivary-glands-identification",
+          "prompt": "Draw parallel parotid and submandibular pathways with one clearly marked ganglionic synapse in each."
+        }
+      ]
+    },
+    {
+      "lessonId": "tmj-deep-fossae",
+      "title": "Mastication, TMJ and deep facial spaces",
+      "practice": [
+        {
+          "id": "tmj-deep-fossae-explain",
+          "prompt": "Why is the pterygopalatine fossa a useful anatomical distribution hub?"
+        },
+        {
+          "id": "tmj-deep-fossae-relations",
+          "prompt": "In mastication, tmj and deep facial spaces, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "tmj-deep-fossae-correction",
+          "prompt": "A learner answers “Fusion of the condyle to the temporal bone” to the question “What accompanies wider mouth opening after the early hinge phase?” Explain what needs correcting."
+        },
+        {
+          "id": "tmj-deep-fossae-identification",
+          "prompt": "Sketch a closed and open TMJ and place foramen ovale with V3 separately from foramen rotundum with V2."
+        }
+      ]
+    },
+    {
+      "lessonId": "nose-sinuses",
+      "title": "Nasal cavity and paranasal drainage",
+      "practice": [
+        {
+          "id": "nose-sinuses-explain",
+          "prompt": "How do sensory and olfactory regions differ in the nasal cavity?"
+        },
+        {
+          "id": "nose-sinuses-relations",
+          "prompt": "In nasal cavity and paranasal drainage, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "nose-sinuses-correction",
+          "prompt": "A learner answers “Superior nasal meatus” to the question “Where does the nasolacrimal duct drain?” Explain what needs correcting."
+        },
+        {
+          "id": "nose-sinuses-identification",
+          "prompt": "Draw a lateral nasal wall with three conchae and place each drainage opening beneath the correct concha or above the superior concha."
+        }
+      ]
+    },
+    {
+      "lessonId": "pharynx-swallowing",
+      "title": "Pharynx, tonsils and swallowing",
+      "practice": [
+        {
+          "id": "pharynx-swallowing-explain",
+          "prompt": "Why are the piriform recesses important landmarks rather than part of the laryngeal lumen?"
+        },
+        {
+          "id": "pharynx-swallowing-relations",
+          "prompt": "In pharynx, tonsils and swallowing, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pharynx-swallowing-correction",
+          "prompt": "A learner answers “Opening of the auditory tube alone” to the question “What closes the nasopharyngeal route during swallowing?” Explain what needs correcting."
+        },
+        {
+          "id": "pharynx-swallowing-identification",
+          "prompt": "Draw a sagittal pharynx and mark the nasal, oral, laryngeal and esophageal routes, with arrows showing the food route during swallowing."
+        }
+      ]
+    },
+    {
+      "lessonId": "larynx-voice-airway",
+      "title": "Laryngeal skeleton, muscles and innervation",
+      "practice": [
+        {
+          "id": "larynx-voice-airway-explain",
+          "prompt": "What is the difference between the vocal ligament, vocal fold and rima glottidis?"
+        },
+        {
+          "id": "larynx-voice-airway-relations",
+          "prompt": "In laryngeal skeleton, muscles and innervation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "larynx-voice-airway-correction",
+          "prompt": "A learner answers “Lateral cricoarytenoid” to the question “Which intrinsic laryngeal muscle is the principal abductor of the vocal folds?” Explain what needs correcting."
+        },
+        {
+          "id": "larynx-voice-airway-identification",
+          "prompt": "Draw the vocal folds from above in open and closed positions and label posterior cricoarytenoid as the abductor."
+        }
+      ]
+    },
+    {
+      "lessonId": "skull-scalp-face",
+      "title": "Skull foramina, scalp and facial layers",
+      "practice": [
+        {
+          "id": "skull-scalp-face-explain",
+          "prompt": "How can a scalp wound and a facial movement deficit involve different tissue layers?"
+        },
+        {
+          "id": "skull-scalp-face-relations",
+          "prompt": "In skull foramina, scalp and facial layers, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "skull-scalp-face-correction",
+          "prompt": "A learner answers “Mandibular division V3” to the question “Which structure passes through foramen rotundum?” Explain what needs correcting."
+        },
+        {
+          "id": "skull-scalp-face-identification",
+          "prompt": "Draw the five scalp layers beside a skull-base map marking rotundum, ovale and stylomastoid foramen with their different nerves."
+        }
+      ]
+    },
+    {
+      "lessonId": "orbit-anatomy",
+      "title": "Orbit, eyeball and visual pathway",
+      "practice": [
+        {
+          "id": "orbit-anatomy-explain",
+          "prompt": "Why distinguish extraocular movement from pupillary and lens control?"
+        },
+        {
+          "id": "orbit-anatomy-relations",
+          "prompt": "In orbit, eyeball and visual pathway, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "orbit-anatomy-correction",
+          "prompt": "A learner answers “All ocular motor nerves” to the question “Which structures pass through the optic canal?” Explain what needs correcting."
+        },
+        {
+          "id": "orbit-anatomy-identification",
+          "prompt": "Draw the optic canal separately from the superior orbital fissure, then trace light into the eye and neural information out of it."
+        }
+      ]
+    },
+    {
+      "lessonId": "ear-anatomy",
+      "title": "External, middle and inner ear",
+      "practice": [
+        {
+          "id": "ear-anatomy-explain",
+          "prompt": "How does conductive hearing loss differ anatomically from sensorineural loss?"
+        },
+        {
+          "id": "ear-anatomy-relations",
+          "prompt": "In external, middle and inner ear, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "ear-anatomy-correction",
+          "prompt": "A learner answers “Malleus” to the question “Which ossicle transmits vibration to the oval window?” Explain what needs correcting."
+        },
+        {
+          "id": "ear-anatomy-identification",
+          "prompt": "Draw an external-middle-inner ear sequence, label all three ossicles and add the auditory tube as a branch to the nasopharynx."
+        }
+      ]
+    },
+    {
+      "lessonId": "cranial-nerve-organization",
+      "title": "Cranial nerve nuclei and functional columns",
+      "practice": [
+        {
+          "id": "cranial-nerve-organization-explain",
+          "prompt": "Why is a sensory ganglion different from a brainstem sensory nucleus?"
+        },
+        {
+          "id": "cranial-nerve-organization-relations",
+          "prompt": "In cranial nerve nuclei and functional columns, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cranial-nerve-organization-correction",
+          "prompt": "A learner answers “Sensory columns” to the question “Which functional region generally lies medial to the sulcus limitans in the developing brainstem?” Explain what needs correcting."
+        },
+        {
+          "id": "cranial-nerve-organization-identification",
+          "prompt": "Draw a simplified brainstem cross-section with medial motor and lateral sensory columns, then note the long trigeminal sensory extent."
+        }
+      ]
+    },
+    {
+      "lessonId": "ocular-motor-nerves",
+      "title": "Ocular motor nerves and lesion localization",
+      "practice": [
+        {
+          "id": "ocular-motor-nerves-explain",
+          "prompt": "Why does the side of a trochlear nucleus lesion differ from that of a trochlear nerve lesion?"
+        },
+        {
+          "id": "ocular-motor-nerves-relations",
+          "prompt": "In ocular motor nerves and lesion localization, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "ocular-motor-nerves-correction",
+          "prompt": "A learner answers “Trochlear IV” to the question “Which nerve supplies lateral rectus?” Explain what needs correcting."
+        },
+        {
+          "id": "ocular-motor-nerves-identification",
+          "prompt": "Draw an eye with an outward arrow labelled VI-lateral rectus, then list the IV muscle and the remaining III targets."
+        }
+      ]
+    },
+    {
+      "lessonId": "trigeminal-pathways",
+      "title": "Trigeminal divisions and sensory territories",
+      "practice": [
+        {
+          "id": "trigeminal-pathways-explain",
+          "prompt": "How can the corneal reflex separate sensory from motor dysfunction?"
+        },
+        {
+          "id": "trigeminal-pathways-relations",
+          "prompt": "In trigeminal divisions and sensory territories, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "trigeminal-pathways-correction",
+          "prompt": "A learner answers “Ophthalmic V1” to the question “Which trigeminal division carries the motor supply to mastication?” Explain what needs correcting."
+        },
+        {
+          "id": "trigeminal-pathways-identification",
+          "prompt": "Map V1, V2 and V3 skin territories and add a separate V1-to-brainstem-to-VII corneal-reflex circuit."
+        }
+      ]
+    },
+    {
+      "lessonId": "facial-nerve-course",
+      "title": "Facial nerve course and branch functions",
+      "practice": [
+        {
+          "id": "facial-nerve-course-explain",
+          "prompt": "Why do central and peripheral facial weakness patterns differ?"
+        },
+        {
+          "id": "facial-nerve-course-relations",
+          "prompt": "In facial nerve course and branch functions, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "facial-nerve-course-correction",
+          "prompt": "A learner answers “Yes; all taste fibers leave only at the stylomastoid foramen” to the question “Does an isolated lesion after the stylomastoid foramen usually remove anterior tongue taste?” Explain what needs correcting."
+        },
+        {
+          "id": "facial-nerve-course-identification",
+          "prompt": "Draw facial canal branches in order before the stylomastoid exit and put the five facial motor branches after that exit."
+        }
+      ]
+    },
+    {
+      "lessonId": "lower-cranial-nerves",
+      "title": "Glossopharyngeal, vagus, accessory and hypoglossal nerves",
+      "practice": [
+        {
+          "id": "lower-cranial-nerves-explain",
+          "prompt": "How do IX and X contribute differently to the pharyngeal response?"
+        },
+        {
+          "id": "lower-cranial-nerves-relations",
+          "prompt": "In glossopharyngeal, vagus, accessory and hypoglossal nerves, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "lower-cranial-nerves-correction",
+          "prompt": "A learner answers “Vagus X” to the question “Which nerve exits through the hypoglossal canal?” Explain what needs correcting."
+        },
+        {
+          "id": "lower-cranial-nerves-identification",
+          "prompt": "Draw jugular foramen beside hypoglossal canal and attach one motor test to each of IX, X, XI and XII."
+        }
+      ]
+    },
+    {
+      "lessonId": "cranial-parasympathetics",
+      "title": "Cranial parasympathetic ganglia",
+      "practice": [
+        {
+          "id": "cranial-parasympathetics-explain",
+          "prompt": "Why can a trigeminal branch carry parasympathetic fibers without a trigeminal parasympathetic nucleus?"
+        },
+        {
+          "id": "cranial-parasympathetics-relations",
+          "prompt": "In cranial parasympathetic ganglia, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cranial-parasympathetics-correction",
+          "prompt": "A learner answers “Geniculate ganglion” to the question “Where do parotid secretomotor fibers synapse?” Explain what needs correcting."
+        },
+        {
+          "id": "cranial-parasympathetics-identification",
+          "prompt": "Make a four-row map with cranial nerve source, ganglion, carrier nerve and gland or smooth-muscle target."
+        }
+      ]
+    },
+    {
+      "lessonId": "meninges-dural-folds",
+      "title": "Meninges, dural folds and intracranial spaces",
+      "practice": [
+        {
+          "id": "meninges-dural-folds-explain",
+          "prompt": "How does the tentorium create both support and a passage for the brainstem?"
+        },
+        {
+          "id": "meninges-dural-folds-relations",
+          "prompt": "In meninges, dural folds and intracranial spaces, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "meninges-dural-folds-correction",
+          "prompt": "A learner answers “Between the two cranial dural layers everywhere” to the question “Where does CSF normally surround the brain?” Explain what needs correcting."
+        },
+        {
+          "id": "meninges-dural-folds-identification",
+          "prompt": "Draw skull, dura, arachnoid and pia, showing CSF only between arachnoid and pia and a sinus within separated dura."
+        }
+      ]
+    },
+    {
+      "lessonId": "venous-sinuses",
+      "title": "Dural venous sinuses and cavernous sinus relations",
+      "practice": [
+        {
+          "id": "venous-sinuses-explain",
+          "prompt": "How does blood leave the superior sagittal sinus toward the internal jugular vein?"
+        },
+        {
+          "id": "venous-sinuses-relations",
+          "prompt": "In dural venous sinuses and cavernous sinus relations, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "venous-sinuses-correction",
+          "prompt": "A learner answers “Trochlear IV in the lateral wall” to the question “Which ocular motor nerve runs beside the internal carotid artery within the cavernous sinus proper?” Explain what needs correcting."
+        },
+        {
+          "id": "venous-sinuses-identification",
+          "prompt": "Draw a cavernous-sinus cross-section with lateral-wall nerves stacked apart from carotid artery and VI."
+        }
+      ]
+    },
+    {
+      "lessonId": "cerebral-blood-supply",
+      "title": "Cerebral arteries, territories and collateral routes",
+      "practice": [
+        {
+          "id": "cerebral-blood-supply-explain",
+          "prompt": "Why can an internal-capsule lesion affect several body regions at once?"
+        },
+        {
+          "id": "cerebral-blood-supply-relations",
+          "prompt": "In cerebral arteries, territories and collateral routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cerebral-blood-supply-correction",
+          "prompt": "A learner answers “Anterior cerebral artery” to the question “Which artery primarily supplies much of the lateral cerebral hemisphere?” Explain what needs correcting."
+        },
+        {
+          "id": "cerebral-blood-supply-identification",
+          "prompt": "Draw the arterial circle, label the communicating arteries, and place ACA, MCA and PCA territories on separate hemisphere outlines."
+        }
+      ]
+    },
+    {
+      "lessonId": "ventricles-csf",
+      "title": "Ventricles, CSF flow and internal landmarks",
+      "practice": [
+        {
+          "id": "ventricles-csf-explain",
+          "prompt": "Why do ventricular enlargement patterns help identify the site of obstruction?"
+        },
+        {
+          "id": "ventricles-csf-relations",
+          "prompt": "In ventricles, csf flow and internal landmarks, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "ventricles-csf-correction",
+          "prompt": "A learner answers “Interventricular foramen” to the question “What connects the third and fourth ventricles?” Explain what needs correcting."
+        },
+        {
+          "id": "ventricles-csf-identification",
+          "prompt": "Draw the complete ventricular sequence with one-way flow arrows and place a hypothetical blockage at the aqueduct."
+        }
+      ]
+    },
+    {
+      "lessonId": "basal-ganglia-diencephalon",
+      "title": "Basal ganglia, internal capsule and diencephalon",
+      "practice": [
+        {
+          "id": "basal-ganglia-diencephalon-explain",
+          "prompt": "How do the thalamus and hypothalamus differ despite sharing the diencephalon?"
+        },
+        {
+          "id": "basal-ganglia-diencephalon-relations",
+          "prompt": "In basal ganglia, internal capsule and diencephalon, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "basal-ganglia-diencephalon-correction",
+          "prompt": "A learner answers “Lentiform nucleus” to the question “What lies medial to the posterior limb of the internal capsule?” Explain what needs correcting."
+        },
+        {
+          "id": "basal-ganglia-diencephalon-identification",
+          "prompt": "Draw an axial deep-brain section with caudate, lentiform nucleus and thalamus, then insert the V-shaped internal capsule between them."
+        }
+      ]
+    },
+    {
+      "lessonId": "brainstem-localization",
+      "title": "Brainstem landmarks and crossed findings",
+      "practice": [
+        {
+          "id": "brainstem-localization-explain",
+          "prompt": "Why should sensory modalities be separated when reasoning about a crossed brainstem pattern?"
+        },
+        {
+          "id": "brainstem-localization-relations",
+          "prompt": "In brainstem landmarks and crossed findings, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "brainstem-localization-correction",
+          "prompt": "A learner answers “Every cranial nerve crosses with the pyramids” to the question “Why can a brainstem lesion cause ipsilateral cranial-nerve signs with contralateral limb weakness?” Explain what needs correcting."
+        },
+        {
+          "id": "brainstem-localization-identification",
+          "prompt": "Draw a cranial nerve exiting one side of brainstem beside a descending tract that crosses farther caudally."
+        }
+      ]
+    },
+    {
+      "lessonId": "cerebellum-connections",
+      "title": "Cerebellum, peduncles and fourth ventricle",
+      "practice": [
+        {
+          "id": "cerebellum-connections-explain",
+          "prompt": "How does cerebellar output influence movement without a direct muscle nerve?"
+        },
+        {
+          "id": "cerebellum-connections-relations",
+          "prompt": "In cerebellum, peduncles and fourth ventricle, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cerebellum-connections-correction",
+          "prompt": "A learner answers “Optic peduncle” to the question “Which peduncle carries the major pontocerebellar input?” Explain what needs correcting."
+        },
+        {
+          "id": "cerebellum-connections-identification",
+          "prompt": "Draw cerebellum behind the pons and medulla, insert the fourth ventricle, and label all three peduncles."
+        }
+      ]
+    },
+    {
+      "lessonId": "spinal-cord-tracts",
+      "title": "Spinal cord, meninges and long pathways",
+      "practice": [
+        {
+          "id": "spinal-cord-tracts-explain",
+          "prompt": "Why is a vertebral level not identical to a spinal cord segment in the lower back?"
+        },
+        {
+          "id": "spinal-cord-tracts-relations",
+          "prompt": "In spinal cord, meninges and long pathways, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "spinal-cord-tracts-correction",
+          "prompt": "A learner answers “Immediately on entering every spinal segment” to the question “Where do dorsal-column body sensory fibers first cross in the classic pathway?” Explain what needs correcting."
+        },
+        {
+          "id": "spinal-cord-tracts-identification",
+          "prompt": "Draw three parallel pathways and mark their different crossing levels; label the adult conus and the cauda equina separately."
+        }
+      ]
+    },
+    {
+      "lessonId": "pharyngeal-arch-development",
+      "title": "Pharyngeal arches, pouches and arch arteries",
+      "practice": [
+        {
+          "id": "pharyngeal-arch-development-explain",
+          "prompt": "Why is the recurrent laryngeal nerve course asymmetric?"
+        },
+        {
+          "id": "pharyngeal-arch-development-relations",
+          "prompt": "In pharyngeal arches, pouches and arch arteries, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pharyngeal-arch-development-correction",
+          "prompt": "A learner answers “First pouch” to the question “Which pouch gives rise to the thymic epithelial component and inferior parathyroids?” Explain what needs correcting."
+        },
+        {
+          "id": "pharyngeal-arch-development-identification",
+          "prompt": "Draw four pharyngeal pouches and show the third-pouch thymus-inferior-parathyroid migration separately from the fourth-pouch superior parathyroid."
+        }
+      ]
+    },
+    {
+      "lessonId": "face-palate-sense-development",
+      "title": "Development of face, palate and special senses",
+      "practice": [
+        {
+          "id": "face-palate-sense-development-explain",
+          "prompt": "Why do thyroid and parathyroid origins need separate developmental maps?"
+        },
+        {
+          "id": "face-palate-sense-development-relations",
+          "prompt": "In development of face, palate and special senses, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "face-palate-sense-development-correction",
+          "prompt": "A learner answers “Optic-cup neural retina” to the question “Which embryonic source forms the lens?” Explain what needs correcting."
+        },
+        {
+          "id": "face-palate-sense-development-identification",
+          "prompt": "Draw lens placode opposite optic cup, then add a separate palate diagram marking primary and secondary palate fusion."
+        }
+      ]
+    },
+    {
+      "lessonId": "neural-tube-development",
+      "title": "Brain vesicles, neural tube and spinal development",
+      "practice": [
+        {
+          "id": "neural-tube-development-explain",
+          "prompt": "Why does neural crest not mean every part of the peripheral nervous system has the same origin?"
+        },
+        {
+          "id": "neural-tube-development-relations",
+          "prompt": "In brain vesicles, neural tube and spinal development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "neural-tube-development-correction",
+          "prompt": "A learner answers “Telencephalon” to the question “Which secondary brain vesicle encloses the future third ventricle?” Explain what needs correcting."
+        },
+        {
+          "id": "neural-tube-development-identification",
+          "prompt": "Draw three primary then five secondary vesicles, linking each to its adult region and ventricular cavity."
+        }
+      ]
+    },
+    {
+      "lessonId": "bones-and-connections",
+      "title": "Bone structure and connections between bones",
+      "practice": [
+        {
+          "id": "bones-and-connections-explain",
+          "prompt": "Why is structural classification useful before discussing movement?"
+        },
+        {
+          "id": "bones-and-connections-relations",
+          "prompt": "In bone structure and connections between bones, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "bones-and-connections-correction",
+          "prompt": "A learner answers “Suture” to the question “Which connection contains a joint cavity?” Explain what needs correcting."
+        },
+        {
+          "id": "bones-and-connections-identification",
+          "prompt": "Draw a suture, a synchondrosis, a symphysis and a synovial joint, highlighting what lies between the bones."
+        }
+      ]
+    },
+    {
+      "lessonId": "synovial-joint-design",
+      "title": "Synovial joint design and movement",
+      "practice": [
+        {
+          "id": "synovial-joint-design-explain",
+          "prompt": "How does articular cartilage obtain support without its own ordinary vascular network?"
+        },
+        {
+          "id": "synovial-joint-design-relations",
+          "prompt": "In synovial joint design and movement, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "synovial-joint-design-correction",
+          "prompt": "A learner answers “Yes; it covers the entire cartilage surface” to the question “Does synovial membrane normally cover articular cartilage?” Explain what needs correcting."
+        },
+        {
+          "id": "synovial-joint-design-identification",
+          "prompt": "Draw a joint section with cartilage, fibrous capsule and synovial lining; leave cartilage free of the synovial lining."
+        }
+      ]
+    },
+    {
+      "lessonId": "muscle-actions",
+      "title": "Muscle architecture, actions and innervation",
+      "practice": [
+        {
+          "id": "muscle-actions-explain",
+          "prompt": "Why can the same muscle be a mover in one task and a stabilizer in another?"
+        },
+        {
+          "id": "muscle-actions-relations",
+          "prompt": "In muscle architecture, actions and innervation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "muscle-actions-correction",
+          "prompt": "A learner answers “Its nerve changes at each angle” to the question “Why can a muscle's action change with joint position?” Explain what needs correcting."
+        },
+        {
+          "id": "muscle-actions-identification",
+          "prompt": "Sketch a tendon crossing a joint axis and compare two positions with different perpendicular moment arms."
+        }
+      ]
+    },
+    {
+      "lessonId": "vertebral-regions",
+      "title": "Vertebral column and regional vertebrae",
+      "practice": [
+        {
+          "id": "vertebral-regions-explain",
+          "prompt": "How do vertebral facets and body size relate to regional mechanical demands?"
+        },
+        {
+          "id": "vertebral-regions-relations",
+          "prompt": "In vertebral column and regional vertebrae, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "vertebral-regions-correction",
+          "prompt": "A learner answers “A dens” to the question “Which feature most strongly suggests a typical thoracic vertebra?” Explain what needs correcting."
+        },
+        {
+          "id": "vertebral-regions-identification",
+          "prompt": "Compare cervical, thoracic and lumbar vertebrae using body, foramen and articular features, then label C1 and C2 as exceptions."
+        }
+      ]
+    },
+    {
+      "lessonId": "craniovertebral-joints",
+      "title": "Atlas, axis and craniovertebral movement",
+      "practice": [
+        {
+          "id": "craniovertebral-joints-explain",
+          "prompt": "Why should atlanto-occipital and atlantoaxial movements be drawn separately?"
+        },
+        {
+          "id": "craniovertebral-joints-relations",
+          "prompt": "In atlas, axis and craniovertebral movement, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "craniovertebral-joints-correction",
+          "prompt": "A learner answers “Ligamentum teres of the liver” to the question “What prevents the dens from moving posteriorly against the spinal cord in normal alignment?” Explain what needs correcting."
+        },
+        {
+          "id": "craniovertebral-joints-identification",
+          "prompt": "Draw the atlas ring, dens, transverse ligament and spinal cord, then add separate nodding and rotation arrows."
+        }
+      ]
+    },
+    {
+      "lessonId": "spinal-discs-ligaments",
+      "title": "Intervertebral discs and spinal ligaments",
+      "practice": [
+        {
+          "id": "spinal-discs-ligaments-explain",
+          "prompt": "Why can posterior longitudinal ligament support coexist with posterolateral disc herniation?"
+        },
+        {
+          "id": "spinal-discs-ligaments-relations",
+          "prompt": "In intervertebral discs and spinal ligaments, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "spinal-discs-ligaments-correction",
+          "prompt": "A learner answers “Exiting L4 root in every case” to the question “A usual posterolateral L4-L5 disc herniation most often affects which root?” Explain what needs correcting."
+        },
+        {
+          "id": "spinal-discs-ligaments-identification",
+          "prompt": "Draw an L4-L5 disc with both exiting L4 and traversing L5 roots and mark two different herniation positions."
+        }
+      ]
+    },
+    {
+      "lessonId": "back-muscle-layers",
+      "title": "Back muscle layers and segmental innervation",
+      "practice": [
+        {
+          "id": "back-muscle-layers-explain",
+          "prompt": "How can intrinsic back muscle fiber direction predict rotation?"
+        },
+        {
+          "id": "back-muscle-layers-relations",
+          "prompt": "In back muscle layers and segmental innervation, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "back-muscle-layers-correction",
+          "prompt": "A learner answers “Anterior rami only” to the question “Which rami primarily supply intrinsic back muscles?” Explain what needs correcting."
+        },
+        {
+          "id": "back-muscle-layers-identification",
+          "prompt": "Draw superficial trapezius and latissimus over a deeper erector-spinae layer and assign their distinct nerve sources."
+        }
+      ]
+    },
+    {
+      "lessonId": "shoulder-girdle-joints",
+      "title": "Clavicle, scapula and shoulder girdle joints",
+      "practice": [
+        {
+          "id": "shoulder-girdle-joints-explain",
+          "prompt": "Why is scapular upward rotation necessary for full arm elevation?"
+        },
+        {
+          "id": "shoulder-girdle-joints-relations",
+          "prompt": "In clavicle, scapula and shoulder girdle joints, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "shoulder-girdle-joints-correction",
+          "prompt": "A learner answers “Scapulothoracic articulation as a synovial joint” to the question “What provides the main bony connection of the upper limb to the axial skeleton?” Explain what needs correcting."
+        },
+        {
+          "id": "shoulder-girdle-joints-identification",
+          "prompt": "Draw sternum, clavicle and scapula as a chain, marking the two true joints and the functional scapulothoracic surface."
+        }
+      ]
+    },
+    {
+      "lessonId": "rotator-cuff-shoulder",
+      "title": "Glenohumeral joint and rotator cuff",
+      "practice": [
+        {
+          "id": "rotator-cuff-shoulder-explain",
+          "prompt": "How does the cuff stabilize a shallow glenoid while permitting mobility?"
+        },
+        {
+          "id": "rotator-cuff-shoulder-relations",
+          "prompt": "In glenohumeral joint and rotator cuff, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "rotator-cuff-shoulder-correction",
+          "prompt": "A learner answers “Teres minor” to the question “Which muscle is not part of the rotator cuff?” Explain what needs correcting."
+        },
+        {
+          "id": "rotator-cuff-shoulder-identification",
+          "prompt": "Draw humeral head and glenoid, placing the four cuff tendons around the joint and teres major outside the cuff group."
+        }
+      ]
+    },
+    {
+      "lessonId": "axilla-scapular-spaces",
+      "title": "Axilla, axillary artery and scapular spaces",
+      "practice": [
+        {
+          "id": "axilla-scapular-spaces-explain",
+          "prompt": "How does pectoralis minor organize axillary arterial branches?"
+        },
+        {
+          "id": "axilla-scapular-spaces-relations",
+          "prompt": "In axilla, axillary artery and scapular spaces, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "axilla-scapular-spaces-correction",
+          "prompt": "A learner answers “Radial nerve” to the question “Which nerve passes through the quadrangular space?” Explain what needs correcting."
+        },
+        {
+          "id": "axilla-scapular-spaces-identification",
+          "prompt": "Draw teres minor, teres major and long head of triceps, then label the three spaces and their distinct contents."
+        }
+      ]
+    },
+    {
+      "lessonId": "limbs-plexus-and-joints",
+      "title": "Brachial plexus from roots to terminal nerves",
+      "practice": [
+        {
+          "id": "limbs-plexus-and-joints-explain",
+          "prompt": "Why does an upper-trunk lesion differ from an isolated axillary nerve lesion?"
+        },
+        {
+          "id": "limbs-plexus-and-joints-relations",
+          "prompt": "In brachial plexus from roots to terminal nerves, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "limbs-plexus-and-joints-correction",
+          "prompt": "A learner answers “The three scalene muscles” to the question “Relative to what are the brachial plexus cords named?” Explain what needs correcting."
+        },
+        {
+          "id": "limbs-plexus-and-joints-identification",
+          "prompt": "Draw C5-T1 roots through trunks, divisions and cords to the five terminal branches, circling the posterior-division convergence."
+        }
+      ]
+    },
+    {
+      "lessonId": "arm-elbow",
+      "title": "Arm compartments and elbow relationships",
+      "practice": [
+        {
+          "id": "arm-elbow-explain",
+          "prompt": "Why does forearm position affect the mechanical role of biceps?"
+        },
+        {
+          "id": "arm-elbow-relations",
+          "prompt": "In arm compartments and elbow relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "arm-elbow-correction",
+          "prompt": "A learner answers “Ulnar nerve” to the question “Which nerve runs with profunda brachii in the radial groove?” Explain what needs correcting."
+        },
+        {
+          "id": "arm-elbow-identification",
+          "prompt": "Draw a humerus with radial groove posteriorly and medial epicondyle distally; map radial and ulnar nerve courses separately."
+        }
+      ]
+    },
+    {
+      "lessonId": "cubital-forearm",
+      "title": "Cubital fossa and forearm compartments",
+      "practice": [
+        {
+          "id": "cubital-forearm-explain",
+          "prompt": "Why is pronation-supination not simply rotation of the hand at the wrist?"
+        },
+        {
+          "id": "cubital-forearm-relations",
+          "prompt": "In cubital fossa and forearm compartments, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "cubital-forearm-correction",
+          "prompt": "A learner answers “Median nerve” to the question “Which nerve supplies flexor carpi ulnaris?” Explain what needs correcting."
+        },
+        {
+          "id": "cubital-forearm-identification",
+          "prompt": "Draw the cubital fossa from superficial to deep, then list the two major ulnar-supplied anterior forearm exceptions."
+        }
+      ]
+    },
+    {
+      "lessonId": "wrist-carpal-tunnel",
+      "title": "Wrist, carpal tunnel and anatomical snuffbox",
+      "practice": [
+        {
+          "id": "wrist-carpal-tunnel-explain",
+          "prompt": "Why may central palm sensation be relatively spared in carpal tunnel compression?"
+        },
+        {
+          "id": "wrist-carpal-tunnel-relations",
+          "prompt": "In wrist, carpal tunnel and anatomical snuffbox, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "wrist-carpal-tunnel-correction",
+          "prompt": "A learner answers “Median nerve” to the question “Which structure is outside the carpal tunnel?” Explain what needs correcting."
+        },
+        {
+          "id": "wrist-carpal-tunnel-identification",
+          "prompt": "Draw the flexor retinaculum over the tunnel, count nine tendons, and place the ulnar canal separately on its medial side."
+        }
+      ]
+    },
+    {
+      "lessonId": "hand-intrinsics",
+      "title": "Intrinsic hand muscles and functional nerve tests",
+      "practice": [
+        {
+          "id": "hand-intrinsics-explain",
+          "prompt": "How do lumbricals and interossei influence both MCP and IP joints?"
+        },
+        {
+          "id": "hand-intrinsics-relations",
+          "prompt": "In intrinsic hand muscles and functional nerve tests, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "hand-intrinsics-correction",
+          "prompt": "A learner answers “Radial nerve” to the question “Which nerve supplies the interossei?” Explain what needs correcting."
+        },
+        {
+          "id": "hand-intrinsics-identification",
+          "prompt": "Draw a hand with the middle-finger axis, add abduction/adduction arrows and label median versus ulnar intrinsic groups."
+        }
+      ]
+    },
+    {
+      "lessonId": "upper-limb-vessels",
+      "title": "Upper limb vessels and lymphatic routes",
+      "practice": [
+        {
+          "id": "upper-limb-vessels-explain",
+          "prompt": "Why are the superficial and deep palmar arches useful connections rather than perfect duplicates?"
+        },
+        {
+          "id": "upper-limb-vessels-relations",
+          "prompt": "In upper limb vessels and lymphatic routes, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "upper-limb-vessels-correction",
+          "prompt": "A learner answers “Axillary artery directly” to the question “Which artery usually contributes most to the superficial palmar arch?” Explain what needs correcting."
+        },
+        {
+          "id": "upper-limb-vessels-identification",
+          "prompt": "Trace the arterial name changes from first rib to palm, then draw cephalic and basilic veins in a different line style."
+        }
+      ]
+    },
+    {
+      "lessonId": "pelvic-girdle-landmarks",
+      "title": "Pelvic girdle and hip bone landmarks",
+      "practice": [
+        {
+          "id": "pelvic-girdle-landmarks-explain",
+          "prompt": "How does the sacroiliac region transfer load toward the lower limbs?"
+        },
+        {
+          "id": "pelvic-girdle-landmarks-relations",
+          "prompt": "In pelvic girdle and hip bone landmarks, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "pelvic-girdle-landmarks-correction",
+          "prompt": "A learner answers “Obturator membrane” to the question “Which hip-bone region articulates with the femoral head?” Explain what needs correcting."
+        },
+        {
+          "id": "pelvic-girdle-landmarks-identification",
+          "prompt": "Draw one hip bone and label acetabulum, obturator foramen, ischial spine, ischial tuberosity and ASIS."
+        }
+      ]
+    },
+    {
+      "lessonId": "hip-joint-stability",
+      "title": "Hip joint stability and femoral head supply",
+      "practice": [
+        {
+          "id": "hip-joint-stability-explain",
+          "prompt": "Why do the capsular ligaments become especially important in upright stance?"
+        },
+        {
+          "id": "hip-joint-stability-relations",
+          "prompt": "In hip joint stability and femoral head supply, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "hip-joint-stability-correction",
+          "prompt": "A learner answers “Artery in the ligament of the head alone” to the question “Which vessels provide the major adult femoral-head supply in the usual pattern?” Explain what needs correcting."
+        },
+        {
+          "id": "hip-joint-stability-identification",
+          "prompt": "Draw femoral head and neck inside the capsule, with retinacular vessels ascending along the neck toward the head."
+        }
+      ]
+    },
+    {
+      "lessonId": "gluteal-region",
+      "title": "Gluteal region and the piriformis landmark",
+      "practice": [
+        {
+          "id": "gluteal-region-explain",
+          "prompt": "Why does gluteus maximus become especially important during rising or climbing?"
+        },
+        {
+          "id": "gluteal-region-relations",
+          "prompt": "In gluteal region and the piriformis landmark, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "gluteal-region-correction",
+          "prompt": "A learner answers “Right shoulder alone drops” to the question “A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance?” Explain what needs correcting."
+        },
+        {
+          "id": "gluteal-region-identification",
+          "prompt": "Draw single-leg stance on the right, label right abductors and show the unsupported left pelvis dropping if their action fails."
+        }
+      ]
+    },
+    {
+      "lessonId": "thigh-compartments",
+      "title": "Thigh compartments and muscle actions",
+      "practice": [
+        {
+          "id": "thigh-compartments-explain",
+          "prompt": "Why are the hamstrings linked to both hip and knee motion?"
+        },
+        {
+          "id": "thigh-compartments-relations",
+          "prompt": "In thigh compartments and muscle actions, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "thigh-compartments-correction",
+          "prompt": "A learner answers “Long head only” to the question “Which part of biceps femoris receives common fibular division supply?” Explain what needs correcting."
+        },
+        {
+          "id": "thigh-compartments-identification",
+          "prompt": "Draw anterior, medial and posterior thigh compartments and mark adductor magnus and short-head biceps as innervation exceptions."
+        }
+      ]
+    },
+    {
+      "lessonId": "femoral-triangle-canal",
+      "title": "Femoral triangle, sheath and adductor canal",
+      "practice": [
+        {
+          "id": "femoral-triangle-canal-explain",
+          "prompt": "Why does the femoral artery change name at the adductor hiatus?"
+        },
+        {
+          "id": "femoral-triangle-canal-relations",
+          "prompt": "In femoral triangle, sheath and adductor canal, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "femoral-triangle-canal-correction",
+          "prompt": "A learner answers “Femoral artery” to the question “Which structure lies outside the femoral sheath?” Explain what needs correcting."
+        },
+        {
+          "id": "femoral-triangle-canal-identification",
+          "prompt": "Draw the femoral sheath around artery, vein and canal, leaving the nerve outside, then trace the saphenous nerve leaving the adductor canal."
+        }
+      ]
+    },
+    {
+      "lessonId": "knee-joint-mechanics",
+      "title": "Knee ligaments, menisci and movement",
+      "practice": [
+        {
+          "id": "knee-joint-mechanics-explain",
+          "prompt": "Why is the medial meniscus generally less mobile than the lateral?"
+        },
+        {
+          "id": "knee-joint-mechanics-relations",
+          "prompt": "In knee ligaments, menisci and movement, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "knee-joint-mechanics-correction",
+          "prompt": "A learner answers “Posterior tibial translation” to the question “Relative to a fixed femur, what does the ACL principally restrain?” Explain what needs correcting."
+        },
+        {
+          "id": "knee-joint-mechanics-identification",
+          "prompt": "Draw crossed cruciates in side view and add separate anterior and posterior tibial-translation arrows with their restraining ligament."
+        }
+      ]
+    },
+    {
+      "lessonId": "popliteal-fossa",
+      "title": "Popliteal fossa and neurovascular depth",
+      "practice": [
+        {
+          "id": "popliteal-fossa-explain",
+          "prompt": "Why can the common fibular nerve be affected near the fibular neck rather than centrally in the fossa?"
+        },
+        {
+          "id": "popliteal-fossa-relations",
+          "prompt": "In popliteal fossa and neurovascular depth, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "popliteal-fossa-correction",
+          "prompt": "A learner answers “Artery, nerve, vein” to the question “What is the typical superficial-to-deep order of the central popliteal bundle?” Explain what needs correcting."
+        },
+        {
+          "id": "popliteal-fossa-identification",
+          "prompt": "Draw the fossa boundaries and stack nerve, vein and artery from superficial to deep; add common fibular nerve along the lateral edge."
+        }
+      ]
+    },
+    {
+      "lessonId": "leg-compartments",
+      "title": "Leg compartments and ankle actions",
+      "practice": [
+        {
+          "id": "leg-compartments-explain",
+          "prompt": "Why can ankle inversion persist despite common fibular dysfunction?"
+        },
+        {
+          "id": "leg-compartments-relations",
+          "prompt": "In leg compartments and ankle actions, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "leg-compartments-correction",
+          "prompt": "A learner answers “Superficial fibular nerve” to the question “Which nerve supplies the anterior leg compartment?” Explain what needs correcting."
+        },
+        {
+          "id": "leg-compartments-identification",
+          "prompt": "Draw a transverse leg section with anterior, lateral and posterior compartments, pairing each with its nerve and main action."
+        }
+      ]
+    },
+    {
+      "lessonId": "ankle-foot-arches",
+      "title": "Ankle, tarsal tunnel and foot arches",
+      "practice": [
+        {
+          "id": "ankle-foot-arches-explain",
+          "prompt": "How do the plantar aponeurosis and long tendons support an arch?"
+        },
+        {
+          "id": "ankle-foot-arches-relations",
+          "prompt": "In ankle, tarsal tunnel and foot arches, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "ankle-foot-arches-correction",
+          "prompt": "A learner answers “Talocrural joint alone” to the question “Where do inversion and eversion mainly occur?” Explain what needs correcting."
+        },
+        {
+          "id": "ankle-foot-arches-identification",
+          "prompt": "Draw talocrural and subtalar joints separately with their principal movement arrows, then mark the medial malleolus and tarsal tunnel."
+        }
+      ]
+    },
+    {
+      "lessonId": "plantar-foot",
+      "title": "Plantar muscles and nerve territories",
+      "practice": [
+        {
+          "id": "plantar-foot-explain",
+          "prompt": "Why use the second toe as the reference axis for foot interossei?"
+        },
+        {
+          "id": "plantar-foot-relations",
+          "prompt": "In plantar muscles and nerve territories, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "plantar-foot-correction",
+          "prompt": "A learner answers “Deep fibular nerve alone” to the question “Which nerve supplies most intrinsic plantar muscles?” Explain what needs correcting."
+        },
+        {
+          "id": "plantar-foot-identification",
+          "prompt": "Draw the four plantar muscle layers schematically and mark the second-toe axis for interosseous actions."
+        }
+      ]
+    },
+    {
+      "lessonId": "lower-limb-vessels",
+      "title": "Lower limb arteries, veins and lymphatics",
+      "practice": [
+        {
+          "id": "lower-limb-vessels-explain",
+          "prompt": "How do perforating veins connect superficial and deep venous systems?"
+        },
+        {
+          "id": "lower-limb-vessels-relations",
+          "prompt": "In lower limb arteries, veins and lymphatics, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "lower-limb-vessels-correction",
+          "prompt": "A learner answers “Fibular artery” to the question “Which artery continues as dorsalis pedis at the ankle?” Explain what needs correcting."
+        },
+        {
+          "id": "lower-limb-vessels-identification",
+          "prompt": "Trace anterior tibial to dorsalis pedis and posterior tibial to plantar arteries; add both saphenous veins relative to their malleoli."
+        }
+      ]
+    },
+    {
+      "lessonId": "lumbar-sacral-plexuses",
+      "title": "Lumbar and sacral plexuses across the limb",
+      "practice": [
+        {
+          "id": "lumbar-sacral-plexuses-explain",
+          "prompt": "Why is a dermatome not identical to a peripheral nerve sensory territory?"
+        },
+        {
+          "id": "lumbar-sacral-plexuses-relations",
+          "prompt": "In lumbar and sacral plexuses across the limb, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "lumbar-sacral-plexuses-correction",
+          "prompt": "A learner answers “Obturator nerve” to the question “Which nerve links anterior thigh motor supply with medial leg skin through its saphenous branch?” Explain what needs correcting."
+        },
+        {
+          "id": "lumbar-sacral-plexuses-identification",
+          "prompt": "Draw L2-L4 contributions to femoral and obturator nerves, then contrast them with the sciatic division into tibial and common fibular components."
+        }
+      ]
+    },
+    {
+      "lessonId": "neck-musculoskeletal",
+      "title": "Neck muscles and hyoid relationships",
+      "practice": [
+        {
+          "id": "neck-musculoskeletal-explain",
+          "prompt": "How can suprahyoid contraction have opposite-looking effects in different tasks?"
+        },
+        {
+          "id": "neck-musculoskeletal-relations",
+          "prompt": "In neck muscles and hyoid relationships, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "neck-musculoskeletal-correction",
+          "prompt": "A learner answers “Hypoglossal motor fibers to all infrahyoids” to the question “Which fibers reach thyrohyoid by traveling with XII?” Explain what needs correcting."
+        },
+        {
+          "id": "neck-musculoskeletal-identification",
+          "prompt": "Draw the hyoid with muscles above and below it, separating ansa cervicalis from C1-via-XII routes."
+        }
+      ]
+    },
+    {
+      "lessonId": "regional-lymphatics",
+      "title": "Regional lymph drainage and crossing territories",
+      "practice": [
+        {
+          "id": "regional-lymphatics-explain",
+          "prompt": "Why can breast lymph cross toward parasternal or opposite-side routes?"
+        },
+        {
+          "id": "regional-lymphatics-relations",
+          "prompt": "In regional lymph drainage and crossing territories, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "regional-lymphatics-correction",
+          "prompt": "A learner answers “All external genital tissues drain only to axillary nodes” to the question “Why does testicular drainage differ from most external genital skin drainage?” Explain what needs correcting."
+        },
+        {
+          "id": "regional-lymphatics-identification",
+          "prompt": "Draw separate routes for breast, scrotal skin and testis, each with its main regional node group."
+        }
+      ]
+    },
+    {
+      "lessonId": "limb-development",
+      "title": "Early patterning and limb development",
+      "practice": [
+        {
+          "id": "limb-development-explain",
+          "prompt": "Why do limb muscle and skeletal patterning require separate lineage statements?"
+        },
+        {
+          "id": "limb-development-relations",
+          "prompt": "In early patterning and limb development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "limb-development-correction",
+          "prompt": "A learner answers “Apical ectodermal ridge through SHH alone” to the question “Which signaling center organizes anteroposterior limb patterning through SHH?” Explain what needs correcting."
+        },
+        {
+          "id": "limb-development-identification",
+          "prompt": "Draw a limb bud with proximal-distal, anterior-posterior and dorsal-ventral axes, placing AER distally and ZPA posteriorly."
+        }
+      ]
+    },
+    {
+      "lessonId": "axial-skeleton-development",
+      "title": "Vertebral and skull development",
+      "practice": [
+        {
+          "id": "axial-skeleton-development-explain",
+          "prompt": "Why does resegmentation help explain intervertebral muscle and nerve relationships?"
+        },
+        {
+          "id": "axial-skeleton-development-relations",
+          "prompt": "In vertebral and skull development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order."
+        },
+        {
+          "id": "axial-skeleton-development-correction",
+          "prompt": "A learner answers “Neural crest alone” to the question “What forms the nucleus pulposus in the classic developmental account?” Explain what needs correcting."
+        },
+        {
+          "id": "axial-skeleton-development-identification",
+          "prompt": "Draw two adjacent sclerotomes resegmenting around an intervertebral disc, labeling annulus and nucleus origins separately."
+        }
+      ]
+    }
+  ]
+}

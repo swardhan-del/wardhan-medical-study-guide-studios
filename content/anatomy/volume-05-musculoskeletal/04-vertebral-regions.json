@@ -1,0 +1,131 @@
+{
+  "volume": 5,
+  "order": 4,
+  "lesson": {
+    "id": "vertebral-regions",
+    "subject": "anatomy",
+    "title": "Vertebral column and regional vertebrae",
+    "summary": "Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Vertebral column and regional vertebrae",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "5. Vertebral Column Overview; 6. Typical and Regional Vertebrae",
+    "steps": [
+      {
+        "title": "Vertebral Column Overview",
+        "body": "The vertebral column consists of cervical, thoracic, lumbar, sacral, and coccygeal vertebrae. It supports the body, protects the spinal cord, transmits weight to the pelvis, and provides attachment for muscles and ligaments.\n\nThe usual count is 33: 7 cervical, 12 thoracic, 5 lumbar, 5 sacral and commonly 4 coccygeal vertebrae. Coccygeal number and transitional anatomy vary. Primary curvatures are thoracic and sacral kyphoses. Secondary curvatures are cervical and lumbar lordoses. The vertebral canal is formed by successive vertebral foramina."
+      },
+      {
+        "title": "Typical and Regional Vertebrae",
+        "body": "A typical vertebra has a body, vertebral arch, pedicles, laminae, vertebral foramen, processes, and notches. Regional differences let you identify the vertebra in practical exam.\n\nCervical vertebrae: small body, large triangular foramen, transverse foramina, often bifid spinous process. Thoracic vertebrae: heart-shaped body, round vertebral foramen, costal facets, long inferior spinous process. Lumbar vertebrae: large kidney-shaped body, triangular foramen, thick quadrangular spinous process. Sacrum: promontory, ala, sacral canal, sacral hiatus, auricular surface, sacral crests."
+      },
+      {
+        "title": "How do vertebral facets and body size relate to regional mechanical demands?",
+        "body": "Lumbar bodies are large because they bear substantial load, while facet orientations influence permitted movement and resistance to rotation. Thoracic rib attachments add stability and alter regional mobility. Cervical vertebrae support head movement with smaller bodies and specialized upper joints. These are tendencies rather than one rule for every vertebra. Transitional levels often combine features. On an unknown bone, compare body proportions, foramina, costal facets and articular orientation before deciding the region from a single feature."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+      }
+    ],
+    "question": {
+      "prompt": "Which feature most strongly suggests a typical thoracic vertebra?",
+      "options": [
+        {
+          "text": "Costal facets",
+          "reason": "Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+        },
+        {
+          "text": "A dens",
+          "reason": "The correct relationship is: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+        },
+        {
+          "text": "Transverse foramina in every transverse process",
+          "reason": "The correct relationship is: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain vertebral column and regional vertebrae using the main anatomical relationships, then justify your answer to: Which feature most strongly suggests a typical thoracic vertebra?",
+      "answer": "Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+    },
+    "related": [
+      "muscle-actions",
+      "craniovertebral-joints"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of vertebral column and regional vertebrae.",
+      "Answer with anatomical reasons: Which feature most strongly suggests a typical thoracic vertebra?",
+      "Compare cervical, thoracic and lumbar vertebrae using body, foramen and articular features, then label C1 and C2 as exceptions."
+    ],
+    "prerequisites": [
+      "muscle-actions"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which feature most strongly suggests a typical thoracic vertebra? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.",
+        "C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies.",
+        "Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Compare cervical, thoracic and lumbar vertebrae using body, foramen and articular features, then label C1 and C2 as exceptions.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Costal facets",
+      "Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies.",
+      "C1 and C2 are specialized exceptions, and transitional vertebrae vary."
+    ]
+  },
+  "practice": [
+    {
+      "id": "vertebral-regions-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How do vertebral facets and body size relate to regional mechanical demands?",
+      "answer": "Lumbar bodies are large because they bear substantial load, while facet orientations influence permitted movement and resistance to rotation. Thoracic rib attachments add stability and alter regional mobility. Cervical vertebrae support head movement with smaller bodies and specialized upper joints. These are tendencies rather than one rule for every vertebra. Transitional levels often combine features. On an unknown bone, compare body proportions, foramina, costal facets and articular orientation before deciding the region from a single feature."
+    },
+    {
+      "id": "vertebral-regions-relations",
+      "kind": "Relationship recall",
+      "prompt": "In vertebral column and regional vertebrae, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "A typical vertebra has a body, vertebral arch, pedicles, laminae, vertebral foramen, processes, and notches. Regional differences let you identify the vertebra in practical exam.\n\nCervical vertebrae: small body, large triangular foramen, transverse foramina, often bifid spinous process. Thoracic vertebrae: heart-shaped body, round vertebral foramen, costal facets, long inferior spinous process. Lumbar vertebrae: large kidney-shaped body, triangular foramen, thick quadrangular spinous process. Sacrum: promontory, ala, sacral canal, sacral hiatus, auricular surface, sacral crests."
+    },
+    {
+      "id": "vertebral-regions-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “A dens” to the question “Which feature most strongly suggests a typical thoracic vertebra?” Explain what needs correcting.",
+      "answer": "Costal facets. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+    },
+    {
+      "id": "vertebral-regions-identification",
+      "kind": "Draw and identify",
+      "prompt": "Compare cervical, thoracic and lumbar vertebrae using body, foramen and articular features, then label C1 and C2 as exceptions.",
+      "answer": "Check your labels against these relationships: The vertebral column consists of cervical, thoracic, lumbar, sacral, and coccygeal vertebrae. It supports the body, protects the spinal cord, transmits weight to the pelvis, and provides attachment for muscles and ligaments.\n\nThe usual count is 33: 7 cervical, 12 thoracic, 5 lumbar, 5 sacral and commonly 4 coccygeal vertebrae. Coccygeal number and transitional anatomy vary. Primary curvatures are thoracic and sacral kyphoses. Secondary curvatures are cervical and lumbar lordoses. The vertebral canal is formed by successive vertebral foramina. Typical cervical vertebrae have transverse foramina, thoracic vertebrae articulate with ribs, and lumbar vertebrae have large weight-bearing bodies. C1 and C2 are specialized exceptions, and transitional vertebrae vary. The usual count is 33 vertebrae, including five sacral and commonly four coccygeal elements; coccygeal number varies. Primary thoracic and sacral curves persist from development, while cervical and lumbar lordoses emerge with head control and upright posture."
+    }
+  ],
+  "sourceSections": [
+    "5. Vertebral Column Overview",
+    "6. Typical and Regional Vertebrae"
+  ],
+  "furtherReading": {
+    "title": "Vertebral column",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

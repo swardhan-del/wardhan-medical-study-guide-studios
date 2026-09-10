@@ -1,0 +1,136 @@
+{
+  "volume": 3,
+  "order": 17,
+  "lesson": {
+    "id": "gonadal-duct-development",
+    "subject": "anatomy",
+    "title": "Gonadal differentiation and genital ducts",
+    "summary": "Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.",
+    "tags": [
+      "anatomy",
+      "Volume 3",
+      "Pelvis and urogenital anatomy",
+      "Gonadal differentiation and genital ducts",
+      "embryology"
+    ],
+    "source": "anatomy-divided-volume-3",
+    "section": "39. Gonad Formation and Primordial Germ Cells; 40. Male Genital Development; 41. Female Genital Development",
+    "steps": [
+      {
+        "title": "Gonad Formation and Primordial Germ Cells",
+        "body": "Gonads develop from gonadal ridges formed by intermediate mesoderm, with primordial germ cells migrating from yolk sac region to the ridge. The indifferent gonad can become testis or ovary depending on genetic and hormonal pathways.\n\nPrimordial germ cells migrate along dorsal mesentery to gonadal ridge. SRY/testis-determining pathways promote testis development. Sertoli cells produce anti-Mullerian hormone. Leydig cells produce testosterone. Without AMH-mediated regression, paramesonephric ducts persist; ovarian and female tract differentiation also involve active genetic pathways."
+      },
+      {
+        "title": "Male Genital Development",
+        "body": "Male internal genital ducts develop mainly from mesonephric ducts under testosterone influence, while paramesonephric ducts regress under anti-Mullerian hormone. External genitalia masculinize under dihydrotestosterone.\n\nMesonephric duct derivatives: epididymis, ductus deferens, seminal vesicle, ejaculatory duct. Mesonephric tubules contribute efferent ductules. AMH causes paramesonephric duct regression. Testosterone supports mesonephric duct development. DHT supports prostate and external genital masculinization. Testis descent is guided by gubernaculum and processus vaginalis."
+      },
+      {
+        "title": "Female Genital Development",
+        "body": "Female internal genital organs develop mainly from paramesonephric ducts in the absence of AMH. The uterine tubes derive from unfused cranial parts; uterus, cervix, and upper vagina derive from fused caudal parts forming the uterovaginal canal.\n\nParamesonephric ducts form uterine tubes, uterus, cervix, and upper vagina. Lower vagina develops from urogenital sinus via sinovaginal bulbs/vaginal plate. Mesonephric ducts mostly regress, leaving remnants such as epoophoron and paroophoron. Ovaries descend into pelvis; gubernaculum contributes ovarian ligament and round ligament of uterus. Fusion defects can produce uterine anomalies."
+      },
+      {
+        "title": "Why should AMH and testosterone be placed on separate arrows in a developmental map?",
+        "body": "They arise from different testicular cell populations and act on different targets. Sertoli-derived AMH promotes paramesonephric regression, while Leydig-derived testosterone supports mesonephric differentiation. Conversion to DHT contributes to external genital and prostatic development. A map with one arrow labeled male hormone hides these distinctions and cannot explain selective changes in one pathway. The same principle applies to separating gonadal differentiation from duct development and external genital patterning: these processes interact but are not a single anatomical event."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+      }
+    ],
+    "question": {
+      "prompt": "Which signal supports persistence of the mesonephric duct in typical male development?",
+      "options": [
+        {
+          "text": "Testosterone",
+          "reason": "Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+        },
+        {
+          "text": "Anti-Mullerian hormone alone",
+          "reason": "The correct relationship is: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+        },
+        {
+          "text": "Surfactant",
+          "reason": "The correct relationship is: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain gonadal differentiation and genital ducts using the main anatomical relationships, then justify your answer to: Which signal supports persistence of the mesonephric duct in typical male development?",
+      "answer": "Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+    },
+    "related": [
+      "urinary-development",
+      "gonadal-descent"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of gonadal differentiation and genital ducts.",
+      "Answer with anatomical reasons: Which signal supports persistence of the mesonephric duct in typical male development?",
+      "Draw separate mesonephric and paramesonephric ducts, with testosterone and AMH arrows pointing to their distinct targets."
+    ],
+    "prerequisites": [
+      "urinary-development"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which signal supports persistence of the mesonephric duct in typical male development? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.",
+        "Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing.",
+        "Classical duct maps are useful but simplify the developmental contributions to the vagina."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw separate mesonephric and paramesonephric ducts, with testosterone and AMH arrows pointing to their distinct targets.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Testosterone",
+      "Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation.",
+      "Dihydrotestosterone contributes to external genital and prostatic development."
+    ]
+  },
+  "practice": [
+    {
+      "id": "gonadal-duct-development-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why should AMH and testosterone be placed on separate arrows in a developmental map?",
+      "answer": "They arise from different testicular cell populations and act on different targets. Sertoli-derived AMH promotes paramesonephric regression, while Leydig-derived testosterone supports mesonephric differentiation. Conversion to DHT contributes to external genital and prostatic development. A map with one arrow labeled male hormone hides these distinctions and cannot explain selective changes in one pathway. The same principle applies to separating gonadal differentiation from duct development and external genital patterning: these processes interact but are not a single anatomical event."
+    },
+    {
+      "id": "gonadal-duct-development-relations",
+      "kind": "Relationship recall",
+      "prompt": "In gonadal differentiation and genital ducts, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Male internal genital ducts develop mainly from mesonephric ducts under testosterone influence, while paramesonephric ducts regress under anti-Mullerian hormone. External genitalia masculinize under dihydrotestosterone.\n\nMesonephric duct derivatives: epididymis, ductus deferens, seminal vesicle, ejaculatory duct. Mesonephric tubules contribute efferent ductules. AMH causes paramesonephric duct regression. Testosterone supports mesonephric duct development. DHT supports prostate and external genital masculinization. Testis descent is guided by gubernaculum and processus vaginalis."
+    },
+    {
+      "id": "gonadal-duct-development-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Anti-Mullerian hormone alone” to the question “Which signal supports persistence of the mesonephric duct in typical male development?” Explain what needs correcting.",
+      "answer": "Testosterone. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+    },
+    {
+      "id": "gonadal-duct-development-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw separate mesonephric and paramesonephric ducts, with testosterone and AMH arrows pointing to their distinct targets.",
+      "answer": "Check your labels against these relationships: Gonads develop from gonadal ridges formed by intermediate mesoderm, with primordial germ cells migrating from yolk sac region to the ridge. The indifferent gonad can become testis or ovary depending on genetic and hormonal pathways.\n\nPrimordial germ cells migrate along dorsal mesentery to gonadal ridge. SRY/testis-determining pathways promote testis development. Sertoli cells produce anti-Mullerian hormone. Leydig cells produce testosterone. Without AMH-mediated regression, paramesonephric ducts persist; ovarian and female tract differentiation also involve active genetic pathways. Sertoli-cell anti-Mullerian hormone promotes paramesonephric regression, while Leydig-cell testosterone supports mesonephric duct differentiation. Dihydrotestosterone contributes to external genital and prostatic development. These are distinct signaling roles, so a hormone name must be paired with its target tissue. Female reproductive development is also an active genetic process; it should not be described merely as doing nothing. Classical duct maps are useful but simplify the developmental contributions to the vagina."
+    }
+  ],
+  "sourceSections": [
+    "39. Gonad Formation and Primordial Germ Cells",
+    "40. Male Genital Development",
+    "41. Female Genital Development"
+  ],
+  "furtherReading": {
+    "title": "Reproductive system development",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-3-development-of-the-male-and-female-reproductive-systems"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

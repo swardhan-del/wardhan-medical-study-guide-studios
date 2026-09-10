@@ -1,0 +1,131 @@
+{
+  "volume": 2,
+  "order": 6,
+  "lesson": {
+    "id": "omenta-and-lesser-sac",
+    "subject": "anatomy",
+    "title": "Omenta, lesser sac and epiploic foramen",
+    "summary": "The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Omenta, lesser sac and epiploic foramen",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "10. Greater Omentum, Lesser Omentum, and Peritoneal Ligaments; 11. Lesser Sac and Epiploic Foramen",
+    "steps": [
+      {
+        "title": "Greater Omentum, Lesser Omentum, and Peritoneal Ligaments",
+        "body": "The omenta are peritoneal folds related to the stomach. The lesser omentum connects liver to lesser curvature of stomach and proximal duodenum. The greater omentum descends from the greater curvature and proximal duodenum, then turns back to the transverse colon.\n\nLesser omentum consists of hepatogastric and hepatoduodenal ligaments. Hepatoduodenal ligament contains portal triad: bile duct, hepatic artery proper, and portal vein. Greater omentum includes gastrocolic portion and can adhere to inflamed areas. Peritoneal ligaments may connect organ to organ or organ to body wall while carrying vessels and nerves."
+      },
+      {
+        "title": "Lesser Sac and Epiploic Foramen",
+        "body": "The lesser sac is the omental bursa behind the stomach and lesser omentum. It communicates with the greater sac through the epiploic foramen, also called the omental foramen.\n\nAnterior wall of the lesser sac includes stomach, lesser omentum, and gastrocolic ligament. Posterior wall relates to pancreas, left kidney, left suprarenal gland, aorta, and related retroperitoneal structures. Epiploic foramen boundaries: anterior hepatoduodenal ligament, posterior IVC, superior caudate lobe, inferior first part of duodenum."
+      },
+      {
+        "title": "Why does the portal triad matter when describing the free edge of the lesser omentum?",
+        "body": "The free right edge is the hepatoduodenal ligament, which encloses a vascular-ductal pedicle. The bile duct is generally anterior and to the right, hepatic artery proper anterior and to the left, and portal vein posterior. These are contents of the ligament, whereas the epiploic foramen is the opening behind it. Confusing contents with boundaries makes a three-dimensional explanation fail. Draw the pedicle in cross-section before relating it to the vena cava behind the foramen."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+      }
+    ],
+    "question": {
+      "prompt": "What forms the anterior boundary of the epiploic foramen?",
+      "options": [
+        {
+          "text": "Hepatoduodenal ligament",
+          "reason": "Answer: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+        },
+        {
+          "text": "Inferior vena cava",
+          "reason": "The correct relationship is: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+        },
+        {
+          "text": "Pancreatic body",
+          "reason": "The correct relationship is: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain omenta, lesser sac and epiploic foramen using the main anatomical relationships, then justify your answer to: What forms the anterior boundary of the epiploic foramen?",
+      "answer": "Answer: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+    },
+    "related": [
+      "peritoneal-organization",
+      "peritoneal-fluid-routes"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of omenta, lesser sac and epiploic foramen.",
+      "Answer with anatomical reasons: What forms the anterior boundary of the epiploic foramen?",
+      "Draw a sagittal stomach-pancreas relationship and a separate four-boundary diagram of the epiploic foramen."
+    ],
+    "prerequisites": [
+      "peritoneal-organization"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What forms the anterior boundary of the epiploic foramen? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum.",
+        "At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary.",
+        "Thus a space, its opening and the contents of one boundary must be named separately."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a sagittal stomach-pancreas relationship and a separate four-boundary diagram of the epiploic foramen.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Hepatoduodenal ligament",
+      "The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum.",
+      "At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior."
+    ]
+  },
+  "practice": [
+    {
+      "id": "omenta-and-lesser-sac-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does the portal triad matter when describing the free edge of the lesser omentum?",
+      "answer": "The free right edge is the hepatoduodenal ligament, which encloses a vascular-ductal pedicle. The bile duct is generally anterior and to the right, hepatic artery proper anterior and to the left, and portal vein posterior. These are contents of the ligament, whereas the epiploic foramen is the opening behind it. Confusing contents with boundaries makes a three-dimensional explanation fail. Draw the pedicle in cross-section before relating it to the vena cava behind the foramen."
+    },
+    {
+      "id": "omenta-and-lesser-sac-relations",
+      "kind": "Relationship recall",
+      "prompt": "In omenta, lesser sac and epiploic foramen, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The lesser sac is the omental bursa behind the stomach and lesser omentum. It communicates with the greater sac through the epiploic foramen, also called the omental foramen.\n\nAnterior wall of the lesser sac includes stomach, lesser omentum, and gastrocolic ligament. Posterior wall relates to pancreas, left kidney, left suprarenal gland, aorta, and related retroperitoneal structures. Epiploic foramen boundaries: anterior hepatoduodenal ligament, posterior IVC, superior caudate lobe, inferior first part of duodenum."
+    },
+    {
+      "id": "omenta-and-lesser-sac-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Inferior vena cava” to the question “What forms the anterior boundary of the epiploic foramen?” Explain what needs correcting.",
+      "answer": "Hepatoduodenal ligament. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+    },
+    {
+      "id": "omenta-and-lesser-sac-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a sagittal stomach-pancreas relationship and a separate four-boundary diagram of the epiploic foramen.",
+      "answer": "Check your labels against these relationships: The omenta are peritoneal folds related to the stomach. The lesser omentum connects liver to lesser curvature of stomach and proximal duodenum. The greater omentum descends from the greater curvature and proximal duodenum, then turns back to the transverse colon.\n\nLesser omentum consists of hepatogastric and hepatoduodenal ligaments. Hepatoduodenal ligament contains portal triad: bile duct, hepatic artery proper, and portal vein. Greater omentum includes gastrocolic portion and can adhere to inflamed areas. Peritoneal ligaments may connect organ to organ or organ to body wall while carrying vessels and nerves. The lesser sac is behind the stomach, but its entrance is at the free right edge of the lesser omentum. At that entrance, the hepatoduodenal ligament is anterior, the inferior vena cava posterior, the caudate lobe superior and the first duodenal part inferior. The portal triad travels within the anterior boundary. Thus a space, its opening and the contents of one boundary must be named separately."
+    }
+  ],
+  "sourceSections": [
+    "10. Greater Omentum, Lesser Omentum, and Peritoneal Ligaments",
+    "11. Lesser Sac and Epiploic Foramen"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "volume": 1,
+  "order": 1,
+  "lesson": {
+    "id": "thoracic-cage-landmarks",
+    "subject": "anatomy",
+    "title": "Thoracic cage and landmarks",
+    "summary": "The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting.",
+    "tags": [
+      "anatomy",
+      "Volume 1",
+      "Thorax",
+      "Thoracic cage and landmarks",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-1",
+    "section": "Thoracic Wall sections 2-7, 51-53",
+    "steps": [
+      {
+        "title": "Locate the structures",
+        "body": "The thoracic cage consists of twelve pairs of ribs and their cartilages, thoracic vertebrae and sternum. Typical ribs have a head, neck, tubercle, shaft, angle and costal groove. The head and tubercle articulate with vertebral structures, allowing small movements that together change chest dimensions."
+      },
+      {
+        "title": "Connect structure and function",
+        "body": "Elevation of ribs changes anteroposterior and transverse dimensions through combined pump-handle and bucket-handle patterns. Costal cartilage adds compliance. The first rib is broad and has vascular grooves separated by the scalene tubercle; ribs 11 and 12 lack the typical anterior and tubercular articulations. Bone identification begins with these distinguishing features, not with counting alone."
+      },
+      {
+        "title": "Why are pump-handle and bucket-handle movements useful approximations rather than separate mechanisms?",
+        "body": "Each rib rotates through its vertebral articulations with a three-dimensional axis. The visible result includes changes in both anteroposterior and transverse chest dimensions, with different emphases at different levels. Pump-handle and bucket-handle descriptions isolate components to make the movement understandable. Cartilage compliance and sternum movement also contribute. A rib is therefore not a simple lever restricted to one plane, and normal respiration combines rib motion with diaphragm descent and changes in abdominal pressure."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The second costal cartilage articulates at the sternal angle, so it is the landmark from which the other ribs can be counted. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+      }
+    ],
+    "question": {
+      "prompt": "Which costal cartilage is identified at the sternal angle?",
+      "options": [
+        {
+          "text": "Second",
+          "reason": "Answer: Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+        },
+        {
+          "text": "First",
+          "reason": "The correct relationship is: Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+        },
+        {
+          "text": "Seventh",
+          "reason": "The correct relationship is: Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain thoracic cage and landmarks using the main anatomical relationships, then justify your answer to: Which costal cartilage is identified at the sternal angle?",
+      "answer": "Answer: Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+    },
+    "related": [
+      "intercostal-neurovascular-plane",
+      "diaphragm-openings"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of thoracic cage and landmarks.",
+      "Answer with anatomical reasons: Which costal cartilage is identified at the sternal angle?",
+      "Draw sternum with manubrium, body and xiphoid, attach the second rib at the angle and extend the approximate T4-T5 plane posteriorly."
+    ],
+    "prerequisites": [],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which costal cartilage is identified at the sternal angle? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "The second costal cartilage articulates at the sternal angle, the junction of the manubrium and body of the sternum. This gives a palpable starting point for rib counting.",
+        "Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person.",
+        "Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw sternum with manubrium, body and xiphoid, attach the second rib at the angle and extend the approximate T4-T5 plane posteriorly.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Second",
+      "The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting.",
+      "Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum."
+    ]
+  },
+  "practice": [
+    {
+      "id": "thoracic-cage-landmarks-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why are pump-handle and bucket-handle movements useful approximations rather than separate mechanisms?",
+      "answer": "Each rib rotates through its vertebral articulations with a three-dimensional axis. The visible result includes changes in both anteroposterior and transverse chest dimensions, with different emphases at different levels. Pump-handle and bucket-handle descriptions isolate components to make the movement understandable. Cartilage compliance and sternum movement also contribute. A rib is therefore not a simple lever restricted to one plane, and normal respiration combines rib motion with diaphragm descent and changes in abdominal pressure."
+    },
+    {
+      "id": "thoracic-cage-landmarks-relations",
+      "kind": "Relationship recall",
+      "prompt": "In thoracic cage and landmarks, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Elevation of ribs changes anteroposterior and transverse dimensions through combined pump-handle and bucket-handle patterns. Costal cartilage adds compliance. The first rib is broad and has vascular grooves separated by the scalene tubercle; ribs 11 and 12 lack the typical anterior and tubercular articulations. Bone identification begins with these distinguishing features, not with counting alone."
+    },
+    {
+      "id": "thoracic-cage-landmarks-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “First” to the question “Which costal cartilage is identified at the sternal angle?” Explain what needs correcting.",
+      "answer": "Second. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+    },
+    {
+      "id": "thoracic-cage-landmarks-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw sternum with manubrium, body and xiphoid, attach the second rib at the angle and extend the approximate T4-T5 plane posteriorly.",
+      "answer": "Check your labels against these relationships: The thoracic cage consists of twelve pairs of ribs and their cartilages, thoracic vertebrae and sternum. Typical ribs have a head, neck, tubercle, shaft, angle and costal groove. The head and tubercle articulate with vertebral structures, allowing small movements that together change chest dimensions. The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting. Its transverse plane is classically near the T4-T5 disc and separates superior from inferior mediastinum. These are approximate living relationships that change with posture and respiration. A palpable landmark helps orient deeper anatomy but is not an exact ruler for every person. Ribs 11 and 12 lack anterior attachment; ribs 8-10 attach indirectly through the costal margin."
+    }
+  ],
+  "sourceSections": [
+    "Thoracic Wall sections 2-7, 51-53"
+  ],
+  "furtherReading": {
+    "title": "Heart anatomy and thoracic relationships",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

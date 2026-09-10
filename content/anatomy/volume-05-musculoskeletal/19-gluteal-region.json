@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 19,
+  "lesson": {
+    "id": "gluteal-region",
+    "subject": "anatomy",
+    "title": "Gluteal region and the piriformis landmark",
+    "summary": "The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Gluteal region and the piriformis landmark",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "28. Gluteal Region and Piriformis Landmark",
+    "steps": [
+      {
+        "title": "Gluteal Region and Piriformis Landmark",
+        "body": "The gluteal region is organized by the piriformis muscle. The superior gluteal nerve and vessels pass above piriformis; the sciatic nerve and most other structures pass below piriformis."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Superficial gluteal muscles: gluteus maximus, gluteus medius, gluteus minimus, tensor fasciae latae. Deep lateral rotators: piriformis, obturator internus, gemelli, quadratus femoris, obturator externus. Superior gluteal nerve supplies gluteus medius, gluteus minimus, and TFL. Inferior gluteal nerve supplies gluteus maximus. Sciatic nerve exits below piriformis."
+      },
+      {
+        "title": "Why does gluteus maximus become especially important during rising or climbing?",
+        "body": "These tasks require strong hip extension against a flexion load. Gluteus maximus has a large force-producing architecture and acts through femoral and iliotibial attachments, making it useful for powerful extension and stabilization. Quiet level standing or walking uses a different balance of forces and may demand less maximal extensor activity. Gluteus medius and minimus instead stabilize the pelvis in the frontal plane during single-leg support. Similar regional names should not obscure the different mechanical tasks and inferior versus superior gluteal innervation."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+      }
+    ],
+    "question": {
+      "prompt": "A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance?",
+      "options": [
+        {
+          "text": "Left side of pelvis drops",
+          "reason": "Answer: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+        },
+        {
+          "text": "Right shoulder alone drops",
+          "reason": "The correct relationship is: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+        },
+        {
+          "text": "Pelvis must rise on the left",
+          "reason": "The correct relationship is: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain gluteal region and the piriformis landmark using the main anatomical relationships, then justify your answer to: A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance?",
+      "answer": "Answer: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+    },
+    "related": [
+      "hip-joint-stability",
+      "thigh-compartments"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of gluteal region and the piriformis landmark.",
+      "Answer with anatomical reasons: A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance?",
+      "Draw single-leg stance on the right, label right abductors and show the unsupported left pelvis dropping if their action fails."
+    ],
+    "prerequisites": [
+      "hip-joint-stability"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping.",
+        "A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment.",
+        "Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw single-leg stance on the right, label right abductors and show the unsupported left pelvis dropping if their action fails.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Left side of pelvis drops",
+      "The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping.",
+      "A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop."
+    ]
+  },
+  "practice": [
+    {
+      "id": "gluteal-region-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does gluteus maximus become especially important during rising or climbing?",
+      "answer": "These tasks require strong hip extension against a flexion load. Gluteus maximus has a large force-producing architecture and acts through femoral and iliotibial attachments, making it useful for powerful extension and stabilization. Quiet level standing or walking uses a different balance of forces and may demand less maximal extensor activity. Gluteus medius and minimus instead stabilize the pelvis in the frontal plane during single-leg support. Similar regional names should not obscure the different mechanical tasks and inferior versus superior gluteal innervation."
+    },
+    {
+      "id": "gluteal-region-relations",
+      "kind": "Relationship recall",
+      "prompt": "In gluteal region and the piriformis landmark, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Superficial gluteal muscles: gluteus maximus, gluteus medius, gluteus minimus, tensor fasciae latae. Deep lateral rotators: piriformis, obturator internus, gemelli, quadratus femoris, obturator externus. Superior gluteal nerve supplies gluteus medius, gluteus minimus, and TFL. Inferior gluteal nerve supplies gluteus maximus. Sciatic nerve exits below piriformis."
+    },
+    {
+      "id": "gluteal-region-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Right shoulder alone drops” to the question “A right superior gluteal nerve lesion may cause which pelvic movement during right single-leg stance?” Explain what needs correcting.",
+      "answer": "Left side of pelvis drops. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+    },
+    {
+      "id": "gluteal-region-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw single-leg stance on the right, label right abductors and show the unsupported left pelvis dropping if their action fails.",
+      "answer": "Check your labels against these relationships: The gluteal region is organized by the piriformis muscle. The superior gluteal nerve and vessels pass above piriformis; the sciatic nerve and most other structures pass below piriformis. The stance-side gluteus medius and minimus generate an abduction moment that keeps the opposite pelvis from dropping. A lesion on the right therefore affects stability while standing on the right leg, with contralateral pelvic drop. A compensatory trunk lean may reduce the load moment. Gluteus maximus uses inferior gluteal supply and is especially important in powerful hip extension; it should not replace the abductors in this explanation."
+    }
+  ],
+  "sourceSections": [
+    "28. Gluteal Region and Piriformis Landmark"
+  ],
+  "furtherReading": {
+    "title": "Pelvic girdle and lower limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

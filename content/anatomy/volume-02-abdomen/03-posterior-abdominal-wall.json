@@ -1,0 +1,130 @@
+{
+  "volume": 2,
+  "order": 3,
+  "lesson": {
+    "id": "posterior-abdominal-wall",
+    "subject": "anatomy",
+    "title": "Posterior abdominal wall and lumbar relations",
+    "summary": "The lumbar plexus forms within the posterior part of psoas major.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Posterior abdominal wall and lumbar relations",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "4. Posterior Abdominal Wall",
+    "steps": [
+      {
+        "title": "Posterior Abdominal Wall",
+        "body": "The posterior abdominal wall is formed by lumbar vertebrae, psoas major, iliacus, quadratus lumborum, diaphragm crura, transversalis fascia, nerves, vessels, kidneys, ureters, and retroperitoneal structures."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Psoas major lies beside lumbar vertebral bodies and passes under the inguinal ligament with iliacus to form iliopsoas. Quadratus lumborum extends from iliac crest to 12th rib and lumbar transverse processes. Major nerves include subcostal, iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous, femoral, and obturator nerves. The abdominal aorta and inferior vena cava lie anterior to the vertebral column, with the aorta left of midline and IVC right of midline."
+      },
+      {
+        "title": "Why is psoas a useful landmark for both musculoskeletal and visceral anatomy?",
+        "body": "Psoas connects lumbar vertebral structures with the femur through the iliopsoas tendon, linking spine and hip mechanically. The lumbar plexus forms within it, and nerves emerge around its borders. Ureter and retroperitoneal vessels lie nearby but remain distinct structures with separate functions. In a sectional image, finding psoas on both sides of the vertebral bodies gives a stable reference for locating kidneys, ureters and major vessels. Muscle position organizes a region without making every neighboring structure part of that muscle."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve is characteristically seen on the anterior surface of psoas major?",
+      "options": [
+        {
+          "text": "Genitofemoral nerve",
+          "reason": "Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+        },
+        {
+          "text": "Phrenic nerve",
+          "reason": "The correct relationship is: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+        },
+        {
+          "text": "Pudendal nerve",
+          "reason": "The correct relationship is: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain posterior abdominal wall and lumbar relations using the main anatomical relationships, then justify your answer to: Which nerve is characteristically seen on the anterior surface of psoas major?",
+      "answer": "Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+    },
+    "related": [
+      "abdominal-wall-layers",
+      "inguinal-canal-relations"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of posterior abdominal wall and lumbar relations.",
+      "Answer with anatomical reasons: Which nerve is characteristically seen on the anterior surface of psoas major?",
+      "Place psoas on a posterior-wall sketch and mark the anterior, medial and lateral nerve exits."
+    ],
+    "prerequisites": [
+      "abdominal-wall-layers"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve is characteristically seen on the anterior surface of psoas major? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major.",
+        "Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch.",
+        "Trace a structure toward its destination before naming it on a section."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Place psoas on a posterior-wall sketch and mark the anterior, medial and lateral nerve exits.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Genitofemoral nerve",
+      "The lumbar plexus forms within the posterior part of psoas major.",
+      "Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly."
+    ]
+  },
+  "practice": [
+    {
+      "id": "posterior-abdominal-wall-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is psoas a useful landmark for both musculoskeletal and visceral anatomy?",
+      "answer": "Psoas connects lumbar vertebral structures with the femur through the iliopsoas tendon, linking spine and hip mechanically. The lumbar plexus forms within it, and nerves emerge around its borders. Ureter and retroperitoneal vessels lie nearby but remain distinct structures with separate functions. In a sectional image, finding psoas on both sides of the vertebral bodies gives a stable reference for locating kidneys, ureters and major vessels. Muscle position organizes a region without making every neighboring structure part of that muscle."
+    },
+    {
+      "id": "posterior-abdominal-wall-relations",
+      "kind": "Relationship recall",
+      "prompt": "In posterior abdominal wall and lumbar relations, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Psoas major lies beside lumbar vertebral bodies and passes under the inguinal ligament with iliacus to form iliopsoas. Quadratus lumborum extends from iliac crest to 12th rib and lumbar transverse processes. Major nerves include subcostal, iliohypogastric, ilioinguinal, genitofemoral, lateral femoral cutaneous, femoral, and obturator nerves. The abdominal aorta and inferior vena cava lie anterior to the vertebral column, with the aorta left of midline and IVC right of midline."
+    },
+    {
+      "id": "posterior-abdominal-wall-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Phrenic nerve” to the question “Which nerve is characteristically seen on the anterior surface of psoas major?” Explain what needs correcting.",
+      "answer": "Genitofemoral nerve. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+    },
+    {
+      "id": "posterior-abdominal-wall-identification",
+      "kind": "Draw and identify",
+      "prompt": "Place psoas on a posterior-wall sketch and mark the anterior, medial and lateral nerve exits.",
+      "answer": "Check your labels against these relationships: The posterior abdominal wall is formed by lumbar vertebrae, psoas major, iliacus, quadratus lumborum, diaphragm crura, transversalis fascia, nerves, vessels, kidneys, ureters, and retroperitoneal structures. The lumbar plexus forms within the posterior part of psoas major. Its branches emerge on different sides: the femoral nerve laterally, obturator nerve medially, and genitofemoral nerve anteriorly. This is a three-dimensional map rather than a list of roots. The ureter descends on the psoas region but is a tube, not a plexus branch. Trace a structure toward its destination before naming it on a section."
+    }
+  ],
+  "sourceSections": [
+    "4. Posterior Abdominal Wall"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

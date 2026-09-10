@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 2,
+  "lesson": {
+    "id": "synovial-joint-design",
+    "subject": "anatomy",
+    "title": "Synovial joint design and movement",
+    "summary": "Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Synovial joint design and movement",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "3. Synovial Joints",
+    "steps": [
+      {
+        "title": "Synovial Joints",
+        "body": "A synovial joint is a discontinuous joint with articular surfaces covered by cartilage, an articular cavity, capsule, synovial membrane, and synovial fluid. Accessory structures improve congruence, stability, and tendon movement."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "Obligatory components: articular surfaces, cartilage, cavity, capsule, synovial membrane, synovial fluid. Synovial fluid combines plasma ultrafiltrate with molecules such as hyaluronan contributed by synovial cells. Accessory components include ligaments, discs, menisci, labra, bursae, tendon sheaths, fat pads, and sesamoid bones."
+      },
+      {
+        "title": "How does articular cartilage obtain support without its own ordinary vascular network?",
+        "body": "Articular cartilage is avascular and depends substantially on diffusion from the synovial environment, assisted by changing compression and fluid movement during loading. Its matrix distributes force across the joint surfaces while maintaining a low-friction interface. The underlying subchondral bone supports it mechanically but is a distinct tissue. This explains why cartilage, synovium and bone respond differently to injury. A joint section should show all three rather than treating the smooth articular covering as simply exposed bone."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+      }
+    ],
+    "question": {
+      "prompt": "Does synovial membrane normally cover articular cartilage?",
+      "options": [
+        {
+          "text": "No; it lines non-articular internal capsular surfaces",
+          "reason": "Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+        },
+        {
+          "text": "Yes; it covers the entire cartilage surface",
+          "reason": "The correct relationship is: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+        },
+        {
+          "text": "No; it is outside the fibrous capsule only",
+          "reason": "The correct relationship is: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain synovial joint design and movement using the main anatomical relationships, then justify your answer to: Does synovial membrane normally cover articular cartilage?",
+      "answer": "Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+    },
+    "related": [
+      "bones-and-connections",
+      "muscle-actions"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of synovial joint design and movement.",
+      "Answer with anatomical reasons: Does synovial membrane normally cover articular cartilage?",
+      "Draw a joint section with cartilage, fibrous capsule and synovial lining; leave cartilage free of the synovial lining."
+    ],
+    "prerequisites": [
+      "bones-and-connections"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Does synovial membrane normally cover articular cartilage? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.",
+        "Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity.",
+        "Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw a joint section with cartilage, fibrous capsule and synovial lining; leave cartilage free of the synovial lining.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "No; it lines non-articular internal capsular surfaces",
+      "Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment.",
+      "Discs, menisci and labra modify congruence or load transmission but are not present in every joint."
+    ]
+  },
+  "practice": [
+    {
+      "id": "synovial-joint-design-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How does articular cartilage obtain support without its own ordinary vascular network?",
+      "answer": "Articular cartilage is avascular and depends substantially on diffusion from the synovial environment, assisted by changing compression and fluid movement during loading. Its matrix distributes force across the joint surfaces while maintaining a low-friction interface. The underlying subchondral bone supports it mechanically but is a distinct tissue. This explains why cartilage, synovium and bone respond differently to injury. A joint section should show all three rather than treating the smooth articular covering as simply exposed bone."
+    },
+    {
+      "id": "synovial-joint-design-relations",
+      "kind": "Relationship recall",
+      "prompt": "In synovial joint design and movement, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Obligatory components: articular surfaces, cartilage, cavity, capsule, synovial membrane, synovial fluid. Synovial fluid combines plasma ultrafiltrate with molecules such as hyaluronan contributed by synovial cells. Accessory components include ligaments, discs, menisci, labra, bursae, tendon sheaths, fat pads, and sesamoid bones."
+    },
+    {
+      "id": "synovial-joint-design-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Yes; it covers the entire cartilage surface” to the question “Does synovial membrane normally cover articular cartilage?” Explain what needs correcting.",
+      "answer": "No; it lines non-articular internal capsular surfaces. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+    },
+    {
+      "id": "synovial-joint-design-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw a joint section with cartilage, fibrous capsule and synovial lining; leave cartilage free of the synovial lining.",
+      "answer": "Check your labels against these relationships: A synovial joint is a discontinuous joint with articular surfaces covered by cartilage, an articular cavity, capsule, synovial membrane, and synovial fluid. Accessory structures improve congruence, stability, and tendon movement. Articular cartilage reduces friction and distributes load, while the fibrous capsule encloses the joint and synovium contributes to the fluid environment. Discs, menisci and labra modify congruence or load transmission but are not present in every joint. A tendon can be intracapsular yet extrasynovial, so inside the capsule does not mean freely exposed within the synovial cavity. Relate each component to its mechanical role rather than listing obligatory and accessory parts without explanation."
+    }
+  ],
+  "sourceSections": [
+    "3. Synovial Joints"
+  ],
+  "furtherReading": {
+    "title": "Synovial joints",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/9-4-synovial-joints"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

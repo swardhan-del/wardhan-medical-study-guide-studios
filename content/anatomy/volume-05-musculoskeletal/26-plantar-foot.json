@@ -1,0 +1,130 @@
+{
+  "volume": 5,
+  "order": 26,
+  "lesson": {
+    "id": "plantar-foot",
+    "subject": "anatomy",
+    "title": "Plantar muscles and nerve territories",
+    "summary": "The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Plantar muscles and nerve territories",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "35. Foot Muscles and Plantar Nerves",
+    "steps": [
+      {
+        "title": "Foot Muscles and Plantar Nerves",
+        "body": "The plantar foot has four muscle layers. The medial plantar nerve supplies LAFF; the lateral plantar nerve supplies the remaining intrinsic plantar muscles."
+      },
+      {
+        "title": "Relationships and functional organization",
+        "body": "First layer: abductor hallucis, flexor digitorum brevis, abductor digiti minimi. Second layer: quadratus plantae, lumbricals, FDL and FHL tendons. Third layer: flexor hallucis brevis, adductor hallucis, flexor digiti minimi brevis. Fourth layer: dorsal/plantar interossei, fibularis longus tendon, tibialis posterior tendon. Medial plantar nerve sensory: medial sole and medial 3.5 toes. Lateral plantar nerve sensory: lateral sole and lateral 1.5 toes."
+      },
+      {
+        "title": "Why use the second toe as the reference axis for foot interossei?",
+        "body": "The second toe is the anatomical reference for abduction and adduction in the foot, so dorsal interossei move digits away from that axis and plantar interossei toward it. The middle finger serves this role in the hand, making direct transfer of the hand mnemonic misleading. Interossei also interact with extensor expansions and help stabilize toe posture under load. Actions at small joints matter for balance and propulsion even when they produce less obvious movement than the long extrinsic tendons."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical. The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand. Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+      }
+    ],
+    "question": {
+      "prompt": "Which nerve supplies most intrinsic plantar muscles?",
+      "options": [
+        {
+          "text": "Lateral plantar nerve",
+          "reason": "Answer: Lateral plantar nerve. The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical. The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand. Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+        },
+        {
+          "text": "Deep fibular nerve alone",
+          "reason": "The correct relationship is: Lateral plantar nerve. The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical. The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand. Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+        },
+        {
+          "text": "Saphenous nerve",
+          "reason": "The correct relationship is: Lateral plantar nerve. The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical. The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand. Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain plantar muscles and nerve territories using the main anatomical relationships, then justify your answer to: Which nerve supplies most intrinsic plantar muscles?",
+      "answer": "Answer: Lateral plantar nerve. The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical. The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand. Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+    },
+    "related": [
+      "ankle-foot-arches",
+      "lower-limb-vessels"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of plantar muscles and nerve territories.",
+      "Answer with anatomical reasons: Which nerve supplies most intrinsic plantar muscles?",
+      "Draw the four plantar muscle layers schematically and mark the second-toe axis for interosseous actions."
+    ],
+    "prerequisites": [
+      "ankle-foot-arches"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "Which nerve supplies most intrinsic plantar muscles? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Lateral plantar nerve. The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical.",
+        "The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand.",
+        "Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw the four plantar muscle layers schematically and mark the second-toe axis for interosseous actions.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Lateral plantar nerve",
+      "The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical.",
+      "The lateral plantar nerve supplies most remaining plantar intrinsics."
+    ]
+  },
+  "practice": [
+    {
+      "id": "plantar-foot-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why use the second toe as the reference axis for foot interossei?",
+      "answer": "The second toe is the anatomical reference for abduction and adduction in the foot, so dorsal interossei move digits away from that axis and plantar interossei toward it. The middle finger serves this role in the hand, making direct transfer of the hand mnemonic misleading. Interossei also interact with extensor expansions and help stabilize toe posture under load. Actions at small joints matter for balance and propulsion even when they produce less obvious movement than the long extrinsic tendons."
+    },
+    {
+      "id": "plantar-foot-relations",
+      "kind": "Relationship recall",
+      "prompt": "In plantar muscles and nerve territories, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "First layer: abductor hallucis, flexor digitorum brevis, abductor digiti minimi. Second layer: quadratus plantae, lumbricals, FDL and FHL tendons. Third layer: flexor hallucis brevis, adductor hallucis, flexor digiti minimi brevis. Fourth layer: dorsal/plantar interossei, fibularis longus tendon, tibialis posterior tendon. Medial plantar nerve sensory: medial sole and medial 3.5 toes. Lateral plantar nerve sensory: lateral sole and lateral 1.5 toes."
+    },
+    {
+      "id": "plantar-foot-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Deep fibular nerve alone” to the question “Which nerve supplies most intrinsic plantar muscles?” Explain what needs correcting.",
+      "answer": "Lateral plantar nerve. The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical. The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand. Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+    },
+    {
+      "id": "plantar-foot-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw the four plantar muscle layers schematically and mark the second-toe axis for interosseous actions.",
+      "answer": "Check your labels against these relationships: The plantar foot has four muscle layers. The medial plantar nerve supplies LAFF; the lateral plantar nerve supplies the remaining intrinsic plantar muscles. The medial plantar nerve supplies a smaller muscle group including abductor hallucis, flexor digitorum brevis, flexor hallucis brevis and the first lumbrical. The lateral plantar nerve supplies most remaining plantar intrinsics. Plantar and dorsal interossei use the second toe as the abduction-adduction reference axis, unlike the middle finger in the hand. Layered muscles and tendons stabilize arches and toes under load; sensory territory alone cannot identify every motor branch."
+    }
+  ],
+  "sourceSections": [
+    "35. Foot Muscles and Plantar Nerves"
+  ],
+  "furtherReading": {
+    "title": "Pelvic girdle and lower limb muscles",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

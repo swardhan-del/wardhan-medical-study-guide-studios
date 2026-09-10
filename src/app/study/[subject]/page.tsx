@@ -1,3 +1,4 @@
+import { AnatomyCourseIntro } from "@/components/anatomy-course";
 import { BeginnerSequence } from "@/components/beginner-sequence";
 import searchIndex from "@/content/public-search.json";
 import Link from "next/link";
@@ -26,7 +27,7 @@ export default async function SubjectStudyPage({ params }: Props) {
      <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link></div>
    </header>
    <BeginnerSequence subject={subject} />
-   {subject === "anatomy" && <section className="study-panel"><h2>Study a complete regional sequence</h2><p>The thorax collection connects landmarks, pleura and mediastinum with an interactive map, twelve applied questions and oral recall. It is a focused regional sequence, not a complete anatomy syllabus.</p><Link className="button button-primary" href="/subjects/anatomy/thorax">Start the thorax sequence</Link><p><Link href="/library/limbs-plexus-and-joints">Trace the brachial plexus with a labelled or recall diagram</Link></p></section>}
+   {subject === "anatomy" && <AnatomyCourseIntro />}
    {subject === "histology" && <section className="study-panel"><h2>Practise recognising real sections</h2><p>Start with epithelial structure, hide the labels, then compare the two available microscope sections. Renal tubule practice begins with three schematics and links to further public slide practice.</p><div className="action-row"><Link href="/library/epithelia">Study epithelium and compare sections</Link><Link href="/practice/histology">Open tissue identification practice</Link></div></section>}
    {subject === "biophysics" && <BiophysicsCourseIntro />}
    <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>

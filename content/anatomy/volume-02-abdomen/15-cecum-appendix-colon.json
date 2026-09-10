@@ -1,0 +1,131 @@
+{
+  "volume": 2,
+  "order": 15,
+  "lesson": {
+    "id": "cecum-appendix-colon",
+    "subject": "anatomy",
+    "title": "Cecum, appendix and colon",
+    "summary": "The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Cecum, appendix and colon",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "23. Cecum and Appendix; 24. Colon: Parts and External Features",
+    "steps": [
+      {
+        "title": "Cecum and Appendix",
+        "body": "The cecum is the first part of the large intestine in the right iliac fossa. The appendix is a narrow lymphoid diverticulum from the posteromedial cecum, with variable position, commonly retrocecal or pelvic.\n\nAppendix base is located where the three teniae coli converge. Surface projection is commonly near McBurney point, between umbilicus and right ASIS. Appendicular artery usually comes from ileocolic artery. Pain may begin as visceral periumbilical pain and later localize to right iliac fossa when parietal peritoneum is irritated."
+      },
+      {
+        "title": "Colon: Parts and External Features",
+        "body": "The colon extends from cecum to rectum and has characteristic external features: teniae coli, haustra, and epiploic appendages. Ascending and descending colon are usually secondarily retroperitoneal; transverse and sigmoid colon are intraperitoneal.\n\nLarge intestine has teniae coli, haustra, and omental/epiploic appendages. Ascending colon runs to right colic flexure; transverse colon runs to left colic flexure; descending colon runs down the left side; sigmoid colon enters pelvis. Transverse mesocolon suspends transverse colon; sigmoid mesocolon suspends sigmoid colon. Arterial supply transitions from SMA to IMA near the distal transverse colon."
+      },
+      {
+        "title": "Why is colon mobility different in different regions?",
+        "body": "Transverse and sigmoid colon usually retain mesocolons, allowing substantial mobility. Ascending and descending colon are commonly fixed secondarily to the posterior abdominal wall, although variation occurs. These attachments explain why a loop's position on one image may be misleading and why the mesenteric border is an important orientation clue. Teniae coli condense longitudinal muscle in the colon and converge at the appendix base; at the rectum the longitudinal layer becomes continuous rather than remaining as three distinct bands."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+      }
+    ],
+    "question": {
+      "prompt": "What reliably locates the appendiceal base despite variation in the tip?",
+      "options": [
+        {
+          "text": "Convergence of the three teniae coli",
+          "reason": "Answer: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+        },
+        {
+          "text": "The lowest point of the cecum in every person",
+          "reason": "The correct relationship is: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+        },
+        {
+          "text": "The midpoint of the transverse colon",
+          "reason": "The correct relationship is: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain cecum, appendix and colon using the main anatomical relationships, then justify your answer to: What reliably locates the appendiceal base despite variation in the tip?",
+      "answer": "Answer: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+    },
+    "related": [
+      "small-intestine-mesentery",
+      "rectum-anal-transition"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of cecum, appendix and colon.",
+      "Answer with anatomical reasons: What reliably locates the appendiceal base despite variation in the tip?",
+      "Outline the colon, mark the cecum, and show two possible appendiceal tip positions sharing one base."
+    ],
+    "prerequisites": [
+      "small-intestine-mesentery"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What reliably locates the appendiceal base despite variation in the tip? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base.",
+        "Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows.",
+        "The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Outline the colon, mark the cecum, and show two possible appendiceal tip positions sharing one base.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Convergence of the three teniae coli",
+      "The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base.",
+      "Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain."
+    ]
+  },
+  "practice": [
+    {
+      "id": "cecum-appendix-colon-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why is colon mobility different in different regions?",
+      "answer": "Transverse and sigmoid colon usually retain mesocolons, allowing substantial mobility. Ascending and descending colon are commonly fixed secondarily to the posterior abdominal wall, although variation occurs. These attachments explain why a loop's position on one image may be misleading and why the mesenteric border is an important orientation clue. Teniae coli condense longitudinal muscle in the colon and converge at the appendix base; at the rectum the longitudinal layer becomes continuous rather than remaining as three distinct bands."
+    },
+    {
+      "id": "cecum-appendix-colon-relations",
+      "kind": "Relationship recall",
+      "prompt": "In cecum, appendix and colon, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The colon extends from cecum to rectum and has characteristic external features: teniae coli, haustra, and epiploic appendages. Ascending and descending colon are usually secondarily retroperitoneal; transverse and sigmoid colon are intraperitoneal.\n\nLarge intestine has teniae coli, haustra, and omental/epiploic appendages. Ascending colon runs to right colic flexure; transverse colon runs to left colic flexure; descending colon runs down the left side; sigmoid colon enters pelvis. Transverse mesocolon suspends transverse colon; sigmoid mesocolon suspends sigmoid colon. Arterial supply transitions from SMA to IMA near the distal transverse colon."
+    },
+    {
+      "id": "cecum-appendix-colon-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “The lowest point of the cecum in every person” to the question “What reliably locates the appendiceal base despite variation in the tip?” Explain what needs correcting.",
+      "answer": "Convergence of the three teniae coli. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+    },
+    {
+      "id": "cecum-appendix-colon-identification",
+      "kind": "Draw and identify",
+      "prompt": "Outline the colon, mark the cecum, and show two possible appendiceal tip positions sharing one base.",
+      "answer": "Check your labels against these relationships: The cecum is the first part of the large intestine in the right iliac fossa. The appendix is a narrow lymphoid diverticulum from the posteromedial cecum, with variable position, commonly retrocecal or pelvic.\n\nAppendix base is located where the three teniae coli converge. Surface projection is commonly near McBurney point, between umbilicus and right ASIS. Appendicular artery usually comes from ileocolic artery. Pain may begin as visceral periumbilical pain and later localize to right iliac fossa when parietal peritoneum is irritated. The appendiceal tip can be retrocecal, pelvic or elsewhere, while the teniae guide you toward its base. Midgut visceral afferents help explain early poorly localized periumbilical pain; later irritation of somatically innervated parietal peritoneum can localize pain. This is an anatomical explanation of a classic pattern, not a rule that every presentation follows. The colon's taeniae and haustra distinguish it from small intestine, but these features change at the rectum."
+    }
+  ],
+  "sourceSections": [
+    "23. Cecum and Appendix",
+    "24. Colon: Parts and External Features"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

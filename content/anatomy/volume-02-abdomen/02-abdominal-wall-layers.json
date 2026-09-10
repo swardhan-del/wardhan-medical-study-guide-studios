@@ -1,0 +1,136 @@
+{
+  "volume": 2,
+  "order": 2,
+  "lesson": {
+    "id": "abdominal-wall-layers",
+    "subject": "anatomy",
+    "title": "Abdominal wall layers and rectus sheath",
+    "summary": "An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer.",
+    "tags": [
+      "anatomy",
+      "Volume 2",
+      "Abdomen",
+      "Abdominal wall layers and rectus sheath",
+      "regional anatomy"
+    ],
+    "source": "anatomy-divided-volume-2",
+    "section": "2. Anterolateral Abdominal Wall: Layers; 3. Rectus Sheath, Linea Alba, and Arcuate Line; 6. Abdominal Wall Vessels, Nerves, and Lymphatics",
+    "steps": [
+      {
+        "title": "Anterolateral Abdominal Wall: Layers",
+        "body": "The anterolateral abdominal wall is formed by skin, superficial fascia, three flat muscles, rectus abdominis with pyramidalis, transversalis fascia, extraperitoneal fascia, and parietal peritoneum. Its muscles protect viscera, compress the abdomen, assist expiration, and stabilize the trunk.\n\nFlat muscles are external oblique, internal oblique, and transversus abdominis. Vertical muscles are rectus abdominis and pyramidalis. External oblique fibers run inferomedially; internal oblique fibers run superomedially; transversus fibers run horizontally. Innervation is mainly lower thoracoabdominal nerves plus L1 through iliohypogastric and ilioinguinal nerves."
+      },
+      {
+        "title": "Rectus Sheath, Linea Alba, and Arcuate Line",
+        "body": "The rectus sheath is an aponeurotic sleeve around rectus abdominis formed by the aponeuroses of the flat abdominal muscles. Its arrangement changes above and below the arcuate line.\n\nAbove the arcuate line, the anterior sheath is formed by external oblique plus anterior lamina of internal oblique. Above the arcuate line, the posterior sheath is formed by posterior lamina of internal oblique plus transversus abdominis. Below the arcuate line, all three aponeuroses pass anterior to rectus abdominis; posteriorly only transversalis fascia separates rectus from extraperitoneal tissue. The linea alba is the midline fibrous raphe between right and left rectus sheaths."
+      },
+      {
+        "title": "Abdominal Wall Vessels, Nerves, and Lymphatics",
+        "body": "The abdominal wall has segmental neurovascular supply from thoracoabdominal nerves and vessels, with important vertical anastomoses between superior and inferior epigastric systems.\n\nSuperior epigastric artery is a terminal branch of internal thoracic artery. Inferior epigastric artery arises from external iliac artery. Superficial lymph above the umbilicus tends toward axillary nodes; below the umbilicus toward superficial inguinal nodes. The superior-inferior epigastric anastomosis can become important in collateral circulation."
+      },
+      {
+        "title": "How can the abdominal wall affect breathing and movement at the same time?",
+        "body": "Coordinated contraction compresses abdominal contents and raises intra-abdominal pressure while tensioning the trunk. During forced expiration, this can push the relaxed diaphragm upward and reduce thoracic volume. During lifting or a postural task, the same muscular envelope contributes to stability alongside back muscles and diaphragm. Unilateral oblique action also rotates the trunk: external and contralateral internal oblique can cooperate. The fiber-direction diagrams explain force transmission, but actual actions depend on which attachments are stabilized."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+      }
+    ],
+    "question": {
+      "prompt": "What changes below the arcuate line?",
+      "options": [
+        {
+          "text": "All three flat-muscle aponeuroses pass anterior to rectus",
+          "reason": "Answer: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+        },
+        {
+          "text": "The transversalis fascia disappears",
+          "reason": "The correct relationship is: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+        },
+        {
+          "text": "Rectus abdominis becomes intraperitoneal",
+          "reason": "The correct relationship is: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain abdominal wall layers and rectus sheath using the main anatomical relationships, then justify your answer to: What changes below the arcuate line?",
+      "answer": "Answer: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+    },
+    "related": [
+      "abdominal-surface-map",
+      "posterior-abdominal-wall"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of abdominal wall layers and rectus sheath.",
+      "Answer with anatomical reasons: What changes below the arcuate line?",
+      "Draw two wall sections, one between the costal margin and arcuate line and one below the arcuate line. Label the persistent deep layers."
+    ],
+    "prerequisites": [
+      "abdominal-surface-map"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What changes below the arcuate line? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer.",
+        "Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain.",
+        "Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw two wall sections, one between the costal margin and arcuate line and one below the arcuate line. Label the persistent deep layers.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "All three flat-muscle aponeuroses pass anterior to rectus",
+      "An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer.",
+      "Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths."
+    ]
+  },
+  "practice": [
+    {
+      "id": "abdominal-wall-layers-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "How can the abdominal wall affect breathing and movement at the same time?",
+      "answer": "Coordinated contraction compresses abdominal contents and raises intra-abdominal pressure while tensioning the trunk. During forced expiration, this can push the relaxed diaphragm upward and reduce thoracic volume. During lifting or a postural task, the same muscular envelope contributes to stability alongside back muscles and diaphragm. Unilateral oblique action also rotates the trunk: external and contralateral internal oblique can cooperate. The fiber-direction diagrams explain force transmission, but actual actions depend on which attachments are stabilized."
+    },
+    {
+      "id": "abdominal-wall-layers-relations",
+      "kind": "Relationship recall",
+      "prompt": "In abdominal wall layers and rectus sheath, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "The rectus sheath is an aponeurotic sleeve around rectus abdominis formed by the aponeuroses of the flat abdominal muscles. Its arrangement changes above and below the arcuate line.\n\nAbove the arcuate line, the anterior sheath is formed by external oblique plus anterior lamina of internal oblique. Above the arcuate line, the posterior sheath is formed by posterior lamina of internal oblique plus transversus abdominis. Below the arcuate line, all three aponeuroses pass anterior to rectus abdominis; posteriorly only transversalis fascia separates rectus from extraperitoneal tissue. The linea alba is the midline fibrous raphe between right and left rectus sheaths."
+    },
+    {
+      "id": "abdominal-wall-layers-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “The transversalis fascia disappears” to the question “What changes below the arcuate line?” Explain what needs correcting.",
+      "answer": "All three flat-muscle aponeuroses pass anterior to rectus. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+    },
+    {
+      "id": "abdominal-wall-layers-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw two wall sections, one between the costal margin and arcuate line and one below the arcuate line. Label the persistent deep layers.",
+      "answer": "Check your labels against these relationships: The anterolateral abdominal wall is formed by skin, superficial fascia, three flat muscles, rectus abdominis with pyramidalis, transversalis fascia, extraperitoneal fascia, and parietal peritoneum. Its muscles protect viscera, compress the abdomen, assist expiration, and stabilize the trunk.\n\nFlat muscles are external oblique, internal oblique, and transversus abdominis. Vertical muscles are rectus abdominis and pyramidalis. External oblique fibers run inferomedially; internal oblique fibers run superomedially; transversus fibers run horizontally. Innervation is mainly lower thoracoabdominal nerves plus L1 through iliohypogastric and ilioinguinal nerves. An aponeurosis is a broad tendon, whereas fascia is a connective-tissue layer. Between the costal margin and arcuate line, internal oblique contributes to both anterior and posterior rectus sheaths. Below the line, the posterior aponeurotic sheath ends, but transversalis fascia, extraperitoneal tissue and parietal peritoneum remain. Above the costal margin, the arrangement differs again; do not apply the middle-abdominal cross-section to every height."
+    }
+  ],
+  "sourceSections": [
+    "2. Anterolateral Abdominal Wall: Layers",
+    "3. Rectus Sheath, Linea Alba, and Arcuate Line",
+    "6. Abdominal Wall Vessels, Nerves, and Lymphatics"
+  ],
+  "furtherReading": {
+    "title": "Digestive organs and their organization",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}

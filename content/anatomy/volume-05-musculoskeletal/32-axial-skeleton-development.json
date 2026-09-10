@@ -1,0 +1,131 @@
+{
+  "volume": 5,
+  "order": 32,
+  "lesson": {
+    "id": "axial-skeleton-development",
+    "subject": "anatomy",
+    "title": "Vertebral and skull development",
+    "summary": "Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra.",
+    "tags": [
+      "anatomy",
+      "Volume 5",
+      "Musculoskeletal anatomy",
+      "Vertebral and skull development",
+      "embryology"
+    ],
+    "source": "anatomy-divided-volume-5",
+    "section": "38. Skull Divisions and Cranial Fossae; 44. Vertebral and Skull Development",
+    "steps": [
+      {
+        "title": "Skull Divisions and Cranial Fossae",
+        "body": "The skull is divided into neurocranium and viscerocranium. The cranial fossae organize the skull base and cranial nerve exits.\n\nNeurocranium: frontal, parietal, temporal, occipital, sphenoid, ethmoid. Viscerocranium: maxilla, zygomatic, nasal, lacrimal, palatine, inferior nasal concha, vomer, mandible. Anterior cranial fossa includes cribriform foramina. Middle cranial fossa includes optic canal, superior orbital fissure, foramina rotundum, ovale, and spinosum. Posterior cranial fossa includes foramen magnum, jugular foramen, hypoglossal canal, and internal acoustic meatus."
+      },
+      {
+        "title": "Vertebral and Skull Development",
+        "body": "Vertebrae arise mainly from sclerotome. Resegmentation lets spinal nerves exit between vertebrae. The skull develops through membranous neurocranium, chondrocranium, and viscerocranium components.\n\nVertebral body forms by fusion of caudal half of one sclerotome with cranial half of the next. Vertebral arch is sclerotome-derived. Annulus fibrosus is sclerotome mesenchyme. Nucleus pulposus is notochord-derived. Membranous neurocranium ossifies intramembranously. Chondrocranium ossifies endochondrally. Viscerocranium is largely pharyngeal arch/neural crest derived. Fontanelles allow molding at birth and brain growth."
+      },
+      {
+        "title": "Why does resegmentation help explain intervertebral muscle and nerve relationships?",
+        "body": "Combining adjacent sclerotome halves places developing vertebral bodies out of register with the original somite segments. Muscles can then span joints between vertebrae, while segmental nerves emerge through intervertebral regions. The disc occupies a distinct boundary area with annular mesenchyme around notochord-associated tissue. A drawing with one somite becoming one entire vertebra misses this relationship. Follow two neighboring segments through the rearrangement and label muscle and nerve positions alongside the skeletal elements."
+      },
+      {
+        "title": "Apply the anatomy and resolve a common confusion",
+        "body": "Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone."
+      }
+    ],
+    "question": {
+      "prompt": "What forms the nucleus pulposus in the classic developmental account?",
+      "options": [
+        {
+          "text": "Notochordal tissue",
+          "reason": "Answer: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone."
+        },
+        {
+          "text": "Neural crest alone",
+          "reason": "The correct relationship is: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone."
+        },
+        {
+          "text": "Surface ectoderm",
+          "reason": "The correct relationship is: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone."
+        }
+      ],
+      "answer": 0
+    },
+    "recall": {
+      "prompt": "Explain vertebral and skull development using the main anatomical relationships, then justify your answer to: What forms the nucleus pulposus in the classic developmental account?",
+      "answer": "Answer: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone."
+    },
+    "related": [
+      "limb-development",
+      "bones-and-connections"
+    ],
+    "updatedAt": "2026-09-10",
+    "minutes": 10,
+    "objectives": [
+      "Describe the location and organization of vertebral and skull development.",
+      "Answer with anatomical reasons: What forms the nucleus pulposus in the classic developmental account?",
+      "Draw two adjacent sclerotomes resegmenting around an intervertebral disc, labeling annulus and nucleus origins separately."
+    ],
+    "prerequisites": [
+      "limb-development"
+    ],
+    "workedExample": {
+      "title": "Reason from the anatomical relationships",
+      "prompt": "What forms the nucleus pulposus in the classic developmental account? Identify the relevant structure, explain the relationship and distinguish the alternatives.",
+      "solution": [
+        "Answer: Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra.",
+        "This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins.",
+        "Avoid applying one germ-layer rule to every skull bone."
+      ]
+    }
+  },
+  "identification": {
+    "prompt": "Draw two adjacent sclerotomes resegmenting around an intervertebral disc, labeling annulus and nucleus origins separately.",
+    "caption": "A draw-from-memory identification activity. Use labelled relationships rather than an unlabeled decorative picture.",
+    "checkpoints": [
+      "Notochordal tissue",
+      "Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra.",
+      "This positions intervertebral joints relative to segmental muscles and nerves."
+    ]
+  },
+  "practice": [
+    {
+      "id": "axial-skeleton-development-explain",
+      "kind": "Explain the mechanism",
+      "prompt": "Why does resegmentation help explain intervertebral muscle and nerve relationships?",
+      "answer": "Combining adjacent sclerotome halves places developing vertebral bodies out of register with the original somite segments. Muscles can then span joints between vertebrae, while segmental nerves emerge through intervertebral regions. The disc occupies a distinct boundary area with annular mesenchyme around notochord-associated tissue. A drawing with one somite becoming one entire vertebra misses this relationship. Follow two neighboring segments through the rearrangement and label muscle and nerve positions alongside the skeletal elements."
+    },
+    {
+      "id": "axial-skeleton-development-relations",
+      "kind": "Relationship recall",
+      "prompt": "In vertebral and skull development, which structural relationships help distinguish the main parts or pathways? Explain them in anatomical order.",
+      "answer": "Vertebrae arise mainly from sclerotome. Resegmentation lets spinal nerves exit between vertebrae. The skull develops through membranous neurocranium, chondrocranium, and viscerocranium components.\n\nVertebral body forms by fusion of caudal half of one sclerotome with cranial half of the next. Vertebral arch is sclerotome-derived. Annulus fibrosus is sclerotome mesenchyme. Nucleus pulposus is notochord-derived. Membranous neurocranium ossifies intramembranously. Chondrocranium ossifies endochondrally. Viscerocranium is largely pharyngeal arch/neural crest derived. Fontanelles allow molding at birth and brain growth."
+    },
+    {
+      "id": "axial-skeleton-development-correction",
+      "kind": "Correct a misconception",
+      "prompt": "A learner answers “Neural crest alone” to the question “What forms the nucleus pulposus in the classic developmental account?” Explain what needs correcting.",
+      "answer": "Notochordal tissue. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone."
+    },
+    {
+      "id": "axial-skeleton-development-identification",
+      "kind": "Draw and identify",
+      "prompt": "Draw two adjacent sclerotomes resegmenting around an intervertebral disc, labeling annulus and nucleus origins separately.",
+      "answer": "Check your labels against these relationships: The skull is divided into neurocranium and viscerocranium. The cranial fossae organize the skull base and cranial nerve exits.\n\nNeurocranium: frontal, parietal, temporal, occipital, sphenoid, ethmoid. Viscerocranium: maxilla, zygomatic, nasal, lacrimal, palatine, inferior nasal concha, vomer, mandible. Anterior cranial fossa includes cribriform foramina. Middle cranial fossa includes optic canal, superior orbital fissure, foramina rotundum, ovale, and spinosum. Posterior cranial fossa includes foramen magnum, jugular foramen, hypoglossal canal, and internal acoustic meatus. Sclerotome cells surround the notochord and neural tube, then resegment so adjacent halves contribute to each vertebra. This positions intervertebral joints relative to segmental muscles and nerves. The annulus derives from surrounding sclerotomal mesenchyme, while notochordal tissue contributes to the nucleus pulposus. Cranial vault and base use different ossification patterns, and craniofacial tissues have mixed neural-crest and mesodermal origins. Avoid applying one germ-layer rule to every skull bone."
+    }
+  ],
+  "sourceSections": [
+    "38. Skull Divisions and Cranial Fossae",
+    "44. Vertebral and Skull Development"
+  ],
+  "furtherReading": {
+    "title": "Embryonic development",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development"
+  },
+  "editorial": {
+    "date": "2026-09-10",
+    "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
+    "review": "Editorial anatomy and consistency review; no independent medical peer review.",
+    "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+  }
+}
