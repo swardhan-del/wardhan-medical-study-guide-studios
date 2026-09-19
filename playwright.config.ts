@@ -9,6 +9,8 @@ export default defineConfig({
     trace: "retain-on-failure",
   },
   projects: [
+    { name: "membership-desktop", testMatch: /membership\.spec\.ts/, use: { baseURL: "http://127.0.0.1:3103", viewport: { width: 1440, height: 1000 } } },
+    { name: "membership-mobile", testMatch: /membership\.spec\.ts/, use: { baseURL: "http://127.0.0.1:3103", viewport: { width: 390, height: 844 } } },
     {
       name: "desktop",
       testMatch:
@@ -37,6 +39,7 @@ export default defineConfig({
     },
   ],
   webServer: [
+    { command: "node tests/fixtures/membership-server.mjs", url: "http://127.0.0.1:3103", reuseExistingServer: false },
     {
       command:
         "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3101",

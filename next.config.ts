@@ -32,6 +32,14 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
+      ...["/member/:path*", "/api/member/:path*", "/account", "/api/account/:path*"].map(source => ({
+        source, headers: [
+          { key: "Cache-Control", value: "private, no-store, max-age=0" },
+          { key: "CDN-Cache-Control", value: "no-store" },
+          { key: "Vercel-CDN-Cache-Control", value: "no-store" },
+          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" },
+        ],
+      })),
       {
         source: "/:path*",
         headers: [
