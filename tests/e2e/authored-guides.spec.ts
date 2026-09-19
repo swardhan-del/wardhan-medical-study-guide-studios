@@ -32,9 +32,10 @@ test("subject sections recover from conflicting filters and open native lessons"
   await expect(browser.getByRole("status")).toHaveText("1 lesson available");
   await browser.getByRole("link", { name: "Read lesson", exact: true }).click();
   await expect(page).toHaveURL(/\/library\/blood-and-haemostasis$/);
-  await expect(page.getByRole("button", { name: "Previous card" })).toBeDisabled();
-  await page.getByRole("button", { name: "Next card" }).click();
-  await expect(page.locator(".reel-counter")).toHaveText("Card 2 of 4");
+  const recap = page.locator("#recap");
+  await expect(recap.getByRole("button", { name: "Previous card" })).toBeDisabled();
+  await recap.getByRole("button", { name: "Next card" }).click();
+  await expect(recap.locator(".reel-counter")).toHaveText("Card 2 of 4");
   await expect(page.locator('a[href*="dropbox"]')).toHaveCount(0);
 });
 

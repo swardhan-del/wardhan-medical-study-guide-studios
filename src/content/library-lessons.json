@@ -7202,6 +7202,87 @@
       "minutes": 6
     },
     {
+      "id": "genetic-therapy-delivery",
+      "subject": "genetics",
+      "title": "Gene therapy: target, delivery and evidence",
+      "summary": "Separate gene addition, editing and gene silencing, then decide whether an in-vivo or ex-vivo strategy can reach the relevant cells.",
+      "tags": [
+        "Genetics and genomics",
+        "gene therapy",
+        "gene editing",
+        "viral vectors",
+        "in vivo",
+        "ex vivo"
+      ],
+      "source": "genetics-current-2026",
+      "section": "Topic 14: Genetic Therapy — therapeutic goals, delivery systems, viral vectors, and in-vivo versus ex-vivo approaches",
+      "steps": [
+        {
+          "title": "Start with the therapeutic job",
+          "body": "A genetic intervention must be matched to a defined molecular problem. Gene addition supplies a functional sequence when additional expression is the goal. Gene editing changes an existing sequence. Expression-modifying approaches can reduce, increase or otherwise alter gene output without being the same thing as adding a replacement gene. These categories overlap in clinical language, but they should not be treated as interchangeable mechanisms."
+        },
+        {
+          "title": "Follow the cargo and the route",
+          "body": "The therapeutic payload may be nucleic acid, a gene-editing system, or cells that have been modified outside the body. Delivery is a separate problem: the payload must reach the intended cells at a useful dose while limiting unwanted exposure. Viral vectors, non-viral nucleic-acid delivery systems and patient-derived modified-cell products solve this problem in different ways. A vector is a delivery vehicle, not the therapy's biological effect by itself."
+        },
+        {
+          "title": "Distinguish in vivo from ex vivo",
+          "body": "In vivo therapy delivers the intervention to cells within the body. Ex vivo therapy removes cells, modifies them under controlled conditions, then returns them to the person. Ex vivo approaches can allow testing or selection of modified cells before infusion; in-vivo approaches depend on targeting and delivery inside the body. Neither label alone establishes safety, durability or suitability for a particular disease."
+        },
+        {
+          "title": "Keep evidence and mechanism separate",
+          "body": "A plausible molecular strategy is not automatically an established treatment. For each proposed therapy, ask what is modified, which cells receive it, how it is delivered, how the intended effect is measured, and what evidence supports benefit and risk. Regulatory approval, trial status and availability vary by product, disease and country. This lesson explains the framework; it is not treatment advice."
+        }
+      ],
+      "question": {
+        "prompt": "Which statement best distinguishes an ex-vivo gene therapy approach from an in-vivo approach?",
+        "options": [
+          {
+            "text": "Cells are removed, modified outside the body, then returned to the person.",
+            "reason": "Correct: ex-vivo approaches modify collected cells before administration back to the person. The delivery and biological effect still need to be evaluated separately."
+          },
+          {
+            "text": "A viral vector is always injected directly into the target tissue.",
+            "reason": "Viral vectors can be used in different delivery designs, including to modify cells outside the body; the vector alone does not define the route."
+          },
+          {
+            "text": "Any intervention that changes gene expression permanently repairs DNA.",
+            "reason": "Changing expression can occur without permanently repairing DNA. Gene addition, editing and expression modulation are distinct mechanisms."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Give a structured explanation of a gene-therapy proposal before deciding whether it is clinically established.",
+        "answer": "Name the molecular problem and therapeutic goal, then state whether the intervention adds genetic material, edits an existing sequence or modifies expression. Identify the target cells, payload and delivery route, and distinguish in-vivo from ex-vivo handling. Finally, separate the biological rationale from the evidence for safety and benefit; approval or trial status must be checked for the specific product and setting."
+      },
+      "related": [
+        "genetic-testing",
+        "protein-trafficking",
+        "inheritance"
+      ],
+      "updatedAt": "2026-09-19",
+      "minutes": 12,
+      "objectives": [
+        "Distinguish gene addition, genome editing and expression-modifying strategies without treating them as synonyms.",
+        "Compare in-vivo and ex-vivo delivery by identifying where cells are modified and how the therapeutic cargo reaches them.",
+        "Evaluate a proposed genetic therapy by separating target, delivery route, biological rationale, and evidence of clinical benefit and risk."
+      ],
+      "prerequisites": [
+        "genetic-testing",
+        "protein-trafficking"
+      ],
+      "workedExample": {
+        "title": "Choose the route before naming the vector",
+        "prompt": "A proposal says: “Collect a patient's cells, introduce a therapeutic sequence in a controlled laboratory setting, check the resulting cell population, and infuse the cells back.” Is this in vivo or ex vivo? What information is still missing before you can judge the proposal?",
+        "solution": [
+          "It is an ex-vivo approach because the cells are collected and modified outside the body before being returned.",
+          "The proposal still needs a defined target-cell population, payload and modification method, as well as evidence that the returned cells reach or persist in the intended setting.",
+          "A complete assessment also requires disease-specific evidence of benefit and harms; the route alone does not prove efficacy, safety or regulatory approval."
+        ]
+      }
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

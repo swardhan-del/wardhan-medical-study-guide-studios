@@ -1329,6 +1329,26 @@
       ]
     },
     {
+      "id": "genetics-therapy",
+      "title": "Genetic therapy and translation",
+      "description": "Compare therapeutic goals, delivery strategies and the evidence needed before a genetic intervention can be considered established care.",
+      "subject": "genetics",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-genetic-therapy-delivery",
+      "title": "Gene therapy: target, delivery and evidence",
+      "description": "Separate the therapeutic goal from the delivery route, then distinguish biological rationale from clinical evidence.",
+      "subject": "genetics",
+      "parentId": "genetics-therapy",
+      "kind": "topic",
+      "resources": [
+        "genetic-therapy-delivery"
+      ]
+    },
+    {
       "id": "topic-hypersensitivity-mechanisms",
       "title": "Hypersensitivity: classify the mechanism of tissue injury",
       "description": "Distinguish IgE activation, antibody against fixed targets, immune complexes and T-cell responses through original comparison cases.",
