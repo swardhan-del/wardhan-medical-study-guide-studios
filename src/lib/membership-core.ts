@@ -1,75 +1,58 @@
-import { createHmac, timingSafeEqual } from "node:crypto";
-
-export type MembershipTier = "basic" | "advanced";
-export type MemberSession = {
-  memberId: string;
-  tier: MembershipTier;
-  membershipStatus: "active" | "expired" | "cancelled" | "past_due";
-  expiresAt: number;
+// Shared policy and provider contract. No browser state is an authority.
+export const pilotModules = {
+  "pilot-foundations": { label: "Pilot Foundations", tier: "basic", asset: "membership-foundation-pilot" },
+  "pilot-deep-dive": { label: "Pilot Deep Dive", tier: "advanced", asset: "membership-deep-dive-pilot" },
+} as const;
+export type ModuleId = keyof typeof pilotModules;
+export type Identity = { userId: string; sessionId: string };
+export type Decision = { allowed: true; status: 200 } | { allowed: false; status: 401 | 403 | 503 };
+export interface PilotProvider {
+  verifyIdentity(): Promise<Identity | null>;
+  snapshot(identity: Identity, moduleId: ModuleId | null): Promise<unknown>;
+  download(): Promise<Uint8Array>;
+}
+export const privateHeaders = {
+  "Cache-Control": "private, no-store", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store",
+  Vary: "Cookie", "X-Content-Type-Options": "nosniff", "X-Robots-Tag": "noindex, nofollow", "Referrer-Policy": "no-referrer",
 };
-
-// A future provider must recheck current entitlements before each issuance.
-export const MAX_SESSION_LIFETIME_MS = 5 * 60 * 1000;
-
-function isMemberSession(value: unknown): value is MemberSession {
-  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
-  const session = value as Record<string, unknown>;
-  return (
-    Object.keys(session).length === 4 &&
-    typeof session.memberId === "string" &&
-    /^[A-Za-z0-9_-]{1,128}$/.test(session.memberId) &&
-    (session.tier === "basic" || session.tier === "advanced") &&
-    typeof session.membershipStatus === "string" &&
-    ["active", "expired", "cancelled", "past_due"].includes(session.membershipStatus) &&
-    typeof session.expiresAt === "number" &&
-    Number.isSafeInteger(session.expiresAt) &&
-    session.expiresAt > 0
-  );
-}
-
-/** Only call with claims returned by verifyMemberSession at a server boundary. */
-export function accessDecision({
-  session,
-  requiredTier,
-  now = Date.now(),
-}: {
-  session: unknown;
-  requiredTier: MembershipTier;
-  now?: number;
-}): { allowed: boolean; status: 200 | 401 | 403; reason: string } {
-  if (session == null) return { allowed: false, status: 401, reason: "authentication-required" };
-  if (!isMemberSession(session) || !Number.isSafeInteger(now) || now < 0)
-    return { allowed: false, status: 403, reason: "invalid-session" };
-  if (session.membershipStatus !== "active")
-    return { allowed: false, status: 403, reason: "membership-inactive" };
-  if (session.expiresAt <= now)
-    return { allowed: false, status: 403, reason: "membership-expired" };
-  if (session.expiresAt - now > MAX_SESSION_LIFETIME_MS)
-    return { allowed: false, status: 403, reason: "invalid-session" };
-  if (!(requiredTier === "basic" || requiredTier === "advanced") ||
-      (requiredTier === "advanced" && session.tier !== "advanced"))
-    return { allowed: false, status: 403, reason: "tier-required" };
-  return { allowed: true, status: 200, reason: "allowed" };
-}
-
-/** Fixed HMAC-SHA256 over canonical base64url(JSON); no client-selected algorithm. */
-export function verifyMemberSession(token: unknown, secret: unknown): MemberSession | null {
-  if (typeof secret !== "string" || Buffer.byteLength(secret) < 32 ||
-      secret.trim() !== secret || typeof token !== "string" || token.length > 4096)
-    return null;
-  const parts = token.split(".");
-  if (parts.length !== 2) return null;
-  const [payload, signature] = parts;
-  if (!/^[A-Za-z0-9_-]+$/.test(payload) || !/^[A-Za-z0-9_-]{43}$/.test(signature)) return null;
-  try {
-    const bytes = Buffer.from(payload, "base64url");
-    const actual = Buffer.from(signature, "base64url");
-    if (bytes.toString("base64url") !== payload || actual.toString("base64url") !== signature) return null;
-    const expected = createHmac("sha256", secret).update(payload).digest();
-    if (actual.length !== expected.length || !timingSafeEqual(actual, expected)) return null;
-    const session: unknown = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
-    return isMemberSession(session) ? session : null;
-  } catch {
-    return null;
+export function isModuleId(value: string): value is ModuleId { return Object.hasOwn(pilotModules, value); }
+export function decideSnapshot(value: unknown, identity: Identity, moduleId: ModuleId | null): Decision {
+  const unavailable: Decision = { allowed: false, status: 503 };
+  if (!value || typeof value !== "object" || Array.isArray(value)) return unavailable;
+  const row = value as Record<string, unknown>;
+  if (row.user_id !== identity.userId || row.session_id !== identity.sessionId ||
+      typeof row.session_active !== "boolean" || typeof row.membership_present !== "boolean") return unavailable;
+  if (!row.session_active) return { allowed: false, status: 401 };
+  if (!row.membership_present) return { allowed: false, status: 403 };
+  if ((row.tier !== "basic" && row.tier !== "advanced") ||
+      !["active", "expired", "revoked", "past_due", "cancelled"].includes(String(row.status)) ||
+      typeof row.valid_until !== "string" || typeof row.db_now !== "string") return unavailable;
+  const expiry = Date.parse(row.valid_until), now = Date.parse(row.db_now);
+  if (!Number.isFinite(expiry) || !Number.isFinite(now)) return unavailable;
+  if (row.status !== "active" || expiry <= now) return { allowed: false, status: 403 };
+  if (moduleId !== null) {
+    if (!isModuleId(moduleId) || row.module_id !== moduleId || row.required_tier !== pilotModules[moduleId].tier ||
+        row.synthetic_only !== true || typeof row.has_grant !== "boolean") return unavailable;
+    if (!row.has_grant || (row.required_tier === "advanced" && row.tier !== "advanced")) return { allowed: false, status: 403 };
   }
+  return { allowed: true, status: 200 };
+}
+export async function authorizePilot(provider: PilotProvider, moduleId: ModuleId | null): Promise<Decision> {
+  try {
+    const identity = await provider.verifyIdentity();
+    if (!identity) return { allowed: false, status: 401 };
+    return decideSnapshot(await provider.snapshot(identity, moduleId), identity, moduleId);
+  } catch { return { allowed: false, status: 503 }; }
+}
+export async function readPilotAsset(provider: PilotProvider, moduleId: ModuleId): Promise<
+  { allowed: false; status: 401 | 403 | 503 } | { allowed: true; status: 200; bytes: Uint8Array }
+> {
+  const decision = await authorizePilot(provider, moduleId);
+  if (!decision.allowed) return decision;
+  try {
+    // Buffer the tiny canary before headers: failed reads cannot leak partial bytes.
+    const bytes = await provider.download();
+    if (!(bytes instanceof Uint8Array) || bytes.length === 0 || bytes.length > 4096) throw new Error("Invalid canary");
+    return { allowed: true, status: 200, bytes };
+  } catch { return { allowed: false, status: 503 }; }
 }
