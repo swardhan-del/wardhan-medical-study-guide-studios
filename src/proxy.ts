@@ -6,8 +6,11 @@ import catalog from "@/content/public-catalog.json";
 import { subjectInterests } from "@/content/subjects";
 import directoryRoutes from "@/content/directory-routes.json";
 import { anatomyTopicLinks } from "@/content/anatomy-navigation";
-export function proxy(request: NextRequest) {
+import { refreshPilotCookies } from "@/server/pilot-proxy";
+export async function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
+  if (path === "/member" || path.startsWith("/member/") || path.startsWith("/api/member/") || path.startsWith("/auth/") || path === "/sign-in")
+    return refreshPilotCookies(request);
   const parts = path.split("/").filter(Boolean);
   const blockedReview =
     parts[0] === "review" &&
@@ -70,6 +73,10 @@ export function proxy(request: NextRequest) {
 }
 export const config = {
   matcher: [
+    "/member/:path*",
+    "/api/member/:path*",
+    "/auth/:path*",
+    "/sign-in",
     "/videos/:path*",
     "/topics/:path*",
     "/review/:path*",

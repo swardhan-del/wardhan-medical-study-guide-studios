@@ -1,5 +1,10 @@
 # Reconstructed membership foundation — 20 September 2026
 
+> Historical description of draft PR #16. On the preview pilot branch, its HMAC
+> adapter and in-code diagnostic response are replaced by the single Supabase
+> path described in [PREVIEW_MEMBERSHIP_PILOT.md](PREVIEW_MEMBERSHIP_PILOT.md).
+> Neither PR #15 nor PR #16 is modified by that stacked draft.
+
 This narrow implementation was rebuilt from the owner's reconstructed handoff,
 on baseline `16bd49374c25b22432e828f5f6ea5cf283d4be16`. The original temporary
 patch and commit were pruned. This is a new implementation, not a recovered
