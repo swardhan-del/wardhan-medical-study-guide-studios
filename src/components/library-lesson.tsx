@@ -41,12 +41,14 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
   const nextLesson = studyLessons.find(candidate => candidate.id === sequence[sequence.indexOf(lesson.id) + 1]);
   const subject = subjectInterests.find((s) => s.id === lesson.subject)!;
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
-  const reference = (
-    references as Record<
-      string,
-      { title: string; url: string; checkedAt: string }
-    >
-  )[lesson.id];
+  const topicReferences = references as Record<
+    string,
+    { title: string; url: string; checkedAt: string; supportingIds?: string[] }
+  >;
+  const reference = topicReferences[lesson.id];
+  const retrievalQuestions = studio.questions.filter(q => q.topic === lesson.id && "heading" in q);
+  const applicationQuestions = [...transfer.questions, ...studio.questions]
+    .filter(q => q.topic === lesson.id && !("heading" in q));
   const related = lesson.related
     .map((id) => publicCatalog.find((r) => r.id === id))
     .filter((r) => r !== undefined);
@@ -207,13 +209,12 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           />
           <AnatomyPractice lessonId={lesson.id} />
           <span id="studio-practice" /><span id="apply-the-concept" />
-          {[...transfer.questions, ...studio.questions]
-            .filter((q) => q.topic === lesson.id)
+          {[...retrievalQuestions, ...applicationQuestions]
             .map((q) => (
               <PracticeQuestion
                 key={q.id}
                 item={q}
-                title="Apply the concept in a different setting"
+                title={"heading" in q && typeof q.heading === "string" ? q.heading : "Apply the concept in a different setting"}
               />
             ))}
           <section
@@ -274,6 +275,9 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             </a>
           </p>
         )}
+        {reference.supportingIds && <ul>{reference.supportingIds.map(id => (
+          <li key={id}><a href={topicReferences[id].url} target="_blank" rel="noreferrer">{topicReferences[id].title}<span className="visually-hidden"> (opens in a new tab)</span> ↗</a></li>
+        ))}</ul>}
         <p className="muted-note">
           Further-reading link checked {reference.checkedAt}. The source guide
           above identifies the authored material; this public reference supports

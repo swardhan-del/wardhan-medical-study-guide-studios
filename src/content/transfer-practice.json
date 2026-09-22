@@ -206,6 +206,75 @@
         }
       ],
       "answer": 1
+    },
+    {
+      "id": "histology-foundations-tissues-transfer-1",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#apply-the-concept",
+      "prompt": "A superficial injury removes an epithelial lining while deeper smooth muscle remains intact. Which immediate functional loss follows most directly from the tissue that was removed?",
+      "options": [
+        {
+          "text": "All active force generation in the deeper muscle is abolished",
+          "explanation": "The scenario preserves the deeper muscle. Loss of epithelial cells does not by itself establish loss of all muscle contraction."
+        },
+        {
+          "text": "The continuous protective barrier is disrupted",
+          "explanation": "Epithelial continuity and cell junctions help maintain a barrier. Removing the lining exposes underlying tissue even when deeper contractile cells remain."
+        },
+        {
+          "text": "The extracellular collagen necessarily disappears from the supporting tissue",
+          "explanation": "Collagen belongs to the supporting matrix. Its disappearance is not implied by selective removal of the epithelial layer."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-foundations-tissues-transfer-2",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#apply-the-concept",
+      "prompt": "An unknown pink bundle has sparse flattened nuclei between abundant parallel extracellular fibres. No striations are seen. Which interpretation is best supported?",
+      "options": [
+        {
+          "text": "Dense regular connective tissue, because matrix dominates over cells",
+          "explanation": "Abundant aligned extracellular collagen with relatively sparse flattened fibroblast nuclei supports dense regular connective tissue such as tendon. This uses positive architectural clues."
+        },
+        {
+          "text": "Smooth muscle, because all non-striated pink bundles are muscle",
+          "explanation": "Absence of striations is insufficient. Smooth muscle should show contractile cells with central elongated nuclei, rather than a field dominated by extracellular collagen."
+        },
+        {
+          "text": "Cardiac muscle, because an elongated bundle always pumps blood",
+          "explanation": "Cardiac muscle requires cellular evidence such as branching myocytes, central nuclei and, when visible, intercalated discs. Bundle shape alone does not identify it."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-foundations-tissues-transfer-3",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#apply-the-concept",
+      "prompt": "A model selectively damages myelin in a peripheral nerve while leaving its axons initially intact. Which prediction and cell attribution best follow?",
+      "options": [
+        {
+          "text": "Tendon collagen is lost because fibroblasts make myelin",
+          "explanation": "Fibroblasts make connective-tissue matrix. Myelin is a specialised glial membrane sheath, so myelin injury does not directly establish collagen loss."
+        },
+        {
+          "text": "Every neuron soma must already be absent because myelin is the neuronal nucleus",
+          "explanation": "Myelin surrounds axonal segments. It is not a nucleus, and sheath damage can occur while axons and neuronal cell bodies remain present."
+        },
+        {
+          "text": "Conduction may slow or fail, and the affected myelin was formed by Schwann cells",
+          "explanation": "PNS myelin comes from Schwann cells and supports efficient action-potential propagation. This predicts a functional disturbance without assuming the whole neuron has died."
+        }
+      ],
+      "answer": 2
     }
   ]
 }

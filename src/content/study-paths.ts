@@ -13,8 +13,8 @@ export const studyPaths: Record<string, StudyPath> = {
     gaps: ["University-specific syllabus alignment and supervised dissection", "A comprehensive labelled cadaveric and radiological identification atlas", "Independent specialist review and additional advanced regional detail"],
   },
   histology: {
-    start: "microscopy",
-    preparation: "Begin with microscopy, then epithelia and connective tissue before moving to organ sections.",
+    start: "histology-foundations-tissues",
+    preparation: "Begin with the four basic tissues, then practise reading sections with microscopy, epithelia and connective tissue before moving to organs.",
     gaps: ["Nervous tissue and brainstem practical identification", "Eye and ear histology", "Endocrine organ comparisons", "A comprehensive slide-identification collection"],
   },
   "cell-biology": {
@@ -42,7 +42,7 @@ export const studyPaths: Record<string, StudyPath> = {
 // The same first steps appear on Start Here and each subject learning page.
 export const beginnerSequences: Record<string, { title: string; href: string }[]> = {
   anatomy: [{ title: "Anatomical position, directions and planes", href: "/start/anatomy" }, { title: "Identify thoracic cage landmarks", href: "/library/thoracic-cage-landmarks" }, { title: "Choose a volume in the 120-lesson course", href: "/study/anatomy/guide" }],
-  histology: [{ title: "Read a histology section", href: "/library/microscopy" }, { title: "Classify epithelia", href: "/library/epithelia" }, { title: "Connect cells to their matrix", href: "/library/connective-tissue" }],
+  histology: [{ title: "Recognise the four basic tissues", href: "/library/histology-foundations-tissues" }, { title: "Read a histology section", href: "/library/microscopy" }, { title: "Classify epithelia", href: "/library/epithelia" }],
   "cell-biology": [{ title: "Follow DNA replication", href: "/library/dna-replication" }, { title: "Process an RNA message", href: "/library/rna-processing" }, { title: "Translate the message", href: "/library/translation" }],
   biochemistry: [{ title: "Connect protein structure to function", href: "/library/protein-structure" }, { title: "Explain enzyme kinetics", href: "/library/enzyme-kinetics" }, { title: "Follow glycolysis", href: "/library/glycolysis" }],
   physiology: [{ title: "Fluid compartments and membrane transport", href: "/library/fluid-and-membrane-transport" }, { title: "Explain membrane potentials", href: "/library/membrane-potentials" }, { title: "Connect excitation to muscle contraction", href: "/library/muscle-contraction" }],
