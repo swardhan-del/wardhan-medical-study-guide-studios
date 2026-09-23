@@ -243,12 +243,12 @@
           "explanation": "Abundant aligned extracellular collagen with relatively sparse flattened fibroblast nuclei supports dense regular connective tissue such as tendon. This uses positive architectural clues."
         },
         {
-          "text": "Smooth muscle, because all non-striated pink bundles are muscle",
-          "explanation": "Absence of striations is insufficient. Smooth muscle should show contractile cells with central elongated nuclei, rather than a field dominated by extracellular collagen."
+          "text": "Smooth muscle, because absent striations identify a non-striated contractile bundle",
+          "explanation": "Absent striations are not specific to smooth muscle. The positive findings here are abundant extracellular fibres and sparse flattened nuclei, which favour dense regular connective tissue."
         },
         {
-          "text": "Cardiac muscle, because an elongated bundle always pumps blood",
-          "explanation": "Cardiac muscle requires cellular evidence such as branching myocytes, central nuclei and, when visible, intercalated discs. Bundle shape alone does not identify it."
+          "text": "Skeletal muscle cut obliquely, because orientation can conceal its striations",
+          "explanation": "An oblique cut can obscure striations, but it does not explain a field dominated by extracellular collagen with sparse flattened nuclei. The stated architecture supports connective tissue."
         }
       ],
       "answer": 0
@@ -259,15 +259,15 @@
       "title": "Histology Foundations: The Four Basic Tissues",
       "subject": "histology",
       "href": "/library/histology-foundations-tissues#apply-the-concept",
-      "prompt": "A model selectively damages myelin in a peripheral nerve while leaving its axons initially intact. Which prediction and cell attribution best follow?",
+      "prompt": "Selective myelin injury affects a peripheral nerve while its axons initially remain intact. Which functional prediction and glial-cell attribution are best supported?",
       "options": [
         {
-          "text": "Tendon collagen is lost because fibroblasts make myelin",
-          "explanation": "Fibroblasts make connective-tissue matrix. Myelin is a specialised glial membrane sheath, so myelin injury does not directly establish collagen loss."
+          "text": "Conduction may slow or fail, and the affected myelin was formed by oligodendrocytes",
+          "explanation": "The functional prediction is plausible, but the cell attribution is incorrect. Oligodendrocytes form CNS myelin; the question specifies a peripheral nerve."
         },
         {
-          "text": "Every neuron soma must already be absent because myelin is the neuronal nucleus",
-          "explanation": "Myelin surrounds axonal segments. It is not a nucleus, and sheath damage can occur while axons and neuronal cell bodies remain present."
+          "text": "Conduction must remain normal because the axons are still present",
+          "explanation": "Axonal continuity does not guarantee normal conduction. Damage to insulating myelin can impair action-potential propagation even while the axon is initially intact."
         },
         {
           "text": "Conduction may slow or fail, and the affected myelin was formed by Schwann cells",

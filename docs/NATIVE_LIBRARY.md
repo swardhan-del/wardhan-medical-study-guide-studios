@@ -26,3 +26,7 @@ The meaningful public organization retains subject/course distinctions, regional
 The build validates taxonomy ancestry, cycles, public resource references and reachability; checks the release catalog allowlist; hashes every delivered asset; rejects private path fields and archive URLs in source; and excludes local review data from deployment traces. Browser tests cover desktop/mobile journeys, filtering, PDF viewing/download, 404s, links and keyboard access. No authentication or private hosted library is implied by a preview.
 
 Educational image placements and the derivative workflow: [FIGURE_PLACEMENTS.md](FIGURE_PLACEMENTS.md). Video schema and delivery requirements: [VIDEO_PUBLICATION.md](VIDEO_PUBLICATION.md).
+
+## Medical content standard
+
+For new lessons and authorised editorial revisions, follow [MEDICAL_CONTENT_STANDARD.md](MEDICAL_CONTENT_STANDARD.md). Histology foundations demonstrates professional section labels, source-checked visual prompts, explained assessment and an oral examination/checklist sequence. Its bounded source and visual decisions are recorded in [HISTOLOGY_PHASE_TWO_REVIEW.md](HISTOLOGY_PHASE_TWO_REVIEW.md).

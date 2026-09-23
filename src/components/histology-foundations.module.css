@@ -1,0 +1,47 @@
+.lesson {
+  line-height: 1.75;
+  min-width: 0;
+}
+.lesson section { margin-block: 2.5rem; }
+.lesson section:first-child { margin-top: 0; }
+.lesson h3 { line-height: 1.4; font-size: 1.2rem; margin: 0 0 1rem; }
+.lesson h4 { font-size: 1.05rem; line-height: 1.5; margin: 0 0 .5rem; }
+.lesson p { margin-block: .8rem; }
+.lesson details { margin-block: 1rem; }
+.lesson summary { cursor: pointer; padding: 1rem .5rem; font-weight: 700; line-height: 1.5; }
+.lesson summary:focus-visible,
+.lesson input:focus-visible,
+.lesson textarea:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+.explanation { border-bottom: 1px solid var(--line); }
+.explanation > div { padding: 0 .5rem 1rem; }
+.diagram {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fffefa;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  margin: 1.5rem 0 2rem;
+  break-inside: avoid;
+}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 265px), 1fr)); gap: 1.75rem; align-items: start; }
+.grid > div { min-width: 0; }
+.drawing { display: block; width: 100%; max-width: 440px; height: auto; margin: .75rem auto; overflow: visible; }
+.drawing text { font: 18px var(--sans), sans-serif; fill: #14252c; }
+.diagram > .drawing { max-width: 440px; }
+.diagram figcaption { border-top: 1px solid var(--line); margin-top: 1.2rem; padding-top: .5rem; }
+.diagram .credit { font-size: .9rem; color: var(--ink-soft); overflow-wrap: anywhere; }
+.micrographs { margin-block: 2rem; }
+.micrographs figure { margin-block: 1.5rem; }
+.clueSequence { padding-left: 1.5rem; }
+.checklist { list-style: none; padding: 0; }
+.checklist li { margin: .85rem 0; }
+.checklist label { display: flex; gap: .75rem; align-items: baseline; cursor: pointer; }
+.checklist input { flex-shrink: 0; width: 1.1rem; height: 1.1rem; accent-color: var(--teal); }
+@media (max-width: 480px) {
+  .diagram { padding: .9rem; }
+  .lesson :global(.study-panel), .lesson :global(.concept-recall) { padding: 1rem; }
+  .lesson :global(.concept-check) { padding: 0; }
+}
+@media print {
+  .diagram { box-shadow: none; }
+  .grid { grid-template-columns: 1fr 1fr; }
+}

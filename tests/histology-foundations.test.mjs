@@ -27,7 +27,7 @@ test("histology foundations is a released, searchable first lesson in every rele
   assert(nodes.find(n => n.id === "histology-i-histology-basic-tissues").resources.includes(id));
   assert(read("study-map").groups.some(g => g.subject === "histology" && g.topics.some(t => t.href === `/library/${id}`)));
   const indexed = read("public-search")[id];
-  for (const query of ["epithelial", "connective", "muscle", "nervous", "Schwann", "Visual-learning prompt", "Worked identification"])
+  for (const query of ["epithelial", "connective", "muscle", "nervous", "Schwann", "Identification clues", "Worked Identification Example"])
     assert(indexed.includes(query), `Missing indexed content: ${query}`);
 });
 
@@ -36,12 +36,13 @@ test("the four tissue explanations include recognition, function, location, medi
   for (const tissue of ["Epithelial", "Connective", "Muscle", "Nervous"]) {
     const step = lesson.steps.find(s => s.title.startsWith(`${tissue} tissue:`));
     assert(step, `Missing ${tissue} explanation`);
-    for (const label of ["Defining characteristics:", "Functions and representative locations:", "Identification clues:", "Medical relevance:", "Visual-learning prompt:"])
+    for (const label of ["Defining characteristics:", "Functions and representative locations:", "Identification clues:", "Medical relevance:"])
       assert(step.body.includes(label), `${tissue}: ${label}`);
   }
   assert(lesson.workedExample.solution.length >= 4);
   assert.match(lesson.workedExample.solution.at(-1), /exact organ is not/);
-  assert.match(lesson.recall.prompt, /Final recall checklist/);
+  assert.equal(lesson.oralExamination.length, 3);
+  assert.equal(lesson.summaryChecklist.length, 7);
   assert.match(lesson.recall.answer, /colour alone cannot identify/);
 });
 
@@ -68,10 +69,10 @@ test("retrieval and transfer keys retain the reviewed tissue distinctions with e
     assert(q.options.every(o => o.explanation.length > 30));
     assert.equal(new Set(q.options.map(o => o.text)).size, q.options.length);
   }
-  assert(retrieval.every(q => q.heading === "Retrieve the essentials"));
+  assert(retrieval.every(q => q.heading === "Knowledge Check"));
 });
 
-test("the foundations citation reuses existing approved sources and does not imply a media release", () => {
+test("the foundations citation reuses existing approved sources and reuses only the two previously approved micrographs", () => {
   const refs = read("lesson-references");
   assert.equal(lesson.source, "histology");
   assert.equal(refs[id].url, refs.epithelia.url);
@@ -80,7 +81,17 @@ test("the foundations citation reuses existing approved sources and does not imp
     assert(lessons.lessons.some(l => l.id === supportingId));
     assert.equal(new URL(refs[supportingId].url).protocol, "https:");
   }
-  assert(!read("public-figures").figures.some(f => f.resourceIds.includes(id)));
+  assert.deepEqual(read("public-figures").figures.filter(f => f.resourceIds.includes(id)).map(f => f.id), ["cuboidal-section", "squamous-section"]);
   assert(!read("public-videos").records.some(v => v.lessonIds.includes(id)));
   assert(!read("study-audio").records.some(a => a.lessonId === id));
+});
+
+ test("professional terminology and optional assessment fields are validated", () => {
+  assert(!/retrieval|oral recall|future micrograph|Visual-learning prompt/i.test(JSON.stringify(lesson)));
+  for (const q of retrieval) assert(!/retrieval/i.test(q.heading + q.prompt));
+  for (const field of ["oralExamination", "summaryChecklist"]) {
+    const invalid = structuredClone(lessons);
+    invalid.lessons.find(l => l.id === id)[field] = [];
+    assert.throws(() => validateLibraryLessons(invalid, read("public-catalog"), read("library-sources")), /Incomplete/);
+  }
 });

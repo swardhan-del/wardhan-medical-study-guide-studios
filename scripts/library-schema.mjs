@@ -33,6 +33,15 @@ export function validateLibraryLessons(data, catalog, sources) {
       lesson.steps.some((s) => !text(s.title, 3) || !text(s.body, 100))
     )
       throw new Error(`Incomplete teaching content: ${lesson.id}`);
+    if (lesson.oralExamination !== undefined &&
+      (!Array.isArray(lesson.oralExamination) || lesson.oralExamination.length < 1 ||
+        lesson.oralExamination.some(q => !text(q.prompt, 15) || !text(q.answer, 40))))
+      throw new Error(`Incomplete oral examination prompts: ${lesson.id}`);
+    if (lesson.summaryChecklist !== undefined &&
+      (!Array.isArray(lesson.summaryChecklist) || lesson.summaryChecklist.length < 3 ||
+        lesson.summaryChecklist.some(item => !text(item, 15)) ||
+        new Set(lesson.summaryChecklist).size !== lesson.summaryChecklist.length))
+      throw new Error(`Incomplete summary checklist: ${lesson.id}`);
     const q = lesson.question;
     if (lesson.objectives || lesson.prerequisites || lesson.workedExample) {
       if (!Array.isArray(lesson.objectives) || lesson.objectives.length < 3 || lesson.objectives.some(o => !text(o, 15)))

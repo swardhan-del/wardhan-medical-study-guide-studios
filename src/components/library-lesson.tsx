@@ -1,3 +1,4 @@
+import { HistologyFoundationsContent } from "./histology-foundations-content";
 import { AnatomyLessonNavigation, AnatomyIdentification, AnatomyPractice } from "./anatomy-course";
 import { PlexusRecall } from "./plexus-recall";
 import { TeachingDiagram, hasTeachingDiagram } from "./teaching-diagram";
@@ -33,6 +34,7 @@ import { SaveButton } from "./catalog-browser";
 import { ConceptCheck } from "./concept-check";
 
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
+  const flagship = lesson.id === "histology-foundations-tissues";
   const figures = figuresForResource(lesson.id);
   const hasFigures = figures.length > 0 || hasTeachingDiagram(lesson.id);
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
@@ -89,22 +91,29 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         </p>
         <div className="action-row">
           <a className="button button-primary" href="#concept-check-title">
-            Try the question ↓
+            {flagship ? "Begin the Knowledge Check ↓" : "Try the question ↓"}
           </a>
           <SaveButton id={lesson.id} title={lesson.title} />
           {videosForLesson(lesson.id).length > 0 && <a className="text-link" href="#lesson-videos">Watch video</a>}
           {(audioData.records as StudyAudioRecord[]).some(a => a.lessonId === lesson.id) && <a className="text-link" href="#audio-recap">Listen to audio recap</a>}
           <a href="#lesson-source" className="text-link">
-            Guide and sources
+            {flagship ? "Sources and Further Reading" : "Guide and sources"}
           </a>
         </div>
       </header>
       {lesson.id === "thorax-nerve-relations" && <p className="study-notice">New to anatomy? <Link href="/start/anatomy">Review position, directions and body planes first</Link>.</p>}
       {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
-      <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>
+      {flagship ? <nav className="lesson-jumps" aria-label="Lesson sections">
+        <a href="#lesson-objectives">Learning Objectives</a><a href="#core-concepts-title">Core Concepts</a>
+        <a href="#concept-map-title">Guided Explanation</a><a href="#visual-study-title">Visual Study Prompts</a>
+        <a href="#worked-example-heading">Worked Example</a><a href="#knowledge-check-heading">Knowledge Check</a>
+        <a href="#application-heading">Clinical and Applied Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a>
+        <a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
+      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <div className="concept-layout">
         <div>
+          {flagship ? <HistologyFoundationsContent lesson={lesson}/> : <>
           <section className="study-panel lesson-preparation" aria-labelledby="lesson-objectives">
             <h2 id="lesson-objectives">What you will be able to explain</h2>
             <ul>{(lesson.objectives ?? [lesson.summary]).map(objective => <li key={objective}>{objective}</li>)}</ul>
@@ -234,6 +243,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             </p>
           </section>
           <nav className="study-panel" aria-label="Continue the subject sequence"><h2>Your next step</h2><p>Explain the answer above without looking, then compare it with the model. Revisit any term you could not explain before moving on.</p>{nextLesson ? <Link className="button button-primary" href={`/library/${nextLesson.id}`}>Next lesson: {nextLesson.title}</Link> : <Link className="button button-primary" href={`/study/${lesson.subject}`}>Return to this subject and choose revision</Link>}</nav>
+          </>}
         </div>
         <aside className="concept-sidebar">
           <p className="eyebrow">Connect the subjects</p>
@@ -260,7 +270,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
       </div>
       <section className="library-source-note" id="lesson-source">
         <p className="eyebrow">Source and editorial record</p>
-        <h2>{source.title}</h2>
+        {flagship ? <><h2>Sources and Further Reading</h2><h3>{source.title}</h3></> : <h2>{source.title}</h2>}
         <p>{source.edition}</p>
         <p>
           <strong>Source section:</strong> {lesson.section}
@@ -291,7 +301,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         </p>
         <p className="muted-note">
           The full source edition remains in the controlled library. This page
-          publishes an original teaching adaptation and original recall
+          publishes an original teaching adaptation and original {flagship ? "self-assessment" : "recall"}
           questions.
         </p>
         <CorrectionLink />
