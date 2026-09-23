@@ -1,0 +1,18 @@
+.courseMap { list-style: none; padding: 0; margin-block: 1.5rem; }
+.courseMap li { display: flex; gap: 1rem; border-top: 1px solid var(--line); padding-block: 1.25rem; }
+.courseMap h3 { margin: 0 0 .4rem; }
+.courseMap p { margin: .5rem 0; }
+.stageNumber { flex: 0 0 2.5rem; font-weight: 700; color: var(--teal); font-size: 1.25rem; }
+.visuals { min-width: 0; }
+.figure { border: 1px solid var(--line); border-radius: 12px; padding: clamp(.85rem, 3vw, 1.5rem); margin: 1.5rem 0 2rem; background: #fffefa; break-inside: avoid; }
+.figure h3 { margin-top: 0; }
+.panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1.5rem; }
+.panels > div { min-width: 0; }
+.drawing { display: block; width: 100%; max-width: 360px; height: auto; margin: 1rem auto; }
+.drawing text { font: 20px var(--sans), sans-serif; fill: #14252c; }
+.figure figcaption { border-top: 1px solid var(--line); padding-top: .75rem; margin-top: 1rem; }
+.credit { font-size: .9rem; overflow-wrap: anywhere; color: var(--ink-soft); }
+.legend { padding-left: 1.2rem; }
+.legend li { margin-block: .5rem; }
+@media (max-width: 480px) { .courseMap li { gap: .65rem; } .stageNumber { flex-basis: 2rem; } }
+@media print { .panels { grid-template-columns: 1fr; } }

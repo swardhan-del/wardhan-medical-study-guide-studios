@@ -3,6 +3,21 @@
   "updatedAt": "2026-09-10",
   "groups": [
     {
+      "id": "anatomy-foundations",
+      "subject": "anatomy",
+      "title": "Anatomy foundations",
+      "sourceLabel": "OpenStax Anatomy and Physiology 2e: anatomical terminology and structural organisation",
+      "sourceId": "openstax-anatomy-foundations-20260923",
+      "topics": [
+        {
+          "id": "anatomy-foundations-01",
+          "title": "Anatomy Foundations: Position, Planes and Organisation",
+          "href": "/library/anatomy-foundations",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
       "id": "histology-foundations",
       "subject": "histology",
       "title": "The four basic tissues",

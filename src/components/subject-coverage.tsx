@@ -18,7 +18,7 @@ export function SubjectCoverage({ subject }: { subject: string }) {
       <summary>{group.title} · {group.lessonIds.length} {subject === "anatomy" ? "lessons available" : "introductions available"}</summary>
       <ul>{group.lessonIds.map(id => {
         const lesson = lessons.find(l => l.id === id)!;
-        const count = subject === "anatomy" ? 5 : practiceItems.filter(q => q.topic === id).length;
+        const count = subject === "anatomy" && id !== "anatomy-foundations" ? 5 : practiceItems.filter(q => q.topic === id).length;
         return <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link> — {subject === "anatomy" ? "Lesson available" : "Introduction available"} · {count} practice {count === 1 ? "question" : "questions"}</li>;
       })}</ul>
     </details>)}

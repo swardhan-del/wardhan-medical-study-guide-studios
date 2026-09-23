@@ -275,6 +275,98 @@
         }
       ],
       "answer": 2
+    },
+    {
+      "id": "anatomy-foundations-application-1",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#apply-the-concept",
+      "prompt": "A hypothetical teaching image is a transverse section viewed from the feet towards the head, with anterior at the top. A marker is in the upper-left part of the display. Which description follows from this orientation?",
+      "options": [
+        {
+          "text": "Patient’s left and posterior",
+          "explanation": "This reverses both supplied orientation cues. The patient’s left appears on the display’s right, and posterior is at the bottom."
+        },
+        {
+          "text": "Patient’s right and anterior",
+          "explanation": "Under the stated viewing convention, display-left corresponds to the patient’s right. The top of this image is explicitly labelled anterior."
+        },
+        {
+          "text": "Patient’s right and superior within the section",
+          "explanation": "The patient’s side is correct, but superior is perpendicular to a transverse section. The top of this display is anterior, not superior."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "anatomy-foundations-application-2",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#apply-the-concept",
+      "prompt": "A hypothetical report describes fluid between the right visceral and parietal pleura. Which interpretation is anatomically justified?",
+      "options": [
+        {
+          "text": "Fluid is inside the right main bronchus",
+          "explanation": "A bronchial lumen is within an airway. The report specifies a space outside the lung surface between pleural layers."
+        },
+        {
+          "text": "Fluid is in the pericardial cavity",
+          "explanation": "The pericardial cavity is between serous pericardial layers, not pleural layers. The report identifies different boundaries."
+        },
+        {
+          "text": "Fluid occupies the right pleural cavity",
+          "explanation": "The two named pleural surfaces define this space. This locates the fluid without establishing its cause or prescribing treatment."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "anatomy-foundations-application-3",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#apply-the-concept",
+      "prompt": "A hypothetical superficial mark lies on the anterior right forearm, closer to the wrist than to the elbow. Which statement remains justified when the person turns the palm down?",
+      "options": [
+        {
+          "text": "The mark remains on the anatomical anterior surface of the right forearm",
+          "explanation": "Rotating the limb changes its displayed orientation, not the established anatomical name of its surface or its side."
+        },
+        {
+          "text": "The mark becomes posterior because it now faces away from the viewer",
+          "explanation": "The viewer’s changing position cannot rename anatomical surfaces. Use the reference position to describe the mark consistently."
+        },
+        {
+          "text": "The mark proves an underlying nerve injury",
+          "explanation": "Surface location alone does not establish damage to a deep nerve. Depth, function and additional observations would be needed."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "anatomy-foundations-application-4",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#apply-the-concept",
+      "prompt": "In a simplified stomach-wall model, the epithelial lining remains intact while smooth-muscle contraction is reduced. Which function is most directly affected by the specified change?",
+      "options": [
+        {
+          "text": "The ability of the lining to form an epithelial barrier must be completely lost",
+          "explanation": "Reduced muscle contraction does not itself establish epithelial destruction. The stem explicitly preserves the lining."
+        },
+        {
+          "text": "Mechanical mixing of the luminal contents",
+          "explanation": "Smooth-muscle contraction contributes to mixing and propulsion. This prediction follows from the affected tissue’s function without assuming that every tissue has failed."
+        },
+        {
+          "text": "Every nervous signal in the organ must cease",
+          "explanation": "The question identifies a muscle change, not loss of all nervous tissue. This conclusion goes beyond the supplied evidence."
+        }
+      ],
+      "answer": 1
     }
   ]
 }

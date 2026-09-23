@@ -3,6 +3,18 @@
   "updatedAt": "2026-09-10",
   "parts": [
     {
+      "id": "anatomy-foundations",
+      "subject": "anatomy",
+      "number": "00",
+      "title": "Anatomy foundations",
+      "lessonIds": [
+        "anatomy-foundations"
+      ],
+      "basis": "Original website foundation lesson; OpenStax scientific references",
+      "coverage": "Position, directions, planes, body cavities and tissue-to-organ organisation, with explained questions and oral examination prompts.",
+      "practiceHref": null
+    },
+    {
       "id": "histology-part-01",
       "subject": "histology",
       "number": "01",

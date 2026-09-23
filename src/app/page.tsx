@@ -33,6 +33,7 @@ export default function Home() {
         </div>
         <aside className="hero-aside" aria-label="Your first study session"><p className="eyebrow">Start learning</p><h2>Choose your subject</h2><nav className="home-subject-links" aria-label="Start a subject">{studySubjects.map(s => <Link key={s.id} href={`/study/${s.id}`}>{s.title} →</Link>)}</nav></aside>
       </section>
+      <section className="site-container study-panel" aria-labelledby="anatomy-first-heading"><p className="eyebrow">Free Anatomy learning path</p><h2 id="anatomy-first-heading">Start with orientation. Build towards regional anatomy.</h2><p>Learn anatomical position, planes, directions and body cavities through labelled diagrams, explained questions and a saved summary checklist.</p><div className="action-row"><Link className="button button-primary" href="/library/anatomy-foundations">Begin Anatomy Foundations</Link><Link className="text-link" href="/subjects/anatomy#anatomy-course-map">Explore the Anatomy course map →</Link></div></section>
       <section
         className="content-section site-container"
         aria-labelledby="subject-heading"

@@ -15,7 +15,7 @@ test("first visit reaches each subject coverage map and a real starting lesson",
     const map = page.locator("#coverage");
     await expect(map).toContainText(subject === "anatomy" ? "What to study alongside this course" : "Still needs fuller lessons");
     await map.getByRole("link",{name:/^Start with/}).click();
-    await expect(page).toHaveURL(subject === "anatomy" ? /\/start\/anatomy$/ : /\/library\//);
+    await expect(page).toHaveURL(subject === "anatomy" ? /\/library\/anatomy-foundations$/ : /\/library\//);
     await expect(page.locator("h1")).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   }
@@ -101,7 +101,10 @@ test("first-visitor navigation exposes consistent subjects, printable notes and 
 test("anatomy starts with foundations and empty subjects offer a usable next step", async ({ page }) => {
   await page.goto("/start");
   await page.getByRole("link", { name: "Start Macroscopic Anatomy & Embryology", exact: true }).click();
-  await expect(page).toHaveURL(/\/start\/anatomy$/);
+  await expect(page).toHaveURL(/\/library\/anatomy-foundations$/);
+  await expect(page.getByRole("heading", { name: "Knowledge Check", exact: true })).toBeVisible();
+  // The existing short orientation route and onward link remain available.
+  await page.goto("/start/anatomy");
   await page.locator("summary").click();
   await expect(page.getByText("The coronal plane.", { exact: false })).toBeVisible();
   await page.getByRole("link", { name: /Next: identify thoracic cage/ }).click();

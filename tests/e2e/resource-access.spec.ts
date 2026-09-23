@@ -88,13 +88,13 @@ test('anatomy course connects all five volumes to lessons and printable collecti
   await expect(page).toHaveURL(/\/library\/thoracic-cage-landmarks$/);
   await expect(page.getByRole('navigation', { name: 'Anatomy volume navigation' })).toContainText('Lesson 1 of 18');
   await page.getByRole('link', { name: 'Volume contents', exact: true }).click();
-  await expect(page.locator('.guide-part')).toHaveCount(5);
+  await expect(page.locator('.guide-part')).toHaveCount(6);
   const expected=[18,22,18,30,32];
   for (let i=0;i<5;i++) await expect(page.locator(`#anatomy-volume-${i+1}`)).toContainText(`${expected[i]} available lessons`);
   await page.getByRole('link', { name: 'Choose parts and print notes', exact: true }).click();
-  await expect(page.locator('.revision-lesson')).toHaveCount(120);
+  await expect(page.locator('.revision-lesson:visible')).toHaveCount(121);
   await page.getByRole('button', { name: 'Clear selection' }).click();
-  await page.locator('.guide-options input').nth(4).check();
+  await page.locator('.guide-options label').filter({ hasText: 'Volume V · Musculoskeletal anatomy' }).getByRole('checkbox').check();
   await expect(page.locator('.revision-lesson')).toHaveCount(32);
   await expect(page.locator('.revision-answers')).toContainText('Vertebral and skull development');
   await expect(page.locator('.revision-answers')).not.toContainText('Fetal shunts and adult remnants');

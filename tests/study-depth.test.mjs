@@ -46,7 +46,7 @@ test('new guided lessons have explicit references and explanations for every opt
 test('beginner paths lead to published pages and agree with subject entry points',()=>{
   const urls=new Set([...catalog.records.map(r=>r.href||'/library/'+r.id),'/start/anatomy',...Object.keys(beginnerSequences).map(s=>'/study/'+s+'/guide')]);
   assert.equal(Object.keys(beginnerSequences).length,7);
-  assert.equal(beginnerSequences.anatomy[0].href,'/start/anatomy');
+  assert.equal(beginnerSequences.anatomy[0].href,'/library/anatomy-foundations');
   for(const steps of Object.values(beginnerSequences)){
     assert.equal(steps.length,3);
     for(const step of steps) assert(urls.has(step.href),'Unpublished beginner destination: '+step.href);
