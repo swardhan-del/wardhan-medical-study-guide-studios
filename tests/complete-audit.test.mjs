@@ -24,7 +24,7 @@ test('question presentation is stable and varied while preserving original answe
 test('map includes every released biophysics lesson and Histology II includes supporting-cell lessons', () => {
   const lessons = read('library-lessons').lessons.filter(l => l.subject === 'biophysics');
   const topics = read('study-map').groups.filter(g => g.subject === 'biophysics').flatMap(g => g.topics);
-  assert.equal(topics.length, 50);
+  assert.equal(topics.length, 51);
   for (const l of lessons) assert.ok(topics.some(t => t.href === '/library/' + l.id));
   const ids = read('library-taxonomy').nodes.filter(n => n.subject === 'histology-ii').flatMap(n => n.resources);
   for (const id of ['neurulation', 'myelin-and-glial-cells', 'brain-and-csf-barriers']) assert.ok(ids.includes(id));
