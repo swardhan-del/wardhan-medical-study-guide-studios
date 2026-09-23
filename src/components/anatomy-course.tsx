@@ -8,7 +8,7 @@ export function AnatomyCourseIntro() {
     <h2 id="anatomy-course-heading">120 lessons, from landmarks to regional reasoning</h2>
     <p>Start with orientation, choose a volume, then follow its numbered lessons. Each lesson includes objectives, preparation, explanations, a worked example, a drawing task and five explained practice items.</p>
     <div className="action-row"><Link className="button button-primary" href="/library/thoracic-cage-landmarks">Begin Volume I</Link><Link href="/start/anatomy">Review directions and planes</Link><Link href="/study/anatomy/guide">Browse all five volumes</Link></div>
-    <ol className="anatomy-volume-list">{studyGroups.filter(g => g.subject === "anatomy").map(g => <li key={g.id}><Link href={`/study/anatomy/guide#${g.id}`}>{g.title}</Link> · {g.lessonIds.length} lessons · <Link href={`/library/${g.lessonIds[0]}`}>Start this volume</Link></li>)}</ol>
+    <ol className="anatomy-volume-list">{studyGroups.filter(g => g.id.startsWith("anatomy-volume-")).map(g => <li key={g.id}><Link href={`/study/anatomy/guide#${g.id}`}>{g.title}</Link> · {g.lessonIds.length} lessons · <Link href={`/library/${g.lessonIds[0]}`}>Start this volume</Link></li>)}</ol>
     <p className="muted-note">A structured adaptation of the authored guides. Use your course syllabus and practical sessions alongside it; lesson completion is not an exam-readiness score.</p>
   </section>;
 }

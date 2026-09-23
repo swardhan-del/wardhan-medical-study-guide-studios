@@ -28,7 +28,7 @@ for (const record of course) {
  emit(files[course.indexOf(record)].replace(/\.json$/,'.md'), md);
 }
 const existing = read('src/content/library-lessons.json');
-existing.lessons = [...existing.lessons.filter(l => l.subject !== 'anatomy'), ...course.map(r => r.lesson)];
+existing.lessons = [...existing.lessons.filter(l => !ids.has(l.id)), ...course.map(r => r.lesson)];
 emit('src/content/library-lessons.json', existing);
 emit('src/content/anatomy-course.json', { version: 1, updatedAt: '2026-09-10', records: course.map(({lesson, ...extras}) => ({ lessonId: lesson.id, ...extras })) });
 emit('src/content/anatomy-practice-index.json', { records: course.map(r => ({ lessonId: r.lesson.id, title: r.lesson.title, practice: r.practice.map(q => ({ id: q.id, prompt: q.prompt })) })) });

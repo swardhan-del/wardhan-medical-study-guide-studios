@@ -39,7 +39,7 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('/library/'+lesson.id);
     await expect(page.getByRole('heading',{level:1})).toHaveText(lesson.title);
-    await expect(page.getByRole('heading',{name:lesson.id === 'histology-foundations-tissues' ? 'Learning Objectives' : 'What you will be able to explain'})).toBeVisible();
+    await expect(page.getByRole('heading',{name:['histology-foundations-tissues', 'anatomy-foundations'].includes(lesson.id) ? 'Learning Objectives' : 'What you will be able to explain'})).toBeVisible();
     const worked=page.locator('section[aria-labelledby="worked-example-heading"]:visible');
     await worked.locator('summary').click();
     await expect(worked.locator('ol')).toBeVisible();
@@ -51,7 +51,7 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     await expect(check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeChecked();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     expect(errors).toEqual([]);
-    if (lesson.subject === 'anatomy') {
+    if (lesson.subject === 'anatomy' && lesson.id !== 'anatomy-foundations') {
       await expect(page.getByRole('navigation', { name: 'Anatomy volume navigation' })).toBeVisible();
       await expect(page.locator('.anatomy-practice-item')).toHaveCount(4);
       await page.getByText('Reveal explanation for item 2', { exact: true }).click();

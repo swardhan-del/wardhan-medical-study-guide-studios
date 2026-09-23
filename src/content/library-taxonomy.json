@@ -76,6 +76,26 @@
   ],
   "nodes": [
     {
+      "id": "anatomy-foundation-course",
+      "title": "Anatomy foundations",
+      "description": "Begin with orientation, body compartments and tissue-to-organ organisation.",
+      "subject": "anatomy",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "description": "Describe the body precisely, interpret a section in the correct plane, distinguish body compartments from serous spaces, and explain how tissues combine to form organs.",
+      "subject": "anatomy",
+      "parentId": "anatomy-foundation-course",
+      "kind": "topic",
+      "resources": [
+        "anatomy-foundations"
+      ]
+    },
+    {
       "id": "anatomy-regions",
       "title": "Regional anatomy",
       "description": "Explore regional anatomy through the available lessons and resources.",

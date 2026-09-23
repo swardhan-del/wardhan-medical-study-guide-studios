@@ -1868,6 +1868,150 @@
         }
       ],
       "answer": 2
+    },
+    {
+      "id": "anatomy-foundations-knowledge-2",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#studio-practice",
+      "prompt": "Which statement correctly describes the wrist relative to the elbow along the upper limb?",
+      "options": [
+        {
+          "text": "Proximal to the elbow",
+          "explanation": "Proximal means nearer the limb attachment. The elbow is proximal to the wrist, not the reverse."
+        },
+        {
+          "text": "Distal to the elbow",
+          "explanation": "The wrist lies farther along the upper limb from its attachment than the elbow does. Arm posture does not reverse this relationship."
+        },
+        {
+          "text": "Medial to the elbow by definition",
+          "explanation": "Medial concerns the median plane, not distance along the limb. It cannot substitute for distal in this comparison."
+        }
+      ],
+      "answer": 1,
+      "heading": "Knowledge Check"
+    },
+    {
+      "id": "anatomy-foundations-knowledge-3",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#studio-practice",
+      "prompt": "A vertical section lies parallel to the median plane but passes to its right. Which term is most precise?",
+      "options": [
+        {
+          "text": "Median",
+          "explanation": "The median plane is on the midline. The stated off-centre section does not meet that definition."
+        },
+        {
+          "text": "Coronal",
+          "explanation": "A coronal plane separates anterior and posterior portions. It is not parallel to the median plane."
+        },
+        {
+          "text": "Parasagittal",
+          "explanation": "A parasagittal plane is parallel to the median plane but displaced from it, separating unequal right and left portions."
+        }
+      ],
+      "answer": 2,
+      "heading": "Knowledge Check"
+    },
+    {
+      "id": "anatomy-foundations-knowledge-4",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#studio-practice",
+      "prompt": "Which boundary separates the thoracic and abdominopelvic compartments?",
+      "options": [
+        {
+          "text": "The diaphragm",
+          "explanation": "The diaphragm forms the inferior boundary of the thorax and separates it from the abdominopelvic compartment."
+        },
+        {
+          "text": "The mediastinum",
+          "explanation": "The mediastinum is the central thoracic region between the lungs. It is not the boundary below the thorax."
+        },
+        {
+          "text": "The pelvic brim as a complete muscular partition",
+          "explanation": "The pelvic brim marks a regional boundary; it is not a sealed partition. Abdominal and pelvic subdivisions communicate."
+        }
+      ],
+      "answer": 0,
+      "heading": "Knowledge Check"
+    },
+    {
+      "id": "anatomy-foundations-knowledge-5",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#studio-practice",
+      "prompt": "What is the normal anatomical relationship of the pleural cavity to the lung?",
+      "options": [
+        {
+          "text": "It is the air-containing lumen of the lung",
+          "explanation": "Air normally moves through respiratory passages and air spaces. Those are distinct from the space between pleural layers."
+        },
+        {
+          "text": "It is the potential space between visceral and parietal pleura",
+          "explanation": "Visceral pleura covers the lung and parietal pleura lines the compartment. The intervening thin fluid-containing space is the pleural cavity."
+        },
+        {
+          "text": "It is the entire thoracic compartment including the mediastinum",
+          "explanation": "The thorax includes more than the pleural spaces. The mediastinum lies centrally between the right and left pleural compartments."
+        }
+      ],
+      "answer": 1,
+      "heading": "Knowledge Check"
+    },
+    {
+      "id": "anatomy-foundations-knowledge-6",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#studio-practice",
+      "prompt": "Which classification best describes the stomach?",
+      "options": [
+        {
+          "text": "One type of muscle tissue",
+          "explanation": "Smooth muscle is one component of the wall. The organ also contains epithelial, connective and nervous tissue."
+        },
+        {
+          "text": "An organ system consisting only of glands",
+          "explanation": "An organ system coordinates multiple organs. The stomach is one organ and includes more than its glands."
+        },
+        {
+          "text": "An organ integrating several tissue families",
+          "explanation": "Its lining, supporting tissues, muscle and nervous elements contribute distinct functions within one organised structure."
+        }
+      ],
+      "answer": 2,
+      "heading": "Knowledge Check"
+    },
+    {
+      "id": "anatomy-foundations-knowledge-7",
+      "topic": "anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "subject": "anatomy",
+      "href": "/library/anatomy-foundations#studio-practice",
+      "prompt": "Which pair of structures is ipsilateral?",
+      "options": [
+        {
+          "text": "The right hand and the right foot",
+          "explanation": "Ipsilateral means on the same side of the body. Distance apart and membership of different limbs do not change this."
+        },
+        {
+          "text": "The right hand and the left hand",
+          "explanation": "These are on opposite sides and are contralateral, even though they are the same type of structure."
+        },
+        {
+          "text": "The left knee and the right ankle",
+          "explanation": "These are on opposite sides. Both belong to lower limbs, but that does not make them ipsilateral."
+        }
+      ],
+      "answer": 0,
+      "heading": "Knowledge Check"
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { AnatomyFoundationsContent } from "./anatomy-foundations-content";
 import { HistologyFoundationsContent } from "./histology-foundations-content";
 import { AnatomyLessonNavigation, AnatomyIdentification, AnatomyPractice } from "./anatomy-course";
 import { PlexusRecall } from "./plexus-recall";
@@ -34,7 +35,8 @@ import { SaveButton } from "./catalog-browser";
 import { ConceptCheck } from "./concept-check";
 
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
-  const flagship = lesson.id === "histology-foundations-tissues";
+  const anatomyFoundations = lesson.id === "anatomy-foundations";
+  const flagship = anatomyFoundations || lesson.id === "histology-foundations-tissues";
   const figures = figuresForResource(lesson.id);
   const hasFigures = figures.length > 0 || hasTeachingDiagram(lesson.id);
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
@@ -45,7 +47,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
   const topicReferences = references as Record<
     string,
-    { title: string; url: string; checkedAt: string; supportingIds?: string[] }
+    { title: string; url: string; checkedAt: string; supportingIds?: string[]; supportingReferences?: { title: string; url: string }[] }
   >;
   const reference = topicReferences[lesson.id];
   const retrievalQuestions = studio.questions.filter(q => q.topic === lesson.id && "heading" in q);
@@ -113,7 +115,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <div className="concept-layout">
         <div>
-          {flagship ? <HistologyFoundationsContent lesson={lesson}/> : <>
+          {flagship ? (anatomyFoundations ? <AnatomyFoundationsContent lesson={lesson}/> : <HistologyFoundationsContent lesson={lesson}/>) : <>
           <section className="study-panel lesson-preparation" aria-labelledby="lesson-objectives">
             <h2 id="lesson-objectives">What you will be able to explain</h2>
             <ul>{(lesson.objectives ?? [lesson.summary]).map(objective => <li key={objective}>{objective}</li>)}</ul>
@@ -285,13 +287,12 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             </a>
           </p>
         )}
+        {reference.supportingReferences && <ul>{reference.supportingReferences.map(ref => <li key={ref.url}><a href={ref.url}>{ref.title}</a></li>)}</ul>}
         {reference.supportingIds && <ul>{reference.supportingIds.map(id => (
           <li key={id}><a href={topicReferences[id].url} target="_blank" rel="noreferrer">{topicReferences[id].title}<span className="visually-hidden"> (opens in a new tab)</span> ↗</a></li>
         ))}</ul>}
         <p className="muted-note">
-          Further-reading link checked {reference.checkedAt}. The source guide
-          above identifies the authored material; this public reference supports
-          further study of this topic.
+          {anatomyFoundations ? `Scientific references checked ${reference.checkedAt}. The named public sections support the concepts and original teaching examples on this page.` : <>Further-reading link checked {reference.checkedAt}. The source guide above identifies the authored material; this public reference supports further study of this topic.</>}
         </p>
         <p>
           Web lesson by Wardhan Medical Study Guide Studios. Updated{" "}
@@ -300,9 +301,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           clinical peer review has not been completed.
         </p>
         <p className="muted-note">
-          The full source edition remains in the controlled library. This page
-          publishes an original teaching adaptation and original {flagship ? "self-assessment" : "recall"}
-          questions.
+          {anatomyFoundations ? "The scientific references are publicly accessible. This lesson publishes newly written explanations, diagrams and self-assessment questions." : <>The full source edition remains in the controlled library. This page publishes an original teaching adaptation and original {flagship ? "self-assessment" : "recall"} questions.</>}
         </p>
         <CorrectionLink />
       </section>
