@@ -158,6 +158,17 @@
       "resources": []
     },
     {
+      "id": "topic-histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "description": "Recognise epithelial, connective, muscle and nervous tissue by their architecture, relate structure to function, and justify an identification using more than one clue.",
+      "subject": "histology",
+      "parentId": "histology-basic-tissues",
+      "kind": "topic",
+      "resources": [
+        "histology-foundations-tissues"
+      ]
+    },
+    {
       "id": "topic-microscopy",
       "title": "Reading a histology section",
       "description": "Build an identification from architecture, cells and preparation clues before naming the organ.",
@@ -856,6 +867,7 @@
       "parentId": null,
       "kind": "system",
       "resources": [
+        "histology-foundations-tissues",
         "microscopy",
         "epithelia",
         "cell-junctions",

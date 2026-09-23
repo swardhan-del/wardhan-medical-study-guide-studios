@@ -2,6 +2,123 @@
   "version": 1,
   "lessons": [
     {
+      "id": "histology-foundations-tissues",
+      "subject": "histology",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "summary": "Recognise epithelial, connective, muscle and nervous tissue by their architecture, relate structure to function, and justify an identification using more than one clue.",
+      "tags": [
+        "Cells and tissues",
+        "Microscopic structure",
+        "four basic tissues",
+        "epithelial tissue",
+        "connective tissue",
+        "muscle tissue",
+        "nervous tissue",
+        "histology foundations"
+      ],
+      "source": "histology",
+      "section": "Epithelial Tissue Characteristics; Epithelial Classification by Layer and Shape; Official Lecture Expansion — Connective Tissue Proper; Fibers and Ground Substance; Cardiac Muscle and Intercalated Discs — Verified Practical Note; Official Lecture Expansion — Skeletal, Cardiac, and Smooth Muscle Microarchitecture; Nerve Tissue Study Notes; Histology of Nervous Tissue and CNS Microscopy, sections 16–18",
+      "objectives": [
+        "Distinguish the four basic tissues using cell arrangement, extracellular matrix and specialised structures.",
+        "For each tissue, connect its defining features to major functions, representative locations and one medical consequence of injury.",
+        "Compare skeletal, cardiac and smooth muscle using striations, nuclear position and branching.",
+        "Explain how neurons and glia cooperate, including the different locations of Schwann cells and oligodendrocytes.",
+        "Justify a tissue identification with two positive clues and a reason for rejecting a plausible alternative."
+      ],
+      "prerequisites": [],
+      "steps": [
+        {
+          "title": "Tissue organisation and section interpretation",
+          "body": "A tissue is an organised association of cells and their extracellular material performing related functions. The four basic families are epithelial, connective, muscle and nervous tissue. An organ usually combines several families: an intestinal lining, its supporting stroma, its muscle layers and its nerves have distinct functions within the same wall. Do not assign one tissue name to an entire organ.\n\nAt low magnification, locate a surface, lumen, bundle or layer. At higher magnification, compare the amount of cellular material with extracellular matrix, then examine cell shape and nuclear position. Relate the arrangement to its function: a selective barrier, support, force production or communication. Record at least two positive observations before identifying a tissue.\n\nA histological section is a thin cut through a three-dimensional structure. Haematoxylin and eosin (H&E) commonly make nuclei blue-purple and many proteins pink; both collagen and muscle can look pink. Colour alone is insufficient. Cutting angle, fixation and extraction can conceal structures, so a missing feature is weaker evidence than a clearly visible one."
+        },
+        {
+          "title": "Epithelial tissue: polarity, layers and function",
+          "body": "Defining characteristics: epithelial cells are closely joined, with little extracellular material between them. Their apical domain faces a surface or lumen; the basal domain attaches to a basal lamina within the basement membrane. Epithelia form coverings, linings and glandular units. Most are avascular and receive nutrients by diffusion from nearby connective tissue. The supporting basement membrane may be difficult to resolve in routine H&E.\n\nFunctions and representative locations: protection in the keratinised stratified squamous epidermis; resistance to abrasion in the non-keratinised stratified squamous oesophageal lining; absorption and secretion in intestinal simple columnar epithelium and many cuboidal renal tubules; rapid exchange across thin alveolar epithelium. Endothelium lining blood vessels is also epithelium.\n\nIdentification clues: first find a continuous cellular boundary. Count layers and describe the surface-cell shape as squamous, cuboidal or columnar. In simple epithelium, all cells contact the basement membrane within a single layer. Stratified epithelium has multiple layers and is named by its most superficial cells. Pseudostratified epithelium has nuclei at different heights, but all its cells contact the basement membrane; not all reach the apical surface.\n\nMedical relevance: loss of an epithelial covering removes a protective barrier and can expose the underlying tissue to injury or infection. Damage to an absorptive lining can impair uptake even when deeper muscle is intact."
+        },
+        {
+          "title": "Connective tissue: cells and extracellular matrix",
+          "body": "Defining characteristics: connective tissues contain cells associated with an extracellular matrix of fibres and ground substance. Fibroblasts produce much of the matrix in connective tissue proper; immune cells participate in defence and repair. Matrix often dominates the view, but adipose tissue is a cell-rich exception. Blood is a specialised connective tissue with a fluid matrix, plasma; cartilage and bone have specialised supporting matrices.\n\nFunctions and representative locations: collagen resists tensile loading; elastic fibres permit recoil; hydrated ground substance permits diffusion and contributes to resistance to compression. Loose connective tissue supports many epithelia. Dense regular connective tissue forms tendons, whereas the dermis contains interwoven dense irregular connective tissue. Adipose tissue stores energy and cushions structures; cartilage supports joint surfaces; bone provides rigid support; blood transports cells and dissolved substances.\n\nIdentification clues: look between nuclei for matrix, then assess fibre thickness, orientation and cell density. Tendon has parallel collagen bundles with flattened fibroblast nuclei between them. Cartilage has chondrocytes in lacunae within matrix. Vascularity varies: bone is vascular, tendons are relatively poorly vascularised and cartilage is avascular.\n\nMedical relevance: damaged tendon may heal slowly, in part because of its limited blood supply. Articular cartilage depends on diffusion from synovial fluid and has limited repair capacity. These examples show why the tissue environment matters when predicting recovery."
+        },
+        {
+          "title": "Muscle tissue: contractile architecture",
+          "body": "Defining characteristics: muscle cells contain contractile actin and myosin that generate force. Connective tissue supports the cells and transmits their force, but the contractile cells define the muscle component. Skeletal and cardiac muscle contain sarcomeres, producing cross-striations in suitable longitudinal sections. Smooth muscle contains actin and myosin without sarcomeric cross-striations.\n\nFunctions and representative locations: skeletal muscle moves the skeleton, maintains posture and produces heat; examples include biceps brachii and the diaphragm. Cardiac muscle forms the myocardium and pumps blood. Smooth muscle in intestinal walls propels contents and smooth muscle in arterial walls adjusts vessel calibre. Skeletal movement can be voluntary or reflexive; cardiac and smooth muscle are involuntary.\n\nIdentification clues: skeletal fibres are long, usually unbranched and multinucleated, with peripheral nuclei. Cardiac myocytes branch and usually have one central nucleus, sometimes two; intercalated discs join adjacent cells mechanically and electrically. Smooth muscle cells are spindle-shaped with one central, elongated nucleus. Striations and discs may be inconspicuous because of section orientation or preparation; their absence in one field does not prove smooth muscle.\n\nMedical relevance: muscle injury reduces the force available for movement or pumping. Excessive airway smooth-muscle contraction narrows the airway, illustrating how the same contractile property can impede airflow."
+        },
+        {
+          "title": "Nervous tissue: neurons, glia and myelin",
+          "body": "Defining characteristics: nervous tissue contains neurons specialised for receiving, integrating and transmitting signals, together with glial cells that support neuronal function. A typical neuron has a cell body (soma), dendrites and an axon. Action potentials propagate along excitable membranes; synapses connect neurons with other neurons or effector cells. Glia regulate the local environment, support axons and participate in defence.\n\nFunctions and representative locations: the brain and spinal cord form the central nervous system (CNS); peripheral nerves and ganglia belong to the peripheral nervous system (PNS). These structures connect sensation, integration and motor or autonomic responses. Oligodendrocytes form CNS myelin; Schwann cells form PNS myelin. One myelinating Schwann cell supplies one internode of one axon, whereas an oligodendrocyte can supply internodes on several axons.\n\nIdentification clues: in neuronal cell-body regions, look for somata with prominent nuclei and nucleoli, basophilic Nissl substance and surrounding processes or supporting cells. Nissl substance corresponds to rough endoplasmic reticulum and ribosomes in the soma and dendrites; it is absent from the axon. A peripheral nerve instead shows fascicles of fibres with supporting sheaths; neuronal cell bodies need not be present. Fine connective tissue between fibres and thicker connective tissue around the nerve are connective components, not neurons. Routine H&E alone often cannot identify a specific glial subtype.\n\nMedical relevance: peripheral nerve injury can interrupt sensory or motor signals. Damage to myelin may slow or block conduction even if an axon remains present; loss of insulation is not the same event as loss of the whole neuron."
+        },
+        {
+          "title": "Identification using independent structural clues",
+          "body": "Assess four structural patterns: does a closely joined sheet bound a surface; does extracellular matrix dominate; do specialised elongated cells form contractile bundles; or do neuronal somata or nerve fascicles explain the organisation? These are starting clues, not mutually exclusive labels for an entire field. A blood vessel can contain an epithelial endothelium, smooth muscle and connective tissue.\n\nFor a pink bundle, compare cellularity, nuclear position and matrix before choosing muscle or tendon. Dense parallel extracellular collagen and sparse flattened nuclei favour tendon. Densely packed spindle cells with central nuclei favour smooth muscle. Visible striations plus the appropriate nuclear pattern support striated muscle. A transverse section may require another field or orientation.\n\nState the conclusion at the level the evidence permits: tissue family first, subtype when supported, and organ only when additional architecture warrants it. Apply this sequence in the worked example, then answer each question before viewing its explanation."
+        }
+      ],
+      "workedExample": {
+        "title": "Worked Identification Example",
+        "prompt": "A written description of an H&E field shows a lumen bordered by one continuous layer of tall cells. Nuclei lie mainly toward the basal part of those cells. Beneath the layer are scattered nuclei, loose fibres and small vessels. No organ-specific structures are supplied. Identify the tissue facing the lumen and the supporting tissue, and explain what remains uncertain. This is a hypothetical description, not an image of a specimen.",
+        "solution": [
+          "The continuous, closely packed cellular boundary faces a lumen, so the lining is epithelial tissue. The sparse intervening matrix and apical-to-basal arrangement support this identification.",
+          "One layer of tall cells supports simple columnar epithelium. Basally placed nuclei are a useful additional clue, but nuclear position alone does not establish the number of cell layers.",
+          "The underlying region has scattered cells, fibres and vessels rather than a continuous sheet. This combination supports loose connective tissue, which supports and nourishes the avascular lining by diffusion.",
+          "Reject muscle as the lining: the described cells form a luminal boundary rather than contractile bundles. Reject a nerve fascicle: no bundled axons or fascicular organisation are described.",
+          "The tissue classification is supported, but an exact organ is not. Several organs have simple columnar epithelium. Seek additional features such as villi, glands or distinctive wall architecture before naming one."
+        ]
+      },
+      "question": {
+        "prompt": "Question 1. Which list names the four basic tissue families?",
+        "options": [
+          {
+            "text": "Epithelial, connective, muscle and nervous",
+            "reason": "These are the four basic tissue families. Organs combine them in arrangements that support the function of the whole organ."
+          },
+          {
+            "text": "Skin, tendon, heart and brain",
+            "reason": "This list mixes organs and a connective-tissue structure. It does not name the four basic tissue families."
+          },
+          {
+            "text": "Squamous, cuboidal, columnar and stratified",
+            "reason": "These terms describe epithelial cell shapes or layering. They are not four separate basic tissue families."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain how architecture distinguishes the four basic tissue families. For each family, give a defining structural feature, a function and a representative location. Justify one identification using two independent observations, then state a limitation of routine H&E.",
+        "answer": "Epithelium forms closely joined coverings, linings and glands: intestinal epithelium supports absorption and epidermis protects. Connective tissue supports, binds and repairs through cells and matrix: parallel tendon collagen transmits tension. Muscle generates force: skeletal muscle moves the body, myocardium pumps and smooth muscle propels contents or regulates calibre. Nervous tissue combines neurons and glia for communication and support in the brain, spinal cord, nerves and ganglia. Use architecture plus a cellular or matrix clue. Barrier loss, tendon damage, impaired contraction or interrupted nerve conduction can impair function. Section angle and staining limit what is visible; colour alone cannot identify a tissue."
+      },
+      "related": [
+        "microscopy",
+        "epithelia",
+        "connective-tissue",
+        "muscle-histology",
+        "myelin-and-glial-cells"
+      ],
+      "updatedAt": "2026-09-23",
+      "minutes": 35,
+      "oralExamination": [
+        {
+          "prompt": "How would you distinguish a simple epithelial lining from its supporting connective tissue?",
+          "answer": "Identify a continuous layer of closely joined cells facing a lumen, with little matrix between them. Then identify the supporting region by its scattered cells, extracellular fibres and vessels. Layer continuity and the cell-to-matrix relationship are independent clues; nuclear position alone does not establish the number of layers."
+        },
+        {
+          "prompt": "How would you distinguish tendon from smooth muscle, and how could section orientation limit your answer?",
+          "answer": "Tendon is dominated by aligned extracellular collagen with relatively sparse flattened fibroblast nuclei. Smooth muscle consists of densely arranged spindle-shaped cells with central nuclei. A transverse cut may hide cell length and make nuclei less frequent in a field; use other fields or orientations. Absence of striations alone does not distinguish the two."
+        },
+        {
+          "prompt": "Compare CNS and PNS myelin and explain why myelin injury does not necessarily imply neuronal death.",
+          "answer": "Oligodendrocytes form CNS myelin and can supply internodes on several axons. Each myelinating Schwann cell supplies one internode of one PNS axon. Myelin is glial membrane around an axonal segment, not the axon or neuronal soma. Its loss can slow or block conduction while the axon and soma initially remain present."
+        }
+      ],
+      "summaryChecklist": [
+        "Name the four tissue families and distinguish a tissue from an organ.",
+        "Identify epithelial polarity and classify a lining by layers and surface-cell shape.",
+        "Separate connective-tissue cells from fibres and ground substance; recognise specialised connective tissues.",
+        "Compare skeletal, cardiac and smooth muscle using nuclear pattern, branching and striations.",
+        "Distinguish neurons from glia, and CNS oligodendrocytes from PNS Schwann cells.",
+        "Support an identification with two independent positive clues, reject an alternative and state what the section cannot establish.",
+        "Link tissue injury to a functional consequence without assuming damage to structures the question preserves."
+      ]
+    },
+    {
       "id": "microscopy",
       "subject": "histology",
       "title": "Reading a histology section",

@@ -3,6 +3,21 @@
   "updatedAt": "2026-09-10",
   "groups": [
     {
+      "id": "histology-foundations",
+      "subject": "histology",
+      "title": "The four basic tissues",
+      "sourceLabel": "Microscopic Anatomy and Embryology I–II, Revision 4: basic tissues and nervous tissue foundations",
+      "sourceId": "b88b1cbb1791f4a6",
+      "topics": [
+        {
+          "id": "histology-foundations-01",
+          "title": "Histology Foundations: The Four Basic Tissues",
+          "href": "/library/histology-foundations-tissues",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
       "id": "physiology-1",
       "subject": "physiology",
       "title": "Cellular physiology and excitable tissues",

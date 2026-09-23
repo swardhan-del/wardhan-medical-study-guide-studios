@@ -10,7 +10,7 @@ const print=read('src/content/printable-guides.json').parts;
 test('five anatomy volumes expose the agreed counts, stable legacy URLs and synchronized print order',()=>{
  const expected=[18,22,18,30,32];
  assert.equal(new Set(course.map(r=>r.lessonId)).size,120);
- assert.equal(lessons.filter(l=>l.subject!=='anatomy').length,115);
+ assert.equal(lessons.filter(l=>l.subject!=='anatomy').length,116);
  for(let v=1;v<=5;v++){
   const records=course.filter(r=>r.volume===v), ids=records.map(r=>r.lessonId);
   assert.equal(records.length,expected[v-1]);

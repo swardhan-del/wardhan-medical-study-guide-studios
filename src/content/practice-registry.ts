@@ -63,6 +63,7 @@ export const learningQuestionIds = [...new Set(practiceItems.map((q) => q.id))];
 export const learningDraftIds = [
   ...renalLessons.flatMap((l) => ["oral-renal-" + l.slug, ...l.rubric.map((_, i) => "rubric-" + l.slug + "-" + i)]),
   ...library.lessons.map((l) => "oral-" + l.id),
+  ...library.lessons.flatMap(l => "summaryChecklist" in l && l.summaryChecklist ? l.summaryChecklist.map((_, index) => `${l.id}-summary-${index + 1}`) : []),
   ...thorax.oral.flatMap((q) => ["oral-" + q.id, ...q.checklist.map((_, i) => "check-" + q.id + "-" + i)]),
   ...transfer.questions.map((q) => "explain-" + q.id),
   "lab-prediction", "lab-explanation",

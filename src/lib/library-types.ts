@@ -18,6 +18,8 @@ export type LibraryLesson = {
   minutes: number;
   objectives?: string[];
   prerequisites?: string[];
+  oralExamination?: { prompt: string; answer: string }[];
+  summaryChecklist?: string[];
   workedExample?: { title: string; prompt: string; solution: string[] };
 };
 export type LibrarySource = {

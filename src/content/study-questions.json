@@ -1748,6 +1748,126 @@
         }
       ],
       "answer": 2
+    },
+    {
+      "id": "histology-foundations-tissues-retrieval-2",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "Question 2. Which combination best defines an epithelial lining?",
+      "options": [
+        {
+          "text": "Widely separated cells in abundant collagen bundles",
+          "explanation": "Abundant collagen separating relatively sparse cells favours connective tissue rather than an epithelial lining."
+        },
+        {
+          "text": "Closely joined cells with apical–basal polarity and little intervening matrix",
+          "explanation": "A continuous cellular boundary, polarity and minimal intervening matrix together support epithelial tissue. The basal surface attaches to a basal lamina."
+        },
+        {
+          "text": "Elongated contractile cells arranged in deep bundles",
+          "explanation": "This describes a muscle pattern. A luminal epithelial boundary is identified by its cell relationships and surface organisation."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-foundations-tissues-retrieval-3",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "Question 3. What is the principal mechanical role of parallel collagen bundles in a tendon?",
+      "options": [
+        {
+          "text": "Generate active force by actin–myosin sliding",
+          "explanation": "Muscle cells generate active force through actin and myosin. Tendon collagen transmits tensile force; it does not contract through sarcomeres."
+        },
+        {
+          "text": "Conduct action potentials between the muscle and bone",
+          "explanation": "Axons conduct action potentials. The main role of tendon collagen is mechanical force transmission, not electrical communication."
+        },
+        {
+          "text": "Resist and transmit tensile loading mainly along the bundle axis",
+          "explanation": "Parallel collagen provides strength in the principal direction of pull. Fibroblasts maintain this extracellular matrix."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "histology-foundations-tissues-retrieval-4",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "Question 4. Which pattern most strongly supports skeletal muscle in a longitudinal section?",
+      "options": [
+        {
+          "text": "Long striated fibres with multiple peripheral nuclei",
+          "explanation": "The combination of sarcomeric striations, multinucleation and peripheral nuclear position supports skeletal muscle."
+        },
+        {
+          "text": "Branching striated cells with central nuclei and intercalated discs",
+          "explanation": "This combination favours cardiac muscle; striations alone cannot distinguish skeletal from cardiac muscle."
+        },
+        {
+          "text": "Spindle-shaped cells with single central nuclei and no cross-striations",
+          "explanation": "This is the expected smooth-muscle pattern. Smooth muscle still has actin and myosin, but lacks sarcomeres."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-foundations-tissues-retrieval-5",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "Question 5. Which pairing correctly identifies a myelin-forming glial cell and its location?",
+      "options": [
+        {
+          "text": "Oligodendrocyte — peripheral nerve",
+          "explanation": "Oligodendrocytes form CNS myelin. Peripheral myelin is formed by Schwann cells."
+        },
+        {
+          "text": "Schwann cell — peripheral nerve",
+          "explanation": "A myelinating Schwann cell forms one internode of one PNS axon. Many successive cells are needed along a long myelinated axon."
+        },
+        {
+          "text": "Fibroblast — central nervous system axon",
+          "explanation": "Fibroblasts produce connective-tissue matrix. They are not the glial cells that form CNS myelin."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-foundations-tissues-retrieval-6",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "Question 6. Which statement correctly links a tissue to a representative location and function?",
+      "options": [
+        {
+          "text": "Nervous tissue — tendon collagen transmitting tensile force",
+          "explanation": "The collagen bundles of a tendon are connective tissue. Nervous tissue transmits and integrates signals through neurons with glial support."
+        },
+        {
+          "text": "Muscle tissue — the simple squamous lining of a blood vessel",
+          "explanation": "The vessel lining is endothelial epithelium. Smooth muscle may be present deeper in the wall, where it regulates vessel calibre."
+        },
+        {
+          "text": "Connective tissue — loose supporting tissue beneath an epithelium",
+          "explanation": "Loose connective tissue supports epithelial sheets and contains matrix, resident or recruited cells and often vessels that supply the nearby lining."
+        }
+      ],
+      "answer": 2
     }
   ]
 }

@@ -206,6 +206,75 @@
         }
       ],
       "answer": 1
+    },
+    {
+      "id": "histology-foundations-tissues-transfer-1",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#apply-the-concept",
+      "prompt": "A superficial injury removes an epithelial lining while deeper smooth muscle remains intact. Which immediate functional loss follows most directly from the tissue that was removed?",
+      "options": [
+        {
+          "text": "All active force generation in the deeper muscle is abolished",
+          "explanation": "The scenario preserves the deeper muscle. Loss of epithelial cells does not by itself establish loss of all muscle contraction."
+        },
+        {
+          "text": "The continuous protective barrier is disrupted",
+          "explanation": "Epithelial continuity and cell junctions help maintain a barrier. Removing the lining exposes underlying tissue even when deeper contractile cells remain."
+        },
+        {
+          "text": "The extracellular collagen necessarily disappears from the supporting tissue",
+          "explanation": "Collagen belongs to the supporting matrix. Its disappearance is not implied by selective removal of the epithelial layer."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-foundations-tissues-transfer-2",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#apply-the-concept",
+      "prompt": "An unknown pink bundle has sparse flattened nuclei between abundant parallel extracellular fibres. No striations are seen. Which interpretation is best supported?",
+      "options": [
+        {
+          "text": "Dense regular connective tissue, because matrix dominates over cells",
+          "explanation": "Abundant aligned extracellular collagen with relatively sparse flattened fibroblast nuclei supports dense regular connective tissue such as tendon. This uses positive architectural clues."
+        },
+        {
+          "text": "Smooth muscle, because absent striations identify a non-striated contractile bundle",
+          "explanation": "Absent striations are not specific to smooth muscle. The positive findings here are abundant extracellular fibres and sparse flattened nuclei, which favour dense regular connective tissue."
+        },
+        {
+          "text": "Skeletal muscle cut obliquely, because orientation can conceal its striations",
+          "explanation": "An oblique cut can obscure striations, but it does not explain a field dominated by extracellular collagen with sparse flattened nuclei. The stated architecture supports connective tissue."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-foundations-tissues-transfer-3",
+      "topic": "histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "subject": "histology",
+      "href": "/library/histology-foundations-tissues#apply-the-concept",
+      "prompt": "Selective myelin injury affects a peripheral nerve while its axons initially remain intact. Which functional prediction and glial-cell attribution are best supported?",
+      "options": [
+        {
+          "text": "Conduction may slow or fail, and the affected myelin was formed by oligodendrocytes",
+          "explanation": "The functional prediction is plausible, but the cell attribution is incorrect. Oligodendrocytes form CNS myelin; the question specifies a peripheral nerve."
+        },
+        {
+          "text": "Conduction must remain normal because the axons are still present",
+          "explanation": "Axonal continuity does not guarantee normal conduction. Damage to insulating myelin can impair action-potential propagation even while the axon is initially intact."
+        },
+        {
+          "text": "Conduction may slow or fail, and the affected myelin was formed by Schwann cells",
+          "explanation": "PNS myelin comes from Schwann cells and supports efficient action-potential propagation. This predicts a functional disturbance without assuming the whole neuron has died."
+        }
+      ],
+      "answer": 2
     }
   ]
 }
