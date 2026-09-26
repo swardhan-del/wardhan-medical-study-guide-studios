@@ -1,3 +1,5 @@
+import { TopicGuideLinks } from "@/components/topic-guide-links";
+import { searchMetadata } from "@/lib/search-metadata";
 import { AnatomyLearningPath } from "@/components/anatomy-learning-path";
 import { AnatomyCourseIntro } from "@/components/anatomy-course";
 import { BeginnerSequence } from "@/components/beginner-sequence";
@@ -16,7 +18,10 @@ import { renalLessons, renalQuestions } from "@/content/renal-course";
 import { beginnerSequences } from "@/content/study-paths";
 type Props = { params: Promise<{ subject: string }> };
 export function generateStaticParams() { return studySubjects.map(s => ({ subject: s.id })); }
-export async function generateMetadata({ params }: Props) { const { subject } = await params; const s = studySubjects.find(s => s.id === subject); return { title: s ? s.title + " · Subject learning" : "Subject not found", description: s?.description, alternates: { canonical: "/study/" + subject } }; }
+export async function generateMetadata({ params }: Props) {
+  const { subject } = await params;
+  return searchMetadata(`/study/${subject}`);
+}
 export default async function SubjectStudyPage({ params }: Props) {
  const { subject } = await params, s = studySubjects.find(s => s.id === subject); if (!s) notFound();
  const lessons = subjectLessons(subject), groups = studyGroups.filter(g => g.subject === subject);
@@ -34,6 +39,7 @@ export default async function SubjectStudyPage({ params }: Props) {
    <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>
    {subject === "physiology" && <section className="study-panel" aria-labelledby="renal-course-heading"><p className="eyebrow">Renal and acid–base physiology · Guided course</p><h2 id="renal-course-heading">Renal physiology, step by step</h2><p>{renalLessons.length} lessons and {renalQuestions.length} questions with explanations, plus interactive circulation and acid–base activities.</p><Link className="button button-primary" href="/learn/renal">Open renal physiology course</Link></section>}
    <div id="subject-lessons"><StudyCollectionBrowser cards={cards} groups={groups} /></div>
+   <TopicGuideLinks subject={subject} />
    <SubjectCoverage subject={subject} />
    <p className="muted-note">These are focused teaching adaptations, with source references on each lesson. AI-assisted educational content; independent clinical peer review has not been completed. Your practice stays in this browser.</p>
  </div>;

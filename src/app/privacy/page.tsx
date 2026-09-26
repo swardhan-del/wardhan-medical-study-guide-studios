@@ -1,10 +1,6 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { AnalyticsPreference } from "@/components/learning-analytics";
-export const metadata = {
-  title: "Privacy",
-  description:
-    "How the study library handles saved reading lists and contact links.",
-  alternates: { canonical: "/privacy" },
-};
+export const metadata = searchMetadata("/privacy");
 export default function PrivacyPage() {
   return (
     <div className="site-container library-page">

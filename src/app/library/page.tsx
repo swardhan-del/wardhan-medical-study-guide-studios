@@ -1,14 +1,11 @@
+import { TopicGuideLinks } from "@/components/topic-guide-links";
+import { searchMetadata } from "@/lib/search-metadata";
 import { librarySubjects } from "@/lib/taxonomy";
 import Link from "next/link";
 import { studySubjects } from "@/lib/study-collections";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { publicCatalog } from "@/lib/catalog";
-export const metadata = {
-  title: "Library",
-  description:
-    "Study anatomy, histology, cell biology, biochemistry, physiology and genetics with source-based lessons, explained questions and interactive practice.",
-  alternates: { canonical: "/library" },
-};
+export const metadata = searchMetadata("/library");
 export default async function LibraryPage({
   searchParams,
 }: {
@@ -32,6 +29,7 @@ export default async function LibraryPage({
       </header>
       <details className="study-details" id="printable-notes"><summary>Printable revision notes for all seven subjects</summary><p>Open a subject’s web revision notes, then use Print / Save as PDF. These collect the published lessons and questions; they are not complete source textbooks.</p><nav className="quick-links" aria-label="Printable revision subjects">{studySubjects.map(s => <Link key={s.id} href={`/study/${s.id}/revision`}>{s.title}</Link>)}</nav></details>
       <CatalogBrowser key={`${subject}:${query}`} records={publicCatalog} initialSubject={subject} initialQuery={query} />
+      <TopicGuideLinks />
       <details className="study-details"><summary>Subject directories and video recaps</summary>
       <nav className="library-subjects" aria-label="Explore subjects and topics">
         {studySubjects.map(s => <Link key={s.id} href={s.id === "genetics" ? "/study/genetics" : "/subjects/" + s.id}>{s.title}</Link>)}

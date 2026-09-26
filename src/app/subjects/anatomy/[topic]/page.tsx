@@ -1,6 +1,6 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { EducationalFigure } from "@/components/educational-figure";
 import { figuresForResource } from "@/lib/figures";
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -16,16 +16,9 @@ export const dynamicParams = false;
 export function generateStaticParams() {
   return anatomyLearningPages.map((page) => ({ topic: page.slug }));
 }
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props) {
   const { topic } = await params;
-  const page = anatomyLearningPages.find((item) => item.slug === topic);
-  return page
-    ? {
-        title: `${page.title} — Interactive anatomy study`,
-        description: page.description,
-        alternates: { canonical: `/subjects/anatomy/${topic}` },
-      }
-    : { title: "Topic not found" };
+  return searchMetadata(`/subjects/anatomy/${topic}`);
 }
 export default async function AnatomyTopicPage({
   params,

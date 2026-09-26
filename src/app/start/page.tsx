@@ -1,9 +1,10 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { SubjectSubsets } from "@/components/subject-subsets";
 import { studySubjects, subjectLessons } from "@/lib/study-collections";
 import { studyPaths, beginnerSequences } from "@/content/study-paths";
 
-export const metadata = { title: "Start here", description: "Choose a medical subject, see what is covered and begin your first study session.", alternates: { canonical: "/start" } };
+export const metadata = searchMetadata("/start");
 
 export default function StartPage() {
   return <div className="site-container study-page">

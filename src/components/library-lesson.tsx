@@ -1,3 +1,6 @@
+import { TopicGuideLinks } from "@/components/topic-guide-links";
+import { StructuredData } from "./structured-data";
+import { lessonSchema } from "@/lib/structured-data";
 import { AnatomyFoundationsContent } from "./anatomy-foundations-content";
 import { HistologyFoundationsContent } from "./histology-foundations-content";
 import { AnatomyLessonNavigation, AnatomyIdentification, AnatomyPractice } from "./anatomy-course";
@@ -56,31 +59,14 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
   const related = lesson.related
     .map((id) => publicCatalog.find((r) => r.id === id))
     .filter((r) => r !== undefined);
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LearningResource",
-    name: lesson.title,
-    description: lesson.summary,
-    url: `${getSiteUrl()}/library/${lesson.id}`,
-    learningResourceType: "Study lesson",
-    educationalLevel: "Undergraduate",
-    inLanguage: "en",
-    isAccessibleForFree: true,
-    dateModified: lesson.updatedAt,
-    author: {
-      "@type": "Organization",
-      name: "Wardhan Medical Study Guide Studios",
-    },
-    citation: `${source.title}. ${source.edition}. ${lesson.section}.`,
-  };
+  const schema = lessonSchema({
+    path: `/library/${lesson.id}`, title: lesson.title, summary: lesson.summary,
+    updatedAt: lesson.updatedAt, minutes: lesson.minutes, objectives: lesson.objectives,
+    citation: [`${source.title}. ${source.edition}. ${lesson.section}.`, ...(reference ? [reference.url, ...(reference.supportingReferences ?? []).map(r => r.url)] : [])],
+  }, getSiteUrl());
   return (
     <article className="site-container concept-page">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
-        }}
-      />
+      <StructuredData data={schema} />
       <ResourceBreadcrumbs id={lesson.id} />
       <header className="concept-heading">
         <p className="eyebrow">
@@ -113,6 +99,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         <a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
       </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
+      <TopicGuideLinks lessonId={lesson.id} />
       <div className="concept-layout">
         <div>
           {flagship ? (anatomyFoundations ? <AnatomyFoundationsContent lesson={lesson}/> : <HistologyFoundationsContent lesson={lesson}/>) : <>

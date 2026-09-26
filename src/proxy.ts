@@ -6,6 +6,9 @@ import catalog from "@/content/public-catalog.json";
 import { subjectInterests } from "@/content/subjects";
 import directoryRoutes from "@/content/directory-routes.json";
 import { anatomyTopicLinks } from "@/content/anatomy-navigation";
+import { searchPage } from "@/lib/search-pages";
+import { shouldNoIndex } from "@/lib/search-policy";
+import { getSiteUrl, isIndexable } from "@/lib/site-url";
 export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const parts = path.split("/").filter(Boolean);
@@ -52,7 +55,8 @@ export function proxy(request: NextRequest) {
     missingSubject ||
     missingLesson ||
     missingTopic ||
-    missingVideo
+    missingVideo ||
+    (parts[0] === "learn" && parts[1] === "topics" && parts.length > 2 && !searchPage(path))
   ) {
     return new NextResponse(
       '<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found</title></head><body><main><h1>Page not found</h1><p>This page is not available.</p><a href="/library">Return to the library</a></main></body></html>',
@@ -66,15 +70,21 @@ export function proxy(request: NextRequest) {
       },
     );
   }
-  return NextResponse.next();
+  // Resolve catalogue aliases before streaming starts, so crawlers receive a real redirect.
+  const page = searchPage(path);
+  if (page?.canonical && page.canonical !== path) {
+    const redirect = NextResponse.redirect(new URL(page.redirect || page.canonical, request.url), 308);
+    redirect.headers.set("X-Robots-Tag", isIndexable() ? "noindex, follow" : "noindex, nofollow");
+    return redirect;
+  }
+  const response = NextResponse.next();
+  if (shouldNoIndex(path, request.nextUrl.searchParams, request.nextUrl.hostname, getSiteUrl(), isIndexable())) {
+    response.headers.set("X-Robots-Tag", isIndexable() ? "noindex, follow" : "noindex, nofollow");
+  }
+  return response;
 }
 export const config = {
   matcher: [
-    "/videos/:path*",
-    "/topics/:path*",
-    "/review/:path*",
-    "/library/:path*",
-    "/subjects/:path*",
-    "/learn/renal/:path*",
+    "/((?!_next|api|images|media|downloads|.*\\.).*)",
   ],
 };

@@ -52,6 +52,7 @@ const nextConfig: NextConfig = {
         // Permit the site's PDF reader without allowing external sites to frame it.
         source: "/downloads/:path*",
         headers: [
+          { key: "X-Robots-Tag", value: "noindex, follow" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           {
             key: "Content-Security-Policy",

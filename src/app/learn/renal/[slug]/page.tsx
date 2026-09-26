@@ -1,3 +1,9 @@
+import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
+import { StructuredData } from "@/components/structured-data";
+import { lessonSchema } from "@/lib/structured-data";
+import { getSiteUrl } from "@/lib/site-url";
+import { renalRevision } from "@/content/renal-course";
+import { searchMetadata } from "@/lib/search-metadata";
 import { NephronMap } from "@/components/nephron-map";
 import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
@@ -17,20 +23,7 @@ export function generateStaticParams() {
 type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const l = renalLessons.find((l) => l.slug === slug);
-  return l
-    ? {
-        title: l.title,
-        description: l.description,
-        alternates: { canonical: renalLessonHref(slug) },
-        openGraph: {
-          title: l.title,
-          description: l.description,
-          url: renalLessonHref(slug),
-          images: ["/learn/renal/opengraph-image"],
-        },
-      }
-    : { title: "Lesson not found" };
+  return searchMetadata(`/learn/renal/${slug}`);
 }
 export default async function RenalLessonPage({ params }: Props) {
   const { slug } = await params;
@@ -41,6 +34,11 @@ export default async function RenalLessonPage({ params }: Props) {
   const previous = renalLessons[index - 1];
   return (
     <div className="site-container study-page renal-lesson">
+      <StructuredData data={lessonSchema({ path: renalLessonHref(slug), title: lesson.title, summary: lesson.description,
+        updatedAt: renalRevision, minutes: lesson.minutes, objectives: lesson.objectives,
+        citation: [`Medical Physiology: Renal Physiology, Revision 15. ${lesson.sourceSection}.`, "https://www.ncbi.nlm.nih.gov/books/NBK482248/", "https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders"],
+      }, getSiteUrl())} />
+      <SearchBreadcrumbs items={[{ name: "Library", href: "/library" }, { name: "Physiology", href: "/study/physiology" }, { name: "Renal physiology", href: "/learn/renal" }, { name: lesson.title, href: renalLessonHref(slug) }]} />
       <header className="study-hero">
         <Link className="text-link" href="/learn/renal">
           ← Renal course

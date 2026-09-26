@@ -1,3 +1,4 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import anatomyCourse from "@/content/anatomy-course.json";
 import { guideParts } from "@/lib/printable-guides";
 import { PrintableGuide } from "@/components/printable-guide";
@@ -17,7 +18,10 @@ const applicationQuestions = [...transfer.questions, ...questions.questions];
 const answerLetter = (id: string, count: number, answer: number) => String.fromCharCode(65 + optionOrder(id, count).indexOf(answer));
 type Props = { params: Promise<{ subject: string }> };
 export function generateStaticParams() { return studySubjects.map(s => ({ subject: s.id })); }
-export async function generateMetadata({ params }: Props) { const { subject } = await params; return { title: "Printable revision notes · " + (studySubjects.find(s => s.id === subject)?.title || "Study"), robots: { index: false, follow: true } }; }
+export async function generateMetadata({ params }: Props) {
+  const { subject } = await params;
+  return searchMetadata(`/study/${subject}/revision`);
+}
 export default async function RevisionPage({ params }: Props) {
  const { subject } = await params, s = studySubjects.find(s => s.id === subject); if (!s) notFound();
  const lessons = subjectLessons(subject), groups = guideParts.filter(g => g.subject === subject);

@@ -4076,3 +4076,11 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .drawing-space { min-height: 3cm; }
   .revision-page .revision-lesson p { white-space: pre-line; }
 }
+
+/* Guided topic sequences reuse the lesson panels and type scale. */
+.topic-sequence-steps { list-style: none; padding: 0; display: grid; gap: 1.5rem; }
+.topic-sequence-steps > li { min-width: 0; }
+.topic-guide-links li { margin-block: 1rem; }
+.topic-guide-links li p { margin-block: .35rem; }
+.topic-sequence .action-row a { white-space: normal; overflow-wrap: anywhere; }
+.breadcrumbs { flex-wrap: wrap; overflow-wrap: anywhere; }
