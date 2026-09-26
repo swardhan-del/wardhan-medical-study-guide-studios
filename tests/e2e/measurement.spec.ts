@@ -130,3 +130,34 @@ test("consent controls support keyboard use, clear feedback and mobile accessibi
   const result=await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze();expect(result.violations).toEqual([]);
   await page.screenshot({path:info.outputPath("analytics-preferences.png"),fullPage:true});
 });
+
+
+test("integrated recap and successful starter-pack downloads use consented fixed events", async ({ page }) => {
+  const { events } = await mockMeasurement(page);
+  await allow(page);
+  await page.goto("/library/physiology-membrane-foundations");
+  await page.getByRole("button", { name: "Save summary to My Study", exact: true }).click();
+  await expect.poll(() => events).toContainEqual({ version: 1, event: "summary_saved", lesson_id: "physiology-membrane-foundations" });
+  await page.goto("/starter-pack");
+  const download = page.waitForEvent("download");
+  await page.getByRole("link", { name: "Download starter pack (HTML)", exact: true }).click();
+  expect((await download).suggestedFilename()).toBe("wardhan-study-guide-starter-pack.html");
+  await expect.poll(() => events).toContainEqual({ version: 1, event: "starter_pack_requested", asset_id: "study-guide-starter-pack" });
+  expect(events.every(event => !JSON.stringify(event).includes("@"))).toBe(true);
+});
+
+test("failed downloads and demo signups never emit successful conversion events", async ({ page }) => {
+  const { events } = await mockMeasurement(page);
+  await allow(page);
+  await page.route("**/starter-pack/download", route => route.fulfill({ status: 503 }));
+  await page.goto("/starter-pack");
+  await page.getByRole("link", { name: "Download starter pack (HTML)", exact: true }).click();
+  await expect(page.getByRole("status")).toContainText("could not be prepared");
+  expect(events.some(event => event.event === "starter_pack_requested")).toBe(false);
+  await page.goto("/waitlist");
+  await page.getByLabel("Example email address (required)", { exact: true }).fill("student@example.com");
+  await page.getByRole("checkbox").check();
+  await page.getByRole("button", { name: /Try the demo/ }).click();
+  await expect(page.locator(".waitlist-panel")).toContainText("no email");
+  expect(events.some(event => event.event === "waitlist_submitted")).toBe(false);
+});
