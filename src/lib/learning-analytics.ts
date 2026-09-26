@@ -1,5 +1,6 @@
 "use client";
 import { track } from "@vercel/analytics";
+import type { BeforeSendEvent } from "@vercel/analytics";
 export function analyticsAllowed() {
   if (
     typeof window === "undefined" ||
@@ -17,6 +18,15 @@ export function analyticsAllowed() {
     return false;
   }
 }
+export function filterAnalyticsEvent(event: BeforeSendEvent) {
+  if (!analyticsAllowed()) return null;
+  const url = new URL(event.url);
+  if (/^\/(review|study|reading-list)(\/|$)/.test(url.pathname)) return null;
+  if (event.type === "pageview" && /^\/waitlist(\/|$)/.test(url.pathname)) return null;
+  url.search = "";
+  url.hash = "";
+  return { ...event, url: url.toString() };
+}
 export function learningEvent(
   name:
     | "lesson_started"
@@ -24,7 +34,8 @@ export function learningEvent(
     | "quiz_started"
     | "quiz_completed"
     | "challenge_shared"
-    | "learning_day",
+    | "learning_day"
+    | "waitlist_confirmation_requested",
   properties: Record<string, string | boolean> = {},
 ) {
   if (!analyticsAllowed()) return;

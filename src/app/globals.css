@@ -4077,6 +4077,23 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .revision-page .revision-lesson p { white-space: pre-line; }
 }
 
+/* Optional pre-launch signup: reuse study panels and keep focus/text visible. */
+.waitlist-panel { max-width: 760px; }
+.waitlist-form { max-width: 620px; }
+.waitlist-form label.waitlist-consent { display: flex; align-items: flex-start; gap: 14px; font-weight: 400; }
+.waitlist-form .waitlist-consent input { width: 22px; height: 22px; flex: 0 0 22px; margin-top: 3px; accent-color: var(--teal); }
+.waitlist-error { color: #8f2323; font-weight: 600; }
+.waitlist-form [aria-invalid="true"] { border: 2px solid #8f2323; }
+.waitlist-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.waitlist-panel [tabindex="-1"]:focus { outline: 3px solid var(--teal); outline-offset: 4px; }
+.waitlist-cta p, .waitlist-panel p { max-width: 70ch; }
+.waitlist-form button { white-space: normal; text-align: left; }
+.waitlist-form button:disabled { cursor: wait; opacity: 0.7; }
+.starter-resource-list { padding-left: 24px; }
+.starter-resource-list li { margin-bottom: 28px; }
+@media print { .waitlist-cta, .waitlist-form { display: none; } }
+
+.waitlist-page p a, .privacy-copy a, .starter-resource-list a { text-decoration: underline; text-underline-offset: 0.2em; }
 /* Shared student journey: text labels, native controls and a readable narrow-screen order. */
 .lesson-journey, .lesson-review, .continue-card, #saved-summaries { margin-block: 2rem; }
 .journey-heading { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:1rem; }

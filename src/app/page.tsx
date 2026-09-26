@@ -1,3 +1,4 @@
+import { WaitlistCta } from "@/components/waitlist-cta";
 import { ContinueLearning } from "@/components/continue-learning";
 import { journeyIndex } from "@/lib/lesson-journeys";
 import { QuickSearch } from "@/components/quick-search";
@@ -82,6 +83,7 @@ export default function Home() {
       </section>
 
       <section className="site-container study-panel"><p className="eyebrow">Featured guided course</p><h2>Renal physiology, step by step</h2><p>{renalLessons.length} lessons and {renalQuestions.length} explained questions, with interactive activities.</p><Link className="text-link" href="/learn/renal">Open renal physiology →</Link></section>
+      <div className="site-container"><WaitlistCta /></div>
       <section className="closing-section site-container">
         <h2>Know what you are learning from</h2>
         <div className="closing-copy">
