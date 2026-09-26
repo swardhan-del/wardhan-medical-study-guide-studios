@@ -7,5 +7,5 @@ export default defineConfig({
  webServer: undefined,
  outputDir: ".private/preview-test-results",
  timeout: 60000,
- projects: local.projects?.filter(p => p.name !== 'local-review' && p.name !== 'quality-gate').map(p => ({...p, testMatch: /(?:directory|figures|prelaunch)\.spec\.ts/, use: {...p.use, baseURL, storageState: process.env.PREVIEW_STORAGE_STATE}})),
+ projects: local.projects?.filter(p => p.name !== 'local-review' && p.name !== 'quality-gate').map(p => ({...p, testMatch: /(?:directory|figures|prelaunch|roadmap-release)\.spec\.ts/, use: {...p.use, baseURL, storageState: process.env.PREVIEW_STORAGE_STATE}})),
 });
