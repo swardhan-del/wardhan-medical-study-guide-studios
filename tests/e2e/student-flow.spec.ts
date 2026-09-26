@@ -156,7 +156,7 @@ test("analytics sends nothing by default and missing routes offer library recove
   await page.goto(`/library/${id}`);
   await page.getByRole("button", { name: "Save summary to My Study" }).click();
   await page.goto("/privacy");
-  await expect(page.getByText("Optional Vercel Web Analytics is disabled by default.", { exact: false })).toBeVisible();
+  await expect(page.getByText(/Only after you|Optional Vercel Web Analytics is disabled by default\./, { exact: false })).toBeVisible();
   expect(analyticsRequests).toEqual([]);
   await page.getByRole("button", { name: "Allow analytics", exact: true }).click();
   expect(await page.evaluate(() => localStorage.getItem("wardhan-analytics-optout"))).toBe("0");
