@@ -1,9 +1,7 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { ExamPlanner } from "@/components/study-dashboard";
-export const metadata = {
-  title: "My renal revision planner",
-  robots: { index: false, follow: true },
-};
+export const metadata = searchMetadata("/study/planner");
 export default function PlannerPage() {
   return (
     <div className="site-container study-page">

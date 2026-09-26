@@ -1,7 +1,6 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { EducationalFigure } from "@/components/educational-figure";
 import { figuresForResource } from "@/lib/figures";
-import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { anatomyLearningPages } from "@/content/anatomy-learning";
@@ -16,16 +15,9 @@ export const dynamicParams = false;
 export function generateStaticParams() {
   return anatomyLearningPages.map((page) => ({ topic: page.slug }));
 }
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props) {
   const { topic } = await params;
-  const page = anatomyLearningPages.find((item) => item.slug === topic);
-  return page
-    ? {
-        title: `${page.title} — Interactive anatomy study`,
-        description: page.description,
-        alternates: { canonical: `/subjects/anatomy/${topic}` },
-      }
-    : { title: "Topic not found" };
+  return searchMetadata(`/subjects/anatomy/${topic}`);
 }
 export default async function AnatomyTopicPage({
   params,
@@ -68,25 +60,7 @@ export default async function AnatomyTopicPage({
             </a>
           </div>
         </div>
-        {releasedFigure ? (<EducationalFigure figure={releasedFigure} />) : page.image ? (
-          <figure>
-            <a
-              href={page.image.src}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Enlarge study illustration (opens in a new tab)"
-            >
-              <Image
-                src={page.image.src}
-                alt={page.image.alt}
-                width={1200}
-                height={1200}
-                sizes="(max-width: 760px) 90vw, 35vw"
-              />
-            </a>
-            <figcaption>{page.image.caption}. Select to enlarge.</figcaption>
-          </figure>
-        ) : null}
+        {releasedFigure && <EducationalFigure figure={releasedFigure} />}
       </section>
       {topic === "thorax" && (
         <p className="thorax-course-link">

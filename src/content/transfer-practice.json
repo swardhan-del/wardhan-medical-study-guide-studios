@@ -367,6 +367,190 @@
         }
       ],
       "answer": 1
+    },
+    {
+      "id": "physiology-membrane-foundations-application-1",
+      "topic": "physiology-membrane-foundations",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "subject": "physiology",
+      "href": "/library/physiology-membrane-foundations#apply-the-concept",
+      "prompt": "In a teaching model, the Na⁺/K⁺ ATPase is inhibited while Na⁺ leaks continue. After the Na⁺ gradient weakens, what happens to the energy available for Na⁺-coupled glucose uptake?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "It increases because the cotransporter starts hydrolysing ATP.",
+          "explanation": "The cotransporter does not become an ATPase when the separate pump is inhibited."
+        },
+        {
+          "text": "It is unchanged because a protein transporter needs no gradient.",
+          "explanation": "Secondary active transport depends on the coupled electrochemical gradient, not simply the presence of a protein."
+        },
+        {
+          "text": "It decreases because the downhill Na⁺ movement supplies less energy.",
+          "explanation": "Weakening the Na⁺ electrochemical gradient reduces the driving force available to support uphill glucose transport."
+        }
+      ]
+    },
+    {
+      "id": "physiology-membrane-foundations-application-2",
+      "topic": "physiology-membrane-foundations",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "subject": "physiology",
+      "href": "/library/physiology-membrane-foundations#apply-the-concept",
+      "prompt": "A model membrane is permeable only to K⁺. Intracellular K⁺ stays fixed while extracellular K⁺ increases but remains below the intracellular concentration. What happens to the K⁺ equilibrium potential?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "It becomes more negative.",
+          "explanation": "Raising outside K⁺ reduces the outward concentration gradient; less negative voltage is needed to oppose it."
+        },
+        {
+          "text": "It becomes less negative.",
+          "explanation": "The outside-to-inside K⁺ concentration ratio increases, shifting the K⁺ equilibrium potential in the positive direction."
+        },
+        {
+          "text": "It is unchanged because K⁺ is not actively transported through the channel.",
+          "explanation": "The equilibrium potential depends on the concentration ratio even though movement through the channel is passive."
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-enzyme-foundations-application-1",
+      "topic": "biochemistry-enzyme-foundations",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "subject": "biochemistry",
+      "href": "/library/biochemistry-enzyme-foundations#apply-the-concept",
+      "prompt": "Under ideal reversible competitive inhibition, the active enzyme amount and other conditions stay fixed. Which pattern is predicted?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Higher apparent Km with unchanged Vmax.",
+          "explanation": "More substrate is needed for half the limiting rate, but sufficient substrate can still approach the same Vmax."
+        },
+        {
+          "text": "Lower Vmax with unchanged apparent Km in every case.",
+          "explanation": "This is the ideal pure non-competitive pattern, not the competitive model specified in the question."
+        },
+        {
+          "text": "Lower apparent Km with higher Vmax.",
+          "explanation": "Competition does not increase catalytic capacity or reduce the substrate requirement in this model."
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-enzyme-foundations-application-2",
+      "topic": "biochemistry-enzyme-foundations",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "subject": "biochemistry",
+      "href": "/library/biochemistry-enzyme-foundations#apply-the-concept",
+      "prompt": "A hypothetical Michaelis–Menten assay has Vmax = 60 µmol/min and Km = 3 mmol/L. At [S] = 3 mmol/L, what is the initial rate?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "60 µmol/min",
+          "explanation": "Vmax is the limiting rate approached at high substrate, not the rate when [S] equals Km."
+        },
+        {
+          "text": "30 mmol/L",
+          "explanation": "The numerical half is correct, but this is a concentration unit rather than a rate."
+        },
+        {
+          "text": "30 µmol/min",
+          "explanation": "At [S] = Km, v = Vmax/2 = 30 µmol/min; the answer must retain rate units."
+        }
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations-application-1",
+      "topic": "genetics-genome-foundations",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "subject": "genetics",
+      "href": "/library/genetics-genome-foundations#apply-the-concept",
+      "prompt": "In an Aa × Aa autosomal recessive cross, assume AA and Aa are unaffected and aa is affected. Before knowing the phenotype, what is the probability of an Aa carrier child?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "25%",
+          "explanation": "One of the four combinations is AA and one is aa, but two are heterozygous carriers."
+        },
+        {
+          "text": "50%",
+          "explanation": "Aa and aA are the two heterozygous outcomes among four equally likely combinations, giving 1/2."
+        },
+        {
+          "text": "Two thirds",
+          "explanation": "Two thirds is the carrier probability conditional on an unaffected child in this model. That condition has not been supplied."
+        }
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations-application-2",
+      "topic": "genetics-genome-foundations",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "subject": "genetics",
+      "href": "/library/genetics-genome-foundations#apply-the-concept",
+      "prompt": "Two cell types contain the same intact gene, but one has much less of its mRNA. Which conclusion is justified by these observations alone?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "RNA abundance differs; the gene need not be absent from either cell.",
+          "explanation": "Different transcription or RNA stability can change mRNA abundance even when the DNA sequence is present in both cells."
+        },
+        {
+          "text": "The cell with less mRNA must have lost the chromosome.",
+          "explanation": "The question states that the same intact gene is present; mRNA abundance alone does not show chromosome loss."
+        },
+        {
+          "text": "Both cells must contain equal amounts of functional protein.",
+          "explanation": "DNA presence does not fix RNA or protein abundance, and function also depends on later processing and regulation."
+        }
+      ]
+    },
+    {
+      "id": "biophysics-membrane-foundations-application-1",
+      "topic": "biophysics-membrane-foundations",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "subject": "biophysics",
+      "href": "/library/biophysics-membrane-foundations#apply-the-concept",
+      "prompt": "Two compartments have equal initial hydrostatic pressure. A membrane passes water but not the dissolved solute. The right side has more solute particles per litre. What is the initial net water movement?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "From right to left",
+          "explanation": "That direction would increase the initial osmotic imbalance under the stated equal-pressure conditions."
+        },
+        {
+          "text": "No net movement because solute cannot cross",
+          "explanation": "Solute impermeability does not prevent water movement; the membrane is explicitly permeable to water."
+        },
+        {
+          "text": "From left to right",
+          "explanation": "Water initially moves towards the more concentrated impermeant-solute compartment when initial hydrostatic pressures are equal."
+        }
+      ]
+    },
+    {
+      "id": "biophysics-membrane-foundations-application-2",
+      "topic": "biophysics-membrane-foundations",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "subject": "biophysics",
+      "href": "/library/biophysics-membrane-foundations#apply-the-concept",
+      "prompt": "A model cell and bath initially have equal total osmolarity. The bath solute can enter the cell. Is unchanged cell volume guaranteed over time?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Yes, equal osmolarity always means equal tonicity.",
+          "explanation": "Equal total particle concentration does not account for solute permeability or redistribution over time."
+        },
+        {
+          "text": "No; solute permeability and redistribution must also be considered.",
+          "explanation": "A permeating solute can alter the effective osmotic gradient, so equal initial osmolarity does not guarantee stable cell volume."
+        },
+        {
+          "text": "Yes, provided diffusion uses no ATP.",
+          "explanation": "Whether ATP is used does not determine tonicity; passive solute entry can still alter water balance."
+        }
+      ]
     }
   ]
 }

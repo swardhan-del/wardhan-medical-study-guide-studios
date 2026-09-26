@@ -2012,6 +2012,102 @@
       ],
       "answer": 0,
       "heading": "Knowledge Check"
+    },
+    {
+      "id": "physiology-membrane-foundations-knowledge-1",
+      "topic": "physiology-membrane-foundations",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "subject": "physiology",
+      "href": "/library/physiology-membrane-foundations#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "What does an intracellular recording of −70 mV mean when the extracellular electrode is the reference?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The inside is 70 mV more negative than the outside.",
+          "explanation": "Membrane voltage is defined here as inside minus outside, so a negative value places the inside below the reference."
+        },
+        {
+          "text": "Every resting human cell must have exactly this voltage.",
+          "explanation": "Resting voltages vary by cell type and conditions; −70 mV is an illustrative neuronal value."
+        },
+        {
+          "text": "The potassium concentration inside is −70 mmol/L.",
+          "explanation": "Voltage is measured in millivolts and is not an ion concentration; concentrations cannot be negative."
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-enzyme-foundations-knowledge-1",
+      "topic": "biochemistry-enzyme-foundations",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "subject": "biochemistry",
+      "href": "/library/biochemistry-enzyme-foundations#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "An enzyme is added to a reversible reaction without changing temperature or starting composition. What does catalysis change?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "The equilibrium constant, favouring more product.",
+          "explanation": "Catalysis changes the route and speed of reaction, not the thermodynamic equilibrium constant."
+        },
+        {
+          "text": "The rate at which equilibrium is approached.",
+          "explanation": "Lowering activation barriers speeds forward and reverse reactions, so equilibrium is reached sooner without being shifted."
+        },
+        {
+          "text": "The overall free-energy difference between reactants and products.",
+          "explanation": "The free-energy difference is a thermodynamic property of the states, not of the catalytic pathway."
+        }
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations-knowledge-1",
+      "topic": "genetics-genome-foundations",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "subject": "genetics",
+      "href": "/library/genetics-genome-foundations#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "Which process makes RNA using a DNA template?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Replication",
+          "explanation": "Replication copies DNA into DNA; it is distinct from production of an RNA transcript."
+        },
+        {
+          "text": "Translation",
+          "explanation": "Translation uses an mRNA sequence to build a polypeptide at a ribosome."
+        },
+        {
+          "text": "Transcription",
+          "explanation": "Transcription makes an RNA molecule using one DNA strand as the template."
+        }
+      ]
+    },
+    {
+      "id": "biophysics-membrane-foundations-knowledge-1",
+      "topic": "biophysics-membrane-foundations",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "subject": "biophysics",
+      "href": "/library/biophysics-membrane-foundations#studio-practice",
+      "heading": "Knowledge Check",
+      "prompt": "For a neutral solute with rate = D × A × Δc / L, only barrier thickness L doubles. What happens to the steady transfer rate?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "It halves.",
+          "explanation": "Thickness is in the denominator; doubling it halves the rate with D, area and concentration difference fixed."
+        },
+        {
+          "text": "It doubles.",
+          "explanation": "That would follow from doubling area or concentration difference, not thickness."
+        },
+        {
+          "text": "It stays the same.",
+          "explanation": "The diffusion path is longer, so unchanged area alone cannot preserve the rate under this model."
+        }
+      ]
     }
   ]
 }

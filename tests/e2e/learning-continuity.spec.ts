@@ -106,8 +106,9 @@ test("ABG interpretation and renal experiment writing are restored", async ({
   page,
 }) => {
   await page.goto("/practice/physiology?case=2#abg");
-  await page.getByLabel("1. Describe the pH").selectOption("Acidemia");
-  await page
+  const abg = page.getByRole("region", { name: "ABG interpretation exercise" });
+  await abg.getByLabel("1. Describe the pH").selectOption("Acidemia");
+  await abg
     .getByLabel("2. Explain the pattern")
     .selectOption("Metabolic acidosis plus respiratory acidosis");
   await page.getByRole("button", { name: "Check interpretation" }).click();
@@ -117,7 +118,7 @@ test("ABG interpretation and renal experiment writing are restored", async ({
       "Efferent resistance raises upstream pressure but reduces circuit flow.",
     );
   await page.reload();
-  await expect(page.getByLabel("2. Explain the pattern")).toHaveValue(
+  await expect(abg.getByLabel("2. Explain the pattern")).toHaveValue(
     "Metabolic acidosis plus respiratory acidosis",
   );
   await expect(

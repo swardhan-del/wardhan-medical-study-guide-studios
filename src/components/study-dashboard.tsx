@@ -184,7 +184,7 @@ export function StudyDashboard() {
         {confirm && (
           <div className="study-notice">
             <p>
-              Clear all lesson, quiz, written-answer, oral and planner progress from this
+              Clear all lesson, resume, saved-summary, quiz, written-answer, oral and planner progress from this
               browser?
             </p>
             <button

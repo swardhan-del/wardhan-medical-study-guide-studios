@@ -1,4 +1,6 @@
 import { Suspense } from "react";
+import { StructuredData } from "@/components/structured-data";
+import { websiteGraph } from "@/lib/structured-data";
 import { LearningAnalytics } from "@/components/learning-analytics";
 import type { Metadata, Viewport } from "next";
 import { SiteShell } from "@/components/site-shell";
@@ -58,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body>
+        <StructuredData data={websiteGraph(getSiteUrl())} />
         <SiteShell>{children}</SiteShell>
         <Suspense fallback={null}><LearningAnalytics /></Suspense>
       </body>

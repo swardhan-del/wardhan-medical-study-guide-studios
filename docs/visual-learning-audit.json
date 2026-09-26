@@ -1,0 +1,3249 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-09-26",
+  "baseCommit": "e86352ac8a5c90869abe5b474c1e550f779bd843",
+  "scope": "Every public catalogue record after integrating Phase Four and Five, including the four new foundation lessons. Drawing exercises are learning activities, not published source images.",
+  "records": [
+    {
+      "id": "anatomy-abdomen",
+      "route": "/subjects/anatomy/abdomen",
+      "title": "Abdomen",
+      "kind": "Interactive topic lessons",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "abdominal-regions"
+      ],
+      "rationale": "The visual supports this specific learning task: Study abdomen through explanations, visual teaching material and recall practice."
+    },
+    {
+      "id": "abdominal-lymph-autonomics",
+      "route": "/library/abdominal-lymph-autonomics",
+      "title": "Abdominal lymphatics and autonomic pathways",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Use separate arrows for lymph drainage, sympathetic efferents and parasympathetic efferents around a schematic gut tube. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "abdominal-surface-map",
+      "route": "/library/abdominal-surface-map",
+      "title": "Abdominal regions and sectional orientation",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "abdominal-regions"
+      ],
+      "rationale": "The visual supports this specific learning task: Start by locating the vertebral body posteriorly and the anterior abdominal wall opposite it."
+    },
+    {
+      "id": "abdominal-wall-layers",
+      "route": "/library/abdominal-wall-layers",
+      "title": "Abdominal wall layers and rectus sheath",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw two wall sections, one between the costal margin and arcuate line and one below the arcuate line. Label the persistent deep layers. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "lung-roots-bronchi",
+      "route": "/library/lung-roots-bronchi",
+      "title": "Airway and root relationships",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw right and left roots with pulmonary artery-to-bronchus relationships and put phrenic anterior and vagus posterior to each root. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "anatomy-foundations",
+      "route": "/library/anatomy-foundations",
+      "title": "Anatomy Foundations: Position, Planes and Organisation",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "AnatomyFoundationsVisuals"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Describe the body precisely, interpret a section in the correct plane, distinguish body compartments from serous spaces, and explain how tissues combine to form organs."
+    },
+    {
+      "id": "ankle-foot-arches",
+      "route": "/library/ankle-foot-arches",
+      "title": "Ankle, tarsal tunnel and foot arches",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw talocrural and subtalar joints separately with their principal movement arrows, then mark the medial malleolus and tarsal tunnel. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "arm-elbow",
+      "route": "/library/arm-elbow",
+      "title": "Arm compartments and elbow relationships",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a humerus with radial groove posteriorly and medial epicondyle distally; map radial and ulnar nerve courses separately. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "craniovertebral-joints",
+      "route": "/library/craniovertebral-joints",
+      "title": "Atlas, axis and craniovertebral movement",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the atlas ring, dens, transverse ligament and spinal cord, then add separate nodding and rotation arrows. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "axilla-scapular-spaces",
+      "route": "/library/axilla-scapular-spaces",
+      "title": "Axilla, axillary artery and scapular spaces",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw teres minor, teres major and long head of triceps, then label the three spaces and their distinct contents. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "back-muscle-layers",
+      "route": "/library/back-muscle-layers",
+      "title": "Back muscle layers and segmental innervation",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw superficial trapezius and latissimus over a deeper erector-spinae layer and assign their distinct nerve sources. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "basal-ganglia-diencephalon",
+      "route": "/library/basal-ganglia-diencephalon",
+      "title": "Basal ganglia, internal capsule and diencephalon",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw an axial deep-brain section with caudate, lentiform nucleus and thalamus, then insert the V-shaped internal capsule between them. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "bladder-urethrae",
+      "route": "/library/bladder-urethrae",
+      "title": "Bladder, trigone and urethral differences",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Sketch a trigone inside a bladder and draw separate male and female urethral routes below it. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "bones-and-connections",
+      "route": "/library/bones-and-connections",
+      "title": "Bone structure and connections between bones",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a suture, a synchondrosis, a symphysis and a synovial joint, highlighting what lies between the bones. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "limbs-plexus-and-joints",
+      "route": "/library/limbs-plexus-and-joints",
+      "title": "Brachial plexus from roots to terminal nerves",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "brachial-plexus-map"
+      ],
+      "rationale": "The visual supports this specific learning task: Roots combine into trunks, split into anterior and posterior divisions, and recombine into cords."
+    },
+    {
+      "id": "neural-tube-development",
+      "route": "/library/neural-tube-development",
+      "title": "Brain vesicles, neural tube and spinal development",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw three primary then five secondary vesicles, linking each to its adult region and ventricular cavity. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "brainstem-localization",
+      "route": "/library/brainstem-localization",
+      "title": "Brainstem landmarks and crossed findings",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a cranial nerve exiting one side of brainstem beside a descending tract that crosses farther caudally. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "cecum-appendix-colon",
+      "route": "/library/cecum-appendix-colon",
+      "title": "Cecum, appendix and colon",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Outline the colon, mark the cecum, and show two possible appendiceal tip positions sharing one base. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "abdominal-arterial-territories",
+      "route": "/library/abdominal-arterial-territories",
+      "title": "Celiac, superior mesenteric and inferior mesenteric territories",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "gut-arteries"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: The three unpaired arteries organize gut territories, but anastomoses bridge their borders."
+    },
+    {
+      "id": "cerebellum-connections",
+      "route": "/library/cerebellum-connections",
+      "title": "Cerebellum, peduncles and fourth ventricle",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw cerebellum behind the pons and medulla, insert the fourth ventricle, and label all three peduncles. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "cerebral-blood-supply",
+      "route": "/library/cerebral-blood-supply",
+      "title": "Cerebral arteries, territories and collateral routes",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the arterial circle, label the communicating arteries, and place ACA, MCA and PCA territories on separate hemisphere outlines. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "cervical-fascia-sympathetic",
+      "route": "/library/cervical-fascia-sympathetic",
+      "title": "Cervical fascia, carotid sheath and sympathetic trunk",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a transverse neck section with carotid sheath contents and a separately labelled sympathetic trunk posterior to it. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "heart-chambers-surfaces",
+      "route": "/library/heart-chambers-surfaces",
+      "title": "Chambers and internal landmarks",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the heart in anterior and posterior views, assigning right ventricle to the anterior surface and left atrium to the base. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "shoulder-girdle-joints",
+      "route": "/library/shoulder-girdle-joints",
+      "title": "Clavicle, scapula and shoulder girdle joints",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw sternum, clavicle and scapula as a chain, marking the two true joints and the functional scapulothoracic surface. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "cardiac-conduction-autonomics",
+      "route": "/library/cardiac-conduction-autonomics",
+      "title": "Conduction and autonomic modulation",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the conduction sequence on four chambers, marking the AV bundle's passage through the insulating skeleton. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "coronary-circulation",
+      "route": "/library/coronary-circulation",
+      "title": "Coronary arteries and venous return",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw coronary grooves with LAD, circumflex and RCA, then show two alternative origins of the posterior interventricular artery. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "cranial-nerve-organization",
+      "route": "/library/cranial-nerve-organization",
+      "title": "Cranial nerve nuclei and functional columns",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a simplified brainstem cross-section with medial motor and lateral sensory columns, then note the long trigeminal sensory extent. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "cranial-parasympathetics",
+      "route": "/library/cranial-parasympathetics",
+      "title": "Cranial parasympathetic ganglia",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Make a four-row map with cranial nerve source, ganglion, carrier nerve and gland or smooth-muscle target. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "cubital-forearm",
+      "route": "/library/cubital-forearm",
+      "title": "Cubital fossa and forearm compartments",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the cubital fossa from superficial to deep, then list the two major ulnar-supplied anterior forearm exceptions. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "face-palate-sense-development",
+      "route": "/library/face-palate-sense-development",
+      "title": "Development of face, palate and special senses",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw lens placode opposite optic cup, then add a separate palate diagram marking primary and secondary palate fusion. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "urinary-development",
+      "route": "/library/urinary-development",
+      "title": "Development of kidneys, bladder and urethra",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "renal-development"
+      ],
+      "rationale": "The visual supports this specific learning task: Permanent kidney development requires reciprocal interaction between ureteric bud and metanephric mesenchyme."
+    },
+    {
+      "id": "diaphragm-openings",
+      "route": "/library/diaphragm-openings",
+      "title": "Diaphragm structure and sensation",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "diaphragm-openings"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: The diaphragm combines a central tendon with peripheral muscle attached to sternum, ribs and lumbar structures."
+    },
+    {
+      "id": "duodenum-relations",
+      "route": "/library/duodenum-relations",
+      "title": "Duodenum and retroperitoneal relationships",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the four duodenal parts around the pancreatic head and show the mesenteric vessels crossing the third part. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "venous-sinuses",
+      "route": "/library/venous-sinuses",
+      "title": "Dural venous sinuses and cavernous sinus relations",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a cavernous-sinus cross-section with lateral-wall nerves stacked apart from carotid artery and VI. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "limb-development",
+      "route": "/library/limb-development",
+      "title": "Early patterning and limb development",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a limb bud with proximal-distal, anterior-posterior and dorsal-ventral axes, placing AER distally and ZPA posteriorly. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "anatomy-embryology",
+      "route": "/subjects/anatomy/embryology",
+      "title": "Embryology",
+      "kind": "Interactive topic lessons",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "renal-development"
+      ],
+      "rationale": "The visual supports this specific learning task: Study embryology through explanations, visual teaching material and recall practice."
+    },
+    {
+      "id": "erectile-anatomy",
+      "route": "/library/erectile-anatomy",
+      "title": "Erectile tissues and external genital anatomy",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a transverse penile section and identify the paired cavernosa, single spongiosum and urethral lumen. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "gonadal-descent",
+      "route": "/library/gonadal-descent",
+      "title": "External genital development and gonadal descent",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a descending testis with the processus vaginalis, then cross out the normally closed proximal channel while retaining the distal sac. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "ear-anatomy",
+      "route": "/library/ear-anatomy",
+      "title": "External, middle and inner ear",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw an external-middle-inner ear sequence, label all three ossicles and add the auditory tube as a branch to the nasopharynx. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "facial-nerve-course",
+      "route": "/library/facial-nerve-course",
+      "title": "Facial nerve course and branch functions",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw facial canal branches in order before the stylomastoid exit and put the five facial motor branches after that exit. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "femoral-triangle-canal",
+      "route": "/library/femoral-triangle-canal",
+      "title": "Femoral triangle, sheath and adductor canal",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the femoral sheath around artery, vein and canal, leaving the nerve outside, then trace the saphenous nerve leaving the adductor canal. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "fetal-circulation-transition",
+      "route": "/library/fetal-circulation-transition",
+      "title": "Fetal shunts and adult remnants",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "fetal-shunts"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: The placenta provides exchange, while fetal shunts redistribute blood around organs with different prenatal roles."
+    },
+    {
+      "id": "foregut-development",
+      "route": "/library/foregut-development",
+      "title": "Foregut rotation and organ development",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw dorsal and ventral pancreatic buds before and after rotation; distinguish the two contributions with labels or hatch patterns. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "biliary-pathways",
+      "route": "/library/biliary-pathways",
+      "title": "Gallbladder and extrahepatic biliary pathways",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "biliary-route"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: The right and left hepatic ducts form the common hepatic duct."
+    },
+    {
+      "id": "rotator-cuff-shoulder",
+      "route": "/library/rotator-cuff-shoulder",
+      "title": "Glenohumeral joint and rotator cuff",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw humeral head and glenoid, placing the four cuff tendons around the joint and teres major outside the cuff group. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "lower-cranial-nerves",
+      "route": "/library/lower-cranial-nerves",
+      "title": "Glossopharyngeal, vagus, accessory and hypoglossal nerves",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw jugular foramen beside hypoglossal canal and attach one motor test to each of IX, X, XI and XII. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "gluteal-region",
+      "route": "/library/gluteal-region",
+      "title": "Gluteal region and the piriformis landmark",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw single-leg stance on the right, label right abductors and show the unsupported left pelvis dropping if their action fails. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "gonadal-duct-development",
+      "route": "/library/gonadal-duct-development",
+      "title": "Gonadal differentiation and genital ducts",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw separate mesonephric and paramesonephric ducts, with testosterone and AMH arrows pointing to their distinct targets. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "head-neck-vessels-lymph",
+      "route": "/library/head-neck-vessels-lymph",
+      "title": "Head and neck arteries, veins and lymphatics",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw common carotid bifurcation, several external carotid branches and the unbranched cervical internal carotid; add the deep cervical node chain separately. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "heart-looping-septation",
+      "route": "/library/heart-looping-septation",
+      "title": "Heart tube and partitioning",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a straight tube becoming a loop, then add separate septation arrows rather than treating looping as partition formation. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "hip-joint-stability",
+      "route": "/library/hip-joint-stability",
+      "title": "Hip joint stability and femoral head supply",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw femoral head and neck inside the capsule, with retinacular vessels ascending along the neck toward the head. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "inguinal-canal-relations",
+      "route": "/library/inguinal-canal-relations",
+      "title": "Inguinal canal and hernia relationships",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the inferior epigastric vessels and inguinal ligament first, then add the three hernia routes with labelled arrows. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "intercostal-neurovascular-plane",
+      "route": "/library/intercostal-neurovascular-plane",
+      "title": "Intercostal muscles and supply",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw three intercostal muscle layers and label VAN in the plane between the deepest two, adjacent to the rib's inferior border. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "spinal-discs-ligaments",
+      "route": "/library/spinal-discs-ligaments",
+      "title": "Intervertebral discs and spinal ligaments",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw an L4-L5 disc with both exiting L4 and traversing L5 roots and mark two different herniation positions. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "hand-intrinsics",
+      "route": "/library/hand-intrinsics",
+      "title": "Intrinsic hand muscles and functional nerve tests",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a hand with the middle-finger axis, add abduction/adduction arrows and label median versus ulnar intrinsic groups. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "ischioanal-pudendal",
+      "route": "/library/ischioanal-pudendal",
+      "title": "Ischioanal fossa, pudendal canal and anal region",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a coronal anal-canal section with fat-filled fossae on both sides and mark the lateral pudendal canals. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "small-intestine-mesentery",
+      "route": "/library/small-intestine-mesentery",
+      "title": "Jejunum, ileum and the mesenteric root",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw one jejunal and one ileal mesenteric arcade, keeping the bowel edge and arterial root clearly labelled. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "kidney-organization",
+      "route": "/library/kidney-organization",
+      "title": "Kidney coverings, hilum and collecting system",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw one renal pyramid with cortex above it, a papilla entering a minor calyx, and arrows continuing to the ureter. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "knee-joint-mechanics",
+      "route": "/library/knee-joint-mechanics",
+      "title": "Knee ligaments, menisci and movement",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw crossed cruciates in side view and add separate anterior and posterior tibial-translation arrows with their restraining ligament. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "larynx-voice-airway",
+      "route": "/library/larynx-voice-airway",
+      "title": "Laryngeal skeleton, muscles and innervation",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the vocal folds from above in open and closed positions and label posterior cricoarytenoid as the abductor. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "leg-compartments",
+      "route": "/library/leg-compartments",
+      "title": "Leg compartments and ankle actions",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "lower-limb-compartments"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Anterior muscles chiefly dorsiflex the ankle and extend toes; lateral muscles chiefly evert through superficial fibular supply."
+    },
+    {
+      "id": "liver-segments-and-porta",
+      "route": "/library/liver-segments-and-porta",
+      "title": "Liver surfaces, porta hepatis and functional divisions",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "biliary-route"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: The porta carries portal inflow, arterial inflow and biliary outflow, with nerves and lymphatics."
+    },
+    {
+      "id": "lower-limb-vessels",
+      "route": "/library/lower-limb-vessels",
+      "title": "Lower limb arteries, veins and lymphatics",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Trace anterior tibial to dorsalis pedis and posterior tibial to plantar arteries; add both saphenous veins relative to their malleoli. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "lumbar-sacral-plexuses",
+      "route": "/library/lumbar-sacral-plexuses",
+      "title": "Lumbar and sacral plexuses across the limb",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw L2-L4 contributions to femoral and obturator nerves, then contrast them with the sciatic division into tibial and common fibular components. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "lung-lobes-surface",
+      "route": "/library/lung-lobes-surface",
+      "title": "Lung surfaces and lobes",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw anterior and posterior lung outlines, placing both oblique fissures and the right horizontal fissure, then label the lingula. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "tmj-deep-fossae",
+      "route": "/library/tmj-deep-fossae",
+      "title": "Mastication, TMJ and deep facial spaces",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Sketch a closed and open TMJ and place foramen ovale with V3 separately from foramen rotundum with V2. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "mediastinum-great-vessels",
+      "route": "/library/mediastinum-great-vessels",
+      "title": "Mediastinal compartments and vessels",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "thoracic-plane"
+      ],
+      "rationale": "The visual supports this specific learning task: The mediastinum lies between the pleural sacs and extends from inlet to diaphragm."
+    },
+    {
+      "id": "meninges-dural-folds",
+      "route": "/library/meninges-dural-folds",
+      "title": "Meninges, dural folds and intracranial spaces",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw skull, dura, arachnoid and pia, showing CSF only between arachnoid and pia and a sinus within separated dura. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "midgut-rotation",
+      "route": "/library/midgut-rotation",
+      "title": "Midgut herniation, rotation and fixation",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a fixed SMA axis and three stages of the intestinal loop, marking the observer as anterior. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "muscle-actions",
+      "route": "/library/muscle-actions",
+      "title": "Muscle architecture, actions and innervation",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Sketch a tendon crossing a joint axis and compare two positions with different perpendicular moment arms. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "anatomy-musculoskeletal",
+      "route": "/subjects/anatomy/musculoskeletal",
+      "title": "Musculoskeletal system",
+      "kind": "Study map and available lessons",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "brachial-plexus-map"
+      ],
+      "rationale": "The visual supports this specific learning task: Open the available plexus lesson and recall examples. Other regional sections are study outlines; the full guide and decks are not available here."
+    },
+    {
+      "id": "nose-sinuses",
+      "route": "/library/nose-sinuses",
+      "title": "Nasal cavity and paranasal drainage",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a lateral nasal wall with three conchae and place each drainage opening beneath the correct concha or above the superior concha. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "neck-musculoskeletal",
+      "route": "/library/neck-musculoskeletal",
+      "title": "Neck muscles and hyoid relationships",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the hyoid with muscles above and below it, separating ansa cervicalis from C1-via-XII routes. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "neck-triangles",
+      "route": "/library/neck-triangles",
+      "title": "Neck triangles and surface orientation",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw sternocleidomastoid between mandible, mastoid region and clavicle, then outline both triangles and the accessory nerve crossing. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "ocular-motor-nerves",
+      "route": "/library/ocular-motor-nerves",
+      "title": "Ocular motor nerves and lesion localization",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw an eye with an outward arrow labelled VI-lateral rectus, then list the IV muscle and the remaining III targets. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "omenta-and-lesser-sac",
+      "route": "/library/omenta-and-lesser-sac",
+      "title": "Omenta, lesser sac and epiploic foramen",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a sagittal stomach-pancreas relationship and a separate four-boundary diagram of the epiploic foramen. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "oral-cavity-palate-teeth",
+      "route": "/library/oral-cavity-palate-teeth",
+      "title": "Oral cavity, palate and teeth",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw dental arches separating vestibule from cavity proper, mark both major duct openings and label hard versus soft palate. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "orbit-anatomy",
+      "route": "/library/orbit-anatomy",
+      "title": "Orbit, eyeball and visual pathway",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the optic canal separately from the superior orbital fissure, then trace light into the eye and neural information out of it. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "ovary-uterine-tube",
+      "route": "/library/ovary-uterine-tube",
+      "title": "Ovary and uterine tube relationships",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw ovary and tube with a small open gap at the fimbrial end, then label the four tubal regions. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pancreas-relations",
+      "route": "/library/pancreas-relations",
+      "title": "Pancreas and its duct relationships",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Sketch pancreatic head, uncinate process, neck, body and tail; add the portal vein formation behind the neck. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pelvic-floor-support",
+      "route": "/library/pelvic-floor-support",
+      "title": "Pelvic diaphragm and visceral support",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a sagittal anorectal junction with a posterior puborectalis sling and a separate external sphincter ring. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pelvic-girdle-landmarks",
+      "route": "/library/pelvic-girdle-landmarks",
+      "title": "Pelvic girdle and hip bone landmarks",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw one hip bone and label acetabulum, obturator foramen, ischial spine, ischial tuberosity and ASIS. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pelvic-boundaries",
+      "route": "/library/pelvic-boundaries",
+      "title": "Pelvic inlet, outlet and walls",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw inlet, ischial-spine level and outlet as three distinct planes and label the sacrum and pubic symphysis. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pelvic-vessels-lymph",
+      "route": "/library/pelvic-vessels-lymph",
+      "title": "Pelvic vessels and lymphatic drainage",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Map pelvic wall, viscera and perineum as three supply territories and label one arterial route and one lymph route for each. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pericardium-sinuses",
+      "route": "/library/pericardium-sinuses",
+      "title": "Pericardial layers and reflections",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw serous layers around the heart and distinguish the transverse passage behind arterial trunks from the blind oblique recess behind the left atrium. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "perineal-spaces",
+      "route": "/library/perineal-spaces",
+      "title": "Perineal triangles, pouches and perineal body",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a side view with pelvic diaphragm above, perineal membrane below and superficial pouch beneath the membrane. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "peritoneal-fluid-routes",
+      "route": "/library/peritoneal-fluid-routes",
+      "title": "Peritoneal recesses and fluid routes",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Sketch the colon framing the abdomen, mark both paracolic gutters, and add pelvic pouches in two sagittal diagrams. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "peritoneal-organization",
+      "route": "/library/peritoneal-organization",
+      "title": "Peritoneum and organ position",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a wall, a double-layer mesentery and an intestinal loop. Shade only the potential cavity, leaving the bowel lumen unshaded. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pharyngeal-arch-development",
+      "route": "/library/pharyngeal-arch-development",
+      "title": "Pharyngeal arches, pouches and arch arteries",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw four pharyngeal pouches and show the third-pouch thymus-inferior-parathyroid migration separately from the fourth-pouch superior parathyroid. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pharynx-swallowing",
+      "route": "/library/pharynx-swallowing",
+      "title": "Pharynx, tonsils and swallowing",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a sagittal pharynx and mark the nasal, oral, laryngeal and esophageal routes, with arrows showing the food route during swallowing. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "thorax-nerve-relations",
+      "route": "/library/thorax-nerve-relations",
+      "title": "Phrenic, vagal and recurrent pathways",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "thorax"
+      ],
+      "rationale": "The visual supports this specific learning task: Phrenic nerves pass anterior to lung roots and supply diaphragm motor function; vagus nerves pass posteriorly and contribute to pulmonary and esophageal plexuses."
+    },
+    {
+      "id": "plantar-foot",
+      "route": "/library/plantar-foot",
+      "title": "Plantar muscles and nerve territories",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the four plantar muscle layers schematically and mark the second-toe axis for interosseous actions. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pleura-and-recesses",
+      "route": "/library/pleura-and-recesses",
+      "title": "Pleural layers and recesses",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw lung within its pleural sac and shade the costodiaphragmatic recess below the resting lung edge. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "popliteal-fossa",
+      "route": "/library/popliteal-fossa",
+      "title": "Popliteal fossa and neurovascular depth",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the fossa boundaries and stack nerve, vein and artery from superficial to deep; add common fibular nerve along the lateral edge. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "abdomen-portal-relations",
+      "route": "/library/abdomen-portal-relations",
+      "title": "Portal venous routes and systemic connections",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "portal-triad"
+      ],
+      "rationale": "The visual supports this specific learning task: Portal means blood reaches a second capillary bed before returning to the heart."
+    },
+    {
+      "id": "posterior-abdominal-wall",
+      "route": "/library/posterior-abdominal-wall",
+      "title": "Posterior abdominal wall and lumbar relations",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Place psoas on a posterior-wall sketch and mark the anterior, medial and lateral nerve exits. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "posterior-mediastinum-lymph",
+      "route": "/library/posterior-mediastinum-lymph",
+      "title": "Posterior mediastinal routes",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a posterior thoracic view with aorta on the left, azygos on the right and thoracic duct ascending between them before turning left. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "abdominal-regional-reasoning",
+      "route": "/library/abdominal-regional-reasoning",
+      "title": "Reconstruct an upper abdominal section",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a schematic axial section including vertebral body, aorta, IVC, pancreas, stomach and portal vein formation; annotate which relations require a different section level. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "rectum-anal-transition",
+      "route": "/library/rectum-anal-transition",
+      "title": "Rectum and the anal transition",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a vertical rectum-anal canal diagram with separate labels for pelvic floor, anorectal junction and pectinate line. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "anatomy-regional-anatomy",
+      "route": "/subjects/anatomy/regional-anatomy",
+      "title": "Regional anatomy",
+      "kind": "Interactive topic lessons",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "brachial-plexus-map"
+      ],
+      "rationale": "The visual supports this specific learning task: Study regional anatomy through explanations, visual teaching material and recall practice."
+    },
+    {
+      "id": "regional-lymphatics",
+      "route": "/library/regional-lymphatics",
+      "title": "Regional lymph drainage and crossing territories",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw separate routes for breast, scrotal skin and testis, each with its main regional node group. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "thoracic-development",
+      "route": "/library/thoracic-development",
+      "title": "Respiratory and diaphragmatic development",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw foregut with a ventral respiratory bud and a separate diaphragm map showing the traditional four developmental contributions. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "salivary-glands",
+      "route": "/library/salivary-glands",
+      "title": "Salivary glands and their nerve routes",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw parallel parotid and submandibular pathways with one clearly marked ganglionic synapse in each. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pelvic-foramina-nerves",
+      "route": "/library/pelvic-foramina-nerves",
+      "title": "Sciatic foramina and pelvic nerve routes",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw both sciatic foramina and trace the pudendal route with two crossings rather than one. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "bronchopulmonary-segments",
+      "route": "/library/bronchopulmonary-segments",
+      "title": "Segments, blood and lymph",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw two adjacent wedge-shaped segments with central bronchus-artery pairs and a pulmonary vein along their shared boundary. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "skull-scalp-face",
+      "route": "/library/skull-scalp-face",
+      "title": "Skull foramina, scalp and facial layers",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the five scalp layers beside a skull-base map marking rotundum, ovale and stylomastoid foramen with their different nerves. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "male-reproductive-ducts",
+      "route": "/library/male-reproductive-ducts",
+      "title": "Sperm pathway, seminal vesicles and prostate",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the sperm pathway as a continuous line and attach the seminal-vesicle duct as a side branch. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "spinal-cord-tracts",
+      "route": "/library/spinal-cord-tracts",
+      "title": "Spinal cord, meninges and long pathways",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw three parallel pathways and mark their different crossing levels; label the adult conus and the cauda equina separately. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "spleen-relations",
+      "route": "/library/spleen-relations",
+      "title": "Spleen, hilum and splenic ligaments",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw stomach, spleen, left kidney and pancreatic tail. Connect the two named ligaments and label what each carries. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "stomach-relations",
+      "route": "/library/stomach-relations",
+      "title": "Stomach position, relations and neurovascular supply",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the stomach with both curvatures, label the paired arterial arcades, and place the lesser sac behind it. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "synovial-joint-design",
+      "route": "/library/synovial-joint-design",
+      "title": "Synovial joint design and movement",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a joint section with cartilage, fibrous capsule and synovial lining; leave cartilage free of the synovial lining. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "testis-spermatic-cord",
+      "route": "/library/testis-spermatic-cord",
+      "title": "Testis, scrotum and spermatic cord",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw a descended testis with an arterial and lymphatic line returning toward the abdomen, then add a separate scrotal-skin lymph route. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "thigh-compartments",
+      "route": "/library/thigh-compartments",
+      "title": "Thigh compartments and muscle actions",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "lower-limb-compartments"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Compartment rules connect action and innervation: anterior thigh largely uses femoral supply, medial thigh obturator, and posterior thigh sciatic divisions."
+    },
+    {
+      "id": "thoracic-cage-landmarks",
+      "route": "/library/thoracic-cage-landmarks",
+      "title": "Thoracic cage and landmarks",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "thoracic-plane"
+      ],
+      "rationale": "The visual supports this specific learning task: The sternal angle is the manubriosternal junction and provides a practical starting point for rib counting."
+    },
+    {
+      "id": "anatomy-thorax",
+      "route": "/subjects/anatomy/thorax",
+      "title": "Thorax",
+      "kind": "Interactive topic lessons",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure",
+        "ThoraxMap",
+        "AirwayPressureDiagram"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "thoracic-plane"
+      ],
+      "rationale": "The visual supports this specific learning task: Study thorax through explanations, visual teaching material and recall practice."
+    },
+    {
+      "id": "head-neck-tongue-map",
+      "route": "/library/head-neck-tongue-map",
+      "title": "Tongue structure, function and nerve map",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "tongue-innervation"
+      ],
+      "rationale": "The visual supports this specific learning task: Separate modality from region."
+    },
+    {
+      "id": "trigeminal-pathways",
+      "route": "/library/trigeminal-pathways",
+      "title": "Trigeminal divisions and sensory territories",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Map V1, V2 and V3 skin territories and add a separate V1-to-brainstem-to-VII corneal-reflex circuit. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "upper-limb-vessels",
+      "route": "/library/upper-limb-vessels",
+      "title": "Upper limb vessels and lymphatic routes",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Trace the arterial name changes from first rib to palm, then draw cephalic and basilic veins in a different line style. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "pelvis-urinary-route",
+      "route": "/library/pelvis-urinary-route",
+      "title": "Ureters and the route into the bladder",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "renal-development"
+      ],
+      "rationale": "The visual supports this specific learning task: Trace the ureter continuously from renal pelvis to bladder rather than memorizing three isolated narrowing points."
+    },
+    {
+      "id": "uterus-support-vessels",
+      "route": "/library/uterus-support-vessels",
+      "title": "Uterus, supports and uterine vessel relations",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw uterus, cervix and vagina with separate axes for version and flexion, then add the ureter beneath the uterine artery. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "vagina-pelvic-relations",
+      "route": "/library/vagina-pelvic-relations",
+      "title": "Vagina and its pelvic relations",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the cervix projecting into the vagina and label each fornix, bladder anteriorly and rectum posteriorly. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "heart-valves-skeleton",
+      "route": "/library/heart-valves-skeleton",
+      "title": "Valves and fibrous support",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw one AV valve with papillary-chordal support beside a semilunar valve without chordae, and add pressure-direction arrows. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "ventricles-csf",
+      "route": "/library/ventricles-csf",
+      "title": "Ventricles, CSF flow and internal landmarks",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "csf-route"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: CSF flows from lateral ventricles through interventricular foramina to the third ventricle, then through the aqueduct to the fourth."
+    },
+    {
+      "id": "axial-skeleton-development",
+      "route": "/library/axial-skeleton-development",
+      "title": "Vertebral and skull development",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw two adjacent sclerotomes resegmenting around an intervertebral disc, labeling annulus and nucleus origins separately. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "vertebral-regions",
+      "route": "/library/vertebral-regions",
+      "title": "Vertebral column and regional vertebrae",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Compare cervical, thoracic and lumbar vertebrae using body, foramen and articular features, then label C1 and C2 as exceptions. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "wrist-carpal-tunnel",
+      "route": "/library/wrist-carpal-tunnel",
+      "title": "Wrist, carpal tunnel and anatomical snuffbox",
+      "kind": "Study lesson",
+      "action": "retain-drawing-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw the flexor retinaculum over the tunnel, count nine tendons, and place the ulnar canal separately on its medial side. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+    },
+    {
+      "id": "nitrogen-metabolism",
+      "route": "/library/nitrogen-metabolism",
+      "title": "Amino-acid nitrogen and urea",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "nitrogen-metabolism-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Separate the fate of amino nitrogen from the use of the remaining carbon skeleton."
+    },
+    {
+      "id": "enzyme-kinetics",
+      "route": "/library/enzyme-kinetics",
+      "title": "Enzyme catalysis and inhibition",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "enzyme-inhibition-models"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Separate reaction rate from equilibrium and compare substrate competition with loss of catalytic capacity."
+    },
+    {
+      "id": "lipid-metabolism",
+      "route": "/library/lipid-metabolism",
+      "title": "Fatty-acid synthesis and fuel storage",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Locate fatty-acid synthesis and distinguish its reducing power and purpose from fuel oxidation. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "glycolysis",
+      "route": "/library/glycolysis",
+      "title": "Glycolysis and lactate recycling",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "glycolysis-lactate"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Track carbon, ATP and reducing equivalents through the conversion of glucose to pyruvate."
+    },
+    {
+      "id": "ketone-production-and-use",
+      "route": "/library/ketone-production-and-use",
+      "title": "Ketone bodies: connect liver production with tissue use",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "ketone-tissues"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow fasting fuel flow and explain why the liver produces ketone bodies that other tissues can oxidise."
+    },
+    {
+      "id": "lipoprotein-routes",
+      "route": "/library/lipoprotein-routes",
+      "title": "Lipoproteins: follow the cargo and the particle",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "lipoprotein-origins"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Distinguish dietary and hepatic lipid transport, triglyceride removal and receptor-mediated cholesterol delivery."
+    },
+    {
+      "id": "protein-structure",
+      "route": "/library/protein-structure",
+      "title": "Protein structure and collagen",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Relate amino-acid properties, folding and extracellular assembly to protein function. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "pdh-tca",
+      "route": "/library/pdh-tca",
+      "title": "Pyruvate dehydrogenase and the TCA cycle",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "TeachingDiagram"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow pyruvate into mitochondrial carbon oxidation while distinguishing carbon flux from electron transport."
+    },
+    {
+      "id": "biophysics-dosimetry",
+      "route": "/library/biophysics-dosimetry",
+      "title": "Absorbed dose, biological weighting and protection",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "radiation-quantities"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Keep activity, deposited energy and protection quantities separate."
+    },
+    {
+      "id": "biophysics-absorption-scattering",
+      "route": "/library/biophysics-absorption-scattering",
+      "title": "Absorption, scattering and optical spectroscopy",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Separate loss mechanisms and use a spectrum to infer molecular information. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-action-potentials",
+      "route": "/library/biophysics-action-potentials",
+      "title": "Action potentials and impulse propagation",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Separate regenerative signalling from passive current spread. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-atomic-models",
+      "route": "/library/biophysics-atomic-models",
+      "title": "Atomic models, energy levels and uncertainty",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Use historical models to identify what each experiment explains and what it cannot. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-signals",
+      "route": "/library/biophysics-signals",
+      "title": "Biological signals, filtering and digitisation",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Trace a physiological signal from a transducer to a sampled record. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-lab",
+      "route": "/practice/biophysics",
+      "title": "Biophysics: predict and calculate",
+      "kind": "Practice",
+      "action": "standardise-or-reuse",
+      "components": [
+        "BiophysicsLab"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Explore six coded models for lenses, attenuation, membrane charging, diffusion, flow and ultrasound."
+    },
+    {
+      "id": "biophysics-thermal-radiation",
+      "route": "/library/biophysics-thermal-radiation",
+      "title": "Blackbody radiation and thermal imaging",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Relate a temperature distribution to emitted power and spectral shape. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-molecular-interactions",
+      "route": "/library/biophysics-molecular-interactions",
+      "title": "Bonds, interaction energies and scanning probes",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect the shape of an interaction potential to molecular structure and measurement. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-respiratory-physics",
+      "route": "/library/biophysics-respiratory-physics",
+      "title": "Breathing mechanics, gas exchange and physical examination",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "airway-dead-space"
+      ],
+      "rationale": "The visual supports this specific learning task: Use pressure differences and volume definitions to explain quiet breathing."
+    },
+    {
+      "id": "biophysics-circulation-ecg",
+      "route": "/library/biophysics-circulation-ecg",
+      "title": "Circulation, cardiac work and the ECG",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "ventricular-pressure-volume"
+      ],
+      "rationale": "The visual supports this specific learning task: Connect pressure, flow and electrical recordings without treating them as the same signal."
+    },
+    {
+      "id": "biophysics-fluid-flow",
+      "route": "/library/biophysics-fluid-flow",
+      "title": "Continuity, viscosity and resistance to flow",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "flow-scaling"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Predict flow changes while stating when ideal fluid and tube models apply."
+    },
+    {
+      "id": "biophysics-decay-interactions",
+      "route": "/library/biophysics-decay-interactions",
+      "title": "Decay law and radiation interactions with matter",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "attenuation-layers"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Calculate activity changes and distinguish how different radiations deposit energy."
+    },
+    {
+      "id": "biophysics-radiation-detection",
+      "route": "/library/biophysics-radiation-detection",
+      "title": "Detectors, count statistics and pulse spectra",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Follow a radiation event through conversion, amplification and discrimination. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-diffusion-osmosis",
+      "route": "/library/biophysics-diffusion-osmosis",
+      "title": "Diffusion, osmosis and heat transport",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "diffusion-osmosis"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Connect gradients, random motion and the time needed to cross a distance."
+    },
+    {
+      "id": "biophysics-entropy-potentials",
+      "route": "/library/biophysics-entropy-potentials",
+      "title": "Entropy, free energy and equilibrium",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Choose the correct thermodynamic criterion for the constraints of a biological process. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-luminescence",
+      "route": "/library/biophysics-luminescence",
+      "title": "Fluorescence, phosphorescence and molecular probes",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Follow excitation and relaxation pathways to interpret luminescence measurements. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-nuclear-imaging",
+      "route": "/library/biophysics-nuclear-imaging",
+      "title": "Gamma cameras, SPECT, PET and radiotherapy geometry",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "biophysics-nuclear-imaging-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Compare information pathways in nuclear imaging and explain spatial dose targeting."
+    },
+    {
+      "id": "biophysics-gases-statistics",
+      "route": "/library/biophysics-gases-statistics",
+      "title": "Gas laws, Boltzmann statistics and thermal energy",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Move between molecular motion, bulk pressure and equilibrium populations. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-wave-optics",
+      "route": "/library/biophysics-wave-optics",
+      "title": "Interference, diffraction and optical resolution",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Use phase, wavelength and aperture to explain what an optical instrument can distinguish. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-image-formation",
+      "route": "/library/biophysics-image-formation",
+      "title": "Lenses, magnification and the microscope",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "TeachingDiagram"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Construct real and virtual images and separate magnification from useful optical detail."
+    },
+    {
+      "id": "biophysics-resting-potential",
+      "route": "/library/biophysics-resting-potential",
+      "title": "Membrane potentials, permeability and the RC model",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "transport-energy"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Connect ion gradients to voltage and explain passive charging and spread."
+    },
+    {
+      "id": "biophysics-molecular-motors",
+      "route": "/library/biophysics-molecular-motors",
+      "title": "Muscle mechanics and molecular motors",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Relate ATP-driven cycles to force, movement and external work. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-nuclear-structure",
+      "route": "/library/biophysics-nuclear-structure",
+      "title": "Nuclei, isotopes and radioactive transformations",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "radiation-quantities"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Identify nuclear changes from conservation laws rather than memorising radiation names."
+    },
+    {
+      "id": "biophysics-light-duality",
+      "route": "/library/biophysics-light-duality",
+      "title": "Photons, matter waves and electron microscopy",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect interference and quantised energy transfer without confusing their experimental evidence. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-absorbance",
+      "route": "/library/biophysics-practical-absorbance",
+      "title": "Practical: blanks, dilution and absorbance",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Convert transmission into absorbance and design a defensible concentration measurement. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-diffusion",
+      "route": "/library/biophysics-practical-diffusion",
+      "title": "Practical: diffusion slopes and uncertainty",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Calculate a diffusion scale and explain why a straight-line plot needs a model. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-biosignals",
+      "route": "/library/biophysics-practical-biosignals",
+      "title": "Practical: ECG calibration and pulse timing",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Convert a recorded trace into voltage and time, and distinguish pulse-generator behaviours. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-coulter",
+      "route": "/library/biophysics-practical-coulter",
+      "title": "Practical: electrical cell counting",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect an impedance pulse to particle volume and identify coincidence errors. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-eye",
+      "route": "/library/biophysics-practical-eye",
+      "title": "Practical: eye optics and visual acuity",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Relate refractive error and angular resolution to the eye's optical system. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-amplifiers",
+      "route": "/library/biophysics-practical-amplifiers",
+      "title": "Practical: gain, decibels and bandwidth",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Use gain ratios correctly and recognise when amplification loses information. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-attenuation",
+      "route": "/library/biophysics-practical-attenuation",
+      "title": "Practical: half-value layers and shielding curves",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "attenuation-layers"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Translate exponential attenuation into thickness while recognising beam assumptions."
+    },
+    {
+      "id": "biophysics-practical-lenses",
+      "route": "/library/biophysics-practical-lenses",
+      "title": "Practical: lens power and microscope calibration",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Solve image and calibration problems while keeping units and sign conventions visible. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-polarimetry",
+      "route": "/library/biophysics-practical-polarimetry",
+      "title": "Practical: optical rotation and chirality",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Distinguish optical rotation from absorption and use a polarimetric calibration. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-oscillations",
+      "route": "/library/biophysics-practical-oscillations",
+      "title": "Practical: oscillations, damping and resonance",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Predict frequency changes and interpret a driven oscillator's response. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-refractometry",
+      "route": "/library/biophysics-practical-refractometry",
+      "title": "Practical: refractive index and concentration",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Read a refractometer result as a calibrated, condition-dependent measurement. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-impedance",
+      "route": "/library/biophysics-practical-impedance",
+      "title": "Practical: resistance, capacitance and biological impedance",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Explain why tissue response depends on signal frequency and electrode arrangement. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-spectra",
+      "route": "/library/biophysics-practical-spectra",
+      "title": "Practical: scintillation spectra and background",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Distinguish pulse height, energy calibration and count rate. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-practical-audiometry",
+      "route": "/library/biophysics-practical-audiometry",
+      "title": "Practical: sound levels and audiograms",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Distinguish physical sound level from a frequency-dependent hearing threshold. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-ct-imaging",
+      "route": "/library/biophysics-ct-imaging",
+      "title": "Projection radiography, CT reconstruction and windowing",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "biophysics-nuclear-imaging-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Understand why a projection is ambiguous and how CT estimates a cross-section."
+    },
+    {
+      "id": "biophysics-radiation-optics",
+      "route": "/library/biophysics-radiation-optics",
+      "title": "Radiation, units and geometric optics",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Distinguish waves from particles, quantify a beam and predict reflection or refraction. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-condensed-matter",
+      "route": "/library/biophysics-condensed-matter",
+      "title": "Solids, liquids, liquid crystals and energy bands",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Explain material properties from molecular order and accessible electronic states. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-magnetic-resonance",
+      "route": "/library/biophysics-magnetic-resonance",
+      "title": "Spin, NMR, ESR and MRI contrast",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect resonance and relaxation to spatially encoded images. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-lasers",
+      "route": "/library/biophysics-lasers",
+      "title": "Stimulated emission and medical laser principles",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Explain how pumping and feedback produce a laser beam and why tissue response varies. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-biomechanics",
+      "route": "/library/biophysics-biomechanics",
+      "title": "Stress, strain and viscoelastic tissues",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Distinguish material stiffness from geometry and time-dependent response. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-energy-first-law",
+      "route": "/library/biophysics-energy-first-law",
+      "title": "Thermodynamic systems and the first law",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Account for energy transfers without confusing heat, work and stored energy. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-isotope-diagnostics",
+      "route": "/library/biophysics-isotope-diagnostics",
+      "title": "Tracers, biological clearance and effective half-life",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Choose a diagnostic tracer conceptually and distinguish physical decay from movement through the body. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-ultrasound",
+      "route": "/library/biophysics-ultrasound",
+      "title": "Ultrasound echoes, Doppler shifts and energy deposition",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Link an acoustic measurement to depth or motion while recognising its assumptions. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-sensory-biophysics",
+      "route": "/library/biophysics-sensory-biophysics",
+      "title": "Vision, hearing and sensory coding",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect stimulus energy to receptor responses and perceived intensity. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-water-biopolymers",
+      "route": "/library/biophysics-water-biopolymers",
+      "title": "Water, protein folding and polymer elasticity",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Explain how solvent and molecular flexibility shape biological material behaviour. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-structural-methods",
+      "route": "/library/biophysics-structural-methods",
+      "title": "X-ray diffraction and mass spectrometry",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Compare structural inference from diffraction with separation by mass-to-charge ratio. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "biophysics-xray-production",
+      "route": "/library/biophysics-xray-production",
+      "title": "X-ray tubes, spectra and beam quality",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Separate tube voltage, current and target material when predicting an X-ray spectrum. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "cell-signaling",
+      "route": "/library/cell-signaling",
+      "title": "Cell signaling through G proteins",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Trace the receptor, molecular switch, effector and second messenger without skipping the cell compartment. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "chromatin-access-and-topology",
+      "route": "/library/chromatin-access-and-topology",
+      "title": "Chromatin: separate access, packaging and topology",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Explain nucleosomes, chromatin accessibility and torsional stress without treating compaction as a simple on–off switch. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "dna-repair",
+      "route": "/library/dna-repair",
+      "title": "DNA lesions, mutations and repair",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "dna-repair-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Match the type of DNA damage to a repair strategy and distinguish damage from a stable sequence change."
+    },
+    {
+      "id": "dna-replication",
+      "route": "/library/dna-replication",
+      "title": "DNA replication and strand direction",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "TeachingDiagram"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow a replication fork and explain why leading and lagging strands need different synthesis patterns."
+    },
+    {
+      "id": "er-protein-quality-control",
+      "route": "/library/er-protein-quality-control",
+      "title": "ER quality control: folding, glycan checks and ERAD",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Follow a secretory protein through folding attempts, retention and degradation, and distinguish disposal from the stress response. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "rna-processing",
+      "route": "/library/rna-processing",
+      "title": "From pre-mRNA to mature messenger RNA",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "rna-processing-sequence"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Connect capping, splicing and polyadenylation to the structure and use of an RNA message."
+    },
+    {
+      "id": "pcr",
+      "route": "/library/pcr",
+      "title": "PCR, qPCR and reverse transcription",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "pcr-terms"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Distinguish amplification, real-time measurement and the conversion of RNA to DNA."
+    },
+    {
+      "id": "protein-trafficking",
+      "route": "/library/protein-trafficking",
+      "title": "Protein targeting and the secretory pathway",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "TeachingDiagram"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow a secreted protein from translation through ER quality control and Golgi sorting."
+    },
+    {
+      "id": "translation",
+      "route": "/library/translation",
+      "title": "Translation: charging, decoding and elongation",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "translation-directions"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Explain how a nucleotide message becomes a polypeptide while keeping the roles of tRNA, synthetase and ribosome distinct."
+    },
+    {
+      "id": "genetic-testing",
+      "route": "/library/genetic-testing",
+      "title": "Choosing and interpreting a genetic test",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "genetic-testing-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Match a method to the variant class and explain why a negative result has a defined scope."
+    },
+    {
+      "id": "complement",
+      "route": "/library/complement",
+      "title": "Complement pathways and their shared effectors",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "complement-outputs"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow three initiation routes toward opsonization, inflammation and terminal complex formation."
+    },
+    {
+      "id": "genetic-therapy-delivery",
+      "route": "/library/genetic-therapy-delivery",
+      "title": "Gene therapy: target, delivery and evidence",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Separate gene addition, editing and gene silencing, then decide whether an in-vivo or ex-vivo strategy can reach the relevant cells. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "hypersensitivity-mechanisms",
+      "route": "/library/hypersensitivity-mechanisms",
+      "title": "Hypersensitivity: classify the mechanism of tissue injury",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "hypersensitivity-mechanisms"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Distinguish IgE activation, antibody against fixed targets, immune complexes and T-cell responses through original comparison cases."
+    },
+    {
+      "id": "inheritance",
+      "route": "/library/inheritance",
+      "title": "Inheritance patterns, penetrance and expressivity",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "recessive-cross"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Use a pedigree as evidence while keeping inheritance pattern, disease expression and mechanism separate."
+    },
+    {
+      "id": "innate-adaptive",
+      "route": "/library/innate-adaptive",
+      "title": "Innate and adaptive immunity",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "mhc-pathways"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Compare recognition strategies and follow the connection from a tissue barrier to lymphocyte activation."
+    },
+    {
+      "id": "meiosis",
+      "route": "/library/meiosis",
+      "title": "Meiosis, nondisjunction and mosaicism",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "meiosis-divisions"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow homologs and sister chromatids through division and distinguish meiotic from postzygotic errors."
+    },
+    {
+      "id": "antigen-presentation",
+      "route": "/library/antigen-presentation",
+      "title": "MHC I, MHC II and T-cell recognition",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "mhc-pathways"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Keep the presenting cell, peptide source and recognizing T cell distinct."
+    },
+    {
+      "id": "recessive-conditional-probability",
+      "route": "/library/recessive-conditional-probability",
+      "title": "Recessive inheritance: update probability after new information",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "recessive-cross"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Use a fictional Mendelian cross to distinguish pregnancy risk from carrier probability conditioned on being unaffected."
+    },
+    {
+      "id": "vessel-histology",
+      "route": "/library/vessel-histology",
+      "title": "Arteries, veins and capillaries",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "vessel-walls"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Read vessel walls from the lumen outward and relate each layer to pressure and exchange."
+    },
+    {
+      "id": "blood-marrow",
+      "route": "/library/blood-marrow",
+      "title": "Blood cells and bone marrow",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "blood-marrow-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Read nuclear shape, cytoplasm and tissue context to distinguish circulating cells from developing marrow."
+    },
+    {
+      "id": "cartilage-bone",
+      "route": "/library/cartilage-bone",
+      "title": "Cartilage, bone and remodeling",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "cartilage-bone-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Distinguish the matrix and cell organization of cartilage from vascular, continuously remodeled bone."
+    },
+    {
+      "id": "cell-junctions",
+      "route": "/library/cell-junctions",
+      "title": "Cell junctions and surface specializations",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "junction-functions"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Separate sealing, anchoring and communication junctions, then distinguish microvilli from cilia."
+    },
+    {
+      "id": "connective-tissue",
+      "route": "/library/connective-tissue",
+      "title": "Connective tissue and extracellular matrix",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "HistologyTopicVisual"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior."
+    },
+    {
+      "id": "epithelia",
+      "route": "/library/epithelia",
+      "title": "Epithelia: layers, shape and function",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure",
+        "HistologyVisualLesson"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "cuboidal-section",
+        "squamous-section"
+      ],
+      "rationale": "The visual supports this specific learning task: Distinguish simple, stratified and pseudostratified epithelia and connect their structure to their job."
+    },
+    {
+      "id": "respiratory-histology",
+      "route": "/library/respiratory-histology",
+      "title": "From conducting airways to alveoli",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "airway-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow the changing epithelium, supporting wall and exchange surface along the respiratory tree."
+    },
+    {
+      "id": "histology-foundations-tissues",
+      "route": "/library/histology-foundations-tissues",
+      "title": "Histology Foundations: The Four Basic Tissues",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure",
+        "HistologyVisualStudy"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "cuboidal-section",
+        "squamous-section"
+      ],
+      "rationale": "The visual supports this specific learning task: Recognise epithelial, connective, muscle and nervous tissue by their architecture, relate structure to function, and justify an identification using more than one clue."
+    },
+    {
+      "id": "renal-histology",
+      "route": "/library/renal-histology",
+      "title": "Kidney cortex, medulla and tubules",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "cuboidal-section"
+      ],
+      "rationale": "The visual supports this specific learning task: Orient the section, identify a renal corpuscle, then connect tubular appearance to transport."
+    },
+    {
+      "id": "liver-pancreas",
+      "route": "/library/liver-pancreas",
+      "title": "Liver and pancreas: routes and secretions",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "liver-pancreas-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Distinguish blood flow from bile flow and separate pancreatic acini from endocrine islets."
+    },
+    {
+      "id": "brain-and-csf-barriers",
+      "route": "/library/brain-and-csf-barriers",
+      "title": "Locate the blood–brain and blood–CSF barriers",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "TeachingDiagram"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Trace two routes out of blood and identify the cell layer that forms each barrier rather than confusing support cells with the seal."
+    },
+    {
+      "id": "lymphoid-organs",
+      "route": "/library/lymphoid-organs",
+      "title": "Lymph node, spleen and thymus",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "lymphoid-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs."
+    },
+    {
+      "id": "myelin-and-glial-cells",
+      "route": "/library/myelin-and-glial-cells",
+      "title": "Myelin and glia: identify the cell before the function",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "TeachingDiagram"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Connect CNS and PNS supporting cells with internodes, conduction and the limits of routine histological identification."
+    },
+    {
+      "id": "neurulation",
+      "route": "/library/neurulation",
+      "title": "Neural tube formation and early organization",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect neural plate folding to the developing central nervous system and distinguish tube from crest. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "placenta",
+      "route": "/library/placenta",
+      "title": "Placental villi and maternal–fetal exchange",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "placenta-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow villus development and keep maternal blood distinct from fetal capillaries."
+    },
+    {
+      "id": "microscopy",
+      "route": "/library/microscopy",
+      "title": "Reading a histology section",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure",
+        "HistologyVisualLesson"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "cuboidal-section"
+      ],
+      "rationale": "The visual supports this specific learning task: Build an identification from architecture, cells and preparation clues before naming the organ."
+    },
+    {
+      "id": "gi-histology",
+      "route": "/library/gi-histology",
+      "title": "Recognizing the gastrointestinal wall",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "gut-wall"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Use the shared wall plan and regional specializations to distinguish esophagus, stomach and intestine."
+    },
+    {
+      "id": "histology-detective",
+      "route": "/practice/histology",
+      "title": "Renal histology detective",
+      "kind": "Practice",
+      "action": "standardise-or-reuse",
+      "components": [
+        "HistologyDetective"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Identify three original tubule schematics and reveal the structural clues."
+    },
+    {
+      "id": "reproductive-histology",
+      "route": "/library/reproductive-histology",
+      "title": "Reproductive histology and cyclic change",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect seminiferous tubules, ovarian follicles and endometrium to their changing functions. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "muscle-histology",
+      "route": "/library/muscle-histology",
+      "title": "Skeletal, cardiac and smooth muscle",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "HistologyTopicVisual"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Identify muscle using nuclei, striations, branching and the connections between cells."
+    },
+    {
+      "id": "renal-tubular-transport",
+      "route": "/learn/renal/tubular-transport",
+      "title": "A tour of tubular transport",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Match each nephron segment to its job, from bulk recovery to final adjustment."
+    },
+    {
+      "id": "renal-afferent-efferent",
+      "route": "/learn/renal/afferent-efferent",
+      "title": "Afferent versus efferent: flow is not filtration.",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Predict how resistance before and after the glomerulus changes flow and filtration pressure."
+    },
+    {
+      "id": "alveolar-ventilation-calculations",
+      "route": "/library/alveolar-ventilation-calculations",
+      "title": "Alveolar ventilation: why breathing pattern matters",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Compare equal minute ventilations, account for dead space and predict carbon dioxide changes under stated assumptions. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "autonomic-signalling",
+      "route": "/library/autonomic-signalling",
+      "title": "Autonomic signals: receptor before response",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Use receptor location and intracellular signalling to predict an autonomic response without memorising one effect for every organ. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "fluid-and-membrane-transport",
+      "route": "/library/fluid-and-membrane-transport",
+      "title": "Cell transport: follow the energy",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "transport-energy"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Connect membrane permeability, the sodium–potassium pump and secondary active transport before predicting where a solute moves."
+    },
+    {
+      "id": "digestive-control",
+      "route": "/library/digestive-control",
+      "title": "Digestion: coordinate movement and secretion",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect enteric circuits, local signals and gastrointestinal hormones to explain how a meal is processed. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "ecg-time-and-vectors",
+      "route": "/library/ecg-time-and-vectors",
+      "title": "ECG: connect time, conduction and lead direction",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Read a basic ECG as a timed electrical signal, calculate rate and distinguish a lead projection from the spread of activation. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "endocrine-feedback",
+      "route": "/library/endocrine-feedback",
+      "title": "Endocrine axes: read the feedback loop",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "thyroid-feedback"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Track a hypothalamic–pituitary–target-gland axis and use the pattern of hormones to explain negative feedback."
+    },
+    {
+      "id": "energy-balance",
+      "route": "/library/energy-balance",
+      "title": "Energy balance: connect intake, storage and use",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Follow energy through the fed and fasting states and distinguish long-term balance from a single meal. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "renal-challenge",
+      "route": "/practice/renal-challenge",
+      "title": "Five-minute renal challenge",
+      "kind": "Practice",
+      "action": "retain-nonvisual-resource",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "This is a practice resource. Preserve its existing questions, prompts or downloadable sheet; it does not need a new decorative image."
+    },
+    {
+      "id": "renal-kidney-map",
+      "route": "/learn/renal/kidney-map",
+      "title": "Follow the blood. Follow the filtrate.",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow",
+        "NephronMap"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Build a mental map of the nephron by keeping blood and tubular fluid on separate paths."
+    },
+    {
+      "id": "blood-and-haemostasis",
+      "route": "/library/blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "blood-and-haemostasis-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Distinguish platelet adhesion, platelet aggregation and fibrin formation, then locate intrinsic tenase in the sequence."
+    },
+    {
+      "id": "renal-concentrating-urine",
+      "route": "/learn/renal/concentrating-urine",
+      "title": "How the kidney concentrates urine",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Separate the machinery that builds a gradient from the hormone that lets water use it."
+    },
+    {
+      "id": "renal-abg-interpretation",
+      "route": "/learn/renal/abg-interpretation",
+      "title": "How to interpret an arterial blood gas",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Read pH, identify the process, then check compensation and the anion gap."
+    },
+    {
+      "id": "indicator-dilution",
+      "route": "/library/indicator-dilution",
+      "title": "Measure body-fluid compartments by indicator dilution",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Choose a tracer, correct for losses and calculate measured and derived fluid volumes with consistent units. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "lymph-and-fluid-exchange",
+      "route": "/library/lymph-and-fluid-exchange",
+      "title": "Microcirculation: return the filtered fluid",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Connect capillary filtration, the endothelial barrier and lymphatic return without assuming that every capillary reabsorbs fluid at its venous end. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "synaptic-integration",
+      "route": "/library/synaptic-integration",
+      "title": "Neural integration: from release to a response",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "neuronal-conductance"
+      ],
+      "rationale": "The visual supports this specific learning task: Follow chemical transmission across a synapse, then explain how a neuron combines excitatory and inhibitory inputs."
+    },
+    {
+      "id": "physiology-lab",
+      "route": "/practice/physiology",
+      "title": "Physiology lab and ABG exercises",
+      "kind": "Practice",
+      "action": "standardise-or-reuse",
+      "components": [
+        "RenalHemodynamics"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Explore renal resistance and ventilation models, then interpret six fictional blood gases."
+    },
+    {
+      "id": "renal-renal-acid-base",
+      "route": "/learn/renal/renal-acid-base",
+      "title": "Reclaim bicarbonate. Excrete acid.",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Distinguish saving filtered bicarbonate from adding new bicarbonate through net acid excretion."
+    },
+    {
+      "id": "oral-practice",
+      "route": "/practice/oral",
+      "title": "Renal oral-exam practice",
+      "kind": "Practice",
+      "action": "retain-nonvisual-resource",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "This is a practice resource. Preserve its existing questions, prompts or downloadable sheet; it does not need a new decorative image."
+    },
+    {
+      "id": "renal-revision-sheet",
+      "route": "/downloads/renal-revision-sheet.pdf",
+      "title": "Renal physiology revision sheet",
+      "kind": "Revision sheet",
+      "action": "retain-nonvisual-resource",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "This is a revision sheet resource. Preserve its existing questions, prompts or downloadable sheet; it does not need a new decorative image."
+    },
+    {
+      "id": "reproductive-cycles",
+      "route": "/library/reproductive-cycles",
+      "title": "Reproductive physiology: connect the two cycles",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "reproductive-cycles-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Relate ovarian events to endometrial changes and explain the transition from negative to positive feedback around ovulation."
+    },
+    {
+      "id": "membrane-potentials",
+      "route": "/library/membrane-potentials",
+      "title": "Resting potential and the action potential",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "neuronal-conductance"
+      ],
+      "rationale": "The visual supports this specific learning task: Connect ion gradients, selective permeability and channel timing to electrical signals."
+    },
+    {
+      "id": "special-senses",
+      "route": "/library/special-senses",
+      "title": "Special senses: convert a stimulus into a signal",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Compare how photoreceptors and inner-ear hair cells convert physical stimuli into changes in neurotransmitter release. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "cardiac-output",
+      "route": "/library/cardiac-output",
+      "title": "Stroke volume, cardiac output and pump regulation",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "ventricular-pressure-volume"
+      ],
+      "rationale": "The visual supports this specific learning task: Keep volume per beat, volume per minute and the fraction ejected separate."
+    },
+    {
+      "id": "baroreflex",
+      "route": "/library/baroreflex",
+      "title": "The arterial baroreceptor reflex",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "baroreflex-pressure-rise"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Trace a pressure change from arterial stretch through afferent nerves to autonomic effectors."
+    },
+    {
+      "id": "cardiac-cycle",
+      "route": "/library/cardiac-cycle",
+      "title": "The cardiac cycle: pressure opens the valves",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "ventricular-pressure-volume"
+      ],
+      "rationale": "The visual supports this specific learning task: Read valve events and ventricular volume together, then predict the isolated effects of preload, afterload and contractility."
+    },
+    {
+      "id": "renal-course",
+      "route": "/learn/renal",
+      "title": "The complete renal mini-course",
+      "kind": "Practice",
+      "action": "standardise-or-reuse",
+      "components": [
+        "NephronMap"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Follow eight lessons from kidney organization to acid–base interpretation, with 30 explained questions."
+    },
+    {
+      "id": "muscle-contraction",
+      "route": "/library/muscle-contraction",
+      "title": "Three muscle types, three calcium stories",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "muscle-calcium"
+      ],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Compare how skeletal, cardiac and smooth muscle convert a calcium signal into force, and explain why their responses differ."
+    },
+    {
+      "id": "ventilation-perfusion",
+      "route": "/library/ventilation-perfusion",
+      "title": "Ventilation, perfusion and gas exchange",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "airway-dead-space"
+      ],
+      "rationale": "The visual supports this specific learning task: Distinguish air delivery, blood delivery and diffusion across the respiratory membrane."
+    },
+    {
+      "id": "respiratory-mechanics",
+      "route": "/library/respiratory-mechanics",
+      "title": "Ventilation: make each breath count",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "EducationalFigure"
+      ],
+      "visualIds": [],
+      "figureIds": [
+        "airway-dead-space"
+      ],
+      "rationale": "The visual supports this specific learning task: Connect pressure-driven breathing with dead space and calculate why equal minute ventilation can give different alveolar ventilation."
+    },
+    {
+      "id": "renal-volume-and-osmolality",
+      "route": "/learn/renal/volume-and-osmolality",
+      "title": "Volume and osmolality ask different questions.",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Connect sodium balance, water balance, RAAS and ADH without treating them as interchangeable."
+    },
+    {
+      "id": "renal-water-balance",
+      "route": "/library/renal-water-balance",
+      "title": "Water balance: distinguish ADH from aldosterone",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the explained steps and worked questions for this task: Follow the separate signals for osmolality and effective circulating volume, and connect them to collecting-duct transport. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+    },
+    {
+      "id": "renal-filtration-and-clearance",
+      "route": "/learn/renal/filtration-and-clearance",
+      "title": "What does renal clearance actually measure?",
+      "kind": "Renal course lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualFlow"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The visual supports this specific learning task: Use units and mass balance to distinguish GFR, plasma flow, filtration fraction and clearance."
+    },
+    {
+      "id": "biochemistry-enzyme-foundations",
+      "route": "/library/biochemistry-enzyme-foundations",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "biophysics-membrane-foundations",
+      "route": "/library/biophysics-membrane-foundations",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "genetics-genome-foundations",
+      "route": "/library/genetics-genome-foundations",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "physiology-membrane-foundations",
+      "route": "/library/physiology-membrane-foundations",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    }
+  ]
+}

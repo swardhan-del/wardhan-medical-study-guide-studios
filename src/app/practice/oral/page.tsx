@@ -1,12 +1,8 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import { OralPractice } from "@/components/oral-practice";
-export const metadata = {
-  title: "Renal physiology oral-exam practice",
-  description:
-    "Eight oral prompts with structured self-assessment rubrics and follow-up questions.",
-  alternates: { canonical: "/practice/oral" },
-};
+export const metadata = searchMetadata("/practice/oral");
 export default function OralPage() {
   return (
     <div className="site-container study-page">

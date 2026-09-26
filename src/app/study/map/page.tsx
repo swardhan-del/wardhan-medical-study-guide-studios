@@ -1,13 +1,10 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import data from "@/content/study-map.json";
 import { studyLessons } from "@/lib/study-collections";
 import { StudyMapBrowser } from "@/components/study-map-browser";
 
-export const metadata = {
-  title: "Study map",
-  description: "Explore the subject sequence and distinguish available introductions from planned teaching topics.",
-  alternates: { canonical: "/study/map" },
-};
+export const metadata = searchMetadata("/study/map");
 
 export default function StudyMapPage() {
   const groups = data.groups;

@@ -1,9 +1,18 @@
 "use client";
-import { useState } from "react";
-import { updateLearning, useLearning } from "./learning-store";
+import { useState, useEffect } from "react";
+import { rememberLesson, updateLearning, useLearning } from "./learning-store";
+export function LessonPracticeLink({ slug }: { slug: string }) {
+  return <a className="text-link" href="#lesson-quiz" onClick={() => rememberLesson(slug, "practice")}>Go to the questions ↓</a>;
+}
 export function CompleteLesson({ slug }: { slug: string }) {
   const { ready, data, persistent } = useLearning();
   const done = data.lessons.includes(slug);
+  useEffect(() => {
+    const remember = () => rememberLesson(slug, window.location.hash === "#lesson-quiz" ? "practice" : "learn");
+    remember();
+    window.addEventListener("hashchange", remember);
+    return () => window.removeEventListener("hashchange", remember);
+  }, [slug]);
   return (
     <div className="lesson-completion">
       <button

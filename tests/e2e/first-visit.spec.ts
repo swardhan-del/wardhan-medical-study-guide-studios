@@ -13,11 +13,12 @@ test("first visit reaches each subject coverage map and a real starting lesson",
   for (const subject of ["anatomy","histology","cell-biology","biochemistry","physiology","genetics"]) {
     await page.goto(`/study/${subject}#coverage`);
     // Next.js may retain the previous route's hidden course map.
+    // Next.js may retain a hidden route during a streaming transition.
     const map = page.locator("#coverage:visible");
     await expect(map).toContainText(subject === "anatomy" ? "What to study alongside this course" : "Still needs fuller lessons");
     await map.getByRole("link",{name:/^Start with/}).click();
     await expect(page).toHaveURL(subject === "anatomy" ? /\/library\/anatomy-foundations$/ : /\/library\//);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   }
   expect(errors).toEqual([]);
@@ -81,12 +82,12 @@ test("first-visitor navigation exposes consistent subjects, printable notes and 
   await expect(page.getByRole("link", { name: "Body regions and orientation", exact: true })).toBeVisible();
   await page.goto("/study/map");
   await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("biophysics");
-  await expect(page.getByRole("status")).toContainText("50 topics");
-  await expect(page.locator(".study-map-topics a")).toHaveCount(50);
+  await expect(page.getByRole("status")).toContainText("51 topics");
+  await expect(page.locator(".study-map-topics a")).toHaveCount(51);
   await page.getByRole("link", { name: "Choose an available lesson", exact: true }).click();
   await expect(page).toHaveURL(/\/library$/);
   await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("genetics-all");
-  await expect(page.getByRole("status")).toContainText("9 resources");
+  await expect(page.getByRole("status")).toContainText("10 resources");
   await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("immunology");
   await expect(page.getByRole("status")).toContainText("4 resources");
   await page.getByRole("button", { name: "Clear filters", exact: true }).click();

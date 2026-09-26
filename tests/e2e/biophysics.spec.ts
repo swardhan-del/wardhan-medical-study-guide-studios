@@ -7,7 +7,7 @@ test("biophysics is native, searchable and retains practice across reloads", asy
   await expect(page.getByRole("heading",{name:"Biophysics",exact:true})).toBeVisible();
   await expect(page.getByRole("heading",{name:"36 theory lessons"})).toBeVisible();
   const browser=page.getByRole("region",{name:"Browse subject lessons"});
-  await expect(browser.getByRole("status")).toHaveText("50 lessons available");
+  await expect(browser.getByRole("status")).toHaveText("51 lessons available");
   await browser.getByLabel("Search this subject").fill("Coulter");
   await expect(browser.getByRole("status")).toHaveText("1 lesson available");
   await browser.getByRole("link",{name:"Read lesson",exact:true}).click();
@@ -62,7 +62,7 @@ test("directory and printable revision include the new subject", async ({page})=
   await expect(page.getByRole("heading",{name:"Biophysics",exact:true})).toBeVisible();
   await page.goto("/study/biophysics/revision");
   await expect(page.getByRole("heading",{name:"Biophysics: revision notes",exact:true})).toBeVisible();
-  await expect(page.locator(".revision-lesson")).toHaveCount(50);
+  await expect(page.locator(".revision-lesson")).toHaveCount(51);
   await expect(page.getByRole("heading",{name:"Answer key and explanation prompts"})).toBeVisible();
   expect(await page.locator('a[href*="drive.google.com"]').count()).toBe(0);
 });

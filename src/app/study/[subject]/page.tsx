@@ -1,6 +1,9 @@
+import { TopicGuideLinks } from "@/components/topic-guide-links";
+import { searchMetadata } from "@/lib/search-metadata";
+import { WaitlistCta } from "@/components/waitlist-cta";
 import { AnatomyLearningPath } from "@/components/anatomy-learning-path";
 import { AnatomyCourseIntro } from "@/components/anatomy-course";
-import { BeginnerSequence } from "@/components/beginner-sequence";
+import { SubjectHubOverview, SubjectTopicMap } from "@/components/subject-hub";
 import searchIndex from "@/content/public-search.json";
 import Link from "next/link";
 import { BiophysicsCourseIntro } from "@/components/biophysics-course";
@@ -16,7 +19,10 @@ import { renalLessons, renalQuestions } from "@/content/renal-course";
 import { beginnerSequences } from "@/content/study-paths";
 type Props = { params: Promise<{ subject: string }> };
 export function generateStaticParams() { return studySubjects.map(s => ({ subject: s.id })); }
-export async function generateMetadata({ params }: Props) { const { subject } = await params; const s = studySubjects.find(s => s.id === subject); return { title: s ? s.title + " · Subject learning" : "Subject not found", description: s?.description, alternates: { canonical: "/study/" + subject } }; }
+export async function generateMetadata({ params }: Props) {
+  const { subject } = await params;
+  return searchMetadata(`/study/${subject}`);
+}
 export default async function SubjectStudyPage({ params }: Props) {
  const { subject } = await params, s = studySubjects.find(s => s.id === subject); if (!s) notFound();
  const lessons = subjectLessons(subject), groups = studyGroups.filter(g => g.subject === subject);
@@ -25,16 +31,19 @@ export default async function SubjectStudyPage({ params }: Props) {
  return <div className="site-container study-page">
    <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/subjects">Subjects</Link><span aria-hidden="true"> / </span><span aria-current="page">{s.title}</span></nav>
    <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><div className="action-row"><Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start the first lesson</Link><Link href={`/learn/foundations/${subject}`}>Learn the foundations</Link></div><p className="interior-lede">{s.description}</p>
-     <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link></div>
+     <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link><Link href="/library">Return to the library</Link></div>
    </header>
-   {subject === "anatomy" ? <AnatomyLearningPath/> : <BeginnerSequence subject={subject} />}
+   <SubjectHubOverview subject={subject} />
+   {subject === "anatomy" ? <AnatomyLearningPath/> : <SubjectTopicMap subject={subject} />}
    {subject === "anatomy" && <AnatomyCourseIntro />}
    {subject === "histology" && <section className="study-panel"><h2>Practise recognising real sections</h2><p>Start with epithelial structure, hide the labels, then compare the two available microscope sections. Renal tubule practice begins with three schematics and links to further public slide practice.</p><div className="action-row"><Link href="/library/epithelia">Study epithelium and compare sections</Link><Link href="/practice/histology">Open tissue identification practice</Link></div></section>}
    {subject === "biophysics" && <BiophysicsCourseIntro />}
    <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>
    {subject === "physiology" && <section className="study-panel" aria-labelledby="renal-course-heading"><p className="eyebrow">Renal and acid–base physiology · Guided course</p><h2 id="renal-course-heading">Renal physiology, step by step</h2><p>{renalLessons.length} lessons and {renalQuestions.length} questions with explanations, plus interactive circulation and acid–base activities.</p><Link className="button button-primary" href="/learn/renal">Open renal physiology course</Link></section>}
    <div id="subject-lessons"><StudyCollectionBrowser cards={cards} groups={groups} /></div>
+   <TopicGuideLinks subject={subject} />
    <SubjectCoverage subject={subject} />
+   <WaitlistCta />
    <p className="muted-note">These are focused teaching adaptations, with source references on each lesson. AI-assisted educational content; independent clinical peer review has not been completed. Your practice stays in this browser.</p>
  </div>;
 }

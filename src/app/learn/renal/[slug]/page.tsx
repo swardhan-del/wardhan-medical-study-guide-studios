@@ -1,3 +1,10 @@
+import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
+import { StructuredData } from "@/components/structured-data";
+import { lessonSchema } from "@/lib/structured-data";
+import { getSiteUrl } from "@/lib/site-url";
+import { renalRevision } from "@/content/renal-course";
+import { searchMetadata } from "@/lib/search-metadata";
+import { StudyVisual, VisualFlow } from "@/components/study-visual";
 import { NephronMap } from "@/components/nephron-map";
 import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
@@ -8,7 +15,7 @@ import {
   renalLessonHref,
 } from "@/content/renal-course";
 import { RenalQuiz } from "@/components/renal-quiz";
-import { CompleteLesson } from "@/components/lesson-actions";
+import { CompleteLesson, LessonPracticeLink } from "@/components/lesson-actions";
 import { RenalSources } from "@/components/renal-sources";
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -17,20 +24,7 @@ export function generateStaticParams() {
 type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const l = renalLessons.find((l) => l.slug === slug);
-  return l
-    ? {
-        title: l.title,
-        description: l.description,
-        alternates: { canonical: renalLessonHref(slug) },
-        openGraph: {
-          title: l.title,
-          description: l.description,
-          url: renalLessonHref(slug),
-          images: ["/learn/renal/opengraph-image"],
-        },
-      }
-    : { title: "Lesson not found" };
+  return searchMetadata(`/learn/renal/${slug}`);
 }
 export default async function RenalLessonPage({ params }: Props) {
   const { slug } = await params;
@@ -41,12 +35,17 @@ export default async function RenalLessonPage({ params }: Props) {
   const previous = renalLessons[index - 1];
   return (
     <div className="site-container study-page renal-lesson">
+      <StructuredData data={lessonSchema({ path: renalLessonHref(slug), title: lesson.title, summary: lesson.description,
+        updatedAt: renalRevision, minutes: lesson.minutes, objectives: lesson.objectives,
+        citation: [`Medical Physiology: Renal Physiology, Revision 15. ${lesson.sourceSection}.`, "https://www.ncbi.nlm.nih.gov/books/NBK482248/", "https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders"],
+      }, getSiteUrl())} />
+      <SearchBreadcrumbs items={[{ name: "Library", href: "/library" }, { name: "Physiology", href: "/study/physiology" }, { name: "Renal physiology", href: "/learn/renal" }, { name: lesson.title, href: renalLessonHref(slug) }]} />
       <header className="study-hero">
         <Link className="text-link" href="/learn/renal">
           ← Renal course
         </Link>
         <p className="eyebrow">
-          Lesson {index + 1} of 8 · {lesson.minutes} minutes + recall
+          Lesson {index + 1} of 8 · {lesson.minutes} minutes + self-assessment
         </p>
         <h1>{lesson.title}</h1>
         <p className="interior-lede">{lesson.description}</p>
@@ -54,15 +53,13 @@ export default async function RenalLessonPage({ params }: Props) {
       </header>
       <div className="lesson-layout">
         <aside className="lesson-outline">
-          <h2>By the end, you can…</h2>
+          <h2>Learning Objectives</h2>
           <ul>
             {lesson.objectives.map((o) => (
               <li key={o}>{o}</li>
             ))}
           </ul>
-          <a className="text-link" href="#lesson-quiz">
-            Go to the questions ↓
-          </a>
+          <LessonPracticeLink slug={slug} />
           <br />
           <a className="text-link" href="#sources">
             Read the sources ↓
@@ -78,18 +75,14 @@ export default async function RenalLessonPage({ params }: Props) {
         </div>
       </div>
       {slug === "kidney-map" && <NephronMap />}
-      <section className="pathway-section">
-        <p className="eyebrow">Make the connection</p>
-        <ol className="pathway-map">
-          {lesson.pathway.map((p, i) => (
-            <li key={p.title}>
-              <span>{i + 1}</span>
-              <h3>{p.title}</h3>
-              <p>{p.detail}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
+      <StudyVisual className="pathway-section" headingLevel={2} title="Connect the mechanism"
+        alt={lesson.pathway.map(p=>`${p.title}: ${p.detail}`).join(" ")}
+        caption="Read the labelled relationships in order. This is a conceptual study sequence, not a scale anatomical drawing or a measured time course."
+        observe="Explain the relationship between each adjacent pair of stages, then identify where the lesson’s common misconception would interrupt the reasoning."
+        credit="Original teaching sequence · Wardhan Medical Study Guide Studios; adapted from Medical Physiology: Renal Physiology, Revision 15. AI-assisted."
+        sources={[{title:"Lesson source sections and supporting references",url:"#sources"}]}>
+        <VisualFlow label="Renal mechanism sequence" steps={lesson.pathway.map(p=>`${p.title}: ${p.detail}`)} />
+      </StudyVisual>
       <aside className="misconception">
         <p className="eyebrow">The common trap</p>
         <p>{lesson.misconception}</p>
