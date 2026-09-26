@@ -4076,3 +4076,14 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .drawing-space { min-height: 3cm; }
   .revision-page .revision-lesson p { white-space: pre-line; }
 }
+
+/* Membership preparation uses only non-teaching public copy and protected pilot routes. */
+.membership-stack { display: grid; gap: 2rem; padding-block: 3rem; }
+.membership-stack h1 { max-width: 24ch; }
+.membership-stack p { max-width: 75ch; }
+.membership-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
+.membership-panel { padding: 1.5rem; border: 1px solid #cbd5d4; border-radius: 1rem; background: #fff; }
+.membership-panel h2, .membership-panel h3 { margin-top: 0; }
+.membership-panel p, .membership-panel li { line-height: 1.65; }
+.membership-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.membership-panel a, .membership-links a, .membership-stack > p a { text-decoration: underline; text-underline-offset: .2em; }

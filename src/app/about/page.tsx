@@ -58,9 +58,9 @@ export default function AboutPage() {
             affiliated with a university or institution.
           </p>
           <p>
-            The website is currently free to use, with no subscription or
-            sign-in required. Saved resources and study progress stay in your
-            browser.
+            The existing library remains free to use during membership preparation.
+            Saved resources and study progress stay in your browser. <Link href="/membership">Explore the planned memberships</Link>;
+            enrolment and payments are not open yet.
           </p>
           <h2>Help improve the library</h2>
           <p>
