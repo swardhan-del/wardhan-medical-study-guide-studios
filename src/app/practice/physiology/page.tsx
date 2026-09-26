@@ -1,4 +1,5 @@
 import { SaveButton } from "@/components/save-button";
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import {
   RenalHemodynamics,
@@ -6,12 +7,7 @@ import {
   AbgPractice,
 } from "@/components/physiology-lab";
 import { RenalSources } from "@/components/renal-sources";
-export const metadata = {
-  title: "Interactive renal hemodynamics and ABG practice",
-  description:
-    "Explore afferent and efferent resistance, change ventilation and work through six blood-gas interpretation exercises.",
-  alternates: { canonical: "/practice/physiology" },
-};
+export const metadata = searchMetadata("/practice/physiology");
 export default async function PhysiologyPage({ searchParams }: { searchParams: Promise<{ case?: string; review?: string }> }) {
   const query = await searchParams;
   const initialCase = Math.max(0, Math.min(5, Math.floor(Number(query.case) || 1) - 1));

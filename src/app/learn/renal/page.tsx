@@ -1,4 +1,8 @@
 import { SaveButton } from "@/components/save-button";
+import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
+import { StructuredData } from "@/components/structured-data";
+import { courseSchema } from "@/lib/structured-data";
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import {
   renalLessons,
@@ -7,47 +11,17 @@ import {
 } from "@/content/renal-course";
 import { RenalSources } from "@/components/renal-sources";
 import { getSiteUrl } from "@/lib/site-url";
-export const metadata = {
-  title: `Renal physiology: ${renalLessons.length} lessons and ${renalQuestions.length} practice questions`,
-  description:
-    "Work through renal circulation, clearance, tubular transport, urine concentration and acid–base regulation, then apply the concepts in practice questions.",
-  alternates: { canonical: "/learn/renal" },
-};
+export const metadata = searchMetadata("/learn/renal");
 export default function RenalCourse() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    name: "Renal physiology, step by step",
-    description: metadata.description,
-    url: `${getSiteUrl()}/learn/renal`,
-    isAccessibleForFree: true,
-    inLanguage: "en",
-    provider: {
-      "@type": "Organization",
-      name: "Wardhan Medical Study Guide Studios",
-      url: getSiteUrl(),
-    },
-    hasPart: renalLessons.map((l) => ({
-      "@type": "LearningResource",
-      name: l.title,
-      url: `${getSiteUrl()}${renalLessonHref(l.slug)}`,
-    })),
-  };
+  const schema = courseSchema({
+    path: "/learn/renal", title: "Understand renal physiology from filtration to fluid balance",
+    summary: "Connect renal circulation, clearance, tubular transport, urine concentration and acid–base regulation, then apply the concepts in practice questions.",
+    lessons: renalLessons.map(lesson => ({ title: lesson.title, path: renalLessonHref(lesson.slug) })),
+  }, getSiteUrl());
   return (
     <div className="site-container study-page">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
-        }}
-      />
-      <nav className="breadcrumbs" aria-label="Breadcrumb">
-        <Link href="/study">My Study</Link>
-        <span aria-hidden="true">/</span>
-        <Link href="/subjects/physiology">Physiology</Link>
-        <span aria-hidden="true">/</span>
-        <span aria-current="page">Renal physiology</span>
-      </nav>
+      <StructuredData data={schema} />
+      <SearchBreadcrumbs items={[{ name: "Library", href: "/library" }, { name: "Physiology", href: "/study/physiology" }, { name: "Renal physiology", href: "/learn/renal" }]} />
       <header className="study-hero">
         <SaveButton id="renal-course" title="Renal physiology course" />
         <p className="eyebrow">Free mini-course · Medical physiology</p>

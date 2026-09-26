@@ -30,6 +30,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <span>An independent educational project by {studio.founderName}.</span>
             <Link href="/contact">Contact</Link>
             <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms and disclaimer</Link>
+            <Link href="/starter-pack">Free starter pack</Link>
             <Link href="/study#saved-learning">My Study</Link>
             <Link href="/about">About</Link>
           </div>

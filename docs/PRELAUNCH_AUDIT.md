@@ -1,5 +1,7 @@
 # Phase Ten audit scope and findings
 
+Integration addendum: the roadmap release combines PRs #20–26 in phase order. The dated measurements below describe the original Phase Ten baseline; final combined results are recorded in ROADMAP_INTEGRATION.md. All 241 current authored lessons, including the four new subject foundations, remain pending independent clinical peer review. The old analytics SDK is removed in favour of configured, consent-based measurement; live providers remain separate owner gates.
+
 Baseline: `e86352ac8a5c90869abe5b474c1e550f779bd843`, the deployed main branch containing Phases One–Three. The Phase Four–Nine PRs were open at inspection. This report describes the baseline and bounded improvements, not approval to launch their combined future state.
 
 ## Coverage and limits

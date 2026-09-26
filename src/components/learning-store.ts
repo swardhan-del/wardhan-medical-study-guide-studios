@@ -1,5 +1,4 @@
 "use client";
-import { learningEvent } from "@/lib/learning-analytics";
 import { useSyncExternalStore } from "react";
 import registry from "@/content/learning-registry.json";
 const { learningLessonIds, learningQuestionIds, learningDraftIds } = registry;
@@ -70,11 +69,14 @@ export function updateLearning(
   }
   snapshot = { ready: true, persistent, data };
   notify();
+  return persistent;
 }
 export function recordAnswer(id: string, correct: boolean, choice: number | null = null, usedHint = false) {
   if (!questionIds.includes(id)) return;
+  const lesson = (registry.questionLessons as Record<string, string>)[id];
   updateLearning((state) => ({
     ...state,
+    resume: lesson ? { lesson, stage: "practice", at: Date.now() } : state.resume,
     answers: {
       ...state.answers,
       [id]: gradeAttempt(state.answers[id], correct, Date.now(), choice, usedHint),
@@ -84,13 +86,23 @@ export function recordAnswer(id: string, correct: boolean, choice: number | null
 export function recordVisit() {
   const today = localDate();
   if (getSnapshot().data.visits.includes(today)) return;
-  learningEvent("learning_day", {
-    returning: getSnapshot().data.visits.length > 0,
-  });
   updateLearning((s) => ({ ...s, visits: [...s.visits, today].slice(-366) }));
 }
 
 export function saveDraft(id: string, value: string) {
-  if (!learningDraftIds.includes(id)) return;
-  updateLearning((s) => ({ ...s, drafts: { ...s.drafts, [id]: value.slice(0, 5000) } }));
+  if (!learningDraftIds.includes(id)) return false;
+  return updateLearning((s) => ({ ...s, drafts: { ...s.drafts, [id]: value.slice(0, 5000) } }));
+}
+
+export function rememberLesson(lesson: string, stage?: "learn" | "practice" | "summary") {
+  if (!lessonIds.includes(lesson)) return;
+  const previous = getSnapshot().data.resume;
+  const nextStage = stage ?? (previous?.lesson === lesson ? previous.stage : "learn");
+  updateLearning(state => ({ ...state, resume: { lesson, stage: nextStage, at: Date.now() }, journey: { ...state.journey, [lesson]: state.journey[lesson] ?? { read: false, reviewed: false, saved: false, at: Date.now() } } }));
+}
+export function updateJourney(lesson: string, patch: Partial<LearningProgress["journey"][string]>) {
+  if (!lessonIds.includes(lesson)) return;
+  return updateLearning(state => ({ ...state, lessons: patch.read === false || patch.reviewed === false ? state.lessons.filter(id => id !== lesson) : state.lessons, journey: { ...state.journey, [lesson]: {
+    ...(state.journey[lesson] ?? { read: false, reviewed: false, saved: false }), ...patch, at: Date.now(),
+  } } }));
 }

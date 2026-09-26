@@ -48,17 +48,16 @@ test("failed figure previews and full-size images preserve explanations, credits
   await page.route("**/images/**",route=>route.abort("failed"));
   await page.goto("/library/histology-foundations-tissues");
   const figure=page.locator(".educational-figure").first();
-  const trigger=figure.getByRole("button",{name:/^Enlarge /});
-  await trigger.scrollIntoViewIfNeeded();
-  await expect(figure.locator(".figure-unavailable")).toContainText("Preview image unavailable");
+  const trigger=figure.getByRole("button",{name:"Try the full-size image"});
+  await figure.scrollIntoViewIfNeeded();
+  await expect(figure.locator(".visual-image-fallback")).toContainText("Image unavailable");
   await expect(figure.locator("figcaption")).not.toBeEmpty();
   await trigger.focus();await page.keyboard.press("Enter");
   const dialog=page.getByRole("dialog");
   await expect(dialog).toBeVisible();await expect(dialog.getByRole("status")).toContainText("Full-size image unavailable");
   await page.keyboard.press("Escape");
   await expect(trigger).toBeFocused();
-  await figure.getByText("Figure source and usage",{exact:true}).click();
-  await expect(figure.getByRole("link",{name:"Source description or scientific reference"})).toBeVisible();
+  await expect(figure.locator("figcaption .visual-sources a")).toBeVisible();
   await figure.screenshot({path:info.outputPath("image-failure.png")});
 });
 
@@ -77,7 +76,7 @@ test("public teaching remains readable without JavaScript",async({browser},info)
 test("pre-launch browsing loads no analytics SDK or external fonts",async({page})=>{
   const resources:string[]=[];page.on("request",r=>resources.push(r.url()));
   await page.goto("/privacy");
-  await expect(page.getByText(/Optional analytics is disabled for this pre-launch build/).last()).toBeVisible();
+  await expect(page.getByText(/Optional analytics is not configured or is unavailable/).last()).toBeVisible();
   await page.goto("/library/anatomy-foundations");
   await expect(page.locator("h1:visible")).toBeVisible();
   expect(resources.some(url=>/vercel-insights|\/_vercel\/insights|fonts\.googleapis|fonts\.gstatic/.test(url))).toBe(false);

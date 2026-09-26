@@ -21,7 +21,7 @@ Record task completion, confusing wording, device/browser and the lesson involve
 | 3 | ADH/AQP2 location diagram and oral prompt | Return learning days and repeated difficult topics |
 | 4 | ABG case showing “normal CO2” with low bicarbonate | Completion, explanation clarity and voluntary sharing |
 
-Use Vercel Analytics to compare lesson_started with lesson_completed, and quiz_started with quiz_completed for the same set. Treat these as event ratios, not unique-student completion rates. challenge_shared measures copies, not received messages or downstream conversions. learning_day with returning=true is a browser-based return signal and cannot reconstruct a cross-device retention cohort. Search Console supplies queries, impressions and search clicks after Google begins collecting data.
+Use the optional events and integration contract in [MEASUREMENT.md](MEASUREMENT.md). Measurement is off until a recipient is configured and the student opts in. The new layer counts approved public actions without student identifiers, answers or scores; it does not measure unique students, return learning days, sharing or lesson completion. Use voluntary pilot observations for those questions, and do not infer completion or retention rates from event totals. Search Console supplies queries, impressions and search clicks after Google begins collecting data.
 
 ## Ready-to-adapt social captions
 

@@ -1,13 +1,9 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { publicVideos } from "@/lib/videos";
 import { taxonomyNodes } from "@/lib/taxonomy";
 import { VideoBrowser } from "@/components/video-browser";
-export const metadata = {
-  title: "Video library",
-  description:
-    publicVideos.length ? "Watch educational videos and continue with related medical study lessons." : "No videos are available yet. Explore the written lessons and practice activities in the study library.",
-  alternates: { canonical: "/videos" },
-};
+export const metadata = searchMetadata("/videos");
 export default function VideosPage() {
   return (
     <div className="site-container library-page">

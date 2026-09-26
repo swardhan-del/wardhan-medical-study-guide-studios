@@ -1,11 +1,7 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { studio } from "@/content/studio";
-export const metadata = {
-  title: "About",
-  description:
-    "An independent, student-led library of medical-science explanations, visual learning resources and practice activities, created by Siddhartha Harshwardhan.",
-  alternates: { canonical: "/about" },
-};
+export const metadata = searchMetadata("/about");
 export default function AboutPage() {
   return (
     <div className="page-stack page-interior">

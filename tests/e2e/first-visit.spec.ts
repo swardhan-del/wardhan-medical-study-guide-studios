@@ -81,12 +81,12 @@ test("first-visitor navigation exposes consistent subjects, printable notes and 
   await expect(page.getByRole("link", { name: "Body regions and orientation", exact: true })).toBeVisible();
   await page.goto("/study/map");
   await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("biophysics");
-  await expect(page.getByRole("status")).toContainText("50 topics");
-  await expect(page.locator(".study-map-topics a")).toHaveCount(50);
+  await expect(page.getByRole("status")).toContainText("51 topics");
+  await expect(page.locator(".study-map-topics a")).toHaveCount(51);
   await page.getByRole("link", { name: "Choose an available lesson", exact: true }).click();
   await expect(page).toHaveURL(/\/library$/);
   await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("genetics-all");
-  await expect(page.getByRole("status")).toContainText("9 resources");
+  await expect(page.getByRole("status")).toContainText("10 resources");
   await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("immunology");
   await expect(page.getByRole("status")).toContainText("4 resources");
   await page.getByRole("button", { name: "Clear filters", exact: true }).click();

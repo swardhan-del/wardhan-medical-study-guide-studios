@@ -1,3 +1,4 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { notFound, redirect } from "next/navigation";
 import { getPublicRecord, publicCatalog } from "@/lib/catalog";
 import { ResourceDetail } from "@/components/resource-detail";
@@ -10,12 +11,7 @@ export function generateStaticParams() {
 type Props = { params: Promise<{ id: string }> };
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
-  const r = getPublicRecord(id);
-  return {
-    title: r?.title || "Resource not found",
-    description: r?.summary,
-    alternates: { canonical: r?.href && ["WEB", "ACTIVITY"].includes(r.format) ? r.href : "/library/" + id },
-  };
+  return searchMetadata(`/library/${id}`);
 }
 export default async function ResourcePage({ params }: Props) {
   const { id } = await params;

@@ -1,11 +1,7 @@
 import { SaveButton } from "@/components/save-button";
+import { searchMetadata } from "@/lib/search-metadata";
 import { HistologyDetective } from "@/components/histology-detective";
-export const metadata = {
-  title: "Histology detective: identify renal tubules",
-  description:
-    "Compare proximal tubule, distal tubule and collecting-duct schematics. Reveal the structural clues and connect them to physiology.",
-  alternates: { canonical: "/practice/histology" },
-};
+export const metadata = searchMetadata("/practice/histology");
 export default async function HistologyPage({ searchParams }: { searchParams: Promise<{ case?: string; visual?: string; review?: string }> }) {
   const query = await searchParams;
   const initialCase = Math.max(0, Math.min(2, Math.floor(Number(query.case) || 1) - 1));

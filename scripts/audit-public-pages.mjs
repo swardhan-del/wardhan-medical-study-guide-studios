@@ -3,6 +3,7 @@ import { readFileSync, existsSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 import { gzipSync } from "node:zlib";
 import { chromium } from "@playwright/test";
+import { getSiteUrl } from "../src/lib/site-url.ts";
 import { anatomyLearningPages } from "../src/content/anatomy-learning.ts";
 
 const manifest = JSON.parse(readFileSync(".next/prerender-manifest.json", "utf8"));
@@ -48,7 +49,7 @@ try {
   }
 } finally { await browser.close(); }
 const byRoute = new Map(records.map(r => [r.route,r]));
-const origin = "https://wardhan-medical-study-guide-studios.vercel.app";
+const origin = getSiteUrl();
 for (const record of records) {
   const fail = (kind, detail) => failures.push({route:record.route,kind,detail});
   if (!record.redirect && (!record.title || !record.description || !record.headings.length)) fail("page-metadata","Missing title, description or heading");

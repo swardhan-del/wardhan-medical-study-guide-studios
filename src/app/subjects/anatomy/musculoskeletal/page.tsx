@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
-import Image from "next/image";
+import { searchMetadata } from "@/lib/search-metadata";
+import { EducationalFigure } from "@/components/educational-figure";
+import { figuresForResource } from "@/lib/figures";
 import Link from "next/link";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 import { musculoskeletalSources, musculoskeletalTopics, musculoskeletalRecall } from "@/content/musculoskeletal";
 
-export const metadata: Metadata = {
-  title: "Musculoskeletal system — Study map & sources",
-  description: "Explore musculoskeletal anatomy through Volume V and three teaching decks, with chapter references, regional study routes and recall examples.",
-  alternates: { canonical: "/subjects/anatomy/musculoskeletal" },
-};
+export const metadata = searchMetadata("/subjects/anatomy/musculoskeletal");
 
 export default function MusculoskeletalPage() {
   return (
@@ -28,12 +25,7 @@ export default function MusculoskeletalPage() {
       </header>
 
       <section className="msk-overview" aria-labelledby="msk-start">
-        <figure>
-          <a href="/images/anatomy/volume-5.png" target="_blank" rel="noopener noreferrer" aria-label="Enlarge hip-bone illustration (opens in a new tab)">
-            <Image src="/images/anatomy/volume-5.png" alt="Anterior, lateral and posterior views of hip bones with labelled landmarks." width={1055} height={1491} sizes="(max-width: 760px) 90vw, 35vw" />
-          </a>
-          <figcaption>Compare the labelled landmarks across the views of the hip bones. Select the image to enlarge.</figcaption>
-        </figure>
+        <EducationalFigure figure={figuresForResource("anatomy-musculoskeletal")[0]} />
         <div>
           <p className="eyebrow">Begin with relationships</p>
           <h2 id="msk-start">Give every structure a place.</h2>

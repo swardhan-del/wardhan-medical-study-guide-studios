@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { StudyVisual } from "./study-visual";
 import practice from "@/content/thorax-practice.json";
 
 const identificationOrder = [2, 3, 0, 1, 4, 5];
@@ -40,7 +41,13 @@ export function ThoraxMap() {
         <p><strong>{finished ? "All six structures identified." : `Find: ${practice.structures[target].name}`}</strong></p>
         <p>{step + (found ? 1 : 0)} of 6 identified this round.</p>
       </div> : null}
-      <figure>
+      <StudyVisual headingLevel={4} title="Front-view thoracic relationships"
+        alt="The lungs lie on either side of the mediastinum. The trachea branches towards them, pleural outlines surround them, and the diaphragm lies below. The subject’s right appears on the viewer’s left."
+        caption="The chest wall is opened for orientation. Organ shapes and pleural spacing are simplified; the curved muscle band below the lungs represents the diaphragm."
+        observe="Locate the diaphragm using its position, then compare the relaxed and inspiratory views with the control below."
+        credit="Original teaching schematic · Wardhan Medical Study Guide Studios; AI-assisted. Not to scale."
+        sources={[{title:"OpenStax: Organs and Structures of the Respiratory System",url:"https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"}]}>
+
         <div className="thorax-drawing">
           <svg viewBox="0 0 600 560" role="img" aria-labelledby="thorax-svg-title thorax-svg-description">
             <title id="thorax-svg-title">Front-view schematic of the thorax</title>
@@ -71,8 +78,7 @@ export function ThoraxMap() {
             aria-pressed={selected === index && (!identify || attempt !== null)}
             onClick={() => choose(index)}>{index + 1}</button>)}
         </div>
-        <figcaption>Original learning schematic. Chest wall is opened for orientation; organ shapes and pleural spacing are simplified. The colored muscle band below the lungs represents the diaphragm.</figcaption>
-      </figure>
+      </StudyVisual>
       <div className="thorax-structure-list" role="group" aria-label="Structures in the diagram">
         {practice.structures.map((item, index) => <button key={item.id} type="button"
           aria-pressed={selected === index && (!identify || attempt !== null)} onClick={() => choose(index)}>

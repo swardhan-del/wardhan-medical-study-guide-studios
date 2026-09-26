@@ -1,3 +1,4 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { FigureThumbnail } from "@/components/educational-figure";
 import { figureForSubject } from "@/lib/figures";
 import Link from "next/link";
@@ -9,12 +10,7 @@ import {
 } from "@/lib/taxonomy";
 import { studySubjects, subjectLessons } from "@/lib/study-collections";
 import { TopicSearch } from "@/components/topic-search";
-export const metadata = {
-  title: "Medical subjects",
-  description:
-    "Browse medical subjects, systems, topics and available study resources.",
-  alternates: { canonical: "/subjects" },
-};
+export const metadata = searchMetadata("/subjects");
 export default function SubjectsPage() {
   const available = (id: string) => subjectRecords(id);
   const landing = (id: string) => `/study/${id}`;

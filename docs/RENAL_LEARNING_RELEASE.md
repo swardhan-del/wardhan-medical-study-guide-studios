@@ -32,18 +32,7 @@ Editorial status is disclosed as AI-assisted, source-checked educational adaptat
 
 Public course and practice pages have canonical URLs and are in the sitemap. The course exposes truthful Course/LearningResource JSON-LD and a generated sharing image. Private review, reading list and personal study pages are excluded from indexing. Unknown renal routes return a real 404.
 
-Vercel's included Web Analytics option was enabled on the existing Pro project, without the Analytics Plus add-on. The SDK activates only in production. Standard Vercel event usage pricing applies. Production events:
-
-| Event | Meaning | Properties |
-| --- | --- | --- |
-| lesson_started | Lesson component viewed | lesson slug |
-| lesson_completed | Learner marks lesson complete | lesson slug |
-| quiz_started | First answer checked in a set | set ID |
-| quiz_completed | Learner opens final results | set ID |
-| challenge_shared | Challenge link copied successfully | fixed challenge ID |
-| learning_day | First local recorded learning visit on a calendar date | returning boolean |
-
-These are activity events, not proof of learning or exam readiness. Events can repeat across sessions and devices; the browser return flag is not cross-device retention. No answers, scores, drafts, exam dates or persistent student IDs are transmitted. Query strings and hash fragments are stripped. Private study routes are omitted from analytics. Do Not Track, Global Privacy Control and a browser opt-out are honored. Browser-only activity totals are clearly distinguished from aggregate Vercel reports.
+The earlier Vercel SDK and production opt-out model are superseded by the consent-first, provider-neutral measurement layer described in [MEASUREMENT.md](MEASUREMENT.md). The application no longer loads that SDK or sends its automatic page views, lesson-completion, quiz-start, share or returning-day events. Provider settings in the Vercel dashboard are not changed by this code update. Personal learning histories remain local to the browser.
 
 Search Console uses a URL-prefix property for the current Vercel production hostname. `GOOGLE_SITE_VERIFICATION` is configured in Production and rendered through Next metadata. After deployment, verify ownership and submit `/sitemap.xml`. A custom domain is optional and still requires the owner's choice; change `NEXT_PUBLIC_SITE_URL`, update the PDF course URL and reverify the chosen domain when available.
 

@@ -1,14 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl, isIndexable } from "@/lib/site-url";
+import { robotsPolicy } from "@/lib/search-policy";
+
 export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: isIndexable()
-      ? {
-          userAgent: "*",
-          allow: "/",
-          disallow: ["/review", "/reading-list", "/study"],
-        }
-      : { userAgent: "*", disallow: "/" },
-    sitemap: isIndexable() ? `${getSiteUrl()}/sitemap.xml` : undefined,
-  };
+  return robotsPolicy(getSiteUrl(), isIndexable());
 }

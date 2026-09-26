@@ -1,7 +1,8 @@
 "use client";
+import { useLearning } from "./learning-store";
 import Link from "next/link";
 import { SaveButton } from "./save-button";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { subjectInterests } from "@/content/subjects";
 import type { CatalogRecord } from "@/lib/catalog-types";
 import { formatBytes, formatLabels, resourceHref } from "@/lib/catalog-types";
@@ -23,6 +24,9 @@ export function CatalogBrowser({
   initialSubject = "",
   initialQuery = "",
 }: Props) {
+  const searchInput = useRef<HTMLInputElement>(null);
+  const { data, ready: progressReady } = useLearning();
+  const [progress, setProgress] = useState("");
   const [query, setQuery] = useState(initialQuery);
   const [subject, setSubject] = useState(initialSubject);
   const [format, setFormat] = useState("");
@@ -30,7 +34,8 @@ export function CatalogBrowser({
   const [visibleCount, setVisibleCount] = useState(18);
   const { saved, ready } = useReadingList();
   const matchesSubject = (record: CatalogRecord) => !subject || (subject === "genetics-all" ? record.subject === "genetics" : record.status === "private-review" ? record.subject === subject : taxonomy.nodes.some(n => n.subject === subject && n.resources.includes(record.id)));
-  const scoped = records.filter(record => (!savedOnly || saved.includes(record.id)) && matchesSubject(record) && (!format || record.format === format));
+  const progressState = (id: string) => data.lessons.includes(id) ? "complete" : data.journey[id] || data.resume?.lesson === id || data.answers[`concept-${id}`] ? "started" : "new";
+  const scoped = records.filter(record => (!savedOnly || saved.includes(record.id)) && matchesSubject(record) && (!format || record.format === format) && (!progress || (record.kind === "Study lesson" && progressState(record.id) === progress)));
   const filtered = scoped
     .filter(
       (record) =>
@@ -47,7 +52,7 @@ export function CatalogBrowser({
         : searchRank(b, query) - searchRank(a, query) || a.title.localeCompare(b.title),
     );
   const suggestion = query && !filtered.length ? suggestQuery(scoped.map(r => catalogSearchText(r)), query) : null;
-  const hasFilters = Boolean(query || subject || format);
+  const hasFilters = Boolean(query || subject || format || progress);
   const availableFormats = [
     ...new Set(
       records
@@ -57,6 +62,8 @@ export function CatalogBrowser({
   ];
   const shownRecords = filtered.slice(0, visibleCount);
   function reset() {
+    setProgress("");
+    searchInput.current?.focus();
     setQuery("");
     setSubject("");
     setFormat("");
@@ -73,6 +80,7 @@ export function CatalogBrowser({
         <label className="search-field">
           Search resources
           <input
+            ref={searchInput}
             type="search"
             maxLength={200}
             value={query}
@@ -132,6 +140,7 @@ export function CatalogBrowser({
             <option value="recent">Recently updated</option>
           </select>
         </label>
+        {records.some(record => record.status === "public" && record.kind === "Study lesson") && <label>Lesson progress<select aria-label="Lesson progress" value={progress} disabled={!progressReady} onChange={event => { setProgress(event.target.value); setVisibleCount(18); }}><option value="">All resources</option><option value="new">Lessons not started</option><option value="started">Lessons in progress</option><option value="complete">Lessons marked complete</option></select></label>}
       </div>
       <div className="catalog-summary">
         <p role="status" aria-live="polite">
@@ -170,6 +179,7 @@ export function CatalogBrowser({
                 </Link>
               </h2>
               <p>{record.summary}</p>
+              {record.kind === "Study lesson" && progressReady && <p className="practice-status">{progressState(record.id) === "complete" ? "Marked complete" : progressState(record.id) === "started" ? "In progress" : "Not started"}</p>}
               {query && searchRank(record, query) === 1 && <p className="search-match-note">Matches lesson explanation, figure caption or recap</p>}
               <div className="resource-bottom">
                 <Link

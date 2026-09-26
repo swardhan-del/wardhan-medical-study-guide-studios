@@ -21,11 +21,6 @@ const contentSecurityPolicy = [
 ].join("; ");
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  env: {
-    // Pre-launch gate: retire automatic opt-out tracking. Phase Nine replaces
-    // this legacy integration with separately configured, consent-first events.
-    NEXT_PUBLIC_LEARNING_ANALYTICS: "0",
-  },
   poweredByHeader: false,
   outputFileTracingExcludes: { "/*": ["./.private/**/*", "./.private/catalog.json"] },
   async redirects() {
@@ -50,9 +45,18 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        // Only the waitlist document can load the opt-in spam-protection widget.
+        source: "/waitlist",
+        headers: [
+          { key: "Content-Security-Policy", value: contentSecurityPolicy.replace("script-src 'self'", "script-src 'self' https://challenges.cloudflare.com").replace("frame-src 'self'", "frame-src 'self' https://challenges.cloudflare.com") },
+          { key: "Referrer-Policy", value: "no-referrer" },
+        ],
+      },
+      {
         // Permit the site's PDF reader without allowing external sites to frame it.
         source: "/downloads/:path*",
         headers: [
+          { key: "X-Robots-Tag", value: "noindex, follow" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           {
             key: "Content-Security-Policy",

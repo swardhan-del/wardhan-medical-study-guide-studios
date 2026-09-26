@@ -1,3 +1,4 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { FigureGallery } from "@/components/educational-figure";
 import { figuresForTopic } from "@/lib/figures";
 import Link from "next/link";
@@ -15,12 +16,7 @@ export function generateStaticParams() {
 }
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
-  const n = taxonomyNodes.find((n) => n.id === id);
-  return {
-    title: n?.title || "Topic not found",
-    description: n?.description,
-    alternates: { canonical: topicHref(id) },
-  };
+  return searchMetadata(`/topics/${id}`);
 }
 export default async function TopicPage({ params }: Props) {
   const { id } = await params;

@@ -2,6 +2,38 @@
   "version": 1,
   "groups": [
     {
+      "id": "physiology-membrane-foundations",
+      "title": "Foundations · Membrane transport and voltage",
+      "subject": "physiology",
+      "lessonIds": [
+        "physiology-membrane-foundations"
+      ]
+    },
+    {
+      "id": "biochemistry-enzyme-foundations",
+      "title": "Foundations · Enzymes and regulation",
+      "subject": "biochemistry",
+      "lessonIds": [
+        "biochemistry-enzyme-foundations"
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations",
+      "title": "Foundations · Genome and inheritance",
+      "subject": "genetics",
+      "lessonIds": [
+        "genetics-genome-foundations"
+      ]
+    },
+    {
+      "id": "biophysics-membrane-foundations",
+      "title": "Foundations · Diffusion and membranes",
+      "subject": "biophysics",
+      "lessonIds": [
+        "biophysics-membrane-foundations"
+      ]
+    },
+    {
       "id": "anatomy-foundations",
       "title": "Foundations · Orientation and organisation",
       "subject": "anatomy",

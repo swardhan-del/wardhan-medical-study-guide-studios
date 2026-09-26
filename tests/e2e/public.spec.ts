@@ -301,10 +301,10 @@ test("models respond, ABG reasoning corrects mistakes and reset restores baselin
   });
   await slider.focus();
   await slider.press("End");
-  await expect(page.getByTestId("renal-flow")).toHaveText("67%");
-  await expect(page.getByTestId("renal-pressure")).toHaveText("67");
+  await expect(page.locator('[data-testid="renal-flow"]:visible')).toHaveText("67%");
+  await expect(page.locator('[data-testid="renal-pressure"]:visible')).toHaveText("67");
   await page.getByRole("button", { name: "Reset resistance" }).click();
-  await expect(page.getByTestId("renal-flow")).toHaveText("100%");
+  await expect(page.locator('[data-testid="renal-flow"]:visible')).toHaveText("100%");
   const abg = page.getByRole("region", { name: "ABG interpretation exercise" });
   await abg.getByLabel("1. Describe the pH").selectOption("Acidemia");
   await abg
@@ -481,7 +481,7 @@ test("new lesson supports explained correction, oral recall, related pages and s
   await expect(check.locator(".concept-feedback > p").first()).toHaveText("Correct.");
   await page.getByText("Reveal a model answer", { exact: true }).click();
   await expect(
-    page.getByRole("region", { name: "Practise an oral answer" }).getByText(/Alveoli need a short diffusion distance/),
+    page.getByRole("region", { name: "Oral Examination Prompts" }).getByText(/Alveoli need a short diffusion distance/),
   ).toBeVisible();
   await page.getByRole("button", { name: /Save to My Study: Epithelia:/ }).click();
   await page.goto("/reading-list");
@@ -533,7 +533,8 @@ test("cross-subject lessons render sources and fit the viewport", async ({
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).toContain("/library/placenta");
   expect(sitemap).toContain("/library/pcr");
-  expect(sitemap).toContain("/library/renal-kidney-map");
+  expect(sitemap).toContain("/learn/renal/kidney-map");
+  expect(sitemap).not.toContain("/library/renal-kidney-map");
   await page.goto("/library?subject=histology");
   await page.screenshot({
     path: testInfo.outputPath("histology-library.png"),

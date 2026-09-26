@@ -1,20 +1,10 @@
 import { SaveButton } from "@/components/save-button";
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { renalChallengeIds, renalQuestions } from "@/content/renal-course";
 import { RenalQuiz } from "@/components/renal-quiz";
 import { ShareChallenge } from "@/components/lesson-actions";
-export const metadata = {
-  title: "Five-minute renal physiology challenge",
-  description:
-    "Five free questions on filtration, ADH and acid–base balance. Learn why each answer works, then share the challenge.",
-  alternates: { canonical: "/practice/renal-challenge" },
-  openGraph: {
-    title: "Can you explain the kidney in five questions?",
-    description: "Try the free five-minute renal challenge.",
-    url: "/practice/renal-challenge",
-    images: ["/learn/renal/opengraph-image"],
-  },
-};
+export const metadata = searchMetadata("/practice/renal-challenge");
 export default function ChallengePage() {
   return (
     <div className="site-container study-page">

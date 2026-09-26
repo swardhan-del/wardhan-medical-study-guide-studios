@@ -1,11 +1,9 @@
 export function getSiteUrl() {
   const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  const fallback =
-    process.env.VERCEL_ENV === "preview"
-      ? process.env.VERCEL_URL
-      : process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL;
-  const value =
-    configured || (fallback ? `https://${fallback}` : "http://localhost:3000");
+  // Preview metadata points to the public origin, never an ephemeral deployment.
+  const fallback = process.env.VERCEL_PROJECT_PRODUCTION_URL ||
+    ((process.env.VERCEL || process.env.VERCEL_ENV) ? "wardhan-medical-study-guide-studios.vercel.app" : undefined);
+  const value = configured || (fallback ? `https://${fallback}` : "http://localhost:3000");
   const url = new URL(value);
   if (
     !["https:", "http:"].includes(url.protocol) ||
@@ -22,5 +20,5 @@ export function getSiteUrl() {
   return url.origin;
 }
 export function isIndexable() {
-  return process.env.VERCEL_ENV === "production";
+  return process.env.VERCEL_ENV === "production" && process.env.LOCAL_CURATION_REVIEW !== "1";
 }
