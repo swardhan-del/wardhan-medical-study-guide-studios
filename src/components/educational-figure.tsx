@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element -- Pre-generated, hash-approved srcsets avoid a second lossy conversion and preserve diagram labels. */
 import { useEffect, useId, useRef, useState } from "react";
 import type { PublicFigure } from "@/lib/figures";
+import { StudyVisual } from "./study-visual";
 const srcSet = (f: PublicFigure) =>
   f.variants
     .filter((v) => v.width <= 1280)
@@ -27,6 +28,8 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
     id = useId();
   const [open, setOpen] = useState(false),
     [zoom, setZoom] = useState(1);
+  const [failed, setFailed] = useState(false);
+  const [largeFailed, setLargeFailed] = useState(false);
   useEffect(() => {
     if (!open) return;
     const previous = document.body.style.overflow;
@@ -37,12 +40,14 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
   }, [open]);
   function enlarge() {
     setZoom(1);
+    setLargeFailed(false);
     setOpen(true);
     dialog.current?.showModal();
   }
   return (
-    <figure className="educational-figure" id={"figure-" + figure.id}>
-      <button
+    <StudyVisual className="educational-figure" id={"figure-" + figure.id} title={figure.title} alt={figure.alt} caption={figure.caption} observe={figure.observe}
+      credit={`${figure.rights}. ${figure.modifications}`} sources={[{ title: "Image source or supporting scientific reference", url: figure.sourceUrl }]}>
+      {failed ? <div className="visual-image-fallback" role="status"><p><strong>Image unavailable.</strong> {figure.alt}</p><button onClick={enlarge}>Try the full-size image</button></div> : <button
         className="figure-open"
         onClick={enlarge}
         aria-label={"Enlarge " + figure.title}
@@ -57,22 +62,10 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
           alt={figure.alt}
           loading="lazy"
           decoding="async"
+          onError={() => setFailed(true)}
         />
         <span>Enlarge and zoom</span>
-      </button>
-      <figcaption>
-        <strong>{figure.title}</strong>
-        <p>{figure.caption}</p>
-        <details>
-          <summary>Figure source and usage</summary>
-          <p>
-            {figure.rights}. {figure.modifications}
-          </p>
-          <a href={figure.sourceUrl}>
-            Source description or scientific reference
-          </a>
-        </details>
-      </figcaption>
+      </button>}
       <dialog
         className="figure-dialog"
         ref={dialog}
@@ -124,23 +117,24 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
               role="region"
               aria-label="Scrollable enlarged image"
             >
-              <img
+              {largeFailed ? <p className="visual-image-fallback" role="status"><strong>Full-size image unavailable.</strong> {figure.alt}</p> : <img
                 src={figure.src}
                 width={figure.width}
                 height={figure.height}
                 alt={figure.alt}
+                onError={() => setLargeFailed(true)}
                 style={{
                   width: `${zoom * 100}%`,
                   maxWidth: "none",
                   height: "auto",
                 }}
-              />
+              />}
             </div>
             <p>{figure.caption}</p>
           </>
         )}
       </dialog>
-    </figure>
+    </StudyVisual>
   );
 }
 export function FigureGallery({

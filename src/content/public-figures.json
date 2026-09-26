@@ -19,7 +19,9 @@
         "topic-anatomy-thorax"
       ],
       "resourceIds": [
-        "anatomy-thorax"
+        "anatomy-thorax",
+        "thoracic-cage-landmarks",
+        "mediastinum-great-vessels"
       ],
       "width": 900,
       "height": 760,
@@ -45,7 +47,8 @@
         }
       ],
       "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes.",
+      "observe": "Locate the sternal angle and the T4–T5 plane. Explain which mediastinal division lies above and which lies below it."
     },
     {
       "id": "abdominal-regions",
@@ -53,7 +56,7 @@
       "sourceAsset": "images/anatomy/volume-2.png",
       "kind": "diagram",
       "alt": "Three-by-three abdominal region grid: right hypochondriac, epigastric, left hypochondriac; right lumbar, umbilical, left lumbar; right inguinal, hypogastric, left inguinal.",
-      "caption": "Read right and left from the patient’s perspective. This recall schematic names the nine regions; it does not show organ boundaries or diagnostic findings.",
+      "caption": "Read right and left from the patient’s perspective. This orientation schematic names the nine regions; it does not show organ boundaries or diagnostic findings.",
       "rights": "Original volume schematic; previously released website copy",
       "evidence": "docs/ANATOMY_PREVIEWS.md",
       "sourceUrl": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
@@ -65,7 +68,8 @@
         "topic-anatomy-abdomen"
       ],
       "resourceIds": [
-        "anatomy-abdomen"
+        "anatomy-abdomen",
+        "abdominal-surface-map"
       ],
       "width": 1600,
       "height": 980,
@@ -97,7 +101,8 @@
         }
       ],
       "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes.",
+      "observe": "Locate the umbilical region and its neighbours. Explain why a surface region alone does not identify a single underlying organ."
     },
     {
       "id": "cuboidal-section",
@@ -156,7 +161,8 @@
         }
       ],
       "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes.",
+      "observe": "Trace the lining around a lumen and combine cell shape with the number of layers. Explain why this view alone does not identify a precise nephron segment."
     },
     {
       "id": "squamous-section",
@@ -208,7 +214,8 @@
         }
       ],
       "publicApproval": "Retained public release plus requested website placement and derivative preparation, 2026-09-07",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabeling or scientific changes.",
+      "observe": "Locate the free surface and compare superficial with deeper cells. Use surface-cell shape together with the number of layers."
     },
     {
       "id": "thorax",
@@ -259,7 +266,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Trace the nerve routes relative to the lung root. State the viewing direction before comparing right and left relationships."
     },
     {
       "id": "portal-triad",
@@ -310,7 +318,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Separate the bile route from the portal venous and arterial routes. Explain why their neighbouring positions do not imply identical contents or direction."
     },
     {
       "id": "renal-development",
@@ -329,7 +338,9 @@
         "topic-pelvis-urinary-route"
       ],
       "resourceIds": [
-        "pelvis-urinary-route"
+        "pelvis-urinary-route",
+        "urinary-development",
+        "anatomy-embryology"
       ],
       "width": 1800,
       "height": 1200,
@@ -361,7 +372,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Trace the labelled developmental routes and relate them to the collecting system. Distinguish the schematic sequence from a scale reconstruction."
     },
     {
       "id": "tongue-innervation",
@@ -412,7 +424,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Compare general sensation with taste over the anterior two-thirds. Locate the circumvallate exception; motor supply is not shown."
     },
     {
       "id": "brachial-plexus-map",
@@ -431,7 +444,9 @@
         "topic-limbs-plexus-and-joints"
       ],
       "resourceIds": [
-        "limbs-plexus-and-joints"
+        "limbs-plexus-and-joints",
+        "anatomy-regional-anatomy",
+        "anatomy-musculoskeletal"
       ],
       "width": 2400,
       "height": 1600,
@@ -463,7 +478,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Trace one route from root through trunk, division and cord to a terminal nerve. Name each level rather than following colour alone."
     },
     {
       "id": "neuronal-conductance",
@@ -516,7 +532,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Relate the labelled conductance changes to the voltage trace. Explain why membrane voltage and ion conductance are different quantities."
     },
     {
       "id": "ventricular-pressure-volume",
@@ -537,7 +554,8 @@
       ],
       "resourceIds": [
         "cardiac-cycle",
-        "cardiac-output"
+        "cardiac-output",
+        "biophysics-circulation-ecg"
       ],
       "width": 2200,
       "height": 1450,
@@ -569,7 +587,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Compare loop width and end-systolic position with the grey control loop. Explain why changing one variable at a time matters."
     },
     {
       "id": "airway-dead-space",
@@ -590,7 +609,8 @@
       ],
       "resourceIds": [
         "respiratory-mechanics",
-        "ventilation-perfusion"
+        "ventilation-perfusion",
+        "biophysics-respiratory-physics"
       ],
       "width": 1536,
       "height": 1024,
@@ -622,7 +642,8 @@
         }
       ],
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
-      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes."
+      "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
+      "observe": "Distinguish conducting from exchange regions. Compare the solid oxygen-rich washout signal with the dashed nitrogen signal; explain why an uncalibrated sketch cannot provide a dead-space volume."
     }
   ]
 }

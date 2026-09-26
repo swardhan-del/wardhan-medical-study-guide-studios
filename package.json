@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "prebuild": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs",
-    "content:check": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs",
+    "prebuild": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs",
+    "content:check": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs",
     "content:library": "node scripts/build-library-catalog.mjs",
     "content:import": "node scripts/import-curation.mjs",
     "review": "node scripts/local-review.mjs",
@@ -26,6 +26,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.63.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",

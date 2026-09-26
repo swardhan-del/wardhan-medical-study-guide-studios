@@ -5,6 +5,7 @@ import { SavedRecall } from "./saved-recall";
 import { PracticeQuestion } from "./practice-question";
 import transfer from "@/content/transfer-practice.json";
 import { useState } from "react";
+import { StudyVisual } from "./study-visual";
 import Link from "next/link";
 import {
   renalCircuit,
@@ -28,6 +29,12 @@ export function RenalHemodynamics() {
       </p>
       <div className="study-panel"><h3>1. Predict before moving a slider</h3><p>Keep afferent resistance at 1 and double efferent resistance. Predict the direction of flow and glomerular pressure separately.</p><SavedRecall id="lab-prediction" label="My prediction and reason" /></div>
       <h3>2. Run the experiment</h3>
+      <StudyVisual title="Resistance before and after the glomerulus"
+        alt={`Afferent resistance ${afferent.toFixed(1)} times baseline precedes the glomerulus; efferent resistance ${efferent.toFixed(1)} times baseline follows it. Calculated glomerular pressure is ${model.pressure} model units.`}
+        caption="A simplified resistance circuit, not a measured kidney or a clinical prediction of filtration. Pressure units are arbitrary; use the controls to distinguish pressure from flow."
+        observe="Change efferent resistance while keeping afferent resistance fixed. Compare the direction of the pressure change with the flow result below."
+        credit="Original calculated teaching model · Wardhan Medical Study Guide Studios; AI-assisted."
+        sources={[{title:"NIDDK: Your kidneys and how they work",url:"https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"}]}>
       <div className="circuit-map" aria-label="Blood pathway">
         <span>
           Afferent
@@ -46,6 +53,7 @@ export function RenalHemodynamics() {
           <strong>{efferent.toFixed(1)}×</strong>
         </span>
       </div>
+      </StudyVisual>
       <div className="study-grid two">
         <label className="slider-label">
           Afferent resistance <output>{afferent.toFixed(1)}×</output>
