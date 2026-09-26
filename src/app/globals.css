@@ -4077,6 +4077,9 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .revision-page .revision-lesson p { white-space: pre-line; }
 }
 
+/* Non-modal, in-flow consent controls never obstruct learning or keyboard focus. */
+.measurement-notice { margin-block: 1.5rem; }
+.measurement-notice h2 { font-size: 1.4rem; }
 /* Guided topic sequences reuse the lesson panels and type scale. */
 .topic-sequence-steps { list-style: none; padding: 0; display: grid; gap: 1.5rem; }
 .topic-sequence-steps > li { min-width: 0; }

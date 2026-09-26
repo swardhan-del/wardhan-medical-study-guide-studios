@@ -49,14 +49,12 @@ export function RenalQuiz({
   );
   function check() {
     if (choice === null || checked) return;
-    if (Object.keys(results).length === 0)
-      learningEvent("quiz_started", { set: quizId });
     setResults((previous) => ({ ...previous, [question.id]: choice }));
     recordAnswer(question.id, choice === question.answer, choice);
   }
   function next() {
     if (index === questions.length - 1) {
-      learningEvent("quiz_completed", { set: quizId });
+      learningEvent({ version: 1, event: "quiz_completed", quiz_id: quizId });
       setFinished(true);
       updateLearning((s) => ({ ...s, quizzes: s.quizzes + 1 }));
     } else {

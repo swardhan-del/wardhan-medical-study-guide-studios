@@ -125,14 +125,16 @@ test('waitlist, privacy, terms and starter resources pass accessibility and narr
 });
 
 test('privacy preference is explicit, revocable, and never enabled by viewing the waitlist', async ({ page }) => {
+  const config = { enabled: true, recipient: "Test recipient", privacyUrl: "https://collector.example.invalid/privacy", consentVersion: "abcdef012345abcdef012345" };
+  await page.route("**/api/measurement", route => route.fulfill({ json: config }));
   await page.goto('/privacy');
-  expect(await page.evaluate(() => localStorage.getItem('wardhan-analytics-optout'))).toBeNull();
-  await page.getByRole('button', { name: 'Allow analytics', exact: true }).click();
-  expect(await page.evaluate(() => localStorage.getItem('wardhan-analytics-optout'))).toBe('0');
-  await page.getByRole('button', { name: 'Disable analytics in this browser' }).click();
-  expect(await page.evaluate(() => localStorage.getItem('wardhan-analytics-optout'))).toBe('1');
+  await page.getByRole('button', { name: 'Allow optional analytics', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Withdraw analytics consent' })).toBeVisible();
+  await page.getByRole('button', { name: 'Withdraw analytics consent' }).click();
   await page.goto('/waitlist');
-  expect(await page.evaluate(() => localStorage.getItem('wardhan-analytics-optout'))).toBe('1');
+  await expect(page.getByRole('button', { name: 'Keep analytics off', exact: true })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole('button', { name: 'Keep analytics off', exact: true })).toBeVisible();
 });
 
 test('demo API does not accept an address as a real signup and is not cacheable', async ({ request }) => {

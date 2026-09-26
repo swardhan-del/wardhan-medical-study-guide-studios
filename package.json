@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "prebuild": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs",
-    "content:check": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs",
+    "prebuild": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs && node scripts/build-measurement-registry.mjs --check",
+    "content:check": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs && node scripts/build-measurement-registry.mjs --check",
     "content:library": "node scripts/build-library-catalog.mjs",
     "content:import": "node scripts/import-curation.mjs",
     "review": "node scripts/local-review.mjs",
@@ -20,7 +20,6 @@
     "content:anatomy": "node scripts/build-anatomy-course.mjs && node scripts/build-library-catalog.mjs"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

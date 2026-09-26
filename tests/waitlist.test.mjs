@@ -1,8 +1,9 @@
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { waitlistConfig, publicWaitlistConfig, handleWaitlist } from '../src/lib/waitlist-server.ts';
 import { validateWaitlist, WAITLIST_CONSENT_VERSION } from '../src/lib/waitlist.ts';
-import { analyticsAllowed, filterAnalyticsEvent } from '../src/lib/learning-analytics.ts';
+
 
 const env = { WAITLIST_MODE: 'brevo', WAITLIST_ORIGIN: 'https://study.example', BREVO_API_KEY: 'private-provider-key', BREVO_WAITLIST_LIST_ID: '23', BREVO_DOI_TEMPLATE_ID: '42', TURNSTILE_SITE_KEY: 'public-widget-key', TURNSTILE_SECRET_KEY: 'private-spam-key' };
 const live = waitlistConfig(env);
@@ -98,29 +99,9 @@ test('provider errors, rate limits, unexpected success codes and timeouts never 
   }
 });
 
-test('analytics requires explicit consent and honours browser privacy signals and blocked storage', () => {
-  const previous = process.env.NEXT_PUBLIC_LEARNING_ANALYTICS;
-  process.env.NEXT_PUBLIC_LEARNING_ANALYTICS = '1';
-  globalThis.window = {};
-  const originalNavigator = Object.getOwnPropertyDescriptor(globalThis, 'navigator');
-  Object.defineProperty(globalThis, 'navigator', { value: {}, configurable: true });
-  let stored = null;
-  globalThis.localStorage = { getItem: () => stored };
-  try {
-    assert.equal(analyticsAllowed(), false);
-    assert.equal(filterAnalyticsEvent({ type: 'event', url: 'https://study.example/waitlist' }), null);
-    stored = '0'; assert.equal(analyticsAllowed(), true);
-    assert.equal(filterAnalyticsEvent({ type: 'pageview', url: 'https://study.example/waitlist' }), null);
-    assert.deepEqual(filterAnalyticsEvent({ type: 'event', url: 'https://study.example/waitlist?email=private#secret' }), { type: 'event', url: 'https://study.example/waitlist' });
-    stored = '1'; assert.equal(analyticsAllowed(), false);
-    stored = '0'; navigator.doNotTrack = '1'; assert.equal(analyticsAllowed(), false);
-    navigator.doNotTrack = '0'; navigator.globalPrivacyControl = true; assert.equal(analyticsAllowed(), false);
-    navigator.globalPrivacyControl = false;
-    localStorage.getItem = () => { throw new Error('blocked'); }; assert.equal(analyticsAllowed(), false);
-  } finally {
-    delete globalThis.window; delete globalThis.localStorage;
-    if (originalNavigator) Object.defineProperty(globalThis, 'navigator', originalNavigator);
-    if (previous === undefined) delete process.env.NEXT_PUBLIC_LEARNING_ANALYTICS;
-    else process.env.NEXT_PUBLIC_LEARNING_ANALYTICS = previous;
-  }
+test('waitlist measurement uses only the consent-gated acceptance hook', () => {
+  const form = readFileSync(new URL('../src/components/waitlist-form.tsx', import.meta.url), 'utf8');
+  assert.match(form, /response.status === 202 && body.status === "pending"/);
+  assert.match(form, /recordWaitlistSubmitted\(true\)/);
+  assert(!form.includes('learningEvent('));
 });

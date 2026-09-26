@@ -1,5 +1,4 @@
 "use client";
-import { learningEvent } from "@/lib/learning-analytics";
 import { useSyncExternalStore } from "react";
 import { learningLessonIds, learningQuestionIds, learningDraftIds, practiceItems } from "@/content/practice-registry";
 import {
@@ -69,6 +68,7 @@ export function updateLearning(
   }
   snapshot = { ready: true, persistent, data };
   notify();
+  return persistent;
 }
 export function recordAnswer(id: string, correct: boolean, choice: number | null = null, usedHint = false) {
   if (!questionIds.includes(id)) return;
@@ -85,15 +85,12 @@ export function recordAnswer(id: string, correct: boolean, choice: number | null
 export function recordVisit() {
   const today = localDate();
   if (getSnapshot().data.visits.includes(today)) return;
-  learningEvent("learning_day", {
-    returning: getSnapshot().data.visits.length > 0,
-  });
   updateLearning((s) => ({ ...s, visits: [...s.visits, today].slice(-366) }));
 }
 
 export function saveDraft(id: string, value: string) {
-  if (!learningDraftIds.includes(id)) return;
-  updateLearning((s) => ({ ...s, drafts: { ...s.drafts, [id]: value.slice(0, 5000) } }));
+  if (!learningDraftIds.includes(id)) return false;
+  return updateLearning((s) => ({ ...s, drafts: { ...s.drafts, [id]: value.slice(0, 5000) } }));
 }
 
 export function rememberLesson(lesson: string, stage?: "learn" | "practice" | "summary") {
@@ -104,7 +101,7 @@ export function rememberLesson(lesson: string, stage?: "learn" | "practice" | "s
 }
 export function updateJourney(lesson: string, patch: Partial<LearningProgress["journey"][string]>) {
   if (!lessonIds.includes(lesson)) return;
-  updateLearning(state => ({ ...state, lessons: patch.read === false || patch.reviewed === false ? state.lessons.filter(id => id !== lesson) : state.lessons, journey: { ...state.journey, [lesson]: {
+  return updateLearning(state => ({ ...state, lessons: patch.read === false || patch.reviewed === false ? state.lessons.filter(id => id !== lesson) : state.lessons, journey: { ...state.journey, [lesson]: {
     ...(state.journey[lesson] ?? { read: false, reviewed: false, saved: false }), ...patch, at: Date.now(),
   } } }));
 }

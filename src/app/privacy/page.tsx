@@ -55,23 +55,33 @@ export default function PrivacyPage() {
         <p>
           The hosting service processes requests needed to deliver the site,
           which can include network and browser information. Opening a resource
-          hosted elsewhere sends a request to that file’s host. Only after you
-          choose “Allow analytics”, production may use Vercel Web Analytics for page views and curriculum activity events.
-          Events contain fixed lesson or quiz identifiers, or a
-          returning-study-day flag; they do not include answer text, scores,
-          oral drafts or exam dates. Query strings and personal study pages are
-          excluded from page-view tracking, as are waitlist pages. One fixed
-          waitlist event may record that the email provider accepted a confirmation
-          request; it does not prove delivery or confirmed membership. It contains
-          no address, token or form text. This site honours Do Not Track and
-          Global Privacy Control signals.
+          hosted elsewhere sends a request to that file’s host. The website checks
+          its own analytics configuration without sending a learning event or
+          contacting an analytics recipient. No optional measurement starts
+          before you choose “Allow optional analytics”.
+        </p>
+        <h2>Optional analytics</h2>
+        <p>
+          If configured and allowed, measurement sends only an event name and a
+          public subject, lesson, quiz or resource identifier. It helps us understand
+          which learning resources are used. It does not send names, email addresses,
+          student identifiers, answers, scores, written explanations, exam dates,
+          page URLs, search terms or referrers. We do not add advertising trackers,
+          cross-site identifiers, session recordings or automatic page-view tracking.
+          The named recipient and its privacy information appear in the controls below
+          when measurement is configured. This site does not forward your IP address,
+          browser headers or cookies to that recipient.
+        </p>
+        <p>
+          You can refuse or withdraw permission without losing access to any study
+          feature. Your choice is stored in this browser for up to 180 days, separately
+          from your study progress. A changed measurement policy or recipient requires
+          a new choice. Earlier activity is not sent when you opt in. Withdrawal stops
+          new events; it cannot recall counts already delivered. Do Not Track and
+          Global Privacy Control keep measurement off. If configuration, storage or
+          delivery is unavailable, your lessons and practice continue to work.
         </p>
         <h2>Analytics preference</h2>
-        <p>
-          Analytics is off unless you explicitly allow it in this browser.
-          You can withdraw permission here at any time. Joining the waitlist
-          never enables analytics. The setting does not change your study progress.
-        </p>
         <AnalyticsPreference />
       </div>
     </div>

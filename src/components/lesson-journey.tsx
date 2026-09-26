@@ -1,4 +1,5 @@
 "use client";
+import { learningEvent } from "@/lib/learning-analytics";
 import { useEffect } from "react";
 import Link from "next/link";
 import type { JourneyLesson } from "@/lib/lesson-journeys";
@@ -52,7 +53,7 @@ export function LessonReview({ lesson }: { lesson: JourneyLesson }) {
     <p>{lesson.summary}</p>
     <p>Compare this recap with your answers. Revisit the explanation for any point you could not explain.</p>
     <div className="action-row">
-      <button className="button button-secondary" disabled={!ready} aria-pressed={!!entry?.saved} onClick={() => updateJourney(lesson.id, { saved: !entry?.saved })}>{entry?.saved ? "Summary saved — remove" : "Save summary to My Study"}</button>
+      <button className="button button-secondary" disabled={!ready} aria-pressed={!!entry?.saved} onClick={() => { const stored = updateJourney(lesson.id, { saved: !entry?.saved }); if (stored && !entry?.saved) learningEvent({ version: 1, event: "summary_saved", lesson_id: lesson.id }); }}>{entry?.saved ? "Summary saved — remove" : "Save summary to My Study"}</button>
       <button className="button button-secondary" disabled={!ready} aria-pressed={!!entry?.reviewed} onClick={() => updateJourney(lesson.id, { reviewed: !entry?.reviewed })}>{entry?.reviewed ? "Summary reviewed — undo" : "Mark summary reviewed"}</button>
     </div>
     <p role="status">{entry?.saved ? (persistent ? "Summary saved in this browser. Find it in My Study." : "Summary kept for this visit only. Browser storage is unavailable.") : "Save this published recap to revisit it without repeating the lesson."}</p>

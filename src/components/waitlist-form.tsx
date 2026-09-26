@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { WaitlistSpamCheck } from "./waitlist-spam-check";
-import { learningEvent } from "@/lib/learning-analytics";
+import { recordWaitlistSubmitted } from "@/lib/learning-analytics";
 import { demoMessage, validateWaitlist, WAITLIST_CONSENT_VERSION, waitlistConsent } from "@/lib/waitlist";
 import type { WaitlistErrors, WaitlistPublicConfig } from "@/lib/waitlist";
 
@@ -59,7 +59,7 @@ export function WaitlistForm() {
         setEmail(""); setConsent(false); setComplete(true);
         setMessage("Confirmation requested. Check your inbox and spam folder for an email from Study Guide Studios. You join only after confirming through that email. Delivery is not guaranteed.");
         // Fixed event only; never pass addresses, tokens, URLs, or form values.
-        learningEvent("waitlist_confirmation_requested");
+        recordWaitlistSubmitted(true);
       } else if (body.status === "demo") {
         setFailed(true); setMessage("Signups are now in demo mode. You have not been added to the waitlist. Reload this page to try the demo.");
       } else {
