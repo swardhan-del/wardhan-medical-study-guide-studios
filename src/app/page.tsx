@@ -1,4 +1,6 @@
 import { WaitlistCta } from "@/components/waitlist-cta";
+import { ContinueLearning } from "@/components/continue-learning";
+import { journeyIndex } from "@/lib/lesson-journeys";
 import { QuickSearch } from "@/components/quick-search";
 import Link from "next/link";
 import { SubjectCard } from "@/components/subject-card";
@@ -10,7 +12,7 @@ export const metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   return (
     <div className="page-stack">
-      <div className="site-container quick-start"><QuickSearch /><nav className="quick-links" aria-label="Quick study access"><Link href="/subjects">All subjects and coverage</Link><Link href="/study">Continue studying</Link><Link href="/study#saved-learning">Saved resources</Link></nav></div>
+      <div className="site-container quick-start"><QuickSearch /><nav className="quick-links" aria-label="Quick study access"><Link href="/subjects">All subjects and coverage</Link><Link href="/library">Search the library</Link><Link href="/study">Continue studying</Link><Link href="/study#saved-learning">Saved resources</Link></nav></div>
       <section
         className="hero-section site-container learning-home"
         aria-labelledby="home-heading"
@@ -34,7 +36,9 @@ export default function Home() {
         </div>
         <aside className="hero-aside" aria-label="Your first study session"><p className="eyebrow">Start learning</p><h2>Choose your subject</h2><nav className="home-subject-links" aria-label="Start a subject">{studySubjects.map(s => <Link key={s.id} href={`/study/${s.id}`}>{s.title} →</Link>)}</nav></aside>
       </section>
+      <div className="site-container"><ContinueLearning lessons={journeyIndex} /></div>
       <section className="site-container study-panel" aria-labelledby="anatomy-first-heading"><p className="eyebrow">Free Anatomy learning path</p><h2 id="anatomy-first-heading">Start with orientation. Build towards regional anatomy.</h2><p>Learn anatomical position, planes, directions and body cavities through labelled diagrams, explained questions and a saved summary checklist.</p><div className="action-row"><Link className="button button-primary" href="/library/anatomy-foundations">Begin Anatomy Foundations</Link><Link className="text-link" href="/subjects/anatomy#anatomy-course-map">Explore the Anatomy course map →</Link></div></section>
+      <section className="site-container study-panel" aria-labelledby="histology-first-heading"><p className="eyebrow">Free Histology learning path</p><h2 id="histology-first-heading">Recognise tissues. Explain what you see.</h2><p>Compare the four basic tissue families, follow a worked identification example and practise with explained questions and visual study prompts.</p><div className="action-row"><Link className="button button-primary" href="/library/histology-foundations-tissues">Begin Histology Foundations</Link><Link className="text-link" href="/study/histology#subject-topic-map">Explore the Histology topic map →</Link></div></section>
       <section
         className="content-section site-container"
         aria-labelledby="subject-heading"

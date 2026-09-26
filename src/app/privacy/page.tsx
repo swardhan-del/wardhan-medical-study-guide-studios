@@ -30,7 +30,8 @@ export default function PrivacyPage() {
         </p>
         <h2>Learning progress</h2>
         <p>
-          Lesson completion, quiz attempts, review dates, study-day counts, oral
+          The last library lesson and section visited, saved summary identifiers,
+          explanation and summary review states, lesson completion, quiz attempts, review dates, study-day counts, oral
           self-assessment and your exam plan are stored in this browser. They
           stay in this browser as detailed records. Aggregate activity events
           are described below. Open My Study to download a progress record or

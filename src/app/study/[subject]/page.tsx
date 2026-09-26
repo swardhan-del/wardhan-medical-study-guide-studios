@@ -1,7 +1,7 @@
 import { WaitlistCta } from "@/components/waitlist-cta";
 import { AnatomyLearningPath } from "@/components/anatomy-learning-path";
 import { AnatomyCourseIntro } from "@/components/anatomy-course";
-import { BeginnerSequence } from "@/components/beginner-sequence";
+import { SubjectHubOverview, SubjectTopicMap } from "@/components/subject-hub";
 import searchIndex from "@/content/public-search.json";
 import Link from "next/link";
 import { BiophysicsCourseIntro } from "@/components/biophysics-course";
@@ -26,9 +26,10 @@ export default async function SubjectStudyPage({ params }: Props) {
  return <div className="site-container study-page">
    <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/subjects">Subjects</Link><span aria-hidden="true"> / </span><span aria-current="page">{s.title}</span></nav>
    <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><div className="action-row"><Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start the first lesson</Link><Link href={`/learn/foundations/${subject}`}>Learn the foundations</Link></div><p className="interior-lede">{s.description}</p>
-     <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link></div>
+     <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link><Link href="/library">Return to the library</Link></div>
    </header>
-   {subject === "anatomy" ? <AnatomyLearningPath/> : <BeginnerSequence subject={subject} />}
+   <SubjectHubOverview subject={subject} />
+   {subject === "anatomy" ? <AnatomyLearningPath/> : <SubjectTopicMap subject={subject} />}
    {subject === "anatomy" && <AnatomyCourseIntro />}
    {subject === "histology" && <section className="study-panel"><h2>Practise recognising real sections</h2><p>Start with epithelial structure, hide the labels, then compare the two available microscope sections. Renal tubule practice begins with three schematics and links to further public slide practice.</p><div className="action-row"><Link href="/library/epithelia">Study epithelium and compare sections</Link><Link href="/practice/histology">Open tissue identification practice</Link></div></section>}
    {subject === "biophysics" && <BiophysicsCourseIntro />}

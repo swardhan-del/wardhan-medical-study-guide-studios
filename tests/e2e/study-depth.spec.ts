@@ -1,3 +1,4 @@
+import { newEntryLessonIds } from "../../src/content/subject-hubs";
 import { mkdirSync } from "node:fs";
 import { test, expect } from '@playwright/test';
 import data from '../../src/content/library-lessons.json';
@@ -39,7 +40,7 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('/library/'+lesson.id);
     await expect(page.getByRole('heading',{level:1})).toHaveText(lesson.title);
-    await expect(page.getByRole('heading',{name:['histology-foundations-tissues', 'anatomy-foundations'].includes(lesson.id) ? 'Learning Objectives' : 'What you will be able to explain'})).toBeVisible();
+    await expect(page.getByRole('heading',{name:['histology-foundations-tissues', 'anatomy-foundations', ...newEntryLessonIds].includes(lesson.id) ? 'Learning Objectives' : 'What you will be able to explain'})).toBeVisible();
     const worked=page.locator('section[aria-labelledby="worked-example-heading"]:visible');
     await worked.locator('summary').click();
     await expect(worked.locator('ol')).toBeVisible();

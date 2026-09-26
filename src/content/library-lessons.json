@@ -7526,6 +7526,386 @@
       }
     },
     {
+      "id": "physiology-membrane-foundations",
+      "subject": "physiology",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "summary": "Distinguish transport mechanisms, follow the energy that maintains ion gradients, and predict how selective permeability produces a resting membrane potential.",
+      "tags": [
+        "physiology",
+        "foundations",
+        "free lesson",
+        "membrane transport",
+        "resting potential"
+      ],
+      "source": "physiology-membrane-foundations",
+      "section": "Membrane transport; resting voltage, selective permeability and potassium equilibrium potential",
+      "steps": [
+        {
+          "title": "A selective boundary",
+          "body": "The phospholipid bilayer separates intracellular from extracellular fluid. Small non-polar molecules such as oxygen cross the lipid phase; ions require membrane proteins. A channel provides a selective pore, whereas a carrier binds its cargo and changes conformation.\n\nPassive movement follows the electrochemical gradient: the combined effects of concentration and voltage. For an uncharged solute, the concentration gradient is sufficient; for an ion, concentration alone cannot always predict direction."
+        },
+        {
+          "title": "Follow the energy",
+          "body": "Facilitated diffusion uses a channel or carrier but does not directly consume ATP. Primary active transport couples uphill movement to an energy source: the sodium–potassium ATPase uses one ATP to export three Na⁺ and import two K⁺.\n\nSecondary active transport couples one substance moving downhill to another moving uphill. In an intestinal epithelial cell, sodium–glucose cotransport uses the Na⁺ gradient maintained by the basolateral pump. The cotransporter does not itself hydrolyse ATP."
+        },
+        {
+          "title": "Explain a negative resting potential",
+          "body": "Membrane potential is the voltage inside relative to outside. A value of −70 mV means that the inside is 70 mV more negative; it is an illustrative neuronal value, not a universal value for every cell.\n\nMany resting neurons are more permeable to K⁺ than to Na⁺. K⁺ tends to leave down its concentration gradient; the resulting electrical force opposes further outward movement. The resting voltage depends on several ions and their permeabilities, so it is usually near, but not identical to, the K⁺ equilibrium potential."
+        },
+        {
+          "title": "Separate a steady state from equilibrium",
+          "body": "At an ion’s equilibrium potential, electrical and chemical forces balance for that ion and its net passive flux is zero. A resting cell is a maintained steady state: ongoing passive leaks are balanced by transport processes.\n\nThe sodium–potassium pump is electrogenic and maintains the concentration gradients over time. It does not generate the entire resting potential by itself. Changes in extracellular K⁺ or selective conductance can alter voltage without first equalising all ion concentrations."
+        }
+      ],
+      "question": {
+        "prompt": "A carrier moves glucose down its concentration gradient without coupling it to another solute or ATP. Which mechanism is this?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Primary active transport",
+            "reason": "Primary active transport uses an energy source such as ATP to drive uphill movement; neither is specified here."
+          },
+          {
+            "text": "Facilitated diffusion",
+            "reason": "Carrier-mediated movement down the glucose concentration gradient without energy coupling is facilitated diffusion."
+          },
+          {
+            "text": "Secondary active transport",
+            "reason": "Secondary active transport requires coupling to a downhill gradient of another substance; none is present here."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Connect the main concepts in a one-minute explanation, including the assumptions behind your prediction.",
+        "answer": "Permeability determines which substances can cross; electrochemical gradients determine passive direction. ATP-dependent pumps maintain gradients that can also power cotransport. Selective ion permeability and unequal ion distributions produce a resting voltage. Rest is a steady state with continuing transport, not equal concentrations on both sides."
+      },
+      "related": [
+        "membrane-potentials",
+        "fluid-and-membrane-transport",
+        "biophysics-membrane-foundations"
+      ],
+      "updatedAt": "2026-09-23",
+      "minutes": 18,
+      "objectives": [
+        "Classify simple diffusion, facilitated diffusion and active transport by pathway and energy coupling.",
+        "Explain how the sodium–potassium pump supports secondary active transport.",
+        "Interpret membrane voltage as inside relative to outside.",
+        "Distinguish an ion equilibrium potential from a maintained resting state."
+      ],
+      "prerequisites": [],
+      "workedExample": {
+        "title": "Worked Example",
+        "prompt": "In a hypothetical neuron, resting voltage is −70 mV and the K⁺ equilibrium potential is −90 mV. Only K⁺ conductance increases. With ion concentrations fixed initially, predict the direction of voltage change.",
+        "solution": [
+          "Compare the starting voltage with the K⁺ equilibrium potential: the membrane is initially 20 mV more positive.",
+          "Increasing K⁺ conductance increases the influence of K⁺ on the voltage and drives it towards −90 mV.",
+          "The initial change is hyperpolarisation. The final voltage need not equal −90 mV because other conductances remain; the prediction assumes their properties and the initial gradients are unchanged."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why does the presence of a transport protein not prove active transport?",
+          "answer": "Channels and facilitated-diffusion carriers support passive transport. Establish the direction relative to the electrochemical gradient and identify an energy-coupling mechanism before classifying transport as active."
+        },
+        {
+          "prompt": "Why is a resting neuron not at complete electrochemical equilibrium?",
+          "answer": "Ions continue to leak through channels while energy-dependent transport sustains unequal concentrations. Zero net change in voltage or concentration over time does not require zero flux through every pathway."
+        }
+      ],
+      "summaryChecklist": [
+        "Classify simple diffusion, facilitated diffusion and active transport by pathway and energy coupling.",
+        "Explain how the sodium–potassium pump supports secondary active transport.",
+        "Interpret membrane voltage as inside relative to outside.",
+        "Distinguish an ion equilibrium potential from a maintained resting state."
+      ]
+    },
+    {
+      "id": "biochemistry-enzyme-foundations",
+      "subject": "biochemistry",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "summary": "Use a simple enzyme model to interpret reaction rate, distinguish concentration from velocity, and explain how cells regulate a metabolic pathway.",
+      "tags": [
+        "biochemistry",
+        "foundations",
+        "free lesson",
+        "enzymes",
+        "kinetics",
+        "regulation"
+      ],
+      "source": "biochemistry-enzyme-foundations",
+      "section": "Catalysis, Michaelis–Menten initial-rate kinetics, competitive inhibition and feedback regulation",
+      "steps": [
+        {
+          "title": "Catalysis changes the route, not the destination",
+          "body": "An enzyme accelerates a reaction by lowering its activation barrier. It does not change the overall free-energy difference or the equilibrium constant, and it is regenerated during catalysis. Faster catalysis therefore does not mean a larger final equilibrium yield.\n\nSubstrate recognition depends on the active site and the enzyme’s conformation. Changes in temperature, pH or molecular interactions can alter activity; they do not all act by the same mechanism."
+        },
+        {
+          "title": "Read a saturation experiment",
+          "body": "For a simple Michaelis–Menten enzyme, initial velocity v = Vmax × [S] / (Km + [S]). Here [S] and Km are concentrations; v and Vmax are reaction rates. Use initial rates with substrate in excess of enzyme, before substantial substrate depletion or product accumulation.\n\nKm is the substrate concentration at half Vmax. Vmax is the limiting rate for the amount of active enzyme present. Km is not a rate and is not, in general, a direct binding dissociation constant. Cooperative enzymes may require a different model."
+        },
+        {
+          "title": "Distinguish inhibition from loss of enzyme",
+          "body": "In the ideal reversible competitive model, substrate and inhibitor compete for the enzyme: apparent Km increases while Vmax is unchanged. More substrate is required to reach half the same limiting rate. This statement assumes the same amount of active enzyme and unchanged assay conditions.\n\nReducing the amount of active enzyme instead lowers Vmax. A change in a single measured rate does not identify the inhibition mechanism; compare rates across substrate concentrations."
+        },
+        {
+          "title": "Connect kinetics with pathway regulation",
+          "body": "Regulation can change enzyme activity, enzyme abundance or substrate availability. An allosteric regulator binds away from the active site and alters function. Allosteric regulation is not synonymous with the special kinetic category of pure non-competitive inhibition.\n\nIn feedback inhibition, a downstream product reduces activity at an earlier step in its pathway. This links supply to demand. Always specify which reaction is regulated; a change at one step does not imply that every enzyme is inhibited."
+        }
+      ],
+      "question": {
+        "prompt": "For an enzyme following Michaelis–Menten kinetics, what does Km specify?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "The maximum reaction rate at saturating substrate",
+            "reason": "That is Vmax. Km has units of concentration rather than amount converted per unit time."
+          },
+          {
+            "text": "The amount of product present at equilibrium",
+            "reason": "Equilibrium composition depends on thermodynamics and starting conditions, not on the definition of Km."
+          },
+          {
+            "text": "The substrate concentration at half the limiting initial rate",
+            "reason": "When [S] equals Km, the Michaelis–Menten equation gives v = Vmax/2 under its stated assumptions."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Connect the main concepts in a one-minute explanation, including the assumptions behind your prediction.",
+        "answer": "Enzymes lower activation barriers without moving equilibrium. For the simple initial-rate model, Km is a concentration and Vmax is a rate. Competitive inhibition raises apparent Km without lowering Vmax; decreasing active enzyme lowers Vmax. Feedback and allosteric regulation connect reaction activity to cellular demand."
+      },
+      "related": [
+        "enzyme-kinetics",
+        "protein-structure",
+        "glycolysis"
+      ],
+      "updatedAt": "2026-09-23",
+      "minutes": 18,
+      "objectives": [
+        "Distinguish catalytic rate from equilibrium composition.",
+        "Use Km and Vmax with their correct units and model assumptions.",
+        "Predict the effect of reversible competitive inhibition on apparent Km and Vmax.",
+        "Explain feedback inhibition without equating allostery with one inhibition pattern."
+      ],
+      "prerequisites": [],
+      "workedExample": {
+        "title": "Worked Example",
+        "prompt": "A hypothetical enzyme follows Michaelis–Menten kinetics with Vmax = 80 µmol/min and Km = 2 mmol/L. What initial rate is predicted at [S] = 2 mmol/L?",
+        "solution": [
+          "The substrate concentration equals Km, so the predicted rate is half Vmax.",
+          "Substitute consistent units: v = 80 × 2 / (2 + 2) = 40 µmol/min. The concentration units cancel.",
+          "This is an initial-rate prediction for the stated model and active enzyme amount. It is not a patient measurement or a prediction of total product at equilibrium."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why can two assays give different Vmax values for the same enzyme?",
+          "answer": "Vmax depends on the amount of active enzyme as well as catalytic turnover under the assay conditions. Compare enzyme amount, temperature, pH and other conditions before interpreting the difference."
+        },
+        {
+          "prompt": "How can a pathway product regulate its own production?",
+          "answer": "A product can inhibit an earlier enzyme through feedback regulation. Reduced activity limits pathway flux under the relevant conditions; substrate supply and other regulated steps also matter."
+        }
+      ],
+      "summaryChecklist": [
+        "Distinguish catalytic rate from equilibrium composition.",
+        "Use Km and Vmax with their correct units and model assumptions.",
+        "Predict the effect of reversible competitive inhibition on apparent Km and Vmax.",
+        "Explain feedback inhibition without equating allostery with one inhibition pattern."
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations",
+      "subject": "genetics",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "summary": "Separate DNA organisation from gene expression, use a defined inheritance model, and build the vocabulary needed for medical genetics and immunology.",
+      "tags": [
+        "genetics",
+        "foundations",
+        "free lesson",
+        "genome",
+        "inheritance",
+        "gene expression"
+      ],
+      "source": "genetics-genome-foundations",
+      "section": "Genome and gene definitions; transcription and translation; autosomal inheritance and independent pregnancy probabilities",
+      "steps": [
+        {
+          "title": "Organise the genome",
+          "body": "The human genome includes nuclear DNA and mitochondrial DNA. A typical diploid nucleated somatic cell has 23 pairs of nuclear chromosomes; a gamete normally has one set of 23. A chromosome contains many genes and non-coding regions, not just one gene.\n\nA gene is a DNA sequence whose expression contributes a functional product: an RNA or, for a protein-coding gene, a polypeptide through an RNA intermediate. Non-coding DNA is not synonymous with non-functional DNA; some regions regulate gene expression."
+        },
+        {
+          "title": "Distinguish a gene from an allele",
+          "body": "An allele is a version of a DNA sequence at a particular locus. At a typical autosomal locus, a diploid person has one copy inherited from each parent. Homozygous means the two alleles are the same; heterozygous means they differ.\n\nDominant and recessive describe relationships between genotype and a specified phenotype. They do not mean common and rare, or strong and weak. A dominant condition can arise from a new variant, so absence of an affected parent does not exclude it."
+        },
+        {
+          "title": "Trace expression rather than replication",
+          "body": "Replication copies DNA. Transcription produces RNA from a DNA template. For a nuclear protein-coding gene, RNA processing produces a mature messenger RNA (mRNA), which is translated by ribosomes into a polypeptide.\n\nSome RNAs function without being translated. Different cell types can express different sets and amounts of genes despite sharing most of their DNA sequence. Thus detecting a gene does not establish how much functional protein is present."
+        },
+        {
+          "title": "Apply a stated inheritance model",
+          "body": "For an illustrative autosomal recessive condition, let a denote the disease-associated allele and A a normal-function allele. Assume aa is affected and Aa carriers are unaffected. Two heterozygous parents each transmit A or a with probability one half.\n\nEach pregnancy has probabilities 1/4 AA, 1/2 Aa and 1/4 aa, independently of previous outcomes. These assumptions do not describe all genetic disease: penetrance, different inheritance patterns and multiple genes can change interpretation. Use the defined model before applying a percentage."
+        }
+      ],
+      "question": {
+        "prompt": "Which statement correctly distinguishes a chromosome, a gene and an allele?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "A chromosome contains many genes; an allele is a version at a locus.",
+            "reason": "Chromosomes organise long DNA molecules containing many loci; alleles describe sequence versions at a particular locus."
+          },
+          {
+            "text": "Each chromosome contains exactly one gene with many proteins inside it.",
+            "reason": "A chromosome contains many genes and non-coding regions. Proteins are gene products or associated molecules, not sequences inside a gene."
+          },
+          {
+            "text": "An allele is an RNA copy made whenever a chromosome is transcribed.",
+            "reason": "An allele is a sequence version. Transcription makes RNA; it does not create an inherited allele each time it occurs."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Connect the main concepts in a one-minute explanation, including the assumptions behind your prediction.",
+        "answer": "The genome includes nuclear and mitochondrial DNA. Genes specify functional RNA or protein products; alleles are sequence versions at loci. Replication copies DNA, transcription makes RNA and translation makes a polypeptide. Inheritance probabilities require a stated model, and gene presence alone does not establish expression or function."
+      },
+      "related": [
+        "inheritance",
+        "meiosis",
+        "innate-adaptive",
+        "rna-processing"
+      ],
+      "updatedAt": "2026-09-23",
+      "minutes": 18,
+      "objectives": [
+        "Distinguish genome, chromosome, gene and allele.",
+        "Separate replication, transcription and translation.",
+        "Calculate offspring probabilities for a defined autosomal recessive cross.",
+        "Explain why DNA sequence and gene expression are different kinds of information."
+      ],
+      "prerequisites": [],
+      "workedExample": {
+        "title": "Worked Example",
+        "prompt": "Two unaffected Aa carriers plan a pregnancy in the autosomal recessive model above. Their first child is affected. What is the probability that their next child is affected?",
+        "solution": [
+          "Each parent independently supplies A or a with probability 1/2 at this locus.",
+          "The four equally likely combinations are AA, Aa, aA and aa; only aa is affected in this model.",
+          "The next pregnancy therefore has a 1/4 (25%) affected probability. The first child’s outcome does not change either parent’s genotype or the segregation probabilities."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why is “one gene makes one protein” an incomplete definition?",
+          "answer": "Some genes produce functional RNAs rather than proteins, and processing can allow a protein-coding gene to yield different RNA and protein products. Distinguish the DNA locus from its expressed products."
+        },
+        {
+          "prompt": "How does this foundation prepare you for immunology?",
+          "answer": "Immune-cell functions depend on expressed receptors, signalling molecules and other proteins. Separate the inherited DNA sequence from which genes a cell expresses before studying immune-cell activation and special mechanisms of receptor diversity."
+        }
+      ],
+      "summaryChecklist": [
+        "Distinguish genome, chromosome, gene and allele.",
+        "Separate replication, transcription and translation.",
+        "Calculate offspring probabilities for a defined autosomal recessive cross.",
+        "Explain why DNA sequence and gene expression are different kinds of information."
+      ]
+    },
+    {
+      "id": "biophysics-membrane-foundations",
+      "subject": "biophysics",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "summary": "Predict passive exchange by stating the gradient, the membrane’s permeability and the geometry, then distinguish water movement from solute movement.",
+      "tags": [
+        "biophysics",
+        "foundations",
+        "free lesson",
+        "diffusion",
+        "osmosis",
+        "membranes"
+      ],
+      "source": "biophysics-membrane-foundations",
+      "section": "Diffusion and osmosis; Fick diffusion model; membrane permeability and cell-volume responses",
+      "steps": [
+        {
+          "title": "Define the moving substance and its gradient",
+          "body": "Diffusion arises from random molecular motion. For an uncharged solute under simple conditions, a concentration difference produces net movement from higher to lower concentration, even though molecules move in both directions. At equilibrium, random motion continues but there is no net flux.\n\nA membrane is selectively permeable: a gradient cannot drive appreciable transfer through an effectively impermeable barrier. Ion movement also depends on voltage, so an uncharged-solute model must not be applied to ions without considering electrical forces."
+        },
+        {
+          "title": "Relate transfer to area and thickness",
+          "body": "For steady diffusion of a neutral solute through a uniform planar layer, transfer rate = D × A × Δc / L. D is the diffusion coefficient (m²/s), A area (m²), Δc the concentration difference (mol/m³), and L thickness (m). The result is mol/s.\n\nWith other quantities fixed, doubling area doubles transfer; doubling thickness halves it. This ideal model assumes a constant diffusion coefficient and maintained boundary concentrations. Partitioning, channels and active transport can require a more detailed membrane model."
+        },
+        {
+          "title": "Predict osmosis using permeability",
+          "body": "Osmosis is net water movement across a selectively permeable membrane. In an ideal dilute model with equal initial hydrostatic pressures, water moves towards the side with a greater concentration of solute particles that cannot cross the membrane. Aquaporins provide water pathways in many cell membranes.\n\nAs water redistributes, concentration and pressure differences may change. An opposing hydrostatic pressure can balance the osmotic drive; equilibrium does not necessarily require equal solute concentrations."
+        },
+        {
+          "title": "Separate osmolarity from tonicity",
+          "body": "Osmolarity counts dissolved particles per litre of solution. Tonicity describes a solution’s effect on cell volume and depends on solute permeability and the time considered, especially solutes that remain effectively non-penetrating. Equal total osmolarity alone does not guarantee equal tonicity.\n\nIn a simple cell model with water permeability and impermeant solute, a hypertonic exterior draws water out and the cell shrinks; a hypotonic exterior drives water in and the cell swells. This is a physical model, not a prescription for choosing a clinical fluid."
+        }
+      ],
+      "question": {
+        "prompt": "At diffusion equilibrium for a freely permeating neutral solute, which statement is correct?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Molecular motion has stopped on both sides.",
+            "reason": "Thermal motion continues at equilibrium; equality concerns net transfer, not the movement of individual molecules."
+          },
+          {
+            "text": "Movement continues in both directions, with zero net flux.",
+            "reason": "Opposing molecular transfers balance at equilibrium, so the average net flux is zero."
+          },
+          {
+            "text": "The membrane must actively pump equal amounts in each direction.",
+            "reason": "Passive diffusion equilibrium does not require an active pump; it follows from balanced driving forces."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Connect the main concepts in a one-minute explanation, including the assumptions behind your prediction.",
+        "answer": "Diffusion needs a permeable pathway and a driving force. In a simple planar model, transfer increases with area and concentration difference and decreases with thickness. Osmosis concerns water, while tonicity concerns cell-volume effects of effective solute gradients. State permeability, pressure and time assumptions before predicting movement."
+      },
+      "related": [
+        "biophysics-diffusion-osmosis",
+        "biophysics-practical-diffusion",
+        "physiology-membrane-foundations"
+      ],
+      "updatedAt": "2026-09-23",
+      "minutes": 18,
+      "objectives": [
+        "Distinguish random molecular movement from net diffusion.",
+        "Use area, concentration difference and thickness to predict relative transfer rate.",
+        "Predict osmosis with stated permeability and pressure assumptions.",
+        "Distinguish osmolarity from tonicity when interpreting cell-volume change."
+      ],
+      "prerequisites": [],
+      "workedExample": {
+        "title": "Worked Example",
+        "prompt": "Two hypothetical neutral-solute barriers have the same diffusion coefficient and concentration difference. Barrier B has twice the area and three times the thickness of barrier A. What is the ratio of their steady transfer rates?",
+        "solution": [
+          "Use rate ∝ area / thickness only because the diffusion coefficient and maintained concentration difference are the same.",
+          "The ratio B/A is (2 × area)/(3 × thickness), relative to area/thickness: 2/3.",
+          "Barrier B transfers two thirds as much solute per unit time. Increased area partly compensates for thickness; these data do not establish transport in a real patient."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why does a large concentration difference not guarantee rapid diffusion?",
+          "answer": "Transfer also depends on permeability, area, path length and molecular properties. An effectively impermeable barrier can prevent transfer despite a large concentration difference."
+        },
+        {
+          "prompt": "Why can an isosmotic solution still change a cell’s volume?",
+          "answer": "Osmolarity counts all dissolved particles. A solute that penetrates the cell can redistribute, altering the effective osmotic gradient; tonicity therefore depends on permeability and time, not just total particle concentration."
+        }
+      ],
+      "summaryChecklist": [
+        "Distinguish random molecular movement from net diffusion.",
+        "Use area, concentration difference and thickness to predict relative transfer rate.",
+        "Predict osmosis with stated permeability and pressure assumptions.",
+        "Distinguish osmolarity from tonicity when interpreting cell-volume change."
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

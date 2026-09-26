@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { StudyVisual } from "./study-visual";
 import references from "@/content/lesson-references.json";
 import { EducationalFigure } from "./educational-figure";
 import { figuresForResource } from "@/lib/figures";
@@ -17,16 +18,9 @@ function Drawing({ alt, children, height = 180 }: { alt: string; children: React
 function Diagram({ id, title, caption, observe, sources, children }: {
   id: string; title: string; caption: string; observe: string; sources: readonly SourceKey[]; children: ReactNode;
 }) {
-  return <figure className={styles.diagram} id={id} data-study-diagram>
-    <h3>{title}</h3>
-    {children}
-    <figcaption>
-      <p>{caption}</p>
-      <p><strong>Observe and explain:</strong> {observe}</p>
-      <p className={styles.credit}>Original teaching schematic · Wardhan Medical Study Guide Studios · AI-assisted SVG, source-checked. Not a micrograph; not to scale.</p>
-      <p className={styles.credit}>Scientific references: {sources.map((key, i) => <span key={key}>{i > 0 && "; "}<a href={references[key].url}>{references[key].title}</a></span>)}</p>
-    </figcaption>
-  </figure>;
+  return <StudyVisual className={styles.diagram} id={id} data-study-diagram title={title} alt={caption} caption={caption} observe={observe}
+    credit="Original teaching schematic · Wardhan Medical Study Guide Studios · AI-assisted SVG, source-checked. Not a micrograph; not to scale."
+    sources={sources.map(key => references[key])}>{children}</StudyVisual>;
 }
 
 function EpithelialPattern({ stratified = false }: { stratified?: boolean }) {
@@ -118,21 +112,8 @@ export function HistologyVisualStudy() {
       {figuresForResource("histology-foundations-tissues").map(figure => <EducationalFigure key={figure.id} figure={figure}/>)}
       <p><strong>If the images are unavailable:</strong> the kidney section illustrates one cuboidal layer around tubular lumina; the stratified section illustrates several layers with flattened superficial cells. The schematics above preserve the comparison.</p>
     </div>
-    <Diagram id="connective-matrix" title="2. Connective-tissue extracellular matrix" sources={["connective-tissue"]}
-      caption="Thick brown bands represent collagen; thin branching lines represent elastic fibres. Spindle-shaped cells contain purple nuclei, while the pale background represents hydrated ground substance. This is a schematic of connective tissue proper, not all connective-tissue subtypes."
-      observe="Distinguish the fibroblasts from the material between them. Predict how aligning the collagen in parallel would change the principal direction of tensile strength.">
-      <MatrixPattern/>
-      <p>Matrix includes fibres and ground substance. Ground substance is not empty space; its appearance in routine sections depends on preparation and staining.</p>
-    </Diagram>
-    <Diagram id="muscle-comparison" title="3. Skeletal, cardiac and smooth muscle" sources={["muscle-histology"]}
-      caption="Longitudinal schematics emphasise the combination of cell shape, nuclear pattern and striations. Purple shapes represent nuclei; narrow cross-lines represent striations. The thick stepped line in the cardiac panel represents an intercalated disc."
-      observe="Use at least two features to distinguish each type. Explain why an inconspicuous disc or absent striations in one field cannot, by itself, establish smooth muscle.">
-      <div className={styles.grid}>
-        <div><h4>Skeletal</h4><MusclePattern kind="skeletal"/><p>Long, usually unbranched fibres; multiple peripheral nuclei; cross-striations.</p></div>
-        <div><h4>Cardiac</h4><MusclePattern kind="cardiac"/><p>Branching cells; usually one central nucleus, sometimes two; striations and intercalated discs.</p></div>
-        <div><h4>Smooth</h4><MusclePattern kind="smooth"/><p>Spindle-shaped cells; one central nucleus; no sarcomeric cross-striations.</p></div>
-      </div>
-    </Diagram>
+    <MatrixStudyVisual/>
+    <MuscleStudyVisual/>
     <Diagram id="neurons-and-myelin" title="4. Neurons, glia and the source of myelin" sources={["myelin-and-glial-cells"]}
       caption="The neuron panel separates the soma, dendrites and axon. The myelin panels show different relationships between a glial cell and axonal segments. Glia are cells; myelin is a specialised glial membrane sheath."
       observe="Trace one glial cell to the internode or internodes it supplies. Explain why myelin loss and loss of an entire neuron are different events.">
@@ -169,4 +150,32 @@ export function HistologyVisualStudy() {
       <ol className={styles.clueSequence}><li><strong>Observe:</strong> boundary, cells and matrix.</li><li><strong>Compare:</strong> two positive clues and a plausible alternative.</li><li><strong>Conclude:</strong> tissue family, supported subtype and remaining uncertainty.</li></ol>
     </Diagram>
   </section>;
+}
+
+function MatrixStudyVisual({ title = "2. Connective-tissue extracellular matrix" }: { title?: string }) {
+  return <Diagram id="connective-matrix" title={title} sources={["connective-tissue"]}
+      caption="Thick brown bands represent collagen; thin branching lines represent elastic fibres. Spindle-shaped cells contain purple nuclei, while the pale background represents hydrated ground substance. This is a schematic of connective tissue proper, not all connective-tissue subtypes."
+      observe="Distinguish the fibroblasts from the material between them. Predict how aligning the collagen in parallel would change the principal direction of tensile strength.">
+      <MatrixPattern/>
+      <p>Matrix includes fibres and ground substance. Ground substance is not empty space; its appearance in routine sections depends on preparation and staining.</p>
+    </Diagram>;
+}
+
+function MuscleStudyVisual({ title = "3. Skeletal, cardiac and smooth muscle" }: { title?: string }) {
+  return <Diagram id="muscle-comparison" title={title} sources={["muscle-histology"]}
+      caption="Longitudinal schematics emphasise the combination of cell shape, nuclear pattern and striations. Purple shapes represent nuclei; narrow cross-lines represent striations. The thick stepped line in the cardiac panel represents an intercalated disc."
+      observe="Use at least two features to distinguish each type. Explain why an inconspicuous disc or absent striations in one field cannot, by itself, establish smooth muscle.">
+      <div className={styles.grid}>
+        <div><h4>Skeletal</h4><MusclePattern kind="skeletal"/><p>Long, usually unbranched fibres; multiple peripheral nuclei; cross-striations.</p></div>
+        <div><h4>Cardiac</h4><MusclePattern kind="cardiac"/><p>Branching cells; usually one central nucleus, sometimes two; striations and intercalated discs.</p></div>
+        <div><h4>Smooth</h4><MusclePattern kind="smooth"/><p>Spindle-shaped cells; one central nucleus; no sarcomeric cross-striations.</p></div>
+      </div>
+    </Diagram>;
+}
+
+export const hasHistologyTopicVisual = (id: string) => ["connective-tissue", "muscle-histology"].includes(id);
+export function HistologyTopicVisual({ lessonId }: { lessonId: string }) {
+  if (lessonId === "connective-tissue") return <MatrixStudyVisual title="Connective-tissue extracellular matrix"/>;
+  if (lessonId === "muscle-histology") return <MuscleStudyVisual title="Skeletal, cardiac and smooth muscle"/>;
+  return null;
 }

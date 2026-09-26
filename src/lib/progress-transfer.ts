@@ -15,6 +15,10 @@ export function readTransfer(raw: string, lessons: string[], questions: string[]
 // Do not add counters from overlapping exports or turn a retry into a new first attempt.
 export function mergeProgress(current: LearningProgress, incoming: LearningProgress): LearningProgress {
   const answers = { ...current.answers };
+  const journey = { ...current.journey };
+  for (const [id, entry] of Object.entries(incoming.journey)) {
+    if (!journey[id] || entry.at > journey[id].at) journey[id] = entry;
+  }
   for (const [id, attempt] of Object.entries(incoming.answers)) {
     if (!answers[id] || attempt.lastAt > answers[id].lastAt) answers[id] = attempt;
   }
@@ -28,5 +32,7 @@ export function mergeProgress(current: LearningProgress, incoming: LearningProgr
     plan: current.plan ?? incoming.plan,
     quizzes: Math.max(current.quizzes, incoming.quizzes),
     shares: Math.max(current.shares, incoming.shares),
+    journey,
+    resume: !current.resume || (incoming.resume && incoming.resume.at > current.resume.at) ? incoming.resume : current.resume,
   };
 }

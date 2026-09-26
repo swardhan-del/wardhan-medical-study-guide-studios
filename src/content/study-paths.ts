@@ -3,8 +3,8 @@ export type StudyPath = { start: string; preparation: string; gaps: string[] };
 // Editorial study map, not an official syllabus or an exam-readiness score.
 export const studyPaths: Record<string, StudyPath> = {
   biophysics: {
-    start: "biophysics-radiation-optics",
-    preparation: "Review SI units, powers of ten, logarithms and rearranging equations. Follow the theory sequence, then use the practical lessons to apply each model.",
+    start: "biophysics-membrane-foundations",
+    preparation: "Begin with diffusion, osmosis and membranes. Review units and rearranging equations, then follow the theory and practical sequences.",
     gaps: ["Current university syllabus alignment beyond the historical notes", "Supervised instrument handling and interpretation of original experimental images", "Independent specialist review and a larger assessment bank"],
   },
   anatomy: {
@@ -23,18 +23,18 @@ export const studyPaths: Record<string, StudyPath> = {
     gaps: ["Chromatin and epigenetic regulation", "Transcriptional control and regulatory RNA", "Protein quality control and ER-associated degradation"],
   },
   biochemistry: {
-    start: "protein-structure",
-    preparation: "Start with protein structure and enzyme kinetics before following metabolic pathways.",
+    start: "biochemistry-enzyme-foundations",
+    preparation: "Start with enzymes, kinetics and regulation, then connect protein structure with metabolic pathways.",
     gaps: ["Haem, iron and bilirubin metabolism", "Nucleotide synthesis and degradation", "Integrated tissue metabolism and laboratory assays"],
   },
   physiology: {
-    start: "fluid-and-membrane-transport",
-    preparation: "Start with fluid compartments and membrane transport, then membrane potentials before studying organ systems.",
+    start: "physiology-membrane-foundations",
+    preparation: "Start with membrane transport and resting potential before studying organ systems.",
     gaps: ["Systematic ECG interpretation and worked traces", "Blood groups and laboratory interpretation", "Detailed endocrine axes", "Comprehensive sensory and reflex pathways"],
   },
   genetics: {
-    start: "meiosis",
-    preparation: "For genetics, begin with meiosis and inheritance. For immunology, begin with innate and adaptive responses before antigen presentation.",
+    start: "genetics-genome-foundations",
+    preparation: "For genetics, begin with genome organisation, expression and inheritance, then study meiosis. For immunology, begin with innate and adaptive responses before antigen presentation.",
     gaps: ["Population and quantitative genetics", "Detailed genetic laboratory methods", "Hypersensitivity and immune deficiency", "Transplantation and tumour immunology"],
   },
 };
@@ -44,8 +44,8 @@ export const beginnerSequences: Record<string, { title: string; href: string }[]
   anatomy: [{ title: "Anatomy foundations: position, planes and organisation", href: "/library/anatomy-foundations" }, { title: "Identify thoracic cage landmarks", href: "/library/thoracic-cage-landmarks" }, { title: "Choose a volume in the 120-lesson course", href: "/study/anatomy/guide" }],
   histology: [{ title: "Recognise the four basic tissues", href: "/library/histology-foundations-tissues" }, { title: "Read a histology section", href: "/library/microscopy" }, { title: "Classify epithelia", href: "/library/epithelia" }],
   "cell-biology": [{ title: "Follow DNA replication", href: "/library/dna-replication" }, { title: "Process an RNA message", href: "/library/rna-processing" }, { title: "Translate the message", href: "/library/translation" }],
-  biochemistry: [{ title: "Connect protein structure to function", href: "/library/protein-structure" }, { title: "Explain enzyme kinetics", href: "/library/enzyme-kinetics" }, { title: "Follow glycolysis", href: "/library/glycolysis" }],
-  physiology: [{ title: "Fluid compartments and membrane transport", href: "/library/fluid-and-membrane-transport" }, { title: "Explain membrane potentials", href: "/library/membrane-potentials" }, { title: "Connect excitation to muscle contraction", href: "/library/muscle-contraction" }],
-  genetics: [{ title: "Follow chromosomes through meiosis", href: "/library/meiosis" }, { title: "Reason through inheritance", href: "/library/inheritance" }, { title: "Compare innate and adaptive responses", href: "/library/innate-adaptive" }],
-  biophysics: [{ title: "Begin with light and units", href: "/library/biophysics-radiation-optics" }, { title: "Form an image", href: "/library/biophysics-image-formation" }, { title: "Explain wave optics", href: "/library/biophysics-wave-optics" }],
+  biochemistry: [{ title: "Enzymes, kinetics and regulation", href: "/library/biochemistry-enzyme-foundations" }, { title: "Explain enzyme kinetics", href: "/library/enzyme-kinetics" }, { title: "Follow glycolysis", href: "/library/glycolysis" }],
+  physiology: [{ title: "Membrane transport and resting potential", href: "/library/physiology-membrane-foundations" }, { title: "Explain membrane potentials", href: "/library/membrane-potentials" }, { title: "Connect excitation to muscle contraction", href: "/library/muscle-contraction" }],
+  genetics: [{ title: "Genome, inheritance and gene expression", href: "/library/genetics-genome-foundations" }, { title: "Reason through inheritance", href: "/library/inheritance" }, { title: "Compare innate and adaptive responses", href: "/library/innate-adaptive" }],
+  biophysics: [{ title: "Diffusion, osmosis and membranes", href: "/library/biophysics-membrane-foundations" }, { title: "Form an image", href: "/library/biophysics-image-formation" }, { title: "Explain wave optics", href: "/library/biophysics-wave-optics" }],
 };

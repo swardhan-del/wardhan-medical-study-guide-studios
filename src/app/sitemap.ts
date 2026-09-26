@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "/",
     "/start",
+    "/starter-pack",
     ...Object.keys(foundations).map(subject => "/learn/foundations/" + subject),
     "/start/anatomy",
     "/about",

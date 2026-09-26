@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { StudyVisual } from "./study-visual";
 
 export function NephronMap() {
   const [labels, setLabels] = useState(true);
@@ -8,22 +9,26 @@ export function NephronMap() {
       <p className="eyebrow">See the location. Follow the route.</p>
       <h2 id="nephron-title">Blood and filtrate take different paths</h2>
       <p>
-        A simplified long-loop nephron. Red arrows follow blood; blue arrows
-        follow tubular fluid. Dotted arrows show exchange between the two
-        routes.
+        A simplified long-loop nephron. The upper branching route follows blood; the long loop and collecting route follow tubular fluid. Dotted arrows show exchange between the routes. Names and positions, as well as colour, identify each pathway.
       </p>
       <button
         className="button button-secondary"
         aria-pressed={!labels}
         onClick={() => setLabels(!labels)}
       >
-        {labels ? "Hide labels for recall" : "Show labels"}
+        {labels ? "Hide labels for self-assessment" : "Show labels"}
       </button>
       <p className="nephron-mobile-hint">
         On a small screen, swipe across the diagram to read the full-size
         labels. Keyboard users can focus the diagram and use arrow keys.
       </p>
-      <figure
+      <StudyVisual title="Nephron: blood and tubular-fluid pathways"
+        alt="Afferent blood enters the glomerulus and leaves through an efferent arteriole to a second capillary bed. Filtrate enters Bowman space, proximal tubule, loop, distal tubule and collecting system. Reabsorption returns material to blood; secretion moves it into the tubule."
+        caption="Positions are simplified, not to scale. Distal fluid passes through a connecting tubule before the collecting duct. The second capillary bed includes peritubular capillaries and, for long-loop nephrons, vasa recta; its full medullary course is omitted."
+        observe="Trace blood and tubular fluid separately, then locate the filtration step that separates their routes."
+        credit="Original teaching schematic · Wardhan Medical Study Guide Studios; AI-assisted. Not a specimen or diagnostic image."
+        sources={[{title:"NIDDK: Your Kidneys & How They Work",url:"https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"}]}>
+      <div
         className="nephron-figure"
         tabIndex={0}
         role="group"
@@ -40,7 +45,7 @@ export function NephronMap() {
           <desc id="nephron-svg-desc">
             {labels
               ? "In the cortex, afferent blood enters the glomerulus and leaves through the efferent arteriole to a second capillary bed. Filtrate enters Bowman space, proximal tubule, descending and ascending limbs in the medulla, distal tubule in the cortex, then the collecting system. Reabsorption returns material to blood; secretion transfers material into the tubule."
-              : "Recall view: name the red blood vessels and blue tubular segments using their positions in the cortex and medulla. Show labels to reveal the answer."}
+              : "Self-assessment view: name the upper branching vessels and long-loop tubular segments using their positions in the cortex and medulla. Show labels to reveal the answer."}
           </desc>
           <defs>
             <marker
@@ -201,13 +206,8 @@ export function NephronMap() {
             </g>
           )}
         </svg>
-        <figcaption>
-          Positions are simplified, not to scale. Distal fluid passes through a
-          connecting tubule before the collecting duct. The second capillary bed
-          is peritubular capillaries and, for long-loop nephrons, vasa recta;
-          its full medullary course is omitted here.
-        </figcaption>
-      </figure>
+      </div>
+      </StudyVisual>
       <div className="study-grid two">
         <p>
           <strong>Reabsorption:</strong> tubular fluid → blood.

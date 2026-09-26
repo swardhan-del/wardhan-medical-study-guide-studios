@@ -29,7 +29,7 @@ export default async function GuidePage({ params }: Props) {
       const videos = available.filter(l => videosForLesson(l.id).length > 0);
       return <section className="study-panel guide-part" id={p.id} key={p.id}>
         <p className="eyebrow">Part {p.number} · {available.length ? `${available.length} available lessons` : "Coverage gap"}</p><h2>{p.title}</h2><p>{p.coverage}</p>
-        {available.length > 0 && <><h3>Read and practise</h3><ul>{available.map(l => <li key={l.id}><Link href={`/library/${l.id}`}>{l.title}</Link> · {l.minutes} min · {subject === "anatomy" ? "5 practice items and identification task" : "concept check and oral recall"}</li>)}</ul><Link href={`/study/${subject}/revision#${p.id}`}>Open this part in the printable notes</Link></>}
+        {available.length > 0 && <><h3>Read and practise</h3><ul>{available.map(l => <li key={l.id}><Link href={`/library/${l.id}`}>{l.title}</Link> · {l.minutes} min · {subject === "anatomy" ? "5 practice items and identification task" : "knowledge check and oral examination prompts"}</li>)}</ul><Link href={`/study/${subject}/revision#${p.id}`}>Open this part in the printable notes</Link></>}
         {figures.length > 0 && <><h3>Released figures</h3><ul>{figures.map(f => <li key={f.id}><Link href={`/library/${available.find(l => figuresForResource(l.id).some(x => x.id === f.id))!.id}#lesson-figures`}>{f.title}</Link> — {f.kind === "diagram" ? "Teaching diagram" : "Image"}</li>)}</ul></>}
         {videos.length > 0 && <><h3>Watch and explain</h3><ul>{videos.map(l => <li key={l.id}><Link href={`/library/${l.id}`}>{l.title}: narrated visual explanation</Link></li>)}</ul></>}
         {p.practiceHref && <p><Link href={p.practiceHref}>Open available tissue identification practice</Link></p>}
