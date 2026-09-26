@@ -1,3 +1,4 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { guideParts } from "@/lib/printable-guides";
@@ -9,7 +10,7 @@ type Props = { params: Promise<{ subject: string }> };
 export function generateStaticParams() { return studySubjects.map(s => ({ subject: s.id })); }
 export async function generateMetadata({ params }: Props) {
   const { subject } = await params;
-  return { title: `${studySubjects.find(s => s.id === subject)?.title ?? "Study"} · Guide parts and visuals` };
+  return searchMetadata(`/study/${subject}/guide`);
 }
 export default async function GuidePage({ params }: Props) {
   const { subject } = await params;

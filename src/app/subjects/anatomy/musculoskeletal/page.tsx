@@ -1,15 +1,11 @@
-import type { Metadata } from "next";
+import { searchMetadata } from "@/lib/search-metadata";
 import { EducationalFigure } from "@/components/educational-figure";
 import { figuresForResource } from "@/lib/figures";
 import Link from "next/link";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 import { musculoskeletalSources, musculoskeletalTopics, musculoskeletalRecall } from "@/content/musculoskeletal";
 
-export const metadata: Metadata = {
-  title: "Musculoskeletal system — Study map & sources",
-  description: "Explore musculoskeletal anatomy through Volume V and three teaching decks, with chapter references, regional study routes and recall examples.",
-  alternates: { canonical: "/subjects/anatomy/musculoskeletal" },
-};
+export const metadata = searchMetadata("/subjects/anatomy/musculoskeletal");
 
 export default function MusculoskeletalPage() {
   return (

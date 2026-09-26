@@ -1,3 +1,4 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { publicVideos } from "@/lib/videos";
@@ -12,12 +13,7 @@ export function generateStaticParams() {
 }
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
-  const v = publicVideos.find((v) => v.id === id);
-  return {
-    title: v?.title || "Video not found",
-    description: v?.summary,
-    alternates: { canonical: "/videos/" + id },
-  };
+  return searchMetadata(`/videos/${id}`);
 }
 export default async function VideoPage({ params }: Props) {
   const { id } = await params;
@@ -27,6 +23,7 @@ export default async function VideoPage({ params }: Props) {
     <article className="site-container library-page">
       <LibraryBreadcrumbs
         node={taxonomyNodes.find((n) => n.id === v.topicIds[0])}
+        current={{ name: v.title, href: `/videos/${v.id}` }}
       />
       <p className="eyebrow">Video · {videoDuration(v.durationSeconds)}</p>
       <h1>{v.title}</h1>

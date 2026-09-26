@@ -1,15 +1,11 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { ContinueLearning, SavedSummaries } from "@/components/continue-learning";
 import { journeyIndex, journeyLessons } from "@/lib/lesson-journeys";
 import Link from "next/link";
 import { SavedLearning } from "@/components/saved-learning";
 import { publicCatalog } from "@/lib/catalog";
 import { StudyDashboard } from "@/components/study-dashboard";
-export const metadata = {
-  title: "My Study",
-  description:
-    "Return to saved resources, review your practice, and choose your next topic.",
-  robots: { index: false, follow: true },
-};
+export const metadata = searchMetadata("/study");
 export default function StudyPage() {
   return (
     <div className="site-container study-page">

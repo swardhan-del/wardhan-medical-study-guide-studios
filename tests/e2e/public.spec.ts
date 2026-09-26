@@ -533,7 +533,8 @@ test("cross-subject lessons render sources and fit the viewport", async ({
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).toContain("/library/placenta");
   expect(sitemap).toContain("/library/pcr");
-  expect(sitemap).toContain("/library/renal-kidney-map");
+  expect(sitemap).toContain("/learn/renal/kidney-map");
+  expect(sitemap).not.toContain("/library/renal-kidney-map");
   await page.goto("/library?subject=histology");
   await page.screenshot({
     path: testInfo.outputPath("histology-library.png"),

@@ -1,3 +1,4 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { WaitlistCta } from "@/components/waitlist-cta";
 import { SubjectHubOverview } from "@/components/subject-hub";
 import { AnatomyLearningPath } from "@/components/anatomy-learning-path";
@@ -17,12 +18,7 @@ export function generateStaticParams() {
 }
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const s = librarySubjects.find((s) => s.id === slug);
-  return {
-    title: s?.title || "Subject not found",
-    description: s?.description,
-    alternates: { canonical: "/subjects/" + slug },
-  };
+  return searchMetadata(`/subjects/${slug}`);
 }
 export default async function SubjectPage({ params }: Props) {
   const { slug } = await params;

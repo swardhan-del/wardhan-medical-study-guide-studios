@@ -1,5 +1,6 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
-export const metadata = { title: "Terms and educational disclaimer", alternates: { canonical: "/terms" } };
+export const metadata = searchMetadata("/terms");
 export default function TermsPage() {
   return <div className="site-container library-page"><header className="library-heading"><p className="eyebrow">Independent study support</p><h1>Terms and educational disclaimer</h1></header><div className="privacy-copy">
     <h2>Use alongside your course</h2><p>Study Guide Studios is an independent educational project. It is not affiliated with or endorsed by a university or examining body. These resources support study; they do not replace official course material, your syllabus, teaching, supervised practical work or assessment guidance.</p>

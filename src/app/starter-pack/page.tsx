@@ -1,9 +1,10 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { WaitlistCta } from "@/components/waitlist-cta";
 import Link from "next/link";
 import { PrintStudy } from "@/components/print-study";
 import { starterPackBody, starterPackCss } from "@/lib/starter-pack";
 import { getSiteUrl } from "@/lib/site-url";
-export const metadata = { title: "Free Study Guide starter pack", description: "Seven starting lessons, recaps and explained questions. Read online, download an offline HTML copy, or print and save as PDF.", alternates: { canonical: "/starter-pack" } };
+export const metadata = searchMetadata("/starter-pack");
 export default function StarterPackPage() {
   return <article className="site-container revision-page starter-pack">
     <style>{starterPackCss}</style>

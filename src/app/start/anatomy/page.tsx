@@ -1,5 +1,6 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
-export const metadata = { title: "Anatomy: before your first lesson", description: "Review anatomical position, directions and body planes before studying the thorax.", alternates: { canonical: "/start/anatomy" } };
+export const metadata = searchMetadata("/start/anatomy");
 export default function AnatomyStart() {
   return <article className="site-container study-page"><nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/start">Start here</Link><span> / Anatomy foundations</span></nav><header className="study-hero"><p className="eyebrow">Anatomy · First step · 3 minutes</p><h1>Position, directions and planes</h1><p className="interior-lede">Use these terms before describing where a nerve lies.</p></header>
   <section className="study-panel"><h2>1. Set the reference position</h2><p>Picture a person standing upright, facing forwards, with palms facing forwards. Right and left belong to that person, not the viewer.</p></section>

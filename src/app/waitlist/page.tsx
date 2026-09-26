@@ -1,6 +1,7 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { WaitlistForm } from "@/components/waitlist-form";
-export const metadata = { title: "Pre-launch waitlist", description: "Launch news and new free study-resource updates, with optional signup and a clearly labelled demo while signups are closed.", alternates: { canonical: "/waitlist" } };
+export const metadata = searchMetadata("/waitlist");
 export default function WaitlistPage() {
   return <div className="site-container study-page waitlist-page">
     <header className="study-hero"><p className="eyebrow">Pre-launch · Independent educational support</p><h1>Stay informed as Study Guide Studios develops</h1><p className="interior-lede">The free library is available now. The wider Study Guide Studios product is still being developed.</p></header>

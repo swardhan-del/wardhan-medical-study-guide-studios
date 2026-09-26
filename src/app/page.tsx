@@ -1,3 +1,5 @@
+import { TopicGuideLinks } from "@/components/topic-guide-links";
+import { searchMetadata } from "@/lib/search-metadata";
 import { WaitlistCta } from "@/components/waitlist-cta";
 import { ContinueLearning } from "@/components/continue-learning";
 import { journeyIndex } from "@/lib/lesson-journeys";
@@ -8,7 +10,7 @@ import { studySubjects } from "@/lib/study-collections";
 import { SubjectSubsets } from "@/components/subject-subsets";
 import { renalLessons, renalQuestions } from "@/content/renal-course";
 import { LearningCollection } from "@/components/learning-collection";
-export const metadata = { alternates: { canonical: "/" } };
+export const metadata = searchMetadata("/");
 export default function Home() {
   return (
     <div className="page-stack">
@@ -66,6 +68,7 @@ export default function Home() {
         </div>
         <LearningCollection />
       </section>
+      <div className="site-container"><TopicGuideLinks /></div>
       <section className="site-container return-banner">
         <div>
           <h2>Build on your previous practice</h2>

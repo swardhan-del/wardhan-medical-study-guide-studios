@@ -1,12 +1,7 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import { CorrectionForm } from "@/components/correction-form";
 import { studio } from "@/content/studio";
-export const metadata = {
-  title: "Questions, feedback, and corrections",
-  description:
-    "Ask a question, suggest a correction or report an accessibility issue in the medical study library.",
-  alternates: { canonical: "/contact" },
-  robots: { index: false, follow: true },
-};
+export const metadata = searchMetadata("/contact");
 export default async function ContactPage({
   searchParams,
 }: {

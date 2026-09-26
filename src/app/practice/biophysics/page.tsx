@@ -1,6 +1,7 @@
+import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 import { BiophysicsLab } from "@/components/biophysics-lab";
-export const metadata = { title: "Biophysics · Predict and calculate", description: "Six interactive models connecting equations, graphs and medical measurement.", alternates: { canonical: "/practice/biophysics" } };
+export const metadata = searchMetadata("/practice/biophysics");
 export default function BiophysicsPracticePage() {
   return <div className="site-container study-page">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/study/biophysics">Biophysics</Link><span aria-hidden="true"> / </span><span aria-current="page">Interactive models</span></nav>
