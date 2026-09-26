@@ -152,7 +152,7 @@ test("failed downloads and demo signups never emit successful conversion events"
   await page.route("**/starter-pack/download", route => route.fulfill({ status: 503 }));
   await page.goto("/starter-pack");
   await page.getByRole("link", { name: "Download starter pack (HTML)", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("could not be prepared");
+  await expect(page.getByRole("navigation", { name: "Starter pack actions" }).getByRole("status")).toContainText("could not be prepared");
   expect(events.some(event => event.event === "starter_pack_requested")).toBe(false);
   await page.goto("/waitlist");
   await page.getByLabel("Example email address (required)", { exact: true }).fill("student@example.com");
