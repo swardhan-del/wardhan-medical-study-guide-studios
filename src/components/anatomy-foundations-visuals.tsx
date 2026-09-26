@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { StudyVisual } from "./study-visual";
 import styles from "./anatomy-foundations.module.css";
 const root = "https://openstax.org/books/anatomy-and-physiology-2e/pages/";
 const ink = "#14252c", tissue = "#d4ece8", plane = "#80551e";
@@ -6,12 +7,9 @@ function Drawing({ alt, height = 300, children }: { alt: string; height?: number
   return <svg role="img" aria-label={alt} viewBox={`0 0 320 ${height}`} className={styles.drawing} xmlns="http://www.w3.org/2000/svg">{children}</svg>;
 }
 function Figure({ id, title, caption, observe, source = "1-6-anatomical-terminology", sourceTitle = "OpenStax 1.6: Anatomical Terminology", children }: { id: string; title: string; caption: string; observe: string; source?: string; sourceTitle?: string; children: ReactNode }) {
-  return <figure className={styles.figure} data-anatomy-diagram={id}>
-    <h3>{title}</h3>{children}
-    <figcaption><p>{caption}</p><p><strong>Observe and explain:</strong> {observe}</p>
-      <p className={styles.credit}>Original teaching schematic © Wardhan Medical Study Guide Studios; AI-assisted SVG. Not to scale; not a specimen or diagnostic image. Scientific reference: <a href={root + source}>{sourceTitle}</a>. The reference publisher did not create this artwork.</p>
-    </figcaption>
-  </figure>;
+  return <StudyVisual className={styles.figure} data-anatomy-diagram={id} title={title} alt={caption} caption={caption} observe={observe}
+    credit="Original teaching schematic © Wardhan Medical Study Guide Studios; AI-assisted SVG. Not to scale; not a specimen or diagnostic image. The reference publisher did not create this artwork."
+    sources={[{title:sourceTitle,url:root+source}]}>{children}</StudyVisual>;
 }
 function FrontBody() {
   return <g fill={tissue} stroke={ink} strokeWidth="2.5">

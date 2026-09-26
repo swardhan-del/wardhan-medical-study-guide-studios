@@ -19,8 +19,11 @@
         "topic-anatomy-thorax"
       ],
       "resourceIds": [
-        "anatomy-thorax"
-      ]
+        "anatomy-thorax",
+        "thoracic-cage-landmarks",
+        "mediastinum-great-vessels"
+      ],
+      "observe": "Locate the sternal angle and the T4–T5 plane. Explain which mediastinal division lies above and which lies below it."
     },
     {
       "id": "abdominal-regions",
@@ -28,7 +31,7 @@
       "sourceAsset": "images/anatomy/volume-2.png",
       "kind": "diagram",
       "alt": "Three-by-three abdominal region grid: right hypochondriac, epigastric, left hypochondriac; right lumbar, umbilical, left lumbar; right inguinal, hypogastric, left inguinal.",
-      "caption": "Read right and left from the patient’s perspective. This recall schematic names the nine regions; it does not show organ boundaries or diagnostic findings.",
+      "caption": "Read right and left from the patient’s perspective. This orientation schematic names the nine regions; it does not show organ boundaries or diagnostic findings.",
       "rights": "Original volume schematic; previously released website copy",
       "evidence": "docs/ANATOMY_PREVIEWS.md",
       "sourceUrl": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
@@ -40,8 +43,10 @@
         "topic-anatomy-abdomen"
       ],
       "resourceIds": [
-        "anatomy-abdomen"
-      ]
+        "anatomy-abdomen",
+        "abdominal-surface-map"
+      ],
+      "observe": "Locate the umbilical region and its neighbours. Explain why a surface region alone does not identify a single underlying organ."
     },
     {
       "id": "cuboidal-section",
@@ -68,7 +73,8 @@
         "epithelia",
         "microscopy",
         "renal-histology"
-      ]
+      ],
+      "observe": "Trace the lining around a lumen and combine cell shape with the number of layers. Explain why this view alone does not identify a precise nephron segment."
     },
     {
       "id": "squamous-section",
@@ -88,7 +94,8 @@
       ],
       "resourceIds": [
         "epithelia"
-      ]
+      ],
+      "observe": "Locate the free surface and compare superficial with deeper cells. Use surface-cell shape together with the number of layers."
     }
   ]
 }

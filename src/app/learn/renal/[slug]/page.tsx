@@ -1,3 +1,4 @@
+import { StudyVisual, VisualFlow } from "@/components/study-visual";
 import { NephronMap } from "@/components/nephron-map";
 import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
@@ -46,7 +47,7 @@ export default async function RenalLessonPage({ params }: Props) {
           ← Renal course
         </Link>
         <p className="eyebrow">
-          Lesson {index + 1} of 8 · {lesson.minutes} minutes + recall
+          Lesson {index + 1} of 8 · {lesson.minutes} minutes + self-assessment
         </p>
         <h1>{lesson.title}</h1>
         <p className="interior-lede">{lesson.description}</p>
@@ -54,7 +55,7 @@ export default async function RenalLessonPage({ params }: Props) {
       </header>
       <div className="lesson-layout">
         <aside className="lesson-outline">
-          <h2>By the end, you can…</h2>
+          <h2>Learning Objectives</h2>
           <ul>
             {lesson.objectives.map((o) => (
               <li key={o}>{o}</li>
@@ -76,18 +77,14 @@ export default async function RenalLessonPage({ params }: Props) {
         </div>
       </div>
       {slug === "kidney-map" && <NephronMap />}
-      <section className="pathway-section">
-        <p className="eyebrow">Make the connection</p>
-        <ol className="pathway-map">
-          {lesson.pathway.map((p, i) => (
-            <li key={p.title}>
-              <span>{i + 1}</span>
-              <h3>{p.title}</h3>
-              <p>{p.detail}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
+      <StudyVisual className="pathway-section" headingLevel={2} title="Connect the mechanism"
+        alt={lesson.pathway.map(p=>`${p.title}: ${p.detail}`).join(" ")}
+        caption="Read the labelled relationships in order. This is a conceptual study sequence, not a scale anatomical drawing or a measured time course."
+        observe="Explain the relationship between each adjacent pair of stages, then identify where the lesson’s common misconception would interrupt the reasoning."
+        credit="Original teaching sequence · Wardhan Medical Study Guide Studios; adapted from Medical Physiology: Renal Physiology, Revision 15. AI-assisted."
+        sources={[{title:"Lesson source sections and supporting references",url:"#sources"}]}>
+        <VisualFlow label="Renal mechanism sequence" steps={lesson.pathway.map(p=>`${p.title}: ${p.detail}`)} />
+      </StudyVisual>
       <aside className="misconception">
         <p className="eyebrow">The common trap</p>
         <p>{lesson.misconception}</p>

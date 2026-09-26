@@ -1,5 +1,9 @@
 import { LessonJourney, LessonReview } from "./lesson-journey";
 import { journeyLessons } from "@/lib/lesson-journeys";
+import { HistologyTopicVisual, hasHistologyTopicVisual } from "./histology-foundations-visuals";
+import { LessonVisuals, visualsForLesson } from "./lesson-visuals";
+import { SubjectEntryContent } from "./subject-entry-content";
+import { newEntryLessonIds } from "@/content/subject-hubs";
 import { AnatomyFoundationsContent } from "./anatomy-foundations-content";
 import { HistologyFoundationsContent } from "./histology-foundations-content";
 import { AnatomyLessonNavigation, AnatomyIdentification, AnatomyPractice } from "./anatomy-course";
@@ -38,9 +42,10 @@ import { ConceptCheck } from "./concept-check";
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
   const journey = journeyLessons.find(item => item.id === lesson.id)!;
   const anatomyFoundations = lesson.id === "anatomy-foundations";
-  const flagship = anatomyFoundations || lesson.id === "histology-foundations-tissues";
+  const subjectEntry = newEntryLessonIds.includes(lesson.id);
+  const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
   const figures = figuresForResource(lesson.id);
-  const hasFigures = figures.length > 0 || hasTeachingDiagram(lesson.id);
+  const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
   const foundation = foundations[lesson.subject];
   const subject = subjectInterests.find((s) => s.id === lesson.subject)!;
@@ -93,7 +98,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         </p>
         <div className="action-row">
           <a className="button button-primary" href="#concept-check-title">
-            {flagship ? "Begin the Knowledge Check ↓" : "Try the question ↓"}
+            {flagship ? "Begin the Knowledge Check ↓" : "Begin the Knowledge Check ↓"}
           </a>
           <SaveButton id={lesson.id} title={lesson.title} />
           {videosForLesson(lesson.id).length > 0 && <a className="text-link" href="#lesson-videos">Watch video</a>}
@@ -112,11 +117,11 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         <a href="#worked-example-heading">Worked Example</a><a href="#knowledge-check-heading">Knowledge Check</a>
         <a href="#application-heading">Clinical and Applied Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a>
         <a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
-      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral recall</a><a href="#lesson-source">Sources</a></nav>}
+      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a><a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <div className="concept-layout">
         <div>
-          {flagship ? (anatomyFoundations ? <AnatomyFoundationsContent lesson={lesson}/> : <HistologyFoundationsContent lesson={lesson}/>) : <>
+          {flagship ? (subjectEntry ? <SubjectEntryContent lesson={lesson}/> : anatomyFoundations ? <AnatomyFoundationsContent lesson={lesson}/> : <HistologyFoundationsContent lesson={lesson}/>) : <>
           <section className="study-panel lesson-preparation" aria-labelledby="lesson-objectives">
             <h2 id="lesson-objectives">What you will be able to explain</h2>
             <ul>{(lesson.objectives ?? [lesson.summary]).map(objective => <li key={objective}>{objective}</li>)}</ul>
@@ -165,6 +170,8 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           <AnatomyIdentification lessonId={lesson.id} />
           {hasFigures && <span id="lesson-figures" />}
           <TeachingDiagram lessonId={lesson.id} />
+          <LessonVisuals lessonId={lesson.id} />
+          <HistologyTopicVisual lessonId={lesson.id} />
           {lesson.id === "epithelia" && (
             <>
               <HistologyVisualLesson />
@@ -233,8 +240,8 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
             className="concept-recall study-panel"
             aria-labelledby="oral-recall-title"
           >
-            <p className="eyebrow">Say it without looking</p>
-            <h2 id="oral-recall-title">Practise an oral answer</h2>
+            <p className="eyebrow">Explain from memory</p>
+            <h2 id="oral-recall-title">Oral Examination Prompts</h2>
             <p className="concept-prompt">{lesson.recall.prompt}</p>
             <SavedRecall id={`oral-${lesson.id}`} />
             <details>
@@ -293,7 +300,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           <li key={id}><a href={topicReferences[id].url} target="_blank" rel="noreferrer">{topicReferences[id].title}<span className="visually-hidden"> (opens in a new tab)</span> ↗</a></li>
         ))}</ul>}
         <p className="muted-note">
-          {anatomyFoundations ? `Scientific references checked ${reference.checkedAt}. The named public sections support the concepts and original teaching examples on this page.` : <>Further-reading link checked {reference.checkedAt}. The source guide above identifies the authored material; this public reference supports further study of this topic.</>}
+          {anatomyFoundations || subjectEntry ? `Scientific references checked ${reference.checkedAt}. The named public sections support the concepts and original teaching examples on this page.` : <>Further-reading link checked {reference.checkedAt}. The source guide above identifies the authored material; this public reference supports further study of this topic.</>}
         </p>
         <p>
           Web lesson by Wardhan Medical Study Guide Studios. Updated{" "}
@@ -302,7 +309,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           clinical peer review has not been completed.
         </p>
         <p className="muted-note">
-          {anatomyFoundations ? "The scientific references are publicly accessible. This lesson publishes newly written explanations, diagrams and self-assessment questions." : <>The full source edition remains in the controlled library. This page publishes an original teaching adaptation and original {flagship ? "self-assessment" : "recall"} questions.</>}
+          {anatomyFoundations || subjectEntry ? `The scientific references are publicly accessible. This lesson publishes newly written explanations, ${subjectEntry ? "text comparisons" : "diagrams"} and self-assessment questions.` : <>The full source edition remains in the controlled library. This page publishes an original teaching adaptation and original {flagship ? "self-assessment" : "recall"} questions.</>}
         </p>
         <CorrectionLink />
       </section>

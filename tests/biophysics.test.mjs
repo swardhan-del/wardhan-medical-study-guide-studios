@@ -27,8 +27,10 @@ test("invalid physical inputs do not produce plausible-looking model results", (
   assert.throws(()=>diffusionDistance(0,1),RangeError);
 });
 test("the biophysics course is reachable, sequenced and contains independent explained practice", () => {
-  const coverage=read("biophysics-coverage"), lessons=read("library-lessons").lessons.filter(l=>l.subject==="biophysics");
-  const questions=read("study-questions").questions.filter(q=>q.subject==="biophysics");
+  const coverage=read("biophysics-coverage");
+  const courseIds = new Set(coverage.lessons.map(l=>l.lessonId));
+  const lessons=read("library-lessons").lessons.filter(l=>courseIds.has(l.id));
+  const questions=read("study-questions").questions.filter(q=>courseIds.has(q.topic));
   assert.equal(coverage.lessons.filter(l=>l.track==="theory").length,36);
   assert.equal(coverage.lessons.filter(l=>l.track==="practical").length,14);
   assert.equal(lessons.length,50); assert.equal(questions.length,50);
