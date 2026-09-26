@@ -1,20 +1,15 @@
 "use client";
-import { useState, useEffect } from "react";
-import { learningEvent } from "@/lib/learning-analytics";
+import { useState } from "react";
 import { updateLearning, useLearning } from "./learning-store";
 export function CompleteLesson({ slug }: { slug: string }) {
   const { ready, data, persistent } = useLearning();
   const done = data.lessons.includes(slug);
-  useEffect(() => {
-    learningEvent("lesson_started", { lesson: slug });
-  }, [slug]);
   return (
     <div className="lesson-completion">
       <button
         className="button button-primary"
         disabled={!ready || done}
         onClick={() => {
-          learningEvent("lesson_completed", { lesson: slug });
           updateLearning((s) => ({
             ...s,
             lessons: [...new Set([...s.lessons, slug])],
@@ -39,7 +34,6 @@ export function ShareChallenge() {
     try {
       await navigator.clipboard.writeText(url);
       setMessage("Challenge link copied. Share it with a classmate.");
-      learningEvent("challenge_shared", { set: "renal-challenge" });
       updateLearning((s) => ({ ...s, shares: s.shares + 1 }));
     } catch {
       setFallback(url);

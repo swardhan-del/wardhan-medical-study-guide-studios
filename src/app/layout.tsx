@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { LearningAnalytics } from "@/components/learning-analytics";
 import type { Metadata, Viewport } from "next";
 import { SiteShell } from "@/components/site-shell";
@@ -58,7 +59,7 @@ export default function RootLayout({
     <html lang="en-GB">
       <body>
         <SiteShell>{children}</SiteShell>
-        <LearningAnalytics />
+        <Suspense fallback={null}><LearningAnalytics /></Suspense>
       </body>
     </html>
   );

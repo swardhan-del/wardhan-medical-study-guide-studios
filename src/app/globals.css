@@ -4076,3 +4076,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .drawing-space { min-height: 3cm; }
   .revision-page .revision-lesson p { white-space: pre-line; }
 }
+
+/* Non-modal, in-flow consent controls never obstruct learning or keyboard focus. */
+.measurement-notice { margin-block: 1.5rem; }
+.measurement-notice h2 { font-size: 1.4rem; }
