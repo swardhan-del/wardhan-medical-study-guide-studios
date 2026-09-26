@@ -138,7 +138,7 @@ test('figure navigation matches real figures and foundations are usable', async 
 test('biophysics is selectable on the map and the next action exits the map', async ({ page }) => {
   await page.goto('/study/map');
   await page.getByRole('combobox', { name: 'Subject', exact: true }).selectOption('biophysics');
-  await expect(page.getByRole('status')).toContainText('50 topics');
+  await expect(page.getByRole('status')).toContainText('51 topics');
   await page.getByRole('link', { name: 'Choose an available lesson', exact: true }).click();
   await expect(page).toHaveURL(/\/library$/);
 });

@@ -76,6 +76,86 @@
   ],
   "nodes": [
     {
+      "id": "physiology-entry-course",
+      "title": "Foundations",
+      "description": "Distinguish transport mechanisms, follow the energy that maintains ion gradients, and predict how selective permeability produces a resting membrane potential.",
+      "subject": "physiology",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-physiology-membrane-foundations",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "description": "Distinguish transport mechanisms, follow the energy that maintains ion gradients, and predict how selective permeability produces a resting membrane potential.",
+      "subject": "physiology",
+      "parentId": "physiology-entry-course",
+      "kind": "topic",
+      "resources": [
+        "physiology-membrane-foundations"
+      ]
+    },
+    {
+      "id": "biochemistry-entry-course",
+      "title": "Foundations",
+      "description": "Use a simple enzyme model to interpret reaction rate, distinguish concentration from velocity, and explain how cells regulate a metabolic pathway.",
+      "subject": "biochemistry",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-biochemistry-enzyme-foundations",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "description": "Use a simple enzyme model to interpret reaction rate, distinguish concentration from velocity, and explain how cells regulate a metabolic pathway.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-entry-course",
+      "kind": "topic",
+      "resources": [
+        "biochemistry-enzyme-foundations"
+      ]
+    },
+    {
+      "id": "genetics-entry-course",
+      "title": "Foundations",
+      "description": "Separate DNA organisation from gene expression, use a defined inheritance model, and build the vocabulary needed for medical genetics and immunology.",
+      "subject": "genetics",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-genetics-genome-foundations",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "description": "Separate DNA organisation from gene expression, use a defined inheritance model, and build the vocabulary needed for medical genetics and immunology.",
+      "subject": "genetics",
+      "parentId": "genetics-entry-course",
+      "kind": "topic",
+      "resources": [
+        "genetics-genome-foundations"
+      ]
+    },
+    {
+      "id": "biophysics-entry-course",
+      "title": "Foundations",
+      "description": "Predict passive exchange by stating the gradient, the membrane’s permeability and the geometry, then distinguish water movement from solute movement.",
+      "subject": "biophysics",
+      "parentId": null,
+      "kind": "system",
+      "resources": []
+    },
+    {
+      "id": "topic-biophysics-membrane-foundations",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "description": "Predict passive exchange by stating the gradient, the membrane’s permeability and the geometry, then distinguish water movement from solute movement.",
+      "subject": "biophysics",
+      "parentId": "biophysics-entry-course",
+      "kind": "topic",
+      "resources": [
+        "biophysics-membrane-foundations"
+      ]
+    },
+    {
       "id": "anatomy-foundation-course",
       "title": "Anatomy foundations",
       "description": "Begin with orientation, body compartments and tissue-to-organ organisation.",

@@ -2,7 +2,7 @@
   "version": 1,
   "reviewedAt": "2026-09-26",
   "baseCommit": "e86352ac8a5c90869abe5b474c1e550f779bd843",
-  "scope": "Every public catalogue record at the Phase Five base, including all library lessons and the native lesson/practice pages. Drawing exercises are learning activities, not published source images.",
+  "scope": "Every public catalogue record after integrating Phase Four and Five, including the four new foundation lessons. Drawing exercises are learning activities, not published source images.",
   "records": [
     {
       "id": "anatomy-abdomen",
@@ -3188,6 +3188,62 @@
       "visualIds": [],
       "figureIds": [],
       "rationale": "The visual supports this specific learning task: Use units and mass balance to distinguish GFR, plasma flow, filtration fraction and clearance."
+    },
+    {
+      "id": "biochemistry-enzyme-foundations",
+      "route": "/library/biochemistry-enzyme-foundations",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "biophysics-membrane-foundations",
+      "route": "/library/biophysics-membrane-foundations",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "genetics-genome-foundations",
+      "route": "/library/genetics-genome-foundations",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "physiology-membrane-foundations",
+      "route": "/library/physiology-membrane-foundations",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "kind": "Study lesson",
+      "action": "standardise-or-reuse",
+      "components": [
+        "StudyVisual",
+        "VisualComparison"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
     }
   ]
 }

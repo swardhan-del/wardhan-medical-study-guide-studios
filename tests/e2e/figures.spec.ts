@@ -46,11 +46,12 @@ test("approved figures retain proportions and enlarge with keyboard, zoom and do
     fullPage: true,
   });
   await page.goto("/library/microscopy");
+  // Target the active page while Next.js retires hidden streamed content.
   await expect(
-    page.locator(".concept-sequence .educational-figure"),
+    page.locator(".concept-sequence .educational-figure:visible"),
   ).toBeVisible();
   for (const image of await page
-    .locator(".educational-figure .figure-open img")
+    .locator(".educational-figure:visible .figure-open img")
     .all()) {
     await expect(image).toHaveAttribute("loading", "lazy");
     await expect(image).toHaveAttribute("srcset", /320w/);

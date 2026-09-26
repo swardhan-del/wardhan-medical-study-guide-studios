@@ -3,6 +3,54 @@
   "updatedAt": "2026-09-10",
   "parts": [
     {
+      "id": "physiology-membrane-foundations",
+      "subject": "physiology",
+      "number": "00",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "lessonIds": [
+        "physiology-membrane-foundations"
+      ],
+      "basis": "Original website lesson; named public scientific references",
+      "coverage": "Distinguish transport mechanisms, follow the energy that maintains ion gradients, and predict how selective permeability produces a resting membrane potential.",
+      "practiceHref": null
+    },
+    {
+      "id": "biochemistry-enzyme-foundations",
+      "subject": "biochemistry",
+      "number": "00",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "lessonIds": [
+        "biochemistry-enzyme-foundations"
+      ],
+      "basis": "Original website lesson; named public scientific references",
+      "coverage": "Use a simple enzyme model to interpret reaction rate, distinguish concentration from velocity, and explain how cells regulate a metabolic pathway.",
+      "practiceHref": null
+    },
+    {
+      "id": "genetics-genome-foundations",
+      "subject": "genetics",
+      "number": "00",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "lessonIds": [
+        "genetics-genome-foundations"
+      ],
+      "basis": "Original website lesson; named public scientific references",
+      "coverage": "Separate DNA organisation from gene expression, use a defined inheritance model, and build the vocabulary needed for medical genetics and immunology.",
+      "practiceHref": null
+    },
+    {
+      "id": "biophysics-membrane-foundations",
+      "subject": "biophysics",
+      "number": "00",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "lessonIds": [
+        "biophysics-membrane-foundations"
+      ],
+      "basis": "Original website lesson; named public scientific references",
+      "coverage": "Predict passive exchange by stating the gradient, the membrane’s permeability and the geometry, then distinguish water movement from solute movement.",
+      "practiceHref": null
+    },
+    {
       "id": "anatomy-foundations",
       "subject": "anatomy",
       "number": "00",
