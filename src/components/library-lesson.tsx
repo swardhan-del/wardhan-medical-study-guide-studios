@@ -1,3 +1,5 @@
+import { LessonJourney, LessonReview } from "./lesson-journey";
+import { journeyLessons } from "@/lib/lesson-journeys";
 import { HistologyTopicVisual, hasHistologyTopicVisual } from "./histology-foundations-visuals";
 import { LessonVisuals, visualsForLesson } from "./lesson-visuals";
 import { SubjectEntryContent } from "./subject-entry-content";
@@ -8,7 +10,6 @@ import { AnatomyLessonNavigation, AnatomyIdentification, AnatomyPractice } from 
 import { PlexusRecall } from "./plexus-recall";
 import { TeachingDiagram, hasTeachingDiagram } from "./teaching-diagram";
 import { foundations } from "@/content/foundations";
-import { studyGroups, studyLessons } from "@/lib/study-collections";
 import { EducationalFigure, FigureGallery } from "./educational-figure";
 import { figuresForResource } from "@/lib/figures";
 import { videosForLesson } from "@/lib/videos";
@@ -39,6 +40,7 @@ import { SaveButton } from "./catalog-browser";
 import { ConceptCheck } from "./concept-check";
 
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
+  const journey = journeyLessons.find(item => item.id === lesson.id)!;
   const anatomyFoundations = lesson.id === "anatomy-foundations";
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
@@ -46,8 +48,6 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
   const foundation = foundations[lesson.subject];
-  const sequence = studyGroups.filter(group => group.subject === lesson.subject).flatMap(group => group.lessonIds);
-  const nextLesson = studyLessons.find(candidate => candidate.id === sequence[sequence.indexOf(lesson.id) + 1]);
   const subject = subjectInterests.find((s) => s.id === lesson.subject)!;
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
   const topicReferences = references as Record<
@@ -108,6 +108,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           </a>
         </div>
       </header>
+      <LessonJourney lesson={journey} />
       {lesson.id === "thorax-nerve-relations" && <p className="study-notice">New to anatomy? <Link href="/start/anatomy">Review position, directions and body planes first</Link>.</p>}
       {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
       {flagship ? <nav className="lesson-jumps" aria-label="Lesson sections">
@@ -251,8 +252,8 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
               Try explaining the mechanism aloud before revealing the answer.
             </p>
           </section>
-          <nav className="study-panel" aria-label="Continue the subject sequence"><h2>Your next step</h2><p>Explain the answer above without looking, then compare it with the model. Revisit any term you could not explain before moving on.</p>{nextLesson ? <Link className="button button-primary" href={`/library/${nextLesson.id}`}>Next lesson: {nextLesson.title}</Link> : <Link className="button button-primary" href={`/study/${lesson.subject}`}>Return to this subject and choose revision</Link>}</nav>
           </>}
+          <LessonReview lesson={journey} />
         </div>
         <aside className="concept-sidebar">
           <p className="eyebrow">Connect the subjects</p>

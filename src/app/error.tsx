@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function Error({
   reset,
@@ -10,7 +11,7 @@ export default function Error({
     <div className="error-state site-container" role="alert">
       <p className="eyebrow">Something interrupted the page</p>
       <h1>We could not open this view.</h1>
-      <p>Please try again. The public library remains read-only.</p>
+      <p>Try again, or return to the library. Your saved learning progress remains in this browser.</p>
       <button
         className="button button-primary"
         type="button"
@@ -18,6 +19,7 @@ export default function Error({
       >
         Try again <span aria-hidden="true">↗</span>
       </button>
+      <div className="action-row"><Link href="/library">Search the library</Link><Link href="/study">Return to My Study</Link></div>
     </div>
   );
 }

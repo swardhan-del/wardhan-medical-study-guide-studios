@@ -1,3 +1,5 @@
+import { ContinueLearning, SavedSummaries } from "@/components/continue-learning";
+import { journeyIndex, journeyLessons } from "@/lib/lesson-journeys";
 import Link from "next/link";
 import { SavedLearning } from "@/components/saved-learning";
 import { publicCatalog } from "@/lib/catalog";
@@ -26,6 +28,8 @@ export default function StudyPage() {
         <p>Follow the source-based sequence across subjects and see which topics have an introduction available and which are planned.</p>
         <Link className="button button-secondary" href="/study/map">Open study map</Link>
       </section>
+      <ContinueLearning lessons={journeyIndex} />
+      <SavedSummaries lessons={journeyLessons.map(({ id, title, summary }) => ({ id, title, summary }))} />
       <StudyDashboard />
       <SavedLearning records={publicCatalog} />
     </div>

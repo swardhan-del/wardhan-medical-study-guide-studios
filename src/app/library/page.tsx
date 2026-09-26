@@ -31,6 +31,7 @@ export default async function LibraryPage({
           Browse lessons, practice activities, and available revision resources. Search for a topic or filter by subject and format.
         </p>
       </header>
+      <nav className="action-row" aria-label="Library starting points"><Link href="/start#choose-subject">Choose your first free lesson</Link><Link href="/study">Continue my learning</Link><Link href="/starter-pack">Free Study Guide starter pack</Link></nav>
       <details className="study-details"><summary>Choose a free subject learning path</summary><p>Choose a subject, read its recommended first lesson and try the explained quiz. Each lesson links back to this library.</p><nav className="quick-links" aria-label="Free subject learning paths">{Object.entries(subjectHubs).map(([id, hub]) => <Link key={id} href={`/study/${id}`}>{hub.name}</Link>)}</nav></details>
       <details className="study-details" id="printable-notes"><summary>Printable revision notes for all seven subjects</summary><p>Open a subject’s web revision notes, then use Print / Save as PDF. These collect the published lessons and questions; they are not complete source textbooks.</p><nav className="quick-links" aria-label="Printable revision subjects">{studySubjects.map(s => <Link key={s.id} href={`/study/${s.id}/revision`}>{s.title}</Link>)}</nav></details>
       <CatalogBrowser key={`${subject}:${query}`} records={publicCatalog} initialSubject={subject} initialQuery={query} />

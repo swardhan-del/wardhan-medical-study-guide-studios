@@ -22,7 +22,8 @@ export default function PrivacyPage() {
         </p>
         <h2>Learning progress</h2>
         <p>
-          Lesson completion, quiz attempts, review dates, study-day counts, oral
+          The last library lesson and section visited, saved summary identifiers,
+          explanation and summary review states, lesson completion, quiz attempts, review dates, study-day counts, oral
           self-assessment and your exam plan are stored in this browser. They
           stay in this browser as detailed records. Aggregate activity events
           are described below. Open My Study to download a progress record or
@@ -50,8 +51,8 @@ export default function PrivacyPage() {
         <p>
           The hosting service processes requests needed to deliver the site,
           which can include network and browser information. Opening a resource
-          hosted elsewhere sends a request to that file’s host. Production uses
-          Vercel Web Analytics for page views and curriculum activity events.
+          hosted elsewhere sends a request to that file’s host. Optional Vercel Web Analytics is disabled by default. Where enabled by the site,
+          it loads only after you choose “Allow analytics” in this browser.
           Events contain fixed lesson or quiz identifiers, or a
           returning-study-day flag; they do not include answer text, scores,
           oral drafts or exam dates. Query strings and personal study pages are
@@ -60,8 +61,8 @@ export default function PrivacyPage() {
         </p>
         <h2>Analytics preference</h2>
         <p>
-          You can opt out on this browser. The setting does not change your
-          study progress.
+          Analytics is optional and off unless you allow it. You can disable it again
+          at any time. The setting does not change your study progress.
         </p>
         <AnalyticsPreference />
       </div>
