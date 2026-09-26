@@ -3,6 +3,66 @@
   "updatedAt": "2026-09-10",
   "groups": [
     {
+      "id": "physiology-membrane-foundations",
+      "subject": "physiology",
+      "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+      "sourceLabel": "OpenStax Anatomy and Physiology 2e, 3.1: The Cell Membrane",
+      "sourceId": "physiology-membrane-foundations-20260923",
+      "topics": [
+        {
+          "id": "physiology-membrane-foundations-01",
+          "title": "Physiology Foundations: Membrane Transport and Resting Potential",
+          "href": "/library/physiology-membrane-foundations",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-enzyme-foundations",
+      "subject": "biochemistry",
+      "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+      "sourceLabel": "OpenStax Biology 2e, 6.5: Enzymes",
+      "sourceId": "biochemistry-enzyme-foundations-20260923",
+      "topics": [
+        {
+          "id": "biochemistry-enzyme-foundations-01",
+          "title": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+          "href": "/library/biochemistry-enzyme-foundations",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations",
+      "subject": "genetics",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "sourceLabel": "NHGRI Talking Glossary: Genome",
+      "sourceId": "genetics-genome-foundations-20260923",
+      "topics": [
+        {
+          "id": "genetics-genome-foundations-01",
+          "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+          "href": "/library/genetics-genome-foundations",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "biophysics-membrane-foundations",
+      "subject": "biophysics",
+      "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+      "sourceLabel": "OpenStax College Physics 2e, 12.7: Molecular Transport Phenomena",
+      "sourceId": "biophysics-membrane-foundations-20260923",
+      "topics": [
+        {
+          "id": "biophysics-membrane-foundations-01",
+          "title": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+          "href": "/library/biophysics-membrane-foundations",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
       "id": "anatomy-foundations",
       "subject": "anatomy",
       "title": "Anatomy foundations",

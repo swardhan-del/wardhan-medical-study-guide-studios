@@ -1,0 +1,33 @@
+.overview { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.firstLesson { border-inline-start: 3px solid var(--teal); padding-inline-start: 1.5rem; }
+.topicMap { list-style: none; padding: 0; margin: 1.5rem 0; display: grid; gap: 0; }
+.topicMap li { display: grid; grid-template-columns: 2.5rem 1fr; gap: 1rem; padding: 1.25rem 0; border-block-start: 1px solid var(--line); }
+.topicMap h3 { margin: 0 0 .4rem; }
+.topicMap p { margin: 0; }
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+.comparison { margin: 1.5rem 0 0; }
+.comparison table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 1rem; }
+.comparison th, .comparison td { text-align: left; vertical-align: top; padding: .8rem; border: 1px solid var(--line); overflow-wrap: anywhere; }
+.comparison th { background: var(--paper-deep); font-weight: 700; }
+.comparison figcaption { margin-block-start: 1rem; }
+.comparison figcaption p { margin: .65rem 0; }
+.terms { display: grid; gap: 1rem; }
+.terms dt { font-weight: 700; }
+.terms dd { margin: .25rem 0 0; }
+.narrowComparison { display: none; }
+@media (max-width: 700px) {
+  .overview { grid-template-columns: 1fr; gap: 1.25rem; }
+  .firstLesson { padding-inline-start: 1rem; }
+  .comparison th, .comparison td { padding: .55rem; }
+  .topicMap li { gap: .5rem; grid-template-columns: 2rem 1fr; }
+  .wideComparison { display: none; }
+  .narrowComparison { display: block; }
+  .narrowComparison ol { list-style: none; padding: 0; display: grid; gap: 1rem; }
+  .narrowComparison li { border: 1px solid var(--line); padding: 1rem; background: var(--paper); }
+  .narrowComparison dl { margin: 0; }
+  .narrowComparison dl > div + div { margin-top: .75rem; }
+  .narrowComparison dt { font-size: .9rem; font-weight: 700; color: var(--ink-soft); }
+  .narrowComparison dd { margin: .15rem 0 0; }
+}
+
+.comparison caption { text-align: left; font-weight: 700; padding-block-end: 1rem; }
