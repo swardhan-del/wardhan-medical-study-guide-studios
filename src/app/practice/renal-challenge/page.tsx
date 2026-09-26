@@ -1,5 +1,5 @@
+import { SaveButton } from "@/components/save-button";
 import { searchMetadata } from "@/lib/search-metadata";
-import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import { renalChallengeIds, renalQuestions } from "@/content/renal-course";
 import { RenalQuiz } from "@/components/renal-quiz";

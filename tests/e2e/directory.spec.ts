@@ -73,18 +73,29 @@ test("all native routes and public assets resolve without archive exposure", asy
 }, info) => {
   test.setTimeout(180000);
   if (info.project.name !== "desktop") return;
-  for (const url of [
+  const urls = [
     ...taxonomy.subjects.map((s) => "/subjects/" + s.id),
     ...taxonomy.nodes.map((n) => "/topics/" + n.id),
     ...catalog.records.map((r) => "/library/" + r.id),
-  ]) {
-    const res = await request.get(url);
-    expect(res.status(), url).toBe(200);
-    const html = await res.text();
-    expect(html, url).not.toMatch(
-      /https?:[^"<>]*dropbox|original_dropbox_path|destination_dropbox_path|study%20guide/,
-    );
-  }
+  ];
+  // Bound concurrency so network latency cannot exhaust the hosted-preview
+  // budget while preserving every URL and response-content assertion.
+  const queue = [...urls];
+  await Promise.all(Array.from({ length: 6 }, async () => {
+    while (queue.length) {
+      const url = queue.shift()!;
+      // Surface the route on network failure without exposing auth headers.
+      const res = await request.get(url, { timeout: 30000 }).catch(() => {
+        throw new Error(`Public route request failed: ${url}`);
+      });
+      expect(res.status(), url).toBe(200);
+      const html = await res.text();
+      expect(html, url).not.toMatch(
+        /https?:[^"<>]*dropbox|original_dropbox_path|destination_dropbox_path|study%20guide/,
+      );
+      await res.dispose();
+    }
+  }));
   for (const url of [
     "/topics/missing",
     "/videos/unapproved",

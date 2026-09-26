@@ -1,6 +1,7 @@
 "use client";
 import { useSyncExternalStore } from "react";
-import { learningLessonIds, learningQuestionIds, learningDraftIds, practiceItems } from "@/content/practice-registry";
+import registry from "@/content/learning-registry.json";
+const { learningLessonIds, learningQuestionIds, learningDraftIds } = registry;
 import {
   emptyProgress,
   gradeAttempt,
@@ -72,10 +73,10 @@ export function updateLearning(
 }
 export function recordAnswer(id: string, correct: boolean, choice: number | null = null, usedHint = false) {
   if (!questionIds.includes(id)) return;
-  const item = practiceItems.find(question => question.id === id);
+  const lesson = (registry.questionLessons as Record<string, string>)[id];
   updateLearning((state) => ({
     ...state,
-    resume: item && (item.href.startsWith("/library/") || item.href.startsWith("/learn/renal/")) ? { lesson: item.topic, stage: "practice", at: Date.now() } : state.resume,
+    resume: lesson ? { lesson, stage: "practice", at: Date.now() } : state.resume,
     answers: {
       ...state.answers,
       [id]: gradeAttempt(state.answers[id], correct, Date.now(), choice, usedHint),

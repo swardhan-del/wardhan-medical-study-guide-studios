@@ -1,5 +1,5 @@
+import { SaveButton } from "@/components/save-button";
 import { searchMetadata } from "@/lib/search-metadata";
-import { SaveButton } from "@/components/catalog-browser";
 import { HistologyDetective } from "@/components/histology-detective";
 export const metadata = searchMetadata("/practice/histology");
 export default async function HistologyPage({ searchParams }: { searchParams: Promise<{ case?: string; visual?: string; review?: string }> }) {

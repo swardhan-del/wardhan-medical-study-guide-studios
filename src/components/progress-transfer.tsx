@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
-import { learningLessonIds, learningQuestionIds, learningDraftIds } from "@/content/practice-registry";
+import registry from "@/content/learning-registry.json";
+const { learningLessonIds, learningQuestionIds, learningDraftIds } = registry;
 import catalog from "@/content/public-catalog.json";
 import { localDate } from "@/lib/learning-core";
 import { readTransfer, mergeProgress } from "@/lib/progress-transfer";

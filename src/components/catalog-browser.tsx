@@ -1,6 +1,7 @@
 "use client";
 import { useLearning } from "./learning-store";
 import Link from "next/link";
+import { SaveButton } from "./save-button";
 import { useRef, useState } from "react";
 import { subjectInterests } from "@/content/subjects";
 import type { CatalogRecord } from "@/lib/catalog-types";
@@ -257,21 +258,5 @@ export function CatalogBrowser({
         </div>
       )}
     </div>
-  );
-}
-export function SaveButton({ id, title }: { id: string; title: string }) {
-  const { saved, toggle, ready } = useReadingList();
-  const active = saved.includes(id);
-  return (
-    <button
-      className="save-button"
-      disabled={!ready}
-      aria-pressed={active}
-      aria-label={`${active ? "Saved to My Study" : "Save to My Study"}: ${title}${active ? " (remove from saved resources)" : ""}`}
-      type="button"
-      onClick={() => toggle(id)}
-    >
-      {active ? "Saved to My Study" : "Save to My Study"}
-    </button>
   );
 }

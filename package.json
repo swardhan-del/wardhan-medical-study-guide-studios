@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "prebuild": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs && node scripts/build-measurement-registry.mjs --check",
-    "content:check": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs && node scripts/build-measurement-registry.mjs --check",
+    "prebuild": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs && node scripts/build-learning-registry.mjs --check && node scripts/build-measurement-registry.mjs --check",
+    "content:check": "node scripts/build-anatomy-course.mjs --check && node scripts/check-subject-directory.mjs && node scripts/build-library-catalog.mjs --check && node scripts/check-library-lessons.mjs && node scripts/check-content.mjs && node scripts/check-public-release.mjs && node scripts/check-figures.mjs && node scripts/check-study-collections.mjs && node scripts/check-visual-learning.mjs && node scripts/build-learning-registry.mjs --check && node scripts/build-measurement-registry.mjs --check",
     "content:library": "node scripts/build-library-catalog.mjs",
     "content:import": "node scripts/import-curation.mjs",
     "review": "node scripts/local-review.mjs",
@@ -17,7 +17,9 @@
     "test:e2e": "playwright test",
     "postbuild": "node scripts/check-build.mjs",
     "content:directory": "node scripts/check-subject-directory.mjs",
-    "content:anatomy": "node scripts/build-anatomy-course.mjs && node scripts/build-library-catalog.mjs"
+    "content:anatomy": "node scripts/build-anatomy-course.mjs && node scripts/build-library-catalog.mjs",
+    "audit:public": "node scripts/audit-public-pages.mjs",
+    "audit:links": "node scripts/check-external-links.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",

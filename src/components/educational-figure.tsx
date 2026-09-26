@@ -25,6 +25,7 @@ export function FigureThumbnail({ figure }: { figure?: PublicFigure }) {
 }
 export function EducationalFigure({ figure }: { figure: PublicFigure }) {
   const dialog = useRef<HTMLDialogElement>(null),
+    trigger = useRef<HTMLButtonElement>(null),
     id = useId();
   const [open, setOpen] = useState(false),
     [zoom, setZoom] = useState(1);
@@ -47,7 +48,8 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
   return (
     <StudyVisual className="educational-figure" id={"figure-" + figure.id} title={figure.title} alt={figure.alt} caption={figure.caption} observe={figure.observe}
       credit={`${figure.rights}. ${figure.modifications}`} sources={[{ title: "Image source or supporting scientific reference", url: figure.sourceUrl }]}>
-      {failed ? <div className="visual-image-fallback" role="status"><p><strong>Image unavailable.</strong> {figure.alt}</p><button onClick={enlarge}>Try the full-size image</button></div> : <button
+      {failed ? <div className="visual-image-fallback" role="status"><p><strong>Image unavailable.</strong> {figure.alt}</p><button ref={trigger} onClick={enlarge}>Try the full-size image</button></div> : <button
+        ref={trigger}
         className="figure-open"
         onClick={enlarge}
         aria-label={"Enlarge " + figure.title}
@@ -70,7 +72,7 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
         className="figure-dialog"
         ref={dialog}
         aria-labelledby={id}
-        onClose={() => setOpen(false)}
+        onClose={() => { setOpen(false); trigger.current?.focus(); }}
         onClick={(e) => {
           if (e.target === e.currentTarget) dialog.current?.close();
         }}

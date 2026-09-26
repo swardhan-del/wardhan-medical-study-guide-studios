@@ -1,8 +1,8 @@
+import { SaveButton } from "@/components/save-button";
 import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
 import { StructuredData } from "@/components/structured-data";
 import { courseSchema } from "@/lib/structured-data";
 import { searchMetadata } from "@/lib/search-metadata";
-import { SaveButton } from "@/components/catalog-browser";
 import Link from "next/link";
 import {
   renalLessons,

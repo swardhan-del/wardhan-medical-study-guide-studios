@@ -58,6 +58,21 @@ export default function AboutPage() {
             sign-in required. Saved resources and study progress stay in your
             browser.
           </p>
+          <h2 id="clinical-review">Clinical review status</h2>
+          <p>
+            All public lessons, practice questions, worked examples, diagrams,
+            audio and video recaps, and downloadable revision material still
+            need independent clinical or subject-specialist peer review.
+            Source checks and automated answer-key tests do not constitute
+            independent peer review.
+          </p>
+          <p>
+            The project is pre-launch. Use these materials alongside your
+            official course and supervised teaching. They are not medical
+            advice and must not guide patient care. A future review record must
+            identify the qualified reviewer, date, exact content version,
+            scope and any unresolved corrections before reviewed status is claimed.
+          </p>
           <h2>Help improve the library</h2>
           <p>
             I welcome questions, corrections and suggestions for clearer

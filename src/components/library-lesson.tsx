@@ -39,7 +39,7 @@ import type {
   LibrarySource,
 } from "@/lib/library-types";
 import { getSiteUrl } from "@/lib/site-url";
-import { SaveButton } from "./catalog-browser";
+import { SaveButton } from "./save-button";
 import { ConceptCheck } from "./concept-check";
 
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
@@ -208,9 +208,9 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           )}
           {!["epithelia", "microscopy", "renal-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id)} title="Connect the figure with the explanation" />}
           {lesson.id === "limbs-plexus-and-joints" && <PlexusRecall />}
-          <StudyReel key={lesson.id} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
+          <StudyReel key={`reel-${lesson.id}`} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
           <ConceptCheck
-            key={lesson.id}
+            key={`concept-${lesson.id}`}
             lesson={{ id: lesson.id, question: lesson.question }}
           />
           <AnatomyPractice lessonId={lesson.id} />

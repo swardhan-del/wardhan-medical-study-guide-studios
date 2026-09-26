@@ -1686,8 +1686,20 @@ h1 em {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
+
+.clinical-review-notice { max-width: 70ch; line-height: 1.6; }
+.figure-unavailable { display: grid; place-items: center; min-height: 10rem; padding: 1.25rem; background: var(--paper-deep); color: var(--ink); line-height: 1.6; }
+.clinical-review-notice a,
+.prose-column p a,
+.library-source-note a,
+.educational-figure figcaption a { text-decoration: underline; text-underline-offset: .18em; }
+summary:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
 
 /* Library and review surfaces share the studio's existing type and color system. */
 .visually-hidden {
@@ -1840,7 +1852,8 @@ select:focus-visible {
   color: white;
 }
 .save-button:disabled {
-  opacity: 0.55;
+  opacity: 1;
+  border-style: dashed;
   cursor: wait;
 }
 .review-tag {
