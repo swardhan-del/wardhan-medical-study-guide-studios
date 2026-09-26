@@ -157,7 +157,7 @@ test("failed downloads and demo signups never emit successful conversion events"
   await page.goto("/waitlist");
   await page.getByLabel("Example email address (required)", { exact: true }).fill("student@example.com");
   await page.getByRole("checkbox").check();
-  await page.getByRole("button", { name: /Try the demo/ }).click();
+  await page.getByRole("button", { name: /Try demo/ }).click();
   await expect(page.locator(".waitlist-panel")).toContainText("no email");
   expect(events.some(event => event.event === "waitlist_submitted")).toBe(false);
 });
