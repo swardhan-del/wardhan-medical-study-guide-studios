@@ -1,4 +1,4 @@
-import { SaveButton } from "@/components/catalog-browser";
+import { SaveButton } from "@/components/save-button";
 import { HistologyDetective } from "@/components/histology-detective";
 export const metadata = {
   title: "Histology detective: identify renal tubules",

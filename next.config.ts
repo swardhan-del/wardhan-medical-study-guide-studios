@@ -22,8 +22,9 @@ const contentSecurityPolicy = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   env: {
-    NEXT_PUBLIC_LEARNING_ANALYTICS:
-      process.env.VERCEL_ENV === "production" ? "1" : "0",
+    // Pre-launch gate: retire automatic opt-out tracking. Phase Nine replaces
+    // this legacy integration with separately configured, consent-first events.
+    NEXT_PUBLIC_LEARNING_ANALYTICS: "0",
   },
   poweredByHeader: false,
   outputFileTracingExcludes: { "/*": ["./.private/**/*", "./.private/catalog.json"] },

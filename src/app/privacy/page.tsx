@@ -50,18 +50,16 @@ export default function PrivacyPage() {
         <p>
           The hosting service processes requests needed to deliver the site,
           which can include network and browser information. Opening a resource
-          hosted elsewhere sends a request to that file’s host. Production uses
-          Vercel Web Analytics for page views and curriculum activity events.
-          Events contain fixed lesson or quiz identifiers, or a
-          returning-study-day flag; they do not include answer text, scores,
-          oral drafts or exam dates. Query strings and personal study pages are
-          excluded from page-view tracking. This site honours Do Not Track and
-          Global Privacy Control signals.
+          hosted elsewhere sends a request to that file’s host. Optional
+          analytics is disabled for this pre-launch build. No lesson, quiz or
+          page-view events are sent by the website’s analytics integration.
+          Any future measurement must explain its recipient and purpose and
+          provide an explicit consent choice before it starts.
         </p>
         <h2>Analytics preference</h2>
         <p>
-          You can opt out on this browser. The setting does not change your
-          study progress.
+          Analytics and browser-local study progress are separate. Disabling
+          analytics does not remove or prevent your saved study work.
         </p>
         <AnalyticsPreference />
       </div>

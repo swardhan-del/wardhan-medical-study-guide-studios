@@ -7,7 +7,7 @@ import { formatBytes } from "@/lib/catalog-types";
 import { publicCatalog } from "@/lib/catalog";
 import { resourceNodes, recordsForNode, taxonomyNodes } from "@/lib/taxonomy";
 import { ResourceBreadcrumbs } from "./taxonomy-navigation";
-import { SaveButton } from "./catalog-browser";
+import { SaveButton } from "./save-button";
 export function ResourceDetail({
   record,
   review = false,

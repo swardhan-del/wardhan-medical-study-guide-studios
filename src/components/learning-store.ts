@@ -1,7 +1,8 @@
 "use client";
 import { learningEvent } from "@/lib/learning-analytics";
 import { useSyncExternalStore } from "react";
-import { learningLessonIds, learningQuestionIds, learningDraftIds } from "@/content/practice-registry";
+import registry from "@/content/learning-registry.json";
+const { learningLessonIds, learningQuestionIds, learningDraftIds } = registry;
 import {
   emptyProgress,
   gradeAttempt,

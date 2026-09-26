@@ -24,9 +24,12 @@ export function FigureThumbnail({ figure }: { figure?: PublicFigure }) {
 }
 export function EducationalFigure({ figure }: { figure: PublicFigure }) {
   const dialog = useRef<HTMLDialogElement>(null),
+    trigger = useRef<HTMLButtonElement>(null),
     id = useId();
   const [open, setOpen] = useState(false),
     [zoom, setZoom] = useState(1);
+  const [previewFailed, setPreviewFailed] = useState(false);
+  const [fullImageFailed, setFullImageFailed] = useState(false);
   useEffect(() => {
     if (!open) return;
     const previous = document.body.style.overflow;
@@ -43,12 +46,13 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
   return (
     <figure className="educational-figure" id={"figure-" + figure.id}>
       <button
+        ref={trigger}
         className="figure-open"
         onClick={enlarge}
         aria-label={"Enlarge " + figure.title}
         aria-haspopup="dialog"
       >
-        <img
+        {previewFailed ? <span className="figure-unavailable" style={{aspectRatio:`${figure.width} / ${figure.height}`}}>Preview image unavailable. {figure.alt}</span> : <img
           src={figure.variants[1]?.src || figure.src}
           srcSet={srcSet(figure)}
           sizes="(max-width: 760px) 90vw, 600px"
@@ -57,7 +61,8 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
           alt={figure.alt}
           loading="lazy"
           decoding="async"
-        />
+          onError={() => setPreviewFailed(true)}
+        />}
         <span>Enlarge and zoom</span>
       </button>
       <figcaption>
@@ -77,7 +82,7 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
         className="figure-dialog"
         ref={dialog}
         aria-labelledby={id}
-        onClose={() => setOpen(false)}
+        onClose={() => { setOpen(false); trigger.current?.focus(); }}
         onClick={(e) => {
           if (e.target === e.currentTarget) dialog.current?.close();
         }}
@@ -124,19 +129,22 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
               role="region"
               aria-label="Scrollable enlarged image"
             >
-              <img
+              {fullImageFailed ? <p role="status">Full-size image unavailable. {figure.alt} Use the caption and source reference below.</p> : <img
                 src={figure.src}
                 width={figure.width}
                 height={figure.height}
                 alt={figure.alt}
+                onError={() => setFullImageFailed(true)}
                 style={{
                   width: `${zoom * 100}%`,
                   maxWidth: "none",
                   height: "auto",
                 }}
-              />
+              />}
             </div>
             <p>{figure.caption}</p>
+            <p>{figure.rights}. {figure.modifications}</p>
+            <a href={figure.sourceUrl}>Source description or scientific reference</a>
           </>
         )}
       </dialog>

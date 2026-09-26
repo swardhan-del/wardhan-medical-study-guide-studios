@@ -12,11 +12,12 @@ test("first visit reaches each subject coverage map and a real starting lesson",
   await page.screenshot({path:info.outputPath("start.png"),fullPage:true});
   for (const subject of ["anatomy","histology","cell-biology","biochemistry","physiology","genetics"]) {
     await page.goto(`/study/${subject}#coverage`);
-    const map = page.locator("#coverage");
+    // Next.js can retain the previous route in a hidden tree.
+    const map = page.locator("#coverage:visible");
     await expect(map).toContainText(subject === "anatomy" ? "What to study alongside this course" : "Still needs fuller lessons");
     await map.getByRole("link",{name:/^Start with/}).click();
     await expect(page).toHaveURL(subject === "anatomy" ? /\/library\/anatomy-foundations$/ : /\/library\//);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(page.locator("h1:visible")).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   }
   expect(errors).toEqual([]);

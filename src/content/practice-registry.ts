@@ -1,12 +1,12 @@
-import anatomyCourse from "./anatomy-practice-index.json";
-import library from "./library-lessons.json";
-import thorax from "./thorax-practice.json";
-import { anatomyLearningPages } from "./anatomy-learning";
-import { renalLessons, renalQuestions, renalLessonHref } from "./renal-course";
-import { abgCases } from "./abg-cases";
-import { histologyTissues } from "./histology-tissues";
-import studio from "./study-questions.json";
-import transfer from "./transfer-practice.json";
+import anatomyCourse from "./anatomy-practice-index.json" with { type: "json" };
+import library from "./library-lessons.json" with { type: "json" };
+import thorax from "./thorax-practice.json" with { type: "json" };
+import { anatomyLearningPages } from "./anatomy-learning.ts";
+import { renalLessons, renalQuestions, renalLessonHref } from "./renal-course.ts";
+import { abgCases } from "./abg-cases.ts";
+import { histologyTissues } from "./histology-tissues.ts";
+import studio from "./study-questions.json" with { type: "json" };
+import transfer from "./transfer-practice.json" with { type: "json" };
 
 export type PracticeItem = {
   id: string;

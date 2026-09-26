@@ -20,6 +20,9 @@ export function LearningAnalytics() {
 }
 export function AnalyticsPreference() {
   const [message, setMessage] = useState("");
+  if (process.env.NEXT_PUBLIC_LEARNING_ANALYTICS !== "1") {
+    return <p>Optional analytics is disabled for this pre-launch build. Your study progress remains in this browser.</p>;
+  }
   function setPreference(optOut: boolean) {
     try {
       localStorage.setItem("wardhan-analytics-optout", optOut ? "1" : "0");

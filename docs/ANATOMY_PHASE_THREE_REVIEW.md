@@ -46,7 +46,7 @@ A baseline comparison verified that all 236 existing lessons, 81 study questions
 
 ## Validation
 
-Run the repository content check, unit tests, typecheck, lint, production build and complete desktop/mobile/local-review browser suite. New regression tests cover course-map navigation, exact independently reviewed answer keys, concealed feedback, all answer explanations, saved responses, oral notes/checklist persistence, keyboard disclosures, 320-pixel layout, source links, labelled SVGs, text-only usability and printable content. Existing Histology browser coverage verifies the shared renderer extraction.
+Run the repository content check, unit tests, typecheck, lint, production build and complete desktop/mobile/local-review browser suite. New regression tests cover course-map navigation, exact source-checked answer keys (not independent clinical peer review), concealed feedback, all answer explanations, saved responses, oral notes/checklist persistence, keyboard disclosures, 320-pixel layout, source links, labelled SVGs, text-only usability and printable content. Existing Histology browser coverage verifies the shared renderer extraction.
 
 The final task report records the tested commit, exact results and matching preview. No preview or production success is inferred solely from a local build. Independent specialist review and supervised specimen/radiological teaching remain outside this release.
 

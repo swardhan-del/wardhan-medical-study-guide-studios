@@ -1,4 +1,4 @@
-import { SaveButton } from "./catalog-browser";
+import { SaveButton } from "./save-button";
 import { publicCatalog } from "@/lib/catalog";
 import Link from "next/link";
 export function LearningCollection({ compact = false }: { compact?: boolean }) {

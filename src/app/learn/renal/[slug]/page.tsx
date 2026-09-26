@@ -1,5 +1,5 @@
 import { NephronMap } from "@/components/nephron-map";
-import { SaveButton } from "@/components/catalog-browser";
+import { SaveButton } from "@/components/save-button";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {

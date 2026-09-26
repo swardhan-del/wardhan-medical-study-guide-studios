@@ -1,4 +1,4 @@
-import { SaveButton } from "@/components/catalog-browser";
+import { SaveButton } from "@/components/save-button";
 import Link from "next/link";
 import {
   renalLessons,

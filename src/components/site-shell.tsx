@@ -11,13 +11,19 @@ export function SiteShell({ children }: { children: ReactNode }) {
         Skip to content
       </a>
       <SiteNav />
-      <main id="main-content">{children}</main>
+      <main id="main-content" tabIndex={-1}>{children}</main>
       <footer className="site-footer">
         <div className="site-container footer-inner">
           <div>
             <p className="footer-title">Wardhan Medical Study Guide Studios</p>
             <p className="footer-note">
               Focused resources for learning medical sciences.
+            </p>
+            <p className="footer-note clinical-review-notice">
+              Independent clinical peer review has not been completed for this
+              teaching content. Educational study support, not medical advice
+              or a substitute for official course material.{" "}
+              <Link href="/about#clinical-review">Read the review status</Link>.
             </p>
           </div>
           <div className="footer-meta">
