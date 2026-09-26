@@ -3,6 +3,7 @@ test("curated records can be searched, filtered, reset and opened without source
   page,
 }) => {
   await page.goto("/review");
+  await expect(page.locator(".resource-card:visible").first()).toBeVisible();
   const all = await page.locator(".resource-card:visible").count();
   expect(all).toBeGreaterThan(0);
   await page

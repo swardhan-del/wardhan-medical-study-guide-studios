@@ -12,7 +12,7 @@ export function analyticsAllowed() {
   )
     return false;
   try {
-    return localStorage.getItem("wardhan-analytics-optout") !== "1";
+    return localStorage.getItem("wardhan-analytics-optout") === "0";
   } catch {
     return false;
   }

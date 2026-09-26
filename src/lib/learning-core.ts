@@ -19,6 +19,8 @@ export type LearningProgress = {
   shares: number;
   oral: string[];
   plan: { start: string; date: string; minutes: number } | null;
+  resume: { lesson: string; stage: "learn" | "practice" | "summary"; at: number } | null;
+  journey: Record<string, { read: boolean; reviewed: boolean; saved: boolean; at: number }>;
 };
 export const emptyProgress = (): LearningProgress => ({
   version: 2,
@@ -30,6 +32,8 @@ export const emptyProgress = (): LearningProgress => ({
   shares: 0,
   oral: [],
   plan: null,
+  resume: null,
+  journey: {},
 });
 const finiteInt = (value: unknown, max = 1000000) =>
   typeof value === "number" &&
@@ -47,6 +51,16 @@ export function parseProgress(
   try {
     const value = JSON.parse(raw);
     if (!value || ![1, 2].includes(value.version)) return clean;
+    const resume = value.resume;
+    if (resume && lessons.includes(resume.lesson) && ["learn", "practice", "summary"].includes(resume.stage) && finiteInt(resume.at, 8640000000000000)) {
+      clean.resume = { lesson: resume.lesson, stage: resume.stage, at: resume.at };
+    }
+    for (const id of lessons) {
+      const entry = value.journey?.[id];
+      if (entry && finiteInt(entry.at, 8640000000000000)) {
+        clean.journey[id] = { read: entry.read === true, reviewed: entry.reviewed === true, saved: entry.saved === true, at: entry.at };
+      }
+    }
     for (const key of ["lessons", "oral"] as const) {
       if (Array.isArray(value[key]))
         clean[key] = [

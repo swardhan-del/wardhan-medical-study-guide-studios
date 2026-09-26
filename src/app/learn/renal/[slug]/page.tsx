@@ -8,7 +8,7 @@ import {
   renalLessonHref,
 } from "@/content/renal-course";
 import { RenalQuiz } from "@/components/renal-quiz";
-import { CompleteLesson } from "@/components/lesson-actions";
+import { CompleteLesson, LessonPracticeLink } from "@/components/lesson-actions";
 import { RenalSources } from "@/components/renal-sources";
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -60,9 +60,7 @@ export default async function RenalLessonPage({ params }: Props) {
               <li key={o}>{o}</li>
             ))}
           </ul>
-          <a className="text-link" href="#lesson-quiz">
-            Go to the questions ↓
-          </a>
+          <LessonPracticeLink slug={slug} />
           <br />
           <a className="text-link" href="#sources">
             Read the sources ↓

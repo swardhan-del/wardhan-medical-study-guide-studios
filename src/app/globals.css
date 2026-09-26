@@ -4076,3 +4076,35 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .drawing-space { min-height: 3cm; }
   .revision-page .revision-lesson p { white-space: pre-line; }
 }
+
+/* Shared student journey: text labels, native controls and a readable narrow-screen order. */
+.lesson-journey, .lesson-review, .continue-card, #saved-summaries { margin-block: 2rem; }
+.journey-heading { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:1rem; }
+.journey-steps { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:1rem; padding-left:1.5rem; }
+.journey-steps li { padding:.5rem; overflow-wrap:anywhere; }
+.journey-steps [aria-current="step"] { font-weight:700; text-decoration-style:double; }
+.journey-steps span { display:block; font-size:.88rem; margin-top:.35rem; }
+.lesson-journey progress { width:100%; height:1rem; accent-color:#155d61; }
+.lesson-review, #continue-learning, #saved-summaries { scroll-margin-top:7rem; }
+.lesson-review > p, .summary-list p { max-width:70ch; }
+.summary-list details { border-top:1px solid var(--line); padding-block:1rem; }
+.summary-list summary { cursor:pointer; font-weight:600; padding:.5rem 0; }
+.lesson-journey button, .lesson-review button, .continue-card a, .catalog-controls select { min-height:44px; }
+.lesson-journey a, .summary-list a { text-underline-offset:.2em; }
+.lesson-journey :focus-visible, .lesson-review :focus-visible, .summary-list :focus-visible, .catalog-browser :focus-visible { outline:3px solid #155d61; outline-offset:4px; }
+@media (max-width:760px) {
+  .journey-steps { grid-template-columns:1fr; gap:.3rem; }
+  .journey-steps li { padding:.25rem; }
+  .journey-steps a { display:inline-block; padding:.5rem 0; }
+  .journey-steps span { margin-top:0; }
+}
+@media (max-width:620px) {
+  .site-header nav { width:100%; }
+  .nav-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px 12px; }
+  .nav-link { display:flex; align-items:center; min-height:44px; padding-block:8px; }
+  .lesson-review .action-row, .continue-card .action-row { align-items:stretch; }
+  .lesson-review .button, .continue-card .button { width:100%; white-space:normal; }
+}
+@media print {
+  .lesson-journey, .continue-card, .lesson-review button { display:none; }
+}
