@@ -1,28 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { Analytics } from "@vercel/analytics/next";
-import { analyticsAllowed } from "@/lib/learning-analytics";
+import { analyticsAllowed, filterAnalyticsEvent } from "@/lib/learning-analytics";
+const preferenceEvent = "wardhan-analytics-preference";
+function subscribe(listener: () => void) {
+  window.addEventListener("storage", listener);
+  window.addEventListener(preferenceEvent, listener);
+  return () => { window.removeEventListener("storage", listener); window.removeEventListener(preferenceEvent, listener); };
+}
 export function LearningAnalytics() {
-  if (process.env.NEXT_PUBLIC_LEARNING_ANALYTICS !== "1") return null;
-  return (
-    <Analytics
-      beforeSend={(event) => {
-        if (!analyticsAllowed()) return null;
-        const url = new URL(event.url);
-        if (/^\/(review|study|reading-list)(\/|$)/.test(url.pathname))
-          return null;
-        url.search = "";
-        url.hash = "";
-        return { ...event, url: url.toString() };
-      }}
-    />
-  );
+  const allowed = useSyncExternalStore(subscribe, analyticsAllowed, () => false);
+  if (!allowed) return null;
+  return <Analytics beforeSend={filterAnalyticsEvent} />;
 }
 export function AnalyticsPreference() {
   const [message, setMessage] = useState("");
   function setPreference(optOut: boolean) {
     try {
       localStorage.setItem("wardhan-analytics-optout", optOut ? "1" : "0");
+      window.dispatchEvent(new Event(preferenceEvent));
       setMessage(
         optOut
           ? "Analytics is disabled for this browser."

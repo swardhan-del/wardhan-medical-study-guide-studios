@@ -49,6 +49,14 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        // Only the waitlist document can load the opt-in spam-protection widget.
+        source: "/waitlist",
+        headers: [
+          { key: "Content-Security-Policy", value: contentSecurityPolicy.replace("script-src 'self'", "script-src 'self' https://challenges.cloudflare.com").replace("frame-src 'self'", "frame-src 'self' https://challenges.cloudflare.com") },
+          { key: "Referrer-Policy", value: "no-referrer" },
+        ],
+      },
+      {
         // Permit the site's PDF reader without allowing external sites to frame it.
         source: "/downloads/:path*",
         headers: [

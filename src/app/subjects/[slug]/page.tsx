@@ -1,3 +1,4 @@
+import { WaitlistCta } from "@/components/waitlist-cta";
 import { AnatomyLearningPath } from "@/components/anatomy-learning-path";
 import { studySubjects } from "@/lib/study-collections";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
@@ -61,6 +62,7 @@ export default async function SubjectPage({ params }: Props) {
       </details>}
       {slug === "anatomy" && <AnatomyVolumes />}
       {slug === "histology" && <HistologyOverview />}
+      <WaitlistCta />
     </div>
   );
 }
