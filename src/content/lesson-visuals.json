@@ -1,0 +1,1460 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-09-26",
+  "visuals": [
+    {
+      "id": "junction-functions",
+      "lessonIds": [
+        "cell-junctions"
+      ],
+      "kind": "comparison",
+      "title": "Junctions: seal, anchor or communicate",
+      "headers": [
+        "Junction",
+        "Connection",
+        "Principal role"
+      ],
+      "rows": [
+        [
+          "Tight junction",
+          "Adjacent cell membranes",
+          "Regulate paracellular passage; support polarity"
+        ],
+        [
+          "Adherens junction",
+          "Actin networks in adjacent cells",
+          "Mechanical coupling"
+        ],
+        [
+          "Desmosome",
+          "Intermediate filaments in adjacent cells",
+          "Resist mechanical stress"
+        ],
+        [
+          "Hemidesmosome",
+          "Cell to basal lamina",
+          "Anchor the basal surface"
+        ],
+        [
+          "Gap junction",
+          "Channels between adjacent cells",
+          "Pass small molecules and ions"
+        ]
+      ],
+      "caption": "This functional comparison separates a barrier from a mechanical attachment and a communication channel. Junctions are not interchangeable, and a tight junction is not an absolute seal to every substance.",
+      "observe": "Identify the junction connecting a cell to matrix, then contrast it with a cell-to-cell attachment.",
+      "alt": "Tight junctions regulate passage; adherens junctions and desmosomes connect neighbouring cells; hemidesmosomes attach cells to basal lamina; gap junctions allow communication.",
+      "referenceIds": [
+        "cell-junctions"
+      ]
+    },
+    {
+      "id": "vessel-walls",
+      "lessonIds": [
+        "vessel-histology"
+      ],
+      "kind": "comparison",
+      "title": "Vessel identification uses wall and lumen together",
+      "headers": [
+        "Vessel",
+        "Wall clue",
+        "Interpretation limit"
+      ],
+      "rows": [
+        [
+          "Elastic artery",
+          "Many elastic lamellae in the media",
+          "Do not identify from lumen size alone"
+        ],
+        [
+          "Muscular artery",
+          "Prominent smooth-muscle media",
+          "Cutting angle alters apparent wall thickness"
+        ],
+        [
+          "Vein",
+          "Usually thinner media than a companion artery",
+          "Collapse can distort the lumen"
+        ],
+        [
+          "Capillary",
+          "Endothelial tube with basal support",
+          "No continuous muscular media"
+        ]
+      ],
+      "caption": "Compare vessels within their tissue context. These are structural criteria, not calibrated drawings or a diagnostic key for one isolated profile.",
+      "observe": "Explain why a collapsed lumen cannot by itself establish that a vessel is a vein.",
+      "alt": "Elastic and muscular arteries differ in their media. Veins often have a thinner media, while capillaries lack a continuous muscular media.",
+      "referenceIds": [
+        "vessel-histology"
+      ]
+    },
+    {
+      "id": "lymphoid-comparison",
+      "lessonIds": [
+        "lymphoid-organs"
+      ],
+      "kind": "comparison",
+      "title": "Match lymphoid organisation to the sampled material",
+      "headers": [
+        "Organ",
+        "Organisation",
+        "Function"
+      ],
+      "rows": [
+        [
+          "Lymph node",
+          "Cortex, paracortex and medulla",
+          "Samples tissue lymph"
+        ],
+        [
+          "Spleen",
+          "White pulp around arteries; red pulp cords and sinusoids",
+          "Samples blood and removes poorly deformable erythrocytes"
+        ],
+        [
+          "Thymus",
+          "Lobules with cortex and medulla; Hassall corpuscles",
+          "Supports T-cell development and selection"
+        ]
+      ],
+      "caption": "The comparison links architecture with function. A normal thymus lacks true lymphoid follicles; it is not another lymph-filtering node.",
+      "observe": "Choose two independent features that would distinguish spleen from lymph node.",
+      "alt": "Lymph nodes sample lymph, spleen samples blood, and thymus supports T-cell development; their internal compartments differ.",
+      "referenceIds": [
+        "lymphoid-organs"
+      ]
+    },
+    {
+      "id": "gut-wall",
+      "lessonIds": [
+        "gi-histology"
+      ],
+      "kind": "flow",
+      "title": "Read the gut wall from lumen to outer surface",
+      "steps": [
+        "Mucosa: epithelium, lamina propria and muscularis mucosae",
+        "Submucosa: supportive connective tissue beneath the mucosa",
+        "Muscularis externa: the larger muscular wall",
+        "Serosa or adventitia: outer covering or attachment"
+      ],
+      "caption": "This is a spatial sequence through a general gastrointestinal wall, not a time sequence. Regional specialisations must be checked separately. Muscularis mucosae and muscularis externa occupy different levels.",
+      "observe": "Locate the submucosa relative to the two muscle layers and explain why their names are not interchangeable.",
+      "alt": "Moving outwards from the lumen crosses mucosa, submucosa, muscularis externa, then serosa or adventitia.",
+      "referenceIds": [
+        "gi-histology"
+      ]
+    },
+    {
+      "id": "airway-comparison",
+      "lessonIds": [
+        "respiratory-histology"
+      ],
+      "kind": "comparison",
+      "title": "Conducting airways and the exchange surface",
+      "headers": [
+        "Region or cell",
+        "Identifying clue",
+        "Teaching distinction"
+      ],
+      "rows": [
+        [
+          "Larger airways",
+          "Cartilage and glands support identification",
+          "Conduct and clear air"
+        ],
+        [
+          "Bronchioles",
+          "No cartilage or submucosal glands",
+          "Terminal bronchioles remain conducting"
+        ],
+        [
+          "Respiratory bronchioles",
+          "Alveoli interrupt the wall",
+          "Transition towards the exchange region"
+        ],
+        [
+          "Type I pneumocyte",
+          "Thin alveolar surface",
+          "Gas exchange"
+        ],
+        [
+          "Type II pneumocyte",
+          "Surfactant-producing epithelial cell",
+          "Surfactant and epithelial repair"
+        ]
+      ],
+      "caption": "This conceptual comparison does not reproduce microscopy. Use multiple structural clues; cell function cannot always be read directly from routine staining.",
+      "observe": "Explain which feature separates terminal from respiratory bronchioles.",
+      "alt": "Bronchioles lack cartilage and glands. Alveoli interrupt respiratory bronchioles; type I and type II alveolar cells have different roles.",
+      "referenceIds": [
+        "respiratory-histology"
+      ]
+    },
+    {
+      "id": "transport-energy",
+      "lessonIds": [
+        "fluid-and-membrane-transport",
+        "biophysics-resting-potential"
+      ],
+      "kind": "comparison",
+      "title": "Find the energy source for membrane transport",
+      "headers": [
+        "Route",
+        "Driving force",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Passive channel or carrier",
+          "Down the transported solute’s electrochemical gradient",
+          "Ion movement through an open selective channel"
+        ],
+        [
+          "Primary active transport",
+          "Direct energy coupling to ATP hydrolysis",
+          "Na⁺/K⁺ ATPase: 3 Na⁺ out, 2 K⁺ in per ATP"
+        ],
+        [
+          "Secondary active transport",
+          "Downhill movement of one solute coupled to another",
+          "Na⁺–glucose cotransport uses the Na⁺ gradient"
+        ]
+      ],
+      "caption": "Gradient and permeability are separate requirements. A transport protein does not necessarily hydrolyse ATP itself. For ions, both electrical and concentration differences contribute to the driving force.",
+      "observe": "Trace the indirect ATP dependence of Na⁺–glucose cotransport back to the pump.",
+      "alt": "Passive transport uses a downhill gradient; the sodium–potassium pump hydrolyses ATP; sodium–glucose cotransport uses a gradient maintained by that pump.",
+      "referenceIds": [
+        "fluid-and-membrane-transport"
+      ]
+    },
+    {
+      "id": "muscle-calcium",
+      "lessonIds": [
+        "muscle-contraction"
+      ],
+      "kind": "comparison",
+      "title": "Calcium activates different regulatory switches",
+      "headers": [
+        "Muscle",
+        "Calcium mobilisation",
+        "Regulatory target"
+      ],
+      "rows": [
+        [
+          "Skeletal",
+          "T-tubule voltage sensing couples to SR release",
+          "Troponin C"
+        ],
+        [
+          "Cardiac working myocyte",
+          "L-type Ca²⁺ entry triggers further SR release",
+          "Troponin C"
+        ],
+        [
+          "Smooth",
+          "Calcium availability responds to several signals",
+          "Calmodulin activates myosin light-chain kinase"
+        ]
+      ],
+      "caption": "SR means sarcoplasmic reticulum. This compares activation mechanisms, not specimen appearance. Nodal pacemaker cells are outside the cardiac working-myocyte model.",
+      "observe": "Explain why the troponin mechanism cannot simply be transferred to smooth muscle.",
+      "alt": "Skeletal and cardiac working muscle regulate thin filaments through troponin C; smooth muscle uses calcium–calmodulin and myosin light-chain kinase.",
+      "referenceIds": [
+        "muscle-contraction"
+      ]
+    },
+    {
+      "id": "baroreflex-pressure-rise",
+      "lessonIds": [
+        "baroreflex"
+      ],
+      "kind": "flow",
+      "title": "A rise in arterial pressure triggers compensatory feedback",
+      "steps": [
+        "Higher arterial pressure increases stretch of arterial baroreceptors",
+        "Afferent signalling reaches medullary cardiovascular networks",
+        "Cardiac vagal influence increases; sympathetic outflow decreases",
+        "Heart and vessel responses tend to reduce the pressure disturbance"
+      ],
+      "caption": "This shows the usual rapid response to a pressure rise. It is a negative-feedback tendency, not a complete long-term model or a prediction for every disease state.",
+      "observe": "Reverse the initiating change and predict the direction of the autonomic response.",
+      "alt": "An arterial-pressure rise increases baroreceptor signalling, shifting autonomic output towards a response that buffers the rise.",
+      "referenceIds": [
+        "baroreflex"
+      ]
+    },
+    {
+      "id": "thyroid-feedback",
+      "lessonIds": [
+        "endocrine-feedback"
+      ],
+      "kind": "flow",
+      "title": "Separate stimulation from negative feedback",
+      "steps": [
+        "Hypothalamic TRH supports pituitary TSH release",
+        "Pituitary TSH stimulates the thyroid gland",
+        "Thyroid hormones act on target tissues",
+        "Increased thyroid-hormone availability inhibits hypothalamic and pituitary stimulation"
+      ],
+      "caption": "The final step is a feedback relationship to the earlier levels, not a fourth gland. This simplified hypothalamic–pituitary–thyroid axis does not describe every endocrine pathway.",
+      "observe": "Predict the TSH tendency in primary thyroid failure when the pituitary response remains intact.",
+      "alt": "TRH stimulates TSH, TSH stimulates thyroid output, and thyroid hormones feed back to reduce stimulation at the hypothalamus and pituitary.",
+      "referenceIds": [
+        "endocrine-feedback"
+      ]
+    },
+    {
+      "id": "enzyme-inhibition-models",
+      "lessonIds": [
+        "enzyme-kinetics"
+      ],
+      "kind": "comparison",
+      "title": "Compare kinetic changes under explicit models",
+      "headers": [
+        "Model",
+        "Apparent Km",
+        "Vmax"
+      ],
+      "rows": [
+        [
+          "Reversible competitive inhibition",
+          "Increases",
+          "Unchanged"
+        ],
+        [
+          "Pure noncompetitive inhibition",
+          "Unchanged",
+          "Decreases"
+        ]
+      ],
+      "caption": "These predictions assume the simple Michaelis–Menten models named in the rows. Km is the substrate concentration at half Vmax. Binding away from the active site does not, by itself, establish pure noncompetitive inhibition.",
+      "observe": "Explain why an inhibitor’s binding location alone cannot determine both kinetic parameters.",
+      "alt": "Competitive inhibition increases apparent Km without changing Vmax; pure noncompetitive inhibition lowers Vmax without changing Km.",
+      "referenceIds": [
+        "enzyme-kinetics"
+      ]
+    },
+    {
+      "id": "glycolysis-lactate",
+      "lessonIds": [
+        "glycolysis"
+      ],
+      "kind": "flow",
+      "title": "Follow carbon while keeping ATP and NAD⁺ separate",
+      "steps": [
+        "Cytosolic glycolysis: one glucose gives two pyruvate molecules",
+        "Two ATP invested and four produced: net gain of two ATP",
+        "NAD⁺ is reduced to NADH during glycolysis",
+        "Reduction of pyruvate to lactate regenerates NAD⁺; this step adds no ATP"
+      ],
+      "caption": "The boxes organise linked chemical and energy changes. They do not represent four individual enzyme reactions. Lactate formation supports continued glycolysis by regenerating the electron acceptor.",
+      "observe": "Identify which process makes ATP and which restores NAD⁺.",
+      "alt": "Glycolysis produces pyruvate and net ATP while reducing NAD⁺; lactate dehydrogenase regenerates NAD⁺ without adding ATP.",
+      "referenceIds": [
+        "glycolysis"
+      ]
+    },
+    {
+      "id": "ketone-tissues",
+      "lessonIds": [
+        "ketone-production-and-use"
+      ],
+      "kind": "comparison",
+      "title": "Production and use of ketone bodies are separate capacities",
+      "headers": [
+        "Tissue",
+        "Relevant feature",
+        "Consequence"
+      ],
+      "rows": [
+        [
+          "Liver",
+          "Mitochondrial ketogenesis; lacks the usual SCOT activation step",
+          "Produces and exports ketone bodies"
+        ],
+        [
+          "Extrahepatic tissue with suitable mitochondrial enzymes",
+          "Can convert ketone bodies towards acetyl-CoA",
+          "Can oxidise the exported fuel"
+        ],
+        [
+          "Mature erythrocyte",
+          "No mitochondria",
+          "Cannot obtain ATP by ketone oxidation"
+        ]
+      ],
+      "caption": "SCOT is succinyl-CoA:3-oxoacid CoA transferase. Tissue capacity and physiological fuel use are different questions; this table does not predict a patient’s ketone concentration.",
+      "observe": "Explain why a tissue that produces a fuel need not be able to consume it through the same pathway.",
+      "alt": "Liver exports ketone bodies; suitable extrahepatic mitochondria can use them; mature red blood cells cannot oxidise them.",
+      "referenceIds": [
+        "ketone-production-and-use"
+      ]
+    },
+    {
+      "id": "lipoprotein-origins",
+      "lessonIds": [
+        "lipoprotein-routes"
+      ],
+      "kind": "comparison",
+      "title": "Track particle origin before following its cargo",
+      "headers": [
+        "Particle route",
+        "Origin or transformation",
+        "Key distinction"
+      ],
+      "rows": [
+        [
+          "Chylomicron",
+          "Assembled by enterocytes; remnants reach liver",
+          "Dietary-lipid route"
+        ],
+        [
+          "VLDL → IDL → LDL",
+          "Hepatic secretion followed by remodelling",
+          "Some remnants continue towards LDL"
+        ],
+        [
+          "HDL network",
+          "Exchange and delivery involving cells, particles and liver",
+          "Not a simple one-way pathway"
+        ]
+      ],
+      "caption": "The arrows describe particle remodelling, not conversion of one free lipid molecule into another. Cargo hydrolysis and receptor-mediated particle uptake are distinct processes.",
+      "observe": "Distinguish removal of triacylglycerol cargo from uptake of an entire remnant particle.",
+      "alt": "Chylomicrons arise in intestine; VLDL arises in liver and can be remodelled through IDL towards LDL; HDL participates in a transport network.",
+      "referenceIds": [
+        "lipoprotein-routes"
+      ]
+    },
+    {
+      "id": "rna-processing-sequence",
+      "lessonIds": [
+        "rna-processing"
+      ],
+      "kind": "flow",
+      "title": "Build a mature message without equating exons with coding sequence",
+      "steps": [
+        "RNA polymerase II produces a precursor transcript",
+        "The 5′ cap supports protection and subsequent use",
+        "Splicing removes introns and joins exons; alternatives can produce different isoforms",
+        "For most mRNAs, 3′ processing and polyadenylation support maturation before quality-controlled export"
+      ],
+      "caption": "Processing events overlap in time; this is an organising sequence, not a claim that every step waits for the preceding one to finish. Exons can include untranslated regions.",
+      "observe": "Explain why an exon can remain in the mature RNA without encoding an amino-acid sequence.",
+      "alt": "Capping, splicing and 3′ processing contribute to mature mRNA; untranslated regions can be exonic.",
+      "referenceIds": [
+        "rna-processing"
+      ]
+    },
+    {
+      "id": "translation-directions",
+      "lessonIds": [
+        "translation"
+      ],
+      "kind": "comparison",
+      "title": "Keep message direction and protein direction distinct",
+      "headers": [
+        "Process",
+        "Direction or requirement",
+        "Fidelity distinction"
+      ],
+      "rows": [
+        [
+          "tRNA charging",
+          "Aminoacyl-tRNA synthetase uses ATP",
+          "Correct amino acid attachment is separate from codon pairing"
+        ],
+        [
+          "Message reading",
+          "mRNA read 5′ → 3′ in a defined frame",
+          "An anticodon pairs with the codon"
+        ],
+        [
+          "Polypeptide elongation",
+          "Amino terminus → carboxyl terminus",
+          "Stop codons recruit release factors"
+        ]
+      ],
+      "caption": "The comparison separates adaptor preparation from decoding and chain growth. It is not a structural model of the ribosome.",
+      "observe": "Identify the step that checks amino-acid attachment before the ribosome reads the codon.",
+      "alt": "tRNAs are charged before decoding; ribosomes read mRNA from 5′ to 3′ and extend protein from amino to carboxyl terminus.",
+      "referenceIds": [
+        "translation"
+      ]
+    },
+    {
+      "id": "pcr-terms",
+      "lessonIds": [
+        "pcr"
+      ],
+      "kind": "comparison",
+      "title": "PCR, qPCR and reverse transcription describe different operations",
+      "headers": [
+        "Term",
+        "Operation",
+        "What it does not imply"
+      ],
+      "rows": [
+        [
+          "PCR",
+          "Amplifies a DNA region defined by primers",
+          "Does not automatically sequence the product"
+        ],
+        [
+          "qPCR",
+          "Monitors amplification fluorescence during cycling",
+          "Requires comparable efficiency and controls for quantitative interpretation"
+        ],
+        [
+          "Reverse transcription",
+          "Converts RNA to complementary DNA",
+          "Not a synonym for real-time monitoring"
+        ]
+      ],
+      "caption": "These operations can be combined. A no-template control checks contamination; an RNA experiment may also need a no-reverse-transcriptase control.",
+      "observe": "Describe the extra step required when the starting target is RNA.",
+      "alt": "PCR amplifies DNA; qPCR follows amplification during cycling; reverse transcription makes complementary DNA from RNA.",
+      "referenceIds": [
+        "pcr"
+      ]
+    },
+    {
+      "id": "meiosis-divisions",
+      "lessonIds": [
+        "meiosis"
+      ],
+      "kind": "comparison",
+      "title": "One replication, two different separation events",
+      "headers": [
+        "Stage",
+        "What separates",
+        "Interpretation"
+      ],
+      "rows": [
+        [
+          "Before meiosis",
+          "DNA is replicated",
+          "Replication is not repeated between the two meiotic divisions"
+        ],
+        [
+          "Meiosis I",
+          "Homologous chromosomes",
+          "A reductional division"
+        ],
+        [
+          "Meiosis II",
+          "Sister chromatids",
+          "Different from separation of homologues"
+        ]
+      ],
+      "caption": "This tracks the identity of the separating structures. Nondisjunction must be located in a specific division; aneuploidy and whole-set polyploidy are not equivalent.",
+      "observe": "State which structures fail to separate in meiosis I nondisjunction.",
+      "alt": "DNA replication precedes meiosis; homologues separate in meiosis I and sister chromatids separate in meiosis II.",
+      "referenceIds": [
+        "meiosis"
+      ]
+    },
+    {
+      "id": "recessive-cross",
+      "lessonIds": [
+        "inheritance",
+        "recessive-conditional-probability"
+      ],
+      "kind": "comparison",
+      "title": "An Aa × Aa cross: list outcomes before conditioning",
+      "headers": [
+        "First parent’s allele",
+        "Second parent’s allele",
+        "Offspring genotype"
+      ],
+      "rows": [
+        [
+          "A",
+          "A",
+          "AA"
+        ],
+        [
+          "A",
+          "a",
+          "Aa"
+        ],
+        [
+          "a",
+          "A",
+          "Aa"
+        ],
+        [
+          "a",
+          "a",
+          "aa"
+        ]
+      ],
+      "caption": "Assume a simple autosomal-recessive model with full penetrance and equal, independent allele transmission. Four equally likely outcomes give 25% aa and 50% Aa. Among unaffected offspring, exclude aa: two of the three remaining outcomes are carriers.",
+      "observe": "Explain why the carrier probability is 1/2 before, but 2/3 after, excluding the affected genotype.",
+      "alt": "The four equally likely outcomes are AA, Aa, Aa and aa. Conditioning on being unaffected leaves AA, Aa and Aa.",
+      "referenceIds": [
+        "inheritance",
+        "recessive-conditional-probability"
+      ]
+    },
+    {
+      "id": "mhc-pathways",
+      "lessonIds": [
+        "antigen-presentation",
+        "innate-adaptive"
+      ],
+      "kind": "comparison",
+      "title": "Separate peptide source, display and recognition",
+      "headers": [
+        "Conventional route",
+        "Processing compartment",
+        "Recognising partner"
+      ],
+      "rows": [
+        [
+          "MHC I",
+          "Cytosolic peptide processing with ER loading",
+          "CD8 T cell"
+        ],
+        [
+          "MHC II",
+          "Vesicular processing in an antigen-presenting cell",
+          "CD4 T cell"
+        ]
+      ],
+      "caption": "The presenting cell displays peptide–MHC; the T cell recognises it. Cross-presentation is an important exception to a simple peptide-source rule. Naive-T-cell activation also requires contextual signals.",
+      "observe": "Name the displaying cell and the recognising cell separately, then explain why recognition alone is insufficient.",
+      "alt": "Conventional MHC I presentation is recognised by CD8 T cells; MHC II presentation is recognised by CD4 T cells.",
+      "referenceIds": [
+        "antigen-presentation"
+      ]
+    },
+    {
+      "id": "complement-outputs",
+      "lessonIds": [
+        "complement"
+      ],
+      "kind": "comparison",
+      "title": "Do not interchange similarly named complement fragments",
+      "headers": [
+        "Fragment or complex",
+        "Principal teaching role",
+        "Distinction"
+      ],
+      "rows": [
+        [
+          "C3b and related fragments",
+          "Opsonisation",
+          "Coat targets to support clearance"
+        ],
+        [
+          "C3a and C5a",
+          "Inflammatory signalling",
+          "C5a is an important chemoattractant"
+        ],
+        [
+          "C5b–9",
+          "Membrane-attack complex",
+          "C5b initiates terminal assembly"
+        ]
+      ],
+      "caption": "Classical, lectin and alternative routes converge on C3-cleaving activity. Host regulation is essential; this output comparison omits the full activation cascade.",
+      "observe": "Explain why C5a and C5b cannot be substituted for each other in a mechanism.",
+      "alt": "C3b supports opsonisation, C3a and C5a inflammatory signalling, and C5b initiates membrane-attack-complex assembly.",
+      "referenceIds": [
+        "complement"
+      ]
+    },
+    {
+      "id": "hypersensitivity-mechanisms",
+      "lessonIds": [
+        "hypersensitivity-mechanisms"
+      ],
+      "kind": "comparison",
+      "title": "Classify immune injury by the effector mechanism",
+      "headers": [
+        "Type",
+        "Defining mechanism",
+        "Avoid this shortcut"
+      ],
+      "rows": [
+        [
+          "I",
+          "Antigen cross-links cell-bound IgE on sensitised mast cells or basophils",
+          "A late phase does not automatically mean type IV"
+        ],
+        [
+          "II",
+          "Antibody directed at cell-surface or extracellular-matrix targets",
+          "Effects need not involve cell destruction"
+        ],
+        [
+          "III",
+          "Deposited antigen–antibody complexes promote injury",
+          "Complement alone cannot distinguish II from III"
+        ],
+        [
+          "IV",
+          "Antigen-specific T-cell effector responses",
+          "Timing alone is not the definition"
+        ]
+      ],
+      "caption": "This is a teaching classification. A real disorder can involve overlapping mechanisms; use antigen location and effector identity rather than a time label alone.",
+      "observe": "Identify the feature that distinguishes direct antibody targeting from deposited immune complexes.",
+      "alt": "Types I, II and III involve different antibody mechanisms; type IV is principally T-cell-mediated.",
+      "referenceIds": [
+        "hypersensitivity-mechanisms"
+      ]
+    },
+    {
+      "id": "diffusion-osmosis",
+      "lessonIds": [
+        "biophysics-diffusion-osmosis"
+      ],
+      "kind": "comparison",
+      "title": "State what can cross the membrane",
+      "headers": [
+        "Situation",
+        "Permeability assumption",
+        "Expected net behaviour"
+      ],
+      "rows": [
+        [
+          "Neutral-solute diffusion",
+          "A route exists for the solute",
+          "Down its concentration gradient in the simple model"
+        ],
+        [
+          "Osmosis at initially equal pressure",
+          "Water crosses; the specified solute cannot",
+          "Water moves towards the higher effective solute concentration"
+        ],
+        [
+          "Dynamic equilibrium",
+          "Molecules can still cross",
+          "Opposing movements continue with zero net flux"
+        ]
+      ],
+      "caption": "Electrical gradients matter for ions, and hydrostatic pressure can oppose osmotic flow. Osmolarity counts particles; tonicity depends on permeability and the sustained cell-volume response.",
+      "observe": "Explain why an isosmotic solution need not be isotonic for a particular cell.",
+      "alt": "Diffusion concerns the transported solute, osmosis concerns water, and dynamic equilibrium does not stop molecular movement.",
+      "referenceIds": [
+        "biophysics-diffusion-osmosis"
+      ]
+    },
+    {
+      "id": "radiation-quantities",
+      "lessonIds": [
+        "biophysics-dosimetry",
+        "biophysics-nuclear-structure"
+      ],
+      "kind": "comparison",
+      "title": "Separate activity, absorbed energy and biological weighting",
+      "headers": [
+        "Quantity",
+        "Unit",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "Activity",
+          "Becquerel (Bq)",
+          "One nuclear transformation per second"
+        ],
+        [
+          "Absorbed dose",
+          "Gray (Gy)",
+          "One joule deposited per kilogram"
+        ],
+        [
+          "Equivalent or effective dose",
+          "Sievert (Sv)",
+          "Dose with the relevant radiation or tissue weighting"
+        ]
+      ],
+      "caption": "These quantities answer different questions. Equal numerical values with different units are not equivalent exposures. This table does not prescribe a clinical dose or shielding plan.",
+      "observe": "Explain why a source’s activity alone does not specify the absorbed dose to an organ.",
+      "alt": "Becquerels measure transformation rate, grays absorbed energy per mass, and sieverts weighted dose quantities.",
+      "referenceIds": [
+        "biophysics-dosimetry"
+      ]
+    },
+    {
+      "id": "flow-scaling",
+      "lessonIds": [
+        "biophysics-fluid-flow"
+      ],
+      "kind": "comparison",
+      "title": "A tube model makes radius especially important",
+      "headers": [
+        "Change, all else fixed",
+        "Relative laminar flow",
+        "Reason"
+      ],
+      "rows": [
+        [
+          "Radius doubles",
+          "16 times",
+          "Flow is proportional to radius⁴"
+        ],
+        [
+          "Length doubles",
+          "One half",
+          "Resistance is proportional to length"
+        ],
+        [
+          "Viscosity doubles",
+          "One half",
+          "Resistance is proportional to viscosity"
+        ]
+      ],
+      "caption": "These ratios use Poiseuille’s model for steady laminar flow of a Newtonian fluid in a rigid cylindrical tube with the same pressure difference. Real vessels and blood can depart from these assumptions.",
+      "observe": "Explain why this table cannot be applied unchanged to turbulent flow.",
+      "alt": "Under the stated tube assumptions, doubling radius gives sixteenfold flow; doubling length or viscosity halves flow.",
+      "referenceIds": [
+        "biophysics-fluid-flow"
+      ]
+    },
+    {
+      "id": "attenuation-layers",
+      "lessonIds": [
+        "biophysics-practical-attenuation",
+        "biophysics-decay-interactions"
+      ],
+      "kind": "comparison",
+      "title": "Each half-value layer acts on what remains",
+      "headers": [
+        "Half-value layers",
+        "Remaining fraction",
+        "Transmitted percentage"
+      ],
+      "rows": [
+        [
+          "0",
+          "1",
+          "100%"
+        ],
+        [
+          "1",
+          "1/2",
+          "50%"
+        ],
+        [
+          "2",
+          "1/4",
+          "25%"
+        ],
+        [
+          "3",
+          "1/8",
+          "12.5%"
+        ]
+      ],
+      "caption": "Illustrative calculation for exponential attenuation in a uniform material and a narrow monoenergetic beam. Added scatter and beam hardening can invalidate this simple use of a constant half-value layer.",
+      "observe": "Predict the result after four layers and explain why each layer does not subtract 50 percentage points.",
+      "alt": "The remaining fraction halves with each layer: one, one half, one quarter and one eighth.",
+      "referenceIds": [
+        "biophysics-practical-attenuation"
+      ]
+    },
+    {
+      "id": "biliary-route",
+      "lessonIds": [
+        "biliary-pathways",
+        "liver-segments-and-porta"
+      ],
+      "kind": "flow",
+      "title": "Follow the extrahepatic bile route",
+      "steps": [
+        "Right and left hepatic ducts join to form the common hepatic duct",
+        "The cystic duct connects the gallbladder with this duct system",
+        "Distal to the cystic-duct junction, the common bile duct continues towards the duodenum",
+        "Bile reaches the duodenum through the distal biliary outlet"
+      ],
+      "caption": "This is a connectivity map, not a scale drawing or a claim that all bile must enter the gallbladder. Branching and distal duct anatomy can vary.",
+      "observe": "Locate the cystic-duct junction and explain the name change from common hepatic to common bile duct.",
+      "alt": "Hepatic ducts unite; the cystic duct links the gallbladder; the common bile duct continues towards the duodenum.",
+      "referenceIds": [
+        "biliary-pathways"
+      ]
+    },
+    {
+      "id": "csf-route",
+      "lessonIds": [
+        "ventricles-csf"
+      ],
+      "kind": "flow",
+      "title": "Trace the ventricular route into the subarachnoid space",
+      "steps": [
+        "Lateral ventricles → interventricular foramina",
+        "Third ventricle → cerebral aqueduct",
+        "Fourth ventricle → median and lateral apertures",
+        "Subarachnoid space around brain and spinal cord"
+      ],
+      "caption": "The arrows show the principal ventricular connections, not all CSF production, pulsatile movement or outflow pathways. The central canal is not the main exit route shown here.",
+      "observe": "Predict which upstream spaces would be affected by obstruction of the cerebral aqueduct.",
+      "alt": "The lateral ventricles connect to the third ventricle, then via the aqueduct to the fourth and through its apertures to the subarachnoid space.",
+      "referenceIds": [
+        "ventricles-csf"
+      ]
+    },
+    {
+      "id": "fetal-shunts",
+      "lessonIds": [
+        "fetal-circulation-transition"
+      ],
+      "kind": "comparison",
+      "title": "Three fetal connections have different routes",
+      "headers": [
+        "Connection",
+        "Route",
+        "Adult remnant"
+      ],
+      "rows": [
+        [
+          "Ductus venosus",
+          "Umbilical venous route towards the inferior vena cava, bypassing much hepatic microcirculation",
+          "Ligamentum venosum"
+        ],
+        [
+          "Foramen ovale",
+          "Right atrium → left atrium in fetal circulation",
+          "Fossa ovalis region"
+        ],
+        [
+          "Ductus arteriosus",
+          "Pulmonary arterial route → aorta in fetal circulation",
+          "Ligamentum arteriosum"
+        ]
+      ],
+      "caption": "Directions describe the usual fetal circulation. Closure after birth involves changing pressures and vascular responses; functional closure and anatomical remodelling are not identical events.",
+      "observe": "Distinguish the interatrial connection from the connection between great arteries.",
+      "alt": "Ductus venosus bypasses much hepatic microcirculation, foramen ovale connects atria, and ductus arteriosus connects the pulmonary arterial route to the aorta.",
+      "referenceIds": [
+        "fetal-circulation-transition"
+      ]
+    },
+    {
+      "id": "gut-arteries",
+      "lessonIds": [
+        "abdominal-arterial-territories"
+      ],
+      "kind": "comparison",
+      "title": "Orient the three unpaired abdominal arterial territories",
+      "headers": [
+        "Artery",
+        "Broad embryological territory",
+        "Boundary reminder"
+      ],
+      "rows": [
+        [
+          "Coeliac trunk",
+          "Foregut",
+          "Not every upper-abdominal structure belongs to one exclusive branch"
+        ],
+        [
+          "Superior mesenteric artery",
+          "Midgut",
+          "Territorial transitions have collateral connections"
+        ],
+        [
+          "Inferior mesenteric artery",
+          "Hindgut",
+          "Watershed regions matter when supply is compromised"
+        ]
+      ],
+      "caption": "This is an orientation table rather than an exhaustive branch atlas. An organ’s position alone does not define its arterial territory; use the detailed lesson for transitions and anastomoses.",
+      "observe": "Explain why collateral connections prevent a simple three-colour territory map from describing all perfusion.",
+      "alt": "Coeliac, superior mesenteric and inferior mesenteric arteries broadly align with foregut, midgut and hindgut territories.",
+      "referenceIds": [
+        "abdominal-arterial-territories"
+      ]
+    },
+    {
+      "id": "diaphragm-openings",
+      "lessonIds": [
+        "diaphragm-openings"
+      ],
+      "kind": "comparison",
+      "title": "Use the three major levels as orientation landmarks",
+      "headers": [
+        "Opening",
+        "Classical level",
+        "Major structure"
+      ],
+      "rows": [
+        [
+          "Caval opening",
+          "T8",
+          "Inferior vena cava"
+        ],
+        [
+          "Oesophageal hiatus",
+          "T10",
+          "Oesophagus with vagal trunks"
+        ],
+        [
+          "Aortic hiatus",
+          "T12",
+          "Aorta with thoracic duct"
+        ]
+      ],
+      "caption": "These vertebral levels are approximate teaching landmarks. They do not replace three-dimensional relations or account for every small structure crossing the diaphragm.",
+      "observe": "Explain why a remembered level should be paired with the structure and its relation to the diaphragm.",
+      "alt": "The major teaching levels are T8 for the caval opening, T10 for the oesophageal hiatus and T12 for the aortic hiatus.",
+      "referenceIds": [
+        "diaphragm-openings"
+      ]
+    },
+    {
+      "id": "lower-limb-compartments",
+      "lessonIds": [
+        "thigh-compartments",
+        "leg-compartments"
+      ],
+      "kind": "comparison",
+      "title": "Compartment, action and nerve must agree",
+      "headers": [
+        "Compartment",
+        "Main action pattern",
+        "Principal nerve"
+      ],
+      "rows": [
+        [
+          "Anterior thigh",
+          "Knee extension",
+          "Femoral"
+        ],
+        [
+          "Medial thigh",
+          "Hip adduction",
+          "Obturator, with recognised exceptions"
+        ],
+        [
+          "Posterior thigh",
+          "Hip extension and knee flexion",
+          "Mainly tibial division of sciatic"
+        ],
+        [
+          "Anterior leg",
+          "Dorsiflexion",
+          "Deep fibular"
+        ],
+        [
+          "Lateral leg",
+          "Eversion",
+          "Superficial fibular"
+        ],
+        [
+          "Posterior leg",
+          "Plantarflexion",
+          "Tibial"
+        ]
+      ],
+      "caption": "These are dominant patterns, not a claim that every muscle in a compartment has identical actions or innervation. Distinguish thigh from leg and check exceptions in the lesson.",
+      "observe": "Use action and nerve together to separate anterior thigh from anterior leg.",
+      "alt": "Anterior thigh and anterior leg differ: knee extension with femoral supply versus dorsiflexion with deep fibular supply. Other compartments have distinct dominant patterns.",
+      "referenceIds": [
+        "thigh-compartments",
+        "leg-compartments"
+      ]
+    },
+    {
+      "id": "cartilage-bone-comparison",
+      "lessonIds": [
+        "cartilage-bone"
+      ],
+      "kind": "comparison",
+      "title": "Cartilage and bone: matrix, cells and nutrition",
+      "headers": [
+        "Tissue",
+        "Recognition clues",
+        "Nutrition and organisation"
+      ],
+      "rows": [
+        [
+          "Cartilage",
+          "Chondrocytes in lacunae within hydrated matrix",
+          "Avascular; nutrients diffuse through matrix"
+        ],
+        [
+          "Bone",
+          "Mineralised matrix; osteocytes in lacunae and canaliculi",
+          "Vascular tissue; compact bone often has osteons, spongy bone has trabeculae"
+        ]
+      ],
+      "caption": "A comparison of tissue organisation, not a substitute for a stained section. A lacuna alone does not distinguish cartilage from bone.",
+      "observe": "Identify two independent clues that would support bone rather than cartilage.",
+      "alt": "Cartilage: Chondrocytes in lacunae within hydrated matrix: Avascular; nutrients diffuse through matrix. Bone: Mineralised matrix; osteocytes in lacunae and canaliculi: Vascular tissue; compact bone often has osteons, spongy bone has trabeculae.",
+      "referenceIds": [
+        "cartilage-bone"
+      ]
+    },
+    {
+      "id": "blood-marrow-comparison",
+      "lessonIds": [
+        "blood-marrow"
+      ],
+      "kind": "comparison",
+      "title": "Blood-cell recognition: useful clues and limits",
+      "headers": [
+        "Cell",
+        "Recognition clue",
+        "Interpretation limit"
+      ],
+      "rows": [
+        [
+          "Mature erythrocyte",
+          "No nucleus",
+          "Interpret in the context of a blood smear"
+        ],
+        [
+          "Neutrophil",
+          "Segmented nucleus",
+          "Use cytoplasm and specimen context as well"
+        ],
+        [
+          "Eosinophil",
+          "Prominent eosinophilic granules",
+          "Do not classify from colour alone"
+        ],
+        [
+          "Small lymphocyte",
+          "Dense round nucleus, scant cytoplasm",
+          "Morphology alone does not reliably separate B and T cells"
+        ],
+        [
+          "Megakaryocyte",
+          "Very large marrow cell",
+          "Produces platelets by cytoplasmic fragmentation"
+        ]
+      ],
+      "caption": "This text comparison records features to seek in a specimen; it is not simulated microscopy.",
+      "observe": "Explain why a dense round nucleus cannot establish a B-cell identity.",
+      "alt": "Mature erythrocyte: No nucleus: Interpret in the context of a blood smear. Neutrophil: Segmented nucleus: Use cytoplasm and specimen context as well. Eosinophil: Prominent eosinophilic granules: Do not classify from colour alone. Small lymphocyte: Dense round nucleus, scant cytoplasm: Morphology alone does not reliably separate B and T cells. Megakaryocyte: Very large marrow cell: Produces platelets by cytoplasmic fragmentation.",
+      "referenceIds": [
+        "blood-marrow"
+      ]
+    },
+    {
+      "id": "liver-pancreas-comparison",
+      "lessonIds": [
+        "liver-pancreas"
+      ],
+      "kind": "comparison",
+      "title": "Secretions and circulation in liver and pancreas",
+      "headers": [
+        "Process",
+        "Route",
+        "Distinction"
+      ],
+      "rows": [
+        [
+          "Hepatic blood flow",
+          "Portal venous and arterial branches → sinusoids → central vein",
+          "Two vascular inputs converge"
+        ],
+        [
+          "Bile flow",
+          "Canaliculi → ductules → ducts in portal regions",
+          "Flows towards portal regions, not the central vein"
+        ],
+        [
+          "Pancreatic exocrine secretion",
+          "Acini → duct system",
+          "Digestive secretions enter ducts"
+        ],
+        [
+          "Pancreatic endocrine secretion",
+          "Islet cells → blood",
+          "Hormones enter the circulation"
+        ]
+      ],
+      "caption": "Arrows describe routes. Blood and bile travel through distinct channels; endocrine secretion is not duct drainage.",
+      "observe": "Trace blood and bile separately, then explain which pancreatic compartment requires a duct.",
+      "alt": "Hepatic blood flow: Portal venous and arterial branches → sinusoids → central vein: Two vascular inputs converge. Bile flow: Canaliculi → ductules → ducts in portal regions: Flows towards portal regions, not the central vein. Pancreatic exocrine secretion: Acini → duct system: Digestive secretions enter ducts. Pancreatic endocrine secretion: Islet cells → blood: Hormones enter the circulation.",
+      "referenceIds": [
+        "liver-pancreas"
+      ]
+    },
+    {
+      "id": "placenta-comparison",
+      "lessonIds": [
+        "placenta"
+      ],
+      "kind": "comparison",
+      "title": "Two blood compartments at the placental villus",
+      "headers": [
+        "Compartment",
+        "Location",
+        "Exchange relationship"
+      ],
+      "rows": [
+        [
+          "Maternal blood",
+          "Intervillous space, around villous surfaces",
+          "Bathes the outside of the villi"
+        ],
+        [
+          "Fetal blood",
+          "Capillaries inside the villous core",
+          "Separated from maternal blood by intervening tissues"
+        ]
+      ],
+      "caption": "This spatial comparison shows separated blood pools. The placental barrier is selective, not absolute, and becomes thinner as pregnancy advances.",
+      "observe": "Explain why exchange does not require free mixing of maternal and fetal blood.",
+      "alt": "Maternal blood: Intervillous space, around villous surfaces: Bathes the outside of the villi. Fetal blood: Capillaries inside the villous core: Separated from maternal blood by intervening tissues.",
+      "referenceIds": [
+        "placenta"
+      ]
+    },
+    {
+      "id": "dna-repair-comparison",
+      "lessonIds": [
+        "dna-repair"
+      ],
+      "kind": "comparison",
+      "title": "Match DNA repair to the recognised problem",
+      "headers": [
+        "Repair mechanism",
+        "Typical target",
+        "Key distinction"
+      ],
+      "rows": [
+        [
+          "Base excision repair",
+          "Many small base lesions",
+          "Not a generic response to every bulky lesion"
+        ],
+        [
+          "Nucleotide excision repair",
+          "Bulky helix-distorting lesions",
+          "Removes a damaged stretch"
+        ],
+        [
+          "Mismatch repair",
+          "Replication mismatches escaping proofreading",
+          "Acts on copying errors"
+        ],
+        [
+          "Homologous recombination",
+          "Double-strand breaks",
+          "Uses a homologous template, often a sister chromatid"
+        ],
+        [
+          "Non-homologous end joining",
+          "Double-strand breaks",
+          "Joins ends and can alter the junction sequence"
+        ]
+      ],
+      "caption": "Representative targets, not an exhaustive or mutually exclusive catalogue of DNA damage responses.",
+      "observe": "Choose a repair strategy for a replication mismatch and contrast its target with a bulky lesion.",
+      "alt": "Base excision repair: Many small base lesions: Not a generic response to every bulky lesion. Nucleotide excision repair: Bulky helix-distorting lesions: Removes a damaged stretch. Mismatch repair: Replication mismatches escaping proofreading: Acts on copying errors. Homologous recombination: Double-strand breaks: Uses a homologous template, often a sister chromatid. Non-homologous end joining: Double-strand breaks: Joins ends and can alter the junction sequence.",
+      "referenceIds": [
+        "dna-repair"
+      ]
+    },
+    {
+      "id": "genetic-testing-comparison",
+      "lessonIds": [
+        "genetic-testing"
+      ],
+      "kind": "comparison",
+      "title": "Genetic methods: what the result can address",
+      "headers": [
+        "Method",
+        "Primary information",
+        "Limit to remember"
+      ],
+      "rows": [
+        [
+          "PCR",
+          "Amplification of a defined region",
+          "Amplification alone does not read every base"
+        ],
+        [
+          "Sanger sequencing",
+          "Sequence over a relatively limited region",
+          "Scope is restricted to the tested region"
+        ],
+        [
+          "Massively parallel sequencing",
+          "Sequence across many regions",
+          "Coverage and variant-detection constraints remain"
+        ],
+        [
+          "Chromosomal microarray",
+          "Copy-number imbalance",
+          "Generally misses balanced rearrangements and most single-base substitutions"
+        ]
+      ],
+      "caption": "Method scope must be interpreted with phenotype, specimen and assay design. A negative result is not exclusion of every genetic cause.",
+      "observe": "Explain why a negative copy-number array cannot rule out all single-nucleotide variants.",
+      "alt": "PCR: Amplification of a defined region: Amplification alone does not read every base. Sanger sequencing: Sequence over a relatively limited region: Scope is restricted to the tested region. Massively parallel sequencing: Sequence across many regions: Coverage and variant-detection constraints remain. Chromosomal microarray: Copy-number imbalance: Generally misses balanced rearrangements and most single-base substitutions.",
+      "referenceIds": [
+        "genetic-testing"
+      ]
+    },
+    {
+      "id": "nitrogen-metabolism-comparison",
+      "lessonIds": [
+        "nitrogen-metabolism"
+      ],
+      "kind": "comparison",
+      "title": "Nitrogen disposal: production is not excretion",
+      "headers": [
+        "Stage",
+        "Main role",
+        "Keep distinct"
+      ],
+      "rows": [
+        [
+          "Transamination",
+          "Transfers amino groups, commonly collecting nitrogen on glutamate",
+          "The carbon skeleton has its own metabolic fate"
+        ],
+        [
+          "Inter-tissue transport",
+          "Glutamine and alanine carry nitrogen",
+          "Transport is not final disposal"
+        ],
+        [
+          "Hepatic urea production",
+          "Reactions span mitochondria and cytosol",
+          "The liver produces urea"
+        ],
+        [
+          "Renal elimination",
+          "The kidneys excrete urea",
+          "Excretion is distinct from hepatic production"
+        ]
+      ],
+      "caption": "A simplified functional sequence; it does not depict every reaction or every route of nitrogen excretion.",
+      "observe": "Separate the roles of the liver and kidneys in handling waste nitrogen.",
+      "alt": "Transamination: Transfers amino groups, commonly collecting nitrogen on glutamate: The carbon skeleton has its own metabolic fate. Inter-tissue transport: Glutamine and alanine carry nitrogen: Transport is not final disposal. Hepatic urea production: Reactions span mitochondria and cytosol: The liver produces urea. Renal elimination: The kidneys excrete urea: Excretion is distinct from hepatic production.",
+      "referenceIds": [
+        "nitrogen-metabolism"
+      ]
+    },
+    {
+      "id": "blood-and-haemostasis-comparison",
+      "lessonIds": [
+        "blood-and-haemostasis"
+      ],
+      "kind": "comparison",
+      "title": "Platelet adhesion, aggregation and fibrin",
+      "headers": [
+        "Process",
+        "Key relationship",
+        "Consequence"
+      ],
+      "rows": [
+        [
+          "Adhesion",
+          "GPIb-IX-V binds immobilised von Willebrand factor; collagen receptors contribute",
+          "Platelet attachment at an injured surface"
+        ],
+        [
+          "Aggregation",
+          "Fibrinogen bridges activated αIIbβ3 (GPIIb/IIIa) on adjacent platelets",
+          "Platelet-to-platelet connection"
+        ],
+        [
+          "Coagulation amplification",
+          "IXa–VIIIa activates X; Xa–Va converts prothrombin to thrombin",
+          "Thrombin generation on suitable phospholipid surfaces"
+        ],
+        [
+          "Fibrin stabilisation",
+          "Thrombin forms fibrin; XIIIa crosslinks it",
+          "Stabilisation of the plug"
+        ]
+      ],
+      "caption": "These processes overlap and interact. The rows are functional distinctions, not isolated consecutive timelines; calcium and suitable surfaces support coagulation complexes.",
+      "observe": "Explain why blocking platelet adhesion differs from blocking fibrin crosslinking.",
+      "alt": "Adhesion: GPIb-IX-V binds immobilised von Willebrand factor; collagen receptors contribute: Platelet attachment at an injured surface. Aggregation: Fibrinogen bridges activated αIIbβ3 (GPIIb/IIIa) on adjacent platelets: Platelet-to-platelet connection. Coagulation amplification: IXa–VIIIa activates X; Xa–Va converts prothrombin to thrombin: Thrombin generation on suitable phospholipid surfaces. Fibrin stabilisation: Thrombin forms fibrin; XIIIa crosslinks it: Stabilisation of the plug.",
+      "referenceIds": [
+        "blood-and-haemostasis"
+      ]
+    },
+    {
+      "id": "reproductive-cycles-comparison",
+      "lessonIds": [
+        "reproductive-cycles"
+      ],
+      "kind": "comparison",
+      "title": "Ovarian events and endometrial responses",
+      "headers": [
+        "Phase or transition",
+        "Ovarian signal",
+        "Endometrial relationship"
+      ],
+      "rows": [
+        [
+          "Follicular growth",
+          "Developing follicles produce oestradiol",
+          "Proliferative growth"
+        ],
+        [
+          "Pre-ovulatory transition",
+          "Sustained sufficiently high oestradiol can trigger positive feedback and an LH surge",
+          "The surge promotes ovulation and luteinisation"
+        ],
+        [
+          "Luteal phase",
+          "Corpus luteum produces progesterone",
+          "Secretory differentiation"
+        ],
+        [
+          "Loss of luteal support without pregnancy",
+          "Progesterone and oestradiol fall",
+          "Contributes to menstruation"
+        ]
+      ],
+      "caption": "A relationship map, not a fixed 28-day calendar. Most ovarian feedback is inhibitory; positive feedback is a context-dependent transition.",
+      "observe": "Identify the change in feedback before ovulation, then connect progesterone to the endometrium.",
+      "alt": "Follicular growth: Developing follicles produce oestradiol: Proliferative growth. Pre-ovulatory transition: Sustained sufficiently high oestradiol can trigger positive feedback and an LH surge: The surge promotes ovulation and luteinisation. Luteal phase: Corpus luteum produces progesterone: Secretory differentiation. Loss of luteal support without pregnancy: Progesterone and oestradiol fall: Contributes to menstruation.",
+      "referenceIds": [
+        "reproductive-cycles"
+      ]
+    },
+    {
+      "id": "biophysics-nuclear-imaging-comparison",
+      "lessonIds": [
+        "biophysics-nuclear-imaging",
+        "biophysics-ct-imaging"
+      ],
+      "kind": "comparison",
+      "title": "Image formation: gamma camera, PET and CT",
+      "headers": [
+        "Method",
+        "Measured signal",
+        "How position is inferred"
+      ],
+      "rows": [
+        [
+          "Gamma camera / SPECT",
+          "Emitted single photons from a tracer",
+          "Collimator restricts directions; rotating views support SPECT"
+        ],
+        [
+          "PET",
+          "Near-coincident annihilation photons",
+          "Detector pairs define lines of response"
+        ],
+        [
+          "CT",
+          "Transmitted X-rays after attenuation",
+          "Many angular projections support reconstruction"
+        ]
+      ],
+      "caption": "Each method has a different signal origin. Tracer distribution is not a direct photograph of every biochemical reaction.",
+      "observe": "Explain why a PET line of response is physically different from a CT attenuation projection.",
+      "alt": "Gamma camera / SPECT: Emitted single photons from a tracer: Collimator restricts directions; rotating views support SPECT. PET: Near-coincident annihilation photons: Detector pairs define lines of response. CT: Transmitted X-rays after attenuation: Many angular projections support reconstruction.",
+      "referenceIds": [
+        "biophysics-nuclear-imaging"
+      ]
+    }
+  ]
+}

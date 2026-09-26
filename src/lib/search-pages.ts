@@ -19,6 +19,10 @@ add("/about", "About this independent medical study library", "An independent, s
 add("/library", "Medical study library: lessons and practice", "Find free anatomy, histology, cell biology, biochemistry, physiology, genetics and biophysics lessons, with source references and explained questions.");
 add("/subjects", "Medical subjects and learning paths", "Choose a medical-science subject, find a starting lesson and see which topics and study resources are available.");
 add("/videos", "Medical-science video recaps", "Watch captioned educational recaps, read their transcripts and continue with the related medical-science lessons.", videos.records.length > 0);
+add("/starter-pack", "Free Study Guide starter pack", "Seven starting lessons, recaps and explained questions. Read online, download an offline HTML copy, or print and save as PDF.");
+add("/terms", "Educational terms and disclaimer", "Understand the purpose, limitations and terms of this independent medical-science study support.", false, "Legal notice");
+add("/waitlist", "Pre-launch Study Guide waitlist", "Read what optional launch and free-resource updates include, with a clearly labelled demo while signups are closed.", false, "Pre-launch signup utility");
+add("/waitlist/confirmation", "Waitlist confirmation information", "Learn how email confirmation works and return to the free study library. This page alone does not confirm a subscription.", false, "Confirmation utility");
 add("/privacy", "Privacy in the study library", "Learn how browser-based study progress, saved resources, contact drafts and optional analytics are handled.", false, "Utility notice");
 add("/contact", "Questions, feedback and corrections", "Ask a question, suggest a sourced correction or report an accessibility issue in the medical study library.", false, "Contact utility");
 add("/study", "My Study: saved lessons and practice", "Return to resources saved in this browser, review previous practice and choose your next study topic.", false, "Personal browser state");
