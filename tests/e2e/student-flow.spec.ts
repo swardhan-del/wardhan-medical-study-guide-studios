@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 import library from "../../src/content/library-lessons.json";
-const id = "protein-structure";
+const id = "biochemistry-enzyme-foundations";
 const lesson = library.lessons.find(item => item.id === id)!;
 
 test("first session persists stages, completion and saved summaries, then recommends the next lesson", async ({ page }, info) => {
