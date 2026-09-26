@@ -42,6 +42,6 @@ export function AnatomyPractice({ lessonId }: { lessonId: string }) {
   return <section className="study-panel" aria-labelledby="anatomy-practice-heading">
     <h2 id="anatomy-practice-heading">Four more ways to test your understanding</h2>
     <p>Answer before revealing the explanation. Together with the concept check above, these make five practice items.</p>
-    {record.practice.map((q,i) => <div key={q.id} className="anatomy-practice-item"><h3>{i+2}. {q.kind}</h3><p>{q.prompt}</p><details><summary>Reveal explanation for item {i+2}</summary>{q.answer.split("\n\n").map((p,j) => <p key={j}>{p}</p>)}</details></div>)}
+    {record.practice.map((q,i) => <div key={q.id} className="anatomy-practice-item"><h3>{i+2}. {q.kind === "Relationship recall" ? "Explain anatomical relationships" : q.kind}</h3><p>{q.prompt}</p><details><summary>Reveal explanation for item {i+2}</summary>{q.answer.split("\n\n").map((p,j) => <p key={j}>{p}</p>)}</details></div>)}
   </section>;
 }

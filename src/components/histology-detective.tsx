@@ -1,4 +1,5 @@
 "use client";
+import { StudyVisual } from "./study-visual";
 import { histologyTissues as tissues } from "@/content/histology-tissues";
 import { recordAnswer, recordVisit, useLearning } from "./learning-store";
 import { HistologyVisualLesson } from "./histology-visual-lesson";
@@ -20,11 +21,16 @@ function DetectiveCase({ index, review }: { index: number; review: boolean }) {
     <div className="study-panel">
       <div className="study-grid two">
         <div>
+          <StudyVisual title={`Renal tubular pattern ${index+1}`} alt={item.clue}
+            caption="The features are deliberately exaggerated. No stain or scale is simulated; this is not a microscope slide."
+            observe="Compare the luminal border, cell boundaries and relative lumen shape. Use more than one clue before choosing a classification."
+            credit="Original teaching schematic · Wardhan Medical Study Guide Studios; AI-assisted."
+            sources={[{title:"Yale Histology: Urinary System",url:"https://medcell.org/histology/urinary_system_lab.php"}]}>
           <svg
             className="histology-diagram"
             viewBox="0 0 360 330"
             role="img"
-            aria-label={`Unlabeled tubule schematic ${index + 1}. ${item.clue}`}
+            aria-label={`Unlabelled tubule schematic ${index + 1}. ${item.clue}`}
           >
             <rect width="360" height="330" fill="#f9f1e6" />
             <circle
@@ -93,10 +99,7 @@ function DetectiveCase({ index, review }: { index: number; review: boolean }) {
               </>
             )}
           </svg>
-          <p className="source-note">
-            Original teaching schematic · exaggerated features · no stain or
-            scale is simulated. This is not a microscope slide.
-          </p>
+          </StudyVisual>
         </div>
         <div>
           <p className="eyebrow">Detective case {index + 1}</p>

@@ -73,8 +73,8 @@ for (const id of newEntryLessonIds) {
       await expect(comparison.getByRole('table')).toHaveAccessibleName(/.+/);
       await expect(comparison.getByRole('columnheader')).toHaveCount(3);
     } else {
-      await expect(comparison.locator('[data-mobile-comparison]')).toHaveAccessibleName(/.+/);
-      expect(await comparison.locator('[data-mobile-comparison] dt:visible').count()).toBeGreaterThanOrEqual(6);
+      await expect(comparison.locator('.visual-comparison-mobile')).toHaveAccessibleName(/.+/);
+      expect(await comparison.locator('.visual-comparison-mobile dt:visible').count()).toBeGreaterThanOrEqual(4);
     }
     await expect(comparison.locator('figcaption')).toContainText('Observe and explain:');
     await expect(comparison.locator('figcaption')).toContainText('Original teaching comparison');
@@ -100,7 +100,7 @@ for (const id of newEntryLessonIds) {
     expect(await page.locator('article:visible').innerText()).not.toMatch(/retrieval|oral recall/i);
     await page.setViewportSize({width:320,height:800});
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-    await expect(comparison.locator('[data-mobile-comparison]')).toBeVisible();
+    await expect(comparison.locator('.visual-comparison-mobile')).toBeVisible();
     await expect(comparison.getByRole('table')).toHaveCount(0);
   });
 }

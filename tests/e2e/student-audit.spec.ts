@@ -94,7 +94,7 @@ test("nephron diagram supports recall and fits the page on small screens", async
       name: "Nephron: blood and tubular-fluid pathways",
     }),
   ).toBeVisible();
-  await page.getByRole("button", { name: "Hide labels for recall" }).click();
+  await page.getByRole("button", { name: "Hide labels for self-assessment" }).click();
   await expect(page.locator(".nephron-labels")).toHaveCount(0);
   await page.getByRole("button", { name: "Show labels" }).click();
   await expect(page.locator(".nephron-labels")).toHaveCount(1);
@@ -129,6 +129,9 @@ test('figure navigation matches real figures and foundations are usable', async 
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await expect(page.locator('.foundation-terms dt')).not.toHaveCount(0);
   await page.goto('/library/innate-adaptive');
+  await page.getByRole('link', { name: 'Figures', exact: true }).click();
+  await expect(page.locator('#visual-mhc-pathways:visible')).toBeVisible();
+  await page.goto('/library/genetic-therapy-delivery');
   await expect(page.getByRole('link', { name: 'Figures', exact: true })).toHaveCount(0);
 });
 

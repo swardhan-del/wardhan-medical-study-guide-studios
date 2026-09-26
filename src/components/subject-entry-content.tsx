@@ -1,3 +1,4 @@
+import { StudyVisual, VisualComparison } from "./study-visual";
 import Link from "next/link";
 import type { LibraryLesson } from "@/lib/library-types";
 import { entryLessonGuides } from "@/content/entry-lesson-guides";
@@ -23,23 +24,12 @@ export function SubjectEntryContent({ lesson }: { lesson: LibraryLesson }) {
       explanationIntro={guide.introduction}
       visualStudy={<section className="study-panel" aria-labelledby="visual-study-title">
         <h2 id="visual-study-title">Visual Study Prompts</h2>
-        <figure className={styles.comparison} data-entry-comparison>
-          <table className={styles.wideComparison}>
-            <caption>{visual.title}</caption>
-            <thead><tr>{visual.headers.map(header => <th scope="col" key={header}>{header}</th>)}</tr></thead>
-            <tbody>{visual.rows.map(row => <tr key={row.join("-")}>{row.map((cell, i) => i === 0 ? <th scope="row" key={i}>{cell}</th> : <td key={i}>{cell}</td>)}</tr>)}</tbody>
-          </table>
-          <div className={styles.narrowComparison} data-mobile-comparison role="group" aria-label={visual.title}>
-            <h3>{visual.title}</h3>
-            <ol>{visual.rows.map(row => <li key={row.join("-")}><dl>{row.map((cell, i) => <div key={visual.headers[i]}>
-              <dt>{visual.headers[i]}</dt><dd>{cell}</dd>
-            </div>)}</dl></li>)}</ol>
-          </div>
-          <figcaption>
-            <p>{visual.caption}</p><p><strong>Observe and explain:</strong> {visual.observe}</p>
-            <p className="muted-note">Original teaching comparison, Wardhan Medical Study Guide Studios; AI-assisted, source-checked. Scientific reference: <a href={source.url}>{source.title}</a>. All values and labels are provided as accessible text.</p>
-          </figcaption>
-        </figure>
+        <StudyVisual data-entry-comparison title={visual.title} caption={visual.caption}
+          alt={visual.rows.map(row => row.map((cell, i) => `${visual.headers[i]}: ${cell}`).join("; ")).join(". ")}
+          observe={visual.observe} sources={[{ title: source.title, url: source.url }]}
+          credit="Original teaching comparison, Wardhan Medical Study Guide Studios; AI-assisted, source-checked. All values and labels are provided as accessible text.">
+          <VisualComparison title={visual.title} headers={visual.headers} rows={visual.rows} />
+        </StudyVisual>
       </section>}
       conceptTitle="Question 1"
       applicationIntro="Use the mechanism and the stated assumptions to justify one best answer. Cases and numerical values are hypothetical teaching examples."

@@ -4076,3 +4076,49 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   .drawing-space { min-height: 3cm; }
   .revision-page .revision-lesson p { white-space: pre-line; }
 }
+
+/* Shared visual-learning contract: static, text-first, usable without colour or images. */
+.study-visual { margin: 1.5rem 0; padding: clamp(.85rem, 2.5vw, 1.5rem); min-width: 0; max-width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fffefa; color: var(--ink); break-inside: avoid; }
+.study-visual .study-visual-title { margin: 0 0 1rem; line-height: 1.4; font-size: 1.2rem; }
+.study-visual figcaption { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: .5rem; line-height: 1.65; }
+.study-visual figcaption p { margin-block: .8rem; }
+.visual-credit, .visual-sources { font-size: .9rem; overflow-wrap: anywhere; }
+.visual-sources { padding-left: 1.3rem; }
+.visual-sources li { margin-block: .4rem; }
+.visual-description summary { padding: .6rem 0; cursor: pointer; font-weight: 600; }
+.study-visual :is(a, summary, button, [tabindex]):focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+.visual-comparison { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .95rem; }
+.visual-comparison caption { text-align: left; font-weight: 600; margin-bottom: .75rem; }
+.visual-comparison :is(th,td) { border: 1px solid #9aafab; padding: .75rem; vertical-align: top; overflow-wrap: anywhere; text-align: left; }
+.visual-comparison th { background: #e6f0ed; color: #14252c; }
+.visual-comparison-mobile { display: none; }
+.visual-comparison-mobile section { padding: .75rem 0; border-top: 1px solid var(--line); margin: 0 !important; }
+.visual-comparison-mobile h4 { margin: 0 0 .65rem; }
+.visual-comparison-mobile dl { margin: 0; }
+.visual-comparison-mobile dt { font-weight: 650; margin-top: .7rem; }
+.visual-comparison-mobile dd { margin: .3rem 0; }
+.visual-flow { list-style: none; padding: 0; display: grid; gap: .65rem; }
+.visual-flow li { position: relative; padding: .8rem 1rem .8rem 3.4rem; border: 1px solid #8ba7a0; border-radius: 8px; background: #edf5f1; color: #14252c; }
+.visual-flow li p { margin: 0; }
+.visual-step { position: absolute; left: .8rem; top: .8rem; font-weight: 700; }
+.visual-flow-arrow { display: block; text-align: center; font-size: 1.5rem; line-height: 1; margin-top: .5rem; }
+.educational-figure.study-visual { padding: 0; }
+.educational-figure .study-visual-title { margin: 1rem; }
+.visual-image-fallback { margin: 1rem; padding: 1rem; border: 1px dashed #527b73; background: #edf5f1; color: #14252c; }
+@media (max-width: 700px) {
+  .visual-comparison { display: none; }
+  .visual-comparison-mobile { display: block; }
+}
+@media print {
+  .study-visual { box-shadow: none; }
+  .visual-comparison { display: table; }
+  .visual-comparison-mobile { display: none; }
+  .visual-description { display: block; }
+  .visual-description summary { display: none; }
+  .visual-description::details-content { content-visibility: visible; }
+  .visual-flow li { break-inside: avoid; }
+}
+
+.visual-viewport { overflow-x: auto; overscroll-behavior-inline: contain; max-width: 100%; }
+.visual-scroll-hint { font-size: .9rem; color: var(--ink-soft); }
+@media print { .visual-viewport { overflow: visible; } .visual-scroll-hint { display: none; } }
