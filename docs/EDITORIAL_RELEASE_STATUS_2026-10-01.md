@@ -25,7 +25,9 @@ No Dropbox STEM Visualizer assets were imported or published, and no Dropbox ori
 
 The initial dependency installation exposed a failing production audit: locked Next.js 16.3.4 was affected by [GHSA-vcvr-r3jv-pc5j](https://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j). Updated the lockfile within the existing package ranges to Next.js 16.3.8 and its matching runtime/compiler packages, plus brace-expansion 1.1.21 and 5.0.12 for the reported development vulnerabilities. No framework migration or application rewrite was made; package.json remains unchanged. A fresh `npm ci` reports zero vulnerabilities.
 
-## Validation and publication status
+## Validation and publication checkpoint
+
+This source snapshot records the pre-merge checkpoint. The linked PR is the final release record: its description and checks are updated with the completed browser results, merge commit, and verified production deployment after they exist.
 
 - `npm ci`: passed.
 - `npm audit --omit=dev --audit-level=high`: passed; zero vulnerabilities.
@@ -34,10 +36,13 @@ The initial dependency installation exposed a failing production audit: locked N
 - `npm run lint`: passed.
 - `npm run typecheck`: passed.
 - `npm run build`: passed, including deployment trace and rendered privacy checks.
-- `npm run test:e2e`: running; 595 tests scheduled.
+- `npm run test:e2e`: running at this checkpoint; 595 tests scheduled. Targeted revised-question and saved-attempt tests have passed on desktop.
 - Desktop/mobile browser spot checks: Anatomy, membrane physiology, and histology lesson routes return HTTP 200 with no runtime errors or horizontal overflow at 1440 px and 390 px. Screenshots inspected, including the two revised distractors and feedback.
 - Branch: `fix/editorial-corrections-2026-10-01`.
-- Pull request and implementation commit: pending.
-- Merge and production deployment: not performed yet.
+- Pull request: [#27](https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/27).
+- Implementation commit: `ebeaa35a0cc96261ca202a2c2271ba3a568b611a`.
+- Hosted preview: `dpl_D1LgoMGZ926w9k5HbvGyJbMneGNg`, READY, [preview URL](https://wardhan-medical-study-guide-studios-pkfeuniu4.vercel.app). Desktop/mobile checks passed for the exact sentence, revised distractors/explanations, wrong-to-correct retries, saved choices after reload, and 320 px layout. No runtime errors were detected.
+- GitHub: installation, production dependency audit, all unit tests, lint, build, and typecheck passed; full browser validation is running at this checkpoint.
+- Merge and production deployment: not performed at this checkpoint; the final PR release record must identify the merged SHA and matching READY production deployment before claiming publication.
 
 The baseline production deployment is `dpl_4R4a99ywFcmHqy2Vk38wXzGWVJ85`, with the public alias https://wardhan-medical-study-guide-studios.vercel.app. This is the pre-change deployment, not evidence that these corrections are live.
