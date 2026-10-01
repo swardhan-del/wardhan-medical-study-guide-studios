@@ -1,6 +1,9 @@
+import { qualityForLesson, hasRecordedReview } from "@/lib/lesson-quality";
 import { CorrectionLink } from "./correction-link";
 import { renalRevision } from "@/content/renal-course";
-export function RenalSources({ section }: { section?: string }) {
+export function RenalSources({ section, lessonId }: { section?: string; lessonId?: string }) {
+  const editorialRecorded = !lessonId || !qualityForLesson(lessonId) || hasRecordedReview(lessonId, "editorial");
+  const clinicallyReviewed = lessonId ? qualityForLesson(lessonId)?.contentStatus === "independently-clinically-reviewed" : false;
   return (
     <section className="study-sources" id="sources">
       <p className="eyebrow">Authorship & sources</p>
@@ -40,9 +43,7 @@ export function RenalSources({ section }: { section?: string }) {
         </li>
       </ol>
       <p className="source-note">
-        Editorial status: source-checked educational adaptation, with
-        AI-assisted drafting and implementation. No independent clinical peer
-        review is claimed. Examples teach mechanisms and exam reasoning; they
+        {editorialRecorded ? "Editorial status: source-checked educational adaptation, with AI-assisted drafting and implementation." : "AI-assisted educational adaptation; source and editorial review are pending."} {clinicallyReviewed ? "Independent clinical review is recorded in About this lesson." : "No independent clinical peer review is claimed."} Examples teach mechanisms and exam reasoning; they
         are not patient-care guidance.{" "}
         <CorrectionLink />
         .
