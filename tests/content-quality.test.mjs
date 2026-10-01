@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, mkdirSync, mkdtempSync, writeFileSync, rmSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { hasGitWorktree } from '../scripts/content-quality-git.mjs';
 import { createHash } from 'node:crypto';
 import { allowsLessonIndexing, validateQuality, explainedQuestions, containsPrivateReference, resolvedLinks, validDate } from '../src/lib/content-quality.ts';
 import { qualityLessons, qualityAllowsIndexing, lessonQuality } from '../src/lib/lesson-quality.ts';
@@ -60,4 +62,17 @@ test('explicit noindex overrides legacy eligibility, while new lessons fail clos
   assert.equal(allow(record()),true);
   for(const indexStatus of ['noindex','noindex-pending-review']) assert.equal(allow({...record(),indexStatus},true),false);
   assert.equal(allow({...record(),sources:[]},true),false);
+});
+
+test('Git detection distinguishes a checkout from exported and incomplete deployment snapshots', () => {
+  mkdirSync('output/phase-eleven', {recursive:true});
+  const root=mkdtempSync('output/phase-eleven/git-probe-');
+  try {
+    assert.equal(hasGitWorktree(root),false); // Do not mistake the parent repository for this snapshot.
+    mkdirSync(`${root}/.git`);writeFileSync(`${root}/.git/HEAD`,'incomplete deployment metadata');
+    assert.equal(hasGitWorktree(root),false);
+    rmSync(`${root}/.git`,{recursive:true});
+    execFileSync('git',['init',root],{stdio:'pipe'});
+    assert.equal(hasGitWorktree(root),true);
+  } finally { rmSync(root,{recursive:true,force:true}); }
 });

@@ -2,6 +2,7 @@
 
 Checkpoint: 1 October 2026. Branch: `feat/phase-eleven-content-quality-engine`.
 Implementation commit: `fa7dde2f290564420108e9013cdff094a157f78a`.
+PR: https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/28 (includes the subsequent deployment-snapshot compatibility fix).
 Base main commit: `f2c807b1ff302b413572b62b1f3be4a6617b756e`.
 This handoff is committed immediately after the implementation so its reference is immutable. The branch's GitHub PR records the final CI, merge and deployment outcome; this pre-merge checkpoint does not claim production deployment.
 
@@ -37,7 +38,7 @@ The governing curation README and approved-private models/manifest were consulte
 
 - `npm ci`: passed; `npm audit --omit=dev --audit-level=high`: zero vulnerabilities.
 - `npm run content:library`, `npm run content:check`, `npm run content:quality`: passed.
-- `npm test`: 121 passed, zero failures.
+- `npm test`: 122 passed, zero failures.
 - `npm run lint`, `npm run typecheck`, `npm run build`: passed, including rendered-output/deployment-trace privacy checks.
 - Initial full Playwright run: 602 passed, one existing skip, two failures in the new panel test because an older lesson had no objective metadata. Added an explicit missing-objectives message; did not invent objectives.
 - Fresh production build and focused browser regression: 55 passed, one existing skip. Covers desktop/mobile transparency, valid links, saved progress, import/export, practice feedback, navigation, metadata, private-route denial and security.
@@ -49,3 +50,7 @@ The first quality report lists 249 legacy indexable lessons, 249 pending indepen
 ## Next safe step for Phase 12
 
 Open private brief 01 and resolve its source-edition approval and overlap with existing membrane lessons. Verify the cited scientific sections and questions; choose an original or individually right-cleared visual approach. Prepare one bounded adaptation with public-safe provenance, explicit limitations and honest pending review statuses. Do not release any intake document or image merely because it is present or labelled audited. Preserve existing lesson/question IDs for any upgrade, complete scoped evidence and accessibility/readability checks, then use the established PR/preview/release process. Do not regenerate the legacy baseline to bypass review.
+
+## Preview build correction
+
+The first Vercel preview failed because its snapshot contained a `.git` entry without a usable repository. The original presence check attempted `git ls-files` and failed. The follow-up probes Git's actual root, retains live tracked-file checks in a checkout, and validates the declared exclusions when Git metadata is unavailable. A regression test covers a real checkout, an exported directory and incomplete Git metadata. The PR records the resulting preview and final deployment status; no failing build is eligible for merge.

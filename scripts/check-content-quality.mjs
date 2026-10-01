@@ -1,3 +1,4 @@
+import { hasGitWorktree } from "./content-quality-git.mjs";
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
@@ -43,7 +44,7 @@ function scan(directory) {
   }
 }
 scan("src/content"); scan("public");
-if (existsSync(".git")) {
+if (hasGitWorktree(process.cwd())) {
   const tracked = execFileSync("git", ["ls-files", ".private"], { encoding: "utf8" }).trim();
   if (tracked) errors.push("Private input is tracked by Git");
   const raw = execFileSync("git", ["ls-files", "-co", "--exclude-standard", "*.doc", "*.docx", "*.ppt", "*.pptx", "*.pdf"], { encoding: "utf8" }).trim().split("\n").filter(Boolean);
