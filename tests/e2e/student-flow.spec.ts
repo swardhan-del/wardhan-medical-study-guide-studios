@@ -1,9 +1,17 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
 import library from "../../src/content/library-lessons.json";
 const id = "biochemistry-enzyme-foundations";
 const lesson = library.lessons.find(item => item.id === id)!;
+
+// A full-page navigation can finish before React records the visit. Assert the
+// persisted visit before leaving, so this checks resume rather than hydration speed.
+async function waitForRecordedVisit(page: Page, lessonId: string) {
+  await expect.poll(() => page.evaluate(() =>
+    JSON.parse(localStorage.getItem("wardhan-learning:v1") ?? "{}").resume?.lesson,
+  )).toBe(lessonId);
+}
 
 test("first session persists stages, completion and saved summaries, then recommends the next lesson", async ({ page }, info) => {
   await page.goto("/");
@@ -94,6 +102,7 @@ test("blocked storage and corrupt progress keep lessons usable with honest recov
 
 test("library progress filters combine with search and clearing restores keyboard focus", async ({ page }) => {
   await page.goto(`/library/${id}`);
+  await waitForRecordedVisit(page, id);
   await page.goto("/library");
   await page.getByRole("combobox", { name: "Lesson progress", exact: true }).selectOption("started");
   await expect(page.locator(".resource-card")).toHaveCount(1);
@@ -182,6 +191,7 @@ test("storage quota failures retain usable in-tab state and do not claim a saved
 
 test("the existing renal course participates in resume without replacing its completion controls", async ({ page }) => {
   await page.goto("/learn/renal/kidney-map");
+  await waitForRecordedVisit(page, "kidney-map");
   await page.goto("/");
   await expect(page.getByRole("link", { name: "Resume lesson", exact: true })).toHaveAttribute("href", "/learn/renal/kidney-map");
   await page.getByRole("link", { name: "Resume lesson", exact: true }).click();
@@ -194,6 +204,7 @@ test("the existing renal course participates in resume without replacing its com
   await expect(page.getByRole("region", { name: "Continue where you left off" })).toContainText("Marked complete");
   await expect(page.getByRole("link", { name: /^Next:/ })).toHaveAttribute("href", /\/learn\/renal\//);
   await page.goto(`/library/${id}`);
+  await waitForRecordedVisit(page, id);
   await page.goto("/");
   await expect(page.getByRole("link", { name: "Resume lesson", exact: true })).toHaveAttribute("href", `/library/${id}#lesson-objectives`);
 });

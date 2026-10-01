@@ -46,3 +46,9 @@ This source snapshot records the pre-merge checkpoint. The linked PR is the fina
 - Merge and production deployment: not performed at this checkpoint; the final PR release record must identify the merged SHA and matching READY production deployment before claiming publication.
 
 The baseline production deployment is `dpl_4R4a99ywFcmHqy2Vk38wXzGWVJ85`, with the public alias https://wardhan-medical-study-guide-studios.vercel.app. This is the pre-change deployment, not evidence that these corrections are live.
+
+## CI follow-up: wait for the persisted visit before leaving a lesson
+
+The complete local run finished with 594 browser tests passed and one intentional mobile metadata duplicate skipped. Both GitHub runs for implementation commit `ebeaa35` also passed. A later run on the documentation-only checkpoint exposed an existing timing race in `tests/e2e/student-flow.spec.ts`: the renal-resume test immediately navigated away after page load, before the React effect necessarily recorded the visit. The failure was a missing “Resume lesson” link, not a changed answer key or content record; see [the failed run](https://github.com/swardhan-del/wardhan-medical-study-guide-studios/actions/runs/36908577295).
+
+The test now asserts the actual saved visit before navigating away. The same synchronization protects the adjacent library-progress test and the final library visit in the renal test. No application progress code, storage schema, timeout, or assertion was removed. The affected tests passed 24 repeated desktop/mobile cases after the change, and lint and typecheck passed again. Final GitHub validation is required on the updated PR head before merge; its results and production verification are maintained in the PR release record linked above.
