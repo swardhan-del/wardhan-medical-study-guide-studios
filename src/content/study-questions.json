@@ -2032,8 +2032,8 @@
           "explanation": "Resting voltages vary by cell type and conditions; −70 mV is an illustrative neuronal value."
         },
         {
-          "text": "The potassium concentration inside is −70 mmol/L.",
-          "explanation": "Voltage is measured in millivolts and is not an ion concentration; concentrations cannot be negative."
+          "text": "The outside is 70 mV more negative than the inside.",
+          "explanation": "The stated recording is inside minus outside; a negative reading means the inside is more negative."
         }
       ]
     },
