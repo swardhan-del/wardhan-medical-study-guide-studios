@@ -93,3 +93,44 @@ test('Anatomy text remains sufficient without diagrams and revision includes the
   await expect(foundation).toContainText('between the right visceral and parietal pleura');
   expect(await foundation.innerText()).not.toMatch(/retrieval|oral recall/i);
 });
+
+// Existing browser histories store option indices, so editorial distractor edits
+// must restore the original choice and feedback without resetting the attempt.
+for (const question of [
+  studio.questions.find(q => q.id === 'physiology-membrane-foundations-knowledge-1')!,
+  transfer.questions.find(q => q.id === 'anatomy-foundations-application-4')!,
+]) {
+  test(`${question.id}: existing saved distractor survives the editorial correction`, async ({ page }) => {
+    const savedAttempt = {
+      attempts: 2, correct: 0, lastCorrect: false, streak: 0,
+      dueAt: 1790812800000, firstCorrect: false, lastAt: 1790812800000,
+      lastChoice: 2, assisted: false,
+    };
+    await page.addInitScript(({ id, attempt }) => {
+      if (localStorage.getItem('wardhan-learning:v1')) return;
+      localStorage.setItem('wardhan-learning:v1', JSON.stringify({
+        version: 2, lessons: ['anatomy-foundations'],
+        answers: { [id]: attempt }, drafts: {}, visits: ['2026-10-01'],
+        quizzes: 3, shares: 0, oral: [], plan: null, resume: null, journey: {},
+      }));
+    }, { id: question.id, attempt: savedAttempt });
+    await page.goto(`/library/${question.topic}`);
+    const panel = page.locator('.practice-question:visible').filter({ hasText: question.prompt });
+    await expect(panel.getByRole('radio', { name: question.options[2].text, exact: true })).toBeChecked();
+    await expect(panel.getByRole('status')).toContainText('Review the distinction.');
+    await expect(panel.getByRole('status')).toContainText(question.options[2].explanation);
+    await page.reload();
+    const restored = await page.evaluate(() => JSON.parse(localStorage.getItem('wardhan-learning:v1')!));
+    expect(restored.answers[question.id]).toEqual(savedAttempt);
+    expect(restored.lessons).toContain('anatomy-foundations');
+    expect(restored.quizzes).toBe(3);
+    await panel.getByRole('button', { name: 'Try without feedback', exact: true }).click();
+    await panel.getByRole('radio', { name: question.options[question.answer].text, exact: true }).check();
+    await panel.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await expect(panel.getByRole('status')).toContainText('Correct.');
+    await page.reload();
+    await expect(panel.getByRole('radio', { name: question.options[question.answer].text, exact: true })).toBeChecked();
+    await page.setViewportSize({ width: 320, height: 800 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  });
+}

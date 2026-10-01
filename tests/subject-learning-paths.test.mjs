@@ -111,7 +111,7 @@ test('worked quantitative examples and comparison values agree with independent 
 test('approved Histology and Anatomy flagship records remain byte-equivalent after JSON normalisation', () => {
   const expectedHashes = {
     'histology-foundations-tissues': '46160053e8b3657d1ee8f5b9e71ce1c18cdddb10f0c6d41ba2fab53a038cffc2',
-    'anatomy-foundations': 'd1345b844fc3e0d8348255510a0a74662b2416226e521a7e0d20ca94dcd87acd',
+    'anatomy-foundations': 'd7a592f31750e300fa32cbb7e13efead06d465f2af7691ee80a8b6a9bf099288',
   };
   for (const [id, hash] of Object.entries(expectedHashes))
     assert.equal(createHash('sha256').update(JSON.stringify(byId.get(id))).digest('hex'), hash, id);
