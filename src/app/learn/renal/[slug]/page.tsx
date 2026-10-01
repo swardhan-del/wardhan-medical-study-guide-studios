@@ -1,3 +1,4 @@
+import { AboutLesson } from "@/components/about-lesson";
 import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
 import { StructuredData } from "@/components/structured-data";
 import { lessonSchema } from "@/lib/structured-data";
@@ -51,6 +52,7 @@ export default async function RenalLessonPage({ params }: Props) {
         <p className="interior-lede">{lesson.description}</p>
         <SaveButton id={`renal-${slug}`} title={lesson.title} />
       </header>
+      <AboutLesson lessonId={`renal-${slug}`} />
       <div className="lesson-layout">
         <aside className="lesson-outline">
           <h2>Learning Objectives</h2>
@@ -140,7 +142,7 @@ export default async function RenalLessonPage({ params }: Props) {
           </Link>
         )}
       </nav>
-      <RenalSources section={lesson.sourceSection} />
+      <RenalSources section={lesson.sourceSection} lessonId={`renal-${slug}`} />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import { qualityForLesson, hasRecordedReview } from "@/lib/lesson-quality";
+import { AboutLesson } from "./about-lesson";
 import { TopicGuideLinks } from "@/components/topic-guide-links";
 import { StructuredData } from "./structured-data";
 import { lessonSchema } from "@/lib/structured-data";
@@ -43,6 +45,8 @@ import { SaveButton } from "./save-button";
 import { ConceptCheck } from "./concept-check";
 
 export function LibraryLesson({ lesson }: { lesson: Lesson }) {
+  const editorialRecorded = !qualityForLesson(lesson.id) || hasRecordedReview(lesson.id, "editorial");
+  const clinicallyReviewed = qualityForLesson(lesson.id)?.contentStatus === "independently-clinically-reviewed";
   const journey = journeyLessons.find(item => item.id === lesson.id)!;
   const anatomyFoundations = lesson.id === "anatomy-foundations";
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
@@ -94,6 +98,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           </a>
         </div>
       </header>
+      <AboutLesson lessonId={lesson.id} />
       <LessonJourney lesson={journey} />
       {lesson.id === "thorax-nerve-relations" && <p className="study-notice">New to anatomy? <Link href="/start/anatomy">Review position, directions and body planes first</Link>.</p>}
       {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
@@ -292,8 +297,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
         <p>
           Web lesson by Wardhan Medical Study Guide Studios. Updated{" "}
           <time dateTime={lesson.updatedAt}>{lesson.updatedAt}</time>.
-          AI-assisted, source-checked educational adaptation; independent
-          clinical peer review has not been completed.
+          {editorialRecorded ? "AI-assisted, source-checked educational adaptation; " : "AI-assisted educational adaptation; source and editorial review are pending. "}{clinicallyReviewed ? "independent clinical review is recorded in About this lesson." : "independent clinical peer review has not been completed."}
         </p>
         <p className="muted-note">
           {anatomyFoundations || subjectEntry ? `The scientific references are publicly accessible. This lesson publishes newly written explanations, ${subjectEntry ? "text comparisons" : "diagrams"} and self-assessment questions.` : <>The full source edition remains in the controlled library. This page publishes an original teaching adaptation and original {flagship ? "self-assessment" : "recall"} questions.</>}

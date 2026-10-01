@@ -4193,3 +4193,12 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .visual-viewport { overflow-x: auto; overscroll-behavior-inline: contain; max-width: 100%; }
 .visual-scroll-hint { font-size: .9rem; color: var(--ink-soft); }
 @media print { .visual-viewport { overflow: visible; } .visual-scroll-hint { display: none; } }
+
+/* The quality record is server rendered and uses native disclosure/links. */
+.lesson-transparency { margin-block: 1.5rem; }
+.lesson-transparency > summary { cursor: pointer; font-weight: 700; padding-block: .5rem; }
+.lesson-transparency-body { padding-block-start: .75rem; overflow-wrap: anywhere; }
+.lesson-transparency-body h2 { font-size: 1.15rem; }
+.quality-learning-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
+.quality-learning-links h3 { font-size: 1rem; }
+.quality-learning-links a { display: inline-block; padding-block: .35rem; }

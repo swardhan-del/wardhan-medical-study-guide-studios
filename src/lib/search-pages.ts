@@ -1,3 +1,4 @@
+import { qualityAllowsIndexing } from "./lesson-quality.ts";
 import catalog from "../content/public-catalog.json" with { type: "json" };
 import taxonomy from "../content/library-taxonomy.json" with { type: "json" };
 import videos from "../content/public-videos.json" with { type: "json" };
@@ -52,7 +53,7 @@ for (const [id, foundation] of Object.entries(foundations)) {
   const subject = subjectInterests.find(subject => subject.id === id)!;
   add(`/learn/foundations/${id}`, `${subject.title} foundations: key vocabulary`, foundation.introduction);
 }
-for (const lesson of renalLessons) add(`/learn/renal/${lesson.slug}`, lesson.title, lesson.description);
+for (const lesson of renalLessons) add(`/learn/renal/${lesson.slug}`, lesson.title, lesson.description, qualityAllowsIndexing(`renal-${lesson.slug}`));
 for (const page of anatomyLearningPages) add(`/subjects/anatomy/${page.slug}`, `${page.title}: interactive study preview`, page.description, false, "Legacy preview outline; full lessons are indexed separately");
 add("/subjects/anatomy/musculoskeletal", "Musculoskeletal anatomy: study outline and sources", "Browse the musculoskeletal study outline, source notes and links to the complete published regional anatomy lessons.", false, "Legacy source outline");
 
@@ -61,7 +62,7 @@ export function canonicalResourcePath(record: (typeof catalog.records)[number]) 
 }
 for (const record of catalog.records) {
   const path = `/library/${record.id}`, canonical = canonicalResourcePath(record);
-  add(path, record.title, record.summary.length < 60 ? `${record.title}. ${record.summary}` : record.summary, canonical === path, canonical === path ? undefined : "Redirect to canonical learning route", { canonical, lastModified: record.updatedAt });
+  add(path, record.title, record.summary.length < 60 ? `${record.title}. ${record.summary}` : record.summary, canonical === path && qualityAllowsIndexing(record.id), canonical === path ? (qualityAllowsIndexing(record.id) ? undefined : "Lesson quality review pending") : "Redirect to canonical learning route", { canonical, lastModified: record.updatedAt });
 }
 for (const video of videos.records) add(`/videos/${video.id}`, `${video.title}: video recap`, `Watch the captioned recap: ${video.summary}`);
 const seenDirectories = new Set<string>();

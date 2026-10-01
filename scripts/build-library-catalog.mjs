@@ -1,3 +1,4 @@
+import { qualityAllowsIndexing } from "../src/lib/lesson-quality.ts";
 import { readFileSync, writeFileSync, statSync } from "node:fs";
 import { renalLessons } from "../src/content/renal-course.ts";
 import {
@@ -150,7 +151,7 @@ console.log(
 
 const figures = read("../src/content/public-figures.json").figures;
 const recaps = read("../src/content/study-recaps.json").recaps;
-const searchIndex = Object.fromEntries(records.map(record => {
+const searchIndex = Object.fromEntries(records.filter(record => qualityAllowsIndexing(record.id)).map(record => {
   const lesson = lessons.find(l => l.id === record.id);
   const renal = renalLessons.find(l => record.id === `renal-${l.slug}`);
   const anatomy = anatomyLearningPages.find(l => record.id === `anatomy-${l.slug}`);
