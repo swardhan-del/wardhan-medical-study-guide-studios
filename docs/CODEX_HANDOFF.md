@@ -1,4 +1,47 @@
-# Codex handoff — Phase 12 preview
+# Codex handoff — Phase 13 draft review
+
+Checkpoint: 2 October 2026. Branch: `feat/phase-twelve-lesson-preview`.
+Implementation and regression-test commit: `b8ceceef6aa65842e55acaebb42acd5ff46d3ecc`.
+Draft PR: https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/29.
+Preview: https://wardhan-medical-study-guide-studios-yxvwmm5ks.vercel.app — Vercel `dpl_6cvuwWi2ULAPCtSqDwsZBMgM6igg`, **READY**, matching the implementation commit, preview target.
+This handoff is a subsequent documentation checkpoint; use the PR's head SHA for final-head CI. Application code, content and tests are unchanged by the documentation checkpoint.
+
+**Keep PR #29 draft. Do not merge or deploy to production.** Independent clinical/subject review, visual scientific and commercial-rights/release approval, human editorial/readability/accessibility review and an authorised release decision remain outstanding. The earlier request for immediate production publication does not apply to this run.
+
+## Phase 13 changes
+
+Continued the existing clean branch after fetching origin; the two ChatGPT-only commits were unavailable and were not cherry-picked. Read all eight lessons' teaching, worked examples, questions, option explanations and visuals. Added the NHGRI pangenome reference, aligned bibliography and quality source records, and supplied specific muscle, histological-preparation and genomic-scope citations. Corrected fixed-load versus constant-length wording for isometric contraction, qualified the passive-cable boundary assumption, clarified the synaptic sum's predicted peak, and improved two synaptic visual prompts/labels. Supporting references now appear beside the original visual layouts.
+
+The new Leeds references exposed a private-path validator false positive for public HTTPS `/home/` paths. Fixed local-root detection with regression tests that retain rejection of private paths, encoded local paths, raw Dropbox links and mixed public/private references. Full findings and source-access limitations: [PHASE_THIRTEEN_SOURCE_CONSISTENCY_AUDIT.md](PHASE_THIRTEEN_SOURCE_CONSISTENCY_AUDIT.md).
+
+No new lesson routes, question IDs, answer choices or order changes. The new fixture pins all 242 library routes, 381 question identities and the three existing progress identifier registries to the prior PR head `b8783e6819928ab69fefded345e7aa238fd3f88b`. Browser tests restore pre-existing notes, answers, review schedules, summary checks and completed lessons on all eight routes. The older fixture still protects the 356 pre-Phase-12 complete question records. No progress-storage code or keys changed.
+
+All eight records remain `medical-review-pending`, `rights-review-pending`, `explanations-complete`, `noindex-pending-review`, and pending human accessibility/readability review. Review dates remain null and review evidence remains empty. No clinical approval or reviewer credentials are inferred from passing tests. Sitemap and generated full-text search exclusions remain intact.
+
+## Phase 13 verification
+
+- `npm ci`: passed with the unchanged lockfile, Next.js/SWC 16.3.8; zero reported vulnerabilities. An initial build was stopped after detecting an installed 16.3.4/16.3.8 mismatch; the fresh build passed after reinstalling locked dependencies.
+- `npm run content:check`, including quality, generated-content, source-boundary and visual checks: passed.
+- `npm test`: **133 passed** on Node 26.7.0; also **133 passed** on Node 24.21.0. The reported silent `content-quality.test.mjs` failure did not reproduce. Before edits it passed 11/11 on both runtimes; one new regression now covers the unrelated `/home/` false positive. The module-type warning remains non-fatal; no assertions were removed or weakened.
+- Lint, typecheck, production build and deployment-trace/rendered privacy checks: passed.
+- Focused local Playwright suite: **84 passed**, desktop and mobile. Covers all eight drafts, persisted notes/progress, practice feedback, citations, keyboard controls, visual placements, automated accessibility, 320px enlarged-text layouts, security and noindex/private-route checks. New-test selectors were corrected to respect the existing primary-reference accessibility suffix and flagship note label.
+- Hosted browser verification at the immutable preview above: **50 passed** (desktop/mobile). Includes the new preservation/source checks plus Phase 12 lesson, privacy, accessibility and security checks. Vercel metadata reports READY and the exact implementation SHA.
+- GitHub CI for the implementation commit: dependency install/audit, unit tests, lint, build and typecheck passed; full browser suite still running at this checkpoint. Final-head CI must be checked separately after pushing the documentation checkpoint; PR body and final task report will record its exact outcome.
+- Five original private source documents rehashed unchanged; zero tracked `.private` files. Existing public binaries, dependency lockfile, legacy quality baseline and saved-progress code remain unchanged.
+
+Local evidence is ignored under `output/phase-thirteen/` and `test-results/`. Preview access credentials are temporary, ignored and must not be committed. Automated accessibility/source checks are not independent clinical, rights or human accessibility approval.
+
+Production was not changed: the observed deployment remains `dpl_2hXaR297eBxDVFr64ZbMaHanCjh2`, commit `caba7ad1c1dccbcfd9e74ec9f898944f98c46397`, READY, at https://wardhan-medical-study-guide-studios.vercel.app. No production deployment, merge, environment or domain change was performed.
+
+## Private intake and next safe step
+
+Raw sources remain in `.private/source-intake/2026-10-01/`; the eight original conversion briefs and private inventory remain in `.private/conversion-queue/2026-10-01/`. The first membrane patch remains in `.private/working/phase-twelve/phase12-membrane-transport.patch`. These are excluded from Git, Vercel uploads and tracing. Raw DOCX/PDF/PPTX, private filenames/extracts and unapproved STEM images are not committed, copied into public assets or deployed.
+
+All eight briefs have draft adaptations, with original Phase 12 scopes preserved below. The next step is review of these eight existing routes: membrane transport, resting/electrotonic potentials, action potentials, synaptic transmission, NMJ/skeletal coupling, connective tissue, somatosensory pathways and genetics/genomics. Obtain accountable subject/clinical review; inspect visual scientific accuracy and publication rights; complete human editorial, readability and assistive-technology review; then record version-specific evidence before any authorised release/index change. Do not start duplicate lessons or infer approval from this audit. No production release is authorised by Phase 13.
+
+---
+
+# Historical Phase 12 handoff
 
 Checkpoint: 2 October 2026. Branch: `feat/phase-twelve-lesson-preview`.
 Base main: `caba7ad1c1dccbcfd9e74ec9f898944f98c46397` (Phase 11).
