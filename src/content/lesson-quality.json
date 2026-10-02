@@ -1,4 +1,65 @@
 {
   "version": 1,
-  "records": []
+  "records": [
+    {
+      "lessonId": "fluid-and-membrane-transport",
+      "title": "Cell transport: follow the energy",
+      "subject": "physiology",
+      "topic": "cell membrane transport",
+      "slug": "fluid-and-membrane-transport",
+      "learnerLevel": "early medical and biomedical science",
+      "objectives": [
+        "Identify the driving force and membrane pathway for a specified neutral solute or ion.",
+        "Distinguish channel flow, facilitated diffusion, primary active transport and secondary active transport by energy coupling.",
+        "Trace the separate apical and basolateral steps of a simplified absorptive epithelial pathway.",
+        "Predict water and solute movement with explicit permeability and pressure assumptions."
+      ],
+      "sources": [
+        {
+          "title": "Anatomy and Physiology 2e, 3.1 The Cell Membrane",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-1-the-cell-membrane",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Anatomy and Physiology 2e, 26.1 Body Fluids and Fluid Compartments",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/26-1-body-fluids-and-fluid-compartments",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        }
+      ],
+      "contentStatus": "draft",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original text comparison prepared for this lesson; scientific and release review pending. No supplied image imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "Simplified cell and epithelial models; pathway expression varies by tissue.",
+        "Independent clinical, editorial and visual sign-off remain pending."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "physiology-membrane-foundations",
+          "biophysics-membrane-foundations"
+        ],
+        "related": [
+          "membrane-potentials"
+        ],
+        "compare": [
+          "biophysics-diffusion-osmosis"
+        ],
+        "next": [
+          "membrane-potentials"
+        ]
+      }
+    }
+  ]
 }

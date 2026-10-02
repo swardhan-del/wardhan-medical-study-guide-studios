@@ -551,6 +551,75 @@
           "explanation": "Whether ATP is used does not determine tonicity; passive solute entry can still alter water balance."
         }
       ]
+    },
+    {
+      "id": "fluid-and-membrane-transport-application-1",
+      "topic": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "href": "/library/fluid-and-membrane-transport#apply-the-concept",
+      "prompt": "A neutral solute has a higher concentration outside a model cell. The membrane is impermeable to it. What changes immediately if the concentration difference is removed without adding a transport pathway?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "A rapid inward flux begins because the solute no longer needs a carrier.",
+          "explanation": "Removing the gradient cannot create a pathway through an impermeable barrier."
+        },
+        {
+          "text": "There is still no appreciable membrane flux; now there is also no concentration driving force.",
+          "explanation": "The barrier lacks a pathway both before and after the change. Removing the gradient also removes the potential driving force for net passive movement."
+        },
+        {
+          "text": "The membrane starts hydrolysing ATP to restore the gradient.",
+          "explanation": "No ATP-dependent transporter is specified; a concentration change does not make the lipid bilayer an ATPase."
+        }
+      ]
+    },
+    {
+      "id": "fluid-and-membrane-transport-application-2",
+      "topic": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "href": "/library/fluid-and-membrane-transport#apply-the-concept",
+      "prompt": "In a model epithelial cell, an apical protein couples inward Na⁺ movement to uphill glucose entry. A separate basolateral pump hydrolyses ATP to maintain the Na⁺ gradient. How should the apical protein be classified?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "An ion channel, because Na⁺ moves through it.",
+          "explanation": "The specified protein couples two solutes, including uphill glucose movement; it is a cotransporter, not an uncoupled ion pore."
+        },
+        {
+          "text": "A primary active pump, because the pathway ultimately depends on ATP.",
+          "explanation": "The separate basolateral pump uses ATP directly. Indirect ATP dependence does not mean the apical cotransporter hydrolyses ATP."
+        },
+        {
+          "text": "A secondary active cotransporter, because it uses downhill Na⁺ movement to drive glucose entry.",
+          "explanation": "The cotransporter uses energy stored in the Na⁺ electrochemical gradient, which the ATP-dependent pump maintains."
+        }
+      ]
+    },
+    {
+      "id": "fluid-and-membrane-transport-application-3",
+      "topic": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "href": "/library/fluid-and-membrane-transport#apply-the-concept",
+      "prompt": "An open channel conducts a positively charged ion. Its concentration difference favours entry, but membrane voltage favours exit. What information is needed to predict net flow?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The combined electrochemical gradient, including ion concentrations and membrane voltage.",
+          "explanation": "Chemical and electrical forces can oppose each other; their combined effect determines passive net flow through an open selective channel."
+        },
+        {
+          "text": "Only the concentration difference, because channels ignore electrical forces.",
+          "explanation": "An ion is charged, so membrane voltage contributes to its driving force."
+        },
+        {
+          "text": "Only whether the channel has an ATP-binding site.",
+          "explanation": "The question specifies an open channel. ATP binding is not the information that resolves opposing chemical and electrical forces in this model."
+        }
+      ]
     }
   ]
 }

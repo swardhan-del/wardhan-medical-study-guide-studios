@@ -1455,6 +1455,52 @@
       "referenceIds": [
         "biophysics-nuclear-imaging"
       ]
+    },
+    {
+      "id": "membrane-pathway-decisions",
+      "lessonIds": [
+        "fluid-and-membrane-transport"
+      ],
+      "kind": "comparison",
+      "title": "Choose a membrane pathway from the driving force",
+      "headers": [
+        "Pathway",
+        "What crosses and why",
+        "Where the energy comes from"
+      ],
+      "rows": [
+        [
+          "Lipid-phase diffusion",
+          "A suitably small non-polar solute moves down its concentration gradient",
+          "No cellular ATP consumption for this crossing"
+        ],
+        [
+          "Open selective channel",
+          "An ion moves down its electrochemical gradient",
+          "The existing ion gradient; the channel does not pump the ion uphill"
+        ],
+        [
+          "Passive carrier",
+          "A bound solute moves downhill as the carrier cycles",
+          "The solute gradient; no direct ATP hydrolysis"
+        ],
+        [
+          "Na⁺/K⁺ ATPase",
+          "Three Na⁺ out and two K⁺ in per ATP",
+          "Direct ATP hydrolysis"
+        ],
+        [
+          "Na⁺–glucose cotransporter",
+          "Downhill Na⁺ entry is coupled to glucose entry",
+          "Na⁺ gradient maintained indirectly by ATP-dependent pumping"
+        ]
+      ],
+      "caption": "This simplified cell-membrane comparison separates permeability from driving force. The direction for an ion requires both concentration and voltage; real tissues can express multiple pathways at once.",
+      "observe": "Cover the energy column and identify which route hydrolyses ATP directly. Then explain why the cotransporter still depends on ATP over time.",
+      "alt": "Five transport routes compared by solute pathway and energy: lipid diffusion and passive proteins move downhill; the sodium–potassium pump uses ATP directly; sodium–glucose cotransport uses a pump-maintained gradient.",
+      "referenceIds": [
+        "fluid-and-membrane-transport"
+      ]
     }
   ]
 }

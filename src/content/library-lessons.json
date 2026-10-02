@@ -2530,21 +2530,29 @@
       "id": "fluid-and-membrane-transport",
       "subject": "physiology",
       "title": "Cell transport: follow the energy",
-      "summary": "Connect membrane permeability, the sodium–potassium pump and secondary active transport before predicting where a solute moves.",
+      "summary": "Trace a substance from one side of a cell membrane to the other: identify its pathway and driving force, then follow the energy used by pumps and coupled transporters.",
       "source": "guide-cellular",
       "section": "Sections 1.1–1.2: fluid compartments, tonicity and membrane transport",
       "steps": [
         {
-          "title": "Separate a gradient from a pathway",
-          "body": "A concentration gradient can favour movement without providing a route across a membrane. The lipid bilayer limits the movement of most ions and polar solutes. Channels provide selective pores; carriers bind and change conformation. For an ion, both concentration and voltage contribute to its electrochemical gradient."
+          "title": "Start with the barrier and the solute",
+          "body": "The phospholipid bilayer has a hydrophobic interior. Small non-polar molecules can cross its lipid phase more readily than ions or large polar solutes. A concentration difference is a potential driving force, but it does not create a permeable route. Name the solute, the two compartments and the available pathway before predicting movement.\n\nChannels form selective aqueous pores; carriers bind a solute and alternate which side of the membrane is accessible. A transport protein can support passive movement or energy-coupled movement: its presence alone does not prove that ATP is consumed."
         },
         {
-          "title": "Locate the ATP-consuming step",
-          "body": "The sodium–potassium ATPase moves three sodium ions out and two potassium ions in per ATP hydrolysed. It maintains the gradients used by excitable cells and transport epithelia. A sodium–glucose cotransporter does not hydrolyse ATP directly: it couples inward sodium movement down its electrochemical gradient to glucose transport."
+          "title": "Predict passive movement from the right gradient",
+          "body": "For an uncharged solute in a simple model, a permeable pathway permits net movement down its concentration gradient. Molecules still move in both directions at equilibrium, but the opposing flows balance. For an ion, the voltage difference also matters: concentration alone may point one way while the electrical force points the other. A selective open channel lets an ion move down its combined electrochemical gradient; it cannot drive it uphill by itself.\n\nA carrier that moves a solute downhill without coupling it to another energy source mediates facilitated diffusion. A finite number of carrier binding and cycling sites can limit its rate at high substrate concentration; a channel and a carrier should not be treated as the same mechanism."
         },
         {
-          "title": "Distinguish osmolarity from tonicity",
-          "body": "Osmolarity counts dissolved particles per litre of solution. Tonicity predicts the sustained effect on cell volume and depends on solutes that do not readily cross the relevant membrane. A solution can be isosmotic without being isotonic when its solute enters the cell. Always state which membrane and time scale you are considering."
+          "title": "Locate direct and indirect energy use",
+          "body": "Primary active transport couples movement to an energy source directly. The sodium–potassium ATPase hydrolyses one ATP while moving three Na⁺ out and two K⁺ in. This maintains unequal ion concentrations; the pump also has a smaller direct electrogenic effect.\n\nSecondary active transport uses a gradient maintained elsewhere. A sodium–glucose cotransporter can couple inward Na⁺ movement down its electrochemical gradient to glucose entry against the glucose gradient. The cotransporter does not hydrolyse ATP itself. If the pump is inhibited while leaks continue, the Na⁺ gradient can weaken over time, reducing the energy available for this coupled uptake."
+        },
+        {
+          "title": "Follow transport across an epithelium",
+          "body": "A polarised epithelial cell has an apical side facing a lumen and a basolateral side facing interstitial fluid. In a simplified absorptive example, Na⁺ and glucose enter together across the apical membrane, while the basolateral sodium–potassium ATPase supports the Na⁺ gradient. Glucose can leave the cell through a distinct basolateral carrier. A substance therefore crosses two membranes by different mechanisms; it does not travel through one continuous pore from lumen to interstitium.\n\nTight junctions influence the separate paracellular route between cells. Actual epithelial transport varies by tissue, transporter distribution and local conditions, so this directional model is a foundation rather than a full account of kidney or intestinal physiology."
+        },
+        {
+          "title": "Separate water movement from solute movement",
+          "body": "Osmosis concerns net water movement across a water-permeable boundary. With equal initial hydrostatic pressures, water tends toward the side containing more effectively non-penetrating solute; water can cross many cell membranes through aquaporins as well as the lipid phase.\n\nOsmolarity counts dissolved particles per litre of solution. Tonicity predicts the sustained effect on cell volume and depends on which solutes cross the particular membrane and on the time considered. Equal total osmolarity need not mean equal tonicity. State permeability, pressure and time assumptions before predicting whether a cell swells or shrinks."
         }
       ],
       "question": {
@@ -2570,16 +2578,57 @@
         "answer": "ATP powers the sodium–potassium pump, which maintains a low intracellular sodium concentration. Sodium then enters through a cotransporter down its electrochemical gradient, providing energy for coupled glucose uptake."
       },
       "related": [
-        "membrane-potentials",
-        "protein-trafficking"
+        "physiology-membrane-foundations",
+        "biophysics-membrane-foundations",
+        "membrane-potentials"
       ],
       "tags": [
         "Cellular physiology and muscle",
         "physiology",
         "guided revision"
       ],
-      "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "minutes": 16,
+      "updatedAt": "2026-10-02",
+      "objectives": [
+        "Identify the driving force and membrane pathway for a specified neutral solute or ion.",
+        "Distinguish channel flow, facilitated diffusion, primary active transport and secondary active transport by energy coupling.",
+        "Trace the separate apical and basolateral steps of a simplified absorptive epithelial pathway.",
+        "Predict water and solute movement with explicit permeability and pressure assumptions."
+      ],
+      "prerequisites": [
+        "physiology-membrane-foundations",
+        "biophysics-membrane-foundations"
+      ],
+      "workedExample": {
+        "title": "Worked example: a gradient is not a route",
+        "prompt": "A model cell has more of a neutral solute outside than inside. Its membrane is initially impermeable to that solute. A passive carrier is then inserted, with no ATP use or coupled ion movement. Predict net movement before and just after insertion.",
+        "solution": [
+          "Before insertion, the concentration difference exists but appreciable membrane flux is blocked by the stipulated impermeability.",
+          "After insertion, the carrier provides a pathway; net solute movement is inward, down its concentration gradient.",
+          "This is facilitated diffusion, not active transport. As concentrations approach balance, net flux falls; individual molecules need not stop moving."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why can the concentration gradient alone fail to predict the direction of Na⁺ through an open channel?",
+          "answer": "Na⁺ is charged, so its electrochemical gradient combines concentration and voltage. Specify membrane potential and the Na⁺ equilibrium tendency before predicting net channel flow."
+        },
+        {
+          "prompt": "Where is ATP hydrolysed in a simplified sodium-coupled glucose uptake pathway?",
+          "answer": "The basolateral sodium–potassium ATPase directly hydrolyses ATP to maintain the Na⁺ gradient. The apical sodium–glucose cotransporter uses that stored gradient energy and does not hydrolyse ATP directly."
+        },
+        {
+          "prompt": "Why might an isosmotic external solution change cell volume?",
+          "answer": "A permeating solute can redistribute across the membrane. Tonicity depends on effectively non-penetrating solutes over the specified time, not only on the initial total particle concentration."
+        }
+      ],
+      "summaryChecklist": [
+        "Name the solute, compartments, pathway and driving force.",
+        "For ions, account for both electrical and concentration forces.",
+        "Locate direct ATP consumption and distinguish it from gradient-coupled transport.",
+        "Trace apical entry and basolateral exit as separate epithelial steps.",
+        "State the membrane, pressure and time assumptions for an osmotic prediction."
+      ]
     },
     {
       "id": "muscle-contraction",

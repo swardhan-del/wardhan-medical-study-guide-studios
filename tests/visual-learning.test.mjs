@@ -14,7 +14,8 @@ test('every public resource has a visual decision and every new visual has valid
   assert.doesNotThrow(()=>validateVisualLearning(data));
   assert.equal(data.audit.length, 261);
   assert.equal(data.lessons.length, 241);
-  assert.equal(data.visuals.length, 41);
+  assert.equal(data.visuals.length, 42);
+  assert(data.visuals.some(v => v.id === 'membrane-pathway-decisions' && v.lessonIds.includes('fluid-and-membrane-transport')));
 });
 test('visual validation rejects missing descriptions, invalid row shapes, sources, rights and stale audit records', () => {
   for (const mutate of [d=>{d.visuals[0].alt='';},d=>{d.visuals[0].rows[0].pop();},d=>{d.visuals[0].referenceIds=['unknown'];},d=>{d.figures[0].publicApproval='';},d=>{d.audit.pop();},d=>{d.audit[0].figureIds=[];}]) {
