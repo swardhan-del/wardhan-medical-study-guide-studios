@@ -27,6 +27,8 @@ Seven existing routes are expanded. The new somatosensory route fills a sequence
 
 The total addition is 24 explained application questions, one new concept question, and 13 original selectable-text visual layouts including the imported batch. The existing 148 public asset files and 12 released figures are unchanged. No new audio, video, commercial feature or raw-source route is created.
 
+Hosted verification also exposed two existing UI/runtime edge cases: a question fieldset could overflow at 320 CSS pixels with enlarged text after fonts loaded, and optional measurement configuration could follow a protected-preview authentication redirect. The continuation lets question text shrink/wrap and rejects measurement redirects while retaining omitted credentials, consent requirements and disabled-on-failure behaviour. Regression tests cover both. The Vercel feedback toolbar is disabled only for this preview branch; the application CSP and production settings are unchanged.
+
 ## Source-consistency work and limits
 
 Public bibliographies appear in each lesson's About panel and source section. References are concept support, not permission to reproduce a publisher's text or artwork. New explanations are independently worded; numerical and localisation examples are explicitly hypothetical.

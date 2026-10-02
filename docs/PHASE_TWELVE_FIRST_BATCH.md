@@ -1,5 +1,7 @@
 # Phase 12 conversion checkpoint — membrane transport
 
+Historical first-batch record preserved from the supplied patch. The remaining seven drafts and subsequent browser verification are documented in [CODEX_HANDOFF.md](CODEX_HANDOFF.md) and [PHASE_TWELVE_REVIEW.md](PHASE_TWELVE_REVIEW.md).
+
 Date: 2026-10-02. This is the first bounded conversion from the private eight-topic planning queue. It upgrades the existing `/library/fluid-and-membrane-transport` lesson rather than creating a competing route. The existing concept-question ID, correct answer position, route and saved-progress schema remain unchanged.
 
 ## What was adapted
