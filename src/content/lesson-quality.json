@@ -5,9 +5,9 @@
       "lessonId": "fluid-and-membrane-transport",
       "title": "Cell transport: follow the energy",
       "subject": "physiology",
-      "topic": "cell membrane transport",
+      "topic": "Cell transport: follow the energy",
       "slug": "fluid-and-membrane-transport",
-      "learnerLevel": "early medical and biomedical science",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
       "objectives": [
         "Identify the driving force and membrane pathway for a specified neutral solute or ion.",
         "Distinguish channel flow, facilitated diffusion, primary active transport and secondary active transport by energy coupling.",
@@ -16,24 +16,24 @@
       ],
       "sources": [
         {
-          "title": "Anatomy and Physiology 2e, 3.1 The Cell Membrane",
+          "title": "Anatomy and Physiology 2e §3.1: The Cell Membrane",
           "publisherOrAuthor": "OpenStax",
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-1-the-cell-membrane",
           "accessedAt": "2026-10-02",
           "sourceType": "textbook"
         },
         {
-          "title": "Anatomy and Physiology 2e, 26.1 Body Fluids and Fluid Compartments",
+          "title": "Anatomy and Physiology 2e §26.1: Body Fluids and Fluid Compartments",
           "publisherOrAuthor": "OpenStax",
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/26-1-body-fluids-and-fluid-compartments",
           "accessedAt": "2026-10-02",
           "sourceType": "textbook"
         }
       ],
-      "contentStatus": "draft",
+      "contentStatus": "medical-review-pending",
       "visualStatus": "rights-review-pending",
       "visualRequired": true,
-      "visualNotes": "Original text comparison prepared for this lesson; scientific and release review pending. No supplied image imported.",
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
       "assessmentStatus": "explanations-complete",
       "accessibilityStatus": "pending",
       "readabilityStatus": "pending",
@@ -41,8 +41,9 @@
       "lastReviewedAt": null,
       "nextReviewAt": null,
       "limitations": [
-        "Simplified cell and epithelial models; pathway expression varies by tissue.",
-        "Independent clinical, editorial and visual sign-off remain pending."
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance."
       ],
       "reviewEvidenceIds": [],
       "links": {
@@ -51,6 +52,8 @@
           "biophysics-membrane-foundations"
         ],
         "related": [
+          "physiology-membrane-foundations",
+          "biophysics-membrane-foundations",
           "membrane-potentials"
         ],
         "compare": [
@@ -58,6 +61,502 @@
         ],
         "next": [
           "membrane-potentials"
+        ]
+      }
+    },
+    {
+      "lessonId": "membrane-potentials",
+      "title": "Resting potential and the action potential",
+      "subject": "physiology",
+      "topic": "Resting potential and the action potential",
+      "slug": "membrane-potentials",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Interpret inside-minus-outside voltage without confusing millivolts with ion concentration.",
+        "Predict the initial effect of changing a selective conductance with fixed ion gradients.",
+        "Distinguish a maintained resting state from equilibrium of one ion.",
+        "Calculate a passive voltage change at one time constant or one length constant."
+      ],
+      "sources": [
+        {
+          "title": "Anatomy and Physiology 2e §12.4: The Action Potential",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "MetaNeuron: A Free Neuron Simulation Program for Teaching Cellular Neurophysiology (2013), lessons 1–3",
+          "publisherOrAuthor": "Mark H. Newman and Eric A. Newman",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3852865/",
+          "accessedAt": "2026-10-02",
+          "sourceType": "research"
+        },
+        {
+          "title": "Molecular Biology of the Cell, 4th ed.: Ion Channels and the Electrical Properties of Membranes",
+          "publisherOrAuthor": "Alberts et al.; Garland Science",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK26910/",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "fluid-and-membrane-transport"
+        ],
+        "related": [
+          "muscle-histology",
+          "cell-junctions",
+          "cell-signaling",
+          "biophysics-resting-potential",
+          "biophysics-action-potentials"
+        ],
+        "compare": [
+          "biophysics-resting-potential"
+        ],
+        "next": [
+          "biophysics-action-potentials"
+        ]
+      }
+    },
+    {
+      "lessonId": "biophysics-action-potentials",
+      "title": "Action potentials and impulse propagation",
+      "subject": "biophysics",
+      "topic": "Action potentials and impulse propagation",
+      "slug": "biophysics-action-potentials",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Explain activation, inactivation and recovery in a typical neuronal sodium channel.",
+        "Distinguish absolute and relative refractoriness using channel availability.",
+        "Trace passive local current and regenerative membrane excitation during propagation.",
+        "Compare neuronal, ventricular and nodal action potentials without treating one waveform as universal."
+      ],
+      "sources": [
+        {
+          "title": "Anatomy and Physiology 2e §12.4: The Action Potential",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Anatomy and Physiology 2e §19.2: Cardiac Muscle and Electrical Activity",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "membrane-potentials"
+        ],
+        "related": [
+          "biophysics-resting-potential",
+          "biophysics-ultrasound",
+          "synaptic-integration",
+          "myelin-and-glial-cells"
+        ],
+        "compare": [
+          "membrane-potentials"
+        ],
+        "next": [
+          "synaptic-integration"
+        ]
+      }
+    },
+    {
+      "lessonId": "synaptic-integration",
+      "title": "Neural integration: from release to a response",
+      "subject": "physiology",
+      "topic": "Neural integration: from release to a response",
+      "slug": "synaptic-integration",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Order the events from presynaptic excitation to postsynaptic response and transmitter removal.",
+        "Distinguish ionotropic, metabotropic and electrical transmission.",
+        "Explain temporal summation, spatial summation and shunting inhibition.",
+        "Use a controlled hypothetical experiment to distinguish a release-side problem from postsynaptic responsiveness."
+      ],
+      "sources": [
+        {
+          "title": "Anatomy and Physiology 2e §12.5: Communication Between Neurons",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Neuroscience, 2nd ed. (2001): Chemical Synapses",
+          "publisherOrAuthor": "Purves et al.; Sinauer Associates",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11009/",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Virtual leak channels modulate firing dynamics and synaptic integration in rat sympathetic neurons (2015)",
+          "publisherOrAuthor": "Springer et al.; The Journal of Physiology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4398523/",
+          "accessedAt": "2026-10-02",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "membrane-potentials",
+          "biophysics-action-potentials"
+        ],
+        "related": [
+          "membrane-potentials",
+          "cell-signaling",
+          "muscle-contraction",
+          "somatosensory-pathways"
+        ],
+        "compare": [
+          "muscle-contraction"
+        ],
+        "next": [
+          "muscle-contraction",
+          "somatosensory-pathways"
+        ]
+      }
+    },
+    {
+      "lessonId": "muscle-contraction",
+      "title": "Three muscle types, three calcium stories",
+      "subject": "physiology",
+      "topic": "Three muscle types, three calcium stories",
+      "slug": "muscle-contraction",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Distinguish the graded end-plate potential from a propagated muscle action potential.",
+        "Trace a signal through the skeletal triad to SR calcium release and troponin activation.",
+        "Explain ATP use in myosin detachment, cycling and calcium reuptake.",
+        "Compare skeletal, cardiac and smooth-muscle calcium regulation."
+      ],
+      "sources": [
+        {
+          "title": "Anatomy and Physiology 2e §10.2: Skeletal Muscle",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Anatomy and Physiology 2e §10.3: Muscle Fiber Contraction and Relaxation",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "CaV1.1 voltage-sensing domain III exclusively controls skeletal muscle excitation-contraction coupling (2024)",
+          "publisherOrAuthor": "Nature Communications",
+          "url": "https://www.nature.com/articles/s41467-024-51809-5",
+          "accessedAt": "2026-10-02",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "synaptic-integration",
+          "muscle-histology"
+        ],
+        "related": [
+          "muscle-histology",
+          "cardiac-output",
+          "connective-tissue"
+        ],
+        "compare": [
+          "muscle-histology"
+        ],
+        "next": [
+          "cardiac-output"
+        ]
+      }
+    },
+    {
+      "lessonId": "connective-tissue",
+      "title": "Connective tissue and extracellular matrix",
+      "subject": "histology",
+      "topic": "Connective tissue and extracellular matrix",
+      "slug": "connective-tissue",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Distinguish connective-tissue cells from collagen, elastic fibres and ground substance.",
+        "Compare cartilage and bone using matrix organisation and cell–matrix relationships.",
+        "Relate white and brown adipocyte structure to storage and thermogenesis.",
+        "Justify a tissue identification using two independent clues and state a preparation limitation."
+      ],
+      "sources": [
+        {
+          "title": "Anatomy and Physiology 2e §4.3: Connective Tissue Supports and Protects",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Anatomy and Physiology 2e §6.3: Bone Structure",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-3-bone-structure",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Mitochondrial ROS regulate thermogenic energy expenditure and sulfenylation of UCP1 (2016)",
+          "url": "https://www.nature.com/articles/nature17399",
+          "publisherOrAuthor": "Nature",
+          "sourceType": "research",
+          "accessedAt": "2026-10-02"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance.",
+        "No specimen micrographs are supplied; the layouts cannot teach actual stain recognition."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "histology-foundations-tissues",
+          "epithelia"
+        ],
+        "related": [
+          "cartilage-bone",
+          "protein-structure",
+          "muscle-histology"
+        ],
+        "compare": [
+          "epithelia"
+        ],
+        "next": [
+          "cartilage-bone"
+        ]
+      }
+    },
+    {
+      "lessonId": "somatosensory-pathways",
+      "title": "Somatosensory pathways and thalamic integration",
+      "subject": "physiology",
+      "topic": "Somatosensory pathways and thalamic integration",
+      "slug": "somatosensory-pathways",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Trace body vibration and pain-temperature pathways with their relay and crossing sites.",
+        "Distinguish VPL body relays from VPM face relays in the principal sensory pathways.",
+        "Predict laterality in a hypothetical spinal lesion with stated side and level.",
+        "Explain why thalamic and cortical processing is more than a passive sensory cable."
+      ],
+      "sources": [
+        {
+          "title": "Anatomy and Physiology 2e §14.2: Central Processing",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-2-central-processing",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Neuroscience, 2nd ed. (2001): The Dorsal Column-Medial Lemniscus System",
+          "publisherOrAuthor": "Purves et al.; Sinauer Associates",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK11142/",
+          "accessedAt": "2026-10-02",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "The thalamic reticular nucleus of the adult rat: experimental anatomical studies (1985)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2413176/",
+          "publisherOrAuthor": "Journal of Anatomy",
+          "sourceType": "research",
+          "accessedAt": "2026-10-02"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "synaptic-integration",
+          "spinal-cord-tracts"
+        ],
+        "related": [
+          "trigeminal-pathways",
+          "basal-ganglia-diencephalon",
+          "brainstem-localization"
+        ],
+        "compare": [
+          "trigeminal-pathways"
+        ],
+        "next": [
+          "brainstem-localization"
+        ]
+      }
+    },
+    {
+      "lessonId": "genetics-genome-foundations",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "subject": "genetics",
+      "topic": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "slug": "genetics-genome-foundations",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Distinguish genome, chromosome, gene and allele.",
+        "Separate replication, transcription and translation.",
+        "Calculate offspring probabilities for a defined autosomal recessive cross.",
+        "Explain why DNA sequence and gene expression are different kinds of information.",
+        "Distinguish a sequence variant, a copy-number change and their clinical interpretation.",
+        "Explain why reference genomes and genetic tests have defined scope and limitations."
+      ],
+      "sources": [
+        {
+          "title": "Gene: Talking Glossary",
+          "publisherOrAuthor": "National Human Genome Research Institute",
+          "url": "https://www.genome.gov/genetics-glossary/Gene",
+          "accessedAt": "2026-10-02",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Human Genomic Variation",
+          "publisherOrAuthor": "National Human Genome Research Institute",
+          "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genomic-variation",
+          "accessedAt": "2026-10-02",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Variant of Uncertain Significance",
+          "publisherOrAuthor": "National Human Genome Research Institute",
+          "url": "https://www.genome.gov/genetics-glossary/Variant-of-Uncertain-Significance-VUS",
+          "accessedAt": "2026-10-02",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "MedlinePlus Genetics: What do the results of genetic tests mean?",
+          "url": "https://medlineplus.gov/genetics/understanding/testing/interpretingresults/",
+          "publisherOrAuthor": "National Library of Medicine",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-10-02"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "Original selectable-text teaching layouts prepared for preview. Independent scientific and release sign-off remain pending; no source images imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted drafting and source-consistency checks are not independent clinical review.",
+        "Preview adaptation only: independent clinical review, visual sign-off and production release approval remain pending.",
+        "Simplified teaching models and hypothetical examples; not patient-specific guidance."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [],
+        "related": [
+          "inheritance",
+          "meiosis",
+          "innate-adaptive",
+          "rna-processing",
+          "genetic-testing",
+          "dna-replication"
+        ],
+        "compare": [
+          "inheritance"
+        ],
+        "next": [
+          "genetic-testing"
         ]
       }
     }

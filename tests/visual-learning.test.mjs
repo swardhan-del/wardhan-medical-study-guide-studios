@@ -12,9 +12,9 @@ const content = name => read(`../src/content/${name}.json`);
 const data = { visuals: content('lesson-visuals').visuals, lessons: content('library-lessons').lessons, references: content('lesson-references'), figures: content('public-figures').figures, catalog: content('public-catalog').records, audit: read('../docs/visual-learning-audit.json').records };
 test('every public resource has a visual decision and every new visual has valid placements and references', () => {
   assert.doesNotThrow(()=>validateVisualLearning(data));
-  assert.equal(data.audit.length, 261);
-  assert.equal(data.lessons.length, 241);
-  assert.equal(data.visuals.length, 42);
+  assert.equal(data.audit.length, 262);
+  assert.equal(data.lessons.length, 242);
+  assert.equal(data.visuals.length, 54);
   assert(data.visuals.some(v => v.id === 'membrane-pathway-decisions' && v.lessonIds.includes('fluid-and-membrane-transport')));
 });
 test('visual validation rejects missing descriptions, invalid row shapes, sources, rights and stale audit records', () => {

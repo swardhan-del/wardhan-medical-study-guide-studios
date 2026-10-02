@@ -422,7 +422,7 @@
       "id": "connective-tissue",
       "subject": "histology",
       "title": "Connective tissue and extracellular matrix",
-      "summary": "Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior.",
+      "summary": "Compare connective tissue proper, cartilage, bone and adipose using cells, extracellular matrix and two independent structural clues, while recognising what a section cannot show.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
@@ -430,7 +430,7 @@
         "collagen",
         "extracellular matrix"
       ],
-      "source": "histology",
+      "source": "phase-twelve-connective-tissue",
       "section": "Connective Tissue Proper; Fibers and Ground Substance",
       "steps": [
         {
@@ -444,6 +444,22 @@
         {
           "title": "Read the fiber arrangement",
           "body": "Loose connective tissue provides flexible support beneath many epithelia. Dense regular tissue aligns collagen for tension mainly in one direction, as in tendon. Dense irregular tissue distributes collagen in multiple directions, helping structures such as dermis resist varied stresses."
+        },
+        {
+          "title": "Recognise cartilage by cells and matrix together",
+          "body": "Chondrocytes occupy lacunae within a substantial extracellular matrix. In hyaline cartilage, a hydrated proteoglycan-rich matrix supports compression while a collagen network helps restrain expansion. Routine staining does not necessarily reveal individual collagen fibrils; a smooth-looking matrix does not mean collagen is absent.\n\nElastic cartilage contains an elastic-fibre network as well as cartilage cells and matrix. Fibrocartilage combines rows or groups of chondrocytes with conspicuous collagen bundles. A tissue name needs the cell–matrix relationship, not just one round space. Normal cartilage is avascular; nutrient diffusion and the surrounding environment constrain its maintenance and repair."
+        },
+        {
+          "title": "Distinguish cartilage from bone",
+          "body": "Bone contains a mineralised extracellular matrix with collagen, osteocytes in lacunae and communicating canaliculi. Osteoblasts produce new matrix at surfaces, while osteoclasts resorb it. Compact bone can show osteons around vascular canals; trabecular bone forms plates and struts separated by marrow spaces. Not every piece of bone contains a complete osteon.\n\nLacunae occur in both cartilage and bone, so they are not sufficient alone for identification. Matrix organisation and vascular architecture supply independent clues. Decalcification removes mineral during specimen preparation; a decalcified section cannot directly demonstrate the original mineral density."
+        },
+        {
+          "title": "Compare white and brown adipose tissue",
+          "body": "Adipose is specialised, cell-rich connective tissue. A typical white adipocyte contains one large lipid droplet that displaces the nucleus towards the edge. White fat stores energy and participates in endocrine signalling; it is not merely inert packing. Routine paraffin processing often removes lipid, leaving apparently empty spaces rather than naturally empty cells.\n\nBrown adipocytes contain multiple smaller droplets and many mitochondria. Uncoupling protein 1 permits proton movement that supports heat production instead of coupling all of that gradient energy to ATP synthesis. A droplet pattern and cell architecture support a morphological comparison, but a routine section does not measure thermogenic activity or demonstrate a specific protein."
+        },
+        {
+          "title": "Use two clues and state the limits",
+          "body": "Start at low power: identify whether the tissue is dominated by cells, fibres, matrix or mineralised architecture. Then inspect cell shape and location relative to the matrix. Parallel collagen bundles together with slender fibroblast nuclei support dense regular connective tissue; chondrocytes in lacunae within a cartilage matrix support a different conclusion.\n\nStain, cutting plane, processing and sampling affect appearance. A single section cannot establish every cell’s identity, the exact biochemical composition or the function currently being performed. The comparisons here are original teaching layouts, not micrographs. No specimen image, stain or magnification is implied."
         }
       ],
       "question": {
@@ -473,8 +489,44 @@
         "protein-structure",
         "muscle-histology"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 5
+      "updatedAt": "2026-10-02",
+      "minutes": 20,
+      "objectives": [
+        "Distinguish connective-tissue cells from collagen, elastic fibres and ground substance.",
+        "Compare cartilage and bone using matrix organisation and cell–matrix relationships.",
+        "Relate white and brown adipocyte structure to storage and thermogenesis.",
+        "Justify a tissue identification using two independent clues and state a preparation limitation."
+      ],
+      "prerequisites": [
+        "histology-foundations-tissues",
+        "epithelia"
+      ],
+      "workedExample": {
+        "title": "Worked identification: parallel bundles",
+        "prompt": "A fictional longitudinal section shows densely packed, predominantly parallel collagen bundles and elongated, flattened nuclei between them. No chondrocytes within lacunae are described. Which tissue family and subtype best fit, and what remains uncertain?",
+        "solution": [
+          "The prominent extracellular fibres identify a connective-tissue pattern rather than an epithelial sheet.",
+          "Parallel collagen bundles supply an architectural clue; slender intervening fibroblast nuclei supply a separate cellular clue. Together they support dense regular connective tissue.",
+          "Fibrocartilage would require positive evidence of chondrocytes in lacunae among collagen bundles; collagen alone does not establish it.",
+          "Tendon is a compatible anatomical example, but these observations alone do not prove the sampled organ, stain or exact collagen type."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why does a lacuna not distinguish cartilage from bone by itself?",
+          "answer": "Both tissues have cells occupying lacunae. The surrounding matrix, canaliculi, lamellar organisation and vascular relationships provide additional evidence. Preparation may obscure some of these features."
+        },
+        {
+          "prompt": "What can an empty-looking adipocyte space tell you in a paraffin section?",
+          "answer": "It can reflect lipid removed during processing. Cell outline and nuclear position remain useful, but the clear space is not evidence that the living cell contained no material or that lipid composition was measured."
+        }
+      ],
+      "summaryChecklist": [
+        "Distinguish connective-tissue cells from collagen, elastic fibres and ground substance.",
+        "Compare cartilage and bone using matrix organisation and cell–matrix relationships.",
+        "Relate white and brown adipocyte structure to storage and thermogenesis.",
+        "Justify a tissue identification using two independent clues and state a preparation limitation."
+      ]
     },
     {
       "id": "cartilage-bone",
@@ -2236,7 +2288,7 @@
       "id": "membrane-potentials",
       "subject": "physiology",
       "title": "Resting potential and the action potential",
-      "summary": "Connect ion gradients, selective permeability and channel timing to electrical signals.",
+      "summary": "Interpret membrane voltage, distinguish an ion equilibrium from a maintained resting state, and predict how a graded signal changes with time and distance.",
       "tags": [
         "Cellular physiology",
         "membrane",
@@ -2244,12 +2296,28 @@
         "action potential",
         "neurons"
       ],
-      "source": "cellular",
+      "source": "phase-twelve-membrane-potentials",
       "section": "Sections 1.5–1.6: Resting membrane and action potentials",
       "steps": [
         {
-          "title": "Create the resting voltage",
-          "body": "Concentration gradients and selective permeability determine membrane potential. In many resting excitable cells, potassium permeability strongly influences the voltage. The sodium–potassium pump maintains the gradients and also has a smaller direct electrogenic effect."
+          "title": "Define the recording before interpreting the number",
+          "body": "Membrane potential, Vₘ, means electrical potential inside minus outside. A reading of −70 mV therefore places the inside 70 mV below the outside; it is not a negative ion concentration. Depolarisation means movement towards a more positive membrane potential, so −60 mV is depolarised relative to −70 mV even though both are negative.\n\nOnly a tiny separation of charge near the membrane is needed to produce this voltage. The bulk fluids remain nearly electrically neutral. Millivolts measure voltage, whereas mmol/L measures concentration; one cannot be substituted for the other."
+        },
+        {
+          "title": "Separate equilibrium potential from resting potential",
+          "body": "An ion equilibrium potential, Eᵢₒₙ, is the voltage at which its electrical and concentration driving forces balance. In the ideal selective-channel model, that ion has zero net current at Eᵢₒₙ even though individual ions may cross in either direction. The Nernst relation uses the outside-to-inside concentration ratio, temperature and ionic charge; chloride has the opposite charge sign from potassium.\n\nA real resting cell is a maintained steady state involving several ions and transport processes. It need not place every ion at equilibrium. In many neurons, resting potassium permeability is relatively high, so Vₘ lies closer to E_K than to E_Na. Increasing one conductance initially pulls voltage towards that conductance’s reversal potential, provided the gradients and other conditions are specified."
+        },
+        {
+          "title": "Predict current with explicit signs",
+          "body": "For a roughly ohmic selective conductance, Iᵢₒₙ = gᵢₒₙ(Vₘ − Eᵢₒₙ). With outward positive current defined as positive, an illustrative K⁺ channel at Vₘ = −70 mV and E_K = −90 mV carries outward positive current. Increasing its conductance initially tends to make the cell more negative. Opening more channels does not itself change E_K while concentrations remain fixed.\n\nThe sodium–potassium pump maintains the ion gradients and exports one net positive charge per cycle. Its contribution is not a universal percentage of resting voltage. Stopping the pump and opening a channel are different perturbations with different time courses."
+        },
+        {
+          "title": "Follow a graded signal through a passive membrane",
+          "body": "A small subthreshold perturbation can spread electrotonically: local current changes nearby voltage without a self-renewing spike. Its amplitude depends on the input and decreases with distance as current leaks across the membrane. In a uniform passive cable at steady state, ΔV(x) = ΔV(0) exp(−x/λ). The length constant λ is the distance at which about 37% of the initial change remains.\n\nThis equation is an ideal steady-state relationship, not a speed of conduction. Branching, active channels and changing conductances can alter real dendritic responses. A signal measured farther away can be smaller without implying that the original stimulus was weaker."
+        },
+        {
+          "title": "Distinguish charging time from spread distance",
+          "body": "For a passive single-compartment membrane, τ = RC when resistance and capacitance refer to the same membrane area. Following a maintained current step, the voltage change reaches about 63% of its final value after one time constant. After current ends, a simple decay retains about 37% of its starting change after one τ.\n\nA longer time constant prolongs a response and can increase overlap between closely timed inputs. More open leak channels lower resistance; with capacitance unchanged, τ falls. Always distinguish the rising step response from the falling response, and time in milliseconds from distance in millimetres."
         },
         {
           "title": "Cross threshold",
@@ -2285,10 +2353,47 @@
       "related": [
         "muscle-histology",
         "cell-junctions",
-        "cell-signaling"
+        "cell-signaling",
+        "biophysics-resting-potential",
+        "biophysics-action-potentials"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-10-02",
+      "minutes": 18,
+      "objectives": [
+        "Interpret inside-minus-outside voltage without confusing millivolts with ion concentration.",
+        "Predict the initial effect of changing a selective conductance with fixed ion gradients.",
+        "Distinguish a maintained resting state from equilibrium of one ion.",
+        "Calculate a passive voltage change at one time constant or one length constant."
+      ],
+      "prerequisites": [
+        "fluid-and-membrane-transport"
+      ],
+      "workedExample": {
+        "title": "Worked example: one time constant, two different readings",
+        "prompt": "A passive model starts at −70 mV. A maintained current would eventually depolarise it by 10 mV, with τ = 20 ms. What is its approximate voltage after 20 ms? Compare this with a separate 10 mV response decaying for 20 ms.",
+        "solution": [
+          "The rising response reaches 10 × (1 − exp(−1)) ≈ 6.3 mV of its final change.",
+          "Add the change to the starting voltage: −70 + 6.3 ≈ −63.7 mV. The time constant is not the time to reach the final voltage.",
+          "For the separate decay, 10 × exp(−1) ≈ 3.7 mV remains after 20 ms. Rising and falling responses use different fractions.",
+          "These are calculated passive-model values, not recordings or universal neuronal measurements."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why does a resting cell need energy if its voltage is approximately steady?",
+          "answer": "A steady voltage does not mean every ion is at equilibrium. Passive leaks can continue while ATP-dependent transport sustains the gradients. Without that maintenance the concentrations and eventually the voltage change."
+        },
+        {
+          "prompt": "How do a length constant and a time constant answer different questions?",
+          "answer": "The length constant describes spatial attenuation in a specified passive cable; the time constant describes membrane charging or decay over time. Neither alone specifies action-potential conduction speed."
+        }
+      ],
+      "summaryChecklist": [
+        "Interpret inside-minus-outside voltage without confusing millivolts with ion concentration.",
+        "Predict the initial effect of changing a selective conductance with fixed ion gradients.",
+        "Distinguish a maintained resting state from equilibrium of one ion.",
+        "Calculate a passive voltage change at one time constant or one length constant."
+      ]
     },
     {
       "id": "cardiac-output",
@@ -2531,7 +2636,7 @@
       "subject": "physiology",
       "title": "Cell transport: follow the energy",
       "summary": "Trace a substance from one side of a cell membrane to the other: identify its pathway and driving force, then follow the energy used by pumps and coupled transporters.",
-      "source": "guide-cellular",
+      "source": "phase-twelve-fluid-and-membrane-transport",
       "section": "Sections 1.1–1.2: fluid compartments, tonicity and membrane transport",
       "steps": [
         {
@@ -2634,10 +2739,26 @@
       "id": "muscle-contraction",
       "subject": "physiology",
       "title": "Three muscle types, three calcium stories",
-      "summary": "Compare how skeletal, cardiac and smooth muscle convert a calcium signal into force, and explain why their responses differ.",
-      "source": "guide-cellular",
+      "summary": "Follow a motor-nerve signal through the end plate, T tubules, calcium release and cross-bridge cycle, then compare skeletal coupling with cardiac and smooth muscle.",
+      "source": "phase-twelve-muscle-contraction",
       "section": "Sections on skeletal, cardiac and smooth muscle excitation–contraction coupling",
       "steps": [
+        {
+          "title": "Cross the neuromuscular junction",
+          "body": "A motor-nerve action potential opens presynaptic voltage-gated calcium channels. Calcium entry triggers acetylcholine release; acetylcholine binds muscle-type nicotinic receptors at the motor end plate. These receptors conduct cations. At a negative resting potential, the net current is inward and depolarises the end plate.\n\nThe end-plate potential is local and graded. If it depolarises adjacent excitable membrane sufficiently, voltage-gated sodium channels generate a muscle action potential. Healthy adult transmission normally has a safety factor: one nerve action potential usually triggers one muscle action potential. The two electrical events nevertheless have different mechanisms."
+        },
+        {
+          "title": "Carry excitation into the fibre",
+          "body": "The muscle action potential travels over the sarcolemma and into transverse, or T, tubules. A skeletal-muscle triad consists of a T tubule flanked by two terminal cisternae of the sarcoplasmic reticulum (SR). The T-tubule membrane and SR membrane are distinct boundaries.\n\nIn adult mammalian skeletal muscle, the CaV1.1 voltage sensor, also called the dihydropyridine receptor, is functionally coupled to RyR1 calcium-release channels in the SR. Depolarisation thereby releases stored calcium into the cytosol. Do not transfer the cardiac requirement for trigger calcium entry directly to this skeletal coupling mechanism."
+        },
+        {
+          "title": "Turn the calcium signal into force",
+          "body": "Cytosolic calcium binds troponin C, changing the thin-filament regulatory complex so that myosin can interact with actin. ATP binding detaches myosin from actin; ATP hydrolysis supports re-cocking, and product-release transitions are coupled to force generation. ATP is therefore required for orderly cycling, not merely for switching contraction on.\n\nA sarcomere runs between two Z discs. During shortening the discs approach, the I band and H zone narrow, and the A-band length stays approximately constant. Actin and myosin filaments slide past one another; the filaments themselves do not shorten. Force can also develop without whole-muscle shortening when the external load is held fixed."
+        },
+        {
+          "title": "Relax by removing the activating signal",
+          "body": "Acetylcholinesterase helps terminate the end-plate signal. As excitation ends, SR calcium release falls and the sarco/endoplasmic-reticulum calcium ATPase (SERCA) pumps calcium from the cytosol back into the SR. Calcium dissociates from troponin as cytosolic levels fall, allowing the thin-filament regulatory constraint to return.\n\nRelaxation is not simply ATP depletion. Loss of ATP would impair calcium reuptake and actin–myosin detachment. In the normal sequence, energy supports both contraction cycles and restoration of the low resting cytosolic calcium concentration."
+        },
         {
           "title": "Skeletal muscle: activate the thin filament",
           "body": "At the neuromuscular junction, acetylcholine produces an end-plate depolarisation that can initiate a muscle action potential. In skeletal muscle, the T-tubule voltage sensor couples to sarcoplasmic-reticulum calcium release. Calcium binds troponin C, moving the tropomyosin constraint on actin–myosin interaction. ATP supports cross-bridge cycling and calcium reuptake."
@@ -2649,6 +2770,10 @@
         {
           "title": "Smooth muscle: regulate myosin",
           "body": "Smooth muscle uses calcium–calmodulin to activate myosin light-chain kinase. Phosphorylation of myosin supports interaction with actin; myosin light-chain phosphatase favours relaxation. Smooth muscle lacks the troponin switch used in striated muscle. Stretch, local signals and autonomic input can regulate force, sometimes without a full action potential."
+        },
+        {
+          "title": "Distinguish electrical events from whole-muscle force",
+          "body": "The electrical action potential in a skeletal fibre is much briefer than the mechanical twitch. Repeated excitation can therefore raise force through temporal summation before relaxation is complete. Whole-muscle force also increases when additional motor units are recruited.\n\nThese mechanisms do not require each action potential in one fibre to become taller. Initial sarcomere length, load, fatigue and stimulation pattern also matter. The lesson establishes mechanisms; it does not provide exercise prescriptions or treatment instructions."
         }
       ],
       "question": {
@@ -2675,15 +2800,52 @@
       },
       "related": [
         "muscle-histology",
-        "cardiac-output"
+        "cardiac-output",
+        "connective-tissue"
       ],
       "tags": [
         "Cellular physiology and muscle",
         "physiology",
         "guided revision"
       ],
-      "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "minutes": 22,
+      "updatedAt": "2026-10-02",
+      "objectives": [
+        "Distinguish the graded end-plate potential from a propagated muscle action potential.",
+        "Trace a signal through the skeletal triad to SR calcium release and troponin activation.",
+        "Explain ATP use in myosin detachment, cycling and calcium reuptake.",
+        "Compare skeletal, cardiac and smooth-muscle calcium regulation."
+      ],
+      "prerequisites": [
+        "synaptic-integration",
+        "muscle-histology"
+      ],
+      "workedExample": {
+        "title": "Worked example: excitation without calcium release",
+        "prompt": "In a hypothetical skeletal fibre, end-plate transmission and the T-tubule action potential remain normal, but coupling from the voltage sensor to RyR1 is selectively disrupted. Predict the immediate consequence, assuming the SR stores calcium normally.",
+        "solution": [
+          "The nerve-to-muscle electrical sequence can still occur because end-plate receptors and voltage-gated sodium channels are stipulated to work.",
+          "The disruption is between T-tubule depolarisation and release from the SR, so the normal cytosolic calcium rise is reduced.",
+          "Less troponin C activation means fewer thin-filament sites become available for force-producing interactions.",
+          "The predicted force reduction does not establish a transmitter deficiency, ATP depletion or empty SR stores; those explanations contradict the stated experimental controls."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why is an end-plate potential not the same as a muscle action potential?",
+          "answer": "The end-plate potential reflects local ligand-gated cation conductance and varies with transmitter action. It can trigger a separate regenerative voltage-gated sodium response in adjacent membrane of the same fibre."
+        },
+        {
+          "prompt": "Why does stopping ATP production not produce normal relaxation?",
+          "answer": "ATP supports calcium reuptake by SERCA and myosin detachment from actin. Depletion impairs these processes rather than reproducing the controlled fall in cytosolic calcium of normal relaxation."
+        }
+      ],
+      "summaryChecklist": [
+        "Distinguish the graded end-plate potential from a propagated muscle action potential.",
+        "Trace a signal through the skeletal triad to SR calcium release and troponin activation.",
+        "Explain ATP use in myosin detachment, cycling and calcium reuptake.",
+        "Compare skeletal, cardiac and smooth-muscle calcium regulation."
+      ]
     },
     {
       "id": "autonomic-signalling",
@@ -3188,8 +3350,8 @@
       "id": "synaptic-integration",
       "subject": "physiology",
       "title": "Neural integration: from release to a response",
-      "summary": "Follow chemical transmission across a synapse, then explain how a neuron combines excitatory and inhibitory inputs.",
-      "source": "guide-nervous",
+      "summary": "Trace transmitter release, receptor action and signal termination, then explain how synapses combine inputs without assuming that every input triggers a spike.",
+      "source": "phase-twelve-synaptic-integration",
       "section": "Section 8.1: chemical synapses, postsynaptic potentials and summation",
       "steps": [
         {
@@ -3203,6 +3365,22 @@
         {
           "title": "Combine inputs in time and space",
           "body": "Temporal summation combines inputs arriving close together in time. Spatial summation combines inputs from different locations. Dendritic filtering, synapse position and inhibitory conductance shape the result. An action potential is generated when the combined effect reaches the relevant threshold; a single postsynaptic potential need not cause a spike."
+        },
+        {
+          "title": "Compare electrical and chemical connections",
+          "body": "At an electrical synapse, gap-junction channels provide a direct route for current between cells. Transmission can be very fast and is often bidirectional, although some junctions rectify. A chemical synapse instead requires presynaptic release and a postsynaptic receptor response, introducing additional delay and opportunities for regulation.\n\nFor a typical fast chemical synapse, distinguish vesicle docking and priming from the calcium-triggered fusion event. Receptors are on the responding membrane; calcium entering the releasing terminal is not itself the neurotransmitter that crosses the cleft."
+        },
+        {
+          "title": "Separate receptor identity from the effect",
+          "body": "An ionotropic receptor is a ligand-gated channel complex. A metabotropic receptor changes intracellular signalling, which can alter channels and other targets. The same transmitter can act through different receptor types in different cells, so its name alone does not determine excitation or inhibition.\n\nA conductance tends to draw voltage towards its reversal potential. An inhibitory conductance near resting voltage can reduce the voltage response to an excitatory current without a large hyperpolarisation: this is shunting inhibition. Real synaptic integration therefore is not always simple addition and subtraction of fixed voltage increments."
+        },
+        {
+          "title": "End the signal and reset the pathway",
+          "body": "Transmitter action ends through diffusion, uptake into cells, enzymatic breakdown, or combinations of these mechanisms. Which route dominates depends on the transmitter and synapse. Vesicle membrane is recycled, and a new supply of transmitter must become available for further release.\n\nA postsynaptic response can fail because of a release defect, receptor problem or altered driving force. A useful experiment isolates the stage: if externally applied transmitter still evokes a response while nerve stimulation does not, the postsynaptic machinery is at least capable of responding. That observation alone does not identify a particular molecular defect."
+        },
+        {
+          "title": "Compare ordinary central synapses with the motor end plate",
+          "body": "A central nervous system neuron often combines many graded excitatory and inhibitory inputs before firing. Timing, location, membrane conductance and channel state all affect the result. It is the graded responses that overlap; separate all-or-none action potentials do not add into one taller action potential.\n\nAt a healthy adult neuromuscular junction, one motor-nerve action potential normally releases enough acetylcholine to produce an end-plate potential above the muscle-fibre firing requirement. This safety factor differs from a typical small central excitatory input. It does not make the end-plate potential itself all-or-none."
         }
       ],
       "question": {
@@ -3229,15 +3407,53 @@
       },
       "related": [
         "membrane-potentials",
-        "cell-signaling"
+        "cell-signaling",
+        "muscle-contraction",
+        "somatosensory-pathways"
       ],
       "tags": [
         "Nervous system and special senses",
         "physiology",
         "guided revision"
       ],
-      "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "minutes": 18,
+      "updatedAt": "2026-10-02",
+      "objectives": [
+        "Order the events from presynaptic excitation to postsynaptic response and transmitter removal.",
+        "Distinguish ionotropic, metabotropic and electrical transmission.",
+        "Explain temporal summation, spatial summation and shunting inhibition.",
+        "Use a controlled hypothetical experiment to distinguish a release-side problem from postsynaptic responsiveness."
+      ],
+      "prerequisites": [
+        "membrane-potentials",
+        "biophysics-action-potentials"
+      ],
+      "workedExample": {
+        "title": "Worked example: isolate a transmission failure",
+        "prompt": "In a hypothetical preparation, a presynaptic action potential arrives normally, but calcium entry is selectively prevented. No postsynaptic response follows. Applying the transmitter directly still produces a normal postsynaptic response.",
+        "solution": [
+          "The arriving action potential shows that conduction to the terminal occurred in this experiment.",
+          "Blocking the local calcium trigger prevents normal rapid vesicle release, explaining the failed nerve-evoked response.",
+          "The direct-transmitter response shows that the postsynaptic receptors and downstream response can function under the tested conditions.",
+          "This isolates the release stage in the stated model; it does not diagnose a patient or prove that every other presynaptic process is normal."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Can inhibition occur without making the resting membrane much more negative?",
+          "answer": "Yes. A conductance with a reversal potential near rest can lower input resistance and reduce the depolarisation caused by excitatory input. This shunting effect need not produce a large baseline voltage shift."
+        },
+        {
+          "prompt": "What assumptions are needed before adding two postsynaptic voltage changes?",
+          "answer": "Specify where and when they are measured and assume a passive, approximately linear membrane with unchanged driving forces and conductances. Real receptor currents and dendritic properties can violate that approximation."
+        }
+      ],
+      "summaryChecklist": [
+        "Order the events from presynaptic excitation to postsynaptic response and transmitter removal.",
+        "Distinguish ionotropic, metabotropic and electrical transmission.",
+        "Explain temporal summation, spatial summation and shunting inhibition.",
+        "Use a controlled hypothetical experiment to distinguish a release-side problem from postsynaptic responsiveness."
+      ]
     },
     {
       "id": "special-senses",
@@ -5945,7 +6161,7 @@
       "id": "biophysics-action-potentials",
       "subject": "biophysics",
       "title": "Action potentials and impulse propagation",
-      "summary": "Separate regenerative signalling from passive current spread.",
+      "summary": "Follow channel activation, inactivation and recovery; compare local current spread with regeneration, and distinguish neuronal spikes from cardiac waveforms.",
       "tags": [
         "Membranes and ultrasound",
         "Biophysics",
@@ -5955,7 +6171,7 @@
         "propagation",
         "channels"
       ],
-      "source": "biophysics",
+      "source": "phase-twelve-biophysics-action-potentials",
       "section": "Biophysics II, topic 27; combined theory prompts 227–231",
       "steps": [
         {
@@ -5965,6 +6181,10 @@
         {
           "title": "Follow recovery",
           "body": "Sodium-channel inactivation and delayed outward potassium current help repolarise a typical axon. Refractoriness reflects channel state and conductances: during an absolute refractory interval, another normal spike cannot be triggered; during a relative interval, excitability is reduced. It is not simply that all ions have been used up."
+        },
+        {
+          "title": "Use channel states to explain the waveform",
+          "body": "In the illustrative neuronal Na⁺-spike model, a voltage-gated sodium channel can be available but closed, open during activation, or inactivated and temporarily unavailable. Repolarisation allows recovery from inactivation. A closed available channel and an inactivated channel are therefore not equivalent.\n\nDuring the upstroke, net inward current dominates. As sodium channels inactivate and potassium conductance rises, net outward current repolarises the membrane. Persisting potassium conductance can produce an after-hyperpolarisation. These overlapping processes are not a rigid sequence in which every sodium channel shuts before any potassium channel opens."
         },
         {
           "title": "Explain propagation",
@@ -5977,6 +6197,14 @@
         {
           "title": "Connect to recording",
           "body": "An intracellular voltage and a surface extracellular potential are different measurements. Surface signals depend on spatial current distributions, orientation and volume conduction. Stronger stimulation often changes recruitment or firing rate rather than increasing the height of each all-or-none spike in one healthy axon."
+        },
+        {
+          "title": "Compare cells before transferring the model",
+          "body": "A typical neuronal axon and adult skeletal-muscle fibre use a rapid Na⁺-dependent upstroke. Working ventricular myocytes also have a fast Na⁺ upstroke, followed by a plateau involving inward Ca²⁺ current balanced against outward currents. Their long refractory period limits repeated excitation during contraction.\n\nSinoatrial nodal pacemaker cells have an unstable diastolic potential and a largely Ca²⁺-dependent upstroke. They must not be labelled as ordinary ventricular working cells. Smooth-muscle excitability varies by tissue and can involve calcium spikes or graded activity. No one duration, threshold or waveform applies to all excitable cells."
+        },
+        {
+          "title": "Reason about a channel perturbation",
+          "body": "In a hypothetical axon with unchanged resting gradients, reducing available voltage-gated sodium channels can reduce the inward current available for regeneration. A depolarisation that previously triggered a propagating spike may then fail. The immediate explanation is reduced regenerative capacity, not instant disappearance of all sodium from the cell.\n\nAll-or-none describes the regenerative response under given conditions; it does not guarantee an identical waveform when temperature, ion gradients or channel availability change. In an axon stimulated experimentally in its middle, propagation can proceed in both directions if both sides are excitable. Normal forward progression reflects the initiation site and the recent refractory history behind the wave."
         }
       ],
       "question": {
@@ -6003,10 +6231,47 @@
       },
       "related": [
         "biophysics-resting-potential",
-        "biophysics-ultrasound"
+        "biophysics-ultrasound",
+        "synaptic-integration",
+        "myelin-and-glial-cells"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 8
+      "updatedAt": "2026-10-02",
+      "minutes": 20,
+      "objectives": [
+        "Explain activation, inactivation and recovery in a typical neuronal sodium channel.",
+        "Distinguish absolute and relative refractoriness using channel availability.",
+        "Trace passive local current and regenerative membrane excitation during propagation.",
+        "Compare neuronal, ventricular and nodal action potentials without treating one waveform as universal."
+      ],
+      "prerequisites": [
+        "membrane-potentials"
+      ],
+      "workedExample": {
+        "title": "Worked example: conduction across a weak segment",
+        "prompt": "A hypothetical axon has a short region with too few available voltage-gated sodium channels to regenerate a spike. A normal action potential approaches that region. Explain what may happen without assuming an exact conduction speed.",
+        "solution": [
+          "Current from the approaching spike can still spread passively into the affected region.",
+          "If that depolarisation cannot recruit sufficient inward current, the region does not generate a full local action potential.",
+          "Current reaching membrane beyond the region may be too small to reach threshold, so conduction can fail. The outcome depends on the segment’s length and the remaining excitability.",
+          "Restoring an ionic gradient alone would not repair absent or unavailable channels. The example separates a driving force from the machinery that regenerates the signal."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why can a larger stimulus fail during the absolute refractory period?",
+          "answer": "In the simplified neuronal model, enough sodium channels remain inactivated that a second normal regenerative spike cannot develop. More stimulus does not immediately restore those channels to the available state."
+        },
+        {
+          "prompt": "Why does saltatory conduction still require local current flow?",
+          "answer": "Depolarising current spreads along the internode and charges the next node. Voltage-gated currents then regenerate the action potential there; an intact spike does not leap through empty space."
+        }
+      ],
+      "summaryChecklist": [
+        "Explain activation, inactivation and recovery in a typical neuronal sodium channel.",
+        "Distinguish absolute and relative refractoriness using channel availability.",
+        "Trace passive local current and regenerative membrane excitation during propagation.",
+        "Compare neuronal, ventricular and nodal action potentials without treating one waveform as universal."
+      ]
     },
     {
       "id": "biophysics-ultrasound",
@@ -7767,7 +8032,7 @@
       "id": "genetics-genome-foundations",
       "subject": "genetics",
       "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
-      "summary": "Separate DNA organisation from gene expression, use a defined inheritance model, and build the vocabulary needed for medical genetics and immunology.",
+      "summary": "Connect genome organisation, inheritance and gene expression with genomic variation, reference sequences and the limits of a genetic test result.",
       "tags": [
         "genetics",
         "foundations",
@@ -7794,6 +8059,22 @@
         {
           "title": "Apply a stated inheritance model",
           "body": "For an illustrative autosomal recessive condition, let a denote the disease-associated allele and A a normal-function allele. Assume aa is affected and Aa carriers are unaffected. Two heterozygous parents each transmit A or a with probability one half.\n\nEach pregnancy has probabilities 1/4 AA, 1/2 Aa and 1/4 aa, independently of previous outcomes. These assumptions do not describe all genetic disease: penetrance, different inheritance patterns and multiple genes can change interpretation. Use the defined model before applying a percentage."
+        },
+        {
+          "title": "Move from one gene to the genome",
+          "body": "Genetics often examines inheritance and the effects of particular genes; genomics considers many or all parts of a genome and their relationships. The human genome includes mitochondrial as well as nuclear DNA. Most mitochondrial proteins are encoded by nuclear genes, so the two genomes do not operate as isolated systems.\n\nA reference genome provides a coordinate framework for comparing sequences. It is not a perfect or universally normal genome. A pangenome represents a wider range of sequence variation across multiple individuals, helping address limitations of comparison with a single linear reference. Neither framework assigns a clinical meaning to every difference."
+        },
+        {
+          "title": "Name a variant before interpreting it",
+          "body": "A single-nucleotide variant changes one nucleotide relative to a stated reference. Insertions and deletions add or remove sequence; copy-number variants change the dosage of a DNA segment. A variant can affect coding sequence, RNA processing, regulation or another genomic feature, and many differences have no established harmful effect.\n\nVariant class, rarity and predicted molecular effect are separate questions from disease causation. A rare variant is not automatically pathogenic, and a common variant is not automatically irrelevant. Interpretation considers the gene–disease relationship, inheritance, population evidence, segregation and functional evidence, with uncertainty stated explicitly."
+        },
+        {
+          "title": "Match a test to a defined question",
+          "body": "A targeted assay can test for a specified familial sequence variant. A copy-number method can assess certain deletions or duplications; a sequencing assay may address a different set of variants. Whole-exome sequencing focuses mainly on coding regions and nearby captured sequence, whereas whole-genome approaches cover a broader scope. Neither label guarantees that every region or variant class is detected.\n\nCoverage, analytical validation, repeat structure, mosaicism and the sampled tissue can affect detection. A negative result means that the assay did not establish the tested finding under its conditions; it does not rule out every genetic explanation. These are teaching distinctions, not instructions for selecting an individual patient’s test."
+        },
+        {
+          "title": "Keep uncertainty visible",
+          "body": "A variant of uncertain significance (VUS) is a finding whose relationship to disease has not been established. It should not be described as a confirmed molecular diagnosis. Classification can change as evidence accumulates, and a result must be interpreted within the stated clinical and family context by an appropriately qualified team.\n\nThe hypothetical inheritance examples in this lesson assume defined genotypes, transmission probabilities and phenotype relationships. Penetrance, mosaicism, mitochondrial inheritance and complex traits can require different models. Avoid converting a classroom probability into a personalised risk estimate."
         }
       ],
       "question": {
@@ -7822,15 +8103,19 @@
         "inheritance",
         "meiosis",
         "innate-adaptive",
-        "rna-processing"
+        "rna-processing",
+        "genetic-testing",
+        "dna-replication"
       ],
-      "updatedAt": "2026-09-23",
-      "minutes": 18,
+      "updatedAt": "2026-10-02",
+      "minutes": 24,
       "objectives": [
         "Distinguish genome, chromosome, gene and allele.",
         "Separate replication, transcription and translation.",
         "Calculate offspring probabilities for a defined autosomal recessive cross.",
-        "Explain why DNA sequence and gene expression are different kinds of information."
+        "Explain why DNA sequence and gene expression are different kinds of information.",
+        "Distinguish a sequence variant, a copy-number change and their clinical interpretation.",
+        "Explain why reference genomes and genetic tests have defined scope and limitations."
       ],
       "prerequisites": [],
       "workedExample": {
@@ -7850,13 +8135,19 @@
         {
           "prompt": "How does this foundation prepare you for immunology?",
           "answer": "Immune-cell functions depend on expressed receptors, signalling molecules and other proteins. Separate the inherited DNA sequence from which genes a cell expresses before studying immune-cell activation and special mechanisms of receptor diversity."
+        },
+        {
+          "prompt": "Why does detecting a DNA variant not automatically explain a phenotype?",
+          "answer": "Detection establishes a sequence difference within an assay’s scope. Causation additionally depends on the gene–disease relationship, variant evidence, inheritance and context. A variant of uncertain significance leaves that causal question unresolved."
         }
       ],
       "summaryChecklist": [
         "Distinguish genome, chromosome, gene and allele.",
         "Separate replication, transcription and translation.",
         "Calculate offspring probabilities for a defined autosomal recessive cross.",
-        "Explain why DNA sequence and gene expression are different kinds of information."
+        "Explain why DNA sequence and gene expression are different kinds of information.",
+        "Distinguish a sequence variant, a copy-number change and their clinical interpretation.",
+        "Explain why reference genomes and genetic tests have defined scope and limitations."
       ]
     },
     {
@@ -7952,6 +8243,112 @@
         "Use area, concentration difference and thickness to predict relative transfer rate.",
         "Predict osmosis with stated permeability and pressure assumptions.",
         "Distinguish osmolarity from tonicity when interpreting cell-volume change."
+      ]
+    },
+    {
+      "id": "somatosensory-pathways",
+      "subject": "physiology",
+      "title": "Somatosensory pathways and thalamic integration",
+      "summary": "Trace body and face sensation through distinct crossing points and thalamic relays, then reason through a carefully specified localisation example.",
+      "tags": [
+        "Nervous system and special senses",
+        "somatosensory",
+        "thalamus",
+        "dorsal columns",
+        "spinothalamic"
+      ],
+      "source": "phase-twelve-somatosensory",
+      "section": "Dorsal-column, anterolateral and trigeminal pathways; ventral posterior thalamic relays and cortical integration",
+      "steps": [
+        {
+          "title": "Choose the modality and body region first",
+          "body": "Somatosensation includes touch, vibration, body position, temperature and nociceptive signals. Different receptor and pathway populations contribute to these experiences. Start by specifying a stimulus, its body location and the modality being tested; “sensation” alone is too broad to identify one tract.\n\nFor this foundation, trace three principal systems: dorsal-column–medial-lemniscal pathways for discriminative touch, vibration and conscious proprioception from the body; anterolateral pathways for body pain and temperature; and trigeminal pathways for much of face sensation. This does not imply that all touch or all pain follows one exclusive route."
+        },
+        {
+          "title": "Trace the dorsal-column route from the body",
+          "body": "A first-order sensory neuron has its cell body in a dorsal root ganglion. In the classic conscious mechanosensory pathway, its central process ascends on the same side of the spinal cord. Lower-body input travels in the gracile fasciculus; upper-body input enters the cuneate fasciculus at appropriate levels.\n\nThe first major relay is in the gracile or cuneate nucleus of the medulla. Second-order axons cross as internal arcuate fibres and ascend in the medial lemniscus to the opposite ventral posterolateral (VPL) thalamic nucleus. Thalamic neurons then project to the somatosensory cortex. Keep the first-order ascending axon distinct from the second-order crossing axon."
+        },
+        {
+          "title": "Trace the anterolateral route and its earlier crossing",
+          "body": "For a body pain-temperature signal, the first-order cell body is also in a dorsal root ganglion, but the central process relays in the dorsal horn. Some afferents travel up or down a short distance before that relay. Second-order axons cross in the spinal cord through the anterior white commissure, usually within a few segments of entry.\n\nThey then ascend on the opposite side in the anterolateral system. Spinothalamic projections reach thalamic targets, including VPL; parallel pathways reach other brainstem and forebrain networks. Pain involves sensory discrimination, salience and affective processing, so it cannot be reduced to a single three-neuron line ending in one cortical point."
+        },
+        {
+          "title": "Keep face pathways separate from body pathways",
+          "body": "Much facial touch enters through the trigeminal ganglion and relays in the principal sensory trigeminal nucleus. Facial pain-temperature afferents can descend in the spinal trigeminal tract before relaying in the spinal trigeminal nucleus. Major second-order pathways cross in the brainstem and ascend towards the ventral posteromedial (VPM) thalamic nucleus.\n\nVPM and VPL are different relays: VPM is associated with face input, VPL with body input in this simplified comparison. Some trigeminal projections are bilateral, and jaw proprioception has a special first-order arrangement involving the mesencephalic trigeminal nucleus. The body dorsal-column map should not simply be relabelled as a face pathway."
+        },
+        {
+          "title": "Understand thalamic and cortical integration",
+          "body": "The ventral posterior complex preserves an organised representation of body and face information and participates in selecting and transforming sensory traffic. Thalamic relay activity is influenced by cortical feedback and inhibitory circuits, including the thalamic reticular nucleus. The reticular nucleus is not the third-order projection carrying somatic sensation directly to cortex.\n\nPrimary somatosensory cortex lies in the postcentral region, with leg representation extending medially. Further processing involves additional somatosensory and association areas. A cortical map is an organised representation, not a miniature body or a promise of one-to-one correspondence between tissue size and cortical territory."
+        },
+        {
+          "title": "Localise by side, level and modality",
+          "body": "In a simplified unilateral spinal-cord lesion, damage to a dorsal column interrupts body signals that have not yet crossed, whereas damage to an anterolateral tract interrupts many signals that crossed lower down. Thus the same side of cord can carry dorsal-column information from that side of the body and pain-temperature information from the opposite side.\n\nState whether “level” means vertebra, cord segment or sensory distribution. Crossing over several segments and overlapping inputs make a pain-temperature boundary approximate. The exercise below isolates two pathways in a fictional lesion; it is not a complete syndrome description or a diagnostic rule for a real person."
+        }
+      ],
+      "question": {
+        "prompt": "A vibration signal from the right foot follows the classic dorsal-column pathway. Where do its second-order axons cross?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "In the anterior white commissure near spinal entry",
+            "reason": "This is the usual crossing region for second-order anterolateral pain-temperature axons, not the dorsal-column vibration route."
+          },
+          {
+            "text": "In the medulla after the gracile-nucleus relay",
+            "reason": "The first-order foot afferent ascends on the right to the gracile nucleus; second-order internal arcuate fibres then cross and enter the left medial lemniscus."
+          },
+          {
+            "text": "After leaving the left thalamus for the cortex",
+            "reason": "The principal crossing has already occurred in the medulla before the signal reaches the left ventral posterolateral thalamic relay."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Trace a right-foot vibration signal to cortex and contrast the crossing of a right-foot pain signal.",
+        "answer": "Vibration ascends in the right dorsal column, relays in the gracile nucleus, crosses in the medulla and reaches left VPL and somatosensory cortex. The main pain-temperature route relays in the right dorsal horn, crosses near spinal entry and ascends on the left. These are simplified principal pathways; parallel pain networks also contribute."
+      },
+      "related": [
+        "trigeminal-pathways",
+        "basal-ganglia-diencephalon",
+        "brainstem-localization"
+      ],
+      "updatedAt": "2026-10-02",
+      "minutes": 22,
+      "objectives": [
+        "Trace body vibration and pain-temperature pathways with their relay and crossing sites.",
+        "Distinguish VPL body relays from VPM face relays in the principal sensory pathways.",
+        "Predict laterality in a hypothetical spinal lesion with stated side and level.",
+        "Explain why thalamic and cortical processing is more than a passive sensory cable."
+      ],
+      "prerequisites": [
+        "synaptic-integration",
+        "spinal-cord-tracts"
+      ],
+      "workedExample": {
+        "title": "Worked localisation: two modalities, one side of cord",
+        "prompt": "A fictional lesion selectively interrupts the right dorsal column and right anterolateral tract at the T10 cord segment. Consider signals from the feet, well below the lesion. Predict the main vibration and pain-temperature deficits; ignore motor pathways for this exercise.",
+        "solution": [
+          "Right-foot vibration ascends in the right dorsal column before crossing in the medulla, so this lesion reduces the right-sided signal.",
+          "Left-foot pain-temperature afferents relay and cross near their lower spinal entry levels, then ascend in the right anterolateral tract; that ascending signal is interrupted.",
+          "The main predicted combination is right-sided vibration loss and left-sided pain-temperature loss well below the lesion.",
+          "The exact upper sensory boundary cannot be read directly from the T10 label because crossing and overlap span segments. The stipulated cord segment is not necessarily the vertebral level."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why can one right-sided cord lesion affect different modalities on different sides of the body?",
+          "answer": "The dorsal-column signal is still ipsilateral at spinal levels; the main anterolateral signal has crossed near entry. The crossing must be placed relative to the lesion before predicting the deficit."
+        },
+        {
+          "prompt": "Why does an intact VPL relay not guarantee normal sensory interpretation?",
+          "answer": "Signals still require thalamocortical transmission and cortical processing, with other networks contributing. A relay’s presence does not establish the state of every downstream or modulatory circuit."
+        }
+      ],
+      "summaryChecklist": [
+        "Trace body vibration and pain-temperature pathways with their relay and crossing sites.",
+        "Distinguish VPL body relays from VPM face relays in the principal sensory pathways.",
+        "Predict laterality in a hypothetical spinal lesion with stated side and level.",
+        "Explain why thalamic and cortical processing is more than a passive sensory cable."
       ]
     },
     {

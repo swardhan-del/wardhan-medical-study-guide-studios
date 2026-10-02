@@ -2607,14 +2607,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-09",
+      "updatedAt": "2026-10-02",
       "bytes": 0,
       "id": "biophysics-action-potentials",
       "title": "Action potentials and impulse propagation",
       "subject": "biophysics",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Separate regenerative signalling from passive current spread.",
+      "summary": "Follow channel activation, inactivation and recovery; compare local current spread with regeneration, and distinguish neuronal spikes from cardiac waveforms.",
       "tags": [
         "Membranes and ultrasound",
         "Biophysics",
@@ -2624,7 +2624,7 @@
         "propagation",
         "channels"
       ],
-      "minutes": 8
+      "minutes": 20
     },
     {
       "status": "public",
@@ -3883,14 +3883,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-23",
+      "updatedAt": "2026-10-02",
       "bytes": 0,
       "id": "genetics-genome-foundations",
       "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
       "subject": "genetics",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Separate DNA organisation from gene expression, use a defined inheritance model, and build the vocabulary needed for medical genetics and immunology.",
+      "summary": "Connect genome organisation, inheritance and gene expression with genomic variation, reference sequences and the limits of a genetic test result.",
       "tags": [
         "genetics",
         "foundations",
@@ -3899,7 +3899,7 @@
         "inheritance",
         "gene expression"
       ],
-      "minutes": 18
+      "minutes": 24
     },
     {
       "status": "public",
@@ -4095,14 +4095,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-09",
+      "updatedAt": "2026-10-02",
       "bytes": 0,
       "id": "connective-tissue",
       "title": "Connective tissue and extracellular matrix",
       "subject": "histology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior.",
+      "summary": "Compare connective tissue proper, cartilage, bone and adipose using cells, extracellular matrix and two independent structural clues, while recognising what a section cannot show.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
@@ -4110,7 +4110,7 @@
         "collagen",
         "extracellular matrix"
       ],
-      "minutes": 5
+      "minutes": 20
     },
     {
       "status": "public",
@@ -4682,20 +4682,20 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-08",
+      "updatedAt": "2026-10-02",
       "bytes": 0,
       "id": "synaptic-integration",
       "title": "Neural integration: from release to a response",
       "subject": "physiology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Follow chemical transmission across a synapse, then explain how a neuron combines excitatory and inhibitory inputs.",
+      "summary": "Trace transmitter release, receptor action and signal termination, then explain how synapses combine inputs without assuming that every input triggers a spike.",
       "tags": [
         "Nervous system and special senses",
         "physiology",
         "guided revision"
       ],
-      "minutes": 7
+      "minutes": 18
     },
     {
       "status": "public",
@@ -4807,14 +4807,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-10-02",
       "bytes": 0,
       "id": "membrane-potentials",
       "title": "Resting potential and the action potential",
       "subject": "physiology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Connect ion gradients, selective permeability and channel timing to electrical signals.",
+      "summary": "Interpret membrane voltage, distinguish an ion equilibrium from a maintained resting state, and predict how a graded signal changes with time and distance.",
       "tags": [
         "Cellular physiology",
         "membrane",
@@ -4822,7 +4822,26 @@
         "action potential",
         "neurons"
       ],
-      "minutes": 5
+      "minutes": 18
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-10-02",
+      "bytes": 0,
+      "id": "somatosensory-pathways",
+      "title": "Somatosensory pathways and thalamic integration",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Trace body and face sensation through distinct crossing points and thalamic relays, then reason through a carefully specified localisation example.",
+      "tags": [
+        "Nervous system and special senses",
+        "somatosensory",
+        "thalamus",
+        "dorsal columns",
+        "spinothalamic"
+      ],
+      "minutes": 22
     },
     {
       "status": "public",
@@ -4917,20 +4936,20 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-08",
+      "updatedAt": "2026-10-02",
       "bytes": 0,
       "id": "muscle-contraction",
       "title": "Three muscle types, three calcium stories",
       "subject": "physiology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Compare how skeletal, cardiac and smooth muscle convert a calcium signal into force, and explain why their responses differ.",
+      "summary": "Follow a motor-nerve signal through the end plate, T tubules, calcium release and cross-bridge cycle, then compare skeletal coupling with cardiac and smooth muscle.",
       "tags": [
         "Cellular physiology and muscle",
         "physiology",
         "guided revision"
       ],
-      "minutes": 7
+      "minutes": 22
     },
     {
       "status": "public",
