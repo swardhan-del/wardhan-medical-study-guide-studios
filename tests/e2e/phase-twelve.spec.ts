@@ -34,7 +34,7 @@ for(const record of quality.records){
   if(info.project.name==='mobile')await page.evaluate(()=>{document.documentElement.style.fontSize='20px';});
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
   const result=await new AxeBuilder({page}).include('.lesson-transparency').include('[data-lesson-visuals]').analyze();expect(result.violations).toEqual([]);
-  expect(await page.locator('article').innerText()).not.toMatch(/\.private|source-intake|Dropbox|Semifinal_Master/);
+  expect((await page.locator('article').allInnerTexts()).join('\n')).not.toMatch(/\.private|source-intake|Dropbox|Semifinal_Master/);
   await region.screenshot({path:info.outputPath(`${id}-visuals.png`)});expect(errors).toEqual([]);
  });
 }
