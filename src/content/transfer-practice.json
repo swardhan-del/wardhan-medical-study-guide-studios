@@ -820,7 +820,7 @@
         },
         {
           "text": "A peak of −54 mV, crossing the stated threshold",
-          "explanation": "−70 + 8 + 8 = −54 mV, which is more positive than −55 mV. This conclusion depends on the explicit linear-model assumptions."
+          "explanation": "−70 + 8 + 8 = −54 mV, which is more positive than −55 mV. This is the peak predicted by the stipulated passive sum. In an excitable neuron, crossing threshold recruits regenerative currents; the calculation does not give the actual action-potential peak."
         },
         {
           "text": "An action potential with exactly twice the usual amplitude",

@@ -1577,7 +1577,7 @@
           "0.5"
         ]
       ],
-      "caption": "Calculated steady-state model: ΔV(0) = 10 mV and λ = 1 mm. Distances and amplitudes illustrate exponential attenuation; they are not universal dendritic measurements.",
+      "caption": "Calculated steady-state model: ΔV(0) = 10 mV and λ = 1 mm in a uniform passive cable without a nearby end boundary. Distances and amplitudes illustrate exponential attenuation; they are not universal dendritic measurements.",
       "observe": "Contrast the 37% remaining after one length constant with the 63% rise after one time constant.",
       "alt": "A 10 mV input falls to about 3.7, 1.4 and 0.5 mV at distances of one, two and three millimetres in this model.",
       "referenceIds": [
@@ -1672,7 +1672,7 @@
         "Diffusion, uptake and/or enzymes terminate transmitter action"
       ],
       "caption": "Simplified chemical-synapse sequence. Calcium enters the releasing terminal; transmitter crosses the cleft. Receptor type and the receiving cell determine the response.",
-      "observe": "Place the hypothetical calcium-entry block on this sequence, then identify which later stage direct transmitter application bypasses.",
+      "observe": "Place the hypothetical calcium-entry block on this sequence, then identify which upstream steps direct transmitter application bypasses.",
       "alt": "Presynaptic voltage causes calcium entry and transmitter release; receptor activation changes the target cell, and removal mechanisms end the signal.",
       "referenceIds": [
         "synaptic-integration"
@@ -1703,7 +1703,7 @@
         ],
         [
           "Shunting inhibition",
-          "Conductance rises near the resting reversal potential",
+          "Conductance rises with a reversal potential near resting membrane voltage",
           "The same excitatory current produces less depolarisation"
         ]
       ],

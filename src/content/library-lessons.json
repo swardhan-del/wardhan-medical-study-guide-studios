@@ -2313,7 +2313,7 @@
         },
         {
           "title": "Follow a graded signal through a passive membrane",
-          "body": "A small subthreshold perturbation can spread electrotonically: local current changes nearby voltage without a self-renewing spike. Its amplitude depends on the input and decreases with distance as current leaks across the membrane. In a uniform passive cable at steady state, ΔV(x) = ΔV(0) exp(−x/λ). The length constant λ is the distance at which about 37% of the initial change remains.\n\nThis equation is an ideal steady-state relationship, not a speed of conduction. Branching, active channels and changing conductances can alter real dendritic responses. A signal measured farther away can be smaller without implying that the original stimulus was weaker."
+          "body": "A small subthreshold perturbation can spread electrotonically: local current changes nearby voltage without a self-renewing spike. Its amplitude depends on the input and decreases with distance as current leaks across the membrane. In an ideal uniform passive cable extending away from a local input without a nearby end boundary, the steady-state relationship is ΔV(x) = ΔV(0) exp(−x/λ). The length constant λ is the distance at which about 37% of the initial change remains.\n\nThis equation is an ideal steady-state relationship, not a speed of conduction. Branching, active channels and changing conductances can alter real dendritic responses. A signal measured farther away can be smaller without implying that the original stimulus was weaker."
         },
         {
           "title": "Distinguish charging time from spread distance",
@@ -2753,7 +2753,7 @@
         },
         {
           "title": "Turn the calcium signal into force",
-          "body": "Cytosolic calcium binds troponin C, changing the thin-filament regulatory complex so that myosin can interact with actin. ATP binding detaches myosin from actin; ATP hydrolysis supports re-cocking, and product-release transitions are coupled to force generation. ATP is therefore required for orderly cycling, not merely for switching contraction on.\n\nA sarcomere runs between two Z discs. During shortening the discs approach, the I band and H zone narrow, and the A-band length stays approximately constant. Actin and myosin filaments slide past one another; the filaments themselves do not shorten. Force can also develop without whole-muscle shortening when the external load is held fixed."
+          "body": "Cytosolic calcium binds troponin C, changing the thin-filament regulatory complex so that myosin can interact with actin. ATP binding detaches myosin from actin; ATP hydrolysis supports re-cocking, and product-release transitions are coupled to force generation. ATP is therefore required for orderly cycling, not merely for switching contraction on.\n\nA sarcomere runs between two Z discs. During shortening the discs approach, the I band and H zone narrow, and the A-band length stays approximately constant. Actin and myosin filaments slide past one another; the filaments themselves do not shorten. Force can also develop while overall muscle length is held constant: this is an isometric contraction. Holding the load constant does not itself prevent shortening."
         },
         {
           "title": "Relax by removing the activating signal",
