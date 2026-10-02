@@ -3717,6 +3717,13 @@ select:focus-visible {
 .practice-question fieldset:disabled {
   opacity: 1;
 }
+.practice-question fieldset {
+  min-width: 0;
+}
+.practice-question .concept-options span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .practice-question {
   margin-block: 1.5rem;
 }

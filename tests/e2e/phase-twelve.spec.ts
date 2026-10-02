@@ -32,6 +32,7 @@ for(const record of quality.records){
   for(const q of current)await expect(page.locator('.practice-question:visible').filter({hasText:q.prompt}).getByRole('radio',{name:q.options[q.answer].text,exact:true})).toBeChecked();
   await panel.locator('summary').click();
   if(info.project.name==='mobile')await page.evaluate(()=>{document.documentElement.style.fontSize='20px';});
+  await page.evaluate(()=>document.fonts.ready);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
   const result=await new AxeBuilder({page}).include('.lesson-transparency').include('[data-lesson-visuals]').analyze();expect(result.violations).toEqual([]);
   expect((await page.locator('article').allInnerTexts()).join('\n')).not.toMatch(/\.private|source-intake|Dropbox|Semifinal_Master/);
