@@ -4,7 +4,9 @@ import references from '../../src/content/lesson-references.json';
 import quality from '../../src/content/lesson-quality.json';
 import {emptyProgress} from '../../src/lib/learning-core';
 
-for(const record of quality.records){
+const phaseThirteenIds=['fluid-and-membrane-transport','membrane-potentials','biophysics-action-potentials','synaptic-integration','muscle-contraction','connective-tissue','somatosensory-pathways','genetics-genome-foundations'];
+expect(quality.records.filter(q=>phaseThirteenIds.includes(q.lessonId)).length).toBe(8);
+for(const record of quality.records.filter(q=>phaseThirteenIds.includes(q.lessonId))){
  test(`Phase 13: ${record.lessonId} restores existing notes and progress with consistent sources`,async({page})=>{
   const id=record.lessonId,lesson=lessons.lessons.find(l=>l.id===id)!;
   const reference=(references as Record<string,{title:string;url:string;supportingReferences?:{title:string;url:string}[]}>)[id];

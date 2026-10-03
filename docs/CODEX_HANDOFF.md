@@ -1,3 +1,54 @@
+# Codex handoff — haemostasis learning-path upgrade
+
+Checkpoint: 3 October 2026. Branch: `feat/phase-twelve-lesson-preview`. Draft PR: https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/29. Starting remote commit: `d8b47048315cbf475f9d2fefd6d1a59c5a45e62c`. This entry accompanies the implementation; the PR head identifies its immutable commit and subsequent remote checks.
+
+**Keep PR #29 draft. Do not merge or deploy production.** Independent clinical/subject review, visual scientific/rights review, human editorial/readability/accessibility review and explicit release authorisation remain pending.
+
+## Recovery and changes
+
+The checkout was clean and fast-forward current with origin. ChatGPT-only commit `8255d57` was not available as a local Git object, and no haemostasis patch was found in the repository. The supplied requirements were implemented directly; this is not a claimed cherry-pick or transfer of that commit. The existing Phase 14 queue, review packets and internal findings remain unchanged and are not approval evidence.
+
+Upgraded `/library/blood-and-haemostasis` with five connected steps: intact endothelial nitric-oxide/prostacyclin restraint; matrix/vWF exposure and GPIb-IX-V capture; activated αIIbβ3–fibrinogen aggregation with a nonexclusive-ligand qualification; thrombin and XIIIa-mediated fibrin stabilisation; and anticoagulant/fibrinolytic restraint. Added aligned objectives, existing prerequisite links and a worked receptor-interaction example. The title, route, old concept question, old application question and their option order remain unchanged.
+
+Exactly two application questions were appended to `study-questions.json`:
+
+- `studio-apply-blood-endothelium-restraint`: answer index **0**, loss of endothelial inhibition increases platelet responsiveness, without asserting inevitable thrombosis.
+- `studio-apply-blood-adhesion-versus-aggregation`: answer index **1**, stipulated GPIb-IX-V–vWF capture remains possible while the blocked αIIbβ3–fibrinogen interaction reduces bridging.
+
+The keys were checked against the distinct source-supported mechanisms, and every alternative has specific feedback. New unit tests assert those keys and old/new saved-answer parsing. These AI-assisted checks are not independent clinical or assessment approval.
+
+Added an explicit quality record: `medical-review-pending`, `rights-review-pending`, `explanations-complete`, pending accessibility/readability, and `noindex-pending-review`. Review dates stay null and evidence IDs stay empty. The existing recap remains; no new visual assets or source illustrations were imported. Mechanism-visual preparation and scientific/rights release review remain outstanding.
+
+Regenerated the catalog/public search, learning registry and measurement registry with the existing scripts. The route remains available on the preview, but the revised lesson is excluded from sitemap and full-text search. Every old lesson and draft identifier is unchanged; only the two named question IDs are added. The Phase 13 test now explicitly permits those two additions while retaining all 381 original identity hashes and the original lesson/draft registry hashes. Neither preservation fixture nor the frozen legacy quality baseline was refreshed. Saved-progress code, storage keys, review evidence and the dependency lockfile are unchanged.
+
+## Source verification — 2026-10-03
+
+- [McRae, Physiological Haemostasis](https://www.ncbi.nlm.nih.gov/books/NBK534253/): receptor/ligand distinctions, tenase/prothrombinase, fibrin stabilisation and regulatory mechanisms. Relevant indexed NCBI passages were inspected after direct requests returned browser challenges.
+- [Félétou, Multiple Functions of the Endothelial Cells, §2.2](https://www.ncbi.nlm.nih.gov/books/NBK57148/): endothelial restraint and fibrinolysis. Verified relevant indexed NCBI text; direct access returned a challenge/error. Full-page direct access is not claimed.
+- [OpenStax Anatomy and Physiology 2e §18.5](https://openstax.org/books/anatomy-and-physiology-2e/pages/18-5-hemostasis): broad platelet/fibrin sequence and clot breakdown, read directly. Its simplified pathway presentation is not used as an exhaustive model or treatment recommendation.
+
+The bibliography and quality metadata contain the same three public URLs and the actual verification date. Scientific citation does not grant reproduction rights. No raw source documents, private extracts, Dropbox paths or unreviewed STEM images entered public content.
+
+## Validation and actual fixes
+
+- `npm ci` restored the locked Next.js/SWC **16.3.8** pairing after detecting installed Next.js 16.3.4 beside SWC 16.3.8; no dependency versions or lockfile were changed.
+- `npm run content:check`, including quality/generated-content/source-boundary validation: passed.
+- All **136 unit tests** passed on Node 26.7.0. Lint, typecheck and the production build passed, including deployment-trace and rendered-privacy checks.
+- **74 focused Playwright checks passed** on desktop and mobile after a real accessibility correction. The shared lesson renderer now numbers default application-question headings so their region names are distinct; explicit custom headings, IDs and answer data are preserved. The initial new privacy test's single-article assumption was corrected to inspect every article, including the existing video article. No accessibility rules or preservation assertions were disabled.
+- Browser coverage includes the haemostasis lesson, every new option's feedback, restored pre-upgrade notes/answers/schedules, edited notes and new answers after reload, keyboard disclosures, 320px enlarged-text layout, source links, pending-review labels, noindex/sitemap exclusion, the original eight drafts and existing histology/learning-continuity flows. Desktop/mobile captures were inspected. This is not human accessibility sign-off.
+- `git diff --check` passed. Both frozen fixtures, the legacy baseline, review-evidence file, lockfile and old lesson/draft identifiers were checked unchanged; zero private files are tracked.
+- `npm audit --omit=dev --audit-level=high`: passed with zero production vulnerabilities. The full audit reports one `braces` stack-exhaustion advisory affecting five development packages through the lint toolchain. It remains unresolved in the existing lockfile; the suggested forced change downgrades `eslint-config-next` across major versions and was not applied as part of this content task. Track separately: https://github.com/advisories/GHSA-vfj7-8cjw-p6xm.
+
+At this committed handoff checkpoint, GitHub push, its CI and the new hosted preview are checked subsequently; use the PR's current-head status and task report for their exact result and immutable preview URL. Do not treat earlier Phase 13 CI/preview results below as verification of this upgrade. Local logs and temporary preview access state belong only in ignored `output/haemostasis-upgrade/`; remove temporary credentials after hosted checks.
+
+## Next safe step
+
+Obtain version-bound human review of the haemostasis teaching, questions, existing media and proposed visual needs, alongside the existing eight-lesson queue. Re-review any correction before recording evidence or changing index/release status. No clinical credentials or approvals were invented. Production has not been merged or deployed by this task; verify its unchanged deployment against the recorded pre-task state before reporting completion.
+
+---
+
+# Historical Phase 13 handoff
+
 # Codex handoff — Phase 13 draft review
 
 Checkpoint: 2 October 2026. Branch: `feat/phase-twelve-lesson-preview`.

@@ -3075,21 +3075,29 @@
       "id": "blood-and-haemostasis",
       "subject": "physiology",
       "title": "Haemostasis: build and stabilise the plug",
-      "summary": "Distinguish platelet adhesion, platelet aggregation and fibrin formation, then locate intrinsic tenase in the sequence.",
+      "summary": "Follow endothelial restraint, platelet adhesion and aggregation, then thrombin, fibrin stabilisation and controlled clot removal.",
       "source": "guide-blood",
       "section": "Sections 5.2–5.3: primary haemostasis, intrinsic tenase and coagulation",
       "steps": [
         {
+          "title": "Begin with intact endothelial restraint",
+          "body": "Healthy, intact endothelium actively restrains platelet activation and aggregation through nitric oxide and prostacyclin. It also separates circulating platelets from the adhesive subendothelial matrix. These are complementary safeguards: a physical lining and local inhibitory signals. Reduced inhibition can make platelets more responsive, but does not by itself prove that a clot must form."
+        },
+        {
           "title": "Anchor platelets at an injured surface",
-          "body": "Vascular injury exposes adhesive structures and immobilised von Willebrand factor. Platelet GPIb-IX-V binds von Willebrand factor, while collagen receptors help stabilise adhesion. Platelets then change shape, release mediators and recruit further platelets. Adhesion attaches a platelet to the injured surface; it is not the same event as platelet-to-platelet aggregation."
+          "body": "Disruption of the lining exposes subendothelial matrix, including collagen and immobilised von Willebrand factor (vWF). Platelet GPIb-IX-V binds vWF, helping capture platelets, particularly at high shear. Collagen receptors support adhesion and activation. Adhesion means attachment to the injured surface; aggregation means attachment to other platelets. The distinction is useful even though these processes overlap."
         },
         {
-          "title": "Connect platelets to one another",
-          "body": "Activation changes the affinity of integrin alpha-IIb-beta-3, also called GPIIb/IIIa. Fibrinogen can bridge these receptors on neighbouring platelets. ADP, thromboxane and thrombin help amplify activation. Platelets also expose a phospholipid surface that supports coagulation-complex assembly, linking primary and secondary haemostasis."
+          "title": "Connect activated platelets",
+          "body": "Activation makes integrin αIIbβ3 (alpha-IIb-beta-3, also called GPIIb/IIIa) able to bind fibrinogen, which bridges neighbouring platelets. ADP, thromboxane A₂ and thrombin reinforce activation. GPIb-IX-V–vWF capture and αIIbβ3–fibrinogen bridging therefore answer different questions: how does a platelet reach the injury, and how do platelets join? This simplified contrast is not an exclusive ligand map: activated αIIbβ3 can also bind vWF, especially relevant at high shear."
         },
         {
-          "title": "Amplify thrombin and stabilise fibrin",
-          "body": "Intrinsic tenase contains factor IXa with its cofactor VIIIa on a calcium-dependent phospholipid surface; it activates factor X. Factor Xa with Va forms prothrombinase, producing thrombin from prothrombin. Thrombin converts fibrinogen to fibrin, and factor XIIIa crosslinks fibrin. These overlapping processes stabilise the plug; they are not two completely separate timelines."
+          "title": "Generate thrombin and stabilise fibrin",
+          "body": "Tissue-factor exposure helps initiate coagulation. On suitable phospholipid surfaces with calcium, IXa–VIIIa forms intrinsic tenase, which activates factor X; Xa–Va forms prothrombinase, which converts prothrombin to thrombin. Thrombin cleaves soluble fibrinogen to form fibrin, and factor XIIIa crosslinks the fibrin network. Platelet recruitment and fibrin formation interact rather than running as isolated stages."
+        },
+        {
+          "title": "Limit the response and remove fibrin",
+          "body": "Restraint continues while the plug forms. Antithrombin inhibits thrombin and other activated coagulation enzymes. Thrombin bound to endothelial thrombomodulin supports protein C activation; activated protein C with protein S limits factors Va and VIIIa. Tissue factor pathway inhibitor restrains initiation. Fibrinolysis is a different task: tissue plasminogen activator helps convert plasminogen to plasmin, which breaks down fibrin. These regulated, overlapping processes help localise repair; they are not a treatment protocol or an exact timing diagram."
         }
       ],
       "question": {
@@ -3123,8 +3131,27 @@
         "physiology",
         "guided revision"
       ],
-      "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "minutes": 9,
+      "updatedAt": "2026-10-03",
+      "objectives": [
+        "Explain how intact endothelium restrains platelet activation before injury.",
+        "Distinguish GPIb-IX-V–vWF adhesion from activated αIIbβ3–fibrinogen aggregation.",
+        "Locate intrinsic tenase, prothrombinase, thrombin and factor XIIIa in plug stabilisation.",
+        "Distinguish anticoagulant restraint from plasmin-mediated fibrin breakdown."
+      ],
+      "prerequisites": [
+        "vessel-histology",
+        "blood-marrow"
+      ],
+      "workedExample": {
+        "title": "Locate the interrupted interaction",
+        "prompt": "In a simplified flow experiment, platelets can bind an exposed vWF-bearing surface, but a selective intervention prevents activated αIIbβ3 from binding fibrinogen. Which interaction is interrupted?",
+        "solution": [
+          "Surface capture can still use the stated intact GPIb-IX-V–vWF interaction.",
+          "The intervention targets fibrinogen bridges between platelets, so this component of aggregation is reduced.",
+          "The observation does not establish loss of all adhesion, absence of fibrin formation or a clinical diagnosis. The experiment specifies one receptor–ligand interaction."
+        ]
+      }
     },
     {
       "id": "digestive-control",

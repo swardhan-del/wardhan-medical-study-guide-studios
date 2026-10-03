@@ -290,9 +290,19 @@
     "checkedAt": "2026-09-08"
   },
   "blood-and-haemostasis": {
-    "title": "Mechanisms of Vascular Disease: physiological haemostasis",
+    "title": "Mechanisms of Vascular Disease: Physiological Haemostasis",
     "url": "https://www.ncbi.nlm.nih.gov/books/NBK534253/",
-    "checkedAt": "2026-09-08"
+    "checkedAt": "2026-10-03",
+    "supportingReferences": [
+      {
+        "title": "The Endothelium: Multiple Functions of the Endothelial Cells",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK57148/"
+      },
+      {
+        "title": "OpenStax Anatomy and Physiology 2e §18.5: Hemostasis",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-5-hemostasis"
+      }
+    ]
   },
   "digestive-control": {
     "title": "The Exocrine Pancreas: control of secretion",

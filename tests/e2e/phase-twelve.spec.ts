@@ -4,7 +4,11 @@ import library from '../../src/content/library-lessons.json';
 import transfer from '../../src/content/transfer-practice.json';
 import quality from '../../src/content/lesson-quality.json';
 
-for(const record of quality.records){
+// These eight Phase 12 adaptations have visuals and worked examples. Later quality
+// records have their own scoped coverage (for example haemostasis.spec.ts).
+const phaseTwelveIds=['fluid-and-membrane-transport','membrane-potentials','biophysics-action-potentials','synaptic-integration','muscle-contraction','connective-tissue','somatosensory-pathways','genetics-genome-foundations'];
+expect(quality.records.filter(q=>phaseTwelveIds.includes(q.lessonId)).length).toBe(8);
+for(const record of quality.records.filter(q=>phaseTwelveIds.includes(q.lessonId))){
  const id=record.lessonId;
  const lesson=library.lessons.find(l=>l.id===id)!;
  test(`Phase 12: ${id} explanations, preview status, keyboard, visuals and saved answers`,async({page},info)=>{

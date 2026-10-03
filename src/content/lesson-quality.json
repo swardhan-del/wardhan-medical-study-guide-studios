@@ -657,6 +657,71 @@
           "genetic-testing"
         ]
       }
+    },
+    {
+      "lessonId": "blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "subject": "physiology",
+      "topic": "Endothelial restraint, platelet interactions and fibrin regulation",
+      "slug": "blood-and-haemostasis",
+      "learnerLevel": "Early medical, biomedical-science and allied-health learners",
+      "objectives": [
+        "Explain how intact endothelium restrains platelet activation before injury.",
+        "Distinguish GPIb-IX-V–vWF adhesion from activated αIIbβ3–fibrinogen aggregation.",
+        "Locate intrinsic tenase, prothrombinase, thrombin and factor XIIIa in plug stabilisation.",
+        "Distinguish anticoagulant restraint from plasmin-mediated fibrin breakdown."
+      ],
+      "sources": [
+        {
+          "title": "Mechanisms of Vascular Disease: Physiological Haemostasis",
+          "publisherOrAuthor": "Simon McRae; University of Adelaide Press, 2011",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534253/",
+          "accessedAt": "2026-10-03",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "The Endothelium: Multiple Functions of the Endothelial Cells",
+          "publisherOrAuthor": "Michel Félétou; Morgan & Claypool Life Sciences, 2011",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK57148/",
+          "accessedAt": "2026-10-03",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "OpenStax Anatomy and Physiology 2e §18.5: Hemostasis",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-5-hemostasis",
+          "accessedAt": "2026-10-03",
+          "sourceType": "textbook"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "rights-review-pending",
+      "visualRequired": true,
+      "visualNotes": "The existing text recap remains available. Mechanism-visual preparation and independent scientific/rights release review remain pending; no source illustrations imported.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "AI-assisted writing and source-consistency checks are not independent clinical review.",
+        "Simplified physiological model; platelet, endothelial and coagulation responses overlap and vary with flow and biological context. Not diagnostic or treatment advice.",
+        "On 2026-10-03, relevant NCBI passages were verified through indexed NCBI text after direct page requests returned browser challenges; OpenStax was read directly. This is not source-reproduction or image-rights clearance."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [
+          "vessel-histology",
+          "blood-marrow"
+        ],
+        "related": [
+          "blood-marrow",
+          "vessel-histology"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

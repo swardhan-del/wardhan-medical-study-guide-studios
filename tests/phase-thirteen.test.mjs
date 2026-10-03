@@ -18,6 +18,8 @@ const visuals=read('lesson-visuals').visuals, transfer=read('transfer-practice')
 const bibliography=id=>[refs[id],...(refs[id].supportingReferences??[])];
 const sha=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const fixture=JSON.parse(readFileSync('tests/fixtures/phase-thirteen-preservation.json','utf8'));
+// Explicit additions only; never regenerate the Phase 13 identities or registry hashes.
+const haemostasisQuestionIds=['studio-apply-blood-endothelium-restraint','studio-apply-blood-adhesion-versus-aggregation'];
 const questions=[...lessons.map(l=>({id:`concept-${l.id}`,topic:l.id,href:`/library/${l.id}#concept-check-title`,...l.question})),...read('study-questions').questions,...transfer];
 const publicUrl=value=>{
  const url=new URL(value);assert.equal(url.protocol,'https:',value);assert(!url.username&&!url.password,value);
@@ -99,16 +101,23 @@ test('all eight drafts retain review gates, no review credentials, and no search
  }
 });
 
-test('Phase 13 preserves all 242 routes, 381 question identities, choice order and progress identifiers from the PR base',()=>{
+test('Phase 13 preserves all routes, question identities and progress identifiers with only two named haemostasis additions',()=>{
  assert.equal(fixture.base,'b8783e6819928ab69fefded345e7aa238fd3f88b');
  assert.deepEqual(lessons.map(l=>l.id),fixture.lessonIds);
- assert.equal(Object.keys(fixture.questionIdentityHashes).length,381);assert.equal(questions.length,381);
- for(const q of questions){
+ assert.equal(Object.keys(fixture.questionIdentityHashes).length,381);assert.equal(questions.length,383);
+ assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
+ assert.deepEqual(questions.filter(q=>!Object.hasOwn(fixture.questionIdentityHashes,q.id)).map(q=>q.id).sort(),[...haemostasisQuestionIds].sort());
+ for(const [id,hash] of Object.entries(fixture.questionIdentityHashes)){
+  const q=questions.find(q=>q.id===id);assert(q,id);
   const identity={id:q.id,topic:q.topic,href:q.href,prompt:q.prompt,answer:q.answer,options:q.options.map(o=>o.text),presentationOrder:optionOrder(q.id,q.options.length)};
-  assert.equal(sha(identity),fixture.questionIdentityHashes[q.id],q.id);
+  assert.equal(sha(identity),hash,q.id);
  }
  const registry=read('learning-registry');
- for(const [key,hash] of Object.entries(fixture.registryHashes))assert.equal(sha(registry[key]),hash,key);
+ assert.deepEqual(registry.learningQuestionIds.filter(id=>haemostasisQuestionIds.includes(id)).sort(),[...haemostasisQuestionIds].sort());
+ for(const [key,hash] of Object.entries(fixture.registryHashes)){
+  const preserved=key==='learningQuestionIds'?registry[key].filter(id=>!haemostasisQuestionIds.includes(id)):registry[key];
+  assert.equal(sha(preserved),hash,key);
+ }
 });
 
 test('existing draft answers, notes, completion and review schedules survive the current progress parser',()=>{
