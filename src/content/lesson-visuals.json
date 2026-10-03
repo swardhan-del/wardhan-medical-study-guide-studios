@@ -1455,6 +1455,472 @@
       "referenceIds": [
         "biophysics-nuclear-imaging"
       ]
+    },
+    {
+      "id": "membrane-pathway-decisions",
+      "lessonIds": [
+        "fluid-and-membrane-transport"
+      ],
+      "kind": "comparison",
+      "title": "Choose a membrane pathway from the driving force",
+      "headers": [
+        "Pathway",
+        "What crosses and why",
+        "Where the energy comes from"
+      ],
+      "rows": [
+        [
+          "Lipid-phase diffusion",
+          "A suitably small non-polar solute moves down its concentration gradient",
+          "No cellular ATP consumption for this crossing"
+        ],
+        [
+          "Open selective channel",
+          "An ion moves down its electrochemical gradient",
+          "The existing ion gradient; the channel does not pump the ion uphill"
+        ],
+        [
+          "Passive carrier",
+          "A bound solute moves downhill as the carrier cycles",
+          "The solute gradient; no direct ATP hydrolysis"
+        ],
+        [
+          "Na⁺/K⁺ ATPase",
+          "Three Na⁺ out and two K⁺ in per ATP",
+          "Direct ATP hydrolysis"
+        ],
+        [
+          "Na⁺–glucose cotransporter",
+          "Downhill Na⁺ entry is coupled to glucose entry",
+          "Na⁺ gradient maintained indirectly by ATP-dependent pumping"
+        ]
+      ],
+      "caption": "This simplified cell-membrane comparison separates permeability from driving force. The direction for an ion requires both concentration and voltage; real tissues can express multiple pathways at once.",
+      "observe": "Cover the energy column and identify which route hydrolyses ATP directly. Then explain why the cotransporter still depends on ATP over time.",
+      "alt": "Five transport routes compared by solute pathway and energy: lipid diffusion and passive proteins move downhill; the sodium–potassium pump uses ATP directly; sodium–glucose cotransport uses a pump-maintained gradient.",
+      "referenceIds": [
+        "fluid-and-membrane-transport"
+      ]
+    },
+    {
+      "id": "passive-charging-values",
+      "lessonIds": [
+        "membrane-potentials"
+      ],
+      "kind": "comparison",
+      "title": "Passive charging: voltage change after a maintained current step",
+      "headers": [
+        "Time (ms)",
+        "Fraction of final change",
+        "Membrane voltage (mV)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0%",
+          "−70.0"
+        ],
+        [
+          "20 (one τ)",
+          "63.2%",
+          "−63.7"
+        ],
+        [
+          "40 (two τ)",
+          "86.5%",
+          "−61.4"
+        ],
+        [
+          "60 (three τ)",
+          "95.0%",
+          "−60.5"
+        ]
+      ],
+      "caption": "Calculated single-compartment model: baseline −70 mV, final change +10 mV, τ = 20 ms. Values are rounded; these are not experimental recordings.",
+      "observe": "Compare the first and second 20 ms intervals. Explain why the same time interval produces a smaller additional voltage change later.",
+      "alt": "Voltage rises exponentially from −70 mV towards −60 mV; after one time constant it has completed about 63% of the change.",
+      "referenceIds": [
+        "membrane-potentials"
+      ]
+    },
+    {
+      "id": "passive-distance-values",
+      "lessonIds": [
+        "membrane-potentials"
+      ],
+      "kind": "comparison",
+      "title": "Passive spread: voltage change along an ideal cable",
+      "headers": [
+        "Distance (mm)",
+        "Distance relative to λ",
+        "Voltage change (mV)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "10.0"
+        ],
+        [
+          "1",
+          "One λ",
+          "3.7"
+        ],
+        [
+          "2",
+          "Two λ",
+          "1.4"
+        ],
+        [
+          "3",
+          "Three λ",
+          "0.5"
+        ]
+      ],
+      "caption": "Calculated steady-state model: ΔV(0) = 10 mV and λ = 1 mm in a uniform passive cable without a nearby end boundary. Distances and amplitudes illustrate exponential attenuation; they are not universal dendritic measurements.",
+      "observe": "Contrast the 37% remaining after one length constant with the 63% rise after one time constant.",
+      "alt": "A 10 mV input falls to about 3.7, 1.4 and 0.5 mV at distances of one, two and three millimetres in this model.",
+      "referenceIds": [
+        "membrane-potentials"
+      ]
+    },
+    {
+      "id": "neuronal-channel-states",
+      "lessonIds": [
+        "biophysics-action-potentials"
+      ],
+      "kind": "comparison",
+      "title": "A neuronal spike: overlapping currents and channel states",
+      "headers": [
+        "Phase",
+        "Sodium-channel state",
+        "Dominant interpretation"
+      ],
+      "rows": [
+        [
+          "Rest before excitation",
+          "Many channels closed and available",
+          "A stimulus may recruit regenerative inward current"
+        ],
+        [
+          "Upstroke",
+          "Rapid activation; channels open",
+          "Net inward current depolarises the membrane"
+        ],
+        [
+          "Repolarisation",
+          "Many channels inactivated",
+          "Outward currents dominate as inward current falls"
+        ],
+        [
+          "Recovery",
+          "Channels recover as voltage becomes negative",
+          "Persisting conductances can prolong reduced excitability"
+        ]
+      ],
+      "caption": "Qualitative neuronal Na⁺-spike model. Rows show overlapping tendencies, not measured timing or an identical waveform for every excitable cell.",
+      "observe": "Distinguish a closed available channel from an inactivated channel, then explain the refractory interval.",
+      "alt": "Available sodium channels activate during the rise, inactivate during the spike and recover after repolarisation; potassium currents help return voltage towards rest.",
+      "referenceIds": [
+        "biophysics-action-potentials"
+      ]
+    },
+    {
+      "id": "axon-propagation-patterns",
+      "lessonIds": [
+        "biophysics-action-potentials"
+      ],
+      "kind": "comparison",
+      "title": "Where does a propagated signal regenerate?",
+      "headers": [
+        "Axon model",
+        "Current between excitable regions",
+        "Sites of regeneration"
+      ],
+      "rows": [
+        [
+          "Unmyelinated",
+          "Local current spreads into nearby membrane",
+          "Successive adjacent regions of excitable membrane"
+        ],
+        [
+          "Myelinated",
+          "Current spreads beneath insulated internodes",
+          "Nodes of Ranvier"
+        ]
+      ],
+      "caption": "Original pathway comparison. No numerical speed is implied; diameter, membrane properties and temperature also matter.",
+      "observe": "Explain why both rows require passive current and active regeneration, although their spatial arrangement differs.",
+      "alt": "Unmyelinated axons regenerate along adjacent membrane; myelinated axons spread current through internodes and regenerate at nodes.",
+      "referenceIds": [
+        "biophysics-action-potentials"
+      ]
+    },
+    {
+      "id": "chemical-synapse-sequence",
+      "lessonIds": [
+        "synaptic-integration"
+      ],
+      "kind": "flow",
+      "title": "From presynaptic voltage to a postsynaptic response",
+      "steps": [
+        "Presynaptic action potential reaches the terminal",
+        "Voltage-gated channels admit Ca²⁺ into the terminal",
+        "Calcium triggers release of transmitter from prepared vesicles",
+        "Transmitter binds receptors on the responding cell",
+        "Receptor action alters conductance or intracellular signalling",
+        "Diffusion, uptake and/or enzymes terminate transmitter action"
+      ],
+      "caption": "Simplified chemical-synapse sequence. Calcium enters the releasing terminal; transmitter crosses the cleft. Receptor type and the receiving cell determine the response.",
+      "observe": "Place the hypothetical calcium-entry block on this sequence, then identify which upstream steps direct transmitter application bypasses.",
+      "alt": "Presynaptic voltage causes calcium entry and transmitter release; receptor activation changes the target cell, and removal mechanisms end the signal.",
+      "referenceIds": [
+        "synaptic-integration"
+      ]
+    },
+    {
+      "id": "synaptic-integration-modes",
+      "lessonIds": [
+        "synaptic-integration"
+      ],
+      "kind": "comparison",
+      "title": "Timing, position and conductance answer different questions",
+      "headers": [
+        "Mechanism",
+        "What changes",
+        "Interpretation"
+      ],
+      "rows": [
+        [
+          "Temporal summation",
+          "Closely spaced inputs overlap in time",
+          "A response persists while the next input arrives"
+        ],
+        [
+          "Spatial summation",
+          "Inputs at different locations overlap",
+          "Location and attenuation affect the combined response"
+        ],
+        [
+          "Shunting inhibition",
+          "Conductance rises with a reversal potential near resting membrane voltage",
+          "The same excitatory current produces less depolarisation"
+        ]
+      ],
+      "caption": "These are mechanism comparisons rather than measured traces. Linear arithmetic is only an approximation when conductances and driving forces remain suitable.",
+      "observe": "Explain why inhibition need not subtract a large negative voltage from a positive voltage.",
+      "alt": "Temporal and spatial summation describe overlap of graded inputs, while a shunting conductance reduces the voltage response to an input.",
+      "referenceIds": [
+        "synaptic-integration"
+      ]
+    },
+    {
+      "id": "skeletal-excitation-calcium",
+      "lessonIds": [
+        "muscle-contraction"
+      ],
+      "kind": "flow",
+      "title": "Follow the compartments from nerve to contraction",
+      "steps": [
+        "Motor terminal: Ca²⁺ entry triggers acetylcholine release",
+        "Motor end plate: nicotinic channels produce a graded depolarisation",
+        "Adjacent sarcolemma: voltage-gated channels generate the muscle action potential",
+        "T-tubule membrane: CaV1.1 senses depolarisation",
+        "SR membrane: RyR1 releases stored Ca²⁺ into the cytosol",
+        "Myofilaments: Ca²⁺ binds troponin C and permits actin–myosin interaction",
+        "Relaxation: SERCA returns cytosolic Ca²⁺ to the SR using ATP"
+      ],
+      "caption": "Adult mammalian skeletal-muscle model. T-tubule and SR membranes are distinct; the SR is the intracellular calcium store. This is not the cardiac trigger-calcium mechanism.",
+      "observe": "Locate a defect between the T-tubule action potential and calcium release without moving it to the nerve terminal.",
+      "alt": "The nerve signal produces an end-plate response, then a muscle action potential; voltage sensing activates SR release, troponin regulates force and SERCA supports relaxation.",
+      "referenceIds": [
+        "muscle-contraction"
+      ]
+    },
+    {
+      "id": "sarcomere-sliding",
+      "lessonIds": [
+        "muscle-contraction"
+      ],
+      "kind": "comparison",
+      "title": "Shortening changes overlap, not filament length",
+      "headers": [
+        "Feature",
+        "During sarcomere shortening",
+        "Reason"
+      ],
+      "rows": [
+        [
+          "Z-disc separation",
+          "Decreases",
+          "The ends of the sarcomere move closer"
+        ],
+        [
+          "I band and H zone",
+          "Become narrower",
+          "Overlap between thick and thin filaments increases"
+        ],
+        [
+          "A band",
+          "Approximately unchanged",
+          "It reflects thick-filament length"
+        ],
+        [
+          "Actin and myosin filaments",
+          "Do not shorten",
+          "Filaments slide relative to one another"
+        ]
+      ],
+      "caption": "Original structural comparison, not a micrograph or calibrated scale. The H zone may disappear at sufficient overlap.",
+      "observe": "Reject the claim that ATP shortens actin itself; describe what actually moves.",
+      "alt": "Z discs approach as overlap increases; the I band and H zone narrow while the A band and filament lengths remain approximately constant.",
+      "referenceIds": [
+        "muscle-contraction"
+      ]
+    },
+    {
+      "id": "supporting-tissue-clues",
+      "lessonIds": [
+        "connective-tissue"
+      ],
+      "kind": "comparison",
+      "title": "Identify supporting tissues with cells and matrix",
+      "headers": [
+        "Tissue",
+        "Cellular clue",
+        "Matrix or organisational clue"
+      ],
+      "rows": [
+        [
+          "Dense regular connective tissue",
+          "Slender fibroblast nuclei",
+          "Predominantly parallel collagen bundles"
+        ],
+        [
+          "Hyaline cartilage",
+          "Chondrocytes within lacunae",
+          "Abundant relatively smooth matrix; fibrils may not resolve"
+        ],
+        [
+          "Bone",
+          "Osteocytes in lacunae; surface-forming and resorbing cells",
+          "Lamellae or trabeculae; canaliculi and vascular relationships"
+        ],
+        [
+          "White adipose",
+          "Large unilocular profiles; peripheral nuclei",
+          "Cell-rich arrangement; lipid may be extracted in processing"
+        ],
+        [
+          "Brown adipose",
+          "Multiple smaller lipid droplets",
+          "Mitochondria-rich thermogenic organisation; function is inferred"
+        ]
+      ],
+      "caption": "Original recognition guide, not specimen imagery. Some features require an appropriate preparation or resolution; routine staining does not establish protein expression or current function.",
+      "observe": "Use one cellular and one architectural clue, then state which observation would require another preparation.",
+      "alt": "Fibrous tissue, cartilage, bone and adipose are compared by cell shape and surrounding organisation; no single empty space proves a tissue identity.",
+      "referenceIds": [
+        "connective-tissue"
+      ]
+    },
+    {
+      "id": "somatosensory-crossings",
+      "lessonIds": [
+        "somatosensory-pathways"
+      ],
+      "kind": "comparison",
+      "title": "Body and face: place the crossing before naming the side",
+      "headers": [
+        "Principal pathway",
+        "Relay and crossing",
+        "Thalamic destination"
+      ],
+      "rows": [
+        [
+          "Body vibration and conscious position",
+          "Dorsal-column nuclei in medulla → second-order crossing",
+          "Opposite VPL, then cortex"
+        ],
+        [
+          "Body pain and temperature",
+          "Dorsal horn → crossing near spinal entry over a few segments",
+          "Opposite ascending anterolateral system → thalamic targets including VPL"
+        ],
+        [
+          "Face somatic sensation",
+          "Trigeminal brainstem relays → major crossed pathways",
+          "VPM, then cortex; some projections are bilateral"
+        ]
+      ],
+      "caption": "Simplified principal pathways. VPL means ventral posterolateral and VPM ventral posteromedial. Parallel pain networks and trigeminal exceptions are described in the text.",
+      "observe": "Trace a right-foot vibration signal and a right-foot pain signal, marking where each first changes sides.",
+      "alt": "Body vibration crosses in the medulla; the main body pain-temperature route crosses in the cord; face input uses trigeminal relays and VPM.",
+      "referenceIds": [
+        "somatosensory-pathways"
+      ]
+    },
+    {
+      "id": "right-foot-vibration-route",
+      "lessonIds": [
+        "somatosensory-pathways"
+      ],
+      "kind": "flow",
+      "title": "Right-foot vibration: keep laterality through each relay",
+      "steps": [
+        "Right foot receptor → first-order neuron in a right dorsal root ganglion",
+        "Right dorsal column → right gracile nucleus in the medulla",
+        "Second-order internal arcuate fibres cross from right to left",
+        "Left medial lemniscus → left VPL thalamic nucleus",
+        "Thalamic projection → left primary somatosensory cortex"
+      ],
+      "caption": "Original side-labelled pathway map for the classic conscious mechanosensory route. It is a causal layout, not an anatomical projection or a specimen image.",
+      "observe": "Place a right T10 cord lesion before the medullary crossing and predict which foot’s vibration signal it interrupts.",
+      "alt": "The signal stays on the right through the spinal dorsal column, crosses in the medulla, then reaches left VPL and cortex.",
+      "referenceIds": [
+        "somatosensory-pathways"
+      ]
+    },
+    {
+      "id": "genomic-evidence-levels",
+      "lessonIds": [
+        "genetics-genome-foundations"
+      ],
+      "kind": "comparison",
+      "title": "Separate what a test detects from what a result means",
+      "headers": [
+        "Question",
+        "Example of evidence",
+        "Limit"
+      ],
+      "rows": [
+        [
+          "What differs?",
+          "A specified single-nucleotide or copy-number finding",
+          "Detection is bounded by assay coverage and validation"
+        ],
+        [
+          "What might it do?",
+          "Predicted or experimentally observed molecular effect",
+          "A molecular change alone need not establish a disease cause"
+        ],
+        [
+          "Does it explain the phenotype?",
+          "Gene–disease, inheritance, population and functional evidence",
+          "Uncertain significance is not a confirmed diagnosis"
+        ],
+        [
+          "What does a negative result mean?",
+          "No reported finding within the assay’s tested scope",
+          "Other regions, variant classes or tissue mosaicism may remain untested"
+        ]
+      ],
+      "caption": "Original interpretation framework using hypothetical examples. It is not a variant-classification protocol or personalised testing advice.",
+      "observe": "Explain how a positive detection can still leave causation uncertain, and why a negative targeted result does not exclude every genetic cause.",
+      "alt": "Variant detection, molecular effect and disease interpretation are separate evidential steps; both positive and negative results have scope limits.",
+      "referenceIds": [
+        "genetics-genome-foundations"
+      ]
     }
   ]
 }

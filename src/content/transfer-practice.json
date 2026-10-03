@@ -551,6 +551,558 @@
           "explanation": "Whether ATP is used does not determine tonicity; passive solute entry can still alter water balance."
         }
       ]
+    },
+    {
+      "id": "fluid-and-membrane-transport-application-1",
+      "topic": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "href": "/library/fluid-and-membrane-transport#apply-the-concept",
+      "prompt": "A neutral solute has a higher concentration outside a model cell. The membrane is impermeable to it. What changes immediately if the concentration difference is removed without adding a transport pathway?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "A rapid inward flux begins because the solute no longer needs a carrier.",
+          "explanation": "Removing the gradient cannot create a pathway through an impermeable barrier."
+        },
+        {
+          "text": "There is still no appreciable membrane flux; now there is also no concentration driving force.",
+          "explanation": "The barrier lacks a pathway both before and after the change. Removing the gradient also removes the potential driving force for net passive movement."
+        },
+        {
+          "text": "The membrane starts hydrolysing ATP to restore the gradient.",
+          "explanation": "No ATP-dependent transporter is specified; a concentration change does not make the lipid bilayer an ATPase."
+        }
+      ]
+    },
+    {
+      "id": "fluid-and-membrane-transport-application-2",
+      "topic": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "href": "/library/fluid-and-membrane-transport#apply-the-concept",
+      "prompt": "In a model epithelial cell, an apical protein couples inward Na⁺ movement to uphill glucose entry. A separate basolateral pump hydrolyses ATP to maintain the Na⁺ gradient. How should the apical protein be classified?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "An ion channel, because Na⁺ moves through it.",
+          "explanation": "The specified protein couples two solutes, including uphill glucose movement; it is a cotransporter, not an uncoupled ion pore."
+        },
+        {
+          "text": "A primary active pump, because the pathway ultimately depends on ATP.",
+          "explanation": "The separate basolateral pump uses ATP directly. Indirect ATP dependence does not mean the apical cotransporter hydrolyses ATP."
+        },
+        {
+          "text": "A secondary active cotransporter, because it uses downhill Na⁺ movement to drive glucose entry.",
+          "explanation": "The cotransporter uses energy stored in the Na⁺ electrochemical gradient, which the ATP-dependent pump maintains."
+        }
+      ]
+    },
+    {
+      "id": "fluid-and-membrane-transport-application-3",
+      "topic": "fluid-and-membrane-transport",
+      "subject": "physiology",
+      "title": "Cell transport: follow the energy",
+      "href": "/library/fluid-and-membrane-transport#apply-the-concept",
+      "prompt": "An open channel conducts a positively charged ion. Its concentration difference favours entry, but membrane voltage favours exit. What information is needed to predict net flow?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The combined electrochemical gradient, including ion concentrations and membrane voltage.",
+          "explanation": "Chemical and electrical forces can oppose each other; their combined effect determines passive net flow through an open selective channel."
+        },
+        {
+          "text": "Only the concentration difference, because channels ignore electrical forces.",
+          "explanation": "An ion is charged, so membrane voltage contributes to its driving force."
+        },
+        {
+          "text": "Only whether the channel has an ATP-binding site.",
+          "explanation": "The question specifies an open channel. ATP binding is not the information that resolves opposing chemical and electrical forces in this model."
+        }
+      ]
+    },
+    {
+      "id": "membrane-potentials-phase12-application-1",
+      "topic": "membrane-potentials",
+      "subject": "physiology",
+      "title": "Resting potential and the action potential",
+      "href": "/library/membrane-potentials#apply-the-concept",
+      "prompt": "A selective K⁺ conductance increases in a model cell at −70 mV. E_K remains −90 mV and other conditions initially stay fixed. Which initial change is expected?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Depolarisation towards +90 mV",
+          "explanation": "The specified potassium equilibrium potential is −90 mV. Reversing its sign changes the problem and does not follow from opening channels."
+        },
+        {
+          "text": "Hyperpolarisation towards −90 mV",
+          "explanation": "At −70 mV, potassium’s driving force favours outward positive current; more K⁺ conductance initially pulls voltage towards E_K."
+        },
+        {
+          "text": "A more negative E_K even though concentrations are fixed",
+          "explanation": "Channel number changes conductance. With temperature and concentrations fixed, it does not change the Nernst equilibrium potential."
+        }
+      ]
+    },
+    {
+      "id": "membrane-potentials-phase12-application-2",
+      "topic": "membrane-potentials",
+      "subject": "physiology",
+      "title": "Resting potential and the action potential",
+      "href": "/library/membrane-potentials#apply-the-concept",
+      "prompt": "A passive membrane’s voltage change would eventually reach 10 mV after a maintained current step. Its time constant is 20 ms. How much of that change has developed after 20 ms?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "About 6.3 mV",
+          "explanation": "The step response reaches 1 − exp(−1), about 63%, after one time constant: 0.63 × 10 mV ≈ 6.3 mV."
+        },
+        {
+          "text": "About 3.7 mV",
+          "explanation": "About 37% remains after one time constant of a decay. This question asks about the rising response to a maintained step."
+        },
+        {
+          "text": "The full 10 mV",
+          "explanation": "One time constant does not complete the response; the ideal exponential approaches its final value asymptotically."
+        }
+      ]
+    },
+    {
+      "id": "membrane-potentials-phase12-application-3",
+      "topic": "membrane-potentials",
+      "subject": "physiology",
+      "title": "Resting potential and the action potential",
+      "href": "/library/membrane-potentials#apply-the-concept",
+      "prompt": "At steady state, an ideal uniform passive cable has ΔV(x) = 10 exp(−x/λ) mV. What is ΔV at x = λ?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "About 6.3 mV",
+          "explanation": "That fraction describes the rise towards a final value in one time constant, not spatial decay over one length constant."
+        },
+        {
+          "text": "Exactly 10 mV",
+          "explanation": "That is the value at the input location x = 0. A passive cable attenuates the voltage change with distance."
+        },
+        {
+          "text": "About 3.7 mV",
+          "explanation": "At x = λ, exp(−x/λ) = exp(−1) ≈ 0.37. The remaining change is approximately 3.7 mV."
+        }
+      ]
+    },
+    {
+      "id": "biophysics-action-potentials-phase12-application-1",
+      "topic": "biophysics-action-potentials",
+      "subject": "biophysics",
+      "title": "Action potentials and impulse propagation",
+      "href": "/library/biophysics-action-potentials#apply-the-concept",
+      "prompt": "A second normal neuronal spike cannot be generated while many voltage-gated sodium channels remain inactivated. What best explains this absolute refractory interval?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Insufficient available channels for regenerative inward current",
+          "explanation": "Inactivated sodium channels must recover before they can support another normal regenerative response in this simplified model."
+        },
+        {
+          "text": "The sodium–potassium pump must recreate the entire sodium gradient after each spike",
+          "explanation": "A normal spike redistributes a small fraction of the bulk ions; immediate refractoriness mainly concerns channel state, not total gradient exhaustion."
+        },
+        {
+          "text": "The membrane has lost all permeability to potassium",
+          "explanation": "Outward potassium current may still be present. Total loss of potassium permeability is neither required nor the stated cause."
+        }
+      ]
+    },
+    {
+      "id": "biophysics-action-potentials-phase12-application-2",
+      "topic": "biophysics-action-potentials",
+      "subject": "biophysics",
+      "title": "Action potentials and impulse propagation",
+      "href": "/library/biophysics-action-potentials#apply-the-concept",
+      "prompt": "A teaching diagram labels a spontaneous diastolic depolarisation followed by a mainly Ca²⁺-dependent upstroke. Which cell model best fits those stated features?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "A typical myelinated neuronal axon",
+          "explanation": "The standard axonal model has a fast sodium-dependent upstroke and does not require spontaneous diastolic depolarisation."
+        },
+        {
+          "text": "An ordinary ventricular working myocyte",
+          "explanation": "Working ventricular cells have a fast sodium-dependent upstroke and a plateau; the stated pacemaker sequence is different."
+        },
+        {
+          "text": "A sinoatrial nodal pacemaker cell",
+          "explanation": "The combination of spontaneous diastolic depolarisation and a calcium-dependent upstroke fits the nodal pacemaker model."
+        }
+      ]
+    },
+    {
+      "id": "biophysics-action-potentials-phase12-application-3",
+      "topic": "biophysics-action-potentials",
+      "subject": "biophysics",
+      "title": "Action potentials and impulse propagation",
+      "href": "/library/biophysics-action-potentials#apply-the-concept",
+      "prompt": "Two hypothetical axons have the same diameter and intact excitable membranes. One is normally myelinated and the other is not. Which mechanism supports faster conduction in the myelinated axon?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "The same action potential travels through the myelin as an unchanged object",
+          "explanation": "Propagation requires current spread and renewed membrane excitation, not movement of an intact spike through the insulating sheath."
+        },
+        {
+          "text": "Reduced internodal leakage and charging load, with regeneration at nodes",
+          "explanation": "Myelin alters passive electrical properties between nodes, while voltage-gated currents regenerate the signal at nodes of Ranvier."
+        },
+        {
+          "text": "The sodium–potassium pump directly carries each spike to the next node",
+          "explanation": "The pump maintains gradients over time. It is not the rapid local-current mechanism that propagates each spike."
+        }
+      ]
+    },
+    {
+      "id": "synaptic-integration-phase12-application-1",
+      "topic": "synaptic-integration",
+      "subject": "physiology",
+      "title": "Neural integration: from release to a response",
+      "href": "/library/synaptic-integration#apply-the-concept",
+      "prompt": "In a controlled preparation, presynaptic excitation is intact but terminal calcium entry is prevented. Applied transmitter still evokes the usual postsynaptic response. Which stage is directly disrupted?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Postsynaptic receptor responsiveness",
+          "explanation": "The direct-transmitter test shows that the postsynaptic apparatus can respond under the stated conditions."
+        },
+        {
+          "text": "Action-potential conduction to the terminal",
+          "explanation": "The stem explicitly states that presynaptic excitation reaches the terminal; failure of arrival is not the specified defect."
+        },
+        {
+          "text": "Calcium-triggered transmitter release",
+          "explanation": "Preventing calcium entry removes the normal rapid trigger for vesicle fusion while leaving the tested postsynaptic response possible."
+        }
+      ]
+    },
+    {
+      "id": "synaptic-integration-phase12-application-2",
+      "topic": "synaptic-integration",
+      "subject": "physiology",
+      "title": "Neural integration: from release to a response",
+      "href": "/library/synaptic-integration#apply-the-concept",
+      "prompt": "Opening an inhibitory conductance whose reversal potential is near resting voltage produces little baseline voltage change but reduces a later excitatory voltage response. Which explanation fits?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Increased conductance lowers input resistance and shunts the excitatory input",
+          "explanation": "With a reversal near rest, the added conductance can reduce the voltage change produced by excitatory current without a large baseline hyperpolarisation."
+        },
+        {
+          "text": "Any inhibitory input must first make the membrane much more negative",
+          "explanation": "Inhibition can occur through shunting. A large hyperpolarisation is not required in the stated near-resting reversal-potential case."
+        },
+        {
+          "text": "The excitatory neurotransmitter has necessarily been enzymatically destroyed",
+          "explanation": "The observation concerns postsynaptic electrical conductance. It does not establish a change in transmitter breakdown."
+        }
+      ]
+    },
+    {
+      "id": "synaptic-integration-phase12-application-3",
+      "topic": "synaptic-integration",
+      "subject": "physiology",
+      "title": "Neural integration: from release to a response",
+      "href": "/library/synaptic-integration#apply-the-concept",
+      "prompt": "Assume a passive linear model at one recording site, a −70 mV baseline, a −55 mV firing threshold and two coincident +8 mV contributions. What does this simplified calculation predict?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "A peak of −62 mV, still below threshold",
+          "explanation": "That includes only one of the two stipulated simultaneous contributions. The model asks for their linear sum."
+        },
+        {
+          "text": "A peak of −54 mV, crossing the stated threshold",
+          "explanation": "−70 + 8 + 8 = −54 mV, which is more positive than −55 mV. This is the peak predicted by the stipulated passive sum. In an excitable neuron, crossing threshold recruits regenerative currents; the calculation does not give the actual action-potential peak."
+        },
+        {
+          "text": "An action potential with exactly twice the usual amplitude",
+          "explanation": "Adding graded inputs can reach threshold; it does not imply that the resulting regenerative action potential doubles in height."
+        }
+      ]
+    },
+    {
+      "id": "muscle-contraction-phase12-application-1",
+      "topic": "muscle-contraction",
+      "subject": "physiology",
+      "title": "Three muscle types, three calcium stories",
+      "href": "/library/muscle-contraction#apply-the-concept",
+      "prompt": "At a healthy adult motor end plate, which comparison correctly separates the end-plate potential from the muscle action potential?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The end-plate potential is graded and local; the muscle action potential is regenerative and propagates",
+          "explanation": "Ligand-gated cation conductance creates the local end-plate response, which can recruit voltage-gated sodium channels in adjacent muscle membrane."
+        },
+        {
+          "text": "Both are propagated action potentials generated by the same acetylcholine receptor channel",
+          "explanation": "The acetylcholine receptor produces a local graded response. Propagation depends on a separate voltage-gated excitability mechanism."
+        },
+        {
+          "text": "The end-plate potential is generated inside the SR and then released into the cleft",
+          "explanation": "The end plate is postsynaptic surface membrane. SR calcium release occurs later within the muscle excitation–contraction sequence."
+        }
+      ]
+    },
+    {
+      "id": "muscle-contraction-phase12-application-2",
+      "topic": "muscle-contraction",
+      "subject": "physiology",
+      "title": "Three muscle types, three calcium stories",
+      "href": "/library/muscle-contraction#apply-the-concept",
+      "prompt": "A hypothetical adult skeletal fibre has normal T-tubule action potentials and normal SR calcium stores, but voltage-sensor coupling to RyR1 is selectively disrupted. What is most directly reduced?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Acetylcholine synthesis in the motor-neuron terminal",
+          "explanation": "The stipulated defect is inside the muscle coupling machinery. It does not specify a transmitter-synthesis change upstream."
+        },
+        {
+          "text": "The amount of calcium stored in the SR before stimulation",
+          "explanation": "The stem explicitly states that stores are normal before stimulation; reduced release is different from an initially empty store."
+        },
+        {
+          "text": "The stimulus-evoked cytosolic calcium rise and resulting force",
+          "explanation": "Disrupted coupling prevents the normal signal from depolarisation to SR release, reducing troponin activation and force in the stated model."
+        }
+      ]
+    },
+    {
+      "id": "muscle-contraction-phase12-application-3",
+      "topic": "muscle-contraction",
+      "subject": "physiology",
+      "title": "Three muscle types, three calcium stories",
+      "href": "/library/muscle-contraction#apply-the-concept",
+      "prompt": "Which ATP-dependent process contributes directly to normal skeletal-muscle relaxation?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "ATP depletion locks myosin onto actin until calcium disappears",
+          "explanation": "Loss of ATP impairs detachment and calcium reuptake. It is not the normal controlled mechanism of relaxation."
+        },
+        {
+          "text": "SERCA pumps cytosolic calcium back into the SR",
+          "explanation": "ATP hydrolysis supports calcium reuptake, lowering cytosolic calcium and reducing activation of the thin-filament regulatory system."
+        },
+        {
+          "text": "ATP hydrolysis causes actin filaments to become shorter",
+          "explanation": "Filaments slide rather than shorten during contraction, and normal relaxation does not depend on shrinking actin filaments."
+        }
+      ]
+    },
+    {
+      "id": "connective-tissue-phase12-application-1",
+      "topic": "connective-tissue",
+      "subject": "histology",
+      "title": "Connective tissue and extracellular matrix",
+      "href": "/library/connective-tissue#apply-the-concept",
+      "prompt": "A fictional longitudinal section shows parallel collagen bundles with slender flattened nuclei between them. No cells in lacunae are described. Which interpretation uses both positive clues?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Hyaline cartilage identified solely by abundant matrix",
+          "explanation": "Abundant matrix alone is nonspecific. The parallel bundles and slender intervening nuclei support a fibrous connective-tissue pattern."
+        },
+        {
+          "text": "Dense regular connective tissue",
+          "explanation": "The aligned collagen architecture and fibroblast-like nuclear pattern together support dense regular connective tissue; they do not alone identify a specific organ."
+        },
+        {
+          "text": "Bone identified solely by the presence of collagen",
+          "explanation": "Bone contains collagen, but this description lacks positive bone architecture such as lamellae, osteocyte lacunae and canaliculi."
+        }
+      ]
+    },
+    {
+      "id": "connective-tissue-phase12-application-2",
+      "topic": "connective-tissue",
+      "subject": "histology",
+      "title": "Connective tissue and extracellular matrix",
+      "href": "/library/connective-tissue#apply-the-concept",
+      "prompt": "A paraffin section contains large clear cell profiles, thin cytoplasmic rims and flattened peripheral nuclei. What is the most defensible explanation?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "White adipocyte morphology with lipid removed during processing",
+          "explanation": "A large lipid droplet commonly displaces the nucleus. Routine processing can extract lipid, explaining the clear appearance without implying an empty living cell."
+        },
+        {
+          "text": "Brown adipose proven to be generating heat at the moment of sampling",
+          "explanation": "Brown adipocytes generally have multiple droplets; a routine section does not directly measure thermogenesis."
+        },
+        {
+          "text": "Extracellular cartilage lacunae without surrounding cells",
+          "explanation": "The described cellular outlines and peripheral nuclei fit adipocytes; cartilage requires a different cell–matrix relationship."
+        }
+      ]
+    },
+    {
+      "id": "connective-tissue-phase12-application-3",
+      "topic": "connective-tissue",
+      "subject": "histology",
+      "title": "Connective tissue and extracellular matrix",
+      "href": "/library/connective-tissue#apply-the-concept",
+      "prompt": "A bone specimen was decalcified before sectioning. What can a routine image of that section not directly establish?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Whether lamellar architecture is present",
+          "explanation": "Decalcification can preserve interpretable organic matrix architecture, although preparation and sampling still affect the view."
+        },
+        {
+          "text": "Whether cell profiles occupy spaces in the matrix",
+          "explanation": "Cell and lacunar relationships can remain visible after decalcification; those observations are distinct from measuring mineral."
+        },
+        {
+          "text": "The original mineral density of the living bone",
+          "explanation": "The preparation removes mineral. Inferring its original quantitative density directly from that section would exceed the evidence."
+        }
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations-phase12-application-1",
+      "topic": "genetics-genome-foundations",
+      "subject": "genetics",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "href": "/library/genetics-genome-foundations#apply-the-concept",
+      "prompt": "A hypothetical genomic report identifies a rare sequence variant but classifies its relationship to disease as uncertain. Which conclusion is supported?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "Rarity alone confirms that the variant caused the phenotype",
+          "explanation": "Rarity is one kind of evidence, not proof of causation. The stated interpretation remains uncertain."
+        },
+        {
+          "text": "The uncertain classification proves that the variant is harmless",
+          "explanation": "Uncertain significance does not establish either a pathogenic or a benign classification."
+        },
+        {
+          "text": "The variant is detected, but its causal significance remains unresolved",
+          "explanation": "Detection and interpretation are separate. Additional evidence may change classification; the report does not establish a confirmed molecular diagnosis."
+        }
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations-phase12-application-2",
+      "topic": "genetics-genome-foundations",
+      "subject": "genetics",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "href": "/library/genetics-genome-foundations#apply-the-concept",
+      "prompt": "A fictional laboratory assay is validated only to detect one specified familial single-nucleotide variant. Its result is negative. What does that result establish within the stated scope?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The assay did not detect that specified variant under its validated conditions",
+          "explanation": "A targeted negative result answers the defined assay question. It does not exclude unrelated variants or all genetic causes."
+        },
+        {
+          "text": "No genetic variation exists anywhere in the person’s genome",
+          "explanation": "The assay covers one defined variant, not the entire genome or every type of variation."
+        },
+        {
+          "text": "Every copy-number change and repeat expansion has been excluded",
+          "explanation": "Those variant classes are outside the explicitly stated scope; their absence cannot be inferred from this test."
+        }
+      ]
+    },
+    {
+      "id": "genetics-genome-foundations-phase12-application-3",
+      "topic": "genetics-genome-foundations",
+      "subject": "genetics",
+      "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+      "href": "/library/genetics-genome-foundations#apply-the-concept",
+      "prompt": "Why is a reference genome useful when analysing a sequence difference?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "It defines the only biologically normal sequence at every position",
+          "explanation": "A reference is a comparison framework. A difference from it is not automatically abnormal or disease-causing."
+        },
+        {
+          "text": "It supplies a coordinate and comparison framework",
+          "explanation": "A reference allows a difference to be described at a defined location. Clinical meaning still needs separate evidence."
+        },
+        {
+          "text": "It contains the complete genotype of every human population",
+          "explanation": "A single reference does not represent all human variation; broader pangenome frameworks address some of these limitations."
+        }
+      ]
+    },
+    {
+      "id": "somatosensory-pathways-phase12-application-1",
+      "topic": "somatosensory-pathways",
+      "subject": "physiology",
+      "title": "Somatosensory pathways and thalamic integration",
+      "href": "/library/somatosensory-pathways#apply-the-concept",
+      "prompt": "A fictional lesion selectively interrupts the right dorsal column at the T10 cord segment. Considering the classic pathway from the feet, which signal is most directly interrupted before its crossing?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Right-foot vibration and conscious proprioception",
+          "explanation": "Those first-order signals ascend in the right dorsal column to the medulla before the second-order pathway crosses."
+        },
+        {
+          "text": "Left-foot vibration because every sensory axon crosses at spinal entry",
+          "explanation": "Dorsal-column body mechanosensory axons do not follow the spinal-entry crossing pattern of the main anterolateral pathway."
+        },
+        {
+          "text": "Right-face touch relayed through the spinal dorsal column",
+          "explanation": "Much face sensation follows trigeminal pathways in the brainstem; it is not carried from the face through the thoracic dorsal column."
+        }
+      ]
+    },
+    {
+      "id": "somatosensory-pathways-phase12-application-2",
+      "topic": "somatosensory-pathways",
+      "subject": "physiology",
+      "title": "Somatosensory pathways and thalamic integration",
+      "href": "/library/somatosensory-pathways#apply-the-concept",
+      "prompt": "Which pairing describes the principal ventral posterior thalamic relays in this simplified somatosensory comparison?",
+      "answer": 2,
+      "options": [
+        {
+          "text": "VPL for face; VPM for body",
+          "explanation": "That reverses the principal body-versus-face assignment used in this lesson."
+        },
+        {
+          "text": "The reticular nucleus for both direct third-order projections to S1",
+          "explanation": "The reticular nucleus provides inhibitory modulation; it is not the principal ascending somatic relay projecting directly to S1."
+        },
+        {
+          "text": "VPL for body; VPM for face",
+          "explanation": "Ventral posterolateral relays body information, while ventral posteromedial is associated with the main trigeminal face pathway."
+        }
+      ]
+    },
+    {
+      "id": "somatosensory-pathways-phase12-application-3",
+      "topic": "somatosensory-pathways",
+      "subject": "physiology",
+      "title": "Somatosensory pathways and thalamic integration",
+      "href": "/library/somatosensory-pathways#apply-the-concept",
+      "prompt": "A fictional lesion interrupts the right anterolateral tract at the T10 cord segment. Which principal signal from well below that level is most directly interrupted?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "Right-foot vibration still ascending before its medullary crossing",
+          "explanation": "This describes the right dorsal-column route, not the specified anterolateral tract."
+        },
+        {
+          "text": "Left-foot pain-temperature input that has already crossed in the spinal cord",
+          "explanation": "The main left-sided pain-temperature pathway crosses near its entry levels and then ascends in the right anterolateral system."
+        },
+        {
+          "text": "Face touch that crossed at the T10 cord segment",
+          "explanation": "The principal trigeminal face pathways relay and cross in the brainstem; T10 is not their crossing site."
+        }
+      ]
     }
   ]
 }

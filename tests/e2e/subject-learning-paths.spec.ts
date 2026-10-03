@@ -43,7 +43,7 @@ for (const id of newEntryLessonIds) {
       { ...lesson.question, options: lesson.question.options.map(o=>({text:o.text,explanation:o.reason})) },
       ...studio.questions.filter(q=>q.topic===id), ...transfer.questions.filter(q=>q.topic===id),
     ];
-    expect(questions).toHaveLength(4);
+    expect(questions).toHaveLength(id === "genetics-genome-foundations" ? 7 : 4);
     for (const q of questions) {
       const panel = page.locator('.practice-question:visible').filter({ hasText: q.prompt });
       await expect(panel.getByRole('status')).toHaveCount(0);
@@ -92,7 +92,7 @@ for (const id of newEntryLessonIds) {
     const notes = page.getByLabel('My oral examination notes', { exact: true });
     await notes.fill('State the mechanism and its assumptions.');
     const checks = page.locator('section[aria-labelledby="summary-checklist-title"]:visible').getByRole('checkbox');
-    await expect(checks).toHaveCount(4); await checks.first().focus(); await page.keyboard.press('Space');
+    await expect(checks).toHaveCount(lesson.summaryChecklist!.length); await checks.first().focus(); await page.keyboard.press('Space');
     await expect(checks.first()).toBeFocused();
     await page.reload(); await expect(checks.first()).toBeChecked();
     await expect(notes).toHaveValue('State the mechanism and its assumptions.');

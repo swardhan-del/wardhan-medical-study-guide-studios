@@ -47,7 +47,8 @@ export function loadMeasurement(): Promise<void> {
   if (loading) return loading;
   loading = (async () => {
     try {
-      const response = await fetch("/api/measurement", { credentials: "omit", referrerPolicy: "no-referrer", cache: "no-store", signal: AbortSignal.timeout(2000) });
+      // Authentication redirects on protected previews are not measurement configuration.
+      const response = await fetch("/api/measurement", { credentials: "omit", redirect: "error", referrerPolicy: "no-referrer", cache: "no-store", signal: AbortSignal.timeout(2000) });
       config = response.ok ? validPublicConfig(await response.json()) : disabledMeasurement;
     } catch { config = disabledMeasurement; }
     ready = true; notify();
@@ -79,7 +80,7 @@ export function learningEvent(input: MeasurementEvent): void {
   // No persistent queue, retry, page URL, referrer, cookie, answer or identity fields.
   try {
     void fetch("/api/measurement", {
-      method: "POST", credentials: "omit", referrerPolicy: "no-referrer", cache: "no-store",
+      method: "POST", credentials: "omit", redirect: "error", referrerPolicy: "no-referrer", cache: "no-store",
       headers: { "Content-Type": "application/json", "X-Measurement-Consent": config.consentVersion },
       body: JSON.stringify(event), signal: controller.signal,
     }).catch(() => {}).finally(() => { clearTimeout(timeout); pending.delete(controller); });

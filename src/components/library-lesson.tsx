@@ -221,11 +221,11 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           <AnatomyPractice lessonId={lesson.id} />
           <span id="studio-practice" /><span id="apply-the-concept" />
           {[...retrievalQuestions, ...applicationQuestions]
-            .map((q) => (
+            .map((q, index) => (
               <PracticeQuestion
                 key={q.id}
                 item={q}
-                title={"heading" in q && typeof q.heading === "string" ? q.heading : "Apply the concept in a different setting"}
+                title={"heading" in q && typeof q.heading === "string" ? q.heading : `Application question ${index + 1}`}
               />
             ))}
           <section

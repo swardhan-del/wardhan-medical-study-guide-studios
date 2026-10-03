@@ -76,3 +76,14 @@ test('Git detection distinguishes a checkout from exported and incomplete deploy
     assert.equal(hasGitWorktree(root),true);
   } finally { rmSync(root,{recursive:true,force:true}); }
 });
+
+test('public bibliography home paths remain valid while local home roots and private references stay blocked', () => {
+  const url='https://histology.leeds.ac.uk/home/bone/bone/';
+  assert.equal(containsPrivateReference(url),false);
+  const q=record();q.sources[0].url=url;assert.deepEqual(check(q),[]);
+  for(const path of ['/home/author/master.pdf','/home/author/my guide.pdf','C:\\home\\author\\source.docx','Read /home/author/master.pdf','Read\n/home/author/master.pdf','`/home/author/master.pdf`','https://example.org/view?path=%252Fhome%252Fauthor%252Fmaster.pdf',`${url} and /home/author/master.pdf`]){
+    assert(containsPrivateReference(path),path);
+    assert(containsPrivateReference({citation:path}),path);
+  }
+  for(const path of [`${url}.private/master.pdf`,'https://example.org/.private/source.pdf','https://example.org/Users/name/source.pdf'])assert(containsPrivateReference(path),path);
+});
