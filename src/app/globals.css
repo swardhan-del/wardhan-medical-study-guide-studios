@@ -2609,6 +2609,10 @@ select:focus-visible {
 .concept-sequence summary::-webkit-details-marker {
   display: none;
 }
+/* Let the title shrink beside its number and disclosure icon at enlarged text sizes. */
+.concept-sequence summary > span:nth-child(2) {
+  min-width: 0;
+}
 .concept-sequence summary:focus-visible {
   outline: 3px solid var(--teal);
   outline-offset: 3px;
@@ -2620,6 +2624,9 @@ select:focus-visible {
   letter-spacing: 0.1em;
 }
 .concept-expand {
+  flex: 0 0 auto;
+  line-height: 1;
+  letter-spacing: normal;
   margin-left: auto;
   font-weight: 400;
   font-size: 1.5rem;
@@ -4052,7 +4059,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .learning-home .hero-aside { gap: 12px; }
 .learning-home .hero-aside h2 { font-size: 1.6rem; margin-bottom: 1rem; }
 .concept-heading h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.12; }
-.concept-page { padding-top: 24px; }
+.concept-page { padding-top: 24px; overflow-wrap: anywhere; }
 .concept-heading { padding-block: 0; margin: 20px 0 16px; }
 .concept-heading h1 { margin-block: 12px 16px; }
 .concept-heading .action-row { margin-top: 18px; }
@@ -4148,7 +4155,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 @media (max-width:620px) {
   .site-header nav { width:100%; }
   .nav-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px 12px; }
-  .nav-link { display:flex; align-items:center; min-height:44px; padding-block:8px; }
+  .nav-link { display:flex; align-items:center; min-height:44px; padding-block:8px; overflow-wrap:anywhere; }
   .lesson-review .action-row, .continue-card .action-row { align-items:stretch; }
   .lesson-review .button, .continue-card .button { width:100%; white-space:normal; }
 }

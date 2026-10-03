@@ -1,3 +1,38 @@
+# Codex handoff — Phase 14 technical readiness continuation
+
+Checkpoint: 3 October 2026. Branch: `feat/phase-twelve-lesson-preview`. Draft PR: https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/29. Starting and unchanged teaching/question version: `f9f95e43dec2f23787ec1ccf614da864472440d2`. This entry accompanies the technical changes; its containing commit and the PR head identify the new renderer/reference version. Keep PR #29 draft. **Do not merge, deploy production or clear review/index gates.**
+
+## Completed work and evidence boundary
+
+- Both full GitHub CI runs for `f9f95e4` passed, including browser checks: PR run `37125616373` and push run `37125613189`. This resolves the earlier handoff's pending-CI item.
+- Read and reconciled the queue, packets, findings, source audit and quality/visual standards. Appended haemostasis as item 9 while retaining the original eight-route order. Added [technical readiness](PHASE_FOURTEEN_TECHNICAL_READINESS.md) with per-lesson observations, exact teaching fingerprints, visual IDs, completed technical work and remaining human decisions.
+- No clinical professor's signed review was located in the bounded project-file search. No lesson, version or review scope can be recorded as independently reviewed. The exact missing record fields and search limits are documented; there are no fabricated reviewer credentials or approval dates.
+- Fixed enlarged-text horizontal overflow in lesson disclosures, long links and mobile navigation. Fixed duplicate visual landmark names in the genetics/subject-entry rendering. New whole-page Axe and keyboard tests cover all nine routes at desktop/mobile and at 320 CSS px with 200% root text size and increased spacing. Automated/AI checks do not complete human readability or assistive-technology review.
+- Corrected the neuronal-conductance figure's supporting link from a chemical-synapse chapter to OpenStax's action-potential chapter, verified on 2026-10-03. Original artwork, credit and historical rights record are preserved. Reconciled documented permission and exact hashes for four figure derivatives plus 16 existing recap files. This does not clear current original-layout scientific/release review or private STEM candidates.
+- Teaching JSON, all existing question identities/options/keys, routes, saved-progress data/registries, private originals, asset bytes, quality statuses/evidence/dates and frozen legacy fixtures remain unchanged. All nine lessons still have `medical-review-pending`, `rights-review-pending`, `noindex-pending-review` and pending accessibility/readability. The clinical evidence registry remains empty.
+
+## Validation at this checkpoint
+
+- Content/quality/generated-content/private-boundary checks: passed, including in the production build.
+- **136 unit tests passed**; lint and typecheck passed.
+- Fresh production build and deployment-trace/rendered-privacy checks passed.
+- **92 focused Playwright checks passed** on desktop/mobile, including 18 new whole-page accessibility/reading-layout checks plus existing explained feedback, notes/answer/schedule persistence and noindex checks. The tests first caught actual overflow and a duplicate landmark; their assertions were retained. AI-inspected captures are technical observations, not human accessibility approval.
+- `git diff --check`, public documentation links, 20 relevant media hashes, unchanged protected records and zero tracked private files verified.
+- The stalled local build exposed installed Next.js 16.3.4 beside SWC 16.3.8. After stopping that task-owned build, `npm ci` restored the locked 16.3.8 pair and the fresh build passed. No cause for that installed-package drift is established; no framework, dependency version or lockfile change was made.
+- Production dependency audit: zero vulnerabilities. The existing development-only `braces` advisory still affects five lint-toolchain packages; latest registry version 3.0.3 remains affected. No forced major lint-toolchain downgrade was applied. Follow-up: https://github.com/advisories/GHSA-vfj7-8cjw-p6xm.
+
+Push, the new commit's CI and hosted preview are verified after this committed checkpoint. The PR body and task report record their immutable SHA/URL and actual results; do not substitute the starting head's success for the new head. Local logs, captures, inventory and temporary preview access state stay in ignored `output/review-readiness/` and `test-results/`; remove credentials after verification.
+
+Production before this continuation: `dpl_2hXaR297eBxDVFr64ZbMaHanCjh2`, commit `caba7ad1c1dccbcfd9e74ec9f898944f98c46397`, READY, https://wardhan-medical-study-guide-studios.vercel.app. No merge, production deployment, environment or domain change is authorised.
+
+## Next safe step
+
+Use the nine-route queue for version-bound human clinical/subject, assessment, visual scientific/rights, editorial/readability and assistive-technology review. Supply the missing signed clinical record if it exists elsewhere; do not extend its coverage beyond the actual lesson versions and scope. Complete the outstanding visuals, re-review corrections, and record authorised public-safe evidence only when its conditions are met. None of the nine revised lessons is ready for release merely because technical checks pass. Keep raw intake and unapproved assets private.
+
+---
+
+# Historical haemostasis handoff
+
 # Codex handoff — haemostasis learning-path upgrade
 
 Checkpoint: 3 October 2026. Branch: `feat/phase-twelve-lesson-preview`. Draft PR: https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/29. Starting remote commit: `d8b47048315cbf475f9d2fefd6d1a59c5a45e62c`. This entry accompanies the implementation; the PR head identifies its immutable commit and subsequent remote checks.

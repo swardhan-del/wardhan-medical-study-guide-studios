@@ -32,8 +32,14 @@ No new factual correction was identified beyond the source-backed Phase 13 corre
 
 ## Unchanged gates and disposition
 
-All eight `medical-review-pending`, `rights-review-pending`, and `noindex-pending-review` gates remain unchanged. Human editorial/readability/accessibility review remains pending. Review-evidence fields, evidence records and review dates are unchanged; this internal triage must not be entered as independent review or release evidence.
+### Subsequent technical continuation from `f9f95e4`
 
-Disposition: documentation prepared for qualified human review, with no content change or release approval. Lesson text, question IDs, answers and their order, routes, progress data and visuals are unchanged. PR #29 remains a draft. No merge, production deployment or indexing change is authorised by this work. Use the queue's version-bound record requirements and review one route at a time; any later evidence must apply to the actual content version and assessed scope.
+The earlier findings above remain a historical triage checkpoint. A later, broader technical pass identified enlarged-text page overflow, a duplicate genetics visual landmark name, and an inappropriate chemical-synapse supporting reference on the neuronal-conductance figure. These concrete presentation/reference corrections and their verification are recorded in [technical readiness](PHASE_FOURTEEN_TECHNICAL_READINESS.md). The lesson teaching and questions themselves are unchanged in this continuation; it does not claim a new independent medical audit.
+
+The queue now includes the haemostasis upgrade as item 9. No professor's signed, version-bound review was located in the available files, so no clinical coverage, qualifications, dates or acceptance are recorded. Existing original-file permission is reconciled for 20 unchanged media derivatives only; current visual scientific/release decisions and human editorial/readability/accessibility approval remain pending. None of these technical records is release evidence.
+
+All nine `medical-review-pending`, `rights-review-pending`, and `noindex-pending-review` gates remain unchanged. Human editorial/readability/accessibility review remains pending. Review-evidence fields, evidence records and review dates are unchanged; this internal triage must not be entered as independent review or release evidence.
+
+Disposition: technical corrections and evidence reconciliation prepared for qualified human review, with no release approval. Lesson teaching, question IDs, answers and their order, routes, progress data and visual asset bytes are unchanged; presentation and the one supporting reference changed as recorded above. PR #29 remains a draft. No merge, production deployment or indexing change is authorised by this work. Use the queue's version-bound record requirements and review one route at a time; any later evidence must apply to the actual content version and assessed scope.
 
 A qualified human reviewer must review each lesson on the exact PR #29 commit, record version-bound findings, then any correction must be re-reviewed before merge or indexing.

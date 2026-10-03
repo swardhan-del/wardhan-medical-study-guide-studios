@@ -31,7 +31,7 @@ export function SubjectEntryContent({ lesson }: { lesson: LibraryLesson }) {
           credit="Original teaching comparison, Wardhan Medical Study Guide Studios; AI-assisted, source-checked. All values and labels are provided as accessible text.">
           <VisualComparison title={visual.title} headers={visual.headers} rows={visual.rows} />
         </StudyVisual>
-        <LessonVisuals lessonId={lesson.id} />
+        <LessonVisuals lessonId={lesson.id} label="Additional visual comparisons and sequences" />
       </section>}
       conceptTitle="Question 1"
       applicationIntro="Use the mechanism and the stated assumptions to justify one best answer. Cases and numerical values are hypothetical teaching examples."

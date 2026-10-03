@@ -23,6 +23,12 @@ The focus and high-risk checks below are instructions for qualified reviewers, n
 
 ## Required checks for every packet
 
+### Added haemostasis packet after the original eight
+
+The haemostasis upgrade at `f9f95e43dec2f23787ec1ccf614da864472440d2` adds a ninth review target without changing the order above: `/library/blood-and-haemostasis`. Review endothelial nitric oxide/prostacyclin restraint; exposed matrix and immobilised vWF; GPIb-IX-V capture versus activated αIIbβ3–fibrinogen bridging (not an exclusive ligand map); thrombin, XIIIa and anticoagulant/fibrinolytic control. Check the exact keys and every alternative for `studio-apply-blood-endothelium-restraint` and `studio-apply-blood-adhesion-versus-aggregation`, as well as the preserved questions. Review the older short recap's narrower scope and the still-pending mechanism visual. The same version-bound return record and all shared checklists apply.
+
+For the current technical findings, existing asset-permission scope and missing signed clinical evidence, see [technical readiness](../PHASE_FOURTEEN_TECHNICAL_READINESS.md). Neither that AI-assisted record nor a passing browser check completes this packet.
+
 Keep these boxes uncompleted in this preparation document. Record actual review outcomes in separate version-bound notes, including anything not assessed.
 
 - [ ] **Objectives and claims:** compare objectives, teaching steps, terminology, mechanisms and limitations with authoritative sources supporting the specific claims. Identify unsupported generalisations and differences between experimental models and human clinical conclusions.
