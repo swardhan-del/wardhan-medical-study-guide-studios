@@ -17,6 +17,13 @@ test("first session persists stages, completion and saved summaries, then recomm
   await page.goto("/");
   await page.getByRole("link", { name: "Choose my first subject", exact: true }).click();
   await page.getByRole("link", { name: "Start Biochemistry", exact: true }).click();
+  await expect(page).toHaveURL(/\/study\/biochemistry#subject-topic-map$/);
+  const map = page.locator('[data-curriculum="biochemistry"]:visible');
+  await expect(map.locator(':scope > li').first()).toContainText("Start here: Water, pH, buffers and thermodynamics");
+  // Select the existing enzyme lesson after checking the beginner-first map.
+  // The progress assertions below still exercise the same stable lesson ID.
+  await map.getByRole("link", { name: "Enzymes, kinetics and regulation →", exact: true }).click();
+  await expect(page).toHaveURL(`/library/${id}`);
   const journey = page.getByRole("region", { name: "Your lesson journey" });
   await expect(journey.getByRole("progressbar")).toHaveAttribute("value", "0");
   await journey.getByRole("button", { name: "Mark explanation reviewed" }).click();
@@ -48,8 +55,10 @@ test("first session persists stages, completion and saved summaries, then recomm
   await page.goto("/study");
   await page.locator("#saved-summaries summary").click();
   await expect(page.locator("#saved-summaries")).toContainText(lesson.recall.answer);
-  await page.getByRole("link", { name: /^Next: Explain enzyme kinetics/ }).click();
-  await expect(page).toHaveURL(/\/library\/enzyme-kinetics$/);
+  // The enzyme sampler is outside the three introductory curriculum links.
+  // Its existing course continuation returns to protein structure; preserve it.
+  await page.getByRole("link", { name: "Next: Protein structure and collagen", exact: true }).click();
+  await expect(page).toHaveURL(/\/library\/protein-structure$/);
 });
 
 test("cross-tab updates, reopening, export/import and reset include new progress fields", async ({ page, context }) => {
