@@ -1,3 +1,31 @@
+# Codex handoff — foundational curriculum gaps
+
+Checkpoint: 4 October 2026. Branch: `feat/foundational-curriculum-gap-fixes`. Based on `c94fc2be4fe64149bd5be5c2ce4631ce71811cb7` from draft PR #29. The new draft PR is stacked on `feat/phase-twelve-lesson-preview`; it must not merge or deploy production. The commit containing this checkpoint and its remote preview are recorded in the new draft PR.
+
+The inventory, exact stage order, missing foundations, private queue limitations, preserved work and next review steps are in [the curriculum gap audit](FOUNDATIONAL_CURRICULUM_GAP_AUDIT.md).
+
+- Added one typed curriculum-order source and derived the existing subject maps/paths from it. Corrected physiology, cell biology and biochemistry; visibly mark absent foundations as Planned. Physiology's existing renal course is stage six.
+- Preserved all lesson teaching, routes, question IDs and answer order, progress/notes formats, original eight drafts plus haemostasis, quality/review evidence, visual assets, source records, anatomy's six stages, and the established anatomy/histology/genetics/biophysics orientation starts. No frozen preservation baseline was refreshed.
+- Reused existing molecular, metabolic and physiology lessons and their visuals. No harvested or new visual was published; scientific, clinical, rights and human accessibility/readability gates remain pending.
+- The ignored private queue groups 914 intake files into 778 provisional records: 181 readable hashes and 597 unresolved cloud-placeholder candidates. It groups 136 confirmed duplicate occurrences and records three existing-public-byte matches without inferring approval. All entries remain non-publishable. The earlier eight conversion briefs are retained. No raw filenames or private source contents are transferred to this documentation or public output.
+- Added curriculum validation to content checks/prebuild, with regression coverage for order, genuine targets, planned gaps, mobile/keyboard navigation and preserved starts. Verification results follow below.
+
+## Verification for this checkpoint
+
+- Passed full content checks, including quality, visual-learning, source-boundary, generated-content and the new curriculum validation.
+- Passed all **140 unit tests**, lint, typecheck and the production build, including rendered-output and deployment-trace privacy checks.
+- Passed **132 focused browser checks** across desktop/mobile: curriculum order and real targets, pending foundations, renal access, protected subject starts, explained answers, old notes/progress, nine draft lessons, visual descriptions, keyboard/reduced-motion use and 320-pixel enlarged-text reflow. Inspected desktop/mobile captures. These are automated and AI-assisted technical checks, not human accessibility approval.
+- Fixed the observed long-word overflow in subject coverage at 320 pixels with doubled root text and increased spacing. Six initial viewport cases failed; all passed after allowing text to wrap, without hiding overflow or removing assertions.
+- Verified 196 protected asset/content/fixture files unchanged. No duplicate lesson/catalog/visual IDs or question IDs were introduced: 242 library lesson IDs, 262 catalog IDs, 54 lesson-visual IDs, 12 public-figure IDs and 927 registered question IDs remain unique. Source/visual JSON keys are unique; all existing source and asset records remain byte-equivalent. Private intake hash/semantic limits are recorded in the audit.
+- Zero tracked private files; Git and Vercel exclusions retained. Local scans found no raw intake filenames in public source or generated HTML. The frozen Phase 13 fixture, legacy quality baseline, review evidence and lockfile are unchanged.
+- `npm ci` completed without lockfile edits; production dependency audit reported zero vulnerabilities. The existing development-only dependency advisory remains outside this change, as recorded in the historical handoff.
+- Local environment note: normal native SWC loading stalled inside the macOS loader even after dependency restoration. An identical SHA-256-verified copy of the locked SWC binary loaded from a temporary local path. Local build/browser servers used Next's binding-path override for that binary; no package, framework, signing policy or deployment setting changed. Remote CI and Vercel use their normal installation/build commands.
+- `git diff --check` passed. Remote CI and preview are not predeclared at commit creation: the new draft PR records the immutable head and subsequent hosted verification. Production baseline remains `caba7ad1c1dccbcfd9e74ec9f898944f98c46397` / `dpl_2hXaR297eBxDVFr64ZbMaHanCjh2`; no production action is authorised.
+
+Next safe step: consult the new draft PR for final remote/preview checks, then obtain version-bound educator and human accessibility review of the changed navigation. For lesson/visual work, follow the audit's per-candidate deduplication, scientific and rights review steps and PR #29's existing gates. The absent full foundations remain planned; raw material stays private.
+
+---
+
 # Codex handoff — Phase 14 technical readiness continuation
 
 Checkpoint: 3 October 2026. Branch: `feat/phase-twelve-lesson-preview`. Draft PR: https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/29. Starting and unchanged teaching/question version: `f9f95e43dec2f23787ec1ccf614da864472440d2`. This entry accompanies the technical changes; its containing commit and the PR head identify the new renderer/reference version. Keep PR #29 draft. **Do not merge, deploy production or clear review/index gates.**

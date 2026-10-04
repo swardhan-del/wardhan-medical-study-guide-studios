@@ -1,3 +1,4 @@
+import { curriculumStartHref } from "@/content/curriculum-order";
 import { subjectHubs } from "@/content/subject-hubs";
 import { studySubjects, subjectLessons } from "@/lib/study-collections";
 import Link from "next/link";
@@ -23,7 +24,7 @@ export function SubjectCard({ subject }: { subject: { id: string; title: string;
         Explore subject <span aria-hidden="true">↗</span>
       </Link>
       <div className="action-row">
-        <Link className="text-link" href={`/library/${hub.firstLesson}`} aria-label={`Start lesson for ${subject.title}`}>Start lesson</Link>
+        <Link className="text-link" href={curriculumStartHref(subject.id)} aria-label={`Start here for ${subject.title}`}>Start here</Link>
         <Link className="text-link" href={`/library/${hub.firstLesson}#concept-check-title`} aria-label={`Try the quiz for ${subject.title}`}>Try the quiz</Link>
       </div>
     </article>

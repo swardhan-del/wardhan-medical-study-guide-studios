@@ -1,3 +1,4 @@
+import { curriculumOrders, curriculumStartHref } from '../../src/content/curriculum-order';
 import { test, expect } from '@playwright/test';
 import { subjectHubs, newEntryLessonIds } from '../../src/content/subject-hubs';
 import { subjectInterests } from '../../src/content/subjects';
@@ -11,7 +12,7 @@ for (const [subject, hub] of Object.entries(subjectHubs)) {
     const title = subjectInterests.find(s=>s.id===subject)!.title;
     await page.goto('/');
     const card = page.locator(`article.subject-card#${subject}:visible`);
-    await expect(card.getByRole('link', { name: `Start lesson for ${title}`, exact: true })).toHaveAttribute('href', `/library/${hub.firstLesson}`);
+    await expect(card.getByRole('link', { name: `Start here for ${title}`, exact: true })).toHaveAttribute('href', curriculumStartHref(subject));
     await expect(card.getByRole('link', { name: `Try the quiz for ${title}`, exact: true })).toHaveAttribute('href', `/library/${hub.firstLesson}#concept-check-title`);
     await card.getByRole('link', { name: `Explore subject for ${title}`, exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`/study/${subject}$`));
@@ -19,7 +20,7 @@ for (const [subject, hub] of Object.entries(subjectHubs)) {
     await expect(page.getByRole('heading', { name: 'Why it matters', exact: true })).toBeVisible();
     await expect(page.getByText(hub.covers, { exact: true })).toBeVisible();
     const map = page.locator(subject==='anatomy' ? '#anatomy-course-map:visible' : '#subject-topic-map:visible');
-    await expect(map.locator('ol > li')).toHaveCount(subject==='anatomy' ? 6 : hub.topics.length);
+    await expect(map.locator('ol').first().locator(':scope > li')).toHaveCount(curriculumOrders[subject].stages.length);
     await page.getByRole('link', { name: 'Start learning', exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`/library/${hub.firstLesson}$`));
     await page.locator('.concept-heading:visible').getByRole('link', { name: /Begin the Knowledge Check|Try the question/ }).click();
