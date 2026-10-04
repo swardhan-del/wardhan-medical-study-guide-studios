@@ -1,4 +1,27 @@
 import { test, expect } from "@playwright/test";
+import fingerprints from '../../scripts/private-intake-fingerprints.json';
+import { inspectText, makePolicy } from '../../scripts/privacy-boundary.mjs';
+
+test('visual intake remains absent from lesson HTML, metadata, sitemap and public routes', async ({ page, request }) => {
+  const policy = makePolicy(fingerprints);
+  const routes = ['chromatin-access-and-topology', 'er-protein-quality-control', 'cell-signaling', 'autonomic-signalling', 'indicator-dilution'];
+  for (const id of routes) {
+    const response = await page.goto(`/library/${id}`);
+    expect(response?.status()).toBe(200);
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    expect(inspectText(await response!.text(), policy, { publicSurface: true })).toEqual([]);
+    expect(inspectText(await page.content(), policy, { publicSurface: true })).toEqual([]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  }
+  const sitemap = await request.get('/sitemap.xml');
+  expect(sitemap.status()).toBe(200);
+  expect(inspectText(await sitemap.text(), policy, { publicSurface: true })).toEqual([]);
+  for (const path of ['/.private/conversion-queue/foundational-curriculum/review-ready-shortlist.json', '/.private/conversion-queue/foundational-curriculum/phase-fifteen/review-records.json', '/.private/source-intake/2026-10-04/', '/canonical/synthetic.png', '/label-inspection/synthetic.json']) {
+    const response = await request.get(path);
+    expect(response.status()).toBe(404);
+    expect(inspectText(await response.text(), policy, { publicSurface: true })).toEqual([]);
+  }
+});
 
 test("public and denied pages enforce browser security boundaries", async ({ request }) => {
   for (const route of ["/", "/library", "/review", "/.env", "/.git/config", "/.private/catalog.json"]) {

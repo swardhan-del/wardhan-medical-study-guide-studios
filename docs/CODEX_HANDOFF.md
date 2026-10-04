@@ -1,3 +1,39 @@
+# Codex handoff — Phase 15 visual review and safe integration planning
+
+Checkpoint: 4 October 2026. Branch: `feat/foundational-curriculum-gap-fixes`. Continue draft [PR #30](https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/30), still stacked on PR #29. Verified starting remote head: `bf4f3e3a6f475071ba8ecc04283866fda61bfdd6`; both GitHub validation runs and its Vercel preview passed. The commit containing this entry is the Phase 15 checkpoint (`git log -1 -- docs/PHASE_FIFTEEN_VISUAL_REVIEW_PLAN.md`). Exact new-head CI and preview verification are recorded on PR #30 after push, not inferred from the previous head.
+
+## Review outcome
+
+Read the existing private queue, canonical manifest, quality/review evidence, visual-learning standard, current lessons/visuals and typed curriculum order. [The public-safe integration plan](PHASE_FIFTEEN_VISUAL_REVIEW_PLAN.md) records the decisions. Four version-bound private records now contain exact hashes/origins, duplicate locations, placement, objectives, scientific questions, separate commercial rights/attribution fields, proposed captions/alt text/observation prompts and mobile requirements. They are linked from the existing private queue and shortlist; no candidate or visual was duplicated.
+
+| Record | Existing lesson(s) | Scientific approval | Commercial/publication rights | Accessibility/caption status | Integration |
+| --- | --- | --- | --- | --- | --- |
+| V15-01 — chromatin | `chromatin-access-and-topology` | Pending | Pending | Draft requirements; human review pending | Blocked |
+| V15-02 — ER quality control | `er-protein-quality-control` | Pending | Pending | Draft requirements; human review pending | Blocked; reuse existing trafficking flow for successful export |
+| V15-03 — receptor signalling | `cell-signaling`, `autonomic-signalling` | Pending | Pending | Draft requirements; human review pending | Blocked; one shared future representation only |
+| V15-04 — indicator dilution | `indicator-dilution` | Pending | Pending | Draft requirements; human review pending | Blocked |
+
+No qualifying scientific sign-off or image-publication permission for these candidates was found in the current project evidence reviewed. Original creator, rights holder and required artwork attribution remain unresolved. A professor’s scientific review cannot establish image rights. A current released visual or private-site use does not establish independent clinical review. No approval evidence, quality status, review date or no-index gate was changed.
+
+The local priority note appeared under a Dropbox conflicted-copy name. Its hash exactly matched the historical manifest. Attempted a copy-only restoration; Dropbox subsequently renamed that copy as a second conflicted copy. Both identical copies and the historical manifest are preserved. Do not repeatedly rename them while sync is conflicting; the new private review package is intact. No original image was moved, deleted, edited or uploaded. Rechecked all 914 source occurrences and 640 canonical copies: zero unreadable, 156 exact duplicate groups, 17 retained review objectives, 496 reuse recommendations, 127 excluded, four ready for human inspection and zero publishable. Local audit aids, OCR and review packets remain ignored and undeployed.
+
+## Technical changes and verification
+
+- Added `content:privacy` to content validation and prebuild, plus a postbuild scan. Working files and Git-index bytes are checked separately; existing public assets retain their exact release path/hash allowlist. The new digest-only guard contains no raw names, paths, OCR or images. It blocks known renamed source bytes, encoded names, copied OCR, canonical locations, embedded assets and symlinked deployment dependencies. It scans rendered HTML/RSC, sitemap bodies, metadata, client/server bundles and decoded JSON source maps. Existing archive-availability wording remains unchanged.
+- Added 11 synthetic unit regressions and desktop/mobile browser coverage for the five existing lesson routes, metadata/sitemap and denied private endpoints. No lesson content, public code/assets, question IDs/answers/order, notes/progress schema, curriculum sequence, preservation fixture, legacy baseline, review evidence or dependency lockfile changed.
+- Passed full content checks (including quality, visual-learning, curriculum, generated registries and duplicate IDs), privacy validation, **151 unit tests**, typecheck and production build. Postbuild scanned **4,598 files** before dynamic route requests; the earlier browser-populated output scan covered 6,090. No private matches remained.
+- Passed **80 focused desktop/mobile browser tests**: security/privacy, curriculum order, Phase 13 notes/progress preservation, student flow and all existing registered visual placements, text equivalents, image failure, keyboard/320 px/reduced-motion behaviour. These are automated technical checks, not human accessibility approval.
+- Lint passed with zero errors and one pre-existing unused-variable warning in an ignored local preview-auth helper; that helper is not part of the commit or deployment. `git diff --check` passed. Repeated private hash/deduplication validation passed. Source and public asset files are unchanged from the starting commit.
+- Local build/browser commands used the previously documented identical-hash copy of the locked SWC binding outside the Mac cloud folder. No dependency/framework/build configuration was changed to address that local loader issue. Remote CI/Vercel use normal commands.
+
+## Next safe phase
+
+Run `npm run content:privacy`, then open the local V15-01 review record with the exact pinned lesson and image versions. A qualified reviewer must complete scientific findings; obtain separate original-source/commercial permission evidence. Continue one objective at a time. Prefer the existing released flow/comparison when it meets the objective; an independently authored replacement still requires scientific and accessibility review. Re-review any corrected artwork, lesson placement and final student-facing text. Only then may a later draft propose narrowly scoped integration. This phase imports no assets and authorises no merge or production deployment.
+
+Production baseline checked before work: `caba7ad1c1dccbcfd9e74ec9f898944f98c46397` / `dpl_2hXaR297eBxDVFr64ZbMaHanCjh2`. PR #30 must remain draft; final-head CI and preview are checked after push. Raw source bytes are excluded from Git and Vercel.
+
+---
+
 # Codex handoff — private visual intake preparation
 
 Checkpoint: 4 October 2026. Branch: `feat/foundational-curriculum-gap-fixes`. Draft PR: https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/30, stacked on the existing draft lesson branch. Starting content/asset version: `eedea5f4ca141bbe4d3b0d65e122b07f1d8c6f3c`. The commit containing this entry records this continuation; the PR and final task report identify its immutable remote head and preview. **Keep the PR draft; no merge or production deployment.**
