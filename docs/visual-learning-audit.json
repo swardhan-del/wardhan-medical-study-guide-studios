@@ -2211,22 +2211,30 @@
       "route": "/library/cell-signaling",
       "title": "Cell signaling through G proteins",
       "kind": "Study lesson",
-      "action": "retain-text-practice",
-      "components": [],
-      "visualIds": [],
+      "action": "standardise-or-reuse",
+      "components": [
+        "OriginalDiagram"
+      ],
+      "visualIds": [
+        "gpcr-versus-rtk"
+      ],
       "figureIds": [],
-      "rationale": "Retain the explained steps and worked questions for this task: Trace the receptor, molecular switch, effector and second messenger without skipping the cell compartment. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+      "rationale": "An original side-by-side SVG adds receptor-class discrimination to the existing G-protein lesson. No equivalent GPCR/RTK comparison is registered; baroreflex and endocrine feedback visuals teach different objectives. Original-code publication on the draft preview is authorised; independent scientific, editorial and human accessibility review remain pending."
     },
     {
       "id": "chromatin-access-and-topology",
       "route": "/library/chromatin-access-and-topology",
       "title": "Chromatin: separate access, packaging and topology",
       "kind": "Study lesson",
-      "action": "retain-text-practice",
-      "components": [],
-      "visualIds": [],
+      "action": "standardise-or-reuse",
+      "components": [
+        "OriginalDiagram"
+      ],
+      "visualIds": [
+        "chromatin-local-access"
+      ],
       "figureIds": [],
-      "rationale": "Retain the explained steps and worked questions for this task: Explain nucleosomes, chromatin accessibility and torsional stress without treating compaction as a simple on–off switch. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+      "rationale": "An original SVG adds a local packaging/accessibility comparison absent from the existing lesson and DNA-replication diagram. No fixed higher-order fibre hierarchy or source artwork is reproduced. Original-code publication on the draft preview is authorised; independent scientific, editorial and human accessibility review remain pending."
     },
     {
       "id": "dna-repair",
@@ -2261,11 +2269,15 @@
       "route": "/library/er-protein-quality-control",
       "title": "ER quality control: folding, glycan checks and ERAD",
       "kind": "Study lesson",
-      "action": "retain-text-practice",
-      "components": [],
-      "visualIds": [],
+      "action": "standardise-or-reuse",
+      "components": [
+        "OriginalDiagram"
+      ],
+      "visualIds": [
+        "er-folding-decisions"
+      ],
       "figureIds": [],
-      "rationale": "Retain the explained steps and worked questions for this task: Follow a secretory protein through folding attempts, retention and degradation, and distinguish disposal from the stress response. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+      "rationale": "The existing protein-trafficking flow remains the preparation for successful export. This original compartment diagram adds the missing folding/disposal decision and distinct UPR signal, without duplicating that flow or reproducing source artwork. Original-code publication on the draft preview is authorised; independent scientific, editorial and human accessibility review remain pending."
     },
     {
       "id": "rna-processing",
@@ -3071,13 +3083,16 @@
       "kind": "Study lesson",
       "action": "standardise-or-reuse",
       "components": [
-        "EducationalFigure"
+        "EducationalFigure",
+        "OriginalDiagram"
       ],
-      "visualIds": [],
+      "visualIds": [
+        "first-pass-indicator-flow"
+      ],
       "figureIds": [
         "ventricular-pressure-volume"
       ],
-      "rationale": "The visual supports this specific learning task: Keep volume per beat, volume per minute and the fraction ejected separate."
+      "rationale": "Retain the existing ventricular pressure–volume figure. The original first-pass concentration–time SVG adds a distinct flow-measurement objective in the cardiovascular stage; it is not the equilibrium compartment-volume diagram considered in the private queue. Original-code publication on the draft preview is authorised; independent scientific, editorial and human accessibility review remain pending."
     },
     {
       "id": "baroreflex",

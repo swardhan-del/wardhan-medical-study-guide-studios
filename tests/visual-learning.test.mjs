@@ -14,7 +14,7 @@ test('every public resource has a visual decision and every new visual has valid
   assert.doesNotThrow(()=>validateVisualLearning(data));
   assert.equal(data.audit.length, 262);
   assert.equal(data.lessons.length, 242);
-  assert.equal(data.visuals.length, 54);
+  assert.equal(data.visuals.length, 58);
   assert(data.visuals.some(v => v.id === 'membrane-pathway-decisions' && v.lessonIds.includes('fluid-and-membrane-transport')));
 });
 test('visual validation rejects missing descriptions, invalid row shapes, sources, rights and stale audit records', () => {

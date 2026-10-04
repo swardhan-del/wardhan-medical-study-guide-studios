@@ -4,7 +4,7 @@ import { inspectText, makePolicy } from '../../scripts/privacy-boundary.mjs';
 
 test('visual intake remains absent from lesson HTML, metadata, sitemap and public routes', async ({ page, request }) => {
   const policy = makePolicy(fingerprints);
-  const routes = ['chromatin-access-and-topology', 'er-protein-quality-control', 'cell-signaling', 'autonomic-signalling', 'indicator-dilution'];
+  const routes = ['chromatin-access-and-topology', 'er-protein-quality-control', 'cell-signaling', 'autonomic-signalling', 'indicator-dilution', 'cardiac-output'];
   for (const id of routes) {
     const response = await page.goto(`/library/${id}`);
     expect(response?.status()).toBe(200);

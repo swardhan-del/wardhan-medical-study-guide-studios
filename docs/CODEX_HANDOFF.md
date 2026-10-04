@@ -1,3 +1,36 @@
+# Codex handoff — Phase 16 original diagram system
+
+Checkpoint: 4 October 2026. Branch `feat/foundational-curriculum-gap-fixes`, draft [PR #30](https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/30), still stacked on PR #29. Verified starting commit: `10d3252f2032b09cac87cf85cd6b43cf9bb17871`; its two GitHub validation runs passed. The commit containing this entry is the Phase 16 checkpoint (`git log -1 -- docs/PHASE_SIXTEEN_ORIGINAL_DIAGRAMS.md`). Exact new-head CI and Vercel preview verification will be recorded on PR #30 after push; earlier-head success is not substituted.
+
+## What changed
+
+Four original hand-authored SVGs now reuse existing routes: chromatin packaging/local accessibility → `chromatin-access-and-topology`; ER folding/export/ERAD/UPR → `er-protein-quality-control`; GPCR versus RTK → `cell-signaling`; first-pass indicator-dilution flow/AUC/recirculation → `cardiac-output`. The equilibrium compartment-volume lesson `indicator-dilution`, existing ER trafficking flow and pressure–volume visual are preserved. [The Phase 16 record](PHASE_SIXTEEN_ORIGINAL_DIAGRAMS.md) explains placement, duplicate decisions, scientific qualifications, verified public sources and review tasks.
+
+The source is reusable inline SVG code in `src/components/original-diagrams.tsx`, with the illustrative dose/AUC model in `src/lib/original-diagram-models.ts`. Registry metadata in `src/content/lesson-visuals.json` supplies captions, text alternatives, professional explanations, observation prompts, citations and four unsaved, explained knowledge checks. `lesson-visuals.tsx` uses the existing shared visual/viewport components; `globals.css` adds only scoped diagram/check styles. Bibliographies append NCBI Bookshelf chromatin/ER/receptor chapters and the Bassingthwaighte indicator-dilution paper, checked on 2026-10-04; existing OpenStax cardiac physiology is reused. `docs/visual-learning-audit.json` records the four decisions.
+
+Validation changes: `scripts/visual-learning-schema.mjs`; new `tests/original-diagrams.test.mjs`, `tests/fixtures/phase-sixteen-preservation.json` and `tests/e2e/original-diagrams.spec.ts`; narrow updates to `tests/visual-learning.test.mjs`, `tests/phase-thirteen.test.mjs`, `tests/e2e/visual-learning.spec.ts`, `tests/e2e/security.spec.ts` and `playwright.config.ts`. The other changed documentation is this handoff and the Phase 16 record. No public asset file is added or altered.
+
+## Evidence and boundaries
+
+Scientific sources were checked through public text/indexed passages where NCBI's direct browser challenge prevented normal retrieval. These are AI-assisted source checks, not clinical approval. Each original diagram displays pending scientific/editorial/human accessibility review. Original code authorship does not establish final review approval and does not clear any source-image rights.
+
+All four Phase 15 private image packets remain unapproved: chromatin, ER quality control, receptor signalling and indicator dilution each still lack completed scientific and commercial publication-rights evidence. Their attribution/caption/accessibility requirements remain pending. All 14 snapshotted private review-package files are unchanged. No raw source image was opened, transformed, embedded, uploaded or published for Phase 16.
+
+All 159 snapshotted protected files are unchanged, including existing lessons, question identities/options/order, progress registries, quality/evidence, frozen legacy baseline, Phase 13 fixture, curriculum and existing public assets. The new fixture additionally pins all existing source entries and 54 prior visuals. Four new diagram IDs are distinct; 242 lesson IDs, 262 catalog IDs, 12 public figures and 927 learning-question IDs remain unchanged. There are no duplicate routes or new search pages. Existing noindex/review gates remain unchanged.
+
+## Validation
+
+- Passed `npm run content:check` (including content quality, visual-learning, curriculum, duplicate IDs/targets, generated registries and privacy), all **159 unit tests**, `npm run typecheck`, `npm run lint` and `npm run build`. Postbuild checked **4,598 deployment files** plus trace dependencies. Lint has zero errors and the same one pre-existing warning in an ignored local preview-auth helper.
+- Passed all **5 focused diagram browser tests**. Each diagram test covers 320, 390 and 1440 px, label geometry, keyboard interaction, text alternatives and Axe; the fifth restores saved notes, questions and completion across the four routes. AI visual inspection led to clearer arrow routing, uncrowded chart labels and a canvas that fits the desktop reading column. The complete **707-test local browser suite** is running at commit creation; its final outcome and new-head hosted checks are recorded on PR #30 after push.
+- Passed public-content preservation and private-package hash comparison; no protected file changed. `git diff --check` passed. No raw asset, filename, source path or OCR has been added. Privacy tests cover tracked/staged source, HTML, metadata, sitemap, build bundles and Vercel output.
+- Local environment recovery: macOS refused to load the existing Sharp/libvips binary from the cloud checkout and it then became absent. Restored that exact locked package binary from a SHA-512-integrity-verified npm archive. The normal content commands now pass; no dependency version, lockfile, signing policy or deployment configuration changed. Build/browser commands use the previously documented identical-hash temporary SWC binding to avoid the Mac cloud-loader stall. Remote CI/Vercel use normal installations and commands.
+
+Private logs and captures remain ignored. Final scientific, editorial, visual and human accessibility review remains pending even when technical checks pass.
+
+Next safe command: `npm run content:privacy`. Then follow the Phase 16 one-lesson-at-a-time review plan on the exact PR preview commit. Do not merge PR #30, change pending gates, import the private images or deploy production. Production baseline remains `caba7ad1c1dccbcfd9e74ec9f898944f98c46397` / `dpl_2hXaR297eBxDVFr64ZbMaHanCjh2`.
+
+---
+
 # Codex handoff — Phase 15 visual review and safe integration planning
 
 Checkpoint: 4 October 2026. Branch: `feat/foundational-curriculum-gap-fixes`. Continue draft [PR #30](https://github.com/swardhan-del/wardhan-medical-study-guide-studios/pull/30), still stacked on PR #29. Verified starting remote head: `bf4f3e3a6f475071ba8ecc04283866fda61bfdd6`; both GitHub validation runs and its Vercel preview passed. The commit containing this entry is the Phase 15 checkpoint (`git log -1 -- docs/PHASE_FIFTEEN_VISUAL_REVIEW_PLAN.md`). Exact new-head CI and preview verification are recorded on PR #30 after push, not inferred from the previous head.

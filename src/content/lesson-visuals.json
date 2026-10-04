@@ -1921,6 +1921,128 @@
       "referenceIds": [
         "genetics-genome-foundations"
       ]
+    },
+    {
+      "id": "chromatin-local-access",
+      "title": "Chromatin: DNA packaging and local accessibility",
+      "alt": "DNA wraps around histone octamers. Looser and closer nucleosome arrangements illustrate different local access for transcription factors.",
+      "caption": "A local chromatin schematic, not a fixed universal 30-nm fibre. Accessibility affects binding opportunities; it is not an automatic on/off switch for gene expression. Not to scale.",
+      "observe": "Locate the DNA and nucleosomes. Explain why easier transcription-factor access does not prove that a gene is being expressed.",
+      "explanation": "A canonical histone octamer contains two copies each of H2A, H2B, H3 and H4. DNA wraps around this core. Local packaging can make binding sites easier or harder to reach; transcription also requires the appropriate factors and regulatory context.",
+      "kind": "svg",
+      "lessonIds": [
+        "chromatin-access-and-topology"
+      ],
+      "referenceIds": [
+        "chromatin-access-and-topology"
+      ],
+      "sourceUrls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK585710/"
+      ],
+      "sourceCheckedAt": "2026-10-04",
+      "authorship": "original-svg-code",
+      "credit": "Original diagram — Wardhan Medical Study Guide Studios.",
+      "scientificStatus": "medical-review-pending",
+      "editorialStatus": "pending",
+      "accessibilityStatus": "pending",
+      "reviewEvidenceIds": [],
+      "knowledgeCheck": {
+        "id": "diagram-check-chromatin-local-access",
+        "prompt": "A student labels the octamer “eight H3 proteins”. Replace that label and identify the strand around it.",
+        "explanation": "The octamer contains two copies each of H2A, H2B, H3 and H4. The surrounding strand is DNA. Eight histone molecules does not mean eight copies of one histone type."
+      }
+    },
+    {
+      "id": "er-folding-decisions",
+      "title": "ER quality control: folding, export and disposal",
+      "alt": "A nascent chain enters the ER through a translocon. Folding leads to export; persistent misfolding can lead to cytosolic ERAD. UPR signalling is separate.",
+      "caption": "Representative secretory-protein pathways. ERAD is simplified as retrotranslocation, ubiquitin tagging and proteasomal degradation in the cytosol; extraction and tagging can be coupled. UPR is a stress response, not a disposal compartment.",
+      "observe": "Trace successful export and ERAD separately. Identify the compartment containing the proteasome and distinguish the dashed stress-signal arrow.",
+      "explanation": "Chaperones support folding in the ER lumen. Correctly folded cargo can exit towards the Golgi, while persistent misfolding can engage ERAD. Accumulated misfolded protein activates the unfolded protein response (UPR), which can reduce incoming load and increase folding capacity. Prolonged unresolved stress can contribute to apoptosis; UPR does not always cause it.",
+      "kind": "svg",
+      "lessonIds": [
+        "er-protein-quality-control"
+      ],
+      "referenceIds": [
+        "er-protein-quality-control"
+      ],
+      "sourceUrls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK6210/"
+      ],
+      "sourceCheckedAt": "2026-10-04",
+      "authorship": "original-svg-code",
+      "credit": "Original diagram — Wardhan Medical Study Guide Studios.",
+      "scientificStatus": "medical-review-pending",
+      "editorialStatus": "pending",
+      "accessibilityStatus": "pending",
+      "reviewEvidenceIds": [],
+      "knowledgeCheck": {
+        "id": "diagram-check-er-folding-decisions",
+        "prompt": "Where does proteasomal degradation of this ERAD substrate occur, and what does the separate UPR branch represent?",
+        "explanation": "Degradation occurs in the cytosol after the substrate is directed out of the ER and tagged with ubiquitin. The UPR branch represents signalling in response to ER folding stress, not proteasomal digestion within the ER lumen."
+      }
+    },
+    {
+      "id": "gpcr-versus-rtk",
+      "title": "Receptor signalling: GPCR versus receptor tyrosine kinase",
+      "alt": "A seven-pass GPCR activates a heterotrimeric G protein. An RTK activates cytosolic tyrosine phosphorylation and docking proteins, with Ras/MAP kinase as one example.",
+      "caption": "Parallel signalling schematics, not exhaustive pathway maps. Gα and/or Gβγ can regulate effectors. Ligand-induced RTK dimerisation or rearrangement supports phosphorylation and docking; individual receptors differ.",
+      "observe": "Compare the first intracellular relay in each panel. Explain why neither cAMP nor MAP kinase describes every output of its receptor class.",
+      "explanation": "A GPCR promotes GDP-to-GTP exchange on Gα; Gα and/or Gβγ may then regulate an enzyme or ion channel. RTKs use cytosolic tyrosine phosphorylation and docking proteins. Ras/MAP kinase is one example branch, not every RTK output. Ras is a small GTPase, distinct from the heterotrimeric G protein.",
+      "kind": "svg",
+      "lessonIds": [
+        "cell-signaling"
+      ],
+      "referenceIds": [
+        "cell-signaling"
+      ],
+      "sourceUrls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26912/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26822/"
+      ],
+      "sourceCheckedAt": "2026-10-04",
+      "authorship": "original-svg-code",
+      "credit": "Original diagram — Wardhan Medical Study Guide Studios.",
+      "scientificStatus": "medical-review-pending",
+      "editorialStatus": "pending",
+      "accessibilityStatus": "pending",
+      "reviewEvidenceIds": [],
+      "knowledgeCheck": {
+        "id": "diagram-check-gpcr-versus-rtk",
+        "prompt": "Which receptor class uses a heterotrimeric G protein, and why does a Ras label not make the other receptor a GPCR?",
+        "explanation": "The GPCR uses the α, β and γ complex. An RTK can recruit a signalling route involving the small GTPase Ras through docking/adaptor proteins. Ras is not the heterotrimeric complex and does not change the receptor’s class."
+      }
+    },
+    {
+      "id": "first-pass-indicator-flow",
+      "title": "Indicator dilution: first-pass area and blood flow",
+      "alt": "A known bolus travels to a downstream sampler. Hatched first-pass area includes an estimated tail; later recirculation is excluded. The higher-flow comparison has a smaller first-pass area.",
+      "caption": "Illustrative concentration–time curves, not patient data. Hatching includes the first-pass tail; the later recirculation signal is excluded or corrected. Long dashes show a higher-flow comparison for the same bolus.",
+      "observe": "Compare the hatched first-pass area with the higher-flow curve. Explain why including recirculated indicator would overestimate area and underestimate flow.",
+      "explanation": "Stewart–Hamilton indicator dilution estimates flow as injected amount divided by first-pass concentration–time AUC. It assumes adequate mixing, suitable sampling, indicator recovery and approximately steady flow. With the same amount, greater flow gives a smaller first-pass AUC. This differs from equilibrium compartment-volume dilution and does not directly measure stroke volume.",
+      "kind": "svg",
+      "lessonIds": [
+        "cardiac-output"
+      ],
+      "referenceIds": [
+        "cardiac-output"
+      ],
+      "sourceUrls": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-4-cardiac-physiology",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3085985/"
+      ],
+      "sourceCheckedAt": "2026-10-04",
+      "authorship": "original-svg-code",
+      "credit": "Original diagram — Wardhan Medical Study Guide Studios.",
+      "scientificStatus": "medical-review-pending",
+      "editorialStatus": "pending",
+      "accessibilityStatus": "pending",
+      "reviewEvidenceIds": [],
+      "knowledgeCheck": {
+        "id": "diagram-check-first-pass-indicator-flow",
+        "prompt": "In a fictional example, a 5 mg bolus gives a first-pass AUC of 1 mg·min/L. What is the flow, and what if the same dose gives 0.5 mg·min/L?",
+        "explanation": "Flow is 5 ÷ 1 = 5 L/min, or 5 ÷ 0.5 = 10 L/min. Halving AUC doubles the estimated flow for a fixed dose. These are volumes per time, not volumes per beat; recirculation must be excluded or corrected first."
+      }
     }
   ]
 }

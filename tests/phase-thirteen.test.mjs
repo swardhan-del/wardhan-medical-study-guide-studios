@@ -50,8 +50,10 @@ const compile=(relative,resolve)=>{
  return mod.exports;
 };
 const studyVisual=compile('../src/components/study-visual.tsx');
+const diagrams=compile('../src/components/original-diagrams.tsx',id=>id==='../lib/original-diagram-models'?require('../src/lib/original-diagram-models.ts'):require(id));
 const {LessonVisuals}=compile('../src/components/lesson-visuals.tsx',id=>{
  if(id==='./study-visual')return studyVisual;
+ if(id==='./original-diagrams')return diagrams;
  if(id==='@/content/lesson-visuals.json')return read('lesson-visuals');
  if(id==='@/content/lesson-references.json')return refs;
  return require(id);
