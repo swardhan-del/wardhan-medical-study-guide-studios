@@ -1,0 +1,38 @@
+{
+  "base": "10d3252f2032b09cac87cf85cd6b43cf9bb17871",
+  "fileHashes": {
+    "src/content/library-lessons.json": "f0cb17dbc4c73f4d160afac64e47b1f4305501b5ea2bf2b091c15f7786b24dfa",
+    "src/content/study-questions.json": "85d920b046b92046338bc0854135fe4215ad1ff3c0518acb5a5873c721d74a03",
+    "src/content/transfer-practice.json": "ed3d1b32a4637dee2700097fe26b1179dca0a260340eb8c896bff7fa17e91f6f",
+    "src/content/learning-registry.json": "9ad79747a7e9d563054e1ec45527633419013f30a29f0893dcce37b204999f2a",
+    "src/content/measurement-registry.json": "728eee5cca01ba95cb1baa76321432de8b746d035e2d8a666b89af5d4fd47516",
+    "src/content/lesson-quality.json": "8dd2a2016a09f79cb8271b47568af873d9c820ee1dc82fb2095ad2f016bdbd3a",
+    "src/content/lesson-review-evidence.json": "7aae0c9795ac2243505a4b797593feadc7e2ae8e20dc5ace2d7f9f3f0bf3186f",
+    "src/content/lesson-quality-legacy.json": "aa8e6b029cd6681f678ea3b95d09a966a761e4f624f7897048000d30527fd5b7",
+    "src/content/curriculum-order.ts": "cf89fd3a9bd428a3f93c56eddcdce74d90c183ed239564896d9b0c0bcc6a3d45",
+    "src/content/public-figures.json": "f869f679e26d97d5a71872688de68d1acb32e16077c9f512362e96e55b27012c",
+    "src/content/public-release.json": "a9a2d8e08e97a3eb5f71f2089758a2196952651a5bb1e68117d896509398acef",
+    "src/content/public-search.json": "2ae910df45fbddeb068d4e445b9cce5c0658c8a573f2ceb02b95979bc3123ced",
+    "tests/fixtures/phase-thirteen-preservation.json": "e9080194fb2dffb61d4195728ec09d4ed005dceddf735c3d47e36dca1e1a1986"
+  },
+  "visualsSha256": "0342e3dfff1acc6c1f955f07b9d1ba77a6a7106db1394a424862e4e10d8fd4ca",
+  "referenceSha256": "6fb60708d64ff6527cdc00d3b0d797bec78dfa3a4e5b3d454f51e9dc470454d1",
+  "appendedReferences": {
+    "chromatin-access-and-topology": {
+      "supportingCount": 0,
+      "hasSupportingReferences": false
+    },
+    "er-protein-quality-control": {
+      "supportingCount": 0,
+      "hasSupportingReferences": false
+    },
+    "cell-signaling": {
+      "supportingCount": 0,
+      "hasSupportingReferences": false
+    },
+    "cardiac-output": {
+      "supportingCount": 0,
+      "hasSupportingReferences": false
+    }
+  }
+}

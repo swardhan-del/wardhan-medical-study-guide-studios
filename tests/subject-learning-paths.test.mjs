@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
+import { curriculumOrders } from '../src/content/curriculum-order.ts';
 import { subjectHubs, newEntryLessonIds } from '../src/content/subject-hubs.ts';
 import { entryLessonGuides } from '../src/content/entry-lesson-guides.ts';
 import { studyPaths, beginnerSequences } from '../src/content/study-paths.ts';
@@ -15,14 +16,25 @@ const transfer = read('transfer-practice').questions;
 test('every curriculum hub starts a released subject lesson and maps available next steps', () => {
   assert.deepEqual(Object.keys(subjectHubs).sort(), ['anatomy','biochemistry','biophysics','cell-biology','genetics','histology','physiology']);
   const release = read('public-release').resourceIds;
+  const sharedPreparation = {
+    physiology: ['biophysics-action-potentials'],
+    'cell-biology': ['physiology-membrane-foundations'],
+    biochemistry: ['biophysics-water-biopolymers','biophysics-energy-first-law','biophysics-entropy-potentials','biophysics-molecular-interactions'],
+  };
   for (const [subject, hub] of Object.entries(subjectHubs)) {
     assert(hub.covers.length > 60 && hub.why.length > 60 && hub.firstReason.length > 60);
     assert.equal(byId.get(hub.firstLesson)?.subject, subject);
     assert(release.includes(hub.firstLesson));
     assert.equal(studyPaths[subject].start, hub.firstLesson);
-    assert.equal(beginnerSequences[subject][0].href, '/library/' + hub.firstLesson);
-    if (subject !== 'anatomy') assert(hub.topics.length >= 4);
-    for (const topic of hub.topics) assert.equal(byId.get(topic.lesson)?.subject, subject, topic.lesson);
+    if (curriculumOrders[subject].orientation) assert.equal(beginnerSequences[subject][0].href, '/library/' + hub.firstLesson);
+    assert(curriculumOrders[subject].stages.length >= 4);
+    for (const stage of curriculumOrders[subject].stages) for (const link of stage.links) {
+      if (link.href.startsWith('/library/')) {
+        const id = link.href.slice('/library/'.length);
+        assert(byId.has(id), link.href);
+        if (!(sharedPreparation[subject] ?? []).includes(id)) assert.equal(byId.get(id).subject, subject, id);
+      }
+    }
   }
 });
 

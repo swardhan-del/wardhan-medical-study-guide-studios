@@ -4,6 +4,7 @@ import { SubjectHubOverview } from "@/components/subject-hub";
 import { AnatomyLearningPath } from "@/components/anatomy-learning-path";
 import { studySubjects } from "@/lib/study-collections";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
+import { curriculumOrders } from "@/content/curriculum-order";
 import { SubjectLearningPath } from "@/components/subject-learning-path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -25,6 +26,8 @@ export default async function SubjectPage({ params }: Props) {
   const s = librarySubjects.find((s) => s.id === slug);
   if (!s) notFound();
   const records = subjectRecords(slug);
+  const learningSubject = slug === "immunology" ? slug : s.learningSubject || slug;
+  const showCurriculum = Boolean(curriculumOrders[learningSubject] && !curriculumOrders[learningSubject].orientation);
   return (
     <div className="site-container library-page">
       <nav className="breadcrumbs" aria-label="Breadcrumb">
@@ -41,6 +44,7 @@ export default async function SubjectPage({ params }: Props) {
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link></div>}
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
       <SubjectHubOverview subject={slug} />
+      {showCurriculum && <SubjectLearningPath subject={learningSubject} />}
       {slug === "anatomy" && <><AnatomyLearningPath/><AnatomyTopicNav /></>}
       {records.length === 0 ? (
         <section className="catalog-empty"><h2>No public lessons yet</h2><p>No resources have been released for this subject yet. Choose another subject to begin studying today.</p><Link className="button button-primary" href="/subjects">Choose a subject with lessons</Link></section>
@@ -52,7 +56,7 @@ export default async function SubjectPage({ params }: Props) {
         </section>
       )}
       {records.length > 0 && <details className="study-details"><summary>Browse the regional directory and suggested sequence</summary>
-      <SubjectLearningPath subject={slug === "immunology" ? slug : s.learningSubject || slug} />
+      {!showCurriculum && <SubjectLearningPath subject={learningSubject} />}
       <section id="archive-directory" aria-label="Systems and topics">
         <span id="dropbox-directory" />
         <h2>Systems and topics</h2>

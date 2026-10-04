@@ -15,8 +15,8 @@ test("first visit reaches each subject coverage map and a real starting lesson",
     // Next.js can retain the previous route in a hidden tree.
     const map = page.locator("#coverage:visible");
     await expect(map).toContainText(subject === "anatomy" ? "What to study alongside this course" : "Still needs fuller lessons");
-    await map.getByRole("link",{name:/^Start with/}).click();
-    await expect(page).toHaveURL(subject === "anatomy" ? /\/library\/anatomy-foundations$/ : /\/library\//);
+    await map.getByRole("link",{name:/^Start (?:here:|with)/}).click();
+    await expect(page).toHaveURL(["physiology", "cell-biology", "biochemistry"].includes(subject) ? new RegExp(`/study/${subject}#subject-topic-map$`) : /\/library\//);
     await expect(page.locator("h1:visible")).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   }

@@ -15,11 +15,11 @@ for (let start=0;start<lessonIds.length;start+=10) {
     await expect(figure).toHaveAttribute('aria-label',visual.title);
     await expect(figure.locator('figcaption')).toContainText(visual.caption);
     await expect(figure.locator('figcaption')).toContainText(visual.observe);
-    await expect(figure.locator('.visual-credit')).toContainText('Original teaching layout');
+    await expect(figure.locator('.visual-credit')).toContainText(visual.kind==='svg'?'Original diagram — Wardhan Medical Study Guide Studios.':'Original teaching layout');
     expect(await figure.locator('.visual-sources a').count()).toBeGreaterThan(0);
-    await figure.locator('summary').focus();await page.keyboard.press('Enter');
-    await expect(figure.locator('details')).toHaveAttribute('open','');
-    await expect(figure.locator('details')).toContainText(visual.alt);
+    await figure.locator('.visual-description summary').focus();await page.keyboard.press('Enter');
+    await expect(figure.locator('.visual-description')).toHaveAttribute('open','');
+    await expect(figure.locator('.visual-description')).toContainText(visual.alt);
     if(visual.kind==='comparison') {
      await expect(figure.locator('table')).toBeVisible({visible:info.project.name==='desktop'});
      const mobile=figure.locator('.visual-comparison-mobile');

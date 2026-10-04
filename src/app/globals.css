@@ -4164,6 +4164,9 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 }
 /* Shared visual-learning contract: static, text-first, usable without colour or images. */
 .study-visual { margin: 1.5rem 0; padding: clamp(.85rem, 2.5vw, 1.5rem); min-width: 0; max-width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fffefa; color: var(--ink); break-inside: avoid; }
+.original-teaching-svg { display: block; width: 100%; height: auto; background: #fffefa; }
+.diagram-knowledge-check { margin-block: 1.25rem; padding: 1rem; border: 1px solid var(--line); border-radius: 8px; }
+.original-diagram-explanation, .original-diagram-review, .diagram-knowledge-check { overflow-wrap: anywhere; }
 .study-visual .study-visual-title { margin: 0 0 1rem; line-height: 1.4; font-size: 1.2rem; }
 .study-visual figcaption { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: .5rem; line-height: 1.65; }
 .study-visual figcaption p { margin-block: .8rem; }
@@ -4216,3 +4219,6 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .quality-learning-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
 .quality-learning-links h3 { font-size: 1rem; }
 .quality-learning-links a { display: inline-block; padding-block: .35rem; }
+
+/* Subject maps and coverage must reflow with enlarged text and user spacing. */
+.study-page { overflow-wrap: anywhere; }

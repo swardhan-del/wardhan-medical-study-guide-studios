@@ -1,19 +1,16 @@
 import Link from "next/link";
 import { BeginnerSequence } from "./beginner-sequence";
-import { beginnerSequences } from "@/content/study-paths";
-const paths: Record<string, [string, string, string][]> = {
-  biophysics: [["Begin with light and units", "/library/biophysics-radiation-optics", "Establish quantities and assumptions before using equations."], ["Follow the full course", "/study/biophysics", "Work through 36 theory topics and 14 practical lessons."], ["Test a prediction", "/practice/biophysics", "Change a model, inspect the graph and explain the result."]],
-  anatomy: [["Orient the regions", "/subjects/anatomy/regional-anatomy", "Find landmarks and connect neighbouring regions."], ["Study the thorax", "/subjects/anatomy/thorax", "Explore the chest map, breathing model and twelve questions."], ["Connect abdominal development", "/subjects/anatomy/abdomen", "Follow the peritoneum and arterial territories."]],
-  histology: [["Learn how to look", "/library/microscopy", "Start with preparation, magnification and section planes."], ["Classify an epithelium", "/library/epithelia", "Trace a lining, compare real sections and explain its function."], ["Recognise tubular structures", "/practice/histology", "Compare renal schematics, then work through public microscope images."]],
-  "cell-biology": [["Copy the genome", "/library/dna-replication", "Separate template direction from the direction of synthesis."], ["Process the message", "/library/rna-processing", "Follow pre-mRNA toward a translated message."], ["Deliver the protein", "/library/protein-trafficking", "Connect targeting signals with intracellular destinations."]],
-  biochemistry: [["Start with enzymes", "/library/enzyme-kinetics", "Connect rate, saturation and inhibition."], ["Follow carbon", "/library/glycolysis", "Trace the route from glucose to pyruvate."], ["Follow nitrogen", "/library/nitrogen-metabolism", "Distinguish transfer, detoxification and excretion."]],
-  physiology: [["Renal physiology", "/learn/renal", "Eight sequenced lessons with objectives and explained questions."], ["Predict a mechanism", "/practice/physiology#renal", "Write a prediction, change resistance and test the result."], ["Interpret a blood gas", "/practice/physiology#abg", "Work through six fictional cases and save your answers."]],
-  genetics: [["Connect meiosis to variation", "/library/meiosis", "Follow chromosomes and distinguish segregation errors."], ["Interpret inheritance", "/library/inheritance", "Reason from patterns rather than memorising labels."], ["Connect immune responses", "/library/innate-adaptive", "Follow recognition, activation and memory."]],
-  immunology: [["Organise the response", "/library/innate-adaptive", "Distinguish immediate recognition from adaptive specificity."], ["Present an antigen", "/library/antigen-presentation", "Connect processing pathways with T-cell recognition."], ["Follow complement", "/library/complement", "Separate activation routes from shared effector functions."]],
-};
+import { SubjectTopicMap } from "./subject-hub";
+import { curriculumOrders, immunologyPath } from "@/content/curriculum-order";
+
 export function SubjectLearningPath({ subject }: { subject: string }) {
-  if (beginnerSequences[subject]) return <BeginnerSequence subject={subject} />;
-  const steps = paths[subject];
-  if (!steps) return null;
-  return <section className="study-panel subject-learning-path" aria-labelledby="subject-path-title"><p className="eyebrow">Suggested learning sequence</p><h2 id="subject-path-title">Start with these topics</h2><p>Follow the suggested sequence or choose the topic you need to review.</p><ol className="study-grid three">{steps.map(([title, href, explanation]) => <li key={href}><h3><Link className="text-link" href={href}>{title} →</Link></h3><p>{explanation}</p></li>)}</ol><Link className="text-link" href="/study">Open My Study →</Link></section>;
+  const order = curriculumOrders[subject];
+  if (order) return order.orientation ? <BeginnerSequence subject={subject} /> : <SubjectTopicMap subject={subject} />;
+  if (subject !== "immunology") return null;
+  return <section className="study-panel subject-learning-path" aria-labelledby="subject-path-title">
+    <p className="eyebrow">Suggested learning sequence</p><h2 id="subject-path-title">Start with these topics</h2>
+    <p>Follow the suggested sequence or choose the topic you need to review.</p>
+    <ol className="study-grid three">{immunologyPath.map(step => <li key={step.href}><h3><Link className="text-link" href={step.href}>{step.title} →</Link></h3><p>{step.description}</p></li>)}</ol>
+    <Link className="text-link" href="/study">Open My Study →</Link>
+  </section>;
 }
