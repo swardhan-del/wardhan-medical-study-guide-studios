@@ -9,7 +9,7 @@ const records = read('public-catalog').records.map(r => ({ ...r, searchText: ind
 test('published explanations and figures are searchable in every teaching collection', () => {
   const lessons = read('library-lessons').lessons;
   for (const subject of new Set(lessons.map(l => l.subject))) {
-    const lesson = lessons.find(l => l.subject === subject);
+    const lesson = lessons.find(l => l.subject === subject && index[l.id]);
     const phrase = lesson.steps[0].body.split(' ').slice(0, 6).join(' ');
     assert.ok(matchesCatalogQuery(records.find(r => r.id === lesson.id), phrase), `${subject}: ${phrase}`);
   }
@@ -17,7 +17,9 @@ test('published explanations and figures are searchable in every teaching collec
   assert.ok(matchesCatalogQuery(records.find(r => r.id === 'renal-filtration-and-clearance'), 'GFR'));
   assert.equal(suggestQuery(records.map(r => catalogSearchText(r)), 'brachal plexus'), 'brachial plexus');
   assert.equal(suggestQuery(records.map(r => catalogSearchText(r)), 'zzzzzzzzunknown'), null);
-  assert.equal(Object.keys(index).length, records.length);
+  const pending = read('lesson-quality').records.filter(q => q.indexStatus !== 'indexable').map(q => q.lessonId);
+  for (const id of pending) assert.equal(index[id], undefined, `${id} must be absent from full-text search while review is pending`);
+  assert.equal(Object.keys(index).length, records.length - pending.length);
   assert.doesNotMatch(JSON.stringify(index), /\/Users\/|original_dropbox_path|destination_dropbox_path|dropboxusercontent/);
 });
 test('all 19 web and activity wrappers link directly; PDF and private detail pages remain available', () => {

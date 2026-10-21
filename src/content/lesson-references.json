@@ -15,9 +15,27 @@
     "checkedAt": "2026-09-07"
   },
   "connective-tissue": {
-    "title": "OpenStax: Connective tissue",
+    "title": "Anatomy and Physiology 2e §4.3: Connective Tissue Supports and Protects",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects",
-    "checkedAt": "2026-09-07"
+    "checkedAt": "2026-10-02",
+    "supportingReferences": [
+      {
+        "title": "Anatomy and Physiology 2e §6.3: Bone Structure",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-3-bone-structure"
+      },
+      {
+        "title": "Mitochondrial ROS regulate thermogenic energy expenditure and sulfenylation of UCP1 (2016)",
+        "url": "https://www.nature.com/articles/nature17399"
+      },
+      {
+        "title": "University of Leeds Histology Guide: Adipocytes",
+        "url": "https://histology.leeds.ac.uk/home/tissue_types/connective/connective_adipocyte/"
+      },
+      {
+        "title": "University of Leeds Histology Guide: Bone",
+        "url": "https://histology.leeds.ac.uk/home/bone/bone/"
+      }
+    ]
   },
   "cartilage-bone": {
     "title": "OpenStax: Bone structure and cells",
@@ -155,9 +173,19 @@
     "checkedAt": "2026-09-07"
   },
   "membrane-potentials": {
-    "title": "OpenStax: Membrane potentials and ion gradients",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
-    "checkedAt": "2026-09-07"
+    "title": "MetaNeuron: A Free Neuron Simulation Program for Teaching Cellular Neurophysiology (2013), lessons 1–3",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3852865/",
+    "checkedAt": "2026-10-02",
+    "supportingReferences": [
+      {
+        "title": "Anatomy and Physiology 2e §12.4: The Action Potential",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential"
+      },
+      {
+        "title": "Molecular Biology of the Cell, 4th ed.: Ion Channels and the Electrical Properties of Membranes",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK26910/"
+      }
+    ]
   },
   "cardiac-output": {
     "title": "OpenStax: Cardiac output and pump regulation",
@@ -200,14 +228,46 @@
     "checkedAt": "2026-09-19"
   },
   "fluid-and-membrane-transport": {
-    "title": "Molecular Biology of the Cell: membrane transport",
-    "url": "https://www.ncbi.nlm.nih.gov/books/NBK26896/",
-    "checkedAt": "2026-09-08"
+    "title": "Anatomy and Physiology 2e §3.1: The Cell Membrane",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-1-the-cell-membrane",
+    "checkedAt": "2026-10-02",
+    "supportingReferences": [
+      {
+        "title": "Anatomy and Physiology 2e §26.1: Body Fluids and Fluid Compartments",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/26-1-body-fluids-and-fluid-compartments"
+      }
+    ]
   },
   "muscle-contraction": {
-    "title": "Molecular Biology of the Cell: molecular motors",
-    "url": "https://www.ncbi.nlm.nih.gov/books/NBK26888/",
-    "checkedAt": "2026-09-08"
+    "title": "Anatomy and Physiology 2e §10.2: Skeletal Muscle",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle",
+    "checkedAt": "2026-10-02",
+    "supportingReferences": [
+      {
+        "title": "Anatomy and Physiology 2e §10.3: Muscle Fiber Contraction and Relaxation",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation"
+      },
+      {
+        "title": "CaV1.1 voltage-sensing domain III exclusively controls skeletal muscle excitation-contraction coupling (2024)",
+        "url": "https://www.nature.com/articles/s41467-024-51809-5"
+      },
+      {
+        "title": "Molecular Biology of the Cell: molecular motors",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK26888/"
+      },
+      {
+        "title": "Anatomy and Physiology 2e §10.4: Nervous System Control of Muscle Tension",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-4-nervous-system-control-of-muscle-tension"
+      },
+      {
+        "title": "Anatomy and Physiology 2e §10.8: Smooth Muscle",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-8-smooth-muscle"
+      },
+      {
+        "title": "Anatomy and Physiology 2e §19.2: Cardiac Muscle and Electrical Activity",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity"
+      }
+    ]
   },
   "autonomic-signalling": {
     "title": "Neuroscience: parasympathetic visceral motor pathways",
@@ -230,9 +290,19 @@
     "checkedAt": "2026-09-08"
   },
   "blood-and-haemostasis": {
-    "title": "Mechanisms of Vascular Disease: physiological haemostasis",
+    "title": "Mechanisms of Vascular Disease: Physiological Haemostasis",
     "url": "https://www.ncbi.nlm.nih.gov/books/NBK534253/",
-    "checkedAt": "2026-09-08"
+    "checkedAt": "2026-10-03",
+    "supportingReferences": [
+      {
+        "title": "The Endothelium: Multiple Functions of the Endothelial Cells",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK57148/"
+      },
+      {
+        "title": "OpenStax Anatomy and Physiology 2e §18.5: Hemostasis",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-5-hemostasis"
+      }
+    ]
   },
   "digestive-control": {
     "title": "The Exocrine Pancreas: control of secretion",
@@ -255,9 +325,19 @@
     "checkedAt": "2026-09-08"
   },
   "synaptic-integration": {
-    "title": "Neuroscience: chemical synapses",
-    "url": "https://www.ncbi.nlm.nih.gov/books/NBK11009/",
-    "checkedAt": "2026-09-08"
+    "title": "Anatomy and Physiology 2e §12.5: Communication Between Neurons",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+    "checkedAt": "2026-10-02",
+    "supportingReferences": [
+      {
+        "title": "Neuroscience, 2nd ed. (2001): Chemical Synapses",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK11009/"
+      },
+      {
+        "title": "Virtual leak channels modulate firing dynamics and synaptic integration in rat sympathetic neurons (2015)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4398523/"
+      }
+    ]
   },
   "special-senses": {
     "title": "Webvision: phototransduction in rods and cones",
@@ -485,9 +565,15 @@
     "checkedAt": "2026-09-09"
   },
   "biophysics-action-potentials": {
-    "title": "OpenStax: action potentials",
+    "title": "Anatomy and Physiology 2e §12.4: The Action Potential",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
-    "checkedAt": "2026-09-09"
+    "checkedAt": "2026-10-02",
+    "supportingReferences": [
+      {
+        "title": "Anatomy and Physiology 2e §19.2: Cardiac Muscle and Electrical Activity",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity"
+      }
+    ]
   },
   "biophysics-ultrasound": {
     "title": "NIH NIBIB: ultrasound",
@@ -1244,7 +1330,7 @@
   "genetics-genome-foundations": {
     "title": "NHGRI Talking Glossary: Genome",
     "url": "https://www.genome.gov/genetics-glossary/Genome",
-    "checkedAt": "2026-09-23",
+    "checkedAt": "2026-10-02",
     "supportingReferences": [
       {
         "title": "NHGRI Talking Glossary: Gene",
@@ -1265,6 +1351,30 @@
       {
         "title": "MedlinePlus Genetics: Can genes be turned on and off in cells?",
         "url": "https://medlineplus.gov/genetics/understanding/howgeneswork/geneonoff/"
+      },
+      {
+        "title": "Human Genomic Variation",
+        "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genomic-variation"
+      },
+      {
+        "title": "Variant of Uncertain Significance",
+        "url": "https://www.genome.gov/genetics-glossary/Variant-of-Uncertain-Significance-VUS"
+      },
+      {
+        "title": "MedlinePlus Genetics: What do the results of genetic tests mean?",
+        "url": "https://medlineplus.gov/genetics/understanding/testing/interpretingresults/"
+      },
+      {
+        "title": "NHGRI: A new human pangenome reference",
+        "url": "https://www.genome.gov/about-genomics/new-human-pangenome-reference"
+      },
+      {
+        "title": "MedlinePlus Genetics: Whole exome and whole genome sequencing",
+        "url": "https://medlineplus.gov/genetics/understanding/testing/sequencing/"
+      },
+      {
+        "title": "Molecular Biology of the Cell, 4th ed.: The Genetic Systems of Mitochondria and Plastids",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK26924/"
       }
     ]
   },
@@ -1284,6 +1394,21 @@
       {
         "title": "American Physiological Society: Measuring osmosis and hemolysis of red blood cells",
         "url": "https://journals.physiology.org/doi/10.1152/advan.00083.2016"
+      }
+    ]
+  },
+  "somatosensory-pathways": {
+    "title": "Anatomy and Physiology 2e §14.2: Central Processing",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-2-central-processing",
+    "checkedAt": "2026-10-02",
+    "supportingReferences": [
+      {
+        "title": "Neuroscience, 2nd ed. (2001): The Dorsal Column-Medial Lemniscus System",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK11142/"
+      },
+      {
+        "title": "The thalamic reticular nucleus of the adult rat: experimental anatomical studies (1985)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/2413176/"
       }
     ]
   }

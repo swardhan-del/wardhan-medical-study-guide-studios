@@ -2108,6 +2108,52 @@
           "explanation": "The diffusion path is longer, so unchanged area alone cannot preserve the rate under this model."
         }
       ]
+    },
+    {
+      "id": "studio-apply-blood-endothelium-restraint",
+      "topic": "blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "subject": "physiology",
+      "href": "/library/blood-and-haemostasis#studio-practice",
+      "prompt": "In a simplified experiment, an intact endothelial lining releases less nitric oxide and prostacyclin, while other conditions are held constant. What is the most direct expected effect on nearby platelets?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Greater susceptibility to activation and aggregation",
+          "explanation": "Nitric oxide and prostacyclin normally provide inhibitory signals. Reducing them weakens restraint; it does not establish that a clot will necessarily form."
+        },
+        {
+          "text": "Loss of the platelets’ GPIb-IX-V receptors",
+          "explanation": "Reduced endothelial mediator release does not mean that a platelet adhesion receptor has been removed."
+        },
+        {
+          "text": "Direct conversion of fibrinogen into crosslinked fibrin",
+          "explanation": "Endothelial mediator loss is not the enzymatic conversion of fibrinogen or fibrin crosslinking; those require thrombin and factor XIIIa, respectively."
+        }
+      ]
+    },
+    {
+      "id": "studio-apply-blood-adhesion-versus-aggregation",
+      "topic": "blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "subject": "physiology",
+      "href": "/library/blood-and-haemostasis#studio-practice",
+      "prompt": "A model selectively prevents activated αIIbβ3 from binding fibrinogen. GPIb-IX-V and immobilised vWF remain functional. Which result best distinguishes adhesion from aggregation?",
+      "answer": 1,
+      "options": [
+        {
+          "text": "vWF-mediated capture is abolished, while fibrinogen bridging is preserved",
+          "explanation": "This reverses the stipulated targets: capture uses GPIb-IX-V, whereas the blocked interaction is fibrinogen binding to activated αIIbβ3."
+        },
+        {
+          "text": "GPIb-IX-V–vWF capture can continue, while fibrinogen bridging between platelets is reduced",
+          "explanation": "The surface-capture interaction is preserved in this model. The blocked receptor–ligand interaction normally connects neighbouring platelets."
+        },
+        {
+          "text": "Factor XIIIa-mediated fibrin crosslinking is directly blocked",
+          "explanation": "Factor XIIIa acts on fibrin. Blocking an integrin–fibrinogen interaction is not direct inhibition of that crosslinking enzyme."
+        }
+      ]
     }
   ]
 }

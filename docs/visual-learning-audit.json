@@ -1623,11 +1623,16 @@
       "route": "/library/biophysics-action-potentials",
       "title": "Action potentials and impulse propagation",
       "kind": "Study lesson",
-      "action": "retain-text-practice",
-      "components": [],
-      "visualIds": [],
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "axon-propagation-patterns",
+        "neuronal-channel-states"
+      ],
       "figureIds": [],
-      "rationale": "Retain the explained steps and worked questions for this task: Separate regenerative signalling from passive current spread. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     },
     {
       "id": "biophysics-atomic-models",
@@ -2516,13 +2521,16 @@
       "route": "/library/connective-tissue",
       "title": "Connective tissue and extracellular matrix",
       "kind": "Study lesson",
-      "action": "standardise-or-reuse",
+      "action": "new-comparison-or-flow",
       "components": [
-        "HistologyTopicVisual"
+        "HistologyTopicVisual",
+        "LessonVisuals"
       ],
-      "visualIds": [],
+      "visualIds": [
+        "supporting-tissue-clues"
+      ],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior."
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     },
     {
       "id": "epithelia",
@@ -2798,10 +2806,11 @@
         "LessonVisuals"
       ],
       "visualIds": [
+        "membrane-pathway-decisions",
         "transport-energy"
       ],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Connect membrane permeability, the sodium–potassium pump and secondary active transport before predicting where a solute moves."
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     },
     {
       "id": "digestive-control",
@@ -2947,15 +2956,19 @@
       "route": "/library/synaptic-integration",
       "title": "Neural integration: from release to a response",
       "kind": "Study lesson",
-      "action": "standardise-or-reuse",
+      "action": "new-comparison-or-flow",
       "components": [
-        "EducationalFigure"
+        "EducationalFigure",
+        "LessonVisuals"
       ],
-      "visualIds": [],
+      "visualIds": [
+        "chemical-synapse-sequence",
+        "synaptic-integration-modes"
+      ],
       "figureIds": [
         "neuronal-conductance"
       ],
-      "rationale": "The visual supports this specific learning task: Follow chemical transmission across a synapse, then explain how a neuron combines excitatory and inhibitory inputs."
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     },
     {
       "id": "physiology-lab",
@@ -3026,15 +3039,19 @@
       "route": "/library/membrane-potentials",
       "title": "Resting potential and the action potential",
       "kind": "Study lesson",
-      "action": "standardise-or-reuse",
+      "action": "new-comparison-or-flow",
       "components": [
-        "EducationalFigure"
+        "EducationalFigure",
+        "LessonVisuals"
       ],
-      "visualIds": [],
+      "visualIds": [
+        "passive-charging-values",
+        "passive-distance-values"
+      ],
       "figureIds": [
         "neuronal-conductance"
       ],
-      "rationale": "The visual supports this specific learning task: Connect ion gradients, selective permeability and channel timing to electrical signals."
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     },
     {
       "id": "special-senses",
@@ -3115,10 +3132,12 @@
         "LessonVisuals"
       ],
       "visualIds": [
-        "muscle-calcium"
+        "muscle-calcium",
+        "sarcomere-sliding",
+        "skeletal-excitation-calcium"
       ],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Compare how skeletal, cardiac and smooth muscle convert a calcium signal into force, and explain why their responses differ."
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     },
     {
       "id": "ventilation-perfusion",
@@ -3222,14 +3241,17 @@
       "route": "/library/genetics-genome-foundations",
       "title": "Genetics Foundations: Genome, Inheritance and Gene Expression",
       "kind": "Study lesson",
-      "action": "standardise-or-reuse",
+      "action": "new-comparison-or-flow",
       "components": [
         "StudyVisual",
-        "VisualComparison"
+        "VisualComparison",
+        "LessonVisuals"
       ],
-      "visualIds": [],
+      "visualIds": [
+        "genomic-evidence-levels"
+      ],
       "figureIds": [],
-      "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     },
     {
       "id": "physiology-membrane-foundations",
@@ -3244,6 +3266,22 @@
       "visualIds": [],
       "figureIds": [],
       "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "somatosensory-pathways",
+      "route": "/library/somatosensory-pathways",
+      "title": "Somatosensory pathways and thalamic integration",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "right-foot-vibration-route",
+        "somatosensory-crossings"
+      ],
+      "figureIds": [],
+      "rationale": "Original selectable-text teaching comparisons and sequences support the stated objectives in a preview adaptation. Independent scientific, visual and production release sign-off remain pending; no imported source image is used."
     }
   ]
 }

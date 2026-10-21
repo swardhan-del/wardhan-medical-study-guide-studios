@@ -40,6 +40,21 @@ test("default environment exposes no provider or credentials and no optional SDK
   expect(posts).toEqual([]); expect(scripts.some(url=>url.includes("vercel-insights")||url.includes("/_vercel/insights"))).toBe(false);
 });
 
+test("redirected measurement configuration fails closed without following an external destination", async ({ page }) => {
+  const violations: string[] = [];
+  const externalRequests: string[] = [];
+  await page.exposeFunction("recordMeasurementViolation", (directive: string) => violations.push(directive));
+  await page.addInitScript(() => document.addEventListener("securitypolicyviolation", event => {
+    if(event.effectiveDirective === "connect-src") void (window as unknown as {recordMeasurementViolation: (value: string) => Promise<void>}).recordMeasurementViolation(event.effectiveDirective);
+  }));
+  await page.route("**/api/measurement", route => route.fulfill({status: 302, headers: {location: "https://measurement-redirect.invalid/config"}}));
+  page.on("request", req => {if(req.url().includes("measurement-redirect.invalid")) externalRequests.push(req.url());});
+  await page.goto("/privacy");
+  await expect(page.getByText("Optional analytics is not configured or is unavailable. No learning events are sent.", {exact: true})).toBeVisible();
+  expect(externalRequests).toEqual([]);
+  expect(violations).toEqual([]);
+});
+
 test("no events before consent, after refusal or from earlier activity; preference persists", async ({ page }) => {
   const { events } = await mockMeasurement(page);
   await page.goto("/library/anatomy-foundations");

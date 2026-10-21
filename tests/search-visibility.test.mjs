@@ -8,6 +8,7 @@ import { shouldNoIndex, robotsPolicy } from '../src/lib/search-policy.ts';
 import { resourceBreadcrumbs } from '../src/lib/search-breadcrumbs.ts';
 import { websiteGraph, lessonSchema, breadcrumbSchema, courseSchema, collectionGraph, serializeStructuredData } from '../src/lib/structured-data.ts';
 import { topicGuides } from '../src/content/topic-guides.ts';
+import { qualityAllowsIndexing } from '../src/lib/lesson-quality.ts';
 import lessons from '../src/content/library-lessons.json' with { type: 'json' };
 import catalog from '../src/content/public-catalog.json' with { type: 'json' };
 const origin = 'https://example.edu';
@@ -33,7 +34,7 @@ test('search registry has unique routes, meaningful indexed titles and descripti
 test('every approved authored lesson has a self-canonical path and a breadcrumb ending in its own title', () => {
   for (const lesson of lessons.lessons) {
     const path = `/library/${lesson.id}`, page = searchPage(path);
-    assert(page?.index, path); assert.equal(page.canonical, path);
+    assert(page, path); assert.equal(page.index, qualityAllowsIndexing(lesson.id), path); assert.equal(page.canonical, path);
     assert.equal(page.title, lesson.title); assert(page.description.endsWith(lesson.summary));
     if (lesson.summary.length < 60) assert(page.description.startsWith(lesson.title));
     assert.equal(page.lastModified, lesson.updatedAt);
@@ -97,7 +98,7 @@ test('topic sequences contain substantial original guidance and only real publis
   for (const guide of topicGuides) {
     assert(guide.preparation.length > 100 && guide.method.length > 150 && guide.review.length > 150);
     assert(guide.stages.length >= 4); assert.equal(new Set(guide.stages.map(s => s.id)).size, guide.stages.length);
-    for (const stage of guide.stages) { assert(lessons.lessons.some(l => l.id === stage.id)); assert(searchPage(`/library/${stage.id}`).index); assert(stage.purpose.length > 50); }
+    for (const stage of guide.stages) { assert(lessons.lessons.some(l => l.id === stage.id)); assert.equal(searchPage(`/library/${stage.id}`)?.index, qualityAllowsIndexing(stage.id)); assert(stage.purpose.length > 50); }
     assert(searchPage(guide.next.href)?.index);
   }
 });
