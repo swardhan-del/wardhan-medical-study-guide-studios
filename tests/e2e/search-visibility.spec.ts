@@ -105,6 +105,6 @@ test("topic sequences are discoverable from homepage, library and the relevant s
     await expect(page.getByRole("region", { name: "Guided topic sequences" })).toBeVisible();
     await page.getByRole("link", { name: "Explore all guided topic sequences" }).click();
     await expect(page).toHaveURL(/\/learn\/topics$/);
-    await expect(page.getByRole("heading", { level: 2 })).toHaveCount(3);
+    await expect(page.getByRole("heading", { level: 2 })).toHaveCount(topicGuides.length);
   }
 });
