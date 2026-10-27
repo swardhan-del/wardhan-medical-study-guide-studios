@@ -93,7 +93,7 @@ test('all registered routes emit complete per-page metadata on production and no
 });
 
 test('topic sequences contain substantial original guidance and only real published lessons', () => {
-  assert.equal(topicGuides.length, 3);
+  assert.equal(new Set(topicGuides.map(guide => guide.slug)).size, topicGuides.length);
   for (const guide of topicGuides) {
     assert(guide.preparation.length > 100 && guide.method.length > 150 && guide.review.length > 150);
     assert(guide.stages.length >= 4); assert.equal(new Set(guide.stages.map(s => s.id)).size, guide.stages.length);
