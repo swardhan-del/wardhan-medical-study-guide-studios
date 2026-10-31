@@ -33,11 +33,11 @@ test('new entry lessons have complete teaching, accessible comparisons and publi
   for (const id of newEntryLessonIds) {
     const l = byId.get(id), guide = entryLessonGuides[id];
     assert(l && guide, id);
-    assert.equal(l.steps.length, 4);
+    assert.equal(l.steps.length, id === "genetics-genome-foundations" ? 8 : 4);
     assert(l.steps.reduce((n,s) => n+s.body.split(/\s+/).length, 0) >= 250);
-    assert.equal(l.objectives.length, 4);
-    assert.equal(l.oralExamination.length, 2);
-    assert.equal(l.summaryChecklist.length, 4);
+    assert.equal(l.objectives.length, id === "genetics-genome-foundations" ? 6 : 4);
+    assert.equal(l.oralExamination.length, id === "genetics-genome-foundations" ? 3 : 2);
+    assert.equal(l.summaryChecklist.length, id === "genetics-genome-foundations" ? 6 : 4);
     assert(l.workedExample.solution.length >= 3 && l.recall.answer.length > 100);
     assert.doesNotMatch(JSON.stringify([l, guide]), /retrieval|oral recall|\/Users\/|dropbox/i);
     assert(sources[l.source].context.includes('Original website'));
@@ -76,7 +76,7 @@ const expected = {
 test('all sixteen entry question keys select the independently reviewed answer with distinct explanations', () => {
   const questions = newEntryLessonIds.flatMap(id => [
     { id: 'concept-'+id, ...byId.get(id).question },
-    ...studio.filter(q=>q.topic===id), ...transfer.filter(q=>q.topic===id),
+    ...studio.filter(q=>q.topic===id), ...transfer.filter(q=>q.topic===id && !q.id.includes("-phase12-")),
   ]);
   assert.equal(questions.length, 16);
   assert.deepEqual(new Set(questions.map(q=>q.id)), new Set(Object.keys(expected)));

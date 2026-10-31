@@ -109,11 +109,13 @@ async function browserHarness(fn, options={}) {
 const posts=requests=>requests.filter(r=>r.init.method==='POST');
 
 test('browser sends nothing before opt-in, never backfills, and stops after withdrawal',()=>browserHarness(async({client,requests})=>{
+  assert.equal(requests[0].init.redirect,'error');
   client.learningEvent(valid[0]);assert.equal(posts(requests).length,0);
   client.setMeasurementConsent('denied');client.learningEvent(valid[1]);assert.equal(posts(requests).length,0);
   assert(client.setMeasurementConsent('granted'));assert.equal(posts(requests).length,0);
   client.learningEvent(valid[1]);assert.equal(posts(requests).length,1);
   const sent=posts(requests)[0];assert.deepEqual(JSON.parse(sent.init.body),valid[1]);assert.equal(sent.url,'/api/measurement');assert.equal(sent.init.credentials,'omit');assert.equal(sent.init.referrerPolicy,'no-referrer');
+  assert.equal(sent.init.redirect,'error');
   client.setMeasurementConsent('denied');assert(sent.init.signal.aborted);client.learningEvent(valid[2]);assert.equal(posts(requests).length,1);
 }));
 

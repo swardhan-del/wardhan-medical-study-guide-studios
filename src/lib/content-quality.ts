@@ -8,7 +8,9 @@ export function validDate(value: unknown): value is string {
 export function containsPrivateReference(value: unknown): boolean {
   let text = typeof value === "string" ? value : JSON.stringify(value);
   for (let i = 0; i < 3; i++) { try { text = decodeURIComponent(text); } catch { break; } }
-  return /\.private(?:[\\/]|\b)|dropbox(?:usercontent)?\.com|(?:[\\/]Users[\\/]|[\\/]home[\\/])|file:\/\/|Library[\\/]CloudStorage|source-intake[\\/]/i.test(text);
+  // A public bibliography may have /home/ in its URL path (for example Leeds).
+  // Match a filesystem root at a token boundary, including JSON and query values.
+  return /\.private(?:[\\/]|\b)|dropbox(?:usercontent)?\.com|[\\/]Users[\\/]|(?:^|[\s"'`\[(=:]|\\[nrt])[\\/]+home[\\/]|file:\/\/|Library[\\/]CloudStorage|source-intake[\\/]/i.test(text);
 }
 export function explainedQuestions(lesson: QualityLesson): boolean {
   return lesson.prompts.every(p => nonempty(p.prompt) && nonempty(p.explanation)) && lesson.questions.length > 0 && lesson.questions.every(q => nonempty(q.prompt) && Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length && q.options.length >= 2 && q.options.every(o => nonempty(o.text) && nonempty(o.explanation)));
