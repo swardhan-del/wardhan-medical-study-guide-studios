@@ -112,12 +112,14 @@ test("nephron diagram supports recall and fits the page on small screens", async
     });
 });
 
-test('all twelve subjects are discoverable from the homepage and first visit', async ({ page }) => {
+test('current learning paths and course subsets are discoverable from the homepage and first visit', async ({ page }) => {
   for (const path of ['/', '/start']) {
     await page.goto(path);
     for (const name of subjectInterests.map(s => s.title)) await expect(page.getByRole('heading', { name, exact: true })).toBeVisible();
   }
-  await expect(page.getByRole('navigation', { name: 'Course subsets and unreleased subjects' }).getByRole('link')).toHaveCount(6);
+  const subsets = page.getByRole('navigation', { name: 'Course subsets and reference collections' });
+  await expect(subsets.getByRole('link')).toHaveCount(5);
+  await expect(subsets.locator('a[href="/subjects/microbiology"]')).toHaveCount(0);
 });
 
 test('figure navigation matches real figures and foundations are usable', async ({ page }) => {
