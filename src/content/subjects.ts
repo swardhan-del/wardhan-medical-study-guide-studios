@@ -36,7 +36,7 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
   {
     id: "cell-biology",
     number: "03",
-    title: "Molecular & Cell Biology",
+    title: "Molecular Cell Biology",
     description:
       "Explore how cells organise, communicate, divide, and maintain their genetic information.",
     topics: ["Cell organization", "Molecular mechanisms", "Cell signaling"],

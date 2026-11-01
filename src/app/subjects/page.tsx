@@ -49,7 +49,7 @@ export default function SubjectsPage() {
           </article>
         ))}
       </section>
-      <section className="study-panel" aria-labelledby="planned-subjects"><h2 id="planned-subjects">Subjects without published lessons</h2><p>Microbiology &amp; Antimicrobials and Biostatistics do not yet have public lessons. Choose one of the seven subjects above to study now.</p><div className="quick-links"><Link href="/subjects/microbiology">Microbiology availability</Link><Link href="/subjects/biostatistics">Biostatistics availability</Link></div></section>
+      <section className="study-panel" aria-labelledby="planned-subjects"><h2 id="planned-subjects">Reference collection without published lessons</h2><p>Biostatistics does not yet have public lessons. Choose one of the seven subjects above to study now.</p><div className="quick-links"><Link href="/subjects/biostatistics">Biostatistics availability</Link></div></section>
       <h2 className="native-section-title">Find a topic across subjects</h2>
       <TopicSearch
         items={taxonomyNodes.map((n) => ({

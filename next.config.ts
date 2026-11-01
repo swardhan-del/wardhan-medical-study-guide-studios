@@ -24,7 +24,12 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   outputFileTracingExcludes: { "/*": ["./.private/**/*", "./.private/catalog.json"] },
   async redirects() {
-    return [{ source: "/images/anatomy/volume-1.png", destination: "/images/anatomy/mediastinal-plane.svg", permanent: true }];
+    return [
+      { source: "/images/anatomy/volume-1.png", destination: "/images/anatomy/mediastinal-plane.svg", permanent: true },
+      // Retire the mistaken empty subject entry without breaking saved links.
+      { source: "/subjects/microbiology", destination: "/subjects/cell-biology", permanent: true },
+      { source: "/library", has: [{ type: "query", key: "subject", value: "microbiology" }], destination: "/library?subject=cell-biology", permanent: true },
+    ];
   },
   async headers() {
     return [

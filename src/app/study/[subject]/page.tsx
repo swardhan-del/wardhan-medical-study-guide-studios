@@ -40,8 +40,9 @@ export default async function SubjectStudyPage({ params }: Props) {
    {subject === "biophysics" && <BiophysicsCourseIntro />}
    <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>
    {subject === "physiology" && <section className="study-panel" aria-labelledby="renal-course-heading"><p className="eyebrow">Renal and acid–base physiology · Guided course</p><h2 id="renal-course-heading">Renal physiology, step by step</h2><p>{renalLessons.length} lessons and {renalQuestions.length} questions with explanations, plus interactive circulation and acid–base activities.</p><Link className="button button-primary" href="/learn/renal">Open renal physiology course</Link></section>}
+   {subject === "cell-biology" && <TopicGuideLinks subject={subject} />}
    <div id="subject-lessons"><StudyCollectionBrowser cards={cards} groups={groups} /></div>
-   <TopicGuideLinks subject={subject} />
+   {subject !== "cell-biology" && <TopicGuideLinks subject={subject} />}
    <SubjectCoverage subject={subject} />
    <WaitlistCta />
    <p className="muted-note">These are focused teaching adaptations, with source references on each lesson. AI-assisted educational content; independent clinical peer review has not been completed. Your practice stays in this browser.</p>

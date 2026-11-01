@@ -18,10 +18,12 @@ test("native taxonomy covers every released resource and retains course distinct
     "histology-ii",
     "genetics",
     "immunology",
-    "microbiology",
+    "cell-biology",
     "biostatistics",
   ])
     assert(taxonomy.subjects.some((s) => s.id === id));
+  assert(!taxonomy.subjects.some(s => s.id === "microbiology"));
+  assert.equal(taxonomy.subjects.find(s => s.id === "cell-biology").title, "Molecular Cell Biology");
 });
 test("cycles, missing parents, duplicate IDs, private metadata and unapproved resources fail closed", () => {
   for (const mutate of [
