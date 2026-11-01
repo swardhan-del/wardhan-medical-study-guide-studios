@@ -4220,6 +4220,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 }
 
 .visual-viewport { overflow-x: auto; overscroll-behavior-inline: contain; max-width: 100%; }
+.mcb-review-svg { display: block; width: 100%; height: auto; }
 .visual-scroll-hint { font-size: .9rem; color: var(--ink-soft); }
 @media print { .visual-viewport { overflow: visible; } .visual-scroll-hint { display: none; } }
 

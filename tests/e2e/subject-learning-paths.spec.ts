@@ -6,6 +6,30 @@ import data from '../../src/content/library-lessons.json';
 import studio from '../../src/content/study-questions.json';
 import transfer from '../../src/content/transfer-practice.json';
 import references from '../../src/content/lesson-references.json';
+import collections from '../../src/content/study-collections.json';
+
+test('each subject exposes its existing numbered lesson order before the card grid', async ({ page }) => {
+  for (const subject of subjectInterests) {
+    await page.goto(`/study/${subject.id}`);
+    const index = page.locator('#lesson-order');
+    await expect(index.getByRole('heading', { name: 'Lesson order', exact: true })).toBeVisible();
+    const groups = collections.groups.filter(group => group.subject === subject.id);
+    const expected = groups.flatMap(group => group.lessonIds).map(id => `/library/${id}`);
+    expect(await index.locator('ol a').evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(expected);
+    let number = 1;
+    for (const group of groups) {
+      const details = index.locator('details').filter({ has: page.getByText(group.title, { exact: false }) });
+      await details.locator('summary').press('Enter');
+      await expect(details.locator('ol')).toHaveAttribute('start', String(number));
+      await expect(details.locator('ol a').first()).toBeVisible();
+      number += group.lessonIds.length;
+    }
+    expect(await page.evaluate(() => document.getElementById('lesson-order')!.compareDocumentPosition(document.getElementById('subject-lessons')!) & Node.DOCUMENT_POSITION_FOLLOWING)).toBeTruthy();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await index.locator('ol a').first().click();
+    await expect(page).toHaveURL(new RegExp(`${expected[0]}$`));
+  }
+});
 
 for (const [subject, hub] of Object.entries(subjectHubs)) {
   test(`${hub.name}: homepage to hub, first lesson, quiz and library`, async ({ page }) => {

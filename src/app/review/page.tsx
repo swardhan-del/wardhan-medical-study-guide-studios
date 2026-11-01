@@ -1,5 +1,6 @@
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { getLocalReview } from "@/lib/local-review";
+import Link from "next/link";
 export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Local collection review",
@@ -19,6 +20,7 @@ export default async function ReviewPage() {
           editions have not been released to the public library.
         </p>
       </header>
+      <p><Link href="/review/molecular-cell-biology">Review Molecular Cell Biology diagrams in lesson context</Link></p>
       <CatalogBrowser records={records} basePath="/review" />
     </div>
   );

@@ -1,0 +1,11 @@
+--- a/src/components/original-diagrams.tsx
++++ b/src/components/original-diagrams.tsx
+@@ -99,7 +99,7 @@
+     <Label x={278} y={220} lines={["Membrane"]} size={17} /><Label x={43} y={281} lines={["Cytosol"]} size={17} /><Label x={657} y={271} lines={["Cytosol"]} size={17} />
+     <Arrow d="M174 258 L174 305" marker={marker} />
+     <g data-part="heterotrimeric-g-protein"><circle cx={147} cy={342} r={31} fill="#fffefa" stroke={ink} strokeWidth={2} /><circle cx={203} cy={342} r={23} fill="#fffefa" stroke={ink} strokeWidth={2} /><circle cx={234} cy={361} r={17} fill="#fffefa" stroke={ink} strokeWidth={2} /><Label x={126} y={350} lines={["Gα"]} /><Label x={193} y={349} lines={["β"]} /><Label x={229} y={368} lines={["γ"]} size={17} /></g>
+-    <Label x={44} y={402} lines={["Heterotrimeric G protein", "GDP → GTP exchange on Gα"]} size={18} />
++    <Label x={44} y={402} lines={["Heterotrimeric G protein", "GDP leaves; GTP binds Gα"]} size={18} />
+     <Arrow d="M184 449 L184 479" marker={marker} />
+     <Box x={42} y={490} width={305} height={108} lines={["Gα and/or Gβγ", "regulate an effector", "enzyme or ion channel"]} />
+     <Label x={45} y={641} lines={["Not every GPCR uses cAMP"]} size={17} />

@@ -42,8 +42,9 @@ import type {
 import { getSiteUrl } from "@/lib/site-url";
 import { SaveButton } from "./save-button";
 import { ConceptCheck } from "./concept-check";
+import type { ReactNode } from "react";
 
-export function LibraryLesson({ lesson }: { lesson: Lesson }) {
+export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; reviewVisuals?: ReactNode }) {
   const editorialRecorded = !qualityForLesson(lesson.id) || hasRecordedReview(lesson.id, "editorial");
   const clinicallyReviewed = qualityForLesson(lesson.id)?.contentStatus === "independently-clinically-reviewed";
   const journey = journeyLessons.find(item => item.id === lesson.id)!;
@@ -162,6 +163,7 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           {hasFigures && <span id="lesson-figures" />}
           <TeachingDiagram lessonId={lesson.id} />
           <LessonVisuals lessonId={lesson.id} />
+          {reviewVisuals}
           <HistologyTopicVisual lessonId={lesson.id} />
           {lesson.id === "epithelia" && (
             <>
