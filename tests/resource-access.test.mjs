@@ -29,13 +29,13 @@ test('all 19 web and activity wrappers link directly; PDF and private detail pag
   }
   assert.equal(resourceHref(records.find(r => r.id === 'renal-revision-sheet')), '/library/renal-revision-sheet');
 });
-test('all twelve subject entries have explicit, internally consistent public availability', () => {
+test('subject entries have explicit, internally consistent public availability', () => {
   const { subjects, nodes } = read('library-taxonomy');
-  assert.equal(subjects.length, 12);
+  assert.equal(subjects.length, 11);
   for (const subject of subjects) {
     const ids = new Set(nodes.filter(n => n.subject === subject.id).flatMap(n => n.resources));
     for (const id of ids) assert.ok(records.some(r => r.id === id), `${subject.id}: ${id}`);
-    assert.equal(ids.size === 0, ['microbiology', 'biostatistics'].includes(subject.id), subject.id);
+    assert.equal(ids.size === 0, subject.id === 'biostatistics', subject.id);
   }
   const immunity = nodes.filter(n => n.subject === 'immunology').flatMap(n => n.resources);
   assert.ok(immunity.includes('antigen-presentation'));

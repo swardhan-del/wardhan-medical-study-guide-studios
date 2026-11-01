@@ -66,7 +66,7 @@ export const topicGuides = [
       { id: "er-protein-quality-control", purpose: "Finish with the quality-control introduction and compare its folding, retention and disposal examples." },
     ],
     review: "Explain the four lesson connections using one example from the published explanations. Mark where that example stops being covered, rather than filling a gap from memory. Revisit a lesson if you can name its process but cannot explain the question feedback.",
-    next: { href: "/study/cell-biology", title: "Return to the Molecular and Cell Biology learning path" },
+    next: { href: "/study/cell-biology", title: "Return to the Molecular Cell Biology learning path" },
   },
   {
     slug: "cardiac-events-to-circulation", title: "From cardiac events to circulation: a study sequence",

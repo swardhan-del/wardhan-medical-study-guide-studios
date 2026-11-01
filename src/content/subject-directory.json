@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-11-01",
   "subjects": [
     {
       "id": "anatomy",
@@ -28,7 +28,7 @@
     },
     {
       "id": "cell-biology",
-      "title": "Molecular & Cell Biology",
+      "title": "Molecular Cell Biology",
       "description": "Molecular mechanisms, cellular structures and laboratory techniques.",
       "learningSubject": "cell-biology"
     },
@@ -55,12 +55,6 @@
       "title": "Immunology",
       "description": "Innate and adaptive immunity, antigen presentation, complement, vaccines and therapies.",
       "learningSubject": "genetics"
-    },
-    {
-      "id": "microbiology",
-      "title": "Microbiology & Antimicrobials",
-      "description": "The existing sterilisation, disinfection and antibiotic source collection.",
-      "learningSubject": null
     },
     {
       "id": "biostatistics",

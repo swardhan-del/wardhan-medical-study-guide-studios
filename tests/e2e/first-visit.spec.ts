@@ -146,11 +146,60 @@ test("anatomy starts with foundations and empty subjects offer a usable next ste
   await expect(page.getByText("The coronal plane.", { exact: false })).toBeVisible();
   await page.getByRole("link", { name: /Next: identify thoracic cage/ }).click();
   await expect(page).toHaveURL(/\/library\/thoracic-cage-landmarks$/);
-  await page.goto("/subjects/microbiology");
+  await page.goto("/subjects/biostatistics");
   await expect(page.getByRole("heading", { name: "No public lessons yet" })).toBeVisible();
   await page.getByRole("link", { name: "Choose a subject with lessons", exact: true }).click();
   await expect(page).toHaveURL(/\/subjects$/);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+});
+
+test("Molecular Cell Biology is distinct from histology and replaces the mistaken subject entry", async ({ page, request }) => {
+  for (const route of ["/subjects", "/start"]) {
+    await page.goto(route);
+    await expect(page.locator("main")).toContainText("Molecular Cell Biology");
+    await expect(page.locator("main")).not.toContainText(/microbiology/i);
+  }
+  await page.goto("/library");
+  const select = page.getByRole("combobox", { name: "Subject", exact: true });
+  await expect(select.locator('option[value="cell-biology"]')).toHaveText("Molecular Cell Biology");
+  await expect(select.locator('option[value="microbiology"]')).toHaveCount(0);
+  await select.selectOption("cell-biology");
+  await expect(page.locator(".resource-card:visible")).toHaveCount(9);
+  await page.goto("/subjects/histology");
+  await expect(page.locator("h1:visible")).toContainText("Microscopic Anatomy");
+  await page.goto("/subjects/cell-biology");
+  await expect(page.locator("h1:visible")).toHaveText("Molecular Cell Biology");
+  const old = await request.get("/subjects/microbiology", { maxRedirects: 0 });
+  expect(old.status()).toBe(308);
+  expect(old.headers().location).toBe("/subjects/cell-biology");
+  const filter = await request.get("/library?subject=microbiology&q=RNA", { maxRedirects: 0 });
+  expect(filter.status()).toBe(308);
+  const destination = new URL(filter.headers().location, "http://127.0.0.1");
+  expect(destination.searchParams.get("subject")).toBe("cell-biology");
+  expect(destination.searchParams.get("q")).toBe("RNA");
+});
+
+test("Molecular Cell Biology starts a released sequence and gives explained question feedback", async ({ page }) => {
+  await page.goto("/study/cell-biology");
+  await expect(page.locator("h1:visible")).toHaveText("Molecular Cell Biology");
+  const sequences = page.getByRole("region", { name: "Guided topic sequences" });
+  expect(await sequences.evaluate(el => !!(el.compareDocumentPosition(document.querySelector("#subject-lessons")!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
+  await sequences.getByRole("link", { name: "From RNA processing to protein delivery and quality control", exact: true }).click();
+  await page.getByRole("link", { name: "Try the Knowledge Check", exact: true }).first().click();
+  await expect(page).toHaveURL(/\/library\/rna-processing#concept-check-title$/);
+  const q = library.lessons.find(l => l.id === "rna-processing")!.question;
+  const panel = page.locator("#concept-check-title:visible");
+  const wrong = q.options[(q.answer + 1) % q.options.length];
+  await panel.getByRole("radio", { name: wrong.text, exact: true }).check();
+  await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+  await expect(panel.getByRole("status")).toContainText("Review the distinction.");
+  await expect(panel.getByRole("status")).toContainText(wrong.reason);
+  await panel.getByRole("button", { name: "Try without feedback", exact: true }).click();
+  await panel.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check();
+  await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+  await expect(panel.getByRole("status")).toContainText("Correct.");
+  await page.reload();
+  await expect(panel.getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();
 });
 
 // Presentation-only practice changes must preserve the published keys and history.

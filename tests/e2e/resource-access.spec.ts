@@ -18,7 +18,7 @@ test('search is visible before scrolling and finds lesson text with spelling rec
   await page.screenshot({path:info.outputPath('search.png')});
 });
 
-test('all twelve subjects show their released resources or honest empty state', async ({page},info) => {
+test('current subject views show their released resources or honest empty state', async ({page},info) => {
   test.setTimeout(120000);
   const errors: string[] = []; page.on('pageerror', e=>errors.push(e.message));
   for (const subject of taxonomy.subjects) {

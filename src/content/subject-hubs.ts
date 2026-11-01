@@ -94,7 +94,7 @@ export const subjectHubs: Record<string, SubjectHub> = {
     ],
   },
   "cell-biology": {
-    name: "Molecular & Cell Biology",
+    name: "Molecular Cell Biology",
     covers: "DNA maintenance, RNA processing, protein synthesis and targeting, cellular signalling and molecular methods.",
     why: "Following information and molecules through a cell connects genetic instructions with the structures and mechanisms that perform a function.",
     firstLesson: "dna-replication",
