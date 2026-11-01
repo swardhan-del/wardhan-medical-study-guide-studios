@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import { subjectHubs, newEntryLessonIds } from '../../src/content/subject-hubs';
 import { subjectInterests } from '../../src/content/subjects';
@@ -23,7 +24,7 @@ for (const [subject, hub] of Object.entries(subjectHubs)) {
     await page.getByRole('link', { name: 'Start learning', exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`/library/${hub.firstLesson}$`));
     await page.locator('.concept-heading:visible').getByRole('link', { name: /Begin the Knowledge Check|Try the question/ }).click();
-    await expect(page.locator('#concept-check-title:visible fieldset')).toBeVisible();
+    await expect(page.locator('#concept-check-title:visible fieldset:visible')).toBeVisible();
     await page.getByRole('navigation', { name: 'Continue studying' }).getByRole('link', { name: 'Search the library', exact: true }).click();
     await expect(page).toHaveURL(/\/library$/);
     await page.getByText('Choose a free subject learning path', { exact: true }).filter({ visible: true }).click();
@@ -39,6 +40,7 @@ for (const id of newEntryLessonIds) {
     const response = await page.goto(`/library/${id}`);
     expect(response?.status()).toBe(200);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(lesson.title);
+    await showAllPractice(page);
     const questions = [
       { ...lesson.question, options: lesson.question.options.map(o=>({text:o.text,explanation:o.reason})) },
       ...studio.questions.filter(q=>q.topic===id), ...transfer.questions.filter(q=>q.topic===id),
@@ -59,6 +61,7 @@ for (const id of newEntryLessonIds) {
       for (const option of q.options) await expect(panel.getByRole('status')).toContainText(option.explanation);
     }
     await page.reload();
+    await showAllPractice(page);
     for (const q of questions) await expect(page.locator('.practice-question:visible').filter({ hasText: q.prompt }).getByRole('radio', { name: q.options[q.answer].text, exact: true })).toBeChecked();
     expect(errors).toEqual([]);
   });

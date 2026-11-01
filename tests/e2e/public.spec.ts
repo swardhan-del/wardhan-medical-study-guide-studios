@@ -250,7 +250,7 @@ test("challenge saves mistakes, produces a next step and supports review after r
   ).toBeEnabled();
   await page.reload();
   await page.getByRole("button", { name: "Review my mistakes (5)" }).click();
-  const review = page.getByRole("region", { name: "Your review session" });
+  const review = page.getByRole("region", { name: "Your review session", exact: true });
   await review.getByRole("radio", { name: "50 mg/min", exact: true }).check();
   await review.getByRole("button", { name: "Check answer" }).click();
   await expect(review.getByRole("status")).toContainText("Correct.");

@@ -8,15 +8,15 @@ import {
 } from "@/content/renal-course";
 import { emptyProgress, localDate, studyPlan } from "@/lib/learning-core";
 import { recordVisit, updateLearning, useLearning } from "./learning-store";
-import { PracticeQuestion } from "./practice-question";
+import { PracticeSequence } from "./practice-sequence";
 import { practiceItems, practiceTopics } from "@/content/practice-registry";
 import { practiceSummary } from "@/lib/learning-core";
 export function StudyDashboard() {
   const { ready, data, persistent } = useLearning();
   const [session, setSession] = useState<string[] | null>(null);
+  const [sessionRound, setSessionRound] = useState(0);
   const [subject, setSubject] = useState("all");
   const [showUnattempted, setShowUnattempted] = useState(false);
-  const [reviewIndex, setReviewIndex] = useState(0);
   const [confirm, setConfirm] = useState(false);
   useEffect(() => {
     recordVisit();
@@ -47,6 +47,10 @@ export function StudyDashboard() {
     updateLearning(() => emptyProgress());
     setSession(null);
     setConfirm(false);
+  }
+  function beginReview(ids: string[]) {
+    setSession(ids);
+    setSessionRound(previous => previous + 1);
   }
   return (
     <div className="study-stack">
@@ -95,14 +99,14 @@ export function StudyDashboard() {
           <button
             className="button button-secondary"
             disabled={!due.length}
-            onClick={() => (setReviewIndex(0), setSession(due.slice(0, 10).map((q) => q.id)))}
+            onClick={() => beginReview(due.slice(0, 10).map(q => q.id))}
           >
             Review due questions ({due.length})
           </button>
           <button
             className="button button-secondary"
             disabled={!mistakes.length}
-            onClick={() => (setReviewIndex(0), setSession(mistakes.map((q) => q.id)))}
+            onClick={() => beginReview(mistakes.map(q => q.id))}
           >
             Review my mistakes ({mistakes.length})
           </button>
@@ -113,9 +117,7 @@ export function StudyDashboard() {
           <button className="text-link" onClick={() => setSession(null)}>
             Close review session
           </button>
-          <p>Review item {reviewIndex + 1} of {session.length}</p>
-          <PracticeQuestion freshAttempt key={session[reviewIndex]} item={practiceItems.find((q) => q.id === session[reviewIndex])!} title="Your review session" />
-          <div className="action-row"><button className="button button-secondary" disabled={reviewIndex === 0} onClick={() => setReviewIndex(reviewIndex - 1)}>Previous review item</button><button className="button button-secondary" disabled={reviewIndex === session.length - 1} onClick={() => setReviewIndex(reviewIndex + 1)}>Next review item</button></div>
+          <PracticeSequence freshAttempt key={`${sessionRound}-${session.join("|")}`} entries={session.map(id => ({ item: practiceItems.find(q => q.id === id)!, title: "Your review session" }))} title="Your review session" />
         </div>
       )}
       <section>

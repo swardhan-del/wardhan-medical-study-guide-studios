@@ -2,7 +2,7 @@ import type { LibraryLesson } from "@/lib/library-types";
 import studio from "@/content/study-questions.json";
 import transfer from "@/content/transfer-practice.json";
 import { ConceptCheck } from "./concept-check";
-import { PracticeQuestion } from "./practice-question";
+import { PracticeSequence } from "./practice-sequence";
 import { SavedRecall, SavedSelfCheck } from "./saved-recall";
 import type { ReactNode } from "react";
 import styles from "./histology-foundations.module.css";
@@ -50,14 +50,13 @@ export function FoundationsLessonContent({ lesson, preparation, coreConcepts, vi
     <section aria-labelledby="knowledge-check-heading">
       <h2 id="knowledge-check-heading">Knowledge Check</h2>
       <p>Select the single best answer to each question, then review the explanation. Use the feedback to identify the distinction you need to revisit.</p>
-      <ConceptCheck lesson={lesson} title={conceptTitle}/>
+      <ConceptCheck lesson={lesson} title={conceptTitle} additional={knowledge.map((q, index) => ({ item: q, title: `Question ${index + 2}` }))}/>
       <span id="studio-practice"/>
-      {knowledge.map((q, index) => <PracticeQuestion key={q.id} item={q} title={`Question ${index + 2}`}/>)}
     </section>
     <section aria-labelledby="application-heading" id="apply-the-concept">
       <h2 id="application-heading">Clinical and Applied Questions</h2>
       <p>{applicationIntro}</p>
-      {applied.map((q, index) => <PracticeQuestion key={q.id} item={q} title={`Application Question ${index + 1}`}/>)}
+      <PracticeSequence key={lesson.id} title="Application questions" entries={applied.map((q, index) => ({ item: q, title: `Application Question ${index + 1}` }))}/>
     </section>
     <section className="concept-recall study-panel" aria-labelledby="oral-recall-title">
       <h2 id="oral-recall-title">Oral Examination Prompts</h2>

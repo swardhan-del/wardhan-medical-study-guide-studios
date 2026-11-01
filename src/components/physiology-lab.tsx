@@ -2,7 +2,7 @@
 import { abgCases as cases } from "@/content/abg-cases";
 import { recordAnswer, recordVisit, useLearning } from "./learning-store";
 import { SavedRecall } from "./saved-recall";
-import { PracticeQuestion } from "./practice-question";
+import { PracticeSequence } from "./practice-sequence";
 import transfer from "@/content/transfer-practice.json";
 import { useState } from "react";
 import { StudyVisual } from "./study-visual";
@@ -120,7 +120,7 @@ export function RenalHemodynamics() {
       </details>
       <h3>3. Explain and transfer</h3><SavedRecall id="lab-explanation" label="What changed, and why?" />
       <p>Compare the observed values with your prediction. Reset, then repeat with afferent resistance at 2 and efferent resistance at 1.</p>
-      {transfer.questions.filter((q) => q.topic === "renal-experiments").map((q) => <PracticeQuestion key={q.id} item={q} title="Test the circuit relationship" />)}
+      <PracticeSequence title="Test the circuit relationship" entries={transfer.questions.filter(q => q.topic === "renal-experiments").map(q => ({ item: q, title: "Test the circuit relationship" }))} />
       <Link className="text-link" href="/learn/renal/afferent-efferent">
         Read the afferent/efferent lesson →
       </Link>

@@ -26,7 +26,6 @@ import audioData from "@/content/study-audio.json";
 import { StudyAudio, type StudyAudioRecord } from "./study-audio";
 import { StudyReel } from "./study-reel";
 import transfer from "@/content/transfer-practice.json";
-import { PracticeQuestion } from "./practice-question";
 import { SavedRecall } from "./saved-recall";
 import { HistologyVisualLesson } from "./histology-visual-lesson";
 import { CorrectionLink } from "./correction-link";
@@ -217,17 +216,10 @@ export function LibraryLesson({ lesson }: { lesson: Lesson }) {
           <ConceptCheck
             key={`concept-${lesson.id}`}
             lesson={{ id: lesson.id, question: lesson.question }}
+            additional={[...retrievalQuestions, ...applicationQuestions].map(q => ({ item: q, title: "heading" in q && typeof q.heading === "string" ? q.heading : "Apply the concept in a different setting" }))}
           />
           <AnatomyPractice lessonId={lesson.id} />
           <span id="studio-practice" /><span id="apply-the-concept" />
-          {[...retrievalQuestions, ...applicationQuestions]
-            .map((q) => (
-              <PracticeQuestion
-                key={q.id}
-                item={q}
-                title={"heading" in q && typeof q.heading === "string" ? q.heading : "Apply the concept in a different setting"}
-              />
-            ))}
           <section
             className="concept-recall study-panel"
             aria-labelledby="oral-recall-title"

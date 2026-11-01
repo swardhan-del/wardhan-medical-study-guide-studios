@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import taxonomy from '../../src/content/library-taxonomy.json';
 import catalog from '../../src/content/public-catalog.json';
@@ -66,6 +67,7 @@ test('plexus recall hides labels and applied questions explain alternatives',asy
   await page.getByRole('button',{name:'Hide plexus labels'}).click();
   await expect(page.getByRole('list',{name:'Five levels of the brachial plexus',exact:true})).not.toContainText('Posterior cord');
   await page.getByRole('button',{name:'Show plexus labels'}).click();
+  await showAllPractice(page);
   const question=page.locator('.practice-question:visible').filter({hasText:'In a simplified plexus map'});
   await question.getByRole('radio',{name:'Upper trunk → posterior division → posterior cord',exact:true}).check();
   await question.getByRole('button',{name:'Check answer',exact:true}).click();
