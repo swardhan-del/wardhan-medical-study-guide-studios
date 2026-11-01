@@ -39,3 +39,7 @@ The patch applies cleanly to a private copy of the pinned source, and the result
 The owner must identify the controlling source edition for any new archive adaptation and locate or commission the required exact-version scientific, editorial, human accessibility and applicable rights reviews. Original SVG review and archive-image licensing remain separate. The existing review packets should be completed in place with scope, version/hash, reviewer qualifications, findings and disposition; no approval or reviewer identity is invented here.
 
 This branch provides a review record and proposed correction. It does not change the draft stack, publish archive sources, apply the patch, clear the lesson quality ledger or deploy new medical content. The production baseline remains `4ae3890` until a separately evidenced content release is ready.
+
+## Implementation addendum — 1 November 2026
+
+The owner subsequently requested actual implementation after private curation delivery. The historical “unapplied” statements above describe the initial review artifact. The label clarification is now applied to `src/components/local-mcb-diagrams.tsx`, selectively reused from the pinned PR #30 code for guarded local lesson-context review. It remains unapplied to PR #30 itself. The stack and public medical lesson content are unchanged. See the [student-journey and integration record](../releases/2026-11-01-student-journey-and-mcb-review.md). No human review or public-use approval is asserted.

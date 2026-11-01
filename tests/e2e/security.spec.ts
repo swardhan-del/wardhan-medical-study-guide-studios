@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("public and denied pages enforce browser security boundaries", async ({ request }) => {
-  for (const route of ["/", "/library", "/review", "/.env", "/.git/config", "/.private/catalog.json"]) {
+  for (const route of ["/", "/library", "/review", "/review/molecular-cell-biology", "/review/molecular-cell-biology/cell-signaling", "/.env", "/.git/config", "/.private/catalog.json"]) {
     const response = await request.get(route);
     expect(response.status()).toBe(route === "/" || route === "/library" ? 200 : 404);
     const headers = response.headers();

@@ -53,3 +53,27 @@ test("review catalog fits a phone screen", async ({ page }) => {
     ),
   ).toBe(true);
 });
+
+test("three existing Molecular Cell Biology diagrams render only in local lesson review", async ({ page, request }) => {
+  for (const [lesson, diagram] of [["chromatin-access-and-topology", "chromatin-local-access"], ["er-protein-quality-control", "er-folding-decisions"], ["cell-signaling", "gpcr-versus-rtk"]]) {
+    await page.goto(`/review/molecular-cell-biology/${lesson}#draft-visual-review`);
+    const draft = page.locator("#draft-visual-review");
+    await expect(draft.locator(`[data-original-diagram="${diagram}"]`)).toBeVisible();
+    await expect(draft).toContainText("reviews remain pending");
+    await expect(draft.getByRole("img")).toHaveAccessibleName(/.+/);
+    await expect(draft.locator("figcaption")).toContainText("Observe and explain:");
+    await draft.locator("details").last().locator("summary").press("Enter");
+    await expect(draft.locator("details").last()).toHaveAttribute("open", "");
+    if (lesson === "cell-signaling") await expect(draft.locator("svg")).toContainText("GDP leaves; GTP binds Gα");
+    await page.setViewportSize({ width: 390, height: 844 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await expect(draft.getByRole("region")).toHaveAttribute("tabindex", "0");
+    const published = await request.get(`/library/${lesson}`);
+    const html = await published.text();
+    expect(published.status()).toBe(200);
+    expect(html).not.toContain("data-original-diagram");
+    expect(html).not.toContain("draft-visual-review");
+    expect(html).not.toContain("private-source-links");
+  }
+  expect((await request.get("/review/molecular-cell-biology/not-a-lesson")).status()).toBe(404);
+});

@@ -7,7 +7,7 @@ import { SubjectHubOverview, SubjectTopicMap } from "@/components/subject-hub";
 import searchIndex from "@/content/public-search.json";
 import Link from "next/link";
 import { BiophysicsCourseIntro } from "@/components/biophysics-course";
-import { SubjectCoverage } from "@/components/subject-coverage";
+import { SubjectCoverage, SubjectLessonOrder } from "@/components/subject-coverage";
 import { notFound } from "next/navigation";
 import { studySubjects, studyGroups, subjectLessons } from "@/lib/study-collections";
 import { StudyCollectionBrowser } from "@/components/study-collection-browser";
@@ -38,9 +38,10 @@ export default async function SubjectStudyPage({ params }: Props) {
    {subject === "anatomy" && <AnatomyCourseIntro />}
    {subject === "histology" && <section className="study-panel"><h2>Practise recognising real sections</h2><p>Start with epithelial structure, hide the labels, then compare the two available microscope sections. Renal tubule practice begins with three schematics and links to further public slide practice.</p><div className="action-row"><Link href="/library/epithelia">Study epithelium and compare sections</Link><Link href="/practice/histology">Open tissue identification practice</Link></div></section>}
    {subject === "biophysics" && <BiophysicsCourseIntro />}
-   <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>
+   <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#lesson-order">Lesson order</a><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>
    {subject === "physiology" && <section className="study-panel" aria-labelledby="renal-course-heading"><p className="eyebrow">Renal and acid–base physiology · Guided course</p><h2 id="renal-course-heading">Renal physiology, step by step</h2><p>{renalLessons.length} lessons and {renalQuestions.length} questions with explanations, plus interactive circulation and acid–base activities.</p><Link className="button button-primary" href="/learn/renal">Open renal physiology course</Link></section>}
    {subject === "cell-biology" && <TopicGuideLinks subject={subject} />}
+   <SubjectLessonOrder subject={subject} />
    <div id="subject-lessons"><StudyCollectionBrowser cards={cards} groups={groups} /></div>
    {subject !== "cell-biology" && <TopicGuideLinks subject={subject} />}
    <SubjectCoverage subject={subject} />
