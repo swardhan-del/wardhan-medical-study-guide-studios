@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import lessons from "../../src/content/library-lessons.json";
 import studio from "../../src/content/study-questions.json";
@@ -22,6 +23,7 @@ test("histology foundations exposes sourced teaching, hidden feedback and persis
   await page.goto(`/library/${id}`);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(lesson.title);
   await expect(page.locator("[data-study-diagram]:visible")).toHaveCount(6);
+  await showAllPractice(page);
   const worked = page.locator('section[aria-labelledby="worked-example-heading"]:visible');
   await expect(worked.locator("ol")).toBeHidden();
   await worked.getByText("Show the reasoning", { exact: true }).click();
@@ -39,6 +41,7 @@ test("histology foundations exposes sourced teaching, hidden feedback and persis
     await expect(panel.getByRole("status")).toContainText(q.options[q.answer].explanation);
   }
   await page.reload();
+  await showAllPractice(page);
   for (const q of questions) {
     const panel = page.locator(".practice-question:visible").filter({ hasText: q.prompt });
     await expect(panel.getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();

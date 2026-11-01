@@ -2724,6 +2724,35 @@ select:focus-visible {
 .concept-feedback ul {
   padding-left: 22px;
 }
+.concept-feedback[data-feedback="incorrect"] {
+  border-color: var(--rust);
+}
+.answer-explanation[data-feedback="incorrect"] {
+  border-inline-start: 4px solid var(--rust);
+}
+.practice-sequence {
+  margin-block: 28px;
+  min-width: 0;
+}
+.practice-sequence > h3 {
+  scroll-margin-top: 24px;
+}
+.practice-sequence > h3:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 6px;
+}
+.practice-sequence progress {
+  max-width: 100%;
+  accent-color: var(--teal);
+}
+.practice-sequence [data-sequence-question][hidden] {
+  display: none;
+}
+.practice-results button {
+  white-space: normal;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
 .concept-feedback li {
   margin: 18px 0;
 }

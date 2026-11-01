@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import lessons from '../../src/content/library-lessons.json';
 import studio from '../../src/content/study-questions.json';
@@ -29,6 +30,7 @@ test('Anatomy course map and flagship are reachable from home, subject hub and l
 test('all eleven Anatomy answers are hidden, explained and saved without runtime errors', async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto(`/library/${id}`);
+  await showAllPractice(page);
   const concept = { ...lesson.question, options: lesson.question.options.map(o => ({ text: o.text, explanation: o.reason })) };
   const questions = [concept, ...studio.questions.filter(q => q.topic === id), ...transfer.questions.filter(q => q.topic === id)];
   for (const q of questions) {
@@ -40,6 +42,7 @@ test('all eleven Anatomy answers are hidden, explained and saved without runtime
     for (const option of q.options) await expect(panel.getByRole('status')).toContainText(option.explanation);
   }
   await page.reload();
+  await showAllPractice(page);
   for (const q of questions) await expect(page.locator('.practice-question:visible').filter({ hasText: q.prompt }).getByRole('radio', { name: q.options[q.answer].text, exact: true })).toBeChecked();
   expect(errors).toEqual([]);
 });
@@ -115,11 +118,13 @@ for (const question of [
       }));
     }, { id: question.id, attempt: savedAttempt });
     await page.goto(`/library/${question.topic}`);
+    await showAllPractice(page);
     const panel = page.locator('.practice-question:visible').filter({ hasText: question.prompt });
     await expect(panel.getByRole('radio', { name: question.options[2].text, exact: true })).toBeChecked();
     await expect(panel.getByRole('status')).toContainText('Review the distinction.');
     await expect(panel.getByRole('status')).toContainText(question.options[2].explanation);
     await page.reload();
+    await showAllPractice(page);
     const restored = await page.evaluate(() => JSON.parse(localStorage.getItem('wardhan-learning:v1')!));
     expect(restored.answers[question.id]).toEqual(savedAttempt);
     expect(restored.lessons).toContain('anatomy-foundations');
@@ -129,6 +134,7 @@ for (const question of [
     await panel.getByRole('button', { name: 'Check answer', exact: true }).click();
     await expect(panel.getByRole('status')).toContainText('Correct.');
     await page.reload();
+    await showAllPractice(page);
     await expect(panel.getByRole('radio', { name: question.options[question.answer].text, exact: true })).toBeChecked();
     await page.setViewportSize({ width: 320, height: 800 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

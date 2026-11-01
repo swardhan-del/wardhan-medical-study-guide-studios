@@ -23,7 +23,7 @@ test("concept answers and written reasoning survive reload and enter shared revi
   await page.goto("/study");
   await page.getByRole("button", { name: "Review my mistakes (1)" }).click();
   await expect(
-    page.getByRole("region", { name: "Your review session" }),
+    page.getByRole("region", { name: "Your review session", exact: true }),
   ).toContainText("urea handling");
 });
 test("canonical thorax restores a checked answer and uses the corrected dividing-plane image", async ({

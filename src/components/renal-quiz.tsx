@@ -144,11 +144,11 @@ export function RenalQuiz({
             ))}
           </fieldset>
           {checked && (
-            <div className="answer-explanation" role="status">
+            <div className="answer-explanation" role="status" data-feedback={results[question.id] === question.answer ? "correct" : "incorrect"}>
               <h3>
                 {results[question.id] === question.answer
                   ? "Correct."
-                  : "A useful mistake to learn from."}
+                  : "Not quite. A useful mistake to learn from."}
               </h3>
               <p>
                 <strong>Correct answer:</strong>{" "}
