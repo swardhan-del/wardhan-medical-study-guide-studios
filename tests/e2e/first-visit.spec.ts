@@ -1,4 +1,36 @@
 import { test, expect } from "@playwright/test";
+import library from "../../src/content/library-lessons.json";
+import { renalLessons } from "../../src/content/renal-course";
+
+test("physiology entry points explain the same core and renal lesson counts", async ({ page }) => {
+  const core = library.lessons.filter(lesson => lesson.subject === "physiology").length;
+  const total = core + renalLessons.length;
+  const detail = `${core} core introductions and ${renalLessons.length} renal course lessons`;
+  await page.goto("/");
+  const home = page.locator("article#physiology");
+  await expect(home).toContainText(`${total} available lessons`);
+  await expect(home).toContainText(detail);
+  await page.goto("/start");
+  const start = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Medical Physiology", exact: true }) });
+  await expect(start).toContainText(`${total} available lessons: ${detail}`);
+  await page.goto("/study/physiology#coverage");
+  const coverage = page.locator("#coverage:visible");
+  await expect(coverage).toContainText(`${total} available lessons: ${detail}`);
+  await expect(coverage.getByRole("link", { name: `${renalLessons.length}-lesson renal course`, exact: false })).toHaveAttribute("href", "/learn/renal");
+  await expect(coverage).toContainText("these are not additional syllabus areas");
+});
+
+test("Start Here reaches the existing guided sequence, its quiz and onward learning", async ({ page }) => {
+  await page.goto("/start");
+  await page.getByRole("link", { name: "Try the membrane transport sequence", exact: true }).click();
+  await expect(page).toHaveURL(/\/learn\/topics\/membrane-transport$/);
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Membrane transport");
+  await expect(page.getByRole("link", { name: "Try the Knowledge Check", exact: true })).toHaveCount(4);
+  await expect(page.getByRole("link", { name: "Continue into renal tubular transport", exact: true })).toHaveAttribute("href", "/learn/renal/tubular-transport");
+  await page.getByRole("link", { name: "Try the Knowledge Check", exact: true }).first().click();
+  await expect(page).toHaveURL(/\/library\/fluid-and-membrane-transport#concept-check-title$/);
+  await expect(page.locator("#concept-check-title").getByRole("button", { name: "Check answer", exact: true })).toBeVisible();
+});
 
 test("first visit reaches each subject coverage map and a real starting lesson", async ({ page }, info) => {
   const errors: string[] = [];

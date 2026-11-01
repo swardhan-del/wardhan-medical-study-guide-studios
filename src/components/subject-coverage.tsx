@@ -2,17 +2,19 @@ import Link from "next/link";
 import { studyPaths, beginnerSequences } from "@/content/study-paths";
 import { studyGroups, subjectLessons } from "@/lib/study-collections";
 import { practiceItems } from "@/content/practice-registry";
+import { subjectLessonCounts } from "@/lib/subject-lesson-counts";
 
 export function SubjectCoverage({ subject }: { subject: string }) {
   const path = studyPaths[subject];
   const lessons = subjectLessons(subject);
+  const coverage = subjectLessonCounts(subject);
   const first = lessons.find(l => l.id === path.start)!;
   return <section className="study-panel" id="coverage" aria-labelledby="coverage-title">
     <p className="eyebrow">Start here · Topic coverage</p>
     <h2 id="coverage-title">What you can study here</h2>
     <p>{path.preparation}</p>
     <Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start with {subject === "anatomy" ? beginnerSequences[subject][0].title : first.title}</Link>
-    <p>{lessons.length} {subject === "anatomy" ? "written course lessons" : "focused lesson introductions"}. Library resource totals also include other formats and activities; they are not additional lessons or a measure of syllabus completion.</p>
+    <p>{coverage.detail ? `${coverage.total} available lessons: ${coverage.detail}` : `${lessons.length} ${subject === "anatomy" ? "written course lessons" : "focused lesson introductions"}`}. Library resource totals also include other formats and activities; they are not additional lessons or a measure of syllabus completion.</p>
     <p>This map covers the current collection. An available introduction is a starting point, not complete preparation for an examination. Compare it with your course syllabus.</p>
     {studyGroups.filter(g => g.subject === subject).map(group => <details className="study-details" key={group.id}>
       <summary>{group.title} · {group.lessonIds.length} {subject === "anatomy" ? "lessons available" : "introductions available"}</summary>
@@ -22,7 +24,7 @@ export function SubjectCoverage({ subject }: { subject: string }) {
         return <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link> — {subject === "anatomy" ? "Lesson available" : "Introduction available"} · {count} practice {count === 1 ? "question" : "questions"}</li>;
       })}</ul>
     </details>)}
-    {subject === "physiology" && <p><Link href="/learn/renal">The separate eight-lesson renal course</Link> develops renal topics further. It overlaps this collection and should not be counted as eight additional syllabus areas.</p>}
+    {subject === "physiology" && <p><Link href="/learn/renal">The {coverage.renal}-lesson renal course</Link> is included in the total above. It develops renal topics further and overlaps the core introductions; these are not additional syllabus areas.</p>}
     <h3>{["biophysics", "anatomy"].includes(subject) ? "What to study alongside this course" : "Still needs fuller lessons"}</h3>
     <p>{["biophysics", "anatomy"].includes(subject) ? "The native lessons cover the supplied topic structure. These additional checks and experiences remain necessary." : "Selected gaps identified in the source review; this is not an exhaustive list or a release schedule."}</p>
     <ul>{path.gaps.map(gap => <li key={gap}>{gap}{!["biophysics", "anatomy"].includes(subject) && " — Not yet covered in depth"}</li>)}</ul>
