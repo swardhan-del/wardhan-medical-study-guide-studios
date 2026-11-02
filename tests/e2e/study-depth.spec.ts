@@ -63,3 +63,25 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     if(lesson.id==='indicator-dilution') await page.screenshot({path:info.outputPath('guided-lesson.png'),fullPage:true});
   });
 }
+
+for (const id of ['lymph-and-fluid-exchange', 'nitrogen-metabolism']) {
+  test(`mechanism supplement is accessible and keyboard readable: ${id}`, async ({ page }) => {
+    await page.goto('/library/' + id);
+    const figure = page.locator(`[data-teaching-figure="${id}"]:visible`);
+    await expect(figure).toBeVisible();
+    const description = figure.getByText('Read a text description', { exact: true });
+    await description.focus();
+    await page.keyboard.press('Enter');
+    await expect(figure.locator('details')).toHaveAttribute('open', '');
+    const worked = page.locator('section[aria-labelledby="worked-example-heading"]:visible');
+    await expect(worked.locator('ol')).toBeHidden();
+    await worked.locator('summary').focus();
+    await page.keyboard.press('Enter');
+    await expect(worked.locator('ol')).toBeVisible();
+    await page.setViewportSize({ width: 320, height: 800 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const { default: AxeBuilder } = await import('@axe-core/playwright');
+    const results = await new AxeBuilder({ page }).include('main').analyze();
+    expect(results.violations).toEqual([]);
+  });
+}

@@ -127,7 +127,13 @@
   "nitrogen-metabolism": {
     "title": "OpenStax: Nitrogenous wastes and the urea cycle",
     "url": "https://openstax.org/books/biology-2e/pages/41-4-nitrogenous-wastes",
-    "checkedAt": "2026-09-07"
+    "checkedAt": "2026-11-02",
+    "supportingReferences": [
+      {
+        "title": "IUBMB enzyme nomenclature: alanine transaminase, EC 2.6.1.2",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/6/1/2.html"
+      }
+    ]
   },
   "meiosis": {
     "title": "OpenStax: The process of meiosis",
@@ -267,7 +273,13 @@
   "lymph-and-fluid-exchange": {
     "title": "Levick and Michel: microvascular fluid exchange and the revised Starling principle",
     "url": "https://pubmed.ncbi.nlm.nih.gov/20200043/",
-    "checkedAt": "2026-09-08"
+    "checkedAt": "2026-11-02",
+    "supportingReferences": [
+      {
+        "title": "Baluk et al. (2007): Functionally specialized junctions between endothelial cells of lymphatic vessels",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17846148/"
+      }
+    ]
   },
   "thorax-nerve-relations": {
     "title": "Peripheral nervous system",
