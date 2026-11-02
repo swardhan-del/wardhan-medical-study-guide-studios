@@ -3951,6 +3951,11 @@ select:focus-visible {
 .reel-frame {background:#12353d;color:#fffdf3;padding:clamp(1.25rem,4vw,2.5rem);border-radius:12px;min-height:280px;margin:1.3rem 0;}
 .reel-frame h3 {color:#fffdf3;font:400 1.8rem/1.3 var(--serif);margin:.7rem 0;}
 .reel-frame p {line-height:1.7;}
+.reel-frame .muted-note {color:#d8e9e5;}
+.reel-frame h4 {color:inherit;}
+.reel-frame .button {background:#fffdf3;color:#12353d;border:2px solid #fffdf3;}
+.reel-frame .button:hover,.reel-frame .button[aria-pressed="true"] {background:#12353d;color:#fffdf3;}
+.reel-frame .button:focus-visible {outline:3px solid #f4c78c;outline-offset:4px;}
 .reel-counter {font-size:.85rem;color:#ade0d1;}
 .reel-controls {display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;}
 .reel-controls button:disabled {opacity:.45;cursor:default;}

@@ -107,8 +107,8 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <a href="#concept-map-title">Guided Explanation</a><a href="#visual-study-title">Visual Study Prompts</a>
         <a href="#worked-example-heading">Worked Example</a><a href="#knowledge-check-heading">Knowledge Check</a>
         <a href="#application-heading">Clinical and Applied Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a>
-        <a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
-      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a><a href="#lesson-source">Sources</a></nav>}
+        <a href="#recap">Recall practice</a><a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
+      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a><a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <TopicGuideLinks lessonId={lesson.id} />
       <div className="concept-layout">
@@ -214,7 +214,6 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           )}
           {!["epithelia", "microscopy", "renal-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id)} title="Connect the figure with the explanation" />}
           {lesson.id === "limbs-plexus-and-joints" && <PlexusRecall />}
-          <StudyReel key={`reel-${lesson.id}`} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
           <ConceptCheck
             key={`concept-${lesson.id}`}
             lesson={{ id: lesson.id, question: lesson.question }}
@@ -239,6 +238,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
             </p>
           </section>
           </>}
+          <StudyReel key={`reel-${lesson.id}`} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
           <LessonReview lesson={journey} />
         </div>
         <aside className="concept-sidebar">

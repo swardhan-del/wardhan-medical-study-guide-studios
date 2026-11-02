@@ -18,6 +18,7 @@ import {
 import { RenalQuiz } from "@/components/renal-quiz";
 import { CompleteLesson, LessonPracticeLink } from "@/components/lesson-actions";
 import { RenalSources } from "@/components/renal-sources";
+import { StudyReel } from "@/components/study-reel";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return renalLessons.map((l) => ({ slug: l.slug }));
@@ -62,6 +63,8 @@ export default async function RenalLessonPage({ params }: Props) {
             ))}
           </ul>
           <LessonPracticeLink slug={slug} />
+          <br />
+          <a className="text-link" href="#recap">Recall practice ↓</a>
           <br />
           <a className="text-link" href="#sources">
             Read the sources ↓
@@ -121,6 +124,7 @@ export default async function RenalLessonPage({ params }: Props) {
           questions={renalQuestions.filter((q) => q.lesson === slug)}
         />
       </div>
+      <StudyReel key={`recall-${slug}`} title="Revisit the key ideas" slides={[...lesson.sections.map(section => ({ title: section.title, body: section.text })), { title: "Explain it without looking", prompt: lesson.oral, body: lesson.rubric.join(" ") }]} />
       <CompleteLesson slug={slug} />
       <nav className="lesson-pagination" aria-label="Course lessons">
         {previous ? (
