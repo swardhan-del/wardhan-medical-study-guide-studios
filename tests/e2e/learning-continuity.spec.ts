@@ -1,5 +1,74 @@
 import data from "../../src/content/library-lessons.json";
 import { test, expect } from "@playwright/test";
+import AxeBuilder from "@axe-core/playwright";
+
+test("answer-first recall repeats only weaker cards without saving drafts or changing quiz history", async ({ page }) => {
+  await page.goto("/library/dna-replication#recap");
+  const recap = page.locator("#recap:visible");
+  const lesson = data.lessons.find(lesson => lesson.id === "dna-replication")!;
+  const total = lesson.steps.length + 1;
+  const answersBefore = await page.evaluate(() => JSON.parse(localStorage.getItem("wardhan-learning:v1") ?? "{}").answers ?? {});
+  await recap.getByRole("button", { name: "Practise these cards", exact: true }).press("Enter");
+  await expect(recap.getByRole("heading", { level: 3 })).toBeFocused();
+  await expect(recap.getByRole("button", { name: "Next card", exact: true })).toBeDisabled();
+  for (let index = 0; index < total; index++) {
+    await expect(recap.locator(".reel-counter")).toHaveText(`Prompt ${index + 1} of ${total}`);
+    const draft = recap.getByRole("textbox", { name: "My answer, before comparing" });
+    await expect(draft).toHaveValue("");
+    await draft.fill(`PRIVATE_RECALL_RESPONSE_${index}`);
+    await expect(recap.locator("p[hidden]")).toHaveCount(1);
+    await expect(recap.getByRole("button", { name: "I can explain this", exact: true })).toHaveCount(0);
+    await recap.getByRole("button", { name: "Reveal answer", exact: true }).click();
+    await expect(recap.locator(".reel-frame")).toContainText(index < lesson.steps.length ? lesson.steps[index].body : lesson.recall.answer);
+    await recap.getByRole("button", { name: index === 0 ? "Needs more practice" : "I can explain this", exact: true }).click();
+    if (index === 1) {
+      const accessibility = await new AxeBuilder({ page }).include("#recap").analyze();
+      expect(accessibility.violations).toEqual([]);
+      await recap.getByRole("button", { name: "Previous card", exact: true }).click();
+      await expect(draft).toHaveValue("PRIVATE_RECALL_RESPONSE_0");
+      await expect(recap.locator("p[hidden]")).toHaveCount(1);
+      await recap.getByRole("button", { name: "Next card", exact: true }).click();
+      await expect(draft).toHaveValue("PRIVATE_RECALL_RESPONSE_1");
+    }
+    await recap.getByRole("button", { name: index === total - 1 ? "Finish recall round" : "Next card", exact: true }).click();
+  }
+  await expect(recap.getByRole("heading", { name: "Your recall round", exact: true })).toBeFocused();
+  await expect(recap).toContainText(`${total - 1} of ${total} prompts self-checked as explained; 1 need more practice.`);
+  await recap.getByRole("button", { name: "Practise weaker cards", exact: true }).click();
+  await expect(recap.locator(".reel-counter")).toHaveText("Prompt 1 of 1");
+  await expect(recap.getByRole("heading", { level: 3 })).toHaveText(lesson.steps[0].title);
+  await expect(recap.getByRole("textbox")).toHaveValue("");
+  await recap.getByRole("button", { name: "Reveal answer", exact: true }).click();
+  await recap.getByRole("button", { name: "I can explain this", exact: true }).click();
+  await recap.getByRole("button", { name: "Finish recall round", exact: true }).click();
+  await expect(recap).toContainText("1 of 1 prompts self-checked as explained; 0 need more practice.");
+  await expect(recap.getByRole("button", { name: "Practise weaker cards", exact: true })).toHaveCount(0);
+  await recap.getByRole("button", { name: "Try all cards again", exact: true }).click();
+  await expect(recap.locator(".reel-counter")).toHaveText(`Prompt 1 of ${total}`);
+  await expect(recap.getByRole("textbox")).toHaveValue("");
+  expect(await page.evaluate(() => JSON.stringify(localStorage))).not.toContain("PRIVATE_RECALL_RESPONSE");
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("wardhan-learning:v1") ?? "{}").answers ?? {})).toEqual(answersBefore);
+  await page.reload();
+  await expect(recap.getByRole("button", { name: "Practise these cards", exact: true })).toBeVisible();
+  await recap.getByRole("button", { name: "Practise these cards", exact: true }).click();
+  await expect(recap.getByRole("textbox")).toHaveValue("");
+});
+
+test("foundation and renal lessons include the same keyboard-accessible recall practice", async ({ page }) => {
+  for (const route of ["/library/anatomy-foundations", "/library/histology-foundations-tissues", "/learn/renal/kidney-map"]) {
+    await page.goto(route);
+    const recap = page.locator("#recap:visible");
+    await expect(recap).toHaveCount(1);
+    await page.getByRole("link", { name: /Recall practice/ }).click();
+    await recap.getByRole("button", { name: "Practise these cards", exact: true }).press("Enter");
+    await expect(recap.getByRole("heading", { level: 3 })).toBeFocused();
+    await recap.getByRole("textbox").fill("Explain the relationship from memory.");
+    await recap.getByRole("button", { name: "Reveal answer", exact: true }).press("Enter");
+    await recap.getByRole("button", { name: "Needs more practice", exact: true }).press("Enter");
+    await expect(recap).toContainText("Marked for another practice round");
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+});
 test("concept answers and written reasoning survive reload and enter shared review", async ({
   page,
 }) => {
