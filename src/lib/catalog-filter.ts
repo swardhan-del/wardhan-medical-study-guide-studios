@@ -51,7 +51,9 @@ export function suggestQuery(texts: string[], query: string): string | null {
     if (word.length < 4 || word.length > 32 || vocabulary.includes(word) || aliases[word]) return word;
     let best = word, score = word.length >= 8 ? 3 : 2;
     for (const candidate of vocabulary) {
-      if (candidate.length > 32 || Math.abs(candidate.length - word.length) >= score) continue;
+      // A missing first letter can turn one valid medical term into another
+      // (for example, purine and urine), so keep suggestions conservative.
+      if (candidate[0] !== word[0] || candidate.length > 32 || Math.abs(candidate.length - word.length) >= score) continue;
       const next = distance(word, candidate);
       if (next < score) { best = candidate; score = next; }
     }
