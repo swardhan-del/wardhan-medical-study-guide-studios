@@ -16,6 +16,7 @@ test('published explanations and figures are searchable in every teaching collec
   assert.ok(matchesCatalogQuery(records.find(r => r.id === 'limbs-plexus-and-joints'), 'axillary artery'));
   assert.ok(matchesCatalogQuery(records.find(r => r.id === 'renal-filtration-and-clearance'), 'GFR'));
   assert.equal(suggestQuery(records.map(r => catalogSearchText(r)), 'brachal plexus'), 'brachial plexus');
+  assert.equal(suggestQuery(['urine filtration and renal physiology'], 'purine'), null);
   assert.equal(suggestQuery(records.map(r => catalogSearchText(r)), 'zzzzzzzzunknown'), null);
   assert.equal(Object.keys(index).length, records.length);
   assert.doesNotMatch(JSON.stringify(index), /\/Users\/|original_dropbox_path|destination_dropbox_path|dropboxusercontent/);
