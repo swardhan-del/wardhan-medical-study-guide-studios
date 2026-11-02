@@ -1,6 +1,6 @@
 # Lymphatic entry and nitrogen transfer: web supplement
 
-Two existing lessons now connect their mechanism summaries to worked reasoning, explained practice, a checklist and an accessible semantic diagram. Their URLs, original multiple-choice answers and saved-progress identifiers are preserved. New oral questions extend the generated progress registry.
+Two existing lessons now connect their mechanism summaries to worked reasoning, explained practice, a checklist and an accessible semantic diagram. Their URLs, original multiple-choice answers and saved-progress identifiers are preserved. New checklist items extend the generated progress registry. The additional oral prompts use the existing answer-disclosure interface.
 
 ## Provenance and publication scope
 
