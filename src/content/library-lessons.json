@@ -1833,12 +1833,16 @@
         "nitrogen",
         "liver"
       ],
-      "source": "biochemistry",
-      "section": "Metabolism of Amino Acids; Nitrogen Balance",
+      "source": "biochemistry-web-depth-20261102",
+      "section": "Metabolism of Amino Acids; Nitrogen Balance; original web supplement: mechanism comparison and worked reasoning, 2 November 2026",
       "steps": [
         {
           "title": "Separate carbon from nitrogen",
           "body": "Amino-acid metabolism handles two connected problems: use of the carbon skeleton and safe processing of nitrogen. Transamination transfers an amino group to a keto acid, commonly collecting nitrogen on glutamate. The carbon skeleton can enter other metabolic pathways."
+        },
+        {
+          "title": "Track an alanine reaction explicitly",
+          "body": "Alanine aminotransferase transfers nitrogen from alanine to 2-oxoglutarate (also called alpha-ketoglutarate), forming glutamate and pyruvate. Alanine supplies the three-carbon skeleton of pyruvate; glutamate carries the transferred amino group. The reaction is reversible. Transamination itself neither releases free ammonia nor produces urea: those are separate metabolic steps."
         },
         {
           "title": "Transport and dispose",
@@ -1876,8 +1880,40 @@
         "renal-filtration-and-clearance",
         "protein-structure"
       ],
-      "updatedAt": "2026-09-07",
-      "minutes": 9
+      "updatedAt": "2026-11-02",
+      "minutes": 11,
+      "objectives": [
+        "Track carbon and amino nitrogen separately in a transamination reaction.",
+        "Distinguish amino-group transfer from urea synthesis and excretion.",
+        "Explain why nitrogen balance does not identify a single metabolic reaction."
+      ],
+      "prerequisites": [
+        "protein-structure"
+      ],
+      "workedExample": {
+        "title": "Two products, two questions",
+        "prompt": "For alanine + 2-oxoglutarate forming pyruvate + glutamate, identify the product carrying alanine’s carbon skeleton and the product receiving its amino group. Has urea been produced?",
+        "solution": [
+          "Pyruvate retains the carbon skeleton supplied by alanine.",
+          "Glutamate receives the amino group; 2-oxoglutarate is the acceptor.",
+          "No urea appears in this reaction. Nitrogen disposal requires further steps, distinct from the subsequent use of pyruvate."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why is pyruvate formation not proof that nitrogen has been excreted?",
+          "answer": "Carbon conversion and nitrogen disposal are separate. Here nitrogen has been transferred to glutamate, not excreted."
+        },
+        {
+          "prompt": "Does the reaction equation mean alanine must always be consumed?",
+          "answer": "No. The transamination is reversible; the written direction is chosen to trace the products in this example."
+        }
+      ],
+      "summaryChecklist": [
+        "Identify the amino-group donor and acceptor in the alanine reaction.",
+        "Separate transamination from urea production.",
+        "Distinguish hepatic urea synthesis from renal excretion."
+      ]
     },
     {
       "id": "meiosis",
@@ -3250,8 +3286,8 @@
       "subject": "physiology",
       "title": "Microcirculation: return the filtered fluid",
       "summary": "Connect capillary filtration, the endothelial barrier and lymphatic return without assuming that every capillary reabsorbs fluid at its venous end.",
-      "source": "guide-cardio",
-      "section": "Sections 2.7–2.8: microcirculation, Starling forces and venous return",
+      "source": "guide-cardio-web-depth-20261102",
+      "section": "Sections 2.7–2.8: microcirculation, Starling forces and venous return; original web supplement: mechanism comparison and worked reasoning, 2 November 2026",
       "steps": [
         {
           "title": "Separate pressure from permeability",
@@ -3260,6 +3296,10 @@
         {
           "title": "Include the lymphatic route",
           "body": "Lymphatic vessels return filtered interstitial fluid and proteins to the circulation. Sustained venous-end reabsorption is not a universal feature of all systemic capillaries. In many tissues, lymphatic return handles much of the net filtration. Different organs have specialised exchange arrangements, so one diagram should not be treated as a universal map."
+        },
+        {
+          "title": "Distinguish entry junctions from the transport route",
+          "body": "Initial lymphatic endothelial cells can have discontinuous button-like junctions anchoring overlapping cell borders. Openings between these junctions provide an entry route; collecting lymphatics instead have continuous zipper-like junctions. Buttons and zippers describe cell junctions, not valves projecting into the vessel lumen. This distinction comes from experimental vessel microscopy, including mouse tissues; it is a simplified structural model, not a rule that every lymphatic segment is identical."
         },
         {
           "title": "Build an oedema mechanism",
@@ -3297,8 +3337,40 @@
         "physiology",
         "guided revision"
       ],
-      "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "minutes": 10,
+      "updatedAt": "2026-11-02",
+      "objectives": [
+        "Separate capillary filtration from lymphatic fluid return.",
+        "Distinguish lymphatic entry junctions from collecting-vessel junctions.",
+        "Explain fluid accumulation without assuming universal venous-end reabsorption."
+      ],
+      "prerequisites": [
+        "vessel-histology"
+      ],
+      "workedExample": {
+        "title": "Follow a return-route obstruction",
+        "prompt": "In a hypothetical tissue, lymphatic outflow falls while capillary filtration continues. Explain why fluid can accumulate even without an increase in capillary pressure.",
+        "solution": [
+          "Start with two distinct flows: entry into the interstitium and removal from it.",
+          "Reduced lymphatic outflow lowers removal; filtration need not increase for the balance to become positive.",
+          "Accumulation depends on the imbalance and compensatory changes over time. This model alone cannot diagnose the cause of swelling."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Does the word button identify an intraluminal valve?",
+          "answer": "No. It describes a discontinuous endothelial junction. Distinguish the cell-border entry arrangement from a valve within the vessel lumen."
+        },
+        {
+          "prompt": "Why is a diagram with complete venous-end reabsorption an incomplete general model?",
+          "answer": "It omits sustained net filtration and lymphatic return in many tissues. State the tissue and steady-state assumptions rather than applying that diagram universally."
+        }
+      ],
+      "summaryChecklist": [
+        "Trace fluid from capillary to interstitium and into the lymphatic return route.",
+        "Identify the difference between button-like and zipper-like junctions.",
+        "Explain why reduced removal can cause accumulation without increased filtration."
+      ]
     },
     {
       "id": "indicator-dilution",

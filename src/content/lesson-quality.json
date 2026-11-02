@@ -1,4 +1,126 @@
 {
   "version": 1,
-  "records": []
+  "records": [
+    {
+      "lessonId": "lymph-and-fluid-exchange",
+      "title": "Microcirculation: return the filtered fluid",
+      "subject": "physiology",
+      "slug": "lymph-and-fluid-exchange",
+      "topic": "Microvascular exchange and lymphatic entry",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Separate capillary filtration from lymphatic fluid return.",
+        "Distinguish lymphatic entry junctions from collecting-vessel junctions.",
+        "Explain fluid accumulation without assuming universal venous-end reabsorption."
+      ],
+      "sources": [
+        {
+          "title": "Levick and Michel: microvascular fluid exchange and the revised Starling principle",
+          "publisherOrAuthor": "Authors named in linked scientific publication",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20200043/",
+          "accessedAt": "2026-11-02",
+          "sourceType": "research"
+        },
+        {
+          "title": "Baluk et al. (2007): Functionally specialized junctions between endothelial cells of lymphatic vessels",
+          "publisherOrAuthor": "Authors named in linked scientific publication",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17846148/",
+          "accessedAt": "2026-11-02",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original semantic HTML diagram with visible labels, caption, scientific reference and equivalent description. No third-party image reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-02",
+      "nextReviewAt": "2027-02-02",
+      "limitations": [
+        "AI-assisted source and editorial review; independent clinical review remains outstanding.",
+        "Simplified educational mechanism model; not diagnostic or treatment guidance."
+      ],
+      "reviewEvidenceIds": [
+        "lymph-and-fluid-exchange-editorial-20261102",
+        "lymph-and-fluid-exchange-visual-20261102",
+        "lymph-and-fluid-exchange-accessibility-20261102",
+        "lymph-and-fluid-exchange-readability-20261102"
+      ],
+      "links": {
+        "prerequisite": [
+          "vessel-histology"
+        ],
+        "related": [
+          "vessel-histology",
+          "lymphoid-organs"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "nitrogen-metabolism",
+      "title": "Amino-acid nitrogen and urea",
+      "subject": "biochemistry",
+      "slug": "nitrogen-metabolism",
+      "topic": "Amino-group transfer and nitrogen disposal",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Track carbon and amino nitrogen separately in a transamination reaction.",
+        "Distinguish amino-group transfer from urea synthesis and excretion.",
+        "Explain why nitrogen balance does not identify a single metabolic reaction."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax: Nitrogenous wastes and the urea cycle",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/biology-2e/pages/41-4-nitrogenous-wastes",
+          "accessedAt": "2026-11-02",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "IUBMB enzyme nomenclature: alanine transaminase, EC 2.6.1.2",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/6/1/2.html",
+          "accessedAt": "2026-11-02",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original semantic HTML diagram with visible labels, caption, scientific reference and equivalent description. No third-party image reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-02",
+      "nextReviewAt": "2027-02-02",
+      "limitations": [
+        "AI-assisted source and editorial review; independent clinical review remains outstanding.",
+        "Simplified educational mechanism model; not diagnostic or treatment guidance."
+      ],
+      "reviewEvidenceIds": [
+        "nitrogen-metabolism-editorial-20261102",
+        "nitrogen-metabolism-visual-20261102",
+        "nitrogen-metabolism-accessibility-20261102",
+        "nitrogen-metabolism-readability-20261102"
+      ],
+      "links": {
+        "prerequisite": [
+          "protein-structure"
+        ],
+        "related": [
+          "liver-pancreas",
+          "renal-filtration-and-clearance",
+          "protein-structure"
+        ],
+        "compare": [],
+        "next": []
+      }
+    }
+  ]
 }
