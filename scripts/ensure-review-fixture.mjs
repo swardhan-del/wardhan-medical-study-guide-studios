@@ -35,3 +35,8 @@ try {
 } catch (error) {
   if (error.code !== "EEXIST") throw error;
 }
+try {
+  await writeFile('.private/candidate-lessons.json', JSON.stringify({ version: 1, candidates: [{ id: 'synthetic-candidate', title: 'Synthetic candidate', subject: 'physiology', objectives: ['Review the example'], sections: [{ heading: 'Example', body: 'Synthetic review text.' }], question: { prompt: 'Choose the example', answer: 0, options: [{ text: 'Yes', explanation: 'Correct.' }, { text: 'No', explanation: 'Try again.' }] }, references: [{ title: 'Example reference', url: 'https://example.org/a-very-long-path-that-needs-to-wrap-on-a-narrow-mobile-screen' }] }] }), { flag: 'wx' });
+} catch (error) {
+  if (error.code !== 'EEXIST') throw error;
+}

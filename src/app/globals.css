@@ -914,6 +914,8 @@ h1 em {
 .button-secondary {
   border: 1px solid var(--ink);
   color: var(--ink);
+  /* Keep both colors in sync when hover changes to avoid low-contrast frames. */
+  transition: transform 180ms ease;
 }
 
 .button-secondary:hover {

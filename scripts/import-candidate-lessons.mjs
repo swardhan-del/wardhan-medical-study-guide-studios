@@ -1,0 +1,10 @@
+import { readFile, mkdir, writeFile, lstat } from 'node:fs/promises';
+import { normalizeCandidates } from './candidate-review.mjs';
+if (process.env.VERCEL) throw new Error('Candidate import is disabled on Vercel.');
+const inputs = process.argv.slice(2);
+if (!inputs.length || inputs.length > 100) throw new Error('Pass one or more candidate JSON files.');
+const data = normalizeCandidates(await Promise.all(inputs.map(async path => JSON.parse(await readFile(path, 'utf8')))));
+await mkdir('.private', { recursive: true });
+if (!(await lstat('.private')).isDirectory()) throw new Error('.private must be a real directory.');
+await writeFile('.private/candidate-lessons.json', JSON.stringify(data, null, 2) + '\n', { flag: 'wx', mode: 0o600 });
+console.log(`Prepared ${data.candidates.length} candidates for local review. No public content changed.`);
