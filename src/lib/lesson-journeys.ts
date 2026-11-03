@@ -19,7 +19,7 @@ export const journeyLessons: JourneyLesson[] = studyLessons.map(lesson => {
     questions: practiceItems.filter(item => item.topic === lesson.id).map(item => item.id),
     next: starters[startIndex + 1] && startIndex >= 0 ? starters[startIndex + 1] : next
       ? { title: next.title, href: `/library/${next.id}` }
-      : { title: "Choose another topic in this subject", href: `/study/${lesson.subject}` },
+      : { title: "Choose another topic in this subject", href: lesson.subject === "biostatistics" ? "/subjects/biostatistics" : `/study/${lesson.subject}` },
   };
 });
 export type ResumeLesson = { id: string; title: string; next: { title: string; href: string }; href?: string };

@@ -121,6 +121,226 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "histogram-bin-counts-example",
+      "title": "Histograms: count observations within defined bins",
+      "subject": "biostatistics",
+      "topic": "Histograms",
+      "slug": "histogram-bin-counts-example",
+      "learnerLevel": "Introductory medical statistics",
+      "objectives": [
+        "Count observations using explicit interval boundaries.",
+        "Explain how regrouping changes the displayed pattern.",
+        "Distinguish count heights from density heights."
+      ],
+      "sources": [
+        {
+          "title": "NIST Dataplot: Histogram",
+          "publisherOrAuthor": "NIST",
+          "url": "https://www.itl.nist.gov/div898/software/dataplot/refman1/auxillar/histogra.htm",
+          "accessedAt": "2026-11-03",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Text-only calculation lesson. All data, formulas and worked steps are readable text; no source image is required or reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-03",
+      "nextReviewAt": "2027-02-03",
+      "limitations": [
+        "Original fictional numerical examples; no patient dataset or clinical conclusion.",
+        "AI-assisted source and arithmetic review; no independent statistical or clinical review claimed.",
+        "Sampling claims apply only under the assumptions stated in the lesson."
+      ],
+      "reviewEvidenceIds": [
+        "histogram-bin-counts-example-editorial-20261103",
+        "histogram-bin-counts-example-readability-20261103",
+        "histogram-bin-counts-example-accessibility-20261103"
+      ],
+      "links": {
+        "prerequisite": [],
+        "related": [
+          "mean-median-extreme-value-comparison",
+          "same-center-different-data-spread",
+          "standard-deviation-standard-error"
+        ],
+        "compare": [],
+        "next": [
+          "mean-median-extreme-value-comparison"
+        ]
+      }
+    },
+    {
+      "lessonId": "mean-median-extreme-value-comparison",
+      "title": "Mean and median: effect of one extreme value",
+      "subject": "biostatistics",
+      "topic": "Mean and median",
+      "slug": "mean-median-extreme-value-comparison",
+      "learnerLevel": "Introductory medical statistics",
+      "objectives": [
+        "Calculate a mean and a median from ordered values.",
+        "Explain the effect of one changed extreme value.",
+        "Separate a numerical summary from a judgement about data quality."
+      ],
+      "sources": [
+        {
+          "title": "NIST: Measures of Location",
+          "publisherOrAuthor": "NIST",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+          "accessedAt": "2026-11-03",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Text-only calculation lesson. All data, formulas and worked steps are readable text; no source image is required or reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-03",
+      "nextReviewAt": "2027-02-03",
+      "limitations": [
+        "Original fictional numerical examples; no patient dataset or clinical conclusion.",
+        "AI-assisted source and arithmetic review; no independent statistical or clinical review claimed.",
+        "Sampling claims apply only under the assumptions stated in the lesson."
+      ],
+      "reviewEvidenceIds": [
+        "mean-median-extreme-value-comparison-editorial-20261103",
+        "mean-median-extreme-value-comparison-readability-20261103",
+        "mean-median-extreme-value-comparison-accessibility-20261103"
+      ],
+      "links": {
+        "prerequisite": [
+          "histogram-bin-counts-example"
+        ],
+        "related": [
+          "histogram-bin-counts-example",
+          "same-center-different-data-spread",
+          "standard-deviation-standard-error"
+        ],
+        "compare": [],
+        "next": [
+          "same-center-different-data-spread"
+        ]
+      }
+    },
+    {
+      "lessonId": "same-center-different-data-spread",
+      "title": "Same centre, different spread",
+      "subject": "biostatistics",
+      "topic": "Data spread",
+      "slug": "same-center-different-data-spread",
+      "learnerLevel": "Introductory medical statistics",
+      "objectives": [
+        "Calculate centre and range for two datasets.",
+        "Explain why a shared centre does not imply shared variation.",
+        "Identify what a range comparison cannot establish."
+      ],
+      "sources": [
+        {
+          "title": "NIST: Measures of Scale",
+          "publisherOrAuthor": "NIST",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+          "accessedAt": "2026-11-03",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Text-only calculation lesson. All data, formulas and worked steps are readable text; no source image is required or reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-03",
+      "nextReviewAt": "2027-02-03",
+      "limitations": [
+        "Original fictional numerical examples; no patient dataset or clinical conclusion.",
+        "AI-assisted source and arithmetic review; no independent statistical or clinical review claimed.",
+        "Sampling claims apply only under the assumptions stated in the lesson."
+      ],
+      "reviewEvidenceIds": [
+        "same-center-different-data-spread-editorial-20261103",
+        "same-center-different-data-spread-readability-20261103",
+        "same-center-different-data-spread-accessibility-20261103"
+      ],
+      "links": {
+        "prerequisite": [
+          "mean-median-extreme-value-comparison"
+        ],
+        "related": [
+          "histogram-bin-counts-example",
+          "mean-median-extreme-value-comparison",
+          "standard-deviation-standard-error"
+        ],
+        "compare": [],
+        "next": [
+          "standard-deviation-standard-error"
+        ]
+      }
+    },
+    {
+      "lessonId": "standard-deviation-standard-error",
+      "title": "Standard deviation and standard error: what varies?",
+      "subject": "biostatistics",
+      "topic": "Sampling uncertainty",
+      "slug": "standard-deviation-standard-error",
+      "learnerLevel": "Introductory medical statistics",
+      "objectives": [
+        "Distinguish observation spread from mean-estimation uncertainty.",
+        "Calculate an estimated standard error under an independent-sampling model.",
+        "Explain why a smaller standard error does not remove bias."
+      ],
+      "sources": [
+        {
+          "title": "NIST: Confidence Limits for the Mean",
+          "publisherOrAuthor": "NIST",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+          "accessedAt": "2026-11-03",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Text-only calculation lesson. All data, formulas and worked steps are readable text; no source image is required or reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-03",
+      "nextReviewAt": "2027-02-03",
+      "limitations": [
+        "Original fictional numerical examples; no patient dataset or clinical conclusion.",
+        "AI-assisted source and arithmetic review; no independent statistical or clinical review claimed.",
+        "Sampling claims apply only under the assumptions stated in the lesson."
+      ],
+      "reviewEvidenceIds": [
+        "standard-deviation-standard-error-editorial-20261103",
+        "standard-deviation-standard-error-readability-20261103",
+        "standard-deviation-standard-error-accessibility-20261103"
+      ],
+      "links": {
+        "prerequisite": [
+          "same-center-different-data-spread"
+        ],
+        "related": [
+          "histogram-bin-counts-example",
+          "mean-median-extreme-value-comparison",
+          "same-center-different-data-spread"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

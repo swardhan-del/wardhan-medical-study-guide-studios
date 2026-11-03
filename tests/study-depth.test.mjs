@@ -19,7 +19,9 @@ test('study-map links resolve and unavailable topics cannot masquerade as lesson
       else assert.equal(topic.status,'planned');
     }
   }
-  assert(map.groups.find(g=>g.subject==='biostatistics').topics.every(t=>t.status==='planned'&&!t.href));
+  const statistics = map.groups.find(g=>g.subject==='biostatistics').topics;
+  assert.equal(statistics.filter(t=>t.status==='introduction-available'&&t.href).length, 3);
+  assert(statistics.filter(t=>t.status==='planned').every(t=>!t.href));
   assert(!/\/Users\/|dropbox|\.docx|question.bank/i.test(JSON.stringify(map)));
 });
 test('guided lessons require valid prerequisites and complete worked reasoning',()=>{

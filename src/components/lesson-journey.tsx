@@ -19,7 +19,7 @@ export function LessonJourney({ lesson }: { lesson: JourneyLesson }) {
   return <section className="study-panel lesson-journey" aria-labelledby="journey-title">
     <div className="journey-heading"><h2 id="journey-title">Your lesson journey</h2><Link href="/library">Back to library</Link></div>
     <nav aria-label="Learning journey"><ol className="journey-steps">
-      <li><Link href={`/study/${lesson.subject}`}>Choose subject</Link></li>
+      <li><Link href={lesson.subject === "biostatistics" ? "/subjects/biostatistics" : `/study/${lesson.subject}`}>Choose subject</Link></li>
       <li><a href="#lesson-objectives" aria-current={current === "learn" ? "step" : undefined} onClick={() => rememberLesson(lesson.id, "learn")}>Study explanation</a><span>{data.journey[lesson.id]?.read ? "Reviewed" : "Start here"}</span></li>
       <li><a href="#concept-check-title" aria-current={current === "practice" ? "step" : undefined} onClick={() => rememberLesson(lesson.id, "practice")}>Practice</a><span>{status.attempted} / {status.total} questions attempted</span></li>
       <li><a href="#lesson-review" aria-current={current === "summary" ? "step" : undefined} onClick={() => rememberLesson(lesson.id, "summary")}>Review summary</a><span>{data.journey[lesson.id]?.reviewed ? "Reviewed" : "To review"}</span></li>

@@ -458,6 +458,17 @@
         "biophysics-practical-audiometry",
         "biophysics-practical-biosignals"
       ]
+    },
+    {
+      "id": "biostatistics-foundations",
+      "title": "Foundations · Data summaries and sampling uncertainty",
+      "subject": "biostatistics",
+      "lessonIds": [
+        "histogram-bin-counts-example",
+        "mean-median-extreme-value-comparison",
+        "same-center-different-data-spread",
+        "standard-deviation-standard-error"
+      ]
     }
   ]
 }

@@ -147,9 +147,8 @@ test("anatomy starts with foundations and empty subjects offer a usable next ste
   await page.getByRole("link", { name: /Next: identify thoracic cage/ }).click();
   await expect(page).toHaveURL(/\/library\/thoracic-cage-landmarks$/);
   await page.goto("/subjects/biostatistics");
-  await expect(page.getByRole("heading", { name: "No public lessons yet" })).toBeVisible();
-  await page.getByRole("link", { name: "Choose a subject with lessons", exact: true }).click();
-  await expect(page).toHaveURL(/\/subjects$/);
+  await expect(page.getByRole("heading", { name: "Lessons and study resources" })).toBeVisible();
+  await expect(page.locator('.resource-card:visible')).toHaveCount(4);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 });
 

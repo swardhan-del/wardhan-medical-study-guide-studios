@@ -7978,6 +7978,356 @@
       ]
     },
     {
+      "id": "histogram-bin-counts-example",
+      "subject": "biostatistics",
+      "title": "Histograms: count observations within defined bins",
+      "summary": "Turn a small invented dataset into bin counts, explain boundary conventions, and distinguish a change in grouping from a change in the observations.",
+      "updatedAt": "2026-11-03",
+      "minutes": 12,
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Histograms"
+      ],
+      "source": "original-statistics-foundations",
+      "section": "NIST Dataplot: Histogram; original fictional examples and calculations.",
+      "objectives": [
+        "Count observations using explicit interval boundaries.",
+        "Explain how regrouping changes the displayed pattern.",
+        "Distinguish count heights from density heights."
+      ],
+      "prerequisites": [],
+      "steps": [
+        {
+          "title": "Start with observations and a rule",
+          "body": "A histogram groups numerical observations into intervals, or bins. The horizontal axis identifies the measured quantity; the vertical axis must say whether it shows counts, relative frequencies or density. A bin is an interval of values rather than a separate named category. Before counting, specify which endpoints belong to each interval. In this lesson, [a, b) includes a and excludes b. This is a chosen convention, not a claim that every software package uses it. Each included observation must belong to exactly one bin."
+        },
+        {
+          "title": "Count before interpreting the shape",
+          "body": "Use the invented values 1, 2, 2, 3, 4, 5, 6, 6. The intervals [0, 2), [2, 4), [4, 6) and [6, 8) contain 1, 3, 2 and 2 observations. Both occurrences of 2 belong to the second interval; 4 belongs to the third. The counts sum to eight, matching the dataset size. With equal bin widths, taller count bars mean more observations in that interval. No patient data or measured biological result is represented."
+        },
+        {
+          "title": "Regroup the same data",
+          "body": "Replace the four intervals with [0, 4) and [4, 8). Their counts are four and four. The observations did not change, but the wider grouping hides the previous differences between narrower intervals. A visual impression depends partly on bin placement and width. Inspect the raw values when available, compare sensible groupings, and avoid treating a peak in eight invented observations as proof of a population pattern."
+        },
+        {
+          "title": "Check height, width and area",
+          "body": "For a count histogram with equal widths, comparing heights compares counts. If widths differ, a density display instead divides a bin count by its width, so bar area represents count; dividing again by the total count makes total area one. For example, two observations across width one and four across width four give count densities two and one. The second bin contains more observations despite its lower density. Always read the axis definition before comparing bars."
+        }
+      ],
+      "workedExample": {
+        "title": "Worked calculation",
+        "prompt": "For 1, 2, 2, 3, 4, 5, 6, 6, calculate the four narrow-bin counts and the two wide-bin counts using lower-inclusive, upper-exclusive intervals.",
+        "solution": [
+          "Assign 1 to [0, 2); assign 2, 2 and 3 to [2, 4).",
+          "Assign 4 and 5 to [4, 6); assign 6 and 6 to [6, 8). The counts are 1, 3, 2, 2 and sum to eight.",
+          "Combine the first two bins and the last two bins: [0, 4) has four observations and [4, 8) has four. Only the grouping changed."
+        ]
+      },
+      "question": {
+        "prompt": "With [0, 4) and [4, 8), where does the value 4 belong?",
+        "options": [
+          {
+            "text": "Only in [4, 8).",
+            "reason": "The lower endpoint is included. The upper endpoint of [0, 4) is excluded, so 4 is counted once in the second bin."
+          },
+          {
+            "text": "In both intervals.",
+            "reason": "Counting 4 twice would violate the stated upper-exclusive rule and inflate the total count."
+          },
+          {
+            "text": "In neither interval.",
+            "reason": "The second interval includes its lower endpoint, so 4 must be included there."
+          }
+        ],
+        "answer": 0
+      },
+      "oralExamination": [
+        {
+          "prompt": "Explain why a histogram can look different when the observations are unchanged.",
+          "answer": "Bin boundaries and widths determine how observations are grouped. Replacing four narrow bins by two wide bins can conceal local differences without changing any value. Check endpoint conventions and whether the vertical axis reports count or density before interpreting the shape."
+        }
+      ],
+      "recall": {
+        "prompt": "Explain why a histogram can look different when the observations are unchanged.",
+        "answer": "Bin boundaries and widths determine how observations are grouped. Replacing four narrow bins by two wide bins can conceal local differences without changing any value. Check endpoint conventions and whether the vertical axis reports count or density before interpreting the shape."
+      },
+      "summaryChecklist": [
+        "I can count observations using explicit interval boundaries.",
+        "I can explain how regrouping changes the displayed pattern.",
+        "I can distinguish count heights from density heights."
+      ],
+      "related": [
+        "mean-median-extreme-value-comparison",
+        "same-center-different-data-spread",
+        "standard-deviation-standard-error"
+      ]
+    },
+    {
+      "id": "mean-median-extreme-value-comparison",
+      "subject": "biostatistics",
+      "title": "Mean and median: effect of one extreme value",
+      "summary": "Calculate two measures of centre, trace the effect of changing one value, and explain why a summary must be chosen in context.",
+      "updatedAt": "2026-11-03",
+      "minutes": 12,
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Mean and median"
+      ],
+      "source": "original-statistics-foundations",
+      "section": "NIST: Measures of Location; original fictional examples and calculations.",
+      "objectives": [
+        "Calculate a mean and a median from ordered values.",
+        "Explain the effect of one changed extreme value.",
+        "Separate a numerical summary from a judgement about data quality."
+      ],
+      "prerequisites": [
+        "histogram-bin-counts-example"
+      ],
+      "steps": [
+        {
+          "title": "Two definitions of centre",
+          "body": "The arithmetic mean is the sum of the observations divided by their number. Every value contributes its magnitude. To find the median, first sort the values. For an odd number of observations, use the middle value; for an even number, average the two central values. These definitions answer related but different questions about location. Neither definition identifies the most common value, which is the mode."
+        },
+        {
+          "title": "Sort and check the central positions",
+          "body": "For four invented ordered values 1, 2, 6, 9, the two central values are two and six, so the median is (2 + 6) / 2 = 4. The median need not be an observed value. Sorting is essential: selecting the middle item in an unsorted list can produce the wrong answer. When a central value or the number of observations changes, recalculate the median rather than assuming resistance means complete immunity to change."
+        },
+        {
+          "title": "Follow one deliberate change",
+          "body": "The invented values 2, 3, 3, 4, 8 sum to 20. Their mean is 20 / 5 = 4 and their median is the third value, 3. Replace 8 with 18. The sum rises by ten while the count remains five, so the mean rises by 10 / 5 = 2, from four to six. The ordered middle value remains three. Here the median is unchanged because the central ordering is unchanged, not because medians can never change."
+        },
+        {
+          "title": "Do not turn a summary into a verdict",
+          "body": "An extreme value can be a recording error or a valid observation; the arithmetic alone cannot decide. Check units, measurement procedures and provenance before excluding it. The median resists some extreme changes, but it does not describe the tails or prove that the data are accurate. The mean can be useful when totals matter. Report which measure was used and, where useful, show the distribution and a measure of spread rather than declaring one measure universally best."
+        }
+      ],
+      "workedExample": {
+        "title": "Worked calculation",
+        "prompt": "Compare the mean and median before and after replacing 8 by 18 in 2, 3, 3, 4, 8.",
+        "solution": [
+          "The original sum is 20, giving mean 20 / 5 = 4. The third ordered value gives median 3.",
+          "The replacement sum is 30, giving mean 30 / 5 = 6. The third ordered value is still 3.",
+          "The ten-unit increase affects the mean by two units. No central rank changed, so this particular median is unchanged."
+        ]
+      },
+      "question": {
+        "prompt": "For 2, 3, 3, 4, 18, which pair is correct?",
+        "options": [
+          {
+            "text": "Mean 6; median 3.",
+            "reason": "The sum is 30 and there are five observations. The middle ordered observation is 3."
+          },
+          {
+            "text": "Mean 3; median 6.",
+            "reason": "This reverses the roles: 3 is the middle ordered value, whereas 6 is the sum divided by five."
+          },
+          {
+            "text": "Mean 6; median 18.",
+            "reason": "The largest value is not the median. With five sorted observations, use the third value."
+          }
+        ],
+        "answer": 0
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why did the mean change while the median stayed at three in this example?",
+          "answer": "The mean uses every magnitude, so adding ten to one value increases the mean by ten divided by five. The median uses the ordered central position; the replacement leaves that position unchanged. This is an example of resistance, not permission to discard an extreme observation."
+        }
+      ],
+      "recall": {
+        "prompt": "Why did the mean change while the median stayed at three in this example?",
+        "answer": "The mean uses every magnitude, so adding ten to one value increases the mean by ten divided by five. The median uses the ordered central position; the replacement leaves that position unchanged. This is an example of resistance, not permission to discard an extreme observation."
+      },
+      "summaryChecklist": [
+        "I can calculate a mean and a median from ordered values.",
+        "I can explain the effect of one changed extreme value.",
+        "I can separate a numerical summary from a judgement about data quality."
+      ],
+      "related": [
+        "histogram-bin-counts-example",
+        "same-center-different-data-spread",
+        "standard-deviation-standard-error"
+      ]
+    },
+    {
+      "id": "same-center-different-data-spread",
+      "subject": "biostatistics",
+      "title": "Same centre, different spread",
+      "summary": "Compare datasets with identical centres but different ranges, then explain what the range omits and what a small sample cannot establish.",
+      "updatedAt": "2026-11-03",
+      "minutes": 12,
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Data spread"
+      ],
+      "source": "original-statistics-foundations",
+      "section": "NIST: Measures of Scale; original fictional examples and calculations.",
+      "objectives": [
+        "Calculate centre and range for two datasets.",
+        "Explain why a shared centre does not imply shared variation.",
+        "Identify what a range comparison cannot establish."
+      ],
+      "prerequisites": [
+        "mean-median-extreme-value-comparison"
+      ],
+      "steps": [
+        {
+          "title": "Separate location from variation",
+          "body": "A measure of centre says where values are located; a measure of spread says how separated they are. Knowing one does not determine the other. Consider invented dataset A: 4, 5, 6, and dataset B: 0, 5, 10. Both have sum 15, mean five and median five. B places its outer observations farther from that centre. A single central number would conceal this difference."
+        },
+        {
+          "title": "Calculate the range and its limits",
+          "body": "The range is the maximum minus the minimum. A has range 6 - 4 = 2; B has range 10 - 0 = 10. This establishes that B has the larger range in these observed datasets. The range uses only the two extremes: changing an interior observation can leave it unchanged. Range alone does not describe clustering, gaps or multiple peaks, and it does not tell you which observation is erroneous."
+        },
+        {
+          "title": "Connect spread measures without overgeneralising",
+          "body": "Sample variance uses the squared deviations from the sample mean, divided by n - 1; sample standard deviation is its square root and has the original measurement units. For A, squared deviations are 1, 0, 1, giving sample variance one and sample SD one. For B they are 25, 0, 25, giving sample variance 25 and sample SD five. Here range and SD agree about the ordering, but that agreement is not a universal rule for arbitrary datasets."
+        },
+        {
+          "title": "Keep the inference within the evidence",
+          "body": "These are three invented values per group, not a biological experiment. A larger observed range does not prove a larger population variance or a meaningful clinical difference. A confidence interval would require an estimator, a sampling design and appropriate assumptions. Before comparing real groups, establish compatible units and measurements and inspect their distributions; sample size also affects how likely a sample is to include extreme observations."
+        }
+      ],
+      "workedExample": {
+        "title": "Worked calculation",
+        "prompt": "Compare the mean, median, range and sample SD of A = 4, 5, 6 and B = 0, 5, 10.",
+        "solution": [
+          "Both sums are 15, so both means are five. Both middle values are five.",
+          "A has range two; B has range ten. Their ranges differ despite identical centres.",
+          "Divide squared-deviation sums two and fifty by n - 1 = 2. Sample variances are one and 25, so sample SDs are one and five. These calculations describe the invented samples."
+        ]
+      },
+      "question": {
+        "prompt": "Which statement follows from A = 4, 5, 6 and B = 0, 5, 10?",
+        "options": [
+          {
+            "text": "B has a larger observed range, although both means are five.",
+            "reason": "The ranges are ten and two; both sums are fifteen across three observations."
+          },
+          {
+            "text": "The two datasets have identical spread because their means match.",
+            "reason": "Matching centres do not fix the distances around those centres. The ranges explicitly differ."
+          },
+          {
+            "text": "B proves that its source population has greater variance.",
+            "reason": "Three supplied values do not establish a population comparison; a sampling design and inferential assumptions are missing."
+          }
+        ],
+        "answer": 0
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why should centre and spread be described separately?",
+          "answer": "Different datasets can share the same mean and median while differing greatly in their distances from the centre. The range compares extremes; SD uses all squared deviations. Neither a matching centre nor one sample spread comparison establishes the corresponding population relationship."
+        }
+      ],
+      "recall": {
+        "prompt": "Why should centre and spread be described separately?",
+        "answer": "Different datasets can share the same mean and median while differing greatly in their distances from the centre. The range compares extremes; SD uses all squared deviations. Neither a matching centre nor one sample spread comparison establishes the corresponding population relationship."
+      },
+      "summaryChecklist": [
+        "I can calculate centre and range for two datasets.",
+        "I can explain why a shared centre does not imply shared variation.",
+        "I can identify what a range comparison cannot establish."
+      ],
+      "related": [
+        "histogram-bin-counts-example",
+        "mean-median-extreme-value-comparison",
+        "standard-deviation-standard-error"
+      ]
+    },
+    {
+      "id": "standard-deviation-standard-error",
+      "subject": "biostatistics",
+      "title": "Standard deviation and standard error: what varies?",
+      "summary": "Distinguish the spread of observations from the sampling uncertainty of a mean, calculate an estimated standard error, and state the assumptions that make the calculation meaningful.",
+      "updatedAt": "2026-11-03",
+      "minutes": 12,
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Sampling uncertainty"
+      ],
+      "source": "original-statistics-foundations",
+      "section": "NIST: Confidence Limits for the Mean; original fictional examples and calculations.",
+      "objectives": [
+        "Distinguish observation spread from mean-estimation uncertainty.",
+        "Calculate an estimated standard error under an independent-sampling model.",
+        "Explain why a smaller standard error does not remove bias."
+      ],
+      "prerequisites": [
+        "same-center-different-data-spread"
+      ],
+      "steps": [
+        {
+          "title": "Name the quantity that varies",
+          "body": "A sample standard deviation describes how observations in one sample vary around their sample mean. A standard error describes the sampling distribution of an estimator: how that estimator would vary across repeated samples under a specified model. Here the estimator is the arithmetic mean. These quantities have the same units as the observations, but they describe different levels of variation. A smaller SE is not the same statement as more uniform individual observations."
+        },
+        {
+          "title": "Derive the square-root relationship",
+          "body": "Assume n independent observations with a common finite variance sigma squared. Variances of independent sums add. The variance of the sample mean is therefore n times sigma squared divided by n squared, which equals sigma squared / n. Taking the square root gives SE(mean) = sigma / square root of n. If the population SD sigma is unknown, estimate this SE by s / square root of n, where s is the sample SD. This variance calculation does not itself require normally distributed individual observations."
+        },
+        {
+          "title": "Compare two explicitly assigned examples",
+          "body": "Assign sample SD s = 10 units to both invented samples. At n = 25, estimated SE = 10 / 5 = 2 units; at n = 100, estimated SE = 10 / 10 = 1 unit. The second estimated SE is half the first because sample size is four times as large while the assigned SD is held constant. Real samples need not have identical sample SDs, so state this assumption when using the comparison."
+        },
+        {
+          "title": "State what the formula leaves out",
+          "body": "Correlated or clustered observations require a variance calculation that accounts for their dependence; weighted or complex samples may need a different SE estimate. The formula alone supplies neither a confidence level nor a confidence interval. A one-sample t interval introduces additional assumptions. Increasing sample size cannot automatically correct a biased measurement procedure or an unrepresentative recruitment process: precision under a model and validity of the model are separate questions."
+        }
+      ],
+      "workedExample": {
+        "title": "Worked calculation",
+        "prompt": "Both invented samples have sample SD 10 units. Estimate the mean SE for sample sizes 25 and 100 using the stated independent common-variance model.",
+        "solution": [
+          "For n = 25, square root of n is five, so estimated SE is 10 / 5 = 2 units.",
+          "For n = 100, square root of n is ten, so estimated SE is 10 / 10 = 1 unit.",
+          "The SD was assigned to be equal. The difference concerns uncertainty of the mean under the sampling model, not a reduction of individual spread or proof that bias is absent."
+        ]
+      },
+      "question": {
+        "prompt": "Both samples have SD 10; their sizes are 25 and 100. Does the smaller estimated SE prove that the second sample has smaller individual spread?",
+        "options": [
+          {
+            "text": "No; the assigned SD is ten in both samples.",
+            "reason": "Estimated SE changes from two to one because n changes. Individual sample spread was explicitly held equal."
+          },
+          {
+            "text": "Yes; its individual SD must be one.",
+            "reason": "One is the estimated SE, not the sample SD. The sample SD was supplied as ten."
+          },
+          {
+            "text": "Yes; a larger sample also guarantees unbiased measurement.",
+            "reason": "Sample size does not automatically repair systematic measurement error or a biased sampling procedure."
+          }
+        ],
+        "answer": 0
+      },
+      "oralExamination": [
+        {
+          "prompt": "Explain SD and SE without interchanging what varies.",
+          "answer": "SD summarises the spread of observations. The SE of a mean summarises the repeated-sampling spread of that estimator under a model. Under independent common finite variance, estimate SE by s divided by the square root of n. A smaller estimated SE need not imply smaller individual SD, unbiased data or a justified confidence interval."
+        }
+      ],
+      "recall": {
+        "prompt": "Explain SD and SE without interchanging what varies.",
+        "answer": "SD summarises the spread of observations. The SE of a mean summarises the repeated-sampling spread of that estimator under a model. Under independent common finite variance, estimate SE by s divided by the square root of n. A smaller estimated SE need not imply smaller individual SD, unbiased data or a justified confidence interval."
+      },
+      "summaryChecklist": [
+        "I can distinguish observation spread from mean-estimation uncertainty.",
+        "I can calculate an estimated standard error under an independent-sampling model.",
+        "I can explain why a smaller standard error does not remove bias."
+      ],
+      "related": [
+        "histogram-bin-counts-example",
+        "mean-median-extreme-value-comparison",
+        "same-center-different-data-spread"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",
