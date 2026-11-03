@@ -77,3 +77,19 @@ test("three existing Molecular Cell Biology diagrams render only in local lesson
   }
   expect((await request.get("/review/molecular-cell-biology/not-a-lesson")).status()).toBe(404);
 });
+
+test("local candidate review is readable, keyboard accessible and contains no source paths", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 800 });
+  const response = await page.goto("/review/lessons");
+  expect(response?.status()).toBe(200);
+  await expect(page.getByRole("heading", { name: "Local lesson review", level: 1 })).toBeVisible();
+  const first = page.locator("article").first();
+  await expect(first).toBeVisible();
+  const detail = first.locator("details").first();
+  await detail.locator("summary").focus();
+  await page.keyboard.press("Enter");
+  await expect(detail).toHaveAttribute("open", "");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  const html = await page.content();
+  expect(html).not.toMatch(/\/Users\/|\/study guide\/|rlkey=|dropbox\.com/i);
+});

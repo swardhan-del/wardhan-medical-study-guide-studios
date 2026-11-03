@@ -122,6 +122,7 @@ test("private review and unknown guide IDs cannot be accessed in a public build"
   for (const route of [
     "/review",
     "/review/test-anatomy",
+    "/review/lessons",
     "/library/does-not-exist",
     "/subjects/does-not-exist",
     "/subjects/anatomy/does-not-exist",

@@ -20,6 +20,7 @@ export default async function ReviewPage() {
           editions have not been released to the public library.
         </p>
       </header>
+      <p><Link href="/review/lessons">Review prepared lesson candidates</Link></p>
       <p><Link href="/review/molecular-cell-biology">Review Molecular Cell Biology diagrams in lesson context</Link></p>
       <CatalogBrowser records={records} basePath="/review" />
     </div>
