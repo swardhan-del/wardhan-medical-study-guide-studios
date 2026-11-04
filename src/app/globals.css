@@ -2626,6 +2626,11 @@ select:focus-visible {
   font-weight: 400;
   font-size: 1.5rem;
   color: var(--teal);
+  flex-shrink: 0;
+}
+.concept-step-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .concept-sequence details[open] .concept-expand {
   transform: rotate(45deg);
@@ -2692,7 +2697,18 @@ select:focus-visible {
 }
 .concept-options {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
+}
+.concept-options label > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.concept-page p, .concept-page li, .practice-question legend {
+  overflow-wrap: anywhere;
+}
+.practice-question fieldset {
+  min-inline-size: 0;
 }
 .concept-options label {
   display: flex;
@@ -4176,7 +4192,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 }
 @media (max-width:620px) {
   .site-header nav { width:100%; }
-  .nav-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px 12px; }
+  .nav-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,5rem),1fr)); gap:4px 12px; }
   .nav-link { display:flex; align-items:center; min-height:44px; padding-block:8px; }
   .lesson-review .action-row, .continue-card .action-row { align-items:stretch; }
   .lesson-review .button, .continue-card .button { width:100%; white-space:normal; }

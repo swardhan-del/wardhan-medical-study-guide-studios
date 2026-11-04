@@ -23,3 +23,9 @@ Accessibility evidence (same teaching fingerprints as above):
 - standard-deviation-standard-error-accessibility-20261103: 956f299c00bb630ab2fc18ebf2decf37db6d99743764c95a4ea26c272d07e386
 
 Final local checkpoint: 125 unit tests passed; production build, rendered privacy checks, lint, typecheck and production dependency audit (zero vulnerabilities) passed. The final ten statistics desktop/mobile tests passed after correcting the last onward link; these include directory/filter/full-text search and no links to unavailable statistics study/vocabulary routes. A separate 36-check first-visit/statistics run passed before that final link correction. All 241 prior lesson objects, old questions, legacy baseline and public asset hashes are unchanged. Existing review branches are preserved. React review found no new effects, network requests, dependencies or storage format changes; semantic controls and established identifiers are reused.
+
+## 4 November reflow correction
+
+The initial hosted preview passed its ten normal-text desktop/mobile cases, but a further 320 CSS-pixel / 200% root-text check exposed overflow in disclosure titles, fixed mobile navigation columns, and long question options. Merge was held. Titles and options now shrink and wrap, the navigation adapts its column count to text size, and explanatory text/legends wrap when needed. Content, question identities and answer ordering are unchanged. No overflow-hiding rule was added.
+
+The updated production build and rendered privacy checks, lint and typecheck passed. All 36 focused statistics/first-visit desktop/mobile checks passed, including 320px/200% assertions for each of the four lessons. Current-commit hosted preview and CI remain release gates; the earlier green jobs do not cover this correction.

@@ -48,6 +48,9 @@ for (const lesson of lessons) {
     expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
     expect(errors).toEqual([]);
     await page.screenshot({ path: info.outputPath('lesson.png'), fullPage: true });
+    await page.setViewportSize({ width: 320, height: 844 });
+    await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.getByRole('link', { name: 'Biostatistics lessons →', exact: true }).click();
     await expect(page).toHaveURL(/\/subjects\/biostatistics$/);
     await expect(page.locator('.resource-card:visible')).toHaveCount(4);

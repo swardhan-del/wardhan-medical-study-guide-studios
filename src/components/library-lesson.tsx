@@ -139,7 +139,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
                     <span className="concept-number" aria-hidden="true">
                       0{index + 1}
                     </span>
-                    <span>{step.title}</span>
+                    <span className="concept-step-title">{step.title}</span>
                     <span className="concept-expand" aria-hidden="true">
                       +
                     </span>
