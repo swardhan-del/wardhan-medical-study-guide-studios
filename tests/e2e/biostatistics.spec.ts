@@ -51,6 +51,8 @@ for (const lesson of lessons) {
     await page.setViewportSize({ width: 320, height: 844 });
     await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await check.scrollIntoViewIfNeeded();
+    await page.screenshot({ path: info.outputPath('enlarged-question.png'), fullPage: false });
     await page.getByRole('link', { name: 'Biostatistics lessons →', exact: true }).click();
     await expect(page).toHaveURL(/\/subjects\/biostatistics$/);
     await expect(page.locator('.resource-card:visible')).toHaveCount(4);

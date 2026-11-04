@@ -2726,6 +2726,10 @@ select:focus-visible {
   margin-top: 4px;
   accent-color: var(--teal);
 }
+@media (max-width: 380px) {
+  .practice-question { padding: 12px; }
+  .concept-options label { padding: 10px; gap: 8px; }
+}
 .concept-options label:has(input:checked) {
   border-color: var(--teal);
   box-shadow: inset 3px 0 var(--teal);
