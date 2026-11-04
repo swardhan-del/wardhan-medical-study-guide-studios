@@ -3690,14 +3690,21 @@
       "id": "myelin-and-glial-cells",
       "subject": "histology",
       "title": "Myelin and glia: identify the cell before the function",
-      "summary": "Connect CNS and PNS supporting cells with internodes, conduction and the limits of routine histological identification.",
+      "summary": "Use cell location, myelin and connective tissue to distinguish nerve-fibre regions from peripheral ganglia. Compare one sensory neuron’s branches with an autonomic two-neuron relay, and state what a section cannot show.",
       "tags": [
         "Myelin and glia: identify the cell before the function",
         "histology",
-        "Mechanisms and applications"
+        "Mechanisms and applications",
+        "peripheral ganglia",
+        "dorsal root ganglion",
+        "pseudounipolar neuron",
+        "sensory versus autonomic",
+        "satellite glia",
+        "branch versus synapse",
+        "neuron counting"
       ],
-      "source": "histology-neuro-r20260907",
-      "section": "Supporting Cells; Myelination; Peripheral Nerve Structure",
+      "source": "histology-ganglia-depth-20261104",
+      "section": "Supporting Cells; Myelination; Peripheral Nerve Structure; current selected nerve and ganglion text; original branch-versus-relay reasoning",
       "steps": [
         {
           "title": "Begin with location and relationships",
@@ -3714,12 +3721,39 @@
         {
           "title": "Use the coverings to recognise a peripheral nerve",
           "body": "In a transverse section, identify bundles bounded by perineurium before interpreting individual profiles. Endoneurial connective tissue lies among nerve fibres within a fascicle; epineurium surrounds and connects fascicles and contains larger vessels. Routine processing can dissolve myelin lipid, leaving pale rings or spaces. A single dark glial nucleus usually cannot establish a precise glial subtype without context or special methods. State what the preparation demonstrates and what remains inferred."
+        },
+        {
+          "title": "Locate cell bodies before naming a ganglion",
+          "body": "A peripheral ganglion is a region containing neuronal cell bodies as well as their processes, supporting cells and connective tissue. A nerve fascicle is organised mainly around travelling axons and their supporting sheaths. Finding a fibre bundle next to a ganglion does not turn the bundle into a second ganglion. First describe whether the field contains neuronal somata, fascicles or both; then connect it with the known anatomical location."
+        },
+        {
+          "title": "Follow one spinal sensory neuron through a branch point",
+          "body": "A typical mature dorsal-root-ganglion sensory neuron is pseudounipolar. A short process from its soma joins peripheral and central axonal processes. These processes belong to one neuron; their junction is not an obligatory relay onto a second neuron in the ganglion. A drawing that shows the soma beside the main route is a circuit explanation, not a promise that the junction will appear in one routine section. This comparison concerns typical spinal sensory neurons, not every sensory neuron or cranial ganglion."
+        },
+        {
+          "title": "Place both cell bodies in an autonomic chain",
+          "body": "In a typical autonomic efferent chain, the preganglionic neuron has its soma in the CNS and sends an axon to a peripheral autonomic ganglion. There it synapses on a postganglionic neuron, whose soma lies in the ganglion and whose axon continues toward the effector. The chain contains two neurons, but that does not put both cell bodies inside the ganglion. Axons merely passing through a region must not automatically be assigned a synapse there."
+        },
+        {
+          "title": "Separate a supporting-cell relationship from a cell count",
+          "body": "Satellite glia are associated with neuronal somata in peripheral ganglia; Schwann cells support peripheral axons, including compact-myelin and non-myelinating arrangements. This location-based distinction complements the earlier internode comparison. It does not identify every small dark nucleus in a field. Fibroblasts, vascular cells and other cells can also contribute nuclei. Section plane and preparation affect the visible profiles. A pale space around a neuronal soma is not sufficient evidence of compact myelin, and a ring-like appearance does not establish a universal glia-to-neuron ratio."
+        },
+        {
+          "title": "Work two fully specified models without adding an unseen relay",
+          "body": "Model A is an invented complete drawing of one neuron S. Its peripheral process P and central process C meet at junction J; a short stem connects J with S’s soma. All three drawn segments are explicitly parts of S, and no synapse is drawn at J. The model therefore has one neuron, two named functional branches and no specified neuron-to-neuron synapse at J. Model B is a different invented path: neuron N1 has its soma in the CNS and makes one specified synapse on neuron N2 in a peripheral ganglion; N2 sends an axon to an effector. That path has two neurons, one specified neuronal synapse and one of its two somata in the ganglion. Counts refer only to the defined paths, not to every cell in an actual ganglion. Neither model supplies myelin status or conduction speed."
+        },
+        {
+          "title": "Keep structural, physiological and research evidence distinct",
+          "body": "An ordinary section can support an anatomical interpretation without displaying the complete branching geometry or proving a functional synapse. Morphology, a molecular marker, an anatomical contact and an activity measurement answer different questions. For example, Kumari and colleagues studied neuron-satellite-glia relationships in mouse sympathetic ganglia using structural and functional measurements. Their findings are bounded by that study’s model and outcomes; they do not make a routine human section a measurement of neuronal activity. The ordinary sensory-versus-autonomic wiring comparison is also not a claim that no other local cell interactions can occur."
         }
       ],
       "objectives": [
         "Compare Schwann cells with oligodendrocytes.",
         "Distinguish myelination from axonal transport.",
-        "Use tissue organisation to recognise a peripheral nerve."
+        "Use tissue organisation to recognise a peripheral nerve.",
+        "Distinguish a typical spinal sensory neuron’s branches from a two-neuron autonomic efferent chain.",
+        "Locate the preganglionic and postganglionic somata without placing both inside a peripheral ganglion.",
+        "Separate observed cell relationships from complete-cell counts, functional contacts and research outcomes."
       ],
       "prerequisites": [
         "neurulation",
@@ -3759,10 +3793,47 @@
       },
       "related": [
         "neurulation",
-        "membrane-potentials"
+        "membrane-potentials",
+        "autonomic-signalling",
+        "cranial-nerve-organization",
+        "histology-foundations-tissues"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 10
+      "updatedAt": "2026-11-04",
+      "minutes": 25,
+      "oralExamination": [
+        {
+          "prompt": "Why do peripheral and central processes not require two sensory neurons in the defined Model A?",
+          "answer": "The model explicitly makes both processes and the somal stem parts of neuron S. A branch divides a process within that cell; a neuron-to-neuron synapse would be an additional relationship that the model does not specify at J."
+        },
+        {
+          "prompt": "Where are the two somata in the defined Model B?",
+          "answer": "N1’s soma is in the CNS. N2’s soma is in the peripheral ganglion. The two-neuron chain does not imply two somata inside that ganglion, and says nothing about all the other cells an actual ganglion contains."
+        },
+        {
+          "prompt": "How does the satellite-glia/Schwann-cell distinction connect with the original myelin lesson?",
+          "answer": "Satellite glia are associated with peripheral neuronal somata; Schwann cells support axons. A myelinating Schwann cell forms an internode, while non-myelinating Schwann cells support axons without compact myelin. None of these statements identifies a cell solely from one dark nucleus."
+        },
+        {
+          "prompt": "Does failure to see a T-shaped profile refute a pseudounipolar organisation?",
+          "answer": "No. A section may miss part of a three-dimensional cell and its junction. The usual organisation comes from anatomical evidence; it must not be presented as a feature directly resolved in every field."
+        },
+        {
+          "prompt": "What can a pale halo or a cluster of small nuclei establish by itself?",
+          "answer": "Neither establishes compact myelin, an exact glial subtype or a universal cell ratio. Describe the profiles, location and preparation; further evidence may be needed for cell identity or complete counts."
+        },
+        {
+          "prompt": "Why must a mouse sympathetic-ganglion study remain distinct from routine human histology?",
+          "answer": "Organism, tissue, experimental conditions and measured outcomes define its scope. An observation of structure or contact is not itself an activity measurement or a demonstrated human clinical effect."
+        }
+      ],
+      "summaryChecklist": [
+        "Locate neuronal somata, axonal regions and connective-tissue boundaries before naming the structure.",
+        "Count cells and branches as different units in a fully specified model.",
+        "Place the autonomic preganglionic soma in the CNS and postganglionic soma in the peripheral ganglion.",
+        "Distinguish soma-associated satellite glia from axon-associated Schwann cells without over-reading a nucleus.",
+        "State what the section does not resolve: complete geometry, exact cell identity or functional contact.",
+        "Keep research organism, tissue and outcome separate from an unmeasured human response."
+      ]
     },
     {
       "id": "brain-and-csf-barriers",

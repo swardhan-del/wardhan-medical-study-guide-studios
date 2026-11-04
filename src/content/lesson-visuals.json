@@ -1501,6 +1501,47 @@
       "referenceIds": [
         "vascular-network-model-reference"
       ]
+    },
+    {
+      "id": "ganglia-branch-and-relay",
+      "lessonIds": [
+        "myelin-and-glial-cells"
+      ],
+      "kind": "comparison",
+      "title": "A sensory branch and an autonomic relay count different relationships",
+      "headers": [
+        "Compare",
+        "Typical spinal sensory arrangement",
+        "Typical autonomic efferent chain"
+      ],
+      "rows": [
+        [
+          "Neuron relationship",
+          "Peripheral and central processes belong to one pseudounipolar neuron.",
+          "A preganglionic neuron synapses on a separate postganglionic neuron."
+        ],
+        [
+          "Where the somata are",
+          "The sensory soma is in the dorsal root ganglion.",
+          "The preganglionic soma is in the CNS; the postganglionic soma is in a peripheral ganglion."
+        ],
+        [
+          "Glial relationship",
+          "Satellite glia surround somata; Schwann-cell support belongs with peripheral axons.",
+          "Satellite glia are associated with postganglionic somata; they are not another neuron in the efferent relay."
+        ],
+        [
+          "What a routine field may miss",
+          "The complete branch junction may lie outside the section.",
+          "An adjacent axon and soma alone do not demonstrate a functional synapse."
+        ]
+      ],
+      "caption": "Original conceptual comparison, not a micrograph. The sensory column concerns a typical spinal sensory neuron; it is not a rule for every sensory ganglion. A two-neuron autonomic chain does not put both somata inside its peripheral ganglion. Cell identities, complete counts and functional contacts require suitable evidence.",
+      "observe": "Explain why two branches of one neuron and a connection between two neurons cannot be counted in the same way.",
+      "alt": "A typical spinal sensory neuron has peripheral and central processes belonging to one cell with its soma in a dorsal root ganglion. A typical autonomic chain contains a CNS preganglionic neuron and a separate peripheral postganglionic neuron. Satellite glia are supporting cells, not an extra relay neuron. Routine sections need not show the complete circuit.",
+      "referenceIds": [
+        "myelin-and-glial-cells"
+      ]
     }
   ]
 }

@@ -2637,13 +2637,15 @@
       "route": "/library/myelin-and-glial-cells",
       "title": "Myelin and glia: identify the cell before the function",
       "kind": "Study lesson",
-      "action": "standardise-or-reuse",
+      "action": "new-comparison-or-flow",
       "components": [
         "TeachingDiagram"
       ],
-      "visualIds": [],
+      "visualIds": [
+        "ganglia-branch-and-relay"
+      ],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Connect CNS and PNS supporting cells with internodes, conduction and the limits of routine histological identification."
+      "rationale": "Original four-row semantic comparison distinguishes a typical spinal sensory branch from an autonomic two-neuron chain, soma locations, glial relationships and section limits. Actual desktop and 320px/200% text stacked-card captures inspected; labels, caption and feedback wrap. Keyboard and expanded-state Axe checks passed. No source image or specimen is reproduced."
     },
     {
       "id": "neurulation",

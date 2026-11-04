@@ -649,6 +649,50 @@
       "independent": false,
       "record": "docs/reviews/vascular-network-depth-20261104.md",
       "contentSha256": "f82caf8745d9a4668fce00eb6442744546d9f9088ef0bad7161b8827f6a89087"
+    },
+    {
+      "id": "myelin-and-glial-cells-editorial-20261104",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source, circuit-unit and editorial checks",
+      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
+      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
+    },
+    {
+      "id": "myelin-and-glial-cells-readability-20261104",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "readability",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source, circuit-unit and editorial checks",
+      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
+      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
+    },
+    {
+      "id": "myelin-and-glial-cells-visual-20261104",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "visual",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted actual browser, rendered-layout and Axe checks",
+      "qualification": "Automated assistant; keyboard, persistence and 320px/200% text checked; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
+      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
+    },
+    {
+      "id": "myelin-and-glial-cells-accessibility-20261104",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted actual browser, rendered-layout and Axe checks",
+      "qualification": "Automated assistant; keyboard, persistence and 320px/200% text checked; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
+      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
     }
   ]
 }
