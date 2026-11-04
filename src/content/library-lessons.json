@@ -5713,7 +5713,7 @@
       "id": "biophysics-fluid-flow",
       "subject": "biophysics",
       "title": "Continuity, viscosity and resistance to flow",
-      "summary": "Predict flow changes while stating when ideal fluid and tube models apply.",
+      "summary": "State what is held fixed in ideal tube and vascular-network models. Compare series and parallel paths, calculate branch pressures and distinguish fixed driving pressure from fixed total flow.",
       "tags": [
         "Flow, diffusion and thermodynamics",
         "Biophysics",
@@ -5721,10 +5721,15 @@
         "Poiseuille",
         "Bernoulli",
         "Reynolds",
-        "Stokes"
+        "Stokes",
+        "series resistance",
+        "parallel conductance",
+        "fixed pressure",
+        "fixed total flow",
+        "vascular networks"
       ],
       "source": "biophysics",
-      "section": "Biophysics II, topic 22; combined theory prompts 188–196",
+      "section": "Biophysics II, topic 22; combined theory prompts 188–196; selected cardiovascular physiology: controlled series and parallel network reasoning",
       "steps": [
         {
           "title": "Conserve volume",
@@ -5745,6 +5750,34 @@
         {
           "title": "Work a radius change",
           "body": "At fixed pressure difference, length and viscosity, doubling radius predicts 16 times the flow. At fixed flow, the same change reduces the required pressure difference to one sixteenth. These are different experimental constraints; always state what is held constant."
+        },
+        {
+          "title": "Define the model",
+          "body": "Consider two rigid, non-interacting branches connected between the same upstream and downstream pressures. Each has resistance 4 pressure-units per flow-unit. Use a steady-flow model, a fixed pressure difference of 8 pressure-units, and constant branch resistances. The numbers are invented to illustrate the relationship."
+        },
+        {
+          "title": "Work the parallel case",
+          "body": "Each branch sees the same pressure difference, so flow in each is 8 divided by 4, or 2 flow-units. The combined flow is 4 flow-units; equivalent resistance is 8 divided by 4, or 2 pressure-units per flow-unit. For branches in parallel, conductances add: 1/Rtotal = 1/R1 + 1/R2."
+        },
+        {
+          "title": "Compare the series case",
+          "body": "Now connect the same two resistances one after the other with no side branch. Resistances add to 8 pressure-units per flow-unit. With the same total pressure difference, flow is 1 flow-unit throughout the series path. This comparison changes the network arrangement, not just one vessel diameter."
+        },
+        {
+          "title": "Change the controller: hold total flow fixed",
+          "body": "Use a separate fictional comparison with an ideal controller that stipulates total flow of 4 flow-units. One resistance of 4 pressure-units per flow-unit requires a pressure difference of 16 pressure-units. Add a second identical path in parallel while total flow stays 4: the equivalent resistance is 2, the required pressure difference becomes 8, and each branch carries 2. The old branch now carries less than its initial 4. In the earlier fixed-pressure comparison, its flow stayed 2 while total flow increased. The controlled quantity and starting state differ; the two statements do not contradict one another."
+        },
+        {
+          "title": "Share pressure without assuming equal branch flow",
+          "body": "In another invented model, resistances 4 and 12 connect directly between the same two pressure nodes. Set their common driving pressure difference to 12 pressure-units. Their flows are 12/4 = 3 and 12/12 = 1 flow-unit. Total flow is 4 and equivalent resistance is 12/4 = 3 pressure-units per flow-unit. Equal pressure differences across parallel branches do not imply equal flows when resistances differ. For positive finite parallel resistances, the equivalent is below the smaller branch resistance; here 3 is below 4."
+        },
+        {
+          "title": "Allow a shared series segment to use some of the driving pressure",
+          "body": "Now define a different network: a shared upstream resistance R0 = 2 leads to two parallel branches, R1 = R2 = 4. Use 12 pressure-units across the entire network, not across each branch. The parallel pair has equivalent resistance 2. Adding the shared series resistance gives total resistance 4 and total flow 3. The shared upstream drop is 3 × 2 = 6, leaving 6 across the parallel pair. Each branch therefore carries 6/4 = 1.5 flow-units. Their sum is 3 and the two serial pressure drops sum to 12. Applying all 12 across each branch would ignore the upstream drop."
+        },
+        {
+          "title": "Keep the model boundary and the measured quantity explicit",
+          "body": "The examples use stipulated constant resistances and specified pressure or flow control. Real vascular pressure, resistance and regulation can change together; vessels are compliant and flow can be pulsatile. The earlier radius-scaling table holds the driving pressure across that tube fixed. Fixed pressure across a larger network need not keep the pressure drop across one changing segment fixed. A resistor example is not a patient prediction, a treatment rule or a measurement of an actual organ. Label the nodes, units and controlled variable before calculating."
         }
       ],
       "question": {
@@ -5771,10 +5804,67 @@
       },
       "related": [
         "biophysics-ct-imaging",
-        "biophysics-diffusion-osmosis"
+        "biophysics-diffusion-osmosis",
+        "cardiac-output",
+        "lymph-and-fluid-exchange"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 8
+      "updatedAt": "2026-11-04",
+      "minutes": 25,
+      "objectives": [
+        "Distinguish volume flow, mean speed and the pressure difference driving a stated path.",
+        "Reduce simple series and parallel resistance networks under explicit fixed-resistance assumptions.",
+        "Calculate individual flows for unequal parallel branches.",
+        "Find branch pressure after a shared upstream resistance consumes part of the total driving pressure.",
+        "Compare fixed-pressure and fixed-total-flow experiments without silently changing constraints.",
+        "Explain why an isolated tube ratio does not by itself predict a whole-circulation response."
+      ],
+      "prerequisites": [
+        "biophysics-membrane-foundations"
+      ],
+      "workedExample": {
+        "title": "Which pressure acts across the parallel branches?",
+        "prompt": "In a fictional steady network, a shared R0 = 2 lies in series before two parallel resistances R1 = R2 = 4. The total driving pressure difference is 12. Resistances use pressure-units per flow-unit. Find the equivalent resistance, total flow, branch pressure difference and each branch flow.",
+        "solution": [
+          "The parallel pair has equivalent resistance 1/(1/4 + 1/4) = 2. Including R0 gives total resistance 2 + 2 = 4.",
+          "Total flow is 12/4 = 3. It all passes through R0, producing an upstream drop of 3 × 2 = 6 pressure-units.",
+          "The remaining branch pressure difference is 12 − 6 = 6. Each branch flow is 6/4 = 1.5; their sum is 3.",
+          "Check both balances: 1.5 + 1.5 = 3 flow-units at the junction and 6 + 6 = 12 pressure-units along either complete path. Do not assign the entire network pressure drop to every segment."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why do parallel conductances add rather than branch resistances?",
+          "answer": "The branches share a pressure difference, while their flows add. Summing Q_i = ΔP/R_i gives Q_total = ΔP × Σ(1/R_i), hence 1/R_equivalent = Σ(1/R_i)."
+        },
+        {
+          "prompt": "Can parallel branches share pressure yet have unequal flows?",
+          "answer": "Yes. At a common pressure difference of 12 pressure-units, resistances of 4 and 12 pressure-units per flow-unit carry 3 and 1 flow-unit. Equal pressure does not force equal flow when resistances differ."
+        },
+        {
+          "prompt": "Why do the equal branches in the shared-upstream example see 6 rather than 12 pressure-units?",
+          "answer": "The shared R0 consumes a pressure drop of 6 at total flow of 3. Only the remaining 6 pressure-units lies between the split and the common downstream node."
+        },
+        {
+          "prompt": "Why can opening another path leave one branch flow unchanged in one model but reduce it in another?",
+          "answer": "With fixed branch pressure and resistance, that branch flow stays fixed and total flow can grow. With an ideal fixed-total-flow controller, adding another equal branch distributes the stipulated flow and changes the required pressure difference. The starting conditions and held variables differ."
+        },
+        {
+          "prompt": "When does the radius-doubling sixteenfold flow comparison apply?",
+          "answer": "It applies under the stated ideal tube conditions with the pressure drop across that tube, viscosity and length fixed. A fixed drop across a larger network does not automatically keep that tube’s drop fixed."
+        },
+        {
+          "prompt": "Does the toy network calculate an individual response to opening or blocking a vessel?",
+          "answer": "No. Its boundaries and resistances are stipulated. Regulation, compliance, time dependence and changing pressures require additional evidence and modelling."
+        }
+      ],
+      "summaryChecklist": [
+        "Name the pressure nodes and state which pressure difference is used.",
+        "Keep volume flow distinct from linear speed.",
+        "Add series resistances and parallel conductances.",
+        "Check junction flow balance and complete-path pressure drops.",
+        "State whether driving pressure or total flow is held fixed.",
+        "Keep a single-tube scaling result separate from a whole-network prediction."
+      ]
     },
     {
       "id": "biophysics-diffusion-osmosis",

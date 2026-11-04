@@ -486,9 +486,43 @@
     "checkedAt": "2026-09-09"
   },
   "biophysics-fluid-flow": {
-    "title": "OpenStax: fluid mechanics",
-    "url": "https://openstax.org/books/university-physics-volume-1/pages/14-introduction",
-    "checkedAt": "2026-09-09"
+    "title": "OpenStax: Viscosity and turbulence",
+    "url": "https://openstax.org/books/university-physics-volume-1/pages/14-7-viscosity-and-turbulence",
+    "checkedAt": "2026-11-04",
+    "supportingReferences": [
+      {
+        "title": "OpenStax: Fluid dynamics",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/14-5-fluid-dynamics"
+      },
+      {
+        "title": "OpenStax: Bernoulli’s equation",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation"
+      },
+      {
+        "title": "Klabunde: Series and parallel vascular networks",
+        "url": "https://cvphysiology.com/hemodynamics/h004"
+      },
+      {
+        "title": "Klabunde: Parallel resistance calculations",
+        "url": "https://cvphysiology.com/hemodynamics/h005"
+      },
+      {
+        "title": "Klabunde: Determinants of resistance to flow",
+        "url": "https://cvphysiology.com/hemodynamics/h003"
+      },
+      {
+        "title": "Mahajan, MIT OpenCourseWare: The Art of Insight in Science and Engineering — selected viscosity and Stokes-drag passages",
+        "url": "https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/3bca850386a3005c22134fa62fb3bad5_MITRES_6-011F14_art_insfin.pdf#page=315"
+      },
+      {
+        "title": "OpenStax: Fluid mechanics chapter overview",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/14-introduction"
+      },
+      {
+        "title": "Carr and Wickham: Plasma skimming in serial microvascular bifurcations (1990)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/2250597/"
+      }
+    ]
   },
   "biophysics-diffusion-osmosis": {
     "title": "OpenStax: passive transport",
@@ -1453,5 +1487,10 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/12097915/"
       }
     ]
+  },
+  "vascular-network-model-reference": {
+    "title": "Klabunde: Series and parallel vascular networks",
+    "url": "https://cvphysiology.com/hemodynamics/h004",
+    "checkedAt": "2026-11-04"
   }
 }

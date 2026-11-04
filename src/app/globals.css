@@ -2664,6 +2664,7 @@ select:focus-visible {
   line-height: 1.5;
 }
 .concept-related strong {
+  overflow-wrap: anywhere;
   font-family: var(--serif);
   font-size: 1.35rem;
   font-weight: 500;

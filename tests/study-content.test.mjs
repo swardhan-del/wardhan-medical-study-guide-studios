@@ -6,7 +6,10 @@ const read = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), "
 test("each concept introduction has a public topic reference", () => {
   const lessons = read("../src/content/library-lessons.json").lessons;
   const refs = read("../src/content/lesson-references.json");
-  assert.equal(Object.keys(refs).length, lessons.length);
+  const auxiliary = Object.keys(refs).filter(id => !lessons.some(l => l.id === id));
+  assert.deepEqual(auxiliary, ["vascular-network-model-reference"]);
+  assert.equal(refs[auxiliary[0]].url, "https://cvphysiology.com/hemodynamics/h004");
+  assert(read("../src/content/lesson-visuals.json").visuals.some(v => v.id === "vascular-network-constraints" && v.referenceIds.includes(auxiliary[0])));
   for (const lesson of lessons) { assert(refs[lesson.id]?.title.length > 10); assert.equal(new URL(refs[lesson.id].url).protocol, "https:"); }
   assert.match(refs["nitrogen-metabolism"].url, /nitrogenous-wastes/);
   assert.doesNotMatch(refs["nitrogen-metabolism"].url, /NBK92001/);

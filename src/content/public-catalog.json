@@ -2818,14 +2818,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-09",
+      "updatedAt": "2026-11-04",
       "bytes": 0,
       "id": "biophysics-fluid-flow",
       "title": "Continuity, viscosity and resistance to flow",
       "subject": "biophysics",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Predict flow changes while stating when ideal fluid and tube models apply.",
+      "summary": "State what is held fixed in ideal tube and vascular-network models. Compare series and parallel paths, calculate branch pressures and distinguish fixed driving pressure from fixed total flow.",
       "tags": [
         "Flow, diffusion and thermodynamics",
         "Biophysics",
@@ -2833,9 +2833,14 @@
         "Poiseuille",
         "Bernoulli",
         "Reynolds",
-        "Stokes"
+        "Stokes",
+        "series resistance",
+        "parallel conductance",
+        "fixed pressure",
+        "fixed total flow",
+        "vascular networks"
       ],
-      "minutes": 8
+      "minutes": 25
     },
     {
       "status": "public",

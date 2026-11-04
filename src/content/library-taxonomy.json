@@ -2950,6 +2950,17 @@
       "resources": [
         "antibody-mutation-class-switch"
       ]
+    },
+    {
+      "id": "topic-vascular-resistance-parallel-model",
+      "title": "Series and parallel vascular-network reasoning",
+      "description": "A selected ideal-network introduction in the existing fluid-flow lesson; fixed pressure, fixed total flow and shared upstream resistance.",
+      "subject": "physiology",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "biophysics-fluid-flow"
+      ]
     }
   ]
 }

@@ -1002,6 +1002,121 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "biophysics-fluid-flow",
+      "title": "Continuity, viscosity and resistance to flow",
+      "subject": "biophysics",
+      "topic": "Ideal tube and series/parallel network reasoning with explicit controllers",
+      "slug": "biophysics-fluid-flow",
+      "learnerLevel": "Introductory medical biophysics and cardiovascular physiology",
+      "objectives": [
+        "Distinguish volume flow, mean speed and the pressure difference driving a stated path.",
+        "Reduce simple series and parallel resistance networks under explicit fixed-resistance assumptions.",
+        "Calculate individual flows for unequal parallel branches.",
+        "Find branch pressure after a shared upstream resistance consumes part of the total driving pressure.",
+        "Compare fixed-pressure and fixed-total-flow experiments without silently changing constraints.",
+        "Explain why an isolated tube ratio does not by itself predict a whole-circulation response."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax: Viscosity and turbulence",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/14-7-viscosity-and-turbulence",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax: Fluid dynamics",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/14-5-fluid-dynamics",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax: Bernoulli’s equation",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Klabunde: Series and parallel vascular networks",
+          "publisherOrAuthor": "Klabunde",
+          "url": "https://cvphysiology.com/hemodynamics/h004",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Klabunde: Parallel resistance calculations",
+          "publisherOrAuthor": "Klabunde",
+          "url": "https://cvphysiology.com/hemodynamics/h005",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Klabunde: Determinants of resistance to flow",
+          "publisherOrAuthor": "Klabunde",
+          "url": "https://cvphysiology.com/hemodynamics/h003",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Mahajan, MIT OpenCourseWare: The Art of Insight in Science and Engineering — selected viscosity and Stokes-drag passages",
+          "publisherOrAuthor": "Mahajan, MIT OpenCourseWare",
+          "url": "https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/3bca850386a3005c22134fa62fb3bad5_MITRES_6-011F14_art_insfin.pdf#page=315",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax: Fluid mechanics chapter overview",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/14-introduction",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Carr and Wickham: Plasma skimming in serial microvascular bifurcations (1990)",
+          "publisherOrAuthor": "Carr and Wickham",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2250597/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original retained tube-scaling comparison and new five-row network comparison. Rendered desktop and 320px/200% text stacked cards inspected, with captions, units, text equivalent and valid direct references. Shared upstream row retains all values. No source figure or micrograph approved.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Invented fixed-resistance examples with explicit pressure or flow controllers; no patient prediction, clinical threshold or complete hemodynamics coverage.",
+        "Primary-study abstract supports retained branch-composition caveat; full paper and source figures not reviewed or reproduced.",
+        "AI-assisted editorial checks; no independent clinical or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "biophysics-fluid-flow-editorial-20261104",
+        "biophysics-fluid-flow-readability-20261104",
+        "biophysics-fluid-flow-visual-20261104",
+        "biophysics-fluid-flow-accessibility-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "biophysics-membrane-foundations"
+        ],
+        "related": [
+          "biophysics-ct-imaging",
+          "biophysics-diffusion-osmosis",
+          "cardiac-output",
+          "lymph-and-fluid-exchange"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
