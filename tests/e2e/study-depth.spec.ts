@@ -28,9 +28,9 @@ test('map filters separate available introductions from planned adaptations',asy
   await expect(page.getByRole('link',{name:'Distributions and graphical summaries'})).toBeVisible();
   await page.getByRole('button',{name:'Clear filters'}).click();
   await page.getByRole('searchbox',{name:'Find a topic'}).fill('myelin');
-  await expect(page.getByRole('link',{name:'Myelin and supporting cells'})).toBeVisible();
+  await expect(page.getByRole('link',{name:'Myelin, supporting cells and peripheral ganglia',exact:true})).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-  await page.getByRole('link',{name:'Myelin and supporting cells'}).click();
+  await page.getByRole('link',{name:'Myelin, supporting cells and peripheral ganglia',exact:true}).click();
   await expect(page).toHaveURL(/\/library\/myelin-and-glial-cells$/);
   await expect(page.getByRole('heading',{level:1})).toContainText('Myelin and glia');
 });

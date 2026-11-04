@@ -1,0 +1,26 @@
+# Myelin/glia lesson: peripheral ganglion branch and relay reasoning
+
+Extend the established myelin-and-glial-cells route rather than creating a second resource. Preserve its four explanations, main myelinating-cell question, recall, nerve-covering worked example, title and progress ID. Add six original explanations, four explained applications, six answered oral prompts, six self-checks and an original comparison. Existing taxonomy/map IDs are reused; the map remains a selected introduction rather than complete Part13 coverage. A new scoped public source record identifies this revision without changing the older source entry used by other lessons.
+
+Model A explicitly makes its peripheral and central processes and somal stem parts of one neuron. It has two named functional branches and no specified neuronal synapse at the junction. Three drawn segments do not mean three cells. Model B specifies two neurons, one synapse and one of its two somata inside a peripheral ganglion. Neither supplies myelin status, conduction speed or the total cell count of a real ganglion. The usual spinal sensory route is contrasted with an autonomic efferent relay, without extending the claim to every sensory neuron or all local cell interactions.
+
+Current source selection was checked against its matrix and matching byte hash. Primary publisher teaching supports the cell/pathway distinction, peripheral nerve/glial relationships and retained basic conduction principles. The cited2025 Kumari paper is one original mouse sympathetic-ganglion study: structural and functional measurements are not silently substituted with routine human morphology. No universal ratio, clinical inference, experimental protocol or source figure is taught. Older sources remain bounded background; outdated numerical glial ratios and an inconsistent internode statement on a broad teaching page were excluded. The challenged DRG background page was not bypassed or used as new evidence.
+
+All new prose, toy paths, assessment and semantic layout are original. No raw study documents, textbook passages, official slides, source images, course questions, patient data, private paths or source-access links enter the public implementation. A fictional description is not source-image recognition or a diagnostic test. Anatomical neighbours, nuclei and preparation halos do not by themselves prove a complete circuit, exact cell identity/count or functional synapse.
+
+The actual preimplementation student audit found a populated catalog and two histology ganglia results. The target page supplied useful existing myelin practice, but lacked the selected branch/relay task. Existing anatomy/ocular pages cover related named pathways and are linked rather than copied. Current open PR29 retains the exact target object and only adds it as a related link elsewhere; PR30 has no target content/taxonomy patch. Other pending media/membership work remains unchanged.
+
+Actual local production-build checks passed in ten desktop/mobile tests before indexing. The new comparison desktop capture, stacked soma-location card at 320px/200% text and enlarged correct-answer feedback were visually inspected. Comparison labels and glial/section caveats remain readable; document width equals viewport width. Existing myelin SVG uses its established local scroll surface; this is not certification of all older diagrams. Expanded-state Axe, keyboard disclosure, saved answers, legacy progress, print and privacy routes passed. Full CI and hosted checks remain pending until recorded. AI-assisted review is not independent medical peer review or human accessibility certification.
+
+Content fingerprint: `2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0`.
+Evidence IDs: myelin-and-glial-cells-editorial-20261104; myelin-and-glial-cells-readability-20261104.
+
+Public reference resolution: use the verified Histology Guide MH051 peripheral-ganglion/nerve-fibre page in place of an unavailable university route that also triggered the local-path privacy guard. The guard is unchanged; no source image or failed-path bypass was used. Teaching/question/visual fingerprint is unchanged.
+
+Visual/accessibility evidence IDs: myelin-and-glial-cells-visual-20261104; myelin-and-glial-cells-accessibility-20261104.
+
+Part13 printable packaging now defers to each lesson’s source/review edition, avoiding an outdated blanket Revision4 attribution. Other parts and lesson selection are unchanged.
+
+Shared print-reference check: retain the established NCBI neuroglial background URL as the main citation, explicitly dated 2001, because foundations also resolves that main reference. The eight supporting sources include the newer ganglia evidence. The original comparison independently cites the university ganglia source. No foundation teaching changed.
+
+Exact-preview visual inspection caught inherited background attribution on the new comparison. Give this visual its own university ganglia reference ID, following the existing scoped-reference pattern. The lesson’s legacy main citation and the foundations excerpt remain unchanged. New browser assertions bind the comparison to that source; print expectations distinguish the visual citation from the lesson reading list. Teaching content and quality fingerprint are unchanged.

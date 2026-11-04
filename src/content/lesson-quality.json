@@ -1117,6 +1117,124 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "myelin-and-glial-cells",
+      "title": "Myelin and glia: identify the cell before the function",
+      "subject": "histology",
+      "topic": "Myelin, nerve fascicles and sensory/autonomic ganglia: cells, branches, relays and evidence",
+      "slug": "myelin-and-glial-cells",
+      "learnerLevel": "Introductory microscopic anatomy with a bounded research-interpretation extension",
+      "objectives": [
+        "Compare Schwann cells with oligodendrocytes.",
+        "Distinguish myelination from axonal transport.",
+        "Use tissue organisation to recognise a peripheral nerve.",
+        "Distinguish a typical spinal sensory neuron’s branches from a two-neuron autonomic efferent chain.",
+        "Locate the preganglionic and postganglionic somata without placing both inside a peripheral ganglion.",
+        "Separate observed cell relationships from complete-cell counts, functional contacts and research outcomes."
+      ],
+      "sources": [
+        {
+          "title": "University of Minnesota: Spinal and autonomic ganglia",
+          "publisherOrAuthor": "University of Minnesota",
+          "url": "https://vanat.ahc.umn.edu/neurLab1/ganglia.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UTHealth: Somatosensory systems, first-order afferents",
+          "publisherOrAuthor": "UTHealth",
+          "url": "https://nba.uth.tmc.edu/neuroscience/m/s2/chapter02.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: Dorsal root ganglion, MH047",
+          "publisherOrAuthor": "Histology Guide",
+          "url": "https://www.histologyguide.org/slideview/MH-047-spinal-cord/06-slide-2.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia University: Peripheral nervous system",
+          "publisherOrAuthor": "Columbia University",
+          "url": "https://histologylab.ctl.columbia.edu/lab05/peripheral-nervous-system/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Minnesota: Peripheral nerves",
+          "publisherOrAuthor": "University of Minnesota",
+          "url": "https://vanat.ahc.umn.edu/neurLab1/nerves.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: Dorsal root ganglion and nerve fibres, MH051",
+          "publisherOrAuthor": "Histology Guide",
+          "url": "https://www.histologyguide.org/slideview/MH-051-dorsal-root-ganglion/06-slide-1.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UTHealth: Propagation of the action potential",
+          "publisherOrAuthor": "UTHealth",
+          "url": "https://nba.uth.tmc.edu/neuroscience/m/s1/chapter03.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Kumari and colleagues: Retrograde control of sympathetic neuron-satellite glia interactions by target-derived NGF signaling (2025)",
+          "publisherOrAuthor": "Kumari and colleagues",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12821072/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "NCBI Neuroscience: Neuroglial cells (2001; general background)",
+          "publisherOrAuthor": "NCBI Neuroscience",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK10869/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original four-row branch/relay comparison inspected at desktop and as stacked cards at 320px with 200% text. Soma locations, captions and text equivalent are readable. Correct-answer feedback wraps without document overflow. No source figure, micrograph or diagnostic image approved.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Typical spinal sensory and autonomic arrangements; no universal rule for every ganglion, cell interaction or glial ratio.",
+        "Fictional complete paths do not determine myelin, speed, total ganglion cell counts or human clinical responses.",
+        "Selected primary teaching passages and mouse-study abstract/results; source figures and full methods not comprehensively reviewed.",
+        "AI-assisted checks, not independent clinical or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "myelin-and-glial-cells-editorial-20261104",
+        "myelin-and-glial-cells-readability-20261104",
+        "myelin-and-glial-cells-visual-20261104",
+        "myelin-and-glial-cells-accessibility-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "neurulation",
+          "membrane-potentials"
+        ],
+        "related": [
+          "neurulation",
+          "membrane-potentials",
+          "autonomic-signalling",
+          "cranial-nerve-organization",
+          "histology-foundations-tissues"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

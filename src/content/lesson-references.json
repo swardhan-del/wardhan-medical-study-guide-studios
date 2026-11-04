@@ -336,9 +336,43 @@
     "checkedAt": "2026-09-09"
   },
   "myelin-and-glial-cells": {
-    "title": "NCBI Neuroscience: Neuroglial Cells",
+    "title": "NCBI Neuroscience: Neuroglial cells (2001; general background)",
     "url": "https://www.ncbi.nlm.nih.gov/books/NBK10869/",
-    "checkedAt": "2026-09-09"
+    "checkedAt": "2026-11-04",
+    "supportingReferences": [
+      {
+        "title": "University of Minnesota: Spinal and autonomic ganglia",
+        "url": "https://vanat.ahc.umn.edu/neurLab1/ganglia.html"
+      },
+      {
+        "title": "UTHealth: Somatosensory systems, first-order afferents",
+        "url": "https://nba.uth.tmc.edu/neuroscience/m/s2/chapter02.html"
+      },
+      {
+        "title": "Histology Guide: Dorsal root ganglion, MH047",
+        "url": "https://www.histologyguide.org/slideview/MH-047-spinal-cord/06-slide-2.html"
+      },
+      {
+        "title": "Columbia University: Peripheral nervous system",
+        "url": "https://histologylab.ctl.columbia.edu/lab05/peripheral-nervous-system/"
+      },
+      {
+        "title": "University of Minnesota: Peripheral nerves",
+        "url": "https://vanat.ahc.umn.edu/neurLab1/nerves.html"
+      },
+      {
+        "title": "Histology Guide: Dorsal root ganglion and nerve fibres, MH051",
+        "url": "https://www.histologyguide.org/slideview/MH-051-dorsal-root-ganglion/06-slide-1.html"
+      },
+      {
+        "title": "UTHealth: Propagation of the action potential",
+        "url": "https://nba.uth.tmc.edu/neuroscience/m/s1/chapter03.html"
+      },
+      {
+        "title": "Kumari and colleagues: Retrograde control of sympathetic neuron-satellite glia interactions by target-derived NGF signaling (2025)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12821072/"
+      }
+    ]
   },
   "brain-and-csf-barriers": {
     "title": "NCBI: Blood–Brain Barrier",
@@ -1491,6 +1525,11 @@
   "vascular-network-model-reference": {
     "title": "Klabunde: Series and parallel vascular networks",
     "url": "https://cvphysiology.com/hemodynamics/h004",
+    "checkedAt": "2026-11-04"
+  },
+  "ganglia-branch-relay-reference": {
+    "title": "University of Minnesota: Spinal and autonomic ganglia",
+    "url": "https://vanat.ahc.umn.edu/neurLab1/ganglia.html",
     "checkedAt": "2026-11-04"
   }
 }

@@ -2292,6 +2292,98 @@
         }
       ],
       "answer": 0
+    },
+    {
+      "id": "studio-ganglia-branch-vs-relay",
+      "topic": "myelin-and-glial-cells",
+      "title": "Count the defined neuron, not the branches",
+      "subject": "histology",
+      "href": "/library/myelin-and-glial-cells#studio-practice",
+      "prompt": "In fictional Model A, P and C are peripheral and central processes of the same neuron S. They meet at J, with a short stem from J to S’s soma. No synapse is specified at J. What follows for this model?",
+      "options": [
+        {
+          "text": "Two neurons and one obligatory neuronal synapse at J",
+          "explanation": "That counts the two named branches as separate neurons. The model explicitly assigns both to S and specifies no synapse at J."
+        },
+        {
+          "text": "One neuron, two named functional branches and no specified neuronal synapse at J",
+          "explanation": "The model defines one continuous cell with two named branches. Branching does not by itself add another neuron or an intercellular synapse."
+        },
+        {
+          "text": "Three neurons, one for each of the three drawn segments",
+          "explanation": "The model explicitly makes all three segments parts of S. Segments within a branching cell are not separate neurons."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-ganglia-soma-location",
+      "topic": "myelin-and-glial-cells",
+      "title": "Locate the two cell bodies",
+      "subject": "histology",
+      "href": "/library/myelin-and-glial-cells#studio-practice",
+      "prompt": "Fictional Model B contains neuron N1 with its soma in the CNS. N1 makes one specified synapse on N2, whose soma is in a peripheral autonomic ganglion. N2 sends an axon to an effector. Counting only this defined path, which statement follows?",
+      "options": [
+        {
+          "text": "Both neuronal somata must be inside the peripheral ganglion",
+          "explanation": "The model places N1’s soma in the CNS. Its axon reaching the ganglion does not move that soma there."
+        },
+        {
+          "text": "The ganglion contains no neuronal soma because the path has an effector",
+          "explanation": "N2’s soma is explicitly in the ganglion; its axon can continue to an effector."
+        },
+        {
+          "text": "The path has two neurons, with one of their somata inside the peripheral ganglion",
+          "explanation": "N1 and N2 are separate neurons, but only N2’s soma is placed in the ganglion. This is not a total count of all cells in an actual ganglion."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-ganglia-section-limit",
+      "topic": "myelin-and-glial-cells",
+      "title": "Separate visible profiles from an inferred circuit",
+      "subject": "histology",
+      "href": "/library/myelin-and-glial-cells#studio-practice",
+      "prompt": "A fictional tissue description reports large neuronal cell-body profiles, several nearby small dark nuclei and pale spaces around some somata. It does not show complete processes or specialised synaptic detail. Which conclusion is justified?",
+      "options": [
+        {
+          "text": "It supports a neuronal cell-body region with neighbouring cells, while exact small-cell identities and the complete circuit remain unresolved",
+          "explanation": "The description supplies somatic profiles and neighbouring nuclei. It does not identify every nucleus, reconstruct a branch point or demonstrate a functional synapse."
+        },
+        {
+          "text": "Every small dark nucleus must belong to one satellite glial cell for each neuron",
+          "explanation": "Position can support an interpretation, but this description does not exclude other cell types or establish a fixed ratio."
+        },
+        {
+          "text": "Every pale space around a soma proves compact myelin",
+          "explanation": "Preparation can leave spaces around cell profiles. A halo alone does not demonstrate a compact multilamellar myelin sheath."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-ganglia-research-scope",
+      "topic": "myelin-and-glial-cells",
+      "title": "Match a research claim to its evidence",
+      "subject": "histology",
+      "href": "/library/myelin-and-glial-cells#studio-practice",
+      "prompt": "The cited Kumari study concerns neuron-satellite-glia relationships in mouse sympathetic ganglia. A student then sees small nuclei near human neuronal somata in an ordinary section. What is the appropriate interpretation?",
+      "options": [
+        {
+          "text": "The nuclei alone reproduce the study’s activity measurements",
+          "explanation": "A structural appearance in another preparation is not an activity recording."
+        },
+        {
+          "text": "Keep the study’s organism, tissue and measured outcomes distinct from the human section’s limited structural evidence",
+          "explanation": "Evidence must match the claim. The research context and the routine section cannot silently be treated as equivalent measurements."
+        },
+        {
+          "text": "The study proves that every peripheral ganglion has the same glial cell ratio",
+          "explanation": "The cited study does not establish that universal ratio, and the described section does not supply a complete count."
+        }
+      ],
+      "answer": 1
     }
   ]
 }

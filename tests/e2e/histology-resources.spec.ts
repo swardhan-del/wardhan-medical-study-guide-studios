@@ -64,7 +64,8 @@ test("histology foundations is reachable through the beginner path, library sear
   const lesson = page.locator(".revision-lesson:visible").filter({ has: page.getByRole("heading", { name: title, exact: true }) });
   await expect(lesson).toContainText("Question 6.");
   await expect(lesson).toContainText("Selective myelin injury");
-  await expect(lesson.getByRole("link", { name: "NCBI Neuroscience: Neuroglial Cells", exact: true })).toBeVisible();
+  await expect(lesson.locator('a[href="https://www.ncbi.nlm.nih.gov/books/NBK10869/"]')).toBeVisible();
+  await expect(lesson.locator('a[href="https://www.ncbi.nlm.nih.gov/books/NBK10869/"]')).toContainText("2001; general background");
 });
 
  test("flagship visual support is labelled, responsive and keyboard accessible", async ({ page }) => {

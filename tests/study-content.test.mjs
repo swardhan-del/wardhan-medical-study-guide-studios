@@ -7,9 +7,11 @@ test("each concept introduction has a public topic reference", () => {
   const lessons = read("../src/content/library-lessons.json").lessons;
   const refs = read("../src/content/lesson-references.json");
   const auxiliary = Object.keys(refs).filter(id => !lessons.some(l => l.id === id));
-  assert.deepEqual(auxiliary, ["vascular-network-model-reference"]);
+  assert.deepEqual(auxiliary, ["vascular-network-model-reference", "ganglia-branch-relay-reference"]);
   assert.equal(refs[auxiliary[0]].url, "https://cvphysiology.com/hemodynamics/h004");
   assert(read("../src/content/lesson-visuals.json").visuals.some(v => v.id === "vascular-network-constraints" && v.referenceIds.includes(auxiliary[0])));
+  assert.equal(refs["ganglia-branch-relay-reference"].url, "https://vanat.ahc.umn.edu/neurLab1/ganglia.html");
+  assert(read("../src/content/lesson-visuals.json").visuals.some(v => v.id === "ganglia-branch-and-relay" && v.referenceIds.includes("ganglia-branch-relay-reference")));
   for (const lesson of lessons) { assert(refs[lesson.id]?.title.length > 10); assert.equal(new URL(refs[lesson.id].url).protocol, "https:"); }
   assert.match(refs["nitrogen-metabolism"].url, /nitrogenous-wastes/);
   assert.doesNotMatch(refs["nitrogen-metabolism"].url, /NBK92001/);
