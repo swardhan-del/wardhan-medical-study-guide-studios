@@ -888,6 +888,120 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "ocular-motor-nerves",
+      "title": "Ocular motor nerves and lesion localization",
+      "subject": "anatomy",
+      "topic": "Ocular motor targets, branches, crossing and structural versus physiological evidence",
+      "slug": "ocular-motor-nerves",
+      "learnerLevel": "Introductory medical anatomy with research interpretation extension",
+      "objectives": [
+        "Describe the location and organization of ocular motor nerves and lesion localization.",
+        "Answer with anatomical reasons: Which nerve supplies lateral rectus?",
+        "Draw an eye with an outward arrow labelled VI-lateral rectus, then list the IV muscle and the remaining III targets.",
+        "Distinguish counts of muscle targets, nerve bundles and individual axons.",
+        "Explain why anatomical distribution alone does not measure independent activation.",
+        "Keep separate publications and independent datasets distinct when interpreting evidence."
+      ],
+      "sources": [
+        {
+          "title": "UTHealth Neuroanatomy Online: Cranial nerve IV",
+          "publisherOrAuthor": "UTHealth Neuroanatomy Online",
+          "url": "https://nba.uth.tmc.edu/neuroanatomy/L9/Lab09p28_index.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UTHealth Neuroanatomy Online: Cranial nerve III",
+          "publisherOrAuthor": "UTHealth Neuroanatomy Online",
+          "url": "https://nba.uth.tmc.edu/neuroanatomy/L9/Lab09p30_index.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UTHealth Neuroanatomy Online: Cranial nerves of the pons",
+          "publisherOrAuthor": "UTHealth Neuroanatomy Online",
+          "url": "https://nba.uth.tmc.edu/neuroanatomy/l4/Lab04p21_index.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UTHealth Neuroanatomy Online: Visual pathways and ocular motor nerve emergence",
+          "publisherOrAuthor": "UTHealth Neuroanatomy Online",
+          "url": "https://nba.uth.tmc.edu/neuroanatomy/L8/Lab08p10_index.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Texas Tech University Health Sciences Center: Nerves of the head and neck",
+          "publisherOrAuthor": "Texas Tech University Health Sciences Center",
+          "url": "https://anatomy.ttuhscep.edu/anatomytables/nerves_head_neck.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Le et al. (2015): Compartmental Innervation of the Superior Oblique Muscle in Mammals",
+          "publisherOrAuthor": "Le et al. (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26426404/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Adade and Das (2023): Investigation of Selective Innervation of Extraocular Muscle Compartments",
+          "publisherOrAuthor": "Adade and Das (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36820678/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Adade and Das (2026): Neural Innervation of Cyclovertical Extraocular Muscles During Asymmetric Vertical Vergence",
+          "publisherOrAuthor": "Adade and Das (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41954329/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "OpenStax: Peripheral nervous system (general further reading)",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Original fictional T/A/B/M topology and named units are explicit in readable text; no specimen, atlas or source figure is reproduced or approved. Existing draw-from-memory task preserved.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Named selected-specimen and two-NHP task contexts; no universal geometry, independent activation or clinical prediction.",
+        "Primary abstracts and targeted2026 Methods only; full papers, figures and commentary dispute not comprehensively reviewed.",
+        "AI-assisted review; no independent medical or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "ocular-motor-nerves-editorial-20261104",
+        "ocular-motor-nerves-readability-20261104",
+        "ocular-motor-nerves-accessibility-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "cranial-nerve-organization"
+        ],
+        "related": [
+          "cranial-nerve-organization",
+          "trigeminal-pathways",
+          "orbit-anatomy",
+          "venous-sinuses"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
