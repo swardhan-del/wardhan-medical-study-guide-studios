@@ -1542,6 +1542,47 @@
       "referenceIds": [
         "ganglia-branch-relay-reference"
       ]
+    },
+    {
+      "id": "serine-reaction-roles",
+      "lessonIds": [
+        "serine-one-carbon-donor-carrier-cofactor"
+      ],
+      "kind": "comparison",
+      "title": "A reaction role and a measurement are different claims",
+      "headers": [
+        "Object in the specified account",
+        "Role or count supplied",
+        "What is not established"
+      ],
+      "rows": [
+        [
+          "Serine in the forward equation",
+          "Substrate-derived carbon is split between glycine and a folate-bound unit.",
+          "The equation is not a measured tissue net flux."
+        ],
+        [
+          "Tetrahydrofolate in the forward equation",
+          "Carrier accepts the named transferred unit into the specified folate product.",
+          "The entire carrier molecule does not contain only one carbon."
+        ],
+        [
+          "PLP in the enzyme context",
+          "Catalytic cofactor; not a net carbon feedstock in the stated equation.",
+          "Its presence does not make every reaction an amino-group transfer."
+        ],
+        [
+          "Fictional 100 forward/70 reverse ledger",
+          "170 defined events, 30 net forward changes.",
+          "No reaction rate, concentration or clinical requirement is supplied."
+        ]
+      ],
+      "caption": "Original reaction-role comparison with invented event bookkeeping. The count row defines sufficient reactants and no side reactions. Not a copied pathway diagram, molecular structure, measured dataset or clinical decision aid.",
+      "observe": "Explain why a carrier-bound carbon unit, a catalytic cofactor and a net event count cannot be substituted for one another.",
+      "alt": "Serine supplies substrate-derived carbon in the specified direction; tetrahydrofolate accepts the transferred unit, and PLP supports catalysis. The invented 100-forward/70-reverse ledger has 170 total events and 30 net forward changes. These labels and counts do not measure physiological flux or nutritional need.",
+      "referenceIds": [
+        "serine-reaction-role-reference"
+      ]
     }
   ]
 }

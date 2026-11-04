@@ -1235,6 +1235,92 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "serine-one-carbon-donor-carrier-cofactor",
+      "title": "Serine and glycine: donor, carrier and cofactor",
+      "subject": "biochemistry",
+      "slug": "serine-one-carbon-donor-carrier-cofactor",
+      "topic": "Specified SHMT reaction roles and bounded gross/net event bookkeeping",
+      "learnerLevel": "Early medical sciences and introductory biochemical reasoning",
+      "objectives": [
+        "Assign the donor, folate carrier and catalytic-cofactor roles in the specified SHMT reaction.",
+        "Balance substrate-derived carbon without counting the carrier backbone as a one-carbon molecule.",
+        "Distinguish a reaction equation and fictional event count from physiological net flux.",
+        "Distinguish gross forward/reverse events from their net stoichiometric change.",
+        "Compare a specified carbon transfer with an amino-group transfer without assuming urea production.",
+        "Keep the studied organism, ligand and measurement distinct from a human physiological claim."
+      ],
+      "sources": [
+        {
+          "title": "IUBMB: Glycine hydroxymethyltransferase, EC 2.1.2.1 (SHMT)",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/1/2/1.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NCBI PubChem: L-serine, CID 5951",
+          "publisherOrAuthor": "NCBI PubChem",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5951",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NCBI PubChem: Glycine, CID 750",
+          "publisherOrAuthor": "NCBI PubChem",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/750",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "IUBMB: Alanine transaminase, EC 2.6.1.2",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/6/1/2.html",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Szebenyi and colleagues (2000): Ligand-bound murine SHMT complex — selected abstract",
+          "publisherOrAuthor": "Szebenyi and colleagues",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11063567/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original four-row semantic comparison inspected on desktop and mobile, including 320px at 200% text; readable text alternative and keyboard disclosure checked. No source molecular structure or image reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Specified reaction and invented isolated event ledgers; no measured tissue flux, concentrations, nutritional status or supplement requirement.",
+        "Research example bounded to a ligand-bound murine complex described in the original abstract; full paper/figures/methods not comprehensively reviewed.",
+        "AI-assisted editorial/source checking, not independent biochemical, clinical or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "serine-one-carbon-donor-carrier-cofactor-editorial-20261105",
+        "serine-one-carbon-donor-carrier-cofactor-readability-20261105",
+        "serine-one-carbon-donor-carrier-cofactor-visual-20261105",
+        "serine-one-carbon-donor-carrier-cofactor-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "biochemistry-enzyme-foundations"
+        ],
+        "related": [
+          "nitrogen-metabolism",
+          "protein-structure",
+          "biochemistry-enzyme-foundations"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

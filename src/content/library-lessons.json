@@ -9365,6 +9365,149 @@
       "minutes": 20
     },
     {
+      "id": "serine-one-carbon-donor-carrier-cofactor",
+      "subject": "biochemistry",
+      "title": "Serine and glycine: donor, carrier and cofactor",
+      "summary": "Trace a specified carbon transfer, distinguish the folate carrier from catalytic PLP, and separate gross reaction events from net change.",
+      "updatedAt": "2026-11-04",
+      "minutes": 20,
+      "tags": [
+        "biochemistry",
+        "Metabolic pathways",
+        "amino acids",
+        "serine",
+        "glycine",
+        "SHMT",
+        "folate",
+        "PLP",
+        "one-carbon",
+        "stoichiometry"
+      ],
+      "source": "original-serine-reaction-roles",
+      "section": "Amino-acid carbon skeletons and one-carbon metabolism; original reaction-role and event-ledger introduction",
+      "objectives": [
+        "Assign the donor, folate carrier and catalytic-cofactor roles in the specified SHMT reaction.",
+        "Balance substrate-derived carbon without counting the carrier backbone as a one-carbon molecule.",
+        "Distinguish a reaction equation and fictional event count from physiological net flux.",
+        "Distinguish gross forward/reverse events from their net stoichiometric change.",
+        "Compare a specified carbon transfer with an amino-group transfer without assuming urea production.",
+        "Keep the studied organism, ligand and measurement distinct from a human physiological claim."
+      ],
+      "prerequisites": [
+        "biochemistry-enzyme-foundations"
+      ],
+      "steps": [
+        {
+          "title": "Read one specified reversible reaction",
+          "body": "Serine hydroxymethyltransferase, commonly abbreviated SHMT, catalyses the reversible relationship L-serine + tetrahydrofolate ⇌ glycine + 5,10-methylenetetrahydrofolate + water. The enzyme nomenclature entry writes the same reaction in the reverse direction. Read the arrow as reversibility, not proof of a preferred net direction in every tissue. [1] THF is used below as shorthand for tetrahydrofolate; the named methylene product is a specific folate form."
+        },
+        {
+          "title": "Assign roles without treating the labels as synonyms",
+          "body": "In the written serine-to-glycine direction, the serine carbon skeleton supplies a one-carbon unit to the folate product. Tetrahydrofolate is the accepting carrier in this reaction. SHMT uses pyridoxal phosphate (PLP) as a catalytic cofactor; PLP participates in catalysis rather than serving as the net carbon feedstock in the equation. [1, 2] Folate derivatives and PLP can both be discussed as coenzyme-related molecules, but their roles here are different. A cofactor label alone does not tell you that the reaction is an amino-group transfer."
+        },
+        {
+          "title": "Use a narrow carbon-count map",
+          "body": "Serine has three carbon atoms and glycine two. For bookkeeping of the substrate-derived carbon, write 3 = 2 + 1: two remain with glycine and one is transferred into the folate-bound unit. This does not mean the folate molecule has only one carbon, nor does it propose an unbound one-carbon intermediate. The carrier’s pre-existing carbon backbone is outside this small count map. The map is a stoichiometric explanation, not a complete catalytic mechanism."
+        },
+        {
+          "title": "Work an explicitly fictional event count",
+          "body": "Suppose an isolated accounting model contains 100 net forward reaction events, with sufficient reactants and no reverse or side reactions. It consumes 100 serine molecules, produces 100 glycine molecules and adds 100 transferred one-carbon units to folate products. Substrate-derived carbon balances as 300 = 200 + 100 atoms. This does not imply net consumption of 100 PLP molecules, nor predict metabolite concentrations or whole-cell flux. All counts are invented to illustrate the equation."
+        },
+        {
+          "title": "Separate gross events from net change",
+          "body": "Extend the fictional accounting model: define 100 forward and 70 reverse events of the same equation, with sufficient reactants for the stated events and no side reactions. There are 170 counted reaction events but 30 net forward events. Net serine use and glycine production are 30 molecules each; 30 units are transferred into the net folate product. For substrate-derived carbon, 90 = 60 + 30. This is an invented event ledger, not a measured rate, concentration, cell pathway or energy calculation. Event order, enzyme abundance and compartment volumes have not been supplied."
+        },
+        {
+          "title": "Read the stated products before calling a process nitrogen disposal",
+          "body": "The specified serine/folate equation produces glycine and a named folate product, with water in its written forward form. Free ammonia and urea are not products in that net equation. Its carbon-transfer role therefore must not be relabelled as urea production just because serine is an amino acid. Conversely, the existing alanine example transfers an amino group without directly producing urea. Compare the equations and the stated transferred group before deciding which downstream problem remains. This net-equation comparison does not reconstruct transient catalytic intermediates."
+        },
+        {
+          "title": "Keep a research ligand distinct from the reaction product",
+          "body": "The cited mouse cSHMT study describes a ligand-bound analogue of an inactive complex containing 5-formyltetrahydrofolate. That is not the 5,10-methylenetetrahydrofolate named in the reaction equation. Keep the molecule and experimental state attached to the claim; a bound structure is not a human tissue-flux measurement."
+        },
+        {
+          "title": "Connect carbon transfer with the enzyme and nitrogen lessons",
+          "body": "Use the enzyme-foundations lesson to review catalysis and cofactors, then contrast this carbon transfer with the alanine amino-group transfer in the amino-acid nitrogen lesson. A shared PLP context does not make the two net reactions interchangeable. The named folate product also does not stand for every folate form or every one-carbon reaction. Keep the reaction and molecular form explicit. This exercise does not establish nutritional status or a supplement requirement."
+        },
+        {
+          "title": "Match the conclusion to the kind of evidence",
+          "body": "An enzyme-nomenclature entry defines a reaction and cofactor context. A chosen toy event ledger supplies arithmetic under its own assumptions. A ligand-bound mouse-enzyme structure concerns a particular experimental complex. These are useful but different kinds of evidence. None alone gives net flux, metabolite concentration, nutritional status or an individual supplement requirement. Use the reaction to answer a reaction question, and require measurements of the relevant system for a physiological or clinical claim."
+        }
+      ],
+      "question": {
+        "prompt": "For the written SHMT direction, L-serine + tetrahydrofolate → glycine + 5,10-methylenetetrahydrofolate + water, which role assignment fits?",
+        "options": [
+          {
+            "text": "Serine supplies the transferred carbon unit; folate accepts it; PLP supports enzyme catalysis.",
+            "reason": "The names describe different roles in this reaction. PLP is not the net substrate carbon donor in the balanced equation."
+          },
+          {
+            "text": "PLP supplies all carbon atoms in the folate-bound unit and must be consumed once per product molecule.",
+            "reason": "That is not the net carbon accounting shown by this reaction; a catalytic cofactor is not automatically a stoichiometric feedstock."
+          },
+          {
+            "text": "The folate product contains only one carbon atom in total.",
+            "reason": "“One-carbon unit” refers to the transferred group, not the entire carrier molecule."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "How can a carbon donor, a carrier and a catalytic cofactor participate in the same reaction while having different roles?",
+        "answer": "In the specified serine-to-glycine direction, substrate-derived carbon is transferred onto the folate carrier. PLP supports enzyme catalysis. These role labels are not interchangeable, and the equation alone does not measure tissue net flux."
+      },
+      "workedExample": {
+        "title": "Two counts, two meanings",
+        "prompt": "An invented isolated ledger specifies 80 forward and 30 reverse SHMT reaction events, sufficient reactants and no side reactions. Find the gross event count, net forward change and net substrate-derived carbon balance. No time or volume is given.",
+        "solution": [
+          "The total number of defined reaction events is 80 + 30 = 110.",
+          "The opposing changes leave 80 − 30 = 50 net forward events.",
+          "In this model, net serine use and glycine production are 50 molecules each, with 50 units transferred into the net folate product.",
+          "The substrate-derived carbon balances as 150 = 100 + 50 atoms; the pre-existing carrier backbone is outside this small map.",
+          "The ledger supplies neither a reaction rate nor concentrations, a tissue measurement or a nutritional requirement."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "What does 3 = 2 + 1 count here?",
+          "answer": "Only the serine-derived carbon: two carbons remain with glycine and one is transferred into the folate-bound unit. It excludes the carrier backbone and is not a complete catalytic mechanism."
+        },
+        {
+          "prompt": "Why is PLP not counted as 100 net carbon-feedstock molecules in the 100-event model?",
+          "answer": "It is identified as a catalytic cofactor, not a carbon substrate with a net coefficient in the specified reaction. The equation supplies no such net carbon-consumption count."
+        },
+        {
+          "prompt": "How do 100 forward and 70 reverse events differ from 100 net forward events?",
+          "answer": "The first ledger has 170 total events and 30 net forward changes; the second defines 100 net forward changes. Their net product counts differ."
+        },
+        {
+          "prompt": "Why name the folate form in both a reaction and a structural study?",
+          "answer": "The equation product and the study ligand are different named forms in different contexts. A common folate backbone does not make their roles interchangeable."
+        },
+        {
+          "prompt": "Has urea been produced merely because an amino acid appears in the equation?",
+          "answer": "No. Read the stated net products and the separate nitrogen-disposal process. Amino-acid conversion does not itself establish urea synthesis or excretion."
+        },
+        {
+          "prompt": "Can the toy ledger identify a nutritional deficiency or tissue net flux?",
+          "answer": "No. It supplies invented reaction-event counts, not measurements of the relevant organism, tissue, pools or clinical state."
+        }
+      ],
+      "summaryChecklist": [
+        "Write the specified reversible reaction and identify the chosen teaching direction.",
+        "Assign carbon-donor, folate-carrier and PLP catalytic roles without merging the labels.",
+        "Balance only the stated substrate-derived carbon and keep the carrier backbone outside that small map.",
+        "Separate gross forward/reverse events from their net difference.",
+        "Keep the reaction product and the cited mouse-study ligand distinct.",
+        "Explain why a reaction equation or toy ledger is not a measurement of flux, excretion or nutritional need."
+      ],
+      "related": [
+        "nitrogen-metabolism",
+        "protein-structure",
+        "biochemistry-enzyme-foundations"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

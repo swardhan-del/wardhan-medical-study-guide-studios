@@ -1531,5 +1531,33 @@
     "title": "University of Minnesota: Spinal and autonomic ganglia",
     "url": "https://vanat.ahc.umn.edu/neurLab1/ganglia.html",
     "checkedAt": "2026-11-04"
+  },
+  "serine-one-carbon-donor-carrier-cofactor": {
+    "title": "IUBMB: Glycine hydroxymethyltransferase, EC 2.1.2.1 (SHMT)",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/1/2/1.html",
+    "checkedAt": "2026-11-04",
+    "supportingReferences": [
+      {
+        "title": "NCBI PubChem: L-serine, CID 5951",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5951"
+      },
+      {
+        "title": "NCBI PubChem: Glycine, CID 750",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/750"
+      },
+      {
+        "title": "IUBMB: Alanine transaminase, EC 2.6.1.2",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/6/1/2.html"
+      },
+      {
+        "title": "Szebenyi and colleagues (2000): Ligand-bound murine SHMT complex — selected abstract",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11063567/"
+      }
+    ]
+  },
+  "serine-reaction-role-reference": {
+    "title": "IUBMB: Glycine hydroxymethyltransferase, EC 2.1.2.1 (SHMT)",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/1/2/1.html",
+    "checkedAt": "2026-11-04"
   }
 }
