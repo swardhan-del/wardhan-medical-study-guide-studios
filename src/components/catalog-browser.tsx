@@ -104,7 +104,7 @@ export function CatalogBrowser({
           >
             <option value="">All subjects</option>
             <optgroup label="Subjects">{subjectInterests.map(item => <option key={item.id} value={item.id === "genetics" ? "genetics-all" : item.id}>{item.title}</option>)}</optgroup>
-            <optgroup label="No public lessons yet">{taxonomy.subjects.filter(item => item.learningSubject === null).map(item => <option key={item.id} value={item.id}>{item.title} — no lessons yet</option>)}</optgroup>
+            <optgroup label="Additional subjects">{taxonomy.subjects.filter(item => item.learningSubject === null).map(item => <option key={item.id} value={item.id}>{item.title}</option>)}</optgroup>
             <optgroup label="Course subsets">{taxonomy.subjects.filter(item => ["histology-i", "histology-ii", "genetics", "immunology"].includes(item.id)).map(item => <option key={item.id} value={item.id}>{item.title} subset</option>)}</optgroup>
           </select>
         </label>
