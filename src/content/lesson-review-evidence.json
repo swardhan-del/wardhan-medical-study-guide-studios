@@ -484,6 +484,50 @@
       "independent": false,
       "record": "docs/reviews/protein-sorting-20261104.md",
       "contentSha256": "84ef443ac9462d2138d23dcee57b0f1b9f835528f6ac8f0864d3bcd8a776f73f"
+    },
+    {
+      "id": "synonymous-variant-sequence-readout-scope-editorial-20261104",
+      "lessonId": "synonymous-variant-sequence-readout-scope",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source/editorial and exact sequence review",
+      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/genetics-sequence-readouts-20261104.md",
+      "contentSha256": "1d8d296b0fada2956d89759fcd7f635344c25762a367546c009e85bb4ac72261"
+    },
+    {
+      "id": "synonymous-variant-sequence-readout-scope-readability-20261104",
+      "lessonId": "synonymous-variant-sequence-readout-scope",
+      "scope": "readability",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source/editorial and exact sequence review",
+      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/genetics-sequence-readouts-20261104.md",
+      "contentSha256": "1d8d296b0fada2956d89759fcd7f635344c25762a367546c009e85bb4ac72261"
+    },
+    {
+      "id": "synonymous-variant-sequence-readout-scope-accessibility-20261104",
+      "lessonId": "synonymous-variant-sequence-readout-scope",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted focused browser and explained-practice review",
+      "qualification": "Automated assistant with browser evidence; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/genetics-sequence-readouts-20261104.md",
+      "contentSha256": "1d8d296b0fada2956d89759fcd7f635344c25762a367546c009e85bb4ac72261"
+    },
+    {
+      "id": "synonymous-variant-sequence-readout-scope-assessment-20261104",
+      "lessonId": "synonymous-variant-sequence-readout-scope",
+      "scope": "assessment",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted focused browser and explained-practice review",
+      "qualification": "Automated assistant with browser evidence; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/genetics-sequence-readouts-20261104.md",
+      "contentSha256": "1d8d296b0fada2956d89759fcd7f635344c25762a367546c009e85bb4ac72261"
     }
   ]
 }

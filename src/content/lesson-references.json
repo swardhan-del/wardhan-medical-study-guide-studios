@@ -1381,5 +1381,24 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/2945825/"
       }
     ]
+  },
+  "synonymous-variant-sequence-readout-scope": {
+    "title": "Presnyak et al. (2015), codon optimality and mRNA stability — primary study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25768907/",
+    "checkedAt": "2026-11-04",
+    "supportingReferences": [
+      {
+        "title": "Duan et al. (2003), selected synonymous DRD2 changes — primary study",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12554675/"
+      },
+      {
+        "title": "HGVS Nomenclature: reference-sequence requirements",
+        "url": "https://hgvs-nomenclature.org/stable/background/refseq/"
+      },
+      {
+        "title": "NCBI: The Genetic Codes, standard code table 1",
+        "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi"
+      }
+    ]
   }
 }
