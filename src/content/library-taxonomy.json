@@ -2906,6 +2906,28 @@
       "resources": [
         "auditory-frequency-level-coding"
       ]
+    },
+    {
+      "id": "topic-peroxisome-pts1-pex5-cargo",
+      "title": "Peroxisomal import: cargo signal and receptor",
+      "description": "Separate the PTS1 signal, its PEX5 receptor and their different destinations; explain why a molecular label alone is not a complete mechanism.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-cell-organization",
+      "kind": "topic",
+      "resources": [
+        "peroxisome-pts1-pex5-cargo"
+      ]
+    },
+    {
+      "id": "topic-lysosomal-m6p-tag-receptor-recycling",
+      "title": "Lysosomal enzyme sorting: tag, receptor and destination",
+      "description": "Trace a selected hydrolase from ER/Golgi processing to receptor-dependent sorting, then separate cargo delivery from receptor reuse.",
+      "subject": "cell-biology",
+      "parentId": "cell-biology-cell-organization",
+      "kind": "topic",
+      "resources": [
+        "lysosomal-m6p-tag-receptor-recycling"
+      ]
     }
   ]
 }

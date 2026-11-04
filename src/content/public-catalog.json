@@ -3852,6 +3852,26 @@
     },
     {
       "status": "public",
+      "updatedAt": "2026-11-04",
+      "bytes": 0,
+      "id": "lysosomal-m6p-tag-receptor-recycling",
+      "title": "Lysosomal enzyme sorting: tag, receptor and destination",
+      "subject": "cell-biology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Trace a selected hydrolase from ER/Golgi processing to receptor-dependent sorting, then separate cargo delivery from receptor reuse.",
+      "tags": [
+        "Cell organization",
+        "organelles",
+        "Golgi",
+        "lysosomes",
+        "mannose-6-phosphate",
+        "receptor recycling"
+      ],
+      "minutes": 12
+    },
+    {
+      "status": "public",
       "updatedAt": "2026-09-06",
       "bytes": 0,
       "id": "pcr",
@@ -3869,6 +3889,26 @@
         "DNA"
       ],
       "minutes": 5
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-04",
+      "bytes": 0,
+      "id": "peroxisome-pts1-pex5-cargo",
+      "title": "Peroxisomal import: cargo signal and receptor",
+      "subject": "cell-biology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Separate the PTS1 signal, its PEX5 receptor and their different destinations; explain why a molecular label alone is not a complete mechanism.",
+      "tags": [
+        "Cell organization",
+        "organelles",
+        "protein targeting",
+        "PTS1",
+        "PEX5",
+        "peroxisomes"
+      ],
+      "minutes": 12
     },
     {
       "status": "public",

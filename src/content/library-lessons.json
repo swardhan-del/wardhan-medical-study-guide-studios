@@ -8732,6 +8732,227 @@
       }
     },
     {
+      "subject": "cell-biology",
+      "source": "original-peroxisome-pts1-pex5-cargo",
+      "section": "Selected compartmental-targeting mechanisms: original source-checked explanation",
+      "updatedAt": "2026-11-04",
+      "minutes": 12,
+      "id": "peroxisome-pts1-pex5-cargo",
+      "title": "Peroxisomal import: cargo signal and receptor",
+      "summary": "Separate the PTS1 signal, its PEX5 receptor and their different destinations; explain why a molecular label alone is not a complete mechanism.",
+      "tags": [
+        "Cell organization",
+        "organelles",
+        "protein targeting",
+        "PTS1",
+        "PEX5",
+        "peroxisomes"
+      ],
+      "steps": [
+        {
+          "title": "Identify two different molecular roles",
+          "body": "A targeting signal belongs to eligible cargo; a receptor is a separate molecule that recognizes it. For the selected PTS1 pathway, the signal lies at the cargo’s C terminus and PEX5 is the receptor. Draw two labelled objects before drawing an arrow. Otherwise, it is easy to turn the signal into a transporter or to send the receptor to the cargo’s final destination."
+        },
+        {
+          "title": "Use the classic targeting result within its tested scope",
+          "body": "In a classic reporter experiment, adding terminal Ser–Lys–Leu redirected a reporter toward peroxisomes. This supports a targeting role for the tested terminal sequence. It does not mean that finding those three letters anywhere in a sequence establishes import. Position, the eligible cargo and cellular context still matter."
+        },
+        {
+          "title": "Place recognition on the cytosolic side",
+          "body": "PEX5 can bind newly synthesized eligible cargo in the cytosol and engage peroxisomal import machinery. The cargo’s destination is the peroxisomal matrix. Do not route this selected cytosolic recognition event through the ER and Golgi simply because the neighbouring lysosomal lesson uses those compartments."
+        },
+        {
+          "title": "Follow receptor return separately from cargo delivery",
+          "body": "PEX5 can return to the cytosol for reuse after its participation at the import machinery. An arrow labelled “receptor return” is therefore not an arrow showing cargo leaving the matrix. The shared word “transport” does not make all moving molecules identical."
+        },
+        {
+          "title": "Interpret ubiquitination with its context",
+          "body": "A 2024 rat-liver-based cell-free study examined reversible cysteine ubiquitination of PEX5 and its extraction from the peroxisomal membrane. This is a specific example in which a ubiquitin modification participates in receptor recycling. A ubiquitin label alone is insufficient to conclude that its carrier is being destroyed by the proteasome."
+        },
+        {
+          "title": "State the limits of this route map",
+          "body": "This lesson follows selected PTS1 cargo and PEX5. It does not describe every matrix protein, membrane protein or import route. A proposed address is not the same observation as delivery, and location at one time is not a measurement of transport rate. Ask which molecule was tracked, in which compartment, and over which interval."
+        }
+      ],
+      "objectives": [
+        "Distinguish a cargo signal from a separate receptor.",
+        "Place selected PTS1 recognition in the cytosol.",
+        "Trace cargo delivery and receptor return as different paths.",
+        "Limit conclusions from a targeting motif or one localization snapshot."
+      ],
+      "prerequisites": [
+        "translation",
+        "protein-trafficking"
+      ],
+      "workedExample": {
+        "title": "Two arrows after a recognition event",
+        "prompt": "In a fictional route sketch, cargo C bears a terminal targeting feature S and binds receptor R. After delivery, R is found again in the cytosol. Must C have returned with R?",
+        "solution": [
+          "Keep C, S and R as distinct labels: S is a feature on C, whereas R is a separate molecule.",
+          "The return observation concerns R. It does not by itself locate C.",
+          "In the selected PTS1 map, cargo delivery and PEX5 return are different parts of a cycle. Establish the cargo location with its own evidence."
+        ]
+      },
+      "question": {
+        "prompt": "Which statement correctly separates the roles in the selected PTS1 route?",
+        "options": [
+          {
+            "text": "PTS1 is a cargo signal and PEX5 is a separate receptor.",
+            "reason": "Correct: the targeting feature belongs to eligible cargo; the receptor recognizes it."
+          },
+          {
+            "text": "PEX5 is the terminal three-amino-acid signal on cargo.",
+            "reason": "This confuses the recognizing protein with the feature it recognizes."
+          },
+          {
+            "text": "Receptor return proves that delivered cargo returned too.",
+            "reason": "The observation concerns the receptor, so cargo location requires separate evidence."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain the selected PTS1 route using the words signal, receptor, cytosol, matrix and return.",
+        "answer": "Eligible cargo carries a terminal signal recognized by the separate PEX5 receptor in the cytosol. The route delivers cargo toward the peroxisomal matrix and permits receptor return for reuse; the cargo and receptor arrows must be tracked separately."
+      },
+      "related": [
+        "protein-trafficking",
+        "er-protein-quality-control",
+        "lysosomal-m6p-tag-receptor-recycling"
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Why must a targeting feature have a specified molecular location?",
+          "answer": "The terminal location is part of the proposed address. A similar sequence elsewhere does not reproduce the tested reporter arrangement, and even a terminal motif needs an eligible cargo and cellular context."
+        },
+        {
+          "prompt": "Why does receptor recycling not establish cargo recycling?",
+          "answer": "A return observation tracks the receptor. Cargo and receptor are separate molecules, so the cargo requires its own localization evidence."
+        },
+        {
+          "prompt": "Why is ubiquitination not a complete explanation of a protein’s fate?",
+          "answer": "The carrier, modification and experimental context matter. The selected PEX5 example concerns receptor extraction and reuse; a ubiquitin label alone does not establish proteasomal destruction."
+        }
+      ],
+      "summaryChecklist": [
+        "Name the eligible cargo and its signal separately.",
+        "Place recognition in the cytosol.",
+        "Keep cargo and receptor destinations distinct.",
+        "Name the experimental context before generalizing a modification."
+      ]
+    },
+    {
+      "subject": "cell-biology",
+      "source": "original-lysosomal-m6p-tag-receptor-recycling",
+      "section": "Selected compartmental-targeting mechanisms: original source-checked explanation",
+      "updatedAt": "2026-11-04",
+      "minutes": 12,
+      "id": "lysosomal-m6p-tag-receptor-recycling",
+      "title": "Lysosomal enzyme sorting: tag, receptor and destination",
+      "summary": "Trace a selected hydrolase from ER/Golgi processing to receptor-dependent sorting, then separate cargo delivery from receptor reuse.",
+      "tags": [
+        "Cell organization",
+        "organelles",
+        "Golgi",
+        "lysosomes",
+        "mannose-6-phosphate",
+        "receptor recycling"
+      ],
+      "steps": [
+        {
+          "title": "Name the cargo before tracing the route",
+          "body": "The selected cargo is a soluble lysosomal hydrolase travelling through the secretory pathway. Its ER/Golgi processing places it on the lumen-facing side of the route. This is a different starting arrangement from a cytosolic PTS1 cargo meeting PEX5. A common final word such as “organelle” does not establish a common itinerary."
+        },
+        {
+          "title": "Distinguish a glycan tag from a peptide signal",
+          "body": "Mannose-6-phosphate, or M6P, is a modification on suitable carbohydrate chains of eligible hydrolase cargo. It is not the amino-acid sequence Ser–Lys–Leu. The M6P receptor is another protein, not the phosphate group and not the hydrolase itself."
+        },
+        {
+          "title": "Separate tag formation from tag recognition",
+          "body": "The M6P marker is formed through distinct enzymatic steps. GlcNAc-1-phosphotransferase initiates a modification on the cargo glycan, and an uncovering enzyme removes the outer sugar to expose the marker. These processing steps are different from a receptor subsequently recognizing suitable tagged cargo in the trans-Golgi network."
+        },
+        {
+          "title": "Follow the cargo toward endosomes",
+          "body": "M6P receptors help sort eligible cargo from the trans-Golgi network toward endosomes. A receptor-binding event is one stage of delivery, not proof that every downstream step has succeeded. This selected route does not account for every lysosomal protein."
+        },
+        {
+          "title": "Keep separation and recycling as different events",
+          "body": "Endosomal conditions can favour separation of suitable hydrolase cargo from its receptor. The receptor can recycle toward the Golgi while cargo continues along its delivery route. A classic cultured-hepatocyte study used compartment markers and receptor redistribution to investigate this cycle; its experimental timing is not a timetable for all cells."
+        },
+        {
+          "title": "Treat a static distribution as a limited readout",
+          "body": "More receptor in one compartment could reflect more arrival, less departure, changed production or changed loss. A snapshot does not uniquely identify those contributions. Track cargo and receptor separately and specify the interval before interpreting a change as faster delivery."
+        }
+      ],
+      "objectives": [
+        "Distinguish the hydrolase cargo, its glycan marker and its receptor.",
+        "Separate marker formation from recognition.",
+        "Trace cargo and receptor after their separation.",
+        "Explain why a compartment amount does not uniquely measure traffic."
+      ],
+      "prerequisites": [
+        "protein-trafficking",
+        "er-protein-quality-control"
+      ],
+      "workedExample": {
+        "title": "The same compartment amount can hide different traffic",
+        "prompt": "In a fictional one-minute model, a compartment begins with 10 receptor units. Case A has 3 units arrive and 3 leave; case B has 1 arrive and 1 leave. Assume no other production or loss. Can the final amount distinguish these cases?",
+        "solution": [
+          "Use final amount = starting amount + arrivals − departures.",
+          "Case A ends at 10 + 3 − 3 = 10; case B ends at 10 + 1 − 1 = 10.",
+          "The equal amount hides different stipulated traffic. These are invented units, not measured cellular kinetics; a single amount cannot select the case."
+        ]
+      },
+      "question": {
+        "prompt": "After a selected hydrolase separates from its M6P receptor in an endosome, which statement follows the simplified route correctly?",
+        "options": [
+          {
+            "text": "The receptor can return toward the Golgi separately from cargo.",
+            "reason": "Correct: recycling concerns the recognizing protein; cargo can continue along its delivery route."
+          },
+          {
+            "text": "The receptor has become the carbohydrate tag on the hydrolase.",
+            "reason": "The tag is a modification of cargo glycans, whereas the receptor is a separate protein."
+          },
+          {
+            "text": "An unchanged compartment amount proves that no receptors moved.",
+            "reason": "Equal arrival and departure can preserve an amount while traffic continues."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain the difference between tag formation, receptor recognition and receptor reuse.",
+        "answer": "Enzymatic processing generates the M6P marker on eligible cargo glycans. A separate receptor recognizes suitable tagged cargo for sorting. After cargo separation, receptor return is a distinct event and does not require the cargo to retrace that path."
+      },
+      "related": [
+        "protein-trafficking",
+        "er-protein-quality-control",
+        "peroxisome-pts1-pex5-cargo"
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Why is M6P not interchangeable with a peptide targeting sequence?",
+          "answer": "M6P is a carbohydrate modification on eligible cargo glycans. The selected PTS1 example is a terminal peptide feature; they are different molecular features recognized in different compartmental routes."
+        },
+        {
+          "prompt": "Which event is performed by the tagging enzymes, and which by the receptor?",
+          "answer": "Tagging enzymes process the cargo glycan to generate the marker. A separate receptor recognizes suitable marked cargo for sorting; making the feature and recognizing it are different events."
+        },
+        {
+          "prompt": "Why do equal compartment amounts not prove equal traffic?",
+          "answer": "An amount records the net balance under the stated assumptions. The invented cases have equal final amounts despite different arrivals and departures, so an amount alone does not identify those contributions."
+        }
+      ],
+      "summaryChecklist": [
+        "Name cargo, tag and receptor separately.",
+        "Distinguish processing from recognition.",
+        "Place recognition in the trans-Golgi network.",
+        "Separate cargo delivery from receptor return.",
+        "State assumptions when interpreting a traffic model."
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",
