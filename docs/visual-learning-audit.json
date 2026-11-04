@@ -3354,6 +3354,17 @@
       "visualIds": [],
       "figureIds": [],
       "rationale": "Explicit short original DNA windows, triplets and reverse-complement coordinates in readable text; worked interpretation and explained feedback. No copied sequence diagram, actual variant report or clinical inference."
+    },
+    {
+      "id": "antibody-mutation-class-switch",
+      "route": "/library/antibody-mutation-class-switch",
+      "title": "Antibody diversification: mutation, selection and class switching",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "All variable/constant labels and transitions are explicit in readable text, including a fixed light-chain assumption and original worked endpoint reasoning. No source image, actual immune sequence or measured-affinity claim."
     }
   ]
 }

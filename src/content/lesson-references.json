@@ -1400,5 +1400,24 @@
         "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi"
       }
     ]
+  },
+  "antibody-mutation-class-switch": {
+    "title": "Muramatsu et al. (2000): Class switch recombination and hypermutation require AID",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11007474/",
+    "checkedAt": "2026-11-04",
+    "supportingReferences": [
+      {
+        "title": "Gitlin et al. (2014): Clonal selection in the germinal centre by regulated proliferation and hypermutation",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24805232/"
+      },
+      {
+        "title": "Roco et al. (2019): Class-Switch Recombination Occurs Infrequently in Germinal Centers",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31375460/"
+      },
+      {
+        "title": "Petersen-Mahrt et al. (2002): AID mutates E. coli suggesting a DNA deamination mechanism for antibody diversification",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12097915/"
+      }
+    ]
   }
 }

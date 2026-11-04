@@ -152,6 +152,7 @@
     "/library/peroxisome-pts1-pex5-cargo": "peroxisome-pts1-pex5-cargo",
     "/library/lysosomal-m6p-tag-receptor-recycling": "lysosomal-m6p-tag-receptor-recycling",
     "/library/synonymous-variant-sequence-readout-scope": "synonymous-variant-sequence-readout-scope",
+    "/library/antibody-mutation-class-switch": "antibody-mutation-class-switch",
     "/library/thoracic-cage-landmarks": "thoracic-cage-landmarks",
     "/library/intercostal-neurovascular-plane": "intercostal-neurovascular-plane",
     "/library/diaphragm-openings": "diaphragm-openings",
@@ -420,6 +421,7 @@
     "concept-peroxisome-pts1-pex5-cargo",
     "concept-lysosomal-m6p-tag-receptor-recycling",
     "concept-synonymous-variant-sequence-readout-scope",
+    "concept-antibody-mutation-class-switch",
     "concept-thoracic-cage-landmarks",
     "concept-intercostal-neurovascular-plane",
     "concept-diaphragm-openings",
@@ -632,6 +634,9 @@
     "genetics-genome-foundations-knowledge-1",
     "biophysics-membrane-foundations-knowledge-1",
     "studio-apply-reproductive-histology",
+    "studio-antibody-mutation-selection",
+    "studio-antibody-lineage-endpoints",
+    "studio-antibody-shared-requirement",
     "epithelia-transfer-1",
     "epithelia-transfer-2",
     "nitrogen-transfer",
@@ -747,6 +752,11 @@
     "synonymous-variant-sequence-readout-scope-summary-2": "synonymous-variant-sequence-readout-scope",
     "synonymous-variant-sequence-readout-scope-summary-3": "synonymous-variant-sequence-readout-scope",
     "synonymous-variant-sequence-readout-scope-summary-4": "synonymous-variant-sequence-readout-scope",
-    "synonymous-variant-sequence-readout-scope-summary-5": "synonymous-variant-sequence-readout-scope"
+    "synonymous-variant-sequence-readout-scope-summary-5": "synonymous-variant-sequence-readout-scope",
+    "antibody-mutation-class-switch-summary-1": "antibody-mutation-class-switch",
+    "antibody-mutation-class-switch-summary-2": "antibody-mutation-class-switch",
+    "antibody-mutation-class-switch-summary-3": "antibody-mutation-class-switch",
+    "antibody-mutation-class-switch-summary-4": "antibody-mutation-class-switch",
+    "antibody-mutation-class-switch-summary-5": "antibody-mutation-class-switch"
   }
 }

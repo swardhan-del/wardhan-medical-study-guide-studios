@@ -2131,6 +2131,75 @@
           "explanation": "The observation does not provide an exact cycle date or clinical outcome."
         }
       ]
+    },
+    {
+      "id": "studio-antibody-mutation-selection",
+      "topic": "antibody-mutation-class-switch",
+      "title": "Sequence change versus selection",
+      "subject": "genetics",
+      "href": "/library/antibody-mutation-class-switch#studio-practice",
+      "prompt": "A fictional worksheet changes a rearranged variable label from V0 to V1. It supplies no binding assay or observations of which cell variants contributed afterward. What is established within the model?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "A stipulated sequence difference, with binding improvement and selection still unmeasured.",
+          "explanation": "The changed label records the specified difference. It does not supply an affinity comparison or evidence about later contribution to the response."
+        },
+        {
+          "text": "Improved binding and successful selection, because every new variable sequence is better.",
+          "explanation": "A mutation creates a different candidate; its functional result and contribution require separate evidence. The worksheet does not establish either."
+        },
+        {
+          "text": "A heavy-chain class switch, because any V-label change replaces the constant region.",
+          "explanation": "The V label concerns the rearranged variable sequence. A class-switch comparison concerns the heavy-chain constant-region arrangement."
+        }
+      ]
+    },
+    {
+      "id": "studio-antibody-lineage-endpoints",
+      "topic": "antibody-mutation-class-switch",
+      "title": "Population timing versus an individual record",
+      "subject": "genetics",
+      "href": "/library/antibody-mutation-class-switch#studio-practice",
+      "prompt": "A known fictional lineage is observed only at (V0, Cmu) and later (V1, Cgamma). A separate study reports a predominant event order in its analyzed population. What can these statements establish about this lineage?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Both displayed features differ, but this lineage’s missing intermediate is not identified.",
+          "explanation": "The endpoint labels show the two feature differences. A population pattern does not supply an observation of this particular missing intermediate."
+        },
+        {
+          "text": "The variable change certainly occurred first, because it is written first in the pair.",
+          "explanation": "Coordinate order in a symbol is not an event timeline. The worksheet displays no intermediate observation."
+        },
+        {
+          "text": "The class switch certainly occurred first, because a predominant population pattern proves every individual history.",
+          "explanation": "A typical or predominant result does not establish every individual trajectory. The specific lineage still needs its own evidence."
+        }
+      ]
+    },
+    {
+      "id": "studio-antibody-shared-requirement",
+      "topic": "antibody-mutation-class-switch",
+      "title": "A shared factor and separate outcomes",
+      "subject": "genetics",
+      "href": "/library/antibody-mutation-class-switch#studio-practice",
+      "prompt": "A controlled experimental comparison reports that removing AID disrupts both a class-switch readout and a variable-region mutation readout in the tested system. Which inference stays within that result?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "The perturbation affects both tested outcomes, without proving that they are one process.",
+          "explanation": "A shared experimental requirement can link distinct outcomes. The result does not identify every molecular step or collapse the readouts into one operation."
+        },
+        {
+          "text": "The two outcomes are identical, because they share an affected factor.",
+          "explanation": "Different processes can depend on a common factor. Separate readouts do not become identical merely because one perturbation affects both."
+        },
+        {
+          "text": "AID is the only molecule involved, because removing it changes both readouts.",
+          "explanation": "The experiment does not test or exclude every other participating molecule. A requirement is not a complete inventory of the mechanism."
+        }
+      ]
     }
   ]
 }
