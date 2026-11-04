@@ -8437,6 +8437,221 @@
       ]
     },
     {
+      "id": "cochlear-fluid-voltage-reference",
+      "subject": "physiology",
+      "title": "Cochlear fluids: which side and which voltage reference?",
+      "summary": "Calculate cochlear compartment potential differences, then distinguish a new voltage reference from a changed compartment.",
+      "tags": [
+        "Physiology",
+        "Special senses",
+        "Histology",
+        "Biophysics",
+        "Reference frames",
+        "Worked calculations"
+      ],
+      "source": "original-cochlear-fluid-voltage-reference",
+      "section": "Original reference/timing exercises; biological context from named primary studies",
+      "steps": [
+        {
+          "title": "Draw the boundary before the arrow",
+          "body": "In this simplified mature mammalian cochlear model, name three locations: endolymph outside the hair bundle, the hair-cell interior, and perilymph-like fluid at the basolateral surface. The sensory epithelium separates the extracellular environments. Potassium-rich endolymph remains extracellular: the cell membrane, rather than a potassium label, determines what is inside. This model concerns cochlear hair cells; it does not describe every developmental stage or every sensory organ."
+        },
+        {
+          "title": "Use one reference for three locations",
+          "body": "For an invented bookkeeping exercise, assign perilymph 0 mV, endolymph +80 mV and the cell interior −45 mV. These are potentials relative to the same reference. The cell relative to perilymph is −45 − 0 = −45 mV. The cell relative to endolymph is −45 − 80 = −125 mV. The endocochlear potential concerns two extracellular compartments; it is not the same quantity as the voltage across the apical or basolateral membrane surface."
+        },
+        {
+          "title": "Change the zero without changing the differences",
+          "body": "Add 20 mV to every assigned potential. Perilymph becomes +20, endolymph +100 and the cell interior −25 mV. The apical difference remains −25 − 100 = −125 mV; the basolateral difference remains −25 − 20 = −45 mV. A common reference shift cannot change the physical potential differences. Changing only one compartment instead describes a different model."
+        },
+        {
+          "title": "Separate a new reference from a changed compartment",
+          "body": "Use the assigned baseline values: perilymph 0, endolymph +80 and interior −45 mV. First subtract 80 from all three: the numbers change but neither membrane difference changes. Next consider a different invented model in the original reference: keep perilymph at 0 and interior at −45, but assign endolymph 0 mV. Interior minus endolymph is now −45 mV rather than −125 mV. Only one compartment changed, so this is a changed electrical arrangement, not a new zero. Holding the interior fixed is an explicit mathematical assumption; a real cell may respond differently."
+        },
+        {
+          "title": "Do not turn a voltage difference into an ion current",
+          "body": "The calculation finds electrical potential differences. It does not specify the ion concentrations, channel opening, selectivity, conductance or coupling needed to calculate an ionic current. Even a correctly signed voltage difference is insufficient for a complete electrochemical prediction. In particular, the difference between the invented scenarios is not a percentage loss of hearing, a current ratio or a universal hair-cell voltage."
+        },
+        {
+          "title": "Connect the calculation to the biological experiment",
+          "body": "The endocochlear potential is an extracellular difference between endolymph and a perilymph reference. It is distinct from the voltage across the hair-cell membrane. Russell’s 1983 primary study relates cochlear compartment arrangement to receptor potentials; Nin and colleagues’ 2008 experiments investigate how the stria supports the endocochlear potential. These studies supply biological context. The reference-shift arithmetic here follows from subtraction and does not reproduce their recordings or establish a clinical model."
+        }
+      ],
+      "question": {
+        "prompt": "In the invented original reference, keep the interior at −45 mV and perilymph at 0 mV, but change endolymph from +80 to 0 mV. What is interior minus endolymph now?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "−125 mV",
+            "reason": "That was the original apical difference. Only endolymph changed here; this is not a common reference shift."
+          },
+          {
+            "text": "−45 mV",
+            "reason": "The new difference is −45−0. The change is real within the assigned model, with the interior explicitly held fixed; it does not predict a current or a hearing outcome."
+          },
+          {
+            "text": "+45 mV",
+            "reason": "That reverses the requested subtraction. Interior minus outside is negative for these assigned numbers."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Why can a potassium-rich extracellular fluid still be extracellular?",
+        "answer": "Extracellular describes location relative to the cell membrane. Composition does not define whether a compartment is inside the cell. Identify the membrane, both compartments and the reference before calculating."
+      },
+      "related": [
+        "ear-anatomy",
+        "auditory-frequency-level-coding"
+      ],
+      "updatedAt": "2026-11-04",
+      "minutes": 12,
+      "objectives": [
+        "Place the apical bundle and basolateral surface in their respective extracellular environments.",
+        "Calculate a potential difference after naming the reference.",
+        "Separate the electrical part of a driving force from a complete current prediction.",
+        "Distinguish changing every reference value from changing only one compartment."
+      ],
+      "prerequisites": [
+        "membrane-potentials",
+        "special-senses"
+      ],
+      "oralExamination": [
+        {
+          "prompt": "A tutor subtracts 80 mV from all three locations. Has the apical membrane difference changed? Explain without recalculating every number.",
+          "answer": "No. In (inside−80)−(outside−80), the common subtraction cancels. The change is a coordinate choice."
+        },
+        {
+          "prompt": "Why does assigning endolymph 0 mV while retaining the other original numbers describe a different model?",
+          "answer": "It changes one location relative to the other two. The apical difference becomes −45 mV; the basolateral difference remains −45 mV. No current or hearing outcome follows from these values alone."
+        }
+      ],
+      "summaryChecklist": [
+        "Name the apical, intracellular and basolateral locations before using a number.",
+        "State one voltage reference for all assigned values.",
+        "Subtract outside from inside in the requested direction.",
+        "Distinguish a common offset from changing one compartment.",
+        "Do not infer ionic current or hearing outcome from voltage subtraction alone."
+      ],
+      "workedExample": {
+        "title": "Recalculate after changing the reference",
+        "prompt": "Move the reference from perilymph to endolymph without changing the model. What are the three potentials now?",
+        "solution": [
+          "Use the original assigned values relative to perilymph: perilymph 0 mV, endolymph+80 mV and interior−45 mV.",
+          "Subtract 80 mV from every location: endolymph 0 mV, perilymph−80 mV and interior−125 mV.",
+          "Basolateral difference: −125−(−80)=−45 mV. Apical difference: −125−0=−125 mV.",
+          "Both physical differences are unchanged. Assigned illustrative values are not universal measurements; no current or hearing outcome is inferred."
+        ]
+      }
+    },
+    {
+      "id": "auditory-frequency-level-coding",
+      "subject": "physiology",
+      "title": "Hearing: separate sound cycles, spike count and spike timing",
+      "summary": "Compare sound cycles with invented neural event counts and timing; equal mean rates need not give equal phase fractions.",
+      "tags": [
+        "Physiology",
+        "Special senses",
+        "Histology",
+        "Biophysics",
+        "Phase locking",
+        "Worked calculations"
+      ],
+      "source": "original-auditory-frequency-level-coding",
+      "section": "Original reference/timing exercises; biological context from named primary studies",
+      "steps": [
+        {
+          "title": "Name the variable and unit",
+          "body": "An acoustic frequency counts sound cycles per second in hertz. A spike rate counts neural events per second. Matching dimensions do not make them the same measurement: specify what event is being counted and where. Sound-pressure level is another physical quantity. Perceived loudness is a perceptual outcome, so equal sound-pressure levels at different frequencies do not by themselves establish equal loudness."
+        },
+        {
+          "title": "Connect with existing place-based teaching",
+          "body": "Cochlear responses have frequency-dependent spatial tuning. Existing ear and sensory lessons introduce this place relationship; use them for the overview. This exercise adds a different question: can two spike sequences contain the same number of events while placing those events differently within sound cycles? A temporal comparison requires the sound period, a stated phase origin and the event times, not just a mean count."
+        },
+        {
+          "title": "Follow the change in signal type",
+          "body": "A sound wave, a hair-cell receptor potential and a neural spike train are different signals. Russell and Sellick recorded intracellular cochlear receptor potentials in guinea pigs; Johnson compared auditory-nerve discharge rate and synchronization in cats. Neither experiment licenses treating acoustic hertz as the spike rate of every human auditory fibre. The invented event lists below are arithmetic counterexamples, not animal recordings or predicted biological performance."
+        },
+        {
+          "title": "Make only the inference supported by the comparison",
+          "body": "Let tone T1 be 500 Hz, T2 be 2,000 Hz at the same sound-pressure level as T1, and T3 be 500 Hz at a higher level than T1. Comparing T1 with T2 changes frequency by construction; comparing T1 with T3 changes level by construction. Those statements do not require predicting a person’s loudness judgment. Tone labels T1–T3 refer to stimuli; sequence labels A and B below refer to invented neural event lists."
+        },
+        {
+          "title": "Keep the observation interval with the rate",
+          "body": "For a 500 Hz waveform, one cycle lasts 2 ms. Define a half-open observation window from 0 up to, but not including, 10 ms. Five complete cycles fit inside it. Invent sequence A with events at 0.5, 2.5 and 6.5 ms. Its interval mean is 3/0.010 = 300 spikes per second, and its count per cycle is 3/5 = 0.6. These are two descriptions of the same finite count. Neither implies 500 spikes per second or one spike on every cycle."
+        },
+        {
+          "title": "Compare timing without changing the count",
+          "body": "Sequence B has events at 0.5, 3.0 and 7.0 ms in the same window. A and B both contain three events, giving the same 300-per-second interval mean. Relative to a cycle starting at time zero, define phase fraction as (event time modulo 2 ms)/2 ms. A has fractions 0.25, 0.25 and 0.25; B has 0.25, 0.50 and 0.50. Equal count therefore does not determine phase distribution. Three invented events are not enough to establish an empirical phase-locking limit or a statistical property of a real neuron."
+        }
+      ],
+      "question": {
+        "prompt": "The two invented sequences have three events each within the same 10 ms window, but their listed phase fractions differ. Which conclusion follows?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "Their specified 500 Hz sound waveform must change to 300 Hz",
+            "reason": "300 per second describes the interval mean spike count divided by time; it does not redefine the sound-cycle frequency."
+          },
+          {
+            "text": "Their interval mean rates are equal, but their event timing within the sound cycle differs",
+            "reason": "Both give 3/0.010=300 per second. A has phase fractions 0.25,0.25,0.25 while B has 0.25,0.50,0.50, so count does not fix timing."
+          },
+          {
+            "text": "Every sound cycle must contain exactly one spike in both sequences",
+            "reason": "There are five cycles but only three events in each invented list; a one-event-per-cycle claim is contradicted by the data."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Why are acoustic frequency and neural firing frequency easy to confuse?",
+        "answer": "Both count events per second, but the events differ. Identify sound cycles versus spikes, the physical or neural recording location, and what is controlled before interpreting a number."
+      },
+      "related": [
+        "cochlear-fluid-voltage-reference",
+        "biophysics-sensory-biophysics",
+        "biophysics-practical-audiometry"
+      ],
+      "updatedAt": "2026-11-04",
+      "minutes": 12,
+      "objectives": [
+        "Keep an acoustic frequency separate from a neural spike rate.",
+        "Use controlled tone comparisons without inferring loudness from level alone.",
+        "Distinguish spatial frequency tuning from the timing information in a stated event list.",
+        "Calculate a finite-window mean event rate and compare phase fractions without treating a toy sequence as biological evidence."
+      ],
+      "prerequisites": [
+        "special-senses",
+        "synaptic-integration"
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Sequence A has no event in the cycle from 4 to 6 ms. Does that alter the acoustic frequency?",
+          "answer": "No. The specified waveform still has a 2 ms period. A neural event is absent from that cycle; the two event types are separate."
+        },
+        {
+          "prompt": "Can you conclude that a real auditory fibre is phase-locked from these three invented events?",
+          "answer": "No. The constructed list illustrates the distinction between count and timing. A biological inference requires measured responses, an appropriate analysis and enough observations."
+        }
+      ],
+      "summaryChecklist": [
+        "Name whether an event is a sound cycle or a neural spike.",
+        "Retain the observation duration when calculating a mean rate.",
+        "State the sound period and phase origin before comparing event timing.",
+        "Compare both count and phase; check for missing cycles.",
+        "Treat the event lists as invented counterexamples, not measurements or physiological cutoffs."
+      ],
+      "workedExample": {
+        "title": "Same count, different timing",
+        "prompt": "A 500 Hz waveform has a 2 ms period. Over [0,10) ms, sequence A contains events at 0.5,2.5,6.5 ms; B contains 0.5,3.0,7.0 ms. Compare count, interval mean rate and phase fraction relative to a cycle starting at time zero.",
+        "solution": [
+          "Count within the stated window[0,10) ms: A and B each have three events. The duration is 0.010 seconds.",
+          "Both interval mean rates are 3/0.010=300 spikes per second. The specified 500 Hz sound waveform still has a 2 ms period.",
+          "Calculate each phase fraction as(time modulo 2 ms)/2 ms: A gives 0.25,0.25,0.25; B gives 0.25,0.50,0.50.",
+          "Equal count and mean rate do not fix phase distribution. A has no event from 4 to 6 ms. The six invented events do not establish biological phase-locking limits or a real neuron’s statistics."
+        ]
+      }
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

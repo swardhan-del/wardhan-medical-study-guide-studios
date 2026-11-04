@@ -398,6 +398,133 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "cochlear-fluid-voltage-reference",
+      "title": "Cochlear fluids: which side and which voltage reference?",
+      "subject": "physiology",
+      "topic": "Cochlear reference frames and auditory event timing",
+      "slug": "cochlear-fluid-voltage-reference",
+      "learnerLevel": "Introductory physiology and quantitative reasoning",
+      "objectives": [
+        "Place the apical bundle and basolateral surface in their respective extracellular environments.",
+        "Calculate a potential difference after naming the reference.",
+        "Separate the electrical part of a driving force from a complete current prediction.",
+        "Distinguish changing every reference value from changing only one compartment."
+      ],
+      "sources": [
+        {
+          "title": "Russell(1983): Origin of the receptor potential in inner hair cells of the mammalian cochlea—evidence for Davis’ theory",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6823305/",
+          "publisherOrAuthor": "Named primary-study authors; official NCBI abstract",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Nin et al.(2008): The endocochlear potential depends on two K+ diffusion potentials and an electrical barrier in the stria vascularis of the inner ear",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18218777/",
+          "publisherOrAuthor": "Named primary-study authors; official NCBI abstract",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Reference values, signed differences and invented event-time lists are completely described in readable text. No source figure or physiological reconstruction is required for the stated arithmetic tasks.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Invented values/event lists; no current prediction, physiological range, real neuronal response or hearing outcome inferred.",
+        "Primary-study abstract context with documented animal/preparation limits; no full-paper review claimed.",
+        "AI-assisted review; no independent specialist, clinical or human accessibility review claimed."
+      ],
+      "reviewEvidenceIds": [
+        "cochlear-fluid-voltage-reference-editorial-20261104",
+        "cochlear-fluid-voltage-reference-readability-20261104",
+        "cochlear-fluid-voltage-reference-accessibility-20261104",
+        "cochlear-fluid-voltage-reference-assessment-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "membrane-potentials",
+          "special-senses"
+        ],
+        "related": [
+          "ear-anatomy",
+          "auditory-frequency-level-coding"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "auditory-frequency-level-coding",
+      "title": "Hearing: separate sound cycles, spike count and spike timing",
+      "subject": "physiology",
+      "topic": "Cochlear reference frames and auditory event timing",
+      "slug": "auditory-frequency-level-coding",
+      "learnerLevel": "Introductory physiology and quantitative reasoning",
+      "objectives": [
+        "Keep an acoustic frequency separate from a neural spike rate.",
+        "Use controlled tone comparisons without inferring loudness from level alone.",
+        "Distinguish spatial frequency tuning from the timing information in a stated event list.",
+        "Calculate a finite-window mean event rate and compare phase fractions without treating a toy sequence as biological evidence."
+      ],
+      "sources": [
+        {
+          "title": "Johnson(1980): The relationship between spike rate and synchrony in responses of auditory-nerve fibers to single tones",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7419827/",
+          "publisherOrAuthor": "Named primary-study authors; official NCBI abstract",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Russell and Sellick(1978): Intracellular studies of hair cells in the mammalian cochlea",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/731538/",
+          "publisherOrAuthor": "Named primary-study authors; official NCBI abstract",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Reference values, signed differences and invented event-time lists are completely described in readable text. No source figure or physiological reconstruction is required for the stated arithmetic tasks.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Invented values/event lists; no current prediction, physiological range, real neuronal response or hearing outcome inferred.",
+        "Primary-study abstract context with documented animal/preparation limits; no full-paper review claimed.",
+        "AI-assisted review; no independent specialist, clinical or human accessibility review claimed."
+      ],
+      "reviewEvidenceIds": [
+        "auditory-frequency-level-coding-editorial-20261104",
+        "auditory-frequency-level-coding-readability-20261104",
+        "auditory-frequency-level-coding-accessibility-20261104",
+        "auditory-frequency-level-coding-assessment-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "special-senses",
+          "synaptic-integration"
+        ],
+        "related": [
+          "cochlear-fluid-voltage-reference",
+          "biophysics-sensory-biophysics",
+          "biophysics-practical-audiometry"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
