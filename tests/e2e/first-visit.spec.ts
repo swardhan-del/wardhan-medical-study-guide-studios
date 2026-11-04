@@ -163,7 +163,7 @@ test("Molecular Cell Biology is distinct from histology and replaces the mistake
   await expect(select.locator('option[value="cell-biology"]')).toHaveText("Molecular Cell Biology");
   await expect(select.locator('option[value="microbiology"]')).toHaveCount(0);
   await select.selectOption("cell-biology");
-  await expect(page.locator(".resource-card:visible")).toHaveCount(9);
+  await expect(page.locator(".resource-card:visible")).toHaveCount(11);
   await page.goto("/subjects/histology");
   await expect(page.locator("h1:visible")).toContainText("Microscopic Anatomy");
   await page.goto("/subjects/cell-biology");
