@@ -2818,6 +2818,27 @@
           "status": "introduction-available"
         }
       ]
+    },
+    {
+      "id": "original-auditory-reference-timing",
+      "subject": "physiology",
+      "title": "Cochlear references and auditory timing",
+      "sourceLabel": "Original exercises with named primary-study context",
+      "sourceId": "original-cochlear-fluid-voltage-reference",
+      "topics": [
+        {
+          "id": "cochlear-fluid-voltage-reference-original-model",
+          "title": "Cochlear fluids: which side and which voltage reference?",
+          "href": "/library/cochlear-fluid-voltage-reference",
+          "status": "introduction-available"
+        },
+        {
+          "id": "auditory-frequency-level-coding-original-model",
+          "title": "Hearing: separate sound cycles, spike count and spike timing",
+          "href": "/library/auditory-frequency-level-coding",
+          "status": "introduction-available"
+        }
+      ]
     }
   ]
 }

@@ -2884,6 +2884,28 @@
       "resources": [
         "adenylate-kinase-charge-conservation"
       ]
+    },
+    {
+      "id": "topic-cochlear-fluid-voltage-reference",
+      "title": "Cochlear fluids: which side and which voltage reference?",
+      "description": "Calculate cochlear compartment potential differences, then distinguish a new voltage reference from a changed compartment.",
+      "subject": "physiology",
+      "parentId": "physiology-nervous",
+      "kind": "topic",
+      "resources": [
+        "cochlear-fluid-voltage-reference"
+      ]
+    },
+    {
+      "id": "topic-auditory-frequency-level-coding",
+      "title": "Hearing: separate sound cycles, spike count and spike timing",
+      "description": "Compare sound cycles with invented neural event counts and timing; equal mean rates need not give equal phase fractions.",
+      "subject": "physiology",
+      "parentId": "physiology-nervous",
+      "kind": "topic",
+      "resources": [
+        "auditory-frequency-level-coding"
+      ]
     }
   ]
 }
