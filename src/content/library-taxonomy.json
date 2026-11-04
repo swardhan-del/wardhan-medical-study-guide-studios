@@ -2873,6 +2873,17 @@
         "same-center-different-data-spread",
         "standard-deviation-standard-error"
       ]
+    },
+    {
+      "id": "topic-adenylate-energy-charge",
+      "title": "ATP amounts and energy-charge models",
+      "description": "Calculate a defined pool index, track conserved quantities and compare weighted summaries.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "adenylate-kinase-charge-conservation"
+      ]
     }
   ]
 }

@@ -830,9 +830,11 @@
       "subject": "biochemistry",
       "number": "06",
       "title": "Bioenergetics",
-      "lessonIds": [],
+      "lessonIds": [
+        "adenylate-kinase-charge-conservation"
+      ],
       "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
-      "coverage": "This source section does not yet have a dedicated web lesson.",
+      "coverage": "Original introduction to adenylate-pool amounts and energy charge with worked mathematical examples; this part does not yet cover all bioenergetics topics.",
       "practiceHref": null
     },
     {
