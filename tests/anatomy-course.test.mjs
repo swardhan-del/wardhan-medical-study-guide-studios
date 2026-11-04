@@ -27,7 +27,7 @@ test('every course record has a referenceable manuscript, explained practice and
  for(const file of files){
   const r=read('content/anatomy/'+file), l=r.lesson;
   assert.equal(readFileSync('content/anatomy/'+file.replace(/\.json$/,'.md'),'utf8').startsWith('# '),true);
-  assert(l.steps.length>=4 && l.objectives.length===3);
+  assert(l.steps.length>=4 && l.objectives.length===(l.id==='ocular-motor-nerves'?6:3));
   assert(l.steps.reduce((n,s)=>n+s.body.split(/\s+/).length,0)>=200, l.id);
   assert(r.sourceSections.length && r.identification.prompt.length>40);
   assert.equal(r.practice.length,4);
@@ -36,4 +36,20 @@ test('every course record has a referenceable manuscript, explained practice and
   while(current.prerequisites?.length){const id=current.prerequisites[0];assert(!seen.has(id),'Prerequisite cycle');seen.add(id);current=lessons.find(x=>x.id===id);assert(current);}
  }
  assert.equal(questionIds.size,480);
+});
+
+test('the ocular-motor manuscript retains the reviewed answers, checklist and research references',()=>{
+ const path='content/anatomy/volume-04-head-neck-neuro/15-ocular-motor-nerves';
+ const record=read(path+'.json'), manuscript=readFileSync(path+'.md','utf8');
+ for(const item of record.lesson.oralExamination){
+  assert(manuscript.includes(item.prompt));
+  assert(manuscript.includes(item.answer));
+ }
+ for(const item of record.lesson.summaryChecklist) assert(manuscript.includes(item));
+ for(const ref of [record.furtherReading,...record.furtherReading.supportingReferences]) assert(manuscript.includes(ref.url));
+ const reference=read('src/content/lesson-references.json')['ocular-motor-nerves'];
+ assert.equal(reference.checkedAt,record.furtherReading.checkedAt);
+ assert.deepEqual(reference.supportingReferences,record.furtherReading.supportingReferences);
+ assert.equal(record.lesson.question.options[record.lesson.question.answer].text,'Abducens VI');
+ assert.deepEqual(record.practice.map(q=>q.id),['ocular-motor-nerves-explain','ocular-motor-nerves-relations','ocular-motor-nerves-correction','ocular-motor-nerves-identification']);
 });

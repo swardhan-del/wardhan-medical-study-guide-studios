@@ -2200,6 +2200,29 @@
           "explanation": "The experiment does not test or exclude every other participating molecule. A requirement is not a complete inventory of the mechanism."
         }
       ]
+    },
+    {
+      "id": "studio-ocular-motor-branch-units",
+      "topic": "ocular-motor-nerves",
+      "title": "Nerve bundles and muscle targets",
+      "subject": "anatomy",
+      "href": "/library/ocular-motor-nerves#studio-practice",
+      "prompt": "In a fictional topology, trunk T divides into bundles A and B. They reach two regions of the same muscle M, and individual axons are not traced. What follows?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "Two named terminal bundles and one unique muscle target; the axon count is unspecified.",
+          "explanation": "The counted bundle labels are A and B, while both destinations belong to M. The schematic does not trace individual axons."
+        },
+        {
+          "text": "Two muscle targets and exactly two motor axons.",
+          "explanation": "Two regions of one muscle are not two muscles, and bundle labels do not establish how many axons they contain."
+        },
+        {
+          "text": "Two independently activated muscle compartments have been demonstrated physiologically.",
+          "explanation": "The supplied connection diagram has no neural-activity, contraction or force measurements. Functional independence is an additional claim."
+        }
+      ]
     }
   ]
 }

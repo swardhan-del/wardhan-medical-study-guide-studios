@@ -14887,13 +14887,18 @@
       "id": "ocular-motor-nerves",
       "subject": "anatomy",
       "title": "Ocular motor nerves and lesion localization",
-      "summary": "Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement.",
+      "summary": "Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. Distinguish muscle targets, nerve bundles and physiological evidence through an original branch-count example.",
       "tags": [
         "anatomy",
         "Volume 4",
         "Head, neck and neuroanatomy",
         "Ocular motor nerves and lesion localization",
-        "regional anatomy"
+        "regional anatomy",
+        "trochlear",
+        "superior oblique",
+        "nerve branching",
+        "anatomical units",
+        "evidence"
       ],
       "source": "anatomy-divided-volume-4",
       "section": "22. CN III, IV, and VI",
@@ -14913,6 +14918,26 @@
         {
           "title": "Apply the anatomy and resolve a common confusion",
           "body": "Lateral rectus abducts the eye, so an isolated VI lesion weakens outward movement. IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation. A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings."
+        },
+        {
+          "title": "Name the anatomical unit before counting",
+          "body": "The statement that the trochlear nerve supplies the superior oblique names a muscle target. It does not count terminal bundles, individual axons, motor units or separate control signals. These are different levels of description. A bundle can contain many axons, and a diagram of bundles does not trace every individual axon. State which unit and which part of the pathway you are counting before transferring a number to another level. In the parasympathetic pathway described above, preganglionic fibers end in the ciliary ganglion; separate postganglionic fibers continue in short ciliary nerves. A synapse is not one uninterrupted axon."
+        },
+        {
+          "title": "Work a fictional branch-and-target comparison",
+          "body": "Imagine trunk T dividing into named bundles A and B. Bundle A reaches region 1 of muscle M; bundle B reaches region 2 of that same muscle M. The model contains two named terminal bundles but one unique muscle target. The two regional labels do not turn M into two muscles. It supplies no axon count and does not show whether any individual axon divides. This invented topology is not the geometry of a human orbit, a dissection plan or an estimate of normal branching frequency."
+        },
+        {
+          "title": "Separate an anatomical reconstruction from measured activation",
+          "body": "Le and colleagues traced trochlear branches and reconstructed their distributions in selected human and other mammalian specimens. They reported branching and compartmental distributions, while describing a possible functional implication. Traced anatomy is evidence about structure; it is not a simultaneous record of independent neural activation or force. Species, orientation, sampled material and measurement method matter. Do not silently transfer a compartment label from one species or view to another, or convert a possible function into a universal fact."
+        },
+        {
+          "title": "Keep a task-specific physiological result in context",
+          "body": "Adade and Das later recorded extraocular motoneurons in two non-human primates during specified vertical eye-movement tasks. Their 2023 report did not support selective compartmental innervation from those response patterns. This is a bounded physiological finding and interpretation, not proof that every anatomical branch observation is false or that all muscles and tasks behave identically. A reconstruction, a neural recording, a muscle-force measurement and observed eye motion answer different questions. The paper also has published commentary and an author response; this teaching example does not adjudicate every part of that discussion."
+        },
+        {
+          "title": "Count datasets as carefully as anatomical structures",
+          "body": "A 2026 report by the same authors examines cyclovertical motoneuron activity during asymmetric vertical vergence. Its methods explicitly state that the neuronal dataset was reported in the earlier publication, with a different analytic focus here. Two papers therefore must not be counted automatically as two independent neuronal datasets. This parallels the fictional topology: two branches do not automatically mean two muscle targets. Name the observed unit, preserve the study context, and distinguish a new analysis from an independent replication. None of these comparisons predicts an individual clinical deficit."
         }
       ],
       "question": {
@@ -14939,14 +14964,19 @@
       },
       "related": [
         "cranial-nerve-organization",
-        "trigeminal-pathways"
+        "trigeminal-pathways",
+        "orbit-anatomy",
+        "venous-sinuses"
       ],
-      "updatedAt": "2026-09-10",
-      "minutes": 10,
+      "updatedAt": "2026-11-04",
+      "minutes": 20,
       "objectives": [
         "Describe the location and organization of ocular motor nerves and lesion localization.",
         "Answer with anatomical reasons: Which nerve supplies lateral rectus?",
-        "Draw an eye with an outward arrow labelled VI-lateral rectus, then list the IV muscle and the remaining III targets."
+        "Draw an eye with an outward arrow labelled VI-lateral rectus, then list the IV muscle and the remaining III targets.",
+        "Distinguish counts of muscle targets, nerve bundles and individual axons.",
+        "Explain why anatomical distribution alone does not measure independent activation.",
+        "Keep separate publications and independent datasets distinct when interpreting evidence."
       ],
       "prerequisites": [
         "cranial-nerve-organization"
@@ -14959,7 +14989,32 @@
           "IV supplies superior oblique, whose action depends on eye position; depression is most clearly tested with the eye adducted. III supplies the remaining extraocular muscles, levator palpebrae and parasympathetic fibers for pupillary constriction and accommodation.",
           "A III lesion may therefore affect movement, eyelid and pupil, whereas an isolated VI lesion does not explain all three findings."
         ]
-      }
+      },
+      "oralExamination": [
+        {
+          "prompt": "How can two named bundles reach only one muscle target?",
+          "answer": "The bundles are two anatomical paths, while both destinations belong to the same stipulated muscle M. Branch count and unique muscle-target count use different units."
+        },
+        {
+          "prompt": "Does a dividing bundle prove that each individual axon divides?",
+          "answer": "No. The schematic labels bundles rather than tracing individual axons. It supplies no axon count or individual branching observations."
+        },
+        {
+          "prompt": "Why is compartmental anatomical distribution insufficient to prove independent activation?",
+          "answer": "The reconstruction describes structural distribution. Task-specific neural activity and mechanical function require their own measurements; anatomy alone does not supply those readouts."
+        },
+        {
+          "prompt": "Do a 2023 report and a 2026 analysis necessarily represent two independent datasets?",
+          "answer": "No. In this named example, the later methods identify the neuronal dataset as previously reported. The analytic questions differ, but that does not create an independent replication."
+        }
+      ],
+      "summaryChecklist": [
+        "Preserve the existing nucleus, crossing, peripheral nerve and muscle distinctions.",
+        "Name whether a count refers to muscles, bundles or individual axons.",
+        "State the fictional topology assumptions before counting.",
+        "Separate structural distribution from task-specific activity or force.",
+        "Check whether separate papers reuse a dataset."
+      ]
     },
     {
       "id": "trigeminal-pathways",

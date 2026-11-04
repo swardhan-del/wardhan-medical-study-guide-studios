@@ -25,12 +25,20 @@ for (const record of course) {
  if (!record.identification.prompt || record.sourceSections.length === 0 || !record.furtherReading.url.startsWith('https://')) throw Error(`Missing learning/source record: ${l.id}`);
  if (JSON.stringify(record).match(/\/Users\/|\.private|dropboxusercontent|department, or examination board|Practical specimen additions|\ufffd/)) throw Error(`Unclean source text: ${l.id}`);
  const md = [`# ${String(record.order).padStart(2,'0')}. ${l.title}`, '', `Volume ${record.volume} · ${l.minutes} minutes · Updated ${l.updatedAt}`, '', l.summary, '', '## Objectives', '', ...l.objectives.map(o => '- '+o), '', '## Prerequisite knowledge', '', 'Start with anatomical position, planes, directional terms and the difference between a nerve, artery, vein and duct.', ...(l.prerequisites.length ? l.prerequisites.map(id => `- Previous lesson: [${id}](/library/${id})`) : ['- Begin with the website anatomy orientation at /start/anatomy.']), '', ...l.steps.flatMap(s => ['## '+s.title, '', s.body, '']), '## Worked example', '', l.workedExample.prompt, '', ...l.workedExample.solution.map((s,i) => `${i+1}. ${s}`), '', '## Draw and identify', '', record.identification.prompt, '', 'Checkpoints:', '', ...record.identification.checkpoints.map(s => '- '+s), '', '## Practice', '', '### 1. '+l.question.prompt, '', ...l.question.options.map((o,i) => `${String.fromCharCode(65+i)}. ${o.text}`), '', ...record.practice.flatMap((q,i) => [`### ${i+2}. ${q.prompt}`, '', q.kind, '']), '## Answers and explanations', '', `1. ${l.question.options[l.question.answer].text}. ${l.question.options[l.question.answer].reason}`, '', ...record.practice.flatMap((q,i) => [`${i+2}. ${q.answer}`, '']), '## Oral recap', '', l.recall.prompt, '', l.recall.answer, '', '## Sources and editorial record', '', `Source: ${l.source}, ${l.section}.`, '', `[Further reading: ${record.furtherReading.title}](${record.furtherReading.url})`, '', record.editorial.basis, '', record.editorial.review, '', record.editorial.visualRights, '', `Website: /library/${l.id}`, ''].join('\n');
- emit(files[course.indexOf(record)].replace(/\.json$/,'.md'), md);
+ const extraPractice = [
+  ...(l.oralExamination?.length ? ['## Additional oral practice', '', ...l.oralExamination.flatMap(q => ['### '+q.prompt, '', q.answer, ''])] : []),
+  ...(l.summaryChecklist?.length ? ['## Summary checklist', '', ...l.summaryChecklist.map(item => '- '+item), ''] : []),
+ ].join('\n');
+ const extraReferences = (record.furtherReading.supportingReferences ?? []).map(ref => `- [${ref.title}](${ref.url})`).join('\n');
+ const referenceLine = `[Further reading: ${record.furtherReading.title}](${record.furtherReading.url})\n\n`;
+ const manuscript = md.replace('\n## Oral recap\n', '\n'+extraPractice+'## Oral recap\n')
+  .replace(referenceLine, referenceLine+(extraReferences ? extraReferences+'\n\n' : ''));
+ emit(files[course.indexOf(record)].replace(/\.json$/,'.md'), manuscript);
 }
 const existing = read('src/content/library-lessons.json');
 existing.lessons = [...existing.lessons.filter(l => !ids.has(l.id)), ...course.map(r => r.lesson)];
 emit('src/content/library-lessons.json', existing);
-emit('src/content/anatomy-course.json', { version: 1, updatedAt: '2026-09-10', records: course.map(({lesson, ...extras}) => ({ lessonId: lesson.id, ...extras })) });
+emit('src/content/anatomy-course.json', { version: 1, updatedAt: course.map(r => r.lesson.updatedAt).sort().at(-1), records: course.map(({lesson, ...extras}) => ({ lessonId: lesson.id, ...extras })) });
 emit('src/content/anatomy-practice-index.json', { records: course.map(r => ({ lessonId: r.lesson.id, title: r.lesson.title, practice: r.practice.map(q => ({ id: q.id, prompt: q.prompt })) })) });
 const groups = read('src/content/study-collections.json');
 const print = read('src/content/printable-guides.json');
@@ -42,9 +50,11 @@ for (let v=1; v<=5; v++) {
  part.lessonIds = lessonIds;
  part.coverage = `${lessonIds.length} written lessons with explanations, identification tasks and explained practice. Covers the mapped course topics; check your school syllabus for additional requirements.`;
 }
-print.updatedAt='2026-09-10'; emit('src/content/study-collections.json',groups); emit('src/content/printable-guides.json',print);
+// This is the latest included lesson revision, not a claim that every lesson was reviewed then.
+print.updatedAt=existing.lessons.filter(l => print.parts.some(part => part.lessonIds.includes(l.id))).map(l => l.updatedAt).sort().at(-1);
+emit('src/content/study-collections.json',groups); emit('src/content/printable-guides.json',print);
 const refs=read('src/content/lesson-references.json');
-for (const r of course) refs[r.lesson.id]={...r.furtherReading,checkedAt:'2026-09-10'};
+for (const r of course) refs[r.lesson.id]={...r.furtherReading,checkedAt:r.furtherReading.checkedAt ?? '2026-09-10'};
 emit('src/content/lesson-references.json',refs);
 emit('content/anatomy/COVERAGE.md',['# Five-volume anatomy course coverage','','The canonical editable records are the numbered JSON files. The adjacent Markdown files and website data are generated by `npm run content:anatomy`. Source manuscripts are preserved separately and are not shipped with the website.','','| Volume | Lessons | Source section mapping |','|---|---:|---|',...expected.map((n,i)=>`| ${i+1} | ${n} | See each lesson’s Sources section |`),'','## Lesson register','',...course.map((r,i)=>`- Volume ${r.volume}, ${r.order}: [${r.lesson.title}](${relative('content/anatomy',files[i]).replace(/\.json$/,'.md')}) — ${r.sourceSections.join('; ')}`),'','## Scope boundaries','','The course adapts explanatory source chapters and integrates original guided practice. Repetitive source oral-answer banks, publishing checklists and manuscript front matter are not reproduced. Source drawing pages are replaced by new identification tasks. Thoracic and abdominal wall topics in Volume V are taught in Volumes I and II; TMJ and skull exits are taught in Volume IV. They are cross-volume foundations rather than duplicated chapters. The source PDF’s raw diagram/OCR addenda are excluded; no unreviewed atlas plate or private STEM image is imported.','', 'Lesson counts do not establish syllabus completeness or medical peer review. The six existing anatomy URLs are preserved.',''].join('\n'));
 console.log(`Anatomy course: ${course.length} lesson files, Markdown manuscripts, web records and five printable volumes ${check?'verified':'generated'}.`);

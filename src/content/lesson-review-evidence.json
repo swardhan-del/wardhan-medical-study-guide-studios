@@ -572,6 +572,39 @@
       "independent": false,
       "record": "docs/reviews/antibody-diversification-20261104.md",
       "contentSha256": "850110259307c99628e6ead1070f261caed338bd130d5270130ecd4e93783ed0"
+    },
+    {
+      "id": "ocular-motor-nerves-editorial-20261104",
+      "lessonId": "ocular-motor-nerves",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source/editorial and unit-count review",
+      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/ocular-motor-evidence-20261104.md",
+      "contentSha256": "4bb87fae8f743267f8a935615440993bff6c9c317fa55927c10ed762f931c67b"
+    },
+    {
+      "id": "ocular-motor-nerves-readability-20261104",
+      "lessonId": "ocular-motor-nerves",
+      "scope": "readability",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source/editorial and unit-count review",
+      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/ocular-motor-evidence-20261104.md",
+      "contentSha256": "4bb87fae8f743267f8a935615440993bff6c9c317fa55927c10ed762f931c67b"
+    },
+    {
+      "id": "ocular-motor-nerves-accessibility-20261104",
+      "lessonId": "ocular-motor-nerves",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted actual local browser and Axe checks",
+      "qualification": "Automated assistant; checked default/expanded states, keyboard and320px200% reflow; no human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/ocular-motor-evidence-20261104.md",
+      "contentSha256": "4bb87fae8f743267f8a935615440993bff6c9c317fa55927c10ed762f931c67b"
     }
   ]
 }
