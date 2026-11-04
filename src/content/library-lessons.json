@@ -8328,6 +8328,115 @@
       ]
     },
     {
+      "id": "adenylate-kinase-charge-conservation",
+      "subject": "biochemistry",
+      "title": "ATP amount and energy charge: track the whole pool",
+      "summary": "Work through adenylate-kinase conservation, compare equal-charge pools and combine unequal pools without confusing a ratio with an amount.",
+      "updatedAt": "2026-11-04",
+      "minutes": 12,
+      "tags": [
+        "biochemistry",
+        "Bioenergetics",
+        "ATP",
+        "ADP",
+        "AMP",
+        "energy charge",
+        "worked model"
+      ],
+      "source": "original-adenylate-models",
+      "section": "Energy charge: definition, conservation and weighted-pool examples",
+      "objectives": [
+        "Calculate adenylate energy charge for a defined nonempty pool.",
+        "Explain why isolated adenylate-kinase redistribution preserves this index.",
+        "Show why equal charge need not imply equal ATP amount or ATP/ADP.",
+        "Combine pools using adenylate amounts as weights."
+      ],
+      "prerequisites": [
+        "enzyme-kinetics",
+        "glycolysis"
+      ],
+      "steps": [
+        {
+          "title": "Define the pool and the index",
+          "body": "Let A, D and M denote ATP, ADP and AMP amounts in the same defined pool and consistent units. Total adenylates N = A + D + M. For nonnegative amounts and N > 0, adenylate energy charge is e = (A + D/2)/N. ATP has weight 1, ADP weight 1/2 and AMP weight 0 in this defined index. An empty pool gives 0/0: it is undefined, not zero.\n\nThe examples here are invented amounts, not physiological concentrations, normal ranges or measurements from a person. No equilibrium or reaction rate is imposed. Energy charge is a composition index; it does not supply every quantity and condition needed for an ATP-hydrolysis free-energy calculation."
+        },
+        {
+          "title": "Track adenylate kinase without losing AMP",
+          "body": "Write a bookkeeping direction of adenylate kinase as 2 ADP → ATP + AMP. A stipulated extent x changes the pool to (A + x, D − 2x, M + x). Negative x represents the reverse direction. Nonnegative amounts require max(−A, −M) ≤ x ≤ D/2.\n\nThe total stays unchanged because x − 2x + x = 0. The weighted numerator also stays unchanged: A + x + (D − 2x)/2 = A + D/2. Thus the isolated redistribution preserves the defined energy charge. Starting at 8 ATP, 2 ADP and 0 AMP, one forward unit gives 9 ATP, 0 ADP and 1 AMP. Both charges are 0.90. ATP increases in the bookkeeping step, but this is not a source of unlimited energy or a prediction of a cellular endpoint."
+        },
+        {
+          "title": "Compare equal charge without assuming equal composition",
+          "body": "Pool A has 10 ATP, 10 ADP and 0 AMP units. Pool B has 14 ATP, 2 ADP and 4 AMP units. Each totals 20. The weighted numerators are 10 + 10/2 = 15 and 14 + 2/2 = 15, so both charges are 0.75. Yet ATP/ADP is 1 in A and 7 in B. Equal charge and equal total do not identify all three amounts.\n\nScaling every amount by the same positive factor also preserves charge. The pool (100, 100, 0) still has charge 0.75 although its total is ten times that of (10, 10, 0). A ratio leaves information out. If ADP is zero, ordinary ATP/ADP division is undefined; do not assign a finite ratio."
+        },
+        {
+          "title": "See the possible fractions at a fixed charge",
+          "body": "Write a = A/N, d = D/N and m = M/N. The fractions sum to 1 and e = a + d/2. Rearranging gives d = 2(e − a) and m = 1 − 2e + a. Requiring nonnegative fractions gives max(0, 2e − 1) ≤ a ≤ e.\n\nAt e = 0.75, the permitted ATP fraction in this purely algebraic family runs from 0.50 to 0.75. The first endpoint has d = 0.50 and m = 0; the second has d = 0 and m = 0.25. These are stipulated compositions without an equilibrium constraint, not measured limits in living cells."
+        },
+        {
+          "title": "Combine unequal pools using amounts",
+          "body": "Suppose a first invented pool totals N1 = 2 units with e1 = 0.90, and a second totals N2 = 8 units with e2 = 0.50. Their weighted numerators are 1.8 and 4.0. Combining their amounts without an intervening reaction gives e = (1.8 + 4.0)/(2 + 8) = 0.58. The unweighted mean of the two charge values is 0.70 and overweights the smaller pool.\n\nIn general, combined e = (N1e1 + N2e2)/(N1 + N2). If concentrations come from different volumes, first convert them to amounts using those volumes. This arithmetic summary does not imply that living compartments physically mix or acquire identical compositions."
+        },
+        {
+          "title": "Stop at the conclusion the model supports",
+          "body": "The examples separate an amount, a proportion, a concentration and a ratio. Report the molecules, pool boundary, units and assumptions before interpreting a result. A total pool can hide a compositional difference; a combined index can hide differences between compartments.\n\nThe isolated reaction is only one process. Real metabolism includes other reactions, transport and regulatory conditions. Neither a conserved index in this model nor one illustrative number establishes reaction direction, speed, cellular health or a clinical decision."
+        }
+      ],
+      "workedExample": {
+        "title": "Combine two invented pools",
+        "prompt": "Pool 1 has total adenylates 2 and charge 0.90. Pool 2 has total adenylates 8 and charge 0.50. Combine the amounts with no intervening reaction. What is the combined charge?",
+        "solution": [
+          "Recover each weighted numerator: 2 × 0.90 = 1.8 and 8 × 0.50 = 4.0.",
+          "Add the numerators: 1.8 + 4.0 = 5.8. Add total amounts: 2 + 8 = 10.",
+          "Divide: 5.8/10 = 0.58. The simple mean 0.70 uses equal weights, which these pools do not have.",
+          "One compatible composition is (ATP, ADP, AMP) = (1.8, 0, 0.2) in the first pool and (0, 8, 0) in the second. The combined (1.8, 8, 0.2) gives (1.8 + 4)/10 = 0.58. These are invented amounts, not equilibrium predictions."
+        ]
+      },
+      "question": {
+        "prompt": "The two invented pools have totals 2 and 8, and charges 0.90 and 0.50 respectively. What is their combined charge when their amounts are added without a reaction?",
+        "options": [
+          {
+            "text": "0.58",
+            "reason": "Weight each charge by its total adenylate amount: (2 × 0.90 + 8 × 0.50)/10 = 0.58."
+          },
+          {
+            "text": "0.70",
+            "reason": "This averages the two charge values with equal weights; the total adenylate amounts differ."
+          },
+          {
+            "text": "1.40",
+            "reason": "Adding the two charge values does not calculate a combined ratio. For a nonempty pool with nonnegative amounts, the defined charge lies between 0 and 1."
+          }
+        ],
+        "answer": 0
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why can ATP increase while the defined charge stays unchanged in the isolated adenylate-kinase model?",
+          "answer": "The reaction also decreases ADP and increases AMP. Its total change is x − 2x + x = 0, and the weighted numerator changes by x − 2x/2 = 0."
+        },
+        {
+          "prompt": "Give two reasons equal energy charge does not uniquely describe a pool.",
+          "answer": "Scaling all amounts preserves charge while changing total amount. Even with a fixed total, the examples (10,10,0) and (14,2,4) have equal charge but different ATP/ADP ratios."
+        }
+      ],
+      "recall": {
+        "prompt": "What should you identify before interpreting an energy-charge value?",
+        "answer": "Define ATP, ADP and AMP in one pool with consistent units, confirm a nonzero total, and state the model assumptions. Charge is a weighted composition index, not an ATP amount, a complete free-energy calculation or a clinical conclusion."
+      },
+      "summaryChecklist": [
+        "Name the pool, units and nonzero denominator.",
+        "Track ATP, ADP and AMP together through the isolated reaction.",
+        "Keep total amount, ATP/ADP and energy charge distinct.",
+        "Use amount-weighted aggregation when pools differ in size.",
+        "Keep invented model results separate from cellular and clinical claims."
+      ],
+      "related": [
+        "enzyme-kinetics",
+        "glycolysis",
+        "pdh-tca"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

@@ -341,6 +341,63 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "adenylate-kinase-charge-conservation",
+      "title": "ATP amount and energy charge: track the whole pool",
+      "subject": "biochemistry",
+      "topic": "Adenylate pools and energy charge",
+      "slug": "adenylate-kinase-charge-conservation",
+      "learnerLevel": "Introductory biochemistry and quantitative reasoning",
+      "objectives": [
+        "Calculate adenylate energy charge for a defined nonempty pool.",
+        "Explain why isolated adenylate-kinase redistribution preserves this index.",
+        "Show why equal charge need not imply equal ATP amount or ATP/ADP.",
+        "Combine pools using adenylate amounts as weights."
+      ],
+      "sources": [
+        {
+          "title": "Hancock, Krycer and Ang (2021): Metabolic buffer analysis reveals the simultaneous, independent control of ATP and adenylate energy ratios",
+          "publisherOrAuthor": "Hancock, Krycer and Ang",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33906384/",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Complete equations, invented quantities and worked comparisons in readable text; no source or original figure is needed to follow this release.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Invented nonnegative amounts and stipulated closed bookkeeping; no equilibrium, physiological range or clinical conclusion.",
+        "Energy charge is a composition index, not all the inputs for a free-energy calculation.",
+        "AI-assisted source and exact arithmetic review; no independent biochemical or clinical reviewer claimed."
+      ],
+      "reviewEvidenceIds": [
+        "adenylate-kinase-charge-conservation-editorial-20261104",
+        "adenylate-kinase-charge-conservation-readability-20261104",
+        "adenylate-kinase-charge-conservation-accessibility-20261104",
+        "adenylate-kinase-charge-conservation-assessment-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "enzyme-kinetics",
+          "glycolysis"
+        ],
+        "related": [
+          "enzyme-kinetics",
+          "glycolysis",
+          "pdh-tca"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

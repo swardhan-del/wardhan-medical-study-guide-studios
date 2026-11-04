@@ -220,6 +220,50 @@
       "independent": false,
       "record": "docs/reviews/biostatistics-foundations-20261103.md",
       "contentSha256": "956f299c00bb630ab2fc18ebf2decf37db6d99743764c95a4ea26c272d07e386"
+    },
+    {
+      "id": "adenylate-kinase-charge-conservation-editorial-20261104",
+      "lessonId": "adenylate-kinase-charge-conservation",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted mathematical/source/editorial review",
+      "qualification": "Automated assistant; no independent biochemical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/adenylate-models-20261104.md",
+      "contentSha256": "877a60c24af6c21459227a0981d52c1ea563ba0c4b66da01f5cfcc9717982422"
+    },
+    {
+      "id": "adenylate-kinase-charge-conservation-readability-20261104",
+      "lessonId": "adenylate-kinase-charge-conservation",
+      "scope": "readability",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted mathematical/source/editorial review",
+      "qualification": "Automated assistant; no independent biochemical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/adenylate-models-20261104.md",
+      "contentSha256": "877a60c24af6c21459227a0981d52c1ea563ba0c4b66da01f5cfcc9717982422"
+    },
+    {
+      "id": "adenylate-kinase-charge-conservation-accessibility-20261104",
+      "lessonId": "adenylate-kinase-charge-conservation",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex automated browser and content checks",
+      "qualification": "Automated Playwright/Axe and bounded visual inspection; no independent human or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/adenylate-models-20261104.md",
+      "contentSha256": "877a60c24af6c21459227a0981d52c1ea563ba0c4b66da01f5cfcc9717982422"
+    },
+    {
+      "id": "adenylate-kinase-charge-conservation-assessment-20261104",
+      "lessonId": "adenylate-kinase-charge-conservation",
+      "scope": "assessment",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex automated browser and content checks",
+      "qualification": "Automated Playwright/Axe and bounded visual inspection; no independent human or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/adenylate-models-20261104.md",
+      "contentSha256": "877a60c24af6c21459227a0981d52c1ea563ba0c4b66da01f5cfcc9717982422"
     }
   ]
 }
