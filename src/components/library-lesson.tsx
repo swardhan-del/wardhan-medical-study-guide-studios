@@ -52,7 +52,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const anatomyFoundations = lesson.id === "anatomy-foundations";
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
-  const reviewedSupplementalPractice = ["peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope"].includes(lesson.id);
+  const reviewedSupplementalPractice = ["peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
@@ -219,7 +219,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           <ConceptCheck
             key={`concept-${lesson.id}`}
             lesson={{ id: lesson.id, question: lesson.question }}
-            additional={[...retrievalQuestions, ...applicationQuestions].map(q => ({ item: q, title: "heading" in q && typeof q.heading === "string" ? q.heading : "Apply the concept in a different setting" }))}
+            additional={[...retrievalQuestions, ...applicationQuestions].map((q, index) => ({ item: q, title: `${"heading" in q && typeof q.heading === "string" ? q.heading : "title" in q && typeof q.title === "string" ? q.title : "Apply the concept in a different setting"} — practice ${index + 1}` }))}
           />
           <AnatomyPractice lessonId={lesson.id} />
           <span id="studio-practice" /><span id="apply-the-concept" />

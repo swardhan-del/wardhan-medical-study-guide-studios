@@ -2939,6 +2939,17 @@
       "resources": [
         "synonymous-variant-sequence-readout-scope"
       ]
+    },
+    {
+      "id": "topic-antibody-mutation-class-switch",
+      "title": "Antibody diversification: mutation, selection and class switching",
+      "description": "Track which antibody feature changed, distinguish mutation from selection, and explain why endpoint labels do not reconstruct a biological history.",
+      "subject": "immunology",
+      "parentId": "immunology-immune-responses",
+      "kind": "topic",
+      "resources": [
+        "antibody-mutation-class-switch"
+      ]
     }
   ]
 }

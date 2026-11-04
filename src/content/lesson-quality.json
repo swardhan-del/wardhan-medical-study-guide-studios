@@ -810,6 +810,84 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "antibody-mutation-class-switch",
+      "title": "Antibody diversification: mutation, selection and class switching",
+      "subject": "genetics",
+      "topic": "Immunology: variable-region mutation, selection and heavy-chain switching",
+      "slug": "antibody-mutation-class-switch",
+      "learnerLevel": "Introductory medical immunology",
+      "objectives": [
+        "Distinguish variable-region mutation from heavy-chain constant-region switching.",
+        "Separate a new sequence variant from selection or measured binding improvement.",
+        "Explain why a shared experimental requirement does not identify two outcomes as one process.",
+        "Keep a symbolic endpoint comparison separate from the timing of a real lineage."
+      ],
+      "sources": [
+        {
+          "title": "Muramatsu et al. (2000): Class switch recombination and hypermutation require AID",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11007474/",
+          "publisherOrAuthor": "Muramatsu et al. (2000)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Gitlin et al. (2014): Clonal selection in the germinal centre by regulated proliferation and hypermutation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24805232/",
+          "publisherOrAuthor": "Gitlin et al. (2014)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Roco et al. (2019): Class-Switch Recombination Occurs Infrequently in Germinal Centers",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31375460/",
+          "publisherOrAuthor": "Roco et al. (2019)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Petersen-Mahrt et al. (2002): AID mutates E. coli suggesting a DNA deamination mechanism for antibody diversification",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12097915/",
+          "publisherOrAuthor": "Petersen-Mahrt et al. (2002)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Readable text names all fictional variable/constant labels, fixed light chain, two symbolic paths and the limits of each comparison. No copied source diagram, real antibody sequence or clinical case.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Fictional feature/lineage model; no actual affinity, patient, protection or universal timing claim.",
+        "Selected primary-abstract scope; no full-paper/method/figure review claimed.",
+        "AI-assisted review; no independent specialist or full human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "antibody-mutation-class-switch-editorial-20261104",
+        "antibody-mutation-class-switch-readability-20261104",
+        "antibody-mutation-class-switch-accessibility-20261104",
+        "antibody-mutation-class-switch-assessment-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "innate-adaptive",
+          "genetics-genome-foundations"
+        ],
+        "related": [
+          "antigen-presentation",
+          "genetics-genome-foundations",
+          "protein-structure"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

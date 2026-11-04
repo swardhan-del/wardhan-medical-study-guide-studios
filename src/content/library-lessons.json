@@ -9079,6 +9079,131 @@
       ]
     },
     {
+      "id": "antibody-mutation-class-switch",
+      "subject": "genetics",
+      "title": "Antibody diversification: mutation, selection and class switching",
+      "summary": "Track which antibody feature changed, distinguish mutation from selection, and explain why endpoint labels do not reconstruct a biological history.",
+      "tags": [
+        "Immunology",
+        "antibody",
+        "B cell",
+        "somatic hypermutation",
+        "class switch",
+        "affinity maturation",
+        "germinal center"
+      ],
+      "source": "original-antibody-mutation-class-switch",
+      "section": "Variable-region sequence, heavy-chain class and the scope of lineage evidence",
+      "steps": [
+        {
+          "title": "Name the two features before following an event",
+          "body": "An antibody has variable regions that contribute to antigen binding and heavy-chain constant regions associated with its class and effector interactions. In the fictional model below, V0 and V1 label different rearranged heavy-chain variable sequences, while Cmu and Cgamma label mu and gamma constant-region categories. The light chain is held fixed. These labels are bookkeeping symbols, not actual sequences, measured affinities or a complete antibody description."
+        },
+        {
+          "title": "A variable-region mutation creates a different candidate",
+          "body": "Somatic hypermutation introduces changes in immunoglobulin variable-region genes. Selection among variants can favor improved binding; mutation alone is not equivalent to affinity maturation. In the symbolic model, changing V0 to V1 records a stipulated variable-region mutation. It supplies no binding measurement, no population-frequency comparison and no evidence that the altered cell was retained. A sequence difference and an advantage under a specified response are separate claims. Do not convert a new V label into a numerical affinity or guaranteed improvement."
+        },
+        {
+          "title": "A class switch changes a different part of the comparison",
+          "body": "Class-switch recombination changes the heavy-chain constant region and associated effector properties while preserving the rearranged variable region during that event. Later variable-region mutations can change binding. The stipulated transition (V0, Cmu) to (V0, Cgamma) changes the constant-region category while retaining the V label. That is the feature comparison used here for a switch event. It does not prove identical results in every antibody format or assay, and it does not measure protection. Keep the molecular event separate from a later functional comparison."
+        },
+        {
+          "title": "Selection asks which variants contribute afterward",
+          "body": "Mutation concerns which sequence differences arise; selection concerns which variants are retained or expanded in a defined response. In their experimental germinal-center study, Gitlin and colleagues connected antigen capture and presentation to T-cell help with regulated expansion and diversification. That bounded result helps explain why the responding population need not be a random sample of all variants. It is not proof that every mutation improves affinity, that sequence frequency alone measures binding, or that the same quantitative rule holds in every response."
+        },
+        {
+          "title": "Endpoints leave intermediate events unobserved",
+          "body": "Stipulate a known fictional lineage beginning at (V0, Cmu) and ending at (V1, Cgamma), with no intermediate record. Both labels differ. The symbolic operations can be written as V-change then C-change, or C-change then V-change, and both arrive at the displayed endpoint. This establishes missing information in the worksheet, not equal biological frequencies, independent molecular operations or permission to invent an actual clone history. Time-resolved lineage and molecular evidence would be needed to reconstruct that history."
+        },
+        {
+          "title": "A shared factor does not make two outcomes identical",
+          "body": "Muramatsu and colleagues studied AID perturbation in experimental cell and animal systems and found effects on both class switching and variable-region mutation accumulation. A shared requirement links outcomes without making the measured outcomes the same process. The historical title describes a potential RNA-editing role; it is not a current mechanism established by that title. Petersen-Mahrt and colleagues later used AID expression in E. coli and a DNA-mutation readout to support a DNA-deamination explanation. That distinct model is evidence to interpret in context, not a complete account of mammalian repair, regulation or every antibody-diversification outcome."
+        },
+        {
+          "title": "Keep a typical pattern separate from an individual history",
+          "body": "Roco and colleagues examined class-switch timing using multiple approaches. In the analyzed lineages, most inferred switch events preceded the onset of somatic hypermutation, with switching greatly diminished in germinal centers. This qualifies a simple teaching picture that places switching inside a germinal-center cycle. It does not mean switching never occurs there, supply a missing intermediate for this fictional clone, or make the two symbolic paths equally frequent. A population pattern cannot substitute for an individual lineage record."
+        },
+        {
+          "title": "Match the proposed conclusion to the missing readout",
+          "body": "To establish an actual variable-sequence difference, inspect sequence observations and their lineage context. To establish a switch, examine the relevant molecular rearrangement and context. To compare binding, use a suitable functional measurement with stated format, normalization and uncertainty. To infer selection, examine contribution to the response rather than a label alone. The worksheet supplies none of those measurements and no evidence of clinical protection. Use its explicit assumptions to practice the distinctions, then stop at the model boundary."
+        }
+      ],
+      "objectives": [
+        "Distinguish variable-region mutation from heavy-chain constant-region switching.",
+        "Separate a new sequence variant from selection or measured binding improvement.",
+        "Explain why a shared experimental requirement does not identify two outcomes as one process.",
+        "Keep a symbolic endpoint comparison separate from the timing of a real lineage."
+      ],
+      "prerequisites": [
+        "innate-adaptive",
+        "genetics-genome-foundations"
+      ],
+      "question": {
+        "prompt": "In a fictional comparison explicitly stipulated to be a class-switch event, (V0, Cmu) becomes (V0, Cgamma), with the light chain held fixed. Which feature comparison is supported?",
+        "options": [
+          {
+            "text": "The constant-region category changed while the rearranged variable-region label stayed fixed.",
+            "reason": "The stipulated switch changes Cmu to Cgamma and retains V0. Binding improvement, selection and clinical protection were not measured."
+          },
+          {
+            "text": "The unchanged V0 label proves that every assay will give an identical binding result.",
+            "reason": "A retained sequence label is not a measurement across every antibody format or assay. The model supplies no such results."
+          },
+          {
+            "text": "The new constant-region label proves a new variable-region sequence was selected.",
+            "reason": "The V label remains V0. A class change does not establish a new variable sequence or selection of such a sequence."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "Two feature changes without an intermediate record",
+        "prompt": "A known fictional lineage starts at (V0, Cmu) and is later observed at (V1, Cgamma). Only variable-label changes and constant-category changes are allowed in this symbolic worksheet, and the light chain is fixed. What changed, and can the observed endpoints identify the order?",
+        "solution": [
+          "Compare each coordinate separately: V0 differs from V1, and Cmu differs from Cgamma. Both stipulated features differ.",
+          "Path A is (V0, Cmu) → (V1, Cmu) → (V1, Cgamma). Path B is (V0, Cmu) → (V0, Cgamma) → (V1, Cgamma). Each is a symbolic completion of the missing record.",
+          "The displayed endpoints therefore do not identify the intermediate or order. The worksheet does not prove that these paths are equally likely or both occur in the biological system under study.",
+          "A population timing result does not fill in this individual record. Neither path measures affinity, selection, protection or a patient outcome."
+        ]
+      },
+      "recall": {
+        "prompt": "Explain why mutation, selection and class switching are three different questions.",
+        "answer": "Mutation describes a sequence alteration, selection concerns which variants contribute afterward, and class switching changes the heavy-chain constant-region arrangement while retaining the rearranged variable region during that event. The worksheet labels do not measure binding or reconstruct unobserved biological intermediates."
+      },
+      "oralExamination": [
+        {
+          "prompt": "Does V0 becoming V1 already establish improved binding?",
+          "answer": "No. It records a stipulated sequence difference. Binding improvement needs an appropriate comparison, and selection requires evidence about which variants contributed to the response."
+        },
+        {
+          "prompt": "Why does one AID perturbation affecting two outcomes not make them identical?",
+          "answer": "A common requirement can participate in different processes. Keep the class-switch readout and the variable-region mutation readout distinct; the perturbation does not identify every downstream step."
+        },
+        {
+          "prompt": "Can the two symbolic paths be described as equally common biological histories?",
+          "answer": "No. They show that endpoint labels alone omit information. The exercise supplies no frequencies or biochemical independence, and a typical population pattern cannot reconstruct the individual missing record."
+        },
+        {
+          "prompt": "What stays fixed during the stipulated class-switch comparison?",
+          "answer": "The rearranged heavy-chain variable label stays V0 and the light chain is fixed by assumption, while Cmu becomes Cgamma. This identifies the modeled feature change, not a universal functional-assay result."
+        }
+      ],
+      "summaryChecklist": [
+        "Name variable and constant features separately.",
+        "Distinguish mutation from selection.",
+        "State what the class-switch comparison preserves.",
+        "Avoid inferring event order from endpoints alone.",
+        "Match binding, lineage and protection claims to their own evidence."
+      ],
+      "related": [
+        "antigen-presentation",
+        "genetics-genome-foundations",
+        "protein-structure"
+      ],
+      "updatedAt": "2026-11-04",
+      "minutes": 20
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",
