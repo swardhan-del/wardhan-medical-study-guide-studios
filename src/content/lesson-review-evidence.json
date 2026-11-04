@@ -352,6 +352,50 @@
       "independent": false,
       "record": "docs/reviews/auditory-reference-timing-20261104.md",
       "contentSha256": "3fd8410b3683a272152f126ef71ecc7b6471d991a68b0957ba6baaf5a79b64f5"
+    },
+    {
+      "id": "reproductive-histology-editorial-20261104",
+      "lessonId": "reproductive-histology",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source/editorial and geometric review",
+      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-histology-20261104.md",
+      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
+    },
+    {
+      "id": "reproductive-histology-readability-20261104",
+      "lessonId": "reproductive-histology",
+      "scope": "readability",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source/editorial and geometric review",
+      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-histology-20261104.md",
+      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
+    },
+    {
+      "id": "reproductive-histology-accessibility-20261104",
+      "lessonId": "reproductive-histology",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted focused browser and visual review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-histology-20261104.md",
+      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
+    },
+    {
+      "id": "reproductive-histology-assessment-20261104",
+      "lessonId": "reproductive-histology",
+      "scope": "assessment",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted focused browser and visual review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-histology-20261104.md",
+      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
     }
   ]
 }

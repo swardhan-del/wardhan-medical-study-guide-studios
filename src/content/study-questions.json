@@ -2108,6 +2108,29 @@
           "explanation": "The diffusion path is longer, so unchanged area alone cannot preserve the rate under this model."
         }
       ]
+    },
+    {
+      "id": "studio-apply-reproductive-histology",
+      "topic": "reproductive-histology",
+      "title": "Observation versus whole-follicle inference",
+      "subject": "histology",
+      "href": "/library/reproductive-histology#studio-practice",
+      "prompt": "In a fictional follicular profile, no cavity is visible in the available section. Which conclusion is best supported?",
+      "answer": 0,
+      "options": [
+        {
+          "text": "No cavity is demonstrated in this section",
+          "explanation": "This states the actual observation. A feature outside the section plane can remain unseen."
+        },
+        {
+          "text": "No cavity exists anywhere in the whole follicle",
+          "explanation": "That stronger claim needs evidence beyond the single profile. The section-plane model gives a counterexample."
+        },
+        {
+          "text": "The person’s exact cycle day has been identified",
+          "explanation": "The observation does not provide an exact cycle date or clinical outcome."
+        }
+      ]
     }
   ]
 }
