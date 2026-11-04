@@ -1616,9 +1616,9 @@
     {
       "id": "biostatistics-10",
       "subject": "biostatistics",
-      "title": "Biostatistics: original course to develop",
-      "sourceId": "original-course-proposal",
-      "sourceLabel": "New authoring required; no existing authored course established",
+      "title": "Biostatistics: foundations and planned topics",
+      "sourceId": "original-statistics-foundations",
+      "sourceLabel": "Four original source-checked introductions; remaining topics are planned",
       "topics": [
         {
           "id": "biostatistics-01",
@@ -1629,14 +1629,14 @@
         {
           "id": "biostatistics-02",
           "title": "Distributions and graphical summaries",
-          "status": "planned",
-          "href": null
+          "status": "introduction-available",
+          "href": "/library/histogram-bin-counts-example"
         },
         {
           "id": "biostatistics-03",
           "title": "Mean median and variability",
-          "status": "planned",
-          "href": null
+          "status": "introduction-available",
+          "href": "/library/mean-median-extreme-value-comparison"
         },
         {
           "id": "biostatistics-04",
@@ -1647,8 +1647,8 @@
         {
           "id": "biostatistics-05",
           "title": "Sampling and standard error",
-          "status": "planned",
-          "href": null
+          "status": "introduction-available",
+          "href": "/library/standard-deviation-standard-error"
         },
         {
           "id": "biostatistics-06",

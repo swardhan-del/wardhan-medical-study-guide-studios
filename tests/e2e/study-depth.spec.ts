@@ -24,8 +24,8 @@ test('map filters separate available introductions from planned adaptations',asy
   await expect(page.getByRole('heading',{level:1})).toHaveText('See how the subjects connect');
   await page.getByRole('combobox',{name:'Subject',exact:true}).selectOption('biostatistics');
   await page.getByRole('combobox',{name:'Availability',exact:true}).selectOption('available');
-  await expect(page.getByRole('status')).toContainText('0 topics');
-  await expect(page.getByText(/No topics match/)).toBeVisible();
+  await expect(page.getByRole('status')).toContainText('3 topics');
+  await expect(page.getByRole('link',{name:'Distributions and graphical summaries'})).toBeVisible();
   await page.getByRole('button',{name:'Clear filters'}).click();
   await page.getByRole('searchbox',{name:'Find a topic'}).fill('myelin');
   await expect(page.getByRole('link',{name:'Myelin and supporting cells'})).toBeVisible();

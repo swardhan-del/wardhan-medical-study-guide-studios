@@ -49,14 +49,14 @@ export default function SubjectsPage() {
           </article>
         ))}
       </section>
-      <section className="study-panel" aria-labelledby="planned-subjects"><h2 id="planned-subjects">Reference collection without published lessons</h2><p>Biostatistics does not yet have public lessons. Choose one of the seven subjects above to study now.</p><div className="quick-links"><Link href="/subjects/biostatistics">Biostatistics availability</Link></div></section>
+      <section className="study-panel" aria-labelledby="statistics-foundations"><h2 id="statistics-foundations">Biostatistics foundations</h2><p>Start with four worked introductions to histograms, centre, spread and the uncertainty of a mean. The wider statistics curriculum is still being developed.</p><div className="quick-links"><Link href="/library/histogram-bin-counts-example">Start with histograms</Link><Link href="/subjects/biostatistics">Explore Biostatistics</Link></div></section>
       <h2 className="native-section-title">Find a topic across subjects</h2>
       <TopicSearch
         items={taxonomyNodes.map((n) => ({
           id: n.id,
           title: taxonomyNodes.some(other => other.id !== n.id && other.subject === n.subject && other.title === n.title) ? `${n.title} — ${n.parentId ? "focused topic" : "topic collection"}` : n.title,
           subject: librarySubjects.find(s => s.id === n.subject)?.learningSubject || n.subject,
-          subjectTitle: studySubjects.find(s => s.id === (librarySubjects.find(item => item.id === n.subject)?.learningSubject || n.subject))!.title,
+          subjectTitle: studySubjects.find(s => s.id === (librarySubjects.find(item => item.id === n.subject)?.learningSubject || n.subject))?.title || librarySubjects.find(s => s.id === n.subject)!.title,
           kind: n.kind,
           count: recordsForNode(n).length,
         }))}

@@ -32,6 +32,7 @@ import { CorrectionLink } from "./correction-link";
 import Link from "next/link";
 import { BiophysicsLessonSequence } from "./biophysics-course";
 import { subjectInterests } from "@/content/subjects";
+import { librarySubjects } from "@/lib/taxonomy";
 import sourceData from "@/content/library-sources.json";
 import { publicCatalog } from "@/lib/catalog";
 import { resourceHref } from "@/lib/catalog-types";
@@ -55,7 +56,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
   const foundation = foundations[lesson.subject];
-  const subject = subjectInterests.find((s) => s.id === lesson.subject)!;
+  const subject = subjectInterests.find((s) => s.id === lesson.subject) ?? librarySubjects.find((s) => s.id === lesson.subject)!;
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
   const topicReferences = references as Record<
     string,
@@ -117,7 +118,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           <section className="study-panel lesson-preparation" aria-labelledby="lesson-objectives">
             <h2 id="lesson-objectives">What you will be able to explain</h2>
             <ul>{(lesson.objectives ?? [lesson.summary]).map(objective => <li key={objective}>{objective}</li>)}</ul>
-            <p><Link href={`/learn/foundations/${lesson.subject}`}>New to this subject? Learn the starting vocabulary</Link></p>
+            {foundation && <p><Link href={`/learn/foundations/${lesson.subject}`}>New to this subject? Learn the starting vocabulary</Link></p>}
             {foundation && <details><summary>Subject vocabulary reminder</summary><dl className="foundation-terms">{foundation.terms.map(([term, definition]) => <div key={term}><dt>{term}</dt><dd>{definition}</dd></div>)}</dl><a href={foundation.source}>Vocabulary reference</a></details>}
             {lesson.prerequisites && <><h3>Useful preparation</h3>{lesson.subject === "anatomy" && <p>Know anatomical position, planes and directional terms, and distinguish an artery, vein, nerve and duct. The previous lesson is a useful sequence step; use the volume contents if you already know it.</p>}<ul>{lesson.prerequisites.map(id => {
               const resource = publicCatalog.find(r => r.id === id);
@@ -138,7 +139,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
                     <span className="concept-number" aria-hidden="true">
                       0{index + 1}
                     </span>
-                    <span>{step.title}</span>
+                    <span className="concept-step-title">{step.title}</span>
                     <span className="concept-expand" aria-hidden="true">
                       +
                     </span>
@@ -247,7 +248,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           {related.map((r) => (
             <Link className="concept-related" key={r.id} href={resourceHref(r)}>
               <span>
-                {subjectInterests.find((s) => s.id === r.subject)?.title}
+                {(subjectInterests.find((s) => s.id === r.subject) ?? librarySubjects.find((s) => s.id === r.subject))?.title}
               </span>
               <strong>{r.title} →</strong>
             </Link>
@@ -301,9 +302,9 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
       <nav className="action-row concept-end" aria-label="Continue studying">
         <Link
           className="button button-primary"
-          href={`/study/${subject.id}`}
+          href={subjectInterests.some(s => s.id === subject.id) ? `/study/${subject.id}` : `/subjects/${subject.id}`}
         >
-          {subject.title} learning path →
+          {subject.title} {subjectInterests.some(s => s.id === subject.id) ? "learning path" : "lessons"} →
         </Link>
         <Link className="text-link" href="/library">
           Search the library

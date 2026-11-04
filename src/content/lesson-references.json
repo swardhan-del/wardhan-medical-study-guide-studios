@@ -1298,5 +1298,25 @@
         "url": "https://journals.physiology.org/doi/10.1152/advan.00083.2016"
       }
     ]
+  },
+  "histogram-bin-counts-example": {
+    "title": "NIST Dataplot: Histogram",
+    "url": "https://www.itl.nist.gov/div898/software/dataplot/refman1/auxillar/histogra.htm",
+    "checkedAt": "2026-11-03"
+  },
+  "mean-median-extreme-value-comparison": {
+    "title": "NIST: Measures of Location",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+    "checkedAt": "2026-11-03"
+  },
+  "same-center-different-data-spread": {
+    "title": "NIST: Measures of Scale",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+    "checkedAt": "2026-11-03"
+  },
+  "standard-deviation-standard-error": {
+    "title": "NIST: Confidence Limits for the Mean",
+    "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+    "checkedAt": "2026-11-03"
   }
 }

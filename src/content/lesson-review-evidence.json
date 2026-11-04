@@ -88,6 +88,138 @@
       "independent": false,
       "record": "docs/reviews/nitrogen-metabolism-20261102.md",
       "contentSha256": "09c4bd2999953434e103e72e023b9e90adc064afd7e886078ee071f4deb6453c"
+    },
+    {
+      "id": "histogram-bin-counts-example-editorial-20261103",
+      "lessonId": "histogram-bin-counts-example",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "b675d949520d5b2644eb9140da39a5f6999b2d372405de020d3bbbab051b8616"
+    },
+    {
+      "id": "histogram-bin-counts-example-readability-20261103",
+      "lessonId": "histogram-bin-counts-example",
+      "scope": "readability",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "b675d949520d5b2644eb9140da39a5f6999b2d372405de020d3bbbab051b8616"
+    },
+    {
+      "id": "mean-median-extreme-value-comparison-editorial-20261103",
+      "lessonId": "mean-median-extreme-value-comparison",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "4a7761a0e88f0b49039af851ffc34bca9f20d2b2cb6fa0c8401f1a87daa7bc04"
+    },
+    {
+      "id": "mean-median-extreme-value-comparison-readability-20261103",
+      "lessonId": "mean-median-extreme-value-comparison",
+      "scope": "readability",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "4a7761a0e88f0b49039af851ffc34bca9f20d2b2cb6fa0c8401f1a87daa7bc04"
+    },
+    {
+      "id": "same-center-different-data-spread-editorial-20261103",
+      "lessonId": "same-center-different-data-spread",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "f5af113ce9a26be4cb7f2005b6f0d9732aba547719e7cf70251b462d77093f9c"
+    },
+    {
+      "id": "same-center-different-data-spread-readability-20261103",
+      "lessonId": "same-center-different-data-spread",
+      "scope": "readability",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "f5af113ce9a26be4cb7f2005b6f0d9732aba547719e7cf70251b462d77093f9c"
+    },
+    {
+      "id": "standard-deviation-standard-error-editorial-20261103",
+      "lessonId": "standard-deviation-standard-error",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "956f299c00bb630ab2fc18ebf2decf37db6d99743764c95a4ea26c272d07e386"
+    },
+    {
+      "id": "standard-deviation-standard-error-readability-20261103",
+      "lessonId": "standard-deviation-standard-error",
+      "scope": "readability",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "956f299c00bb630ab2fc18ebf2decf37db6d99743764c95a4ea26c272d07e386"
+    },
+    {
+      "id": "histogram-bin-counts-example-accessibility-20261103",
+      "lessonId": "histogram-bin-counts-example",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "b675d949520d5b2644eb9140da39a5f6999b2d372405de020d3bbbab051b8616"
+    },
+    {
+      "id": "mean-median-extreme-value-comparison-accessibility-20261103",
+      "lessonId": "mean-median-extreme-value-comparison",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "4a7761a0e88f0b49039af851ffc34bca9f20d2b2cb6fa0c8401f1a87daa7bc04"
+    },
+    {
+      "id": "same-center-different-data-spread-accessibility-20261103",
+      "lessonId": "same-center-different-data-spread",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "f5af113ce9a26be4cb7f2005b6f0d9732aba547719e7cf70251b462d77093f9c"
+    },
+    {
+      "id": "standard-deviation-standard-error-accessibility-20261103",
+      "lessonId": "standard-deviation-standard-error",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-03",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant; no independent statistical or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/biostatistics-foundations-20261103.md",
+      "contentSha256": "956f299c00bb630ab2fc18ebf2decf37db6d99743764c95a4ea26c272d07e386"
     }
   ]
 }

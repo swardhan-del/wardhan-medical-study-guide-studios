@@ -7,6 +7,7 @@ export const subjects = [
   "biochemistry",
   "physiology",
   "genetics",
+  "biostatistics",
 ];
 const fields = [
   "id",

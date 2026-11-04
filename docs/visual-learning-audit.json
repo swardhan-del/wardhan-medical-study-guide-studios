@@ -3244,6 +3244,50 @@
       "visualIds": [],
       "figureIds": [],
       "rationale": "Retain the source-checked Phase Four teaching comparison and its full text equivalent, observation prompt and scientific reference, using the shared visual component."
+    },
+    {
+      "id": "histogram-bin-counts-example",
+      "route": "/library/histogram-bin-counts-example",
+      "title": "Histograms: count observations within defined bins",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "This task is supported by fully written invented data and explicit worked calculations. No third-party image is reproduced; endpoint conventions, units and assumptions are expressed in readable text."
+    },
+    {
+      "id": "mean-median-extreme-value-comparison",
+      "route": "/library/mean-median-extreme-value-comparison",
+      "title": "Mean and median: effect of one extreme value",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "This task is supported by fully written invented data and explicit worked calculations. No third-party image is reproduced; endpoint conventions, units and assumptions are expressed in readable text."
+    },
+    {
+      "id": "same-center-different-data-spread",
+      "route": "/library/same-center-different-data-spread",
+      "title": "Same centre, different spread",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "This task is supported by fully written invented data and explicit worked calculations. No third-party image is reproduced; endpoint conventions, units and assumptions are expressed in readable text."
+    },
+    {
+      "id": "standard-deviation-standard-error",
+      "route": "/library/standard-deviation-standard-error",
+      "title": "Standard deviation and standard error: what varies?",
+      "kind": "Study lesson",
+      "action": "retain-text-practice",
+      "components": [],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "This task is supported by fully written invented data and explicit worked calculations. No third-party image is reproduced; endpoint conventions, units and assumptions are expressed in readable text."
     }
   ]
 }

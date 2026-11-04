@@ -922,6 +922,21 @@
       "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
       "coverage": "This source section does not yet have a dedicated web lesson.",
       "practiceHref": null
+    },
+    {
+      "id": "biostatistics-foundations",
+      "subject": "biostatistics",
+      "title": "Statistical foundations",
+      "lessonIds": [
+        "histogram-bin-counts-example",
+        "mean-median-extreme-value-comparison",
+        "same-center-different-data-spread",
+        "standard-deviation-standard-error"
+      ],
+      "basis": "Original source-checked statistical explanations with fictional values.",
+      "coverage": "Four introductory lessons only; the wider statistics course is planned.",
+      "practiceHref": null,
+      "number": "01"
     }
   ]
 }

@@ -3651,6 +3651,74 @@
     },
     {
       "status": "public",
+      "updatedAt": "2026-11-03",
+      "bytes": 0,
+      "id": "histogram-bin-counts-example",
+      "title": "Histograms: count observations within defined bins",
+      "subject": "biostatistics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Turn a small invented dataset into bin counts, explain boundary conventions, and distinguish a change in grouping from a change in the observations.",
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Histograms"
+      ],
+      "minutes": 12
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-03",
+      "bytes": 0,
+      "id": "mean-median-extreme-value-comparison",
+      "title": "Mean and median: effect of one extreme value",
+      "subject": "biostatistics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Calculate two measures of centre, trace the effect of changing one value, and explain why a summary must be chosen in context.",
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Mean and median"
+      ],
+      "minutes": 12
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-03",
+      "bytes": 0,
+      "id": "same-center-different-data-spread",
+      "title": "Same centre, different spread",
+      "subject": "biostatistics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Compare datasets with identical centres but different ranges, then explain what the range omits and what a small sample cannot establish.",
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Data spread"
+      ],
+      "minutes": 12
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-03",
+      "bytes": 0,
+      "id": "standard-deviation-standard-error",
+      "title": "Standard deviation and standard error: what varies?",
+      "subject": "biostatistics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Distinguish the spread of observations from the sampling uncertainty of a mean, calculate an estimated standard error, and state the assumptions that make the calculation meaningful.",
+      "tags": [
+        "Biostatistics",
+        "Statistical foundations",
+        "Sampling uncertainty"
+      ],
+      "minutes": 12
+    },
+    {
+      "status": "public",
       "updatedAt": "2026-09-06",
       "bytes": 0,
       "id": "cell-signaling",

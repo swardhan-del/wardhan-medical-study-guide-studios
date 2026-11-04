@@ -58,7 +58,7 @@
     {
       "id": "biostatistics",
       "title": "Biostatistics",
-      "description": "The medical statistics reference collection.",
+      "description": "Four introductory lessons on histograms, centre, spread and uncertainty of a mean, with worked fictional examples and explained questions. This is a growing collection, not a complete statistics course.",
       "learningSubject": null
     },
     {
@@ -2858,6 +2858,20 @@
       "kind": "topic",
       "resources": [
         "axial-skeleton-development"
+      ]
+    },
+    {
+      "id": "biostatistics-foundations",
+      "title": "Statistical foundations",
+      "description": "Count observations, compare centre and spread, then distinguish SD from SE.",
+      "subject": "biostatistics",
+      "parentId": null,
+      "kind": "topic",
+      "resources": [
+        "histogram-bin-counts-example",
+        "mean-median-extreme-value-comparison",
+        "same-center-different-data-spread",
+        "standard-deviation-standard-error"
       ]
     }
   ]
