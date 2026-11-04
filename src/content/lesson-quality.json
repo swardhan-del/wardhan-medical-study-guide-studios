@@ -732,6 +732,84 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "synonymous-variant-sequence-readout-scope",
+      "title": "Synonymous variants: separate coding consequence from measured function",
+      "subject": "genetics",
+      "topic": "Sequence annotation and scope of measured function",
+      "slug": "synonymous-variant-sequence-readout-scope",
+      "learnerLevel": "Introductory medical genetics",
+      "objectives": [
+        "State what a synonymous coding annotation does and does not establish.",
+        "Match sequence, RNA and protein claims to the readout needed.",
+        "Keep experimental counterexamples separate from individual clinical interpretation.",
+        "Trace a single fictional substitution through stated frames and an opposite-strand display."
+      ],
+      "sources": [
+        {
+          "title": "Presnyak et al. (2015), codon optimality and mRNA stability — primary study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25768907/",
+          "publisherOrAuthor": "Presnyak et al. (2015), codon optimality and mRNA stability — primary study",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Duan et al. (2003), selected synonymous DRD2 changes — primary study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12554675/",
+          "publisherOrAuthor": "Duan et al. (2003), selected synonymous DRD2 changes — primary study",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "HGVS Nomenclature: reference-sequence requirements",
+          "url": "https://hgvs-nomenclature.org/stable/background/refseq/",
+          "publisherOrAuthor": "HGVS Nomenclature",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NCBI: The Genetic Codes, standard code table 1",
+          "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi",
+          "publisherOrAuthor": "NCBI",
+          "accessedAt": "2026-11-04",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "All short fictional windows, triplets, coordinate directions and code results are explicitly stated in readable text and worked reasoning. No source image or clinical report.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Fictional coding contexts and readouts; no actual locus, complete variant report or clinical classification.",
+        "Primary abstract/indexed targeted text scope; no full-paper/figure review claimed.",
+        "AI-assisted review; no independent specialist or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "synonymous-variant-sequence-readout-scope-editorial-20261104",
+        "synonymous-variant-sequence-readout-scope-readability-20261104",
+        "synonymous-variant-sequence-readout-scope-accessibility-20261104",
+        "synonymous-variant-sequence-readout-scope-assessment-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "translation",
+          "rna-processing"
+        ],
+        "related": [
+          "translation",
+          "rna-processing",
+          "genetic-testing"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

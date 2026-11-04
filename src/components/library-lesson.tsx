@@ -52,7 +52,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const anatomyFoundations = lesson.id === "anatomy-foundations";
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
-  const sortingPractice = ["peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling"].includes(lesson.id);
+  const reviewedSupplementalPractice = ["peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
@@ -110,7 +110,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <a href="#worked-example-heading">Worked Example</a><a href="#knowledge-check-heading">Knowledge Check</a>
         <a href="#application-heading">Clinical and Applied Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a>
         <a href="#recap">Recall practice</a><a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
-      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{sortingPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
+      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{reviewedSupplementalPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <TopicGuideLinks lessonId={lesson.id} />
       <div className="concept-layout">
@@ -238,13 +238,13 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
             <p className="muted-note">
               Try explaining the mechanism aloud before revealing the answer.
             </p>
-            {sortingPractice && lesson.oralExamination?.map((question, index) => <div key={question.prompt}>
+            {reviewedSupplementalPractice && lesson.oralExamination?.map((question, index) => <div key={question.prompt}>
               <h3>Prompt {index + 1}</h3>
               <p>{question.prompt}</p>
               <details><summary>Model response {index + 1}</summary><p>{question.answer}</p></details>
             </div>)}
           </section>
-          {sortingPractice && lesson.summaryChecklist && <section className="study-panel" aria-labelledby="summary-checklist-title">
+          {reviewedSupplementalPractice && lesson.summaryChecklist && <section className="study-panel" aria-labelledby="summary-checklist-title">
             <h2 id="summary-checklist-title">Summary Checklist</h2>
             <p>Mark a point when you can explain it without notes. Your selections are saved in this browser when storage is available.</p>
             <ul>{lesson.summaryChecklist.map((label, index) => <li key={label}><SavedSelfCheck id={`${lesson.id}-summary-${index + 1}`} label={label}/></li>)}</ul>

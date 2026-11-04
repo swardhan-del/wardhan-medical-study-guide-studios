@@ -2928,6 +2928,17 @@
       "resources": [
         "lysosomal-m6p-tag-receptor-recycling"
       ]
+    },
+    {
+      "id": "topic-synonymous-variant-sequence-readout-scope",
+      "title": "Synonymous variants: separate coding consequence from measured function",
+      "description": "Trace one fictional substitution through explicit strand and reading-frame contexts, then separate a coding prediction from RNA and protein measurements.",
+      "subject": "genetics",
+      "parentId": "genetics-inheritance",
+      "kind": "topic",
+      "resources": [
+        "synonymous-variant-sequence-readout-scope"
+      ]
     }
   ]
 }

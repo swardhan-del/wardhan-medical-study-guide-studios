@@ -8953,6 +8953,132 @@
       ]
     },
     {
+      "id": "synonymous-variant-sequence-readout-scope",
+      "subject": "genetics",
+      "title": "Synonymous variants: separate coding consequence from measured function",
+      "summary": "Trace one fictional substitution through explicit strand and reading-frame contexts, then separate a coding prediction from RNA and protein measurements.",
+      "tags": [
+        "Genetics",
+        "Inheritance and variation",
+        "synonymous",
+        "variant",
+        "codon",
+        "reading frame",
+        "reverse complement",
+        "RNA abundance"
+      ],
+      "source": "original-synonymous-variant-sequence-readout-scope",
+      "section": "Sequence context, coding consequence and the scope of functional readouts",
+      "steps": [
+        {
+          "title": "Start with the transcript and the claim",
+          "body": "For a specified coding transcript and genetic code, a synonymous coding substitution leaves the encoded amino acid unchanged at that position. This describes a coding consequence. It does not establish that RNA processing, RNA abundance, translation or every biological outcome is unchanged. Keep the reference transcript and annotation context explicit; the label alone is not a pathogenicity classification."
+        },
+        {
+          "title": "Fix the reference and the local coordinates",
+          "body": "Use this fictional internal DNA window, written in the plus-strand 5′→3′ direction: reference ATGAAACCC; altered ATGAAGCCC. Number the displayed bases 1 through 9. Exactly position 6 changes A→G. These are local exercise coordinates, not a real locus or a complete variant report. A real description needs an identifiable reference and appropriate annotation; RefSeq and Ensembl identifiers require their sequence version. This nine-base fragment supplies neither a complete transcript nor its start site. It does not establish that any stipulated product is expressed."
+        },
+        {
+          "title": "Hold the substitution fixed while changing the stated frame",
+          "body": "Assume the standard genetic code (table 1) and use the DNA alphabet: the code table writes T where the corresponding RNA codon uses U. In fictional coding context P1, the affected triplet uses plus positions 4, 5, 6: AAA→AAG, lysine→lysine. It is synonymous for P1. Context P2 instead uses plus positions 6, 7, 8: ACC→GCC, threonine→alanine. The same changed base now lies at a different place in a triplet. These are stipulated internal coding fragments in different hypothetical annotations, not alternative observations of a real transcript or proof of overlapping expression. The consequence belongs to the stated context."
+        },
+        {
+          "title": "Reverse and complement before reading the other strand",
+          "body": "The opposite strand is complementary and antiparallel. Written 5′→3′, the reverse complements of the full windows are reference GGGTTTCAT and altered GGGCTTCAT. Plus position 6 appears at opposite-display position 9 − 6 + 1 = 4. Its A→G change becomes T→C. In fictional opposite-strand coding context M, read the complements of plus positions 6, 5, 4 in that order: TTT→CTT, phenylalanine→leucine under the standard code. Complementing without reversing can put the selected triplet in the wrong orientation. This annotation exercise does not determine a biological effect or a clinical classification."
+        },
+        {
+          "title": "Separate amount from the process that produces it",
+          "body": "In a fictional construct comparison, A and B have the same predicted amino-acid sequence. Suppose normalized RNA amounts are 100 and 50 arbitrary units, while normalized protein amounts are 100 and 40. These invented steady-state amounts do not directly measure an RNA decay rate or translation rate. A difference in a pool can have several causes. A suitable time-course or other process-specific experiment is needed to distinguish them. Protein abundance also does not measure activity per molecule. No replicates, uncertainty or mechanism are established by these illustrative values."
+        },
+        {
+          "title": "Use primary experiments as bounded counterexamples",
+          "body": "Presnyak and colleagues report synonymous recoding experiments associated with altered mRNA stability in a budding-yeast system. [1] That provides a counterexample to the universal claim that an unchanged amino-acid sequence guarantees unchanged RNA behavior; it does not predict the effect of every single human variant. Duan and colleagues report effects of selected synonymous changes on DRD2 expression-related readouts and dependence on the tested combination of changes. [2] A result for specific constructs and conditions is not an individual clinical interpretation or proof that all synonymous variants are harmful."
+        },
+        {
+          "title": "Build a readout ladder",
+          "body": "First ask whether the intended DNA change is verified. Next separate the predicted coding sequence from observed RNA processing or isoform structure. Then ask what was measured: steady-state RNA amount, an RNA turnover time-course, protein amount or protein function under a specified normalization. A computational folding prediction is a prediction rather than a direct structure measurement. Different readouts can support different parts of a mechanism; none should silently stand in for all the others."
+        },
+        {
+          "title": "Practice stopping at the supported conclusion",
+          "body": "An original worksheet reports identical predicted amino-acid sequences and different normalized RNA amounts. The supported statement is that the specified coding prediction agrees while the fictional RNA amounts differ. Do not conclude from those facts alone that translation is slower, protein folding is altered, an individual has a disease or an intervention will help. Clinical interpretation needs evidence beyond this teaching exercise. Reuse the existing RNA-processing and turnover explanations for those mechanisms instead of importing a full textbook chapter."
+        }
+      ],
+      "question": {
+        "prompt": "Fictional constructs A and B have the same predicted amino-acid sequence but RNA amounts of 100 and 50 arbitrary units. What follows from those statements alone?",
+        "options": [
+          {
+            "text": "The specified coding prediction is unchanged, but a steady-state RNA amount differs; the cause needs separate evidence.",
+            "reason": "A sequence annotation and an amount measurement answer different questions. No RNA decay or translation rate was directly measured."
+          },
+          {
+            "text": "The unchanged coding prediction proves all molecular and clinical outcomes are unchanged.",
+            "reason": "Synonymous coding consequence does not guarantee absence of effects at other levels."
+          },
+          {
+            "text": "The lower RNA amount proves translation slowed by exactly one half.",
+            "reason": "RNA abundance is not a translation-rate measurement, and these values contain no process-specific or uncertainty evidence."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Why does an unchanged predicted amino acid leave other questions unanswered?",
+        "answer": "The coding annotation answers one question for a named reference, coding context and genetic code. RNA processing, RNA abundance, turnover, protein amount and protein activity are different readouts. A synonymous label does not measure those processes or classify a real variant clinically."
+      },
+      "related": [
+        "translation",
+        "rna-processing",
+        "genetic-testing"
+      ],
+      "updatedAt": "2026-11-04",
+      "minutes": 18,
+      "objectives": [
+        "State what a synonymous coding annotation does and does not establish.",
+        "Match sequence, RNA and protein claims to the readout needed.",
+        "Keep experimental counterexamples separate from individual clinical interpretation.",
+        "Trace a single fictional substitution through stated frames and an opposite-strand display."
+      ],
+      "prerequisites": [
+        "translation",
+        "rna-processing"
+      ],
+      "workedExample": {
+        "title": "One base, three explicit annotation contexts",
+        "prompt": "For plus-strand 5′→3′ reference ATGAAACCC and altered ATGAAGCCC, identify the changed local position. Compare context P1 (plus 4,5,6), context P2 (plus 6,7,8) and context M (complements of plus 6,5,4, read in that order). Assume standard code table 1 and internal coding fragments, not initiation sites. Does any row establish RNA abundance or clinical significance?",
+        "solution": [
+          "The only difference is local plus position 6: A→G. The exercise specifies fragments and annotations; it does not identify a real gene or transcript.",
+          "P1 is AAA→AAG, lysine→lysine: synonymous for P1. P2 is ACC→GCC, threonine→alanine. Different stipulated triplet boundaries explain the different codon-level results.",
+          "Reverse complements of the full windows are GGGTTTCAT and GGGCTTCAT. Plus position 6 maps to displayed opposite position 4, where T→C. Context M is TTT→CTT, phenylalanine→leucine.",
+          "None of these code lookups measures RNA processing, RNA amount, translation, protein amount or activity. A real classification requires its own reference and evidence; no patient conclusion follows."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why can P1 and P2 have different consequences for the same changed base?",
+          "answer": "The coding-triplet boundaries differ. Plus position 6 is third in P1 (AAA→AAG) but first in P2 (ACC→GCC). Hold the underlying substitution fixed and state the annotation before naming its consequence."
+        },
+        {
+          "prompt": "What changes when the plus window is displayed on the opposite strand?",
+          "answer": "Reverse the order and complement the bases to write the other strand 5′→3′. In this nine-base window, plus position 6 becomes displayed position 4 and A→G becomes T→C. This is a new description of the same stipulated change, not a second mutation."
+        },
+        {
+          "prompt": "Does RNA amount 50 rather than 100 prove that decay doubled or translation halved?",
+          "answer": "No. These invented steady-state amounts do not identify the underlying production, processing or loss rates. A process-specific experiment and uncertainty evidence would be needed. Protein abundance and protein function are also separate readouts."
+        },
+        {
+          "prompt": "What do the named primary experiments contribute?",
+          "answer": "They provide bounded counterexamples: selected synonymous recoding can affect RNA-related readouts in the tested systems. They do not predict every human variant, show every proposed mechanism or determine an individual clinical outcome."
+        }
+      ],
+      "summaryChecklist": [
+        "Name the reference, coding context and genetic code.",
+        "Locate the single changed base before interpreting it.",
+        "Reverse and complement the opposite strand.",
+        "Separate coding annotation from RNA and protein readouts.",
+        "Stop before an unsupported mechanism or clinical conclusion."
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",
