@@ -604,6 +604,134 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "peroxisome-pts1-pex5-cargo",
+      "title": "Peroxisomal import: cargo signal and receptor",
+      "subject": "cell-biology",
+      "topic": "Compartment-specific protein sorting and receptor reuse",
+      "slug": "peroxisome-pts1-pex5-cargo",
+      "learnerLevel": "Introductory molecular cell biology",
+      "objectives": [
+        "Distinguish a cargo signal from a separate receptor.",
+        "Place selected PTS1 recognition in the cytosol.",
+        "Trace cargo delivery and receptor return as different paths.",
+        "Limit conclusions from a targeting motif or one localization snapshot."
+      ],
+      "sources": [
+        {
+          "title": "Gould et al. (1989): A conserved tripeptide sorts proteins to peroxisomes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2654139/",
+          "publisherOrAuthor": "Gould et al. (1989)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Francisco et al. (2024): Noncanonical and reversible cysteine ubiquitination prevents the overubiquitination of PEX5 at the peroxisomal membrane",
+          "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002567",
+          "publisherOrAuthor": "Francisco et al. (2024)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "All molecule identities, compartments and fictional arithmetic are explicitly described in readable text. No copied source figure or experimental reconstruction needed for these reasoning tasks.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Selected mechanisms and fictional bookkeeping only; no all-import-route, laboratory, diagnostic or therapy claim.",
+        "Primary abstract/targeted introduction scope; no complete paper/figure review claimed.",
+        "AI-assisted review; no independent specialist, clinical or human accessibility review claimed."
+      ],
+      "reviewEvidenceIds": [
+        "peroxisome-pts1-pex5-cargo-editorial-20261104",
+        "peroxisome-pts1-pex5-cargo-readability-20261104",
+        "peroxisome-pts1-pex5-cargo-accessibility-20261104",
+        "peroxisome-pts1-pex5-cargo-assessment-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "translation",
+          "protein-trafficking"
+        ],
+        "related": [
+          "protein-trafficking",
+          "er-protein-quality-control",
+          "lysosomal-m6p-tag-receptor-recycling"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "lysosomal-m6p-tag-receptor-recycling",
+      "title": "Lysosomal enzyme sorting: tag, receptor and destination",
+      "subject": "cell-biology",
+      "topic": "Compartment-specific protein sorting and receptor reuse",
+      "slug": "lysosomal-m6p-tag-receptor-recycling",
+      "learnerLevel": "Introductory molecular cell biology",
+      "objectives": [
+        "Distinguish the hydrolase cargo, its glycan marker and its receptor.",
+        "Separate marker formation from recognition.",
+        "Trace cargo and receptor after their separation.",
+        "Explain why a compartment amount does not uniquely measure traffic."
+      ],
+      "sources": [
+        {
+          "title": "Gorelik et al. (2022): Structures of the mannose-6-phosphate pathway enzyme, GlcNAc-1-phosphotransferase",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.2203518119",
+          "publisherOrAuthor": "Gorelik et al. (2022)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        },
+        {
+          "title": "Brown et al. (1986): Mannose-6-phosphate receptors for lysosomal enzymes cycle between the Golgi complex and endosomes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2945825/",
+          "publisherOrAuthor": "Brown et al. (1986)",
+          "accessedAt": "2026-11-04",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "All molecule identities, compartments and fictional arithmetic are explicitly described in readable text. No copied source figure or experimental reconstruction needed for these reasoning tasks.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-04",
+      "nextReviewAt": "2027-02-04",
+      "limitations": [
+        "Selected mechanisms and fictional bookkeeping only; no all-import-route, laboratory, diagnostic or therapy claim.",
+        "Primary abstract/targeted introduction scope; no complete paper/figure review claimed.",
+        "AI-assisted review; no independent specialist, clinical or human accessibility review claimed."
+      ],
+      "reviewEvidenceIds": [
+        "lysosomal-m6p-tag-receptor-recycling-editorial-20261104",
+        "lysosomal-m6p-tag-receptor-recycling-readability-20261104",
+        "lysosomal-m6p-tag-receptor-recycling-accessibility-20261104",
+        "lysosomal-m6p-tag-receptor-recycling-assessment-20261104"
+      ],
+      "links": {
+        "prerequisite": [
+          "protein-trafficking",
+          "er-protein-quality-control"
+        ],
+        "related": [
+          "protein-trafficking",
+          "er-protein-quality-control",
+          "peroxisome-pts1-pex5-cargo"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
