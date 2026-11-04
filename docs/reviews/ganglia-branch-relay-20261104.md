@@ -22,3 +22,5 @@ Visual/accessibility evidence IDs: myelin-and-glial-cells-visual-20261104; myeli
 Part13 printable packaging now defers to each lesson’s source/review edition, avoiding an outdated blanket Revision4 attribution. Other parts and lesson selection are unchanged.
 
 Shared print-reference check: retain the established NCBI neuroglial background URL as the main citation, explicitly dated 2001, because foundations also resolves that main reference. The eight supporting sources include the newer ganglia evidence. The original comparison independently cites the university ganglia source. No foundation teaching changed.
+
+Exact-preview visual inspection caught inherited background attribution on the new comparison. Give this visual its own university ganglia reference ID, following the existing scoped-reference pattern. The lesson’s legacy main citation and the foundations excerpt remain unchanged. New browser assertions bind the comparison to that source; print expectations distinguish the visual citation from the lesson reading list. Teaching content and quality fingerprint are unchanged.
