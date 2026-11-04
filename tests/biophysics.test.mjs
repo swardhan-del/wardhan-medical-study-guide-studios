@@ -33,11 +33,12 @@ test("the biophysics course is reachable, sequenced and contains independent exp
   const questions=read("study-questions").questions.filter(q=>courseIds.has(q.topic));
   assert.equal(coverage.lessons.filter(l=>l.track==="theory").length,36);
   assert.equal(coverage.lessons.filter(l=>l.track==="practical").length,14);
-  assert.equal(lessons.length,50); assert.equal(questions.length,50);
+  assert.equal(lessons.length,50); assert.equal(questions.length,53);
   assert.deepEqual(new Set(coverage.lessons.map(l=>l.lessonId)),new Set(lessons.map(l=>l.id)));
   for(const l of lessons) {
     const application=questions.filter(q=>q.topic===l.id);
-    assert.equal(application.length,1); assert.notEqual(application[0].prompt,l.question.prompt);
+    assert.equal(application.length,l.id === 'biophysics-fluid-flow' ? 4 : 1);
+    assert(application.every(q => q.prompt !== l.question.prompt));
     assert(l.steps.length>=4);
   }
   for(const track of ["theory","practical"]) {

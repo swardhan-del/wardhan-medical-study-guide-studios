@@ -2223,6 +2223,75 @@
           "explanation": "The supplied connection diagram has no neural-activity, contraction or force measurements. Functional independence is an additional claim."
         }
       ]
+    },
+    {
+      "id": "studio-vascular-fixed-pressure",
+      "topic": "biophysics-fluid-flow",
+      "title": "Open an equal branch at fixed driving pressure",
+      "subject": "biophysics",
+      "href": "/library/biophysics-fluid-flow#studio-practice",
+      "prompt": "In a fictional steady model, a path has resistance 4 pressure-units per flow-unit and driving pressure difference 8 pressure-units. A second resistance 4 connects directly in parallel between the same fixed pressure nodes. What is supported?",
+      "options": [
+        {
+          "text": "Equivalent resistance is 2; total flow becomes 4 while each branch carries 2.",
+          "explanation": "Each branch sees the stipulated 8 pressure-units, so each flow is 8/4 = 2 flow-units and the flows add. The original branch has not lost driving pressure."
+        },
+        {
+          "text": "Each branch must carry 1 because a fixed total flow is split.",
+          "explanation": "The model fixes pressure, not total flow. Assuming fixed total flow changes the controller."
+        },
+        {
+          "text": "Equivalent resistance becomes 8 because two resistances are present.",
+          "explanation": "Adding resistances directly is the series rule. These two paths are parallel."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-vascular-shared-upstream",
+      "topic": "biophysics-fluid-flow",
+      "title": "Find the actual branch pressure",
+      "subject": "biophysics",
+      "href": "/library/biophysics-fluid-flow#studio-practice",
+      "prompt": "In a fictional steady model, a shared upstream resistance 2 is in series before two parallel resistances 4. Total driving pressure difference is 12 pressure-units. Resistances use pressure-units per flow-unit and stay fixed. Which branch result follows?",
+      "options": [
+        {
+          "text": "Each branch sees pressure difference 6 and carries 1.5 flow-units.",
+          "explanation": "The pair has equivalent resistance 2, total resistance is 4 and total flow is 3. The shared segment drops 6 pressure-units, leaving 6 across each branch."
+        },
+        {
+          "text": "Each branch sees all 12 and carries 3 flow-units.",
+          "explanation": "That ignores the pressure drop across the shared upstream resistance and would not satisfy the stated complete network."
+        },
+        {
+          "text": "Each branch sees pressure difference 3 because there are four resistance-units in total.",
+          "explanation": "A resistance value is not a count of equal pressure divisions. Calculate the shared flow and each segment’s drop."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "studio-vascular-fixed-flow",
+      "topic": "biophysics-fluid-flow",
+      "title": "Keep the flow controller explicit",
+      "subject": "biophysics",
+      "href": "/library/biophysics-fluid-flow#studio-practice",
+      "prompt": "In a fictional steady model, an ideal controller holds total flow at 4 flow-units. A single resistance 4 is replaced by two resistances 4 directly in parallel. Resistances use pressure-units per flow-unit. Which new driving pressure and branch flows are consistent?",
+      "options": [
+        {
+          "text": "Driving pressure difference is 8 pressure-units; each branch carries 2 flow-units.",
+          "explanation": "The equivalent resistance is 2, so ΔP = Q_total × R_equivalent = 4 × 2 = 8 pressure-units. Equal branches then carry 2 flow-units each."
+        },
+        {
+          "text": "Driving pressure difference is 16 pressure-units; each branch carries 4 flow-units while total flow stays 4.",
+          "explanation": "Those branch flows would sum to 8, contradicting the stipulated total flow of 4 flow-units."
+        },
+        {
+          "text": "Driving pressure stays fixed solely because the branches are parallel.",
+          "explanation": "Parallel branches share their own node pressure difference, but that value can change when total flow rather than pressure is controlled."
+        }
+      ],
+      "answer": 0
     }
   ]
 }

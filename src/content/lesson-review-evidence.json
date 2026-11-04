@@ -605,6 +605,50 @@
       "independent": false,
       "record": "docs/reviews/ocular-motor-evidence-20261104.md",
       "contentSha256": "4bb87fae8f743267f8a935615440993bff6c9c317fa55927c10ed762f931c67b"
+    },
+    {
+      "id": "biophysics-fluid-flow-editorial-20261104",
+      "lessonId": "biophysics-fluid-flow",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source and exact arithmetic checks",
+      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/vascular-network-depth-20261104.md",
+      "contentSha256": "f82caf8745d9a4668fce00eb6442744546d9f9088ef0bad7161b8827f6a89087"
+    },
+    {
+      "id": "biophysics-fluid-flow-readability-20261104",
+      "lessonId": "biophysics-fluid-flow",
+      "scope": "readability",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted source and exact arithmetic checks",
+      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/vascular-network-depth-20261104.md",
+      "contentSha256": "f82caf8745d9a4668fce00eb6442744546d9f9088ef0bad7161b8827f6a89087"
+    },
+    {
+      "id": "biophysics-fluid-flow-visual-20261104",
+      "lessonId": "biophysics-fluid-flow",
+      "scope": "visual",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted rendered layout, keyboard and automated accessibility checks",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/vascular-network-depth-20261104.md",
+      "contentSha256": "f82caf8745d9a4668fce00eb6442744546d9f9088ef0bad7161b8827f6a89087"
+    },
+    {
+      "id": "biophysics-fluid-flow-accessibility-20261104",
+      "lessonId": "biophysics-fluid-flow",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-04",
+      "reviewer": "Codex AI-assisted rendered layout, keyboard and automated accessibility checks",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/vascular-network-depth-20261104.md",
+      "contentSha256": "f82caf8745d9a4668fce00eb6442744546d9f9088ef0bad7161b8827f6a89087"
     }
   ]
 }

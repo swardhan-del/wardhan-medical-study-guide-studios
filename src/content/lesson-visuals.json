@@ -1455,6 +1455,52 @@
       "referenceIds": [
         "biophysics-nuclear-imaging"
       ]
+    },
+    {
+      "id": "vascular-network-constraints",
+      "lessonIds": [
+        "biophysics-fluid-flow"
+      ],
+      "kind": "comparison",
+      "title": "The held variable changes the network comparison",
+      "headers": [
+        "Defined model",
+        "Held condition",
+        "Calculated result"
+      ],
+      "rows": [
+        [
+          "One path with R = 4",
+          "Driving pressure difference = 8",
+          "Total flow = 2"
+        ],
+        [
+          "Two R = 4 paths directly in parallel",
+          "Same driving pressure difference = 8",
+          "Equivalent resistance = 2; each flow = 2; total flow = 4"
+        ],
+        [
+          "One path with R = 4",
+          "Ideal controller: total flow = 4",
+          "Required driving pressure difference = 16"
+        ],
+        [
+          "Two R = 4 paths directly in parallel",
+          "Same ideal controller: total flow = 4",
+          "Required driving pressure difference = 8; each flow = 2"
+        ],
+        [
+          "Shared R0 = 2 before two parallel R = 4 paths",
+          "Total network pressure difference = 12",
+          "Total resistance = 4; total flow = 3; branch pressure difference = 6"
+        ]
+      ],
+      "caption": "All numbers are invented. Resistance units are pressure-units per flow-unit. Rows identify their own topology and held condition; they are not measurements of an organ. The shared upstream segment uses part of the complete-network pressure difference.",
+      "observe": "Explain which two rows compare fixed pressure, which two compare fixed total flow, and why the shared-upstream case cannot assign all 12 pressure-units to each branch.",
+      "alt": "At fixed pressure difference 8, adding an equal resistance 4 in parallel raises total flow from 2 to 4. At fixed total flow 4, adding that path lowers required driving pressure from 16 to 8. A shared resistance 2 before two equal parallel resistances 4 leaves a branch pressure difference of 6 when the total driving pressure difference is 12.",
+      "referenceIds": [
+        "vascular-network-model-reference"
+      ]
     }
   ]
 }
