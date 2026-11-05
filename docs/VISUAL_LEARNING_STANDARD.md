@@ -50,3 +50,19 @@ Prefer **Learning Objectives**, **Guided Explanation**, **Visual Study Prompts**
 5. Exercise keyboard controls, modal focus, reduced motion and failed image requests.
 6. Run content validation, unit/component tests, typecheck, lint, production build and the complete browser suite. The visual schema is part of both content validation and prebuild.
 7. Review the diff for question IDs, original lesson text, source changes and public asset hashes. Document any deliberate exclusions; do not describe an audit as expert medical certification.
+
+## Owner-requested visual studio extension - 5 November 2026
+
+The owner requested a more engaging, visually descriptive and interactive learning experience on 5 November 2026. This is an implementation standard for ongoing lesson improvements, not a claim that every existing lesson meets it.
+
+Start a teaching unit with something meaningful to inspect: an accurately labelled diagram, a rights-cleared specimen, a data view or a short mechanism animation. Explain what the learner should notice and why it matters. A decorative image cannot substitute for a scientific teaching visual.
+
+Give the learner a decision to make: find a landmark, predict a change, compare plausible alternatives, order a process or explain a mechanism. Respond to both incorrect and correct choices with reasoning. Merely opening a text panel is insufficient as the only interaction.
+
+Use short captioned clips when motion, sequence or comparison helps. Provide playback controls, a complete text alternative and a linked deeper lesson. Keep autoplay off. Respect small screens, keyboard use, reduced-motion preferences and people who cannot play media. Distinguish generated conceptual illustrations, original schematics and real specimens.
+
+Build depth from coherent explanations, worked reasoning, meaningful alternatives and referenced evidence. Reconcile retained source versions and existing lessons before expanding. Cross-check scientific relationships against authoritative sources, retain claim-level scope and image provenance, and preserve source originals. Public citations are not permission to reproduce an atlas, course slide or paper figure. Avoid invented datasets presented as measurements or simplified schematics presented as microscopy.
+
+Verify an actual learning journey from entry point through interaction, feedback, media and return to the lesson. Include 320px/200%-text reflow, keyboard operation, media failure, captions, no-JavaScript text access and existing saved-progress behaviour. Release through the protected GitHub workflow after current-head CI and hosted verification; verify the actual production alias and content. Automated tests and AI-assisted source checks do not establish independent specialist review.
+
+First implementation: `/learn/visual-studio`, linked from the homepage, three histology lessons and the video library. It covers lymph-node landmarks/routes, a three-organ differential and paraffin preparation, with three captioned silent portrait clips. The rest of the library remains a progressive improvement task.

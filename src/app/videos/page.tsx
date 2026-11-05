@@ -18,6 +18,7 @@ export default function VideosPage() {
           {publicVideos.length ? "Watch explanations connected to the subjects and lessons you study." : "No videos are available yet. Explore the written lessons and practice activities in the meantime."}
         </p>
       </header>
+      <section className="study-panel"><p className="eyebrow">New · Visual minutes</p><h2>Histology in motion</h2><p>Watch three short captioned videos, then use the clickable diagrams to explain the same idea yourself.</p><Link className="button button-primary" href="/learn/visual-studio#visual-minutes">Watch the visual minutes →</Link></section>
       <VideoBrowser
         videos={publicVideos}
         topics={taxonomyNodes
