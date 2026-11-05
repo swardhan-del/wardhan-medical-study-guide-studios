@@ -2983,6 +2983,17 @@
       "resources": [
         "biophysics-fluid-flow"
       ]
+    },
+    {
+      "id": "biostatistics-study-design",
+      "title": "Study design and denominators",
+      "description": "Distinguish complete population denominators from selected case-control samples.",
+      "subject": "biostatistics",
+      "parentId": null,
+      "kind": "topic",
+      "resources": [
+        "cohort-case-control-denominators"
+      ]
     }
   ]
 }

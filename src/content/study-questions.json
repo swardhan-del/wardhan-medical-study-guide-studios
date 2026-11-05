@@ -2775,6 +2775,121 @@
         }
       ],
       "answer": 1
+    },
+    {
+      "prompt": "Does 20 cases among 40 selected observations establish 50% overall outcome risk?",
+      "options": [
+        {
+          "text": "No; both constructed populations permit that selected result.",
+          "explanation": "The population denominator and sampling structure are different from the selected total."
+        },
+        {
+          "text": "Yes; the selected case fraction is the population risk.",
+          "explanation": "The investigator selected the case and control totals; that selected denominator is not the complete population at risk."
+        },
+        {
+          "text": "Only when the source population has exactly 40 units.",
+          "explanation": "The selected counts do not establish that the whole population contains 40 units; a complete population denominator would have to be supplied."
+        }
+      ],
+      "answer": 0,
+      "id": "studio-case-control-1",
+      "topic": "cohort-case-control-denominators",
+      "subject": "biostatistics",
+      "title": "Separate sample and population",
+      "href": "/library/cohort-case-control-denominators#question-studio-case-control-1"
+    },
+    {
+      "prompt": "What is the exposed risk in Population A?",
+      "options": [
+        {
+          "text": "75/1000.",
+          "explanation": "75/1000 is the joint fraction exposed and experiencing the outcome, not risk within the exposed group."
+        },
+        {
+          "text": "75/300=1/4.",
+          "explanation": "The denominator for exposed risk includes all 300 exposed units."
+        },
+        {
+          "text": "75/225 = 1/3.",
+          "explanation": "That divides exposed outcomes by exposed non-outcomes and gives outcome odds, not outcome risk."
+        }
+      ],
+      "answer": 1,
+      "id": "studio-case-control-2",
+      "topic": "cohort-case-control-denominators",
+      "subject": "biostatistics",
+      "title": "Choose the exposed denominator",
+      "href": "/library/cohort-case-control-denominators#question-studio-case-control-2"
+    },
+    {
+      "prompt": "Can two populations have the same odds ratio but different risk ratios?",
+      "options": [
+        {
+          "text": "Yes; these tables have OR 9 but RR 7 versus 3.",
+          "explanation": "The fully supplied constructed denominators yield different ratios."
+        },
+        {
+          "text": "No; the measures must coincide.",
+          "explanation": "An odds ratio divides odds, whereas a risk ratio divides risks; the supplied population denominators produce different risk ratios."
+        },
+        {
+          "text": "Only because one population contains missing follow-up.",
+          "explanation": "Both constructed populations have complete follow-up; different risk ratios arise from their different supplied denominators."
+        }
+      ],
+      "answer": 0,
+      "id": "studio-case-control-3",
+      "topic": "cohort-case-control-denominators",
+      "subject": "biostatistics",
+      "title": "Compare risk and odds ratios",
+      "href": "/library/cohort-case-control-denominators#question-studio-case-control-3"
+    },
+    {
+      "prompt": "Does the identical sample display mean random samples must always agree?",
+      "options": [
+        {
+          "text": "Yes; fixing conditional population fractions fixes every realised sample.",
+          "explanation": "A random draw can contain different counts even when conditional exposure fractions are fixed in the population."
+        },
+        {
+          "text": "No; it represents a possible shared result, not a guarantee.",
+          "explanation": "Actual random samples can vary."
+        },
+        {
+          "text": "Only the control counts can vary across random samples.",
+          "explanation": "Random selection can vary the exposure counts in both cases and controls; neither split is forced in each sample."
+        }
+      ],
+      "answer": 1,
+      "id": "studio-case-control-4",
+      "topic": "cohort-case-control-denominators",
+      "subject": "biostatistics",
+      "title": "Distinguish possible from guaranteed",
+      "href": "/library/cohort-case-control-denominators#question-studio-case-control-4"
+    },
+    {
+      "prompt": "Can the cumulative-control interpretation automatically be applied to a risk-set-sampled study?",
+      "options": [
+        {
+          "text": "No; the sampling design and target quantity must be examined.",
+          "explanation": "The worksheet explicitly restricts its control definition."
+        },
+        {
+          "text": "Yes; every case-control design has the same target.",
+          "explanation": "Risk-set controls represent a different sampling structure; the cumulative noncase construction does not supply its interpretation."
+        },
+        {
+          "text": "The overall outcome count alone determines the target measure.",
+          "explanation": "The sampling scheme and analysis assumptions matter; the total outcome count cannot replace that information."
+        }
+      ],
+      "answer": 0,
+      "id": "studio-case-control-5",
+      "topic": "cohort-case-control-denominators",
+      "subject": "biostatistics",
+      "title": "Identify the control sampling design",
+      "href": "/library/cohort-case-control-denominators#question-studio-case-control-5"
     }
   ]
 }

@@ -4260,3 +4260,11 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .quality-learning-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
 .quality-learning-links h3 { font-size: 1rem; }
 .quality-learning-links a { display: inline-block; padding-block: .35rem; }
+/* Original fictional population comparison: labelled cards also reflow at enlarged text. */
+.case-control-explorer { overflow-wrap: anywhere; }
+.case-control-explorer input[type="range"] { display: block; width: 100%; margin-block: 1rem; min-height: 44px; }
+.case-control-populations { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1.25rem; }
+.case-control-populations section { min-width: 0; }
+.case-control-populations dl > div { padding-block: .55rem; border-bottom: 1px solid currentColor; }
+.case-control-populations dt { font-weight: 650; }
+.case-control-populations dd { margin: .25rem 0 0; }

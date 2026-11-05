@@ -9758,6 +9758,124 @@
       ]
     },
     {
+      "id": "cohort-case-control-denominators",
+      "subject": "biostatistics",
+      "title": "Cohort and case-control studies: identify the denominator",
+      "summary": "Calculate risk and odds in a complete cohort, then construct two fictional populations compatible with the same case-control sample. Explore which denominators are missing and why sampling design matters.",
+      "tags": [
+        "Biostatistics",
+        "Study design",
+        "Risk and odds",
+        "Case-control"
+      ],
+      "source": "original-case-control-models",
+      "section": "Study design and denominators",
+      "updatedAt": "2026-11-05",
+      "minutes": 22,
+      "objectives": [
+        "Calculate risk and odds ratios in a completely observed fictional cohort.",
+        "Explain why case-control sample proportions do not establish population risk.",
+        "Construct two populations with the same odds ratio but different risks and risk ratios.",
+        "Distinguish a possible selected sample from a guaranteed random result.",
+        "State the cumulative-control assumptions and limits of this model."
+      ],
+      "prerequisites": [
+        "standard-deviation-standard-error"
+      ],
+      "steps": [
+        {
+          "title": "Follow the cohort",
+          "body": "In a fictional cohort observed over the same period with complete follow-up, 20 of 100 exposed and 10 of 100 unexposed participants experience the outcome. The observed risks are 0.20 and 0.10, so the risk ratio is 2. The outcome odds ratio is (20/80)/(10/90) = 2.25. Neither measure alone establishes causation."
+        },
+        {
+          "title": "Follow the case-control selection",
+          "body": "In a separate fictional study, investigators select 20 cases and 20 controls. Fifteen cases and five controls were exposed; five cases and 15 controls were unexposed. The exposure odds ratio is (15/5)/(5/15) = 9. The equal selected group sizes do not establish that population risk is 50%. How the odds ratio estimates a population measure depends on control sampling and other assumptions. The two examples are unrelated."
+        },
+        {
+          "title": "Read the selected sample in its sampling direction",
+          "body": "The fictional selected sample contains 20 cases and 20 end-of-period noncase controls. Of the cases 15 are exposed and 5 unexposed; of the controls 5 are exposed and 15 unexposed. Its exposure odds ratio is (15/5)/(5/15)=9. The case fraction 20/40 is a property of this selected sample; its population denominator was not supplied."
+        },
+        {
+          "title": "Construct one complete source population",
+          "body": "Population A contains 1000 fictional units followed over one common period: 75 exposed outcomes, 225 exposed non-outcomes, 25 unexposed outcomes and 675 unexposed non-outcomes. Overall outcome fraction is 100/1000. The exposed risk is 75/300=1/4; unexposed risk 25/700=1/28; risk ratio 7. Its outcome odds ratio is(75 × 675)/(225 × 25)=9."
+        },
+        {
+          "title": "Construct a different compatible population",
+          "body": "Population B also contains 1000 units, but has 375 exposed outcomes,125 exposed non-outcomes,125 unexposed outcomes and 375 unexposed non-outcomes. Its overall outcome fraction is 500/1000. Risks are 375/500=3/4 and 125/500=1/4; risk ratio 3. The outcome odds ratio remains 9. Both populations have exposed fractions 3/4 among cases and 1/4 among noncases."
+        },
+        {
+          "title": "Separate compatibility from a guaranteed sample",
+          "body": "Both populations contain enough of each category for the same 15/5 case split and 5/15 control split to be a possible selected result. This does not say that random sampling always yields those exact counts or that cases should be selected by exposure to force a result. The two constructed tables prove that the selected table alone does not uniquely identify the source population’s absolute risks."
+        },
+        {
+          "title": "Use the explorer without changing the question",
+          "body": "The explorer changes only the fictional number of outcomes in Population B, keeping its total 1000 and the two conditional exposure fractions fixed. Every slider state is an integer table. Risks change while the cross-product odds ratio remains 9. The selected sample display stays fixed as a compatible result. This is an algebraic sensitivity illustration, not repeated sampling, a risk calculator or a causal model."
+        },
+        {
+          "title": "State which design supports which interpretation",
+          "body": "Our controls are end-of-period noncases in a cumulative model. Other control-sampling strategies, including risk-set sampling, can target different population quantities and require their own assumptions. Do not turn this worksheet into an assertion that every case-control odds ratio has one interpretation, that a rare-outcome condition is always required, or that an odds ratio is a causal risk ratio."
+        }
+      ],
+      "question": {
+        "prompt": "Why do 20 cases and 20 controls in this selected sample not establish 50% population risk?",
+        "options": [
+          {
+            "text": "The numbers were selected by design and do not supply the source population denominator.",
+            "reason": "The case fraction is fixed by sampling and cannot alone establish the outcome risk in the source population."
+          },
+          {
+            "text": "A case-control study must have more controls than cases.",
+            "reason": "The ratio of controls to cases can vary; that is not why the sample fraction fails to establish population risk."
+          },
+          {
+            "text": "The risk ratio must always equal the odds ratio.",
+            "reason": "The measures differ, and the selected numbers do not provide the population risk denominator."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "Calculate with the population denominator",
+        "prompt": "For Population A use 75 exposed outcomes, 225 exposed non-outcomes, 25 unexposed outcomes and 675 unexposed non-outcomes. All 1000 fictional units start outcome-free, keep their exposure group and have complete follow-up over one common period. Controls are selected from end-of-period noncases.",
+        "solution": [
+          "Exposed denominator: 75 + 225 = 300; risk = 75/300 = 1/4.",
+          "Unexposed denominator: 25 + 675 = 700; risk = 25/700 = 1/28.",
+          "Risk ratio = (1/4)/(1/28) = 7. Outcome odds ratio = (75/225)/(25/675) = 9.",
+          "Population B has risks 3/4 and 1/4, so risk ratio 3 and odds ratio 9. Its overall outcome fraction is 500/1000, compared with 100/1000 in A.",
+          "Both permit the displayed 20-case/20-control sample. No probability distribution over possible source populations has been supplied; compatibility does not mean equal likelihood."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why is 75/1000 not the exposed risk in A?",
+          "answer": "1000 includes unexposed units. Exposed risk uses all and only the 300 exposed units at risk at the start of the common period."
+        },
+        {
+          "prompt": "What remains fixed when the explorer changes its outcome count?",
+          "answer": "The total 1000 and exposure fractions 3/4 among outcomes and 1/4 among non-outcomes. These stipulated fractions keep the cross-product odds ratio at 9."
+        },
+        {
+          "prompt": "Does this establish that a real exposure causes an outcome?",
+          "answer": "No. These are invented descriptive tables without randomization or causal identification. Control selection and the target measure must be examined in each real study."
+        }
+      ],
+      "recall": {
+        "prompt": "Explain why a selected case fraction cannot alone identify population risk.",
+        "answer": "Selection fixed the case and control counts. The source population denominator and design are additional information; populations A and B demonstrate different risks compatible with the same displayed selected table."
+      },
+      "summaryChecklist": [
+        "Use the exposed denominator for exposed risk.",
+        "Keep the unrelated introductory cohort separate from populations A and B.",
+        "Distinguish risk, odds and their ratios.",
+        "Describe compatibility without claiming a guaranteed sample.",
+        "Attach the cumulative-control definition and complete-follow-up assumptions."
+      ],
+      "related": [
+        "histogram-bin-counts-example",
+        "standard-deviation-standard-error"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",
