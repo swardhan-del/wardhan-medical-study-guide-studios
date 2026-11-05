@@ -12,3 +12,13 @@ test('printable parts cover every released lesson exactly once in its own subjec
   assert.equal(parts.filter(p => p.subject === 'biochemistry').length, 15);
   assert(parts.filter(p => !p.lessonIds.length).every(p => p.coverage.includes('does not yet')));
 });
+
+test('related learning reaches released lessons without duplicating printable chapters', () => {
+ for (const part of parts) {
+  const related = part.relatedLessonIds ?? [];
+  assert.equal(new Set(related).size, related.length);
+  for (const id of related) { assert(lessons.some(l => l.id === id)); assert(!part.lessonIds.includes(id)); }
+ }
+ assert.deepEqual(parts.find(p => p.id === "histology-part-07").relatedLessonIds,["thoracic-development"]);
+ assert.deepEqual(parts.find(p => p.id === "histology-part-07").lessonIds,["respiratory-histology"]);
+});

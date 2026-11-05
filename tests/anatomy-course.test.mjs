@@ -27,7 +27,7 @@ test('every course record has a referenceable manuscript, explained practice and
  for(const file of files){
   const r=read('content/anatomy/'+file), l=r.lesson;
   assert.equal(readFileSync('content/anatomy/'+file.replace(/\.json$/,'.md'),'utf8').startsWith('# '),true);
-  assert(l.steps.length>=4 && l.objectives.length===(l.id==='ocular-motor-nerves'?6:3));
+  assert(l.steps.length>=4 && l.objectives.length===(['ocular-motor-nerves','thoracic-development'].includes(l.id)?6:3));
   assert(l.steps.reduce((n,s)=>n+s.body.split(/\s+/).length,0)>=200, l.id);
   assert(r.sourceSections.length && r.identification.prompt.length>40);
   assert.equal(r.practice.length,4);

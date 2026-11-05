@@ -27,7 +27,7 @@ The canonical editable records are the numbered JSON files. The adjacent Markdow
 - Volume 1, 13: [Valves and fibrous support](volume-01-thorax/13-heart-valves-skeleton.md) — Heart Morphology sections 20-22, 30-38, 42
 - Volume 1, 14: [Coronary arteries and venous return](volume-01-thorax/14-coronary-circulation.md) — Pericardium and Coronary sections 9-22
 - Volume 1, 15: [Conduction and autonomic modulation](volume-01-thorax/15-cardiac-conduction-autonomics.md) — Pericardium and Coronary sections 23-31
-- Volume 1, 16: [Respiratory and diaphragmatic development](volume-01-thorax/16-thoracic-development.md) — Embryology sections 2-6
+- Volume 1, 16: [Respiratory and diaphragmatic development](volume-01-thorax/16-thoracic-development.md) — Embryology sections 2-6; Original lung-structure and observation-unit teaching linked to named public references
 - Volume 1, 17: [Heart tube and partitioning](volume-01-thorax/17-heart-looping-septation.md) — Embryology sections 7-8
 - Volume 1, 18: [Fetal shunts and adult remnants](volume-01-thorax/18-fetal-circulation-transition.md) — Embryology section 9; master fetal-circulation recall
 - Volume 2, 1: [Abdominal regions and sectional orientation](volume-02-abdomen/01-abdominal-surface-map.md) — 1. Abdominal Regions and Surface Planes

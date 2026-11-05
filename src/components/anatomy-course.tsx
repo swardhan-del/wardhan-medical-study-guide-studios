@@ -6,7 +6,7 @@ export function AnatomyCourseIntro() {
   return <section className="study-panel" aria-labelledby="anatomy-course-heading">
     <p className="eyebrow">Five-volume anatomy course</p>
     <h2 id="anatomy-course-heading">120 lessons, from landmarks to regional reasoning</h2>
-    <p>Start with orientation, choose a volume, then follow its numbered lessons. Each lesson includes objectives, preparation, explanations, a worked example, a drawing task and five explained practice items.</p>
+    <p>Start with orientation, choose a volume, then follow its numbered lessons. Each lesson includes objectives, preparation, explanations, a worked example, a drawing task and at least five explained practice items.</p>
     <div className="action-row"><Link className="button button-primary" href="/library/thoracic-cage-landmarks">Begin Volume I</Link><Link href="/start/anatomy">Review directions and planes</Link><Link href="/study/anatomy/guide">Browse all five volumes</Link></div>
     <ol className="anatomy-volume-list">{studyGroups.filter(g => g.id.startsWith("anatomy-volume-")).map(g => <li key={g.id}><Link href={`/study/anatomy/guide#${g.id}`}>{g.title}</Link> · {g.lessonIds.length} lessons · <Link href={`/library/${g.lessonIds[0]}`}>Start this volume</Link></li>)}</ol>
     <p className="muted-note">A structured adaptation of the authored guides. Use your course syllabus and practical sessions alongside it; lesson completion is not an exam-readiness score.</p>
@@ -41,7 +41,7 @@ export function AnatomyPractice({ lessonId }: { lessonId: string }) {
   if (!record) return null;
   return <section className="study-panel" aria-labelledby="anatomy-practice-heading">
     <h2 id="anatomy-practice-heading">Four more ways to test your understanding</h2>
-    <p>Answer before revealing the explanation. Together with the concept check above, these make five practice items.</p>
+    <p>Answer before revealing the explanation. These four explained tasks complement the main concept check. Some lessons also offer additional application questions.</p>
     {record.practice.map((q,i) => <div key={q.id} className="anatomy-practice-item"><h3>{i+2}. {q.kind === "Relationship recall" ? "Explain anatomical relationships" : q.kind}</h3><p>{q.prompt}</p><details><summary>Reveal explanation for item {i+2}</summary>{q.answer.split("\n\n").map((p,j) => <p key={j}>{p}</p>)}</details></div>)}
   </section>;
 }

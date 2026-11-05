@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "records": [
     {
       "lessonId": "thoracic-cage-landmarks",
@@ -837,17 +837,53 @@
         }
       ],
       "sourceSections": [
-        "Embryology sections 2-6"
+        "Embryology sections 2-6",
+        "Original lung-structure and observation-unit teaching linked to named public references"
       ],
       "furtherReading": {
         "title": "Embryonic development",
-        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development"
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development",
+        "checkedAt": "2026-11-05",
+        "supportingReferences": [
+          {
+            "title": "Duke University: airway and cavity development — selected anatomical relationships",
+            "url": "https://embryology.oit.duke.edu/respiratory/lungDiaphragm.html"
+          },
+          {
+            "title": "OpenStax: respiratory structures — selected alveolar-cell and surfactant facts",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+          },
+          {
+            "title": "CDC: diaphragmatic hernia — organ position and lung development",
+            "url": "https://www.cdc.gov/birth-defects/about/diaphragmatic-hernia.html"
+          },
+          {
+            "title": "MedlinePlus Genetics: congenital diaphragmatic hernia — anatomical locations",
+            "url": "https://medlineplus.gov/genetics/condition/congenital-diaphragmatic-hernia/"
+          },
+          {
+            "title": "Cambridge University Hospitals: diaphragmatic hernia — selected lung and vascular-development context",
+            "url": "https://www.cuh.nhs.uk/patient-information/congenital-diaphragmatic-hernia-in-children/"
+          },
+          {
+            "title": "Computer simulation of mammalian diaphragm development — selected original abstract",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16483386/"
+          },
+          {
+            "title": "Merrell and colleagues: mouse diaphragm connective tissue — selected abstract and introduction",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25807280/"
+          },
+          {
+            "title": "Ren and colleagues: spatial organization of developing human lung — selected study context",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41484334/"
+          }
+        ]
       },
       "editorial": {
-        "date": "2026-09-10",
-        "basis": "Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.",
-        "review": "Editorial anatomy and consistency review; no independent medical peer review.",
-        "visualRights": "New text-based drawing task; no source atlas plates or private STEM assets reproduced."
+        "date": "2026-11-05",
+        "basis": "The authored Volume I anatomy core and all original practice/identification tasks are preserved. Newly authored structural-interpretation explanations, fictional observations and evidence comparisons deepen the selected respiratory learning themes.",
+        "review": "AI-assisted anatomy, source and consistency review; no independent medical peer review.",
+        "visualRights": "Original semantic comparison and drawing task only. No course/textbook figure, source micrograph or research image reproduced."
       }
     },
     {

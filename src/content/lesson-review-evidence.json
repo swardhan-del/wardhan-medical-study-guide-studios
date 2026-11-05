@@ -737,6 +737,50 @@
       "independent": false,
       "record": "docs/reviews/serine-reaction-roles-20261105.md",
       "contentSha256": "4f9862f1095353500512a39b8ffba2569e3b3c6a31942d17a6298f85f9524195"
+    },
+    {
+      "id": "thoracic-development-editorial-20261105",
+      "lessonId": "thoracic-development",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant;no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/lung-observation-units-20261105.md",
+      "contentSha256": "6bc60602eeef6d0a36e8867c369958be554e32a527bc544136dc104fb074c04a"
+    },
+    {
+      "id": "thoracic-development-readability-20261105",
+      "lessonId": "thoracic-development",
+      "scope": "readability",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and editorial checks",
+      "qualification": "Automated assistant;no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/lung-observation-units-20261105.md",
+      "contentSha256": "6bc60602eeef6d0a36e8867c369958be554e32a527bc544136dc104fb074c04a"
+    },
+    {
+      "id": "thoracic-development-visual-20261105",
+      "lessonId": "thoracic-development",
+      "scope": "visual",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted local rendered, keyboard and automated accessibility review",
+      "qualification": "Automated assistant;no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/lung-observation-units-20261105.md",
+      "contentSha256": "6bc60602eeef6d0a36e8867c369958be554e32a527bc544136dc104fb074c04a"
+    },
+    {
+      "id": "thoracic-development-accessibility-20261105",
+      "lessonId": "thoracic-development",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted local rendered, keyboard and automated accessibility review",
+      "qualification": "Automated assistant;no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/lung-observation-units-20261105.md",
+      "contentSha256": "6bc60602eeef6d0a36e8867c369958be554e32a527bc544136dc104fb074c04a"
     }
   ]
 }
