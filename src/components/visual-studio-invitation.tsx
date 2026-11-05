@@ -15,4 +15,3 @@ export function VisualStudioInvitation({ compact = false }: { compact?: boolean 
     <Link href="/learn/visual-studio" className={styles.coverLink} aria-label="Explore the visual study studio"><Image src={media + "node.svg"} width={720} height={520} alt="" unoptimized /></Link>
   </section>;
 }
-
