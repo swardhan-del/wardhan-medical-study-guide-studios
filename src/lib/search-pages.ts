@@ -1,3 +1,4 @@
+import { physiologyCoursePath } from "../content/curriculum.ts";
 import { qualityAllowsIndexing } from "./lesson-quality.ts";
 import catalog from "../content/public-catalog.json" with { type: "json" };
 import taxonomy from "../content/library-taxonomy.json" with { type: "json" };
@@ -31,6 +32,7 @@ add("/study/planner", "My renal revision planner", "Plan renal revision sessions
 add("/study/map", "Medical-science study map and coverage", "Explore the subject sequence and distinguish available introductions from planned teaching topics.", false, "Includes planned and incomplete content");
 add("/reading-list", "Saved study resources", "Return to the saved-resource section of My Study.", false, "Redirect", { canonical: "/study", redirect: "/study#saved-learning" });
 add("/start/anatomy", "Anatomy: position, directions and planes", "Review anatomical position, directions and body planes before beginning the complete Anatomy Foundations lesson.", false, "Short introduction overlapping the flagship lesson");
+add(physiologyCoursePath, "Medical Physiology Full Course map", "Follow the ordered parts of Medical Physiology and see the released introductions and remaining coverage gaps in cardiovascular physiology.", false, "Partial curriculum coverage");
 add("/learn/renal", "Renal physiology: eight lessons with practice", "Study renal circulation, clearance, tubular transport, urine concentration and acid–base regulation, then apply the concepts in explained questions.");
 add("/practice/biophysics", "Biophysics practice: predict and calculate", "Use six interactive models to connect equations, graphs and medical measurement, then explain how changing a variable affects the result.");
 add("/practice/histology", "Histology practice: identify renal tubules", "Compare proximal tubule, distal tubule and collecting-duct schematics. Reveal structural clues and connect them to physiology.");
