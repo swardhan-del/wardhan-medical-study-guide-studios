@@ -104,9 +104,19 @@
     "checkedAt": "2026-09-07"
   },
   "rna-processing": {
-    "title": "OpenStax: RNA processing",
-    "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes",
-    "checkedAt": "2026-09-07"
+    "title": "NHGRI: Exon definition",
+    "url": "https://www.genome.gov/genetics-glossary/Exon",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Sandberg et al. 2008: alternative 3′ ends and functional reporter evidence",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18566288/"
+      },
+      {
+        "title": "OpenStax: RNA processing",
+        "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes"
+      }
+    ]
   },
   "translation": {
     "title": "OpenStax: Ribosomes and protein synthesis",
@@ -165,9 +175,19 @@
     "checkedAt": "2026-09-07"
   },
   "antigen-presentation": {
-    "title": "OpenStax: MHC and T-cell recognition",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-3-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types",
-    "checkedAt": "2026-09-07"
+    "title": "TCR and CD28 Concomitant Stimulation Elicits a Distinctive Calcium Response in Naive T Cells",
+    "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2018.02864/full",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Cefai et al. 1996: CD80/CD86 co-stimulation through CD28",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8921441/"
+      },
+      {
+        "title": "OpenStax: MHC and T-cell recognition",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-3-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types"
+      }
+    ]
   },
   "complement": {
     "title": "OpenStax: Innate defenses and complement",
@@ -1790,5 +1810,11 @@
         "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/9.html"
       }
     ]
+  },
+  "genetic-drift-sampling-model": {
+    "title": "NHGRI: Genetic Drift",
+    "url": "https://www.genome.gov/genetics-glossary/Genetic-Drift",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": []
   }
 }

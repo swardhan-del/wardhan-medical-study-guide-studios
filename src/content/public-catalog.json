@@ -3931,14 +3931,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-11-05",
       "bytes": 0,
       "id": "rna-processing",
       "title": "From pre-mRNA to mature messenger RNA",
       "subject": "cell-biology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Connect capping, splicing and polyadenylation to the structure and use of an RNA message.",
+      "summary": "Connect RNA maturation to a fictional coordinate map: separate exon membership from coding annotation, follow a split codon, and compare two terminal cleavage sites without inferring protein output.",
       "tags": [
         "Molecular mechanisms",
         "RNA",
@@ -3946,7 +3946,7 @@
         "splicing",
         "gene expression"
       ],
-      "minutes": 5
+      "minutes": 22
     },
     {
       "status": "public",
@@ -4149,6 +4149,24 @@
     },
     {
       "status": "public",
+      "updatedAt": "2026-11-05",
+      "bytes": 0,
+      "id": "genetic-drift-sampling-model",
+      "title": "Genetic drift: compare two sampling procedures",
+      "subject": "genetics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Separate the A fraction in one invented draw from the probability of that draw, then compare procedures with the same mean and different count variance.",
+      "tags": [
+        "Genetics",
+        "Sampling",
+        "Genetic drift",
+        "Model assumptions"
+      ],
+      "minutes": 18
+    },
+    {
+      "status": "public",
       "updatedAt": "2026-09-23",
       "bytes": 0,
       "id": "genetics-genome-foundations",
@@ -4245,14 +4263,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-09",
+      "updatedAt": "2026-11-05",
       "bytes": 0,
       "id": "antigen-presentation",
       "title": "MHC I, MHC II and T-cell recognition",
       "subject": "genetics",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Keep the presenting cell, peptide source and recognizing T cell distinct.",
+      "summary": "Keep peptide presentation and T-cell recognition distinct, then compare co-stimulatory inputs, assay readouts and timing without turning one experiment into a universal activation rule.",
       "tags": [
         "Immunology",
         "MHC",
@@ -4261,7 +4279,7 @@
         "CD8",
         "antigen presentation"
       ],
-      "minutes": 5
+      "minutes": 20
     },
     {
       "status": "public",
