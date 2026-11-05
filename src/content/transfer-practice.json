@@ -988,6 +988,558 @@
         }
       ],
       "answer": 0
+    },
+    {
+      "id": "system-depth-ray-location",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "A parallel tubular bundle lies between regions containing renal corpuscles. Which interpretation fits the whole field?",
+      "options": [
+        {
+          "text": "A medullary ray within cortex.",
+          "explanation": "Neighbouring corpuscles establish cortical context; a ray contains straight profiles within that cortex."
+        },
+        {
+          "text": "Medulla, because every straight tubule is medullary.",
+          "explanation": "Straight tubules also occur in cortical rays."
+        },
+        {
+          "text": "A renal corpuscle cut longitudinally.",
+          "explanation": "A corpuscle contains a capillary tuft and capsule, not a bundle of parallel epithelial tubes."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-two-poles",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "A student traces filtrate from capsular space into the efferent arteriole. Where should that route go instead?",
+      "options": [
+        {
+          "text": "Directly into the renal pelvis.",
+          "explanation": "Tubular processing occurs between filtration and the collecting-system outlet."
+        },
+        {
+          "text": "Through the urinary pole into the proximal tubule.",
+          "explanation": "The urinary pole connects capsular space with tubular lumen."
+        },
+        {
+          "text": "Through the vascular pole into a venule.",
+          "explanation": "The vascular pole contains arteriolar connections; it is not the outlet for capsular fluid."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-resolution",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "Which claim exceeds the evidence of a routine low-power H&E image of a corpuscle?",
+      "options": [
+        {
+          "text": "The field contains a capillary tuft surrounded by a capsule.",
+          "explanation": "Those architectural relationships can be visible with light microscopy."
+        },
+        {
+          "text": "A pale space separates much of the tuft from the parietal lining.",
+          "explanation": "Capsular-space architecture can be observed without resolving the molecular filtration apparatus."
+        },
+        {
+          "text": "Every slit diaphragm is structurally intact.",
+          "explanation": "Slit diaphragms are ultrastructural; this image cannot resolve them."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "system-depth-clear-lumen",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "A cuboidal profile has a clear lumen but its brush border is poorly preserved. What is the best next step?",
+      "options": [
+        {
+          "text": "Compare cell borders, location and several intact profiles before assigning a segment.",
+          "explanation": "A clear lumen is shared by plausible alternatives and preparation can remove useful clues."
+        },
+        {
+          "text": "Call it distal solely because its lumen is empty.",
+          "explanation": "Luminal appearance alone does not exclude a collecting duct or a damaged proximal profile."
+        },
+        {
+          "text": "Call it a capillary because it lacks luminal red cells.",
+          "explanation": "An epithelial cuboidal wall is not explained by absence of red cells."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-red-cell-trap",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "A perfusion-fixed medullary specimen contains empty thin-walled profiles. What does absence of red cells establish?",
+      "options": [
+        {
+          "text": "The specimen has no vascular supply.",
+          "explanation": "Loss of luminal contents during preparation does not imply biological absence of vessels."
+        },
+        {
+          "text": "It does not by itself distinguish a thin limb from a capillary.",
+          "explanation": "Perfusion can remove blood; wall features, context and further evidence are needed."
+        },
+        {
+          "text": "Every profile is a thin limb.",
+          "explanation": "An empty capillary remains a possibility."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-jg-cell",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "Which pairing correctly distinguishes juxtaglomerular components?",
+      "options": [
+        {
+          "text": "Macula densa: capillary endothelium; granular cells: podocytes.",
+          "explanation": "The macula densa is epithelial and granular cells are associated with the arteriole."
+        },
+        {
+          "text": "Both are mesangial cells that have entered the tubular lumen.",
+          "explanation": "Location near the vascular pole does not establish a common mesangial origin or luminal migration."
+        },
+        {
+          "text": "Macula densa: tubular epithelium; granular cells: modified vascular smooth muscle.",
+          "explanation": "Their close relationship coordinates tubular and vascular information without making them the same cell population."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "system-depth-collecting-origin",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "Why is a collecting duct connected to the nephron but distinguished from it in developmental terminology?",
+      "options": [
+        {
+          "text": "Its epithelium belongs to the ureteric-bud collecting system.",
+          "explanation": "Nephron epithelium forms from a different progenitor compartment and establishes a luminal connection."
+        },
+        {
+          "text": "Its epithelium and every glomerular cell share one nephron-progenitor origin.",
+          "explanation": "This conflates collecting epithelium, nephron epithelium and vascular or mesangial components."
+        },
+        {
+          "text": "It never carries tubular fluid.",
+          "explanation": "It receives fluid from nephrons despite the distinction in epithelial origin."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-met",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "What additional achievement is required when a mesenchymal aggregate becomes a renal vesicle?",
+      "options": [
+        {
+          "text": "Retention of an unpolarised aggregate with no luminal organisation.",
+          "explanation": "That omits the epithelial organisation acquired during the transition."
+        },
+        {
+          "text": "Epithelial organisation with polarity and a lumen.",
+          "explanation": "Mesenchymal-to-epithelial transition changes organisation, not just aggregate size."
+        },
+        {
+          "text": "Immediate acquisition of every mature transport function.",
+          "explanation": "Early epithelial patterning does not imply adult physiological maturity."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-signal-roles",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "Which account keeps the molecular roles distinct?",
+      "options": [
+        {
+          "text": "WT1 is secreted to bind the extracellular GDNF receptor protein.",
+          "explanation": "WT1 is not the secreted ligand in this developmental account."
+        },
+        {
+          "text": "GDNF is the receptor kinase and RET the secreted ligand.",
+          "explanation": "This reverses the ligand and receptor roles."
+        },
+        {
+          "text": "GDNF is a ligand, RET a receptor tyrosine kinase and WT1 an intracellular regulator.",
+          "explanation": "These occupy different positions in a signalling and gene-regulatory explanation."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "system-depth-lineage-method",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "Human tissue immunolabelling and mouse inducible lineage tracing appear in the same paper. Which conclusion respects the methods?",
+      "options": [
+        {
+          "text": "The human image maps detection at sampling; the mouse experiment follows labelled descendants in its model.",
+          "explanation": "Species and method determine the scope of each inference."
+        },
+        {
+          "text": "The human images directly track every cell into adulthood.",
+          "explanation": "Static immunolabelling does not perform that longitudinal experiment."
+        },
+        {
+          "text": "A matching marker makes developmental timing identical in both species.",
+          "explanation": "Shared expression does not establish equivalent timing or identical lineage behaviour."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-urothelium",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "A distended bladder has flatter superficial cells than a relaxed specimen. What is the best explanation?",
+      "options": [
+        {
+          "text": "Fewer visible nuclear rows prove that superficial cells have been permanently lost.",
+          "explanation": "Section plane and stretching affect visible rows; the observation alone cannot establish cell loss."
+        },
+        {
+          "text": "Urothelial appearance changes with distension and preparation.",
+          "explanation": "Umbrella-cell shape and apparent layering can change without a new epithelial origin."
+        },
+        {
+          "text": "Flattening alone proves replacement by a single layer of squamous cells.",
+          "explanation": "Cell shape and apparent layering vary with distension; architecture and context remain necessary."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-reabsorption-boundary",
+      "topic": "renal-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/renal-histology#apply-the-concept",
+      "prompt": "To return reabsorbed material to blood, which route is anatomically coherent?",
+      "options": [
+        {
+          "text": "Tubular lumen → an open hole directly into the efferent arteriole.",
+          "explanation": "Normal transport does not require a direct luminal opening between tubule and arteriole."
+        },
+        {
+          "text": "Capsular space → collecting duct without any nephron segment.",
+          "explanation": "That bypasses the normal tubular route and processing."
+        },
+        {
+          "text": "Tubular lumen → epithelium → interstitium → peritubular blood.",
+          "explanation": "This crosses the epithelial and vascular boundaries between the two luminal systems."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "system-depth-cartilage-fragment",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "A tiny airway-wall fragment contains no cartilage. What is the strongest justified conclusion?",
+      "options": [
+        {
+          "text": "Its level remains uncertain until more of the wall and surrounding tissue are examined.",
+          "explanation": "An incomplete sample can miss cartilage plates or glands."
+        },
+        {
+          "text": "It proves the complete airway is a bronchiole.",
+          "explanation": "An absent feature in a fragment is not the same as absence from the whole wall."
+        },
+        {
+          "text": "It proves an alveolar sac.",
+          "explanation": "An alveolar sac requires an alveolar spatial pattern, not simply missing cartilage."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-wall-opening",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "Which observation most strongly supports a respiratory bronchiole?",
+      "options": [
+        {
+          "text": "A red cell is present in a neighbouring capillary.",
+          "explanation": "Capillary blood does not determine airway segment identity."
+        },
+        {
+          "text": "An alveolar opening interrupts an otherwise bronchiolar wall.",
+          "explanation": "The wall-to-alveolus continuity is the relevant relationship."
+        },
+        {
+          "text": "An alveolus lies near a continuous wall.",
+          "explanation": "Adjacent alveoli also surround conducting bronchioles."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-pseudostratified",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "Nuclei occur at different heights in a ciliated airway lining. Which additional property defines pseudostratification?",
+      "options": [
+        {
+          "text": "Only the deepest cell layer contacts the basal lamina.",
+          "explanation": "That describes a genuinely stratified arrangement."
+        },
+        {
+          "text": "Every cell must have the same height and reach the surface.",
+          "explanation": "That is not required in a pseudostratified lining."
+        },
+        {
+          "text": "All epithelial cells contact the basal lamina, although not all reach the lumen.",
+          "explanation": "Nuclear height alone does not define the number of true layers."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "system-depth-fold",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "Which combination best supports a true vocal fold?",
+      "options": [
+        {
+          "text": "Squamous lining with a vocal ligament and vocalis skeletal muscle.",
+          "explanation": "These fit protection and vibration at the true fold."
+        },
+        {
+          "text": "Gland-rich respiratory mucosa without a vocal ligament or vocalis relationship.",
+          "explanation": "That combination favours a false-fold or other respiratory-mucosal context."
+        },
+        {
+          "text": "An elastic-cartilage core with different mucosal surfaces.",
+          "explanation": "That combination points toward the epiglottis rather than the vibrating true fold."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-acinus",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "A schematic shows three terminal bronchioles supplying three distal territories inside one septal boundary. How should the territories be described?",
+      "options": [
+        {
+          "text": "A single acinus, because any septal boundary defines one acinus.",
+          "explanation": "An acinus is defined by its supplying terminal bronchiole, whereas the septal boundary describes the lobular level."
+        },
+        {
+          "text": "Three acini within the represented secondary lobule.",
+          "explanation": "Each acinus is defined relative to its terminal bronchiole; a lobule can contain several."
+        },
+        {
+          "text": "Three individual alveoli, each necessarily an entire lobule.",
+          "explanation": "This confuses the scale of an alveolus with airway-defined and septal units."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-barrier-cell",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "Which cell is not an obligatory layer in the thin blood–air diffusion route?",
+      "options": [
+        {
+          "text": "A type I alveolar epithelial cell.",
+          "explanation": "Its attenuated cytoplasm contributes to the thin route."
+        },
+        {
+          "text": "A capillary endothelial cell.",
+          "explanation": "The endothelial boundary separates the septal interface from blood."
+        },
+        {
+          "text": "An alveolar macrophage.",
+          "explanation": "It is a phagocyte in the alveolar environment, not an obligatory continuous barrier layer."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "system-depth-preparation",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "One region of a lung section looks collapsed and has thick-looking septa. What should precede a disease claim?",
+      "options": [
+        {
+          "text": "Check fixation/inflation context and compare intact regions.",
+          "explanation": "Preparation can change apparent air-space and septal geometry."
+        },
+        {
+          "text": "Measure the screen image without any scale.",
+          "explanation": "Display size is not calibrated tissue size."
+        },
+        {
+          "text": "Assume every nuclear profile belongs to a type II cell.",
+          "explanation": "Several cell types occupy or border an alveolar septum."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-origin",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "Which developmental account preserves the main compartment distinction?",
+      "options": [
+        {
+          "text": "Respiratory epithelium and its supporting muscle both arise entirely from foregut endoderm.",
+          "explanation": "This incorrectly extends epithelial origin to the surrounding mesodermal support."
+        },
+        {
+          "text": "Lower respiratory epithelium arises from foregut endoderm and develops with surrounding mesodermal support.",
+          "explanation": "The epithelial and supporting compartments interact rather than sharing a single blanket origin."
+        },
+        {
+          "text": "Every lung cell is derived from the airway epithelium.",
+          "explanation": "Vascular, supporting and immune populations cannot be collapsed into one epithelial lineage."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-stage-pattern",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "A fetal field contains many epithelial tubes in abundant mesenchyme, without mature alveolar exchange architecture. Which description fits?",
+      "options": [
+        {
+          "text": "A fully mature adult alveolar field.",
+          "explanation": "The dense tubular/mesenchymal organisation does not match that conclusion."
+        },
+        {
+          "text": "A precise gestational age established by one field.",
+          "explanation": "Stage morphology is not a precise clock and published age conventions differ."
+        },
+        {
+          "text": "A pseudoglandular pattern, subject to specimen and stage context.",
+          "explanation": "The gland-like branching architecture is the relevant observation."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "system-depth-alveolarisation",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "Why is surfactant production alone an incomplete account of lung maturation?",
+      "options": [
+        {
+          "text": "Exchange also depends on epithelial thinning, vascular relationships and subdivision/remodelling of distal spaces.",
+          "explanation": "Mechanical and spatial maturation accompany cellular differentiation."
+        },
+        {
+          "text": "Surfactant replaces the need for capillaries.",
+          "explanation": "Gas exchange still requires a vascular interface."
+        },
+        {
+          "text": "Only airway cartilage is needed after surfactant appears.",
+          "explanation": "Cartilage supports conducting airways and does not form the alveolar exchange surface."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "system-depth-perturbation",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "An image shows SOX9 in a progenitor region. What adds a different kind of evidence about function?",
+      "options": [
+        {
+          "text": "Calling a neighbouring cell a descendant without tracking it.",
+          "explanation": "Proximity does not establish lineage."
+        },
+        {
+          "text": "A controlled reduction of SOX9 activity followed by defined outcome measurements.",
+          "explanation": "Perturbation tests consequences; localisation alone identifies where detection occurred."
+        },
+        {
+          "text": "Finding the same marker in a second static section without changing its activity.",
+          "explanation": "Replication can strengthen localisation evidence but does not itself test the consequences of changing activity."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "system-depth-age-convention",
+      "topic": "respiratory-histology",
+      "subject": "histology",
+      "title": "Structure, development and evidence",
+      "href": "/library/respiratory-histology#apply-the-concept",
+      "prompt": "One paper reports postconception weeks and a diagram uses gestational weeks. What should a comparison do first?",
+      "options": [
+        {
+          "text": "Treat equal week numbers as identical developmental ages.",
+          "explanation": "That ignores how age was defined."
+        },
+        {
+          "text": "Use one histological field to set a universal survival threshold.",
+          "explanation": "Morphology alone cannot justify a clinical viability rule."
+        },
+        {
+          "text": "Check and state each age convention before aligning stages.",
+          "explanation": "The labels refer to different timing conventions; unqualified numbers can mislead."
+        }
+      ],
+      "answer": 2
     }
   ]
 }

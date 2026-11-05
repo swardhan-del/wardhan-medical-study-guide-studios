@@ -1441,6 +1441,94 @@
       "independent": false,
       "record": "docs/reviews/histology-depth-20261105.md",
       "contentSha256": "3988750e7e9f7e049230d138f505323c06edbd8bac3efdf5a7ffbcbf577b5933"
+    },
+    {
+      "id": "renal-histology-editorial-system-depth-20261105",
+      "lessonId": "renal-histology",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source review",
+      "qualification": "Automated assistant; no independent clinical certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "ddb141551ebfad339de4d1967128619c3471927dbcbec1e64cbd38a76aaeae02"
+    },
+    {
+      "id": "respiratory-histology-editorial-system-depth-20261105",
+      "lessonId": "respiratory-histology",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source review",
+      "qualification": "Automated assistant; no independent clinical certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "fd457fa4bf6c53b7bd2d091760f93d3a855f019116f7e2cbf1e868eb3cc97313"
+    },
+    {
+      "id": "renal-histology-visual-system-depth-20261105",
+      "lessonId": "renal-histology",
+      "scope": "visual",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "ddb141551ebfad339de4d1967128619c3471927dbcbec1e64cbd38a76aaeae02"
+    },
+    {
+      "id": "renal-histology-accessibility-system-depth-20261105",
+      "lessonId": "renal-histology",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "ddb141551ebfad339de4d1967128619c3471927dbcbec1e64cbd38a76aaeae02"
+    },
+    {
+      "id": "renal-histology-readability-system-depth-20261105",
+      "lessonId": "renal-histology",
+      "scope": "readability",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "ddb141551ebfad339de4d1967128619c3471927dbcbec1e64cbd38a76aaeae02"
+    },
+    {
+      "id": "respiratory-histology-visual-system-depth-20261105",
+      "lessonId": "respiratory-histology",
+      "scope": "visual",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "fd457fa4bf6c53b7bd2d091760f93d3a855f019116f7e2cbf1e868eb3cc97313"
+    },
+    {
+      "id": "respiratory-histology-accessibility-system-depth-20261105",
+      "lessonId": "respiratory-histology",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "fd457fa4bf6c53b7bd2d091760f93d3a855f019116f7e2cbf1e868eb3cc97313"
+    },
+    {
+      "id": "respiratory-histology-readability-system-depth-20261105",
+      "lessonId": "respiratory-histology",
+      "scope": "readability",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source and rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/system-depth-20261105.md",
+      "contentSha256": "fd457fa4bf6c53b7bd2d091760f93d3a855f019116f7e2cbf1e868eb3cc97313"
     }
   ]
 }

@@ -2709,6 +2709,178 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "renal-histology",
+      "title": "Kidney: slide identification, nephron formation and developmental signals",
+      "subject": "histology",
+      "topic": "System-specific microscopic anatomy and embryology",
+      "slug": "renal-histology",
+      "learnerLevel": "Medical sciences: practical identification and developmental mechanisms",
+      "objectives": [
+        "Identify cortical regions, corpuscle poles and tubular alternatives using multiple clues.",
+        "Separate blood flow, filtrate flow and transepithelial transport.",
+        "Explain nephron epithelial formation and its connection to the ureteric collecting system.",
+        "Distinguish ligand, receptor, regulator, localisation and lineage evidence."
+      ],
+      "sources": [
+        {
+          "title": "Duke University: urinary-system practical, with specimen and preparation context",
+          "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Urinary/SS-Urinary.html",
+          "publisherOrAuthor": "Duke University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Lindström et al. (2018): conserved and divergent nephron patterning in human and mouse",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5827611/",
+          "publisherOrAuthor": "Lindström et al. (2018)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Sainio et al. (1997): GDNF and ureteric budding, abstract reviewed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9374404/",
+          "publisherOrAuthor": "Sainio et al. (1997)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "NCBI Gene: human RET",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/5979",
+          "publisherOrAuthor": "NCBI Gene",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NCBI Gene: human WT1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/7490",
+          "publisherOrAuthor": "NCBI Gene",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Existing credited images and diagrams retained. New original route explorer reviewed at desktop and 320px with 200% text. No research specimen image added.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "AI-assisted teaching; independent clinical review remains pending.",
+        "Conceptual maps do not certify recognition of real specimens.",
+        "Developmental stages and model experiments are not clinical viability or diagnosis rules."
+      ],
+      "reviewEvidenceIds": [
+        "renal-histology-editorial-system-depth-20261105",
+        "renal-histology-visual-system-depth-20261105",
+        "renal-histology-accessibility-system-depth-20261105",
+        "renal-histology-readability-system-depth-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia"
+        ],
+        "related": [
+          "cell-junctions",
+          "renal-kidney-map",
+          "renal-tubular-transport",
+          "urinary-development"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "respiratory-histology",
+      "title": "Respiratory system: wall identification, exchange surfaces and lung development",
+      "subject": "histology",
+      "topic": "System-specific microscopic anatomy and embryology",
+      "slug": "respiratory-histology",
+      "learnerLevel": "Medical sciences: practical identification and developmental mechanisms",
+      "objectives": [
+        "Distinguish airway levels by wall organisation and alveolar openings.",
+        "Explain the alveolar interface and the evidence needed to identify its cells.",
+        "Connect epithelial and mesenchymal origins with specification, branching and maturation.",
+        "Interpret developmental stages and organoid experiments within their stated scope."
+      ],
+      "sources": [
+        {
+          "title": "Duke University: respiratory-system practical",
+          "url": "https://histology.oit.duke.edu/NormalBody/Respiratory/Respiratory.html",
+          "publisherOrAuthor": "Duke University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UNSW Embryology: respiratory-system development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Respiratory_System_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Goss et al. (2009): Wnt2/2b and beta-catenin in mouse lung specification",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2763331/",
+          "publisherOrAuthor": "Goss et al. (2009)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Bellusci et al. (1997): FGF10 and embryonic mouse lung branching, abstract reviewed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9428423/",
+          "publisherOrAuthor": "Bellusci et al. (1997)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Sun et al. (2022): SOX9 in human fetal lung progenitor organoids",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9627674/",
+          "publisherOrAuthor": "Sun et al. (2022)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Existing credited images and diagrams retained. New original route explorer reviewed at desktop and 320px with 200% text. No research specimen image added.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "AI-assisted teaching; independent clinical review remains pending.",
+        "Conceptual maps do not certify recognition of real specimens.",
+        "Developmental stages and model experiments are not clinical viability or diagnosis rules."
+      ],
+      "reviewEvidenceIds": [
+        "respiratory-histology-editorial-system-depth-20261105",
+        "respiratory-histology-visual-system-depth-20261105",
+        "respiratory-histology-accessibility-system-depth-20261105",
+        "respiratory-histology-readability-system-depth-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia"
+        ],
+        "related": [
+          "ventilation-perfusion",
+          "cell-junctions",
+          "epithelia",
+          "thoracic-development"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

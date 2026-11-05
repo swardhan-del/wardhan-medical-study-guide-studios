@@ -4456,25 +4456,6 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
-      "bytes": 0,
-      "id": "respiratory-histology",
-      "title": "From conducting airways to alveoli",
-      "subject": "histology",
-      "kind": "Study lesson",
-      "format": "WEB",
-      "summary": "Follow the changing epithelium, supporting wall and exchange surface along the respiratory tree.",
-      "tags": [
-        "Organ histology",
-        "respiratory",
-        "lung",
-        "bronchioles",
-        "alveoli"
-      ],
-      "minutes": 5
-    },
-    {
-      "status": "public",
       "updatedAt": "2026-09-23",
       "bytes": 0,
       "id": "histology-foundations-tissues",
@@ -4497,14 +4478,14 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-11-05",
       "bytes": 0,
       "id": "renal-histology",
-      "title": "Kidney cortex, medulla and tubules",
+      "title": "Kidney: slide identification, nephron formation and developmental signals",
       "subject": "histology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Orient the section, identify a renal corpuscle, then connect tubular appearance to transport.",
+      "summary": "Connect microscopic architecture with transport, epithelial origins and the experimental evidence behind nephron development.",
       "tags": [
         "Organ histology",
         "kidney",
@@ -4512,7 +4493,7 @@
         "nephron",
         "tubules"
       ],
-      "minutes": 5
+      "minutes": 45
     },
     {
       "status": "public",
@@ -4726,6 +4707,25 @@
         "reproduction"
       ],
       "minutes": 16
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-05",
+      "bytes": 0,
+      "id": "respiratory-histology",
+      "title": "Respiratory system: wall identification, exchange surfaces and lung development",
+      "subject": "histology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Trace airway levels and the alveolar interface, then explain how specification, branching and maturation build the lung.",
+      "tags": [
+        "Organ histology",
+        "respiratory",
+        "lung",
+        "bronchioles",
+        "alveoli"
+      ],
+      "minutes": 45
     },
     {
       "status": "public",
