@@ -2881,6 +2881,135 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "gi-histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "subject": "histology",
+      "topic": "Digestive microscopic anatomy, regional development and tissue renewal",
+      "slug": "gi-histology",
+      "learnerLevel": "Medical sciences: practical identification and developmental mechanisms",
+      "objectives": [
+        "Identify digestive regions using compartments, cell polarity and more than one positive clue.",
+        "Distinguish a villus, crypt, fold and microvillus, including cross-cut profiles.",
+        "Explain gastric secretory organelles and interpret stains in anatomical context.",
+        "Map gut-wall developmental contributions and distinguish regional identity from local morphogenesis.",
+        "Connect selected mouse and human experiments to renewal, signalling and model limitations."
+      ],
+      "sources": [
+        {
+          "title": "Duke University: gastrointestinal histology practical",
+          "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-GItract/SS-GItract.html",
+          "publisherOrAuthor": "Duke University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: parietal-cell TEM (rat stomach)",
+          "url": "https://histologyguide.com/EM-view/EM-025-parietal-cell/14-photo-1.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NCBI Bookshelf: Histology, Parietal Cells",
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547758/",
+          "publisherOrAuthor": "NCBI Bookshelf",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Duke Embryology: gut development",
+          "url": "https://embryology.oit.duke.edu/GI/GI.html",
+          "publisherOrAuthor": "Duke Embryology",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia University: cells, organelles and histochemistry",
+          "url": "https://histologylab.ctl.columbia.edu/lab01/cells-organelles-histochemistry/",
+          "publisherOrAuthor": "Columbia University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "McCracken et al.: human gastric organoids",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4270898/",
+          "publisherOrAuthor": "McCracken et al.",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Walton et al. (2016): mouse villus patterning",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4760312/",
+          "publisherOrAuthor": "Walton et al. (2016)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Holloway et al.: the developing human intestinal niche",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7935765/",
+          "publisherOrAuthor": "Holloway et al.",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Fawkner-Corbett et al.: human intestinal development atlas",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7864098/",
+          "publisherOrAuthor": "Fawkner-Corbett et al.",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Barker et al. (2007): adult-mouse crypt-base lineage tracing",
+          "url": "https://www.nature.com/articles/nature06196",
+          "publisherOrAuthor": "Barker et al. (2007)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Huang et al.: human intestinal tuft-cell plasticity",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11499303/",
+          "publisherOrAuthor": "Huang et al.",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original villus/crypt schematic and retained gut-wall layout. Both profile states, labels and keyboard controls reviewed; equivalent text remains available without JavaScript. No real GI micrograph reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "AI-assisted source and editorial review; independent medical review remains outstanding.",
+        "Conceptual diagrams do not certify real-specimen recognition. Linked TEM uses rat tissue.",
+        "Organoid and animal experiments are not patient diagnosis or treatment evidence."
+      ],
+      "reviewEvidenceIds": [
+        "gi-histology-editorial-gi-depth-20261105",
+        "gi-histology-visual-gi-depth-20261105",
+        "gi-histology-accessibility-gi-depth-20261105",
+        "gi-histology-readability-gi-depth-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia"
+        ],
+        "related": [
+          "histology-foundations-tissues",
+          "liver-pancreas",
+          "foregut-development",
+          "cell-junctions"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

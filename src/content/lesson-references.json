@@ -124,9 +124,51 @@
     ]
   },
   "gi-histology": {
-    "title": "OpenStax: Small and large intestine",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
-    "checkedAt": "2026-09-07"
+    "title": "Duke University: gastrointestinal histology practical",
+    "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-GItract/SS-GItract.html",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Histology Guide: parietal-cell TEM (rat stomach)",
+        "url": "https://histologyguide.com/EM-view/EM-025-parietal-cell/14-photo-1.html"
+      },
+      {
+        "title": "NCBI Bookshelf: Histology, Parietal Cells",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547758/"
+      },
+      {
+        "title": "Duke Embryology: gut development",
+        "url": "https://embryology.oit.duke.edu/GI/GI.html"
+      },
+      {
+        "title": "Columbia University: cells, organelles and histochemistry",
+        "url": "https://histologylab.ctl.columbia.edu/lab01/cells-organelles-histochemistry/"
+      },
+      {
+        "title": "McCracken et al.: human gastric organoids",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4270898/"
+      },
+      {
+        "title": "Walton et al. (2016): mouse villus patterning",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4760312/"
+      },
+      {
+        "title": "Holloway et al.: the developing human intestinal niche",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7935765/"
+      },
+      {
+        "title": "Fawkner-Corbett et al.: human intestinal development atlas",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7864098/"
+      },
+      {
+        "title": "Barker et al. (2007): adult-mouse crypt-base lineage tracing",
+        "url": "https://www.nature.com/articles/nature06196"
+      },
+      {
+        "title": "Huang et al.: human intestinal tuft-cell plasticity",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11499303/"
+      }
+    ]
   },
   "liver-pancreas": {
     "title": "OpenStax: Liver and pancreas",

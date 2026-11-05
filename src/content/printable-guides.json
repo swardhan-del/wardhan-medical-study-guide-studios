@@ -158,11 +158,9 @@
       "subject": "histology",
       "number": "08",
       "title": "Oral Cavity Tongue Teeth Salivary Glands and Esophagus",
-      "lessonIds": [
-        "gi-histology"
-      ],
+      "lessonIds": [],
       "basis": "Divided printable guide, Revision 4, 3 August 2026",
-      "coverage": "Selected web adaptations; source part is broader.",
+      "coverage": "The website does not yet provide a dedicated adaptation of oral cavity, tongue, teeth, salivary glands and esophagus. Related digestive wall concepts are available in Part 09.",
       "practiceHref": null
     },
     {
@@ -171,10 +169,11 @@
       "number": "09",
       "title": "Stomach Intestines Liver Gallbladder and Pancreas",
       "lessonIds": [
+        "gi-histology",
         "liver-pancreas"
       ],
       "basis": "Divided printable guide, Revision 4, 3 August 2026",
-      "coverage": "Selected web adaptations; source part is broader.",
+      "coverage": "Selected web adaptations: digestive wall, stomach and intestine with developmental research; liver and pancreas introduction. Source part is broader.",
       "practiceHref": null
     },
     {
