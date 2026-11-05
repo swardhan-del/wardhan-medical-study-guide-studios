@@ -37,6 +37,6 @@ test('histology source gaps remain explicit and lesson / answer selection stays 
   await page.locator('.guide-options input').first().check();
   await expect(page.locator('.revision-lesson')).toHaveCount(2);
   await expect(page.locator('.revision-answers')).toContainText('Histology Foundations: The Four Basic Tissues');
-  await expect(page.locator('.revision-answers')).toContainText('Reading a histology section');
+  await expect(page.locator('.revision-answers')).toContainText('Preparation, staining and defensible slide interpretation');
   await expect(page.locator('.revision-answers')).not.toContainText('Myelin and glia');
 });

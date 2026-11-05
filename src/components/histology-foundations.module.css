@@ -45,3 +45,6 @@
   .diagram { box-shadow: none; }
   .grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* Keep long anatomical names readable when text is enlarged on narrow screens. */
+.diagram h4 { overflow-wrap: anywhere; }

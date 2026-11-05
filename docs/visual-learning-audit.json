@@ -2572,14 +2572,15 @@
       "action": "standardise-or-reuse",
       "components": [
         "EducationalFigure",
-        "HistologyVisualStudy"
+        "HistologyVisualStudy",
+        "TissueEvidenceExplorer"
       ],
       "visualIds": [],
       "figureIds": [
         "cuboidal-section",
         "squamous-section"
       ],
-      "rationale": "The visual supports this specific learning task: Recognise epithelial, connective, muscle and nervous tissue by their architecture, relate structure to function, and justify an identification using more than one clue."
+      "rationale": "The visual supports this specific learning task: Recognise epithelial, connective, muscle and nervous tissue by their architecture, relate structure to function, and justify an identification using more than one clue. Existing figures and identifiers retained. Original interactive comparisons/sequencing supplement them; no new specimen image or atlas reproduction."
     },
     {
       "id": "renal-histology",
@@ -2627,17 +2628,18 @@
     {
       "id": "lymphoid-organs",
       "route": "/library/lymphoid-organs",
-      "title": "Lymph node, spleen and thymus",
+      "title": "Lymphoid organs: practical identification, routes and developmental origins",
       "kind": "Study lesson",
       "action": "new-comparison-or-flow",
       "components": [
-        "LessonVisuals"
+        "LessonVisuals",
+        "LymphoidPractical"
       ],
       "visualIds": [
         "lymphoid-comparison"
       ],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs."
+      "rationale": "The visual supports this specific learning task: Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs. Existing figures and identifiers retained. Original interactive comparisons/sequencing supplement them; no new specimen image or atlas reproduction."
     },
     {
       "id": "myelin-and-glial-cells",
@@ -2683,18 +2685,19 @@
     {
       "id": "microscopy",
       "route": "/library/microscopy",
-      "title": "Reading a histology section",
+      "title": "Preparation, staining and defensible slide interpretation",
       "kind": "Study lesson",
       "action": "standardise-or-reuse",
       "components": [
         "EducationalFigure",
-        "HistologyVisualLesson"
+        "HistologyVisualLesson",
+        "PreparationSequence"
       ],
       "visualIds": [],
       "figureIds": [
         "cuboidal-section"
       ],
-      "rationale": "The visual supports this specific learning task: Build an identification from architecture, cells and preparation clues before naming the organ."
+      "rationale": "The visual supports this specific learning task: Build an identification from architecture, cells and preparation clues before naming the organ. Existing figures and identifiers retained. Original interactive comparisons/sequencing supplement them; no new specimen image or atlas reproduction."
     },
     {
       "id": "gi-histology",

@@ -551,6 +551,443 @@
           "explanation": "Whether ATP is used does not determine tonicity; passive solute entry can still alter water balance."
         }
       ]
+    },
+    {
+      "id": "histology-depth-node-blood-entry",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "A plump endothelial venule lies in paracortical lymphoid tissue. Which route does it most directly support?",
+      "options": [
+        {
+          "text": "Afferent lymph entering the subcapsular sinus",
+          "explanation": "Afferent lymphatics open into the subcapsular sinus. They are not the plump postcapillary blood venules described in the paracortex."
+        },
+        {
+          "text": "Lymph leaving through an epithelial crypt",
+          "explanation": "A palatine tonsillar crypt is continuous with mucosal epithelium; it is not a lymph-node efferent passage."
+        },
+        {
+          "text": "Lymphocyte entry from blood into the node",
+          "explanation": "An HEV is a specialised blood vessel. It is separate from the afferent lymphatic route."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "histology-depth-node-cord-sinus",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "A medullary field contains cellular strands separated by lymph spaces. Which pairing fits?",
+      "options": [
+        {
+          "text": "A germinal centre and its epithelial crypt",
+          "explanation": "A germinal centre is a region within a lymphoid follicle; a crypt is a mucosal invagination. That pairing does not describe medullary strands and intervening sinuses."
+        },
+        {
+          "text": "White pulp and a central arteriole",
+          "explanation": "White pulp has an arterial relationship in spleen. The described lymph spaces and medullary cords fit node organisation."
+        },
+        {
+          "text": "Cellular medullary cords and intervening sinuses",
+          "explanation": "Cords are tissue; the intervening medullary sinuses carry lymph."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "histology-depth-node-pale-centre",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "One pale centre occurs within a darker lymphoid nodule. What additional evidence is needed to identify the organ?",
+      "options": [
+        {
+          "text": "Its colour alone determines the germ layer",
+          "explanation": "Stain colour describes contrast in the processed section, not developmental lineage. Germ-layer claims require developmental evidence."
+        },
+        {
+          "text": "Its position relative to capsule, mucosa and vessels",
+          "explanation": "Follicles with germinal centres occur in several secondary lymphoid tissues."
+        },
+        {
+          "text": "No further evidence: it is always a lymph node",
+          "explanation": "Germinal centres occur in nodes, splenic nodules and tonsillar lymphoid tissue. One follicle does not uniquely name the organ."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-depth-node-flow-model",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "A worksheet puts the paracortex between afferent lymphatics and medullary sinuses as though it were another sinus. What is the correction?",
+      "options": [
+        {
+          "text": "Make lymph enter through Hassall corpuscles",
+          "explanation": "Hassall corpuscles are epithelial structures in thymic medulla. They are not lymph inflow openings."
+        },
+        {
+          "text": "Name the subcapsular/deeper sinus route and keep the paracortex as a tissue region",
+          "explanation": "The cellular region and the named lymphatic passages must remain different entities."
+        },
+        {
+          "text": "Replace every sinus with a blood venule",
+          "explanation": "Sinuses carrying lymph and venules carrying blood have distinct routes. Replacing one with the other removes the central distinction."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-depth-spleen-central",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "An arteriole lies eccentrically relative to a lymphoid nodule surrounded by red pulp. Does eccentricity exclude spleen?",
+      "options": [
+        {
+          "text": "No; central describes a vascular association, not an invariant geometric centre",
+          "explanation": "A two-dimensional section need not put a white-pulp arteriole at the centre of a nodule."
+        },
+        {
+          "text": "Yes; every central arteriole must be in the geometric centre",
+          "explanation": "A section can intersect an arteriole away from the apparent centre of an associated nodule. The name does not impose that geometry."
+        },
+        {
+          "text": "Yes; any arteriole identifies lymph node",
+          "explanation": "Arterioles occur in many organs. The surrounding white-pulp/red-pulp organisation matters more than the mere presence of an arteriole."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-depth-spleen-pulp",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "Which assignment preserves the splenic compartments?",
+      "options": [
+        {
+          "text": "White pulp: lymphoid organisation; red pulp: cords and blood sinusoids",
+          "explanation": "White pulp has lymphoid organisation; red pulp contains cellular cords and blood sinusoids."
+        },
+        {
+          "text": "White pulp: blood-only sinusoids; red pulp: T-cell follicles",
+          "explanation": "This reverses the defining relationship. White pulp is the lymphoid component; red pulp includes blood-rich cords and sinusoids."
+        },
+        {
+          "text": "White pulp: thymic medulla; red pulp: tonsillar crypts",
+          "explanation": "Cortex/medulla in thymus and crypts in tonsil are different arrangements. They cannot be substituted for splenic pulp compartments."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-depth-thymus-pale",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "A pale region within a lobular lymphoid organ contains concentric epithelial structures. Which comparison is strongest?",
+      "options": [
+        {
+          "text": "A tonsillar crypt because both are pale",
+          "explanation": "A crypt is an epithelial-lined invagination continuous with a surface, not a concentric medullary epithelial corpuscle."
+        },
+        {
+          "text": "Thymic medulla with Hassall corpuscles rather than a lymph-node germinal centre",
+          "explanation": "The epithelial corpuscles and lobular organisation support thymus."
+        },
+        {
+          "text": "A germinal centre because every pale lymphoid area is one",
+          "explanation": "Paleness is shared by different structures. Concentric epithelial corpuscles within a lobular medulla support thymus rather than a follicular germinal centre."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-depth-tonsil-space",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "A lymphoid aggregate lies beneath an invaginated stratified squamous mucosal surface. What distinguishes a crypt from a node sinus?",
+      "options": [
+        {
+          "text": "Continuity with an epithelial-lined surface",
+          "explanation": "Surface continuity is positive evidence; a subcapsular sinus lies beneath a connective-tissue capsule."
+        },
+        {
+          "text": "The pale colour of the space alone",
+          "explanation": "Both genuine lumina and processing spaces may be pale. Demonstrating a lining and its continuity is stronger than colour."
+        },
+        {
+          "text": "The presence of any nearby lymphocyte",
+          "explanation": "Lymphocytes occur in many locations. Their presence alone does not establish what bounds a space."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-depth-thymus-populations",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "Human third-pouch epithelial origin is established in a developmental study. What does this establish about thymocytes?",
+      "options": [
+        {
+          "text": "Thymocytes and splenic cords must have identical origins",
+          "explanation": "Adult functional grouping as lymphoid organs does not imply identical developmental origins for every supporting cell population."
+        },
+        {
+          "text": "Their origin remains a separate haematopoietic lineage question",
+          "explanation": "The adult organ contains populations with different developmental histories."
+        },
+        {
+          "text": "Every thymocyte must be an endodermal epithelial cell",
+          "explanation": "The finding concerns epithelial cells, not every cell in the organ. Thymocytes belong to the haematopoietic population."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-depth-research-route",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "An H&E section shows a follicle beside a sinus. Which claim needs a different kind of observation?",
+      "options": [
+        {
+          "text": "The presence of a lymphoid aggregate in the section",
+          "explanation": "A visible lymphoid aggregate is a structural observation available in the displayed section; it does not require a time-resolved transport experiment."
+        },
+        {
+          "text": "The location of a capsule in the displayed section",
+          "explanation": "A visible capsule can be located in a still section. That observation is different from measuring an antigen trajectory."
+        },
+        {
+          "text": "The time-dependent route taken by a labelled antigen",
+          "explanation": "The conduit study used experimental imaging; a static section is not a trajectory measurement."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "histology-depth-thymus-stage-evidence",
+      "topic": "lymphoid-organs",
+      "subject": "histology",
+      "title": "Identification and experimental reasoning",
+      "href": "/library/lymphoid-organs#apply-the-concept",
+      "prompt": "A human embryology paper reports gene-expression localisation at ages measured after fertilisation. Which is the best way to use it in a developmental explanation?",
+      "options": [
+        {
+          "text": "Convert the localisation into proof that every adult thymic cell has the same origin.",
+          "explanation": "An organ contains several cell populations; spatial expression is not universal lineage proof."
+        },
+        {
+          "text": "Label the reported ages as obstetric gestational weeks without adjustment.",
+          "explanation": "The age convention differs; preserve the paper’s declared convention."
+        },
+        {
+          "text": "State the sampled stage, age convention and measured marker, then separate observation from inference.",
+          "explanation": "This retains the experimental scope without treating expression localisation as human lineage tracing."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "histology-depth-stain-pink",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "A pink bundle is seen in H&E. What most improves a tendon-versus-smooth-muscle decision?",
+      "options": [
+        {
+          "text": "Assume pink means muscle",
+          "explanation": "Eosinophilia is shared by many proteins, including collagen and muscle components. Pink colour alone does not establish muscle."
+        },
+        {
+          "text": "Assume absent striations means tendon",
+          "explanation": "Smooth muscle lacks sarcomeric striations and section orientation can hide striations of striated muscle. Absence alone does not establish tendon."
+        },
+        {
+          "text": "Cell density, nuclear pattern and extracellular-fibre organisation",
+          "explanation": "Both may be pink. Positive architectural features are needed."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "histology-depth-stain-basophilia",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "What does basophilic most directly describe here?",
+      "options": [
+        {
+          "text": "A measured intracellular alkaline pH",
+          "explanation": "Stain affinity is not a calibrated pH measurement. Fixation, dye chemistry and the stained component influence the appearance."
+        },
+        {
+          "text": "A proof of high mitotic activity",
+          "explanation": "A basophilic region can reflect nucleic-acid-rich material. It is not itself a mitotic index or direct activity measurement."
+        },
+        {
+          "text": "A staining affinity under the preparation conditions",
+          "explanation": "The term describes dye affinity; it is not a pH or activity assay."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "histology-depth-stain-orientation",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "A narrow structure lies outside the chosen section plane. Can changing H&E to trichrome guarantee it appears?",
+      "options": [
+        {
+          "text": "Yes; collagen colour determines the section plane",
+          "explanation": "Collagen colour depends on the stain method. It cannot determine or change the orientation of the physical cut."
+        },
+        {
+          "text": "No; dye choice cannot recover a structure not intersected",
+          "explanation": "Orientation and chemical contrast solve different problems."
+        },
+        {
+          "text": "Yes; all special stains reconstruct three dimensions",
+          "explanation": "Special stains change chemical contrast. They do not reconstruct a missing section plane or add an uncut structure to the specimen."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-depth-stain-lipid",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "A routine paraffin section lacks visible lipid droplets. Which conclusion is best supported?",
+      "options": [
+        {
+          "text": "Processing may have removed lipid; review the method before inferring biological absence",
+          "explanation": "Preparation can change retained components; a method suited to lipid is a separate decision."
+        },
+        {
+          "text": "The original living tissue contained no lipid",
+          "explanation": "Solvent processing can remove lipid that was present in the living tissue. Non-visibility after processing cannot alone establish its original absence."
+        },
+        {
+          "text": "The absent lipid proves the tissue is nervous",
+          "explanation": "Many tissue types contain lipid, and processing effects are not specific to nervous tissue. Organ identification still needs architecture."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-depth-stain-pas",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "PAS positivity alone is observed. What remains unresolved?",
+      "options": [
+        {
+          "text": "Which PAS-reactive component accounts for the signal in its anatomical context",
+          "explanation": "Several carbohydrate-rich components can contribute; controls and context are required."
+        },
+        {
+          "text": "The signal must uniquely identify glycogen",
+          "explanation": "PAS can highlight several carbohydrate-rich components. Distinguishing a glycogen contribution requires additional method/context, such as a suitable diastase comparison."
+        },
+        {
+          "text": "The signal proves a specific patient diagnosis",
+          "explanation": "A histochemical signal alone lacks the anatomical, assay and clinical evidence needed for a specific diagnosis."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "histology-depth-stain-fold",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "A sharply dark doubled region follows a crease across otherwise intact tissue. What should be considered first?",
+      "options": [
+        {
+          "text": "A proven increase in cell production",
+          "explanation": "Darkness in a folded section is not a direct measure of cell proliferation. The preparation alternative must be examined."
+        },
+        {
+          "text": "A fold and superposition of tissue, checked against adjacent regions",
+          "explanation": "A preparation artefact is a plausible alternative, not a diagnosis."
+        },
+        {
+          "text": "A new tissue family defined by darkness",
+          "explanation": "A darker crease can reflect superposed tissue. Tissue families are defined by organisation, not an arbitrary dark region."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-depth-stain-omission-control",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "An antibody-stained section is positive, while an otherwise identical section processed without primary antibody is unstained. Which claim remains unresolved?",
+      "options": [
+        {
+          "text": "Whether the protocol used a primary antibody in the test section.",
+          "explanation": "The stated protocol explicitly includes the primary antibody in the test section."
+        },
+        {
+          "text": "Whether the primary antibody binds the intended target in this tissue.",
+          "explanation": "Omission removes the primary antibody and therefore cannot test its unintended binding. Target-specific validation requires additional evidence."
+        },
+        {
+          "text": "Whether visible staining occurred in the omission control.",
+          "explanation": "The observation explicitly says that the omission control was unstained."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "histology-depth-stain-positive-control",
+      "topic": "microscopy",
+      "subject": "histology",
+      "title": "Preparation and stain reasoning",
+      "href": "/library/microscopy#apply-the-concept",
+      "prompt": "The test section and an expected-positive anatomical control are both unstained. Which conclusion is justified first?",
+      "options": [
+        {
+          "text": "The negative test is not securely interpretable until control failure is investigated.",
+          "explanation": "A failed expected-positive control removes evidence that the assay could detect the target under the run conditions."
+        },
+        {
+          "text": "The target must be absent from the test tissue.",
+          "explanation": "Assay failure is an alternative to biological absence, so the negative result cannot establish absence."
+        },
+        {
+          "text": "The failed control proves the target is present in the test tissue.",
+          "explanation": "Control failure does not prove the opposite biological result either."
+        }
+      ],
+      "answer": 0
     }
   ]
 }

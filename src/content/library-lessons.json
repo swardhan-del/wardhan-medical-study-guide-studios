@@ -247,8 +247,8 @@
     {
       "id": "microscopy",
       "subject": "histology",
-      "title": "Reading a histology section",
-      "summary": "Build an identification from architecture, cells and preparation clues before naming the organ.",
+      "title": "Preparation, staining and defensible slide interpretation",
+      "summary": "Follow the specimen from preparation to interpretation: explain staining contrast, recognise artifacts and judge the evidence behind a tissue identification.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
@@ -256,20 +256,32 @@
         "microscopy",
         "stains"
       ],
-      "source": "histology",
-      "section": "Histology Technique and Microscopy Fundamentals",
+      "source": "original-histology-depth",
+      "section": "Original preparation, identification and developmental teaching with section-level reference mapping",
       "steps": [
         {
-          "title": "Start at low power",
-          "body": "A section is a thin slice through a three-dimensional object. First find the outer boundary, lumen, capsule and repeating units. A tube cut obliquely may look oval or unusually thick; one isolated profile is rarely enough to identify an organ."
+          "title": "Preparation changes the specimen you are interpreting",
+          "body": "Fixation stabilises tissue; processing and embedding make it possible to cut a supported thin section. In a routine paraffin workflow, water is replaced through processing before wax infiltration. A microtome produces sections that are transferred to glass. Orientation determines which relationships the cut intersects. Before aqueous staining, wax removal and rehydration are needed; after staining, finishing steps and a coverslip support examination. These are purposes in a workflow, not universal timings or reagent recipes. Follow the teaching laboratory’s approved procedure for the specimen and method.\n\nTry it: Place fixation, processing/embedding, sectioning and staining in order; explain one purpose for each."
         },
         {
-          "title": "Read the stain",
-          "body": "In routine hematoxylin and eosin, nuclei and other nucleic-acid-rich regions tend to be blue-purple, while many cytoplasmic proteins and collagen are pink. Staining intensity depends on preparation and does not directly measure cellular activity."
+          "title": "H&E: chemical contrast, not natural tissue colour",
+          "body": "The haematoxylin staining system involves oxidised dye and a mordant; calling it simply a blue liquid hides the chemistry. Nucleic-acid-rich structures, including nuclei and ribosome-rich regions, commonly appear blue-purple. Eosin is an acidic dye associated with pink staining of many protein-rich components. “Basophilic” describes affinity in the staining context; it does not mean that a structure has a measured high pH. Both muscle and collagen may be eosinophilic. Identify their cellular and extracellular organisation before using colour as supporting evidence.\n\nTry it: Explain why a pink bundle still requires a muscle-versus-collagen differential."
         },
         {
-          "title": "Build a defensible identification",
-          "body": "Move to higher power to inspect nuclei, cell borders and matrix. State two positive features and one feature that separates the tissue from a look-alike. Folds, tears, shrinkage spaces and empty processing artifacts are not automatically normal structures."
+          "title": "Special stains answer narrower questions",
+          "body": "A trichrome method can improve contrast between collagen and muscle; the exact collagen colour depends on the method. PAS highlights carbohydrate-rich material, including some basement membranes and glycogen-containing structures; PAS positivity alone is not a unique molecular identity. PAS with diastase can investigate a glycogen contribution. Alcian blue, elastic-fibre stains and lipid stains address different components. The Ottawa core specifies frozen tissue for Oil Red O. Choosing a lipid-preserving preparation is part of the question, rather than assuming all routine paraffin sections retain the same lipid information.\n\nTry it: Choose a method for a stated component, then name an interpretation it cannot establish alone."
+        },
+        {
+          "title": "A missing structure may be a preparation or sampling problem",
+          "body": "A fold superimposes tissue and can imitate abnormal thickness; a tear can create a false space. Processing can remove lipid, and a section may simply miss a nucleus or a small lumen. Compare adjacent intact regions and additional planes before treating an isolated absence as a biological conclusion. Contrast specimen orientation with stain choice: changing the dye cannot restore a structure that the section did not intersect.\n\nTry it: Compare the explanations “not intersected,” “extracted,” and “truly absent.”"
+        },
+        {
+          "title": "Separate morphology from an assay claim",
+          "body": "Routine contrast and antibody-based target detection answer different questions. Before interpreting an immunostain, record the target, preparation, detection approach, expected localisation and control performance. A failed expected-positive control limits interpretation of a negative test section. Omitting the primary antibody can reveal background from later detection steps, but cannot test whether the primary antibody binds an unintended tissue component. A clean omission control therefore does not establish target specificity. Hewitt and colleagues distinguish anatomical positive controls, antibody validation and negative controls; these address different possible errors. This is experimental reasoning, not a clinical result algorithm.\n\nTry it: Identify which control observation is missing before accepting a target-absence claim."
+        },
+        {
+          "title": "Read the slide in a repeatable sequence",
+          "body": "Record the label, specimen context and stain first. Start with the whole section at low power, identify boundaries and repeating units, and then inspect selected regions at higher power. Write two positive features, one plausible alternative and the feature that separates it. End with what remains uncertain. The Open University’s identifying-tissues video and transcript demonstrate why an overview precedes fine detail. Write your own observations before following the external demonstration.\n\nTry it: Write observation → interpretation → alternative → limitation for one field."
         }
       ],
       "question": {
@@ -299,8 +311,48 @@
         "blood-marrow",
         "renal-histology"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-05",
+      "minutes": 25,
+      "objectives": [
+        "Explain the purpose and order of preparation steps in a routine paraffin workflow.",
+        "Use H&E chemistry and special-stain selection to answer a structural question.",
+        "Distinguish section-plane, extraction and handling effects from biological absence.",
+        "Explain what positive and omission controls can and cannot establish.",
+        "Build a slide interpretation from architecture, two observations, an alternative and a limitation."
+      ],
+      "prerequisites": [
+        "histology-foundations-tissues"
+      ],
+      "summaryChecklist": [
+        "Explain the purpose and order of preparation steps in a routine paraffin workflow.",
+        "Use H&E chemistry and special-stain selection to answer a structural question.",
+        "Distinguish section-plane, extraction and handling effects from biological absence.",
+        "Explain what positive and omission controls can and cannot establish.",
+        "Build a slide interpretation from architecture, two observations, an alternative and a limitation."
+      ],
+      "workedExample": {
+        "title": "A pink bundle is not a diagnosis",
+        "prompt": "A narrow field contains pink bundles and elongated nuclei. It has been labelled smooth muscle from colour alone. What would you do next?",
+        "solution": [
+          "Find a better oriented field and inspect whether the bundles are densely cellular or dominated by extracellular collagen.",
+          "Compare nuclear distribution and cellular boundaries; the absence of striations alone does not distinguish tendon from smooth muscle.",
+          "If a matrix-versus-muscle question persists, select an appropriate connective-tissue stain, while retaining section-plane and preparation limits."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Place fixation, processing/embedding, sectioning and staining in order; explain one purpose for each.",
+          "answer": "Fixation stabilises tissue; processing and embedding make it possible to cut a supported thin section. In a routine paraffin workflow, water is replaced through processing before wax infiltration. A microtome produces sections that are transferred to glass. Orientation determines which relationships the cut intersects. Before aqueous staining, wax removal and rehydration are needed; after staining, finishing steps and a coverslip support examination. These are purposes in a workflow, not universal timings or reagent recipes. Follow the teaching laboratory’s approved procedure for the specimen and method."
+        },
+        {
+          "prompt": "Explain why a pink bundle still requires a muscle-versus-collagen differential.",
+          "answer": "The haematoxylin staining system involves oxidised dye and a mordant; calling it simply a blue liquid hides the chemistry. Nucleic-acid-rich structures, including nuclei and ribosome-rich regions, commonly appear blue-purple. Eosin is an acidic dye associated with pink staining of many protein-rich components. “Basophilic” describes affinity in the staining context; it does not mean that a structure has a measured high pH. Both muscle and collagen may be eosinophilic. Identify their cellular and extracellular organisation before using colour as supporting evidence."
+        },
+        {
+          "prompt": "Identify which control observation is missing before accepting a target-absence claim.",
+          "answer": "Routine contrast and antibody-based target detection answer different questions. Before interpreting an immunostain, record the target, preparation, detection approach, expected localisation and control performance. A failed expected-positive control limits interpretation of a negative test section. Omitting the primary antibody can reveal background from later detection steps, but cannot test whether the primary antibody binds an unintended tissue component. A clean omission control therefore does not establish target specificity. Hewitt and colleagues distinguish anatomical positive controls, antibody validation and negative controls; these address different possible errors. This is experimental reasoning, not a clinical result algorithm."
+        }
+      ]
     },
     {
       "id": "epithelia",
@@ -713,8 +765,8 @@
     {
       "id": "lymphoid-organs",
       "subject": "histology",
-      "title": "Lymph node, spleen and thymus",
-      "summary": "Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs.",
+      "title": "Lymphoid organs: practical identification, routes and developmental origins",
+      "summary": "Identify lymphoid organs from their architecture, distinguish blood and lymph routes, and connect microscopic compartments with developmental and experimental evidence.",
       "tags": [
         "Organ histology",
         "lymphatic",
@@ -723,20 +775,56 @@
         "spleen",
         "lymph node"
       ],
-      "source": "histology",
-      "section": "Thymus Practical Differential; Lymph Nodes; Spleen",
+      "source": "original-histology-depth",
+      "section": "Original preparation, identification and developmental teaching with section-level reference mapping",
       "steps": [
         {
-          "title": "Lymph node: sample tissue lymph",
-          "body": "Afferent lymph reaches a subcapsular sinus before passing through the node. B-cell follicles occupy cortex, T cells are concentrated in paracortex, and medullary cords and sinuses form a different inner pattern. The organ brings transported antigen and lymphocytes together."
+          "title": "Start with a map of the whole section",
+          "body": "An isolated round, blue-purple cell collection is not an organ diagnosis. First inspect the outer boundary, any mucosal surface, the arrangement of pale and dark regions, and their relation to vessels. Ask whether the repeated unit is a follicle, a cortex–medulla lobule, or lymphoid tissue next to a surface. Then seek a second independent landmark. A germinal centre occurs in several secondary lymphoid tissues; its presence does not uniquely identify a lymph node. A pale thymic medulla is not a germinal centre. State the tissue-level conclusion before trying to infer a disease.\n\nTry it: Compare a follicle with a thymic lobule: which surrounding boundary would you inspect?"
         },
         {
-          "title": "Spleen: sample blood",
-          "body": "White pulp organizes lymphoid tissue around arteries. Red pulp contains cords and sinusoids involved in blood filtration and removal of poorly deformable erythrocytes. Unlike a lymph node, the spleen primarily monitors blood-borne material."
+          "title": "Lymph node: orient capsule, follicles, paracortex and medulla",
+          "body": "Trace the connective-tissue capsule and look immediately beneath it for the subcapsular sinus. Follicles lie in the outer cortex. The deeper paracortex is a predominantly T-cell region, with high endothelial venules; it is not simply another B-cell follicle. In the medulla distinguish cellular cords from the intervening lymph sinuses. Cords may contain plasma cells, B lymphocytes and macrophages. The distinction is tissue versus passage, not merely dark versus light. A limited core may omit the capsule or hilum; report that sampling limit rather than asserting that the whole organ lacks them.\n\nTry it: Mark a cellular cord and its adjacent sinus as different structures."
         },
         {
-          "title": "Thymus: educate T cells",
-          "body": "Lobules have a dark cortex and lighter medulla. Medullary Hassall corpuscles are characteristic epithelial structures. Normal thymus does not have true lymphoid follicles; its principal role is T-cell development and selection rather than filtering afferent lymph."
+          "title": "Keep lymph drainage separate from lymphocyte entry from blood",
+          "body": "Use two differently labelled routes. Lymph arriving from drained tissue enters through afferent lymphatics, then the subcapsular and deeper sinus system, before leaving through an efferent lymphatic at the hilum. Circulating lymphocytes can instead leave blood through specialised postcapillary high endothelial venules in the paracortex. An HEV is a blood vessel, not an afferent lymphatic. The paracortex is a cellular region containing vessels; it is not an extra sinus to insert into a flow mnemonic. Both routes can bring material or cells into the same organ while retaining distinct boundaries.\n\nTry it: Trace one afferent-lymph path and one blood-to-tissue path without merging their entry vessels."
+        },
+        {
+          "title": "Why the endothelium is called high—and what H&E cannot prove",
+          "body": "HEV endothelial cells have a relatively plump appearance compared with the flattened endothelial profile familiar from many other vessels. This morphology can be useful when combined with location and the surrounding lymphoid organisation. It does not turn a single cuboidal profile into proof of a measured trafficking rate. The 2021 HEV review integrates anatomical, molecular and functional studies; an H&E identification exercise shows only a subset of that evidence. Similarly, a stain for one associated antigen is an assay result, not a complete functional demonstration.\n\nTry it: Separate a directly visible endothelial profile from an inferred lymphocyte-migration function."
+        },
+        {
+          "title": "Research bridge: a node is not a uniformly stirred bag",
+          "body": "Roozendaal and colleagues used mouse lymph nodes and imaging approaches, including multiphoton intravital microscopy, to compare antigen transport. Their findings supported delivery of small soluble antigens through follicular conduits, whereas larger antigens followed different interactions involving subcapsular sinus macrophages and B cells. This gives a mechanistic reason to preserve spatial compartments when interpreting immune encounters. It does not establish a universal molecular-size cutoff for every antigen or a patient-specific transit time. Ordinary H&E cannot show the labelled-antigen trajectories measured in that experiment.\n\nTry it: Name the experimental observation needed to support transport, beyond a still photograph of a follicle."
+        },
+        {
+          "title": "Spleen: use the arteriole–white-pulp relationship",
+          "body": "In spleen, look for white-pulp islands within red pulp rather than a peripheral cortical band surrounding a medulla. White pulp is lymphoid tissue associated with central arterioles. A periarteriolar lymphatic sheath (PALS) is a T-cell-rich arrangement; adjacent B-cell nodules may contain germinal centres. The word central names the vascular relationship and does not guarantee that the arteriole occupies the geometric centre of every two-dimensional nodule. Seek the vessel in another field or section when it is not intersected. A trabecular vessel and a white-pulp arteriole have different surrounding tissue relationships.\n\nTry it: Identify the vessel-associated lymphoid pattern before calling a dark island white pulp."
+        },
+        {
+          "title": "Red pulp: distinguish cords from vascular sinusoids",
+          "body": "Red pulp contains blood-filled sinusoidal spaces and intervening splenic cords. The cords contain cells and a supporting framework rather than constituting an empty vascular lumen. Its blood-processing role differs from white-pulp immune organisation. H&E colour is helpful in context, but uneven blood content, section quality or processing can change the visual impression. Do not reverse the names: white pulp is the lymphoid compartment; red pulp is the blood-rich cord–sinusoid compartment. A section supports structural identification, not direct observation of how quickly an erythrocyte passes through.\n\nTry it: Compare a cord with a sinusoid using the boundary and contents, not pink colour alone."
+        },
+        {
+          "title": "Thymus: repeated cortex–medulla units and epithelial support",
+          "body": "Look for incomplete connective-tissue septa and repeated darker cortical regions around paler medullary tissue. Hassall corpuscles are concentrically arranged epithelial structures in the medulla and strongly support thymus when the wider pattern fits. They are not germinal centres. The thymic supporting microenvironment includes epithelial reticular cells; a dense population of small lymphocytes can obscure their processes in routine sections. Involution can leave adipose tissue among residual thymic regions. Fat alone neither establishes thymus nor disproves it. Compare residual organisation with age and preparation context.\n\nTry it: Reject a lymph-node follicle interpretation by identifying a medullary epithelial corpuscle and lobular context."
+        },
+        {
+          "title": "Palatine tonsil: find the mucosal boundary and crypt",
+          "body": "A surface lined by stratified squamous epithelium, with epithelial invaginations and underlying lymphoid follicles, supports palatine tonsillar tissue. Lymphocytes may infiltrate the epithelium, making its boundary harder to trace. Follow continuity with the surface before calling a pale gap a crypt. This is a surface-associated arrangement, unlike a lymph-node subcapsular sinus beneath a connective-tissue capsule. This particular epithelial description must not be applied indiscriminately to every tonsil of Waldeyer’s ring. A missing surface in a cropped field leaves the differential open.\n\nTry it: Decide whether a space is epithelial-lined or lies beneath a capsule; state when the field is insufficient."
+        },
+        {
+          "title": "Development explains why thymic stroma and thymocytes differ",
+          "body": "Treat an organ as a composite of populations. Human thymic epithelial development is associated with the third pharyngeal pouch, while incoming haematopoietic progenitors supply the lymphoid population. Farley and colleagues reported spatial and temporal molecular evidence supporting a third-pouch origin for human thymic epithelium. Their human developmental study matters because older accounts and some other species differ. It does not make every thymic cell endodermal. For spleen, review the mesenchymal origin in the dorsal mesogastrium separately; “lymphoid organ” is a functional grouping, not one common epithelial germ-layer origin.\n\nTry it: Explain why shared adult lymphoid function does not imply a shared origin for thymic epithelium and splenic stroma."
+        },
+        {
+          "title": "Research bridge: interpret human developmental evidence",
+          "body": "In Farley and colleagues’ study, in situ hybridisation mapped developmental gene expression and immunostaining distinguished cell populations. FOXN1 expression supported the third-pouch thymic domain; the authors did not detect it in the fourth pouch. The study labels ages after fertilisation, which must not be silently relabelled as obstetric gestational age. A marker pattern supports a developmental interpretation within the sampled stages; it is not a direct lineage-tracing experiment in a living human. Keep human observations separate from the mouse experiments used for mechanistic comparison.\n\nTry it: State the species, age convention and measured signal before interpreting a developmental figure."
+        },
+        {
+          "title": "Choose a stain to answer a structural question",
+          "body": "H&E supports an initial architectural survey. A connective-tissue stain can make capsule and trabeculae easier to distinguish from densely cellular parenchyma; the cited lymph-node comparison uses Azan. A silver preparation can reveal a reticular-fibre network that is poorly resolved in H&E. The stain is not an organ label: combine the highlighted component with its anatomical position. Antibody-based cell mapping is another method, with validation and control requirements. Do not infer B/T identity for every small dark nucleus from H&E alone, or interpret one marker as a complete activation or lineage history.\n\nTry it: State the extra structural question you would ask before selecting a special stain."
         }
       ],
       "question": {
@@ -766,8 +854,48 @@
         "antigen-presentation",
         "blood-marrow"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-05",
+      "minutes": 35,
+      "objectives": [
+        "Distinguish node, spleen, thymus and palatine tonsil using two structural landmarks and an explicit alternative.",
+        "Trace afferent lymph and HEV blood entry without confusing a tissue compartment with a vessel.",
+        "Separate cellular cords, sinuses, follicles, white pulp and medullary tissue.",
+        "Explain human thymic epithelial origin separately from incoming haematopoietic cells and splenic stromal origin.",
+        "Interpret a research observation with its species, method and developmental-stage limits."
+      ],
+      "prerequisites": [
+        "microscopy"
+      ],
+      "summaryChecklist": [
+        "Distinguish node, spleen, thymus and palatine tonsil using two structural landmarks and an explicit alternative.",
+        "Trace afferent lymph and HEV blood entry without confusing a tissue compartment with a vessel.",
+        "Separate cellular cords, sinuses, follicles, white pulp and medullary tissue.",
+        "Explain human thymic epithelial origin separately from incoming haematopoietic cells and splenic stromal origin.",
+        "Interpret a research observation with its species, method and developmental-stage limits."
+      ],
+      "workedExample": {
+        "title": "Two pale spaces, different meanings",
+        "prompt": "One section shows a space beneath a connective-tissue capsule and nearby follicles. Another shows an epithelial invagination continuous with a stratified squamous surface. How would you distinguish them?",
+        "solution": [
+          "Follow each boundary before naming the space: subcapsular position supports a node sinus; epithelial continuity supports a palatine tonsillar crypt.",
+          "Use another independent feature: cortex/paracortex/medulla organisation versus surface-associated lymphoid tissue.",
+          "A cropped field lacking the surface or capsule may not resolve the comparison. Request a wider field instead of guessing."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Mark a cellular cord and its adjacent sinus as different structures.",
+          "answer": "Trace the connective-tissue capsule and look immediately beneath it for the subcapsular sinus. Follicles lie in the outer cortex. The deeper paracortex is a predominantly T-cell region, with high endothelial venules; it is not simply another B-cell follicle. In the medulla distinguish cellular cords from the intervening lymph sinuses. Cords may contain plasma cells, B lymphocytes and macrophages. The distinction is tissue versus passage, not merely dark versus light. A limited core may omit the capsule or hilum; report that sampling limit rather than asserting that the whole organ lacks them."
+        },
+        {
+          "prompt": "Trace one afferent-lymph path and one blood-to-tissue path without merging their entry vessels.",
+          "answer": "Use two differently labelled routes. Lymph arriving from drained tissue enters through afferent lymphatics, then the subcapsular and deeper sinus system, before leaving through an efferent lymphatic at the hilum. Circulating lymphocytes can instead leave blood through specialised postcapillary high endothelial venules in the paracortex. An HEV is a blood vessel, not an afferent lymphatic. The paracortex is a cellular region containing vessels; it is not an extra sinus to insert into a flow mnemonic. Both routes can bring material or cells into the same organ while retaining distinct boundaries."
+        },
+        {
+          "prompt": "Explain why shared adult lymphoid function does not imply a shared origin for thymic epithelium and splenic stroma.",
+          "answer": "Treat an organ as a composite of populations. Human thymic epithelial development is associated with the third pharyngeal pouch, while incoming haematopoietic progenitors supply the lymphoid population. Farley and colleagues reported spatial and temporal molecular evidence supporting a third-pouch origin for human thymic epithelium. Their human developmental study matters because older accounts and some other species differ. It does not make every thymic cell endodermal. For spleen, review the mesenchymal origin in the dorsal mesogastrium separately; “lymphoid organ” is a functional grouping, not one common epithelial germ-layer origin."
+        }
+      ]
     },
     {
       "id": "respiratory-histology",

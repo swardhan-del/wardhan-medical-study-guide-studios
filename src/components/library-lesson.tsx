@@ -1,3 +1,5 @@
+import { HistologySectionReferences } from "./histology-section-references";
+import { LymphoidPractical, PreparationSequence, HistologyDemonstrations } from "./histology-practical";
 import { CaseControlExplorer } from "./case-control-explorer";
 import { qualityForLesson, hasRecordedReview } from "@/lib/lesson-quality";
 import { AboutLesson } from "./about-lesson";
@@ -51,10 +53,10 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const clinicallyReviewed = qualityForLesson(lesson.id)?.contentStatus === "independently-clinically-reviewed";
   const journey = journeyLessons.find(item => item.id === lesson.id)!;
   const anatomyFoundations = lesson.id === "anatomy-foundations";
-  const originalReferenceTeaching = ["allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
+  const originalReferenceTeaching = ["microscopy", "lymphoid-organs", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
-  const reviewedSupplementalPractice = ["peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
+  const reviewedSupplementalPractice = ["microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
@@ -148,6 +150,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
                     </span>
                   </summary>
                   {step.body.split("\n\n").map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                  <HistologySectionReferences lessonId={lesson.id} index={index} />
                   {((lesson.id === "microscopy" && index === 0) ||
                     (lesson.id === "renal-histology" && index === 2)) &&
                     figuresForResource(lesson.id).map((f) => (
@@ -158,6 +161,8 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
             </div>
           </section>
           {lesson.id === "cohort-case-control-denominators" && <CaseControlExplorer />}
+          {lesson.id === "microscopy" && <><PreparationSequence/><HistologyDemonstrations/></>}
+          {lesson.id === "lymphoid-organs" && <LymphoidPractical/>}
           {lesson.workedExample && <section className="study-panel" aria-labelledby="worked-example-heading">
             <p className="eyebrow">Work it through</p>
             <h2 id="worked-example-heading">{lesson.workedExample.title}</h2>
