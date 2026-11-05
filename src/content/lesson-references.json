@@ -1713,5 +1713,82 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/17779291/"
       }
     ]
+  },
+  "venous-muscle-pump-direction": {
+    "title": "The efficacy of forceful ankle and toe exercises to increase venous return: A comprehensive Doppler ultrasound study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28478746/",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "The human lower leg muscle pump functions as a flow diverter pump",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11764322/"
+      },
+      {
+        "title": "Cappelli et al. (2026): Letter regarding Thigh muscle pump",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13251733/"
+      },
+      {
+        "title": "Tauraginskii et al. (2026): Reply",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13251478/"
+      }
+    ]
+  },
+  "retinal-on-off-bipolar-response": {
+    "title": "Morgans et al.: TRPM1 and retinal ON-bipolar responses",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2776419/",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "The light response of ON bipolar neurons requires G[alpha]o",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11124982/"
+      },
+      {
+        "title": "Bipolar cells use kainate and AMPA receptors to filter visual information into separate channels",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11163271/"
+      }
+    ]
+  },
+  "fatty-acid-oxidation-compartment-route": {
+    "title": "Reactome: human carnitine exchange reaction",
+    "url": "https://reactome.org/content/detail/R-HSA-200424",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Reactome: human CPT2 reaction and matrix participants",
+        "url": "https://reactome.org/content/detail/R-HSA-200410"
+      },
+      {
+        "title": "Reactome: carnitine-shuttle compartment context",
+        "url": "https://reactome.org/content/detail/R-HSA-200425"
+      },
+      {
+        "title": "Activation, EC6.2.1.3",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC6/2/1/3.html"
+      },
+      {
+        "title": "Carnitine acyl transfer, EC2.3.1.21",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/21.html"
+      },
+      {
+        "title": "Example first-oxidation enzyme, EC1.3.8.7",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/3/8/7.html"
+      },
+      {
+        "title": "Hydration/dehydration, EC4.2.1.17",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/1/17.html"
+      },
+      {
+        "title": "Hydroxyacyl oxidation, EC1.1.1.35",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/35.html"
+      },
+      {
+        "title": "General thiolysis, EC2.3.1.16",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/16.html"
+      },
+      {
+        "title": "Four-carbon cleavage pair, EC2.3.1.9",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/9.html"
+      }
+    ]
   }
 }

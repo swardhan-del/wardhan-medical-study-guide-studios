@@ -2982,6 +2982,305 @@
       "subject": "genetics",
       "title": "Match evidence",
       "href": "/library/allele-and-genotype-counts#question-allele-match-evidence"
+    },
+    {
+      "id": "venous-ideal-compression",
+      "prompt": "In the ideal model Pin=6, Psegment=12 and Pout=8. Which permitted flow pattern follows?",
+      "options": [
+        {
+          "text": "Inlet blocks backward flow; outlet permits forward flow",
+          "explanation": "The segment pressure exceeds both reservoir pressures; the stipulated valve directions allow only the heartward outlet path."
+        },
+        {
+          "text": "Both valves pump by generating their own pressure",
+          "explanation": "The model assigns directional constraints to valves, not pressure generation."
+        },
+        {
+          "text": "The outlet admits backward flow because 8 is smaller than 12",
+          "explanation": "That pressure difference favors outward segment flow, while reverse flow is blocked by the ideal outlet valve."
+        }
+      ],
+      "answer": 0,
+      "topic": "venous-muscle-pump-direction",
+      "subject": "physiology",
+      "title": "Ideal compression",
+      "href": "/library/venous-muscle-pump-direction#question-venous-ideal-compression"
+    },
+    {
+      "id": "venous-refill-direction",
+      "prompt": "With Pin=6, Psegment=2 and Pout=8 in the same ideal model, how can the segment refill?",
+      "options": [
+        {
+          "text": "Backwards through the outlet valve",
+          "explanation": "The stipulated outlet valve blocks that reverse direction."
+        },
+        {
+          "text": "Through the inlet under the forward inlet-to-segment pressure difference",
+          "explanation": "The inlet source exceeds the segment pressure; outlet reverse flow remains blocked."
+        },
+        {
+          "text": "Without a pressure difference because the inlet label says open",
+          "explanation": "A named valve state is not a replacement for the defined driving difference."
+        }
+      ],
+      "answer": 1,
+      "topic": "venous-muscle-pump-direction",
+      "subject": "physiology",
+      "title": "Refill direction",
+      "href": "/library/venous-muscle-pump-direction#question-venous-refill-direction"
+    },
+    {
+      "id": "venous-cycle-balance",
+      "prompt": "A repeating model cycle finishes with the same segment volume at which it started. Which integrated statement follows?",
+      "options": [
+        {
+          "text": "Inflow and outflow must match at every instant",
+          "explanation": "Temporary storage permits different instantaneous rates."
+        },
+        {
+          "text": "A peak velocity alone determines the total output volume",
+          "explanation": "The full flow-time integral is required."
+        },
+        {
+          "text": "Total input equals total output over that cycle",
+          "explanation": "Zero net stored-volume change gives equality of the integrated volumes."
+        }
+      ],
+      "answer": 2,
+      "topic": "venous-muscle-pump-direction",
+      "subject": "physiology",
+      "title": "Cycle balance",
+      "href": "/library/venous-muscle-pump-direction#question-venous-cycle-balance"
+    },
+    {
+      "id": "venous-real-network-boundary",
+      "prompt": "What is the best use of the two-valve exercise?",
+      "options": [
+        {
+          "text": "A complete simulation of every leg-vein pathway",
+          "explanation": "The model omits real branching, compliance and other couplings."
+        },
+        {
+          "text": "A bounded pressure/direction and volume-accounting exercise",
+          "explanation": "Keep its stated assumptions and distinguish it from real regional measurements."
+        },
+        {
+          "text": "A prescription for preventing thrombosis",
+          "explanation": "No clinical intervention or outcome was established by this educational construction."
+        }
+      ],
+      "answer": 1,
+      "topic": "venous-muscle-pump-direction",
+      "subject": "physiology",
+      "title": "Real network boundary",
+      "href": "/library/venous-muscle-pump-direction#question-venous-real-network-boundary"
+    },
+    {
+      "id": "retina-channel-cell",
+      "prompt": "Where does the TRPM1-linked depolarizing current belong in the comparison?",
+      "options": [
+        {
+          "text": "In the photoreceptor as a synonym for its cGMP-gated current",
+          "explanation": "That merges two cell-specific steps."
+        },
+        {
+          "text": "In the receiving ON bipolar pathway",
+          "explanation": "Keep the bipolar transduction mechanism distinct from photoreceptor phototransduction."
+        },
+        {
+          "text": "In every retinal cell with the same response sign",
+          "explanation": "The comparison does not establish that distribution."
+        }
+      ],
+      "answer": 1,
+      "topic": "retinal-on-off-bipolar-response",
+      "subject": "histology",
+      "title": "Channel cell",
+      "href": "/library/retinal-on-off-bipolar-response#question-retina-channel-cell"
+    },
+    {
+      "id": "retina-off-light-increment",
+      "prompt": "What response follows for the simplified direct OFF cone-bipolar pathway when cone glutamate falls?",
+      "options": [
+        {
+          "text": "A guaranteed rise in all downstream ganglion-cell firing",
+          "explanation": "A single synapse does not determine every downstream readout."
+        },
+        {
+          "text": "More ionotropic glutamate excitation",
+          "explanation": "The input glutamate is stipulated to fall."
+        },
+        {
+          "text": "Less ionotropic excitation and a hyperpolarizing bipolar response",
+          "explanation": "The stated direct pathway preserves the sign of the photoreceptor/transmitter change."
+        }
+      ],
+      "answer": 2,
+      "topic": "retinal-on-off-bipolar-response",
+      "subject": "histology",
+      "title": "Off light increment",
+      "href": "/library/retinal-on-off-bipolar-response#question-retina-off-light-increment"
+    },
+    {
+      "id": "retina-structural-evidence",
+      "prompt": "A recognizable layer and receptor stain are present. Does that alone establish normal functional signaling?",
+      "options": [
+        {
+          "text": "No; a functional readout is a separate kind of evidence",
+          "explanation": "Presence and arrangement do not by themselves establish the complete pathway response."
+        },
+        {
+          "text": "Yes; a stain measures every electrical response",
+          "explanation": "Staining and functional recording answer different questions."
+        },
+        {
+          "text": "Yes; that establishes a diagnosis in every person",
+          "explanation": "The observation supplies neither that scope nor a clinical validation study."
+        }
+      ],
+      "answer": 0,
+      "topic": "retinal-on-off-bipolar-response",
+      "subject": "histology",
+      "title": "Structural evidence",
+      "href": "/library/retinal-on-off-bipolar-response#question-retina-structural-evidence"
+    },
+    {
+      "id": "retina-background-reference",
+      "prompt": "Why specify a light increment relative to a background?",
+      "options": [
+        {
+          "text": "Because ON and OFF cells can have only two voltages",
+          "explanation": "The labels do not make the response literally binary."
+        },
+        {
+          "text": "Because the sign of the stimulus change and its reference belong to the model",
+          "explanation": "A decrement and a different adaptation context are not interchangeable with the defined increment."
+        },
+        {
+          "text": "Because the background proves the experiment measures human vision",
+          "explanation": "A stated reference does not establish species or clinical scope."
+        }
+      ],
+      "answer": 1,
+      "topic": "retinal-on-off-bipolar-response",
+      "subject": "histology",
+      "title": "Background reference",
+      "href": "/library/retinal-on-off-bipolar-response#question-retina-background-reference"
+    },
+    {
+      "id": "fa-activation-products",
+      "prompt": "Which nucleotide product belongs to the stated activation reaction?",
+      "options": [
+        {
+          "text": "AMP, with diphosphate also produced",
+          "explanation": "The ligase reaction is ATP-dependent and AMP-forming; it is separate from beta-oxidation cleavage."
+        },
+        {
+          "text": "ADP as the only nucleotide product",
+          "explanation": "That is not the stated AMP-forming activation equation."
+        },
+        {
+          "text": "NADH as the ATP cleavage product",
+          "explanation": "NADH formation belongs to an oxidation step, not ATP cleavage."
+        }
+      ],
+      "answer": 0,
+      "topic": "fatty-acid-oxidation-compartment-route",
+      "subject": "biochemistry",
+      "title": "Activation products",
+      "href": "/library/fatty-acid-oxidation-compartment-route#question-fa-activation-products"
+    },
+    {
+      "id": "fa-fad-account",
+      "prompt": "Which description preserves the first-oxidation electron-carrier distinction?",
+      "options": [
+        {
+          "text": "Each cycle releases a freely diffusible FADH2 molecule as the transported product",
+          "explanation": "The cited enzyme has FAD as a prosthetic group."
+        },
+        {
+          "text": "The hydration step reduces NAD+",
+          "explanation": "Hydration is a water-addition step in this sequence."
+        },
+        {
+          "text": "The enzyme-bound flavin system passes electrons to ETF in the cited reaction",
+          "explanation": "Keep the enzyme-bound cofactor distinct from the electron-transfer partner."
+        }
+      ],
+      "answer": 2,
+      "topic": "fatty-acid-oxidation-compartment-route",
+      "subject": "biochemistry",
+      "title": "Fad account",
+      "href": "/library/fatty-acid-oxidation-compartment-route#question-fa-fad-account"
+    },
+    {
+      "id": "fa-terminal-cycle-count",
+      "prompt": "Under the complete saturated 16-carbon ledger, how many cycles and acetyl-CoA are counted?",
+      "options": [
+        {
+          "text": "Seven cycles and eight acetyl-CoA",
+          "explanation": "The final four-carbon substrate yields two acetyl-CoA in one final cycle."
+        },
+        {
+          "text": "Eight cycles and eight acetyl-CoA",
+          "explanation": "This adds an extra cycle by missing the final four-carbon boundary."
+        },
+        {
+          "text": "Seven cycles and seven acetyl-CoA",
+          "explanation": "This misses the second acetyl-CoA from the final cleavage."
+        }
+      ],
+      "answer": 0,
+      "topic": "fatty-acid-oxidation-compartment-route",
+      "subject": "biochemistry",
+      "title": "Terminal cycle count",
+      "href": "/library/fatty-acid-oxidation-compartment-route#question-fa-terminal-cycle-count"
+    },
+    {
+      "id": "fa-thiolysis-input",
+      "prompt": "Which immediate operation distinguishes thiolysis from hydration in this sequence?",
+      "options": [
+        {
+          "text": "Adding water to the enoyl double bond",
+          "explanation": "That describes hydration."
+        },
+        {
+          "text": "CoA-dependent cleavage of the oxoacyl intermediate",
+          "explanation": "The cleavage releases acetyl-CoA and the shortened acyl-CoA in the general case."
+        },
+        {
+          "text": "Transporting acylcarnitine across the inner membrane",
+          "explanation": "That belongs to the preceding compartment route."
+        }
+      ],
+      "answer": 1,
+      "topic": "fatty-acid-oxidation-compartment-route",
+      "subject": "biochemistry",
+      "title": "Thiolysis input",
+      "href": "/library/fatty-acid-oxidation-compartment-route#question-fa-thiolysis-input"
+    },
+    {
+      "id": "fa-carbon-endpoint",
+      "prompt": "Eight acetyl-CoA account for the 16 acyl carbons. Does that establish complete oxidation of all those carbons to CO2?",
+      "options": [
+        {
+          "text": "Yes; acetyl-CoA and CO2 are the same carbon product",
+          "explanation": "These are distinct chemical products."
+        },
+        {
+          "text": "Yes; a cycle count determines every later pathway",
+          "explanation": "Later use of acetyl-CoA is not established by this count."
+        },
+        {
+          "text": "No; the carbon ledger currently ends at acetyl groups",
+          "explanation": "Subsequent carbon oxidation and pathway routing are separate questions."
+        }
+      ],
+      "answer": 2,
+      "topic": "fatty-acid-oxidation-compartment-route",
+      "subject": "biochemistry",
+      "title": "Carbon endpoint",
+      "href": "/library/fatty-acid-oxidation-compartment-route#question-fa-carbon-endpoint"
     }
   ]
 }

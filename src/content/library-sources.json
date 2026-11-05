@@ -342,5 +342,35 @@
       "title": "NHGRI: Allele",
       "url": "https://www.genome.gov/genetics-glossary/Allele"
     }
+  },
+  "original-venous-valve-models": {
+    "title": "Original ideal-valve and segment-volume models",
+    "edition": "Original web preparation, 5 November 2026",
+    "recordId": "venous-valve-models-20261105",
+    "context": "Newly written explanations, invented pressure/volume examples and direct piecewise volume accounting. Primary study and correspondence references contextualize measurement limits; no study table, source figure, course exercise, patient data or claim of independent clinical review is reproduced.",
+    "reference": {
+      "title": "The efficacy of forceful ankle and toe exercises to increase venous return: A comprehensive Doppler ultrasound study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28478746/"
+    }
+  },
+  "original-retinal-receiving-pathways": {
+    "title": "Original retinal receiving-pathway explanations",
+    "edition": "Original web preparation, 5 November 2026",
+    "recordId": "retinal-receivers-20261105",
+    "context": "Newly written teaching and original qualitative text comparison informed by named primary studies. No source slide, figure, waveform, dataset, course assessment or personal/patient record reproduced. AI-assisted scientific/editorial preparation; independent clinical review not claimed.",
+    "reference": {
+      "title": "Morgans et al.: TRPM1 and retinal ON-bipolar responses",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2776419/"
+    }
+  },
+  "original-fatty-acid-route-and-ledger": {
+    "title": "Original fatty-acid route and carbon-ledger teaching",
+    "edition": "Original web preparation, 5 November 2026",
+    "recordId": "fatty-acid-route-20261105",
+    "context": "Newly composed explanations, original text comparison, explained questions and stipulated carbon ledger. Reaction facts checked against official enzyme nomenclature and the curated human Reactome records; no source textbook, course question, image, experimental dataset or personal/patient record reproduced. AI-assisted scientific/editorial preparation; independent clinical review not claimed.",
+    "reference": {
+      "title": "Reactome: human carnitine exchange reaction",
+      "url": "https://reactome.org/content/detail/R-HSA-200424"
+    }
   }
 }

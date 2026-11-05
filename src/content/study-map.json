@@ -212,9 +212,9 @@
         },
         {
           "id": "physiology-2-08",
-          "title": "2.8 · Venous Circulation",
-          "href": null,
-          "status": "planned"
+          "title": "2.8 · Venous circulation: a bounded pump model",
+          "href": "/library/venous-muscle-pump-direction",
+          "status": "introduction-available"
         },
         {
           "id": "physiology-2-09",
@@ -959,6 +959,12 @@
           "title": "Cornea lens and ocular development",
           "href": null,
           "status": "planned"
+        },
+        {
+          "id": "histology-retinal-receiving-pathways",
+          "title": "Retinal ON/OFF receiving pathways",
+          "href": "/library/retinal-on-off-bipolar-response",
+          "status": "introduction-available"
         }
       ]
     },
@@ -2896,6 +2902,21 @@
           "id": "allele-and-genotype-counts",
           "title": "Allele copies and genotypes: count the denominators",
           "href": "/library/allele-and-genotype-counts",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
+      "id": "biochemistry-fatty-acid-route",
+      "subject": "biochemistry",
+      "title": "Lipid metabolism: mitochondrial oxidation",
+      "sourceLabel": "Original activation, shuttle and carbon-ledger introduction; not a complete lipid course",
+      "sourceId": "fatty-acid-route-20261105",
+      "topics": [
+        {
+          "id": "fatty-acid-oxidation-compartment-route",
+          "title": "Fatty-acid oxidation: follow a long-chain acyl group into the matrix",
+          "href": "/library/fatty-acid-oxidation-compartment-route",
           "status": "introduction-available"
         }
       ]
