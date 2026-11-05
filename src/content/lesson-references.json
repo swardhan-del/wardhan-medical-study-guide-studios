@@ -1632,5 +1632,60 @@
     "title": "Ren and colleagues: spatial organization of developing human lung — selected study context",
     "url": "https://pubmed.ncbi.nlm.nih.gov/41484334/",
     "checkedAt": "2026-11-05"
+  },
+  "pentose-phosphate-nadph-ribose": {
+    "title": "G6PD: one NADPH-producing oxidation",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/49.html",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Lactonase: hydrolysis without a second redox step",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC3/1/1/31.html"
+      },
+      {
+        "title": "6-phosphogluconate dehydrogenase: ribulose, CO2 and NADPH",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/44.html"
+      },
+      {
+        "title": "Ribose-5-phosphate isomerase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/3/1/6.html"
+      },
+      {
+        "title": "Transketolase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/2/1/1.html"
+      },
+      {
+        "title": "Transaldolase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/2/1/2.html"
+      },
+      {
+        "title": "Glutathione-disulfide reductase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/8/1/7.html"
+      },
+      {
+        "title": "Mareni and Gaetani (1976): G6PD-deficient erythrocytes under oxidative stimulation — selected abstract",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/7294/"
+      }
+    ]
+  },
+  "pentose-oxidative-endpoint-reference": {
+    "title": "Oxidative endpoint: EC 1.1.1.44",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/44.html",
+    "checkedAt": "2026-11-05"
+  },
+  "pentose-isomerase-reference": {
+    "title": "Pentose isomerase: EC 5.3.1.6",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/3/1/6.html",
+    "checkedAt": "2026-11-05"
+  },
+  "pentose-transketolase-reference": {
+    "title": "Two-carbon transfer: EC 2.2.1.1",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/2/1/1.html",
+    "checkedAt": "2026-11-05"
+  },
+  "pentose-transaldolase-reference": {
+    "title": "Three-carbon transfer: EC 2.2.1.2",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/2/1/2.html",
+    "checkedAt": "2026-11-05"
   }
 }

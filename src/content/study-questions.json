@@ -2660,6 +2660,121 @@
         }
       ],
       "answer": 0
+    },
+    {
+      "id": "studio-ppp-immediate-pentose",
+      "prompt": "Immediately after the oxidative decarboxylation, which named pentose product is formed?",
+      "options": [
+        {
+          "text": "Ribulose-5-phosphate",
+          "explanation": "That is the product of the specified 6-phosphogluconate dehydrogenase reaction."
+        },
+        {
+          "text": "Ribose-5-phosphate without any isomerization",
+          "explanation": "Ribose and ribulose differ; the isomerase connects them."
+        },
+        {
+          "text": "Fructose-6-phosphate as the oxidative endpoint",
+          "explanation": "That six-carbon sugar belongs to a different step of the carbon network."
+        }
+      ],
+      "answer": 0,
+      "topic": "pentose-phosphate-nadph-ribose",
+      "subject": "biochemistry",
+      "title": "Name the immediate oxidative pentose",
+      "href": "/library/pentose-phosphate-nadph-ribose#question-studio-ppp-immediate-pentose"
+    },
+    {
+      "id": "studio-ppp-batch-ledgers",
+      "prompt": "Three glucose-6-phosphate molecules each complete one oxidative pass, with no diversion or recycling. Which pair matches the stipulated bookkeeping?",
+      "options": [
+        {
+          "text": "Three NADPH and no CO2",
+          "explanation": "Each pass contains two NADPH-producing oxidations and one carbon loss."
+        },
+        {
+          "text": "Six NADPH and three CO2",
+          "explanation": "Three passes multiply the per-pass two NADPH and one CO2; fifteen carbons remain in pentose products."
+        },
+        {
+          "text": "Six ATP and three CO2",
+          "explanation": "The six count refers to NADPH, not directly produced ATP."
+        }
+      ],
+      "answer": 1,
+      "topic": "pentose-phosphate-nadph-ribose",
+      "subject": "biochemistry",
+      "title": "Balance a defined three-pass batch",
+      "href": "/library/pentose-phosphate-nadph-ribose#question-studio-ppp-batch-ledgers"
+    },
+    {
+      "id": "studio-ppp-isomerization-ledger",
+      "prompt": "The three ribulose-5-phosphate products in that invented batch are isomerized to ribose-5-phosphate. How much additional NADPH does this isomerization produce?",
+      "options": [
+        {
+          "text": "Three",
+          "explanation": "An isomerization is not an additional NADP+-linked oxidation."
+        },
+        {
+          "text": "Six",
+          "explanation": "Six was already counted in the oxidative passes."
+        },
+        {
+          "text": "Zero",
+          "explanation": "The isomerase rearranges the pentose without NADP+ reduction in its written reaction."
+        }
+      ],
+      "answer": 2,
+      "topic": "pentose-phosphate-nadph-ribose",
+      "subject": "biochemistry",
+      "title": "Separate isomerization from NADPH production",
+      "href": "/library/pentose-phosphate-nadph-ribose#question-studio-ppp-isomerization-ledger"
+    },
+    {
+      "id": "studio-ppp-selected-carbon-pair",
+      "prompt": "Add the two specified rearrangements: C5 + C5 → C3 + C7, then C7 + C3 → C4 + C6. What remains after cancellation?",
+      "options": [
+        {
+          "text": "C5 + C5 → C4 + C6",
+          "explanation": "C3 and C7 cancel, leaving ten carbon atoms on each side. This is only the selected pair."
+        },
+        {
+          "text": "C5 + C5 → C4 + C6 + CO2",
+          "explanation": "That would add an unaccounted carbon to the right side."
+        },
+        {
+          "text": "C5 + C5 → C4 + C6 + two NADPH",
+          "explanation": "These selected sugar rearrangements do not include NADPH production."
+        }
+      ],
+      "answer": 0,
+      "topic": "pentose-phosphate-nadph-ribose",
+      "subject": "biochemistry",
+      "title": "Cancel only the specified intermediates",
+      "href": "/library/pentose-phosphate-nadph-ribose#question-studio-ppp-selected-carbon-pair"
+    },
+    {
+      "id": "studio-ppp-study-scope",
+      "topic": "pentose-phosphate-nadph-ribose",
+      "subject": "biochemistry",
+      "title": "Keep experimental conditions attached",
+      "href": "/library/pentose-phosphate-nadph-ribose#question-studio-ppp-study-scope",
+      "prompt": "The selected study examined G6PD-deficient erythrocytes under oxidative stimulation. What conclusion stays within that evidence?",
+      "options": [
+        {
+          "text": "Every normal red cell always uses one fixed PPP fraction.",
+          "explanation": "That universal fraction was not established by the selected conditions."
+        },
+        {
+          "text": "Its redox finding belongs to the stated cell variant and stimulation.",
+          "explanation": "Keep the experimental context attached; do not infer a universal flux fraction."
+        },
+        {
+          "text": "A pathway diagram alone diagnoses a person.",
+          "explanation": "A biochemical diagram is not an individual diagnostic assessment."
+        }
+      ],
+      "answer": 1
     }
   ]
 }

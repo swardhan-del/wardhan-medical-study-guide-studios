@@ -2897,6 +2897,17 @@
       ]
     },
     {
+      "id": "topic-pentose-phosphate-nadph-ribose",
+      "title": "Pentose phosphate pathway: separate NADPH from ribose needs",
+      "description": "Separate oxidative products, pentose isomerization, carbon rearrangements and NADPH use through explicit invented ledgers.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "pentose-phosphate-nadph-ribose"
+      ]
+    },
+    {
       "id": "topic-cochlear-fluid-voltage-reference",
       "title": "Cochlear fluids: which side and which voltage reference?",
       "description": "Calculate cochlear compartment potential differences, then distinguish a new voltage reference from a changed compartment.",

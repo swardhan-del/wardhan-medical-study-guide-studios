@@ -1557,6 +1557,115 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "pentose-phosphate-nadph-ribose",
+      "title": "Pentose phosphate pathway: separate NADPH from ribose needs",
+      "subject": "biochemistry",
+      "slug": "pentose-phosphate-nadph-ribose",
+      "topic": "Pentose reaction products, carbon and reducing-equivalent ledgers, and bounded erythrocyte evidence",
+      "learnerLevel": "Early medical sciences and introductory biochemical reasoning",
+      "objectives": [
+        "Distinguish reducing-equivalent production from sugar-phosphate interconversion.",
+        "Explain an erythrocyte redox example without assuming a fixed pathway flux.",
+        "Name the immediate pentose product and distinguish its later isomerization.",
+        "Compute a stipulated single-pass carbon and NADPH balance without assigning ATP yield.",
+        "Cancel shared intermediates in a selected two-reaction rearrangement pair.",
+        "Distinguish balanced reaction bookkeeping from physiological net flux.",
+        "Keep the selected erythrocyte observation within its stated variant and experimental conditions."
+      ],
+      "sources": [
+        {
+          "title": "G6PD: one NADPH-producing oxidation",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/49.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Lactonase: hydrolysis without a second redox step",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC3/1/1/31.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "6-phosphogluconate dehydrogenase: ribulose, CO2 and NADPH",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/44.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Ribose-5-phosphate isomerase",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/3/1/6.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Transketolase",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/2/1/1.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Transaldolase",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/2/1/2.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Glutathione-disulfide reductase",
+          "publisherOrAuthor": "IUBMB",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/8/1/7.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Mareni and Gaetani (1976): G6PD-deficient erythrocytes under oxidative stimulation — selected abstract",
+          "publisherOrAuthor": "Mareni and Gaetani",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7294/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original comparison actually inspected on desktop/mobile and320px/200%-text. All5reaction sources linked; caption/labels refined after review. No source image. Local dev render only; CI/hosted production-build gates pending.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Specified reaction sequences and invented molecule counts; not a complete pathway mode, measured tissue flux or fixed glucose-allocation fraction.",
+        "Selected erythrocyte primary-paper abstract is limited to its deficient variant and oxidative stimulation. Full methods and individual clinical interpretation excluded.",
+        "AI-assisted editorial checking, not independent biochemical, clinical or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "pentose-phosphate-nadph-ribose-editorial-20261105",
+        "pentose-phosphate-nadph-ribose-readability-20261105",
+        "pentose-phosphate-nadph-ribose-visual-20261105",
+        "pentose-phosphate-nadph-ribose-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "biochemistry-enzyme-foundations",
+          "glycolysis"
+        ],
+        "related": [
+          "glycolysis",
+          "lipid-metabolism",
+          "serine-one-carbon-donor-carrier-cofactor"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
