@@ -1,3 +1,4 @@
+import { CaseControlExplorer } from "./case-control-explorer";
 import { qualityForLesson, hasRecordedReview } from "@/lib/lesson-quality";
 import { AboutLesson } from "./about-lesson";
 import { TopicGuideLinks } from "@/components/topic-guide-links";
@@ -52,7 +53,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const anatomyFoundations = lesson.id === "anatomy-foundations";
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
-  const reviewedSupplementalPractice = ["peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose"].includes(lesson.id);
+  const reviewedSupplementalPractice = ["peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
@@ -110,7 +111,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <a href="#worked-example-heading">Worked Example</a><a href="#knowledge-check-heading">Knowledge Check</a>
         <a href="#application-heading">Clinical and Applied Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a>
         <a href="#recap">Recall practice</a><a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
-      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{reviewedSupplementalPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
+      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{lesson.id === "cohort-case-control-denominators" && <a href="#case-control-explorer-title">Population explorer</a>}{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{reviewedSupplementalPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <TopicGuideLinks lessonId={lesson.id} />
       <div className="concept-layout">
@@ -155,6 +156,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
               ))}
             </div>
           </section>
+          {lesson.id === "cohort-case-control-denominators" && <CaseControlExplorer />}
           {lesson.workedExample && <section className="study-panel" aria-labelledby="worked-example-heading">
             <p className="eyebrow">Work it through</p>
             <h2 id="worked-example-heading">{lesson.workedExample.title}</h2>

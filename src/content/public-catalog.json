@@ -3734,6 +3734,24 @@
     },
     {
       "status": "public",
+      "updatedAt": "2026-11-05",
+      "bytes": 0,
+      "id": "cohort-case-control-denominators",
+      "title": "Cohort and case-control studies: identify the denominator",
+      "subject": "biostatistics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Calculate risk and odds in a complete cohort, then construct two fictional populations compatible with the same case-control sample. Explore which denominators are missing and why sampling design matters.",
+      "tags": [
+        "Biostatistics",
+        "Study design",
+        "Risk and odds",
+        "Case-control"
+      ],
+      "minutes": 22
+    },
+    {
+      "status": "public",
       "updatedAt": "2026-11-03",
       "bytes": 0,
       "id": "histogram-bin-counts-example",

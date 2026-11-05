@@ -37,7 +37,7 @@ test('subject entries have explicit, internally consistent public availability',
     const ids = new Set(nodes.filter(n => n.subject === subject.id).flatMap(n => n.resources));
     for (const id of ids) assert.ok(records.some(r => r.id === id), `${subject.id}: ${id}`);
     assert.ok(ids.size > 0, subject.id);
-    if (subject.id === 'biostatistics') assert.equal(ids.size, 4);
+    if (subject.id === 'biostatistics') assert.equal(ids.size, 5);
   }
   const immunity = nodes.filter(n => n.subject === 'immunology').flatMap(n => n.resources);
   assert.ok(immunity.includes('antigen-presentation'));

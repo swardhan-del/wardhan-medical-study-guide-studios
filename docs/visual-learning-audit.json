@@ -3404,6 +3404,19 @@
       ],
       "figureIds": [],
       "rationale": "Original3-row carbon/NADPH comparison. Actual desktop/mobile and320px/200%-text local dev captures inspected; source-footer coverage and readable labels corrected. Keyboard/disclosures/persistence and automated accessibility passed. Full production CI and exact hosted preview gates remain required."
+    },
+    {
+      "id": "cohort-case-control-denominators",
+      "route": "/library/cohort-case-control-denominators",
+      "title": "Cohort and case-control studies: identify the denominator",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "CaseControlExplorer"
+      ],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Original population comparison, verified over 231 integer states in desktop and mobile browsers. Labelled cards reflow at 320px/200% text; keyboard slider and disclosure, static no-JavaScript reading and automated accessibility checks pass. No source figure or patient data reproduced."
     }
   ]
 }

@@ -1687,5 +1687,16 @@
     "title": "Three-carbon transfer: EC 2.2.1.2",
     "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/2/1/2.html",
     "checkedAt": "2026-11-05"
+  },
+  "cohort-case-control-denominators": {
+    "title": "CDC: Analyzing and interpreting data",
+    "url": "https://www.cdc.gov/field-epi-manual/php/chapters/analyze-interpret-data.html",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Case-control sampling and odds ratios",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502767/"
+      }
+    ]
   }
 }

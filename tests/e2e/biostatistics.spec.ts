@@ -2,14 +2,14 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import data from '../../src/content/library-lessons.json';
 
-const lessons = data.lessons.filter(l => l.subject === 'biostatistics');
+const lessons = data.lessons.filter(l => l.source === 'original-statistics-foundations');
 test('statistics directory, filters and full-text search reach the new lessons', async ({ page }) => {
   await page.goto('/subjects');
   await page.getByRole('link', { name: 'Explore Biostatistics', exact: true }).click();
-  await expect(page.locator('.resource-card:visible')).toHaveCount(4);
+  await expect(page.locator('.resource-card:visible')).toHaveCount(5);
   await expect(page.getByText('No public lessons yet', { exact: true })).toHaveCount(0);
   await page.goto('/library?subject=biostatistics');
-  await expect(page.locator('.resource-card:visible')).toHaveCount(4);
+  await expect(page.locator('.resource-card:visible')).toHaveCount(5);
   await page.getByRole('searchbox').fill('square-root relationship');
   await expect(page.locator('.resource-card:visible')).toHaveCount(1);
   await expect(page.locator('.resource-card:visible')).toContainText('Standard deviation and standard error');
@@ -55,6 +55,6 @@ for (const lesson of lessons) {
     await page.screenshot({ path: info.outputPath('enlarged-question.png'), fullPage: false });
     await page.getByRole('link', { name: 'Biostatistics lessons →', exact: true }).click();
     await expect(page).toHaveURL(/\/subjects\/biostatistics$/);
-    await expect(page.locator('.resource-card:visible')).toHaveCount(4);
+    await expect(page.locator('.resource-card:visible')).toHaveCount(5);
   });
 }

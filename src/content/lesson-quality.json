@@ -1666,6 +1666,69 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "cohort-case-control-denominators",
+      "title": "Cohort and case-control studies: identify the denominator",
+      "subject": "biostatistics",
+      "topic": "Cohort and cumulative case-control denominators",
+      "slug": "cohort-case-control-denominators",
+      "learnerLevel": "Introductory medical statistics",
+      "objectives": [
+        "Calculate risk and odds ratios in a completely observed fictional cohort.",
+        "Explain why case-control sample proportions do not establish population risk.",
+        "Construct two populations with the same odds ratio but different risks and risk ratios.",
+        "Distinguish a possible selected sample from a guaranteed random result.",
+        "State the cumulative-control assumptions and limits of this model."
+      ],
+      "sources": [
+        {
+          "title": "CDC: Analyzing and interpreting data",
+          "url": "https://www.cdc.gov/field-epi-manual/php/chapters/analyze-interpret-data.html",
+          "publisherOrAuthor": "CDC",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Case-control sampling and odds ratios",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502767/",
+          "publisherOrAuthor": "Kerr et al.",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original invented population explorer; all 231 integer states verified in desktop and mobile browsers. Labelled cards, keyboard slider, live updates, 320px/200% text reflow, no-JavaScript static reading and zero automated axe violations checked. No independent human accessibility certification claimed.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Invented data and deterministic sensitivity illustration; no real population, repeated sampling, causal identification or clinical risk prediction.",
+        "Complete follow-up, fixed exposure and cumulative end-of-period noncase controls; not a risk-set, matched or person-time model.",
+        "AI-assisted source, arithmetic and editorial review; no independent statistical, clinical or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "cohort-case-control-denominators-editorial-20261105",
+        "cohort-case-control-denominators-readability-20261105",
+        "cohort-case-control-denominators-visual-20261105",
+        "cohort-case-control-denominators-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "standard-deviation-standard-error"
+        ],
+        "related": [
+          "histogram-bin-counts-example",
+          "standard-deviation-standard-error"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

@@ -20,7 +20,7 @@ test('study-map links resolve and unavailable topics cannot masquerade as lesson
     }
   }
   const statistics = map.groups.find(g=>g.subject==='biostatistics').topics;
-  assert.equal(statistics.filter(t=>t.status==='introduction-available'&&t.href).length, 3);
+  assert.equal(statistics.filter(t=>t.status==='introduction-available'&&t.href).length, 4);
   assert(statistics.filter(t=>t.status==='planned').every(t=>!t.href));
   assert(!/\/Users\/|dropbox|\.docx|question.bank/i.test(JSON.stringify(map)));
 });
