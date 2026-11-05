@@ -3005,6 +3005,39 @@
       "resources": [
         "allele-and-genotype-counts"
       ]
+    },
+    {
+      "id": "topic-venous-muscle-pump-direction",
+      "title": "Venous return: trace a muscle pump through compression and refill",
+      "description": "Use a deliberately ideal two-valve segment to calculate refill, compression and stored volume, then distinguish model output from local venous measurements.",
+      "subject": "physiology",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "venous-muscle-pump-direction"
+      ]
+    },
+    {
+      "id": "topic-retinal-on-off-bipolar-response",
+      "title": "Retina: compare ON and OFF bipolar responses",
+      "description": "Follow one decrease in cone glutamate through two receiving pathways, keep their channels in the correct cells, and distinguish visible structure from functional evidence.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "retinal-on-off-bipolar-response"
+      ]
+    },
+    {
+      "id": "topic-fatty-acid-oxidation-compartment-route",
+      "title": "Fatty-acid oxidation: follow a long-chain acyl group into the matrix",
+      "description": "Trace a long-chain acyl group through activation and the carnitine shuttle, distinguish all four oxidation reactions, and explain why a 16-carbon ledger has seven cycles and eight acetyl-CoA.",
+      "subject": "biochemistry",
+      "parentId": "biochemistry-metabolism",
+      "kind": "topic",
+      "resources": [
+        "fatty-acid-oxidation-compartment-route"
+      ]
     }
   ]
 }

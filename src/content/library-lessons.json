@@ -9990,6 +9990,363 @@
       ]
     },
     {
+      "id": "venous-muscle-pump-direction",
+      "subject": "physiology",
+      "title": "Venous return: trace a muscle pump through compression and refill",
+      "summary": "Use a deliberately ideal two-valve segment to calculate refill, compression and stored volume, then distinguish model output from local venous measurements.",
+      "tags": [
+        "Physiology",
+        "Venous return",
+        "Ideal valves",
+        "Volume balance"
+      ],
+      "source": "original-venous-valve-models",
+      "section": "Valve direction, prescribed pressure and cycle accounting",
+      "updatedAt": "2026-11-05",
+      "minutes": 20,
+      "objectives": [
+        "Orient two one-way paths before calculating pressure-driven flow.",
+        "Calculate inlet and outlet rates under prescribed pressure conditions.",
+        "Integrate flow over phases and check the stored-volume account.",
+        "Distinguish model predictions, local measured velocity and whole-circulation claims.",
+        "Recognize that a teaching segment does not settle a real network mechanism."
+      ],
+      "prerequisites": [
+        "biophysics-fluid-flow"
+      ],
+      "steps": [
+        {
+          "title": "Define exactly which path the model permits",
+          "body": "Connect an inlet reservoir to a compressible segment and then to an outlet reservoir representing the heartward side. Put one ideal one-way valve at each connection, both permitting inlet-to-outlet travel. The valve constrains direction; it supplies no driving pressure. These two connections are stipulated, not a complete map of superficial, deep and perforating leg veins."
+        },
+        {
+          "title": "Calculate rates from the stipulated pressure differences",
+          "body": "Let Qin = max((Pin − Ps)/Rin, 0) and Qout = max((Ps − Pout)/Rout, 0), with positive resistances. Each formula assigns zero reverse flow. At equal pressures its forward rate is zero; this does not specify real leaflet motion. Segment pressure Ps is prescribed independently in this exercise. No compliance law, inertial delay, leakage, gravitational column or pressure-volume coupling is being solved."
+        },
+        {
+          "title": "Refill without reversing the outlet path",
+          "body": "Use artificial pressure units with Pin = 6, Pout = 8 and both resistances 1 pressure-unit per volume-unit per time-unit. Prescribe Ps = 2 for one time-unit. Inlet flow is (6 − 2)/1 = 4 volume-units per time-unit; reverse outlet flow is blocked. Starting with 20 volume-units, the segment finishes refill with 24. These values are invented, not normal human venous measurements."
+        },
+        {
+          "title": "Compress and deliver the stored volume",
+          "body": "For the next one time-unit, prescribe Ps = 12 while the reservoir pressures and resistances stay fixed. The inlet blocks backward escape. Outlet flow is (12 − 8)/1 = 4 volume-units per time-unit, so 4 volume-units leave and stored volume returns from 24 to 20. The prescribed compression supplies a pressure change; the valve does not create it. This imposed-pressure bookkeeping does not determine muscle force or mechanical work."
+        },
+        {
+          "title": "Compare a phase rate with the whole-cycle average",
+          "body": "Stored-volume change is the time integral of Qin − Qout. In this two-time-unit cycle, 4 volume-units enter during refill and 4 leave during compression, giving zero net stored-volume change. Mean outlet flow over the entire cycle is 4/2 = 2 volume-units per time-unit, although its compression-phase rate is 4. Repeating a cycle at the same starting volume requires equal integrated input and output; instantaneous rates need not match. A longer compression interval without a matching refill changes storage rather than automatically producing a repeatable cycle."
+        },
+        {
+          "title": "Interpret the measurement that was actually made",
+          "body": "Kropp and colleagues examined 20 seated healthy participants and used Doppler ultrasound to measure peak systolic velocity in the popliteal vein during specified foot movements. This is a local velocity endpoint. It does not itself quantify total cardiac output or establish clinical prevention benefit. Use the existing continuity lesson to distinguish cross-section mean velocity multiplied by area from a reported peak velocity; do not silently substitute one for the other."
+        },
+        {
+          "title": "Keep the real network question open",
+          "body": "A study of 12 legs from nine healthy volunteers examined regional venous pressures and muscle activity and proposed a flow-diversion interpretation during locomotion. A 2026 letter and the authors’ reply debate measurement methods and the connection between gradients and flow in related work. This exercise does not adjudicate that debate or turn either interpretation into a universal rule. A prescribed-pressure segment can teach direction and volume accounting while leaving real anatomy, measured waveforms and model validation as separate evidence questions. No exercise prescription, disease prevention or treatment advice follows."
+        }
+      ],
+      "question": {
+        "prompt": "What can a higher measured peak velocity in one leg vein establish on its own?",
+        "options": [
+          {
+            "text": "That peak velocity at the measured site changed under the stated conditions.",
+            "reason": "The observation is local; total flow and cardiac output require additional information and measurements."
+          },
+          {
+            "text": "That total cardiac output must have risen by the same percentage.",
+            "reason": "Peak local velocity and whole-body cardiac output are different quantities."
+          },
+          {
+            "text": "That a venous valve generates the driving pressure.",
+            "reason": "Valve movement can constrain direction; the pressure difference drives flow in the simplified model."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "Account for the full cycle before naming the mean flow",
+        "prompt": "Use the fictional two-phase model: one time-unit at Ps = 2, then one at Ps = 12. Pin = 6, Pout = 8 and both resistances = 1. Starting volume is 20. Find input, output, end volume and whole-cycle mean outlet flow.",
+        "solution": [
+          "Refill: Qin = 4 and Qout = 0. Over one time-unit, input is 4 and stored volume rises from 20 to 24.",
+          "Compression: Qin = 0 and Qout = 4. Over one time-unit, output is 4 and volume returns to 20.",
+          "Mean outlet flow uses the entire two-time-unit interval: 4/2 = 2 volume-units per time-unit.",
+          "Extending only compression to two time-units would expel 8 after admitting 4, ending at 16. It would not repeat the same starting state without another change.",
+          "The imposed pressures and ideal valves define a bookkeeping model, not a validated human-vein simulation."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why is an ideal valve not a pressure generator?",
+          "answer": "The forward pressure difference and positive path resistance determine the assigned rate; the valve only blocks the reverse direction in this model."
+        },
+        {
+          "prompt": "Can zero net storage change coexist with different instantaneous inlet and outlet rates?",
+          "answer": "Yes. Refill and emptying occur in different phases; equality applies to integrated volumes over the complete returning cycle."
+        },
+        {
+          "prompt": "What additional information separates a measured peak velocity from total venous volume delivered?",
+          "answer": "The relevant cross-section area, an appropriate mean velocity and its change over the specified interval are needed; the chosen region must also match the question. A local peak alone does not identify cardiac output."
+        }
+      ],
+      "recall": {
+        "prompt": "Trace refill, compression and the complete volume account without treating the valve as the pump.",
+        "answer": "In the stipulated model, refill admits four volume-units, compression expels four, and the volume returns to twenty. Whole-cycle mean outlet flow is two, not the compression-phase rate four. Pressure changes are prescribed; real network mechanisms require separate evidence."
+      },
+      "summaryChecklist": [
+        "Draw the stipulated inlet-to-outlet directions.",
+        "State which pressures and resistances are imposed.",
+        "Calculate rates before integrating phase volumes.",
+        "Include zero-flow phases in a cycle mean.",
+        "Check start/end storage before assuming repeatability.",
+        "Keep local peak velocity, volume flow and cardiac output distinct.",
+        "Separate a toy calculation from a disputed real-network interpretation."
+      ],
+      "related": [
+        "cardiac-output",
+        "cardiac-cycle",
+        "biophysics-fluid-flow",
+        "vessel-histology",
+        "lower-limb-vessels"
+      ]
+    },
+    {
+      "id": "retinal-on-off-bipolar-response",
+      "subject": "histology",
+      "title": "Retina: compare ON and OFF bipolar responses",
+      "summary": "Follow one decrease in cone glutamate through two receiving pathways, keep their channels in the correct cells, and distinguish visible structure from functional evidence.",
+      "tags": [
+        "Retinal microcircuit",
+        "ON and OFF",
+        "Bipolar cells",
+        "Structure and function"
+      ],
+      "source": "original-retinal-receiving-pathways",
+      "section": "Receiving-cell mechanisms at the first retinal synapse",
+      "updatedAt": "2026-11-05",
+      "minutes": 17,
+      "objectives": [
+        "Compare receiving bipolar responses to the same specified glutamate decrease.",
+        "Place mGluR6/TRPM1 signaling in the receiving ON pathway rather than the photoreceptor.",
+        "Distinguish sign inversion from a change of transmitter identity.",
+        "Separate a structural observation from a functional experiment.",
+        "State the reference stimulus and limits of the direct-pathway comparison."
+      ],
+      "prerequisites": [
+        "special-senses"
+      ],
+      "steps": [
+        {
+          "title": "Reuse the shared input before comparing receivers",
+          "body": "Begin with the existing special-senses introduction: a defined light increment hyperpolarizes the photoreceptor and lowers glutamate release. Hold that input change fixed. The new task is to explain two different receiving responses, rather than repeat phototransduction or a map of retinal layers."
+        },
+        {
+          "title": "Read the ON pathway as sign inversion",
+          "body": "In the conventional ON pathway, glutamate engages mGluR6-linked signaling that suppresses a depolarizing cation current. Lower glutamate relieves that suppression. The receiving bipolar cell can therefore depolarize while its photoreceptor input hyperpolarizes. The opposite response signs describe this synaptic comparison; the transmitter remains glutamate."
+        },
+        {
+          "title": "Read the direct OFF cone pathway as sign preservation",
+          "body": "In the simplified direct cone-to-OFF-bipolar path, glutamate provides ionotropic excitation through AMPA- or kainate-type receptors. Lower glutamate reduces that excitation, producing a hyperpolarizing receiving response. Cone/OFF-bipolar recordings show differences among receptor mechanisms and temporal behavior; the comparison does not assign identical kinetics to every OFF subtype."
+        },
+        {
+          "title": "Keep channels with their named cells",
+          "body": "Photoreceptor cGMP-linked current and ON-bipolar transduction are separate steps in separate cells. TRPM1 belongs in the receiving ON-bipolar mechanism discussed here. Moving it into the photoreceptor would merge the transmitter-releasing cell with its receiver and undo the explanation of their opposite response signs."
+        },
+        {
+          "title": "Name the stimulus reference and the circuit boundary",
+          "body": "Specify a light increment relative to a stated background. ON and OFF are pathway labels, not a pair of permitted voltages or a guarantee for every stimulus pattern. This comparison concerns direct photoreceptor-to-bipolar signaling; it does not by itself predict every ganglion-cell response, perception or clinical test result."
+        },
+        {
+          "title": "Compare preserved structure with a changed function",
+          "body": "Dhingra and colleagues studied mice lacking Gαo. Recognizable retinal organization and mGluR6 expression remained, yet ON-associated electroretinographic responses were absent. This illustrates why a receptor stain or visible layer is not a complete functional test. It is an animal perturbation study, not a diagnostic rule for an individual person."
+        },
+        {
+          "title": "Keep the experimental readout with the molecular claim",
+          "body": "Morgans and colleagues combined localization with functional experiments on TRPM1. In mouse slices, deletion removed chemically simulated rod-bipolar light responses and changed cone ON-bipolar responses. Those results address a defined mechanism and preparation. A text comparison is neither a reproduction of their waveforms nor a measurement of every retinal cell or human visual performance."
+        }
+      ],
+      "question": {
+        "prompt": "A cone releases less glutamate and two bipolar cells respond in opposite directions. Must it have switched neurotransmitters?",
+        "options": [
+          {
+            "text": "No; different postsynaptic receptor mechanisms can produce opposite responses.",
+            "reason": "This follows the stated comparison and its limits."
+          },
+          {
+            "text": "Yes; opposite responses require different transmitters from the same cone.",
+            "reason": "The stated information does not establish that conclusion."
+          },
+          {
+            "text": "The ON bipolar cell must itself have become a cone.",
+            "reason": "The two cells keep distinct identities; receiving mechanisms explain the stated response contrast."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "One input change, two receiving signs",
+        "prompt": "For a qualitative direct-pathway exercise, stipulate that an ordinary light increment reduces cone glutamate release. Predict the receiving ON and OFF cone-bipolar response signs and name the mechanism at each receiving branch.",
+        "solution": [
+          "Keep the presynaptic change the same in both branches: less glutamate from the cone.",
+          "ON: reduced mGluR6-linked suppression permits a depolarizing bipolar response.",
+          "Direct OFF cone-bipolar path: reduced ionotropic excitation gives a hyperpolarizing response.",
+          "The transmitter did not switch. Receptor/signaling mechanisms differ between receivers.",
+          "These are qualitative pathway responses under the stated comparison, not numerical voltages, clinical predictions or a complete account of downstream retinal activity."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why does calling glutamate excitatory fail to explain this comparison?",
+          "answer": "It omits the receiving receptor and signaling pathway. The same decrease in glutamate can accompany opposite receiving signs in the stated ON/OFF comparison."
+        },
+        {
+          "prompt": "Which observation would be missing from a claim based only on recognizable retinal layers?",
+          "answer": "A functional readout is separate. Preserved architecture or receptor staining alone does not demonstrate a complete electrical signaling pathway."
+        },
+        {
+          "prompt": "Does the ON/OFF comparison require a new map of retinal layer orientation?",
+          "answer": "No. Reuse the existing orientation material for where structures lie; this task follows the receiving-cell mechanism at a named synapse."
+        }
+      ],
+      "recall": {
+        "prompt": "Explain the two receiving signs without changing the cone transmitter.",
+        "answer": "Both branches receive less glutamate. Reduced mGluR6-linked suppression permits ON depolarization; reduced ionotropic excitation accompanies direct OFF cone-bipolar hyperpolarization. State the light increment, receiving cell and pathway boundary."
+      },
+      "summaryChecklist": [
+        "Reuse the existing photoreceptor input explanation.",
+        "Name the receiving cell and receptor mechanism.",
+        "Keep photoreceptor and bipolar channels separate.",
+        "State the light increment and background reference.",
+        "Separate structure, function and clinical scope.",
+        "Do not infer every downstream response from one synapse."
+      ],
+      "related": [
+        "special-senses",
+        "biophysics-sensory-biophysics",
+        "synaptic-integration"
+      ]
+    },
+    {
+      "id": "fatty-acid-oxidation-compartment-route",
+      "subject": "biochemistry",
+      "title": "Fatty-acid oxidation: follow a long-chain acyl group into the matrix",
+      "summary": "Trace a long-chain acyl group through activation and the carnitine shuttle, distinguish all four oxidation reactions, and explain why a 16-carbon ledger has seven cycles and eight acetyl-CoA.",
+      "tags": [
+        "Fatty-acid oxidation",
+        "Carnitine shuttle",
+        "Reaction sequence",
+        "Carbon accounting"
+      ],
+      "source": "original-fatty-acid-route-and-ledger",
+      "section": "Activation, transport and oxidation as distinct operations",
+      "updatedAt": "2026-11-05",
+      "minutes": 20,
+      "objectives": [
+        "Separate activation and membrane transport from the four oxidation-cycle reactions.",
+        "Track the acyl group separately from CoA, carnitine and electron-transfer partners.",
+        "Distinguish hydration, flavin-linked oxidation, NAD+-linked oxidation and thiolysis.",
+        "Explain the final four-carbon cleavage and conserve acyl carbon.",
+        "State what the carbon ledger does not establish about ATP, tissue flux or clinical decisions."
+      ],
+      "prerequisites": [
+        "lipid-metabolism"
+      ],
+      "steps": [
+        {
+          "title": "Define the route before counting cycles",
+          "body": "Follow a saturated long-chain fatty acyl group through mitochondrial activation, carnitine-mediated entry and beta-oxidation. These are different operations. Use the existing fatty-acid synthesis lesson for synthesis and the existing ketone lesson for later hepatic routing. Odd-chain, unsaturated and peroxisomal pathways need additional explanations; this worked route does not stand in for all fatty-acid metabolism."
+        },
+        {
+          "title": "Activation prepares a thioester",
+          "body": "In the AMP-forming long-chain-fatty-acid ligase reaction, fatty-acid carboxylate, CoA and ATP yield acyl-CoA, AMP and diphosphate. The acyl chain has been activated, not shortened. ATP-to-AMP accounting belongs to this preparatory reaction rather than an extra oxidation cycle. Keep the chemical products explicit instead of silently substituting ADP or attaching a net ATP total."
+        },
+        {
+          "title": "Follow the acyl group through three different operations",
+          "body": "At the outer mitochondrial membrane CPT1 transfers the acyl group from CoA to carnitine. In the exchange route followed here, inner-membrane CACT/SLC25A20 brings acylcarnitine toward the matrix while carnitine moves outward. CPT2 on the matrix side transfers the acyl group to matrix CoA. The acyl label persists while its carrier changes; this route does not require the original outside CoA to accompany it across the inner membrane. Transfer enzymes and the transporter perform different tasks."
+        },
+        {
+          "title": "First oxidation creates an enoyl intermediate",
+          "body": "The first oxidation introduces a trans double bond in the acyl-CoA. Acyl-CoA dehydrogenase systems pass electrons through enzyme-bound flavin to electron-transfer flavoprotein, ETF. The cited medium-chain enzyme record is an example of that reaction chemistry, not evidence that one isoform handles every chain length. Do not draw freely released FADH2 as a diffusible cargo leaving each cycle."
+        },
+        {
+          "title": "Hydration adds water without making NADH",
+          "body": "Water addition across the enoyl double bond produces the appropriate hydroxyacyl-CoA. This changes the intermediate without releasing acetyl-CoA or reducing NAD+. The official hydratase entry writes a reversible equation in the dehydration direction; follow the hydration direction for the degradation sequence here. An equation written in reverse is not an extra pathway step."
+        },
+        {
+          "title": "Second oxidation uses a different immediate acceptor",
+          "body": "Oxidation of the hydroxyacyl-CoA produces an oxoacyl-CoA while NAD+ is reduced to NADH. This distinguishes the second oxidation from the preceding hydration and the flavoprotein-linked first oxidation. The two oxidation steps remove electrons through different immediate acceptor systems; naming both oxidation should not hide their distinct substrates and carriers."
+        },
+        {
+          "title": "Thiolysis changes the carbon ledger",
+          "body": "CoA-dependent cleavage of the oxoacyl intermediate releases acetyl-CoA and, for chains longer than four carbons in this ledger, an acyl-CoA shorter by two carbons. This is thiolysis rather than water addition. At the final four-carbon boundary, cleavage yields two acetyl-CoA. No two-carbon acyl substrate remains for another complete cycle. Read the degradation direction when a thiolase record displays the reverse condensation reaction."
+        },
+        {
+          "title": "Separate carbon balance from later energy and routing",
+          "body": "For the stipulated complete saturated 16-carbon example, seven cycles yield eight acetyl-CoA: the last cleavage contributes two of them. Those acetyl groups account for 16 carbons; they have not yet all become CO2. Subsequent acetyl-CoA use and respiratory electron transfer have additional controls and accounting assumptions. The carbon ledger alone establishes neither a fixed ATP yield nor a tissue flux, diet recommendation or clinical conclusion."
+        }
+      ],
+      "question": {
+        "prompt": "What is transferred through the carnitine shuttle in the simplified long-chain example?",
+        "options": [
+          {
+            "text": "The fatty acyl group, temporarily attached to carnitine, is transferred across the inner membrane.",
+            "reason": "CPT1 forms acylcarnitine, a transporter moves it, and CPT2 reforms acyl-CoA on the matrix side."
+          },
+          {
+            "text": "The original cytosolic CoA is carried unchanged through the inner membrane.",
+            "reason": "The acyl group is transferred between CoA and carnitine; the explanation does not require that the original CoA crosses."
+          },
+          {
+            "text": "Acetyl-CoA is made directly by CPT1 before any beta-oxidation.",
+            "reason": "CPT1 participates in the shuttle; acetyl-CoA is produced during subsequent oxidation steps."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "Six ordinary shortenings and one final cleavage",
+        "prompt": "Stipulate complete beta-oxidation of a saturated 16-carbon acyl-CoA under the simplified even-chain ledger. Count complete cycles and acetyl-CoA; distinguish the ledger endpoint from complete oxidation to CO2.",
+        "solution": [
+          "Begin counting after activation and transport; neither preparatory operation is a beta-oxidation cycle.",
+          "Six cycles take the remaining chain through 16→14→12→10→8→6→4, releasing one acetyl-CoA at each shortening.",
+          "One final complete cycle takes the four-carbon substrate through its intermediates to two acetyl-CoA.",
+          "Total cycles: 6 + 1 = 7. Total acetyl-CoA: 6 + 2 = 8. Acyl carbon: 8 × 2 = 16.",
+          "Eight cycles would incorrectly count a further complete oxidation cycle for a two-carbon acetyl product.",
+          "The endpoint here is acetyl-CoA. Later oxidation to CO2, electron reoxidation and energetic conventions require separate reasoning."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why does a compartment route need both carrier names and protein operations?",
+          "answer": "The acyl group changes attachment, whereas CACT performs membrane exchange. Naming CPT1 alone does not explain crossing the inner membrane or re-forming matrix acyl-CoA."
+        },
+        {
+          "prompt": "What changes if the final four-carbon cleavage is counted like an ordinary shortening?",
+          "answer": "The bookkeeping misses its second acetyl-CoA or invents an extra two-carbon cycle. One final complete cycle produces two acetyl-CoA."
+        },
+        {
+          "prompt": "Why is a freely released FADH2 product a misleading drawing here?",
+          "answer": "The example dehydrogenase contains a flavin prosthetic group and transfers electrons to ETF. The enzyme-bound cofactor is distinct from its electron-transfer partner."
+        }
+      ],
+      "recall": {
+        "prompt": "Reconstruct the sequence and its counting boundary without quoting an ATP total.",
+        "answer": "Activation and shuttle first; then oxidation, hydration, oxidation and thiolysis. For the stipulated 16-carbon chain, six shortenings reach four carbons and one final cycle yields two acetyl-CoA: seven cycles and eight acetyl groups."
+      },
+      "summaryChecklist": [
+        "Name the substrate and mitochondrial-route assumptions.",
+        "Keep activation and transport outside the cycle count.",
+        "Separate acyl transfer, membrane exchange and matrix re-formation.",
+        "Track enzyme-bound flavin and ETF separately.",
+        "Distinguish water addition from NAD+-linked oxidation.",
+        "Count both final acetyl-CoA and check carbon conservation.",
+        "Keep subsequent carbon oxidation and ATP accounting separate."
+      ],
+      "related": [
+        "lipid-metabolism",
+        "ketone-production-and-use",
+        "pdh-tca"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

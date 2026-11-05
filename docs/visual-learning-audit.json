@@ -3432,6 +3432,51 @@
       ],
       "figureIds": [],
       "rationale": "Original semantic comparison of three fictional complete-call groups. Desktop/mobile, keyboard, no-JavaScript, 320px/200% text, original descriptions and zero automated axe violations verified; no source image or real genotype."
+    },
+    {
+      "id": "venous-muscle-pump-direction",
+      "route": "/library/venous-muscle-pump-direction",
+      "title": "Venous return: trace a muscle pump through compression and refill",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "venous-ideal-refill-compression-account"
+      ],
+      "figureIds": [],
+      "rationale": "Original semantic text comparison with named source support and explicit bounded teaching assumptions. No source image, private storage link or measured-data figure copied; rendered checks pending."
+    },
+    {
+      "id": "retinal-on-off-bipolar-response",
+      "route": "/library/retinal-on-off-bipolar-response",
+      "title": "Retina: compare ON and OFF bipolar responses",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "retinal-receiving-response-signs"
+      ],
+      "figureIds": [],
+      "rationale": "Original semantic text comparison with named source support and explicit bounded teaching assumptions. No source image, private storage link or measured-data figure copied; rendered checks pending."
+    },
+    {
+      "id": "fatty-acid-oxidation-compartment-route",
+      "route": "/library/fatty-acid-oxidation-compartment-route",
+      "title": "Fatty-acid oxidation: follow a long-chain acyl group into the matrix",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "fatty-acid-route-operations"
+      ],
+      "figureIds": [],
+      "rationale": "Original semantic text comparison with named source support and explicit bounded teaching assumptions. No source image, private storage link or measured-data figure copied; rendered checks pending."
     }
   ]
 }

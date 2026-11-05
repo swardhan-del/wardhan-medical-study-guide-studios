@@ -252,9 +252,11 @@
       "subject": "histology",
       "number": "16",
       "title": "Eye Visual System and Eye Development",
-      "lessonIds": [],
-      "basis": "Divided printable guide, Revision 4, 3 August 2026",
-      "coverage": "This source part does not yet have a dedicated web lesson.",
+      "lessonIds": [
+        "retinal-on-off-bipolar-response"
+      ],
+      "basis": "Original source-verified web teaching with current EMII course context; not reproduction of the divided printable guide.",
+      "coverage": "Original introduction to retinal ON/OFF receiving pathways; ocular development and the rest of this source part remain outside this lesson.",
       "practiceHref": null
     },
     {
@@ -520,7 +522,8 @@
         "lymph-and-fluid-exchange",
         "cardiac-output",
         "baroreflex",
-        "ecg-time-and-vectors"
+        "ecg-time-and-vectors",
+        "venous-muscle-pump-direction"
       ],
       "basis": "Website teaching sequence",
       "coverage": "Selected web adaptations; this is not the full source manuscript.",
@@ -828,12 +831,13 @@
       "id": "biochemistry-part-05",
       "subject": "biochemistry",
       "number": "05",
-      "title": "Ethanol and ketone body metabolism",
+      "title": "Fatty-acid oxidation, ethanol and ketone metabolism",
       "lessonIds": [
-        "ketone-production-and-use"
+        "ketone-production-and-use",
+        "fatty-acid-oxidation-compartment-route"
       ],
       "basis": "Section themes in the final biochemistry guide; editorial grouping, not original chapter numbering.",
-      "coverage": "Selected web adaptations; source section is broader.",
+      "coverage": "Selected original web introductions to mitochondrial fatty-acid oxidation and ketone production/use; ethanol and the remaining source topics are not covered by these lessons.",
       "practiceHref": null
     },
     {
