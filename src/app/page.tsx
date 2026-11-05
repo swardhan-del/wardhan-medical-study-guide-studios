@@ -5,11 +5,14 @@ import { ContinueLearning } from "@/components/continue-learning";
 import { journeyIndex } from "@/lib/lesson-journeys";
 import { QuickSearch } from "@/components/quick-search";
 import Link from "next/link";
+import Image from "next/image";
+import visualStyles from "@/components/visual-studio.module.css";
 import { SubjectCard } from "@/components/subject-card";
 import { studySubjects } from "@/lib/study-collections";
 import { SubjectSubsets } from "@/components/subject-subsets";
 import { renalLessons, renalQuestions } from "@/content/renal-course";
 import { LearningCollection } from "@/components/learning-collection";
+import { VisualStudioInvitation } from "@/components/visual-studio-invitation";
 export const metadata = searchMetadata("/");
 export default function Home() {
   return (
@@ -36,8 +39,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <aside className="hero-aside" aria-label="Your first study session"><p className="eyebrow">Start learning</p><h2>Choose your subject</h2><nav className="home-subject-links" aria-label="Start a subject">{studySubjects.map(s => <Link key={s.id} href={`/study/${s.id}`}>{s.title} →</Link>)}</nav></aside>
+        <aside className="hero-aside" aria-label="Your first study session"><Link href="/learn/visual-studio" className={visualStyles.homeCover} aria-label="Explore the visual studio"><Image src="/media/visual-studio/studio-cover.webp" width={1536} height={1024} sizes="(max-width:700px) 90vw, 40vw" alt="Conceptual microscope illustration for the visual study studio." priority/><span>Explore the visual studio ↗</span></Link><p className="eyebrow">Start learning</p><h2>Choose your subject</h2><nav className="home-subject-links" aria-label="Start a subject">{studySubjects.map(s => <Link key={s.id} href={`/study/${s.id}`}>{s.title} →</Link>)}</nav></aside>
       </section>
+      <div className="site-container"><VisualStudioInvitation /></div>
       <div className="site-container"><ContinueLearning lessons={journeyIndex} /></div>
       <section className="site-container study-panel" aria-labelledby="anatomy-first-heading"><p className="eyebrow">Free Anatomy learning path</p><h2 id="anatomy-first-heading">Start with orientation. Build towards regional anatomy.</h2><p>Learn anatomical position, planes, directions and body cavities through labelled diagrams, explained questions and a saved summary checklist.</p><div className="action-row"><Link className="button button-primary" href="/library/anatomy-foundations">Begin Anatomy Foundations</Link><Link className="text-link" href="/subjects/anatomy#anatomy-course-map">Explore the Anatomy course map →</Link></div></section>
       <section className="site-container study-panel" aria-labelledby="histology-first-heading"><p className="eyebrow">Free Histology learning path</p><h2 id="histology-first-heading">Recognise tissues. Explain what you see.</h2><p>Compare the four basic tissue families, follow a worked identification example and practise with explained questions and visual study prompts.</p><div className="action-row"><Link className="button button-primary" href="/library/histology-foundations-tissues">Begin Histology Foundations</Link><Link className="text-link" href="/study/histology#subject-topic-map">Explore the Histology topic map →</Link></div></section>

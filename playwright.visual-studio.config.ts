@@ -1,0 +1,3 @@
+import { defineConfig } from "@playwright/test";
+const remote=process.env.STUDIO_BASE_URL;
+export default defineConfig({testDir:"./tests/e2e",outputDir:"./.private/studio-test-results",testMatch:/visual-studio\.spec\.ts/,workers:1,timeout:45000,use:{baseURL:remote??"http://127.0.0.1:3271",trace:"retain-on-failure"},projects:[{name:"desktop",use:{viewport:{width:1440,height:1000}}},{name:"mobile",use:{viewport:{width:390,height:844}}}],webServer:remote?undefined:{command:"node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3271",url:"http://127.0.0.1:3271",reuseExistingServer:false,env:{LOCAL_CURATION_REVIEW:"0",VERCEL:""}}});

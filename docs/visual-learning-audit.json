@@ -3544,5 +3544,29 @@
       "figureIds": [],
       "rationale": "Original semantic tissue-role comparison with full text; no source image, measured dataset or patient specimen. Actual native render review pending."
     }
-  ]
+  ],
+  "supplementalVisualStudioReview": {
+    "reviewedAt": "2026-11-05",
+    "route": "/learn/visual-studio",
+    "sourceReview": "docs/reviews/visual-studio-20261105.md",
+    "decisions": [
+      {
+        "id": "node-route-visual",
+        "purpose": "Locate compartments and distinguish blood entry from lymph flow",
+        "action": "original-programmed-interactive"
+      },
+      {
+        "id": "organ-patterns-visual",
+        "purpose": "Compare lymph node, spleen and thymus using structural relationships",
+        "action": "original-programmed-interactive"
+      },
+      {
+        "id": "slide-journey-visual",
+        "purpose": "Connect six preparation stages with their purpose and predictions",
+        "action": "original-programmed-interactive"
+      }
+    ],
+    "existingCatalogueRecords": "unchanged",
+    "independentSpecialistReview": "outstanding"
+  }
 }
