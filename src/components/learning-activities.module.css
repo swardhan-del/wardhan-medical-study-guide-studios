@@ -1,0 +1,20 @@
+.collection { margin-block: 2rem; min-width: 0; }
+.card { border: 1px solid var(--line, #aab5b0); border-radius: 1rem; padding: clamp(.75rem, 3vw, 1.5rem); margin-block: 1.25rem; overflow-wrap: anywhere; min-width: 0; }
+.card h3 { font-size: 1.15em; line-height: 1.5; }
+.card h2 { font-size: 1.35em; line-height: 1.3; }
+.card input:not([type="checkbox"]), .card textarea { display: block; width: 100%; max-width: 100%; box-sizing: border-box; font: inherit; padding: .6rem; border: 1px solid #65766c; border-radius: .4rem; color: #192d26; background: #fff; margin-block: .5rem; }
+.card button { font: inherit; white-space: normal; overflow-wrap: anywhere; max-width: 100%; min-height: 44px; padding: .65rem .9rem; border: 1px solid #60746a; border-radius: .5rem; color: #173e30; background: #f5faf7; cursor: pointer; }
+.card button:disabled { cursor: default; opacity: .55; }
+.card button[aria-pressed="true"] { color: #fff; background: #173e30; border-color: #173e30; }
+.card :is(button, input, textarea, summary):focus-visible { outline: 3px solid #a84814; outline-offset: 3px; }
+.choices { display: flex; flex-wrap: wrap; gap: .6rem; margin-block: 1rem; }
+.choices > * { min-width: 0; }
+.criterion { display: flex; align-items: flex-start; gap: .6rem; margin-block: 1rem; }
+.criterion input { flex: 0 0 auto; margin-top: .35rem; width: 1.2rem; height: 1.2rem; }
+.card fieldset { min-width: 0; margin-block: 1rem; }
+.card details { margin-block: 1rem; }
+.card summary { cursor: pointer; min-height: 44px; }
+.note { font-size: .9em; }
+.feedback { font-weight: 600; }
+.printAnswer { display: none; }
+@media print { .card { break-inside: avoid; } .card button, .card textarea, .card input, .screenRubric { display: none; } .printAnswer { display: block; } }
