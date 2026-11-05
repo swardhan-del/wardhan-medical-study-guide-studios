@@ -1,3 +1,4 @@
+import { PhysiologyCourseNavigation } from "@/components/physiology-course-navigation";
 import { AboutLesson } from "@/components/about-lesson";
 import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
 import { StructuredData } from "@/components/structured-data";
@@ -126,6 +127,7 @@ export default async function RenalLessonPage({ params }: Props) {
       </div>
       <StudyReel key={`recall-${slug}`} title="Revisit the key ideas" slides={[...lesson.sections.map(section => ({ title: section.title, body: section.text })), { title: "Explain it without looking", prompt: lesson.oral, body: lesson.rubric.join(" ") }]} />
       <CompleteLesson slug={slug} />
+      <PhysiologyCourseNavigation lessonId={`renal-${slug}`} />
       <nav className="lesson-pagination" aria-label="Course lessons">
         {previous ? (
           <Link className="text-link" href={renalLessonHref(previous.slug)}>

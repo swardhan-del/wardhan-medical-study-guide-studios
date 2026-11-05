@@ -1,3 +1,4 @@
+import { physiologyCoursePath } from "@/content/curriculum";
 import { TopicGuideLinks } from "@/components/topic-guide-links";
 import { searchMetadata } from "@/lib/search-metadata";
 import { WaitlistCta } from "@/components/waitlist-cta";
@@ -33,6 +34,7 @@ export default async function SubjectStudyPage({ params }: Props) {
    <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><div className="action-row"><Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start the first lesson</Link><Link href={`/learn/foundations/${subject}`}>Learn the foundations</Link></div><p className="interior-lede">{s.description}</p>
      <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link><Link href="/library">Return to the library</Link></div>
    </header>
+   {subject === "physiology" && <p><Link className="button button-secondary" href={physiologyCoursePath}>Full Course</Link></p>}
    <SubjectHubOverview subject={subject} />
    {subject === "anatomy" ? <AnatomyLearningPath/> : <SubjectTopicMap subject={subject} />}
    {subject === "anatomy" && <AnatomyCourseIntro />}
