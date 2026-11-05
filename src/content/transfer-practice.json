@@ -1540,6 +1540,420 @@
         }
       ],
       "answer": 2
+    },
+    {
+      "id": "gi-depth-missing-compartment",
+      "topic": "gi-histology",
+      "prompt": "A biopsy contains epithelium and lamina propria but no submucosa. Which conclusion is justified?",
+      "options": [
+        {
+          "text": "The presence of submucosal glands cannot be assessed in this sample.",
+          "explanation": "The necessary compartment is absent from the specimen."
+        },
+        {
+          "text": "The patient has no submucosal glands.",
+          "explanation": "Missing tissue cannot establish biological absence."
+        },
+        {
+          "text": "The tissue must be jejunum.",
+          "explanation": "That regional assignment requires positive supporting observations."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-profile-centre",
+      "topic": "gi-histology",
+      "prompt": "A circular epithelial profile encloses cellular connective tissue rather than a gland lumen. What should be considered?",
+      "options": [
+        {
+          "text": "A microvillus with a submucosal core.",
+          "explanation": "A microvillus is a cellular apical specialisation, not a tissue fold."
+        },
+        {
+          "text": "A cross-cut villus.",
+          "explanation": "Its connective-tissue core distinguishes the model from a crypt lumen."
+        },
+        {
+          "text": "A crypt solely because the outline is round.",
+          "explanation": "Shape alone ignores what occupies the centre."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-polarity",
+      "topic": "gi-histology",
+      "prompt": "A deep gastric cell has a basophilic basal region and an apical secretory compartment. Which explanation connects structure with function?",
+      "options": [
+        {
+          "text": "Basophilia proves that the cell secretes acid.",
+          "explanation": "A staining property does not uniquely identify a secretory product."
+        },
+        {
+          "text": "All gastric endocrine products enter the pit lumen.",
+          "explanation": "Endocrine signalling is directed toward the tissue and circulation."
+        },
+        {
+          "text": "Protein-synthetic machinery and directed secretion toward the gland lumen.",
+          "explanation": "The distribution fits the polarity of an exocrine secretory cell."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-canalicular-continuity",
+      "topic": "gi-histology",
+      "prompt": "A stimulated parietal cell expands its canalicular membrane. Which relationship explains the secretory benefit?",
+      "options": [
+        {
+          "text": "More apical membrane communicates with the gland lumen.",
+          "explanation": "The canalicular surface is part of the lumen-facing membrane system."
+        },
+        {
+          "text": "Canaliculi become blood capillaries.",
+          "explanation": "Epithelial secretory membrane and vascular endothelium remain different compartments."
+        },
+        {
+          "text": "Chief-cell granules become parietal-cell mitochondria.",
+          "explanation": "These are different organelles in different cell populations."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-transition",
+      "topic": "gi-histology",
+      "prompt": "A gastric transition has deep pits, mostly pale gland cells and occasional parietal-like cells. What is the best next step?",
+      "options": [
+        {
+          "text": "Assess the entire regional pattern and neighbouring tissue.",
+          "explanation": "Transitions need not have absolutely exclusive cell populations."
+        },
+        {
+          "text": "Reject a pyloric region because one parietal-like cell is present.",
+          "explanation": "A rigid single-cell exclusion ignores regional transitions."
+        },
+        {
+          "text": "Measure living acid output from the nucleus size.",
+          "explanation": "The image does not measure secretion in the living organ."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-division",
+      "topic": "gi-histology",
+      "prompt": "A mitotic figure is observed in a crypt. What does this directly show?",
+      "options": [
+        {
+          "text": "That the cell is the only possible regenerative population.",
+          "explanation": "The observation does not establish exclusivity."
+        },
+        {
+          "text": "A cell undergoing division at the sampled moment.",
+          "explanation": "A static division figure does not map all later descendants."
+        },
+        {
+          "text": "The complete future lineage of that cell.",
+          "explanation": "That requires lineage evidence beyond a single image."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-regional-evidence",
+      "topic": "gi-histology",
+      "prompt": "Villi and crypts are preserved, but no deeper wall is present. Which answer is strongest?",
+      "options": [
+        {
+          "text": "Jejunum proved by no visible Brunner glands.",
+          "explanation": "The compartment containing those glands was not sampled."
+        },
+        {
+          "text": "Normal colon proved by the lack of Peyer patches.",
+          "explanation": "That ignores the villous architecture and sampling limit."
+        },
+        {
+          "text": "A small-intestinal pattern with segment uncertainty.",
+          "explanation": "The observed pattern is useful, while deeper discriminators are unavailable."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-goblet-only",
+      "topic": "gi-histology",
+      "prompt": "Goblet cells and one lymphoid follicle appear in a small fragment. What is the most defensible interpretation?",
+      "options": [
+        {
+          "text": "Use the epithelial and whole-wall pattern before choosing an organ.",
+          "explanation": "Neither observation alone is uniquely identifying."
+        },
+        {
+          "text": "Appendix is proved by any follicle.",
+          "explanation": "Lymphoid tissue occurs in other intestinal regions."
+        },
+        {
+          "text": "Colon is proved by any goblet cell.",
+          "explanation": "Goblet cells are not exclusive to colon."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-plexus-position",
+      "topic": "gi-histology",
+      "prompt": "A ganglion lies between circular and longitudinal muscularis externa. Which label fits its position?",
+      "options": [
+        {
+          "text": "A mucosal gastric gland.",
+          "explanation": "A gland is epithelial and is not identified by this intermuscular neural position."
+        },
+        {
+          "text": "Myenteric plexus.",
+          "explanation": "The relationship between the two major muscle layers is the useful landmark."
+        },
+        {
+          "text": "The lumen of an intestinal crypt.",
+          "explanation": "A crypt is an epithelial invagination in the mucosa."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-pas-location",
+      "topic": "gi-histology",
+      "prompt": "A PAS-positive gland profile has no documented relation to muscularis mucosae. What remains necessary for a Brunner-gland interpretation?",
+      "options": [
+        {
+          "text": "Infer the exact germ-layer lineage from the magenta colour.",
+          "explanation": "Stain colour does not establish lineage."
+        },
+        {
+          "text": "Establish its compartment and the surrounding intestinal architecture.",
+          "explanation": "Chemical contrast must be combined with anatomical location."
+        },
+        {
+          "text": "Treat PAS as a unique Brunner-gland marker.",
+          "explanation": "PAS positivity is not specific to one gland type."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-mixed-origins",
+      "topic": "gi-histology",
+      "prompt": "Which explanation best maps a developing gut wall?",
+      "options": [
+        {
+          "text": "All wall cells arise from endoderm because a lumen is present.",
+          "explanation": "A lumen does not determine the origin of support and nerve tissue."
+        },
+        {
+          "text": "The enteric plexus is a specialised gland duct.",
+          "explanation": "Neural circuitry and glandular epithelium are different structures."
+        },
+        {
+          "text": "Different contributions to epithelial lining, supporting tissue and enteric circuitry.",
+          "explanation": "A single germ-layer label omits distinct wall compartments."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-questions-apart",
+      "topic": "gi-histology",
+      "prompt": "Which pair describes distinct developmental questions?",
+      "options": [
+        {
+          "text": "Gut rotation in the abdomen and local villus patterning.",
+          "explanation": "Position and mucosal morphogenesis require different explanations."
+        },
+        {
+          "text": "Every change of position is a change of germ-layer lineage.",
+          "explanation": "Movement does not by itself change lineage."
+        },
+        {
+          "text": "An adult section directly reveals every earlier signalling event.",
+          "explanation": "Historical mechanisms require additional developmental evidence."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-responding-tissue",
+      "topic": "gi-histology",
+      "prompt": "In a mouse study, mesenchymal and epithelial perturbations have different effects on villus pattern. What does the comparison help identify?",
+      "options": [
+        {
+          "text": "That adjacent tissues must have identical signalling roles.",
+          "explanation": "Their proximity does not make their responses equivalent."
+        },
+        {
+          "text": "Which tested compartment contributes to the observed signalling-dependent outcome.",
+          "explanation": "The intervention adds causal evidence within that model."
+        },
+        {
+          "text": "A universal mechanism established for every human fetal stage.",
+          "explanation": "The model and developmental context still constrain extrapolation."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-culture-history",
+      "topic": "gi-histology",
+      "prompt": "Two enteroid experiments use different starting populations. How should their growth-factor responses be compared?",
+      "options": [
+        {
+          "text": "Ignore the starting conditions because the ligand name is identical.",
+          "explanation": "Cell state and culture history can change the measured response."
+        },
+        {
+          "text": "Assume greater diversity proves a complete mature intestine.",
+          "explanation": "Cell composition does not establish full architecture or function."
+        },
+        {
+          "text": "Retain the starting conditions and compare the specific measured outcomes.",
+          "explanation": "The comparison distinguishes establishment from switching an already adapted culture."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-spatial-causality",
+      "topic": "gi-histology",
+      "prompt": "A spatial atlas places a ligand-expressing stromal population beside epithelium. What is the strongest conclusion from location alone?",
+      "options": [
+        {
+          "text": "It identifies a candidate local interaction for functional testing.",
+          "explanation": "Proximity supports a hypothesis but does not itself establish causality."
+        },
+        {
+          "text": "It proves that the ligand caused every epithelial fate.",
+          "explanation": "The map is observational rather than a targeted perturbation."
+        },
+        {
+          "text": "It reconstructs every cell’s descendants.",
+          "explanation": "Spatial expression is not an inherited lineage label."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-lineage-readout",
+      "topic": "gi-histology",
+      "prompt": "What distinguishes an inherited lineage label from a current-expression image?",
+      "options": [
+        {
+          "text": "It makes species and marking time irrelevant.",
+          "explanation": "Both remain necessary to interpret the experiment."
+        },
+        {
+          "text": "It can be replaced by routine H&E colour alone.",
+          "explanation": "Routine morphology does not provide the same inherited label."
+        },
+        {
+          "text": "It can follow labelled descendants after the initial marking event.",
+          "explanation": "The readout addresses descendants rather than only present expression."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-plasticity-context",
+      "topic": "gi-histology",
+      "prompt": "Human organoid lineage experiments show a differentiated population contributing to other epithelial states. Which interpretation is appropriate?",
+      "options": [
+        {
+          "text": "Every mature gut cell is interchangeable in every patient.",
+          "explanation": "That extrapolation exceeds the tested population and model."
+        },
+        {
+          "text": "Regenerative capacity can depend on cell state and experimental context.",
+          "explanation": "The finding broadens the renewal model while preserving its evidence limits."
+        },
+        {
+          "text": "Earlier crypt-base lineage tracing must have been invalid.",
+          "explanation": "Different contributing populations and contexts can coexist without contradiction."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "gi-depth-complete-identification",
+      "topic": "gi-histology",
+      "prompt": "Which report best supports a duodenal identification?",
+      "options": [
+        {
+          "text": "Pink gland cells are present, so the organ is certainly duodenum.",
+          "explanation": "Colour alone does not establish organ or compartment."
+        },
+        {
+          "text": "No lymphoid aggregate is seen, so ileum is impossible.",
+          "explanation": "A limited section can miss a regional feature."
+        },
+        {
+          "text": "Villi and crypts are present, with mucous glands demonstrated below muscularis mucosae.",
+          "explanation": "This combines the intestinal surface pattern with the positive submucosal landmark."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "href": "/library/gi-histology#apply-the-concept"
     }
   ]
 }

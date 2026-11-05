@@ -1042,29 +1042,95 @@
     {
       "id": "gi-histology",
       "subject": "histology",
-      "title": "Recognizing the gastrointestinal wall",
-      "summary": "Use the shared wall plan and regional specializations to distinguish esophagus, stomach and intestine.",
+      "title": "Digestive tract: identify the wall and explain its development",
+      "summary": "Distinguish gastric units, villi and crypts; connect cell structure, stains and gut-wall compartments to developmental signals and renewal.",
       "tags": [
         "Organ histology",
         "gastrointestinal",
         "digestive",
         "stomach",
-        "intestine"
+        "intestine",
+        "embryology",
+        "villus",
+        "crypt",
+        "gastric glands",
+        "organoids",
+        "staining"
       ],
       "source": "histology",
       "section": "Gastrointestinal Tract Histology; Regional Variations",
       "steps": [
         {
-          "title": "Name the common layers",
-          "body": "From the lumen outward, identify mucosa, submucosa, muscularis externa and serosa or adventitia. The mucosa itself includes epithelium, lamina propria and muscularis mucosae. Do not confuse muscularis mucosae with the much larger muscularis externa."
+          "title": "Read compartments before deciding the organ",
+          "body": "Begin at the lumen and identify the epithelium, its supporting lamina propria and the thin muscularis mucosae. These together form the mucosa. The submucosa lies outside that boundary and contains larger vessels and connective tissue; the muscularis externa is a separate, much thicker muscular coat. Serosa adds a mesothelial covering where present, whereas adventitia blends into surrounding connective tissue. An epithelial biopsy may not contain the full wall. Record which compartments are actually sampled before using the absence of a deep structure as a regional clue. A gland in the mucosa and a gland beneath muscularis mucosae have different diagnostic value even when both look pale.\n\nMuscularis mucosae moves the mucosa locally; muscularis externa participates in propulsion and mixing. In a transversely sectioned bowel, the circular layer and longitudinal layer are cut in different orientations. A pink band is therefore not enough: establish its relation to mucosa, vessels and the second muscle layer.\n\nTry it: A mucosal biopsy lacks submucosa. Which regional gland claim is unavailable, and why?"
         },
         {
-          "title": "Identify the epithelial task",
-          "body": "Esophagus uses stratified squamous epithelium for abrasion resistance. Stomach has simple columnar surface cells, pits and glands. Small intestine adds villi and crypts; large intestine has numerous straight crypts and goblet cells but no normal villi."
+          "title": "A villus, crypt, fold and microvillus are different structures",
+          "body": "A villus projects into the intestinal lumen and has a connective-tissue core covered by epithelium. A crypt is an epithelial invagination with a lumen inside its epithelial wall. Cutting across either can produce a round profile: inspect what the epithelial ring encloses. A larger circular fold includes submucosa as well as mucosa, whereas a villus does not carry a submucosal core. Microvilli are apical specialisations of individual epithelial cells and collectively contribute to a brush border; they are not miniature full-wall folds. Follow a profile through neighbouring regions before treating every circular epithelial pattern as a gland. An oblique cut can exaggerate thickness and interrupt apparent continuity.\n\nTry it: Draw a cross-cut villus beside a cross-cut crypt and label the material at each centre."
         },
         {
-          "title": "Use a regional discriminator",
-          "body": "Submucosal Brunner glands favor duodenum. Prominent villi and folds without Brunner glands or large aggregated lymphoid patches can favor jejunum. Aggregated lymphoid Peyer patches support ileum. Combine clues because a small or oblique section can miss defining structures."
+          "title": "Trace a gastric unit from surface through pit to gland",
+          "body": "The gastric surface continues into pits, and glands open deeper into those pits. Locate the surface and muscularis mucosae before interpreting an isolated gland fragment. Surface mucus cells protect the luminal interface; mucous neck cells occupy another compartment of the gland and should not simply be renamed surface cells. Parietal cells in a well-preserved corpus sample are relatively large and often eosinophilic, with rounded nuclei. Chief cells are concentrated deeper in the glands and show a basophilic basal region associated with protein-synthetic machinery. Polarity matters: an enzyme-secreting cell directs its secretory product toward a gland lumen, whereas an endocrine cell releases toward the underlying vascular compartment. Routine colour does not identify a specific hormone.\n\nChief-cell basal basophilia reflects ribosome-rich rough endoplasmic reticulum, while secretory granules accumulate toward the apical pole. These are spatially separated stages of making, packaging and releasing a protein product. Identify the gland lumen before calling one end of a cell apical.\n\nTry it: Explain how basal basophilia and an apical secretory compartment fit the task of a chief cell."
+        },
+        {
+          "title": "Connect gastric organelles to secretion",
+          "body": "A parietal cell has a large energy demand and abundant mitochondria. Its secretory canaliculi are invaginations of the apical membrane that communicate with the gland lumen; they are not free channels through the cytoplasm. During stimulation, tubulovesicular membrane is recruited to the apical surface, expanding the membrane available for acid secretion. The apical proton pump exchanges hydrogen ions for potassium using ATP. This explains why membrane trafficking and mitochondrial supply are both relevant to the cell’s task.\n\nContrast a chief cell: rough endoplasmic reticulum supports synthesis of pepsinogen, the Golgi participates in processing and packaging, and apical granules store product for release toward the lumen. Intrinsic factor is another parietal-cell product; it supports later vitamin B12 absorption in the ileum. H&E provides clues to cell identity, while canalicular membrane detail requires electron microscopy. The linked TEM teaching specimen is rat stomach, so use it for organelle relationships without relabelling it as human tissue.\n\nTry it: Why do a chief cell and a parietal cell need different dominant organelle arrangements?"
+        },
+        {
+          "title": "Compare gastric regions using architecture and cell populations",
+          "body": "A typical fundic or corpus unit has substantial glands containing parietal and chief-cell populations. Pyloric mucosa has deeper pits and a predominance of mucus-producing glands; the cardiac region is small and lies near the oesophageal junction. These are regional patterns, not a rule that every transition contains an absolutely exclusive cell population. A cropped fragment showing a pale cell does not establish pylorus. Compare pit-to-gland organisation, the distribution of recognisable cells, neighbouring tissue and the plane of section. Keep secretion distinct from appearance: a nucleus or stain intensity cannot measure acid output in the living stomach. If a junction is sampled, explain the transition rather than forcing the entire slide into one uniform category.\n\nAt the oesophagogastric junction, non-keratinised stratified squamous epithelium meets the simple columnar gastric lining. At the pyloroduodenal junction, look for the emergence of intestinal villi together with submucosal glands. An epithelial transition gives positional evidence that a single isolated secretory cell cannot.\n\nTry it: A transition contains deep pits and occasional parietal-like cells. What additional observations would strengthen the regional identification?"
+        },
+        {
+          "title": "Separate intestinal absorptive, protective and secretory populations",
+          "body": "Enterocytes have an apical absorptive interface; goblet cells package mucus, and enteroendocrine cells participate in signalling toward the tissue side of the epithelium. Paneth cells are associated with the bases of small-intestinal crypts and contain prominent apical secretory granules in suitable preparations. Position, polarity and surrounding architecture help distinguish these cells more securely than stain colour alone. The crypt is also a site of epithelial production and renewal. A mitotic figure demonstrates a division at the sampled moment, not the entire future lineage of that cell. Distinguish an epithelial cell facing a lumen from a lymphocyte within the epithelial or lamina-propria compartment. Cell populations and their proportions vary with site, state and preparation.\n\nA villus surface is enriched for differentiated absorptive and secretory functions; crypt compartments contain proliferating cells and distinct secretory populations. Renewal therefore has a spatial organisation. Do not equate the crypt lumen with a capillary or assume that every crypt-base cell has the same fate.\n\nTry it: Compare an apically secreting crypt cell with a basally signalling endocrine cell without using colour as the sole criterion."
+        },
+        {
+          "title": "Use positive regional landmarks and state the sampling limit",
+          "body": "Submucosal mucous glands support duodenum when their position beneath muscularis mucosae is demonstrated. Aggregated lymphoid patches support an ileal interpretation in an appropriate intestinal wall, while jejunal identification depends on the combined mucosal and wall pattern. Absence of an aggregate or gland in a tiny fragment is weaker evidence than its observed presence in the correct compartment. Villi alone identify a small-intestinal pattern more strongly than they identify one segment. Record villous organisation, crypts, gland location, lymphoid distribution and the amount of wall included. This prevents the circular rule that any small-intestinal fragment without a visible landmark must be jejunum.\n\nName the positive clue first, then its compartment: “mucous gland lobules in submucosa beneath intestinal mucosa” is stronger than “pale cells.” An aggregate of lymphoid follicles can distort the overlying villous pattern. Inspect adjacent intact mucosa before interpreting that local difference as the pattern of the whole segment.\n\nTry it: Give a justified identification for villi and crypts with no deeper wall, then name one feature that would narrow it."
+        },
+        {
+          "title": "Colon and appendix require a whole-pattern comparison",
+          "body": "Normal colonic mucosa has closely arranged crypts rather than the villous surface of small intestine. Goblet cells are conspicuous, but their presence alone does not distinguish colon because they also occur elsewhere. The appendix can show a colonic-type epithelial pattern with prominent lymphoid tissue; an isolated follicle does not establish appendix. Examine the lumen, circumferential wall, crypt distribution and lymphoid arrangement together. A small superficial fragment may not provide those relationships. Separate normal regional comparison from a disease inference: a flat or damaged mucosal sample cannot be assigned to normal colon solely because no villus is seen. Loss of surface structures demands an orientation and preservation check first.\n\nA complete appendix section commonly offers a small irregular lumen with lymphoid tissue distributed around the wall. A longitudinal colonic fragment and an obliquely cut appendix are not equivalent samples. Build an identification from at least two independent observations and state when the tissue is too limited to distinguish them securely.\n\nTry it: Explain why both “goblet cells” and “a lymphoid follicle” are insufficient single-feature labels."
+        },
+        {
+          "title": "Keep nerves, blood vessels and lymphatic spaces distinct",
+          "body": "The myenteric plexus lies between the major circular and longitudinal layers of muscularis externa; the submucosal plexus lies in the submucosal compartment. Ganglion cells have recognisable cell bodies and nuclei among neural processes and supporting cells. They should not be mistaken for an epithelial gland merely because both occur in the wall. The two plexuses participate in coordinated motility and mucosal regulation, with extrinsic autonomic input modifying intrinsic circuits.\n\nWithin a villus, the lamina-propria core contains connective tissue, blood microvessels and a lymphatic route. An epithelial barrier separates the intestinal lumen from that core. Nutrients must cross epithelial and tissue interfaces before entering vascular or lymphatic pathways; the intestinal lumen does not open directly into a capillary. On H&E, a pale space alone is insufficient to identify a lymphatic vessel. Look for a lining, surrounding architecture and an appropriate additional method when a precise vessel claim matters.\n\nTry it: Trace the barriers between the intestinal lumen and a vessel in the villus core."
+        },
+        {
+          "title": "Choose a stain for a question and retain the anatomical context",
+          "body": "H&E establishes the wall plan: haematoxylin emphasises nucleic-acid-rich structures, while eosin contrasts many cytoplasmic and extracellular proteins. A chief cell can therefore have a blue-purple basal region without every blue structure being a nucleus. PAS highlights suitable carbohydrate-rich material after oxidation and reaction with Schiff reagent; mucus and basement-membrane regions may be conspicuous. PAS positivity is not a unique gland identity.\n\nOrient the specimen so that the lumen-to-wall relationship is retained. Fixation, processing, embedding and sectioning affect the final appearance: a tangential cut can turn a row of glands into disconnected circles, and damaged surface epithelium can hide a brush border. Compare serial or better-oriented sections when available. For an immunostain, ask what target is detected and what the positive and negative controls establish. A positive marker does not independently prove lineage, hormone output or diagnosis.\n\nTry it: A PAS-positive gland is seen in a limited specimen. Which anatomical information is still needed before calling it a Brunner gland?"
+        },
+        {
+          "title": "Build the wall from distinct developmental contributions",
+          "body": "The gut tube forms as embryonic folding incorporates endoderm into an internal epithelial tube. Most digestive lining and associated glandular epithelium derive from that endoderm. Adjacent splanchnic mesoderm contributes the lamina propria, muscular layers, vascular and supporting compartments. Migrating neural-crest populations contribute intrinsic enteric neurons and glia. A mature gut wall is thus an assembly of distinct developmental compartments, not an organ made entirely from one germ layer.\n\nRelate each origin to a visible adult compartment: epithelial crypt, connective-tissue core, muscular coat and enteric ganglion. A gland that extends into submucosa remains epithelial; its deep position does not convert it into a mesodermal derivative. Boundary regions need their own origin map. The companion foregut-development lesson explains gross organ relationships and pancreatic buds; here, the question is how lining, support and intrinsic nerves become organised together.\n\nTry it: On one gut-wall diagram, label three developmental contributions without assigning the entire organ to one germ layer."
+        },
+        {
+          "title": "Regional identity is established before adult glands are complete",
+          "body": "Gastric development involves regional specification as well as growth and folding. In McCracken and colleagues’ 2014 human pluripotent-stem-cell model, WNT and FGF stimulation supported gut-like spheroid formation. Blocking BMP signalling shifted the epithelial programme away from CDX2-associated posterior identity toward SOX2-associated foregut identity. Subsequent retinoic-acid signalling helped establish an antral programme with SOX2 and PDX1 expression.\n\nThe resulting organoids developed pit- and gland-like domains with mucous and endocrine populations. They represented antral tissue, not a complete adult stomach: they did not establish the fundic parietal-cell population. This distinction connects development to the regional slide comparison above. A folded epithelium is not sufficient evidence that every gastric region or function has formed. These experimentally ordered signals are evidence from a human cell model, not a complete timetable of human fetal development. Keep regional specification, local gland morphogenesis and rotation in the abdomen as separate questions.\n\nTry it: Why can an organoid form gastric pits yet still be unsuitable for studying fundic acid secretion?"
+        },
+        {
+          "title": "Villus formation requires epithelial–mesenchymal signalling",
+          "body": "In developing mouse intestine, epithelial Hedgehog signals promote the organisation of responding mesenchymal cells into clusters beneath the epithelium. Villi emerge over those clusters. Walton and colleagues tested how BMP signalling regulates their spacing: increased BMP activity suppressed cluster formation, whereas BMP inhibition allowed clusters to merge. Conditional loss of BMP reception in Hedgehog-responsive mesenchyme changed the pattern; comparable epithelial targeting did not have the same effect.\n\nThis links a signal, a responding compartment and a structural outcome. It is more informative than saying that a villus is “endodermal”: its epithelial covering and mesenchymal core develop in relation to each other. The mouse findings did not support simply transferring the chick model of muscle-induced epithelial folding. Mathematical reaction–diffusion modelling reproduced aspects of the pattern but did not identify every molecular component. Species and developmental stage remain part of the explanation.\n\nTry it: Predict what a merged mesenchymal-cluster pattern could change in the arrangement of emerging villi."
+        },
+        {
+          "title": "The developing human niche contains different signal sources",
+          "body": "Holloway and colleagues combined single-cell RNA profiling with spatial validation in developing human intestine. WNT2B and R-spondin signals were associated with muscularis-mucosa and fibroblast populations, while NRG1, an EGF-family ligand, was associated with a distinct subepithelial mesenchymal population. The niche is therefore not one generic cell next to a stem cell; position and signal source matter.\n\nTheir culture experiments also separated two starting conditions. Previously established EGF-grown enteroids responded differently to switching growth factors than cultures established directly from fresh crypts. Freshly established NRG1-supported cultures showed greater epithelial diversity, whereas switching established cultures did not make NRG1 a universal substitute for EGF. This is a useful mechanistic lesson: a tissue’s history can change its response to the same signal. Greater cell diversity in culture does not by itself establish normal villus architecture, mature function or a clinical therapy.\n\nTry it: Why must the starting culture condition accompany a claim that a growth factor improves differentiation?"
+        },
+        {
+          "title": "Use a human developmental atlas to connect place and cell state",
+          "body": "Fawkner-Corbett and colleagues combined single-cell and spatial measurements across developing human intestine. The study detected regional transcriptional differences before mature crypt architecture was established and mapped epithelial changes alongside changing stromal populations. This helps explain why two developing regions can look similar in a routine section while already following different molecular programmes.\n\nSingle-cell measurements distinguish cell states but lose much of the original tissue geometry; spatial measurements help restore location. Neither a computational trajectory nor a predicted ligand–receptor interaction is equivalent to observing a cell’s descendants or perturbing a pathway. Use the atlas to ask where a candidate signal and responding population occur, then identify the experiment needed to test causality. For slide study, connect the molecular proposal back to a named compartment rather than replacing anatomical identification with a list of marker names.\n\nTry it: What does a spatial expression map add to dissociated single-cell data, and what causal question remains?"
+        },
+        {
+          "title": "Marker detection and lineage tracing answer different questions",
+          "body": "Barker and colleagues used inducible genetic marking in adult mice to follow descendants of Lgr5-expressing crypt-base cells. Persistent labelled descendants across epithelial populations provide a different kind of evidence from an image showing current marker expression. Routine H&E, an expression reporter and an inherited lineage label are not interchangeable readouts. Ask when cells were marked, which descendants were followed and how long the observation lasted. This foundational result does not establish that one marker identifies every regenerative population in every injury setting or species. Relate experimental evidence to the practical slide by naming what the slide can show and what requires another method.\n\nTry it: A cell is marker-positive today. What additional evidence is needed for a claim about the cell types its descendants later produce?"
+        },
+        {
+          "title": "Renewal and injury responses need not use one exclusive cell state",
+          "body": "The classic adult-mouse Lgr5 lineage experiment establishes a contribution from marked crypt-base cells; it does not prove that all regeneration in every setting must come from one unchanged population. Huang and colleagues studied human intestinal tuft cells using reporter organoids, lineage marking, cell isolation and genetic perturbation. Under the tested conditions, tuft cells could proliferate and contribute to other epithelial lineages. The study also examined cytokine responses and regeneration after irradiation in organoids.\n\nThese observations extend the renewal model toward context-dependent plasticity. They do not make every mature epithelial cell interchangeable, and they do not demonstrate a treatment outcome in patients. Separate the human tissue observations from the functional organoid experiments. If using KIT in this study, retain the epithelial selection context: it is not a unique tuft-cell label for every cell in the whole gut wall.\n\nTry it: Why does evidence of tuft-cell plasticity qualify, rather than erase, the earlier Lgr5 lineage result?"
+        },
+        {
+          "title": "Build a defensible slide identification in four passes",
+          "body": "First, orient the section: locate the free surface, the deep mucosal boundary and any submucosa. Second, describe architecture before naming the organ: surface projections or pits, tubular crypts or glands, and the material enclosed by each circular profile. Third, combine cellular clues with position: apical secretory granules in Paneth cells near the base of a small-intestinal crypt, chief-cell polarity in a gastric gland, or mucous gland lobules below muscularis mucosae. Fourth, state the strongest identification and one reason it could be limited.\n\nFor example, villi plus crypts establish a small-intestinal pattern; demonstrating mucous glands below muscularis mucosae strengthens a duodenal interpretation. If only superficial mucosa is present, keep the broader identification. Explain function from the observed architecture, then connect the epithelial and supporting compartments to development. A complete answer contains observation, interpretation and uncertainty. It should not jump from one colour to an organ name or from a normal teaching pattern to a patient diagnosis.\n\nTry it: Give a four-sentence report for villous mucosa with a connective-tissue core and submucosal mucous glands."
         }
       ],
       "question": {
@@ -1090,12 +1156,56 @@
         "answer": "Look for villi in small intestine. Colon normally lacks villi and has closely packed crypts with abundant goblet cells; compare the whole mucosal pattern."
       },
       "related": [
-        "epithelia",
+        "histology-foundations-tissues",
         "liver-pancreas",
-        "glycolysis"
+        "foregut-development",
+        "cell-junctions"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 5
+      "updatedAt": "2026-11-05",
+      "minutes": 55,
+      "prerequisites": [
+        "microscopy",
+        "epithelia"
+      ],
+      "objectives": [
+        "Identify digestive regions using compartments, cell polarity and more than one positive clue.",
+        "Distinguish a villus, crypt, fold and microvillus, including cross-cut profiles.",
+        "Explain gastric secretory organelles and interpret stains in anatomical context.",
+        "Map gut-wall developmental contributions and distinguish regional identity from local morphogenesis.",
+        "Connect selected mouse and human experiments to renewal, signalling and model limitations."
+      ],
+      "workedExample": {
+        "title": "Identify the compartment before the region",
+        "prompt": "A section shows villi and crypts. Pale gland lobules lie below a thin smooth-muscle boundary. Explain the strongest regional interpretation and what must be checked.",
+        "solution": [
+          "Establish that the thin boundary is muscularis mucosae, not a tangentially cut part of muscularis externa.",
+          "Confirm that the pale glands are in submucosa and that the overlying mucosa has an intestinal pattern.",
+          "The combined pattern supports duodenum; gland colour alone would not establish that conclusion.",
+          "State the sampled compartments and avoid inferring disease, secretion rate or developmental lineage from this one section."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Compare a cross-cut villus with a cross-cut crypt.",
+          "answer": "A villus encloses a connective-tissue core within its epithelial covering; a crypt encloses its own lumen within an epithelial wall. The apical surface faces lumen in both, but the lumen lies on different sides of the circular profile."
+        },
+        {
+          "prompt": "Explain why gut development needs more than an endoderm label.",
+          "answer": "The epithelial lining develops with mesodermal supporting and muscular compartments and neural-crest-derived enteric circuitry. Regional specification, local mucosal morphogenesis and abdominal rotation address different processes."
+        },
+        {
+          "prompt": "How does an organoid experiment complement a human developmental atlas?",
+          "answer": "An atlas maps cell states and positions; a controlled organoid perturbation can test a proposed response within its model. Neither alone establishes all normal human developmental mechanisms or a patient treatment effect."
+        }
+      ],
+      "summaryChecklist": [
+        "Orient surface, muscularis mucosae and deeper wall before using regional clues.",
+        "Inspect the centre of a circular epithelial profile.",
+        "Relate organelles and apical–basal polarity to secretory direction.",
+        "Use staining as evidence about material, alongside architecture and controls.",
+        "Name the source, responding compartment, intervention and readout in a developmental experiment.",
+        "Keep specimen observations, model findings and clinical claims distinct."
+      ]
     },
     {
       "id": "liver-pancreas",

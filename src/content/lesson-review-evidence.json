@@ -1529,6 +1529,50 @@
       "independent": false,
       "record": "docs/reviews/system-depth-20261105.md",
       "contentSha256": "fd457fa4bf6c53b7bd2d091760f93d3a855f019116f7e2cbf1e868eb3cc97313"
+    },
+    {
+      "id": "gi-histology-editorial-gi-depth-20261105",
+      "lessonId": "gi-histology",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source review",
+      "qualification": "Automated assistant; no independent clinical certification",
+      "independent": false,
+      "record": "docs/reviews/gi-depth-20261105.md",
+      "contentSha256": "5cdd1cd48f103f8f090cbb9fd58894eb875930c357e6c9937cfe7b2b64f225bc"
+    },
+    {
+      "id": "gi-histology-visual-gi-depth-20261105",
+      "lessonId": "gi-histology",
+      "scope": "visual",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/gi-depth-20261105.md",
+      "contentSha256": "5cdd1cd48f103f8f090cbb9fd58894eb875930c357e6c9937cfe7b2b64f225bc"
+    },
+    {
+      "id": "gi-histology-accessibility-gi-depth-20261105",
+      "lessonId": "gi-histology",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/gi-depth-20261105.md",
+      "contentSha256": "5cdd1cd48f103f8f090cbb9fd58894eb875930c357e6c9937cfe7b2b64f225bc"
+    },
+    {
+      "id": "gi-histology-readability-gi-depth-20261105",
+      "lessonId": "gi-histology",
+      "scope": "readability",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered-browser review",
+      "qualification": "Automated assistant; no independent clinical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/gi-depth-20261105.md",
+      "contentSha256": "5cdd1cd48f103f8f090cbb9fd58894eb875930c357e6c9937cfe7b2b64f225bc"
     }
   ]
 }
