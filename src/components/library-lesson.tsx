@@ -1,5 +1,8 @@
 import { SystemRelationships } from "./system-relationships";
 import { HistologySectionReferences } from "./histology-section-references";
+import { LearningActivities } from "./learning-activities";
+import { NeurulationSlides } from "./neurulation-slides";
+import { activitiesForLesson } from "@/content/learning-activities";
 import { VisualStudioInvitation } from "./visual-studio-invitation";
 import { LymphoidPractical, PreparationSequence, HistologyDemonstrations } from "./histology-practical";
 import { CaseControlExplorer } from "./case-control-explorer";
@@ -262,6 +265,8 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
             <ul>{lesson.summaryChecklist.map((label, index) => <li key={label}><SavedSelfCheck id={`${lesson.id}-summary-${index + 1}`} label={label}/></li>)}</ul>
           </section>}
           </>}
+          {lesson.id === "neural-tube-development" && <NeurulationSlides />}
+          <LearningActivities activities={activitiesForLesson(lesson.id)} />
           <StudyReel key={`reel-${lesson.id}`} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
           <LessonReview lesson={journey} />
         </div>
