@@ -38,6 +38,7 @@ add("/practice/oral", "Renal physiology oral-examination practice", "Practise ei
 add("/practice/physiology", "Renal haemodynamics and blood-gas practice", "Explore afferent and efferent resistance, change ventilation and work through six blood-gas interpretation exercises.");
 add("/practice/renal-challenge", "Five-minute renal physiology challenge", "Answer five free questions on filtration, ADH and acid–base balance, then review the explanation for each answer.");
 add("/learn/topics", "Guided medical-science topic sequences", "Connect existing lessons through focused study sequences in tissue identification, membrane transport, and DNA, inheritance and gene expression.");
+add("/learn/visual-studio", "Visual study studio: explore histology", "Explore clickable lymph-node diagrams, compare organ architecture, follow slide preparation and watch three captioned visual minutes.", false, "Original visual teaching with specialist review outstanding");
 
 for (const subject of subjectInterests) {
   add(`/study/${subject.id}`, `${subject.title}: lessons and learning path`, `Start ${subject.title.toLowerCase()} with a guided lesson, then find practice, revision notes and the published topic sequence.`);

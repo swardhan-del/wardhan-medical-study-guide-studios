@@ -1,7 +1,7 @@
 {
   "version": 1,
   "baselineCommit": "cc02a695145ed205e51fe95b08507b7a5ffa727c",
-  "scope": "Owner-authorised 10 September 2026: five-volume, 120-lesson anatomy course with authored explanations and original text-based practice and identification tasks. Raw manuscripts and unreviewed STEM media remain excluded. Retained released adaptations and exact assets, plus 12 original guided lessons and source-based study navigation authorised by the owner on 9 September 2026. Complete source manuscripts and unresolved archive material remain private. Retained released adaptations and exact assets, plus the individually reviewed subject learning expansion authorised by the owner on 8 September 2026. Complete source manuscripts and unresolved archive material remain private. Native Biophysics explanations, original questions and coded models added at the owner's request on 9 September 2026; source PDF pages and images are excluded. Owner-authorised 22 September 2026: one original Phase One histology foundations lesson (histology-foundations-tissues), including text-based visual prompts, worked reasoning and original retrieval/application questions. No new source images, manuscripts or recorded media are released. Owner-authorised 23 September 2026: Phase Four subject hubs and four original free foundation lessons in physiology, biochemistry, genetics and biophysics, with explained questions and accessible HTML comparisons. Existing lessons and exact assets are preserved; no new image or recorded-media assets are released. Submit a preview and pull request for review; production release is not authorised by this change. November 3: four original, source-checked statistical foundations with fictional data; clinical and restricted-source material excluded. Release follows exact-commit browser, privacy, CI and preview verification. November 5: one original serine/glycine reaction-role lesson, explained fictional event ledgers and semantic comparison; exact source-claim review and local render checks completed. No source documents or images added. Production remains gated by protected CI and exact-preview verification under the owner-authorised recurring release cycle. November5:original lung-observation reasoning augments the existing thoracic-development lesson. Original source documents/images remain excluded; related learning links preserve one print home per lesson. Publication follows scoped audit,full CI and exact-preview/production verification. November5: one original pentose-phosphate reaction-ledger lesson, invented molecule counts, explained questions and original comparison. Scoped source/rights and actual local dev visual/accessibility review completed. No source document/image or additional downloadable asset. Production release remains gated by full CI and exact hosted preview/production verification.",
+  "scope": "Owner-authorised 10 September 2026: five-volume, 120-lesson anatomy course with authored explanations and original text-based practice and identification tasks. Raw manuscripts and unreviewed STEM media remain excluded. Retained released adaptations and exact assets, plus 12 original guided lessons and source-based study navigation authorised by the owner on 9 September 2026. Complete source manuscripts and unresolved archive material remain private. Retained released adaptations and exact assets, plus the individually reviewed subject learning expansion authorised by the owner on 8 September 2026. Complete source manuscripts and unresolved archive material remain private. Native Biophysics explanations, original questions and coded models added at the owner's request on 9 September 2026; source PDF pages and images are excluded. Owner-authorised 22 September 2026: one original Phase One histology foundations lesson (histology-foundations-tissues), including text-based visual prompts, worked reasoning and original retrieval/application questions. No new source images, manuscripts or recorded media are released. Owner-authorised 23 September 2026: Phase Four subject hubs and four original free foundation lessons in physiology, biochemistry, genetics and biophysics, with explained questions and accessible HTML comparisons. Existing lessons and exact assets are preserved; no new image or recorded-media assets are released. Submit a preview and pull request for review; production release is not authorised by this change. November 3: four original, source-checked statistical foundations with fictional data; clinical and restricted-source material excluded. Release follows exact-commit browser, privacy, CI and preview verification. November 5: one original serine/glycine reaction-role lesson, explained fictional event ledgers and semantic comparison; exact source-claim review and local render checks completed. No source documents or images added. Production remains gated by protected CI and exact-preview verification under the owner-authorised recurring release cycle. November5:original lung-observation reasoning augments the existing thoracic-development lesson. Original source documents/images remain excluded; related learning links preserve one print home per lesson. Publication follows scoped audit,full CI and exact-preview/production verification. November5: one original pentose-phosphate reaction-ledger lesson, invented molecule counts, explained questions and original comparison. Scoped source/rights and actual local dev visual/accessibility review completed. No source document/image or additional downloadable asset. Production release remains gated by full CI and exact hosted preview/production verification. November 5: owner-requested original visual study studio: nine programmed schematic images, one generated conceptual cover, and three silent captioned reels with three posters and three caption files. Source-specific review is recorded in docs/reviews/visual-studio-20261105.md. No atlas or source-document images are reproduced; existing assets and lesson identifiers are preserved. Normal exact-head CI and hosted verification remain release gates.",
   "resourceIds": [
     "anatomy-abdomen",
     "anatomy-embryology",
@@ -1175,6 +1175,101 @@
       "sha256": "a9743a478dc7ed23fdc65cf5f80edb6f87a51c4ebaff61a9ce45679fe3bfcf5c",
       "bytes": 10980,
       "evidence": "docs/SUBJECT_LEARNING_RELEASE_2026-09-08.md"
+    },
+    {
+      "path": "media/visual-studio/node-routes-poster.png",
+      "bytes": 104164,
+      "sha256": "6e571387d55d2ad6fb6c5935fddc9fb52c540b30b10410fc408b3c3b7545423e"
+    },
+    {
+      "path": "media/visual-studio/node-routes.mp4",
+      "bytes": 262596,
+      "sha256": "e2b9b7c30d028793877160d11503c4fde32c64813b8807190c8d197336184de1"
+    },
+    {
+      "path": "media/visual-studio/node-routes.vtt",
+      "bytes": 633,
+      "sha256": "12db870dd63535983f10562b70aae538be73374b1f8088d8c2bd7a7a971bbedf"
+    },
+    {
+      "path": "media/visual-studio/node.svg",
+      "bytes": 1825,
+      "sha256": "3928280846d4119382ca71ed01acf3041d12f3b4aa5293514fc5f6db0008376d"
+    },
+    {
+      "path": "media/visual-studio/organ-patterns-poster.png",
+      "bytes": 109410,
+      "sha256": "c5d65717be62774cd6d27b74b570e947de4106d8faee66f9d52af7f464b7143a"
+    },
+    {
+      "path": "media/visual-studio/organ-patterns.mp4",
+      "bytes": 184357,
+      "sha256": "d94ff3544a967466732ea28d0bb8a65a71a9ce04a3aaf8d134168fcad828e734"
+    },
+    {
+      "path": "media/visual-studio/organ-patterns.vtt",
+      "bytes": 574,
+      "sha256": "541bfaacdb3b09e3148af8009f0f2bef8e23fbb6b7fd707da4ca281a42dc4f8c"
+    },
+    {
+      "path": "media/visual-studio/slide-0.svg",
+      "bytes": 521,
+      "sha256": "6785f762262e61c515483ef922cbaf0447b8f6731a2f11e647d8056dd829523d"
+    },
+    {
+      "path": "media/visual-studio/slide-1.svg",
+      "bytes": 484,
+      "sha256": "365e44d8f3a8fe63d327a08e0c17a45468d1045845c8f5b8db6506ed75137305"
+    },
+    {
+      "path": "media/visual-studio/slide-2.svg",
+      "bytes": 569,
+      "sha256": "82ad8efe9c228fa04c0322e71e373a9115c2cb8fc2722a43be0afcb1f55bba01"
+    },
+    {
+      "path": "media/visual-studio/slide-3.svg",
+      "bytes": 557,
+      "sha256": "5a3f103c8971a8542411b9bb17974edbd960d8a94bb37b9cbec35e5433103ff2"
+    },
+    {
+      "path": "media/visual-studio/slide-4.svg",
+      "bytes": 1410,
+      "sha256": "4cff25a47dd2c99b108b8209ec3e9d5bed04ae943befe0671fe125e3df8ccaf3"
+    },
+    {
+      "path": "media/visual-studio/slide-5.svg",
+      "bytes": 1413,
+      "sha256": "cb6a991deae9efc710575dcf1793779f088529083050adc1ebb74712fcbdbe0f"
+    },
+    {
+      "path": "media/visual-studio/slide-journey-poster.png",
+      "bytes": 87959,
+      "sha256": "d4c06343ff4d2b43f2584980ea9b953e824567ba7d2916b73b250576f44046a3"
+    },
+    {
+      "path": "media/visual-studio/slide-journey.mp4",
+      "bytes": 248026,
+      "sha256": "53d413b91f6ff4f06bd6102dd43f5015efe86297e016df75af298141971bf100"
+    },
+    {
+      "path": "media/visual-studio/slide-journey.vtt",
+      "bytes": 1457,
+      "sha256": "f878a74ad0cc5f595434bf91eb7236d9ca66954f662e7b053cd0ec8e0b06365a"
+    },
+    {
+      "path": "media/visual-studio/spleen.svg",
+      "bytes": 2115,
+      "sha256": "68f02ede70b057e2a0229d53a3b34edb782ae7c3d34827b9937aaa3e0152a229"
+    },
+    {
+      "path": "media/visual-studio/studio-cover.webp",
+      "bytes": 106176,
+      "sha256": "aef0252b6af98211883fa87d0c8f9798c320bfb9d4b1f418ee1b37b138d966c4"
+    },
+    {
+      "path": "media/visual-studio/thymus.svg",
+      "bytes": 1083,
+      "sha256": "d2d7165109312933e845a359f408e00bcbfefdb5a3befe108c266dfb57f8c932"
     }
   ],
   "videoIds": [
