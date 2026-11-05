@@ -3495,6 +3495,51 @@
       ],
       "figureIds": [],
       "rationale": "Original token-procedure comparison; no source image/data. Actual native render review pending."
+    },
+    {
+      "id": "thyroid-parathyroid-pattern-reasoning",
+      "route": "/library/thyroid-parathyroid-pattern-reasoning",
+      "title": "Thyroid and parathyroid: compare tissue patterns",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "thyroid-parathyroid-compartment-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "Original semantic tissue-role comparison with full text; no source image, measured dataset or patient specimen. Actual native render review pending."
+    },
+    {
+      "id": "adrenal-layers-signals-reasoning",
+      "route": "/library/adrenal-layers-signals-reasoning",
+      "title": "Adrenal gland: layers, products and signals",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "adrenal-position-product-control"
+      ],
+      "figureIds": [],
+      "rationale": "Original semantic tissue-role comparison with full text; no source image, measured dataset or patient specimen. Actual native render review pending."
+    },
+    {
+      "id": "pituitary-glandular-neural-orientation",
+      "route": "/library/pituitary-glandular-neural-orientation",
+      "title": "Pituitary tissue: glandular and neural regions",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "pituitary-region-cell-role"
+      ],
+      "figureIds": [],
+      "rationale": "Original semantic tissue-role comparison with full text; no source image, measured dataset or patient specimen. Actual native render review pending."
     }
   ]
 }

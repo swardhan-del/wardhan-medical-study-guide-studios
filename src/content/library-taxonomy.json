@@ -3049,6 +3049,39 @@
       "resources": [
         "genetic-drift-sampling-model"
       ]
+    },
+    {
+      "id": "topic-thyroid-parathyroid-pattern-reasoning",
+      "title": "Thyroid and parathyroid: compare tissue patterns",
+      "description": "Trace epithelial boundaries, colloid and cellular endocrine organization, then keep compartment and hormone-readout questions separate.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "thyroid-parathyroid-pattern-reasoning"
+      ]
+    },
+    {
+      "id": "topic-adrenal-layers-signals-reasoning",
+      "title": "Adrenal gland: layers, products and signals",
+      "description": "Orient cortex and medulla, separate regional product/control questions, and use a declared geometry exercise to explain why section width is not gland volume.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "adrenal-layers-signals-reasoning"
+      ]
+    },
+    {
+      "id": "topic-pituitary-glandular-neural-orientation",
+      "title": "Pituitary tissue: glandular and neural regions",
+      "description": "Compare tissue regions, resolve a many-to-one staining classification, and keep producing neurons, terminals and supporting glia distinct.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "pituitary-glandular-neural-orientation"
+      ]
     }
   ]
 }
