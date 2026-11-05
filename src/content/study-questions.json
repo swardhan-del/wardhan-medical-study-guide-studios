@@ -2384,6 +2384,75 @@
         }
       ],
       "answer": 1
+    },
+    {
+      "id": "studio-serine-gross-net-events",
+      "topic": "serine-one-carbon-donor-carrier-cofactor",
+      "subject": "biochemistry",
+      "title": "Separate gross events from net change",
+      "href": "/library/serine-one-carbon-donor-carrier-cofactor#studio-practice",
+      "prompt": "A fictional isolated ledger specifies 100 forward and 70 reverse SHMT reaction events, sufficient reactants and no side reactions. Which accounting statement follows?",
+      "options": [
+        {
+          "text": "170 net forward events",
+          "explanation": "Adding both directions gives gross events. Reverse events oppose the forward net change."
+        },
+        {
+          "text": "170 total defined events and 30 net forward events",
+          "explanation": "Total events add 100 + 70; their opposing net changes subtract 100 − 70. Neither number is a measured cellular rate or concentration."
+        },
+        {
+          "text": "70 net reverse events",
+          "explanation": "That omits the 100 specified forward events. The defined difference is 30 forward."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "studio-serine-cofactor-and-reaction",
+      "topic": "serine-one-carbon-donor-carrier-cofactor",
+      "subject": "biochemistry",
+      "title": "Read the reaction before its cofactor label",
+      "href": "/library/serine-one-carbon-donor-carrier-cofactor#studio-practice",
+      "prompt": "A student recognises PLP in the stated SHMT context and concludes that the written reaction must transfer an amino group and directly produce urea. Which correction is justified?",
+      "options": [
+        {
+          "text": "Every PLP-associated reaction has identical net products",
+          "explanation": "A shared catalytic cofactor does not make two different reaction equations identical."
+        },
+        {
+          "text": "Amino-acid participation alone proves nitrogen has left the body",
+          "explanation": "Participation in a reaction is not excretion. The equation does not state that nitrogen has left the system."
+        },
+        {
+          "text": "Read the named reaction and its products; the cofactor name alone does not establish that claim",
+          "explanation": "The stated serine/folate relationship names glycine and the folate-bound carbon unit. Urea is not a product in that net equation."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "studio-serine-research-context",
+      "topic": "serine-one-carbon-donor-carrier-cofactor",
+      "subject": "biochemistry",
+      "title": "Keep the study context attached",
+      "href": "/library/serine-one-carbon-donor-carrier-cofactor#studio-practice",
+      "prompt": "The cited structural abstract describes a particular ligand-bound murine SHMT complex. Which conclusion stays within the evidence?",
+      "options": [
+        {
+          "text": "Identify the organism, ligand and experimental state before relating it to the separately written reaction",
+          "explanation": "The structural complex and the reaction equation answer different questions; their folate names and contexts must remain distinct."
+        },
+        {
+          "text": "The structure alone measures net reaction flux in a human tissue",
+          "explanation": "A ligand-bound mouse-enzyme structure is not a human tissue-flux measurement."
+        },
+        {
+          "text": "The bound formyl-folate name can replace the methylene-folate product name everywhere",
+          "explanation": "The different chemical forms are not interchangeable labels."
+        }
+      ],
+      "answer": 0
     }
   ]
 }

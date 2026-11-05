@@ -3368,6 +3368,21 @@
       "visualIds": [],
       "figureIds": [],
       "rationale": "All variable/constant labels and transitions are explicit in readable text, including a fixed light-chain assumption and original worked endpoint reasoning. No source image, actual immune sequence or measured-affinity claim."
+    },
+    {
+      "id": "serine-one-carbon-donor-carrier-cofactor",
+      "route": "/library/serine-one-carbon-donor-carrier-cofactor",
+      "title": "Serine and glycine: donor, carrier and cofactor",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "serine-reaction-roles"
+      ],
+      "figureIds": [],
+      "rationale": "Original semantic comparison and nine-part explanation inspected on desktop/mobile, with keyboard text alternative, no Axe violations in the tested state and no page overflow at 320px/200% text. No source molecular diagram or measured data reproduced."
     }
   ]
 }
