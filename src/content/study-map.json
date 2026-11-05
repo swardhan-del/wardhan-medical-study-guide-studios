@@ -1610,7 +1610,7 @@
         },
         {
           "id": "genetics-immunology-22-14",
-          "title": "Antigen presentation and MHC",
+          "title": "Antigen presentation and bounded T-cell input/readout comparisons",
           "href": "/library/antigen-presentation",
           "status": "introduction-available"
         },
@@ -2895,13 +2895,19 @@
       "id": "genetics-population-counts",
       "subject": "genetics",
       "title": "Population counting and model assumptions",
-      "sourceLabel": "Original fictional count-model introduction; not a complete population-genetics course",
+      "sourceLabel": "Original fictional count and sampling models; not a complete population-genetics course",
       "sourceId": "allele-count-models-20261105",
       "topics": [
         {
           "id": "allele-and-genotype-counts",
           "title": "Allele copies and genotypes: count the denominators",
           "href": "/library/allele-and-genotype-counts",
+          "status": "introduction-available"
+        },
+        {
+          "id": "genetic-drift-sampling-model",
+          "title": "Genetic drift: compare two sampling procedures",
+          "href": "/library/genetic-drift-sampling-model",
           "status": "introduction-available"
         }
       ]

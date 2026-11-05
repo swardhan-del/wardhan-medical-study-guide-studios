@@ -1834,6 +1834,140 @@
       "referenceIds": [
         "fatty-acid-oxidation-compartment-route"
       ]
+    },
+    {
+      "id": "token-sampling-replacement-comparison",
+      "lessonIds": [
+        "genetic-drift-sampling-model"
+      ],
+      "kind": "comparison",
+      "title": "Same mean, different sampling distributions",
+      "headers": [
+        "Five-draw procedure",
+        "Expected A count",
+        "Variance of the A count"
+      ],
+      "rows": [
+        [
+          "Uniform without replacement",
+          "3",
+          "2/3"
+        ],
+        [
+          "Independent draws with replacement",
+          "3",
+          "6/5"
+        ]
+      ],
+      "caption": "Invented six-A/four-a labelled-token models. Variance concerns the count, not a clinical risk or a claim about a real population.",
+      "observe": "Explain how equal means coexist with different variances, and identify which procedure changes the remaining composition after a draw.",
+      "alt": "Both token procedures have expected A count three. Without replacement the count variance is two thirds; with replacement it is six fifths.",
+      "referenceIds": [
+        "genetic-drift-sampling-model"
+      ]
+    },
+    {
+      "id": "rna-exon-functional-partitions",
+      "lessonIds": [
+        "rna-processing"
+      ],
+      "kind": "comparison",
+      "title": "Retained exons and functional regions are separate",
+      "headers": [
+        "Exon in the long RNA",
+        "5′ UTR / coding interval / 3′ UTR (nt)",
+        "What the annotation shows"
+      ],
+      "rows": [
+        [
+          "A: 1–80",
+          "80 / 0 / 0",
+          "Retained but entirely 5′ UTR"
+        ],
+        [
+          "B: 81–200",
+          "20 / 100 / 0",
+          "Only part of the exon is coding interval"
+        ],
+        [
+          "C: 201–360",
+          "0 / 80 / 80",
+          "Coding interval and 3′ UTR share this exon"
+        ]
+      ],
+      "caption": "Invented mature-RNA coordinates. Coding interval 101–280 includes the stipulated stop 278–280; no actual gene sequence or poly(A) tail is supplied.",
+      "observe": "Add the three functional contributions within each retained exon, then explain why exon length and translated length are not interchangeable.",
+      "alt": "A contributes 80 nucleotides of 5′ UTR. B contributes 20 of 5′ UTR and 100 of coding interval. C contributes 80 of coding interval and 80 of 3′ UTR.",
+      "referenceIds": [
+        "rna-processing"
+      ]
+    },
+    {
+      "id": "rna-terminal-site-retention",
+      "lessonIds": [
+        "rna-processing"
+      ],
+      "kind": "comparison",
+      "title": "Two terminal sites with the same stipulated coding interval",
+      "headers": [
+        "Cleavage boundary",
+        "Retained 3′ UTR and total before tail",
+        "Feature X 341–350"
+      ],
+      "rows": [
+        [
+          "After 320",
+          "281–320: 40 nt UTR; 320 nt total",
+          "Not retained"
+        ],
+        [
+          "After 360",
+          "281–360: 80 nt UTR; 360 nt total",
+          "Retained"
+        ]
+      ],
+      "caption": "Both fictional isoforms retain coding interval 101–280. This is a tandem-UTR example, not every alternative-polyadenylation outcome.",
+      "observe": "Identify the 40-position retention difference without turning it into an assumed binding event or expression effect.",
+      "alt": "The proximal RNA retains 40 nucleotides of 3′ UTR and excludes feature X. The distal retains 80 and includes X; no protein output is given.",
+      "referenceIds": [
+        "rna-processing"
+      ]
+    },
+    {
+      "id": "tcell-input-readout-context",
+      "lessonIds": [
+        "antigen-presentation"
+      ],
+      "kind": "comparison",
+      "title": "Record the input separately from the observed endpoint",
+      "headers": [
+        "Question",
+        "Input or observation to record",
+        "Limit of that record"
+      ],
+      "rows": [
+        [
+          "Recognition",
+          "Presented peptide–MHC and receiving T-cell population",
+          "Does not specify every contextual input"
+        ],
+        [
+          "Co-stimulation",
+          "Available CD28 interaction and which other inputs match",
+          "A two-input contrast does not isolate one contribution"
+        ],
+        [
+          "Response",
+          "Named endpoint, observation window and assay scope",
+          "Does not substitute for every later outcome"
+        ]
+      ],
+      "caption": "Original comparison framework. It contains no simulated biological response, source figure, clinical threshold or measured dataset.",
+      "observe": "Choose a response claim, then identify the input comparison, readout and timing needed to support it. Keep unknown fields unknown.",
+      "alt": "Recognition, co-stimulation and response are recorded separately. A matched input label is not evidence for every downstream endpoint or a universal biological outcome.",
+      "referenceIds": [
+        "antigen-presentation"
+      ]
     }
   ]
 }

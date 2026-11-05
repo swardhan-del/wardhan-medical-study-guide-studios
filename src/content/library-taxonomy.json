@@ -532,7 +532,7 @@
     {
       "id": "topic-rna-processing",
       "title": "From pre-mRNA to mature messenger RNA",
-      "description": "Connect capping, splicing and polyadenylation to the structure and use of an RNA message.",
+      "description": "Connect RNA maturation to a fictional coordinate map: separate exon membership from coding annotation, follow a split codon, and compare two terminal cleavage sites without inferring protein output.",
       "subject": "cell-biology",
       "parentId": "cell-biology-molecular-mechanisms",
       "kind": "topic",
@@ -722,7 +722,7 @@
     {
       "id": "topic-antigen-presentation",
       "title": "MHC I, MHC II and T-cell recognition",
-      "description": "Keep the presenting cell, peptide source and recognizing T cell distinct.",
+      "description": "Keep peptide presentation and T-cell recognition distinct, then compare co-stimulatory inputs, assay readouts and timing without turning one experiment into a universal activation rule.",
       "subject": "immunology",
       "parentId": "immunology-immune-responses",
       "kind": "topic",
@@ -3037,6 +3037,17 @@
       "kind": "topic",
       "resources": [
         "fatty-acid-oxidation-compartment-route"
+      ]
+    },
+    {
+      "id": "topic-genetic-drift-sampling-model",
+      "title": "Genetic drift: compare two sampling procedures",
+      "description": "Separate the A fraction in one invented draw from the probability of that draw, then compare procedures with the same mean and different count variance.",
+      "subject": "genetics",
+      "parentId": "genetics-inheritance",
+      "kind": "topic",
+      "resources": [
+        "genetic-drift-sampling-model"
       ]
     }
   ]

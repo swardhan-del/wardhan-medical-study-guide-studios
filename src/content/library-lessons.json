@@ -1376,7 +1376,7 @@
       "id": "rna-processing",
       "subject": "cell-biology",
       "title": "From pre-mRNA to mature messenger RNA",
-      "summary": "Connect capping, splicing and polyadenylation to the structure and use of an RNA message.",
+      "summary": "Connect RNA maturation to a fictional coordinate map: separate exon membership from coding annotation, follow a split codon, and compare two terminal cleavage sites without inferring protein output.",
       "tags": [
         "Molecular mechanisms",
         "RNA",
@@ -1398,6 +1398,30 @@
         {
           "title": "Finish and use the message",
           "body": "Most eukaryotic mRNAs undergo 3′ cleavage and polyadenylation, then quality-controlled export and translation. The 5′ and 3′ untranslated regions participate in regulation even though ribosomes do not translate them into the protein sequence."
+        },
+        {
+          "title": "Declare the coordinate system before adding lengths",
+          "body": "The following map is invented mature RNA, not genomic coordinates or a named gene. In the long isoform, exon A occupies 1–80, B 81–200 and C 201–360, with one-based inclusive endpoints. Stipulate initiation at 101, translated positions 101–277 and the terminal stop at 278–280, with no internal stop or alternative initiation. The named coding interval 101–280 includes the stop by convention for this exercise; real annotation conventions and actual sequence must be checked separately."
+        },
+        {
+          "title": "Count retained exons and functional regions separately",
+          "body": "An inclusive interval a–b has b−a+1 positions. Exon B is 120 nucleotides long, but only 81–100 contributes to the 5′ UTR: 20 nucleotides. Its 101–200 contribution to the declared coding interval is 100 nucleotides. Exon C contributes 80 coding-interval nucleotides and 80 nucleotides of 3′ UTR. Exon A contributes 80 nucleotides entirely to the 5′ UTR. Retention in mature RNA and translation annotation answer different questions."
+        },
+        {
+          "title": "Cross a splice junction without restarting the reading frame",
+          "body": "With initiation stipulated at 101, codon 34 occupies 200, 201 and 202. The first position lies in exon B and the other two in exon C. These positions are adjacent in the mature RNA because the intron has already been removed. A 100-base per-exon coding contribution need not be divisible by three: the reading frame can continue across the exon boundary. No actual amino-acid identity or protein-domain boundary is supplied by this coordinate map."
+        },
+        {
+          "title": "Count translated triplets and the stipulated stop differently",
+          "body": "Positions 101–277 contain 177 nucleotides, corresponding to 59 translated triplets under the stated assumptions. The next three positions 278–280 are the stipulated stop. Thus the 180-position stop-inclusive coding interval does not mean 60 amino-acid residues. This is arithmetic on explicit annotations, not a claim that an unprovided real sequence has that start, stop or protein product."
+        },
+        {
+          "title": "Compare two cleavage boundaries after the same coding interval",
+          "body": "In a stipulated tandem-UTR comparison, the proximal transcript ends after 320 and the distal after 360. Both retain the shared coding interval 101–280. Their 3′ UTRs are 281–320 and 281–360: 40 and 80 nucleotides respectively. Exon C ends at 320 in the proximal isoform rather than 360. Total lengths before an added poly(A) tail are 320 and 360; no tail length is specified or included. Other site choices can change coding sequence and are outside this example."
+        },
+        {
+          "title": "Keep sequence retention separate from measured function",
+          "body": "Feature X occupies 341–350 in this fictional map, so only the distal isoform retains it. A feature label does not demonstrate microRNA/protein binding, transcript stability, translation rate or protein quantity. Sandberg and colleagues studied alternative 3′ ends and reporter consequences in specific cell contexts; those experiments are evidence to examine, not a universal shorter-UTR-to-more-protein rule. Our map contains none of their expression measurements and supplies no prediction for a person or named gene."
         }
       ],
       "question": {
@@ -1427,8 +1451,51 @@
         "dna-repair",
         "genetic-testing"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-05",
+      "minutes": 22,
+      "objectives": [
+        "Retain the existing capping, splicing and cleavage/polyadenylation introduction.",
+        "Calculate inclusive exon and untranslated-region lengths in a declared mature-RNA model.",
+        "Follow a codon across a joined exon boundary.",
+        "Separate a stop-inclusive coding interval from amino-acid count.",
+        "Compare terminal-site sequence retention with evidence of biological function."
+      ],
+      "prerequisites": [
+        "genetics-genome-foundations"
+      ],
+      "workedExample": {
+        "title": "Annotate exon B, then change only the terminal boundary",
+        "prompt": "Use the declared long mature RNA A 1–80/B 81–200/C 201–360, coding interval 101–280 including stop 278–280, and a proximal boundary after 320. Count exon B components, locate codon 34 and compare proximal/distal 3′ UTR retention.",
+        "solution": [
+          "Exon B length is 200−81+1=120. Its 5′ UTR contribution 81–100 is 20; its coding-interval contribution 101–200 is 100.",
+          "The 34th codon starts at 101+3×33=200, so 200 is in B and 201–202 in C. The joined mature RNA remains continuous.",
+          "Translated positions 101–277 total 177, giving 59 translated triplets. The terminal stop adds three positions to the declared coding interval, not another amino-acid residue.",
+          "Proximal 3′ UTR 281–320 has 40 positions; distal 281–360 has 80. Both retain the same stipulated coding interval.",
+          "Feature X 341–350 is absent proximally and retained distally. This membership result does not establish binding or protein output; the tail remains uncounted."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why is exon B neither entirely untranslated nor entirely coding in this map?",
+          "answer": "Its retained interval 81–200 crosses the stipulated initiation boundary. Twenty positions are 5′ UTR and 100 belong to the coding interval; exon membership does not determine functional annotation."
+        },
+        {
+          "prompt": "Why need the coding portion of one exon not contain an integer number of codons?",
+          "answer": "The mature-RNA frame continues across joined exons. This stipulated codon 34 uses the final B position and the first two C positions."
+        },
+        {
+          "prompt": "Does a change in terminal cleavage site require a different protein sequence?",
+          "answer": "Not in this stipulated shared-coding-interval example. Other alternative-site choices can change coding sequence; no universal protein-output conclusion follows."
+        }
+      ],
+      "summaryChecklist": [
+        "Specify mature versus genomic coordinates and inclusive endpoints.",
+        "Separate retained exon membership from functional annotation.",
+        "Follow the reading frame across joined exon boundaries.",
+        "State whether the coding interval includes the stop triplet.",
+        "Exclude the unprovided poly(A)-tail length.",
+        "Distinguish retained sequence features from measured function."
+      ]
     },
     {
       "id": "translation",
@@ -2234,7 +2301,7 @@
       "id": "antigen-presentation",
       "subject": "genetics",
       "title": "MHC I, MHC II and T-cell recognition",
-      "summary": "Keep the presenting cell, peptide source and recognizing T cell distinct.",
+      "summary": "Keep peptide presentation and T-cell recognition distinct, then compare co-stimulatory inputs, assay readouts and timing without turning one experiment into a universal activation rule.",
       "tags": [
         "Immunology",
         "MHC",
@@ -2257,6 +2324,30 @@
         {
           "title": "Add activation context",
           "body": "Recognition alone is not the complete naive-T-cell activation program. Co-stimulation and cytokines help determine the response. Cross-presentation also allows some extracellular material to enter class I presentation, so peptide source rules need appropriate qualification."
+        },
+        {
+          "title": "Name the partners rather than relying on signal numbers",
+          "body": "For the conventional comparison, place peptide–MHC on the presenting side and the T-cell receptor on the receiving side. CD80/B7-1 or CD86/B7-2 can engage CD28 as a separate co-stimulatory interaction. Receptor/ligand names describe an interaction, not an identical biological response in every context. Showing the same peptide–MHC does not by itself establish that the co-stimulatory setting is unchanged."
+        },
+        {
+          "title": "Isolate a stated input within a fictional comparison",
+          "body": "Compare the same T-cell population with the same presented peptide–MHC, soluble environment and observation time, while available CD28 co-stimulation differs. That is a single-input contrast by design. If presentation and co-stimulation both change, their contributions are not isolated. A label saying constant is not experimental proof that an input was actually constant; appropriate measurements and controls still matter."
+        },
+        {
+          "title": "Attach a readout and time to the word activation",
+          "body": "Early intracellular calcium, IL-2 secretion, division and later differentiation are different endpoints. A diagram labelled activation does not specify which one was measured or when. Record the readout and observation window beside the conditions. A larger early calcium response alone does not establish larger output for every later cytokine or a universal rank order of activation."
+        },
+        {
+          "title": "Read the experimental preparation with the result",
+          "body": "Xia and colleagues used naive CD4 cells from 3A9 TCR-transgenic mice and engineered COS-7 presenting cells expressing mouse MHC II, with or without B7-1. In a selected contrast, lower peptide plus CD28 co-stimulation gave a weaker calcium response but greater IL-2 secretion than higher peptide without that co-stimulation. Both peptide input and co-stimulatory context differ in that contrast: it illustrates non-interchangeable readouts, not an isolated single-input causal estimate. No human threshold or clinical prediction follows."
+        },
+        {
+          "title": "Do not replace unknown context with a negative result",
+          "body": "If an exercise reports peptide presentation but does not report co-stimulation, record that context as unknown rather than experimentally absent. Likewise, an assay result below a stated detection threshold applies to that readout and observation window; it does not show that every downstream response is absent. Specify what was tested before assigning a cell-state label."
+        },
+        {
+          "title": "Use a structured comparison without promising an outcome",
+          "body": "State the cell population, presentation setting, co-stimulation, soluble environment, endpoint and timing. These fields organize an experiment; filling them in does not produce a guaranteed biological outcome. The conventional recognition introduction remains useful, while the extension asks what evidence a particular comparison actually supplies. It is not a method for diagnosing immune deficiency or choosing treatment."
         }
       ],
       "question": {
@@ -2286,8 +2377,51 @@
         "lymphoid-organs",
         "protein-trafficking"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 5
+      "updatedAt": "2026-11-05",
+      "minutes": 20,
+      "objectives": [
+        "Retain the existing conventional class I/class II recognition introduction.",
+        "Name the presenting and receiving partners in a co-stimulatory comparison.",
+        "Distinguish a controlled input comparison from a contrast changing several inputs.",
+        "Keep early calcium and later secretion endpoints attached to their observation settings.",
+        "Separate unreported context from experimentally absent input or an assay-negative result."
+      ],
+      "prerequisites": [
+        "innate-adaptive"
+      ],
+      "workedExample": {
+        "title": "Controlled input, changed readout or missing information?",
+        "prompt": "Three fictional records use the same named naive T-cell population. A and B have matched presented peptide–MHC, soluble setting and early observation window, but different available CD28 interaction. C reports peptide presentation and an early calcium readout without stating co-stimulation. What can be compared?",
+        "solution": [
+          "A versus B isolates the stated CD28-input difference within the fictional design. It does not supply a measured biological effect unless a response is reported.",
+          "C has unreported co-stimulation. Do not convert omission into an experimentally absent interaction.",
+          "An early calcium result belongs to that readout and window; later IL-2 secretion or division needs separate evidence.",
+          "A primary-paper contrast that changes peptide and co-stimulation together is not the same single-input design as A versus B.",
+          "No record establishes a universal human activation threshold, immune diagnosis or treatment choice."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why is matched peptide–MHC not enough to declare two activation contexts identical?",
+          "answer": "It specifies one interaction. Co-stimulation, cell population, soluble environment and measurement conditions can differ and must be named or measured separately."
+        },
+        {
+          "prompt": "Why does the selected Xia contrast not isolate only the co-stimulatory contribution?",
+          "answer": "Its peptide input also differs. It can illustrate distinct calcium and secretion outcomes under its conditions without identifying one changed input as the sole cause."
+        },
+        {
+          "prompt": "How does an unreported co-stimulatory setting differ from an assay-negative result?",
+          "answer": "The first is missing contextual information. The second is a result for a named measurement and threshold; neither automatically establishes absence of all downstream responses."
+        }
+      ],
+      "summaryChecklist": [
+        "Name both the presenting and receiving partners.",
+        "Specify which input changes and which are stipulated constant.",
+        "Keep cell population, endpoint and observation window with the result.",
+        "Distinguish unreported context from experimentally absent input.",
+        "Do not substitute one early signal for every later outcome.",
+        "Retain the experiment’s species and engineered-cell limits."
+      ]
     },
     {
       "id": "complement",
@@ -10344,6 +10478,122 @@
         "lipid-metabolism",
         "ketone-production-and-use",
         "pdh-tca"
+      ]
+    },
+    {
+      "id": "genetic-drift-sampling-model",
+      "subject": "genetics",
+      "title": "Genetic drift: compare two sampling procedures",
+      "summary": "Separate the A fraction in one invented draw from the probability of that draw, then compare procedures with the same mean and different count variance.",
+      "tags": [
+        "Genetics",
+        "Sampling",
+        "Genetic drift",
+        "Model assumptions"
+      ],
+      "source": "original-token-sampling-models",
+      "section": "Population models: sampling units and procedure assumptions",
+      "updatedAt": "2026-11-05",
+      "minutes": 18,
+      "objectives": [
+        "Count equally likely labelled subsets separately from token composition.",
+        "Calculate a conditional probability after one token is removed.",
+        "Explain why an expected count need not occur in one experiment.",
+        "Compare count distributions when the replacement rule changes.",
+        "State why a bag model does not establish biological advantage or population history."
+      ],
+      "prerequisites": [
+        "allele-and-genotype-counts"
+      ],
+      "steps": [
+        {
+          "title": "Reuse the allele-counting introduction and ask a new question",
+          "body": "The existing allele/genotype lesson distinguishes counted copies from people and observations from pairing assumptions. Here the task is different: can equal-chance sampling change the fraction in a selected group? Genetic drift concerns chance-associated allele-frequency change across generations. Our finite bag demonstrates a sampling mechanism; it does not reconstruct a biological population."
+        },
+        {
+          "title": "Define a fresh five-token experiment",
+          "body": "Use ten distinct labels: six carry A and four carry a. Every token has the same chance of selection. Begin each five-token experiment with that full bag. Within the first procedure, draw uniformly without replacement. The labels distinguish otherwise similar tokens so that equally likely subsets can be counted; they supply no genotype, dominance relationship or reproductive advantage."
+        },
+        {
+          "title": "Separate a realized fraction from the probability of a composition",
+          "body": "Suppose one five-token draw contains four A tokens. Its A fraction is 4/5, compared with 6/10 in the starting bag. The probability of that composition is a different quantity: choose four of the six A labels and one of the four a labels, giving C(6,4) × C(4,1) = 60 favourable subsets. There are C(10,5) = 252 equally likely five-label subsets, so the probability is 60/252 = 5/21. Neither denominator is interchangeable with the other."
+        },
+        {
+          "title": "Read the whole distribution before calling a count expected",
+          "body": "Across the 252 subsets, A counts 1, 2, 3, 4, 5 occur in 6, 60, 120, 60, 6 subsets respectively. Zero A is impossible because only four a tokens exist. Weighting each count by its fraction of subsets gives expected A count three. The expected sample fraction is 3/5. An individual draw can contain four A without contradicting that expectation; every new experiment resets the full bag before drawing."
+        },
+        {
+          "title": "Let the first draw change the next probability",
+          "body": "Inside one without-replacement experiment, drawing A first leaves five A among nine tokens. The next A probability is 5/9, not the initial 6/10. If a was removed first, six A remain among nine instead. The outcome history changes the remaining composition. A fixed starting fraction does not make these successive draws independent."
+        },
+        {
+          "title": "Keep the mean and uncertainty separate",
+          "body": "For a second procedure, return and mix each token before drawing again. Five independent draws then each have A probability 3/5; their A count is binomial. Its expected count is still three, but its count variance is 6/5 rather than the without-replacement value 2/3. Variance here is the probability-weighted squared distance of the count from its mean, not the observed A fraction or a probability of biological benefit. Equal means do not establish identical distributions."
+        },
+        {
+          "title": "Stop the analogy at its declared boundary",
+          "body": "Neither procedure assigns mating, genotypes, mutation, migration or differential reproductive contribution. A five-token fraction increase therefore does not show that A is beneficial, and it is not a complete generation model. To explain a real allele-frequency change, specify the population model and evidence needed to examine chance, selection and other processes. Do not replace that work with one striking draw."
+        }
+      ],
+      "question": {
+        "prompt": "Does the increase from 0.60 to 0.80 establish that A is biologically beneficial?",
+        "options": [
+          {
+            "text": "No; the fictional model demonstrates sampling variation.",
+            "reason": "The selection rule gives every labelled token equal chance and supplies no biological fitness comparison."
+          },
+          {
+            "text": "Yes; any frequency increase proves a fitness advantage.",
+            "reason": "The model can produce this fraction change without assigning any advantage, so that inference is unsupported."
+          },
+          {
+            "text": "Only if the label A is declared dominant.",
+            "reason": "No genotype or dominance model is stipulated, and dominance would not by itself supply a fitness comparison."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "One four-A draw and its full sample space",
+        "prompt": "In the six-A/four-a bag, draw five uniformly without replacement. Count the subsets containing four A, their probability and the A fraction within such a draw.",
+        "solution": [
+          "Choose four of six A labels in 15 ways and one of four a labels in four ways: 15 × 4 = 60 subsets.",
+          "All five-label subsets number C(10,5)=252, so the composition probability is 60/252=5/21.",
+          "Within every four-A/five-token draw, the realized A fraction is 4/5. The starting fraction was 6/10.",
+          "The complete count distribution has mean three, not a requirement that each draw contain exactly three A.",
+          "The sampling rule states no biological advantage; a changed sample fraction is not a fitness experiment."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why do the denominators five and 252 answer different questions?",
+          "answer": "Five counts selected tokens in one sample. 252 counts equally likely labelled subsets in the declared sample space; 60 of those have four A."
+        },
+        {
+          "prompt": "How can both procedures have mean three but different uncertainty?",
+          "answer": "Replacement preserves the A chance on every draw; removal makes the draws dependent. The resulting distributions have distinct squared-count deviations despite the same mean."
+        },
+        {
+          "prompt": "Why is neither token procedure a complete biological drift model?",
+          "answer": "It specifies selection of labels, not inheritance, mating or population history across generations. The analogy supplies no evidence of a real biological fitness effect."
+        }
+      ],
+      "recall": {
+        "prompt": "Explain composition, probability and expectation using different denominators.",
+        "answer": "A four-A draw has fraction 4/5. Its probability is 60/252=5/21 in the uniform without-replacement sample space. Expected A count is three across that distribution, not a required realized count."
+      },
+      "summaryChecklist": [
+        "State labels, equal-chance selection and the replacement rule.",
+        "Reset the initial bag between five-token experiments.",
+        "Keep the sample fraction separate from its composition probability.",
+        "Use the remaining bag for conditional next-draw probabilities.",
+        "Compare full distributions rather than means alone.",
+        "Do not infer biological advantage or population history from one draw."
+      ],
+      "related": [
+        "allele-and-genotype-counts",
+        "inheritance",
+        "standard-deviation-standard-error"
       ]
     },
     {
