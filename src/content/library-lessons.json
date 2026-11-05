@@ -9876,6 +9876,120 @@
       ]
     },
     {
+      "id": "allele-and-genotype-counts",
+      "subject": "genetics",
+      "title": "Allele copies and genotypes: count the denominators",
+      "summary": "Count allele copies separately from people, compare three fictional genotype tables with the same allele frequencies, and derive an independent-pairing expectation without replacing observed data.",
+      "tags": [
+        "Genetics",
+        "Allele frequency",
+        "Genotype counts",
+        "Population models"
+      ],
+      "source": "original-allele-count-models",
+      "section": "Population counting and model assumptions",
+      "updatedAt": "2026-11-05",
+      "minutes": 18,
+      "objectives": [
+        "Calculate allele frequencies from diploid genotype counts.",
+        "Distinguish a sample count from Hardy–Weinberg model assumptions.",
+        "Show why the same allele-copy fractions can coexist with different observed heterozygote fractions.",
+        "Derive p², 2pq and q² from two explicitly independent allele draws.",
+        "Disclose no-call records and keep the complete diploid-autosomal denominator within its scope."
+      ],
+      "prerequisites": [
+        "genetics-genome-foundations"
+      ],
+      "steps": [
+        {
+          "title": "Count fictional observations",
+          "body": "Among 100 diploid individuals, suppose 36 are AA, 48 are Aa and 16 are aa at one autosomal locus. There are 200 allele copies: 120 A and 80 a. The allele frequencies are p = 0.60 and q = 0.40; the observed heterozygote frequency is 48/100 = 0.48."
+        },
+        {
+          "title": "Compare with a model",
+          "body": "In the simple two-allele Hardy–Weinberg model, expected genotype frequencies p², 2pq and q² equal 0.36, 0.48 and 0.16 for these values. The invented counts were chosen to match. That match does not prove that a real population meets the model assumptions or remains in equilibrium."
+        },
+        {
+          "title": "Name the counting unit before calculating",
+          "body": "Use one autosomal locus, two alleles, complete calls and two copies per fictional person. If nAA, nAa and naa are observed counts, N = nAA + nAa + naa. Count A copies as 2nAA + nAa and a copies as 2naa + nAa; divide each by 2N. A genotype proportion instead divides one genotype count by N. Write the unit beside the denominator so that a correct numerator cannot be paired with the wrong total."
+        },
+        {
+          "title": "Keep the same allele frequency and change the genotype distribution",
+          "body": "Compare three invented 100-person groups with genotype counts AA/Aa/aa of 36/48/16, 50/20/30 and 60/0/40. Each contains 120 A copies and 80 a copies, giving p = 0.60 and q = 0.40. Their observed heterozygote proportions are 0.48, 0.20 and 0.00. Allele frequency alone therefore does not determine the observed genotype distribution. No group is labelled a real disease population."
+        },
+        {
+          "title": "Derive an expectation only after stating the pairing model",
+          "body": "In a separate ideal model, draw two allele copies independently from an unchanged pool with A probability p and a probability q. The ordered pairs AA, Aa, aA and aa have probabilities p², pq, qp and q². Merging the two heterozygote orders gives 2pq. At p = 3/5, the expected proportions are 9/25, 12/25 and 4/25. These are model probabilities, not replacement observations for an already counted sample."
+        },
+        {
+          "title": "Explain what a match does and does not show",
+          "body": "The first invented group was deliberately chosen to equal those expectations. This arithmetic match does not verify random mating, absence of population structure, stable allele frequencies through time or any other biological premise. Conversely, a mismatch is not a label for a particular mechanism by itself. Explain the model, the observation and the additional evidence needed rather than declaring a biological cause from one table."
+        },
+        {
+          "title": "Keep missing calls and changed biological scope outside this example",
+          "body": "The denominator 2N belongs to the complete diploid-autosomal setup. If five records have no genotype call, do not count them as aa or quietly treat them as two observed a copies. Redefine the called-sample denominator and describe the missingness. This exercise does not supply rules for sex-linked loci, copy-number changes or mixed ploidy. Those situations need an explicitly different counting model."
+        }
+      ],
+      "question": {
+        "prompt": "What does q = 0.40 count in this example?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "The fraction of allele copies that are a.",
+            "reason": "Allele frequency uses gene copies; the heterozygote frequency uses people and is 0.48 here."
+          },
+          {
+            "text": "The fraction of people who are heterozygotes.",
+            "reason": "The observed Aa fraction is 48/100 = 0.48, whereas q = 80/200 = 0.40 counts a allele copies."
+          },
+          {
+            "text": "The fraction of people with genotype aa.",
+            "reason": "The observed aa fraction is 16/100 = 0.16 in this invented group; it is not the a-copy fraction q = 0.40."
+          }
+        ]
+      },
+      "workedExample": {
+        "title": "Same copy counts, different genotype table",
+        "prompt": "A second fictional group has 50 AA, 20 Aa and 30 aa complete calls at the same two-allele autosomal locus. Compare its observed proportions with the independent-pairing model.",
+        "solution": [
+          "N = 50 + 20 + 30 = 100 people; the observed allele-copy denominator is 2N = 200.",
+          "A copies = 2×50 + 20 = 120; a copies = 2×30 + 20 = 80. Therefore p = 3/5 and q = 2/5.",
+          "Observed Aa fraction = 20/100 = 1/5. This differs from the independent-pairing expectation 2pq = 12/25.",
+          "The expected proportions under that separate model are 9/25, 12/25 and 4/25. They are not replacement observations for the supplied 50/20/30 table.",
+          "The mismatch alone identifies no particular biological cause. No disease, phenotype, equilibrium test or real-population mechanism is specified."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why does the allele-copy denominator differ from the genotype denominator?",
+          "answer": "The complete diploid-autosomal setup supplies two allele copies per called person. Allele-copy fractions divide by 2N; genotype fractions divide by N."
+        },
+        {
+          "prompt": "Why can the same p coexist with different observed Aa fractions?",
+          "answer": "One A-copy total can be allocated across different numbers of AA and Aa individuals. The three constructed tables show the non-unique genotype allocations directly."
+        },
+        {
+          "prompt": "Does a numeric match to p², 2pq and q² establish equilibrium through time?",
+          "answer": "No. A constructed match to one-step model probabilities supplies neither the biological assumptions nor observations through generations."
+        }
+      ],
+      "recall": {
+        "prompt": "Explain the difference between observed allele-copy fractions, observed genotype fractions and expected genotype probabilities.",
+        "answer": "Count copies over 2N and people over N in the stated complete diploid setup. Expected probabilities p², 2pq and q² additionally use the independent-pairing model; they do not overwrite the observed genotype table."
+      },
+      "summaryChecklist": [
+        "Name the locus, ploidy and complete-call scope.",
+        "Count A and a copies separately from people.",
+        "Compare observed heterozygote fractions even when p is fixed.",
+        "State the independent-pairing assumptions before multiplying probabilities.",
+        "Keep no-call records visible and avoid assigning unobserved genotypes."
+      ],
+      "related": [
+        "inheritance",
+        "recessive-conditional-probability"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

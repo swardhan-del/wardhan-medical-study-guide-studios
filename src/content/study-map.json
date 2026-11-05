@@ -2884,6 +2884,21 @@
           "status": "introduction-available"
         }
       ]
+    },
+    {
+      "id": "genetics-population-counts",
+      "subject": "genetics",
+      "title": "Population counting and model assumptions",
+      "sourceLabel": "Original fictional count-model introduction; not a complete population-genetics course",
+      "sourceId": "allele-count-models-20261105",
+      "topics": [
+        {
+          "id": "allele-and-genotype-counts",
+          "title": "Allele copies and genotypes: count the denominators",
+          "href": "/library/allele-and-genotype-counts",
+          "status": "introduction-available"
+        }
+      ]
     }
   ]
 }

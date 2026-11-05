@@ -1700,6 +1700,42 @@
         "pentose-transketolase-reference",
         "pentose-transaldolase-reference"
       ]
+    },
+    {
+      "id": "allele-copy-and-genotype-denominators",
+      "lessonIds": [
+        "allele-and-genotype-counts"
+      ],
+      "kind": "comparison",
+      "title": "One allele-copy fraction, three observed genotype distributions",
+      "headers": [
+        "Invented complete-call group: AA / Aa / aa",
+        "A-copy fraction p",
+        "Observed Aa fraction"
+      ],
+      "rows": [
+        [
+          "36 / 48 / 16",
+          "120 / 200 = 0.60",
+          "48 / 100 = 0.48"
+        ],
+        [
+          "50 / 20 / 30",
+          "120 / 200 = 0.60",
+          "20 / 100 = 0.20"
+        ],
+        [
+          "60 / 0 / 40",
+          "120 / 200 = 0.60",
+          "0 / 100 = 0.00"
+        ]
+      ],
+      "caption": "Each group contains 100 fictional diploid people with complete calls at one autosomal locus. No phenotype, dominance relationship or real population is specified.",
+      "observe": "Find what stays fixed and what changes. Explain why the expected 2pq = 0.48 under an independent-pairing model does not force every observed group to have 48 heterozygotes.",
+      "alt": "Three invented groups have AA/Aa/aa counts 36/48/16, 50/20/30 and 60/0/40. Each has 120 A copies among 200 copies, but the heterozygote proportions differ: 0.48, 0.20 and zero.",
+      "referenceIds": [
+        "allele-and-genotype-counts"
+      ]
     }
   ]
 }

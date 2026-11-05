@@ -1729,6 +1729,76 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "allele-and-genotype-counts",
+      "title": "Allele copies and genotypes: count the denominators",
+      "subject": "genetics",
+      "topic": "Population counting and model assumptions",
+      "slug": "allele-and-genotype-counts",
+      "learnerLevel": "Introductory medical genetics",
+      "objectives": [
+        "Calculate allele frequencies from diploid genotype counts.",
+        "Distinguish a sample count from Hardy–Weinberg model assumptions.",
+        "Show why the same allele-copy fractions can coexist with different observed heterozygote fractions.",
+        "Derive p², 2pq and q² from two explicitly independent allele draws.",
+        "Disclose no-call records and keep the complete diploid-autosomal denominator within its scope."
+      ],
+      "sources": [
+        {
+          "title": "NHGRI: Allele",
+          "url": "https://www.genome.gov/genetics-glossary/Allele",
+          "publisherOrAuthor": "NHGRI",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NHGRI: Genotype",
+          "url": "https://www.genome.gov/genetics-glossary/genotype",
+          "publisherOrAuthor": "NHGRI",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Hardy (1908): Mendelian proportions in a mixed population",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17779291/",
+          "publisherOrAuthor": "Hardy G H",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original semantic comparison and stacked mobile equivalent checked in desktop/mobile browsers, including 320px with 200% text, keyboard description disclosure, no-JavaScript reading and zero automated axe violations. Visual screenshots inspected; no independent human accessibility certification.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Fictional complete-call diploid autosomal two-allele examples; no phenotype, dominance relationship, real population or clinical test interpretation.",
+        "Independent ordered draws explain a model expectation; arithmetic agreement alone does not establish biological equilibrium assumptions.",
+        "AI-assisted source, exact-arithmetic and editorial review; no independent genetics, clinical or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "allele-and-genotype-counts-editorial-20261105",
+        "allele-and-genotype-counts-readability-20261105",
+        "allele-and-genotype-counts-visual-20261105",
+        "allele-and-genotype-counts-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "genetics-genome-foundations"
+        ],
+        "related": [
+          "inheritance",
+          "recessive-conditional-probability"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
