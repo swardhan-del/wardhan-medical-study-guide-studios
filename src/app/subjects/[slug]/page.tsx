@@ -1,3 +1,4 @@
+import { physiologyCoursePath } from "@/content/curriculum";
 import { searchMetadata } from "@/lib/search-metadata";
 import { WaitlistCta } from "@/components/waitlist-cta";
 import { SubjectHubOverview } from "@/components/subject-hub";
@@ -40,6 +41,7 @@ export default async function SubjectPage({ params }: Props) {
       </header>
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link></div>}
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
+      {slug === "physiology" && <p><Link className="button button-secondary" href={physiologyCoursePath}>Full Course</Link></p>}
       <SubjectHubOverview subject={slug} />
       {slug === "anatomy" && <><AnatomyLearningPath/><AnatomyTopicNav /></>}
       {records.length === 0 ? (

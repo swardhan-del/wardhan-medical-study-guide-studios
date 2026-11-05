@@ -1,0 +1,33 @@
+.course {
+  overflow-wrap: anywhere;
+}
+
+.chapters {
+  list-style: none;
+  padding: 0;
+}
+
+.chapters details {
+  border-top: 1px solid currentColor;
+  padding-block: 1rem;
+}
+
+.chapters summary {
+  cursor: pointer;
+  padding-block: 0.35rem;
+}
+
+.chapters h3 {
+  display: inline;
+  margin: 0;
+}
+
+.chapters summary span {
+  display: block;
+  font-size: 0.9em;
+  margin-block-start: 0.25em;
+}
+
+.course :is(section, details)[id] {
+  scroll-margin-top: 6rem;
+}

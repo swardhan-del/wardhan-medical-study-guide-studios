@@ -1,3 +1,4 @@
+import { PhysiologyCourseNavigation } from "./physiology-course-navigation";
 import { GIProfileExplorer } from "./gi-profile-explorer";
 import { SystemRelationships } from "./system-relationships";
 import { HistologySectionReferences } from "./histology-section-references";
@@ -329,6 +330,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         </p>
         <CorrectionLink />
       </section>
+      <PhysiologyCourseNavigation lessonId={lesson.id} />
       <nav className="action-row concept-end" aria-label="Continue studying">
         <Link
           className="button button-primary"
