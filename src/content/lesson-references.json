@@ -1,8 +1,30 @@
 {
   "microscopy": {
-    "title": "OpenStax: Studying cells: microscopy",
-    "url": "https://openstax.org/books/biology-2e/pages/4-1-studying-cells",
-    "checkedAt": "2026-09-07"
+    "title": "Southern Illinois University: tissue preparation",
+    "url": "https://histology.siu.edu/intro/tissprep.htm",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Sampias and Rolls, Leica Biosystems: H&E chemistry and preparation",
+        "url": "https://www.leicabiosystems.com/knowledge-pathway/he-staining-overview-a-guide-to-best-practices/"
+      },
+      {
+        "title": "University of Ottawa Histology Core: special stains",
+        "url": "https://www.uottawa.ca/research-innovation/histology/services/histological-staining"
+      },
+      {
+        "title": "Hewitt et al. (2014): controls for immunohistochemistry",
+        "url": "https://journals.sagepub.com/doi/pdf/10.1369/0022155414545224"
+      },
+      {
+        "title": "Open University: identifying tissues, video and transcript",
+        "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=65373&section=2"
+      },
+      {
+        "title": "OpenStax: Studying cells: microscopy",
+        "url": "https://openstax.org/books/biology-2e/pages/4-1-studying-cells"
+      }
+    ]
   },
   "epithelia": {
     "title": "OpenStax: Epithelial tissue",
@@ -40,9 +62,43 @@
     "checkedAt": "2026-09-07"
   },
   "lymphoid-organs": {
-    "title": "OpenStax: Lymphoid organs",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems",
-    "checkedAt": "2026-09-07"
+    "title": "Duke Histology: lymphatic-system practical",
+    "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Brelje and Sorenson: lymph node, H&E/Azan/silver",
+        "url": "https://histologyguide.org/slideview/MH-076-077-078-lymph-node/10-slide-1.html"
+      },
+      {
+        "title": "Blanchard and Girard (2021): high endothelial venules",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8487881/"
+      },
+      {
+        "title": "Roozendaal et al. (2009): antigen transport through follicular conduits",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2699624/"
+      },
+      {
+        "title": "Brelje and Sorenson: splenic compartments",
+        "url": "https://histologyguide.org/slideview/MH-MHS-spleen/10-slide-1.html"
+      },
+      {
+        "title": "Brelje and Sorenson: neonatal and adult thymus",
+        "url": "https://histologyguide.org/slideview/MH-079-thymus/10-slide-1.html"
+      },
+      {
+        "title": "Farley et al. (2013): early human thymus organogenesis",
+        "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/8367637/DEVELOPMENT_2013_Blackburn.pdf"
+      },
+      {
+        "title": "UNSW Embryology: immune-system development",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Immune_System_Development"
+      },
+      {
+        "title": "OpenStax: Lymphoid organs",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+      }
+    ]
   },
   "respiratory-histology": {
     "title": "OpenStax: Airways and alveoli",

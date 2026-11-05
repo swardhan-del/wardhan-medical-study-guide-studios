@@ -1,0 +1,24 @@
+.panel { margin-block: 2rem; padding: clamp(.9rem, 3vw, 1.75rem); border: 1px solid #9bafa9; border-radius: 14px; background: #f5faf7; color: #173d35; min-width: 0; overflow-wrap: anywhere; }
+.panel h2, .panel h3 { line-height: 1.35; }
+.panel p, .panel li { line-height: 1.7; }
+.panel button, .panel select, .panel input { max-width: 100%; white-space: normal; overflow-wrap: anywhere; font: inherit; color: inherit; }
+.panel button { cursor: pointer; padding: .75rem; border: 1px solid #526f66; border-radius: 7px; background: white; text-align: left; min-height: 44px; }
+.panel button[aria-pressed="true"] { background: #173d35; color: white; border-color: #173d35; }
+.panel button:disabled { background: #e0e9e4; color: #405b51; cursor: default; }
+.panel :is(button,input,select,a):focus-visible { outline: 3px solid #a04b14; outline-offset: 4px; }
+.panel select, .panel input { width: 100%; padding: .75rem; border: 1px solid #526f66; background: white; border-radius: 5px; }
+.panel label { display: block; font-weight: 700; margin-block: 1rem .5rem; }
+.choices { display: flex; flex-wrap: wrap; gap: .6rem; margin-block: 1rem; }
+.choices > button { flex: 1 1 11rem; min-width: 0; }
+.clue { border-left: 5px solid #276d5b; padding: .8rem 1rem; background: white; margin-block: 1rem; }
+.clue strong { color: #173d35; }
+.route { list-style: none; margin: 1rem 0; padding: 0; display: grid; gap: .7rem; }
+.route li { border: 1px solid #9bafa9; border-radius: 7px; background: white; padding: .8rem; }
+.route li:not(:last-child)::after { content: "↓"; display: block; font-size: 1.4rem; font-weight: bold; }
+.feedback { padding: .8rem; border: 2px solid #276d5b; border-radius: 7px; background: white; }
+.feedback:empty { display: none; }
+.question { border-top: 1px solid #9bafa9; margin-top: 1.5rem; padding-top: 1rem; }
+.question button { margin-block: .75rem; }
+@media print { .panel { break-inside: auto; background: white; } .choices, .question input, .question button { display: none; } }
+
+.panel dd { margin: .4rem 0 1rem; }

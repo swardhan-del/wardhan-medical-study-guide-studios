@@ -2518,6 +2518,197 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "lymphoid-organs",
+      "title": "Lymphoid organs: practical identification, routes and developmental origins",
+      "subject": "histology",
+      "topic": "Microscopic anatomy: preparation, identification and developmental evidence",
+      "slug": "lymphoid-organs",
+      "learnerLevel": "Medical sciences: foundations to practical interpretation",
+      "objectives": [
+        "Distinguish node, spleen, thymus and palatine tonsil using two structural landmarks and an explicit alternative.",
+        "Trace afferent lymph and HEV blood entry without confusing a tissue compartment with a vessel.",
+        "Separate cellular cords, sinuses, follicles, white pulp and medullary tissue.",
+        "Explain human thymic epithelial origin separately from incoming haematopoietic cells and splenic stromal origin.",
+        "Interpret a research observation with its species, method and developmental-stage limits."
+      ],
+      "sources": [
+        {
+          "title": "Duke Histology: lymphatic-system practical",
+          "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+          "publisherOrAuthor": "Duke Histology",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brelje and Sorenson: lymph node, H&E/Azan/silver",
+          "url": "https://histologyguide.org/slideview/MH-076-077-078-lymph-node/10-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Blanchard and Girard (2021): high endothelial venules",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8487881/",
+          "publisherOrAuthor": "Blanchard and Girard (2021)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Roozendaal et al. (2009): antigen transport through follicular conduits",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2699624/",
+          "publisherOrAuthor": "Roozendaal et al. (2009)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Brelje and Sorenson: splenic compartments",
+          "url": "https://histologyguide.org/slideview/MH-MHS-spleen/10-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brelje and Sorenson: neonatal and adult thymus",
+          "url": "https://histologyguide.org/slideview/MH-079-thymus/10-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Farley et al. (2013): early human thymus organogenesis",
+          "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/8367637/DEVELOPMENT_2013_Blackburn.pdf",
+          "publisherOrAuthor": "Farley et al. (2013)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "UNSW Embryology: immune-system development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Immune_System_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Existing credited figures/comparison retained. New original interaction layouts and text equivalents reviewed at desktop and 320px/200%-text; no new specimen images. Hosted release verification remains separate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "AI-assisted teaching; no independent clinical certification.",
+        "Conceptual exercises do not validate diagnosis or real-slide recognition.",
+        "Body-system embryology expansion and additional licensed specimen images remain in progress."
+      ],
+      "reviewEvidenceIds": [
+        "lymphoid-organs-editorial-depth-20261105",
+        "lymphoid-organs-readability-depth-20261105",
+        "lymphoid-organs-visual-depth-20261105",
+        "lymphoid-organs-accessibility-depth-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy"
+        ],
+        "related": [
+          "innate-adaptive",
+          "antigen-presentation",
+          "blood-marrow"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "microscopy",
+      "title": "Preparation, staining and defensible slide interpretation",
+      "subject": "histology",
+      "topic": "Microscopic anatomy: preparation, identification and developmental evidence",
+      "slug": "microscopy",
+      "learnerLevel": "Medical sciences: foundations to practical interpretation",
+      "objectives": [
+        "Explain the purpose and order of preparation steps in a routine paraffin workflow.",
+        "Use H&E chemistry and special-stain selection to answer a structural question.",
+        "Distinguish section-plane, extraction and handling effects from biological absence.",
+        "Explain what positive and omission controls can and cannot establish.",
+        "Build a slide interpretation from architecture, two observations, an alternative and a limitation."
+      ],
+      "sources": [
+        {
+          "title": "Southern Illinois University: tissue preparation",
+          "url": "https://histology.siu.edu/intro/tissprep.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Sampias and Rolls, Leica Biosystems: H&E chemistry and preparation",
+          "url": "https://www.leicabiosystems.com/knowledge-pathway/he-staining-overview-a-guide-to-best-practices/",
+          "publisherOrAuthor": "Leica Biosystems",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Ottawa Histology Core: special stains",
+          "url": "https://www.uottawa.ca/research-innovation/histology/services/histological-staining",
+          "publisherOrAuthor": "University of Ottawa Histology Core",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Hewitt et al. (2014): controls for immunohistochemistry",
+          "url": "https://journals.sagepub.com/doi/pdf/10.1369/0022155414545224",
+          "publisherOrAuthor": "Hewitt et al. (2014)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Open University: identifying tissues, video and transcript",
+          "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=65373&section=2",
+          "publisherOrAuthor": "Open University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Existing credited figures/comparison retained. New original interaction layouts and text equivalents reviewed at desktop and 320px/200%-text; no new specimen images. Hosted release verification remains separate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "AI-assisted teaching; no independent clinical certification.",
+        "Conceptual exercises do not validate diagnosis or real-slide recognition.",
+        "Body-system embryology expansion and additional licensed specimen images remain in progress."
+      ],
+      "reviewEvidenceIds": [
+        "microscopy-editorial-depth-20261105",
+        "microscopy-readability-depth-20261105",
+        "microscopy-visual-depth-20261105",
+        "microscopy-accessibility-depth-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "histology-foundations-tissues"
+        ],
+        "related": [
+          "epithelia",
+          "blood-marrow",
+          "renal-histology"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
