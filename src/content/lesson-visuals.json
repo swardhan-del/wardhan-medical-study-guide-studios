@@ -1624,6 +1624,42 @@
       "referenceIds": [
         "lung-observation-unit-reference"
       ]
+    },
+    {
+      "id": "diffusion-transfer-quantities",
+      "lessonIds": [
+        "ventilation-perfusion"
+      ],
+      "kind": "comparison",
+      "title": "Compare a whole-barrier rate with a rate per unit area",
+      "headers": [
+        "Fictional barrier (area; thickness)",
+        "Relative total-rate factor A/T",
+        "Relative per-area factor 1/T"
+      ],
+      "rows": [
+        [
+          "A: area 2; thickness 1",
+          "2",
+          "1"
+        ],
+        [
+          "B: area 1; thickness 1",
+          "1",
+          "1"
+        ],
+        [
+          "C: area 2; thickness 2",
+          "1",
+          "One-half"
+        ]
+      ],
+      "caption": "Gas-and-medium coefficient and maintained partial-pressure difference are identical. All inputs are invented, consistent arbitrary-unit accounts; no tissue measurements or clinical transfer values are represented.",
+      "observe": "Name one pair with equal total rates and another pair with equal per-area rates. Explain why these are different comparisons.",
+      "alt": "At fixed coefficient and gradient, barriers A, B and C have total-rate factors 2, 1 and 1, and per-area factors 1, 1 and one-half. B and C share a total rate; A and B share a per-area rate.",
+      "referenceIds": [
+        "ventilation-perfusion"
+      ]
     }
   ]
 }

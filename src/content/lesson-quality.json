@@ -1439,6 +1439,124 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "ventilation-perfusion",
+      "title": "Ventilation, perfusion and gas exchange",
+      "subject": "physiology",
+      "slug": "ventilation-perfusion",
+      "topic": "Total gas transfer, rate per area, controlled model comparisons and bounded measurement evidence",
+      "learnerLevel": "Early medical physiology and physical reasoning",
+      "objectives": [
+        "Separate ventilation, perfusion and diffusion in a specified exchange problem.",
+        "Calculate total and per-area transfer ratios with the held factors stated.",
+        "Distinguish a steady-barrier rate from a characteristic free-diffusion time scale.",
+        "Explain why an invented model account is not a measured DLCO or a unique structural diagnosis."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax: gas exchange and ventilation-perfusion matching",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-4-gas-exchange",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NPTEL: diffusion-flux definition (mathematical, nongas context)",
+          "publisherOrAuthor": "NPTEL",
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/105103026/module5/lec31/2.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "ATS: pulmonary function tests — selected diffusion-test context",
+          "publisherOrAuthor": "American Thoracic Society",
+          "url": "https://site.thoracic.org/advocacy-patients/patient-resources/pulmonary-function-tests",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NHLBI: pulmonary function tests — selected DLCO/TLCO description",
+          "publisherOrAuthor": "NHLBI",
+          "url": "https://www.nhlbi.nih.gov/science/pulmonary-function-lab/tests",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "2017 ERS/ATS carbon-monoxide uptake standard — bibliographic record",
+          "publisherOrAuthor": "Graham and colleagues / ERS and ATS",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28049168/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "guideline"
+        },
+        {
+          "title": "AARC: guideline directory linking the 2017 ERS/ATS standard",
+          "publisherOrAuthor": "AARC",
+          "url": "https://www.aarc.org/resource/clinical-practice-guidelines/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Priel and colleagues (2023): haemoglobin contribution in a selected retrospective population",
+          "publisherOrAuthor": "Priel and colleagues",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289540",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "University of Maryland MathBench: squared-distance diffusion-time model",
+          "publisherOrAuthor": "University of Maryland MathBench",
+          "url": "https://www.mathbench.umd.edu/modules/cell-processes_diffusion/page18.htm",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Texas at Austin: one-dimensional random-walk mean-square displacement",
+          "publisherOrAuthor": "University of Texas at Austin",
+          "url": "https://farside.ph.utexas.edu/teaching/355/Surveyhtml/node198.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original three-row semantic comparison inspected on desktop/mobile, including 320px at 200% text. Text alternative, keyboard disclosure and enlarged labels checked; no source image reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Invented steady uniform barriers, not measured tissue geometry or clinical reference values.",
+        "Free-diffusion time is an RMS characteristic scale, not an individual arrival time or real capillary transit time.",
+        "The 2017 standard supports selected qualitative context; no test-performance instruction, correction equation, diagnostic threshold or treatment rule is provided.",
+        "The selected 2023 retrospective population does not establish individual causation or universal reference equations.",
+        "AI-assisted source and editorial checking, not independent medical peer review or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "ventilation-perfusion-editorial-20261105",
+        "ventilation-perfusion-readability-20261105",
+        "ventilation-perfusion-visual-20261105",
+        "ventilation-perfusion-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "physiology-membrane-foundations",
+          "biophysics-diffusion-osmosis"
+        ],
+        "related": [
+          "respiratory-histology",
+          "renal-abg-interpretation",
+          "cardiac-output",
+          "biophysics-diffusion-osmosis",
+          "respiratory-mechanics",
+          "thoracic-development"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

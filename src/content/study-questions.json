@@ -2545,6 +2545,121 @@
       "answer": 0,
       "title": "Keep the spatial assay unit explicit",
       "href": "/library/thoracic-development#question-studio-lung-spatial-spot"
+    },
+    {
+      "id": "studio-diffusion-total-versus-area",
+      "prompt": "With the gas-and-medium coefficient and maintained pressure difference fixed, which pair in the fictional A/B/C model has equal total R but unequal J = R/A?",
+      "options": [
+        {
+          "text": "B and C",
+          "explanation": "Both total-rate factors are 1; their per-area factors are 1 and one-half."
+        },
+        {
+          "text": "A and B",
+          "explanation": "Their per-area factors match, but total-rate factors 2 and 1 do not."
+        },
+        {
+          "text": "All three",
+          "explanation": "The supplied area/thickness factors give R values proportional to 2, 1, 1, so they do not all match."
+        }
+      ],
+      "answer": 0,
+      "topic": "ventilation-perfusion",
+      "subject": "physiology",
+      "title": "Ventilation, perfusion and gas exchange",
+      "href": "/library/ventilation-perfusion#question-studio-diffusion-total-versus-area"
+    },
+    {
+      "id": "studio-diffusion-simultaneous-factors",
+      "prompt": "With k fixed, area doubles, thickness doubles and the maintained pressure difference halves. What are R₂/R₁ and J₂/J₁?",
+      "options": [
+        {
+          "text": "R doubles and J is unchanged",
+          "explanation": "This uses only the area increase and omits the gradient and thickness factors."
+        },
+        {
+          "text": "R is one-half and J is one-quarter",
+          "explanation": "The total-rate ratio is 2 × (1/2) × (1/2) = 1/2; dividing by the doubled area gives a per-area-rate ratio of 1/4."
+        },
+        {
+          "text": "Both are one-quarter",
+          "explanation": "One-quarter is the per-area ratio. Total R also includes the doubled area."
+        }
+      ],
+      "answer": 1,
+      "topic": "ventilation-perfusion",
+      "subject": "physiology",
+      "title": "Ventilation, perfusion and gas exchange",
+      "href": "/library/ventilation-perfusion#question-studio-diffusion-simultaneous-factors"
+    },
+    {
+      "id": "studio-diffusion-inverse-ambiguity",
+      "prompt": "An invented barrier has half the original total R, with k and ΔP fixed. Which conclusion follows from that rate alone?",
+      "options": [
+        {
+          "text": "Thickness must have doubled",
+          "explanation": "That is one possible construction, but halving area at fixed thickness gives the same rate."
+        },
+        {
+          "text": "Area must have halved",
+          "explanation": "That also fits, but it is not uniquely established by the supplied rate."
+        },
+        {
+          "text": "The rate does not uniquely determine area and thickness",
+          "explanation": "Two distinct stipulated constructions give the same ratio, so additional geometric information is needed."
+        }
+      ],
+      "answer": 2,
+      "topic": "ventilation-perfusion",
+      "subject": "physiology",
+      "title": "Ventilation, perfusion and gas exchange",
+      "href": "/library/ventilation-perfusion#question-studio-diffusion-inverse-ambiguity"
+    },
+    {
+      "id": "studio-diffusion-measurement-boundary",
+      "prompt": "A classmate labels the arbitrary R factor as a measured patient DLCO. What is missing?",
+      "options": [
+        {
+          "text": "A defined real test and its relevant measurement conditions, rather than arbitrary model inputs",
+          "explanation": "An invented proportional account does not generate a measured test result or clinical interpretation."
+        },
+        {
+          "text": "Only a change from the letter R to DLCO",
+          "explanation": "Renaming a modeled quantity does not perform a measurement or establish compatible units."
+        },
+        {
+          "text": "Nothing, because all gas-transfer quantities are interchangeable",
+          "explanation": "The quantity, gas, model assumptions and actual measurement procedure must remain distinct."
+        }
+      ],
+      "answer": 0,
+      "topic": "ventilation-perfusion",
+      "subject": "physiology",
+      "title": "Ventilation, perfusion and gas exchange",
+      "href": "/library/ventilation-perfusion#question-studio-diffusion-measurement-boundary"
+    },
+    {
+      "id": "studio-diffusion-rate-versus-time",
+      "topic": "ventilation-perfusion",
+      "subject": "physiology",
+      "title": "Ventilation, perfusion and gas exchange",
+      "href": "/library/ventilation-perfusion#question-studio-diffusion-rate-versus-time",
+      "prompt": "Compare two separate fictional models. In a steady uniform barrier, thickness doubles while area, coefficient k and maintained pressure difference stay fixed. Separately, free-diffusion distance doubles at fixed diffusion coefficient. Which conclusion respects both models?",
+      "options": [
+        {
+          "text": "The steady total rate halves, while the separate characteristic time becomes four times as large.",
+          "explanation": "The steady rate scales inversely with barrier thickness under its stated conditions; the separate free-diffusion time scale varies with distance squared."
+        },
+        {
+          "text": "Both the rate and time must halve.",
+          "explanation": "This applies the inverse-thickness dependence of one model to the different time quantity."
+        },
+        {
+          "text": "The two model laws contradict each other.",
+          "explanation": "They ask about different quantities under different maintained or free-diffusion conditions; neither is a real capillary transit-time measurement."
+        }
+      ],
+      "answer": 0
     }
   ]
 }
