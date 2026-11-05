@@ -1,3 +1,4 @@
+import { SystemRelationships } from "./system-relationships";
 import { HistologySectionReferences } from "./histology-section-references";
 import { LymphoidPractical, PreparationSequence, HistologyDemonstrations } from "./histology-practical";
 import { CaseControlExplorer } from "./case-control-explorer";
@@ -53,10 +54,10 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const clinicallyReviewed = qualityForLesson(lesson.id)?.contentStatus === "independently-clinically-reviewed";
   const journey = journeyLessons.find(item => item.id === lesson.id)!;
   const anatomyFoundations = lesson.id === "anatomy-foundations";
-  const originalReferenceTeaching = ["microscopy", "lymphoid-organs", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
+  const originalReferenceTeaching = ["renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
-  const reviewedSupplementalPractice = ["microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
+  const reviewedSupplementalPractice = ["renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
@@ -114,7 +115,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <a href="#worked-example-heading">Worked Example</a><a href="#knowledge-check-heading">Knowledge Check</a>
         <a href="#application-heading">Clinical and Applied Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a>
         <a href="#recap">Recall practice</a><a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
-      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{lesson.id === "cohort-case-control-denominators" && <a href="#case-control-explorer-title">Population explorer</a>}{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{reviewedSupplementalPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
+      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{(lesson.id === "renal-histology" || lesson.id === "respiratory-histology") && <a href="#system-relationships-title">Trace a route</a>}{lesson.id === "cohort-case-control-denominators" && <a href="#case-control-explorer-title">Population explorer</a>}{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{reviewedSupplementalPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <TopicGuideLinks lessonId={lesson.id} />
       <div className="concept-layout">
@@ -142,17 +143,17 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
                 <details key={step.title} open>
                   <summary>
                     <span className="concept-number" aria-hidden="true">
-                      0{index + 1}
+                      {String(index + 1).padStart(2, "0")}
                     </span>
                     <span className="concept-step-title">{step.title}</span>
                     <span className="concept-expand" aria-hidden="true">
                       +
                     </span>
                   </summary>
-                  {step.body.split("\n\n").map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                  {step.body.split("\n\n").map((paragraph, i) => <p key={i}>{paragraph.startsWith("Try it:") ? <><strong>Try it:</strong>{paragraph.slice(7)}</> : paragraph}</p>)}
                   <HistologySectionReferences lessonId={lesson.id} index={index} />
                   {((lesson.id === "microscopy" && index === 0) ||
-                    (lesson.id === "renal-histology" && index === 2)) &&
+                    (lesson.id === "renal-histology" && index === 3)) &&
                     figuresForResource(lesson.id).map((f) => (
                       <EducationalFigure key={f.id} figure={f} />
                     ))}
@@ -160,6 +161,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
               ))}
             </div>
           </section>
+          {(lesson.id === "renal-histology" || lesson.id === "respiratory-histology") && <SystemRelationships lessonId={lesson.id} />}
           {lesson.id === "cohort-case-control-denominators" && <CaseControlExplorer />}
           {lesson.id === "microscopy" && <><PreparationSequence/><HistologyDemonstrations/></>}
           {lesson.id === "lymphoid-organs" && <LymphoidPractical/>}

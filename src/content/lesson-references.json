@@ -101,9 +101,27 @@
     ]
   },
   "respiratory-histology": {
-    "title": "OpenStax: Airways and alveoli",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system",
-    "checkedAt": "2026-09-07"
+    "title": "Duke University: respiratory-system practical",
+    "url": "https://histology.oit.duke.edu/NormalBody/Respiratory/Respiratory.html",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "UNSW Embryology: respiratory-system development",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Respiratory_System_Development"
+      },
+      {
+        "title": "Goss et al. (2009): Wnt2/2b and beta-catenin in mouse lung specification",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2763331/"
+      },
+      {
+        "title": "Bellusci et al. (1997): FGF10 and embryonic mouse lung branching, abstract reviewed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9428423/"
+      },
+      {
+        "title": "Sun et al. (2022): SOX9 in human fetal lung progenitor organoids",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9627674/"
+      }
+    ]
   },
   "gi-histology": {
     "title": "OpenStax: Small and large intestine",
@@ -116,9 +134,27 @@
     "checkedAt": "2026-09-07"
   },
   "renal-histology": {
-    "title": "Histology at Yale: Urinary System Lab",
-    "url": "https://medcell.org/histology/urinary_system_lab.php",
-    "checkedAt": "2026-09-07"
+    "title": "Duke University: urinary-system practical, with specimen and preparation context",
+    "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Urinary/SS-Urinary.html",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Lindström et al. (2018): conserved and divergent nephron patterning in human and mouse",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5827611/"
+      },
+      {
+        "title": "Sainio et al. (1997): GDNF and ureteric budding, abstract reviewed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9374404/"
+      },
+      {
+        "title": "NCBI Gene: human RET",
+        "url": "https://www.ncbi.nlm.nih.gov/gene/5979"
+      },
+      {
+        "title": "NCBI Gene: human WT1",
+        "url": "https://www.ncbi.nlm.nih.gov/gene/7490"
+      }
+    ]
   },
   "reproductive-histology": {
     "title": "OpenStax Anatomy and Physiology 2e 27.1: Testicular reproductive system",
