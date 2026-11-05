@@ -913,6 +913,50 @@
       "independent": false,
       "record": "docs/reviews/case-control-denominators-20261105.md",
       "contentSha256": "b92b97d49d3efc579e8bda2603dd9f487218e0a4e90e853e8e80fb6a13281f46"
+    },
+    {
+      "id": "allele-and-genotype-counts-editorial-20261105",
+      "lessonId": "allele-and-genotype-counts",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source, mathematical and editorial review",
+      "qualification": "Automated assistant; no independent genetics, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/allele-genotype-denominators-20261105.md",
+      "contentSha256": "5803771b35b4cd8c3892d3b6aed67cafac609238ed166bb8ff945fcf13d495da"
+    },
+    {
+      "id": "allele-and-genotype-counts-readability-20261105",
+      "lessonId": "allele-and-genotype-counts",
+      "scope": "readability",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source, mathematical and editorial review",
+      "qualification": "Automated assistant; no independent genetics, clinical or human accessibility qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/allele-genotype-denominators-20261105.md",
+      "contentSha256": "5803771b35b4cd8c3892d3b6aed67cafac609238ed166bb8ff945fcf13d495da"
+    },
+    {
+      "id": "allele-and-genotype-counts-visual-20261105",
+      "lessonId": "allele-and-genotype-counts",
+      "scope": "visual",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered browser and keyboard review",
+      "qualification": "Automated browser checks and visual inspection; no independent human accessibility or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/allele-genotype-denominators-20261105.md",
+      "contentSha256": "5803771b35b4cd8c3892d3b6aed67cafac609238ed166bb8ff945fcf13d495da"
+    },
+    {
+      "id": "allele-and-genotype-counts-accessibility-20261105",
+      "lessonId": "allele-and-genotype-counts",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered browser and keyboard review",
+      "qualification": "Automated browser checks and visual inspection; no independent human accessibility or clinical qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/allele-genotype-denominators-20261105.md",
+      "contentSha256": "5803771b35b4cd8c3892d3b6aed67cafac609238ed166bb8ff945fcf13d495da"
     }
   ]
 }

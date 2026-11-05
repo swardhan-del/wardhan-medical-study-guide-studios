@@ -2890,6 +2890,98 @@
       "subject": "biostatistics",
       "title": "Identify the control sampling design",
       "href": "/library/cohort-case-control-denominators#question-studio-case-control-5"
+    },
+    {
+      "id": "allele-same-p-different-heterozygotes",
+      "prompt": "Two fictional groups both have p = 0.60. Must they have the same observed heterozygote frequency?",
+      "options": [
+        {
+          "text": "No; genotype counts must still be examined",
+          "explanation": "The constructed 36/48/16 and 50/20/30 groups have the same allele-copy totals but different Aa counts."
+        },
+        {
+          "text": "Yes; observed Aa must always equal 2pq",
+          "explanation": "That substitutes a model expectation for observed data without establishing the pairing assumptions."
+        },
+        {
+          "text": "Yes; p is the fraction of people who are heterozygous",
+          "explanation": "p is an allele-copy fraction in the stated model."
+        }
+      ],
+      "answer": 0,
+      "topic": "allele-and-genotype-counts",
+      "subject": "genetics",
+      "title": "Same p different heterozygotes",
+      "href": "/library/allele-and-genotype-counts#question-allele-same-p-different-heterozygotes"
+    },
+    {
+      "id": "allele-pairing-orders",
+      "prompt": "Why does the independent-pairing model use 2pq for heterozygotes?",
+      "options": [
+        {
+          "text": "Every heterozygote carries two A copies",
+          "explanation": "An Aa individual carries one copy of each allele."
+        },
+        {
+          "text": "Aa and aA are two ordered outcomes that combine into one unordered genotype",
+          "explanation": "Each ordered outcome has probability pq; adding them gives 2pq."
+        },
+        {
+          "text": "The number of people is always twice the number of allele copies",
+          "explanation": "The complete diploid model has twice as many copies as people, not the reverse."
+        }
+      ],
+      "answer": 1,
+      "topic": "allele-and-genotype-counts",
+      "subject": "genetics",
+      "title": "Pairing orders",
+      "href": "/library/allele-and-genotype-counts#question-allele-pairing-orders"
+    },
+    {
+      "id": "allele-missing-calls",
+      "prompt": "There are 95 complete diploid calls and five no-call records at the stated autosomal locus. Which allele-copy denominator is observed?",
+      "options": [
+        {
+          "text": "200 observed allele copies",
+          "explanation": "That silently assumes the missing records supply observed calls."
+        },
+        {
+          "text": "100 observed allele copies",
+          "explanation": "This confuses record count with the two-copy called-sample total."
+        },
+        {
+          "text": "190 observed allele copies among the 95 called records",
+          "explanation": "Use the called-sample denominator and disclose missingness; do not infer the unobserved genotypes."
+        }
+      ],
+      "answer": 2,
+      "topic": "allele-and-genotype-counts",
+      "subject": "genetics",
+      "title": "Missing calls",
+      "href": "/library/allele-and-genotype-counts#question-allele-missing-calls"
+    },
+    {
+      "id": "allele-match-evidence",
+      "prompt": "The fictional 36/48/16 table matches p²/2pq/q². What follows?",
+      "options": [
+        {
+          "text": "It matches the stated numeric expectations",
+          "explanation": "The table was constructed for that equality; it does not establish the real-world premises of a population model."
+        },
+        {
+          "text": "It proves every equilibrium assumption in a real population",
+          "explanation": "An arithmetic match does not observe every biological process."
+        },
+        {
+          "text": "It proves the a allele is recessive for every phenotype",
+          "explanation": "The counting setup does not specify a phenotype or dominance relationship."
+        }
+      ],
+      "answer": 0,
+      "topic": "allele-and-genotype-counts",
+      "subject": "genetics",
+      "title": "Match evidence",
+      "href": "/library/allele-and-genotype-counts#question-allele-match-evidence"
     }
   ]
 }

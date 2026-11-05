@@ -2994,6 +2994,17 @@
       "resources": [
         "cohort-case-control-denominators"
       ]
+    },
+    {
+      "id": "topic-allele-and-genotype-counts",
+      "title": "Allele copies and genotypes: count the denominators",
+      "description": "Count allele copies separately from people, compare three fictional genotype tables with the same allele frequencies, and derive an independent-pairing expectation without replacing observed data.",
+      "subject": "genetics",
+      "parentId": "genetics-inheritance",
+      "kind": "topic",
+      "resources": [
+        "allele-and-genotype-counts"
+      ]
     }
   ]
 }
