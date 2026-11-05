@@ -3132,15 +3132,17 @@
       "route": "/library/ventilation-perfusion",
       "title": "Ventilation, perfusion and gas exchange",
       "kind": "Study lesson",
-      "action": "standardise-or-reuse",
+      "action": "new-comparison-or-flow",
       "components": [
-        "EducationalFigure"
+        "LessonVisuals"
       ],
-      "visualIds": [],
+      "visualIds": [
+        "diffusion-transfer-quantities"
+      ],
       "figureIds": [
         "airway-dead-space"
       ],
-      "rationale": "The visual supports this specific learning task: Distinguish air delivery, blood delivery and diffusion across the respiratory membrane."
+      "rationale": "Original fictional whole-barrier/per-area comparison inspected on desktop/mobile, including 320px/200% text. Readable text alternative and keyboard disclosure; expanded-state Axe passed. No source figure or measured tissue dataset reproduced."
     },
     {
       "id": "respiratory-mechanics",

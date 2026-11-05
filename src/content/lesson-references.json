@@ -190,9 +190,43 @@
     "checkedAt": "2026-09-07"
   },
   "ventilation-perfusion": {
-    "title": "OpenStax: Gas exchange and ventilation-perfusion matching",
+    "title": "OpenStax: gas exchange and ventilation-perfusion matching",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-4-gas-exchange",
-    "checkedAt": "2026-09-07"
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "NPTEL: diffusion-flux definition (mathematical, nongas context)",
+        "url": "https://archive.nptel.ac.in/content/storage2/courses/105103026/module5/lec31/2.html"
+      },
+      {
+        "title": "ATS: pulmonary function tests — selected diffusion-test context",
+        "url": "https://site.thoracic.org/advocacy-patients/patient-resources/pulmonary-function-tests"
+      },
+      {
+        "title": "NHLBI: pulmonary function tests — selected DLCO/TLCO description",
+        "url": "https://www.nhlbi.nih.gov/science/pulmonary-function-lab/tests"
+      },
+      {
+        "title": "2017 ERS/ATS carbon-monoxide uptake standard — bibliographic record",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28049168/"
+      },
+      {
+        "title": "AARC: guideline directory linking the 2017 ERS/ATS standard",
+        "url": "https://www.aarc.org/resource/clinical-practice-guidelines/"
+      },
+      {
+        "title": "Priel and colleagues (2023): haemoglobin contribution in a selected retrospective population",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0289540"
+      },
+      {
+        "title": "University of Maryland MathBench: squared-distance diffusion-time model",
+        "url": "https://www.mathbench.umd.edu/modules/cell-processes_diffusion/page18.htm"
+      },
+      {
+        "title": "University of Texas at Austin: one-dimensional random-walk mean-square displacement",
+        "url": "https://farside.ph.utexas.edu/teaching/355/Surveyhtml/node198.html"
+      }
+    ]
   },
   "cell-signaling": {
     "title": "OpenStax: Signal propagation and second messengers",

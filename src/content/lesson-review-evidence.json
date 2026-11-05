@@ -781,6 +781,50 @@
       "independent": false,
       "record": "docs/reviews/lung-observation-units-20261105.md",
       "contentSha256": "6bc60602eeef6d0a36e8867c369958be554e32a527bc544136dc104fb074c04a"
+    },
+    {
+      "id": "ventilation-perfusion-editorial-20261105",
+      "lessonId": "ventilation-perfusion",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source, exact-ratio and editorial review",
+      "qualification": "Automated assistant; no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/respiratory-transfer-quantities-20261105.md",
+      "contentSha256": "cff1be72c8dbf0d2efa19c621123e59f26ccd580cf5154478ee3704880086904"
+    },
+    {
+      "id": "ventilation-perfusion-readability-20261105",
+      "lessonId": "ventilation-perfusion",
+      "scope": "readability",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source, exact-ratio and editorial review",
+      "qualification": "Automated assistant; no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/respiratory-transfer-quantities-20261105.md",
+      "contentSha256": "cff1be72c8dbf0d2efa19c621123e59f26ccd580cf5154478ee3704880086904"
+    },
+    {
+      "id": "ventilation-perfusion-visual-20261105",
+      "lessonId": "ventilation-perfusion",
+      "scope": "visual",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered, keyboard and automated accessibility review",
+      "qualification": "Automated assistant; no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/respiratory-transfer-quantities-20261105.md",
+      "contentSha256": "cff1be72c8dbf0d2efa19c621123e59f26ccd580cf5154478ee3704880086904"
+    },
+    {
+      "id": "ventilation-perfusion-accessibility-20261105",
+      "lessonId": "ventilation-perfusion",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered, keyboard and automated accessibility review",
+      "qualification": "Automated assistant; no independent medical qualification or human accessibility certification claimed",
+      "independent": false,
+      "record": "docs/reviews/respiratory-transfer-quantities-20261105.md",
+      "contentSha256": "cff1be72c8dbf0d2efa19c621123e59f26ccd580cf5154478ee3704880086904"
     }
   ]
 }

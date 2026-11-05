@@ -5193,23 +5193,29 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-11-05",
       "bytes": 0,
       "id": "ventilation-perfusion",
       "title": "Ventilation, perfusion and gas exchange",
       "subject": "physiology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Distinguish air delivery, blood delivery and diffusion across the respiratory membrane.",
+      "summary": "Distinguish air delivery, blood delivery and diffusion, then compare total transfer, per-area rate and a real test without confusing their assumptions.",
       "tags": [
         "Respiratory physiology",
         "lung",
         "ventilation",
         "perfusion",
         "V/Q",
-        "gas exchange"
+        "gas exchange",
+        "diffusion model",
+        "total transfer",
+        "per-area rate",
+        "Fick",
+        "DLCO",
+        "model assumptions"
       ],
-      "minutes": 5
+      "minutes": 22
     },
     {
       "status": "public",

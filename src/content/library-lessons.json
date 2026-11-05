@@ -2527,17 +2527,23 @@
       "id": "ventilation-perfusion",
       "subject": "physiology",
       "title": "Ventilation, perfusion and gas exchange",
-      "summary": "Distinguish air delivery, blood delivery and diffusion across the respiratory membrane.",
+      "summary": "Distinguish air delivery, blood delivery and diffusion, then compare total transfer, per-area rate and a real test without confusing their assumptions.",
       "tags": [
         "Respiratory physiology",
         "lung",
         "ventilation",
         "perfusion",
         "V/Q",
-        "gas exchange"
+        "gas exchange",
+        "diffusion model",
+        "total transfer",
+        "per-area rate",
+        "Fick",
+        "DLCO",
+        "model assumptions"
       ],
-      "source": "respiratory",
-      "section": "Sections 3.2–3.3: Gas Exchange and Circulation; Gas Transport",
+      "source": "original-respiratory-transfer-model",
+      "section": "Sections 3.2–3.3: Gas Exchange and Circulation; Gas Transport; original model-comparison and measurement-scope extension",
       "steps": [
         {
           "title": "Deliver air and blood",
@@ -2550,6 +2556,38 @@
         {
           "title": "Add diffusion and transport",
           "body": "Gas crosses the barrier down partial-pressure gradients. Surface area, diffusion distance and gas properties affect transfer. Oxygen content then depends strongly on hemoglobin as well as saturation and dissolved oxygen; a partial pressure is not itself a complete oxygen-content measurement."
+        },
+        {
+          "title": "Name the quantity before comparing the numbers",
+          "body": "Let R denote the total amount of gas crossing a specified model barrier per unit time. Its rate per unit area is J = R/A, where A is exchange area. R and J have different units. A larger area can increase the total rate without changing the rate per unit area. Here R means gas transfer, not the blood-flow term commonly written Q in V/Q. The diffusion-and-osmosis lesson linked below explains the underlying flux concept."
+        },
+        {
+          "title": "State a controlled barrier model",
+          "body": "For this invented steady, uniform barrier, use R = k A ΔP/T. T is positive barrier thickness, ΔP is a maintained partial-pressure difference, and k is a fixed gas-and-medium coefficient. Compare two barriers by multiplying their factor ratios: R₂/R₁ = (k₂/k₁)(A₂/A₁)(ΔP₂/ΔP₁)(T₁/T₂). Cancel a factor only when it is explicitly unchanged. This coefficient is defined for this teaching model; it is not the clinical quantity KCO."
+        },
+        {
+          "title": "Keep total rate separate from rate per area",
+          "body": "Hold k and ΔP equal. The fictional barrier A has area 2 and thickness 1; B has area 1 and thickness 1; C has area 2 and thickness 2 in consistent arbitrary units. Their relative total-rate factors A/T are 2, 1 and 1. Their per-area factors 1/T are 1, 1 and one-half. B and C share a total rate despite unequal per-area rates; A and B share a per-area rate despite unequal total rates. These are stipulated geometry accounts, not tissue measurements or clinical reference values."
+        },
+        {
+          "title": "Combine changes instead of selecting one factor",
+          "body": "In a separate invented comparison, area doubles, thickness doubles and the maintained pressure difference halves while k stays fixed. The total-rate ratio is 2 × (1/2) × (1/2) = 1/2. The per-area-rate ratio is 1/4 because that half-rate is spread across twice the area. Remembering only the area increase gives the wrong answer. Consistent ratios cancel units; arbitrary inputs do not yield a patient gas-transfer value."
+        },
+        {
+          "title": "Recognise an inverse problem with more than one answer",
+          "body": "A total-rate ratio of one-half does not uniquely identify barrier thickness. At fixed k and gradient, halving area with unchanged thickness and doubling thickness with unchanged area both produce that ratio. If the gradient or coefficient is also unknown, further constructions are possible. State the missing observations before assigning a single structural explanation. The measured quantity and the proposed mechanism are different parts of an argument."
+        },
+        {
+          "title": "Do not interchange a steady rate and a diffusion time",
+          "body": "The existing biophysics lesson separately teaches a characteristic free-diffusion time scale. In a one-dimensional free-diffusion model, mean-square displacement over many paths is 2Dt. The time associated with a specified root-mean-square displacement therefore scales with distance squared at fixed diffusion coefficient D; it is not an individual molecule’s arrival time. That is a different model and question from steady transfer through a barrier with maintained boundary conditions. Doubling thickness in the steady-barrier account, with area, k and the maintained gradient fixed, halves R; doubling distance in the separate free-diffusion account multiplies its characteristic time scale by four. The results do not contradict each other, and neither calculates a real pulmonary-capillary transit time."
+        },
+        {
+          "title": "Identify what a gas-transfer test actually measures",
+          "body": "ATS and NHLBI educational material describe a defined carbon-monoxide gas-transfer test, commonly labelled DLCO or TLCO. It is not a direct measurement of barrier thickness, and carbon-monoxide uptake is not identical to oxygen transfer. The 2017 ERS/ATS technical standard considers more than membrane geometry, including gas delivery and distribution, capillary blood and haemoglobin binding. The invented rate factors above are not test results, correction equations or an interpretation of an individual patient."
+        },
+        {
+          "title": "Keep population evidence and a single cause distinct",
+          "body": "A 2023 retrospective study of a selected population with preserved exercise capacity and specified spirometric criteria found that haemoglobin contributed to DLCO variation. Its authors did not design it as a new set of clinical reference equations. This supports keeping blood properties in the explanation; it does not prove that haemoglobin alone explains a particular result or that an association identifies a membrane lesion. Regional ventilation, perfusion, diffusion and test context remain distinct considerations. No diagnostic threshold, treatment rule or personal test-preparation instruction is supplied."
         }
       ],
       "question": {
@@ -2577,10 +2615,67 @@
       "related": [
         "respiratory-histology",
         "renal-abg-interpretation",
-        "cardiac-output"
+        "cardiac-output",
+        "biophysics-diffusion-osmosis",
+        "respiratory-mechanics",
+        "thoracic-development"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-05",
+      "minutes": 22,
+      "objectives": [
+        "Separate ventilation, perfusion and diffusion in a specified exchange problem.",
+        "Calculate total and per-area transfer ratios with the held factors stated.",
+        "Distinguish a steady-barrier rate from a characteristic free-diffusion time scale.",
+        "Explain why an invented model account is not a measured DLCO or a unique structural diagnosis."
+      ],
+      "prerequisites": [
+        "physiology-membrane-foundations",
+        "biophysics-diffusion-osmosis"
+      ],
+      "workedExample": {
+        "title": "Work both rates through the same stated change",
+        "prompt": "A fictional uniform barrier initially has area 2, thickness 1 and maintained pressure difference 1 in consistent arbitrary units. A second account has area 4, thickness 2 and pressure difference one-half, with the same k. Compare the total rate and rate per area.",
+        "solution": [
+          "Write the total-rate ratio as (4/2) × (1/2) × (1/2). The last factor is initial thickness divided by final thickness.",
+          "The product is one-half: the second account has half the first total modeled transfer rate.",
+          "Divide that total-rate ratio by the area ratio 2. The per-area-rate ratio is one-quarter.",
+          "These two ratios answer different questions. Neither supplies a measured DLCO, an oxygen-content result or a clinical reference value."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "How can barriers B and C have equal total rates but different per-area rates?",
+          "answer": "Their area-to-thickness factors both equal 1, but their areas are 1 and 2. Dividing each total rate by its own area gives relative per-area factors 1 and one-half."
+        },
+        {
+          "prompt": "Which conditions let you cancel k and the pressure difference in a ratio?",
+          "answer": "The gas-and-medium coefficient and maintained pressure difference must each be explicitly equal between the two model accounts."
+        },
+        {
+          "prompt": "Why does a halved total rate not uniquely prove twice the thickness?",
+          "answer": "At fixed coefficient and gradient, half the area with unchanged thickness gives the same rate ratio. The single rate does not identify both geometric quantities."
+        },
+        {
+          "prompt": "Why can doubling a distance halve one model rate yet quadruple another model time?",
+          "answer": "The steady-barrier rate and the free-diffusion characteristic time are different quantities under different stated conditions. Their inverse-distance and squared-distance dependences are not interchangeable."
+        },
+        {
+          "prompt": "Why is a DLCO result more than a membrane-thickness measurement?",
+          "answer": "Carbon-monoxide transfer involves gas delivery/distribution, the membrane and capillary blood with haemoglobin binding. A defined test and its conditions must be distinguished from an invented geometric model."
+        },
+        {
+          "prompt": "What does the selected retrospective haemoglobin study add, and what does it not establish?",
+          "answer": "It supports a contribution of haemoglobin to DLCO variation in its selected population. It does not create a universal reference equation, prove a single cause of an individual result or demonstrate a membrane lesion."
+        }
+      ],
+      "summaryChecklist": [
+        "I can distinguish ventilation, perfusion and diffusion.",
+        "I can name the total-transfer quantity before dividing by area.",
+        "I can calculate all factor ratios and state which factors are held constant.",
+        "I can give two different constructions producing a halved total rate.",
+        "I can separate a steady-barrier rate from a characteristic free-diffusion time.",
+        "I can explain the limits of a model and of the selected measurement evidence."
+      ]
     },
     {
       "id": "cell-signaling",
