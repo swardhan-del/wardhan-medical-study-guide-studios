@@ -19,13 +19,13 @@ for(const [index,id] of ids.entries()){
   await page.getByRole('navigation',{name:'Continue studying'}).getByRole('link',{name:/learning path|lessons/}).click();await expect(page).toHaveURL(/\/study\/genetics$/);expect(errors).toEqual([]);
  });
  test(`genetics sequence: ${id} is reachable through subject and focused search`,async({page})=>{
-  await page.goto('/');await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Subjects',exact:true}).click();await page.locator('a[href="/library?subject=genetics-all"]').click();await expect(page.getByRole('status')).toContainText('12 resources');await page.getByRole('searchbox').fill('synonymous');const card=page.locator('.resource-card:visible').filter({hasText:lesson.title});await expect(card).toHaveCount(1);await card.getByRole('link',{name:'Read lesson',exact:true}).click();await expect(page.getByRole('heading',{level:1})).toHaveText(lesson.title);
+  await page.goto('/');await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Subjects',exact:true}).click();await page.locator('a[href="/library?subject=genetics-all"]').click();await expect(page.getByRole('status')).toContainText('13 resources');await page.getByRole('searchbox').fill('synonymous');const card=page.locator('.resource-card:visible').filter({hasText:lesson.title});await expect(card).toHaveCount(1);await card.getByRole('link',{name:'Read lesson',exact:true}).click();await expect(page.getByRole('heading',{level:1})).toHaveText(lesson.title);
   await page.goto('/library?subject=genetics');await page.getByRole('searchbox').fill('reverse complement');await expect(page.locator('.resource-card:visible').filter({hasText:lesson.title})).toHaveCount(1);
   await page.goto('/library/'+id);await expect(page.locator(`a[href="/library/${'genetic-testing'}"]`)).not.toHaveCount(0);
  });
 }
 test('genetics sequence: print collection and source boundaries',async({page})=>{
- await page.goto('/study/genetics/revision');await page.getByRole('button',{name:'Clear selection',exact:true}).click();await page.getByRole('checkbox',{name:'01. Medical genetics',exact:true}).check();await expect(page.locator('.revision-lesson')).toHaveCount(6);await expect(page.locator('.revision-lesson').filter({hasText:data.lessons.find(l=>l.id===ids[0])!.title})).toHaveCount(1);
+ await page.goto('/study/genetics/revision');await page.getByRole('button',{name:'Clear selection',exact:true}).click();await page.getByRole('checkbox',{name:'01. Medical genetics',exact:true}).check();await expect(page.locator('.revision-lesson')).toHaveCount(7);await expect(page.locator('.revision-lesson').filter({hasText:data.lessons.find(l=>l.id===ids[0])!.title})).toHaveCount(1);
  for(const path of ['/.private/candidate-lessons.json','/src/content/library-lessons.json','/not-a-real-genetics-lesson']){const r=await page.request.get(path);expect(r.status()).toBe(404);}
  await page.goto('/library/'+ids[0]);await expect(page.locator('main a[href*="dropbox"]')).toHaveCount(0);await expect(page.locator('main a[download]')).toHaveCount(0);
 });
