@@ -2067,6 +2067,205 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "genetic-drift-sampling-model",
+      "title": "Genetic drift: compare two sampling procedures",
+      "subject": "genetics",
+      "topic": "Population models: sampling units and procedure assumptions",
+      "slug": "genetic-drift-sampling-model",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Count equally likely labelled subsets separately from token composition.",
+        "Calculate a conditional probability after one token is removed.",
+        "Explain why an expected count need not occur in one experiment.",
+        "Compare count distributions when the replacement rule changes.",
+        "State why a bag model does not establish biological advantage or population history."
+      ],
+      "sources": [
+        {
+          "title": "NHGRI: Genetic Drift",
+          "url": "https://www.genome.gov/genetics-glossary/Genetic-Drift",
+          "publisherOrAuthor": "NHGRI",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Four new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels; existing original visuals retained. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Fictional token/coordinate/design models and bounded selected source evidence; no clinical prediction or biological outcome simulation.",
+        "AI-assisted source, model and editorial checks; no independent clinical or human accessibility certification.",
+        "Original source guides/books/media remain excluded; legacy bibliography is not a reuse license."
+      ],
+      "reviewEvidenceIds": [
+        "genetic-drift-sampling-model-editorial-20261105",
+        "genetic-drift-sampling-model-readability-20261105",
+        "genetic-drift-sampling-model-visual-20261105",
+        "genetic-drift-sampling-model-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "allele-and-genotype-counts"
+        ],
+        "related": [
+          "allele-and-genotype-counts",
+          "inheritance",
+          "standard-deviation-standard-error"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "rna-processing",
+      "title": "From pre-mRNA to mature messenger RNA",
+      "subject": "cell-biology",
+      "topic": "Topics 19–25: eukaryotic transcription and mRNA maturation",
+      "slug": "rna-processing",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Retain the existing capping, splicing and cleavage/polyadenylation introduction.",
+        "Calculate inclusive exon and untranslated-region lengths in a declared mature-RNA model.",
+        "Follow a codon across a joined exon boundary.",
+        "Separate a stop-inclusive coding interval from amino-acid count.",
+        "Compare terminal-site sequence retention with evidence of biological function."
+      ],
+      "sources": [
+        {
+          "title": "NHGRI: Exon definition",
+          "url": "https://www.genome.gov/genetics-glossary/Exon",
+          "publisherOrAuthor": "NHGRI",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Sandberg et al. 2008: alternative 3′ ends and functional reporter evidence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18566288/",
+          "publisherOrAuthor": "Authors named in linked primary publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "OpenStax: RNA processing",
+          "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes",
+          "publisherOrAuthor": "OpenStax legacy baseline reference",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Four new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels; existing original visuals retained. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Fictional token/coordinate/design models and bounded selected source evidence; no clinical prediction or biological outcome simulation.",
+        "AI-assisted source, model and editorial checks; no independent clinical or human accessibility certification.",
+        "Original source guides/books/media remain excluded; legacy bibliography is not a reuse license."
+      ],
+      "reviewEvidenceIds": [
+        "rna-processing-editorial-20261105",
+        "rna-processing-readability-20261105",
+        "rna-processing-visual-20261105",
+        "rna-processing-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "genetics-genome-foundations"
+        ],
+        "related": [
+          "translation",
+          "dna-repair",
+          "genetic-testing"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "antigen-presentation",
+      "title": "MHC I, MHC II and T-cell recognition",
+      "subject": "genetics",
+      "topic": "I5: Antigen processing and presentation; I7: T-cell activation",
+      "slug": "antigen-presentation",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Retain the existing conventional class I/class II recognition introduction.",
+        "Name the presenting and receiving partners in a co-stimulatory comparison.",
+        "Distinguish a controlled input comparison from a contrast changing several inputs.",
+        "Keep early calcium and later secretion endpoints attached to their observation settings.",
+        "Separate unreported context from experimentally absent input or an assay-negative result."
+      ],
+      "sources": [
+        {
+          "title": "TCR and CD28 Concomitant Stimulation Elicits a Distinctive Calcium Response in Naive T Cells",
+          "url": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2018.02864/full",
+          "publisherOrAuthor": "Authors named in linked primary publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Cefai et al. 1996: CD80/CD86 co-stimulation through CD28",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8921441/",
+          "publisherOrAuthor": "Authors named in linked primary publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "OpenStax: MHC and T-cell recognition",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-3-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types",
+          "publisherOrAuthor": "OpenStax legacy baseline reference",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Four new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels; existing original visuals retained. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Fictional token/coordinate/design models and bounded selected source evidence; no clinical prediction or biological outcome simulation.",
+        "AI-assisted source, model and editorial checks; no independent clinical or human accessibility certification.",
+        "Original source guides/books/media remain excluded; legacy bibliography is not a reuse license."
+      ],
+      "reviewEvidenceIds": [
+        "antigen-presentation-editorial-20261105",
+        "antigen-presentation-readability-20261105",
+        "antigen-presentation-visual-20261105",
+        "antigen-presentation-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "innate-adaptive"
+        ],
+        "related": [
+          "innate-adaptive",
+          "lymphoid-organs",
+          "protein-trafficking"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

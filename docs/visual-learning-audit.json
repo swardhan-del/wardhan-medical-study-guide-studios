@@ -2277,10 +2277,12 @@
         "LessonVisuals"
       ],
       "visualIds": [
-        "rna-processing-sequence"
+        "rna-processing-sequence",
+        "rna-exon-functional-partitions",
+        "rna-terminal-site-retention"
       ],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Connect capping, splicing and polyadenylation to the structure and use of an RNA message."
+      "rationale": "Retained original introduction/visual plus new original semantic comparisons for the deeper task. Source figures/data are not reproduced; actual native render review pending."
     },
     {
       "id": "pcr",
@@ -2436,10 +2438,11 @@
         "LessonVisuals"
       ],
       "visualIds": [
-        "mhc-pathways"
+        "mhc-pathways",
+        "tcell-input-readout-context"
       ],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Keep the presenting cell, peptide source and recognizing T cell distinct."
+      "rationale": "Retained original introduction/visual plus new original semantic comparisons for the deeper task. Source figures/data are not reproduced; actual native render review pending."
     },
     {
       "id": "recessive-conditional-probability",
@@ -3477,6 +3480,21 @@
       ],
       "figureIds": [],
       "rationale": "Original semantic text comparison with named source support and explicit bounded teaching assumptions. No source image, private storage link or measured-data figure copied; rendered checks pending."
+    },
+    {
+      "id": "genetic-drift-sampling-model",
+      "route": "/library/genetic-drift-sampling-model",
+      "title": "Genetic drift: compare two sampling procedures",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "token-sampling-replacement-comparison"
+      ],
+      "figureIds": [],
+      "rationale": "Original token-procedure comparison; no source image/data. Actual native render review pending."
     }
   ]
 }

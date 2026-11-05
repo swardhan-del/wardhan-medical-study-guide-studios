@@ -3281,6 +3281,374 @@
       "subject": "biochemistry",
       "title": "Carbon endpoint",
       "href": "/library/fatty-acid-oxidation-compartment-route#question-fa-carbon-endpoint"
+    },
+    {
+      "id": "drift-composition-vs-probability",
+      "prompt": "In the stated bag model, which pair correctly separates composition from its probability?",
+      "options": [
+        {
+          "text": "A fraction 4/5 in a four-A draw; probability 5/21 of that composition",
+          "explanation": "The first denominator is five selected tokens; the second comes from 60 of 252 equally likely subsets."
+        },
+        {
+          "text": "A fraction 5/21; probability 4/5",
+          "explanation": "These swap the defined quantities."
+        },
+        {
+          "text": "A fraction 6/10 means four-A draws have probability 6/10",
+          "explanation": "The starting fraction is the probability of A on one initial draw, not the probability of a five-token composition."
+        }
+      ],
+      "answer": 0,
+      "topic": "genetic-drift-sampling-model",
+      "subject": "genetics",
+      "title": "Composition vs probability",
+      "href": "/library/genetic-drift-sampling-model#question-drift-composition-vs-probability"
+    },
+    {
+      "id": "drift-next-draw",
+      "prompt": "Without replacement, an A token was drawn first. What is the probability the second token is A?",
+      "options": [
+        {
+          "text": "6/10",
+          "explanation": "That ignores the removal of one A token."
+        },
+        {
+          "text": "5/9",
+          "explanation": "Five A tokens remain among nine tokens."
+        },
+        {
+          "text": "6/9",
+          "explanation": "That would apply after an a token was removed, not after A."
+        }
+      ],
+      "answer": 1,
+      "topic": "genetic-drift-sampling-model",
+      "subject": "genetics",
+      "title": "Next draw",
+      "href": "/library/genetic-drift-sampling-model#question-drift-next-draw"
+    },
+    {
+      "id": "drift-expectation-single-draw",
+      "prompt": "The expected A count is three. What must a single five-token draw contain?",
+      "options": [
+        {
+          "text": "Exactly three A tokens",
+          "explanation": "An expectation is not a deterministic outcome."
+        },
+        {
+          "text": "Four A tokens because the previous example did",
+          "explanation": "The previous realization does not impose this result."
+        },
+        {
+          "text": "A possible count from the stated distribution, not necessarily three",
+          "explanation": "The five-token sample remains random under the model."
+        }
+      ],
+      "answer": 2,
+      "topic": "genetic-drift-sampling-model",
+      "subject": "genetics",
+      "title": "Expectation single draw",
+      "href": "/library/genetic-drift-sampling-model#question-drift-expectation-single-draw"
+    },
+    {
+      "id": "drift-equal-mean-procedures",
+      "prompt": "Two sampling procedures have expected A count three. Does that establish identical uncertainty?",
+      "options": [
+        {
+          "text": "No; the replacement rule changes the dependence and variance",
+          "explanation": "The exact enumerations have the same mean but variances 2/3 and 6/5."
+        },
+        {
+          "text": "Yes; equal means imply equal full distributions",
+          "explanation": "A mean is one summary and does not specify every probability."
+        },
+        {
+          "text": "Yes; all five-token models have equal variance",
+          "explanation": "The model procedure is part of the calculation."
+        }
+      ],
+      "answer": 0,
+      "topic": "genetic-drift-sampling-model",
+      "subject": "genetics",
+      "title": "Equal mean procedures",
+      "href": "/library/genetic-drift-sampling-model#question-drift-equal-mean-procedures"
+    },
+    {
+      "id": "rna-coordinate-b-utr",
+      "prompt": "How many 5′ UTR nucleotides are in fictional exon B?",
+      "options": [
+        {
+          "text": "20.",
+          "explanation": "The inclusive interval 81–100 contains 20 positions."
+        },
+        {
+          "text": "120.",
+          "explanation": "That is all of B 81–200, including its coding-interval portion."
+        },
+        {
+          "text": "100.",
+          "explanation": "That is B 101–200, the coding-interval portion rather than its 5′ UTR."
+        }
+      ],
+      "answer": 0,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Coordinate b utr",
+      "href": "/library/rna-processing#question-rna-coordinate-b-utr"
+    },
+    {
+      "id": "rna-coordinate-split-codon",
+      "prompt": "Must the 100-base coding portion of exon B be wrong because 100 is not divisible by three?",
+      "options": [
+        {
+          "text": "Yes; each exon must contain only complete codons.",
+          "explanation": "That would prevent the stipulated codon from crossing the joined B/C boundary."
+        },
+        {
+          "text": "No; a codon spans the joined boundary in this model.",
+          "explanation": "Codon 34 uses 200 in B and 201–202 in C."
+        },
+        {
+          "text": "One nucleotide must be deleted from mature RNA.",
+          "explanation": "No deletion is stipulated; a split codon does not require removal of a retained base."
+        }
+      ],
+      "answer": 1,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Coordinate split codon",
+      "href": "/library/rna-processing#question-rna-coordinate-split-codon"
+    },
+    {
+      "id": "rna-coordinate-aa-count",
+      "prompt": "How many amino-acid residues are specified under the model assumptions?",
+      "options": [
+        {
+          "text": "59.",
+          "explanation": "There are 177 translated positions and a separate terminal stop triplet."
+        },
+        {
+          "text": "60.",
+          "explanation": "This counts the stipulated stop as an additional amino-acid residue."
+        },
+        {
+          "text": "177.",
+          "explanation": "That is a nucleotide count, not the number of translated triplets."
+        }
+      ],
+      "answer": 0,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Coordinate aa count",
+      "href": "/library/rna-processing#question-rna-coordinate-aa-count"
+    },
+    {
+      "id": "rna-coordinate-domain-evidence",
+      "prompt": "Do three exon labels establish three protein domains?",
+      "options": [
+        {
+          "text": "Yes; every exon equals one domain.",
+          "explanation": "Retained RNA segmentation alone supplies no such protein-domain annotation."
+        },
+        {
+          "text": "No; no protein-domain evidence is supplied.",
+          "explanation": "Exon membership and protein-domain structure are different annotations."
+        },
+        {
+          "text": "There must be two domains because one exon is untranslated.",
+          "explanation": "Subtracting an untranslated exon still does not establish domain boundaries."
+        }
+      ],
+      "answer": 1,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Coordinate domain evidence",
+      "href": "/library/rna-processing#question-rna-coordinate-domain-evidence"
+    },
+    {
+      "id": "rna-apa-short-utr",
+      "prompt": "What is the proximal isoform’s 3′ UTR length in this model?",
+      "options": [
+        {
+          "text": "40 nucleotides.",
+          "explanation": "The inclusive retained interval is 281–320."
+        },
+        {
+          "text": "80 nucleotides.",
+          "explanation": "That belongs to the distal 3′ UTR 281–360."
+        },
+        {
+          "text": "320 nucleotides.",
+          "explanation": "That is the complete proximal RNA length before a tail, not its 3′ UTR alone."
+        }
+      ],
+      "answer": 0,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Apa short utr",
+      "href": "/library/rna-processing#question-rna-apa-short-utr"
+    },
+    {
+      "id": "rna-apa-feature-retention",
+      "prompt": "Which stipulated isoform retains feature X 341–350?",
+      "options": [
+        {
+          "text": "Both isoforms.",
+          "explanation": "The proximal transcript ends before the feature begins."
+        },
+        {
+          "text": "The distal isoform only.",
+          "explanation": "Only the 1–360 retained interval includes 341–350."
+        },
+        {
+          "text": "The proximal isoform only.",
+          "explanation": "This reverses the defined terminal boundaries."
+        }
+      ],
+      "answer": 1,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Apa feature retention",
+      "href": "/library/rna-processing#question-rna-apa-feature-retention"
+    },
+    {
+      "id": "rna-apa-output-not-specified",
+      "prompt": "Does the coordinate map prove one isoform makes more protein?",
+      "options": [
+        {
+          "text": "No; retention and protein output are different questions.",
+          "explanation": "No expression measurement or validated quantitative function model was supplied."
+        },
+        {
+          "text": "Yes; every shorter 3′ UTR produces more protein.",
+          "explanation": "The fictional map cannot establish a universal biological relationship."
+        },
+        {
+          "text": "The extra 40 positions are necessarily translated into extra protein.",
+          "explanation": "They are stipulated 3′ UTR positions after the shared stop, not an extended translated region."
+        }
+      ],
+      "answer": 0,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Apa output not specified",
+      "href": "/library/rna-processing#question-rna-apa-output-not-specified"
+    },
+    {
+      "id": "rna-apa-tail-excluded",
+      "prompt": "Does the stated 320-nucleotide proximal length include an added poly(A) tail?",
+      "options": [
+        {
+          "text": "Yes; cleavage position fixes the tail length.",
+          "explanation": "A retained-coordinate endpoint does not supply an added tail length."
+        },
+        {
+          "text": "No; the model explicitly excludes the tail.",
+          "explanation": "No tail-length value is provided or included in these counts."
+        },
+        {
+          "text": "The stop triplet tells us the tail length.",
+          "explanation": "The terminal stop and poly(A)-tail length answer different questions."
+        }
+      ],
+      "answer": 1,
+      "topic": "rna-processing",
+      "subject": "cell-biology",
+      "title": "Apa tail excluded",
+      "href": "/library/rna-processing#question-rna-apa-tail-excluded"
+    },
+    {
+      "id": "tcell-controlled-input",
+      "prompt": "Which fictional comparison isolates the specified co-stimulatory difference?",
+      "options": [
+        {
+          "text": "Same peptide–MHC, cytokine setting and time; different available CD28 interaction",
+          "explanation": "Only the named co-stimulatory input differs in this defined comparison."
+        },
+        {
+          "text": "Different peptide–MHC and different CD28 interaction",
+          "explanation": "Two inputs changed, so their individual contributions are not isolated."
+        },
+        {
+          "text": "Same inputs but one early and one late readout",
+          "explanation": "Changing measurement timing answers a different question."
+        }
+      ],
+      "answer": 0,
+      "topic": "antigen-presentation",
+      "subject": "genetics",
+      "title": "Controlled input",
+      "href": "/library/antigen-presentation#question-tcell-controlled-input"
+    },
+    {
+      "id": "tcell-readout-scope",
+      "prompt": "A condition shows a larger early calcium response. What follows from that observation alone?",
+      "options": [
+        {
+          "text": "It must produce more of every cytokine at every later time",
+          "explanation": "An early signal is not an interchangeable measure of all later endpoints."
+        },
+        {
+          "text": "It has the larger measured early calcium response in the stated setup",
+          "explanation": "Keep the endpoint and conditions attached to the observation; later secretion or division needs its own measurement."
+        },
+        {
+          "text": "It proves the same result in every human T-cell subset",
+          "explanation": "The observation supplies no such cross-system generalization."
+        }
+      ],
+      "answer": 1,
+      "topic": "antigen-presentation",
+      "subject": "genetics",
+      "title": "Readout scope",
+      "href": "/library/antigen-presentation#question-tcell-readout-scope"
+    },
+    {
+      "id": "tcell-unreported-context",
+      "prompt": "An exercise specifies peptide–MHC but says nothing about co-stimulation. Which description preserves the information given?",
+      "options": [
+        {
+          "text": "Co-stimulation is proved absent",
+          "explanation": "Omission from a description is not an experimental absence result."
+        },
+        {
+          "text": "Co-stimulation is proved identical in all conditions",
+          "explanation": "No comparison of that input was provided."
+        },
+        {
+          "text": "Co-stimulatory context is unreported",
+          "explanation": "Keep it unknown until the description or evidence supplies it."
+        }
+      ],
+      "answer": 2,
+      "topic": "antigen-presentation",
+      "subject": "genetics",
+      "title": "Unreported context",
+      "href": "/library/antigen-presentation#question-tcell-unreported-context"
+    },
+    {
+      "id": "tcell-murine-evidence",
+      "prompt": "A study uses naive CD4 cells from 3A9 TCR-transgenic mice. Which scope statement is appropriate?",
+      "options": [
+        {
+          "text": "Report the result in that experimental system before considering generalization",
+          "explanation": "Species, selected cell population and stimulation setup belong with the finding."
+        },
+        {
+          "text": "Label the result a universal human activation threshold",
+          "explanation": "No human threshold is established by the stated experiment."
+        },
+        {
+          "text": "Use it to diagnose an individual immune deficiency",
+          "explanation": "The educational comparison is not a clinical diagnostic study."
+        }
+      ],
+      "answer": 0,
+      "topic": "antigen-presentation",
+      "subject": "genetics",
+      "title": "Murine evidence",
+      "href": "/library/antigen-presentation#question-tcell-murine-evidence"
     }
   ]
 }
