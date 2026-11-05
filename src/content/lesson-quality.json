@@ -1321,6 +1321,124 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "thoracic-development",
+      "title": "Respiratory and diaphragmatic development",
+      "subject": "anatomy",
+      "slug": "thoracic-development",
+      "topic": "Respiratory/diaphragm development with section-profile,observation-unit and bounded evidence reasoning",
+      "learnerLevel": "Early medical anatomy,histology and developmental-science reasoning",
+      "objectives": [
+        "Describe the location and organization of respiratory and diaphragmatic development.",
+        "Answer with anatomical reasons: Which tissue forms most lower respiratory epithelium?",
+        "Draw foregut with a ventral respiratory bud and a separate diaphragm map showing the traditional four developmental contributions.",
+        "Describe a developmental section before proposing a bounded structural interpretation.",
+        "Distinguish a section profile, a traced airway identity and a molecular spatial spot.",
+        "Separate a structural description, a model and a lineage experiment from exact age or functional claims."
+      ],
+      "sources": [
+        {
+          "title": "Embryonic development",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Duke University: airway and cavity development — selected anatomical relationships",
+          "publisherOrAuthor": "Duke University",
+          "url": "https://embryology.oit.duke.edu/respiratory/lungDiaphragm.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax: respiratory structures — selected alveolar-cell and surfactant facts",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "CDC: diaphragmatic hernia — organ position and lung development",
+          "publisherOrAuthor": "CDC",
+          "url": "https://www.cdc.gov/birth-defects/about/diaphragmatic-hernia.html",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "MedlinePlus Genetics: congenital diaphragmatic hernia — anatomical locations",
+          "publisherOrAuthor": "NLM MedlinePlus Genetics",
+          "url": "https://medlineplus.gov/genetics/condition/congenital-diaphragmatic-hernia/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Cambridge University Hospitals: diaphragmatic hernia — selected lung and vascular-development context",
+          "publisherOrAuthor": "Cambridge University Hospitals NHS",
+          "url": "https://www.cuh.nhs.uk/patient-information/congenital-diaphragmatic-hernia-in-children/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Computer simulation of mammalian diaphragm development — selected original abstract",
+          "publisherOrAuthor": "Fisher and Bodenstein",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16483386/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Merrell and colleagues: mouse diaphragm connective tissue — selected abstract and introduction",
+          "publisherOrAuthor": "Merrell and colleagues",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25807280/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Ren and colleagues: spatial organization of developing human lung — selected study context",
+          "publisherOrAuthor": "Ren and colleagues",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41484334/",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original four-row semantic comparison inspected on desktop and mobile, including 320px at 200% text. Text alternative, keyboard interaction and expanded-state Axe checks passed locally. No source figure or specimen image reproduced.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Fictional profile/airway accounts are stipulated geometry,not a stereological estimate,real specimen dataset,exact age or physiological measurement.",
+        "Traditional diaphragm map is an educational framework,not itself a lineage experiment;mouse genetics and rodent simulation contexts do not establish every human cause.",
+        "Historical educational references are used for selected anatomical relationships;their numerical age/survival/treatment claims are not adopted.",
+        "No source micrograph or research figure is reproduced or approved for recognition practice.",
+        "AI-assisted source/editorial checks,not independent medical peer review or human accessibility certification."
+      ],
+      "reviewEvidenceIds": [
+        "thoracic-development-editorial-20261105",
+        "thoracic-development-readability-20261105",
+        "thoracic-development-visual-20261105",
+        "thoracic-development-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "cardiac-conduction-autonomics"
+        ],
+        "related": [
+          "cardiac-conduction-autonomics",
+          "heart-looping-septation",
+          "respiratory-histology",
+          "respiratory-mechanics",
+          "histogram-bin-counts-example"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

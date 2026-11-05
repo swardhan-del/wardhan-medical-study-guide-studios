@@ -1583,6 +1583,47 @@
       "referenceIds": [
         "serine-reaction-role-reference"
       ]
+    },
+    {
+      "id": "lung-observation-units",
+      "lessonIds": [
+        "thoracic-development"
+      ],
+      "kind": "comparison",
+      "title": "Keep the observation unit attached to the claim",
+      "headers": [
+        "Observation",
+        "What the supplied account gives",
+        "What it does not establish"
+      ],
+      "rows": [
+        [
+          "Section profile",
+          "An appearance in a specified slice and preparation.",
+          "Not automatically a separate airway, whole cell or whole-organ count."
+        ],
+        [
+          "Traced airway",
+          "The fictional tracing account separately supplies airway identities.",
+          "The second, untraced image supplies no unique-airway count."
+        ],
+        [
+          "Spatial spot",
+          "A method-dependent molecular annotation in its stated sampling context.",
+          "Not automatically one identified cell or a measured physiological function."
+        ],
+        [
+          "Stage label",
+          "An organizing description of overlapping developmental changes.",
+          "Not an exact specimen age, survival threshold or individual outcome."
+        ]
+      ],
+      "caption": "Original comparison with explicitly fictional observation accounts. No source micrograph, research figure, measured dataset or diagnostic age-estimation method is reproduced.",
+      "observe": "Explain which observation unit supports your statement and name one additional measurement needed for a stronger claim.",
+      "alt": "A section profile, traced airway identity, molecular spatial spot and developmental-stage label answer different questions. The fictional 24-profile account supplies ten traced airways; the second image supplies eighteen profiles without tracing. Neither gives an exact age, whole-organ estimate or measured lung function.",
+      "referenceIds": [
+        "lung-observation-unit-reference"
+      ]
     }
   ]
 }

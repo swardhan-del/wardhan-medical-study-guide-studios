@@ -2453,6 +2453,98 @@
         }
       ],
       "answer": 0
+    },
+    {
+      "id": "studio-lung-age-context",
+      "subject": "anatomy",
+      "topic": "thoracic-development",
+      "prompt": "What can a single unlabeled lung section reliably establish about gestational age?",
+      "options": [
+        {
+          "text": "It can support a tentative structural interpretation, but does not by itself establish a precise age.",
+          "explanation": "Development overlaps in time and space, and preparation and sampling affect what is visible."
+        },
+        {
+          "text": "It identifies the exact week without other information.",
+          "explanation": "A section lacks enough contextual and developmental information for exact dating."
+        },
+        {
+          "text": "It directly measures lung function.",
+          "explanation": "Structure in an isolated section is not a direct functional measurement."
+        }
+      ],
+      "answer": 0,
+      "title": "Interpret a section without inventing its age",
+      "href": "/library/thoracic-development#question-studio-lung-age-context"
+    },
+    {
+      "id": "studio-lung-profile-counts",
+      "subject": "anatomy",
+      "topic": "thoracic-development",
+      "prompt": "A fictional tracing task states that sixteen profiles come from eight traced airways. Which statement retains the supplied observation units?",
+      "options": [
+        {
+          "text": "There must be sixteen different airways.",
+          "explanation": "That substitutes profile observations for the explicitly supplied traced identities."
+        },
+        {
+          "text": "There are sixteen profile observations and eight traced airway identities in this exercise.",
+          "explanation": "Both supplied counts are retained with their different observation units; no unprovided whole-organ estimate is added."
+        },
+        {
+          "text": "Each profile gives the specimen’s exact developmental age.",
+          "explanation": "The exercise supplies geometry and counts, not a validated age-estimation method."
+        }
+      ],
+      "answer": 1,
+      "title": "Count profiles and traced structures separately",
+      "href": "/library/thoracic-development#question-studio-lung-profile-counts"
+    },
+    {
+      "id": "studio-lung-structure-function",
+      "subject": "anatomy",
+      "topic": "thoracic-development",
+      "prompt": "An isolated fictional section description mentions larger distal spaces and closer vascular profiles. Which conclusion requires functional measurements beyond that description?",
+      "options": [
+        {
+          "text": "The account describes the stated appearance and spatial relationships.",
+          "explanation": "This repeats the structural description supplied by the exercise; it is not itself a measurement of physiological performance."
+        },
+        {
+          "text": "The description proves one universal exact developmental age.",
+          "explanation": "A structural description does not supply an exact developmental age. Dating evidence is also distinct from a functional performance measurement."
+        },
+        {
+          "text": "This individual lung achieves a stated gas-exchange performance.",
+          "explanation": "That is a functional claim. It requires suitable physiological measurements, which the isolated structural description does not provide."
+        }
+      ],
+      "answer": 2,
+      "title": "Require measurements for a functional conclusion",
+      "href": "/library/thoracic-development#question-studio-lung-structure-function"
+    },
+    {
+      "id": "studio-lung-spatial-spot",
+      "subject": "anatomy",
+      "topic": "thoracic-development",
+      "prompt": "A paper assigns a spatial-transcriptomic spot to an inferred tissue niche. Which interpretation keeps the method attached to the claim?",
+      "options": [
+        {
+          "text": "Treat it as a method-dependent spot/niche annotation with its stated sampling context.",
+          "explanation": "The assay and its observation unit remain explicit; a label is not silently converted into a single-cell count or lung-function measurement."
+        },
+        {
+          "text": "Treat every spot as exactly one identified cell.",
+          "explanation": "The spot annotation does not by itself justify that one-to-one conversion."
+        },
+        {
+          "text": "Treat the spot label as a direct measurement of clinical respiratory function.",
+          "explanation": "A molecular spatial annotation and clinical physiological performance are different kinds of evidence."
+        }
+      ],
+      "answer": 0,
+      "title": "Keep the spatial assay unit explicit",
+      "href": "/library/thoracic-development#question-studio-lung-spatial-spot"
     }
   ]
 }

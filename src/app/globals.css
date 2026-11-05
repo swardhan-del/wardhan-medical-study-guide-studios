@@ -4221,7 +4221,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .visual-comparison th { background: #e6f0ed; color: #14252c; }
 .visual-comparison-mobile { display: none; }
 .visual-comparison-mobile section { padding: .75rem 0; border-top: 1px solid var(--line); margin: 0 !important; }
-.visual-comparison-mobile h4 { margin: 0 0 .65rem; }
+.visual-comparison-mobile h4 { margin: 0 0 .65rem; overflow-wrap: anywhere; }
 .visual-comparison-mobile dl { margin: 0; }
 .visual-comparison-mobile dt { font-weight: 650; margin-top: .7rem; }
 .visual-comparison-mobile dd { margin: .3rem 0; }

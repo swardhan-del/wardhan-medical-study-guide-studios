@@ -771,7 +771,41 @@
   "thoracic-development": {
     "title": "Embryonic development",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development",
-    "checkedAt": "2026-09-10"
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Duke University: airway and cavity development — selected anatomical relationships",
+        "url": "https://embryology.oit.duke.edu/respiratory/lungDiaphragm.html"
+      },
+      {
+        "title": "OpenStax: respiratory structures — selected alveolar-cell and surfactant facts",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+      },
+      {
+        "title": "CDC: diaphragmatic hernia — organ position and lung development",
+        "url": "https://www.cdc.gov/birth-defects/about/diaphragmatic-hernia.html"
+      },
+      {
+        "title": "MedlinePlus Genetics: congenital diaphragmatic hernia — anatomical locations",
+        "url": "https://medlineplus.gov/genetics/condition/congenital-diaphragmatic-hernia/"
+      },
+      {
+        "title": "Cambridge University Hospitals: diaphragmatic hernia — selected lung and vascular-development context",
+        "url": "https://www.cuh.nhs.uk/patient-information/congenital-diaphragmatic-hernia-in-children/"
+      },
+      {
+        "title": "Computer simulation of mammalian diaphragm development — selected original abstract",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16483386/"
+      },
+      {
+        "title": "Merrell and colleagues: mouse diaphragm connective tissue — selected abstract and introduction",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25807280/"
+      },
+      {
+        "title": "Ren and colleagues: spatial organization of developing human lung — selected study context",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41484334/"
+      }
+    ]
   },
   "heart-looping-septation": {
     "title": "Development of the heart",
@@ -1559,5 +1593,10 @@
     "title": "IUBMB: Glycine hydroxymethyltransferase, EC 2.1.2.1 (SHMT)",
     "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/1/2/1.html",
     "checkedAt": "2026-11-04"
+  },
+  "lung-observation-unit-reference": {
+    "title": "Ren and colleagues: spatial organization of developing human lung — selected study context",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41484334/",
+    "checkedAt": "2026-11-05"
   }
 }

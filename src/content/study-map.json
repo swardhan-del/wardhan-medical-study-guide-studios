@@ -1053,6 +1053,21 @@
       ]
     },
     {
+      "id": "histology-lung-observation-connection",
+      "subject": "histology",
+      "title": "Fetal lung observations and evidence",
+      "sourceLabel": "Original structural-interpretation connection, linked to selected current respiratory learning themes and named references",
+      "sourceId": "lung-observation-units-20261105",
+      "topics": [
+        {
+          "id": "histology-lung-observation-01",
+          "title": "Fetal lung structure: observations and inference",
+          "href": "/library/thoracic-development",
+          "status": "introduction-available"
+        }
+      ]
+    },
+    {
       "id": "cell-biology-39",
       "subject": "cell-biology",
       "title": "The 39-topic molecular cell biology sequence",

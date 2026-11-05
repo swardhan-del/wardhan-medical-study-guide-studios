@@ -1186,11 +1186,15 @@
       "route": "/library/thoracic-development",
       "title": "Respiratory and diaphragmatic development",
       "kind": "Study lesson",
-      "action": "retain-drawing-practice",
-      "components": [],
-      "visualIds": [],
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "lung-observation-units"
+      ],
       "figureIds": [],
-      "rationale": "Keep the existing learner-produced drawing and its answer checkpoints: Draw foregut with a ventral respiratory bud and a separate diaphragm map showing the traditional four developmental contributions. A ready-labelled generic image would not assess this reconstruction task; no additional publication-cleared specimen is established by this review."
+      "rationale": "Original observation-unit comparison inspected on desktop/mobile, including 320px/200% text, readable text alternative and keyboard disclosure. Expanded tested state passed Axe. No source section, molecular image or measured dataset reproduced."
     },
     {
       "id": "salivary-glands",

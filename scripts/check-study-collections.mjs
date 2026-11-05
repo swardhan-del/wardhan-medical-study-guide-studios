@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync('src/content/'+p+'.json','utf8'));
 const lessons=read('library-lessons').lessons,groups=read('study-collections').groups,release=read('public-release'),videos=read('public-videos').records,audios=read('study-audio').records,questions=read('study-questions').questions,recaps=read('study-recaps').recaps;
 for(const l of lessons){const matches=groups.filter(g=>g.lessonIds.includes(l.id));assert.equal(matches.length,1,'Lesson needs exactly one study section: '+l.id);assert.equal(matches[0].subject,l.subject);assert(release.resourceIds.includes(l.id));}
+for(const part of read('printable-guides').parts){const related=part.relatedLessonIds??[];assert.equal(new Set(related).size,related.length,'Duplicate related lesson');for(const id of related){assert(lessons.some(l=>l.id===id)&&release.resourceIds.includes(id),'Unknown/unreleased related lesson: '+id);assert(!part.lessonIds.includes(id),'Related lesson duplicates print home: '+id);}}
 for(const g of groups)for(const id of g.lessonIds)assert(lessons.some(l=>l.id===id&&l.subject===g.subject),'Invalid group lesson');
 assert.equal(new Set(groups.map(g=>g.id)).size,groups.length);
 assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
