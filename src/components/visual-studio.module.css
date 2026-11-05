@@ -100,7 +100,7 @@
   .activityHeader { display: block; }
   .number { margin-bottom: 16px; }
   .heroCopy { padding: 24px; }
-  .hero h1 { font-size: 2.7rem; }
+  .hero h1 { font-size: 2rem; overflow-wrap: normal; }
   .organChoices { grid-template-columns: minmax(0,1fr); gap: 12px; }
   .organChoices button { display: flex; gap: 16px; align-items: center; text-align: left; }
   .organChoices img { width: 42%; }
