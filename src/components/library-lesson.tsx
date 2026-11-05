@@ -2,6 +2,7 @@ import { HistologySectionReferences } from "./histology-section-references";
 import { LearningActivities } from "./learning-activities";
 import { NeurulationSlides } from "./neurulation-slides";
 import { activitiesForLesson } from "@/content/learning-activities";
+import { VisualStudioInvitation } from "./visual-studio-invitation";
 import { LymphoidPractical, PreparationSequence, HistologyDemonstrations } from "./histology-practical";
 import { CaseControlExplorer } from "./case-control-explorer";
 import { qualityForLesson, hasRecordedReview } from "@/lib/lesson-quality";
@@ -107,6 +108,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           </a>
         </div>
       </header>
+      {["microscopy", "lymphoid-organs", "histology-foundations-tissues"].includes(lesson.id) && <VisualStudioInvitation compact />}
       <AboutLesson lessonId={lesson.id} />
       <LessonJourney lesson={journey} />
       {lesson.id === "thorax-nerve-relations" && <p className="study-notice">New to anatomy? <Link href="/start/anatomy">Review position, directions and body planes first</Link>.</p>}
