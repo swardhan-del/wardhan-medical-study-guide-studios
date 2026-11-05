@@ -17,4 +17,4 @@
 .note { font-size: .9em; }
 .feedback { font-weight: 600; }
 .printAnswer { display: none; }
-@media print { .card { break-inside: avoid; } .card button, .card textarea, .card input { display: none; } .printAnswer { display: block; } }
+@media print { .card { break-inside: avoid; } .card button, .card textarea, .card input, .screenRubric { display: none; } .printAnswer { display: block; } }

@@ -31,6 +31,10 @@ for (const lessonId of ["anatomy-foundations", "neural-tube-development"]) {
         await panel.getByRole("checkbox").first().check();
         await expect(panel.getByRole("status").first()).toContainText("You marked 1");
         await expect(panel.getByText("One possible explanation")).toBeVisible();
+        await page.emulateMedia({ media: "print" });
+        await expect(panel.getByRole("heading", { name: "Self-review rubric" })).toBeVisible();
+        await expect(panel.getByText(activity.model, { exact: true }).filter({ visible: true })).toHaveCount(1);
+        await page.emulateMedia({ media: "screen" });
       }
     }
   });

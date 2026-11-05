@@ -14,7 +14,7 @@ function ExplanationPractice({ activity }: { activity: ExplanationActivity }) {
     <textarea id={`${activity.id}-draft`} rows={5} maxLength={6000} value={draft} onChange={event => setDraft(event.target.value)} />
     <p className={styles.note}>Your draft stays on this page, is not sent anywhere, and clears when you leave. No automated essay score is assigned.</p>
     <button type="button" aria-expanded={revealed} aria-controls={`${activity.id}-rubric`} onClick={() => setRevealed(!revealed)}>{revealed ? "Hide comparison" : "Compare with the rubric"}</button>
-    {revealed && <div id={`${activity.id}-rubric`}>
+    {revealed && <div className={styles.screenRubric} id={`${activity.id}-rubric`}>
       <p>Mark only points your explanation actually includes. These are your own checks, not an automated assessment.</p>
       <fieldset><legend>Evidence in my explanation</legend>{activity.criteria.map(criterion => <label className={styles.criterion} key={criterion.id}>
         <input type="checkbox" checked={checked.includes(criterion.id)} onChange={event => setChecked(previous => event.target.checked ? [...previous, criterion.id] : previous.filter(id => id !== criterion.id))} />
