@@ -1816,5 +1816,74 @@
     "url": "https://www.genome.gov/genetics-glossary/Genetic-Drift",
     "checkedAt": "2026-11-05",
     "supportingReferences": []
+  },
+  "thyroid-parathyroid-pattern-reasoning": {
+    "title": "Human Protein Atlas: thyroid tissue context",
+    "url": "https://www.proteinatlas.org/humanproteome/tissue/thyroid%2Bgland",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Human Protein Atlas: parathyroid tissue context",
+        "url": "https://www.proteinatlas.org/humanproteome/tissue/parathyroid%2Bgland"
+      },
+      {
+        "title": "Normal human parathyroid: histochemical and ultrastructural study (1983)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6876222/"
+      },
+      {
+        "title": "Endotext: Thyroid hormone synthesis and secretion",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK285550/"
+      },
+      {
+        "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+        "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html"
+      },
+      {
+        "title": "Endotext: Ontogeny, Anatomy, Metabolism and Physiology of the Thyroid",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK285554/"
+      },
+      {
+        "title": "Histology, Parathyroid Gland: chief-cell secretory organization",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK546596/"
+      },
+      {
+        "title": "Brown et al. (1993): extracellular calcium-sensing receptor cloned from bovine parathyroid",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8255296/"
+      }
+    ]
+  },
+  "adrenal-layers-signals-reasoning": {
+    "title": "Human Protein Atlas: adrenal tissue context",
+    "url": "https://www.proteinatlas.org/humanproteome/tissue/adrenal%2Bgland",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Endotext: ACTH Action on the Adrenals",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK279118/"
+      },
+      {
+        "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+        "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html"
+      },
+      {
+        "title": "Histology Guide: human adrenal H&E, MH 155a — tissue organization",
+        "url": "https://www.histologyguide.org/slideview/MH-155a-adrenal/13-slide-1.html"
+      }
+    ]
+  },
+  "pituitary-glandular-neural-orientation": {
+    "title": "Human Protein Atlas: pituitary tissue context",
+    "url": "https://www.proteinatlas.org/humanproteome/tissue/pituitary%2Bgland",
+    "checkedAt": "2026-11-05",
+    "supportingReferences": [
+      {
+        "title": "Endotext: Development and Microscopic Anatomy of the Pituitary Gland",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK425703/"
+      },
+      {
+        "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+        "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html"
+      }
+    ]
   }
 }

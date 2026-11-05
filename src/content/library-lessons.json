@@ -10597,6 +10597,360 @@
       ]
     },
     {
+      "id": "thyroid-parathyroid-pattern-reasoning",
+      "subject": "histology",
+      "title": "Thyroid and parathyroid: compare tissue patterns",
+      "summary": "Trace epithelial boundaries, colloid and cellular endocrine organization, then keep compartment and hormone-readout questions separate.",
+      "tags": [
+        "Histology",
+        "Endocrine architecture",
+        "Structure and function",
+        "Evidence scope"
+      ],
+      "source": "original-endocrine-architecture-models",
+      "section": "EMII endocrine architecture: original tissue and compartment explanations",
+      "updatedAt": "2026-11-05",
+      "minutes": 18,
+      "objectives": [
+        "Distinguish a follicular lumen from nearby vascular and interstitial compartments.",
+        "Connect thyroglobulin storage with a bounded uptake/processing sequence.",
+        "Compare chief-cell/PTH context without a universal stain or age shortcut.",
+        "Trace a declared compartment path and state its limits."
+      ],
+      "prerequisites": [
+        "microscopy"
+      ],
+      "steps": [
+        {
+          "title": "Begin with the arrangement of cells and spaces",
+          "body": "A useful first comparison is between repeated epithelial-lined follicles containing colloid and a more cellular endocrine arrangement associated with vessels. In the thyroid, follicular epithelial cells surround the stored luminal material. In the parathyroid, chief cells are a principal PTH-producing population. These are starting architectural relationships, not a rule that one isolated circular space identifies an organ."
+        },
+        {
+          "title": "Give the follicular epithelium two different faces",
+          "body": "In a simplified thyroid follicle, the apical cell surface faces the colloid-filled lumen. The opposite side faces the basement-membrane and interstitial setting associated with capillaries. A follicular lumen and a vascular lumen therefore belong to different compartments. Calling both a pink space discards the epithelial boundary that makes the arrangement intelligible."
+        },
+        {
+          "title": "Connect the extracellular store to a processing sequence",
+          "body": "Thyroglobulin is a protein secreted by follicular cells into the follicular lumen. Hormone-containing material can be stored there associated with that protein. In the conventional release pathway, uptake and intracellular processing help liberate thyroid hormones for release toward the circulation. Colloid is not simply a pool of free T4, and this sequence does not imply that an unchanged thyroglobulin molecule follows every later step into blood."
+        },
+        {
+          "title": "Keep the parathyroid comparison at the correct level",
+          "body": "The parathyroid comparison asks how endocrine cells and their vascular surroundings are organized, rather than searching for a thyroid-style colloid store everywhere. Chief cells synthesize PTH and can store preformed material in secretory granules. Oxyphil and other tissue elements belong to the broader preparation, but cell size, adipose amount or staining intensity is not used here as a universal age or output rule."
+        },
+        {
+          "title": "Name a regulatory partner without turning it into a stain result",
+          "body": "TSH is an important input to thyroid follicular-cell function. Parathyroid chief cells monitor extracellular calcium through the calcium-sensing receptor, and PTH release changes with that setting. These relationships help explain why the two tissues are not interchangeable. The existing endocrine-feedback lesson supplies the thyroid-axis introduction; a tissue field does not itself measure TSH, calcium or circulating hormone concentration."
+        },
+        {
+          "title": "Treat a reported exception as a boundary on a shortcut",
+          "body": "A historical histochemical and ultrastructural study described follicular regions within normal human parathyroid glands in its examined series. It is useful evidence against making one follicle-like feature a unique identity test. It does not provide a general prevalence estimate or make every unusual space equivalent to a thyroid follicle. Keep the complete architecture, source context and additional observations with the interpretation."
+        },
+        {
+          "title": "Read an original compartment diagram as a declared model",
+          "body": "For a classroom routing exercise, label the follicular lumen L, the follicular cell F, external interstitial space I and capillary blood B. Declare directed steps L→F, F→L, F→I, I→B and B→I. The path L→F→I→B passes through three declared steps; it has no direct L→B shortcut. The labels organize compartments and processing events, not one unchanged molecule, measured permeability or a hormone-release rate."
+        },
+        {
+          "title": "Turn a field description into a reasoned next observation",
+          "body": "Describe repeated boundaries, the cells forming them, material within a lumen and the surrounding vascular context. Then separate that architectural interpretation from a claim about a particular cell product, antigen signal or blood measurement. The worked model supplies no micrograph or patient specimen, so it can check compartment reasoning but cannot establish real-slide recognition or endocrine function in a person."
+        }
+      ],
+      "question": {
+        "prompt": "In the declared diagram, which statement keeps the follicular lumen and capillary blood distinct?",
+        "options": [
+          {
+            "text": "They are the same compartment because both can contain pink material.",
+            "reason": "Color alone does not remove the epithelial and vascular boundaries."
+          },
+          {
+            "text": "They have different labels and no direct L→B step is declared.",
+            "reason": "The model separates luminal storage from the external route toward capillary blood."
+          },
+          {
+            "text": "Thyroglobulin is stipulated to remain unchanged along every step into blood.",
+            "reason": "The teaching sequence includes processing; it is not an unchanged-molecule transport claim."
+          }
+        ],
+        "answer": 1
+      },
+      "workedExample": {
+        "title": "Trace the declared route without skipping a boundary",
+        "prompt": "Use L for follicular lumen, F for follicular cell, I for external interstitial space and B for capillary blood. The allowed steps are L→F, F→L, F→I, I→B and B→I. Find the shortest directed L-to-B path and explain its biological limit.",
+        "solution": [
+          "The only outward step from L is to F. From F, the route toward B proceeds through I.",
+          "The shortest path is L→F→I→B: three directed steps, not a direct luminal-to-blood edge.",
+          "A return F→L step is also declared; a diagram can contain distinct trafficking directions.",
+          "The steps organize compartments and processing events. They do not mean an unchanged thyroglobulin molecule is released into blood.",
+          "No distance, permeability, time, concentration or rate is supplied."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why can a follicular lumen and a capillary not be named from material color alone?",
+          "answer": "Their cellular boundaries and surrounding organization define different compartments; color does not supply that topology."
+        },
+        {
+          "prompt": "Why is colloid not equivalent to free hormone already in blood?",
+          "answer": "It contains protein-associated stored material in a distinct luminal compartment; uptake, processing and later release are separate events."
+        },
+        {
+          "prompt": "What does a reported parathyroid follicular region change about a one-feature rule?",
+          "answer": "It shows that the feature is not a unique organ identifier; the studied series is not a general prevalence estimate."
+        }
+      ],
+      "recall": {
+        "prompt": "Why can a follicular lumen and a capillary not be named from material color alone?",
+        "answer": "Their cellular boundaries and surrounding organization define different compartments; color does not supply that topology."
+      },
+      "summaryChecklist": [
+        "Describe boundaries and repeated architecture before a label.",
+        "Separate luminal, cellular, interstitial and blood compartments.",
+        "Keep protein-associated storage distinct from later hormone release.",
+        "Reuse thyroid-axis teaching without duplicating it.",
+        "Do not infer a blood hormone concentration or recognition performance from a fictional field."
+      ],
+      "related": [
+        "epithelia",
+        "protein-trafficking",
+        "endocrine-feedback"
+      ]
+    },
+    {
+      "id": "adrenal-layers-signals-reasoning",
+      "subject": "histology",
+      "title": "Adrenal gland: layers, products and signals",
+      "summary": "Orient cortex and medulla, separate regional product/control questions, and use a declared geometry exercise to explain why section width is not gland volume.",
+      "tags": [
+        "Histology",
+        "Endocrine architecture",
+        "Structure and function",
+        "Evidence scope"
+      ],
+      "source": "original-endocrine-architecture-models",
+      "section": "EMII endocrine architecture: original tissue and compartment explanations",
+      "updatedAt": "2026-11-05",
+      "minutes": 18,
+      "objectives": [
+        "Orient a conventional capsule-to-medulla sequence.",
+        "Keep location, product association and control setting separate.",
+        "Calculate an illustrative oblique path without turning it into tissue thickness or volume.",
+        "Distinguish a complete schematic from a cropped field."
+      ],
+      "prerequisites": [
+        "microscopy"
+      ],
+      "steps": [
+        {
+          "title": "Separate the boundary from the hormone-producing regions",
+          "body": "A conventional outside-to-inside adrenal schematic begins with a fibrous capsule, then cortex and a central medullary region. The capsule is a boundary, not a fourth steroid-producing cortical zone. Begin by asking whether a preparation actually shows an outer boundary and an inward span rather than treating every isolated patch as a complete gland."
+        },
+        {
+          "title": "Locate the three cortical zones in a declared sequence",
+          "body": "The outer cortex is conventionally called zona glomerulosa, followed by zona fasciculata and then zona reticularis toward the medulla. Introductory descriptions contrast outer cell clusters, more radial fasciculata cords and a reticular inner arrangement. These spatial relationships organize the schematic; a real section can omit a region or alter its apparent orientation."
+        },
+        {
+          "title": "Keep a product association attached to its region",
+          "body": "The introductory associations are mineralocorticoids, including aldosterone, with glomerulosa; glucocorticoids, including cortisol, with fasciculata; and adrenal androgens with reticularis. The medullary chromaffin-cell compartment is associated with catecholamines. Naming those associations does not make every cell identical, quantify output or convert tissue hue into a blood concentration."
+        },
+        {
+          "title": "Ask a separate question about regulation",
+          "body": "Angiotensin II and extracellular potassium are important regulators of aldosterone secretion, while ACTH is an important regulator of cortisol production. ACTH can also influence aldosterone, so the comparison is not a rule that it can act on only one zone. Sympathetic neural input to medullary cells is a different relationship again. A useful worksheet gives location, associated product and input their own fields."
+        },
+        {
+          "title": "Use a flat-layer exercise to expose an orientation problem",
+          "body": "Imagine two parallel boundaries four arbitrary units apart, measured along their normal. A straight path at angle θ to that normal travels length 4/cos(θ) between them. At zero degrees the path is four units; at sixty degrees it is eight. This is invented planar geometry, not measured adrenal tissue. A longer oblique path does not mean that the layer has doubled its normal thickness."
+        },
+        {
+          "title": "Do not turn a cropped section into a whole-gland volume",
+          "body": "The actual gland is three-dimensional and its regions are not the two infinite parallel planes of the exercise. A cropped field without capsule or medulla does not itself demonstrate the complete outside-to-inside arrangement. Nor does one apparent width supply a whole-gland volume fraction. Those claims require an appropriate sampling and measurement design, not a color key."
+        },
+        {
+          "title": "Connect the medulla without duplicating the autonomic lesson",
+          "body": "The existing autonomic-signalling lesson supplies the receptor-and-wiring introduction. Here the relevant architectural distinction is between a central chromaffin-cell compartment and the surrounding steroid-producing cortex. Keep the two compartments visible when relating the section to neural input or cortical regulation. This is not a stimulation protocol or an assessment of a person’s adrenal response."
+        },
+        {
+          "title": "Build an answer in three linked sentences",
+          "body": "First state the observed boundary or position. Next name the introductory product association appropriate to the stated region. Finally say which control relationship or measurement would address the particular functional question. This preserves useful structure–function reasoning without claiming that one fictional sketch is a real specimen, a secretion assay or a diagnosis."
+        }
+      ],
+      "question": {
+        "prompt": "Which statement correctly places zona glomerulosa in the conventional schematic?",
+        "options": [
+          {
+            "text": "It is the central catecholamine-associated medulla.",
+            "reason": "That describes a different compartment, not the outer cortical zone."
+          },
+          {
+            "text": "It is the fibrous capsule itself.",
+            "reason": "The capsule is the outer boundary rather than the named cortical cell zone."
+          },
+          {
+            "text": "It is the outer cortical zone, inside the capsule.",
+            "reason": "The stated sequence proceeds from capsule to glomerulosa, fasciculata, reticularis and medulla."
+          }
+        ],
+        "answer": 2
+      },
+      "workedExample": {
+        "title": "An oblique path through a fictional flat layer",
+        "prompt": "Two parallel boundaries have normal separation four arbitrary units. A straight path makes a sixty-degree angle with the normal. Calculate the path length and state what it does not measure.",
+        "solution": [
+          "For the declared planes, path length multiplied by cos(θ) equals normal separation.",
+          "cos(60°)=1/2, so the path is 4/(1/2)=8 arbitrary units.",
+          "The normal separation remains four; the longer path follows from its angle.",
+          "The exercise supplies no actual gland boundary, specimen orientation, volume fraction, hormone concentration or secretion rate.",
+          "A real quantitative spatial claim needs its own specimen and sampling design."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why should location, product association and control occupy different worksheet fields?",
+          "answer": "They answer different questions: where the region is, which products are associated with it and which input or measurement addresses function."
+        },
+        {
+          "prompt": "Why is an eight-unit oblique path not proof of doubled normal thickness?",
+          "answer": "In the declared geometry, path length depends on its angle; the normal separation is still four."
+        },
+        {
+          "prompt": "Why does an ACTH/cortisol association not imply that ACTH never affects aldosterone?",
+          "answer": "An important regulator is not an exclusive regulator; the model retains additional influences rather than erasing them."
+        }
+      ],
+      "recall": {
+        "prompt": "Why should location, product association and control occupy different worksheet fields?",
+        "answer": "They answer different questions: where the region is, which products are associated with it and which input or measurement addresses function."
+      },
+      "summaryChecklist": [
+        "Identify whether a complete outside-to-inside span is actually visible.",
+        "Keep capsule, three cortical zones and medulla distinct.",
+        "Name regional product associations without quantifying secretion.",
+        "Keep important regulators separate from exclusive-control claims.",
+        "Do not infer whole-gland volume from a drawn width."
+      ],
+      "related": [
+        "autonomic-signalling",
+        "endocrine-feedback",
+        "microscopy"
+      ]
+    },
+    {
+      "id": "pituitary-glandular-neural-orientation",
+      "subject": "histology",
+      "title": "Pituitary tissue: glandular and neural regions",
+      "summary": "Compare tissue regions, resolve a many-to-one staining classification, and keep producing neurons, terminals and supporting glia distinct.",
+      "tags": [
+        "Histology",
+        "Endocrine architecture",
+        "Structure and function",
+        "Evidence scope"
+      ],
+      "source": "original-endocrine-architecture-models",
+      "section": "EMII endocrine architecture: original tissue and compartment explanations",
+      "updatedAt": "2026-11-05",
+      "minutes": 18,
+      "objectives": [
+        "Compare glandular epithelial and axonal/glial regional organization.",
+        "Explain why a broad staining class does not uniquely select one hormone-producing type.",
+        "Separate neuronal production, axonal transport, terminal storage/release and glial support.",
+        "Use a structural clue without claiming actual specimen-recognition performance."
+      ],
+      "prerequisites": [
+        "microscopy"
+      ],
+      "steps": [
+        {
+          "title": "Start with glandular versus neural organization",
+          "body": "The pars distalis contains endocrine epithelial populations arranged in cellular groups or cords among vascular spaces. The pars nervosa contains hypothalamic axons and terminals, supporting pituicytes and capillaries. These contrasting arrangements explain why region-level orientation is useful before assigning a name to one colored object."
+        },
+        {
+          "title": "Treat a staining class as a grouping rather than a hormone identity",
+          "body": "A conventional introductory classification places somatotrophs and lactotrophs among acidophilic types and several other principal endocrine types among basophilic types. The grouping is many-to-one: one broad color class can contain more than one hormone-producing cell type. It is not a universal statement about every cell’s staining in every preparation, and it does not make all members co-produce all the group’s hormones."
+        },
+        {
+          "title": "Use a declared classification to expose the inverse problem",
+          "body": "For an original classroom classification, put somatotroph and lactotroph in group A, and corticotroph, thyrotroph and gonadotroph in group B. This deliberately selected five-type model has two possible members for A and three for B. A group label alone therefore cannot uniquely choose a member. These are category memberships, not measured cell proportions or a complete classification of all pituitary phenotypes."
+        },
+        {
+          "title": "Distinguish the producing neuron from its terminal region",
+          "body": "Hormone-producing hypothalamic neurons send axons toward the posterior pituitary. Material is transported along those axons and can be stored and released at their terminals. The region containing a release site need not contain the neuronal cell body that produced the material. That distinction connects the site of synthesis to the terminal site of release."
+        },
+        {
+          "title": "Keep the supporting cell in its own role",
+          "body": "Pituicytes are local glial supporting cells associated with the axons and terminals. Their presence is not a reason to relabel them as the hypothalamic hormone-producing neuron. A field may contain several cell and process types with different relationships to synthesis, transport, storage and release; the names describe those roles rather than interchangeable colored dots."
+        },
+        {
+          "title": "Read a Herring-body description as a structural clue",
+          "body": "Herring bodies are focal axonal swellings associated with neurosecretory material in this context. A suitable preparation can show them as part of posterior-tissue organization. Their absence from a small field does not exclude the entire region, and the presence of stored material does not quantify release per unit time. No source micrograph, staining threshold or measured secretion series is supplied here."
+        },
+        {
+          "title": "Connect morphology to the existing feedback route",
+          "body": "The existing endocrine-feedback introduction explains a thyroid-axis example and keeps hypothalamic, pituitary and target-gland signals distinct. Reuse it for that regulatory overview. The current task instead asks which tissue region, cell population or process a description refers to, and whether a broad staining group has enough information to identify one member."
+        },
+        {
+          "title": "Build a positive regional explanation before extending its scope",
+          "body": "A description favoring pars distalis should name the endocrine epithelial organization and vascular setting. A description favoring pars nervosa should name the axonal/terminal and glial setting. Further hormone-specific or functional claims need appropriate additional evidence. These fictional descriptions check tissue-role reasoning, not real-slide recognition, an individual hormone level or a clinical interpretation."
+        }
+      ],
+      "question": {
+        "prompt": "A fictional field is described as endocrine epithelial cords among sinusoidal spaces. Which regional interpretation does that arrangement favor?",
+        "options": [
+          {
+            "text": "Pars distalis.",
+            "reason": "Its glandular endocrine organization fits the stated description."
+          },
+          {
+            "text": "Pars nervosa solely because the field contains vessels.",
+            "reason": "Both regions have vascular relationships; the stated epithelial organization is the distinguishing clue."
+          },
+          {
+            "text": "A blood hormone concentration read directly from the section.",
+            "reason": "The tissue description is not a concentration measurement."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "Invert a classroom grouping only when the information permits it",
+        "prompt": "In the declared five-type model, group A contains somatotroph and lactotroph; group B contains corticotroph, thyrotroph and gonadotroph. A sample is labelled A. What member identities remain possible?",
+        "solution": [
+          "The A-labelled sample remains compatible with two named member types in the declared classification.",
+          "The group label alone does not choose one of them, and it does not show that each cell has both identities.",
+          "The two-versus-three counts describe category membership, not measured tissue proportions.",
+          "An additional validated identifying observation would be needed to distinguish members; naming a method alone does not establish its performance.",
+          "Real staining, unlisted phenotypes and preparation-specific variation remain outside this simplified model."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why cannot a broad staining group always be inverted to one hormone-producing cell type?",
+          "answer": "Several member types can share the group; the group label omits the information needed to distinguish them."
+        },
+        {
+          "prompt": "Why is a posterior terminal region not automatically the neuronal production site?",
+          "answer": "The producing cell body and its transported terminal material occupy different parts of the connected neuron."
+        },
+        {
+          "prompt": "What separates a pituicyte from the producing neuron in this comparison?",
+          "answer": "A pituicyte is a supporting glial cell; it is not the hypothalamic hormone-producing neuron."
+        }
+      ],
+      "recall": {
+        "prompt": "Why cannot a broad staining group always be inverted to one hormone-producing cell type?",
+        "answer": "Several member types can share the group; the group label omits the information needed to distinguish them."
+      },
+      "summaryChecklist": [
+        "Describe tissue organization before one cell’s hue.",
+        "Keep group membership distinct from unique cell identity or co-production.",
+        "Keep producing cell bodies, axons/terminals and glial support separate.",
+        "Treat stored material and measured timed release as different observations.",
+        "Reuse the existing feedback introduction without claiming full pituitary-course coverage."
+      ],
+      "related": [
+        "endocrine-feedback",
+        "protein-trafficking",
+        "microscopy"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

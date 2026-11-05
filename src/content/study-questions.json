@@ -3649,6 +3649,259 @@
       "subject": "genetics",
       "title": "Murine evidence",
       "href": "/library/antigen-presentation#question-tcell-murine-evidence"
+    },
+    {
+      "id": "thyroid-colloid-material",
+      "topic": "thyroid-parathyroid-pattern-reasoning",
+      "subject": "histology",
+      "title": "Stored material",
+      "prompt": "What is the best description of the colloid in this introductory model?",
+      "options": [
+        {
+          "text": "Protein-associated stored material, not merely free hormone already in blood.",
+          "explanation": "The follicular lumen contains thyroglobulin-associated storage in a separate compartment."
+        },
+        {
+          "text": "A vascular lumen whose lining is irrelevant.",
+          "explanation": "The epithelial boundary distinguishes the follicular space from capillary blood."
+        },
+        {
+          "text": "Only material that has already passed through the capillary endothelium.",
+          "explanation": "The stated luminal storage and later release sequence does not support that route."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/thyroid-parathyroid-pattern-reasoning#question-thyroid-colloid-material"
+    },
+    {
+      "id": "thyroid-compartment-shortest-route",
+      "topic": "thyroid-parathyroid-pattern-reasoning",
+      "subject": "histology",
+      "title": "Declared route",
+      "prompt": "Which is the shortest allowed L-to-B path in the stated directed diagram?",
+      "options": [
+        {
+          "text": "L→B in one step.",
+          "explanation": "No direct L→B step was declared."
+        },
+        {
+          "text": "L→I→B in two steps.",
+          "explanation": "The model gives no direct L→I step."
+        },
+        {
+          "text": "L→F→I→B in three steps.",
+          "explanation": "Each consecutive pair is an allowed directed step; every route out of L begins with F."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/thyroid-parathyroid-pattern-reasoning#question-thyroid-compartment-shortest-route"
+    },
+    {
+      "id": "thyroid-parathyroid-input-partner",
+      "topic": "thyroid-parathyroid-pattern-reasoning",
+      "subject": "histology",
+      "title": "Regulatory partner",
+      "prompt": "Which pairing preserves the introductory distinction between the two tissues?",
+      "options": [
+        {
+          "text": "PTH-producing chief cells and extracellular calcium sensing.",
+          "explanation": "Chief-cell calcium sensing belongs to the parathyroid comparison; it is not a stain measurement."
+        },
+        {
+          "text": "Every chief-cell response is simply the thyroid TSH loop.",
+          "explanation": "That merges distinct cell populations and regulatory settings."
+        },
+        {
+          "text": "A pale field specifies the circulating TSH value.",
+          "explanation": "A tissue appearance does not supply a blood assay result."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/thyroid-parathyroid-pattern-reasoning#question-thyroid-parathyroid-input-partner"
+    },
+    {
+      "id": "thyroid-single-feature-identity",
+      "topic": "thyroid-parathyroid-pattern-reasoning",
+      "subject": "histology",
+      "title": "Feature specificity",
+      "prompt": "A study reports follicular regions in its examined normal parathyroid series. What does that justify here?",
+      "options": [
+        {
+          "text": "Every circular space in every organ is equivalent.",
+          "explanation": "The report does not establish such a universal structural equivalence."
+        },
+        {
+          "text": "A follicle-like feature alone is not a unique organ-identity test.",
+          "explanation": "Keep the complete field and study scope; do not turn the series into a general prevalence estimate."
+        },
+        {
+          "text": "The percentage of all people with that pattern is known.",
+          "explanation": "No population prevalence estimate is supplied by this teaching statement."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/thyroid-parathyroid-pattern-reasoning#question-thyroid-single-feature-identity"
+    },
+    {
+      "id": "adrenal-cropped-span",
+      "topic": "adrenal-layers-signals-reasoning",
+      "subject": "histology",
+      "title": "Field extent",
+      "prompt": "A fictional adrenal crop contains neither capsule nor medulla. Which description is justified?",
+      "options": [
+        {
+          "text": "The crop alone does not show the complete capsule-to-medulla span.",
+          "explanation": "The stated boundaries are outside this cropped field."
+        },
+        {
+          "text": "The whole outer-to-inner arrangement is visible in the crop.",
+          "explanation": "That contradicts the supplied field extent."
+        },
+        {
+          "text": "The medulla is absent from the entire gland.",
+          "explanation": "An omitted region in one field is not a whole-organ absence result."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/adrenal-layers-signals-reasoning#question-adrenal-cropped-span"
+    },
+    {
+      "id": "adrenal-regulation-not-exclusive",
+      "topic": "adrenal-layers-signals-reasoning",
+      "subject": "histology",
+      "title": "Important versus exclusive input",
+      "prompt": "Which statement retains the regulation distinction?",
+      "options": [
+        {
+          "text": "ACTH can never affect aldosterone.",
+          "explanation": "The introductory contrast does not establish an exclusive-action rule."
+        },
+        {
+          "text": "Angiotensin II and potassium are important aldosterone inputs; ACTH also can influence it.",
+          "explanation": "Keep major inputs without excluding other regulatory effects."
+        },
+        {
+          "text": "A glomerulosa stain directly reports plasma potassium.",
+          "explanation": "The section description supplies no plasma measurement."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/adrenal-layers-signals-reasoning#question-adrenal-regulation-not-exclusive"
+    },
+    {
+      "id": "adrenal-oblique-path",
+      "topic": "adrenal-layers-signals-reasoning",
+      "subject": "histology",
+      "title": "Declared geometry",
+      "prompt": "For normal separation four and an angle of sixty degrees to the normal, what is the declared path length?",
+      "options": [
+        {
+          "text": "Two units.",
+          "explanation": "Multiplying by cos(60°) would not solve for the stated oblique path."
+        },
+        {
+          "text": "Four units, regardless of angle.",
+          "explanation": "That would ignore the defined path orientation."
+        },
+        {
+          "text": "Eight arbitrary units.",
+          "explanation": "The stated relation gives 4/cos(60°)=8; this is not a measured tissue width."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/adrenal-layers-signals-reasoning#question-adrenal-oblique-path"
+    },
+    {
+      "id": "adrenal-medulla-product-class",
+      "topic": "adrenal-layers-signals-reasoning",
+      "subject": "histology",
+      "title": "Compartment and product",
+      "prompt": "Which pairing keeps medulla separate from the cortical steroid associations?",
+      "options": [
+        {
+          "text": "Medullary chromaffin-cell compartment with catecholamines.",
+          "explanation": "The schematic distinguishes that central compartment from the three cortical zones."
+        },
+        {
+          "text": "Medulla treated as another name for zona fasciculata and cortisol.",
+          "explanation": "This merges separate regions in the stated arrangement."
+        },
+        {
+          "text": "Fibrous capsule treated as the aldosterone-producing cortical cell zone.",
+          "explanation": "A boundary is not the named glomerulosa region."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/adrenal-layers-signals-reasoning#question-adrenal-medulla-product-class"
+    },
+    {
+      "id": "pituitary-classification-inverse",
+      "topic": "pituitary-glandular-neural-orientation",
+      "subject": "histology",
+      "title": "Group and member",
+      "prompt": "The declared group A contains somatotroph and lactotroph. Does an A label uniquely identify a somatotroph?",
+      "options": [
+        {
+          "text": "Yes; one broad group must have one member.",
+          "explanation": "The supplied classification explicitly contains two members in A."
+        },
+        {
+          "text": "No; either named member remains possible from that label alone.",
+          "explanation": "A many-to-one group label cannot be inverted uniquely without more information."
+        },
+        {
+          "text": "Every A-labelled cell must produce both growth hormone and prolactin.",
+          "explanation": "Sharing a group does not establish co-production by each cell."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/pituitary-glandular-neural-orientation#question-pituitary-classification-inverse"
+    },
+    {
+      "id": "pituitary-pituicyte-role",
+      "topic": "pituitary-glandular-neural-orientation",
+      "subject": "histology",
+      "title": "Supporting-cell role",
+      "prompt": "Which role belongs to the pituicyte in this comparison?",
+      "options": [
+        {
+          "text": "The hypothalamic neuronal cell body producing the transported material.",
+          "explanation": "That merges a glial cell with a different neuronal identity."
+        },
+        {
+          "text": "The capillary lumen itself.",
+          "explanation": "A supporting cell is not a vascular space."
+        },
+        {
+          "text": "Local glial support associated with posterior axons and terminals.",
+          "explanation": "Keep the supporting glia separate from the producing neuron and its processes."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/pituitary-glandular-neural-orientation#question-pituitary-pituicyte-role"
+    },
+    {
+      "id": "pituitary-production-release-locations",
+      "topic": "pituitary-glandular-neural-orientation",
+      "subject": "histology",
+      "title": "Production and terminal region",
+      "prompt": "Which statement preserves the connected-neuron distinction?",
+      "options": [
+        {
+          "text": "Material can be produced by a hypothalamic neuron and stored/released at posterior terminals.",
+          "explanation": "The producing cell body and terminal region are distinct locations in the connected pathway."
+        },
+        {
+          "text": "Every stored product must have been synthesized by a nearby pituicyte.",
+          "explanation": "Local storage does not assign synthesis to the supporting glial cell."
+        },
+        {
+          "text": "A Herring-body description supplies a circulating hormone concentration.",
+          "explanation": "A structural storage observation is not a blood concentration assay."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/pituitary-glandular-neural-orientation#question-pituitary-production-release-locations"
     }
   ]
 }

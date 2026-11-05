@@ -918,26 +918,26 @@
       "id": "histology-15",
       "subject": "histology",
       "title": "Autonomic and endocrine systems",
-      "sourceLabel": "Histology Part 15",
+      "sourceLabel": "Original selected endocrine architecture introductions; broader Part15 topics remain planned",
       "sourceId": "22",
       "topics": [
         {
           "id": "histology-15-01",
-          "title": "Hypothalamus and pituitary",
-          "href": null,
-          "status": "planned"
+          "title": "Pituitary tissue: glandular and neural regions",
+          "href": "/library/pituitary-glandular-neural-orientation",
+          "status": "introduction-available"
         },
         {
           "id": "histology-15-02",
-          "title": "Thyroid and parathyroid",
-          "href": null,
-          "status": "planned"
+          "title": "Thyroid and parathyroid: compare tissue patterns",
+          "href": "/library/thyroid-parathyroid-pattern-reasoning",
+          "status": "introduction-available"
         },
         {
           "id": "histology-15-03",
-          "title": "Adrenal cortex and medulla",
-          "href": null,
-          "status": "planned"
+          "title": "Adrenal gland: layers, products and signals",
+          "href": "/library/adrenal-layers-signals-reasoning",
+          "status": "introduction-available"
         }
       ]
     },

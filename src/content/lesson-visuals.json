@@ -1968,6 +1968,119 @@
       "referenceIds": [
         "antigen-presentation"
       ]
+    },
+    {
+      "id": "thyroid-parathyroid-compartment-comparison",
+      "lessonIds": [
+        "thyroid-parathyroid-pattern-reasoning"
+      ],
+      "kind": "comparison",
+      "title": "Keep stored material, cells and compartments distinct",
+      "headers": [
+        "Structure",
+        "Positive relationship",
+        "Boundary to retain"
+      ],
+      "rows": [
+        [
+          "Thyroid follicular lumen",
+          "Thyroglobulin-associated colloid store",
+          "Across the apical surface from follicular epithelium"
+        ],
+        [
+          "Follicular epithelial cell",
+          "Synthesis, uptake and processing steps",
+          "Separates luminal and external tissue settings"
+        ],
+        [
+          "Parathyroid chief-cell region",
+          "PTH-producing endocrine cells with vascular context",
+          "Not the same compartment as a thyroid follicular lumen"
+        ]
+      ],
+      "caption": "Original semantic comparison, not a micrograph, hormone assay or universal identification rule.",
+      "observe": "Trace which boundary must be named before interpreting a stored material or vascular space.",
+      "alt": "The thyroid follicular lumen is an extracellular colloid store beside follicular epithelium. Parathyroid chief-cell architecture and vascular context are a separate comparison.",
+      "referenceIds": [
+        "thyroid-parathyroid-pattern-reasoning"
+      ]
+    },
+    {
+      "id": "adrenal-position-product-control",
+      "lessonIds": [
+        "adrenal-layers-signals-reasoning"
+      ],
+      "kind": "comparison",
+      "title": "Locate a region before answering its product or control question",
+      "headers": [
+        "Region in the schematic",
+        "Introductory product association",
+        "Control distinction"
+      ],
+      "rows": [
+        [
+          "Outer cortex: glomerulosa",
+          "Aldosterone / mineralocorticoids",
+          "Angiotensin II and potassium are important; not exclusive inputs"
+        ],
+        [
+          "Middle cortex: fasciculata",
+          "Cortisol / glucocorticoids",
+          "ACTH is an important input"
+        ],
+        [
+          "Inner cortex: reticularis",
+          "Adrenal androgens",
+          "A product class is not a measured concentration"
+        ],
+        [
+          "Medulla",
+          "Catecholamines",
+          "Sympathetic neural input is a separate relationship"
+        ]
+      ],
+      "caption": "Original schematic comparison, not universal cell-by-cell output, a measured layer thickness or a patient result.",
+      "observe": "Name the region, associated product and relevant input separately before making a functional claim.",
+      "alt": "The three cortical zones have different introductory steroid associations. The medulla is a separate catecholamine-associated compartment; naming products does not measure their release.",
+      "referenceIds": [
+        "adrenal-layers-signals-reasoning"
+      ]
+    },
+    {
+      "id": "pituitary-region-cell-role",
+      "lessonIds": [
+        "pituitary-glandular-neural-orientation"
+      ],
+      "kind": "comparison",
+      "title": "Keep tissue region and cell role connected but distinct",
+      "headers": [
+        "Region or cell category",
+        "Positive role in this comparison",
+        "Distinction to preserve"
+      ],
+      "rows": [
+        [
+          "Pars distalis endocrine populations",
+          "Hormone synthesis in local endocrine epithelial cells",
+          "Broad staining class is not one unique hormone identity"
+        ],
+        [
+          "Pars nervosa axons and terminals",
+          "Transported material, storage and release",
+          "Terminal region is not the neuronal cell-body location"
+        ],
+        [
+          "Pituicytes",
+          "Local supporting glia",
+          "Support is not the hormone-producing neuronal identity"
+        ]
+      ],
+      "caption": "Original semantic comparison and fictional classification task; no source micrograph, real specimen or secretion result reproduced.",
+      "observe": "Explain which region or cell category a statement names before moving from architecture to a hormone-specific or functional claim.",
+      "alt": "Pars distalis has endocrine epithelial populations. Pars nervosa has axons and terminals associated with pituicyte support; production, storage/release and glial roles remain distinct.",
+      "referenceIds": [
+        "pituitary-glandular-neural-orientation"
+      ]
     }
   ]
 }

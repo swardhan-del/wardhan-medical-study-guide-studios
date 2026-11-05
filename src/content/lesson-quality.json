@@ -2266,6 +2266,258 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "thyroid-parathyroid-pattern-reasoning",
+      "title": "Thyroid and parathyroid: compare tissue patterns",
+      "subject": "histology",
+      "topic": "EMII endocrine architecture: original tissue and compartment explanations",
+      "slug": "thyroid-parathyroid-pattern-reasoning",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Distinguish a follicular lumen from nearby vascular and interstitial compartments.",
+        "Connect thyroglobulin storage with a bounded uptake/processing sequence.",
+        "Compare chief-cell/PTH context without a universal stain or age shortcut.",
+        "Trace a declared compartment path and state its limits."
+      ],
+      "sources": [
+        {
+          "title": "Human Protein Atlas: thyroid tissue context",
+          "url": "https://www.proteinatlas.org/humanproteome/tissue/thyroid%2Bgland",
+          "publisherOrAuthor": "Human Protein Atlas",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Human Protein Atlas: parathyroid tissue context",
+          "url": "https://www.proteinatlas.org/humanproteome/tissue/parathyroid%2Bgland",
+          "publisherOrAuthor": "Human Protein Atlas",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Normal human parathyroid: histochemical and ultrastructural study (1983)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6876222/",
+          "publisherOrAuthor": "Authors named in linked chapter or publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Endotext: Thyroid hormone synthesis and secretion",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK285550/",
+          "publisherOrAuthor": "Authors named in linked chapter or publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+          "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html",
+          "publisherOrAuthor": "Duke Histology faculty",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Endotext: Ontogeny, Anatomy, Metabolism and Physiology of the Thyroid",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK285554/",
+          "publisherOrAuthor": "Authors named in linked chapter or publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology, Parathyroid Gland: chief-cell secretory organization",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK546596/",
+          "publisherOrAuthor": "Authors named in linked chapter or publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brown et al. (1993): extracellular calcium-sensing receptor cloned from bovine parathyroid",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8255296/",
+          "publisherOrAuthor": "Authors named in linked chapter or publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Three new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Original declared classroom models; no real specimen, recognition validation, hormone concentration or secretion rate.",
+        "AI-assisted review; no independent clinical or human accessibility certification.",
+        "Selected architecture introduction; broader endocrine, hypothalamic and autonomic course coverage remains incomplete."
+      ],
+      "reviewEvidenceIds": [
+        "thyroid-parathyroid-pattern-reasoning-editorial-20261105",
+        "thyroid-parathyroid-pattern-reasoning-readability-20261105",
+        "thyroid-parathyroid-pattern-reasoning-visual-20261105",
+        "thyroid-parathyroid-pattern-reasoning-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy"
+        ],
+        "related": [
+          "epithelia",
+          "protein-trafficking",
+          "endocrine-feedback"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "adrenal-layers-signals-reasoning",
+      "title": "Adrenal gland: layers, products and signals",
+      "subject": "histology",
+      "topic": "EMII endocrine architecture: original tissue and compartment explanations",
+      "slug": "adrenal-layers-signals-reasoning",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Orient a conventional capsule-to-medulla sequence.",
+        "Keep location, product association and control setting separate.",
+        "Calculate an illustrative oblique path without turning it into tissue thickness or volume.",
+        "Distinguish a complete schematic from a cropped field."
+      ],
+      "sources": [
+        {
+          "title": "Human Protein Atlas: adrenal tissue context",
+          "url": "https://www.proteinatlas.org/humanproteome/tissue/adrenal%2Bgland",
+          "publisherOrAuthor": "Human Protein Atlas",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Endotext: ACTH Action on the Adrenals",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK279118/",
+          "publisherOrAuthor": "Authors named in linked chapter or publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+          "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html",
+          "publisherOrAuthor": "Duke Histology faculty",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: human adrenal H&E, MH 155a — tissue organization",
+          "url": "https://www.histologyguide.org/slideview/MH-155a-adrenal/13-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Three new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Original declared classroom models; no real specimen, recognition validation, hormone concentration or secretion rate.",
+        "AI-assisted review; no independent clinical or human accessibility certification.",
+        "Selected architecture introduction; broader endocrine, hypothalamic and autonomic course coverage remains incomplete."
+      ],
+      "reviewEvidenceIds": [
+        "adrenal-layers-signals-reasoning-editorial-20261105",
+        "adrenal-layers-signals-reasoning-readability-20261105",
+        "adrenal-layers-signals-reasoning-visual-20261105",
+        "adrenal-layers-signals-reasoning-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy"
+        ],
+        "related": [
+          "autonomic-signalling",
+          "endocrine-feedback",
+          "microscopy"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "pituitary-glandular-neural-orientation",
+      "title": "Pituitary tissue: glandular and neural regions",
+      "subject": "histology",
+      "topic": "EMII endocrine architecture: original tissue and compartment explanations",
+      "slug": "pituitary-glandular-neural-orientation",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Compare glandular epithelial and axonal/glial regional organization.",
+        "Explain why a broad staining class does not uniquely select one hormone-producing type.",
+        "Separate neuronal production, axonal transport, terminal storage/release and glial support.",
+        "Use a structural clue without claiming actual specimen-recognition performance."
+      ],
+      "sources": [
+        {
+          "title": "Human Protein Atlas: pituitary tissue context",
+          "url": "https://www.proteinatlas.org/humanproteome/tissue/pituitary%2Bgland",
+          "publisherOrAuthor": "Human Protein Atlas",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Endotext: Development and Microscopic Anatomy of the Pituitary Gland",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK425703/",
+          "publisherOrAuthor": "Authors named in linked chapter or publication",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+          "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html",
+          "publisherOrAuthor": "Duke Histology faculty",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Three new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-05",
+      "limitations": [
+        "Original declared classroom models; no real specimen, recognition validation, hormone concentration or secretion rate.",
+        "AI-assisted review; no independent clinical or human accessibility certification.",
+        "Selected architecture introduction; broader endocrine, hypothalamic and autonomic course coverage remains incomplete."
+      ],
+      "reviewEvidenceIds": [
+        "pituitary-glandular-neural-orientation-editorial-20261105",
+        "pituitary-glandular-neural-orientation-readability-20261105",
+        "pituitary-glandular-neural-orientation-visual-20261105",
+        "pituitary-glandular-neural-orientation-accessibility-20261105"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy"
+        ],
+        "related": [
+          "endocrine-feedback",
+          "protein-trafficking",
+          "microscopy"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
