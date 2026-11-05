@@ -9603,6 +9603,161 @@
       ]
     },
     {
+      "id": "pentose-phosphate-nadph-ribose",
+      "subject": "biochemistry",
+      "title": "Pentose phosphate pathway: separate NADPH from ribose needs",
+      "summary": "Separate oxidative products, pentose isomerization, carbon rearrangements and NADPH use through explicit invented ledgers.",
+      "updatedAt": "2026-11-05",
+      "minutes": 24,
+      "tags": [
+        "biochemistry",
+        "Metabolic pathways",
+        "pentose phosphate",
+        "NADPH",
+        "ribulose",
+        "ribose",
+        "carbon balance",
+        "glutathione"
+      ],
+      "source": "original-pentose-reaction-ledgers",
+      "section": "Carbohydrate branch points and reducing-equivalent bookkeeping",
+      "objectives": [
+        "Distinguish reducing-equivalent production from sugar-phosphate interconversion.",
+        "Explain an erythrocyte redox example without assuming a fixed pathway flux.",
+        "Name the immediate pentose product and distinguish its later isomerization.",
+        "Compute a stipulated single-pass carbon and NADPH balance without assigning ATP yield.",
+        "Cancel shared intermediates in a selected two-reaction rearrangement pair.",
+        "Distinguish balanced reaction bookkeeping from physiological net flux.",
+        "Keep the selected erythrocyte observation within its stated variant and experimental conditions."
+      ],
+      "steps": [
+        {
+          "title": "Start at the branch point",
+          "body": "Glucose-6-phosphate can enter the pentose phosphate pathway as well as other metabolic routes. The oxidative branch produces NADPH and a five-carbon sugar phosphate. NADPH provides reducing power for several reactions; it is a different bookkeeping pool from ATP."
+        },
+        {
+          "title": "Name the immediate pentose product",
+          "body": "In the oxidative sequence, glucose-6-phosphate first undergoes an NADP+-linked oxidation to a lactone. Hydrolysis opens the lactone to 6-phosphogluconate. The next NADP+-linked oxidation releases CO2 and yields ribulose-5-phosphate. Ribulose-5-phosphate and ribose-5-phosphate are different molecules; an isomerase interconverts them. A diagram labelled only pentose hides this distinction. [1, 2, 3, 4]"
+        },
+        {
+          "title": "Keep a separate redox ledger",
+          "body": "One complete pass through these three oxidative reactions reduces two NADP+ molecules to two NADPH molecules: one at each dehydrogenase. The hydrolysis step adds no NADPH. NADPH counts reducing equivalents in this ledger, not ATP molecules. This is reaction stoichiometry, not a prediction of a cell’s pathway rate. [1, 2, 3]"
+        },
+        {
+          "title": "Work a bounded carbon example",
+          "body": "Invent a batch of three glucose-6-phosphate molecules entering the oxidative sequence once each, with no diversion or recycling. Eighteen substrate carbon atoms become fifteen in three ribulose-5-phosphate molecules and three in three CO2 molecules. The redox ledger gives six NADPH. Isomerizing all three pentoses to ribose-5-phosphate would add no further NADPH. The stipulated batch does not describe a measured tissue flux. [1, 2, 3, 4]"
+        },
+        {
+          "title": "Follow the carbon separately",
+          "body": "The non-oxidative branch interconverts sugar phosphates, linking pentose phosphates with intermediates associated with glycolysis. These reversible reactions let the pathway connect changing needs for ribose-containing molecules and reducing power; a pathway diagram does not by itself measure the direction or magnitude of flux in a particular cell."
+        },
+        {
+          "title": "Read rearrangements in both directions",
+          "body": "Consider the transketolase reaction written as xylulose-5-phosphate plus ribose-5-phosphate forming glyceraldehyde-3-phosphate plus sedoheptulose-7-phosphate. Carbon counts are 5 + 5 = 3 + 7. Transaldolase can then pair that seven-carbon sugar with the three-carbon intermediate to form erythrose-4-phosphate and fructose-6-phosphate: 7 + 3 = 4 + 6. Adding these two written steps cancels the shared intermediates and leaves a ten-carbon balance. This is a selected reaction pair, not the complete net equation for every non-oxidative pathway mode. [5, 6]"
+        },
+        {
+          "title": "Do not infer flux from a balanced arrow",
+          "body": "Neither selected rearrangement has NADPH or ATP in its written reaction. Reversing a sugar rearrangement therefore does not reverse an NADPH-producing oxidation. A carbon-balanced equation establishes allowable bookkeeping; substrate availability, enzyme activity and competing demands are separate questions. It cannot establish a universal glucose percentage or reaction direction in every cell. [5, 6]"
+        },
+        {
+          "title": "Apply the idea to red blood cells",
+          "body": "In erythrocytes, NADPH supports regeneration of reduced glutathione, which participates in defense against oxidative damage. This is a mechanistic relationship, not a diagnostic interpretation. The contribution of any route depends on conditions; do not assume a fixed percentage of glucose enters the pathway in all states."
+        },
+        {
+          "title": "Connect reducing power to a specific reaction",
+          "body": "Read glutathione reductase in the reduction direction: glutathione disulfide plus NADPH and a proton gives two reduced glutathione molecules and NADP+. This is an enzymatic coupling between the NADPH pool and glutathione recycling, not conversion of NADPH into ATP. The nomenclature record prints the reverse bookkeeping direction; follow the named substrates and products rather than assuming every displayed arrow represents the cellular net direction. Erythrocyte physiology needs its own stage- and condition-specific evidence. [7]"
+        },
+        {
+          "title": "Keep the erythrocyte experiment inside its conditions",
+          "body": "A selected 1976 study examined human Mediterranean-variant G6PD-deficient erythrocytes under mild oxidative stimulation. Its abstract reports lower NADPH with insufficient glutathione disulfide reduction. [8] This is a bounded redox example, not a universal normal-cell pathway fraction or a diagnosis from a diagram. Full experimental methods were not reviewed."
+        },
+        {
+          "title": "Avoid a common shortcut",
+          "body": "Ribose production and NADPH production are connected but are not interchangeable outcomes. Before predicting a pathway response, specify the cell type, conditions, available substrates and what was actually measured. This lesson is not a guide to interpreting a patient result."
+        },
+        {
+          "title": "Separate a result from a clinical conclusion",
+          "body": "If a teaching account reports NADPH production, first ask which reactions and how many passes were counted. If it reports sugar output, identify the named pentose and any later rearrangement. Neither ledger alone determines a diagnosis, a patient’s oxidative injury, or the share of glucose using this route. Clinical interpretation, fixed flux fractions and treatment instructions are outside this proposed lesson. [1, 3, 4, 7]"
+        }
+      ],
+      "prerequisites": [
+        "biochemistry-enzyme-foundations",
+        "glycolysis"
+      ],
+      "question": {
+        "prompt": "What is the best distinction between the oxidative and non-oxidative branches in this introductory model?",
+        "options": [
+          {
+            "text": "The oxidative branch produces NADPH; the non-oxidative branch interconverts sugar phosphates.",
+            "reason": "The branches perform different linked roles; actual net flux depends on the cell and conditions."
+          },
+          {
+            "text": "Both branches exist only to make ATP directly.",
+            "reason": "The pathway is discussed here in terms of reducing power and sugar-phosphate rearrangement, not direct ATP production."
+          },
+          {
+            "text": "A fixed fraction of glucose always enters the pathway.",
+            "reason": "The fraction changes with cell type and conditions and cannot be inferred from a generic diagram."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "How do the carbon ledger and the reducing-equivalent ledger answer different questions?",
+        "answer": "The carbon ledger tracks named carbon-containing molecules and CO2. The redox ledger counts NADP+ reduction to NADPH in specified reactions. Neither alone supplies a cell’s flux or a patient interpretation."
+      },
+      "workedExample": {
+        "title": "Follow three stipulated oxidative passes",
+        "prompt": "An invented batch contains three glucose-6-phosphate molecules. Each completes one oxidative pass; no diversion or recycling occurs. All pentose products are then isomerized to ribose-5-phosphate. Count carbon and NADPH before and after isomerization.",
+        "solution": [
+          "Start with 3 × 6 = 18 carbon atoms in the stipulated glucose-6-phosphate inputs.",
+          "The oxidative passes produce 3 × 5 = 15 carbon atoms in ribulose-5-phosphate and 3 × 1 = 3 in CO2: 18 = 15 + 3.",
+          "The two oxidative dehydrogenase steps per pass produce 3 × 2 = 6 NADPH. This is not six ATP.",
+          "Isomerization changes the named pentose product to ribose-5-phosphate without adding NADPH or losing carbon in that written reaction.",
+          "No time, tissue flux fraction or clinical measurement was stipulated. These counts cannot supply them."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Why distinguish ribulose-5-phosphate from ribose-5-phosphate?",
+          "answer": "The oxidative decarboxylation gives ribulose-5-phosphate. An isomerase interconverts it with ribose-5-phosphate; the molecules are not interchangeable names."
+        },
+        {
+          "prompt": "Where do the two NADPH per oxidative pass arise?",
+          "answer": "One arises at glucose-6-phosphate dehydrogenase and one at 6-phosphogluconate dehydrogenase. Lactone hydrolysis adds none."
+        },
+        {
+          "prompt": "What does the three-pass carbon equation 18 = 15 + 3 mean?",
+          "answer": "Fifteen input-derived carbon atoms remain in three pentose products and three leave as three CO2 molecules under the stipulated no-diversion, no-recycling model."
+        },
+        {
+          "prompt": "Why can C3 and C7 cancel in the selected two-reaction example?",
+          "answer": "They are generated by the first written reaction and used by the second. Cancellation leaves C5 + C5 → C4 + C6, a ten-carbon balance for this pair only."
+        },
+        {
+          "prompt": "Does the glutathione reductase equation mean more NADPH always guarantees better cell function?",
+          "answer": "No. It states a specified reaction relationship. Enzyme behavior, conditions and cellular measurements require separate evidence."
+        },
+        {
+          "prompt": "Can these invented ledgers identify a fixed fraction of glucose using PPP in a red cell?",
+          "answer": "No. Reaction stoichiometry does not specify pathway rate, tissue allocation, erythroid stage or the conditions of a measured cell."
+        }
+      ],
+      "summaryChecklist": [
+        "Name the immediate oxidative pentose and its isomerization product.",
+        "Keep carbon, NADPH and ATP counts separate.",
+        "State pass count, diversion and recycling assumptions before calculating.",
+        "Cancel only shared intermediates in the stated reaction pair.",
+        "Explain the selected NADPH–glutathione coupling without a clinical conclusion.",
+        "Identify what conditions and measurements are missing before discussing net flux."
+      ],
+      "related": [
+        "glycolysis",
+        "lipid-metabolism",
+        "serine-one-carbon-donor-carrier-cofactor"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

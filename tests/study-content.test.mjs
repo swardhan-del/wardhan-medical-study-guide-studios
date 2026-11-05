@@ -7,7 +7,7 @@ test("each concept introduction has a public topic reference", () => {
   const lessons = read("../src/content/library-lessons.json").lessons;
   const refs = read("../src/content/lesson-references.json");
   const auxiliary = Object.keys(refs).filter(id => !lessons.some(l => l.id === id));
-  assert.deepEqual(auxiliary, ["vascular-network-model-reference", "ganglia-branch-relay-reference", "serine-reaction-role-reference", "lung-observation-unit-reference"]);
+  assert.deepEqual(auxiliary, ["vascular-network-model-reference", "ganglia-branch-relay-reference", "serine-reaction-role-reference", "lung-observation-unit-reference", "pentose-oxidative-endpoint-reference", "pentose-isomerase-reference", "pentose-transketolase-reference", "pentose-transaldolase-reference"]);
   assert.equal(refs["lung-observation-unit-reference"].url, "https://pubmed.ncbi.nlm.nih.gov/41484334/");
   assert(read("../src/content/lesson-visuals.json").visuals.some(v => v.id === "lung-observation-units" && v.referenceIds.includes("lung-observation-unit-reference")));
   assert.equal(refs[auxiliary[0]].url, "https://cvphysiology.com/hemodynamics/h004");

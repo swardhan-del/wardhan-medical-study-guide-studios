@@ -3389,6 +3389,21 @@
       ],
       "figureIds": [],
       "rationale": "Original semantic comparison and nine-part explanation inspected on desktop/mobile, with keyboard text alternative, no Axe violations in the tested state and no page overflow at 320px/200% text. No source molecular diagram or measured data reproduced."
+    },
+    {
+      "id": "pentose-phosphate-nadph-ribose",
+      "route": "/library/pentose-phosphate-nadph-ribose",
+      "title": "Pentose phosphate pathway: separate NADPH from ribose needs",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "pentose-carbon-redox-ledgers"
+      ],
+      "figureIds": [],
+      "rationale": "Original3-row carbon/NADPH comparison. Actual desktop/mobile and320px/200%-text local dev captures inspected; source-footer coverage and readable labels corrected. Keyboard/disclosures/persistence and automated accessibility passed. Full production CI and exact hosted preview gates remain required."
     }
   ]
 }

@@ -1,0 +1,15 @@
+# Pentose phosphate: carbon and NADPH ledgers
+
+Add one twelve-part native lesson for a missing learning journey: distinguish the immediate oxidative pentose, later isomerization, reducing-equivalent counts and selected carbon rearrangements. Preserve the four original private candidate explanations and explained introductory question, then compose eight deeper explanations, five explained applications, a worked batch ledger, six oral answers/checks and an original three-row comparison. Existing glycolysis, lipid and serine lessons remain unchanged.
+
+The selected educational-source identity was checked against its explicit revision/hash audit. Individual official enzyme records support the reaction accounting; an inconsistent cofactor line in an overview is excluded. The primary human erythrocyte abstract remains bounded to its stated deficient variant and stimulation; full methods, a universal glucose fraction and individual diagnosis are not claimed. Reaction equations do not by themselves establish physiological flux. All quantities in the batch examples are invented, with pass count, diversion and recycling assumptions explicit.
+
+No raw source guide, textbook/course passage, source exam question, pathway/research figure, patient record, private source path or credential is published. The one map addition is an original concept group, not a manufactured source chapter or exam topic. Existing carbohydrate print part03 gains the lesson once; its label and coverage explicitly retain the broader incomplete gluconeogenesis/carbohydrate scope.
+
+Editorial/source and readability review are AI-assisted. Actual desktop/mobile and320px/200%-text local development-render inspection, keyboard/disclosure/persistence and automated accessibility checks passed. Citation coverage and narrow-layout labels were corrected after inspection. Local production rendering encountered a generated-cache ENOTEMPTY filesystem error; the production build and full regression suite must still pass in CI, and the exact hosted preview must be checked before release. No build or branch validator was weakened. Indexing eligibility is now approved for the reviewed inline build; production release remains pending. Content fingerprint: `03659a3f0b03e5c12d4f761e8906fc67e91437c6353c70af8612ccfc31dd70d2`. The original visual has a separate content hash in its rendered review; the framework fingerprint does not cover that visual.
+
+Separate canonical visual SHA256: `583fd8588a4a0dca8709ef36a91847498d1568b58d891a4f7f1d5a7cd2b731eb`. All source-footer URLs were inspected against their named reaction records.
+
+The new lesson is placed once after glycolysis in the existing Molecules and metabolism study section. Existing group IDs and all earlier memberships remain unchanged.
+
+Review evidence IDs: `pentose-phosphate-nadph-ribose-editorial-20261105`; `pentose-phosphate-nadph-ribose-readability-20261105`; `pentose-phosphate-nadph-ribose-visual-20261105`; `pentose-phosphate-nadph-ribose-accessibility-20261105`.

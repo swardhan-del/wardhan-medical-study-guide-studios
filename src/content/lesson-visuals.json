@@ -1660,6 +1660,46 @@
       "referenceIds": [
         "ventilation-perfusion"
       ]
+    },
+    {
+      "id": "pentose-carbon-redox-ledgers",
+      "lessonIds": [
+        "pentose-phosphate-nadph-ribose"
+      ],
+      "kind": "comparison",
+      "title": "Keep the specified carbon and NADPH accounts separate",
+      "headers": [
+        "Specified teaching account",
+        "Carbon account",
+        "NADPH produced in that account"
+      ],
+      "rows": [
+        [
+          "Three complete oxidative passes; no recycling",
+          "18 input carbon atoms → 15 in pentoses + 3 in CO2",
+          "6"
+        ],
+        [
+          "Isomerization of those three ribulose-5-phosphate molecules",
+          "Three C5 molecules remain three C5 molecules",
+          "0 additional"
+        ],
+        [
+          "Selected transketolase plus transaldolase pair",
+          "C5 + C5 → C4 + C6 after intermediate cancellation",
+          "0 in the selected pair"
+        ]
+      ],
+      "caption": "Invented molecule counts, not measured cell fluxes. Row three counts only the two named reactions, not the full non-oxidative network.",
+      "observe": "Compare what changes in each row. Identify an account that changes the named pentose without adding NADPH.",
+      "alt": "Three oxidative passes account for 18 carbon atoms as 15 in pentoses and 3 in carbon dioxide, with six NADPH. Pentose isomerization adds no NADPH. The selected two-reaction sugar rearrangement conserves ten carbons and adds no NADPH.",
+      "referenceIds": [
+        "pentose-phosphate-nadph-ribose",
+        "pentose-oxidative-endpoint-reference",
+        "pentose-isomerase-reference",
+        "pentose-transketolase-reference",
+        "pentose-transaldolase-reference"
+      ]
     }
   ]
 }
