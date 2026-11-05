@@ -1,5 +1,8 @@
 import data from "@/content/public-figures.json";
-export type PublicFigure = (typeof data.figures)[number];
+export type PublicFigure = (typeof data.figures)[number] & {
+  licenseUrl?: string;
+  panelDescriptions?: { label: string; text: string }[];
+};
 export const publicFigures = data.figures;
 export const figuresForTopic = (id: string) =>
   publicFigures.filter((f) => f.topicIds.includes(id));

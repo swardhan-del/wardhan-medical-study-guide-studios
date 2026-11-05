@@ -644,6 +644,63 @@
       "publicApproval": "Requested selected source-checked website adaptations and original educational visuals, 2026-09-08.",
       "modifications": "Full frame, proportional resizing and metadata removal only; no generative edits, cropping, relabelling or scientific changes.",
       "observe": "Distinguish conducting from exchange regions. Compare the solid oxygen-rich washout signal with the dashed nitrogen signal; explain why an uncalibrated sketch cannot provide a dead-space volume."
+    },
+    {
+      "id": "human-pancreas-development",
+      "title": "Human pancreatic development: buds, position and growth",
+      "sourceAsset": "images/figures/human-pancreas-development-villalba-2024.png",
+      "kind": "research-figure",
+      "alt": "Composite fluorescence research figure locating the human developing pancreas, comparing separate and fused buds, and plotting dimensions across post-conceptional age. Panel descriptions and scale information follow the image.",
+      "caption": "Villalba et al. (2024), Figure 1. Human developmental specimens, not adult H&E. PCW denotes post-conceptional weeks; different specimens are compared, not followed as a time-lapse. SOX9 also labels non-pancreatic structures.",
+      "rights": "Villalba A, Gitton Y, Inoue M, et al. A 3D atlas of the human developing pancreas to explore progenitor proliferation and differentiation. Diabetologia 67:1066–1078 (2024). Figure 1. © The Author(s) 2024. CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": "docs/reviews/liver-pancreas-depth-20261106.md",
+      "sourceUrl": "https://link.springer.com/article/10.1007/s00125-024-06143-2/figures/1",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-liver-pancreas"
+      ],
+      "resourceIds": [
+        "liver-pancreas"
+      ],
+      "width": 1830,
+      "height": 2380,
+      "src": "/images/figures/human-pancreas-development-villalba-2024.png",
+      "variants": [
+        {
+          "src": "/images/figures/human-pancreas-development-villalba-2024.png",
+          "width": 1830,
+          "height": 2380,
+          "bytes": 2785834
+        }
+      ],
+      "publicApproval": "Owner-authorised audited educational release; publisher CC BY 4.0 terms and figure-specific credits reviewed.",
+      "modifications": "Reproduced unchanged from the publisher PNG; no cropping, relabelling, recolouring or generated image content.",
+      "observe": "Compare panels c and d for separate and fused buds. Use scale bars before comparing dimensions, then distinguish an age-associated observation from a causal experiment.",
+      "panelDescriptions": [
+        {
+          "label": "Panels a and a′: whole-specimen orientation",
+          "text": "Frontal and lateral views locate the pancreas in magenta in a PCW 7 specimen. SOX9 signal is also present in other organs and cartilage; it is not a pancreas-exclusive label. Scale bars: 2 mm."
+        },
+        {
+          "label": "Panel b: sagittal relationships",
+          "text": "SOX9 and TH-labelled structures show the pancreatic region in relation to surrounding anatomy. Read the published channel labels, rather than treating fluorescence colours as H&E colours. Scale bar: 500 µm."
+        },
+        {
+          "label": "Panels c and d: compare buds",
+          "text": "Panel c labels separate dorsal and ventral buds at PCW 5.7; panel d shows a fused configuration at PCW 6.4. These are different staged specimens. Scale bars: 200 µm."
+        },
+        {
+          "label": "Panel e: dissected pancreatic shapes",
+          "text": "The series spans PCW 5–11 and shows changes in shape and size. Use the 500-µm scale bars; equal display height does not mean equal physical size."
+        },
+        {
+          "label": "Panels f–h: dimensions and their relationship",
+          "text": "The plots report pancreatic length, diameter and the length-to-diameter relationship across sampled ages. They summarise a cross-sectional growth series, not repeated measurements of one embryo or a test of a causal signal."
+        }
+      ]
     }
   ]
 }

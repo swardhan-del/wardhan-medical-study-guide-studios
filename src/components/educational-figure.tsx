@@ -47,7 +47,7 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
   }
   return (
     <StudyVisual className="educational-figure" id={"figure-" + figure.id} title={figure.title} alt={figure.alt} caption={figure.caption} observe={figure.observe}
-      credit={`${figure.rights}. ${figure.modifications}`} sources={[{ title: "Image source or supporting scientific reference", url: figure.sourceUrl }]}>
+      credit={`${figure.rights}. ${figure.modifications}`} sources={[{ title: "Image source or supporting scientific reference", url: figure.sourceUrl }, ...(figure.licenseUrl ? [{ title: "Image reuse licence: CC BY 4.0", url: figure.licenseUrl }] : [])]}>
       {failed ? <div className="visual-image-fallback" role="status"><p><strong>Image unavailable.</strong> {figure.alt}</p><button ref={trigger} onClick={enlarge}>Try the full-size image</button></div> : <button
         ref={trigger}
         className="figure-open"
@@ -68,6 +68,11 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
         />
         <span>Enlarge and zoom</span>
       </button>}
+      {figure.panelDescriptions && <details className="figure-panel-guide">
+        <summary>Read the figure panel by panel</summary>
+        <p>Use the original labels and scale bars. These text descriptions remain available if the image cannot load.</p>
+        <dl>{figure.panelDescriptions.map(panel => <div key={panel.label}><dt><strong>{panel.label}</strong></dt><dd>{panel.text}</dd></div>)}</dl>
+      </details>}
       <dialog
         className="figure-dialog"
         ref={dialog}

@@ -41,12 +41,14 @@ for (const f of figures) {
       "Unknown figure resource " + id,
     );
   for (const v of f.variants) {
-    assert(/^\/images\/figures\/[a-z0-9-]+\.webp$/.test(v.src));
+    assert(/^\/images\/figures\/[a-z0-9-]+\.(webp|png)$/.test(v.src));
     assert(
       release.assets.some((a) => "/" + a.path === v.src),
       "Derivative missing release evidence",
     );
     const m = await sharp("public" + v.src).metadata();
+    assert.equal(m.format, v.src.endsWith(".png") ? "png" : "webp", "Asset extension and decoded format differ");
+    assert.equal(fs.statSync("public" + v.src).size, v.bytes, "Figure byte count differs");
     assert(
       !m.exif && !m.xmp && !m.iptc && !m.icc,
       "Unexpected metadata in " + v.src,
@@ -60,6 +62,8 @@ for (const f of figures) {
     assert(v.width <= f.width, "Upscaled source");
   }
   assert.equal(f.src, f.variants.at(-1).src);
+  if (f.licenseUrl) assert.equal(f.licenseUrl, "https://creativecommons.org/licenses/by/4.0/");
+  if (f.panelDescriptions) assert(f.panelDescriptions.length > 0 && f.panelDescriptions.every(p => p.label && p.text.length > 30));
 }
 console.log(
   `Figure checks passed: ${figures.length} approved figures, responsive variants, mapped topics, preserved proportions and stripped metadata.`,

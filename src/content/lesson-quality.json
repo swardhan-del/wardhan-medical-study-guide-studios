@@ -3010,6 +3010,177 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "liver-pancreas",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "subject": "histology",
+      "topic": "Hepatobiliary and pancreatic microscopic anatomy and embryology",
+      "slug": "liver-pancreas",
+      "learnerLevel": "Medical sciences: practical identification and developmental mechanisms",
+      "objectives": [
+        "Distinguish portal tracts, central veins, sinusoids, Disse and canaliculi using location and lining.",
+        "Identify gallbladder, pancreatic acini, ducts and islets with more than one positive clue.",
+        "Choose stains and controls for an architectural or material question.",
+        "Explain epithelial and supporting contributions, pancreatic buds and duct morphogenesis.",
+        "Interpret human developmental images and selected experimental evidence without conflating identity, lineage and function."
+      ],
+      "sources": [
+        {
+          "title": "AASLD: normal liver histology",
+          "url": "https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/normal-liver-histology-101",
+          "publisherOrAuthor": "AASLD",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia University: liver practical",
+          "url": "https://histologylab.ctl.columbia.edu/lab17/liver/",
+          "publisherOrAuthor": "Columbia University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University: digestive cells and compartments",
+          "url": "https://histology.siu.edu/erg/gicells.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia University: gallbladder practical",
+          "url": "https://histologylab.ctl.columbia.edu/lab17/gall-bladder/",
+          "publisherOrAuthor": "Columbia University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University: digestive glands",
+          "url": "https://histology.siu.edu/erg/glands.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "AASLD: liver biopsy special stains",
+          "url": "https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/liver-biopsy-interpretation-special-stains",
+          "publisherOrAuthor": "AASLD",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Basel: pancreatic acinar polarity",
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/drusen-allgemeine-histologie-40/pancreas-exocrine-portion-228",
+          "publisherOrAuthor": "University of Basel",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia University: exocrine and endocrine pancreas",
+          "url": "https://histologylab.ctl.columbia.edu/lab17/exocrine-and-endocrine-pancreas/",
+          "publisherOrAuthor": "Columbia University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: human pancreatic section MH 131",
+          "url": "https://www.histologyguide.org/slideview/MH-131-pancreas/12-slide-1.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Villalba et al. (2024): three-dimensional human pancreatic development",
+          "url": "https://link.springer.com/article/10.1007/s00125-024-06143-2",
+          "publisherOrAuthor": "Villalba et al. (2024)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Duke University: selected foregut developmental relationships",
+          "url": "https://embryology.oit.duke.edu/GI/GI.html",
+          "publisherOrAuthor": "Duke University",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Rossi et al. (2001): BMP and FGF in mouse hepatic induction",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC312750/",
+          "publisherOrAuthor": "Rossi et al. (2001)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Hofmann et al. (2010): Jagged1 and mouse bile-duct morphogenesis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2976287/",
+          "publisherOrAuthor": "Hofmann et al. (2010)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Pan and Brissova (2014): human pancreatic bud contributions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4753768/",
+          "publisherOrAuthor": "NASPGHAN",
+          "accessedAt": "2026-11-05",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Schaffer et al. (2010): pancreatic lineage allocation in mice",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3133668/",
+          "publisherOrAuthor": "Schaffer et al. (2010)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Gradwohl et al. (2000): mouse pancreatic endocrine specification",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC26482/",
+          "publisherOrAuthor": "Gradwohl et al. (2000)",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        },
+        {
+          "title": "Türkvatan et al. (2013): pancreatic duct anatomy and variants",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3835637/",
+          "publisherOrAuthor": "Türkvatan et al.",
+          "accessedAt": "2026-11-05",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Unchanged licensed human pancreatic research figure with five panel descriptions; original-size zoom, exact-hash download, keyboard focus return and image-failure text verified. Four conceptual route controls reviewed. No new adult organ micrograph.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-05",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted source and editorial review; independent medical review remains outstanding.",
+        "Developmental fluorescence imaging is not an adult H&E identification test.",
+        "Animal and explant experiments retain species, stage and readout limits; no clinical treatment claims."
+      ],
+      "reviewEvidenceIds": [
+        "liver-pancreas-editorial-depth-20261106",
+        "liver-pancreas-visual-depth-20261106",
+        "liver-pancreas-accessibility-depth-20261106",
+        "liver-pancreas-readability-depth-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia"
+        ],
+        "related": [
+          "gi-histology",
+          "digestive-control",
+          "foregut-development",
+          "pancreas-relations"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

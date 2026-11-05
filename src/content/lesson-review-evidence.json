@@ -1573,6 +1573,50 @@
       "independent": false,
       "record": "docs/reviews/gi-depth-20261105.md",
       "contentSha256": "5cdd1cd48f103f8f090cbb9fd58894eb875930c357e6c9937cfe7b2b64f225bc"
+    },
+    {
+      "id": "liver-pancreas-editorial-depth-20261106",
+      "lessonId": "liver-pancreas",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted source review",
+      "qualification": "Automated assistant; no independent medical certification",
+      "independent": false,
+      "record": "docs/reviews/liver-pancreas-depth-20261106.md",
+      "contentSha256": "b8cc78b036c84aa8894da5efb98aa3bcb5c8cb7c66960a149157d7ce00531a2a"
+    },
+    {
+      "id": "liver-pancreas-visual-depth-20261106",
+      "lessonId": "liver-pancreas",
+      "scope": "visual",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered-browser review",
+      "qualification": "Automated assistant; no independent medical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/liver-pancreas-depth-20261106.md",
+      "contentSha256": "b8cc78b036c84aa8894da5efb98aa3bcb5c8cb7c66960a149157d7ce00531a2a"
+    },
+    {
+      "id": "liver-pancreas-accessibility-depth-20261106",
+      "lessonId": "liver-pancreas",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered-browser review",
+      "qualification": "Automated assistant; no independent medical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/liver-pancreas-depth-20261106.md",
+      "contentSha256": "b8cc78b036c84aa8894da5efb98aa3bcb5c8cb7c66960a149157d7ce00531a2a"
+    },
+    {
+      "id": "liver-pancreas-readability-depth-20261106",
+      "lessonId": "liver-pancreas",
+      "scope": "readability",
+      "reviewedAt": "2026-11-05",
+      "reviewer": "Codex AI-assisted rendered-browser review",
+      "qualification": "Automated assistant; no independent medical or human accessibility certification",
+      "independent": false,
+      "record": "docs/reviews/liver-pancreas-depth-20261106.md",
+      "contentSha256": "b8cc78b036c84aa8894da5efb98aa3bcb5c8cb7c66960a149157d7ce00531a2a"
     }
   ]
 }
