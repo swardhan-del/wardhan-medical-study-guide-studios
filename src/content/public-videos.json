@@ -1400,6 +1400,104 @@
         }
       ],
       "mimeType": "video/mp4"
+    },
+    {
+      "id": "neural-nuclear-migration-control",
+      "title": "Nuclear movement: shControl chick preparation",
+      "summary": "Read the shControl chick neural-tube movie: follow a labelled nucleus relative to membrane boundaries and distinguish playback time from biological time.",
+      "subject": "histology",
+      "topicIds": [
+        "topic-neurulation"
+      ],
+      "lessonIds": [
+        "neurulation"
+      ],
+      "durationSeconds": 7.3,
+      "width": 302,
+      "height": 186,
+      "audioContent": "silent",
+      "status": "public",
+      "publicApproval": "Owner-authorized educational release; CC BY4.0 original supplement, source and privacy review recorded 6 November 2026.",
+      "medicalReview": "reviewed",
+      "aiGenerated": false,
+      "sourceUrl": "/media/research/neural-v5.mp4",
+      "posterUrl": "/media/research/neural-v5-poster.png",
+      "captions": [],
+      "transcript": [
+        {
+          "startSeconds": 0,
+          "text": "shControl with DMSO; chick neural-tube slice. Apical left; basal right. Membrane GFP is green; H2B-RFP-labelled nuclei are magenta. These colours label cell components in both conditions. Watch the labelled nucleus relative to the cell and epithelial boundaries; the fixed starting frame cannot itself establish a trajectory."
+        },
+        {
+          "startSeconds": 3.65,
+          "text": "A white path develops as the tracked nucleus is followed. The overlaid path records a selected trajectory. It does not, without calibration and acquisition information, provide a physical speed."
+        },
+        {
+          "startSeconds": 6.57,
+          "text": "Compare the end of the selected trajectory with the earlier position. Return to the study design for independent preparations, target validation, rescue and cell-cycle evidence. Do not infer a universal human effect from this single clip."
+        }
+      ],
+      "mimeType": "video/mp4",
+      "researchContext": {
+        "creator": "Andrea Ochoa, Antonio Herrera, Anghara Menendez, María Estefanell, Carlota Ramos and Sebastian Pons",
+        "title": "Vinculin is required for interkinetic nuclear migration (INM) and cell cycle progression",
+        "url": "https://doi.org/10.1083/jcb.202106169",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Original supplementary Video 5; original movie bytes preserved. Poster is an extracted first frame without added labels.",
+        "condition": "shControl with DMSO; chick neural-tube slice",
+        "key": "Apical left; basal right. Membrane GFP is green; H2B-RFP-labelled nuclei are magenta. These colours label cell components in both conditions.",
+        "limits": "Silent, accelerated, low-resolution research clip. Five-minute acquisition intervals are described in the paper; playback seconds are not biological time. Enlarging the image adds no detail. Two selected clips are not a complete population analysis."
+      }
+    },
+    {
+      "id": "neural-nuclear-migration-vinculin-depletion",
+      "title": "Nuclear movement: shVCL chick preparation",
+      "summary": "Examine the shVCL chick neural-tube movie, then assess target depletion, rescue controls and the limits of a selected nuclear trajectory.",
+      "subject": "histology",
+      "topicIds": [
+        "topic-neurulation"
+      ],
+      "lessonIds": [
+        "neurulation"
+      ],
+      "durationSeconds": 17.566667,
+      "width": 336,
+      "height": 172,
+      "audioContent": "silent",
+      "status": "public",
+      "publicApproval": "Owner-authorized educational release; CC BY4.0 original supplement, source and privacy review recorded 6 November 2026.",
+      "medicalReview": "reviewed",
+      "aiGenerated": false,
+      "sourceUrl": "/media/research/neural-v7.mp4",
+      "posterUrl": "/media/research/neural-v7-poster.png",
+      "captions": [],
+      "transcript": [
+        {
+          "startSeconds": 0,
+          "text": "shVCL with DMSO; chick neural-tube slice. Apical left; basal right. Membrane GFP is green; H2B-RFP-labelled nuclei are magenta. These colours label cell components in both conditions. Watch the labelled nucleus relative to the cell and epithelial boundaries; the fixed starting frame cannot itself establish a trajectory."
+        },
+        {
+          "startSeconds": 8.78,
+          "text": "A blue path develops as the tracked nucleus is followed. The overlaid path records a selected trajectory. It does not, without calibration and acquisition information, provide a physical speed."
+        },
+        {
+          "startSeconds": 15.81,
+          "text": "Compare the end of the selected trajectory with the earlier position. Return to the study design for independent preparations, target validation, rescue and cell-cycle evidence. Do not infer a universal human effect from this single clip."
+        }
+      ],
+      "mimeType": "video/mp4",
+      "researchContext": {
+        "creator": "Andrea Ochoa, Antonio Herrera, Anghara Menendez, María Estefanell, Carlota Ramos and Sebastian Pons",
+        "title": "Vinculin is required for interkinetic nuclear migration (INM) and cell cycle progression",
+        "url": "https://doi.org/10.1083/jcb.202106169",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "credit": "Original supplementary Video 7; original movie bytes preserved. Poster is an extracted first frame without added labels.",
+        "condition": "shVCL with DMSO; chick neural-tube slice",
+        "key": "Apical left; basal right. Membrane GFP is green; H2B-RFP-labelled nuclei are magenta. These colours label cell components in both conditions.",
+        "limits": "Silent, accelerated, low-resolution research clip. Five-minute acquisition intervals are described in the paper; playback seconds are not biological time. Enlarging the image adds no detail. Two selected clips are not a complete population analysis."
+      }
     }
   ]
 }

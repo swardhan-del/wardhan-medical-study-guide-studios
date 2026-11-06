@@ -18,6 +18,17 @@ export type PublicVideo = {
   captions: { src: string; language: string; label: string }[];
   transcript: { startSeconds: number; text: string }[];
   mimeType: "video/mp4" | "video/webm";
+  researchContext?: {
+    creator: string;
+    title: string;
+    url: string;
+    license: string;
+    licenseUrl: string;
+    credit: string;
+    condition: string;
+    key: string;
+    limits: string;
+  };
 };
 export function videoDuration(seconds: number) {
   return (

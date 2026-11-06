@@ -57,6 +57,14 @@ export function validateVideos(data, catalog, taxonomy) {
     );
     safeUrl(v.sourceUrl);
     safeUrl(v.posterUrl);
+    if (v.researchContext !== undefined) {
+      const c = v.researchContext;
+      assert(c && ["creator", "title", "credit", "condition", "key", "limits"].every(k => typeof c[k] === "string" && c[k].trim().length > 10), "Research media require attribution and experimental context");
+      safeUrl(c.url);
+      assert(c.url.startsWith("https://"), "Research source must be an external citation");
+      assert.equal(c.license, "CC BY 4.0", "Research media licence requires review");
+      assert.equal(c.licenseUrl, "https://creativecommons.org/licenses/by/4.0/");
+    }
     assert(Array.isArray(v.captions) && Array.isArray(v.transcript));
     v.captions.forEach((c) => {
       safeUrl(c.src);

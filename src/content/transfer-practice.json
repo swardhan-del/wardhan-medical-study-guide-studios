@@ -5277,6 +5277,534 @@
       ],
       "answer": 1,
       "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-axes-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-axes-20261106",
+      "prompt": "An isolated neural-tube field shows a central lumen but no notochord or surface ectoderm. Which orientation is best supported?",
+      "options": [
+        {
+          "text": "The luminal wall surface is apical; dorsal/ventral assignment needs wider context.",
+          "explanation": "Correct: epithelial polarity can be related to the lumen without assigning the embryonic body axis."
+        },
+        {
+          "text": "The luminal surface is dorsal because it faces an internal space.",
+          "explanation": "Dorsal is a body-axis designation, not a synonym for luminal or apical."
+        },
+        {
+          "text": "The outer wall is necessarily ventral because it is basal.",
+          "explanation": "Basal epithelial surface and ventral embryonic territory are different coordinates."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-coordinates-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-coordinates-20261106",
+      "prompt": "Where would a developing spinal motor-neuron soma fit in the two coordinate systems?",
+      "options": [
+        {
+          "text": "Marginal zone of an alar plate.",
+          "explanation": "The marginal zone becomes process rich; the alar territory is not the usual ventral motor-soma territory."
+        },
+        {
+          "text": "Mantle region of a basal plate.",
+          "explanation": "Correct: mantle describes wall depth and basal plate describes the ventral territory."
+        },
+        {
+          "text": "Ventricular lumen between an alar and basal layer.",
+          "explanation": "The lumen is a space; alar and basal plates are territories, not concentric layers."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-sensory-soma-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-sensory-soma-20261106",
+      "prompt": "A primary spinal sensory axon enters the dorsal cord. Where is its neuronal soma?",
+      "options": [
+        {
+          "text": "In the dorsal-root ganglion outside the cord.",
+          "explanation": "Correct: distinguish the primary sensory soma from receiving circuitry within the alar-derived territory."
+        },
+        {
+          "text": "In the alar plate because the axon enters dorsally.",
+          "explanation": "An entering axon does not place its soma in the receiving territory."
+        },
+        {
+          "text": "In the ventral horn alongside all spinal neuronal somata.",
+          "explanation": "Ventral motor somata do not account for the external primary sensory ganglion."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-induction-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-induction-20261106",
+      "prompt": "Noggin can bind BMP4, but neural induction still occurred in a Noggin-null mouse study. Which interpretation is justified?",
+      "options": [
+        {
+          "text": "The molecular binding observation must be false.",
+          "explanation": "An organism can have additional interacting signals; a knockout result does not by itself refute binding."
+        },
+        {
+          "text": "Noggin has no developmental role in any species.",
+          "explanation": "The mouse study found later developmental abnormalities; this also overextends the species scope."
+        },
+        {
+          "text": "A molecular interaction and indispensability for a whole-embryo outcome are separate claims.",
+          "explanation": "Correct: evaluate the molecular and organismal experiments at their respective levels."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-polarity-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-polarity-20261106",
+      "prompt": "A constriction regulator is expressed in non-polarized cells. Why may this fail to recreate neural-sheet bending?",
+      "options": [
+        {
+          "text": "The protein would need an appropriate polarized cellular and tissue context.",
+          "explanation": "Correct: localization, polarity and mechanical relationships affect the result of molecular activity."
+        },
+        {
+          "text": "Any expressed constriction regulator should produce a complete tube regardless of context.",
+          "explanation": "This assumes sufficiency beyond the tested polarized-epithelium conditions."
+        },
+        {
+          "text": "A change in cell shape can only result from increased cell number.",
+          "explanation": "Cell geometry and force can change without increasing cell number."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-hinges-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-hinges-20261106",
+      "prompt": "Two neural sections have different hinge geometry. What is the first useful comparison?",
+      "options": [
+        {
+          "text": "Whether both images were enlarged to the same display width.",
+          "explanation": "Equal screen width does not match biological level, stage or physical scale."
+        },
+        {
+          "text": "Species, stage, axial level and section plane.",
+          "explanation": "Correct: hinge geometry varies with context; compare anatomically comparable sections."
+        },
+        {
+          "text": "Whether the darker image has more nuclei.",
+          "explanation": "Signal darkness does not resolve the contextual difference in folding geometry."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-layers-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-layers-20261106",
+      "prompt": "Several rows of DAPI-labelled nuclei are visible in a neuroepithelium. What would best test the number and arrangement of cell layers?",
+      "options": [
+        {
+          "text": "Count each nuclear row as a complete epithelial layer.",
+          "explanation": "A nuclear stain does not delineate the full cells in pseudostratified epithelium."
+        },
+        {
+          "text": "Infer layers from the brightest DAPI intensity.",
+          "explanation": "Intensity is not a map of cell boundaries or complete apical/basal contacts."
+        },
+        {
+          "text": "Trace membrane/junction relationships through suitable optical planes.",
+          "explanation": "Correct: cell boundaries and contacts, with section geometry, address epithelial organization."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-brdu-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-brdu-20261106",
+      "prompt": "An endpoint BrdU-positive nucleus is observed without a recorded pulse/chase interval. Which statement is warranted?",
+      "options": [
+        {
+          "text": "It has incorporated label during the relevant labelling history.",
+          "explanation": "Correct: the missing timing prevents an exact assignment of current phase or transit time."
+        },
+        {
+          "text": "It must be synthesizing DNA at the exact moment the fixed image is viewed.",
+          "explanation": "The retained incorporation signal reflects labelling history, not live activity at viewing."
+        },
+        {
+          "text": "Its distance from the lumen directly gives its migration speed.",
+          "explanation": "A distance without tracked time and calibration is not speed."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-controls-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-controls-20261106",
+      "prompt": "DAPI is bright but a protein-target channel is absent. Which next comparison is most informative?",
+      "options": [
+        {
+          "text": "Only a brighter DAPI exposure of the same field.",
+          "explanation": "Nuclear visibility does not validate target-specific preservation and detection."
+        },
+        {
+          "text": "A known target-positive specimen with matched staining, plus relevant negative controls.",
+          "explanation": "Correct: this helps separate biological absence from detection failure and background."
+        },
+        {
+          "text": "Only the number of cells in a differently processed specimen.",
+          "explanation": "A different cell count does not establish that this target assay worked."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-stain-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-stain-20261106",
+      "prompt": "A cord region is pale in an RNA-directed preparation and dark in a myelin-directed preparation. What explains this?",
+      "options": [
+        {
+          "text": "The region must have changed from grey to white matter during staining.",
+          "explanation": "Staining changes contrast; it does not transform the biological identity of the tissue."
+        },
+        {
+          "text": "The two methods must both measure nuclear DNA.",
+          "explanation": "RNA-rich material and myelin are distinct targets."
+        },
+        {
+          "text": "The methods emphasize different tissue components.",
+          "explanation": "Correct: interpret the target and architecture instead of treating darkness as a universal tissue identity."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-motion-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-motion-20261106",
+      "prompt": "Which observation most directly supports interkinetic nuclear movement?",
+      "options": [
+        {
+          "text": "The same nucleus changes position relative to its cell and epithelial boundaries across timed frames.",
+          "explanation": "Correct: temporal tracking addresses movement within the proliferative epithelial arrangement."
+        },
+        {
+          "text": "Different fixed fields have different numbers of basal nuclei.",
+          "explanation": "Population composition, stage and sectioning can change distributions without demonstrating an individual trajectory."
+        },
+        {
+          "text": "A single cell is positive for a neuronal differentiation marker.",
+          "explanation": "Differentiation state alone does not show a progenitor nucleus moving through time."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-condition-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-condition-20261106",
+      "prompt": "Both research clips show green membranes and magenta nuclei. How should the experimental condition be identified?",
+      "options": [
+        {
+          "text": "Green means control and magenta means vinculin depletion.",
+          "explanation": "Both colours occur in both conditions and label different cellular components."
+        },
+        {
+          "text": "Use the documented shControl versus shVCL condition for each clip.",
+          "explanation": "Correct: the written condition distinguishes the experimental groups; colours identify the labelled components."
+        },
+        {
+          "text": "The longer playback must be the untreated control.",
+          "explanation": "Playback length does not identify a treatment."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-speed-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-speed-20261106",
+      "prompt": "One clip lasts 7.3 seconds and the other about 17.6 seconds. Can those durations establish a nuclear-speed ratio?",
+      "options": [
+        {
+          "text": "Yes, divide the durations and assign the result to cell speed.",
+          "explanation": "Playback duration is not a calibrated displacement-versus-acquisition-time analysis."
+        },
+        {
+          "text": "Yes, if the displayed movies are the same width.",
+          "explanation": "Display width is not physical calibration and does not equalize tracked intervals."
+        },
+        {
+          "text": "No; use calibrated trajectories and matched acquisition information.",
+          "explanation": "Correct: distinguish playback timing, biological timing, displacement and tracking selection."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-reporter-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-reporter-20261106",
+      "prompt": "A fluorescent reporter confirms that a cell received a construct. What remains to validate in a depletion experiment?",
+      "options": [
+        {
+          "text": "The degree and specificity of target reduction.",
+          "explanation": "Correct: a reporter is not itself a quantitative assay of target-protein depletion."
+        },
+        {
+          "text": "Nothing; reporter positivity proves complete target removal.",
+          "explanation": "Construct delivery does not establish the resulting target abundance."
+        },
+        {
+          "text": "Only that the image contains a nucleus.",
+          "explanation": "A nucleus does not validate the intervention or exclude non-specific effects."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-rescue-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-rescue-20261106",
+      "prompt": "A phenotype improves after reintroducing an appropriate target construct. What does this add?",
+      "options": [
+        {
+          "text": "It makes sampling and controls unnecessary.",
+          "explanation": "Rescue does not remove the need for valid comparisons and independent preparations."
+        },
+        {
+          "text": "It strengthens specificity when expression, timing and comparison controls are appropriate.",
+          "explanation": "Correct: recovery is one part of a causal argument, bounded by the experimental design."
+        },
+        {
+          "text": "It establishes that every human neural tube uses the identical quantitative mechanism.",
+          "explanation": "A model-system rescue does not directly establish that universal human claim."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-replication-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-replication-20261106",
+      "prompt": "A study tracks 100 nuclei in one slice from one embryo. How should that sample be described?",
+      "options": [
+        {
+          "text": "One hundred independent embryos.",
+          "explanation": "Cells share the embryo and preparation; they are not 100 biological replicates."
+        },
+        {
+          "text": "One hundred independent experiments with unrelated conditions.",
+          "explanation": "Shared preparation and treatment create a sampling hierarchy."
+        },
+        {
+          "text": "Many cellular observations nested within one biological preparation.",
+          "explanation": "Correct: keep cell, slice and embryo sampling levels explicit."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-lineage-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-lineage-20261106",
+      "prompt": "Only some descendants are labelled by an early inducible lineage system. What is a necessary check before assigning the unlabelled cells another origin?",
+      "options": [
+        {
+          "text": "Labelling efficiency, specificity and induction timing.",
+          "explanation": "Correct: incomplete labelling can leave genuine descendants unlabelled."
+        },
+        {
+          "text": "Whether labelled and unlabelled cells have exactly the same brightness.",
+          "explanation": "Brightness does not establish the tracing system’s efficiency and specificity."
+        },
+        {
+          "text": "Whether all adult cells share one morphology.",
+          "explanation": "Similar morphology is not a substitute for ancestry evidence."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-glia-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-glia-20261106",
+      "prompt": "Which comparison correctly distinguishes developmental relationships?",
+      "options": [
+        {
+          "text": "All glia are neural-crest derivatives because they support neurons.",
+          "explanation": "Shared support functions do not imply one embryonic origin."
+        },
+        {
+          "text": "CNS macroglia and microglia have distinct neural versus myeloid developmental histories.",
+          "explanation": "Correct: cell location and the word glia do not erase the lineage distinction."
+        },
+        {
+          "text": "Microglia must arise from neurons because they reside in CNS tissue.",
+          "explanation": "Residence in the same tissue is not ancestry evidence."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-ependymal-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-ependymal-20261106",
+      "prompt": "Developmental tracing supports a radial-glial contribution to ependyma. Which further claim still requires separate evidence?",
+      "options": [
+        {
+          "text": "There is a developmental relationship in the tested model.",
+          "explanation": "That is the kind of ancestry conclusion supported by the tracing."
+        },
+        {
+          "text": "The developmental experiment can inform another test.",
+          "explanation": "It can motivate a further experiment without establishing its result."
+        },
+        {
+          "text": "The adult lining routinely generates replacement neurons after injury.",
+          "explanation": "Correct: ancestry is not proof of adult regenerative function."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-pns-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-pns-20261106",
+      "prompt": "A motor axon and its Schwann cells occupy one peripheral nerve. Which explanation preserves their origins?",
+      "options": [
+        {
+          "text": "The axon belongs to a neural-tube-derived motor soma; the Schwann cells have neural-crest relationships.",
+          "explanation": "Correct: track soma, axon and glial lineage separately."
+        },
+        {
+          "text": "Both become neural-crest-derived because they are outside the CNS.",
+          "explanation": "Adult location does not reassign a cell’s developmental history."
+        },
+        {
+          "text": "The motor soma must migrate into the nerve before sending the axon.",
+          "explanation": "The spinal motor soma remains in the ventral cord while its axon extends outward."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-secondary-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-secondary-20261106",
+      "prompt": "Which distinction matters when comparing primary and secondary neurulation?",
+      "options": [
+        {
+          "text": "Both are fully described by one epithelial sheet rolling shut at every level.",
+          "explanation": "Secondary and transitional organization need more than repeating the primary-folding schematic."
+        },
+        {
+          "text": "Primary folding and caudal epithelial/lumen organization are related but distinct processes.",
+          "explanation": "Correct: specify cell behaviour, tissue organization and continuity rather than collapsing them into one drawing."
+        },
+        {
+          "text": "Mesenchymal-to-epithelial and epithelial-to-mesenchymal transitions describe the same direction.",
+          "explanation": "These names describe opposite changes in cellular organization."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "neurulation-depth-white-matter-20261106",
+      "topic": "neurulation",
+      "subject": "histology",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "href": "/library/neurulation#question-neurulation-depth-white-matter-20261106",
+      "prompt": "An embryonic marginal region contains many axons. Which additional feature cannot be assumed solely from its position?",
+      "options": [
+        {
+          "text": "It lies outside the mantle region in the simplified spinal plan.",
+          "explanation": "This is a positional description of the developing wall."
+        },
+        {
+          "text": "It is rich in cellular processes.",
+          "explanation": "That is consistent with the stated axon-rich observation."
+        },
+        {
+          "text": "It already has mature myelin throughout.",
+          "explanation": "Correct: axonal accumulation and later myelination are separate features."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
     }
   ]
 }

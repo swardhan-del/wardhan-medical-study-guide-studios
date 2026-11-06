@@ -77,3 +77,13 @@ test("silent teaching clips require a visual description without invented speech
     ),
   );
 });
+
+test("research media retain source, licence and experimental interpretation context", () => {
+  const research = read("public-videos").records.filter(v => v.researchContext);
+  assert.equal(research.length, 2);
+  for (const video of research) {
+    for (const change of [{creator:""}, {url:"javascript:alert(1)"}, {licenseUrl:"https://example.com/unverified"}, {condition:""}, {key:""}, {limits:""}]) {
+      assert.throws(() => validateVideos({version:1, records:[{...video,researchContext:{...video.researchContext,...change}}]},catalog,taxonomy));
+    }
+  }
+});

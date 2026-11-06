@@ -1,0 +1,51 @@
+{
+  "title": "Read a labelled neural-tube section",
+  "regions": [
+    {
+      "id": "lumen",
+      "label": "Neural lumen",
+      "anchor": {
+        "x": 51,
+        "y": 53
+      },
+      "observation": "Central dark space bordered by labelled wall.",
+      "interpretation": "The provider identifies a chick neural tube; the lumen-facing surface is apical.",
+      "limit": "Do not assign dorsal/ventral identity from this isolated field."
+    },
+    {
+      "id": "mitosis",
+      "label": "Apical red-labelled region",
+      "anchor": {
+        "x": 29,
+        "y": 47
+      },
+      "observation": "Red signal near the luminal edge.",
+      "interpretation": "Provider associates this channel with phospho-H3 and mitotic figures",
+      "limit": "A red spot alone is not a complete cell boundary or a speed measurement."
+    },
+    {
+      "id": "incorporation",
+      "label": "Green-labelled outer wall",
+      "anchor": {
+        "x": 81,
+        "y": 68
+      },
+      "observation": "Green signal farther from the lumen in this region.",
+      "interpretation": "Provider associates green labelling with BrdU incorporation",
+      "limit": "Exact pulse/chase interval is unknown."
+    },
+    {
+      "id": "nuclei",
+      "label": "Blue nuclear distribution",
+      "anchor": {
+        "x": 83,
+        "y": 52
+      },
+      "observation": "Blue-labelled nuclei occur at different wall depths.",
+      "interpretation": "The provider identifies DAPI-labelled DNA; nuclear positions do not outline complete cells.",
+      "limit": "Nuclear rows alone cannot establish cell layering or lineage."
+    }
+  ],
+  "model": "I see a central dark lumen and a densely nucleated wall. The provider identifies a chick neural tube. Red phospho-H3-associated signal lies near the luminal edge and green BrdU-associated signal occurs farther out in the selected region. The labels support spatial and labelling relationships, not a measured movement rate or a lineage history. Exact stage, pulse/chase interval, physical scale and dorsal/ventral orientation remain unresolved in this field.",
+  "figureId": "chick-neural-tube-labels"
+}

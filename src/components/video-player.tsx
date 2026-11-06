@@ -9,6 +9,13 @@ export function VideoPlayer({ video }: { video: PublicVideo }) {
   const [error, setError] = useState(false);
   return (
     <section className="native-video" aria-label={video.title}>
+      {video.researchContext && <div className="research-video-context">
+        <p><strong>Experimental condition:</strong> {video.researchContext.condition}</p>
+        <p><strong>Read the image:</strong> {video.researchContext.key}</p>
+        <p>{video.researchContext.limits}</p>
+        <p className="muted-note">{video.researchContext.creator}. <a href={video.researchContext.url}>{video.researchContext.title}</a>. <a href={video.researchContext.licenseUrl}>{video.researchContext.license}</a>. {video.researchContext.credit}</p>
+        <p className="muted-note">The source and teaching interpretation were checked with AI assistance; independent medical peer review remains outstanding.</p>
+      </div>}
       <video
         ref={player}
         controls
@@ -16,7 +23,7 @@ export function VideoPlayer({ video }: { video: PublicVideo }) {
         preload="none"
         width={video.width}
         height={video.height}
-        style={{ aspectRatio: `${video.width} / ${video.height}` }}
+        style={{ aspectRatio: `${video.width} / ${video.height}`, ...(video.researchContext ? {maxWidth: video.width * 2} : {}) }}
         onLoadedMetadata={() => {
           if (player.current && pendingSeek.current !== null) {
             player.current.currentTime = pendingSeek.current;

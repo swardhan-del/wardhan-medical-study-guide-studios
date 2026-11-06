@@ -4530,6 +4530,171 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "neurulation",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "subject": "histology",
+      "topic": "Neural-tube histology, morphogenesis and developmental evidence",
+      "slug": "neurulation",
+      "learnerLevel": "Medical sciences: practical anatomy to experimental interpretation",
+      "objectives": [
+        "Identify luminal and outer boundaries without confusing epithelial polarity with dorsal/ventral position.",
+        "Explain induction, regional folding, spinal wall organization and the distinct origins of neural populations.",
+        "Interpret nuclear, cell-cycle and tissue stains using preparation and control information.",
+        "Compare fixed images, live tracking, perturbation, rescue and lineage evidence without overstating what each establishes."
+      ],
+      "sources": [
+        {
+          "title": "Arwen Wilcock / University of Dundee, Wellcome image B0005527",
+          "url": "https://preview.wellcomecollection.org/works/cs8pfqw2",
+          "publisherOrAuthor": "Arwen Wilcock / University of Dundee, Wellcome image B0005527",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Duke Embryology: selected spinal-cord relationships",
+          "url": "https://embryology.oit.duke.edu/neuro/neuro.html",
+          "publisherOrAuthor": "Duke Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Zimmerman et al., Noggin binds and inactivates BMP4",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8752214/",
+          "publisherOrAuthor": "Zimmerman et al., Noggin binds and inactivates BMP4",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "McMahon et al., Noggin-mediated BMP antagonism in mouse development",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC316831/",
+          "publisherOrAuthor": "McMahon et al., Noggin-mediated BMP antagonism in mouse development",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Dessaud et al., Temporal adaptation to SHH",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18046410/",
+          "publisherOrAuthor": "Dessaud et al., Temporal adaptation to SHH",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "UNSW Neural System Development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Neural_System_Development",
+          "publisherOrAuthor": "UNSW Neural System Development",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Haigo et al. (2003): Shroom and epithelial apical constriction",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14680628/",
+          "publisherOrAuthor": "Haigo et al. (2003)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Hildebrand (2005): Shroom and apical actomyosin",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16249236/",
+          "publisherOrAuthor": "Hildebrand (2005)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Ybot-Gonzalez et al. (2007): BMP antagonism and mouse hinge formation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17693602/",
+          "publisherOrAuthor": "Ybot-Gonzalez et al. (2007)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Dady et al., Junctional neurulation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6608335/",
+          "publisherOrAuthor": "Dady et al., Junctional neurulation",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Ochoa et al., Vinculin, nuclear migration and cell cycle",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10609122/",
+          "publisherOrAuthor": "Ochoa et al., Vinculin, nuclear migration and cell cycle",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Harvard CITE: controls for imaging multiple fluorophores",
+          "url": "https://cite.hms.harvard.edu/resources/controls1/",
+          "publisherOrAuthor": "Harvard CITE",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds CNS histology",
+          "url": "https://histology.leeds.ac.uk/home/tissue_types/nerves/nerves_cns/",
+          "publisherOrAuthor": "University of Leeds CNS histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide MHS240 spinal cord",
+          "url": "https://www.histologyguide.org/slideview/MHS-240-spinal-cord/06-slide-1.html",
+          "publisherOrAuthor": "Histology Guide MHS240 spinal cord",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Ginhoux et al., Microglial fate mapping",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3719181/",
+          "publisherOrAuthor": "Ginhoux et al., Microglial fate mapping",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Spassky et al., Ependymal origin and adult proliferation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15634762/",
+          "publisherOrAuthor": "Spassky et al., Ependymal origin and adult proliferation",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Licensed original specimen and movies rendered in the candidate build. Four keyboard regions, text alternatives, bounded portrait and side-by-side movie layout; 320px/200percent text, image/video failure, no-JavaScript, playback, seek, hashes and print verified. Hosted publication remains a separate gate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted source/editorial review; no independent medical peer review.",
+        "Fixed specimen lacks exact stage, pulse/chase interval and calibrated scale.",
+        "Model-system findings are not direct human fate maps.",
+        "Original research movies are low resolution and selected, not the complete dataset.",
+        "Broader neural-system and all-system embryology remain incomplete."
+      ],
+      "reviewEvidenceIds": [
+        "neurulation-editorial-depth-20261106",
+        "neurulation-visual-depth-20261106",
+        "neurulation-accessibility-depth-20261106",
+        "neurulation-readability-depth-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia",
+          "neural-tube-development"
+        ],
+        "related": [
+          "neural-tube-development",
+          "meiosis",
+          "placenta"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
