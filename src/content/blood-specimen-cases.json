@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "id": "architecture",
+      "label": "Map the tissue",
+      "question": "You need to inspect how cellular regions relate to trabeculae, adipocytes and sinusoids. Which preparation best answers that question?",
+      "answer": "Marrow tissue section",
+      "reason": "The intact spatial relationships are the target. A smear disperses cells and cannot preserve the same architectural map."
+    },
+    {
+      "id": "circulation",
+      "label": "Read circulating cells",
+      "question": "You need to compare nuclear lobation and granule appearance among circulating leukocytes. Which preparation best answers that question?",
+      "answer": "Peripheral blood smear",
+      "reason": "A well-spread blood film samples circulating cells and supports comparison of individual nuclear and cytoplasmic features."
+    },
+    {
+      "id": "maturation",
+      "label": "Compare developing cells",
+      "question": "You need to compare chromatin and cytoplasm across a marrow maturation series. Which preparation best answers that question?",
+      "answer": "Marrow aspirate smear",
+      "reason": "A well-preserved aspirate spreads developing cells for detailed morphology. A tissue section gives complementary architecture."
+    }
+  ]
+}

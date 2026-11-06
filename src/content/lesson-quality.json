@@ -3960,6 +3960,157 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "blood-marrow",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "subject": "histology",
+      "topic": "Blood morphology, hematopoiesis and developmental evidence",
+      "slug": "blood-marrow",
+      "learnerLevel": "Medical sciences: practical identification and developmental evidence",
+      "objectives": [
+        "Choose a preparation and readable field for a specific identification question.",
+        "Distinguish blood-cell patterns using nuclear and cytoplasmic evidence together.",
+        "Explain erythroid, granulocytic and megakaryocytic maturation.",
+        "Trace embryonic hematopoietic sites while distinguishing origin, expansion and residence.",
+        "Interpret marker, colony and transplantation evidence without overstating stem-cell identity."
+      ],
+      "sources": [
+        {
+          "title": "Columbia: blood practical and selection of a readable field",
+          "url": "https://www.columbia.edu/itc/hs/medical/sbpm_histology_old/lab/lab08_blood.html",
+          "publisherOrAuthor": "Columbia",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "BioGnost: Wright–Giemsa stain instructions and staining chemistry",
+          "url": "https://www.biognost.com/wp-content/uploads/2020/02/Wright-Giemsa-IFU-V4-EN4.pdf",
+          "publisherOrAuthor": "BioGnost",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "SIU: looking at blood smears and preparation damage",
+          "url": "https://histology.siu.edu/intro/bldsmear.htm",
+          "publisherOrAuthor": "SIU",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: peripheral blood cell comparison",
+          "url": "https://www.histologyguide.org/slideview/MH-033hr-summary/07-slide-1.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: marrow section architecture",
+          "url": "https://histologyguide.org/slideview/MHS-304-bone-marrow/08-slide-1.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: developing marrow cells",
+          "url": "https://histologyguide.org/slideview/MH-034bhr-summary/08-slide-1.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: hematopoietic ultrastructure",
+          "url": "https://www.histologyguide.org/EM-atlas/08-hematopoiesis.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Bern HemoSurf: supravital staining",
+          "url": "https://hemosurf.elearning.aum.iml.unibe.ch/hemosurf_demo/Demo_E_v3/Data/Data_E/Info/Vital.htm",
+          "publisherOrAuthor": "University of Bern HemoSurf",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UniProt reviewed human erythropoietin P01588",
+          "url": "https://rest.uniprot.org/uniprotkb/P01588.txt",
+          "publisherOrAuthor": "UniProt reviewed human erythropoietin P01588",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UniProt reviewed human thrombopoietin P40225",
+          "url": "https://rest.uniprot.org/uniprotkb/P40225.txt",
+          "publisherOrAuthor": "UniProt reviewed human thrombopoietin P40225",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Ivanovs et al. (2011): functional human embryonic HSC emergence",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3256972/",
+          "publisherOrAuthor": "Ivanovs et al. (2011)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Ivanovs et al. (2014): human embryonic HSC location and phenotype",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3986508/",
+          "publisherOrAuthor": "Ivanovs et al. (2014)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "UNSW Embryology: blood development overview",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Cardiovascular_System_-_Blood_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Ding et al. (2012): endothelial and perivascular HSC support",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3270376/",
+          "publisherOrAuthor": "Ding et al. (2012)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original comparison and specimen-choice activity reviewed on desktop/mobile, at 320px with 200% text and without JavaScript. Not specimen microscopy.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted source review; independent medical review outstanding.",
+        "Ding 2012 and UNSW overview limited to accessible abstract/indexed material; no detailed experimental protocol taught.",
+        "Ivanovs 2011 and 2014 main selected passages reviewed; supplementary protocols not fully reviewed.",
+        "No licensed diagnostic micrograph or new video added in this unit."
+      ],
+      "reviewEvidenceIds": [
+        "blood-marrow-editorial-depth-20261106",
+        "blood-marrow-visual-depth-20261106",
+        "blood-marrow-accessibility-depth-20261106",
+        "blood-marrow-readability-depth-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "histology-foundations-tissues"
+        ],
+        "related": [
+          "lymphoid-organs",
+          "cartilage-bone",
+          "innate-adaptive",
+          "nitrogen-metabolism"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
