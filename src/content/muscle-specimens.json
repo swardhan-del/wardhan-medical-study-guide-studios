@@ -1,0 +1,23 @@
+{
+  "title": "Compare three real muscle preparations",
+  "specimens": [
+    {
+      "figureId": "skeletal-muscle-striation",
+      "answer": "skeletal",
+      "explanation": "The visible long parallel striated fibres support skeletal muscle. Do not assign every adjacent nucleus to the fibre or infer a contractile fibre type from this undocumented stain.",
+      "model": "I can follow repeated transverse bands across long parallel fibres. This supports skeletal muscle. I need a clearer cell boundary to assign each peripheral nucleus; the image does not establish fibre type or regional embryonic origin."
+    },
+    {
+      "figureId": "cardiac-muscle-mallory",
+      "answer": "cardiac",
+      "explanation": "The creator identifies cardiac muscle in Mallory’s trichrome. Use the muscle trajectories and nuclear positions with the provenance; do not label an individual intercalated disc unless it is convincingly resolved.",
+      "model": "The field contains striated muscle with intervening blue stroma and some central nuclear profiles. The documented cardiac specimen and combination of features support cardiac muscle. The image does not resolve every junction or establish electrical coupling."
+    },
+    {
+      "figureId": "smooth-muscle-mixed-planes",
+      "answer": "smooth",
+      "explanation": "This smooth-muscle specimen contains elongated and oblique profiles. Its source caption calls it a cross section, but the visible field is not uniformly transverse. Use organisation and nuclei rather than the filename alone.",
+      "model": "I see elongated and oblique profiles in cellular bundles, without resolved sarcomeric banding. Together with the creator’s specimen identification this supports smooth muscle. The field contains mixed planes; I cannot infer the organ or exact stain from colour alone."
+    }
+  ]
+}

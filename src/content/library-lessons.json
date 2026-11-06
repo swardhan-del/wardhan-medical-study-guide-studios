@@ -1593,8 +1593,8 @@
     {
       "id": "muscle-histology",
       "subject": "histology",
-      "title": "Skeletal, cardiac and smooth muscle",
-      "summary": "Identify muscle using nuclei, striations, branching and the connections between cells.",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "summary": "Interpret skeletal, cardiac and smooth muscle across section planes; connect staining, cell architecture and regional developmental origins.",
       "tags": [
         "Cells and tissues",
         "Organ histology",
@@ -1606,16 +1606,148 @@
       "section": "Muscle Tissue; Cardiac Muscle and Intercalated Discs",
       "steps": [
         {
-          "title": "Skeletal muscle",
-          "body": "Long fibers have multiple peripheral nuclei and ordered sarcomeres that produce striations. Endomysium surrounds individual fibers, perimysium organizes fascicles, and epimysium surrounds the muscle. Section orientation can hide the longitudinal striation pattern."
+          "title": "Start with arrangement, then test the cell-level clues",
+          "body": "Scan the field before deciding what a single pink profile represents. Ask whether the tissue forms long parallel fascicles, a branching network, or intersecting sheets of tapered cells. Locate connective-tissue partitions, vessels and any organ boundary. These provide scale and context that a cropped high-power image loses.\n\nThen combine at least two independent observations: striations where the plane permits them, nuclear position within a confidently traced cell, branching, and the distribution of extracellular matrix. A nucleus beside a fibre may belong to an endothelial cell or fibroblast. Absence of a nucleus in one profile does not mean that the intact cell has no nucleus.",
+          "practice": {
+            "prompt": "A transverse field contains many fibre profiles but few nuclei. Does this exclude muscle?",
+            "feedback": "No. A thin section samples only a small part of each long cell; most planes miss its nuclei. Compare organisation, boundaries and other fields."
+          }
         },
         {
-          "title": "Cardiac muscle",
-          "body": "Branching striated cells usually have a central nucleus. Intercalated discs provide mechanical attachment through adherens junctions and desmosomes, and electrical coupling through gap junctions. These different junctions solve different problems at the same cell boundary."
+          "title": "Skeletal muscle in longitudinal, transverse and oblique sections",
+          "body": "A skeletal muscle fibre is one elongated multinucleated cell. In a good longitudinal section, neighbouring myofibrils align to give repeated cross-bands; nuclei usually lie at the periphery beneath the sarcolemma. In transverse section, fibres often form polygonal profiles packed into fascicles. You are seeing parts of cells, not whole short cylindrical cells.\n\nAn oblique cut makes profiles elongated and can blur the banding. Overcontraction, tears and poor fixation also alter appearance. Central nuclei can occur in developing or regenerating skeletal fibres and in disease: they are a reason to examine the context, not an automatic reclassification as cardiac muscle. Nuclear position alone is insufficient.",
+          "practice": {
+            "prompt": "Why is “no visible striation” a weak reason to call a transverse field smooth muscle?",
+            "feedback": "Sarcomeric bands repeat along the long axis; a transverse slice does not display that sequence. Use profile size, nuclei, fascicles and a longitudinal field as well."
+          }
         },
         {
-          "title": "Smooth muscle",
-          "body": "Spindle-shaped cells have a central elongated nucleus and no sarcomeric cross-striations. Actin and myosin still generate force, but calcium-calmodulin activation of myosin light-chain kinase differs from the troponin-based control of striated muscle."
+          "title": "Separate basal lamina from endomysium and fascicle boundaries",
+          "body": "The sarcolemma is the muscle-cell plasma membrane. A basal lamina lies outside it; this specialised extracellular layer is distinct from the surrounding endomysial connective tissue. Endomysium contains delicate connective tissue and small vessels around individual fibres. Perimysium partitions groups of fibres into fascicles and carries larger vessels and nerves. Epimysium encloses the whole muscle.\n\nThese are connected levels of a load-bearing system. Force reaches the extracellular matrix through cell–matrix attachments as well as through the ends of fibres. The connective-tissue hierarchy distributes force toward tendons and helps keep capillaries near metabolically active cells. A thick septum surrounding many fibres should not be labelled an individual fibre’s basal lamina.",
+          "practice": {
+            "prompt": "A collagenous partition contains a sizeable vessel and encloses many skeletal fibres. Which level fits best?",
+            "feedback": "Perimysium. Endomysium surrounds individual fibres; basal lamina is a much thinner specialised interface outside the sarcolemma."
+          }
+        },
+        {
+          "title": "Read the sarcomere as an overlap mechanism",
+          "body": "A sarcomere extends between neighbouring Z discs. Thin actin filaments attach to Z discs and overlap thick myosin filaments toward the centre. The A band corresponds to thick-filament length; the I band contains thin filaments without thick overlap, and the H zone is the central thick-only region. During shortening, overlap increases: the I band and H zone narrow while filament lengths and A-band length remain essentially constant.\n\nThe band pattern is a structural consequence of repeated molecular organisation. A routine stained section may show broad striation, but not every named band reliably. Do not annotate a blurred light micrograph as though it were an electron micrograph. Link the structural pattern to the calcium–troponin mechanism in the muscle-contraction lesson.",
+          "practice": {
+            "prompt": "Which measurement distinguishes sliding from shortening of the thick filaments?",
+            "feedback": "The A band remains essentially the same length while Z discs approach and thin–thick overlap increases. Individual actin and myosin filaments do not simply shrink."
+          }
+        },
+        {
+          "title": "Connect excitation to the interior without overclaiming resolution",
+          "body": "T tubules are invaginations of the cell membrane that conduct depolarisation into a muscle fibre. The sarcoplasmic reticulum stores calcium. In typical mammalian skeletal muscle, a triad contains a T tubule between two terminal cisternae, commonly near the A–I junction. This arrangement brings membrane excitation close to calcium-release machinery throughout a large cell.\n\nCardiac muscle commonly has a diad, with a T tubule and one associated cisterna near the Z line. These arrangements help explain different excitation–contraction coupling mechanisms. A triad is not three neighbouring muscle cells, and neither triads nor diads should be claimed from routine low-power H&E. Their membranes require appropriate ultrastructural or specialised imaging evidence.",
+          "practice": {
+            "prompt": "Can a dark line crossing a fibre on H&E be confidently labelled a T tubule?",
+            "feedback": "No. Cross-banding, cell junctions, folds and other structures must be distinguished; a routine image does not resolve the triad membranes."
+          }
+        },
+        {
+          "title": "Distinguish fibre appearance from physiological fibre type",
+          "body": "A motor unit comprises a motor neuron and the skeletal muscle fibres it innervates. It is a functional grouping and is not necessarily the same as a histological fascicle. Fibre phenotype reflects contractile proteins and metabolic machinery; differences in oxidative capacity, fatigue resistance and shortening behaviour cannot be read reliably from pinkness on routine H&E.\n\nMyosin ATPase histochemistry uses controlled reaction and preincubation conditions; oxidative-enzyme preparations such as NADH, SDH and COX answer other questions. Myosin-heavy-chain immunostaining identifies selected protein isoforms. Interpret a panel with its controls and preparation history. Changing pH or method can change the staining pattern, so “dark equals fast” is not a universal rule.",
+          "practice": {
+            "prompt": "A learner calls every dark fibre “type II” without knowing the stain or preincubation. What is missing?",
+            "feedback": "The method, conditions and control pattern. H&E colour alone does not establish a contractile fibre type; histochemical darkness has method-dependent meaning."
+          }
+        },
+        {
+          "title": "Cardiac muscle: branching cells in a vascular connective-tissue network",
+          "body": "Cardiac myocytes are striated cells that join end to end and branch through the myocardium. They commonly have a central nucleus, sometimes two. Cross-sections vary because branching and oblique planes intercept cells at different levels. Small vessels and connective tissue occupy the spaces between myocytes.\n\nLook for a combination of central nuclei, striation and interconnected cell trajectories. Intercalated discs may appear as dark transverse or step-like lines in favourable preparations, but their visibility varies. A dark line is not enough by itself: follow the tissue architecture and distinguish a junctional line from a fold, stain deposit or ordinary sarcomeric band.",
+          "practice": {
+            "prompt": "Why is a single centrally nucleated striated cell not a complete practical identification?",
+            "feedback": "Its neighbours, branching, junctional boundaries and organ context strengthen the interpretation. Central nuclei also occur in other circumstances; one clue is not a complete argument."
+          }
+        },
+        {
+          "title": "Intercalated discs solve two different connection problems",
+          "body": "Mechanical and electrical continuity require different structures. Fascia adherens anchors actin from terminal sarcomeres at the cell boundary; desmosomes help resist separation through intermediate-filament attachment. Gap junctions provide channels through which ions and small molecules can pass between neighbouring cells, supporting electrical coupling.\n\nCardiac tissue can therefore act as a functional syncytium while retaining separate cell membranes. This is different from a skeletal fibre formed by fusion of myoblasts. Mechanical failure and impaired electrical coupling need not produce identical consequences. The presence of a disc in a section also does not measure the rate or direction of conduction.",
+          "practice": {
+            "prompt": "Would normal-looking mechanical junctions prove that electrical coupling is normal?",
+            "feedback": "No. Adhesive structures and gap-junction channels perform different functions. Morphology alone does not measure channel conductance or tissue conduction."
+          }
+        },
+        {
+          "title": "Smooth muscle: interpret tapered cells in three dimensions",
+          "body": "A smooth muscle cell is elongated and tapered, usually with one central nucleus. A longitudinal profile may show an elongated or corkscrew-like nucleus depending on contraction and section plane. In transverse section, many small cell profiles lack a nucleus because the cut misses the wider nuclear region. Intersecting bundles can put longitudinal, oblique and transverse profiles into the same field.\n\nSmooth muscle has abundant contractile cytoplasm but no sarcomeric cross-striation. Compare it with collagen-rich connective tissue: collagen often forms wavy extracellular bundles with relatively sparse flattened nuclei, whereas a smooth-muscle bundle is more cellular. Use the organ, layer and staining method; neither pink colour nor an isolated elongated nucleus settles the distinction.",
+          "practice": {
+            "prompt": "A photograph is captioned “cross section,” yet many nuclei are long and oblique. Which should control your description?",
+            "feedback": "Describe the visible mixed planes and state the caption discrepancy. Do not force every profile into the orientation implied by a file title."
+          }
+        },
+        {
+          "title": "Dense bodies, calcium regulation and coordinated contraction",
+          "body": "Smooth muscle actin filaments attach to cytoplasmic dense bodies and membrane-associated dense plaques; intermediate filaments help distribute tension. The contractile network is arranged differently from the repeating sarcomeres of striated muscle. Dense bodies are an ultrastructural concept, not every dark dot in an ordinary stain.\n\nCalcium–calmodulin activates myosin light-chain kinase, which promotes myosin regulatory light-chain phosphorylation; phosphatase activity also contributes to relaxation and calcium sensitivity. Neural, hormonal, local chemical and mechanical inputs vary by organ. Some smooth-muscle populations are strongly electrically coupled; others have more individually controlled cells. “All smooth muscle contracts as one sheet” is therefore an overgeneralisation.",
+          "practice": {
+            "prompt": "Does lack of striation mean lack of actin and myosin?",
+            "feedback": "No. Smooth muscle contains both; their arrangement and regulation differ. The calcium-sensitive regulatory switch is not the skeletal troponin system."
+          }
+        },
+        {
+          "title": "Choose preparation and stain to match the question",
+          "body": "H&E is an architectural survey: assess nuclei, fibre outline, arrangement and extracellular spaces. Trichrome methods can help distinguish collagen-rich stroma from muscle, but colours depend on the actual method and differentiation. Never infer a named stain merely because an image is pink, green or blue.\n\nPAS can demonstrate glycogen and other carbohydrate-rich structures; a matched diastase-treated section helps identify the glycogen contribution. Frozen material is used for many muscle enzyme-histochemical investigations because routine processing can compromise the activity being measured. Before preparing slides, decide which question requires fixed paraffin tissue, frozen sections, ultrastructure or another method. Exact fixation and staining procedures belong to the laboratory’s validated protocol, with correct orientation and labelled controls.",
+          "practice": {
+            "prompt": "A laboratory has only a routine paraffin block. Can every enzyme-histochemistry question be recovered from it?",
+            "feedback": "No. Processing may have lost the relevant activity. Preparation must be planned before the specimen is processed; an additional stain cannot recreate destroyed biological information."
+          }
+        },
+        {
+          "title": "From a myogenic progenitor to a multinucleated fibre",
+          "body": "For much of trunk and limb skeletal muscle, trace paraxial mesoderm to somites, then a myogenic population associated with the dermomyotome. Cells proliferate, enter a myogenic differentiation programme, align and fuse into multinucleated myotubes. Myofibrils assemble and organise; maturation changes nuclear position and the relationship to connective tissue and innervation.\n\nSpecification, differentiation, fusion and maturation are distinct steps. A marker of myogenic commitment does not prove that fusion has occurred, and an immature myotube should not be judged by every adult criterion. This sequence explains why centrally located nuclei can be part of a developmental pattern. It also explains why a mature multinucleated fibre is one cell rather than a chain of tightly packed cells.",
+          "practice": {
+            "prompt": "Which observation directly addresses fusion: a lineage reporter, or several nuclei enclosed within a continuous myotube membrane?",
+            "feedback": "The continuous multinucleated cell supports fusion; a lineage reporter addresses ancestry. Ideally use membrane imaging and appropriate controls rather than nuclear proximity alone."
+          }
+        },
+        {
+          "title": "Regional embryology: trunk rules do not describe every head muscle",
+          "body": "Developmental origin must be tied to the particular muscle. Harel and colleagues compared head and trunk lineages using genetic reporters and embryonic graft approaches. Their observations support distinct regional programmes and show that associated satellite-cell populations can share those regional origins. A location in the head does not automatically mean a single cranial lineage: tongue musculature is an important somite-derived example.\n\nA permanent reporter records ancestry from cells that activated the tracing system. It does not show that the original marker remains expressed in every labelled adult cell. Read the labelled territory, timing, specificity and unlabelled controls before turning a fate map into a statement about all human muscles.",
+          "practice": {
+            "prompt": "An adult cell retains a permanent Pax3-lineage label. Must it currently express Pax3 protein?",
+            "feedback": "No. A heritable lineage label can persist after the original expression has stopped. An expression assay would answer the present-state question."
+          }
+        },
+        {
+          "title": "Satellite cells occupy a specific niche, not an arbitrary space",
+          "body": "A skeletal-muscle satellite cell lies outside the myofibre plasma membrane but beneath its basal lamina. That location separates it from an interstitial fibroblast. During repair, activated myogenic progenitors can proliferate and contribute to fibres, while part of the population maintains the progenitor compartment. Repair also depends on the surrounding tissue and the extent of injury.\n\nA small peripheral nucleus on H&E is not sufficient to identify a satellite cell. The basal-lamina relationship and suitable markers or ultrastructure are needed. Equally, a satellite-cell lineage experiment addresses the tested population and model; it does not demonstrate unlimited recovery after every injury or justify a stem-cell treatment claim.",
+          "practice": {
+            "prompt": "Which boundary must be resolved to distinguish a satellite cell from an interstitial cell?",
+            "feedback": "Its position between the myofibre sarcolemma and basal lamina. Mere closeness to a muscle fibre does not establish that niche."
+          }
+        },
+        {
+          "title": "Cardiac development is a programme in a changing tissue context",
+          "body": "Cardiac muscle develops from cardiogenic mesoderm through progenitor specification, differentiation, tissue assembly and maturation. Cells are added to a developing heart whose shape and connections also change. A chamber wall’s adult architecture is therefore the result of both cell differentiation and morphogenesis; knowing “mesoderm” alone does not explain it.\n\nA useful research question is how a transcription factor selects targets in that changing context. Maven and colleagues studied human induced-pluripotent-stem-cell-derived cardiac progenitors and found context-dependent ISL1/NKX2.5 chromatin occupancy. Altered binding supports regulatory interaction; it does not by itself prove that a whole embryonic territory changed fate. This cell-culture model is not a complete map or timetable of a human embryo.",
+          "practice": {
+            "prompt": "Does a change in transcription-factor occupancy prove that cells became a different mature cell type?",
+            "feedback": "No. Binding, gene expression, lineage commitment and mature function are separate readouts. A fate-conversion claim requires additional evidence."
+          }
+        },
+        {
+          "title": "Smooth-muscle identity does not imply one universal embryonic origin",
+          "body": "Smooth muscle develops in different regional settings. In the proximal great vessels, experimental fate maps identify contributions from more than one embryonic population. Harmon and Nakano distinguished second-heart-field and neural-crest-derived smooth muscle, with distribution depending on vessel and wall region. This is why an adult morphological category is not a complete lineage description.\n\nMarker choice also matters: some early smooth-muscle-associated proteins are expressed in immature cardiac cells. Their study used additional cardiac and later smooth-muscle markers to separate interpretations. A positive early marker alone cannot establish mature smooth-muscle fate. Keep the endothelial lining’s ancestry separate from the adjacent muscular wall’s ancestry.",
+          "practice": {
+            "prompt": "Does α-smooth-muscle-actin positivity alone prove a mature vascular smooth-muscle lineage?",
+            "feedback": "No. Marker expression depends on developmental stage and cell context. Combine location, additional markers and a properly controlled lineage experiment."
+          }
+        },
+        {
+          "title": "Compare repair without turning limited renewal into zero renewal",
+          "body": "Skeletal muscle repair draws on a specialised progenitor niche; smooth-muscle populations can show proliferative responses; adult myocardium has limited capacity to replace a large loss of contractile tissue. These differences matter when linking cell organisation to tissue outcome. They do not justify saying that every muscle repairs equally, or that adult cardiac cells are absolutely never renewed.\n\nBergmann and colleagues used retrospective carbon-14 dating of DNA to support cardiomyocyte renewal in humans. This is different evidence from seeing a dividing-looking nucleus in a section. DNA synthesis, nuclear division and production of a new functional cardiomyocyte are not interchangeable endpoints. Limited turnover is also not proof that an infarct can regenerate completely.",
+          "practice": {
+            "prompt": "Why does a cell-cycle marker alone fail to prove a new working cardiomyocyte was produced?",
+            "feedback": "It can indicate entry into part of the cycle without successful cytokinesis and functional integration. The claimed endpoint must match the measurement."
+          }
+        },
+        {
+          "title": "Build a complete practical answer rather than a one-word label",
+          "body": "Use a sequence: preparation and orientation, low-power organisation, two cell-level observations, the most likely tissue, one plausible alternative, and one limitation. For example, parallel striated fibres with confidently peripheral myonuclei support skeletal muscle; the same field does not establish fibre type, exact force or embryonic lineage.\n\nThen add the mechanism: explain how repeated sarcomeres generate shortening and how the connective-tissue hierarchy transmits force. Add development at the correct regional level, distinguishing progenitor origin from fusion and maturation. If the specimen cannot resolve a proposed detail, name the additional view, stain or experiment rather than filling the gap with a confident label.",
+          "practice": {
+            "prompt": "What should an examiner hear after you identify the tissue?",
+            "feedback": "The observations supporting it, the main alternative, a structure–function link and an explicit limit. A developmental explanation should identify the cell population and region, not only a germ-layer word."
+          }
         }
       ],
       "question": {
@@ -1641,18 +1773,58 @@
         "answer": "It transfers mechanical force between cells and permits electrical coupling. Adherens junctions/desmosomes support attachment; gap junctions conduct small ions between cells."
       },
       "related": [
+        "muscle-contraction",
         "cell-junctions",
-        "cardiac-output",
-        "membrane-potentials"
+        "vessel-histology",
+        "heart-looping-septation"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 35,
+      "objectives": [
+        "Identify three muscle types using arrangement, cell boundaries and section orientation.",
+        "Distinguish sarcomeres, connective-tissue layers and junctional functions.",
+        "Choose a preparation and control appropriate to a staining question.",
+        "Trace skeletal myogenesis from regional progenitor to fused, mature fibre.",
+        "Separate regional lineage, current marker expression and functional maturation.",
+        "Construct a specimen interpretation with evidence and an explicit limit."
+      ],
+      "prerequisites": [
+        "microscopy",
+        "cell-junctions"
+      ],
+      "summaryChecklist": [
+        "I can explain why section orientation changes the clues I can see.",
+        "I distinguish basal lamina, endomysium and perimysium.",
+        "I connect striation to filament overlap and discs to two different functions.",
+        "I do not infer stain, fibre type, lineage or regeneration from one appearance.",
+        "I can separate specification, fusion, maturation and repair."
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Compare skeletal, cardiac and smooth muscle in a mixed-plane practical.",
+          "answer": "Use cell organisation, nuclei and visible striation together. Skeletal fibres are long multinucleated cells, cardiac cells branch and join through discs, and smooth muscle has tapered non-sarcomeric cells. State orientation and preparation limits."
+        },
+        {
+          "prompt": "Why is “all muscle comes from the same embryonic tissue” inadequate?",
+          "answer": "Regional skeletal programmes differ, cardiac myogenesis has its own cardiogenic context, and vascular smooth muscle has region-dependent contributions. Specify the cell population, region and stage, and distinguish lineage evidence from present marker expression."
+        }
+      ],
+      "workedExample": {
+        "title": "A pale band is not a diagnosis",
+        "prompt": "A longitudinal specimen has striated branching cells, mostly central nuclei, and blue connective tissue. Explain what you can identify and what is still unknown.",
+        "solution": [
+          "The combination supports cardiac muscle; follow several cell trajectories and inspect junctional lines.",
+          "Blue stroma may reflect a trichrome preparation, but identify the actual stain from provenance rather than colour alone.",
+          "Separate muscle cells from intervening connective tissue and vessels.",
+          "Neither magnification on your screen nor the structural pattern establishes an absolute scale, electrophysiological performance or lineage."
+        ]
+      }
     },
     {
       "id": "vessel-histology",
       "subject": "histology",
-      "title": "Arteries, veins and capillaries",
-      "summary": "Read vessel walls from the lumen outward and relate each layer to pressure and exchange.",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "summary": "Read arteries, veins and exchange vessels from lumen to wall, then distinguish endothelial development from mural-cell recruitment.",
       "tags": [
         "Organ histology",
         "Microscopic structure",
@@ -1665,16 +1837,148 @@
       "section": "Circulatory System — Histology of Blood Vessels",
       "steps": [
         {
-          "title": "Use the three tunics",
-          "body": "The intima includes endothelium; the media contains smooth muscle and elastic components; the adventitia provides outer connective-tissue support. Large vessels may contain small nourishing vessels in their walls. Not every vessel displays all layers equally clearly."
+          "title": "Orient from the lumen, but do not let its shape make the diagnosis",
+          "body": "First find a plausible lumen and trace a continuous endothelial boundary where visible. Move outward through the wall, identifying its cellular and extracellular components. Survey nearby vessels, surrounding organ and the plane of section. A round empty space without a convincing wall could be a tear or another structure.\n\nA vein often collapses and an artery often retains a more regular profile, but neither is a rule that substitutes for wall analysis. Oblique sections exaggerate dimensions; contraction can make the luminal border corrugated; processing can wash away blood. Compare the wall with the lumen and with neighbouring structures rather than diagnosing from shape or red cells alone.",
+          "practice": {
+            "prompt": "An empty irregular channel contains no red cells. Is it necessarily a lymphatic?",
+            "feedback": "No. Blood can be lost during preparation, and a vein can collapse. Trace the wall, context and additional features before assigning identity."
+          }
         },
         {
-          "title": "Compare arteries with veins",
-          "body": "Elastic arteries have numerous elastic lamellae in the media. Muscular arteries have a prominent smooth-muscle media. A companion vein usually has a larger, less regular lumen and a thinner media, but collapse and cutting angle can alter these appearances."
+          "title": "Intima, media and adventitia are compartments with different jobs",
+          "body": "The intima includes endothelium on its basal lamina and variable subendothelial tissue. In many muscular arteries, an internal elastic lamina marks the boundary toward the media. The media contains circumferentially arranged smooth muscle and extracellular matrix; its proportions differ by vessel class. The adventitia blends with surrounding connective tissue and provides support, nerves and, in sufficiently large vessels, nourishing vessels.\n\nDo not force three equally thick rings onto every vessel. Capillaries do not have a continuous muscular media; small vessels may have no sharply separable adventitia. An endothelial nucleus is evidence about the lining, not proof that the whole adjacent wall is endothelial.",
+          "practice": {
+            "prompt": "Which compartment is most directly responsible for active reduction of an arteriole’s radius?",
+            "feedback": "The smooth-muscle media. Endothelium regulates signals, but the circumferential contractile cells generate the wall movement."
+          }
         },
         {
-          "title": "Find the exchange surface",
-          "body": "Capillaries are principally endothelial tubes supported by basal lamina, with associated pericytes in many locations. They lack a continuous muscular media. Arterioles, by contrast, have a smooth-muscle cuff that can regulate resistance and downstream flow."
+          "title": "Elastic arteries distribute pulsatile energy through their media",
+          "body": "In an elastic artery, multiple elastic lamellae alternate with smooth-muscle cells and other matrix within a thick media. Stretch during ventricular ejection and recoil between beats help buffer pulsatile pressure and maintain forward flow. Elastic tissue is therefore distributed through the media, not confined to a single border line.\n\nAn elastic stain makes lamellar organisation easier to follow than routine H&E. Examine several wall regions because tangential cutting, breaks and folds can distort the pattern. Large-vessel walls also require their own nutrient supply: vasa vasorum support outer regions beyond easy diffusion from luminal blood. Their presence does not mean that the large vessel’s lumen branches directly into every visible small vessel in that section.",
+          "practice": {
+            "prompt": "How does an elastic artery differ from a muscular artery with a prominent internal elastic lamina?",
+            "feedback": "Numerous medial elastic lamellae form a distributed elastic framework. One conspicuous boundary lamina alone does not establish an elastic artery."
+          }
+        },
+        {
+          "title": "Muscular arteries: identify the media and its boundaries",
+          "body": "A muscular artery has a media dominated by smooth-muscle layers. A conspicuous internal elastic lamina may form a wavy line, especially in a contracted vessel; an external elastic lamina may also be identifiable in larger examples. The adventitia contains collagen and elastic fibres but is not simply an extra smooth-muscle layer.\n\nIn transverse sections, circumferential smooth-muscle cells can show elongated nuclei following the wall. Do not equate every dark medial line with elastin: nuclei, folds and stain deposits can mimic boundaries. Where classification is uncertain, compare an elastic preparation and the broader wall pattern rather than counting arbitrary pink rings.",
+          "practice": {
+            "prompt": "A vessel has many smooth-muscle layers and one prominent wavy internal border. Which interpretation is favoured?",
+            "feedback": "A muscular artery, provided the whole wall supports it. Multiple elastic lamellae throughout the media would instead support an elastic artery."
+          }
+        },
+        {
+          "title": "Veins: consider capacitance, wall composition and valves",
+          "body": "Compared with a companion artery, a vein commonly has a larger irregular lumen and a less dominant media; its adventitia can be the conspicuous supporting layer. Some large veins contain substantial longitudinal smooth muscle in the adventitia. Thus, “veins have no muscle” and “veins always have a thin total wall” are poor rules.\n\nVenous valves, where present, are folds of intima with connective-tissue cores covered by endothelium. They support directional flow when pressure gradients reverse, often working with external muscle compression. Not every vein contains valves and a random section can miss them. A free flap or tear should not be called a valve without its attachment and tissue continuity.",
+          "practice": {
+            "prompt": "Does an absent valve profile exclude a vein?",
+            "feedback": "No. Valves are not universal and may lie outside the section plane. Use the wall and anatomical context, not a single absent feature."
+          }
+        },
+        {
+          "title": "Arterioles and venules: read the wall rather than a size label",
+          "body": "An arteriole has a small lumen surrounded by a limited number of smooth-muscle layers; very small examples may have only one. This cuff changes radius and therefore strongly influences resistance. The smallest arterioles may lack an obvious internal elastic lamina. Size varies with plane and contraction, so it is safer to combine dimensions with wall organisation.\n\nA postcapillary venule has endothelium with associated support cells but lacks the continuous muscular coat of an arteriole. Larger venules acquire more smooth muscle. Postcapillary venules are important sites of leukocyte trafficking; the detailed mechanisms depend on tissue and inflammatory context. A universal diagram of a precapillary sphincter at every capillary entrance would oversimplify real microvascular networks.",
+          "practice": {
+            "prompt": "Two small profiles are similar in diameter, but only one has a continuous smooth-muscle cuff. What discriminates them?",
+            "feedback": "The organised muscular wall favours an arteriole. Diameter alone is insufficient, especially if contraction or an oblique plane changes the profile."
+          }
+        },
+        {
+          "title": "Capillaries: distinguish the lining from its mural support",
+          "body": "A capillary is an endothelial tube supported by basal lamina, with associated pericytes in many tissues. It lacks a continuous smooth-muscle media. Endothelial nuclei may bulge toward a narrow lumen, and a red cell can occupy much of that lumen. A nearby nucleus is not automatically a pericyte: its relationship to the endothelial tube and shared basal-lamina environment needs evidence.\n\nEndothelium is biologically active, controlling barrier properties, signalling and interactions with blood. Pericytes contribute to vessel organisation and stability in context-dependent ways. Distinguish cell identity, position and function; a single routine section rarely proves all three.",
+          "practice": {
+            "prompt": "Can you call every nucleus beside a capillary a pericyte?",
+            "feedback": "No. Nearby fibroblasts and other cells can resemble it. Position, appropriate markers and higher-resolution structural evidence are needed."
+          }
+        },
+        {
+          "title": "Continuous, fenestrated and sinusoidal vessels answer different exchange needs",
+          "body": "Continuous capillaries retain an uninterrupted endothelial lining and basal lamina, though their permeability varies greatly between organs. Fenestrated capillaries have transcellular openings adapted to exchange; many fenestrae have diaphragms, whereas glomerular fenestrae are a notable exception. Sinusoidal or discontinuous arrangements have wider, more irregular channels and tissue-specific discontinuities.\n\nThese are not interchangeable holes of increasing size. The endothelial junctions, glycocalyx, basal lamina and surrounding cells all contribute to the barrier. Liver sinusoids and renal glomerular capillaries therefore have different architecture and functions. Ordinary H&E can suggest an organ’s vascular pattern but cannot resolve individual fenestrae or their diaphragms; ultrastructure is required for that claim.",
+          "practice": {
+            "prompt": "A learner identifies individual endothelial fenestrae on a low-power H&E image. What is wrong with the claim?",
+            "feedback": "The resolution is insufficient. Organ context may suggest a capillary class, but the pores and diaphragms require appropriate ultrastructural evidence."
+          }
+        },
+        {
+          "title": "Lymphatic versus blood vessel: build a differential",
+          "body": "Small lymphatic channels often have thin, irregular walls and can appear empty. Larger collecting lymphatics can have valves and smooth muscle, so the phrase “lymphatics have no muscle” does not apply at every level. A thin wall or absent red cells is only a clue.\n\nFollow the channel through the tissue and inspect its lining and contents. In uncertain cases, use appropriate endothelial-marker panels and anatomical context rather than a single stain result. A damaged blood vessel, collapsed venule or processing cleft can imitate part of the appearance. The honest conclusion from an inadequate section may be “thin-walled channel, identity unresolved.”",
+          "practice": {
+            "prompt": "What is a better practical answer than “empty, so lymphatic”?",
+            "feedback": "Describe the thin irregular lining, wall and tissue context, name a collapsed venule or cleft as an alternative, and state what additional evidence would distinguish them."
+          }
+        },
+        {
+          "title": "Use stains and controls to answer one wall question at a time",
+          "body": "H&E shows the overall relationship of nuclei, media and connective tissue. Elastic stains can clarify internal elastic laminae and medial lamellae; trichrome preparations help compare collagen-rich regions with muscle. PAS can highlight carbohydrate-rich structures, including some basement-membrane regions, but positive staining is not specific to one molecule.\n\nImmunostains add molecular evidence but require controls and context. A smooth-muscle-associated marker is not a lineage tracer, and some markers are shared by activated stromal cells or immature populations. Keep adjacent sections aligned when comparing stains: a different plane may change the structure being compared. The correct preparation and control are part of the interpretation, not administrative details.",
+          "practice": {
+            "prompt": "A stain highlights an elastic network. Does it measure the living vessel’s compliance directly?",
+            "feedback": "No. It displays a structural component. Mechanical behaviour also depends on organisation, collagen, smooth-muscle tone, geometry and the conditions of measurement."
+          }
+        },
+        {
+          "title": "Relate wall geometry to function without reading pressure from a slide",
+          "body": "The media’s arrangement permits circumferential contraction, while elastin and collagen contribute differently to passive wall behaviour. Small changes in arteriolar radius can substantially alter resistance; veins can hold changing blood volumes with relatively small pressure changes over part of their operating range. These are functional principles, not measurements obtainable from a fixed specimen alone.\n\nFixation, contraction, loss of pressure and cutting angle change the apparent lumen and wall thickness. A section does not provide the original in-vivo pressure or compliance curve. State the structural feature that supports a function, then separate that inference from an actual physiological measurement.",
+          "practice": {
+            "prompt": "Can a narrow fixed lumen prove high resistance in the living patient?",
+            "feedback": "No. The specimen’s geometry may reflect processing or contraction. Structure supports a physiological explanation, but in-vivo resistance requires additional measurements."
+          }
+        },
+        {
+          "title": "Build an endothelial network: vasculogenesis, sprouting and remodelling",
+          "body": "Vasculogenesis describes formation of vessels from endothelial precursors; angiogenesis describes new vascular growth from existing vessels. Early endothelial assemblies establish a primitive network, which is then connected, remodelled and stabilised. Sprouting is one angiogenic mode, not a synonym for every vascular developmental process.\n\nNetwork development requires more than producing endothelial cells. Cells must organise a patent lumen, connect to other segments, establish tissue-appropriate barriers and recruit support. Flow and local signals can alter which branches enlarge or regress. Distinguish an endothelial marker-positive cord from a perfused vessel: the second claim requires evidence of lumen continuity and flow.",
+          "practice": {
+            "prompt": "Does a cluster of endothelial-marker-positive cells prove that a functional vessel has formed?",
+            "feedback": "No. Identity, tubular organisation, connection, perfusion and stability are different developmental outcomes."
+          }
+        },
+        {
+          "title": "VEGF and DLL4–Notch: separate a sprouting signal from branch organisation",
+          "body": "A sprouting front is not made of equivalent cells all extending equally. In experimental systems, VEGF-responsive leading endothelial cells interact with neighbours through DLL4–Notch signalling, helping regulate the balance between leading and trailing behaviours. These are responsive cell states rather than permanent unrelated cell lineages.\n\nSuchting and colleagues found increased tip-like features and branching after reducing Dll4 activity in their model, with the response dependent on VEGF signalling. This supports a role for DLL4 in restraining aspects of sprouting. It does not show that more branches always improve tissue perfusion, nor does it provide a clinical instruction to inhibit Notch.",
+          "practice": {
+            "prompt": "Why might “more branches” fail to mean “better blood supply”?",
+            "feedback": "Branch count does not establish connected lumens, productive flow, barrier integrity or stability. Measure the outcome being claimed."
+          }
+        },
+        {
+          "title": "Recruit mural support: what the PDGF-B experiment can and cannot isolate",
+          "body": "Endothelial–mural-cell communication helps organise the vessel wall. PDGF-B signalling contributes to pericyte recruitment and association with developing microvessels. Its local availability can matter as well as whether the protein is present.\n\nLindblom and colleagues altered the PDGF-B retention motif and observed defective pericyte investment, including partially detached cells. The mutant also had reduced expression, so the result is not a perfectly isolated test of spatial localisation at identical dose. A careful interpretation separates the proposed matrix-retention mechanism from the combined changes actually produced by the mutation. This is a useful example of why a mechanistic explanation needs both experimental design and limits.",
+          "practice": {
+            "prompt": "What extra control would strengthen a claim that localisation alone caused the phenotype?",
+            "feedback": "Compare conditions with matched biologically active ligand amounts while varying retention or distribution. Otherwise altered dose remains a competing contributor."
+          }
+        },
+        {
+          "title": "Keep endothelial ancestry separate from smooth-muscle ancestry",
+          "body": "A vessel is assembled from interacting compartments, not from one cell population that simply acquires three tunics. The endothelial tube and its surrounding mural and connective-tissue cells can have different developmental histories. Ask which compartment a lineage label occupies and which markers distinguish it.\n\nIn the proximal arterial wall, Harmon and Nakano demonstrated regional second-heart-field and neural-crest smooth-muscle contributions. The distribution depended on the vessel and region examined; it should not be turned into one rule for the entire circulation. A labelled arterial wall cell also does not establish the lineage of the adjacent endothelial cell.",
+          "practice": {
+            "prompt": "A lineage reporter marks aortic medial cells. Does that prove the endothelium has the same origin?",
+            "feedback": "No. Identify the labelled compartment and combine the reporter with cell-type evidence. Adjacent structures can have distinct origins."
+          }
+        },
+        {
+          "title": "Coronary development illustrates multiple endothelial routes",
+          "body": "Coronary vessels supply the heart, but their endothelial lining is not simply an extension of cardiac muscle. Chen and colleagues used mouse lineage approaches to identify regionally different endothelial contributions, including a sinus-venosus route and endocardial contributions. Perturbing VEGF-C affected the studied routes differently.\n\nThe useful lesson is to distinguish anatomical source, labelled progeny, territory and signalling requirement. A reporter’s specificity and induction timing shape the observed map. A mouse regional fate map is not a universal human timetable, and an endothelial-origin result should not be reused as proof of the smooth-muscle wall’s origin.",
+          "practice": {
+            "prompt": "What must be specified before saying “coronary cells come from the sinus venosus”?",
+            "feedback": "The cell type, species, labelled population, induction timing and coronary territory. The statement is too broad without those boundaries."
+          }
+        },
+        {
+          "title": "Use a developmental experiment to distinguish identity from function",
+          "body": "A useful study can combine lineage tracing, cell-type markers, three-dimensional structure and functional readouts. Each contributes a different piece: ancestry, current phenotype, organisation and performance. None is a complete substitute for the others. A permanent lineage reporter can remain after the initiating gene has stopped being expressed.\n\nWhen reading a developmental paper, write down the perturbation, control, stage, anatomical site and measured endpoint. Ask whether the experiment changed cell number, position, maturation, survival or function. A missing mature vessel at one time point could follow several different earlier defects; follow-up stages or rescue experiments may distinguish them.",
+          "practice": {
+            "prompt": "What would help distinguish delayed vessel maturation from permanent failure?",
+            "feedback": "Compare appropriately staged observations and functional endpoints over time. A single early image cannot establish the final outcome."
+          }
+        },
+        {
+          "title": "Give a lumen-to-wall identification with an explicit alternative",
+          "body": "A strong practical answer names the preparation and plane, traces the lining, describes the media and adventitia, and uses those observations to classify the vessel. Add the structure–function link: distributed elastic lamellae for recoil, a muscular cuff for resistance control, or a thin endothelial barrier for exchange.\n\nThen state what remains unresolved. A torn thin-walled region cannot be rescued by a filename that says “vein”; an uncalibrated image cannot supply an exact diameter; an ordinary section cannot show endothelial fenestrae. The developmental extension should name the endothelial and mural compartments separately and explain which experiment supports a proposed origin.",
+          "practice": {
+            "prompt": "An image title says “artery and vein,” but the adjacent thin wall is torn. What should you publish as the interpretation?",
+            "feedback": "Identify only the sufficiently preserved structures, explain the damaged region and withhold the clean artery–vein comparison claim. Source titles do not override visible evidence."
+          }
         }
       ],
       "question": {
@@ -1700,12 +2004,52 @@
         "answer": "Elastic lamellae stretch during ejection and recoil afterward, helping maintain flow between beats. The layered wall therefore contributes to pressure buffering."
       },
       "related": [
+        "muscle-histology",
         "cardiac-output",
-        "baroreflex",
-        "respiratory-histology"
+        "lymph-and-fluid-exchange",
+        "heart-looping-septation"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 35,
+      "objectives": [
+        "Identify vessel classes by lining, media, adventitia and section context.",
+        "Distinguish structural clues from artefact and missing evidence.",
+        "Relate elastic, muscular and exchange architectures to function.",
+        "Choose stains and resolution appropriate to the claimed structure.",
+        "Separate vasculogenesis, sprouting, remodelling and mural-cell recruitment.",
+        "Interpret regional endothelial and smooth-muscle lineage experiments with their limits."
+      ],
+      "prerequisites": [
+        "microscopy",
+        "muscle-histology"
+      ],
+      "summaryChecklist": [
+        "I trace the wall from the lumen instead of naming it from shape alone.",
+        "I distinguish elastic lamellae, smooth-muscle layers and collagenous support.",
+        "I can explain why absent red cells and missing valves are inconclusive.",
+        "I separate H&E observations from ultrastructural and functional claims.",
+        "I distinguish endothelial network formation from mural support and regional lineage."
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Compare an elastic artery, muscular artery and vein in a practical.",
+          "answer": "Start at the lumen, identify the intima, then compare media and adventitia. Distributed medial elastic lamellae support elastic-artery recoil; smooth-muscle-dominant media supports a muscular artery. A companion vein often has a larger irregular lumen and less dominant media, but contraction and section plane must be considered."
+        },
+        {
+          "prompt": "How is a vascular wall assembled during development?",
+          "answer": "Endothelial differentiation and network formation are followed by context-dependent remodelling and support-cell interactions. Endothelial and mural cells can have different regional origins. A marker-positive cord is not yet proof of a stable perfused vessel."
+        }
+      ],
+      "workedExample": {
+        "title": "Two similar lumens, different wall evidence",
+        "prompt": "Two small circular vascular profiles have similar diameters. One has a continuous muscle cuff; the other has only a thin lining and scattered nearby nuclei. Explain the distinction and its limits.",
+        "solution": [
+          "The continuous circumferential muscle cuff supports an arteriole; diameter alone does not decide.",
+          "The thin-walled profile could be an exchange vessel or venule depending on size, context and further views.",
+          "Do not assign every nearby nucleus to a pericyte without positional or molecular evidence.",
+          "A fixed section cannot establish live flow, pressure or developmental origin."
+        ]
+      }
     },
     {
       "id": "lymphoid-organs",

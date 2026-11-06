@@ -3933,6 +3933,390 @@
       "subject": "histology",
       "title": "Lymphoid architecture and development",
       "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "muscle-histology-plane-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "A transverse muscle section lacks visible banding. Which next step best improves classification?",
+      "options": [
+        {
+          "text": "Call it smooth muscle because striation is absent.",
+          "explanation": "A transverse cut does not display the longitudinal repeat."
+        },
+        {
+          "text": "Compare organisation, nuclear position and a longitudinal field.",
+          "explanation": "Correct. Multiple independent clues address the orientation problem."
+        },
+        {
+          "text": "Use stain brightness as the sole criterion.",
+          "explanation": "Colour depends on preparation and is not a muscle-type classifier."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "muscle-histology-matrix-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "Which pair correctly separates a muscle-cell interface from a fascicle partition?",
+      "options": [
+        {
+          "text": "Basal lamina around a fibre; perimysium around a fascicle.",
+          "explanation": "Correct. These are different structural levels."
+        },
+        {
+          "text": "Perimysium inside the sarcolemma; basal lamina around the whole organ.",
+          "explanation": "Perimysium encloses a fascicle outside the individual fibres. Basal lamina is a specialised layer outside each fibre’s sarcolemma; it is not the muscle’s outer coat."
+        },
+        {
+          "text": "Endomysium and basal lamina are identical structures.",
+          "explanation": "Endomysium is connective tissue outside the specialised basal lamina."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "muscle-histology-sarcomere-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "During ordinary sarcomere shortening, which change supports filament sliding?",
+      "options": [
+        {
+          "text": "The thick filaments shorten to half their original length.",
+          "explanation": "Shortening chiefly reflects increased overlap, not filament shrinkage."
+        },
+        {
+          "text": "The A band disappears because myosin is removed.",
+          "explanation": "The A band reflects thick-filament length and remains essentially constant."
+        },
+        {
+          "text": "Z discs approach while the A-band length remains essentially constant.",
+          "explanation": "Correct. Thin–thick overlap increases and the I band and H zone narrow."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "muscle-histology-disc-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "A cardiac junction transfers tensile force but an electrical-coupling defect remains. Which distinction explains this?",
+      "options": [
+        {
+          "text": "All disc functions are carried by one identical junction.",
+          "explanation": "Mechanical and electrical junctional functions differ."
+        },
+        {
+          "text": "Adhesive junctions and gap-junction channels perform different tasks.",
+          "explanation": "Correct. Preserved adhesion does not establish normal intercellular conductance."
+        },
+        {
+          "text": "Cardiac myocytes have no separate membranes.",
+          "explanation": "They remain distinct cells despite functional coupling."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "muscle-histology-stain-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "Dark and pale fibres are seen, but the preparation is undocumented. What is justified?",
+      "options": [
+        {
+          "text": "Assign every dark fibre to the fast category.",
+          "explanation": "Darkness has method-dependent meaning."
+        },
+        {
+          "text": "Infer the stain from the photograph’s colour alone.",
+          "explanation": "Colour is not sufficient provenance."
+        },
+        {
+          "text": "Describe the pattern and obtain the stain and control information before typing fibres.",
+          "explanation": "Correct. Fibre typing requires an appropriate method and interpretation."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "muscle-histology-fusion-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "Which finding most directly supports myoblast fusion into a myotube?",
+      "options": [
+        {
+          "text": "Several nuclei lie inside one continuous cell membrane.",
+          "explanation": "Correct. A multinucleated continuous cell supports fusion."
+        },
+        {
+          "text": "Two separate cells express the same transcription factor.",
+          "explanation": "Shared expression does not establish membrane fusion."
+        },
+        {
+          "text": "A lineage reporter remains present in adulthood.",
+          "explanation": "A permanent reporter records ancestry, not the occurrence of fusion by itself."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "muscle-histology-lineage-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "An adult satellite-cell population has a permanent regional lineage label. What can that establish?",
+      "options": [
+        {
+          "text": "The initiating gene must still be active in every labelled cell.",
+          "explanation": "A permanent reporter may outlast initiating expression."
+        },
+        {
+          "text": "Ancestry from the population labelled under that tracing design.",
+          "explanation": "Correct. Specificity, timing and controls define the inference."
+        },
+        {
+          "text": "Every muscle in the body has the same origin.",
+          "explanation": "A regional experiment cannot establish that universal claim."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "muscle-histology-smooth-20261106",
+      "topic": "muscle-histology",
+      "subject": "histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "href": "/library/muscle-histology#apply-the-concept",
+      "prompt": "Why does smooth muscle generate force despite lacking cross-striation?",
+      "options": [
+        {
+          "text": "It has no actin or myosin and contracts through collagen.",
+          "explanation": "Smooth muscle uses actin and myosin."
+        },
+        {
+          "text": "Its striations are always visible with routine H&E.",
+          "explanation": "It lacks repeating sarcomeric cross-bands."
+        },
+        {
+          "text": "Actin and myosin form a differently organised contractile network.",
+          "explanation": "Correct. Dense-body attachments and myosin regulation differ from striated muscle."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-empty-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "A thin-walled empty channel is seen in a section. Which conclusion is strongest?",
+      "options": [
+        {
+          "text": "It is definitively lymphatic because no red cells remain.",
+          "explanation": "Processing can remove blood; absence is not proof."
+        },
+        {
+          "text": "Its identity requires wall, tissue-context and possibly additional marker evidence.",
+          "explanation": "Correct. A collapsed venule or cleft can mimic part of the appearance."
+        },
+        {
+          "text": "It must be an artery because all empty channels are arteries.",
+          "explanation": "Contents alone do not classify the wall."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-elastic-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "Which observation best supports an elastic artery?",
+      "options": [
+        {
+          "text": "Numerous elastic lamellae throughout a substantial media.",
+          "explanation": "Correct. Distributed medial elasticity supports recoil."
+        },
+        {
+          "text": "One dark border without other wall information.",
+          "explanation": "A single internal elastic lamina can occur in a muscular artery."
+        },
+        {
+          "text": "Any round lumen containing erythrocytes.",
+          "explanation": "Many vessels contain red cells and can appear round."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-capillary-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "What prevents confident identification of fenestral diaphragms in routine low-power H&E?",
+      "options": [
+        {
+          "text": "All capillaries lack endothelial cells.",
+          "explanation": "Capillaries are endothelial tubes."
+        },
+        {
+          "text": "The stain always removes every diaphragm.",
+          "explanation": "The central limitation is resolution, not that universal processing claim."
+        },
+        {
+          "text": "The structures require higher-resolution ultrastructural evidence.",
+          "explanation": "Correct. Organ context cannot substitute for direct visual resolution."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-network-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "Endothelial-marker-positive cells form a cord. Which additional evidence most directly supports a functioning vessel?",
+      "options": [
+        {
+          "text": "More intense marker staining only.",
+          "explanation": "Intensity does not establish lumen or flow."
+        },
+        {
+          "text": "A connected patent lumen with demonstrated perfusion.",
+          "explanation": "Correct. Identity and function are distinct endpoints."
+        },
+        {
+          "text": "A label saying “angiogenesis.”",
+          "explanation": "A description is not an experimental readout."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-branches-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "A perturbation increases vascular branch counts. What must still be checked before claiming better supply?",
+      "options": [
+        {
+          "text": "Connectivity, perfusion and stability of the network.",
+          "explanation": "Correct. More branches alone do not establish productive flow."
+        },
+        {
+          "text": "Only whether the image looks busier.",
+          "explanation": "Visual complexity is not a supply measurement."
+        },
+        {
+          "text": "Nothing: more branches always means better oxygen delivery.",
+          "explanation": "That conclusion ignores function and tissue demand."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-retention-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "A ligand-retention mutation also lowers ligand expression. What weakens a localisation-only causal claim?",
+      "options": [
+        {
+          "text": "The tissue was imaged.",
+          "explanation": "Imaging itself is not the confounder."
+        },
+        {
+          "text": "The experiment used a control group.",
+          "explanation": "Controls are necessary, though they may not isolate every change."
+        },
+        {
+          "text": "The mutation changes both distribution and amount.",
+          "explanation": "Correct. Dose can contribute; matched-amount comparisons would help isolate localisation."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-compartments-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "A reporter labels smooth muscle in a proximal artery. Which inference is justified?",
+      "options": [
+        {
+          "text": "Every endothelial cell in the circulation shares that ancestry.",
+          "explanation": "The observed compartment and region do not support this generalisation."
+        },
+        {
+          "text": "The labelled mural population derives from the traced population within the experiment’s limits.",
+          "explanation": "Correct. Adjacent endothelium requires separate evidence."
+        },
+        {
+          "text": "The reporter directly measures adult blood pressure.",
+          "explanation": "Lineage tracing measures ancestry, not pressure."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original authored educational question; not an official examination item."
+    },
+    {
+      "id": "vessel-histology-development-20261106",
+      "topic": "vessel-histology",
+      "subject": "histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "href": "/library/vessel-histology#apply-the-concept",
+      "prompt": "Which comparison best distinguishes delayed maturation from irreversible developmental failure?",
+      "options": [
+        {
+          "text": "Appropriate stages followed over time with structural and functional readouts.",
+          "explanation": "Correct. A single time point cannot establish the ultimate outcome."
+        },
+        {
+          "text": "One uncalibrated screenshot at an early stage.",
+          "explanation": "A static image cannot establish the later trajectory."
+        },
+        {
+          "text": "Renaming the same image “mature.”",
+          "explanation": "Metadata does not create maturation evidence."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original authored educational question; not an official examination item."
     }
   ]
 }

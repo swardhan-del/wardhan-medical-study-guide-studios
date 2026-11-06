@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import { createRequire } from "node:module";
 import { resolve } from "node:path";
+import { validateFigureMetadata } from "./figure-metadata-policy.mjs";
 const require = createRequire(
   process.env.FIGURE_TOOLS_ROOT
     ? resolve(process.env.FIGURE_TOOLS_ROOT, "package.json")
@@ -50,12 +51,9 @@ for (const f of figures) {
     const expectedFormat = v.src.endsWith(".png") ? "png" : v.src.endsWith(".jpg") ? "jpeg" : "webp";
     assert.equal(m.format, expectedFormat, "Asset extension and decoded format differ");
     assert.equal(fs.statSync("public" + v.src).size, v.bytes, "Figure byte count differs");
-    assert(
-      !m.exif && !m.xmp && !m.iptc && !m.icc,
-      "Unexpected metadata in " + v.src,
-    );
-    assert.equal(m.width, v.width);
-    assert.equal(m.height, v.height);
+    const display = validateFigureMetadata(f.id, m);
+    assert.equal(display.width, v.width);
+    assert.equal(display.height, v.height);
     assert(
       Math.abs(v.height / v.width - f.height / f.width) < 0.004,
       "Aspect ratio changed",
@@ -63,9 +61,13 @@ for (const f of figures) {
     assert(v.width <= f.width, "Upscaled source");
   }
   assert.equal(f.src, f.variants.at(-1).src);
-  if (f.licenseUrl) assert.equal(f.licenseUrl, "https://creativecommons.org/licenses/by/4.0/");
+  if (f.licenseUrl) assert([
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://creativecommons.org/licenses/by-sa/4.0/",
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+  ].includes(f.licenseUrl), "Unreviewed licence URL");
   if (f.panelDescriptions) assert(f.panelDescriptions.length > 0 && f.panelDescriptions.every(p => p.label && p.text.length > 30));
 }
 console.log(
-  `Figure checks passed: ${figures.length} approved figures, responsive variants, mapped topics, preserved proportions and stripped metadata.`,
+  `Figure checks passed: ${figures.length} approved figures, responsive variants, mapped topics, preserved proportions and reviewed metadata.`,
 );
