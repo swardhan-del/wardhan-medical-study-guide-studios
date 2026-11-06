@@ -8,6 +8,11 @@ const srcSet = (f: PublicFigure) =>
     .filter((v) => v.width <= 1280)
     .map((v) => `${v.src} ${v.width}w`)
     .join(", ");
+const licenceLabel = (url: string) => ({
+  "https://creativecommons.org/licenses/by/4.0/": "CC BY 4.0",
+  "https://creativecommons.org/licenses/by-sa/4.0/": "CC BY-SA 4.0",
+  "https://creativecommons.org/publicdomain/zero/1.0/": "CC0 1.0",
+}[url] ?? "View terms");
 export function FigureThumbnail({ figure }: { figure?: PublicFigure }) {
   return figure ? (
     <img
@@ -47,7 +52,7 @@ export function EducationalFigure({ figure }: { figure: PublicFigure }) {
   }
   return (
     <StudyVisual className="educational-figure" id={"figure-" + figure.id} title={figure.title} alt={figure.alt} caption={figure.caption} observe={figure.observe}
-      credit={`${figure.rights}. ${figure.modifications}`} sources={[{ title: "Image source or supporting scientific reference", url: figure.sourceUrl }, ...(figure.licenseUrl ? [{ title: "Image reuse licence", url: figure.licenseUrl }] : [])]}>
+      credit={`${figure.rights}. ${figure.modifications}`} sources={[{ title: "Image source or supporting scientific reference", url: figure.sourceUrl }, ...(figure.licenseUrl ? [{ title: `Image reuse licence: ${licenceLabel(figure.licenseUrl)}`, url: figure.licenseUrl }] : [])]}>
       {failed ? <div className="visual-image-fallback" role="status"><p><strong>Image unavailable.</strong> {figure.alt}</p><button ref={trigger} onClick={enlarge}>Try the full-size image</button></div> : <button
         ref={trigger}
         className="figure-open"

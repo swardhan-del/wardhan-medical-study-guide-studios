@@ -2,13 +2,12 @@
 
 import { useCallback, useState } from "react";
 import data from "@/content/muscle-specimens.json";
-import { figuresForResource } from "@/lib/figures";
+import type { PublicFigure } from "@/lib/figures";
 import styles from "./muscle-specimen-explorer.module.css";
 
-const figures = figuresForResource("muscle-histology");
 const choices = ["skeletal", "cardiac", "smooth"] as const;
 
-function SpecimenTask({ index }: { index: number }) {
+function SpecimenTask({ index, figures }: { index: number; figures: PublicFigure[] }) {
   const item = data.specimens[index];
   const figure = figures.find(f => f.id === item.figureId)!;
   const [choice, setChoice] = useState<string | null>(null);
@@ -55,7 +54,7 @@ function SpecimenTask({ index }: { index: number }) {
   </div>;
 }
 
-export function MuscleSpecimenExplorer() {
+export function MuscleSpecimenExplorer({ figures }: { figures: PublicFigure[] }) {
   const [selected, setSelected] = useState(0);
   return <section className={`study-panel ${styles.explorer}`} aria-labelledby="muscle-specimen-title">
     <p className="eyebrow">Observe · interpret · check the limit</p>
@@ -64,7 +63,7 @@ export function MuscleSpecimenExplorer() {
     <div className={styles.controls} role="group" aria-label="Choose a muscle specimen">
       {data.specimens.map((item, index) => <button key={item.figureId} type="button" aria-pressed={selected === index} aria-controls="muscle-selected-specimen" onClick={() => setSelected(index)}>Specimen {index + 1}</button>)}
     </div>
-    <div id="muscle-selected-specimen"><SpecimenTask key={selected} index={selected} /></div>
+    <div id="muscle-selected-specimen"><SpecimenTask key={selected} index={selected} figures={figures} /></div>
     <details><summary>Read all three specimen interpretations</summary>
       <ol>{data.specimens.map(item => {
         const figure = figures.find(f => f.id === item.figureId)!;

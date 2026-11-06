@@ -1,4 +1,4 @@
-import { MuscleSpecimenExplorer } from "./muscle-specimen-explorer";
+import { MuscleSpecimenEntry } from "./muscle-specimen-entry";
 import { BloodSpecimenExplorer } from "./blood-specimen-explorer";
 import { LymphoidSpecimenExplorer } from "./lymphoid-specimen-explorer";
 import { CollagenRouteExplorer, BonePreparationExplorer } from "./connective-bone-explorers";
@@ -176,7 +176,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
             </div>
           </section>
           {(lesson.id === "liver-pancreas" || lesson.id === "renal-histology" || lesson.id === "respiratory-histology") && <SystemRelationships lessonId={lesson.id} />}
-          {lesson.id === "muscle-histology" && <MuscleSpecimenExplorer />}
+          {lesson.id === "muscle-histology" && <MuscleSpecimenEntry figures={figures} />}
           {lesson.id === "blood-marrow" && <BloodSpecimenExplorer />}
           {lesson.id === "connective-tissue" && <CollagenRouteExplorer />}
           {lesson.id === "cartilage-bone" && <BonePreparationExplorer />}
@@ -184,7 +184,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           {lesson.id === "cell-junctions" && <><JunctionMapExplorer /><BarrierReadoutExplorer /></>}
           {lesson.id === "cohort-case-control-denominators" && <CaseControlExplorer />}
           {lesson.id === "microscopy" && <><PreparationSequence/><HistologyDemonstrations/></>}
-          {lesson.id === "lymphoid-organs" && <><LymphoidSpecimenExplorer/><LymphoidPractical/></>}
+          {lesson.id === "lymphoid-organs" && <><LymphoidSpecimenExplorer figure={figures.find(figure => figure.id === "normal-lymph-node-architecture")!}/><LymphoidPractical/></>}
           {lesson.workedExample && <section className="study-panel" aria-labelledby="worked-example-heading">
             <p className="eyebrow">Work it through</p>
             <h2 id="worked-example-heading">{lesson.workedExample.title}</h2>
