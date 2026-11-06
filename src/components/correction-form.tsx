@@ -3,16 +3,19 @@ import { useState } from "react";
 
 export function CorrectionForm({
   lesson,
+  questionId,
   email,
 }: {
   lesson: string;
+  questionId?: string;
   email: string | null;
 }) {
   const [section, setSection] = useState("");
   const [details, setDetails] = useState("");
   const [draft, setDraft] = useState("");
   const title = `Study feedback: ${lesson || "General feedback"}`;
-  const body = `Page: ${lesson || "Not specified"}\nSection: ${section}\n\nFeedback or correction:\n${details}\n`;
+  const questionContext = questionId ? `Question ID: ${questionId}\n` : "";
+  const body = `Page: ${lesson || "Not specified"}\n${questionContext}Section: ${section}\n\nFeedback or correction:\n${details}\n`;
   const href = email
     ? `mailto:${email}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`
     : `https://github.com/swardhan-del/wardhan-medical-study-guide-studios/issues/new?${new URLSearchParams({ title, body })}`;
@@ -34,6 +37,7 @@ export function CorrectionForm({
       <p>
         <strong>Page:</strong> {lesson || "General feedback"}
       </p>
+      {questionId && <p><strong>Question ID:</strong> {questionId}</p>}
       <label>
         Page title, section or question
         <input
