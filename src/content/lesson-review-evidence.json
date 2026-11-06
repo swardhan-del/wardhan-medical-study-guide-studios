@@ -1399,50 +1399,6 @@
       "contentSha256": "6d8c8796a0aacd50762b0490e1dcc0f2b37e1fea7d7926ec5cf6b931f4e3870c"
     },
     {
-      "id": "lymphoid-organs-editorial-depth-20261105",
-      "lessonId": "lymphoid-organs",
-      "scope": "editorial",
-      "reviewedAt": "2026-11-05",
-      "reviewer": "Codex AI-assisted source and rendered-browser review",
-      "qualification": "Automated assistant; no independent clinical or human accessibility certification claimed",
-      "independent": false,
-      "record": "docs/reviews/histology-depth-20261105.md",
-      "contentSha256": "3988750e7e9f7e049230d138f505323c06edbd8bac3efdf5a7ffbcbf577b5933"
-    },
-    {
-      "id": "lymphoid-organs-readability-depth-20261105",
-      "lessonId": "lymphoid-organs",
-      "scope": "readability",
-      "reviewedAt": "2026-11-05",
-      "reviewer": "Codex AI-assisted source and rendered-browser review",
-      "qualification": "Automated assistant; no independent clinical or human accessibility certification claimed",
-      "independent": false,
-      "record": "docs/reviews/histology-depth-20261105.md",
-      "contentSha256": "3988750e7e9f7e049230d138f505323c06edbd8bac3efdf5a7ffbcbf577b5933"
-    },
-    {
-      "id": "lymphoid-organs-visual-depth-20261105",
-      "lessonId": "lymphoid-organs",
-      "scope": "visual",
-      "reviewedAt": "2026-11-05",
-      "reviewer": "Codex AI-assisted source and rendered-browser review",
-      "qualification": "Automated assistant; no independent clinical or human accessibility certification claimed",
-      "independent": false,
-      "record": "docs/reviews/histology-depth-20261105.md",
-      "contentSha256": "3988750e7e9f7e049230d138f505323c06edbd8bac3efdf5a7ffbcbf577b5933"
-    },
-    {
-      "id": "lymphoid-organs-accessibility-depth-20261105",
-      "lessonId": "lymphoid-organs",
-      "scope": "accessibility",
-      "reviewedAt": "2026-11-05",
-      "reviewer": "Codex AI-assisted source and rendered-browser review",
-      "qualification": "Automated assistant; no independent clinical or human accessibility certification claimed",
-      "independent": false,
-      "record": "docs/reviews/histology-depth-20261105.md",
-      "contentSha256": "3988750e7e9f7e049230d138f505323c06edbd8bac3efdf5a7ffbcbf577b5933"
-    },
-    {
       "id": "renal-histology-editorial-system-depth-20261105",
       "lessonId": "renal-histology",
       "scope": "editorial",
@@ -1837,6 +1793,50 @@
       "independent": false,
       "record": "docs/reviews/blood-marrow-depth-20261106.md",
       "contentSha256": "5ad4cfe5c14f31070a55048b598265d64b2f116023d9391490b4f98926b43c4e"
+    },
+    {
+      "id": "lymphoid-organs-editorial-specimen-20261106",
+      "lessonId": "lymphoid-organs",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/lymphoid-specimen-depth-20261106.md",
+      "contentSha256": "48afb0a30481a0c4ba809f03b4c530a8670752543cdbe628e72b98a9ebac4572"
+    },
+    {
+      "id": "lymphoid-organs-visual-specimen-20261106",
+      "lessonId": "lymphoid-organs",
+      "scope": "visual",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/lymphoid-specimen-depth-20261106.md",
+      "contentSha256": "48afb0a30481a0c4ba809f03b4c530a8670752543cdbe628e72b98a9ebac4572"
+    },
+    {
+      "id": "lymphoid-organs-accessibility-specimen-20261106",
+      "lessonId": "lymphoid-organs",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/lymphoid-specimen-depth-20261106.md",
+      "contentSha256": "48afb0a30481a0c4ba809f03b4c530a8670752543cdbe628e72b98a9ebac4572"
+    },
+    {
+      "id": "lymphoid-organs-readability-specimen-20261106",
+      "lessonId": "lymphoid-organs",
+      "scope": "readability",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/lymphoid-specimen-depth-20261106.md",
+      "contentSha256": "48afb0a30481a0c4ba809f03b4c530a8670752543cdbe628e72b98a9ebac4572"
     }
   ]
 }

@@ -1,4 +1,5 @@
 import { BloodSpecimenExplorer } from "./blood-specimen-explorer";
+import { LymphoidSpecimenExplorer } from "./lymphoid-specimen-explorer";
 import { CollagenRouteExplorer, BonePreparationExplorer } from "./connective-bone-explorers";
 import { PhysiologyCourseNavigation } from "./physiology-course-navigation";
 import { GlandStructureExplorer, BarrierReadoutExplorer, JunctionMapExplorer } from "./epithelial-explorers";
@@ -125,7 +126,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <a href="#worked-example-heading">Worked Example</a><a href="#knowledge-check-heading">Knowledge Check</a>
         <a href="#application-heading">Clinical and Applied Questions</a><a href="#oral-recall-title">Oral Examination Prompts</a>
         <a href="#recap">Recall practice</a><a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
-      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{lesson.id === "blood-marrow" && <a href="#blood-specimen-title">Choose a preparation</a>}{lesson.id === "connective-tissue" && <a href="#collagen-route-title">Collagen pathway</a>}{lesson.id === "cartilage-bone" && <a href="#bone-preparation-title">Preparation explorer</a>}{lesson.id === "epithelia" && <a href="#gland-explorer-title">Gland comparison</a>}{lesson.id === "cell-junctions" && <><a href="#junction-map-title">Junction map</a><a href="#barrier-explorer-title">Barrier exercise</a></>}{lesson.id === "gi-histology" && <a href="#gi-profile-explorer-title">Compare villus and crypt</a>}{(lesson.id === "liver-pancreas" || lesson.id === "renal-histology" || lesson.id === "respiratory-histology") && <a href="#system-relationships-title">Trace a route</a>}{lesson.id === "cohort-case-control-denominators" && <a href="#case-control-explorer-title">Population explorer</a>}{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{reviewedSupplementalPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
+      </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#concept-map-title">Explanation</a>{lesson.id === "blood-marrow" && <a href="#blood-specimen-title">Choose a preparation</a>}{lesson.id === "lymphoid-organs" && <a href="#lymphoid-specimen-title">Read the specimen</a>}{lesson.id === "connective-tissue" && <a href="#collagen-route-title">Collagen pathway</a>}{lesson.id === "cartilage-bone" && <a href="#bone-preparation-title">Preparation explorer</a>}{lesson.id === "epithelia" && <a href="#gland-explorer-title">Gland comparison</a>}{lesson.id === "cell-junctions" && <><a href="#junction-map-title">Junction map</a><a href="#barrier-explorer-title">Barrier exercise</a></>}{lesson.id === "gi-histology" && <a href="#gi-profile-explorer-title">Compare villus and crypt</a>}{(lesson.id === "liver-pancreas" || lesson.id === "renal-histology" || lesson.id === "respiratory-histology") && <a href="#system-relationships-title">Trace a route</a>}{lesson.id === "cohort-case-control-denominators" && <a href="#case-control-explorer-title">Population explorer</a>}{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{reviewedSupplementalPractice && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
       <TopicGuideLinks lessonId={lesson.id} />
       <div className="concept-layout">
@@ -181,7 +182,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           {lesson.id === "cell-junctions" && <><JunctionMapExplorer /><BarrierReadoutExplorer /></>}
           {lesson.id === "cohort-case-control-denominators" && <CaseControlExplorer />}
           {lesson.id === "microscopy" && <><PreparationSequence/><HistologyDemonstrations/></>}
-          {lesson.id === "lymphoid-organs" && <LymphoidPractical/>}
+          {lesson.id === "lymphoid-organs" && <><LymphoidSpecimenExplorer/><LymphoidPractical/></>}
           {lesson.workedExample && <section className="study-panel" aria-labelledby="worked-example-heading">
             <p className="eyebrow">Work it through</p>
             <h2 id="worked-example-heading">{lesson.workedExample.title}</h2>
@@ -241,7 +242,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
               </p>
             </section>
           )}
-          {!["epithelia", "microscopy", "renal-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id)} title="Connect the figure with the explanation" />}
+          {!["epithelia", "microscopy", "renal-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id).filter(figure => figure.id !== "normal-lymph-node-architecture")} title="Connect the figure with the explanation" />}
           {lesson.id === "limbs-plexus-and-joints" && <PlexusRecall />}
           <ConceptCheck
             key={`concept-${lesson.id}`}
