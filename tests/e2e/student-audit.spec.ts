@@ -20,7 +20,7 @@ test("saved renal and cross-subject lessons share My Study and survive reload", 
   ).toBeVisible();
   await expect(
     saved.getByRole("link", {
-      name: "Epithelia: layers, shape and function",
+      name: "Epithelia and glands: identify structure and explain development",
       exact: true,
     }),
   ).toBeVisible();
@@ -34,7 +34,7 @@ test("saved renal and cross-subject lessons share My Study and survive reload", 
   ).toHaveCount(0);
   await expect(
     saved.getByRole("link", {
-      name: "Epithelia: layers, shape and function",
+      name: "Epithelia and glands: identify structure and explain development",
       exact: true,
     }),
   ).toBeVisible();

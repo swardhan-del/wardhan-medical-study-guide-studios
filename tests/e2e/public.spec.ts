@@ -458,9 +458,11 @@ test("new lesson supports explained correction, oral recall, related pages and s
 }, testInfo) => {
   await page.goto("/library/epithelia");
   const check = page.locator("#concept-check-title");
-  await expect(page.locator("#main-content .concept-sequence details").nth(1)).toHaveAttribute("open", "");
+  const layerSection = page.locator("#main-content .concept-sequence > details")
+    .filter({ has: page.getByText("Count cellular layers, not rows of nuclei", { exact: true }) });
+  await expect(layerSection).toHaveAttribute("open", "");
   await expect(
-    page.locator(".concept-sequence:visible").getByText(/Pseudostratified epithelium appears multilayered/),
+    layerSection.getByText(/Pseudostratified epithelium can show nuclei at several heights/),
   ).toBeVisible();
   await expect(
     check.getByRole("button", { name: "Check answer", exact: true }),
@@ -484,19 +486,19 @@ test("new lesson supports explained correction, oral recall, related pages and s
   await expect(
     page.getByRole("region", { name: "Oral Examination Prompts" }).getByText(/Alveoli need a short diffusion distance/),
   ).toBeVisible();
-  await page.getByRole("button", { name: /Save to My Study: Epithelia:/ }).click();
+  await page.getByRole("button", { name: "Save to My Study: Epithelia and glands: identify structure and explain development", exact: true }).click();
   await page.goto("/reading-list");
   await expect(page).toHaveURL(/\/study#saved-learning$/);
   await expect(
     page.locator("#saved-learning").getByRole("link", {
-      name: "Epithelia: layers, shape and function",
+      name: "Epithelia and glands: identify structure and explain development",
       exact: true,
     }),
   ).toBeVisible();
   await page.reload();
   await page.locator("#saved-learning")
     .getByRole("link", {
-      name: "Epithelia: layers, shape and function",
+      name: "Epithelia and glands: identify structure and explain development",
       exact: true,
     })
     .click();
