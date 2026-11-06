@@ -2368,6 +2368,489 @@
       "subject": "histology",
       "title": "Liver and pancreas: identify compartments and explain development",
       "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-oblique-cut",
+      "topic": "epithelia",
+      "prompt": "An invented teaching exercise shows a lining cut obliquely. Several nuclear rows appear in one field, but the apical surface and basal boundary cannot both be followed. Which next step best supports classification?",
+      "options": [
+        {
+          "text": "Find a better-oriented region and trace cell relationships to the two surfaces.",
+          "explanation": "Orientation and cellular relationships must support the label; a section can miss parts of a cell."
+        },
+        {
+          "text": "Name stratified epithelium immediately from the number of nuclear rows.",
+          "explanation": "Nuclear position in an oblique profile does not establish stacked complete cell layers."
+        },
+        {
+          "text": "Use the darkest nucleus to determine the number of layers.",
+          "explanation": "Staining intensity is not a layer-counting rule."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-simple-branched-duct",
+      "topic": "epithelia",
+      "prompt": "A fictional three-dimensional gland reconstruction shows several secretory units emptying into one unbranched duct. Which classification statement is justified?",
+      "options": [
+        {
+          "text": "It must be compound because there is more than one secretory unit.",
+          "explanation": "Simple versus compound refers to the duct system; multiple secretory units alone do not establish a branched duct."
+        },
+        {
+          "text": "Its duct system is simple; describe secretory-unit shape and branching separately.",
+          "explanation": "Keep duct architecture separate from the geometry of the secretory portion. A two-dimensional field may not reveal the whole tree."
+        },
+        {
+          "text": "It must be endocrine because the secretory units are clustered.",
+          "explanation": "Clustering does not define endocrine release. The stated duct connection supports exocrine organization."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-pas-location",
+      "topic": "epithelia",
+      "prompt": "In a fictional intestinal PAS preparation, magenta staining occurs at the basal interface, in goblet-cell material and along the apical border. What is the soundest interpretation?",
+      "options": [
+        {
+          "text": "All magenta structures must be basement membrane.",
+          "explanation": "The same stain can mark multiple structures. Trace each signal relative to cells, lumen and stroma."
+        },
+        {
+          "text": "PAS proves the embryonic origin of every stained cell.",
+          "explanation": "Histochemical staining is not lineage tracing."
+        },
+        {
+          "text": "The reaction highlights carbohydrate-associated structures; location and morphology distinguish them.",
+          "explanation": "A stain supplies a chemical clue. The pattern must be read together with architecture and preparation."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-lineage-compartments",
+      "topic": "epithelia",
+      "prompt": "In a hypothetical lineage study, a reporter is known to label endoderm and vascular endothelium. Blue cells lie around a gland, while its secretory epithelial profiles are unlabelled. What should be checked before claiming endoderm-derived gland epithelium?",
+      "options": [
+        {
+          "text": "Whether the blue cells are endothelial cells and whether appropriate reporter controls work.",
+          "explanation": "Reporter specificity and the anatomical compartment matter. Positive surrounding vessels do not establish a labelled secretory epithelial lineage."
+        },
+        {
+          "text": "Only whether the whole specimen looks blue at low magnification.",
+          "explanation": "A whole-specimen colour cannot assign a cellular lineage."
+        },
+        {
+          "text": "Whether an adult gland elsewhere has a similar shape.",
+          "explanation": "Similar adult architecture is not evidence of common developmental origin."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-01",
+      "topic": "epithelia",
+      "prompt": "A lobulated salivary specimen contains small acini and larger ducts. Which observation establishes a compound gland more directly than acinar shape?",
+      "options": [
+        {
+          "text": "A branching duct system.",
+          "explanation": "Compound describes branching of the duct system; it does not simply mean many secretory units."
+        },
+        {
+          "text": "Several secretory units sharing one unbranched duct.",
+          "explanation": "That arrangement can be simple branched; the secretory units and duct tree are different classification axes."
+        },
+        {
+          "text": "A round profile in one section.",
+          "explanation": "A cross-section cannot establish the topology of the duct system."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-02",
+      "topic": "epithelia",
+      "prompt": "A duct within a salivary lobule has tall cells with basal striations. What is the best structural explanation?",
+      "options": [
+        {
+          "text": "Motile cilia on the basal surface.",
+          "explanation": "Cilia are not the explanation for basal striations; the apical and basal domains must be distinguished."
+        },
+        {
+          "text": "Basal membrane infoldings associated with mitochondria.",
+          "explanation": "This organisation supports the interpretation of a striated duct involved in modifying secretion."
+        },
+        {
+          "text": "Bands of extracellular collagen passing through each cell.",
+          "explanation": "Collagen is extracellular and does not form these intracellular basal striations."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-03",
+      "topic": "epithelia",
+      "prompt": "A PAS reaction highlights apical material, cell contents and basal outlines in one tissue. Which interpretation is most defensible?",
+      "options": [
+        {
+          "text": "All positive material must be glycogen.",
+          "explanation": "PAS positivity is not specific for glycogen; a diastase comparison can address that particular possibility."
+        },
+        {
+          "text": "Every positive outline must be a vessel.",
+          "explanation": "Basal matrix and other structures can also be positive; architecture determines the compartment."
+        },
+        {
+          "text": "Interpret each location and use appropriate controls for the material being tested.",
+          "explanation": "PAS can label several carbohydrate-rich structures; location and control comparisons refine the inference."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-04",
+      "topic": "epithelia",
+      "prompt": "An endocrine organ contains epithelial follicles around stored extracellular colloid. Does the lumen exclude an endocrine interpretation?",
+      "options": [
+        {
+          "text": "No; thyroid follicles provide this important architectural example.",
+          "explanation": "Endocrine classification concerns release and vascular relationships, not a universal absence of lumina."
+        },
+        {
+          "text": "Yes; every lumen requires an exocrine duct to the exterior.",
+          "explanation": "A follicular storage space is not automatically an exocrine drainage duct."
+        },
+        {
+          "text": "Yes; endocrine tissue contains only isolated cells.",
+          "explanation": "Endocrine cells can form organised groups and follicles."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-05",
+      "topic": "epithelia",
+      "prompt": "A fixed mixed salivary gland shows crescent-shaped serous profiles beside mucous cells. What should a careful explanation include?",
+      "options": [
+        {
+          "text": "The crescent must be the exact living three-dimensional arrangement.",
+          "explanation": "A fixed two-dimensional appearance cannot establish an unchanged living arrangement."
+        },
+        {
+          "text": "Preparation can influence the classic demilune appearance.",
+          "explanation": "Describe the observed serous–mucous relationship while recognising that fixation can alter its appearance."
+        },
+        {
+          "text": "The pale cells are empty spaces with no secretory role.",
+          "explanation": "Pale mucous cells remain cells; routine processing and staining affect how their contents appear."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-06",
+      "topic": "epithelia",
+      "prompt": "In a mouse salivary explant experiment, an epithelial bud remains but outgrowth fails after a perturbation. Which outcome has actually failed?",
+      "options": [
+        {
+          "text": "Every event in gland initiation.",
+          "explanation": "A remaining bud contradicts an unrestricted claim that no initiation occurred."
+        },
+        {
+          "text": "All mature human salivary secretion.",
+          "explanation": "An embryonic mouse explant does not directly measure mature human gland function."
+        },
+        {
+          "text": "Outgrowth in the tested conditions.",
+          "explanation": "Bud presence and later extension are separate outcomes; the result does not show that every earlier developmental event failed."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-07",
+      "topic": "epithelia",
+      "prompt": "A lineage reporter labels nearby vessels and a positive-control organ, but not the major salivary epithelial compartment examined. What must be stated?",
+      "options": [
+        {
+          "text": "The labelled cell compartment, reporter, species and developmental stage.",
+          "explanation": "Lineage interpretation depends on which cells the reporter captures and which compartment is being analysed."
+        },
+        {
+          "text": "The vessel label proves the adjacent epithelium has the same origin.",
+          "explanation": "Neighbouring compartments need not share a lineage."
+        },
+        {
+          "text": "The result assigns one origin to every human oral gland.",
+          "explanation": "A selected mouse lineage experiment cannot silently establish that unrestricted claim."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "epithelial-depth-extension-08",
+      "topic": "epithelia",
+      "prompt": "Why should embryonic origin be assigned by compartment rather than to an entire adult organ with one word?",
+      "options": [
+        {
+          "text": "All components inherit the origin of the largest epithelial profile.",
+          "explanation": "Profile size does not determine lineage of neighbouring compartments."
+        },
+        {
+          "text": "Epithelial, vascular and supporting components can have different developmental contributions.",
+          "explanation": "Compartment-level reasoning connects the adult tissue architecture with the actual developmental population being discussed."
+        },
+        {
+          "text": "A germ-layer label predicts every mature physiological function.",
+          "explanation": "Origin and mature function are related but distinct questions."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "href": "/library/epithelia#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-resolving-apical-border",
+      "topic": "cell-junctions",
+      "prompt": "A student sees an apical ciliary border in a routine light-microscope section and claims to have counted its internal microtubule doublets. Which correction is needed?",
+      "options": [
+        {
+          "text": "The border proves every cilium is immotile.",
+          "explanation": "Visibility of a border does not establish its movement or detailed internal structure."
+        },
+        {
+          "text": "All apical projections are actin-based microvilli.",
+          "explanation": "Cilia and microvilli differ in organization; names cannot be swapped based on location alone."
+        },
+        {
+          "text": "Identifying the border does not resolve the axonemal arrangement; suitable ultrastructural evidence is needed.",
+          "explanation": "Use the resolving power and preparation appropriate to the claim. Do not label a 9+2 arrangement from routine light microscopy."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-09",
+      "topic": "cell-junctions",
+      "prompt": "A basal attachment links intermediate filaments to extracellular matrix. Which description fits best?",
+      "options": [
+        {
+          "text": "Desmosome between neighbouring cells.",
+          "explanation": "A desmosome is a cell–cell contact, not a matrix-facing attachment."
+        },
+        {
+          "text": "Actin-linked focal adhesion.",
+          "explanation": "Focal adhesions are matrix contacts but have the contrasting actin linkage."
+        },
+        {
+          "text": "Hemidesmosomal attachment.",
+          "explanation": "The cell–matrix partner and intermediate-filament connection distinguish this attachment."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-10",
+      "topic": "cell-junctions",
+      "prompt": "An injected small dye spreads from one epithelial cell into neighbouring cytoplasms. Which route is being investigated?",
+      "options": [
+        {
+          "text": "Intercellular communication through compatible gap-junction channels.",
+          "explanation": "The experiment follows cell-to-cell transfer; the appropriate controls must still establish the route."
+        },
+        {
+          "text": "A paracellular route between external chambers.",
+          "explanation": "The starting and ending compartments in this experiment are cytoplasms, not two external chambers."
+        },
+        {
+          "text": "Bulk passage through a basement membrane.",
+          "explanation": "A basement membrane does not provide a cytoplasm-to-cytoplasm channel."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-11",
+      "topic": "cell-junctions",
+      "prompt": "A molecule crosses an epithelial cell through membrane channels without direct ATP hydrolysis at that step. How is the route classified?",
+      "options": [
+        {
+          "text": "Necessarily paracellular.",
+          "explanation": "Lack of direct ATP use does not mean the molecule went between cells."
+        },
+        {
+          "text": "Transcellular.",
+          "explanation": "Crossing through the cell defines the route; transcellular transport is not always active."
+        },
+        {
+          "text": "Gap-junction transport by definition.",
+          "explanation": "A channel in an apical or basal membrane is not automatically a channel connecting two cytoplasms."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-12",
+      "topic": "cell-junctions",
+      "prompt": "In an invented fixed-geometry exercise, normalised resistance falls from 4 to 2. What happens to normalised conductance?",
+      "options": [
+        {
+          "text": "It halves from 4 to 2.",
+          "explanation": "That repeats resistance values rather than calculating their reciprocals."
+        },
+        {
+          "text": "It must remain unchanged.",
+          "explanation": "The reciprocal changes when the defined resistance changes."
+        },
+        {
+          "text": "It doubles from 0.25 to 0.5.",
+          "explanation": "Conductance is the reciprocal: 1/4 = 0.25 and 1/2 = 0.5."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-13",
+      "topic": "cell-junctions",
+      "prompt": "Two invented conditions have equal resistance but tracer-transfer indices of 1 and 2. What can be concluded?",
+      "options": [
+        {
+          "text": "The named tracer readout differs despite equal resistance in this exercise.",
+          "explanation": "Electrical resistance and a specified tracer index are different measurements."
+        },
+        {
+          "text": "A particular claudin mutation has been identified.",
+          "explanation": "The values do not identify a gene or molecular route."
+        },
+        {
+          "text": "Every solute crosses twice as fast.",
+          "explanation": "A result for one named tracer cannot be extended to every solute."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-14",
+      "topic": "cell-junctions",
+      "prompt": "Long projections are described on an epididymal lining. Which structural distinction should be preserved?",
+      "options": [
+        {
+          "text": "Every projection ending in “cilia” has a 9+2 axoneme.",
+          "explanation": "The name alone is misleading; these projections have a different internal organisation."
+        },
+        {
+          "text": "Stereocilia here are actin-based specialisations.",
+          "explanation": "Their name does not make them microtubule-based motile cilia."
+        },
+        {
+          "text": "Length alone proves a motile beat mechanism.",
+          "explanation": "Length is not evidence of cytoskeletal structure or motility."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-15",
+      "topic": "cell-junctions",
+      "prompt": "A mouse ciliary-transport mutant changes neural markers and the ratio of processed to full-length Gli3. Why retain both readouts?",
+      "options": [
+        {
+          "text": "Both directly measure human clinical severity.",
+          "explanation": "These are experimental mouse developmental readouts, not a human clinical severity scale."
+        },
+        {
+          "text": "A marker image alone proves direct binding of the proteins.",
+          "explanation": "Marker patterns and genetic ordering do not establish a physical interaction."
+        },
+        {
+          "text": "They assess tissue patterning and biochemical processing separately.",
+          "explanation": "The results address different levels of the proposed mechanism and should not be collapsed into one label."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "junction-depth-extension-16",
+      "topic": "cell-junctions",
+      "prompt": "A developmental mutant retains cilia with abnormal morphology. Which inference is justified from their presence alone?",
+      "options": [
+        {
+          "text": "Ciliary projections are present; normal function remains unproved.",
+          "explanation": "Structure, morphology and functional signalling need to be distinguished."
+        },
+        {
+          "text": "All ciliary transport and signalling must be normal.",
+          "explanation": "Presence does not demonstrate normal molecular function."
+        },
+        {
+          "text": "The embryo cannot have altered tissue patterning.",
+          "explanation": "A projection can persist while its function and developmental consequences change."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "href": "/library/cell-junctions#apply-the-concept"
     }
   ]
 }

@@ -44,6 +44,13 @@ test("broken cross-links, absent teaching content and incorrect answer keys fail
     assert.throws(() => validateLibraryLessons(copy, catalog, sources));
   }
 });
+test("optional section practice requires both a usable prompt and explanatory feedback", () => {
+  for (const practice of [null, {}, { prompt: "Explain this structural distinction.", feedback: "" }, { prompt: "", feedback: "This explanation cannot substitute for a missing learner prompt." }]) {
+    const copy = structuredClone(data);
+    copy.lessons[0].steps[0].practice = practice;
+    assert.throws(() => validateLibraryLessons(copy, catalog, sources), /Incomplete teaching content/);
+  }
+});
 test("search matches multiple words across source topic tags and title, including punctuation variants", () => {
   const r = catalog.records.find((r) => r.id === "renal-abg-interpretation");
   assert.ok(matchesCatalogQuery(r, "renal acid-base"));
