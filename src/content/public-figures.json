@@ -964,6 +964,41 @@
       "publicApproval": "Owner-authorized educational release following provenance, CC BY4.0 rights and privacy review. Rendered review is a separate release gate.",
       "modifications": "Original bytes preserved. Numbered browser overlays can be hidden; no specimen pixels changed.",
       "observe": "Describe the lumen, surrounding wall and target distributions before inferring developmental behaviour."
+    },
+    {
+      "id": "human-choroid-plexus-labelled",
+      "title": "Human choroid plexus: epithelial covering and vascular core",
+      "sourceAsset": "images/figures/human-choroid-plexus-labelled.jpg",
+      "kind": "micrograph",
+      "alt": "H&E image of human lateral-ventricle choroid plexus. Repeated fronds have a purple-nucleated epithelial covering around pale stroma and erythrocyte-containing vessels. Original text and arrows label epithelium, stroma and blood vessels; the scale bar is 50 micrometres.",
+      "caption": "Tulemo, human lateral-ventricle choroid plexus, H&E, 50 µm scale bar. This permanently labelled photograph supports guided architectural interpretation. Age, disease state, fixation, embedding and section thickness are not supplied. Junctional strands, fenestrations and transporter molecules are not resolved here.",
+      "rights": "Tulemo, own-work image released under CC0 1.0.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": "docs/reviews/brain-csf-development-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?title=File:Choroid_plexus_(human).jpg&oldid=1283304155",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-brain-and-csf-barriers"
+      ],
+      "resourceIds": [
+        "brain-and-csf-barriers"
+      ],
+      "width": 1200,
+      "height": 975,
+      "src": "/images/figures/human-choroid-plexus-labelled.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/human-choroid-plexus-labelled.jpg",
+          "width": 1200,
+          "height": 975,
+          "bytes": 1229974
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after provider provenance, CC0 rights and privacy review. Rendered and release checks are separate gates.",
+      "modifications": "Original bytes and embedded labels preserved. Numbered browser overlays may be hidden; the original text and arrows remain.",
+      "observe": "Follow a frond from its epithelial covering inward to stroma and blood vessels. Distinguish the stromal core from a secretory lumen."
     }
   ]
 }

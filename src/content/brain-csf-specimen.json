@@ -1,0 +1,40 @@
+{
+  "title": "Read a labelled choroid-plexus field",
+  "figureId": "human-choroid-plexus-labelled",
+  "regions": [
+    {
+      "id": "covering",
+      "label": "Epithelial covering",
+      "anchor": {
+        "x": 78,
+        "y": 33
+      },
+      "observation": "A peripheral row of purple nuclei follows the outside of the rounded profile.",
+      "interpretation": "This is the epithelial covering of a vascular frond; the outer surface faces ventricular CSF in the supplied context.",
+      "limit": "The field does not resolve individual tight-junction strands or every cell border."
+    },
+    {
+      "id": "core",
+      "label": "Stromal core",
+      "anchor": {
+        "x": 76,
+        "y": 57
+      },
+      "observation": "Pale pink tissue lies inside the epithelial covering and around an internal vessel.",
+      "interpretation": "The core separates vascular endothelium from the outer epithelial blood–CSF interface.",
+      "limit": "Do not assign every stromal nucleus a specific cell identity from this H&E field."
+    },
+    {
+      "id": "vessel",
+      "label": "Erythrocyte-containing vessel",
+      "anchor": {
+        "x": 50,
+        "y": 68
+      },
+      "observation": "Strongly pink-red erythrocytes occupy an internal lumen.",
+      "interpretation": "This is a vascular space within the frond, not a secretory lumen bounded by the outer epithelium.",
+      "limit": "Endothelial fenestrations and transport rates cannot be read directly at this resolution."
+    }
+  ],
+  "model": "I see repeated epithelial-covered profiles with pale stromal cores and erythrocyte-containing vascular lumina. The provider identifies human lateral-ventricle choroid plexus. The epithelial apical surface faces ventricular CSF, while its basal surface faces the core. Blood reaching that core still encounters the epithelial blood–CSF interface. H&E supports the architecture but does not directly resolve tight-junction strands, fenestrations or transporter function. Permanent labels make this a guided field; age, disease status and detailed preparation are not supplied."
+}
