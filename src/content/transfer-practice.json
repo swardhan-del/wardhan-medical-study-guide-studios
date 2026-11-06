@@ -4893,6 +4893,390 @@
       ],
       "answer": 2,
       "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-origin-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-origin-20261106",
+      "prompt": "A trophoblast is situated deep within maternal decidua. Which statement is justified?",
+      "options": [
+        {
+          "text": "Its position makes it a maternal stromal cell.",
+          "explanation": "Position does not change developmental origin."
+        },
+        {
+          "text": "It is fetal-derived despite its location in maternal tissue.",
+          "explanation": "Correct. Origin and anatomical location must be recorded separately."
+        },
+        {
+          "text": "It must be a fetal erythrocyte.",
+          "explanation": "Trophoblast and erythrocyte are different cell categories."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-clock-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-clock-20261106",
+      "prompt": "A study describes a sample as gestational week 20. Which interpretation avoids a dating error?",
+      "options": [
+        {
+          "text": "It is exactly 20 weeks after fertilization.",
+          "explanation": "Gestational and post-fertilization ages use different starting points."
+        },
+        {
+          "text": "Its age can be recalculated from one villus without metadata.",
+          "explanation": "One histological field is not a calibrated gestational clock."
+        },
+        {
+          "text": "Retain the authors’ gestational-age convention when comparing specimens.",
+          "explanation": "Correct. Do not silently substitute post-fertilization age."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-fusion-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-fusion-20261106",
+      "prompt": "Cultured trophoblasts develop multiple nuclei within a shared cytoplasm. Which observation most directly helps distinguish fusion from simple cell aggregation?",
+      "options": [
+        {
+          "text": "Demonstrated movement of an introduced tracer through the shared cytoplasm, with appropriate controls.",
+          "explanation": "Correct. Cytoplasmic continuity addresses the distinction more directly than proximity."
+        },
+        {
+          "text": "The cells occupy adjacent positions in a photograph.",
+          "explanation": "Adjacency alone does not show fusion."
+        },
+        {
+          "text": "Their nuclei all stain blue-purple.",
+          "explanation": "Nuclear staining does not establish cytoplasmic continuity."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-section-plane-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-section-plane-20261106",
+      "prompt": "A term specimen contains one villous profile in which no capillary lumen is visible. A student calls it a secondary villus. What is the strongest correction?",
+      "options": [
+        {
+          "text": "A missing lumen proves that all fetal vessels have regressed.",
+          "explanation": "One plane does not demonstrate the vascular state of the whole villus."
+        },
+        {
+          "text": "The section may miss an existing vessel; early developmental categories cannot be assigned from this isolated absence.",
+          "explanation": "Correct. Consider section geometry, additional planes and the known specimen context."
+        },
+        {
+          "text": "Maternal erythrocytes outside the villus establish its fetal vascular stage.",
+          "explanation": "Outside erythrocytes identify a different compartment and do not demonstrate internal vascular development."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-attachment-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-attachment-20261106",
+      "prompt": "A large villous cross-section appears in an isolated field. Why is size alone insufficient to call it an anchoring villus?",
+      "options": [
+        {
+          "text": "Large villi can never have vessels.",
+          "explanation": "Villous vascular contents and attachment are separate questions."
+        },
+        {
+          "text": "Every large section is a maternal artery.",
+          "explanation": "The surrounding tissue and wall must be identified."
+        },
+        {
+          "text": "Anchoring describes a connection to the attachment interface that may not be captured in this plane.",
+          "explanation": "Correct. A relationship must be demonstrated, not inferred from diameter alone."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-blood-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-blood-20261106",
+      "prompt": "In an H&E field, erythrocytes are enclosed by a capillary lumen inside a chorionic villus. Which circuit occupies that lumen?",
+      "options": [
+        {
+          "text": "The fetal circuit.",
+          "explanation": "Correct. Maternal blood occupies the surrounding intervillous compartment."
+        },
+        {
+          "text": "The maternal uterine venous circuit.",
+          "explanation": "That is outside the fetal capillary system."
+        },
+        {
+          "text": "One freely mixed maternal–fetal circulation.",
+          "explanation": "Exchange normally occurs across separating tissues rather than a merged blood pool."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-umbilical-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-umbilical-20261106",
+      "prompt": "A diagram labels the vessel returning fetal blood from placenta toward fetus. Which label fits?",
+      "options": [
+        {
+          "text": "Umbilical artery, because the blood has received oxygen.",
+          "explanation": "Artery and vein are defined by direction relative to the heart, not oxygen content alone."
+        },
+        {
+          "text": "Umbilical vein.",
+          "explanation": "Correct. It returns fetal blood toward the fetus after placental exchange."
+        },
+        {
+          "text": "Maternal spiral artery.",
+          "explanation": "That supplies the maternal intervillous compartment, not the fetal return circuit."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-term-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-term-20261106",
+      "prompt": "A routine term section contains no confidently identified cytotrophoblast in the selected field. What follows?",
+      "options": [
+        {
+          "text": "All cytotrophoblasts have disappeared from the organ.",
+          "explanation": "A negative observation in one field does not establish whole-population absence."
+        },
+        {
+          "text": "Every surface nucleus must belong to fetal endothelium.",
+          "explanation": "Endothelium lines the fetal vascular lumen; position matters."
+        },
+        {
+          "text": "Identification in this field is limited; cytotrophoblasts can persist at term.",
+          "explanation": "Correct. Additional sections and methods may be needed to identify them."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-scale-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-scale-20261106",
+      "prompt": "A high-resolution micrograph has no calibrated scale bar or pixel-size metadata. Which task remains defensible?",
+      "options": [
+        {
+          "text": "Describe the position of a fetal capillary relative to the villous surface.",
+          "explanation": "Correct. Relative anatomical relationships can be discussed without inventing calibrated measurements."
+        },
+        {
+          "text": "Report the barrier as exactly 2 micrometres thick.",
+          "explanation": "Pixels cannot be converted to micrometres without valid calibration."
+        },
+        {
+          "text": "Derive the exact gestational day from the image width.",
+          "explanation": "Image dimensions do not encode developmental age."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-marker-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-marker-20261106",
+      "prompt": "A protein stain is negative in a suspected trophoblast population. What should be checked before treating this as biological absence?",
+      "options": [
+        {
+          "text": "Only the counterstained nuclei, because visible nuclei establish that every antigen is preserved.",
+          "explanation": "Nuclear counterstaining confirms visible nuclei, not successful detection of this protein target."
+        },
+        {
+          "text": "The positive control, background control, tissue preservation and assay conditions.",
+          "explanation": "Correct. A negative signal has to be interpreted within a functioning detection system."
+        },
+        {
+          "text": "Only the signal intensity in an unrelated fluorescence channel.",
+          "explanation": "A separate channel does not validate target-specific antigen preservation, binding or detection."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-remodelling-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-remodelling-20261106",
+      "prompt": "A study labels trophoblast near a maternal spiral artery. What distinction should the explanation preserve?",
+      "options": [
+        {
+          "text": "This is automatically the formation of a fetal villous capillary.",
+          "explanation": "Maternal vessel remodelling and fetal vascular development are separate processes."
+        },
+        {
+          "text": "Every labelled cell must already line the entire artery.",
+          "explanation": "A local label does not establish complete replacement of a vessel lining."
+        },
+        {
+          "text": "Maternal vascular remodelling involves the attachment interface and must be assessed in its anatomical context.",
+          "explanation": "Correct. Position, morphology and complementary measurements are required."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-hormone-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-hormone-20261106",
+      "prompt": "A teaching note states that fetal DHEAS is converted into placental progesterone. Which correction is appropriate?",
+      "options": [
+        {
+          "text": "Separate cholesterol-derived progesterone synthesis from androgen-precursor contributions to estrogen synthesis.",
+          "explanation": "Correct. The pathways depend on different substrates and enzymes."
+        },
+        {
+          "text": "Treat fetal and placental steroid pathways as identical because both tissues encounter the same circulation.",
+          "explanation": "Shared circulation does not supply each tissue with the same enzymatic capacity."
+        },
+        {
+          "text": "Assign the final hormone to the fetal adrenal whenever its precursor came from that organ.",
+          "explanation": "The organ providing a precursor and the organ making the final hormone need not be the same."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-flux-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-flux-20261106",
+      "prompt": "Two samples have similar GLUT1 staining. Which conclusion is too strong without functional evidence?",
+      "options": [
+        {
+          "text": "The detected transporter can be compared within the staining protocol.",
+          "explanation": "This is a bounded statement about detection, provided controls are suitable."
+        },
+        {
+          "text": "They must transfer glucose at identical rates.",
+          "explanation": "Correct: that claim is too strong. Perfusion, gradients, membrane location and tissue metabolism also matter."
+        },
+        {
+          "text": "Further functional measurements could help evaluate transfer.",
+          "explanation": "That appropriately distinguishes abundance from flux."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-nucleus-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-nucleus-20261106",
+      "prompt": "Why should nuclei counted in a placental atlas not automatically be reported as the same number of whole cells?",
+      "options": [
+        {
+          "text": "Every nucleus is maternal regardless of location.",
+          "explanation": "Origin requires evidence; it is not determined by the word nucleus."
+        },
+        {
+          "text": "RNA cannot be measured in nuclei.",
+          "explanation": "Single-nucleus methods measure nuclear RNA under their specific assay conditions."
+        },
+        {
+          "text": "A multinucleated syncytium can contribute multiple nuclei from a shared cellular continuum.",
+          "explanation": "Correct. The biological unit measured must be named accurately."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-sampling-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-sampling-20261106",
+      "prompt": "One basal-plate biopsy contains a higher proportion of vascular-associated cells than another. What is an essential alternative explanation to a whole-organ biological change?",
+      "options": [
+        {
+          "text": "The biopsies sampled different microanatomical regions.",
+          "explanation": "Correct. Tissue composition and sampling location can change measured proportions."
+        },
+        {
+          "text": "A higher count proves every vessel in the placenta has remodelled.",
+          "explanation": "A local dataset does not establish a whole-organ state."
+        },
+        {
+          "text": "Every measured cell is an independent pregnancy.",
+          "explanation": "Cells within one donor are not independent donor-level replicates."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "placenta-depth-pseudotime-20261106",
+      "topic": "placenta",
+      "subject": "histology",
+      "title": "Placenta: villous identification, two circulations and development",
+      "href": "/library/placenta#question-placenta-depth-pseudotime-20261106",
+      "prompt": "A pseudotime plot orders trophoblast states. Which additional claim is not established by that plot alone?",
+      "options": [
+        {
+          "text": "There is an inferred ordering of measured states.",
+          "explanation": "That is the bounded output of the analysis."
+        },
+        {
+          "text": "One sampled human cell was directly observed becoming another through time.",
+          "explanation": "Correct: direct temporal observation is not supplied by pseudotime alone."
+        },
+        {
+          "text": "The inferred path can be compared with spatial and experimental evidence.",
+          "explanation": "That is a useful next step, not an overclaim."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
     }
   ]
 }

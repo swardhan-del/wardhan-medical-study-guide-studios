@@ -1,0 +1,47 @@
+{
+  "title": "Follow two circuits across one interface",
+  "kind": "Original teaching schematic, not a specimen or a scale drawing",
+  "tracks": [
+    {
+      "label": "Maternal circuit",
+      "stages": [
+        {
+          "title": "Uterine spiral artery",
+          "question": "Whose vessel supplies this compartment?",
+          "answer": "A maternal vessel supplies maternal blood toward the intervillous space."
+        },
+        {
+          "title": "Intervillous space",
+          "question": "Does this blood lie inside the fetal capillary?",
+          "answer": "No. It bathes the outside of villous trophoblast surfaces."
+        },
+        {
+          "title": "Maternal venous return",
+          "question": "Where does the maternal blood return?",
+          "answer": "Toward maternal uterine veins, not through the umbilical vein."
+        }
+      ]
+    },
+    {
+      "label": "Fetal circuit",
+      "stages": [
+        {
+          "title": "Umbilical arteries",
+          "question": "Which direction does fetal blood travel here?",
+          "answer": "From fetus toward placenta."
+        },
+        {
+          "title": "Villous capillaries",
+          "question": "What separates this blood from maternal blood?",
+          "answer": "The intervening villous interface, including trophoblast and fetal capillary wall, with local variations in intervening tissue."
+        },
+        {
+          "title": "Umbilical vein",
+          "question": "Where does the fetal blood go after exchange?",
+          "answer": "Back toward the fetus."
+        }
+      ]
+    }
+  ],
+  "centralNote": "Solutes cross the intervening interface; the diagram does not join the two blood circuits."
+}

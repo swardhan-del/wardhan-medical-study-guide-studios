@@ -4415,6 +4415,121 @@
           "heart-looping-septation"
         ]
       }
+    },
+    {
+      "lessonId": "placenta",
+      "title": "Placenta: villous identification, two circulations and development",
+      "subject": "histology",
+      "topic": "Placental microanatomy, development and research interpretation",
+      "slug": "placenta",
+      "learnerLevel": "Medical sciences: foundations to practical and developmental evidence",
+      "objectives": [
+        "Identify a villus using converging structural clues and preparation limits.",
+        "Trace maternal and fetal blood routes without joining the circuits.",
+        "Explain trophoblast differentiation, villous development and changing exchange geometry.",
+        "Distinguish routine morphology, protein detection, molecular state and lineage evidence."
+      ],
+      "sources": [
+        {
+          "title": "Mikael Häggström: human chorionic villus at term, H&E, CC0",
+          "url": "https://commons.wikimedia.org/wiki/File:Histology_of_chorionic_villus_at_term.jpg",
+          "publisherOrAuthor": "Mikael Häggström",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Kliman: From Trophoblast to Human Placenta, Yale teaching chapter",
+          "url": "https://medicine.yale.edu/download-file/9518a7b6-f12e-427d-970b-b879371269c6/",
+          "publisherOrAuthor": "Kliman",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Wang et al. (2026): single-cell spatiotemporal dissection of the human maternal–fetal interface",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13149032/",
+          "publisherOrAuthor": "Wang et al. (2026)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "ACOG: how pregnancy duration is counted",
+          "url": "https://www.acog.org/womens-health/experts-and-stories/ask-acog/how-long-does-pregnancy-last",
+          "publisherOrAuthor": "ACOG",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UNSW Embryology: villous development; use structural sequence, with source conflicts separately recorded",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Placenta_-_Villi_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Kliman et al. (1986): isolated human term cytotrophoblast differentiation and fusion; abstract reviewed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3512258/",
+          "publisherOrAuthor": "Kliman et al. (1986)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "NICHD Human Placenta Project: placental formation and spiral artery remodelling",
+          "url": "https://www.nichd.nih.gov/research/supported/human-placenta-project/how-does-placenta-form",
+          "publisherOrAuthor": "NICHD Human Placenta Project",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Illsley (2000): glucose transporters in the human placenta; abstract reviewed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10692246/",
+          "publisherOrAuthor": "Illsley (2000)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Endotext: Endocrinology of Pregnancy, placental progesterone and estrogen sections",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK278962/",
+          "publisherOrAuthor": "Endotext",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original CC0 specimen, five region markers, complete text fallback and six circuit stages. Desktop/mobile keyboard, 320px/200percent text, download/hash, no-JavaScript and image-error checks passed. Hosted verification remains a separate gate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted source and editorial review; independent medical peer review remains outstanding.",
+        "Term specimen has no calibrated scale, exact gestational age or preparation protocol.",
+        "Selected high-power field cannot establish whole-organ morphology or a diagnosis.",
+        "All-system embryology, reproductive tract and mammary development remain incomplete."
+      ],
+      "reviewEvidenceIds": [
+        "placenta-editorial-depth-20261106",
+        "placenta-visual-depth-20261106",
+        "placenta-accessibility-depth-20261106",
+        "placenta-readability-depth-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia",
+          "vessel-histology"
+        ],
+        "related": [
+          "reproductive-histology",
+          "vessel-histology",
+          "neurulation"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

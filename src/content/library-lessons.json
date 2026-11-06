@@ -3043,8 +3043,8 @@
     {
       "id": "placenta",
       "subject": "histology",
-      "title": "Placental villi and maternal–fetal exchange",
-      "summary": "Follow villus development and keep maternal blood distinct from fetal capillaries.",
+      "title": "Placenta: villous identification, two circulations and development",
+      "summary": "Identify placental villi, trace maternal and fetal compartments, and connect trophoblast differentiation with exchange, endocrine function and spatial research.",
       "tags": [
         "Integrated embryology",
         "Organ histology",
@@ -3052,20 +3052,120 @@
         "implantation",
         "embryology"
       ],
-      "source": "histology",
-      "section": "Placental Development and Mammary Microanatomy; Placental Barrier",
+      "source": "original-placenta-development-depth",
+      "section": "Placental villous architecture, development and maternal–fetal exchange",
       "steps": [
         {
-          "title": "Build a villus",
-          "body": "Primary villi are trophoblastic projections. Mesoderm entering the core produces secondary villi. Development of fetal vessels produces tertiary villi. This sequence connects a structural change to the establishment of fetal circulation within the exchange tissue."
+          "title": "Start with the specimen, scale and two blood spaces",
+          "body": "A placental section is a sample of a branching interface. Begin by recording species, preparation, stain and the age information actually supplied. At low power, look for numerous villous profiles surrounded by a shared space; at higher power, follow one profile from its outer trophoblast covering into its connective-tissue core and internal vessels. These are different levels of observation.\n\nThe accompanying specimen is described by its author as a human chorionic villus at term stained with haematoxylin and eosin. It is a selected high-magnification field, not a whole-placenta survey. It has no supplied calibrated scale bar, exact gestational week or fixation protocol. Use it to locate compartments and explain relationships; do not derive a micrometre measurement, a complete developmental stage or a diagnosis from this isolated view."
         },
         {
-          "title": "Keep the two circulations separate",
-          "body": "Maternal blood occupies the intervillous space and bathes villous surfaces. Fetal blood stays inside capillaries in the villous core. Exchange crosses intervening tissues; normal exchange does not require free mixing of the two blood pools."
+          "title": "Define maternal and fetal contributions before using the word placenta",
+          "body": "The fetal placental component is associated with the chorion frondosum, the region in which chorionic villi persist and branch. The maternal contribution is the decidua basalis, the transformed endometrium beneath the implantation site. A fetal-derived trophoblast can therefore be located among maternal decidual cells; physical location and developmental origin are not interchangeable labels.\n\nThe chorionic plate lies toward the fetal surface and gives rise to villous trees. The basal plate lies at the maternal attachment interface. The amnion covers the fetal-facing surface. A small floating villus contains neither an entire basal plate nor every structure in the fetal membranes. State which part of this larger arrangement is actually present in a section before assigning an origin to each cell."
         },
         {
-          "title": "Understand what a barrier means",
-          "body": "The exchange barrier includes trophoblast, basal laminae, stroma and fetal endothelium, and becomes thinner as pregnancy advances. It is selective rather than absolute: some substances and pathogens cross. A structural barrier must not be interpreted as universal protection from exposure."
+          "title": "Keep the developmental clock explicit",
+          "body": "Gestational age is conventionally counted from the beginning of the last menstrual period; post-fertilization age starts with fertilization. In the usual teaching convention they differ by approximately two weeks, but this is not a method for dating an individual pregnancy from a histological photograph. A paper reporting gestational week 20 is not describing 20 weeks after fertilization.\n\nUse a developmental sequence alongside the stated age convention: implantation and trophoblast organization precede the establishment and elaboration of vascularized villi. Later villous branching and maturation continue after the early primary–secondary–tertiary sequence. When comparing a first-trimester specimen with a term specimen, compare architecture and preparation as well as the caption; an isolated feature is not a precise clock."
+        },
+        {
+          "title": "Connect implantation to decidual transformation",
+          "body": "The blastocyst contains an outer trophectoderm population and an inner cell mass. Trophoblast derivatives participate in attachment and invasion at the uterine interface. Meanwhile, the maternal endometrium undergoes decidual transformation, including changes in stromal cells, vessels and immune-cell populations. Placentation therefore depends on coordinated changes in two tissues, not on an embryo acting on an inert wall.\n\nDecidua basalis underlies the implantation site, decidua capsularis covers the expanding conceptus toward the uterine cavity, and decidua parietalis describes the remaining decidual lining. These terms describe regions of maternal tissue. They should not be substituted for the fetal chorionic plate, a villous capillary or a trophoblast cell column.",
+          "practice": {
+            "prompt": "An invasive trophoblast lies within the decidua. Does that make it a maternal cell?",
+            "feedback": "No. It is a fetal-derived trophoblast located in maternal tissue. Origin and position answer different questions."
+          }
+        },
+        {
+          "title": "Distinguish a proliferating cell from a multinucleated syncytium",
+          "body": "Villous cytotrophoblasts are individual mononuclear cells. Their descendants can differentiate and fuse into the overlying syncytiotrophoblast, a multinucleated cytoplasmic continuum. Multiple nuclei in a syncytium do not mean that each nucleus sits in a separate epithelial cell with its own lateral boundary. The expanding surface is maintained through a cellular differentiation-and-fusion process.\n\nThis is supported by experiments with cells isolated from human term placentas: the cultured cytotrophoblast population formed aggregates and then functional syncytia. The study used time-lapse observations and tracer distribution to distinguish fusion from a cluster of adjacent cells. Culture establishes a capability under the experimental conditions; it does not, by itself, measure the rate of fusion in an intact placenta."
+        },
+        {
+          "title": "Build the early villus by adding a core and then vessels",
+          "body": "In a primary villus, a cytotrophoblastic core is covered by syncytiotrophoblast. Entry of extraembryonic mesoderm into the core defines the secondary stage. Differentiation of fetal vascular structures within that core defines a tertiary villus. The sequence changes what the villus contains; it is not simply a change in the brightness of its staining.\n\nA tertiary villus provides a fetal vascular compartment within the exchange tissue, but maternal blood remains outside its trophoblast surface. Later categories such as stem, intermediate and terminal villi describe branching architecture and functional specialization within a villous tree. They are not interchangeable replacements for the primary, secondary and tertiary developmental stages.",
+          "practice": {
+            "prompt": "A villus contains mesenchymal tissue but no demonstrated vascular lumen. What separates it from a demonstrated tertiary villus?",
+            "feedback": "The tertiary designation requires fetal vascular development. A pale space alone is not enough: seek an endothelial-lined vessel, its contents and the context of the preparation."
+          }
+        },
+        {
+          "title": "Separate attachment from exchange within the villous tree",
+          "body": "Some villi participate in anchoring the placenta to maternal tissue through trophoblastic cell columns. Other branches project into the intervillous space and provide exchange surfaces. Within these structures, villous cytotrophoblasts contribute to distinct differentiation routes: fusion toward syncytiotrophoblast or progression toward extravillous trophoblast populations associated with the attachment interface and invasion.\n\nDo not call every large villous profile an anchoring villus merely because it looks thick. Attachment is a relationship that requires the relevant continuity to be present. Conversely, a small profile can contain fetal capillaries without showing its connection to the chorionic plate in that particular two-dimensional section. Branch size, vascular contents and attachment must be evaluated separately."
+        },
+        {
+          "title": "Follow maternal flow without entering a fetal capillary",
+          "body": "Maternal uterine spiral arteries supply the intervillous compartment. Maternal blood reaches the outside of villous surfaces, and blood leaves toward maternal uterine venous channels. This is the maternal circuit. It does not continue through the umbilical vein simply because useful solutes have crossed toward the fetus.\n\nThe term haemochorial describes the relationship of maternal blood to the chorionic trophoblast surface. It does not mean that maternal blood lies inside the fetal vascular lumen. On a section, first identify whether an erythrocyte lies within a vessel enclosed by villous tissue or outside the villous covering. A vessel wall and its surrounding tissue are more informative for compartment assignment than red colour alone."
+        },
+        {
+          "title": "Follow fetal flow and use artery and vein relative to the fetal heart",
+          "body": "The umbilical arteries carry fetal blood from the fetus toward the placenta. Their branches supply the placental vascular tree and the capillary beds within villi. Venous channels collect blood after exchange, and the umbilical vein returns it toward the fetus. Artery and vein describe direction relative to the heart, not an invariant oxygen content.\n\nExchange changes the composition of blood while each circuit remains structurally distinct. Oxygen and carbon dioxide can move across intervening tissue without a maternal erythrocyte joining the fetal circulation. Separate the route taken by a blood cell from the route taken by a dissolved molecule. This distinction prevents the common error of drawing one continuous maternal-to-umbilical blood vessel.",
+          "practice": {
+            "prompt": "After a molecule crosses into fetal blood, does the maternal blood that delivered it leave through the umbilical vein?",
+            "feedback": "No. The molecule crossed an interface; the maternal blood remains in the maternal circuit. The umbilical vein carries fetal blood back toward the fetus."
+          }
+        },
+        {
+          "title": "Construct the exchange barrier from outside to inside",
+          "body": "Trace a route from maternal intervillous blood across the villous trophoblast covering, its supporting basal lamina, intervening villous tissue and the fetal capillary wall to fetal blood. The underlying cytotrophoblast population is conspicuous in early villi and harder to recognize in many later sections. A simple teaching diagram should not imply identical cellular thickness at every point on every villus.\n\nAt favourable exchange sites, fetal capillaries lie close to an attenuated trophoblast surface, shortening the intervening route. Elsewhere the same villus can have a thicker stromal region. H&E can establish the arrangement of compartments, but it does not resolve every basal lamina as a separate line or demonstrate each membrane transporter. Use electron microscopy or molecular methods when the question requires those levels of resolution."
+        },
+        {
+          "title": "Compare early and later villi without erasing cytotrophoblasts",
+          "body": "Earlier villi commonly display a more conspicuous cellular cytotrophoblast component beneath syncytiotrophoblast and a relatively prominent stromal core. Later exchange villi show altered branching and capillary geometry, with some capillaries closely approaching the surface. These are changes in the organization of the interface, not the conversion of fetal vessels into maternal spaces.\n\nCytotrophoblasts persist at term. Failure to see a clearly demarcated cell in one routine section is not evidence that the entire population has vanished. Descriptions of their precise surface coverage require careful attention to imaging method, cell processes and section geometry. The selected image includes a possible sub-syncytial cell, but the lesson does not label that cell as definitively cytotrophoblastic on H&E alone."
+        },
+        {
+          "title": "Read H&E through structures, not colour memorization",
+          "body": "Haematoxylin makes nuclear material prominent in blue-purple tones; eosin contributes much of the pink appearance of protein-rich structures and erythrocytes. Stain intensity varies with processing, section thickness, staining conditions and image capture. A purple nucleus alone does not identify a trophoblast lineage, an immune cell or an endothelial cell.\n\nFor a villus, combine an outer covering, a connective-tissue core, internal capillary profiles and surrounding intervillous space. Then use nuclear position and the relation to these boundaries to refine the description. In the selected specimen, intensely pink erythrocytes occur inside capillary lumina and outside the villus. Their similar colour is useful precisely because it forces you to use architecture to distinguish their compartments."
+        },
+        {
+          "title": "Locate stromal cells, endothelial cells and macrophages by context",
+          "body": "The villous core contains connective tissue and fetal vessels. A flattened nucleus bordering a vascular lumen supports an endothelial interpretation; a stromal nucleus away from a lumen cannot be assigned that role merely because it is elongated. Fibroblastic cells contribute to the stromal framework. Hofbauer cells are placental macrophages located in villous stroma, rather than maternal erythrocytes occupying intervillous space.\n\nRoutine morphology may suggest a cell category while leaving its identity uncertain. Immunolabelling, multiple markers and spatial relationships can strengthen the interpretation. Expression of one marker is not automatically unique to one lineage, and an unstained cell is not necessarily biologically negative: fixation, antigen preservation and detection conditions can affect the result. The interactive specimen therefore emphasizes robust compartments rather than unsupported cell-by-cell certainty."
+        },
+        {
+          "title": "Treat nuclear aggregates as an observation before an interpretation",
+          "body": "Clusters of closely packed syncytial nuclei may be visible at the villous surface. Describing the cluster and its location is the first step. A section through a three-dimensional surface can bring nuclei together in the image, and a single high-power field is insufficient to determine the extent or significance of a finding throughout a placenta.\n\nThe displayed specimen contains a conspicuous peripheral nuclear aggregate. Use it to discuss syncytial organization, not to diagnose placental insufficiency or assign a molecular subtype. A recent spatial study identified molecular differences associated with syncytial regions and knots using additional staining and RNA measurements. Those molecular assignments cannot be read directly from the colour of this separate H&E photograph."
+        },
+        {
+          "title": "Explain what processing and section plane can change",
+          "body": "Routine paraffin histology involves fixation, processing, embedding, thin sectioning, staining and mounting. Each step helps create a stable, readable preparation but can also alter apparent spaces and boundaries. A branching villus cut transversely, obliquely or along its length produces different profiles. A section may miss the capillary lumen that exists above or below it.\n\nAsk whether an apparent gap follows a biological surface or could reflect a tear, separation or processing artifact. Compare neighbouring structures and, when available, serial sections. Do not convert a two-dimensional empty-looking area into a claim that a vessel is absent, or a break in a single section into proof that a living barrier was discontinuous. The original specimen's unspecified fixation and section thickness remain metadata limits."
+        },
+        {
+          "title": "Choose the staining method to match the question",
+          "body": "H&E is useful for the overall arrangement of villi, blood spaces, nuclei and stroma. Immunohistochemistry or immunofluorescence asks a different question: where a detected protein occurs under a specified staining protocol. In the reviewed spatial study, pan-cytokeratin staining helped locate trophoblast and CD31 staining helped delineate vessels; the interpretation also used anatomy and RNA evidence.\n\nBefore interpreting a signal, consider a known positive control, an appropriate negative/background control and whether fixation preserves the target. Fluorescence channels can overlap spatially without proving that the same cell makes both targets unless segmentation and resolution support that conclusion. A stain identifies a measured feature. It does not, on its own, establish ancestry, transport rate or a causal role in development."
+        },
+        {
+          "title": "Connect spiral artery remodelling to the maternal side",
+          "body": "Extravillous trophoblast populations leave anchoring regions and interact with the decidua and maternal vessels. Remodelling changes the spiral-artery wall and its capacity to deliver maternal blood to the placental interface. These events involve trophoblast, vascular, stromal and immune components; they are not the formation of fetal capillaries inside villi.\n\nA section can capture a mixture of cells associated with an ongoing remodelling process. The recent spatial atlas combined morphology, vascular and trophoblast labelling, and molecular states to investigate such interfaces. An altered marker pattern near a vessel is evidence to interpret in context. It should not be simplified into the statement that every cell lining that vessel is now fetal, or that one marker proves the entire remodelling process is complete."
+        },
+        {
+          "title": "Separate diffusion, facilitated transport and metabolic handling",
+          "body": "A placenta is an exchanging and metabolically active tissue, not a passive hole between two reservoirs. Gases can cross by diffusion, with net movement governed by the relevant gradients and transport conditions. Glucose transfer involves facilitated transport, with GLUT1 present at maternal-facing and fetal-facing syncytial membranes. A molecule's pathway depends on its properties and the available transport machinery.\n\nThe direction of net oxygen transfer in the usual physiological setting differs from that of carbon dioxide removal. Do not give every substance one universal arrow. Nor should blood concentration, transporter abundance and actual transfer rate be treated as interchangeable measurements. Perfusion, surface area, diffusion distance and placental consumption can all matter when connecting a microscopic observation to function."
+        },
+        {
+          "title": "Connect placental hormones to their cellular and metabolic origins",
+          "body": "Trophoblast has endocrine functions as well as structural and exchange roles. Human chorionic gonadotropin supports the early corpus luteum and its steroid production. Placental progesterone synthesis uses cholesterol as a precursor. Placental estrogen production draws on androgen precursors from maternal and fetal compartments, including sulfated precursors that require processing.\n\nKeep these routes separate. DHEA or DHEAS should not be presented as the precursor converted into placental progesterone. The steroid classes are related, but the relevant enzymes and substrates determine which product can be made in a particular compartment. This is a useful connection to adrenal development and steroidogenic machinery: a developing fetal organ can contribute a precursor used by another organ without producing the final circulating hormone itself."
+        },
+        {
+          "title": "Distinguish a selective interface from absolute protection",
+          "body": "The presence of intervening tissue does not guarantee that every drug, pathogen or other substance is excluded. Placental exchange and barrier functions depend on particular cellular pathways and on the properties of the substance. Normal exchange also does not require the free mixing of the two blood pools. These statements address different aspects of the interface and should be kept together.\n\nMaternal and fetal cells coexist at the attachment interface with regulated immune interactions. This is not equivalent to the mother lacking an immune response everywhere. In a basic histology answer, identify the compartments and describe selective exchange first. Do not turn a normal-looking image into an assessment of an individual's exposure risk, fetal wellbeing or immune compatibility."
+        },
+        {
+          "title": "Ask what a single-nucleus atlas actually measures",
+          "body": "Wang and colleagues paired nuclear RNA measurements with chromatin-accessibility measurements from sampled human maternal–fetal interfaces across gestation. RNA profiles help distinguish expressed programs; accessibility profiles identify genomic regions accessible to the assay. Neither measurement directly photographs every structure seen in a histological section, and one nucleus should not automatically be equated with one whole cell in a multinucleated syncytium.\n\nThe investigators assigned maternal or fetal origin using informative genetic variation and checked that assignment with additional evidence. This is stronger than deciding origin from where a cell appears on a plot. Their sampling focused on selected decidual and basal-plate material. Differences between biopsies can reflect differences in the anatomical regions sampled, so a cell proportion in the dataset is not automatically a proportion in the entire placenta."
+        },
+        {
+          "title": "Use spatial evidence to reconnect molecular states with anatomy",
+          "body": "The same study used spatial transcriptomic measurements on second-trimester basal-plate sections, with protein staining in many samples. This allowed molecularly characterized populations to be related to villi, decidua and maternal vessels. The spatial analysis addressed a different sampling window from the broader across-gestation nuclear dataset; combining them does not make every age represented by every technique.\n\nThis distinction creates a useful reading habit: identify the specimen, assay, anatomical site and biological replicate before interpreting a result. Multiple cells from one donor provide detailed within-sample information but do not turn that donor into many independent pregnancies. Agreement between spatial RNA, protein staining and morphology is informative because the methods contribute different kinds of evidence, each with its own resolution and preparation constraints."
+        },
+        {
+          "title": "Read a developmental trajectory as an inference that can be tested",
+          "body": "A pseudotime analysis orders sampled molecular states along an inferred progression. In the reviewed atlas, such analyses supported branches associated with syncytial and extravillous trophoblast programs. This is not a time-lapse record of one human cell becoming another, and a UMAP axis is not a physical distance across the placenta or a calibrated clock.\n\nAsk which starting state was selected, how terminal states were inferred, whether the proposed ordering agrees with anatomical position and known biology, and what independent experiment could challenge it. Perturbation with suitable controls, lineage evidence in an appropriate model, or repeated observations through time can address different parts of a causal question. Similarity, spatial proximity, descent and causation remain distinct claims.",
+          "practice": {
+            "prompt": "Two nearby points in an expression map have similar profiles. What has not yet been established?",
+            "feedback": "Their physical proximity in tissue, direct ancestor–descendant relationship and causal interaction. Those require additional evidence beyond the expression embedding."
+          }
+        },
+        {
+          "title": "Build an organized practical answer from observation to mechanism",
+          "body": "Start with the preparation and the structures you can see. Describe a villous profile with a trophoblast surface, stromal core and internal capillary lumen, then distinguish the surrounding intervillous compartment. Explain which blood circuit occupies each location and how substances cross without merging the two circuits. Add the developmental sequence that creates a vascularized villus.\n\nFinish with the limit of the observation. A missing scale bar prevents calibrated measurement; a high-power field cannot establish whole-organ architecture; an uncertain sub-syncytial cell needs additional evidence. For a research extension, name the assay that could answer the unresolved question and the controls it would need. This produces a defensible explanation rather than a list of labels or a diagnosis inferred from one image."
         }
       ],
       "question": {
@@ -3095,8 +3195,56 @@
         "vessel-histology",
         "neurulation"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 45,
+      "objectives": [
+        "Identify a villus using converging structural clues and preparation limits.",
+        "Trace maternal and fetal blood routes without joining the circuits.",
+        "Explain trophoblast differentiation, villous development and changing exchange geometry.",
+        "Distinguish routine morphology, protein detection, molecular state and lineage evidence."
+      ],
+      "prerequisites": [
+        "microscopy",
+        "epithelia",
+        "vessel-histology"
+      ],
+      "summaryChecklist": [
+        "I can state the specimen metadata and identify what is unknown.",
+        "I can distinguish maternal location from fetal cell origin.",
+        "I can explain primary, secondary and tertiary villi without confusing later villous categories.",
+        "I can trace both blood circuits and the route of an exchanged molecule.",
+        "I can explain why cytotrophoblasts should not be declared absent at term.",
+        "I can choose a method and control for a question H&E cannot answer.",
+        "I can distinguish a developmental inference from direct lineage evidence."
+      ],
+      "workedExample": {
+        "title": "Red cells on both sides of a villous boundary",
+        "prompt": "A term H&E field contains erythrocytes inside an enclosed lumen within a villus and erythrocytes outside its surface. A student concludes that maternal and fetal blood freely mix. Evaluate the reasoning.",
+        "solution": [
+          "Locate the boundary: an internal endothelial-lined capillary belongs to the fetal circuit; the surrounding intervillous space belongs to the maternal circuit.",
+          "Similar staining does not establish continuity. Describe the enclosing tissue before assigning the blood compartment.",
+          "Explain how a dissolved substance crosses the intervening interface while blood cells remain in their respective circuits.",
+          "A single section cannot prove or exclude every pathological breach elsewhere."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Explain a vascularized placental villus from its development to its mature compartments.",
+          "answer": "Begin with the primary trophoblastic projection, addition of extraembryonic mesoderm and then fetal vascular development. Locate trophoblast at the surface, stroma and fetal capillaries internally, and maternal blood outside. Distinguish this sequence from later branching categories."
+        },
+        {
+          "prompt": "What would you need before calling a pale sub-syncytial cell a cytotrophoblast?",
+          "answer": "Assess its location and morphology, compare additional fields or sections and use appropriate lineage-associated markers with controls if certainty is required. H&E and one rounded nucleus are insufficient for a definitive molecular identity."
+        },
+        {
+          "prompt": "How does preparation affect a placental interpretation?",
+          "answer": "State the stain, fixation and section information when available. Consider section plane, shrinkage and tears. Match the question to the resolving power of the method and disclose missing scale or age information."
+        },
+        {
+          "prompt": "What makes the 2026 spatial study more informative than a list of cell markers?",
+          "answer": "It relates molecular profiles to anatomical positions and combines different measurement types. Explain sampling windows, biopsy selection, nuclei versus cells and biological replication; pseudotime remains an inferred ordering rather than direct lineage tracing."
+        }
+      ]
     },
     {
       "id": "neurulation",
