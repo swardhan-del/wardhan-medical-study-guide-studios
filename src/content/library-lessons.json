@@ -13877,6 +13877,321 @@
       ]
     },
     {
+      "id": "mammary-histology-and-development",
+      "subject": "histology",
+      "title": "Mammary histology: architecture, secretion and development",
+      "summary": "Read lobular and acinar architecture, choose a preparation, connect secretion with hormone and matrix signaling, and follow development and tissue remodeling.",
+      "tags": [
+        "Organ histology",
+        "Integrated embryology",
+        "mammary gland",
+        "breast",
+        "TDLU",
+        "lactation",
+        "staining",
+        "STAT5",
+        "involution",
+        "H&E"
+      ],
+      "source": "mammary-depth-20261106",
+      "section": "Mammary architecture, secretory differentiation, developmental compartments and defined regression mechanisms",
+      "steps": [
+        {
+          "title": "Read the field before naming a cell",
+          "body": "Begin with the distribution of epithelium, connective tissue and fat. At low power, ask whether small epithelial units form a group, whether a larger duct lies nearby, and how the surrounding stroma separates one group from another. A lobule is an architectural relationship, not a synonym for any round profile. Only then increase magnification to inspect the lining and lumen. This order matters because a high-power acinar field can show excellent cellular detail while omitting the organization that makes the tissue recognizable as an organ.\n\nDescribe what the section actually contains: epithelial profiles, their lumina and the intervening material. Do not assume that every separate circle is a different gland or that two adjacent profiles are connected; a branching three-dimensional structure can be intersected repeatedly. Establish continuity with additional planes or an appropriate reconstruction. In a practical answer, separate the observed organization from the inferred organ identity and state the missing context.",
+          "practice": {
+            "prompt": "Which observation should come before assigning an individual cell subtype?",
+            "feedback": "The distribution of grouped epithelial profiles, lumina and stroma in a sufficiently broad field."
+          }
+        },
+        {
+          "title": "Find the terminal duct–lobular unit",
+          "body": "The terminal duct–lobular unit, or TDLU, is a small-scale organization within the larger ductal tree: a terminal duct is associated with a cluster of acinar structures and their surrounding intralobular stroma. On a section, look for a group of epithelial profiles sharing a local stromal setting. A lobule contains multiple such profiles; it is not the same thing as one acinus, and neither is equivalent to an entire lobe of the breast.\n\nUse the low-power H&E panels to find the boundary between a nuclear-rich epithelial group and the broader pink tissue around it. Then compare the smaller lumina within that group. This connects organ architecture to the high-power acinar image. The two teaching images come from different specimens: they are complementary examples, not successive zoom levels through one slide. A single section can suggest the organization but cannot establish every connection in the three-dimensional ductal tree.",
+          "practice": {
+            "prompt": "Why is one round epithelial profile insufficient to identify an entire TDLU?",
+            "feedback": "A TDLU is a relationship among a terminal duct, grouped acinar structures and their stroma; one isolated profile omits that organization."
+          }
+        },
+        {
+          "title": "Separate intralobular and interlobular stroma",
+          "body": "Stroma is not simply empty space between gland cells. Within a lobule, the connective tissue closely surrounds the epithelial units and supports their vascular environment. Between lobules, broader collagen-rich regions and adipose tissue separate groups and accommodate larger structures. In the inactive teaching preparations, delicate tissue around small epithelial clusters contrasts with the denser interlobular matrix.\n\nTrace these relationships before deciding that a pink region represents a capsule or an epithelial boundary. Collagen bundles stain pink on H&E, but the basement membrane is a much thinner specialized extracellular layer at the epithelial interface. They occupy different structural scales. During expansion of the secretory compartment, epithelial profiles can occupy more of a field and compress the apparent stromal spaces. That change in area fraction does not by itself measure how much collagen or fat the whole breast has lost.",
+          "practice": {
+            "prompt": "A lactating field contains less visible stroma per unit image area. Does that prove total stromal mass fell?",
+            "feedback": "No. Expansion of secretory units, sampling and section geometry change the proportion visible in a field; whole-organ mass needs a different measurement."
+          }
+        },
+        {
+          "title": "Locate luminal and basal positions before assigning phenotype",
+          "body": "Luminal epithelial cells face the cavity into which secretion is delivered. Myoepithelial cells occupy a basal position in the epithelial organization and contribute contractile support. Their relationship to the secretory epithelium and basement membrane matters more than the darkness of an individual nucleus. Surrounding stromal cells can also have elongated or dark nuclei, and an oblique section can obscure the boundary between compartments.\n\nOn H&E, first identify the lumen, then trace the epithelial compartment and its external interface. A peripheral nucleus is a candidate for further interpretation, not a validated myoepithelial immunophenotype. When the question requires cell identity rather than spatial description, select an appropriate marker panel and examine localization and controls. A positive marker reports a measured phenotype in that preparation; it does not independently demonstrate contractile function or reveal which embryonic progenitor produced the cell.",
+          "practice": {
+            "prompt": "What can you safely say about a small dark nucleus at the edge of this H&E profile?",
+            "feedback": "Describe its peripheral position; specific phenotype or contractile function needs additional evidence."
+          }
+        },
+        {
+          "title": "Connect apical secretion to basal support",
+          "body": "A luminal epithelial cell has different interfaces. Its apical surface faces the milk-containing cavity; its basal and lateral surfaces participate in matrix contact, cell adhesion and reception of signals arriving from the tissue side. Organelles and membrane traffic must respect this polarity. Secreting material into the lumen is therefore a directional process, not simply releasing it through whichever membrane is nearest.\n\nPolarity also changes experimental interpretation. In polarized mouse mammary cells grown on permeable supports, prolactin applied to the basal compartment activated STAT5 much more effectively than hormone applied apically. The receptor was predominantly basolateral. Thus receptor expression, ligand access and downstream response are separate requirements. This experiment explains why a cell can contain a receptor yet fail to respond when a culture system presents the ligand to the wrong surface; it is not a reason to infer receptor location from H&E alone.",
+          "practice": {
+            "prompt": "A culture expresses prolactin receptor but responds only to hormone below its permeable support. What feature should the model include?",
+            "feedback": "The separate apical and basolateral surfaces and the side on which the ligand can reach its receptor."
+          }
+        },
+        {
+          "title": "Distinguish a conduit from a secretory compartment",
+          "body": "The ductal tree conveys secretion, whereas the secretory epithelial compartment supplies material to the lumen. On a section, a lumen alone cannot distinguish those roles. Use the surrounding architecture, the relation to neighboring units, the epithelial arrangement and the documented functional state. A single tangential profile may exaggerate epithelial thickness or hide the lumen. It is therefore safer to describe an epithelial profile than to assign a precise branch level from one isolated field.\n\nIn an active gland, groups of secretory units can occupy much more of the field than in an inactive preparation. That comparison should be made with attention to magnification, sampling and preparation. A larger epithelial area fraction in one section does not, by itself, measure an absolute loss of connective tissue from the whole organ. The intended skill is to connect a spatial arrangement to a possible role while retaining the observations that could challenge the interpretation.",
+          "practice": {
+            "prompt": "Does a lumen alone distinguish a duct from a secretory unit?",
+            "feedback": "No. Interpret it with its epithelial lining, surrounding architecture and documented functional context."
+          }
+        },
+        {
+          "title": "Follow ducts without inventing a milk reservoir",
+          "body": "Trace secretion from the small secretory units into the branching duct system and toward the nipple. A conceptual branching map is useful, but a fixed number of evenly spaced lobes or a large sac under each areolar duct should not be treated as a literal description of every breast.\n\nRamsay and colleagues examined lactating human breasts using ultrasound. The visible ducts branched near the nipple, were readily compressed and did not show the conventional sac-like lactiferous sinuses. Their observations support a conducting role for the ducts and challenge the familiar reservoir drawing. The study concerned a particular lactating cohort and the structures resolvable by that equipment; it does not establish a universal duct count for all ages or states. Connect an anatomical model to what was actually measured before using it to explain function.",
+          "practice": {
+            "prompt": "Which label is better supported for the main ducts in the cited ultrasound study: transport pathway or fixed large storage sacs?",
+            "feedback": "Transport pathway. The conventional sac-like sinuses were not observed; a textbook-style reservoir must not be added as if it were a measured structure."
+          }
+        },
+        {
+          "title": "Treat functional state as evidence, not a caption shortcut",
+          "body": "Pregnancy, active lactation and inactive adult tissue are distinct contexts. They should not be collapsed into a single category called active breast. Compare the extent and arrangement of secretory epithelium, the appearance of lumina and the surrounding stroma, but retain the specimen history and preparation in the interpretation. The Duke collection includes a pregnancy specimen; a nearby lactation heading is not sufficient reason to relabel that specimen.\n\nLikewise, a postmenopausal H&E example and a lactating osmium preparation differ in both biological state and technique. If two variables change together, every visual difference cannot be attributed to lactation. A stronger comparison holds the preparation and scale as similar as possible and checks more than one field. When those controls are unavailable, the useful learning task is to identify the competing explanations and specify what additional specimen or metadata would distinguish them.",
+          "practice": {
+            "prompt": "Why is pregnancy H&E not an interchangeable control for lactating osmium tissue?",
+            "feedback": "Biological state and preparation differ together, so changes cannot all be assigned to one cause."
+          }
+        },
+        {
+          "title": "Separate expansion, differentiation and secretion",
+          "body": "Development is not finished when an epithelial tube first appears. Pubertal development expands and branches the ductal system. Pregnancy adds substantial lobuloalveolar growth and differentiation, preparing a large secretory epithelial compartment. Active lactation then depends on sustained biosynthesis, membrane traffic and removal of secretion. Cell proliferation, acquisition of a secretory phenotype and actual milk release are related but distinct processes.\n\nThis distinction changes how a slide should be described. Many enlarged secretory profiles do not prove that every lining cell is dividing rapidly at the moment sampled. Conversely, a small ductal tree is not a mature lactating gland simply because it has a lumen. Explain the structural program first, then name the evidence for activity: secretory organelles, cargo, molecular expression or a functional measurement. Pregnancy and established lactation should remain separate labels in the comparison.",
+          "practice": {
+            "prompt": "Why is intense proliferation an incomplete definition of a lactating mammary gland?",
+            "feedback": "It describes cell multiplication, whereas established lactation also requires differentiated epithelial machinery and ongoing secretion; these processes need separate evidence."
+          }
+        },
+        {
+          "title": "Choose the preparation around the question",
+          "body": "Use H&E to orient to broad cellular and stromal architecture. An Azan preparation can make connective-tissue relationships conspicuous through its blue-staining connective-tissue component, whereas the Columbia osmium example emphasizes preserved unsaturated lipid. These are different views of the tissue, not interchangeable color schemes. A pale region on H&E is not automatically evidence that the corresponding tissue contained no lipid before processing.\n\nBefore comparing slides, record the specimen, fixation or processing information that is actually supplied, stain, section orientation and any available scale. Ask which constituent the preparation emphasizes and which information it may obscure. In the cited osmium specimen, penetration is limited and staining is strongest near the sample edge. That pattern should prompt a preparation explanation before a claim that lipid biologically concentrates at the periphery of every gland. Practical slide preparation belongs in a supervised laboratory protocol; this lesson teaches interpretation rather than an unsupervised hazardous-reagent recipe.",
+          "practice": {
+            "prompt": "Why can stronger black osmium staining at the edge be misleading?",
+            "feedback": "Limited penetration can produce the pattern; it does not establish a universal peripheral lipid gradient."
+          }
+        },
+        {
+          "title": "Read the organelles as a production system",
+          "body": "A protein-secreting alveolar cell needs a route from synthesis to export. Ribosomes associated with rough endoplasmic reticulum synthesize proteins entering the secretory pathway; ER processing and Golgi organization precede packaging into vesicles for apical delivery. Cytoplasmic lipid droplets occupy a different physical compartment and are not merely larger protein secretory vesicles. Ultrastructure connects these compartments with their different membrane organizations.\n\nIn the mouse transplantation study, wild-type secretory alveolar cells displayed developed rough ER, Golgi and secretory material. The mutant epithelia did not acquire the same mature secretory organization. The useful histological principle is to connect cellular architecture with a differentiated task. Routine H&E may show a general cytoplasmic appearance or vacuoles, but it cannot resolve all the membrane relationships or establish the identity of a specific milk protein. Choose electron microscopy or a targeted molecular assay when the question requires those details.",
+          "practice": {
+            "prompt": "Why should a lipid droplet and a Golgi-derived protein vesicle be drawn separately?",
+            "feedback": "Their cargo, intracellular organization and release mechanisms differ; treating them as the same membrane compartment obscures the mechanism."
+          }
+        },
+        {
+          "title": "Trace protein and lipid through different release routes",
+          "body": "A mammary secretory cell handles more than one class of cargo. Protein secretion involves vesicular delivery and exocytosis at the luminal surface. Lipid droplets follow a different route in which the droplet becomes enveloped as it buds into the lumen. Calling the entire gland simply merocrine or apocrine hides this distinction. The stronger answer identifies the cargo, its intracellular organization and the event at the apical boundary.\n\nAn original diagram should therefore show two parallel routes rather than one universal conveyor belt. For the protein route, ask what crosses the plasma membrane during vesicle fusion. For the lipid route, ask how the droplet and surrounding membrane are related. Neither route means that an entire epithelial cell normally disintegrates into the lumen. H&E can provide architectural context, but a still section alone cannot demonstrate the sequence or speed of membrane events.",
+          "practice": {
+            "prompt": "What crosses the apical boundary in the two cargo routes?",
+            "feedback": "Protein vesicles fuse for exocytosis; a lipid droplet becomes enveloped during budding. Neither implies whole-cell disintegration."
+          }
+        },
+        {
+          "title": "Connect prolactin signaling with alveolar differentiation",
+          "body": "Prolactin receptor signaling can activate the JAK2–STAT5 pathway. Activated STAT5 participates in transcriptional regulation that supports mammary secretory differentiation and milk-protein expression. This links an extracellular endocrine signal to a change in what the epithelial cell can make. It is different from the rapid mechanical action that ejects material already present in the lumen.\n\nTo test the epithelial requirement, Miyoshi and colleagues transplanted prolactin-receptor-null or Stat5-null mouse mammary tissue into hormonally competent hosts. Mutant epithelia could form ductal structures but failed to develop normal functional secretory alveoli. The paired structural and expression results are more informative than simply counting ducts. Milk-protein transcripts were undetectable by some assays, while more sensitive assays detected low levels in Stat5-null tissue; impaired differentiation should not be rewritten as an absolute absence of every transcript. STAT5 also receives other inputs, so the diagram is a principal pathway, not a claim of exclusive activation by prolactin.",
+          "practice": {
+            "prompt": "What does a ductal tree without normal secretory alveoli show in this experiment?",
+            "feedback": "Duct formation and alveolar functional differentiation can be separated; the presence of ducts alone does not establish normal milk-producing capacity."
+          }
+        },
+        {
+          "title": "Explain why basement membrane changes a hormone response",
+          "body": "Extracellular matrix can influence differentiation as well as support shape. In the mouse epithelial culture study, prolactin produced a brief STAT5 response under conditions that did not sustain appreciable casein expression. With laminin-rich matrix, a later sustained STAT5 response accompanied casein transcription and changes in chromatin at the casein promoters. The duration and context of signaling mattered, not just whether phosphorylation occurred once.\n\nDystroglycan-dependent interaction with laminin was important in that experimental system. Restoring dystroglycan rescued sustained signaling, and artificially sustained STAT5 could bypass part of the matrix requirement. Together, these interventions connect matrix organization, signal persistence and a differentiated output. They do not mean that basement membrane is interchangeable with collagen-rich stroma or that one culture pathway explains every aspect of human lactation. The central model is that tissue organization and endocrine signaling cooperate.",
+          "practice": {
+            "prompt": "Why is a single early phospho-STAT5 measurement insufficient to predict sustained casein production?",
+            "feedback": "It does not establish signal persistence, matrix context or the later transcriptional response that the study measured."
+          }
+        },
+        {
+          "title": "Distinguish milk synthesis from milk ejection",
+          "body": "Milk ejection moves existing secretion out of the secretory compartment. Oxytocin stimulates the contractile myoepithelial system around mammary units, helping propel luminal contents into the ductal pathway. This is distinct from building proteins or lipid within a secretory cell. A useful diagram therefore places production within luminal epithelial cells and contraction outside them, with a third arrow showing flow through the duct.\n\nIn the cited oxytocin-null mouse study, offspring could not obtain milk normally, and postpartum oxytocin administration restored milk ejection. The rescue supports a functional distinction between making milk and delivering it. It is an animal experiment, not a treatment instruction for a person with feeding difficulties. In the later live-imaging work, contraction and lipid-droplet release were also examined together, emphasizing that cellular secretion and tissue mechanics interact without becoming the same process.",
+          "practice": {
+            "prompt": "If luminal material is present but its expulsion is impaired, which process should be assessed separately from biosynthesis?",
+            "feedback": "Myoepithelial contraction and milk ejection, followed by ductal transport; luminal material alone does not establish effective delivery."
+          }
+        },
+        {
+          "title": "Separate making secretion from moving and releasing it",
+          "body": "Secretion is not a single observable event. A lipid droplet can form, move, fuse with another droplet, accumulate near the apical surface and eventually leave the cell. Each claim requires a suitable readout. The intravital mouse study followed labeled droplets through time and examined contraction and release in relation to oxytocin. It did not establish a universal rate of lipid release for all human glands.\n\nThis distinction changes the interpretation of an experiment. A larger droplet after an interval could reflect fusion rather than faster lipid synthesis. More material near the apex could reflect delivery, delayed release, or both. A fixed section cannot distinguish those alternatives by itself. A useful explanation names the event being measured, the observation that supports it and the alternative mechanism that remains possible. Contractile activity and luminal transport must also be distinguished from the cellular production of the secreted material.",
+          "practice": {
+            "prompt": "A droplet grows after another merges with it. What has been demonstrated?",
+            "feedback": "A fusion event, not necessarily a higher synthesis rate or completed luminal release."
+          }
+        },
+        {
+          "title": "Read an imaging experiment with its resolution and sampling limits",
+          "body": "In the cited live-imaging experiment, fluorescent labeling and an exposed lactating mouse gland made movement and fusion of visible lipid droplets observable. The smallest droplets were below the effective resolving limit, so the tracked population was not a complete census of every lipid particle in the cell. A measured distribution of visible droplet behavior therefore applies to the observable population under that preparation.\n\nKeep the experimental units separate. Hundreds of droplets measured in a few animals do not become hundreds of independent animals. Droplets within a gland share an organism, hormonal state and preparation. The paper's tracked-kinetics dataset included 300 droplets from three mice; those numbers describe different levels of sampling. A strong research answer asks how clustering was handled, which events could not be resolved and whether the manipulation needed for imaging could influence the behavior. These questions strengthen interpretation without dismissing the directly observed movement.",
+          "practice": {
+            "prompt": "What are the two sampling levels in 300 droplets from three mice?",
+            "feedback": "Droplets are repeated observations nested within three animals; their count does not create 300 independent animals."
+          }
+        },
+        {
+          "title": "Separate post-lactation remodeling from age-related involution",
+          "body": "The word involution can describe different contexts. After lactation, a large secretory compartment regresses through coordinated cell removal and tissue remodeling. Age-related lobular involution concerns changes in TDLUs over a different timescale and clinical context. A research image used to measure age-related lobular architecture is not automatically an image of the early post-weaning process.\n\nThis distinction matters for the low-power teaching figure. It comes from a study of benign breast-disease biopsies and computational tissue segmentation, not a documented lactation-to-weaning time series. Use it to recognize grouped acinar profiles and surrounding stroma. Do not infer postpartum timing, a hormone concentration or a personal cancer risk from its appearance. To study a dynamic regression mechanism, use a defined time course and compare equivalent preparations.",
+          "practice": {
+            "prompt": "Can an image from an age-related TDLU study be assigned to the first day after weaning from appearance alone?",
+            "feedback": "No. The study context and specimen history differ; post-lactation regression needs a documented temporal comparison."
+          }
+        },
+        {
+          "title": "Follow the switch from secretion to uptake during regression",
+          "body": "In an experimentally defined mouse post-lactation model, mammary epithelial cells changed from a predominantly secretory role toward uptake of luminal material. Enlarged lysosomal compartments contained lipid and other material. Conditional loss of epithelial Stat3 reduced these early changes. Electron microscopy, molecular labeling and perturbation supplied complementary evidence that a dark or vacuolated appearance alone could not provide.\n\nThe researchers found evidence that previously secreted milk-fat globules were taken back into epithelial cells. Lipid breakdown products could destabilize isolated lysosomal membranes, allowing cathepsin proteases to escape. This supports a mechanism connecting uptake, lysosomal processing and cell death during the sampled early regression phase. It should not be reduced to all involution being ordinary apoptosis, nor generalized into a claim that dietary milk kills human cells. The experiments used defined mouse tissues, cultured cells and isolated organelles; the causal chain must retain those contexts.",
+          "practice": {
+            "prompt": "Why is identifying a secreted globule membrane around an internalized lipid body useful?",
+            "feedback": "It helps distinguish reuptake of previously secreted material from an unsecreted cytoplasmic droplet, strengthening the proposed route to the lysosome."
+          }
+        },
+        {
+          "title": "Connect the skin-derived bud to the adult ductal tree",
+          "body": "Mammary epithelium begins as a specialization of surface ectoderm. A localized epithelial thickening and bud grow into an adjacent mesenchymal environment; subsequent outgrowth, branching and lumen formation establish a rudimentary ductal organization. Epithelial and surrounding connective-tissue compartments therefore have different developmental contributions. They interact, but an epithelial bud should not be described as connective tissue turning directly into all adult secretory cells.\n\nThe fetal structure is a beginning, not a miniature fully lactating breast. Pubertal branching and pregnancy-associated alveolar differentiation later expand and specialize it. Connect each stage with the tissue relationship it creates: surface to bud, bud to branching epithelium, branches to terminal secretory units. Exact human gestational dates are omitted here because the reviewed fetal abstracts do not adequately resolve their age conventions. Mouse induction dates used in lineage experiments belong to those experiments and must not be relabeled as human weeks.",
+          "practice": {
+            "prompt": "Which later process is still required after a fetal rudimentary duct system exists?",
+            "feedback": "Further ductal expansion and branching, followed in pregnancy by substantial alveolar differentiation; fetal duct formation does not complete the lactating organ."
+          }
+        },
+        {
+          "title": "Connect the human epithelial bud with surrounding mesenchyme carefully",
+          "body": "Human developmental observations provide a separate evidence stream from mouse lineage experiments. The abstract of the fetal ultrastructure study describes solid epithelial ingrowth and adjacent differentiating mesenchyme in the sampled early human material, without a lumen in those samples. That supports a distinction between an early solid epithelial structure and the later lumen-containing organization encountered in adult histology.\n\nSpatial proximity can motivate a hypothesis of epithelial–mesenchymal interaction, but it does not identify a causal signal on its own. Demonstrating causality would require additional experiments or evidence. This human observation is supported here at abstract level; its developmental-week terminology is not used to construct a precise gestational timetable. The current teaching point is deliberately limited to the observed structural relationship and the difference between an observation and a mechanistic explanation.",
+          "practice": {
+            "prompt": "Does adjacent mesenchyme identify the causal developmental signal?",
+            "feedback": "No. Spatial association supports an interaction hypothesis but does not itself identify or test a signaling pathway."
+          }
+        },
+        {
+          "title": "Distinguish emerging phenotype from ancestry and function",
+          "body": "The reviewed human fetal immunohistochemistry abstract describes basal cells acquiring a partial myoepithelial marker phenotype. The relationship between marker expression, cell position and basement membrane is useful evidence of progressive differentiation. It is not equivalent to observing mature contractile behavior or tracing every cell back to a particular progenitor.\n\nThree questions should stay separate: where is the cell, what markers does it express, and what can it do? A fourth question—what descendants does it generate—requires lineage evidence. A marker panel can help distinguish phenotypes but does not answer all four questions at once. The human study is used here at abstract level, without claims about exact timing, prevalence or unreviewed staining controls. This lesson therefore presents this as an example of evidence interpretation, with the abstract-only scope visible.",
+          "practice": {
+            "prompt": "Which questions remain after basal cells acquire a partial marker phenotype?",
+            "feedback": "Their mature function and progenitor ancestry remain separate from the measured phenotype."
+          }
+        },
+        {
+          "title": "Follow a labeled progenitor through time",
+          "body": "Lineage tracing asks about descendants after a labeling event. The result depends on which cells the genetic system labels, when labeling is induced, how sparse it is, how long the tissue is followed and how the descendants are classified. Coexpression of basal and luminal markers in an embryonic cell is not, by itself, proof that the cell will produce both lineages.\n\nIn the K14-based mouse experiments, sparse early embryonic labeling supported clones containing both basal and luminal descendants; the later postnatal basal-labeling experiment showed a more restricted outcome in that setting. The Notch1-based study sampled a different labeled population and explicitly considered chance combinations of labeled cells. These designs need to be compared through their targeting and analysis, rather than collapsed into a single universal date when every mammary progenitor changes fate. Mouse induction dates are not a human gestational timetable.",
+          "practice": {
+            "prompt": "Why is coexpression of two markers not equivalent to a lineage trace?",
+            "feedback": "A single-time-point phenotype does not follow descendants after a defined heritable labeling event."
+          }
+        },
+        {
+          "title": "Ask whether a mixed clone exceeds chance",
+          "body": "A group of labeled cells containing two phenotypes might derive from one progenitor, or it might contain descendants from independently labeled cells that appear together. Sparse labeling and a model of chance association help distinguish these explanations. In the Notch1 study, early induction supported bipotent outcomes above the modeled chance expectation, whereas some later induction conditions were not statistically distinguishable from that expectation.\n\nFailure to reject the chance explanation is not proof that bipotency is absolutely absent from every cell in the organ. The conclusion remains bounded by the targeted population, the labeling efficiency, the sample size and the model assumptions. This is why a useful knowledge check should ask which conclusion is supported, not merely demand a binary label of multipotent or unipotent. A careful answer preserves the distinction between evidence for an event and inadequate evidence to establish it under a particular design.",
+          "practice": {
+            "prompt": "What alternative must be considered for an apparently mixed clone?",
+            "feedback": "Independent labeled cells may appear together by chance; sparse labeling and an appropriate model test that alternative."
+          }
+        },
+        {
+          "title": "Interpret forced cell-fate changes without rewriting normal development",
+          "body": "A developmental perturbation asks a different question from unmanipulated lineage tracing. Sustained p63 expression and constitutive Notch activation produced different lineage biases in the cited mouse experiments. Such interventions can reveal regulatory capacity and cellular plasticity in their experimental context. They do not establish that the same forced state occurs during ordinary human development.\n\nFor each experiment, state the manipulated factor, the cells and stage targeted, the measured lineage outcome and the relevant comparison. Then ask whether the result establishes sufficiency, necessity, or an association; those are not interchangeable claims. A forced-expression result can support the capacity of a pathway to bias an outcome without proving that the pathway alone determines every normal fate decision. Keep the original experimental design visible, and avoid presenting a research schematic as a settled human developmental sequence.",
+          "practice": {
+            "prompt": "How does forced Notch activation differ from observing normal development?",
+            "feedback": "It tests regulatory capacity under an intervention; it does not describe an unmanipulated human developmental sequence."
+          }
+        },
+        {
+          "title": "Read the image before consulting a coloured overlay",
+          "body": "The low-power research figure presents H&E tissue on the left and computational segmentation on the right. The colours encode classes assigned by an image-analysis model; they are not additional histochemical stains and do not reveal a new molecule. Compare the raw architectural pattern first, then ask which region the model has assigned to each compartment.\n\nA segmentation boundary is a proposed classification of pixels. It can simplify measurement of lobular organization, but classification errors remain possible. The study evaluated algorithm performance rather than declaring every displayed boundary perfect ground truth. The upper and lower image pairs have different scale bars, which must remain visible. The figure's original panel wording is inconsistent with the visible overlay arrangement, so this lesson identifies uncoloured left and coloured right panels explicitly.",
+          "practice": {
+            "prompt": "Does a coloured computer overlay establish a stain-specific biochemical identity?",
+            "feedback": "No. It represents algorithmic classification; the underlying H&E image, model definitions and validation evidence must be considered separately."
+          }
+        },
+        {
+          "title": "Build a defensible practical answer",
+          "body": "A complete practical answer can follow four connected steps. First describe the field: epithelial groups, lumina, stroma and any visible adipose tissue. Next explain which architectural features support the proposed tissue and functional context. Then identify the limits introduced by section plane, stain, sampling and missing metadata. Finally choose the additional observation that would most improve the interpretation.\n\nFor the high-power H&E example, it is reasonable to distinguish a lumen, the surrounding epithelial compartment and external pink stroma. It is not reasonable to assign an exact hormonal state, a calibrated structure size, a duct branch level or a myoepithelial marker identity when those data are absent. Developmental explanations should connect to the adult compartments while retaining the species and method behind each claim. The endpoint is a reasoned identification with a clear evidence trail, not a confident label based only on resemblance.",
+          "practice": {
+            "prompt": "Give the four parts of a defensible slide answer.",
+            "feedback": "Describe the field, justify the tissue interpretation, identify preparation or sampling limits, then choose the next useful observation."
+          }
+        }
+      ],
+      "question": {
+        "prompt": "Which relationship best distinguishes milk production from milk ejection?",
+        "options": [
+          {
+            "text": "Luminal epithelial cells synthesize secretion; myoepithelial contraction helps move existing luminal contents.",
+            "reason": "These are different cellular tasks connected through the alveolar and ductal organization."
+          },
+          {
+            "text": "Myoepithelial cells synthesize all milk proteins; luminal cells provide only passive support.",
+            "reason": "That reverses the major roles of the secretory luminal epithelium and contractile myoepithelial system."
+          },
+          {
+            "text": "A ductal lumen alone proves both normal production and normal ejection.",
+            "reason": "A structural space does not independently demonstrate either biosynthetic output or effective expulsion."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Explain one route from tissue organization to function, and one experiment that tests it.",
+        "answer": "For example, identify the apical secretory surface and basolateral signaling environment, then use the polarized-culture comparison to distinguish receptor expression from hormone access. State the mouse-culture context and separate the early response from sustained secretion-related expression."
+      },
+      "related": [
+        "epithelia",
+        "reproductive-histology",
+        "pituitary-glandular-neural-orientation",
+        "placenta"
+      ],
+      "updatedAt": "2026-11-06",
+      "minutes": 70,
+      "objectives": [
+        "Recognize a terminal duct–lobular unit and distinguish its acinar profiles from surrounding stroma.",
+        "Locate luminal and basal compartments and connect polarity with secretion and signal reception.",
+        "Explain H&E, osmium and Azan observations while controlling for preparation and functional state.",
+        "Separate protein export, lipid-droplet release, milk ejection and ductal transport.",
+        "Connect prolactin/STAT5 and matrix-dependent signaling with differentiated alveolar function.",
+        "Distinguish early development, later expansion and lineage evidence without transferring mouse timing to humans.",
+        "Explain a defined post-lactation lysosomal mechanism and distinguish it from age-related TDLU involution.",
+        "Interpret real H&E images, scale bars and computational overlays with explicit specimen context."
+      ],
+      "prerequisites": [
+        "epithelia",
+        "microscopy"
+      ],
+      "workedExample": {
+        "title": "A larger vacuole is an observation, not yet a mechanism",
+        "prompt": "A researcher sees more large intracellular lipid-containing compartments after experimental weaning in mice. Construct a sequence of tests that distinguishes new lipid synthesis, reuptake of secreted lipid and lysosomal processing.",
+        "solution": [
+          "Identify the sampled state and use comparable tissue preparation and imaging conditions.",
+          "Look for evidence of the membrane coating acquired by secreted globules to test whether material was previously in the lumen.",
+          "Combine localization with lysosomal markers and ultrastructure rather than identifying every pale region by H&E alone.",
+          "Use defined perturbations and relevant controls to test specific links; retain the separate limits of tissue, culture and isolated-organelle experiments."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Describe the low-power organization before naming a high-power cell.",
+          "answer": "Identify grouped epithelial profiles and their local stroma, contrast broader interlobular tissue, and then inspect an acinar lumen and lining. Keep the two supplied specimens distinct."
+        },
+        {
+          "prompt": "Why does a mammary epithelial cell need more than one release pathway?",
+          "answer": "Protein vesicles deliver cargo by apical exocytosis, whereas cytoplasmic lipid droplets follow envelopment and budding. Myoepithelial contraction and ductal flow are further, distinct levels of movement."
+        },
+        {
+          "prompt": "How would you distinguish a developmental marker study from a lineage experiment?",
+          "answer": "A marker study records phenotype and location at sampling. A lineage experiment follows descendants after a defined labeling event and requires targeting, density and clone-assignment controls."
+        }
+      ],
+      "summaryChecklist": [
+        "Orient to grouped epithelial units, lumina and stromal compartments before increasing magnification.",
+        "Separate position, phenotype, ancestry and function when naming cells.",
+        "Keep preparation, specimen state and scale visible in image comparisons.",
+        "Distinguish synthesis, release, contraction and flow.",
+        "Relate hormone access and signal duration to differentiated output.",
+        "Do not turn mouse perturbations into a universal human developmental timetable.",
+        "Read H&E before treating an algorithmic overlay as a validated boundary."
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

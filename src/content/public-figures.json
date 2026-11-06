@@ -1034,6 +1034,76 @@
       "publicApproval": "Owner-authorized educational release after provenance, license and privacy review; rendered and release gates are recorded separately.",
       "modifications": "Nonessential embedded metadata removed; image pixels unchanged. Region markers are reversible browser overlays.",
       "observe": "Follow the epithelial lining around the ductal lumen, then contrast the separate erythrocyte-containing vessel and surrounding tissue."
+    },
+    {
+      "id": "human-mammary-acinus-he",
+      "title": "Human mammary acinar H&E: lumen, lining and stroma",
+      "sourceAsset": "images/figures/human-mammary-acinus-he.jpg",
+      "kind": "micrograph",
+      "alt": "H&E field with a central irregular pale lumen, a ring of purple-nucleated epithelial cells, peripheral nuclei and surrounding pink collagen-rich tissue.",
+      "caption": "Provider-identified normal human breast acinus, H&E. An irregular luminal profile is surrounded by epithelial cells and pink stroma. Age, hormonal state, fixation, section thickness and calibrated scale are not supplied. This is a different specimen from the lobular research figure.",
+      "rights": "Mikael Häggström, own work. CC0 1.0 public-domain dedication.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": "docs/reviews/mammary-development-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?oldid=1090438718&title=File:Normal_breast_acinus.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-mammary-histology-and-development"
+      ],
+      "resourceIds": [
+        "mammary-histology-and-development"
+      ],
+      "width": 2048,
+      "height": 1532,
+      "src": "/images/figures/human-mammary-acinus-he.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/human-mammary-acinus-he.jpg",
+          "width": 2048,
+          "height": 1532,
+          "bytes": 377609
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
+      "modifications": "Nonessential embedded metadata removed without changing decoded pixels. No crop, recolouring or scale-bar changes; region markers are reversible browser overlays.",
+      "observe": "Find the lumen, follow its epithelial lining, then compare the surrounding stroma."
+    },
+    {
+      "id": "human-mammary-tdlu-segmentation",
+      "title": "Mammary lobules: H&E architecture and computer segmentation",
+      "sourceAsset": "images/figures/human-mammary-tdlu-segmentation.jpg",
+      "kind": "micrograph",
+      "alt": "Four-panel figure: upper and lower left H&E fields show grouped mammary acinar profiles within stroma; matching right panels contain false-colour segmentation. Two original scale bars remain visible.",
+      "caption": "Figure 1 from a study of benign breast-disease biopsies. Uncoloured left panels show H&E; coloured right panels show computer segmentation, not additional stains. Upper and lower scale bars are 200 µm and 400 µm. This is not a documented lactating or post-weaning specimen. The original caption panel wording conflicts with the visible arrangement; left/right descriptions follow the image.",
+      "rights": "de Bel et al., npj Breast Cancer (2022), Figure 1. CC BY 4.0; annotated arrangement and explanatory overlay also offered under CC BY 4.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": "docs/reviews/mammary-development-depth-20261106.md",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8770616/",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-mammary-histology-and-development"
+      ],
+      "resourceIds": [
+        "mammary-histology-and-development"
+      ],
+      "width": 1755,
+      "height": 1625,
+      "src": "/images/figures/human-mammary-tdlu-segmentation.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/human-mammary-tdlu-segmentation.jpg",
+          "width": 1755,
+          "height": 1625,
+          "bytes": 1055699
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
+      "modifications": "Nonessential embedded metadata removed without changing decoded pixels. No crop, recolouring or scale-bar changes; region markers are reversible browser overlays.",
+      "observe": "Compare epithelial groups and interlobular stroma on the left before consulting the computational overlays on the right."
     }
   ]
 }
