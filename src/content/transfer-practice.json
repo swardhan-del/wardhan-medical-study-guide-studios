@@ -1954,6 +1954,420 @@
       "subject": "histology",
       "title": "Digestive tract: identify the wall and explain its development",
       "href": "/library/gi-histology#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-01",
+      "topic": "liver-pancreas",
+      "prompt": "A liver section contains one large thin-walled space next to a small muscular vessel and a cuboidal epithelial tube. Elsewhere, sinusoids converge on a vessel without that same surrounding group. Both large spaces contain erythrocytes. Which observation most improves the distinction between these two venous profiles?",
+      "options": [
+        {
+          "text": "The first profile shares connective tissue with a bile duct and an arterial branch",
+          "explanation": "Correct. The combined relationships establish a portal neighbourhood more convincingly than lumen size alone."
+        },
+        {
+          "text": "The first lumen contains red cells",
+          "explanation": "Both vascular profiles can contain red cells. This does not establish the regional identity."
+        },
+        {
+          "text": "The first lumen is perfectly circular",
+          "explanation": "Section angle and collapse alter shape. Circularity is not a reliable portal-versus-central rule."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-02",
+      "topic": "liver-pancreas",
+      "prompt": "A student switches from tracing sinusoidal blood to grouping hepatocytes by bile drainage. Which change of model best matches the new question?",
+      "options": [
+        {
+          "text": "From the classical lobule to a separate organ made only of ducts.",
+          "explanation": "The models describe overlapping relationships within the liver, not physically separate organs."
+        },
+        {
+          "text": "From the classical lobule to the portal lobule.",
+          "explanation": "The organising destination changes from central venous outflow to a portal biliary outlet. The tissue itself has not changed."
+        },
+        {
+          "text": "Reverse the blood-flow arrows and continue calling them blood.",
+          "explanation": "Bile and blood use distinct channels. Reversing a label does not create the correct anatomical route."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-03",
+      "topic": "liver-pancreas",
+      "prompt": "A learner labels every small gap between hepatocytes as a bile duct. Build a compartment map that explains why this is incorrect. Which feature distinguishes a bile canaliculus from an interlobular bile duct?",
+      "options": [
+        {
+          "text": "The canaliculus is the central blood-drainage vessel",
+          "explanation": "That describes a vascular route. Canaliculi carry bile."
+        },
+        {
+          "text": "The canaliculus is defined by a thick smooth-muscle coat",
+          "explanation": "A muscular coat does not define the intercellular canalicular channel."
+        },
+        {
+          "text": "The canaliculus is bounded by adjacent hepatocyte apical domains",
+          "explanation": "Correct. An interlobular bile duct instead has a distinct cholangiocyte epithelial lining."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-04",
+      "topic": "liver-pancreas",
+      "prompt": "A thin nucleus lies near a sinusoid in routine H&E. What is the most defensible next step before assigning a specific supporting-cell identity?",
+      "options": [
+        {
+          "text": "Establish its compartment and seek appropriate additional morphology or labelling.",
+          "explanation": "Endothelial, macrophage and stellate populations occupy related but different positions; one ambiguous nuclear profile does not distinguish them reliably."
+        },
+        {
+          "text": "Label every such nucleus a stellate cell.",
+          "explanation": "Proximity to a sinusoid is insufficient for that specific identity."
+        },
+        {
+          "text": "Use the presence of a nearby hepatocyte as proof of endothelial lineage.",
+          "explanation": "Neighbourhood alone does not establish lineage or the cell forming the vascular boundary."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-05",
+      "topic": "liver-pancreas",
+      "prompt": "A section shows tall columnar epithelium over branching mucosal folds. Beneath the mucosa are irregular smooth-muscle bundles. The learner immediately calls the folds villi. Which additional observation is most useful when the full wall is available?",
+      "options": [
+        {
+          "text": "A projection is present",
+          "explanation": "Both organs can show projecting mucosa, so this repeats the original ambiguity."
+        },
+        {
+          "text": "The mucosa meets irregular muscle without a muscularis mucosae and submucosa",
+          "explanation": "Correct. The complete wall relationship supports gallbladder in the stated context."
+        },
+        {
+          "text": "Some epithelial nuclei stain blue",
+          "explanation": "Nuclear staining does not identify the organ."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-06",
+      "topic": "liver-pancreas",
+      "prompt": "You want to compare the hepatic supporting framework, collagen distribution and glycogen. One stain cannot answer all three questions equally well. Why compare PAS with PAS after diastase treatment?",
+      "options": [
+        {
+          "text": "To prove every remaining positive cell is malignant",
+          "explanation": "Persistent PAS positivity is not a universal malignancy marker."
+        },
+        {
+          "text": "To determine whether an organ developed from a dorsal pancreatic bud",
+          "explanation": "This histochemical comparison is not a developmental lineage experiment."
+        },
+        {
+          "text": "To assess the contribution of digestible glycogen to PAS staining",
+          "explanation": "Correct. The paired treatment tests a chemical component of the signal, with proper controls and comparable tissue."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-07",
+      "topic": "liver-pancreas",
+      "prompt": "A gland contains tightly packed dark acini, small pale cells near some acinar centres, and a larger pale cellular island with small vessels. Explain each feature without treating every pale region as a duct. A pale cell lies at an acinar centre and continues into an intercalated duct. What is the best interpretation?",
+      "options": [
+        {
+          "text": "A centroacinar ductal cell",
+          "explanation": "Correct. Position and continuity support the beginning of the duct system."
+        },
+        {
+          "text": "A beta cell identified from pale H&E colour alone",
+          "explanation": "Neither the location nor the stated preparation establishes an endocrine hormone identity."
+        },
+        {
+          "text": "A hepatocyte forming a bile canaliculus",
+          "explanation": "That belongs to a different organ and architecture."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-08",
+      "topic": "liver-pancreas",
+      "prompt": "An arrow carries insulin from an islet into an intercalated pancreatic duct. What correction is needed?",
+      "options": [
+        {
+          "text": "Keep the arrow because all pancreatic products share one duct.",
+          "explanation": "The pancreas combines two secretory systems with different exits."
+        },
+        {
+          "text": "Direct the endocrine product toward the vascular circulation.",
+          "explanation": "Islet endocrine products enter blood; the duct tree carries exocrine secretions toward the gut."
+        },
+        {
+          "text": "Move the arrow into the gallbladder lumen.",
+          "explanation": "The gallbladder stores bile and is not the normal endocrine outlet of the pancreas."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-09",
+      "topic": "liver-pancreas",
+      "prompt": "A developing pancreatic cell stains for insulin. Which additional result most directly tests mature regulated secretory function?",
+      "options": [
+        {
+          "text": "A brighter insulin stain in the same fixed section.",
+          "explanation": "Staining intensity can reflect several technical and biological factors and does not measure stimulus-dependent secretion."
+        },
+        {
+          "text": "A rounder outline of the endocrine cluster.",
+          "explanation": "Cluster geometry is an architectural observation, not a functional secretion assay."
+        },
+        {
+          "text": "An appropriately controlled response to a physiological stimulus.",
+          "explanation": "A functional response addresses regulated secretion; marker detection alone addresses the presence of a product."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-10",
+      "topic": "liver-pancreas",
+      "prompt": "Why is the phrase “the liver is endodermal” incomplete when interpreting a developmental section?",
+      "options": [
+        {
+          "text": "Epithelial lineages develop alongside distinct vascular, stromal and blood-cell populations.",
+          "explanation": "An organ contains interacting compartments; a germ-layer shorthand for its epithelium does not describe every cell."
+        },
+        {
+          "text": "Every liver cell must become a hepatocyte before acquiring another identity.",
+          "explanation": "That universal lineage sequence is not established and erases distinct supporting and blood-cell contributions."
+        },
+        {
+          "text": "The phrase proves that all fetal liver nuclei belong to adult-like hepatocytes.",
+          "explanation": "The developing liver includes a substantial haematopoietic environment and differs from adult architecture."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-11",
+      "topic": "liver-pancreas",
+      "prompt": "Which statement best connects pancreatic bud contributions to the usual adult duct arrangement?",
+      "options": [
+        {
+          "text": "The ventral bud alone makes the whole gland and main duct.",
+          "explanation": "This omits the major dorsal tissue and duct contribution."
+        },
+        {
+          "text": "Both buds contribute to the gland, and the main duct includes ventral and dorsal components.",
+          "explanation": "The ventral bud contributes the uncinate region and inferior head; the dorsal bud contributes most remaining tissue, with ductal integration across the two systems."
+        },
+        {
+          "text": "Fusion of tissue proves every possible duct arrangement is identical.",
+          "explanation": "Parenchymal union and ductal communication are related but distinguishable developmental outcomes."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-12",
+      "topic": "liver-pancreas",
+      "prompt": "The reviewed human pancreas atlas shows separate buds in an earlier specimen and fused tissue in a later specimen. A student describes this as a time-lapse movie of a single embryo. What is a justified use of the atlas figure?",
+      "options": [
+        {
+          "text": "Proving that insulin staining alone establishes adult glucose-responsive function",
+          "explanation": "A marker signal does not establish that functional outcome."
+        },
+        {
+          "text": "Measuring every cell's migration speed from two different specimens",
+          "explanation": "Cross-sectional specimens do not provide continuous individual-cell trajectories."
+        },
+        {
+          "text": "Comparing labelled pancreatic anatomy across sampled developmental stages",
+          "explanation": "Correct. Keep specimen, stage, imaging and scale information attached to the comparison."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-13",
+      "topic": "liver-pancreas",
+      "prompt": "A single-ligand knockout and a broader family-level signalling inhibitor produce different degrees of impaired hepatic induction. What is the strongest interpretation?",
+      "options": [
+        {
+          "text": "The interventions differ in scope and should be compared with their measured readouts.",
+          "explanation": "Other ligands or remaining signalling can make a single deletion differ from wider inhibition. A growth defect and a marker response also need not be identical outcomes."
+        },
+        {
+          "text": "The weaker phenotype proves that the entire signalling family has no role.",
+          "explanation": "A partial perturbation cannot establish that the whole pathway is irrelevant."
+        },
+        {
+          "text": "The stronger phenotype proves that adding one ligand builds a complete human liver.",
+          "explanation": "Requirement or rescue in a specific developmental model is not sufficient evidence for whole-organ human function."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-14",
+      "topic": "liver-pancreas",
+      "prompt": "A developmental experiment leaves cytokeratin-positive epithelial sheets near portal regions but disrupts normal bile-duct formation. Does a positive epithelial marker mean that organ construction succeeded? Which conclusion fits the described marker-positive sheets and failed duct formation?",
+      "options": [
+        {
+          "text": "Any cytokeratin signal proves normal bile drainage",
+          "explanation": "The experiment explicitly separates marker retention from successful duct construction."
+        },
+        {
+          "text": "Cell-marker expression and successful duct morphogenesis are separate readouts",
+          "explanation": "Correct. A labelled identity does not establish a normal connected duct system or its function."
+        },
+        {
+          "text": "The driver must have affected only one perfectly isolated cell population",
+          "explanation": "Driver specificity must be measured; this study reports an additional endothelial recombination caveat."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-15",
+      "topic": "liver-pancreas",
+      "prompt": "Early pancreatic progenitors and later acinar-associated cells respond differently to the same regulatory-factor manipulation. Which concept explains why timing matters?",
+      "options": [
+        {
+          "text": "A regulatory factor must have an identical effect in every cell at every age.",
+          "explanation": "That ignores stage-dependent lineage context and the experimentally different responses."
+        },
+        {
+          "text": "Any fate change must be caused only by faster cell division.",
+          "explanation": "Lineage allocation and proliferation are distinct readouts; one cannot automatically substitute for the other."
+        },
+        {
+          "text": "Developmental competence changes with cell state and history.",
+          "explanation": "A progenitor and a later committed population need not retain the same accessible responses."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-16",
+      "topic": "liver-pancreas",
+      "prompt": "Loss of Ngn3 disrupts endocrine development despite persistence of an early pancreatic-associated marker. Why is this not contradictory?",
+      "options": [
+        {
+          "text": "Early pancreatic identity and later endocrine specification are different developmental outcomes.",
+          "explanation": "A broad early programme can remain while a later lineage programme fails."
+        },
+        {
+          "text": "Persistence of one marker proves that every mature endocrine function is normal.",
+          "explanation": "Marker presence does not demonstrate the complete lineage or its function."
+        },
+        {
+          "text": "Loss-of-function evidence proves that the factor alone is sufficient for all endocrine maturation.",
+          "explanation": "A requirement demonstrated by removal does not establish sufficiency when added."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-17",
+      "topic": "liver-pancreas",
+      "prompt": "A ligand increases epithelial proliferation in an explant, but its receptors are detected mainly in mesenchyme. Which mechanism should be considered?",
+      "options": [
+        {
+          "text": "Direct receptor signalling in every epithelial cell is already proven.",
+          "explanation": "The receptor evidence does not support that universal direct-target claim."
+        },
+        {
+          "text": "An indirect response mediated through neighbouring mesenchymal tissue.",
+          "explanation": "Receptor localisation makes a stromal relay plausible; the exact pathway still requires tests within the model."
+        },
+        {
+          "text": "The culture result establishes a safe treatment for all patients.",
+          "explanation": "An explant proliferation readout cannot establish clinical safety or therapeutic benefit."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
+    },
+    {
+      "id": "liver-depth-18",
+      "topic": "liver-pancreas",
+      "prompt": "A small image crop shows a pale cluster beside dark secretory units. What would most strengthen a pancreatic identification?",
+      "options": [
+        {
+          "text": "Call it pancreas solely because pale and dark areas coexist.",
+          "explanation": "Many tissues and staining artefacts produce contrast; the arrangement must be established."
+        },
+        {
+          "text": "Infer the complete duct drainage pattern from the cropped cluster.",
+          "explanation": "A local H&E field cannot map the entire duct tree or prove its developmental fusion pattern."
+        },
+        {
+          "text": "Examine a wider field for islet architecture and centroacinar cells within the acinar gland.",
+          "explanation": "Several positive structural clues and adequate sampling distinguish the organ more reliably than colour alone."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "href": "/library/liver-pancreas#apply-the-concept"
     }
   ]
 }

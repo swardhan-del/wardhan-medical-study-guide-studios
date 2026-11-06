@@ -1210,29 +1210,95 @@
     {
       "id": "liver-pancreas",
       "subject": "histology",
-      "title": "Liver and pancreas: routes and secretions",
-      "summary": "Distinguish blood flow from bile flow and separate pancreatic acini from endocrine islets.",
+      "title": "Liver and pancreas: identify compartments and explain development",
+      "summary": "Identify liver, gallbladder and pancreatic compartments; interpret stains, follow secretion routes and connect adult architecture to developmental experiments.",
       "tags": [
         "Organ histology",
         "liver",
         "pancreas",
         "hepatobiliary",
-        "digestive"
+        "digestive",
+        "embryology",
+        "staining",
+        "portal tract",
+        "islet",
+        "pancreatic buds",
+        "developmental evidence"
       ],
       "source": "histology",
       "section": "Liver Structural Organization; Biliary Passages; Pancreas Histology",
       "steps": [
         {
-          "title": "Read the liver lobule",
-          "body": "Portal tracts contain branches of portal vein, hepatic artery and bile duct. Blood from the two vascular inputs enters sinusoids and moves toward a central vein. Hepatocytes are arranged along those exchange channels."
+          "title": "Identify a portal neighbourhood before naming a vessel",
+          "body": "Begin at low power and look for hepatocyte plates interrupted by vascular spaces. A portal tract is a connective-tissue neighbourhood containing a portal venous branch, a smaller arterial branch and a bile duct, with lymphatic and neural elements that need not all be visible. The venous branch usually has the largest, relatively thin-walled profile. The artery has a conspicuous smooth-muscle wall relative to its lumen. A bile duct has an epithelial ring of cuboidal or columnar cells, rather than a vascular endothelial lining.\n\nA central vein receives converging sinusoids and lacks that accompanying portal duct-and-artery neighbourhood. Neither a round outline nor a large empty lumen proves identity: section angle, collapse and the size of the sampled branch change appearances. Trace neighbouring structures, then use the wall. In a normal human section, complete collagenous outlines around textbook hexagons are often inconspicuous; do not import the strongly septated appearance of another species.\n\nIf only one vascular profile is present in a tiny field, give a provisional interpretation and say which neighbouring structure would resolve it. A defensible identification states both the positive evidence and the alternative.\n\nTry it: A small muscular vessel and an epithelial duct accompany a larger thin-walled lumen. Which neighbourhood is this, and why is “central vein” less likely?"
         },
         {
-          "title": "Reverse direction for bile",
-          "body": "Bile enters canaliculi between hepatocytes and flows toward ductules and ducts in portal regions. It does not normally drain into the central vein. Gallbladder stores and concentrates bile; it does not synthesize bile or digestive enzymes."
+          "title": "Use three liver models for three different questions",
+          "body": "The classical lobule organises tissue around venous outflow: sinusoidal blood travels from portal-region inputs toward a central vein. The portal lobule instead groups hepatocytes by their drainage toward a bile duct. The hepatic acinus emphasises perfusion from terminal inflow branches and the resulting gradients. These models overlay the same tissue; they are not three separate structures to find stacked beside one another.\n\nIn the acinar model, zone 1 is closer to inflow and zone 3 closer to terminal venous drainage, with zone 2 between. Oxygen availability generally falls along this route. That helps explain why a stress can produce a spatial pattern, but it does not make every metabolic activity exclusive to one numbered zone. A histological pattern is a starting point for mechanism, not a diagnosis by itself.\n\nAsk what is being followed before drawing arrows. If the task is blood delivery, use the vascular route. If it is bile collection, follow the canalicular and ductal route. If it is a gradient, explain distance from inflow rather than treating the central vein as an arterial source.\n\nTry it: Why can a hepatocyte belong to a classical lobule and a portal lobule at the same time?"
         },
         {
-          "title": "Separate the pancreatic compartments",
-          "body": "Exocrine acini make digestive secretions that enter a duct system; centroacinar cells mark the beginning of that system. Endocrine islets release hormones into blood. Islets often appear paler than surrounding acini, but architecture and cell organization remain essential."
+          "title": "Separate blood, the space of Disse and the bile canaliculus",
+          "body": "A sinusoid is a blood channel lined by specialised endothelium. Between that endothelium and the hepatocyte surface lies the perisinusoidal space of Disse, where plasma-derived material can exchange with hepatocyte microvilli. This exchange-facing hepatocyte membrane is the basal or sinusoidal domain. It is not the cell’s bile-secreting apical surface.\n\nBile enters a minute canaliculus formed between adjacent hepatocytes. Their apical membranes delimit this channel and junctional complexes help separate it from the basolateral exchange compartment. The canaliculus has no independent ring of cholangiocytes. A portal bile duct does have an epithelial lining. Thus canaliculus, sinusoid and bile duct differ in wall, location and contents, even though all can be drawn as channels.\n\nRoutine low-power H&E shows the larger architectural relationships but does not reliably resolve every canalicular membrane or endothelial fenestra. A clear gap is not automatically a normal anatomical space; shrinkage can separate tissue during preparation. Use higher-resolution or appropriately labelled material when the question concerns membrane-level topology.\n\nTry it: Trace a substance from sinusoidal plasma toward a hepatocyte, then trace bile away from the same cell without mixing the two lumina."
+        },
+        {
+          "title": "Place supporting cells in their correct compartments",
+          "body": "Hepatocytes form the main epithelial plates. Sinusoidal endothelial cells line the blood-facing boundary; Kupffer cells are macrophages associated with the sinusoidal compartment. Hepatic stellate cells occupy the perisinusoidal compartment and, in their quiescent state, store retinoid-rich lipid droplets. These identities are not interchangeable simply because their nuclei appear close together in a two-dimensional field.\n\nThe spatial distinction explains different roles. A macrophage samples material in the vascular environment; a stellate cell lies at the epithelial–vascular interface and can contribute extracellular matrix during injury. Endothelium controls the exchange boundary. In conventional H&E, confidently assigning every slender sinusoidal-region nucleus to one of these populations is often impossible.\n\nUse an identification hierarchy: establish the compartment, describe the morphology, then ask whether a specific marker, ultrastructure or functional assay is needed. Marker positivity must itself be interpreted with localisation and controls. A single label is not proof of an exclusive lineage, and an activated cell state should not be inferred from location alone.\n\nTry it: What additional evidence would you request before labelling every perisinusoidal nucleus a stellate cell?"
+        },
+        {
+          "title": "Follow bile and recognise the gallbladder wall",
+          "body": "Bile formed by hepatocytes enters canaliculi, then the small transitional biliary channels and the duct system in portal regions. Larger ducts carry it out of the liver. The gallbladder stores and concentrates bile; its epithelium absorbs fluid and electrolytes. It does not manufacture bile or pancreatic digestive enzymes.\n\nOn a gallbladder section, find tall simple columnar epithelium over lamina propria, often thrown into elaborate folds. The underlying smooth muscle forms irregularly arranged bundles. A normal gallbladder lacks a distinct muscularis mucosae and submucosa, so forcing the usual intestinal four-layer template onto it produces errors. Its external covering depends on whether the surface faces the peritoneal cavity or the liver attachment.\n\nA fold cut across can resemble an isolated epithelial island. Follow its connective-tissue core and relationship to the lumen. Intestinal villi require an intestinal context, including the crypt–villus arrangement and appropriate wall organisation; a tall folded lining alone is insufficient. Normal fold complexity also depends on distension, making section orientation and sampling essential.\n\nTry it: A folded simple-columnar mucosa overlies irregular muscle without a distinct submucosa. What supports gallbladder, and what finding would favour small intestine?"
+        },
+        {
+          "title": "Choose a liver stain for a question, then check the controls",
+          "body": "H&E establishes architecture, nuclear detail and cytoplasmic staining before special stains are interpreted. Reticulin staining highlights the supporting fibre network and helps assess plate organisation. Trichrome emphasises collagen distribution, making portal expansion or bridging patterns easier to examine. These stains answer related but different questions: the framework supporting plates is not equivalent to the amount and distribution of broader collagen deposition.\n\nPAS detects several carbohydrate-containing materials. Comparing PAS with a diastase-treated section helps determine which staining depends on digestible glycogen; persistence after digestion is not, by itself, a unique molecular diagnosis. Always retain the untreated comparison, appropriate controls and the anatomical location of the signal.\n\nPreparation can change the readout. Delayed fixation, crush, folds, section thickness and uneven staining may obscure architecture or create misleading intensity differences. Compare equivalent regions and verify that the control behaved as expected before interpreting a negative result. This is a method-selection exercise, not a universal reagent recipe: actual processing and chemical handling follow the laboratory’s validated protocol.\n\nTry it: A PAS-positive region loses its signal after diastase while another remains positive. What can that comparison support, and what can it not uniquely identify?"
+        },
+        {
+          "title": "Identify pancreatic acini through polarity and their duct origin",
+          "body": "At low power, pancreatic connective-tissue septa divide lobules containing densely packed serous acini. An acinus is a small secretory unit whose pyramidal cells surround a narrow lumen. Basal cytoplasm is often basophilic because of abundant rough endoplasmic reticulum and ribosomes; apical cytoplasm contains secretory granules. This polarity connects protein synthesis at the base with secretion toward the lumen.\n\nPale centroacinar cells extend into the centre of the acinus and mark the beginning of the intercalated duct system. They are not a small endocrine islet. In an oblique section, not every acinus displays a clear lumen or a recognisable centroacinar profile, so examine several units.\n\nFor a pancreas–parotid differential, use positive pancreatic evidence: centroacinar cells and endocrine islets within an acinar organ. A lack of visible striated ducts supports the interpretation only when enough tissue is sampled. An empty small field cannot establish the absence of a structure throughout the gland. Granule colour alone is not an enzyme assay.\n\nTry it: Explain why pale cells inside an acinus and a pale multicellular cluster between acini have different likely identities."
+        },
+        {
+          "title": "Distinguish exocrine delivery from enzyme activation",
+          "body": "Acinar secretion enters a connected ductal route: acinar lumen, intercalated duct, progressively larger ducts and the pancreatic outflow to the duodenum. Ductal epithelial secretion contributes fluid and bicarbonate, helping carry the acinar products into the intestine. The duct lumen and a nearby blood vessel may both look empty, but their epithelial or endothelial walls distinguish their routes.\n\nDo not treat every pancreatic enzyme as an inactive precursor. Several proteases are delivered as zymogens, whereas other digestive enzymes are secreted in active forms. Production, packaging, transport and activation are separate processes; locating a granule does not establish that its contents are already proteolytically active. The related digestive-control lesson covers the broader secretion context.\n\nEndocrine islets use another exit: their products enter the vascular circulation rather than the exocrine duct tree. This distinction is a useful test of any proposed arrow on a diagram. If an insulin arrow ends in a pancreatic duct, the diagram has confused the two secretory systems.\n\nTry it: Why does identifying an acinar granule not tell you whether every protein in it requires intestinal activation?"
+        },
+        {
+          "title": "Read islet architecture without inventing hormone identities",
+          "body": "Islets appear as relatively pale endocrine clusters among darker exocrine acini. Endocrine cells are organised around a rich capillary network, allowing secreted hormones to enter blood. Acinar units instead organise their apical surfaces around a duct-connected lumen. This difference in destination is more informative than pale versus dark staining alone.\n\nRoutine H&E generally cannot reliably distinguish each insulin-, glucagon- or somatostatin-producing cell. Immunolabelling can reveal hormone-containing populations, but the result still needs appropriate controls and preserved spatial context. Do not impose a universal concentric core-and-mantle diagram on every human islet: organisation varies with species, region, stage and the section plane.\n\nKeep three questions separate. Does a cell contain a marker? Where is it positioned relative to other cells and vessels? Does it respond appropriately to a physiological stimulus? Hormone staining addresses the first question; it does not by itself prove mature glucose-regulated secretion. Developmental and adult specimens need different expectations.\n\nTry it: What additional experiment is needed to move from insulin immunoreactivity to a claim about regulated insulin secretion?"
+        },
+        {
+          "title": "Build the organs from epithelial and supporting contributions",
+          "body": "Liver, biliary and pancreatic epithelia arise in association with foregut endoderm. Hepatic epithelial progenitors expand into surrounding tissue and contribute hepatocytes and intrahepatic biliary epithelium. Pancreatic progenitors generate acinar, ductal and endocrine epithelial lineages. “Endodermal organ” is therefore a useful starting label, not a statement that every cell in the organ has one origin.\n\nSupporting mesenchyme, vascular elements and incoming blood-cell populations participate in organ formation without becoming interchangeable with those epithelial lineages. The developing liver is also a major haematopoietic environment; a crowded fetal liver section should not be read using an adult hepatocyte-only expectation.\n\nSeparate organ induction from later architecture. Establishing a hepatic or pancreatic epithelial programme does not automatically produce an organised duct tree, mature capillary relationships or adult secretory function. To explain development, name the responding compartment, the neighbouring signal source and the structural outcome being studied. This gives embryology a direct connection to the adult compartments identified earlier.\n\nTry it: Why can two cells in the same developing liver have different developmental origins and different experimental markers?"
+        },
+        {
+          "title": "Connect pancreatic buds, adult territories and duct anatomy",
+          "body": "The pancreas forms from dorsal and ventral endodermal buds associated with the proximal intestinal region. As the gut changes position, the ventral component approaches the dorsal component and the tissues unite. The ventral contribution forms the uncinate process and inferior part of the head; the dorsal contribution forms most of the remaining gland, including the superior head, body and tail.\n\nThe usual main duct incorporates the ventral duct and a substantial dorsal duct contribution. A persisting proximal dorsal route may form an accessory duct. Tissue union and ductal communication are related but distinct events: failure of the usual duct fusion can leave a different drainage pattern. A single adult H&E field cannot establish that entire duct arrangement.\n\nPublished week labels require care because gestational and post-conceptional conventions differ. Use the human atlas below to examine actual staged specimens rather than memorising a universal fusion deadline. Distinguish the observed bud relationship from a causal explanation of why it changed.\n\nTry it: Why is “the ventral bud makes the whole head and the whole main duct” an oversimplification?"
+        },
+        {
+          "title": "Read the human developmental figure as evidence",
+          "body": "The linked figure from Villalba and colleagues uses three-dimensional fluorescence imaging of human developmental specimens. It is not an adult H&E slide. SOX9 marks the developing pancreatic epithelium but also other structures in a whole embryo, so position and neighbouring anatomy matter. A bright region alone cannot establish pancreatic identity.\n\nFirst use panels a and b for orientation. Then compare the labelled separate buds in panel c with the fused configuration in panel d. These are different specimens at labelled post-conceptional ages, not a time-lapse of one embryo. Panel e compares dissected pancreatic shapes; panels f–h quantify dimensions and their relationship. Displayed size is not physical size: the panel scale bars differ.\n\nThe image study below retains the original labels and supplies panel descriptions. Enlarge the figure to read the bud labels and scale bars, then return to the lesson. A series across ages supports a developmental description, while a causal signalling claim needs a perturbation experiment.\n\nTry it: Identify one observation this figure supports and one causal claim that the figure alone cannot establish."
+        },
+        {
+          "title": "Explain hepatic induction using an intervention and a readout",
+          "body": "Rossi and colleagues studied early mouse hepatic induction using embryo and tissue-culture approaches. BMP signals from the neighbouring septum-transversum region act with FGF-associated input to support the hepatic programme. This is an interaction between a responding endodermal compartment and its environment, not a list of genes detached from anatomy.\n\nBmp4 loss delayed liver-bud growth but did not simply abolish every hepatic marker. Broader BMP inhibition with noggin reduced induction in the experimental system, and BMP supplementation supported rescue; FGF2 was not an equivalent efficient replacement. The distinction matters because deleting one ligand and blocking a wider signalling family are different interventions.\n\nRead the experiment in four parts: species and stage, manipulated signal, measured response and remaining alternatives. A marker response supports a programme under those conditions; it does not prove that one ligand alone generates a complete functional human liver.\n\nTry it: Why can a single-ligand knockout differ from broader pathway inhibition without the results being contradictory?"
+        },
+        {
+          "title": "Separate biliary cell identity from building a patent duct",
+          "body": "Around developing portal regions, biliary epithelial organisation must progress beyond marker-positive cells to a connected tubular arrangement. Hofmann and colleagues examined Jagged1-dependent interactions in mouse liver. Their mesenchyme-associated deletion model disrupted bile-duct morphogenesis while cytokeratin-positive epithelial sheets remained.\n\nThat separates two outcomes: acquiring an epithelial or biliary-associated identity and arranging those cells into ducts. A positive stain cannot substitute for observing a lumen, polarity and continuity. The study also compared an endothelial deletion approach; the findings supported a role for the portal mesenchymal environment in the tested system.\n\nThe genetic tools have limits. The SM22-Cre model also showed some endothelial recombination, so it should not be described as perfectly exclusive to one mesenchymal population. Nor does the comparison establish that endothelium is irrelevant to all liver development. The useful conclusion is narrower: cell identity and tissue morphogenesis can become uncoupled.\n\nTry it: An experimental liver retains cytokeratin-positive sheets but lacks normal ducts. Which developmental outcome has failed?"
+        },
+        {
+          "title": "Understand pancreatic fate allocation as a changing competence",
+          "body": "Schaffer and colleagues investigated the opposing roles of Nkx6 factors and Ptf1a in mouse pancreatic progenitors. Their experiments linked this regulatory balance to allocation between endocrine-associated and acinar programmes. Early Nkx6.1 misexpression biased labelled progenitor descendants toward endocrine outcomes rather than simply expanding them through increased proliferation.\n\nTiming was essential: later Ptf1a-positive cells did not show the same response as early progenitors. Developmental competence means that a cell’s possible responses depend on its state and history. The same experimental instruction need not produce the same outcome at every stage.\n\nThis helps interpret lineage experiments. Record when the label or perturbation was applied, which cells were targeted and what descendants were measured. The findings are not evidence that an arbitrary mature human acinar cell can be converted into a fully functional endocrine cell by one universal switch.\n\nTry it: Why must a fate-allocation diagram include the stage at which a regulatory factor was manipulated?"
+        },
+        {
+          "title": "Use endocrine specification experiments without overstating them",
+          "body": "Gradwohl and colleagues tested Ngn3 function in mouse pancreatic development. Knockout animals lacked the four hormone-producing populations assessed in that study. Embryonic marker changes and the absence of an increased apoptotic signal supported a specification defect, rather than merely a failure to gather otherwise normal endocrine cells into islets.\n\nEarly broad Pdx1 expression persisted, showing that a pancreatic-associated marker is not equivalent to endocrine differentiation. The experiment also reported exocrine polarity and granule abnormalities; it should not be simplified to “only endocrine tissue changed.” The four tested hormone categories describe that experiment, not an exhaustive modern catalogue of every endocrine state.\n\nDistinguish a requirement from sufficiency. Loss of a factor can demonstrate that normal development depends on it under the tested conditions; it does not prove that adding the factor alone recreates the entire developmental process or mature function.\n\nTry it: Why does persistence of an early pancreatic marker not refute a later endocrine-specification defect?"
+        },
+        {
+          "title": "Connect human spatial observations to a controlled culture test",
+          "body": "The human atlas places proliferating pancreatic progenitors and differentiating insulin-positive populations in a spatial context. This tells us where cell states occur in the sampled stages. It does not turn the presence of insulin into proof of mature glucose responsiveness, or an age-associated pattern into a causal signal.\n\nThe investigators also tested PDGF-AA in cultured human pancreatic tissue. The proliferation response occurred in an explant system with its own baseline and duration. Receptor localisation in the mesenchymal compartment supported an indirect epithelial response through neighbouring tissue, rather than a simple claim that the ligand directly targeted every epithelial progenitor.\n\nTogether, mapping and perturbation answer complementary questions: where is a state found, and how does the system respond when an input changes? Culture findings should retain the medium, stage and compartment limitations; they are not a patient treatment recommendation.\n\nTry it: How would receptor localisation change your interpretation of a ligand-induced increase in epithelial proliferation?"
+        },
+        {
+          "title": "Build a practical identification and developmental explanation",
+          "body": "Use four passes. First establish the organ-level architecture: hepatocyte plates and sinusoids, folded gallbladder mucosa, or a lobulated acinar gland with islets. Second identify the compartments and their boundaries. Third relate polarity and cell organisation to the route of a secretion or exchange. Fourth state what further evidence is needed for a microscopic or developmental claim.\n\nFor liver, combine a portal neighbourhood with the plate–sinusoid pattern, then keep blood, Disse and bile separate. For pancreas, combine acini, centroacinar cells and islets across an adequate sample, then distinguish ductal and vascular exits. For gallbladder, combine the folded absorptive lining with the characteristic wall organisation rather than calling every projection a villus.\n\nFinish with a developmental sentence that explains an adult relationship: epithelial and stromal contributions differ; pancreatic buds contribute to a connected gland; biliary identity must be followed by duct morphogenesis. Name one plausible alternative and the observation that would resolve it. A research-level answer is precise about mechanism and evidence, not merely longer.\n\nTry it: Give two positive clues, one alternative and one resolving observation for a liver, gallbladder or pancreatic field."
         }
       ],
       "question": {
@@ -1258,12 +1324,56 @@
         "answer": "Exocrine secretions reach the gut through ducts. Endocrine hormones enter the circulation and act on distant targets."
       },
       "related": [
-        "nitrogen-metabolism",
-        "pdh-tca",
-        "gi-histology"
+        "gi-histology",
+        "digestive-control",
+        "foregut-development",
+        "pancreas-relations"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-05",
+      "minutes": 55,
+      "prerequisites": [
+        "microscopy",
+        "epithelia"
+      ],
+      "objectives": [
+        "Distinguish portal tracts, central veins, sinusoids, Disse and canaliculi using location and lining.",
+        "Identify gallbladder, pancreatic acini, ducts and islets with more than one positive clue.",
+        "Choose stains and controls for an architectural or material question.",
+        "Explain epithelial and supporting contributions, pancreatic buds and duct morphogenesis.",
+        "Interpret human developmental images and selected experimental evidence without conflating identity, lineage and function."
+      ],
+      "workedExample": {
+        "title": "Identify a portal tract using relationships",
+        "prompt": "A large thin-walled lumen lies beside a small muscular vessel and a cuboidal epithelial tube. Explain the neighbourhood and compare it with a central vein.",
+        "solution": [
+          "The duct and arterial branch support a portal tract; size or red cells alone would not distinguish the venous branch.",
+          "The epithelial tube is a bile duct, whereas vascular profiles have endothelial linings.",
+          "A central vein receives converging sinusoids without the same portal duct-and-artery neighbourhood.",
+          "Inspect a wider field if the crop omits the neighbouring structures; section shape alone is insufficient."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Explain hepatocyte polarity using three compartments.",
+          "answer": "Sinusoidal blood is separated from the hepatocyte exchange surface by endothelium and the space of Disse. The hepatocyte basal domain faces this exchange environment. Adjacent apical domains form bile canaliculi, which drain toward biliary channels rather than the central vein."
+        },
+        {
+          "prompt": "Distinguish a pancreatic acinus, a centroacinar cell and an islet.",
+          "answer": "An acinus is a polarised secretory epithelial unit around a small duct-connected lumen. Centroacinar cells mark the duct origin within that unit. An islet is an endocrine cluster related to capillaries, not an enlarged duct lumen."
+        },
+        {
+          "prompt": "Why is a marker-positive epithelial sheet not equivalent to a functional bile duct?",
+          "answer": "Identity, polarity, lumen formation and connected drainage are distinct outcomes. A marker can persist when morphogenesis is disrupted; architecture and appropriate functional evidence must be assessed separately."
+        }
+      ],
+      "summaryChecklist": [
+        "Use neighbourhood and wall structure before naming a vascular or duct profile.",
+        "Keep blood, perisinusoidal exchange and bile compartments separate.",
+        "Identify acinar polarity and endocrine vascular relationships.",
+        "Use stain comparisons with controls and preserved architecture.",
+        "Name the species, stage, intervention and readout of a developmental experiment.",
+        "Distinguish cell identity, lineage, tissue organisation and mature function."
+      ]
     },
     {
       "id": "renal-histology",

@@ -2600,17 +2600,21 @@
     {
       "id": "liver-pancreas",
       "route": "/library/liver-pancreas",
-      "title": "Liver and pancreas: routes and secretions",
+      "title": "Liver and pancreas: identify compartments and explain development",
       "kind": "Study lesson",
       "action": "new-comparison-or-flow",
       "components": [
-        "LessonVisuals"
+        "LessonVisuals",
+        "SystemRelationships",
+        "EducationalFigure"
       ],
       "visualIds": [
         "liver-pancreas-comparison"
       ],
-      "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Distinguish blood flow from bile flow and separate pancreatic acini from endocrine islets."
+      "figureIds": [
+        "human-pancreas-development"
+      ],
+      "rationale": "Retain the existing conceptual comparison, add four traced secretion and exchange routes, and reuse the figure viewer for an unchanged licensed human developmental figure with panel descriptions. Adult slide recognition remains a further coverage need."
     },
     {
       "id": "brain-and-csf-barriers",
