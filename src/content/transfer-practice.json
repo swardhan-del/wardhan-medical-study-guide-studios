@@ -8037,6 +8037,816 @@
       "answer": 3,
       "subject": "histology",
       "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-01",
+      "topic": "female-tract-histology-and-development",
+      "title": "Read the organ wall before naming a cell",
+      "prompt": "A crop contains columnar epithelium but no surrounding wall. Which next step best supports organ identification?",
+      "options": [
+        {
+          "text": "Name the uterus from epithelial shape alone",
+          "explanation": "Columnar epithelium occurs at several sites and cannot identify the organ alone."
+        },
+        {
+          "text": "Inspect a wider field and the relation of epithelium to stroma and muscle",
+          "explanation": "A wider field supplies the missing wall and compartment relationships."
+        },
+        {
+          "text": "Count epithelial nuclei to infer how many complete glands are present.",
+          "explanation": "Nuclei count cells in a field, not complete glands."
+        },
+        {
+          "text": "Infer the organ from stain intensity alone",
+          "explanation": "Stain intensity depends on preparation and is not an organ-specific criterion."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-02",
+      "topic": "female-tract-histology-and-development",
+      "title": "A tubal fold is a surface with a core",
+      "prompt": "Several epithelial rings appear in an oblique section of a highly folded tubal mucosa. What can be concluded immediately?",
+      "options": [
+        {
+          "text": "Every ring is an independent gland",
+          "explanation": "An oblique plane can cut the same folded surface repeatedly."
+        },
+        {
+          "text": "Every ring is a vessel",
+          "explanation": "An epithelial ring alone does not establish a vascular endothelial lumen."
+        },
+        {
+          "text": "The plane has intersected epithelial profiles; their three-dimensional continuity remains to be traced",
+          "explanation": "These are observed profiles; continuity requires additional spatial evidence."
+        },
+        {
+          "text": "The specimen must be pathological",
+          "explanation": "This pattern can arise from normal folds and section orientation."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-03",
+      "topic": "female-tract-histology-and-development",
+      "title": "A tubal fold is a surface with a core",
+      "prompt": "Which observation most directly supports a mucosal fold?",
+      "options": [
+        {
+          "text": "Epithelium covering a connective-tissue core and continuous with the luminal surface",
+          "explanation": "This arrangement identifies the surface-and-core relationship of a fold."
+        },
+        {
+          "text": "A pale nucleus",
+          "explanation": "Nuclear pallor is not a topological relationship."
+        },
+        {
+          "text": "Any circular empty space",
+          "explanation": "An empty profile may have several explanations and lacks the necessary lining context."
+        },
+        {
+          "text": "A darkly stained extracellular region",
+          "explanation": "Extracellular staining alone does not define a mucosal fold."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-04",
+      "topic": "female-tract-histology-and-development",
+      "title": "Cilia, microvilli and an unresolved border",
+      "prompt": "A fixed EM image resolves apical projections. Which additional conclusion remains unsupported by that image alone?",
+      "options": [
+        {
+          "text": "Fine apical structure is visible",
+          "explanation": "Fine structural detail is a legitimate fixed-image observation."
+        },
+        {
+          "text": "The image concerns a prepared specimen",
+          "explanation": "Preparation is part of the image method and can be stated."
+        },
+        {
+          "text": "The surface contains projections",
+          "explanation": "Visible projections support a morphological description."
+        },
+        {
+          "text": "The projections beat coordinately to transport material",
+          "explanation": "Coordinated beating and transport are functional claims that need motion or transport evidence."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-05",
+      "topic": "female-tract-histology-and-development",
+      "title": "A cell marker is evidence, not a complete identity",
+      "prompt": "A study reports occasional cells positive for both a secretory-associated marker and a ciliary marker. Which response is best?",
+      "options": [
+        {
+          "text": "Discard all overlapping cells because categories must be absolute",
+          "explanation": "Excluding measured overlap imposes a category rather than evaluating the result."
+        },
+        {
+          "text": "State the measured overlap and examine morphology, controls and biological context",
+          "explanation": "The overlap should be assessed with morphology, controls and context."
+        },
+        {
+          "text": "Conclude that every cell has one irreversible fate",
+          "explanation": "A differentiation marker does not permanently record fate."
+        },
+        {
+          "text": "Declare both antibodies invalid without examining controls",
+          "explanation": "Overlap alone does not establish reagent failure."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-06",
+      "topic": "female-tract-histology-and-development",
+      "title": "Choose preparation for the question",
+      "prompt": "Which pairing matches method to question?",
+      "options": [
+        {
+          "text": "H&E alone establishes the identity of every protein",
+          "explanation": "H&E is not a comprehensive protein-identification assay."
+        },
+        {
+          "text": "A single fixed section measures ciliary beat frequency",
+          "explanation": "A fixed section does not measure movement through time."
+        },
+        {
+          "text": "Validated immunolabelling examines localization of a selected target",
+          "explanation": "Validated immunolabelling tests localization of a selected molecular target."
+        },
+        {
+          "text": "An EM image automatically shows the entire organ wall",
+          "explanation": "An electron-microscopy field has limited spatial extent and does not automatically show the entire wall."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-07",
+      "topic": "female-tract-histology-and-development",
+      "title": "Choose preparation for the question",
+      "prompt": "Why should a fluorescence panel not be described as H&E?",
+      "options": [
+        {
+          "text": "Its colour channels represent the labelled detection scheme",
+          "explanation": "Fluorescent channels report a labelled detection scheme rather than H&E contrast."
+        },
+        {
+          "text": "Fluorescence images never contain cells",
+          "explanation": "Fluorescence can image cells and their molecular signals."
+        },
+        {
+          "text": "H&E cannot show nuclei",
+          "explanation": "Hematoxylin commonly highlights nuclei; this does not explain the method difference."
+        },
+        {
+          "text": "The two methods always use identical contrast",
+          "explanation": "The methods use different contrast principles and cannot be treated as identical."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-08",
+      "topic": "female-tract-histology-and-development",
+      "title": "Read a pathway experiment as a comparison",
+      "prompt": "After an inhibitor, the ciliated-cell fraction rises while proliferation falls. What is the strongest justified statement?",
+      "options": [
+        {
+          "text": "Every secretory cell converted directly into a ciliated cell",
+          "explanation": "Direct conversion requires lineage-resolved evidence beyond a fraction change."
+        },
+        {
+          "text": "The inhibitor changed cell representation and proliferation under the tested culture conditions",
+          "explanation": "The result is bounded by the culture conditions and measured outcomes."
+        },
+        {
+          "text": "The same effect must occur in all intact human tubes",
+          "explanation": "An intact-organ conclusion requires evidence in that context."
+        },
+        {
+          "text": "Cell survival cannot affect a fraction",
+          "explanation": "Changes in survival or expansion can change a population fraction."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-09",
+      "topic": "female-tract-histology-and-development",
+      "title": "Read a pathway experiment as a comparison",
+      "prompt": "Which added experiment most directly addresses ancestry during a phenotype change?",
+      "options": [
+        {
+          "text": "Increase image brightness",
+          "explanation": "Brightness changes do not record cell ancestry."
+        },
+        {
+          "text": "Count more pixels in the same fixed field",
+          "explanation": "More pixels improve sampling of an image, not its lineage information."
+        },
+        {
+          "text": "Replace all controls with a new stain",
+          "explanation": "Controls and a new stain do not replace a stable ancestral record."
+        },
+        {
+          "text": "Track a stable lineage label through the change",
+          "explanation": "An inherited label followed over time directly addresses which cells gave rise to descendants."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-10",
+      "topic": "female-tract-histology-and-development",
+      "title": "Fields, cells and donors are different sample units",
+      "prompt": "An assay counts 2,000 cells across seven fields from an unspecified culture source. How many independent donors does this establish?",
+      "options": [
+        {
+          "text": "2,000",
+          "explanation": "A cell count is not an independent donor count."
+        },
+        {
+          "text": "Seven",
+          "explanation": "Fields can be nested within one culture or donor."
+        },
+        {
+          "text": "The donor count cannot be inferred",
+          "explanation": "The donor count requires the sampling information; it cannot be inferred here."
+        },
+        {
+          "text": "One donor per cell type",
+          "explanation": "Cell categories do not define independent donors."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-11",
+      "topic": "female-tract-histology-and-development",
+      "title": "Fields, cells and donors are different sample units",
+      "prompt": "Three PCR wells contain aliquots of the same RNA preparation. What do they primarily assess?",
+      "options": [
+        {
+          "text": "Technical repeatability of that assay",
+          "explanation": "Aliquots from one preparation chiefly test technical repeatability."
+        },
+        {
+          "text": "Variation among three independent donors",
+          "explanation": "The aliquots do not come from three independent donors."
+        },
+        {
+          "text": "Three separate developmental stages",
+          "explanation": "Repeated wells do not create new developmental stages."
+        },
+        {
+          "text": "Three independent tissue populations",
+          "explanation": "They share the original biological preparation."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-12",
+      "topic": "female-tract-histology-and-development",
+      "title": "Separate glands, stroma and muscle",
+      "prompt": "A gland-only epithelial organoid expresses a hormone-responsive protein. What does this alone demonstrate?",
+      "options": [
+        {
+          "text": "Stromal decidualization",
+          "explanation": "Stromal decidualization requires evidence about stromal cells."
+        },
+        {
+          "text": "Whole-uterus contractile function",
+          "explanation": "The epithelial model does not measure uterine-wall contraction."
+        },
+        {
+          "text": "Successful implantation",
+          "explanation": "Implantation is a different functional outcome requiring additional evidence."
+        },
+        {
+          "text": "An epithelial response in the studied model",
+          "explanation": "The experiment directly establishes an epithelial response in the studied culture."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-13",
+      "topic": "female-tract-histology-and-development",
+      "title": "Compare a pattern, not an isolated calendar clue",
+      "prompt": "Which answer is strongest when comparing two endometrial fields?",
+      "options": [
+        {
+          "text": "Assign an exact cycle day from one round gland",
+          "explanation": "One profile and its section orientation cannot support an exact date."
+        },
+        {
+          "text": "Compare gland shape, luminal appearance and stroma, while stating sampling limits",
+          "explanation": "Multiple compartments and explicit sampling limits make the comparison inspectable."
+        },
+        {
+          "text": "Ignore stroma because only glands respond",
+          "explanation": "Stroma is part of the tissue response and should not be ignored."
+        },
+        {
+          "text": "Assume all people have an identical 28-day schedule",
+          "explanation": "A fixed calendar cannot be imposed on every biological specimen."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-14",
+      "topic": "female-tract-histology-and-development",
+      "title": "A gland profile is not a complete gland",
+      "prompt": "What did tissue clearing and reconstruction add to routine two-dimensional sections?",
+      "options": [
+        {
+          "text": "Proof of every epithelial cell ancestor",
+          "explanation": "Spatial reconstruction does not irreversibly label ancestors."
+        },
+        {
+          "text": "Complete sampling of every uterus",
+          "explanation": "The study sampled tissue and did not map every uterus."
+        },
+        {
+          "text": "Evidence about gland connectivity, branching and spatial relationships",
+          "explanation": "The method adds evidence about branching, connectivity and spatial relationships."
+        },
+        {
+          "text": "A direct measurement of fertility",
+          "explanation": "Fertility was not measured by the reconstruction."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-15",
+      "topic": "female-tract-histology-and-development",
+      "title": "A gland profile is not a complete gland",
+      "prompt": "Why should the reconstructed gland patterns not be assigned unchanged to every age group?",
+      "options": [
+        {
+          "text": "The cohort was selected hysterectomy material with age and sampling limits",
+          "explanation": "The selected cohort and tissue sampling limit generalization to other groups."
+        },
+        {
+          "text": "The study contained no human tissue",
+          "explanation": "The reported reconstruction included human tissue."
+        },
+        {
+          "text": "Branching can never occur in glands",
+          "explanation": "Branching is one of the structures demonstrated by the study."
+        },
+        {
+          "text": "Light-sheet microscopy always destroys all morphology",
+          "explanation": "The purpose of the method was to recover morphology; limitations are more specific than total destruction."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-16",
+      "topic": "female-tract-histology-and-development",
+      "title": "A retained network and a regeneration hypothesis",
+      "prompt": "Basal gland networks remain in sampled menstrual tissue. Which statement goes beyond that observation?",
+      "options": [
+        {
+          "text": "Basal structures were visible in those samples",
+          "explanation": "Visibility of basal structures is an observation supported by the sampled tissue."
+        },
+        {
+          "text": "The structures were near the muscular wall",
+          "explanation": "Their position can be described spatially."
+        },
+        {
+          "text": "Their arrangement can inform a regeneration hypothesis",
+          "explanation": "The architecture can motivate a hypothesis without proving its cellular mechanism."
+        },
+        {
+          "text": "Every later functional-layer cell descended from one specifically identified basal stem cell",
+          "explanation": "A specific ancestry claim requires additional lineage or clonal evidence."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-17",
+      "topic": "female-tract-histology-and-development",
+      "title": "Hormone response needs defined readouts",
+      "prompt": "A transcript increases after hormone treatment. Which result would add a different type of evidence?",
+      "options": [
+        {
+          "text": "Replot the same transcript measurements with a different vertical scale.",
+          "explanation": "Repeating the same display does not add an independent measurement type."
+        },
+        {
+          "text": "A suitable protein or secretion measurement with a comparator",
+          "explanation": "A controlled protein or secretion readout tests another level of the proposed response."
+        },
+        {
+          "text": "Use a predicted transcription-factor binding site as a direct secretion measurement.",
+          "explanation": "A predicted regulatory sequence concerns possible transcriptional control, not measured secreted output."
+        },
+        {
+          "text": "Assuming protein output is identical to RNA abundance",
+          "explanation": "RNA abundance and protein or secreted output need not change identically."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-18",
+      "topic": "female-tract-histology-and-development",
+      "title": "The cervix joins different epithelial environments",
+      "prompt": "Which combination best supports a cervical epithelial junction?",
+      "options": [
+        {
+          "text": "An isolated dark nucleus and a vessel",
+          "explanation": "Those features do not establish an epithelial junction."
+        },
+        {
+          "text": "A mucus droplet without tissue context",
+          "explanation": "Mucus alone lacks the needed surface and organ context."
+        },
+        {
+          "text": "A continuous transition between columnar and nonkeratinized stratified squamous mucosa with cervical context",
+          "explanation": "A continuous transition plus cervical context supports the interpretation."
+        },
+        {
+          "text": "Any two epithelial crops from separate specimens",
+          "explanation": "Separate specimens do not establish a junction within one tissue."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-19",
+      "topic": "female-tract-histology-and-development",
+      "title": "Identify nonkeratinized squamous mucosa with context",
+      "prompt": "Pale epithelial cytoplasm appears on a routine slide. What is the appropriate chemical interpretation?",
+      "options": [
+        {
+          "text": "A specific stored molecule is not established without an appropriate method and control",
+          "explanation": "An appropriate chemical method and control are needed to identify a stored constituent."
+        },
+        {
+          "text": "The appearance proves glycogen in every cell",
+          "explanation": "Pale cytoplasm is not specific for glycogen."
+        },
+        {
+          "text": "All pale areas are mucus",
+          "explanation": "Different biological and technical factors can create pale regions."
+        },
+        {
+          "text": "All clear cytoplasm is a technical error",
+          "explanation": "Clear appearance can have biological as well as technical causes."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-20",
+      "topic": "female-tract-histology-and-development",
+      "title": "Develop the epithelium and its surroundings together",
+      "prompt": "Which pairing captures two distinct developmental processes?",
+      "options": [
+        {
+          "text": "Mucosal folding and the same folding renamed",
+          "explanation": "Renaming one event does not identify two developmental processes."
+        },
+        {
+          "text": "Gland outgrowth and stromal or smooth-muscle differentiation",
+          "explanation": "Epithelial outgrowth and surrounding-tissue differentiation are distinct changes."
+        },
+        {
+          "text": "Duct fusion and an automatic adult endocrine response",
+          "explanation": "Fusion does not automatically establish an adult hormone response."
+        },
+        {
+          "text": "A marker change and certain ancestry",
+          "explanation": "A marker change and ancestry are different kinds of evidence."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-21",
+      "topic": "female-tract-histology-and-development",
+      "title": "Fusion, lumen formation and regional maturation differ",
+      "prompt": "A common canal is present after duct fusion. Which conclusion still needs separate evidence?",
+      "options": [
+        {
+          "text": "The observed luminal geometry differs from two separate ducts",
+          "explanation": "The changed geometry is directly observable."
+        },
+        {
+          "text": "The specimen contains an epithelial structure",
+          "explanation": "The epithelial structure is part of the morphological description."
+        },
+        {
+          "text": "The common canal can be described morphologically",
+          "explanation": "The canal can be described from the sections."
+        },
+        {
+          "text": "All region-specific adult glands and walls have completed maturation",
+          "explanation": "Regional gland and wall maturation require observations beyond fusion."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-22",
+      "topic": "female-tract-histology-and-development",
+      "title": "Changing markers do not settle human cell ancestry",
+      "prompt": "Why is a changing PAX2/FOXA1 boundary not an irreversible lineage record?",
+      "options": [
+        {
+          "text": "Neither molecule can ever be detected",
+          "explanation": "The issue is how expression relates to ancestry, not whether detection is impossible."
+        },
+        {
+          "text": "Markers prove all cells are unrelated",
+          "explanation": "Markers do not prove that cells lack shared ancestry."
+        },
+        {
+          "text": "Detectable expression can change with cell state and context",
+          "explanation": "Expression can change; an ordinary stain is not an inherited lineage record."
+        },
+        {
+          "text": "Only ordinary H&E can trace ancestry",
+          "explanation": "H&E describes morphology and is not a permanent ancestry label."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-23",
+      "topic": "female-tract-histology-and-development",
+      "title": "Changing markers do not settle human cell ancestry",
+      "prompt": "A mouse lineage experiment suggests one developmental contribution. How should it be used in a human lesson?",
+      "options": [
+        {
+          "text": "Identify the species and test whether human evidence supports the same inference",
+          "explanation": "Keep the species and test the inference against human observations."
+        },
+        {
+          "text": "Present it as direct human proof",
+          "explanation": "An animal experiment is not direct human evidence."
+        },
+        {
+          "text": "Discard all animal evidence without examination",
+          "explanation": "Animal experiments can be informative when their scope is retained."
+        },
+        {
+          "text": "Replace human observations with an unqualified fixed fraction",
+          "explanation": "An unqualified fixed fraction would overstate the available human evidence."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-24",
+      "topic": "female-tract-histology-and-development",
+      "title": "Build an answer that can be checked",
+      "prompt": "Which answer structure is easiest for a student or reviewer to check?",
+      "options": [
+        {
+          "text": "An organ name followed by an unsupported certainty score",
+          "explanation": "An unsupported certainty score hides rather than tests the reasoning."
+        },
+        {
+          "text": "Observation, interpretation, supported explanation and a specific limitation",
+          "explanation": "This sequence separates evidence from interpretation and missing information."
+        },
+        {
+          "text": "A long list of stains without a question",
+          "explanation": "A stain list does not establish why each method is useful."
+        },
+        {
+          "text": "A molecular pathway name unrelated to the specimen",
+          "explanation": "An unrelated pathway name does not explain the specimen."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-25",
+      "topic": "female-tract-histology-and-development",
+      "title": "A paired stain comparison",
+      "prompt": "In a hypothetical glandular-material study, a component is PAS-positive before digestion and loses its reaction after diastase. The paired tissue remains intact and the glycogen control behaves as expected. Which interpretation is best supported?",
+      "options": [
+        {
+          "text": "The result proves the specimen was taken on one exact cycle day.",
+          "explanation": "Chemical composition does not independently establish a precise cycle date."
+        },
+        {
+          "text": "The corresponding digestible component is consistent with a glycogen contribution.",
+          "explanation": "Loss after effective digestion, with matched tissue and appropriate controls, supports that component-level interpretation."
+        },
+        {
+          "text": "All remaining PAS-positive material must be one specific type of mucin.",
+          "explanation": "Persistence is not a unique identity test for every alternative PAS-positive material."
+        },
+        {
+          "text": "The original H&E photograph alone already proved this chemical identity.",
+          "explanation": "The additional controlled histochemical comparison supplied evidence that routine appearance lacked."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-26",
+      "topic": "female-tract-histology-and-development",
+      "title": "A negative test with a failed positive control",
+      "prompt": "Both the test tissue and a known glycogen-containing control are negative with PAS before digestion. What should happen before interpreting the test as absence of glycogen?",
+      "options": [
+        {
+          "text": "Report absence because both slides agree.",
+          "explanation": "Agreement with a failed positive control is not evidence of assay validity."
+        },
+        {
+          "text": "Infer that the test material must instead be lipid.",
+          "explanation": "An invalid negative result does not establish a different chemical identity."
+        },
+        {
+          "text": "Check the procedure and tissue integrity, then obtain a valid controlled comparison.",
+          "explanation": "The missing expected control reaction prevents a biological interpretation of the negative test."
+        },
+        {
+          "text": "Use the digital colour balance to make the control appear positive.",
+          "explanation": "Changing the display cannot repair a failed chemical reaction or validate the assay."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-27",
+      "topic": "female-tract-histology-and-development",
+      "title": "Regional architecture",
+      "prompt": "Two intact uterine-tube sections have different proportions. One has elaborate branched mucosal folds and a relatively thin muscle coat; the other has fewer folds and more prominent muscle. Which comparison best fits those observations?",
+      "options": [
+        {
+          "text": "The first is more consistent with an ampullary pattern and the second with an isthmic pattern.",
+          "explanation": "Those combined architectural tendencies support the regional comparison, provided sampling and orientation are considered."
+        },
+        {
+          "text": "The first must be an endometrial gland because it contains many epithelial profiles.",
+          "explanation": "Repeated profiles can arise from branched folds of one tubal surface; surrounding wall and continuity matter."
+        },
+        {
+          "text": "The second must be vaginal mucosa because its muscle is prominent.",
+          "explanation": "Vaginal identification also requires the appropriate stratified squamous mucosa and wall context."
+        },
+        {
+          "text": "The two must be the same segment at different cycle days because both contain muscle.",
+          "explanation": "Muscle is shared across regions; it does not establish identical location or an exact temporal sequence."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-28",
+      "topic": "female-tract-histology-and-development",
+      "title": "Describe the vacuole before interpreting it",
+      "prompt": "An endometrial field shows cytoplasmic clearing below the nuclei in several gland profiles, together with an early secretory architectural pattern. Which statement best joins morphology and chemical evidence?",
+      "options": [
+        {
+          "text": "The clearing proves that every white space in the section contains glycogen.",
+          "explanation": "Vacuoles, lumens and preparation spaces have different explanations; a single appearance is not chemically specific."
+        },
+        {
+          "text": "The combination supports an early secretory interpretation; controlled histochemistry is needed to test a glycogen claim.",
+          "explanation": "Pattern recognition and chemical identification are different levels of evidence, and both can be stated clearly."
+        },
+        {
+          "text": "Basal clearing demonstrates that the surrounding stromal cells have decidualized.",
+          "explanation": "The observation is in gland epithelium; stromal differentiation requires observations of the stromal compartment."
+        },
+        {
+          "text": "A subnuclear vacuole identifies an exact calendar date regardless of hormonal history.",
+          "explanation": "Morphology supports a phase pattern with variation and sampling limits, not an independent exact date."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-29",
+      "topic": "female-tract-histology-and-development",
+      "title": "A squamous field in its organ context",
+      "prompt": "A section contains nonkeratinized stratified squamous mucosa. A wider view shows continuity with mucus-secreting columnar lining, branched gland profiles and a collagen-rich wall. Which interpretation best integrates the added information?",
+      "options": [
+        {
+          "text": "Normal vaginal mucosa with its intrinsic mucus glands.",
+          "explanation": "Normal vaginal mucosa is gland-free; the wider glandular and junctional context needs a different explanation."
+        },
+        {
+          "text": "Endometrial functionalis, identified solely by gland presence.",
+          "explanation": "Gland presence alone does not establish uterine-body endometrium; the junction and wall pattern are relevant."
+        },
+        {
+          "text": "A cervical region containing a squamocolumnar transition.",
+          "explanation": "The continuous epithelial change, glandular context and connective-tissue-rich wall together support a cervical interpretation."
+        },
+        {
+          "text": "A tubal mucosal fold cut through a secretory region.",
+          "explanation": "Normal tubal lining is simple columnar; the stratified squamous transition is not its usual architectural pattern."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "female-practical-30",
+      "topic": "female-tract-histology-and-development",
+      "title": "Basalis and myometrium are different compartments",
+      "prompt": "A uterine section includes gland-containing mucosa directly adjacent to whorled smooth-muscle bundles. Which description correctly locates the retained basal compartment?",
+      "options": [
+        {
+          "text": "It is the deepest smooth-muscle layer, because basal means muscular.",
+          "explanation": "Basalis names a mucosal compartment; the muscular wall is myometrium."
+        },
+        {
+          "text": "It is every gland profile seen in the field, independent of depth.",
+          "explanation": "Glands extend through different mucosal depths; profile identity alone does not locate the basal compartment."
+        },
+        {
+          "text": "It is the serosal lining outside the entire wall.",
+          "explanation": "The serosa is an external covering, spatially separate from the mucosa–muscle interface."
+        },
+        {
+          "text": "It is basal endometrium near the myometrial boundary, distinct from the adjacent muscle.",
+          "explanation": "Location and tissue composition together identify the compartment relevant to mucosal retention and renewal."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/female-tract-histology-and-development#apply-the-concept"
     }
   ]
 }

@@ -5200,6 +5200,185 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "female-tract-histology-and-development",
+      "title": "Female reproductive tract: slides, staining and development",
+      "subject": "histology",
+      "topic": "Female-tract architecture, staining, organoids and development",
+      "slug": "female-tract-histology-and-development",
+      "learnerLevel": "Medical sciences: tissue practical to experimental interpretation",
+      "objectives": [
+        "Orient from organ wall to epithelial surface before identifying a field.",
+        "Distinguish a tubal mucosal fold from a uterine gland using spatial relationships.",
+        "Compare endometrial gland and stromal patterns without assigning an unsupported cycle day.",
+        "Explain what H&E, PAS/diastase, immunolabelling and electron microscopy can test.",
+        "Connect adult folds, glands and fibromuscular walls with separate developmental processes.",
+        "Distinguish phenotype, ancestry and function in human tissue and organoid experiments."
+      ],
+      "sources": [
+        {
+          "title": "Turco et al. — hormone-responsive human endometrial organoids (2017)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5410172/",
+          "publisherOrAuthor": "Turco et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Kessler et al. — Notch and Wnt in human fallopian-tube organoids (2015)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4686873/",
+          "publisherOrAuthor": "Kessler et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Robboy et al. — human female reproductive-tract development (2017)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5712241/",
+          "publisherOrAuthor": "Robboy et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Yamaguchi et al. — three-dimensional human endometrial architecture (2021)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7995615/",
+          "publisherOrAuthor": "Yamaguchi et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Duke — female reproductive histology practical",
+          "url": "https://histology.oit.duke.edu/NormalBody/FemaleRepro/FemaleRepro.html",
+          "publisherOrAuthor": "Duke",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia — human uterine H&E practical",
+          "url": "https://histologylab.ctl.columbia.edu/lab15/uterus/",
+          "publisherOrAuthor": "Columbia",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Basel — cervical epithelial junction",
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/fortpflanzungsorgane-weiblich-anatomische-mikroskopie-46/vaginal-portion-of-the-cervix-1854",
+          "publisherOrAuthor": "University of Basel",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Utah WebPath — special stains and PAS specificity",
+          "url": "https://webpath.med.utah.edu/HISTHTML/STAINS/STAINS.html",
+          "publisherOrAuthor": "University of Utah WebPath",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Washington University — PAS principle and quality assurance",
+          "url": "https://neuromuscular.wustl.edu/pathol/histol/pas.htm",
+          "publisherOrAuthor": "Washington University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Leica Biosystems — paired PAS and diastase interpretation",
+          "url": "https://www.leicabiosystems.com/knowledge-pathway/special-stains-which-one-why-and-how/",
+          "publisherOrAuthor": "Leica Biosystems",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University — tubal wall and regional architecture",
+          "url": "https://histology.siu.edu/erg/RE015b.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Basel — uterine-tube wall, folds and preparation",
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/fortpflanzungsorgane-weiblich-anatomische-mikroskopie-46/fallopian-tube-uterine-tube-280",
+          "publisherOrAuthor": "University of Basel",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brelje and Sorenson — proliferative uterine wall and vessels, MH 165",
+          "url": "https://histopathology.pennstatehealth.net/slideview/MH-165-uterus/18-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brelje and Sorenson — early secretory endometrium, MHS 253",
+          "url": "https://histopathology.pennstatehealth.net/slideview/MHS-253-uterus/18-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brelje and Sorenson — mid-secretory endometrium, MHS 254",
+          "url": "https://histopathology.pennstatehealth.net/slideview/MHS-254-uterus/18-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brelje and Sorenson — cervical mucosa and wall, MH 172",
+          "url": "https://histopathology.pennstatehealth.net/slideview/MH-172-cervix/18-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brelje and Sorenson — vaginal mucosa and wall, MH 173",
+          "url": "https://histopathology.pennstatehealth.net/slideview/MH-173-vagina/18-slide-1.html",
+          "publisherOrAuthor": "Brelje and Sorenson",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Four separately sourced photographs and all 16 region positions reviewed in the rendered lesson. Keyboard controls, image failure, 320px text enlargement and byte-exact downloads passed local checks; release verification is a separate gate.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted source and editorial review; independent medical peer review remains outstanding.",
+        "Four separate specimens do not constitute one longitudinal series or matched magnifications.",
+        "Exact species, preparation and scale are not invented when missing from image-source metadata.",
+        "The PAS/diastase comparison is hypothetical; routine photographs do not establish the chemical result.",
+        "Organoids and developmental marker distributions do not by themselves prove intact-organ function or irreversible cell ancestry.",
+        "No held research video or restricted textbook/course image is published.",
+        "Original questions are not official NBME items or validated examination grading."
+      ],
+      "reviewEvidenceIds": [
+        "female-practical-editorial-20261106",
+        "female-practical-visual-20261106",
+        "female-practical-assessment-20261106",
+        "female-practical-accessibility-20261106",
+        "female-practical-readability-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia"
+        ],
+        "related": [
+          "reproductive-histology",
+          "ovary-uterine-tube",
+          "uterus-support-vessels",
+          "epithelia",
+          "placenta",
+          "mammary-histology-and-development"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

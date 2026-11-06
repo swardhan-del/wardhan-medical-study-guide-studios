@@ -1,6 +1,51 @@
 import styles from "./endocrine-development-map.module.css";
 
 const maps: Record<string, { title: string; tracks: { label: string; stages: { label: string; question: string; explanation: string }[] }[] }> = {
+  "female-tract-histology-and-development": {
+  "title": "From paired ducts to region-specific mucosa and wall",
+  "tracks": [
+    {
+      "label": "Epithelial geometry and regional structures",
+      "stages": [
+        {
+          "label": "Paired ductal organization",
+          "question": "Which regions remain paired?",
+          "explanation": "The cranial Müllerian-duct portions contribute to the uterine tubes. More caudal regions participate in fusion and the uterovaginal canal; naming origin does not establish mature function."
+        },
+        {
+          "label": "Apposition, fusion and a common canal",
+          "question": "Is fusion equivalent to differentiation?",
+          "explanation": "No. Fusion changes geometry and luminal relationships. The human serial-section evidence does not by itself identify every molecular cause."
+        },
+        {
+          "label": "Regional folds and gland outgrowth",
+          "question": "Are fetal structures miniature adult organs?",
+          "explanation": "Mucosal plication and glandular outgrowth develop alongside regional tissue organization. Their appearance and later hormone responsiveness are separate questions."
+        }
+      ]
+    },
+    {
+      "label": "Surrounding tissue, mature phenotype and evidential limits",
+      "stages": [
+        {
+          "label": "Stromal and muscular differentiation",
+          "question": "What changes outside the lining?",
+          "explanation": "Surrounding mesenchymal tissue acquires stromal and fibromuscular organization. This is distinct from changing epithelial shape."
+        },
+        {
+          "label": "Regional epithelial phenotype",
+          "question": "Does a marker specify ancestry?",
+          "explanation": "Markers describe detectable phenotype in sampled tissue. Changing PAX2/FOXA1 distributions motivate developmental questions but are not an irreversible human lineage trace."
+        },
+        {
+          "label": "Adult cyclic and functional response",
+          "question": "What must a functional claim measure?",
+          "explanation": "Gland secretion, stromal response, muscular activity and ciliary transport are different outcomes. An epithelial culture or fixed field cannot demonstrate all of them."
+        }
+      ]
+    }
+  ]
+},
   "mammary-histology-and-development": {
   "title": "Build a ductal tree, then specialize secretory units",
   "tracks": [
