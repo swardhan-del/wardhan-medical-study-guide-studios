@@ -357,28 +357,165 @@
     {
       "id": "epithelia",
       "subject": "histology",
-      "title": "Epithelia: layers, shape and function",
-      "summary": "Distinguish simple, stratified and pseudostratified epithelia and connect their structure to their job.",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "summary": "Classify linings and glands using orientation, staining and duct architecture; connect adult compartments with developmental and lineage experiments.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "epithelium",
-        "epithelial tissue"
+        "epithelial tissue",
+        "glands",
+        "embryology",
+        "staining",
+        "salivary glands",
+        "lineage tracing"
       ],
       "source": "histology",
       "section": "Epithelial Tissue Characteristics; Epithelial Classification by Layer and Shape",
       "steps": [
         {
-          "title": "Find the two surfaces",
-          "body": "The apical surface faces a lumen or the outside. The basal surface rests on a basement membrane supported by connective tissue. Closely packed cells and relatively little extracellular matrix distinguish an epithelial sheet from its supporting stroma."
+          "title": "Find the compartment before naming the epithelium",
+          "body": "Start at low magnification. Find a surface or a lumen, follow its lining, then locate the supporting connective tissue. A crowded field of purple nuclei is not enough to identify an epithelium: lymphoid tissue is also cellular. The stronger evidence is an organized sheet with a consistent relationship to a boundary. Next examine a well-oriented segment at higher magnification. Identify the luminal or free side, the opposite basal interface, and neighboring cells along the sheet.\n\nThis sequence separates observation from interpretation. Write “a continuous lining with tall cells beside a lumen” before writing “simple columnar epithelium.” The first statement records evidence that another student can inspect; the second is a classification that must fit it. Supporting stroma may contain vessels, immune cells and fibers. Their presence beside a lining does not place them within its epithelial layer.",
+          "practice": {
+            "prompt": "A dense cellular region has no clear lumen or surface. Can you identify it as epithelium from nuclear density alone?",
+            "feedback": "No. Find the architectural boundary and cellular relationships first; cellularity alone does not distinguish epithelium from lymphoid tissue."
+          }
         },
         {
-          "title": "Count layers, then name the surface cells",
-          "body": "Simple epithelium has one cell layer. Stratified epithelium has several and is named by the superficial cells. Pseudostratified epithelium appears multilayered because nuclei sit at different heights, but every cell contacts the basement membrane."
+          "title": "Count cellular layers, not rows of nuclei",
+          "body": "Simple epithelium has one cellular layer. Stratified epithelium has multiple layers and is named using the shape of its superficial cells. Pseudostratified epithelium can show nuclei at several heights even though its cells contact the basal interface; not all reach the lumen. A single section may not show every thin basal process, so the diagnosis requires a suitable field and contextual features rather than a claim that every contact has been directly seen.\n\nChoose a segment cut approximately perpendicular to the surface. Compare the basal and apical boundaries across adjacent cells. Nuclear height is useful evidence, but it is not the definition of a layer. In a stratified lining, deeper cells can be cuboidal while surface cells are flattened. Naming that tissue “cuboidal” from its basal row misses the convention and the functional organization.",
+          "practice": {
+            "prompt": "Several nuclear rows are visible, but the section is oblique. What should you do before calling the lining stratified?",
+            "feedback": "Find a better-oriented segment and trace basal-to-apical relationships. Nuclear rows in one oblique field are insufficient."
+          }
         },
         {
-          "title": "Connect architecture to function",
-          "body": "Thin squamous cells suit exchange, as in alveoli. Cuboidal or columnar cells often support absorption and secretion. Multiple layers protect surfaces exposed to friction. Urothelium is a specialized stratified lining that accommodates urinary-tract distension."
+          "title": "Distinguish endothelium, mesothelium and other thin linings",
+          "body": "Squamous describes flattened cell shape; it does not identify a unique organ. Vascular endothelium lines blood and lymphatic vessels. Mesothelium covers the pleural, pericardial and peritoneal surfaces. Both can look like a very thin line with occasional nuclear bulges in section, yet their locations are different. Use the surrounding wall and the space being lined to distinguish them. Red cells inside a lumen support a blood-vessel interpretation, but an empty lumen does not exclude a vessel.\n\nA surface view and a cross-section answer different questions. Looking down on a sheet can reveal polygonal cell boundaries; cutting across that sheet emphasizes its small thickness. Do not require the same apparent cell shape in both views. Likewise, a flattened nucleus alone does not prove that the complete cell or the tissue is squamous epithelium.",
+          "practice": {
+            "prompt": "A thin cell sheet covers the outside of an abdominal organ. Is “endothelium” the appropriate name?",
+            "feedback": "The serosal surface is lined by mesothelium. Endothelium names the vascular lining in this comparison."
+          }
+        },
+        {
+          "title": "Read polarity through the secretory and absorptive apparatus",
+          "body": "Cuboidal and columnar describe proportions in a suitable section, not a fixed molecular identity. Ask what is concentrated at the apical and basal poles. In pancreatic acinar cells, basal basophilia reflects abundant rough endoplasmic reticulum, whereas apical secretory granules occupy the pole facing the small lumen. This polarized arrangement makes directional protein secretion intelligible: production and processing do not occur randomly throughout an unorganized cluster.\n\nIn absorptive epithelia, an apical brush border and basal or lateral membrane specializations support transport, but routine microscopy does not reveal each transporter. Cell boundaries may also be difficult to trace where neighboring membranes interdigitate. Describe the visible border and organelle-related staining, then state the functional inference with its limits. A pink cytoplasm by itself does not identify a particular enzyme, and a visible apical band does not resolve individual molecular components.",
+          "practice": {
+            "prompt": "Why is “pink apical material therefore a named digestive enzyme” an overclaim?",
+            "feedback": "H&E shows a staining pattern and compartment. Identifying a particular enzyme requires additional specific evidence."
+          }
+        },
+        {
+          "title": "Use surface differentiation and regional context",
+          "body": "A stratified squamous lining is recognized by its superficial flattened cells, not merely by its thickness. Compare whether surface cells retain nuclei and whether a conspicuous keratinized surface layer is present. Then relate the observation to the organ and preparation. A surface can be torn off during sectioning, so an incomplete specimen may remove the very feature needed for classification.\n\nPseudostratified respiratory epithelium commonly combines cells at different nuclear heights with a ciliated apical border and secretory cells. Urothelium requires a different interpretation: its superficial cells and apparent thickness change with distension. Do not rename a distended urothelial lining as ordinary stratified squamous epithelium simply because the surface has flattened. Use the existing renal-histology comparison to examine distension across fields. The useful habit is to combine location, layer relationships and specializations rather than memorizing one isolated silhouette.",
+          "practice": {
+            "prompt": "Which observation is missing if a torn stratified lining has no preserved free surface?",
+            "feedback": "The shape and differentiation of the superficial cells; these are needed for a confident subtype assignment."
+          }
+        },
+        {
+          "title": "Recognize a sectioning trap before inventing a new tissue type",
+          "body": "A three-dimensional tube, fold or gland is sampled by a thin two-dimensional plane. An oblique cut crosses more of the lining and can place nuclei at several apparent levels. A tangential cut may produce a patch of cells without an obvious lumen. A folded surface can therefore resemble a solid nest or a thicker lining when viewed in isolation.\n\nUse a reconciliation test: follow the same structure into a neighboring, better-oriented segment. If the apparent multilayered patch becomes a one-cell-thick lining as the section approaches a perpendicular plane, geometry is a better explanation than an abrupt tissue change. State what the image supports: “compatible with tangential sectioning” is more defensible than claiming a complete three-dimensional reconstruction from one field. Serial sections or an independently oriented preparation can resolve remaining uncertainty. This reasoning is especially useful in folded mucosa and closely packed secretory units.",
+          "practice": {
+            "prompt": "One part of a folded gallbladder lining looks multilayered while a nearby perpendicular segment is one cell thick. What explanation should be tested first?",
+            "feedback": "Section orientation. Trace continuity before concluding that two epithelial types are present."
+          }
+        },
+        {
+          "title": "Interpret PAS and Alcian blue by location and controls",
+          "body": "A stain is a chemical readout, not an organ label. PAS can highlight several carbohydrate-rich structures, including glycogen, some mucins and basement-membrane material. Locate the reaction: an intracellular apical pool, a luminal secretion and a thin basal line imply different structures even if their colors are similar. PAS positivity alone does not prove that a cell is a goblet cell or that the material is glycogen.\n\nDiastase pretreatment helps test whether a PAS-positive component is attributable to glycogen: compare appropriately controlled sections before and after digestion. Persistence of staining is not, by itself, proof of one specific alternative substance. Alcian-blue interpretation depends on the staining conditions, including pH, and can help examine acidic mucins. Read the method and control result before interpreting the color. Preparation, extraction and section quality also affect what remains in the slide. These are interpretive principles; a laboratory must use its validated protocol for actual processing.",
+          "practice": {
+            "prompt": "A PAS-positive basal line and PAS-positive apical droplets share a color. Must they be the same structure?",
+            "feedback": "No. Position and morphology differ, and PAS is not specific to one substrate. A targeted control or complementary stain may be needed."
+          }
+        },
+        {
+          "title": "Classify the duct tree separately from secretory-unit shape",
+          "body": "An exocrine gland has a route from its secretory cells through a lumen toward an epithelial surface. Classify two different features separately: whether the duct system branches, and whether the secretory portions are tubular, acinar or a combination. “Simple” refers to an unbranched duct; it does not require exactly one secretory unit. Several secretory portions can converge on one unbranched duct in a simple branched gland. A compound gland has a branching duct system.\n\nThis distinction cannot always be settled from one round profile. A tubular structure cut transversely looks circular, and several profiles may belong to one coiled tube. Start with the observed section, then use serial continuity or the known organ architecture to justify the three-dimensional classification. When drawing a gland, use one visual symbol for ducts and another for secretory portions. Otherwise a decorative tree can conceal the very distinction the classification is supposed to teach.",
+          "practice": {
+            "prompt": "Three secretory branches empty into one duct that does not branch. Does the number three make the gland compound?",
+            "feedback": "No. Duct branching defines simple versus compound; branching of secretory portions is a separate feature."
+          }
+        },
+        {
+          "title": "Compare serous and mucous cells without treating color as identity",
+          "body": "Serous secretory cells commonly show basal basophilia and apical granules, consistent with abundant protein-synthetic machinery and stored secretion. Mucous cells often look pale or foamy in routine sections, with nuclei displaced toward the base. Mucin preservation and staining influence that appearance. A pale cell is therefore a starting clue, not an automatic identification.\n\nCompare several secretory units and their relation to ducts. In a mixed gland, one selected field may overrepresent one cell population. Separate three statements: “this unit appears mucous,” “this field contains many mucous units,” and “the whole gland is predominantly mucous.” Each requires a different sampling scope. Do not assign a universal percentage to all human glands from one teaching slide. Document the stain and preparation alongside the observation so that a differently prepared specimen does not appear to contradict the biology merely because it retains or extracts different material.",
+          "practice": {
+            "prompt": "Why should a gland not be classified from the palest acinus in one field?",
+            "feedback": "That unit may not represent the gland, and preparation affects pallor. Compare multiple regions, secretory patterns and duct organization."
+          }
+        },
+        {
+          "title": "Follow the salivary duct hierarchy and its function",
+          "body": "Within a salivary lobule, small intercalated ducts drain secretory units. Striated ducts are larger intralobular segments with columnar cells; their basal striations reflect organized basal membrane infoldings and mitochondria. Larger ducts run in connective-tissue partitions between lobules. Their position in the gland helps distinguish them from a similarly sized profile within a secretory cluster.\n\nThe duct is more than an inert pipe. Salivary duct cells modify the primary secretion as it passes toward the mouth. Recognition should therefore connect architecture to transport while respecting what the stain actually reveals. A basal striation is a structural clue, not a direct measurement of an ion flux. Compare the secretory unit, the small duct, the striated duct and the interlobular duct in sequence. Use the separate salivary-gland anatomy lesson for named major ducts and nerve routes, keeping microscopic transport compartments distinct from gross anatomical pathways.",
+          "practice": {
+            "prompt": "A relatively large duct sits in a connective-tissue septum between lobules. Which part of the hierarchy does its location support?",
+            "feedback": "An interlobular excretory duct. Confirm epithelial appearance and continuity rather than using diameter alone."
+          }
+        },
+        {
+          "title": "Separate a preserved arrangement from a preparation effect",
+          "body": "Serous cells may appear as crescent-shaped caps, or demilunes, around mucous secretory units in routinely prepared mixed salivary tissue. Their conspicuous arrangement is sensitive to fixation and processing; it should not be treated as an unqualified picture of how living cells occupy the unit. The correct lesson is not that every visible feature is meaningless, but that specimen preparation participates in the image.\n\nMyoepithelial cells lie at the epithelial basal interface around selected secretory units and ducts. Their contractile role differs from both luminal secretion and stromal support. Thin processes are difficult to resolve in routine H&E, so a dark nucleus near an acinus is not enough for confident identification. A preparation designed to demonstrate the cell type can provide stronger evidence. Keep the secretory cell, myoepithelial cell and surrounding connective-tissue cell distinct when interpreting a diagram or an immunostained image.",
+          "practice": {
+            "prompt": "Should a crescent-shaped serous cap be described as an exact, preparation-independent image of the living gland?",
+            "feedback": "No. Describe the observed demilune and qualify its preparation dependence."
+          }
+        },
+        {
+          "title": "Use the destination of secretion, not a single architectural stereotype",
+          "body": "Exocrine secretion is released into a lumen connected to a surface. Endocrine secretion reaches the interstitial compartment and circulation rather than an excretory duct. Endocrine tissues can have different arrangements; “endocrine means a solid cluster without any lumen” is an unsafe rule.\n\nThe thyroid makes the exception memorable. Follicular cells surround a colloid-containing lumen, yet thyroid hormone reaches the blood rather than leaving the body through a duct. Distinguish the luminal storage compartment from the eventual direction of hormone release. On a section, identify the follicular epithelial wall, the colloid and the surrounding vascular connective tissue as separate components. Cell height can vary with functional state, but one height measurement alone does not establish a clinical diagnosis. Compare multiple follicles and the preparation. This example forces a better classification: ask where secretion ultimately goes, while describing the actual architecture accurately.",
+          "practice": {
+            "prompt": "Does the presence of a colloid-filled follicular lumen make the thyroid exocrine?",
+            "feedback": "No. A follicular storage lumen is not an excretory duct to a surface; hormone ultimately enters the circulation."
+          }
+        },
+        {
+          "title": "Distinguish secretion mechanism from gland shape",
+          "body": "Merocrine release uses exocytosis without shedding the whole cell. Apocrine release involves loss of an apical portion of the cell with the product; mammary lipid secretion provides a useful example. Holocrine secretion releases the contents as the entire secretory cell breaks down, as in sebaceous glands. These labels describe release mechanisms. They are not synonyms for tubular, acinar, simple or compound architecture.\n\nExamine a sebaceous gland as a spatial maturation sequence: peripheral cells differ from more mature, lipid-rich cells approaching the outlet. Processing can remove lipid and alter the appearance of the cytoplasm. In a sweat gland, distinguish the secretory coil from its duct rather than calling every circular profile a separate gland. Historical gland names do not necessarily establish one exclusive secretion mechanism in every cell. Keep the morphological evidence, the release mechanism and the naming convention separate in a written answer.",
+          "practice": {
+            "prompt": "Can a gland be classified as both compound and merocrine?",
+            "feedback": "Yes. Compound describes duct branching, whereas merocrine describes the mechanism of secretion."
+          }
+        },
+        {
+          "title": "Map embryonic origin by compartment",
+          "body": "Epithelial morphology does not imply a single germ-layer origin. Epidermis develops from surface ectoderm. Much of the gastrointestinal and respiratory epithelial lining develops from endoderm. Vascular endothelium and serosal mesothelium are associated with mesodermal development. These examples explain why a common epithelial organization can occur in organs with different developmental histories.\n\nAvoid assigning one origin label to an entire mixed organ. A developing gut segment combines an epithelial compartment with surrounding mesenchyme; its lining, connective tissue, muscle, vessels and neural elements require distinct developmental accounts. The same discipline applies to glands that bud from a lining: identify the origin of the glandular epithelial population separately from the supporting tissue. A useful developmental map has separate columns for compartment, origin, morphogenetic event and mature function. The organ-specific embryology lessons should then add the relevant folding, budding, fusion or branching sequence rather than repeat only the germ-layer name.",
+          "practice": {
+            "prompt": "Why is “the whole gut is endoderm” inadequate?",
+            "feedback": "It collapses different compartments into the origin of the epithelial lining. Surrounding muscle, connective tissue, vessels and neural components need separate accounts."
+          }
+        },
+        {
+          "title": "Explain branching as reciprocal development, then test the explanation",
+          "body": "A branching gland requires coordinated behavior of epithelium and surrounding tissue. Distinguish the appearance of an epithelial thickening or bud, its outgrowth, subsequent branching and eventual differentiated secretory function. Seeing one of these outcomes does not demonstrate all the others.\n\nWells and colleagues tested embryonic mouse salivary tissues using recombination, removal and Fgf10 perturbation experiments. The capacity of tissue partners to support or instruct development changed with stage. In the tested Fgf10-null rudiments, a mesenchymal capsule could remain while epithelial outgrowth failed. Added Fgf10 supported outgrowth or branching in selected explants, with incomplete rescue across conditions. These observations separate mesenchymal organization from successful epithelial extension. They do not show that Fgf10 alone is the complete initiation program, or that a branched explant has become a mature functional human gland. Read the developmental stage, partner tissue and measured outcome before making a causal claim.",
+          "practice": {
+            "prompt": "A treated explant develops branches. Which additional claim is unsupported without further measurements?",
+            "feedback": "That it secretes normally as a mature human gland. Branching morphology is a narrower endpoint."
+          }
+        },
+        {
+          "title": "Read a lineage label in the correct cell population",
+          "body": "A lineage reporter records the history captured by a particular genetic labeling system; it does not automatically label only the tissue of interest. Rothova and colleagues examined oral development in mice using an endoderm-labeling strategy and comparison lineage information. Reporter-positive blood vessels were not evidence that nearby glandular epithelial cells shared the same origin. At the examined stage, major salivary gland epithelium lacked the endoderm lineage label, while positive structures such as thyroid follicular epithelium helped establish labeling in relevant endoderm-derived tissue. Minor oral glands did not all follow one pattern.\n\nThe interpretation therefore needs three checks: which cells are positive, whether appropriate positive controls label, and whether the reporter captures the developmental population being tested. An unlabeled epithelial compartment is not interpretable if the reporter failed everywhere. These mouse findings also should not be converted silently into an unrestricted statement about human salivary lineage. State the species, reporter and stage, and distinguish the experiment from simplified textbook origin tables.",
+          "practice": {
+            "prompt": "A positive vessel lies beside unlabeled gland epithelium. Can the vessel label establish the epithelial lineage?",
+            "feedback": "No. Identify the labeled compartment and evaluate the epithelial result using suitable lineage controls."
+          }
+        },
+        {
+          "title": "Connect epithelial structure to measured barrier function",
+          "body": "A junctional arrangement, an electrical measurement and a tracer experiment address different questions. Before interpreting a barrier result, identify the measured quantity and the compartments it connects. The related Cell junctions lesson develops the resistance calculation, controlled tracer comparison and selected reconstitution experiment in detail. Use that lesson to test why an intact-looking lining does not establish identical permeability for every substance.",
+          "practice": {
+            "prompt": "Which related lesson tests resistance and tracer results separately?",
+            "feedback": "Cell junctions, surface specialisations and developmental signalling contains the worked comparison and experimental evidence."
+          }
+        },
+        {
+          "title": "Build an identification answer that another student can audit",
+          "body": "For an unknown preparation, assemble a short chain of evidence: organ context; surface or lumen; layer relationships; superficial cell shape; apical and basal specializations; secretory units and ducts; staining distribution; and plausible preparation effects. Finish with the best-supported identification and one serious alternative. Explain what observation would discriminate between them. This is more useful than listing every tissue name that could resemble one isolated field.\n\nThen connect the adult compartment to a developmental process. If the structure is glandular, separate epithelial budding, interaction with surrounding tissue, branching and differentiation. If you cite an experiment, identify its model, intervention, comparison and endpoint. Finally state the limit: a static section cannot establish transport rate, a marker cannot by itself establish lineage, and an explant shape cannot prove mature organ function. These distinctions turn a recognition exercise into a defensible microscopic and developmental explanation.",
+          "practice": {
+            "prompt": "A slide answer names the tissue correctly but gives no visible evidence. What should be added?",
+            "feedback": "At least two discriminating observations, the relevant compartment and orientation, and a plausible alternative with a way to test it."
+          }
         }
       ],
       "question": {
@@ -405,39 +542,210 @@
       },
       "related": [
         "cell-junctions",
+        "salivary-glands",
+        "renal-histology",
         "respiratory-histology",
         "gi-histology"
       ],
-      "updatedAt": "2026-09-07",
-      "minutes": 12
+      "updatedAt": "2026-11-06",
+      "minutes": 50,
+      "prerequisites": [
+        "microscopy"
+      ],
+      "objectives": [
+        "Classify an epithelial lining from surfaces and cell relationships, not nuclear rows alone.",
+        "Distinguish duct branching, secretory-unit form and serous or mucous features.",
+        "Interpret PAS and other stains by location, substrate and controls.",
+        "Explain epithelial and supporting developmental contributions by compartment.",
+        "Compare budding, branching, lineage labelling and mature function without conflating them."
+      ],
+      "workedExample": {
+        "title": "Classify the duct tree before the secretory unit",
+        "prompt": "Several secretory units empty into one duct that does not branch. Explain why the word branched does not automatically make this a compound gland.",
+        "solution": [
+          "Trace the duct separately from the secretory end pieces.",
+          "Multiple secretory units can drain into one unbranched duct: this is a simple branched arrangement.",
+          "Compound describes a branching duct system.",
+          "A single tissue section may not reveal the complete topology; state that sampling limitation."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Explain how a striated duct differs from a secretory acinus.",
+          "answer": "Identify its lumen and position in the duct hierarchy. Basal infoldings and associated mitochondria support ductal modification of secretion; acinar cells show a different secretory organisation. A duct profile is not classified solely by size."
+        },
+        {
+          "prompt": "Why should embryonic origin be described by compartment?",
+          "answer": "The epithelial lining, vascular endothelium and supporting tissues can have different contributions. A lineage result in one compartment does not assign origin to every neighbouring component."
+        },
+        {
+          "prompt": "What does a positive lineage-control tissue contribute?",
+          "answer": "It helps establish that the labelling strategy worked in a relevant population. Negative labelling in a target compartment still requires the reporter, stage and sampling to be interpreted."
+        }
+      ],
+      "summaryChecklist": [
+        "Locate apical and basal boundaries before counting layers.",
+        "Separate duct branching from secretory-unit shape.",
+        "Use multiple features to identify serous, mucous and ductal profiles.",
+        "Interpret stain positivity by location and controls.",
+        "Keep endocrine classification compatible with thyroid follicular architecture.",
+        "State species, stage, tissue compartment and readout when discussing development."
+      ]
     },
     {
       "id": "cell-junctions",
       "subject": "histology",
-      "title": "Cell junctions and surface specializations",
-      "summary": "Separate sealing, anchoring and communication junctions, then distinguish microvilli from cilia.",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "summary": "Map cell–cell and cell–matrix contacts, distinguish apical specialisations, calculate barrier readouts and interpret ciliary developmental experiments.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "junctions",
         "cilia",
         "microvilli",
-        "basement membrane"
+        "basement membrane",
+        "embryology",
+        "Hedgehog",
+        "barrier measurements"
       ],
       "source": "histology",
       "section": "Cell-Cell Junctions; Free Surface Specializations; Basement Membrane",
       "steps": [
         {
-          "title": "Seal the route between cells",
-          "body": "Tight junctions regulate paracellular passage and help preserve apical-basal polarity. They are selective barriers rather than universal waterproof seals. A transporting epithelium can move substances through cells and, where permitted, between them."
+          "title": "Map the contact before naming the junction",
+          "body": "Begin with two questions: what is being connected, and which task is being performed? A cell–cell contact joins neighbouring plasma membranes; a cell–matrix contact links a cell to extracellular material. A sealing contact regulates passage around cells, an anchoring contact transmits force, and a communicating contact provides a route between cytoplasms. These categories describe different problems, so “stronger junction” is not a useful universal ranking.\n\nIn a polarised lining, first locate the lumen, lateral cell boundaries and basal attachment. Then place the proposed contact in that map. A desmosome is not a basal attachment simply because its profile lies low in a particular section. Conversely, a basal electron-dense plaque is not enough to identify a hemidesmosome unless the extracellular partner is established. State location, partner, structural evidence and remaining uncertainty.",
+          "practice": {
+            "prompt": "An anchoring plaque faces matrix rather than another cell. What distinction must your answer preserve?",
+            "feedback": "It is a cell–matrix contact. The cytoskeletal linkage and molecular evidence distinguish its subtype; it is not a desmosome between two cells."
+          }
         },
         {
-          "title": "Anchor or communicate",
-          "body": "Adherens junctions connect actin networks between cells. Desmosomes connect intermediate filaments between cells; hemidesmosomes anchor cells to the basal lamina. Gap junction channels pass small molecules and ions between neighboring cells."
+          "title": "Separate a light-microscope clue from an ultrastructural identification",
+          "body": "The apical junctional complex of many simple epithelia includes a tight junction near the lumen, an adherens junction beneath it and nearby desmosomal contacts. This is an organising model, not a rigid inventory for every cell or every section. Junctions extend in three dimensions; one ultrathin section samples only part of their arrangement.\n\nRoutine H&E can show the epithelial boundary and sometimes a terminal-bar region, but it cannot resolve the molecular components or individual junctional channels. Electron microscopy can demonstrate membrane relationships, plaques and associated filaments; immunolabelling addresses the distribution of a chosen protein. Neither method alone proves transport function. Do not label an H&E dot “connexin” or turn a cartoon into an observation. Match the claim to the resolution and method used.",
+          "practice": {
+            "prompt": "Does a visible apical border prove that tight-junction resistance is normal?",
+            "feedback": "No. Morphological location and electrical barrier function are different observations; a functional measurement is needed for the latter."
+          }
         },
         {
-          "title": "Recognize the apical apparatus",
-          "body": "Microvilli contain actin and increase surface area for absorption. Motile cilia use microtubules and dynein to move material along a surface. Stereocilia are long actin-based microvilli, despite their name; they are not ordinary motile cilia."
+          "title": "Tight junctions: selective barrier and membrane-domain boundary",
+          "body": "Tight junctions restrict and regulate the paracellular route near the apical boundary. Their strands contain claudins; occludin and scaffolding proteins such as ZO proteins participate in the junctional organisation. The membranes are closely apposed, not converted into one continuous plasma membrane. The associated boundary also helps maintain separation of apical and basolateral membrane domains.\n\nSelectivity matters more than the phrase “watertight seal”. Different claudin compositions can support different ionic conductances while restricting larger solutes. An epithelium can therefore have a clear junctional structure without being maximally resistant to every substance. Ask which ion or tracer was measured, under which conditions, and over what interval. A protein label, a strand image and a permeability result answer related but distinct questions.",
+          "practice": {
+            "prompt": "Why can a junctional strand image and a low electrical resistance coexist?",
+            "feedback": "The strands may provide selective ion pathways. Strand presence does not establish identical permeability for ions and a larger tracer."
+          }
+        },
+        {
+          "title": "Transcellular and paracellular are routes, not energy labels",
+          "body": "A transcellular journey crosses a cell’s apical and basolateral boundaries. Depending on the substance and mechanism, individual steps may involve diffusion, channels, carriers, pumps or vesicular transport. The word transcellular does not mean that every step consumes ATP. A paracellular journey passes between cells through the extracellular pathway whose properties are influenced by their junctions.\n\nDraw both routes on the same epithelial sheet. A change in total transepithelial current does not by itself identify which route changed: membrane conductance, junctional conductance and experimental conditions all need consideration. Likewise, delivery of a tracer to the opposite chamber is a measured outcome, not automatic proof of a named junctional defect. Use pathway-selective interventions and appropriate controls before assigning a mechanism.",
+          "practice": {
+            "prompt": "A solute crosses the cell through channels without direct ATP hydrolysis. Is that still transcellular?",
+            "feedback": "Yes. The term identifies the route through the cell, not whether the transport step is active."
+          }
+        },
+        {
+          "title": "Adherens junctions couple adhesion to actin organisation",
+          "body": "At an epithelial adherens junction, cadherin-based adhesion is coupled through associated proteins, including catenins, to the actin cytoskeleton. This gives neighbouring cells a mechanical relationship: changes in a cell’s cortical organisation can be transmitted across the sheet. In many epithelia the junction forms an apical belt, but the name does not require every adherens contact to have one identical shape.\n\nThis is a useful bridge to morphogenesis. Coordinated changes in cell shape can reshape a sheet without simply adding or removing cells. The presence of an adhesion protein, however, is not enough to demonstrate the force, direction or developmental consequence of that change. A mechanistic study must connect localisation with an intervention and a measured tissue response. Keep molecular association separate from proof of a particular bending mechanism.",
+          "practice": {
+            "prompt": "Which cytoskeletal system should you connect to an epithelial adherens junction?",
+            "feedback": "Actin, through associated junctional proteins. Intermediate-filament anchorage is the contrasting desmosomal pattern."
+          }
+        },
+        {
+          "title": "Desmosomes distribute mechanical stress between cells",
+          "body": "Desmosomes use desmosomal cadherins, notably desmogleins and desmocollins, with cytoplasmic plaques linked to intermediate filaments. In epithelia these filaments are keratins. The contact joins neighbouring cells; it is not a pore for cytoplasmic exchange. Its spot-like organisation differs from the simplified belt model of the zonula adherens.\n\nTo reason from an electron micrograph, identify both membranes, the intervening space, the plaques and the filaments approaching them. A cropped dense patch without these relationships is incomplete evidence. The “spiny” appearance of epidermal cells in some preparations is an indirect tissue-level clue, not a light-microscope view of individual desmosomal proteins. Preserve that distinction when explaining why a mechanically stressed epithelium benefits from distributed cell–cell anchorage.",
+          "practice": {
+            "prompt": "Would an intercellular adhesion plaque demonstrate passage of small messengers between cytoplasms?",
+            "feedback": "No. Mechanical attachment and direct cytoplasmic communication are different functions; gap-junction evidence would address the second."
+          }
+        },
+        {
+          "title": "Compare hemidesmosomes with focal adhesions",
+          "body": "Both are cell–matrix attachments, but they organise different cytoskeletal connections. A hemidesmosomal attachment links epithelial intermediate filaments to the basal extracellular environment through its adhesion complex, which includes integrins. Its name describes a resemblance in electron micrographs; it is not literally half of a cell–cell desmosome with the same transmembrane proteins.\n\nA focal adhesion links integrins and associated intracellular adaptors to actin. Thus two questions separate these attachments: which partner lies outside the cell, and which cytoskeletal system is connected inside? Do not use “integrin” alone as a subtype label. In a schematic, draw the membrane explicitly so that extracellular matrix is never mistaken for a neighbouring cytoplasm. In tissue, use adequate structural or molecular evidence before naming the attachment.",
+          "practice": {
+            "prompt": "Which distinction separates focal adhesion from hemidesmosomal attachment?",
+            "feedback": "Both face matrix, but the characteristic linkage is actin for a focal adhesion and intermediate filaments for a hemidesmosomal attachment."
+          }
+        },
+        {
+          "title": "Gap junctions connect cytoplasms, not epithelial chambers",
+          "body": "A connexin-based gap-junction channel is assembled from two opposed connexons, one contributed by each neighbouring cell. Each connexon contains six connexin subunits. The completed channel provides a route for ions and selected small molecules between cytoplasms. It is not the open extracellular space between the cells, and it does not constitute an apical-to-basal paracellular leak.\n\nUse a route diagram to avoid the common name trap: start inside cell A and finish inside cell B. A tracer applied to an external chamber asks a different question from dye introduced into one cell to test cell-to-cell transfer. Channel composition and gating matter, so avoid treating one molecular-size threshold as a universal guarantee of free passage. A protein’s presence alone does not demonstrate that all channels are open.",
+          "practice": {
+            "prompt": "Why would a chamber-to-chamber tracer experiment not directly establish gap-junction coupling?",
+            "feedback": "Gap-junction coupling concerns transfer between neighbouring cytoplasms. Chamber-to-chamber transfer tests an epithelial crossing and needs a different experimental interpretation."
+          }
+        },
+        {
+          "title": "Basement membrane is extracellular matrix, not a cell membrane",
+          "body": "The supporting layer beneath an epithelium is extracellular material. Type IV collagen networks, laminins and associated components help organise its architecture; it is not a lipid bilayer and does not contain a cytoplasm. Related specialised matrices occur around individual muscle cells and in vascular or renal structures, so position alone must be interpreted in its organ context.\n\nBasal lamina and basement membrane are not used identically in every course or method. State whether you mean an ultrastructural layer or the broader supporting region identified histologically. A PAS-positive basal outline can help locate carbohydrate-rich matrix, but PAS also labels other structures. Routine staining cannot identify every molecular component or justify an exact nanometre-layer description. Choose an ultrastructural or molecular method when the question actually requires it.",
+          "practice": {
+            "prompt": "A PAS-positive line surrounds a profile. What must be checked before naming it a particular basement-membrane component?",
+            "feedback": "Its location and tissue relationships, the stain’s lack of molecular specificity, and whether a component-specific method was performed."
+          }
+        },
+        {
+          "title": "Microvilli: surface area supported by actin",
+          "body": "Microvilli are apical membrane projections supported by actin bundles and associated proteins. In absorptive epithelia, many closely packed projections increase available surface area. A light-microscope brush or striated border is the collective appearance of that surface, not a resolved view of each filament bundle. A longitudinal and a transverse electron-microscope section of the same projection will look different.\n\nDistinguish a short, dense absorptive border from an irregular edge caused by preparation, then use location and other cellular features to support the interpretation. In renal tubules, border quality is one clue among several; in intestinal epithelium, it belongs within the villus–crypt and cell-type context. A fuzzy edge alone does not prove a specific organ or a measured absorption rate.",
+          "practice": {
+            "prompt": "Does an actin-supported apical projection have a ciliary axoneme?",
+            "feedback": "No. Microvilli and cilia are structurally different; the actin core is the relevant distinction here."
+          }
+        },
+        {
+          "title": "Stereocilia: the name does not make them cilia",
+          "body": "The long apical projections called stereocilia in the epididymal epithelium are actin-supported specialisations. They are related structurally to microvilli rather than to a microtubule-based ciliary axoneme. Their appearance must be read with the epithelial lining and duct context. Do not use length as the sole classifier: preservation, section plane and the particular tissue affect the visible profile.\n\nCompare three observations deliberately: the tissue location, the organisation of the apical border and the cytoskeletal evidence available from the method. A routine section can suggest the appropriate specialisation, while an ultrastructural question requires an appropriate image. This prevents the common mistake of assigning a motile ciliary mechanism to every long projection that happens to have “cilia” in its name.",
+          "practice": {
+            "prompt": "Would the word stereocilium justify a dynein-driven 9+2 explanation for an epididymal projection?",
+            "feedback": "No. These projections have an actin-based organisation; their name is not evidence of a motile ciliary axoneme."
+          }
+        },
+        {
+          "title": "Motile cilia: architecture, motor activity and resolution",
+          "body": "Typical motile airway cilia contain an axoneme with nine outer microtubule doublets and two central microtubules. ATP-dependent dynein activity generates relative sliding; the organised structure converts this into bending. Basal bodies anchor the cilia at the apical surface. The collective ciliary border and its basal-body region can guide light-microscope recognition, but the internal arrangement requires higher resolution.\n\nKeep the statement specific to this example. “All cilia are motile and 9+2” is not a valid rule. A primary cilium can participate in signalling, and developmental cilia must be considered in their own context. In a practical answer, separate observed border morphology from the ultrastructural mechanism you know from other evidence. Neither a fixed section nor a cartoon demonstrates the actual beat pattern in that specimen.",
+          "practice": {
+            "prompt": "Can ordinary H&E verify the two central microtubules in an airway cilium?",
+            "feedback": "No. It may show a ciliary border, but not the internal microtubule arrangement."
+          }
+        },
+        {
+          "title": "Developmental experiment: cilia, Hedgehog and Gli processing",
+          "body": "Huangfu and Anderson studied mouse embryos with altered intraflagellar transport machinery and compared them with Hedgehog-pathway mutants. Neural marker staining assessed tissue patterning; immunoblotting distinguished full-length Gli3 from its processed repressor form. Ift172 disruption affected both ventral neural specification and Gli3 processing. The combined Ift172–Smoothened mutant resembled the Ift172 mutant, supporting a requirement downstream of Smoothened in this experimental setting.\n\nThe result is more informative than “cilia switch signalling on”. Effects on activator and repressor functions can produce different consequences in neural and limb contexts. Retrograde-transport mutants also retained morphologically abnormal nodal cilia: seeing a projection was not proof of normal function. These are staged mouse genetic experiments, not a direct diagnosis in a human tissue section. Genetic ordering does not itself demonstrate physical binding between the proteins, and the paper’s proposed molecular localisation experiments were future work at publication.",
+          "practice": {
+            "prompt": "What extra information does the Gli3 immunoblot add to a neural marker image?",
+            "feedback": "It distinguishes a biochemical processing outcome from a tissue-patterning outcome. The two readouts support related but different parts of the mechanism."
+          }
+        },
+        {
+          "title": "Electrical resistance: define the measurement before comparing it",
+          "body": "Transepithelial resistance describes opposition to electrical current across an epithelial preparation under specified conditions. The cell-free support and recording system contribute background; area and experimental geometry matter. State whether the value is blank-corrected and area-normalised before comparing experiments. The reciprocal is conductance, so lower resistance means higher conductance for the same defined preparation.\n\nIn the exercise below, r is resistance divided by a reference resistance, with fixed geometry and already corrected measurements. The corresponding relative conductance is g = 1/r. Thus r = 4 gives g = 0.25, while r = 2 gives g = 0.5: conductance doubles when resistance halves. These are invented teaching values, not patient data or measurements copied from a paper. A change in total conductance still needs route-specific evidence before it is assigned to one molecular pathway.",
+          "practice": {
+            "prompt": "If relative resistance falls from 4 to 2, by what factor does the corresponding relative conductance change?",
+            "feedback": "It rises from 0.25 to 0.5, a twofold increase; resistance and conductance are reciprocals."
+          }
+        },
+        {
+          "title": "Tracer readouts ask a different permeability question",
+          "body": "A tracer experiment follows a named substance across the preparation. Its interpretation depends on identity, concentration, sampling interval, area and the reported quantity. A normalised amount transferred over an interval is not automatically a permeability coefficient. The exercise’s t value is a tracer-transfer index relative to its own reference; it has no claim to be a universal measure of barrier health.\n\nCompare A (r = 4, t = 1) with B (r = 2, t = 1): electrical conductance increases while the stated tracer index is unchanged. Compare A with C (r = 4, t = 2): the tracer index increases without a resistance change. Neither comparison identifies a particular claudin, injury or route. Exact equality is a property of this fictional dataset; in real experiments, “no significant difference” does not establish equivalence without an appropriate design and uncertainty analysis.",
+          "practice": {
+            "prompt": "Can an unchanged tracer index prove that every aspect of the barrier is unchanged?",
+            "feedback": "No. It describes that tracer readout under those conditions; electrical, other-solute and pathway-specific results may differ."
+          }
+        },
+        {
+          "title": "Read a reconstitution study without turning it into a diagnosis",
+          "body": "Furuse and colleagues used engineered MDCK II epithelial cells lacking five major claudins and reintroduced individual claudins to compare junctional structures and barrier measurements. This was not deletion of every claudin gene. In the claudin-2 reconstitution, strand formation and reduced fluorescein passage could occur without the resistance increase seen with other reconstitutions. Electrical and tracer results therefore need to be reported separately.\n\nRead the methods alongside the figures: resistance was corrected for the support and area; fluorescein was a specified tracer measured over a defined interval. The strength of the experiment is the controlled comparison between engineered cell conditions. Its limit is equally important: a cultured epithelial model does not establish a disease mechanism in a patient, and one tracer cannot represent all molecular sizes. Use the study to test a mechanistic explanation, not to assign a clinical label from a single number.",
+          "practice": {
+            "prompt": "Which conclusion is supported by a difference between electrical and tracer results?",
+            "feedback": "The readouts probe different properties and must be interpreted separately. They do not supply an all-purpose ranking of barrier integrity."
+          }
+        },
+        {
+          "title": "Build a defensible identification and mechanism answer",
+          "body": "Work from a sequence of claims. First orient the specimen and identify the epithelial compartment. Next describe the observed border or contact using the resolution actually available. Then connect its likely molecular organisation to a specific function. Finally say which further observation would test your explanation. This sequence keeps a memorised mechanism from outrunning the image.\n\nFor example, an apical border in an airway can support a ciliary interpretation when the surrounding lining and basal-body region fit. The 9+2 mechanism is explanatory knowledge, not a feature resolved by that H&E field. A mutant embryo with altered neural markers adds developmental evidence, but it requires species, stage, perturbation and comparison to be stated. A cultured barrier experiment adds functional evidence, but only for its measured quantities. Strong microscopic anatomy links these levels while preserving the boundaries between them.",
+          "practice": {
+            "prompt": "What makes an answer deeper than a list of junction names?",
+            "feedback": "It connects the observed compartment, method, structure, function and a testable limitation, instead of asserting a mechanism from an insufficient image."
+          }
         }
       ],
       "question": {
@@ -465,10 +773,55 @@
       "related": [
         "epithelia",
         "renal-histology",
+        "respiratory-histology",
+        "neural-tube-development",
         "protein-trafficking"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 45,
+      "prerequisites": [
+        "epithelia",
+        "microscopy"
+      ],
+      "objectives": [
+        "Identify the partner, cytoskeletal linkage and function of major junctional contacts.",
+        "Separate light-microscope clues from ultrastructural and molecular evidence.",
+        "Distinguish microvilli, stereocilia and motile cilia without overgeneralising.",
+        "Calculate reciprocal resistance and conductance and interpret a specified tracer readout.",
+        "Explain how ciliary transport experiments connect biochemical processing with embryonic patterning."
+      ],
+      "workedExample": {
+        "title": "Explain two readouts without inventing a diagnosis",
+        "prompt": "In a fictional fixed-geometry experiment, resistance falls from 4 to 2 relative units while the tracer index remains 1. Explain the measured change and its limit.",
+        "solution": [
+          "Relative conductance rises from 1/4 to 1/2, so it doubles.",
+          "The named tracer index is unchanged in these invented conditions.",
+          "Electrical and tracer readouts describe different measured properties.",
+          "The numbers alone identify neither a molecular defect nor a clinical disease."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Compare a desmosome, a hemidesmosome and a focal adhesion.",
+          "answer": "A desmosome joins cells and links intermediate filaments. A hemidesmosomal attachment links epithelial intermediate filaments to matrix. A focal adhesion also faces matrix but connects to actin through its adhesion complex."
+        },
+        {
+          "prompt": "Why is a primary developmental cilium more than a surface ornament?",
+          "answer": "Selected mouse experiments connect ciliary transport with Hedgehog-dependent neural patterning and Gli3 processing. Structure, molecular processing and tissue outcome are separate readouts; seeing a projection does not prove normal signalling."
+        },
+        {
+          "prompt": "What would distinguish a gap-junction experiment from a paracellular tracer experiment?",
+          "answer": "State the starting and ending compartments: neighbouring cytoplasms for cell-to-cell coupling, versus opposite extracellular chambers for transepithelial passage. Controls are needed to establish the particular pathway."
+        }
+      ],
+      "summaryChecklist": [
+        "Map the extracellular partner and cytoskeletal linkage.",
+        "Keep cytoplasmic communication separate from paracellular passage.",
+        "Match the anatomical claim to the available resolution.",
+        "Distinguish actin-supported projections from microtubule-based cilia.",
+        "Calculate conductance as the reciprocal of the defined resistance.",
+        "Keep species, stage, intervention and readout visible in developmental reasoning."
+      ]
     },
     {
       "id": "connective-tissue",

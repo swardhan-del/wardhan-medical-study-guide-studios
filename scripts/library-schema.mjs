@@ -30,7 +30,8 @@ export function validateLibraryLessons(data, catalog, sources) {
       !text(lesson.summary, 30) ||
       !Array.isArray(lesson.steps) ||
       lesson.steps.length < 3 ||
-      lesson.steps.some((s) => !text(s.title, 3) || !text(s.body, 100))
+      lesson.steps.some((s) => !text(s.title, 3) || !text(s.body, 100) ||
+        (s.practice !== undefined && (!text(s.practice?.prompt, 15) || !text(s.practice?.feedback, 20))))
     )
       throw new Error(`Incomplete teaching content: ${lesson.id}`);
     if (lesson.oralExamination !== undefined &&

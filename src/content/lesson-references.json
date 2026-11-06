@@ -27,14 +27,130 @@
     ]
   },
   "epithelia": {
-    "title": "OpenStax: Epithelial tissue",
+    "title": "OpenStax Anatomy and Physiology: Epithelial tissue",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
-    "checkedAt": "2026-09-07"
+    "checkedAt": "2026-11-06",
+    "supportingReferences": [
+      {
+        "title": "Histology Guide: Epithelium slidebox",
+        "url": "https://www.histologyguide.com/slidebox/02-epithelium.html"
+      },
+      {
+        "title": "Southern Illinois University: Epithelial tissues",
+        "url": "https://histology.siu.edu/intro/epith.htm"
+      },
+      {
+        "title": "Columbia Histology: Simple cuboidal and columnar epithelia",
+        "url": "https://histologylab.ctl.columbia.edu/lab02/simple-cuboidal-epithelia-and-simple-columnar-epithelia/"
+      },
+      {
+        "title": "University of Utah WebPath: Special stains",
+        "url": "https://webpath.med.utah.edu/HISTHTML/STAINS/STAINS.html"
+      },
+      {
+        "title": "University of Leeds: Exocrine gland classification",
+        "url": "https://histology.leeds.ac.uk/home/tissue_types/epithelia/epi_exocr_types/"
+      },
+      {
+        "title": "Histology Guide: Submandibular gland",
+        "url": "https://histologyguide.org/slideview/MH-095-submandibular-gland/12-slide-1.html"
+      },
+      {
+        "title": "Columbia Histology: Salivary glands",
+        "url": "https://columbia.edu/itc/hs/medical/sbpm_histology_2009/lab/lab14_salivaryglands.html"
+      },
+      {
+        "title": "University of Basel Histology: Parotid gland",
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/drusen-allgemeine-histologie-40/parotid-gland-230"
+      },
+      {
+        "title": "University of Genoa: Glandular epithelia",
+        "url": "https://istologia.unige.it/en/glandular_epithelia"
+      },
+      {
+        "title": "Columbia Histology: Thyroid",
+        "url": "https://histologylab.ctl.columbia.edu/lab13/thyroid/"
+      },
+      {
+        "title": "University of Leeds: Skin glands",
+        "url": "https://histology.leeds.ac.uk/home/skin/glands/"
+      },
+      {
+        "title": "UNSW Embryology: Endoderm",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Endoderm"
+      },
+      {
+        "title": "Wells et al.: Dynamic relationship of the epithelium and mesenchyme during salivary gland initiation: the role of Fgf10 (2013)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3798193/"
+      },
+      {
+        "title": "Rothova et al.: Lineage tracing of the endoderm during oral development (2012)",
+        "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/dvdy.23804"
+      },
+      {
+        "title": "Furuse et al.: Reconstitution of functional tight junctions with individual claudin subtypes in epithelial cells (2023)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10721951/"
+      },
+      {
+        "title": "Columbia Histology: Epithelium",
+        "url": "https://histologylab.ctl.columbia.edu/lab02/"
+      }
+    ]
   },
   "cell-junctions": {
-    "title": "OpenStax: Epithelial junctions and polarity",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
-    "checkedAt": "2026-09-07"
+    "title": "University of Leeds: Cell junctions",
+    "url": "https://histology.leeds.ac.uk/home/cell/cell_junctions/",
+    "checkedAt": "2026-11-06",
+    "supportingReferences": [
+      {
+        "title": "University of Leeds: Desmosomes and hemidesmosomes",
+        "url": "https://histology.leeds.ac.uk/home/cell/desmosome/"
+      },
+      {
+        "title": "Columbia Histology: Epithelial electron micrographs",
+        "url": "https://histologylab.ctl.columbia.edu/lab02/electron-micrographs/"
+      },
+      {
+        "title": "University of Leeds: Tight junctions",
+        "url": "https://histology.leeds.ac.uk/home/cell/tight_junction/"
+      },
+      {
+        "title": "Furuse et al.: Reconstitution of functional tight junctions with individual claudin subtypes in epithelial cells (2023)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10721951/"
+      },
+      {
+        "title": "Yale: Cells to tissues",
+        "url": "https://www.medcell.org/tbl/cells_to_tissues/reading.php"
+      },
+      {
+        "title": "National Library of Medicine MeSH: Focal adhesions",
+        "url": "https://meshb.nlm.nih.gov/record/ui?dcmsLinks=true&ui=D022001"
+      },
+      {
+        "title": "University of Leeds: Basal lamina",
+        "url": "https://histology.leeds.ac.uk/home/tissue_types/connective/con_basal_lam/"
+      },
+      {
+        "title": "University of Utah WebPath: Special stains",
+        "url": "https://webpath.med.utah.edu/HISTHTML/STAINS/STAINS.html"
+      },
+      {
+        "title": "University of Leeds: Microvilli",
+        "url": "https://histology.leeds.ac.uk/home/tissue_types/epithelia/epi_microvilli/"
+      },
+      {
+        "title": "Yale Histology: Stereocilia",
+        "url": "https://medcell.org/histology/epithelia_lab/stereocilia.php"
+      },
+      {
+        "title": "University of Leeds: Cilia",
+        "url": "https://histology.leeds.ac.uk/home/tissue_types/epithelia/epi_cilia/"
+      },
+      {
+        "title": "Huangfu and Anderson: Cilia and Hedgehog responsiveness in the mouse (2005)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1183606/"
+      }
+    ]
   },
   "connective-tissue": {
     "title": "OpenStax: Connective tissue",

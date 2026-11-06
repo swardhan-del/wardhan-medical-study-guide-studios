@@ -44,6 +44,17 @@ test('private and encoded raw paths cannot enter public quality records', () => 
   }
   assert.equal(containsPrivateReference('https://openstax.org/books/biology-2e'),false);
 });
+test('public home URL segments are distinct from rooted or encoded local home paths', () => {
+  for (const url of ['https://histology.leeds.ac.uk/home/cell/cell_junctions/', 'https://example.edu/home/lesson']) {
+    assert.equal(containsPrivateReference(url), false);
+    assert.equal(containsPrivateReference({ url }), false);
+  }
+  for (const path of ['/home/student/notes.txt', 'source: /home/student/notes.txt', '"/home/student/notes.txt"', '%2Fhome%2Fstudent%2Fnotes.txt', '%252Fhome%252Fstudent%252Fnotes.txt', 'C:\\home\\student\\notes.txt', 'https://example.edu/?source=/home/student/notes.txt']) {
+    assert(containsPrivateReference(path), path);
+    assert(containsPrivateReference({ path }), path);
+  }
+  assert(containsPrivateReference('https://example.edu/home/lesson https://www.dropbox.com/s/private'));
+});
 test('relationship resolver only emits valid unique non-self native lesson targets in all four roles', () => {
   const links=Object.fromEntries(['prerequisite','next','related','compare'].map(k=>[k,['membrane-potentials','bogus',lesson.id,'membrane-potentials']]));
   const groups=resolvedLinks(lesson.id,links,qualityLessons);assert.equal(groups.length,4);for(const g of groups) assert.deepEqual(g.lessons.map(l=>l.href),['/library/membrane-potentials']);

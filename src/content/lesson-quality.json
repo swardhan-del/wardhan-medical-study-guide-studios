@@ -3181,6 +3181,321 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "epithelia",
+      "title": "Epithelia and glands: identify structure and explain development",
+      "subject": "histology",
+      "topic": "Epithelial microscopic anatomy and developmental mechanisms",
+      "slug": "epithelia",
+      "learnerLevel": "Medical sciences: practical identification and developmental evidence",
+      "objectives": [
+        "Classify an epithelial lining from surfaces and cell relationships, not nuclear rows alone.",
+        "Distinguish duct branching, secretory-unit form and serous or mucous features.",
+        "Interpret PAS and other stains by location, substrate and controls.",
+        "Explain epithelial and supporting developmental contributions by compartment.",
+        "Compare budding, branching, lineage labelling and mature function without conflating them."
+      ],
+      "sources": [
+        {
+          "title": "Columbia Histology: Epithelium",
+          "url": "https://histologylab.ctl.columbia.edu/lab02/",
+          "publisherOrAuthor": "Columbia Histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: Epithelium slidebox",
+          "url": "https://www.histologyguide.com/slidebox/02-epithelium.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University: Epithelial tissues",
+          "url": "https://histology.siu.edu/intro/epith.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia Histology: Simple cuboidal and columnar epithelia",
+          "url": "https://histologylab.ctl.columbia.edu/lab02/simple-cuboidal-epithelia-and-simple-columnar-epithelia/",
+          "publisherOrAuthor": "Columbia Histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Utah WebPath: Special stains",
+          "url": "https://webpath.med.utah.edu/HISTHTML/STAINS/STAINS.html",
+          "publisherOrAuthor": "University of Utah WebPath",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: Exocrine gland classification",
+          "url": "https://histology.leeds.ac.uk/home/tissue_types/epithelia/epi_exocr_types/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Histology Guide: Submandibular gland",
+          "url": "https://histologyguide.org/slideview/MH-095-submandibular-gland/12-slide-1.html",
+          "publisherOrAuthor": "Histology Guide",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia Histology: Salivary glands",
+          "url": "https://columbia.edu/itc/hs/medical/sbpm_histology_2009/lab/lab14_salivaryglands.html",
+          "publisherOrAuthor": "Columbia Histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Basel Histology: Parotid gland",
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/drusen-allgemeine-histologie-40/parotid-gland-230",
+          "publisherOrAuthor": "University of Basel Histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Genoa: Glandular epithelia",
+          "url": "https://istologia.unige.it/en/glandular_epithelia",
+          "publisherOrAuthor": "University of Genoa",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia Histology: Thyroid",
+          "url": "https://histologylab.ctl.columbia.edu/lab13/thyroid/",
+          "publisherOrAuthor": "Columbia Histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: Skin glands",
+          "url": "https://histology.leeds.ac.uk/home/skin/glands/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax Anatomy and Physiology: Epithelial tissue",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-2-epithelial-tissue",
+          "publisherOrAuthor": "OpenStax Anatomy and Physiology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UNSW Embryology: Endoderm",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Endoderm",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Wells et al.: Dynamic relationship of the epithelium and mesenchyme during salivary gland initiation: the role of Fgf10 (2013)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3798193/",
+          "publisherOrAuthor": "Wells et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Rothova et al.: Lineage tracing of the endoderm during oral development (2012)",
+          "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/dvdy.23804",
+          "publisherOrAuthor": "Rothova et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Furuse et al.: Reconstitution of functional tight junctions with individual claudin subtypes in epithelial cells (2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10721951/",
+          "publisherOrAuthor": "Furuse et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Existing licensed micrographs preserved. Original gland topology diagrams reviewed with explicit limits and equivalent text.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted editorial and source review; independent medical review remains outstanding.",
+        "Conceptual diagrams and synthetic values are not diagnostic tissue images or research measurements.",
+        "Selected animal and cell-culture experiments retain species, stage and readout limits."
+      ],
+      "reviewEvidenceIds": [
+        "epithelia-editorial-depth-20261106",
+        "epithelia-visual-depth-20261106",
+        "epithelia-accessibility-depth-20261106",
+        "epithelia-readability-depth-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy"
+        ],
+        "related": [
+          "cell-junctions",
+          "salivary-glands",
+          "renal-histology",
+          "respiratory-histology",
+          "gi-histology"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "cell-junctions",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
+      "subject": "histology",
+      "topic": "Epithelial microscopic anatomy and developmental mechanisms",
+      "slug": "cell-junctions",
+      "learnerLevel": "Medical sciences: practical identification and developmental evidence",
+      "objectives": [
+        "Identify the partner, cytoskeletal linkage and function of major junctional contacts.",
+        "Separate light-microscope clues from ultrastructural and molecular evidence.",
+        "Distinguish microvilli, stereocilia and motile cilia without overgeneralising.",
+        "Calculate reciprocal resistance and conductance and interpret a specified tracer readout.",
+        "Explain how ciliary transport experiments connect biochemical processing with embryonic patterning."
+      ],
+      "sources": [
+        {
+          "title": "University of Leeds: Cell junctions",
+          "url": "https://histology.leeds.ac.uk/home/cell/cell_junctions/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: Desmosomes and hemidesmosomes",
+          "url": "https://histology.leeds.ac.uk/home/cell/desmosome/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia Histology: Epithelial electron micrographs",
+          "url": "https://histologylab.ctl.columbia.edu/lab02/electron-micrographs/",
+          "publisherOrAuthor": "Columbia Histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: Tight junctions",
+          "url": "https://histology.leeds.ac.uk/home/cell/tight_junction/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Furuse et al.: Reconstitution of functional tight junctions with individual claudin subtypes in epithelial cells (2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10721951/",
+          "publisherOrAuthor": "Furuse et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Yale: Cells to tissues",
+          "url": "https://www.medcell.org/tbl/cells_to_tissues/reading.php",
+          "publisherOrAuthor": "Yale",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "National Library of Medicine MeSH: Focal adhesions",
+          "url": "https://meshb.nlm.nih.gov/record/ui?dcmsLinks=true&ui=D022001",
+          "publisherOrAuthor": "National Library of Medicine MeSH",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: Basal lamina",
+          "url": "https://histology.leeds.ac.uk/home/tissue_types/connective/con_basal_lam/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Utah WebPath: Special stains",
+          "url": "https://webpath.med.utah.edu/HISTHTML/STAINS/STAINS.html",
+          "publisherOrAuthor": "University of Utah WebPath",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: Microvilli",
+          "url": "https://histology.leeds.ac.uk/home/tissue_types/epithelia/epi_microvilli/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Yale Histology: Stereocilia",
+          "url": "https://medcell.org/histology/epithelia_lab/stereocilia.php",
+          "publisherOrAuthor": "Yale Histology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: Cilia",
+          "url": "https://histology.leeds.ac.uk/home/tissue_types/epithelia/epi_cilia/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Huangfu and Anderson: Cilia and Hedgehog responsiveness in the mouse (2005)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1183606/",
+          "publisherOrAuthor": "Huangfu and Anderson",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original six-contact junction map and synthetic barrier comparison reviewed with equivalent text. No new diagnostic micrograph.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted editorial and source review; independent medical review remains outstanding.",
+        "Conceptual diagrams and synthetic values are not diagnostic tissue images or research measurements.",
+        "Selected animal and cell-culture experiments retain species, stage and readout limits."
+      ],
+      "reviewEvidenceIds": [
+        "cell-junctions-editorial-depth-20261106",
+        "cell-junctions-visual-depth-20261106",
+        "cell-junctions-accessibility-depth-20261106",
+        "cell-junctions-readability-depth-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "epithelia",
+          "microscopy"
+        ],
+        "related": [
+          "epithelia",
+          "renal-histology",
+          "respiratory-histology",
+          "neural-tube-development",
+          "protein-trafficking"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

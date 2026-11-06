@@ -4399,23 +4399,26 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-11-06",
       "bytes": 0,
       "id": "cell-junctions",
-      "title": "Cell junctions and surface specializations",
+      "title": "Cell junctions, surface specialisations and developmental signalling",
       "subject": "histology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Separate sealing, anchoring and communication junctions, then distinguish microvilli from cilia.",
+      "summary": "Map cell–cell and cell–matrix contacts, distinguish apical specialisations, calculate barrier readouts and interpret ciliary developmental experiments.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "junctions",
         "cilia",
         "microvilli",
-        "basement membrane"
+        "basement membrane",
+        "embryology",
+        "Hedgehog",
+        "barrier measurements"
       ],
-      "minutes": 5
+      "minutes": 45
     },
     {
       "status": "public",
@@ -4463,21 +4466,26 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-07",
+      "updatedAt": "2026-11-06",
       "bytes": 0,
       "id": "epithelia",
-      "title": "Epithelia: layers, shape and function",
+      "title": "Epithelia and glands: identify structure and explain development",
       "subject": "histology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Distinguish simple, stratified and pseudostratified epithelia and connect their structure to their job.",
+      "summary": "Classify linings and glands using orientation, staining and duct architecture; connect adult compartments with developmental and lineage experiments.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "epithelium",
-        "epithelial tissue"
+        "epithelial tissue",
+        "glands",
+        "embryology",
+        "staining",
+        "salivary glands",
+        "lineage tracing"
       ],
-      "minutes": 12
+      "minutes": 50
     },
     {
       "status": "public",

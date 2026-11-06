@@ -6,7 +6,7 @@ export type LibraryLesson = {
   tags: string[];
   source: string;
   section: string;
-  steps: { title: string; body: string }[];
+  steps: { title: string; body: string; practice?: { prompt: string; feedback: string } }[];
   question: {
     prompt: string;
     options: { text: string; reason: string }[];

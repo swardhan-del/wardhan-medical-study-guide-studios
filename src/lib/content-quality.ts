@@ -8,7 +8,10 @@ export function validDate(value: unknown): value is string {
 export function containsPrivateReference(value: unknown): boolean {
   let text = typeof value === "string" ? value : JSON.stringify(value);
   for (let i = 0; i < 3; i++) { try { text = decodeURIComponent(text); } catch { break; } }
-  return /\.private(?:[\\/]|\b)|dropbox(?:usercontent)?\.com|(?:[\\/]Users[\\/]|[\\/]home[\\/])|file:\/\/|Library[\\/]CloudStorage|source-intake[\\/]/i.test(text);
+  const privateReference = /\.private(?:[\\/]|\b)|dropbox(?:usercontent)?\.com|[\\/]Users[\\/]|file:\/\/|Library[\\/]CloudStorage|source-intake[\\/]/i;
+  // A rooted home-directory path is private; /home/ inside a public URL is not a filesystem root.
+  const homeDirectory = /(?:^|[\s"'`(=:\[\],])[\\/]+home[\\/]/i;
+  return privateReference.test(text) || homeDirectory.test(text);
 }
 export function explainedQuestions(lesson: QualityLesson): boolean {
   return lesson.prompts.every(p => nonempty(p.prompt) && nonempty(p.explanation)) && lesson.questions.length > 0 && lesson.questions.every(q => nonempty(q.prompt) && Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length && q.options.length >= 2 && q.options.every(o => nonempty(o.text) && nonempty(o.explanation)));
