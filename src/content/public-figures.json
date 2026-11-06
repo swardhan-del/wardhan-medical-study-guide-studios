@@ -999,6 +999,41 @@
       "publicApproval": "Owner-authorized educational release after provider provenance, CC0 rights and privacy review. Rendered and release checks are separate gates.",
       "modifications": "Original bytes and embedded labels preserved. Numbered browser overlays may be hidden; the original text and arrows remain.",
       "observe": "Follow a frond from its epithelial covering inward to stroma and blood vessels. Distinguish the stromal core from a secretory lumen."
+    },
+    {
+      "id": "human-epididymis-he",
+      "title": "Human epididymal H&E: ductal lining and surrounding tissue",
+      "sourceAsset": "images/figures/human-epididymis-he.jpg",
+      "kind": "micrograph",
+      "alt": "H&E epididymal field with tall nuclear-rich epithelial linings around an elongated central lumen and an adjacent rounder profile, surrounded by pink tissue and small vessels.",
+      "caption": "Nephron, provider-identified human epididymis, H&E. Tall epithelial profiles surround luminal spaces beside pink supporting tissue and small vessels. Age, disease state, epididymal region, fixation, section thickness and calibrated scale are not supplied. The field does not identify every cell subtype or demonstrate live transport.",
+      "rights": "Nephron, own work, CC BY-SA 3.0. The annotated-image arrangement and explanatory overlay are also offered under CC BY-SA 3.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "evidence": "docs/reviews/reproductive-development-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?title=File:Epididymis_high_mag.jpg&oldid=1117238869",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-reproductive-histology"
+      ],
+      "resourceIds": [
+        "reproductive-histology"
+      ],
+      "width": 1856,
+      "height": 2280,
+      "src": "/images/figures/human-epididymis-he.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/human-epididymis-he.jpg",
+          "width": 1856,
+          "height": 2280,
+          "bytes": 1847229
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after provenance, license and privacy review; rendered and release gates are recorded separately.",
+      "modifications": "Nonessential embedded metadata removed; image pixels unchanged. Region markers are reversible browser overlays.",
+      "observe": "Follow the epithelial lining around the ductal lumen, then contrast the separate erythrocyte-containing vessel and surrounding tissue."
     }
   ]
 }

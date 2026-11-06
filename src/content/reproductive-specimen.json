@@ -1,0 +1,51 @@
+{
+  "title": "Read an epididymal section: lining, lumen and supporting tissue",
+  "figureId": "human-epididymis-he",
+  "regions": [
+    {
+      "id": "lining",
+      "label": "Tall epithelial lining",
+      "anchor": {
+        "x": 72,
+        "y": 40
+      },
+      "observation": "At this region the duct wall contains elongated, closely packed nuclei at different heights. Follow the lining around the profile rather than counting apparent nuclear rows as separate epithelial layers.",
+      "interpretation": "The visible arrangement supports a pseudostratified lining in this provider-identified epididymal field. Cell boundaries are not all distinct; do not assign every dark nucleus to a specific subtype.",
+      "limit": "H&E does not identify every epithelial cell subtype."
+    },
+    {
+      "id": "lumen",
+      "label": "Duct lumen and its edge",
+      "anchor": {
+        "x": 71,
+        "y": 49
+      },
+      "observation": "The lighter central space is enclosed by the tall lining. Material at its edge and within the lumen should be described before assigning a specific cell or functional state.",
+      "interpretation": "An irregular luminal profile can reflect the section through a coiled duct. This field does not establish which profiles connect or measure live transport.",
+      "limit": "One section does not establish which duct profiles connect or measure live transport."
+    },
+    {
+      "id": "vessel",
+      "label": "A separate vascular profile",
+      "anchor": {
+        "x": 83,
+        "y": 84
+      },
+      "observation": "This small space outside the duct contains conspicuous red cells and has a much thinner lining than the reproductive duct. Compare the two compartments in the same field.",
+      "interpretation": "The contained erythrocytes and separate thin boundary support a vascular interpretation. They do not identify every neighboring empty cleft as a vessel or determine flow direction.",
+      "limit": "This field does not establish blood-flow direction or identify every neighbouring pale cleft."
+    },
+    {
+      "id": "surrounding-wall",
+      "label": "Surrounding pink tissue",
+      "anchor": {
+        "x": 90,
+        "y": 74
+      },
+      "observation": "Outside the epithelial lining, pink tissue contains elongated nuclei. Follow its relation to the duct before naming a particular bundle.",
+      "interpretation": "A muscular coat and connective tissue contribute to the supporting environment. This routine field alone does not cleanly identify every pink bundle as muscle or collagen.",
+      "limit": "H&E here does not cleanly separate every muscle bundle from collagen."
+    }
+  ],
+  "model": "First locate the tall nuclear-rich lining around a luminal compartment. Compare it with the separate small erythrocyte-containing vascular profile. Describe the surrounding pink supporting tissue without forcing every bundle into a muscle-versus-collagen label. The provider identifies epididymis; this field alone does not establish duct continuity, exact region, cell subtype or live transport."
+}

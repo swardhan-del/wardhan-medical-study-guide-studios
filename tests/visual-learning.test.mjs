@@ -27,7 +27,7 @@ test('reused images retain real provenance and include observation prompts', () 
     assert(f.observe.length>40);assert(readFileSync(new URL('../'+f.evidence,import.meta.url)).length);
     for(const variant of f.variants) assert(release.assets.some(a=>'/'+a.path===variant.src));
   }
-  assert.equal(data.figures.filter(f=>f.kind==='micrograph').length,9);
+  assert.equal(data.figures.filter(f=>f.kind==='micrograph').length,10);
   const placenta=data.figures.find(f=>f.id==='placenta-term-villus');
   assert.equal(placenta.licenseUrl,'https://creativecommons.org/publicdomain/zero/1.0/');
   assert.deepEqual(placenta.resourceIds,['placenta']);

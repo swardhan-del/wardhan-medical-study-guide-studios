@@ -2905,21 +2905,247 @@
       "id": "reproductive-histology",
       "subject": "histology",
       "title": "Reproductive histology and cyclic change",
-      "summary": "Connect seminiferous tubules, ovarian follicles and endometrium to their changing functions.",
+      "summary": "Identify testicular, ductal and glandular tissue; connect cell mechanisms and development, then revisit ovarian follicles and cyclic uterine change.",
       "tags": [
         "Organ histology",
         "Integrated embryology",
         "testis",
         "ovary",
         "uterus",
-        "reproduction"
+        "reproduction",
+        "epididymis",
+        "Sertoli cells",
+        "spermiogenesis",
+        "blood–testis barrier",
+        "duct development",
+        "H&E"
       ],
-      "source": "histology",
-      "section": "Male Reproductive System; Follicle Development; Uterine Histology",
+      "source": "reproductive-depth-20261106",
+      "section": "Reproductive tissue identification, cell mechanisms and development; ovarian and uterine relationships",
       "steps": [
         {
-          "title": "Read a seminiferous tubule",
-          "body": "Developing germ cells progress from the basal region toward the lumen. Sertoli cells support this environment and form the blood-testis barrier. Leydig cells lie between tubules and produce testosterone. Sperm maturation continues after release into the duct system."
+          "title": "Begin with the tissue arrangement, then choose the magnification",
+          "body": "At low power, decide whether you are looking at many profiles of a germ-cell-producing tubule, a folded conducting duct, or glands separated by stroma. Follow a complete boundary before zooming into a conspicuous nucleus. In testis, repeated seminiferous profiles are separated by interstitial tissue; in a conducting tract, the epithelial lining surrounds material already released from the testis. A section through a coiled tube can produce many profiles, so a field containing many circles is not a count of separate ducts.\n\nThen choose a question for higher power: which cells belong to the epithelium, what faces the lumen, and how much muscle or connective tissue surrounds it? Return to the overview after inspecting the detail. This prevents a small patch of pink cytoplasm or a sperm-filled space from becoming the sole reason for an organ label.",
+          "practice": {
+            "prompt": "Two sperm-containing profiles look similar at high power. What should you inspect next?",
+            "feedback": "The epithelial organization and the surrounding wall in a broader field; sperm content alone does not separate testis, epididymis and other conducting structures."
+          }
+        },
+        {
+          "title": "Read the basal-to-luminal germ-cell pattern",
+          "body": "Use the tubule boundary as the reference. Spermatogonia occupy the basal region. Large primary spermatocytes often show conspicuous coarse chromatin; smaller round spermatids lie nearer the lumen, followed by more condensed elongating forms. Secondary spermatocytes are comparatively difficult to encounter because that stage is brief. These are practical clues to combine with location and preparation, not a rule that every nucleus must fit a neat concentric ring.\n\nA thin section samples a three-dimensional epithelium. It may miss the nucleus of a cell whose cytoplasm crosses the field, and the local association of germ-cell stages varies. Do not force every tubule into an identical stack. Begin by separating basal cells, larger meiotic profiles and smaller luminal differentiating profiles; give a more specific name only when the image supports it.",
+          "practice": {
+            "prompt": "Why is failure to find an obvious secondary spermatocyte not evidence that meiosis II never occurs?",
+            "feedback": "A short-lived stage and limited sampling reduce its visibility. Absence from one section does not establish absence from the biological sequence."
+          }
+        },
+        {
+          "title": "Separate division, differentiation and release",
+          "body": "Spermatogenesis includes renewal and differentiation of spermatogonia, meiotic divisions and the transformation of spermatids. Meiosis produces haploid spermatids. Spermiogenesis then changes their shape and internal organization without another reduction division. The Golgi-associated acrosomal system develops over the nucleus, chromatin becomes compact, a flagellum forms, mitochondria organize in the middle piece and much of the cytoplasm is removed. Spermiation is the later release from Sertoli-cell support into the tubular lumen.\n\nFollow one conceptual cell through those transitions: a round haploid spermatid is already a product of meiosis but is not yet a streamlined spermatozoon. A released spermatozoon still undergoes further maturation during epididymal passage. A recurring association of cells in a seminiferous epithelial cycle, the complete developmental sequence and passage through the ducts are different intervals. Always name the interval before assigning it a duration.",
+          "practice": {
+            "prompt": "A student says that sperm are made by one final mitotic division immediately before release. Repair the explanation.",
+            "feedback": "Distinguish meiotic production of spermatids, remodeling during spermiogenesis, release during spermiation and subsequent epididymal maturation."
+          }
+        },
+        {
+          "title": "Count chromosome sets separately from DNA content",
+          "body": "Use n for chromosome sets and C for DNA amount relative to one unreplicated haploid genome. After premeiotic DNA replication, a primary spermatocyte is 2n, 4C: it still has two homologous sets, but each chromosome has two chromatids. Meiosis I separates homologues, producing secondary spermatocytes that are n, 2C. Meiosis II separates sister chromatids, producing spermatids that are n, 1C. There is no second genome replication between the two meiotic divisions.\n\nFor the usual human chromosome complement, those stages contain 46, 23 and 23 chromosomes respectively when chromosomes are counted by their centromeres before division. Chromatid number and DNA amount must not be substituted for chromosome number. Later nuclear condensation during spermiogenesis changes packing and appearance, not the number of chromosome sets. A dark, small nucleus is therefore not proof of an additional chromosome-reduction division.",
+          "practice": {
+            "prompt": "A secondary spermatocyte is haploid but has 2C DNA. Explain how both statements can be true.",
+            "feedback": "It has one homologous set, with each chromosome still composed of two sister chromatids; meiosis II separates those chromatids."
+          }
+        },
+        {
+          "title": "Connect sperm nuclear shape to chromatin remodelling",
+          "body": "A round spermatid becomes a highly polarized cell. Acrosomal development marks one pole while the nuclear contents undergo extensive repackaging. Histone-associated organization is largely replaced through transition-protein and protamine-associated stages; some histones remain. This compacts the genome while the acrosomal, nuclear and flagellar structures become coordinated. It is a differentiation process, not another round of meiosis.\n\nDe Vries and colleagues examined human testicular cells using molecular labels and different preparations. They related acrosomal organization to regional loss of histone/nucleosome signals and the appearance of transition protein 2 and protamine 1. The samples came from men undergoing sperm retrieval, not an unselected healthy population. Nuclear spreading altered shape, so they also examined cryosections. That comparison explains why an unusual shape in a spread nucleus cannot automatically be treated as the native shape on a tissue section.",
+          "practice": {
+            "prompt": "What additional evidence is needed before a dark spermatid nucleus is said to contain protamine?",
+            "feedback": "A suitable molecular assay with controls; H&E condensation and a protamine-specific signal answer different questions."
+          }
+        },
+        {
+          "title": "Keep epithelial support separate from interstitial steroid production",
+          "body": "Sertoli cells extend from the basal boundary toward the seminiferous lumen, surrounding and supporting several germ-cell stages. Their cytoplasmic outlines are often indistinct in routine sections. A relatively pale, irregular nucleus with a conspicuous nucleolus is a useful clue when combined with its epithelial location. Leydig cells are instead sought in groups within the interstitium between tubules, alongside vessels and connective-tissue cells.\n\nThis arrangement separates support from steroid supply. Sertoli cells maintain the local environment, participate in germ-cell attachment and release, and remove residual cytoplasm. Leydig cells produce testosterone, which acts on responsive cells rather than becoming a structural part of the barrier. On a practical slide, first locate the tubule boundary; next distinguish epithelial from interstitial cells; then connect each compartment with its function. Hormone production itself is not visible as a coloured spot on H&E.",
+          "practice": {
+            "prompt": "Point to the tissue boundary you would use before distinguishing Sertoli from Leydig cells.",
+            "feedback": "The seminiferous tubule boundary separates the epithelial population from the interstitial compartment."
+          }
+        },
+        {
+          "title": "Map endocrine signals onto the actual cell populations",
+          "body": "Pulsatile hypothalamic GnRH stimulates pituitary gonadotropin secretion. LH acts on Leydig cells to support testosterone production; FSH acts on Sertoli cells and supports their functions within the seminiferous epithelium. Inhibin from Sertoli cells contributes to feedback control of FSH. Testosterone participates in feedback on the hypothalamic–pituitary system and also acts locally on responsive testicular cells.\n\nKeep three arrows separate: a pituitary signal reaches its target, an interstitial cell supplies androgen, and a supporting cell responds to that androgen. A hormone concentration does not by itself establish that the recipient cell has a functioning receptor. This is why endocrine supply and tissue response need distinct explanations when relating a histological change to a mechanism.",
+          "practice": {
+            "prompt": "Why could an androgen-response defect differ from loss of testosterone production?",
+            "feedback": "The ligand-producing cell and the receptor-bearing responding cell are different parts of the signalling system."
+          }
+        },
+        {
+          "title": "Test how a supporting cell permits germ-cell progression",
+          "body": "A Sertoli-cell androgen-receptor knockout asks whether androgen sensing in the supporting cell is needed for normal germ-cell development. Larose and colleagues combined a mouse knockout with synchronized spermatogenesis, chromosome-marker studies and single-cell RNA measurements. Among surviving spermatocytes, several early prophase markers and chromosome associations were present, yet competence for induced meiotic division was markedly impaired.\n\nThis is an indirect effect across cell types: changing a receptor in a somatic supporting cell alters what germ cells can accomplish. The study also separates cytological appearance, transcriptional state and a functional response. Its division-competence assay used pharmacological stimulation of isolated cells; it was not a fertility test. The model does not justify declaring that every early meiotic event is absent whenever androgen signalling is impaired.",
+          "practice": {
+            "prompt": "A spermatocyte has a prophase marker but fails the tested division response. What should the explanation distinguish?",
+            "feedback": "Marker localization, transcriptional state and demonstrated ability to enter the division phase are distinct readouts."
+          }
+        },
+        {
+          "title": "Draw the blood–testis barrier at the relevant cell junction",
+          "body": "The blood–testis barrier is principally organized by junctions between adjacent Sertoli cells near the basal part of the seminiferous epithelium. Those junctions partition basal and adluminal environments. The route from blood to an adluminal germ cell therefore crosses vascular and interstitial tissue before encountering this epithelial junctional system. The barrier is not simply the wall of a testicular capillary.\n\nSpermatogonia occupy the basal compartment, while later meiotic and postmeiotic development takes place within the specialized adluminal environment. Tight junctions work within a larger system of cell contacts and cytoskeletal organization; tight junctions and actin-associated adhesion structures are not synonyms. Morphology, protein localization and permeability are separate measurements. H&E or a junctional protein signal alone cannot show that an epithelial boundary excludes a particular substance.",
+          "practice": {
+            "prompt": "Why is a neat H&E boundary insufficient evidence of an intact functional barrier?",
+            "feedback": "It shows morphology at that resolution. A transport claim requires an appropriate permeability experiment, and a protein claim requires a validated detection method."
+          }
+        },
+        {
+          "title": "Explain passage across a junctional barrier",
+          "body": "Developing germ cells must change compartment while Sertoli-cell contacts continue to separate environments. In a mouse confocal study, researchers reconstructed junction-associated signals around transiting spermatocytes. Junctional boundaries were detected on both basal and adluminal sides, with connections enclosing temporary compartments; intercellular bridges linked germ cells across parts of that arrangement.\n\nTheir model proposes formation of new contacts on the basal side before the older boundary is removed on the adluminal side. This provides a mechanism for passage without simply tearing open the entire epithelium. CLDN3 and CLDN11 showed different spatial and temporal patterns. The reconstructed fixed samples support a staged model; they are not a continuous movie of every junction or proof that a particular claudin alone is sufficient for passage.",
+          "practice": {
+            "prompt": "Why is “the barrier opens completely whenever a cell crosses” an inadequate model?",
+            "feedback": "New and old boundaries can coexist around an intermediate compartment, allowing staged rearrangement rather than an unrestricted opening."
+          }
+        },
+        {
+          "title": "Use an intervention to test the proposed cause",
+          "body": "Loss of the junctional protein CLDN11 disrupts the seminiferous environment in a mouse model. To test whether adaptive immunity was required for the associated failure of spermatogenesis, researchers also removed Rag2 function. The reproductive phenotype was not rescued. Thus the observed immune response was insufficient evidence that adaptive immunity was the necessary cause in that experiment.\n\nThe permeability assay used harvested tissue. Its tracer distribution describes that preparation, rather than all transport from the circulation in a living human. Different fields from one animal remain measurements within that animal; they do not turn one biological specimen into many independent replicates.",
+          "practice": {
+            "prompt": "What extra causal question does the double-knockout experiment address?",
+            "feedback": "Whether the proposed adaptive immune mechanism is required for the observed phenotype in the tested mouse model."
+          }
+        },
+        {
+          "title": "Ask whether a junction also organizes a signaling environment",
+          "body": "The same Cldn11 study examined the distribution of stem cell factor (SCF), a ligand for KIT. Localization experiments used busulfan-treated testes and, separately, tagged protein in a cultured epithelial system. Local SCF-bearing beads increased the nearby KIT-positive cell readout relative to control beads. This suggests a link between epithelial organization and the germ-cell signalling environment. It did not demonstrate restoration of the junctional barrier, complete sperm production or fertility. Distinguish the measured local response from those untested organ-level outcomes.",
+          "practice": {
+            "prompt": "A figure shows more KIT-positive cells after local SCF treatment. Which organ-level conclusions still need testing?",
+            "feedback": "Barrier repair, complete gamete production and fertility are separate outcomes. Keep the mouse model, preparation and local cell-count readout attached to the result."
+          }
+        },
+        {
+          "title": "Trace transport without treating every lumen as the same organ",
+          "body": "Trace the sequence in anatomical order: seminiferous tubule, straight tubule, rete testis, efferent ductules, epididymal duct, ductus deferens, ejaculatory duct and urethra. The rete forms channels in the mediastinal region; efferent ductules connect it with the epididymal duct. A section through the highly coiled epididymal duct produces many profiles of the same conducting system.\n\nAccessory secretions join this route. The duct of a seminal vesicle joins the distal ductus deferens to form an ejaculatory duct; sperm do not normally take a detour through the seminal-vesicle gland. Prostatic ducts open into the prostatic urethra. Distinguish a sperm-transport route from a gland-secretory route, and then connect each local lining and wall to its position along the system.",
+          "practice": {
+            "prompt": "Does a field containing several epididymal duct profiles prove several independent ducts?",
+            "feedback": "No. Repeated sections through a coiled duct can create multiple profiles."
+          }
+        },
+        {
+          "title": "Distinguish efferent ductules from epididymal duct",
+          "body": "Efferent ductules combine ciliated cells with nonciliated absorptive cells. Their differing heights can produce a scalloped luminal edge. Epididymal duct instead has a pseudostratified lining with tall principal cells and smaller basal cells. Its apical stereocilia are long, actin-based microvilli; they are not the microtubule-based motile cilia of the efferent ductules. A fuzzy apical border alone is insufficient to resolve that distinction.\n\nCompare the lining across several profiles, the local wall and the broader anatomical context. A sperm-containing lumen supports a conducting role but does not distinguish one duct from another. Pseudostratified describes the cell arrangement, not several complete epithelial layers. Oblique sectioning or mucosal folds can make nuclei appear more crowded. Absorption, secretion and the surrounding muscle all contribute to the duct environment; a tall lining is not merely a passive pipe.",
+          "practice": {
+            "prompt": "Which feature would you use to explain why epididymal stereocilia should not be described as beating cilia?",
+            "feedback": "They are microvillar surface specializations rather than motile cilia; their identity must not be inferred merely from a long apical fringe."
+          }
+        },
+        {
+          "title": "Identify ductus deferens through the wall, not just its lumen",
+          "body": "Ductus deferens has a folded mucosa with a relatively narrow lumen and a conspicuously thick smooth-muscle wall. The usual description is inner longitudinal, middle circular and outer longitudinal muscle. Those directions refer to the tube’s long axis: longitudinal bundles appear in cross-section when the duct is cut transversely. The lining is pseudostratified, and surface microvilli may be demonstrable in a suitable preparation.\n\nThe muscular wall provides force for transport. Compare it with the thinner wall and repeated coiled profiles of epididymal duct. Within spermatic cord, an artery is a key alternative: it has an endothelial lining rather than a folded reproductive mucosa, and a different wall organization. Combine lining, folds, muscle and surrounding structures; apparent lumen shape alone changes with contraction and the plane of section.",
+          "practice": {
+            "prompt": "A thick-walled circular profile is present in spermatic cord. What prevents an automatic ductus-deferens diagnosis?",
+            "feedback": "A vessel may also be thick walled. Compare the lining, mucosal folds, contents and broader arrangement."
+          }
+        },
+        {
+          "title": "Recognize the folded secretory surface of seminal vesicle",
+          "body": "Seminal vesicle is a highly folded secretory tube. Mucosal folds contain a connective-tissue core covered by secretory epithelium, and a surrounding smooth-muscle wall expels the secretion. In a section, branching folds can create a labyrinth of spaces that appear isolated even though they belong to connected luminal architecture. Follow the epithelial boundary and the connective tissue within the folds before calling each space a separate gland.\n\nCompare the distribution of stroma with prostate. In seminal vesicle, the delicate stromal cores support a conspicuous folded mucosal surface. In prostate, numerous glandular profiles are distributed within substantial fibromuscular stroma. Their shared contribution to semen does not make their microscopic architecture interchangeable. A fructose-containing secretion is a functional feature of seminal vesicle, but its chemical identity cannot be established from pink luminal material on H&E.",
+          "practice": {
+            "prompt": "Why can one highly folded mucosa appear to contain many isolated spaces?",
+            "feedback": "A plane cuts different parts of a folded three-dimensional surface. Profiles do not necessarily correspond to separate glands."
+          }
+        },
+        {
+          "title": "Read prostatic epithelium within fibromuscular stroma",
+          "body": "In prostate, glandular profiles of variable size and contour lie within fibromuscular stroma. Secretory luminal cells face the gland space; a basal cell population lies toward the epithelial base, although individual basal cells may be difficult to resolve on a routine section. Folded gland epithelium can create complex profiles. Laminated luminal concretions may be present, but their absence does not exclude prostate.\n\nStart with the relation between glands and intervening stroma, then examine the epithelium and luminal contents. Compare that organization with the extensively folded mucosa of seminal vesicle. A trichrome preparation can help separate collagen-rich stroma from muscle, with colours interpreted using the actual stain protocol. Neither a luminal concretion nor the visibility of one basal nucleus is a stand-alone diagnostic test for disease.",
+          "practice": {
+            "prompt": "Which low-power relationship is more useful than one luminal concretion for this comparison?",
+            "feedback": "Glandular profiles distributed in fibromuscular stroma versus a strongly folded mucosal surface with stromal cores."
+          }
+        },
+        {
+          "title": "Treat gonadal development as changing cell relationships",
+          "body": "Gonadal development requires the coordinated organization of supporting, germ-cell, steroidogenic, vascular and stromal populations. In the testicular pathway, supporting cells organize around germ cells into cords while interstitial populations develop outside them. Fetal cords should not be imagined as miniature adult seminiferous tubules already carrying out complete spermatogenesis. A germ-cell population, an organized cord and a functional adult epithelium are different developmental achievements.\n\nA human fetal gonadal atlas combined single-cell molecular measurements with spatial observations. It identified changing supporting-cell states and their tissue relationships, including differences from mouse patterns. Molecular similarity suggests relationships among states but does not directly track one cell and its descendants. Use the atlas to ask which cell state occurs where, and use appropriately designed perturbation or lineage studies for causal and ancestry questions.",
+          "practice": {
+            "prompt": "An expression plot places two cell states next to each other. Does that establish ancestry?",
+            "feedback": "No. Similarity and inferred order need additional evidence before a direct ancestor–descendant relationship is claimed."
+          }
+        },
+        {
+          "title": "Distinguish initiating a program from maintaining it",
+          "body": "In the developing mouse gonad, SOX9, FGF9 and WNT4 participate in interacting regulatory programs. In the reviewed Fgf9-deficient XY model, SOX9 appeared initially but was not maintained normally. Conversely, loss of Wnt4 in XX gonads produced transient SOX9 expression without establishing the full cord-forming testicular program. These results separate initiation of a molecular state from its stabilization and tissue organization.\n\nThe mechanistic question is therefore not only whether a factor is present. Ask whether signalling sustains the supporting-cell program, whether cells organize into cords and whether development proceeds. Regulatory feedback and competing pathways explain why one early positive marker need not predict the later organ phenotype. Retain the mouse model and developmental stage when using these experiments.",
+          "practice": {
+            "prompt": "Why should a transient SOX9-positive state not be called a fully formed testis?",
+            "feedback": "A marker state, its maintenance, organized supporting-cell differentiation, cord architecture and later function are distinct outcomes."
+          }
+        },
+        {
+          "title": "Separate a local response from whole-organ determination",
+          "body": "Added FGF9 also elicited SOX9 responses in dissociated XX mouse gonadal cells and locally near an FGF9-bearing bead in an explant. Local presentation and tissue context matter. A localized marker response is not equivalent to conversion of an entire organ, sustained supporting-cell identity or later fertility.",
+          "practice": {
+            "prompt": "Why does a local SOX9 response near a bead not establish complete testicular development?",
+            "feedback": "It measures a localized marker response under an experimental exposure. Sustained fate, organ architecture and function require distinct observations."
+          }
+        },
+        {
+          "title": "Ask what a transgene experiment actually demonstrates",
+          "body": "The classic Sry transgene report describes testicular development in XX mice carrying the tested genomic fragment. This is evidence for a sufficiency claim in that experimental context. It does not by itself test whether every element in the fragment is necessary, whether normal dosage and timing were reproduced, or whether the animals had normal fertility.\n\nMake the question explicit before interpreting the outcome. Adding a factor and observing a developmental change is a different design from removing it, rescuing its loss, or tracing descendants of cells that expressed it.",
+          "practice": {
+            "prompt": "Which experiment would address necessity more directly than adding the fragment?",
+            "feedback": "A controlled loss-of-function experiment, with appropriate assessment and rescue where feasible."
+          }
+        },
+        {
+          "title": "Keep gonadal identity, duct fate and reproductive function separate",
+          "body": "The testis and the associated duct system do not represent a single undifferentiated developmental outcome. AMH signaling is linked to paramesonephric duct regression, while androgen-dependent processes support other male tract outcomes. In the reviewed MIS-deficient mouse abstract, sperm production and retained female reproductive structures coexisted; fertility therefore cannot be reduced to a yes/no observation of germ cells.\n\nA developmental explanation should state the signal-producing cell, the responding tissue and the anatomical change. Keep duct regression separate from the formation of the gonad and from the later delivery of sperm. These distinctions also prevent a molecular result from being turned directly into an individual clinical prediction.",
+          "practice": {
+            "prompt": "Why does finding sperm not prove that the entire reproductive tract developed normally?",
+            "feedback": "Gamete production, duct pattern, transport and fertility are separate outcomes."
+          }
+        },
+        {
+          "title": "Track duct epithelium and surrounding tissue separately",
+          "body": "Selected mesonephric tubules contribute to the efferent ductules. The mesonephric duct contributes to the epididymal and deferent duct system, and seminal vesicles arise as outgrowths of its lower region. This developmental map explains continuity without making all neighboring reproductive structures identical in origin.\n\nDo not assign an entire organ to one epithelial source and forget its stroma, muscle, vessels and nerves. A lineage statement should name the component being discussed. The prostate epithelial budding sequence provides a useful contrast to the mesonephric duct route.",
+          "practice": {
+            "prompt": "Why is “everything in the male reproductive tract comes from the same duct” an inadequate explanation?",
+            "feedback": "It ignores the distinction between mesonephric tubules, duct derivatives, urogenital-sinus epithelial development and the surrounding tissue components."
+          }
+        },
+        {
+          "title": "Explain why duct development also depends on surrounding mesenchyme",
+          "body": "Duct epithelium does not develop independently of its surroundings. In a mouse conditional androgen-receptor study, loss of mesenchymal receptor activity was associated with duct degeneration, abnormal cranial cystic structures and impaired smooth-muscle differentiation. The in-vivo changes were not always bilateral, whereas the explant phenotype was consistently bilateral in the tested series. Tissue context therefore affected the observed outcome.\n\nThis connects a developmental signal with the epithelial tube and its future muscular support. The investigators checked receptor deletion and Cre activity, including activity outside the duct mesenchyme. It would be inaccurate to describe the intervention as restricted to one microscopic patch with no other targeted cells. The experiment supports a role for mesenchymal androgen response; it does not establish a human diagnosis from a duct profile.",
+          "practice": {
+            "prompt": "Why should a duct-origin map include the surrounding mesenchyme?",
+            "feedback": "Mesenchyme contributes supporting tissues and signals that influence epithelial growth and organization; epithelial ancestry alone does not explain the whole organ."
+          }
+        },
+        {
+          "title": "Follow prostate budding, branching and differentiation",
+          "body": "The reviewed human prostate study relates epithelial buds from the urogenital sinus to elongation, branching, canalization and later epithelial differentiation. Follow that sequence to explain why the mature organ contains glandular profiles within a separately organized stromal environment. Early epithelial cells can co-express markers later associated with basal and luminal populations. A lumen and distinct basal/luminal compartments are developmental outcomes, not assumptions to impose on the earliest bud.\n\nThe paper also uses human tissue xenografts with experimentally specified hormone exposure. Such experiments test responses under their graft and host conditions; they are not direct recordings of normal fetal development. Histological age estimates and experimental groups must be reported as the authors defined them, with uncertainty retained.",
+          "practice": {
+            "prompt": "Why does a hormone-treated xenograft not provide an exact normal human fetal timetable?",
+            "feedback": "The graft environment, host and hormone exposure are experimental conditions; the observation must remain attached to that design."
+          }
+        },
+        {
+          "title": "Choose preparation for the question",
+          "body": "Begin slide preparation by preserving the anatomical relationship you want to study. A transverse duct section reveals the lining and surrounding wall; a longitudinal or oblique section helps explain continuity but changes apparent thickness and shape. Record tissue region, orientation and preparation. Fixation preserves structure but can alter molecular detection; embedding and sectioning make a thin sample available for transmitted-light examination.\n\nH&E provides the first architectural map: nuclei are usually blue-purple, while much cytoplasm and extracellular protein is pink. Compare chromatin, cell position, lumen and wall instead of naming a cell from colour alone. Retraction can leave a clear gap between epithelium and its boundary, and a fold can make a region appear falsely thick. Check adjacent fields or levels before treating such an appearance as a normal compartment.",
+          "practice": {
+            "prompt": "Which metadata would you request before comparing two apparently different germ-cell fields?",
+            "feedback": "Species and developmental context, tissue region, fixation and section preparation, stain, scale and acquisition conditions."
+          }
+        },
+        {
+          "title": "Choose stains by the structure you need to distinguish",
+          "body": "Use H&E to orient nuclei, cell groups and the wall. A connective-tissue stain such as a specified trichrome can make the collagen–muscle contrast easier to follow in a fibromuscular organ. Its colours are properties of the staining method, so compare against a known control and the laboratory’s stain key. A darker patch is not automatically a different tissue.\n\nFor a molecular question, choose a validated targeted method: an antibody assay can localize a protein, while an RNA assay reports a transcript. Those signals are not interchangeable with a functional barrier test. Antibody specificity, tissue preservation, positive controls and background controls affect interpretation. In the human spermatid study, protein labels were compared across spread nuclei and cryosections because preparation changed what the same underlying organization looked like.",
+          "practice": {
+            "prompt": "A trichrome makes two pink H&E regions look different. What has changed, and what still requires interpretation?",
+            "feedback": "The chemical contrast has changed. Tissue identity still needs architecture, cellular features, controls and the stain protocol."
+          }
+        },
+        {
+          "title": "Build a defensible oral and written practical answer",
+          "body": "Build the practical answer in a fixed sequence: preparation, architecture, identifying features, function and development. For a duct, describe its lining and apical specializations, follow the lumen, assess the muscle and stroma, then place it on the transport route. Explain which embryonic epithelial structure contributes to that duct and distinguish the surrounding tissue components.\n\nFor a seminiferous field, locate basal germ cells, larger meiotic nuclei and luminal spermatids; separate Sertoli support from interstitial steroid production. Explain how division, remodelling and release differ, and why hormone response depends on the receiving cell. Finish with a specific comparison—for example, epididymal lining versus germinal epithelium—rather than an unsupported label. One well-chosen additional method should answer one genuinely unresolved question.",
+          "practice": {
+            "prompt": "Give an answer that includes one observation, one interpretation and one explicitly unresolved question.",
+            "feedback": "For example: repeated germ-cell-rich tubule profiles are observed; they support seminiferous organization; barrier function remains unresolved without a suitable functional assay."
+          }
         },
         {
           "title": "Read an ovarian follicle",
@@ -2928,10 +3154,6 @@
         {
           "title": "Read the endometrium in context",
           "body": "Estrogen promotes proliferative growth. Progesterone supports a secretory endometrium with more tortuous glands. Cycle phase changes appearance, so an identification should distinguish organ identity from the hormonal state represented by the specimen."
-        },
-        {
-          "title": "Locate support and steroid production in different compartments",
-          "body": "Sertoli cells belong to the seminiferous epithelium; junctions between them contribute to its blood–testis barrier. Leydig cells occupy the interstitial region between tubules and produce testosterone. Keep the cells’ positions separate from their functions: the interstitial steroid-producing population is not the epithelial junctional barrier. Use the lumen and tubule boundary as reference points when explaining the distinction."
         },
         {
           "title": "Trace the relationships around an antral oocyte",
@@ -2985,14 +3207,17 @@
         "meiosis",
         "epithelia"
       ],
-      "updatedAt": "2026-11-04",
-      "minutes": 16,
+      "updatedAt": "2026-11-06",
+      "minutes": 65,
       "objectives": [
-        "Locate supporting and steroidogenic compartments in the existing testis explanation.",
-        "Connect the existing follicular and endometrial explanations without inferring an exact cycle day.",
-        "Separate a visible feature, a naming convention and a whole-object inference.",
-        "Explain with a stipulated geometric counterexample why a cavity can be missed by a plane.",
-        "Distinguish repeated profiles from distinct objects."
+        "Distinguish seminiferous tissue, efferent ductules, epididymis, ductus deferens, seminal vesicle and prostate using several architectural features.",
+        "Separate chromosome sets, DNA amount, spermiogenesis, spermiation and epididymal maturation.",
+        "Locate endocrine targets and explain how Sertoli-cell responses influence germ-cell development.",
+        "Explain a junction-remodelling model without confusing localization with permeability.",
+        "Connect gonadal specification, duct origins and epithelial–mesenchymal responses with scoped experimental evidence.",
+        "Choose a preparation or stain for a specific structural or molecular question.",
+        "Use a real H&E specimen to distinguish ductal lining, lumen, vessels and supporting tissue.",
+        "Retain follicular and endometrial relationships, classification context and section-plane reasoning."
       ],
       "prerequisites": [
         "epithelia",
@@ -3027,6 +3252,118 @@
         {
           "prompt": "Why is progesterone not another name for the corpus luteum or the secretory endometrium?",
           "answer": "It is a signal produced by ovarian tissue and acting on a responding uterine tissue. An event, a tissue and a hormone are different kinds of entity."
+        },
+        {
+          "prompt": "Two sperm-containing profiles look similar at high power. What should you inspect next?",
+          "answer": "The epithelial organization and the surrounding wall in a broader field; sperm content alone does not separate testis, epididymis and other conducting structures."
+        },
+        {
+          "prompt": "Why is failure to find an obvious secondary spermatocyte not evidence that meiosis II never occurs?",
+          "answer": "A short-lived stage and limited sampling reduce its visibility. Absence from one section does not establish absence from the biological sequence."
+        },
+        {
+          "prompt": "A student says that sperm are made by one final mitotic division immediately before release. Repair the explanation.",
+          "answer": "Distinguish meiotic production of spermatids, remodeling during spermiogenesis, release during spermiation and subsequent epididymal maturation."
+        },
+        {
+          "prompt": "A secondary spermatocyte is haploid but has 2C DNA. Explain how both statements can be true.",
+          "answer": "It has one homologous set, with each chromosome still composed of two sister chromatids; meiosis II separates those chromatids."
+        },
+        {
+          "prompt": "What additional evidence is needed before a dark spermatid nucleus is said to contain protamine?",
+          "answer": "A suitable molecular assay with controls; H&E condensation and a protamine-specific signal answer different questions."
+        },
+        {
+          "prompt": "Point to the tissue boundary you would use before distinguishing Sertoli from Leydig cells.",
+          "answer": "The seminiferous tubule boundary separates the epithelial population from the interstitial compartment."
+        },
+        {
+          "prompt": "Why could an androgen-response defect differ from loss of testosterone production?",
+          "answer": "The ligand-producing cell and the receptor-bearing responding cell are different parts of the signalling system."
+        },
+        {
+          "prompt": "A spermatocyte has a prophase marker but fails the tested division response. What should the explanation distinguish?",
+          "answer": "Marker localization, transcriptional state and demonstrated ability to enter the division phase are distinct readouts."
+        },
+        {
+          "prompt": "Why is a neat H&E boundary insufficient evidence of an intact functional barrier?",
+          "answer": "It shows morphology at that resolution. A transport claim requires an appropriate permeability experiment, and a protein claim requires a validated detection method."
+        },
+        {
+          "prompt": "Why is “the barrier opens completely whenever a cell crosses” an inadequate model?",
+          "answer": "New and old boundaries can coexist around an intermediate compartment, allowing staged rearrangement rather than an unrestricted opening."
+        },
+        {
+          "prompt": "What extra causal question does the double-knockout experiment address?",
+          "answer": "Whether the proposed adaptive immune mechanism is required for the observed phenotype in the tested mouse model."
+        },
+        {
+          "prompt": "A figure shows more KIT-positive cells after local SCF treatment. Which organ-level conclusions still need testing?",
+          "answer": "Barrier repair, complete gamete production and fertility are separate outcomes. Keep the mouse model, preparation and local cell-count readout attached to the result."
+        },
+        {
+          "prompt": "Does a field containing several epididymal duct profiles prove several independent ducts?",
+          "answer": "No. Repeated sections through a coiled duct can create multiple profiles."
+        },
+        {
+          "prompt": "Which feature would you use to explain why epididymal stereocilia should not be described as beating cilia?",
+          "answer": "They are microvillar surface specializations rather than motile cilia; their identity must not be inferred merely from a long apical fringe."
+        },
+        {
+          "prompt": "A thick-walled circular profile is present in spermatic cord. What prevents an automatic ductus-deferens diagnosis?",
+          "answer": "A vessel may also be thick walled. Compare the lining, mucosal folds, contents and broader arrangement."
+        },
+        {
+          "prompt": "Why can one highly folded mucosa appear to contain many isolated spaces?",
+          "answer": "A plane cuts different parts of a folded three-dimensional surface. Profiles do not necessarily correspond to separate glands."
+        },
+        {
+          "prompt": "Which low-power relationship is more useful than one luminal concretion for this comparison?",
+          "answer": "Glandular profiles distributed in fibromuscular stroma versus a strongly folded mucosal surface with stromal cores."
+        },
+        {
+          "prompt": "An expression plot places two cell states next to each other. Does that establish ancestry?",
+          "answer": "No. Similarity and inferred order need additional evidence before a direct ancestor–descendant relationship is claimed."
+        },
+        {
+          "prompt": "Why should a transient SOX9-positive state not be called a fully formed testis?",
+          "answer": "A marker state, its maintenance, organized supporting-cell differentiation, cord architecture and later function are distinct outcomes."
+        },
+        {
+          "prompt": "Why does a local SOX9 response near a bead not establish complete testicular development?",
+          "answer": "It measures a localized marker response under an experimental exposure. Sustained fate, organ architecture and function require distinct observations."
+        },
+        {
+          "prompt": "Which experiment would address necessity more directly than adding the fragment?",
+          "answer": "A controlled loss-of-function experiment, with appropriate assessment and rescue where feasible."
+        },
+        {
+          "prompt": "Why does finding sperm not prove that the entire reproductive tract developed normally?",
+          "answer": "Gamete production, duct pattern, transport and fertility are separate outcomes."
+        },
+        {
+          "prompt": "Why is “everything in the male reproductive tract comes from the same duct” an inadequate explanation?",
+          "answer": "It ignores the distinction between mesonephric tubules, duct derivatives, urogenital-sinus epithelial development and the surrounding tissue components."
+        },
+        {
+          "prompt": "Why should a duct-origin map include the surrounding mesenchyme?",
+          "answer": "Mesenchyme contributes supporting tissues and signals that influence epithelial growth and organization; epithelial ancestry alone does not explain the whole organ."
+        },
+        {
+          "prompt": "Why does a hormone-treated xenograft not provide an exact normal human fetal timetable?",
+          "answer": "The graft environment, host and hormone exposure are experimental conditions; the observation must remain attached to that design."
+        },
+        {
+          "prompt": "Which metadata would you request before comparing two apparently different germ-cell fields?",
+          "answer": "Species and developmental context, tissue region, fixation and section preparation, stain, scale and acquisition conditions."
+        },
+        {
+          "prompt": "A trichrome makes two pink H&E regions look different. What has changed, and what still requires interpretation?",
+          "answer": "The chemical contrast has changed. Tissue identity still needs architecture, cellular features, controls and the stain protocol."
+        },
+        {
+          "prompt": "Give an answer that includes one observation, one interpretation and one explicitly unresolved question.",
+          "answer": "For example: repeated germ-cell-rich tubule profiles are observed; they support seminiferous organization; barrier function remains unresolved without a suitable functional assay."
         }
       ],
       "summaryChecklist": [
@@ -3037,7 +3374,13 @@
         "Keep the classification convention explicit.",
         "Distinguish not visible here from absent everywhere.",
         "State whether the count concerns profiles or objects.",
-        "Separate ovulation, corpus luteum, progesterone and endometrial response."
+        "Separate ovulation, corpus luteum, progesterone and endometrial response.",
+        "Use epithelial arrangement, apical specialization, muscle and stroma together.",
+        "Count n and C separately through meiosis.",
+        "Separate hormone source, receptor-bearing cell and downstream response.",
+        "Trace sperm transport without routing sperm through the seminal-vesicle gland.",
+        "Distinguish duct epithelium from surrounding developmental tissue.",
+        "State species, stage, perturbation and readout for a research result."
       ]
     },
     {

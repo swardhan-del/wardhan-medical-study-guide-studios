@@ -1,0 +1,104 @@
+{
+  "title": "Trace transport and compare developmental origins",
+  "introduction": "Choose a map, then select a structure. Transport arrows show anatomical order; developmental cards compare contributors and are not a sequence of one structure turning into the next.",
+  "maps": [
+    {
+      "id": "transport",
+      "label": "Sperm transport",
+      "title": "From producing epithelium to the outflow route",
+      "sequential": true,
+      "steps": [
+        {
+          "label": "Seminiferous tubule",
+          "detail": "Germ cells develop within Sertoli-cell support; spermiation releases sperm into the lumen. This is the producing epithelium, not an epididymal lining."
+        },
+        {
+          "label": "Straight tubule and rete testis",
+          "detail": "Straight tubules lead to the rete channels in the mediastinal region. The local lining differs from the germ-cell-rich seminiferous epithelium."
+        },
+        {
+          "label": "Efferent ductules",
+          "detail": "Connect the rete with the epididymal duct. Compare ciliated and nonciliated absorptive populations and their uneven luminal border."
+        },
+        {
+          "label": "Epididymal duct",
+          "detail": "A highly coiled conducting system with a pseudostratified lining. Stereocilia are long microvilli. Repeated profiles need not be separate ducts."
+        },
+        {
+          "label": "Ductus deferens",
+          "detail": "The folded mucosa is surrounded by a substantial muscular wall. Compare the epithelial lining with the endothelium of adjacent vessels."
+        },
+        {
+          "label": "Ejaculatory duct",
+          "detail": "The distal deferent route joins the seminal-vesicle duct. Secretions enter the transport pathway; sperm do not normally traverse the seminal-vesicle gland."
+        },
+        {
+          "label": "Urethra",
+          "detail": "The ejaculatory route empties into the prostatic urethra. Prostatic secretions also enter through gland ducts. Regional epithelial types require their own anatomical context."
+        }
+      ],
+      "references": [
+        {
+          "title": "Southern Illinois University — reproductive tract overview",
+          "url": "https://histology.siu.edu/erg/mguide.htm"
+        },
+        {
+          "title": "Duke — male reproductive histology practical",
+          "url": "https://histology.oit.duke.edu/DPT/MaleRepro/MaleRepro.html"
+        }
+      ],
+      "limit": "A schematic route, not a scale drawing, transport-rate simulation or claim that all connections occur in one slide."
+    },
+    {
+      "id": "development",
+      "label": "Developmental contributors",
+      "title": "Keep epithelial origin and tissue interactions distinct",
+      "sequential": false,
+      "steps": [
+        {
+          "label": "Selected mesonephric tubules",
+          "detail": "Contribute to the efferent ductules. Distinguish these tubules from the mesonephric duct itself."
+        },
+        {
+          "label": "Mesonephric duct epithelium",
+          "detail": "Contributes to the epididymal and deferent duct system; seminal vesicles develop as outgrowths of its lower region."
+        },
+        {
+          "label": "Urogenital-sinus epithelium",
+          "detail": "Provides the prostatic epithelial budding system, followed by branching, canalization and differentiation."
+        },
+        {
+          "label": "Surrounding mesenchyme",
+          "detail": "Supplies a developmental signalling and supporting-tissue context. An epithelial origin does not assign the same origin to muscle, vessels and every other organ component."
+        },
+        {
+          "label": "Gonadal supporting-cell programme",
+          "detail": "Cord organization and germ-cell support are part of gonadal development, distinct from identifying a duct derivative."
+        }
+      ],
+      "references": [
+        {
+          "title": "UNSW Embryology — renal and mesonephric development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Renal_System_Development"
+        },
+        {
+          "title": "UNSW Embryology — seminal vesicle development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Seminal_Vesicle_Development"
+        },
+        {
+          "title": "Cunha et al. — development of the human prostate (2018)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6234090/"
+        },
+        {
+          "title": "Wilbourne et al. — mesenchymal androgen receptor and Wolffian duct development (2024)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10763607/"
+        },
+        {
+          "title": "Garcia-Alonso et al. — single-cell roadmap of human gonadal development (2022)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9300467/"
+        }
+      ],
+      "limit": "These are component relationships, not a complete human timetable or all-system embryology map."
+    }
+  ]
+}
