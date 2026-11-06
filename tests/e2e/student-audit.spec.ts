@@ -109,6 +109,10 @@ test("practice correction carries only the registered question context into the 
     `Page: ${lesson}\nQuestion ID: ${id}\nSection: \n\nFeedback or correction:\n${feedback}\n`,
   );
 
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.evaluate(() => { document.documentElement.style.fontSize = "200%"; });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(321);
+
   await page.goto("/contact?lesson=%2Flibrary%2Fepithelia&question=unknown-question");
   await expect(page.getByText("/library/epithelia", { exact: false })).toBeVisible();
   await expect(page.getByText("Question ID:", { exact: true })).toHaveCount(0);

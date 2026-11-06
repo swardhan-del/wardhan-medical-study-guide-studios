@@ -21,7 +21,7 @@ export default async function ContactPage({
       : "";
   const lesson = question ? question.href.split(/[?#]/, 1)[0] : lessonPath;
   return (
-    <div className="site-container study-page">
+    <div className="site-container study-page correction-page">
       <header className="study-hero">
         <p className="eyebrow">Contact</p>
         <h1>Questions, feedback, and corrections</h1>

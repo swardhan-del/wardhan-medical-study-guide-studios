@@ -376,6 +376,15 @@ label.study-form,
 .study-form .button {
   justify-self: start;
 }
+.correction-page {
+  overflow-wrap: anywhere;
+}
+.correction-page .study-form {
+  grid-template-columns: minmax(0, 1fr);
+}
+.correction-page .study-form .button {
+  max-width: 100%;
+}
 .study-page input:focus-visible,
 .study-page select:focus-visible,
 .study-page textarea:focus-visible {
