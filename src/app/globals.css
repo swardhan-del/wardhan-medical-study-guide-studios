@@ -1853,7 +1853,8 @@ select:focus-visible {
   background: var(--teal);
   color: white;
 }
-.save-button:disabled {
+.save-button:disabled,
+.study-page .save-button:disabled {
   opacity: 1;
   border-style: dashed;
   cursor: wait;

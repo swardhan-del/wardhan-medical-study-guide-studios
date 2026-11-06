@@ -41,13 +41,14 @@ for (const f of figures) {
       "Unknown figure resource " + id,
     );
   for (const v of f.variants) {
-    assert(/^\/images\/figures\/[a-z0-9-]+\.(webp|png)$/.test(v.src));
+    assert(/^\/images\/figures\/[a-z0-9-]+\.(webp|png|jpg)$/.test(v.src));
     assert(
       release.assets.some((a) => "/" + a.path === v.src),
       "Derivative missing release evidence",
     );
     const m = await sharp("public" + v.src).metadata();
-    assert.equal(m.format, v.src.endsWith(".png") ? "png" : "webp", "Asset extension and decoded format differ");
+    const expectedFormat = v.src.endsWith(".png") ? "png" : v.src.endsWith(".jpg") ? "jpeg" : "webp";
+    assert.equal(m.format, expectedFormat, "Asset extension and decoded format differ");
     assert.equal(fs.statSync("public" + v.src).size, v.bytes, "Figure byte count differs");
     assert(
       !m.exif && !m.xmp && !m.iptc && !m.icc,

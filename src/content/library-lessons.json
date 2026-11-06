@@ -826,29 +826,173 @@
     {
       "id": "connective-tissue",
       "subject": "histology",
-      "title": "Connective tissue and extracellular matrix",
-      "summary": "Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior.",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "summary": "Distinguish connective tissue from muscle, explain collagen and matrix chemistry, interpret staining and adipose structure, and trace regional developmental contributions.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "connective tissue",
         "collagen",
-        "extracellular matrix"
+        "extracellular matrix",
+        "embryology",
+        "staining",
+        "lineage tracing",
+        "tissue identification"
       ],
       "source": "histology",
       "section": "Connective Tissue Proper; Fibers and Ground Substance",
       "steps": [
         {
-          "title": "Look between the cells",
-          "body": "Connective tissue contains cells dispersed through extracellular matrix. Fibroblasts synthesize much of that matrix; immune cells may be resident or recruited. Compared with epithelium, the matrix is usually the more prominent organizing feature."
+          "title": "Identify the compartment before naming a connective tissue",
+          "body": "Begin with the organ at low power. Locate its surface, lining, capsule, septa, vessels and any distinct muscle layers. Then choose a region between those structures. Ask whether most of the field is occupied by extracellular material or closely packed cells. A matrix-rich compartment containing dispersed nuclei, fibers and small vessels supports a connective-tissue interpretation; a crowded epithelial sheet must be traced to its surface or lumen instead.\n\nAt higher power, describe the matrix and cells separately. Record fiber thickness and direction, the amount of pale ground substance, cell shape and the relationship to vessels. Clear spaces may represent extracted material or processing separation, so they should not automatically be called channels. Write the observation before the tissue name: “broad aligned extracellular bundles with sparse flattened nuclei between them” is evidence; “dense regular connective tissue” is the interpretation. This habit makes an identification defendable when a field is unfamiliar.",
+          "practice": {
+            "prompt": "A pale gap contains no visible endothelial boundary. Does that establish a lymphatic vessel?",
+            "feedback": "No. A space alone is insufficient. Look for a lining, continuity, surrounding architecture and preparation effects before identifying a vessel."
+          }
         },
         {
-          "title": "Match material to a mechanical job",
-          "body": "Collagen resists tension, elastic fibers allow recoil, and proteoglycan-rich hydrated ground substance supports diffusion and resistance to compression. The amount and arrangement of these components matter as much as their names."
+          "title": "Distinguish loose, dense regular and dense irregular architecture",
+          "body": "Loose connective tissue has relatively open spacing among fibers and accommodates vessels, migrating cells and exchange with nearby epithelia. Dense connective tissue contains a larger proportion of closely packed fibers. In a tendon, the dominant collagen bundles align with a major direction of tension; flattened fibroblast nuclei lie between them. In dense irregular tissue, such as much of the dermis or an organ capsule, bundles cross in several directions across a sufficiently large sample.\n\nThese are architectural descriptions, not three unique cell types. A tiny crop of an irregular network can contain locally parallel bundles. Conversely, a transverse tendon section will not resemble its longitudinal view. Follow a wider region, look for transitions and record the section plane. Dense does not mean avascular, and regular does not mean every molecule is perfectly parallel. The relevant explanation is how the organization distributes load in the tissue being examined.",
+          "practice": {
+            "prompt": "A small crop contains three parallel collagen bundles. Is dense regular tissue established?",
+            "feedback": "Not yet. A larger field and suitable orientation are needed to distinguish sustained alignment from a locally aligned part of an irregular network."
+          }
         },
         {
-          "title": "Read the fiber arrangement",
-          "body": "Loose connective tissue provides flexible support beneath many epithelia. Dense regular tissue aligns collagen for tension mainly in one direction, as in tendon. Dense irregular tissue distributes collagen in multiple directions, helping structures such as dermis resist varied stresses."
+          "title": "Separate tendon collagen from smooth muscle",
+          "body": "Both collagen bundles and smooth-muscle cytoplasm may appear pink in H&E. Color alone is therefore a weak discriminator. In longitudinal tendon, much of the visible material is extracellular collagen, with relatively sparse flattened nuclei squeezed between bundles. In smooth muscle, the field is built from closely packed elongated cells; many nuclei are centrally placed within their cytoplasm. Smooth-muscle cell borders may still be difficult to see, so do not require crisp outlines around every cell.\n\nUse a second orientation if available. Transversely cut smooth muscle produces cellular profiles of varying diameter; only some contain a nucleus because the cut can pass through the tapered end rather than the nuclear region. A nucleus-free profile is not evidence of an anucleate cell. If morphology remains ambiguous, a suitable trichrome preparation can improve the contrast between collagen and muscle. Compare known regions in the same section before relying on an arbitrary pink-versus-red rule.",
+          "practice": {
+            "prompt": "Why does a transverse smooth-muscle section contain many profiles without nuclei?",
+            "feedback": "The section does not intersect the nucleus of every elongated cell. The missing nuclear profile is a sampling effect, not proof that those cells lack nuclei."
+          }
+        },
+        {
+          "title": "Connect fibroblast morphology to protein production carefully",
+          "body": "A fibroblast is interpreted within its matrix-producing tissue context. A flattened, dark nucleus between collagen bundles is a common appearance in relatively quiescent fibrous tissue. A more plump cell with conspicuous cytoplasm can accompany active matrix production. Neither appearance alone gives a numerical synthesis rate or proves a single molecular program. In a thin section, cytoplasm and processes may be inconspicuous or cut away from the nucleus.\n\nUltrastructure provides a different level of evidence: abundant rough endoplasmic reticulum and a developed secretory apparatus are consistent with production of exported proteins. They do not identify the exact secreted collagen without molecular evidence. Keep three claims separate: where the cell lies, what its organelles look like, and what product or rate an experiment measured. This also prevents naming every spindle-shaped stromal cell a fibroblast; smooth-muscle cells and other mesenchymal populations can share an elongated profile.",
+          "practice": {
+            "prompt": "Does an elongated dark nucleus quantify collagen secretion?",
+            "feedback": "No. It is a morphological clue. A synthesis rate requires an appropriate measured endpoint, and a specific product requires more specific evidence."
+          }
+        },
+        {
+          "title": "Distinguish a visible fiber from its molecular composition",
+          "body": "A collagen bundle seen by light microscopy contains many smaller fibrils and molecules. Type I collagen is prominent in structures such as tendon and bone. Type II is important in hyaline-cartilage matrix; type III contributes to reticular fiber networks. Type IV forms a network in basal laminae rather than the large tensile bundles used to recognize tendon. A numbered collagen type describes molecular composition, not a shade of pink.\n\nElastic fibers provide recoil and have an elastin-rich component associated with microfibrillar organization. Their visibility depends strongly on preparation and staining. A fiber that is inconspicuous in routine H&E is not thereby absent. In an identification answer, first describe the visible network, then explain the expected composition using the anatomical site and reference evidence. Avoid turning an ordinary stain into an unperformed immunohistochemical or biochemical assay.",
+          "practice": {
+            "prompt": "Can H&E distinguish collagen I from collagen III purely by color?",
+            "feedback": "No. Tissue architecture and appropriate additional methods inform that distinction; routine eosinophilia is not a collagen-subtype measurement."
+          }
+        },
+        {
+          "title": "Follow fibrillar collagen across the cell boundary",
+          "body": "For a typical fibrillar collagen such as type I, distinguish synthesis and processing inside the secretory pathway from assembly outside the cell. Procollagen chains undergo modifications and assemble into a triple-helical precursor before secretion. Propeptide processing permits extracellular fibril formation; later covalent stabilization contributes to the mechanical integrity of the matrix. A mature bundle therefore records the accumulated product of synthesis, assembly, remodeling and degradation, rather than only the current activity of the nearest fibroblast.\n\nType I collagen is usually assembled from two alpha-1(I) chains and one alpha-2(I) chain. This molecular composition must not be mistaken for three light-microscope fibers. Nor should its assembly sequence be imposed unchanged on every collagen family: network-forming collagens have different supramolecular organization. When explaining a proposed defect, state the compartment and the affected operation before predicting the tissue consequence.",
+          "practice": {
+            "prompt": "Is a triple helix the same structure as a collagen bundle visible in H&E?",
+            "feedback": "No. A triple-helical molecule is one level of organization; fibrils and larger bundles contain many molecules."
+          }
+        },
+        {
+          "title": "Do not confuse hydroxylation with extracellular cross-linking",
+          "body": "Collagen prolyl 4-hydroxylase acts in the endoplasmic reticulum. Its catalytic reaction uses oxygen and 2-oxoglutarate with iron and ascorbate-dependent enzyme chemistry. Hydroxyproline supports the stability of the collagen triple helix. Lysyl oxidase performs a different reaction: oxidative modification of selected lysine-derived side chains initiates extracellular cross-link formation in collagen and elastin. It is a copper-dependent enzyme, not the collagen prolyl hydroxylase.\n\nThis distinction explains why “collagen processing failed” is an incomplete mechanistic answer. Was the problem precursor modification, helix assembly, secretion, extracellular processing or cross-linking? A change at one point need not produce the same biochemical readout as a change at another. Routine microscopy can reveal an altered matrix pattern but cannot, by itself, identify which enzyme was impaired. Clinical deficiency or inherited-disease diagnosis needs evidence beyond this mechanism comparison.",
+          "practice": {
+            "prompt": "A question specifies an extracellular enzyme initiating collagen cross-links. Which process should you distinguish it from?",
+            "feedback": "Distinguish lysyl-oxidase-mediated cross-link initiation from intracellular prolyl hydroxylation. The locations, reactions and cofactors are different."
+          }
+        },
+        {
+          "title": "Build a correct model of ground substance",
+          "body": "Ground substance is the hydrated material between cells and visible fibers. Glycosaminoglycans are long carbohydrate chains; proteoglycans combine a core protein with attached glycosaminoglycan chains. Aggrecan, particularly important in cartilage, carries chondroitin-sulfate and keratan-sulfate chains and associates with hyaluronan. Hyaluronan is itself a nonsulfated glycosaminoglycan, rather than a proteoglycan core protein. In the ordinary aggrecan aggregate, binding to hyaluronan is distinct from the covalent attachment of the sulfated chains to aggrecan.\n\nThe charges and molecular organization influence hydration and interactions with other matrix components. A pale area in routine H&E does not mean chemically empty space: much of this hydrated material is poorly represented by the conventional picture. Composition, concentration, fibrillar restraint and loading conditions all matter. The cartilage lesson develops the mechanical consequences; this distinction supplies the molecular vocabulary needed to understand them.",
+          "practice": {
+            "prompt": "Is hyaluronan simply another name for aggrecan?",
+            "feedback": "No. Hyaluronan is a carbohydrate polymer; aggrecan is a proteoglycan that can associate with it. They occupy different positions in the aggregate."
+          }
+        },
+        {
+          "title": "Choose a stain to resolve a specific uncertainty",
+          "body": "Start by asking what H&E has left uncertain. If collagen and muscle look similar, a trichrome method can help separate their distributions. If an elastic network is the question, an elastic-fiber stain such as Verhoeff can make it conspicuous. For a fine reticular framework, a reticulin silver method provides a different view. These methods should be named precisely: different trichromes do not all assign identical colors to every component.\n\nThe teaching mesentery comparison uses H&E, Azan and Verhoeff preparations, showing how a method changes what stands out. It does not mean every stain-positive object has been molecularly identified. Record the organ, species, fixation and stain before interpreting color. Appropriate controls and known tissue features help determine whether a negative result represents absence of the target, limited sensitivity or an unsuitable preparation. Selecting a method is part of answering a biological question, not merely decorating the section.",
+          "practice": {
+            "prompt": "Which question is better: “Which stain is best?” or “Which method separates the suspected elastic network from collagen here?”",
+            "feedback": "The second defines the feature and the uncertainty. Method selection depends on the tissue, target and preparation."
+          }
+        },
+        {
+          "title": "Find the supporting network without confusing it with lymphocytes",
+          "body": "In lymphoid tissue, the dense population of small nuclei can obscure the supporting framework on H&E. A reticulin preparation makes a branching network more conspicuous around the cellular spaces. The network supports tissue organization; it is not a group of lymphocyte processes. A capsule or trabecula is also connective tissue but has a different scale and arrangement from this delicate stromal mesh.\n\nUse the stain to ask where the support lies and how it relates to the cellular compartments. It does not by itself identify B cells, T cells or an entire organ. To distinguish a lymph node from spleen or thymus, return to the architecture and compartment-specific features in the lymphoid-organ lesson. A beautiful high-power network is weaker evidence for organ identification than a coherent low-power map combined with the appropriate cellular and vascular details.",
+          "practice": {
+            "prompt": "Does a silver-positive stromal network establish that a tissue is a lymph node?",
+            "feedback": "No. Reticular frameworks occur in several organs. The whole-organ architecture and relevant compartments must support the organ identification."
+          }
+        },
+        {
+          "title": "Compare plasma cells, mast cells and macrophages",
+          "body": "A plasma cell often combines an eccentric nucleus, coarse peripheral chromatin, basophilic cytoplasm and a pale perinuclear Golgi region. The secretory apparatus fits its role in antibody production. A mast cell is recognized through its granule-rich cytoplasm in an appropriate location; routine H&E may not show the granules clearly. A macrophage may have irregular contours, variable cytoplasm and ingested material, but its appearance varies considerably with tissue and state.\n\nDo not use a single nucleus or a purple dot as a definitive classification. Confirm that the proposed nucleus and cytoplasm belong to the same cell, inspect neighboring cells and consider a more informative stain or marker panel when necessary. An ingested particle supports phagocytic activity but does not specify the developmental origin of that cell. Likewise, an apparent Golgi clearing needs the rest of the plasma-cell pattern before it becomes a convincing identification.",
+          "practice": {
+            "prompt": "Why is pale perinuclear cytoplasm insufficient to identify a plasma cell?",
+            "feedback": "It must be interpreted with nuclear position, chromatin, surrounding cytoplasmic basophilia and tissue context. One feature alone is not specific."
+          }
+        },
+        {
+          "title": "Explain metachromasia as a dye–substrate interaction",
+          "body": "Toluidine blue can produce a different apparent color when its molecules interact with densely charged tissue substrates. This is metachromasia: the observed shift is not simply the tissue having a pre-existing purple pigment. Sulfated glycosaminoglycan-rich material can promote the relevant dye interactions. Mast-cell granules are a useful example, and cartilage matrix provides another setting in which the chemistry matters.\n\nThe Histology Guide demonstration is a rat preparation, not a human diagnostic case. Its value is the relationship between substrate chemistry, stain and appearance. A metachromatic region does not automatically identify a mast cell; first determine whether the signal lies within a cell or in extracellular matrix. The same chemical property can occur in different biological compartments. Preparation and stain conditions remain part of the interpretation.",
+          "practice": {
+            "prompt": "A purple toluidine-blue signal surrounds cartilage cells. Must it represent mast-cell granules?",
+            "feedback": "No. Identify the compartment. Extracellular glycosaminoglycan-rich matrix can be metachromatic; the color shift is not exclusive to one cell type."
+          }
+        },
+        {
+          "title": "Read white adipose tissue as a prepared specimen",
+          "body": "White adipocytes typically store a large lipid droplet that displaces much of the cytoplasm and the nucleus toward the cell periphery. Routine paraffin processing extracts much of that lipid, leaving a large clear profile bounded by a thin residual rim. The visual emptiness is therefore a property of the preparation, not the living cell. A section through a region away from the nucleus may omit the nucleus entirely.\n\nIdentify a group of such profiles, the intervening delicate stroma and vessels, and the relationship to neighboring structures. Do not confuse every isolated clear space with an adipocyte: a vessel, glandular lumen or processing tear needs to be excluded by its boundaries and context. If the question concerns lipid directly, the specimen must be prepared using an appropriate lipid-preserving method. A routine H&E section cannot supply a precise measurement of the lipid originally stored in each cell.",
+          "practice": {
+            "prompt": "Does an adipocyte without a visible nucleus in one section prove cell death?",
+            "feedback": "No. The section may miss the eccentric nucleus, and routine processing changes the appearance of the lipid-containing compartment."
+          }
+        },
+        {
+          "title": "Connect multilocular fat to thermogenic machinery",
+          "body": "Brown adipose tissue typically contains smaller lipid droplets within each cell, relatively central nuclei, abundant mitochondria and a substantial vascular supply. These features support fuel use and heat production. UCP1 in the inner mitochondrial membrane permits proton conductance that reduces the coupling of the proton gradient to ATP synthesis, allowing more energy to be dissipated as heat. The mechanism is more specific than saying that the cell “has many droplets.”\n\nBeige adipocytes can also express a thermogenic program under appropriate conditions. Consequently, UCP1 is not an exclusive synonym for one developmental population. Morphology, gene or protein expression, lineage and respiratory behavior are related but different observations. Multilocularity alone cannot quantify UCP1 or prove active thermogenesis in a particular human biopsy. The linked rat brown-fat preparation illustrates morphology; it should not be silently relabeled as a human specimen.",
+          "practice": {
+            "prompt": "Which extra evidence would support a claim about thermogenic function beyond multilocular morphology?",
+            "feedback": "A suitable functional respiratory or heat-production measurement, interpreted with molecular and experimental controls. Droplet appearance alone does not quantify function."
+          }
+        },
+        {
+          "title": "Read the beige-fat experiment as a bounded comparison",
+          "body": "Wu and colleagues compared selected mouse adipocyte precursor populations and their differentiated cultures. The beige-cell behavior depended on the experimental condition: a low baseline thermogenic signature did not exclude induction of UCP1 and a respiratory response after stimulation. Their human tissue comparisons involved selected supraclavicular samples, not a census of every adult fat depot.\n\nThe lesson is to distinguish baseline state, response capacity and developmental identity. Specify which population was sampled, the intervention, the readout and its normalization. A stimulated culture result cannot establish that all adult human thermogenic fat shares one lineage, or that the same response occurs in every intact organ. This is a research interpretation exercise, not a recommendation to manipulate a person's temperature or metabolism.",
+          "practice": {
+            "prompt": "A cell population has little UCP1 at baseline but responds after stimulation. Does the baseline measurement prove it cannot express a thermogenic program?",
+            "feedback": "No. Baseline state and inducible capacity are different questions. The conclusion must remain within the tested population and conditions."
+          }
+        },
+        {
+          "title": "Separate mesenchymal organization from germ-layer origin",
+          "body": "Mesenchyme describes a developmental cellular organization with loosely arranged cells and intervening matrix; it is not a fourth germ layer. Much connective tissue arises through mesodermal populations, while cranial neural crest contributes to important connective and skeletal structures in the head. Calling a tissue mesenchymal therefore does not identify one universal embryonic source.\n\nNor does a stellate or spindle-shaped cell in an adult sample prove stem-cell potency. Appearance, embryonic ancestry and experimentally demonstrated differentiation capacity are separate claims. For a developmental explanation, name the region and compartment, then describe condensation, differentiation and matrix deposition. A complete organ may also contain epithelium, vessels, nerves and immune cells with different histories. Assigning all of them the origin of the surrounding stroma loses the very relationships that embryology should explain.",
+          "practice": {
+            "prompt": "Does the phrase “mesenchymal cell” establish mesodermal origin in every cranial structure?",
+            "feedback": "No. Cranial neural-crest-derived populations can have mesenchymal organization. Region and lineage must be specified separately."
+          }
+        },
+        {
+          "title": "Map axial, limb and craniofacial development separately",
+          "body": "The musculoskeletal system is assembled from regional developmental contributions. Paraxial mesoderm forms somites; sclerotomal populations contribute substantially to the axial skeleton. In the limb, skeletal and connective-tissue patterning involves somatic lateral-plate mesoderm, while muscle precursors arrive from somitic populations. Craniofacial connective and skeletal tissues include neural-crest contributions alongside mesodermal ones. These are regional maps, not a rule that every component of a named body part has the same origin.\n\nConnect the map to adult relationships: muscle, tendon, bone, nerve and blood vessel interact mechanically while retaining distinct developmental accounts. In a lineage experiment, identify which of these compartments contains the reporter before attributing origin. The adjacent bone lesson adds condensation, ossification, growth-plate organization and joint development. Together, the regional map and the process sequence explain more than a memorized germ-layer list.",
+          "practice": {
+            "prompt": "Why is “all limb tissue comes from lateral-plate mesoderm” too broad?",
+            "feedback": "The statement ignores distinct contributions, including somitic muscle precursors and other organ components. Specify the tissue compartment rather than assigning one origin to the whole limb."
+          }
+        },
+        {
+          "title": "Do not assign every resident macrophage to an adult monocyte",
+          "body": "The identity of a resident tissue macrophage cannot be reduced to “a circulating monocyte that entered yesterday.” Developmental work in mice demonstrates embryonic progenitor contributions to resident macrophage populations and tissue-specific specialization during organ formation. Adult recruitment and replacement also matter, and the balance depends on the organ and biological context.\n\nMass and colleagues' developmental study supports this distinction. For this lesson, the supported conclusion is the existence and importance of embryonic contributions; a detailed organ-by-organ lineage percentage is not being assigned from the available abstract and figure-caption review. A current marker identifies a state or population under specified conditions, whereas a permanent lineage label records an experimentally captured history. Neither should be silently substituted for the other, and mouse results need their species and timing stated.",
+          "practice": {
+            "prompt": "Does current expression of a macrophage marker prove that the cell originated from an adult circulating monocyte?",
+            "feedback": "No. Current phenotype and developmental history are different claims. The origin requires suitable lineage evidence and attention to tissue, timing and model."
+          }
+        },
+        {
+          "title": "Use Wharton’s jelly to integrate tissue identity and development",
+          "body": "An umbilical-cord section typically contains two arteries and one vein within a hydrated connective-tissue environment, covered externally by its surface lining. The mucous connective tissue known as Wharton's jelly contains dispersed stromal cells and a matrix rich in ground substance. This offers a useful contrast with densely packed tendon collagen: both are connective tissues, but their organization and mechanical roles differ.\n\nIdentify the vessels through their walls and lumina, then describe the intervening matrix. Do not classify the entire pale region as one large lumen, and do not infer stem-cell behavior from stellate profiles alone. A strong answer links the organ-level arrangement, the prepared appearance of the matrix and the limits of what the section can reveal. Finish by naming the additional evidence needed for a molecular, mechanical or developmental claim that goes beyond morphology.",
+          "practice": {
+            "prompt": "What makes “pale tissue with star-shaped cells, therefore proven multipotent stem cells” an invalid inference?",
+            "feedback": "Cell shape and matrix appearance support a morphological description. Multipotency requires appropriate experimental evidence and is not visible in a routine section."
+          }
         }
       ],
       "question": {
@@ -875,39 +1019,260 @@
       },
       "related": [
         "cartilage-bone",
+        "muscle-histology",
+        "lymphoid-organs",
         "protein-structure",
-        "muscle-histology"
+        "epithelia"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 55,
+      "prerequisites": [
+        "microscopy",
+        "histology-foundations-tissues"
+      ],
+      "objectives": [
+        "Justify tissue identification using architecture, cells, matrix, orientation and preparation.",
+        "Explain collagen processing and distinguish intracellular hydroxylation from extracellular cross-linking.",
+        "Choose a stain for a specific matrix question and interpret its limits.",
+        "Connect adipose morphology with storage, thermogenesis and experimental readouts.",
+        "Separate mesenchymal organization, regional embryonic origin and current cell phenotype."
+      ],
+      "workedExample": {
+        "title": "Defend a connective-tissue identification",
+        "prompt": "An invented practical shows a pink field with long bundles and flattened nuclei, but only a small crop is available. Explain the strongest provisional identification and what would increase confidence.",
+        "solution": [
+          "Separate extracellular bundles from cellular cytoplasm and locate the nuclei relative to them.",
+          "A collagen-rich connective tissue is plausible, but distinguish it from smooth muscle using cellularity and context.",
+          "Inspect a wider, well-oriented area before deciding between regular and irregular architecture.",
+          "Choose an appropriate additional stain if matrix identity remains uncertain; do not infer a collagen subtype from H&E color alone."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Explain why a fibroblast nucleus cannot quantify matrix synthesis.",
+          "answer": "Nuclear shape and location provide morphological evidence. Secretory organelles, molecular products and synthesis rates require different observations or assays."
+        },
+        {
+          "prompt": "Compare hyaluronan, aggrecan and collagen in a hydrated matrix.",
+          "answer": "Hyaluronan is a glycosaminoglycan polymer. Aggrecan is a proteoglycan that can associate with it. Collagen provides a protein fibrillar network; charge, hydration and network organization jointly affect tissue behavior."
+        },
+        {
+          "prompt": "Give a compartment-specific developmental explanation for a limb.",
+          "answer": "Distinguish lateral-plate contributions to skeletal and connective structures from somitic muscle precursors and other tissue components. Mesenchyme is an organization, not an extra germ layer."
+        }
+      ],
+      "summaryChecklist": [
+        "Orient the organ and section before naming a field.",
+        "Separate extracellular fibers from muscle-cell cytoplasm.",
+        "Trace collagen processing across the cell boundary.",
+        "Distinguish a glycosaminoglycan from a proteoglycan and a fibrillar protein.",
+        "Interpret stain, lipid extraction and cell sampling explicitly.",
+        "Keep current phenotype, function and developmental history separate."
+      ]
     },
     {
       "id": "cartilage-bone",
       "subject": "histology",
-      "title": "Cartilage, bone and remodeling",
-      "summary": "Distinguish the matrix and cell organization of cartilage from vascular, continuously remodeled bone.",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "summary": "Identify cartilage and bone using preparation and architecture; connect matrix mechanics, osteoclast signaling, ossification, joint development and lineage experiments.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "cartilage",
         "bone",
         "ossification",
-        "musculoskeletal"
+        "musculoskeletal",
+        "embryology",
+        "staining",
+        "lineage tracing",
+        "tissue identification"
       ],
       "source": "histology",
       "section": "Cartilage Types; Bone Remodeling, Ossification, Growth, and Repair",
       "steps": [
         {
-          "title": "Recognize cartilage",
-          "body": "Chondrocytes occupy lacunae in a hydrated extracellular matrix. Hyaline cartilage contains fine type II collagen fibrils; elastic cartilage adds elastic fibers; fibrocartilage has conspicuous tensile collagen bundles. Cartilage is avascular and relies on diffusion for nutrition."
+          "title": "Orient the specimen before comparing cartilage and bone",
+          "body": "Begin with the organ, age or developmental stage, section plane and preparation. A tracheal ring, a joint surface and a growth plate can all contain hyaline cartilage but occupy different anatomical positions and perform different jobs. Bone can be cortical or trabecular, ground or decalcified, developing or mature. These distinctions determine which structures you should expect to see.\n\nAt low power, follow the cartilage boundary, any neighboring joint space, the bone surface and the marrow compartments. Then locate cells in matrix and cells lining a surface. A high-power crop containing several lacunae cannot establish the complete organ or developmental process. An identification should connect the local field to the larger map: where it lies, what borders it and which direction leads toward the joint or metaphysis. This prevents the common error of naming every column of cartilage cells an articular surface.",
+          "practice": {
+            "prompt": "Is “hyaline cartilage” enough to distinguish a tracheal ring from a growth plate?",
+            "feedback": "No. It identifies a tissue type. The organ context, boundaries and organization establish the specific structure and role."
+          }
         },
         {
-          "title": "Recognize bone",
-          "body": "Bone combines collagenous organic matrix with mineral. Osteoblasts form osteoid; osteocytes occupy lacunae and communicate through canaliculi; osteoclasts resorb bone. Compact bone often has osteons around vascular canals, while spongy bone forms trabeculae."
+          "title": "Read lacunae and matrix territories without fixed color rules",
+          "body": "A cartilage lacuna is a matrix compartment occupied by a chondrocyte in living tissue. Processing can shrink the cell away from its surrounding matrix, and a section can miss the cell or its nucleus. An apparently empty lacuna therefore needs preparation and sampling considered before concluding cell loss. Conversely, not every empty lacuna must be an artifact; morphology alone may not resolve the cause.\n\nAround individual chondrocytes and isogenous groups, matrix composition and staining can differ from the more distant interterritorial matrix. Basophilia often reflects negatively charged matrix components, particularly sulfated glycosaminoglycans, but its intensity depends on method and preservation. Learn the spatial relationship rather than a rigid “this territory is always pink” rule. A cluster is consistent with local cellular proliferation and subsequent matrix deposition; its exact cell count varies with biology and the plane of section.",
+          "practice": {
+            "prompt": "Why is “four cells per isogenous group” a poor universal identification rule?",
+            "feedback": "The group is three-dimensional and variable. A section samples part of it; the relationship of cells to their surrounding matrix matters more than a fixed count."
+          }
         },
         {
-          "title": "Separate growth from replacement",
-          "body": "Intramembranous ossification forms bone directly in mesenchyme. Endochondral ossification replaces a cartilage model. Remodeling coordinates resorption and formation throughout life; osteoblast-lineage RANKL promotes osteoclast development, while osteoprotegerin limits that signal."
+          "title": "Distinguish hyaline from elastic cartilage using the right evidence",
+          "body": "Hyaline cartilage contains a fine collagen fibrillar system within a strongly hydrated matrix; individual type-II collagen fibrils are generally not resolved as coarse bundles by routine light microscopy. Chondrocytes in lacunae and the matrix architecture support the identification. An apparently smooth matrix does not mean collagen is absent.\n\nElastic cartilage adds a conspicuous elastic network when the preparation reveals it. In the linked human epiglottis comparison, Verhoeff staining highlights elastic fibers that are much less distinct in H&E. Combine the network with lacunar cells and the organ context. Failure to see a network in a routine preparation does not prove a hyaline identity. Equally, any dark fiber near cartilage should not automatically be assigned to its matrix; confirm the boundary and distinguish surrounding connective tissue from the cartilage itself.",
+          "practice": {
+            "prompt": "An epiglottic H&E field has no obvious black elastic network. Does that exclude elastic cartilage?",
+            "feedback": "No. Black elastic-fiber contrast belongs to an appropriate special stain. Stain choice and tissue location must inform the interpretation."
+          }
+        },
+        {
+          "title": "Distinguish fibrocartilage from tendon and nearby hyaline cartilage",
+          "body": "Fibrocartilage combines conspicuous collagen bundles with chondrocytes in lacunae, often arranged along the bundles. The surrounding matrix can be less abundant than in a typical hyaline-cartilage field. Regional composition varies; the tissue should not be reduced to “type I only” or identified solely by pink staining. In an intervertebral disc, sample the region deliberately rather than assuming every part of the disc has the same architecture.\n\nThe practical differential with tendon depends on finding genuine lacunar chondrocytes and their local matrix, not merely nuclei placed in rows. Tendon fibroblasts also align with collagen. Fibrocartilage generally lacks a conventional perichondrium, but that statement is useful only when the relevant boundary has been sampled. Avoid using one absent feature in an interior crop as the entire argument. State at least two positive features and the anatomical context.",
+          "practice": {
+            "prompt": "Rows of nuclei lie between collagen bundles. What extra feature strengthens a fibrocartilage interpretation over tendon?",
+            "feedback": "Chondrocytes within lacunae with associated cartilage matrix, interpreted in a suitable anatomical region, provide stronger evidence than nuclear rows alone."
+          }
+        },
+        {
+          "title": "Use the boundary and explain appositional versus interstitial growth",
+          "body": "Where present, perichondrium includes an outer fibrous component and an inner region capable of supplying chondrogenic cells. Matrix added by cells at the surface contributes to appositional growth. Interstitial growth occurs within cartilage through cellular proliferation and matrix production. These mechanisms describe where growth occurs; neither can be quantified from a single still image of a cell cluster.\n\nArticular cartilage at a synovial joint lacks the conventional perichondrial covering, as does fibrocartilage in the usual teaching examples. A missing perichondrium in an interior field, however, may simply reflect incomplete sampling. First trace the actual surface. The covering, its vascular environment and the distance through matrix influence the route by which nutrients reach chondrocytes. Describe the particular site instead of claiming that all cartilage is nourished through a perichondrium.",
+          "practice": {
+            "prompt": "A crop contains cartilage but no external boundary. Can it establish absent perichondrium?",
+            "feedback": "No. An unsampled boundary cannot be called absent. Examine the surface and identify the anatomical site first."
+          }
+        },
+        {
+          "title": "Explain hydrated cartilage as a composite material",
+          "body": "Aggrecan carries many charged carbohydrate chains and associates with hyaluronan in the extracellular matrix. This hydrated molecular system interacts with a collagen network that restrains expansion and carries tensile loads. Under compression, solid matrix deformation and interstitial-fluid behavior both matter. Cartilage is therefore not simply a bag of water, nor is its behavior explained by collagen concentration alone.\n\nLoading rate, duration, geometry and fluid drainage conditions change the observed response. A brief load and a sustained load do not necessarily produce the same deformation or frictional behavior. H&E provides architecture and staining, not a direct mechanical test or a measured proteoglycan concentration. An explanation should connect molecular organization to a predicted response while keeping the prediction separate from a measured result.",
+          "practice": {
+            "prompt": "Why can the same specimen respond differently to brief and sustained loading?",
+            "feedback": "Fluid redistribution and the sharing of load between fluid and solid matrix evolve with time; the boundary conditions and loading protocol affect the response."
+          }
+        },
+        {
+          "title": "Interpret a cartilage-lubrication experiment within its setup",
+          "body": "Krishnan and colleagues tested young bovine cartilage plugs against glass under controlled loading. They measured friction and interstitial fluid load support over time. In that setup, declining fluid load support accompanied rising friction, supporting a contribution of pressurized fluid to low-friction behavior.\n\nKeep the inference bounded. An excised plug against glass is not an intact adult human joint. Pressure measurement location, specimen geometry and the loading protocol affect interpretation. The experiment does not establish that fluid pressure is the only lubrication mechanism or supply a clinical arthritis threshold. Its educational value is the link between a specified mechanical measurement, a material mechanism and the conditions required to interpret both.",
+          "practice": {
+            "prompt": "Does a friction result from a bovine plug against glass give a diagnostic threshold for human osteoarthritis?",
+            "feedback": "No. Species, tissue preparation, contacting surface and protocol differ. A mechanistic experiment is not automatically a clinical diagnostic test."
+          }
+        },
+        {
+          "title": "Choose ground or decalcified bone for the question",
+          "body": "Ground bone retains the mineralized architecture but generally does not preserve the cells that occupied its spaces in life. It can make osteonal patterns, lacunae and canaliculi conspicuous. Decalcified sections remove mineral so that cells and organic matrix can be sectioned and stained conventionally. In decalcified H&E, an osteocyte nucleus or a surface osteoblast may be visible, while the removed mineral cannot be directly assessed from the resulting color.\n\nNeither method is a complete substitute for the other. Empty spaces in a dry ground specimen are not proof that the living bone lacked osteocytes. A soft section after decalcification does not show that the patient originally had poorly mineralized bone. Record the method before interpreting absence. Specialized undecalcified sections and other measurements exist; “every bone specimen must be decalcified” is not a correct general rule.",
+          "practice": {
+            "prompt": "Which preparation better addresses the nuclear appearance of osteocytes: a dry ground section or appropriately preserved decalcified H&E?",
+            "feedback": "The preserved decalcified preparation is suited to cellular morphology. Ground bone mainly demonstrates retained mineralized architecture and spaces."
+          }
+        },
+        {
+          "title": "Separate cortical or trabecular architecture from woven or lamellar matrix",
+          "body": "Cortical and trabecular describe the larger arrangement of bone. Cortical bone forms a relatively dense shell; trabecular bone forms plates and rods with intervening spaces. Woven and lamellar describe the organization of the matrix. Lamellar bone has organized layers; woven bone has less orderly collagen orientation and occurs in developmental or repair settings. These are different classification axes, not interchangeable pairs.\n\nA trabecula can be composed of lamellar bone. A developing bony spicule can contain woven matrix. Likewise, seeing an osteon in a cortical field does not mean every part of that cortex belongs to a complete osteon. Examine the matrix pattern at sufficient resolution and over an adequate area, then describe both the architectural compartment and the tissue organization. Do not equate “spongy” with soft, unmineralized or immature.",
+          "practice": {
+            "prompt": "Can mature trabecular bone be lamellar?",
+            "feedback": "Yes. Trabecular describes the plate-and-rod architecture; lamellar describes matrix organization. They answer different questions."
+          }
+        },
+        {
+          "title": "Trace osteonal, interstitial and circumferential lamellae",
+          "body": "An osteon consists of lamellae arranged around a central vascular channel. In a suitable transverse section, the pattern appears as rings; in a longitudinal section, the same organization can appear as extended parallel layers around a channel. Lacunae lie within the matrix, and canaliculi connect their spaces. In living bone, osteocyte processes occupy the canalicular system; blood vessels do not run inside every canaliculus.\n\nInterstitial lamellae occupy regions between recognizable osteons and include remnants of earlier remodeled structures. Circumferential lamellae follow the broader inner or outer cortical surface. Perforating vascular channels connect vascular territories and need not possess the concentric lamellar pattern of a complete osteon. Use continuity and surrounding layers rather than naming every round hole a Haversian canal. The apparent geometry depends on the direction of the cut.",
+          "practice": {
+            "prompt": "Two sections show circles and long channels respectively. Must they represent different tissues?",
+            "feedback": "No. Different cutting planes can sample the same cylindrical osteonal architecture. Compare lamellae and channel relationships before assigning different identities."
+          }
+        },
+        {
+          "title": "Locate periosteum, endosteum and trabecular surfaces",
+          "body": "Bone formation and resorption occur at surfaces. The periosteum covers external bone surfaces apart from sites such as articular cartilage and contains fibrous and osteogenic components. Endosteal surfaces face marrow spaces and internal channels. A trabecula is surrounded by a different microenvironment from the outside of a cortical shell, even though both can host osteoblast-lineage and resorbing cells.\n\nFollow a surface before naming its cells. Are they on bone, within a lacuna, inside marrow or part of a vessel? A detached cell near a trabecula has weaker positional evidence than a row directly lining osteoid. Preparation may interrupt a thin lining, so absence in one section is not a census of the living surface. This compartment-first approach also explains why a local histological field cannot by itself measure whole-bone turnover.",
+          "practice": {
+            "prompt": "Why should a surface be identified before calling a nearby cell an osteoblast?",
+            "feedback": "Location on the bone-forming surface is part of the evidence. Proximity alone does not establish lineage or activity."
+          }
+        },
+        {
+          "title": "Distinguish bone-forming cells, embedded cells and resorbing cells",
+          "body": "Osteoblasts produce osteoid, the organic matrix that is subsequently mineralized. Osteocytes occupy lacunae within matrix and extend processes through the canalicular network. Flattened lining cells cover some relatively inactive surfaces. These belong to the osteoblast lineage. Osteoclasts arise through hematopoietic myeloid pathways and become large multinucleated resorbing cells; they are not simply osteoblasts that have reversed direction.\n\nAt a bone surface, a multinucleated cell associated with an excavated region supports an osteoclast interpretation. The ruffled membrane and specialized resorption interface are better established ultrastructurally than from a routine distant crop. Conversely, an osteoid seam with a row of plump cells supports formation but does not quantify its rate. Separate cell identity, visible activity-related features and dynamic measurements over time.",
+          "practice": {
+            "prompt": "Can osteoclast number in one field directly give the rate of bone loss for the entire skeleton?",
+            "feedback": "No. Cell counts in a sampled field, local activity and whole-skeleton balance are different measurements."
+          }
+        },
+        {
+          "title": "Keep RANKL–RANK separate from M-CSF–CSF1R",
+          "body": "Osteoclast development depends on communication with surrounding cells. RANKL binds RANK on responsive osteoclast-lineage cells. M-CSF signals through CSF1R, also called the M-CSF receptor. They are different ligand–receptor pairs. Osteoprotegerin acts as a soluble decoy for RANKL, limiting its availability to RANK; it should not be drawn as the receptor for M-CSF.\n\nThese signals help explain regulation of a cell population, but receptor binding is not identical to physical dissolution of bone. A mature resorbing osteoclast forms a specialized interface with the matrix, including acidification and organic-matrix degradation. Distinguish a differentiation or survival readout from a resorption readout. A culture containing more multinucleated cells has not automatically demonstrated a proportional increase in matrix removal. The cited early receptor experiment and reviewed protein records support the pairings, not a complete pathway map for every context.",
+          "practice": {
+            "prompt": "If an experiment blocks RANK, has it directly blocked the M-CSF receptor?",
+            "feedback": "No. M-CSF signals through CSF1R. Any downstream effect must be interpreted without conflating the two receptors."
+          }
+        },
+        {
+          "title": "Start skeletal embryology with region, lineage and process",
+          "body": "The axial, appendicular and craniofacial skeletons have different regional developmental contributions. Sclerotomal populations from paraxial mesoderm contribute to the axial skeleton, somatic lateral-plate mesoderm contributes to limb skeletal structures, and cranial neural crest contributes to important facial and cranial skeletal components alongside mesoderm. The connective-tissue lesson provides the companion map for surrounding soft tissues.\n\nNow ask a separate question: how is bone formed in the selected region? Intramembranous and endochondral describe developmental processes, not alternative germ layers. A mesodermal contribution does not by itself tell you whether a cartilage template will intervene. Avoid assigning one origin or one ossification process to every component of a complex bone. A useful explanation keeps origin, condensation, differentiation, matrix production, vascular participation and later growth as connected but distinct events.",
+          "practice": {
+            "prompt": "Does neural-crest versus mesodermal origin mean the same thing as intramembranous versus endochondral ossification?",
+            "feedback": "No. The first distinction concerns developmental contribution; the second concerns the process by which bone forms."
+          }
+        },
+        {
+          "title": "Explain intramembranous ossification as a sequence",
+          "body": "Within a mesenchymal region, osteogenic cells differentiate and begin producing osteoid without first building a cartilage model. Matrix is deposited around developing vascular spaces; some osteoblast-lineage cells become embedded as osteocytes, while others remain at surfaces. Early bony structures enlarge and are remodeled into the later architecture. Bone matrix deposition and mineralization are related events but should not be treated as the same instant.\n\nIn a developmental section, look for bone-forming surfaces and woven matrix in relation to surrounding tissue. Absence of cartilage in a small crop alone cannot prove that the whole bone developed intramembranously; the specimen's anatomical and developmental identity matters. Similarly, a decalcified preparation cannot directly establish that the original developmental matrix lacked mineral. State which features are observed and which aspects of the sequence are supplied by developmental evidence.",
+          "practice": {
+            "prompt": "Why is “no cartilage in this tiny field, therefore the entire bone is intramembranous” too strong?",
+            "feedback": "The crop may omit other compartments or earlier stages. Process identification requires the anatomical and developmental context."
+          }
+        },
+        {
+          "title": "Explain cartilage replacement without calling calcified cartilage bone",
+          "body": "Endochondral development begins with a cartilage model and coordinates chondrocyte maturation, matrix changes, vascular entry and bone deposition. A bone collar develops around the shaft region; the primary ossification center and later regional growth involve multiple interacting compartments. Osteoblasts deposit new bone on remaining scaffolds as cartilage is remodeled. A calcified cartilage septum is not already bone merely because mineral is present.\n\nIn mixed developing spicules, distinguish the cartilage core from the bone deposited on its surface. The two matrices may stain differently, but use their arrangement as well as color. Do not treat the sequence as a universal statement that every hypertrophic chondrocyte dies: lineage studies discussed below reveal additional fates in the tested models. Tissue replacement and the fate of each individual cell are separate questions.",
+          "practice": {
+            "prompt": "What distinguishes new bone on a calcified cartilage scaffold from cartilage simply becoming bone?",
+            "feedback": "Bone-forming cells deposit a distinct matrix on the scaffold. Mineralization alone does not change cartilage matrix into bone matrix."
+          }
+        },
+        {
+          "title": "Read the growth plate in the correct direction",
+          "body": "Orient from the epiphyseal side toward the metaphysis. Relatively resting cartilage gives way to proliferative columns, enlarged hypertrophic cells and a region where cartilage matrix is mineralized and replaced by bone. Different teaching schemes divide the transition into different numbers of named zones; memorizing a count is less useful than explaining the changes in cell organization, matrix and vascular relationship.\n\nThe spatial sequence in a section is not a time-lapse of a single cell. It samples many cells at different positions and states. Growth in length reflects coordinated cartilage production and replacement, while increase in bone width involves apposition and shaping at surfaces. A growth plate also differs from a joint surface: its purpose and relationships cannot be inferred solely from the presence of hyaline cartilage. Include a direction label in any diagram or verbal description.",
+          "practice": {
+            "prompt": "Why should a growth-plate drawing label the epiphyseal and metaphyseal directions?",
+            "feedback": "The sequence has anatomical orientation. Without it, the learner can reverse the developmental relationship or confuse it with articular cartilage."
+          }
+        },
+        {
+          "title": "Distinguish articular cartilage from the growth plate",
+          "body": "Articular cartilage covers a joint surface and interacts with synovial fluid and the underlying bone. Its superficial-to-deep organization is related to a load-bearing surface, not to the same columnar replacement sequence used to recognize a growth plate. It lacks a conventional perichondrium at its free surface. Growth-plate cartilage, in contrast, occupies a developmental interface between the epiphysis and metaphysis in a growing long bone.\n\nBegin with the surrounding map: joint cavity, opposing articular surface, subchondral bone, epiphysis and metaphysis. Only then interpret the chondrocytes and matrix in detail. The developmental origin of a joint surface also requires joint-development evidence; the phrase “leftover cartilage model” is too simple as a complete lineage explanation. The next section uses a timed-label experiment to show why the history cannot be read directly from adult appearance.",
+          "practice": {
+            "prompt": "Two fields both contain hyaline cartilage without visible perichondrium. What observation best separates articular surface from an interior growth-plate crop?",
+            "feedback": "Locate each field within the joint and growing-bone architecture. Surface relationships and the epiphyseal-to-metaphyseal transition provide the discriminating context."
+          }
+        },
+        {
+          "title": "Use timed Gdf5 labeling to reason about joint development",
+          "body": "Shwartz and colleagues studied mouse joint development using inducible Gdf5 lineage labeling at selected embryonic times. A permanent reporter identifies descendants captured during the labeling window, whereas an assay of current Gdf5 expression asks a different question. The results supported continuing recruitment into developing joint structures, rather than a complete joint arising only from one initially fixed labeled cohort.\n\nInterpret an unlabeled cell with the pulse time, labeling efficiency and tissue compartment in mind. It may have entered the relevant program outside the window; absence of a reporter is not automatically evidence of an entirely unrelated origin. This experiment does not define every contributor to every human joint. It teaches how temporal sampling and controls change a developmental conclusion.",
+          "practice": {
+            "prompt": "If an early pulse leaves some later joint cells unlabeled, must those cells be unrelated to the joint-development program?",
+            "feedback": "No. The pulse captures a time window with finite efficiency. Later recruitment and changes in expression must be considered."
+          }
+        },
+        {
+          "title": "Separate current chondrocyte markers from descendant identity",
+          "body": "Yang and colleagues used genetic lineage tracing in mice to follow hypertrophic-chondrocyte descendants into osteoblast and osteocyte populations during endochondral development. A permanent lineage label can remain after a cell changes its expression program. This makes the result different from merely finding a cartilage-associated marker in a mature bone cell.\n\nThe study challenges a universal “all hypertrophic chondrocytes die” rule. It does not show that every hypertrophic cell becomes an osteoblast, eliminate other osteogenic sources or establish identical proportions in human development. Evaluate the labeling strategy, developmental stage, anatomical location and controls. A shared current marker alone is weaker evidence of ancestry than an appropriately validated tracing experiment.",
+          "practice": {
+            "prompt": "Does a permanent lineage reporter in a later osteocyte mean the cell must still express the original chondrocyte marker?",
+            "feedback": "No. The reporter can record prior labeling while current cell identity and expression change."
+          }
+        },
+        {
+          "title": "Compare a short chase with a later developmental readout",
+          "body": "Long and colleagues combined mouse hypertrophic-chondrocyte tracing with later skeletal-cell analyses. In the selected pulse–chase comparisons, the interval between induction and observation mattered: a short interval helped identify the initially labeled population, while later observations addressed descendants and their location. Constitutive and inducible labeling answer different temporal questions.\n\nA later fluorescent cell in marrow should therefore be interpreted using the initial labeling pattern and controls, not its color alone. The published fluorescence panels are not H&E slides, and their pseudocolors represent specified signals. The work supports contributions to several skeletal-associated populations in the tested model, rather than proving unrestricted potency of every hypertrophic chondrocyte. Keep the cell-fate claim distinct from the separate tissue-level process of cartilage replacement.",
+          "practice": {
+            "prompt": "Why examine an early time point as well as a later one in a pulse–chase experiment?",
+            "feedback": "The early observation helps establish which cells were initially labeled. Later label distribution is interpretable only with that starting population and the labeling controls."
+          }
+        },
+        {
+          "title": "Separate modeling, remodeling and repair",
+          "body": "Modeling changes bone shape and distribution through formation and resorption that need not occur as a coupled replacement sequence at the same site. Remodeling replaces existing tissue through coordinated local resorption and subsequent formation. Fracture repair introduces injury, altered stability and a healing environment; it cannot be described completely as routine turnover at an undisturbed surface.\n\nA common indirect repair sequence includes a hematoma and inflammatory response, a provisional callus, bone formation and later reorganization. The course depends on the mechanical and biological conditions, and a single diagram is not a schedule for every fracture. No treatment decision follows from this teaching sequence. When interpreting a section, describe the observed tissues and interfaces before assigning the phase, and do not infer a precise injury date from one microscopic field.",
+          "practice": {
+            "prompt": "Does an isolated osteoclast prove that the field represents fracture repair?",
+            "feedback": "No. Resorption also occurs during normal growth and remodeling. Injury context and the surrounding tissue sequence are needed."
+          }
+        },
+        {
+          "title": "Distinguish reduced bone amount from impaired mineralization",
+          "body": "Osteoporosis concerns reduced bone mass and altered architecture associated with fragility. Osteomalacia concerns defective mineralization of osteoid. Rickets involves defective mineralization at growing skeletal sites, including the growth plate. These distinctions explain why bone amount, matrix organization, osteoid and mineralization must be considered separately rather than grouped under “weak bone.”\n\nExcess osteoid alone does not settle its cause: increased production and delayed mineralization are different possibilities. The Endotext discussion emphasizes dynamic mineralization evidence in interpreting this distinction. A decalcified H&E section has already had mineral removed, so its appearance cannot directly measure the original mineral content. Clinical diagnosis requires the appropriate history, biochemical, imaging and sometimes specialized tissue evidence. This lesson supplies the mechanism comparison, not a patient-specific diagnostic rule.",
+          "practice": {
+            "prompt": "Can a pale decalcified bone section alone distinguish osteoporosis from osteomalacia?",
+            "feedback": "No. Preparation removed the mineral, and tissue amount and mineralization are different variables requiring appropriate evidence."
+          }
         }
       ],
       "question": {
@@ -934,11 +1299,59 @@
       },
       "related": [
         "connective-tissue",
+        "anatomy-foundations",
         "protein-structure",
-        "anatomy-musculoskeletal"
+        "microscopy",
+        "muscle-histology"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 65,
+      "prerequisites": [
+        "microscopy",
+        "histology-foundations-tissues"
+      ],
+      "objectives": [
+        "Distinguish cartilage types using matrix, lacunae, site and boundary evidence.",
+        "Explain how preparation and section plane change the appearance of bone.",
+        "Separate osteonal architecture, matrix organization and cell-lineage relationships.",
+        "Explain regional skeletal origins, ossification and growth-plate organization.",
+        "Interpret joint and chondrocyte lineage experiments with timing and model limits.",
+        "Distinguish bone amount, osteoid production and mineralization."
+      ],
+      "workedExample": {
+        "title": "Read a developing bone in layers of evidence",
+        "prompt": "A prepared developmental section contains columns of lacunar cells, a cartilage-rich transition and bony spicules with surface cells. Build an explanation without claiming to have watched a single cell change fate.",
+        "solution": [
+          "Orient the epiphyseal and metaphyseal directions using the surrounding anatomy.",
+          "Describe proliferation-associated columns, hypertrophic profiles and the transition to matrix replacement.",
+          "Distinguish calcified cartilage scaffolds from newly deposited bone and its surface cells.",
+          "State that a spatial section is not a time-lapse; individual ancestry requires suitable lineage evidence.",
+          "Record the preparation because decalcification changes what can be inferred about mineral."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Compare an osteon with a growth plate.",
+          "answer": "An osteon organizes lamellar bone around a vascular channel; a growth plate organizes cartilage states and replacement along an epiphyseal-to-metaphyseal direction. Their tissue, geometry and developmental roles differ."
+        },
+        {
+          "prompt": "Explain why M-CSF and RANKL should not point to the same receptor.",
+          "answer": "M-CSF signals through CSF1R; RANKL binds RANK. Osteoprotegerin binds RANKL as a decoy. Population signaling and mature matrix resorption are separate parts of the explanation."
+        },
+        {
+          "prompt": "What does an inducible lineage label add to a current marker?",
+          "answer": "It can retain the history captured in a specified labeling window after expression changes. Initial specificity, efficiency, chase duration, tissue compartment and controls determine the inference."
+        }
+      ],
+      "summaryChecklist": [
+        "Locate the boundary before using a perichondrium rule.",
+        "Distinguish cartilage matrix from mineralized bone matrix.",
+        "Name preparation and section orientation.",
+        "Keep cortical/trabecular separate from woven/lamellar.",
+        "Trace regional origins and the ossification sequence.",
+        "Interpret current markers separately from permanent lineage labels.",
+        "Separate local static morphology from dynamic turnover or clinical diagnosis."
+      ]
     },
     {
       "id": "blood-marrow",

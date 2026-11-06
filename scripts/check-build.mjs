@@ -1,9 +1,17 @@
 import { containsPrivateReference } from "../src/lib/content-quality.ts";
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
-const root = ".next/server";
+const buildDir = process.env.STUDY_BUILD_DIR || ".next";
+const root = join(buildDir, "server");
 for (const path of readdirSync(root, { recursive: true })) {
   if (!statSync(join(root, String(path))).isFile()) continue;
+  if (String(path).endsWith(".html")) {
+    const html = readFileSync(join(root, String(path)), "utf8");
+    for (const match of html.matchAll(/\/_next\/(static\/[^"<>?\\\s]+\.(?:js|css))/g)) {
+      if (!existsSync(join(buildDir, match[1])))
+        throw new Error(`Rendered page ${path} references a missing build asset: ${match[1]}`);
+    }
+  }
   if (String(path).endsWith(".nft.json")) {
     const trace = JSON.parse(readFileSync(join(root, String(path)), "utf8"));
     if (trace.files.some((file) => /(^|[\\/])\.private[\\/]/.test(file)))
@@ -17,4 +25,4 @@ for (const path of readdirSync(root, { recursive: true })) {
   )
     throw new Error("Private archive information in rendered output: " + path);
 }
-console.log("Deployment trace and rendered privacy checks passed.");
+console.log("Deployment trace, rendered privacy and static asset reference checks passed.");
