@@ -2492,17 +2492,21 @@
     {
       "id": "cartilage-bone",
       "route": "/library/cartilage-bone",
-      "title": "Cartilage, bone and remodeling",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
       "kind": "Study lesson",
       "action": "new-comparison-or-flow",
       "components": [
-        "LessonVisuals"
+        "LessonVisuals",
+        "BonePreparationExplorer",
+        "EducationalFigure"
       ],
       "visualIds": [
         "cartilage-bone-comparison"
       ],
-      "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Distinguish the matrix and cell organization of cartilage from vascular, continuously remodeled bone."
+      "figureIds": [
+        "mouse-skeletal-lineage"
+      ],
+      "rationale": "Retain the conceptual comparison, add a preparation-and-orientation model, and show an unchanged licensed mouse lineage figure with explicit timing, denominator and resolution limits."
     },
     {
       "id": "cell-junctions",
@@ -2522,15 +2526,16 @@
     {
       "id": "connective-tissue",
       "route": "/library/connective-tissue",
-      "title": "Connective tissue and extracellular matrix",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
       "kind": "Study lesson",
       "action": "standardise-or-reuse",
       "components": [
-        "HistologyTopicVisual"
+        "HistologyTopicVisual",
+        "CollagenRouteExplorer"
       ],
       "visualIds": [],
       "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior."
+      "rationale": "Retain the conceptual comparison and add an original compartment pathway with explained predictions."
     },
     {
       "id": "epithelia",

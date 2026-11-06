@@ -701,6 +701,59 @@
           "text": "The plots report pancreatic length, diameter and the length-to-diameter relationship across sampled ages. They summarise a cross-sectional growth series, not repeated measurements of one embryo or a test of a causal signal."
         }
       ]
+    },
+    {
+      "id": "mouse-skeletal-lineage",
+      "title": "Mouse skeletal development: follow the labeling window",
+      "sourceAsset": "images/figures/mouse-skeletal-lineage-long-2022.jpg",
+      "kind": "research-figure",
+      "alt": "Mouse tibia fluorescence panels comparing embryonic timed labeling, a postnatal pulse and chase, and constitutive lineage labeling; two plots summarize labeled fractions. Adjacent text explains each panel group.",
+      "caption": "Long et al. (2022), Figure 1. Mouse fluorescence lineage tracing, not human H&E. A permanent label and current osteocalcin staining answer different questions. Scale bars: 100 µm. The source is 612 × 792 pixels; enlargement cannot create additional detail.",
+      "rights": "Long JT and colleagues. eLife 11:e76932 (2022), Figure 1. © 2022 Long et al. CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": "docs/reviews/connective-bone-depth-20261106.md",
+      "sourceUrl": "https://elifesciences.org/articles/76932#fig1",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-cartilage-bone"
+      ],
+      "resourceIds": [
+        "cartilage-bone"
+      ],
+      "width": 612,
+      "height": 792,
+      "src": "/images/figures/mouse-skeletal-lineage-long-2022.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/mouse-skeletal-lineage-long-2022.jpg",
+          "width": 612,
+          "height": 792,
+          "bytes": 98185
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after source and rights audit; rendered release checks required.",
+      "modifications": "Unchanged publisher JPEG. No crop, relabeling, recoloring or generated content.",
+      "observe": "Read the genetic design and time window before interpreting the reporter. Compare a timed pulse with constitutive labeling without treating their denominators as identical.",
+      "panelDescriptions": [
+        {
+          "label": "Panels a–c: embryonic timed labeling",
+          "text": "Induction at mouse embryonic days 13.5, 14.5 and 15.5 precedes the E16.5 observation. RFP reports the lineage label; OCN denotes osteocalcin staining. The two signals ask different questions about history and current phenotype."
+        },
+        {
+          "label": "Panels d–g: postnatal pulse and chase",
+          "text": "Induction at P6 is followed by observations at 12 hours, 24 hours and two weeks. Panel g adds osteocalcin staining. Compare initial labeling with later location; these are sampled specimens, not a movie of one cell."
+        },
+        {
+          "label": "Panels h–k: constitutive labeling",
+          "text": "These panels use constitutive Col10a1Cre labeling at two months, rather than the single P6 pulse. HZ denotes the hypertrophic zone and BM the marrow compartment. Location and osteocalcin signal help interpret labeled cells."
+        },
+        {
+          "label": "Panel l: two different denominators",
+          "text": "The left plot considers reporter-positive cells among OCN-positive cells; the right considers labeled osteocytes among all counted osteocytes. Neither plot is the survival rate of a single pulse-labeled cohort. The article reports three biological replicates; plotted tissue sampling must not be mistaken for independent animals."
+        }
+      ]
     }
   ]
 }

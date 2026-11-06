@@ -4379,23 +4379,27 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-11-06",
       "bytes": 0,
       "id": "cartilage-bone",
-      "title": "Cartilage, bone and remodeling",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
       "subject": "histology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Distinguish the matrix and cell organization of cartilage from vascular, continuously remodeled bone.",
+      "summary": "Identify cartilage and bone using preparation and architecture; connect matrix mechanics, osteoclast signaling, ossification, joint development and lineage experiments.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "cartilage",
         "bone",
         "ossification",
-        "musculoskeletal"
+        "musculoskeletal",
+        "embryology",
+        "staining",
+        "lineage tracing",
+        "tissue identification"
       ],
-      "minutes": 5
+      "minutes": 65
     },
     {
       "status": "public",
@@ -4422,22 +4426,26 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-09",
+      "updatedAt": "2026-11-06",
       "bytes": 0,
       "id": "connective-tissue",
-      "title": "Connective tissue and extracellular matrix",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
       "subject": "histology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Use cells, collagen, elastic fibers and hydrated ground substance to explain tissue behavior.",
+      "summary": "Distinguish connective tissue from muscle, explain collagen and matrix chemistry, interpret staining and adipose structure, and trace regional developmental contributions.",
       "tags": [
         "Cells and tissues",
         "Microscopic structure",
         "connective tissue",
         "collagen",
-        "extracellular matrix"
+        "extracellular matrix",
+        "embryology",
+        "staining",
+        "lineage tracing",
+        "tissue identification"
       ],
-      "minutes": 5
+      "minutes": 55
     },
     {
       "status": "public",

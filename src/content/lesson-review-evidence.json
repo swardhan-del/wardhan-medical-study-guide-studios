@@ -1705,6 +1705,94 @@
       "independent": false,
       "record": "docs/reviews/epithelial-junction-depth-20261106.md",
       "contentSha256": "19e2625085d6455a1543bc20df0ecb1ecef8c695a85d510121cd5fc18cc5812b"
+    },
+    {
+      "id": "connective-tissue-editorial-depth-20261106",
+      "lessonId": "connective-tissue",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "5e0989f3a5ae6f784f5e92996a7700e8cba0647f375410e4b97b85328ad0e6c9"
+    },
+    {
+      "id": "cartilage-bone-editorial-depth-20261106",
+      "lessonId": "cartilage-bone",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "4f9411c22ad1481fc87b313cc7d90d709fd6f0bea67e26667223b5b895fdf6df"
+    },
+    {
+      "id": "connective-tissue-visual-depth-20261106",
+      "lessonId": "connective-tissue",
+      "scope": "visual",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "5e0989f3a5ae6f784f5e92996a7700e8cba0647f375410e4b97b85328ad0e6c9"
+    },
+    {
+      "id": "connective-tissue-accessibility-depth-20261106",
+      "lessonId": "connective-tissue",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "5e0989f3a5ae6f784f5e92996a7700e8cba0647f375410e4b97b85328ad0e6c9"
+    },
+    {
+      "id": "connective-tissue-readability-depth-20261106",
+      "lessonId": "connective-tissue",
+      "scope": "readability",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "5e0989f3a5ae6f784f5e92996a7700e8cba0647f375410e4b97b85328ad0e6c9"
+    },
+    {
+      "id": "cartilage-bone-visual-depth-20261106",
+      "lessonId": "cartilage-bone",
+      "scope": "visual",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "4f9411c22ad1481fc87b313cc7d90d709fd6f0bea67e26667223b5b895fdf6df"
+    },
+    {
+      "id": "cartilage-bone-accessibility-depth-20261106",
+      "lessonId": "cartilage-bone",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "4f9411c22ad1481fc87b313cc7d90d709fd6f0bea67e26667223b5b895fdf6df"
+    },
+    {
+      "id": "cartilage-bone-readability-depth-20261106",
+      "lessonId": "cartilage-bone",
+      "scope": "readability",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted rendered review",
+      "qualification": "Automated assistant; no human clinical qualification or independent review claimed",
+      "independent": false,
+      "record": "docs/reviews/connective-bone-depth-20261106.md",
+      "contentSha256": "4f9411c22ad1481fc87b313cc7d90d709fd6f0bea67e26667223b5b895fdf6df"
     }
   ]
 }

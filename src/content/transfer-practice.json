@@ -2851,6 +2851,524 @@
       "subject": "histology",
       "title": "Cell junctions, surface specialisations and developmental signalling",
       "href": "/library/cell-junctions#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-sampling",
+      "topic": "connective-tissue",
+      "prompt": "An invented practical shows locally parallel collagen in a small crop from an organ capsule. Which next observation most strengthens its classification?",
+      "options": [
+        {
+          "text": "Inspect a broader area and the section orientation.",
+          "explanation": "Local alignment can be part of a multidirectional network; scale and orientation test the architectural interpretation."
+        },
+        {
+          "text": "Count exactly four nuclei per bundle.",
+          "explanation": "No fixed nuclei-per-bundle rule defines dense regular tissue."
+        },
+        {
+          "text": "Choose the most saturated pink area.",
+          "explanation": "Color intensity does not establish the three-dimensional fiber arrangement."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-muscle",
+      "topic": "connective-tissue",
+      "prompt": "Two H&E fields are pink. Field A has broad extracellular bundles with sparse nuclei between them; field B has densely packed cellular profiles with many central nuclei. Which comparison is best supported?",
+      "options": [
+        {
+          "text": "B cannot be muscle because some transverse profiles lack nuclei.",
+          "explanation": "A thin section can miss the nucleus of an elongated muscle cell."
+        },
+        {
+          "text": "A favors collagenous tissue and B favors muscle; check context and orientation.",
+          "explanation": "The position of nuclei relative to matrix and cellular cytoplasm is more useful than pink color alone."
+        },
+        {
+          "text": "Both are collagen because both bind eosin.",
+          "explanation": "Smooth-muscle cytoplasm also binds eosin."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-hydroxylation",
+      "topic": "connective-tissue",
+      "prompt": "A fictional cell-culture experiment perturbs collagen prolyl 4-hydroxylase. Which operation is directly associated with that enzyme?",
+      "options": [
+        {
+          "text": "Copper-dependent cross-link initiation by lysyl oxidase outside the cell.",
+          "explanation": "That is a different enzyme and extracellular operation."
+        },
+        {
+          "text": "Removal of mineral from a bone section.",
+          "explanation": "Decalcification is specimen preparation, not a collagen-hydroxylase function."
+        },
+        {
+          "text": "Modification of procollagen in the endoplasmic reticulum.",
+          "explanation": "The enzyme acts during intracellular collagen processing; its reaction is distinct from extracellular cross-link initiation."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-aggregate",
+      "topic": "connective-tissue",
+      "prompt": "A diagram labels hyaluronan as the protein core of aggrecan. Which correction is needed?",
+      "options": [
+        {
+          "text": "Hyaluronan is a carbohydrate chain; aggrecan has its own protein core and can bind hyaluronan.",
+          "explanation": "The aggregate contains distinct molecular components and different forms of attachment."
+        },
+        {
+          "text": "Hyaluronan is the same molecule as type-II collagen.",
+          "explanation": "A glycosaminoglycan and a collagen protein are different molecular classes."
+        },
+        {
+          "text": "Aggrecan contains no carbohydrate chains.",
+          "explanation": "Aggrecan is a proteoglycan carrying abundant glycosaminoglycan chains."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-special-stain",
+      "topic": "connective-tissue",
+      "prompt": "An H&E preparation leaves uncertainty about an elastic network. Which plan best addresses that uncertainty?",
+      "options": [
+        {
+          "text": "Treat every eosinophilic bundle as elastin.",
+          "explanation": "Routine eosinophilia does not uniquely identify elastin."
+        },
+        {
+          "text": "Use a suitable elastic-fiber stain and interpret its distribution with controls and tissue context.",
+          "explanation": "A targeted method can improve contrast, while location and controls remain necessary."
+        },
+        {
+          "text": "Assume elastic fibers are absent because H&E did not display them clearly.",
+          "explanation": "Poor visibility with one method does not establish biological absence."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-metachromatic-site",
+      "topic": "connective-tissue",
+      "prompt": "Toluidine blue produces a purple extracellular region around lacunar cells. Which claim is justified?",
+      "options": [
+        {
+          "text": "Every purple region must be a mast cell.",
+          "explanation": "The relevant substrate can occur in extracellular matrix as well as intracellular granules."
+        },
+        {
+          "text": "The tissue contained a natural purple pigment before staining.",
+          "explanation": "Metachromasia is a stain–substrate phenomenon, not proof of an endogenous pigment."
+        },
+        {
+          "text": "Charged matrix can produce metachromasia; identify the compartment before naming a cell.",
+          "explanation": "The dye interaction is not exclusive to mast-cell granules."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-lipid-extraction",
+      "topic": "connective-tissue",
+      "prompt": "A routine paraffin H&E section shows large clear adipocyte profiles. What prevents a direct calculation of original lipid volume from those clear spaces alone?",
+      "options": [
+        {
+          "text": "Processing extracts lipid, and a two-dimensional section samples only part of each cell.",
+          "explanation": "Preparation and stereological sampling must be considered before a quantitative volume claim."
+        },
+        {
+          "text": "The profiles prove the cells stored only gas.",
+          "explanation": "The clear appearance is compatible with lipid extraction, not gas storage."
+        },
+        {
+          "text": "Every profile without a nucleus was dead before fixation.",
+          "explanation": "The thin section may miss the peripheral nucleus."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-thermogenic-readout",
+      "topic": "connective-tissue",
+      "prompt": "A multilocular adipocyte is seen in H&E. Which conclusion still needs an additional measurement?",
+      "options": [
+        {
+          "text": "The image is a two-dimensional preparation.",
+          "explanation": "The specimen description already establishes this limitation."
+        },
+        {
+          "text": "The cell’s current thermogenic output.",
+          "explanation": "Morphology can support a tissue interpretation but does not quantify heat production or respiratory behavior."
+        },
+        {
+          "text": "Several small lipid-droplet profiles are present in this section.",
+          "explanation": "That is the stated morphological observation, not an unmeasured functional conclusion."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-compartment-origin",
+      "topic": "connective-tissue",
+      "prompt": "A diagram assigns all tissues of a limb to lateral-plate mesoderm. Which correction most improves its embryology?",
+      "options": [
+        {
+          "text": "Use the adult organ name as its germ layer.",
+          "explanation": "An adult organ name is not a germ-layer identity."
+        },
+        {
+          "text": "Replace the label with mesenchyme as a fourth germ layer.",
+          "explanation": "Mesenchyme describes an organization, not an additional germ layer."
+        },
+        {
+          "text": "Separate skeletal and connective contributions from somitic muscle and other compartments.",
+          "explanation": "A regional developmental map must distinguish tissue components instead of assigning one origin to the whole limb."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "connective-depth-macrophage-history",
+      "topic": "connective-tissue",
+      "prompt": "A resident macrophage expresses a current identification marker. Which conclusion does that observation alone fail to establish?",
+      "options": [
+        {
+          "text": "Its ancestry from an adult circulating monocyte.",
+          "explanation": "Current phenotype does not specify developmental history; embryonic contributions are established in relevant experimental models."
+        },
+        {
+          "text": "The marker was detected under the stated assay conditions.",
+          "explanation": "That is the direct observation, provided the assay controls are sound."
+        },
+        {
+          "text": "The field contains the analyzed cell.",
+          "explanation": "The stated observation includes the cell; its ancestry is the unsupported inference."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Connective tissue: identify matrix, explain mechanisms and trace development",
+      "href": "/library/connective-tissue#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-lineage-versus-marker",
+      "topic": "cartilage-bone",
+      "prompt": "A persistent lineage-labelled cell no longer expresses Col10a1. Must the lineage result be false?",
+      "options": [
+        {
+          "text": "No; every labelled cell is now an osteoblast.",
+          "explanation": "Present identity needs location, morphology and appropriate additional markers."
+        },
+        {
+          "text": "No; ancestry and current expression differ.",
+          "explanation": "Recombination can remain recorded after the initiating promoter switches off."
+        },
+        {
+          "text": "Yes; ancestry requires continuous expression.",
+          "explanation": "That confuses a permanent lineage mark with a current-expression reporter."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-pulse-chase-context",
+      "topic": "cartilage-bone",
+      "prompt": "Can the constitutive reporter percentage be read as the survival rate of one pulse-labelled cohort?",
+      "options": [
+        {
+          "text": "Yes.",
+          "explanation": "A shared colour does not make the labelling designs equivalent."
+        },
+        {
+          "text": "No.",
+          "explanation": "Continuous marking and a timed pulse do not define the same starting population or denominator."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-preparation-missing-cells",
+      "topic": "cartilage-bone",
+      "prompt": "A ground-bone preparation shows dark lacunae and fine channels. A student calls every dark space a dead osteocyte. Which interpretation is justified?",
+      "options": [
+        {
+          "text": "The preparation demonstrates spaces in mineralized matrix; cellular viability cannot be assigned from those spaces alone.",
+          "explanation": "In this ground specimen, preparation removes organic material and emphasizes spaces. Start with the method before inferring cell identity or viability. Compare a cell-preserving preparation for a different question."
+        },
+        {
+          "text": "Darkness proves osteocyte death before sampling.",
+          "explanation": "Darkness in this preparation represents spaces and does not establish prior viability."
+        },
+        {
+          "text": "A lacuna is a cell nucleus.",
+          "explanation": "A lacuna is a matrix space, not a nucleus."
+        },
+        {
+          "text": "Ground bone and decalcified H&E preserve identical information.",
+          "explanation": "The preparations preserve different components."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-orientation-two-sections",
+      "topic": "cartilage-bone",
+      "prompt": "A decalcified H&E teaching specimen contains transverse and longitudinal sections of the same kind of bone. One field has concentric rings around round openings; another has elongated channels. What should you test before proposing two unrelated tissue types?",
+      "options": [
+        {
+          "text": "Whether H&E directly measures mineral concentration.",
+          "explanation": "The preparation removed mineral; H&E cannot directly measure what was removed."
+        },
+        {
+          "text": "Whether section orientation accounts for the different profiles.",
+          "explanation": "Trace osteonal relationships in both orientations. Cross-sections and longitudinal sections can sample the same cylindrical organization differently. Decalcified material cannot directly display the mineral that processing removed."
+        },
+        {
+          "text": "Whether every long channel is an artifact.",
+          "explanation": "A long channel may be a genuine structure sampled longitudinally."
+        },
+        {
+          "text": "Whether the circular spaces are automatically marrow cavities.",
+          "explanation": "Position and surrounding lamellae are needed to identify the space."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "cartilage-perichondrium-site",
+      "topic": "cartilage-bone",
+      "prompt": "Cartilage lies between a joint space and underlying bone, with no fibrous perichondrium at its free surface. Does absence of perichondrium alone exclude hyaline cartilage?",
+      "options": [
+        {
+          "text": "Yes; this must be tendon.",
+          "explanation": "Absence of a covering does not establish tendon; inspect matrix and cellular organization."
+        },
+        {
+          "text": "The stain alone determines whether a perichondrium exists.",
+          "explanation": "The stain affects visibility, while anatomy and sampling establish whether the boundary is present."
+        },
+        {
+          "text": "No; identify the articular site before applying a perichondrium rule.",
+          "explanation": "Articular hyaline cartilage is an important site-specific exception. Locate the joint-facing surface and underlying tissue rather than diagnosing from one missing feature."
+        },
+        {
+          "text": "Yes; every hyaline cartilage surface has perichondrium.",
+          "explanation": "Articular cartilage is a key exception to that universal claim."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "joint-development-label-window",
+      "topic": "cartilage-bone",
+      "prompt": "In a mouse Gdf5-CreER study, a single early induction marked only part of the later joint; repeated induction marked more. Which interpretation best respects the design?",
+      "options": [
+        {
+          "text": "Every unlabeled cell is proven to have never expressed Gdf5.",
+          "explanation": "An unlabeled cell may fall outside the effective labeling window."
+        },
+        {
+          "text": "A permanent reporter measures only current Gdf5 expression.",
+          "explanation": "A permanent reporter retains labeling history after expression changes."
+        },
+        {
+          "text": "The result proves the identical developmental timetable in humans.",
+          "explanation": "A mouse experiment cannot establish an identical human timetable."
+        },
+        {
+          "text": "Labeling depends on the expression and induction window; compare reporter efficiency and current Gdf5 expression before inferring recruitment.",
+          "explanation": "The study combines timing, reporter/current-expression comparisons and proliferation evidence to support an influx model. The precise recruited source remained incompletely established. A single negative label cannot settle ancestry."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-two-classification-axes",
+      "topic": "cartilage-bone",
+      "prompt": "A mature trabecula contains organized lamellae. Which description is internally consistent?",
+      "options": [
+        {
+          "text": "The spaces prove all of the matrix is unmineralized.",
+          "explanation": "Intertrabecular spaces do not establish absence of mineral in the trabeculae."
+        },
+        {
+          "text": "Trabecular architecture composed of lamellar bone.",
+          "explanation": "The architectural compartment and matrix organization are separate classification axes."
+        },
+        {
+          "text": "This is impossible because lamellar means cortical.",
+          "explanation": "Trabecular bone can also have lamellar organization."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-signal-pairing",
+      "topic": "cartilage-bone",
+      "prompt": "A student draws M-CSF and RANKL both binding RANK. What correction is needed?",
+      "options": [
+        {
+          "text": "Both ligands bind only osteoprotegerin.",
+          "explanation": "Osteoprotegerin is a RANKL decoy, not the signaling receptor for M-CSF."
+        },
+        {
+          "text": "RANK is the collagen-cleaving enzyme.",
+          "explanation": "RANK is a receptor; differentiation signaling and matrix degradation are different operations."
+        },
+        {
+          "text": "M-CSF binds CSF1R; RANKL binds RANK.",
+          "explanation": "These are distinct ligand–receptor pairs involved in osteoclast-lineage biology."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-cartilage-scaffold",
+      "topic": "cartilage-bone",
+      "prompt": "A developing spicule has a calcified cartilage core with new bone deposited at its surface. Which statement best explains the arrangement?",
+      "options": [
+        {
+          "text": "New bone matrix is deposited on a remaining scaffold during cartilage replacement.",
+          "explanation": "The matrix interface supports distinct cartilage and bone components."
+        },
+        {
+          "text": "Any mineralized matrix is automatically bone.",
+          "explanation": "Cartilage can mineralize without becoming bone matrix simply by definition."
+        },
+        {
+          "text": "The pattern proves every chondrocyte in the entire bone died.",
+          "explanation": "A matrix pattern cannot establish the fate of every cell; lineage evidence addresses that question."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-growth-direction",
+      "topic": "cartilage-bone",
+      "prompt": "A growth-plate drawing lists proliferative and hypertrophic regions but omits anatomical direction. What should be added?",
+      "options": [
+        {
+          "text": "A label saying every hyaline cartilage is a growth plate.",
+          "explanation": "Hyaline cartilage occurs in several distinct anatomical settings."
+        },
+        {
+          "text": "Labels identifying the epiphyseal and metaphyseal sides.",
+          "explanation": "Orientation connects the cellular sequence to the growing-bone anatomy."
+        },
+        {
+          "text": "A fixed number of cells that must occur in every column.",
+          "explanation": "Counts vary with specimen and section; they do not replace anatomical direction."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-mechanical-context",
+      "topic": "cartilage-bone",
+      "prompt": "In an invented interpretation exercise, a student applies a cartilage-plug friction result directly to an intact adult human joint. What is missing?",
+      "options": [
+        {
+          "text": "Only a more colorful graph.",
+          "explanation": "Presentation cannot correct a mismatch between experimental model and claimed application."
+        },
+        {
+          "text": "A rule that all joint friction is caused by one component.",
+          "explanation": "The experiment does not eliminate other mechanisms."
+        },
+        {
+          "text": "The species, preparation, contacting surface and loading conditions that bound the inference.",
+          "explanation": "A controlled material experiment can explain a mechanism without supplying a clinical threshold."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "bone-depth-osteoid-cause",
+      "topic": "cartilage-bone",
+      "prompt": "A specimen has increased osteoid. Which interpretation is most defensible before additional evidence?",
+      "options": [
+        {
+          "text": "Consider formation and mineralization separately; determine why osteoid accumulated.",
+          "explanation": "Static osteoid amount alone does not distinguish increased production from delayed mineralization."
+        },
+        {
+          "text": "It proves one specific vitamin deficiency.",
+          "explanation": "Multiple mechanisms and clinical contexts require evaluation; the finding is not uniquely diagnostic."
+        },
+        {
+          "text": "It proves absence of osteoblast activity.",
+          "explanation": "Osteoid is produced by osteoblasts; its presence does not establish that formation is absent."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Cartilage and bone: identify structures and explain skeletal development",
+      "href": "/library/cartilage-bone#apply-the-concept"
     }
   ]
 }
