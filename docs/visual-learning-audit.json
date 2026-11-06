@@ -2631,8 +2631,10 @@
         "TeachingDiagram"
       ],
       "visualIds": [],
-      "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Trace two routes out of blood and identify the cell layer that forms each barrier rather than confusing support cells with the seal."
+      "figureIds": [
+        "human-choroid-plexus-labelled"
+      ],
+      "rationale": "Extend the existing barrier lesson with a CC0 human choroid specimen, three guided regions, two anatomical route maps and four evidence scenarios; retain architecture, model and resolution limits. Rendered review is recorded separately."
     },
     {
       "id": "lymphoid-organs",

@@ -16,7 +16,7 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     if (node?.complete && node.naturalWidth === 0) setUnavailable(true);
   }, []);
   const region = data.regions[selected];
-  const regionCount = data.regions.length === 4 ? "four" : "five";
+  const regionCount = ({3: "three", 4: "four", 5: "five"} as Record<number, string>)[data.regions.length] ?? String(data.regions.length);
   const portrait = figure.height > figure.width;
   const description = <div id={`${scope}-region-description`} className={styles.description} aria-live="polite" aria-atomic="true">
     <h3>{selected + 1}. {region.label}</h3>

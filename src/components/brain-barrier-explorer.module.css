@@ -1,0 +1,32 @@
+.explorer { min-width: 0; overflow-wrap: anywhere; }
+.controls { display: flex; flex-wrap: wrap; gap: .65rem; margin-block: 1rem; }
+.controls button, .route button { min-height: 44px; padding: .75rem 1rem; border: 2px solid #727c81; border-radius: .5rem; background: #fff; color: #173642; font: inherit; text-align: left; cursor: pointer; max-width: 100%; overflow-wrap: anywhere; }
+.controls button[aria-pressed="true"], .route button[aria-pressed="true"] { border-color: #096576; background: #e4f3f4; box-shadow: inset 0 0 0 1px #096576; }
+.controls button:disabled { cursor: default; color: #526169; background: #edf0f1; }
+.explorer button:focus-visible, .explorer input:focus-visible, .explorer summary:focus-visible { outline: 3px solid #a14c00; outline-offset: 3px; }
+.route { padding: 0; list-style: none; display: grid; gap: .25rem; }
+.route li { min-width: 0; }
+.route button { display: flex; align-items: flex-start; gap: .8rem; width: 100%; }
+.number { flex: 0 0 auto; display: grid; place-items: center; width: 1.8em; height: 1.8em; border-radius: 50%; color: #fff; background: #285464; font-weight: 700; }
+.seal { display: block; font-size: .85em; margin-top: .3em; color: #125c63; }
+.arrow { display: block; text-align: center; font-size: 1.3rem; line-height: 1.3; color: #285464; }
+.explanation { border-inline-start: .3rem solid #096576; background: #eef7f7; padding: 1rem; margin-block: 1rem; }
+.explanation h4 { margin-top: 0; }
+.case { border: 1px solid #aabbbf; border-radius: .6rem; padding: clamp(.75rem, 2vw, 1.25rem); }
+.case fieldset { min-width: 0; padding: .75rem; border: 1px solid #aabbbf; }
+.case legend { font-weight: 700; padding: .25rem; max-width: 100%; }
+.case label { display: flex; gap: .65rem; align-items: flex-start; padding-block: .75rem; cursor: pointer; }
+.case input { margin-top: .3em; flex-shrink: 0; }
+.explorer details { margin-block: 1rem; }
+.explorer details li { margin-block: .8rem; }
+.explorer summary { cursor: pointer; padding-block: .65rem; font-weight: 700; }
+@media (max-width: 480px) {
+  .controls button { padding: .45rem .5rem; }
+  .route button { display: block; padding: .45rem; }
+  .number { margin-bottom: .35rem; }
+  .case { padding: .35rem 0; border: 0; }
+  .case fieldset { padding: .35rem 0; border: 0; }
+  .case label { gap: .35rem; }
+  .explanation { padding: .45rem; }
+}
+@media print { .controls, .case { break-inside: avoid; } }

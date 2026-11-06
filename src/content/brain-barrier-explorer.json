@@ -1,0 +1,201 @@
+{
+  "title": "Trace the interface, then interpret the experiment",
+  "introduction": "Choose a route and a compartment to inspect its place in the tissue. Then compare a prediction with the evidence. These are anatomical maps and fixed research scenarios, not a numerical permeability simulation.",
+  "routes": [
+    {
+      "id": "brain",
+      "label": "Blood → brain tissue",
+      "title": "Parenchymal capillary route",
+      "steps": [
+        {
+          "label": "Blood in a CNS capillary",
+          "detail": "Start inside the vascular lumen. A blood concentration does not by itself establish the concentration in neural tissue.",
+          "seal": false
+        },
+        {
+          "label": "Capillary endothelium",
+          "detail": "This is the principal sealing cell layer. Intercellular junctions restrict paracellular passage, while low nonspecific transcytosis limits a different, transcellular route.",
+          "seal": true
+        },
+        {
+          "label": "Basement-membrane and support-cell environment",
+          "detail": "Pericytes and astrocytic endfeet participate in regulation and organisation outside the endothelium. They are not a substitute name for the endothelial junctions.",
+          "seal": false
+        },
+        {
+          "label": "Brain interstitial fluid",
+          "detail": "This is outside the vascular lumen and surrounds neural tissue. Entry into a particular cell still involves another membrane and its transport processes.",
+          "seal": false
+        }
+      ],
+      "limit": "A simplified path through a typical parenchymal capillary, not every CNS vascular region. Card spacing does not represent thickness, time or permeability.",
+      "references": [
+        {
+          "title": "Daneman et al. — pericytes during barrier development",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3241506/"
+        },
+        {
+          "title": "Ben-Zvi et al. — MFSD2A and endothelial transcytosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4134871/"
+        }
+      ]
+    },
+    {
+      "id": "csf",
+      "label": "Blood → ventricular CSF",
+      "title": "Choroid-plexus route",
+      "steps": [
+        {
+          "label": "Blood in a choroid capillary",
+          "detail": "Start inside a vessel in the core of a choroid frond. Its lumen is distinct from the ventricular space outside the frond.",
+          "seal": false
+        },
+        {
+          "label": "Fenestrated capillary endothelium",
+          "detail": "Exchange can carry material from blood into the stromal compartment. This is not a direct opening into ventricular CSF. Individual fenestrations are not resolved in the supplied H&E image.",
+          "seal": false
+        },
+        {
+          "label": "Stromal extracellular space",
+          "detail": "Material here remains on the basal side of the epithelial covering. Reaching stroma does not establish entry into CSF.",
+          "seal": false
+        },
+        {
+          "label": "Choroid epithelial layer",
+          "detail": "Adjacent epithelial cells form the principal blood–CSF junctional seal. The basal side faces stroma; the apical side faces CSF. Transcellular transport and paracellular restriction are distinct.",
+          "seal": true
+        },
+        {
+          "label": "Ventricular CSF",
+          "detail": "This is outside the frond, against the apical epithelial surface. A concentration sampled here is not automatically the concentration in brain interstitial fluid or inside a neuron.",
+          "seal": false
+        }
+      ],
+      "limit": "A simplified blood-to-ventricle route. Arrows order anatomical interfaces; they do not mean unrestricted flow, a fixed flux or absence of transport in the opposite direction.",
+      "references": [
+        {
+          "title": "University of Basel — choroid-plexus practical",
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/nervensystem-anatomische-mikroskopie-52/choroid-plexus-1860"
+        },
+        {
+          "title": "Xu et al. — early postnatal choroid NKCC1 and CSF clearance",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7815709/"
+        },
+        {
+          "title": "Praetorius and Nielsen — human choroid transporter localisation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16481371/"
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "junction",
+      "title": "A junctional perturbation",
+      "observation": "After claudin-5 loss in a late-embryonic mouse model, smaller tested tracers enter brain tissue while larger comparators remain restricted. Vessel morphology is broadly preserved.",
+      "question": "Which conclusion is best supported?",
+      "options": [
+        {
+          "text": "The observed change is selective for the tested tracer conditions.",
+          "explanation": "Supported. Retain tracer chemistry, exposure and detection conditions. The result does not establish a universal cutoff for every molecule."
+        },
+        {
+          "text": "The larger tracers must cross at the same rate if circulation is intact.",
+          "explanation": "Preserved circulation and morphology do not imply identical permeability for different tracers."
+        },
+        {
+          "text": "An adult human drug with the same mass will show the same entry.",
+          "explanation": "That extrapolates across compound properties, developmental stage and species without direct evidence."
+        }
+      ],
+      "answer": 0,
+      "references": [
+        {
+          "title": "Nitta et al. — claudin-5 deletion and tracer selectivity",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2172943/"
+        }
+      ]
+    },
+    {
+      "id": "vesicles",
+      "title": "A route through the cell",
+      "observation": "In an Mfsd2a-deficient mouse preparation, a tracer is seen beyond endothelium and in more endothelial vesicles, while junctional contacts still arrest it.",
+      "question": "Which mechanism fits these observations most directly?",
+      "options": [
+        {
+          "text": "A choroid epithelial junction has opened.",
+          "explanation": "This observation concerns parenchymal capillary endothelium; it does not measure the choroid epithelial boundary."
+        },
+        {
+          "text": "Increased vesicular transport through endothelial cells.",
+          "explanation": "Supported. Tracer localisation along a transcellular route helps distinguish it from passage between cells."
+        },
+        {
+          "text": "Passage exclusively between endothelial cells.",
+          "explanation": "The reported junctional arrest and vesicular localisation do not support that exclusive route."
+        }
+      ],
+      "answer": 1,
+      "references": [
+        {
+          "title": "Ben-Zvi et al. — MFSD2A and endothelial transcytosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4134871/"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "Two water-related measurements",
+      "observation": "AQP1 loss reduces osmotic shrinkage of isolated mouse choroid plexus, but does not reduce the in-vivo CSF secretion estimate under the conditions tested.",
+      "question": "What should be retained when explaining the result?",
+      "options": [
+        {
+          "text": "Osmotic shrinkage and net secretion are interchangeable measures.",
+          "explanation": "The preparation, imposed driving force and measured output differ."
+        },
+        {
+          "text": "A single water-channel image predicts the whole-organ secretion rate.",
+          "explanation": "Molecular location alone does not measure net fluid production."
+        },
+        {
+          "text": "Membrane osmotic permeability and system-level secretion are different readouts.",
+          "explanation": "Supported. Report both results with their conditions; do not claim that all water exchange has stopped."
+        }
+      ],
+      "answer": 2,
+      "references": [
+        {
+          "title": "Jensen et al. — choroid AQP1, NKCC1 and distinct transport readouts",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11809428/"
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Identity versus growth",
+      "observation": "Reducing Shh signalling in a developing mouse hindbrain choroid system reduces growth and folding while differentiated epithelial markers remain detectable.",
+      "question": "Which follow-up separates retained identity from normal function?",
+      "options": [
+        {
+          "text": "Measure organisation and a relevant transport outcome independently of marker detection.",
+          "explanation": "Supported. Retained marker identity does not establish normal architecture or physiological output."
+        },
+        {
+          "text": "Treat marker detection as a quantitative secretion measurement.",
+          "explanation": "The readouts differ. A marker can remain while tissue amount or function changes."
+        },
+        {
+          "text": "Assign every responding cell to the ligand-producing lineage.",
+          "explanation": "Signal source, pathway response and ancestry require different evidence."
+        }
+      ],
+      "answer": 0,
+      "references": [
+        {
+          "title": "Huang et al. — Shh-responsive hindbrain epithelial progenitors",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2709062/"
+        }
+      ]
+    }
+  ]
+}

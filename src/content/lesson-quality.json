@@ -4695,6 +4695,192 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "brain-and-csf-barriers",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "subject": "histology",
+      "topic": "Brain and CSF interfaces: tissue, development and transport",
+      "slug": "brain-and-csf-barriers",
+      "learnerLevel": "Medical sciences: practical anatomy to experimental interpretation",
+      "objectives": [
+        "Identify epithelial-covered vascular fronds and distinguish them from a ventricular lining or an isolated capillary.",
+        "Orient apical and basal epithelial surfaces and interpret H&E without claiming ultrastructural resolution.",
+        "Trace the blood–brain and blood–CSF routes through their actual cellular boundaries.",
+        "Explain how developmental specification, induction, growth and maintenance ask different questions.",
+        "Relate apical transport proteins to ionic conditions without assuming one universal net direction.",
+        "Distinguish molecular localisation, membrane permeability, tracer passage and net fluid secretion.",
+        "Interpret genetic perturbations with model, stage, control and sampling limits."
+      ],
+      "sources": [
+        {
+          "title": "Daneman et al. — pericytes during barrier development",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3241506/",
+          "publisherOrAuthor": "Daneman et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Xu et al. — early postnatal choroid NKCC1 and CSF clearance",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7815709/",
+          "publisherOrAuthor": "Xu et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Tulemo — human lateral-ventricle choroid plexus",
+          "url": "https://commons.wikimedia.org/w/index.php?title=File:Choroid_plexus_(human).jpg&oldid=1283304155",
+          "publisherOrAuthor": "Tulemo",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Basel — choroid-plexus practical",
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/nervensystem-anatomische-mikroskopie-52/choroid-plexus-1860",
+          "publisherOrAuthor": "University of Basel",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Utah WebPath — choroid and adjacent ventricular lining",
+          "url": "https://webpath.med.utah.edu/HISTHTML/NORMAL/NORM057.html",
+          "publisherOrAuthor": "University of Utah WebPath",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Praetorius and Nielsen — human choroid transporter localisation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16481371/",
+          "publisherOrAuthor": "Praetorius and Nielsen",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Jensen et al. — choroid AQP1, NKCC1 and distinct transport readouts",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11809428/",
+          "publisherOrAuthor": "Jensen et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Southern Illinois University — tissue preparation",
+          "url": "https://histology.siu.edu/intro/tissprep.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Sampias and Rolls — H&E chemistry and staining",
+          "url": "https://www.leicabiosystems.com/knowledge-pathway/he-staining-overview-a-guide-to-best-practices/",
+          "publisherOrAuthor": "Sampias and Rolls",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Hewitt et al. — controls for immunohistochemistry",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4212362/",
+          "publisherOrAuthor": "Hewitt et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Ben-Zvi et al. — MFSD2A and endothelial transcytosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4134871/",
+          "publisherOrAuthor": "Ben-Zvi et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Waymire, McGovern Medical School — glial boundaries and ependyma",
+          "url": "https://nba.uth.tmc.edu/neuroscience/s1/chapter08.html",
+          "publisherOrAuthor": "Waymire, McGovern Medical School",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Huang et al. — Shh-responsive hindbrain epithelial progenitors",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2709062/",
+          "publisherOrAuthor": "Huang et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Fame et al. — conditional NKCC1 reduction and neonatal potassium clearance",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10276483/",
+          "publisherOrAuthor": "Fame et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Currle et al. — dorsal midline contribution and induction",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15975937/",
+          "publisherOrAuthor": "Currle et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Johansson et al. — Otx2 in development and maintenance",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23364326/",
+          "publisherOrAuthor": "Johansson et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Watanabe et al. — BMP4 and choroid epithelial competence",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3505486/",
+          "publisherOrAuthor": "Watanabe et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Nitta et al. — claudin-5 deletion and tracer selectivity",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2172943/",
+          "publisherOrAuthor": "Nitta et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "CC0 specimen, three regions and route/scenario controls reviewed in the candidate build. Keyboard, AXE, 320px/200percent text, no-JavaScript, image failure, credited download hash and revision rendering passed. Stromal marker moved inward after visual inspection; final-render and hosted release gates remain separate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted source/editorial review; independent medical peer review outstanding.",
+        "The specimen has permanent labels and unknown age, disease state and exact preparation.",
+        "The H&E field does not resolve junctions, transporter proteins or endothelial fenestrations.",
+        "Experimental findings retain model, stage and readout limits; no human clinical prediction.",
+        "The route maps are qualitative anatomy, not permeability simulations.",
+        "Complete regional CNS and all-system embryology remain unfinished."
+      ],
+      "reviewEvidenceIds": [
+        "brain-csf-editorial-depth-20261106",
+        "brain-csf-visual-depth-20261106",
+        "brain-csf-accessibility-depth-20261106",
+        "brain-csf-readability-depth-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "epithelia",
+          "cell-junctions",
+          "myelin-and-glial-cells",
+          "neurulation"
+        ],
+        "related": [
+          "myelin-and-glial-cells",
+          "cell-junctions",
+          "neurulation",
+          "epithelia"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

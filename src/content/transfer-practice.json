@@ -5805,6 +5805,606 @@
       ],
       "answer": 2,
       "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-frond-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-frond-20261106",
+      "prompt": "A rounded epithelial-covered profile contains stroma and an erythrocyte-filled vascular lumen. Which interpretation best respects the two levels of structure?",
+      "options": [
+        {
+          "text": "The erythrocyte-filled space is necessarily an epithelial secretory lumen.",
+          "explanation": "That confuses the internal vessel with the entire epithelial-covered profile."
+        },
+        {
+          "text": "The profile may be a cross-section of a vascular frond.",
+          "explanation": "Correct. Identify the internal vessel separately from the surrounding epithelial-covered projection, then obtain organ context."
+        },
+        {
+          "text": "The profile is ordinary ependyma because its cells face a fluid space.",
+          "explanation": "A ventricular-facing surface alone is insufficient. Ordinary ependyma lies over nervous tissue; this profile has a vascular stromal core."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-polarity-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-polarity-20261106",
+      "prompt": "In a choroid frond, which surface of the outer epithelium faces the vascular stromal core?",
+      "options": [
+        {
+          "text": "The basal surface.",
+          "explanation": "Correct. The apical surface faces ventricular CSF outside the frond."
+        },
+        {
+          "text": "The apical surface, because any central space is a lumen of the epithelium.",
+          "explanation": "The centre contains stroma and vessels; it is not an epithelial secretory lumen."
+        },
+        {
+          "text": "The lateral surface, because the epithelial junctions face the stroma.",
+          "explanation": "Lateral surfaces contact neighbouring epithelial cells. The basal surface faces the underlying stromal compartment."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-plane-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-plane-20261106",
+      "prompt": "One edge of a frond shows several rows of nuclei, while adjacent intact profiles have a single peripheral row. What is the best next step?",
+      "options": [
+        {
+          "text": "Call the entire organ stratified from the crowded edge.",
+          "explanation": "One oblique or folded profile is insufficient for that classification."
+        },
+        {
+          "text": "Infer increased CSF secretion from the number of rows.",
+          "explanation": "Nuclear crowding is not a direct secretion measurement."
+        },
+        {
+          "text": "Check section angle, folds and comparable neighbouring profiles.",
+          "explanation": "Correct. Establish the geometry before changing the epithelial classification."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-stain-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-stain-20261106",
+      "prompt": "The epithelial covering is strongly pink in an H&E section. Which conclusion is justified?",
+      "options": [
+        {
+          "text": "Its NKCC1 transport rate has been measured.",
+          "explanation": "H&E colour does not measure a specific transporter or its rate."
+        },
+        {
+          "text": "It has eosinophilic components that can help outline its architecture.",
+          "explanation": "Correct. Interpret staining together with nuclear position and tissue organisation."
+        },
+        {
+          "text": "The intensity establishes the abundance of a specific transport protein.",
+          "explanation": "Eosin binds many protein-rich structures. Specific molecular localisation requires an appropriately controlled method."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-preparation-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-preparation-20261106",
+      "prompt": "A provider supplies H&E and a scale bar but no fixation or section-thickness information. Which caption is appropriate?",
+      "options": [
+        {
+          "text": "Report the supplied stain and scale, and leave the missing preparation details unknown.",
+          "explanation": "Correct. A common laboratory workflow is not evidence of this specimen's exact protocol."
+        },
+        {
+          "text": "Assign the usual fixative and thickness without qualification.",
+          "explanation": "Typical preparation cannot establish specimen-specific metadata."
+        },
+        {
+          "text": "Infer fixation from the colour of the erythrocytes alone.",
+          "explanation": "Stain appearance does not uniquely identify fixation."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-resolution-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-resolution-20261106",
+      "prompt": "A learner places an arrow on the H&E photograph and calls it an endothelial fenestration. What is the main problem?",
+      "options": [
+        {
+          "text": "Fenestrations can only occur in epithelial cells.",
+          "explanation": "Fenestrations are endothelial features in these capillaries."
+        },
+        {
+          "text": "Every pale stromal space is a fenestration.",
+          "explanation": "Pale spaces at this scale are not individual endothelial pores."
+        },
+        {
+          "text": "The image does not resolve that ultrastructural feature.",
+          "explanation": "Correct. The field supports larger architecture; use suitable ultrastructural evidence for fenestrations."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-localisation-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-localisation-20261106",
+      "prompt": "Immunoperoxidase labelling places a transporter at the apical epithelial membrane. What remains unmeasured by that observation alone?",
+      "options": [
+        {
+          "text": "Which membrane domain contains detectable immunoreactivity.",
+          "explanation": "That is the localisation supported by the stated observation."
+        },
+        {
+          "text": "The net transport rate and direction in a living preparation.",
+          "explanation": "Correct. Localisation and functional flux require different evidence."
+        },
+        {
+          "text": "Whether the membrane is on the CSF-facing side in an oriented section.",
+          "explanation": "An appropriately oriented localisation study can address that position."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-stroma-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-stroma-20261106",
+      "prompt": "A blood-borne tracer reaches choroid stroma but is not detected in ventricular CSF. Which interpretation is strongest?",
+      "options": [
+        {
+          "text": "The tracer crossed the vascular interface, while the epithelial interface still separates stroma from CSF.",
+          "explanation": "Correct. Name both boundaries instead of treating the capillary as a direct opening into the ventricle."
+        },
+        {
+          "text": "The result proves that no blood reached the choroid plexus.",
+          "explanation": "Tracer in the stroma is inconsistent with that explanation as stated."
+        },
+        {
+          "text": "The blood–brain barrier throughout the parenchyma must be absent.",
+          "explanation": "A choroid-plexus observation does not establish the state of all parenchymal capillaries."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-support-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-support-20261106",
+      "prompt": "A pericyte perturbation changes brain-capillary permeability. Must pericytes themselves be the endothelial junctional seal?",
+      "options": [
+        {
+          "text": "Yes; any cell affecting permeability is the sealing cell.",
+          "explanation": "A cell can regulate an interface formed by another cell type."
+        },
+        {
+          "text": "Yes; all perivascular nuclei are endothelial nuclei.",
+          "explanation": "Perivascular populations are distinct, and routine nuclear appearance may not identify them reliably."
+        },
+        {
+          "text": "No; altered support can change an endothelial property.",
+          "explanation": "Correct. Distinguish the manipulated population from the principal barrier-forming endothelium."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-lining-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-lining-20261106",
+      "prompt": "An epithelial row faces a ventricle but lies directly over nervous tissue rather than vascular fronds. Which distinction should guide the interpretation?",
+      "options": [
+        {
+          "text": "Any CSF-facing lining must have the same choroid blood–CSF seal.",
+          "explanation": "Facing the same fluid does not establish identical junctional properties."
+        },
+        {
+          "text": "Ordinary ependyma and choroid epithelium have different underlying tissue and specialisation.",
+          "explanation": "Correct. Inspect what lies beneath the lining before assigning its function."
+        },
+        {
+          "text": "The lining is choroid epithelium even if its underlying nervous tissue is intact.",
+          "explanation": "Choroid epithelium covers a vascular stromal core. The stated underlying tissue supports ordinary ependyma instead."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-pump-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-pump-20261106",
+      "prompt": "An apical Na⁺/K⁺ pump in choroid epithelium exports Na⁺ from the cell. Into which adjacent compartment is that export directed?",
+      "options": [
+        {
+          "text": "Ventricular CSF.",
+          "explanation": "Correct. Apical polarity places the extracellular destination at the CSF-facing surface."
+        },
+        {
+          "text": "Directly into the capillary lumen without crossing another interface.",
+          "explanation": "The vascular core is on the basal side and includes intervening stroma and endothelium."
+        },
+        {
+          "text": "The basal stromal extracellular space.",
+          "explanation": "That would place export on the opposite side. The stated pump is in the apical, CSF-facing membrane."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-direction-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-direction-20261106",
+      "prompt": "NKCC1 is detected at the apical membrane in two preparations with different ionic conditions. What is the most defensible prediction?",
+      "options": [
+        {
+          "text": "Its net direction must be identical because its location is identical.",
+          "explanation": "Location identifies the connected compartments, not the combined chemical driving force."
+        },
+        {
+          "text": "The net direction can be determined from the CSF potassium concentration alone.",
+          "explanation": "The coupled Na+, K+ and Cl− gradients across the membrane matter together; one extracellular concentration is insufficient."
+        },
+        {
+          "text": "Net movement must be evaluated using the relevant gradients and functional evidence.",
+          "explanation": "Correct. Distinguish membrane position from context-dependent net flux."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-readouts-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-readouts-20261106",
+      "prompt": "AQP1 loss reduces osmotic shrinkage of isolated choroid tissue but does not reduce the tested in-vivo secretion estimate. What follows?",
+      "options": [
+        {
+          "text": "All water transport everywhere has stopped.",
+          "explanation": "Neither observation supports that universal claim."
+        },
+        {
+          "text": "The two assays measure different properties of the system.",
+          "explanation": "Correct. Osmotic permeability under an imposed challenge is not identical to net fluid secretion in vivo."
+        },
+        {
+          "text": "The molecular localisation experiment must have measured secretion directly.",
+          "explanation": "A localisation study and these functional assays answer different questions."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-partial-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-partial-20261106",
+      "prompt": "After partial neonatal NKCC1 reduction, CSF K⁺ clearance is delayed while other transporter transcripts are unchanged. Which additional measurement most directly addresses possible compensation?",
+      "options": [
+        {
+          "text": "The abundance and activity of other transport proteins.",
+          "explanation": "Correct. Unchanged mRNA does not establish unchanged protein abundance or function."
+        },
+        {
+          "text": "The unchanged transcripts exclude compensatory transport mechanisms.",
+          "explanation": "Transcript abundance alone does not exclude altered protein amounts, localisation or activity."
+        },
+        {
+          "text": "The same magnitude of effect must occur in adults.",
+          "explanation": "The evidence concerns a defined neonatal setting and partial reduction, not an established adult effect size."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-comparison-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-comparison-20261106",
+      "prompt": "One study measures neonatal K⁺ clearance and another adult fluid secretion after a transporter perturbation. What must a comparison retain?",
+      "options": [
+        {
+          "text": "Only the shared protein name.",
+          "explanation": "That omits developmental context and the actual outcome measured."
+        },
+        {
+          "text": "A claim that both studies measured identical biological events.",
+          "explanation": "Clearance of an ion and net fluid secretion are distinct readouts."
+        },
+        {
+          "text": "Age, ionic conditions, intervention, controls and measured outcome.",
+          "explanation": "Correct. These determine whether the findings support the same prediction."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-lineage-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-lineage-20261106",
+      "prompt": "A region lacks a lineage label but fails to develop when a neighbouring labelled population is ablated. Which explanation fits without overclaiming ancestry?",
+      "options": [
+        {
+          "text": "Every cell in the region must descend from the labelled population.",
+          "explanation": "Failure after ablation can reflect an indirect requirement."
+        },
+        {
+          "text": "The labelled population may provide a required non-cell-autonomous influence.",
+          "explanation": "Correct. Direct ancestry and developmental dependence are different claims."
+        },
+        {
+          "text": "Lineage tracing and ablation are the same experiment with different colours.",
+          "explanation": "They test different relationships and require their own controls."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-maintenance-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-maintenance-20261106",
+      "prompt": "A factor is needed both before a tissue forms and later after it has appeared. What distinction is necessary?",
+      "options": [
+        {
+          "text": "Initial specification and later maintenance can be separate roles.",
+          "explanation": "Correct. The timing and region of perturbation constrain the conclusion."
+        },
+        {
+          "text": "The later defect proves that the tissue never existed.",
+          "explanation": "A later maintenance defect does not erase prior formation."
+        },
+        {
+          "text": "A factor can have only one developmental role.",
+          "explanation": "A regulatory factor may act at multiple stages."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-signal-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-signal-20261106",
+      "prompt": "In a developing tissue, one domain expresses Shh while a neighbouring domain expresses response markers and proliferates. What should the explanation distinguish?",
+      "options": [
+        {
+          "text": "All ligand-producing cells must be the only responding cells.",
+          "explanation": "Ligand production and pathway response need not occupy the same population."
+        },
+        {
+          "text": "A response marker directly measures every mitosis in the organ.",
+          "explanation": "Pathway activity and proliferation are related but separate measurements."
+        },
+        {
+          "text": "The signal source, the responding population and the proliferative readout.",
+          "explanation": "Correct. Keeping these separate permits a causal interpretation with appropriate perturbations."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-competence-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-competence-20261106",
+      "prompt": "The same developmental signal produces different outcomes in early and later neural cultures. Which explanation is missing from a signal-only account?",
+      "options": [
+        {
+          "text": "Matching the concentration of the signal guarantees matching cell fates.",
+          "explanation": "An identical supplied signal can act differently in populations with different developmental competence."
+        },
+        {
+          "text": "The developmental competence of the responding population.",
+          "explanation": "Correct. Cell state matters alongside the supplied signal."
+        },
+        {
+          "text": "A positive marker by itself establishes a complete vascularised organ.",
+          "explanation": "A marker is one observation; polarity, function and the presence of other tissue components remain separate questions."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-identity-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-identity-20261106",
+      "prompt": "A growth perturbation reduces tissue folding while differentiated epithelial markers remain detectable. Which claim is most appropriate?",
+      "options": [
+        {
+          "text": "Tissue identity and the amount or organisation of tissue can be affected differently.",
+          "explanation": "Correct. Retained markers do not establish normal growth and architecture."
+        },
+        {
+          "text": "Retained epithelial markers establish normal secretory output.",
+          "explanation": "Molecular identity is not a direct measurement of secretion or tissue organisation."
+        },
+        {
+          "text": "Normal marker detection proves normal organ size and function.",
+          "explanation": "Identity markers alone do not establish those outcomes."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-prenatal-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-prenatal-20261106",
+      "prompt": "Barrier properties are detected before mature astrocytic vascular coverage in a rodent study. Which conclusion is supported?",
+      "options": [
+        {
+          "text": "Astrocytes can have no later role in barrier regulation.",
+          "explanation": "An initial developmental finding does not exclude later functions."
+        },
+        {
+          "text": "Every barrier property is identical at all ages and in all regions.",
+          "explanation": "Different properties and preparations require their own measurements."
+        },
+        {
+          "text": "Mature astrocytic coverage is not required for the initial properties measured in that study.",
+          "explanation": "Correct. Retain the model and readout rather than extending the finding to every function."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-selectivity-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-selectivity-20261106",
+      "prompt": "Small tested tracers cross more readily after claudin-5 loss, while larger comparators remain restricted. Which account is strongest?",
+      "options": [
+        {
+          "text": "The entire vessel wall has disappeared.",
+          "explanation": "Selective tracer passage does not establish loss of all vascular structure."
+        },
+        {
+          "text": "A junctional alteration changes permeability selectively under the tested conditions.",
+          "explanation": "Correct. Do not turn the tracer set into a universal mass cutoff for every compound."
+        },
+        {
+          "text": "Every molecule of the same nominal mass must behave identically.",
+          "explanation": "Chemistry, charge, exposure and detection can influence the result."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-route-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-route-20261106",
+      "prompt": "An experiment finds extracellular tracer and increased labelled endothelial vesicles while junctional contacts still arrest the tracer. What mechanism is supported?",
+      "options": [
+        {
+          "text": "Increased transcellular vesicular transport in the tested model.",
+          "explanation": "Correct. Evidence along the route distinguishes it from simply assuming open intercellular junctions."
+        },
+        {
+          "text": "Increased paracellular passage through the observed junctional contacts.",
+          "explanation": "The stated junctional tracer arrest weighs against that route for the observed event; increased labelled vesicles support a transcellular route."
+        },
+        {
+          "text": "Increased choroid epithelial secretion into the ventricle.",
+          "explanation": "The observations concern parenchymal endothelial transport, not a measurement at the choroid epithelial interface."
+        }
+      ],
+      "answer": 0,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-sampling-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-sampling-20261106",
+      "prompt": "Twenty micrographs and hundreds of organelle measurements come from one animal. How should the sample be described?",
+      "options": [
+        {
+          "text": "As hundreds of independent animals.",
+          "explanation": "Organelle measurements remain nested within the specimen."
+        },
+        {
+          "text": "As twenty independent biological replicates solely because there are twenty files.",
+          "explanation": "The number of image files does not establish biological independence."
+        },
+        {
+          "text": "As multiple measurements within one biological specimen.",
+          "explanation": "Correct. Distinguish technical sampling from independent biological units."
+        }
+      ],
+      "answer": 2,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "brain-csf-depth-embedded-labels-20261106",
+      "topic": "brain-and-csf-barriers",
+      "subject": "histology",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "href": "/library/brain-and-csf-barriers#question-brain-csf-depth-embedded-labels-20261106",
+      "prompt": "Added hotspot markers are hidden on the supplied H&E image. Is the remaining photograph an unlabelled recognition test?",
+      "options": [
+        {
+          "text": "Yes, because all labels are browser overlays.",
+          "explanation": "The original image contains permanent text and arrows."
+        },
+        {
+          "text": "No; labels embedded in the source pixels remain visible.",
+          "explanation": "Correct. Use this image for guided interpretation and provide a different cleared specimen for blind recognition."
+        },
+        {
+          "text": "No, because the photograph is an electron micrograph.",
+          "explanation": "The provider identifies it as H&E light microscopy."
+        }
+      ],
+      "answer": 1,
+      "provenance": "Original educational scenario; not an NBME item or a patient case."
     }
   ]
 }

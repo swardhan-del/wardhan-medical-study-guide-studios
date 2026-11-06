@@ -6356,41 +6356,168 @@
     {
       "id": "brain-and-csf-barriers",
       "subject": "histology",
-      "title": "Locate the blood–brain and blood–CSF barriers",
-      "summary": "Trace two routes out of blood and identify the cell layer that forms each barrier rather than confusing support cells with the seal.",
+      "title": "Brain and CSF barriers: tissue structure, development and transport",
+      "summary": "Identify choroid-plexus architecture, trace the endothelial and epithelial interfaces, and connect developmental evidence to selective transport experiments.",
       "tags": [
-        "Locate the blood–brain and blood–CSF barriers",
-        "histology",
-        "Mechanisms and applications"
+        "choroid plexus",
+        "blood–brain barrier",
+        "blood–CSF barrier",
+        "embryology",
+        "H&E",
+        "transport",
+        "experimental interpretation"
       ],
-      "source": "histology-neuro-r20260907",
-      "section": "Official Lecture Expansion — Glia Limitans and CNS Barriers",
+      "source": "brain-csf-depth-20261106",
+      "section": "CNS interfaces: histology and embryology",
       "steps": [
         {
-          "title": "Trace blood toward brain interstitial fluid",
-          "body": "At typical CNS capillaries, endothelial cells are joined by tight junctions and show restricted nonspecific transcytosis. These endothelial properties form the principal blood–brain barrier. Crossing from blood to brain therefore requires an appropriate transcellular route for many substances. A barrier is selective rather than absolutely impermeable: oxygen can diffuse, and transport proteins support the regulated passage of needed nutrients."
+          "title": "Start with compartments and a direction of travel",
+          "body": "Blood, brain interstitial fluid and ventricular cerebrospinal fluid (CSF) are different compartments. Draw them separately before naming a barrier. Blood inside a vessel has not entered the surrounding brain, and material reaching ventricular fluid has not necessarily reached a neuron at the same concentration. The route from a typical brain capillary to interstitial fluid crosses endothelium. The route from a choroid-plexus capillary to ventricular CSF also encounters a specialised epithelial covering. A useful explanation names the starting compartment, the destination and every intervening cell layer. The word barrier describes selective exchange; it does not mean that all substances are permanently excluded.",
+          "practice": {
+            "prompt": "Why can a measurement in ventricular CSF be insufficient to establish the concentration inside a brain cell?",
+            "feedback": "The sample and the cell occupy different compartments. Additional interfaces, transport and distribution separate them; a concentration in one compartment is not a direct measurement in another."
+          }
         },
         {
-          "title": "Place support cells around the endothelial seal",
-          "body": "Pericytes, basement membranes and astrocytic endfeet contribute to the neurovascular environment and maintenance of barrier properties. Astrocytes are important, but their endfeet are not the endothelial tight junctions themselves. When explaining a labelled drawing, distinguish the luminal endothelial lining from the cells and processes outside it. Saying that astrocytes simply form the seal hides the most important anatomical boundary."
+          "title": "Recognise the epithelial covering and vascular core",
+          "body": "In the supplied H&E image, follow the outside of several projecting profiles. Closely arranged epithelial cells form the covering; their nuclei make a peripheral row. Inside lie pale stromal material and vascular lumina containing strongly eosinophilic erythrocytes. The epithelium, stroma and blood vessels are components of one frond, not three separate organs. The source identifies human lateral-ventricle choroid plexus. That context matters because an isolated epithelial-covered vascular projection is not unique to this organ. Describe the repeated epithelial–stromal pattern first, then use its location to support the identification."
         },
         {
-          "title": "Take the choroid-plexus route separately",
-          "body": "Choroid-plexus capillaries are fenestrated. The blood–CSF barrier lies principally at tight junctions between the specialised choroid-plexus epithelial cells. These epithelial cells regulate the passage from the vascular connective-tissue core toward ventricular CSF. Thus the blood–brain route has an endothelial seal, whereas the choroid-plexus route has an epithelial seal. Ordinary ventricular ependyma should not be assigned the same tight barrier properties as the specialised choroid-plexus epithelium."
+          "title": "Put the apical and basal surfaces in the right places",
+          "body": "The epithelial apical surface faces ventricular CSF outside the frond. Its basal surface faces the underlying stromal compartment, while lateral surfaces contact neighbouring epithelial cells. This is the reverse of an interpretation that treats the vascular centre as a glandular lumen. The mature covering is generally simple cuboidal to low columnar, with an apical microvillous surface and a specialised transport apparatus. Individual microvilli, membrane infoldings and transporter molecules cannot be reliably resolved in this H&E field. Distinguish the polarity inferred from tissue organisation from ultrastructural features established by other methods."
         },
         {
-          "title": "Keep the glia limitans distinct",
-          "body": "Astrocytic endfeet and associated basal laminae contribute to the superficial glia limitans beneath the pia and to perivascular boundaries. These structures belong on a CNS barrier map but are not interchangeable with capillary endothelium. A routine light micrograph may show choroid-plexus fronds and epithelial lining but cannot directly resolve individual tight-junction strands. Connect visible architecture to mechanism while making the level of observation clear."
+          "title": "A ring in a section need not be a secretory acinus",
+          "body": "A branching three-dimensional frond can be cut longitudinally, obliquely or across its tip. These cuts create elongated profiles, rounded islands and apparently disconnected pieces within one section. Look inside a ring: erythrocytes within an internal vessel and an intervening stromal core favour a vascular projection rather than an epithelial acinus surrounding a secretory lumen. A crowded nuclear edge may reflect an oblique cut or fold rather than true stratification. Compare several intact profiles and obtain lower-power orientation or serial sections when the relationship remains uncertain.",
+          "practice": {
+            "prompt": "A rounded profile has peripheral epithelial nuclei and a central erythrocyte-filled lumen. What two levels of structure must you separate?",
+            "feedback": "The epithelial-covered frond is the larger structure. The blood-vessel lumen lies inside its stromal core; it is not a secretory lumen directly bounded by the outer epithelium."
+          }
+        },
+        {
+          "title": "Use H&E contrast to locate structures, not to measure function",
+          "body": "Hematoxylin-based nuclear staining depends on oxidised dye and a mordant; after bluing, nuclear material appears blue to purple. Eosin provides contrasting pink-to-red staining of many protein-rich structures, including cytoplasm and erythrocytes. In this specimen, use nuclear position, epithelial continuity and the boundaries of erythrocyte-containing spaces together. Strong pink staining does not identify a transporter, and dark nuclei do not directly quantify metabolic activity. Stain balance, processing and section thickness influence appearance. H&E helps you recognise the architecture in which a barrier operates; it is not a direct assay of permeability or secretion."
+        },
+        {
+          "title": "Explain what preparation contributes to the slide",
+          "body": "A routine paraffin workflow stabilises tissue by fixation, supports it by embedding, produces thin sections, and adds contrast by staining. Solvent exchange and cutting change the specimen: shrinkage, extraction, compression and tearing can alter apparent spaces. During H&E staining, paraffin is removed and sections are brought into conditions compatible with aqueous nuclear staining; differentiation is used in some protocols, followed by bluing, counterstaining and preparation for mounting. Exact reagents and timings belong to the laboratory's validated procedure. The image provider gives H&E and a 50 µm scale bar but not fixation, embedding or section thickness, so those details remain unknown for this field."
+        },
+        {
+          "title": "Choose a method that can answer the structural question",
+          "body": "Light microscopy shows the epithelial covering, connective-tissue core and vascular lumina. Transmission electron microscopy can resolve membrane profiles, junctional contacts, microvilli and organelles at a different scale. In the Xu study, electron-microscopy specimens underwent aldehyde fixation, heavy-metal contrast, resin embedding and ultrathin sectioning; the resulting contrast is not H&E colour. Immunolabelling addresses molecular localisation, while a tracer experiment addresses passage under specified conditions. Increasing digital magnification cannot recover unresolved structures from the H&E photograph. Decide whether the question concerns architecture, ultrastructure, a molecular target or a functional measurement before choosing the method."
+        },
+        {
+          "title": "A protein label establishes a location before it establishes a mechanism",
+          "body": "Praetorius and Nielsen used immunoperoxidase histochemistry in human choroid plexus to map membrane proteins. Na⁺/K⁺-ATPase α1 and NKCC1 immunoreactivity was apical, whereas several acid–base transporters were basolateral. This supports a polarised epithelial organisation. It does not directly measure the rate or direction of transport in a living cell. A staining experiment also needs appropriate positive and negative controls and comparable tissue processing. Do not equate absence of detectable staining with proof that a protein can never be expressed, or treat a brown reaction product as a measurement of CSF secretion."
+        },
+        {
+          "title": "Trace blood to CSF through the choroid plexus",
+          "body": "Follow the route in order: vascular lumen, fenestrated capillary wall, stromal extracellular space, epithelial basal surface, epithelial layer and ventricular CSF. The capillary endothelium here permits exchange with the stroma more readily than typical brain-capillary endothelium. The principal blood–CSF junctional boundary lies between adjacent choroid epithelial cells near their apical region. Material in the stroma still faces that epithelial interface. Transport through epithelial cells and restricted passage between them are distinct routes. A fenestrated capillary therefore does not provide a direct, unregulated opening from blood into the ventricle."
+        },
+        {
+          "title": "Trace blood to brain through the endothelial interface",
+          "body": "At typical CNS capillaries, continuous endothelial cells form the luminal lining. Junctions between them restrict paracellular passage, and low nonspecific transcytosis limits vesicular transport through the cells. These are complementary properties, not two names for the same mechanism. Needed substances still cross through appropriate pathways; a selective interface is not an absolutely impermeable wall. In a drawing, place the endothelial cell between blood and the surrounding basement-membrane and support-cell environment. In H&E, identifying a capillary or its nucleus does not demonstrate that its junctional proteins and transport pathways are functioning normally."
+        },
+        {
+          "title": "Distinguish pericytes and astrocytic support from the sealing cell",
+          "body": "Pericytes closely associate with the abluminal endothelial surface and its basement-membrane environment. Astrocytic endfeet approach from the nervous tissue. Both participate in the neurovascular unit, but neither should replace endothelium as the principal blood–brain sealing layer. Their proximity also makes identification from isolated small nuclei unreliable. Molecular labelling, ultrastructure or a clearly oriented diagram may establish relationships that routine H&E cannot. When discussing an experiment, distinguish the cell that was altered from the cell whose permeability changed: a supporting population can influence an endothelial property without becoming the endothelial junction itself."
+        },
+        {
+          "title": "Ordinary ependyma and choroid epithelium are different interfaces",
+          "body": "Ordinary ependyma lines the ventricles and central canal over nervous tissue; its apical cilia can contribute to local fluid movement. Choroid epithelium covers a vascular stromal core and has the specialised junctional and transport organisation of the blood–CSF interface. Sharing a ventricular-facing surface does not make these tissues functionally identical. Likewise, describing choroid epithelium as specialised ventricular epithelium should not imply that mature ordinary ependymal cells simply acquire capillaries to form it. Its developmental specification and regional progenitors need to be considered separately. In a practical, identify what lies beneath the lining before assigning the tissue."
+        },
+        {
+          "title": "Place the glia limitans at its own boundary",
+          "body": "The superficial glia limitans includes astrocytic endfeet and associated basement membrane beneath the pia. Perivascular astrocytic organisation surrounds penetrating vessels and their associated boundaries. These positions differ from the blood-facing endothelial layer and the CSF-facing choroid epithelium. A diagram that labels all three as the same seal loses the route a substance must travel. Begin with the vascular lumen or ventricular fluid and work outward through the actual anatomical relationships. Relative location can be described from structure; permeability to a particular tracer still requires an appropriate measurement."
+        },
+        {
+          "title": "Connect epithelial polarity to sodium and potassium transport",
+          "body": "The choroid-plexus Na⁺/K⁺ pump is unusual among transporting epithelia because its major location is apical, facing CSF. The pump uses ATP to move Na⁺ out of the epithelial cell and K⁺ into it, maintaining gradients that influence other transport processes. With this orientation, Na⁺ export is directed toward ventricular fluid and K⁺ uptake is from that fluid. Basolateral transport pathways help supply and regulate intracellular solutes, so the apical pump is part of a coordinated epithelial system. A membrane-localisation diagram should show both cell polarity and the directions being discussed; a pump label alone is insufficient."
+        },
+        {
+          "title": "Separate transporter position from net transport direction",
+          "body": "NKCC1 couples the movement of one Na⁺, one K⁺ and two Cl⁻ ions in the same direction. The transported charges balance overall, so the combined chemical gradients are central to the direction of net transport. Apical localisation tells you which two compartments the transporter connects: epithelial cytoplasm and CSF. It does not fix the direction under all conditions. Opposing unidirectional fluxes can occur while their difference determines net movement. Changes in ion concentrations, transporter abundance or regulation can therefore have different consequences. Do not infer a universal secretion arrow simply from the presence of NKCC1 on an apical membrane."
+        },
+        {
+          "title": "Water permeability and net fluid secretion are different readouts",
+          "body": "AQP1 is prominent at the CSF-facing membrane, but an image showing a water channel does not quantify its contribution to fluid production. Jensen and colleagues compared osmotic shrinkage of isolated mouse choroid plexus with in-vivo estimates of CSF secretion. AQP1 loss reduced the first readout without reducing the second under their tested conditions. The lesson is to keep membrane permeability under an imposed osmotic challenge distinct from the net output of an intact secretory system. Neither a protein label nor a single assay establishes the complete route taken by water in every preparation."
+        },
+        {
+          "title": "Use developmental perturbations to test potassium handling",
+          "body": "During early postnatal mouse development, CSF K⁺ falls while choroid transport and metabolic properties change. Xu and colleagues increased choroid NKCC1 expression and observed accelerated K⁺ clearance in that setting. Fame and colleagues then used targeted reduction of NKCC1 and found higher CSF K⁺ at the tested neonatal stage, supporting its contribution to the developmental decline. Reduction was partial, and unchanged transcripts for other transporters did not exclude changes in their proteins or activity. These are complementary perturbation studies in developing animals, not a fixed timetable or treatment instruction for human infants."
+        },
+        {
+          "title": "Read apparently different transport results in their experimental context",
+          "body": "A neonatal clearance experiment and an adult secretion experiment need not ask the same question. Compare age, starting ion concentrations, the intervention and the measured outcome before deciding that results conflict. An extracellular tracer signal, an isotope uptake rate, a CSF concentration, ventricular volume and a secretion estimate are distinct measurements. Some can change without the others changing proportionately. The research supports a context-dependent account of choroid transport. Keep the stable anatomical fact—an apical transporter connects cell and CSF—separate from a prediction about net flux in a particular experiment.",
+          "practice": {
+            "prompt": "Two studies alter NKCC1 but measure neonatal CSF K⁺ in one and adult net CSF secretion in the other. What belongs in the comparison table?",
+            "feedback": "Record model and age, ionic conditions, intervention direction and extent, controls, and the actual readout. Neither study should be rewritten as if it measured the other outcome."
+          }
+        },
+        {
+          "title": "Embryology begins with a regional epithelial fate",
+          "body": "Choroid epithelium develops in dorsal neural-tube territories associated with the roofs of the brain ventricles. The two lateral-ventricular plexuses belong to telencephalic regions, the third-ventricular plexus to the diencephalon and the fourth-ventricular plexus to the hindbrain. This regional pattern is more informative than calling the organ a uniform ventricular lining. An epithelial lineage must be distinguished from the developing vascular and stromal populations that it surrounds. The mature frond depends on their coordinated organisation; naming the epithelial origin does not establish the ancestry of every cell in its core."
+        },
+        {
+          "title": "Distinguish an ancestor from a required signalling neighbour",
+          "body": "Currle and colleagues combined Gdf7 lineage marking with cell ablation. Their results separated direct contribution to choroid epithelium from a non-cell-autonomous developmental requirement: a region could lack the lineage label yet fail to develop after the labelled population was removed. Lineage marking asks where descendants come from. Ablation asks what depends on the removed cells, including indirect effects. Neither question is answered by adult proximity alone. State which region and experimental model were examined, and avoid assigning every choroid epithelial cell to a single lineage on the basis of one marker."
+        },
+        {
+          "title": "Separate early specification from later maintenance",
+          "body": "In mouse experiments reported by Johansson and colleagues, early Otx2 deletion prevented choroid-plexus development, while deletion later in embryogenesis also affected maintenance of hindbrain choroid cells. This distinguishes establishing a tissue from sustaining it once formed. A transcription factor can participate in more than one developmental phase; a later phenotype does not automatically mean the original specification never occurred. The driver, time of deletion and anatomical region determine what can be concluded. These reported mouse embryonic stages should not be translated directly into human gestational dates."
+        },
+        {
+          "title": "A signal-producing epithelium can support a different progenitor domain",
+          "body": "Huang and colleagues distinguished Shh-producing differentiated hindbrain choroid epithelium from an adjacent Shh-responsive proliferative domain. Reduced Shh signalling impaired growth and folding, while differentiated epithelial markers could remain detectable. This separates tissue identity from the amount and organisation of tissue produced. It also separates expression of a signalling ligand from evidence that a cell is responding to that ligand. The finding concerns a particular developing hindbrain system; it does not mean every choroid cell or every ventricular plexus responds identically."
+        },
+        {
+          "title": "Developmental competence changes the response to a signal",
+          "body": "In stem-cell-derived neural preparations, Watanabe and colleagues found that BMP4-driven choroid epithelial differentiation depended on the developmental state of the responding population. Earlier neural-stage mouse cultures responded differently from later tested stages; human-derived preparations followed different timing. Several kinds of evidence—marker combinations, epithelial polarity, ultrastructure and secretory behaviour—supported the interpretation. One positive marker is not equivalent to a complete organ containing its normal vasculature, stroma and immune environment. A developmental explanation therefore needs both the signal and the competence of the cells receiving it."
+        },
+        {
+          "title": "Follow changing tissue organisation rather than a single maturity label",
+          "body": "Development includes specification of epithelial territory, expansion and folding around a vascular stromal core, and acquisition of specialised junctional, metabolic and transport properties. These processes overlap but are not interchangeable. A simple epithelial appearance does not establish adult transport performance, and expression of a transport protein does not prove that the whole organ has completed morphogenesis. Compare stage-matched specimens using the same structural criteria. Describe whether the observation concerns cell shape, apical specialisation, vascular organisation or a measured physiological property instead of classifying the entire developing organ as merely mature or immature."
+        },
+        {
+          "title": "Initial barrier properties do not wait for mature astrocytic coverage",
+          "body": "Daneman and colleagues detected prenatal rodent barrier properties before mature astrocytic vascular coverage and found increased permeability in pericyte-deficient mouse models. This challenges an account in which mature astrocytes must create the initial endothelial seal. It does not make astrocytes unimportant in later regulation or imply that every barrier property appears simultaneously. Ben-Zvi and colleagues examined a different embryonic tracer approach and found developmental and regional variation. Compare species, region, tracer, administration and detection. A negative signal in one assay cannot establish that every solute is excluded throughout the developing brain."
+        },
+        {
+          "title": "Test selective permeability rather than imagining a missing vessel wall",
+          "body": "Nitta and colleagues examined claudin-5-deficient late-embryonic mice. Smaller tested tracers entered brain tissue while larger comparators remained restricted, despite broadly preserved vessel morphology. The result links a junctional component to selective permeability under the experimental conditions. It does not define a universal molecular-mass cutoff for all compounds: size, charge, chemistry, exposure and detection affect tracer behaviour. For an oral answer, separate three claims—vascular structure is present, a molecular component is altered, and a particular substance crosses more readily. Only the relevant observations support each claim."
+        },
+        {
+          "title": "A leaky readout does not identify the route by itself",
+          "body": "In Mfsd2a-deficient mice, Ben-Zvi and colleagues combined tracer findings with electron microscopy. Their observations supported increased vesicular transport through endothelial cells while tracer was still arrested at junctional contacts. This provides a mechanism beyond simply calling the junctions open. Material outside a vessel alone cannot distinguish transcellular transport from passage between cells or damage introduced during preparation. A strong mechanistic claim needs evidence along the proposed route and suitable controls. Do not identify a fenestration, a tight-junction strand or a transport vesicle directly from the routine H&E field used in this lesson."
+        },
+        {
+          "title": "Keep the biological unit separate from the number of images",
+          "body": "Several fields from one specimen improve sampling of that specimen; they are not automatically independent biological replicates. Likewise, multiple organelles measured within one animal remain nested within that animal. Some developmental CSF studies pool material because an individual sample is small; a pooled sample has to be counted and described accordingly. Record the unit analysed, the number of independent specimens and any repeated measurements. A large number of plotted image measurements does not by itself establish a large number of independent animals or a result that generalises across species."
+        },
+        {
+          "title": "Build the practical differential from organisation and context",
+          "body": "Compare three patterns. Choroid plexus has epithelial-covered vascular stromal projections facing ventricular fluid. Ordinary ependyma forms a ventricular lining over nervous tissue. A typical parenchymal CNS capillary is an endothelial tube within nervous tissue, not a frond covered by choroid epithelium. Other organs can also contain epithelial-covered projections, so an isolated field needs contextual support. State what is visible, what identity it favours, and which additional view or method would resolve uncertainty. The supplied image is permanently labelled and is therefore a guided interpretation exercise, not a blind identification examination."
+        },
+        {
+          "title": "Connect the slide, the developmental account and the experiment",
+          "body": "A complete explanation should move between scales without confusing them. Identify the epithelial covering and vascular core in the image; orient apical and basal surfaces; trace blood toward ventricular CSF; explain how epithelial specification and coordinated tissue growth establish the organ; then choose a functional readout for a proposed mechanism. Keep observations separate from inferences at each step. H&E architecture does not establish transporter direction, molecular localisation does not measure secretion, and a result in a developing mouse is not a human clinical prediction. This connected reasoning is the target of the specimen activity and applied questions."
         }
       ],
       "objectives": [
-        "Locate the sealing junctions in each barrier.",
-        "Explain the contribution of astrocytes and pericytes.",
-        "Distinguish ordinary ependyma from choroid-plexus epithelium."
+        "Identify epithelial-covered vascular fronds and distinguish them from a ventricular lining or an isolated capillary.",
+        "Orient apical and basal epithelial surfaces and interpret H&E without claiming ultrastructural resolution.",
+        "Trace the blood–brain and blood–CSF routes through their actual cellular boundaries.",
+        "Explain how developmental specification, induction, growth and maintenance ask different questions.",
+        "Relate apical transport proteins to ionic conditions without assuming one universal net direction.",
+        "Distinguish molecular localisation, membrane permeability, tracer passage and net fluid secretion.",
+        "Interpret genetic perturbations with model, stage, control and sampling limits."
       ],
       "prerequisites": [
+        "microscopy",
+        "epithelia",
+        "cell-junctions",
         "myelin-and-glial-cells",
-        "cell-junctions"
+        "neurulation"
       ],
       "workedExample": {
         "title": "Follow a tracer into a choroid-plexus frond",
@@ -6425,10 +6552,12 @@
       },
       "related": [
         "myelin-and-glial-cells",
-        "cell-junctions"
+        "cell-junctions",
+        "neurulation",
+        "epithelia"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 10
+      "updatedAt": "2026-11-06",
+      "minutes": 55
     },
     {
       "id": "chromatin-access-and-topology",
