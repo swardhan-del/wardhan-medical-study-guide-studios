@@ -6,9 +6,10 @@ import { chromium } from "@playwright/test";
 import { getSiteUrl } from "../src/lib/site-url.ts";
 import { anatomyLearningPages } from "../src/content/anatomy-learning.ts";
 
-const manifest = JSON.parse(readFileSync(".next/prerender-manifest.json", "utf8"));
-const htmlPath = route => ".next/server/app" + (route === "/" ? "/index" : route) + ".html";
-const appPaths = Object.keys(JSON.parse(readFileSync(".next/server/app-paths-manifest.json","utf8")));
+const buildDir = process.env.STUDY_BUILD_DIR || ".next";
+const manifest = JSON.parse(readFileSync(buildDir + "/prerender-manifest.json", "utf8"));
+const htmlPath = route => buildDir + "/server/app" + (route === "/" ? "/index" : route) + ".html";
+const appPaths = Object.keys(JSON.parse(readFileSync(buildDir + "/server/app-paths-manifest.json","utf8")));
 const fixed = appPaths.filter(p=>p.endsWith("/page")&&!p.includes("[")).map(p=>p.slice(0,-5)||"/");
 const routes = [...new Set([...Object.keys(manifest.routes).filter(route=>existsSync(htmlPath(route))),...fixed,...anatomyLearningPages.map(p=>"/subjects/anatomy/"+p.slug)])].filter(route=>!route.startsWith("/_")&&!route.startsWith("/review")).sort();
 const base = process.env.CHECK_BASE_URL;
@@ -42,7 +43,7 @@ try {
     record.redirect ||= headerRedirect || null;
     const scripts = [...new Set(record.scripts)].filter(s => s.startsWith("/_next/") && s.endsWith(".js"));
     const sizes = scripts.map(src => {
-      if (!assets.has(src)) { const bytes = readFileSync(".next" + src.slice(6)); assets.set(src, {raw:bytes.length,gzip:gzipSync(bytes).length}); }
+      if (!assets.has(src)) { const bytes = readFileSync(buildDir + src.slice(6)); assets.set(src, {raw:bytes.length,gzip:gzipSync(bytes).length}); }
       return assets.get(src);
     });
     records.push({route,...record,htmlBytes:Buffer.byteLength(html),jsBytes:sizes.reduce((n,s)=>n+s.raw,0),jsGzipBytes:sizes.reduce((n,s)=>n+s.gzip,0)});

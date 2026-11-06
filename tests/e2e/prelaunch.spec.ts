@@ -81,3 +81,19 @@ test("pre-launch browsing loads no analytics SDK or external fonts",async({page}
   await expect(page.locator("h1:visible")).toBeVisible();
   expect(resources.some(url=>/vercel-insights|\/_vercel\/insights|fonts\.googleapis|fonts\.gstatic/.test(url))).toBe(false);
 });
+
+test("saved-resource labels retain full contrast before and after hydration", async ({browser, page}, info) => {
+  const context = await browser.newContext({javaScriptEnabled:false, baseURL:info.project.use.baseURL, viewport:info.project.use.viewport});
+  try {
+    const staticPage = await context.newPage();
+    await staticPage.goto("/practice/renal-challenge");
+    const pending = staticPage.getByRole("button",{name:"Save to My Study: Renal challenge",exact:true});
+    await expect(pending).toBeDisabled();
+    await expect(pending).toHaveCSS("opacity","1");
+  } finally { await context.close(); }
+  await page.goto("/practice/renal-challenge");
+  const ready = page.getByRole("button",{name:"Save to My Study: Renal challenge",exact:true});
+  await expect(ready).toBeEnabled();
+  await expect(ready).toHaveCSS("opacity","1");
+  expect((await new AxeBuilder({page}).include(".save-button").withTags(["wcag2aa"]).analyze()).violations).toEqual([]);
+});

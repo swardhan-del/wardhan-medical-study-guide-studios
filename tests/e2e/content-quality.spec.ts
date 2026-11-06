@@ -11,7 +11,7 @@ for (const route of ["/library/physiology-membrane-foundations", "/library/conne
     await panel.locator("summary").focus();
     await page.keyboard.press("Enter");
     await expect(panel).toHaveAttribute("open", "");
-    await expect(panel).toContainText("independent clinical review has not been completed");
+    await expect(panel).toContainText(/independent clinical review has not been completed/i);
     await expect(panel).toContainText("Last updated:");
     await expect(panel.getByRole("heading", { name: "Learning objectives", exact: true })).toBeVisible();
     const links = await panel.getByRole("navigation", { name: "Related learning" }).getByRole("link").evaluateAll(nodes => nodes.map(node => (node as HTMLAnchorElement).pathname));

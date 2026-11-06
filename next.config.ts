@@ -20,6 +20,8 @@ const contentSecurityPolicy = [
   ...(process.env.VERCEL ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 const nextConfig: NextConfig = {
+  // Isolate local generated output when a synced checkout has stale build files.
+  distDir: process.env.STUDY_BUILD_DIR || ".next",
   reactStrictMode: true,
   poweredByHeader: false,
   outputFileTracingExcludes: { "/*": ["./.private/**/*", "./.private/catalog.json"] },
