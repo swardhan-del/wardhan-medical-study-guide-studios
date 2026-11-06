@@ -73,9 +73,15 @@ test("Placenta questions explain distractors, correct answers and retain practic
   await page.goto(route); await page.getByRole("button",{name:"Show all questions",exact:true}).click();
   const questions=practice.questions.filter(q=>q.topic==="placenta" && q.id.endsWith("20261106")); expect(questions).toHaveLength(16);
   for(const q of questions) {
-    const block=page.locator(`#question-${q.id}`);const wrong=(q.answer+1)%q.options.length;
-    await block.getByRole("radio",{name:q.options[wrong].text,exact:true}).check();await block.getByRole("button",{name:"Check answer",exact:true}).click();await expect(block).toContainText(q.options[wrong].explanation);
-    await block.getByRole("button",{name:"Try without feedback",exact:true}).click();await block.getByRole("radio",{name:q.options[q.answer].text,exact:true}).check();await block.getByRole("button",{name:"Check answer",exact:true}).click();await expect(block).toContainText(q.options[q.answer].explanation);
+    const block=page.locator(`#question-${q.id}`);
+    for (const [index, option] of q.options.entries()) {
+      if (index===q.answer) continue;
+      await block.getByRole("radio",{name:option.text,exact:true}).check();
+      await block.getByRole("button",{name:"Check answer",exact:true}).click();
+      await expect(block).toContainText(option.explanation);
+      await block.getByRole("button",{name:"Try without feedback",exact:true}).click();
+    }
+    await block.getByRole("radio",{name:q.options[q.answer].text,exact:true}).check();await block.getByRole("button",{name:"Check answer",exact:true}).click();await expect(block).toContainText(q.options[q.answer].explanation);
   }
   await page.reload();await page.getByRole("button",{name:"Show all questions",exact:true}).click();
   for(const q of questions)await expect(page.locator(`#question-${q.id}`).getByRole("radio",{name:q.options[q.answer].text,exact:true})).toBeChecked();
@@ -133,7 +139,11 @@ test("Placenta revision keeps the selected lesson, questions, source and specime
   for(const step of lesson.steps) await expect(section).toContainText(step.title);
   for(const q of practice.questions.filter(q=>q.topic==="placenta")) await expect(section).toContainText(q.prompt);
   await expect(section).toContainText("CC0 1.0");
-  await expect(section.locator('img[src="/images/figures/chorionic-villus-term.jpg"]')).toHaveCount(1);
+  const specimenImage=section.locator('img[src^="/images/figures/chorionic-villus-term.jpg"]');
+  await expect(specimenImage).toHaveCount(1);
+  expect(new URL(await specimenImage.getAttribute("src") ?? "",page.url()).pathname).toBe("/images/figures/chorionic-villus-term.jpg");
+  await specimenImage.scrollIntoViewIfNeeded();
+  await expect.poll(()=>specimenImage.evaluate((image:HTMLImageElement)=>image.naturalWidth)).toBe(4469);
   expect(await section.locator('a[href*="dropbox"]').count()).toBe(0);
   await page.getByRole("checkbox",{name:"Include answer key",exact:true}).uncheck();await expect(page.locator(".revision-answers")).toHaveCount(0);
   await page.emulateMedia({media:"print"});await expect(page.locator(".guide-selector")).toBeHidden();

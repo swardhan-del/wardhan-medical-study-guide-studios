@@ -4903,16 +4903,16 @@
       "prompt": "A trophoblast is situated deep within maternal decidua. Which statement is justified?",
       "options": [
         {
-          "text": "Its position makes it a maternal stromal cell.",
-          "explanation": "Position does not change developmental origin."
+          "text": "Its presence in decidua indicates derivation from maternal endometrial stroma.",
+          "explanation": "Decidual stromal cells are maternal; invading trophoblast retains its fetal developmental origin."
         },
         {
           "text": "It is fetal-derived despite its location in maternal tissue.",
           "explanation": "Correct. Origin and anatomical location must be recorded separately."
         },
         {
-          "text": "It must be a fetal erythrocyte.",
-          "explanation": "Trophoblast and erythrocyte are different cell categories."
+          "text": "Its passage through uterine epithelium makes it a derivative of that epithelium.",
+          "explanation": "A cell can cross a tissue boundary without acquiring the developmental lineage of the tissue it crosses."
         }
       ],
       "answer": 1,
@@ -4999,12 +4999,12 @@
       "prompt": "A large villous cross-section appears in an isolated field. Why is size alone insufficient to call it an anchoring villus?",
       "options": [
         {
-          "text": "Large villi can never have vessels.",
-          "explanation": "Villous vascular contents and attachment are separate questions."
+          "text": "A vessel-rich core establishes anchoring function even if no attachment is shown.",
+          "explanation": "Vascularity describes the villous core. It does not demonstrate a connection to the maternal attachment interface."
         },
         {
-          "text": "Every large section is a maternal artery.",
-          "explanation": "The surrounding tissue and wall must be identified."
+          "text": "Contact with maternal intervillous blood establishes attachment to the decidua.",
+          "explanation": "Intervillous blood surrounds villous surfaces; contact with that blood is not evidence of structural attachment to decidua."
         },
         {
           "text": "Anchoring describes a connection to the attachment interface that may not be captured in this plane.",
@@ -5099,12 +5099,12 @@
           "explanation": "Correct. Relative anatomical relationships can be discussed without inventing calibrated measurements."
         },
         {
-          "text": "Report the barrier as exactly 2 micrometres thick.",
-          "explanation": "Pixels cannot be converted to micrometres without valid calibration."
+          "text": "Convert image pixels into tissue micrometres using the publication’s display DPI.",
+          "explanation": "Display or print DPI describes reproduction size, not the microscope’s calibrated object-plane pixel size."
         },
         {
-          "text": "Derive the exact gestational day from the image width.",
-          "explanation": "Image dimensions do not encode developmental age."
+          "text": "Compare displayed barrier diameters across differently magnified images as absolute tissue thicknesses.",
+          "explanation": "Resizing and magnification change displayed dimensions. Absolute comparisons require valid physical calibration for each image."
         }
       ],
       "answer": 0,
@@ -5215,12 +5215,12 @@
       "prompt": "Why should nuclei counted in a placental atlas not automatically be reported as the same number of whole cells?",
       "options": [
         {
-          "text": "Every nucleus is maternal regardless of location.",
-          "explanation": "Origin requires evidence; it is not determined by the word nucleus."
+          "text": "Each isolated nucleus corresponds to a separate membrane-bounded trophoblast cell.",
+          "explanation": "Syncytiotrophoblast contains multiple nuclei within shared cytoplasm, so a nuclear count is not a whole-cell count."
         },
         {
-          "text": "RNA cannot be measured in nuclei.",
-          "explanation": "Single-nucleus methods measure nuclear RNA under their specific assay conditions."
+          "text": "All nuclei recovered from a villus belong to the same surface trophoblast compartment.",
+          "explanation": "Villous cores also contain stromal and vascular cells. Nuclear identity and tissue position require evidence rather than assignment by specimen name."
         },
         {
           "text": "A multinucleated syncytium can contribute multiple nuclei from a shared cellular continuum.",
@@ -5243,12 +5243,12 @@
           "explanation": "Correct. Tissue composition and sampling location can change measured proportions."
         },
         {
-          "text": "A higher count proves every vessel in the placenta has remodelled.",
-          "explanation": "A local dataset does not establish a whole-organ state."
+          "text": "Equal sequencing depth makes the two biopsies equivalent samples of the organ.",
+          "explanation": "Sequencing depth does not make different anatomical sampling sites equivalent or remove differences in sampled cell composition."
         },
         {
-          "text": "Every measured cell is an independent pregnancy.",
-          "explanation": "Cells within one donor are not independent donor-level replicates."
+          "text": "Technical replicates of either biopsy establish that its cell proportions represent independent pregnancies.",
+          "explanation": "Technical replicates assess repeat measurement of a sample; they do not replace independent donors or broader anatomical sampling."
         }
       ],
       "answer": 0,
