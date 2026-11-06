@@ -7173,6 +7173,870 @@
         }
       ],
       "answer": 3
+    },
+    {
+      "id": "mammary-depth-01",
+      "topic": "mammary-histology-and-development",
+      "title": "Recover the missing context",
+      "prompt": "A high-power breast field shows an epithelial ring and a lumen, but the student cannot decide whether it belongs to a lobular group or a larger conducting structure. Which next step most directly addresses that uncertainty?",
+      "options": [
+        {
+          "text": "Inspect a lower-power field that includes neighboring epithelial units and stroma.",
+          "explanation": "Architecture supplies the relationship missing from the isolated cellular view."
+        },
+        {
+          "text": "Increase magnification until individual nuclear chromatin is easier to see.",
+          "explanation": "Better nuclear detail does not recover the missing relationship to neighboring units."
+        },
+        {
+          "text": "Classify the profile from its lumen diameter alone.",
+          "explanation": "Diameter varies with section plane and context; it does not independently establish branch level or function."
+        },
+        {
+          "text": "Use the darkest nucleus to identify the whole gland.",
+          "explanation": "A single nuclear appearance is not an organ-level architectural criterion."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-02",
+      "topic": "mammary-histology-and-development",
+      "title": "Interpret peripheral nuclei",
+      "prompt": "In an H&E mammary field, several small dark nuclei lie near the outside of an epithelial profile. Which conclusion is best supported without additional staining?",
+      "options": [
+        {
+          "text": "They have demonstrated contractile function because of their position.",
+          "explanation": "A fixed nuclear position does not measure contraction."
+        },
+        {
+          "text": "Their peripheral position is visible, but their exact phenotype remains unconfirmed.",
+          "explanation": "Position is directly observable; specific myoepithelial identity may require additional localization and marker evidence."
+        },
+        {
+          "text": "They must all be stromal fibroblasts because they are dark.",
+          "explanation": "Darkness does not distinguish all basal epithelial and stromal cell types."
+        },
+        {
+          "text": "They prove that the profile has no basal epithelial component.",
+          "explanation": "The field does not support that exclusion, and section geometry may obscure boundaries."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-03",
+      "topic": "mammary-histology-and-development",
+      "title": "Control a comparison",
+      "prompt": "A learner compares postmenopausal human H&E with a lactating osmium preparation and attributes every dark region in the second slide to lactation. What is the most important design problem?",
+      "options": [
+        {
+          "text": "Different stains always make tissue comparisons impossible.",
+          "explanation": "Comparisons remain useful if their distinct readouts and limits are acknowledged."
+        },
+        {
+          "text": "The older specimen cannot contain epithelial tissue.",
+          "explanation": "Age context does not justify that absolute conclusion."
+        },
+        {
+          "text": "Functional state and preparation changed together, so their contributions are confounded.",
+          "explanation": "The stain changes what is emphasized; a matched preparation helps isolate the biological comparison."
+        },
+        {
+          "text": "The darkest areas necessarily represent the greatest number of cells.",
+          "explanation": "Osmium lipid staining is not a cell-count assay."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-04",
+      "topic": "mammary-histology-and-development",
+      "title": "Explain an edge pattern",
+      "prompt": "In the documented Columbia osmium example, dark staining is strongest near the specimen edge. Which explanation should be considered before proposing a universal biological lipid gradient?",
+      "options": [
+        {
+          "text": "All mammary secretory cells migrate to the edge before releasing lipid.",
+          "explanation": "That migration claim is not established by the preparation or its staining pattern."
+        },
+        {
+          "text": "The center must contain only protein and no lipid.",
+          "explanation": "Weak staining can reflect preparation limits and does not prove absence of lipid."
+        },
+        {
+          "text": "The edge is a calibrated measure of milk production rate.",
+          "explanation": "Staining intensity in a fixed preparation is not a production-rate measurement."
+        },
+        {
+          "text": "Limited reagent penetration through this specimen.",
+          "explanation": "The source specifically documents a penetration limitation; the pattern need not represent an organ-wide biological gradient."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-05",
+      "topic": "mammary-histology-and-development",
+      "title": "Choose a secretory model",
+      "prompt": "A teaching diagram sends protein vesicles and cytoplasmic lipid droplets through one identical release step. Which revision best represents the distinction supported by the reviewed sources?",
+      "options": [
+        {
+          "text": "Show vesicular protein exocytosis and lipid-droplet envelopment/budding as separate routes.",
+          "explanation": "Cargo and membrane behavior differ; one label for the whole gland loses that distinction."
+        },
+        {
+          "text": "Show both cargo types leaving only when the entire cell disintegrates.",
+          "explanation": "That substitutes whole-cell destruction for the described secretory mechanisms."
+        },
+        {
+          "text": "Show protein leaving without vesicles because lipid uses membrane.",
+          "explanation": "The routes can both involve membrane while doing so in different ways."
+        },
+        {
+          "text": "Remove all membrane boundaries because H&E cannot resolve the events.",
+          "explanation": "A sourced conceptual model can explain events beyond H&E resolution if it is clearly distinguished from the image."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-06",
+      "topic": "mammary-histology-and-development",
+      "title": "Identify the measured event",
+      "prompt": "A live mouse mammary sequence shows two visible lipid droplets joining into one larger droplet. Which statement is most directly supported by that observation?",
+      "options": [
+        {
+          "text": "The cell doubled its lipid synthesis rate at that instant.",
+          "explanation": "An increase in droplet size through fusion does not establish a synthesis-rate change."
+        },
+        {
+          "text": "The observed droplets underwent a fusion event in the imaged preparation.",
+          "explanation": "The sequence directly follows merging; it does not by itself quantify synthesis or secretion."
+        },
+        {
+          "text": "The larger droplet has already been released into the lumen.",
+          "explanation": "Fusion inside the observed cell is a different event from release."
+        },
+        {
+          "text": "Every human mammary droplet follows the same time course.",
+          "explanation": "The observation is bounded by species, preparation and sampled particles."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-07",
+      "topic": "mammary-histology-and-development",
+      "title": "Separate sampling levels",
+      "prompt": "A kinetic study tracks 300 droplets in three mice. Which description preserves the sampling hierarchy?",
+      "options": [
+        {
+          "text": "The biological sample size is automatically 300 independent mice.",
+          "explanation": "The tracked objects and the animals are different experimental units."
+        },
+        {
+          "text": "Only three droplets can be included in any analysis.",
+          "explanation": "Hierarchical data can contain many within-animal observations; analysis must respect dependence."
+        },
+        {
+          "text": "There are many droplet observations nested within three animals.",
+          "explanation": "Droplets share animal-level conditions; the count does not create 300 independent animals."
+        },
+        {
+          "text": "The number of animals is irrelevant once images are quantitative.",
+          "explanation": "Quantification does not remove clustering or biological variation."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-08",
+      "topic": "mammary-histology-and-development",
+      "title": "Recognize an invisible population",
+      "prompt": "An imaging method cannot resolve the smallest lipid droplets. Which interpretation of the tracked-particle results is strongest?",
+      "options": [
+        {
+          "text": "They prove that smaller droplets do not exist.",
+          "explanation": "Failure to resolve a structure is not evidence of biological absence."
+        },
+        {
+          "text": "They require all observed motion to be discarded.",
+          "explanation": "A resolution boundary limits scope without nullifying directly observed events."
+        },
+        {
+          "text": "They establish an exact whole-gland particle census.",
+          "explanation": "The method excludes a population and samples selected fields."
+        },
+        {
+          "text": "They characterize the observable droplets under the stated preparation and resolution.",
+          "explanation": "The unobserved small-particle population is not automatically represented by tracked larger particles."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-09",
+      "topic": "mammary-histology-and-development",
+      "title": "Read an early human bud",
+      "prompt": "An abstract describes solid early human mammary epithelial ingrowth next to differentiating mesenchyme, with no lumen in the sampled material. Which conclusion stays within that observation?",
+      "options": [
+        {
+          "text": "The sampled early structure differs from a later lumen-containing glandular profile.",
+          "explanation": "This is a structural comparison; it does not require an unreviewed timetable or causal pathway."
+        },
+        {
+          "text": "A specific signaling ligand has been shown to cause the ingrowth.",
+          "explanation": "Spatial association alone does not establish a molecular cause."
+        },
+        {
+          "text": "No human mammary structure can ever develop a lumen.",
+          "explanation": "The finding concerns the sampled early material, not every subsequent stage."
+        },
+        {
+          "text": "Mouse embryonic dates can be assigned directly to this human series.",
+          "explanation": "Species and developmental timing conventions cannot be equated that way."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-10",
+      "topic": "mammary-histology-and-development",
+      "title": "Interpret a marker panel",
+      "prompt": "Fetal basal cells express part of a myoepithelial marker panel. Which additional question is not answered by that marker finding alone?",
+      "options": [
+        {
+          "text": "Whether the tested markers produced detectable staining in the sampled cells.",
+          "explanation": "That is the direct observation described by the result, assuming valid controls."
+        },
+        {
+          "text": "Whether those cells demonstrate mature contractile function.",
+          "explanation": "Phenotypic staining and functional behavior are distinct readouts."
+        },
+        {
+          "text": "Whether the stained cells occupy a reported basal position in the section.",
+          "explanation": "Localization can be assessed in the same histological preparation."
+        },
+        {
+          "text": "Whether the observed panel differs from complete absence of its staining.",
+          "explanation": "A validated partial-positive pattern supplies that limited distinction."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-11",
+      "topic": "mammary-histology-and-development",
+      "title": "Distinguish marker from lineage",
+      "prompt": "An embryonic cell expresses both basal-associated and luminal-associated markers. Which experiment most directly tests whether its descendants populate both compartments?",
+      "options": [
+        {
+          "text": "Repeat a single-time-point stain with a brighter fluorophore.",
+          "explanation": "That improves detection but does not follow descendants through time."
+        },
+        {
+          "text": "Measure only the cell diameter on an adjacent section.",
+          "explanation": "Size does not establish the developmental fate of progeny."
+        },
+        {
+          "text": "Induce a suitably sparse heritable label and classify descendants after a defined chase.",
+          "explanation": "The design connects a labeling event with later progeny while requiring controls for targeting and clonality."
+        },
+        {
+          "text": "Assume that every double-positive cell must be permanently bipotent.",
+          "explanation": "Marker coexpression alone does not prove the future lineage outcome."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-12",
+      "topic": "mammary-histology-and-development",
+      "title": "Interpret a chance model",
+      "prompt": "Later Notch1-labeling outcomes are not statistically distinguishable from modeled chance mixtures. Which conclusion avoids overstatement?",
+      "options": [
+        {
+          "text": "Every cell in every mammary gland is conclusively incapable of bipotency.",
+          "explanation": "A bounded failure to establish a signal does not prove that universal negative."
+        },
+        {
+          "text": "The early above-chance results must be false because later results differ.",
+          "explanation": "Developmental stage and targeted populations can differ; one does not automatically invalidate the other."
+        },
+        {
+          "text": "The analysis proves all mixed labels come from one progenitor.",
+          "explanation": "The chance model addresses the competing possibility of independent labeling."
+        },
+        {
+          "text": "This design did not establish above-chance bipotency for that labeled population under those conditions.",
+          "explanation": "The conclusion retains targeting, power and model limits instead of asserting universal absence."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-13",
+      "topic": "mammary-histology-and-development",
+      "title": "Compare lineage systems",
+      "prompt": "K14 and Notch1 induction experiments give different lineage distributions. What should be compared before proposing a contradiction?",
+      "options": [
+        {
+          "text": "Targeted cells, induction stage, labeling density, chase and clone-assignment method.",
+          "explanation": "These features determine which population and outcome each experiment can test."
+        },
+        {
+          "text": "Only the color used for the reporter in the published figure.",
+          "explanation": "Color display does not establish equivalent targeting or analysis."
+        },
+        {
+          "text": "Only the publication year, treating the newer result as automatically correct.",
+          "explanation": "Recency alone does not adjudicate differences in experimental design."
+        },
+        {
+          "text": "The results should be averaged into a universal human switch date.",
+          "explanation": "Different mouse designs do not generate a human timetable by averaging."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-14",
+      "topic": "mammary-histology-and-development",
+      "title": "Bound a perturbation claim",
+      "prompt": "Constitutive Notch activation changes a lineage outcome in a targeted mouse population. Which interpretation best preserves the experiment's scope?",
+      "options": [
+        {
+          "text": "Every human progenitor normally experiences the same constitutive activation.",
+          "explanation": "The intervention does not establish that normal physiological exposure."
+        },
+        {
+          "text": "Forced signaling can alter fate in the tested context; ordinary human development remains a separate question.",
+          "explanation": "A perturbation demonstrates regulatory capacity under its conditions without proving the normal human sequence."
+        },
+        {
+          "text": "The experiment is equivalent to an unmanipulated ancestry record.",
+          "explanation": "Changing signaling tests a different question from simply following descendants."
+        },
+        {
+          "text": "Cell position alone explains the outcome without reference to the manipulated factor.",
+          "explanation": "The causal interpretation must retain the intervention and its controls."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-15",
+      "topic": "mammary-histology-and-development",
+      "title": "Avoid a false tissue-volume claim",
+      "prompt": "Secretory epithelium occupies a greater fraction of one field than in another. Which additional caution is appropriate?",
+      "options": [
+        {
+          "text": "The greater epithelial fraction proves that all connective tissue has disappeared.",
+          "explanation": "A relative fraction does not support an absolute statement of absence."
+        },
+        {
+          "text": "A single field is enough to calculate whole-organ volume without scale.",
+          "explanation": "Volume inference needs appropriate sampling and dimensional information."
+        },
+        {
+          "text": "A sectional area fraction does not alone measure absolute stromal loss from the organ.",
+          "explanation": "Field selection, organ scale and sampling must be considered before making an absolute-volume claim."
+        },
+        {
+          "text": "Relative epithelial abundance cannot be described at all.",
+          "explanation": "It can be described as a field-level observation with appropriate limits."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-16",
+      "topic": "mammary-histology-and-development",
+      "title": "Plan the next useful specimen",
+      "prompt": "A candidate H&E image has a clear lumen, epithelial lining and external stroma but no scale or functional-state metadata. Which addition most improves a beginner's organ-identification journey?",
+      "options": [
+        {
+          "text": "An exact hormonal-state label inferred solely from the image filename.",
+          "explanation": "A filename does not provide independent biological verification."
+        },
+        {
+          "text": "A copied textbook image with unresolved reuse rights.",
+          "explanation": "A useful visual still requires lawful reuse and a separate publication review."
+        },
+        {
+          "text": "A numerical size scale invented from the apparent image magnification.",
+          "explanation": "A calibrated scale cannot be recovered from appearance alone."
+        },
+        {
+          "text": "A verified lower-power contextual field with preparation and state information.",
+          "explanation": "It supplies the architectural and metadata gaps while preserving the strengths of the high-power image."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-17",
+      "topic": "mammary-histology-and-development",
+      "title": "Identify an organizational unit",
+      "prompt": "A section contains a cluster of small acinar profiles associated with a terminal duct and a shared local stromal environment. Which label describes this relationship most precisely?",
+      "options": [
+        {
+          "text": "Terminal duct–lobular unit",
+          "explanation": "The term names the local duct, acinar and stromal organization rather than one isolated epithelial profile."
+        },
+        {
+          "text": "One acinus",
+          "explanation": "One acinus is a single component; the stem describes several profiles and their ductal relationship."
+        },
+        {
+          "text": "The entire breast lobe",
+          "explanation": "A TDLU is a smaller component of the branching system."
+        },
+        {
+          "text": "A large interlobular duct alone",
+          "explanation": "A larger conducting duct does not name the clustered terminal secretory organization described."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-18",
+      "topic": "mammary-histology-and-development",
+      "title": "Distinguish stromal scales",
+      "prompt": "A student labels a broad H&E-pink collagen bundle between lobules as the basement membrane of one acinus. What is the central error?",
+      "options": [
+        {
+          "text": "Assuming that connective tissue can stain pink",
+          "explanation": "Collagen-rich stroma commonly appears pink in H&E."
+        },
+        {
+          "text": "Confusing interlobular connective tissue with the specialized epithelial interface",
+          "explanation": "The broader stromal matrix and the thin basement-membrane interface have different locations and scales."
+        },
+        {
+          "text": "Assuming that acini have any relationship to extracellular matrix",
+          "explanation": "Epithelial organization does depend on extracellular interfaces."
+        },
+        {
+          "text": "Using low power before high power",
+          "explanation": "Beginning with architecture is appropriate; the interpretation of the structure is the error."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-19",
+      "topic": "mammary-histology-and-development",
+      "title": "Map ligand access",
+      "prompt": "Polarized mouse mammary cells on a permeable support express prolactin receptor. Basal prolactin strongly activates STAT5, while apical prolactin has little effect. Which explanation fits the reviewed experiment?",
+      "options": [
+        {
+          "text": "Prolactin is converted into a different hormone below the support",
+          "explanation": "No such conversion is needed or established by the experiment."
+        },
+        {
+          "text": "STAT5 must be absent from every apically exposed cell",
+          "explanation": "Basal activation shows that downstream machinery is present."
+        },
+        {
+          "text": "The receptor is chiefly basolateral, so the ligand must reach that compartment",
+          "explanation": "Receptor presence alone does not ensure access from either side of a polarized epithelium."
+        },
+        {
+          "text": "Basal application proves a complete loss of epithelial polarity",
+          "explanation": "The side-dependent response instead depends on compartmental organization."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-20",
+      "topic": "mammary-histology-and-development",
+      "title": "Separate growth from differentiation",
+      "prompt": "After transplantation into a hormonally competent mouse host, mutant mammary epithelium produces ducts but lacks normal functional secretory alveoli. Which conclusion is best supported?",
+      "options": [
+        {
+          "text": "A ductal lumen proves normal milk production",
+          "explanation": "A lumen is a structural observation and does not establish secretory function."
+        },
+        {
+          "text": "The recipient must be infertile",
+          "explanation": "Transplantation into a competent host was used to reduce that confounding problem."
+        },
+        {
+          "text": "The mutation necessarily prevents every epithelial cell division",
+          "explanation": "Duct formation shows that the phenotype is not a total absence of epithelial growth."
+        },
+        {
+          "text": "Ductal growth does not establish successful alveolar differentiation",
+          "explanation": "The experiment separates formation of a ductal network from acquisition of a mature secretory phenotype."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-21",
+      "topic": "mammary-histology-and-development",
+      "title": "Read assay sensitivity",
+      "prompt": "A Northern blot does not detect milk-protein transcripts in mutant tissue, but a more sensitive assay detects low levels. Which report is accurate?",
+      "options": [
+        {
+          "text": "Expression is severely impaired and depends on the assay detection limit",
+          "explanation": "The assays support impaired differentiation without proving absolute absence of every transcript."
+        },
+        {
+          "text": "The sensitive assay must be discarded because it disagrees with zero",
+          "explanation": "Below detection is not the same as biological zero."
+        },
+        {
+          "text": "The tissue has normal secretory capacity because some transcript exists",
+          "explanation": "Low-level expression does not establish normal protein production or organ function."
+        },
+        {
+          "text": "All transcripts are absent in every mutant cell",
+          "explanation": "That absolute statement contradicts the more sensitive result."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-22",
+      "topic": "mammary-histology-and-development",
+      "title": "Evaluate signal duration",
+      "prompt": "Two mouse epithelial cultures show an early STAT5 phosphorylation peak. Only the matrix-supported culture later maintains STAT5 activation and appreciable casein expression. Which measurement best distinguishes the proposed mechanism?",
+      "options": [
+        {
+          "text": "One early phospho-STAT5 measurement alone",
+          "explanation": "The initial peak occurs under both conditions and misses the later difference."
+        },
+        {
+          "text": "A time course of signaling together with later casein expression",
+          "explanation": "The relevant difference includes persistence and differentiated output, not merely the first peak."
+        },
+        {
+          "text": "The color of the culture dish",
+          "explanation": "Dish color does not assess the pathway."
+        },
+        {
+          "text": "Counting only total receptor protein at one time",
+          "explanation": "Receptor abundance alone does not measure signal persistence or casein expression."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-23",
+      "topic": "mammary-histology-and-development",
+      "title": "Link organelles to secretion",
+      "prompt": "An alveolar epithelial cell has developed rough ER and Golgi, protein-containing secretory vesicles and separate cytoplasmic lipid droplets. Which model best connects these observations?",
+      "options": [
+        {
+          "text": "All visible cargo occupies one identical class of vesicle",
+          "explanation": "That removes the documented distinction between protein vesicles and lipid droplets."
+        },
+        {
+          "text": "Rough ER directly contracts to expel luminal milk",
+          "explanation": "Contractile ejection belongs to a different cellular system."
+        },
+        {
+          "text": "Protein processing and vesicular export coexist with a distinct lipid-droplet pathway",
+          "explanation": "The cell handles different cargo through differently organized intracellular compartments."
+        },
+        {
+          "text": "The Golgi proves that every pale H&E region is milk lipid",
+          "explanation": "Organelle organization does not assign a chemical identity to every pale space in a routine section."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-24",
+      "topic": "mammary-histology-and-development",
+      "title": "Separate ejection from production",
+      "prompt": "In an experimental gland, secretion is present in the luminal compartment but delivery is impaired. Which mechanism should be evaluated independently of protein synthesis?",
+      "options": [
+        {
+          "text": "Protein synthesis on rough-ER-associated ribosomes",
+          "explanation": "This addresses production; the question asks about movement independently of biosynthesis."
+        },
+        {
+          "text": "Golgi packaging of protein cargo",
+          "explanation": "Packaging contributes to secretion within the luminal cell, not the contractile ejection mechanism."
+        },
+        {
+          "text": "The amount of collagen in one sampled interlobular field",
+          "explanation": "Stromal appearance alone does not test myoepithelial contraction or effective ductal flow."
+        },
+        {
+          "text": "Oxytocin-linked myoepithelial contraction and subsequent ductal flow",
+          "explanation": "Production, release and tissue-level movement are connected but distinct processes."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-25",
+      "topic": "mammary-histology-and-development",
+      "title": "Interpret a rescue",
+      "prompt": "Oxytocin administration restores milk ejection in oxytocin-null mice. What does the rescue most directly support?",
+      "options": [
+        {
+          "text": "A functional requirement for oxytocin in the impaired ejection process in this model",
+          "explanation": "The intervention restores the measured function in a defined animal experiment."
+        },
+        {
+          "text": "A universal self-treatment protocol for human feeding difficulties",
+          "explanation": "The animal rescue is not a human treatment instruction."
+        },
+        {
+          "text": "Oxytocin is the sole regulator of milk-protein transcription",
+          "explanation": "The measured rescue concerns ejection, not exclusive control of transcription."
+        },
+        {
+          "text": "Oxytocin is unnecessary for ejection because a drug can rescue it",
+          "explanation": "The supplied hormone restores the missing function rather than showing irrelevance."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-26",
+      "topic": "mammary-histology-and-development",
+      "title": "Choose a ductal model",
+      "prompt": "A human ultrasound study finds compressible branching ducts and no conventional sac-like lactiferous sinuses. Which teaching diagram is most faithful to that observation?",
+      "options": [
+        {
+          "text": "Exactly twenty identical reservoirs in every breast",
+          "explanation": "The data do not establish that universal number or structure."
+        },
+        {
+          "text": "A branching transport pathway without adding obligatory large subareolar sacs",
+          "explanation": "The diagram should retain the measured arrangement and avoid imposing an unobserved reservoir."
+        },
+        {
+          "text": "A gland with no ducts because sacs were absent",
+          "explanation": "Absence of conventional sinuses does not mean absence of conducting ducts."
+        },
+        {
+          "text": "A single nonbranching duct connecting every alveolus",
+          "explanation": "The reported ducts branched; this simplification contradicts the observation."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-27",
+      "topic": "mammary-histology-and-development",
+      "title": "Distinguish kinds of involution",
+      "prompt": "A biopsy image used in an age-related TDLU study is relabeled as early post-weaning tissue. Which information is missing for that relabeling?",
+      "options": [
+        {
+          "text": "A brighter segmentation-overlay color",
+          "explanation": "A display choice cannot establish the specimen time course."
+        },
+        {
+          "text": "An increased number of image pixels",
+          "explanation": "Resolution alone does not provide clinical or temporal history."
+        },
+        {
+          "text": "A documented lactation and weaning history tied to the specimen",
+          "explanation": "A similar word for regression does not make the two biological contexts equivalent."
+        },
+        {
+          "text": "A second copy of the same image with a new filename",
+          "explanation": "Renaming or duplication supplies no additional specimen evidence."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-28",
+      "topic": "mammary-histology-and-development",
+      "title": "Trace reuptake",
+      "prompt": "During experimentally induced mouse involution, intracellular lipid bodies retain evidence of a membrane coating acquired during secretion. Which interpretation does that finding support?",
+      "options": [
+        {
+          "text": "Every lipid body was newly synthesized inside the cell after weaning",
+          "explanation": "The coating supports a different route for the observed structures."
+        },
+        {
+          "text": "The coating proves the cell is a fibroblast",
+          "explanation": "It indicates cargo history, not a fibroblast phenotype."
+        },
+        {
+          "text": "Lipid never enters a lysosomal compartment",
+          "explanation": "The study combines uptake evidence with lysosomal localization."
+        },
+        {
+          "text": "Previously secreted milk-fat globules have been taken back into epithelial cells",
+          "explanation": "The coating helps distinguish luminally derived globules from unsecreted intracellular droplets."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-29",
+      "topic": "mammary-histology-and-development",
+      "title": "Keep model contexts separate",
+      "prompt": "A study combines mouse involution tissue, mammary cell cultures and isolated lysosome assays. Which synthesis preserves the evidence?",
+      "options": [
+        {
+          "text": "The experiments support linked steps of an uptake–lysosomal processing–cell death mechanism in their defined contexts",
+          "explanation": "Different experimental systems can address different links without becoming one direct human observation."
+        },
+        {
+          "text": "Dietary milk is proven to kill human breast cells in ordinary use",
+          "explanation": "That is an unsupported extrapolation from specialized experimental preparations."
+        },
+        {
+          "text": "Every form of human breast involution occurs on the identical mouse schedule",
+          "explanation": "Species and experimental timing cannot be transferred as a universal schedule."
+        },
+        {
+          "text": "One H&E vacuole alone establishes the whole causal pathway",
+          "explanation": "The mechanism depends on multiple experimental comparisons, not a single visual feature."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-30",
+      "topic": "mammary-histology-and-development",
+      "title": "Connect developmental compartments",
+      "prompt": "Which developmental explanation best connects the early mammary bud to adult tissue organization?",
+      "options": [
+        {
+          "text": "All adult glandular epithelium forms by conversion of collagen bundles",
+          "explanation": "This confuses epithelial origin with surrounding matrix."
+        },
+        {
+          "text": "Skin-derived epithelium grows within a mesenchymal environment and later forms a branching ductal organization",
+          "explanation": "The epithelial and surrounding connective-tissue contributions interact without being the same compartment."
+        },
+        {
+          "text": "The fetal bud is already a fully lactating gland",
+          "explanation": "Substantial later growth and functional differentiation remain."
+        },
+        {
+          "text": "A mouse embryonic labeling day is automatically the same numbered human gestational week",
+          "explanation": "The timing conventions and species differ."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-31",
+      "topic": "mammary-histology-and-development",
+      "title": "Read a segmented image",
+      "prompt": "A research figure shows H&E on the left and bright computer-generated compartment colors on the right. What should a student infer from the colors?",
+      "options": [
+        {
+          "text": "Each color proves a separately applied histochemical reagent",
+          "explanation": "The colors were generated computationally."
+        },
+        {
+          "text": "Every colored boundary is guaranteed biological ground truth",
+          "explanation": "Segmentation can misclassify tissue and needs validation."
+        },
+        {
+          "text": "They represent algorithmic class assignments that require comparison with the underlying image and validation",
+          "explanation": "They are segmentation output, not a new chemical stain or error-free diagnosis."
+        },
+        {
+          "text": "The image is a normal lactation time series because the colors are vivid",
+          "explanation": "The colors provide no such biological history."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "mammary-depth-32",
+      "topic": "mammary-histology-and-development",
+      "title": "Explain a scale bar",
+      "prompt": "A histology panel is enlarged on a screen together with its 200 µm scale bar. Which statement is correct?",
+      "options": [
+        {
+          "text": "The tissue becomes physically larger when the browser zoom increases",
+          "explanation": "Display magnification does not change the specimen."
+        },
+        {
+          "text": "The scale bar can be cropped away without losing quantitative context",
+          "explanation": "Removing it discards the direct scale reference."
+        },
+        {
+          "text": "The bar gives a calibration for every unrelated image in the lesson",
+          "explanation": "A calibration belongs to its image, not to a separate specimen with unknown scale."
+        },
+        {
+          "text": "The represented tissue length remains 200 µm even though its displayed length changes",
+          "explanation": "The bar preserves the relationship between image distance and specimen distance when resized with the image."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "href": "/library/mammary-histology-and-development#apply-the-concept"
     }
   ]
 }

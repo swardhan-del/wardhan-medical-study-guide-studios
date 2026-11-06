@@ -3572,6 +3572,17 @@
       ],
       "figureIds": [],
       "rationale": "Original semantic tissue-role comparison with full text; no source image, measured dataset or patient specimen. Actual native render review pending."
+    },
+    {
+      "id": "mammary-histology-and-development",
+      "route": "/library/mammary-histology-and-development",
+      "action": "standardise-or-reuse",
+      "rationale": "Reuse the accessible specimen explorer for two separately licensed H&E examples and the existing development-map renderer for an original two-track mammary sequence. Integrated rendered checks remain pending in the lesson review.",
+      "visualIds": [],
+      "figureIds": [
+        "human-mammary-acinus-he",
+        "human-mammary-tdlu-segmentation"
+      ]
     }
   ],
   "supplementalVisualStudioReview": {

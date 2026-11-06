@@ -1,6 +1,51 @@
 import styles from "./endocrine-development-map.module.css";
 
 const maps: Record<string, { title: string; tracks: { label: string; stages: { label: string; question: string; explanation: string }[] }[] }> = {
+  "mammary-histology-and-development": {
+  "title": "Build a ductal tree, then specialize secretory units",
+  "tracks": [
+    {
+      "label": "Early epithelial organization → branching ducts",
+      "stages": [
+        {
+          "label": "Surface specialization and bud",
+          "question": "Which compartments interact?",
+          "explanation": "Skin-derived epithelium grows into an adjacent mesenchymal environment. Proximity describes a relationship; a causal signaling mechanism needs additional evidence."
+        },
+        {
+          "label": "Outgrowth, branching and lumina",
+          "question": "Is a fetal duct a fully active secretory alveolus?",
+          "explanation": "No. The rudimentary organization precedes substantial later expansion and functional specialization."
+        },
+        {
+          "label": "Later ductal expansion",
+          "question": "Does duct growth prove normal alveolar differentiation?",
+          "explanation": "No. Ductal structures can form in the mouse receptor/STAT5 perturbation experiments without normal functional secretory alveoli."
+        }
+      ]
+    },
+    {
+      "label": "Pregnancy-associated differentiation → secretion and ejection",
+      "stages": [
+        {
+          "label": "Alveolar differentiation",
+          "question": "How do endocrine and matrix context cooperate?",
+          "explanation": "Prolactin-associated signaling and appropriate tissue organization support a differentiated secretory phenotype; sustained signaling matters in the reviewed mouse culture system."
+        },
+        {
+          "label": "Cargo-specific release",
+          "question": "Do protein and lipid use identical release steps?",
+          "explanation": "Protein cargo follows vesicular exocytosis; lipid droplets undergo envelopment and budding. Both reach the luminal compartment through distinct mechanisms."
+        },
+        {
+          "label": "Contraction and ductal transport",
+          "question": "Where does ejection fit?",
+          "explanation": "Myoepithelial contraction helps move existing secretion through the ductal pathway. This mechanical function is distinct from biosynthesis inside the luminal epithelial cell."
+        }
+      ]
+    }
+  ]
+},
   "pituitary-glandular-neural-orientation": {
     title: "Two origins, two routes to hormone release",
     tracks: [

@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Read an acinar profile",
+    "regions": [
+      {
+        "id": "lumen",
+        "label": "Luminal compartment",
+        "anchor": {
+          "x": 48,
+          "y": 46
+        },
+        "observation": "A central irregular pale space contains some pink material and is bounded by epithelial cells.",
+        "interpretation": "Use this space to orient the apical side of the surrounding epithelium before interpreting the exterior.",
+        "limit": "The appearance does not chemically identify every luminal constituent."
+      },
+      {
+        "id": "lining",
+        "label": "Epithelial lining",
+        "anchor": {
+          "x": 54,
+          "y": 68
+        },
+        "observation": "Purple nuclei and surrounding cytoplasm form the lining around the central space.",
+        "interpretation": "The lining defines the epithelial compartment; not every cell boundary is resolved in this plane.",
+        "limit": "Routine H&E does not establish the expression of a specific secretion protein."
+      },
+      {
+        "id": "periphery",
+        "label": "Peripheral nuclei",
+        "anchor": {
+          "x": 41,
+          "y": 92
+        },
+        "observation": "Elongated nuclei lie near the outer edge of the profile beside pink tissue.",
+        "interpretation": "Their position is observable. Specific myoepithelial phenotype needs additional evidence when the identity is uncertain.",
+        "limit": "Do not label every peripheral nucleus as a validated myoepithelial cell."
+      },
+      {
+        "id": "stroma",
+        "label": "Surrounding stroma",
+        "anchor": {
+          "x": 80,
+          "y": 76
+        },
+        "observation": "Wavy pink bundles with scattered nuclei occupy the tissue outside the epithelial profile.",
+        "interpretation": "This gives connective-tissue context around the acinar structure.",
+        "limit": "The broad bundles are not a direct image of every basement-membrane component."
+      }
+    ],
+    "model": "Locate the irregular lumen, follow the nuclear-rich epithelial lining and describe the surrounding pink stroma. Peripheral nuclei can be identified by position without claiming a confirmed cell phenotype. The provider identifies a human breast acinus, but this isolated field does not establish a whole lobule, calibrated size, hormonal state or live secretion.",
+    "figureId": "human-mammary-acinus-he"
+  },
+  {
+    "title": "Read lobular architecture before the overlay",
+    "regions": [
+      {
+        "id": "upper-lobule",
+        "label": "Upper H&E epithelial group",
+        "anchor": {
+          "x": 23,
+          "y": 19
+        },
+        "observation": "Numerous small epithelial profiles cluster together within a shared local stromal setting.",
+        "interpretation": "The grouped organization supplies lobular context that an isolated acinar close-up cannot provide.",
+        "limit": "A single section does not trace every ductal connection."
+      },
+      {
+        "id": "interlobular",
+        "label": "Interlobular stroma",
+        "anchor": {
+          "x": 39,
+          "y": 51
+        },
+        "observation": "Broad pink tissue separates the lower-panel groups of nuclear-rich epithelial profiles.",
+        "interpretation": "Compare this broad matrix with the smaller spaces within each group.",
+        "limit": "Area fraction is not an absolute measurement of whole-organ stromal mass."
+      },
+      {
+        "id": "lower-group",
+        "label": "Lower H&E lobular groups",
+        "anchor": {
+          "x": 20,
+          "y": 76
+        },
+        "observation": "Several epithelial groups appear in the lower-left field at the scale indicated by its own bar.",
+        "interpretation": "Use the lower 400 µm bar for this panel; the upper panel has a separate 200 µm bar.",
+        "limit": "These are research biopsy fields, not a documented pregnancy or lactation sequence."
+      },
+      {
+        "id": "overlay",
+        "label": "Computer-segmented compartments",
+        "anchor": {
+          "x": 76,
+          "y": 19
+        },
+        "observation": "Bright colours cover structures in the right panels while their underlying architectural outlines remain recognizable.",
+        "interpretation": "These colours represent algorithmic segmentation classes. Compare them with the corresponding H&E arrangement.",
+        "limit": "An algorithmic boundary is not a stain-specific molecular signal or guaranteed ground truth."
+      }
+    ],
+    "model": "Begin with the uncoloured H&E on the left: grouped epithelial profiles contrast with broader pink interlobular tissue. Read each scale bar in its own panel. Then compare the coloured right-hand segmentation without treating it as a new stain or an error-free diagnosis. The source cohort comprises benign breast-disease biopsies and does not establish the lactational state of these displayed fields.",
+    "figureId": "human-mammary-tdlu-segmentation"
+  }
+]

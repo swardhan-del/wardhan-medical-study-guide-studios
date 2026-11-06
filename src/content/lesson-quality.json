@@ -5035,6 +5035,171 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "mammary-histology-and-development",
+      "title": "Mammary histology: architecture, secretion and development",
+      "subject": "histology",
+      "topic": "Mammary architecture, secretion, signaling and development",
+      "slug": "mammary-histology-and-development",
+      "learnerLevel": "Medical sciences: tissue practical to experimental interpretation",
+      "objectives": [
+        "Recognize a terminal duct–lobular unit and distinguish its acinar profiles from surrounding stroma.",
+        "Locate luminal and basal compartments and connect polarity with secretion and signal reception.",
+        "Explain H&E, osmium and Azan observations while controlling for preparation and functional state.",
+        "Separate protein export, lipid-droplet release, milk ejection and ductal transport.",
+        "Connect prolactin/STAT5 and matrix-dependent signaling with differentiated alveolar function.",
+        "Distinguish early development, later expansion and lineage evidence without transferring mouse timing to humans.",
+        "Explain a defined post-lactation lysosomal mechanism and distinguish it from age-related TDLU involution.",
+        "Interpret real H&E images, scale bars and computational overlays with explicit specimen context."
+      ],
+      "sources": [
+        {
+          "title": "Duke — mammary histology practical",
+          "url": "https://histology.oit.duke.edu/NormalBody/FemaleRepro/FemaleRepro.html",
+          "publisherOrAuthor": "Duke",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia — human mammary H&E and osmium preparations",
+          "url": "https://www.columbia.edu/itc/hs/medical/sbpm_histology_2009/lab/lab19_mammary.html",
+          "publisherOrAuthor": "Columbia",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Basel — lactating breast in Azan",
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/fortpflanzungsorgane-weiblich-anatomische-mikroskopie-46/lactating-breast-tissue-1853",
+          "publisherOrAuthor": "University of Basel",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Wuidart et al. — mouse mammary lineage restriction (2018; reference correction noted)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5985933/",
+          "publisherOrAuthor": "Wuidart et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Lilja et al. — mouse mammary lineage tracing and Notch perturbation (2018)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6984964/",
+          "publisherOrAuthor": "Lilja et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Masedunskas et al. — live imaging of mouse milk-lipid secretion (2017)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5385942/",
+          "publisherOrAuthor": "Masedunskas et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "de Bel et al. — TDLU segmentation in benign breast-disease biopsies (2022)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8770616/",
+          "publisherOrAuthor": "de Bel et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Miyoshi et al. — STAT5 and mouse alveolar differentiation (2001)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2198867/",
+          "publisherOrAuthor": "Miyoshi et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Xu et al. — sustained STAT5, matrix and casein expression in mouse cultures (2009)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2615090/",
+          "publisherOrAuthor": "Xu et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Sargeant et al. — mouse mammary involution and lysosomal uptake (2014)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4216597/",
+          "publisherOrAuthor": "Sargeant et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Ramsay et al. — ultrasound anatomy of lactating human breasts (2005)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1571528/",
+          "publisherOrAuthor": "Ramsay et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Nishimori et al. — oxytocin-null mice and ejection rescue (1996; abstract reviewed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8876199/",
+          "publisherOrAuthor": "Nishimori et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "UNSW Embryology — mammary development overview",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Integumentary_System_-_Mammary_Gland_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Kellokumpu-Lehtinen et al. — early human mammary ultrastructure (1987; abstract reviewed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3605662/",
+          "publisherOrAuthor": "Kellokumpu-Lehtinen et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Jolicoeur et al. — human fetal myoepithelial differentiation (2003; abstract reviewed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14708733/",
+          "publisherOrAuthor": "Jolicoeur et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Two separately sourced H&E images, all eight region markers, credits and original scale bars visually reviewed on the rendered page; keyboard, mobile reflow, fallback and exact-download checks passed.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
+      "limitations": [
+        "AI-assisted source and editorial review; independent medical peer review remains outstanding.",
+        "The acinar image has no calibrated scale or documented hormonal state; the lobular figure comes from benign breast-disease research.",
+        "Computer segmentation is not a stain or guaranteed diagnostic ground truth.",
+        "Human fetal and oxytocin-null findings explicitly identified as abstract-level review retain that scope.",
+        "Mouse experimental dates and mechanisms are not a precise human gestational timetable or treatment guidance.",
+        "Original questions are not official NBME items or validated examination grading.",
+        "This unit does not complete breast pathology, clinical lactation or all-system embryology."
+      ],
+      "reviewEvidenceIds": [
+        "mammary-depth-editorial-20261106",
+        "mammary-depth-visual-20261106",
+        "mammary-depth-assessment-20261106",
+        "mammary-depth-accessibility-20261106",
+        "mammary-depth-readability-20261106"
+      ],
+      "links": {
+        "prerequisite": [
+          "epithelia",
+          "microscopy"
+        ],
+        "related": [
+          "epithelia",
+          "reproductive-histology",
+          "pituitary-glandular-neural-orientation",
+          "placenta"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

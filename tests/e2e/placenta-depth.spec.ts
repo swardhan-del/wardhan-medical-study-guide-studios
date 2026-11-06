@@ -134,7 +134,12 @@ test("Placenta revision keeps the selected lesson, questions, source and specime
   await page.getByRole("button",{name:"Clear selection",exact:true}).click();
   await page.getByRole("checkbox",{name:`${part.number}. ${part.title}`,exact:true}).check();
   const section=page.locator("#histology-part-12");
-  await expect(section.locator(".revision-lesson")).toHaveCount(1);
+  expect(part.lessonIds).toEqual(expect.arrayContaining(["placenta", "mammary-histology-and-development"]));
+  await expect(section.locator(".revision-lesson")).toHaveCount(part.lessonIds.length);
+  for (const id of part.lessonIds) {
+    const selectedLesson = teaching.lessons.find(item => item.id === id)!;
+    await expect(section.locator(".revision-lesson").filter({has: page.getByRole("heading", {name: selectedLesson.title, exact: true})})).toHaveCount(1);
+  }
   await expect(section.getByRole("heading",{name:lesson.title,exact:true})).toBeVisible();
   for(const step of lesson.steps) await expect(section).toContainText(step.title);
   for(const q of practice.questions.filter(q=>q.topic==="placenta")) await expect(section).toContainText(q.prompt);
