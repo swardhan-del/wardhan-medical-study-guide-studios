@@ -6405,6 +6405,774 @@
       ],
       "answer": 1,
       "provenance": "Original educational scenario; not an NBME item or a patient case."
+    },
+    {
+      "id": "reproductive-depth-01",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Choose the next view",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Two small fields both show sperm within luminal spaces. Which next observation best helps place them in the reproductive tract?",
+      "options": [
+        {
+          "text": "Compare epithelial organization and the surrounding wall in a broader field.",
+          "explanation": "Correct. Architecture and wall context can distinguish producing tissue from conducting structures when luminal contents overlap."
+        },
+        {
+          "text": "Assign both fields to testis because sperm are present.",
+          "explanation": "Sperm can occur in downstream conducting structures, so their presence is insufficient for that assignment."
+        },
+        {
+          "text": "Count the sperm profiles and use the larger count to identify epididymis.",
+          "explanation": "Counts depend on sampling and preparation and do not replace the epithelial and wall features needed for organ identification."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-02",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "A rarely encountered stage",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A well-preserved seminiferous section contains primary spermatocytes and spermatids but no confidently identified secondary spermatocytes. Which conclusion is best supported?",
+      "options": [
+        {
+          "text": "Meiosis II must have been bypassed in this tissue.",
+          "explanation": "The limited observation does not demonstrate bypass of a biological stage."
+        },
+        {
+          "text": "A brief stage and limited sampling can explain why no secondary spermatocyte is recognized.",
+          "explanation": "Correct. Stage duration, plane and identification limits matter before biological absence is inferred."
+        },
+        {
+          "text": "Every small luminal cell should be relabeled as a secondary spermatocyte.",
+          "explanation": "Relabeling by convenience ignores the distinction between meiotic cells and differentiating spermatids."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-03",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Use converging cell clues",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A large epithelial germ-cell profile lies away from the basal edge and has conspicuous coarse nuclear chromatin. What is the best practical approach?",
+      "options": [
+        {
+          "text": "Name it solely from its diameter.",
+          "explanation": "Apparent size changes with section plane and preparation and is not sufficient alone."
+        },
+        {
+          "text": "Assume it is Leydig because its nucleus is prominent.",
+          "explanation": "Leydig cells belong to the interstitial compartment; position contradicts that shortcut."
+        },
+        {
+          "text": "Consider a primary spermatocyte and corroborate with location, chromatin and nearby cell associations.",
+          "explanation": "Correct. Multiple structural clues support a reasoned provisional identification."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-04",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Separate remodeling from division",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A haploid spermatid forms an acrosomal apparatus and condenses its nucleus. Which process is being described?",
+      "options": [
+        {
+          "text": "Spermiogenesis.",
+          "explanation": "Correct. This is remodeling of a spermatid, distinct from the divisions that produced it."
+        },
+        {
+          "text": "The first meiotic division.",
+          "explanation": "Meiosis I concerns chromosome segregation and precedes the haploid spermatid stage described."
+        },
+        {
+          "text": "Spermiation.",
+          "explanation": "Spermiation is release into the lumen; the prompt describes preceding differentiation."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-05",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Define the interval first",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "One report describes recurrence of a seminiferous epithelial cell association; another describes progression through the full sperm-producing sequence. What must be compared before treating their durations as contradictory?",
+      "options": [
+        {
+          "text": "The anatomical organ alone; intervals measured in the same testis must be equivalent.",
+          "explanation": "The same organ supports several overlapping processes with different start and end events."
+        },
+        {
+          "text": "The defined start and end events, species, sampling method and whether duct transit is included.",
+          "explanation": "Correct. A recurring epithelial association, full germ-cell development and downstream transit are distinct intervals. Numerical disagreement still needs source evaluation."
+        },
+        {
+          "text": "The sperm concentration alone; it directly converts one developmental interval into the other.",
+          "explanation": "Concentration depends on additional production, transport and sampling factors and does not define the measured interval."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-06",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Location before function",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A student labels an interstitial steroid-producing cell as the cell forming the seminiferous junctional barrier. Which correction is most useful?",
+      "options": [
+        {
+          "text": "All interstitial cells form the same barrier.",
+          "explanation": "The barrier at issue is formed between epithelial Sertoli cells, not every interstitial cell."
+        },
+        {
+          "text": "The barrier must instead lie at the luminal tip of each sperm.",
+          "explanation": "Sperm are not the neighboring epithelial cells forming this junctional division."
+        },
+        {
+          "text": "Separate Leydig steroid production in interstitium from Sertoli junctions within the seminiferous epithelium.",
+          "explanation": "Correct. The two populations occupy different compartments and serve different functions."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-07",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Place the sealing interface",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Which schematic best locates the junctional blood–testis barrier?",
+      "options": [
+        {
+          "text": "A junctional connection between neighboring Sertoli cells dividing basal and adluminal epithelial compartments.",
+          "explanation": "Correct. This is the relevant epithelial division; the nearby vessel is a separate landmark."
+        },
+        {
+          "text": "A tight seal drawn only between testicular vascular endothelial cells.",
+          "explanation": "That substitutes a vascular location for the Sertoli junctional barrier being taught."
+        },
+        {
+          "text": "The entire interstitial region shaded as a single impermeable wall.",
+          "explanation": "Interstitial tissue is a compartment, not the specific epithelial junctional seal."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-08",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Choose the functional assay",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "H&E shows an apparently continuous seminiferous boundary. Which additional evidence most directly addresses access by a specified test substance?",
+      "options": [
+        {
+          "text": "A larger number of identical H&E images without a tracer.",
+          "explanation": "More morphology improves sampling but does not directly test passage of the substance."
+        },
+        {
+          "text": "A controlled tracer-distribution experiment with the substance, tissue conditions and timing defined.",
+          "explanation": "Correct. It tests access under specified conditions, while retaining limits of the assay."
+        },
+        {
+          "text": "Detection of any junction-associated transcript in a whole-tissue sample.",
+          "explanation": "A transcript measurement does not directly establish localization or functional permeability."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-09",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Association versus requirement",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A barrier-defective mouse shows autoantibodies. Removing mature adaptive lymphocytes does not restore spermatogenesis. Which interpretation fits the tested result?",
+      "options": [
+        {
+          "text": "Autoantibody staining alone proves that adaptive immunity caused the reproductive failure.",
+          "explanation": "The failure to rescue does not support that simple requirement claim."
+        },
+        {
+          "text": "The experiment proves that immunity has no role in any reproductive disorder.",
+          "explanation": "That generalization exceeds one intervention and model."
+        },
+        {
+          "text": "The associated immune response is insufficient evidence that adaptive immunity is required for this phenotype in this model.",
+          "explanation": "Correct. The perturbation addresses causal requirement more directly than association alone."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-10",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Count biological replication",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A study collects ten fields from each of three independently studied mice. What should remain explicit when reporting replication?",
+      "options": [
+        {
+          "text": "There are three biological animals, with fields nested within animals.",
+          "explanation": "Correct. The sampling hierarchy matters; fields are not automatically independent animals."
+        },
+        {
+          "text": "There are thirty independent mice because each field supplies a measurement.",
+          "explanation": "That confuses observations within an animal with biological replication."
+        },
+        {
+          "text": "There is only one observation because all fields concern the same organ type.",
+          "explanation": "Common organ identity does not erase the independent animals or the nested observations."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-11",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Profiles and objects",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Several similar duct profiles appear in one section of a highly coiled epididymal duct. Which follow-up best addresses whether two profiles are continuous?",
+      "options": [
+        {
+          "text": "Assign one duct to each closed outline, then add the outlines across adjacent sections.",
+          "explanation": "That counts intersections and risks counting the same coiled structure repeatedly."
+        },
+        {
+          "text": "Trace the profiles through registered serial sections or another suitable three-dimensional reconstruction.",
+          "explanation": "Correct. Following continuity addresses the anatomical relationship that a single section cannot establish."
+        },
+        {
+          "text": "Match the two luminal diameters; equal diameters establish that the profiles are continuous.",
+          "explanation": "Diameter similarity does not establish continuity and is affected by section angle and local variation."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-12",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Compare surface specializations",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A student assumes that the long apical projections of epididymal principal cells propel sperm by beating. Which structural explanation corrects that inference?",
+      "options": [
+        {
+          "text": "They are motile cilia, so their appearance establishes an active ciliary transport mechanism.",
+          "explanation": "This assigns the motile-cilium mechanism to the wrong specialization; a static section also cannot show beating."
+        },
+        {
+          "text": "They are solitary primary cilia, so each visible fringe represents one sensory axoneme.",
+          "explanation": "The long epididymal surface fringe is not explained as a single primary cilium on each cell."
+        },
+        {
+          "text": "They are elongated microvilli called stereocilia; their presence does not establish ciliary beating.",
+          "explanation": "Correct. Similar length or a cilia-like name does not make these projections motile cilia. Duct transport needs its own mechanism and evidence."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-13",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Do not identify from one wavy line",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "An unknown duct has an uneven luminal contour. Which observation would strengthen an efferent-ductule interpretation?",
+      "options": [
+        {
+          "text": "A suitable view demonstrating alternating cell heights and ciliated/nonciliated epithelial populations.",
+          "explanation": "Correct. It adds cell-level evidence to a contour that could otherwise reflect folds or section angle."
+        },
+        {
+          "text": "A conclusion based only on the contour, regardless of cells or region.",
+          "explanation": "A wavy outline is not exclusive to one duct."
+        },
+        {
+          "text": "Any adjacent connective tissue, even without a visible lining.",
+          "explanation": "Connective tissue accompanies many structures and is not sufficiently discriminatory."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-14",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Duct or vessel in spermatic cord",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A thick-walled profile appears in spermatic cord. Which next step best separates a reproductive duct from a muscular vessel?",
+      "options": [
+        {
+          "text": "Use wall thickness alone.",
+          "explanation": "Both can have substantial muscular walls."
+        },
+        {
+          "text": "Compare the lining, mucosal folds, contents and surrounding context.",
+          "explanation": "Correct. These features test the structural alternatives rather than assuming one from thickness."
+        },
+        {
+          "text": "Treat every circular lumen in spermatic cord as ductus deferens.",
+          "explanation": "The cord also contains vessels and other components."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-15",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "One folded surface or many glands",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A specimen shows a labyrinth of epithelial-lined spaces. Which comparison best helps distinguish seminal vesicle from prostate?",
+      "options": [
+        {
+          "text": "Choose the organ with the darker overall stain.",
+          "explanation": "Stain intensity depends on preparation and is not the key architectural distinction."
+        },
+        {
+          "text": "Count lumina and call every lumen an independent gland.",
+          "explanation": "A folded surface can create many apparently separate spaces in section."
+        },
+        {
+          "text": "Trace mucosal folds and compare them with glandular profiles distributed through fibromuscular stroma.",
+          "explanation": "Correct. This tests the underlying three-dimensional organization."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-16",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "What an atlas cannot prove alone",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A gonadal atlas measures marker expression and groups cells by transcriptional similarity. Which additional claim is not established by that expression analysis alone?",
+      "options": [
+        {
+          "text": "A particular cell state is the direct ancestor of another and lies beside it in the intact gonad.",
+          "explanation": "Correct. Ancestry and physical position require evidence beyond similarity; spatial assays address location, while lineage inference needs separate support."
+        },
+        {
+          "text": "The measured expression profiles can be compared to describe molecular differences between sampled states.",
+          "explanation": "That is within the purpose of the expression measurements, provided technical and sampling limitations are retained."
+        },
+        {
+          "text": "The reported marker measurements can help annotate the sampled clusters.",
+          "explanation": "Marker-based annotation is possible, but annotation alone should not be promoted to direct lineage or spatial proof."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-17",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Keep the developmental clock attached",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A mouse perturbation is reported at a particular embryonic day. Which use in a human embryology lesson is best?",
+      "options": [
+        {
+          "text": "Relabel that day as the same numbered human week.",
+          "explanation": "Cross-species stages are not interchangeable by number."
+        },
+        {
+          "text": "Retain species, stage and assay, and verify any human comparison separately.",
+          "explanation": "Correct. This preserves the experimental context and prevents an unsupported human timetable."
+        },
+        {
+          "text": "Omit the organism because the gene name is shared.",
+          "explanation": "Shared names do not ensure identical timing, expression or outcome."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-18",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Initiation versus maintenance",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "An altered mouse gonad initially expresses SOX9 but later loses the signal and fails to organize normal cords. Which distinction matters most?",
+      "options": [
+        {
+          "text": "Initial marker detection is the same outcome as stable organ differentiation.",
+          "explanation": "The later observations directly show why these outcomes must be separated."
+        },
+        {
+          "text": "A later negative result makes the earlier observation impossible.",
+          "explanation": "A developmental state can change over time."
+        },
+        {
+          "text": "Initiating expression, maintaining the program and forming tissue architecture are distinct outcomes.",
+          "explanation": "Correct. The temporal sequence supports this more precise account."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-19",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Read a gain-of-function design",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Adding a tested Sry genomic fragment leads to testicular development in XX mice. Which claim is directly supported by that design?",
+      "options": [
+        {
+          "text": "The tested fragment can be sufficient for the observed developmental outcome in that context.",
+          "explanation": "Correct. The addition tests a sufficiency claim under the specified conditions."
+        },
+        {
+          "text": "Every sequence in the fragment is individually necessary for normal development.",
+          "explanation": "Necessity of individual elements requires other experiments."
+        },
+        {
+          "text": "Normal fertility and dosage are guaranteed in every resulting animal.",
+          "explanation": "Those outcomes are not established by the stated developmental observation."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-20",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Separate production and delivery",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "In a specified experimental mouse model, sperm are present but abnormal retained reproductive structures interfere with delivery. What does this demonstrate?",
+      "options": [
+        {
+          "text": "Finding sperm proves the entire tract is normally patterned.",
+          "explanation": "The structural and delivery findings contradict that inference."
+        },
+        {
+          "text": "Gamete production, duct pattern and reproductive function must be assessed separately.",
+          "explanation": "Correct. They are connected but distinct outcomes."
+        },
+        {
+          "text": "Any abnormal duct pattern proves that germ cells cannot complete differentiation.",
+          "explanation": "The stated observations include sperm, so that conclusion is unsupported."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-21",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Name the anatomical precursor precisely",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Which statement best distinguishes efferent ductules from the principal mesonephric duct derivatives?",
+      "options": [
+        {
+          "text": "Every epithelium and stromal component arises from the same duct segment.",
+          "explanation": "This collapses separate epithelial sources and surrounding tissues."
+        },
+        {
+          "text": "Efferent ductules arise from the adult epididymal duct after puberty.",
+          "explanation": "That replaces an embryological contribution with an unsupported later origin."
+        },
+        {
+          "text": "Selected mesonephric tubules contribute to efferent ductules, while the mesonephric duct contributes to the epididymal/deferent route.",
+          "explanation": "Correct. Tubules and the duct are distinct precursors."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-22",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Read an early prostate bud",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Early prostate epithelium can co-express markers later associated with basal and luminal populations. What is the best interpretation of such an early bud?",
+      "options": [
+        {
+          "text": "Early co-expression does not establish mature basal/luminal compartments; compare the marker pattern with canalization and tissue position.",
+          "explanation": "Correct. Differentiation includes changing marker restriction and organization. A solid bud should not be assigned the compartment structure of a mature gland."
+        },
+        {
+          "text": "Every co-expressing cell must already be a fully differentiated adult secretory cell.",
+          "explanation": "A marker combination in an early developmental state does not establish adult secretory specialization."
+        },
+        {
+          "text": "The markers prove two mature layers are present even if no lumen or separate layers can be demonstrated.",
+          "explanation": "This makes anatomical organization follow from marker names rather than observing the developing tissue."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-23",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Interpret a xenograft",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Human fetal tissue develops under an experimental host and defined hormone exposure. Which conclusion is best supported?",
+      "options": [
+        {
+          "text": "The experiment gives an exact normal timetable for every human fetus.",
+          "explanation": "The experimental environment and staging uncertainty prevent that universal inference."
+        },
+        {
+          "text": "It measures a response under the specified graft and exposure conditions.",
+          "explanation": "Correct. The model and intervention remain part of the interpretation."
+        },
+        {
+          "text": "Any observed differentiation must have occurred before grafting.",
+          "explanation": "That would require evidence; the experiment is intended to examine developmental response."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-24",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "A gap after processing",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "An apparent cleft separates tissue elements in a prepared section. What is the most defensible next step?",
+      "options": [
+        {
+          "text": "Declare it a normal anatomical channel solely because it is pale.",
+          "explanation": "A pale gap can reflect preparation or sectioning effects."
+        },
+        {
+          "text": "Exclude every biological interpretation without inspecting further evidence.",
+          "explanation": "Artifact is a possibility to investigate, not an automatic conclusion."
+        },
+        {
+          "text": "Assess preparation, neighboring sections and anatomical context before distinguishing a real space from processing separation.",
+          "explanation": "Correct. This tests the alternative explanations rather than choosing from appearance alone."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-25",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Chromosome sets and DNA amount",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A germ cell has completed meiosis I but has not entered meiosis II. For the usual human chromosome complement, which description is correct?",
+      "options": [
+        {
+          "text": "23 chromosomes, each still containing two sister chromatids; n, 2C.",
+          "explanation": "Meiosis I separates homologues. The remaining chromosomes retain paired chromatids until meiosis II."
+        },
+        {
+          "text": "46 chromosomes with unreplicated DNA; 2n, 2C.",
+          "explanation": "This confuses the post-meiosis-I cell with a diploid cell before DNA replication."
+        },
+        {
+          "text": "23 single-chromatid chromosomes; n, 1C.",
+          "explanation": "This is the standard product after meiosis II, not the secondary spermatocyte before that division."
+        },
+        {
+          "text": "46 two-chromatid chromosomes; 2n, 4C.",
+          "explanation": "That describes the replicated primary spermatocyte before the reduction division."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-26",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Compaction is not another reduction division",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A series of spermatids shows progressively smaller, denser nuclei. Which explanation connects the appearance with the relevant process without overclaiming what H&E demonstrates?",
+      "options": [
+        {
+          "text": "A dense nucleus proves that epididymal maturation has been completed.",
+          "explanation": "The change can occur within seminiferous epithelium before epididymal passage."
+        },
+        {
+          "text": "Chromatin is being repackaged during spermiogenesis; a specific protein claim needs a targeted assay.",
+          "explanation": "Compaction is part of differentiation. H&E appearance alone does not identify transition proteins or protamines."
+        },
+        {
+          "text": "Each smaller nucleus must have lost another complete chromosome set.",
+          "explanation": "Nuclear condensation does not imply successive reduction divisions or further loss of chromosome sets."
+        },
+        {
+          "text": "The dark colour directly identifies protamine 1 concentration.",
+          "explanation": "H&E is not a protamine-specific quantitative assay."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-27",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Follow the hormone to its receiving cell",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "An original teaching diagram shows LH reaching an interstitial cell and FSH reaching a seminiferous supporting cell. Which labels and downstream relationship fit?",
+      "options": [
+        {
+          "text": "LH and FSH both act only on the epididymal lumen.",
+          "explanation": "The diagram concerns endocrine targets within testicular tissue, not hormones acting only within duct contents."
+        },
+        {
+          "text": "Detectable testosterone guarantees that every target cell responds normally.",
+          "explanation": "A ligand concentration does not establish receptor function in the receiving cell."
+        },
+        {
+          "text": "LH → Leydig cell; FSH → Sertoli cell; Leydig-derived testosterone can also act on androgen-responsive Sertoli cells.",
+          "explanation": "This distinguishes two pituitary targets and the separate local androgen response."
+        },
+        {
+          "text": "LH → spermatid; FSH → Leydig cell; sperm make the junctional barrier.",
+          "explanation": "These targets and the barrier-forming cell identity are incorrect."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-28",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Separate a marker from demonstrated competence",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "In a mouse Sertoli-cell androgen-receptor knockout, surviving spermatocytes display several prophase markers but respond poorly in the tested induction of meiotic division. Which inference is supported?",
+      "options": [
+        {
+          "text": "The measured marker proves that meiosis and fertility are normal.",
+          "explanation": "A marker does not demonstrate completion of division or fertility."
+        },
+        {
+          "text": "No germ cell in the animal can have entered meiotic prophase.",
+          "explanation": "This contradicts the stated observation of surviving prophase cells."
+        },
+        {
+          "text": "The same phenotype identifies one specific diagnosis in a human biopsy.",
+          "explanation": "A conditional mouse experiment does not supply that individual clinical inference."
+        },
+        {
+          "text": "Early cytological features and competence for the later division are distinct; supporting-cell signalling can affect germ-cell progression.",
+          "explanation": "The model changes a somatic supporting-cell receptor and measures several non-equivalent germ-cell readouts."
+        }
+      ],
+      "answer": 3
+    },
+    {
+      "id": "reproductive-depth-29",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Reason through a moving compartment boundary",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A fixed mouse preparation shows junction-associated boundaries on both sides of transiting spermatocytes. Which model best accommodates the observation?",
+      "options": [
+        {
+          "text": "An intermediate compartment can form as new basal contacts develop before removal of the older adluminal boundary.",
+          "explanation": "Coexisting boundaries support staged compartment rearrangement without assuming unrestricted opening of the whole epithelium."
+        },
+        {
+          "text": "The entire seminiferous epithelium must become completely open at once.",
+          "explanation": "That is not required by a pattern with boundaries on both sides."
+        },
+        {
+          "text": "The image is a continuous movie that directly measures every transport step.",
+          "explanation": "A reconstruction from fixed samples does not provide continuous live temporal measurements."
+        },
+        {
+          "text": "The endothelial capillary wall alone explains the observed epithelial compartments.",
+          "explanation": "The described boundaries are between Sertoli cells within the seminiferous epithelium."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "reproductive-depth-30",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Compare the supporting tissue",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "Two original specimen descriptions both mention secretory epithelium. One emphasizes complex mucosal folds with stromal cores; the other emphasizes glands distributed through substantial fibromuscular stroma. Which comparison is most useful?",
+      "options": [
+        {
+          "text": "Each apparently separate space is necessarily a separate gland.",
+          "explanation": "A section through folded connected surfaces can generate apparently isolated spaces."
+        },
+        {
+          "text": "The first favours seminal-vesicle architecture; the second favours prostate, with cell-level and contextual confirmation.",
+          "explanation": "The relation of epithelium, lumen and supporting tissue is more discriminating than a shared secretory role."
+        },
+        {
+          "text": "Both must be seminal vesicle because secretion is present.",
+          "explanation": "Several reproductive glands secrete; secretion alone does not identify the organ."
+        },
+        {
+          "text": "Absence of a luminal concretion excludes prostate.",
+          "explanation": "Concretions need not be visible in every prostatic field."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "reproductive-depth-31",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Include mesenchyme in a developmental explanation",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A mouse study alters androgen-receptor activity in mesenchymal cells and reports abnormal duct morphology and smooth-muscle differentiation. The in-vivo and explant patterns differ. Which explanation is best?",
+      "options": [
+        {
+          "text": "The explant result proves an identical bilateral outcome in every intact embryo.",
+          "explanation": "The stem explicitly distinguishes those settings."
+        },
+        {
+          "text": "The result establishes the direction of every proliferation measurement without checking the paper.",
+          "explanation": "That exceeds the described morphological findings; conflicting proliferation wording remains excluded."
+        },
+        {
+          "text": "Epithelial organization depends on surrounding tissue interactions, and experimental context can change the outcome.",
+          "explanation": "Epithelial origin, mesenchymal response and the conditions of the experiment are separate parts of the explanation."
+        },
+        {
+          "text": "Only the epithelial ancestral duct matters; its surroundings are irrelevant.",
+          "explanation": "The reported intervention and phenotype specifically implicate surrounding mesenchyme."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "reproductive-depth-32",
+      "topic": "reproductive-histology",
+      "subject": "histology",
+      "title": "Choose a method for the question",
+      "href": "/library/reproductive-histology#apply-the-concept",
+      "prompt": "A student wants to distinguish collagen-rich stroma from muscle in one specimen and test a specific protein’s location in another. Which plan matches the questions?",
+      "options": [
+        {
+          "text": "Use H&E colour alone as an exact measurement of the target protein.",
+          "explanation": "General histological contrast is not a specific quantitative protein assay."
+        },
+        {
+          "text": "Treat any colour difference between slides as proof of a biological difference.",
+          "explanation": "Preparation, staining and imaging can change contrast independently of biology."
+        },
+        {
+          "text": "Assume that RNA signal, protein localization and barrier permeability are interchangeable readouts.",
+          "explanation": "Transcript, protein and transport measurements answer different questions."
+        },
+        {
+          "text": "Use an appropriate connective-tissue stain for structural contrast and a separately controlled protein-localization assay.",
+          "explanation": "These methods address different targets; retain the staining protocol, controls and tissue context."
+        }
+      ],
+      "answer": 3
     }
   ]
 }

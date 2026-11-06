@@ -530,66 +530,220 @@
       "lessonId": "reproductive-histology",
       "title": "Reproductive histology and cyclic change",
       "subject": "histology",
-      "topic": "Reproductive tissue relationships and observation-to-inference reasoning",
+      "topic": "Reproductive tissue identification, germ-cell mechanisms and developmental interactions",
       "slug": "reproductive-histology",
-      "learnerLevel": "Introductory microscopic anatomy and quantitative reasoning",
+      "learnerLevel": "Medical sciences: tissue practical to experimental interpretation",
       "objectives": [
-        "Locate supporting and steroidogenic compartments in the existing testis explanation.",
-        "Connect the existing follicular and endometrial explanations without inferring an exact cycle day.",
-        "Separate a visible feature, a naming convention and a whole-object inference.",
-        "Explain with a stipulated geometric counterexample why a cavity can be missed by a plane.",
-        "Distinguish repeated profiles from distinct objects."
+        "Distinguish seminiferous tissue, efferent ductules, epididymis, ductus deferens, seminal vesicle and prostate using several architectural features.",
+        "Separate chromosome sets, DNA amount, spermiogenesis, spermiation and epididymal maturation.",
+        "Locate endocrine targets and explain how Sertoli-cell responses influence germ-cell development.",
+        "Explain a junction-remodelling model without confusing localization with permeability.",
+        "Connect gonadal specification, duct origins and epithelial–mesenchymal responses with scoped experimental evidence.",
+        "Choose a preparation or stain for a specific structural or molecular question.",
+        "Use a real H&E specimen to distinguish ductal lining, lumen, vessels and supporting tissue.",
+        "Retain follicular and endometrial relationships, classification context and section-plane reasoning."
       ],
       "sources": [
         {
-          "title": "OpenStax Anatomy and Physiology 2e 27.1: Testicular reproductive system",
+          "title": "Duke — male reproductive histology practical",
+          "url": "https://histology.oit.duke.edu/DPT/MaleRepro/MaleRepro.html",
+          "publisherOrAuthor": "Duke",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University — reproductive tract overview",
+          "url": "https://histology.siu.edu/erg/mguide.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds — accessory reproductive glands",
+          "url": "https://histology.leeds.ac.uk/home/male/accessory/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Garcia-Alonso et al. — single-cell roadmap of human gonadal development (2022)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9300467/",
+          "publisherOrAuthor": "Garcia-Alonso et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Kim et al. — Fgf9 and Wnt4 signalling during mouse gonad development (2006)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1463023/",
+          "publisherOrAuthor": "Kim et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "CLDN11 and the testicular SCF environment — mouse experimental study (2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11782696/",
+          "publisherOrAuthor": "CLDN11 and the testicular SCF environment",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Cunha et al. — development of the human prostate (2018)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6234090/",
+          "publisherOrAuthor": "Cunha et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Koopman et al. — Sry transgene experiment (1991; abstract reviewed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2030730/",
+          "publisherOrAuthor": "Koopman et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Behringer et al. — Müllerian-inhibiting substance function (1994; abstract reviewed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7954809/",
+          "publisherOrAuthor": "Behringer et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "UNSW Embryology — renal and mesonephric development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Renal_System_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UNSW Embryology — seminal vesicle development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Seminal_Vesicle_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "O’Donnell — mechanisms of spermiogenesis and spermiation (2014)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4581055/",
+          "publisherOrAuthor": "O’Donnell",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Heller and Clermont — human spermatogenic duration (1963; abstract reviewed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/13953583/",
+          "publisherOrAuthor": "Heller and Clermont",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Larose et al. — Sertoli-cell androgen signalling and meiotic progression (2020)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851862/",
+          "publisherOrAuthor": "Larose et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "De Vries et al. — human spermatid chromatin remodelling (2012)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3507207/",
+          "publisherOrAuthor": "De Vries et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Smith and Braun — germ-cell passage across Sertoli junctions (2012)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3694388/",
+          "publisherOrAuthor": "Smith and Braun",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Wilbourne et al. — mesenchymal androgen receptor and Wolffian duct development (2024)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10763607/",
+          "publisherOrAuthor": "Wilbourne et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "OpenStax Anatomy and Physiology 2e — testicular reproductive system",
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
-          "publisherOrAuthor": "OpenStax",
-          "sourceType": "textbook",
-          "accessedAt": "2026-11-04"
+          "publisherOrAuthor": "OpenStax Anatomy and Physiology 2e",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University — epididymis histology",
+          "url": "https://histology.siu.edu/erg/epidid.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University — ductus deferens histology",
+          "url": "https://histology.siu.edu/erg/vas.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University — seminal vesicle histology",
+          "url": "https://histology.siu.edu/erg/semves.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Southern Illinois University — prostate histology",
+          "url": "https://histology.siu.edu/erg/prostate.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
         },
         {
           "title": "OpenStax Anatomy and Physiology 2e 27.2: Ovarian reproductive system",
           "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system",
-          "publisherOrAuthor": "OpenStax",
-          "sourceType": "textbook",
-          "accessedAt": "2026-11-04"
+          "publisherOrAuthor": "OpenStax Anatomy and Physiology 2e 27.2: Ovarian reproductive system",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
         },
         {
           "title": "Yano Maher et al. (2025): Classification system of human ovarian follicle morphology",
           "url": "https://pubmed.ncbi.nlm.nih.gov/39549739/",
-          "publisherOrAuthor": "Yano Maher and colleagues",
-          "sourceType": "research",
-          "accessedAt": "2026-11-04"
+          "publisherOrAuthor": "Yano Maher et al. (2025): Classification system of human ovarian follicle morphology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
         },
         {
           "title": "Quan et al. (2020): Spatial analysis of growing follicles in the human ovary",
           "url": "https://pubmed.ncbi.nlm.nih.gov/32598235/",
-          "publisherOrAuthor": "Quan and colleagues",
-          "sourceType": "research",
-          "accessedAt": "2026-11-04"
+          "publisherOrAuthor": "Quan et al. (2020): Spatial analysis of growing follicles in the human ovary",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
         }
       ],
       "contentStatus": "editorial-reviewed",
-      "visualStatus": "not-required",
-      "visualRequired": false,
-      "visualNotes": "Conceptual tissue relationships, fictional descriptions and a fully specified geometric exercise are complete in text. No real slide-recognition or source-image task is claimed; the private toy figure is not shipped.",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Four-region human H&E image, attribution and two maps reviewed in the rendered page. Metadata removed without changing decoded pixels. No-JavaScript and failed-image text retained.",
       "assessmentStatus": "reviewed",
       "accessibilityStatus": "checked",
       "readabilityStatus": "checked",
       "indexStatus": "indexable",
-      "lastReviewedAt": "2026-11-04",
-      "nextReviewAt": "2027-02-04",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
       "limitations": [
-        "Original fictional observations and geometry are not a diagnostic rule, staging threshold, counting protocol or real tissue validation.",
-        "Current public textbook sections and bounded primary abstract/indexed passages reviewed; primary full-paper and source figure review not claimed.",
-        "AI-assisted review; no independent specialist, clinical or human accessibility certification."
+        "AI-assisted source/editorial review; independent medical peer review remains outstanding.",
+        "The image has unknown age, disease state, exact region, preparation and calibrated scale.",
+        "H&E architecture does not measure protein identity, ploidy or functional transport.",
+        "Mouse and human experimental observations retain preparation and sampling limits.",
+        "Original questions are not official NBME questions or validated examination grading.",
+        "Comprehensive female-system and all-system embryology remain incomplete."
       ],
       "reviewEvidenceIds": [
-        "reproductive-histology-editorial-20261104",
-        "reproductive-histology-readability-20261104",
-        "reproductive-histology-accessibility-20261104",
-        "reproductive-histology-assessment-20261104"
+        "reproductive-depth-editorial-20261106",
+        "reproductive-depth-visual-20261106",
+        "reproductive-depth-assessment-20261106",
+        "reproductive-depth-accessibility-20261106",
+        "reproductive-depth-readability-20261106"
       ],
       "links": {
         "prerequisite": [

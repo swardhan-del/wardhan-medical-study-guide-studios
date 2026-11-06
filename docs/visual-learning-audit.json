@@ -2755,11 +2755,13 @@
       "route": "/library/reproductive-histology",
       "title": "Reproductive histology and cyclic change",
       "kind": "Study lesson",
-      "action": "retain-text-practice",
+      "action": "standardise-or-reuse",
       "components": [],
       "visualIds": [],
-      "figureIds": [],
-      "rationale": "Retain original relational teaching and add explicit tissue boundaries, fictional observation reasoning and a complete text-only section-plane model. No copied figure or specimen image is needed for these stated conceptual tasks; practical microscopy recognition is not claimed."
+      "figureIds": [
+        "human-epididymis-he"
+      ],
+      "rationale": "Retain the existing ovarian structural comparison. Add a licensed real epididymal specimen with four guided regions, metadata-free identical pixels and two original maps connecting transport with developmental contributors."
     },
     {
       "id": "muscle-histology",

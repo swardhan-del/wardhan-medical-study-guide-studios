@@ -354,50 +354,6 @@
       "contentSha256": "3fd8410b3683a272152f126ef71ecc7b6471d991a68b0957ba6baaf5a79b64f5"
     },
     {
-      "id": "reproductive-histology-editorial-20261104",
-      "lessonId": "reproductive-histology",
-      "scope": "editorial",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted source/editorial and geometric review",
-      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
-      "independent": false,
-      "record": "docs/reviews/reproductive-histology-20261104.md",
-      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
-    },
-    {
-      "id": "reproductive-histology-readability-20261104",
-      "lessonId": "reproductive-histology",
-      "scope": "readability",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted source/editorial and geometric review",
-      "qualification": "Automated assistant; no independent specialist, clinical or human accessibility qualification claimed",
-      "independent": false,
-      "record": "docs/reviews/reproductive-histology-20261104.md",
-      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
-    },
-    {
-      "id": "reproductive-histology-accessibility-20261104",
-      "lessonId": "reproductive-histology",
-      "scope": "accessibility",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted focused browser and visual review",
-      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
-      "independent": false,
-      "record": "docs/reviews/reproductive-histology-20261104.md",
-      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
-    },
-    {
-      "id": "reproductive-histology-assessment-20261104",
-      "lessonId": "reproductive-histology",
-      "scope": "assessment",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted focused browser and visual review",
-      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
-      "independent": false,
-      "record": "docs/reviews/reproductive-histology-20261104.md",
-      "contentSha256": "ffd89276dce0df9599167fb7609db9a2fafc92392afb4f2814114cd6421771cd"
-    },
-    {
       "id": "peroxisome-pts1-pex5-cargo-editorial-20261104",
       "lessonId": "peroxisome-pts1-pex5-cargo",
       "scope": "editorial",
@@ -2057,6 +2013,61 @@
       "independent": false,
       "record": "docs/reviews/brain-csf-development-depth-20261106.md",
       "contentSha256": "17e6d6d88024b9c43036d1f06ee52dbf4953674fb7fb42af8b1a1fa2aaf15cc3"
+    },
+    {
+      "id": "reproductive-depth-editorial-20261106",
+      "lessonId": "reproductive-histology",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-development-depth-20261106.md",
+      "contentSha256": "a6785fafab6e30eda83420a4bd948de12197fc6787e94ae59a7346140a914db2"
+    },
+    {
+      "id": "reproductive-depth-visual-20261106",
+      "lessonId": "reproductive-histology",
+      "scope": "visual",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-development-depth-20261106.md",
+      "contentSha256": "a6785fafab6e30eda83420a4bd948de12197fc6787e94ae59a7346140a914db2"
+    },
+    {
+      "id": "reproductive-depth-assessment-20261106",
+      "lessonId": "reproductive-histology",
+      "scope": "assessment",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-development-depth-20261106.md",
+      "contentSha256": "a6785fafab6e30eda83420a4bd948de12197fc6787e94ae59a7346140a914db2"
+    },
+    {
+      "id": "reproductive-depth-accessibility-20261106",
+      "lessonId": "reproductive-histology",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-development-depth-20261106.md",
+      "contentSha256": "a6785fafab6e30eda83420a4bd948de12197fc6787e94ae59a7346140a914db2"
+    },
+    {
+      "id": "reproductive-depth-readability-20261106",
+      "lessonId": "reproductive-histology",
+      "scope": "readability",
+      "reviewedAt": "2026-11-06",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/reproductive-development-depth-20261106.md",
+      "contentSha256": "a6785fafab6e30eda83420a4bd948de12197fc6787e94ae59a7346140a914db2"
     }
   ]
 }

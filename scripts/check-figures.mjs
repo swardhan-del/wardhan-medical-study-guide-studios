@@ -64,6 +64,7 @@ for (const f of figures) {
   if (f.licenseUrl) assert([
     "https://creativecommons.org/licenses/by/4.0/",
     "https://creativecommons.org/licenses/by-sa/4.0/",
+    "https://creativecommons.org/licenses/by-sa/3.0/",
     "https://creativecommons.org/publicdomain/zero/1.0/",
   ].includes(f.licenseUrl), "Unreviewed licence URL");
   if (f.panelDescriptions) assert(f.panelDescriptions.length > 0 && f.panelDescriptions.every(p => p.label && p.text.length > 30));
