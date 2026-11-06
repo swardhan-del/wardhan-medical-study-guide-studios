@@ -2269,95 +2269,110 @@
     },
     {
       "lessonId": "thyroid-parathyroid-pattern-reasoning",
-      "title": "Thyroid and parathyroid: compare tissue patterns",
+      "title": "Thyroid and parathyroid: follicles, cell mechanisms and development",
       "subject": "histology",
-      "topic": "EMII endocrine architecture: original tissue and compartment explanations",
+      "topic": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
       "slug": "thyroid-parathyroid-pattern-reasoning",
-      "learnerLevel": "Early medical sciences",
+      "learnerLevel": "Medical sciences: foundations to practical and developmental evidence",
       "objectives": [
-        "Distinguish a follicular lumen from nearby vascular and interstitial compartments.",
-        "Connect thyroglobulin storage with a bounded uptake/processing sequence.",
-        "Compare chief-cell/PTH context without a universal stain or age shortcut.",
-        "Trace a declared compartment path and state its limits."
+        "Distinguish thyroid follicles, capillaries, parathyroid cords and preparation artefacts.",
+        "Trace iodide, thyroglobulin and released thyroid hormone through their different compartments.",
+        "Relate chief and oxyphil morphology to calcium regulation without treating colour as a secretion assay.",
+        "Explain thyroid descent, parathyroid migration and the distinction between follicular and C-cell developmental routes.",
+        "Separate initial specification, later differentiation and lineage evidence in developmental studies."
       ],
       "sources": [
         {
-          "title": "Human Protein Atlas: thyroid tissue context",
-          "url": "https://www.proteinatlas.org/humanproteome/tissue/thyroid%2Bgland",
-          "publisherOrAuthor": "Human Protein Atlas",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Human Protein Atlas: parathyroid tissue context",
-          "url": "https://www.proteinatlas.org/humanproteome/tissue/parathyroid%2Bgland",
-          "publisherOrAuthor": "Human Protein Atlas",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Normal human parathyroid: histochemical and ultrastructural study (1983)",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/6876222/",
-          "publisherOrAuthor": "Authors named in linked chapter or publication",
-          "accessedAt": "2026-11-05",
-          "sourceType": "research"
-        },
-        {
-          "title": "Endotext: Thyroid hormone synthesis and secretion",
-          "url": "https://www.ncbi.nlm.nih.gov/books/NBK285550/",
-          "publisherOrAuthor": "Authors named in linked chapter or publication",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+          "title": "Duke Histology: endocrine tissue and preparation",
           "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html",
-          "publisherOrAuthor": "Duke Histology faculty",
-          "accessedAt": "2026-11-05",
+          "publisherOrAuthor": "Duke Histology",
+          "accessedAt": "2026-11-06",
           "sourceType": "educational-reference"
         },
         {
-          "title": "Endotext: Ontogeny, Anatomy, Metabolism and Physiology of the Thyroid",
-          "url": "https://www.ncbi.nlm.nih.gov/books/NBK285554/",
-          "publisherOrAuthor": "Authors named in linked chapter or publication",
-          "accessedAt": "2026-11-05",
+          "title": "Endotext: thyroid hormone synthesis and secretion",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK285550/",
+          "publisherOrAuthor": "Endotext",
+          "accessedAt": "2026-11-06",
           "sourceType": "educational-reference"
         },
         {
-          "title": "Histology, Parathyroid Gland: chief-cell secretory organization",
-          "url": "https://www.ncbi.nlm.nih.gov/books/NBK546596/",
-          "publisherOrAuthor": "Authors named in linked chapter or publication",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Brown et al. (1993): extracellular calcium-sensing receptor cloned from bovine parathyroid",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/8255296/",
-          "publisherOrAuthor": "Authors named in linked chapter or publication",
-          "accessedAt": "2026-11-05",
+          "title": "Moreno et al. (2008): iodotyrosine-deiodinase mutations and iodine recycling",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18434651/",
+          "publisherOrAuthor": "Moreno et al. (2008)",
+          "accessedAt": "2026-11-06",
           "sourceType": "research"
+        },
+        {
+          "title": "NCBI Bookshelf: parathyroid histology",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK546596/",
+          "publisherOrAuthor": "NCBI Bookshelf",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Brown et al. (1993): cloning and characterization of a calcium-sensing receptor",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8255296/",
+          "publisherOrAuthor": "Brown et al. (1993)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Endotext: calcium and phosphate homeostasis; bone-cell signalling",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK279023/",
+          "publisherOrAuthor": "Endotext",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UNSW Embryology: thyroid development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Endocrine_-_Thyroid_Development",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Johansson et al. (2015): revised embryonic origin of thyroid C cells",
+          "url": "https://doi.org/10.1242/dev.126581",
+          "publisherOrAuthor": "Johansson et al. (2015)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Liu et al. (2007): Gcm2, parathyroid differentiation and precursor survival",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1931567/",
+          "publisherOrAuthor": "Liu et al. (2007)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Histochemical and ultrastructural observations of human parathyroid follicles (1983)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6876222/",
+          "publisherOrAuthor": "Histochemical and ultrastructural observations of human parathyroid follicles (1983)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
         }
       ],
       "contentStatus": "editorial-reviewed",
       "visualStatus": "approved-and-published",
       "visualRequired": true,
-      "visualNotes": "Three new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "visualNotes": "Existing comparison tables retained; six expandable development stages per lesson, keyboard interaction, no-JavaScript reading and 320px/200%-text reflow checked. No source image reproduced.",
       "assessmentStatus": "explanations-complete",
       "accessibilityStatus": "checked",
       "readabilityStatus": "checked",
       "indexStatus": "indexable",
-      "lastReviewedAt": "2026-11-05",
-      "nextReviewAt": "2027-02-05",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
       "limitations": [
-        "Original declared classroom models; no real specimen, recognition validation, hormone concentration or secretion rate.",
-        "AI-assisted review; no independent clinical or human accessibility certification.",
-        "Selected architecture introduction; broader endocrine, hypothalamic and autonomic course coverage remains incomplete."
+        "AI-assisted editorial review; independent medical peer review outstanding.",
+        "Developmental animal studies retain species and method limits.",
+        "Pineal, broader autonomic topics and validated actual-slide identification remain incomplete."
       ],
       "reviewEvidenceIds": [
-        "thyroid-parathyroid-pattern-reasoning-editorial-20261105",
-        "thyroid-parathyroid-pattern-reasoning-readability-20261105",
-        "thyroid-parathyroid-pattern-reasoning-visual-20261105",
-        "thyroid-parathyroid-pattern-reasoning-accessibility-20261105"
+        "thyroid-parathyroid-pattern-reasoning-editorial-depth-20261106",
+        "thyroid-parathyroid-pattern-reasoning-visual-depth-20261106",
+        "thyroid-parathyroid-pattern-reasoning-accessibility-depth-20261106",
+        "thyroid-parathyroid-pattern-reasoning-readability-depth-20261106"
       ],
       "links": {
         "prerequisite": [
@@ -2374,67 +2389,82 @@
     },
     {
       "lessonId": "adrenal-layers-signals-reasoning",
-      "title": "Adrenal gland: layers, products and signals",
+      "title": "Adrenal: zones, steroid machinery and developmental lineages",
       "subject": "histology",
-      "topic": "EMII endocrine architecture: original tissue and compartment explanations",
+      "topic": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
       "slug": "adrenal-layers-signals-reasoning",
-      "learnerLevel": "Early medical sciences",
+      "learnerLevel": "Medical sciences: foundations to practical and developmental evidence",
       "objectives": [
-        "Orient a conventional capsule-to-medulla sequence.",
-        "Keep location, product association and control setting separate.",
-        "Calculate an illustrative oblique path without turning it into tissue thickness or volume.",
-        "Distinguish a complete schematic from a cropped field."
+        "Identify cortical zones and medulla using position, cell arrangement and preparation.",
+        "Connect lipid droplets, smooth ER, mitochondria and secretory granules to different hormone pathways.",
+        "Trace cortical and medullary developmental origins and distinguish fetal from adult organization.",
+        "Explain what lineage tracing establishes about nerve-associated precursors.",
+        "Use a complete section and appropriate functional readouts rather than inferring output from one colour or width."
       ],
       "sources": [
         {
-          "title": "Human Protein Atlas: adrenal tissue context",
-          "url": "https://www.proteinatlas.org/humanproteome/tissue/adrenal%2Bgland",
-          "publisherOrAuthor": "Human Protein Atlas",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Endotext: ACTH Action on the Adrenals",
-          "url": "https://www.ncbi.nlm.nih.gov/books/NBK279118/",
-          "publisherOrAuthor": "Authors named in linked chapter or publication",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+          "title": "Duke Histology: endocrine tissue and preparation",
           "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html",
-          "publisherOrAuthor": "Duke Histology faculty",
-          "accessedAt": "2026-11-05",
+          "publisherOrAuthor": "Duke Histology",
+          "accessedAt": "2026-11-06",
           "sourceType": "educational-reference"
         },
         {
-          "title": "Histology Guide: human adrenal H&E, MH 155a — tissue organization",
-          "url": "https://www.histologyguide.org/slideview/MH-155a-adrenal/13-slide-1.html",
-          "publisherOrAuthor": "Brelje and Sorenson",
-          "accessedAt": "2026-11-05",
+          "title": "Endotext: adrenal cortex development, histology and physiology",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK278945/",
+          "publisherOrAuthor": "Endotext",
+          "accessedAt": "2026-11-06",
           "sourceType": "educational-reference"
+        },
+        {
+          "title": "Endotext: adrenal androgens and fetal cortical zones",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK278929/",
+          "publisherOrAuthor": "Endotext",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Endotext: ACTH signalling and cholesterol delivery",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK279118/",
+          "publisherOrAuthor": "Endotext",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "NCBI Gene: human CYP11B1, steroid 11-beta-hydroxylase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/1584",
+          "publisherOrAuthor": "NCBI Gene",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Furlan et al. (2017): neural-crest-derived Schwann-cell precursors and adrenal chromaffin cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6013038/",
+          "publisherOrAuthor": "Furlan et al. (2017)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
         }
       ],
       "contentStatus": "editorial-reviewed",
       "visualStatus": "approved-and-published",
       "visualRequired": true,
-      "visualNotes": "Three new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "visualNotes": "Existing comparison tables retained; six expandable development stages per lesson, keyboard interaction, no-JavaScript reading and 320px/200%-text reflow checked. No source image reproduced.",
       "assessmentStatus": "explanations-complete",
       "accessibilityStatus": "checked",
       "readabilityStatus": "checked",
       "indexStatus": "indexable",
-      "lastReviewedAt": "2026-11-05",
-      "nextReviewAt": "2027-02-05",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
       "limitations": [
-        "Original declared classroom models; no real specimen, recognition validation, hormone concentration or secretion rate.",
-        "AI-assisted review; no independent clinical or human accessibility certification.",
-        "Selected architecture introduction; broader endocrine, hypothalamic and autonomic course coverage remains incomplete."
+        "AI-assisted editorial review; independent medical peer review outstanding.",
+        "Developmental animal studies retain species and method limits.",
+        "Pineal, broader autonomic topics and validated actual-slide identification remain incomplete."
       ],
       "reviewEvidenceIds": [
-        "adrenal-layers-signals-reasoning-editorial-20261105",
-        "adrenal-layers-signals-reasoning-readability-20261105",
-        "adrenal-layers-signals-reasoning-visual-20261105",
-        "adrenal-layers-signals-reasoning-accessibility-20261105"
+        "adrenal-layers-signals-reasoning-editorial-depth-20261106",
+        "adrenal-layers-signals-reasoning-visual-depth-20261106",
+        "adrenal-layers-signals-reasoning-accessibility-depth-20261106",
+        "adrenal-layers-signals-reasoning-readability-depth-20261106"
       ],
       "links": {
         "prerequisite": [
@@ -2451,60 +2481,68 @@
     },
     {
       "lessonId": "pituitary-glandular-neural-orientation",
-      "title": "Pituitary tissue: glandular and neural regions",
+      "title": "Pituitary: tissue identification, hormone routes and development",
       "subject": "histology",
-      "topic": "EMII endocrine architecture: original tissue and compartment explanations",
+      "topic": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
       "slug": "pituitary-glandular-neural-orientation",
-      "learnerLevel": "Early medical sciences",
+      "learnerLevel": "Medical sciences: foundations to practical and developmental evidence",
       "objectives": [
-        "Compare glandular epithelial and axonal/glial regional organization.",
-        "Explain why a broad staining class does not uniquely select one hormone-producing type.",
-        "Separate neuronal production, axonal transport, terminal storage/release and glial support.",
-        "Use a structural clue without claiming actual specimen-recognition performance."
+        "Identify pars distalis, pars nervosa and the intermediate region using architecture and preparation.",
+        "Connect secretory organelles, neurosecretory axons and vascular routes to distinct functions.",
+        "Trace oral and neural ectoderm through pouch formation, regional growth and endocrine differentiation.",
+        "Explain what a developmental perturbation establishes about patterning, proliferation or cell identity.",
+        "Choose evidence that distinguishes staining class, lineage marker and hormone production."
       ],
       "sources": [
         {
-          "title": "Human Protein Atlas: pituitary tissue context",
-          "url": "https://www.proteinatlas.org/humanproteome/tissue/pituitary%2Bgland",
-          "publisherOrAuthor": "Human Protein Atlas",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Endotext: Development and Microscopic Anatomy of the Pituitary Gland",
-          "url": "https://www.ncbi.nlm.nih.gov/books/NBK425703/",
-          "publisherOrAuthor": "Authors named in linked chapter or publication",
-          "accessedAt": "2026-11-05",
-          "sourceType": "educational-reference"
-        },
-        {
-          "title": "Duke Histology: endocrine tissue organization and preparation-specific examples",
+          "title": "Duke Histology: endocrine tissue and preparation",
           "url": "https://histology.oit.duke.edu/MBS/SysSci/SS-Endocrine/SS-Endocrine.html",
-          "publisherOrAuthor": "Duke Histology faculty",
-          "accessedAt": "2026-11-05",
+          "publisherOrAuthor": "Duke Histology",
+          "accessedAt": "2026-11-06",
           "sourceType": "educational-reference"
+        },
+        {
+          "title": "Scott, Chattopadhyay and Ansorge: pituitary development and microscopy, updated 2025",
+          "url": "https://www.endotext.org/wp-content/uploads/pdfs/development-and-microscopic-anatomy-of-the-pituitary-gland.pdf",
+          "publisherOrAuthor": "Scott, Chattopadhyay and Ansorge",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Davis and Camper (2007): Noggin and pituitary induction",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1913218/",
+          "publisherOrAuthor": "Davis and Camper (2007)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Wang, Martin and Bai (2010): Shh/Gli signalling in early pituitary development",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3200223/",
+          "publisherOrAuthor": "Wang, Martin and Bai (2010)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
         }
       ],
       "contentStatus": "editorial-reviewed",
       "visualStatus": "approved-and-published",
       "visualRequired": true,
-      "visualNotes": "Three new original semantic comparisons tested with complete values, text equivalents and readable native320px/200%-text labels. No source figure/dataset reproduced. Exact hosted release remains pending.",
+      "visualNotes": "Existing comparison tables retained; six expandable development stages per lesson, keyboard interaction, no-JavaScript reading and 320px/200%-text reflow checked. No source image reproduced.",
       "assessmentStatus": "explanations-complete",
       "accessibilityStatus": "checked",
       "readabilityStatus": "checked",
       "indexStatus": "indexable",
-      "lastReviewedAt": "2026-11-05",
-      "nextReviewAt": "2027-02-05",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
       "limitations": [
-        "Original declared classroom models; no real specimen, recognition validation, hormone concentration or secretion rate.",
-        "AI-assisted review; no independent clinical or human accessibility certification.",
-        "Selected architecture introduction; broader endocrine, hypothalamic and autonomic course coverage remains incomplete."
+        "AI-assisted editorial review; independent medical peer review outstanding.",
+        "Developmental animal studies retain species and method limits.",
+        "Pineal, broader autonomic topics and validated actual-slide identification remain incomplete."
       ],
       "reviewEvidenceIds": [
-        "pituitary-glandular-neural-orientation-editorial-20261105",
-        "pituitary-glandular-neural-orientation-readability-20261105",
-        "pituitary-glandular-neural-orientation-visual-20261105",
-        "pituitary-glandular-neural-orientation-accessibility-20261105"
+        "pituitary-glandular-neural-orientation-editorial-depth-20261106",
+        "pituitary-glandular-neural-orientation-visual-depth-20261106",
+        "pituitary-glandular-neural-orientation-accessibility-depth-20261106",
+        "pituitary-glandular-neural-orientation-readability-depth-20261106"
       ],
       "links": {
         "prerequisite": [

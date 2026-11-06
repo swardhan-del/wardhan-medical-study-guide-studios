@@ -1,0 +1,17 @@
+.map { overflow-wrap: anywhere; }
+.track { margin-block: 1.5rem; }
+.stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; margin: 1rem 0; padding: 0; }
+.stages li { position: relative; min-width: 0; }
+.stages details { border: 1px solid #829a9b; border-radius: .65rem; background: #f1f7f5; color: #172d31; }
+.stages summary { padding: 1rem; cursor: pointer; font-weight: 700; line-height: 1.5; }
+.stages summary:focus-visible { outline: 3px solid #154c51; outline-offset: 4px; }
+.stages details[open] summary { border-bottom: 1px solid #829a9b; }
+.stages p { padding-inline: 1rem; }
+.number { display: inline-block; margin-right: .6em; font-variant-numeric: tabular-nums; }
+.arrow { position: absolute; right: -1.3rem; top: 1rem; font-size: 1.25rem; }
+.distinction { border-left: 3px solid #32676a; padding-left: 1rem; }
+@media (max-width: 760px) {
+  .stages { grid-template-columns: minmax(0, 1fr); }
+  .arrow { top: auto; bottom: -1.6rem; right: auto; left: 1rem; transform: rotate(90deg); }
+}
+@media print { .arrow { display: none; } .stages { display: block; } .stages li { margin-bottom: 1rem; } }
