@@ -2531,7 +2531,10 @@
         "Trace afferent lymph and HEV blood entry without confusing a tissue compartment with a vessel.",
         "Separate cellular cords, sinuses, follicles, white pulp and medullary tissue.",
         "Explain human thymic epithelial origin separately from incoming haematopoietic cells and splenic stromal origin.",
-        "Interpret a research observation with its species, method and developmental-stage limits."
+        "Interpret a research observation with its species, method and developmental-stage limits.",
+        "Distinguish primary and secondary follicles, plasma-cell patterns and stromal versus immune-cell roles.",
+        "Explain inducer–organiser signalling and distinguish initiation, maturation and fate mapping.",
+        "Use a real section to construct an identification with two landmarks and a defensible limit."
       ],
       "sources": [
         {
@@ -2589,28 +2592,78 @@
           "publisherOrAuthor": "UNSW Embryology",
           "accessedAt": "2026-11-05",
           "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Leeds: lymph-node follicles",
+          "url": "https://histology.leeds.ac.uk/home/lymphoid/lymphnodes/",
+          "publisherOrAuthor": "University of Leeds",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Victora et al. (2010): germinal-centre dynamics measured by photoactivation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3035939/",
+          "publisherOrAuthor": "Victora et al. (2010)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Hoorweg et al. (2015): human stromal observations and mouse organiser fate mapping",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4640183/",
+          "publisherOrAuthor": "Hoorweg et al. (2015)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "van de Pavert et al. (2009): CXCL13 and early lymph-node initiation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2771164/",
+          "publisherOrAuthor": "van de Pavert et al. (2009)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Bénézech et al. (2010): two-step stromal organiser maturation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862734/",
+          "publisherOrAuthor": "Bénézech et al. (2010)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Columbia University: lymph-node cells and reticular preparations",
+          "url": "https://www.columbia.edu/itc/hs/medical/sbpm_histology_2009/lab/lab09_lymphnodes.html",
+          "publisherOrAuthor": "Columbia University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Gitlin et al. (2015): T-cell help and germinal-centre cell-cycle speed",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4809261/",
+          "publisherOrAuthor": "Gitlin et al. (2015)",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
         }
       ],
       "contentStatus": "editorial-reviewed",
       "visualStatus": "approved-and-published",
       "visualRequired": true,
-      "visualNotes": "Existing credited figures/comparison retained. New original interaction layouts and text equivalents reviewed at desktop and 320px/200%-text; no new specimen images. Hosted release verification remains separate.",
+      "visualNotes": "Credited original-pixel overview, four reversible region markers and complete text equivalents. Desktop, keyboard, mobile 320px/200% text, no-JavaScript and image-error behaviour checked. Hosted verification is a separate release gate.",
       "assessmentStatus": "explanations-complete",
       "accessibilityStatus": "checked",
       "readabilityStatus": "checked",
       "indexStatus": "indexable",
-      "lastReviewedAt": "2026-11-05",
-      "nextReviewAt": "2027-02-05",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-06",
       "limitations": [
-        "AI-assisted teaching; no independent clinical certification.",
-        "Conceptual exercises do not validate diagnosis or real-slide recognition.",
-        "Body-system embryology expansion and additional licensed specimen images remain in progress."
+        "AI-assisted source and editorial review; independent medical review outstanding.",
+        "Overview specimen cannot resolve all cell types; stain, magnification and scale undocumented.",
+        "Mouse developmental perturbations and fate maps do not establish a universal human timetable.",
+        "System-wide embryology depth remains in progress."
       ],
       "reviewEvidenceIds": [
-        "lymphoid-organs-editorial-depth-20261105",
-        "lymphoid-organs-readability-depth-20261105",
-        "lymphoid-organs-visual-depth-20261105",
-        "lymphoid-organs-accessibility-depth-20261105"
+        "lymphoid-organs-editorial-specimen-20261106",
+        "lymphoid-organs-visual-specimen-20261106",
+        "lymphoid-organs-accessibility-specimen-20261106",
+        "lymphoid-organs-readability-specimen-20261106"
       ],
       "links": {
         "prerequisite": [
@@ -2619,7 +2672,8 @@
         "related": [
           "innate-adaptive",
           "antigen-presentation",
-          "blood-marrow"
+          "blood-marrow",
+          "antibody-mutation-class-switch"
         ],
         "compare": [],
         "next": []

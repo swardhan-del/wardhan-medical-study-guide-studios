@@ -1,0 +1,16 @@
+.explorer { min-width: 0; overflow-wrap: anywhere; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; margin-block: 1rem; }
+.controls button { background: #fff; color: #193e43; border: 2px solid #54757a; border-radius: .5rem; padding: .65rem .8rem; min-height: 44px; max-width: 100%; font: inherit; text-align: left; overflow-wrap: anywhere; cursor: pointer; }
+.controls button[aria-pressed="true"] { background: #193e43; color: white; }
+.controls button:focus-visible, .controls a:focus-visible, .explorer textarea:focus-visible { outline: 3px solid #ac4813; outline-offset: 4px; }
+.explorer figure { margin: 1.25rem 0; }
+.imageFrame { position: relative; isolation: isolate; }
+.imageFrame img { display: block; width: 100%; height: auto; }
+.markers { position: absolute; inset: 0; pointer-events: none; }
+.marker, .selectedMarker { position: absolute; transform: translate(-50%, -50%); display: grid; place-items: center; width: 26px; height: 26px; border: 2px solid white; outline: 2px solid #172b31; border-radius: 50%; background: #172b31; color: white; font: bold 16px/1 sans-serif; }
+.selectedMarker { outline: 4px solid #172b31; background: white; color: #172b31; }
+.description { margin-block: 1rem; padding: 1rem; border-left: 5px solid #365e65; background: #eef5f4; color: #193e43; }
+.credit { font-size: .9em; }
+.explorer textarea { display: block; box-sizing: border-box; width: 100%; max-width: 100%; margin-block: .75rem; padding: .75rem; font: inherit; border: 2px solid #54757a; border-radius: .4rem; }
+.explorer li { margin-block: 1rem; }
+@media print { .controls, .explorer textarea { display: none; } }

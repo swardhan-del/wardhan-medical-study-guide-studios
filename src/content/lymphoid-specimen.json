@@ -1,0 +1,51 @@
+{
+  "title": "Read a lymph-node section from outside inward",
+  "regions": [
+    {
+      "id": "surrounding-tissue",
+      "label": "Surrounding pale tissue",
+      "observation": "Large pale polygonal spaces with thin boundaries surround the denser lymphoid tissue.",
+      "interpretation": "These are consistent with adipose tissue outside the node. Establish the organ boundary before treating pale spaces as internal lymphatic channels.",
+      "limit": "A pale space alone does not identify a sinus.",
+      "anchor": {
+        "x": 92,
+        "y": 49
+      }
+    },
+    {
+      "id": "peripheral-nodules",
+      "label": "Peripheral nodular pattern",
+      "observation": "Rounded, more densely stained lymphoid profiles are arranged toward the periphery.",
+      "interpretation": "Compare their relationship to the outer boundary and intervening tissue. Follicular architecture supports a cortical compartment.",
+      "limit": "This overview cannot assign each nucleus to a B-cell subtype or establish a germinal-centre reaction in every profile.",
+      "anchor": {
+        "x": 23,
+        "y": 68
+      }
+    },
+    {
+      "id": "inner-regions",
+      "label": "Heterogeneous inner regions",
+      "observation": "Inner tissue has a different mixture of dense areas, pale spaces and vascular-looking profiles.",
+      "interpretation": "Orient an inner compartment, then request a more detailed view before separating medullary cords, sinuses, vessels and adipose spaces.",
+      "limit": "Do not label every pale space a medullary sinus; lining and contents must be inspected.",
+      "anchor": {
+        "x": 53,
+        "y": 43
+      }
+    },
+    {
+      "id": "whole-organ",
+      "label": "Whole-organ argument",
+      "observation": "Peripheral nodules and a differently organized interior occur inside a distinct tissue boundary with surrounding fat.",
+      "interpretation": "Combine those relationships with the creator-provided normal lymph-node provenance. A single follicle would not distinguish node from spleen or mucosal lymphoid tissue.",
+      "limit": "The specimen is a section through an organ, not a live map of lymph flow, and its entire three-dimensional hilum is not demonstrated.",
+      "anchor": {
+        "x": 49,
+        "y": 72
+      }
+    }
+  ],
+  "model": "The outer boundary separates denser lymphoid tissue from surrounding adipose tissue. Rounded peripheral profiles differ from the heterogeneous interior. These relationships support the creator-identified lymph-node interpretation. A higher-power, documented preparation is needed to resolve individual cell types and distinguish each inner vessel from a sinus.",
+  "figureId": "normal-lymph-node-architecture"
+}

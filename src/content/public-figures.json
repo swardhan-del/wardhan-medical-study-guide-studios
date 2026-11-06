@@ -754,6 +754,41 @@
           "text": "The left plot considers reporter-positive cells among OCN-positive cells; the right considers labeled osteocytes among all counted osteocytes. Neither plot is the survival rate of a single pulse-labeled cohort. The article reports three biological replicates; plotted tissue sampling must not be mistaken for independent animals."
         }
       ]
+    },
+    {
+      "id": "normal-lymph-node-architecture",
+      "title": "Normal lymph node: orient the whole section",
+      "sourceAsset": "images/figures/normal-lymph-node-architecture.jpg",
+      "kind": "micrograph",
+      "alt": "Section identified by the creator as a normal lymph node, with dense peripheral rounded profiles, a heterogeneous inner region and pale adipose tissue outside its boundary.",
+      "caption": "Ed Uthman identifies this specimen as a normal lymph node. Stain, exact magnification and physical scale are not supplied. Use the photograph for architectural reasoning; enlargement cannot supply missing cellular detail.",
+      "rights": "Ed Uthman, Normal Lymph Node (2011), CC BY 4.0, as linked by the creator.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": "docs/reviews/lymphoid-specimen-depth-20261106.md",
+      "sourceUrl": "https://www.flickr.com/photos/euthman/5610754370/",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-lymphoid-organs"
+      ],
+      "resourceIds": [
+        "lymphoid-organs"
+      ],
+      "width": 2048,
+      "height": 1536,
+      "src": "/images/figures/normal-lymph-node-architecture.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/normal-lymph-node-architecture.jpg",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 1139498
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after provenance, rights, privacy and rendered review.",
+      "modifications": "Embedded metadata removed; decoded pixels verified unchanged. Browser region markers are reversible overlays, not alterations to the specimen.",
+      "observe": "Follow the tissue boundary before comparing the peripheral and inner organisation."
     }
   ]
 }

@@ -3645,6 +3645,294 @@
       "subject": "histology",
       "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
       "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "lymphoid-depth-follicle-organ-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "A section contains a germinal centre. What should be established next?",
+      "options": [
+        {
+          "text": "The larger organ architecture",
+          "explanation": "Correct. Follicles occur in several lymphoid organs; boundaries and relationships distinguish them."
+        },
+        {
+          "text": "That the organ must be a lymph node",
+          "explanation": "A germinal centre is not unique to lymph nodes."
+        },
+        {
+          "text": "That every surrounding nucleus is a B cell",
+          "explanation": "Routine appearance alone cannot assign every cell type."
+        }
+      ],
+      "answer": 0,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-depth-section-centre-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "A dark rounded profile lacks a pale centre on one level. Which limitation matters?",
+      "options": [
+        {
+          "text": "Every secondary follicle is visible in every plane",
+          "explanation": "An off-centre section can miss the germinal centre."
+        },
+        {
+          "text": "A darker profile proves absence of an immune response",
+          "explanation": "Staining intensity alone cannot establish that conclusion."
+        },
+        {
+          "text": "The cut may miss the centre of a follicle",
+          "explanation": "Correct. Three-dimensional structures produce different two-dimensional profiles."
+        }
+      ],
+      "answer": 2,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-depth-matrix-cell-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "Silver staining outlines a reticular network. What has been highlighted?",
+      "options": [
+        {
+          "text": "A measured lymphocyte migration route",
+          "explanation": "A static fibre stain does not measure migration."
+        },
+        {
+          "text": "A supporting matrix pattern",
+          "explanation": "Correct. Matrix contrast does not independently identify all adjacent cells."
+        },
+        {
+          "text": "Every cell’s developmental ancestry",
+          "explanation": "Ancestry requires a different experimental approach."
+        }
+      ],
+      "answer": 1,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-depth-development-endpoint-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "An early node cluster is missing in a developmental mutant. What is the best follow-up?",
+      "options": [
+        {
+          "text": "Compare later stages and node sites",
+          "explanation": "Correct. Timing and anatomical site determine the scope of the phenotype."
+        },
+        {
+          "text": "Assume permanent loss of every node",
+          "explanation": "Later compensation or site differences must be assessed."
+        },
+        {
+          "text": "Diagnose the same defect in human H&E",
+          "explanation": "A mouse perturbation does not diagnose a human section."
+        }
+      ],
+      "answer": 0,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-depth-human-mouse-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "Human stromal colocalisation is compared with mouse genetic fate mapping. Which conclusion is justified?",
+      "options": [
+        {
+          "text": "The human cells were genetically lineage-traced",
+          "explanation": "The human arm did not use that lineage-tracing experiment."
+        },
+        {
+          "text": "Identical marker location proves identical ancestry",
+          "explanation": "Marker overlap alone is insufficient for an ancestry claim."
+        },
+        {
+          "text": "The methods answer related but distinct questions",
+          "explanation": "Correct. One addresses spatial association; the other tests labelled ancestry in mice."
+        }
+      ],
+      "answer": 2,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-depth-negative-reporter-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "Some stromal cells lack a reporter label. What must be considered first?",
+      "options": [
+        {
+          "text": "That all unlabelled cells are endothelial",
+          "explanation": "Reporter negativity does not assign a cell identity."
+        },
+        {
+          "text": "Whether the reporter labelled the relevant precursors efficiently",
+          "explanation": "Correct. Coverage and timing constrain a negative result."
+        },
+        {
+          "text": "That the lineage relationship is impossible",
+          "explanation": "Incomplete labelling can also produce a negative population."
+        }
+      ],
+      "answer": 1,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-depth-pale-space-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "A pale central profile is poorly resolved. What is the sound practical response?",
+      "options": [
+        {
+          "text": "Keep vessel, sinus and other possibilities open until boundaries are resolved",
+          "explanation": "Correct. Position, boundary and contents are needed."
+        },
+        {
+          "text": "Call it a lymph sinus because it is pale",
+          "explanation": "Brightness alone does not distinguish a sinus."
+        },
+        {
+          "text": "Call it an artery because it is round",
+          "explanation": "Many structures can produce round profiles."
+        }
+      ],
+      "answer": 0,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-depth-scale-stain-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "The creator specifies lymph node but gives no stain or scale bar. What may the exercise claim?",
+      "options": [
+        {
+          "text": "Pink and purple prove the exact stain protocol",
+          "explanation": "Colour is insufficient to establish a documented protocol."
+        },
+        {
+          "text": "Screen zoom supplies a micrometre scale",
+          "explanation": "Screen magnification is not a calibration."
+        },
+        {
+          "text": "Architecture can be discussed while preparation and scale remain unknown",
+          "explanation": "Correct. Use the source-supported identity and visible architecture with stated limits."
+        }
+      ],
+      "answer": 2,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-cell-pattern-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "A cell in a medullary cord has an eccentric nucleus, coarse chromatin, basophilic cytoplasm and a pale perinuclear region. Which interpretation best combines those observations?",
+      "options": [
+        {
+          "text": "A plasma-cell pattern",
+          "explanation": "Correct. The combined nuclear, cytoplasmic and tissue features support this interpretation."
+        },
+        {
+          "text": "Any small lymphocyte",
+          "explanation": "A small lymphocyte usually has scant visible cytoplasm; this richer feature set supports a secretory cell."
+        },
+        {
+          "text": "An endothelial cell solely because it is pale nearby",
+          "explanation": "Neighbouring space does not establish endothelial identity."
+        }
+      ],
+      "answer": 0,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-receptor-partners-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "Which pairing correctly separates a recruiting signal from a stromal maturation signal?",
+      "options": [
+        {
+          "text": "CXCL13 binds LTβR; lymphotoxin binds CXCR5",
+          "explanation": "These receptor partners are reversed."
+        },
+        {
+          "text": "CXCL13–CXCR5; lymphotoxin α1β2–LTβR",
+          "explanation": "Correct. Chemokine recruitment and lymphotoxin-mediated stromal responses are distinct interactions."
+        },
+        {
+          "text": "Both signals require the same receptor",
+          "explanation": "Different receptors mediate these steps."
+        }
+      ],
+      "answer": 1,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-stromal-block-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "After a developmental perturbation, intermediate stromal cells remain but the mature organiser phenotype is missing. What is the strongest inference?",
+      "options": [
+        {
+          "text": "The organ has no precursors",
+          "explanation": "The observed intermediate cells contradict that claim."
+        },
+        {
+          "text": "Human nodes must have exactly the same timing",
+          "explanation": "A mouse phenotype does not establish a human timetable."
+        },
+        {
+          "text": "The tested signal contributes to the later transition",
+          "explanation": "Correct. The finding localises a requirement to maturation in the studied setting."
+        }
+      ],
+      "answer": 2,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
+    },
+    {
+      "id": "lymphoid-cycle-readout-20261106",
+      "topic": "lymphoid-organs",
+      "prompt": "More cells occupy a dark zone. What additional evidence is needed to claim that their cell cycle is faster?",
+      "options": [
+        {
+          "text": "Only a darker stain",
+          "explanation": "Stain intensity is not a timing measurement."
+        },
+        {
+          "text": "Time-resolved cell-cycle measurements with suitable controls",
+          "explanation": "Correct. Abundance also depends on recruitment, residence and survival."
+        },
+        {
+          "text": "An uncalibrated enlargement of the image",
+          "explanation": "Display size does not measure cycling speed."
+        }
+      ],
+      "answer": 1,
+      "origin": "Original authored educational question, not an official examination item.",
+      "subject": "histology",
+      "title": "Lymphoid architecture and development",
+      "href": "/library/lymphoid-organs"
     }
   ]
 }

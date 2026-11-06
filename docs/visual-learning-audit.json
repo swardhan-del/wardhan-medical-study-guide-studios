@@ -2647,8 +2647,10 @@
       "visualIds": [
         "lymphoid-comparison"
       ],
-      "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs. Existing figures and identifiers retained. Original interactive comparisons/sequencing supplement them; no new specimen image or atlas reproduction."
+      "figureIds": [
+        "normal-lymph-node-architecture"
+      ],
+      "rationale": "The visual supports this specific learning task: Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs. Existing figures and identifiers retained. Original interactive comparisons/sequencing supplement them; no new specimen image or atlas reproduction. A credited specimen overview now supports four region observations, model comparison and visible metadata limits."
     },
     {
       "id": "myelin-and-glial-cells",

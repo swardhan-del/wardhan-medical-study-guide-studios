@@ -75,7 +75,7 @@ for (const id of ["histology-foundations-tissues","microscopy","lymphoid-organs"
   });
 }
 
-for (const [id, sectionCount, questionCount] of [["microscopy",6,8],["lymphoid-organs",12,11]] as const) {
+for (const [id, sectionCount, questionCount] of [["microscopy",6,8],["lymphoid-organs",23,11]] as const) {
   test(`${id}: complete teaching, all new explained checks and saved responses survive reload`, async ({page}) => {
     await page.goto(`/library/${id}`);
     const lesson=teaching.lessons.find(l=>l.id===id)!;

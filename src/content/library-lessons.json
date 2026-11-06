@@ -1711,7 +1711,7 @@
       "id": "lymphoid-organs",
       "subject": "histology",
       "title": "Lymphoid organs: practical identification, routes and developmental origins",
-      "summary": "Identify lymphoid organs from their architecture, distinguish blood and lymph routes, and connect microscopic compartments with developmental and experimental evidence.",
+      "summary": "Identify lymphoid organs from architecture, interpret cells and germinal centres, and connect lymph-node stromal development with experimental evidence. Practise on a credited specimen and explain each identification from visible relationships.",
       "tags": [
         "Organ histology",
         "lymphatic",
@@ -1730,6 +1730,54 @@
         {
           "title": "Lymph node: orient capsule, follicles, paracortex and medulla",
           "body": "Trace the connective-tissue capsule and look immediately beneath it for the subcapsular sinus. Follicles lie in the outer cortex. The deeper paracortex is a predominantly T-cell region, with high endothelial venules; it is not simply another B-cell follicle. In the medulla distinguish cellular cords from the intervening lymph sinuses. Cords may contain plasma cells, B lymphocytes and macrophages. The distinction is tissue versus passage, not merely dark versus light. A limited core may omit the capsule or hilum; report that sampling limit rather than asserting that the whole organ lacks them.\n\nTry it: Mark a cellular cord and its adjacent sinus as different structures."
+        },
+        {
+          "title": "A follicle is a structure within an organ",
+          "body": "Use follicle for a rounded lymphoid compartment, not for an entire lymph node. In a primary follicle, small lymphocytes form a relatively uniform dense population. A secondary follicle contains a germinal centre surrounded by a mantle of smaller lymphocytes. The change in nuclear size, cytoplasm and cellular density helps explain the paler centre; it is not an empty lumen. A section through the edge of a three-dimensional follicle may miss its centre. Before classifying every dark profile as primary, inspect adjacent fields and, when available, levels.\n\nTonsils and spleen can also contain follicles. First establish the larger tissue relationship: capsule and sinuses, mucosal surface and crypts, or an arteriole-associated white-pulp island. Only then classify the follicle. This prevents a correct recognition of a germinal centre from becoming an incorrect organ identification.",
+          "practice": {
+            "prompt": "A round dark profile has no pale centre in one section. What is the strongest defensible statement?",
+            "feedback": "The sampled profile lacks an obvious germinal centre. A primary follicle is possible, but an off-centre cut and limited sampling must be considered before excluding a secondary follicle."
+          }
+        },
+        {
+          "title": "Use nucleus, cytoplasm and neighbourhood to recognise cells",
+          "body": "At higher magnification, a small lymphocyte has a dense rounded nucleus and little visible cytoplasm. A plasma cell instead combines an eccentric nucleus, coarse chromatin, basophilic cytoplasm and a pale perinuclear Golgi region. Its abundant secretory machinery fits antibody production. A plasmablast is typically larger, with more conspicuous nucleolar activity; one feature alone is insufficient. Look for plasma cells in the cellular medullary cords rather than assuming every cell in a pale sinus is one.\n\nA macrophage containing ingested nuclear debris can interrupt the densely cellular germinal-centre field. Describe the visible debris and surrounding architecture before applying a name. These are high-power tasks: the overview photograph below does not resolve all these features. Nuclear darkness alone cannot distinguish B from T lymphocytes.",
+          "practice": {
+            "prompt": "Why is an eccentric nucleus alone insufficient to identify a plasma cell?",
+            "feedback": "Combine nuclear position and chromatin with basophilic cytoplasm, the perinuclear Golgi region and the tissue setting; other cells and section planes can mimic a single feature."
+          }
+        },
+        {
+          "title": "Connect germinal-centre zones to a process, not a colour code",
+          "body": "Germinal-centre B cells proliferate and diversify their antigen receptors, then compete for selection. In the light-zone environment, a B cell captures antigen retained on follicular dendritic cells, internalises it and presents peptide–MHC II to follicular helper T cells. Help can support renewed proliferation in the dark zone. The original antigen recognised by the B-cell receptor and the processed peptide recognised by the T cell are different presentations of the same response.\n\nVictora and colleagues spatially marked cells using a photoactivatable reporter and followed them by multiphoton microscopy in mice. Movement and antigen-presentation perturbations supported selective return from light to dark zone. Thus, the zones are connected stages of a cycling population, not sealed boxes or a compulsory one-way conveyor. A fixed section cannot reveal a particular cell’s trajectory or receptor affinity.",
+          "practice": {
+            "prompt": "Which evidence would distinguish cell movement between zones from two populations merely occupying different zones?",
+            "feedback": "Follow marked cells over time, with appropriate controls for the marking and imaging method. A single immunostained section provides localisation rather than a trajectory."
+          }
+        },
+        {
+          "title": "How selection changes the next proliferative round",
+          "body": "Selection does more than allow a B cell to remain alive. In Gitlin and colleagues’ mouse experiments, selectively increasing antigen presentation to helper T cells changed subsequent cell-cycle behaviour. The selected germinal-centre B cells progressed faster through the cycle, including DNA synthesis, while preserving the relative order of replication-origin activation. More help could therefore change both time spent in a proliferative compartment and the pace of proliferation.\n\nThe experiment compared targeted antigen with an irrelevant-antigen control and used cell-cycle readouts; it did not infer division speed from how dark a germinal centre looked. Connect this result to affinity maturation as selective expansion of variants, rather than antigen intentionally designing a better receptor. Continue to the antibody-mutation lesson for the distinction between variable-region diversification and constant-region switching.",
+          "practice": {
+            "prompt": "Would more cells in a dark zone alone prove a faster cell cycle?",
+            "feedback": "No. Recruitment, residence time, survival and cycling can all affect abundance. A time-resolved cell-cycle measurement is needed to distinguish them."
+          }
+        },
+        {
+          "title": "Separate the scaffold, stromal cells and antigen-presenting cells",
+          "body": "Reticular fibres are extracellular matrix; reticular cells are living cells. A silver stain can highlight the supporting fibre network without proving the identity of every adjacent cell. Follicular dendritic cells are specialised stromal cells of the B-cell compartment. Their name describes a branched appearance and does not make them interchangeable with conventional dendritic cells that activate T cells through processed peptide presentation.\n\nIn a follicle, distinguish antigen retained for B-cell recognition from peptide–MHC presentation to T cells. B cells themselves process captured antigen and present peptide to follicular helper T cells. These relationships explain why several interacting populations occupy a germinal centre. They cannot all be labelled reliably from the size and darkness of nuclei in a low-power photograph.",
+          "practice": {
+            "prompt": "Does a black reticular network on a silver preparation identify every follicular dendritic cell?",
+            "feedback": "No. It demonstrates a matrix pattern. Cell-type localisation requires an appropriate validated cell-identification method interpreted with tissue context."
+          }
+        },
+        {
+          "title": "Follow a boundary before naming a pale space",
+          "body": "A lymph-node sinus, a blood-vessel lumen, an adipocyte profile and a processing separation can all look pale at low power. Ask where the space lies, whether its boundary is continuous, what it contains, and how it connects to nearby structures. The subcapsular position is useful for a sinus; a recognisable vascular wall and luminal blood support a vessel. An empty-looking circle is not enough to call either.\n\nMedullary cords are cellular tissue between sinuses. Do not turn every central pale region into a medullary sinus or every dark island into a follicle. Trace several neighbouring fields. When the available image cannot resolve the boundary, an explicit unresolved label is more accurate than a confident wrong one.",
+          "practice": {
+            "prompt": "What should you do when a low-power field cannot resolve whether a pale profile is a vessel or a sinus?",
+            "feedback": "Retain the differential and obtain a more informative view or preparation. Do not assign a vessel type from an empty appearance alone."
+          }
         },
         {
           "title": "Keep lymph drainage separate from lymphocyte entry from blood",
@@ -1768,8 +1816,48 @@
           "body": "In Farley and colleagues’ study, in situ hybridisation mapped developmental gene expression and immunostaining distinguished cell populations. FOXN1 expression supported the third-pouch thymic domain; the authors did not detect it in the fourth pouch. The study labels ages after fertilisation, which must not be silently relabelled as obstetric gestational age. A marker pattern supports a developmental interpretation within the sampled stages; it is not a direct lineage-tracing experiment in a living human. Keep human observations separate from the mouse experiments used for mechanistic comparison.\n\nTry it: State the species, age convention and measured signal before interpreting a developmental figure."
         },
         {
+          "title": "Build lymph-node development from interacting populations",
+          "body": "A lymph-node primordium, or anlage, forms through interactions between several populations. Haematopoietic lymphoid tissue inducer cells (LTi) meet local mesenchymal lymphoid tissue organiser cells (LTo), beside a developing endothelial compartment. LTi and LTo therefore name different partners, not successive names for one cell. This differs from the third-pouch epithelial contribution to thymus.\n\nIn the mouse developmental framework, CXCL13 is a recruiting chemokine and CXCR5 is its receptor on responding inducer cells. Cell-surface lymphotoxin α1β2 on LTi cells engages LTβR on stromal cells. The stromal response increases adhesion molecules and chemokines, helping retain and recruit further cells: a reinforcing interaction, rather than a capsule simply forming around a random lymphocyte aggregate. Distinguish a chemokine receptor from a lymphotoxin receptor; they transmit different parts of the programme.",
+          "practice": {
+            "prompt": "Why is the statement “all cells in a lymphoid organ share the same origin” inadequate?",
+            "feedback": "It collapses haematopoietic, stromal and endothelial populations into one label. Their origins and interactions must be considered separately."
+          }
+        },
+        {
+          "title": "Distinguish initiation from later stromal organisation",
+          "body": "Early recruitment and later maturation must be tested separately. In van de Pavert and colleagues’ mouse study, retinoic acid induced stromal CXCL13 before lymphotoxin-dependent organisation. This did not establish that retinoic acid alone supplies the entire organiser programme. Nearby neurons were a proposed retinoic-acid source, not cells shown to turn into lymph nodes.\n\nCompare ages and anatomical sites when interpreting a mutant. An early failure of clustering was followed by later rudimentary mesenteric structures in one receptor-deficient model. A delayed primordium, a persistent but immature structure, and an absent adult node are different endpoints.",
+          "practice": {
+            "prompt": "A mutant lacks an early cluster at one stage. Can you conclude that every adult node will be absent?",
+            "feedback": "No. Examine later stages and different node sites. The endpoint and sampling time are part of the claim."
+          }
+        },
+        {
+          "title": "Test the developmental sequence with a receptor perturbation",
+          "body": "Bénézech and colleagues compared embryonic mouse nodes using microscopy, flow cytometry and organ culture. Mesenchymal cells progressed from low or absent ICAM-1/VCAM-1 expression to an intermediate phenotype, then to a mature organiser phenotype with high adhesion-molecule expression and MAdCAM-1. The intermediate population still appeared without LTi cells or LTβR, whereas full maturation was impaired.\n\nStimulating LTβR in organ culture increased the mature phenotype without an accompanying rise in cell number. Together, these results supported a maturation step rather than simply expansion of an already mature population. The proposed sequence is evidence from the studied mouse preparations, not a directly observed human lineage tree. Developmental mechanisms become clearer when the prediction is explicit: removing a late signal may leave an early population present but unable to complete its programme.",
+          "practice": {
+            "prompt": "If intermediate stromal cells persist after receptor loss, what does that say about the receptor?",
+            "feedback": "In this setting it is required for a later maturation step, not for every event that produces the initial intermediate population."
+          }
+        },
+        {
+          "title": "Read human developmental observations beside mouse fate mapping",
+          "body": "Hoorweg and colleagues identified organiser-like stromal populations in human fetal material using marker combinations, localisation and transcript measurements. These observations supported a human stromal niche, but did not directly follow a human fetal cell into adulthood. The precursor–descendant experiment instead used a mouse Il7-Cre reporter and supported a relationship between a labelled organiser subset and adult marginal reticular cells.\n\nThe word subset matters. Reporter coverage and regulatory behaviour limit what an unlabelled population can tell you. A negative label is not automatically proof that a lineage relationship is impossible. Always state the organism, the population actually labelled and the type of measurement before converting a research figure into an embryology claim.",
+          "practice": {
+            "prompt": "Which finding most directly tests a precursor–descendant relationship: human marker colocalisation or a controlled genetic fate map?",
+            "feedback": "The fate map addresses ancestry in its experimental organism. Colocalisation addresses spatial association; neither result alone establishes an identical human lineage history."
+          }
+        },
+        {
           "title": "Choose a stain to answer a structural question",
           "body": "H&E supports an initial architectural survey. A connective-tissue stain can make capsule and trabeculae easier to distinguish from densely cellular parenchyma; the cited lymph-node comparison uses Azan. A silver preparation can reveal a reticular-fibre network that is poorly resolved in H&E. The stain is not an organ label: combine the highlighted component with its anatomical position. Antibody-based cell mapping is another method, with validation and control requirements. Do not infer B/T identity for every small dark nucleus from H&E alone, or interpret one marker as a complete activation or lineage history.\n\nTry it: State the extra structural question you would ask before selecting a special stain."
+        },
+        {
+          "title": "Give a practical answer that can be checked",
+          "body": "Use a short evidence chain: organ candidate, two independent landmarks, a rejected alternative and a sampling limit. For a lymph-node candidate, combine a peripheral cortical arrangement with a capsular or sinus relationship. Explain why a mucosal crypt, repeated thymic lobule or arteriole-centred splenic pattern would change the interpretation. Do not invent a missing landmark to finish the answer.\n\nSeparate what the image shows from what the source tells you. In the licensed image selected for this exercise, the creator identifies a normal lymph node. The photograph supports an architectural task, but lacks a stated stain, exact magnification and scale bar. It cannot support numerical cell measurements, a complete cell inventory or a patient diagnosis.",
+          "practice": {
+            "prompt": "Can enlarging a photograph supply its missing physical scale or prove its stain?",
+            "feedback": "No. Display enlargement changes apparent size. A calibrated scale and documented preparation are separate information."
+          }
         }
       ],
       "question": {
@@ -1797,16 +1885,20 @@
       "related": [
         "innate-adaptive",
         "antigen-presentation",
-        "blood-marrow"
+        "blood-marrow",
+        "antibody-mutation-class-switch"
       ],
-      "updatedAt": "2026-11-05",
-      "minutes": 35,
+      "updatedAt": "2026-11-06",
+      "minutes": 55,
       "objectives": [
         "Distinguish node, spleen, thymus and palatine tonsil using two structural landmarks and an explicit alternative.",
         "Trace afferent lymph and HEV blood entry without confusing a tissue compartment with a vessel.",
         "Separate cellular cords, sinuses, follicles, white pulp and medullary tissue.",
         "Explain human thymic epithelial origin separately from incoming haematopoietic cells and splenic stromal origin.",
-        "Interpret a research observation with its species, method and developmental-stage limits."
+        "Interpret a research observation with its species, method and developmental-stage limits.",
+        "Distinguish primary and secondary follicles, plasma-cell patterns and stromal versus immune-cell roles.",
+        "Explain inducer–organiser signalling and distinguish initiation, maturation and fate mapping.",
+        "Use a real section to construct an identification with two landmarks and a defensible limit."
       ],
       "prerequisites": [
         "microscopy"
@@ -1816,7 +1908,10 @@
         "Trace afferent lymph and HEV blood entry without confusing a tissue compartment with a vessel.",
         "Separate cellular cords, sinuses, follicles, white pulp and medullary tissue.",
         "Explain human thymic epithelial origin separately from incoming haematopoietic cells and splenic stromal origin.",
-        "Interpret a research observation with its species, method and developmental-stage limits."
+        "Interpret a research observation with its species, method and developmental-stage limits.",
+        "Recognise a follicle within its organ context, rather than naming the organ from a pale centre.",
+        "Explain CXCL13–CXCR5 recruitment separately from lymphotoxin–LTβR stromal maturation.",
+        "Distinguish antigen capture, peptide presentation, selection and renewed proliferation."
       ],
       "workedExample": {
         "title": "Two pale spaces, different meanings",
