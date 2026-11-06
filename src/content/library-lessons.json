@@ -12499,59 +12499,104 @@
     {
       "id": "thyroid-parathyroid-pattern-reasoning",
       "subject": "histology",
-      "title": "Thyroid and parathyroid: compare tissue patterns",
-      "summary": "Trace epithelial boundaries, colloid and cellular endocrine organization, then keep compartment and hormone-readout questions separate.",
+      "title": "Thyroid and parathyroid: follicles, cell mechanisms and development",
+      "summary": "Identify follicular and parathyroid architecture, follow thyroid synthesis across cellular compartments, and explain descent, pouch derivatives and the evidence behind C-cell origins.",
       "tags": [
         "Histology",
         "Endocrine architecture",
         "Structure and function",
         "Evidence scope"
       ],
-      "source": "original-endocrine-architecture-models",
-      "section": "EMII endocrine architecture: original tissue and compartment explanations",
-      "updatedAt": "2026-11-05",
-      "minutes": 18,
+      "source": "original-endocrine-development-depth",
+      "section": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+      "updatedAt": "2026-11-06",
+      "minutes": 35,
       "objectives": [
-        "Distinguish a follicular lumen from nearby vascular and interstitial compartments.",
-        "Connect thyroglobulin storage with a bounded uptake/processing sequence.",
-        "Compare chief-cell/PTH context without a universal stain or age shortcut.",
-        "Trace a declared compartment path and state its limits."
+        "Distinguish thyroid follicles, capillaries, parathyroid cords and preparation artefacts.",
+        "Trace iodide, thyroglobulin and released thyroid hormone through their different compartments.",
+        "Relate chief and oxyphil morphology to calcium regulation without treating colour as a secretion assay.",
+        "Explain thyroid descent, parathyroid migration and the distinction between follicular and C-cell developmental routes.",
+        "Separate initial specification, later differentiation and lineage evidence in developmental studies."
       ],
       "prerequisites": [
         "microscopy"
       ],
       "steps": [
         {
-          "title": "Begin with the arrangement of cells and spaces",
-          "body": "A useful first comparison is between repeated epithelial-lined follicles containing colloid and a more cellular endocrine arrangement associated with vessels. In the thyroid, follicular epithelial cells surround the stored luminal material. In the parathyroid, chief cells are a principal PTH-producing population. These are starting architectural relationships, not a rule that one isolated circular space identifies an organ."
+          "title": "Start with repeated architecture across the section",
+          "body": "Thyroid tissue is organized into many epithelial-lined follicles containing colloid. Their profiles vary in size and shape because both the follicles and the section plane vary. Find several intact examples before interpreting a single unusual space. The lining should form a boundary between a lumen and the surrounding connective and vascular tissue.\n\nParathyroid tissue is usually more solidly cellular, with endocrine cells arranged in cords or groups near capillaries and variable adipose tissue. Both organs can occur close together in a specimen. Map the change in architecture at their boundary instead of assuming that everything within one slide belongs to the same gland."
         },
         {
-          "title": "Give the follicular epithelium two different faces",
-          "body": "In a simplified thyroid follicle, the apical cell surface faces the colloid-filled lumen. The opposite side faces the basement-membrane and interstitial setting associated with capillaries. A follicular lumen and a vascular lumen therefore belong to different compartments. Calling both a pink space discards the epithelial boundary that makes the arrangement intelligible."
+          "title": "Read the follicular wall as a polarized epithelium",
+          "body": "The apical surface of a follicular cell faces colloid; the basal surface faces basement membrane and the interstitial environment near capillaries. Lateral junctions maintain the epithelial barrier between those compartments. This orientation allows the same cell to secrete a protein toward the lumen and release processed hormones toward blood.\n\nAt high power, locate the nucleus, approximate cell height and continuity of the lining. A tangential cut may make the wall look multilayered, and a peripheral cut may show little lumen. Trace the lining around the follicle and compare nearby profiles before diagnosing a change in epithelial organization."
         },
         {
-          "title": "Connect the extracellular store to a processing sequence",
-          "body": "Thyroglobulin is a protein secreted by follicular cells into the follicular lumen. Hormone-containing material can be stored there associated with that protein. In the conventional release pathway, uptake and intracellular processing help liberate thyroid hormones for release toward the circulation. Colloid is not simply a pool of free T4, and this sequence does not imply that an unchanged thyroglobulin molecule follows every later step into blood."
+          "title": "Keep colloid, blood and processing gaps separate",
+          "body": "Colloid is extracellular material rich in thyroglobulin, not a vessel full of free thyroid hormone. A capillary lies outside the follicular epithelium and has its own endothelial boundary; erythrocytes can help identify its lumen. Retraction of colloid during processing can create a clear rim that resembles a biological interface.\n\nScalloped colloid edges can occur with resorption, but a rim on one section cannot by itself establish endocrine activity. Preservation, neighbouring follicles and the rest of the tissue pattern must be considered. Describe what is actually visible before attaching a functional explanation.",
+          "practice": {
+            "prompt": "A clear rim surrounds pink material. What observation should come before calling it a capillary?",
+            "feedback": "Find the enclosing boundary. A rim inside a follicular epithelial lining may be retraction or resorption-related space; a vessel has endothelium outside that lining."
+          }
         },
         {
-          "title": "Keep the parathyroid comparison at the correct level",
-          "body": "The parathyroid comparison asks how endocrine cells and their vascular surroundings are organized, rather than searching for a thyroid-style colloid store everywhere. Chief cells synthesize PTH and can store preformed material in secretory granules. Oxyphil and other tissue elements belong to the broader preparation, but cell size, adipose amount or staining intensity is not used here as a universal age or output rule."
+          "title": "Follow two incoming materials with different routes",
+          "body": "Iodide arrives from blood and is transported into the follicular cell at its basolateral surface by the sodium–iodide symporter. It then reaches the apical side for thyroid-hormone synthesis. Thyroglobulin follows a different starting route: it is made as a protein through rough ER and Golgi and secreted apically into the lumen.\n\nThese pathways converge near the apical–colloid interface. A diagram should therefore distinguish an ion-transport arrow from a protein-secretory arrow. The follicle is an organized reaction compartment; simply drawing blood flowing through colloid removes the epithelial transport steps that make the process intelligible."
         },
         {
-          "title": "Name a regulatory partner without turning it into a stain result",
-          "body": "TSH is an important input to thyroid follicular-cell function. Parathyroid chief cells monitor extracellular calcium through the calcium-sensing receptor, and PTH release changes with that setting. These relationships help explain why the two tissues are not interchangeable. The existing endocrine-feedback lesson supplies the thyroid-axis introduction; a tissue field does not itself measure TSH, calcium or circulating hormone concentration."
+          "title": "Separate iodination, coupling and liberation of hormone",
+          "body": "Thyroid peroxidase-dependent reactions, using locally supplied hydrogen peroxide, support iodination of thyroglobulin tyrosyl residues and coupling that creates hormone residues within the protein. The colloid thus stores a precursor-associated hormone reserve. Formation of a hormone residue is not the same event as release of free hormone into circulation.\n\nApical uptake returns selected luminal material to the cell. Endosomal and lysosomal processing can liberate T4 and T3, followed by export toward the circulation. This is a processing pathway, not the unchanged passage of one thyroglobulin molecule through every box in the existing L→F→I→B classroom model."
         },
         {
-          "title": "Treat a reported exception as a boundary on a shortcut",
-          "body": "A historical histochemical and ultrastructural study described follicular regions within normal human parathyroid glands in its examined series. It is useful evidence against making one follicle-like feature a unique identity test. It does not provide a general prevalence estimate or make every unusual space equivalent to a thyroid follicle. Keep the complete architecture, source context and additional observations with the interpretation."
+          "title": "Distinguish iodine salvage from hormone activation",
+          "body": "Proteolysis of thyroglobulin also releases iodinated tyrosines that are not T3 or T4. Iodotyrosine deiodinase participates in recovering iodine from such residues. That recycling task differs from iodothyronine deiodination, through which other enzymes alter thyroid hormones in tissues.\n\nKeep the substrate in the explanation: an iodinated amino-acid residue and a complete iodothyronine are not interchangeable. IYD-mediated salvage therefore should not be substituted for the DIO1/DIO2 pathways that can convert T4 to T3. Naming the substrate, reaction and product is more reliable than grouping all iodine-removing enzymes into one function."
         },
         {
-          "title": "Read an original compartment diagram as a declared model",
-          "body": "For a classroom routing exercise, label the follicular lumen L, the follicular cell F, external interstitial space I and capillary blood B. Declare directed steps L→F, F→L, F→I, I→B and B→I. The path L→F→I→B passes through three declared steps; it has no direct L→B shortcut. The labels organize compartments and processing events, not one unchanged molecule, measured permeability or a hormone-release rate."
+          "title": "Connect cell appearance with synthesis without reading a blood test",
+          "body": "Follicular cells contain machinery for both protein secretion and uptake of stored material. Taller epithelium and changes in colloid can be compatible with increased stimulation, while lower cells may accompany a different functional state. The relation is a structural pattern, not a calibrated readout of serum TSH or T4.\n\nFor a practical answer, connect rough ER and Golgi with thyroglobulin production, apical uptake with retrieval, and lysosomal processing with liberation of hormone. Then state whether the actual preparation resolves those organelles or whether the mechanism comes from knowledge beyond H&E. This avoids claiming to see a molecular process that the stain cannot show."
         },
         {
-          "title": "Turn a field description into a reasoned next observation",
-          "body": "Describe repeated boundaries, the cells forming them, material within a lumen and the surrounding vascular context. Then separate that architectural interpretation from a claim about a particular cell product, antigen signal or blood measurement. The worked model supplies no micrograph or patient specimen, so it can check compartment reasoning but cannot establish real-slide recognition or endocrine function in a person."
+          "title": "C cells belong to a separate secretory system",
+          "body": "Parafollicular C cells produce calcitonin and are distinct from follicular cells. They occur in relation to follicles and interfollicular tissue but do not form the continuous colloid-facing lining responsible for thyroglobulin handling. Routine human H&E can make them difficult to distinguish reliably.\n\nA pale cell alone is insufficient: other cells and processing effects can produce pale profiles. Validated calcitonin immunostaining can address a cell-product question with suitable controls. C cells use intracellular secretory granules, whereas follicular cells have the unusual extracellular thyroglobulin-rich storage compartment. The two systems coexist without sharing the same product or release pathway."
+        },
+        {
+          "title": "Identify chief cells and oxyphil groups in parathyroid",
+          "body": "Chief cells are relatively small endocrine cells that produce PTH. They form cellular groups or cords closely related to vessels. Oxyphil cells are larger and more strongly eosinophilic, reflecting their abundant mitochondria. Mixed fields and intermediate appearances can occur; a section is not necessarily divided into two perfectly separate populations.\n\nAdipocytes provide an additional architectural clue in many adult glands, but their abundance varies. Do not use fat percentage as a universal age rule or output assay. Base identification on the combination of cellular organization, chief-cell and oxyphil appearances, vessels and the surrounding specimen context."
+        },
+        {
+          "title": "Connect calcium sensing to secretion and target organs",
+          "body": "The calcium-sensing receptor allows chief cells to respond to extracellular calcium. In the usual physiological relationship, increased calcium suppresses PTH release, whereas a fall promotes it. This is a different regulatory arrangement from a pituitary trophic hormone stimulating thyroid follicular cells.\n\nPTH supports calcium homeostasis through renal effects and effects on bone-cell signalling, and it promotes renal production of active vitamin D. In bone, osteoblast-lineage cells mediate signalling that regulates osteoclast formation and activity; describing PTH as simply acting directly on osteoclasts loses that cellular relationship. A gland section does not show the patient’s current calcium balance."
+        },
+        {
+          "title": "Develop the thyroid as a moving endodermal primordium",
+          "body": "Follicular thyroid tissue begins from a median endodermal primordium in the floor of the developing pharynx near the future foramen cecum. As the neck and adjacent structures develop, the primordium descends toward its pretracheal position and forms the lobes and isthmus. A temporary thyroglossal connection links the primordium with its earlier location.\n\nNormally that tract disappears. Persistence can explain a remnant or cyst along the developmental route; incomplete descent can explain ectopic thyroid tissue. Position, epithelial differentiation and hormone-producing capacity are separate properties: a gland can be misplaced yet contain differentiated follicles. Avoid treating the final location as evidence that every developmental stage was normal."
+        },
+        {
+          "title": "Explain why lower parathyroids start from the third pouch",
+          "body": "The inferior parathyroid primordia arise from the dorsal components of the third pharyngeal pouches and travel with the associated thymic primordia before separating. The superior parathyroids are associated with the fourth pouches and usually undergo less descent. Thus adult superior/inferior positions do not simply preserve the numerical order of the original pouches.\n\nDifferences in migration and separation help explain variable positions, including tissue near or within thymic structures. This is a developmental explanation for anatomical variation, not a claim that all people have identical gland locations or numbers. In a practical examination, draw the starting relationships and the direction of travel before naming the final positions.",
+          "practice": {
+            "prompt": "Why can a third-pouch derivative finish below a fourth-pouch derivative?",
+            "feedback": "The third-pouch parathyroid travels with the descending thymic primordium before separation. Adult position reflects movement, not just the starting pouch number."
+          }
+        },
+        {
+          "title": "Distinguish the C-cell route from an old germ-layer shortcut",
+          "body": "C cells are associated developmentally with the ultimobranchial component of the pharyngeal apparatus. Older teaching often assigned their origin directly to neural crest. Johansson and colleagues used complementary mouse lineage tracing to support an endodermal origin, while their human material addressed related expression and tissue questions.\n\nThat is direct lineage evidence in mice, not direct experimental fate mapping of a human embryo. A lineage label must be read together with the identity of the labelled cell and the specificity of the tracing system. The revised account should retain this species and method distinction rather than replacing one unsupported universal slogan with another."
+        },
+        {
+          "title": "Research bridge: a precursor can form but fail to mature",
+          "body": "In Gcm2-deficient mouse embryos, Liu and colleagues found early parathyroid-domain marker expression followed by failure to maintain differentiation and subsequent precursor loss. This argues against describing Gcm2 only as a switch that creates the domain from nothing.\n\nThe distinction is between initial domain formation, completion of the parathyroid program and survival. Sampling only the later absent gland would miss the earlier precursor state. This is why developmental studies compare stages and use several readouts rather than inferring the entire history from one endpoint.",
+          "practice": {
+            "prompt": "An adult gland is absent after a mutation. What evidence would distinguish failed induction from later loss?",
+            "feedback": "Examine earlier stages for a specified precursor domain and then follow differentiation and cell survival. The final absence alone cannot distinguish those histories."
+          }
+        },
+        {
+          "title": "Use exceptions to improve a practical identification",
+          "body": "Rare follicular arrangements have been described in human parathyroid tissue in a historical histochemical and ultrastructural study. This prevents the absolute shortcut that one follicle-like structure must identify thyroid. It does not make the characteristic repeated thyroid pattern useless.\n\nUse converging evidence: the distribution of follicles across the tissue, the nature of the lining, colloid, the surrounding cell population and appropriate additional staining when needed. An exception should refine an identification rule, not erase the organ’s usual architecture. The reported series is not a general prevalence estimate for all glands."
+        },
+        {
+          "title": "Build a preparation-aware identification and mechanism answer",
+          "body": "At low power, compare repeated follicles with a solid endocrine-cell pattern. At high power, describe the lining, luminal contents, chief-cell or oxyphil features, and vascular relationships. Name the preparation: H&E gives architecture, while targeted immunostaining addresses selected products and electron microscopy resolves organelles.\n\nThen connect the identified structure to a route. For thyroid, follow blood-derived iodide and cell-derived thyroglobulin into a polarized synthesis and retrieval system. For parathyroid, connect chief-cell calcium sensing with PTH release. End with the relevant developmental journey: thyroid descent or pouch-derived parathyroid migration."
         }
       ],
       "question": {
@@ -12595,6 +12640,14 @@
         {
           "prompt": "What does a reported parathyroid follicular region change about a one-feature rule?",
           "answer": "It shows that the feature is not a unique organ identifier; the studied series is not a general prevalence estimate."
+        },
+        {
+          "prompt": "Explain thyroid synthesis using apical and basal surfaces.",
+          "answer": "Blood-derived iodide enters basolaterally; thyroglobulin is secreted apically. Luminal hormone-containing protein is retrieved and processed before liberated hormones leave toward blood."
+        },
+        {
+          "prompt": "Explain why inferior parathyroids derive from the third pouch.",
+          "answer": "Their primordia descend in association with the thymus before separating; final location reflects migration rather than numerical pouch order."
         }
       ],
       "recall": {
@@ -12606,7 +12659,9 @@
         "Separate luminal, cellular, interstitial and blood compartments.",
         "Keep protein-associated storage distinct from later hormone release.",
         "Reuse thyroid-axis teaching without duplicating it.",
-        "Do not infer a blood hormone concentration or recognition performance from a fictional field."
+        "Do not infer a blood hormone concentration or recognition performance from a fictional field.",
+        "Trace iodide, thyroglobulin and released hormones through different compartments.",
+        "Explain thyroid descent and third/fourth-pouch parathyroid migration."
       ],
       "related": [
         "epithelia",
@@ -12617,59 +12672,100 @@
     {
       "id": "adrenal-layers-signals-reasoning",
       "subject": "histology",
-      "title": "Adrenal gland: layers, products and signals",
-      "summary": "Orient cortex and medulla, separate regional product/control questions, and use a declared geometry exercise to explain why section width is not gland volume.",
+      "title": "Adrenal: zones, steroid machinery and developmental lineages",
+      "summary": "Read an adrenal section from capsule to medulla, explain steroid and catecholamine machinery, and distinguish fetal cortical development from neural-crest-derived medullary routes.",
       "tags": [
         "Histology",
         "Endocrine architecture",
         "Structure and function",
         "Evidence scope"
       ],
-      "source": "original-endocrine-architecture-models",
-      "section": "EMII endocrine architecture: original tissue and compartment explanations",
-      "updatedAt": "2026-11-05",
-      "minutes": 18,
+      "source": "original-endocrine-development-depth",
+      "section": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+      "updatedAt": "2026-11-06",
+      "minutes": 35,
       "objectives": [
-        "Orient a conventional capsule-to-medulla sequence.",
-        "Keep location, product association and control setting separate.",
-        "Calculate an illustrative oblique path without turning it into tissue thickness or volume.",
-        "Distinguish a complete schematic from a cropped field."
+        "Identify cortical zones and medulla using position, cell arrangement and preparation.",
+        "Connect lipid droplets, smooth ER, mitochondria and secretory granules to different hormone pathways.",
+        "Trace cortical and medullary developmental origins and distinguish fetal from adult organization.",
+        "Explain what lineage tracing establishes about nerve-associated precursors.",
+        "Use a complete section and appropriate functional readouts rather than inferring output from one colour or width."
       ],
       "prerequisites": [
         "microscopy"
       ],
       "steps": [
         {
-          "title": "Separate the boundary from the hormone-producing regions",
-          "body": "A conventional outside-to-inside adrenal schematic begins with a fibrous capsule, then cortex and a central medullary region. The capsule is a boundary, not a fourth steroid-producing cortical zone. Begin by asking whether a preparation actually shows an outer boundary and an inward span rather than treating every isolated patch as a complete gland."
+          "title": "Orient capsule, cortex, medulla and the section plane",
+          "body": "Find the fibrous capsule and follow an inward span through the gland. The cortex lies beneath it; medulla occupies a more central region when the plane includes it. A peripheral section or small tissue fragment may show cortex without any medulla. Failure to include the centre is not the same as absence of medullary tissue from the gland.\n\nAt low power, distinguish the layered cortex from a random collection of pale cells. Use continuity across the section and the arrangement of vessels. The capsule is supporting connective tissue, not a fourth steroid-producing zone. Only after orienting the section should you classify a high-power cellular field."
         },
         {
-          "title": "Locate the three cortical zones in a declared sequence",
-          "body": "The outer cortex is conventionally called zona glomerulosa, followed by zona fasciculata and then zona reticularis toward the medulla. Introductory descriptions contrast outer cell clusters, more radial fasciculata cords and a reticular inner arrangement. These spatial relationships organize the schematic; a real section can omit a region or alter its apparent orientation."
+          "title": "Zona glomerulosa: clusters beneath the capsule",
+          "body": "The outer cortical zone typically contains relatively compact cells arranged in rounded clusters or arches. Compare their location and arrangement with the longer radial cords deeper in the cortex. In human sections the glomerulosa need not appear as one equally thick, uninterrupted band around the entire gland.\n\nThe conventional functional association is aldosterone production. That association is supported by regional steroidogenic machinery and regulation, not by a distinctive colour that directly measures aldosterone. A cluster’s position is useful evidence, but an isolated subcapsular field still needs context before it is assigned a specific biochemical state."
         },
         {
-          "title": "Keep a product association attached to its region",
-          "body": "The introductory associations are mineralocorticoids, including aldosterone, with glomerulosa; glucocorticoids, including cortisol, with fasciculata; and adrenal androgens with reticularis. The medullary chromaffin-cell compartment is associated with catecholamines. Naming those associations does not make every cell identical, quantify output or convert tissue hue into a blood concentration."
+          "title": "Zona fasciculata: radial cords and extracted lipid",
+          "body": "Large fasciculata cells often form long cords separated by capillaries. Their cytoplasm can look pale or vacuolated after routine paraffin processing because lipid is removed during preparation. The resulting spongy appearance helps explain the term spongiocyte. These clear spaces are not empty hormone-filled secretory granules.\n\nRelate the cords to the gland’s outer-to-inner axis. An oblique cut can shorten or distort their apparent organization. Compare several regions before deciding whether the arrangement is radial. The cells’ lipid stores provide steroid precursor material; stored cholesterol ester and the final secreted steroid are chemically and functionally different."
         },
         {
-          "title": "Ask a separate question about regulation",
-          "body": "Angiotensin II and extracellular potassium are important regulators of aldosterone secretion, while ACTH is an important regulator of cortisol production. ACTH can also influence aldosterone, so the comparison is not a rule that it can act on only one zone. Sympathetic neural input to medullary cells is a different relationship again. A useful worksheet gives location, associated product and input their own fields."
+          "title": "Zona reticularis: a network rather than parallel columns",
+          "body": "The inner cortical zone has a more branching, interconnected arrangement of cells. Cells often appear more compact and eosinophilic than fasciculata cells, and lipofuscin may be present. The transition is not always a perfectly sharp line, so arrangement and position should be considered together.\n\nThe adult human reticularis is associated with adrenal androgen production, including DHEA and its sulfated form. Its development and function vary with age, and common laboratory rodents do not reproduce all features of the human androgen-producing zone. A mouse adrenal drawing is therefore not an exact template for human zonation."
         },
         {
-          "title": "Use a flat-layer exercise to expose an orientation problem",
-          "body": "Imagine two parallel boundaries four arbitrary units apart, measured along their normal. A straight path at angle θ to that normal travels length 4/cos(θ) between them. At zero degrees the path is four units; at sixty degrees it is eight. This is invented planar geometry, not measured adrenal tissue. A longer oblique path does not mean that the layer has doubled its normal thickness."
+          "title": "Recognize medullary cords and vascular relationships",
+          "body": "Chromaffin cells form groups or cords associated with a vascular network in the medulla. A central medullary vein, when included, can help orientation; conspicuous longitudinal smooth-muscle bundles may occur in its wall. Scattered autonomic ganglion cells can also be present, but they are not the dominant secretory population.\n\nDo not confuse adrenal cortex with renal cortex merely because both contain many profiles. Renal tubules have epithelial lumina and may be accompanied by glomeruli; adrenal cortical cords do not form a repeated nephron-tubule pattern. For a cropped field, describe the architecture you can establish and request a wider context before naming the organ.",
+          "practice": {
+            "prompt": "A pale field lacks medulla. Does that exclude adrenal cortex?",
+            "feedback": "No. A peripheral plane may omit the centre. Look for capsule, cortical cords and regional transitions, and distinguish them from true renal tubules."
+          }
         },
         {
-          "title": "Do not turn a cropped section into a whole-gland volume",
-          "body": "The actual gland is three-dimensional and its regions are not the two infinite parallel planes of the exercise. A cropped field without capsule or medulla does not itself demonstrate the complete outside-to-inside arrangement. Nor does one apparent width supply a whole-gland volume fraction. Those claims require an appropriate sampling and measurement design, not a color key."
+          "title": "Connect steroid-producing cells to organelles",
+          "body": "Steroidogenic cells require cholesterol handling, mitochondrial enzymes and abundant smooth endoplasmic reticulum. Lipid droplets store precursor reserves, while reactions are distributed between mitochondria and ER. This differs from a peptide-secretory cell that packages its hormone into regulated secretory granules.\n\nSteroids are generally synthesized in response to stimulation and released without a large stockpile of final hormone in granules. H&E can suggest a lipid-rich cell but cannot resolve mitochondrial cristae or identify an enzyme. Electron microscopy, biochemical assays and validated molecular localization address those more specific questions."
         },
         {
-          "title": "Connect the medulla without duplicating the autonomic lesson",
-          "body": "The existing autonomic-signalling lesson supplies the receptor-and-wiring introduction. Here the relevant architectural distinction is between a central chromaffin-cell compartment and the surrounding steroid-producing cortex. Keep the two compartments visible when relating the section to neural input or cortical regulation. This is not a stimulation protocol or an assessment of a person’s adrenal response."
+          "title": "Follow ACTH from receptor to cholesterol access",
+          "body": "ACTH acts through the melanocortin-2 receptor and its accessory machinery, engaging signalling that includes cAMP and protein kinase A. A rapid component of the response supports availability of cholesterol for mitochondrial steroid synthesis; longer responses change expression of steroidogenic machinery.\n\nStAR participates in cholesterol delivery to the inner mitochondrial membrane, where CYP11A1 initiates conversion toward pregnenolone. Distinguish the receptor signal, substrate movement and enzymatic conversion. A cell may contain cholesterol without being able to deliver it to the correct reaction site. Conversely, normal receptor activation cannot rescue every downstream enzymatic defect."
         },
         {
-          "title": "Build an answer in three linked sentences",
-          "body": "First state the observed boundary or position. Next name the introductory product association appropriate to the stated region. Finally say which control relationship or measurement would address the particular functional question. This preserves useful structure–function reasoning without claiming that one fictional sketch is a real specimen, a secretion assay or a diagnosis."
+          "title": "Use enzyme distribution to explain different cortical products",
+          "body": "The zones share an overall steroidogenic plan but differ in enzyme expression and regulation. The conventional glomerulosa pathway supports mineralocorticoid synthesis; fasciculata supports cortisol; reticularis supports androgen production. This is a regional teaching framework, not a claim that every cell has an identical or immutable expression profile.\n\nFor cortisol synthesis, distinguish the 21-hydroxylation step that produces 11-deoxycortisol from the mitochondrial CYP11B1-mediated 11-beta-hydroxylation that forms cortisol. Mixing these positions makes the pathway wrong even if all the familiar enzyme names appear. Keep precursor, reaction and product in order when reconstructing a pathway."
+        },
+        {
+          "title": "Give control inputs their own column",
+          "body": "Angiotensin II and extracellular potassium are major inputs to aldosterone regulation. ACTH is important for cortisol synthesis and also influences other cortical functions; its actions should not be described as exclusive to one microscopic band. The medulla receives preganglionic sympathetic input, a different control relationship.\n\nSeparate location, machinery, product and input in your answer. They are linked, but none can replace all the others. A region can be structurally recognizable while its current secretion depends on the time-varying signals reaching it. That is why histology and hormone measurement contribute different information."
+        },
+        {
+          "title": "Chromaffin cells use granules and neural stimulation",
+          "body": "Medullary chromaffin cells synthesize catecholamines and package them in secretory granules. Preganglionic sympathetic axons provide cholinergic input, allowing neural activity to regulate secretion into blood. This resembles a sympathetic effector arrangement but does not require each chromaffin cell to send a long postganglionic axon to a distant organ.\n\nThe name chromaffin reflects the reaction of catecholamine-containing material with suitable chromium-containing preparations. Routine H&E is not that specific histochemical reaction. Distinguish the historical stain name, the cell’s neural relationship and its actual molecular product rather than treating them as one observation."
+        },
+        {
+          "title": "Connect cortical blood flow with the medullary environment",
+          "body": "Blood arriving through the capsular vascular network supplies the cortex and can pass through cortical sinusoids toward the medulla. Medullary arterial channels also supply the inner compartment. The gland therefore has more than a single uniform sequence of identical vessels.\n\nCortical glucocorticoids influence the medullary environment, including regulation of PNMT, the enzyme supporting conversion of norepinephrine to epinephrine. This provides a structure–function connection between adjacent compartments. It does not mean that all medullary cells make the same proportions of catecholamines or that every vascular profile proves a particular blood-flow direction."
+        },
+        {
+          "title": "Build the cortex from a mesodermal developmental field",
+          "body": "The adrenal cortex arises from mesodermal tissue associated with the urogenital region. Steroidogenic differentiation programs include NR5A1/SF1, but expression of one factor is not the whole process of making an organized gland. Cells must expand, establish regional relationships and integrate with vessels and the arriving medullary population.\n\nThe cortical and medullary components have different origins and become assembled into one organ. Do not extend the cortical mesodermal origin to every cell in the mature gland. Likewise, detecting a marker shared with another steroidogenic tissue does not by itself establish the precise developmental route of an individual adrenal cell."
+        },
+        {
+          "title": "A fetal adrenal is not a miniature adult adrenal",
+          "body": "The fetal human cortex contains a large fetal zone and an outer definitive zone, with a transitional region developing between them. Fetal-zone steroid production supplies important precursors for placental estrogen synthesis. After birth the fetal compartment undergoes extensive remodelling and involution while the later cortical organization develops.\n\nAdult zona reticularis maturation is a later developmental story, not simply the persistence of the fetal zone under a new name. Age and species must therefore be known when comparing adrenal sections. A large inner cortical region in fetal tissue should not automatically be labelled adult reticularis by position alone.",
+          "practice": {
+            "prompt": "Why is an adult three-zone key insufficient for a fetal adrenal slide?",
+            "feedback": "Fetal and definitive compartments have their own developmental organization and steroid functions; postnatal remodelling and later zonation change that arrangement."
+          }
+        },
+        {
+          "title": "Follow neural-crest-derived precursors into the medulla",
+          "body": "The adrenal medulla belongs to the neural-crest-derived lineage. A more detailed route includes nerve-associated Schwann-cell precursors that can contribute to chromaffin cells. These precursors are themselves derived from neural crest, so the additional intermediate does not change the germ-layer origin.\n\nIn the mouse study by Furlan and colleagues, timed genetic tracing and complementary perturbations supported a substantial contribution from such nerve-associated precursors. The route refines the simple diagram of crest cells migrating directly into a finished medulla. It also shows why a final cell identity should be distinguished from the intermediate states through which its lineage passed."
+        },
+        {
+          "title": "Read a lineage experiment without turning it into a movie",
+          "body": "A timed lineage label records descendants of cells reached by a particular tracing system. Its interpretation depends on when the label was induced, which cells expressed the driver and how efficiently labelling occurred. A marker shared by two populations cannot distinguish those populations without additional evidence.\n\nSingle-cell expression trajectories can suggest intermediate states, but their computational ordering is not direct observation of one cell changing fate. Combining tracing, cellular identity and perturbation is more informative than relying on a trajectory alone. Mouse adrenal lineage experiments should be identified as mouse evidence rather than presented as direct observation of human embryogenesis."
+        },
+        {
+          "title": "Choose preparation and sampling to match the question",
+          "body": "Routine paraffin H&E is useful for regional architecture but removes much lipid. Lipid-preserving preparations and appropriate lipid stains address a different question. Immunostaining can localize selected steroidogenic enzymes or catecholamine-associated markers, provided controls and tissue context support the interpretation.\n\nThe existing four-unit flat-layer exercise demonstrates why an oblique path can look longer without an increase in true layer thickness. Real glands are curved and heterogeneous; estimating a whole-gland volume requires a defined sampling method. Combine a complete orientation, a preparation-aware cellular description and a correctly scoped developmental explanation before drawing a functional conclusion."
         }
       ],
       "question": {
@@ -12713,6 +12809,14 @@
         {
           "prompt": "Why does an ACTH/cortisol association not imply that ACTH never affects aldosterone?",
           "answer": "An important regulator is not an exclusive regulator; the model retains additional influences rather than erasing them."
+        },
+        {
+          "prompt": "Compare cortical and medullary secretory machinery.",
+          "answer": "Cortical steroids depend on cholesterol handling, mitochondria and smooth ER; chromaffin cells use catecholamine-containing granules and preganglionic neural input."
+        },
+        {
+          "prompt": "Why does a nerve-associated intermediate not change the medulla’s germ-layer origin?",
+          "answer": "The relevant Schwann-cell precursor is itself neural-crest-derived, so it refines the lineage route without changing that ancestry."
         }
       ],
       "recall": {
@@ -12724,7 +12828,9 @@
         "Keep capsule, three cortical zones and medulla distinct.",
         "Name regional product associations without quantifying secretion.",
         "Keep important regulators separate from exclusive-control claims.",
-        "Do not infer whole-gland volume from a drawn width."
+        "Do not infer whole-gland volume from a drawn width.",
+        "Connect preparation-dependent lipid spaces to steroidogenic machinery.",
+        "Distinguish fetal cortical development and neural-crest-derived medullary routes."
       ],
       "related": [
         "autonomic-signalling",
@@ -12735,59 +12841,108 @@
     {
       "id": "pituitary-glandular-neural-orientation",
       "subject": "histology",
-      "title": "Pituitary tissue: glandular and neural regions",
-      "summary": "Compare tissue regions, resolve a many-to-one staining classification, and keep producing neurons, terminals and supporting glia distinct.",
+      "title": "Pituitary: tissue identification, hormone routes and development",
+      "summary": "Read glandular and neural tissue, trace the portal and axonal routes, and connect the two embryonic primordia to adult microscopic organization.",
       "tags": [
         "Histology",
         "Endocrine architecture",
         "Structure and function",
         "Evidence scope"
       ],
-      "source": "original-endocrine-architecture-models",
-      "section": "EMII endocrine architecture: original tissue and compartment explanations",
-      "updatedAt": "2026-11-05",
-      "minutes": 18,
+      "source": "original-endocrine-development-depth",
+      "section": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+      "updatedAt": "2026-11-06",
+      "minutes": 35,
       "objectives": [
-        "Compare glandular epithelial and axonal/glial regional organization.",
-        "Explain why a broad staining class does not uniquely select one hormone-producing type.",
-        "Separate neuronal production, axonal transport, terminal storage/release and glial support.",
-        "Use a structural clue without claiming actual specimen-recognition performance."
+        "Identify pars distalis, pars nervosa and the intermediate region using architecture and preparation.",
+        "Connect secretory organelles, neurosecretory axons and vascular routes to distinct functions.",
+        "Trace oral and neural ectoderm through pouch formation, regional growth and endocrine differentiation.",
+        "Explain what a developmental perturbation establishes about patterning, proliferation or cell identity.",
+        "Choose evidence that distinguishes staining class, lineage marker and hormone production."
       ],
       "prerequisites": [
         "microscopy"
       ],
       "steps": [
         {
-          "title": "Start with glandular versus neural organization",
-          "body": "The pars distalis contains endocrine epithelial populations arranged in cellular groups or cords among vascular spaces. The pars nervosa contains hypothalamic axons and terminals, supporting pituicytes and capillaries. These contrasting arrangements explain why region-level orientation is useful before assigning a name to one colored object."
+          "title": "Orient the whole gland before choosing a cell",
+          "body": "Begin at low power. The pars distalis is a densely cellular endocrine region, whereas pars nervosa is dominated by axons, terminals and supporting glia. Locate the boundary between these regions and look for the residual intermediate zone. A section through the stalk has a different arrangement from a section through the body of the gland.\n\nNow move to higher power in a region whose position you understand. Ask whether nuclei belong to closely grouped epithelial cells or lie within a more fibrous background. Both regions are vascular, so a capillary alone cannot distinguish them. Return to the overview whenever the high-power field loses its anatomical context."
         },
         {
-          "title": "Treat a staining class as a grouping rather than a hormone identity",
-          "body": "A conventional introductory classification places somatotrophs and lactotrophs among acidophilic types and several other principal endocrine types among basophilic types. The grouping is many-to-one: one broad color class can contain more than one hormone-producing cell type. It is not a universal statement about every cell’s staining in every preparation, and it does not make all members co-produce all the group’s hormones."
+          "title": "Pars distalis: cords, vascular spaces and a supporting meshwork",
+          "body": "Endocrine cells form cords and small groups closely associated with fenestrated capillaries. This puts a short interstitial path between a secreting cell and the circulation. A delicate reticular framework supports these groups; a reticulin preparation can make the framework easier to follow than routine H&E. There is no excretory duct carrying the hormone to a surface.\n\nIdentify a vascular space by its endothelial boundary and, when present, erythrocytes. Do not call every gap a vessel: shrinkage can separate cells from supporting tissue. The useful structural statement is that endocrine cells repeatedly lie beside a vascular network, not that every white space is a sinusoid."
         },
         {
-          "title": "Use a declared classification to expose the inverse problem",
-          "body": "For an original classroom classification, put somatotroph and lactotroph in group A, and corticotroph, thyrotroph and gonadotroph in group B. This deliberately selected five-type model has two possible members for A and three for B. A group label alone therefore cannot uniquely choose a member. These are category memberships, not measured cell proportions or a complete classification of all pituitary phenotypes."
+          "title": "Acidophil, basophil and chromophobe describe staining behaviour",
+          "body": "Acidophils usually have conspicuous eosinophilic cytoplasm; somatotrophs and lactotrophs are major examples. Basophilic groups include corticotrophs, thyrotrophs and gonadotrophs in conventional teaching classifications. Chromophobes stain weakly. That pale appearance can reflect low granule content or a different cell population; it is not a separate hormone or proof of an inactive cell.\n\nThe visible colour depends on fixation, the stain and the amount and chemistry of cellular material. Secretory granules can become less conspicuous after release. Learn these categories as an entry into cell biology, then use hormone-specific or lineage-specific methods for a more precise question.",
+          "practice": {
+            "prompt": "A pink cell is called a lactotroph from H&E alone. What information is missing?",
+            "feedback": "Somatotrophs can share that broad staining class. The field needs appropriate additional evidence, such as a validated hormone stain, interpreted with morphology and controls."
+          }
         },
         {
-          "title": "Distinguish the producing neuron from its terminal region",
-          "body": "Hormone-producing hypothalamic neurons send axons toward the posterior pituitary. Material is transported along those axons and can be stored and released at their terminals. The region containing a release site need not contain the neuronal cell body that produced the material. That distinction connects the site of synthesis to the terminal site of release."
+          "title": "Connect peptide synthesis to organelles and regulated secretion",
+          "body": "A peptide-producing endocrine cell translates a precursor on ribosomes associated with rough endoplasmic reticulum. Processing through the secretory pathway and Golgi apparatus precedes packaging into granules. A stimulus can then regulate granule exocytosis at the plasma membrane. Synthesis, intracellular storage and release are separate stages of the same pathway.\n\nThis explains why a cell with abundant stored material need not be releasing the most hormone at that instant. Electron microscopy can resolve granules and organelles that H&E cannot. An immunostain detects its target under the assay conditions; a secretion experiment measures output over time. Match the measurement to the stage being asked about."
         },
         {
-          "title": "Keep the supporting cell in its own role",
-          "body": "Pituicytes are local glial supporting cells associated with the axons and terminals. Their presence is not a reason to relabel them as the hypothalamic hormone-producing neuron. A field may contain several cell and process types with different relationships to synthesis, transport, storage and release; the names describe those roles rather than interchangeable colored dots."
+          "title": "Use cell products and lineage factors as different classifications",
+          "body": "Somatotrophs produce growth hormone, lactotrophs prolactin, thyrotrophs TSH, corticotrophs ACTH and gonadotrophs LH and FSH. These product categories do not map one-to-one onto the acidophil/basophil colour groups. In the existing five-type exercise, group A has two candidate identities and group B three; those counts are categories, not percentages of the gland.\n\nA second classification concerns differentiation programs. POU1F1/PIT1 is associated with somatotroph, lactotroph and thyrotroph lineages; TBX19/TPIT with corticotroph differentiation; NR5A1/SF1 with gonadotroph identity. A transcription-factor stain and a hormone stain answer related but distinct questions. Development depends on interacting programs rather than one gene acting alone."
         },
         {
-          "title": "Read a Herring-body description as a structural clue",
-          "body": "Herring bodies are focal axonal swellings associated with neurosecretory material in this context. A suitable preparation can show them as part of posterior-tissue organization. Their absence from a small field does not exclude the entire region, and the presence of stored material does not quantify release per unit time. No source micrograph, staining threshold or measured secretion series is supplied here."
+          "title": "Trace the anterior route through two capillary networks",
+          "body": "Hypothalamic regulatory neurons release signals into the primary capillary plexus in the median eminence and upper stalk region. Portal vessels convey those signals to a secondary capillary network among pars-distalis endocrine cells. The pituitary cells respond by modifying their own hormone synthesis and release into blood. This is a vascular relay between hypothalamus and anterior pituitary.\n\nKeep the directions explicit: neuron to primary plexus, portal vessel to secondary plexus, signal to endocrine cell, pituitary hormone to circulation. A portal vessel is not an axon. The route delivers a regulatory signal to another secreting cell; it does not simply transport all anterior hormones from the hypothalamus.",
+          "practice": {
+            "prompt": "Where does TSH enter the circulation in this route?",
+            "feedback": "Thyrotrophs in the anterior pituitary synthesize and release TSH near the secondary vascular network. Hypothalamic TRH reaches them through portal blood; it is a different molecule."
+          }
         },
         {
-          "title": "Connect morphology to the existing feedback route",
-          "body": "The existing endocrine-feedback introduction explains a thyroid-axis example and keeps hypothalamic, pituitary and target-gland signals distinct. Reuse it for that regulatory overview. The current task instead asks which tissue region, cell population or process a description refers to, and whether a broad staining group has enough information to identify one member."
+          "title": "Trace the posterior route along an axon",
+          "body": "Magnocellular neurons in the supraoptic and paraventricular hypothalamic nuclei synthesize vasopressin or oxytocin as precursor proteins. Both nuclei contribute to both systems; the common predominant associations are not exclusive assignments. Neurosecretory material travels along unmyelinated axons through the stalk toward terminals in the posterior pituitary.\n\nAction potentials arriving at terminals can trigger calcium-dependent release into the nearby circulation. The neuron extends across locations: its cell body is in the hypothalamus while its terminal release region is in pars nervosa. The posterior pituitary therefore releases these hormones without being the location of their neuronal cell bodies."
         },
         {
-          "title": "Build a positive regional explanation before extending its scope",
-          "body": "A description favoring pars distalis should name the endocrine epithelial organization and vascular setting. A description favoring pars nervosa should name the axonal/terminal and glial setting. Further hormone-specific or functional claims need appropriate additional evidence. These fictional descriptions check tissue-role reasoning, not real-slide recognition, an individual hormone level or a clinical interpretation."
+          "title": "Pituicytes and Herring bodies are different kinds of structures",
+          "body": "Pituicytes are supporting glial cells, not the peptide-producing hypothalamic neurons. Their nuclei may be visible among axons and capillaries even when their processes are difficult to resolve. Herring bodies are focal accumulations of neurosecretory material in axonal swellings. They are parts of axons, not a second endocrine epithelial population.\n\nA useful description identifies the fibrous neural background, scattered nuclei, vascular setting and any convincing swellings. Some preparations demonstrate neurosecretory material more clearly than others. Failure to see one Herring body in a small routine field is weak negative evidence; it should not override a well-established regional pattern."
+        },
+        {
+          "title": "Understand why the intermediate region can contain cysts",
+          "body": "The pars intermedia is rudimentary in humans. Small epithelial-lined cystic spaces containing colloid-like material may occur near the boundary between anterior and posterior regions. Their position and relationship to neighbouring tissue matter more than the fact that their contents stain pink.\n\nA few such spaces do not turn the whole pituitary into a thyroid gland. Thyroid identification depends on a repeated follicular organization across the organ. Species also matter: the prominence and function of pars intermedia differ between animals. Do not transfer the appearance of a well-developed animal intermediate lobe directly to an adult human section.",
+          "practice": {
+            "prompt": "What makes a colloid-containing space near the pituitary boundary different from a thyroid identification?",
+            "feedback": "Its regional setting within recognizable pituitary tissue and limited distribution. One luminal material is less informative than the whole-organ organization."
+          }
+        },
+        {
+          "title": "Two ectodermal primordia approach from opposite directions",
+          "body": "The adenohypophysis begins as an oral ectodermal thickening that grows upward as Rathke’s pouch. The neurohypophysis develops from a downward extension of ventral diencephalic neuroectoderm. These primordia become closely associated while retaining distinct developmental identities. Neural ectoderm here means the developing brain region, not neural crest.\n\nVisualize the original geometry: the pouch remains temporarily connected to the oral surface by a narrowing stalk, while the neural component remains continuous with the brain. Separation of the oral connection and growth of the adjacent tissues establish the later pituitary arrangement. The adult gland’s epithelial and neural regions make sense when this sequence is traced rather than memorized as two labels."
+        },
+        {
+          "title": "Follow pouch remodelling into adult regions",
+          "body": "Growth of the anterior pouch wall contributes the main glandular mass, pars distalis. Tissue extending around the stalk contributes pars tuberalis; the posterior pouch wall contributes the intermediate region. The residual cleft helps explain why epithelial remnants and small cysts may be encountered near that interface.\n\nDevelopment is not completed by contact between the two primordia. Cells must proliferate, change their spatial arrangement, acquire differentiated programs and integrate with developing vessels and neural pathways. A structure may form in approximately the correct place yet fail to achieve its normal size or mature hormone-producing populations. These are distinct developmental outcomes."
+        },
+        {
+          "title": "Separate induction, patterning, growth and differentiation",
+          "body": "Induction concerns acquisition of a developmental identity in response to signals. Patterning assigns different regional identities; proliferation changes cell number; differentiation establishes specialized cellular machinery. A small final gland can result from different combinations of failures at these stages.\n\nRead an experiment by asking when and where a gene was perturbed, which population was measured and what endpoint was recorded. A normal early marker does not guarantee later survival. Conversely, a small or distorted pouch does not prove that every precursor failed to acquire pituitary identity. This framework turns a gene list into questions that experiments can actually distinguish."
+        },
+        {
+          "title": "Research bridge: morphology and identity can separate",
+          "body": "In the mouse Noggin study, loss of this BMP antagonist produced variable pouch abnormalities, including displacement and additional pouch-like structures. Some severely altered oral regions still expressed pituitary-associated markers. The study therefore separates an organized pouch shape from aspects of early cellular identity.\n\nThe lesson is to compare morphology with marker evidence rather than equating one with the other. Noggin normally helps constrain signalling in the developing region; removing an antagonist need not produce a simple, uniformly larger normal gland. These observations concern the examined mouse embryos, not a measured human developmental timetable.",
+          "practice": {
+            "prompt": "A malformed pouch retains an early identity marker. Has normal pituitary development been demonstrated?",
+            "feedback": "No. Some identity-associated expression persists, but organized morphogenesis, cell number and later differentiation require separate observations."
+          }
+        },
+        {
+          "title": "Research bridge: timing and tissue location change the result",
+          "body": "Wang and colleagues compared mouse Shh/Gli perturbations with different tissue and timing contexts. Their results supported a Gli2 requirement for early pituitary-progenitor proliferation and a role in neighbouring diencephalic signalling. Later conditional deletion did not reproduce every early phenotype.\n\nA negative result after a late intervention cannot establish that the pathway was unnecessary earlier. Likewise, a whole-embryo mutation may affect the responding tissue and its signalling neighbours together. Comparing interventions across compartments helps distinguish a cell-intrinsic requirement from an effect mediated by surrounding tissue."
+        },
+        {
+          "title": "Choose a stain to answer a defined question",
+          "body": "Use H&E for regional organization and broad cytological contrast. Reticulin can clarify the supporting network; validated hormone immunohistochemistry can localize a product; a lineage-factor stain addresses a differentiation program. Electron microscopy answers an ultrastructural question. None of these methods is simply a stronger version of the same measurement.\n\nFor immunostaining, check whether expected positive tissue reacted, whether background or off-target staining obscures interpretation, and whether fixation and antigen retrieval were appropriate. A technically failed negative stain cannot establish absence of the cell population. Interpret the location and pattern of staining alongside the tissue architecture."
+        },
+        {
+          "title": "Build a complete practical answer",
+          "body": "For a glandular field, describe closely grouped endocrine epithelial cells, their vascular relationships and the broad staining variation; then place that field in the whole gland. For a neural field, describe the axonal background, supporting nuclei and any neurosecretory swellings, again checking regional position.\n\nFinish by connecting the structure to its route: local endocrine synthesis with portal regulation, or hypothalamic synthesis with axonal transport and terminal release. Add the oral-versus-neural developmental origin. This sequence gives an examiner an organized explanation from observation to mechanism to embryology, while leaving a hormone-specific claim to the appropriate additional test."
         }
       ],
       "question": {
@@ -12831,6 +12986,14 @@
         {
           "prompt": "What separates a pituicyte from the producing neuron in this comparison?",
           "answer": "A pituicyte is a supporting glial cell; it is not the hypothalamic hormone-producing neuron."
+        },
+        {
+          "prompt": "Trace the two routes from hypothalamus to pituitary output.",
+          "answer": "Anterior regulation uses portal blood to reach local endocrine cells; posterior release follows transport along magnocellular axons from hypothalamic cell bodies."
+        },
+        {
+          "prompt": "Explain how a small gland could arise through different developmental mechanisms.",
+          "answer": "Early identity, regional patterning, cell proliferation, differentiation and survival are separate endpoints. Compare stages and compartments before assigning one mechanism."
         }
       ],
       "recall": {
@@ -12842,7 +13005,9 @@
         "Keep group membership distinct from unique cell identity or co-production.",
         "Keep producing cell bodies, axons/terminals and glial support separate.",
         "Treat stored material and measured timed release as different observations.",
-        "Reuse the existing feedback introduction without claiming full pituitary-course coverage."
+        "Reuse the existing feedback introduction without claiming full pituitary-course coverage.",
+        "Trace the separate portal and axonal routes.",
+        "Explain two primordia and the stages between induction and differentiated function."
       ],
       "related": [
         "endocrine-feedback",
