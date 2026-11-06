@@ -3,6 +3,7 @@ import { learningEvent } from "@/lib/learning-analytics";
 import { useState } from "react";
 import { optionOrder } from "@/lib/option-order";
 import { AirwayPressureDiagram } from "./airway-pressure-diagram";
+import { CorrectionLink } from "./correction-link";
 import Link from "next/link";
 import type { PracticeItem } from "@/content/practice-registry";
 import { recordAnswer, recordVisit, useLearning } from "./learning-store";
@@ -29,5 +30,6 @@ export function PracticeQuestion({ item, title = "Check your understanding", fre
     <button className="button button-primary" disabled={!ready || choice === null || checked} onClick={() => { if (choice === null) return; const correct = choice === item.answer; recordAnswer(item.id, correct, choice, feedbackSeen); recordVisit(); setSubmitted(true); onAnswerState?.(correct); learningEvent({ version: 1, event: "quiz_completed", quiz_id: item.id }); }}>Check answer</button>
     {checked && <div className="concept-feedback" role="status" data-feedback={choice === item.answer ? "correct" : "incorrect"}><p><strong>{choice === item.answer ? "Correct." : "Not quite. Review the distinction."}</strong></p><p>Your answer: {choice !== null ? item.options[choice].text : "No answer selected"}</p><p>Correct answer: {item.options[item.answer].text}</p><ul>{item.options.map((o, i) => <li key={o.text}><strong>{i === item.answer ? "Why it works" : "Why not"}: {o.text}</strong><p>{o.explanation}</p></li>)}</ul><p>Retries within 24 hours help you correct a misconception, but do not advance your spaced-review streak.</p><button className="button button-secondary" onClick={() => { setDraft(null); setSubmitted(false); setFeedbackSeen(true); onAnswerState?.(null); }}>Try without feedback</button></div>}
     <p className="muted-note">{persistent ? "Saved on this browser. " : "Storage is unavailable; this session may not be saved. "}<Link href="/study">My Study →</Link></p>
+    <CorrectionLink questionId={item.id} />
   </section>;
 }

@@ -85,6 +85,36 @@ test("correction preserves lesson context and prepares a draft without submittin
   expect(url.searchParams.get("body")).toContain("Two paths, one organ");
 });
 
+test("practice correction carries only the registered question context into the draft", async ({ page }) => {
+  const id = "concept-fluid-and-membrane-transport";
+  const lesson = "/library/fluid-and-membrane-transport";
+  await page.goto(lesson);
+  const question = page.locator(`#question-${id}`);
+  await question.getByRole("radio").first().check();
+  await question.getByRole("button", { name: "Check answer", exact: true }).click();
+  await question.getByRole("link", { name: "Report this question" }).click();
+
+  await expect(page).toHaveURL(/\/contact\?question=/);
+  const url = new URL(page.url());
+  expect(url.pathname).toBe("/contact");
+  expect([...url.searchParams]).toEqual([["question", id]]);
+  await expect(page.getByText(id, { exact: false })).toBeVisible();
+  await expect(page.getByText(lesson, { exact: false })).toBeVisible();
+  const feedback = "Please clarify the wording of this question.";
+  await page.getByLabel("Your feedback or correction").fill(feedback);
+  await page.getByRole("button", { name: "Prepare feedback email" }).click();
+  await expect(page.getByRole("status")).toContainText("Nothing has been sent");
+  const draft = new URL((await page.getByRole("link", { name: "Open email draft" }).getAttribute("href"))!);
+  expect(draft.searchParams.get("body")).toBe(
+    `Page: ${lesson}\nQuestion ID: ${id}\nSection: \n\nFeedback or correction:\n${feedback}\n`,
+  );
+
+  await page.goto("/contact?lesson=%2Flibrary%2Fepithelia&question=unknown-question");
+  await expect(page.getByText("/library/epithelia", { exact: false })).toBeVisible();
+  await expect(page.getByText("Question ID:", { exact: true })).toHaveCount(0);
+  await expect(page.getByText("unknown-question", { exact: false })).toHaveCount(0);
+});
+
 test("nephron diagram supports recall and fits the page on small screens", async ({
   page,
 }, testInfo) => {
