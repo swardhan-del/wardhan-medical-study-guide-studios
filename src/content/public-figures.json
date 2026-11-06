@@ -894,6 +894,41 @@
       "publicApproval": "Owner-authorized educational release after source, rights, privacy and rendered review.",
       "modifications": "Specimen pixels unchanged; nonessential file metadata removed.",
       "observe": "Mixed elongated and oblique profiles; creator caption says cross section, but the visible field is not uniformly transverse."
+    },
+    {
+      "id": "placenta-term-villus",
+      "title": "Human chorionic villus at term: distinguish two blood compartments",
+      "sourceAsset": "images/figures/chorionic-villus-term.jpg",
+      "kind": "micrograph",
+      "alt": "A chorionic villous profile with a purple-staining trophoblast rim, a stromal core and internal capillaries containing pink erythrocytes; additional erythrocytes lie outside the villus.",
+      "caption": "Mikael Häggström identifies this as human chorionic villus at term, stained with H&E. Exact gestational week, fixation, section thickness and calibrated scale are not supplied. This selected high-power field supports compartment reasoning, not a whole-placenta survey.",
+      "rights": "Mikael Häggström, Histology of chorionic villus at term (2026), CC0 1.0.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": "docs/reviews/placenta-development-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Histology_of_chorionic_villus_at_term.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-placenta"
+      ],
+      "resourceIds": [
+        "placenta"
+      ],
+      "width": 4469,
+      "height": 2498,
+      "src": "/images/figures/chorionic-villus-term.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/chorionic-villus-term.jpg",
+          "width": 4469,
+          "height": 2498,
+          "bytes": 1484085
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after provenance, rights, privacy and rendered review.",
+      "modifications": "Original image bytes preserved. Browser markers are removable overlays; no specimen pixels are altered.",
+      "observe": "Separate the outside blood space from capillary lumina inside the trophoblast-covered villus."
     }
   ]
 }

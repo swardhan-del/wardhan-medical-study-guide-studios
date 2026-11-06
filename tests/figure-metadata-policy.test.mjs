@@ -13,3 +13,12 @@ test("reviewed cardiac metadata preserves display while rejecting extra private 
   assert.throws(()=>validateFigureMetadata("cardiac-muscle-mallory",{...metadata,icc:Buffer.alloc(548)}));
   assert.throws(()=>validateFigureMetadata("another-image",metadata));
 });
+
+test("placental metadata permits only the exact reviewed orientation tag", async () => {
+  const metadata=await sharp("public/images/figures/chorionic-villus-term.jpg").metadata();
+  assert.deepEqual(validateFigureMetadata("placenta-term-villus",metadata),{width:4469,height:2498});
+  for(const field of ["xmp","iptc","icc"]) assert.throws(()=>validateFigureMetadata("placenta-term-villus",{...metadata,[field]:Buffer.from("unreviewed")}));
+  assert.throws(()=>validateFigureMetadata("placenta-term-villus",{...metadata,exif:Buffer.concat([metadata.exif,Buffer.from("extra")])}));
+  assert.throws(()=>validateFigureMetadata("placenta-term-villus",{...metadata,orientation:6}));
+  assert.throws(()=>validateFigureMetadata("another-image",metadata));
+});

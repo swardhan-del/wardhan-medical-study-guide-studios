@@ -1,0 +1,62 @@
+{
+  "title": "Identify the two blood compartments in a term villus",
+  "regions": [
+    {
+      "id": "surface",
+      "label": "Villous trophoblast surface",
+      "anchor": {
+        "x": 52,
+        "y": 13
+      },
+      "observation": "An intensely purple rim follows the outside of the villous profile.",
+      "interpretation": "The trophoblast covering separates the outer maternal blood space from the villous core. The outer syncytial compartment is multinucleated; a visible nucleus is not automatically a separate cell.",
+      "limit": "This view does not identify every individual trophoblast cell or resolve each plasma membrane."
+    },
+    {
+      "id": "fetal-capillary",
+      "label": "Fetal capillary compartment",
+      "anchor": {
+        "x": 83,
+        "y": 65
+      },
+      "observation": "Pink erythrocytes occupy an enclosed space within the villous tissue.",
+      "interpretation": "This internal vascular lumen belongs to the fetal circuit. An endothelial wall and intervening villous tissue separate its erythrocytes from the maternal compartment outside.",
+      "limit": "Use the enclosing architecture; red staining alone does not identify a blood circuit."
+    },
+    {
+      "id": "stroma",
+      "label": "Villous stromal core",
+      "anchor": {
+        "x": 48,
+        "y": 48
+      },
+      "observation": "A paler heterogeneous compartment surrounds internal vessels beneath the outer covering.",
+      "interpretation": "Villous connective tissue supports internal vessels beneath the trophoblast surface. A thinner local route between a capillary and the surface can shorten the distance available for exchange.",
+      "limit": "H&E alone does not confidently assign every stromal nucleus a lineage."
+    },
+    {
+      "id": "maternal-space",
+      "label": "Intervillous compartment",
+      "anchor": {
+        "x": 9,
+        "y": 72
+      },
+      "observation": "Pink erythrocytes occur outside the villous covering, toward the left of the field.",
+      "interpretation": "These erythrocytes lie outside the villous surface, in the maternal compartment described by the source.",
+      "limit": "One field does not show the supplying spiral artery or maternal venous drainage."
+    },
+    {
+      "id": "nuclear-aggregate",
+      "label": "Peripheral syncytial nuclear aggregate",
+      "anchor": {
+        "x": 82,
+        "y": 27
+      },
+      "observation": "Closely packed purple nuclei cluster near the upper-right surface.",
+      "interpretation": "These clustered surface nuclei are associated with the shared syncytial compartment. Nuclear number and arrangement must not be mistaken for a count of individual trophoblast cells.",
+      "limit": "A surface nuclear aggregate alone does not establish disease or a molecular subtype."
+    }
+  ],
+  "model": "I see a trophoblast-covered villous profile with internal erythrocyte-containing capillaries and a separate outer space containing erythrocytes. These relationships distinguish fetal capillary blood from maternal intervillous blood. I need a calibrated scale and wider section context before measuring structures or describing the whole placenta. The surface nuclear aggregate alone does not establish a diagnosis.",
+  "figureId": "placenta-term-villus"
+}

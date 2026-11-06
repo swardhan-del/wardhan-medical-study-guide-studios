@@ -2681,17 +2681,21 @@
     {
       "id": "placenta",
       "route": "/library/placenta",
-      "title": "Placental villi and maternal–fetal exchange",
+      "title": "Placenta: villous identification, two circulations and development",
       "kind": "Study lesson",
-      "action": "new-comparison-or-flow",
+      "action": "standardise-or-reuse",
       "components": [
-        "LessonVisuals"
+        "LessonVisuals",
+        "LymphoidSpecimenExplorer (placenta data)",
+        "PlacentaCirculation"
       ],
       "visualIds": [
         "placenta-comparison"
       ],
-      "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Follow villus development and keep maternal blood distinct from fetal capillaries."
+      "figureIds": [
+        "placenta-term-villus"
+      ],
+      "rationale": "Retain the existing placental comparison; add an approved term-villus specimen with five broad regions, complete text alternatives and separate maternal/fetal circuit prediction stages. Rendered verification is recorded in the dated release review."
     },
     {
       "id": "microscopy",
