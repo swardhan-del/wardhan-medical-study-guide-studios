@@ -422,14 +422,66 @@
     ]
   },
   "muscle-histology": {
-    "title": "OpenStax: Muscle tissue",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-4-muscle-tissue-and-motion",
-    "checkedAt": "2026-09-07"
+    "title": "Duke Histology: muscle practical",
+    "url": "https://histology.oit.duke.edu/DPT/BasicTissues2/BasicTissues2.html",
+    "checkedAt": "2026-11-06",
+    "supportingReferences": [
+      {
+        "title": "UNSW Embryology: muscle development",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Musculoskeletal_System_-_Muscle_Development"
+      },
+      {
+        "title": "University of Minnesota: muscle histology preparations and stains",
+        "url": "https://med.umn.edu/mdcenter/clinical-research/histology-core"
+      },
+      {
+        "title": "Harel et al. (2009): regional origins of muscle and satellite cells",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3684422/"
+      },
+      {
+        "title": "Maven et al. (2023): context-dependent cardiac transcription-factor binding",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10679653/"
+      },
+      {
+        "title": "Harmon and Nakano (2013): regional vascular smooth-muscle lineages",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3943338/"
+      },
+      {
+        "title": "Bergmann et al. (2009): evidence for cardiomyocyte renewal in humans",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19342590/"
+      }
+    ]
   },
   "vessel-histology": {
-    "title": "OpenStax: Blood vessel structure",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels",
-    "checkedAt": "2026-09-07"
+    "title": "Columbia University: blood-vessel practical",
+    "url": "https://histologylab.ctl.columbia.edu/lab09/blood-vessels/",
+    "checkedAt": "2026-11-06",
+    "supportingReferences": [
+      {
+        "title": "Brelje and Sorenson: cardiovascular histology atlas",
+        "url": "https://www.histologyguide.org/slidebox/09-cardiovascular-system.html"
+      },
+      {
+        "title": "Lindblom et al. (2003): PDGF-B retention and pericyte organisation",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12897053/"
+      },
+      {
+        "title": "UNSW Embryology: blood-vessel development",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Cardiovascular_System_-_Blood_Vessel_Development"
+      },
+      {
+        "title": "Suchting et al. (2007): Dll4, VEGF response and endothelial tip cells",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17296941/"
+      },
+      {
+        "title": "Harmon and Nakano (2013): regional vascular smooth-muscle lineages",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3943338/"
+      },
+      {
+        "title": "Chen et al. (2014): regional routes of coronary endothelial development",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25377552/"
+      }
+    ]
   },
   "lymphoid-organs": {
     "title": "Duke Histology: lymphatic-system practical",

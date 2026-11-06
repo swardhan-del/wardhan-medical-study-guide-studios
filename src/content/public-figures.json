@@ -789,6 +789,111 @@
       "publicApproval": "Owner-authorized educational release after provenance, rights, privacy and rendered review.",
       "modifications": "Embedded metadata removed; decoded pixels verified unchanged. Browser region markers are reversible overlays, not alterations to the specimen.",
       "observe": "Follow the tissue boundary before comparing the peripheral and inner organisation."
+    },
+    {
+      "id": "skeletal-muscle-striation",
+      "title": "Skeletal muscle: follow the striation",
+      "sourceAsset": "images/figures/skeletal-muscle-striation.jpg",
+      "kind": "micrograph",
+      "alt": "Parallel longitudinal fibres with repeated transverse bands and nuclei near some fibre edges.",
+      "caption": "Stain and species undocumented; creator gives nominal 400×, not a calibrated display scale. Longitudinal parallel fibres with visible striations. Do not assign every edge nucleus to the myofibre.",
+      "rights": "Alexander G. Cheroske, CC BY-SA 4.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "evidence": "docs/reviews/muscle-vessel-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skeletal_muscle_400x.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-muscle-histology"
+      ],
+      "resourceIds": [
+        "muscle-histology"
+      ],
+      "width": 3072,
+      "height": 4096,
+      "src": "/images/figures/skeletal-muscle-striation.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/skeletal-muscle-striation.jpg",
+          "width": 3072,
+          "height": 4096,
+          "bytes": 1405578
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after source, rights, privacy and rendered review.",
+      "modifications": "Specimen pixels unchanged; nonessential file metadata removed.",
+      "observe": "Longitudinal parallel fibres with visible striations. Do not assign every edge nucleus to the myofibre."
+    },
+    {
+      "id": "cardiac-muscle-mallory",
+      "title": "Cardiac muscle in Mallory’s trichrome",
+      "sourceAsset": "images/figures/cardiac-muscle-mallory.jpg",
+      "kind": "micrograph",
+      "alt": "A circular microscope field with striated orange-brown muscle, intervening blue connective tissue and scattered central nuclear profiles.",
+      "caption": "Creator identifies Mallory’s trichrome; species, magnification and scale undocumented. Orange-brown striated muscle and blue connective tissue in a circular field. No confidently labelled individual intercalated disc.",
+      "rights": "Alessandro Scalese, CC BY-SA 4.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "evidence": "docs/reviews/muscle-vessel-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cardiac_Muscle.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-muscle-histology"
+      ],
+      "resourceIds": [
+        "muscle-histology"
+      ],
+      "width": 3024,
+      "height": 4032,
+      "src": "/images/figures/cardiac-muscle-mallory.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/cardiac-muscle-mallory.jpg",
+          "width": 3024,
+          "height": 4032,
+          "bytes": 3236506
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after source, rights, privacy and rendered review.",
+      "modifications": "Specimen pixels unchanged; nonessential file metadata removed.",
+      "observe": "Orange-brown striated muscle and blue connective tissue in a circular field. No confidently labelled individual intercalated disc."
+    },
+    {
+      "id": "smooth-muscle-mixed-planes",
+      "title": "Smooth muscle: mixed section planes",
+      "sourceAsset": "images/figures/smooth-muscle-mixed-planes.jpg",
+      "kind": "micrograph",
+      "alt": "Elongated and oblique nuclear profiles lie among pink-purple cellular bundles without clearly resolved cross-striation.",
+      "caption": "Stain, species and organ undocumented; creator gives nominal 400×. Mixed elongated and oblique profiles; creator caption says cross section, but the visible field is not uniformly transverse.",
+      "rights": "Berkshire Community College Bioscience Image Library, CC0 1.0.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": "docs/reviews/muscle-vessel-depth-20261106.md",
+      "sourceUrl": "https://www.flickr.com/photos/146824358@N03/40087100490/",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-muscle-histology"
+      ],
+      "resourceIds": [
+        "muscle-histology"
+      ],
+      "width": 3264,
+      "height": 1840,
+      "src": "/images/figures/smooth-muscle-mixed-planes.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/smooth-muscle-mixed-planes.jpg",
+          "width": 3264,
+          "height": 1840,
+          "bytes": 1184541
+        }
+      ],
+      "publicApproval": "Owner-authorized educational release after source, rights, privacy and rendered review.",
+      "modifications": "Specimen pixels unchanged; nonessential file metadata removed.",
+      "observe": "Mixed elongated and oblique profiles; creator caption says cross section, but the visible field is not uniformly transverse."
     }
   ]
 }

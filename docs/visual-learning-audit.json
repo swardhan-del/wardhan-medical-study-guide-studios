@@ -2759,8 +2759,12 @@
         "HistologyTopicVisual"
       ],
       "visualIds": [],
-      "figureIds": [],
-      "rationale": "The visual supports this specific learning task: Identify muscle using nuclei, striations, branching and the connections between cells."
+      "figureIds": [
+        "skeletal-muscle-striation",
+        "cardiac-muscle-mallory",
+        "smooth-muscle-mixed-planes"
+      ],
+      "rationale": "Retain the existing conceptual muscle comparison and add three licensed real specimens with distinct preparation provenance, observation-first identification, explained feedback and local model comparison. No patient data or restricted atlas images are included."
     },
     {
       "id": "renal-tubular-transport",

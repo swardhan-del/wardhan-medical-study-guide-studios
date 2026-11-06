@@ -1,0 +1,16 @@
+.explorer { min-width: 0; overflow-wrap: anywhere; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: 1rem 0; }
+.controls button { padding: .75rem 1rem; border: 2px solid #37594f; border-radius: .5rem; background: #fff; color: #173d33; font: inherit; cursor: pointer; min-height: 44px; }
+.controls button[aria-pressed="true"] { background: #173d33; color: #fff; }
+.controls button:focus-visible, .controls a:focus-visible { outline: 3px solid #9a4b00; outline-offset: 3px; }
+.controls a { max-width: 100%; padding: .3rem 0; }
+.imageFrame { background: #f2f0e9; border: 1px solid #c1c8c3; border-radius: .6rem; padding: .5rem; }
+.imageFrame img { display: block; width: auto; height: auto; max-width: 100%; max-height: 36rem; margin: 0 auto; object-fit: contain; }
+.task figure { margin: 1.25rem 0; }
+.task figcaption { margin-top: .6rem; }
+.feedback { padding: 1rem; border-left: .3rem solid #356450; background: #edf4ef; color: #193a2e; margin: 1rem 0; }
+.credit { font-size: .9rem; line-height: 1.6; }
+.task label { display: block; font-weight: 700; margin: 1.25rem 0 .5rem; }
+.task textarea { box-sizing: border-box; width: 100%; min-width: 0; padding: .75rem; border: 1px solid #53685e; border-radius: .4rem; font: inherit; }
+.task textarea:focus-visible { outline: 3px solid #9a4b00; outline-offset: 3px; }
+@media (max-width: 480px) { .controls { align-items: stretch; } .controls button { flex: 1 1 8rem; } }

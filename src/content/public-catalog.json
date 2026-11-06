@@ -4340,26 +4340,6 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
-      "bytes": 0,
-      "id": "vessel-histology",
-      "title": "Arteries, veins and capillaries",
-      "subject": "histology",
-      "kind": "Study lesson",
-      "format": "WEB",
-      "summary": "Read vessel walls from the lumen outward and relate each layer to pressure and exchange.",
-      "tags": [
-        "Organ histology",
-        "Microscopic structure",
-        "blood vessels",
-        "arteries",
-        "veins",
-        "capillaries"
-      ],
-      "minutes": 5
-    },
-    {
-      "status": "public",
       "updatedAt": "2026-11-06",
       "bytes": 0,
       "id": "blood-marrow",
@@ -4605,6 +4585,25 @@
     },
     {
       "status": "public",
+      "updatedAt": "2026-11-06",
+      "bytes": 0,
+      "id": "muscle-histology",
+      "title": "Muscle: specimen identification, force transmission and development",
+      "subject": "histology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Interpret skeletal, cardiac and smooth muscle across section planes; connect staining, cell architecture and regional developmental origins.",
+      "tags": [
+        "Cells and tissues",
+        "Organ histology",
+        "muscle",
+        "sarcomere",
+        "cardiac"
+      ],
+      "minutes": 35
+    },
+    {
+      "status": "public",
       "updatedAt": "2026-11-04",
       "bytes": 0,
       "id": "myelin-and-glial-cells",
@@ -4780,25 +4779,6 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
-      "bytes": 0,
-      "id": "muscle-histology",
-      "title": "Skeletal, cardiac and smooth muscle",
-      "subject": "histology",
-      "kind": "Study lesson",
-      "format": "WEB",
-      "summary": "Identify muscle using nuclei, striations, branching and the connections between cells.",
-      "tags": [
-        "Cells and tissues",
-        "Organ histology",
-        "muscle",
-        "sarcomere",
-        "cardiac"
-      ],
-      "minutes": 5
-    },
-    {
-      "status": "public",
       "updatedAt": "2026-11-05",
       "bytes": 0,
       "id": "thyroid-parathyroid-pattern-reasoning",
@@ -4814,6 +4794,26 @@
         "Evidence scope"
       ],
       "minutes": 18
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-06",
+      "bytes": 0,
+      "id": "vessel-histology",
+      "title": "Vessels: wall identification, microcirculation and development",
+      "subject": "histology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Read arteries, veins and exchange vessels from lumen to wall, then distinguish endothelial development from mural-cell recruitment.",
+      "tags": [
+        "Organ histology",
+        "Microscopic structure",
+        "blood vessels",
+        "arteries",
+        "veins",
+        "capillaries"
+      ],
+      "minutes": 35
     },
     {
       "status": "public",

@@ -2,12 +2,10 @@
 
 import { useCallback, useState } from "react";
 import data from "@/content/lymphoid-specimen.json";
-import { figuresForResource } from "@/lib/figures";
+import type { PublicFigure } from "@/lib/figures";
 import styles from "./lymphoid-specimen-explorer.module.css";
 
-const figure = figuresForResource("lymphoid-organs").find(f => f.id === data.figureId)!;
-
-export function LymphoidSpecimenExplorer() {
+export function LymphoidSpecimenExplorer({ figure }: { figure: PublicFigure }) {
   const [selected, setSelected] = useState(0);
   const [markers, setMarkers] = useState(true);
   const [response, setResponse] = useState("");
