@@ -2670,13 +2670,19 @@
     {
       "id": "neurulation",
       "route": "/library/neurulation",
-      "title": "Neural tube formation and early organization",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
       "kind": "Study lesson",
-      "action": "retain-text-practice",
-      "components": [],
+      "action": "standardise-or-reuse",
+      "components": [
+        "SpecimenExplorerEntry",
+        "NeurulationSlides",
+        "VideoPlayer"
+      ],
       "visualIds": [],
-      "figureIds": [],
-      "rationale": "Retain the explained steps and worked questions for this task: Connect neural plate folding to the developing central nervous system and distinguish tube from crest. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+      "figureIds": [
+        "chick-neural-tube-labels"
+      ],
+      "rationale": "Credited fluorescence specimen with four removable region markers, text descriptions and local model comparison; existing primary-folding activity and player reused."
     },
     {
       "id": "placenta",

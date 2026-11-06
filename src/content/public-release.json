@@ -1312,6 +1312,36 @@
       "bytes": 1484085,
       "sha256": "405b884058e38858bd01632786d5eceb93cf73a969390845754d2cb3b1db72a5",
       "evidence": "docs/reviews/placenta-development-depth-20261106.md"
+    },
+    {
+      "path": "images/figures/chick-neural-tube-labels.jpg",
+      "bytes": 587935,
+      "sha256": "8516a02abbff707f04f86f2c33ac15355d998619f9822bc8b27744f285b1a34c",
+      "evidence": "docs/reviews/neurulation-development-depth-20261106.md"
+    },
+    {
+      "path": "media/research/neural-v5.mp4",
+      "bytes": 6067252,
+      "sha256": "145efeb7459387c59a4c09586986c9c5d859222168260af25cf510b3070bd3e6",
+      "evidence": "docs/reviews/neurulation-development-depth-20261106.md"
+    },
+    {
+      "path": "media/research/neural-v5-poster.png",
+      "bytes": 129476,
+      "sha256": "98f25d139f8a1cbec42a6f3dd1e0ef17907b782d4d16447e3240b35a218656ce",
+      "evidence": "docs/reviews/neurulation-development-depth-20261106.md"
+    },
+    {
+      "path": "media/research/neural-v7.mp4",
+      "bytes": 16301657,
+      "sha256": "a0cc5b7eb0db841892c3cddb49a3df33ecb59d5fb15da4c48470ca5714b265da",
+      "evidence": "docs/reviews/neurulation-development-depth-20261106.md"
+    },
+    {
+      "path": "media/research/neural-v7-poster.png",
+      "bytes": 136278,
+      "sha256": "4009f8dce6d615aa1c100558dae37ac7d0b74aae9f8a74bc071f08f21ad32186",
+      "evidence": "docs/reviews/neurulation-development-depth-20261106.md"
     }
   ],
   "videoIds": [
@@ -1337,7 +1367,9 @@
     "recap-epithelia",
     "recap-pcr",
     "recap-enzyme-kinetics",
-    "recap-complement"
+    "recap-complement",
+    "neural-nuclear-migration-control",
+    "neural-nuclear-migration-vinculin-depletion"
   ],
   "audioLessonIds": [
     "fluid-and-membrane-transport",
@@ -1371,5 +1403,9 @@
     "genetics",
     "histology",
     "physiology"
+  ],
+  "researchVideoIds": [
+    "neural-nuclear-migration-control",
+    "neural-nuclear-migration-vinculin-depletion"
   ]
 }

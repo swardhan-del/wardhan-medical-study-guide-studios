@@ -4284,3 +4284,8 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .case-control-populations dl > div { padding-block: .55rem; border-bottom: 1px solid currentColor; }
 .case-control-populations dt { font-weight: 650; }
 .case-control-populations dd { margin: .25rem 0 0; }
+/* Original research clips retain their condition and channel keys at every width. */
+.research-video-comparison { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr)); gap: 1.5rem; }
+.research-video-comparison > h2 { grid-column: 1 / -1; }
+.research-video-comparison > article { min-width: 0; overflow-wrap: anywhere; }
+.research-video-comparison .native-video { min-width: 0; }

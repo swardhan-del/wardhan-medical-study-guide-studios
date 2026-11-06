@@ -3249,29 +3249,205 @@
     {
       "id": "neurulation",
       "subject": "histology",
-      "title": "Neural tube formation and early organization",
-      "summary": "Connect neural plate folding to the developing central nervous system and distinguish tube from crest.",
+      "title": "Neural tube: folding, tissue organization and developmental evidence",
+      "summary": "Identify neural-tube compartments, explain epithelial folding and cell origins, and compare fixed staining with original research time-lapse movies.",
       "tags": [
         "Integrated embryology",
         "embryology",
         "nervous system",
         "neural tube",
-        "development"
+        "development",
+        "neurulation",
+        "neural crest",
+        "neuroepithelium",
+        "interkinetic nuclear migration"
       ],
-      "source": "histology",
+      "source": "neurulation-development-depth",
       "section": "Neurulation and Primary Differentiation of the Neural Tube",
       "steps": [
         {
-          "title": "Induce and fold",
-          "body": "Signals from axial tissues including the notochord help organize overlying neural ectoderm. The neural plate forms a groove and elevated folds that meet to make the neural tube. This is a changing three-dimensional geometry, not a simple solid rod."
+          "title": "Identify the space before naming the cells",
+          "body": "Begin with a description that another observer could check: a dark central space is surrounded by a thick, densely nucleated wall. In the supplied chick neural-tube specimen, this is the neural lumen and its surrounding neuroepithelium. The luminal surface is apical; the outer surface is basal. These terms describe epithelial polarity, not the dorsal and ventral sides of the embryo.\n\nDo not orient dorsal versus ventral from this isolated close-up. A wider section showing notochord, surface ectoderm and neighbouring structures would strengthen that assignment. A dark space in an unknown image could be a lumen, an unlabelled tissue compartment or a preparation defect. Identification combines geometry, specimen metadata and neighbouring landmarks.",
+          "practice": {
+            "prompt": "Give two visible observations, one metadata-supported identity and one orientation you cannot assign from this field.",
+            "feedback": "Describe a dark space and a densely nucleated surrounding wall. The provider identifies a chick neural tube. Luminal versus outer wall supports apical/basal orientation; this crop does not securely assign dorsal/ventral sides."
+          }
         },
         {
-          "title": "Separate tube and crest",
-          "body": "The neural tube gives rise to the central nervous system. Neural crest cells leave the border region and migrate to diverse destinations, including many peripheral nervous-system structures. Do not use neural tube and neural crest as interchangeable names."
+          "title": "Keep two coordinate systems separate",
+          "body": "A developing spinal-cord section can be described in two ways at the same time. Ventricular, mantle and marginal zones describe depth from the lumen toward the outer surface. Alar and basal plates describe dorsal and ventral territories of the wall. These are intersecting coordinates, not competing names for the same set of layers.\n\nA neuronal cell body associated with a developing motor territory can therefore be in the mantle zone of a basal plate. Its axon can extend through other compartments without moving the cell body’s developmental origin. This distinction prevents a common error: treating the intermediate zone as a third plate between the alar and basal plates.",
+          "practice": {
+            "prompt": "Place a developing spinal motor-neuron soma in both coordinate systems, then describe its outgoing axon separately.",
+            "feedback": "The soma belongs to a basal-plate motor territory and lies in the mantle region. Its axon leaves toward the ventral root; an axon crossing a compartment does not move the soma into that compartment."
+          }
         },
         {
-          "title": "Follow the wall layers",
-          "body": "The ventricular zone contains proliferating neuroepithelial cells. The mantle zone accumulates cell bodies and contributes gray matter; the marginal zone contains axons and contributes white matter. In the developing spinal cord, dorsal alar and ventral basal plates relate to sensory and motor organization."
+          "title": "Distinguish spinal horns, roots and ganglia",
+          "body": "In the spinal developmental plan, dorsal alar territories contribute to interneuronal circuitry that receives sensory input; ventral basal territories include motor-neuron populations. The sensory neuron whose axon enters through a dorsal root has its soma in a dorsal-root ganglion outside the cord. “Sensory side” does not mean that the primary sensory soma lies in the alar plate.\n\nFollow a motor neuron separately: its soma is within the developing ventral cord and its axon exits through a ventral root. A mixed spinal nerve farther out brings sensory and motor axons together. In a section, identify the cord, roots and ganglion as distinct structures before assigning lineages. A rounded cell cluster outside the tube needs its axonal connections and surrounding landmarks to support identification as a ganglion.",
+          "practice": {
+            "prompt": "Trace the soma and central process of a primary spinal sensory neuron, then contrast a spinal motor neuron.",
+            "feedback": "The sensory soma is in the dorsal-root ganglion and its central process enters the dorsal cord. The motor soma remains in the ventral cord and sends an axon outward through the ventral root. Both axons can later share a mixed peripheral nerve."
+          }
+        },
+        {
+          "title": "Neural induction is not ventral patterning",
+          "body": "An inducing interaction helps establish neural tissue in an appropriate developmental context. Patterning then assigns different identities within that tissue. Folding changes its shape. These processes interact, but a single arrow labelled “notochord makes neural tube” conceals the questions each experiment addresses.\n\nZimmerman and colleagues reported that Noggin binds BMP4 and prevents its access to cell-surface receptors. That is an extracellular antagonism mechanism, not direct conversion of Noggin into a neural cell. In a mouse loss-of-function study, neural induction still occurred without Noggin, whereas later tube growth and patterning were abnormal. Species, timing and additional signals matter when interpreting necessity and sufficiency.",
+          "practice": {
+            "prompt": "Explain why a protein-binding result and a whole-embryo knockout answer different questions.",
+            "feedback": "Binding tests a molecular interaction. A knockout tests consequences in a developing organism that has other signals and compensatory responses. A direct interaction does not establish that this one protein is indispensable for every instance of induction."
+          }
+        },
+        {
+          "title": "Read a signal as a time-dependent input",
+          "body": "A ventralizing signal is not simply a coloured stripe on a diagram. Cells receive a signal through a response system whose state can change over time. Dessaud and colleagues studied chick neural cells and reported that SHH concentration and exposure duration were integrated through temporal adaptation of intracellular signalling.\n\nA practical implication is that two samples with a similar extracellular signal at collection need not have experienced the same prior signalling history. Gene expression is a response, not a direct photograph of the earlier ligand distribution. When comparing experiments, record the signal, exposure interval, tissue stage and measured outcome before assigning a developmental fate.",
+          "practice": {
+            "prompt": "Propose two histories that could produce the same endpoint ligand measurement but different cellular responses.",
+            "feedback": "A short recent exposure and a prolonged exposure can share an endpoint concentration but have different response histories. Measure exposure duration and intracellular response rather than assigning fate from the final ligand value alone."
+          }
+        },
+        {
+          "title": "Connect epithelial shape to tube formation",
+          "body": "In primary neurulation, an epithelial neural plate bends and its folds approach and join. The eventual tube encloses a lumen while remaining organized as a polarized tissue. A transverse section emphasizes local wall shape; a longitudinal view reveals where closure has progressed along the axis. Neither view alone supplies the complete sequence.\n\nAn open profile at one level cannot automatically be classified as abnormal. First establish developmental stage, axial position and whether adjacent sections show the expected progression. Compare like planes and stages before comparing widths. A schematic sequence is useful for prediction, but it is not a calibrated time series from one embryo.",
+          "practice": {
+            "prompt": "List the additional metadata and sections needed before interpreting an open neural groove as a closure defect.",
+            "feedback": "Specify species, stage, axial level and cutting plane. Add adjacent sections and a longitudinal context. An early normal open groove and failed closure cannot be separated by a single open profile without these relationships."
+          }
+        },
+        {
+          "title": "Explain bending through cell shape and force",
+          "body": "Bending a neural sheet requires coordinated changes in cell geometry and its surrounding tissues. Apical constriction narrows the luminal end of a polarized cell; an organized actomyosin network can generate and transmit the forces associated with this change. A sheet of wedge-shaped cells is a useful local model, but closure also involves changes along the embryonic axis and interactions with neighbouring tissue.\n\nHaigo and colleagues found that Shroom could induce apical constriction in appropriately polarized epithelial cells, whereas non-polarized cells did not show the same response. Hildebrand related Shroom activity to apical actomyosin organization. These observations connect a molecular regulator to cell behaviour. They do not show that expression of one gene can replace tissue polarity, geometry and every other closure mechanism.",
+          "practice": {
+            "prompt": "Why is detecting a constriction regulator insufficient to predict bending in a non-polarized cell population?",
+            "feedback": "The cellular machinery must act within an organized apical/basal architecture. Expression, localization, cell polarity and tissue mechanics are distinct conditions; a molecular signal without the appropriate cellular context need not produce the same shape change."
+          }
+        },
+        {
+          "title": "Hinge points depend on axial context",
+          "body": "A median hinge and paired dorsolateral hinges describe locations of bending, not permanent named cell layers. Their prominence varies with axial level, developmental stage and species. Comparing a cranial fold with a caudal spinal fold as though they were identical cross-sections can hide this variation.\n\nIn mouse spinal neurulation, Ybot-Gonzalez and colleagues reported that BMP2 opposed dorsolateral bending and that Noggin-mediated BMP antagonism permitted it. Local signals therefore help regulate where tissue can bend. This is a bounded result about regional morphogenesis: it should not become the claim that all neural folds use one identical hinge arrangement, or that a ventral fate signal is simply a mechanical bending force.",
+          "practice": {
+            "prompt": "A slide lacks obvious dorsolateral hinges. What must be established before calling that a defect?",
+            "feedback": "Match axial level, stage, species and section plane to a relevant comparison. A regional variation in normal geometry cannot be diagnosed by imposing one schematic on every level."
+          }
+        },
+        {
+          "title": "Distinguish folding from secondary epithelialization",
+          "body": "The caudal neural tube is not explained adequately by repeating the image of a plate rolling closed. Secondary neurulation involves progenitor tissue becoming organized into an epithelium with a lumen that connects with the more rostral tube. The direction of a transition matters: epithelial-to-mesenchymal transition and mesenchymal-to-epithelial transition describe different changes in organization.\n\nThe chick junctional-neurulation study combined fate mapping with tissue analysis and described coordinated folding, cell ingression and addition at the transition. Treat this as a model-specific account of a transition region. Do not silently map every chick axial boundary or timing value onto a human embryo.",
+          "practice": {
+            "prompt": "Draw separate arrows for cell ingression, epithelial organization and lumen continuity; state which are observed in the cited model.",
+            "feedback": "Ingression describes cells entering a deeper compartment; epithelial organization establishes polarity and junctional relationships; lumen continuity is a tissue-level connection. The chick transition study combines these processes without making every human boundary identical."
+          }
+        },
+        {
+          "title": "Nuclear rows are not the same as cell layers",
+          "body": "Pseudostratified neuroepithelium can show nuclei at several depths even though the tissue retains an epithelial arrangement. A nuclear label outlines nuclear positions; it does not outline the complete boundaries or processes of each cell. Counting rows of bright dots is therefore an unreliable way to count epithelial layers.\n\nTo test the arrangement, combine the nuclear image with membrane or junction information, suitable section geometry and, where needed, serial optical planes. Trace a cell’s relationship to the apical and basal boundaries rather than assuming that the nearest bright nucleus defines its whole extent. Keep a static architectural question separate from a question about movement through time.",
+          "practice": {
+            "prompt": "Choose the additional image channel that would most directly help trace cell boundaries and explain what it still cannot show.",
+            "feedback": "A membrane or junction channel can clarify cell outlines and apical relationships. It still requires adequate optical planes and cannot demonstrate motion from one fixed frame."
+          }
+        },
+        {
+          "title": "Read the three labels as three measurements",
+          "body": "The image provider identifies blue DAPI signal with DNA, red phospho-histone-H3 labelling with mitosis, and green BrdU-associated labelling with DNA synthesis. Colour is the display convention assigned to a detected signal; neural tissue is not naturally blue, green and red.\n\nThe field shows different label distributions relative to the lumen. Describe those distributions before interpreting them. BrdU incorporation depends on the labelling interval and subsequent history; an endpoint image is not an instantaneous recording of every cell’s current state. Exact embryo stage, pulse/chase interval, section thickness and physical calibration are not supplied here. Avoid numerical cell-cycle timing, size or speed claims from this image.",
+          "practice": {
+            "prompt": "Match each channel to its target, then identify a biological question that the channel cannot answer alone.",
+            "feedback": "DAPI locates DNA, phospho-H3 supports a mitotic interpretation, and BrdU records incorporation during the labelling history. None alone traces ancestry, whole-cell boundaries or nuclear speed."
+          }
+        },
+        {
+          "title": "Preparation determines which questions remain answerable",
+          "body": "Before choosing a stain, decide whether the task concerns overall architecture, molecular detection or dynamics. A fixed section can preserve a spatial endpoint for morphological and immunolabelling comparisons. A time-lapse experiment must keep the preparation suitable for repeated observation and must track the same object through time. These are different experimental designs.\n\nRecord species, developmental stage, fixation or live preparation, section method, thickness, labelling interval, optical settings and scale. When those details are missing, keep the omission visible. For a staining comparison, use suitable positive and negative controls, and consider background, preservation and channel overlap. A bright signal is useful evidence only within a functioning detection system.",
+          "practice": {
+            "prompt": "Design a metadata sheet for a fixed developmental section and add the extra fields needed for a time-lapse study.",
+            "feedback": "Include species, stage, level, fixation, cutting method/thickness, labels, exposure and scale. Add acquisition interval, total observation time, live conditions, tracking rules and viability checks for a time series."
+          }
+        },
+        {
+          "title": "Make the control match the proposed explanation",
+          "body": "For fluorescence interpretation, separate a biological absence from a failed detection step. A specimen known to contain the target helps test whether the staining system works. A suitable negative control helps assess background or non-specific detection. A no-primary control can address some secondary-reagent background, but it does not alone establish the specificity of a primary antibody.\n\nFor multichannel work, inspect appropriate single-channel controls and acquisition settings before interpreting apparent overlap. Colocalization in one optical image is not proof of molecular binding, and a colour-combined field is not a lineage trace. Keep the unprocessed image and acquisition metadata available during analysis; changing exposure or display limits can change apparent intensity without changing the tissue.",
+          "practice": {
+            "prompt": "A target channel is dark but DAPI is bright. What conclusion is justified?",
+            "feedback": "Nuclei are detectable. The target could be absent, below detection, poorly preserved or unsuccessfully labelled. A functioning target-specific positive control and relevant negative controls are needed before choosing among those explanations."
+          }
+        },
+        {
+          "title": "Choose a stain for its target, not its familiar colour",
+          "body": "A nuclear counterstain helps locate nuclei and assess their distribution. Nissl staining emphasizes RNA-rich material, including abundant rough endoplasmic reticulum in neuronal somata. A myelin stain highlights a different tissue component and can make white matter look dark. The terms white and grey matter name tissue organization; they do not prescribe a universal colour in every preparation.\n\nA practical answer should connect target, observed distribution and anatomical interpretation. It should also name a limitation. For example, a label that helps outline neuronal somata does not establish the ancestry of every labelled cell. Comparing mature spinal-cord stains can help interpret tissue composition, but a mature cord is not a substitute for a staged embryonic specimen.",
+          "practice": {
+            "prompt": "Explain why the same spinal-cord region can appear pale in one method and dark in another without changing identity.",
+            "feedback": "A myelin-directed method and an RNA-directed method emphasize different components. Region identity follows architecture and composition rather than the darkness of a single preparation."
+          }
+        },
+        {
+          "title": "Separate nuclear movement from neuronal migration",
+          "body": "Interkinetic nuclear migration describes changes in nuclear position within proliferative neuroepithelium in relation to the cell cycle. It is a different question from a differentiating neuron leaving a proliferative region and settling elsewhere. A basal concentration of nuclei in a fixed image does not by itself distinguish these processes.\n\nIn chick neural-tube experiments, Ochoa and colleagues combined membrane/nuclear time-lapse tracking with perturbation, cell-cycle measurements and rescue. Vinculin depletion affected basal-to-apical movement and cell-cycle progression before gross epithelial disruption. This supports a bounded mechanistic interpretation in that preparation. The finding does not mean every pseudostratified tissue uses one identical motor mechanism.",
+          "practice": {
+            "prompt": "Name the observation that would distinguish delayed nuclear return from increased neuronal differentiation.",
+            "feedback": "Follow the same labelled nucleus and its enclosing cell through successive frames, alongside cell-cycle or differentiation measurements. A shift in an endpoint distribution alone cannot resolve delayed return versus a change in population composition."
+          }
+        },
+        {
+          "title": "Read the research movies before accepting the conclusion",
+          "body": "The paired clips below are original supplementary movies from Ochoa and colleagues, not animations. They show chick neural-tube slice preparations with membrane-associated GFP displayed green and H2B-RFP-labelled nuclei displayed magenta. The apical side is left and the basal side right. Video 5 is the shControl condition; Video 7 is the shVCL condition. Both are described with DMSO. The same fluorescent colours occur in both conditions, so colour alone does not identify the perturbation.\n\nThe study describes electroporation at Hamburger–Hamilton stage 12, slice preparation 8–10 hours later and five-minute acquisition intervals. These accelerated clips do not run at biological time. Track an identified nucleus relative to the membrane and tissue boundaries. A traced path is not automatically a speed measurement: calibrated distance, acquisition timing, tracking choices and matched observation intervals are needed. The original movies are low resolution; enlarging them does not add cellular detail.",
+          "practice": {
+            "prompt": "Before comparing the two trajectories, record the condition, orientation, tracked object, spatial calibration and acquisition interval.",
+            "feedback": "Use the written condition labels, not green versus magenta, to distinguish groups. The tracked object is a nucleus within labelled epithelium. The native clips provide qualitative motion evidence; do not infer a speed ratio from their different playback durations."
+          }
+        },
+        {
+          "title": "Perturbation, rescue and replication answer different questions",
+          "body": "A depletion experiment asks what changes when the target is reduced. Its interpretation depends on confirming that reduction and checking alternatives such as loss of tissue integrity or general toxicity. A fluorescent reporter can identify transfected cells without proving that the target protein fell by a particular amount.\n\nIn the vinculin study, tracking, cell-cycle measurements and rescue experiments were used together. Recovery after restoring an appropriate target construct strengthens a specificity argument, but rescue still requires suitable expression and comparison conditions. Two selected supplementary clips illustrate the experiment; they are not the full evidence for a population effect. Evaluate independent preparations, the numbers of cells sampled within each, exclusions and variation. An embryo, a slice, a field and a tracked nucleus are different sampling levels.",
+          "practice": {
+            "prompt": "Does following 100 nuclei in a single slice establish an effect across 100 embryos?",
+            "feedback": "No. Those nuclei share a preparation and experimental history. Preserve the sampling hierarchy and compare independent biological preparations; a large cell count alone cannot replace biological replication."
+          }
+        },
+        {
+          "title": "Follow changing composition across the wall",
+          "body": "In the developing spinal cord, the ventricular region is associated with proliferative progenitors near the lumen. Differentiating neuronal cell bodies accumulate in the mantle region, and the outer marginal region becomes rich in processes. Follow what is being added to each compartment rather than memorizing three coloured rings.\n\nThese are developmental tissue relationships, not proof that any unlabelled outer band is mature myelinated white matter. Axons and their later myelination are distinct features. Likewise, the simple spinal arrangement cannot be transferred unchanged to cerebral or cerebellar development, where migration and additional proliferative populations reorganize the wall. Use the existing brain-vesicle lesson for regional mapping, then return here for cellular interpretation.",
+          "practice": {
+            "prompt": "Explain why an axon-rich embryonic region and mature myelinated white matter are related but not interchangeable observations.",
+            "feedback": "Axons can accumulate before mature myelin is present. Myelination adds another cell interaction and tissue component; it should be tested rather than inferred from an outer location."
+          }
+        },
+        {
+          "title": "A supporting cell’s function does not establish its origin",
+          "body": "The label glia includes several cell populations. CNS macroglial populations such as astrocytes and oligodendrocytes belong to neural-tube developmental lineages, whereas microglia have a myeloid developmental history. Similar location within the CNS does not make these origins identical.\n\nGinhoux and colleagues used temporally controlled lineage tracing in mice to follow early myeloid precursors and their descendants. Early labelling contributed substantially to later microglia; labelling efficiency was incomplete, so an unlabelled cell could not simply be assigned a different origin. The timing and specificity of the tracing system are part of the evidence. This is stronger ancestry evidence than finding two adult cells with a shared marker or similar shape.",
+          "practice": {
+            "prompt": "Explain why “not labelled” is not automatically equivalent to “not descended from the labelled population.”",
+            "feedback": "A tracing method may label only a fraction of the relevant progenitors. Check induction timing, specificity and efficiency before treating an unlabelled descendant as evidence of a separate origin."
+          }
+        },
+        {
+          "title": "Developmental origin is not a promise of adult regeneration",
+          "body": "Radial glial populations can participate in developmental progenitor and scaffolding roles. Mature ependymal cells line ventricular surfaces and have specialized functions, including ciliary relationships with cerebrospinal fluid. These roles should not be collapsed into a claim that the adult lining routinely makes replacement neurons.\n\nSpassky and colleagues combined birthdating, ultrastructure and genetic labelling in mice. Their work supported radial-glial contributions to ependymal cells and found no proliferation of mature multiciliated ependymal cells in the tested normal adult conditions. Developmental ancestry, current proliferation and regenerative capacity are three separate claims. Evidence for one does not establish all three, and the animal context must remain explicit.",
+          "practice": {
+            "prompt": "State one experiment for ancestry, one for proliferation and one for functional repair; explain why none substitutes for the others.",
+            "feedback": "Time-controlled lineage tracing tests ancestry, proliferation labels or observed division test cell-cycle activity, and repair experiments test restored function. Developmental ancestry does not establish adult neuronal replacement."
+          }
+        },
+        {
+          "title": "Separate the neuronal soma, axon and supporting cell",
+          "body": "A peripheral nerve can contain axons whose cell bodies developed within the neural tube. Its location in the peripheral nervous system does not give every component a neural-crest origin. Conversely, many sensory and autonomic ganglion neurons and peripheral supporting cells have neural-crest relationships, while cranial sensory placodes contribute additional populations.\n\nAlways specify the object being assigned: neuronal soma, axon, glial cell, sensory epithelium or surrounding connective tissue. Trace one object from origin to adult location before adding another. The informal phrase “fourth germ layer” should not be used as a literal replacement for the three definitive germ layers. It obscures, rather than explains, the developmental relationship of neural crest to ectoderm.",
+          "practice": {
+            "prompt": "Explain how a spinal motor axon can lie in a peripheral nerve without its cell body being a neural-crest derivative.",
+            "feedback": "The motor soma differentiates within a ventral neural-tube territory and extends an axon outward. Schwann cells along that axon have a different developmental relationship. Location in the same nerve does not erase that distinction."
+          }
+        },
+        {
+          "title": "Build an argument from several kinds of evidence",
+          "body": "Start with an observation, then propose alternatives. A marker localizes a detected target. A perturbation tests the consequences of changing a system. A rescue can strengthen a specificity argument, but only with appropriate expression, timing and control conditions. A lineage experiment asks about ancestry. A movie supplies temporal information that a fixed field lacks.\n\nDo not treat a research figure as a decorative confirmation of a textbook statement. Identify the experimental unit, what was measured, which comparison was made and what remains unresolved. Multiple cells from one preparation are not automatically independent biological samples. Distinguish a model-system result from a directly demonstrated process in human development.",
+          "practice": {
+            "prompt": "For one developmental claim, build an evidence table with observation, alternative explanation, discriminating experiment and remaining limitation.",
+            "feedback": "For nuclear return, compare tracks under control, depletion and rescue conditions, with target reduction and epithelial integrity measured. Keep the embryo/preparation as a biological sampling level; many tracks from one slice do not supply many embryos."
+          }
+        },
+        {
+          "title": "Build a defensible practical answer",
+          "body": "A strong identification answer has an ordered structure. First describe the preparation and visible architecture. Next locate the lumen and epithelial wall, stating which axes are secure and which require wider landmarks. Then interpret the labels using their targets and labelling history. Finally connect the observation to a developmental process while naming what the image cannot establish.\n\nFor this specimen, a defensible answer is “provider-identified chick neural tube, with nuclei distributed through a thick wall and different proliferation-associated labels relative to the lumen.” It is not “a human embryo of an exact day undergoing a measured nuclear migration rate.” To investigate movement, use time-resolved tracking; to investigate ancestry, use a lineage design; to identify a whole spinal level, obtain wider and serial anatomical context. These additions answer different missing questions.",
+          "practice": {
+            "prompt": "Write a four-sentence answer: visible structure, stain interpretation, developmental connection and one missing test.",
+            "feedback": "Keep observation and inference separate. The fixed image supports spatial relationships and target distributions; it does not show a trajectory or establish cell ancestry. Select a missing test that directly addresses the uncertainty you identified."
+          }
         }
       ],
       "question": {
@@ -3297,12 +3473,77 @@
         "answer": "Cell bodies accumulate in the mantle zone, contributing gray matter. Axons occupy the marginal zone, contributing white matter."
       },
       "related": [
-        "anatomy-embryology",
+        "neural-tube-development",
         "meiosis",
         "placenta"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 50,
+      "prerequisites": [
+        "microscopy",
+        "epithelia",
+        "neural-tube-development"
+      ],
+      "objectives": [
+        "Identify luminal and outer boundaries without confusing epithelial polarity with dorsal/ventral position.",
+        "Explain induction, regional folding, spinal wall organization and the distinct origins of neural populations.",
+        "Interpret nuclear, cell-cycle and tissue stains using preparation and control information.",
+        "Compare fixed images, live tracking, perturbation, rescue and lineage evidence without overstating what each establishes."
+      ],
+      "workedExample": {
+        "title": "From a labelled field to a testable developmental claim",
+        "prompt": "A fixed chick neural-tube section has red-labelled profiles near the lumen and green-labelled profiles farther out. A learner says it proves how fast every neuron migrates. Build a better interpretation.",
+        "solution": [
+          "Describe the visible lumen, wall and signal distributions before assigning identities.",
+          "Use the provider key: phospho-H3-associated red signal and BrdU-associated green signal report different labelling relationships, not complete cell outlines.",
+          "The unknown pulse/chase interval and fixed endpoint prevent a measured movement rate. Nuclear movement within a progenitor also differs from neuronal migration.",
+          "Use tracked live nuclei with calibrated spatial and temporal information to test movement; use an independent lineage design to test ancestry."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Trace the soma and central process of a primary spinal sensory neuron, then contrast a spinal motor neuron.",
+          "answer": "The sensory soma is in the dorsal-root ganglion and its central process enters the dorsal cord. The motor soma remains in the ventral cord and sends an axon outward through the ventral root. Both axons can later share a mixed peripheral nerve."
+        },
+        {
+          "prompt": "Why is detecting a constriction regulator insufficient to predict bending in a non-polarized cell population?",
+          "answer": "The cellular machinery must act within an organized apical/basal architecture. Expression, localization, cell polarity and tissue mechanics are distinct conditions; a molecular signal without the appropriate cellular context need not produce the same shape change."
+        },
+        {
+          "prompt": "Match each channel to its target, then identify a biological question that the channel cannot answer alone.",
+          "answer": "DAPI locates DNA, phospho-H3 supports a mitotic interpretation, and BrdU records incorporation during the labelling history. None alone traces ancestry, whole-cell boundaries or nuclear speed."
+        },
+        {
+          "prompt": "Explain why the same spinal-cord region can appear pale in one method and dark in another without changing identity.",
+          "answer": "A myelin-directed method and an RNA-directed method emphasize different components. Region identity follows architecture and composition rather than the darkness of a single preparation."
+        },
+        {
+          "prompt": "Before comparing the two trajectories, record the condition, orientation, tracked object, spatial calibration and acquisition interval.",
+          "answer": "Use the written condition labels, not green versus magenta, to distinguish groups. The tracked object is a nucleus within labelled epithelium. The native clips provide qualitative motion evidence; do not infer a speed ratio from their different playback durations."
+        },
+        {
+          "prompt": "Does following 100 nuclei in a single slice establish an effect across 100 embryos?",
+          "answer": "No. Those nuclei share a preparation and experimental history. Preserve the sampling hierarchy and compare independent biological preparations; a large cell count alone cannot replace biological replication."
+        },
+        {
+          "prompt": "Explain why “not labelled” is not automatically equivalent to “not descended from the labelled population.”",
+          "answer": "A tracing method may label only a fraction of the relevant progenitors. Check induction timing, specificity and efficiency before treating an unlabelled descendant as evidence of a separate origin."
+        },
+        {
+          "prompt": "State one experiment for ancestry, one for proliferation and one for functional repair; explain why none substitutes for the others.",
+          "answer": "Time-controlled lineage tracing tests ancestry, proliferation labels or observed division test cell-cycle activity, and repair experiments test restored function. Developmental ancestry does not establish adult neuronal replacement."
+        }
+      ],
+      "summaryChecklist": [
+        "Orient the lumen and distinguish apical/basal from dorsal/ventral.",
+        "Place a motor soma in both wall-zone and plate coordinates.",
+        "Explain why nuclear rows do not prove epithelial layering.",
+        "Connect each label to its target and one limitation.",
+        "Distinguish neural induction, cell-shape change and regional patterning.",
+        "Trace sensory soma, motor axon and Schwann-cell origins separately.",
+        "Explain why fixed fields, movies and lineage experiments answer different questions.",
+        "Evaluate a perturbation with target validation, controls, rescue and independent sampling."
+      ]
     },
     {
       "id": "dna-replication",

@@ -17,6 +17,13 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
   }, []);
   const region = data.regions[selected];
   const regionCount = data.regions.length === 4 ? "four" : "five";
+  const portrait = figure.height > figure.width;
+  const description = <div id={`${scope}-region-description`} className={styles.description} aria-live="polite" aria-atomic="true">
+    <h3>{selected + 1}. {region.label}</h3>
+    <p><strong>Observe:</strong> {region.observation}</p>
+    <p><strong>Interpret:</strong> {region.interpretation}</p>
+    <p><strong>Resolution limit:</strong> {region.limit}</p>
+  </div>;
   return <section className={`study-panel ${styles.explorer}`} aria-labelledby={`${scope}-specimen-title`}>
     <p className="eyebrow">Read a real section</p>
     <h2 id={`${scope}-specimen-title`}>{data.title}</h2>
@@ -24,8 +31,9 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     <div className={styles.controls} role="group" aria-label="Specimen regions">
       {data.regions.map((item, index) => <button key={item.id} type="button" aria-pressed={selected === index} aria-controls={`${scope}-region-description`} onClick={() => setSelected(index)}>{index + 1}. {item.label}</button>)}
     </div>
+    {portrait && description}
     <figure id={`figure-${figure.id}`}>
-      <div className={styles.imageFrame}>
+      <div className={styles.imageFrame} style={portrait ? {maxWidth: "28rem", marginInline: "auto"} : undefined}>
         {unavailable ? <p role="status">The specimen image could not load. The complete descriptions below remain available. You can also open the original-sized image or its creator’s source.</p> : <>
           {/* The approved JPEG retains the original diagnostic pixels; browser sizing does not recode it. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -41,12 +49,7 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
       <a href={figure.src} download>Download credited specimen image</a>
     </div>
     <p className={styles.credit}>{figure.rights} <a href={figure.sourceUrl}>Creator and source</a> · <a href={figure.licenseUrl}>{licenseLabel}</a>. {figure.modifications}</p>
-    <div id={`${scope}-region-description`} className={styles.description} aria-live="polite" aria-atomic="true">
-      <h3>{selected + 1}. {region.label}</h3>
-      <p><strong>Observe:</strong> {region.observation}</p>
-      <p><strong>Interpret:</strong> {region.interpretation}</p>
-      <p><strong>Resolution limit:</strong> {region.limit}</p>
-    </div>
+    {!portrait && description}
     <details><summary>Read all {regionCount} region explanations</summary>
       <ol>{data.regions.map(item => <li key={item.id}><h3>{item.label}</h3><p>{item.observation}</p><p>{item.interpretation}</p><p><strong>Limit:</strong> {item.limit}</p></li>)}</ol>
     </details>

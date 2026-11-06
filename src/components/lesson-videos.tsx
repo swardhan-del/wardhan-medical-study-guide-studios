@@ -5,8 +5,8 @@ export function LessonVideos({ lessonId }: { lessonId: string }) {
   const videos = videosForLesson(lessonId);
   if (!videos.length) return null;
   return (
-    <section id="lesson-videos" aria-label="Related videos">
-      <h2>Watch this topic</h2>
+    <section id="lesson-videos" aria-label="Related videos" className={videos.every(video => video.researchContext) ? "research-video-comparison" : undefined}>
+      <h2>{videos.every(video => video.researchContext) ? "Compare the research movies" : "Watch this topic"}</h2>
       {videos.map((video) => (
         <article key={video.id}>
           <h3>
