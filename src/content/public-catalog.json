@@ -4360,22 +4360,27 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-06",
+      "updatedAt": "2026-11-06",
       "bytes": 0,
       "id": "blood-marrow",
-      "title": "Blood cells and bone marrow",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
       "subject": "histology",
       "kind": "Study lesson",
       "format": "WEB",
-      "summary": "Read nuclear shape, cytoplasm and tissue context to distinguish circulating cells from developing marrow.",
+      "summary": "Read blood smears and marrow sections, explain staining and cell maturation, and distinguish embryonic blood formation from functional stem-cell evidence.",
       "tags": [
         "Cells and tissues",
         "Organ histology",
         "blood",
         "hematopoiesis",
-        "bone marrow"
+        "bone marrow",
+        "embryology",
+        "blood smear",
+        "Romanowsky stain",
+        "cell maturation",
+        "stem cells"
       ],
-      "minutes": 5
+      "minutes": 35
     },
     {
       "status": "public",

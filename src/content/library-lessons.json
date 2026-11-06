@@ -1356,29 +1356,166 @@
     {
       "id": "blood-marrow",
       "subject": "histology",
-      "title": "Blood cells and bone marrow",
-      "summary": "Read nuclear shape, cytoplasm and tissue context to distinguish circulating cells from developing marrow.",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "summary": "Read blood smears and marrow sections, explain staining and cell maturation, and distinguish embryonic blood formation from functional stem-cell evidence.",
       "tags": [
         "Cells and tissues",
         "Organ histology",
         "blood",
         "hematopoiesis",
-        "bone marrow"
+        "bone marrow",
+        "embryology",
+        "blood smear",
+        "Romanowsky stain",
+        "cell maturation",
+        "stem cells"
       ],
       "source": "histology",
       "section": "Blood and Bone Marrow; Blood Smear and Bone-Marrow Practical Expansion",
       "steps": [
         {
-          "title": "Orient the specimen",
-          "body": "A blood smear spreads circulating cells into a thin layer. Marrow is a tissue containing mixed developing cells, vascular sinusoids, adipocytes and supporting stroma. A smear and a marrow section answer different identification questions."
+          "title": "Choose the preparation that can answer your question",
+          "body": "A peripheral blood smear shows cells sampled from circulation. A marrow aspirate smear spreads developing cells so that nuclear chromatin, cytoplasmic color and granules can be compared. A marrow tissue section preserves spatial relationships: trabeculae, hematopoietic tissue, fat and vessels. These preparations are complementary. The clearest individual cell image may provide the least information about where that cell sat in the intact organ.\n\nBegin a practical answer by naming the preparation, then state the question it can support. For “which maturation stage is this?”, seek well-preserved cells in a suitable smear. For “is the marrow diffusely replaced or arranged around recognizable structures?”, architecture matters. A close crop of scattered cells cannot answer a whole-organ distribution question. Record the tissue context before assigning a cell name.",
+          "practice": {
+            "prompt": "Why does an excellent marrow aspirate not establish the spatial pattern of a tissue infiltrate?",
+            "feedback": "Spreading improves individual-cell detail but disrupts the original architecture. A tissue section and appropriate sampling are needed to assess distribution."
+          }
         },
         {
-          "title": "Use a combination of clues",
-          "body": "Mature erythrocytes are anucleate; neutrophils have segmented nuclei; eosinophils have prominent eosinophilic granules. Small lymphocytes often have a dense round nucleus with scant cytoplasm, but morphology alone does not reliably distinguish B cells from T cells."
+          "title": "Read the smear at low power before choosing cells",
+          "body": "Survey the slide before increasing magnification. Find a region where red cells are largely separated and their outlines can be compared. Overlapping thick regions hide boundaries; a distorted edge can exaggerate shape changes and collect clumps. Inspect more than one suitable field. A visually striking field is not necessarily representative of the specimen.\n\nUse nearby red cells as a rough comparison for leukocyte size, not as a calibrated ruler. Describe the nucleus, chromatin, amount of cytoplasm and granules together. If a cell is crushed or its border is lost, record that limitation instead of forcing a confident identity. Keep a population description separate from a diagnosis: a change in cell proportions requires an appropriate count and clinical context.",
+          "practice": {
+            "prompt": "One damaged cell at the edge has an unusual nuclear shape. What is the next defensible step?",
+            "feedback": "Find additional intact cells in a suitable region and assess the population. Do not build an identification or diagnosis around a preparation artefact."
+          }
         },
         {
-          "title": "Trace production",
-          "body": "Marrow stem and progenitor populations give rise to blood-cell lineages. Very large megakaryocytes produce platelets by cytoplasmic fragmentation. Erythroid maturation progressively condenses the nucleus and increases hemoglobin before the nucleus is expelled."
+          "title": "Explain why Romanowsky stains reveal more than one color",
+          "body": "Wright, Wright–Giemsa and May–Grünwald–Giemsa belong to the Romanowsky family. Their dye systems combine eosin with basic thiazine dyes. Nuclear material and cytoplasmic RNA favor blue-purple appearances, while hemoglobin-rich cytoplasm and eosinophilic granules favor pink-orange appearances. The staining reaction creates contrast among structures; it does not directly measure a cell’s function.\n\nFixation, buffer pH, dye composition and exposure influence the result. A validated laboratory method determines the sequence and timings for its particular reagent. Do not combine instructions from different kits into a universal recipe. When the whole slide has an unexpected color cast, inspect the preparation and controls before deciding that every cell has changed biologically.",
+          "practice": {
+            "prompt": "Why is “all blue cells are lymphocytes” an unsafe rule?",
+            "feedback": "Blue staining reflects chemical affinity, including RNA-rich cytoplasm and nuclear material, rather than a unique lineage. Several immature cells may be basophilic."
+          }
+        },
+        {
+          "title": "Separate erythrocyte appearance from a maturation claim",
+          "body": "Most cells in a routine adult peripheral smear are erythrocytes: anucleate profiles whose hemoglobin-rich cytoplasm appears pink with a paler center in suitable preparations. Compare their size, shape and central pallor across a population. A crowded film or damaged region can alter those appearances. A single pale or oddly shaped profile is not enough to establish a disease mechanism.\n\nReticulocytes are recently produced, anucleate red cells that retain RNA. A supravital preparation can reveal that residual material before fixation; it is a different method from ordinary Romanowsky staining. Polychromasia can suggest younger red cells, but an impression of bluish color is not a substitute for a defined reticulocyte measurement. Always name the stain and readout used.",
+          "practice": {
+            "prompt": "Does a reticulocyte retain a nucleus because it is immature?",
+            "feedback": "No. It is already anucleate. Residual RNA and other maturation features distinguish it from a fully mature erythrocyte."
+          }
+        },
+        {
+          "title": "Distinguish granulocytes by nucleus and granules together",
+          "body": "A mature neutrophil usually has a segmented nucleus connected by thin chromatin bridges and relatively inconspicuous fine cytoplasmic granules. An eosinophil typically combines a bilobed nucleus with conspicuous orange-red granules. In a basophil, coarse dark granules can obscure nuclear detail. These are patterns to assess together, not an identification based on one colored dot.\n\nA band-shaped neutrophil nucleus has not formed the separate lobes of the segmented pattern. Nuclear maturation does not mean that a cell divides into multiple cells or possesses multiple independent nuclei. Conversely, a bilobed profile alone does not prove eosinophil identity: inspect the granules and surrounding cytoplasm. Describe the evidence even when a stain makes one clue difficult to see.",
+          "practice": {
+            "prompt": "A cell has two apparent nuclear lobes but lacks clearly orange-red granules. Is eosinophil identification secure?",
+            "feedback": "No. Nuclear lobation must be interpreted with cytoplasmic granules and preservation. A two-lobed appearance alone is not specific."
+          }
+        },
+        {
+          "title": "Compare lymphocytes, monocytes and plasma-cell differentiation",
+          "body": "A small lymphocyte often has densely condensed round nuclear chromatin and only a narrow rim of cytoplasm. Monocytes are generally larger, with more cytoplasm and a folded or indented nucleus whose chromatin is less compact. Size overlaps, and activated lymphocytes can depart substantially from the small resting pattern. Use several features rather than defining every large cell as a monocyte.\n\nPlasma-cell differentiation changes the cell toward antibody secretion: abundant rough endoplasmic reticulum supports basophilic cytoplasm, and the Golgi region may appear paler beside an eccentric nucleus. This is a different question from distinguishing resting B and T lymphocytes, whose routine appearances overlap. Appropriate marker combinations and context are needed for that distinction; ordinary cell color does not identify an antigen receptor.",
+          "practice": {
+            "prompt": "Can a small lymphocyte be labeled a B cell from its dense round nucleus alone?",
+            "feedback": "No. B and T cells overlap morphologically. The feature supports a lymphocyte description, not a definitive lymphocyte subset."
+          }
+        },
+        {
+          "title": "Find platelets without mistaking debris for a cell lineage",
+          "body": "Platelets are small anucleate cytoplasmic fragments, substantially smaller than nearby red cells in an ordinary smear. Look for a consistent granular appearance and inspect the wider preparation for clumping. A platelet cluster can distort a local impression of number; stain deposits and damaged cellular material can also confuse identification.\n\nTheir origin is the megakaryocyte, not fragmentation of an erythrocyte nucleus. A morphology exercise asks what is present in the image. It does not establish whether platelet adhesion, secretion or aggregation is functioning normally. Keep these readouts separate: shape and number, marrow production, and functional activation are related but distinct biological questions.",
+          "practice": {
+            "prompt": "Does a field containing platelet clumps establish an increased circulating platelet count?",
+            "feedback": "No. Clumping and uneven distribution can mislead a field-level estimate. A valid count and specimen assessment are needed."
+          }
+        },
+        {
+          "title": "Map marrow architecture before assigning maturation stages",
+          "body": "At low power in a marrow section, locate bony trabeculae and the intervening tissue. Identify adipocyte spaces, hematopoietic cellular regions and thin-walled sinusoidal profiles. Developing cells occupy tissue outside the vascular lumina; mature cells enter the circulation across the vascular interface. This arrangement explains why a smear of circulating blood and a marrow section look so different.\n\nLarge megakaryocytes are often easier to recognize than the many densely packed developing cells. H&E sections do not resolve every early lineage reliably. Clear adipocyte spaces reflect lipid extraction during routine processing; they are not automatically empty vessels. Assess more than one field and relate cellularity to specimen site, age and adequacy rather than declaring all fat abnormal.",
+          "practice": {
+            "prompt": "What separates an adipocyte space from a sinusoid in a tissue interpretation?",
+            "feedback": "Use its cellular boundary, peripheral nucleus when visible, relationship to other adipocytes and vascular contents. A clear space by itself is not a vessel."
+          }
+        },
+        {
+          "title": "Follow erythropoiesis as coordinated nuclear and cytoplasmic change",
+          "body": "The conventional sequence is proerythroblast, basophilic erythroblast, polychromatic erythroblast, orthochromatic erythroblast, reticulocyte and mature erythrocyte. During this progression, the nucleus becomes smaller and its chromatin more condensed, while hemoglobin accumulation changes the cytoplasm from strongly basophilic toward pink. The late erythroblast expels its condensed nucleus; the reticulocyte subsequently completes maturation.\n\nLearn the direction of change before trying to memorize every name from a single field. A small dense nucleus without visible cytoplasm might be a late erythroid cell, a lymphocyte or a section through part of another cell. Compare neighboring stages in a well-preserved smear. A maturation series is a population relationship, not a claim that one still image records a cell changing over time.",
+          "practice": {
+            "prompt": "Why is nuclear condensation alone insufficient to identify a late erythroblast?",
+            "feedback": "Dense chromatin occurs in other cells. Cytoplasmic maturation, size, preparation and neighboring stages provide the additional evidence."
+          }
+        },
+        {
+          "title": "Follow granulopoiesis without confusing it with erythropoiesis",
+          "body": "The conventional granulocyte sequence runs through myeloblast, promyelocyte, myelocyte, metamyelocyte, band form and segmented cell. Primary azurophilic granules appear before the distinctive granule patterns used to recognize the granulocyte branches. Nuclear indentation and eventual segmentation accompany later maturation, while the earlier proliferative stages differ from the later maturation compartment.\n\nThe contrast with erythropoiesis is useful: granulocytic maturation develops granule patterns and retains a nucleus, whereas erythroid maturation accumulates hemoglobin and ultimately expels the nucleus. “More mature” therefore does not correspond to one universal nuclear shape for all blood cells. In a crowded section, name only the stage supported by the visible evidence and use a suitable smear when finer distinction is required.",
+          "practice": {
+            "prompt": "Why should a segmented nucleus not be placed at the end of an erythroid maturation series?",
+            "feedback": "Segmentation belongs to granulocyte maturation. Late erythroid differentiation condenses and expels the nucleus instead."
+          }
+        },
+        {
+          "title": "Explain the unusual cell cycle of megakaryocytes",
+          "body": "Megakaryocytes enlarge and become polyploid through endomitosis: DNA replication and nuclear changes occur without ordinary completion of cell division into separate daughter cells. The mature cell has abundant cytoplasm and a large, lobulated nuclear structure. Cytoplasmic extensions participate in platelet production at the vascular interface.\n\nDo not confuse this polyploid cell with an osteoclast, a multinucleated bone-resorbing cell typically related to a bone surface. Location and nuclear organization are useful together. Thrombopoietin acts through the MPL receptor and supports megakaryocyte development and platelet production. Seeing one large cell does not measure thrombopoietin concentration or demonstrate its signaling activity; those require different observations.",
+          "practice": {
+            "prompt": "Why are “many separate nuclei” and “one lobulated polyploid nucleus” not interchangeable descriptions?",
+            "feedback": "They imply different cellular organization. Use location and visible nuclear boundaries as well as overall size when comparing osteoclasts and megakaryocytes."
+          }
+        },
+        {
+          "title": "Connect erythroid production to a signal rather than to color alone",
+          "body": "Erythropoietin binds its receptor on responsive erythroid precursors and supports their survival and differentiation. In adult physiology, renal oxygen sensing contributes to regulation of this signal. The marrow response therefore links an organ-level demand for oxygen delivery to a changing population of developing red cells.\n\nA pink cytoplasm shows staining associated with hemoglobin-rich material; it is not a direct assay of erythropoietin signaling. Likewise, a blood count records a population present at sampling, not simply the current rate of production. Production, maturation, release and survival all affect the result. Explain the proposed mechanism, then identify which additional measurement would test it.",
+          "practice": {
+            "prompt": "Does a single hemoglobin-rich erythroblast prove that erythropoietin is elevated?",
+            "feedback": "No. The cell’s maturation appearance is not a hormone measurement or a direct readout of receptor activation."
+          }
+        },
+        {
+          "title": "Distinguish a stem cell, a progenitor and a recognizable precursor",
+          "body": "A hematopoietic stem cell is defined by sustained self-renewal and production of multiple blood lineages under an appropriate functional test. A progenitor has a more restricted developmental or self-renewal capacity. A morphologically recognizable precursor is identified later in differentiation by features such as chromatin, cytoplasm and granules. These categories answer different questions.\n\nHematopoietic multipotency is not embryonic pluripotency: producing blood lineages does not establish the capacity to generate all body tissues. An exam diagram with two branching arms is a useful organizational model, not proof that every human blood cell follows one rigid path visible under a microscope. Describe what the model summarizes and what experiment would be needed to support a more specific lineage claim.",
+          "practice": {
+            "prompt": "Can an H&E image of a small marrow cell establish long-term self-renewal?",
+            "feedback": "No. Appearance does not measure a sustained functional property. Appropriate lineage and repopulation evidence is needed."
+          }
+        },
+        {
+          "title": "Trace embryonic sites without treating them as an instantaneous relay",
+          "body": "Blood development begins before adult marrow becomes the main production site. Early extraembryonic hematopoiesis, intraembryonic stem-cell emergence, fetal-liver expansion and later marrow colonization are overlapping developmental processes. The liver is therefore an important hematopoietic environment before its adult roles dominate the way it is taught in physiology.\n\nSeparate three ideas on a developmental map: where a cell population first arises, where it expands, and where its descendants mature or function. A fetal liver containing blood precursors is not evidence that hepatocytes have become blood cells. Similarly, lymphoid precursors and the epithelial framework of the thymus have different developmental histories. Always specify whether an age means postfertilization/postovulatory age, obstetric gestational age or a morphological Carnegie stage.",
+          "practice": {
+            "prompt": "Why is “yolk sac → liver → marrow” an incomplete account of blood development?",
+            "feedback": "It hides overlapping waves, stem-cell emergence and the distinction between origin, expansion and later residence. It is a location summary, not a complete lineage experiment."
+          }
+        },
+        {
+          "title": "Research bridge: first blood formation is not first detectable HSC activity",
+          "body": "Ivanovs and colleagues studied early human embryonic tissues using transplantation into immunodeficient mice. Their 2011 work located early long-term, multilineage repopulating activity in the aorta–gonad–mesonephros region. This functional result concerns the activity detectable by that assay; it does not date the first formation of any blood cell.\n\nDonor identity matters as well as persistence. The investigators used genetic comparisons to distinguish embryonic donor cells from maternal contributions. A transient human T-cell signal is not automatically evidence of an embryonic self-renewing HSC. Interpret an experiment by asking what was transplanted, whose cells were detected, which lineages appeared and how long they persisted.",
+          "practice": {
+            "prompt": "Why is detecting human cells after transplantation insufficient on its own?",
+            "feedback": "The cells must be assigned to the intended donor, and persistence and lineage output must fit the claimed function. A transient single-lineage result supports a narrower conclusion."
+          }
+        },
+        {
+          "title": "Research bridge: a marker panel enriches a population without defining every cell",
+          "body": "In their 2014 human embryo study, Ivanovs and colleagues separated ventral and dorsal aortic regions and combined phenotype, colony formation and transplantation. Long-term multilineage engraftment was detected from the ventral region in six of ten experiments at Carnegie stages 15–17. The marker-defined population also contained committed colony-forming progenitors.\n\nCD34 alone therefore does not mean “definitive HSC,” and a multi-marker gate is not automatically pure. A colony assay and long-term transplantation measure different capacities. The study also reported that an antibody used during selection could interfere with repopulation. A negative result must be interpreted with assay perturbation and sensitivity in mind; it is not universal proof that the starting tissue lacked the relevant cells.",
+          "practice": {
+            "prompt": "If a sorted CD34-positive population forms colonies, has long-term HSC identity been demonstrated?",
+            "feedback": "No. Colony formation can reflect committed progenitors. The proposed stem-cell function requires the relevant longer-term evidence."
+          }
+        },
+        {
+          "title": "Treat the marrow niche as a functional relationship",
+          "body": "A niche is an environment that supports or regulates a cell’s behavior, not simply an empty anatomical pocket. In a mouse study, Ding and colleagues examined stem cell factor expression and selectively removed it from candidate supporting populations. Their results supported contributions from endothelial and perivascular cells to HSC maintenance.\n\nThis is stronger than observing two cells near each other, because it connects a defined perturbation to an outcome. It remains a result from a particular experimental model. An adult human H&E section cannot demonstrate the same signaling mechanism, and proximity to bone alone does not establish an exclusive “endosteal niche.” Ask which support factor, which source cells and which functional outcome were actually tested.",
+          "practice": {
+            "prompt": "What would strengthen a claim that a neighboring cell supports HSC maintenance?",
+            "feedback": "A defined change in the candidate support pathway, an appropriate comparison and a measured HSC outcome provide more evidence than proximity alone."
+          }
+        },
+        {
+          "title": "Finish with a defensible practical explanation",
+          "body": "Use a compact chain of reasoning: preparation → tissue context → observed features → most likely identity → closest alternative → unresolved limit. For a giant cell in marrow, describe its size relative to surrounding cells, cytoplasm, nuclear configuration and relationship to bone or vessels before naming it. For a blood cell, compare nuclear shape, chromatin, granules and cytoplasmic amount.\n\nThen connect structure to development or function without claiming more than the image shows. A megakaryocyte interpretation supports a link to platelet production; it does not prove normal platelet function. A lymphocyte interpretation supports immune-cell identity; it does not distinguish B from T lineage. The strongest practical answer names both the evidence and the boundary of that evidence.",
+          "practice": {
+            "prompt": "Give one observation, one interpretation and one limit for a giant marrow cell.",
+            "feedback": "Example: abundant cytoplasm surrounding a very large lobulated nucleus in marrow; likely megakaryocyte; the image alone does not measure platelet output or function."
+          }
         }
       ],
       "question": {
@@ -1405,11 +1542,53 @@
       },
       "related": [
         "lymphoid-organs",
+        "cartilage-bone",
         "innate-adaptive",
         "nitrogen-metabolism"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-06",
+      "minutes": 35,
+      "objectives": [
+        "Choose a preparation and readable field for a specific identification question.",
+        "Distinguish blood-cell patterns using nuclear and cytoplasmic evidence together.",
+        "Explain erythroid, granulocytic and megakaryocytic maturation.",
+        "Trace embryonic hematopoietic sites while distinguishing origin, expansion and residence.",
+        "Interpret marker, colony and transplantation evidence without overstating stem-cell identity."
+      ],
+      "prerequisites": [
+        "microscopy",
+        "histology-foundations-tissues"
+      ],
+      "summaryChecklist": [
+        "Name the specimen and choose a readable region before naming a cell.",
+        "Use nuclear shape, chromatin, cytoplasm and granules together.",
+        "Distinguish nucleus expulsion, segmentation and polyploidy.",
+        "Separate developmental origin from expansion and residence.",
+        "State what the experiment measures and what it cannot establish."
+      ],
+      "workedExample": {
+        "title": "A giant cell in a marrow section",
+        "prompt": "A large cell lies among developing blood cells and adipocyte spaces. Its abundant cytoplasm surrounds a deeply lobulated nuclear structure. A nearby trabecula is visible. Explain your identification without using size alone.",
+        "solution": [
+          "Confirm marrow architecture and inspect the relationship to the bone surface.",
+          "A large lobulated nuclear structure with abundant cytoplasm supports a megakaryocyte interpretation. An osteoclast is a relevant alternative when separate nuclei and bone-surface association are evident.",
+          "Relate the likely megakaryocyte to endomitosis and platelet production, while stating that a still section does not measure platelet function."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Explain how preparation changes the question you can answer.",
+          "answer": "A peripheral smear samples circulating cells; a marrow aspirate supports individual maturation morphology; a tissue section preserves spatial relationships. No single preparation supplies all three kinds of evidence."
+        },
+        {
+          "prompt": "Contrast nuclear change in erythroid, granulocytic and megakaryocytic maturation.",
+          "answer": "Erythroid differentiation condenses and ultimately expels the nucleus; granulocytic maturation retains and shapes it into lineage-appropriate forms; megakaryocyte endomitosis produces a polyploid lobulated nuclear structure."
+        },
+        {
+          "prompt": "Explain why first blood formation and first detectable long-term HSC activity are different events.",
+          "answer": "Early blood populations can precede the HSC activity defined by long-term multilineage repopulation. The result depends on the developmental population sampled and the functional assay used."
+        }
+      ]
     },
     {
       "id": "muscle-histology",

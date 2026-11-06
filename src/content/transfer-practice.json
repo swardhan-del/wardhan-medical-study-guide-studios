@@ -3369,6 +3369,282 @@
       "subject": "histology",
       "title": "Cartilage and bone: identify structures and explain skeletal development",
       "href": "/library/cartilage-bone#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-preparation",
+      "topic": "blood-marrow",
+      "prompt": "Which preparation best preserves the relationship of marrow cells to trabeculae and sinusoids?",
+      "options": [
+        {
+          "text": "A marrow tissue section",
+          "explanation": "A section preserves spatial architecture, although individual developing cells can be difficult to classify."
+        },
+        {
+          "text": "A peripheral blood smear",
+          "explanation": "This samples circulating cells and does not retain marrow architecture."
+        },
+        {
+          "text": "A highly dispersed marrow aspirate",
+          "explanation": "Aspirate morphology is useful, but dispersal disrupts the original spatial relationships."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-field",
+      "topic": "blood-marrow",
+      "prompt": "A learner selects an overlapping smear edge because it contains an unusual cell. What improves the interpretation?",
+      "options": [
+        {
+          "text": "Classify the whole specimen from that cell",
+          "explanation": "One damaged or unrepresentative cell cannot establish a population pattern."
+        },
+        {
+          "text": "Compare intact cells in several well-spread regions",
+          "explanation": "Preparation quality and representative sampling must be assessed before giving the unusual cell diagnostic weight."
+        },
+        {
+          "text": "Ignore all surrounding red cells",
+          "explanation": "Nearby cells help assess preparation and approximate relative size."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-stain",
+      "topic": "blood-marrow",
+      "prompt": "Every region of a smear has an unexpected blue cast. What should be assessed before assigning a biological explanation?",
+      "options": [
+        {
+          "text": "A universal conversion of all cells into lymphocytes",
+          "explanation": "Dye affinity and a slide-wide color change do not establish lineage conversion."
+        },
+        {
+          "text": "Only the number of nuclear lobes",
+          "explanation": "Nuclear shape does not resolve a slide-wide staining problem."
+        },
+        {
+          "text": "Staining conditions and preparation controls",
+          "explanation": "Buffer, fixation, reagent and timing can alter the overall staining appearance."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-reticulocyte",
+      "topic": "blood-marrow",
+      "prompt": "A supravital method reveals residual RNA in an anucleate red cell. Which interpretation fits?",
+      "options": [
+        {
+          "text": "Reticulocyte",
+          "explanation": "An immature red cell can retain RNA after its nucleus has been expelled."
+        },
+        {
+          "text": "A red cell nucleus undergoing division",
+          "explanation": "The cell is anucleate; residual RNA is not a dividing nucleus."
+        },
+        {
+          "text": "A mature neutrophil identified by segmentation",
+          "explanation": "The description concerns an anucleate red cell, not a granulocyte nucleus."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-granulocyte",
+      "topic": "blood-marrow",
+      "prompt": "A bilobed leukocyte contains conspicuous orange-red granules in a suitable smear. Which combined pattern is best supported?",
+      "options": [
+        {
+          "text": "Any cell with two lobes must be an eosinophil",
+          "explanation": "The conclusion must use the granules and preparation, not lobation alone."
+        },
+        {
+          "text": "Eosinophil",
+          "explanation": "Nuclear shape and specific granule appearance together support the identification."
+        },
+        {
+          "text": "A megakaryocyte defined by a segmented nucleus",
+          "explanation": "Megakaryocytes are much larger marrow cells with a polyploid lobulated nuclear structure."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-maturation",
+      "topic": "blood-marrow",
+      "prompt": "Which sequence of changes is characteristic of late erythroid maturation?",
+      "options": [
+        {
+          "text": "Increasing nuclear lobation with retention of a segmented nucleus",
+          "explanation": "That pattern fits granulocytic rather than erythroid maturation."
+        },
+        {
+          "text": "Fusion into a giant multinucleated bone-resorbing cell",
+          "explanation": "This describes a different lineage and does not generate erythrocytes."
+        },
+        {
+          "text": "Chromatin condensation, increasing hemoglobin and nuclear expulsion",
+          "explanation": "These coordinated changes produce an anucleate reticulocyte that completes maturation."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-megakaryocyte",
+      "topic": "blood-marrow",
+      "prompt": "A giant marrow cell has abundant cytoplasm and a large lobulated polyploid nucleus. Which explanation best fits?",
+      "options": [
+        {
+          "text": "Endomitosis during megakaryocyte development",
+          "explanation": "Polyploidization without ordinary daughter-cell separation helps explain this appearance."
+        },
+        {
+          "text": "Repeated expulsion of erythrocyte nuclei",
+          "explanation": "Erythroid enucleation does not create a megakaryocyte."
+        },
+        {
+          "text": "Every lobe is a separate fused cell",
+          "explanation": "Lobulation does not imply multiple independently fused cells."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-readout",
+      "topic": "blood-marrow",
+      "prompt": "A marrow image contains hemoglobin-rich erythroblasts. What does this directly establish about erythropoietin?",
+      "options": [
+        {
+          "text": "Erythropoietin must be elevated",
+          "explanation": "A single morphological observation cannot quantify the signal."
+        },
+        {
+          "text": "No direct hormone concentration or signaling measurement",
+          "explanation": "Maturation appearance is a different readout from hormone level or receptor activation."
+        },
+        {
+          "text": "Erythropoietin signaling must be absent",
+          "explanation": "The image does not establish absence of the pathway either."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-multipotency",
+      "topic": "blood-marrow",
+      "prompt": "Why is a hematopoietic stem cell described as multipotent rather than embryonically pluripotent?",
+      "options": [
+        {
+          "text": "It can only generate one mature blood-cell type",
+          "explanation": "That would not describe multilineage hematopoietic potential."
+        },
+        {
+          "text": "Its CD34 staining proves formation of every organ",
+          "explanation": "A marker does not establish that broad developmental capacity."
+        },
+        {
+          "text": "Its relevant developmental output spans blood lineages",
+          "explanation": "Blood-lineage potential does not establish the ability to form all body tissues."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-development",
+      "topic": "blood-marrow",
+      "prompt": "A fetal liver contains many developing blood cells. Which conclusion is justified?",
+      "options": [
+        {
+          "text": "The liver provides an environment for hematopoietic expansion and differentiation",
+          "explanation": "Residence and expansion are distinct from the developmental origin of the population."
+        },
+        {
+          "text": "Hepatocytes must have transformed into blood cells",
+          "explanation": "The observation does not establish hepatocyte-to-blood lineage conversion."
+        },
+        {
+          "text": "Adult marrow is already the only site of blood production",
+          "explanation": "Fetal hematopoiesis involves multiple developmental environments."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-functional",
+      "topic": "blood-marrow",
+      "prompt": "A transplantation experiment detects only a transient human T-cell signal. What remains unresolved?",
+      "options": [
+        {
+          "text": "Whether any human signal was ever detected",
+          "explanation": "Detection is stated; its biological meaning remains narrower."
+        },
+        {
+          "text": "Whether embryonic donor cells have sustained multilineage stem-cell activity",
+          "explanation": "Identity, duration and lineage output must match the claimed function."
+        },
+        {
+          "text": "Whether all body tissues can be generated",
+          "explanation": "Pluripotency is not the function assessed by this hematopoietic experiment."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
+    },
+    {
+      "id": "blood-depth-marker",
+      "topic": "blood-marrow",
+      "prompt": "A CD34-enriched sample forms colonies in culture. What is the appropriate next interpretation?",
+      "options": [
+        {
+          "text": "Every selected cell is a definitive HSC",
+          "explanation": "A marker gate and a colony readout do not establish purity or long-term function."
+        },
+        {
+          "text": "The cells cannot belong to a blood lineage",
+          "explanation": "Colony formation can provide evidence of hematopoietic progenitor activity."
+        },
+        {
+          "text": "It contains colony-forming activity; long-term HSC function remains a separate question",
+          "explanation": "Committed progenitors can form colonies, and enrichment is not proof that every cell is an HSC."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Blood and bone marrow: identify cells, explain maturation and trace development",
+      "href": "/library/blood-marrow#apply-the-concept"
     }
   ]
 }
