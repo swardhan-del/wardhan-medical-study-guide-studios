@@ -1,4 +1,5 @@
 import { TissueEvidenceExplorer } from "./histology-practical";
+import { HistologyGuidedPath } from "./histology-guided-path";
 import Link from "next/link";
 import type { LibraryLesson } from "@/lib/library-types";
 import { FoundationsLessonContent } from "./foundations-lesson-content";
@@ -11,6 +12,7 @@ export function HistologyFoundationsContent({ lesson }: { lesson: LibraryLesson 
     explanationIntro="Study the tissue families in sequence, then compare the evidence used to identify them. Each explanation can be expanded or collapsed."
     conceptTitle="Question 1: tissue families"
     applicationIntro="Use the structural evidence to predict function or justify a classification. Each hypothetical scenario has one best answer."
+    deeperStudy={<HistologyGuidedPath />}
     continuation={<>Continue with <Link href="/library/microscopy">microscopy and section interpretation</Link>, or revisit a tissue family from the related lessons.</>}
   />;
 }

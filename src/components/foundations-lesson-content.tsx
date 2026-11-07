@@ -21,9 +21,10 @@ type Props = {
   conceptTitle: string;
   applicationIntro: string;
   continuation: ReactNode;
+  deeperStudy?: ReactNode;
 };
 
-export function FoundationsLessonContent({ lesson, preparation, coreConcepts, visualStudy, explanationIntro, conceptTitle, applicationIntro, continuation }: Props) {
+export function FoundationsLessonContent({ lesson, preparation, coreConcepts, visualStudy, explanationIntro, conceptTitle, applicationIntro, continuation, deeperStudy }: Props) {
   const knowledge = studio.questions.filter(q => q.topic === lesson.id);
   const applied = transfer.questions.filter(q => q.topic === lesson.id);
   return <div className={styles.lesson}>
@@ -58,6 +59,7 @@ export function FoundationsLessonContent({ lesson, preparation, coreConcepts, vi
       <p>{applicationIntro}</p>
       <PracticeSequence key={lesson.id} title="Application questions" entries={applied.map((q, index) => ({ item: q, title: `Application Question ${index + 1}` }))}/>
     </section>
+    {deeperStudy}
     <section className="concept-recall study-panel" aria-labelledby="oral-recall-title">
       <h2 id="oral-recall-title">Oral Examination Prompts</h2>
       <p>Explain each answer aloud before opening its model response. Include the observation, the reasoning and any limitation.</p>
