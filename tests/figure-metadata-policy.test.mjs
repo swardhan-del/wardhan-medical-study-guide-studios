@@ -5,6 +5,16 @@ import { validateFigureMetadata } from "../scripts/figure-metadata-policy.mjs";
 const require=createRequire(import.meta.url);
 const sharp=require("sharp");
 
+test("ovarian display metadata rejects added or altered fields", async () => {
+  const metadata=await sharp("public/images/figures/ovary-cumulus-complex.jpg").metadata();
+  assert.deepEqual(validateFigureMetadata("ovary-cumulus-complex",metadata),{width:1280,height:854});
+  const changed=Buffer.from(metadata.exif); changed[changed.length-1]^=1;
+  assert.throws(()=>validateFigureMetadata("ovary-cumulus-complex",{...metadata,exif:changed}));
+  for(const field of ["iptc","xmp","icc"]) assert.throws(()=>validateFigureMetadata("ovary-cumulus-complex",{...metadata,[field]:Buffer.from("unreviewed")}));
+  assert.throws(()=>validateFigureMetadata("ovary-cumulus-complex",{...metadata,orientation:6}));
+  assert.throws(()=>validateFigureMetadata("another-image",metadata));
+});
+
 test("tubal source metadata permits only reviewed public fields and rejects changed bytes", async () => {
   const metadata=await sharp("public/images/figures/tubal-folded-wall.jpg").metadata();
   assert.deepEqual(validateFigureMetadata("tubal-folded-wall",metadata),{width:1527,height:1378});

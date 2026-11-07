@@ -6,6 +6,13 @@ import { createHash } from "node:crypto";
 const orientationOnly = Buffer.from("45786966000049492a0008000000010012010300010000000600000000000000", "hex");
 const reviewedProfile = "e468e89239fc0493d5e8fb9b014e91b210c6caa73c81edf04c3d21a734f377cc";
 export function validateFigureMetadata(id, metadata) {
+  if (id === "ovary-cumulus-complex") {
+    // Blank ImageDescription and YCbCrPositioning only; exact reviewed display variant.
+    assert(!metadata.iptc && !metadata.xmp && !metadata.icc, "Unexpected ovarian metadata");
+    assert(metadata.exif?.equals(Buffer.from("4578696600004d4d002a000000080002010e00020000000b0000002602130003000000010001000000000000202020202020202020200000", "hex")), "Unreviewed ovarian EXIF");
+    assert.equal(metadata.orientation, undefined);
+    return { width: metadata.width, height: metadata.height };
+  }
   if (id === "tubal-folded-wall") {
     // Public source metadata reviewed in female-practical-depth-20261106.md.
     // Retain exact original bytes; any added or changed field fails this gate.

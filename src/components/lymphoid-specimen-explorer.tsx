@@ -34,8 +34,8 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     {portrait && description}
     <figure id={`figure-${figure.id}`}>
       <div className={styles.imageFrame} style={portrait ? {maxWidth: "28rem", marginInline: "auto"} : undefined}>
-        {unavailable ? <p role="status">The specimen image could not load. The complete descriptions below remain available. You can also open the original-sized image or its creator’s source.</p> : <>
-          {/* The approved JPEG retains the original diagnostic pixels; browser sizing does not recode it. */}
+        {unavailable ? <p role="status">The specimen image could not load. The complete descriptions below remain available. You can also open the image file or its creator’s source.</p> : <>
+          {/* Browser sizing preserves the reviewed image file; source variants are credited separately. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img ref={imageRef} src={figure.src} width={figure.width} height={figure.height} alt={figure.alt} loading={imageLoading} onError={() => setUnavailable(true)} />
           {markers && <div className={styles.markers} aria-hidden="true">{data.regions.map((item, index) => <span key={item.id} className={selected === index ? styles.selectedMarker : styles.marker} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}>{index + 1}</span>)}</div>}
@@ -48,7 +48,7 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
       <a href={figure.src} target="_blank" rel="noopener noreferrer">Open full-size image in a new tab</a>
       <a href={figure.src} download>Download credited specimen image</a>
     </div>
-    {imageLoading === "lazy" && <p>Full-resolution image: {(figure.variants.find(variant => variant.src === figure.src)!.bytes / 1000000).toFixed(1)} MB. Open it at full size to inspect finer detail.</p>}
+    {imageLoading === "lazy" && <p>Image download: {(figure.variants.find(variant => variant.src === figure.src)!.bytes / 1000000).toFixed(1)} MB. Open the image file at full size to inspect finer detail.</p>}
     <p className={styles.credit}>{figure.rights} <a href={figure.sourceUrl}>Creator and source</a> · <a href={figure.licenseUrl}>{licenseLabel}</a>. {figure.modifications}</p>
     {!portrait && description}
     <details><summary>Read all {regionCount} region explanations</summary>

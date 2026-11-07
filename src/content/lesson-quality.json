@@ -5379,6 +5379,164 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "ovarian-histology-and-development",
+      "title": "Ovarian histology: specimens, development and experimental evidence",
+      "subject": "histology",
+      "topic": "Ovarian tissue, germ and somatic development, research interpretation",
+      "slug": "ovarian-histology-and-development",
+      "learnerLevel": "Medical sciences: tissue practical to experimental interpretation",
+      "objectives": [
+        "Describe three ovarian specimens with visible evidence and preparation limits.",
+        "Translate follicle terminology into cell arrangement and cavity observations.",
+        "Distinguish follicular architecture from meiotic stage and duct development.",
+        "Match stains and molecular assays to the inference they support.",
+        "Compare stage-specific, branch-specific and maintenance experiments.",
+        "Calculate a fictional profile density without claiming a whole-organ reserve."
+      ],
+      "sources": [
+        {
+          "title": "Southern Illinois University — ovarian cortex",
+          "url": "https://histology.siu.edu/erg/RE006b.htm",
+          "publisherOrAuthor": "Southern Illinois University",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Columbia — ovarian histology practical",
+          "url": "https://histologylab.ctl.columbia.edu/lab15/ovary/",
+          "publisherOrAuthor": "Columbia",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Yano Maher et al. — human follicle morphology nomenclature (2025 issue)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12045743/",
+          "publisherOrAuthor": "Yano Maher et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Garcia-Alonso et al. — single-cell roadmap of human gonadal development (2022)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9300467/",
+          "publisherOrAuthor": "Garcia-Alonso et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Jagarlamudi et al. — stage-specific oocyte Pten deletion in mice (2009)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2702689/",
+          "publisherOrAuthor": "Jagarlamudi et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "John et al. — Kit–PI3K coupling and mouse follicle maturation (2009)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2726617/",
+          "publisherOrAuthor": "John et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Uhlenhaut et al. — adult ovarian maintenance after Foxl2 ablation in mice (2009)",
+          "url": "https://www.mdc-berlin.de/media/16170",
+          "publisherOrAuthor": "Uhlenhaut et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Jpogi — human follicle photograph and public-domain release",
+          "url": "https://commons.wikimedia.org/wiki/File:Primary_follicle_(transition).jpg",
+          "publisherOrAuthor": "Jpogi",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Ed Uthman — human cumulus photograph, CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Graafian_Follicle_Cumulus_Oophorus_in_Human_Ovary_(6032619828).jpg",
+          "publisherOrAuthor": "Ed Uthman",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Jpogi — human corpus albicans photograph and public-domain release",
+          "url": "https://commons.wikimedia.org/wiki/File:Corpus_albicans.JPG",
+          "publisherOrAuthor": "Jpogi",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Duke — ovarian practical, architecture and germ-cell origin",
+          "url": "https://histology.oit.duke.edu/NormalBody/FemaleRepro/FemaleRepro.html",
+          "publisherOrAuthor": "Duke",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Utah WebPath — PAS specificity principles",
+          "url": "https://webpath.med.utah.edu/HISTHTML/STAINS/STAINS.html",
+          "publisherOrAuthor": "University of Utah WebPath",
+          "accessedAt": "2026-11-06",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Jones et al. — spatial and single-cell human ovarian atlas (2024)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10997207/",
+          "publisherOrAuthor": "Jones et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        },
+        {
+          "title": "Childs et al. — retinoic-acid signalling in human fetal gonads (2011)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3108594/",
+          "publisherOrAuthor": "Childs et al.",
+          "accessedAt": "2026-11-06",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Three source-reviewed display photographs and 12 region explanations. Desktop/mobile, keyboard, hidden markers, textual alternatives and failed-image behavior passed locally. Twelve conceptual prompts are organized as six in each development track. Canonical deployment remains a separate release check.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-06",
+      "nextReviewAt": "2027-02-07",
+      "limitations": [
+        "No cleared matched atresia and corpus-luteum photograph pair",
+        "No calibrated image morphometry",
+        "No reproductive endocrinology receptor/enzyme claims beyond separately verified evidence",
+        "Human atlas figure remains private pending figure-specific review",
+        "No video cleared",
+        "Independent specialist review outstanding",
+        "Advanced human endocrine receptor/enzyme-function mechanisms need a separate functional-evidence review; spatial RNA associations are not hormone assays.",
+        "Original questions are not official NBME items or validated examination grading.",
+        "Typed specimen answers are temporary self-comparison, not automated clinical grading."
+      ],
+      "reviewEvidenceIds": [
+        "ovarian-practical-editorial-20261107",
+        "ovarian-practical-visual-20261107",
+        "ovarian-practical-assessment-20261107",
+        "ovarian-practical-accessibility-20261107",
+        "ovarian-practical-readability-20261107"
+      ],
+      "links": {
+        "prerequisite": [
+          "microscopy",
+          "reproductive-histology"
+        ],
+        "related": [
+          "reproductive-histology",
+          "histology-foundations-tissues",
+          "female-tract-histology-and-development",
+          "ovary-uterine-tube"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

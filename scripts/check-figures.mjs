@@ -61,7 +61,11 @@ for (const f of figures) {
     assert(v.width <= f.width, "Upscaled source");
   }
   assert.equal(f.src, f.variants.at(-1).src);
-  if (f.licenseUrl) assert([
+  const reviewedPublicDomain = {
+    "ovary-small-follicle": "https://commons.wikimedia.org/wiki/File:Primary_follicle_(transition).jpg#Licensing",
+    "ovary-corpus-albicans": "https://commons.wikimedia.org/wiki/File:Corpus_albicans.JPG#Licensing",
+  };
+  if (f.licenseUrl) assert(f.licenseUrl === reviewedPublicDomain[f.id] || [
     "https://creativecommons.org/licenses/by/2.0/",
     "https://creativecommons.org/licenses/by/4.0/",
     "https://creativecommons.org/licenses/by-sa/4.0/",

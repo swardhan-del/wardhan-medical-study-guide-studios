@@ -178,7 +178,7 @@ test('Female practical: discover, save, return and print in its single course ho
   await page.goto('/study/histology/revision'); await page.getByRole('button', { name: 'Clear selection', exact: true }).click();
   await page.getByRole('checkbox', { name: /Female Reproductive System Placenta and Mammary Gland/ }).check();
   const part = guides.parts.find(item => item.id === 'histology-part-12')!;
-  expect(part.lessonIds).toEqual(['female-tract-histology-and-development', 'placenta', 'mammary-histology-and-development']);
+  expect(part.lessonIds).toEqual(['ovarian-histology-and-development', 'female-tract-histology-and-development', 'placenta', 'mammary-histology-and-development']);
   await expect(page.locator('.revision-lesson')).toHaveCount(part.lessonIds.length);
   await expect(page.locator('.revision-lesson').filter({ hasText: lesson.title })).toHaveCount(1);
   await page.emulateMedia({ media: 'print' });

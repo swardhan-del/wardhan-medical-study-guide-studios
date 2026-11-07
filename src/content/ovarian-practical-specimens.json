@@ -1,0 +1,155 @@
+[
+  {
+    "title": "Human follicle: oocyte, surrounding cells and stroma",
+    "figureId": "ovary-small-follicle",
+    "regions": [
+      {
+        "id": "ovary-small-follicle-region-1",
+        "label": "Oocyte profile",
+        "anchor": {
+          "x": 38,
+          "y": 45
+        },
+        "observation": "A large rounded pink cell occupies the centre-left of the field.",
+        "interpretation": "This is the source-identified oocyte profile.",
+        "limit": "The pointer covers part of its border; exact size is uncalibrated."
+      },
+      {
+        "id": "ovary-small-follicle-region-2",
+        "label": "Surrounding cells",
+        "anchor": {
+          "x": 42,
+          "y": 51
+        },
+        "observation": "Smaller nuclei follow the visible lower-right border of the large cell.",
+        "interpretation": "Read their arrangement relative to the oocyte.",
+        "limit": "An obscured circumference prevents confident assessment of a complete layer."
+      },
+      {
+        "id": "ovary-small-follicle-region-3",
+        "label": "Stromal context",
+        "anchor": {
+          "x": 57,
+          "y": 29
+        },
+        "observation": "Elongated nuclei occupy tissue beyond the follicular profile.",
+        "interpretation": "The surrounding tissue differs from the immediate oocyte-associated layer.",
+        "limit": "A high-power crop does not establish the entire cortical boundary."
+      },
+      {
+        "id": "ovary-small-follicle-region-4",
+        "label": "Pointer obstruction",
+        "anchor": {
+          "x": 28,
+          "y": 43
+        },
+        "observation": "An opaque black bar crosses the field and covers tissue.",
+        "interpretation": "This is a microscope pointer, not a tissue structure.",
+        "limit": "Covered tissue must not be scored as absent."
+      }
+    ],
+    "model": "A large rounded pink cell occupies the centre-left of the field. This is the source-identified oocyte profile. Smaller nuclei follow the visible lower-right border of the large cell. Read their arrangement relative to the oocyte. Elongated nuclei occupy tissue beyond the follicular profile. The surrounding tissue differs from the immediate oocyte-associated layer. Stain and scale are unreported; do not infer an exact cycle day, hormone output or lifetime count."
+  },
+  {
+    "title": "Human antral follicle: oocyte and cumulus relationship",
+    "figureId": "ovary-cumulus-complex",
+    "regions": [
+      {
+        "id": "ovary-cumulus-complex-region-1",
+        "label": "Oocyte profile",
+        "anchor": {
+          "x": 48,
+          "y": 25
+        },
+        "observation": "A large rounded pink cell sits near the upper centre of the mound.",
+        "interpretation": "Use its position to orient the surrounding cellular relationships.",
+        "limit": "Its chromosome state and developmental competence are not measured."
+      },
+      {
+        "id": "ovary-cumulus-complex-region-2",
+        "label": "Cumulus mound",
+        "anchor": {
+          "x": 40,
+          "y": 40
+        },
+        "observation": "Nucleated tissue projects toward the pale space and continues downward into the broader wall.",
+        "interpretation": "Continuity establishes the mound–wall relationship.",
+        "limit": "The full follicle circumference is outside this crop."
+      },
+      {
+        "id": "ovary-cumulus-complex-region-3",
+        "label": "Space above the mound",
+        "anchor": {
+          "x": 21,
+          "y": 15
+        },
+        "observation": "A broad pale area borders the projecting cellular mound.",
+        "interpretation": "Read the cavity in relation to its boundary, not colour alone.",
+        "limit": "No fluid composition or pressure measurement is supplied."
+      },
+      {
+        "id": "ovary-cumulus-complex-region-4",
+        "label": "Outer fibrous context",
+        "anchor": {
+          "x": 56,
+          "y": 91
+        },
+        "observation": "Wavy pink material and elongated nuclei lie below the densely cellular region.",
+        "interpretation": "Compare the outer supporting tissue with the cell-rich wall.",
+        "limit": "Specific thecal cell types and enzyme expression are not established by this anchor."
+      }
+    ],
+    "model": "A large rounded pink cell sits near the upper centre of the mound. Use its position to orient the surrounding cellular relationships. Nucleated tissue projects toward the pale space and continues downward into the broader wall. Continuity establishes the mound–wall relationship. A broad pale area borders the projecting cellular mound. Read the cavity in relation to its boundary, not colour alone. Stain and scale are unreported; do not infer an exact cycle day, hormone output or lifetime count."
+  },
+  {
+    "title": "Human corpus albicans: fibrous remnant in ovarian tissue",
+    "figureId": "ovary-corpus-albicans",
+    "regions": [
+      {
+        "id": "ovary-corpus-albicans-region-1",
+        "label": "Fibrous-remnant region",
+        "anchor": {
+          "x": 40,
+          "y": 62
+        },
+        "observation": "An irregular relatively cell-poor pink area is visible centrally.",
+        "interpretation": "Its organization supports the source-labelled fibrous remnant.",
+        "limit": "This field does not establish its age or a lifetime ovulation count."
+      },
+      {
+        "id": "ovary-corpus-albicans-region-2",
+        "label": "Surrounding cellular tissue",
+        "anchor": {
+          "x": 66,
+          "y": 65
+        },
+        "observation": "Denser small nuclei surround the pale central region.",
+        "interpretation": "Compare tissue compartments rather than naming every pink area alike.",
+        "limit": "Individual stromal subtypes are not reliably distinguished here."
+      },
+      {
+        "id": "ovary-corpus-albicans-region-3",
+        "label": "Wall and lumen profile",
+        "anchor": {
+          "x": 29,
+          "y": 82
+        },
+        "observation": "An oval profile has a prominent pink wall around a lighter central area.",
+        "interpretation": "Assess wall–lumen organization before interpreting a round profile as a follicle.",
+        "limit": "Exact vessel class is not assigned from this anchor."
+      },
+      {
+        "id": "ovary-corpus-albicans-region-4",
+        "label": "Pointer obstruction",
+        "anchor": {
+          "x": 24,
+          "y": 52
+        },
+        "observation": "The black pointer overlaps the left part of the central region.",
+        "interpretation": "Treat this as an optical obstruction.",
+        "limit": "No biological conclusion follows from the covered pixels."
+      }
+    ],
+    "model": "An irregular relatively cell-poor pink area is visible centrally. Its organization supports the source-labelled fibrous remnant. Denser small nuclei surround the pale central region. Compare tissue compartments rather than naming every pink area alike. An oval profile has a prominent pink wall around a lighter central area. Assess wall–lumen organization before interpreting a round profile as a follicle. Stain and scale are unreported; do not infer an exact cycle day, hormone output or lifetime count."
+  }
+]
