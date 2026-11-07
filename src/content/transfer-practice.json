@@ -10661,6 +10661,195 @@
       "subject": "histology",
       "title": "Retinal layers and eye development: read structure, then test the explanation",
       "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "audiometry-measurement-octaves-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Which two intervals occupy equal horizontal distances on the logarithmic frequency axis?",
+      "options": [
+        {
+          "text": "500–1,000 Hz and 2,000–4,000 Hz",
+          "explanation": "Each upper frequency is twice its lower frequency, so both span one octave."
+        },
+        {
+          "text": "500–1,000 Hz and 1,000–1,500 Hz",
+          "explanation": "Their differences match, but their ratios are 2 and 1.5."
+        },
+        {
+          "text": "Any pair with a 500 Hz difference",
+          "explanation": "A logarithmic axis represents ratios, not equal absolute differences."
+        },
+        {
+          "text": "Only intervals with identical endpoints",
+          "explanation": "Different starting frequencies can share the same ratio."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "audiometry-measurement-difference-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "In case A at 1,000 Hz, what does 55 minus 20 establish under the stated ear-specific assumptions?",
+      "options": [
+        {
+          "text": "35 percent of hearing is lost",
+          "explanation": "A difference in decibels is not a percentage of hearing."
+        },
+        {
+          "text": "A 35 dB air-bone gap at that frequency",
+          "explanation": "The difference is 35 dB; the same-ear assumptions allow that measurement label."
+        },
+        {
+          "text": "A 75 dB gap",
+          "explanation": "Adding the thresholds does not compute their difference."
+        },
+        {
+          "text": "A specific middle-ear disease",
+          "explanation": "A threshold comparison does not identify a unique cause."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "audiometry-measurement-side-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Case D records right-mastoid unmasked BC. Which conclusion is justified?",
+      "options": [
+        {
+          "text": "The right cochlea certainly supplied the BC response",
+          "explanation": "Placement alone does not establish the responding cochlea."
+        },
+        {
+          "text": "The BC threshold must be zero",
+          "explanation": "The record contains a measured value; lack of ear specificity does not make it zero."
+        },
+        {
+          "text": "The responding cochlea remains unestablished in this record",
+          "explanation": "An ear-specific interpretation needs evidence beyond the placement symbol."
+        },
+        {
+          "text": "Masking can never affect the result",
+          "explanation": "The purpose of addressing cross-hearing is to distinguish which ear contributes."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "audiometry-measurement-limit-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Case E has AC 95 dB HL and no BC response at 65 dB HL. What exact gap can be reported from these data?",
+      "options": [
+        {
+          "text": "30 dB",
+          "explanation": "65 is an output limit with no response, not a measured BC threshold."
+        },
+        {
+          "text": "95 dB",
+          "explanation": "This incorrectly substitutes zero for the missing BC threshold."
+        },
+        {
+          "text": "Zero dB",
+          "explanation": "Nothing establishes equal measured thresholds."
+        },
+        {
+          "text": "No exact gap is available",
+          "explanation": "One of the two exact thresholds required for subtraction is unknown."
+        }
+      ],
+      "answer": 3
+    },
+    {
+      "id": "audiometry-measurement-zero-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Which statement about 0 dB HL preserves the reference?",
+      "options": [
+        {
+          "text": "It means physical silence",
+          "explanation": "The zero is a hearing-level reference, not zero sound pressure."
+        },
+        {
+          "text": "It identifies the selected frequency/transducer reference level",
+          "explanation": "The reference is part of the meaning of the value."
+        },
+        {
+          "text": "It is interchangeable with 0 dB SPL for every transducer",
+          "explanation": "These scales use different references; conversion requires calibration information."
+        },
+        {
+          "text": "It forbids negative threshold values",
+          "explanation": "A value below the reference can be represented on the scale."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "audiometry-measurement-matched-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Case B has AC and BC both 40 dB HL at 1,000 Hz. What follows?",
+      "options": [
+        {
+          "text": "The threshold must be 0 dB HL",
+          "explanation": "The difference is zero; each threshold remains 40 dB HL."
+        },
+        {
+          "text": "The data show exactly which hair cells are damaged",
+          "explanation": "A pure-tone comparison does not resolve that cellular claim."
+        },
+        {
+          "text": "The paired thresholds agree at that frequency",
+          "explanation": "Agreement and the absolute threshold level are separate observations."
+        },
+        {
+          "text": "Speech understanding must be completely normal",
+          "explanation": "These pure-tone values do not measure speech understanding."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "audiometry-measurement-different-bases-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Two valid examples each have a 30 dB gap, but their BC thresholds are 5 and 40 dB HL. What should the student retain?",
+      "options": [
+        {
+          "text": "Only the gap; the BC values carry no information",
+          "explanation": "The underlying threshold levels are part of the measured pattern."
+        },
+        {
+          "text": "Both absolute thresholds as well as the common difference",
+          "explanation": "Equal differences do not make the underlying values or whole patterns equivalent."
+        },
+        {
+          "text": "The same specific diagnosis for both",
+          "explanation": "The arithmetic cannot establish a unique shared cause."
+        },
+        {
+          "text": "Thirty percent impairment in both",
+          "explanation": "A decibel difference does not provide a percentage of impairment."
+        }
+      ],
+      "answer": 1
     }
   ]
 }

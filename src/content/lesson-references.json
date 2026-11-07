@@ -1709,9 +1709,39 @@
     "checkedAt": "2026-09-09"
   },
   "biophysics-practical-audiometry": {
-    "title": "OpenStax: oscillations",
-    "url": "https://openstax.org/books/university-physics-volume-1/pages/15-introduction",
-    "checkedAt": "2026-09-09"
+    "title": "ASHA: Manual Pure-Tone Threshold Audiometry (2005)",
+    "url": "https://www.asha.org/policy/GL2005-00014/",
+    "checkedAt": "2026-11-07",
+    "supportingReferences": [
+      {
+        "title": "ASHA: Audiometric Symbols (1990)",
+        "url": "https://www.asha.org/policy/GL1990-00006/"
+      },
+      {
+        "title": "BSA: Pure-tone audiometry (2018), sections 8 and 10",
+        "url": "https://www.thebsa.org.uk/wp-content/uploads/2023/10/OD104-32-Recommended-Procedure-Pure-Tone-Audiometry-August-2018-FINAL-1.pdf"
+      },
+      {
+        "title": "ASHA: Hearing Loss in Adults, overview and assessment",
+        "url": "https://www.asha.org/practice-portal/clinical-topics/hearing-loss/"
+      },
+      {
+        "title": "OpenStax University Physics: Sound Intensity",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity"
+      },
+      {
+        "title": "OpenStax College Physics: Hearing",
+        "url": "https://openstax.org/books/college-physics-2e/pages/17-6-hearing"
+      },
+      {
+        "title": "Simon Fraser University Acoustic Ecology Handbook: Phon",
+        "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Phon.html"
+      },
+      {
+        "title": "Simon Fraser University Acoustic Ecology Handbook: Sone",
+        "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Sone.html"
+      }
+    ]
   },
   "biophysics-practical-biosignals": {
     "title": "OpenStax: electrical circuits",

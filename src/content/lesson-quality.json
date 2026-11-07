@@ -6060,6 +6060,117 @@
           "retinal-on-off-bipolar-response"
         ]
       }
+    },
+    {
+      "lessonId": "biophysics-practical-audiometry",
+      "title": "Practical: sound levels and audiograms",
+      "subject": "biophysics",
+      "topic": "Audiogram references, threshold comparisons and measurement limits",
+      "slug": "biophysics-practical-audiometry",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Distinguish physical sound level, hearing-level reference and perceived loudness.",
+        "Read a logarithmic frequency axis and the downward hearing-level axis without confusing them.",
+        "Calculate a stated threshold difference and distinguish it from an established same-ear air-bone gap.",
+        "Keep no-response output limits, missing observations and exact thresholds separate.",
+        "Explain what a pure-tone comparison cannot establish about cellular damage or diagnosis."
+      ],
+      "sources": [
+        {
+          "title": "ASHA: Manual Pure-Tone Threshold Audiometry (2005)",
+          "url": "https://www.asha.org/policy/GL2005-00014/",
+          "publisherOrAuthor": "American Speech-Language-Hearing Association",
+          "accessedAt": "2026-11-07",
+          "sourceType": "guideline"
+        },
+        {
+          "title": "ASHA: Audiometric Symbols (1990)",
+          "url": "https://www.asha.org/policy/GL1990-00006/",
+          "publisherOrAuthor": "American Speech-Language-Hearing Association",
+          "accessedAt": "2026-11-07",
+          "sourceType": "guideline"
+        },
+        {
+          "title": "BSA: Pure-tone audiometry (2018), sections 8 and 10",
+          "url": "https://www.thebsa.org.uk/wp-content/uploads/2023/10/OD104-32-Recommended-Procedure-Pure-Tone-Audiometry-August-2018-FINAL-1.pdf",
+          "publisherOrAuthor": "British Society of Audiology",
+          "accessedAt": "2026-11-07",
+          "sourceType": "guideline"
+        },
+        {
+          "title": "ASHA: Hearing Loss in Adults, overview and assessment",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/hearing-loss/",
+          "publisherOrAuthor": "American Speech-Language-Hearing Association",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax University Physics: Sound Intensity",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax College Physics: Hearing",
+          "url": "https://openstax.org/books/college-physics-2e/pages/17-6-hearing",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Simon Fraser University Acoustic Ecology Handbook: Phon",
+          "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Phon.html",
+          "publisherOrAuthor": "Simon Fraser University, Acoustic Ecology Handbook",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Simon Fraser University Acoustic Ecology Handbook: Sone",
+          "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Sone.html",
+          "publisherOrAuthor": "Simon Fraser University, Acoustic Ecology Handbook",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original fictional audiograms with visible side and masking legends, frequency/value tables and an explicit no-response mark. Native keyboard, no-JavaScript, privacy and 320px doubled-text checks completed; hosted release remains a separate gate.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-07",
+      "nextReviewAt": "2027-02-07",
+      "limitations": [
+        "Visual study exercise with fictional data; no sound playback, hearing test, diagnosis or individualized clinical interpretation.",
+        "Dated ASHA conventions and selected BSA sections support the stated concepts; complete current clinical-procedure review is not claimed.",
+        "AI-assisted editorial, calculation and browser review; independent clinical peer review has not been completed."
+      ],
+      "reviewEvidenceIds": [
+        "audiometry-depth-editorial-20261107",
+        "audiometry-depth-visual-20261107",
+        "audiometry-depth-assessment-20261107",
+        "audiometry-depth-accessibility-20261107",
+        "audiometry-depth-readability-20261107"
+      ],
+      "links": {
+        "prerequisite": [
+          "ear-anatomy",
+          "biophysics-sensory-biophysics"
+        ],
+        "related": [
+          "biophysics-practical-diffusion",
+          "biophysics-practical-biosignals",
+          "ear-anatomy",
+          "biophysics-sensory-biophysics",
+          "cochlear-fluid-voltage-reference",
+          "auditory-frequency-level-coding"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

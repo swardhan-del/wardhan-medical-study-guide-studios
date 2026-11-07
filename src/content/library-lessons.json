@@ -10734,8 +10734,8 @@
         "loudness",
         "masking"
       ],
-      "source": "biophysics",
-      "section": "Combined notes, practical questions 133–142",
+      "source": "original-audiometry-measurement",
+      "section": "Sound-level references, audiogram comparison and measurement uncertainty",
       "steps": [
         {
           "title": "Use a reference",
@@ -10752,6 +10752,46 @@
         {
           "title": "Work a level difference",
           "body": "An intensity rises from I to 100I, giving a 20 dB increase. If RMS pressure doubles in the same medium, sound-pressure level rises by about 6 dB. These two examples use different underlying ratios, which is why their logarithmic multipliers differ."
+        },
+        {
+          "title": "Read the measured variable before the curve",
+          "body": "A plotted threshold is a detection result for a stated frequency and test condition. The horizontal axis counts acoustic cycles per second; the vertical axis records hearing level. Neither axis is a hair-cell count, a spike rate or a measure of speech understanding. Start by reading the label, then the number.",
+          "highlight": "Frequency is not intensity, and a threshold is not a tissue diagnosis."
+        },
+        {
+          "title": "Use the reference scale correctly",
+          "body": "dB HL uses a frequency- and transducer-dependent reference. Zero on that scale is not the absence of sound, and a measured value can be negative. dB SPL uses a physical pressure reference. A bare numerical substitution from one scale into the other loses the calibration information.",
+          "highlight": "Keep the reference with every decibel value."
+        },
+        {
+          "title": "Follow octave spacing and the downward level axis",
+          "body": "Equal horizontal distances on this chart represent equal frequency ratios: 500 to 1,000 Hz and 2,000 to 4,000 Hz each span an octave. Hearing level increases downward. A lower point therefore requires more level for detection; it does not mean a lower-frequency tone. The vertical difference between 55 and 20 is 35 dB.",
+          "highlight": "Compare points at the same frequency."
+        },
+        {
+          "title": "Separate presentation side from the responding cochlea",
+          "body": "The legend records the ear or placement, route and masking condition. An unmasked bone-conduction symbol on the right side does not prove that the right cochlea supplied the response. Cross-hearing is an alternative explanation that must be addressed before an ear-specific interpretation. Colour cannot replace a readable legend.",
+          "highlight": "A right-side symbol alone is not evidence of a right-cochlea response."
+        },
+        {
+          "title": "Subtract first, then audit what the subtraction means",
+          "body": "For two established same-ear thresholds at 1,000 Hz, AC 55 minus BC 20 gives a 35 dB air-bone gap. The arithmetic is transparent; the interpretation also needs comparable conditions, reliable responses and ear specificity. When those assumptions are absent, the numbers can still be subtracted, but the result is not an established ear-specific gap.",
+          "highlight": "A numerical difference and a valid clinical comparison are separate claims."
+        },
+        {
+          "title": "Compare the underlying thresholds as well as the gap",
+          "body": "Two examples can share a 30 dB difference while having different bone-conduction thresholds. A conductive component and a sensory/neural component describe different parts of the functional pattern. Read both absolute thresholds and the frequency pattern. These invented cases illustrate comparisons; they do not select a disease or quantify the fraction of damaged cells.",
+          "highlight": "Equal gaps do not make two whole audiograms equivalent."
+        },
+        {
+          "title": "Keep no-response and missing data separate",
+          "body": "A no-response mark at a stated output limit is not a measured threshold at that number. An untested frequency has no observation at all. Neither should be replaced with zero or joined into an ordinary threshold curve. If one member of a pair lacks a measured threshold, this exercise cannot calculate an exact air-bone gap.",
+          "highlight": "A limit is not an exact threshold; missing is not zero."
+        },
+        {
+          "title": "Ask what additional evidence would change the interpretation",
+          "body": "A measured pattern can motivate further assessment without establishing a unique lesion. Test reliability, transducer conditions, ear examination and other audiological measures supply different evidence. A pure-tone result alone does not locate every sensory or neural abnormality. Use the linked anatomy and physiology lessons to explain possible mechanisms while keeping the measurement limits explicit.",
+          "highlight": "State the observation, assumptions and remaining alternatives."
         }
       ],
       "question": {
@@ -10759,7 +10799,7 @@
         "options": [
           {
             "text": "20 dB",
-            "reason": "10 log₁₀100 = 20 dB."
+            "reason": "Intensity level uses 10 log₁₀ of the intensity ratio. For a ratio of 100, log₁₀100 is 2, so the level increase is 10 × 2 = 20 dB."
           },
           {
             "text": "100 dB",
@@ -10778,10 +10818,55 @@
       },
       "related": [
         "biophysics-practical-diffusion",
-        "biophysics-practical-biosignals"
+        "biophysics-practical-biosignals",
+        "ear-anatomy",
+        "biophysics-sensory-biophysics",
+        "cochlear-fluid-voltage-reference",
+        "auditory-frequency-level-coding"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 6
+      "updatedAt": "2026-11-07",
+      "minutes": 25,
+      "objectives": [
+        "Distinguish physical sound level, hearing-level reference and perceived loudness.",
+        "Read a logarithmic frequency axis and the downward hearing-level axis without confusing them.",
+        "Calculate a stated threshold difference and distinguish it from an established same-ear air-bone gap.",
+        "Keep no-response output limits, missing observations and exact thresholds separate.",
+        "Explain what a pure-tone comparison cannot establish about cellular damage or diagnosis."
+      ],
+      "prerequisites": [
+        "ear-anatomy",
+        "biophysics-sensory-biophysics"
+      ],
+      "workedExample": {
+        "title": "Separate a difference from the evidence supporting it",
+        "prompt": "In fictional case A at 1,000 Hz, air conduction is 55 dB HL and bone conduction is 20 dB HL under stated reliable same-ear conditions. Compare that record with case E, which has air conduction 95 dB HL and no bone-conduction response at an output limit of 65 dB HL.",
+        "solution": [
+          "For case A, subtract the two established thresholds: 55 minus 20 equals 35 dB.",
+          "The stated reliability and ear specificity allow the 35 dB difference to be described as an air-bone gap at that frequency.",
+          "For case E, 65 dB HL is a no-response output limit, not the measured bone-conduction threshold; 95 minus 65 does not produce an exact established gap.",
+          "Neither comparison alone identifies a unique disease or the proportion of injured cells."
+        ]
+      },
+      "summaryChecklist": [
+        "Frequency is not intensity, and a threshold is not a tissue diagnosis.",
+        "Keep the reference with every decibel value.",
+        "Compare points at the same frequency.",
+        "A right-side symbol alone is not evidence of a right-cochlea response.",
+        "A numerical difference and a valid clinical comparison are separate claims.",
+        "Equal gaps do not make two whole audiograms equivalent.",
+        "A limit is not an exact threshold; missing is not zero.",
+        "State the observation, assumptions and remaining alternatives."
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Why can two audiograms share the same air-bone gap while supporting different descriptions of their absolute thresholds?",
+          "answer": "A difference does not retain both starting values. Compare the absolute air- and bone-conduction thresholds, their frequency patterns and the validity of the same-ear assumptions before interpreting the difference."
+        },
+        {
+          "prompt": "What evidence is missing when an unmasked bone-conduction symbol is labelled with a mastoid placement?",
+          "answer": "Placement records where the transducer was positioned. It does not by itself establish which cochlea supplied the response, so an ear-specific interpretation still requires evidence addressing cross-hearing."
+        }
+      ]
     },
     {
       "id": "biophysics-practical-biosignals",

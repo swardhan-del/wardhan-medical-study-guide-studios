@@ -1702,7 +1702,14 @@
     "retina-stalk-v1",
     "retina-fovea-v1",
     "retina-scale-v1",
-    "retina-evidence-match-v1"
+    "retina-evidence-match-v1",
+    "audiometry-measurement-octaves-20261107",
+    "audiometry-measurement-difference-20261107",
+    "audiometry-measurement-side-20261107",
+    "audiometry-measurement-limit-20261107",
+    "audiometry-measurement-zero-20261107",
+    "audiometry-measurement-matched-20261107",
+    "audiometry-measurement-different-bases-20261107"
   ],
   "learningDraftIds": [
     "oral-renal-kidney-map",
@@ -2165,6 +2172,14 @@
     "biophysics-fluid-flow-summary-4",
     "biophysics-fluid-flow-summary-5",
     "biophysics-fluid-flow-summary-6",
+    "biophysics-practical-audiometry-summary-1",
+    "biophysics-practical-audiometry-summary-2",
+    "biophysics-practical-audiometry-summary-3",
+    "biophysics-practical-audiometry-summary-4",
+    "biophysics-practical-audiometry-summary-5",
+    "biophysics-practical-audiometry-summary-6",
+    "biophysics-practical-audiometry-summary-7",
+    "biophysics-practical-audiometry-summary-8",
     "physiology-membrane-foundations-summary-1",
     "physiology-membrane-foundations-summary-2",
     "physiology-membrane-foundations-summary-3",
@@ -2801,6 +2816,13 @@
     "explain-retina-fovea-v1",
     "explain-retina-scale-v1",
     "explain-retina-evidence-match-v1",
+    "explain-audiometry-measurement-octaves-20261107",
+    "explain-audiometry-measurement-difference-20261107",
+    "explain-audiometry-measurement-side-20261107",
+    "explain-audiometry-measurement-limit-20261107",
+    "explain-audiometry-measurement-zero-20261107",
+    "explain-audiometry-measurement-matched-20261107",
+    "explain-audiometry-measurement-different-bases-20261107",
     "lab-prediction",
     "lab-explanation"
   ],
@@ -4183,6 +4205,13 @@
     "retina-stalk-v1": "retinal-structure-light-signal-direction",
     "retina-fovea-v1": "retinal-structure-light-signal-direction",
     "retina-scale-v1": "retinal-structure-light-signal-direction",
-    "retina-evidence-match-v1": "retinal-structure-light-signal-direction"
+    "retina-evidence-match-v1": "retinal-structure-light-signal-direction",
+    "audiometry-measurement-octaves-20261107": "biophysics-practical-audiometry",
+    "audiometry-measurement-difference-20261107": "biophysics-practical-audiometry",
+    "audiometry-measurement-side-20261107": "biophysics-practical-audiometry",
+    "audiometry-measurement-limit-20261107": "biophysics-practical-audiometry",
+    "audiometry-measurement-zero-20261107": "biophysics-practical-audiometry",
+    "audiometry-measurement-matched-20261107": "biophysics-practical-audiometry",
+    "audiometry-measurement-different-bases-20261107": "biophysics-practical-audiometry"
   }
 }
