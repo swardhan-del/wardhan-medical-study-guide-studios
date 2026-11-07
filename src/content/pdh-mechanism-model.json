@@ -1,0 +1,145 @@
+{
+  "title": "Follow carbon, carrier and electrons separately",
+  "states": [
+    {
+      "id": "ready",
+      "label": "Ready carrier",
+      "carbon": "Three-carbon pyruvate is available.",
+      "lipoyl": "Oxidised enzyme-attached carrier",
+      "electron": "NAD+ is available for the completed sequence."
+    },
+    {
+      "id": "loaded",
+      "label": "E1 loads the arm",
+      "carbon": "One carbon leaves as CO2; a two-carbon acetyl group is on the arm.",
+      "lipoyl": "Reduced and acetyl-bearing, still attached to E2",
+      "electron": "The carrier changes redox state during acetyl loading."
+    },
+    {
+      "id": "transferred",
+      "label": "E2 transfers acetyl",
+      "carbon": "Acetyl-CoA leaves.",
+      "lipoyl": "Reduced and no longer acetyl-bearing, still attached to E2",
+      "electron": "Redox regeneration is still required."
+    },
+    {
+      "id": "reset",
+      "label": "E3 resets the arm",
+      "carbon": "No additional carbon is removed in this reset step.",
+      "lipoyl": "Oxidised state restored",
+      "electron": "NAD+ becomes NADH through the E3 reaction; FAD remains enzyme associated."
+    }
+  ],
+  "limits": [
+    "Schematic order of one catalytic cycle; not a molecular structure or real-time kinetics simulation.",
+    "Carbon count concerns the pyruvate-derived atoms, not all carbon in CoA.",
+    "No additional FADH2 output or consumption of the lipoyl arm is included."
+  ],
+  "references": [
+    {
+      "id": "IUBMB-system",
+      "title": "IUBMB: pyruvate dehydrogenase system",
+      "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/104.html"
+    },
+    {
+      "id": "IUBMB-E1",
+      "title": "IUBMB: E1 acetyl-transferring activity",
+      "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/4/1.html"
+    },
+    {
+      "id": "IUBMB-E2",
+      "title": "IUBMB: E2 acetyltransferase",
+      "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/12.html"
+    },
+    {
+      "id": "IUBMB-E3",
+      "title": "IUBMB: dihydrolipoyl dehydrogenase",
+      "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/8/1/4.html"
+    }
+  ],
+  "sectionReferences": [
+    {
+      "title": "Set the boundary before counting carbon",
+      "references": [
+        {
+          "title": "IUBMB: pyruvate dehydrogenase system",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/104.html"
+        }
+      ]
+    },
+    {
+      "title": "E1 couples decarboxylation to loading the attached carrier",
+      "references": [
+        {
+          "title": "IUBMB: E1 acetyl-transferring activity",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/4/1.html"
+        },
+        {
+          "title": "Reactome: human E1 reaction",
+          "url": "https://reactome.org/content/detail/R-HSA-9861734"
+        }
+      ]
+    },
+    {
+      "title": "E2 transfers the acetyl group without replacing its lipoyl arm",
+      "references": [
+        {
+          "title": "IUBMB: E2 acetyltransferase",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/12.html"
+        },
+        {
+          "title": "Reactome: human DLAT transfer",
+          "url": "https://reactome.org/content/detail/R-HSA-9861667"
+        }
+      ]
+    },
+    {
+      "title": "E3 resets the redox state so the carrier can be used again",
+      "references": [
+        {
+          "title": "IUBMB: dihydrolipoyl dehydrogenase",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/8/1/4.html"
+        },
+        {
+          "title": "Reactome: DLD carrier regeneration",
+          "url": "https://reactome.org/content/detail/R-HSA-9861616"
+        }
+      ]
+    },
+    {
+      "title": "Read a molecular picture as an evidence-based model",
+      "references": [
+        {
+          "title": "RCSB PDB-101: multienzyme architecture",
+          "url": "https://pdb101.rcsb.org/motm/153"
+        }
+      ]
+    },
+    {
+      "title": "Separate phosphorylation state from pathway flux",
+      "references": [
+        {
+          "title": "Reactome: PDK phosphorylation of E1",
+          "url": "https://reactome.org/content/detail/R-HSA-203946"
+        },
+        {
+          "title": "Reactome: PDP-mediated phosphate removal",
+          "url": "https://reactome.org/content/detail/R-HSA-204169"
+        }
+      ]
+    },
+    {
+      "title": "Design a comparison that answers one mechanistic question",
+      "references": [
+        {
+          "title": "IUBMB: pyruvate dehydrogenase system",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/104.html"
+        },
+        {
+          "title": "IUBMB: dihydrolipoyl dehydrogenase",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/8/1/4.html"
+        }
+      ]
+    }
+  ]
+}

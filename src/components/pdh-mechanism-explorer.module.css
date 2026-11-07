@@ -1,0 +1,26 @@
+.explorer { min-width: 0; overflow-wrap: anywhere; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-block: 1rem; }
+.controls button { min-height: 44px; max-width: 100%; padding: .7rem; border: 2px solid #54757a; border-radius: .5rem; color: #193e43; background: #fff; font: inherit; text-align: left; cursor: pointer; overflow-wrap: anywhere; }
+.controls button[aria-pressed="true"] { color: #fff; background: #193e43; }
+.controls button:focus-visible, .controls input:focus-visible { outline: 3px solid #ac4813; outline-offset: 4px; }
+.controls input { width: 6rem; min-width: 0; max-width: 100%; padding: .65rem; border: 2px solid #54757a; border-radius: .4rem; font: inherit; }
+.current { min-width: 0; padding: 1rem; border-left: 5px solid #365e65; color: #193e43; background: #eef5f4; }
+.current dl { margin-block: .75rem; }
+.current dt { font-weight: 700; margin-top: .75rem; }
+.current dd { margin: .25rem 0 0; }
+.locations { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; }
+.locations > div { min-width: 0; padding: .75rem; border: 1px solid #54757a; border-radius: .5rem; background: #fff; }
+.carbon { display: inline-grid; place-items: center; width: 2rem; height: 2rem; margin: .2rem; border: 2px solid #193e43; border-radius: 50%; font-weight: 700; }
+.explorer details { margin-block: 1rem; }
+.explorer summary { cursor: pointer; min-height: 44px; }
+.explorer li { margin-block: .75rem; }
+@media print { .controls { display: none; } }
+
+@media (max-width: 480px) {
+  .explorer { padding: .25rem; }
+  .explorer h2 { font-size: 1.25rem; }
+  .explorer h3, .explorer h4 { font-size: 1rem; }
+  .current { padding: .25rem; border-left-width: 3px; }
+  .locations > div { padding: .15rem; }
+  .explorer ul, .explorer ol { padding-inline-start: 1rem; }
+}

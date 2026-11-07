@@ -9711,6 +9711,168 @@
       ],
       "answer": 3,
       "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "pdh-mechanism-01",
+      "topic": "pdh-tca",
+      "subject": "biochemistry",
+      "title": "Carbon accounting",
+      "prompt": "Four pyruvate molecules complete the PDH reaction. Counting only their original carbon atoms, which partition is consistent with the reaction?",
+      "options": [
+        {
+          "text": "Twelve carbons in four acetyl groups, none in CO2",
+          "explanation": "An acetyl group contains two carbons. This assigns too many carbons to those four groups."
+        },
+        {
+          "text": "Eight carbons in four acetyl groups and four in CO2",
+          "explanation": "Each three-carbon input supplies a two-carbon acetyl group and one carbon to CO2; four turnovers preserve all twelve substrate carbons."
+        },
+        {
+          "text": "Four carbons in acetyl groups and eight in CO2",
+          "explanation": "This reverses the two-carbon acetyl and one-carbon CO2 contributions per turnover."
+        },
+        {
+          "text": "Eight carbons in NADH and four in CO2",
+          "explanation": "NAD+ accepts reducing equivalents; it is not the recipient of the pyruvate-derived acetyl carbons."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/pdh-tca#apply-the-concept"
+    },
+    {
+      "id": "pdh-mechanism-02",
+      "topic": "pdh-tca",
+      "subject": "biochemistry",
+      "title": "Attached carrier",
+      "prompt": "Immediately after E2 transfers its acetyl group to CoA, which description best distinguishes the carrier and product?",
+      "options": [
+        {
+          "text": "The entire lipoyl arm leaves attached to CoA",
+          "explanation": "The acetyl group transfers; the lipoyl arm remains attached to E2."
+        },
+        {
+          "text": "TPP leaves as the acetyl-CoA carrier",
+          "explanation": "TPP acts at E1 and is not the CoA product carrier."
+        },
+        {
+          "text": "Acetyl-CoA leaves while reduced lipoyl remains enzyme attached",
+          "explanation": "Transfer changes where the acetyl group is carried; the enzyme-linked carrier still requires redox regeneration."
+        },
+        {
+          "text": "The enzyme permanently loses its lipoyl group",
+          "explanation": "A catalytic carrier must be reused; permanent loss is not the normal transfer step."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/pdh-tca#apply-the-concept"
+    },
+    {
+      "id": "pdh-mechanism-03",
+      "topic": "pdh-tca",
+      "subject": "biochemistry",
+      "title": "Net products",
+      "prompt": "Which component belongs in the net product list for a completed PDH reaction rather than being counted as a newly released cofactor product?",
+      "options": [
+        {
+          "text": "NADH",
+          "explanation": "NAD+ receives reducing equivalents and NADH is a net product."
+        },
+        {
+          "text": "One freely released FADH2 per pyruvate",
+          "explanation": "FAD cycles within E3; counting released FADH2 adds a product absent from the net PDH reaction."
+        },
+        {
+          "text": "A newly manufactured lipoyl arm",
+          "explanation": "The pre-existing enzyme-linked carrier is regenerated."
+        },
+        {
+          "text": "A newly manufactured TPP molecule",
+          "explanation": "TPP participates in catalysis without being made as a net product of PDH."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/pdh-tca#apply-the-concept"
+    },
+    {
+      "id": "pdh-mechanism-04",
+      "topic": "pdh-tca",
+      "subject": "biochemistry",
+      "title": "Reading molecular evidence",
+      "prompt": "A structural illustration draws a flexible linker that is absent from the deposited atomic coordinates. What is the best next interpretation?",
+      "options": [
+        {
+          "text": "The protein cannot contain that linker",
+          "explanation": "Unresolved coordinates do not establish biological absence."
+        },
+        {
+          "text": "Every atom in the drawn linker was measured in that conformation",
+          "explanation": "A schematic connection is not an atomically resolved conformation."
+        },
+        {
+          "text": "The image alone establishes the turnover rate",
+          "explanation": "A structural representation is not a kinetic measurement."
+        },
+        {
+          "text": "Check which parts were resolved and which are schematic",
+          "explanation": "Organism, method and representation limits are needed before interpreting the connection."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/pdh-tca#apply-the-concept"
+    },
+    {
+      "id": "pdh-mechanism-05",
+      "topic": "pdh-tca",
+      "subject": "biochemistry",
+      "title": "Regulation and flux",
+      "prompt": "An assay shows a larger dephosphorylated fraction of E1 in a tissue extract. Which additional claim is justified by that measurement alone?",
+      "options": [
+        {
+          "text": "All acetyl-CoA in that person now comes from glucose",
+          "explanation": "The assay does not determine whole-body substrate contributions."
+        },
+        {
+          "text": "The measured enzyme phosphorylation state has changed",
+          "explanation": "The measurement supports its own state comparison; an intact-tissue flux conclusion requires additional evidence."
+        },
+        {
+          "text": "TCA flux must have doubled",
+          "explanation": "No flux rate or twofold relationship was measured."
+        },
+        {
+          "text": "Every PDH molecule is catalysing at its maximum rate",
+          "explanation": "The state measurement does not establish saturating substrates or maximal turnover."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/pdh-tca#apply-the-concept"
+    },
+    {
+      "id": "pdh-mechanism-06",
+      "topic": "pdh-tca",
+      "subject": "biochemistry",
+      "title": "Assay interpretation",
+      "prompt": "A complete PDH-system assay gives a lower NADH readout after a perturbation. Why does this not uniquely locate the defect at E3?",
+      "options": [
+        {
+          "text": "E3 never participates in NADH generation",
+          "explanation": "E3 does participate; the problem is lack of specificity of the whole-system readout."
+        },
+        {
+          "text": "NADH is unrelated to PDH",
+          "explanation": "NADH is part of the net reaction."
+        },
+        {
+          "text": "Upstream steps and measurement interference can also lower the signal",
+          "explanation": "The coupled readout requires upstream supply and a functioning detection method; use discriminating controls or component assays."
+        },
+        {
+          "text": "A lower signal proves that acetyl-CoA is unchanged",
+          "explanation": "The assay does not establish an unchanged acetyl-CoA rate or pool."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/pdh-tca#apply-the-concept"
     }
   ]
 }
