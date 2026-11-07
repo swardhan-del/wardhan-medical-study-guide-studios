@@ -1276,16 +1276,19 @@
       "lessonId": "myelin-and-glial-cells",
       "title": "Myelin and glia: identify the cell before the function",
       "subject": "histology",
-      "topic": "Myelin, nerve fascicles and sensory/autonomic ganglia: cells, branches, relays and evidence",
+      "topic": "Nerve compartments, preparation, glial roles, ganglion pathways and developmental evidence",
       "slug": "myelin-and-glial-cells",
-      "learnerLevel": "Introductory microscopic anatomy with a bounded research-interpretation extension",
+      "learnerLevel": "Medical-student microscopic anatomy with bounded primary-research interpretation",
       "objectives": [
         "Compare Schwann cells with oligodendrocytes.",
         "Distinguish myelination from axonal transport.",
         "Use tissue organisation to recognise a peripheral nerve.",
         "Distinguish a typical spinal sensory neuron’s branches from a two-neuron autonomic efferent chain.",
         "Locate the preganglionic and postganglionic somata without placing both inside a peripheral ganglion.",
-        "Separate observed cell relationships from complete-cell counts, functional contacts and research outcomes."
+        "Separate observed cell relationships from complete-cell counts, functional contacts and research outcomes.",
+        "Compare nerve orientation and preparation without inventing undocumented stains or scale.",
+        "Separate visible nerve profiles from cellular identity, molecular expression and developmental ancestry.",
+        "Distinguish loss, rescue, cellular context and injury-response evidence in selected experiments."
       ],
       "sources": [
         {
@@ -1350,29 +1353,74 @@
           "url": "https://www.ncbi.nlm.nih.gov/books/NBK10869/",
           "accessedAt": "2026-11-04",
           "sourceType": "educational-reference"
+        },
+        {
+          "title": "Taveggia et al. Neuron. 2005;47(5):681–694.",
+          "publisherOrAuthor": "Taveggia et al",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16129398/",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Arthur-Farraj et al. Neuron. 2012;75(4):633–647.",
+          "publisherOrAuthor": "Arthur-Farraj et al",
+          "url": "https://discovery.ucl.ac.uk/id/eprint/1364750/",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Erickson et al. Nature Communications. 2024;15:7065.",
+          "publisherOrAuthor": "Erickson et al",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39152112/",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "University of Leeds: peripheral nervous system",
+          "publisherOrAuthor": "University of Leeds: peripheral nervous system",
+          "url": "https://histology.leeds.ac.uk/home/tissue_types/nerves/nerve_pns/",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Ouyang, Dong and Ubogu. J Peripher Nerv Syst. 2019;24:195–206.",
+          "publisherOrAuthor": "Ouyang, Dong and Ubogu",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6692082/",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Duke University: selected spinal motor-neuron and neural-crest relationships",
+          "publisherOrAuthor": "Duke University: selected spinal motor-neuron and neural-crest relationships",
+          "url": "https://embryology.oit.duke.edu/neuro/neuro.html",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
         }
       ],
-      "contentStatus": "editorial-reviewed",
+      "contentStatus": "medical-review-pending",
       "visualStatus": "approved-and-published",
       "visualRequired": true,
-      "visualNotes": "Original four-row branch/relay comparison inspected at desktop and as stacked cards at 320px with 200% text. Soma locations, captions and text equivalent are readable. Correct-answer feedback wraps without document overflow. No source figure, micrograph or diagnostic image approved.",
+      "visualNotes": "Three independent CC0 specimens and nine open-target regions passed native desktop/mobile, keyboard, no-JavaScript, failed-image and exact-download checks. Enlarged-text visual review found narrow reading columns; a scoped correction passed actual 32-pixel body text, label bounds and reading-width checks. Existing ganglion comparison and legacy lymph-node markers are retained.",
       "assessmentStatus": "explanations-complete",
       "accessibilityStatus": "checked",
       "readabilityStatus": "checked",
       "indexStatus": "indexable",
-      "lastReviewedAt": "2026-11-04",
-      "nextReviewAt": "2027-02-04",
+      "lastReviewedAt": "2026-11-07",
+      "nextReviewAt": "2027-02-07",
       "limitations": [
         "Typical spinal sensory and autonomic arrangements; no universal rule for every ganglion, cell interaction or glial ratio.",
         "Fictional complete paths do not determine myelin, speed, total ganglion cell counts or human clinical responses.",
         "Selected primary teaching passages and mouse-study abstract/results; source figures and full methods not comprehensively reviewed.",
-        "AI-assisted checks, not independent clinical or human accessibility certification."
+        "AI-assisted checks, not independent clinical or human accessibility certification.",
+        "The three photographs are independent specimens with unknown species and no calibrated scale bar. Two stains are undocumented; the third is provider-labelled osmium.",
+        "Selected primary-study sections support bounded experimental interpretations, not molecular measurements from the teaching photographs or human treatment effects.",
+        "Typed responses provide a model for self-comparison and are not automatically graded. Original questions are not official examination-bank items."
       ],
       "reviewEvidenceIds": [
-        "myelin-and-glial-cells-editorial-20261104",
-        "myelin-and-glial-cells-readability-20261104",
-        "myelin-and-glial-cells-visual-20261104",
-        "myelin-and-glial-cells-accessibility-20261104"
+        "nerve-practical-editorial-20261107",
+        "nerve-practical-visual-20261107",
+        "nerve-practical-accessibility-20261107",
+        "nerve-practical-readability-20261107"
       ],
       "links": {
         "prerequisite": [

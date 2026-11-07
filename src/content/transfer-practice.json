@@ -9495,6 +9495,222 @@
       ],
       "answer": 1,
       "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-01",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Section plane",
+      "prompt": "An ideal cylindrical fibre is cut perpendicular to its axis in one model and obliquely in another. What can explain a round profile in the first and an elongated profile in the second?",
+      "options": [
+        {
+          "text": "The second fibre must have a different embryonic origin.",
+          "explanation": "Section geometry alone can change the profile; no lineage evidence is supplied."
+        },
+        {
+          "text": "Different cutting planes can change the two-dimensional profile of the same ideal shape.",
+          "explanation": "The model changes the plane through a cylinder. A changed profile does not require a new tissue type."
+        },
+        {
+          "text": "Every elongated profile must be a complete cell.",
+          "explanation": "A section samples part of a three-dimensional structure; elongation does not establish its full extent."
+        },
+        {
+          "text": "Both profiles must be circular at every section angle.",
+          "explanation": "An oblique plane through an ideal cylinder produces an elongated intersection."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-02",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Image calibration",
+      "prompt": "A student enlarges the transverse nerve image and wants to report fibre diameters in micrometres. The file has no scale bar or pixel calibration. What is the appropriate next step?",
+      "options": [
+        {
+          "text": "Divide the on-screen width by the provider's historical 100× value.",
+          "explanation": "Display size and resizing are not fixed by the acquisition magnification."
+        },
+        {
+          "text": "Use the diameter of an arbitrary nucleus as an exact ruler.",
+          "explanation": "That substitutes an unvalidated biological assumption for calibration."
+        },
+        {
+          "text": "Obtain calibration linked to the image acquisition before reporting physical dimensions.",
+          "explanation": "A pixel-to-length relation appropriate to the image is needed for defensible morphometry."
+        },
+        {
+          "text": "Assume one image pixel is one micrometre.",
+          "explanation": "Pixel units are not physical units without calibration."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-03",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Independent preparations",
+      "prompt": "The longitudinal routine-colour image and the osmium image come from separate specimen records. Can their difference in darkness measure how much myelin one specimen gained after treatment?",
+      "options": [
+        {
+          "text": "No; these are independent preparations without a paired intervention or a validated quantitative comparison.",
+          "explanation": "The comparison supports qualitative preparation reasoning, not a before-and-after biological measurement."
+        },
+        {
+          "text": "Yes, because both provider descriptions mention 200×.",
+          "explanation": "Matching historical magnification does not match specimens, preparation or exposure."
+        },
+        {
+          "text": "Yes, because darker pixels always mean more compact myelin.",
+          "explanation": "Contrast depends on preparation and imaging, so darkness is not a universal amount scale."
+        },
+        {
+          "text": "Yes, if the two images are displayed at the same width.",
+          "explanation": "Resizing cannot supply missing experimental controls."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-04",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Documented stain",
+      "prompt": "Only the dark longitudinal specimen has an explicit osmium preparation record. How should the two pink-and-purple specimens be labelled?",
+      "options": [
+        {
+          "text": "H&E, because those colours uniquely identify the stain.",
+          "explanation": "Colour resemblance is insufficient to establish an undocumented preparation."
+        },
+        {
+          "text": "Osmium, because they appear in the same activity.",
+          "explanation": "Preparation information belongs to each specimen, not to the activity containing it."
+        },
+        {
+          "text": "Unstained, because the provider does not name a stain.",
+          "explanation": "Missing metadata is not evidence that no staining occurred."
+        },
+        {
+          "text": "Stain unreported; preserve the distinction between documented history and visual appearance.",
+          "explanation": "This accurately communicates the available provenance without inventing a label."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-05",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Fascicular boundary",
+      "prompt": "In a transverse nerve section, which feature most directly supports identifying the perineurium around one fascicle?",
+      "options": [
+        {
+          "text": "An empty-looking cleft beside the fibre-rich field.",
+          "explanation": "A separation space alone does not demonstrate the cells of a sheath."
+        },
+        {
+          "text": "A layered cellular sleeve following the boundary of the fascicle.",
+          "explanation": "Perineurial cells enclose a fascicle; their position and organised sleeve distinguish this boundary from an empty cleft."
+        },
+        {
+          "text": "A dark ring around a single small fibre profile.",
+          "explanation": "A single fibre profile is at a different organisational scale from the covering of a whole fascicle."
+        },
+        {
+          "text": "Any isolated elongated nucleus among the fibres.",
+          "explanation": "A nucleus inside the fascicle cannot by itself identify its enclosing perineurial sleeve."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-06",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Loss and rescue",
+      "prompt": "In the cited NRG1 study, deficient neurons showed impaired ensheathment/myelination and re-expression rescued those defects. What does the rescue add?",
+      "options": [
+        {
+          "text": "It measures NRG1 levels in the three teaching photographs.",
+          "explanation": "Those photographs are independent specimens without that assay."
+        },
+        {
+          "text": "It establishes a safe human therapy.",
+          "explanation": "The described experimental result is not a clinical treatment trial."
+        },
+        {
+          "text": "It strengthens the causal interpretation of the manipulated signal within the tested model.",
+          "explanation": "Reversing the defect by restoring the targeted signal supports that interpretation, with the model's limits retained."
+        },
+        {
+          "text": "It proves that axon calibre never matters in any nerve.",
+          "explanation": "A result for the tested mechanism and conditions does not establish a universal absence of other influences."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-07",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Repair versus development",
+      "prompt": "A mouse experiment disrupts a Schwann-cell factor and finds impaired recovery after nerve injury. Why should an embryology summary not automatically label that factor essential for all normal Schwann-cell development?",
+      "options": [
+        {
+          "text": "The tested injury response and normal development are different conditions requiring their own evidence.",
+          "explanation": "An injury phenotype cannot silently substitute for a developmental loss-of-function result."
+        },
+        {
+          "text": "No adult cell can change its molecular programme.",
+          "explanation": "The cited repair study investigates precisely such a change."
+        },
+        {
+          "text": "All repair cells must be embryonic cells that survived unchanged.",
+          "explanation": "That ignores reprogramming of differentiated Schwann cells in the reported model."
+        },
+        {
+          "text": "A single adult micrograph already proves the embryonic mechanism.",
+          "explanation": "A static adult image does not reconstruct developmental causation."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
+    },
+    {
+      "id": "nerve-practical-08",
+      "topic": "myelin-and-glial-cells",
+      "subject": "histology",
+      "title": "Two developmental components",
+      "prompt": "A diagram places a spinal motor axon beside its peripheral Schwann-cell support. Which explanation best connects the arrangement with development?",
+      "options": [
+        {
+          "text": "Both must arise from the same progenitor because they touch.",
+          "explanation": "Contact and shared adult location do not prove common ancestry."
+        },
+        {
+          "text": "The motor neuron's soma must lie in the nerve fascicle.",
+          "explanation": "A peripheral axonal segment does not determine the location of its soma."
+        },
+        {
+          "text": "All cells in a peripheral nerve must be neurons.",
+          "explanation": "The structure also contains glia, connective-tissue cells and vascular cells."
+        },
+        {
+          "text": "The spinal motor neuron derives from the neural tube, while its Schwann support follows a neural-crest-associated lineage.",
+          "explanation": "Distinct developmental components can cooperate in one adult structure; an adult image alone is not lineage tracing."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/myelin-and-glial-cells#apply-the-concept"
     }
   ]
 }

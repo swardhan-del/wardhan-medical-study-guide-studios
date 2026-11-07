@@ -1,3 +1,4 @@
+import nervePracticalSpecimens from "@/content/nerve-practical-specimens.json";
 import ovarianPracticalSpecimens from "@/content/ovarian-practical-specimens.json";
 import { HistologyGuidedPathReturn } from "./histology-guided-path";
 import femalePracticalSpecimens from "@/content/female-practical-specimens.json";
@@ -82,7 +83,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const reviewedSupplementalPractice = ["ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "neurulation", "placenta", "muscle-histology", "vessel-histology", "blood-marrow", "connective-tissue", "cartilage-bone", "epithelia", "cell-junctions", "liver-pancreas", "gi-histology", "renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
   const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
-  const figureTarget = ["ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
+  const figureTarget = ["myelin-and-glial-cells", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
   const foundation = foundations[lesson.subject];
   const subject = subjectInterests.find((s) => s.id === lesson.subject) ?? librarySubjects.find((s) => s.id === lesson.subject)!;
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
@@ -176,6 +177,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
                       +
                     </span>
                   </summary>
+                  {step.highlight && <p className="lesson-reasoning"><strong>{step.highlight}</strong></p>}
                   {step.body.split("\n\n").map((paragraph, i) => <p key={i}>{paragraph.startsWith("Try it:") ? <><strong>Try it:</strong>{paragraph.slice(7)}</> : paragraph}</p>)}
                   {step.practice && <div className="lesson-reasoning"><p><strong>Apply this distinction:</strong> {step.practice.prompt}</p><details><summary>Check the reasoning</summary><p>{step.practice.feedback}</p></details></div>}
                   <HistologySectionReferences lessonId={lesson.id} index={index} />
@@ -189,6 +191,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
             </div>
           </section>
           {lesson.id === "neurulation" && <><SpecimenExplorerEntry figure={figures.find(figure => figure.id === "chick-neural-tube-labels")!} data={neurulationSpecimen} scope="neurulation" introduction="Orient the lumen, then compare the labelled wall regions. The numbered markers are study regions, not cell boundaries. Hide them to practise without hints; no channel is artificially isolated." /><section id="neurulation-folding" aria-label="Primary folding activity"><NeurulationSlides /></section></>}
+          {lesson.id === "myelin-and-glial-cells" && nervePracticalSpecimens.map((entry, index) => <SpecimenExplorerEntry key={entry.scope} figure={figures.find(figure => figure.id === entry.data.figureId)!} data={entry.data} scope={entry.scope} introduction={entry.introduction} licenseLabel={entry.licenseLabel} imageLoading="lazy" markerMode="open-target" markerLabelsBelow={index < 2 ? [2] : []} />)}
           {lesson.id === "brain-and-csf-barriers" && <SpecimenExplorerEntry figure={figures.find(figure => figure.id === "human-choroid-plexus-labelled")!} data={brainCsfSpecimen} scope="brain-csf" licenseLabel="CC0 1.0 terms" introduction="Follow the epithelial covering around a vascular stromal core. Choose a study region, describe what is visible, then compare the interpretation. Hiding numbered markers leaves the original photograph’s text and arrows visible; this is guided interpretation, not a blind identification test." />}
           {lesson.id === "reproductive-histology" && <><ReproductiveRouteEntry /><SpecimenExplorerEntry figure={figures.find(figure => figure.id === "human-epididymis-he")!} data={reproductiveSpecimen} scope="reproductive" licenseLabel="CC BY-SA 3.0 terms" introduction="Follow the tall lining around a ductal lumen, then compare the separate small vessel and surrounding tissue. Select a numbered study region and describe what you can see before interpreting it. Region markers can be hidden; they are not cell boundaries." /></>}
           {lesson.id === "placenta" && <><PlacentaCirculation /><SpecimenExplorerEntry figure={figures.find(figure => figure.id === "placenta-term-villus")!} data={placentaSpecimen} scope="placenta" licenseLabel="CC0 1.0 terms" introduction="Find the outer trophoblast boundary, then distinguish blood inside and outside the villus. Choose a numbered region to compare observation and interpretation. Markers identify broad study regions; hide them for retrieval practice." /></>}
@@ -277,7 +280,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
               </p>
             </section>
           )}
-          {!["ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "epithelia", "microscopy", "renal-histology", "muscle-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id).filter(figure => figure.id !== "normal-lymph-node-architecture")} title="Connect the figure with the explanation" />}
+          {!["myelin-and-glial-cells", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "epithelia", "microscopy", "renal-histology", "muscle-histology"].includes(lesson.id) && <FigureGallery figures={figuresForResource(lesson.id).filter(figure => figure.id !== "normal-lymph-node-architecture")} title="Connect the figure with the explanation" />}
           {lesson.id === "limbs-plexus-and-joints" && <PlexusRecall />}
           <ConceptCheck
             key={`concept-${lesson.id}`}

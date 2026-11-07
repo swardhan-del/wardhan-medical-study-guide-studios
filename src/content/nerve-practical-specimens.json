@@ -1,0 +1,140 @@
+[
+  {
+    "scope": "nerve-longitudinal",
+    "data": {
+      "title": "Peripheral nerve: longitudinal organisation",
+      "figureId": "peripheral-nerve-longitudinal",
+      "regions": [
+        {
+          "id": "nerve-longitudinal-region-1",
+          "label": "Aligned wavy profiles",
+          "observation": "Several elongated profiles run in a similar, gently wavy direction.",
+          "interpretation": "This arrangement supports a longitudinal view of a nerve bundle when combined with the specimen provenance and the surrounding tissue. Follow several profiles before deciding their common axis.",
+          "limit": "A visible segment is not an entire axon, and the image does not distinguish sensory from motor fibres.",
+          "anchor": {
+            "x": 47,
+            "y": 32
+          }
+        },
+        {
+          "id": "nerve-longitudinal-region-2",
+          "label": "Dark elongated nucleus",
+          "observation": "A dark, elongated nuclear profile lies among the aligned tissue profiles.",
+          "interpretation": "Nuclei are a useful second clue after the overall arrangement. Record the nucleus as an observation before assigning a supporting-cell identity.",
+          "limit": "Shape and proximity alone do not establish that this nucleus belongs to a Schwann cell rather than another cell in the tissue.",
+          "anchor": {
+            "x": 66.4,
+            "y": 87
+          }
+        },
+        {
+          "id": "nerve-longitudinal-region-3",
+          "label": "Pale interval",
+          "observation": "A lighter interval separates neighbouring elongated profiles.",
+          "interpretation": "Preparation and separation of tissue can contribute to pale intervals. Compare its direction and continuity with surrounding fibres.",
+          "limit": "This isolated light interval does not demonstrate the specialised interruption of a particular myelin sheath at a node of Ranvier.",
+          "anchor": {
+            "x": 55,
+            "y": 43
+          }
+        }
+      ],
+      "model": "Aligned undulating fibres and elongated nuclei; field does not show an entire nerve cross-section. Do not label every nucleus as Schwann or infer a motor versus sensory axon."
+    },
+    "licenseLabel": "CC0 1.0 public-domain dedication",
+    "imageLoading": "lazy",
+    "introduction": "Compare arrangement before naming cells. These are independent specimens, not consecutive views of one nerve. Choose a region, separate observation from interpretation, and state what this preparation cannot establish."
+  },
+  {
+    "scope": "nerve-cross",
+    "data": {
+      "title": "Peripheral nerve: transverse profiles and surrounding tissue",
+      "figureId": "peripheral-nerve-cross",
+      "regions": [
+        {
+          "id": "nerve-cross-region-1",
+          "label": "Crowded transverse profiles",
+          "observation": "Numerous small round or oblique profiles occupy a broad grouped region.",
+          "interpretation": "Together with the provider identification, the arrangement supports a transverse or oblique view of fibres within a fascicular region. Compare it with the elongated profiles in the independent longitudinal specimen.",
+          "limit": "No calibrated scale is supplied. Do not calculate axon diameter or treat these independent images as matched sections of one nerve.",
+          "anchor": {
+            "x": 43,
+            "y": 46
+          }
+        },
+        {
+          "id": "nerve-cross-region-2",
+          "label": "Separation cleft",
+          "observation": "A pale cleft lies between the grouped profiles and more peripheral fibrous tissue.",
+          "interpretation": "Describe it first as a separation space. To identify a perineurial sleeve, find the continuous cellular boundary around a fascicle rather than naming the empty-looking space itself.",
+          "limit": "The cleft is not itself a cellular sheath. No vascular lining or contents are demonstrated here that would identify a vessel.",
+          "anchor": {
+            "x": 85.5,
+            "y": 47
+          }
+        },
+        {
+          "id": "nerve-cross-region-3",
+          "label": "Peripheral fibrous tissue",
+          "observation": "Fibrous-looking tissue extends outside the pale separation cleft.",
+          "interpretation": "Its position is useful for mapping the relationship between a fascicular region and surrounding support. The broad region can be described before resolving its individual cell layers.",
+          "limit": "This marker does not identify a single perineurial layer, and the displayed field is not a complete map of the entire nerve.",
+          "anchor": {
+            "x": 89.4,
+            "y": 58
+          }
+        }
+      ],
+      "model": "Many small transverse profiles within a larger fascicular region; peripheral tissue and a separation cleft are present. The separation cleft itself is not the perineurium or a vascular lumen."
+    },
+    "licenseLabel": "CC0 1.0 public-domain dedication",
+    "imageLoading": "lazy",
+    "introduction": "Compare arrangement before naming cells. These are independent specimens, not consecutive views of one nerve. Choose a region, separate observation from interpretation, and state what this preparation cannot establish."
+  },
+  {
+    "scope": "nerve-osmium",
+    "data": {
+      "title": "Peripheral nerve: documented osmium preparation",
+      "figureId": "peripheral-nerve-osmium",
+      "regions": [
+        {
+          "id": "nerve-osmium-region-1",
+          "label": "Dark longitudinal profile",
+          "observation": "An elongated dark profile runs through the selected region.",
+          "interpretation": "The provider documents osmium-tetroxide preparation. This gives the dark contrast a preparation-specific context consistent with myelin-associated lipid.",
+          "limit": "The image does not resolve the molecular layers of compact myelin or quantify the amount of a myelin protein.",
+          "anchor": {
+            "x": 38,
+            "y": 62
+          }
+        },
+        {
+          "id": "nerve-osmium-region-2",
+          "label": "Interval between profiles",
+          "observation": "A light interval occurs between adjacent dark profiles.",
+          "interpretation": "Compare continuity along each profile before interpreting the intervening space. Preparation, tissue separation and the section plane affect the appearance.",
+          "limit": "Lightness between profiles is not enough to identify a node or diagnose loss of myelin.",
+          "anchor": {
+            "x": 59,
+            "y": 64
+          }
+        },
+        {
+          "id": "nerve-osmium-region-3",
+          "label": "Contrast and focus vary",
+          "observation": "Some profile edges are less sharp than others and contrast varies across the field.",
+          "interpretation": "Focus, overlap and the section plane affect what can be distinguished. Use a clearer region to formulate an anatomical claim and keep the less certain region in view as a limitation.",
+          "limit": "A blur or contrast change alone does not prove a developmental transition, injury or a different cell type.",
+          "anchor": {
+            "x": 63,
+            "y": 25
+          }
+        }
+      ],
+      "model": "Dark longitudinal fibres demonstrate a preparation chosen to contrast myelin-associated lipid. Pale interruptions and changes in focus are not all identifiable nodes of Ranvier."
+    },
+    "licenseLabel": "CC0 1.0 public-domain dedication",
+    "imageLoading": "lazy",
+    "introduction": "Compare arrangement before naming cells. These are independent specimens, not consecutive views of one nerve. Choose a region, separate observation from interpretation, and state what this preparation cannot establish."
+  }
+]

@@ -2661,13 +2661,18 @@
       "kind": "Study lesson",
       "action": "new-comparison-or-flow",
       "components": [
-        "TeachingDiagram"
+        "TeachingDiagram",
+        "SpecimenExplorerEntry"
       ],
       "visualIds": [
         "ganglia-branch-and-relay"
       ],
-      "figureIds": [],
-      "rationale": "Original four-row semantic comparison distinguishes a typical spinal sensory branch from an autonomic two-neuron chain, soma locations, glial relationships and section limits. Actual desktop and 320px/200% text stacked-card captures inspected; labels, caption and feedback wrap. Keyboard and expanded-state Axe checks passed. No source image or specimen is reproduced."
+      "figureIds": [
+        "peripheral-nerve-longitudinal",
+        "peripheral-nerve-cross",
+        "peripheral-nerve-osmium"
+      ],
+      "rationale": "Retain the original four-row ganglion comparison and reuse the specimen explorer for three independently credited CC0 nerve photographs. Nine regions distinguish observation, interpretation and limits. Native desktop/mobile, keyboard, no-JavaScript, failed-image, downloaded-byte and legacy-marker checks passed. Visual inspection identified narrow columns at doubled text size; scoped padding and heading corrections passed reflow checks without changing existing specimen layouts."
     },
     {
       "id": "neurulation",

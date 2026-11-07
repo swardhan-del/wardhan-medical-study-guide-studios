@@ -607,50 +607,6 @@
       "contentSha256": "f82caf8745d9a4668fce00eb6442744546d9f9088ef0bad7161b8827f6a89087"
     },
     {
-      "id": "myelin-and-glial-cells-editorial-20261104",
-      "lessonId": "myelin-and-glial-cells",
-      "scope": "editorial",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted source, circuit-unit and editorial checks",
-      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
-      "independent": false,
-      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
-      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
-    },
-    {
-      "id": "myelin-and-glial-cells-readability-20261104",
-      "lessonId": "myelin-and-glial-cells",
-      "scope": "readability",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted source, circuit-unit and editorial checks",
-      "qualification": "Automated assistant; no independent clinical or human accessibility qualification claimed",
-      "independent": false,
-      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
-      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
-    },
-    {
-      "id": "myelin-and-glial-cells-visual-20261104",
-      "lessonId": "myelin-and-glial-cells",
-      "scope": "visual",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted actual browser, rendered-layout and Axe checks",
-      "qualification": "Automated assistant; keyboard, persistence and 320px/200% text checked; no independent clinical or human accessibility certification",
-      "independent": false,
-      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
-      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
-    },
-    {
-      "id": "myelin-and-glial-cells-accessibility-20261104",
-      "lessonId": "myelin-and-glial-cells",
-      "scope": "accessibility",
-      "reviewedAt": "2026-11-04",
-      "reviewer": "Codex AI-assisted actual browser, rendered-layout and Axe checks",
-      "qualification": "Automated assistant; keyboard, persistence and 320px/200% text checked; no independent clinical or human accessibility certification",
-      "independent": false,
-      "record": "docs/reviews/ganglia-branch-relay-20261104.md",
-      "contentSha256": "2fa6dfa320e8f0a6c88e84bd6d98efad99e284107037800951001712001b90f0"
-    },
-    {
       "id": "serine-one-carbon-donor-carrier-cofactor-editorial-20261105",
       "lessonId": "serine-one-carbon-donor-carrier-cofactor",
       "scope": "editorial",
@@ -2277,6 +2233,50 @@
       "independent": false,
       "record": "docs/reviews/foundations-guided-depth-20261107.md",
       "contentSha256": "d2e5a6b0a366b0894da123141189a31718c97d62f291d6a350b8af309c0d1a00"
+    },
+    {
+      "id": "nerve-practical-editorial-20261107",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "editorial",
+      "reviewedAt": "2026-11-07",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/nerve-practical-depth-20261107.md",
+      "contentSha256": "694ba05896ba1ad71eb9256389868d6f8851dc44de01f0be14bc587ed8a1c8bd"
+    },
+    {
+      "id": "nerve-practical-visual-20261107",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "visual",
+      "reviewedAt": "2026-11-07",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/nerve-practical-depth-20261107.md",
+      "contentSha256": "694ba05896ba1ad71eb9256389868d6f8851dc44de01f0be14bc587ed8a1c8bd"
+    },
+    {
+      "id": "nerve-practical-accessibility-20261107",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "accessibility",
+      "reviewedAt": "2026-11-07",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/nerve-practical-depth-20261107.md",
+      "contentSha256": "694ba05896ba1ad71eb9256389868d6f8851dc44de01f0be14bc587ed8a1c8bd"
+    },
+    {
+      "id": "nerve-practical-readability-20261107",
+      "lessonId": "myelin-and-glial-cells",
+      "scope": "readability",
+      "reviewedAt": "2026-11-07",
+      "reviewer": "Codex AI-assisted source and editorial review",
+      "qualification": "Automated assistant; no independent specialist qualification claimed",
+      "independent": false,
+      "record": "docs/reviews/nerve-practical-depth-20261107.md",
+      "contentSha256": "694ba05896ba1ad71eb9256389868d6f8851dc44de01f0be14bc587ed8a1c8bd"
     }
   ]
 }
