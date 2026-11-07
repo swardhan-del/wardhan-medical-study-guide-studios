@@ -3115,6 +3115,28 @@
       "resources": [
         "pituitary-glandular-neural-orientation"
       ]
+    },
+    {
+      "id": "topic-vestibular-sensors-rotation-translation",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "description": "Distinguish crista and macula, trace receptor signalling, test an explicit motion model, and evaluate developmental evidence.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "vestibular-sensors-rotation-translation"
+      ]
+    },
+    {
+      "id": "histology-ii-special-senses",
+      "title": "Special senses: structure and development",
+      "description": "Connect vestibular sensory architecture, mechanical inputs and otic development.",
+      "subject": "histology-ii",
+      "parentId": null,
+      "kind": "system",
+      "resources": [
+        "vestibular-sensors-rotation-translation"
+      ]
     }
   ]
 }

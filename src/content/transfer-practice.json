@@ -9873,6 +9873,374 @@
       ],
       "answer": 2,
       "href": "/library/pdh-tca#apply-the-concept"
+    },
+    {
+      "id": "vestibular-depth-crista-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "A sensory crest projects into an ampulla and relates to a cupula. Which identification is supported?",
+      "options": [
+        {
+          "text": "A macula solely because hair cells are present",
+          "explanation": "Hair cells occur in several sensory epithelia; the ampullary crest and cupula are the stronger clues."
+        },
+        {
+          "text": "A crista ampullaris",
+          "explanation": "The location and overlying structure fit a crista."
+        },
+        {
+          "text": "A cochlear spiral ganglion",
+          "explanation": "A ganglion contains neuronal cell bodies, not this epithelial crest–cupula arrangement."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "vestibular-depth-macula-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Which combination best supports a macular interpretation?",
+      "options": [
+        {
+          "text": "A calyx ending alone",
+          "explanation": "A cell’s nerve ending does not establish the surrounding receptor-organ architecture."
+        },
+        {
+          "text": "A pale region alone",
+          "explanation": "Colour without location and relationships is insufficient."
+        },
+        {
+          "text": "A sensory patch associated with an otoconial membrane",
+          "explanation": "The relationship connects the sensory epithelium to its characteristic mechanical load."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "vestibular-depth-receptor-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Which route keeps the two relevant cell types distinct?",
+      "options": [
+        {
+          "text": "Hair-cell receptor change → transmitter change → afferent neuronal signal",
+          "explanation": "The epithelial receptor communicates with an afferent neuron."
+        },
+        {
+          "text": "Hair-cell axon → vestibular nucleus",
+          "explanation": "The central neuronal process belongs to the afferent neuron, not a hair-cell axon."
+        },
+        {
+          "text": "Supporting cell → ossicle → motor nerve",
+          "explanation": "This mixes support, mechanical transmission and motor supply into an unrelated sequence."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "vestibular-depth-polarity-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "A bundle is deflected toward its kinocilium. What is the appropriate initial comparison?",
+      "options": [
+        {
+          "text": "All neighbouring cells must have exactly the same response",
+          "explanation": "Neighbouring bundles can have different polarities and couplings."
+        },
+        {
+          "text": "Mechanotransduction-channel opening increases relative to opposite deflection",
+          "explanation": "The sign is defined relative to the individual polarized bundle."
+        },
+        {
+          "text": "The hair cell becomes a conventional motor neuron",
+          "explanation": "A change in receptor potential does not change the cell into a motor neuron."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "vestibular-depth-type-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "A flask-like sensory cell is associated with a calyx ending. What is justified?",
+      "options": [
+        {
+          "text": "Its exact conduction velocity has been measured",
+          "explanation": "Neither shape nor an ending supplies a velocity measurement."
+        },
+        {
+          "text": "It proves all cells in the organ are mature",
+          "explanation": "One profile does not establish the maturity of every cell."
+        },
+        {
+          "text": "It supports a type I morphological interpretation, subject to section and maturity limits",
+          "explanation": "Shape plus ending is stronger morphological evidence than shape alone, while still having limits."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "vestibular-depth-coupling-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Which material belongs in an idealised macula diagram rather than a normal crista cupula?",
+      "options": [
+        {
+          "text": "Otoconia on an otolithic membrane",
+          "explanation": "The crystal-loaded membrane is the macular mechanical arrangement."
+        },
+        {
+          "text": "A hair-cell bundle",
+          "explanation": "Hair bundles occur in both receptor systems."
+        },
+        {
+          "text": "Supporting epithelial cells",
+          "explanation": "Supporting cells also occur in both sensory epithelia."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "vestibular-depth-time-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Why is one still section insufficient to describe a canal response to starting and stopping rotation?",
+      "options": [
+        {
+          "text": "All canals respond only to static gravity",
+          "explanation": "This confuses canal mechanics with the static gravitational component of otolith loading."
+        },
+        {
+          "text": "The relevant response depends on motion history and dynamics",
+          "explanation": "A fixed structural sample cannot measure the earlier time-dependent response."
+        },
+        {
+          "text": "A section automatically records acceleration numerically",
+          "explanation": "No time-series measurement is encoded merely by having a tissue section."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "vestibular-depth-vector-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "The model uses q = g_head − a. Upright, g_head = (0,−1) and a = (0.2,0). What is q?",
+      "options": [
+        {
+          "text": "(0.2,−1)",
+          "explanation": "The defined convention subtracts translational acceleration."
+        },
+        {
+          "text": "(0,−0.8)",
+          "explanation": "The acceleration was in x, not z."
+        },
+        {
+          "text": "(−0.2,−1)",
+          "explanation": "Subtract each component in the same head-fixed axes."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "vestibular-depth-same-input-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Two model states have the same q but different tilt and translation. What follows?",
+      "options": [
+        {
+          "text": "That input alone does not uniquely identify the cause",
+          "explanation": "The model explicitly demonstrates multiple causes for one input."
+        },
+        {
+          "text": "The person must have a vestibular disorder",
+          "explanation": "The example is a geometric teaching comparison, not a diagnostic test."
+        },
+        {
+          "text": "The two head motions are physically identical",
+          "explanation": "Equality of an input vector does not make its separate causes identical."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "vestibular-depth-two-components-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Two cases match q_x but have different q_z. Which claim is correct?",
+      "options": [
+        {
+          "text": "The complete vectors are identical",
+          "explanation": "A vector comparison must include both components."
+        },
+        {
+          "text": "Only the displayed horizontal component matches",
+          "explanation": "One equality is established; the other component still differs."
+        },
+        {
+          "text": "Both must have the same tilt angle",
+          "explanation": "Different combinations of tilt and acceleration can affect the components."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "vestibular-depth-method-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "You want to test a claim about an afferent’s response during movement. Which evidence most directly addresses it?",
+      "options": [
+        {
+          "text": "A routine H&E colour pattern",
+          "explanation": "A tissue pattern does not directly measure a neural time course."
+        },
+        {
+          "text": "A transcript marker alone",
+          "explanation": "A marker can inform identity but is not the claimed response measurement."
+        },
+        {
+          "text": "An appropriate physiological recording during a specified motion stimulus",
+          "explanation": "The measurement and stimulus are aligned with the functional question."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "vestibular-depth-embryo-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Which sequence belongs to the inner-ear epithelial developmental account?",
+      "options": [
+        {
+          "text": "Otic placode → invagination → otic vesicle",
+          "explanation": "This orders the relevant early primordia and morphogenesis."
+        },
+        {
+          "text": "First pharyngeal pouch → all vestibular hair cells",
+          "explanation": "The pouch-associated middle-ear account should not replace otic development."
+        },
+        {
+          "text": "Adult cupula → embryonic surface ectoderm",
+          "explanation": "This reverses developmental direction and treats an adult structure as an embryonic source."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "vestibular-depth-stage-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "An organoid at culture day X shares markers with an embryonic specimen. Which interpretation is strongest?",
+      "options": [
+        {
+          "text": "Culture day X is automatically the embryo’s age in days",
+          "explanation": "Culture duration and embryonic staging are different coordinates."
+        },
+        {
+          "text": "The finding supports a bounded comparison that still needs stage and functional context",
+          "explanation": "Marker overlap is evidence with a defined scope, not identity of whole systems."
+        },
+        {
+          "text": "All inner-ear structures must be mature",
+          "explanation": "The maturity of every structure was not established by the stated observation."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "vestibular-depth-sampling-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "A paper’s atlas contains a limited sample of inner-ear cells. What should a student avoid?",
+      "options": [
+        {
+          "text": "Stating which specimens and methods were studied",
+          "explanation": "Those details make the claim more assessable."
+        },
+        {
+          "text": "Comparing complementary evidence types",
+          "explanation": "Different methods can address different aspects of the question."
+        },
+        {
+          "text": "Treating an undetected rare population as proven absent from all human inner ears",
+          "explanation": "Limited sampling and detection depth can miss a rare population."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "vestibular-depth-research-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "A primate study reports similar afferent encoding across its active and passive conditions. Which extension is unsupported?",
+      "options": [
+        {
+          "text": "Therefore no context-dependent processing exists anywhere in the human brain",
+          "explanation": "This extends a bounded peripheral recording result across species, conditions and processing levels."
+        },
+        {
+          "text": "The result concerns the sampled afferents and tested conditions",
+          "explanation": "This retains the scope of the experiment."
+        },
+        {
+          "text": "A separate perceptual claim needs appropriately designed evidence",
+          "explanation": "A different claim requires evidence that actually addresses it."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "vestibular-depth-cleft-20261107",
+      "topic": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "href": "/library/vestibular-sensors-rotation-translation#apply-the-concept",
+      "prompt": "Why does the turtle paired-recording study make the calyx cleft relevant to a structure–function explanation?",
+      "options": [
+        {
+          "text": "Its restricted space permits local ionic changes that affect signalling.",
+          "explanation": "The paired recordings link local potassium and conductances."
+        },
+        {
+          "text": "The receptor and afferent must be a single fused cell.",
+          "explanation": "They remain separate interacting cells."
+        },
+        {
+          "text": "A stained section directly measures their electrical currents.",
+          "explanation": "The study used recordings; morphology alone does not provide them."
+        }
+      ],
+      "answer": 0
     }
   ]
 }

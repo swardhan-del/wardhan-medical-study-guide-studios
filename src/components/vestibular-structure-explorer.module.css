@@ -1,0 +1,19 @@
+.explorer { margin-block: 2rem; padding: 1.25rem; border: 1px solid #b9c9d4; border-radius: .75rem; min-width: 0; }
+.explorer :is(p, h2, h3, li, button, summary) { overflow-wrap: anywhere; }
+.controls, .features { display: flex; gap: .65rem; flex-wrap: wrap; margin-block: 1rem; }
+.controls button, .features button { font: inherit; line-height: 1.4; padding: .65rem .8rem; min-height: 44px; max-width: 100%; border: 1px solid #617b8f; border-radius: .4rem; background: white; color: #173f5a; cursor: pointer; }
+.explorer button[aria-pressed=true] { background: #173f5a; color: white; }
+.explorer button:disabled { cursor: default; }
+.explorer :is(button, summary):focus-visible { outline: 3px solid #a44308; outline-offset: 4px; }
+.panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
+.panels section { min-width: 0; }
+.panels section[hidden] { display: none; }
+.panels:has(section[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.panels svg { display: block; width: 100%; max-width: 42rem; height: auto; margin: auto; }
+.explanation { border-left: 4px solid #176288; padding: .8rem; background: #eef8fb; }
+.prompt { padding: .8rem; background: #fff1c8; border-left: 4px solid #99600c; }
+.explorer details { padding: .7rem; border: 1px solid #b9c9d4; border-radius: .4rem; }
+.explorer summary { min-height: 44px; font-weight: 700; cursor: pointer; }
+.explorer li { margin-block: .7rem; }
+@media(max-width: 800px) { .panels { grid-template-columns: minmax(0, 1fr); } }
+@media(max-width: 420px) { .explorer, .explorer details, .explanation, .prompt { padding: 10px; } .explorer h2 { font-size: 1.25rem; } .explorer ol { padding-left: 1.2rem; } }

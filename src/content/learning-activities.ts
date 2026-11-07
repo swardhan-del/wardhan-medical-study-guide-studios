@@ -1,3 +1,4 @@
+import vestibularActivities from "./vestibular-learning-activities.json" with { type: "json" };
 import type { LearningActivity } from "../lib/learning-activity";
 
 const anatomy = { title: "OpenStax: anatomical terminology", url: "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology" };
@@ -6,6 +7,7 @@ const formation = { title: "Neuroscience: gastrulation and neurulation", url: "h
 
 /** Original prompts; source documents and third-party question banks are not bundled. */
 export const learningActivities: LearningActivity[] = [
+  ...vestibularActivities as LearningActivity[],
   {
     id: "orientation-plane-right-left-v1", lessonId: "anatomy-foundations", kind: "name",
     objective: "Identify a plane from the portions it separates.",
