@@ -1,7 +1,7 @@
 {
   "version": 1,
   "baselineCommit": "cc02a695145ed205e51fe95b08507b7a5ffa727c",
-  "scope": "Owner-authorised 10 September 2026: five-volume, 120-lesson anatomy course with authored explanations and original text-based practice and identification tasks. Raw manuscripts and unreviewed STEM media remain excluded. Retained released adaptations and exact assets, plus 12 original guided lessons and source-based study navigation authorised by the owner on 9 September 2026. Complete source manuscripts and unresolved archive material remain private. Retained released adaptations and exact assets, plus the individually reviewed subject learning expansion authorised by the owner on 8 September 2026. Complete source manuscripts and unresolved archive material remain private. Native Biophysics explanations, original questions and coded models added at the owner's request on 9 September 2026; source PDF pages and images are excluded. Owner-authorised 22 September 2026: one original Phase One histology foundations lesson (histology-foundations-tissues), including text-based visual prompts, worked reasoning and original retrieval/application questions. No new source images, manuscripts or recorded media are released. Owner-authorised 23 September 2026: Phase Four subject hubs and four original free foundation lessons in physiology, biochemistry, genetics and biophysics, with explained questions and accessible HTML comparisons. Existing lessons and exact assets are preserved; no new image or recorded-media assets are released. Submit a preview and pull request for review; production release is not authorised by this change. November 3: four original, source-checked statistical foundations with fictional data; clinical and restricted-source material excluded. Release follows exact-commit browser, privacy, CI and preview verification. November 5: one original serine/glycine reaction-role lesson, explained fictional event ledgers and semantic comparison; exact source-claim review and local render checks completed. No source documents or images added. Production remains gated by protected CI and exact-preview verification under the owner-authorised recurring release cycle. November5:original lung-observation reasoning augments the existing thoracic-development lesson. Original source documents/images remain excluded; related learning links preserve one print home per lesson. Publication follows scoped audit,full CI and exact-preview/production verification. November5: one original pentose-phosphate reaction-ledger lesson, invented molecule counts, explained questions and original comparison. Scoped source/rights and actual local dev visual/accessibility review completed. No source document/image or additional downloadable asset. Production release remains gated by full CI and exact hosted preview/production verification. November 5: owner-requested original visual study studio: nine programmed schematic images, one generated conceptual cover, and three silent captioned reels with three posters and three caption files. Source-specific review is recorded in docs/reviews/visual-studio-20261105.md. No atlas or source-document images are reproduced; existing assets and lesson identifiers are preserved. Normal exact-head CI and hosted verification remain release gates. Owner-authorized 6 November 2026: original mammary histology and development unit, 32 applied questions, a development map and two individually reviewed CC0/CC BY 4.0 H&E images. Source guides and restricted research media remain excluded; rendered checks are recorded in docs/reviews/mammary-development-depth-20261106.md.",
+  "scope": "Owner-authorised 10 September 2026: five-volume, 120-lesson anatomy course with authored explanations and original text-based practice and identification tasks. Raw manuscripts and unreviewed STEM media remain excluded. Retained released adaptations and exact assets, plus 12 original guided lessons and source-based study navigation authorised by the owner on 9 September 2026. Complete source manuscripts and unresolved archive material remain private. Retained released adaptations and exact assets, plus the individually reviewed subject learning expansion authorised by the owner on 8 September 2026. Complete source manuscripts and unresolved archive material remain private. Native Biophysics explanations, original questions and coded models added at the owner's request on 9 September 2026; source PDF pages and images are excluded. Owner-authorised 22 September 2026: one original Phase One histology foundations lesson (histology-foundations-tissues), including text-based visual prompts, worked reasoning and original retrieval/application questions. No new source images, manuscripts or recorded media are released. Owner-authorised 23 September 2026: Phase Four subject hubs and four original free foundation lessons in physiology, biochemistry, genetics and biophysics, with explained questions and accessible HTML comparisons. Existing lessons and exact assets are preserved; no new image or recorded-media assets are released. Submit a preview and pull request for review; production release is not authorised by this change. November 3: four original, source-checked statistical foundations with fictional data; clinical and restricted-source material excluded. Release follows exact-commit browser, privacy, CI and preview verification. November 5: one original serine/glycine reaction-role lesson, explained fictional event ledgers and semantic comparison; exact source-claim review and local render checks completed. No source documents or images added. Production remains gated by protected CI and exact-preview verification under the owner-authorised recurring release cycle. November5:original lung-observation reasoning augments the existing thoracic-development lesson. Original source documents/images remain excluded; related learning links preserve one print home per lesson. Publication follows scoped audit,full CI and exact-preview/production verification. November5: one original pentose-phosphate reaction-ledger lesson, invented molecule counts, explained questions and original comparison. Scoped source/rights and actual local dev visual/accessibility review completed. No source document/image or additional downloadable asset. Production release remains gated by full CI and exact hosted preview/production verification. November 5: owner-requested original visual study studio: nine programmed schematic images, one generated conceptual cover, and three silent captioned reels with three posters and three caption files. Source-specific review is recorded in docs/reviews/visual-studio-20261105.md. No atlas or source-document images are reproduced; existing assets and lesson identifiers are preserved. Normal exact-head CI and hosted verification remain release gates. Owner-authorized 6 November 2026: original mammary histology and development unit, 32 applied questions, a development map and two individually reviewed CC0/CC BY 4.0 H&E images. Source guides and restricted research media remain excluded; rendered checks are recorded in docs/reviews/mammary-development-depth-20261106.md. November 6: one original female-tract practical with four separately licensed micrographs, controlled-stain reasoning and scoped developmental evidence. Existing raw manuscripts and held media remain excluded; exact-preview and CI checks gate release.",
   "resourceIds": [
     "anatomy-abdomen",
     "anatomy-embryology",
@@ -286,7 +286,8 @@
     "thyroid-parathyroid-pattern-reasoning",
     "adrenal-layers-signals-reasoning",
     "pituitary-glandular-neural-orientation",
-    "mammary-histology-and-development"
+    "mammary-histology-and-development",
+    "female-tract-histology-and-development"
   ],
   "assets": [
     {
@@ -1367,6 +1368,30 @@
       "bytes": 1055699,
       "sha256": "9f4678cf0da1c8855eeeefdd44d63d6f047d90e2270390045fe0fdde9692efc4",
       "evidence": "docs/reviews/mammary-development-depth-20261106.md"
+    },
+    {
+      "path": "images/figures/endometrium-proliferative-he.jpg",
+      "bytes": 6216583,
+      "sha256": "439dad24c1cedf4c12f155e8b8a5ee6c67e93adec8ce4b33ff4f6183ac90ded8",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md"
+    },
+    {
+      "path": "images/figures/endometrium-secretory-he.jpg",
+      "bytes": 6021571,
+      "sha256": "30aa2781600ad7d1e4ff53f64b97f4515496a47049c05ffb742833eb20263c24",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md"
+    },
+    {
+      "path": "images/figures/tubal-folded-wall.jpg",
+      "bytes": 861673,
+      "sha256": "546484541d06bb2e876514b7c26b1fa9890cceca4bcadf6aa86055986b9d2a97",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md"
+    },
+    {
+      "path": "images/figures/tubal-ciliated-border.jpg",
+      "bytes": 189462,
+      "sha256": "ccb366ec358d54f08251df655fcd39597302ae4d72952fc5d6535d38855e16c6",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md"
     }
   ],
   "videoIds": [

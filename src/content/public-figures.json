@@ -1104,6 +1104,146 @@
       "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
       "modifications": "Nonessential embedded metadata removed without changing decoded pixels. No crop, recolouring or scale-bar changes; region markers are reversible browser overlays.",
       "observe": "Compare epithelial groups and interlobular stroma on the left before consulting the computational overlays on the right."
+    },
+    {
+      "id": "endometrium-proliferative-he",
+      "title": "Proliferative endometrium: glands and stroma",
+      "sourceAsset": "images/figures/endometrium-proliferative-he.jpg",
+      "kind": "micrograph",
+      "alt": "Routine section with many epithelial gland profiles embedded in densely cellular stroma, a surface lining near the top and red-staining erythrocytes.",
+      "caption": "Source-labelled proliferative endometrium, H&E. Gland profiles of varied section orientation sit in cellular stroma beneath a surface lining. Erythrocytes are also visible. This field does not establish an exact cycle day or bleeding cause. Species and calibrated scale are not reported.",
+      "rights": "Nephron. CC BY-SA 3.0. The explanatory annotation overlay is also offered under CC BY-SA 3.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Proliferative_phase_endometrium_--_low_mag.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-female-tract-histology-and-development"
+      ],
+      "resourceIds": [
+        "female-tract-histology-and-development"
+      ],
+      "width": 2848,
+      "height": 4272,
+      "src": "/images/figures/endometrium-proliferative-he.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/endometrium-proliferative-he.jpg",
+          "width": 2848,
+          "height": 4272,
+          "bytes": 6216583
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
+      "modifications": "Original photograph unchanged. Numbered region markers are browser overlays and can be hidden.",
+      "observe": "Describe two visible relationships, then state one inference that this fixed field cannot support."
+    },
+    {
+      "id": "endometrium-secretory-he",
+      "title": "Secretory endometrium: gland shape and luminal material",
+      "sourceAsset": "images/figures/endometrium-secretory-he.jpg",
+      "kind": "micrograph",
+      "alt": "Endometrial section containing irregular gland profiles with folded epithelial borders and pale luminal material, separated by cellular stroma.",
+      "caption": "Source-labelled secretory endometrium, H&E. Irregular folded gland profiles contain pale material and are separated by cellular stroma. The material’s chemical identity and an exact cycle day cannot be established from this photograph. Species and calibrated scale are not reported.",
+      "rights": "Nephron. CC BY-SA 3.0. The explanatory annotation overlay is also offered under CC BY-SA 3.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Secretory_phase_endometrium_--_intermed_mag.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-female-tract-histology-and-development"
+      ],
+      "resourceIds": [
+        "female-tract-histology-and-development"
+      ],
+      "width": 2848,
+      "height": 4272,
+      "src": "/images/figures/endometrium-secretory-he.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/endometrium-secretory-he.jpg",
+          "width": 2848,
+          "height": 4272,
+          "bytes": 6021571
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
+      "modifications": "Original photograph unchanged. Numbered region markers are browser overlays and can be hidden.",
+      "observe": "Describe two visible relationships, then state one inference that this fixed field cannot support."
+    },
+    {
+      "id": "tubal-folded-wall",
+      "title": "Fallopian tube cross-section: folded mucosa and wall",
+      "sourceAsset": "images/figures/tubal-folded-wall.jpg",
+      "kind": "micrograph",
+      "alt": "Cross-section of a tube with numerous mucosal folds occupying the centre, narrow pale spaces between them, a thick surrounding pink wall and outer connective tissue.",
+      "caption": "Folded mucosa occupies the lumen inside a broad muscular wall; outer connective tissue and vessels are visible. The source identifies a normal tubal cross-section. Stain, species, exact region and calibrated scale are not reported.",
+      "rights": "Ed Uthman. CC BY 2.0. The explanatory annotation overlay is also offered under CC BY 2.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Normal_Fallopian_tube,_cross_section_(3884871084).jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-female-tract-histology-and-development"
+      ],
+      "resourceIds": [
+        "female-tract-histology-and-development"
+      ],
+      "width": 1527,
+      "height": 1378,
+      "src": "/images/figures/tubal-folded-wall.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/tubal-folded-wall.jpg",
+          "width": 1527,
+          "height": 1378,
+          "bytes": 861673
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
+      "modifications": "Original photograph unchanged. Numbered region markers are browser overlays and can be hidden.",
+      "observe": "Describe two visible relationships, then state one inference that this fixed field cannot support."
+    },
+    {
+      "id": "tubal-ciliated-border",
+      "title": "Tubal epithelium: apical border and supporting tissue",
+      "sourceAsset": "images/figures/tubal-ciliated-border.jpg",
+      "kind": "micrograph",
+      "alt": "Close view of a columnar epithelial lining with purple nuclei and apical projections facing a pale luminal space, above pink supporting tissue.",
+      "caption": "A columnar epithelial lining with apical projections lies above supporting connective tissue. Focus limits individual-cell classification, and a fixed photograph cannot show ciliary motion. Stain, species and calibrated scale are not reported.",
+      "rights": "Mikael Häggström. CC0 1.0.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": "docs/reviews/female-practical-depth-20261106.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Histology_of_ciliated_columnar_epithelium_of_the_fallopian_tube.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-female-tract-histology-and-development"
+      ],
+      "resourceIds": [
+        "female-tract-histology-and-development"
+      ],
+      "width": 1219,
+      "height": 783,
+      "src": "/images/figures/tubal-ciliated-border.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/tubal-ciliated-border.jpg",
+          "width": 1219,
+          "height": 783,
+          "bytes": 189462
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
+      "modifications": "Original photograph unchanged. Numbered region markers are browser overlays and can be hidden.",
+      "observe": "Describe two visible relationships, then state one inference that this fixed field cannot support."
     }
   ]
 }

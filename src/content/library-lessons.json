@@ -14192,6 +14192,256 @@
       ]
     },
     {
+      "id": "female-tract-histology-and-development",
+      "subject": "histology",
+      "title": "Female reproductive tract: slides, staining and development",
+      "summary": "Distinguish tubal folds from uterine glands, compare endometrial patterns, interpret cervical and vaginal mucosa, and connect tissue organization with developmental and experimental evidence.",
+      "tags": [
+        "Organ histology",
+        "Integrated embryology",
+        "female reproductive tract",
+        "uterine tube",
+        "fallopian tube",
+        "endometrium",
+        "cervix",
+        "vagina",
+        "PAS",
+        "organoids"
+      ],
+      "source": "female-practical-depth-20261106",
+      "section": "Female tract architecture, epithelial function, staining comparisons and developmental evidence",
+      "steps": [
+        {
+          "title": "Read the organ wall before naming a cell",
+          "body": "Start at the lumen and work outward. A folded epithelial surface, its connective-tissue support and the surrounding muscle together establish the organ pattern. High magnification answers a different question: how many epithelial layers are present, where their nuclei lie, and whether an apical specialization is actually resolved. These two scales should agree before you identify a specimen.\n\nA uterine tube has a folded mucosa projecting into a lumen; the uterus has endometrial glands distributed within a specialized stroma beside a substantial myometrium. Cervical mucosa combines mucus-producing epithelium and gland profiles with a collagen-rich wall. Vaginal mucosa has a stratified squamous surface. A small crop may omit the feature that separates these possibilities. In that case, request a wider field rather than converting a missing landmark into a negative finding.",
+          "practice": {
+            "prompt": "For an unknown field, write three observations before your organ name.",
+            "feedback": "One low-power architectural observation; One epithelial observation; One unresolved feature or alternative."
+          }
+        },
+        {
+          "title": "A tubal fold is a surface with a core",
+          "body": "Imagine following the luminal surface of a branched mucosal fold. Epithelium covers its sides, while connective tissue occupies its interior. An oblique section can cut the same fold more than once and produce apparently isolated epithelial rings. The number of rings in one section is therefore not the number of independent glands or branches.\n\nTrace which side of each epithelial profile faces lumen, then look for continuity with adjacent folds at lower magnification. In a uterine gland, the lumen lies within an epithelial tube embedded in endometrial stroma. These are different topological relationships even when a tiny cross-section looks similar. Distal and proximal uterine-tube regions also differ in folding and muscular-wall prominence; do not demand identical complexity in every tubal specimen.\n\nUse the wall as a second check. The ampulla generally combines elaborate branching folds with a relatively thin muscular coat; the isthmus has a narrower lumen, simpler folds and more prominent muscle. The tubal coat contains interwoven smooth-muscle bundles, and an outer vascular connective-tissue region leads to the serosal covering. These are coordinated regional tendencies, not a rule that every cross-section has identical proportions. In the supplied wall image, the sampling region is unreported: identify the organization without assigning an unsupported segment.",
+          "practice": {
+            "prompt": "Explain how a single folded surface can produce several separated profiles in one section.",
+            "feedback": "Section plane intersects different parts of a three-dimensional fold; Connective-tissue core and luminal side identified; Serial or wider views proposed when continuity is uncertain."
+          }
+        },
+        {
+          "title": "Cilia, microvilli and an unresolved border",
+          "body": "The question is not merely whether the luminal edge looks fuzzy. Motile cilia and microvilli differ in architecture and function. Routine light microscopy may show a ciliary border, but it does not resolve every axonemal component or measure movement. A projection seen in a fixed section cannot, by itself, demonstrate transport.\n\nKessler and colleagues compared native human tubal tissue with epithelial organoids using complementary imaging. Electron microscopy resolves apical structures and junctional regions; immunofluorescence identifies the distribution of selected molecular targets. Neither image type should be relabelled as ordinary H&E. For a teaching comparison, first identify the imaging method and which panel is native tissue, then describe the feature that the method can actually resolve.",
+          "practice": {
+            "prompt": "What extra evidence would distinguish a visible projection from coordinated ciliary motion?",
+            "feedback": "Fixed morphology described separately from function; Live imaging or a functional motion measurement proposed; Native tissue and culture distinguished."
+          }
+        },
+        {
+          "title": "A cell marker is evidence, not a complete identity",
+          "body": "A marker result depends on the antibody, preparation, detection threshold and biological state. In the tubal organoid study, PAX8 and modified-tubulin staining supported comparisons of secretory and ciliated phenotypes. The authors also observed occasional overlap. A rigid rule that every positive cell belongs to one permanently exclusive lineage would discard that observation.\n\nUse the whole evidence pattern: cellular position, apical morphology, marker distribution and experimental context. A positive stain demonstrates detected target under the stated conditions. It does not automatically establish ancestry, maturity or physiological performance. Conversely, an unstained region may reflect a technical limitation, so appropriate controls and the expected localization matter.",
+          "practice": {
+            "prompt": "Rewrite “PAX8 proves that this cell can never become ciliated” as an evidence-limited statement.",
+            "feedback": "Describes a measured phenotype; Avoids irreversible ancestry claim; Acknowledges the reported overlapping phenotype."
+          }
+        },
+        {
+          "title": "Choose preparation for the question",
+          "body": "Preparation preserves some features while changing or obscuring others. Routine H&E sections are useful for wall organization, nuclear patterns and the relationship of epithelium to stroma. Immunofluorescence adds target-specific localization; its colours arise from labelled detection channels rather than the usual H&E colour scheme. Electron microscopy uses a different preparation and contrast system to examine ultrastructure.\n\nThe tubal study used paraffin sections for some organoid imaging and resin-embedded ultrathin sections for transmission electron microscopy. Its electron-microscopy preparation included aldehyde fixation, osmium treatment and heavy-metal contrast. These methods explain why fine membranes and apical structures become visible. They also explain why an EM field cannot be treated as a coloured version of the routine slide. In a practical answer, connect the chosen method to the feature sought rather than listing stains without a purpose.",
+          "practice": {
+            "prompt": "Select H&E, immunofluorescence or TEM for wall layers, a named protein, and fine apical ultrastructure.",
+            "feedback": "H&E for architecture; Validated immunolabelling for target localization; TEM for ultrastructure with preparation limitations."
+          }
+        },
+        {
+          "title": "Test a glandular-material claim with paired sections",
+          "body": "Consider an original teaching scenario: a uterine gland contains pale luminal material on H&E. Adjacent sections receive PAS alone or PAS after diastase treatment, alongside a known glycogen-containing control. PAS detects several carbohydrate-rich materials; its colour is not a glycogen-specific label. Loss of a corresponding PAS-positive component after effective digestion supports a glycogen contribution. A retained signal requires further interpretation rather than an automatic alternative diagnosis.\n\nCompare equivalent tissue regions and confirm that the sections remain attached and interpretable. If the control does not show its expected undigested reaction and digestion response, the test cannot distinguish absence of glycogen from a failed procedure. This extends the general staining principles in the epithelial lesson into an organ-specific experiment. The four practical photographs in this lesson are not paired PAS/diastase preparations; they cannot supply this chemical result.",
+          "practice": {
+            "prompt": "The test section and positive control are both negative before digestion. Can the result exclude glycogen?",
+            "feedback": "Check the control before interpreting the test; a failed positive control makes the negative result uninterpretable; do not assign a chemical result to the supplied routine micrographs."
+          }
+        },
+        {
+          "title": "Read a pathway experiment as a comparison",
+          "body": "An organoid experiment changes a defined condition and compares measured outcomes. In the human tubal culture study, Wnt-supporting conditions and a Notch-pathway inhibitor were examined alongside growth, gene-expression and cellular-phenotype readouts. Inhibitor-treated cultures showed less proliferation and a larger ciliated-cell fraction under the tested conditions.\n\nThis is stronger than a purely descriptive picture because a perturbation precedes the observation. It is still bounded by the culture, treatment and measurements. A drug can have additional effects, and a changed fraction can result from altered proliferation, survival or differentiation. To argue that one phenotype directly converted into another, add lineage-resolved observations. To argue that the same mechanism governs an intact human tube, add evidence in that context.",
+          "practice": {
+            "prompt": "Name two alternative explanations for an increased percentage of ciliated cells.",
+            "feedback": "Increased differentiation or representation of ciliated cells; Reduced expansion or survival of another population; Requests absolute counts or lineage tracking."
+          }
+        },
+        {
+          "title": "Fields, cells and donors are different sample units",
+          "body": "A microscopy experiment can contain thousands of cells without containing thousands of independent biological samples. Cells in the same organoid share an environment. Several fields can come from one culture, and several cultures can come from one donor. Technical PCR repeats measure assay repeatability; they do not create new donors.\n\nWhen reading a figure, identify the unit being counted and the unit independently exposed or sampled. Then ask whether the statistical analysis respects that structure. The tubal study reports fields, cell counts and biological replicates for different assays. Preserve those distinctions instead of turning every number in the methods into a universal sample size for the entire paper. This makes a student better able to assess both apparently impressive numbers and genuinely independent evidence.",
+          "practice": {
+            "prompt": "Seven fields from one culture contain 2,000 cells. How many independent donors does that establish?",
+            "feedback": "No donor count can be inferred from field or cell count alone; Identifies nesting of cells within fields and culture; Separates technical from biological replication."
+          }
+        },
+        {
+          "title": "Separate glands, stroma and muscle",
+          "body": "An endometrial gland is an epithelial compartment surrounding a lumen. The tissue between glands is endometrial stroma, containing stromal cells, vessels and other cellular components. The myometrium is the muscular wall beyond the mucosa. Recognizing these compartments prevents a common error: explaining every uterine response as though it occurred in the gland epithelium.\n\nGlandular secretory differentiation and stromal decidualization are related to the reproductive environment but are different cellular events. A culture enriched for endometrial gland epithelium can test epithelial responses without reproducing the complete stromal, vascular, immune and muscular environment. Read the model description before attributing an outcome to a cell type that the model does not contain.\n\nFind the endometrial–myometrial boundary before assigning mucosal depth. Basalis is endometrium retained near that boundary; functionalis is the more superficial compartment that undergoes cyclic shedding and renewal. Neither term denotes a separate smooth-muscle layer. Myometrial bundles intersect in different planes, so one field can show long spindle-cell profiles beside rounded transverse profiles. Their broad whorled arrangement and vessels distinguish the wall from densely cellular gland-bearing stroma.",
+          "practice": {
+            "prompt": "An epithelial organoid produces a gland-associated protein after hormone treatment. Does that demonstrate stromal decidualization?",
+            "feedback": "Identifies the measured epithelial response; States that stromal cells require separate evidence; Avoids treating the whole organ as one cell population."
+          }
+        },
+        {
+          "title": "Compare a pattern, not an isolated calendar clue",
+          "body": "Compare glands and stroma together. Proliferative endometrium commonly has less tortuous gland profiles and a cellular stroma; secretory endometrium shows a different combination of gland shape, luminal material and stromal change. Section orientation can make a curved structure look round or straight, and a small field may not represent the whole specimen.\n\nDescribe the observations first, then say which physiological pattern they support. Do not infer an exact cycle day from one gland profile or force every specimen into a textbook 28-day timeline. Sampling, hormone exposure and individual variation affect appearances. A good practical explanation connects ovarian signalling to tissue response while preserving uncertainty about what the slide alone can establish.\n\nFor an early secretory pattern, inspect the basal cytoplasm beneath gland-cell nuclei for vacuoles and compare several glands. Such clearing is conventionally associated with glycogen-rich material affected by processing; the chemical claim still needs a suitable stain and control. With further secretory differentiation, look for increasingly convoluted gland profiles, luminal expansion and material toward the apical or luminal compartment. This is a comparison across phases, not proof that the two supplied photographs depict successive moments in one person. Record gland architecture, epithelial cytoplasm and stroma separately before combining them.",
+          "practice": {
+            "prompt": "Write a comparison using at least one gland feature and one stromal feature, then state one limitation.",
+            "feedback": "Multiple compartments compared; Observation distinguished from physiological interpretation; No unsupported exact-day prediction."
+          }
+        },
+        {
+          "title": "A gland profile is not a complete gland",
+          "body": "Routine sections compress a three-dimensional problem into a thin plane. Yamaguchi and colleagues cleared human uterine tissue, labelled epithelial structures with CK7 and reconstructed them with light-sheet microscopy. The sampled tissue showed branching gland networks near the endometrial base, as well as structures that did not connect to the luminal surface. A drawing of identical isolated tubes therefore leaves out important possibilities.\n\nThe interpretation has limits. Samples came from hysterectomy material, not a population-wide survey or complete mapping of every uterus. The study did not include the youngest adult age group, and visual reconstruction is not the same as a lineage experiment. Use it to improve spatial reasoning: several separated profiles can belong to a connected structure, while one visible lumen cannot prove where the structure opens.",
+          "practice": {
+            "prompt": "What question can a three-dimensional reconstruction answer that one routine section cannot?",
+            "feedback": "Continuity, branching or opening of a structure; States sampling and reconstruction limits; Avoids inferring cell ancestry from shape alone."
+          }
+        },
+        {
+          "title": "A retained network and a regeneration hypothesis",
+          "body": "The three-dimensional study also examined menstrual tissue and found basal gland-network structures remaining near the muscular wall. This observation helps explain why the basal compartment matters when teaching cyclic tissue renewal. It does not by itself show which individual cell rebuilt a later functional layer.\n\nSeparate the steps in the argument. Observation: a basal architecture persists in the sampled menstrual tissue. Interpretation: that organization may support renewal. Further question: which cells contribute, and through what behaviours? Answering the final question requires evidence such as lineage-resolved tracking, clonal relationships or functional assays. A plausible architectural explanation becomes more useful when its untested step is made explicit.\n\nAdd the vascular map to this spatial model. Arcuate vessels lie within the muscular wall; radial branches approach the mucosa and supply branches associated with basal and functional compartments. Spiral vessels extend toward functionalis. Their coiling can generate several nearby circular profiles in one thin section. An endothelial-lined vascular lumen and an epithelial-lined gland lumen must be distinguished before counting either. The map connects retained basal tissue with repeated renewal; it does not reduce the entire menstrual mechanism to one isolated vascular event.",
+          "practice": {
+            "prompt": "Label one statement as observation and one as a testable interpretation.",
+            "feedback": "Persistence is an observed structural result; Regenerative advantage is an interpretation; A method to test cellular contribution is proposed."
+          }
+        },
+        {
+          "title": "Hormone response needs defined readouts",
+          "body": "Turco and colleagues established organoids from human endometrial gland preparations and tested responses to sequential hormonal conditions. They examined morphology and molecular readouts rather than declaring a culture mature from its round shape alone. Changes in gland-associated products supplied evidence of a responsive epithelial model.\n\nTo evaluate such an experiment, identify the starting culture, the order of conditions, the comparison group and the readout. A change in RNA, a change in protein and a change in secretory morphology are related but not interchangeable measurements. Concordance strengthens an interpretation; disagreement can reveal timing, regulation or a limitation of the model. The cultured structures lacked important components of intact endometrium, so the result should remain an epithelial-response claim.",
+          "practice": {
+            "prompt": "What would you measure in addition to a hormone-responsive transcript before claiming increased secretion?",
+            "feedback": "Relevant protein and/or secreted product; Appropriate untreated or comparator condition; Cell number, viability and compartment considered."
+          }
+        },
+        {
+          "title": "The cervix joins different epithelial environments",
+          "body": "The endocervical surface is associated with mucus-producing columnar epithelium and glandular profiles. The ectocervical surface has nonkeratinized stratified squamous epithelium. To recognize a junction, follow the continuous surface and inspect how epithelial layering changes; a pair of disconnected high-power crops does not establish their spatial relationship.\n\nThe wall and the gland pattern add context. Cervical tissue contains substantial connective tissue and smooth muscle, while the uterine body has the characteristic endometrial gland-and-stroma organization. Avoid calling every columnar gland-containing mucosa “endometrium.” Also avoid assuming that the epithelial junction occupies the same precise location in every specimen or life stage.\n\nAt higher power, endocervical cells commonly show basally placed nuclei with pale mucus-rich apical cytoplasm. Branching gland profiles occur within a collagen-rich wall. At the ectocervical surface, increasing epithelial layers and flattened superficial cells replace the single columnar lining. A tiny squamous-only field can therefore resemble vaginal mucosa. Follow the surface, seek glandular context and use the wall: epithelial category alone does not distinguish those two sites. The cervical mucosa is not shed with the uterine functional layer during normal menstruation.",
+          "practice": {
+            "prompt": "Which two observations distinguish a cervical epithelial junction from an isolated squamous field?",
+            "feedback": "A continuous transition to columnar mucosa; Associated cervical wall or glandular context; Acknowledges field size and junction variability."
+          }
+        },
+        {
+          "title": "Identify nonkeratinized squamous mucosa with context",
+          "body": "In vaginal mucosa, inspect the progression from basal cells toward flattened surface cells. The surface normally retains nuclei rather than forming a thick anucleate keratin layer. Beneath the epithelium, examine connective tissue and the muscular wall. This is more informative than identifying an organ from the words “stratified squamous” alone, because other mucosal sites share that epithelial category.\n\nGlycogen-associated appearances depend on hormonal state and preparation, and clear cytoplasm on a routine slide is not a specific chemical assay. A claim about glycogen requires an appropriate histochemical comparison and controls. Distinguish a normal feature, a preparation effect and a proven molecular constituent.\n\nAt low power, look for mucosal folds over connective tissue, then a smooth-muscle wall and outer adventitial tissue if the specimen includes them. Normal vaginal mucosa lacks glands. Mucus reaching this surface can originate in the cervix; it does not establish local mucus-secreting glands. Distinguish a gland lumen from a vessel or a fold cut obliquely. This combines a useful expected organ feature with an appropriate sampling limit: absence of glands in a small crop alone cannot identify the whole organ.",
+          "practice": {
+            "prompt": "Why does pale cytoplasm alone fail to prove a particular stored molecule?",
+            "feedback": "Routine appearance is not chemical specificity; Preparation can extract or alter material; A suitable stain and control are needed."
+          }
+        },
+        {
+          "title": "Develop the epithelium and its surroundings together",
+          "body": "An adult organ is not explained completely by naming its duct of origin. The human developmental series described changes in epithelial shape, mucosal folding, gland outgrowth and the surrounding stromal and muscular wall. These changes are related but distinguishable. A simple epithelial tube surrounded by loose mesenchyme is not already a miniature adult organ.\n\nThe paired cranial Müllerian-duct portions contribute to the uterine tubes, whereas more caudal fused regions participate in the uterovaginal canal. Regional tissue differentiation then creates different adult architectures. Teach these as a sequence of structural problems: establish a tube, organize its surrounding tissue, modify its lumen and mucosa, and develop region-specific features. The reviewed human material is a sampled developmental series; it does not directly reveal every molecular cause.",
+          "practice": {
+            "prompt": "For one adult feature, identify the epithelial change and a separate change in surrounding tissue.",
+            "feedback": "Folding or gland outgrowth assigned to epithelium; Stromal or smooth-muscle differentiation distinguished; Sequence not treated as a causal molecular experiment."
+          }
+        },
+        {
+          "title": "Fusion, lumen formation and regional maturation differ",
+          "body": "The developmental paper describes apposition and fusion of paired ductal structures, a temporary midline epithelial arrangement, and subsequent formation of a common canal. These geometric changes should be kept separate from later gland formation and wall maturation. Correctly naming a fused region does not explain how it acquires uterine, cervical or vaginal characteristics.\n\nSerial histology provides spatial and temporal relationships across sampled specimens. It supports a sequence, but it cannot automatically determine the molecular force that caused fusion or establish that every specimen follows an identical schedule. A developmental teaching diagram should therefore label observed structures and transitions, with a separate layer for mechanisms supported by experimental perturbation.",
+          "practice": {
+            "prompt": "Why is “the ducts fused, therefore the adult glands are mature” an invalid inference?",
+            "feedback": "Fusion concerns organ geometry; Gland differentiation is a separate process; Additional developmental evidence is required."
+          }
+        },
+        {
+          "title": "Changing markers do not settle human cell ancestry",
+          "body": "Robboy and colleagues examined human developmental sections using morphology and regional markers including PAX2 and FOXA1. The distribution of those markers changed along the developing vaginal region. Such data are valuable for defining an anatomical question, but a marker marks current detectable expression rather than permanently recording every ancestor of a cell.\n\nThe authors discuss competing interpretations of the changing pattern. Replacement of one population and altered expression within a population are not the same mechanism. Genetic lineage experiments in another species can clarify possibilities, yet cannot be transferred to humans without qualification. A rigorous lesson can explain why vaginal epithelial origin has been debated without presenting a fixed upper-versus-lower fraction as settled by these immunostains.",
+          "practice": {
+            "prompt": "What extra property makes a lineage label different from an ordinary differentiation marker?",
+            "feedback": "Stable inherited record of labelled ancestry; Ordinary expression can change with state; Species and experimental design still matter."
+          }
+        },
+        {
+          "title": "Build an answer that can be checked",
+          "body": "A strong practical answer has a visible chain: observation, interpretation, explanation and limit. First describe the wall and epithelial arrangement. Next identify the most likely tissue pattern and the alternatives you considered. Then explain one functional or developmental relationship using a source that actually measures the relevant process. Finish with what the available image or experiment cannot establish.\n\nFor example, describe an epithelial-lined lumen within cellular endometrial stroma, then compare the gland shape and surrounding tissue with the two supplied endometrial fields. If you propose a hormone-associated pattern, identify the observations supporting it. If you propose a chemical identity for pale luminal material, state the additional method and control you would need. Your final answer should distinguish what is visible from what the comparison suggests and what remains unresolved.",
+          "practice": {
+            "prompt": "Write a four-sentence answer: observation, interpretation, explanation, limitation.",
+            "feedback": "Each sentence has a different role; Mechanism is supported by the appropriate source; Uncertainty is specific rather than a generic disclaimer."
+          }
+        }
+      ],
+      "question": {
+        "prompt": "A folded epithelial profile is visible in a small section. What most directly improves the interpretation?",
+        "options": [
+          {
+            "text": "Trace its relationship to lumen, connective-tissue support and the surrounding wall in a wider field.",
+            "reason": "Architecture distinguishes a folded surface from an isolated gland profile more reliably than colour alone."
+          },
+          {
+            "text": "Assign the whole organ from the epithelial nuclear shape.",
+            "reason": "Nuclear shape can support a cellular description but does not establish the missing organ architecture."
+          },
+          {
+            "text": "Count every separated epithelial ring as an independent gland.",
+            "reason": "The section can cut one three-dimensional structure repeatedly; profile count is not object count."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Give one observation, one interpretation and one test for an unresolved question in a female-tract section.",
+        "answer": "For example, describe an epithelial-lined gland profile in cellular stroma, relate the combined gland-and-stroma pattern to endometrial physiology, and use a controlled histochemical comparison before claiming the identity of pale material. Do not assign an exact cycle day or cell ancestry from a single field."
+      },
+      "related": [
+        "reproductive-histology",
+        "ovary-uterine-tube",
+        "uterus-support-vessels",
+        "epithelia",
+        "placenta",
+        "mammary-histology-and-development"
+      ],
+      "prerequisites": [
+        "microscopy",
+        "epithelia"
+      ],
+      "updatedAt": "2026-11-06",
+      "minutes": 60,
+      "objectives": [
+        "Orient from organ wall to epithelial surface before identifying a field.",
+        "Distinguish a tubal mucosal fold from a uterine gland using spatial relationships.",
+        "Compare endometrial gland and stromal patterns without assigning an unsupported cycle day.",
+        "Explain what H&E, PAS/diastase, immunolabelling and electron microscopy can test.",
+        "Connect adult folds, glands and fibromuscular walls with separate developmental processes.",
+        "Distinguish phenotype, ancestry and function in human tissue and organoid experiments."
+      ],
+      "workedExample": {
+        "title": "A pale glandular material and a failed control",
+        "prompt": "An endometrial H&E field contains pale luminal material. In a separate hypothetical PAS experiment, both the test tissue and the known glycogen-containing control fail to stain before digestion. A student concludes that the uterine material contains no glycogen. Evaluate the conclusion.",
+        "solution": [
+          "The routine image locates material but does not chemically identify it.",
+          "The expected undigested control reaction failed, so absence in the test is not interpretable as biological absence.",
+          "Review preparation, staining performance and tissue integrity before repeating a controlled paired comparison.",
+          "Even a valid paired result concerns the sampled component; it does not independently determine a cycle day or clinical diagnosis."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "How can one tubal fold create several separate profiles?",
+          "answer": "A section can intersect different branches or bends of one continuous surface. Trace the epithelial covering, connective-tissue core and luminal side before counting objects."
+        },
+        {
+          "prompt": "How does an epithelial organoid differ from intact endometrium?",
+          "answer": "It can model glandular epithelial responses without containing the full stromal, vascular, immune and muscular compartments. A gland-associated response is not proof of stromal decidualization."
+        },
+        {
+          "prompt": "Why do developmental marker patterns not settle cell ancestry?",
+          "answer": "Current expression can change with cell state. A stable inherited lineage record answers a different question, and animal lineage results retain their species limits."
+        }
+      ],
+      "summaryChecklist": [
+        "Read architecture before isolated cells.",
+        "Describe gland and stromal compartments together.",
+        "Use preparation and controls to define what a colour means.",
+        "Keep the supplied specimens distinct and acknowledge missing scale or state information.",
+        "Separate developmental geometry from differentiation and causal mechanism.",
+        "Use complementary evidence without turning marker expression into ancestry."
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

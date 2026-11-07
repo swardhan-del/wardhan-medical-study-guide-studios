@@ -5,7 +5,7 @@ import type lymphoidData from "@/content/lymphoid-specimen.json";
 import type { PublicFigure } from "@/lib/figures";
 import styles from "./lymphoid-specimen-explorer.module.css";
 
-export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", introduction = "Start outside the tissue and move inward. Choose a numbered region, describe the visible pattern, then compare the interpretation. Markers indicate broad study regions, not individual cells.", licenseLabel = "CC BY 4.0 terms" }: { figure: PublicFigure; data: typeof lymphoidData; scope?: string; introduction?: string; licenseLabel?: string }) {
+export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", introduction = "Start outside the tissue and move inward. Choose a numbered region, describe the visible pattern, then compare the interpretation. Markers indicate broad study regions, not individual cells.", licenseLabel = "CC BY 4.0 terms", imageLoading = "eager" }: { figure: PublicFigure; data: typeof lymphoidData; scope?: string; introduction?: string; licenseLabel?: string; imageLoading?: "eager" | "lazy" }) {
   const [selected, setSelected] = useState(0);
   const [markers, setMarkers] = useState(true);
   const [response, setResponse] = useState("");
@@ -37,7 +37,7 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
         {unavailable ? <p role="status">The specimen image could not load. The complete descriptions below remain available. You can also open the original-sized image or its creator’s source.</p> : <>
           {/* The approved JPEG retains the original diagnostic pixels; browser sizing does not recode it. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img ref={imageRef} src={figure.src} width={figure.width} height={figure.height} alt={figure.alt} onError={() => setUnavailable(true)} />
+          <img ref={imageRef} src={figure.src} width={figure.width} height={figure.height} alt={figure.alt} loading={imageLoading} onError={() => setUnavailable(true)} />
           {markers && <div className={styles.markers} aria-hidden="true">{data.regions.map((item, index) => <span key={item.id} className={selected === index ? styles.selectedMarker : styles.marker} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}>{index + 1}</span>)}</div>}
         </>}
       </div>
@@ -48,6 +48,7 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
       <a href={figure.src} target="_blank" rel="noopener noreferrer">Open full-size image in a new tab</a>
       <a href={figure.src} download>Download credited specimen image</a>
     </div>
+    {imageLoading === "lazy" && <p>Full-resolution image: {(figure.variants.find(variant => variant.src === figure.src)!.bytes / 1000000).toFixed(1)} MB. Open it at full size to inspect finer detail.</p>}
     <p className={styles.credit}>{figure.rights} <a href={figure.sourceUrl}>Creator and source</a> · <a href={figure.licenseUrl}>{licenseLabel}</a>. {figure.modifications}</p>
     {!portrait && description}
     <details><summary>Read all {regionCount} region explanations</summary>

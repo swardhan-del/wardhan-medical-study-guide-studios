@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import teaching from '../../src/content/library-lessons.json';
 import practice from '../../src/content/transfer-practice.json';
 import specimens from '../../src/content/mammary-specimens.json';
+import guides from '../../src/content/printable-guides.json';
 
 const route = '/library/mammary-histology-and-development';
 const lesson = teaching.lessons.find(l => l.id === 'mammary-histology-and-development')!;
@@ -144,7 +145,9 @@ test('Mammary depth: discover, save, return and print in its single course home'
   await expect(page).toHaveURL(/\/subjects\/histology$/);
   await page.goto('/study/histology/revision'); await page.getByRole('button', { name: 'Clear selection', exact: true }).click();
   await page.getByRole('checkbox', { name: /Female Reproductive System Placenta and Mammary Gland/ }).check();
-  await expect(page.locator('.revision-lesson')).toHaveCount(2);
+  const part = guides.parts.find(item => item.id === 'histology-part-12')!;
+  expect(part.lessonIds).toContain('mammary-histology-and-development');
+  await expect(page.locator('.revision-lesson')).toHaveCount(part.lessonIds.length);
   await expect(page.locator('.revision-lesson').filter({ hasText: lesson.title })).toHaveCount(1);
   for (const e of examples) await expect(page.locator(`img[src="/images/figures/${e.asset}.jpg"]`)).toHaveCount(1);
 });

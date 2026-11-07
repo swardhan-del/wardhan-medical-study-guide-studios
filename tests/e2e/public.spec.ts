@@ -420,7 +420,7 @@ test("library filters expose useful resources in every subject and retain direct
     .getByRole("heading", { name: "Reproductive histology and embryology", exact: true }).getByRole("link")
     .click();
   await expect(page).toHaveURL(/topics\/histology-development$/);
-  const developmentResources = ["reproductive-histology", "placenta", "neurulation", "mammary-histology-and-development"];
+  const developmentResources = ["reproductive-histology", "placenta", "neurulation", "mammary-histology-and-development", "female-tract-histology-and-development"];
   const developmentCards = page.locator(".catalog-browser .resource-card");
   await expect(developmentCards).toHaveCount(developmentResources.length);
   for (const id of developmentResources) {

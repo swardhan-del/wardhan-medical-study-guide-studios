@@ -1,0 +1,206 @@
+[
+  {
+    "title": "Proliferative endometrium: glands and stroma",
+    "regions": [
+      {
+        "id": "endometrium-proliferative-he-region-1",
+        "label": "Gland profile",
+        "anchor": {
+          "x": 44,
+          "y": 30
+        },
+        "observation": "An epithelial boundary surrounds a pale lumen; the profile is embedded in stroma.",
+        "interpretation": "The epithelial boundary and surrounding stroma establish a glandular profile.",
+        "limit": "One section does not establish the full gland shape or its connection to the surface."
+      },
+      {
+        "id": "endometrium-proliferative-he-region-2",
+        "label": "Interglandular stroma",
+        "anchor": {
+          "x": 50,
+          "y": 41
+        },
+        "observation": "Numerous small nuclei occupy the tissue between epithelial profiles.",
+        "interpretation": "Interpret gland shape together with the compartment between glands.",
+        "limit": "Individual stromal or immune-cell identities are not established by this overview."
+      },
+      {
+        "id": "endometrium-proliferative-he-region-3",
+        "label": "Surface lining",
+        "anchor": {
+          "x": 49,
+          "y": 20
+        },
+        "observation": "A continuous epithelial border faces a broad pale space.",
+        "interpretation": "This surface helps orient the mucosal side of the field.",
+        "limit": "Detached fragments and section edges must not be mistaken for an intact three-dimensional surface."
+      },
+      {
+        "id": "endometrium-proliferative-he-region-4",
+        "label": "Erythrocyte-rich region",
+        "anchor": {
+          "x": 70,
+          "y": 70
+        },
+        "observation": "Pink-red cells are conspicuous in this area.",
+        "interpretation": "Describe the erythrocytes without assigning a cause or a cycle date.",
+        "limit": "This does not establish the cause of bleeding or a menstrual date."
+      }
+    ],
+    "model": "Orient to the surface and then compare the epithelial gland profiles with the densely cellular tissue between them. The creator publishes this field as proliferative endometrium. Profile shapes and visible erythrocytes do not independently establish an exact cycle day, cause of bleeding or whole-organ architecture.",
+    "figureId": "endometrium-proliferative-he"
+  },
+  {
+    "title": "Secretory endometrium: gland shape and luminal material",
+    "regions": [
+      {
+        "id": "endometrium-secretory-he-region-1",
+        "label": "Irregular gland lumen",
+        "anchor": {
+          "x": 50,
+          "y": 32
+        },
+        "observation": "The epithelial border is folded around an irregular lumen.",
+        "interpretation": "Folded borders contribute to the source-identified secretory morphological pattern.",
+        "limit": "The full gland course remains outside this section."
+      },
+      {
+        "id": "endometrium-secretory-he-region-2",
+        "label": "Luminal material",
+        "anchor": {
+          "x": 28,
+          "y": 53
+        },
+        "observation": "Pale material lies within an epithelial-lined lumen.",
+        "interpretation": "Locate the material before deciding which chemical test could identify it.",
+        "limit": "Routine H&E appearance alone does not chemically identify the material."
+      },
+      {
+        "id": "endometrium-secretory-he-region-3",
+        "label": "Stromal compartment",
+        "anchor": {
+          "x": 78,
+          "y": 30
+        },
+        "observation": "Small nuclei and extracellular spaces occupy the area between glands.",
+        "interpretation": "Separate stromal response from epithelial secretion.",
+        "limit": "This alone does not prove stromal decidualization or pregnancy."
+      },
+      {
+        "id": "endometrium-secretory-he-region-4",
+        "label": "Surface compartment",
+        "anchor": {
+          "x": 78,
+          "y": 9
+        },
+        "observation": "An epithelial surface borders a broad pale space at the top.",
+        "interpretation": "The exposed surface helps orient the field without supplying a complete uterine wall.",
+        "limit": "The field does not contain all uterine wall layers."
+      }
+    ],
+    "model": "Describe the irregular epithelial-lined spaces and pale luminal material, then include the intervening stroma in your comparison. The creator publishes the field as secretory endometrium. The appearance alone neither chemically identifies the material nor demonstrates pregnancy or stromal decidualization.",
+    "figureId": "endometrium-secretory-he"
+  },
+  {
+    "title": "Fallopian tube cross-section: folded mucosa and wall",
+    "regions": [
+      {
+        "id": "tubal-folded-wall-region-1",
+        "label": "Folded mucosal compartment",
+        "anchor": {
+          "x": 47,
+          "y": 51
+        },
+        "observation": "Many narrow tissue projections occupy the central compartment.",
+        "interpretation": "The branching folded mucosa is an organ-level clue.",
+        "limit": "At this scale, individual ciliated and secretory cells are not reliably separable."
+      },
+      {
+        "id": "tubal-folded-wall-region-2",
+        "label": "Luminal space between folds",
+        "anchor": {
+          "x": 62,
+          "y": 43
+        },
+        "observation": "A pale space is bounded by adjacent folded mucosal surfaces.",
+        "interpretation": "Trace the shared luminal surface rather than counting every space as a separate gland.",
+        "limit": "Separate pale profiles need not be separate glands."
+      },
+      {
+        "id": "tubal-folded-wall-region-3",
+        "label": "Muscular wall",
+        "anchor": {
+          "x": 84,
+          "y": 53
+        },
+        "observation": "A broad pink wall surrounds the central folded mucosa.",
+        "interpretation": "The relationship of the wall to mucosa complements the epithelial evidence.",
+        "limit": "No contractile activity is measured in a fixed image."
+      },
+      {
+        "id": "tubal-folded-wall-region-4",
+        "label": "Outer supporting tissue",
+        "anchor": {
+          "x": 13,
+          "y": 13
+        },
+        "observation": "Looser peripheral tissue contains vascular profiles outside the main muscular wall.",
+        "interpretation": "Supporting tissue supplies the outer spatial context.",
+        "limit": "Do not infer vessel flow or a precise tubal segment from this field alone."
+      }
+    ],
+    "model": "Start with the central folded mucosa and the surrounding muscular wall. Pale spaces between adjacent folds belong to the sectioned luminal arrangement; do not treat every separated profile as a gland. The image does not resolve ciliary function or establish its exact tubal region and biological state.",
+    "figureId": "tubal-folded-wall"
+  },
+  {
+    "title": "Tubal epithelium: apical border and supporting tissue",
+    "regions": [
+      {
+        "id": "tubal-ciliated-border-region-1",
+        "label": "Apical border",
+        "anchor": {
+          "x": 29,
+          "y": 20
+        },
+        "observation": "Projections extend from the luminal epithelial edge.",
+        "interpretation": "Use the visible projections as an apical orientation clue.",
+        "limit": "No movement or ultrastructural axoneme pattern is resolved."
+      },
+      {
+        "id": "tubal-ciliated-border-region-2",
+        "label": "Epithelial nuclei",
+        "anchor": {
+          "x": 65,
+          "y": 40
+        },
+        "observation": "Elongated and rounded nuclear profiles lie in the lining.",
+        "interpretation": "Nuclear position supports epithelial description but is not a complete phenotype test.",
+        "limit": "Nuclear shape alone does not assign a unique secretory or ciliated phenotype."
+      },
+      {
+        "id": "tubal-ciliated-border-region-3",
+        "label": "Supporting tissue",
+        "anchor": {
+          "x": 66,
+          "y": 77
+        },
+        "observation": "Cells and pink extracellular material lie beneath the epithelial border.",
+        "interpretation": "The lining is supported by a different tissue compartment.",
+        "limit": "A specific extracellular molecule is not identified by colour alone."
+      },
+      {
+        "id": "tubal-ciliated-border-region-4",
+        "label": "Luminal side",
+        "anchor": {
+          "x": 49,
+          "y": 6
+        },
+        "observation": "Pale space lies on the side facing the apical projections.",
+        "interpretation": "The free surface faces the luminal compartment.",
+        "limit": "An empty fixed space gives no direct measurement of tubal contents or flow."
+      }
+    ],
+    "model": "Identify the apical projections, epithelial nuclear profiles and supporting tissue below. These relationships orient the lining. Focus and resolution limit individual-cell classification, and a fixed photograph cannot demonstrate beating, transport or an ultrastructural axoneme pattern.",
+    "figureId": "tubal-ciliated-border"
+  }
+]

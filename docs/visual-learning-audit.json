@@ -3583,6 +3583,19 @@
         "human-mammary-acinus-he",
         "human-mammary-tdlu-segmentation"
       ]
+    },
+    {
+      "id": "female-tract-histology-and-development",
+      "route": "/library/female-tract-histology-and-development",
+      "action": "standardise-or-reuse",
+      "rationale": "Reuse the existing specimen explorer for four licensed micrographs and the existing two-track development map. Local desktop/mobile rendering, markers, controls, source credits, downloads and reflow passed; hosted release remains a separate gate.",
+      "visualIds": [],
+      "figureIds": [
+        "endometrium-proliferative-he",
+        "endometrium-secretory-he",
+        "tubal-folded-wall",
+        "tubal-ciliated-border"
+      ]
     }
   ],
   "supplementalVisualStudioReview": {

@@ -62,6 +62,7 @@ for (const f of figures) {
   }
   assert.equal(f.src, f.variants.at(-1).src);
   if (f.licenseUrl) assert([
+    "https://creativecommons.org/licenses/by/2.0/",
     "https://creativecommons.org/licenses/by/4.0/",
     "https://creativecommons.org/licenses/by-sa/4.0/",
     "https://creativecommons.org/licenses/by-sa/3.0/",
