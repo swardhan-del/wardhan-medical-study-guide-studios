@@ -5,7 +5,7 @@ import type lymphoidData from "@/content/lymphoid-specimen.json";
 import type { PublicFigure } from "@/lib/figures";
 import styles from "./lymphoid-specimen-explorer.module.css";
 
-export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", introduction = "Start outside the tissue and move inward. Choose a numbered region, describe the visible pattern, then compare the interpretation. Markers indicate broad study regions, not individual cells.", licenseLabel = "CC BY 4.0 terms", imageLoading = "eager" }: { figure: PublicFigure; data: typeof lymphoidData; scope?: string; introduction?: string; licenseLabel?: string; imageLoading?: "eager" | "lazy" }) {
+export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", introduction = "Start outside the tissue and move inward. Choose a numbered region, describe the visible pattern, then compare the interpretation. Markers indicate broad study regions, not individual cells.", licenseLabel = "CC BY 4.0 terms", imageLoading = "eager", markerMode = "number", markerLabelsBelow = [] }: { figure: PublicFigure; data: typeof lymphoidData; scope?: string; introduction?: string; licenseLabel?: string; imageLoading?: "eager" | "lazy"; markerMode?: "number" | "open-target"; markerLabelsBelow?: number[] }) {
   const [selected, setSelected] = useState(0);
   const [markers, setMarkers] = useState(true);
   const [response, setResponse] = useState("");
@@ -24,7 +24,7 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     <p><strong>Interpret:</strong> {region.interpretation}</p>
     <p><strong>Resolution limit:</strong> {region.limit}</p>
   </div>;
-  return <section className={`study-panel ${styles.explorer}`} aria-labelledby={`${scope}-specimen-title`}>
+  return <section className={`study-panel ${styles.explorer} ${markerMode === "open-target" ? styles.openTargetExplorer : ""}`} aria-labelledby={`${scope}-specimen-title`}>
     <p className="eyebrow">Read a real section</p>
     <h2 id={`${scope}-specimen-title`}>{data.title}</h2>
     <p>{introduction}</p>
@@ -38,7 +38,7 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
           {/* Browser sizing preserves the reviewed image file; source variants are credited separately. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img ref={imageRef} src={figure.src} width={figure.width} height={figure.height} alt={figure.alt} loading={imageLoading} onError={() => setUnavailable(true)} />
-          {markers && <div className={styles.markers} aria-hidden="true">{data.regions.map((item, index) => <span key={item.id} className={selected === index ? styles.selectedMarker : styles.marker} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}>{index + 1}</span>)}</div>}
+          {markers && <div className={styles.markers} aria-hidden="true">{data.regions.map((item, index) => markerMode === "open-target" ? <span key={item.id} className={`${styles.openTarget} ${selected === index ? styles.selectedTarget : ""}`} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}><span className={`${styles.targetLabel} ${item.anchor.x >= 80 ? styles.targetLabelLeft : ""} ${markerLabelsBelow.includes(index) ? styles.targetLabelBelow : ""}`}>{index + 1}</span></span> : <span key={item.id} className={selected === index ? styles.selectedMarker : styles.marker} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}>{index + 1}</span>)}</div>}
         </>}
       </div>
       <figcaption><strong>{figure.title}.</strong> {figure.caption}</figcaption>

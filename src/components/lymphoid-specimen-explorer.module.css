@@ -14,3 +14,17 @@
 .explorer textarea { display: block; box-sizing: border-box; width: 100%; max-width: 100%; margin-block: .75rem; padding: .75rem; font: inherit; border: 2px solid #54757a; border-radius: .4rem; }
 .explorer li { margin-block: 1rem; }
 @media print { .controls, .explorer textarea { display: none; } }
+
+/* Optional open targets retain the exact specimen anchor without covering it. */
+.openTarget { position: absolute; transform: translate(-50%, -50%); width: 16px; height: 16px; border: 2px solid white; outline: 1px solid #102d34; border-radius: 50%; background: transparent; }
+.selectedTarget { outline: 3px solid #102d34; }
+.targetLabel { position: absolute; left: 15px; top: -21px; min-width: 23px; height: 23px; border: 1px solid white; border-radius: 4px; background: #18383c; color: white; font: bold 14px/21px sans-serif; text-align: center; }
+.targetLabelLeft { left: auto; right: 15px; }
+.targetLabelBelow { top: 16px; }
+
+/* Keep anatomical terms readable when narrow screens use enlarged text. */
+@media (max-width: 480px) {
+  .openTargetExplorer { padding-inline: 12px; }
+  .openTargetExplorer > h2 { font-size: 1.25rem; line-height: 1.2; }
+  .openTargetExplorer .description { padding-inline: 8px; }
+}

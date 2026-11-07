@@ -6551,7 +6551,7 @@
       "id": "myelin-and-glial-cells",
       "subject": "histology",
       "title": "Myelin and glia: identify the cell before the function",
-      "summary": "Use cell location, myelin and connective tissue to distinguish nerve-fibre regions from peripheral ganglia. Compare one sensory neuron’s branches with an autonomic two-neuron relay, and state what a section cannot show.",
+      "summary": "Compare glial roles, nerve coverings and sensory versus autonomic ganglia. Read three separately documented peripheral-nerve preparations, then connect visible arrangement with developmental lineage and bounded experimental evidence.",
       "tags": [
         "Myelin and glia: identify the cell before the function",
         "histology",
@@ -6562,10 +6562,15 @@
         "sensory versus autonomic",
         "satellite glia",
         "branch versus synapse",
-        "neuron counting"
+        "neuron counting",
+        "nerve preparation",
+        "osmium",
+        "Schwann-cell development",
+        "blood-nerve barrier",
+        "experimental evidence"
       ],
       "source": "histology-ganglia-depth-20261104",
-      "section": "Supporting Cells; Myelination; Peripheral Nerve Structure; current selected nerve and ganglion text; original branch-versus-relay reasoning",
+      "section": "Supporting Cells; Myelination; Peripheral Nerve Structure; current selected nerve and ganglion text; original branch-versus-relay reasoning; original peripheral-nerve preparation, compartment and developmental-evidence practical",
       "steps": [
         {
           "title": "Begin with location and relationships",
@@ -6580,8 +6585,24 @@
           "body": "Small peripheral axons can lie in grooves within a non-myelinating Schwann cell as a Remak bundle. They have Schwann-cell support without a compact multilamellar myelin sheath. Electrical conduction along axonal membrane is also different from axonal transport. Microtubule-based transport moves vesicles, proteins and organelles inside the axon; the propagation of a voltage change does not carry those materials down the nerve."
         },
         {
-          "title": "Use the coverings to recognise a peripheral nerve",
-          "body": "In a transverse section, identify bundles bounded by perineurium before interpreting individual profiles. Endoneurial connective tissue lies among nerve fibres within a fascicle; epineurium surrounds and connects fascicles and contains larger vessels. Routine processing can dissolve myelin lipid, leaving pale rings or spaces. A single dark glial nucleus usually cannot establish a precise glial subtype without context or special methods. State what the preparation demonstrates and what remains inferred."
+          "title": "Read the connective compartments at the right scale",
+          "body": "Start with one fibre, then one fascicle, then the entire nerve. Delicate endoneurial matrix surrounds individual axon–Schwann-cell units within a fascicle and contains capillaries. A layered perineurial cellular sleeve encloses the fascicle; its junctions help regulate diffusion across that boundary. Epineurial connective tissue supports the whole nerve and extends between fascicles, carrying larger vessels and sometimes adipose tissue. The vascular blood–nerve barrier is associated with endoneurial capillary endothelium, a different boundary from the perineurial sleeve. In the transverse teaching image, the pale separation cleft is not itself a cellular sheath. Look for a continuous tissue boundary before assigning a perineurial label. The broad peripheral fibrous region can be described without claiming that every part of it is one specialised cell layer. Routine processing can dissolve myelin lipid, leaving pale rings or spaces. Preparation and image context remain essential when interpreting a dark nucleus.",
+          "highlight": "Follow the scale: individual fibre → fascicle → whole nerve. A space is not a cellular sheath."
+        },
+        {
+          "title": "Read the field at two scales",
+          "body": "Begin with the arrangement of the whole field. The longitudinal specimen contains parallel, undulating profiles; the transverse specimen contains many small profiles within a broad fascicular region. Then inspect nuclei, boundaries and surrounding matrix. These independent images illustrate different views of elongated structures. They do not show one bundle rotated in real time or adjacent sections of one specimen. Compare organisation before inferring a named cell.",
+          "highlight": "Orientation changes the profile. A profile is not a complete cell."
+        },
+        {
+          "title": "Choose preparation for the biological question",
+          "body": "Routine architecture, lipid-rich sheath contrast and protein localisation are different questions. The third specimen is explicitly described by its provider as osmium-tetroxide prepared; its dark longitudinal profiles give useful myelin-related contrast. The other two providers do not document their stains. Pink and purple colours alone are insufficient to supply that missing history. When planning an actual supervised laboratory study, record the tissue, orientation, fixation, processing, stain, controls and imaging settings. Use the laboratory's validated procedure rather than inventing a universal preparation recipe from a photograph.",
+          "highlight": "Documented preparation has priority over a colour-based guess."
+        },
+        {
+          "title": "Do not turn a display magnification into a ruler",
+          "body": "The historical 100× and 200× descriptions concern acquisition. Browser resizing, cropping and display density change how large the same pixels appear. None of these three files supplies a calibrated scale bar. They support qualitative comparisons of organisation, but not a defensible measurement of axon diameter or myelin thickness. Similarly, a two-dimensional profile count is not automatically the count of complete cells in a three-dimensional organ. A quantitative study needs a defined sampling method and calibration appropriate to its question.",
+          "highlight": "A larger display is not a new measurement."
         },
         {
           "title": "Locate cell bodies before naming a ganglion",
@@ -6606,6 +6627,26 @@
         {
           "title": "Keep structural, physiological and research evidence distinct",
           "body": "An ordinary section can support an anatomical interpretation without displaying the complete branching geometry or proving a functional synapse. Morphology, a molecular marker, an anatomical contact and an activity measurement answer different questions. For example, Kumari and colleagues studied neuron-satellite-glia relationships in mouse sympathetic ganglia using structural and functional measurements. Their findings are bounded by that study’s model and outcomes; they do not make a routine human section a measurement of neuronal activity. The ordinary sensory-versus-autonomic wiring comparison is also not a claim that no other local cell interactions can occur."
+        },
+        {
+          "title": "Connect an adult nerve with embryology",
+          "body": "A spinal motor axon can lie in a peripheral nerve while its neuron's soma and developmental origin belong to the neural tube. Its Schwann-cell support follows a neural-crest-associated lineage. Adult proximity therefore does not establish shared ancestry. Trace the cell body, axon and supporting cell as separate components. A lineage experiment marks a defined progenitor population and follows descendants; an adult location or one marker-positive image is not that experiment. Developmental models also need their organism and stage stated.",
+          "highlight": "An axon in the PNS does not make its entire neuron neural-crest derived."
+        },
+        {
+          "title": "Separate necessity, rescue and sufficiency",
+          "body": "Taveggia and colleagues compared sensory neurons from normal and NRG1 type III-deficient mice while supplying postnatal rat Schwann cells. Supplying the glia helps separate the neuronal-signal question from an earlier failure to generate enough Schwann cells. They assessed myelin proteins and ultrastructural ensheathment; restoring neuronal NRG1 type III rescued the defects. But Schwann cells grown with NRG1-expressing non-neuronal CHO cells did not express the measured myelin marker, despite increased Schwann-cell accumulation. Thus this signal was necessary and instructive in the tested setting, while other axonal signals were also needed. Loss, rescue and an alternative cellular context answer different questions. These experiments do not quantify NRG1 in the teaching photographs or establish a human treatment.",
+          "highlight": "Restoration strengthens a causal interpretation; a different cellular context tests whether the signal alone is enough."
+        },
+        {
+          "title": "Separate developmental origin from an injury response",
+          "body": "Arthur-Farraj and colleagues studied a c-Jun-dependent Schwann-cell response to nerve injury in mice. Their work supports a specialised repair programme rather than treating an injured adult Schwann cell as simply identical to its embryonic precursor. A perturbation that impairs recovery after injury does not, by itself, show that the same factor was required for every earlier developmental step. Compare injured and uninjured controls and keep structural, molecular and functional outcomes distinct.",
+          "highlight": "Repair state, embryonic lineage and normal adult appearance are different questions."
+        },
+        {
+          "title": "Follow descendants rather than assuming one route",
+          "body": "Erickson and colleagues combined lineage tracing and selective nerve ablation in mouse embryos. They found contributions from nerve-associated Schwann-cell precursors to sympathetic neurons and satellite glia after the initial neural-crest seeding of the ganglia. This adds developmental detail to a simple origin table; it does not make all ganglion cells descendants of mature myelinating Schwann cells. The authors reported no randomisation or blinding in the experimental analyses, which should remain visible when discussing evidential strength.",
+          "highlight": "A precursor contribution is not a claim about every mature cell."
         }
       ],
       "objectives": [
@@ -6614,7 +6655,10 @@
         "Use tissue organisation to recognise a peripheral nerve.",
         "Distinguish a typical spinal sensory neuron’s branches from a two-neuron autonomic efferent chain.",
         "Locate the preganglionic and postganglionic somata without placing both inside a peripheral ganglion.",
-        "Separate observed cell relationships from complete-cell counts, functional contacts and research outcomes."
+        "Separate observed cell relationships from complete-cell counts, functional contacts and research outcomes.",
+        "Compare nerve orientation and preparation without inventing undocumented stains or scale.",
+        "Separate visible nerve profiles from cellular identity, molecular expression and developmental ancestry.",
+        "Distinguish loss, rescue, cellular context and injury-response evidence in selected experiments."
       ],
       "prerequisites": [
         "neurulation",
@@ -6659,8 +6703,8 @@
         "cranial-nerve-organization",
         "histology-foundations-tissues"
       ],
-      "updatedAt": "2026-11-04",
-      "minutes": 25,
+      "updatedAt": "2026-11-07",
+      "minutes": 45,
       "oralExamination": [
         {
           "prompt": "Why do peripheral and central processes not require two sensory neurons in the defined Model A?",
