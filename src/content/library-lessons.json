@@ -14807,6 +14807,166 @@
       ]
     },
     {
+      "id": "vestibular-sensors-rotation-translation",
+      "subject": "histology",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "summary": "Distinguish crista and macula, trace receptor signalling, test an explicit motion model, and evaluate developmental evidence.",
+      "tags": [
+        "Vestibular histology",
+        "Crista and macula",
+        "Otic development",
+        "Structure and function"
+      ],
+      "source": "original-vestibular-structure-development",
+      "section": "Vestibular sensory architecture, mechanical input and developmental evidence",
+      "updatedAt": "2026-11-07",
+      "minutes": 30,
+      "objectives": [
+        "Distinguish a crista from a macula using location, epithelial arrangement and overlying material.",
+        "Separate receptor-cell morphology from afferent identity and measured physiology.",
+        "Compare gravity and translation using explicit head-fixed axes and both vector components.",
+        "Connect the inner ear to its otic-placode developmental sequence.",
+        "Evaluate organoid identity, maturity and sampling limits using stated evidence."
+      ],
+      "prerequisites": [
+        "ear-anatomy",
+        "special-senses"
+      ],
+      "steps": [
+        {
+          "title": "Start with a cavity inside a cavity",
+          "body": "The bony labyrinth is a system of cavities in the temporal bone. Within it, the membranous labyrinth encloses endolymph; perilymph occupies the surrounding space. A semicircular canal and its membranous duct are therefore related but distinct structures. On a section, first trace a wall and decide which side is lumen. Do not name a pale processing space as a fluid compartment without checking its boundaries and anatomical neighbours.",
+          "highlight": "A membrane defines the compartment."
+        },
+        {
+          "title": "Locate the sensory patch before naming the cell",
+          "body": "Each semicircular duct has an ampullary sensory crest, the crista. The utricle and saccule contain maculae. A crista is raised into an ampullary lumen and relates to a cupula; a macula is a sensory epithelial patch associated with an otolithic membrane. Those relationships are stronger identification clues than a single dark nucleus. An incomplete or oblique section may not show every defining structure.",
+          "highlight": "Identify the patch and the material above it together."
+        },
+        {
+          "title": "A hair cell is a receptor cell, not the afferent neuron",
+          "body": "Hair cells form part of a sensory epithelium with supporting cells. Their mechanically sensitive apical bundles influence a graded receptor potential and transmitter release at the basal pole. A vestibular afferent neuron receives that signal and carries information centrally. Thus a drawing should separate the epithelial receptor, its synaptic contact and the neuronal process. Calling the outgoing neural fibre a hair-cell axon would collapse two different cells into one.",
+          "highlight": "A receptor cell and its afferent are two different cells."
+        },
+        {
+          "title": "Use bundle polarity to predict the sign of a response",
+          "body": "A vestibular hair bundle has a polarized arrangement of stereocilia and a kinocilium. In the excitatory direction, toward the kinocilium, bundle deflection increases mechanotransduction-channel opening; the opposite direction reduces it. The change affects receptor potential, calcium-dependent transmitter release and afferent activity. State the direction relative to that cell’s bundle, rather than assuming that every rightward displacement excites every hair cell in an organ.",
+          "highlight": "Direction is relative to the bundle’s polarity."
+        },
+        {
+          "title": "Distinguish cell shape, nerve ending and physiological measurement",
+          "body": "The conventional type I vestibular hair cell has a flask-like profile and an associated calyx ending. Type II cells have a more cylindrical profile and bouton contacts. Section plane and developmental maturity can obscure these distinctions. A morphological type is not itself a recording of firing regularity, conduction velocity or adaptation. An isolated cell shape should not be converted into an unqualified fast-versus-tonic functional label.",
+          "highlight": "Morphology alone is not a measurement of firing behaviour."
+        },
+        {
+          "title": "Treat the calyx cleft as a local signalling environment",
+          "body": "In paired recordings from turtle vestibular hair cells and their calyx afferents, potassium accumulation in the restricted cleft influenced conductances in both cells. The study distinguished vesicular transmission, ion accumulation and resistive coupling. Extracellular geometry therefore matters to the interpretation. A tissue photograph still cannot measure these currents, and the experiment does not establish identical behaviour at every human vestibular synapse.",
+          "highlight": "A restricted extracellular space can affect signalling."
+        },
+        {
+          "title": "Different overlying structures couple different mechanical inputs",
+          "body": "In a macula, hair bundles interact with a gelatinous otolithic membrane carrying calcium-carbonate otoconia. The added mass contributes to relative displacement during gravitational and translational loading. In a crista, bundles project into a cupula; it is not normally a crystal-loaded otolithic membrane. Compare the complete epithelial–overlying-material relationship. A schematic of this relationship explains a mechanism but does not prove the identity of an unknown real section.",
+          "highlight": "Cupula and otolithic membrane are different mechanical partners."
+        },
+        {
+          "title": "A canal response has a time course",
+          "body": "Relative motion of endolymph and the duct influences cupular displacement when head rotation changes. The response depends on stimulus timing and mechanical dynamics, so “angular acceleration” is an introductory label rather than a complete description of every recorded afferent signal. For an answer, specify whether rotation is starting, continuing or stopping. A still photograph cannot show that time course or measure the head movement that preceded fixation.",
+          "highlight": "Specify whether rotation is starting, continuing or stopping."
+        },
+        {
+          "title": "Interpret a population, not one universal arrow",
+          "body": "Canals on the two sides contribute complementary signals for rotations in their functional planes. Hair-bundle orientation and anatomical geometry matter. In maculae, bundle orientations vary across the sensory patch, allowing populations to respond differently to the same loading direction. Do not replace that arrangement with a rule that one fixed number of canals is always stimulated or that all cells in a macula have one excitatory direction.",
+          "highlight": "An organ contains differently oriented populations."
+        },
+        {
+          "title": "Separate gravity from translational acceleration in the model",
+          "body": "This activity uses a two-dimensional head-fixed frame: x points right and z points up. A positive roll angle tilts the head rightward. In units of g, the gravitational vector is (sin θ, −cos θ). Let a be translational acceleration of the head in those same axes. We define the model input q = g_head − a. This is a geometric gravitoinertial quantity, not a hair-cell firing rate, a clinical measurement or a full vestibular simulation.",
+          "highlight": "Define axes before comparing vectors."
+        },
+        {
+          "title": "Work the same-input example all the way through",
+          "body": "At a static 30° rightward tilt, a = (0,0) and q = (0.5, −0.866 approximately). An upright model with a = (−0.5, −0.133975 approximately) produces the same q to the displayed precision. Both components must be compared; matching only the horizontal component would not establish equal vectors. Different physical causes can therefore fit one input. Additional information, such as rotational history and other sensory cues, is needed to distinguish the causes.",
+          "highlight": "Matching only one component does not match a vector."
+        },
+        {
+          "title": "Choose what a preparation can actually answer",
+          "body": "A routine stained section can show epithelial organisation, nuclear distribution and some surrounding tissue relationships. It does not directly reveal an ion-channel current or establish an individual afferent’s discharge pattern. Immunostaining asks where a selected antigen is detected, with specificity and controls still relevant. Electron microscopy can resolve ultrastructural relationships that a routine overview cannot. Pick the method to match the question instead of treating a more colourful image as stronger evidence for every claim.",
+          "highlight": "Choose the preparation to match the question."
+        },
+        {
+          "title": "Build a practical answer with a missing-evidence clause",
+          "body": "For a suspected macula, describe the sensory patch, its relationship to a lumen, and any demonstrable overlying material. For a suspected crista, look for a crest in an ampulla and its relationship to the cupula. Then state what the field fails to show. If a delicate structure is absent from the section, consider sampling and preparation before asserting that it was absent from the living organ. This reader’s diagrams are original schematics, not substitute diagnostic micrographs.",
+          "highlight": "State both the identification clue and the missing evidence."
+        },
+        {
+          "title": "Place the inner ear in its own developmental sequence",
+          "body": "The otic placode is a thickening of surface ectoderm that invaginates and separates as an otic vesicle or otocyst. Subsequent regional development generates the membranous labyrinth and its sensory tissues. This is a different starting point from the pharyngeal-pouch contribution to middle-ear structures. Reuse the existing developmental introduction, then ask what tissue or developmental stage a new experiment actually examined. Adult proximity does not establish a common embryonic origin.",
+          "highlight": "Adult proximity does not establish a shared embryonic origin."
+        },
+        {
+          "title": "Read developmental stage and culture day as different coordinates",
+          "body": "A direct comparison of human embryonic otocysts and fetal sensory organs with organoids asks how well selected aspects of development appear in culture. An embryo’s anatomical stage and the days since a culture procedure began are different descriptors. Similar markers can support a comparison without making the two systems identical. Ask which structures were compared, which measurements supported similarity, and whether maturation or function was measured separately. Treat resemblance as a claim with specified evidence.",
+          "highlight": "Culture day and embryonic stage are different coordinates."
+        },
+        {
+          "title": "A model can resemble a tissue without being a mature organ",
+          "body": "The human inner-ear atlas comparison identifies developing vestibular-like populations in organoids and discusses their immaturity. Cell shape, marker expression, ultrastructure and transcriptional similarity provide complementary evidence. None alone establishes a fully mature, normally connected inner ear. Its atlas also has sampling and sequencing limitations. When reading a model study, ask which cells are represented, which are missing or immature, and what functional measurement would test the proposed capability.",
+          "highlight": "Resemblance does not establish a mature, connected organ."
+        },
+        {
+          "title": "Keep peripheral recordings separate from a claim about perception",
+          "body": "A primary primate study recorded canal and otolith afferents during specified passive and active movement conditions and analysed their responses with models that included nonlinear behaviour. Its evidence concerns those recorded fibres and conditions. It does not mean that one otolith vector uniquely identifies every cause of movement, nor that all context-dependent processing is absent throughout the brain. Separate the measured signal, the model fitted to it and the perceptual claim you would need another experiment to test.",
+          "highlight": "A peripheral recording does not by itself establish perception."
+        }
+      ],
+      "question": {
+        "prompt": "A section shows a thin-walled duct inside a larger bony cavity. Which distinction should be made first?",
+        "options": [
+          {
+            "text": "The membranous duct lumen and surrounding perilymphatic space",
+            "reason": "A wall separates the membranous compartment from its surroundings."
+          },
+          {
+            "text": "Two names for one uninterrupted endolymph compartment",
+            "reason": "The membrane is a meaningful compartment boundary; the two fluids are not one lumen."
+          },
+          {
+            "text": "An axon and its myelin sheath",
+            "reason": "The described nested spaces are labyrinthine anatomy, not a nerve-fibre profile."
+          }
+        ],
+        "answer": 0
+      },
+      "workedExample": {
+        "title": "Two physical situations, one specified input vector",
+        "prompt": "Use the head-fixed x-right and z-up convention. Compare static 30-degree rightward tilt with an upright head whose translational acceleration is approximately (-0.500, -0.133975) g. Do both model-input components match?",
+        "solution": [
+          "For the tilted stationary head, gravity is approximately (0.500, -0.866) g and acceleration is zero.",
+          "For the upright head, gravity is (0, -1) g. Subtracting the stated acceleration gives approximately (0.500, -0.866) g.",
+          "Compare both components. A horizontal-component match alone would not establish an equal vector.",
+          "The preset uses the unrounded trigonometric values. The numerical tolerance is a calculation convention, not a biological detection threshold.",
+          "Equal q does not establish equal movement causes, identical perception, or a clinical diagnosis. Additional evidence is needed."
+        ]
+      },
+      "recall": {
+        "prompt": "Defend a crista-versus-macula interpretation, then explain one limit of inferring function from the section.",
+        "answer": "Relate the sensory crest to an ampulla and cupula for a crista, or the sensory patch to an otolithic membrane and otoconia for a macula. State the compartment boundaries and any missing field. A section cannot record a hair-cell current, afferent time course or perceptual response."
+      },
+      "summaryChecklist": [
+        "Trace the boundaries before naming a fluid compartment.",
+        "Identify the sensory patch and its overlying structure.",
+        "Keep receptor cells and afferent neurons distinct.",
+        "Specify the stimulus direction, time course and reference frame.",
+        "Compare both vector components and state model limits.",
+        "Separate developmental stage, culture day and mature function."
+      ],
+      "related": [
+        "ear-anatomy",
+        "special-senses",
+        "face-palate-sense-development"
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

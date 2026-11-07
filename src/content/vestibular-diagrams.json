@@ -1,0 +1,38 @@
+[
+  {
+    "id": "crista",
+    "title": "Crista and cupula",
+    "features": [
+      {
+        "title": "Sensory crest",
+        "description": "Hair cells and supporting cells occupy a raised epithelial region in the ampulla. A receptor cell and its afferent neuron remain distinct."
+      },
+      {
+        "title": "Cupula",
+        "description": "Bundles interact with an overlying cupula. The cupula reaches the simplified ampullary roof; it is not drawn with an otoconial crystal layer."
+      },
+      {
+        "title": "Mechanical context",
+        "description": "Relative fluid/duct motion and cupular displacement depend on the time course of rotation. The drawing does not simulate those dynamics."
+      }
+    ]
+  },
+  {
+    "id": "macula",
+    "title": "Macula and otolithic membrane",
+    "features": [
+      {
+        "title": "Sensory patch",
+        "description": "Hair cells and supporting cells form a local sensory patch. The drawing does not map the polarity reversal across an entire macula."
+      },
+      {
+        "title": "Otoconial load",
+        "description": "The diagram shows otoconia associated with an otolithic membrane. This arrangement differs from the normal crista cupula."
+      },
+      {
+        "title": "Mechanical context",
+        "description": "Gravity and translational acceleration contribute to loading in head-fixed coordinates. Bundle polarity and population organisation still matter."
+      }
+    ]
+  }
+]

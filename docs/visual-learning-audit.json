@@ -3616,6 +3616,20 @@
         "ovary-cumulus-complex",
         "ovary-corpus-albicans"
       ]
+    },
+    {
+      "id": "vestibular-sensors-rotation-translation",
+      "route": "/library/vestibular-sensors-rotation-translation",
+      "action": "new-comparison-or-flow",
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "Two original React schematic panels compare crista and macula, with selectable numbered features and text alternatives. A separate original head-fixed vector activity compares gravity, acceleration and model input. These coded components are not photographs or records in the static visual-figure registry. Native desktop/mobile keyboard, no-JavaScript, accessibility and narrow doubled-text checks passed; final labelled diagrams were visually reviewed.",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "kind": "Study lesson",
+      "components": [
+        "VestibularStructureExplorer",
+        "VestibularMotionExplorer"
+      ]
     }
   ],
   "supplementalVisualStudioReview": {

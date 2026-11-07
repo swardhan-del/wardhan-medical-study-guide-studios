@@ -5815,6 +5815,134 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "vestibular-sensors-rotation-translation",
+      "title": "Vestibular tissues: connect architecture, motion and development",
+      "subject": "histology",
+      "topic": "Vestibular architecture, mechanical input and developmental evidence",
+      "slug": "vestibular-sensors-rotation-translation",
+      "learnerLevel": "Early medical sciences with research interpretation",
+      "objectives": [
+        "Distinguish a crista from a macula using location, epithelial arrangement and overlying material.",
+        "Separate receptor-cell morphology from afferent identity and measured physiology.",
+        "Compare gravity and translation using explicit head-fixed axes and both vector components.",
+        "Connect the inner ear to its otic-placode developmental sequence.",
+        "Evaluate organoid identity, maturity and sampling limits using stated evidence."
+      ],
+      "sources": [
+        {
+          "title": "Histology Guide: inner-ear compartments and sensory epithelia",
+          "url": "https://histologyguide.org/slideview/MHS-230-inner-ear/20-slide-1.html?page=2",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "UTHealth Neuroanatomy Online: vestibular receptor architecture",
+          "url": "https://nba.uth.tmc.edu/neuroanatomy/L7/Lab07p04_index.html",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Single-cell comparison of human inner ear and organoids",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592453/",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Published correction to the human inner-ear atlas comparison",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10793866/",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Contini and colleagues: turtle hair-cell–calyx cleft physiology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31623011/",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Context-independent afferent encoding during primate locomotion",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8748921/",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Kobel and colleagues: impact of gravity on perception of linear motion",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8461827/",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Human otocyst and organoid developmental comparison",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10565253/",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Doda and colleagues: direct human otic and organoid comparison (abstract and selected indexed evidence reviewed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37791525/",
+          "publisherOrAuthor": "Primary research authors or university educational publisher",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Hudspeth and Corey: polarity of mechanically evoked bullfrog hair-cell responses",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/329282/",
+          "publisherOrAuthor": "Hudspeth and Corey, PNAS",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "UNSW Embryology: sensory placodes and otic development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Placodes",
+          "publisherOrAuthor": "UNSW Embryology",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Two original coded sensory schematics with text alternatives and an explicit cell key; an original geometric vector activity with keyboard controls, validation and a readable no-JavaScript example. No third-party image is reproduced.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-07",
+      "nextReviewAt": "2027-05-07",
+      "limitations": [
+        "Original schematics are not diagnostic micrographs; the motion model does not predict afferent firing, perception or diagnosis.",
+        "Research comparisons are bounded to the evidence inspected; independent specialist review is not claimed."
+      ],
+      "reviewEvidenceIds": [
+        "vestibular-depth-editorial-20261107",
+        "vestibular-depth-visual-20261107",
+        "vestibular-depth-assessment-20261107",
+        "vestibular-depth-accessibility-20261107",
+        "vestibular-depth-readability-20261107"
+      ],
+      "links": {
+        "prerequisite": [
+          "ear-anatomy",
+          "special-senses"
+        ],
+        "related": [
+          "ear-anatomy",
+          "special-senses",
+          "face-palate-sense-development"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

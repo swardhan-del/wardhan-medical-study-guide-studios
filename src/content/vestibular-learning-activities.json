@@ -1,0 +1,89 @@
+[
+  {
+    "id": "vestibular-architecture-argument",
+    "lessonId": "vestibular-sensors-rotation-translation",
+    "kind": "explanation",
+    "objective": "Distinguish a crista from a macula using location, epithelial arrangement and overlying material.",
+    "prompt": "Choose crista or macula. Name two spatial relationships, the mechanical input they help couple, and one feature an incomplete section may fail to show.",
+    "model": "For a crista, relate a sensory crest in an ampulla to the cupula and explain how duct/fluid motion influences bundle deflection. For a macula, relate a sensory patch to a crystal-loaded otolithic membrane and gravitational/translational loading. State the missing field or method rather than inventing a visible structure.",
+    "criteria": [
+      {
+        "id": "relationships",
+        "label": "I used spatial relationships rather than colour alone.",
+        "explanation": "Name the epithelium and its overlying material before identifying the organ."
+      },
+      {
+        "id": "coupling",
+        "label": "I connected structure to the appropriate mechanical coupling.",
+        "explanation": "State how the named structure connects a mechanical input with the sensory patch."
+      },
+      {
+        "id": "limits",
+        "label": "I stated a sampling or preparation limit.",
+        "explanation": "Identify a missing field, section-plane or preparation limitation."
+      }
+    ],
+    "reference": {
+      "title": "Histology Guide: inner-ear compartments and sensory epithelia",
+      "url": "https://histologyguide.org/slideview/MHS-230-inner-ear/20-slide-1.html?page=2"
+    }
+  },
+  {
+    "id": "vestibular-vector-argument",
+    "lessonId": "vestibular-sensors-rotation-translation",
+    "kind": "explanation",
+    "objective": "Compare gravity and translation using explicit head-fixed axes and both vector components.",
+    "prompt": "Use the preset pair to explain why equal q does not imply equal tilt and translation. Include the coordinate convention and both components.",
+    "model": "The model defines q = g_head − a in head-fixed x-right, z-up axes. A changed gravitational projection can be balanced by a different translational acceleration. The preset pair matches both q components to displayed precision; it does not make the two physical situations identical or predict a clinical finding.",
+    "criteria": [
+      {
+        "id": "axes",
+        "label": "I stated the model and its axes.",
+        "explanation": "State head-fixed x-right and z-up axes and q = g_head - a."
+      },
+      {
+        "id": "components",
+        "label": "I compared both components and identified different causes.",
+        "explanation": "Compare both components while retaining the distinction between the physical causes."
+      },
+      {
+        "id": "scope",
+        "label": "I kept a geometric model separate from a clinical or firing-rate prediction.",
+        "explanation": "Do not convert the geometric result into a firing rate or clinical interpretation."
+      }
+    ],
+    "reference": {
+      "title": "Kobel and colleagues: impact of gravity on perception of linear motion",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8461827/"
+    }
+  },
+  {
+    "id": "vestibular-development-argument",
+    "lessonId": "vestibular-sensors-rotation-translation",
+    "kind": "explanation",
+    "objective": "Evaluate organoid identity, maturity and sampling limits using stated evidence.",
+    "prompt": "An organoid expresses several inner-ear markers. Describe what that supports and what else you would ask before calling it a mature vestibular organ.",
+    "model": "Marker expression can support a cell-identity or developmental comparison when location, controls and reference tissue are considered. Ask about morphology, connectivity, functional recordings, cell populations and maturity. Keep culture day separate from embryonic stage and retain sampling limits.",
+    "criteria": [
+      {
+        "id": "evidence",
+        "label": "I described the actual evidence before the interpretation.",
+        "explanation": "Name the observed marker or structural evidence and the comparison tissue."
+      },
+      {
+        "id": "maturity",
+        "label": "I separated developmental comparison from mature function.",
+        "explanation": "Distinguish supported developmental identity from demonstrated mature function."
+      },
+      {
+        "id": "measurement",
+        "label": "I requested a relevant additional measurement or acknowledged sampling limits.",
+        "explanation": "Request a relevant functional or connectivity observation and retain sampling limits."
+      }
+    ],
+    "reference": {
+      "title": "Single-cell comparison of human inner ear and organoids",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10592453/"
+    }
+  }
+]
