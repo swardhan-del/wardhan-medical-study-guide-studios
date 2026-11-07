@@ -42,7 +42,7 @@ test('numeric units, later different reinforcement, persistence and completion',
  await expect(numeric.getByRole('button',{name:button})).toBeDisabled();
  await numeric.getByRole('combobox',{name:'Unit',exact:true}).selectOption('L/min');
  await numeric.getByRole('button',{name:button}).click();
- await expect(numeric.locator('[data-feedback="incorrect"]')).toContainText('100 mL/min');
+ await expect(numeric.locator('[data-feedback="incorrect"]')).toContainText('120 mL/min');
  await page.reload();await expect(seq).toContainText('Question 2');
  for(const q of renalQuestions.filter(q=>q.lesson==='filtration-and-clearance')){
   const panel=seq.locator(`#question-${q.id}`);await panel.getByRole('radio',{name:q.options[q.answer].text,exact:true}).check();await panel.getByRole('button',{name:button}).click();

@@ -119,8 +119,8 @@
   },
   {
     "type": "numeric",
-    "prompt": "In a hypothetical clearance calculation, urine concentration U = 100 mg/mL, urine flow V = 1 mL/min and plasma concentration P = 1 mg/mL. Calculate C = U × V / P. This is a calculation exercise, not a GFR measurement unless the marker’s handling justifies that interpretation.",
-    "answer": 100,
+    "prompt": "For a hypothetical marker, urine concentration U = 80 mg/mL and plasma concentration P = 2 mg/mL remain constant while urine flow V increases from 1.5 to 3 mL/min. Calculate the new clearance C = U × V / P. This exercise does not establish GFR without knowing how the marker is handled.",
+    "answer": 120,
     "unit": "mL/min",
     "units": [
       {
@@ -136,10 +136,12 @@
     "precision": "Report to the nearest 1 mL/min (or equivalent L/min). Select the unit. Allowed rounding difference: 0.5 mL/min.",
     "workedSolution": [
       "C = U × V / P. U is urine concentration, V is urine volume per time, and P is plasma concentration.",
-      "U × V = 100 mg/mL × 1 mL/min = 100 mg/min.",
-      "C = 100 mg/min ÷ 1 mg/mL = 100 mL/min = 0.1 L/min."
+      "Initially C = (80 mg/mL × 1.5 mL/min) ÷ 2 mg/mL = 60 mL/min.",
+      "At the new flow, U × V = 80 mg/mL × 3 mL/min = 240 mg/min.",
+      "New C = 240 mg/min ÷ 2 mg/mL = 120 mL/min = 0.12 L/min.",
+      "With U and P held constant, doubling V doubles the excretion rate and clearance. This conditional calculation does not imply that real changes in urine flow always leave concentrations unchanged."
     ],
-    "mechanism": "Clearance divides the excreted amount per time by the plasma concentration, giving a virtual volume per time. It does not measure a volume of plasma physically removed.",
+    "mechanism": "Clearance divides the excreted amount per time by the plasma concentration, giving a virtual volume per time. Doubling urine flow doubles clearance only when both concentrations remain fixed; clearance does not measure plasma physically removed.",
     "id": "universal-clearance-initial",
     "metadata": {
       "subject": "physiology",
@@ -154,6 +156,12 @@
           "title": "Medical Physiology: Renal Physiology, Revision 15",
           "locator": "Chapters 29–30: clearance, filtered load and fractional excretion",
           "basis": "study-guide-based"
+        },
+        {
+          "title": "University of Maryland: renal clearance",
+          "url": "https://science.umd.edu/classroom/bsci440/higgins/lecture_12/lect12.html",
+          "locator": "Renal clearance: equation, concentration and urine-flow definitions",
+          "basis": "supplemental-reference-based"
         }
       ]
     },

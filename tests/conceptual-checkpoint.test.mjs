@@ -15,8 +15,8 @@ test('complete-set selection rejects subsets, extra choices, duplicates and inva
 });
 test('numeric answers check units, finite strict input and documented rounding boundaries',()=>{
  const item=q('numeric');
- for(const response of [{value:'100',unit:'mL/min'},{value:'0.1',unit:'L/min'},{value:'1e2',unit:'mL/min'},{value:'100.5',unit:'mL/min'}])assert.equal(evaluateCheckpoint(item,response).outcome,'correct');
- for(const response of [{value:'100.501',unit:'mL/min'},{value:'100',unit:'L/min'}])assert.equal(evaluateCheckpoint(item,response).outcome,'incorrect');
+ for(const response of [{value:'120',unit:'mL/min'},{value:'0.12',unit:'L/min'},{value:'1.2e2',unit:'mL/min'},{value:'120.5',unit:'mL/min'}])assert.equal(evaluateCheckpoint(item,response).outcome,'correct');
+ for(const response of [{value:'120.501',unit:'mL/min'},{value:'120',unit:'L/min'}])assert.equal(evaluateCheckpoint(item,response).outcome,'incorrect');
  for(const value of ['NaN','Infinity','1e309','100junk','100 mg','', '1,00'])assert.equal(evaluateCheckpoint(item,{value,unit:'mL/min'}),null);
  assert.equal(evaluateCheckpoint(item,{value:'100',unit:''}),null);
 });
@@ -82,7 +82,7 @@ test('published reinforcement links target a different verified definition of th
 });
 
 test('numeric response parsing preserves accepted whitespace and rejects malformed objects safely',()=>{
- const item=q('numeric');const response={value:' 100 ',unit:'mL/min'};
+ const item=q('numeric');const response={value:' 120 ',unit:'mL/min'};
  assert.equal(evaluateCheckpoint(item,response).outcome,'correct');
  const raw={...emptyProgress(),checkpoints:{[item.id]:{outcome:'correct',response,at:1,submissions:1,misses:0,concept:item.metadata.concept}}};
  const parsed=parseProgress(JSON.stringify(raw),[item.metadata.lesson],[item.id]);
