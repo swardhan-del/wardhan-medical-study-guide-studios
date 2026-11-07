@@ -1,0 +1,23 @@
+.explorer { margin-block: 2rem; padding: clamp(.75rem, 3vw, 1.5rem); border: 1px solid #b9cdd7; border-radius: 1rem; background: #f7fafc; color: #173b4b; min-width: 0; overflow-wrap: anywhere; }
+.explorer h2 { margin-top: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: .6rem; margin-block: 1rem; }
+.controls button, .layerControls button { min-height: 44px; max-width: 100%; padding: .7rem .9rem; border: 1px solid #496779; border-radius: .5rem; background: white; color: #173b4b; font: inherit; line-height: 1.45; text-align: left; cursor: pointer; overflow-wrap: anywhere; }
+.controls button[aria-pressed="true"], .layerControls button[aria-pressed="true"] { background: #174a62; color: white; border-color: #174a62; }
+.controls button:focus-visible, .layerControls button:focus-visible, .explorer summary:focus-visible { outline: 3px solid #885909; outline-offset: 3px; }
+.controls button:disabled, .layerControls button:disabled { cursor: default; }
+.layerLayout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 1.1rem; align-items: start; }
+.drawing { min-width: 0; margin: 0; }
+.drawing svg { display: block; width: 100%; height: auto; }
+.drawing figcaption { padding-top: .75rem; line-height: 1.6; }
+.layerControls { display: grid; gap: .5rem; min-width: 0; }
+.callout { padding: 1rem; background: #e7f0f5; border-left: .3rem solid #174a62; line-height: 1.7; }
+.explorer details { margin-block: 1rem; }
+.explorer summary { cursor: pointer; padding-block: .65rem; font-weight: 700; }
+.explorer li { margin-block: .65rem; line-height: 1.6; }
+.lineages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.lineages > div { padding: 1rem; background: white; border: 2px solid #496779; border-radius: .6rem; min-width: 0; }
+.lineages ol { padding-left: 1.5rem; }
+.lineages li { padding: .65rem; border: 1px solid #bdcdd6; border-radius: .3rem; }
+.lineages li[data-stage="active"] { background: #174a62; color: white; font-weight: 700; }
+@media (max-width: 600px) { .layerLayout, .lineages { grid-template-columns: minmax(0, 1fr); } .drawing { max-width: 350px; margin-inline: auto; } .controls button { flex: 1 1 100%; } .lineages > div { padding: .5rem; } .lineages ol { padding-left: 0; list-style-position: inside; } .lineages li { padding: .35rem; } }
+@media print { .controls, .layerControls { display: none; } .explorer { break-inside: auto; background: white; } }

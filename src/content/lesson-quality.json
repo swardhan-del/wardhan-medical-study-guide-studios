@@ -5943,6 +5943,123 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "retinal-structure-light-signal-direction",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "subject": "histology",
+      "topic": "Retinal architecture, eye development and research evidence",
+      "slug": "retinal-structure-light-signal-direction",
+      "learnerLevel": "Early medical sciences with research interpretation",
+      "objectives": [
+        "Orient a retinal section using at least two landmarks.",
+        "Explain how nuclei, processes and segments of one cell occupy different anatomical levels.",
+        "Distinguish the outer junctional zone from the inner basement-membrane boundary.",
+        "Connect optic cup and lens development without conflating induction with lineage.",
+        "Interpret a regional specimen and state preparation and calibration limits.",
+        "Match morphology, lineage, sequencing and functional experiments to the claims they support."
+      ],
+      "sources": [
+        {
+          "title": "Yan et al. (2020): Cell Atlas of the Human Fovea and Peripheral Retina",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7299956/",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Omri et al. (2010): The outer limiting membrane revisited",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2861922/",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Eiraku et al. (2011): Self-organizing optic-cup morphogenesis in three-dimensional culture",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21475194/",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Gage et al. (2005): Fate maps of neural crest and mesoderm in the mammalian eye",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16249499/",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "Benedicto et al. (2017): Concerted regulation of RPE basement membrane and barrier function",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454459/",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "research"
+        },
+        {
+          "title": "UNSW Embryology: Vision — Retina Development",
+          "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Vision_-_Retina_Development",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "University of Michigan: Eye Histology, Michael Hortsch (2009)",
+          "url": "https://open.umich.edu/sites/default/files/downloads/031809.mhortsch.eyehistology.pdf",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Librepath: optic-disc overview — source, H&E identification and licence",
+          "url": "https://commons.wikimedia.org/wiki/File:Optic_nerve_head_and_retina_--_low_mag.jpg",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Librepath: retinal detail — source, H&E identification and licence",
+          "url": "https://commons.wikimedia.org/wiki/File:Retina_--_intermed_mag.jpg",
+          "publisherOrAuthor": "Named primary researchers, university educators or specimen creator",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Two creator-credited H&E specimens, nine reviewed study regions, an original ten-layer route map and a separate developmental-lineage sequence. Native desktop/mobile keyboard, no-JavaScript, image fallback and 320px doubled-text checks passed. Figures remain uncalibrated and do not establish clinical normality.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-07",
+      "nextReviewAt": "2027-02-07",
+      "limitations": [
+        "Two static H&E photographs cannot establish clinical normality, cellular lineage or visual function. No calibrated morphometry is supported.",
+        "Primary research interpretation is limited to the cited evidence inspected; independent specialist review is not claimed."
+      ],
+      "reviewEvidenceIds": [
+        "retinal-depth-editorial-20261107",
+        "retinal-depth-visual-20261107",
+        "retinal-depth-assessment-20261107",
+        "retinal-depth-accessibility-20261107",
+        "retinal-depth-readability-20261107"
+      ],
+      "links": {
+        "prerequisite": [
+          "histology-foundations-tissues",
+          "face-palate-sense-development"
+        ],
+        "related": [
+          "histology-foundations-tissues",
+          "retinal-on-off-bipolar-response",
+          "face-palate-sense-development"
+        ],
+        "compare": [],
+        "next": [
+          "retinal-on-off-bipolar-response"
+        ]
+      }
     }
   ]
 }

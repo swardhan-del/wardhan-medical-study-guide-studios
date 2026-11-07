@@ -3128,13 +3128,25 @@
       ]
     },
     {
+      "id": "topic-retinal-structure-light-signal-direction",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "description": "Orient retinal layers on credited specimens, distinguish visible structure from function, and connect eye development with the limits of experimental evidence.",
+      "subject": "histology",
+      "parentId": "histology-organ-histology",
+      "kind": "topic",
+      "resources": [
+        "retinal-structure-light-signal-direction"
+      ]
+    },
+    {
       "id": "histology-ii-special-senses",
       "title": "Special senses: structure and development",
-      "description": "Connect vestibular sensory architecture, mechanical inputs and otic development.",
+      "description": "Retinal architecture, eye development and vestibular sensory tissues, with active comparisons and evidence interpretation. Coverage is growing; this is not the complete special-senses syllabus.",
       "subject": "histology-ii",
       "parentId": null,
       "kind": "system",
       "resources": [
+        "retinal-structure-light-signal-direction",
         "vestibular-sensors-rotation-translation"
       ]
     }

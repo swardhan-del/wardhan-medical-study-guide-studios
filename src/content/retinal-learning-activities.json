@@ -1,0 +1,89 @@
+[
+  {
+    "id": "retinal-structure-two-features-20261107",
+    "lessonId": "retinal-structure-light-signal-direction",
+    "kind": "explanation",
+    "objective": "Orient a retinal section using at least two landmarks.",
+    "prompt": "Identify two visible relationships in the retinal detail, state one interpretation, and name evidence you would still need.",
+    "criteria": [
+      {
+        "id": "evidence-1",
+        "label": "Use two spatial observations, not only a tissue name.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      },
+      {
+        "id": "evidence-2",
+        "label": "Keep the observed separation distinct from its unknown cause.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      },
+      {
+        "id": "evidence-3",
+        "label": "State one limit of H&E, resolution or missing metadata.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      }
+    ],
+    "model": "The detail has two nuclear-rich bands with paler tissue between them and an elongated segment field facing a pigmented border. This sequence supports retinal architecture. The neural retina is separated from the underlying border in the specimen, but preparation and clinical history are needed to establish when separation occurred.",
+    "reference": {
+      "title": "Librepath: retinal detail — source, H&E identification and licence",
+      "url": "https://commons.wikimedia.org/wiki/File:Retina_--_intermed_mag.jpg"
+    }
+  },
+  {
+    "id": "retinal-structure-lineage-and-colour-20261107",
+    "lessonId": "retinal-structure-light-signal-direction",
+    "kind": "explanation",
+    "objective": "Separate mature pigmentation from the developmental ancestry of named ocular cell populations.",
+    "prompt": "Explain why similar pigment in RPE and choroid cannot settle a developmental-origin question.",
+    "criteria": [
+      {
+        "id": "evidence-1",
+        "label": "Separate mature appearance from ancestry.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      },
+      {
+        "id": "evidence-2",
+        "label": "Name the relevant populations rather than the whole eye.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      },
+      {
+        "id": "evidence-3",
+        "label": "Explain what a defined lineage experiment can add and retain its species limits.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      }
+    ],
+    "model": "Pigment is a mature feature shared by distinct populations. RPE belongs to the optic neuroepithelial lineage, while choroidal melanocytes have neural-crest contributions. A properly controlled lineage label follows descendants of specified starting cells; an adult stain does not do so.",
+    "reference": {
+      "title": "Gage et al. (2005): Fate maps of neural crest and mesoderm in the mammalian eye",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16249499/"
+    }
+  },
+  {
+    "id": "retinal-structure-experiment-scope-20261107",
+    "lessonId": "retinal-structure-light-signal-direction",
+    "kind": "explanation",
+    "objective": "Match a morphological culture observation to the claims and additional experiments it supports.",
+    "prompt": "A culture looks like an optic cup. Explain one conclusion supported by the appearance and two conclusions requiring additional evidence.",
+    "criteria": [
+      {
+        "id": "evidence-1",
+        "label": "Keep the observed morphogenesis within the actual experimental model.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      },
+      {
+        "id": "evidence-2",
+        "label": "Separate structural organisation from visual function.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      },
+      {
+        "id": "evidence-3",
+        "label": "Request additional evidence for lineage or generalisation to normal human development.",
+        "explanation": "Compare your own explanation with this criterion and the cited lesson evidence; the checkbox records your assessment, not an automatic grade."
+      }
+    ],
+    "model": "The culture supports organised morphogenesis under its tested conditions. Appearance alone does not establish normal human visual function or every population’s developmental origin. Those require suitable functional assays and lineage evidence, with explicit limits on species and culture conditions.",
+    "reference": {
+      "title": "Eiraku et al. (2011): Self-organizing optic-cup morphogenesis in three-dimensional culture",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21475194/"
+    }
+  }
+]

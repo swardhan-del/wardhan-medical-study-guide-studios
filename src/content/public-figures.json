@@ -1559,6 +1559,76 @@
       "modifications": "Photograph bytes unchanged. Region markers and display enlargement are separate browser controls.",
       "observe": "Identify the repeated outer-to-inner relationship before using a close-up feature to support the organ interpretation.",
       "publicApproval": "Owner-authorized educational publication after rights, privacy, specimen-limit and native rendered review; full build, exact-preview CI and production checks remain release gates."
+    },
+    {
+      "id": "optic-disc-overview",
+      "title": "Optic disc and adjacent retinal architecture",
+      "sourceAsset": "images/figures/optic-disc-overview.jpg",
+      "kind": "micrograph",
+      "alt": "H&E overview showing layered retina toward the upper right, an axon-rich exit region on the left, and outer pink connective tissue below.",
+      "caption": "Creator-identified H&E retinal specimen. The creator categorises it as human retina. Fixation, section thickness and a calibrated physical scale are not reported. Clinical normality is not established. These photographs are not a verified matched magnification pair.",
+      "rights": "Librepath, own work, CC BY-SA 3.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "evidence": "docs/reviews/retinal-native-depth-20261107.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Optic_nerve_head_and_retina_--_low_mag.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-retinal-structure-light-signal-direction"
+      ],
+      "resourceIds": [
+        "retinal-structure-light-signal-direction"
+      ],
+      "width": 1280,
+      "height": 853,
+      "src": "/images/figures/optic-disc-overview.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/optic-disc-overview.jpg",
+          "width": 1280,
+          "height": 853,
+          "bytes": 402993
+        }
+      ],
+      "modifications": "Image bytes unchanged. Region markers and display enlargement are reversible browser overlays. Annotated presentation shared under CC BY-SA 3.0.",
+      "observe": "Use two spatial relationships before naming a tissue, then distinguish visible structure from an unmeasured function or developmental origin.",
+      "publicApproval": "Owner-authorised educational candidate after source and licence review; native render, accessibility, full CI and hosted checks remain release gates."
+    },
+    {
+      "id": "retinal-layer-detail",
+      "title": "Retinal detail: nuclear bands, processes and outer interface",
+      "sourceAsset": "images/figures/retinal-layer-detail.jpg",
+      "kind": "micrograph",
+      "alt": "H&E retinal detail with dark nuclear bands, paler process-rich bands, elongated photoreceptor profiles and a visible separation above a pigmented outer border.",
+      "caption": "Creator-identified H&E retinal specimen. The creator categorises it as human retina. Fixation, section thickness and a calibrated physical scale are not reported. Clinical normality is not established. These photographs are not a verified matched magnification pair.",
+      "rights": "Librepath, own work, CC BY-SA 3.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "evidence": "docs/reviews/retinal-native-depth-20261107.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Retina_--_intermed_mag.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-retinal-structure-light-signal-direction"
+      ],
+      "resourceIds": [
+        "retinal-structure-light-signal-direction"
+      ],
+      "width": 1280,
+      "height": 853,
+      "src": "/images/figures/retinal-layer-detail.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/retinal-layer-detail.jpg",
+          "width": 1280,
+          "height": 853,
+          "bytes": 442028
+        }
+      ],
+      "modifications": "Image bytes unchanged. Region markers and display enlargement are reversible browser overlays. Annotated presentation shared under CC BY-SA 3.0.",
+      "observe": "Use two spatial relationships before naming a tissue, then distinguish visible structure from an unmeasured function or developmental origin.",
+      "publicApproval": "Owner-authorised educational candidate after source and licence review; native render, accessibility, full CI and hosted checks remain release gates."
     }
   ]
 }

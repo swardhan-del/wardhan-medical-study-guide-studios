@@ -3630,6 +3630,24 @@
         "VestibularStructureExplorer",
         "VestibularMotionExplorer"
       ]
+    },
+    {
+      "id": "retinal-structure-light-signal-direction",
+      "route": "/library/retinal-structure-light-signal-direction",
+      "action": "new-comparison-or-flow",
+      "visualIds": [],
+      "figureIds": [
+        "optic-disc-overview",
+        "retinal-layer-detail"
+      ],
+      "rationale": "Two credited H&E specimens with nine reversible region overlays, an original layer-route map and a developmental-lineage sequence. Desktop/mobile interactions, keyboard, no-JavaScript text, missing-image fallback, accessibility and 320px doubled-text checks passed. Actual diagrams and specimens were visually reviewed. No diagnostic image classification is claimed.",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "kind": "Study lesson",
+      "components": [
+        "RetinalLayerExplorer",
+        "RetinalDevelopmentExplorer",
+        "SpecimenExplorerEntry"
+      ]
     }
   ],
   "supplementalVisualStudioReview": {
