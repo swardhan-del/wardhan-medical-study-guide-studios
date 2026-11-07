@@ -2650,9 +2650,12 @@
         "lymphoid-comparison"
       ],
       "figureIds": [
-        "normal-lymph-node-architecture"
+        "normal-lymph-node-architecture",
+        "lymphoid-spleen-detail",
+        "lymphoid-thymus-detail",
+        "lymphoid-thymus-wider-field"
       ],
-      "rationale": "The visual supports this specific learning task: Identify the fluid being sampled, then use follicles, cortex and medulla to distinguish lymphoid organs. Existing figures and identifiers retained. Original interactive comparisons/sequencing supplement them; no new specimen image or atlas reproduction. A credited specimen overview now supports four region observations, model comparison and visible metadata limits."
+      "rationale": "Retain the existing lymph-node section and add three independently sourced comparison specimens: a wider human H&E thymus field, a mammalian thymus detail and a mammalian spleen detail. Reuse the shared explorer with optional selected-region zoom, explicit specimen limits and three manual explanation rubrics. Native desktop/mobile region, keyboard, reflow, no-JavaScript and download checks passed; hosted preview and production remain separate release gates."
     },
     {
       "id": "myelin-and-glial-cells",

@@ -27,12 +27,22 @@ test('reused images retain real provenance and include observation prompts', () 
     assert(f.observe.length>40);assert(readFileSync(new URL('../'+f.evidence,import.meta.url)).length);
     for(const variant of f.variants) assert(release.assets.some(a=>'/'+a.path===variant.src));
   }
-  assert.equal(data.figures.filter(f=>f.kind==='micrograph').length,22);
+  assert.equal(data.figures.filter(f=>f.kind==='micrograph').length,25);
   for (const id of ['peripheral-nerve-longitudinal','peripheral-nerve-cross','peripheral-nerve-osmium']) {
     const nerve=data.figures.find(f=>f.id===id);
     assert.equal(nerve.licenseUrl,'https://creativecommons.org/publicdomain/zero/1.0/');
     assert.deepEqual(nerve.resourceIds,['myelin-and-glial-cells']);
     assert.equal(nerve.variants.length,1);
+  }
+  for (const [id, licence] of [
+    ['lymphoid-thymus-wider-field', 'https://creativecommons.org/publicdomain/zero/1.0/'],
+    ['lymphoid-thymus-detail', 'https://creativecommons.org/licenses/by-sa/3.0/'],
+    ['lymphoid-spleen-detail', 'https://creativecommons.org/licenses/by-sa/3.0/'],
+  ]) {
+    const figure=data.figures.find(f=>f.id===id);
+    assert.equal(figure.licenseUrl, licence);
+    assert.deepEqual(figure.resourceIds, ['lymphoid-organs']);
+    assert.equal(figure.variants.length, 1);
   }
   const placenta=data.figures.find(f=>f.id==='placenta-term-villus');
   assert.equal(placenta.licenseUrl,'https://creativecommons.org/publicdomain/zero/1.0/');

@@ -1,0 +1,137 @@
+[
+  {
+    "scope": "thymus-wide-comparison",
+    "licenseLabel": "CC0 1.0 Universal terms",
+    "introduction": "Identify the repeated outer-to-inner relationship before using a close-up feature to support the organ interpretation. This H&E image and the thymus detail are different specimens, not a matched magnification sequence.",
+    "data": {
+      "title": "Thymus architecture: relate cortex, medulla and partitions",
+      "regions": [
+        {
+          "id": "darker-cortex",
+          "label": "Darker peripheral tissue",
+          "observation": "The marked dark band lies outside a paler inner field. Similar dark-to-pale relationships recur elsewhere in the photograph.",
+          "interpretation": "In this provider-identified thymus, the peripheral, densely nuclear tissue supports cortical organisation. Compare its location with the paler inner region rather than naming a dark patch in isolation.",
+          "limit": "This H&E field cannot identify the selection state or immunophenotype of an individual thymocyte.",
+          "anchor": {
+            "x": 84,
+            "y": 61
+          }
+        },
+        {
+          "id": "paler-medulla",
+          "label": "Paler inner tissue",
+          "observation": "The marked inner field is paler than the nearby peripheral band and lies within the same local lobular pattern.",
+          "interpretation": "Its position and contrast support a medullary region. Relate the inner and outer compartments before turning to the separate detail photograph for an epithelial whorl.",
+          "limit": "A pale centre alone is not a germinal centre, nor does this one two-dimensional field establish the full three-dimensional continuity of the medulla.",
+          "anchor": {
+            "x": 82,
+            "y": 54
+          }
+        },
+        {
+          "id": "connective-partition",
+          "label": "Pink connective partition",
+          "observation": "A branching pink band separates nearby lymphoid-rich areas. Follow its course rather than treating it as the outer boundary of the entire organ.",
+          "interpretation": "This relationship supports an internal connective partition in the lobular thymic pattern. It helps orient cortex and medulla across the wider field.",
+          "limit": "The complete capsule is outside this view. Not every pink or round profile is a partition or a Hassall corpuscle; vessel walls and lumina need separate assessment.",
+          "anchor": {
+            "x": 45.8,
+            "y": 61
+          }
+        }
+      ],
+      "model": "Repeated darker peripheral tissue surrounds paler inner fields, with connective partitions between neighbouring areas. Together with the provider’s thymus identification, those spatial relationships support a cortical–medullary, lobular interpretation. Use the separate detail photograph to inspect epithelial whorls, while keeping the specimens and preparation records distinct. This field supplies more architecture than a close-up but does not show the complete organ boundary or establish cell lineage.",
+      "figureId": "lymphoid-thymus-wider-field"
+    }
+  },
+  {
+    "scope": "thymus-comparison",
+    "licenseLabel": "CC BY-SA 3.0 terms",
+    "introduction": "A concentric epithelial whorl and a lymphoid follicle are different structures. This is a detail field, not a whole-organ survey.",
+    "data": {
+      "title": "Thymus detail: inspect a whorl before naming a compartment",
+      "regions": [
+        {
+          "id": "epithelial-whorl",
+          "label": "Concentric epithelial whorl",
+          "observation": "A rounded pale profile in the upper-left field contains visible concentric layering.",
+          "interpretation": "In the supplied thymic context, this layered epithelial appearance supports a Hassall corpuscle. Compare the organisation of the profile, not simply its colour, with a lymphoid follicle.",
+          "limit": "Not every round or brown profile in this image is a corpuscle; other profiles require their own boundary and content assessment.",
+          "anchor": {
+            "x": 35.8,
+            "y": 10.7
+          }
+        },
+        {
+          "id": "paler-neighbourhood",
+          "label": "Paler tissue near the whorls",
+          "observation": "Several pale, layered profiles occupy a field less densely packed with small dark nuclei than nearby tissue.",
+          "interpretation": "The combination of epithelial whorls and their neighbourhood supports a medullary-type field in this creator-identified thymus.",
+          "limit": "The crop does not map a complete lobule or prove that every paler area belongs to one continuous medulla.",
+          "anchor": {
+            "x": 32,
+            "y": 19.5
+          }
+        },
+        {
+          "id": "crowded-nuclei",
+          "label": "Lymphocyte-rich field",
+          "observation": "Many small, dark nuclear profiles form a densely crowded area in the lower-right field.",
+          "interpretation": "Compare the density with the whorl-containing field. Use surrounding organisation to build the thymic argument rather than treating one dark patch as an entire organ.",
+          "limit": "Nuclear darkness cannot establish the developmental or selection stage of each thymocyte.",
+          "anchor": {
+            "x": 70,
+            "y": 73
+          }
+        }
+      ],
+      "model": "Concentric epithelial whorls occur in a relatively pale field alongside crowded small-nuclear tissue. In the supplied thymic specimen, that arrangement supports a Hassall-corpuscle and medullary-type interpretation. A whole-section view would be needed to establish the complete lobular pattern. Adult appearance does not reveal each cell’s developmental lineage or selection history.",
+      "figureId": "lymphoid-thymus-detail"
+    }
+  },
+  {
+    "scope": "spleen-comparison",
+    "licenseLabel": "CC BY-SA 3.0 terms",
+    "introduction": "Identify a relationship: vessel, surrounding lymphoid tissue, and neighbouring tissue. This is a detail field, not a whole-organ survey.",
+    "data": {
+      "title": "Spleen detail: follow a vessel and its neighbourhood",
+      "regions": [
+        {
+          "id": "vascular-neighbourhood",
+          "label": "Vascular profile and surrounding cells",
+          "observation": "A small lumen with an enclosing wall lies within a densely cellular field.",
+          "interpretation": "In the creator-identified spleen, inspect how the vessel relates to the adjacent lymphoid-rich tissue. A vessel-associated lymphoid compartment supports the white-pulp interpretation.",
+          "limit": "This detail does not trace the vessel through serial sections, establish every branch, or identify surrounding T and B cells individually.",
+          "anchor": {
+            "x": 67.8,
+            "y": 70.2
+          }
+        },
+        {
+          "id": "dense-field",
+          "label": "Dense lymphoid-rich field",
+          "observation": "Closely packed small, dark nuclear profiles occupy much of the lower-right field.",
+          "interpretation": "Compare their density and arrangement with the less densely lymphoid tissue to the left. This supports a compartment comparison within the supplied splenic context.",
+          "limit": "Darkness alone does not identify a germinal centre, a specific lymphocyte subtype or an activation state.",
+          "anchor": {
+            "x": 76,
+            "y": 84
+          }
+        },
+        {
+          "id": "mixed-field",
+          "label": "Less densely lymphoid field",
+          "observation": "The left-hand field has a more mixed cellular appearance than the densely packed region to the right.",
+          "interpretation": "Use this contrast together with a wider splenic view when relating the regions to red and white pulp. Describe the visible tissue before naming an individual channel.",
+          "limit": "The image does not securely resolve every sinusoid wall. A pale interval is not, by itself, proof of a vascular sinusoid.",
+          "anchor": {
+            "x": 20,
+            "y": 71
+          }
+        }
+      ],
+      "model": "The field contains a small vascular profile within densely cellular tissue, beside a less densely lymphoid region. These spatial relationships fit the supplied splenic provenance and support a white-pulp/red-pulp comparison. A wider field is still needed to map the overall distribution; the detail does not identify every lymphocyte subtype or every sinusoid boundary.",
+      "figureId": "lymphoid-spleen-detail"
+    }
+  }
+]

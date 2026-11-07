@@ -1,0 +1,25 @@
+# Lymphoid specimen comparison: rights and native review
+
+The existing lymphoid-organ lesson retains its 23 explanations, 24 scored questions and lymph-node specimen. Three additional specimens make the comparison task visual: a wider thymus field, a separate thymus detail and a spleen detail. Three manual explanation activities provide visible criteria and model reasoning; they do not automatically grade the student's wording. No new lesson route or scored-question identity is created.
+
+## Per-image review
+
+| Image | Source and rights | Interpretation limits |
+|---|---|---|
+| Thymus architecture | [Normal thymus, Wellcome Collection](https://wellcomecollection.org/works/nmqpb4uq), CC0 1.0 Universal. Original 5175 × 3376 file preserved. | Provider identifies normal human paediatric thymus and H&E. This is a wider parenchymal field, not a whole-organ outline. Fixation and physical scale are unreported. |
+| Thymus detail | [Josef Reischig's mammalian thymus photograph](https://commons.wikimedia.org/wiki/File:Thymus_(265_25)_Mammal.jpg), CC BY-SA 3.0. Existing 1280 × 819 display file preserved. | Exact species, stain and fixation are unreported. The embedded 0.1 mm bar remains in the original image; its calibration is not independently verified. This is a different specimen from the wider thymus field. |
+| Spleen detail | [Josef Reischig's mammalian spleen photograph](https://commons.wikimedia.org/wiki/File:Spleen_(265_19)_Section;_mammal.jpg), CC BY-SA 3.0. Existing 1280 × 819 display file preserved. | Exact species, stain and fixation are unreported. The embedded 50 µm bar is retained without a new calibration claim. The detail supports vessel/neighbourhood comparison, not complete organ identification from an isolated cell. |
+
+Image bytes are unchanged. Numeric markers and display enlargement are reversible browser layers. Each CC BY-SA photograph and its annotated specimen presentation retains CC BY-SA 3.0 terms and source attribution. The Wellcome photograph uses its CC0 dedication. None of these images is represented as the author's own photograph or as a matched magnification series.
+
+No identifying patient data were found in the reviewed files. The two Reischig display files retain only the exact reviewed public creator/archive EXIF and YCbCr positioning fields; the metadata exception is limited to those two figure IDs and exact bytes. It does not permit arbitrary EXIF, GPS, XMP, IPTC or ICC data. The independent release manifest pins every JPEG's size and SHA-256.
+
+## Teaching and native review
+
+Nine target regions distinguish observation, interpretation and resolution limits. A single open marker is shown in each zoomable comparison. The 1× view restores the complete field; 2× and 3× are display enlargement and add no optical information. The scrollable area supports keyboard panning. All region descriptions remain accessible without JavaScript; image failure preserves explanatory text and source links.
+
+The three explanation activities ask for structural relationships and sampling limits. The follicle comparison explicitly distinguishes primary follicles without germinal centres from secondary follicles with them, checked against the [University of Leeds Histology Guide](https://histology.leeds.ac.uk/home/lymphoid/lymphnodes/); the separate [thymus teaching source](https://histologyguide.org/slideview/MH-079-thymus/10-slide-1.html) supports the epithelial-whorl comparison. Temporary text and manual rubric checks can be cleared and are not transmitted or stored. A native details element exposes every rubric and model without JavaScript. The shared activity IDs and existing graded-question identifiers are preserved.
+
+Final production-mode native review passed 72 desktop/mobile cases covering the new comparisons, existing node explorer, the published nerve practical and shared learning activities. These checks include region/zoom alignment, keyboard panning, exact downloads, marker toggles, missing images, no-JavaScript content, manual responses, saved answers, 320px with actual doubled text and Axe. Six production-mode image fields were visually inspected at 3× on desktop and at 320px with doubled text. A selected-region resize fault was reproduced on the earlier build, corrected using dimension observation, and covered by desktop/mobile regression tests. Normal keyboard panning remains functional. Hosted preview and production checks remain mandatory before release.
+
+The explicit desktop and mobile Playwright configurations include `lymphoid-comparison.spec.ts`; all 14 new cases are listed by the real project configuration. Existing test selections, the 30-second per-test deadline and worker settings are unchanged. Source lint, TypeScript, 143 unit tests, the full content/privacy/build gates and 13 local route/privacy/asset checks passed. Production dependencies have zero reported vulnerabilities. Retained generated build archives were excluded from local source lint; normal CI lint remains required. Exact preview, full CI and production checks remain separate gates. No independent medical or human accessibility certification is claimed.
