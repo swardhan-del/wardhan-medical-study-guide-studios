@@ -21,7 +21,7 @@ export function CheckpointFeedback({ question: q, evaluation, assessment }: { qu
   </div>;
 }
 
-export function ConceptualCheckpoint({ question: q, title, freshAttempt = false, feedbackOnly = false, onComplete, onReset, children }: { question: CheckpointDefinition; title?: string; freshAttempt?: boolean; feedbackOnly?: boolean; onComplete?: (evaluation: CheckpointEvaluation) => void; onReset?: () => void; children?: React.ReactNode }) {
+export function ConceptualCheckpoint({ question: q, title, freshAttempt = false, feedbackOnly = false, onComplete, onReset, children, footer }: { question: CheckpointDefinition; title?: string; freshAttempt?: boolean; feedbackOnly?: boolean; onComplete?: (evaluation: CheckpointEvaluation) => void; onReset?: () => void; children?: React.ReactNode; footer?: React.ReactNode }) {
   const { ready, persistent, data } = useLearning();
   const group = useId();
   const submitted = useRef(false);
@@ -66,6 +66,7 @@ export function ConceptualCheckpoint({ question: q, title, freshAttempt = false,
     {evaluation && <><p><strong>{q.prompt}</strong></p><CheckpointFeedback question={q} evaluation={evaluation} assessment={saved?.selfAssessment}/>{<button className="button button-secondary" onClick={() => { submitted.current = false; setResult(null); setRetry(true); setResponse(q.type === "multiple" ? [] : q.type === "numeric" ? { value: "", unit: "" } : q.type === "single" || q.type === "boolean" ? -1 : ""); onReset?.(); }}>Try without feedback</button>}</>}
     <div className={styles.sources}><p><strong>Source and scope</strong> · {q.metadata.topic}</p><ul>{q.metadata.sources.map((source, i) => <li key={i}>{source.url ? <a href={source.url}>{source.title}</a> : source.title}{source.locator && <> — {source.locator}</>}<br/>{source.basis.replaceAll("-", " ")}</li>)}</ul>{!q.metadata.sources.some(s => s.basis === "primary-lecture-verified" && s.locator) && <p>Primary lecture slide/page verification is not recorded for this checkpoint.</p>}</div>
     <p className="muted-note">{persistent ? "Progress saved in this browser." : "Storage is unavailable. Progress is kept for this open session only."} Repeated practice is not a measure of mastery.</p>
+    {footer}
     <noscript><p>Interactive checking requires JavaScript. Use this model for self-review.</p><details><summary>Model explanation</summary><p>{"model" in q ? q.model : q.mechanism}</p>{q.type === "numeric" && <ol>{q.workedSolution.map(step => <li key={step}>{step}</li>)}</ol>}</details></noscript>
   </section>;
 }

@@ -90,6 +90,12 @@ test("saved-resource labels retain full contrast before and after hydration", as
     const pending = staticPage.getByRole("button",{name:"Save to My Study: Renal challenge",exact:true});
     await expect(pending).toBeDisabled();
     await expect(pending).toHaveCSS("opacity","1");
+    await expect(staticPage.locator(".practice-sequence .practice-question")).toHaveCount(5);
+    for (const checkpoint of await staticPage.locator(".practice-sequence .practice-question").all()) {
+      await expect(checkpoint).toBeVisible();
+      await checkpoint.locator("noscript summary").click();
+      await expect(checkpoint.locator("noscript details > p")).toBeVisible();
+    }
   } finally { await context.close(); }
   await page.goto("/practice/renal-challenge");
   const ready = page.getByRole("button",{name:"Save to My Study: Renal challenge",exact:true});

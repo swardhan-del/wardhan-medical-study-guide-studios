@@ -12,7 +12,7 @@ test('a pending radio copy cannot interfere with an active practice question',as
     const pending=document.createElement('input');pending.type='radio';
     pending.name='concept-indicator-dilution';pending.hidden=true;document.body.append(pending);
   });
-  const check=page.locator('#concept-check-title:visible');
+  const check=page.locator('#question-concept-indicator-dilution');
   await showAllPractice(page);await check.getByRole('radio', { name: data.lessons.find(l => l.id === 'indicator-dilution')!.question.options[1].text, exact: true }).check();
   await check.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();
   await expect(check.getByRole('status')).toContainText('Correct');
@@ -45,7 +45,7 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     const worked=page.locator('section[aria-labelledby="worked-example-heading"]:visible');
     await worked.locator('summary').click();
     await expect(worked.locator('ol')).toBeVisible();
-    const check=page.locator('#concept-check-title:visible');
+    const check=page.locator('#question-concept-'+lesson.id);
     await showAllPractice(page);await check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
     await check.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();
     await expect(check.getByRole('status')).toContainText('Correct');
