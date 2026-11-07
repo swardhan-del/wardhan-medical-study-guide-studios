@@ -108,11 +108,18 @@ test('worked quantitative examples and comparison values agree with independent 
   assert(-90 < -70); // The worked increase in K conductance initially hyperpolarises.
 });
 
-test('approved Histology and Anatomy flagship records remain byte-equivalent after JSON normalisation', () => {
+test('approved flagship teaching remains unchanged after the reviewed Histology date correction', () => {
   const expectedHashes = {
     'histology-foundations-tissues': '46160053e8b3657d1ee8f5b9e71ce1c18cdddb10f0c6d41ba2fab53a038cffc2',
     'anatomy-foundations': 'd7a592f31750e300fa32cbb7e13efead06d465f2af7691ee80a8b6a9bf099288',
   };
-  for (const [id, hash] of Object.entries(expectedHashes))
-    assert.equal(createHash('sha256').update(JSON.stringify(byId.get(id))).digest('hex'), hash, id);
+  for (const [id, hash] of Object.entries(expectedHashes)) {
+    const record = structuredClone(byId.get(id));
+    if (id === 'histology-foundations-tissues') {
+      assert.equal(record.updatedAt, '2026-11-07');
+      // Preserve the original teaching fingerprint while permitting the audited date change.
+      record.updatedAt = '2026-09-23';
+    }
+    assert.equal(createHash('sha256').update(JSON.stringify(record)).digest('hex'), hash, id);
+  }
 });

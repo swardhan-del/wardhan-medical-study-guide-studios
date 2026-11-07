@@ -1,0 +1,29 @@
+.path { min-width: 0; overflow-wrap: anywhere; }
+.stageLinks { display: grid; gap: .75rem; margin-block: 1.5rem; }
+.stageLinks a { padding: .75rem 1rem; border: 1px solid var(--line); border-radius: .5rem; }
+.stages { list-style: none; padding: 0; }
+.stages > li { padding: clamp(1rem, 3vw, 1.75rem); margin-block: 1.5rem; border: 1px solid var(--line); border-radius: .75rem; background: #fffefa; }
+.stages li { min-width: 0; }
+.stages > li > ul { padding-left: 1.25rem; }
+.stages > li > ul > li { margin-block: .75rem; }
+.goal { border-left: 4px solid var(--teal); padding: .75rem 1rem; background: var(--paper, #fff); }
+.questions ol { padding-left: 1.5rem; }
+.questions li { margin-block: 1.25rem; }
+.questions li p { margin-top: .25rem; }
+.path summary { cursor: pointer; padding-block: .85rem; }
+.path a:focus-visible, .path summary:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+.research { border-top: 2px solid var(--teal); padding-top: 1.5rem; }
+.caseStep { margin-block: 1.5rem; }
+.caseStep ul { padding-left: 1.25rem; }
+.caseStep li { margin-block: .75rem; }
+@media (max-width: 480px) {
+  /* Keep room for enlarged text instead of scaling nested padding with it. */
+  .stages > li { padding: 12px; }
+  .goal { padding: 8px 12px; }
+  .stages > li > ul { padding-left: 20px; }
+  .questions ol, .caseStep ul { padding-left: 24px; }
+}
+@media print {
+  .stages > li { background: none; padding: .75rem; }
+  .stageLinks { display: none; }
+}

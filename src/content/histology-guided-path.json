@@ -1,0 +1,159 @@
+{
+  "lessonId": "histology-foundations-tissues",
+  "title": "Go deeper: a guided histology path",
+  "intro": "Continue beyond the introductory questions. Work through four stages, read the linked explanation or visual activity, then practise with the existing questions. Each question opens in its teaching lesson and keeps the same saved progress. Use your browser’s Back button to return to this path.",
+  "stages": [
+    {
+      "id": "preparation",
+      "title": "Understand how the slide was made",
+      "explanation": "Start with the specimen and preparation, then interpret the colour. A missing structure may reflect the section plane or processing; a positive stain needs a control that addresses the claim you want to make.",
+      "goal": "Explain one finding, one preparation-dependent limitation and the next observation that would resolve it.",
+      "links": [
+        {
+          "href": "/library/microscopy#concept-map-title",
+          "label": "Read the preparation and staining explanation"
+        },
+        {
+          "href": "/library/microscopy#preparation-sequence-title",
+          "label": "Arrange the slide-preparation sequence"
+        }
+      ],
+      "questionIds": [
+        "histology-depth-stain-basophilia",
+        "histology-depth-stain-orientation",
+        "histology-depth-stain-lipid",
+        "histology-depth-stain-pas",
+        "histology-depth-stain-fold",
+        "histology-depth-stain-omission-control",
+        "histology-depth-stain-positive-control"
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Identify structure before naming the tissue",
+      "explanation": "Compare cell arrangement, extracellular material and boundaries across more than one field. Use the surface, lumen and supporting tissue to orient yourself. Similar colour alone is weak evidence for the same tissue.",
+      "goal": "Justify a tissue classification with two structural observations and name a competing interpretation.",
+      "links": [
+        {
+          "href": "/library/epithelia#gland-explorer-title",
+          "label": "Compare epithelial and gland architecture"
+        },
+        {
+          "href": "/library/connective-tissue#concept-map-title",
+          "label": "Read the connective-tissue explanation"
+        },
+        {
+          "href": "/library/muscle-histology#muscle-specimen-title",
+          "label": "Compare muscle specimens"
+        }
+      ],
+      "questionIds": [
+        "epithelial-depth-oblique-cut",
+        "epithelial-depth-simple-branched-duct",
+        "epithelial-depth-pas-location",
+        "connective-depth-sampling",
+        "connective-depth-muscle",
+        "muscle-histology-plane-20261106",
+        "muscle-histology-matrix-20261106"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "title": "Separate an image from a functional claim",
+      "explanation": "An observed border or staining pattern can suggest a mechanism without measuring it. Decide whether your question concerns a transport route, molecular structure or physiological output; each needs evidence at the appropriate level.",
+      "goal": "State what the image supports, then choose a measurement needed to test the proposed function.",
+      "links": [
+        {
+          "href": "/library/cell-junctions#junction-map-title",
+          "label": "Explore junction position and barrier evidence"
+        },
+        {
+          "href": "/library/connective-tissue#concept-map-title",
+          "label": "Read adipose function and evidence"
+        }
+      ],
+      "questionIds": [
+        "junction-depth-resolving-apical-border",
+        "junction-depth-extension-11",
+        "junction-depth-extension-13",
+        "connective-depth-thermogenic-readout",
+        "muscle-histology-disc-20261106"
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Trace development by compartment",
+      "explanation": "Ask separately about epithelium, connective tissue, muscle, vessels and nerves. An adult marker describes a present state; developmental origin needs evidence that follows cells or their descendants through a defined time window.",
+      "goal": "Separate present identity from ancestry and explain what a lineage-label experiment can and cannot establish.",
+      "links": [
+        {
+          "href": "/library/epithelia#concept-map-title",
+          "label": "Read epithelial development by compartment"
+        },
+        {
+          "href": "/library/cartilage-bone#concept-map-title",
+          "label": "Read skeletal development and lineage evidence"
+        }
+      ],
+      "questionIds": [
+        "epithelial-depth-extension-08",
+        "connective-depth-compartment-origin",
+        "connective-depth-macrophage-history",
+        "bone-depth-lineage-versus-marker",
+        "joint-development-label-window"
+      ]
+    }
+  ],
+  "researchCase": {
+    "title": "Research reasoning: does a positive stain prove the claim?",
+    "scenario": "Invented teaching scenario: a reagent detects the expected-size band in a cell-lysate western blot. A student then uses it on fixed tissue, sees epithelial staining and concludes that the signal proves the target protein is present in those cells. The section processed without primary antibody is unstained. No patient results or diagnostic decisions are involved.",
+    "prompts": [
+      {
+        "title": "1. Define the claim and the change in method",
+        "prompt": "What evidence transfers from the western blot, and what still needs validation in the tissue section?",
+        "reasoning": "The blot is evidence about that reagent in the tested lysate and blot conditions. A band at the expected size is useful but is not, by itself, proof of molecular identity. Fixed-tissue immunohistochemistry has different sample preparation and spatial readouts. Describe the observed epithelial signal first; establish specificity in this application before attributing it confidently to the target.",
+        "referenceIds": [
+          "edfors-2018",
+          "uhlen-2016"
+        ]
+      },
+      {
+        "title": "2. Match each control to the uncertainty",
+        "prompt": "The omission control is negative. Does that resolve whether the primary antibody binds the intended target?",
+        "reasoning": "It checks for signal produced without the primary antibody under those conditions. It does not test all binding by the primary antibody, so off-target recognition remains possible. Keep an expected-positive tissue or cell control to check whether the procedure can reveal its target. For specificity, consider a suitable genetic loss-of-target comparison, an antibody-independent measurement, or an independent antibody directed at a nonoverlapping target region. Choose controls that fit this specimen and assay; none is a universal pass certificate.",
+        "referenceIds": [
+          "uhlen-2016",
+          "sivertsson-2020"
+        ]
+      },
+      {
+        "title": "3. Interpret agreement without overclaiming",
+        "prompt": "A second independent antibody shows a similar distribution, and tissue RNA data are broadly consistent. What is the stronger conclusion, and what remains uncertain?",
+        "reasoning": "Converging results strengthen the interpretation when the antibodies are genuinely independent and their spatial patterns agree. RNA is an indirect comparison with protein, and mixed tissues can contain different cell populations. Document sample preparation, localization, controls and disagreements. The supported conclusion remains bounded to the tested material and assay; it does not establish a universal clinical test or turn every future negative section into proof of protein absence.",
+        "referenceIds": [
+          "sivertsson-2020"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "edfors-2018",
+        "title": "Edfors et al. (2018): Enhanced validation of antibodies for research applications",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6175901/",
+        "kind": "Primary research: western-blot validation"
+      },
+      {
+        "id": "sivertsson-2020",
+        "title": "Sivertsson et al. (2020): Enhanced Validation of Antibodies Enables the Discovery of Missing Proteins",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7723238/",
+        "kind": "Primary research: tissue immunohistochemistry"
+      },
+      {
+        "id": "uhlen-2016",
+        "title": "Uhlén et al. (2016): A proposal for validation of antibodies",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10335836/",
+        "kind": "Working-group proposal, not a primary experiment"
+      }
+    ]
+  }
+}
