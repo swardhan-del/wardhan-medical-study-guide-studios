@@ -57,6 +57,14 @@ test('section explanation is self-assessed, available on refresh and never saved
  await q.getByRole('button',{name:'I need to review this relationship',exact:true}).click();
  expect(await page.evaluate(()=>localStorage.getItem('wardhan-learning:v1'))).not.toContain('A private explanation');
  await page.reload();await expect(q.getByRole('button',{name:'I need to review this relationship',exact:true})).toHaveAttribute('aria-pressed','true');
+ await page.goto('/study');
+ const metric=page.locator('.metric-row > div').filter({has:page.getByText('Questions attempted',{exact:true})});
+ await expect(metric.locator('strong')).toHaveText(/^1\/\d+$/);
+ const topic=page.locator('.topic-progress').filter({has:page.locator('a[href="/library/epithelia"]')});
+ await expect(topic).toContainText('Coverage: 1 of');await expect(topic).toContainText('No objectively graded responses yet');await expect(topic).toContainText('1 model comparisons or unassessed responses, excluded from accuracy.');
+ await expect(topic).toContainText('Needs review');
+ await expect(page.getByRole('link',{name:'Continue learning',exact:true})).toHaveAttribute('href',/^\/library\/epithelia#question-section-/);
+ await page.reload();await expect(metric.locator('strong')).toHaveText(/^1\/\d+$/);await expect(topic).toContainText('No objectively graded responses yet');
 });
 test('keyboard, 320px reflow, storage write failure and accessible retained feedback',async({page},info)=>{
  await page.addInitScript(()=>{Object.defineProperty(Storage.prototype,'setItem',{value:()=>{throw Error('quota');}});});

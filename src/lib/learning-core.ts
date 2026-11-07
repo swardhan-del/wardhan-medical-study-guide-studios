@@ -171,6 +171,23 @@ export function practiceSummary(ids: string[], answers: Record<string, Attempt>)
     correctedWithHelp: attempted.filter((id) => answers[id].lastCorrect && answers[id].assisted).length,
   };
 }
+export function checkpointPracticeSummary(ids: string[], answers: Record<string, Attempt>, checkpoints: Record<string, CheckpointRecord>) {
+  const latest = (id: string) => {
+    const answer = answers[id], checkpoint = checkpoints[id];
+    return checkpoint && (!answer || checkpoint.at >= answer.lastAt) ? checkpoint.outcome : answer ? answer.lastCorrect ? "correct" : "incorrect" : undefined;
+  };
+  const attempted = ids.filter(id => answers[id] || checkpoints[id]);
+  const scored = attempted.filter(id => latest(id) === "correct" || latest(id) === "incorrect");
+  return {
+    ...practiceSummary(ids, answers),
+    attempted: attempted.length,
+    scored: scored.length,
+    latestCorrect: scored.filter(id => latest(id) === "correct").length,
+    modelComparisons: attempted.length - scored.length,
+    needsReview: attempted.filter(id => latest(id) === "incorrect" || checkpoints[id]?.selfAssessment === "review").length,
+    correctedWithHelp: scored.filter(id => latest(id) === "correct" && answers[id]?.assisted).length,
+  };
+}
 export function localDate(date = new Date()): string {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 }

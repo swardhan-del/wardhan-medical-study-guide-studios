@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { evaluateCheckpoint, reinforcementVariant, nextCheckpointIndex } from '../src/lib/conceptual-checkpoint.ts';
-import { parseProgress, emptyProgress } from '../src/lib/learning-core.ts';
+import { parseProgress, emptyProgress, checkpointPracticeSummary, gradeAttempt } from '../src/lib/learning-core.ts';
 import { mergeProgress } from '../src/lib/progress-transfer.ts';
 import definitions from '../src/content/typed-checkpoints.json' with {type:'json'};
 import { practiceItems } from '../src/content/practice-registry.ts';
@@ -88,4 +88,25 @@ test('numeric response parsing preserves accepted whitespace and rejects malform
  const parsed=parseProgress(JSON.stringify(raw),[item.metadata.lesson],[item.id]);
  assert.equal(evaluateCheckpoint(item,parsed.checkpoints[item.id].response).outcome,'correct');
  for(const invalid of [null,{}, {value:100,unit:'mL/min'},{value:'100'}])assert.equal(evaluateCheckpoint(item,invalid),null);
+});
+
+test('practice coverage counts model comparisons once and excludes them from objective accuracy',()=>{
+ const answer=gradeAttempt(undefined,true,100,0);
+ const record=(outcome,at=100)=>({outcome,response:null,at,submissions:1,misses:0,concept:'test-concept'});
+ const summary=checkpointPracticeSummary(['choice','written','unknown','untouched'],{choice:answer},{choice:record('correct'),written:{...record('self-review'),selfAssessment:'review'},unknown:record('unassessed')});
+ assert.equal(summary.attempted,3);
+ assert.equal(summary.scored,1);
+ assert.equal(summary.latestCorrect,1);
+ assert.equal(summary.modelComparisons,2);
+ assert.equal(summary.needsReview,1);
+ assert.equal(summary.firstKnown,1);
+ assert.equal(summary.firstCorrect,1);
+});
+test('latest practice accuracy respects response timestamps without inventing first-attempt scores',()=>{
+ const answer=gradeAttempt(undefined,true,100,0);
+ const record={outcome:'unassessed',response:null,at:101,submissions:2,misses:0,concept:'test-concept'};
+ const newerModel=checkpointPracticeSummary(['term'],{term:answer},{term:record});
+ assert.equal(newerModel.attempted,1);assert.equal(newerModel.scored,0);assert.equal(newerModel.modelComparisons,1);assert.equal(newerModel.firstCorrect,1);
+ const newerAnswer=checkpointPracticeSummary(['term'],{term:{...answer,lastAt:102}},{term:record});
+ assert.equal(newerAnswer.scored,1);assert.equal(newerAnswer.latestCorrect,1);assert.equal(newerAnswer.modelComparisons,0);
 });
