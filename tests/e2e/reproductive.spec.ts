@@ -49,7 +49,9 @@ test('reproductive: worked reasoning, feedback, references and enlarged keyboard
   await expect(added.getByRole('radio',{name:extra.options![0].text,exact:true})).toBeChecked();
   for(const url of ['https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system','https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system','https://pubmed.ncbi.nlm.nih.gov/39549739/','https://pubmed.ncbi.nlm.nih.gov/32598235/'])await expect(page.locator(`#lesson-source a[href="${url}"]`)).toHaveCount(1);
   expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
-  await page.screenshot({path:info.outputPath('reproductive-lesson.png'),fullPage:true});
+  // The expanded lesson exceeds 60,000px; keep diagnostic captures bounded.
+  await page.getByRole('heading',{level:1}).scrollIntoViewIfNeeded();
+  await page.screenshot({path:info.outputPath('reproductive-lesson.png')});
   await page.setViewportSize({width:320,height:844});await page.evaluate(()=>document.documentElement.style.fontSize='200%');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await added.scrollIntoViewIfNeeded();await page.screenshot({path:info.outputPath('reproductive-enlarged-feedback.png')});
