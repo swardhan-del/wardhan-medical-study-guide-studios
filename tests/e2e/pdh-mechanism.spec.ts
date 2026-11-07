@@ -48,6 +48,11 @@ test("Each carrier stage has keyboard controls and conserves the three tracked c
 
 test("Carbon ledger accepts valid counts, explains invalid counts and sends or saves nothing", async ({ page }) => {
   await page.goto(route);
+  // The lesson records its resume position on mount, independently of the ledger.
+  await expect.poll(() => page.evaluate(() => {
+    const progress = JSON.parse(localStorage.getItem("wardhan-learning:v1") || "null");
+    return progress?.resume?.lesson;
+  })).toBe("pdh-tca");
   const before = await page.evaluate(() => JSON.stringify([localStorage, sessionStorage]));
   const posts: string[] = []; page.on("request", r => { if (r.method() === "POST") posts.push(r.url()); });
   const input = page.getByRole("spinbutton", { name: "Number of completed reactions (whole number, 1–12)", exact: true });
