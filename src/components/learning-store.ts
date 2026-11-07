@@ -1,6 +1,7 @@
 "use client";
 import { useSyncExternalStore } from "react";
 import registry from "@/content/learning-registry.json";
+import type { CheckpointDefinition, CheckpointEvaluation, CheckpointResponse } from "@/lib/conceptual-checkpoint";
 const { learningLessonIds, learningQuestionIds, learningDraftIds } = registry;
 import {
   emptyProgress,
@@ -22,6 +23,7 @@ let snapshot = server;
 let rawCache: string | null | undefined;
 const listeners = new Set<() => void>();
 function getSnapshot(): Snapshot {
+  if (snapshot.ready && !snapshot.persistent) return snapshot;
   try {
     const raw = window.localStorage.getItem(learningKey);
     if (!snapshot.ready || rawCache !== raw) {
@@ -105,4 +107,20 @@ export function updateJourney(lesson: string, patch: Partial<LearningProgress["j
   return updateLearning(state => ({ ...state, lessons: patch.read === false || patch.reviewed === false ? state.lessons.filter(id => id !== lesson) : state.lessons, journey: { ...state.journey, [lesson]: {
     ...(state.journey[lesson] ?? { read: false, reviewed: false, saved: false }), ...patch, at: Date.now(),
   } } }));
+}
+
+export function recordCheckpoint(q: CheckpointDefinition, response: CheckpointResponse, evaluation: CheckpointEvaluation, usedHint = false) {
+  if (!questionIds.includes(q.id)) return false;
+  const objective = evaluation.outcome === "correct" || evaluation.outcome === "incorrect";
+  return updateLearning(state => {
+    const previous = state.checkpoints[q.id];
+    return { ...state,
+      resume: lessonIds.includes(q.metadata.lesson) ? { lesson: q.metadata.lesson, stage: "practice", at: Date.now() } : state.resume,
+      answers: objective ? { ...state.answers, [q.id]: gradeAttempt(state.answers[q.id], evaluation.outcome === "correct", Date.now(), typeof response === "number" ? response : null, usedHint) } : state.answers,
+      checkpoints: { ...state.checkpoints, [q.id]: { outcome: evaluation.outcome, response: typeof response === "string" ? null : response, at: Date.now(), submissions: Math.min((previous?.submissions ?? 0) + 1, 1000000), misses: Math.min((previous?.misses ?? 0) + Number(evaluation.outcome === "incorrect"), 1000000), concept: q.metadata.concept } },
+    };
+  });
+}
+export function assessCheckpoint(id: string, selfAssessment: "review" | "explained") {
+  updateLearning(state => state.checkpoints[id] ? { ...state, checkpoints: { ...state.checkpoints, [id]: { ...state.checkpoints[id], selfAssessment, at: Date.now() } } } : state);
 }

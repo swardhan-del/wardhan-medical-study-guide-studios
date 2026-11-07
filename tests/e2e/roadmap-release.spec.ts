@@ -14,8 +14,8 @@ for (const [subject, hub] of Object.entries(subjectHubs)) {
     const lesson = library.lessons.find(item => item.id === hub.firstLesson)!;
     const question = page.locator("#concept-check-title:visible");
     await question.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
-    await question.getByRole("button", { name: "Check answer", exact: true }).click();
-    await expect(question.getByRole("status")).toContainText("Correct.");
+    await question.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+    await expect(question.getByRole("status")).toContainText("Correct");
     await expect(page.locator(".clinical-review-notice:visible")).toContainText("peer review has not been completed");
     await page.getByRole("region", { name: "Your lesson journey" }).getByRole("link", { name: "Back to library", exact: true }).click();
     await expect(page).toHaveURL(/\/library$/);

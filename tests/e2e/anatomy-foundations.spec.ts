@@ -34,16 +34,16 @@ test('all eleven Anatomy answers are hidden, explained and saved without runtime
   const concept = { ...lesson.question, options: lesson.question.options.map(o => ({ text: o.text, explanation: o.reason })) };
   const questions = [concept, ...studio.questions.filter(q => q.topic === id), ...transfer.questions.filter(q => q.topic === id)];
   for (const q of questions) {
-    const panel = page.locator('.practice-question:visible').filter({ hasText: q.prompt });
+    const panel = page.locator('.practice-question:visible:has(input[type=radio])').filter({ hasText: q.prompt });
     await expect(panel.getByRole('status')).toHaveCount(0);
-    await panel.getByRole('radio', { name: q.options[q.answer].text, exact: true }).check();
-    await panel.getByRole('button', { name: 'Check answer', exact: true }).click();
-    await expect(panel.getByRole('status')).toContainText('Correct.');
+    await showAllPractice(page);await panel.getByRole('radio', { name: q.options[q.answer].text, exact: true }).check();
+    await panel.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+    await expect(panel.getByRole('status')).toContainText('Correct');
     for (const option of q.options) await expect(panel.getByRole('status')).toContainText(option.explanation);
   }
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   await showAllPractice(page);
-  for (const q of questions) await expect(page.locator('.practice-question:visible').filter({ hasText: q.prompt }).getByRole('radio', { name: q.options[q.answer].text, exact: true })).toBeChecked();
+  for (const q of questions) await expect(page.locator('.practice-question:visible:has(input[type=radio])').filter({ hasText: q.prompt }).getByRole('radio', { name: q.options[q.answer].text, exact: true })).toBeChecked();
   expect(errors).toEqual([]);
 });
 
@@ -76,7 +76,7 @@ test('Anatomy figures, sources, keyboard disclosures and progress work at narrow
   await oral.getByLabel('My oral examination notes', { exact: true }).fill('Establish the viewing direction before assigning a side.');
   const checks = page.locator('section[aria-labelledby="summary-checklist-title"]:visible input[type="checkbox"]');
   await expect(checks).toHaveCount(7); await checks.first().focus(); await page.keyboard.press('Space');
-  await page.reload(); await expect(checks.first()).toBeChecked();
+  await page.reload();await showAllPractice(page); await expect(checks.first()).toBeChecked();
   await expect(oral.getByLabel('My oral examination notes', { exact: true })).toHaveValue('Establish the viewing direction before assigning a side.');
   await page.setViewportSize({ width: 320, height: 800 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -119,21 +119,21 @@ for (const question of [
     }, { id: question.id, attempt: savedAttempt });
     await page.goto(`/library/${question.topic}`);
     await showAllPractice(page);
-    const panel = page.locator('.practice-question:visible').filter({ hasText: question.prompt });
+    const panel = page.locator('.practice-question:visible:has(input[type=radio])').filter({ hasText: question.prompt });
     await expect(panel.getByRole('radio', { name: question.options[2].text, exact: true })).toBeChecked();
-    await expect(panel.getByRole('status')).toContainText('Review the distinction.');
+    await expect(panel.getByRole('status')).toContainText('Review the Relationship');
     await expect(panel.getByRole('status')).toContainText(question.options[2].explanation);
-    await page.reload();
+    await page.reload();await showAllPractice(page);
     await showAllPractice(page);
     const restored = await page.evaluate(() => JSON.parse(localStorage.getItem('wardhan-learning:v1')!));
     expect(restored.answers[question.id]).toEqual(savedAttempt);
     expect(restored.lessons).toContain('anatomy-foundations');
     expect(restored.quizzes).toBe(3);
     await panel.getByRole('button', { name: 'Try without feedback', exact: true }).click();
-    await panel.getByRole('radio', { name: question.options[question.answer].text, exact: true }).check();
-    await panel.getByRole('button', { name: 'Check answer', exact: true }).click();
-    await expect(panel.getByRole('status')).toContainText('Correct.');
-    await page.reload();
+    await showAllPractice(page);await panel.getByRole('radio', { name: question.options[question.answer].text, exact: true }).check();
+    await panel.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+    await expect(panel.getByRole('status')).toContainText('Correct');
+    await page.reload();await showAllPractice(page);
     await showAllPractice(page);
     await expect(panel.getByRole('radio', { name: question.options[question.answer].text, exact: true })).toBeChecked();
     await page.setViewportSize({ width: 320, height: 800 });

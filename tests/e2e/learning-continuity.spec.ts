@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import data from "../../src/content/library-lessons.json";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -76,12 +77,12 @@ test("concept answers and written reasoning survive reload and enter shared revi
   const check = page.locator("#concept-check-title");
   await check.getByRole("radio", { name: data.lessons.find(l => l.id === "nitrogen-metabolism")!.question.options[1].text, exact: true }).check();
   await check
-    .getByRole("button", { name: "Check answer", exact: true })
+    .getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })
     .click();
   await page
     .getByRole("textbox", { name: "My explanation", exact: true })
     .fill("Transamination transfers nitrogen; it does not excrete it.");
-  await page.reload();
+  await page.reload(); await showAllPractice(page);
   await expect(check.getByRole("radio", { name: data.lessons.find(l => l.id === "nitrogen-metabolism")!.question.options[1].text, exact: true })).toBeChecked();
   await expect(
     page.getByRole("textbox", { name: "My explanation", exact: true }),
@@ -109,14 +110,12 @@ test("canonical thorax restores a checked answer and uses the corrected dividing
     name: "Twelve questions. Explain every answer.",
   });
   await quiz.getByRole("radio", { name: "Mediastinum", exact: true }).check();
-  await quiz.getByRole("button", { name: "Check thorax answer" }).click();
-  await page.reload();
+  await quiz.getByRole("button", { name: "Check Answer and Continue →" }).click();
+  await page.reload(); await showAllPractice(page);
   await expect(
     quiz.getByRole("radio", { name: "Mediastinum", exact: true }),
   ).toBeChecked();
-  await expect(quiz.locator(".thorax-quiz-progress")).toContainText(
-    "1 of 12 correct",
-  );
+  await expect(quiz.getByRole("progressbar")).toHaveAttribute("value", "1");
   await page.goto("/subjects/anatomy/thorax?topic=pleura#explore");
   await expect(page.locator("#lesson-pleura")).toBeVisible();
 });
@@ -153,7 +152,7 @@ test("histology progresses to licensed microscope sections and saves a transfer 
     .getByRole("radio", { name: "Stratified squamous epithelium", exact: true })
     .check();
   await sequence
-    .getByRole("button", { name: "Check answer", exact: true })
+    .getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })
     .click();
   await sequence.screenshot({
     path: info.outputPath("histology-transfer.png"),

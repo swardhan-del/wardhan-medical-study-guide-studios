@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { createHash } from "node:crypto";
@@ -53,15 +54,15 @@ test("Liver routes: keyboard selection separates blood, bile and both pancreatic
 });
 
 test("Liver application practice: all explained choices and answer persistence work", async ({ page }) => {
-  await page.goto("/library/liver-pancreas"); await page.getByRole("button", { name: "Show all questions", exact: true }).click(); expect(questions).toHaveLength(18);
+  await page.goto("/library/liver-pancreas"); await showAllPractice(page); expect(questions).toHaveLength(18);
   for (const q of questions) {
     const block = page.locator(`#question-${q.id}`); const wrong = (q.answer + 1) % q.options.length;
-    await block.getByRole("radio", { name: q.options[wrong].text, exact: true }).check(); await block.getByRole("button", { name: "Check answer", exact: true }).click();
+    await block.getByRole("radio", { name: q.options[wrong].text, exact: true }).check(); await block.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(block).toContainText(q.options[wrong].explanation); await block.getByRole("button", { name: "Try without feedback", exact: true }).click();
-    await block.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check(); await block.getByRole("button", { name: "Check answer", exact: true }).click();
+    await block.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check(); await block.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(block).toContainText(q.options[q.answer].explanation);
   }
-  await page.reload(); await page.getByRole("button", { name: "Show all questions", exact: true }).click();
+  await page.reload(); await showAllPractice(page);
   for (const q of questions) await expect(page.locator(`#question-${q.id}`).getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();
 });
 
@@ -95,7 +96,7 @@ test("Liver accessibility: save/remove, mobile, enlarged text and automated chec
   await page.goto("/library/liver-pancreas");
   const save = page.getByRole("button", { name: `Save to My Study: ${lesson.title}`, exact: true }); await save.click(); await page.reload();
   const saved = page.getByRole("button", { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true }); await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload(); await expect(save).toBeVisible();
-  await page.getByRole("button", { name: "Show all questions", exact: true }).click(); await page.getByText("Read the figure panel by panel", { exact: true }).click();
+  await showAllPractice(page); await page.getByText("Read the figure panel by panel", { exact: true }).click();
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
   await page.setViewportSize({ width: 320, height: 900 }); await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1)).toBe(true);

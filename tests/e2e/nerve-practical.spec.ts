@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { createHash } from 'node:crypto';
@@ -55,35 +56,35 @@ test('Nerve practical: all regions have independent keyboard controls and tempor
   const first = page.locator(`section[aria-labelledby="${specimens[0].scope}-specimen-title"]`);
   await first.getByRole('button', { name: 'Clear my response', exact: true }).click(); await expect(first.locator('textarea')).toHaveValue('');
   await expect(page.locator(`#${specimens[1].scope}-specimen-response`)).not.toHaveValue('');
-  await page.reload(); for (const entry of specimens) await expect(page.locator(`#${entry.scope}-specimen-response`)).toHaveValue('');
+  await page.reload();await showAllPractice(page); for (const entry of specimens) await expect(page.locator(`#${entry.scope}-specimen-response`)).toHaveValue('');
 });
 
 // Give each student task the normal deadline while retaining all four choices
 // and its reload check. One 32-choice scenario can exhaust the entire deadline.
 for (const app of questions) test(`Nerve practical: ${app.id} explains every choice and persists`, async ({ page }) => {
-  expect(questions).toHaveLength(8); await page.goto(route); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
-  await expect(page.locator('.practice-question:visible')).toHaveCount(13);
-  const q = page.locator('#question-' + app.id); await expect(q.getByRole('button', { name: 'Check answer', exact: true })).toBeDisabled();
+  expect(questions).toHaveLength(8); await page.goto(route); await showAllPractice(page);
+  await expect(page.locator('.practice-question:visible:has(input[type=radio])')).toHaveCount(13);
+  const q = page.locator('#question-' + app.id); await expect(q.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeDisabled();
   for (const [i, option] of app.options!.entries()) {
-    await q.getByRole('radio', { name: option.text, exact: true }).check(); await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await showAllPractice(page);await q.getByRole('radio', { name: option.text, exact: true }).check(); await q.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(q.locator('[data-feedback]')).toHaveAttribute('data-feedback', i === app.answer ? 'correct' : 'incorrect');
     await expect(q).toContainText(option.explanation!); await q.getByRole('button', { name: 'Try without feedback', exact: true }).click();
   }
-  await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check(); await q.getByRole('button', { name: 'Check answer', exact: true }).click();
-  await page.reload(); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
+  await showAllPractice(page);await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check(); await q.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await page.reload();await showAllPractice(page); await showAllPractice(page);
   await expect(page.locator('#question-' + app.id).getByRole('radio', { name: app.options![app.answer!].text, exact: true })).toBeChecked();
 });
 
 test('Nerve practical: answers to all eight tasks persist together', async ({ page }) => {
   expect(questions).toHaveLength(8);
-  await page.goto(route); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
+  await page.goto(route); await showAllPractice(page);
   for (const app of questions) {
     const q = page.locator('#question-' + app.id);
-    await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check();
-    await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await showAllPractice(page);await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check();
+    await q.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(q.locator('[data-feedback]')).toHaveAttribute('data-feedback', 'correct');
   }
-  await page.reload(); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
+  await page.reload();await showAllPractice(page); await showAllPractice(page);
   for (const app of questions) {
     await expect(page.locator('#question-' + app.id).getByRole('radio', { name: app.options![app.answer!].text, exact: true })).toBeChecked();
   }

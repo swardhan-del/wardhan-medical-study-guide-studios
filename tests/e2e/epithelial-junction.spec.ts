@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import teaching from "../../src/content/library-lessons.json";
@@ -27,31 +28,31 @@ for (const id of ["epithelia", "cell-junctions"]) {
       if (!(await section.evaluate(el => (el as HTMLDetailsElement).open))) await section.locator(":scope > summary").click();
       expect(await section.locator(":scope > p").allTextContents()).toEqual(step.body.split("\n\n"));
       await expect(section).toContainText(step.practice!.prompt);
-      const answer = section.getByText(step.practice!.feedback, { exact: true }); await expect(answer).toBeHidden();
-      await section.getByText("Check the reasoning", { exact: true }).click(); await expect(answer).toBeVisible();
+      const answer = section.locator("[data-feedback]"); await expect(answer).toBeHidden();
+      await section.getByRole("textbox", { name: "Your explanation", exact: true }).fill("My mechanism explanation before comparing."); await section.getByRole("button", { name: "Check Answer and Continue →", exact: true }).click(); await expect(answer).toBeVisible(); await expect(answer).toContainText(step.practice!.feedback);
       expect(await section.locator('a[href^="https://"]').count()).toBeGreaterThan(0);
     }
     await expect(page.locator("main")).not.toContainText("/Users/"); expect(await page.locator('main a[href*="dropbox"]').count()).toBe(0);
     await expect(page.locator("main")).toContainText("independent"); expect(errors).toEqual([]);
   });
   test(`${id}: new application feedback and answer persistence`, async ({ page }) => {
-    await page.goto(`/library/${id}`); await page.getByRole("button", { name: "Show all questions", exact: true }).click();
+    await page.goto(`/library/${id}`); await showAllPractice(page);
     expect(questions).toHaveLength(id === "epithelia" ? 12 : 9);
     for (const q of questions) {
       const block = page.locator(`#question-${q.id}`); const wrong = (q.answer + 1) % q.options.length;
-      await block.getByRole("radio", { name: q.options[wrong].text, exact: true }).check(); await block.getByRole("button", { name: "Check answer", exact: true }).click();
+      await block.getByRole("radio", { name: q.options[wrong].text, exact: true }).check(); await block.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
       await expect(block).toContainText(q.options[wrong].explanation); await block.getByRole("button", { name: "Try without feedback", exact: true }).click();
-      await block.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check(); await block.getByRole("button", { name: "Check answer", exact: true }).click();
+      await block.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check(); await block.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
       await expect(block).toContainText(q.options[q.answer].explanation);
     }
-    await page.reload(); await page.getByRole("button", { name: "Show all questions", exact: true }).click();
+    await page.reload(); await showAllPractice(page);
     for (const q of questions) await expect(page.locator(`#question-${q.id}`).getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();
   });
   test(`${id}: accessibility, saved resource persistence and enlarged-text reflow`, async ({ page }, info) => {
     await page.goto(`/library/${id}`);
     const save = page.getByRole("button", { name: `Save to My Study: ${lesson.title}`, exact: true }); await save.click(); await page.reload();
     const saved = page.getByRole("button", { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true }); await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload(); await expect(save).toBeVisible();
-    await page.getByRole("button", { name: "Show all questions", exact: true }).click();
+    await showAllPractice(page);
     expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
     await page.setViewportSize({ width: 320, height: 900 }); await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1)).toBe(true);
@@ -69,7 +70,7 @@ for (const id of ["epithelia", "cell-junctions"]) {
     await page.goto(`/library/${id}`); await expect(page.locator("h1")).toHaveText(lesson.title);
     const steps = page.locator(".concept-sequence > details"); await expect(steps).toHaveCount(lesson.steps.length);
     if (!(await steps.last().evaluate(el => (el as HTMLDetailsElement).open))) await steps.last().locator(":scope > summary").click(); await expect(steps.last()).toContainText(lesson.steps.at(-1)!.body.split("\n\n")[0]);
-    await steps.last().getByText("Check the reasoning", { exact: true }).click(); await expect(steps.last()).toContainText(lesson.steps.at(-1)!.practice!.feedback);
+    await steps.last().locator("noscript").getByText("Model explanation", { exact: true }).click(); const model = steps.last().locator("noscript details > p"); await expect(model).toBeVisible(); expect(await model.textContent()).toBe(lesson.steps.at(-1)!.practice!.feedback);
     await context.close();
   });
 }

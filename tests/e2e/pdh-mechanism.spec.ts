@@ -21,9 +21,9 @@ test("Student finds the deeper PDH lesson and keeps the existing saved-resource 
   await page.getByRole("link", { name: "Follow the catalytic cycle", exact: true }).click();
   await expect(page.locator("#pdh-mechanism-title")).toBeInViewport();
   const save = page.getByRole("button", { name: `Save to My Study: ${lesson.title}`, exact: true });
-  await save.click(); await page.reload();
+  await save.click(); await page.reload();await showAllPractice(page);
   const saved = page.getByRole("button", { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true });
-  await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload(); await expect(save).toBeVisible();
+  await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload();await showAllPractice(page); await expect(save).toBeVisible();
   await page.getByRole("navigation", { name: "Breadcrumb" }).locator('a[href="/subjects/biochemistry"]').click();
   await expect(page.getByRole("searchbox", { name: "Search resources", exact: true })).toBeVisible();
 });
@@ -73,7 +73,7 @@ test("Carbon ledger accepts valid counts, explains invalid counts and sends or s
   await expect(balance).toContainText("6 = 4 + 2.");
   expect(posts).toEqual([]);
   expect(await page.evaluate(() => JSON.stringify([localStorage, sessionStorage]))).toBe(before);
-  await page.reload(); await expect(balance).toContainText("12 = 8 + 4.");
+  await page.reload();await showAllPractice(page); await expect(balance).toContainText("12 = 8 + 4.");
 });
 
 for (const question of questions) test(`PDH ${question.id}: every answer has reasoning and the selection persists`, async ({ page }) => {
@@ -81,17 +81,17 @@ for (const question of questions) test(`PDH ${question.id}: every answer has rea
   await page.goto(route); await showAllPractice(page);
   await expect(page.locator("#question-concept-pdh-tca")).toBeVisible();
   const card = page.locator("#question-" + question.id);
-  await expect(card.getByRole("button", { name: "Check answer", exact: true })).toBeDisabled();
+  await expect(card.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeDisabled();
   for (const [index, option] of question.options!.entries()) {
     await card.getByRole("radio", { name: option.text, exact: true }).check();
-    await card.getByRole("button", { name: "Check answer", exact: true }).click();
+    await card.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(card.locator("[data-feedback]")).toHaveAttribute("data-feedback", index === question.answer ? "correct" : "incorrect");
     await expect(card).toContainText(option.explanation!);
     await card.getByRole("button", { name: "Try without feedback", exact: true }).click();
   }
   await card.getByRole("radio", { name: question.options![question.answer!].text, exact: true }).check();
-  await card.getByRole("button", { name: "Check answer", exact: true }).click();
-  await page.reload(); await showAllPractice(page);
+  await card.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await page.reload();await showAllPractice(page); await showAllPractice(page);
   await expect(page.locator("#question-" + question.id).getByRole("radio", { name: question.options![question.answer!].text, exact: true })).toBeChecked();
 });
 

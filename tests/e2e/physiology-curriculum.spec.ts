@@ -23,8 +23,8 @@ test("physiology Full Course reuses the released lesson, feedback and local resu
   await expect(figure.locator("details")).toHaveAttribute("open", "");
   const check = page.locator("#concept-check-title:visible");
   await check.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
-  await check.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(check.getByRole("status")).toContainText("Correct.");
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(check.getByRole("status")).toContainText("Correct");
 
   const chapterNav = page.getByRole("navigation", { name: "Full Course chapter navigation" });
   await expect(chapterNav.getByRole("link", { name: "Previous chapter: Arterial blood pressure" })).toHaveAttribute("href", coursePath + "#arterial-pressure");

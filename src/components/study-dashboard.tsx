@@ -40,6 +40,13 @@ export function StudyDashboard() {
       data.answers[q.id] &&
       (!data.answers[q.id].lastCorrect || data.answers[q.id].dueAt <= now),
   );
+  const writtenReview = practiceItems.filter(q => data.checkpoints[q.id]?.selfAssessment === "review");
+  const conceptHistory = new Map<string, { misses: number; latest: number; outcome: string; itemId: string }>();
+  for (const [id, record] of Object.entries(data.checkpoints)) {
+    const current = conceptHistory.get(record.concept);
+    conceptHistory.set(record.concept, { misses: (current?.misses ?? 0) + record.misses, latest: Math.max(current?.latest ?? 0, record.at), outcome: !current || record.at >= current.latest ? record.outcome : current.outcome, itemId: !current || record.at >= current.latest ? id : current.itemId });
+  }
+  const repeatedConcepts = [...conceptHistory.values()].filter(c => c.misses >= 2);
   const lastPracticed = practiceItems.filter((q) => data.answers[q.id]).sort((a, b) => data.answers[b.id].lastAt - data.answers[a.id].lastAt)[0];
   const next =
     renalLessons.find((l) => !data.lessons.includes(l.slug)) ?? renalLessons[0];
@@ -59,6 +66,11 @@ export function StudyDashboard() {
           ? "No account is needed. Clearing site data removes your saved progress."
           : "Browser storage is unavailable. Progress may disappear when you leave."}
       </p>
+      {(writtenReview.length > 0 || repeatedConcepts.length > 0) && <section className="study-panel" aria-labelledby="relationship-review-title">
+        <h2 id="relationship-review-title">Relationships to revisit</h2>
+        {writtenReview.length > 0 && <><p>{writtenReview.length} written explanations marked for review. These are self-assessments, without an objective score.</p><button className="button button-primary" onClick={() => beginReview(writtenReview.map(q => q.id))}>Review my written explanations</button></>}
+        {repeatedConcepts.map(c => { const item = practiceItems.find(q => q.id === c.itemId); return item ? <p key={item.id}><Link href={item.href}>{item.title}</Link> — {c.misses} missed attempts across explicitly linked checkpoints; latest response: {c.outcome.replaceAll("-", " ")}. This history guides practice; it is not a mastery judgement.</p> : null; })}
+      </section>}
       <div className="metric-row">
         <div>
           <strong>{renalLessons.filter((l) => data.lessons.includes(l.slug)).length}/{renalLessons.length}</strong>

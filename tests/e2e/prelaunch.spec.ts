@@ -29,7 +29,7 @@ test("a keyboard learner can skip navigation, practise, save a summary and retur
   await expect(page).toHaveURL(/\/library\/anatomy-foundations$/);
   const question=page.locator("#concept-check-title:visible");
   await question.getByRole("radio").first().check();
-  await question.getByRole("button",{name:"Check answer",exact:true}).click();
+  await question.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
   await expect(question.getByRole("status")).toBeVisible();
   const note=page.getByRole("textbox",{name:"My oral examination notes",exact:true});
   await note.fill("Explain the reference position before using directional terms.");

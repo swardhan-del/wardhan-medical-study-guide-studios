@@ -1,4 +1,6 @@
-import anatomyCourse from "./anatomy-practice-index.json" with { type: "json" };
+import { typedCheckpointItems } from "./typed-checkpoints.ts";
+import type { CheckpointDefinition } from "../lib/conceptual-checkpoint.ts";
+import { sectionCheckpointItems, anatomyCheckpointItems, foundationCheckpointItems } from "./section-checkpoints.ts";
 import library from "./library-lessons.json" with { type: "json" };
 import thorax from "./thorax-practice.json" with { type: "json" };
 import { anatomyLearningPages } from "./anatomy-learning.ts";
@@ -17,10 +19,14 @@ export type PracticeItem = {
   prompt: string;
   options?: { text: string; explanation: string }[];
   answer?: number;
+  checkpoint?: CheckpointDefinition;
 };
 export const practiceItems: PracticeItem[] = [
+  ...typedCheckpointItems,
   ...studio.questions,
-  ...anatomyCourse.records.flatMap(r => r.practice.map(q => ({ id: q.id, topic: r.lessonId, title: r.title, subject: "anatomy", href: "/library/" + r.lessonId + "#anatomy-practice-heading", prompt: q.prompt }))),
+  ...anatomyCheckpointItems,
+  ...sectionCheckpointItems,
+  ...foundationCheckpointItems,
   ...renalQuestions.map((q) => ({
     ...q, topic: q.lesson, subject: "physiology",
     title: renalLessons.find((l) => l.slug === q.lesson)!.title,

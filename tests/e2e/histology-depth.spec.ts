@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import teaching from "../../src/content/library-lessons.json";
@@ -81,20 +82,20 @@ for (const [id, sectionCount, questionCount] of [["microscopy",6,8],["lymphoid-o
     const lesson=teaching.lessons.find(l=>l.id===id)!;
     await expect(page.locator(".concept-sequence > details")).toHaveCount(sectionCount);
     for(const step of lesson.steps) await expect(page.getByText(step.title,{exact:true}).first()).toBeVisible();
-    await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+    await showAllPractice(page);
     const questions=practice.questions.filter(q=>q.topic===id&&q.id.startsWith("histology-depth-"));
     expect(questions).toHaveLength(questionCount);
     for(const q of questions) {
       const block=page.locator(`#question-${q.id}`);const wrong=(q.answer+1)%q.options.length;
       await block.getByRole("radio",{name:q.options[wrong].text,exact:true}).check();
-      await block.getByRole("button",{name:"Check answer",exact:true}).click();
+      await block.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
       await expect(block).toContainText(q.options[wrong].explanation);
       await block.getByRole("button",{name:"Try without feedback",exact:true}).click();
       await block.getByRole("radio",{name:q.options[q.answer].text,exact:true}).check();
-      await block.getByRole("button",{name:"Check answer",exact:true}).click();
+      await block.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
       await expect(block).toContainText(q.options[q.answer].explanation);
     }
-    await page.reload();await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+    await page.reload();await showAllPractice(page);
     for(const q of questions) await expect(page.locator(`#question-${q.id}`).getByRole("radio",{name:q.options[q.answer].text,exact:true})).toBeChecked();
   });
   test(`${id}: no JavaScript retains explanations, references and worked example`, async({browser,baseURL})=>{

@@ -27,9 +27,9 @@ test("Student finds one retinal-structure lesson, saves it and returns to the su
   await page.getByRole("link", { name: "Explore the layers", exact: true }).click();
   await expect(page.locator("#retinal-layers h2")).toBeInViewport();
   const save = page.getByRole("button", { name: `Save to My Study: ${lesson.title}`, exact: true });
-  await save.click(); await page.reload();
+  await save.click(); await page.reload();await showAllPractice(page);
   const saved = page.getByRole("button", { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true });
-  await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload(); await expect(save).toBeVisible();
+  await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload();await showAllPractice(page); await expect(save).toBeVisible();
   await page.getByRole("navigation", { name: "Breadcrumb" }).locator('a[href="/subjects/histology"]').click();
   await expect(page.getByRole("searchbox", { name: "Search resources", exact: true })).toBeVisible();
 });
@@ -119,16 +119,16 @@ test("Manual explanations have feedback without sending or retaining the student
     await expect(panel).toContainText("No automated essay score is assigned");
   }
   expect(posts).toEqual([]); expect(await page.evaluate(() => JSON.stringify([localStorage, sessionStorage]))).toBe(before);
-  await page.reload(); for (const activity of activities) await expect(page.locator(`#${activity.id}-draft`)).toHaveValue("");
+  await page.reload();await showAllPractice(page); for (const activity of activities) await expect(page.locator(`#${activity.id}-draft`)).toHaveValue("");
 });
 
 for (const question of questions) test(`Retina ${question.id}: all options explain their reasoning`, async ({ page }) => {
   expect(questions).toHaveLength(16); await page.goto(route); await showAllPractice(page);
   const panel = page.locator(`#question-${question.id}`);
-  await expect(panel.getByRole("button", { name: "Check answer", exact: true })).toBeDisabled();
+  await expect(panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeDisabled();
   for (const [i, option] of question.options.entries()) {
     await panel.getByRole("radio", { name: option.text, exact: true }).check();
-    await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+    await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(panel.locator("[data-feedback]")).toHaveAttribute("data-feedback", i === question.answer ? "correct" : "incorrect");
     await expect(panel).toContainText(option.explanation);
     await panel.getByRole("button", { name: "Try without feedback", exact: true }).click();

@@ -1,3 +1,5 @@
+import { sectionCheckpointItems } from "@/content/section-checkpoints";
+import { PracticeQuestion } from "./practice-question";
 import { AudiometryChartExplorer } from "./audiometry-chart-explorer";
 import { AudiometrySectionReferences } from "./audiometry-section-references";
 import { RetinalLayerExplorer } from "./retinal-layer-explorer";
@@ -191,7 +193,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
                   </summary>
                   {step.highlight && <p className="lesson-reasoning"><strong>{step.highlight}</strong></p>}
                   {step.body.split("\n\n").map((paragraph, i) => <p key={i}>{paragraph.startsWith("Try it:") ? <><strong>Try it:</strong>{paragraph.slice(7)}</> : paragraph}</p>)}
-                  {step.practice && <div className="lesson-reasoning"><p><strong>Apply this distinction:</strong> {step.practice.prompt}</p><details><summary>Check the reasoning</summary><p>{step.practice.feedback}</p></details></div>}
+                  {step.practice && <PracticeQuestion item={sectionCheckpointItems.find(item => item.id === `section-${lesson.id}-${index + 1}`)!} />}
                   <HistologySectionReferences lessonId={lesson.id} index={index} />
                   {lesson.id === "biophysics-practical-audiometry" && <AudiometrySectionReferences index={index} />}
                   {lesson.id === "pdh-tca" && <PdhSectionReferences index={index} />}

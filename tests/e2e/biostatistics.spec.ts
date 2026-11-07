@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import data from '../../src/content/library-lessons.json';
@@ -27,20 +28,20 @@ for (const lesson of lessons) {
     await expect(worked.locator('ol')).toBeVisible();
     const check = page.locator('#concept-check-title:visible');
     for (let i = 1; i >= 0; i--) {
-      await check.getByRole('radio', { name: lesson.question.options[i].text, exact: true }).check();
-      await check.getByRole('button', { name: 'Check answer', exact: true }).click();
+      await showAllPractice(page);await check.getByRole('radio', { name: lesson.question.options[i].text, exact: true }).check();
+      await check.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
       await expect(check).toContainText(lesson.question.options[i].reason);
       if (i > 0) await check.getByRole('button', { name: 'Try without feedback', exact: true }).click();
     }
-    await page.reload();
+    await page.reload();await showAllPractice(page);
     await expect(check.getByRole('radio', { name: lesson.question.options[0].text, exact: true })).toBeChecked();
     const save = page.getByRole('button', { name: `Save to My Study: ${lesson.title}`, exact: true });
     await save.click();
-    await page.reload();
+    await page.reload();await showAllPractice(page);
     const saved = page.getByRole('button', { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true });
     await expect(saved).toHaveAttribute('aria-pressed', 'true');
     await saved.click();
-    await page.reload();
+    await page.reload();await showAllPractice(page);
     await expect(save).toBeVisible();
     await expect(page.locator('#lesson-source a[href^="https://www.itl.nist.gov/"]')).toHaveCount(1);
     await expect(page.locator('main a[href="/study/biostatistics"], main a[href="/learn/foundations/biostatistics"]')).toHaveCount(0);

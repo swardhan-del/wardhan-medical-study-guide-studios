@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import path from '../../src/content/histology-guided-path.json';
@@ -48,12 +49,12 @@ test('Guided histology: canonical feedback and existing progress survive the rou
     await group.getByRole('link', { name: item.prompt, exact: true }).click();
     const question = page.locator(`#question-${id}`);
     const wrong = (item.answer! + 1) % item.options!.length;
-    await question.getByRole('radio', { name: item.options![wrong].text, exact: true }).check();
-    await question.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await showAllPractice(page);await question.getByRole('radio', { name: item.options![wrong].text, exact: true }).check();
+    await question.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(question).toContainText(item.options![wrong].explanation);
     await question.getByRole('button', { name: 'Try without feedback', exact: true }).click();
-    await question.getByRole('radio', { name: item.options![item.answer!].text, exact: true }).check();
-    await question.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await showAllPractice(page);await question.getByRole('radio', { name: item.options![item.answer!].text, exact: true }).check();
+    await question.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(question).toContainText(item.options![item.answer!].explanation);
     await page.getByRole('link', { name: 'Return to the guided histology path', exact: true }).click();
     await expect(page.locator('#histology-guided-path-title')).toBeVisible();
@@ -83,7 +84,7 @@ test('Guided histology: keyboard reasoning reveals, citations and existing notes
   await panel.getByRole('link', { name: 'Write your explanation in your lesson notes', exact: true }).click();
   const notes = page.locator('#oral-histology-foundations-tissues');
   await notes.fill('assay-reasoning-note: test specificity in the actual application.');
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   await expect(notes).toHaveValue('assay-reasoning-note: test specificity in the actual application.');
   expect(sent).toEqual([]);
 });

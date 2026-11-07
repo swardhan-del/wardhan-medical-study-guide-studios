@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import {createHash} from 'node:crypto';
@@ -25,7 +26,7 @@ test('Reproductive depth: specimen regions and local answer comparison',async({p
  await panel.getByRole('button',{name:'Hide region markers',exact:true}).click();await expect(panel.locator('[class*="markers"]')).toHaveCount(0);await panel.getByRole('button',{name:'Show region markers',exact:true}).click();
  await panel.locator('textarea').fill('temporary-reproductive-response: the tall lining differs from the small vascular profile.');await panel.getByRole('button',{name:'Compare with model reasoning',exact:true}).click();await expect(panel.getByRole('status')).toContainText(specimen.model);
  expect(await page.evaluate(()=>JSON.stringify(localStorage))).not.toContain('temporary-reproductive-response');expect(sent).toEqual([]);
- await panel.getByRole('button',{name:'Clear my response',exact:true}).click();await expect(panel.locator('textarea')).toHaveValue('');await panel.locator('textarea').fill('temporary-reproductive-response');await page.reload();await expect(panel.locator('textarea')).toHaveValue('');await panel.screenshot({path:info.outputPath('reproductive-specimen.png')});
+ await panel.getByRole('button',{name:'Clear my response',exact:true}).click();await expect(panel.locator('textarea')).toHaveValue('');await panel.locator('textarea').fill('temporary-reproductive-response');await page.reload();await showAllPractice(page);await expect(panel.locator('textarea')).toHaveValue('');await panel.screenshot({path:info.outputPath('reproductive-specimen.png')});
 });
 
 test('Reproductive depth: maps distinguish sequence from developmental contributors',async({page})=>{
@@ -37,9 +38,9 @@ test('Reproductive depth: maps distinguish sequence from developmental contribut
 });
 
 test('Reproductive depth: all 32 original questions explain choices and retain answers',async({page})=>{
- test.setTimeout(180000);await page.goto(route);await page.getByRole('button',{name:'Show all questions',exact:true}).click();const questions=practice.questions.filter(q=>q.id.startsWith('reproductive-depth-'));expect(questions).toHaveLength(32);
- for(const q of questions){const block=page.locator(`#question-${q.id}`);for(const [i,o] of q.options.entries()){if(i===q.answer)continue;await block.getByRole('radio',{name:o.text,exact:true}).check();await block.getByRole('button',{name:'Check answer',exact:true}).click();await expect(block).toContainText(o.explanation);await block.getByRole('button',{name:'Try without feedback',exact:true}).click();}await block.getByRole('radio',{name:q.options[q.answer].text,exact:true}).check();await block.getByRole('button',{name:'Check answer',exact:true}).click();await expect(block).toContainText(q.options[q.answer].explanation);}
- await page.reload();await page.getByRole('button',{name:'Show all questions',exact:true}).click();for(const q of questions)await expect(page.locator(`#question-${q.id}`).getByRole('radio',{name:q.options[q.answer].text,exact:true})).toBeChecked();
+ test.setTimeout(180000);await page.goto(route);await showAllPractice(page);const questions=practice.questions.filter(q=>q.id.startsWith('reproductive-depth-'));expect(questions).toHaveLength(32);
+ for(const q of questions){const block=page.locator(`#question-${q.id}`);for(const [i,o] of q.options.entries()){if(i===q.answer)continue;await showAllPractice(page);await block.getByRole('radio',{name:o.text,exact:true}).check();await block.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();await expect(block).toContainText(o.explanation);await block.getByRole('button',{name:'Try without feedback',exact:true}).click();}await showAllPractice(page);await block.getByRole('radio',{name:q.options[q.answer].text,exact:true}).check();await block.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();await expect(block).toContainText(q.options[q.answer].explanation);}
+ await page.reload();await showAllPractice(page);for(const q of questions)await expect(page.locator(`#question-${q.id}`).getByRole('radio',{name:q.options[q.answer].text,exact:true})).toBeChecked();
 });
 
 test('Reproductive depth: credited public image and actual download match cleared bytes',async({page,request})=>{

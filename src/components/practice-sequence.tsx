@@ -1,109 +1,102 @@
 "use client";
+import Link from "next/link";
+import { learningEvent } from "@/lib/learning-analytics";
 import { useEffect, useRef, useState } from "react";
 import type { PracticeItem } from "@/content/practice-registry";
+import { checkpointFor } from "@/lib/checkpoint-adapter";
+import { nextCheckpointIndex, reinforcementVariant, type CheckpointOutcome } from "@/lib/conceptual-checkpoint";
 import { PracticeQuestion } from "./practice-question";
-import { useLearning } from "./learning-store";
-
+import { useLearning, updateLearning } from "./learning-store";
 export type PracticeEntry = { item: PracticeItem; title?: string };
-
-export function PracticeSequence({ entries, title = "Lesson practice", freshAttempt = false }: {
-  entries: PracticeEntry[];
-  title?: string;
-  freshAttempt?: boolean;
-}) {
+type PracticeSequenceProps = { entries: PracticeEntry[]; title?: string; freshAttempt?: boolean; variants?: PracticeEntry[]; completionId?: string };
+export function PracticeSequence(props: PracticeSequenceProps) {
+  return <SequenceState key={props.entries.map(entry => entry.item.id).join("|")} {...props}/>;
+}
+function SequenceState({ entries, title = "Lesson practice", freshAttempt = false, variants = [], completionId }: PracticeSequenceProps) {
   const { ready, data } = useLearning();
-  const [index, setIndex] = useState(0);
-  const [showAll, setShowAll] = useState(false);
-  const [finished, setFinished] = useState(false);
-  const [round, setRound] = useState(0);
-  const [results, setResults] = useState<Record<string, boolean | null>>({});
-  const heading = useRef<HTMLHeadingElement>(null);
-  const focusRequested = useRef(false);
-  const freshRound = freshAttempt || round > 0;
-
+  const [index, setIndex] = useState(0), [showAll, setShowAll] = useState(false), [finished, setFinished] = useState(false), [round, setRound] = useState(0);
+  const [results, setResults] = useState<Record<string, CheckpointOutcome>>({});
+  const [extra, setExtra] = useState<PracticeEntry[]>([]);
+  const [previousId, setPreviousId] = useState<string | null>(null);
+  const initialized = useRef(false), heading = useRef<HTMLHeadingElement>(null);
+  const focusFeedback = useRef(false), counted = useRef(false);
+  const region = useRef<HTMLElement>(null);
+  const fresh = freshAttempt || round > 0;
+  const queue = [...entries, ...extra];
+  function outcome(item: PracticeItem): CheckpointOutcome | undefined {
+    return results[item.id] ?? (!fresh && ready ? data.checkpoints[item.id]?.outcome ?? (typeof data.answers[item.id]?.lastChoice === "number" ? data.answers[item.id].lastCorrect ? "correct" : "incorrect" : undefined) : undefined);
+  }
   useEffect(() => {
-    // Preserve existing question/activity fragments, including links from My Study.
-    function followFragment() {
+    if (!ready || initialized.current) return;
+    initialized.current = true;
+    const fragment = window.location.hash.slice(1);
+    const linked = entries.findIndex(({ item }) => fragment === `question-${item.id}` || (fragment && item.href.split("#")[1] === fragment));
+    const done = !freshAttempt ? entries.filter(({ item }) => data.checkpoints[item.id] || typeof data.answers[item.id]?.lastChoice === "number").map(({ item }) => item.id) : [];
+    const restoredVariants = !freshAttempt ? variants.filter(({ item: candidate }) => entries.some(({ item }) => data.checkpoints[item.id]?.outcome === "incorrect" && checkpointFor(item)?.variants?.includes(candidate.id))) : [];
+    queueMicrotask(() => {
+    setExtra(restoredVariants);
+    const all = [...entries, ...restoredVariants];
+    for (const { item } of restoredVariants) if (data.checkpoints[item.id]) done.push(item.id);
+    const first = nextCheckpointIndex(all.map(e => e.item.id), done, -1);
+    setIndex(linked >= 0 ? linked : first >= 0 ? first : 0);
+    setFinished(linked < 0 && first < 0);
+    if (linked >= 0) requestAnimationFrame(() => heading.current?.focus());
+    if (done.length) setPreviousId(done.at(-1)!);
+    });
+  }, [ready, data, entries, freshAttempt, variants]);
+  useEffect(() => {
+    function follow() {
       const fragment = window.location.hash.slice(1);
-      if (!fragment || fragment === "concept-check-title") return;
-      const target = entries.findIndex(({ item }) =>
-        fragment === `question-${item.id}` || item.href.split("#")[1] === fragment);
-      if (target >= 0) {
-        setIndex(target);
-        setFinished(false);
-        // The heading remains mounted even when the target is already active.
-        heading.current?.focus({ preventScroll: true });
-        heading.current?.scrollIntoView({ block: "start", behavior: "instant" });
-      }
+      const linked = entries.findIndex(({ item }) => fragment === `question-${item.id}` || (fragment && item.href.split("#")[1] === fragment));
+      if (linked >= 0) { setIndex(linked); setFinished(false); setShowAll(false); requestAnimationFrame(() => heading.current?.focus()); }
     }
-    followFragment();
-    window.addEventListener("hashchange", followFragment);
-    return () => window.removeEventListener("hashchange", followFragment);
+    window.addEventListener("hashchange", follow);
+    return () => window.removeEventListener("hashchange", follow);
   }, [entries]);
-
   useEffect(() => {
-    if (!focusRequested.current) return;
-    heading.current?.focus({ preventScroll: true });
-    heading.current?.scrollIntoView({ block: "start", behavior: "instant" });
-    focusRequested.current = false;
-  }, [index, finished, round]);
-
-  function resultFor(item: PracticeItem): boolean | null {
-    if (Object.hasOwn(results, item.id)) return results[item.id];
-    if (freshRound || !ready) return null;
-    const saved = data.answers[item.id];
-    return saved && typeof saved.lastChoice === "number" && saved.lastChoice >= 0 && saved.lastChoice < (item.options?.length ?? 0)
-      ? saved.lastCorrect : null;
+    if (!focusFeedback.current || !previousId) return;
+    const feedback = region.current?.querySelector<HTMLElement>(`#question-${previousId} [data-feedback] h4`);
+    if (feedback) { feedback.focus({ preventScroll: true }); feedback.scrollIntoView({ block: "nearest", behavior: "instant" }); }
+    focusFeedback.current = false;
+  }, [results, previousId, index, finished]);
+  if (!queue.length) return null;
+  const outcomes = queue.map(({ item }) => outcome(item));
+  const checked = outcomes.filter(Boolean).length;
+  const missed = queue.filter(({ item }) => outcome(item) === "incorrect" || data.checkpoints[item.id]?.selfAssessment === "review");
+  function complete(item: PracticeItem, result: CheckpointOutcome) {
+    const updated = { ...results, [item.id]: result };
+    focusFeedback.current = true;
+    setResults(updated); setPreviousId(item.id);
+    const done = queue.filter(({ item: q }) => updated[q.id] || outcome(q)).map(({ item: q }) => q.id);
+    let nextQueue = queue;
+    const definition = checkpointFor(item);
+    if (result === "incorrect" && definition) {
+      const id = reinforcementVariant(definition, variants.map(e => e.item.id), done, queue.map(e => e.item.id));
+      const variant = variants.find(e => e.item.id === id);
+      if (variant) { setExtra([...extra, variant]); nextQueue = [...queue, variant]; }
+    }
+    const next = nextCheckpointIndex(nextQueue.map(e => e.item.id), done, index);
+    if (next < 0 && completionId && !counted.current) { counted.current = true; updateLearning(s => ({ ...s, quizzes: s.quizzes + 1 })); learningEvent({ version: 1, event: "quiz_completed", quiz_id: completionId }); }
+    if (!showAll) { setFinished(next < 0); if (next >= 0) setIndex(next); }
+    // The post-render effect focuses the retained explanation, never an offscreen heading.
   }
-  function move(next: number) {
-    focusRequested.current = true;
-    setIndex(next);
-    setFinished(false);
-  }
-  function restart() {
-    focusRequested.current = true;
-    setRound(round + 1);
-    setResults({});
-    setIndex(0);
-    setShowAll(false);
-    setFinished(false);
-  }
-
-  if (!entries.length) return null;
-  const active = entries[index] ?? entries[0];
-  const outcomes = entries.map(({ item }) => resultFor(item));
-  const correct = outcomes.filter(value => value === true).length;
-  const incorrect = outcomes.filter(value => value === false).length;
-  const checked = correct + incorrect;
-  const contextual = !active.item.options || active.item.answer === undefined;
-  return <section className="practice-sequence" aria-label={`${title} sequence`}>
+  return <section ref={region} className="practice-sequence" aria-label={`${title} sequence`}>
+    <noscript><style>{".practice-sequence [data-sequence-question][hidden] { display: block !important; }"}</style><p>All checkpoint models are available below for reading without interactive grading.</p></noscript>
     <h3 ref={heading} tabIndex={-1}>{finished ? `${title}: results` : `${title}: ${showAll ? "all questions" : `question ${index + 1}`}`}</h3>
-    <div className="quiz-position">
-      <p aria-live="polite">{finished ? `${checked} of ${entries.length} questions checked` : showAll ? `All ${entries.length} questions` : `Question ${index + 1} of ${entries.length}`}</p>
-      <progress aria-label={`${title}: questions checked`} value={checked} max={entries.length} />
-    </div>
-    <p className="muted-note">Check an answer, read why it is right or wrong, then continue. {freshRound ? "This is a fresh practice round; previous history is preserved." : "Saved checked answers are restored; use “Try this set again” for a fresh round."}</p>
-    {!finished ? <div className="action-row">
-      <button className="button button-secondary" disabled={!ready} aria-pressed={showAll} onClick={() => setShowAll(!showAll)}>{showAll ? "Show one question at a time" : "Show all questions"}</button>
-      {showAll ? <button className="button button-secondary" disabled={!ready} onClick={() => { focusRequested.current = true; setFinished(true); }}>See my results</button> : null}
-    </div> : null}
-    {entries.map(({ item, title: questionTitle }, position) => <div key={`${round}-${item.id}`} hidden={finished || (!showAll && position !== index)} data-sequence-question={item.id}>
-      <PracticeQuestion item={item} title={questionTitle} freshAttempt={freshRound} onAnswerState={value => setResults(previous => ({ ...previous, [item.id]: value }))} />
-    </div>)}
-    {!finished && !showAll ? <nav className="action-row" aria-label={`${title}: question navigation`}>
-      <button className="button button-secondary" disabled={index === 0} onClick={() => move(index - 1)}>Previous question</button>
-      <button className="button button-primary" disabled={!ready || (!contextual && resultFor(active.item) === null)} onClick={() => {
-        if (index < entries.length - 1) move(index + 1);
-        else { focusRequested.current = true; setFinished(true); }
-      }}>{index === entries.length - 1 ? "See my results" : "Next question"}</button>
-      {!contextual && resultFor(active.item) === null ? <p className="muted-note">Check this answer to continue.</p> : null}
-    </nav> : null}
-    {finished ? <div className="study-panel practice-results" role="status">
-      <h4>Your next step</h4>
-      <ul><li>{correct} correct</li><li>{incorrect} incorrect — revisit these explanations</li><li>{entries.length - checked} not checked</li></ul>
-      <p>These are {freshRound ? "this round’s" : "your latest saved"} checked answers, not a measure of mastery or exam readiness. First-attempt history stays unchanged when you retry.</p>
-      {entries.map(({ item }, position) => outcomes[position] === false ? <p key={item.id}><button className="text-link" onClick={() => move(position)}>Review question {position + 1}: {item.prompt}</button></p> : null)}
-      <div className="action-row"><button className="button button-primary" onClick={restart}>Try this set again</button><button className="button button-secondary" onClick={() => move(0)}>Review this set</button></div>
-    </div> : null}
+    <div className="quiz-position"><p aria-live="polite">{finished ? `${checked} of ${queue.length} checkpoints reviewed` : `Question ${index + 1} of ${queue.length}`}. Previous feedback remains available below.</p><progress aria-label={`${title}: questions checked`} value={checked} max={queue.length}/></div>
+    <p className="muted-note">Check once to see the explanation and open the next checkpoint. Written explanations use self-assessment. A completed practice set does not certify complete subject coverage or mastery.</p>
+    <button className="button button-secondary" aria-pressed={showAll} disabled={!ready} onClick={() => { setShowAll(!showAll); setFinished(false); }}>{showAll ? "Show one question at a time" : "Show all questions"}</button>
+    {queue.map(({ item, title: label }, position) => {
+      const active = !finished && position === index;
+      const previous = item.id === previousId && !active;
+      const reviewed = !!outcome(item);
+      return <div key={`${round}-${item.id}`} hidden={!showAll && !active && !previous && !(finished && reviewed)} data-sequence-question={item.id} data-active-checkpoint={active ? "true" : undefined}>
+        {previous && <h4>Previous checkpoint — keep the relationship in view</h4>}
+        <PracticeQuestion item={item} title={label} freshAttempt={fresh} feedbackOnly={!showAll && !active && reviewed} onReset={() => { setIndex(position); setFinished(false); }} onComplete={evaluation => complete(item, evaluation.outcome)}/>
+      </div>;
+    })}
+    {!finished && !showAll && !checkpointFor(queue[index].item) && <button className="button button-secondary" onClick={() => { if (index + 1 < queue.length) setIndex(index + 1); else setFinished(true); }}>Continue reading (activity remains unassessed)</button>}
+    <details><summary>Checkpoint history and navigation</summary><ol>{queue.map(({ item }, position) => <li key={item.id}><button className="text-link" onClick={() => { setIndex(position); setFinished(false); }}>{position + 1}. {item.prompt}</button> — {outcome(item)?.replaceAll("-", " ") ?? "not checked"}</li>)}</ol><button className="button button-secondary" onClick={() => setFinished(true)}>See my results</button></details>
+    {finished && <div className="study-panel practice-results"><h4>Your next step</h4><ul><li>{outcomes.filter(o => o === "correct").length} correct</li><li>{outcomes.filter(o => o === "incorrect").length} incorrect — review the relationship</li><li>{outcomes.filter(o => o === "self-review" || o === "unassessed").length} model comparisons, without an objective score</li><li>{queue.length - checked} not checked</li></ul>{missed.map(({ item }) => <p key={item.id}><button className="text-link" onClick={() => { setIndex(queue.findIndex(e => e.item.id === item.id)); setFinished(false); }}>Review: {item.prompt}</button>{(data.checkpoints[item.id]?.misses ?? 0) >= 2 ? " — this relationship has needed review more than once" : ""}</p>)}<p>Reinforcement uses a different, explicitly linked example where one is available. Relationships without a verified variant stay on your review list.</p><Link className="button button-secondary" href="/study">My Study</Link><button className="button button-primary" onClick={() => { counted.current = false; setRound(round + 1); setResults({}); setExtra([]); setPreviousId(null); setIndex(0); setFinished(false); setShowAll(false); }}>Try this set again</button></div>}
   </section>;
 }

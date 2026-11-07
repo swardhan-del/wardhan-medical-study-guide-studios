@@ -1,3 +1,4 @@
+import { renalChallengeIds, renalQuestions } from "../../src/content/renal-course";
 import { test, expect } from "@playwright/test";
 import taxonomy from "../../src/content/library-taxonomy.json";
 import catalog from "../../src/content/public-catalog.json";
@@ -72,32 +73,25 @@ test("every anatomy topic opens its own page with working source references", as
     }
   }
 });
-test("anatomy recall supports correction and keeps answers when changing topics", async ({
-  page,
-}) => {
+test("anatomy recall advances with retained feedback and preserves corrections", async ({ page }) => {
   await page.goto("/subjects/anatomy/thorax?topic=mediastinum");
-  const panel = page.locator(".lesson-panel:visible");
-  await expect(
-    panel.getByRole("button", { name: "Check answer" }),
-  ).toBeDisabled();
+  const panel = page.locator("#lesson-mediastinum");
+  await expect(panel.getByRole("button", { name: "Check Answer and Continue →" })).toBeDisabled();
   await panel.getByRole("radio", { name: "Jugular notch", exact: true }).check();
-  await panel.getByRole("button", { name: "Check answer" }).click();
-  await expect(panel.getByRole("status")).toContainText("Try again.");
-  await panel
-    .getByRole("radio", { name: "Sternal angle", exact: true })
-    .check();
-  await panel.getByRole("button", { name: "Check answer" }).click();
-  await expect(panel.getByRole("status")).toContainText("Correct.");
-  await expect(page.locator(".learning-progress:visible")).toContainText("1 of 15");
-  await page.getByRole("button", { name: "Next topic" }).click();
-  await expect(
-    panel.getByRole("heading", { name: "Pleura & pleural cavity" }),
-  ).toBeVisible();
+  await panel.getByRole("button", { name: "Check Answer and Continue →" }).click();
+  await expect(page.locator("#lesson-pleura")).toBeVisible();
+  await expect(page.locator(".lesson-workspace > [data-feedback]")).toContainText("Review the Relationship");
   await page.getByRole("button", { name: "Previous topic" }).click();
-  await expect(
-    panel.getByRole("radio", { name: "Sternal angle", exact: true }),
-  ).toBeChecked();
-  await expect(panel.getByRole("status")).toContainText("Correct.");
+  await panel.getByRole("button", { name: "Try without feedback", exact: true }).click();
+  await panel.getByRole("radio", { name: "Sternal angle", exact: true }).check();
+  await panel.getByRole("button", { name: "Check Answer and Continue →" }).click();
+  await expect(page.locator("#lesson-pleura")).toBeVisible();
+  await expect(page.locator(".learning-progress:visible")).toContainText("1 of 15");
+  await page.getByRole("button", { name: "Previous topic" }).click();
+  await expect(panel.getByRole("radio", { name: "Sternal angle", exact: true })).toBeChecked();
+  await expect(panel.getByRole("status")).toContainText("Correct");
+  await page.reload();
+  await expect(panel.getByRole("radio", { name: "Sternal angle", exact: true })).toBeChecked();
   await panel.getByRole("link", { name: /^Source:/ }).click();
   await expect(page).toHaveURL(/#source-volume-i$/);
 });
@@ -225,26 +219,19 @@ test("challenge saves mistakes, produces a next step and supports review after r
   const quiz = page.getByRole("region", {
     name: "Your five-minute renal challenge",
   });
-  await expect(
-    quiz.getByRole("button", { name: "Check answer" }),
-  ).toBeDisabled();
-  for (let i = 0; i < 5; i++) {
-    await quiz
-      .getByRole("radio")
-      .nth(i === 2 ? 1 : 0)
-      .check();
-    await quiz.getByRole("button", { name: "Check answer" }).click();
-    await expect(quiz.getByRole("status")).toContainText("Correct answer:");
-    await expect(quiz.getByRole("status")).toContainText("Why not");
-    await quiz
-      .getByRole("button", {
-        name: i === 4 ? "See my results" : "Next question",
-      })
-      .click();
+  await expect(quiz.getByRole("button", { name: "Check Answer and Continue →" })).toBeDisabled();
+  for (const id of renalChallengeIds) {
+    const q = renalQuestions.find(item => item.id === id)!;
+    const wrong = (q.answer + 1) % q.options.length;
+    const block = quiz.locator(`#question-${id}`);
+    await block.getByRole("radio", { name: q.options[wrong].text, exact: true }).check();
+    await block.getByRole("button", { name: "Check Answer and Continue →" }).click();
+    await expect(block.getByRole("status")).toContainText("Review the Relationship");
+    await expect(block.getByRole("status")).toContainText(q.options[wrong].explanation);
   }
-  await expect(
-    quiz.getByRole("heading", { name: "Here is your next step." }),
-  ).toBeVisible();
+  await expect(quiz.getByRole("heading", { name: "Your next step", exact: true })).toBeVisible();
+  await expect(quiz.getByRole("progressbar")).toHaveAttribute("max", "5");
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("wardhan-learning:v1")!).quizzes)).toBe(1);
   await quiz.getByRole("link", { name: "My Study" }).click();
   await expect(
     page.getByRole("button", { name: "Review my mistakes (5)" }),
@@ -253,8 +240,8 @@ test("challenge saves mistakes, produces a next step and supports review after r
   await page.getByRole("button", { name: "Review my mistakes (5)" }).click();
   const review = page.getByRole("region", { name: "Your review session", exact: true });
   await review.getByRole("radio", { name: "50 mg/min", exact: true }).check();
-  await review.getByRole("button", { name: "Check answer" }).click();
-  await expect(review.getByRole("status")).toContainText("Correct.");
+  await review.getByRole("button", { name: "Check Answer and Continue →" }).click();
+  await expect(review.getByRole("status")).toContainText("Correct");
   await expect(
     page.getByRole("button", { name: "Review my mistakes (4)" }),
   ).toBeEnabled();
@@ -288,9 +275,9 @@ test("lesson completion persists and invalid or unavailable storage does not bre
   });
   await page.goto("/practice/renal-challenge");
   await page.getByRole("radio").first().check();
-  await page.getByRole("button", { name: "Check answer" }).click();
-  await expect(page.getByText(/Browser storage is unavailable/)).toBeVisible();
-  await expect(page.locator(".answer-explanation")).toBeVisible();
+  await page.getByRole("button", { name: "Check Answer and Continue →" }).click();
+  await expect(page.getByText(/Storage is unavailable/).first()).toBeVisible();
+  await expect(page.locator(".concept-feedback:visible")).toBeVisible();
 });
 test("models respond, ABG reasoning corrects mistakes and reset restores baseline", async ({
   page,
@@ -470,14 +457,14 @@ test("new lesson supports explained correction, oral recall, related pages and s
     layerSection.getByText(/Pseudostratified epithelium can show nuclei at several heights/),
   ).toBeVisible();
   await expect(
-    check.getByRole("button", { name: "Check answer", exact: true }),
+    check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }),
   ).toBeDisabled();
   await check.getByRole("radio", { name: "All nuclei are at the same height", exact: true }).check();
-  await check.getByRole("button", { name: "Check answer", exact: true }).click();
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(check.locator(".concept-feedback")).toContainText(
-    "Review the distinction.",
+    "Review the Relationship",
   );
-  await expect(check.locator(".concept-feedback")).toContainText("Why not");
+  await expect(check.locator(".concept-feedback")).toContainText("Different nuclear heights create its layered appearance.");
   await check.getByRole("button", { name: "Try without feedback" }).click();
   await check
     .getByRole("radio", {
@@ -485,8 +472,8 @@ test("new lesson supports explained correction, oral recall, related pages and s
       exact: true,
     })
     .check();
-  await check.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(check.locator(".concept-feedback > p").first()).toHaveText("Correct.");
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(check.locator(".concept-feedback h4")).toHaveText("Correct — You understand the relationship.");
   await page.getByText("Reveal a model answer", { exact: true }).click();
   await expect(
     page.getByRole("region", { name: "Oral Examination Prompts" }).getByText(/Alveoli need a short diffusion distance/),

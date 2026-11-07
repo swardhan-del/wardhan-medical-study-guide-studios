@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import data from "../../src/content/library-lessons.json";
@@ -47,37 +48,37 @@ test("case-control: explained questions preserve answers and existing student wo
   const old=data.lessons.find(l=>l.id==='standard-deviation-standard-error')!;
   await page.goto('/library/'+old.id);
   const oldQuestion=page.locator('#question-concept-'+old.id);
-  await oldQuestion.getByRole('radio',{name:old.question.options[0].text,exact:true}).check();
-  await oldQuestion.getByRole('button',{name:'Check answer',exact:true}).click();
+  await showAllPractice(page);await oldQuestion.getByRole('radio',{name:old.question.options[0].text,exact:true}).check();
+  await oldQuestion.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();
   const before=await page.evaluate(()=>JSON.parse(localStorage.getItem('wardhan-learning:v1')!).answers['concept-standard-deviation-standard-error']);
   await page.goto(`/library/${id}`);
   const main=page.locator('#question-concept-'+id);
-  await main.getByRole('radio',{name:lesson.question.options[0].text,exact:true}).check();
-  await main.getByRole('button',{name:'Check answer',exact:true}).click();
+  await showAllPractice(page);await main.getByRole('radio',{name:lesson.question.options[0].text,exact:true}).check();
+  await main.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();
   await expect(main).toContainText(lesson.question.options[0].reason);
   for(const q of questions){
     await page.goto(q.href);const block=page.locator('#question-'+q.id);
     const wrong=(q.answer+1)%q.options.length;
-    await block.getByRole('radio',{name:q.options[wrong].text,exact:true}).check();
-    await block.getByRole('button',{name:'Check answer',exact:true}).click();await expect(block).toContainText(q.options[wrong].explanation);
+    await showAllPractice(page);await block.getByRole('radio',{name:q.options[wrong].text,exact:true}).check();
+    await block.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();await expect(block).toContainText(q.options[wrong].explanation);
     await block.getByRole('button',{name:'Try without feedback',exact:true}).click();
-    await block.getByRole('radio',{name:q.options[q.answer].text,exact:true}).check();
-    await block.getByRole('button',{name:'Check answer',exact:true}).click();await expect(block).toContainText(q.options[q.answer].explanation);
+    await showAllPractice(page);await block.getByRole('radio',{name:q.options[q.answer].text,exact:true}).check();
+    await block.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();await expect(block).toContainText(q.options[q.answer].explanation);
   }
-  await page.reload();await page.getByRole('button',{name:'Show all questions',exact:true}).click();
-  await expect(page.locator('.practice-question:visible')).toHaveCount(6);
+  await page.reload();await showAllPractice(page);
+  await expect(page.locator('.practice-question:visible:has(input[type=radio])')).toHaveCount(6);
   for(const q of questions)await expect(page.locator('#question-'+q.id).getByRole('radio',{name:q.options[q.answer].text,exact:true})).toBeChecked();
   await page.goto('/library/'+old.id);expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('wardhan-learning:v1')!).answers['concept-standard-deviation-standard-error'])).toEqual(before);
 });
 
 test("case-control: keyboard, mobile enlarged text, sources, reading list and boundaries",async({page})=>{
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/library/'+id);
-  const save=page.getByRole('button',{name:'Save to My Study: '+lesson.title,exact:true});await save.click();await page.reload();
-  const saved=page.getByRole('button',{name:'Saved to My Study: '+lesson.title+' (remove from saved resources)',exact:true});await expect(saved).toHaveAttribute('aria-pressed','true');await saved.click();await page.reload();await expect(save).toBeVisible();
+  const save=page.getByRole('button',{name:'Save to My Study: '+lesson.title,exact:true});await save.click();await page.reload();await showAllPractice(page);
+  const saved=page.getByRole('button',{name:'Saved to My Study: '+lesson.title+' (remove from saved resources)',exact:true});await expect(saved).toHaveAttribute('aria-pressed','true');await saved.click();await page.reload();await showAllPractice(page);await expect(save).toBeVisible();
   const explanation=page.locator('.case-control-explorer details');await explanation.locator('summary').focus();await page.keyboard.press('Enter');await expect(explanation).toHaveAttribute('open','');
   await expect(page.locator('#lesson-source a[href="https://www.cdc.gov/field-epi-manual/php/chapters/analyze-interpret-data.html"]')).toHaveCount(1);
   await expect(page.locator('#lesson-source a[href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10502767/"]')).toHaveCount(1);
-  await page.getByRole('button',{name:'Show all questions',exact:true}).click();expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
+  await showAllPractice(page);expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
   await page.setViewportSize({width:320,height:844});await page.evaluate(()=>document.documentElement.style.fontSize='200%');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   expect(await page.locator('.case-control-explorer dt,.case-control-explorer dd').evaluateAll(xs=>xs.every(x=>x.scrollWidth<=x.clientWidth))).toBe(true);

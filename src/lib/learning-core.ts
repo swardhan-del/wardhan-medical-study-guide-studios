@@ -1,3 +1,4 @@
+import type { CheckpointRecord } from "./conceptual-checkpoint.ts";
 export type Attempt = {
   attempts: number;
   correct: number;
@@ -13,6 +14,7 @@ export type LearningProgress = {
   version: 2;
   lessons: string[];
   answers: Record<string, Attempt>;
+  checkpoints: Record<string, CheckpointRecord>;
   drafts: Record<string, string>;
   visits: string[];
   quizzes: number;
@@ -26,6 +28,7 @@ export const emptyProgress = (): LearningProgress => ({
   version: 2,
   lessons: [],
   answers: {},
+  checkpoints: {},
   drafts: {},
   visits: [],
   quizzes: 0,
@@ -96,6 +99,14 @@ export function parseProgress(
       if (typeof value.drafts?.[id] === "string" && value.drafts[id].length <= 5000) clean.drafts[id] = value.drafts[id];
     }
     for (const id of questions) {
+      const c = value.checkpoints?.[id];
+      if (c && ["correct", "incorrect", "self-review", "unassessed"].includes(c.outcome) && finiteInt(c.at, 8640000000000000) && finiteInt(c.submissions) && c.submissions > 0 && finiteInt(c.misses) && c.misses <= c.submissions && typeof c.concept === "string" && /^[a-z0-9-]{1,160}$/.test(c.concept)) {
+        let response: CheckpointRecord["response"] = null;
+        if (finiteInt(c.response, 100)) response = c.response;
+        else if (Array.isArray(c.response) && c.response.length <= 100 && new Set(c.response).size === c.response.length && c.response.every((n: unknown) => finiteInt(n, 100))) response = c.response;
+        else if (c.response && typeof c.response.value === "string" && /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?$/i.test(c.response.value.trim()) && c.response.value.length <= 40 && typeof c.response.unit === "string" && c.response.unit.length <= 30 && Number.isFinite(Number(c.response.value))) response = { value: c.response.value.trim(), unit: c.response.unit };
+        clean.checkpoints[id] = { outcome: c.outcome, response, at: c.at, submissions: c.submissions, misses: c.misses, concept: c.concept, ...(["review", "explained"].includes(c.selfAssessment) ? { selfAssessment: c.selfAssessment } : {}) };
+      }
       const a = value.answers?.[id];
       if (
         a &&

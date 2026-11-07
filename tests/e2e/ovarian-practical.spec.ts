@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { createHash } from 'node:crypto';
@@ -58,7 +59,7 @@ test('Ovarian practical: independent specimen controls, keyboard and temporary a
   await page.locator('section[aria-labelledby="ovary-small-follicle-specimen-title"]').getByRole('button', { name: 'Clear my response', exact: true }).click();
   await expect(first).toHaveValue('');
   await expect(page.locator('#ovary-cumulus-complex-specimen-response')).not.toHaveValue('');
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   for (const e of examples) await expect(page.locator(`#${e.scope}-specimen-response`)).toHaveValue('');
 });
 
@@ -84,7 +85,7 @@ test('Ovarian practical: development stages expose usable explanations without J
 
 test('Ovarian practical: every applied option gives feedback and answers persist', async ({ page }) => {
   test.setTimeout(180000); await page.goto(route);
-  await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
+  await showAllPractice(page);
   const applied = practice.questions.filter(q => q.topic === 'ovarian-histology-and-development');
   expect(applied).toHaveLength(24);
   const questions = [{ id: `concept-${lesson.id}`, prompt: lesson.question.prompt, answer: lesson.question.answer, options: lesson.question.options.map(o => ({ text: o.text, explanation: o.reason })) }, ...applied];
@@ -96,16 +97,16 @@ test('Ovarian practical: every applied option gives feedback and answers persist
     const block = page.locator(`#question-${q.id}`);
     for (const [i, option] of q.options.entries()) {
       if (i === q.answer) continue;
-      await block.getByRole('radio', { name: option.text, exact: true }).check();
-      await block.getByRole('button', { name: 'Check answer', exact: true }).click();
+      await showAllPractice(page);await block.getByRole('radio', { name: option.text, exact: true }).check();
+      await block.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
       await expect(block).toContainText(option.explanation);
       await block.getByRole('button', { name: 'Try without feedback', exact: true }).click();
     }
-    await block.getByRole('radio', { name: q.options[q.answer].text, exact: true }).check();
-    await block.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await showAllPractice(page);await block.getByRole('radio', { name: q.options[q.answer].text, exact: true }).check();
+    await block.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(block).toContainText(q.options[q.answer].explanation);
   }
-  await page.reload(); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
+  await page.reload();await showAllPractice(page); await showAllPractice(page);
   for (const q of questions) await expect(page.locator(`#question-${q.id}`).getByRole('radio', { name: q.options[q.answer].text, exact: true })).toBeChecked();
 });
 
@@ -136,7 +137,7 @@ test('Ovarian practical: accessibility, 320px text enlargement and image failure
     await panel.scrollIntoViewIfNeeded(); await page.screenshot({ path: info.outputPath(`${e.scope}-320-enlarged.png`) });
   }
   for (const e of examples) await page.route(`**/${e.asset}.jpg`, r => r.abort());
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   for (const e of examples) {const panel=page.locator(`section[aria-labelledby="${e.scope}-specimen-title"]`);await panel.scrollIntoViewIfNeeded();await expect(panel.getByRole('status')).toContainText('specimen image could not load');}
 });
 
@@ -146,7 +147,7 @@ test('Ovarian practical: discover, save, return and print in its single course h
   await expect(card).toHaveCount(1); await card.getByRole('link', { name: 'Read lesson', exact: true }).click();
   await expect(page.locator('h1')).toHaveText(lesson.title);
   const save = page.getByRole('button', { name: `Save to My Study: ${lesson.title}`, exact: true });
-  await save.click(); await page.reload();
+  await save.click(); await page.reload();await showAllPractice(page);
   await page.getByRole('button', { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true }).click();
   await expect(save).toBeVisible();
   await page.getByRole('navigation', { name: 'Breadcrumb' }).locator('a[href="/subjects/histology"]').click();

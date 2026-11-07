@@ -1,3 +1,5 @@
+import { anatomyCheckpointItems } from "@/content/section-checkpoints";
+import { PracticeSequence } from "./practice-sequence";
 import Link from "next/link";
 import data from "@/content/anatomy-course.json";
 import { studyGroups, studyLessons } from "@/lib/study-collections";
@@ -42,6 +44,6 @@ export function AnatomyPractice({ lessonId }: { lessonId: string }) {
   return <section className="study-panel" aria-labelledby="anatomy-practice-heading">
     <h2 id="anatomy-practice-heading">Four more ways to test your understanding</h2>
     <p>Answer before revealing the explanation. These four explained tasks complement the main concept check. Some lessons also offer additional application questions.</p>
-    {record.practice.map((q,i) => <div key={q.id} className="anatomy-practice-item"><h3>{i+2}. {q.kind === "Relationship recall" ? "Explain anatomical relationships" : q.kind}</h3><p>{q.prompt}</p><details><summary>Reveal explanation for item {i+2}</summary>{q.answer.split("\n\n").map((p,j) => <p key={j}>{p}</p>)}</details></div>)}
+    <PracticeSequence title="Anatomical reasoning" entries={anatomyCheckpointItems.filter(item => item.topic === lessonId).map(item => ({ item }))}/>
   </section>;
 }

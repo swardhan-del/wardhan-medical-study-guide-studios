@@ -1,0 +1,205 @@
+[
+  {
+    "type": "multiple",
+    "prompt": "A person faces you in anatomical position. Select every valid relationship.",
+    "options": [
+      {
+        "text": "Their right is on your left.",
+        "explanation": "Right and left name the subject’s sides. Facing the subject reverses their position on your visual field."
+      },
+      {
+        "text": "The wrist is distal to the elbow.",
+        "explanation": "Distal describes distance along the limb away from its attachment; the wrist is farther along than the elbow."
+      },
+      {
+        "text": "Anterior means whichever surface faces the observer.",
+        "explanation": "Anterior is anchored to anatomical position. Moving the observer does not rename a body surface."
+      }
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "mechanism": "Anatomical directions retain a shared reference when the observer or limb position changes.",
+    "id": "universal-anatomy-directions",
+    "metadata": {
+      "subject": "anatomy",
+      "lesson": "anatomy-foundations",
+      "topic": "Anatomy Foundations: Position, Planes and Organisation",
+      "subtopic": "Directions use the subject as reference",
+      "concept": "universal-anatomy-directions",
+      "difficulty": "applied",
+      "prerequisites": [],
+      "sources": [
+        {
+          "title": "OpenStax Anatomy and Physiology 2e",
+          "locator": "Anatomy and Physiology 2e: sections 1.6 (position, directions, planes and cavities), 1.2 (levels of organisation), 4.1 (tissues and membranes), 22.2 (pleura) and 23.4 (stomach wall).",
+          "basis": "supplemental-reference-based"
+        },
+        {
+          "title": "OpenStax 1.6: Anatomical Terminology",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
+          "basis": "supplemental-reference-based"
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean",
+    "prompt": "After one complete round of semiconservative replication, each daughter DNA duplex contains one parental strand and one newly synthesised strand. Is this statement true?",
+    "options": [
+      {
+        "text": "True",
+        "explanation": "Each separated parental strand serves as a template for a complementary new strand."
+      },
+      {
+        "text": "False",
+        "explanation": "Keeping both parental strands together would describe the conservative model, not the semiconservative model taught here."
+      }
+    ],
+    "answer": 0,
+    "mechanism": "Complementary base pairing allows each parental strand to template a partner while preserving one parental strand in each daughter duplex.",
+    "id": "universal-dna-semiconservative",
+    "metadata": {
+      "subject": "cell-biology",
+      "lesson": "dna-replication",
+      "topic": "DNA replication and strand direction",
+      "subtopic": "Track parental and newly synthesised strands",
+      "concept": "universal-dna-semiconservative",
+      "difficulty": "applied",
+      "prerequisites": [],
+      "sources": [
+        {
+          "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+          "locator": "Topics 5–6: semiconservative replication and replication enzymes",
+          "basis": "study-guide-based"
+        },
+        {
+          "title": "OpenStax Biology 2e: Basics of DNA Replication",
+          "url": "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication",
+          "locator": "Section 14.3: conservative, semiconservative and dispersive models",
+          "basis": "supplemental-reference-based"
+        }
+      ]
+    }
+  },
+  {
+    "type": "short",
+    "prompt": "Name the H&E stain associated with blue-purple staining of nucleic-acid-rich structures. Give the stain name, rather than inferring an organ.",
+    "accepted": [
+      "hematoxylin",
+      "haematoxylin"
+    ],
+    "model": "Haematoxylin (hematoxylin). Its mordant complex highlights many nucleic-acid-rich structures; stain colour alone does not identify an organ.",
+    "mechanism": "Staining provides contrast. Tissue identification still requires architecture, cell arrangement and matrix, not nuclear colour alone.",
+    "id": "universal-histology-nuclear-stain",
+    "metadata": {
+      "subject": "histology",
+      "lesson": "microscopy",
+      "topic": "Preparation, staining and defensible slide interpretation",
+      "subtopic": "Relate a stain to its target",
+      "concept": "universal-histology-nuclear-stain",
+      "difficulty": "applied",
+      "prerequisites": [
+        "histology-foundations-tissues"
+      ],
+      "sources": [
+        {
+          "title": "Original histology explanations: preparation and lymphoid architecture",
+          "locator": "Original preparation, identification and developmental teaching with section-level reference mapping",
+          "basis": "supplemental-reference-based"
+        },
+        {
+          "title": "Southern Illinois University: tissue preparation",
+          "url": "https://histology.siu.edu/intro/tissprep.htm",
+          "basis": "supplemental-reference-based"
+        }
+      ]
+    }
+  },
+  {
+    "type": "numeric",
+    "prompt": "In a hypothetical clearance calculation, urine concentration U = 100 mg/mL, urine flow V = 1 mL/min and plasma concentration P = 1 mg/mL. Calculate C = U × V / P. This is a calculation exercise, not a GFR measurement unless the marker’s handling justifies that interpretation.",
+    "answer": 100,
+    "unit": "mL/min",
+    "units": [
+      {
+        "label": "mL/min",
+        "factor": 1
+      },
+      {
+        "label": "L/min",
+        "factor": 1000
+      }
+    ],
+    "tolerance": 0.5,
+    "precision": "Report to the nearest 1 mL/min (or equivalent L/min). Select the unit. Allowed rounding difference: 0.5 mL/min.",
+    "workedSolution": [
+      "C = U × V / P. U is urine concentration, V is urine volume per time, and P is plasma concentration.",
+      "U × V = 100 mg/mL × 1 mL/min = 100 mg/min.",
+      "C = 100 mg/min ÷ 1 mg/mL = 100 mL/min = 0.1 L/min."
+    ],
+    "mechanism": "Clearance divides the excreted amount per time by the plasma concentration, giving a virtual volume per time. It does not measure a volume of plasma physically removed.",
+    "id": "universal-clearance-initial",
+    "metadata": {
+      "subject": "physiology",
+      "lesson": "filtration-and-clearance",
+      "topic": "What does renal clearance actually measure?",
+      "subtopic": "Convert an excretion rate into a virtual plasma volume",
+      "concept": "renal-clearance-units",
+      "difficulty": "applied",
+      "prerequisites": [],
+      "sources": [
+        {
+          "title": "Medical Physiology: Renal Physiology, Revision 15",
+          "locator": "Chapters 29–30: clearance, filtered load and fractional excretion",
+          "basis": "study-guide-based"
+        }
+      ]
+    },
+    "variants": [
+      "universal-clearance-reinforcement"
+    ]
+  },
+  {
+    "type": "numeric",
+    "prompt": "In a hypothetical clearance calculation, urine concentration U = 60 mg/mL, urine flow V = 2 mL/min and plasma concentration P = 3 mg/mL. Calculate C = U × V / P. This is a calculation exercise, not a GFR measurement unless the marker’s handling justifies that interpretation.",
+    "answer": 40,
+    "unit": "mL/min",
+    "units": [
+      {
+        "label": "mL/min",
+        "factor": 1
+      },
+      {
+        "label": "L/min",
+        "factor": 1000
+      }
+    ],
+    "tolerance": 0.5,
+    "precision": "Report to the nearest 1 mL/min (or equivalent L/min). Select the unit. Allowed rounding difference: 0.5 mL/min.",
+    "workedSolution": [
+      "C = U × V / P. U is urine concentration, V is urine volume per time, and P is plasma concentration.",
+      "U × V = 60 mg/mL × 2 mL/min = 120 mg/min.",
+      "C = 120 mg/min ÷ 3 mg/mL = 40 mL/min = 0.04 L/min."
+    ],
+    "mechanism": "Clearance divides the excreted amount per time by the plasma concentration, giving a virtual volume per time. It does not measure a volume of plasma physically removed.",
+    "id": "universal-clearance-reinforcement",
+    "metadata": {
+      "subject": "physiology",
+      "lesson": "filtration-and-clearance",
+      "topic": "What does renal clearance actually measure?",
+      "subtopic": "Convert an excretion rate into a virtual plasma volume",
+      "concept": "renal-clearance-units",
+      "difficulty": "applied",
+      "prerequisites": [],
+      "sources": [
+        {
+          "title": "Medical Physiology: Renal Physiology, Revision 15",
+          "locator": "Chapters 29–30: clearance, filtered load and fractional excretion",
+          "basis": "study-guide-based"
+        }
+      ]
+    }
+  }
+]

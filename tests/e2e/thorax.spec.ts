@@ -1,3 +1,4 @@
+import practice from "../../src/content/thorax-practice.json";
 import { test, expect } from "@playwright/test";
 
 test("thorax image supports identification, keyboard control and breathing comparison", async ({ page }, testInfo) => {
@@ -16,7 +17,7 @@ test("thorax image supports identification, keyboard control and breathing compa
   await expect(map.getByRole("status")).toContainText("Try another marker.");
   for (const [index, marker] of [3, 4, 1, 2, 5, 6].entries()) {
     await map.getByRole("button", { name: `Marker ${marker}`, exact: true }).click();
-    await expect(map.getByRole("status")).toContainText("Correct.");
+    await expect(map.getByRole("status")).toContainText("Correct");
     if (index < 5) await map.getByRole("button", { name: "Next structure", exact: true }).click();
   }
   await expect(map).toContainText("All six structures identified.");
@@ -36,37 +37,40 @@ test("thorax quiz explains distractors, reviews mistakes and retains answers acr
   await page.goto("/subjects/anatomy/regional-anatomy");
   const quiz = page.getByRole("region", { name: "Twelve questions. Explain every answer." });
   const progress = page.locator(".learning-progress:visible");
-  await expect(progress).toHaveCount(1);
   await expect(progress).toContainText("0 of 15");
-  await expect(quiz.getByRole("button", { name: "Check thorax answer" })).toBeDisabled();
+  await expect(quiz.getByRole("button", { name: /^Check Answer and Continue/ })).toBeDisabled();
   await quiz.getByRole("radio", { name: "Peritoneal cavity", exact: true }).check();
-  await quiz.getByRole("button", { name: "Check thorax answer" }).click();
-  await expect(quiz.locator(".thorax-feedback")).toContainText("Correct answer: Mediastinum");
-  await expect(quiz.locator(".thorax-feedback")).toContainText("Why the other answers do not fit");
-  const correctOptions = [0, 1, 2, 0, 1, 2, 0, 1, 2, 1, 0, 2];
-  for (let index = 1; index < 12; index++) {
-    await quiz.getByRole("button", { name: "Next question", exact: false }).click();
-    await quiz.getByRole("radio").nth(correctOptions[index]).check();
-    await quiz.getByRole("button", { name: "Check thorax answer" }).click();
+  await quiz.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+  await expect(quiz.locator('[data-feedback="incorrect"]')).toContainText("Correct answer: Mediastinum");
+  await expect(quiz).toContainText("Question 2 of 12");
+  for (const q of practice.questions.slice(1)) {
+    const block = quiz.locator(`#question-${q.id}`);
+    await block.getByRole("radio", { name: q.options[q.answer], exact: true }).check();
+    await block.getByRole("button", { name: /^Check Answer and Continue/ }).click();
   }
-  await expect(quiz.locator(".thorax-quiz-progress")).toHaveText("11 of 12 correct · 0 unanswered · 1 to review");
-  await quiz.getByRole("button", { name: "Review missed questions (1)" }).click();
-  await expect(quiz.locator(".thorax-question .eyebrow")).toHaveText("Review 1 of 1");
-  await quiz.getByRole("radio", { name: "Mediastinum", exact: true }).check();
-  await quiz.getByRole("button", { name: "Check thorax answer" }).click();
-  await expect(quiz.locator(".thorax-quiz-progress")).toHaveText("12 of 12 correct · 0 unanswered · 0 to review");
-  await quiz.getByRole("button", { name: "Return to all questions" }).click();
+  await expect(quiz.locator('.practice-results')).toContainText("11 correct");
+  await expect(quiz.locator('.practice-results')).toContainText("1 incorrect");
+  await quiz.locator('.practice-results').getByRole('button', {name:/^Review:/}).click();
+  const first = quiz.locator(`#question-${practice.questions[0].id}`);
+  await first.getByRole('button',{name:'Try without feedback',exact:true}).click();
+  await first.getByRole("radio", { name: "Mediastinum", exact: true }).check();
+  await first.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+  await expect(quiz.locator('.practice-results')).toContainText("12 correct");
   await page.getByRole("button", { name: "Next topic", exact: false }).click();
   const abdomen = page.locator("#lesson-abdominal-region");
   await abdomen.getByRole("radio", { name: "Umbilical", exact: true }).check();
-  await abdomen.getByRole("button", { name: "Check answer", exact: true }).click();
-  await page.getByRole("button", { name: "Previous topic", exact: false }).click();
-  await expect(quiz.getByRole("radio", { name: "Mediastinum", exact: true })).toBeChecked();
+  await abdomen.getByRole("button", { name: /^Check Answer and Continue/ }).click();
   await expect(progress).toContainText("13 of 15");
-  await quiz.getByRole("button", { name: "Reset thorax practice" }).click();
-  await expect(quiz.locator(".thorax-quiz-progress")).toHaveText("0 of 12 correct · 12 unanswered · 0 to review");
-  await expect(progress).toContainText("1 of 15");
-  await expect(quiz.getByRole("button", { name: "Check thorax answer" })).toBeDisabled();
+  await page.locator('button[aria-controls="lesson-chest"]').click();
+  await quiz.getByRole('button',{name:'Show all questions',exact:true}).click();
+  await expect(first.getByRole("radio", { name: "Mediastinum", exact: true })).toBeChecked();
+  await quiz.locator('summary').filter({hasText:'Checkpoint history'}).click();
+  await quiz.getByRole('button',{name:'See my results',exact:true}).click();
+  await quiz.getByRole('button',{name:'Try this set again',exact:true}).click();
+  await expect(quiz.locator('.concept-feedback:visible')).toHaveCount(0);
+  await expect(quiz.getByRole('button',{name:/^Check Answer and Continue/})).toBeDisabled();
+  // Starting a fresh round preserves the already saved first-attempt history.
+  await expect(progress).toContainText("13 of 15");
 });
 
 test("short answers reveal models and retain self-checks after reloading the page", async ({ page }) => {

@@ -1,0 +1,5104 @@
+{
+  "anatomy-foundations": {
+    "subject": "anatomy",
+    "lesson": "anatomy-foundations",
+    "topic": "Anatomy Foundations: Position, Planes and Organisation",
+    "subtopic": "Anatomy and Physiology 2e: sections 1.6 (position, directions, planes and cavities), 1.2 (levels of organisation), 4.1 (tissues and membranes), 22.2 (pleura) and 23.4 (stomach wall).",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "OpenStax Anatomy and Physiology 2e",
+        "locator": "Anatomy and Physiology 2e: sections 1.6 (position, directions, planes and cavities), 1.2 (levels of organisation), 4.1 (tissues and membranes), 22.2 (pleura) and 23.4 (stomach wall).",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "histology-foundations-tissues": {
+    "subject": "histology",
+    "lesson": "histology-foundations-tissues",
+    "topic": "Histology Foundations: The Four Basic Tissues",
+    "subtopic": "Epithelial Tissue Characteristics; Epithelial Classification by Layer and Shape; Official Lecture Expansion — Connective Tissue Proper; Fibers and Ground Substance; Cardiac Muscle and Intercalated Discs — Verified Practical Note; Official Lecture Expansion — Skeletal, Cardiac, and Smooth Muscle Microarchitecture; Nerve Tissue Study Notes; Histology of Nervous Tissue and CNS Microscopy, sections 16–18",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Epithelial Tissue Characteristics; Epithelial Classification by Layer and Shape; Official Lecture Expansion — Connective Tissue Proper; Fibers and Ground Substance; Cardiac Muscle and Intercalated Discs — Verified Practical Note; Official Lecture Expansion — Skeletal, Cardiac, and Smooth Muscle Microarchitecture; Nerve Tissue Study Notes; Histology of Nervous Tissue and CNS Microscopy, sections 16–18",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "microscopy": {
+    "subject": "histology",
+    "lesson": "microscopy",
+    "topic": "Preparation, staining and defensible slide interpretation",
+    "subtopic": "Original preparation, identification and developmental teaching with section-level reference mapping",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "histology-foundations-tissues"
+    ],
+    "sources": [
+      {
+        "title": "Original histology explanations: preparation and lymphoid architecture",
+        "locator": "Original preparation, identification and developmental teaching with section-level reference mapping",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "epithelia": {
+    "subject": "histology",
+    "lesson": "epithelia",
+    "topic": "Epithelia and glands: identify structure and explain development",
+    "subtopic": "Epithelial Tissue Characteristics; Epithelial Classification by Layer and Shape",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Epithelial Tissue Characteristics; Epithelial Classification by Layer and Shape",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cell-junctions": {
+    "subject": "histology",
+    "lesson": "cell-junctions",
+    "topic": "Cell junctions, surface specialisations and developmental signalling",
+    "subtopic": "Cell-Cell Junctions; Free Surface Specializations; Basement Membrane",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "epithelia",
+      "microscopy"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Cell-Cell Junctions; Free Surface Specializations; Basement Membrane",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "connective-tissue": {
+    "subject": "histology",
+    "lesson": "connective-tissue",
+    "topic": "Connective tissue: identify matrix, explain mechanisms and trace development",
+    "subtopic": "Connective Tissue Proper; Fibers and Ground Substance",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "histology-foundations-tissues"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Connective Tissue Proper; Fibers and Ground Substance",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cartilage-bone": {
+    "subject": "histology",
+    "lesson": "cartilage-bone",
+    "topic": "Cartilage and bone: identify structures and explain skeletal development",
+    "subtopic": "Cartilage Types; Bone Remodeling, Ossification, Growth, and Repair",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "histology-foundations-tissues"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Cartilage Types; Bone Remodeling, Ossification, Growth, and Repair",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "blood-marrow": {
+    "subject": "histology",
+    "lesson": "blood-marrow",
+    "topic": "Blood and bone marrow: identify cells, explain maturation and trace development",
+    "subtopic": "Blood and Bone Marrow; Blood Smear and Bone-Marrow Practical Expansion",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "histology-foundations-tissues"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Blood and Bone Marrow; Blood Smear and Bone-Marrow Practical Expansion",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "muscle-histology": {
+    "subject": "histology",
+    "lesson": "muscle-histology",
+    "topic": "Muscle: specimen identification, force transmission and development",
+    "subtopic": "Muscle Tissue; Cardiac Muscle and Intercalated Discs",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "cell-junctions"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Muscle Tissue; Cardiac Muscle and Intercalated Discs",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "vessel-histology": {
+    "subject": "histology",
+    "lesson": "vessel-histology",
+    "topic": "Vessels: wall identification, microcirculation and development",
+    "subtopic": "Circulatory System — Histology of Blood Vessels",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "muscle-histology"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Circulatory System — Histology of Blood Vessels",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lymphoid-organs": {
+    "subject": "histology",
+    "lesson": "lymphoid-organs",
+    "topic": "Lymphoid organs: practical identification, routes and developmental origins",
+    "subtopic": "Original preparation, identification and developmental teaching with section-level reference mapping",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy"
+    ],
+    "sources": [
+      {
+        "title": "Original histology explanations: preparation and lymphoid architecture",
+        "locator": "Original preparation, identification and developmental teaching with section-level reference mapping",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "respiratory-histology": {
+    "subject": "histology",
+    "lesson": "respiratory-histology",
+    "topic": "Respiratory system: wall identification, exchange surfaces and lung development",
+    "subtopic": "Original system-specific explanations and applications with section-level source mapping",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia"
+    ],
+    "sources": [
+      {
+        "title": "Original microscopic anatomy and embryology explanations",
+        "locator": "Original system-specific explanations and applications with section-level source mapping",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "gi-histology": {
+    "subject": "histology",
+    "lesson": "gi-histology",
+    "topic": "Digestive tract: identify the wall and explain its development",
+    "subtopic": "Gastrointestinal Tract Histology; Regional Variations",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Gastrointestinal Tract Histology; Regional Variations",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "liver-pancreas": {
+    "subject": "histology",
+    "lesson": "liver-pancreas",
+    "topic": "Liver and pancreas: identify compartments and explain development",
+    "subtopic": "Liver Structural Organization; Biliary Passages; Pancreas Histology",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology I–II",
+        "locator": "Liver Structural Organization; Biliary Passages; Pancreas Histology",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "renal-histology": {
+    "subject": "histology",
+    "lesson": "renal-histology",
+    "topic": "Kidney: slide identification, nephron formation and developmental signals",
+    "subtopic": "Original system-specific explanations and applications with section-level source mapping",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia"
+    ],
+    "sources": [
+      {
+        "title": "Original microscopic anatomy and embryology explanations",
+        "locator": "Original system-specific explanations and applications with section-level source mapping",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "reproductive-histology": {
+    "subject": "histology",
+    "lesson": "reproductive-histology",
+    "topic": "Reproductive histology and cyclic change",
+    "subtopic": "Reproductive tissue identification, cell mechanisms and development; ovarian and uterine relationships",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "epithelia",
+      "meiosis"
+    ],
+    "sources": [
+      {
+        "title": "Original reproductive histology and developmental teaching",
+        "locator": "Reproductive tissue identification, cell mechanisms and development; ovarian and uterine relationships",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "placenta": {
+    "subject": "histology",
+    "lesson": "placenta",
+    "topic": "Placenta: villous identification, two circulations and development",
+    "subtopic": "Placental villous architecture, development and maternal–fetal exchange",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia",
+      "vessel-histology"
+    ],
+    "sources": [
+      {
+        "title": "Original placental histology and developmental teaching",
+        "locator": "Placental villous architecture, development and maternal–fetal exchange",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "neurulation": {
+    "subject": "histology",
+    "lesson": "neurulation",
+    "topic": "Neural tube: folding, tissue organization and developmental evidence",
+    "subtopic": "Neurulation and Primary Differentiation of the Neural Tube",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia",
+      "neural-tube-development"
+    ],
+    "sources": [
+      {
+        "title": "Original neural-tube histology and developmental teaching",
+        "locator": "Neurulation and Primary Differentiation of the Neural Tube",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "dna-replication": {
+    "subject": "cell-biology",
+    "lesson": "dna-replication",
+    "topic": "DNA replication and strand direction",
+    "subtopic": "Topics 5–6: semiconservative replication and replication enzymes",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 5–6: semiconservative replication and replication enzymes",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "dna-repair": {
+    "subject": "cell-biology",
+    "lesson": "dna-repair",
+    "topic": "DNA lesions, mutations and repair",
+    "subtopic": "Topics 8–13: DNA damage, repair and point mutations",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 8–13: DNA damage, repair and point mutations",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "rna-processing": {
+    "subject": "cell-biology",
+    "lesson": "rna-processing",
+    "topic": "From pre-mRNA to mature messenger RNA",
+    "subtopic": "Topics 19–25: eukaryotic transcription and mRNA maturation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "genetics-genome-foundations"
+    ],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 19–25: eukaryotic transcription and mRNA maturation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "translation": {
+    "subject": "cell-biology",
+    "lesson": "translation",
+    "topic": "Translation: charging, decoding and elongation",
+    "subtopic": "Topics 27–31: genetic code, tRNA and ribosome cycle",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 27–31: genetic code, tRNA and ribosome cycle",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "protein-trafficking": {
+    "subject": "cell-biology",
+    "lesson": "protein-trafficking",
+    "topic": "Protein targeting and the secretory pathway",
+    "subtopic": "Topics 34–37: ER modifications, quality control and protein sorting",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 34–37: ER modifications, quality control and protein sorting",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pcr": {
+    "subject": "cell-biology",
+    "lesson": "pcr",
+    "topic": "PCR, qPCR and reverse transcription",
+    "subtopic": "Topics 14 and 26: PCR and analysis of gene expression",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 14 and 26: PCR and analysis of gene expression",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "protein-structure": {
+    "subject": "biochemistry",
+    "lesson": "protein-structure",
+    "topic": "Protein structure and collagen",
+    "subtopic": "Amino Acids; Proteins; Collagen",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Biochemistry study guide",
+        "locator": "Amino Acids; Proteins; Collagen",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "enzyme-kinetics": {
+    "subject": "biochemistry",
+    "lesson": "enzyme-kinetics",
+    "topic": "Enzyme catalysis and inhibition",
+    "subtopic": "Enzymes: Catalysts of Life",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Biochemistry study guide",
+        "locator": "Enzymes: Catalysts of Life",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "glycolysis": {
+    "subject": "biochemistry",
+    "lesson": "glycolysis",
+    "topic": "Glycolysis and lactate recycling",
+    "subtopic": "Glycolysis; Metabolic Cycles: Cori and Glucose-Alanine",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Biochemistry study guide",
+        "locator": "Glycolysis; Metabolic Cycles: Cori and Glucose-Alanine",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pdh-tca": {
+    "subject": "biochemistry",
+    "lesson": "pdh-tca",
+    "topic": "Pyruvate dehydrogenase and the TCA cycle",
+    "subtopic": "Pyruvate Dehydrogenase Complex and the Citric Acid Cycle",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "glycolysis",
+      "enzyme-kinetics"
+    ],
+    "sources": [
+      {
+        "title": "Biochemistry study guide",
+        "locator": "Pyruvate Dehydrogenase Complex and the Citric Acid Cycle",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lipid-metabolism": {
+    "subject": "biochemistry",
+    "lesson": "lipid-metabolism",
+    "topic": "Fatty-acid synthesis and fuel storage",
+    "subtopic": "Fatty Acid Synthesis, Regulation, and Lipid Synthesis",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Biochemistry study guide",
+        "locator": "Fatty Acid Synthesis, Regulation, and Lipid Synthesis",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "nitrogen-metabolism": {
+    "subject": "biochemistry",
+    "lesson": "nitrogen-metabolism",
+    "topic": "Amino-acid nitrogen and urea",
+    "subtopic": "Metabolism of Amino Acids; Nitrogen Balance; original web supplement: mechanism comparison and worked reasoning, 2 November 2026",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "protein-structure"
+    ],
+    "sources": [
+      {
+        "title": "Biochemistry study guide — web teaching supplement",
+        "locator": "Metabolism of Amino Acids; Nitrogen Balance; original web supplement: mechanism comparison and worked reasoning, 2 November 2026",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "meiosis": {
+    "subject": "genetics",
+    "lesson": "meiosis",
+    "topic": "Meiosis, nondisjunction and mosaicism",
+    "subtopic": "G2: Mitosis and meiosis; Nondisjunction, anaphase lag and mosaicism",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I",
+        "locator": "G2: Mitosis and meiosis; Nondisjunction, anaphase lag and mosaicism",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "inheritance": {
+    "subject": "genetics",
+    "lesson": "inheritance",
+    "topic": "Inheritance patterns, penetrance and expressivity",
+    "subtopic": "G1: Variant-to-phenotype reasoning; G6–G7: Mendelian inheritance",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I",
+        "locator": "G1: Variant-to-phenotype reasoning; G6–G7: Mendelian inheritance",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "genetic-testing": {
+    "subject": "genetics",
+    "lesson": "genetic-testing",
+    "topic": "Choosing and interpreting a genetic test",
+    "subtopic": "G8: Match the molecular method to the clinical question",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I",
+        "locator": "G8: Match the molecular method to the clinical question",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "innate-adaptive": {
+    "subject": "genetics",
+    "lesson": "innate-adaptive",
+    "topic": "Innate and adaptive immunity",
+    "subtopic": "I1–I2: Lymphoid organs; Innate defense and effector cells",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I",
+        "locator": "I1–I2: Lymphoid organs; Innate defense and effector cells",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "antigen-presentation": {
+    "subject": "genetics",
+    "lesson": "antigen-presentation",
+    "topic": "MHC I, MHC II and T-cell recognition",
+    "subtopic": "I5: Antigen processing and presentation; I7: T-cell activation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "innate-adaptive"
+    ],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I",
+        "locator": "I5: Antigen processing and presentation; I7: T-cell activation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "complement": {
+    "subject": "genetics",
+    "lesson": "complement",
+    "topic": "Complement pathways and their shared effectors",
+    "subtopic": "I3: Three pathways converge on C3 activation; Regulation protects host surfaces",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I",
+        "locator": "I3: Three pathways converge on C3 activation; Regulation protects host surfaces",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "membrane-potentials": {
+    "subject": "physiology",
+    "lesson": "membrane-potentials",
+    "topic": "Resting potential and the action potential",
+    "subtopic": "Sections 1.5–1.6: Resting membrane and action potentials",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cellular Physiology",
+        "locator": "Sections 1.5–1.6: Resting membrane and action potentials",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "cardiac-output": {
+    "subject": "physiology",
+    "lesson": "cardiac-output",
+    "topic": "Stroke volume, cardiac output and pump regulation",
+    "subtopic": "Section 2.4: Cardiac Pump Function and Output",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cardiovascular Physiology",
+        "locator": "Section 2.4: Cardiac Pump Function and Output",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "baroreflex": {
+    "subject": "physiology",
+    "lesson": "baroreflex",
+    "topic": "The arterial baroreceptor reflex",
+    "subtopic": "Arterial Baroreceptor Reflex versus Bainbridge Reflex",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cardiovascular Physiology",
+        "locator": "Arterial Baroreceptor Reflex versus Bainbridge Reflex",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "ventilation-perfusion": {
+    "subject": "physiology",
+    "lesson": "ventilation-perfusion",
+    "topic": "Ventilation, perfusion and gas exchange",
+    "subtopic": "Sections 3.2–3.3: Gas Exchange and Circulation; Gas Transport; original model-comparison and measurement-scope extension",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "physiology-membrane-foundations",
+      "biophysics-diffusion-osmosis"
+    ],
+    "sources": [
+      {
+        "title": "Original respiratory transfer and model-comparison teaching",
+        "locator": "Sections 3.2–3.3: Gas Exchange and Circulation; Gas Transport; original model-comparison and measurement-scope extension",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cell-signaling": {
+    "subject": "cell-biology",
+    "lesson": "cell-signaling",
+    "topic": "Cell signaling through G proteins",
+    "subtopic": "Section 1.3: G-Protein-Coupled Receptors and signal termination",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cellular Physiology",
+        "locator": "Section 1.3: G-Protein-Coupled Receptors and signal termination",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "fluid-and-membrane-transport": {
+    "subject": "physiology",
+    "lesson": "fluid-and-membrane-transport",
+    "topic": "Cell transport: follow the energy",
+    "subtopic": "Sections 1.1–1.2: fluid compartments, tonicity and membrane transport",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cellular Physiology, Excitable Tissues, Muscle and Autonomic Control",
+        "locator": "Sections 1.1–1.2: fluid compartments, tonicity and membrane transport",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "muscle-contraction": {
+    "subject": "physiology",
+    "lesson": "muscle-contraction",
+    "topic": "Three muscle types, three calcium stories",
+    "subtopic": "Sections on skeletal, cardiac and smooth muscle excitation–contraction coupling",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cellular Physiology, Excitable Tissues, Muscle and Autonomic Control",
+        "locator": "Sections on skeletal, cardiac and smooth muscle excitation–contraction coupling",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "autonomic-signalling": {
+    "subject": "physiology",
+    "lesson": "autonomic-signalling",
+    "topic": "Autonomic signals: receptor before response",
+    "subtopic": "Signal transduction and autonomic receptor comparison sections",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cellular Physiology, Excitable Tissues, Muscle and Autonomic Control",
+        "locator": "Signal transduction and autonomic receptor comparison sections",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cardiac-cycle": {
+    "subject": "physiology",
+    "lesson": "cardiac-cycle",
+    "topic": "The cardiac cycle: pressure opens the valves",
+    "subtopic": "Sections 2.3–2.4: cardiac cycle and pressure–volume loops",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cardiovascular Physiology",
+        "locator": "Sections 2.3–2.4: cardiac cycle and pressure–volume loops",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "respiratory-mechanics": {
+    "subject": "physiology",
+    "lesson": "respiratory-mechanics",
+    "topic": "Ventilation: make each breath count",
+    "subtopic": "Section 3.1: respiratory mechanics, dead space and alveolar ventilation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology — Respiratory Physiology",
+        "locator": "Section 3.1: respiratory mechanics, dead space and alveolar ventilation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "renal-water-balance": {
+    "subject": "physiology",
+    "lesson": "renal-water-balance",
+    "topic": "Water balance: distinguish ADH from aldosterone",
+    "subtopic": "Section 4.4 and integrated body-fluid regulation addendum",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology — Renal and Acid–Base Physiology",
+        "locator": "Section 4.4 and integrated body-fluid regulation addendum",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "blood-and-haemostasis": {
+    "subject": "physiology",
+    "lesson": "blood-and-haemostasis",
+    "topic": "Haemostasis: build and stabilise the plug",
+    "subtopic": "Sections 5.2–5.3: primary haemostasis, intrinsic tenase and coagulation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Blood and Haemostasis",
+        "locator": "Sections 5.2–5.3: primary haemostasis, intrinsic tenase and coagulation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "digestive-control": {
+    "subject": "physiology",
+    "lesson": "digestive-control",
+    "topic": "Digestion: coordinate movement and secretion",
+    "subtopic": "Sections 6.1–6.5: enteric control, motility, secretion and absorption",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Gastrointestinal Physiology and Energy Balance",
+        "locator": "Sections 6.1–6.5: enteric control, motility, secretion and absorption",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "energy-balance": {
+    "subject": "physiology",
+    "lesson": "energy-balance",
+    "topic": "Energy balance: connect intake, storage and use",
+    "subtopic": "Section 6.6: energy balance, food intake and body weight",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Gastrointestinal Physiology and Energy Balance",
+        "locator": "Section 6.6: energy balance, food intake and body weight",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "endocrine-feedback": {
+    "subject": "physiology",
+    "lesson": "endocrine-feedback",
+    "topic": "Endocrine axes: read the feedback loop",
+    "subtopic": "Sections 7.1 and 7.3: hypothalamic–pituitary control and thyroid physiology",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Endocrine and Reproductive Physiology",
+        "locator": "Sections 7.1 and 7.3: hypothalamic–pituitary control and thyroid physiology",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "reproductive-cycles": {
+    "subject": "physiology",
+    "lesson": "reproductive-cycles",
+    "topic": "Reproductive physiology: connect the two cycles",
+    "subtopic": "Sections 7.7–7.9: reproductive function, ovarian cycle and pregnancy",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Endocrine and Reproductive Physiology",
+        "locator": "Sections 7.7–7.9: reproductive function, ovarian cycle and pregnancy",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "synaptic-integration": {
+    "subject": "physiology",
+    "lesson": "synaptic-integration",
+    "topic": "Neural integration: from release to a response",
+    "subtopic": "Section 8.1: chemical synapses, postsynaptic potentials and summation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Nervous System Integration and Special Senses",
+        "locator": "Section 8.1: chemical synapses, postsynaptic potentials and summation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "special-senses": {
+    "subject": "physiology",
+    "lesson": "special-senses",
+    "topic": "Special senses: convert a stimulus into a signal",
+    "subtopic": "Special-sense sections: vision, phototransduction, hearing and vestibular function",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Nervous System Integration and Special Senses",
+        "locator": "Special-sense sections: vision, phototransduction, hearing and vestibular function",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lymph-and-fluid-exchange": {
+    "subject": "physiology",
+    "lesson": "lymph-and-fluid-exchange",
+    "topic": "Microcirculation: return the filtered fluid",
+    "subtopic": "Sections 2.7–2.8: microcirculation, Starling forces and venous return; original web supplement: mechanism comparison and worked reasoning, 2 November 2026",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "vessel-histology"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cardiovascular Physiology — web teaching supplement",
+        "locator": "Sections 2.7–2.8: microcirculation, Starling forces and venous return; original web supplement: mechanism comparison and worked reasoning, 2 November 2026",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "indicator-dilution": {
+    "subject": "physiology",
+    "lesson": "indicator-dilution",
+    "topic": "Measure body-fluid compartments by indicator dilution",
+    "subtopic": "1.1 Body-Fluid Compartments and Their Determination",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "fluid-and-membrane-transport",
+      "renal-water-balance"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cellular Physiology, Excitable Tissues, Muscle and Autonomic Control",
+        "locator": "1.1 Body-Fluid Compartments and Their Determination",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ecg-time-and-vectors": {
+    "subject": "physiology",
+    "lesson": "ecg-time-and-vectors",
+    "topic": "ECG: connect time, conduction and lead direction",
+    "subtopic": "2.2 Cardiac vector and electrocardiography",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cardiac-cycle",
+      "cardiac-output"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology I — Cardiovascular Physiology",
+        "locator": "2.2 Cardiac vector and electrocardiography",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "alveolar-ventilation-calculations": {
+    "subject": "physiology",
+    "lesson": "alveolar-ventilation-calculations",
+    "topic": "Alveolar ventilation: why breathing pattern matters",
+    "subtopic": "Dead space, alveolar ventilation and gas transport",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "respiratory-mechanics",
+      "ventilation-perfusion"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology — Respiratory Physiology",
+        "locator": "Dead space, alveolar ventilation and gas transport",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "myelin-and-glial-cells": {
+    "subject": "histology",
+    "lesson": "myelin-and-glial-cells",
+    "topic": "Myelin and glia: identify the cell before the function",
+    "subtopic": "Supporting Cells; Myelination; Peripheral Nerve Structure; current selected nerve and ganglion text; original branch-versus-relay reasoning; original peripheral-nerve preparation, compartment and developmental-evidence practical",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "neurulation",
+      "membrane-potentials"
+    ],
+    "sources": [
+      {
+        "title": "Microscopic Anatomy and Embryology — nerve and ganglion reasoning",
+        "locator": "Supporting Cells; Myelination; Peripheral Nerve Structure; current selected nerve and ganglion text; original branch-versus-relay reasoning; original peripheral-nerve preparation, compartment and developmental-evidence practical",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "brain-and-csf-barriers": {
+    "subject": "histology",
+    "lesson": "brain-and-csf-barriers",
+    "topic": "Brain and CSF barriers: tissue structure, development and transport",
+    "subtopic": "CNS interfaces: histology and embryology",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia",
+      "cell-junctions",
+      "myelin-and-glial-cells",
+      "neurulation"
+    ],
+    "sources": [
+      {
+        "title": "Original brain and CSF barrier teaching",
+        "locator": "CNS interfaces: histology and embryology",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "chromatin-access-and-topology": {
+    "subject": "cell-biology",
+    "lesson": "chromatin-access-and-topology",
+    "topic": "Chromatin: separate access, packaging and topology",
+    "subtopic": "Topics 2, 3 and 24: chromatin proteins, regulatory sequences and histone modifications",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "dna-replication",
+      "rna-processing"
+    ],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 2, 3 and 24: chromatin proteins, regulatory sequences and histone modifications",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "er-protein-quality-control": {
+    "subject": "cell-biology",
+    "lesson": "er-protein-quality-control",
+    "topic": "ER quality control: folding, glycan checks and ERAD",
+    "subtopic": "Topics 32, 34 and 35: chaperones, ER modifications and N-glycosylation/ERAD",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "protein-trafficking",
+      "translation"
+    ],
+    "sources": [
+      {
+        "title": "Molecular Cell Biology I — 39 Topic Study Guide",
+        "locator": "Topics 32, 34 and 35: chaperones, ER modifications and N-glycosylation/ERAD",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ketone-production-and-use": {
+    "subject": "biochemistry",
+    "lesson": "ketone-production-and-use",
+    "topic": "Ketone bodies: connect liver production with tissue use",
+    "subtopic": "Chapter 13: fatty-acid oxidation, synthesis and oxidation of ketone bodies",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lipid-metabolism",
+      "pdh-tca"
+    ],
+    "sources": [
+      {
+        "title": "Biochemistry Final Examination Study Guide",
+        "locator": "Chapter 13: fatty-acid oxidation, synthesis and oxidation of ketone bodies",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lipoprotein-routes": {
+    "subject": "biochemistry",
+    "lesson": "lipoprotein-routes",
+    "topic": "Lipoproteins: follow the cargo and the particle",
+    "subtopic": "Chapters 8.1 and 12: cholesterol transport and transport of lipids",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lipid-metabolism",
+      "protein-trafficking"
+    ],
+    "sources": [
+      {
+        "title": "Biochemistry Final Examination Study Guide",
+        "locator": "Chapters 8.1 and 12: cholesterol transport and transport of lipids",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "recessive-conditional-probability": {
+    "subject": "genetics",
+    "lesson": "recessive-conditional-probability",
+    "topic": "Recessive inheritance: update probability after new information",
+    "subtopic": "Mendelian inheritance; autosomal recessive pedigrees and penetrance",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "inheritance",
+      "meiosis"
+    ],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I — Integrated Study Guide",
+        "locator": "Mendelian inheritance; autosomal recessive pedigrees and penetrance",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "hypersensitivity-mechanisms": {
+    "subject": "genetics",
+    "lesson": "hypersensitivity-mechanisms",
+    "topic": "Hypersensitivity: classify the mechanism of tissue injury",
+    "subtopic": "Immunology teaching sections: antibodies, effector mechanisms and hypersensitivity",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "innate-adaptive",
+      "antigen-presentation"
+    ],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I — Integrated Study Guide",
+        "locator": "Immunology teaching sections: antibodies, effector mechanisms and hypersensitivity",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "biophysics-radiation-optics": {
+    "subject": "biophysics",
+    "lesson": "biophysics-radiation-optics",
+    "topic": "Radiation, units and geometric optics",
+    "subtopic": "Medical Biophysics I, topic 1; combined theory prompts 1–9",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 1; combined theory prompts 1–9",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-image-formation": {
+    "subject": "biophysics",
+    "lesson": "biophysics-image-formation",
+    "topic": "Lenses, magnification and the microscope",
+    "subtopic": "Medical Biophysics I, topic 2; combined theory prompts 10–18",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 2; combined theory prompts 10–18",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-wave-optics": {
+    "subject": "biophysics",
+    "lesson": "biophysics-wave-optics",
+    "topic": "Interference, diffraction and optical resolution",
+    "subtopic": "Medical Biophysics I, topic 3; combined theory prompts 19–28",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 3; combined theory prompts 19–28",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-light-duality": {
+    "subject": "biophysics",
+    "lesson": "biophysics-light-duality",
+    "topic": "Photons, matter waves and electron microscopy",
+    "subtopic": "Medical Biophysics I, topic 4; combined theory prompts 29–37",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 4; combined theory prompts 29–37",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-atomic-models": {
+    "subject": "biophysics",
+    "lesson": "biophysics-atomic-models",
+    "topic": "Atomic models, energy levels and uncertainty",
+    "subtopic": "Medical Biophysics I, topic 5; combined theory prompts 38–44",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 5; combined theory prompts 38–44",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-molecular-interactions": {
+    "subject": "biophysics",
+    "lesson": "biophysics-molecular-interactions",
+    "topic": "Bonds, interaction energies and scanning probes",
+    "subtopic": "Medical Biophysics I, topic 6; combined theory prompts 45–49",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 6; combined theory prompts 45–49",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-gases-statistics": {
+    "subject": "biophysics",
+    "lesson": "biophysics-gases-statistics",
+    "topic": "Gas laws, Boltzmann statistics and thermal energy",
+    "subtopic": "Medical Biophysics I, topic 7; combined theory prompts 50–62",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 7; combined theory prompts 50–62",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-condensed-matter": {
+    "subject": "biophysics",
+    "lesson": "biophysics-condensed-matter",
+    "topic": "Solids, liquids, liquid crystals and energy bands",
+    "subtopic": "Medical Biophysics I, topic 8; combined theory prompts 63–73",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 8; combined theory prompts 63–73",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-absorption-scattering": {
+    "subject": "biophysics",
+    "lesson": "biophysics-absorption-scattering",
+    "topic": "Absorption, scattering and optical spectroscopy",
+    "subtopic": "Medical Biophysics I, topic 9; combined theory prompts 74–80",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 9; combined theory prompts 74–80",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-thermal-radiation": {
+    "subject": "biophysics",
+    "lesson": "biophysics-thermal-radiation",
+    "topic": "Blackbody radiation and thermal imaging",
+    "subtopic": "Medical Biophysics I, topic 10; combined theory prompts 81–89",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 10; combined theory prompts 81–89",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-luminescence": {
+    "subject": "biophysics",
+    "lesson": "biophysics-luminescence",
+    "topic": "Fluorescence, phosphorescence and molecular probes",
+    "subtopic": "Medical Biophysics I, topic 11; combined theory prompts 90–102",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 11; combined theory prompts 90–102",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-lasers": {
+    "subject": "biophysics",
+    "lesson": "biophysics-lasers",
+    "topic": "Stimulated emission and medical laser principles",
+    "subtopic": "Medical Biophysics I, topic 12; combined theory prompts 103–108",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 12; combined theory prompts 103–108",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-nuclear-structure": {
+    "subject": "biophysics",
+    "lesson": "biophysics-nuclear-structure",
+    "topic": "Nuclei, isotopes and radioactive transformations",
+    "subtopic": "Medical Biophysics I, topic 13; combined theory prompts 109–119",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 13; combined theory prompts 109–119",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-decay-interactions": {
+    "subject": "biophysics",
+    "lesson": "biophysics-decay-interactions",
+    "topic": "Decay law and radiation interactions with matter",
+    "subtopic": "Medical Biophysics I, topic 14; combined theory prompts 120–128",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 14; combined theory prompts 120–128",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-radiation-detection": {
+    "subject": "biophysics",
+    "lesson": "biophysics-radiation-detection",
+    "topic": "Detectors, count statistics and pulse spectra",
+    "subtopic": "Medical Biophysics I, topic 15; combined theory prompts 129–134",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 15; combined theory prompts 129–134",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-dosimetry": {
+    "subject": "biophysics",
+    "lesson": "biophysics-dosimetry",
+    "topic": "Absorbed dose, biological weighting and protection",
+    "subtopic": "Medical Biophysics I, topic 16; combined theory prompts 135–147",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 16; combined theory prompts 135–147",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-isotope-diagnostics": {
+    "subject": "biophysics",
+    "lesson": "biophysics-isotope-diagnostics",
+    "topic": "Tracers, biological clearance and effective half-life",
+    "subtopic": "Medical Biophysics I, topic 17; combined theory prompts 148–154",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 17; combined theory prompts 148–154",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-nuclear-imaging": {
+    "subject": "biophysics",
+    "lesson": "biophysics-nuclear-imaging",
+    "topic": "Gamma cameras, SPECT, PET and radiotherapy geometry",
+    "subtopic": "Medical Biophysics I, topic 18; combined theory prompts 155–164",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 18; combined theory prompts 155–164",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-signals": {
+    "subject": "biophysics",
+    "lesson": "biophysics-signals",
+    "topic": "Biological signals, filtering and digitisation",
+    "subtopic": "Medical Biophysics I, topic 19; combined theory prompts 165–173",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Medical Biophysics I, topic 19; combined theory prompts 165–173",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-xray-production": {
+    "subject": "biophysics",
+    "lesson": "biophysics-xray-production",
+    "topic": "X-ray tubes, spectra and beam quality",
+    "subtopic": "Biophysics II, topic 20; combined theory prompts 174–179",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 20; combined theory prompts 174–179",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-ct-imaging": {
+    "subject": "biophysics",
+    "lesson": "biophysics-ct-imaging",
+    "topic": "Projection radiography, CT reconstruction and windowing",
+    "subtopic": "Biophysics II, topic 21; combined theory prompts 180–187",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 21; combined theory prompts 180–187",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-fluid-flow": {
+    "subject": "biophysics",
+    "lesson": "biophysics-fluid-flow",
+    "topic": "Continuity, viscosity and resistance to flow",
+    "subtopic": "Biophysics II, topic 22; combined theory prompts 188–196; selected cardiovascular physiology: controlled series and parallel network reasoning",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "biophysics-membrane-foundations"
+    ],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 22; combined theory prompts 188–196; selected cardiovascular physiology: controlled series and parallel network reasoning",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-diffusion-osmosis": {
+    "subject": "biophysics",
+    "lesson": "biophysics-diffusion-osmosis",
+    "topic": "Diffusion, osmosis and heat transport",
+    "subtopic": "Biophysics II, topic 23; combined theory prompts 197–206",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 23; combined theory prompts 197–206",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-energy-first-law": {
+    "subject": "biophysics",
+    "lesson": "biophysics-energy-first-law",
+    "topic": "Thermodynamic systems and the first law",
+    "subtopic": "Biophysics II, topic 24; combined theory prompts 207–210, 213, 216",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 24; combined theory prompts 207–210, 213, 216",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-entropy-potentials": {
+    "subject": "biophysics",
+    "lesson": "biophysics-entropy-potentials",
+    "topic": "Entropy, free energy and equilibrium",
+    "subtopic": "Biophysics II, topic 25; combined theory prompts 211–212, 214–215, 217–218",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 25; combined theory prompts 211–212, 214–215, 217–218",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-resting-potential": {
+    "subject": "biophysics",
+    "lesson": "biophysics-resting-potential",
+    "topic": "Membrane potentials, permeability and the RC model",
+    "subtopic": "Biophysics II, topic 26; combined theory prompts 219–226",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 26; combined theory prompts 219–226",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-action-potentials": {
+    "subject": "biophysics",
+    "lesson": "biophysics-action-potentials",
+    "topic": "Action potentials and impulse propagation",
+    "subtopic": "Biophysics II, topic 27; combined theory prompts 227–231",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 27; combined theory prompts 227–231",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-ultrasound": {
+    "subject": "biophysics",
+    "lesson": "biophysics-ultrasound",
+    "topic": "Ultrasound echoes, Doppler shifts and energy deposition",
+    "subtopic": "Biophysics II, topic 28; combined theory prompts 232–240",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 28; combined theory prompts 232–240",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-water-biopolymers": {
+    "subject": "biophysics",
+    "lesson": "biophysics-water-biopolymers",
+    "topic": "Water, protein folding and polymer elasticity",
+    "subtopic": "Biophysics II, topic 29; combined theory prompts 241–249",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 29; combined theory prompts 241–249",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-sensory-biophysics": {
+    "subject": "biophysics",
+    "lesson": "biophysics-sensory-biophysics",
+    "topic": "Vision, hearing and sensory coding",
+    "subtopic": "Biophysics II, topic 30; combined theory prompts 250–265",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 30; combined theory prompts 250–265",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-biomechanics": {
+    "subject": "biophysics",
+    "lesson": "biophysics-biomechanics",
+    "topic": "Stress, strain and viscoelastic tissues",
+    "subtopic": "Biophysics II, topic 31; combined theory prompts 266–272",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 31; combined theory prompts 266–272",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-molecular-motors": {
+    "subject": "biophysics",
+    "lesson": "biophysics-molecular-motors",
+    "topic": "Muscle mechanics and molecular motors",
+    "subtopic": "Biophysics II, topic 32; combined theory prompts 273–277, 279–280",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 32; combined theory prompts 273–277, 279–280",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-structural-methods": {
+    "subject": "biophysics",
+    "lesson": "biophysics-structural-methods",
+    "topic": "X-ray diffraction and mass spectrometry",
+    "subtopic": "Biophysics II, topic 33; combined theory prompts 278, 281–284",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 33; combined theory prompts 278, 281–284",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-magnetic-resonance": {
+    "subject": "biophysics",
+    "lesson": "biophysics-magnetic-resonance",
+    "topic": "Spin, NMR, ESR and MRI contrast",
+    "subtopic": "Biophysics II, topic 34; combined theory prompts 285–293",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 34; combined theory prompts 285–293",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-circulation-ecg": {
+    "subject": "biophysics",
+    "lesson": "biophysics-circulation-ecg",
+    "topic": "Circulation, cardiac work and the ECG",
+    "subtopic": "Biophysics II, topic 35; combined theory prompts 294–303",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 35; combined theory prompts 294–303",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-respiratory-physics": {
+    "subject": "biophysics",
+    "lesson": "biophysics-respiratory-physics",
+    "topic": "Breathing mechanics, gas exchange and physical examination",
+    "subtopic": "Biophysics II, topic 36; combined theory prompts 304–314",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Biophysics II, topic 36; combined theory prompts 304–314",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-lenses": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-lenses",
+    "topic": "Practical: lens power and microscope calibration",
+    "subtopic": "Combined notes, practical questions 1–13",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 1–13",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-refractometry": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-refractometry",
+    "topic": "Practical: refractive index and concentration",
+    "subtopic": "Combined notes, practical questions 14–21",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 14–21",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-absorbance": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-absorbance",
+    "topic": "Practical: blanks, dilution and absorbance",
+    "subtopic": "Combined notes, practical questions 22–32",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 22–32",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-polarimetry": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-polarimetry",
+    "topic": "Practical: optical rotation and chirality",
+    "subtopic": "Combined notes, practical questions 33–42",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 33–42",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-eye": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-eye",
+    "topic": "Practical: eye optics and visual acuity",
+    "subtopic": "Combined notes, practical questions 43–58",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 43–58",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-spectra": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-spectra",
+    "topic": "Practical: scintillation spectra and background",
+    "subtopic": "Combined notes, practical questions 59–66, 127–132",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 59–66, 127–132",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-attenuation": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-attenuation",
+    "topic": "Practical: half-value layers and shielding curves",
+    "subtopic": "Combined notes, practical questions 67–75",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 67–75",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-oscillations": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-oscillations",
+    "topic": "Practical: oscillations, damping and resonance",
+    "subtopic": "Combined notes, practical questions 76–83",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 76–83",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-impedance": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-impedance",
+    "topic": "Practical: resistance, capacitance and biological impedance",
+    "subtopic": "Combined notes, practical questions 84–93",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 84–93",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-amplifiers": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-amplifiers",
+    "topic": "Practical: gain, decibels and bandwidth",
+    "subtopic": "Combined notes, practical questions 94–103",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 94–103",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-coulter": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-coulter",
+    "topic": "Practical: electrical cell counting",
+    "subtopic": "Combined notes, practical questions 104–111",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 104–111",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-diffusion": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-diffusion",
+    "topic": "Practical: diffusion slopes and uncertainty",
+    "subtopic": "Combined notes, practical questions 112–116",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 112–116",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-audiometry": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-audiometry",
+    "topic": "Practical: sound levels and audiograms",
+    "subtopic": "Sound-level references, audiogram comparison and measurement uncertainty",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ear-anatomy",
+      "biophysics-sensory-biophysics"
+    ],
+    "sources": [
+      {
+        "title": "Original audiogram measurement teaching",
+        "locator": "Sound-level references, audiogram comparison and measurement uncertainty",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-practical-biosignals": {
+    "subject": "biophysics",
+    "lesson": "biophysics-practical-biosignals",
+    "topic": "Practical: ECG calibration and pulse timing",
+    "subtopic": "Combined notes, practical questions 143–157",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Biophysics I–II and combined theory/practical notes",
+        "locator": "Combined notes, practical questions 143–157",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "genetic-therapy-delivery": {
+    "subject": "genetics",
+    "lesson": "genetic-therapy-delivery",
+    "topic": "Gene therapy: target, delivery and evidence",
+    "subtopic": "Topic 14: Genetic Therapy — therapeutic goals, delivery systems, viral vectors, and in-vivo versus ex-vivo approaches",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "genetic-testing",
+      "protein-trafficking"
+    ],
+    "sources": [
+      {
+        "title": "Medical Genetics and Immunology I — 2026 Genetics Topic List",
+        "locator": "Topic 14: Genetic Therapy — therapeutic goals, delivery systems, viral vectors, and in-vivo versus ex-vivo approaches",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "physiology-membrane-foundations": {
+    "subject": "physiology",
+    "lesson": "physiology-membrane-foundations",
+    "topic": "Physiology Foundations: Membrane Transport and Resting Potential",
+    "subtopic": "Membrane transport; resting voltage, selective permeability and potassium equilibrium potential",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Membrane physiology: public scientific references",
+        "locator": "Membrane transport; resting voltage, selective permeability and potassium equilibrium potential",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biochemistry-enzyme-foundations": {
+    "subject": "biochemistry",
+    "lesson": "biochemistry-enzyme-foundations",
+    "topic": "Biochemistry Foundations: Enzymes, Kinetics and Regulation",
+    "subtopic": "Catalysis, Michaelis–Menten initial-rate kinetics, competitive inhibition and feedback regulation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Enzymes and kinetics: public scientific references",
+        "locator": "Catalysis, Michaelis–Menten initial-rate kinetics, competitive inhibition and feedback regulation",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "genetics-genome-foundations": {
+    "subject": "genetics",
+    "lesson": "genetics-genome-foundations",
+    "topic": "Genetics Foundations: Genome, Inheritance and Gene Expression",
+    "subtopic": "Genome and gene definitions; transcription and translation; autosomal inheritance and independent pregnancy probabilities",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "NHGRI and MedlinePlus Genetics: genome and inheritance",
+        "locator": "Genome and gene definitions; transcription and translation; autosomal inheritance and independent pregnancy probabilities",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "biophysics-membrane-foundations": {
+    "subject": "biophysics",
+    "lesson": "biophysics-membrane-foundations",
+    "topic": "Biophysics Foundations: Diffusion, Osmosis and Membranes",
+    "subtopic": "Diffusion and osmosis; Fick diffusion model; membrane permeability and cell-volume responses",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Diffusion and membranes: public scientific references",
+        "locator": "Diffusion and osmosis; Fick diffusion model; membrane permeability and cell-volume responses",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "histogram-bin-counts-example": {
+    "subject": "biostatistics",
+    "lesson": "histogram-bin-counts-example",
+    "topic": "Histograms: count observations within defined bins",
+    "subtopic": "NIST Dataplot: Histogram; original fictional examples and calculations.",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Original statistical foundations",
+        "locator": "NIST Dataplot: Histogram; original fictional examples and calculations.",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "mean-median-extreme-value-comparison": {
+    "subject": "biostatistics",
+    "lesson": "mean-median-extreme-value-comparison",
+    "topic": "Mean and median: effect of one extreme value",
+    "subtopic": "NIST: Measures of Location; original fictional examples and calculations.",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "histogram-bin-counts-example"
+    ],
+    "sources": [
+      {
+        "title": "Original statistical foundations",
+        "locator": "NIST: Measures of Location; original fictional examples and calculations.",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "same-center-different-data-spread": {
+    "subject": "biostatistics",
+    "lesson": "same-center-different-data-spread",
+    "topic": "Same centre, different spread",
+    "subtopic": "NIST: Measures of Scale; original fictional examples and calculations.",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "mean-median-extreme-value-comparison"
+    ],
+    "sources": [
+      {
+        "title": "Original statistical foundations",
+        "locator": "NIST: Measures of Scale; original fictional examples and calculations.",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "standard-deviation-standard-error": {
+    "subject": "biostatistics",
+    "lesson": "standard-deviation-standard-error",
+    "topic": "Standard deviation and standard error: what varies?",
+    "subtopic": "NIST: Confidence Limits for the Mean; original fictional examples and calculations.",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "same-center-different-data-spread"
+    ],
+    "sources": [
+      {
+        "title": "Original statistical foundations",
+        "locator": "NIST: Confidence Limits for the Mean; original fictional examples and calculations.",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "adenylate-kinase-charge-conservation": {
+    "subject": "biochemistry",
+    "lesson": "adenylate-kinase-charge-conservation",
+    "topic": "ATP amount and energy charge: track the whole pool",
+    "subtopic": "Energy charge: definition, conservation and weighted-pool examples",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "enzyme-kinetics",
+      "glycolysis"
+    ],
+    "sources": [
+      {
+        "title": "Original adenylate-pool models",
+        "locator": "Energy charge: definition, conservation and weighted-pool examples",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "cochlear-fluid-voltage-reference": {
+    "subject": "physiology",
+    "lesson": "cochlear-fluid-voltage-reference",
+    "topic": "Cochlear fluids: which side and which voltage reference?",
+    "subtopic": "Original reference/timing exercises; biological context from named primary studies",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "membrane-potentials",
+      "special-senses"
+    ],
+    "sources": [
+      {
+        "title": "Original cochlear voltage-reference models",
+        "locator": "Original reference/timing exercises; biological context from named primary studies",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "auditory-frequency-level-coding": {
+    "subject": "physiology",
+    "lesson": "auditory-frequency-level-coding",
+    "topic": "Hearing: separate sound cycles, spike count and spike timing",
+    "subtopic": "Original reference/timing exercises; biological context from named primary studies",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "special-senses",
+      "synaptic-integration"
+    ],
+    "sources": [
+      {
+        "title": "Original sound-cycle and event-timing models",
+        "locator": "Original reference/timing exercises; biological context from named primary studies",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "peroxisome-pts1-pex5-cargo": {
+    "subject": "cell-biology",
+    "lesson": "peroxisome-pts1-pex5-cargo",
+    "topic": "Peroxisomal import: cargo signal and receptor",
+    "subtopic": "Selected compartmental-targeting mechanisms: original source-checked explanation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "translation",
+      "protein-trafficking"
+    ],
+    "sources": [
+      {
+        "title": "Original peroxisomal signal/receptor teaching",
+        "locator": "Selected compartmental-targeting mechanisms: original source-checked explanation",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "lysosomal-m6p-tag-receptor-recycling": {
+    "subject": "cell-biology",
+    "lesson": "lysosomal-m6p-tag-receptor-recycling",
+    "topic": "Lysosomal enzyme sorting: tag, receptor and destination",
+    "subtopic": "Selected compartmental-targeting mechanisms: original source-checked explanation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "protein-trafficking",
+      "er-protein-quality-control"
+    ],
+    "sources": [
+      {
+        "title": "Original lysosomal sorting and receptor-reuse teaching",
+        "locator": "Selected compartmental-targeting mechanisms: original source-checked explanation",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "synonymous-variant-sequence-readout-scope": {
+    "subject": "genetics",
+    "lesson": "synonymous-variant-sequence-readout-scope",
+    "topic": "Synonymous variants: separate coding consequence from measured function",
+    "subtopic": "Sequence context, coding consequence and the scope of functional readouts",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "translation",
+      "rna-processing"
+    ],
+    "sources": [
+      {
+        "title": "Original sequence-context and readout teaching",
+        "locator": "Sequence context, coding consequence and the scope of functional readouts",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "antibody-mutation-class-switch": {
+    "subject": "genetics",
+    "lesson": "antibody-mutation-class-switch",
+    "topic": "Antibody diversification: mutation, selection and class switching",
+    "subtopic": "Variable-region sequence, heavy-chain class and the scope of lineage evidence",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "innate-adaptive",
+      "genetics-genome-foundations"
+    ],
+    "sources": [
+      {
+        "title": "Original antibody-diversification and lineage-evidence teaching",
+        "locator": "Variable-region sequence, heavy-chain class and the scope of lineage evidence",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "serine-one-carbon-donor-carrier-cofactor": {
+    "subject": "biochemistry",
+    "lesson": "serine-one-carbon-donor-carrier-cofactor",
+    "topic": "Serine and glycine: donor, carrier and cofactor",
+    "subtopic": "Amino-acid carbon skeletons and one-carbon metabolism; original reaction-role and event-ledger introduction",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "biochemistry-enzyme-foundations"
+    ],
+    "sources": [
+      {
+        "title": "Original serine/glycine reaction-role lesson",
+        "locator": "Amino-acid carbon skeletons and one-carbon metabolism; original reaction-role and event-ledger introduction",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "pentose-phosphate-nadph-ribose": {
+    "subject": "biochemistry",
+    "lesson": "pentose-phosphate-nadph-ribose",
+    "topic": "Pentose phosphate pathway: separate NADPH from ribose needs",
+    "subtopic": "Carbohydrate branch points and reducing-equivalent bookkeeping",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "biochemistry-enzyme-foundations",
+      "glycolysis"
+    ],
+    "sources": [
+      {
+        "title": "Original pentose-phosphate carbon and redox ledgers",
+        "locator": "Carbohydrate branch points and reducing-equivalent bookkeeping",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "cohort-case-control-denominators": {
+    "subject": "biostatistics",
+    "lesson": "cohort-case-control-denominators",
+    "topic": "Cohort and case-control studies: identify the denominator",
+    "subtopic": "Study design and denominators",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "standard-deviation-standard-error"
+    ],
+    "sources": [
+      {
+        "title": "Original case-control denominator models",
+        "locator": "Study design and denominators",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "allele-and-genotype-counts": {
+    "subject": "genetics",
+    "lesson": "allele-and-genotype-counts",
+    "topic": "Allele copies and genotypes: count the denominators",
+    "subtopic": "Population counting and model assumptions",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "genetics-genome-foundations"
+    ],
+    "sources": [
+      {
+        "title": "Original allele-copy and genotype-count models",
+        "locator": "Population counting and model assumptions",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "venous-muscle-pump-direction": {
+    "subject": "physiology",
+    "lesson": "venous-muscle-pump-direction",
+    "topic": "Venous return: trace a muscle pump through compression and refill",
+    "subtopic": "Valve direction, prescribed pressure and cycle accounting",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "biophysics-fluid-flow"
+    ],
+    "sources": [
+      {
+        "title": "Original ideal-valve and segment-volume models",
+        "locator": "Valve direction, prescribed pressure and cycle accounting",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "retinal-on-off-bipolar-response": {
+    "subject": "histology",
+    "lesson": "retinal-on-off-bipolar-response",
+    "topic": "Retina: compare ON and OFF bipolar responses",
+    "subtopic": "Receiving-cell mechanisms at the first retinal synapse",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "special-senses"
+    ],
+    "sources": [
+      {
+        "title": "Original retinal receiving-pathway explanations",
+        "locator": "Receiving-cell mechanisms at the first retinal synapse",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "fatty-acid-oxidation-compartment-route": {
+    "subject": "biochemistry",
+    "lesson": "fatty-acid-oxidation-compartment-route",
+    "topic": "Fatty-acid oxidation: follow a long-chain acyl group into the matrix",
+    "subtopic": "Activation, transport and oxidation as distinct operations",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lipid-metabolism"
+    ],
+    "sources": [
+      {
+        "title": "Original fatty-acid route and carbon-ledger teaching",
+        "locator": "Activation, transport and oxidation as distinct operations",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "genetic-drift-sampling-model": {
+    "subject": "genetics",
+    "lesson": "genetic-drift-sampling-model",
+    "topic": "Genetic drift: compare two sampling procedures",
+    "subtopic": "Population models: sampling units and procedure assumptions",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "allele-and-genotype-counts"
+    ],
+    "sources": [
+      {
+        "title": "Original token-sampling explanations and exact distributions",
+        "locator": "Population models: sampling units and procedure assumptions",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "thyroid-parathyroid-pattern-reasoning": {
+    "subject": "histology",
+    "lesson": "thyroid-parathyroid-pattern-reasoning",
+    "topic": "Thyroid and parathyroid: follicles, cell mechanisms and development",
+    "subtopic": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy"
+    ],
+    "sources": [
+      {
+        "title": "Original endocrine histology and developmental explanations",
+        "locator": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "adrenal-layers-signals-reasoning": {
+    "subject": "histology",
+    "lesson": "adrenal-layers-signals-reasoning",
+    "topic": "Adrenal: zones, steroid machinery and developmental lineages",
+    "subtopic": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy"
+    ],
+    "sources": [
+      {
+        "title": "Original endocrine histology and developmental explanations",
+        "locator": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "pituitary-glandular-neural-orientation": {
+    "subject": "histology",
+    "lesson": "pituitary-glandular-neural-orientation",
+    "topic": "Pituitary: tissue identification, hormone routes and development",
+    "subtopic": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy"
+    ],
+    "sources": [
+      {
+        "title": "Original endocrine histology and developmental explanations",
+        "locator": "Endocrine histology: practical architecture, cellular mechanisms and staged development",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "mammary-histology-and-development": {
+    "subject": "histology",
+    "lesson": "mammary-histology-and-development",
+    "topic": "Mammary histology: architecture, secretion and development",
+    "subtopic": "Mammary architecture, secretory differentiation, developmental compartments and defined regression mechanisms",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "epithelia",
+      "microscopy"
+    ],
+    "sources": [
+      {
+        "title": "Original mammary histology and development teaching",
+        "locator": "Mammary architecture, secretory differentiation, developmental compartments and defined regression mechanisms",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "female-tract-histology-and-development": {
+    "subject": "histology",
+    "lesson": "female-tract-histology-and-development",
+    "topic": "Female reproductive tract: slides, staining and development",
+    "subtopic": "Female tract architecture, epithelial function, staining comparisons and developmental evidence",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "epithelia"
+    ],
+    "sources": [
+      {
+        "title": "Original female reproductive tract practical and development teaching",
+        "locator": "Female tract architecture, epithelial function, staining comparisons and developmental evidence",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "ovarian-histology-and-development": {
+    "subject": "histology",
+    "lesson": "ovarian-histology-and-development",
+    "topic": "Ovarian histology: specimens, development and experimental evidence",
+    "subtopic": "Part 12: ovarian tissue, germ and somatic development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "microscopy",
+      "reproductive-histology"
+    ],
+    "sources": [
+      {
+        "title": "Original ovarian practical and developmental-evidence teaching",
+        "locator": "Part 12: ovarian tissue, germ and somatic development",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "vestibular-sensors-rotation-translation": {
+    "subject": "histology",
+    "lesson": "vestibular-sensors-rotation-translation",
+    "topic": "Vestibular tissues: connect architecture, motion and development",
+    "subtopic": "Vestibular sensory architecture, mechanical input and developmental evidence",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ear-anatomy",
+      "special-senses"
+    ],
+    "sources": [
+      {
+        "title": "Original vestibular structure, motion and development explanations",
+        "locator": "Vestibular sensory architecture, mechanical input and developmental evidence",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "retinal-structure-light-signal-direction": {
+    "subject": "histology",
+    "lesson": "retinal-structure-light-signal-direction",
+    "topic": "Retinal layers and eye development: read structure, then test the explanation",
+    "subtopic": "Retinal architecture, specimen interpretation and component-specific developmental origins",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "histology-foundations-tissues",
+      "face-palate-sense-development"
+    ],
+    "sources": [
+      {
+        "title": "Original retinal structure and development teaching",
+        "locator": "Retinal architecture, specimen interpretation and component-specific developmental origins",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "thoracic-cage-landmarks": {
+    "subject": "anatomy",
+    "lesson": "thoracic-cage-landmarks",
+    "topic": "Thoracic cage and landmarks",
+    "subtopic": "Thoracic Wall sections 2-7, 51-53",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Thoracic Wall sections 2-7, 51-53",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "intercostal-neurovascular-plane": {
+    "subject": "anatomy",
+    "lesson": "intercostal-neurovascular-plane",
+    "topic": "Intercostal muscles and supply",
+    "subtopic": "Thoracic Wall sections 8-15",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "thoracic-cage-landmarks"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Thoracic Wall sections 8-15",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "diaphragm-openings": {
+    "subject": "anatomy",
+    "lesson": "diaphragm-openings",
+    "topic": "Diaphragm structure and sensation",
+    "subtopic": "Diaphragm sections 16-23",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "intercostal-neurovascular-plane"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Diaphragm sections 16-23",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pleura-and-recesses": {
+    "subject": "anatomy",
+    "lesson": "pleura-and-recesses",
+    "topic": "Pleural layers and recesses",
+    "subtopic": "Pleura sections 24-31, 51-57",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "diaphragm-openings"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Pleura sections 24-31, 51-57",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lung-lobes-surface": {
+    "subject": "anatomy",
+    "lesson": "lung-lobes-surface",
+    "topic": "Lung surfaces and lobes",
+    "subtopic": "Lungs sections 32-38, 51-53",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pleura-and-recesses"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Lungs sections 32-38, 51-53",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lung-roots-bronchi": {
+    "subject": "anatomy",
+    "lesson": "lung-roots-bronchi",
+    "topic": "Airway and root relationships",
+    "subtopic": "Lungs sections 39-43; Mediastinum sections 14-18",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lung-lobes-surface"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Lungs sections 39-43; Mediastinum sections 14-18",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "bronchopulmonary-segments": {
+    "subject": "anatomy",
+    "lesson": "bronchopulmonary-segments",
+    "topic": "Segments, blood and lymph",
+    "subtopic": "Lungs sections 44-50",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lung-roots-bronchi"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Lungs sections 44-50",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "mediastinum-great-vessels": {
+    "subject": "anatomy",
+    "lesson": "mediastinum-great-vessels",
+    "topic": "Mediastinal compartments and vessels",
+    "subtopic": "Mediastinum sections 2-13, 19-24",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "bronchopulmonary-segments"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Mediastinum sections 2-13, 19-24",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "thorax-nerve-relations": {
+    "subject": "anatomy",
+    "lesson": "thorax-nerve-relations",
+    "topic": "Phrenic, vagal and recurrent pathways",
+    "subtopic": "Mediastinum sections 14-18, 32-34, 36",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "mediastinum-great-vessels"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Mediastinum sections 14-18, 32-34, 36",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "posterior-mediastinum-lymph": {
+    "subject": "anatomy",
+    "lesson": "posterior-mediastinum-lymph",
+    "topic": "Posterior mediastinal routes",
+    "subtopic": "Mediastinum sections 22-34, 37-39",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "thorax-nerve-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Mediastinum sections 22-34, 37-39",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pericardium-sinuses": {
+    "subject": "anatomy",
+    "lesson": "pericardium-sinuses",
+    "topic": "Pericardial layers and reflections",
+    "subtopic": "Pericardium sections 2-8, 34-36",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "posterior-mediastinum-lymph"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Pericardium sections 2-8, 34-36",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "heart-chambers-surfaces": {
+    "subject": "anatomy",
+    "lesson": "heart-chambers-surfaces",
+    "topic": "Chambers and internal landmarks",
+    "subtopic": "Heart Morphology sections 2-31, 39-41",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pericardium-sinuses"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Heart Morphology sections 2-31, 39-41",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "heart-valves-skeleton": {
+    "subject": "anatomy",
+    "lesson": "heart-valves-skeleton",
+    "topic": "Valves and fibrous support",
+    "subtopic": "Heart Morphology sections 20-22, 30-38, 42",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "heart-chambers-surfaces"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Heart Morphology sections 20-22, 30-38, 42",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "coronary-circulation": {
+    "subject": "anatomy",
+    "lesson": "coronary-circulation",
+    "topic": "Coronary arteries and venous return",
+    "subtopic": "Pericardium and Coronary sections 9-22",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "heart-valves-skeleton"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Pericardium and Coronary sections 9-22",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cardiac-conduction-autonomics": {
+    "subject": "anatomy",
+    "lesson": "cardiac-conduction-autonomics",
+    "topic": "Conduction and autonomic modulation",
+    "subtopic": "Pericardium and Coronary sections 23-31",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "coronary-circulation"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Pericardium and Coronary sections 23-31",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "thoracic-development": {
+    "subject": "anatomy",
+    "lesson": "thoracic-development",
+    "topic": "Respiratory and diaphragmatic development",
+    "subtopic": "Embryology sections 2-6; original lung-structure and observation-unit reasoning",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cardiac-conduction-autonomics"
+    ],
+    "sources": [
+      {
+        "title": "Authored thoracic anatomy with original lung-observation reasoning",
+        "locator": "Embryology sections 2-6; original lung-structure and observation-unit reasoning",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "heart-looping-septation": {
+    "subject": "anatomy",
+    "lesson": "heart-looping-septation",
+    "topic": "Heart tube and partitioning",
+    "subtopic": "Embryology sections 7-8",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "thoracic-development"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Embryology sections 7-8",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "fetal-circulation-transition": {
+    "subject": "anatomy",
+    "lesson": "fetal-circulation-transition",
+    "topic": "Fetal shunts and adult remnants",
+    "subtopic": "Embryology section 9; master fetal-circulation recall",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "heart-looping-septation"
+    ],
+    "sources": [
+      {
+        "title": "Volume I — Thorax",
+        "locator": "Embryology section 9; master fetal-circulation recall",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "abdominal-surface-map": {
+    "subject": "anatomy",
+    "lesson": "abdominal-surface-map",
+    "topic": "Abdominal regions and sectional orientation",
+    "subtopic": "1. Abdominal Regions and Surface Planes",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "1. Abdominal Regions and Surface Planes",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "abdominal-wall-layers": {
+    "subject": "anatomy",
+    "lesson": "abdominal-wall-layers",
+    "topic": "Abdominal wall layers and rectus sheath",
+    "subtopic": "2. Anterolateral Abdominal Wall: Layers; 3. Rectus Sheath, Linea Alba, and Arcuate Line; 6. Abdominal Wall Vessels, Nerves, and Lymphatics",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "abdominal-surface-map"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "2. Anterolateral Abdominal Wall: Layers; 3. Rectus Sheath, Linea Alba, and Arcuate Line; 6. Abdominal Wall Vessels, Nerves, and Lymphatics",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "posterior-abdominal-wall": {
+    "subject": "anatomy",
+    "lesson": "posterior-abdominal-wall",
+    "topic": "Posterior abdominal wall and lumbar relations",
+    "subtopic": "4. Posterior Abdominal Wall",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "abdominal-wall-layers"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "4. Posterior Abdominal Wall",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "inguinal-canal-relations": {
+    "subject": "anatomy",
+    "lesson": "inguinal-canal-relations",
+    "topic": "Inguinal canal and hernia relationships",
+    "subtopic": "5. Inguinal Canal",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "posterior-abdominal-wall"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "5. Inguinal Canal",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "peritoneal-organization": {
+    "subject": "anatomy",
+    "lesson": "peritoneal-organization",
+    "topic": "Peritoneum and organ position",
+    "subtopic": "8. Serous Membranes and the Peritoneal Cavity; 9. Intraperitoneal, Retroperitoneal, and Infraperitoneal Organs",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "inguinal-canal-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "8. Serous Membranes and the Peritoneal Cavity; 9. Intraperitoneal, Retroperitoneal, and Infraperitoneal Organs",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "omenta-and-lesser-sac": {
+    "subject": "anatomy",
+    "lesson": "omenta-and-lesser-sac",
+    "topic": "Omenta, lesser sac and epiploic foramen",
+    "subtopic": "10. Greater Omentum, Lesser Omentum, and Peritoneal Ligaments; 11. Lesser Sac and Epiploic Foramen",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "peritoneal-organization"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "10. Greater Omentum, Lesser Omentum, and Peritoneal Ligaments; 11. Lesser Sac and Epiploic Foramen",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "peritoneal-fluid-routes": {
+    "subject": "anatomy",
+    "lesson": "peritoneal-fluid-routes",
+    "topic": "Peritoneal recesses and fluid routes",
+    "subtopic": "12. Peritoneal Recesses and Pelvic Pouches",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "omenta-and-lesser-sac"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "12. Peritoneal Recesses and Pelvic Pouches",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "stomach-relations": {
+    "subject": "anatomy",
+    "lesson": "stomach-relations",
+    "topic": "Stomach position, relations and neurovascular supply",
+    "subtopic": "14. Stomach: Position, Parts, and Relations; 15. Stomach Blood Supply, Lymphatics, and Innervation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "peritoneal-fluid-routes"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "14. Stomach: Position, Parts, and Relations; 15. Stomach Blood Supply, Lymphatics, and Innervation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "duodenum-relations": {
+    "subject": "anatomy",
+    "lesson": "duodenum-relations",
+    "topic": "Duodenum and retroperitoneal relationships",
+    "subtopic": "16. Duodenum",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "stomach-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "16. Duodenum",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "liver-segments-and-porta": {
+    "subject": "anatomy",
+    "lesson": "liver-segments-and-porta",
+    "topic": "Liver surfaces, porta hepatis and functional divisions",
+    "subtopic": "17. Liver: Surfaces, Ligaments, and Porta Hepatis",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "duodenum-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "17. Liver: Surfaces, Ligaments, and Porta Hepatis",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "biliary-pathways": {
+    "subject": "anatomy",
+    "lesson": "biliary-pathways",
+    "topic": "Gallbladder and extrahepatic biliary pathways",
+    "subtopic": "18. Gallbladder and Biliary Tract",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "liver-segments-and-porta"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "18. Gallbladder and Biliary Tract",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pancreas-relations": {
+    "subject": "anatomy",
+    "lesson": "pancreas-relations",
+    "topic": "Pancreas and its duct relationships",
+    "subtopic": "19. Pancreas",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "biliary-pathways"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "19. Pancreas",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "spleen-relations": {
+    "subject": "anatomy",
+    "lesson": "spleen-relations",
+    "topic": "Spleen, hilum and splenic ligaments",
+    "subtopic": "20. Spleen",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pancreas-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "20. Spleen",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "small-intestine-mesentery": {
+    "subject": "anatomy",
+    "lesson": "small-intestine-mesentery",
+    "topic": "Jejunum, ileum and the mesenteric root",
+    "subtopic": "22. Jejunum and Ileum",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "spleen-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "22. Jejunum and Ileum",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cecum-appendix-colon": {
+    "subject": "anatomy",
+    "lesson": "cecum-appendix-colon",
+    "topic": "Cecum, appendix and colon",
+    "subtopic": "23. Cecum and Appendix; 24. Colon: Parts and External Features",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "small-intestine-mesentery"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "23. Cecum and Appendix; 24. Colon: Parts and External Features",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "rectum-anal-transition": {
+    "subject": "anatomy",
+    "lesson": "rectum-anal-transition",
+    "topic": "Rectum and the anal transition",
+    "subtopic": "25. Rectum and Anal Canal; 41. Hindgut, Cloaca, and Anal Canal Development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cecum-appendix-colon"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "25. Rectum and Anal Canal; 41. Hindgut, Cloaca, and Anal Canal Development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "abdominal-arterial-territories": {
+    "subject": "anatomy",
+    "lesson": "abdominal-arterial-territories",
+    "topic": "Celiac, superior mesenteric and inferior mesenteric territories",
+    "subtopic": "28. Celiac Trunk; 29. Superior Mesenteric Artery; 30. Inferior Mesenteric Artery",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "rectum-anal-transition"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "28. Celiac Trunk; 29. Superior Mesenteric Artery; 30. Inferior Mesenteric Artery",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "abdomen-portal-relations": {
+    "subject": "anatomy",
+    "lesson": "abdomen-portal-relations",
+    "topic": "Portal venous routes and systemic connections",
+    "subtopic": "26. Portal-Systemic Anastomoses; 31. Portal Vein and Caval Drainage",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "abdominal-arterial-territories"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "26. Portal-Systemic Anastomoses; 31. Portal Vein and Caval Drainage",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "abdominal-lymph-autonomics": {
+    "subject": "anatomy",
+    "lesson": "abdominal-lymph-autonomics",
+    "topic": "Abdominal lymphatics and autonomic pathways",
+    "subtopic": "32. Abdominal Lymphatics; 33. Autonomic Innervation of Abdominal Viscera",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "abdomen-portal-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "32. Abdominal Lymphatics; 33. Autonomic Innervation of Abdominal Viscera",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "foregut-development": {
+    "subject": "anatomy",
+    "lesson": "foregut-development",
+    "topic": "Foregut rotation and organ development",
+    "subtopic": "36. Gut Tube Overview; 37. Stomach Rotation and Peritoneal Consequences; 38. Duodenum, Pancreas, and Biliary Development; 39. Liver, Gallbladder, and Spleen Development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "abdominal-lymph-autonomics"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "36. Gut Tube Overview; 37. Stomach Rotation and Peritoneal Consequences; 38. Duodenum, Pancreas, and Biliary Development; 39. Liver, Gallbladder, and Spleen Development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "midgut-rotation": {
+    "subject": "anatomy",
+    "lesson": "midgut-rotation",
+    "topic": "Midgut herniation, rotation and fixation",
+    "subtopic": "40. Midgut Herniation and Rotation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "foregut-development"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "40. Midgut Herniation and Rotation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "abdominal-regional-reasoning": {
+    "subject": "anatomy",
+    "lesson": "abdominal-regional-reasoning",
+    "topic": "Reconstruct an upper abdominal section",
+    "subtopic": "11. Lesser Sac and Epiploic Foramen; 16. Duodenum; 19. Pancreas; 31. Portal Vein and Caval Drainage",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "midgut-rotation"
+    ],
+    "sources": [
+      {
+        "title": "Volume II — Abdomen",
+        "locator": "11. Lesser Sac and Epiploic Foramen; 16. Duodenum; 19. Pancreas; 31. Portal Vein and Caval Drainage",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pelvic-boundaries": {
+    "subject": "anatomy",
+    "lesson": "pelvic-boundaries",
+    "topic": "Pelvic inlet, outlet and walls",
+    "subtopic": "1. Pelvic Overview and True Pelvis; 2. Pelvic Inlet, Outlet, and Diameters; 3. Pelvic Walls: Bones, Ligaments, Membranes, and Muscles",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "1. Pelvic Overview and True Pelvis; 2. Pelvic Inlet, Outlet, and Diameters; 3. Pelvic Walls: Bones, Ligaments, Membranes, and Muscles",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pelvic-floor-support": {
+    "subject": "anatomy",
+    "lesson": "pelvic-floor-support",
+    "topic": "Pelvic diaphragm and visceral support",
+    "subtopic": "5. Pelvic Diaphragm and Levator Ani",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pelvic-boundaries"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "5. Pelvic Diaphragm and Levator Ani",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pelvic-foramina-nerves": {
+    "subject": "anatomy",
+    "lesson": "pelvic-foramina-nerves",
+    "topic": "Sciatic foramina and pelvic nerve routes",
+    "subtopic": "4. Greater and Lesser Sciatic Foramina; 7. Lumbar Plexus, Sacral Plexus, and Pudendal Nerve",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pelvic-floor-support"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "4. Greater and Lesser Sciatic Foramina; 7. Lumbar Plexus, Sacral Plexus, and Pudendal Nerve",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pelvic-vessels-lymph": {
+    "subject": "anatomy",
+    "lesson": "pelvic-vessels-lymph",
+    "topic": "Pelvic vessels and lymphatic drainage",
+    "subtopic": "6. Internal Iliac Artery; 8. Pelvic Lymphatics",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pelvic-foramina-nerves"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "6. Internal Iliac Artery; 8. Pelvic Lymphatics",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "kidney-organization": {
+    "subject": "anatomy",
+    "lesson": "kidney-organization",
+    "topic": "Kidney coverings, hilum and collecting system",
+    "subtopic": "9. Kidney Position, Capsules, Hilum, and Sinus; 10. Kidney Internal Morphology and Collecting System; 11. Kidney Relations, Vessels, Lymphatics, and Nerves",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pelvic-vessels-lymph"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "9. Kidney Position, Capsules, Hilum, and Sinus; 10. Kidney Internal Morphology and Collecting System; 11. Kidney Relations, Vessels, Lymphatics, and Nerves",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pelvis-urinary-route": {
+    "subject": "anatomy",
+    "lesson": "pelvis-urinary-route",
+    "topic": "Ureters and the route into the bladder",
+    "subtopic": "12. Ureter",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "kidney-organization"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "12. Ureter",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "bladder-urethrae": {
+    "subject": "anatomy",
+    "lesson": "bladder-urethrae",
+    "topic": "Bladder, trigone and urethral differences",
+    "subtopic": "13. Urinary Bladder; 14. Trigone and Bladder Wall; 15. Female Urethra; 16. Male Urethra",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pelvis-urinary-route"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "13. Urinary Bladder; 14. Trigone and Bladder Wall; 15. Female Urethra; 16. Male Urethra",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "testis-spermatic-cord": {
+    "subject": "anatomy",
+    "lesson": "testis-spermatic-cord",
+    "topic": "Testis, scrotum and spermatic cord",
+    "subtopic": "17. Testis and Scrotum; 19. Spermatic Cord Coverings and Contents",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "bladder-urethrae"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "17. Testis and Scrotum; 19. Spermatic Cord Coverings and Contents",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "male-reproductive-ducts": {
+    "subject": "anatomy",
+    "lesson": "male-reproductive-ducts",
+    "topic": "Sperm pathway, seminal vesicles and prostate",
+    "subtopic": "18. Epididymis, Ductus Deferens, and Sperm Pathway; 20. Seminal Vesicles and Ejaculatory Duct; 21. Prostate",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "testis-spermatic-cord"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "18. Epididymis, Ductus Deferens, and Sperm Pathway; 20. Seminal Vesicles and Ejaculatory Duct; 21. Prostate",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "erectile-anatomy": {
+    "subject": "anatomy",
+    "lesson": "erectile-anatomy",
+    "topic": "Erectile tissues and external genital anatomy",
+    "subtopic": "22. Penis and Mechanism of Erection; 29. External Female Genital Organs",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "male-reproductive-ducts"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "22. Penis and Mechanism of Erection; 29. External Female Genital Organs",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ovary-uterine-tube": {
+    "subject": "anatomy",
+    "lesson": "ovary-uterine-tube",
+    "topic": "Ovary and uterine tube relationships",
+    "subtopic": "23. Ovary; 24. Uterine Tube",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "erectile-anatomy"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "23. Ovary; 24. Uterine Tube",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "uterus-support-vessels": {
+    "subject": "anatomy",
+    "lesson": "uterus-support-vessels",
+    "topic": "Uterus, supports and uterine vessel relations",
+    "subtopic": "25. Uterus: Parts, Position, and Supports; 26. Broad Ligament and Parametrium; 27. Uterine Vessels, Lymphatics, and Relations",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ovary-uterine-tube"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "25. Uterus: Parts, Position, and Supports; 26. Broad Ligament and Parametrium; 27. Uterine Vessels, Lymphatics, and Relations",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "vagina-pelvic-relations": {
+    "subject": "anatomy",
+    "lesson": "vagina-pelvic-relations",
+    "topic": "Vagina and its pelvic relations",
+    "subtopic": "28. Vagina",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "uterus-support-vessels"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "28. Vagina",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "perineal-spaces": {
+    "subject": "anatomy",
+    "lesson": "perineal-spaces",
+    "topic": "Perineal triangles, pouches and perineal body",
+    "subtopic": "30. Perineal Region and Triangles; 32. Superficial Perineal Pouch; 33. Deep Perineal Pouch and Urogenital Diaphragm",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "vagina-pelvic-relations"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "30. Perineal Region and Triangles; 32. Superficial Perineal Pouch; 33. Deep Perineal Pouch and Urogenital Diaphragm",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ischioanal-pudendal": {
+    "subject": "anatomy",
+    "lesson": "ischioanal-pudendal",
+    "topic": "Ischioanal fossa, pudendal canal and anal region",
+    "subtopic": "31. Ischioanal Fossa; 34. Pudendal Canal and Internal Pudendal Pathway; 35. Rectum and Anal Canal",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "perineal-spaces"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "31. Ischioanal Fossa; 34. Pudendal Canal and Internal Pudendal Pathway; 35. Rectum and Anal Canal",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "urinary-development": {
+    "subject": "anatomy",
+    "lesson": "urinary-development",
+    "topic": "Development of kidneys, bladder and urethra",
+    "subtopic": "36. Intermediate Mesoderm and Urogenital Ridge; 37. Kidney Development; 38. Bladder and Urethra Development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ischioanal-pudendal"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "36. Intermediate Mesoderm and Urogenital Ridge; 37. Kidney Development; 38. Bladder and Urethra Development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "gonadal-duct-development": {
+    "subject": "anatomy",
+    "lesson": "gonadal-duct-development",
+    "topic": "Gonadal differentiation and genital ducts",
+    "subtopic": "39. Gonad Formation and Primordial Germ Cells; 40. Male Genital Development; 41. Female Genital Development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "urinary-development"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "39. Gonad Formation and Primordial Germ Cells; 40. Male Genital Development; 41. Female Genital Development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "gonadal-descent": {
+    "subject": "anatomy",
+    "lesson": "gonadal-descent",
+    "topic": "External genital development and gonadal descent",
+    "subtopic": "42. External Genitalia and Descent of Gonads",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "gonadal-duct-development"
+    ],
+    "sources": [
+      {
+        "title": "Volume III — Pelvis, Perineum and Urogenital Anatomy",
+        "locator": "42. External Genitalia and Descent of Gonads",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "neck-triangles": {
+    "subject": "anatomy",
+    "lesson": "neck-triangles",
+    "topic": "Neck triangles and surface orientation",
+    "subtopic": "1. Regions and Neck Triangles; 3. Cervical Plexus, Ansa Cervicalis, and Phrenic Nerve",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "1. Regions and Neck Triangles; 3. Cervical Plexus, Ansa Cervicalis, and Phrenic Nerve",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cervical-fascia-sympathetic": {
+    "subject": "anatomy",
+    "lesson": "cervical-fascia-sympathetic",
+    "topic": "Cervical fascia, carotid sheath and sympathetic trunk",
+    "subtopic": "2. Deep Cervical Fascia and Carotid Sheath; 4. Cervical Sympathetic Trunk",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "neck-triangles"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "2. Deep Cervical Fascia and Carotid Sheath; 4. Cervical Sympathetic Trunk",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "head-neck-vessels-lymph": {
+    "subject": "anatomy",
+    "lesson": "head-neck-vessels-lymph",
+    "topic": "Head and neck arteries, veins and lymphatics",
+    "subtopic": "5. Head and Neck Arterial Supply; 6. Venous Drainage and Lymphatics of Head and Neck",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cervical-fascia-sympathetic"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "5. Head and Neck Arterial Supply; 6. Venous Drainage and Lymphatics of Head and Neck",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "oral-cavity-palate-teeth": {
+    "subject": "anatomy",
+    "lesson": "oral-cavity-palate-teeth",
+    "topic": "Oral cavity, palate and teeth",
+    "subtopic": "7. Oral Cavity Overview; 8. Palate; 9. Teeth",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "head-neck-vessels-lymph"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "7. Oral Cavity Overview; 8. Palate; 9. Teeth",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "head-neck-tongue-map": {
+    "subject": "anatomy",
+    "lesson": "head-neck-tongue-map",
+    "topic": "Tongue structure, function and nerve map",
+    "subtopic": "10. Tongue Structure and Innervation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "oral-cavity-palate-teeth"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "10. Tongue Structure and Innervation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "salivary-glands": {
+    "subject": "anatomy",
+    "lesson": "salivary-glands",
+    "topic": "Salivary glands and their nerve routes",
+    "subtopic": "12. Salivary Glands",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "head-neck-tongue-map"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "12. Salivary Glands",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "tmj-deep-fossae": {
+    "subject": "anatomy",
+    "lesson": "tmj-deep-fossae",
+    "topic": "Mastication, TMJ and deep facial spaces",
+    "subtopic": "11. Temporomandibular Joint and Mastication; 13. Infratemporal and Pterygopalatine Fossae",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "salivary-glands"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "11. Temporomandibular Joint and Mastication; 13. Infratemporal and Pterygopalatine Fossae",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "nose-sinuses": {
+    "subject": "anatomy",
+    "lesson": "nose-sinuses",
+    "topic": "Nasal cavity and paranasal drainage",
+    "subtopic": "14. Nasal Cavity and Paranasal Sinuses",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "tmj-deep-fossae"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "14. Nasal Cavity and Paranasal Sinuses",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pharynx-swallowing": {
+    "subject": "anatomy",
+    "lesson": "pharynx-swallowing",
+    "topic": "Pharynx, tonsils and swallowing",
+    "subtopic": "15. Pharynx and Retropharyngeal Space; 16. Tonsils and Pharyngeal Lymphatic Ring; 19. Swallowing Mechanism",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "nose-sinuses"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "15. Pharynx and Retropharyngeal Space; 16. Tonsils and Pharyngeal Lymphatic Ring; 19. Swallowing Mechanism",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "larynx-voice-airway": {
+    "subject": "anatomy",
+    "lesson": "larynx-voice-airway",
+    "topic": "Laryngeal skeleton, muscles and innervation",
+    "subtopic": "17. Laryngeal Cartilages, Membranes, and Cavity; 18. Laryngeal Muscles and Innervation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pharynx-swallowing"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "17. Laryngeal Cartilages, Membranes, and Cavity; 18. Laryngeal Muscles and Innervation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "skull-scalp-face": {
+    "subject": "anatomy",
+    "lesson": "skull-scalp-face",
+    "topic": "Skull foramina, scalp and facial layers",
+    "subtopic": "28. Skull Exits and Lesion Logic",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "larynx-voice-airway"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "28. Skull Exits and Lesion Logic",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "orbit-anatomy": {
+    "subject": "anatomy",
+    "lesson": "orbit-anatomy",
+    "topic": "Orbit, eyeball and visual pathway",
+    "subtopic": "21. CN I and CN II; 22. CN III, IV, and VI",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "skull-scalp-face"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "21. CN I and CN II; 22. CN III, IV, and VI",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ear-anatomy": {
+    "subject": "anatomy",
+    "lesson": "ear-anatomy",
+    "topic": "External, middle and inner ear",
+    "subtopic": "25. CN VIII Vestibulocochlear Nerve",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "orbit-anatomy"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "25. CN VIII Vestibulocochlear Nerve",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cranial-nerve-organization": {
+    "subject": "anatomy",
+    "lesson": "cranial-nerve-organization",
+    "topic": "Cranial nerve nuclei and functional columns",
+    "subtopic": "20. Cranial Nerve Nuclei and Fiber Types",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ear-anatomy"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "20. Cranial Nerve Nuclei and Fiber Types",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ocular-motor-nerves": {
+    "subject": "anatomy",
+    "lesson": "ocular-motor-nerves",
+    "topic": "Ocular motor nerves and lesion localization",
+    "subtopic": "22. CN III, IV, and VI",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cranial-nerve-organization"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "22. CN III, IV, and VI",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "trigeminal-pathways": {
+    "subject": "anatomy",
+    "lesson": "trigeminal-pathways",
+    "topic": "Trigeminal divisions and sensory territories",
+    "subtopic": "23. CN V Trigeminal Nerve",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ocular-motor-nerves"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "23. CN V Trigeminal Nerve",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "facial-nerve-course": {
+    "subject": "anatomy",
+    "lesson": "facial-nerve-course",
+    "topic": "Facial nerve course and branch functions",
+    "subtopic": "24. CN VII Facial Nerve",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "trigeminal-pathways"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "24. CN VII Facial Nerve",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lower-cranial-nerves": {
+    "subject": "anatomy",
+    "lesson": "lower-cranial-nerves",
+    "topic": "Glossopharyngeal, vagus, accessory and hypoglossal nerves",
+    "subtopic": "26. CN IX, X, XI, and XII",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "facial-nerve-course"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "26. CN IX, X, XI, and XII",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cranial-parasympathetics": {
+    "subject": "anatomy",
+    "lesson": "cranial-parasympathetics",
+    "topic": "Cranial parasympathetic ganglia",
+    "subtopic": "27. Parasympathetic Cranial Ganglia",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lower-cranial-nerves"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "27. Parasympathetic Cranial Ganglia",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "meninges-dural-folds": {
+    "subject": "anatomy",
+    "lesson": "meninges-dural-folds",
+    "topic": "Meninges, dural folds and intracranial spaces",
+    "subtopic": "29. Meninges and Dural Reflections",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cranial-parasympathetics"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "29. Meninges and Dural Reflections",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "venous-sinuses": {
+    "subject": "anatomy",
+    "lesson": "venous-sinuses",
+    "topic": "Dural venous sinuses and cavernous sinus relations",
+    "subtopic": "30. Dural Venous Sinuses and Cavernous Sinus",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "meninges-dural-folds"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "30. Dural Venous Sinuses and Cavernous Sinus",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cerebral-blood-supply": {
+    "subject": "anatomy",
+    "lesson": "cerebral-blood-supply",
+    "topic": "Cerebral arteries, territories and collateral routes",
+    "subtopic": "31. Cerebral Arteries and Circle of Willis",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "venous-sinuses"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "31. Cerebral Arteries and Circle of Willis",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ventricles-csf": {
+    "subject": "anatomy",
+    "lesson": "ventricles-csf",
+    "topic": "Ventricles, CSF flow and internal landmarks",
+    "subtopic": "32. Ventricular System and CSF Flow; 33. Lateral Ventricles and Internal Brain Landmarks",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cerebral-blood-supply"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "32. Ventricular System and CSF Flow; 33. Lateral Ventricles and Internal Brain Landmarks",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "basal-ganglia-diencephalon": {
+    "subject": "anatomy",
+    "lesson": "basal-ganglia-diencephalon",
+    "topic": "Basal ganglia, internal capsule and diencephalon",
+    "subtopic": "34. Basal Ganglia and Internal Capsule; 35. Thalamus and Hypothalamus",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ventricles-csf"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "34. Basal Ganglia and Internal Capsule; 35. Thalamus and Hypothalamus",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "brainstem-localization": {
+    "subject": "anatomy",
+    "lesson": "brainstem-localization",
+    "topic": "Brainstem landmarks and crossed findings",
+    "subtopic": "36. Brainstem External Anatomy",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "basal-ganglia-diencephalon"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "36. Brainstem External Anatomy",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cerebellum-connections": {
+    "subject": "anatomy",
+    "lesson": "cerebellum-connections",
+    "topic": "Cerebellum, peduncles and fourth ventricle",
+    "subtopic": "37. Cerebellum and Fourth Ventricle",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "brainstem-localization"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "37. Cerebellum and Fourth Ventricle",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "spinal-cord-tracts": {
+    "subject": "anatomy",
+    "lesson": "spinal-cord-tracts",
+    "topic": "Spinal cord, meninges and long pathways",
+    "subtopic": "38. Spinal Cord and Spinal Meninges",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cerebellum-connections"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "38. Spinal Cord and Spinal Meninges",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pharyngeal-arch-development": {
+    "subject": "anatomy",
+    "lesson": "pharyngeal-arch-development",
+    "topic": "Pharyngeal arches, pouches and arch arteries",
+    "subtopic": "39. Pharyngeal Apparatus; 43. Pharyngeal Pouches, Grooves, and Membranes; 44. Arch Artery and Cranial Nerve Logic",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "spinal-cord-tracts"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "39. Pharyngeal Apparatus; 43. Pharyngeal Pouches, Grooves, and Membranes; 44. Arch Artery and Cranial Nerve Logic",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "face-palate-sense-development": {
+    "subject": "anatomy",
+    "lesson": "face-palate-sense-development",
+    "topic": "Development of face, palate and special senses",
+    "subtopic": "40. Face, Palate, Tongue, and Thyroid Development; 45. Skull, Face, Palate, Tooth, and Salivary Development; 46. Eye, Ear, Pituitary, and Neural Crest Derivatives",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pharyngeal-arch-development"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "40. Face, Palate, Tongue, and Thyroid Development; 45. Skull, Face, Palate, Tooth, and Salivary Development; 46. Eye, Ear, Pituitary, and Neural Crest Derivatives",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "neural-tube-development": {
+    "subject": "anatomy",
+    "lesson": "neural-tube-development",
+    "topic": "Brain vesicles, neural tube and spinal development",
+    "subtopic": "41. Brain and Ventricle Development; 47. Neuroembryology and Spinal Cord Development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "face-palate-sense-development"
+    ],
+    "sources": [
+      {
+        "title": "Volume IV — Head, Neck and Neuroanatomy",
+        "locator": "41. Brain and Ventricle Development; 47. Neuroembryology and Spinal Cord Development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "bones-and-connections": {
+    "subject": "anatomy",
+    "lesson": "bones-and-connections",
+    "topic": "Bone structure and connections between bones",
+    "subtopic": "1. Classification of Bones; 2. Connections Between Bones",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "1. Classification of Bones; 2. Connections Between Bones",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "synovial-joint-design": {
+    "subject": "anatomy",
+    "lesson": "synovial-joint-design",
+    "topic": "Synovial joint design and movement",
+    "subtopic": "3. Synovial Joints",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "bones-and-connections"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "3. Synovial Joints",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "muscle-actions": {
+    "subject": "anatomy",
+    "lesson": "muscle-actions",
+    "topic": "Muscle architecture, actions and innervation",
+    "subtopic": "4. General Myology",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "synovial-joint-design"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "4. General Myology",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "vertebral-regions": {
+    "subject": "anatomy",
+    "lesson": "vertebral-regions",
+    "topic": "Vertebral column and regional vertebrae",
+    "subtopic": "5. Vertebral Column Overview; 6. Typical and Regional Vertebrae",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "muscle-actions"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "5. Vertebral Column Overview; 6. Typical and Regional Vertebrae",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "craniovertebral-joints": {
+    "subject": "anatomy",
+    "lesson": "craniovertebral-joints",
+    "topic": "Atlas, axis and craniovertebral movement",
+    "subtopic": "7. Atlas, Axis, and Craniovertebral Joints",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "vertebral-regions"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "7. Atlas, Axis, and Craniovertebral Joints",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "spinal-discs-ligaments": {
+    "subject": "anatomy",
+    "lesson": "spinal-discs-ligaments",
+    "topic": "Intervertebral discs and spinal ligaments",
+    "subtopic": "8. Intervertebral Discs and Vertebral Ligaments",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "craniovertebral-joints"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "8. Intervertebral Discs and Vertebral Ligaments",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "back-muscle-layers": {
+    "subject": "anatomy",
+    "lesson": "back-muscle-layers",
+    "topic": "Back muscle layers and segmental innervation",
+    "subtopic": "9. Back Muscles",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "spinal-discs-ligaments"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "9. Back Muscles",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "shoulder-girdle-joints": {
+    "subject": "anatomy",
+    "lesson": "shoulder-girdle-joints",
+    "topic": "Clavicle, scapula and shoulder girdle joints",
+    "subtopic": "15. Shoulder Girdle Joints",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "back-muscle-layers"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "15. Shoulder Girdle Joints",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "rotator-cuff-shoulder": {
+    "subject": "anatomy",
+    "lesson": "rotator-cuff-shoulder",
+    "topic": "Glenohumeral joint and rotator cuff",
+    "subtopic": "16. Glenohumeral Joint and Rotator Cuff; 17. Shoulder Girdle Muscles",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "shoulder-girdle-joints"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "16. Glenohumeral Joint and Rotator Cuff; 17. Shoulder Girdle Muscles",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "axilla-scapular-spaces": {
+    "subject": "anatomy",
+    "lesson": "axilla-scapular-spaces",
+    "topic": "Axilla, axillary artery and scapular spaces",
+    "subtopic": "18. Axilla and Axillary Artery; 19. Scapular Spaces",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "rotator-cuff-shoulder"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "18. Axilla and Axillary Artery; 19. Scapular Spaces",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "limbs-plexus-and-joints": {
+    "subject": "anatomy",
+    "lesson": "limbs-plexus-and-joints",
+    "topic": "Brachial plexus from roots to terminal nerves",
+    "subtopic": "20. Brachial Plexus",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "axilla-scapular-spaces"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "20. Brachial Plexus",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "arm-elbow": {
+    "subject": "anatomy",
+    "lesson": "arm-elbow",
+    "topic": "Arm compartments and elbow relationships",
+    "subtopic": "21. Arm Compartments and Elbow",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "limbs-plexus-and-joints"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "21. Arm Compartments and Elbow",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "cubital-forearm": {
+    "subject": "anatomy",
+    "lesson": "cubital-forearm",
+    "topic": "Cubital fossa and forearm compartments",
+    "subtopic": "22. Cubital Fossa and Forearm Compartments",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "arm-elbow"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "22. Cubital Fossa and Forearm Compartments",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "wrist-carpal-tunnel": {
+    "subject": "anatomy",
+    "lesson": "wrist-carpal-tunnel",
+    "topic": "Wrist, carpal tunnel and anatomical snuffbox",
+    "subtopic": "23. Wrist, Carpal Tunnel, and Snuffbox",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cubital-forearm"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "23. Wrist, Carpal Tunnel, and Snuffbox",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "hand-intrinsics": {
+    "subject": "anatomy",
+    "lesson": "hand-intrinsics",
+    "topic": "Intrinsic hand muscles and functional nerve tests",
+    "subtopic": "24. Hand Muscles and Hand Innervation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "wrist-carpal-tunnel"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "24. Hand Muscles and Hand Innervation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "upper-limb-vessels": {
+    "subject": "anatomy",
+    "lesson": "upper-limb-vessels",
+    "topic": "Upper limb vessels and lymphatic routes",
+    "subtopic": "25. Upper Limb Arteries, Veins, and Lymphatics; 45. Axillary Nodes and Upper Limb Drainage",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "hand-intrinsics"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "25. Upper Limb Arteries, Veins, and Lymphatics; 45. Axillary Nodes and Upper Limb Drainage",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "pelvic-girdle-landmarks": {
+    "subject": "anatomy",
+    "lesson": "pelvic-girdle-landmarks",
+    "topic": "Pelvic girdle and hip bone landmarks",
+    "subtopic": "26. Pelvic Girdle and Hip Bone Landmarks",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "upper-limb-vessels"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "26. Pelvic Girdle and Hip Bone Landmarks",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "hip-joint-stability": {
+    "subject": "anatomy",
+    "lesson": "hip-joint-stability",
+    "topic": "Hip joint stability and femoral head supply",
+    "subtopic": "27. Hip Joint",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "pelvic-girdle-landmarks"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "27. Hip Joint",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "gluteal-region": {
+    "subject": "anatomy",
+    "lesson": "gluteal-region",
+    "topic": "Gluteal region and the piriformis landmark",
+    "subtopic": "28. Gluteal Region and Piriformis Landmark",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "hip-joint-stability"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "28. Gluteal Region and Piriformis Landmark",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "thigh-compartments": {
+    "subject": "anatomy",
+    "lesson": "thigh-compartments",
+    "topic": "Thigh compartments and muscle actions",
+    "subtopic": "29. Thigh Compartments",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "gluteal-region"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "29. Thigh Compartments",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "femoral-triangle-canal": {
+    "subject": "anatomy",
+    "lesson": "femoral-triangle-canal",
+    "topic": "Femoral triangle, sheath and adductor canal",
+    "subtopic": "30. Femoral Triangle and Adductor Canal; 14. Femoral Canal and Corona Mortis",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "thigh-compartments"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "30. Femoral Triangle and Adductor Canal; 14. Femoral Canal and Corona Mortis",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "knee-joint-mechanics": {
+    "subject": "anatomy",
+    "lesson": "knee-joint-mechanics",
+    "topic": "Knee ligaments, menisci and movement",
+    "subtopic": "31. Knee Joint",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "femoral-triangle-canal"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "31. Knee Joint",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "popliteal-fossa": {
+    "subject": "anatomy",
+    "lesson": "popliteal-fossa",
+    "topic": "Popliteal fossa and neurovascular depth",
+    "subtopic": "32. Popliteal Fossa",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "knee-joint-mechanics"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "32. Popliteal Fossa",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "leg-compartments": {
+    "subject": "anatomy",
+    "lesson": "leg-compartments",
+    "topic": "Leg compartments and ankle actions",
+    "subtopic": "33. Leg Compartments",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "popliteal-fossa"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "33. Leg Compartments",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "ankle-foot-arches": {
+    "subject": "anatomy",
+    "lesson": "ankle-foot-arches",
+    "topic": "Ankle, tarsal tunnel and foot arches",
+    "subtopic": "34. Ankle, Tarsal Tunnel, and Foot Arches",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "leg-compartments"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "34. Ankle, Tarsal Tunnel, and Foot Arches",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "plantar-foot": {
+    "subject": "anatomy",
+    "lesson": "plantar-foot",
+    "topic": "Plantar muscles and nerve territories",
+    "subtopic": "35. Foot Muscles and Plantar Nerves",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ankle-foot-arches"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "35. Foot Muscles and Plantar Nerves",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lower-limb-vessels": {
+    "subject": "anatomy",
+    "lesson": "lower-limb-vessels",
+    "topic": "Lower limb arteries, veins and lymphatics",
+    "subtopic": "36. Lower Limb Arteries, Nerves, and Lymphatics",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "plantar-foot"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "36. Lower Limb Arteries, Nerves, and Lymphatics",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "lumbar-sacral-plexuses": {
+    "subject": "anatomy",
+    "lesson": "lumbar-sacral-plexuses",
+    "topic": "Lumbar and sacral plexuses across the limb",
+    "subtopic": "37. Cervical, Lumbar, and Sacral Plexuses",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lower-limb-vessels"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "37. Cervical, Lumbar, and Sacral Plexuses",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "neck-musculoskeletal": {
+    "subject": "anatomy",
+    "lesson": "neck-musculoskeletal",
+    "topic": "Neck muscles and hyoid relationships",
+    "subtopic": "40. Neck Muscles: Superficial, Suprahyoid, Infrahyoid",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "lumbar-sacral-plexuses"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "40. Neck Muscles: Superficial, Suprahyoid, Infrahyoid",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "regional-lymphatics": {
+    "subject": "anatomy",
+    "lesson": "regional-lymphatics",
+    "topic": "Regional lymph drainage and crossing territories",
+    "subtopic": "46. Breast, Thoracic Wall, Lower Limb, and Head-Neck Lymphatics",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "neck-musculoskeletal"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "46. Breast, Thoracic Wall, Lower Limb, and Head-Neck Lymphatics",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "limb-development": {
+    "subject": "anatomy",
+    "lesson": "limb-development",
+    "topic": "Early patterning and limb development",
+    "subtopic": "41. Gametogenesis, Fertilization, and Early Development; 42. Gastrulation, Notochord, and Neurulation; 43. Limb Development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "regional-lymphatics"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "41. Gametogenesis, Fertilization, and Early Development; 42. Gastrulation, Notochord, and Neurulation; 43. Limb Development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "axial-skeleton-development": {
+    "subject": "anatomy",
+    "lesson": "axial-skeleton-development",
+    "topic": "Vertebral and skull development",
+    "subtopic": "38. Skull Divisions and Cranial Fossae; 44. Vertebral and Skull Development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "limb-development"
+    ],
+    "sources": [
+      {
+        "title": "Volume V — Musculoskeletal Anatomy",
+        "locator": "38. Skull Divisions and Cranial Fossae; 44. Vertebral and Skull Development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "kidney-map": {
+    "subject": "physiology",
+    "lesson": "kidney-map",
+    "topic": "Follow the blood. Follow the filtrate.",
+    "subtopic": "Chapters 28–29: renal circulation and nephron organization",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapters 28–29: renal circulation and nephron organization",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "filtration-and-clearance": {
+    "subject": "physiology",
+    "lesson": "filtration-and-clearance",
+    "topic": "What does renal clearance actually measure?",
+    "subtopic": "Chapters 29–30: clearance, filtered load and fractional excretion",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapters 29–30: clearance, filtered load and fractional excretion",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "afferent-efferent": {
+    "subject": "physiology",
+    "lesson": "afferent-efferent",
+    "topic": "Afferent versus efferent: flow is not filtration.",
+    "subtopic": "Chapter 29: arteriolar resistance and autoregulation; corrected severe-efferent comparison",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapter 29: arteriolar resistance and autoregulation; corrected severe-efferent comparison",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "tubular-transport": {
+    "subject": "physiology",
+    "lesson": "tubular-transport",
+    "topic": "A tour of tubular transport",
+    "subtopic": "Chapter 30: proximal and distal tubular handling; transporter map",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapter 30: proximal and distal tubular handling; transporter map",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "concentrating-urine": {
+    "subject": "physiology",
+    "lesson": "concentrating-urine",
+    "topic": "How the kidney concentrates urine",
+    "subtopic": "Chapter 31: countercurrent physiology, urea recycling and ADH/AQP2",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapter 31: countercurrent physiology, urea recycling and ADH/AQP2",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "volume-and-osmolality": {
+    "subject": "physiology",
+    "lesson": "volume-and-osmolality",
+    "topic": "Volume and osmolality ask different questions.",
+    "subtopic": "Chapter 32: body-fluid compartments, RAAS, ADH and sodium–water balance",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapter 32: body-fluid compartments, RAAS, ADH and sodium–water balance",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "renal-acid-base": {
+    "subject": "physiology",
+    "lesson": "renal-acid-base",
+    "topic": "Reclaim bicarbonate. Excrete acid.",
+    "subtopic": "Chapter 33: bicarbonate handling, urinary buffers and net acid excretion",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapter 33: bicarbonate handling, urinary buffers and net acid excretion",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "abg-interpretation": {
+    "subject": "physiology",
+    "lesson": "abg-interpretation",
+    "topic": "How to interpret an arterial blood gas",
+    "subtopic": "Chapter 33: acid–base interpretation; compensation cross-check with Merck Manual",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapter 33: acid–base interpretation; compensation cross-check with Merck Manual",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-chest": {
+    "subject": "anatomy",
+    "lesson": "anatomy-thorax",
+    "topic": "Thorax",
+    "subtopic": "Explore the chest",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Thoracic Wall section, “Core Map”; Mediastinum section, “Definition of Mediastinum.”",
+        "locator": "Explore the chest",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-abdominal-region": {
+    "subject": "anatomy",
+    "lesson": "anatomy-regional-anatomy",
+    "topic": "Regional anatomy",
+    "subtopic": "Abdomen",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part I, topic 1, “Abdominal Regions and Surface Planes”; Part II, topics 8–9.",
+        "locator": "Abdomen",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-pelvic-region": {
+    "subject": "anatomy",
+    "lesson": "anatomy-regional-anatomy",
+    "topic": "Regional anatomy",
+    "subtopic": "Pelvis & perineum",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Parts I and V — Pelvic framework; Perineum, Rectum and Anal Canal.",
+        "locator": "Pelvis & perineum",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-limb-regions": {
+    "subject": "anatomy",
+    "lesson": "anatomy-regional-anatomy",
+    "topic": "Regional anatomy",
+    "subtopic": "Limbs, head & neck",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "“The Oral Exam Answer Formula”; Parts III–V, PDF pages 17–40.",
+        "locator": "Limbs, head & neck",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-mediastinum": {
+    "subject": "anatomy",
+    "lesson": "anatomy-thorax",
+    "topic": "Thorax",
+    "subtopic": "Mediastinal compartments",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Mediastinum section, topics 2–4: definition, divisions and sternal-angle plane.",
+        "locator": "Mediastinal compartments",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-pleura": {
+    "subject": "anatomy",
+    "lesson": "anatomy-thorax",
+    "topic": "Thorax",
+    "subtopic": "Pleura & pleural cavity",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Pleura section, topics 24–27: overview, cavity, visceral and parietal pleura.",
+        "locator": "Pleura & pleural cavity",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-lung-comparison": {
+    "subject": "anatomy",
+    "lesson": "anatomy-thorax",
+    "topic": "Thorax",
+    "subtopic": "Right versus left lung",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Lungs section, topics 36–38: right lung, left lung and comparison table.",
+        "locator": "Right versus left lung",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-regions": {
+    "subject": "anatomy",
+    "lesson": "anatomy-abdomen",
+    "topic": "Abdomen",
+    "subtopic": "Nine abdominal regions",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part I, topic 1, “Abdominal Regions and Surface Planes.”",
+        "locator": "Nine abdominal regions",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-peritoneum": {
+    "subject": "anatomy",
+    "lesson": "anatomy-abdomen",
+    "topic": "Abdomen",
+    "subtopic": "Peritoneal relationships",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part II, topics 8–11: peritoneal cavity, organ relationships, omenta and lesser sac.",
+        "locator": "Peritoneal relationships",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-arterial-territories": {
+    "subject": "anatomy",
+    "lesson": "anatomy-abdomen",
+    "topic": "Abdomen",
+    "subtopic": "Foregut, midgut & hindgut",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part V, topic 34, “GI Neurovascular and Autonomic Innervation Addendum”; Part VI, topic 36.",
+        "locator": "Foregut, midgut & hindgut",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-germ-layers": {
+    "subject": "anatomy",
+    "lesson": "anatomy-embryology",
+    "topic": "Embryology",
+    "subtopic": "Germ layers & neurulation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part VI, topic 42, “Gastrulation, Notochord, and Neurulation.”",
+        "locator": "Germ layers & neurulation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-limb-development": {
+    "subject": "anatomy",
+    "lesson": "anatomy-embryology",
+    "topic": "Embryology",
+    "subtopic": "Limb patterning",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part VI, topic 43, “Limb Development.”",
+        "locator": "Limb patterning",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-gut-development": {
+    "subject": "anatomy",
+    "lesson": "anatomy-embryology",
+    "topic": "Embryology",
+    "subtopic": "Gut tube & rotation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part VI, topics 36 and 40: “Gut Tube Overview” and “Midgut Herniation and Rotation.”",
+        "locator": "Gut tube & rotation",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-kidney-development": {
+    "subject": "anatomy",
+    "lesson": "anatomy-embryology",
+    "topic": "Embryology",
+    "subtopic": "Kidney development",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Part VI, topics 36–37: intermediate mesoderm, urogenital ridge and kidney development.",
+        "locator": "Kidney development",
+        "basis": "study-guide-based"
+      }
+    ]
+  },
+  "anatomy-thorax": {
+    "subject": "anatomy",
+    "lesson": "anatomy-thorax",
+    "topic": "Thorax relationships",
+    "subtopic": "Thoracic compartments and structure-function relationships",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Volume I — Thorax, Heart, Lungs & Mediastinum",
+        "basis": "study-guide-based"
+      },
+      {
+        "title": "Your curated Volume I — Thorax, Heart, Lungs & Mediastinum",
+        "url": "#source-volume-i",
+        "locator": "Thoracic Wall 1–4; Diaphragm 18–22; Pleura 24–27; Lungs 36–38; Mediastinum 2–4 and 19–22.",
+        "basis": "supplemental-reference-based"
+      },
+      {
+        "title": "OpenStax — The lungs",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs",
+        "basis": "supplemental-reference-based"
+      },
+      {
+        "title": "OpenStax — The process of breathing",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing",
+        "basis": "supplemental-reference-based"
+      },
+      {
+        "title": "OpenStax — The thoracic cage",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage",
+        "basis": "supplemental-reference-based"
+      },
+      {
+        "title": "NCBI Bookshelf — Anatomy of the mediastinum",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK539819/",
+        "basis": "supplemental-reference-based"
+      },
+      {
+        "title": "NCBI Bookshelf — Phrenic nerves",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK513325/",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "renal-experiments": {
+    "subject": "physiology",
+    "lesson": "afferent-efferent",
+    "topic": "Afferent versus efferent: flow is not filtration.",
+    "subtopic": "Afferent and efferent resistance in the simplified renal circuit",
+    "concept": "",
+    "difficulty": "applied",
+    "prerequisites": [],
+    "sources": [
+      {
+        "title": "Medical Physiology: Renal Physiology, Revision 15",
+        "locator": "Chapter 29: arteriolar resistance and autoregulation; corrected severe-efferent comparison",
+        "basis": "study-guide-based"
+      }
+    ]
+  }
+}

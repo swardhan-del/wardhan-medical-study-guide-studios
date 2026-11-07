@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { createHash } from "node:crypto";
@@ -70,20 +71,20 @@ test("Typed comparison gives a model without grading, sending or persisting an a
 });
 
 test("Placenta questions explain distractors, correct answers and retain practice progress", async ({page}) => {
-  await page.goto(route); await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+  await page.goto(route); await showAllPractice(page);
   const questions=practice.questions.filter(q=>q.topic==="placenta" && q.id.endsWith("20261106")); expect(questions).toHaveLength(16);
   for(const q of questions) {
     const block=page.locator(`#question-${q.id}`);
     for (const [index, option] of q.options.entries()) {
       if (index===q.answer) continue;
       await block.getByRole("radio",{name:option.text,exact:true}).check();
-      await block.getByRole("button",{name:"Check answer",exact:true}).click();
+      await block.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
       await expect(block).toContainText(option.explanation);
       await block.getByRole("button",{name:"Try without feedback",exact:true}).click();
     }
-    await block.getByRole("radio",{name:q.options[q.answer].text,exact:true}).check();await block.getByRole("button",{name:"Check answer",exact:true}).click();await expect(block).toContainText(q.options[q.answer].explanation);
+    await block.getByRole("radio",{name:q.options[q.answer].text,exact:true}).check();await block.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();await expect(block).toContainText(q.options[q.answer].explanation);
   }
-  await page.reload();await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+  await page.reload();await showAllPractice(page);
   for(const q of questions)await expect(page.locator(`#question-${q.id}`).getByRole("radio",{name:q.options[q.answer].text,exact:true})).toBeChecked();
 });
 
