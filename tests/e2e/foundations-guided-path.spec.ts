@@ -91,10 +91,18 @@ test('Guided histology: keyboard reasoning reveals, citations and existing notes
 test('Guided histology: 320px enlarged text, keyboard focus and accessibility', async ({ page, browser, baseURL }, info) => {
   const context = await browser.newContext({ baseURL });
   const audit = await context.newPage(); await audit.goto(route);
+  const review = audit.locator('.lesson-transparency');
+  await review.locator('summary').click();
+  await expect(review).toContainText('Medical review pending. Independent clinical review has not been completed.');
+  await expect(review.getByText('Last updated:', { exact: false }).last()).toContainText('Last updated: 2026-11-07');
+  await expect(review.getByRole('link', { name: 'Edfors et al. (2018): Enhanced validation of antibodies for research applications', exact: true })).toHaveAttribute('href', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6175901/');
   expect((await new AxeBuilder({ page: audit }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()).violations).toEqual([]);
   await context.close();
   await page.setViewportSize({ width: 320, height: 900 }); await page.goto(route);
   await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+  await page.locator('.lesson-transparency summary').focus();
+  await page.keyboard.press('Enter');
+  expect(await page.locator('.lesson-transparency').evaluate(el => el.scrollWidth <= el.clientWidth + 1)).toBeTruthy();
   const panel = page.locator(panelSelector);
   for (const summary of await panel.locator('summary').all()) {
     await summary.focus();
