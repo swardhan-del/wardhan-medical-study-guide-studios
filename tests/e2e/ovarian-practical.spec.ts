@@ -85,8 +85,13 @@ test('Ovarian practical: development stages expose usable explanations without J
 test('Ovarian practical: every applied option gives feedback and answers persist', async ({ page }) => {
   test.setTimeout(180000); await page.goto(route);
   await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
-  const questions = practice.questions.filter(q => q.topic === 'ovarian-histology-and-development');
-  expect(questions).toHaveLength(24);
+  const applied = practice.questions.filter(q => q.topic === 'ovarian-histology-and-development');
+  expect(applied).toHaveLength(24);
+  const questions = [{ id: `concept-${lesson.id}`, prompt: lesson.question.prompt, answer: lesson.question.answer, options: lesson.question.options.map(o => ({ text: o.text, explanation: o.reason })) }, ...applied];
+  expect(new Set(questions.map(q => q.prompt)).size).toBe(25);
+  const renderedPrompts = page.locator('#concept-check-title .practice-question legend');
+  await expect(renderedPrompts).toHaveCount(25);
+  expect(new Set(await renderedPrompts.allTextContents()).size).toBe(25);
   for (const q of questions) {
     const block = page.locator(`#question-${q.id}`);
     for (const [i, option] of q.options.entries()) {

@@ -14647,25 +14647,25 @@
         "microscopy",
         "reproductive-histology"
       ],
-      "updatedAt": "2026-11-06",
+      "updatedAt": "2026-11-07",
       "question": {
-        "prompt": "A high-power crop shows an oocyte and surrounding cells. You need to establish its location in the ovary. Which next view is most useful?",
+        "prompt": "Two ovarian specimens will be used for different assays: routine architecture in one and protein localization in the other. Which planning decision should come before tissue processing?",
         "options": [
           {
-            "text": "A wider field including cortical organization and the surface",
-            "reason": "Wider context can establish the compartment containing the follicle."
+            "text": "Select compatible preparation and assay-specific controls for each question, and record the protocol.",
+            "reason": "Preparation is part of the measurement. The lesson explains that fixation and processing affect preservation and molecular-target accessibility; each assay needs appropriate controls and a documented procedure."
           },
           {
-            "text": "A still tighter crop of one nucleus",
-            "reason": "It removes the architecture needed to answer the location question."
+            "text": "Process both identically and choose any stain afterward; processing cannot affect target accessibility.",
+            "reason": "Identical processing is not automatically suitable for different readouts. Compatibility must be established rather than assumed after the specimens have already been processed."
           },
           {
-            "text": "The same crop with higher colour saturation",
-            "reason": "Colour adjustment cannot supply missing spatial context."
+            "text": "Treat a well-stained routine section as a positive control for every protein-localization assay.",
+            "reason": "Good routine morphology does not by itself validate a different molecular assay or its controls. The control must address the readout being interpreted."
           },
           {
-            "text": "A photograph from an unrelated ovary",
-            "reason": "It can illustrate a comparison but cannot establish this specimen’s location."
+            "text": "Infer the missing fixation and processing history from the colour of a source photograph.",
+            "reason": "Colour does not recover an undocumented preparation history. The selected photographs explicitly lack a full processing record."
           }
         ],
         "answer": 0

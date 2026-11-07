@@ -8,9 +8,9 @@ Human developmental and adult spatial atlases are distinguished from mouse inter
 
 Source and editorial review is AI-assisted; independent medical specialist review remains outstanding. Matched atresia/corpus-luteum photographs and comprehensive reproductive endocrinology/pathology remain incomplete. Build, interaction, accessibility, mobile, image failure, print, downloads, exact-preview and production verification are release gates. No patient diagnosis or automatic free-text grade is provided.
 
-Content fingerprint: `71b8774047359840a4d7a308287b2bd73bf0e3d8e30591999374cc5e79e36e64`.
+Content fingerprint: `b599b4906ffd0e91be7e0f0e84c1a928a1f50690cdb532e73487009a86883e47`.
 
-Editorial evidence: `ovarian-practical-editorial-20261107`. Checked 6 November 2026 UTC (7 November in Europe/Budapest).
+Editorial evidence: `ovarian-practical-editorial-20261107`. Initial review 6 November 2026 UTC; revised introductory assessment and fingerprint checked 7 November 2026 UTC.
 
 Local rendered review: 92 desktop/mobile browser checks passed, with no failures, skipped cases or flaky cases. Checks covered all original answer choices, image hashes and downloads, temporary typed responses, saved-resource persistence, keyboard controls, no-JavaScript text, image failure, 320px text enlargement, Axe checks and Part 12 printing. Three mobile panels were also visually inspected. The subsequent image-download wording correction and final index metadata require the final rebuilt regression pass before commit.
 
@@ -19,3 +19,7 @@ Evidence identifiers: `ovarian-practical-visual-20261107`, `ovarian-practical-as
 This repository review record does not establish a production deployment. Exact-head CI, hosted preview and canonical production checks remain separate release gates.
 
 Final local verification passed: 143 unit tests, a final isolated production build with rendered privacy and asset checks, lint, typecheck, 74 affected desktop/mobile browser cases and two subject-filter follow-ups. The corrected image-download wording and final search metadata were included. The initial 92-case pass also covered placenta regressions. All 265 existing lessons, 367 applied questions, 187 public assets and 28 figure records remain exact, with their relative order preserved. The catalog generator inserts this new non-anatomy lesson before existing anatomy lessons.
+
+Assessment correction before release: the initial concept check repeated ovarian-practical-01. Only the unpublished introduction was replaced with a distinct preparation-and-assay planning question supported by the existing preparation explanation. All 24 applied questions and their IDs remain exact. The lesson now has 25 unique questions and 100 explained answer choices. Earlier browser results cover the preceding candidate; renewed assessment and exact-head release checks are required. Source/editorial review and the retained visual content were rechecked on 7 November 2026 UTC.
+
+Corrected-assessment validation: 143 unit tests, production build/privacy checks, lint and typecheck passed. Fourteen affected desktop/mobile cases passed with all 25 distinct rendered question prompts, all 100 answer options and saved-answer persistence checked. A normalized prompt comparison across 266 native lessons and 391 transfer questions found no further within-lesson introductory/applied duplicates; this is an exact-text check, not semantic deduplication. The corrected implementation package and per-item audit supersede earlier staged versions.
