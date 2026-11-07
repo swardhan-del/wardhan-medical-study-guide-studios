@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { showAllPractice } from "./helpers/practice-view";
 import AxeBuilder from "@axe-core/playwright";
 import library from "../../src/content/library-lessons.json";
 
@@ -23,8 +24,8 @@ test("physiology Full Course reuses the released lesson, feedback and local resu
   await expect(figure.locator("details")).toHaveAttribute("open", "");
   const check = page.locator("#concept-check-title:visible");
   await check.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
-  await check.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(check.getByRole("status")).toContainText("Correct.");
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(check.getByRole("status")).toContainText("Correct");
 
   const chapterNav = page.getByRole("navigation", { name: "Full Course chapter navigation" });
   await expect(chapterNav.getByRole("link", { name: "Previous chapter: Arterial blood pressure" })).toHaveAttribute("href", coursePath + "#arterial-pressure");
@@ -33,6 +34,9 @@ test("physiology Full Course reuses the released lesson, feedback and local resu
   await expect(page.getByRole("link", { name: "Resume: " + lesson.title })).toHaveAttribute("href", "/library/lymph-and-fluid-exchange#concept-check-title");
   await expect(chapter).toContainText("In progress");
   await page.getByRole("link", { name: "Resume: " + lesson.title }).click();
+  // Resume retains the submitted explanation while the sequence continues.
+  await expect(check.locator('[data-feedback="correct"]')).toContainText(lesson.question.options[lesson.question.answer].text);
+  await showAllPractice(page);
   await expect(check.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeChecked();
   await chapterNav.getByRole("link", { name: "Next chapter: Venous circulation" }).click();
   await expect(page).toHaveURL(/\/learn\/courses\/physiology#venous-circulation$/);

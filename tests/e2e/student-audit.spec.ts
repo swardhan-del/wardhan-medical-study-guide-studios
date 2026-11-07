@@ -47,13 +47,13 @@ test("partial coverage remains partial after correcting a mistake", async ({ pag
   expect(await page.locator(".topic-progress").count()).toBeGreaterThan(8);
   await page.goto("/learn/renal/kidney-map");
   await page.getByRole("radio", { name: "Afferent arteriole", exact: true }).check();
-  await page.getByRole("button", { name: "Check answer", exact: true }).click();
+  await page.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await page.goto("/study");
   const topic = page.locator(".topic-progress").filter({ has: page.getByRole("link", { name: "Follow the blood. Follow the filtrate.", exact: true }) });
   await expect(topic).toContainText("Needs review");
   await page.getByRole("button", { name: "Review my mistakes (1)" }).click();
   await page.getByRole("radio", { name: "Efferent arteriole", exact: true }).check();
-  await page.getByRole("button", { name: "Check answer", exact: true }).click();
+  await page.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(topic).toContainText("In progress");
   await expect(topic).toContainText("First-attempt accuracy: 0 of 1");
   const coverage = topic.getByRole("progressbar");
@@ -91,7 +91,7 @@ test("practice correction carries only the registered question context into the 
   await page.goto(lesson);
   const question = page.locator(`#question-${id}`);
   await question.getByRole("radio").first().check();
-  await question.getByRole("button", { name: "Check answer", exact: true }).click();
+  await question.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await question.getByRole("link", { name: "Report this question" }).click();
 
   await expect(page).toHaveURL(/\/contact\?question=/);

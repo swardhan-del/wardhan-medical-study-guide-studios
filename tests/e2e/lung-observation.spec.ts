@@ -1,3 +1,4 @@
+import { showAllPractice, compareAnatomyModels } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import data from '../../src/content/library-lessons.json';
@@ -49,17 +50,17 @@ test('lung-observation: direct fragments select each explained task and restore 
     await expect(q).toBeVisible();
     await expect(page.getByRole('heading', { name: /^Knowledge Check: question / })).toBeFocused();
     const wrong = (app.answer! + 1) % app.options!.length;
-    await q.getByRole('radio', { name: app.options![wrong].text, exact: true }).check();
-    await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await showAllPractice(page);await q.getByRole('radio', { name: app.options![wrong].text, exact: true }).check();
+    await q.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(q).toContainText(app.options![wrong].explanation!);
     await q.getByRole('button', { name: 'Try without feedback', exact: true }).click();
-    await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check();
-    await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await showAllPractice(page);await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check();
+    await q.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(q).toContainText(app.options![app.answer!].explanation!);
   }
-  await page.reload();
-  await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
-  await expect(page.locator('.practice-question:visible')).toHaveCount(5);
+  await page.reload();await showAllPractice(page);
+  await showAllPractice(page);
+  await expect(page.locator('.practice-question:visible:has(input[type=radio])')).toHaveCount(5);
   for (const app of added) await expect(page.locator('#question-' + app.id).getByRole('radio', { name: app.options![app.answer!].text, exact: true })).toBeChecked();
 });
 
@@ -70,23 +71,26 @@ test('lung-observation: original anatomy history, worked reasoning and four core
   });
   await page.goto('/library/' + id);
   const before = await page.evaluate(() => JSON.parse(localStorage.getItem('wardhan-learning:v1')!).answers['concept-thoracic-development']);
+  await showAllPractice(page);
   await expect(page.locator('#question-concept-' + id).getByRole('radio', { name: lesson.question.options[1].text, exact: true })).toBeChecked();
   const worked = page.locator('section[aria-labelledby="worked-example-heading"]');
   await worked.locator('summary').focus();
   await page.keyboard.press('Enter');
   await expect(worked).toContainText(lesson.workedExample!.solution[0]);
-  await expect(page.locator('.anatomy-practice-item')).toHaveCount(4);
-  for (const [i, q] of record.practice.entries()) {
-    const item = page.locator('.anatomy-practice-item').nth(i);
-    await item.locator('summary').click();
-    await expect(item).toContainText(q.answer);
+  const sequence = page.getByRole('region', { name: 'Anatomical reasoning sequence', exact: true });
+  await expect(sequence.locator('.practice-question')).toHaveCount(4);
+  for (const q of record.practice) {
+    const item = sequence.locator('#question-' + q.id);
+    await item.getByRole('textbox', { name: 'Your explanation', exact: true }).fill('My anatomical reasoning before comparing.');
+    await item.getByRole('button', { name: 'Check Answer and Continue →', exact: true }).click();
+    await expect(item.locator('[data-feedback]')).toContainText(q.answer);
   }
   await expect(page.locator('.anatomy-identification')).toContainText(record.identification.prompt);
   const app = added[1];
   await page.goto(app.href);
   const q = page.locator('#question-' + app.id);
-  await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check();
-  await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+  await showAllPractice(page);await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check();
+  await q.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('wardhan-learning:v1')!).answers['concept-thoracic-development'])).toEqual(before);
 });
 
@@ -107,11 +111,11 @@ test('lung-observation: comparison, oral responses and saved checks work with ke
   for (const item of lesson.summaryChecklist!) await expect(page.getByRole('checkbox', { name: item, exact: true })).toBeVisible();
   const check = page.getByRole('checkbox', { name: lesson.summaryChecklist![0], exact: true });
   await check.check();
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   await expect(check).toBeChecked();
   await check.uncheck();
-  await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
-  for (const summary of await page.locator('.anatomy-practice-item summary').all()) await summary.click();
+  await showAllPractice(page);
+  await compareAnatomyModels(page);
   for (const summary of await oral.locator('summary').all()) await summary.click();
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
   await page.setViewportSize({ width: 320, height: 844 });
@@ -156,11 +160,11 @@ test('lung-observation: save/remove, empty-search recovery and source boundaries
   await page.goto('/library/' + id);
   const save = page.getByRole('button', { name: 'Save to My Study: ' + lesson.title, exact: true });
   await save.click();
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   const saved = page.getByRole('button', { name: 'Saved to My Study: ' + lesson.title + ' (remove from saved resources)', exact: true });
   await expect(saved).toHaveAttribute('aria-pressed', 'true');
   await saved.click();
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   await expect(save).toBeVisible();
   for (const ref of [refs, ...refs.supportingReferences]) await expect(page.locator('#lesson-source a[href="' + ref.url + '"]')).toHaveCount(1);
   await expect(page.locator('main a[href*="dropbox"]')).toHaveCount(0);

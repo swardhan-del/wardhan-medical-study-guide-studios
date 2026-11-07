@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { createHash } from "node:crypto";
@@ -29,17 +30,17 @@ for (const lesson of lessons) {
     const response = await page.goto(`/library/${lesson.id}`); expect(response?.status()).toBe(200);
     await expect(page.locator("h1")).toHaveText(lesson.title);
     const sections = page.locator(".concept-sequence > details"); await expect(sections).toHaveCount(lesson.steps.length);
-    await expect(sections.locator(".lesson-reasoning")).toHaveCount(lesson.steps.length);
-    await expect(sections.locator(":scope > details")).toHaveCount(lesson.steps.length);
+    await expect(sections.getByRole("textbox", { name: "Your explanation", exact: true })).toHaveCount(lesson.steps.length);
+    await expect(sections.locator(".practice-question")).toHaveCount(lesson.steps.length);
     for (const [i, step] of lesson.steps.entries()) {
       const section = sections.nth(i);
       if (!(await section.evaluate(el => (el as HTMLDetailsElement).open))) await section.locator(":scope > summary").click();
       expect(await section.locator(":scope > p").allTextContents()).toEqual(step.body.split("\n\n"));
       await expect(section).toContainText(step.practice!.prompt);
-      const feedback = section.getByText(step.practice!.feedback, { exact: true });
+      const feedback = section.locator("[data-feedback]");
       await expect(feedback).toBeHidden();
-      await section.getByText("Check the reasoning", { exact: true }).click();
-      await expect(feedback).toBeVisible();
+      await section.getByRole("textbox", { name: "Your explanation", exact: true }).fill("My mechanism explanation before comparing."); await section.getByRole("button", { name: "Check Answer and Continue →", exact: true }).click();
+      await expect(feedback).toBeVisible(); await expect(feedback).toContainText(step.practice!.feedback);
       expect(await section.locator('a[href^="https://"]').count()).toBeGreaterThan(0);
     }
     await expect(page.locator("main")).toContainText(lesson.recall.prompt);
@@ -51,18 +52,18 @@ for (const lesson of lessons) {
   test(`Deep tissue application feedback and saved answers: ${lesson.id}`, async ({ page }) => {
     const questions = practice.questions.filter(q => q.topic === lesson.id);
     await page.goto(`/library/${lesson.id}`);
-    await page.getByRole("button", { name: "Show all questions", exact: true }).click();
+    await showAllPractice(page);
     for (const q of questions) {
       const block = page.locator(`#question-${q.id}`); const wrong = (q.answer + 1) % q.options.length;
       await block.getByRole("radio", { name: q.options[wrong].text, exact: true }).check();
-      await block.getByRole("button", { name: "Check answer", exact: true }).click();
+      await block.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
       await expect(block).toContainText(q.options[wrong].explanation);
       await block.getByRole("button", { name: "Try without feedback", exact: true }).click();
       await block.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check();
-      await block.getByRole("button", { name: "Check answer", exact: true }).click();
+      await block.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
       await expect(block).toContainText(q.options[q.answer].explanation);
     }
-    await page.reload(); await page.getByRole("button", { name: "Show all questions", exact: true }).click();
+    await page.reload(); await showAllPractice(page);
     for (const q of questions) await expect(page.locator(`#question-${q.id}`).getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();
   });
 
@@ -72,7 +73,7 @@ for (const lesson of lessons) {
     await save.click(); await page.reload();
     const saved = page.getByRole("button", { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true });
     await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload(); await expect(save).toBeVisible();
-    await page.getByRole("button", { name: "Show all questions", exact: true }).click();
+    await showAllPractice(page);
     expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
     await page.setViewportSize({ width: 320, height: 900 }); await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1)).toBe(true);
@@ -88,8 +89,8 @@ for (const lesson of lessons) {
     const context = await browser.newContext({ javaScriptEnabled: false, baseURL }); const page = await context.newPage();
     await page.goto(`/library/${lesson.id}`); const sections = page.locator(".concept-sequence > details");
     await expect(sections).toHaveCount(lesson.steps.length);
-    const task = sections.last().locator(".lesson-reasoning");
-    await task.getByText("Check the reasoning", { exact: true }).click(); await expect(task.locator("details > p")).toBeVisible();
+    const task = sections.last().locator(".practice-question noscript");
+    await task.getByText("Model explanation", { exact: true }).click(); await expect(task.locator("details > p")).toBeVisible(); expect(await task.locator("details > p").textContent()).toBe(lesson.steps.at(-1)!.practice!.feedback);
     if (lesson.id === "cartilage-bone") {
       const figure = page.locator("#figure-mouse-skeletal-lineage"); await figure.getByText("Read the figure panel by panel", { exact: true }).click();
       await expect(figure.locator("dt")).toHaveCount(4);
@@ -122,6 +123,8 @@ test("Collagen explorer resets feedback and supports keyboard operation across c
 });
 
 test("Bone explorer independently changes preparation and plane with explicit limits", async ({ page }, info) => {
+  // Four full-panel evidence captures take longer on the expanded teaching page.
+  test.setTimeout(60000);
   await page.goto("/library/cartilage-bone"); const panel = page.locator('section[aria-labelledby="bone-preparation-title"]');
   for (const prep of ["Ground bone", "Decalcified H&E"]) for (const plane of ["Transverse section", "Longitudinal section"]) {
     for (const name of [prep, plane]) { const b=panel.getByRole("button", { name, exact: true }); await b.focus(); await page.keyboard.press("Enter"); await expect(b).toHaveAttribute("aria-pressed", "true"); }

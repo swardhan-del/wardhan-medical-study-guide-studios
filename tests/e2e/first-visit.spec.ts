@@ -31,7 +31,7 @@ test("Start Here reaches the existing guided sequence, its quiz and onward learn
   await expect(page.getByRole("link", { name: "Continue into renal tubular transport", exact: true })).toHaveAttribute("href", "/learn/renal/tubular-transport");
   await page.getByRole("link", { name: "Try the Knowledge Check", exact: true }).first().click();
   await expect(page).toHaveURL(/\/library\/fluid-and-membrane-transport#concept-check-title$/);
-  await expect(page.locator("#concept-check-title").getByRole("button", { name: "Check answer", exact: true })).toBeVisible();
+  await expect(page.locator("#concept-check-title").getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeVisible();
 });
 
 test("first visit reaches each subject coverage map and a real starting lesson", async ({ page }, info) => {
@@ -72,8 +72,8 @@ test("recall hides the answer on every card and respiratory practice covers diff
   await diagram.screenshot({path:info.outputPath("pressure-diagram.png")});
   const question=page.locator(".practice-question").filter({hasText:"What normally drives quiet expiration?"});
   await question.getByRole("radio",{name:"Elastic recoil of the lungs",exact:true}).check();
-  await question.getByRole("button",{name:"Check answer",exact:true}).click();
-  await expect(question.getByRole("status")).toContainText("Correct.");
+  await question.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
+  await expect(question.getByRole("status")).toContainText("Correct");
   await page.reload();
   await showAllPractice(page);
   await expect(question.getByRole("radio",{name:"Elastic recoil of the lungs",exact:true})).toBeChecked();
@@ -84,7 +84,7 @@ test("export imports into another browser with preview, preserves local work and
   await page.getByRole("button",{name:/Save to My Study:/}).click();
   const question=page.locator("#concept-check-title");
   await question.getByRole("radio",{name:"4.2 L/min",exact:true}).check();
-  await question.getByRole("button",{name:"Check answer",exact:true}).click();
+  await question.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
   await page.goto("/study");
   const downloading=page.waitForEvent("download");
   await page.getByRole("button",{name:"Export progress and saved resources"}).click();
@@ -186,22 +186,24 @@ test("Molecular Cell Biology starts a released sequence and gives explained ques
   await sequences.getByRole("link", { name: "From RNA processing to protein delivery and quality control", exact: true }).click();
   await page.getByRole("link", { name: "Try the Knowledge Check", exact: true }).first().click();
   await expect(page).toHaveURL(/\/library\/rna-processing#concept-check-title$/);
+  await showAllPractice(page);
   const q = library.lessons.find(l => l.id === "rna-processing")!.question;
-  const panel = page.locator("#concept-check-title:visible");
+  const panel = page.locator("#question-concept-rna-processing:visible");
   const wrong = q.options[(q.answer + 1) % q.options.length];
   await panel.getByRole("radio", { name: wrong.text, exact: true }).check();
-  await panel.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(panel.getByRole("status")).toContainText("Review the distinction.");
+  await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(panel.getByRole("status")).toContainText("Review the Relationship");
   await expect(panel.getByRole("status")).toContainText(wrong.reason);
   await panel.getByRole("button", { name: "Try without feedback", exact: true }).click();
   await panel.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check();
-  await panel.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(panel.getByRole("status")).toContainText("Correct.");
+  await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(panel.getByRole("status")).toContainText("Correct");
   await page.reload();
+  await showAllPractice(page);
   await expect(panel.getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();
 });
 
-// Presentation-only practice changes must preserve the published keys and history.
+// Automatic progression must preserve published keys, feedback and history.
 test("sequential practice gives positive and negative feedback before advancing and reports an honest result", async ({ page }) => {
   const id = "fluid-and-membrane-transport";
   const first = library.lessons.find(lesson => lesson.id === id)!.question;
@@ -209,31 +211,29 @@ test("sequential practice gives positive and negative feedback before advancing 
   const sequence = page.getByRole("region", { name: "Knowledge Check sequence", exact: true });
   await expect(sequence.locator(".practice-question:visible")).toHaveCount(1);
   await expect(sequence).toContainText("Question 1 of 2");
-  await expect(sequence.getByRole("button", { name: "Next question", exact: true })).toBeDisabled();
+  await expect(sequence.getByRole("button", { name: /^Check Answer and Continue/ })).toBeDisabled();
   const wrong = first.options[(first.answer + 1) % first.options.length];
   await sequence.getByRole("radio", { name: wrong.text, exact: true }).check();
-  await sequence.getByRole("button", { name: "Check answer", exact: true }).click();
+  await sequence.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   const feedback = sequence.locator('[data-feedback="incorrect"]:visible');
-  await expect(feedback).toContainText("Not quite.");
+  await expect(feedback).toContainText("Review the Relationship");
   await expect(feedback).toContainText(wrong.reason);
   await expect(feedback).toContainText(first.options[first.answer].text);
-  await expect(sequence).toContainText("Question 1 of 2");
-  await sequence.getByRole("button", { name: "Next question", exact: true }).click();
+  await expect(feedback).toBeVisible();
   await expect(sequence).toContainText("Question 2 of 2");
-  await expect(sequence.locator(":scope > h3")).toBeFocused();
+  await expect(feedback.locator("h4")).toBeFocused();
   const second = questions.find(question => question.id === "studio-apply-fluid-and-membrane-transport")!;
   await sequence.getByRole("radio", { name: second.options[second.answer].text, exact: true }).check();
-  await sequence.getByRole("button", { name: "Check answer", exact: true }).click();
-  await expect(sequence.locator('[data-feedback="correct"]:visible')).toContainText("Correct.");
-  await sequence.getByRole("button", { name: "See my results", exact: true }).click();
-  await expect(sequence.getByRole("status")).toContainText("1 correct");
-  await expect(sequence.getByRole("status")).toContainText("1 incorrect");
-  await expect(sequence.getByRole("status")).toContainText("0 not checked");
+  await sequence.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(sequence.locator('[data-feedback="correct"]:visible')).toContainText("Correct");
+  await expect(sequence.locator(".practice-results")).toContainText("1 correct");
+  await expect(sequence.locator(".practice-results")).toContainText("1 incorrect");
+  await expect(sequence.locator(".practice-results")).toContainText("0 not checked");
   await sequence.getByRole("button", { name: "Try this set again", exact: true }).click();
   await expect(sequence.locator(".concept-feedback:visible")).toHaveCount(0);
-  await expect(sequence.getByRole("button", { name: "Next question", exact: true })).toBeDisabled();
+  await expect(sequence.getByRole("button", { name: /^Check Answer and Continue/ })).toBeDisabled();
   await sequence.getByRole("radio", { name: first.options[first.answer].text, exact: true }).check();
-  await sequence.getByRole("button", { name: "Check answer", exact: true }).click();
+  await sequence.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   const history = await page.evaluate(() => JSON.parse(localStorage.getItem("wardhan-learning:v1")!).answers["concept-fluid-and-membrane-transport"]);
   expect(history.firstCorrect).toBe(false);
   expect(history.lastCorrect).toBe(true);
@@ -247,7 +247,7 @@ test("sequential practice supports all-question revision, restored answers and d
   await expect(sequence).toContainText("Question 2 of 2");
   await expect(sequence.locator(".practice-question:visible")).toHaveCount(1);
   await sequence.getByRole("radio", { name: question.options[question.answer].text, exact: true }).check();
-  await sequence.getByRole("button", { name: "Check answer", exact: true }).click();
+  await sequence.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await page.reload();
   await expect(sequence.getByRole("radio", { name: question.options[question.answer].text, exact: true })).toBeChecked();
   await sequence.getByRole("button", { name: "Show all questions", exact: true }).click();
@@ -272,13 +272,11 @@ test("sequential review waits for feedback, works without storage and remains ke
   await expect(sequence).toContainText("Storage is unavailable");
   await sequence.getByRole("radio").first().focus();
   await page.keyboard.press("Space");
-  await sequence.getByRole("button", { name: "Check answer", exact: true }).focus();
+  await sequence.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).focus();
   await page.keyboard.press("Enter");
   await expect(sequence.locator(".concept-feedback:visible")).toHaveCount(1);
-  await sequence.getByRole("button", { name: "Next question", exact: true }).focus();
-  await page.keyboard.press("Enter");
   await expect(sequence).toContainText("Question 2 of 2");
-  await expect(sequence.locator(":scope > h3")).toBeFocused();
+  await expect(sequence.locator("[data-feedback] h4:visible")).toBeFocused();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   const { default: AxeBuilder } = await import("@axe-core/playwright");
   const scan = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze();
@@ -299,11 +297,10 @@ test("sequential My Study review checks a fresh answer before allowing the next 
   const sequence = page.getByRole("region", { name: "Your review session sequence", exact: true });
   await expect(sequence.locator(".practice-question:visible")).toHaveCount(1);
   await expect(sequence.locator(".concept-feedback:visible")).toHaveCount(0);
-  await expect(sequence.getByRole("button", { name: "Next question", exact: true })).toBeDisabled();
+  await expect(sequence.getByRole("button", { name: /^Check Answer and Continue/ })).toBeDisabled();
   const first = questions.find(item => item.id === "studio-apply-fluid-and-membrane-transport")!;
   await sequence.getByRole("radio", { name: first.options[first.answer].text, exact: true }).check();
-  await sequence.getByRole("button", { name: "Check answer", exact: true }).click();
-  await sequence.getByRole("button", { name: "Next question", exact: true }).click();
+  await sequence.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(sequence).toContainText("Question 2 of 2");
   await expect(sequence.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeVisible();
 });

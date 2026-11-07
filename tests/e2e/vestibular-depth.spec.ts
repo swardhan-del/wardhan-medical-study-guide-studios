@@ -26,10 +26,10 @@ test("Student finds one vestibular lesson, reads its connected steps and returns
   await page.getByRole("link", { name: "Compare sensory architecture", exact: true }).click();
   await expect(page.locator("#vestibular-structure")).toBeInViewport();
   const save = page.getByRole("button", { name: `Save to My Study: ${lesson.title}`, exact: true });
-  await save.click(); await page.reload();
+  await save.click(); await page.reload();await showAllPractice(page);
   const saved = page.getByRole("button", { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true });
   await expect(saved).toHaveAttribute("aria-pressed", "true");
-  await saved.click(); await page.reload(); await expect(save).toBeVisible();
+  await saved.click(); await page.reload();await showAllPractice(page); await expect(save).toBeVisible();
   await page.getByRole("navigation", { name: "Breadcrumb" }).locator('a[href="/subjects/histology"]').click();
   await expect(page.getByRole("searchbox", { name: "Search resources", exact: true })).toBeVisible();
 });
@@ -98,7 +98,7 @@ test("Manual explanations reveal a rubric, send nothing and clear on reload", as
   }
   expect(posts).toEqual([]);
   expect(await page.evaluate(() => JSON.stringify([localStorage, sessionStorage]))).toBe(before);
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   for (const activity of activities) await expect(page.locator(`#${activity.id}-draft`)).toHaveValue("");
 });
 
@@ -106,10 +106,10 @@ for (const question of questions) test(`Vestibular ${question.id}: every option 
   expect(questions).toHaveLength(17);
   await page.goto(route); await showAllPractice(page);
   const card = page.locator(`#question-${question.id}`);
-  await expect(card.getByRole("button", { name: "Check answer", exact: true })).toBeDisabled();
+  await expect(card.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeDisabled();
   for (const [i, option] of question.options.entries()) {
     await card.getByRole("radio", { name: option.text, exact: true }).check();
-    await card.getByRole("button", { name: "Check answer", exact: true }).click();
+    await card.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(card.locator("[data-feedback]")).toHaveAttribute("data-feedback", i === question.answer ? "correct" : "incorrect");
     await expect(card).toContainText(option.explanation);
     await card.getByRole("button", { name: "Try without feedback", exact: true }).click();

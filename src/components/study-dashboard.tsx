@@ -10,7 +10,7 @@ import { emptyProgress, localDate, studyPlan } from "@/lib/learning-core";
 import { recordVisit, updateLearning, useLearning } from "./learning-store";
 import { PracticeSequence } from "./practice-sequence";
 import { practiceItems, practiceTopics } from "@/content/practice-registry";
-import { practiceSummary } from "@/lib/learning-core";
+import { checkpointPracticeSummary } from "@/lib/learning-core";
 export function StudyDashboard() {
   const { ready, data, persistent } = useLearning();
   const [session, setSession] = useState<string[] | null>(null);
@@ -40,7 +40,16 @@ export function StudyDashboard() {
       data.answers[q.id] &&
       (!data.answers[q.id].lastCorrect || data.answers[q.id].dueAt <= now),
   );
-  const lastPracticed = practiceItems.filter((q) => data.answers[q.id]).sort((a, b) => data.answers[b.id].lastAt - data.answers[a.id].lastAt)[0];
+  const writtenReview = practiceItems.filter(q => data.checkpoints[q.id]?.selfAssessment === "review");
+  const conceptHistory = new Map<string, { misses: number; latest: number; outcome: string; itemId: string }>();
+  for (const [id, record] of Object.entries(data.checkpoints)) {
+    const current = conceptHistory.get(record.concept);
+    conceptHistory.set(record.concept, { misses: (current?.misses ?? 0) + record.misses, latest: Math.max(current?.latest ?? 0, record.at), outcome: !current || record.at >= current.latest ? record.outcome : current.outcome, itemId: !current || record.at >= current.latest ? id : current.itemId });
+  }
+  const repeatedConcepts = [...conceptHistory.values()].filter(c => c.misses >= 2);
+  const attempted = practiceItems.filter(q => data.answers[q.id] || data.checkpoints[q.id]);
+  const lastAt = (id: string) => Math.max(data.answers[id]?.lastAt ?? 0, data.checkpoints[id]?.at ?? 0);
+  const lastPracticed = [...attempted].sort((a, b) => lastAt(b.id) - lastAt(a.id))[0];
   const next =
     renalLessons.find((l) => !data.lessons.includes(l.slug)) ?? renalLessons[0];
   function reset() {
@@ -59,13 +68,18 @@ export function StudyDashboard() {
           ? "No account is needed. Clearing site data removes your saved progress."
           : "Browser storage is unavailable. Progress may disappear when you leave."}
       </p>
+      {(writtenReview.length > 0 || repeatedConcepts.length > 0) && <section className="study-panel" aria-labelledby="relationship-review-title">
+        <h2 id="relationship-review-title">Relationships to revisit</h2>
+        {writtenReview.length > 0 && <><p>{writtenReview.length} written explanations marked for review. These are self-assessments, without an objective score.</p><button className="button button-primary" onClick={() => beginReview(writtenReview.map(q => q.id))}>Review my written explanations</button></>}
+        {repeatedConcepts.map(c => { const item = practiceItems.find(q => q.id === c.itemId); return item ? <p key={item.id}><Link href={item.href}>{item.title}</Link> — {c.misses} missed attempts across explicitly linked checkpoints; latest response: {c.outcome.replaceAll("-", " ")}. This history guides practice; it is not a mastery judgement.</p> : null; })}
+      </section>}
       <div className="metric-row">
         <div>
           <strong>{renalLessons.filter((l) => data.lessons.includes(l.slug)).length}/{renalLessons.length}</strong>
           <span>Renal lessons marked complete</span>
         </div>
         <div>
-          <strong>{Object.keys(data.answers).length}/{practiceItems.length}</strong>
+          <strong>{attempted.length}/{practiceItems.length}</strong>
           <span>Questions attempted</span>
         </div>
         <div>
@@ -123,15 +137,15 @@ export function StudyDashboard() {
       <section>
         <p className="eyebrow">Your practice map</p>
         <h2>Let your answers guide your revision.</h2>
-        <p>Coverage shows how many questions you have attempted. Accuracy describes those attempts. Neither implies mastery. First-attempt scores stay unchanged when you correct an answer.</p>
+        <p>Coverage includes checked answers and model comparisons. Accuracy includes only objectively graded responses; written self-assessment is shown separately. Neither implies mastery. First-attempt scores stay unchanged when you correct an answer.</p>
         <label className="study-form">Filter practice map by subject<select value={subject} onChange={(e) => setSubject(e.target.value)}><option value="all">All subjects</option>{[...new Set(practiceTopics.map((t) => t.subject))].map((id) => <option key={id} value={id}>{id.replaceAll("-", " ")}</option>)}</select></label>
         <label><input type="checkbox" checked={showUnattempted} onChange={(e) => setShowUnattempted(e.target.checked)} /> Show topics I have not attempted</label>
-        {!Object.keys(data.answers).length && !showUnattempted && <p>Your practice map starts with your first checked answer. Explore a <Link className="text-link" href="/subjects">subject learning path</Link>, then return here to review it.</p>}
+        {!attempted.length && !showUnattempted && <p>Your practice map starts with your first checked answer. Explore a <Link className="text-link" href="/subjects">subject learning path</Link>, then return here to review it.</p>}
         <div className="study-grid two">
-          {practiceTopics.filter((t) => (subject === "all" || t.subject === subject) && (showUnattempted || practiceItems.some((q) => q.topic === t.id && data.answers[q.id]))).map((topic) => {
-            const stats = practiceSummary(practiceItems.filter((q) => q.topic === topic.id).map((q) => q.id), data.answers);
-            const status = !stats.attempted ? "Not started" : stats.latestCorrect < stats.attempted ? "Needs review" : stats.attempted < stats.total ? "In progress" : "All questions attempted";
-            return <article key={topic.id} className="topic-progress"><Link className="text-link" href={topic.href}>{topic.title}</Link><p className="practice-status">{status}</p><progress aria-label={`${topic.title} question coverage`} max={stats.total} value={stats.attempted} /><p>Coverage: {stats.attempted} of {stats.total} attempted · {stats.total - stats.attempted} not attempted</p><p>Latest accuracy: {stats.attempted ? `${stats.latestCorrect} of ${stats.attempted} correct` : "No attempts yet"}</p><p>First-attempt accuracy: {stats.firstKnown ? `${stats.firstCorrect} of ${stats.firstKnown} recorded first attempts correct` : "Not recorded yet"}</p>{stats.correctedWithHelp > 0 && <p>{stats.correctedWithHelp} latest correct answers used a hint or a same-day retry.</p>}</article>;
+          {practiceTopics.filter((t) => (subject === "all" || t.subject === subject) && (showUnattempted || attempted.some(q => q.topic === t.id))).map((topic) => {
+            const stats = checkpointPracticeSummary(practiceItems.filter((q) => q.topic === topic.id).map((q) => q.id), data.answers, data.checkpoints);
+            const status = !stats.attempted ? "Not started" : stats.needsReview ? "Needs review" : stats.attempted < stats.total ? "In progress" : "All questions attempted";
+            return <article key={topic.id} className="topic-progress"><Link className="text-link" href={topic.href}>{topic.title}</Link><p className="practice-status">{status}</p><progress aria-label={`${topic.title} question coverage`} max={stats.total} value={stats.attempted} /><p>Coverage: {stats.attempted} of {stats.total} attempted · {stats.total - stats.attempted} not attempted</p><p>Latest accuracy: {stats.scored ? `${stats.latestCorrect} of ${stats.scored} correct` : stats.attempted ? "No objectively graded responses yet" : "No attempts yet"}</p>{stats.modelComparisons > 0 && <p>{stats.modelComparisons} model comparisons or unassessed responses, excluded from accuracy.</p>}<p>First-attempt accuracy: {stats.firstKnown ? `${stats.firstCorrect} of ${stats.firstKnown} recorded first attempts correct` : "Not recorded yet"}</p>{stats.correctedWithHelp > 0 && <p>{stats.correctedWithHelp} latest correct answers used a hint or a same-day retry.</p>}</article>;
           })}
         </div>
       </section>

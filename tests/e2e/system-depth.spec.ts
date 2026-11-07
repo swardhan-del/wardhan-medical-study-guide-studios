@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import teaching from "../../src/content/library-lessons.json";
@@ -43,19 +44,19 @@ for (const id of ["renal-histology", "respiratory-histology"] as const) {
   });
   test(`${id}: all original application checks explain wrong and correct answers and persist`, async ({page}) => {
     await page.goto(`/library/${id}`);
-    await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+    await showAllPractice(page);
     expect(questions).toHaveLength(12);
     for(const q of questions) {
       const block=page.locator(`#question-${q.id}`); const wrong=(q.answer+1)%q.options.length;
       await block.getByRole("radio",{name:q.options[wrong].text,exact:true}).check();
-      await block.getByRole("button",{name:"Check answer",exact:true}).click();
+      await block.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
       await expect(block).toContainText(q.options[wrong].explanation);
       await block.getByRole("button",{name:"Try without feedback",exact:true}).click();
       await block.getByRole("radio",{name:q.options[q.answer].text,exact:true}).check();
-      await block.getByRole("button",{name:"Check answer",exact:true}).click();
+      await block.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
       await expect(block).toContainText(q.options[q.answer].explanation);
     }
-    await page.reload(); await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+    await page.reload(); await showAllPractice(page);
     for(const q of questions) await expect(page.locator(`#question-${q.id}`).getByRole("radio",{name:q.options[q.answer].text,exact:true})).toBeChecked();
   });
   test(`${id}: route explorer supports keyboard switching and hides stale reasoning`, async ({page}) => {
@@ -74,7 +75,7 @@ for (const id of ["renal-histology", "respiratory-histology"] as const) {
     await page.goto(`/library/${id}`);
     const save=page.getByRole("button",{name:`Save to My Study: ${lesson.title}`,exact:true});await save.click();await page.reload();
     const saved=page.getByRole("button",{name:`Saved to My Study: ${lesson.title} (remove from saved resources)`,exact:true});await expect(saved).toHaveAttribute("aria-pressed","true");await saved.click();await page.reload();await expect(save).toBeVisible();
-    await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+    await showAllPractice(page);
     expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
     await page.screenshot({path:testInfo.outputPath(`${id}-desktop.png`),fullPage:true});
     await page.setViewportSize({width:320,height:900});await page.addStyleTag({content:"html { font-size: 200% !important; }"});

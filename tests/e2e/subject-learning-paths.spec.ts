@@ -71,22 +71,22 @@ for (const id of newEntryLessonIds) {
     ];
     expect(questions).toHaveLength(4);
     for (const q of questions) {
-      const panel = page.locator('.practice-question:visible').filter({ hasText: q.prompt });
+      const panel = page.locator('.practice-question:visible:has(input[type=radio])').filter({ hasText: q.prompt });
       await expect(panel.getByRole('status')).toHaveCount(0);
-      await expect(panel.getByRole('button', { name: 'Check answer', exact: true })).toBeDisabled();
+      await expect(panel.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeDisabled();
       const wrong = q.options[(q.answer+1)%q.options.length];
-      await panel.getByRole('radio', { name: wrong.text, exact: true }).check();
-      await panel.getByRole('button', { name: 'Check answer', exact: true }).click();
-      await expect(panel.getByRole('status')).toContainText('Review the distinction.');
+      await showAllPractice(page);await panel.getByRole('radio', { name: wrong.text, exact: true }).check();
+      await panel.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+      await expect(panel.getByRole('status')).toContainText('Review the Relationship');
       await panel.getByRole('button', { name: 'Try without feedback', exact: true }).click();
-      await panel.getByRole('radio', { name: q.options[q.answer].text, exact: true }).check();
-      await panel.getByRole('button', { name: 'Check answer', exact: true }).click();
-      await expect(panel.getByRole('status')).toContainText('Correct.');
+      await showAllPractice(page);await panel.getByRole('radio', { name: q.options[q.answer].text, exact: true }).check();
+      await panel.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+      await expect(panel.getByRole('status')).toContainText('Correct');
       for (const option of q.options) await expect(panel.getByRole('status')).toContainText(option.explanation);
     }
-    await page.reload();
+    await page.reload();await showAllPractice(page);
     await showAllPractice(page);
-    for (const q of questions) await expect(page.locator('.practice-question:visible').filter({ hasText: q.prompt }).getByRole('radio', { name: q.options[q.answer].text, exact: true })).toBeChecked();
+    for (const q of questions) await expect(page.locator('.practice-question:visible:has(input[type=radio])').filter({ hasText: q.prompt }).getByRole('radio', { name: q.options[q.answer].text, exact: true })).toBeChecked();
     expect(errors).toEqual([]);
   });
 
@@ -121,7 +121,7 @@ for (const id of newEntryLessonIds) {
     const checks = page.locator('section[aria-labelledby="summary-checklist-title"]:visible').getByRole('checkbox');
     await expect(checks).toHaveCount(4); await checks.first().focus(); await page.keyboard.press('Space');
     await expect(checks.first()).toBeFocused();
-    await page.reload(); await expect(checks.first()).toBeChecked();
+    await page.reload();await showAllPractice(page); await expect(checks.first()).toBeChecked();
     await expect(notes).toHaveValue('State the mechanism and its assumptions.');
     await expect(page.locator('#short-recap-title:visible').locator('..')).toContainText(lesson.recall.answer);
     expect(await page.locator('article:visible').innerText()).not.toMatch(/retrieval|oral recall/i);

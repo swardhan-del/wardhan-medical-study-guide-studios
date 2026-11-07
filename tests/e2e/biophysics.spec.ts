@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 
 test("biophysics is native, searchable and retains practice across reloads", async ({ page }, info) => {
@@ -15,9 +16,9 @@ test("biophysics is native, searchable and retains practice across reloads", asy
   await page.getByRole("button",{name:/Save to My Study:/}).click();
   const check=page.locator("#concept-check-title");
   await check.getByRole("radio",{name:"Particle displaced volume",exact:true}).check();
-  await check.getByRole("button",{name:"Check answer",exact:true}).click();
+  await check.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
   await expect(check.getByRole("status")).toContainText("Correct");
-  await page.reload();
+  await page.reload(); await showAllPractice(page);
   await expect(check.getByRole("radio",{name:"Particle displaced volume",exact:true})).toBeChecked();
   await expect(page.getByRole("navigation",{name:"Biophysics lesson sequence"})).toContainText("Practical lesson 11 of 14");
   expect(await page.locator('a[href*="drive.google.com"]').count()).toBe(0);

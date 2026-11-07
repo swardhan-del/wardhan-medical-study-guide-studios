@@ -20,9 +20,9 @@ test("Student finds the existing audiometry page, saves it and returns to biophy
   await page.getByRole("link", { name: "Compare audiograms", exact: true }).click();
   await expect(page.locator("#audiogram-explorer h2")).toBeInViewport();
   const save = page.getByRole("button", { name: `Save to My Study: ${lesson.title}`, exact: true });
-  await save.click(); await page.reload();
+  await save.click(); await page.reload();await showAllPractice(page);
   const saved = page.getByRole("button", { name: `Saved to My Study: ${lesson.title} (remove from saved resources)`, exact: true });
-  await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload(); await expect(save).toBeVisible();
+  await expect(saved).toHaveAttribute("aria-pressed", "true"); await saved.click(); await page.reload();await showAllPractice(page); await expect(save).toBeVisible();
   await page.getByRole("navigation", { name: "Breadcrumb" }).locator('a[href="/subjects/biophysics"]').click();
   await expect(page.getByRole("searchbox", { name: "Search resources", exact: true })).toBeVisible();
 });
@@ -44,7 +44,7 @@ test("Every fictional case and frequency distinguishes exact differences from mi
       } else {
         await panel.getByRole("checkbox", { name: "No exact result", exact: true }).check();
       }
-      await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+      await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
       await expect(panel.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
       if (finite && !item.earSpecificEstablished) await expect(panel.getByRole("status")).toContainText("Do not label this a confirmed same-ear air-bone gap");
       if (point.boneNoResponseAtDbHL !== null) await expect(panel.getByRole("status")).toContainText("not an exact bone-conduction threshold");
@@ -83,14 +83,14 @@ test("Wrong and malformed answers get feedback without inventing an exact output
   await page.goto(route); const panel = page.locator("#audiogram-explorer");
   const input = panel.getByLabel("Difference (dB)", { exact: true });
   for (const value of ["", "NaN", "Infinity", "0x20", "35 dB", "36"]) {
-    await input.fill(value); await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+    await input.fill(value); await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(panel.locator("[data-feedback]")).toHaveAttribute("data-feedback", "incorrect");
   }
-  await input.fill("35"); await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+  await input.fill("35"); await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(panel.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
   await panel.getByRole("button", { name: chart.cases[4].title, exact: true }).click();
   await expect(input).toHaveValue(""); await expect(panel.getByRole("status")).toBeEmpty();
-  await input.fill("30"); await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+  await input.fill("30"); await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(panel.locator("[data-feedback]")).toHaveAttribute("data-feedback", "incorrect");
   await expect(panel.getByRole("status")).toContainText("not an exact bone-conduction threshold");
 });
@@ -102,11 +102,11 @@ test("Calculation and diagram choices send nothing and are not retained", async 
   const posts: string[] = []; page.on("request", request => { if (request.method() === "POST") posts.push(request.url()); });
   await panel.getByRole("button", { name: chart.cases[2].title, exact: true }).click();
   await panel.getByLabel("Difference (dB)", { exact: true }).fill("30");
-  await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+  await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await panel.getByRole("button", { name: "Air conduction", exact: true }).click();
   expect(posts).toEqual([]); expect(await page.evaluate(() => JSON.stringify([localStorage, sessionStorage]))).toBe(baseline);
   await expect(panel.locator("audio,video,iframe")).toHaveCount(0);
-  await page.reload(); await expect(panel.getByRole("button", { name: chart.cases[0].title, exact: true })).toHaveAttribute("aria-pressed", "true");
+  await page.reload();await showAllPractice(page); await expect(panel.getByRole("button", { name: chart.cases[0].title, exact: true })).toHaveAttribute("aria-pressed", "true");
   await expect(panel.getByLabel("Difference (dB)", { exact: true })).toHaveValue("");
   await expect(panel.getByRole("status")).toBeEmpty();
 });
@@ -114,10 +114,10 @@ test("Calculation and diagram choices send nothing and are not retained", async 
 for (const question of questions) test(`Audiometry ${question.id}: each option has reasoning`, async ({ page }) => {
   expect(questions).toHaveLength(7); await page.goto(route); await showAllPractice(page);
   const panel = page.locator(`#question-${question.id}`);
-  await expect(panel.getByRole("button", { name: "Check answer", exact: true })).toBeDisabled();
+  await expect(panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeDisabled();
   for (const [index, option] of question.options.entries()) {
     await panel.getByRole("radio", { name: option.text, exact: true }).check();
-    await panel.getByRole("button", { name: "Check answer", exact: true }).click();
+    await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(panel.locator("[data-feedback]")).toHaveAttribute("data-feedback", index === question.answer ? "correct" : "incorrect");
     await expect(panel).toContainText(option.explanation);
     await panel.getByRole("button", { name: "Try without feedback", exact: true }).click();
@@ -149,7 +149,7 @@ test("Narrow doubled-text controls and data table remain accessible without runt
   const panel = page.locator("#audiogram-explorer"); await panel.getByRole("button", { name: chart.cases[4].title, exact: true }).click();
   await page.addStyleTag({ content: "html{font-size:200% !important}" });
   await panel.getByRole("checkbox", { name: "No exact result", exact: true }).check();
-  const button = panel.getByRole("button", { name: "Check answer", exact: true }); await button.focus(); await page.keyboard.press("Enter");
+  const button = panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }); await button.focus(); await page.keyboard.press("Enter");
   await expect(panel.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   for (const control of await panel.locator("button, label").all()) {

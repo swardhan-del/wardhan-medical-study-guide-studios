@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import lessons from "../../src/content/library-lessons.json";
@@ -28,18 +29,22 @@ for(const id of ["muscle-histology","vessel-histology"]){
     const errors:string[]=[];page.on("pageerror",e=>errors.push(e.message));
     await page.goto(`/library/${id}`);
     const steps=page.locator(".concept-sequence > details");await expect(steps).toHaveCount(18);
-    for(const step of await steps.all()){
+    for(const [index, step] of (await steps.all()).entries()){
       if((await step.getAttribute("open"))===null)await step.locator("summary").first().click();
-      await expect(step.getByText("Apply this distinction:",{exact:false})).toBeVisible();
+      const expectedPractice = (lessons.lessons.find(l => l.id === id)!.steps[index] as { practice: { prompt: string; feedback: string } }).practice;
+      await expect(step.getByText(expectedPractice.prompt, { exact: true })).toBeVisible();
+      await step.getByRole("textbox", { name: "Your explanation", exact: true }).fill("My structure and mechanism explanation.");
+      await step.getByRole("button", { name: "Check Answer and Continue →", exact: true }).click();
+      await expect(step.locator('[data-feedback="self-review"]')).toContainText(expectedPractice.feedback);
       await expect(step.locator('details').filter({has:page.locator('summary', {hasText:/References for/})})).toHaveCount(1);
     }
     const questions=practice.questions.filter(q=>q.topic===id);expect(questions).toHaveLength(8);
-    await page.getByRole("button",{name:"Show all questions",exact:true}).click();
+    await showAllPractice(page);
     for(const question of questions){
       const box=page.locator(`#question-${question.id}`);
       await expect(box).toContainText(question.prompt);
       await box.getByRole("radio",{name:question.options[question.answer].text,exact:true}).check();
-      await box.getByRole("button",{name:"Check answer",exact:true}).click();
+      await box.getByRole("button",{name: /^Check (?:answer|Answer and Continue →)$/}).click();
       await expect(box).toContainText(question.options[question.answer].explanation);
     }
     expect(errors).toEqual([]);

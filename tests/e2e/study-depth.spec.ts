@@ -1,3 +1,4 @@
+import { showAllPractice, compareAnatomyModels } from "./helpers/practice-view";
 import { newEntryLessonIds } from "../../src/content/subject-hubs";
 import { mkdirSync } from "node:fs";
 import { test, expect } from '@playwright/test';
@@ -11,10 +12,10 @@ test('a pending radio copy cannot interfere with an active practice question',as
     const pending=document.createElement('input');pending.type='radio';
     pending.name='concept-indicator-dilution';pending.hidden=true;document.body.append(pending);
   });
-  const check=page.locator('#concept-check-title:visible');
-  await check.getByRole('radio', { name: data.lessons.find(l => l.id === 'indicator-dilution')!.question.options[1].text, exact: true }).check();
-  await check.getByRole('button',{name:'Check answer',exact:true}).click();
-  await expect(check.getByRole('status')).toContainText('Correct.');
+  const check=page.locator('#question-concept-indicator-dilution');
+  await showAllPractice(page);await check.getByRole('radio', { name: data.lessons.find(l => l.id === 'indicator-dilution')!.question.options[1].text, exact: true }).check();
+  await check.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();
+  await expect(check.getByRole('status')).toContainText('Correct');
   expect(errors).toEqual([]);
 });
 
@@ -44,19 +45,17 @@ for(const lesson of data.lessons.filter(l=>'workedExample' in l)){
     const worked=page.locator('section[aria-labelledby="worked-example-heading"]:visible');
     await worked.locator('summary').click();
     await expect(worked.locator('ol')).toBeVisible();
-    const check=page.locator('#concept-check-title:visible');
-    await check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
-    await check.getByRole('button',{name:'Check answer',exact:true}).click();
-    await expect(check.getByRole('status')).toContainText('Correct.');
-    await page.reload();
+    const check=page.locator('#question-concept-'+lesson.id);
+    await showAllPractice(page);await check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
+    await check.getByRole('button',{name: /^Check (?:answer|Answer and Continue →)$/}).click();
+    await expect(check.getByRole('status')).toContainText('Correct');
+    await page.reload();await showAllPractice(page);
     await expect(check.getByRole('radio', { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeChecked();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     expect(errors).toEqual([]);
     if (lesson.subject === 'anatomy' && lesson.id !== 'anatomy-foundations') {
       await expect(page.getByRole('navigation', { name: 'Anatomy volume navigation' })).toBeVisible();
-      await expect(page.locator('.anatomy-practice-item')).toHaveCount(4);
-      await page.getByText('Reveal explanation for item 2', { exact: true }).click();
-      await expect(page.locator('.anatomy-practice-item').first().locator('details')).toHaveAttribute('open', '');
+      await compareAnatomyModels(page, 1);
       const shots = process.env.ANATOMY_SCREENSHOT_DIR;
       if (shots) { mkdirSync(shots, { recursive: true }); await page.screenshot({path: `${shots}/${lesson.id}-${info.project.name}.jpg`, fullPage:true, quality:65}); }
     }

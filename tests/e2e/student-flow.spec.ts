@@ -1,3 +1,4 @@
+import { showAllPractice } from "./helpers/practice-view";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile } from "node:fs/promises";
@@ -23,10 +24,13 @@ test("first session persists stages, completion and saved summaries, then recomm
   await journey.getByRole("link", { name: "Practice", exact: true }).click();
   const check = page.locator("#concept-check-title");
   await check.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true }).check();
-  await check.getByRole("button", { name: "Check answer", exact: true }).click();
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await page.goto("/");
   await expect(page.getByRole("link", { name: "Resume lesson" })).toHaveAttribute("href", `/library/${id}#concept-check-title`);
   await page.getByRole("link", { name: "Resume lesson" }).click();
+  await expect(page).toHaveURL(`/library/${id}#concept-check-title`);
+  await expect(check.locator(".practice-sequence")).toBeVisible();
+  await showAllPractice(page);
   await expect(check.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeChecked();
   await journey.getByRole("link", { name: "Review summary", exact: true }).click();
   const review = page.getByRole("region", { name: "Review summary", exact: true });
@@ -89,7 +93,7 @@ test("blocked storage and corrupt progress keep lessons usable with honest recov
   await expect(page.getByRole("button", { name: "Explanation reviewed — undo" })).toHaveAttribute("aria-pressed", "true");
   const check = page.locator("#concept-check-title");
   await check.getByRole("radio").first().check();
-  await check.getByRole("button", { name: "Check answer", exact: true }).click();
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(page.getByRole("region", { name: "Your lesson journey" }).getByRole("progressbar")).toHaveAttribute("value", "2");
   const clean = await context.browser()!.newContext();
   try {

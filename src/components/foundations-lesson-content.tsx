@@ -1,3 +1,5 @@
+import { sectionCheckpointItems } from "@/content/section-checkpoints";
+import { PracticeQuestion } from "./practice-question";
 import type { LibraryLesson } from "@/lib/library-types";
 import studio from "@/content/study-questions.json";
 import transfer from "@/content/transfer-practice.json";
@@ -40,6 +42,7 @@ export function FoundationsLessonContent({ lesson, preparation, coreConcepts, vi
       {lesson.steps.map((step, index) => <details open className={styles.explanation} key={step.title}>
         <summary>{index + 1}. {step.title}</summary>
         <div>{step.body.split("\n\n").map(paragraph => <TeachingParagraph key={paragraph} text={paragraph}/>)}</div>
+        {step.practice && <PracticeQuestion item={sectionCheckpointItems.find(item => item.id === `section-${lesson.id}-${index + 1}`)!}/> }
       </details>)}
     </section>
     {visualStudy}

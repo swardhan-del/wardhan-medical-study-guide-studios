@@ -16,6 +16,10 @@ export function readTransfer(raw: string, lessons: string[], questions: string[]
 export function mergeProgress(current: LearningProgress, incoming: LearningProgress): LearningProgress {
   const answers = { ...current.answers };
   const journey = { ...current.journey };
+  const checkpoints = { ...current.checkpoints };
+  for (const [id, record] of Object.entries(incoming.checkpoints)) {
+    if (!checkpoints[id] || record.at > checkpoints[id].at) checkpoints[id] = record;
+  }
   for (const [id, entry] of Object.entries(incoming.journey)) {
     if (!journey[id] || entry.at > journey[id].at) journey[id] = entry;
   }
@@ -28,6 +32,7 @@ export function mergeProgress(current: LearningProgress, incoming: LearningProgr
     oral: [...new Set([...current.oral, ...incoming.oral])],
     visits: [...new Set([...current.visits, ...incoming.visits])].sort().slice(-366),
     answers,
+    checkpoints,
     drafts: { ...incoming.drafts, ...current.drafts },
     plan: current.plan ?? incoming.plan,
     quizzes: Math.max(current.quizzes, incoming.quizzes),

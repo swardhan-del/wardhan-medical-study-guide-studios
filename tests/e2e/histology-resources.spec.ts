@@ -33,17 +33,17 @@ test("histology foundations exposes sourced teaching, hidden feedback and persis
   await expect(page.getByRole("region", { name: /^Application Question [1-3]$/ })).toHaveCount(3);
   const questions = [...studio.questions, ...transfer.questions].filter(q => q.topic === id);
   for (const q of questions) {
-    const panel = page.locator(".practice-question:visible").filter({ hasText: q.prompt });
+    const panel = page.locator(".practice-question:visible:has(input[type=radio])").filter({ hasText: q.prompt });
     await expect(panel.getByRole("status")).toHaveCount(0);
     await panel.getByRole("radio", { name: q.options[q.answer].text, exact: true }).check();
-    await panel.getByRole("button", { name: "Check answer", exact: true }).click();
-    await expect(panel.getByRole("status")).toContainText("Correct.");
+    await panel.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+    await expect(panel.getByRole("status")).toContainText("Correct");
     await expect(panel.getByRole("status")).toContainText(q.options[q.answer].explanation);
   }
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   await showAllPractice(page);
   for (const q of questions) {
-    const panel = page.locator(".practice-question:visible").filter({ hasText: q.prompt });
+    const panel = page.locator(".practice-question:visible:has(input[type=radio])").filter({ hasText: q.prompt });
     await expect(panel.getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();
   }
   const refs = references as Record<string, { url: string }>;
@@ -102,10 +102,10 @@ test("histology foundations is reachable through the beginner path, library sear
   await expect(enlarge).toBeFocused();
   const check = page.locator('input[type="checkbox"]:visible').first();
   await check.check();
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   await expect(check).toBeChecked();
   await page.locator(".concept-recall:visible").getByLabel("My oral examination notes", { exact: true }).fill("Compare cells, matrix and orientation.");
-  await page.reload();
+  await page.reload();await showAllPractice(page);
   await expect(page.locator(".concept-recall:visible").getByLabel("My oral examination notes", { exact: true })).toHaveValue("Compare cells, matrix and orientation.");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   expect(await page.locator("article:visible").innerText()).not.toMatch(/retrieval|oral recall/i);

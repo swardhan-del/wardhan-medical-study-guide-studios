@@ -1,32 +1,39 @@
 "use client";
 
-import { recordAnswer, recordVisit, useLearning } from "./learning-store";
+import { useLearning } from "./learning-store";
 import Link from "next/link";
-import { useState } from "react";
+import { PracticeQuestion } from "./practice-question";
+import { CheckpointFeedback } from "./conceptual-checkpoint";
+import { checkpointFor } from "@/lib/checkpoint-adapter";
+import { evaluateCheckpoint } from "@/lib/conceptual-checkpoint";
+import { useEffect, useRef, useState } from "react";
 import type { StudyLesson } from "@/content/anatomy-learning";
-import { ThoraxLab, type AnatomyAnswers } from "@/components/thorax-lab";
+import { ThoraxLab } from "@/components/thorax-lab";
 import thoraxPractice from "@/content/thorax-practice.json";
 
 export function LearningExplorer({ lessons, initialLessonId }: { lessons: StudyLesson[]; initialLessonId?: string }) {
   const [active, setActive] = useState(Math.max(0, lessons.findIndex((l) => l.id === initialLessonId)));
-  const { data, ready } = useLearning();
-  const [drafts, setDrafts] = useState<AnatomyAnswers>({});
-  const [resetIds, setResetIds] = useState<string[]>([]);
+  const { data } = useLearning();
+  const [previousId, setPreviousId] = useState<string | null>(null);
   const storedId = (id: string) => id.startsWith("thorax-") ? id : "anatomy-" + id;
-  const answers: AnatomyAnswers = Object.fromEntries(Object.entries(data.answers).filter(([id, a]) => (id.startsWith("thorax-") || id.startsWith("anatomy-")) && a.lastChoice !== null).map(([id, a]) => [id.replace(/^anatomy-/, ""), { choice: a.lastChoice!, checked: true }]));
-  for (const id of resetIds) delete answers[id];
-  Object.assign(answers, drafts);
-  function answer(id: string, choice: number, checked: boolean, correct: number) {
-    setDrafts((previous) => ({ ...previous, [id]: { choice, checked } }));
-    if (checked) { recordAnswer(storedId(id), choice === correct, choice); recordVisit(); }
-  }
   const questions = lessons.flatMap<{ id: string; answer: number }>((lesson) => lesson.activity === "thorax" ? thoraxPractice.questions : [lesson]);
-  const correct = questions.filter((question) => answers[question.id]?.checked && answers[question.id]?.choice === question.answer).length;
+  const correct = questions.filter(q => data.answers[storedId(q.id)]?.lastCorrect).length;
+  const itemFor = (lesson: StudyLesson) => ({ id: storedId(lesson.id), topic: storedId(lesson.id), title: lesson.title, subject: "anatomy", href: `#question-${storedId(lesson.id)}`, prompt: lesson.question, answer: lesson.answer, options: lesson.options.map(text => ({ text, explanation: lesson.feedback })) });
+  const workspace = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!previousId) return;
+    const heading = workspace.current?.querySelector<HTMLElement>(":scope > [data-feedback] h4");
+    heading?.focus({ preventScroll: true }); heading?.scrollIntoView({ block: "nearest", behavior: "instant" });
+  }, [previousId]);
+  const previous = lessons.find(l => l.id === previousId);
+  const previousQuestion = previous ? checkpointFor(itemFor(previous)) : null;
+  const previousChoice = previous ? data.answers[storedId(previous.id)]?.lastChoice : null;
+  const previousEvaluation = previousQuestion && typeof previousChoice === "number" ? evaluateCheckpoint(previousQuestion, previousChoice) : null;
   return (
     <section id="explore" className="learning-explorer" aria-labelledby="explorer-title">
       <header className="explorer-heading">
         <div><p className="eyebrow">Explore & recall</p><h2 id="explorer-title">Choose a topic.</h2></div>
-        <p className="learning-progress" role="status" aria-live="polite">{correct} of {questions.length} answered correctly in this round · history saved in My Study</p>
+        <p className="learning-progress" role="status" aria-live="polite">{correct} of {questions.length} answered correctly on the latest attempt · history saved in My Study</p>
       </header>
       <div className="explorer-layout">
         <div className="lesson-selector" role="group" aria-label="Choose a study topic">
@@ -36,10 +43,9 @@ export function LearningExplorer({ lessons, initialLessonId }: { lessons: StudyL
             </button>
           ))}
         </div>
-        <div className="lesson-workspace">
+        <div ref={workspace} className="lesson-workspace">
+          {previous && previous.id !== lessons[active].id && previousQuestion && previousEvaluation && <CheckpointFeedback question={previousQuestion} evaluation={previousEvaluation}/>}
           {lessons.map((lesson, index) => {
-            const response = answers[lesson.id];
-            const isCorrect = response?.checked && response.choice === lesson.answer;
             return (
               <article className="lesson-panel" id={`lesson-${lesson.id}`} hidden={active !== index} key={lesson.id} aria-labelledby={`title-${lesson.id}`}>
                 <p className="eyebrow">Topic {index + 1} of {lessons.length}</p>
@@ -47,28 +53,7 @@ export function LearningExplorer({ lessons, initialLessonId }: { lessons: StudyL
                 <p>{lesson.explanation}</p>
                 <ul className="lesson-points">{lesson.points.map((point) => <li key={point}>{point}</li>)}</ul>
                 <a className="msk-reference" href={`#source-${lesson.source}`}>Source: {lesson.reference} →</a>
-                {lesson.activity === "thorax" ? <ThoraxLab answers={answers}
-                  onAnswer={(id, choice, checked) => answer(id, choice, checked, thoraxPractice.questions.find((q) => q.id === id)!.answer)}
-                  onReset={(ids) => { setResetIds((previous) => [...new Set([...previous, ...ids])]); setDrafts((previous) => Object.fromEntries(Object.entries(previous).filter(([id]) => !ids.includes(id)))); }}
-                /> : <form className="lesson-quiz" onSubmit={(event) => {
-                  event.preventDefault();
-                  if (!response || response.checked) return;
-                  answer(lesson.id, response.choice, true, lesson.answer);
-                }}>
-                  <fieldset>
-                    <legend>{lesson.question}</legend>
-                    {lesson.options.map((option, optionIndex) => (
-                      <label className="quiz-option" key={option}>
-                        <input type="radio" name={`answer-${lesson.id}`} value={optionIndex} checked={response?.choice === optionIndex} onChange={() => answer(lesson.id, optionIndex, false, lesson.answer)} />
-                        <span>{option}</span>
-                      </label>
-                    ))}
-                  </fieldset>
-                  <button className="button button-primary" type="submit" disabled={!ready || !response || response.checked}>Check answer</button>
-                  <div className="quiz-feedback" role="status" aria-live="polite">
-                    {response?.checked ? <p><strong>{isCorrect ? "Correct." : "Try again."}</strong> {lesson.feedback}</p> : null}
-                  </div>
-                </form>}
+                {lesson.activity === "thorax" ? <ThoraxLab/> : <PracticeQuestion item={itemFor(lesson)} onComplete={() => { setPreviousId(lesson.id); if (index + 1 < lessons.length) setActive(index + 1); }}/>}
                 {lesson.related ? <Link className="text-link" href={lesson.related.href}>{lesson.related.label} →</Link> : null}
               </article>
             );

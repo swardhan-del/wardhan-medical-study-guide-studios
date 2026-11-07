@@ -23,7 +23,7 @@ async function allow(page: Page) {
 async function completeQuestion(page: Page) {
   const check = page.locator("#concept-check-title:visible");
   await check.getByRole("radio").first().check();
-  await check.getByRole("button", { name: "Check answer", exact: true }).click();
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(check.getByRole("status")).toBeVisible();
 }
 
