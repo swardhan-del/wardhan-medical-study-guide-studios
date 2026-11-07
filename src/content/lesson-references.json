@@ -1709,9 +1709,39 @@
     "checkedAt": "2026-09-09"
   },
   "biophysics-practical-audiometry": {
-    "title": "OpenStax: oscillations",
-    "url": "https://openstax.org/books/university-physics-volume-1/pages/15-introduction",
-    "checkedAt": "2026-09-09"
+    "title": "ASHA: Manual Pure-Tone Threshold Audiometry (2005)",
+    "url": "https://www.asha.org/policy/GL2005-00014/",
+    "checkedAt": "2026-11-07",
+    "supportingReferences": [
+      {
+        "title": "ASHA: Audiometric Symbols (1990)",
+        "url": "https://www.asha.org/policy/GL1990-00006/"
+      },
+      {
+        "title": "BSA: Pure-tone audiometry (2018), sections 8 and 10",
+        "url": "https://www.thebsa.org.uk/wp-content/uploads/2023/10/OD104-32-Recommended-Procedure-Pure-Tone-Audiometry-August-2018-FINAL-1.pdf"
+      },
+      {
+        "title": "ASHA: Hearing Loss in Adults, overview and assessment",
+        "url": "https://www.asha.org/practice-portal/clinical-topics/hearing-loss/"
+      },
+      {
+        "title": "OpenStax University Physics: Sound Intensity",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity"
+      },
+      {
+        "title": "OpenStax College Physics: Hearing",
+        "url": "https://openstax.org/books/college-physics-2e/pages/17-6-hearing"
+      },
+      {
+        "title": "Simon Fraser University Acoustic Ecology Handbook: Phon",
+        "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Phon.html"
+      },
+      {
+        "title": "Simon Fraser University Acoustic Ecology Handbook: Sone",
+        "url": "https://www.sfu.ca/sonic-studio-webdav/handbook/Sone.html"
+      }
+    ]
   },
   "biophysics-practical-biosignals": {
     "title": "OpenStax: electrical circuits",
@@ -3109,6 +3139,45 @@
       {
         "title": "UNSW Embryology: sensory placodes and otic development",
         "url": "https://embryology.med.unsw.edu.au/embryology/index.php/Placodes"
+      }
+    ]
+  },
+  "retinal-structure-light-signal-direction": {
+    "title": "Yan et al. (2020): Cell Atlas of the Human Fovea and Peripheral Retina",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7299956/",
+    "checkedAt": "2026-11-07",
+    "supportingReferences": [
+      {
+        "title": "Omri et al. (2010): The outer limiting membrane revisited",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2861922/"
+      },
+      {
+        "title": "Eiraku et al. (2011): Self-organizing optic-cup morphogenesis in three-dimensional culture",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21475194/"
+      },
+      {
+        "title": "Gage et al. (2005): Fate maps of neural crest and mesoderm in the mammalian eye",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16249499/"
+      },
+      {
+        "title": "Benedicto et al. (2017): Concerted regulation of RPE basement membrane and barrier function",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454459/"
+      },
+      {
+        "title": "UNSW Embryology: Vision — Retina Development",
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=Vision_-_Retina_Development"
+      },
+      {
+        "title": "University of Michigan: Eye Histology, Michael Hortsch (2009)",
+        "url": "https://open.umich.edu/sites/default/files/downloads/031809.mhortsch.eyehistology.pdf"
+      },
+      {
+        "title": "Librepath: optic-disc overview — source, H&E identification and licence",
+        "url": "https://commons.wikimedia.org/wiki/File:Optic_nerve_head_and_retina_--_low_mag.jpg"
+      },
+      {
+        "title": "Librepath: retinal detail — source, H&E identification and licence",
+        "url": "https://commons.wikimedia.org/wiki/File:Retina_--_intermed_mag.jpg"
       }
     ]
   }

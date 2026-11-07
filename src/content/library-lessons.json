@@ -10734,8 +10734,8 @@
         "loudness",
         "masking"
       ],
-      "source": "biophysics",
-      "section": "Combined notes, practical questions 133–142",
+      "source": "original-audiometry-measurement",
+      "section": "Sound-level references, audiogram comparison and measurement uncertainty",
       "steps": [
         {
           "title": "Use a reference",
@@ -10752,6 +10752,46 @@
         {
           "title": "Work a level difference",
           "body": "An intensity rises from I to 100I, giving a 20 dB increase. If RMS pressure doubles in the same medium, sound-pressure level rises by about 6 dB. These two examples use different underlying ratios, which is why their logarithmic multipliers differ."
+        },
+        {
+          "title": "Read the measured variable before the curve",
+          "body": "A plotted threshold is a detection result for a stated frequency and test condition. The horizontal axis counts acoustic cycles per second; the vertical axis records hearing level. Neither axis is a hair-cell count, a spike rate or a measure of speech understanding. Start by reading the label, then the number.",
+          "highlight": "Frequency is not intensity, and a threshold is not a tissue diagnosis."
+        },
+        {
+          "title": "Use the reference scale correctly",
+          "body": "dB HL uses a frequency- and transducer-dependent reference. Zero on that scale is not the absence of sound, and a measured value can be negative. dB SPL uses a physical pressure reference. A bare numerical substitution from one scale into the other loses the calibration information.",
+          "highlight": "Keep the reference with every decibel value."
+        },
+        {
+          "title": "Follow octave spacing and the downward level axis",
+          "body": "Equal horizontal distances on this chart represent equal frequency ratios: 500 to 1,000 Hz and 2,000 to 4,000 Hz each span an octave. Hearing level increases downward. A lower point therefore requires more level for detection; it does not mean a lower-frequency tone. The vertical difference between 55 and 20 is 35 dB.",
+          "highlight": "Compare points at the same frequency."
+        },
+        {
+          "title": "Separate presentation side from the responding cochlea",
+          "body": "The legend records the ear or placement, route and masking condition. An unmasked bone-conduction symbol on the right side does not prove that the right cochlea supplied the response. Cross-hearing is an alternative explanation that must be addressed before an ear-specific interpretation. Colour cannot replace a readable legend.",
+          "highlight": "A right-side symbol alone is not evidence of a right-cochlea response."
+        },
+        {
+          "title": "Subtract first, then audit what the subtraction means",
+          "body": "For two established same-ear thresholds at 1,000 Hz, AC 55 minus BC 20 gives a 35 dB air-bone gap. The arithmetic is transparent; the interpretation also needs comparable conditions, reliable responses and ear specificity. When those assumptions are absent, the numbers can still be subtracted, but the result is not an established ear-specific gap.",
+          "highlight": "A numerical difference and a valid clinical comparison are separate claims."
+        },
+        {
+          "title": "Compare the underlying thresholds as well as the gap",
+          "body": "Two examples can share a 30 dB difference while having different bone-conduction thresholds. A conductive component and a sensory/neural component describe different parts of the functional pattern. Read both absolute thresholds and the frequency pattern. These invented cases illustrate comparisons; they do not select a disease or quantify the fraction of damaged cells.",
+          "highlight": "Equal gaps do not make two whole audiograms equivalent."
+        },
+        {
+          "title": "Keep no-response and missing data separate",
+          "body": "A no-response mark at a stated output limit is not a measured threshold at that number. An untested frequency has no observation at all. Neither should be replaced with zero or joined into an ordinary threshold curve. If one member of a pair lacks a measured threshold, this exercise cannot calculate an exact air-bone gap.",
+          "highlight": "A limit is not an exact threshold; missing is not zero."
+        },
+        {
+          "title": "Ask what additional evidence would change the interpretation",
+          "body": "A measured pattern can motivate further assessment without establishing a unique lesion. Test reliability, transducer conditions, ear examination and other audiological measures supply different evidence. A pure-tone result alone does not locate every sensory or neural abnormality. Use the linked anatomy and physiology lessons to explain possible mechanisms while keeping the measurement limits explicit.",
+          "highlight": "State the observation, assumptions and remaining alternatives."
         }
       ],
       "question": {
@@ -10759,7 +10799,7 @@
         "options": [
           {
             "text": "20 dB",
-            "reason": "10 log₁₀100 = 20 dB."
+            "reason": "Intensity level uses 10 log₁₀ of the intensity ratio. For a ratio of 100, log₁₀100 is 2, so the level increase is 10 × 2 = 20 dB."
           },
           {
             "text": "100 dB",
@@ -10778,10 +10818,55 @@
       },
       "related": [
         "biophysics-practical-diffusion",
-        "biophysics-practical-biosignals"
+        "biophysics-practical-biosignals",
+        "ear-anatomy",
+        "biophysics-sensory-biophysics",
+        "cochlear-fluid-voltage-reference",
+        "auditory-frequency-level-coding"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 6
+      "updatedAt": "2026-11-07",
+      "minutes": 25,
+      "objectives": [
+        "Distinguish physical sound level, hearing-level reference and perceived loudness.",
+        "Read a logarithmic frequency axis and the downward hearing-level axis without confusing them.",
+        "Calculate a stated threshold difference and distinguish it from an established same-ear air-bone gap.",
+        "Keep no-response output limits, missing observations and exact thresholds separate.",
+        "Explain what a pure-tone comparison cannot establish about cellular damage or diagnosis."
+      ],
+      "prerequisites": [
+        "ear-anatomy",
+        "biophysics-sensory-biophysics"
+      ],
+      "workedExample": {
+        "title": "Separate a difference from the evidence supporting it",
+        "prompt": "In fictional case A at 1,000 Hz, air conduction is 55 dB HL and bone conduction is 20 dB HL under stated reliable same-ear conditions. Compare that record with case E, which has air conduction 95 dB HL and no bone-conduction response at an output limit of 65 dB HL.",
+        "solution": [
+          "For case A, subtract the two established thresholds: 55 minus 20 equals 35 dB.",
+          "The stated reliability and ear specificity allow the 35 dB difference to be described as an air-bone gap at that frequency.",
+          "For case E, 65 dB HL is a no-response output limit, not the measured bone-conduction threshold; 95 minus 65 does not produce an exact established gap.",
+          "Neither comparison alone identifies a unique disease or the proportion of injured cells."
+        ]
+      },
+      "summaryChecklist": [
+        "Frequency is not intensity, and a threshold is not a tissue diagnosis.",
+        "Keep the reference with every decibel value.",
+        "Compare points at the same frequency.",
+        "A right-side symbol alone is not evidence of a right-cochlea response.",
+        "A numerical difference and a valid clinical comparison are separate claims.",
+        "Equal gaps do not make two whole audiograms equivalent.",
+        "A limit is not an exact threshold; missing is not zero.",
+        "State the observation, assumptions and remaining alternatives."
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Why can two audiograms share the same air-bone gap while supporting different descriptions of their absolute thresholds?",
+          "answer": "A difference does not retain both starting values. Compare the absolute air- and bone-conduction thresholds, their frequency patterns and the validity of the same-ear assumptions before interpreting the difference."
+        },
+        {
+          "prompt": "What evidence is missing when an unmasked bone-conduction symbol is labelled with a mastoid placement?",
+          "answer": "Placement records where the transducer was positioned. It does not by itself establish which cochlea supplied the response, so an ear-specific interpretation still requires evidence addressing cross-hearing."
+        }
+      ]
     },
     {
       "id": "biophysics-practical-biosignals",
@@ -14965,6 +15050,195 @@
         "special-senses",
         "face-palate-sense-development"
       ]
+    },
+    {
+      "id": "retinal-structure-light-signal-direction",
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "summary": "Orient retinal layers on credited specimens, distinguish visible structure from function, and connect eye development with the limits of experimental evidence.",
+      "tags": [
+        "Organ histology",
+        "Retina",
+        "Eye development",
+        "Tissue identification"
+      ],
+      "source": "original-retinal-structure-depth",
+      "section": "Retinal architecture, specimen interpretation and component-specific developmental origins",
+      "updatedAt": "2026-11-07",
+      "minutes": 40,
+      "objectives": [
+        "Orient a retinal section using at least two landmarks.",
+        "Explain how nuclei, processes and segments of one cell occupy different anatomical levels.",
+        "Distinguish the outer junctional zone from the inner basement-membrane boundary.",
+        "Connect optic cup and lens development without conflating induction with lineage.",
+        "Interpret a regional specimen and state preparation and calibration limits.",
+        "Match morphology, lineage, sequencing and functional experiments to the claims they support."
+      ],
+      "prerequisites": [
+        "histology-foundations-tissues",
+        "face-palate-sense-development"
+      ],
+      "steps": [
+        {
+          "title": "Decide what evidence the question needs",
+          "body": "A practical identification asks what tissue is present and which visible relationships support the answer. A developmental question asks where specified cell populations came from. A functional question asks how they behave under a stated stimulus. Start by naming which question you are answering: a recognisable layer is not a lineage experiment or a measurement of vision. Use the existing ON/OFF lesson for receptor mechanisms after establishing the structural orientation here.",
+          "highlight": "Structure, ancestry and function require different evidence."
+        },
+        {
+          "title": "Follow optic-cup and lens development as interacting tissues",
+          "body": "The optic vesicle extends from the forebrain toward surface ectoderm. The vesicle folds into a two-layered optic cup while the overlying lens placode invaginates and separates as a lens vesicle. The outer cup layer gives rise to retinal pigment epithelium and the inner layer to neural retina. The lens remains a surface-ectoderm derivative. An inductive interaction means one tissue influences another; it does not mean that their cells acquire the same ancestry.",
+          "highlight": "Optic cup and lens vesicle are distinct primordia."
+        },
+        {
+          "title": "Use the embryonic geometry to understand an adult interface",
+          "body": "The neural and pigmented retinal layers develop from opposed walls of the optic cup. Their apical surfaces come into close apposition; photoreceptor outer segments face the apical surface of the RPE. This is not an ordinary basal surface lying on a basement membrane. A broad white interval in a prepared section is not a normal fluid chamber. The photographed interval shows separation, but the image and its limited metadata do not establish when or why it occurred.",
+          "highlight": "Visible separation does not establish a clinical detachment."
+        },
+        {
+          "title": "Assign origins to cell populations, not entire coloured regions",
+          "body": "RPE and neural retina share an optic-neuroepithelial origin, although their mature appearance differs. Choroidal melanocytes have a different developmental history. Periocular mesenchyme contains neural-crest and mesodermal contributions, so a single label for every stromal, vascular and pigment cell loses information. Gage and colleagues used complementary genetic reporters in mice to follow descendants of marked populations. Their findings were similar to, but not identical with, avian maps. Keep the model species attached to a lineage claim.",
+          "highlight": "Similar pigmentation is not evidence of common ancestry."
+        },
+        {
+          "title": "Distinguish the optic stalk from axons passing through it",
+          "body": "Retinal ganglion cells extend axons toward and through the optic-stalk region to connect with the brain. Saying that the stalk simply becomes the optic nerve compresses several processes: growth of axons, changes in supporting tissue and development of coverings. In the adult retina, the nerve-fibre layer contains ganglion-cell axons. The optic-disc overview shows a change from layered retina to an exit region; it does not resolve the developmental origin of every cell in that region.",
+          "highlight": "The output axons arise from retinal ganglion cells."
+        },
+        {
+          "title": "Orient the wall before naming individual layers",
+          "body": "Find a vitreous-facing surface and then follow the tissue outward through neural retina, a pigmented border and underlying vascular/connective tissue. Beyond the choroid is the collagen-rich sclera. In a poorly oriented crop, start with two landmarks and their relationship instead of assigning names from colour alone. In the detail supplied here, the neural retina lies above the pigmented underlying tissue; the conspicuous intervening gap requires an explicit preparation/clinical-status caveat.",
+          "highlight": "Orientation comes before counting layers."
+        },
+        {
+          "title": "Track one photoreceptor through several named layers",
+          "body": "A rod or cone has more than one anatomical region. Its light-sensitive segments lie toward the RPE; its cell body and nucleus contribute to the outer nuclear layer; its synaptic terminal contributes to the outer plexiform layer. Thus a histological layer is not always a separate population of whole cells. A single cell can span several levels, while one layer can contain processes from more than one cell class.",
+          "highlight": "Ten named layers do not mean ten independent cell types."
+        },
+        {
+          "title": "Compare nuclear bands with process-rich bands",
+          "body": "The outer nuclear layer contains photoreceptor nuclei. The inner nuclear layer contains several classes, including bipolar, horizontal and amacrine neurons and Müller glia. The ganglion-cell layer lies closer to the vitreous and contains ganglion-cell bodies as well as other cells, including displaced amacrine cells. Between the nuclear bands, plexiform regions contain neuronal processes and synaptic connections. A lighter plexiform band is tissue, not an empty channel. H&E does not identify the molecular subtype of every nucleus.",
+          "highlight": "Nuclear density identifies a pattern, not every cell subtype."
+        },
+        {
+          "title": "Separate the two limiting boundaries",
+          "body": "The external or outer limiting zone is associated with junctions involving photoreceptors and Müller glia. It is not a free-standing sheet of epithelial cells. The internal limiting membrane is the basement-membrane boundary at the vitreous-facing surface, associated with Müller endfeet. Omri and colleagues investigated junctional proteins and ultrastructure, including regional and species differences. The familiar name membrane is therefore not a reason to treat both boundaries as the same structure, nor to claim that routine H&E demonstrates their molecular composition.",
+          "highlight": "A shared name does not imply a shared ultrastructure."
+        },
+        {
+          "title": "Keep Müller glia and microglia distinct",
+          "body": "Müller cells are radial supporting glia extending across the neural retina. Microglia are a distinct population. The human single-cell atlas separates Müller glia from microglia, astrocytes and vascular endothelial cells. These classes have different cellular roles; sharing the label glia does not make them interchangeable. If the question asks which cells support a particular junction or surface, answer with the named population and the evidence available; do not classify all small dark nuclei as one type of glia.",
+          "highlight": "Müller glia are not another name for microglia."
+        },
+        {
+          "title": "Connect the RPE border with polarity and barrier function",
+          "body": "The RPE lies between photoreceptor segments and the choroidal side. Its lateral tight junctions contribute to the outer blood–retinal barrier. This barrier should not be confused with the inner vascular barrier or with the outer limiting zone. Benedicto and colleagues combined cultured RPE/endothelial interactions with mouse work to investigate extracellular-matrix regulation of barrier function. Their barrier readouts illustrate why a continuous-looking pigmented line in a section cannot, by itself, measure permeability.",
+          "highlight": "A visible border and a functional barrier assay answer different questions."
+        },
+        {
+          "title": "Draw separate arrows for incoming light and neural output",
+          "body": "For the simplified layered retina, incoming light approaches from the vitreous side and reaches photoreceptors toward the RPE. A major neural route proceeds from photoreceptors through bipolar cells toward ganglion cells, whose axons leave through the optic nerve. Horizontal and amacrine circuits add processing; the three-cell sequence is an orientation scaffold rather than a complete wiring diagram. The linked ON/OFF lesson explains why a shared transmitter change can produce different receiving-cell responses.",
+          "highlight": "Do not use one arrow for both light and every neural signal."
+        },
+        {
+          "title": "Recognise why the same layer map does not fit every region",
+          "body": "The central foveal arrangement differs from the surrounding retina: inner layers are displaced and cone organisation is specialised. At the optic disc, axons converge and exit, and the usual photoreceptor-containing sequence is interrupted. Compare the supplied overview with the separate higher-detail photograph before judging a thick inner fibre region as abnormal. Neither photograph is a complete atlas of retinal regional variation. The exact sampling location and clinical history are not provided beyond the creator’s description.",
+          "highlight": "Name the region before interpreting thickness."
+        },
+        {
+          "title": "Read H&E with an explicit preparation record",
+          "body": "The creator identifies these photographs as H&E. Use the nuclear-rich bands and the contrasting process-rich fields to build an architectural argument. Brown pigment is not a licence to assign ancestry, and pink or purple intensity alone cannot establish function. Fixative, section thickness, patient history and physical calibration are unreported. Do not infer a calibrated magnification from display size. Treat folds, tears or separations as observations requiring context rather than diagnostic labels.",
+          "highlight": "Record what the stain is known to be and what remains unknown."
+        },
+        {
+          "title": "Ask what an optic-cup culture experiment demonstrates",
+          "body": "Eiraku and colleagues observed optic-cup-like folding and stratified neural retinal tissue in a three-dimensional system using mouse embryonic stem-cell aggregates. The experiment supports a capacity for organised morphogenesis in that culture setting. It does not establish that a complete human eye, normal visual perception or every in-vivo interaction has been reproduced. Separate the observed shape change from additional claims that would require functional, lineage or transplantation evidence.",
+          "highlight": "A self-organising tissue model is not a complete seeing eye."
+        },
+        {
+          "title": "Use a cell atlas without turning clusters into layers",
+          "body": "The adult human atlas sampled foveal and peripheral tissue and classified cells by RNA-expression patterns. Such molecular categories are not extra histological layers. Peripheral preparations included depletion or enrichment steps, so recovered cell counts cannot be read as an unbiased census of the original tissue. A cluster’s expression profile is evidence about molecular identity under the study’s sampling and analysis; it is not a direct lineage movie or a measurement of synaptic function.",
+          "highlight": "A molecular cluster is not a histological layer or a lineage trace."
+        },
+        {
+          "title": "Build a defensible practical answer",
+          "body": "State the specimen provenance and orientation. Give two visible relationships, such as two nuclear-rich bands separated by a process-rich zone and photoreceptor segments facing a pigmented border. Name the likely structures, then state one limit: incomplete field, unreported preparation detail or a cell identity that needs additional evidence. Finally connect one structure to its development without claiming that an adult stain proves ancestry. Use the region explorer to check your observations before reviewing the model answer.",
+          "highlight": "Observation → interpretation → limitation → developmental connection."
+        }
+      ],
+      "question": {
+        "prompt": "A section is oriented with vitreous above and RPE below. Which pair of arrows correctly separates incoming light from a major neural route?",
+        "options": [
+          {
+            "text": "Light travels toward the RPE-facing photoreceptors; the major neural route continues toward bipolar and ganglion cells.",
+            "reason": "The two arrows describe different processes and opposite overall orientations in this simplified map."
+          },
+          {
+            "text": "Both arrows begin in RPE cells and end in the vitreous.",
+            "reason": "The RPE is not the first neuron in the stated major route, and incoming light approaches from the vitreous side."
+          },
+          {
+            "text": "Every retinal signal travels directly from a rod to the optic nerve.",
+            "reason": "The simplified major route includes intervening cells; retinal circuitry is also more diverse."
+          },
+          {
+            "text": "The direction cannot be discussed unless each nucleus has a molecular label.",
+            "reason": "The supplied landmarks establish structural orientation even though individual cell subtypes remain unresolved."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Identify two visible relationships in the retinal detail, state one interpretation, and name evidence you would still need.",
+        "answer": "The detail has two nuclear-rich bands with paler tissue between them and an elongated segment field facing a pigmented border. This sequence supports retinal architecture. The neural retina is separated from the underlying border in the specimen, but preparation and clinical history are needed to establish when separation occurred."
+      },
+      "summaryChecklist": [
+        "Structure, ancestry and function require different evidence.",
+        "Optic cup and lens vesicle are distinct primordia.",
+        "Visible separation does not establish a clinical detachment.",
+        "Similar pigmentation is not evidence of common ancestry.",
+        "The output axons arise from retinal ganglion cells.",
+        "Orientation comes before counting layers.",
+        "Ten named layers do not mean ten independent cell types.",
+        "Nuclear density identifies a pattern, not every cell subtype.",
+        "A shared name does not imply a shared ultrastructure.",
+        "Müller glia are not another name for microglia.",
+        "A visible border and a functional barrier assay answer different questions.",
+        "Do not use one arrow for both light and every neural signal.",
+        "Name the region before interpreting thickness.",
+        "Record what the stain is known to be and what remains unknown.",
+        "A self-organising tissue model is not a complete seeing eye.",
+        "A molecular cluster is not a histological layer or a lineage trace.",
+        "Observation → interpretation → limitation → developmental connection."
+      ],
+      "related": [
+        "histology-foundations-tissues",
+        "retinal-on-off-bipolar-response",
+        "face-palate-sense-development"
+      ],
+      "oralExamination": [
+        {
+          "prompt": "Identify two visible relationships in the retinal detail, state one interpretation, and name evidence you would still need.",
+          "answer": "The detail has two nuclear-rich bands with paler tissue between them and an elongated segment field facing a pigmented border. This sequence supports retinal architecture. The neural retina is separated from the underlying border in the specimen, but preparation and clinical history are needed to establish when separation occurred."
+        },
+        {
+          "prompt": "Explain why similar pigment in RPE and choroid cannot settle a developmental-origin question.",
+          "answer": "Pigment is a mature feature shared by distinct populations. RPE belongs to the optic neuroepithelial lineage, while choroidal melanocytes have neural-crest contributions. A properly controlled lineage label follows descendants of specified starting cells; an adult stain does not do so."
+        },
+        {
+          "prompt": "A culture looks like an optic cup. Explain one conclusion supported by the appearance and two conclusions requiring additional evidence.",
+          "answer": "The culture supports organised morphogenesis under its tested conditions. Appearance alone does not establish normal human visual function or every population’s developmental origin. Those require suitable functional assays and lineage evidence, with explicit limits on species and culture conditions."
+        }
+      ],
+      "workedExample": {
+        "title": "Explain an uncalibrated H&E retinal field",
+        "prompt": "The supplied detail has two nuclear-rich bands with a pale band between them and a segment-rich field facing a pigmented border. A broad white interval separates the layered retina from underlying tissue. Build an identification argument without assuming a clinical diagnosis.",
+        "solution": [
+          "Establish the vitreous-facing and pigmented sides before assigning a layer name. Compare the order of nuclear-rich and process-rich regions.",
+          "Use two visible relationships to support retinal architecture. One photoreceptor contributes segments, a nucleus and a synaptic terminal to different named layers.",
+          "Describe the white interval as visible separation. The source does not report the preparation details or clinical history needed to establish its cause.",
+          "Connect neural retina and RPE to their respective optic-cup layers, while keeping that developmental account distinct from what an adult H&E image directly demonstrates."
+        ]
+      }
     },
     {
       "id": "thoracic-cage-landmarks",

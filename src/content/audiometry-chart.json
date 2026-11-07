@@ -1,0 +1,260 @@
+{
+  "intro": "Explore invented data, compare two routes and decide which conclusions survive the measurement assumptions. This is a visual study exercise: it plays no sound and does not test your hearing.",
+  "frequenciesHz": [
+    250,
+    500,
+    1000,
+    2000,
+    4000,
+    8000
+  ],
+  "cases": [
+    {
+      "id": "gap",
+      "title": "A: separated thresholds",
+      "ear": "right",
+      "airMasking": "masked",
+      "boneMasking": "masked",
+      "bonePlacement": "right mastoid",
+      "earSpecificEstablished": true,
+      "invented": true,
+      "explanation": "At 1,000 Hz the stated reliable, ear-specific thresholds differ by 35 dB. This supports a conductive component in the invented comparison, without identifying its cause.",
+      "values": [
+        {
+          "frequencyHz": 250,
+          "airDbHL": 45,
+          "boneDbHL": 15,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 500,
+          "airDbHL": 50,
+          "boneDbHL": 20,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 1000,
+          "airDbHL": 55,
+          "boneDbHL": 20,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 2000,
+          "airDbHL": 50,
+          "boneDbHL": 20,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 4000,
+          "airDbHL": 45,
+          "boneDbHL": 15,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 8000,
+          "airDbHL": 40,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        }
+      ]
+    },
+    {
+      "id": "matched",
+      "title": "B: elevated thresholds together",
+      "ear": "left",
+      "airMasking": "masked",
+      "boneMasking": "masked",
+      "bonePlacement": "left mastoid",
+      "earSpecificEstablished": true,
+      "invented": true,
+      "explanation": "At the measured paired frequencies, AC and BC coincide. Their agreement does not mean a zero hearing threshold. The pattern does not identify a specific sensory cell or neural lesion.",
+      "values": [
+        {
+          "frequencyHz": 250,
+          "airDbHL": 30,
+          "boneDbHL": 30,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 500,
+          "airDbHL": 35,
+          "boneDbHL": 35,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 1000,
+          "airDbHL": 40,
+          "boneDbHL": 40,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 2000,
+          "airDbHL": 45,
+          "boneDbHL": 45,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 4000,
+          "airDbHL": 50,
+          "boneDbHL": 50,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 8000,
+          "airDbHL": 60,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        }
+      ]
+    },
+    {
+      "id": "both",
+      "title": "C: elevated bone thresholds plus a gap",
+      "ear": "right",
+      "airMasking": "masked",
+      "boneMasking": "masked",
+      "bonePlacement": "right mastoid",
+      "earSpecificEstablished": true,
+      "invented": true,
+      "explanation": "At 1,000 Hz, 65 minus 35 gives 30 dB. Elevated BC together with poorer AC illustrates a mixed functional pattern under the stated valid-measurement assumptions; it does not establish an etiology.",
+      "values": [
+        {
+          "frequencyHz": 250,
+          "airDbHL": 55,
+          "boneDbHL": 25,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 500,
+          "airDbHL": 60,
+          "boneDbHL": 30,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 1000,
+          "airDbHL": 65,
+          "boneDbHL": 35,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 2000,
+          "airDbHL": 70,
+          "boneDbHL": 40,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 4000,
+          "airDbHL": 75,
+          "boneDbHL": 45,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 8000,
+          "airDbHL": 80,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        }
+      ]
+    },
+    {
+      "id": "uncertain",
+      "title": "D: responding ear unestablished",
+      "ear": "right",
+      "airMasking": "unmasked",
+      "boneMasking": "unmasked",
+      "bonePlacement": "right mastoid",
+      "earSpecificEstablished": false,
+      "invented": true,
+      "explanation": "Right-side transducer placement is recorded, but the responding cochlea for unmasked BC has not been established. The numerical difference must not be labelled a confirmed right-ear air-bone gap.",
+      "values": [
+        {
+          "frequencyHz": 250,
+          "airDbHL": 50,
+          "boneDbHL": 5,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 500,
+          "airDbHL": 55,
+          "boneDbHL": 10,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 1000,
+          "airDbHL": 60,
+          "boneDbHL": 10,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 2000,
+          "airDbHL": 65,
+          "boneDbHL": 15,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 4000,
+          "airDbHL": 65,
+          "boneDbHL": 20,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 8000,
+          "airDbHL": 70,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        }
+      ]
+    },
+    {
+      "id": "limit",
+      "title": "E: no response at the output limit",
+      "ear": "right",
+      "airMasking": "masked",
+      "boneMasking": "masked",
+      "bonePlacement": "right mastoid",
+      "earSpecificEstablished": true,
+      "invented": true,
+      "explanation": "Only the 1,000 Hz comparison is supplied. AC is 95 dB HL; BC produced no response at the stated 65 dB HL limit. The exact BC threshold and exact gap are unknown. Other frequencies are untested.",
+      "values": [
+        {
+          "frequencyHz": 250,
+          "airDbHL": null,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 500,
+          "airDbHL": null,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 1000,
+          "airDbHL": 95,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": 65
+        },
+        {
+          "frequencyHz": 2000,
+          "airDbHL": null,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 4000,
+          "airDbHL": null,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        },
+        {
+          "frequencyHz": 8000,
+          "airDbHL": null,
+          "boneDbHL": null,
+          "boneNoResponseAtDbHL": null
+        }
+      ]
+    }
+  ],
+  "diagramConvention": "Original diagram, using the ASHA 1990 mastoid/earphone symbol convention. Each case explicitly states route, side and masking. No source figure pixels are reproduced.",
+  "calculationScope": "Numerical feedback checks only the selected invented threshold difference. It is not automatic clinical interpretation or an essay assessment."
+}

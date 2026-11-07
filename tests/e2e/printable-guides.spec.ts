@@ -29,7 +29,7 @@ for (const subject of subjects) {
 test('histology source gaps remain explicit and lesson / answer selection stays aligned', async ({ page }) => {
   await page.goto('/study/histology/guide');
   await expect(page.locator('.guide-part')).toHaveCount(20);
-  await expect(page.locator('#histology-part-16')).toContainText('ocular development and the rest of this source part remain outside this lesson');
+  await expect(page.locator('#histology-part-16')).toContainText('Other ocular tissues, accessory structures and the complete eye-development syllabus remain outside these lessons');
   await expect(page.locator('#histology-part-16 a[href="/library/retinal-on-off-bipolar-response"]')).toHaveCount(1);
   await expect(page.locator('#histology-part-14')).toContainText('does not yet have a dedicated web lesson');
   await page.goto('/study/histology/revision');

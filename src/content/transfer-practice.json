@@ -10241,6 +10241,615 @@
         }
       ],
       "answer": 0
+    },
+    {
+      "id": "retina-one-cell-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Layer reasoning",
+      "prompt": "A learner counts a photoreceptor segment, its nucleus and its synaptic terminal as three separate cells because they occupy different layers. What corrects the error?",
+      "options": [
+        {
+          "text": "All three structures must belong to Müller cells.",
+          "explanation": "Müller cells have different structural roles; the named parts can belong to one photoreceptor."
+        },
+        {
+          "text": "A single photoreceptor extends through several named anatomical levels.",
+          "explanation": "Named layers group particular parts or relationships, not necessarily separate whole cells."
+        },
+        {
+          "text": "The outer nuclear layer contains only extracellular material.",
+          "explanation": "Its defining feature is the population of photoreceptor nuclei."
+        },
+        {
+          "text": "Retinal layers are created solely by staining variation.",
+          "explanation": "Stain affects visibility, but the layered cellular and process organisation is real."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-inl-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Layer reasoning",
+      "prompt": "A dark band is correctly identified as the inner nuclear layer. What remains unjustified from H&E alone?",
+      "options": [
+        {
+          "text": "Its position relative to the two plexiform layers.",
+          "explanation": "That relationship can be assessed from the oriented architecture."
+        },
+        {
+          "text": "The presence of many nuclear profiles.",
+          "explanation": "This is a direct visible observation."
+        },
+        {
+          "text": "That every nucleus in the band belongs to the same bipolar-cell subtype.",
+          "explanation": "The layer includes several neuronal classes and Müller glia, and H&E does not resolve their molecular subtypes."
+        },
+        {
+          "text": "That this is a nuclear-rich rather than an empty fluid compartment.",
+          "explanation": "Visible nuclei support this structural distinction."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-limiting-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Junctions",
+      "prompt": "Which statement distinguishes the two limiting boundaries?",
+      "options": [
+        {
+          "text": "Both are separate layers of retinal pigment epithelial cells.",
+          "explanation": "Neither description correctly distinguishes the outer junctional zone from the inner basement-membrane boundary."
+        },
+        {
+          "text": "The outer zone contains ganglion-cell axons, while the inner membrane contains photoreceptor nuclei.",
+          "explanation": "Those structures belong to the nerve-fibre and outer nuclear layers respectively."
+        },
+        {
+          "text": "Their similar names prove identical protein composition.",
+          "explanation": "Names do not establish ultrastructure or molecular composition."
+        },
+        {
+          "text": "The outer zone involves junctions including Müller–photoreceptor contacts; the inner boundary is associated with Müller endfeet and basement membrane.",
+          "explanation": "The two boundaries differ in location and organisation; routine H&E does not resolve all junctional components."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-gap-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Applied specimen reasoning",
+      "prompt": "The supplied H&E field has a white interval between neural retina and RPE. No clinical history or preparation record is supplied. What is the strongest supported conclusion?",
+      "options": [
+        {
+          "text": "The interface is separated in this specimen; its cause is not established.",
+          "explanation": "This states the visible finding without converting it into an unsupported clinical history."
+        },
+        {
+          "text": "The patient definitely had a retinal detachment before fixation.",
+          "explanation": "The image alone does not establish when separation occurred."
+        },
+        {
+          "text": "The interval is a normal aqueous chamber.",
+          "explanation": "A broad space at this interface is not an anterior or posterior aqueous chamber."
+        },
+        {
+          "text": "The RPE must have changed into neural retina.",
+          "explanation": "A separation cannot establish a change in lineage or cell fate."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-disc-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Regional comparison",
+      "prompt": "Near the creator-identified optic nerve head, the usual photoreceptor-containing sequence ends as axons converge. Why is the region essential to interpretation?",
+      "options": [
+        {
+          "text": "Every retinal region must have identical layer thickness.",
+          "explanation": "Regional differences are fundamental, especially at the disc and fovea."
+        },
+        {
+          "text": "The optic-disc exit region normally differs from photoreceptor-containing retina.",
+          "explanation": "Its architecture must be judged in its regional context rather than against a universal ten-layer template."
+        },
+        {
+          "text": "It proves that the entire retina lacks photoreceptors.",
+          "explanation": "An exit-region observation cannot be extrapolated to the entire retina."
+        },
+        {
+          "text": "It identifies the patient’s visual acuity numerically.",
+          "explanation": "A static section is not an acuity measurement."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-induction-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Development",
+      "prompt": "The optic vesicle influences a lens placode. Which inference keeps induction separate from ancestry?",
+      "options": [
+        {
+          "text": "The lens therefore consists of migrated retinal ganglion cells.",
+          "explanation": "Influence does not imply transfer of retinal cells into the lens."
+        },
+        {
+          "text": "The two tissues must have identical adult functions.",
+          "explanation": "Interacting embryonic tissues can become functionally distinct structures."
+        },
+        {
+          "text": "The lens can remain surface-ectoderm derived while responding to signals from adjacent neuroectoderm.",
+          "explanation": "Developmental interaction and cellular origin answer different questions."
+        },
+        {
+          "text": "An induced lens placode necessarily changes its ancestry to neuroectoderm.",
+          "explanation": "Induction changes developmental behaviour; it does not rewrite the origin of the responding surface-ectoderm cells."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-pigment-lineage-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Development",
+      "prompt": "RPE cells and choroidal melanocytes both contain pigment. Which evidence would most directly address whether they share an ancestry?",
+      "options": [
+        {
+          "text": "A stronger brown stain in both populations.",
+          "explanation": "Pigment abundance does not trace earlier cellular origins."
+        },
+        {
+          "text": "Their adjacency in one adult section.",
+          "explanation": "Neighbouring mature tissues can have different developmental sources."
+        },
+        {
+          "text": "A comparison of their image file sizes.",
+          "explanation": "File properties do not measure biological ancestry."
+        },
+        {
+          "text": "Similar pigment-synthesis RNA profiles in the two adult populations.",
+          "explanation": "Convergent mature expression can support a shared function without demonstrating a common embryonic origin."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-organoid-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Research interpretation",
+      "prompt": "A mouse stem-cell culture forms an optic-cup-like shape and stratified neural retinal tissue. What does that result support?",
+      "options": [
+        {
+          "text": "Organised retinal morphogenesis can occur under the tested culture conditions.",
+          "explanation": "This matches the experiment’s model and observed outcomes."
+        },
+        {
+          "text": "The construct has normal human visual perception.",
+          "explanation": "Shape and layering do not establish human perception."
+        },
+        {
+          "text": "No external culture conditions influenced development.",
+          "explanation": "Self-organisation within an experimental setting does not mean absence of culture inputs."
+        },
+        {
+          "text": "Every embryonic eye interaction is unnecessary in vivo.",
+          "explanation": "A defined culture result cannot remove all interactions from the in-vivo developmental account."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-atlas-census-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Research interpretation",
+      "prompt": "Before single-cell sequencing, a peripheral retinal sample is enriched for ganglion cells. Can the fraction of sequenced ganglion cells be read as their original fraction in the tissue?",
+      "options": [
+        {
+          "text": "Yes, enrichment cannot change sampled proportions.",
+          "explanation": "Enrichment deliberately alters which cells enter the analysis."
+        },
+        {
+          "text": "No; the sampling procedure changes the relationship between recovered counts and tissue abundance.",
+          "explanation": "Interpret cell frequencies with the isolation and enrichment design."
+        },
+        {
+          "text": "Yes, because a molecular cluster is identical to a histological layer.",
+          "explanation": "Molecular classes and spatial layers are different categories."
+        },
+        {
+          "text": "No cell-type information can be learned from such a sample.",
+          "explanation": "Identity and expression can still be studied; the specific unsupported inference is an unbiased tissue census."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-glia-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Source appraisal",
+      "prompt": "An RNA atlas separates Müller glia, microglia and astrocytes. Which interpretation best connects this result with an H&E retinal section?",
+      "options": [
+        {
+          "text": "All three populations can be merged when interpreting a section because none is a neuron.",
+          "explanation": "A shared non-neuronal category does not erase distinct identities or roles."
+        },
+        {
+          "text": "Each small, dark nucleus can be assigned to microglia from its colour alone.",
+          "explanation": "Routine nuclear colour is insufficient to distinguish these classes reliably."
+        },
+        {
+          "text": "Keep the molecular classes distinct while recognising that H&E alone may not resolve each cell’s identity.",
+          "explanation": "The atlas supports distinct classes; assigning an individual cell in a section requires suitable additional evidence."
+        },
+        {
+          "text": "Each molecular class must occupy its own separate histological layer.",
+          "explanation": "Molecular classes do not correspond one-to-one with layers; cells and processes can share or span levels."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-barrier-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Applied evidence",
+      "prompt": "A pigmented border appears continuous in an H&E section. Which additional question requires a different kind of measurement?",
+      "options": [
+        {
+          "text": "Which side faces the neural retina?",
+          "explanation": "The spatial orientation can be addressed in the section."
+        },
+        {
+          "text": "Is pigment visible along this border?",
+          "explanation": "That is a direct morphological observation."
+        },
+        {
+          "text": "Does the border lie beside vascular connective tissue?",
+          "explanation": "That relationship can be examined morphologically."
+        },
+        {
+          "text": "How effectively does this tissue restrict a specified tracer?",
+          "explanation": "Permeability requires a functional readout; continuity alone does not quantify it."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-stalk-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Development",
+      "prompt": "Why is “the optic stalk turns into all the optic nerve” an incomplete explanation?",
+      "options": [
+        {
+          "text": "It omits ganglion-cell axons growing from the retina and the distinct supporting and covering populations.",
+          "explanation": "The mature nerve is not explained by assigning every component to a single undifferentiated precursor."
+        },
+        {
+          "text": "Because the optic nerve consists entirely of lens fibres.",
+          "explanation": "Lens fibres belong to the lens, not the neural output pathway."
+        },
+        {
+          "text": "Because retinal ganglion cells never extend axons.",
+          "explanation": "Their axons form the retinal output pathway."
+        },
+        {
+          "text": "Because adult pink staining establishes the origin of all nerve cells.",
+          "explanation": "Adult staining does not constitute lineage evidence."
+        }
+      ],
+      "answer": 0,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-fovea-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Regional comparison",
+      "prompt": "A section through central foveal tissue does not show the same stacked inner-layer arrangement as a peripheral schematic. What should be checked first?",
+      "options": [
+        {
+          "text": "Whether every band can be forced into the same vertical positions.",
+          "explanation": "That would erase the region-specific arrangement."
+        },
+        {
+          "text": "The regional identity and displacement of inner layers around the foveal centre.",
+          "explanation": "A valid comparison uses an appropriate regional template."
+        },
+        {
+          "text": "Whether the missing positions prove all neurons have died.",
+          "explanation": "The stated regional difference does not establish cell loss."
+        },
+        {
+          "text": "Whether the stain must be completely absent.",
+          "explanation": "Staining quality is a separate concern; region alone can change the apparent layer arrangement."
+        }
+      ],
+      "answer": 1,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-scale-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Preparation limits",
+      "prompt": "A supplied H&E JPEG has no scale bar or acquisition calibration. Which annotation is justified?",
+      "options": [
+        {
+          "text": "A precise ten-micrometre measurement from arbitrary screen pixels.",
+          "explanation": "Screen pixels have no established physical conversion here."
+        },
+        {
+          "text": "A claim of 400× because the cells look large.",
+          "explanation": "Appearance on a screen does not establish optical magnification."
+        },
+        {
+          "text": "A labelled anatomical region with an explicit statement that physical scale is unverified.",
+          "explanation": "The spatial relationship can be described without inventing a measurement."
+        },
+        {
+          "text": "A fixed clinical cell-size diagnosis.",
+          "explanation": "Neither calibration nor clinical context supports that claim."
+        }
+      ],
+      "answer": 2,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "retina-evidence-match-v1",
+      "topic": "retinal-structure-light-signal-direction",
+      "category": "Research interpretation",
+      "prompt": "Which pairing correctly matches a claim to the evidence needed?",
+      "options": [
+        {
+          "text": "Common ancestry — similar adult pigment colour.",
+          "explanation": "Pigment is a mature feature, not a lineage record."
+        },
+        {
+          "text": "Normal vision — ten apparent tissue layers.",
+          "explanation": "Architecture alone does not measure visual performance."
+        },
+        {
+          "text": "An unbiased tissue cell census — an enriched sequencing sample.",
+          "explanation": "Enrichment must be accounted for before estimating native proportions."
+        },
+        {
+          "text": "A change in barrier permeability — a controlled assay of the specified barrier readout.",
+          "explanation": "The measurement must address the claimed function, with its controls and model limits."
+        }
+      ],
+      "answer": 3,
+      "subject": "histology",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "href": "/library/retinal-structure-light-signal-direction#apply-the-concept"
+    },
+    {
+      "id": "audiometry-measurement-octaves-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Which two intervals occupy equal horizontal distances on the logarithmic frequency axis?",
+      "options": [
+        {
+          "text": "500–1,000 Hz and 2,000–4,000 Hz",
+          "explanation": "Each upper frequency is twice its lower frequency, so both span one octave."
+        },
+        {
+          "text": "500–1,000 Hz and 1,000–1,500 Hz",
+          "explanation": "Their differences match, but their ratios are 2 and 1.5."
+        },
+        {
+          "text": "Any pair with a 500 Hz difference",
+          "explanation": "A logarithmic axis represents ratios, not equal absolute differences."
+        },
+        {
+          "text": "Only intervals with identical endpoints",
+          "explanation": "Different starting frequencies can share the same ratio."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "audiometry-measurement-difference-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "In case A at 1,000 Hz, what does 55 minus 20 establish under the stated ear-specific assumptions?",
+      "options": [
+        {
+          "text": "35 percent of hearing is lost",
+          "explanation": "A difference in decibels is not a percentage of hearing."
+        },
+        {
+          "text": "A 35 dB air-bone gap at that frequency",
+          "explanation": "The difference is 35 dB; the same-ear assumptions allow that measurement label."
+        },
+        {
+          "text": "A 75 dB gap",
+          "explanation": "Adding the thresholds does not compute their difference."
+        },
+        {
+          "text": "A specific middle-ear disease",
+          "explanation": "A threshold comparison does not identify a unique cause."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "audiometry-measurement-side-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Case D records right-mastoid unmasked BC. Which conclusion is justified?",
+      "options": [
+        {
+          "text": "The right cochlea certainly supplied the BC response",
+          "explanation": "Placement alone does not establish the responding cochlea."
+        },
+        {
+          "text": "The BC threshold must be zero",
+          "explanation": "The record contains a measured value; lack of ear specificity does not make it zero."
+        },
+        {
+          "text": "The responding cochlea remains unestablished in this record",
+          "explanation": "An ear-specific interpretation needs evidence beyond the placement symbol."
+        },
+        {
+          "text": "Masking can never affect the result",
+          "explanation": "The purpose of addressing cross-hearing is to distinguish which ear contributes."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "audiometry-measurement-limit-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Case E has AC 95 dB HL and no BC response at 65 dB HL. What exact gap can be reported from these data?",
+      "options": [
+        {
+          "text": "30 dB",
+          "explanation": "65 is an output limit with no response, not a measured BC threshold."
+        },
+        {
+          "text": "95 dB",
+          "explanation": "This incorrectly substitutes zero for the missing BC threshold."
+        },
+        {
+          "text": "Zero dB",
+          "explanation": "Nothing establishes equal measured thresholds."
+        },
+        {
+          "text": "No exact gap is available",
+          "explanation": "One of the two exact thresholds required for subtraction is unknown."
+        }
+      ],
+      "answer": 3
+    },
+    {
+      "id": "audiometry-measurement-zero-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Which statement about 0 dB HL preserves the reference?",
+      "options": [
+        {
+          "text": "It means physical silence",
+          "explanation": "The zero is a hearing-level reference, not zero sound pressure."
+        },
+        {
+          "text": "It identifies the selected frequency/transducer reference level",
+          "explanation": "The reference is part of the meaning of the value."
+        },
+        {
+          "text": "It is interchangeable with 0 dB SPL for every transducer",
+          "explanation": "These scales use different references; conversion requires calibration information."
+        },
+        {
+          "text": "It forbids negative threshold values",
+          "explanation": "A value below the reference can be represented on the scale."
+        }
+      ],
+      "answer": 1
+    },
+    {
+      "id": "audiometry-measurement-matched-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Case B has AC and BC both 40 dB HL at 1,000 Hz. What follows?",
+      "options": [
+        {
+          "text": "The threshold must be 0 dB HL",
+          "explanation": "The difference is zero; each threshold remains 40 dB HL."
+        },
+        {
+          "text": "The data show exactly which hair cells are damaged",
+          "explanation": "A pure-tone comparison does not resolve that cellular claim."
+        },
+        {
+          "text": "The paired thresholds agree at that frequency",
+          "explanation": "Agreement and the absolute threshold level are separate observations."
+        },
+        {
+          "text": "Speech understanding must be completely normal",
+          "explanation": "These pure-tone values do not measure speech understanding."
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "id": "audiometry-measurement-different-bases-20261107",
+      "topic": "biophysics-practical-audiometry",
+      "subject": "biophysics",
+      "title": "Practical: sound levels and audiograms",
+      "href": "/library/biophysics-practical-audiometry#apply-the-concept",
+      "prompt": "Two valid examples each have a 30 dB gap, but their BC thresholds are 5 and 40 dB HL. What should the student retain?",
+      "options": [
+        {
+          "text": "Only the gap; the BC values carry no information",
+          "explanation": "The underlying threshold levels are part of the measured pattern."
+        },
+        {
+          "text": "Both absolute thresholds as well as the common difference",
+          "explanation": "Equal differences do not make the underlying values or whole patterns equivalent."
+        },
+        {
+          "text": "The same specific diagnosis for both",
+          "explanation": "The arithmetic cannot establish a unique shared cause."
+        },
+        {
+          "text": "Thirty percent impairment in both",
+          "explanation": "A decibel difference does not provide a percentage of impairment."
+        }
+      ],
+      "answer": 1
     }
   ]
 }

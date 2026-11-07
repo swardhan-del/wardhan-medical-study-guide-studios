@@ -1,0 +1,52 @@
+[
+  {
+    "id": "rpe",
+    "label": "Retinal pigment epithelium",
+    "explanation": "Pigmented epithelial border on the choroidal side; distinct from choroidal melanocytes."
+  },
+  {
+    "id": "segments",
+    "label": "Photoreceptor segments",
+    "explanation": "Specialised parts of rods and cones facing the RPE; their nuclei lie in a different named layer."
+  },
+  {
+    "id": "elm",
+    "label": "External limiting zone",
+    "explanation": "Junction-associated boundary involving photoreceptors and Müller glia; not a standalone cell layer."
+  },
+  {
+    "id": "onl",
+    "label": "Outer nuclear layer",
+    "explanation": "Photoreceptor nuclei; a dense band in the supplied detail."
+  },
+  {
+    "id": "opl",
+    "label": "Outer plexiform layer",
+    "explanation": "Processes and synaptic contacts involving photoreceptors and receiving/lateral cells."
+  },
+  {
+    "id": "inl",
+    "label": "Inner nuclear layer",
+    "explanation": "Mixed neuronal and Müller-glial cell bodies; not a pure bipolar-cell population."
+  },
+  {
+    "id": "ipl",
+    "label": "Inner plexiform layer",
+    "explanation": "Process-rich region containing bipolar, amacrine and ganglion-cell connections."
+  },
+  {
+    "id": "gcl",
+    "label": "Ganglion-cell layer",
+    "explanation": "Ganglion-cell bodies and additional cell populations; nuclear appearance alone does not classify every cell."
+  },
+  {
+    "id": "nfl",
+    "label": "Nerve-fibre layer",
+    "explanation": "Ganglion-cell axons running toward the optic disc; thickness depends on region."
+  },
+  {
+    "id": "ilm",
+    "label": "Internal limiting membrane",
+    "explanation": "Vitreous-facing basement-membrane boundary associated with Müller endfeet."
+  }
+]

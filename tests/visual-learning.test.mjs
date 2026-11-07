@@ -12,8 +12,8 @@ const content = name => read(`../src/content/${name}.json`);
 const data = { visuals: content('lesson-visuals').visuals, lessons: content('library-lessons').lessons, references: content('lesson-references'), figures: content('public-figures').figures, catalog: content('public-catalog').records, audit: read('../docs/visual-learning-audit.json').records };
 test('every public resource has a visual decision and every new visual has valid placements and references', () => {
   assert.doesNotThrow(()=>validateVisualLearning(data));
-  assert.equal(data.audit.length, 287);
-  assert.equal(data.lessons.length, 267);
+  assert.equal(data.audit.length, 288);
+  assert.equal(data.lessons.length, 268);
   assert.equal(data.visuals.length, 58);
 });
 test('visual validation rejects missing descriptions, invalid row shapes, sources, rights and stale audit records', () => {
@@ -27,7 +27,7 @@ test('reused images retain real provenance and include observation prompts', () 
     assert(f.observe.length>40);assert(readFileSync(new URL('../'+f.evidence,import.meta.url)).length);
     for(const variant of f.variants) assert(release.assets.some(a=>'/'+a.path===variant.src));
   }
-  assert.equal(data.figures.filter(f=>f.kind==='micrograph').length,25);
+  assert.equal(data.figures.filter(f=>f.kind==='micrograph').length,27);
   for (const id of ['peripheral-nerve-longitudinal','peripheral-nerve-cross','peripheral-nerve-osmium']) {
     const nerve=data.figures.find(f=>f.id===id);
     assert.equal(nerve.licenseUrl,'https://creativecommons.org/publicdomain/zero/1.0/');

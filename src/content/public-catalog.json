@@ -3457,7 +3457,7 @@
     },
     {
       "status": "public",
-      "updatedAt": "2026-09-09",
+      "updatedAt": "2026-11-07",
       "bytes": 0,
       "id": "biophysics-practical-audiometry",
       "title": "Practical: sound levels and audiograms",
@@ -3474,7 +3474,7 @@
         "loudness",
         "masking"
       ],
-      "minutes": 6
+      "minutes": 25
     },
     {
       "status": "public",
@@ -4865,6 +4865,24 @@
         "Structure and function"
       ],
       "minutes": 17
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-07",
+      "bytes": 0,
+      "id": "retinal-structure-light-signal-direction",
+      "title": "Retinal layers and eye development: read structure, then test the explanation",
+      "subject": "histology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Orient retinal layers on credited specimens, distinguish visible structure from function, and connect eye development with the limits of experimental evidence.",
+      "tags": [
+        "Organ histology",
+        "Retina",
+        "Eye development",
+        "Tissue identification"
+      ],
+      "minutes": 40
     },
     {
       "status": "public",

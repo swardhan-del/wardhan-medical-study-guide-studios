@@ -1,3 +1,4 @@
+import retinalActivities from "./retinal-learning-activities.json" with { type: "json" };
 import vestibularActivities from "./vestibular-learning-activities.json" with { type: "json" };
 import type { LearningActivity } from "../lib/learning-activity";
 
@@ -7,6 +8,7 @@ const formation = { title: "Neuroscience: gastrulation and neurulation", url: "h
 
 /** Original prompts; source documents and third-party question banks are not bundled. */
 export const learningActivities: LearningActivity[] = [
+  ...retinalActivities as LearningActivity[],
   ...vestibularActivities as LearningActivity[],
   {
     id: "orientation-plane-right-left-v1", lessonId: "anatomy-foundations", kind: "name",

@@ -1,0 +1,125 @@
+[
+  {
+    "scope": "optic-disc-overview",
+    "licenseLabel": "CC BY-SA 3.0 terms",
+    "introduction": "Start with the layered retina on the right, then follow its inner fibre-rich tissue toward the exit region on the left. Use the outer wall as a second landmark. The separate detail photograph is not a verified zoom into this field; markers indicate broad study regions, not cell boundaries.",
+    "data": {
+      "figureId": "optic-disc-overview",
+      "title": "Optic disc and adjacent retinal architecture",
+      "regions": [
+        {
+          "id": "overview-exit",
+          "label": "Axon exit region",
+          "observation": "The layered pattern gives way to a broad bundle-rich region on the left.",
+          "interpretation": "This fits the creator-identified optic-nerve-head context.",
+          "limit": "Do not infer visual function or diagnose swelling from this isolated teaching image.",
+          "anchor": {
+            "x": 16,
+            "y": 56
+          }
+        },
+        {
+          "id": "overview-retina",
+          "label": "Adjacent layered retina",
+          "observation": "Distinct dark and pale bands continue across the upper-right field.",
+          "interpretation": "Compare this retinal sequence with the higher-detail image before naming the neighbouring exit region.",
+          "limit": "This is not a foveal demonstration or a whole-retina survey.",
+          "anchor": {
+            "x": 75,
+            "y": 26
+          }
+        },
+        {
+          "id": "overview-outer",
+          "label": "Outer collagen-rich tissue",
+          "observation": "Broad pink bundles occupy the tissue outside the pigmented vascular region.",
+          "interpretation": "The outer wall relationship supports a scleral connective-tissue interpretation.",
+          "limit": "Colour alone cannot distinguish every collagen bundle, vessel wall and adjacent structure.",
+          "anchor": {
+            "x": 80,
+            "y": 61
+          }
+        }
+      ],
+      "model": "The detail has two nuclear-rich bands with paler tissue between them and an elongated segment field facing a pigmented border. This sequence supports retinal architecture. The neural retina is separated from the underlying border in the specimen, but preparation and clinical history are needed to establish when separation occurred."
+    }
+  },
+  {
+    "scope": "retinal-layer-detail",
+    "licenseLabel": "CC BY-SA 3.0 terms",
+    "introduction": "Locate the two nuclear-rich bands and the paler tissue between them. Follow the elongated photoreceptor region toward the pigmented outer border, then describe the intervening separation without assigning its cause. Compare each visible observation with its interpretation and limit.",
+    "data": {
+      "figureId": "retinal-layer-detail",
+      "title": "Retinal detail: nuclear bands, processes and outer interface",
+      "regions": [
+        {
+          "id": "detail-inner",
+          "label": "Inner cell profiles and fibre-rich tissue",
+          "observation": "Relatively large cell profiles lie below an extensive process-rich region on the upper side of the section.",
+          "interpretation": "Their position is consistent with the ganglion-cell region beneath the inner nerve-fibre layer.",
+          "limit": "This field does not prove the identity of every individual cell or explain the regional thickness without wider context.",
+          "anchor": {
+            "x": 62.5,
+            "y": 29.3
+          }
+        },
+        {
+          "id": "detail-inl",
+          "label": "Inner nuclear-rich band",
+          "observation": "A compact dark nuclear band is separated from the larger inner cell profiles by paler tissue.",
+          "interpretation": "Its position in the sequence supports the inner nuclear layer.",
+          "limit": "Do not assign every nucleus to a bipolar cell; several neuronal and glial classes occupy this level.",
+          "anchor": {
+            "x": 62.5,
+            "y": 39.3
+          }
+        },
+        {
+          "id": "detail-onl",
+          "label": "Outer nuclear-rich band",
+          "observation": "A second dense nuclear band lies closer to the elongated outer segment field.",
+          "interpretation": "In the retinal sequence, this supports the photoreceptor nuclear layer.",
+          "limit": "The image does not reliably separate every rod nucleus from every cone nucleus.",
+          "anchor": {
+            "x": 62.5,
+            "y": 49.8
+          }
+        },
+        {
+          "id": "detail-segments",
+          "label": "Elongated photoreceptor region",
+          "observation": "Closely aligned elongated profiles extend below the outer nuclear band.",
+          "interpretation": "This is the segment region of the photoreceptors directed toward the RPE.",
+          "limit": "Do not claim ultrastructural disc organisation or individual opsin identity from this resolution.",
+          "anchor": {
+            "x": 62.5,
+            "y": 57.4
+          }
+        },
+        {
+          "id": "detail-gap",
+          "label": "Visible separation",
+          "observation": "A broad pale interval separates the neural retina from the pigmented underlying border.",
+          "interpretation": "The specimen has separated at this interface.",
+          "limit": "Without preparation history or clinical evidence, this does not determine whether separation occurred in life or during processing.",
+          "anchor": {
+            "x": 62.5,
+            "y": 65.7
+          }
+        },
+        {
+          "id": "detail-rpe",
+          "label": "Pigmented border",
+          "observation": "A thin brown-pigmented border lies above vascular and connective tissue.",
+          "interpretation": "Its position supports the RPE boundary against the choroidal side.",
+          "limit": "Pigment alone does not demonstrate a cell lineage, intact tight junctions or normal permeability.",
+          "anchor": {
+            "x": 62.5,
+            "y": 71.2
+          }
+        }
+      ],
+      "model": "The detail has two nuclear-rich bands with paler tissue between them and an elongated segment field facing a pigmented border. This sequence supports retinal architecture. The neural retina is separated from the underlying border in the specimen, but preparation and clinical history are needed to establish when separation occurred."
+    }
+  }
+]
