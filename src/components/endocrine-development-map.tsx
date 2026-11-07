@@ -1,6 +1,81 @@
 import styles from "./endocrine-development-map.module.css";
 
 const maps: Record<string, { title: string; tracks: { label: string; stages: { label: string; question: string; explanation: string }[] }[] }> = {
+  "ovarian-histology-and-development": {
+  "title": "Two linked questions: germ-cell differentiation and supporting-tissue organization",
+  "tracks": [
+    {
+      "label": "Germ-cell questions",
+      "stages": [
+        {
+          "label": "Gonadal colonization",
+          "question": "Where is the germ-cell population?",
+          "explanation": "Distinguish germ cells in the developing gonad from the surface lining. A mature surface photograph cannot establish the cells’ developmental origin."
+        },
+        {
+          "label": "Proliferation and meiotic entry",
+          "question": "Are all sampled cells in the same state?",
+          "explanation": "A developmental specimen can contain different germ-cell states. Spatial and molecular assays address this heterogeneity."
+        },
+        {
+          "label": "Oocyte differentiation",
+          "question": "Is a trajectory a traced lineage?",
+          "explanation": "An inferred sequence of expression states is not continuous observation of the same cell."
+        },
+        {
+          "label": "Follicular organization",
+          "question": "What surrounds the oocyte?",
+          "explanation": "Read the supporting cell arrangement separately from the oocyte’s chromosome programme."
+        },
+        {
+          "label": "Growth and alternative outcomes",
+          "question": "Must every follicle progress to ovulation?",
+          "explanation": "Distinguish growth, degeneration and postovulatory remodelling; a set of unrelated fields is not a longitudinal series."
+        },
+        {
+          "label": "Adult experimental context",
+          "question": "Which endpoint was measured?",
+          "explanation": "Cell morphology, signalling readouts and reproductive outcomes require their own measurements."
+        }
+      ]
+    },
+    {
+      "label": "Supporting-tissue questions",
+      "stages": [
+        {
+          "label": "Gonad versus duct",
+          "question": "Which organ system is being explained?",
+          "explanation": "Ovarian cell organization and female-tract duct development are related subjects with different developmental questions."
+        },
+        {
+          "label": "Somatic states",
+          "question": "What distinguishes supporting populations?",
+          "explanation": "Human atlas data compare molecular states and locations; a marker alone does not provide every lineage relationship."
+        },
+        {
+          "label": "Spatial arrangement",
+          "question": "Was location observed or inferred?",
+          "explanation": "Read the method: routine structure, fluorescent localization and computational spatial inference provide different evidence."
+        },
+        {
+          "label": "Cellular enclosure",
+          "question": "How is a follicular unit recognized?",
+          "explanation": "Identify an oocyte and its supporting arrangement rather than classifying any round profile as a follicle."
+        },
+        {
+          "label": "Remodelling",
+          "question": "How does architecture change?",
+          "explanation": "Compare cellular and fibrous organization while retaining the preparation context of each example."
+        },
+        {
+          "label": "Identity maintenance",
+          "question": "What does an adult intervention test?",
+          "explanation": "Timed interventions can investigate ongoing maintenance after differentiation; they do not replace a complete human embryological account."
+        }
+      ]
+    }
+  ]
+},
   "female-tract-histology-and-development": {
   "title": "From paired ducts to region-specific mucosa and wall",
   "tracks": [

@@ -14442,6 +14442,272 @@
       ]
     },
     {
+      "id": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Ovarian histology: specimens, development and experimental evidence",
+      "summary": "Read human ovarian fields, distinguish follicle organization from meiotic stage, and connect gonadal development with stage-specific experiments.",
+      "tags": [
+        "Organ histology",
+        "Integrated embryology",
+        "ovary",
+        "follicle",
+        "cumulus",
+        "corpus albicans",
+        "staining",
+        "research methods"
+      ],
+      "source": "ovarian-practical-depth-20261107",
+      "section": "Part 12: ovarian tissue, germ and somatic development",
+      "steps": [
+        {
+          "title": "Read an ovary at three scales",
+          "body": "Begin with compartments, then structures, then cells. A whole-organ section can establish the relation between surface, follicle-containing cortex and deeper vascular tissue. A follicle field establishes how an oocyte relates to its supporting cells and any cavity. A cellular view resolves nuclei, cell boundaries and extracellular material. These are different tasks: a beautifully focused oocyte crop cannot establish the architecture of the whole ovary.\n\nFor each field, record the structure you can trace, the feature supporting your identification and the missing information that would change it. The three photographs in this unit show selected human fields. They are useful for comparing organization, but they are not a consecutive developmental series from one person. Different magnifications and preparations also prevent direct size or colour comparisons between them.",
+          "practice": {
+            "prompt": "What additional view would you request after identifying a small follicle in a high-power crop?",
+            "feedback": "A wider field showing its relation to cortical stroma and the organ surface; a higher-power crop alone cannot establish that location."
+          }
+        },
+        {
+          "title": "Keep the surface lining separate from the cortex",
+          "body": "The ovarian surface is a lining, whereas the cortex is a tissue compartment containing follicles within stroma. Do not turn the phrase “simple cuboidal surface” into a description of the entire cortex. In the small-follicle photograph, elongated stromal nuclei fill much of the field around the rounder follicular structure; no continuous external organ surface is shown.\n\nThe practical distinction is topological. A surface lining follows an external boundary. Follicular cells surround an oocyte. Stromal cells occupy the intervening support tissue. Cell shape helps, but location and continuity distinguish these three populations. If a specimen is fragmented or the surface is stripped during preparation, its absence from one crop does not prove the ovary lacks a surface covering.",
+          "practice": {
+            "prompt": "Which visible feature would establish a surface lining rather than a follicular cell layer?",
+            "feedback": "Continuity along the external organ boundary, instead of a layer enclosing an oocyte."
+          }
+        },
+        {
+          "title": "Work through the small-follicle photograph",
+          "body": "Find the large pink rounded cell beside the black pointer. Follow its visible lower and right boundary before studying the surrounding smaller nuclei. Compare those nuclei with the elongated nuclei farther away in the stroma. This order makes the large cell, its surrounding cell layer and the background tissue separate observations.\n\nThe pointer covers part of the border, the field has uneven focus, and the dark edge is optical vignetting. These limitations matter when deciding whether a layer is complete or how many layers surround the oocyte. The source identifies a human primary follicle and uses “transition” in the filename. That historical label does not establish a precise subcategory in a later research classification. Describe the visible arrangement before assigning a stage.",
+          "practice": {
+            "prompt": "Write a two-sentence description without relying on the source filename.",
+            "feedback": "Identify a large rounded cell and its surrounding smaller cells in stromal tissue; state that the pointer and focus limit assessment of the full circumference."
+          }
+        },
+        {
+          "title": "Use morphology to reconcile follicle names",
+          "body": "A useful description says whether surrounding cells are flattened or cuboidal, whether a complete single layer or multiple layers are visible, and whether an antral cavity is present. Modern NICHD workshop terminology separates several transitional preantral categories. Some teaching conventions instead call an antral follicle “secondary.” A name without its convention can therefore obscure agreement about the same visible structure.\n\nWhen comparing a course slide with a research paper, translate both labels into these observations. Do not force a tangential, partly obscured profile into a precise stage. An oocyte-containing central profile and an off-centre cut through the same follicle may support different amounts of information. Record uncertainty at the feature that is missing, rather than labelling the whole exercise unusable.",
+          "practice": {
+            "prompt": "Two sources use different stage names but both describe multilayer cells without an antrum. What should you compare first?",
+            "feedback": "The shared morphology and each source’s naming convention; the names alone do not establish a biological disagreement."
+          }
+        },
+        {
+          "title": "Follow the oocyte–cumulus–wall relationship",
+          "body": "In the cumulus photograph, the rounded oocyte lies near the upper centre of a cellular mound. Trace the mound downward into the broader cellular wall and then outward into the more fibrous tissue below. The pale space above the mound provides a contrast that makes the projection easy to follow. This is more informative than memorizing the oocyte as a pink circle.\n\nThe cumulus is the mound supporting the oocyte; the immediately adjacent granulosa cells form its local cellular environment. The image does not show the complete circumference of the follicle. Its title includes “Graafian,” but the photograph alone does not establish ovulation timing, developmental competence or a hormone concentration. Use the named source as provenance and the visible relationships as the basis of the practical answer.",
+          "practice": {
+            "prompt": "How would you distinguish the cellular mound from the pale space around it?",
+            "feedback": "Trace its continuous nucleated tissue into the broader wall; the surrounding pale space lacks that cellular organization."
+          }
+        },
+        {
+          "title": "Separate a boundary from an empty gap",
+          "body": "The pale rim around an oocyte, a broad cavity beside a cell mound and a narrow irregular split through tissue are different observations. A biological boundary should be interpreted in relation to the structures on both sides. A processing separation can imitate a space without having the architecture of a true cavity.\n\nIn the cumulus field, the rounded oocyte and its immediate rim can be located. Assigning a particular molecular composition to that rim requires more than its colour. In the small-follicle field, the conspicuous pale crescent near the lower-left oocyte border should not automatically be called an antrum. Compare its scale, shape and relationship to the surrounding cells with the broad space in the cumulus specimen. Additional sections or appropriate staining can resolve an uncertain boundary.",
+          "practice": {
+            "prompt": "Why is “there is a white area” insufficient evidence for an antral follicle?",
+            "feedback": "White areas can represent different spaces or preparation effects; identification requires their location and surrounding architecture."
+          }
+        },
+        {
+          "title": "Read a corpus albicans as tissue organization",
+          "body": "In the source-labelled corpus albicans photograph, identify the irregular, relatively cell-poor pink area beneath and to the right of the pointer. Compare it with the more densely nucleated surrounding tissue. Follow its edge: it is an irregular solid region, not a ring of granulosa cells enclosing an oocyte.\n\nA corpus albicans is a fibrous remnant after luteal regression. The image also contains many rounded or oval profiles with conspicuous walls; roundness by itself does not make them follicles. Find a lumen, wall and surrounding tissue before naming a vascular profile, and look for an oocyte with supporting cells before naming a follicle. The displayed field cannot determine the person’s age, number of previous ovulations or pregnancy history.",
+          "practice": {
+            "prompt": "Give two observations that separate the central remnant from an oocyte-containing follicle.",
+            "feedback": "An irregular solid matrix-rich region and relatively sparse nuclei, without an enclosing granulosa arrangement around an oocyte."
+          }
+        },
+        {
+          "title": "Keep growth, degeneration and luteal remodelling separate",
+          "body": "Follicle growth changes the organization around an oocyte. Atresia is a degenerative outcome that can affect follicles at different stages. Luteal remodelling follows ovulation and produces a different cellular and vascular organization; later regression can leave a fibrous remnant. These alternatives are not three mandatory labels for consecutive fields in every ovarian section.\n\nFor an unknown specimen, ask what occupies the structure: an oocyte and organized supporting layer, disrupted cellular material, large luteal cells with vascular tissue, or predominantly fibrous material. Then ask whether the image supplies enough context to choose. This unit includes a fibrous-remnant example, but it does not yet provide a cleared matched corpus-luteum and atresia photograph set. Those visual comparisons remain explicitly incomplete.",
+          "practice": {
+            "prompt": "Why should three unrelated photographs not be presented as one follicle’s time course?",
+            "feedback": "They are cross-sectional examples from different preparations, without longitudinal identity or verified timing."
+          }
+        },
+        {
+          "title": "Plan slide preparation around the question",
+          "body": "A useful specimen record preserves the tissue identity, sampled region, orientation, fixation, embedding, section thickness, stain and scale calibration. Each field answers a different question. Orientation affects which relationships a section intersects. Fixation and processing affect preservation, shrinkage and the accessibility of molecular targets. Section thickness influences overlap and the appearance of cell layers.\n\nFor a teaching practical, first decide whether the aim is architecture, a carbohydrate-rich boundary, a protein location or a three-dimensional relationship. Then use a validated laboratory procedure appropriate to that aim and include its controls. An attractive stain cannot recover the history of an undocumented specimen. The three selected photographs lack a full preparation record and calibrated scale; they support architectural reading, not quantitative morphometry or a reproducible laboratory recipe.",
+          "practice": {
+            "prompt": "Which missing information prevents measuring an oocyte diameter in micrometres from these photographs?",
+            "feedback": "A valid image scale calibration; screen pixels, camera DPI and browser zoom do not supply it."
+          }
+        },
+        {
+          "title": "Choose a stain for a specific inference",
+          "body": "Routine H&E separates nuclear-rich regions from much of the cytoplasm and extracellular material and is a starting point for architecture. A carbohydrate-directed reaction such as PAS answers a different question from an antibody-based protein assay. A stain panel is useful when each result addresses an explicit alternative, with appropriate positive and negative controls.\n\nThe ovarian photographs here are pink and purple, but their source descriptions do not explicitly specify the stain. They are labelled “stain not reported” rather than assigned H&E from colour alone. Practise separating the observation from the explanation: “a visible rim surrounds the oocyte” is supported by the image; “this rim contains a named molecule” needs additional evidence. Reuse the existing staining foundations and PAS-control exercises before interpreting an ovarian molecular experiment.",
+          "practice": {
+            "prompt": "Would a magenta boundary, by itself, identify one particular protein?",
+            "feedback": "No. Colour and chemical reaction do not uniquely identify a protein; a targeted assay and controls are needed."
+          }
+        },
+        {
+          "title": "Distinguish follicle growth from meiotic progression",
+          "body": "A follicle is an organized multicellular structure; an oocyte is one germ cell within it. Follicular stage describes surrounding cells, layers and spaces. Meiotic stage describes the oocyte’s chromosome programme. The words “primary” and “secondary” are therefore especially easy to confuse when they are applied to both follicles and oocytes.\n\nAn antrum is a structural feature, not a direct assay of chromosome state. Similarly, a missing oocyte nucleus in a section may reflect the cutting plane rather than nuclear disappearance. Follow germ-cell differentiation and meiotic progression as a separate track; do not infer chromosome state solely from the silhouette of a large follicle. A missing nucleus in one plane calls for additional sections, not an invented nuclear event.",
+          "practice": {
+            "prompt": "A large antral profile is labelled secondary follicle. Does that label prove that its oocyte is secondary?",
+            "feedback": "No. Follicle terminology and oocyte meiotic terminology describe different processes."
+          }
+        },
+        {
+          "title": "Explain ovarian development separately from duct development",
+          "body": "Ovarian embryology must explain how germ cells and supporting somatic tissue become organized into follicles. Female-tract embryology must explain the regional development of tubes, uterine structures and other tract tissues. A duct-development diagram cannot stand in for the origin of an ovarian follicle.\n\nOrganize the ovarian account into two linked tracks. The germ-cell track follows proliferation, entry into meiosis and oocyte differentiation. The supporting-tissue track follows changing somatic cell states, spatial organization and the enclosure of oocytes. These processes interact, but they are not interchangeable. Mature ovarian surface epithelium should not be identified as the source of an oocyte merely because it covers the same organ.",
+          "practice": {
+            "prompt": "Which developmental question is left unanswered by a Müllerian-duct fusion diagram?",
+            "feedback": "How germ cells and ovarian supporting cells organize into follicles."
+          }
+        },
+        {
+          "title": "Read the human developmental atlas at the assay level",
+          "body": "Garcia-Alonso and colleagues combined human developmental gonadal sampling with single-cell and spatial methods. Their evidence distinguishes germ-cell and supporting-cell states and their spatial patterns. A transcriptomic state is a measured expression pattern, not a cell lineage observed continuously through time.\n\nRead each panel’s method before its colours. RNA sequencing measures transcripts in sampled cells or nuclei; chromatin accessibility measures another molecular property. Spatial inference estimates how expression-defined populations relate to tissue positions. Fluorescent RNA localization is different again. Agreement across methods can strengthen an interpretation, while a computational trajectory alone does not demonstrate that a particular cell became another cell. Human developmental observations and mouse perturbations contribute complementary kinds of evidence.",
+          "practice": {
+            "prompt": "What would be wrong with describing a computational cell-abundance overlay as an antibody stain?",
+            "feedback": "It substitutes a different assay and would misrepresent how the spatial pattern was obtained."
+          }
+        },
+        {
+          "title": "Connect a structural compartment with a molecular signature",
+          "body": "Jones and colleagues sampled morphologically selected regions of human ovaries and compared their RNA profiles. Theca-enriched regions included CYP17A1 and CYP11A1 among their markers; granulosa-enriched regions included FOXL2, AMH and INHBB. These associations connect a compartment seen in a section with molecular evidence for differentiated cell programmes.\n\nThe spatial analyses distinguished follicular compartments that were not recovered as distinct granulosa or theca clusters in the study’s unenriched single-cell dataset. Sampling design therefore affects which populations a molecular atlas resolves. The reported spatial gradients had limited replication, and many candidate markers still required in situ validation. Use the study to choose a testable marker panel, not to label every cell in an ordinary photograph from one transcript name.",
+          "practice": {
+            "prompt": "Why can spatially targeted sampling resolve a compartment missed by an unenriched cell suspension?",
+            "feedback": "The methods sample and preserve context differently; absence of a distinct recovered cluster does not establish that the tissue lacks the population."
+          }
+        },
+        {
+          "title": "Distinguish a meiotic signal from completed meiosis",
+          "body": "Childs and colleagues examined retinoid-signalling machinery and meiosis-associated expression in human fetal gonads. Their human results did not reproduce every spatial or sex-specific pattern proposed from mouse studies. In a fetal-testis culture experiment, retinoic acid increased STRA8 expression without a corresponding increase in the measured SYCP3 and DMC1 transcripts under the tested conditions.\n\nThis gives a concrete distinction for embryology: a response in an entry-associated regulator is not evidence that the whole chromosome programme has occurred. Record the species, tissue, developmental context and assay before transferring a pathway diagram. The experiment does not establish that human ovarian meiosis is independent of retinoid signalling, nor that supplying a signal is sufficient to produce a mature oocyte.",
+          "practice": {
+            "prompt": "Does induction of one entry-associated transcript prove completion of meiosis?",
+            "feedback": "No. It establishes that measured response; chromosome-level progression and later outcomes require their own evidence."
+          }
+        },
+        {
+          "title": "A pathway perturbation depends on when it occurs",
+          "body": "In Jagarlamudi and colleagues’ mouse study, deleting Pten in oocytes from the primary-follicle stage onward increased an AKT-pathway readout without the broad follicular and fertility disruption associated with earlier oocyte deletion. The comparison separates a verified molecular perturbation from its stage-dependent tissue outcome.\n\nWhen evaluating a new experiment, record the targeted cell, timing of the intervention, evidence that it worked, and the measured endpoint. A changed signalling readout is not automatically a changed reserve, ovulation rate or fertility outcome. Conversely, a similar gross outcome does not prove that the molecular perturbation failed. These are experimental mouse results, not a recommendation to manipulate the pathway in people.",
+          "practice": {
+            "prompt": "The target was deleted and phospho-AKT increased, but the measured reproductive outcome was unchanged. Which two claims can both be true?",
+            "feedback": "The molecular intervention worked; the measured outcome did not change under the tested stage and conditions."
+          }
+        },
+        {
+          "title": "A pathway arrow is not a whole-gene knockout",
+          "body": "John and colleagues studied a Kit mutation that disrupts coupling to PI3K in mice. Primordial follicle activation still occurred, while later follicular abnormalities and reserve depletion were reported. This experiment tests a particular signalling connection, not removal of every KIT function.\n\nThe useful question is narrower than “Is KIT important?” Ask whether that connection is necessary for that endpoint at that stage in that model. A negative result for one endpoint can coexist with a positive result for another. Draw the tested edge in a pathway diagram and leave other outputs visible; erasing the whole receptor would misrepresent the experiment.",
+          "practice": {
+            "prompt": "Does preserved activation after disrupting one KIT coupling site show that every KIT output is unnecessary?",
+            "feedback": "No. The mutation tests that signalling connection and specified endpoints, not all receptor functions."
+          }
+        },
+        {
+          "title": "Ovarian identity also requires maintenance",
+          "body": "Uhlenhaut and colleagues used inducible Foxl2 deletion in adult mice and observed increased testicular-programme expression with Sertoli-like and Leydig-like cellular changes. The experiment supports an active maintenance role in that adult mouse context. Establishing an ovarian identity during embryogenesis and maintaining it after differentiation are related but distinct problems.\n\nTo assess a maintenance claim, look for evidence before and after intervention, appropriate controls, the induction scheme, and more than one type of readout. A change in one marker alone would be weaker than concordant molecular and tissue-level changes. The study does not show that a routine ovarian micrograph can predict a human outcome, nor that a single regulator explains every part of human ovarian development.",
+          "practice": {
+            "prompt": "Why is adult inducible deletion informative about maintenance rather than only initial organ formation?",
+            "feedback": "The intervention occurs after differentiation, allowing consequences of losing an ongoing function to be examined."
+          }
+        },
+        {
+          "title": "Compare experiments by the question they can answer",
+          "body": "Build a four-column comparison: system, intervention or assay, readout, and justified claim. A human spatial atlas can locate molecular states in sampled tissue. A timed mouse deletion tests consequences of losing a factor in a defined context. A receptor-coupling mutation tests a more specific connection. A routine photograph demonstrates morphology in a selected field.\n\nThese sources should not be ranked simply by visual complexity or number of measured cells. Match evidence to the question. If the question concerns causality, expression compatibility alone is incomplete. If it concerns human spatial organization, a mouse knockout alone is incomplete. A stronger explanation makes the connection between sources explicit while preserving the different inferences each supports.",
+          "practice": {
+            "prompt": "Which evidence would directly strengthen a claim that a proposed cell signal is necessary?",
+            "feedback": "A well-controlled perturbation of the proposed interaction with the relevant endpoint, alongside appropriate specificity and context checks."
+          }
+        },
+        {
+          "title": "Practise a sampling calculation without inventing a reserve",
+          "body": "Consider a fictional exercise: field A contains 12 counted profiles in 2 square millimetres; field B contains 18 in 6 square millimetres. Their observed profile densities are 6 and 3 profiles per square millimetre. B contains more counted profiles but has the lower density. The denominator changes the interpretation.\n\nNeither result is a count of all follicles in the ovary. A profile is an intersection with a section; repeated sections can intersect the same structure. The counting rule, sampled region, spacing, section thickness and treatment of ambiguous profiles matter. Reuse the existing section-plane exercise to explore that geometry. In a study with many fields from one ovary, the fields also do not automatically become independent biological donors.",
+          "practice": {
+            "prompt": "Which field has higher profile density, and can you convert that value directly into a total ovarian reserve?",
+            "feedback": "A: 12/2 = 6 versus 18/6 = 3 profiles per square millimetre. No; these are sampled two-dimensional profiles with no valid whole-organ estimator supplied."
+          }
+        },
+        {
+          "title": "Give a practical answer that can be checked",
+          "body": "Use a short structured report: specimen context, low-power organization, defining cellular relationship, strongest alternative, and next observation needed. For the cumulus field, the key relationship is a rounded oocyte within a cellular mound continuous with the wall. For the fibrous remnant, it is relatively cell-poor material within more cellular surrounding tissue. Those statements identify evidence another student can point to.\n\nThen connect the field to one functional or developmental question without pretending the photograph measures the answer. For example, ask how supporting-cell organization relates to germ-cell differentiation, or which experiment distinguishes a signalling change from a tissue outcome. This is the bridge from identification to mechanism: the image starts the question, and appropriately matched evidence answers it.",
+          "practice": {
+            "prompt": "Write an answer for one photograph, then underline the observation supporting each identification.",
+            "feedback": "A checkable answer states visible relationships, distinguishes an alternative and names an unresolved measurement. Compare your own answer with the rubric; no automated clinical or examination grade is claimed."
+          }
+        }
+      ],
+      "objectives": [
+        "Describe three ovarian specimens with visible evidence and preparation limits.",
+        "Translate follicle terminology into cell arrangement and cavity observations.",
+        "Distinguish follicular architecture from meiotic stage and duct development.",
+        "Match stains and molecular assays to the inference they support.",
+        "Compare stage-specific, branch-specific and maintenance experiments.",
+        "Calculate a fictional profile density without claiming a whole-organ reserve."
+      ],
+      "minutes": 60,
+      "related": [
+        "reproductive-histology",
+        "histology-foundations-tissues",
+        "female-tract-histology-and-development",
+        "ovary-uterine-tube"
+      ],
+      "prerequisites": [
+        "microscopy",
+        "reproductive-histology"
+      ],
+      "updatedAt": "2026-11-07",
+      "question": {
+        "prompt": "Two ovarian specimens will be used for different assays: routine architecture in one and protein localization in the other. Which planning decision should come before tissue processing?",
+        "options": [
+          {
+            "text": "Select compatible preparation and assay-specific controls for each question, and record the protocol.",
+            "reason": "Preparation is part of the measurement. The lesson explains that fixation and processing affect preservation and molecular-target accessibility; each assay needs appropriate controls and a documented procedure."
+          },
+          {
+            "text": "Process both identically and choose any stain afterward; processing cannot affect target accessibility.",
+            "reason": "Identical processing is not automatically suitable for different readouts. Compatibility must be established rather than assumed after the specimens have already been processed."
+          },
+          {
+            "text": "Treat a well-stained routine section as a positive control for every protein-localization assay.",
+            "reason": "Good routine morphology does not by itself validate a different molecular assay or its controls. The control must address the readout being interpreted."
+          },
+          {
+            "text": "Infer the missing fixation and processing history from the colour of a source photograph.",
+            "reason": "Colour does not recover an undocumented preparation history. The selected photographs explicitly lack a full processing record."
+          }
+        ],
+        "answer": 0
+      },
+      "recall": {
+        "prompt": "Write an answer for one photograph, then underline the observation supporting each identification.",
+        "answer": "A checkable answer states visible relationships, distinguishes an alternative and names an unresolved measurement. Compare your own answer with the rubric; no automated clinical or examination grade is claimed."
+      },
+      "workedExample": {
+        "title": "Count profiles with a stated denominator",
+        "prompt": "In a fictional exercise, A contains 12 profiles in 2 mm² and B contains 18 profiles in 6 mm². Compare profile density and explain why neither gives a whole-organ reserve.",
+        "solution": [
+          "A: 12/2 = 6 profiles/mm². B: 18/6 = 3 profiles/mm².",
+          "The higher raw count in B does not give the higher density.",
+          "The observations are two-dimensional profiles; repeated sections can intersect the same object.",
+          "No whole-organ sampling estimator or calibrated total volume is supplied."
+        ]
+      },
+      "oralExamination": [
+        {
+          "prompt": "Two sources use different stage names but both describe multilayer cells without an antrum. What should you compare first?",
+          "answer": "The shared morphology and each source’s naming convention; the names alone do not establish a biological disagreement."
+        },
+        {
+          "prompt": "Which developmental question is left unanswered by a Müllerian-duct fusion diagram?",
+          "answer": "How germ cells and ovarian supporting cells organize into follicles."
+        },
+        {
+          "prompt": "Which evidence would directly strengthen a claim that a proposed cell signal is necessary?",
+          "answer": "A well-controlled perturbation of the proposed interaction with the relevant endpoint, alongside appropriate specificity and context checks."
+        }
+      ],
+      "summaryChecklist": [
+        "Read architecture before naming isolated cells.",
+        "Keep the source’s preparation and missing-scale information with each specimen.",
+        "Describe follicular arrangement separately from oocyte meiotic stage.",
+        "Separate gonadal cellular development from female-tract duct development.",
+        "Match a molecular or causal claim to the assay or intervention.",
+        "Distinguish profiles, sampled fields and biological specimens."
+      ]
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

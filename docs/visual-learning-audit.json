@@ -3596,6 +3596,18 @@
         "tubal-folded-wall",
         "tubal-ciliated-border"
       ]
+    },
+    {
+      "id": "ovarian-histology-and-development",
+      "route": "/library/ovarian-histology-and-development",
+      "action": "standardise-or-reuse",
+      "rationale": "Reuse specimen explorer and development tracks; no additional interactive framework. Rendered verification pending.",
+      "visualIds": [],
+      "figureIds": [
+        "ovary-small-follicle",
+        "ovary-cumulus-complex",
+        "ovary-corpus-albicans"
+      ]
     }
   ],
   "supplementalVisualStudioReview": {

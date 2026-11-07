@@ -1244,6 +1244,111 @@
       "publicApproval": "Owner-authorized educational use after provenance, license and privacy review; rendered checks and release are separate gates.",
       "modifications": "Original photograph unchanged. Numbered region markers are browser overlays and can be hidden.",
       "observe": "Describe two visible relationships, then state one inference that this fixed field cannot support."
+    },
+    {
+      "id": "ovary-small-follicle",
+      "title": "Human follicle: oocyte, surrounding cells and stroma",
+      "sourceAsset": "images/figures/ovary-small-follicle.jpg",
+      "kind": "micrograph",
+      "alt": "A pink rounded oocyte beside a black microscope pointer, surrounded by smaller nuclei and elongated stromal nuclei; the right edge is darkened.",
+      "caption": "A pink rounded oocyte beside a black microscope pointer, surrounded by smaller nuclei and elongated stromal nuclei; the right edge is darkened. Human, as identified by the source. Stain and calibrated scale are not reported. The separate source specimens are not a longitudinal series.",
+      "rights": "Jpogi. Public domain. Author’s public-domain dedication; source credit retained.",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Primary_follicle_(transition).jpg#Licensing",
+      "evidence": "docs/reviews/ovarian-practical-depth-20261107.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Primary_follicle_(transition).jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-ovarian-histology-and-development"
+      ],
+      "resourceIds": [
+        "ovarian-histology-and-development"
+      ],
+      "width": 1280,
+      "height": 960,
+      "src": "/images/figures/ovary-small-follicle.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/ovary-small-follicle.jpg",
+          "width": 1280,
+          "height": 960,
+          "bytes": 227490
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after source, rights and privacy audit; rendered and release checks are separate gates.",
+      "modifications": "Existing Commons 1280-pixel uncropped display variant; no local pixel modification. Source credit retained. Explanatory labels are separate from the photograph.",
+      "observe": "A large rounded pink cell occupies the centre-left of the field. Smaller nuclei follow the visible lower-right border of the large cell. Elongated nuclei occupy tissue beyond the follicular profile. An opaque black bar crosses the field and covers tissue."
+    },
+    {
+      "id": "ovary-cumulus-complex",
+      "title": "Human antral follicle: oocyte and cumulus relationship",
+      "sourceAsset": "images/figures/ovary-cumulus-complex.jpg",
+      "kind": "micrograph",
+      "alt": "A rounded pink oocyte lies near the top of a purple cellular mound, with a broad pale space above and fibrous tissue below.",
+      "caption": "A rounded pink oocyte lies near the top of a purple cellular mound, with a broad pale space above and fibrous tissue below. Human, as identified by the source. Stain and calibrated scale are not reported. The separate source specimens are not a longitudinal series.",
+      "rights": "Ed Uthman. CC BY 2.0. The separate explanatory overlay is offered under CC BY 2.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "evidence": "docs/reviews/ovarian-practical-depth-20261107.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Graafian_Follicle_Cumulus_Oophorus_in_Human_Ovary_(6032619828).jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-ovarian-histology-and-development"
+      ],
+      "resourceIds": [
+        "ovarian-histology-and-development"
+      ],
+      "width": 1280,
+      "height": 854,
+      "src": "/images/figures/ovary-cumulus-complex.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/ovary-cumulus-complex.jpg",
+          "width": 1280,
+          "height": 854,
+          "bytes": 463091
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after source, rights and privacy audit; rendered and release checks are separate gates.",
+      "modifications": "Existing Commons 1280-pixel uncropped display variant; no local pixel modification. Source credit retained. Explanatory labels are separate from the photograph.",
+      "observe": "A large rounded pink cell sits near the upper centre of the mound. Nucleated tissue projects toward the pale space and continues downward into the broader wall. A broad pale area borders the projecting cellular mound. Wavy pink material and elongated nuclei lie below the densely cellular region."
+    },
+    {
+      "id": "ovary-corpus-albicans",
+      "title": "Human corpus albicans: fibrous remnant in ovarian tissue",
+      "sourceAsset": "images/figures/ovary-corpus-albicans.jpg",
+      "kind": "micrograph",
+      "alt": "An irregular cell-poor pink region lies among more densely nucleated ovarian tissue, with multiple round wall profiles and a black pointer.",
+      "caption": "An irregular cell-poor pink region lies among more densely nucleated ovarian tissue, with multiple round wall profiles and a black pointer. Human, as identified by the source. Stain and calibrated scale are not reported. The separate source specimens are not a longitudinal series.",
+      "rights": "Jpogi. Public domain. Author’s public-domain dedication; source credit retained.",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Corpus_albicans.JPG#Licensing",
+      "evidence": "docs/reviews/ovarian-practical-depth-20261107.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corpus_albicans.JPG",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-ovarian-histology-and-development"
+      ],
+      "resourceIds": [
+        "ovarian-histology-and-development"
+      ],
+      "width": 1280,
+      "height": 960,
+      "src": "/images/figures/ovary-corpus-albicans.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/ovary-corpus-albicans.jpg",
+          "width": 1280,
+          "height": 960,
+          "bytes": 481643
+        }
+      ],
+      "publicApproval": "Owner-authorized educational use after source, rights and privacy audit; rendered and release checks are separate gates.",
+      "modifications": "Existing Commons 1280-pixel uncropped display variant; no local pixel modification. Source credit retained. Explanatory labels are separate from the photograph.",
+      "observe": "An irregular relatively cell-poor pink area is visible centrally. Denser small nuclei surround the pale central region. An oval profile has a prominent pink wall around a lighter central area. The black pointer overlaps the left part of the central region."
     }
   ]
 }

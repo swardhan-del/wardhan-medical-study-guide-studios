@@ -8847,6 +8847,654 @@
       "answer": 3,
       "subject": "histology",
       "href": "/library/female-tract-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-01",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Choose the useful next view",
+      "prompt": "A high-power crop shows an oocyte and surrounding cells. You need to establish its location in the ovary. Which next view is most useful?",
+      "options": [
+        {
+          "text": "A wider field including cortical organization and the surface",
+          "explanation": "Wider context can establish the compartment containing the follicle."
+        },
+        {
+          "text": "A still tighter crop of one nucleus",
+          "explanation": "It removes the architecture needed to answer the location question."
+        },
+        {
+          "text": "The same crop with higher colour saturation",
+          "explanation": "Colour adjustment cannot supply missing spatial context."
+        },
+        {
+          "text": "A photograph from an unrelated ovary",
+          "explanation": "It can illustrate a comparison but cannot establish this specimen’s location."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-02",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Surface or follicle?",
+      "prompt": "A cell layer follows the external boundary of an ovarian section. Which observation would distinguish it from granulosa surrounding an oocyte?",
+      "options": [
+        {
+          "text": "Every cell looks approximately cuboidal",
+          "explanation": "Shape alone can be shared by more than one population."
+        },
+        {
+          "text": "The layer is continuous along the external organ surface",
+          "explanation": "Its topology supplies the distinguishing observation."
+        },
+        {
+          "text": "The image is pink and purple",
+          "explanation": "Colour does not distinguish the two locations."
+        },
+        {
+          "text": "There are many nuclei somewhere in the field",
+          "explanation": "Nuclear abundance does not identify which boundary is being followed."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-03",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Identify the obstruction",
+      "prompt": "A black pointer crosses part of a small follicle. What is the appropriate consequence for interpretation?",
+      "options": [
+        {
+          "text": "Call the covered region a missing cell layer",
+          "explanation": "An obstruction is not biological absence."
+        },
+        {
+          "text": "Assign the stage from the filename alone",
+          "explanation": "The filename does not reveal the covered circumference."
+        },
+        {
+          "text": "Describe visible cells and state that the full border cannot be assessed",
+          "explanation": "This preserves usable observations without inventing hidden detail."
+        },
+        {
+          "text": "Treat the pointer as a darkly stained nucleus",
+          "explanation": "Its straight opaque shape and continuity across the field identify an optical pointer."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-04",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Reconcile terminology",
+      "prompt": "A course uses “secondary” for an antral follicle. A research classification uses the same word differently. What is the most reliable comparison?",
+      "options": [
+        {
+          "text": "Assume the newer source is describing another organ",
+          "explanation": "Terminological differences do not imply different organs."
+        },
+        {
+          "text": "Compare cell layers and the presence of an antrum, then state each convention",
+          "explanation": "Shared observations allow the labels to be translated."
+        },
+        {
+          "text": "Average the two labels into an intermediate stage",
+          "explanation": "Stage names are not numerical values to average."
+        },
+        {
+          "text": "Discard both descriptions",
+          "explanation": "The descriptions may be compatible once their conventions are explicit."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-05",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Cumulus continuity",
+      "prompt": "In the human cumulus photograph, which observation best establishes that the mound is part of the follicular wall?",
+      "options": [
+        {
+          "text": "It has exactly the same colour as every other field",
+          "explanation": "Colour between preparations is not a continuity test."
+        },
+        {
+          "text": "Its cells are all the same size",
+          "explanation": "Uniform cell size is neither shown nor needed."
+        },
+        {
+          "text": "Its nucleated tissue can be traced into the broader wall",
+          "explanation": "Continuity connects the mound with the surrounding architecture."
+        },
+        {
+          "text": "The source title contains Graafian",
+          "explanation": "A title supplies provenance, not the visible continuity itself."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-06",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Interpret a pale crescent",
+      "prompt": "A narrow pale crescent appears beside an oocyte in a small follicle field. What is justified?",
+      "options": [
+        {
+          "text": "It proves a large antral cavity",
+          "explanation": "A local crescent does not establish the architecture of an antrum."
+        },
+        {
+          "text": "It proves the oocyte has completed meiosis",
+          "explanation": "A pale space does not measure chromosome progression."
+        },
+        {
+          "text": "It proves the tissue was never fixed",
+          "explanation": "Appearance alone cannot establish that preparation history."
+        },
+        {
+          "text": "Its relationship and preparation context must be assessed before naming it",
+          "explanation": "A gap, boundary and true cavity can have different causes."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-07",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Compare the fibrous remnant",
+      "prompt": "Which combination best describes the central source-labelled corpus albicans region?",
+      "options": [
+        {
+          "text": "An irregular relatively cell-poor region within more cellular tissue",
+          "explanation": "This matches the displayed organization of the remnant."
+        },
+        {
+          "text": "A large oocyte enclosed by a complete granulosa layer",
+          "explanation": "That arrangement is not visible in the central remnant."
+        },
+        {
+          "text": "A broad open antral cavity with a projecting cumulus",
+          "explanation": "The central region is predominantly solid material."
+        },
+        {
+          "text": "A calibrated readout of past ovulations",
+          "explanation": "One selected field cannot count lifetime events."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-08",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Round is not enough",
+      "prompt": "Several round profiles appear beside a fibrous remnant. What should happen before they are called follicles?",
+      "options": [
+        {
+          "text": "Count every round outline as one follicle",
+          "explanation": "Round outlines may arise from multiple tissue structures."
+        },
+        {
+          "text": "Identify an oocyte and its supporting arrangement, while considering vessel walls and lumina",
+          "explanation": "The defining relationships discriminate the alternatives."
+        },
+        {
+          "text": "Use the smallest profile as a primordial follicle by default",
+          "explanation": "Small size and roundness alone are insufficient."
+        },
+        {
+          "text": "Ignore surrounding tissue",
+          "explanation": "Context is part of the identification evidence."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-09",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Distinct outcomes",
+      "prompt": "Which statement best distinguishes atresia from luteal remodelling?",
+      "options": [
+        {
+          "text": "Both words describe every growing follicle",
+          "explanation": "Growth is not synonymous with either process."
+        },
+        {
+          "text": "Every follicle must be photographed in both states",
+          "explanation": "The states are not obligatory paired observations for every follicle."
+        },
+        {
+          "text": "Degeneration and postovulatory remodelling are different tissue outcomes",
+          "explanation": "The distinction prevents a misleading universal linear sequence."
+        },
+        {
+          "text": "A corpus albicans is simply an oocyte with fewer nuclei",
+          "explanation": "It is a fibrous remnant, not a germ cell."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-10",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Calibrated measurement",
+      "prompt": "A photograph has 1280 horizontal pixels and a camera DPI value, but no microscope scale calibration. Can its oocyte diameter be reported in micrometres?",
+      "options": [
+        {
+          "text": "Yes, browser zoom provides the calibration",
+          "explanation": "Browser scaling changes display size, not specimen calibration."
+        },
+        {
+          "text": "Yes, every 1280-pixel image covers the same tissue width",
+          "explanation": "Tissue field width depends on acquisition magnification and optics."
+        },
+        {
+          "text": "Yes, DPI always means microscope resolution",
+          "explanation": "DPI is not a specimen scale calibration."
+        },
+        {
+          "text": "No, the relationship between image distance and specimen distance is missing",
+          "explanation": "A known calibration is needed for that conversion."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-11",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Stain documentation",
+      "prompt": "A source photograph is pink and purple but its stain is not reported. Which caption is accurate?",
+      "options": [
+        {
+          "text": "Human ovarian field; stain not reported",
+          "explanation": "It preserves known identity and states the missing preparation information."
+        },
+        {
+          "text": "Confirmed H&E because of its colours",
+          "explanation": "Colour resemblance is not documentation of the method."
+        },
+        {
+          "text": "Confirmed PAS because a rim is pink",
+          "explanation": "A coloured rim cannot establish the preparation."
+        },
+        {
+          "text": "Unstained tissue because no stain is named",
+          "explanation": "Missing documentation does not prove no stain was used."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-12",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Specificity of colour",
+      "prompt": "A coloured rim is visible around an oocyte. Which conclusion requires additional evidence?",
+      "options": [
+        {
+          "text": "A rim is visible in this plane",
+          "explanation": "This is a direct image observation."
+        },
+        {
+          "text": "The rim lies around the large rounded cell",
+          "explanation": "Its relative position can be observed."
+        },
+        {
+          "text": "The rim contains one specifically named protein",
+          "explanation": "Molecular identity requires a suitable assay and controls."
+        },
+        {
+          "text": "The rim can be compared with adjacent tissue",
+          "explanation": "A morphological comparison is possible without molecular identification."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-13",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Separate two stage systems",
+      "prompt": "An antral follicle is described as secondary under a course convention. What does that establish about its oocyte?",
+      "options": [
+        {
+          "text": "It must also be a secondary oocyte",
+          "explanation": "The two naming systems refer to different processes."
+        },
+        {
+          "text": "Its meiotic stage still needs appropriate evidence",
+          "explanation": "Follicular architecture does not directly assay chromosome state."
+        },
+        {
+          "text": "It has completed fertilization",
+          "explanation": "The label does not establish fertilization."
+        },
+        {
+          "text": "It no longer contains a germ cell",
+          "explanation": "An antral follicle can contain an oocyte; the label does not imply its absence."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-14",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "A nucleus outside the plane",
+      "prompt": "A section through an oocyte does not show its nucleus. Which interpretation is safest?",
+      "options": [
+        {
+          "text": "The oocyte has no genetic material",
+          "explanation": "Not seeing a structure in one plane does not establish its absence."
+        },
+        {
+          "text": "Fertilization must have occurred",
+          "explanation": "The plane alone does not determine that event."
+        },
+        {
+          "text": "The follicle has definitely undergone atresia",
+          "explanation": "Additional morphological evidence is needed."
+        },
+        {
+          "text": "The nucleus may lie outside the section plane",
+          "explanation": "Section geometry provides a plausible explanation that can be checked with further sections."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-15",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Ovary versus duct",
+      "prompt": "A student explains ovarian follicle formation entirely through Müllerian-duct fusion. What essential element is missing?",
+      "options": [
+        {
+          "text": "The organization of germ cells and ovarian supporting cells",
+          "explanation": "Follicles require a gonadal cellular-development account."
+        },
+        {
+          "text": "Only the final uterus size",
+          "explanation": "Uterine size does not explain ovarian follicle assembly."
+        },
+        {
+          "text": "The camera used for the slide",
+          "explanation": "Camera identity does not resolve the embryological omission."
+        },
+        {
+          "text": "A second name for the duct",
+          "explanation": "Renaming the duct does not supply the missing gonadal process."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-16",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Read the assay legend",
+      "prompt": "A figure maps estimated abundance of expression-defined cells onto a tissue section. Which description is accurate?",
+      "options": [
+        {
+          "text": "A direct antibody stain for each cell population",
+          "explanation": "The described estimate comes from a different method."
+        },
+        {
+          "text": "Computational spatial inference that should be interpreted with its assay and validation",
+          "explanation": "This retains the method used to produce the map."
+        },
+        {
+          "text": "A continuous movie of each cell’s descendants",
+          "explanation": "A spatial estimate does not follow individual lineages over time."
+        },
+        {
+          "text": "A direct hormone concentration map",
+          "explanation": "Expression-defined abundance is not a hormone assay."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-17",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Timing and a pathway readout",
+      "prompt": "A targeted mouse perturbation changes a signalling measurement but not the tested reproductive endpoint. Which conclusion follows?",
+      "options": [
+        {
+          "text": "The intervention necessarily failed",
+          "explanation": "A verified molecular change argues against that automatic conclusion."
+        },
+        {
+          "text": "The endpoint must secretly have changed",
+          "explanation": "An unmeasured change should not be invented."
+        },
+        {
+          "text": "Molecular and tissue outcomes must be reported separately in their tested context",
+          "explanation": "The two levels can differ without contradiction."
+        },
+        {
+          "text": "The result establishes a human treatment",
+          "explanation": "A mouse experiment does not supply that clinical conclusion."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-18",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "What was actually disrupted?",
+      "prompt": "A mutation disrupts one receptor-to-pathway coupling site. What is the most accurate description?",
+      "options": [
+        {
+          "text": "Every receptor function was removed",
+          "explanation": "That claim is broader than the intervention."
+        },
+        {
+          "text": "The entire pathway was erased in every tissue",
+          "explanation": "The stated intervention does not establish this."
+        },
+        {
+          "text": "All possible endpoints were tested",
+          "explanation": "A mutation does not determine the scope of outcome measurement."
+        },
+        {
+          "text": "A particular signalling connection was tested in the stated model",
+          "explanation": "This matches the intervention’s scope."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-19",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Maintenance experiment",
+      "prompt": "Why can an inducible adult deletion help investigate maintenance of a differentiated tissue?",
+      "options": [
+        {
+          "text": "It changes a factor after initial differentiation",
+          "explanation": "Timing helps separate maintenance from initial formation."
+        },
+        {
+          "text": "It makes all embryological evidence unnecessary",
+          "explanation": "Adult maintenance and development answer different questions."
+        },
+        {
+          "text": "It proves every marker is causal",
+          "explanation": "The intervention does not make all associated markers causal."
+        },
+        {
+          "text": "It gives a diagnosis from any ordinary human section",
+          "explanation": "Experimental evidence cannot be transferred to that claim."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-20",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Evidence for an interaction",
+      "prompt": "Two cell groups express compatible ligand and receptor transcripts. Which next result would most directly strengthen a necessity claim?",
+      "options": [
+        {
+          "text": "A brighter colour scale on the same plot",
+          "explanation": "Display intensity does not test necessity."
+        },
+        {
+          "text": "A controlled perturbation of the proposed interaction with the relevant endpoint",
+          "explanation": "An intervention can test consequences of disrupting the proposed connection."
+        },
+        {
+          "text": "Renaming both cell groups",
+          "explanation": "Terminology does not test causality."
+        },
+        {
+          "text": "Counting the same cells repeatedly",
+          "explanation": "Repeated measurement alone does not perturb the interaction."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-21",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Use the denominator",
+      "prompt": "In a fictional count, A has 12 profiles in 2 mm² and B has 18 in 6 mm². Which field has higher profile density?",
+      "options": [
+        {
+          "text": "B, because 18 is greater than 12",
+          "explanation": "The raw count ignores the area denominator."
+        },
+        {
+          "text": "Both, because each contains follicles",
+          "explanation": "Presence does not determine density."
+        },
+        {
+          "text": "A: 6 profiles/mm² compared with B: 3 profiles/mm²",
+          "explanation": "Dividing each count by its own area gives the comparison."
+        },
+        {
+          "text": "Neither can be compared numerically",
+          "explanation": "The supplied profile counts and areas allow this limited comparison."
+        }
+      ],
+      "answer": 2,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-22",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Profiles or whole objects?",
+      "prompt": "The same follicle appears in several serial sections. What error results from treating each profile as a different follicle?",
+      "options": [
+        {
+          "text": "No error: each section creates a new biological follicle",
+          "explanation": "Sectioning does not create new biological objects."
+        },
+        {
+          "text": "Automatic correction for section thickness",
+          "explanation": "Counting alone does not perform such a correction."
+        },
+        {
+          "text": "A measurement of meiotic stage",
+          "explanation": "Profile counts do not determine that stage."
+        },
+        {
+          "text": "Repeated counting of the same three-dimensional object",
+          "explanation": "A counting design must address repeated intersections."
+        }
+      ],
+      "answer": 3,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-23",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "Independent biological samples",
+      "prompt": "A study collects many image fields from one ovary. What should be reported separately?",
+      "options": [
+        {
+          "text": "The number of fields and the number of biological specimens",
+          "explanation": "Repeated fields do not automatically represent independent donors."
+        },
+        {
+          "text": "Only the largest count, labelled as donors",
+          "explanation": "This would inflate the apparent biological sample size."
+        },
+        {
+          "text": "Only the smallest count, labelled as images",
+          "explanation": "This hides how much imaging was performed."
+        },
+        {
+          "text": "No sampling information",
+          "explanation": "Sampling information is necessary to judge the inference."
+        }
+      ],
+      "answer": 0,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
+    },
+    {
+      "id": "ovarian-practical-24",
+      "topic": "ovarian-histology-and-development",
+      "subject": "histology",
+      "title": "A checkable practical answer",
+      "prompt": "Which answer gives another student the best basis for checking a tissue identification?",
+      "options": [
+        {
+          "text": "The name alone, stated confidently",
+          "explanation": "It omits the observations supporting the name."
+        },
+        {
+          "text": "Visible relationships, an alternative and an unresolved feature",
+          "explanation": "These make the reasoning inspectable and bounded."
+        },
+        {
+          "text": "Only the filename and date",
+          "explanation": "Provenance does not replace structural evidence."
+        },
+        {
+          "text": "A hormone concentration guessed from colour",
+          "explanation": "Routine colour does not supply that measurement."
+        }
+      ],
+      "answer": 1,
+      "href": "/library/ovarian-histology-and-development#apply-the-concept"
     }
   ]
 }
