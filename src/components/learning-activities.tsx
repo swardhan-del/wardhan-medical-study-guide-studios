@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { LearningActivity, ActivityFeedback, ExplanationActivity } from "@/lib/learning-activity";
 import { checkActivityName, checkActivitySequence } from "@/lib/learning-activity";
 import styles from "./learning-activities.module.css";
@@ -9,11 +9,24 @@ function ExplanationPractice({ activity }: { activity: ExplanationActivity }) {
   const [draft, setDraft] = useState("");
   const [revealed, setRevealed] = useState(false);
   const [checked, setChecked] = useState<string[]>([]);
+  const clearPractice = useCallback(() => {
+    setDraft("");
+    setRevealed(false);
+    setChecked([]);
+  }, []);
+  useEffect(() => {
+    // A restored browser document must not revive a supposedly temporary draft.
+    window.addEventListener("pageshow", clearPractice);
+    return () => window.removeEventListener("pageshow", clearPractice);
+  }, [clearPractice]);
   return <>
     <label htmlFor={`${activity.id}-draft`}>Write or outline your explanation</label>
     <textarea id={`${activity.id}-draft`} rows={5} maxLength={6000} value={draft} onChange={event => setDraft(event.target.value)} />
     <p className={styles.note}>Your draft stays on this page, is not sent anywhere, and clears when you leave. No automated essay score is assigned.</p>
-    <button type="button" aria-expanded={revealed} aria-controls={`${activity.id}-rubric`} onClick={() => setRevealed(!revealed)}>{revealed ? "Hide comparison" : "Compare with the rubric"}</button>
+    <div className={styles.choices}>
+      <button type="button" aria-expanded={revealed} aria-controls={`${activity.id}-rubric`} onClick={() => setRevealed(!revealed)}>{revealed ? "Hide comparison" : "Compare with the rubric"}</button>
+      <button type="button" onClick={clearPractice}>Clear my explanation and checks</button>
+    </div>
     {revealed && <div className={styles.screenRubric} id={`${activity.id}-rubric`}>
       <p>Mark only points your explanation actually includes. These are your own checks, not an automated assessment.</p>
       <fieldset><legend>Evidence in my explanation</legend>{activity.criteria.map(criterion => <label className={styles.criterion} key={criterion.id}>
@@ -24,6 +37,12 @@ function ExplanationPractice({ activity }: { activity: ExplanationActivity }) {
       <h4>One possible explanation</h4><p>{activity.model}</p>
       <p>Revise a missing connection in your draft, then explain it again without reading the model.</p>
     </div>}
+    <details className={styles.screenRubric}>
+      <summary>Read the rubric and model without entering a response</summary>
+      <ul>{activity.criteria.map(criterion => <li key={criterion.id}><strong>{criterion.label}:</strong> {criterion.explanation}</li>)}</ul>
+      <p>{activity.model}</p>
+      <p>Compare these points with your own explanation. This is a self-review guide, not an automated score.</p>
+    </details>
     <div className={styles.printAnswer}><h4>Self-review rubric</h4><ul>{activity.criteria.map(c => <li key={c.id}>{c.label}: {c.explanation}</li>)}</ul><p>{activity.model}</p></div>
   </>;
 }

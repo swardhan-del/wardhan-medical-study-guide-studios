@@ -16,7 +16,7 @@ test("First-time student finds, saves and returns from the lymphoid specimen les
   await page.getByRole("searchbox",{name:"Search resources",exact:true}).fill("lymphoid");
   const card=page.locator(".resource-card:visible").filter({has:page.locator('a[href="/library/lymphoid-organs"]')});await expect(card).toHaveCount(1);
   await card.getByRole("link",{name:"Read lesson",exact:true}).click();await expect(page.locator("h1")).toHaveText(lesson.title);
-  await page.getByRole("link",{name:"Read the specimen",exact:true}).click();await expect(page.locator("#lymphoid-specimen-title")).toBeInViewport();
+  await page.locator('.lesson-jumps a[href="#lymphoid-specimen-title"]').click();await expect(page.locator("#lymphoid-specimen-title")).toBeInViewport();
   const save=page.getByRole("button",{name:`Save to My Study: ${lesson.title}`,exact:true});await save.click();await page.reload();
   const saved=page.getByRole("button",{name:`Saved to My Study: ${lesson.title} (remove from saved resources)`,exact:true});await expect(saved).toHaveAttribute("aria-pressed","true");await saved.click();await page.reload();await expect(save).toBeVisible();
   await page.getByRole("navigation",{name:"Breadcrumb"}).locator('a[href="/subjects/histology"]').click();await expect(page.getByRole("searchbox",{name:"Search resources",exact:true})).toBeVisible();
@@ -39,7 +39,7 @@ test("Lymphoid explanation preserves full content, references and source boundar
 });
 
 test("Specimen regions work with the keyboard and markers can be hidden", async ({page},info) => {
-  await page.goto(route); await page.getByRole("link",{name:"Read the specimen",exact:true}).click();
+  await page.goto(route); await page.locator('.lesson-jumps a[href="#lymphoid-specimen-title"]').click();
   const panel=page.locator(panelSelector);
   for(const [i,region] of specimen.regions.entries()) {
     const control=panel.getByRole("button",{name:`${i+1}. ${region.label}`,exact:true}); await control.focus(); await page.keyboard.press("Enter");

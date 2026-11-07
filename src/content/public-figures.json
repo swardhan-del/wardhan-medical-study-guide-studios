@@ -1454,6 +1454,111 @@
       "publicApproval": "Owner-authorized educational use after rights and privacy audit; integrated rendered and release checks remain separate gates.",
       "modifications": "None; existing 1280-pixel Commons display variant copied byte-for-byte. Region labels remain separate from the photograph.",
       "observe": "Dark longitudinal fibres demonstrate a preparation chosen to contrast myelin-associated lipid."
+    },
+    {
+      "id": "lymphoid-spleen-detail",
+      "title": "Spleen detail: follow a vessel and its neighbourhood",
+      "sourceAsset": "images/figures/lymphoid-spleen-detail.jpg",
+      "kind": "micrograph",
+      "alt": "Mammalian spleen detail showing dense lymphoid-rich tissue beside a less densely cellular area, with an embedded 50 micrometre scale bar.",
+      "caption": "Creator-identified mammalian spleen. Exact species, stain and fixation are unreported. The embedded 50 micrometre scale bar is preserved; its calibration has not been independently verified.",
+      "rights": "Photograph: Josef Reischig, author archive donated by the creator’s heirs, CC BY-SA 3.0. Image bytes unchanged. Browser markers are separate, reversible overlays. The annotated specimen presentation is also offered under CC BY-SA 3.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "evidence": "docs/reviews/lymphoid-comparison-depth-20261107.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spleen_(265_19)_Section;_mammal.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-lymphoid-organs"
+      ],
+      "resourceIds": [
+        "lymphoid-organs"
+      ],
+      "width": 1280,
+      "height": 819,
+      "src": "/images/figures/lymphoid-spleen-detail.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/lymphoid-spleen-detail.jpg",
+          "width": 1280,
+          "height": 819,
+          "bytes": 448214
+        }
+      ],
+      "modifications": "Photograph bytes unchanged. Browser markers and display zoom are separate, reversible controls. Annotated specimen presentation uses CC BY-SA 3.0.",
+      "observe": "Identify a relationship: vessel, surrounding lymphoid tissue, and neighbouring tissue.",
+      "publicApproval": "Owner-authorized educational publication after rights, privacy, specimen-limit and native rendered review; full build, exact-preview CI and production checks remain release gates."
+    },
+    {
+      "id": "lymphoid-thymus-detail",
+      "title": "Thymus detail: inspect a whorl before naming a compartment",
+      "sourceAsset": "images/figures/lymphoid-thymus-detail.jpg",
+      "kind": "micrograph",
+      "alt": "Creator-identified mammalian thymus detail with concentric pale whorls among densely packed small nuclear profiles and an embedded 0.1 millimetre scale bar.",
+      "caption": "Creator-identified mammalian thymus. Exact species, stain and fixation are unreported. The embedded 0.1 millimetre bar is preserved; its calibration has not been independently verified.",
+      "rights": "Photograph: Josef Reischig, author archive donated by the creator’s heirs, CC BY-SA 3.0. Image bytes unchanged. Browser markers are separate, reversible overlays. The annotated specimen presentation is also offered under CC BY-SA 3.0.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "evidence": "docs/reviews/lymphoid-comparison-depth-20261107.md",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thymus_(265_25)_Mammal.jpg",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-lymphoid-organs"
+      ],
+      "resourceIds": [
+        "lymphoid-organs"
+      ],
+      "width": 1280,
+      "height": 819,
+      "src": "/images/figures/lymphoid-thymus-detail.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/lymphoid-thymus-detail.jpg",
+          "width": 1280,
+          "height": 819,
+          "bytes": 660112
+        }
+      ],
+      "modifications": "Photograph bytes unchanged. Browser markers and display zoom are separate, reversible controls. Annotated specimen presentation uses CC BY-SA 3.0.",
+      "observe": "A concentric epithelial whorl and a lymphoid follicle are different structures.",
+      "publicApproval": "Owner-authorized educational publication after rights, privacy, specimen-limit and native rendered review; full build, exact-preview CI and production checks remain release gates."
+    },
+    {
+      "id": "lymphoid-thymus-wider-field",
+      "title": "Thymus architecture: relate cortex, medulla and partitions",
+      "sourceAsset": "images/figures/lymphoid-thymus-wider-field.jpg",
+      "kind": "micrograph",
+      "alt": "Human thymus stained with H&E, showing repeated darker outer tissue around paler inner fields and branching pink connective partitions; the full organ outline is absent.",
+      "caption": "Provider-identified normal human paediatric thymus, H&E. This is a wider parenchymal field, not a complete organ section. No physical scale or fixation method is supplied. It is a different specimen from the thymus detail below.",
+      "rights": "Normal thymus. Wellcome Collection. CC0 1.0 Universal. Image bytes unchanged. Region markers are separate, reversible browser overlays.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": "docs/reviews/lymphoid-comparison-depth-20261107.md",
+      "sourceUrl": "https://wellcomecollection.org/works/nmqpb4uq",
+      "subjectIds": [
+        "histology"
+      ],
+      "topicIds": [
+        "topic-lymphoid-organs"
+      ],
+      "resourceIds": [
+        "lymphoid-organs"
+      ],
+      "width": 5175,
+      "height": 3376,
+      "src": "/images/figures/lymphoid-thymus-wider-field.jpg",
+      "variants": [
+        {
+          "src": "/images/figures/lymphoid-thymus-wider-field.jpg",
+          "width": 5175,
+          "height": 3376,
+          "bytes": 3850545
+        }
+      ],
+      "modifications": "Photograph bytes unchanged. Region markers and display enlargement are separate browser controls.",
+      "observe": "Identify the repeated outer-to-inner relationship before using a close-up feature to support the organ interpretation.",
+      "publicApproval": "Owner-authorized educational publication after rights, privacy, specimen-limit and native rendered review; full build, exact-preview CI and production checks remain release gates."
     }
   ]
 }

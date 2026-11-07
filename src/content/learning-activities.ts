@@ -92,6 +92,93 @@ export const learningActivities: LearningActivity[] = [
     ],
     model: "The notochord is axial mesoderm beneath the developing neural tissue. It helps organise developmental signalling, but the neural tube derives from neural ectoderm. Location and influence do not establish conversion of one tissue into the other.", reference: formation,
   },
+{
+  "id": "lymphoid-comparison-two-landmarks-v1",
+  "lessonId": "lymphoid-organs",
+  "kind": "explanation",
+  "objective": "Build an organ interpretation from two spatial relationships and an explicit limitation.",
+  "prompt": "Choose the thymus wider field or either detail. Describe two spatial relationships, explain the organ interpretation they support, and name evidence that this field still cannot provide.",
+  "criteria": [
+    {
+      "id": "evidence-1",
+      "label": "I described two visible relationships before giving an organ name.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    },
+    {
+      "id": "evidence-2",
+      "label": "I used the chosen specimen’s own provenance rather than borrowing a stain label.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    },
+    {
+      "id": "evidence-3",
+      "label": "I stated what a wider field or another method would need to show.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    }
+  ],
+  "model": "In the wider thymus field, relate darker peripheral tissue to a paler interior and to a connective partition; the complete outer capsule remains outside the view. In the thymus detail, relate concentric epithelial whorls to their less densely lymphoid neighbourhood. In the spleen detail, relate the vascular profile to lymphoid-rich tissue and its contrasting neighbour. These are separate specimens, not a matched zoom sequence. Keep each image’s own stain and scale record attached to it.",
+  "reference": {
+    "title": "Compare the existing lymphoid specimens and source notes",
+    "url": "https://wardhan-medical-study-guide-studios.vercel.app/library/lymphoid-organs#figure-normal-lymph-node-architecture"
+  }
+},
+{
+  "id": "lymphoid-comparison-whorl-versus-follicle-v1",
+  "lessonId": "lymphoid-organs",
+  "kind": "explanation",
+  "objective": "Distinguish a concentric epithelial whorl from a lymphoid follicle using architecture and scale.",
+  "prompt": "Compare the thymic whorl with the nodular pattern in the existing lymph-node overview. What additional view would distinguish the structures without relying on a pale centre?",
+  "criteria": [
+    {
+      "id": "evidence-1",
+      "label": "I distinguished epithelial layering from a lymphoid compartment.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    },
+    {
+      "id": "evidence-2",
+      "label": "I asked for suitable magnification and surrounding architecture.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    },
+    {
+      "id": "evidence-3",
+      "label": "I did not assign every nucleus to a B- or T-cell population.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    }
+  ],
+  "model": "Inspect the concentric epithelial organisation of the thymic profile. A secondary lymphoid follicle has a germinal centre surrounded by a mantle; a primary follicle lacks a germinal centre. Establish the surrounding organ architecture before interpreting a pale area. The existing node photograph is an overview, so it cannot supply all high-power cellular evidence.",
+  "reference": {
+    "title": "University of Leeds Histology Guide: primary and secondary lymphoid follicles",
+    "url": "https://histology.leeds.ac.uk/home/lymphoid/lymphnodes/"
+  }
+},
+{
+  "id": "lymphoid-comparison-developmental-components-v1",
+  "lessonId": "lymphoid-organs",
+  "kind": "explanation",
+  "objective": "Separate epithelial or stromal development from incoming haematopoietic populations.",
+  "prompt": "After identifying the thymic field, separate the developmental account of its epithelial support from that of its lymphocytes. Then compare the stromal origin described in the existing spleen explanation.",
+  "criteria": [
+    {
+      "id": "evidence-1",
+      "label": "I separated stromal or epithelial tissue from incoming haematopoietic cells.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    },
+    {
+      "id": "evidence-2",
+      "label": "I used the existing cited developmental account, rather than inferring ancestry from adult colour.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    },
+    {
+      "id": "evidence-3",
+      "label": "I preserved the organism and age convention of the developmental evidence.",
+      "explanation": "Compare this point with the model and the cited specimen or lesson evidence; checking the box is your own assessment."
+    }
+  ],
+  "model": "The existing lesson distinguishes human third-pouch thymic epithelium from incoming haematopoietic progenitors, and discusses splenic mesenchymal development separately. A shared adult lymphoid function does not establish one common epithelial origin. Return to the cited development sections for the evidence and its species-specific limits.",
+  "reference": {
+    "title": "Existing lymphoid lesson: sources, developmental explanations and practice",
+    "url": "https://wardhan-medical-study-guide-studios.vercel.app/library/lymphoid-organs"
+  }
+},
 ];
 
 export const activitiesForLesson = (lessonId: string) => learningActivities.filter(activity => activity.lessonId === lessonId);

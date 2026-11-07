@@ -6,6 +6,15 @@ import { createHash } from "node:crypto";
 const orientationOnly = Buffer.from("45786966000049492a0008000000010012010300010000000600000000000000", "hex");
 const reviewedProfile = "e468e89239fc0493d5e8fb9b014e91b210c6caa73c81edf04c3d21a734f377cc";
 export function validateFigureMetadata(id, metadata) {
+  if (["lymphoid-spleen-detail", "lymphoid-thymus-detail"].includes(id)) {
+    // Exact public creator, public archive URL and YCbCrPositioning only.
+    // Full JPEG hashes remain independently pinned in the public release manifest.
+    assert(!metadata.xmp && !metadata.iptc && !metadata.icc, "Unexpected lymphoid image metadata");
+    assert(metadata.exif?.equals(Buffer.from("4578696600004d4d002a000000080003010e00020000001e00000032013b00020000000f00000050021300030000000100010000000000007777772e6d616e7469732e637a2f6d696b726f666f746f677261666965004a6f7365662052656973636869670000", "hex")), "Unreviewed lymphoid EXIF");
+    assert.equal(metadata.orientation, undefined);
+    return { width: metadata.width, height: metadata.height };
+  }
+
   if (id === "ovary-cumulus-complex") {
     // Blank ImageDescription and YCbCrPositioning only; exact reviewed display variant.
     assert(!metadata.iptc && !metadata.xmp && !metadata.icc, "Unexpected ovarian metadata");

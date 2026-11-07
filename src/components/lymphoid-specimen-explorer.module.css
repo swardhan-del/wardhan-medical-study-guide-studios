@@ -28,3 +28,13 @@
   .openTargetExplorer > h2 { font-size: 1.25rem; line-height: 1.2; }
   .openTargetExplorer .description { padding-inline: 8px; }
 }
+
+/* Optional zoom is enabled only for the three reviewed comparison specimens. */
+.zoomViewport { width: 100%; min-height: 0; overflow: auto; overscroll-behavior: contain; border: 1px solid #54757a; }
+.zoomViewport:focus-visible { outline: 3px solid #ac4813; outline-offset: 4px; }
+.zoomViewport .imageFrame { max-width: none; }
+.zoomViewport .imageFrame img { max-width: none; }
+@media print {
+  .zoomViewport { overflow: visible; aspect-ratio: auto !important; border: 0; }
+  .zoomViewport .imageFrame { width: 100% !important; }
+}

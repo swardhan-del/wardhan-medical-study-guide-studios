@@ -1,12 +1,15 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type lymphoidData from "@/content/lymphoid-specimen.json";
 import type { PublicFigure } from "@/lib/figures";
 import styles from "./lymphoid-specimen-explorer.module.css";
 
-export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", introduction = "Start outside the tissue and move inward. Choose a numbered region, describe the visible pattern, then compare the interpretation. Markers indicate broad study regions, not individual cells.", licenseLabel = "CC BY 4.0 terms", imageLoading = "eager", markerMode = "number", markerLabelsBelow = [] }: { figure: PublicFigure; data: typeof lymphoidData; scope?: string; introduction?: string; licenseLabel?: string; imageLoading?: "eager" | "lazy"; markerMode?: "number" | "open-target"; markerLabelsBelow?: number[] }) {
+export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", introduction = "Start outside the tissue and move inward. Choose a numbered region, describe the visible pattern, then compare the interpretation. Markers indicate broad study regions, not individual cells.", licenseLabel = "CC BY 4.0 terms", imageLoading = "eager", markerMode = "number", markerLabelsBelow = [], zoomable = false, showResponse = true }: { figure: PublicFigure; data: typeof lymphoidData; scope?: string; introduction?: string; licenseLabel?: string; imageLoading?: "eager" | "lazy"; markerMode?: "number" | "open-target"; markerLabelsBelow?: number[]; zoomable?: boolean; showResponse?: boolean }) {
   const [selected, setSelected] = useState(0);
+  const [zoom, setZoom] = useState(1);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const frameRef = useRef<HTMLDivElement>(null);
   const [markers, setMarkers] = useState(true);
   const [response, setResponse] = useState("");
   const [comparison, setComparison] = useState(false);
@@ -16,6 +19,23 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     if (node?.complete && node.naturalWidth === 0) setUnavailable(true);
   }, []);
   const region = data.regions[selected];
+  useEffect(() => {
+    if (!zoomable || !viewportRef.current || !frameRef.current) return;
+    const viewport = viewportRef.current;
+    const frame = frameRef.current;
+    const centreSelectedRegion = () => viewport.scrollTo({
+      left: zoom === 1 ? 0 : frame.clientWidth * region.anchor.x / 100 - viewport.clientWidth / 2,
+      top: zoom === 1 ? 0 : frame.clientHeight * region.anchor.y / 100 - viewport.clientHeight / 2,
+      behavior: "instant",
+    });
+    centreSelectedRegion();
+    // Rotation, text enlargement and image loading can change the zoomed field.
+    // Observe dimensions only, so ordinary scrolling remains under student control.
+    const observer = new ResizeObserver(centreSelectedRegion);
+    observer.observe(viewport);
+    observer.observe(frame);
+    return () => observer.disconnect();
+  }, [zoomable, zoom, region]);
   const regionCount = ({3: "three", 4: "four", 5: "five"} as Record<number, string>)[data.regions.length] ?? String(data.regions.length);
   const portrait = figure.height > figure.width;
   const description = <div id={`${scope}-region-description`} className={styles.description} aria-live="polite" aria-atomic="true">
@@ -24,6 +44,14 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     <p><strong>Interpret:</strong> {region.interpretation}</p>
     <p><strong>Resolution limit:</strong> {region.limit}</p>
   </div>;
+  const specimenImage = <div ref={frameRef} className={styles.imageFrame} style={zoomable ? { width: `${zoom * 100}%` } : portrait ? {maxWidth: "28rem", marginInline: "auto"} : undefined}>
+        {unavailable ? <p role="status">The specimen image could not load. The complete descriptions below remain available. You can also open the image file or its creator’s source.</p> : <>
+          {/* Browser sizing preserves the reviewed image file; source variants are credited separately. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img ref={imageRef} src={figure.src} width={figure.width} height={figure.height} alt={figure.alt} loading={imageLoading} onError={() => setUnavailable(true)} />
+          {markers && <div className={styles.markers} aria-hidden="true">{data.regions.map((item, index) => zoomable && index !== selected ? null : markerMode === "open-target" ? <span key={item.id} className={`${styles.openTarget} ${selected === index ? styles.selectedTarget : ""}`} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}><span className={`${styles.targetLabel} ${item.anchor.x >= 80 ? styles.targetLabelLeft : ""} ${markerLabelsBelow.includes(index) ? styles.targetLabelBelow : ""}`}>{index + 1}</span></span> : <span key={item.id} className={selected === index ? styles.selectedMarker : styles.marker} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}>{index + 1}</span>)}</div>}
+        </>}
+      </div>;
   return <section className={`study-panel ${styles.explorer} ${markerMode === "open-target" ? styles.openTargetExplorer : ""}`} aria-labelledby={`${scope}-specimen-title`}>
     <p className="eyebrow">Read a real section</p>
     <h2 id={`${scope}-specimen-title`}>{data.title}</h2>
@@ -31,16 +59,15 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     <div className={styles.controls} role="group" aria-label="Specimen regions">
       {data.regions.map((item, index) => <button key={item.id} type="button" aria-pressed={selected === index} aria-controls={`${scope}-region-description`} onClick={() => setSelected(index)}>{index + 1}. {item.label}</button>)}
     </div>
+    {zoomable && <>
+      <div className={styles.controls} role="group" aria-label="Specimen zoom">
+        {[1, 2, 3].map(level => <button key={level} type="button" aria-pressed={zoom === level} onClick={() => setZoom(level)}>{level}× view</button>)}
+      </div>
+      <p id={`${scope}-zoom-help`}>Zoom centres the selected region. At 2× or 3×, scroll or use the arrow keys while the image area has focus to explore nearby tissue. Return to 1× for the complete field. Display enlargement adds no new optical detail.</p>
+    </>}
     {portrait && description}
     <figure id={`figure-${figure.id}`}>
-      <div className={styles.imageFrame} style={portrait ? {maxWidth: "28rem", marginInline: "auto"} : undefined}>
-        {unavailable ? <p role="status">The specimen image could not load. The complete descriptions below remain available. You can also open the image file or its creator’s source.</p> : <>
-          {/* Browser sizing preserves the reviewed image file; source variants are credited separately. */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img ref={imageRef} src={figure.src} width={figure.width} height={figure.height} alt={figure.alt} loading={imageLoading} onError={() => setUnavailable(true)} />
-          {markers && <div className={styles.markers} aria-hidden="true">{data.regions.map((item, index) => markerMode === "open-target" ? <span key={item.id} className={`${styles.openTarget} ${selected === index ? styles.selectedTarget : ""}`} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}><span className={`${styles.targetLabel} ${item.anchor.x >= 80 ? styles.targetLabelLeft : ""} ${markerLabelsBelow.includes(index) ? styles.targetLabelBelow : ""}`}>{index + 1}</span></span> : <span key={item.id} className={selected === index ? styles.selectedMarker : styles.marker} style={{ left: `${item.anchor.x}%`, top: `${item.anchor.y}%` }}>{index + 1}</span>)}</div>}
-        </>}
-      </div>
+      {zoomable ? <div ref={viewportRef} className={styles.zoomViewport} style={{aspectRatio: `${figure.width} / ${figure.height}`}} tabIndex={0} role="region" aria-label={`${data.title}: scrollable specimen`} aria-describedby={`${scope}-zoom-help`}>{specimenImage}</div> : specimenImage}
       <figcaption><strong>{figure.title}.</strong> {figure.caption}</figcaption>
     </figure>
     <div className={styles.controls}>
@@ -54,8 +81,8 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
     <details><summary>Read all {regionCount} region explanations</summary>
       <ol>{data.regions.map(item => <li key={item.id}><h3>{item.label}</h3><p>{item.observation}</p><p>{item.interpretation}</p><p><strong>Limit:</strong> {item.limit}</p></li>)}</ol>
     </details>
-    <noscript><p>The region buttons need JavaScript. The numbered image and all {regionCount} explanations above remain available.</p></noscript>
-    <h3>Build your practical answer</h3>
+    <noscript><p>The region buttons need JavaScript. The image and all {regionCount} explanations above remain available.</p></noscript>
+    {showResponse && <><h3>Build your practical answer</h3>
     <label htmlFor={`${scope}-specimen-response`}>Write two observations, one interpretation and one detail you still need.</label>
     <textarea id={`${scope}-specimen-response`} rows={5} maxLength={3000} value={response} onChange={event => { setResponse(event.target.value); setComparison(false); }} aria-describedby={`${scope}-response-limits`} />
     <p id={`${scope}-response-limits`}>Compare your own reasoning with the model. This does not grade your wording or make a diagnosis. Your text stays on this page and is cleared when you leave or reload.</p>
@@ -64,6 +91,6 @@ export function LymphoidSpecimenExplorer({ figure, data, scope = "lymphoid", int
       <button type="button" onClick={() => { setResponse(""); setComparison(false); }}>Clear my response</button>
     </div>
     {comparison && <div role="status" className={styles.description}><p><strong>Model reasoning:</strong> {data.model}</p><p>Check each part of your answer against the image. Additional accurate observations may also be valid.</p></div>}
-    <details><summary>Read the model without entering a response</summary><p>{data.model}</p></details>
+    <details><summary>Read the model without entering a response</summary><p>{data.model}</p></details></>}
   </section>;
 }
