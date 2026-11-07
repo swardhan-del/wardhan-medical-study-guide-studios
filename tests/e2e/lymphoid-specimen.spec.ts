@@ -1,3 +1,4 @@
+import { screenshotPanel } from "./helpers/panel-screenshot";
 import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
@@ -105,5 +106,5 @@ test("Image failure and JavaScript absence retain explanations", async ({page,br
   await plain.getByText("Read all four region explanations",{exact:true}).click();for(const r of specimen.regions)await expect(plain.locator(panelSelector).getByText(r.interpretation,{exact:true}).last()).toBeVisible();
   await plain.getByText("Read the model without entering a response",{exact:true}).click();await expect(plain.getByText(specimen.model,{exact:true})).toBeVisible();
   await expect(plain.locator(`${panelSelector} noscript`)).toBeVisible();
-  await plain.locator(panelSelector).screenshot({path:info.outputPath("lymphoid-no-javascript.png")});await context.close();
+  await screenshotPanel(plain.locator(panelSelector),info.outputPath("lymphoid-no-javascript.png"));await context.close();
 });

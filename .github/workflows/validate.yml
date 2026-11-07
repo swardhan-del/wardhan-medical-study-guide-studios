@@ -20,4 +20,24 @@ jobs:
       - run: npm run build
       - run: npm run typecheck
       - run: npx playwright install --with-deps chromium
+      # Fail early on the long-form specimen/resume regressions before the full suite.
+      - name: Check specimen capture and course resume
+        run: >-
+          npx playwright test
+          tests/e2e/brain-csf-depth.spec.ts tests/e2e/lymphoid-specimen.spec.ts
+          tests/e2e/mammary-depth.spec.ts tests/e2e/reproductive-depth.spec.ts
+          tests/e2e/physiology-curriculum.spec.ts
+          --project=desktop --project=mobile
+          --grep 'Specimen regions keep|Image failure and JavaScript absence|independent specimen controls|specimen regions and local answer|physiology Full Course'
+          --output="${{ runner.temp }}/checkpoint-regressions"
       - run: npm run test:e2e
+      - name: Preserve failing browser evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-failure-evidence
+          path: |
+            ${{ runner.temp }}/checkpoint-regressions
+            test-results
+          retention-days: 7
+          if-no-files-found: ignore

@@ -1,3 +1,4 @@
+import { screenshotPanel } from "./helpers/panel-screenshot";
 import { showAllPractice } from "./helpers/practice-view";
 import {test, expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
@@ -23,7 +24,7 @@ test('Specimen regions keep the original labels and local typed comparison',asyn
  await page.goto(route);const panel=page.locator(panelSelector);await page.getByRole('link',{name:'Read the specimen',exact:true}).click();await expect(panel.locator('img')).toHaveCount(1);await expect(panel).toContainText('original photograph’s text and arrows');
  for(const [i,r] of specimen.regions.entries()){const b=panel.getByRole('button',{name:`${i+1}. ${r.label}`,exact:true});await b.focus();await page.keyboard.press('Enter');await expect(b).toHaveAttribute('aria-pressed','true');await expect(page.locator('#brain-csf-region-description')).toContainText(r.observation);}
  await panel.getByRole('button',{name:'Hide region markers',exact:true}).click();await expect(panel.locator('[class*="markers"]')).toHaveCount(0);await expect(panel.locator('img')).toBeVisible();
- await panel.locator('textarea').fill('The pale vascular core is enclosed by an epithelial layer; the outer surface faces CSF.');await panel.getByRole('button',{name:'Compare with model reasoning',exact:true}).click();await expect(panel.getByRole('status')).toContainText(specimen.model);await panel.getByRole('button',{name:'Clear my response',exact:true}).click();await expect(panel.locator('textarea')).toHaveValue('');await panel.locator('textarea').fill('Transient response');await page.reload();await showAllPractice(page);await expect(panel.locator('textarea')).toHaveValue('');await panel.screenshot({path:info.outputPath('brain-csf-specimen.png')});
+ await panel.locator('textarea').fill('The pale vascular core is enclosed by an epithelial layer; the outer surface faces CSF.');await panel.getByRole('button',{name:'Compare with model reasoning',exact:true}).click();await expect(panel.getByRole('status')).toContainText(specimen.model);await panel.getByRole('button',{name:'Clear my response',exact:true}).click();await expect(panel.locator('textarea')).toHaveValue('');await panel.locator('textarea').fill('Transient response');await page.reload();await showAllPractice(page);await expect(panel.locator('textarea')).toHaveValue('');await screenshotPanel(panel,info.outputPath('brain-csf-specimen.png'));
 });
 
 test('Every compartment is reachable by keyboard and route changes reset its selection',async({page})=>{

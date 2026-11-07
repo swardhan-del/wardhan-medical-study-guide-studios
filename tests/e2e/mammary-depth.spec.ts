@@ -1,3 +1,4 @@
+import { screenshotPanel } from "./helpers/panel-screenshot";
 import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
@@ -48,7 +49,7 @@ test('Mammary depth: independent specimen controls, keyboard and temporary answe
     await panel.locator('textarea').fill(`temporary-mammary-response-${e.scope}`);
     await panel.getByRole('button', { name: 'Compare with model reasoning', exact: true }).click();
     await expect(panel.getByRole('status')).toContainText(e.data.model);
-    await panel.screenshot({ path: info.outputPath(`${e.scope}.png`) });
+    await screenshotPanel(panel, info.outputPath(`${e.scope}.png`));
   }
   expect(await page.evaluate(() => JSON.stringify(localStorage))).not.toContain('temporary-mammary-response');
   expect(sent).toEqual([]);

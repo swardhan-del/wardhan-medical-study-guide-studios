@@ -1,3 +1,4 @@
+import { screenshotPanel } from "./helpers/panel-screenshot";
 import { showAllPractice } from "./helpers/practice-view";
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
@@ -26,7 +27,7 @@ test('Reproductive depth: specimen regions and local answer comparison',async({p
  await panel.getByRole('button',{name:'Hide region markers',exact:true}).click();await expect(panel.locator('[class*="markers"]')).toHaveCount(0);await panel.getByRole('button',{name:'Show region markers',exact:true}).click();
  await panel.locator('textarea').fill('temporary-reproductive-response: the tall lining differs from the small vascular profile.');await panel.getByRole('button',{name:'Compare with model reasoning',exact:true}).click();await expect(panel.getByRole('status')).toContainText(specimen.model);
  expect(await page.evaluate(()=>JSON.stringify(localStorage))).not.toContain('temporary-reproductive-response');expect(sent).toEqual([]);
- await panel.getByRole('button',{name:'Clear my response',exact:true}).click();await expect(panel.locator('textarea')).toHaveValue('');await panel.locator('textarea').fill('temporary-reproductive-response');await page.reload();await showAllPractice(page);await expect(panel.locator('textarea')).toHaveValue('');await panel.screenshot({path:info.outputPath('reproductive-specimen.png')});
+ await panel.getByRole('button',{name:'Clear my response',exact:true}).click();await expect(panel.locator('textarea')).toHaveValue('');await panel.locator('textarea').fill('temporary-reproductive-response');await page.reload();await showAllPractice(page);await expect(panel.locator('textarea')).toHaveValue('');await screenshotPanel(panel,info.outputPath('reproductive-specimen.png'));
 });
 
 test('Reproductive depth: maps distinguish sequence from developmental contributors',async({page})=>{
