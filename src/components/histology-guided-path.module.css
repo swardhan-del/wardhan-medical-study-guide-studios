@@ -16,6 +16,13 @@
 .caseStep { margin-block: 1.5rem; }
 .caseStep ul { padding-left: 1.25rem; }
 .caseStep li { margin-block: .75rem; }
+@media (max-width: 480px) {
+  /* Keep room for enlarged text instead of scaling nested padding with it. */
+  .stages > li { padding: 12px; }
+  .goal { padding: 8px 12px; }
+  .stages > li > ul { padding-left: 20px; }
+  .questions ol, .caseStep ul { padding-left: 24px; }
+}
 @media print {
   .stages > li { background: none; padding: .75rem; }
   .stageLinks { display: none; }
