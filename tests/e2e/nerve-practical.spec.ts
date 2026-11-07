@@ -58,20 +58,35 @@ test('Nerve practical: all regions have independent keyboard controls and tempor
   await page.reload(); for (const entry of specimens) await expect(page.locator(`#${entry.scope}-specimen-response`)).toHaveValue('');
 });
 
-test('Nerve practical: all eight original tasks explain correct and incorrect choices and persist', async ({ page }) => {
+// Give each student task the normal deadline while retaining all four choices
+// and its reload check. One 32-choice scenario can exhaust the entire deadline.
+for (const app of questions) test(`Nerve practical: ${app.id} explains every choice and persists`, async ({ page }) => {
   expect(questions).toHaveLength(8); await page.goto(route); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
   await expect(page.locator('.practice-question:visible')).toHaveCount(13);
+  const q = page.locator('#question-' + app.id); await expect(q.getByRole('button', { name: 'Check answer', exact: true })).toBeDisabled();
+  for (const [i, option] of app.options!.entries()) {
+    await q.getByRole('radio', { name: option.text, exact: true }).check(); await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await expect(q.locator('[data-feedback]')).toHaveAttribute('data-feedback', i === app.answer ? 'correct' : 'incorrect');
+    await expect(q).toContainText(option.explanation!); await q.getByRole('button', { name: 'Try without feedback', exact: true }).click();
+  }
+  await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check(); await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+  await page.reload(); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
+  await expect(page.locator('#question-' + app.id).getByRole('radio', { name: app.options![app.answer!].text, exact: true })).toBeChecked();
+});
+
+test('Nerve practical: answers to all eight tasks persist together', async ({ page }) => {
+  expect(questions).toHaveLength(8);
+  await page.goto(route); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
   for (const app of questions) {
-    const q = page.locator('#question-' + app.id); await expect(q.getByRole('button', { name: 'Check answer', exact: true })).toBeDisabled();
-    for (const [i, option] of app.options!.entries()) {
-      await q.getByRole('radio', { name: option.text, exact: true }).check(); await q.getByRole('button', { name: 'Check answer', exact: true }).click();
-      await expect(q.locator('[data-feedback]')).toHaveAttribute('data-feedback', i === app.answer ? 'correct' : 'incorrect');
-      await expect(q).toContainText(option.explanation!); await q.getByRole('button', { name: 'Try without feedback', exact: true }).click();
-    }
-    await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check(); await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+    const q = page.locator('#question-' + app.id);
+    await q.getByRole('radio', { name: app.options![app.answer!].text, exact: true }).check();
+    await q.getByRole('button', { name: 'Check answer', exact: true }).click();
+    await expect(q.locator('[data-feedback]')).toHaveAttribute('data-feedback', 'correct');
   }
   await page.reload(); await page.getByRole('button', { name: 'Show all questions', exact: true }).click();
-  for (const app of questions) await expect(page.locator('#question-' + app.id).getByRole('radio', { name: app.options![app.answer!].text, exact: true })).toBeChecked();
+  for (const app of questions) {
+    await expect(page.locator('#question-' + app.id).getByRole('radio', { name: app.options![app.answer!].text, exact: true })).toBeChecked();
+  }
 });
 
 test('Nerve practical: exact credited images download once and retain their source bytes', async ({ page, request }) => {
