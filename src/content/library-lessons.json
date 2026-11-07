@@ -4508,6 +4508,41 @@
         {
           "title": "Separate coupled processes",
           "body": "NADH and FAD-linked reducing equivalents support respiratory-chain electron transfer. Oxygen is the terminal electron acceptor of that chain, not a direct substrate in each TCA reaction. Sustained oxidative flux nevertheless depends on reoxidation of the reduced carriers."
+        },
+        {
+          "title": "Set the boundary before counting carbon",
+          "body": "Follow the carbon originally present in pyruvate. Each completed PDH reaction sends one of its three carbons into carbon dioxide and retains two in the acetyl group transferred to CoA. The CoA molecule already contains its own carbon atoms; the two-carbon label describes its newly acquired acetyl group, not the entire acetyl-CoA molecule. For four completed reactions, twelve pyruvate-derived carbons become four in CO2 and eight in four acetyl groups. This is reaction bookkeeping, not a measurement of how rapidly a tissue is running the pathway. It also stops before the subsequent fate of acetyl-CoA in the TCA cycle or another pathway.",
+          "highlight": "Count substrate-derived carbon separately from the carrier molecule."
+        },
+        {
+          "title": "E1 couples decarboxylation to loading the attached carrier",
+          "body": "E1 uses thiamine diphosphate, also called TPP, during pyruvate decarboxylation and transfer of the remaining carbon unit to the E2-associated lipoyl group. Its acceptor is a lipoyl group attached to a lysine residue in E2, not a free pool of lipoamide. After this part of the sequence, carbon dioxide has left and an acetyl group is carried on a reduced lipoyl arm. TPP and the lipoyl group have different jobs: one participates at the E1 catalytic site, while the other carries the group between catalytic components. Keeping their locations distinct explains why listing five cofactor names is less useful than tracing what each one does.",
+          "highlight": "Track where the group is attached, not only which cofactor name appears."
+        },
+        {
+          "title": "E2 transfers the acetyl group without replacing its lipoyl arm",
+          "body": "The acetyltransferase step passes the acetyl group from the E2-linked carrier to the sulfhydryl group of CoA. Acetyl-CoA can then leave, while the lipoyl arm remains attached to the enzyme in its reduced state. CoA is therefore a separate acceptor, not another name for the lipoyl group. The two participate in different bonds and have different destinations after transfer. A reaction arrow written in a nomenclature entry may be oriented differently from a pathway diagram; read the stated physiological direction and substrate names. For this PDH sequence, follow the acetyl group toward CoA.",
+          "highlight": "Product release and carrier regeneration are separate events."
+        },
+        {
+          "title": "E3 resets the redox state so the carrier can be used again",
+          "body": "After acetyl transfer, the reduced lipoyl carrier must regain its oxidised disulfide state. E3 performs this redox step using its FAD cofactor and transfers reducing equivalents to NAD+, producing NADH. The lipoyl carrier is reused; it is not consumed once for every pyruvate. FAD participates within the enzyme, whereas NADH is a net soluble product of the complete reaction. This distinction prevents an incorrect net ledger that counts one released FADH2 as an additional product of PDH. In a deliberately simplified model where E3 alone is blocked, available carrier can become trapped in the reduced state, limiting repeated turnover even though the carbon-transfer machinery is still present.",
+          "highlight": "Regenerating the carrier enables repeated catalytic cycles."
+        },
+        {
+          "title": "Read a molecular picture as an evidence-based model",
+          "body": "The complex brings several catalytic activities and mobile carrier domains into one assembly. Structural studies often resolve parts using different methods and combine them into an overall interpretation. A flexible connector can be absent from atomic coordinates yet included schematically in an illustration. That does not mean the connector is absent from the biological assembly. Likewise, the number and arrangement of subunits in one bacterial or reconstructed model should not be silently assigned to every human complex. When studying a structure, identify the organism, which components were experimentally resolved, and which connections were inferred or drawn for explanation.",
+          "highlight": "An unresolved flexible segment is not proof that the biological segment is missing."
+        },
+        {
+          "title": "Separate phosphorylation state from pathway flux",
+          "body": "PDK enzymes phosphorylate regulatory serines on E1 and inhibit its activity; PDP enzymes remove those phosphates. The isoforms differ in regulation, and a single whole-body active/inactive slogan loses that context. Even an assay showing more dephosphorylated enzyme does not, by itself, measure acetyl-CoA production in intact tissue. Substrate availability, redox conditions, enzyme amount and other coupled reactions still matter. State the tissue and conditions, then distinguish the measured enzyme state from a measured rate. An acetyl-CoA pool also receives and loses material through other reactions, so its concentration alone does not identify the contribution from pyruvate.",
+          "highlight": "An enzyme-state measurement is not a complete metabolic flux measurement."
+        },
+        {
+          "title": "Design a comparison that answers one mechanistic question",
+          "body": "For a hypothetical purified-system comparison, hold enzyme amount and the stated reaction conditions constant, change one component, and specify the readout. A lower NADH signal could reflect a change anywhere upstream of NADH formation or an interference with the detection method. It does not uniquely identify an E3 defect. A component-specific activity measurement, a suitable detection control and a restoration experiment would test different alternatives. Distinguish this reasoning exercise from a published experiment: no invented dataset is presented as a research result, and a biochemical change is not automatically a diagnosis or a treatment effect.",
+          "highlight": "Match the conclusion to the measurement and its controls."
         }
       ],
       "question": {
@@ -4537,8 +4572,28 @@
         "lipid-metabolism",
         "enzyme-kinetics"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 5
+      "updatedAt": "2026-11-07",
+      "minutes": 22,
+      "objectives": [
+        "Conserve pyruvate-derived carbon while separating it from carrier carbon.",
+        "Distinguish E1 loading, E2 transfer and E3 carrier regeneration.",
+        "Explain why carrier reuse differs from release of a net reaction product.",
+        "Separate enzyme-state, structural and flux measurements when interpreting evidence."
+      ],
+      "prerequisites": [
+        "glycolysis",
+        "enzyme-kinetics"
+      ],
+      "workedExample": {
+        "title": "Keep the carbon ledger separate from an activity measurement",
+        "prompt": "A hypothetical purified system completes four PDH reactions. Account for the pyruvate-derived carbon, identify the net reduced electron carrier, and explain whether these counts determine a reaction rate.",
+        "solution": [
+          "Start with four three-carbon pyruvate molecules: 4 × 3 = 12 tracked carbon atoms. The carbon already present in CoA is outside this ledger.",
+          "Each completed reaction releases one carbon as CO₂ and transfers a two-carbon acetyl group to CoA. Four reactions therefore account for 4 carbons in CO₂ and 8 in acetyl groups: 12 = 4 + 8.",
+          "The complete reaction also produces four NADH molecules. E3-associated FAD participates in carrier regeneration; do not add four released FADH₂ molecules to the net product ledger.",
+          "A count of completed reactions does not specify elapsed time, enzyme amount or tissue conditions. It cannot establish a metabolic flux, tissue diagnosis or response to treatment."
+        ]
+      }
     },
     {
       "id": "lipid-metabolism",

@@ -5695,6 +5695,126 @@
           "microscopy"
         ]
       }
+    },
+    {
+      "lessonId": "pdh-tca",
+      "title": "Pyruvate dehydrogenase and the TCA cycle",
+      "subject": "biochemistry",
+      "topic": "Carbon transfer, carrier regeneration and evidence boundaries",
+      "slug": "pdh-tca",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Conserve pyruvate-derived carbon while separating it from carrier carbon.",
+        "Distinguish E1 loading, E2 transfer and E3 carrier regeneration.",
+        "Explain why carrier reuse differs from release of a net reaction product.",
+        "Separate enzyme-state, structural and flux measurements when interpreting evidence."
+      ],
+      "sources": [
+        {
+          "title": "IUBMB: pyruvate dehydrogenase system",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/104.html",
+          "publisherOrAuthor": "IUBMB Enzyme Nomenclature",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "IUBMB: E1 acetyl-transferring activity",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/4/1.html",
+          "publisherOrAuthor": "IUBMB Enzyme Nomenclature",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "IUBMB: E2 acetyltransferase",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/12.html",
+          "publisherOrAuthor": "IUBMB Enzyme Nomenclature",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "IUBMB: dihydrolipoyl dehydrogenase",
+          "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/8/1/4.html",
+          "publisherOrAuthor": "IUBMB Enzyme Nomenclature",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Reactome: human E1 reaction",
+          "url": "https://reactome.org/content/detail/R-HSA-9861734",
+          "publisherOrAuthor": "Reactome curated human pathway record",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Reactome: human DLAT transfer",
+          "url": "https://reactome.org/content/detail/R-HSA-9861667",
+          "publisherOrAuthor": "Reactome curated human pathway record",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Reactome: DLD carrier regeneration",
+          "url": "https://reactome.org/content/detail/R-HSA-9861616",
+          "publisherOrAuthor": "Reactome curated human pathway record",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Reactome: PDK phosphorylation of E1",
+          "url": "https://reactome.org/content/detail/R-HSA-203946",
+          "publisherOrAuthor": "Reactome curated human pathway record",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Reactome: PDP-mediated phosphate removal",
+          "url": "https://reactome.org/content/detail/R-HSA-204169",
+          "publisherOrAuthor": "Reactome curated human pathway record",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "RCSB PDB-101: multienzyme architecture",
+          "url": "https://pdb101.rcsb.org/motm/153",
+          "publisherOrAuthor": "RCSB PDB-101",
+          "accessedAt": "2026-11-07",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original schematic follows substrate-derived carbon, attached carrier and electron-transfer roles through four stages. It is not an atomic structure, kinetic simulation or clinical tool. Native keyboard, no-JavaScript and 320px doubled-text views were checked; no third-party image is added.",
+      "assessmentStatus": "reviewed",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-07",
+      "nextReviewAt": "2027-05-07",
+      "limitations": [
+        "Original conceptual and stoichiometric model, not an atomic structure, kinetic simulation or clinical assessment.",
+        "Native integration is under review; no independent medical or human accessibility certification is claimed."
+      ],
+      "reviewEvidenceIds": [
+        "pdh-mechanism-editorial-20261107",
+        "pdh-mechanism-visual-20261107",
+        "pdh-mechanism-assessment-20261107",
+        "pdh-mechanism-accessibility-20261107",
+        "pdh-mechanism-readability-20261107"
+      ],
+      "links": {
+        "prerequisite": [
+          "glycolysis",
+          "enzyme-kinetics"
+        ],
+        "related": [
+          "glycolysis",
+          "lipid-metabolism",
+          "enzyme-kinetics"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

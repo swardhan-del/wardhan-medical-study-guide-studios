@@ -971,7 +971,49 @@
   "pdh-tca": {
     "title": "OpenStax: Pyruvate oxidation and the citric acid cycle",
     "url": "https://openstax.org/books/biology-2e/pages/7-3-oxidation-of-pyruvate-and-the-citric-acid-cycle",
-    "checkedAt": "2026-09-07"
+    "checkedAt": "2026-11-07",
+    "supportingReferences": [
+      {
+        "title": "IUBMB: pyruvate dehydrogenase system",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/104.html"
+      },
+      {
+        "title": "IUBMB: E1 acetyl-transferring activity",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/4/1.html"
+      },
+      {
+        "title": "IUBMB: E2 acetyltransferase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/12.html"
+      },
+      {
+        "title": "IUBMB: dihydrolipoyl dehydrogenase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/8/1/4.html"
+      },
+      {
+        "title": "Reactome: human E1 reaction",
+        "url": "https://reactome.org/content/detail/R-HSA-9861734"
+      },
+      {
+        "title": "Reactome: human DLAT transfer",
+        "url": "https://reactome.org/content/detail/R-HSA-9861667"
+      },
+      {
+        "title": "Reactome: DLD carrier regeneration",
+        "url": "https://reactome.org/content/detail/R-HSA-9861616"
+      },
+      {
+        "title": "Reactome: PDK phosphorylation of E1",
+        "url": "https://reactome.org/content/detail/R-HSA-203946"
+      },
+      {
+        "title": "Reactome: PDP-mediated phosphate removal",
+        "url": "https://reactome.org/content/detail/R-HSA-204169"
+      },
+      {
+        "title": "RCSB PDB-101: multienzyme architecture",
+        "url": "https://pdb101.rcsb.org/motm/153"
+      }
+    ]
   },
   "lipid-metabolism": {
     "title": "OpenStax: Lipid metabolism",
