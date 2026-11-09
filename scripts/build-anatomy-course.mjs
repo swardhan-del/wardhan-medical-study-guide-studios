@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join, relative } from 'node:path';
+import { resolveLessonStepBodies } from './library-schema.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = path => JSON.parse(readFileSync(join(root, path), 'utf8'));
 const check = process.argv.includes('--check');
@@ -11,7 +12,9 @@ const emit = (path, value) => {
 };
 const folders = readdirSync(join(root, 'content/anatomy')).filter(f => f.startsWith('volume-')).sort();
 const files = folders.flatMap(folder => readdirSync(join(root, 'content/anatomy', folder)).filter(f => f.endsWith('.json')).sort().map(f => join('content/anatomy', folder, f)));
-const course = files.map(read);
+const authored = files.map(read);
+const resolvedLessons = resolveLessonStepBodies(authored.map(record => record.lesson));
+const course = authored.map((record, index) => ({ ...record, lesson: resolvedLessons[index] }));
 const expected = [18, 22, 18, 30, 32];
 const ids = new Set(course.map(r => r.lesson.id));
 if (ids.size !== 120) throw Error('Course must have 120 unique lessons');
