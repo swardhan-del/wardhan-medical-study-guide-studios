@@ -55,8 +55,8 @@ export const beginnerSequences: Record<string, { title: string; href: string }[]
 export function studentEntryPaths(subject?: string, combinedGenetics = false) {
   if (!subject) return {
     begin: "/start#choose-subject",
-    concept: "/library",
-    practice: "/subjects",
+    concept: "/library?mode=concept",
+    practice: "/library?mode=exam",
     preparation: "Choose a subject and its starting lesson. Available collections do not cover an entire university syllabus.",
     prerequisite: null as { title: string; href: string } | null,
   };
@@ -69,9 +69,9 @@ export function studentEntryPaths(subject?: string, combinedGenetics = false) {
   const first = subsetStarts[subject] ?? beginnerSequences[subject]?.[0];
   if (!first) return null;
   return {
-    begin: subject === "cell-biology" ? "/learn/foundations/cell-biology" : first.href,
-    concept: `/library?subject=${subject === "genetics" && combinedGenetics ? "genetics-all" : subject}`,
-    practice: `${first.href}#concept-check-title`,
+    begin: ({ physiology: "/learn/topics/membrane-transport", biophysics: "/learn/topics/membrane-transport", histology: "/learn/topics/tissue-identification", "histology-i": "/learn/topics/tissue-identification", biochemistry: "/learn/topics/enzyme-kinetics" } as Record<string, string>)[subject] ?? (subject === "cell-biology" ? "/learn/foundations/cell-biology" : first.href + "#lesson-objectives"),
+    concept: `/library?mode=concept&subject=${subject === "genetics" && combinedGenetics ? "genetics-all" : subject}`,
+    practice: `/library?mode=exam&subject=${subject === "genetics" && combinedGenetics ? "genetics-all" : subject}`,
     preparation: subject === "histology-ii"
       ? "Start the available nervous-tissue lessons. Use the shared basic-tissue introduction if the terminology is unfamiliar."
       : subject === "immunology"

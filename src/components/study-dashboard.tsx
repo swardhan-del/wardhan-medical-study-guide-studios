@@ -91,7 +91,7 @@ export function StudyDashboard() {
           <span>Study days</span>
         </div>
       </div>
-      <section className="study-panel">
+      <section className="study-panel" id="practice-review">
         <p className="eyebrow">Your next ten minutes</p>
         <h2>
           {due.length

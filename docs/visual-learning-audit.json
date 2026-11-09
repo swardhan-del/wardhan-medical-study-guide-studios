@@ -1627,11 +1627,13 @@
       "route": "/library/biophysics-action-potentials",
       "title": "Action potentials and impulse propagation",
       "kind": "Study lesson",
-      "action": "retain-text-practice",
+      "action": "standardise-or-reuse",
       "components": [],
       "visualIds": [],
-      "figureIds": [],
-      "rationale": "Retain the explained steps and worked questions for this task: Separate regenerative signalling from passive current spread. An additional static illustration is optional for this entry lesson; do not insert a decorative or unverified image."
+      "figureIds": [
+        "neuronal-conductance"
+      ],
+      "rationale": "Reuse the existing released neuronal-conductance schematic with its text equivalent and model limitations to connect propagation and channel-state reasoning; no new asset or duplicate diagram."
     },
     {
       "id": "biophysics-atomic-models",

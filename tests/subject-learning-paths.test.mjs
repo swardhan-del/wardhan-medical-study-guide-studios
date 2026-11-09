@@ -18,14 +18,14 @@ test('student entry modes reuse released lessons and preserve separate subject f
   for (const subject of [...Object.keys(studyPaths), 'histology-i', 'histology-ii', 'immunology', 'biostatistics']) {
     const entry = studentEntryPaths(subject);
     assert(entry, subject);
-    assert.equal(entry.concept, `/library?subject=${subject}`);
-    const practiceId = entry.practice.match(/^\/library\/([^#]+)#concept-check-title$/)?.[1];
-    assert(practiceId && release.has(practiceId) && byId.has(practiceId), subject);
-    if (subject !== 'cell-biology') assert.equal(entry.begin, `/library/${practiceId}`);
+    assert.equal(entry.concept, `/library?mode=concept&subject=${subject}`);
+    assert.equal(entry.practice, `/library?mode=exam&subject=${subject}`);
+    if (entry.begin.startsWith('/library/')) assert(release.has(entry.begin.split('/').pop().split('#')[0]));
+    else if (entry.begin.startsWith('/learn/topics/')) assert(topicGuides.some(g => entry.begin.endsWith(g.slug)));
     assert(entry.preparation.length > 50);
   }
   assert.equal(studentEntryPaths('cell-biology').begin, '/learn/foundations/cell-biology');
-  assert.equal(studentEntryPaths('genetics', true).concept, '/library?subject=genetics-all');
+  assert.equal(studentEntryPaths('genetics', true).concept, '/library?mode=concept&subject=genetics-all');
   assert.equal(studentEntryPaths('histology-ii').prerequisite.href, '/library/histology-foundations-tissues');
   assert.equal(studentEntryPaths('unknown-subject'), null);
   assert.equal(studentEntryPaths().begin, '/start#choose-subject');
@@ -158,4 +158,22 @@ test('approved flagship teaching remains unchanged after the reviewed Histology 
     }
     assert.equal(createHash('sha256').update(JSON.stringify(record)).digest('hex'), hash, id);
   }
+});
+
+test('natural-language discovery resolves existing concepts without a parallel answer database', async () => {
+  const { conceptLessonIds, conceptExamples } = await import('../src/lib/concept-discovery.ts');
+  const expected = ['membrane-potentials','cardiac-output','vessel-histology','enzyme-kinetics','ventilation-perfusion'];
+  conceptExamples.forEach((query, i) => { const ids = conceptLessonIds(query); assert(ids.includes(expected[i])); for (const id of ids) assert(byId.has(id)); });
+  assert.deepEqual(conceptLessonIds('Which surgery cures this?'), []);
+  assert.deepEqual(conceptLessonIds('How is an unsupported concept explained?'), []);
+});
+
+test('pilot quantitative examples state the model, unit cancellation and limits', () => {
+  for (const id of ['fluid-and-membrane-transport','biophysics-diffusion-osmosis','biophysics-resting-potential','membrane-potentials','biophysics-action-potentials','enzyme-kinetics']) {
+    const l=byId.get(id); assert(l.objectives.length>=3);assert(l.prerequisites.every(id=>byId.has(id)));assert(l.workedExample.solution.length>=3);assert(l.summaryChecklist.length>=3);
+  }
+  assert.equal(100**2/(2*100),50); assert.equal(.12/.003,40);
+  assert.equal(120*1/(2+1),40);assert.equal(120/(4+1),24);assert.equal(60/(2+1),20);
+  assert.match(byId.get('enzyme-kinetics').steps[2].body,/equal inhibitory effects/);
+  assert.match(byId.get('biophysics-resting-potential').steps[2].body,/nS × mV gives pA/);
 });

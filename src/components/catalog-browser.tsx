@@ -1,4 +1,5 @@
 "use client";
+import { conceptLessonIds, conceptExamples, type ConceptLink } from "@/lib/concept-discovery";
 import { useLearning } from "./learning-store";
 import Link from "next/link";
 import { SaveButton } from "./save-button";
@@ -16,6 +17,8 @@ type Props = {
   savedOnly?: boolean;
   initialSubject?: string;
   initialQuery?: string;
+  conceptMode?: boolean;
+  conceptLinks?: ConceptLink[];
 };
 export function CatalogBrowser({
   records,
@@ -23,6 +26,8 @@ export function CatalogBrowser({
   savedOnly = false,
   initialSubject = "",
   initialQuery = "",
+  conceptMode = false,
+  conceptLinks = [],
 }: Props) {
   const searchInput = useRef<HTMLInputElement>(null);
   const { data, ready: progressReady } = useLearning();
@@ -52,6 +57,7 @@ export function CatalogBrowser({
         : searchRank(b, query) - searchRank(a, query) || a.title.localeCompare(b.title),
     );
   const suggestion = query && !filtered.length ? suggestQuery(scoped.map(r => catalogSearchText(r)), query) : null;
+  const conceptMatches = conceptMode && query.trim() ? conceptLessonIds(query).flatMap(id => { const record = scoped.find(r => r.id === id && r.status === "public"); const link = conceptLinks.find(l => l.id === id); return record && link ? [{ record, link }] : []; }) : [];
   const hasFilters = Boolean(query || subject || format || progress);
   const availableFormats = [
     ...new Set(
@@ -72,15 +78,19 @@ export function CatalogBrowser({
   }
   return (
     <div className="catalog-browser">
-      <div
+      {conceptMode && <section className="study-panel" aria-label="Concept discovery"><p>Describe what is confusing. Related lesson suggestions point to existing explanations; they do not generate an answer or establish that every part of your question is covered.</p><details><summary>Try a study question</summary><ul>{conceptExamples.map(example => <li key={example}><Link href={`/library?mode=concept&q=${encodeURIComponent(example)}`}>{example}</Link></li>)}</ul></details></section>}
+      <form action="/library" method="get"
         className="catalog-controls"
         role="search"
         aria-label="Filter study resources"
+        onSubmit={event => { event.preventDefault(); setVisibleCount(18); }}
       >
+        {conceptMode && <input type="hidden" name="mode" value="concept" />}
         <label className="search-field">
           Search resources
           <input
             ref={searchInput}
+            name="q"
             type="search"
             maxLength={200}
             value={query}
@@ -94,6 +104,7 @@ export function CatalogBrowser({
         <label>
           Subject
           <select
+            name="subject"
             aria-label="Subject"
             value={subject}
             onChange={(event) => {
@@ -141,7 +152,10 @@ export function CatalogBrowser({
           </select>
         </label>
         {records.some(record => record.status === "public" && record.kind === "Study lesson") && <label>Lesson progress<select aria-label="Lesson progress" value={progress} disabled={!progressReady} onChange={event => { setProgress(event.target.value); setVisibleCount(18); }}><option value="">All resources</option><option value="new">Lessons not started</option><option value="started">Lessons in progress</option><option value="complete">Lessons marked complete</option></select></label>}
-      </div>
+        <button className="button button-secondary" type="submit">Search resources</button>
+      </form>
+      <noscript><p>Submit the search form to filter the server-rendered results. Interactive checks and saved progress require JavaScript; explanations and model reasoning remain readable.</p></noscript>
+      {conceptMode && query && <section className="study-panel" aria-labelledby="concept-matches-title"><h2 id="concept-matches-title">Related explanations to start with</h2>{conceptMatches.length ? <ul>{conceptMatches.map(({ record, link }) => <li key={record.id}><h3><Link href={`/library/${record.id}#concept-map-title`}>{record.title}</Link></h3><p>{record.summary}</p>{link.prerequisites.length > 0 && <p>Prepare with: {link.prerequisites.map(p => <Link key={p.id} href={`/library/${p.id}#lesson-objectives`}>{p.title} · </Link>)}</p>}<div className="action-row">{link.worked && <Link href={`/library/${record.id}#worked-example-heading`}>Try the worked example</Link>}<Link href={`/library/${record.id}#concept-check-title`}>Check the relationship</Link><Link href={`/library/${record.id}#lesson-source`}>Check sources and scope</Link></div></li>)}</ul> : <p>No curated concept match is available for this question in the selected subject. Keyword results below may help, but are not a verified answer. Try the central scientific term or another subject.</p>}</section>}
       <div className="catalog-summary">
         <p role="status" aria-live="polite">
           {savedOnly && !ready

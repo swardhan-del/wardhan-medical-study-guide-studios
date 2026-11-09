@@ -40,7 +40,10 @@ test('guided lessons require valid prerequisites and complete worked reasoning',
 test('new guided lessons have explicit references and explanations for every option',()=>{
   const refs=read('lesson-references');
   for(const lesson of lessons.lessons.filter(l=>l.workedExample)){
-    assert(refs[lesson.id]);assert(lesson.steps.length>=4);
+    assert(refs[lesson.id]);
+    // A worked example can extend an existing three-concept lesson; section counts
+    // are not evidence of teaching depth. Require substantive explanation in every step.
+    assert(lesson.steps.length > 0 && lesson.steps.every(step => step.title && step.body.length > 40));
     assert(lesson.question.options.every(o=>o.reason.length>30));
   }
 });
