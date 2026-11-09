@@ -74,7 +74,9 @@ for (const slug of ['membrane-transport', 'tissue-identification', 'enzyme-kinet
     await page.goto(`/learn/topics/${slug}`);
     await page.getByRole('link', { name: `Study ${first.title}`, exact: true }).click();
     await showAllPractice(page);
-    const question = page.locator('#concept-check-title:visible');
+    // Revision mode exposes every checkpoint; submit only the canonical first
+    // question so timing cannot make the button selector match six questions.
+    const question = page.locator(`#question-concept-${first.id}:visible`);
     await question.getByRole('radio', { name: first.question.options[first.question.answer].text, exact: true }).check();
     await question.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
     await expect(question.getByRole('status')).toContainText('Correct');
