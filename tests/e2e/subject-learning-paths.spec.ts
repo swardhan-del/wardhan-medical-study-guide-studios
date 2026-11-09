@@ -305,5 +305,7 @@ test('concept and assessment forms work without JavaScript at enlarged mobile te
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
     await page.goto('http://127.0.0.1:3101/library?mode=exam&type=oral&q=Km');
     await expect(page.locator('a[href="/library/enzyme-kinetics#oral-recall-title"]').first()).toBeVisible();
+    await page.evaluate(()=>document.documentElement.style.setProperty('font-size','200%','important'));
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
   } finally {await context.close();}
 });

@@ -4289,3 +4289,16 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .research-video-comparison > h2 { grid-column: 1 / -1; }
 .research-video-comparison > article { min-width: 0; overflow-wrap: anywhere; }
 .research-video-comparison .native-video { min-width: 0; }
+
+/* Long subject names and study-mode controls must reflow at enlarged text. */
+.library-page .topic-guide-links p,
+.library-page .library-subjects a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.catalog-controls > button {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
