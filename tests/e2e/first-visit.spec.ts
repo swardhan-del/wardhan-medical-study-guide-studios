@@ -27,10 +27,10 @@ test("Start Here reaches the existing guided sequence, its quiz and onward learn
   await page.getByRole("link", { name: "Try the membrane transport sequence", exact: true }).click();
   await expect(page).toHaveURL(/\/learn\/topics\/membrane-transport$/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Membrane transport");
-  await expect(page.getByRole("link", { name: "Try the Knowledge Check", exact: true })).toHaveCount(4);
+  await expect(page.getByRole("link", { name: "Try the Knowledge Check", exact: true })).toHaveCount(6);
   await expect(page.getByRole("link", { name: "Continue into renal tubular transport", exact: true })).toHaveAttribute("href", "/learn/renal/tubular-transport");
   await page.getByRole("link", { name: "Try the Knowledge Check", exact: true }).first().click();
-  await expect(page).toHaveURL(/\/library\/fluid-and-membrane-transport#concept-check-title$/);
+  await expect(page).toHaveURL(/\/library\/physiology-membrane-foundations#concept-check-title$/);
   await expect(page.locator("#concept-check-title").getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ })).toBeVisible();
 });
 

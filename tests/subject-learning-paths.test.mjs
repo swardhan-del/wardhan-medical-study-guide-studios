@@ -4,13 +4,49 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { subjectHubs, newEntryLessonIds } from '../src/content/subject-hubs.ts';
 import { entryLessonGuides } from '../src/content/entry-lesson-guides.ts';
-import { studyPaths, beginnerSequences } from '../src/content/study-paths.ts';
+import { studyPaths, beginnerSequences, studentEntryPaths } from '../src/content/study-paths.ts';
+import { topicGuides } from '../src/content/topic-guides.ts';
 
 const read = name => JSON.parse(readFileSync(new URL(`../src/content/${name}.json`, import.meta.url), 'utf8'));
 const lessons = read('library-lessons').lessons;
 const byId = new Map(lessons.map(l => [l.id, l]));
 const studio = read('study-questions').questions;
 const transfer = read('transfer-practice').questions;
+
+test('student entry modes reuse released lessons and preserve separate subject filters', () => {
+  const release = new Set(read('public-release').resourceIds);
+  for (const subject of [...Object.keys(studyPaths), 'histology-i', 'histology-ii', 'immunology', 'biostatistics']) {
+    const entry = studentEntryPaths(subject);
+    assert(entry, subject);
+    assert.equal(entry.concept, `/library?subject=${subject}`);
+    const practiceId = entry.practice.match(/^\/library\/([^#]+)#concept-check-title$/)?.[1];
+    assert(practiceId && release.has(practiceId) && byId.has(practiceId), subject);
+    if (subject !== 'cell-biology') assert.equal(entry.begin, `/library/${practiceId}`);
+    assert(entry.preparation.length > 50);
+  }
+  assert.equal(studentEntryPaths('cell-biology').begin, '/learn/foundations/cell-biology');
+  assert.equal(studentEntryPaths('genetics', true).concept, '/library?subject=genetics-all');
+  assert.equal(studentEntryPaths('histology-ii').prerequisite.href, '/library/histology-foundations-tissues');
+  assert.equal(studentEntryPaths('unknown-subject'), null);
+  assert.equal(studentEntryPaths().begin, '/start#choose-subject');
+});
+
+test('pilot pathways connect existing teaching identities without duplicating lessons', () => {
+  const expected = {
+    'membrane-transport': ['physiology-membrane-foundations', 'fluid-and-membrane-transport', 'biophysics-diffusion-osmosis', 'biophysics-resting-potential', 'membrane-potentials', 'biophysics-action-potentials'],
+    'tissue-identification': ['histology-foundations-tissues', 'microscopy', 'epithelia', 'connective-tissue', 'muscle-histology', 'myelin-and-glial-cells', 'vessel-histology', 'lymphoid-organs'],
+    'enzyme-kinetics': ['biochemistry-enzyme-foundations', 'enzyme-kinetics'],
+  };
+  for (const [slug, ids] of Object.entries(expected)) {
+    const guide = topicGuides.find(guide => guide.slug === slug);
+    assert.deepEqual(guide?.stages.map(stage => stage.id), ids);
+    assert.equal(new Set(ids).size, ids.length);
+    for (const id of ids) {
+      assert(byId.has(id), id);
+      assert(read('lesson-references')[id], `${id}: missing reference record`);
+    }
+  }
+});
 
 test('every curriculum hub starts a released subject lesson and maps available next steps', () => {
   assert.deepEqual(Object.keys(subjectHubs).sort(), ['anatomy','biochemistry','biophysics','cell-biology','genetics','histology','physiology']);

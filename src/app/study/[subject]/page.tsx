@@ -35,7 +35,7 @@ export default async function SubjectStudyPage({ params }: Props) {
      <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link><Link href="/library">Return to the library</Link></div>
    </header>
    {subject === "physiology" && <p><Link className="button button-secondary" href={physiologyCoursePath}>Full Course</Link></p>}
-   <SubjectHubOverview subject={subject} />
+   <SubjectHubOverview subject={subject} combinedGenetics />
    {subject === "anatomy" ? <AnatomyLearningPath/> : <SubjectTopicMap subject={subject} />}
    {subject === "anatomy" && <AnatomyCourseIntro />}
    {subject === "histology" && <section className="study-panel"><h2>Practise recognising real sections</h2><p>Start with epithelial structure, hide the labels, then compare the two available microscope sections. Renal tubule practice begins with three schematics and links to further public slide practice.</p><div className="action-row"><Link href="/library/epithelia">Study epithelium and compare sections</Link><Link href="/practice/histology">Open tissue identification practice</Link></div></section>}
