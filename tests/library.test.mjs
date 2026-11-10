@@ -51,6 +51,28 @@ test("optional section practice requires both a usable prompt and explanatory fe
     assert.throws(() => validateLibraryLessons(copy, catalog, sources), /Incomplete teaching content/);
   }
 });
+test("copied teaching cannot acquire a second lesson identity through renaming or whitespace changes", () => {
+  const copy = structuredClone(data);
+  const duplicate = structuredClone(copy.lessons[0]);
+  duplicate.id = "duplicate-teaching-fixture";
+  duplicate.title = "Renamed teaching fixture";
+  duplicate.steps[0].body = `  ${duplicate.steps[0].body.replaceAll(" ", "  ")}\n`;
+  copy.lessons.push(duplicate);
+  const records = [...catalog.records, {
+    ...catalog.records.find(r => r.id === data.lessons[0].id),
+    id: duplicate.id,
+    title: duplicate.title,
+  }];
+  assert.throws(() => validateLibraryLessons(copy, { ...catalog, records }, sources), /Duplicate teaching content/);
+});
+test("shared sources and related-reading relationships do not count as duplicate lessons", () => {
+  const copy = structuredClone(data);
+  copy.lessons[1].source = copy.lessons[0].source;
+  copy.lessons[1].section = copy.lessons[0].section;
+  copy.lessons[1].related = [...copy.lessons[0].related].filter(id => id !== copy.lessons[1].id);
+  if (copy.lessons[1].related.length < 2) copy.lessons[1].related.push(copy.lessons[0].id);
+  assert.doesNotThrow(() => validateLibraryLessons(copy, catalog, sources));
+});
 test("search matches multiple words across source topic tags and title, including punctuation variants", () => {
   const r = catalog.records.find((r) => r.id === "renal-abg-interpretation");
   assert.ok(matchesCatalogQuery(r, "renal acid-base"));

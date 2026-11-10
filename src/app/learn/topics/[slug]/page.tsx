@@ -27,7 +27,7 @@ export default async function TopicSequence({ params }: Props) {
       <p><strong>Explain after studying:</strong> {lesson.recall.prompt}</p>
       <div className="action-row"><Link className="button button-secondary" href={`/library/${id}`}>Study {lesson.title}</Link><Link href={`/library/${id}#concept-check-title`}>Try the Knowledge Check</Link><Link href={`/library/${id}#lesson-source`}>Sources and further reading</Link></div>
     </li>)}</ol></section>
-    <section className="study-panel"><h2>Review the connections</h2><p>{guide.review}</p><p>Use the explanations in the full lessons to check your answer before moving on. Revisit a step if you can name a process but cannot justify it.</p><Link className="button button-primary" href={guide.next.href}>{guide.next.title}</Link></section>
+    <section className="study-panel" id="review-connections"><h2>Review the connections</h2><p>{guide.review}</p><p>Use the explanations in the full lessons to check your answer before moving on. Revisit a step if you can name a process but cannot justify it.</p><Link className="button button-primary" href={guide.next.href}>{guide.next.title}</Link></section>
     <footer className="study-sources"><h2>Sources and editorial scope</h2><p>This is an original study sequence through the studio’s published lessons. Lesson summaries and review prompts are drawn from those lessons; their source links above include the supporting references and editorial notes. No new source images or clinical guidance are introduced here.</p><p><Link href="/about">Read about the independent study library</Link>. <Link href="/learn/topics">Choose another guided topic</Link> or <Link href="/library">return to the library</Link>.</p></footer>
   </article>;
 }

@@ -36,8 +36,8 @@ export default function SubjectsPage() {
             <p>{s.description}</p>
             <p>{available(s.id).length ? `${subjectLessons(s.id).length} focused introductions${s.id === "physiology" ? " + 8 renal course lessons" : ""}` : "No public lessons released yet"}</p>
             <p className="muted-note">Focused introductions and practice; full syllabus coverage is not yet available.</p>
-            {s.id === "histology" && <nav className="quick-links" aria-label="Histology course filters"><Link href="/library?subject=histology-i">Histology I subset</Link><Link href="/library?subject=histology-ii">Histology II subset</Link></nav>}
-            {s.id === "genetics" && <nav className="quick-links" aria-label="Genetics and immunology filters"><Link href="/library?subject=genetics">Medical Genetics subset</Link><Link href="/library?subject=immunology">Immunology subset</Link></nav>}
+            {s.id === "histology" && <nav className="quick-links" aria-label="Histology course filters"><Link href="/subjects/histology-i">Histology I learning path</Link><Link href="/subjects/histology-ii">Histology II learning path</Link></nav>}
+            {s.id === "genetics" && <nav className="quick-links" aria-label="Genetics and immunology filters"><Link href="/subjects/genetics">Medical Genetics learning path</Link><Link href="/subjects/immunology">Immunology learning path</Link></nav>}
             {available(s.id).length > 0 && <p><Link className="button button-primary" href={landing(s.id)}>Open available lessons</Link></p>}
             <Link
               className="text-link"

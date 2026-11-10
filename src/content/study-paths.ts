@@ -49,3 +49,38 @@ export const beginnerSequences: Record<string, { title: string; href: string }[]
   genetics: [{ title: "Genome, inheritance and gene expression", href: "/library/genetics-genome-foundations" }, { title: "Reason through inheritance", href: "/library/inheritance" }, { title: "Compare innate and adaptive responses", href: "/library/innate-adaptive" }],
   biophysics: [{ title: "Diffusion, osmosis and membranes", href: "/library/biophysics-membrane-foundations" }, { title: "Form an image", href: "/library/biophysics-image-formation" }, { title: "Explain wave optics", href: "/library/biophysics-wave-optics" }],
 };
+
+// Navigation only: these pointers reuse existing lessons and progress identities.
+// Course subsets share prerequisite material without becoming separate copies.
+export function studentEntryPaths(subject?: string, combinedGenetics = false) {
+  if (!subject) return {
+    begin: "/start#choose-subject",
+    concept: "/library",
+    practice: "/subjects",
+    preparation: "Choose a subject and its starting lesson. Available collections do not cover an entire university syllabus.",
+    prerequisite: null as { title: string; href: string } | null,
+  };
+  const subsetStarts: Record<string, { title: string; href: string }> = {
+    "histology-i": beginnerSequences.histology[0],
+    "histology-ii": { title: "Nervous-tissue foundations", href: "/library/myelin-and-glial-cells" },
+    immunology: { title: "Innate and adaptive responses", href: "/library/innate-adaptive" },
+    biostatistics: { title: "Histograms and their denominators", href: "/library/histogram-bin-counts-example" },
+  };
+  const first = subsetStarts[subject] ?? beginnerSequences[subject]?.[0];
+  if (!first) return null;
+  return {
+    begin: subject === "cell-biology" ? "/learn/foundations/cell-biology" : first.href,
+    concept: `/library?subject=${subject === "genetics" && combinedGenetics ? "genetics-all" : subject}`,
+    practice: `${first.href}#concept-check-title`,
+    preparation: subject === "histology-ii"
+      ? "Start the available nervous-tissue lessons. Use the shared basic-tissue introduction if the terminology is unfamiliar."
+      : subject === "immunology"
+        ? "Begin with immune responses, then find immune-system concepts in this subject’s filtered collection."
+        : subject === "biostatistics"
+          ? "Begin with a worked histogram example. The available introductions do not cover the wider statistics syllabus."
+          : "Start with foundations, find a specific explanation, or use the existing questions and oral prompts. These routes share the same lessons and saved progress.",
+    prerequisite: subject === "histology-ii"
+      ? { title: "Review the four basic tissues first", href: beginnerSequences.histology[0].href }
+      : null,
+  };
+}

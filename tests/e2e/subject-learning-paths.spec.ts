@@ -7,6 +7,94 @@ import studio from '../../src/content/study-questions.json';
 import transfer from '../../src/content/transfer-practice.json';
 import references from '../../src/content/lesson-references.json';
 import collections from '../../src/content/study-collections.json';
+import AxeBuilder from '@axe-core/playwright';
+import { studentEntryPaths } from '../../src/content/study-paths';
+import { topicGuides } from '../../src/content/topic-guides';
+
+test('student entry modes reach existing teaching, filtered concepts and questions for every subject', async ({ page, request }) => {
+  test.setTimeout(120_000);
+  const routes = [
+    ...Object.keys(subjectHubs).map(subject => ({ subject, route: `/study/${subject}`, combined: true })),
+    ...['histology-i', 'histology-ii', 'genetics', 'immunology', 'biostatistics'].map(subject => ({ subject, route: `/subjects/${subject}`, combined: false })),
+  ];
+  for (const { subject, route, combined } of routes) {
+    await page.goto(route);
+    const entry = page.locator('#study-entry:visible');
+    const paths = studentEntryPaths(subject, combined)!;
+    for (const [name, href] of [['Begin from Zero', paths.begin], ['Explain a Confusing Concept', paths.concept], ['Examination Preparation', paths.practice]]) {
+      const link = entry.getByRole('link', { name, exact: true });
+      await expect(link).toHaveAttribute('href', href);
+      expect((await request.get(href)).status(), `${route}: ${href}`).toBe(200);
+    }
+    await expect(entry).toContainText('do not establish full syllabus coverage');
+    await entry.getByRole('link', { name: 'Explain a Confusing Concept', exact: true }).click();
+    await expect(page.getByRole('combobox', { name: 'Subject', exact: true })).toHaveValue(new URL(paths.concept, 'https://example.test').searchParams.get('subject')!);
+    expect(await page.locator('.resource-card:visible').count()).toBeGreaterThan(0);
+  }
+});
+
+test('student entry modes work without scripts, with keyboard focus and at narrow enlarged text', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 320, height: 800 } });
+  try {
+    const page = await context.newPage();
+    await page.goto('http://127.0.0.1:3101/subjects/histology-ii');
+    // Set browser text size directly: addStyleTag waits for a load callback that
+    // does not run in a JavaScript-disabled document.
+    await page.evaluate(() => document.documentElement.style.setProperty('font-size', '200%', 'important'));
+    const entry = page.locator('#study-entry');
+    const start = entry.getByRole('link', { name: 'Begin from Zero', exact: true });
+    await start.focus();
+    await page.keyboard.press('Tab');
+    await expect(entry.getByRole('link', { name: 'Review the four basic tissues first', exact: true })).toBeFocused();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+    await start.focus();
+    await page.keyboard.press('Enter');
+    await expect(page).toHaveURL(/\/library\/myelin-and-glial-cells$/);
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+  } finally { await context.close(); }
+});
+
+test('student entry and pilot navigation have no automated accessibility violations', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+  try {
+    const page = await context.newPage();
+    for (const route of ['/start', '/subjects/histology-ii', '/study/genetics', '/learn/topics/enzyme-kinetics']) {
+      await page.goto(`http://127.0.0.1:3101${route}`);
+      const results = await new AxeBuilder({ page }).include('main').withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
+      expect(results.violations, route).toEqual([]);
+    }
+  } finally { await context.close(); }
+});
+
+for (const slug of ['membrane-transport', 'tissue-identification', 'enzyme-kinetics']) {
+  test(`${slug}: pilot sequence retains answers across its canonical lessons`, async ({ page }) => {
+    test.setTimeout(120_000);
+    const guide = topicGuides.find(guide => guide.slug === slug)!;
+    const first = data.lessons.find(lesson => lesson.id === guide.stages[0].id)!;
+    await page.goto(`/learn/topics/${slug}`);
+    await page.getByRole('link', { name: `Study ${first.title}`, exact: true }).click();
+    await showAllPractice(page);
+    // Revision mode exposes every checkpoint; submit only the canonical first
+    // question so timing cannot make the button selector match six questions.
+    const question = page.locator(`#question-concept-${first.id}:visible`);
+    await question.getByRole('radio', { name: first.question.options[first.question.answer].text, exact: true }).check();
+    await question.getByRole('button', { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+    await expect(question.getByRole('status')).toContainText('Correct');
+    const saved = await page.evaluate(id => JSON.parse(localStorage.getItem('wardhan-learning:v1')!).answers[id], `concept-${first.id}`);
+    expect(saved).toBeTruthy();
+    for (const [index, stage] of guide.stages.entries()) {
+      await expect(page).toHaveURL(new RegExp(`/library/${stage.id}(?:#.*)?$`));
+      const onward = page.getByRole('navigation', { name: `Continue ${guide.title}`, exact: true });
+      await expect(onward).toContainText(`Step ${index + 1} of ${guide.stages.length}`);
+      await onward.getByRole('link').click();
+    }
+    await expect(page).toHaveURL(new RegExp(`/learn/topics/${slug}#review-connections$`));
+    await page.goto(`/library/${first.id}`);
+    await showAllPractice(page);
+    await expect(question.getByRole('radio', { name: first.question.options[first.question.answer].text, exact: true })).toBeChecked();
+    expect(await page.evaluate(id => JSON.parse(localStorage.getItem('wardhan-learning:v1')!).answers[id], `concept-${first.id}`)).toEqual(saved);
+  });
+}
 
 test('each subject exposes its existing numbered lesson order before the card grid', async ({ page }) => {
   for (const subject of subjectInterests) {

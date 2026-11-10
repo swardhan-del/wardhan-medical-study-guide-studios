@@ -18,7 +18,11 @@
     "steps": [
       {
         "title": "Lesser Sac and Epiploic Foramen",
-        "body": "The lesser sac is the omental bursa behind the stomach and lesser omentum. It communicates with the greater sac through the epiploic foramen, also called the omental foramen.\n\nAnterior wall of the lesser sac includes stomach, lesser omentum, and gastrocolic ligament. Posterior wall relates to pancreas, left kidney, left suprarenal gland, aorta, and related retroperitoneal structures. Epiploic foramen boundaries: anterior hepatoduodenal ligament, posterior IVC, superior caudate lobe, inferior first part of duodenum."
+        "bodyRef": {
+          "lessonId": "omenta-and-lesser-sac",
+          "stepTitle": "Lesser Sac and Epiploic Foramen",
+          "sha256": "e647a1241dee2bb0f6bec4964d8526d3a2e51961a8d4029e3689eb6219742d0f"
+        }
       },
       {
         "title": "Duodenum",
@@ -30,7 +34,11 @@
       },
       {
         "title": "Portal Vein and Caval Drainage",
-        "body": "The portal vein carries nutrient-rich venous blood from the gastrointestinal tract, spleen, pancreas, and gallbladder to the liver. It is formed behind the neck of the pancreas by the union of superior mesenteric and splenic veins.\n\nInferior mesenteric vein usually drains into splenic vein. Portal vein enters the hepatoduodenal ligament and lies posterior to hepatic artery proper and bile duct. Hepatic veins drain blood from liver into the inferior vena cava. Caval structures such as kidneys, suprarenal glands, gonads, posterior abdominal wall, and lower limbs drain directly or indirectly to IVC, not portal vein."
+        "bodyRef": {
+          "lessonId": "abdomen-portal-relations",
+          "stepTitle": "Portal Vein and Caval Drainage",
+          "sha256": "1265390329a13b1c649ea961e02f2a108b3fdd15f955ed1c453f78230e4b466c"
+        }
       },
       {
         "title": "How would you check a proposed pancreatic label on a section?",

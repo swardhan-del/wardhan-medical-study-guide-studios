@@ -1,6 +1,16 @@
 # Medical lesson and visual learning standard
 
-Applies to future anatomy, histology, physiology, biochemistry, genetics, immunology, biophysics and cell-biology lessons. Use the histology foundations lesson as a worked example. This standard governs new work; adopting it does not authorise rewriting other published lessons.
+Applies to new work and bounded improvements to existing anatomy, histology, physiology, biochemistry, genetics, immunology, biophysics, cell-biology and biostatistics lessons. Preserve teaching that already meets the standard. Identify gaps by canonical lesson ID, then improve only the reviewed scope; adopting this standard does not authorise a mass rewrite or a change in publication status.
+
+## Existing-lesson improvement order — 9 November 2026
+
+Stabilise canonical identities and source relationships first. Improve navigation next, then validate the existing membrane, tissue-identification and enzyme-kinetics pathways before expanding to further topics. Maintain the existing controlled improvement backlog; do not create a second content inventory or duplicate lesson models.
+
+Each substantive topic should connect measurable objectives and prerequisites, explained terminology, a rigorous mechanism, a useful visual with an accessible equivalent, a guided example, misconceptions and limitations, explained reasoning questions, appropriate applications, oral prompts, a summary and onward learning. Use the existing shared renderer and checkpoints. Select the elements that teach the topic: a question count, word count or decorative diagram is not evidence of understanding.
+
+Record missing elements as review work rather than filling them automatically. Separate technical verification, source checking, rights review and **independent subject-specialist scientific review**. AI assistance and automated answer-key checks do not confer independent review. Keep the current public review disclosure accurate until an appropriately qualified reviewer has signed off the exact lesson, questions and figures.
+
+Navigation can point to existing released lessons without creating a new lesson identity. A technical pass for a pathway does not imply that it is an educationally validated exemplar or a complete university course. Use the beginner testing protocol in `PRELAUNCH_CHECKLIST.md` before broad expansion.
 
 ## Lesson sequence and terminology
 
