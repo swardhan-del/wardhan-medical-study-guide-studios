@@ -116,7 +116,16 @@
 .landmarks button[aria-pressed="true"] { background: #e1eee6; border-color: #28625e; }
 .explanation { border-inline-start: 3px solid #28625e; padding: .35rem .7rem; overflow-wrap: anywhere; }
 .explanation p { margin: .25rem 0 0; }
-.practice { display: grid; gap: 1rem; }
+.practice {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.practice progress {
+  inline-size: min(100%, 10rem);
+}
 .examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
 .examples > div { padding: 1rem; background: #edf3ed; border-inline-start: 3px solid #28625e; }
 .examples dt { font-weight: 700; }
