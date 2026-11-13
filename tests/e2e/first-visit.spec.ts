@@ -395,6 +395,9 @@ test("a related follow-up becomes available after 24 hours and persists", async 
   await weekly.getByRole("radio", { name: weeklyQuestion.options[weeklyQuestion.answer].text, exact: true }).check();
   await weekly.getByRole("button", { name: /^Check Answer and Continue/ }).click();
   await expect(weekly.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
   await page.reload();
   await expect(review).toContainText("One-week review complete.");
   await review.getByRole("button", { name: "Review Anatomy & Embryology one-week review" }).click();
