@@ -33,7 +33,7 @@ export default async function FirstSessionPage({ params }: Props) {
   if (session.figure && !figure) throw new Error(`Missing first-session figure: ${session.figure}`);
 
   return (
-    <div className="site-container study-page">
+    <div className="site-container study-page first-session-page">
       <SearchBreadcrumbs items={[
         { name: "Start here", href: "/start" },
         { name: "First study sessions", href: firstSessionsPath },

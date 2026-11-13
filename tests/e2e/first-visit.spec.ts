@@ -338,6 +338,10 @@ test("each subject directory leads to a worked example and an explained checkpoi
     await checkpoint.getByRole("button", { name: /^Check Answer and Continue/ }).click();
     await expect(checkpoint.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+    if (info.project.name === "mobile") {
+      await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), session.id).toBe(true);
+    }
   }
   expect(errors).toEqual([]);
 });
