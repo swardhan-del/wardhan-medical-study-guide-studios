@@ -3840,9 +3840,11 @@ select:focus-visible {
   gap: 1rem;
 }
 .native-topic-results li {
+  min-width: 0;
   padding: 1rem;
   border: 1px solid #b9c9c6;
   border-radius: 12px;
+  overflow-wrap: anywhere;
 }
 .native-topic-results a {
   display: block;
@@ -3859,7 +3861,7 @@ select:focus-visible {
 }
 @media (max-width: 640px) {
   .native-topic-results {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .native-preview object {
     height: 55vh;

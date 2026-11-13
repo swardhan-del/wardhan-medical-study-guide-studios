@@ -68,6 +68,23 @@ test("topic filtering, lesson journey, breadcrumbs and related links", async ({
   );
   await expect(page).toHaveURL(/learn\/renal\/filtration-and-clearance$/);
 });
+test("subject directory and topic search reflow at 320 pixels with 200% text", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.goto("/subjects");
+  await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+  const viewportWidth = await page.evaluate(() => innerWidth);
+  const contentWidth = () => page.evaluate(() => document.documentElement.scrollWidth);
+  await expect.poll(contentWidth).toBeLessThanOrEqual(viewportWidth);
+
+  const search = page.getByRole("searchbox", { name: "Search topics" });
+  await search.fill("renal");
+  await page.getByRole("combobox", { name: "Topic subject", exact: true }).selectOption("physiology");
+  const topic = page.getByRole("link", { name: "Renal and acid-base physiology", exact: true });
+  await expect(topic).toBeVisible();
+  await expect.poll(contentWidth).toBeLessThanOrEqual(viewportWidth);
+  await topic.press("Enter");
+  await expect(page).toHaveURL(/topics\/physiology-renal$/);
+});
 test("all native routes and public assets resolve without archive exposure", async ({
   request,
 }, info) => {
