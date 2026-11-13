@@ -1,3 +1,32 @@
+import { createHash } from "node:crypto";
+
+// Authoring-only references resolve before generating public lesson data.
+// Pin the exact body so editing a prerequisite cannot silently alter another
+// reviewed lesson. References must point directly to one literal body.
+export function resolveLessonStepBodies(lessons) {
+  const byId = new Map(lessons.map(lesson => [lesson.id, lesson]));
+  if (byId.size !== lessons.length) throw new Error("Duplicate lesson ID in teaching references.");
+  return lessons.map(lesson => ({
+    ...lesson,
+    steps: lesson.steps.map(step => {
+      if (!("bodyRef" in step)) return { ...step };
+      const ref = step.bodyRef;
+      if ("body" in step || !ref || typeof ref.lessonId !== "string" ||
+          typeof ref.stepTitle !== "string" || !/^[a-f0-9]{64}$/.test(ref.sha256 ?? ""))
+        throw new Error(`Invalid teaching reference: ${lesson.id}`);
+      const matches = byId.get(ref.lessonId)?.steps.filter(source => source.title === ref.stepTitle) ?? [];
+      if (matches.length !== 1 || "bodyRef" in matches[0] || typeof matches[0].body !== "string")
+        throw new Error(`Missing, ambiguous or chained teaching reference: ${lesson.id}`);
+      const body = matches[0].body;
+      if (createHash("sha256").update(body).digest("hex") !== ref.sha256)
+        throw new Error(`Changed referenced teaching requires review: ${lesson.id}`);
+      const resolved = { ...step, body };
+      delete resolved.bodyRef;
+      return resolved;
+    }),
+  }));
+}
+
 export function validateLibraryLessons(data, catalog, sources) {
   if (
     data.version !== 1 ||
@@ -6,6 +35,7 @@ export function validateLibraryLessons(data, catalog, sources) {
   )
     throw new Error("Missing learning content.");
   const ids = new Set();
+  const teachingOwners = new Map();
   const records = new Map(catalog.records.map((r) => [r.id, r]));
   const text = (value, min = 1) =>
     typeof value === "string" &&
@@ -86,6 +116,26 @@ export function validateLibraryLessons(data, catalog, sources) {
       throw new Error(
         "Private source data must remain outside the web lesson.",
       );
+    // Detect copied teaching under a new identity. Shared navigation references
+    // and independently authored lessons about the same concept remain valid.
+    const teaching = JSON.stringify(
+      {
+        summary: lesson.summary,
+        steps: lesson.steps,
+        workedExample: lesson.workedExample,
+        question: lesson.question,
+        recall: lesson.recall,
+        oralExamination: lesson.oralExamination,
+        summaryChecklist: lesson.summaryChecklist,
+      },
+      (_key, value) => typeof value === "string"
+        ? value.normalize("NFC").replace(/\s+/g, " ").trim()
+        : value,
+    );
+    const owner = teachingOwners.get(teaching);
+    if (owner)
+      throw new Error(`Duplicate teaching content: ${lesson.id} repeats ${owner}; reuse the existing lesson ID.`);
+    teachingOwners.set(teaching, lesson.id);
   }
   for (const record of catalog.records)
     if (record.format === "WEB" && !record.href && !ids.has(record.id))

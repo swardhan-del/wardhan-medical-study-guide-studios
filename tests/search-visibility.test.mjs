@@ -97,7 +97,8 @@ test('topic sequences contain substantial original guidance and only real publis
   assert.equal(new Set(topicGuides.map(guide => guide.slug)).size, topicGuides.length);
   for (const guide of topicGuides) {
     assert(guide.preparation.length > 100 && guide.method.length > 150 && guide.review.length > 150);
-    assert(guide.stages.length >= 4); assert.equal(new Set(guide.stages.map(s => s.id)).size, guide.stages.length);
+    // A focused sequence may connect two substantial lessons; do not add filler to meet a quota.
+    assert(guide.stages.length >= 2); assert.equal(new Set(guide.stages.map(s => s.id)).size, guide.stages.length);
     for (const stage of guide.stages) { assert(lessons.lessons.some(l => l.id === stage.id)); assert(searchPage(`/library/${stage.id}`).index); assert(stage.purpose.length > 50); }
     assert(searchPage(guide.next.href)?.index);
   }

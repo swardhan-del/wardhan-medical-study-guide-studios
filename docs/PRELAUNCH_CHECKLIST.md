@@ -1,5 +1,34 @@
 # Pre-launch decision checklist
 
+## Current decision and pilot gate — 9 November 2026
+
+The reorganisation is not a completed launch. Use small reviewed pull requests and inspect their exact Vercel previews. **Do not automatically merge or deploy production.** Preserve the existing Vercel hostname, publication allowlist, content identities and saved progress. A custom domain is optional and is not a prerequisite or authorised purchase.
+
+| Current gate | Evidence required | Status at this navigation increment |
+| --- | --- | --- |
+| Canonical source structure | Existing checkout, stable source/lesson crosswalk, retained history and remotely verified curation delivery. | Reconciliation evidence remains in the existing controlled report. Pending delivery must not be labelled complete. |
+| Navigation | Three entry modes, distinct subject subsets, working first lessons and explicit incomplete coverage. | Implemented locally; record executed checks and exact preview separately. |
+| Teaching and independent review | Each improved lesson has assessable objectives, verified source edition, reviewed explanation/answer/figure scope and named qualified reviewer sign-off. | Independent subject-specialist review remains outstanding. Navigation changes do not confer scientific approval. |
+| Beginner usability | Real first-year participants attempt navigation and unseen application questions without coaching, using the protocol below. | No sessions or measured success rates yet. |
+| Technical preservation | Content, unit, type, lint, build, browser and privacy checks; stable lesson/question IDs, asset bytes and progress compatibility. | Record actual executions against the final code. Never infer a pass from this checklist. |
+| Release decision | Reviewed PR, exact protected preview, unresolved limitations and rollback evidence. | No new merge or production deployment authorised by this plan. |
+
+### Beginner session protocol
+
+Use the existing controlled improvement backlog and consolidated report for evidence. Do not publish participant names, notes or assessment responses in Git. Obtain participants' consent, use anonymous session IDs and record prior subject familiarity, device and accessibility needs where relevant. Do not recruit or contact people automatically.
+
+1. A subject-specialist reviewer defines the intended starting lesson(s), measurable concept objectives, previously unseen application questions and a scoring rubric **before** sessions. Keep these assessment answers away from participants until their first attempt is complete. Do not reuse the lesson's displayed quiz as an unseen outcome measure.
+2. From the homepage, ask the participant to find a beginner lesson about membrane transport, tissue identification or enzyme kinetics. Give no path or menu hints. Record chosen links, steps, elapsed time, wrong turns, requests for help and eventual destination. Define a successful unassisted destination in advance; report assisted and abandoned tasks separately.
+3. Let the participant study the full explanation, visual and worked example, then complete the existing checkpoint. Record misconceptions and confusing language. Let them use a different entry mode to locate an unfamiliar concept and locate examination practice.
+4. Ask the unseen application question without opening the lesson answer. Have the reviewer score the first attempt against the prespecified rubric; record which reasoning criterion was missed. Keep retries separate. Record whether the participant understands the feedback and can continue, return and resume saved progress.
+5. Test all three pathways with real first-year students and include mobile and keyboard-only use. Keep a session count and separate denominators by pathway and task. Store anonymous findings in the existing backlog, referencing canonical lesson IDs and observed issues. Fix navigation or reviewed teaching gaps, then repeat affected tasks with unseen items.
+
+The owner's **proposed** acceptance targets are at least **90%** finding their intended starting lesson without help and at least **80%** correctly explaining/applying the concept after study. Report raw numerators and denominators alongside percentages, exclusions and uncertainty. A tiny convenience sample, AI simulation or automated browser run does not establish these population targets. Sample size and sampling limitations need agreement before acceptance. Until real sessions and independent review are complete, label the pathways **awaiting educational validation**, even if technical tests pass.
+
+## Historical launch checklist — September 2026
+
+The following rows preserve the earlier integration record. Their permissions, counts, commit, provider observations and domain assumptions are historical; use the current decision above and fresh evidence for any new action.
+
 **Decision: not ready for an unrestricted public launch.** This quality gate now includes the authorised integration of roadmap PRs #20–26, retaining Phase Three already in main. Technical checks do not establish clinical accuracy, legal approval, a working mailing list or search indexing. Merge only after the updated PR heads pass CI, then verify the final main SHA on production. No membership, payment or charging work is included.
 
 | Gate | Required evidence before launch | Current disposition |

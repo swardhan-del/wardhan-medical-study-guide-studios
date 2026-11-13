@@ -1,5 +1,24 @@
 # Roadmap integration record
 
+## Current scope — 9 November 2026
+
+The current owner instruction is **small, verifiable improvements to the existing website, reviewed in a pull request and on its exact preview; no automatic merge or production deployment**. It supersedes the September integration permission below. Retain the Vercel-provided hostname; buying a domain is not a launch requirement.
+
+1. Reconcile the authoritative checkout, current curation entry point and source mapping. Preserve originals, historical revisions, unique work, canonical IDs and saved learning history. Keep unresolved delivery and provenance issues visible.
+2. Use the existing subject routes for **Begin from Zero**, **Explain a Confusing Concept** and **Examination Preparation**. Keep Histology I/II and Genetics/Immunology separately discoverable, with accurate availability notices.
+3. Prepare three navigation pathways through existing lessons, not parallel teaching records:
+   - `/learn/topics/membrane-transport`: membrane foundations and transport → physical diffusion/osmosis → resting potential → membrane/action potentials and existing explained practice.
+   - `/learn/topics/tissue-identification`: basic tissues and microscopy → epithelia/connective tissue → muscle/nervous tissue → vessels → existing lymphoid specimen activities.
+   - `/learn/topics/enzyme-kinetics`: enzyme foundations and its worked calculation → existing kinetics/inhibition lesson and questions.
+4. Compare each pathway with its current source records, identify teaching gaps in the existing controlled backlog, obtain independent subject review and run real beginner sessions. Do not report these human gates as passed from browser automation.
+5. Expand only after pilot validation. Reuse the established content, assessment, figure, progress, curation and release systems.
+
+These paths are candidate exemplars, not validated course-completion claims. No new lessons, questions, assets or scientific approvals are implied by this navigation increment. The current backlog uses **Needs Review**, **Ready for Implementation**, **Implemented**, **Verified** and **Released**, with scientific, usability and technical evidence recorded separately. Local implementation is not a preview or a release.
+
+## Historical integration record — 26 September 2026
+
+The following authorisation, counts, configuration observations and outstanding checks describe that historical integration only. They are retained for provenance and must not be treated as current release instructions or current inventory counts.
+
 The owner authorised normal merges and production deployment of the completed free Study Guide roadmap on 26 September 2026. Phase Three (PR #19, merge `e86352a`) was already in main. Integrate #20 (subject paths), #21 (visual standard), #22 (local learning flow), #23 (waitlist), #24 (search), #25 (consented measurement), then #26 (quality gate). Unrelated membership PRs #15 and #16 are excluded. No branch is deleted, history rewritten or payment feature introduced.
 
 Each originally independent branch receives its earlier dependencies through normal merge commits. Re-run CI after integration changes and merge only passing current heads. PR #26 must have successful GitHub validation before its normal merge. The final production deployment must report that final main SHA, READY state and the public alias.
