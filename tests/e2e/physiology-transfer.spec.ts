@@ -41,3 +41,22 @@ test('physiology-transfer: reading-list, references, empty-state recovery and pr
  await page.goto('/library/'+id);const save=page.getByRole('button',{name:'Save to My Study: '+lesson.title,exact:true});await save.click();await page.reload();await showAllPractice(page);const saved=page.getByRole('button',{name:'Saved to My Study: '+lesson.title+' (remove from saved resources)',exact:true});await expect(saved).toHaveAttribute('aria-pressed','true');await saved.click();await page.reload();await showAllPractice(page);await expect(save).toBeVisible();for(const ref of [refs,...refs.supportingReferences])await expect(page.locator('#lesson-source a[href="'+ref.url+'"]')).toHaveCount(1);await expect(page.locator('main a[href*="dropbox"]')).toHaveCount(0);await expect(page.locator('main a[download]')).toHaveCount(0);
  for(const path of ['/review','/.env','/.private/candidate-lessons.json','/library/alveolar-gas-diffusion-comparison'])expect((await page.request.get(path)).status()).toBe(404);await page.goto('/library?subject=physiology');await page.getByRole('searchbox').fill('no-physiology-transfer-resource-987654');await expect(page.locator('.catalog-empty')).toBeVisible();await page.locator('.catalog-empty').getByRole('button',{name:'Clear filters',exact:true}).click();await expect(page.locator('.resource-card:visible').first()).toBeVisible();await expect(page.getByRole('searchbox')).toBeFocused();
 });
+
+test('spirometry graph reflows with keyboard access to the trace and answer', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.goto('/library/respiratory-mechanics');
+  await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+  await page.getByRole('navigation', { name: 'Lesson sections' }).getByRole('link', { name: 'Figures', exact: true }).click();
+
+  const figure = page.getByRole('figure', { name: 'Read a spirometry volume–time graph' });
+  const graph = figure.getByRole('region', { name: 'Spirometry volume–time graph' });
+  await graph.press('ArrowRight');
+  await expect.poll(() => graph.evaluate(element => element.scrollLeft)).toBeGreaterThan(0);
+  await figure.getByText('Read a text description', { exact: true }).press('Enter');
+  await expect(figure.getByText(/reaches 2.6 litres at 1 second/)).toBeVisible();
+  await figure.getByText('Check the FEV₁/FVC calculation', { exact: true }).press('Enter');
+  await expect(figure.getByText(/to get 0.65, or 65%/)).toBeVisible();
+  await expect(figure.getByRole('link', { name: 'ATS/ERS technical statement on spirometry' })).toHaveAttribute('href', 'https://doi.org/10.1164/rccm.201908-1590ST');
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+  expect((await new AxeBuilder({ page }).include('figure[aria-label="Read a spirometry volume–time graph"]').analyze()).violations).toEqual([]);
+});
