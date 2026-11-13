@@ -1260,6 +1260,8 @@ h1 em {
   display: flex;
   flex-direction: column;
   gap: 9px;
+  min-width: 0;
+  overflow-wrap: anywhere;
   text-align: right;
 }
 
