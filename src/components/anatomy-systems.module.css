@@ -1,0 +1,150 @@
+.page {
+  --diagram-ink: #21464b;
+  --diagram-teal: #b7d7cf;
+  --diagram-rose: #e8b9ae;
+  --diagram-sand: #ede0bd;
+  --diagram-ochre: #e5c79b;
+}
+
+.header {
+  padding: clamp(1.3rem, 4vw, 3rem);
+  border: 1px solid #c7d1c9;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #e8f1ec, #f8f1e4);
+  overflow-wrap: anywhere;
+}
+
+.header h1 { margin-block: .25rem .75rem; }
+.header > p:not(:first-child) { max-width: 45ch; }
+.actions { display: flex; flex-wrap: wrap; gap: .7rem 1.25rem; align-items: center; }
+.actions a { min-width: 0; overflow-wrap: anywhere; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cards > li { min-width: 0; }
+.card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  border: 1px solid #bdcbc2;
+  border-radius: .85rem;
+  overflow: hidden;
+  background: #f8f5ec;
+  color: #19373b;
+  text-decoration: none;
+}
+.card > div { padding: .9rem 1rem; }
+.card h2 { font-size: 1.2rem; margin: 0; overflow-wrap: anywhere; }
+.card p { margin: .3rem 0 0; color: #3a5555; overflow-wrap: anywhere; }
+.card:hover { border-color: #276b66; }
+.card:hover h2 { text-decoration: underline; }
+
+.explorer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+}
+.canvas { position: relative; border-radius: .7rem; background: #e9f0ea; overflow: hidden; }
+.diagram { display: block; width: 100%; height: auto; background: #e9f0ea; }
+.grid { fill: none; stroke: #d1e1d8; stroke-width: 1; }
+.inkLine, .redLine, .feedbackLine, .arrow, .divider, .colonLine, .intestineLine {
+  fill: none;
+  stroke: var(--diagram-ink);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.redLine { stroke: #9b443c; }
+.feedbackLine { stroke: #825225; stroke-dasharray: 5 4; }
+.divider { stroke: #819994; stroke-width: 1; stroke-dasharray: 4 5; }
+.colonLine { stroke: #9d624b; stroke-width: 12; }
+.intestineLine { stroke: #397c73; stroke-width: 7; }
+.rose, .ochre, .teal, .sand { stroke: var(--diagram-ink); stroke-width: 2; }
+.rose { fill: var(--diagram-rose); }
+.ochre { fill: var(--diagram-ochre); }
+.teal { fill: var(--diagram-teal); }
+.sand { fill: var(--diagram-sand); }
+.diagramText { fill: var(--diagram-ink); font: 600 12px system-ui, sans-serif; }
+
+.marker, .landmarks button span {
+  display: grid;
+  place-items: center;
+  background: #fffdf6;
+  color: #153a3d;
+  border: 2px solid #28625e;
+  border-radius: 50%;
+  font: 700 .8rem/1 system-ui, sans-serif;
+}
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: clamp(1.5rem, 6.5%, 2.25rem);
+  padding: 0;
+  cursor: pointer;
+  aspect-ratio: 1;
+  font-size: clamp(.62rem, 2.6vw, .8rem);
+  box-shadow: 0 0 0 2px #fffdf6;
+}
+.marker[aria-pressed="true"], .landmarks button[aria-pressed="true"] span { color: #fff; background: #184d48; }
+
+.controls { display: grid; gap: .7rem; min-width: 0; }
+.landmarks { display: grid; gap: .4rem; }
+.landmarks button {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  min-height: 44px;
+  border: 1px solid #aabeb3;
+  border-radius: .5rem;
+  background: #fffdf6;
+  color: #153a3d;
+  padding: .45rem .65rem;
+  font: inherit;
+  font-weight: 650;
+  text-align: left;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.landmarks button span { flex: 0 0 1.35rem; height: 1.35rem; }
+.landmarks button[aria-pressed="true"] { background: #e1eee6; border-color: #28625e; }
+.explanation { border-inline-start: 3px solid #28625e; padding: .35rem .7rem; overflow-wrap: anywhere; }
+.explanation p { margin: .25rem 0 0; }
+.practice {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.practice progress {
+  inline-size: min(100%, 10rem);
+}
+.examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
+.examples > div { padding: 1rem; background: #edf3ed; border-inline-start: 3px solid #28625e; }
+.examples dt { font-weight: 700; }
+.examples dd { margin: .35rem 0 0; overflow-wrap: anywhere; }
+
+@media (max-width: 720px) {
+  .explorer { grid-template-columns: minmax(0, 1fr); }
+}
+
+.viewToggle {
+  margin-block: 0 .7rem;
+  min-height: 44px;
+  max-width: 100%;
+  padding: .4rem .7rem;
+  border: 1px solid #28625e;
+  border-radius: .5rem;
+  background: #fffdf6;
+  color: #153a3d;
+  font: inherit;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
