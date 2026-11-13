@@ -2,6 +2,9 @@ import { showAllPractice } from "./helpers/practice-view";
 import { test, expect } from "@playwright/test";
 import library from "../../src/content/library-lessons.json";
 import { questions } from "../../src/content/study-questions.json";
+import { firstSessionHref, firstStudySessions } from "../../src/content/first-study-sessions";
+import { practiceItems } from "../../src/content/practice-registry";
+import { checkpointFor } from "../../src/lib/checkpoint-adapter";
 import { renalLessons } from "../../src/content/renal-course";
 
 test("physiology entry points explain the same core and renal lesson counts", async ({ page }) => {
@@ -303,4 +306,71 @@ test("sequential My Study review checks a fresh answer before allowing the next 
   await sequence.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(sequence).toContainText("Question 2 of 2");
   await expect(sequence.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeVisible();
+});
+
+
+test("each subject directory leads to a worked example and an explained checkpoint", async ({ page }, info) => {
+  test.setTimeout(90_000);
+  if (info.project.name === "mobile") await page.setViewportSize({ width: 320, height: 844 });
+  const errors: string[] = [];
+  page.on("pageerror", error => errors.push(error.message));
+
+  await page.goto("/start");
+  await page.getByRole("link", { name: "Try a five-minute study session", exact: true }).click();
+  await expect(page.locator(".first-session-list > li")).toHaveCount(firstStudySessions.length);
+
+  for (const session of firstStudySessions) {
+    await page.goto(`/subjects/${session.id}`);
+    await page.getByRole("link", { name: "Try a five-minute study session", exact: true }).click();
+    await expect(page).toHaveURL(url => url.pathname === firstSessionHref(session.id));
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(session.title);
+    await expect(page.getByText(session.worked, { exact: true })).toBeHidden();
+    await page.getByText("Show the worked explanation", { exact: true }).click();
+    await expect(page.getByText(session.worked, { exact: true })).toBeVisible();
+    if (session.id === "anatomy") await expect(page.getByRole("figure", { name: "Three planes, shown edge-on" })).toBeVisible();
+    if (session.figure) await expect(page.locator(`#figure-${session.figure} img:visible`)).toBeVisible();
+
+    const item = practiceItems.find(item => item.id === session.question)!;
+    const question = checkpointFor(item);
+    if (question?.type !== "single") throw new Error(`Expected a single-choice checkpoint: ${item.id}`);
+    const checkpoint = page.getByRole("region", { name: "First-session checkpoint", exact: true });
+    await checkpoint.getByRole("radio", { name: question.options[question.answer].text, exact: true }).check();
+    await checkpoint.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+    await expect(checkpoint.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+    if (info.project.name === "mobile") {
+      await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), session.id).toBe(true);
+    }
+  }
+  expect(errors).toEqual([]);
+});
+
+test("a related follow-up becomes available after 24 hours and persists", async ({ page }) => {
+  const startedAt = new Date("2026-11-13T09:00:00Z");
+  await page.clock.setFixedTime(startedAt);
+  await page.goto(firstSessionHref("anatomy"));
+  const checkpoint = page.getByRole("region", { name: "First-session checkpoint", exact: true });
+  await checkpoint.getByRole("radio", { name: "Parasagittal", exact: true }).check();
+  await checkpoint.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+  await expect(checkpoint.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+  await page.getByRole("link", { name: "Open my follow-up questions", exact: true }).click();
+  const review = page.locator("#subject-review");
+  await expect(review).toContainText("Available 24 hours after your latest first-session answer.");
+  await expect(review.getByRole("button", { name: "Try Anatomy & Embryology follow-up" })).toHaveCount(0);
+
+  await page.clock.setFixedTime(new Date(startedAt.getTime() + 24 * 60 * 60 * 1000));
+  await page.reload();
+  await review.getByRole("button", { name: "Try Anatomy & Embryology follow-up" }).click();
+  const followUp = review.getByRole("region", { name: "Anatomy & Embryology follow-up question", exact: true });
+  const item = practiceItems.find(item => item.id === "anatomy-foundations-application-1")!;
+  const question = checkpointFor(item);
+  if (question?.type !== "single") throw new Error("Expected a single-choice anatomy follow-up");
+  await followUp.getByRole("radio", { name: question.options[question.answer].text, exact: true }).check();
+  await followUp.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+  await expect(followUp.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+  await page.reload();
+  await expect(review).toContainText("Follow-up already practised.");
+  await review.getByRole("button", { name: "Review Anatomy & Embryology follow-up" }).click();
+  await expect(followUp.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
 });

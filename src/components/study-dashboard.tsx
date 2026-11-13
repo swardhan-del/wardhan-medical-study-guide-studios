@@ -1,4 +1,5 @@
 "use client";
+import { FirstSessionReview } from "./first-session-review";
 import { ProgressTransfer } from "./progress-transfer";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -68,6 +69,7 @@ export function StudyDashboard() {
           ? "No account is needed. Clearing site data removes your saved progress."
           : "Browser storage is unavailable. Progress may disappear when you leave."}
       </p>
+      <FirstSessionReview data={data} now={now} />
       {(writtenReview.length > 0 || repeatedConcepts.length > 0) && <section className="study-panel" aria-labelledby="relationship-review-title">
         <h2 id="relationship-review-title">Relationships to revisit</h2>
         {writtenReview.length > 0 && <><p>{writtenReview.length} written explanations marked for review. These are self-assessments, without an objective score.</p><button className="button button-primary" onClick={() => beginReview(writtenReview.map(q => q.id))}>Review my written explanations</button></>}

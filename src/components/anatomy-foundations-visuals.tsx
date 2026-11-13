@@ -20,6 +20,17 @@ function FrontBody() {
 function SideBody() {
   return <g fill={tissue} stroke={ink} strokeWidth="2.5"><path d="M147 30 Q174 20 182 43 L194 53 L181 57 L179 76 L165 80 L169 92 Q192 113 180 150 L181 179 L170 259 L193 267 L146 267 L147 183 Q130 159 138 115 L146 88 L146 76 Q127 57 136 41 Z"/></g>;
 }
+export function AnatomicalPlanes({ title = "Three planes, shown edge-on" }: { title?: string }) {
+  return <Figure id="planes" title={title}
+    caption="The brown lines show the edge of each imaginary plane where it meets the schematic body. They are not incisions or surface landmarks. The median and transverse planes are shown in an anterior view; the coronal plane is shown in a lateral view."
+    observe="For each plane, name the two portions it separates. Explain why moving the median plane sideways creates a parasagittal plane rather than a coronal plane.">
+    <div className={styles.panels}>
+      <div><h4>Median: anterior view</h4><Drawing alt="A vertical line along the centre of an anterior body view represents the median plane, separating right and left portions."><FrontBody/><path d="M160 15 V282" stroke={plane} strokeWidth="5" strokeDasharray="9 4"/><text x="12" y="230">Right</text><text x="254" y="230">Left</text></Drawing><p><strong>Sagittal:</strong> right and left portions. Only the median plane lies at the midline.</p></div>
+      <div><h4>Coronal: lateral view</h4><Drawing alt="A vertical line viewed from the side represents a coronal plane separating anterior and posterior portions of the body."><SideBody/><path d="M160 15 V282" stroke={plane} strokeWidth="5" strokeDasharray="9 4"/><text x="6" y="174">Posterior</text><text x="211" y="174">Anterior</text></Drawing><p><strong>Coronal or frontal:</strong> anterior and posterior portions.</p></div>
+      <div><h4>Transverse: anterior view</h4><Drawing alt="A horizontal line across an anterior body view represents a transverse plane separating superior and inferior portions."><FrontBody/><path d="M48 155 H272" stroke={plane} strokeWidth="5" strokeDasharray="9 4"/><text x="12" y="138">Superior</text><text x="12" y="234">Inferior</text></Drawing><p><strong>Transverse:</strong> superior and inferior portions. An oblique plane is angled relative to the principal planes.</p></div>
+    </div>
+  </Figure>;
+}
 export function AnatomyVisualStudy() {
   return <section className={styles.visuals} aria-labelledby="visual-study-title">
     <h2 id="visual-study-title">Visual Study Prompts</h2>
@@ -32,15 +43,7 @@ export function AnatomyVisualStudy() {
         <div><h4>Lateral view</h4><Drawing alt="Side view of the upright trunk: superior is towards the head, inferior towards the feet, anterior towards the face and posterior towards the back."><SideBody/><text x="115" y="18">Superior</text><text x="122" y="296">Inferior</text><text x="5" y="138">Posterior</text><path d="M97 132 H130" stroke={ink} strokeWidth="2"/><text x="211" y="138">Anterior</text><path d="M184 132 H205" stroke={ink} strokeWidth="2"/></Drawing><p>For the trunk, anterior faces forwards and posterior faces backwards. Depth is a different comparison: skin is superficial to the underlying muscle.</p></div>
       </div>
     </Figure>
-    <Figure id="planes" title="2. Three planes, shown edge-on"
-      caption="The brown lines show the edge of each imaginary plane where it meets the schematic body. They are not incisions or surface landmarks. The median and transverse planes are shown in an anterior view; the coronal plane is shown in a lateral view."
-      observe="For each plane, name the two portions it separates. Explain why moving the median plane sideways creates a parasagittal plane rather than a coronal plane.">
-      <div className={styles.panels}>
-        <div><h4>Median: anterior view</h4><Drawing alt="A vertical line along the centre of an anterior body view represents the median plane, separating right and left portions."><FrontBody/><path d="M160 15 V282" stroke={plane} strokeWidth="5" strokeDasharray="9 4"/><text x="12" y="230">Right</text><text x="254" y="230">Left</text></Drawing><p><strong>Sagittal:</strong> right and left portions. Only the median plane lies at the midline.</p></div>
-        <div><h4>Coronal: lateral view</h4><Drawing alt="A vertical line viewed from the side represents a coronal plane separating anterior and posterior portions of the body."><SideBody/><path d="M160 15 V282" stroke={plane} strokeWidth="5" strokeDasharray="9 4"/><text x="6" y="174">Posterior</text><text x="211" y="174">Anterior</text></Drawing><p><strong>Coronal or frontal:</strong> anterior and posterior portions.</p></div>
-        <div><h4>Transverse: anterior view</h4><Drawing alt="A horizontal line across an anterior body view represents a transverse plane separating superior and inferior portions."><FrontBody/><path d="M48 155 H272" stroke={plane} strokeWidth="5" strokeDasharray="9 4"/><text x="12" y="138">Superior</text><text x="12" y="234">Inferior</text></Drawing><p><strong>Transverse:</strong> superior and inferior portions. An oblique plane is angled relative to the principal planes.</p></div>
-      </div>
-    </Figure>
+    <AnatomicalPlanes title="2. Three planes, shown edge-on" />
     <Figure id="cavities" title="3. Map the body compartments"
       caption="These are organisational maps, not outlines of organ positions. The diaphragm separates thoracic and abdominopelvic compartments; the dashed abdominal–pelvic division represents continuity without a separating muscular wall."
       observe="Trace the posterior compartments separately from the anterior ones. Identify which boundary is the diaphragm and explain why the mediastinum is not a pleural cavity.">

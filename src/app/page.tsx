@@ -1,3 +1,4 @@
+import { firstSessionsPath } from "@/content/first-study-sessions";
 import { TopicGuideLinks } from "@/components/topic-guide-links";
 import { searchMetadata } from "@/lib/search-metadata";
 import { WaitlistCta } from "@/components/waitlist-cta";
@@ -36,9 +37,7 @@ export default function Home() {
               <Link className="button button-primary" href="/start">
                 Start here
               </Link>
-              <Link className="text-link" href="#subject-heading">
-                Choose your subject
-              </Link>
+              <Link className="text-link" href={firstSessionsPath}>Try a five-minute study session</Link>
               <Link className="text-link" href={anatomySystemsPath}>Explore anatomy models</Link>
             </div>
           </div>
