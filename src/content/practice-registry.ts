@@ -1,3 +1,5 @@
+import { anatomySystems, anatomySystemPractice } from "./anatomy-systems.ts";
+import { thoraxUnits, thoraxPractice } from "./thorax-models.ts";
 import { typedCheckpointItems } from "./typed-checkpoints.ts";
 import type { CheckpointDefinition } from "../lib/conceptual-checkpoint.ts";
 import { sectionCheckpointItems, anatomyCheckpointItems, foundationCheckpointItems } from "./section-checkpoints.ts";
@@ -23,6 +25,8 @@ export type PracticeItem = {
 };
 export const practiceItems: PracticeItem[] = [
   ...typedCheckpointItems,
+  ...anatomySystems.flatMap(anatomySystemPractice),
+  ...thoraxUnits.flatMap(thoraxPractice),
   ...studio.questions,
   ...anatomyCheckpointItems,
   ...sectionCheckpointItems,
