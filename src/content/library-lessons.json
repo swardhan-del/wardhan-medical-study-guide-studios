@@ -8490,7 +8490,7 @@
         },
         {
           "title": "Explain weighting",
-          "body": "Equivalent dose weights organ absorbed dose for radiation type. Effective dose additionally combines tissue-weighted contributions as a protection quantity. Both use sieverts, but identical units do not make them interchangeable with gray or with an individual patient's predicted injury. Weighting factors belong to a specified protection framework."
+          "body": "Equivalent dose is H_T = Σ_R w_R D_{T,R}: sum the mean absorbed dose D_{T,R} in tissue T from each radiation type R, multiplied by its dimensionless radiation weighting factor w_R. Effective dose is E = Σ_T w_T H_T, with dimensionless tissue weighting factors w_T that sum to 1. D is measured in Gy; H_T and E in Sv. In the ICRP framework, effective dose uses reference anatomy and sex-averaged organ doses, with population-based tissue weights. These quantities support protection against stochastic effects, such as cancer, rather than predicting a particular patient's injury. Effective dose is not an individual cancer-risk calculation or a radiotherapy prescription; tissue reactions require relevant organ absorbed doses and biological context. Radiation weighting for stochastic effects must not be treated as weighting for tissue reactions."
         },
         {
           "title": "Follow damage pathways",
@@ -8531,8 +8531,23 @@
         "biophysics-radiation-detection",
         "biophysics-isotope-diagnostics"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 8
+      "updatedAt": "2026-11-08",
+      "minutes": 8,
+      "objectives": [
+        "Calculate absorbed dose from deposited energy and mass.",
+        "Distinguish absorbed, equivalent and effective dose and their units.",
+        "Explain why activity or effective dose alone cannot predict an individual tissue reaction."
+      ],
+      "prerequisites": [],
+      "workedExample": {
+        "title": "Calculate energy deposited per unit mass",
+        "prompt": "An illustrative exposure deposits 0.02 J uniformly in 0.10 kg of material. Calculate its absorbed dose, then explain whether that result alone determines effective dose.",
+        "solution": [
+          "Identify absorbed dose as deposited energy divided by the exposed mass: D = E/m.",
+          "Calculate D = 0.02 J / 0.10 kg = 0.20 J/kg = 0.20 Gy.",
+          "Keep the quantity as absorbed dose; radiation type and tissue-dose distribution are needed before calculating protection quantities."
+        ]
+      }
     },
     {
       "id": "biophysics-isotope-diagnostics",
@@ -9859,7 +9874,7 @@
         },
         {
           "title": "Read a pressure–volume loop",
-          "body": "Ventricular filling, isovolumetric contraction, ejection and isovolumetric relaxation form an idealised cycle. The enclosed loop area represents external pressure–volume work per beat. Stroke volume is the difference between end-diastolic and end-systolic volumes, not the absolute volume at either corner."
+          "body": "Ventricular filling, isovolumetric contraction, ejection and isovolumetric relaxation form an idealised cycle. The enclosed loop area represents external pressure–volume work per beat: integrating pressure over volume change gives work, with Pa × m³ = J. Stroke volume is the difference between end-diastolic and end-systolic volumes, not the absolute volume at either corner. ECG voltage in mV measures electrical potential difference; its amplitude or area cannot supply pressure–volume work without separate mechanical measurements."
         },
         {
           "title": "Connect electrical sequence",
@@ -9867,7 +9882,7 @@
         },
         {
           "title": "Work two checks",
-          "body": "For a simplified mean ejection pressure of 100 mmHg and stroke volume 70 mL, pressure times volume is roughly 0.93 J, an approximation to external work. For ideal limb-lead voltages with consistent sign convention, lead II = lead I + lead III. Check calibration before converting millimetres into time or millivolts."
+          "body": "For mean ejection pressure 100 mmHg and stroke volume 70 mL, the simplified estimate is W ≈ P × SV = (100 × 133.322 Pa) × (70 × 10⁻⁶ m³) ≈ 0.93 J. This neglects filling work and kinetic-energy changes; the measured pressure–volume loop gives the cycle's external pressure–volume work. Separately, simultaneous limb-lead voltages with conventional signs obey lead II = lead I + lead III. If I = +0.3 mV and II = +1.0 mV, III = +0.7 mV. This voltage calculation does not measure mechanical work. Check calibration before converting millimetres into time or millivolts."
         }
       ],
       "question": {
@@ -9889,15 +9904,30 @@
         "answer": 1
       },
       "recall": {
-        "prompt": "Explain circulation, cardiac work and the ecg: state the mechanism, work an example and name one assumption.",
-        "answer": "Pressure integrated over volume change gives mechanical work. III = II − I = 1.0 − 0.3 = 0.7 mV. For a simplified mean ejection pressure of 100 mmHg and stroke volume 70 mL, pressure times volume is roughly 0.93 J, an approximation to external work. For ideal limb-lead voltages with consistent sign convention, lead II = lead I + lead III. Check calibration before converting millimetres into time or millivolts."
+        "prompt": "At the same instant, conventional limb leads record I = +0.3 mV and II = +1.0 mV. Use II = I + III to calculate lead III. Separately, estimate external work per beat from mean ejection pressure 100 mmHg and stroke volume 70 mL, using 1 mmHg ≈ 133.322 Pa and 1 mL = 10⁻⁶ m³. Explain why ECG voltage cannot determine pressure–volume work, and name one assumption of the work estimate.",
+        "answer": "III = II − I = (+1.0 − 0.3) mV = +0.7 mV, using simultaneous readings with conventional limb-lead signs. The separate mechanical estimate is W ≈ P × SV = (100 × 133.322 Pa) × (70 × 10⁻⁶ m³) ≈ 0.93 J per beat. It treats ejection pressure as a representative mean and neglects filling work and kinetic-energy changes. A pressure–volume loop measures the pressure–volume work over the cycle. ECG voltage is electrical potential difference in mV, so it cannot provide this work without pressure and volume measurements."
       },
       "related": [
         "biophysics-magnetic-resonance",
         "biophysics-respiratory-physics"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 8
+      "updatedAt": "2026-11-08",
+      "minutes": 8,
+      "objectives": [
+        "Interpret the area of a ventricular pressure–volume loop as external work per beat.",
+        "Calculate an illustrative stroke-work estimate with consistent pressure and volume units.",
+        "Use the conventional limb-lead relationship while separating voltage from mechanical work."
+      ],
+      "prerequisites": [],
+      "workedExample": {
+        "title": "Keep mechanical work separate from voltage",
+        "prompt": "Use mean ejection pressure 100 mmHg and stroke volume 70 mL to estimate work per beat. Separately, calculate lead III when simultaneous conventional leads I and II are +0.3 and +1.0 mV.",
+        "solution": [
+          "Convert pressure and volume: 100 mmHg = 13,332.2 Pa and 70 mL = 70 × 10⁻⁶ m³.",
+          "Estimate W ≈ P × SV = 13,332.2 × 70 × 10⁻⁶ ≈ 0.93 J, neglecting filling work and kinetic-energy changes.",
+          "Use II = I + III independently: III = +1.0 − 0.3 = +0.7 mV. Voltage does not provide pressure–volume work."
+        ]
+      }
     },
     {
       "id": "biophysics-respiratory-physics",
@@ -10118,7 +10148,7 @@
         },
         {
           "title": "Work a dilution",
-          "body": "A fivefold diluted sample has A = 0.40, and the calibration gives concentration 2 units per absorbance unit. Diluted concentration is 0.80 units; original concentration is 4.0 units. Apply the dilution factor after using the calibration, and keep concentration units consistent."
+          "body": "In this illustrative calibration, concentration c = (2.0 mmol/L) × A, with dimensionless, blank-corrected absorbance A. Dilute a 1.0 mL aliquot to a final volume of 5.0 mL: the dilution factor is 5.0/1.0 = 5, not six. If the diluted sample has A = 0.40, c_diluted = (2.0 mmol/L) × 0.40 = 0.80 mmol/L, and c_original = 5 × 0.80 mmol/L = 4.0 mmol/L. Apply the dilution factor after the calibration. This assumes no solute loss or chemical change, the same wavelength and path length as the calibration, and a diluted reading within its validated linear range."
         },
         {
           "title": "Recognise failed assumptions",
@@ -10144,15 +10174,30 @@
         "answer": 2
       },
       "recall": {
-        "prompt": "Explain blanks, dilution and absorbance: state the mechanism, work an example and name one assumption.",
-        "answer": "10⁻³/10⁻¹ = 10⁻², or one hundredth. 0.6 × 10 = 6 concentration units. Stray light, turbidity, chemical changes and detector limits can bend a calibration. A reading beyond the validated range should prompt suitable dilution or method review. A blank cannot make a scattering suspension behave like an ideal clear solution."
+        "prompt": "A 1.0 mL aliquot is diluted to a final volume of 5.0 mL. Its blank-corrected absorbance is A = 0.40, and the calibration is c = (2.0 mmol/L) × A, where A is dimensionless. Calculate the diluted and original concentrations with units. Explain the blank's role and state one assumption needed to use the calibration and dilution factor.",
+        "answer": "c_diluted = (2.0 mmol/L) × 0.40 = 0.80 mmol/L. The dilution factor is final volume/aliquot volume = 5.0/1.0 = 5, so c_original = 5 × 0.80 mmol/L = 4.0 mmol/L. The blank establishes the solvent and container reference for the absorbance measurement; it does not correct every interference. The calculation assumes no solute loss or chemical change during dilution and a reading within the validated linear calibration range at the same wavelength and path length. Turbidity or stray light can invalidate the measurement even after blanking."
       },
       "related": [
         "biophysics-practical-refractometry",
         "biophysics-practical-polarimetry"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 6
+      "updatedAt": "2026-11-08",
+      "minutes": 6,
+      "objectives": [
+        "Convert fractional transmission to absorbance and compare transmission ratios.",
+        "Apply an illustrative absorbance calibration and undo a dilution using final and aliquot volumes.",
+        "Identify assumptions and interferences that blank correction cannot remove."
+      ],
+      "prerequisites": [],
+      "workedExample": {
+        "title": "Undo a fivefold dilution after calibration",
+        "prompt": "Dilute a 1.0 mL aliquot to a final volume of 5.0 mL. Its blank-corrected absorbance is 0.40. For the illustrative calibration c = (2.0 mmol/L) × A, find the original concentration.",
+        "solution": [
+          "Apply the calibration to the diluted sample: c = (2.0 mmol/L) × 0.40 = 0.80 mmol/L.",
+          "Use final volume divided by aliquot volume: the dilution factor is 5.0/1.0 = 5.",
+          "Multiply the diluted concentration by five: c_original = 4.0 mmol/L, assuming no solute loss or chemical change and a valid linear calibration."
+        ]
+      }
     },
     {
       "id": "biophysics-practical-polarimetry",
