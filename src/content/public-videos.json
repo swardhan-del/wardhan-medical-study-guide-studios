@@ -1498,6 +1498,94 @@
         "key": "Apical left; basal right. Membrane GFP is green; H2B-RFP-labelled nuclei are magenta. These colours label cell components in both conditions.",
         "limits": "Silent, accelerated, low-resolution research clip. Five-minute acquisition intervals are described in the paper; playback seconds are not biological time. Enlarging the image adds no detail. Two selected clips are not a complete population analysis."
       }
+    },
+    {
+      "id": "confidence-interval-coverage",
+      "title": "What does 95% confidence mean?",
+      "summary": "Build an interval from a fictional sample mean and margin of error. Compare three intervals to see what repeated-sample coverage means.",
+      "subject": "biostatistics",
+      "topicIds": [
+        "biostatistics-foundations"
+      ],
+      "lessonIds": [
+        "standard-deviation-standard-error"
+      ],
+      "durationSeconds": 69.7,
+      "width": 960,
+      "height": 540,
+      "audioContent": "speech",
+      "status": "public",
+      "publicApproval": "Owner-requested original website explainer, 13 November 2026. Public references and fictional teaching example verified.",
+      "medicalReview": "editorial-reviewed",
+      "aiGenerated": true,
+      "sourceUrl": "/media/explainers/confidence-interval-coverage.mp4",
+      "posterUrl": "/media/explainers/confidence-interval-coverage.webp",
+      "captions": [
+        {
+          "src": "/media/explainers/confidence-interval-coverage.vtt",
+          "language": "en",
+          "label": "English"
+        }
+      ],
+      "transcript": [
+        {
+          "startSeconds": 0.0,
+          "text": "Suppose a sample of visits gives an average lab waiting time of eighteen minutes."
+        },
+        {
+          "startSeconds": 4.911,
+          "text": "How much uncertainty is there in our estimate of the population mean?"
+        },
+        {
+          "startSeconds": 9.526,
+          "text": "In this example, the method gives a margin of error of two minutes."
+        },
+        {
+          "startSeconds": 13.696,
+          "text": "Subtract two from eighteen to get sixteen. Add two to get twenty. The interval runs from sixteen to twenty minutes."
+        },
+        {
+          "startSeconds": 21.626,
+          "text": "Imagine repeating the same sampling and interval method. Each new sample can produce different endpoints."
+        },
+        {
+          "startSeconds": 28.2,
+          "text": "The vertical line marks the fictional population mean, eighteen point five minutes. The first two intervals cross it."
+        },
+        {
+          "startSeconds": 35.944,
+          "text": "The third interval ends at seventeen point five. It misses the fixed mean of eighteen point five."
+        },
+        {
+          "startSeconds": 41.746,
+          "text": "These three intervals are a drawing. A well-calibrated ninety-five percent method covers the true mean about ninety-five percent of the time across many repetitions, under its assumptions."
+        },
+        {
+          "startSeconds": 53.353,
+          "text": "The ninety-five percent describes the method's long-run coverage. Once you have sampled, the endpoints and the population mean are fixed."
+        },
+        {
+          "startSeconds": 61.709,
+          "text": "More independent observations can improve precision. A narrow interval can still mislead if your sampling method is biased."
+        }
+      ],
+      "mimeType": "video/mp4",
+      "explainer": {
+        "sources": [
+          {
+            "title": "NIST · Confidence Limits for the Mean",
+            "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+          },
+          {
+            "title": "OpenStax · A Single Population Mean using the Normal Distribution",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/8-1-a-single-population-mean-using-the-normal-distribution"
+          }
+        ],
+        "furtherViewing": {
+          "title": "Watch Statistics Canada’s confidence-interval explainer",
+          "url": "https://www.statcan.gc.ca/en/events-training/training/data-literacy/catalogue/892000062026002"
+        }
+      }
     }
   ]
 }

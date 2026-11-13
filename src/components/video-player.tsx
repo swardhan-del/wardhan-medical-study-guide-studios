@@ -103,9 +103,25 @@ export function VideoPlayer({ video }: { video: PublicVideo }) {
       <a href={video.sourceUrl} target="_blank" rel="noopener noreferrer">
         Open video in a new tab
       </a>
+      {video.explainer && (
+        <div className="study-details">
+          <p><strong>Sources for this explainer</strong></p>
+          <ul>
+            {video.explainer.sources.map(source => (
+              <li key={source.url}><a href={source.url}>{source.title}</a></li>
+            ))}
+          </ul>
+          {video.explainer.furtherViewing && (
+            <p><a href={video.explainer.furtherViewing.url}>{video.explainer.furtherViewing.title}</a></p>
+          )}
+          <p className="muted-note">Independent subject-specialist review is pending.</p>
+        </div>
+      )}
       {video.aiGenerated && (
         <p className="muted-note">
-          AI-assisted educational recap with synthetic voices. The script was checked against the lesson sources; independent clinical peer review has not been completed.
+          {video.explainer
+            ? "AI-assisted script and synthetic narration."
+            : "AI-assisted educational recap with synthetic voices. The script was checked against the lesson sources. Independent clinical peer review is pending."}
         </p>
       )}
       <details className="study-details">

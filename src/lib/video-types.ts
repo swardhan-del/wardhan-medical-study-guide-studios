@@ -11,13 +11,17 @@ export type PublicVideo = {
   audioContent: "speech" | "non-speech" | "silent";
   status: "public";
   publicApproval: string;
-  medicalReview: "reviewed";
+  medicalReview: "reviewed" | "editorial-reviewed";
   aiGenerated: boolean;
   sourceUrl: string;
   posterUrl: string;
   captions: { src: string; language: string; label: string }[];
   transcript: { startSeconds: number; text: string }[];
   mimeType: "video/mp4" | "video/webm";
+  explainer?: {
+    sources: { title: string; url: string }[];
+    furtherViewing?: { title: string; url: string };
+  };
   researchContext?: {
     creator: string;
     title: string;

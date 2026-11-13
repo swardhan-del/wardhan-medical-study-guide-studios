@@ -25,7 +25,7 @@ export default async function VideoPage({ params }: Props) {
         node={taxonomyNodes.find((n) => n.id === v.topicIds[0])}
         current={{ name: v.title, href: `/videos/${v.id}` }}
       />
-      <p className="eyebrow">Video · {videoDuration(v.durationSeconds)}</p>
+      <p className="eyebrow">{v.explainer ? "Explainer" : "Video"} · {videoDuration(v.durationSeconds)}</p>
       <h1>{v.title}</h1>
       <p className="interior-lede">{v.summary}</p>
       <VideoPlayer video={v} />

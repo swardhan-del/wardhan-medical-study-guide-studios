@@ -26,7 +26,7 @@ for (const session of firstStudySessions) {
 add("/about", "About this independent medical study library", "An independent, student-led library of medical-science explanations and practice, created by Siddhartha Harshwardhan. Read its purpose and editorial limits.");
 add("/library", "Medical study library: lessons and practice", "Find free anatomy, histology, cell biology, biochemistry, physiology, genetics and biophysics lessons, with source references and explained questions.");
 add("/subjects", "Medical subjects and learning paths", "Choose a medical-science subject, find a starting lesson and see which topics and study resources are available.");
-add("/videos", "Medical-science video recaps", "Watch captioned educational recaps, read their transcripts and continue with the related medical-science lessons.", videos.records.length > 0);
+add("/videos", "Medical-science videos and explainers", "Watch captioned explanations and recaps, read their transcripts and continue with the related lessons.", videos.records.length > 0);
 add("/starter-pack", "Free Study Guide starter pack", "Seven starting lessons, recaps and explained questions. Read online, download an offline HTML copy, or print and save as PDF.");
 add("/terms", "Educational terms and disclaimer", "Understand the purpose, limitations and terms of this independent medical-science study support.", false, "Legal notice");
 add("/waitlist", "Pre-launch Study Guide waitlist", "Read what optional launch and free-resource updates include, with a clearly labelled demo while signups are closed.", false, "Pre-launch signup utility");
@@ -78,7 +78,10 @@ for (const record of catalog.records) {
   const path = `/library/${record.id}`, canonical = canonicalResourcePath(record);
   add(path, record.title, record.summary.length < 60 ? `${record.title}. ${record.summary}` : record.summary, canonical === path && qualityAllowsIndexing(record.id), canonical === path ? (qualityAllowsIndexing(record.id) ? undefined : "Lesson quality review pending") : "Redirect to canonical learning route", { canonical, lastModified: record.updatedAt });
 }
-for (const video of videos.records) add(`/videos/${video.id}`, `${video.title}: video recap`, `Watch the captioned recap: ${video.summary}`);
+for (const video of videos.records) {
+  const type = "explainer" in video ? "explainer" : "video recap";
+  add(`/videos/${video.id}`, `${video.title}: ${type}`, video.summary);
+}
 const seenDirectories = new Set<string>();
 for (const node of taxonomy.nodes) {
   const ids = new Set(node.resources);
