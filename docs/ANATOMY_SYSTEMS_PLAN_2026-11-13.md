@@ -9,3 +9,9 @@
 The explorer starts with one model per system. The regional anatomy course supplies the detailed lesson order. The background artwork is decorative. The study diagrams are original simplified schematics with their own text equivalents and linked anatomy references.
 
 For a model to be ready for review, all diagram controls must work with a keyboard, labels must remain readable at narrow widths, static text must be available with JavaScript disabled and existing browser progress must still load. Published source and asset provenance remains in the existing curation process.
+
+## First implementation and artwork
+
+The initial implementation adds 11 models, 22 objective questions with option-specific feedback and 11 written recall prompts. The cardiovascular model traces both circuits and the reproductive model compares two separate pathways. The other models introduce one anatomical relationship each. Every model links to an existing deeper lesson and to its OpenStax chapter.
+
+The homepage atlas background is original decorative artwork generated with the built-in ImageGen tool. The prompt called for a wide ivory-paper anatomical atlas engraving with muted teal and graphite linework, a rib cage and shoulder girdle overlapping a small branching capillary study on the right, and quiet space for website text on the left. The site uses 1440 px and 720 px WebP variants.

@@ -1,3 +1,4 @@
+import { anatomySystems, anatomySystemHref, anatomySystemsPath } from "../content/anatomy-systems.ts";
 import { physiologyCoursePath } from "../content/curriculum.ts";
 import { qualityAllowsIndexing } from "./lesson-quality.ts";
 import catalog from "../content/public-catalog.json" with { type: "json" };
@@ -41,6 +42,11 @@ add("/practice/physiology", "Renal haemodynamics and blood-gas practice", "Explo
 add("/practice/renal-challenge", "Five-minute renal physiology challenge", "Answer five free questions on filtration, ADH and acid–base balance, then review the explanation for each answer.");
 add("/learn/topics", "Guided medical-science topic sequences", "Connect existing lessons through focused study sequences in tissue identification, membrane transport, and DNA, inheritance and gene expression.");
 add("/learn/visual-studio", "Visual study studio: explore histology", "Explore clickable lymph-node diagrams, compare organ architecture, follow slide preparation and watch three captioned visual minutes.", false, "Original visual teaching with specialist review outstanding");
+
+add(anatomySystemsPath, "Interactive anatomy: explore the body systems", "Explore 11 original body-system diagrams with labelled landmarks, explained questions and written recall.", false, "Introductory models with specialist review outstanding");
+for (const system of anatomySystems) {
+  add(anatomySystemHref(system.id), system.title, system.objective, false, "Introductory model with specialist review outstanding");
+}
 
 for (const subject of subjectInterests) {
   add(`/study/${subject.id}`, `${subject.title}: lessons and learning path`, `Start ${subject.title.toLowerCase()} with a guided lesson, then find practice, revision notes and the published topic sequence.`);
