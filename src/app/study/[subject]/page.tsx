@@ -1,3 +1,5 @@
+import { firstSessionHref } from "@/content/first-study-sessions";
+import { anatomySystemsPath } from "@/content/anatomy-systems";
 import { physiologyCoursePath } from "@/content/curriculum";
 import { TopicGuideLinks } from "@/components/topic-guide-links";
 import { searchMetadata } from "@/lib/search-metadata";
@@ -31,13 +33,13 @@ export default async function SubjectStudyPage({ params }: Props) {
  const cards = lessons.map(l => { const g = groups.find(g => g.lessonIds.includes(l.id))!; const video = videosForLesson(l.id)[0]; return { id: l.id, title: l.title, summary: l.summary, tags: l.tags, searchText: (searchIndex as Record<string, string>)[l.id], minutes: l.minutes, group: g.id, groupTitle: g.title, figure: figuresForResource(l.id)[0], videoId: video?.id, duration: video ? videoDuration(video.durationSeconds) : undefined, audio: audio.some(a => a.lessonId === l.id) }; });
  return <div className="site-container study-page">
    <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/subjects">Subjects</Link><span aria-hidden="true"> / </span><span aria-current="page">{s.title}</span></nav>
-   <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><div className="action-row"><Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start the first lesson</Link><Link href={`/learn/foundations/${subject}`}>Learn the foundations</Link></div><p className="interior-lede">{s.description}</p>
+   <header className="study-hero"><p className="eyebrow">Subject learning</p><h1>{s.title}</h1><div className="action-row"><Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start the first lesson</Link><Link className="button button-secondary" href={firstSessionHref(subject)}>Try a five-minute study session</Link><Link href={`/learn/foundations/${subject}`}>Learn the foundations</Link></div><p className="interior-lede">{s.description}</p>
      <div className="action-row"><Link className="button button-secondary" href={"/study/" + subject + "/revision"}>Open printable revision notes</Link><Link href={"/study/" + subject + "/guide"}>Guide parts and visuals</Link><Link href={"/subjects/" + subject}>Reference directory and source previews</Link><Link href="/library">Return to the library</Link></div>
    </header>
    {subject === "physiology" && <p><Link className="button button-secondary" href={physiologyCoursePath}>Full Course</Link></p>}
    <SubjectHubOverview subject={subject} combinedGenetics />
    {subject === "anatomy" ? <AnatomyLearningPath/> : <SubjectTopicMap subject={subject} />}
-   {subject === "anatomy" && <AnatomyCourseIntro />}
+   {subject === "anatomy" && <><section className="study-panel"><h2>Explore anatomy by body system</h2><p>Use a diagram, inspect its landmarks and practise an anatomical relationship in each of the 11 systems.</p><Link className="button button-secondary" href={anatomySystemsPath}>Open the body systems explorer</Link></section><AnatomyCourseIntro /></>}
    {subject === "histology" && <section className="study-panel"><h2>Practise recognising real sections</h2><p>Start with epithelial structure, hide the labels, then compare the two available microscope sections. Renal tubule practice begins with three schematics and links to further public slide practice.</p><div className="action-row"><Link href="/library/epithelia">Study epithelium and compare sections</Link><Link href="/practice/histology">Open tissue identification practice</Link></div></section>}
    {subject === "biophysics" && <BiophysicsCourseIntro />}
    <nav className="lesson-jumps" aria-label="Subject shortcuts"><a href="#lesson-order">Lesson order</a><a href="#subject-lessons">Find a lesson</a><a href="#coverage">Coverage and gaps</a></nav>

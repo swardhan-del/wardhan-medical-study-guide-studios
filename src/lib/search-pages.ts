@@ -1,3 +1,4 @@
+import { anatomySystems, anatomySystemHref, anatomySystemsPath } from "../content/anatomy-systems.ts";
 import { physiologyCoursePath } from "../content/curriculum.ts";
 import { qualityAllowsIndexing } from "./lesson-quality.ts";
 import catalog from "../content/public-catalog.json" with { type: "json" };
@@ -8,6 +9,7 @@ import { foundations } from "../content/foundations.ts";
 import { renalLessons } from "../content/renal-course.ts";
 import { anatomyLearningPages } from "../content/anatomy-learning.ts";
 import { topicGuides } from "../content/topic-guides.ts";
+import { firstSessionHref, firstSessionsPath, firstStudySessions } from "../content/first-study-sessions.ts";
 
 export type SearchPage = { path: string; title: string; description: string; index: boolean; canonical?: string; redirect?: string; lastModified?: string; reason?: string };
 const pages: SearchPage[] = [];
@@ -17,6 +19,10 @@ function add(path: string, title: string, description: string, index = true, rea
 }
 add("/", "Free medical-science lessons and study guides", "Study anatomy, histology, physiology, biochemistry, genetics and biophysics with free lessons, labelled visuals and explained practice questions.");
 add("/start", "Start learning medical sciences", "Choose a subject, follow its recommended first lessons and check your understanding with free medical-science practice.");
+add(firstSessionsPath, "Short medical-science study sessions", "Try a worked example, check an answer and return for follow-up practice in anatomy, histology, biochemistry, physiology and more.");
+for (const session of firstStudySessions) {
+  add(firstSessionHref(session.id), session.title, session.objective, false, "Short practice entry paired with a full published lesson");
+}
 add("/about", "About this independent medical study library", "An independent, student-led library of medical-science explanations and practice, created by Siddhartha Harshwardhan. Read its purpose and editorial limits.");
 add("/library", "Medical study library: lessons and practice", "Find free anatomy, histology, cell biology, biochemistry, physiology, genetics and biophysics lessons, with source references and explained questions.");
 add("/subjects", "Medical subjects and learning paths", "Choose a medical-science subject, find a starting lesson and see which topics and study resources are available.");
@@ -41,6 +47,11 @@ add("/practice/physiology", "Renal haemodynamics and blood-gas practice", "Explo
 add("/practice/renal-challenge", "Five-minute renal physiology challenge", "Answer five free questions on filtration, ADH and acid–base balance, then review the explanation for each answer.");
 add("/learn/topics", "Guided medical-science topic sequences", "Connect existing lessons through focused study sequences in tissue identification, membrane transport, and DNA, inheritance and gene expression.");
 add("/learn/visual-studio", "Visual study studio: explore histology", "Explore clickable lymph-node diagrams, compare organ architecture, follow slide preparation and watch three captioned visual minutes.", false, "Original visual teaching with specialist review outstanding");
+
+add(anatomySystemsPath, "Interactive anatomy: explore the body systems", "Explore 11 original body-system diagrams with labelled landmarks, explained questions and written recall.", false, "Introductory models with specialist review outstanding");
+for (const system of anatomySystems) {
+  add(anatomySystemHref(system.id), system.title, system.objective, false, "Introductory model with specialist review outstanding");
+}
 
 for (const subject of subjectInterests) {
   add(`/study/${subject.id}`, `${subject.title}: lessons and learning path`, `Start ${subject.title.toLowerCase()} with a guided lesson, then find practice, revision notes and the published topic sequence.`);

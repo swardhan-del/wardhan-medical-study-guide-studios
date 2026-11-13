@@ -1260,6 +1260,8 @@ h1 em {
   display: flex;
   flex-direction: column;
   gap: 9px;
+  min-width: 0;
+  overflow-wrap: anywhere;
   text-align: right;
 }
 
@@ -4050,8 +4052,8 @@ select:focus-visible {
 /* Reach a concept before the introductory content on desktop and mobile. */
 .quick-start { padding-top: 1.25rem; padding-bottom: .5rem; }
 .quick-search label { display: block; font-weight: 700; margin-bottom: .5rem; }
-.quick-search > div { display: flex; gap: .5rem; }
-.quick-search input { min-width: 0; flex: 1; padding: .85rem; border: 1px solid var(--line, #b3b4ae); background: #fff; color: #172329; font: inherit; font-size: 1rem; }
+.quick-search > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .5rem; }
+.quick-search input { min-width: 0; width: 100%; padding: .85rem; border: 1px solid var(--line, #b3b4ae); background: #fff; color: #172329; font: inherit; font-size: 1rem; }
 .quick-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .75rem; font-size: .9rem; }
 .library-page > .library-heading { margin-bottom: 1.25rem; }
 .search-match-note { font-size: .85rem; color: #385853; }
@@ -4061,7 +4063,8 @@ select:focus-visible {
   .library-heading h1 { font-size: 2rem; }
   .library-heading .interior-lede { font-size: 1rem; margin: .5rem 0; }
   .catalog-controls { gap: .65rem; }
-  .quick-search .button { padding-left: 1rem; padding-right: 1rem; }
+  .quick-search > div { grid-template-columns: minmax(0, 1fr); }
+  .quick-search .button { justify-self: start; width: auto; max-width: 100%; padding-inline: 1rem; }
 }
 .plexus-recall-map { display: grid; gap: 1rem; padding-left: 1.5rem; }
 .plexus-recall-map > li { padding: .75rem; border-bottom: 1px solid var(--line, #b3b4ae); }
@@ -4110,7 +4113,31 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 @media screen and (max-width: 640px) { .teaching-diagram svg { min-width: 640px; } .diagram-scroll-hint { display: block; } }
 /* First-visit hierarchy: show study choices and teaching content sooner. */
 .hero-section.learning-home { min-height: 0; padding-top: 32px; padding-bottom: 36px; gap: 5%; }
+.atlas-home {
+  background: linear-gradient(90deg, #f5efe4 4%, #f5efe4e8 38%, #f5efe468 74%, #f5efe428),
+    url("/media/anatomy-systems/atlas-background.webp");
+  background-position: center, right center;
+  background-size: cover;
+  border-block: 1px solid #d9d0c2;
+}
 .learning-home h1 { font-size: clamp(2.3rem, 4vw, 3.5rem); }
+@media (min-width: 701px) {
+  .atlas-home .hero-aside {
+    background: #f5efe4eb;
+    border: 1px solid #d9d0c2;
+    border-radius: .85rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .atlas-home {
+    background-image: linear-gradient(180deg, #f5efe4b8, #f5efe4 31%),
+      url("/media/anatomy-systems/atlas-background-small.webp");
+    background-position: center, right top;
+    background-size: cover, auto 28rem;
+    background-repeat: no-repeat;
+  }
+}
 .learning-home .hero-lede { font-size: 1.2rem; line-height: 1.5; }
 .home-subject-links { display: grid; gap: .5rem; }
 .home-subject-links a { padding-block: .35rem; line-height: 1.4; }
@@ -4289,3 +4316,29 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .research-video-comparison > h2 { grid-column: 1 / -1; }
 .research-video-comparison > article { min-width: 0; overflow-wrap: anywhere; }
 .research-video-comparison .native-video { min-width: 0; }
+
+.first-session-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.first-session-list h2 {
+  overflow-wrap: anywhere;
+}
+
+.first-session-page {
+  overflow-wrap: anywhere;
+}
+
+.first-session-page .visual-flow {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.first-session-page .visual-flow li {
+  padding-inline-start: min(3.4rem, 30%);
+}
+
+.first-session-page .practice-question form button {
+  max-width: 100%;
+}
