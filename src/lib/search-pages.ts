@@ -9,6 +9,7 @@ import { foundations } from "../content/foundations.ts";
 import { renalLessons } from "../content/renal-course.ts";
 import { anatomyLearningPages } from "../content/anatomy-learning.ts";
 import { topicGuides } from "../content/topic-guides.ts";
+import { firstSessionHref, firstSessionsPath, firstStudySessions } from "../content/first-study-sessions.ts";
 
 export type SearchPage = { path: string; title: string; description: string; index: boolean; canonical?: string; redirect?: string; lastModified?: string; reason?: string };
 const pages: SearchPage[] = [];
@@ -18,6 +19,10 @@ function add(path: string, title: string, description: string, index = true, rea
 }
 add("/", "Free medical-science lessons and study guides", "Study anatomy, histology, physiology, biochemistry, genetics and biophysics with free lessons, labelled visuals and explained practice questions.");
 add("/start", "Start learning medical sciences", "Choose a subject, follow its recommended first lessons and check your understanding with free medical-science practice.");
+add(firstSessionsPath, "Short medical-science study sessions", "Try a worked example, check an answer and return for follow-up practice in anatomy, histology, biochemistry, physiology and more.");
+for (const session of firstStudySessions) {
+  add(firstSessionHref(session.id), session.title, session.objective, false, "Short practice entry paired with a full published lesson");
+}
 add("/about", "About this independent medical study library", "An independent, student-led library of medical-science explanations and practice, created by Siddhartha Harshwardhan. Read its purpose and editorial limits.");
 add("/library", "Medical study library: lessons and practice", "Find free anatomy, histology, cell biology, biochemistry, physiology, genetics and biophysics lessons, with source references and explained questions.");
 add("/subjects", "Medical subjects and learning paths", "Choose a medical-science subject, find a starting lesson and see which topics and study resources are available.");
@@ -33,7 +38,7 @@ add("/study/planner", "My renal revision planner", "Plan renal revision sessions
 add("/study/map", "Medical-science study map and coverage", "Explore the subject sequence and distinguish available introductions from planned teaching topics.", false, "Includes planned and incomplete content");
 add("/reading-list", "Saved study resources", "Return to the saved-resource section of My Study.", false, "Redirect", { canonical: "/study", redirect: "/study#saved-learning" });
 add("/start/anatomy", "Anatomy: position, directions and planes", "Review anatomical position, directions and body planes before beginning the complete Anatomy Foundations lesson.", false, "Short introduction overlapping the flagship lesson");
-add(physiologyCoursePath, "Medical Physiology Full Course map", "Follow the ordered parts of Medical Physiology and see the released introductions and remaining coverage gaps in cardiovascular physiology.", false, "Partial curriculum coverage");
+add(physiologyCoursePath, "Medical Physiology Full Course map", "Follow the ordered parts of Medical Physiology and find the available lessons and remaining gaps in cardiovascular and respiratory physiology.", false, "Partial curriculum coverage");
 add("/learn/renal", "Renal physiology: eight lessons with practice", "Study renal circulation, clearance, tubular transport, urine concentration and acid–base regulation, then apply the concepts in explained questions.");
 add("/practice/biophysics", "Biophysics practice: predict and calculate", "Use six interactive models to connect equations, graphs and medical measurement, then explain how changing a variable affects the result.");
 add("/practice/histology", "Histology practice: identify renal tubules", "Compare proximal tubule, distal tubule and collecting-duct schematics. Reveal structural clues and connect them to physiology.");

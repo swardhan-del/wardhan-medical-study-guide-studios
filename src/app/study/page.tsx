@@ -26,7 +26,7 @@ export default function StudyPage() {
       </section>
       <ContinueLearning lessons={journeyIndex} />
       <SavedSummaries lessons={journeyLessons.map(({ id, title, summary }) => ({ id, title, summary }))} />
-      <StudyDashboard />
+      <div id="subject-review"><StudyDashboard /></div>
       <SavedLearning records={publicCatalog} />
     </div>
   );

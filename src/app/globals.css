@@ -4316,3 +4316,29 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .research-video-comparison > h2 { grid-column: 1 / -1; }
 .research-video-comparison > article { min-width: 0; overflow-wrap: anywhere; }
 .research-video-comparison .native-video { min-width: 0; }
+
+.first-session-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.first-session-list h2 {
+  overflow-wrap: anywhere;
+}
+
+.first-session-page {
+  overflow-wrap: anywhere;
+}
+
+.first-session-page .visual-flow {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.first-session-page .visual-flow li {
+  padding-inline-start: min(3.4rem, 30%);
+}
+
+.first-session-page .practice-question form button {
+  max-width: 100%;
+}
