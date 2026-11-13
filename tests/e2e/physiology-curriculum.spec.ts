@@ -58,3 +58,26 @@ test("chapter disclosures work at 320 pixels with 200% text", async ({ page }) =
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
   expect((await new AxeBuilder({ page }).include("main").analyze()).violations).toEqual([]);
 });
+
+
+test("respiratory chapters reuse existing practice, course navigation and saved progress", async ({ page }) => {
+  await page.goto(coursePath);
+  await page.getByRole("navigation", { name: "Course parts" }).getByRole("link", { name: "Respiratory physiology", exact: true }).click();
+  const respiratory = page.locator("#respiratory");
+  await expect(respiratory.locator("details")).toHaveCount(7);
+  await expect(respiratory.locator("#respiratory-gas-transport")).toContainText("No mapped lesson");
+  await expect(respiratory.locator("#respiratory-acid-base").getByRole("link", { name: /^Practice:/ })).toHaveAttribute("href", "/learn/renal/renal-acid-base#lesson-quiz");
+
+  const ventilation = respiratory.locator("#pulmonary-ventilation");
+  const existingLesson = library.lessons.find(item => item.id === "respiratory-mechanics")!;
+  await ventilation.getByRole("link", { name: "Practice: " + existingLesson.title, exact: true }).click();
+  await expect(page).toHaveURL(/\/library\/respiratory-mechanics#concept-check-title$/);
+  const check = page.locator("#concept-check-title:visible");
+  await check.getByRole("radio", { name: existingLesson.question.options[existingLesson.question.answer].text, exact: true }).check();
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(check.getByRole("status")).toContainText("Correct");
+  const nav = page.getByRole("navigation", { name: "Full Course chapter navigation" });
+  await expect(nav.getByRole("link", { name: "Next chapter: Gas exchange" })).toHaveAttribute("href", coursePath + "#pulmonary-gas-exchange");
+  await nav.getByRole("link", { name: "Back to this chapter in Full Course" }).click();
+  await expect(page.getByRole("link", { name: "Resume: " + existingLesson.title })).toHaveAttribute("href", "/library/respiratory-mechanics#concept-check-title");
+});

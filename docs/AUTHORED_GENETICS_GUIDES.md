@@ -1,6 +1,6 @@
 # Authored genetics and immunology resources
 
-The Genetics and Immunology subject pages now place five selected study collections above the full Dropbox directory. The Library links to this section. Students can search by topic, choose reading or practice, expand a contents list, open an exact source file, and continue to a related public web lesson.
+In the 7 September 2026 implementation, the Genetics and Immunology subject pages placed five selected study collections above the full Dropbox directory. The Library linked to this section. Students could search by topic, choose reading or practice, expand a contents list, open an exact source file, and continue to a related public web lesson.
 
 ## Source verification
 
@@ -16,7 +16,7 @@ The Rev03 source duplicate was excluded: its status file explicitly says visual 
 
 ## Access and publication
 
-`src/content/authored-guides.json` contains descriptive metadata and account-scoped Dropbox preview URLs. Original documents, figures, question banks and answer text are not bundled with the website. No public sharing permissions were created. Users need existing access to the archive; related website lessons remain public. Descriptions summarize document coverage and do not certify the source documents as clinically reviewed or complete.
+The historical implementation used account-scoped Dropbox preview URLs. The website now uses its native public lesson catalog. The retired manifest was empty before removal. Original documents, figures, question banks and answer text remain in their source archive.
 
 For updates, recheck the exact Dropbox file and its contents before changing its description or edition. Do not infer completeness from a filename containing "Final" or "Verified". Keep original sources intact. The bounded metadata/content verification record is stored in the parent Dropbox working folder as `genetics-authored-guides-verification-2026-09-07.json`.
 
