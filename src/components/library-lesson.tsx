@@ -56,6 +56,7 @@ import { HistologyFoundationsContent } from "./histology-foundations-content";
 import { AnatomyLessonNavigation, AnatomyIdentification, AnatomyPractice } from "./anatomy-course";
 import { PlexusRecall } from "./plexus-recall";
 import { TeachingDiagram, hasTeachingDiagram } from "./teaching-diagram";
+import { SpirometryGraphExercise } from "./spirometry-graph-exercise";
 import { foundations } from "@/content/foundations";
 import { EducationalFigure, FigureGallery } from "./educational-figure";
 import { figuresForResource } from "@/lib/figures";
@@ -96,7 +97,8 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
   const reviewedSupplementalPractice = ["retinal-structure-light-signal-direction", "vestibular-sensors-rotation-translation", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "neurulation", "placenta", "muscle-histology", "vessel-histology", "blood-marrow", "connective-tissue", "cartilage-bone", "epithelia", "cell-junctions", "liver-pancreas", "gi-histology", "renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
-  const hasFigures = hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
+  const hasSpirometryGraph = lesson.id === "respiratory-mechanics";
+  const hasFigures = hasSpirometryGraph || hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["myelin-and-glial-cells", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
   const foundation = foundations[lesson.subject];
   const subject = subjectInterests.find((s) => s.id === lesson.subject) ?? librarySubjects.find((s) => s.id === lesson.subject)!;
@@ -252,6 +254,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           <AnatomyIdentification lessonId={lesson.id} />
           {hasFigures && <span id="lesson-figures" />}
           <TeachingDiagram lessonId={lesson.id} />
+          {hasSpirometryGraph && <SpirometryGraphExercise />}
           <LessonVisuals lessonId={lesson.id} />
           {reviewVisuals}
           <HistologyTopicVisual lessonId={lesson.id} />
