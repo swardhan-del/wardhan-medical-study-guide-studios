@@ -3650,6 +3650,51 @@
         "RetinalDevelopmentExplorer",
         "SpecimenExplorerEntry"
       ]
+    },
+    {
+      "id": "respiratory-oxygen-content-and-delivery",
+      "route": "/library/respiratory-oxygen-content-and-delivery",
+      "title": "Oxygen transport: pressure, content and delivery",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "oxygen-pressure-content-delivery"
+      ],
+      "figureIds": [],
+      "rationale": "The original comparison or flow makes the relationship from the worked example visible and provides a text equivalent."
+    },
+    {
+      "id": "respiratory-chemoreflex-control",
+      "route": "/library/respiratory-chemoreflex-control",
+      "title": "Control of breathing: trace the chemoreflex",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "co2-chemoreflex-feedback"
+      ],
+      "figureIds": [],
+      "rationale": "The original comparison or flow makes the relationship from the worked example visible and provides a text equivalent."
+    },
+    {
+      "id": "respiratory-exercise-adaptation",
+      "route": "/library/respiratory-exercise-adaptation",
+      "title": "Exercise physiology: match ventilation and blood flow to demand",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "exercise-ventilation-demand"
+      ],
+      "figureIds": [],
+      "rationale": "The original comparison or flow makes the relationship from the worked example visible and provides a text equivalent."
     }
   ],
   "supplementalVisualStudioReview": {

@@ -821,7 +821,11 @@
       "subject": "physiology",
       "parentId": null,
       "kind": "system",
-      "resources": []
+      "resources": [
+        "respiratory-oxygen-content-and-delivery",
+        "respiratory-chemoreflex-control",
+        "respiratory-exercise-adaptation"
+      ]
     },
     {
       "id": "topic-ventilation-perfusion",

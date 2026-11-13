@@ -7,6 +7,9 @@ import { taxonomyNodes } from "@/lib/taxonomy";
 import { LibraryBreadcrumbs } from "@/components/taxonomy-navigation";
 import { VideoPlayer } from "@/components/video-player";
 import { videoDuration } from "@/lib/video-types";
+import { getSiteUrl } from "@/lib/site-url";
+import { videoSchema } from "@/lib/structured-data";
+import { StructuredData } from "@/components/structured-data";
 type Props = { params: Promise<{ id: string }> };
 export function generateStaticParams() {
   return publicVideos.map((v) => ({ id: v.id }));
@@ -21,6 +24,7 @@ export default async function VideoPage({ params }: Props) {
   if (!v) notFound();
   return (
     <article className="site-container library-page">
+      {v.explainer?.publishedAt && <StructuredData data={videoSchema(v, v.explainer.publishedAt, getSiteUrl())} />}
       <LibraryBreadcrumbs
         node={taxonomyNodes.find((n) => n.id === v.topicIds[0])}
         current={{ name: v.title, href: `/videos/${v.id}` }}

@@ -13,6 +13,8 @@ type FirstStudySession = {
   extension: { href: string; label: string };
   question: string;
   followUp: string;
+  weeklyReview: string;
+  weeklyFigure?: string;
 };
 
 export const firstSessionsPath = "/learn/first-session";
@@ -34,6 +36,8 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: anatomySystemsPath, label: "Explore all 11 anatomy system models" },
     question: "anatomy-foundations-knowledge-3",
     followUp: "anatomy-foundations-application-1",
+    weeklyReview: "concept-thoracic-cage-landmarks",
+    weeklyFigure: "thoracic-plane",
   },
   {
     id: "histology",
@@ -51,6 +55,8 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/learn/visual-studio", label: "Compare tissues in the visual studio" },
     question: "histology-foundations-tissues-retrieval-2",
     followUp: "histology-foundations-tissues-transfer-1",
+    weeklyReview: "epithelia-transfer-2",
+    weeklyFigure: "squamous-section",
   },
   {
     id: "cell-biology",
@@ -67,6 +73,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/study/cell-biology", label: "See the Molecular Cell Biology learning path" },
     question: "concept-protein-trafficking",
     followUp: "concept-lysosomal-m6p-tag-receptor-recycling",
+    weeklyReview: "concept-peroxisome-pts1-pex5-cargo",
   },
   {
     id: "biochemistry",
@@ -83,6 +90,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/library/enzyme-kinetics", label: "Study the full enzyme kinetics worked lesson" },
     question: "concept-biochemistry-enzyme-foundations",
     followUp: "biochemistry-enzyme-foundations-application-2",
+    weeklyReview: "biochemistry-enzyme-foundations-application-1",
   },
   {
     id: "physiology",
@@ -99,6 +107,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/learn/topics/membrane-transport", label: "Follow the guided membrane transport sequence" },
     question: "concept-physiology-membrane-foundations",
     followUp: "physiology-membrane-foundations-application-1",
+    weeklyReview: "concept-fluid-and-membrane-transport",
   },
   {
     id: "genetics",
@@ -115,6 +124,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/library/inheritance", label: "Work through the inheritance lesson" },
     question: "genetics-genome-foundations-application-1",
     followUp: "concept-recessive-conditional-probability",
+    weeklyReview: "concept-allele-and-genotype-counts",
   },
   {
     id: "biophysics",
@@ -131,6 +141,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/practice/biophysics", label: "Try the interactive biophysics models" },
     question: "biophysics-membrane-foundations-knowledge-1",
     followUp: "studio-diffusion-rate-versus-time",
+    weeklyReview: "studio-diffusion-simultaneous-factors",
   },
   {
     id: "biostatistics",
@@ -147,6 +158,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/subjects/biostatistics", label: "Explore the Biostatistics subject directory" },
     question: "concept-histogram-bin-counts-example",
     followUp: "concept-mean-median-extreme-value-comparison",
+    weeklyReview: "concept-cohort-case-control-denominators",
   },
   {
     id: "immunology",
@@ -163,6 +175,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/subjects/immunology", label: "Explore the Immunology subject directory" },
     question: "concept-innate-adaptive",
     followUp: "concept-antigen-presentation",
+    weeklyReview: "tcell-controlled-input",
   },
   {
     id: "histology-ii",
@@ -180,9 +193,11 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     extension: { href: "/subjects/histology-ii", label: "Explore the Histology II subject directory" },
     question: "concept-myelin-and-glial-cells",
     followUp: "nerve-practical-01",
+    weeklyReview: "nerve-practical-05",
   },
 ];
 
 export function firstSessionFor(subject: string) {
-  return firstStudySessions.find(session => session.id === subject);
+  const sessionId = subject === "histology-i" ? "histology" : subject;
+  return firstStudySessions.find(session => session.id === sessionId);
 }

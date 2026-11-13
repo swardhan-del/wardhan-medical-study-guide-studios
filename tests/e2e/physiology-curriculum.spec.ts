@@ -65,7 +65,7 @@ test("respiratory chapters reuse existing practice, course navigation and saved 
   await page.getByRole("navigation", { name: "Course parts" }).getByRole("link", { name: "Respiratory physiology", exact: true }).click();
   const respiratory = page.locator("#respiratory");
   await expect(respiratory.locator("details")).toHaveCount(7);
-  await expect(respiratory.locator("#respiratory-gas-transport")).toContainText("No mapped lesson");
+  await expect(respiratory.locator("#respiratory-gas-transport").getByRole("link", { name: /^Practice:/ })).toHaveAttribute("href", "/library/respiratory-oxygen-content-and-delivery#concept-check-title");
   await expect(respiratory.locator("#respiratory-acid-base").getByRole("link", { name: /^Practice:/ })).toHaveAttribute("href", "/learn/renal/renal-acid-base#lesson-quiz");
 
   const ventilation = respiratory.locator("#pulmonary-ventilation");
@@ -80,4 +80,30 @@ test("respiratory chapters reuse existing practice, course navigation and saved 
   await expect(nav.getByRole("link", { name: "Next chapter: Gas exchange" })).toHaveAttribute("href", coursePath + "#pulmonary-gas-exchange");
   await nav.getByRole("link", { name: "Back to this chapter in Full Course" }).click();
   await expect(page.getByRole("link", { name: "Resume: " + existingLesson.title })).toHaveAttribute("href", "/library/respiratory-mechanics#concept-check-title");
+});
+
+test("the three respiratory chapters teach, check and link to the next chapter at 320px", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  const chapters = [
+    ["respiratory-gas-transport", "respiratory-oxygen-content-and-delivery", "respiratory-control"],
+    ["respiratory-control", "respiratory-chemoreflex-control", "cardiopulmonary-adaptation"],
+    ["cardiopulmonary-adaptation", "respiratory-exercise-adaptation", "respiratory-acid-base"],
+  ];
+  for (const [chapter, id, next] of chapters) {
+    await page.goto(coursePath + "#" + chapter);
+    const item = library.lessons.find(lesson => lesson.id === id)!;
+    await page.locator("#" + chapter).getByRole("link", { name: "Practice: " + item.title, exact: true }).click();
+    await expect(page).toHaveURL(new RegExp("/library/" + id + "#concept-check-title$"));
+    const check = page.locator("#concept-check-title:visible");
+    await check.getByRole("radio", { name: item.question.options[item.question.answer].text, exact: true }).check();
+    await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+    await expect(check.getByRole("status")).toContainText("Correct");
+    await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+    const visual = page.getByRole("region", { name: "Visual study prompts" });
+    await visual.getByText("Read a text description", { exact: true }).press("Enter");
+    await expect(visual.locator("details[open] p")).toBeVisible();
+    await expect(page.getByRole("navigation", { name: "Full Course chapter navigation" }).getByRole("link", { name: /^Next chapter:/ })).toHaveAttribute("href", coursePath + "#" + next);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth), id).toBe(320);
+    expect((await new AxeBuilder({ page }).include("[data-lesson-visuals]").analyze()).violations).toEqual([]);
+  }
 });

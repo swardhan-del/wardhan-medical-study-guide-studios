@@ -5,6 +5,9 @@ import Link from "next/link";
 import { SavedLearning } from "@/components/saved-learning";
 import { publicCatalog } from "@/lib/catalog";
 import { StudyDashboard } from "@/components/study-dashboard";
+import { firstStudySessions } from "@/content/first-study-sessions";
+import { publicFigures } from "@/lib/figures";
+const reviewFigures = publicFigures.filter(figure => firstStudySessions.some(session => session.weeklyFigure === figure.id));
 export const metadata = searchMetadata("/study");
 export default function StudyPage() {
   return (
@@ -26,7 +29,7 @@ export default function StudyPage() {
       </section>
       <ContinueLearning lessons={journeyIndex} />
       <SavedSummaries lessons={journeyLessons.map(({ id, title, summary }) => ({ id, title, summary }))} />
-      <div id="subject-review"><StudyDashboard /></div>
+      <div id="subject-review"><StudyDashboard reviewFigures={reviewFigures} /></div>
       <SavedLearning records={publicCatalog} />
     </div>
   );

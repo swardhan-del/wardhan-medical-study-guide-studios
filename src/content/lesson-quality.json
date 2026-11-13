@@ -6687,6 +6687,188 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "respiratory-oxygen-content-and-delivery",
+      "title": "Oxygen transport: pressure, content and delivery",
+      "subject": "physiology",
+      "topic": "Respiratory physiology",
+      "slug": "respiratory-oxygen-content-and-delivery",
+      "learnerLevel": "Undergraduate introductory physiology",
+      "objectives": [
+        "Distinguish oxygen partial pressure, saturation and oxygen content.",
+        "Calculate oxygen delivery from blood flow and arterial oxygen content.",
+        "Explain why normal oxygen pressure alone cannot establish adequate tissue oxygenation."
+      ],
+      "sources": [
+        {
+          "title": "Medical Physiology — Respiratory Physiology, Revision 63",
+          "publisherOrAuthor": "Wardhan Medical Study Guide Studios",
+          "citation": "Sections 3.3.1–3.3.4, oxygen transport and impaired tissue oxygenation",
+          "accessedAt": "2026-11-13",
+          "sourceType": "authored-adaptation"
+        },
+        {
+          "title": "OpenStax: Transport of gases",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-5-transport-of-gases",
+          "accessedAt": "2026-11-13",
+          "sourceType": "textbook"
+        }
+      ],
+      "links": {
+        "prerequisite": [
+          "ventilation-perfusion"
+        ],
+        "related": [
+          "respiratory-chemoreflex-control",
+          "respiratory-exercise-adaptation"
+        ],
+        "compare": [],
+        "next": []
+      },
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original comparison or flow with a text equivalent and linked reference.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-13",
+      "nextReviewAt": "2027-05-13",
+      "reviewEvidenceIds": [
+        "respiratory-oxygen-content-and-delivery-editorial-20261113",
+        "respiratory-oxygen-content-and-delivery-visual-20261113",
+        "respiratory-oxygen-content-and-delivery-accessibility-20261113",
+        "respiratory-oxygen-content-and-delivery-readability-20261113"
+      ],
+      "limitations": [
+        "Introductory chapter coverage. Examples and calculated values are fictional.",
+        "Independent clinical review is outstanding."
+      ]
+    },
+    {
+      "lessonId": "respiratory-chemoreflex-control",
+      "title": "Control of breathing: trace the chemoreflex",
+      "subject": "physiology",
+      "topic": "Respiratory physiology",
+      "slug": "respiratory-chemoreflex-control",
+      "learnerLevel": "Undergraduate introductory physiology",
+      "objectives": [
+        "Trace the central ventilatory response to a rise in arterial carbon dioxide.",
+        "Identify the arterial variables detected by peripheral chemoreceptors.",
+        "Explain how a ventilatory response can oppose an initial carbon dioxide disturbance."
+      ],
+      "sources": [
+        {
+          "title": "Medical Physiology — Respiratory Physiology, Revision 63",
+          "publisherOrAuthor": "Wardhan Medical Study Guide Studios",
+          "citation": "Sections 3.4.1–3.4.3, brainstem networks and ventilatory control",
+          "accessedAt": "2026-11-13",
+          "sourceType": "authored-adaptation"
+        },
+        {
+          "title": "OpenStax: The process of breathing and its control",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing",
+          "accessedAt": "2026-11-13",
+          "sourceType": "textbook"
+        }
+      ],
+      "links": {
+        "prerequisite": [
+          "respiratory-mechanics",
+          "respiratory-oxygen-content-and-delivery"
+        ],
+        "related": [
+          "alveolar-ventilation-calculations",
+          "respiratory-exercise-adaptation"
+        ],
+        "compare": [],
+        "next": []
+      },
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original comparison or flow with a text equivalent and linked reference.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-13",
+      "nextReviewAt": "2027-05-13",
+      "reviewEvidenceIds": [
+        "respiratory-chemoreflex-control-editorial-20261113",
+        "respiratory-chemoreflex-control-visual-20261113",
+        "respiratory-chemoreflex-control-accessibility-20261113",
+        "respiratory-chemoreflex-control-readability-20261113"
+      ],
+      "limitations": [
+        "Introductory chapter coverage. Examples and calculated values are fictional.",
+        "Independent clinical review is outstanding."
+      ]
+    },
+    {
+      "lessonId": "respiratory-exercise-adaptation",
+      "title": "Exercise physiology: match ventilation and blood flow to demand",
+      "subject": "physiology",
+      "topic": "Respiratory physiology",
+      "slug": "respiratory-exercise-adaptation",
+      "learnerLevel": "Undergraduate introductory physiology",
+      "objectives": [
+        "Relate alveolar ventilation to carbon dioxide production in a steady-state model.",
+        "Explain how cardiac output and tissue oxygen extraction can both support higher uptake.",
+        "Distinguish a rise in breathing that matches demand from ventilation in excess of demand."
+      ],
+      "sources": [
+        {
+          "title": "Medical Physiology — Respiratory Physiology, Revision 63",
+          "publisherOrAuthor": "Wardhan Medical Study Guide Studios",
+          "citation": "Section 3.5.1, cardiopulmonary adaptation to exercise",
+          "accessedAt": "2026-11-13",
+          "sourceType": "authored-adaptation"
+        },
+        {
+          "title": "OpenStax: Modifications in respiratory functions",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-6-modifications-in-respiratory-functions",
+          "accessedAt": "2026-11-13",
+          "sourceType": "textbook"
+        }
+      ],
+      "links": {
+        "prerequisite": [
+          "respiratory-oxygen-content-and-delivery",
+          "respiratory-chemoreflex-control"
+        ],
+        "related": [
+          "alveolar-ventilation-calculations",
+          "ventilation-perfusion"
+        ],
+        "compare": [],
+        "next": []
+      },
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original comparison or flow with a text equivalent and linked reference.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-13",
+      "nextReviewAt": "2027-05-13",
+      "reviewEvidenceIds": [
+        "respiratory-exercise-adaptation-editorial-20261113",
+        "respiratory-exercise-adaptation-visual-20261113",
+        "respiratory-exercise-adaptation-accessibility-20261113",
+        "respiratory-exercise-adaptation-readability-20261113"
+      ],
+      "limitations": [
+        "Introductory chapter coverage. Examples and calculated values are fictional.",
+        "Independent clinical review is outstanding."
+      ]
     }
   ]
 }

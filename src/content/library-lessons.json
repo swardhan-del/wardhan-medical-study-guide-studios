@@ -5906,6 +5906,237 @@
       "updatedAt": "2026-09-09"
     },
     {
+      "id": "respiratory-oxygen-content-and-delivery",
+      "subject": "physiology",
+      "title": "Oxygen transport: pressure, content and delivery",
+      "summary": "Separate oxygen pressure, haemoglobin saturation and blood oxygen content. Then predict how blood flow changes oxygen delivery.",
+      "source": "guide-respiratory-r63",
+      "section": "Sections 3.3.1–3.3.4, oxygen transport and impaired tissue oxygenation",
+      "objectives": [
+        "Distinguish oxygen partial pressure, saturation and oxygen content.",
+        "Calculate oxygen delivery from blood flow and arterial oxygen content.",
+        "Explain why normal oxygen pressure alone cannot establish adequate tissue oxygenation."
+      ],
+      "prerequisites": [
+        "ventilation-perfusion"
+      ],
+      "steps": [
+        {
+          "title": "Identify what each measurement tells you",
+          "body": "Arterial oxygen partial pressure reflects dissolved oxygen. Haemoglobin saturation describes the fraction of available binding sites occupied. Oxygen content counts the oxygen carried per volume of blood, including both the bound and dissolved forms. Most is bound to haemoglobin."
+        },
+        {
+          "title": "Trace what happens when carrying capacity falls",
+          "body": "At the same partial pressure and saturation, blood with less haemoglobin carries less oxygen. The fraction of occupied sites can stay the same while the number of sites falls. Oxygen delivery also depends on how much blood reaches tissue each minute."
+        },
+        {
+          "title": "Read the direction of an affinity shift",
+          "body": "At a given oxygen partial pressure, a right-shifted haemoglobin dissociation curve corresponds to lower saturation. Local increases in carbon dioxide and acidity can favour unloading in working tissues. This change in affinity is distinct from changing the amount of haemoglobin in the blood."
+        },
+        {
+          "title": "Follow carbon dioxide in the opposite direction",
+          "body": "Blood carries carbon dioxide in dissolved form, bound to proteins and mainly as bicarbonate. In red cells near tissues, carbonic anhydrase speeds the formation of bicarbonate and hydrogen ions from carbon dioxide and water. Bicarbonate can leave the cell in exchange for chloride. In the lungs, the net sequence reverses and carbon dioxide is exhaled."
+        },
+        {
+          "title": "Separate delivery from oxygen use",
+          "body": "Multiply arterial oxygen content by blood flow to get oxygen delivery. To estimate uptake across a tissue bed, multiply its blood flow by the drop in oxygen content between entering and leaving blood. Low oxygen pressure, low carrying capacity, inadequate flow and impaired cellular use can each contribute to tissue hypoxia."
+        }
+      ],
+      "workedExample": {
+        "title": "Compare oxygen delivery at two flow rates",
+        "prompt": "Two fictional circulations both carry 180 mL of oxygen per litre of arterial blood. Flow is 4 L/min in A and 6 L/min in B. Compare oxygen delivery.",
+        "solution": [
+          "For A, multiply 180 mL/L by 4 L/min to get 720 mL/min.",
+          "For B, multiply 180 mL/L by 6 L/min to get 1,080 mL/min.",
+          "B delivers 1.5 times as much oxygen per minute. Calculating uptake also requires the outgoing blood's oxygen content."
+        ]
+      },
+      "question": {
+        "prompt": "Two fictional blood samples have equal oxygen partial pressure and saturation. Sample B has less haemoglobin. Which quantity is lower in B?",
+        "answer": 1,
+        "options": [
+          {
+            "text": "The fraction of occupied haemoglobin sites",
+            "reason": "The question fixes saturation, which is the fraction of occupied sites."
+          },
+          {
+            "text": "The oxygen content per litre of blood",
+            "reason": "There are fewer binding sites in each litre, so the same fraction occupied means less oxygen carried."
+          },
+          {
+            "text": "The dissolved oxygen concentration",
+            "reason": "At the same temperature and oxygen partial pressure, dissolved oxygen concentration is unchanged in this model."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Why can oxygen delivery fall when arterial oxygen pressure stays the same?",
+        "answer": "A fall in haemoglobin can lower oxygen content without lowering oxygen pressure. A fall in perfusion can lower delivery even when the oxygen content is unchanged."
+      },
+      "related": [
+        "respiratory-chemoreflex-control",
+        "respiratory-exercise-adaptation"
+      ],
+      "tags": [
+        "Respiratory physiology",
+        "physiology"
+      ],
+      "minutes": 8,
+      "updatedAt": "2026-11-13"
+    },
+    {
+      "id": "respiratory-chemoreflex-control",
+      "subject": "physiology",
+      "title": "Control of breathing: trace the chemoreflex",
+      "summary": "Follow a carbon dioxide disturbance through sensors and brainstem circuits to the ventilatory response.",
+      "source": "guide-respiratory-r63",
+      "section": "Sections 3.4.1–3.4.3, brainstem networks and ventilatory control",
+      "objectives": [
+        "Trace the central ventilatory response to a rise in arterial carbon dioxide.",
+        "Identify the arterial variables detected by peripheral chemoreceptors.",
+        "Explain how a ventilatory response can oppose an initial carbon dioxide disturbance."
+      ],
+      "prerequisites": [
+        "respiratory-mechanics",
+        "respiratory-oxygen-content-and-delivery"
+      ],
+      "steps": [
+        {
+          "title": "Start with the rhythm and the muscles",
+          "body": "Brainstem networks generate and shape the breathing pattern. Their output reaches respiratory muscles, including the diaphragm. Sensory signals change the depth and rate of breathing. The same networks also receive input associated with movement and voluntary control."
+        },
+        {
+          "title": "Trace the central response to carbon dioxide",
+          "body": "Carbon dioxide crosses into brain extracellular fluid and shifts its acid–base balance toward more hydrogen ions. The resulting fall in pH activates central chemosensitive pathways. They contribute to the drive to increase ventilation."
+        },
+        {
+          "title": "Find the sensors that sample arterial blood",
+          "body": "Peripheral chemoreceptors, especially in the carotid bodies, respond to falling arterial oxygen partial pressure, rising arterial carbon dioxide and falling arterial pH. The carotid sinus nearby senses pressure through stretch. These two structures report different variables."
+        },
+        {
+          "title": "Close the feedback loop",
+          "body": "If carbon dioxide production is fixed, an increase in alveolar ventilation increases carbon dioxide removal and tends to lower arterial carbon dioxide. The response therefore opposes the original rise. Effective ventilation is air reaching exchanging regions, after allowing for dead space."
+        }
+      ],
+      "workedExample": {
+        "title": "Follow a drop in effective ventilation",
+        "prompt": "In a fictional steady-state model, carbon dioxide production is fixed and alveolar ventilation first falls. Trace the change to a sensor and back to the controlled variable.",
+        "solution": [
+          "With less alveolar ventilation for the same production, arterial carbon dioxide tends to rise.",
+          "Carbon dioxide enters brain extracellular fluid and pH falls. Central chemosensitive pathways respond.",
+          "If alveolar ventilation then rises, greater removal tends to push arterial carbon dioxide back down."
+        ]
+      },
+      "question": {
+        "prompt": "In the simplified central chemoreflex, which change links a rise in arterial carbon dioxide to increased ventilatory drive?",
+        "answer": 2,
+        "options": [
+          {
+            "text": "An increase in brain extracellular pH",
+            "reason": "More carbon dioxide shifts local acid–base balance toward more hydrogen ions, so pH falls."
+          },
+          {
+            "text": "An increase in stretch at the carotid sinus",
+            "reason": "Carotid sinus stretch belongs to blood-pressure sensing. It does not describe the central carbon dioxide pathway."
+          },
+          {
+            "text": "A decrease in brain extracellular pH",
+            "reason": "Carbon dioxide enters brain fluid and raises hydrogen ion concentration, providing the central chemosensory stimulus."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "How do the central and peripheral chemoreceptors respond to different signals?",
+        "answer": "Central pathways respond strongly to local pH changes associated with carbon dioxide. Peripheral receptors monitor arterial chemistry, including oxygen partial pressure, carbon dioxide and pH."
+      },
+      "related": [
+        "alveolar-ventilation-calculations",
+        "respiratory-exercise-adaptation"
+      ],
+      "tags": [
+        "Respiratory physiology",
+        "physiology"
+      ],
+      "minutes": 8,
+      "updatedAt": "2026-11-13"
+    },
+    {
+      "id": "respiratory-exercise-adaptation",
+      "subject": "physiology",
+      "title": "Exercise physiology: match ventilation and blood flow to demand",
+      "summary": "Compare steady moderate exercise with rest by following carbon dioxide production, alveolar ventilation, blood flow and oxygen extraction.",
+      "source": "guide-respiratory-r63",
+      "section": "Section 3.5.1, cardiopulmonary adaptation to exercise",
+      "objectives": [
+        "Relate alveolar ventilation to carbon dioxide production in a steady-state model.",
+        "Explain how cardiac output and tissue oxygen extraction can both support higher uptake.",
+        "Distinguish a rise in breathing that matches demand from ventilation in excess of demand."
+      ],
+      "prerequisites": [
+        "respiratory-oxygen-content-and-delivery",
+        "respiratory-chemoreflex-control"
+      ],
+      "steps": [
+        {
+          "title": "Follow the change in demand",
+          "body": "Working muscle uses more oxygen and produces more carbon dioxide. Ventilation can increase early in exercise through signals associated with movement and motor command. In steady moderate exercise, ventilation usually rises broadly in step with metabolic demand."
+        },
+        {
+          "title": "Compare effective ventilation with production",
+          "body": "For a steady-state approximation, arterial carbon dioxide varies with the ratio of carbon dioxide production to alveolar ventilation. If both rise by the same factor, that ratio stays similar. If effective ventilation rises faster than production, arterial carbon dioxide tends to fall."
+        },
+        {
+          "title": "Account for blood flow and oxygen extraction",
+          "body": "Higher cardiac output supplies more blood per minute. Oxygen uptake also rises when tissues extract more oxygen from each litre of blood. The whole-body uptake is cardiac output multiplied by the arterial minus mixed venous oxygen content difference."
+        },
+        {
+          "title": "Keep exercise intensity in view",
+          "body": "This comparison describes a simplified steady moderate workload. At higher intensity the assumptions can change as ventilation, metabolism and acid–base regulation shift. Faster breathing by itself does not establish whether carbon dioxide has fallen. Check effective ventilation and production together."
+        }
+      ],
+      "workedExample": {
+        "title": "Compare two fictional work rates",
+        "prompt": "At a new steady workload, carbon dioxide production is 1.5 times its baseline and alveolar ventilation is also 1.5 times baseline. Cardiac output is 1.5 times baseline and the arterial–venous oxygen content difference is 1.2 times baseline. Compare arterial carbon dioxide and oxygen uptake.",
+        "solution": [
+          "The carbon dioxide production-to-ventilation ratio stays at 1.5 divided by 1.5, or 1 times baseline.",
+          "In this model, arterial carbon dioxide therefore stays approximately at baseline.",
+          "Oxygen uptake rises by 1.5 times 1.2, giving 1.8 times the baseline uptake."
+        ]
+      },
+      "question": {
+        "prompt": "In a fictional steady comparison, carbon dioxide production is 1.25 times baseline and alveolar ventilation is 1.5 times baseline. What does the ratio predict?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Arterial carbon dioxide tends to fall",
+            "reason": "Ventilation has increased more than production. Their ratio is 1.25 divided by 1.5, below its baseline value."
+          },
+          {
+            "text": "Arterial carbon dioxide must stay the same",
+            "reason": "Both quantities increase, but maintaining their ratio requires equal proportional increases."
+          },
+          {
+            "text": "Arterial carbon dioxide must rise",
+            "reason": "Higher production alone could push it up. Here the larger proportional ventilation increase pushes the ratio down."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Why can oxygen uptake rise during exercise while arterial carbon dioxide remains approximately steady?",
+        "answer": "Cardiac output and extraction can increase oxygen uptake. At the same time, alveolar ventilation can rise in proportion to carbon dioxide production, keeping their ratio approximately constant."
+      },
+      "related": [
+        "alveolar-ventilation-calculations",
+        "ventilation-perfusion"
+      ],
+      "tags": [
+        "Respiratory physiology",
+        "physiology"
+      ],
+      "minutes": 8,
+      "updatedAt": "2026-11-13"
+    },
+    {
       "id": "renal-water-balance",
       "subject": "physiology",
       "title": "Water balance: distinguish ADH from aldosterone",

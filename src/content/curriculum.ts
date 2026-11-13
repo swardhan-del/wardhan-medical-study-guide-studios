@@ -42,9 +42,9 @@ const respiratoryChapters: readonly CourseChapter[] = [
   { id: "pulmonary-ventilation", title: "Pulmonary ventilation", lessonIds: ["respiratory-mechanics", "alveolar-ventilation-calculations", "biophysics-respiratory-physics"] },
   { id: "pulmonary-gas-exchange", title: "Gas exchange", lessonIds: ["respiratory-histology"] },
   { id: "pulmonary-circulation-and-vq", title: "Pulmonary circulation and ventilation–perfusion matching", lessonIds: ["ventilation-perfusion"] },
-  { id: "respiratory-gas-transport", title: "Gas transport and hypoxia", lessonIds: [] },
-  { id: "respiratory-control", title: "Control of respiration", lessonIds: [] },
-  { id: "cardiopulmonary-adaptation", title: "Cardiopulmonary adaptation", lessonIds: [] },
+  { id: "respiratory-gas-transport", title: "Gas transport and hypoxia", lessonIds: ["respiratory-oxygen-content-and-delivery"] },
+  { id: "respiratory-control", title: "Control of respiration", lessonIds: ["respiratory-chemoreflex-control"] },
+  { id: "cardiopulmonary-adaptation", title: "Cardiopulmonary adaptation", lessonIds: ["respiratory-exercise-adaptation"] },
   { id: "respiratory-acid-base", title: "Acid–base integration (supplementary)", lessonIds: ["renal-renal-acid-base"] },
 ];
 

@@ -800,6 +800,62 @@
       }
     ]
   },
+  "respiratory-oxygen-content-and-delivery": {
+    "subject": "physiology",
+    "lesson": "respiratory-oxygen-content-and-delivery",
+    "topic": "Oxygen transport: pressure, content and delivery",
+    "subtopic": "Sections 3.3.1–3.3.4, oxygen transport and impaired tissue oxygenation",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "ventilation-perfusion"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology — Respiratory Physiology",
+        "locator": "Sections 3.3.1–3.3.4, oxygen transport and impaired tissue oxygenation",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "respiratory-chemoreflex-control": {
+    "subject": "physiology",
+    "lesson": "respiratory-chemoreflex-control",
+    "topic": "Control of breathing: trace the chemoreflex",
+    "subtopic": "Sections 3.4.1–3.4.3, brainstem networks and ventilatory control",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "respiratory-mechanics",
+      "respiratory-oxygen-content-and-delivery"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology — Respiratory Physiology",
+        "locator": "Sections 3.4.1–3.4.3, brainstem networks and ventilatory control",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "respiratory-exercise-adaptation": {
+    "subject": "physiology",
+    "lesson": "respiratory-exercise-adaptation",
+    "topic": "Exercise physiology: match ventilation and blood flow to demand",
+    "subtopic": "Section 3.5.1, cardiopulmonary adaptation to exercise",
+    "concept": "",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "respiratory-oxygen-content-and-delivery",
+      "respiratory-chemoreflex-control"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology — Respiratory Physiology",
+        "locator": "Section 3.5.1, cardiopulmonary adaptation to exercise",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
   "renal-water-balance": {
     "subject": "physiology",
     "lesson": "renal-water-balance",
