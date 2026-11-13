@@ -658,7 +658,9 @@
     "subtopic": "Section 2.4: Cardiac Pump Function and Output",
     "concept": "",
     "difficulty": "introductory",
-    "prerequisites": [],
+    "prerequisites": [
+      "cardiac-cycle"
+    ],
     "sources": [
       {
         "title": "Medical Physiology I — Cardiovascular Physiology",

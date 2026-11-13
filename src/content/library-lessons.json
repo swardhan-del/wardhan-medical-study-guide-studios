@@ -5300,6 +5300,10 @@
         {
           "title": "Change the pump state",
           "body": "Contractility describes changes in force generation at a given starting length and loading context. Sympathetic beta1 signaling can increase inotropy. Afterload also affects ejection, so a change in ejection fraction cannot automatically be assigned to one mechanism."
+        },
+        {
+          "title": "Interpret the result under the model assumptions",
+          "body": "A higher stroke volume can go with a lower ejection fraction when end-diastolic volume rises proportionally more. End-diastolic volume is a proxy for filling in this comparison. It does not measure fibre length or wall stress, and pressure and volume can vary independently when ventricular compliance changes."
         }
       ],
       "question": {
@@ -5329,8 +5333,26 @@
         "muscle-histology",
         "vessel-histology"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 5
+      "updatedAt": "2026-11-13",
+      "minutes": 8,
+      "objectives": [
+        "Calculate stroke volume, cardiac output and ejection fraction from fictional measurements.",
+        "Compare increased filling with increased contractility when the other assumptions are specified.",
+        "Explain why equal cardiac output does not establish equal ejection fraction or a shared mechanism."
+      ],
+      "prerequisites": [
+        "cardiac-cycle"
+      ],
+      "workedExample": {
+        "title": "Compare three pump states",
+        "prompt": "At 70 beats/min with the same assumed afterload, three fictional ventricles have end-diastolic and end-systolic volumes of 120 and 50 mL (A), 140 and 60 mL (B), and 120 and 40 mL (C). Find the volume per beat, volume per minute and fraction ejected for each.",
+        "solution": [
+          "Subtract end-systolic volume from end-diastolic volume. A ejects 70 mL, while B and C both eject 80 mL per beat.",
+          "Multiply by 70 beats/min and convert to litres. A delivers 4.9 L/min, while B and C each deliver 5.6 L/min.",
+          "Divide stroke volume by end-diastolic volume. A ejects about 58%, B about 57%, and C about 67% of its starting volume. B and C have the same output but different ejection fractions.",
+          "If B has greater filling at the same contractile state as A, that comparison illustrates Frank–Starling recruitment. If C has greater contractility at the same starting volume as A, the model gives another route to more output. These mechanisms are assumptions of the example. The measured volumes alone would not establish the cause."
+        ]
+      }
     },
     {
       "id": "baroreflex",
