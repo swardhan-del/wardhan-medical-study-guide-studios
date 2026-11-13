@@ -455,7 +455,9 @@
     "subtopic": "Enzymes: Catalysts of Life",
     "concept": "",
     "difficulty": "introductory",
-    "prerequisites": [],
+    "prerequisites": [
+      "biochemistry-enzyme-foundations"
+    ],
     "sources": [
       {
         "title": "Biochemistry study guide",
@@ -638,7 +640,9 @@
     "subtopic": "Sections 1.5–1.6: Resting membrane and action potentials",
     "concept": "",
     "difficulty": "introductory",
-    "prerequisites": [],
+    "prerequisites": [
+      "biophysics-resting-potential"
+    ],
     "sources": [
       {
         "title": "Medical Physiology I — Cellular Physiology",
@@ -721,7 +725,9 @@
     "subtopic": "Sections 1.1–1.2: fluid compartments, tonicity and membrane transport",
     "concept": "",
     "difficulty": "introductory",
-    "prerequisites": [],
+    "prerequisites": [
+      "physiology-membrane-foundations"
+    ],
     "sources": [
       {
         "title": "Medical Physiology I — Cellular Physiology, Excitable Tissues, Muscle and Autonomic Control",
@@ -1513,7 +1519,9 @@
     "subtopic": "Biophysics II, topic 23; combined theory prompts 197–206",
     "concept": "",
     "difficulty": "introductory",
-    "prerequisites": [],
+    "prerequisites": [
+      "fluid-and-membrane-transport"
+    ],
     "sources": [
       {
         "title": "Medical Biophysics I–II and combined theory/practical notes",
@@ -1561,7 +1569,10 @@
     "subtopic": "Biophysics II, topic 26; combined theory prompts 219–226",
     "concept": "",
     "difficulty": "introductory",
-    "prerequisites": [],
+    "prerequisites": [
+      "biophysics-diffusion-osmosis",
+      "physiology-membrane-foundations"
+    ],
     "sources": [
       {
         "title": "Medical Biophysics I–II and combined theory/practical notes",
@@ -1577,7 +1588,9 @@
     "subtopic": "Biophysics II, topic 27; combined theory prompts 227–231",
     "concept": "",
     "difficulty": "introductory",
-    "prerequisites": [],
+    "prerequisites": [
+      "membrane-potentials"
+    ],
     "sources": [
       {
         "title": "Medical Biophysics I–II and combined theory/practical notes",

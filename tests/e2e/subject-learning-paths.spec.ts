@@ -49,7 +49,7 @@ test('student entry modes work without scripts, with keyboard focus and at narro
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
     await start.focus();
     await page.keyboard.press('Enter');
-    await expect(page).toHaveURL(/\/library\/myelin-and-glial-cells$/);
+    await expect(page).toHaveURL(/\/library\/myelin-and-glial-cells#lesson-objectives$/);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   } finally { await context.close(); }
 });
@@ -237,4 +237,77 @@ test('new entry lessons appear in search, topic routes and printable revision wi
     await expect(entry).toContainText(lesson.question.prompt);
     expect(await entry.innerText()).not.toMatch(/retrieval|oral recall/i);
   }
+});
+
+test('concept discovery connects realistic student questions to canonical explanations', async ({ page }) => {
+  const cases = [
+    ['Why does an action potential occur?', 'membrane-potentials'],
+    ['What determines cardiac output?', 'cardiac-output'],
+    ['How do I distinguish arteries and veins in histology?', 'vessel-histology'],
+    ['What does Km mean?', 'enzyme-kinetics'],
+    ['Why does alveolar oxygen change?', 'ventilation-perfusion'],
+  ];
+  await page.goto('/library?mode=concept');
+  for (const [query, id] of cases) {
+    await page.getByRole('searchbox', { name: 'Search resources' }).fill(query);
+    const matches=page.getByRole('region', {name:'Related explanations to start with'});
+    await expect(matches.locator(`a[href="/library/${id}#concept-map-title"]`)).toBeVisible();
+    await expect(matches.locator(`a[href="/library/${id}#lesson-source"]`)).toBeVisible();
+  }
+  await page.getByRole('searchbox', { name: 'Search resources' }).fill('unavailable unusual xyz topic');
+  await expect(page.getByText('No curated concept match is available', {exact:false})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'No matching resources.'})).toBeVisible();
+});
+
+test('examination formats offer distinct existing destinations and preserve a wrong-answer review', async ({ page }) => {
+  await page.goto('/library?mode=exam&subject=biochemistry&type=calculation&q=Km');
+  await expect(page.locator('a[href="/library/enzyme-kinetics#worked-example-heading"]').first()).toBeVisible();
+  await page.getByRole('combobox',{name:'Assessment format'}).selectOption('oral');
+  await page.getByRole('button',{name:'Find practice',exact:true}).click();
+  await expect(page.locator('a[href="/library/enzyme-kinetics#oral-recall-title"]').first()).toBeVisible();
+  await expect(page.getByText('Written recall or oral self-assessment', {exact:false}).first()).toBeVisible();
+  await page.goto('/library/enzyme-kinetics');
+  const panel=page.locator('#concept-check-title').locator('..').locator('.practice-question').first();
+  await panel.getByRole('radio').first().check();
+  await panel.getByRole('button',{name:/Check Answer and Continue/}).click();
+  await expect(panel.getByRole('status')).toContainText('Review the Relationship');
+  await page.goto('/library?mode=exam&type=review');
+  await page.getByRole('link',{name:'Open my review queue',exact:true}).click();
+  await expect(page.getByRole('button',{name:/Review my mistakes/})).toBeEnabled();
+  await page.reload();
+  await expect(page.getByRole('button',{name:/Review my mistakes/})).toBeEnabled();
+});
+
+test('six revised pilot lessons retain meaningful examples, sources, visuals and saved summaries', async ({ page }) => {
+  for (const id of ['fluid-and-membrane-transport','biophysics-diffusion-osmosis','biophysics-resting-potential','membrane-potentials','biophysics-action-potentials','enzyme-kinetics']) {
+    await page.goto(`/library/${id}`);
+    const worked=page.locator('section[aria-labelledby="worked-example-heading"]');
+    await worked.locator('summary').focus();await page.keyboard.press('Enter');
+    expect(await worked.locator('li').count()).toBeGreaterThanOrEqual(3);
+    await expect(worked.locator('li').first()).toBeVisible();
+    expect(await page.locator('figure').count()).toBeGreaterThan(0);
+    await expect(page.locator('#lesson-source')).toBeVisible();
+    const check=page.locator('section[aria-labelledby="summary-checklist-title"] input').first();
+    await check.check();await page.reload();await expect(check).toBeChecked();
+  }
+});
+
+test('concept and assessment forms work without JavaScript at enlarged mobile text', async ({ browser }) => {
+  const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:900}});
+  try {
+    const page=await context.newPage();
+    await page.goto('http://127.0.0.1:3101/library?mode=concept');
+    await page.getByRole('searchbox',{name:'Search resources'}).fill('What does Km mean?');
+    await page.getByRole('button',{name:'Search resources',exact:true}).click();
+    await expect(page.locator('a[href="/library/enzyme-kinetics#worked-example-heading"]').first()).toBeVisible();
+    await page.locator('a[href="/library/enzyme-kinetics#worked-example-heading"]').first().click();
+    await page.locator('section[aria-labelledby="worked-example-heading"] summary').click();
+    await expect(page.getByText('40 μmol/min.',{exact:false}).first()).toBeVisible();
+    await page.evaluate(()=>document.documentElement.style.setProperty('font-size','200%','important'));
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+    await page.goto('http://127.0.0.1:3101/library?mode=exam&type=oral&q=Km');
+    await expect(page.locator('a[href="/library/enzyme-kinetics#oral-recall-title"]').first()).toBeVisible();
+    await page.evaluate(()=>document.documentElement.style.setProperty('font-size','200%','important'));
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+  } finally {await context.close();}
 });

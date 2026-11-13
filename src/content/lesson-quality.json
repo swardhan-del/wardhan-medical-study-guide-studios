@@ -6342,6 +6342,351 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "fluid-and-membrane-transport",
+      "title": "Cell transport: follow the energy",
+      "subject": "physiology",
+      "slug": "fluid-and-membrane-transport",
+      "topic": "Cell transport: follow the energy",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Separate a favourable electrochemical gradient from the pathway that permits movement.",
+        "Trace direct and indirect ATP use through a transport epithelium.",
+        "Predict the direction of sustained cell-volume change under a stated permeability model."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax Biology 2e, section 5.2: Passive Transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Reuses existing released original teaching schematic or semantic comparison. No new image pixels, source illustration or asset permissions introduced. Caption and text equivalent retained.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-09",
+      "nextReviewAt": "2027-02-09",
+      "limitations": [
+        "AI-assisted source and editorial check only; independent specialist review and human beginner testing remain outstanding.",
+        "Idealised worked examples use explicitly stated assumptions; they are not patient-care measurements or complete syllabus coverage."
+      ],
+      "reviewEvidenceIds": [
+        "fluid-and-membrane-transport-editorial-pilot-20261109",
+        "fluid-and-membrane-transport-visual-pilot-20261109",
+        "fluid-and-membrane-transport-accessibility-pilot-20261109",
+        "fluid-and-membrane-transport-readability-pilot-20261109"
+      ],
+      "links": {
+        "prerequisite": [
+          "physiology-membrane-foundations"
+        ],
+        "related": [
+          "membrane-potentials",
+          "protein-trafficking"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "biophysics-diffusion-osmosis",
+      "title": "Diffusion, osmosis and heat transport",
+      "subject": "biophysics",
+      "slug": "biophysics-diffusion-osmosis",
+      "topic": "Diffusion, osmosis and heat transport",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Distinguish microscopic random motion from net diffusive flux.",
+        "Calculate a characteristic one-dimensional diffusion time with consistent units.",
+        "Identify why permeability, geometry and pressure limit osmotic predictions."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax Biology 2e, section 5.2: Passive Transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Reuses existing released original teaching schematic or semantic comparison. No new image pixels, source illustration or asset permissions introduced. Caption and text equivalent retained.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-09",
+      "nextReviewAt": "2027-02-09",
+      "limitations": [
+        "AI-assisted source and editorial check only; independent specialist review and human beginner testing remain outstanding.",
+        "Idealised worked examples use explicitly stated assumptions; they are not patient-care measurements or complete syllabus coverage.",
+        "Biophysics II academic-year alignment remains pending."
+      ],
+      "reviewEvidenceIds": [
+        "biophysics-diffusion-osmosis-editorial-pilot-20261109",
+        "biophysics-diffusion-osmosis-visual-pilot-20261109",
+        "biophysics-diffusion-osmosis-accessibility-pilot-20261109",
+        "biophysics-diffusion-osmosis-readability-pilot-20261109"
+      ],
+      "links": {
+        "prerequisite": [
+          "fluid-and-membrane-transport"
+        ],
+        "related": [
+          "biophysics-fluid-flow",
+          "biophysics-energy-first-law"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "biophysics-resting-potential",
+      "title": "Membrane potentials, permeability and the RC model",
+      "subject": "biophysics",
+      "slug": "biophysics-resting-potential",
+      "topic": "Membrane potentials, permeability and the RC model",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Calculate a single-ion equilibrium voltage and distinguish it from the membrane voltage.",
+        "Use the sign of an electrical driving force to predict ionic current in a stated model.",
+        "Explain why Goldman permeability weighting differs from averaging Nernst potentials."
+      ],
+      "sources": [
+        {
+          "title": "Foundations of Neuroscience, chapter 4: The Membrane at Rest",
+          "url": "https://openbooks.lib.msu.edu/neuroscience/chapter/the-membrane-at-rest/",
+          "publisherOrAuthor": "Casey Henley, Michigan State University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax Anatomy and Physiology 2e, section 12.4: The Action Potential",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Reuses existing released original teaching schematic or semantic comparison. No new image pixels, source illustration or asset permissions introduced. Caption and text equivalent retained.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-09",
+      "nextReviewAt": "2027-02-09",
+      "limitations": [
+        "AI-assisted source and editorial check only; independent specialist review and human beginner testing remain outstanding.",
+        "Idealised worked examples use explicitly stated assumptions; they are not patient-care measurements or complete syllabus coverage.",
+        "Biophysics II academic-year alignment remains pending."
+      ],
+      "reviewEvidenceIds": [
+        "biophysics-resting-potential-editorial-pilot-20261109",
+        "biophysics-resting-potential-visual-pilot-20261109",
+        "biophysics-resting-potential-accessibility-pilot-20261109",
+        "biophysics-resting-potential-readability-pilot-20261109"
+      ],
+      "links": {
+        "prerequisite": [
+          "biophysics-diffusion-osmosis",
+          "physiology-membrane-foundations"
+        ],
+        "related": [
+          "biophysics-entropy-potentials",
+          "biophysics-action-potentials"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "membrane-potentials",
+      "title": "Resting potential and the action potential",
+      "subject": "physiology",
+      "slug": "membrane-potentials",
+      "topic": "Resting potential and the action potential",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Explain how gradients, selective channels and charge separation establish resting voltage.",
+        "Trace the feedback that generates a typical neuronal action potential.",
+        "Distinguish repolarisation from long-term gradient maintenance and recovery of excitability."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax Anatomy and Physiology 2e, section 12.4: The Action Potential",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Foundations of Neuroscience, chapter 4: The Membrane at Rest",
+          "url": "https://openbooks.lib.msu.edu/neuroscience/chapter/the-membrane-at-rest/",
+          "publisherOrAuthor": "Casey Henley, Michigan State University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Reuses existing released original teaching schematic or semantic comparison. No new image pixels, source illustration or asset permissions introduced. Caption and text equivalent retained.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-09",
+      "nextReviewAt": "2027-02-09",
+      "limitations": [
+        "AI-assisted source and editorial check only; independent specialist review and human beginner testing remain outstanding.",
+        "Idealised worked examples use explicitly stated assumptions; they are not patient-care measurements or complete syllabus coverage."
+      ],
+      "reviewEvidenceIds": [
+        "membrane-potentials-editorial-pilot-20261109",
+        "membrane-potentials-visual-pilot-20261109",
+        "membrane-potentials-accessibility-pilot-20261109",
+        "membrane-potentials-readability-pilot-20261109"
+      ],
+      "links": {
+        "prerequisite": [
+          "biophysics-resting-potential"
+        ],
+        "related": [
+          "muscle-histology",
+          "cell-junctions",
+          "cell-signaling"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "biophysics-action-potentials",
+      "title": "Action potentials and impulse propagation",
+      "subject": "biophysics",
+      "slug": "biophysics-action-potentials",
+      "topic": "Action potentials and impulse propagation",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Distinguish passive spread from local regenerative propagation.",
+        "Explain how myelin and axon geometry influence conduction.",
+        "Calculate conduction velocity from two recording sites while stating measurement limits."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax Anatomy and Physiology 2e, section 12.4: The Action Potential",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Reuses existing released original teaching schematic or semantic comparison. No new image pixels, source illustration or asset permissions introduced. Caption and text equivalent retained.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-09",
+      "nextReviewAt": "2027-02-09",
+      "limitations": [
+        "AI-assisted source and editorial check only; independent specialist review and human beginner testing remain outstanding.",
+        "Idealised worked examples use explicitly stated assumptions; they are not patient-care measurements or complete syllabus coverage.",
+        "Biophysics II academic-year alignment remains pending."
+      ],
+      "reviewEvidenceIds": [
+        "biophysics-action-potentials-editorial-pilot-20261109",
+        "biophysics-action-potentials-visual-pilot-20261109",
+        "biophysics-action-potentials-accessibility-pilot-20261109",
+        "biophysics-action-potentials-readability-pilot-20261109"
+      ],
+      "links": {
+        "prerequisite": [
+          "membrane-potentials"
+        ],
+        "related": [
+          "biophysics-resting-potential",
+          "biophysics-ultrasound"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "enzyme-kinetics",
+      "title": "Enzyme catalysis and inhibition",
+      "subject": "biochemistry",
+      "slug": "enzyme-kinetics",
+      "topic": "Enzyme catalysis and inhibition",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Relate initial reaction velocity to substrate concentration in a stated kinetic model.",
+        "Calculate velocity using Km and Vmax with compatible units.",
+        "Distinguish competitive, pure noncompetitive and mixed inhibition without inferring binding sites from a curve alone."
+      ],
+      "sources": [
+        {
+          "title": "Strelow et al., Assay Guidance Manual: Mechanism of Action Assays for Enzymes (2012), Types of Inhibition and Classical Steady-State Experiments",
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92001/",
+          "publisherOrAuthor": "Eli Lilly and Company and NCATS",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "OpenStax Biology 2e, section 6.5: Enzymes",
+          "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes",
+          "publisherOrAuthor": "OpenStax, Rice University",
+          "accessedAt": "2026-11-09",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Reuses existing released original teaching schematic or semantic comparison. No new image pixels, source illustration or asset permissions introduced. Caption and text equivalent retained.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-09",
+      "nextReviewAt": "2027-02-09",
+      "limitations": [
+        "AI-assisted source and editorial check only; independent specialist review and human beginner testing remain outstanding.",
+        "Idealised worked examples use explicitly stated assumptions; they are not patient-care measurements or complete syllabus coverage."
+      ],
+      "reviewEvidenceIds": [
+        "enzyme-kinetics-editorial-pilot-20261109",
+        "enzyme-kinetics-visual-pilot-20261109",
+        "enzyme-kinetics-accessibility-pilot-20261109",
+        "enzyme-kinetics-readability-pilot-20261109"
+      ],
+      "links": {
+        "prerequisite": [
+          "biochemistry-enzyme-foundations"
+        ],
+        "related": [
+          "glycolysis",
+          "pdh-tca",
+          "protein-structure"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }

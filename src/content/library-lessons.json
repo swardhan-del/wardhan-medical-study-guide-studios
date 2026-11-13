@@ -4382,15 +4382,15 @@
       "steps": [
         {
           "title": "Change the route, not the equilibrium",
-          "body": "Enzymes lower the activation barrier and accelerate the approach to equilibrium. They do not change the equilibrium constant or make an unfavorable overall reaction favorable merely by being present. Coupling to another reaction is a different mechanism."
+          "body": "Enzymes lower the activation barrier and accelerate the approach to equilibrium. They do not change the equilibrium constant or make an unfavorable overall reaction favorable merely by being present. Coupling to another reaction is a different mechanism.\n\nCatalysis provides a reaction pathway with a lower activation free-energy barrier. Substrate is the reacting molecule; enzyme–substrate complex is a transient bound state; product is the chemical outcome. The enzyme is regenerated, so its concentration can be much lower than the substrate concentration. Changing enzyme amount can change the measured rate without changing the equilibrium constant."
         },
         {
           "title": "Read a saturation curve",
-          "body": "In a simple Michaelis–Menten model, rate approaches Vmax as substrate rises. Km is the substrate concentration at half Vmax under that model. It is an operational kinetic parameter and should not automatically be equated with binding affinity in every mechanism."
+          "body": "In a simple Michaelis–Menten model, rate approaches Vmax as substrate rises. Km is the substrate concentration at half Vmax under that model. It is an operational kinetic parameter and should not automatically be equated with binding affinity in every mechanism.\n\nFor a simple one-substrate scheme, v₀ = Vmax[S]/(Km + [S]). v₀ is initial product-formation rate, [S] is substrate concentration, and Vmax is the limiting rate at the specified active-enzyme concentration. Km has concentration units. The model assumes an approximately steady enzyme–substrate population after a brief transient, substrate in excess, little depletion and negligible reverse contribution from accumulated product. Cooperativity and complex mechanisms may not follow this hyperbola. At [S] = Km, v₀ = Vmax/2; doubling [S] does not generally double v₀ near saturation."
         },
         {
           "title": "State the inhibition model",
-          "body": "For reversible competitive inhibition in the simple model, apparent Km rises while Vmax is unchanged. Pure noncompetitive inhibition lowers Vmax without changing Km. Mixed inhibition is more general; binding away from an active site alone does not prove pure noncompetitive behavior."
+          "body": "For reversible competitive inhibition in the simple model, apparent Km rises while Vmax is unchanged. Pure noncompetitive inhibition lowers Vmax without changing Km. Mixed inhibition is more general; binding away from an active site alone does not prove pure noncompetitive behavior.\n\nFor simple reversible competition, apparent Km = αKm with α = 1 + [I]/Ki, while Vmax is preserved. Pure noncompetitive inhibition is the special mixed case with equal inhibitory effects on free enzyme and enzyme–substrate complex: Vmax decreases while Km stays unchanged. Unequal effects give mixed inhibition. An allosteric binding location alone cannot identify that kinetic pattern; comparisons require rates at several substrate concentrations and suitable assay conditions."
         }
       ],
       "question": {
@@ -4420,8 +4420,31 @@
         "pdh-tca",
         "protein-structure"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-09",
+      "minutes": 12,
+      "objectives": [
+        "Relate initial reaction velocity to substrate concentration in a stated kinetic model.",
+        "Calculate velocity using Km and Vmax with compatible units.",
+        "Distinguish competitive, pure noncompetitive and mixed inhibition without inferring binding sites from a curve alone."
+      ],
+      "prerequisites": [
+        "biochemistry-enzyme-foundations"
+      ],
+      "workedExample": {
+        "title": "Calculate and compare initial velocities",
+        "prompt": "A hypothetical enzyme has Vmax = 120 μmol/min and Km = 2 mM. Substrate is 1 mM. Compare the uninhibited rate with reversible competitive inhibition that doubles apparent Km, then with pure noncompetitive inhibition that halves Vmax.",
+        "solution": [
+          "Uninhibited: v₀ = (120 μmol/min × 1 mM)/(2 mM + 1 mM) = 40 μmol/min. Concentration units cancel; the result retains rate units.",
+          "Competitive model: apparent Km = 4 mM, Vmax = 120 μmol/min. v₀ = 120 × 1/(4 + 1) = 24 μmol/min.",
+          "Pure noncompetitive model: Vmax = 60 μmol/min, Km = 2 mM. v₀ = 60 × 1/(2 + 1) = 20 μmol/min.",
+          "At very high substrate, the competitive model approaches 120 μmol/min; the pure noncompetitive model approaches 60 μmol/min. At one substrate concentration, reduced rate alone cannot identify inhibition type."
+        ]
+      },
+      "summaryChecklist": [
+        "Name each variable and state the initial-rate assumptions.",
+        "Distinguish a concentration parameter from a rate parameter.",
+        "Check inhibition models at more than one substrate concentration."
+      ]
     },
     {
       "id": "glycolysis",
@@ -5186,15 +5209,15 @@
       "steps": [
         {
           "title": "Create the resting voltage",
-          "body": "Concentration gradients and selective permeability determine membrane potential. In many resting excitable cells, potassium permeability strongly influences the voltage. The sodium–potassium pump maintains the gradients and also has a smaller direct electrogenic effect."
+          "body": "Concentration gradients and selective permeability determine membrane potential. In many resting excitable cells, potassium permeability strongly influences the voltage. The sodium–potassium pump maintains the gradients and also has a smaller direct electrogenic effect.\n\nVoltage is an electrical potential difference across the membrane, not a statement that the whole cytoplasm contains only negative ions. A small separation of charge near the membrane can support the voltage while bulk solutions remain nearly electroneutral. At rest, individual ionic currents can continue even when their total and the capacitive current balance."
         },
         {
           "title": "Cross threshold",
-          "body": "In a simplified neuronal model, depolarization opens voltage-gated sodium channels, producing regenerative inward current. An action potential is all-or-none for a given cell under specified conditions; stronger sustained stimulation is often encoded through frequency rather than endlessly larger spikes."
+          "body": "In a simplified neuronal model, depolarization opens voltage-gated sodium channels, producing regenerative inward current. An action potential is all-or-none for a given cell under specified conditions; stronger sustained stimulation is often encoded through frequency rather than endlessly larger spikes.\n\nThreshold is a dynamic balance, not one universal voltage. As inward activation grows faster than opposing currents, depolarisation reinforces itself. Channel availability, prior voltage and the rate of stimulation affect that balance. Depolarisation means becoming less negative relative to the chosen baseline; it need not reach zero or produce an action potential."
         },
         {
           "title": "Recover excitability",
-          "body": "Sodium-channel inactivation and delayed potassium current support repolarization. Recovery from inactivation underlies refractory behavior. Channel contributions differ among neurons, skeletal muscle, working cardiac cells and pacemaker cells; one waveform does not represent all excitable tissues."
+          "body": "Sodium-channel inactivation and delayed potassium current support repolarization. Recovery from inactivation underlies refractory behavior. Channel contributions differ among neurons, skeletal muscle, working cardiac cells and pacemaker cells; one waveform does not represent all excitable tissues.\n\nAn inactivated sodium channel is temporarily unavailable to reopen normally; it is not merely closed and immediately ready. During absolute refractoriness, too few channels have recovered for another normal spike. During relative refractoriness, partial recovery and remaining outward conductance require a larger input. Fast repolarisation chiefly reflects channel currents; pumps maintain usable gradients over repeated activity."
         }
       ],
       "question": {
@@ -5224,8 +5247,31 @@
         "cell-junctions",
         "cell-signaling"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-09",
+      "minutes": 12,
+      "objectives": [
+        "Explain how gradients, selective channels and charge separation establish resting voltage.",
+        "Trace the feedback that generates a typical neuronal action potential.",
+        "Distinguish repolarisation from long-term gradient maintenance and recovery of excitability."
+      ],
+      "prerequisites": [
+        "biophysics-resting-potential"
+      ],
+      "workedExample": {
+        "title": "Interpret two stimuli without inventing a fixed threshold",
+        "prompt": "A hypothetical axon produces a spike after stimulus A. Stimulus B, delivered immediately afterward, fails despite being stronger. Later, the same B succeeds. Explain the result using channel states.",
+        "solution": [
+          "First identify the changing variable: the interval after A, rather than merely the amplitude of B.",
+          "Soon after A, many sodium channels remain inactivated. More depolarising input cannot substitute for recovery of channel availability during the absolute refractory interval.",
+          "After repolarisation and recovery, B can recruit regenerative inward current again. Residual potassium conductance may still raise the required input during relative refractoriness.",
+          "This describes a typical neuronal model. Do not infer a universal refractory duration or apply the same waveform to every cardiac or pacemaker cell."
+        ]
+      },
+      "summaryChecklist": [
+        "Explain why a small charge separation can produce a voltage.",
+        "Describe threshold as a competition between currents and channel states.",
+        "Separate channel recovery from replenishing the ionic gradients."
+      ]
     },
     {
       "id": "cardiac-output",
@@ -5568,15 +5614,15 @@
       "steps": [
         {
           "title": "Separate a gradient from a pathway",
-          "body": "A concentration gradient can favour movement without providing a route across a membrane. The lipid bilayer limits the movement of most ions and polar solutes. Channels provide selective pores; carriers bind and change conformation. For an ion, both concentration and voltage contribute to its electrochemical gradient."
+          "body": "A concentration gradient can favour movement without providing a route across a membrane. The lipid bilayer limits the movement of most ions and polar solutes. Channels provide selective pores; carriers bind and change conformation. For an ion, both concentration and voltage contribute to its electrochemical gradient.\n\nA channel opening changes the available pathway; it does not supply the driving energy. For an uncharged solute, a concentration difference can drive net passive flux. For ions, an opposing electrical force can cancel or reverse the concentration-driven tendency. Permeability describes passage through a membrane; electrical conductance describes current per voltage difference. They are related but are not interchangeable quantities."
         },
         {
           "title": "Locate the ATP-consuming step",
-          "body": "The sodium–potassium ATPase moves three sodium ions out and two potassium ions in per ATP hydrolysed. It maintains the gradients used by excitable cells and transport epithelia. A sodium–glucose cotransporter does not hydrolyse ATP directly: it couples inward sodium movement down its electrochemical gradient to glucose transport."
+          "body": "The sodium–potassium ATPase moves three sodium ions out and two potassium ions in per ATP hydrolysed. It maintains the gradients used by excitable cells and transport epithelia. A sodium–glucose cotransporter does not hydrolyse ATP directly: it couples inward sodium movement down its electrochemical gradient to glucose transport.\n\nFollow the full epithelial route: a basolateral pump maintains a low cytosolic sodium concentration, an apical cotransporter uses sodium entry to support glucose accumulation, and a separate exit pathway can release glucose on the other side. The cotransporter therefore depends on energy supplied elsewhere. Removing ATP does not instantly erase every gradient, but continued transport without gradient maintenance cannot persist indefinitely."
         },
         {
           "title": "Distinguish osmolarity from tonicity",
-          "body": "Osmolarity counts dissolved particles per litre of solution. Tonicity predicts the sustained effect on cell volume and depends on solutes that do not readily cross the relevant membrane. A solution can be isosmotic without being isotonic when its solute enters the cell. Always state which membrane and time scale you are considering."
+          "body": "Osmolarity counts dissolved particles per litre of solution. Tonicity predicts the sustained effect on cell volume and depends on solutes that do not readily cross the relevant membrane. A solution can be isosmotic without being isotonic when its solute enters the cell. Always state which membrane and time scale you are considering.\n\nCompare an impermeant solute with a permeant one at the same measured osmolarity. The impermeant solute can sustain a water-driving difference; a permeant solute redistributes and changes that difference over time. A prediction must specify membrane permeability and the observation interval. The simple volume calculation below omits hydrostatic pressure, membrane tension, regulatory solute transport and cell injury."
         }
       ],
       "question": {
@@ -5610,8 +5656,30 @@
         "physiology",
         "guided revision"
       ],
-      "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "minutes": 12,
+      "updatedAt": "2026-11-09",
+      "objectives": [
+        "Separate a favourable electrochemical gradient from the pathway that permits movement.",
+        "Trace direct and indirect ATP use through a transport epithelium.",
+        "Predict the direction of sustained cell-volume change under a stated permeability model."
+      ],
+      "prerequisites": [
+        "physiology-membrane-foundations"
+      ],
+      "workedExample": {
+        "title": "Predict cell volume from retained osmoles",
+        "prompt": "An idealised cell initially contains 300 mOsm/L of retained solute at volume V₀. The surrounding large reservoir is changed to 200 mOsm/L of an impermeant solute. Only water crosses. Ignoring pressure and volume regulation, what volume would balance the osmotic concentrations?",
+        "solution": [
+          "Retained osmole amount is concentration × volume: n = (300 mOsm/L) × V₀. The solute amount stays constant in this model.",
+          "At the model equilibrium, n/Vf = 200 mOsm/L. Thus Vf/V₀ = (300 mOsm/L)/(200 mOsm/L) = 1.5.",
+          "Water enters and the calculated volume increases by 50%. This is a limiting model, not a claim that a real cell tolerates the swelling. A permeant solute would invalidate the retained-osmole assumption."
+        ]
+      },
+      "summaryChecklist": [
+        "Identify the driving force and the membrane pathway separately.",
+        "Locate the ATP-consuming step before naming transport primary or secondary active.",
+        "State permeability and time scale before predicting cell volume."
+      ]
     },
     {
       "id": "muscle-contraction",
@@ -9060,11 +9128,11 @@
       "steps": [
         {
           "title": "Start from random motion",
-          "body": "Brownian motion is irregular motion driven by molecular impacts. Net diffusion emerges statistically from concentration differences, not from molecules intentionally seeking dilute regions. Fick's first law J = −D dc/dx expresses flux down a gradient, with the minus sign indicating direction."
+          "body": "Brownian motion is irregular motion driven by molecular impacts. Net diffusion emerges statistically from concentration differences, not from molecules intentionally seeking dilute regions. Fick's first law J = −D dc/dx expresses flux down a gradient, with the minus sign indicating direction.\n\nHere J is amount crossing unit area per unit time, D is the diffusion coefficient, and dc/dx is concentration change per distance. With concentration in mol/m³ and distance in m, D in m²/s gives J in mol/(m²·s). Total transfer rate also depends on area. The sign is a direction convention, not a negative number of molecules."
         },
         {
           "title": "Follow time dependence",
-          "body": "Fick's second law describes how concentration changes as diffusion redistributes material. In one dimension, mean squared displacement is 2Dt for free diffusion. Typical diffusion time therefore grows with distance squared. Diffusion is effective over short cellular distances but rapidly becomes slow across much larger distances."
+          "body": "Fick's second law describes how concentration changes as diffusion redistributes material. In one dimension, mean squared displacement is 2Dt for free diffusion. Typical diffusion time therefore grows with distance squared. Diffusion is effective over short cellular distances but rapidly becomes slow across much larger distances.\n\nIn ⟨x²⟩ = 2Dt, x is displacement along one axis, not the total path travelled by a molecule. Using L as a root-mean-square displacement gives t = L²/(2D). A first-passage time to a target or diffusion in a bounded, binding tissue is a different problem and can have a different prefactor."
         },
         {
           "title": "Relate size and transport",
@@ -9072,7 +9140,7 @@
         },
         {
           "title": "Explain osmotic and thermal driving",
-          "body": "Osmosis is solvent movement associated with a chemical-potential difference across a selectively permeable boundary. For ideal dilute solutions, osmotic pressure is approximately cRT for solute particle concentration c. Fourier's heat law has a similar gradient form, with heat flux proportional to negative temperature gradient; thermodiffusion couples temperature and material transport."
+          "body": "Osmosis is solvent movement associated with a chemical-potential difference across a selectively permeable boundary. For ideal dilute solutions, osmotic pressure is approximately cRT for solute particle concentration c. Fourier's heat law has a similar gradient form, with heat flux proportional to negative temperature gradient; thermodiffusion couples temperature and material transport.\n\nIn π = cRT, c counts osmotically active particles, R is the gas constant and T is absolute temperature. Concentrations and R must use compatible units. Dissociation affects particle number; membrane penetration affects sustained tonicity. Osmotic pressure can balance a hydrostatic pressure difference, so water movement need not continue until all solute concentrations become equal."
         },
         {
           "title": "Work a distance comparison",
@@ -9098,15 +9166,37 @@
         "answer": 1
       },
       "recall": {
-        "prompt": "Explain diffusion, osmosis and heat transport: state the mechanism, work an example and name one assumption.",
-        "answer": "t scales as L²/D, so 3² gives a factor of nine. Unequal numbers available to cross create a net flux while individual motion remains random. If diffusion across 10 μm takes a characteristic time t, crossing 100 μm under the same conditions takes roughly 100t. In alveolar exchange, area, barrier thickness and partial-pressure gradients influence transfer. Convection brings gases to the exchange surface; diffusion carries them across the thin barrier."
+        "prompt": "If diffusion across 10 μm takes time t, how does the characteristic time change at 100 μm with the same D? Explain the physical assumption and distinguish diffusion from osmosis.",
+        "answer": "The distance increases tenfold, so characteristic time increases one hundredfold under the same free-diffusion geometry and diffusion coefficient. Random motion continues; the concentration gradient creates net solute flux. Osmosis concerns solvent movement across a selectively permeable boundary. Binding, flow and barriers can invalidate the free-diffusion comparison."
       },
       "related": [
         "biophysics-fluid-flow",
         "biophysics-energy-first-law"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 8
+      "updatedAt": "2026-11-09",
+      "minutes": 12,
+      "objectives": [
+        "Distinguish microscopic random motion from net diffusive flux.",
+        "Calculate a characteristic one-dimensional diffusion time with consistent units.",
+        "Identify why permeability, geometry and pressure limit osmotic predictions."
+      ],
+      "prerequisites": [
+        "fluid-and-membrane-transport"
+      ],
+      "workedExample": {
+        "title": "Diffusion distance is a squared-time problem",
+        "prompt": "Use a free one-dimensional diffusion model with D = 100 μm²/s. Estimate the time for root-mean-square displacement of 10 μm and of 100 μm.",
+        "solution": [
+          "Use t = L²/(2D). For 10 μm: t = (10 μm)²/(2 × 100 μm²/s) = 0.5 s. The μm² units cancel.",
+          "For 100 μm: t = (100 μm)²/(200 μm²/s) = 50 s. Ten times the distance requires 100 times the characteristic time.",
+          "These are hypothetical model values, not measured transit times in tissue. Flow, binding, obstacles and different boundary conditions change the calculation."
+        ]
+      },
+      "summaryChecklist": [
+        "State what J, D and the concentration gradient measure.",
+        "Square the distance ratio when comparing diffusion times at fixed D.",
+        "Separate an osmolarity measurement from a membrane-specific tonicity prediction."
+      ]
     },
     {
       "id": "biophysics-energy-first-law",
@@ -9261,15 +9351,15 @@
       "steps": [
         {
           "title": "Build an electrochemical balance",
-          "body": "An ion moves under both concentration and electrical influences. For one permeant ion at equilibrium, the Nernst equation gives E = RT/(zF) ln(coutside/cinside) using inside potential relative to outside. The sign depends on valence as well as the concentration ratio. Equilibrium for one ion need not mean zero current for every ion."
+          "body": "An ion moves under both concentration and electrical influences. For one permeant ion at equilibrium, the Nernst equation gives E = RT/(zF) ln(coutside/cinside) using inside potential relative to outside. The sign depends on valence as well as the concentration ratio. Equilibrium for one ion need not mean zero current for every ion.\n\nR is the gas constant, T the absolute temperature, z the signed valence and F the Faraday constant. Concentrations approximate activities in this introductory calculation. At 37°C, Eion ≈ (61.5 mV/z) log₁₀([ion]out/[ion]in). A negative inside potential can balance the outward concentration tendency of K⁺ without making the concentrations equal."
         },
         {
           "title": "Use selective permeability",
-          "body": "The resting membrane potential reflects gradients and relative permeabilities. The Goldman–Hodgkin–Katz voltage equation extends the comparison to several permeant monovalent ions under its assumptions, with anion concentrations appearing in reversed positions. Pumps maintain gradients over time; the voltage is not simply a direct count of pump cycles."
+          "body": "The resting membrane potential reflects gradients and relative permeabilities. The Goldman–Hodgkin–Katz voltage equation extends the comparison to several permeant monovalent ions under its assumptions, with anion concentrations appearing in reversed positions. Pumps maintain gradients over time; the voltage is not simply a direct count of pump cycles.\n\nFor K⁺, Na⁺ and Cl⁻ in the constant-field, monovalent-ion model, Vm = (RT/F) ln((PK[K]out + PNa[Na]out + PCl[Cl]in)/(PK[K]in + PNa[Na]in + PCl[Cl]out)). P denotes relative permeability; all concentrations use the same units. The chloride terms reverse because its charge is negative. This zero-net-current approximation is neither a simple average of voltages nor a formula for all electrogenic transport."
         },
         {
           "title": "Model electrical storage",
-          "body": "A membrane separates charge and behaves capacitively, while conducting pathways provide resistance. An elementary RC model has time constant τ = RC. After one time constant, a charging response has completed about 63% of its final change. This does not mean ions have all reached their equilibrium distributions."
+          "body": "A membrane separates charge and behaves capacitively, while conducting pathways provide resistance. An elementary RC model has time constant τ = RC. After one time constant, a charging response has completed about 63% of its final change. This does not mean ions have all reached their equilibrium distributions.\n\nIn a separate linear current approximation, Iion = gion(Vm − Eion), with outward conventional current positive. g is conductance; the voltage difference is driving force. nS × mV gives pA. Increasing conductance magnifies current at a fixed driving force; increasing permeability in the Goldman model shifts its voltage prediction. Real channel currents may be nonlinear, and conductance and permeability are not the same unit."
         },
         {
           "title": "Explain spatial spread and Donnan effects",
@@ -9299,15 +9389,39 @@
         "answer": 1
       },
       "recall": {
-        "prompt": "Explain membrane potentials, permeability and the rc model: state the mechanism, work an example and name one assumption.",
-        "answer": "E ≈ 61.5 log₁₀(0.1) mV = −61.5 mV. 1 − e⁻¹ ≈ 0.632 describes the completed charging fraction. For K⁺ at about 37°C with outside/inside concentration ratio 0.1, E is approximately −61.5 mV. Increasing outside K⁺ makes that equilibrium potential less negative. Predict the direction before calculating, and distinguish this single-ion value from a full resting-potential estimate."
+        "prompt": "At 37°C, K⁺ has an outside/inside concentration ratio of 0.1. Estimate EK, explain why it is not necessarily Vm, and state what fraction of a simple RC charging response occurs after one time constant.",
+        "answer": "EK ≈ 61.5 log₁₀(0.1) mV = −61.5 mV. A membrane permeable to several ions need not rest at this single-ion equilibrium voltage. For the simple charging model the completed fraction is 1 − e⁻¹ ≈ 0.632, about 63%; this describes voltage relaxation, not equilibration of every ionic concentration."
       },
       "related": [
         "biophysics-entropy-potentials",
         "biophysics-action-potentials"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 8
+      "updatedAt": "2026-11-09",
+      "minutes": 12,
+      "objectives": [
+        "Calculate a single-ion equilibrium voltage and distinguish it from the membrane voltage.",
+        "Use the sign of an electrical driving force to predict ionic current in a stated model.",
+        "Explain why Goldman permeability weighting differs from averaging Nernst potentials."
+      ],
+      "prerequisites": [
+        "biophysics-diffusion-osmosis",
+        "physiology-membrane-foundations"
+      ],
+      "workedExample": {
+        "title": "Separate equilibrium voltage from driving force",
+        "prompt": "For a hypothetical K⁺-selective pathway at 37°C, [K⁺]out = 14 mmol/L and [K⁺]in = 140 mmol/L. The cell is held at −40 mV and the pathway has linear conductance 2 nS. Calculate EK and the outward-positive K⁺ current.",
+        "solution": [
+          "EK = 61.5 mV × log₁₀(14/140) = −61.5 mV. The concentration units cancel inside the ratio.",
+          "Driving force = Vm − EK = −40 − (−61.5) = +21.5 mV. For this cation, positive outward current corresponds to K⁺ efflux.",
+          "IK = 2 nS × 21.5 mV = +43 pA. The voltage is held fixed in this example; in an unclamped cell, current also changes membrane charge and voltage.",
+          "EK describes one ion at equilibrium. It is not automatically the resting potential of a membrane carrying several ionic currents."
+        ]
+      },
+      "summaryChecklist": [
+        "Define the inside-relative-to-outside voltage convention.",
+        "Keep single-ion equilibrium, total membrane voltage and driving force distinct.",
+        "State the ionic and constant-field assumptions before using Goldman."
+      ]
     },
     {
       "id": "biophysics-action-potentials",
@@ -9336,15 +9450,15 @@
         },
         {
           "title": "Explain propagation",
-          "body": "Local circuit currents depolarise adjacent membrane, where new regenerative current develops. The passive current spreads with decrement, but a normal propagated action potential is repeatedly renewed rather than exponentially shrinking along the entire axon. Refractory membrane behind the front supports forward progression after initiation."
+          "body": "Local circuit currents depolarise adjacent membrane, where new regenerative current develops. The passive current spreads with decrement, but a normal propagated action potential is repeatedly renewed rather than exponentially shrinking along the entire axon. Refractory membrane behind the front supports forward progression after initiation.\n\nThe advancing signal is a sequence of local membrane events. Stimulating a resting axon in its middle can initiate propagation in both directions; forward propagation after a physiological initiation site does not mean the membrane is a one-way wire. Local refractoriness affects the recently active region."
         },
         {
           "title": "Compare fibre properties",
-          "body": "Increasing diameter reduces internal resistance and can increase conduction speed. Myelin reduces current leakage and effective membrane charging requirements between nodes; regeneration occurs at nodes of Ranvier. Saltatory conduction does not mean ions leap through empty space from one node to the next."
+          "body": "Increasing diameter reduces internal resistance and can increase conduction speed. Myelin reduces current leakage and effective membrane charging requirements between nodes; regeneration occurs at nodes of Ranvier. Saltatory conduction does not mean ions leap through empty space from one node to the next.\n\nMyelin increases effective membrane resistance and reduces effective capacitance of the internodal membrane. More current can spread farther while less charge is required to change internodal voltage. Nodes concentrate the regenerative channel activity. Myelin damage may slow propagation or cause block; a simple speed ratio cannot predict an individual clinical deficit."
         },
         {
           "title": "Connect to recording",
-          "body": "An intracellular voltage and a surface extracellular potential are different measurements. Surface signals depend on spatial current distributions, orientation and volume conduction. Stronger stimulation often changes recruitment or firing rate rather than increasing the height of each all-or-none spike in one healthy axon."
+          "body": "An intracellular voltage and a surface extracellular potential are different measurements. Surface signals depend on spatial current distributions, orientation and volume conduction. Stronger stimulation often changes recruitment or firing rate rather than increasing the height of each all-or-none spike in one healthy axon.\n\nFor extracellular recordings, subtract latencies at two sites to estimate travel time over their separation. A common stimulus delay then cancels approximately. Compound signals contain many axons, so choosing corresponding waveform landmarks matters; changing recruitment can invalidate a simple comparison."
         }
       ],
       "question": {
@@ -9373,8 +9487,30 @@
         "biophysics-resting-potential",
         "biophysics-ultrasound"
       ],
-      "updatedAt": "2026-09-09",
-      "minutes": 8
+      "updatedAt": "2026-11-09",
+      "minutes": 12,
+      "objectives": [
+        "Distinguish passive spread from local regenerative propagation.",
+        "Explain how myelin and axon geometry influence conduction.",
+        "Calculate conduction velocity from two recording sites while stating measurement limits."
+      ],
+      "prerequisites": [
+        "membrane-potentials"
+      ],
+      "workedExample": {
+        "title": "Calculate velocity from a latency difference",
+        "prompt": "In a hypothetical recording, two sites on the same pathway are 0.12 m apart. Corresponding response landmarks occur at 4 ms and 7 ms after one stimulus. Estimate conduction velocity.",
+        "solution": [
+          "Travel-time difference Δt = 7 ms − 4 ms = 3 ms = 0.003 s. Do not divide the distance by the full 7 ms latency.",
+          "Velocity v = distance/Δt = 0.12 m / 0.003 s = 40 m/s.",
+          "This assumes both landmarks represent propagation in the same pathway and their difference excludes unrelated synaptic or equipment delays. It is a teaching calculation, not a diagnostic normal range."
+        ]
+      },
+      "summaryChecklist": [
+        "Explain why a regenerated spike can maintain amplitude while passive voltage decays.",
+        "Relate myelin to leakage and charging, not to ions jumping through space.",
+        "Use a latency difference with consistent units and matching landmarks."
+      ]
     },
     {
       "id": "biophysics-ultrasound",

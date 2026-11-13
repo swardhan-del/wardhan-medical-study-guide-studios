@@ -1069,7 +1069,13 @@
   "membrane-potentials": {
     "title": "OpenStax: Membrane potentials and ion gradients",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
-    "checkedAt": "2026-09-07"
+    "checkedAt": "2026-09-07",
+    "supportingReferences": [
+      {
+        "title": "Foundations of Neuroscience, chapter 4: The Membrane at Rest",
+        "url": "https://openbooks.lib.msu.edu/neuroscience/chapter/the-membrane-at-rest/"
+      }
+    ]
   },
   "cardiac-output": {
     "title": "OpenStax: Cardiac output and pump regulation",
@@ -1128,7 +1134,17 @@
   "enzyme-kinetics": {
     "title": "Assay Guidance Manual: Mechanism of Action Assays for Enzymes",
     "url": "https://www.ncbi.nlm.nih.gov/books/NBK92001/",
-    "checkedAt": "2026-09-07"
+    "checkedAt": "2026-09-07",
+    "supportingReferences": [
+      {
+        "title": "Strelow et al., Assay Guidance Manual: Mechanism of Action Assays for Enzymes (2012), Types of Inhibition and Classical Steady-State Experiments",
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92001/"
+      },
+      {
+        "title": "OpenStax Biology 2e, section 6.5: Enzymes",
+        "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+      }
+    ]
   },
   "pcr": {
     "title": "NHGRI: Polymerase Chain Reaction",
@@ -1148,7 +1164,13 @@
   "fluid-and-membrane-transport": {
     "title": "Molecular Biology of the Cell: membrane transport",
     "url": "https://www.ncbi.nlm.nih.gov/books/NBK26896/",
-    "checkedAt": "2026-09-08"
+    "checkedAt": "2026-09-08",
+    "supportingReferences": [
+      {
+        "title": "OpenStax Biology 2e, section 5.2: Passive Transport",
+        "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+      }
+    ]
   },
   "muscle-contraction": {
     "title": "Molecular Biology of the Cell: molecular motors",
@@ -1587,7 +1609,8 @@
   "biophysics-diffusion-osmosis": {
     "title": "OpenStax: passive transport",
     "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport",
-    "checkedAt": "2026-09-09"
+    "checkedAt": "2026-09-09",
+    "supportingReferences": []
   },
   "biophysics-energy-first-law": {
     "title": "OpenStax: first law of thermodynamics",
@@ -1602,12 +1625,19 @@
   "biophysics-resting-potential": {
     "title": "OpenStax: action potentials",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
-    "checkedAt": "2026-09-09"
+    "checkedAt": "2026-09-09",
+    "supportingReferences": [
+      {
+        "title": "Foundations of Neuroscience, chapter 4: The Membrane at Rest",
+        "url": "https://openbooks.lib.msu.edu/neuroscience/chapter/the-membrane-at-rest/"
+      }
+    ]
   },
   "biophysics-action-potentials": {
     "title": "OpenStax: action potentials",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential",
-    "checkedAt": "2026-09-09"
+    "checkedAt": "2026-09-09",
+    "supportingReferences": []
   },
   "biophysics-ultrasound": {
     "title": "NIH NIBIB: ultrasound",

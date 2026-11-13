@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { topicGuides } from "@/content/topic-guides";
+import type { LibraryLesson } from "@/lib/library-types";
+import taxonomy from "@/content/library-taxonomy.json";
 import lessonData from "@/content/library-lessons.json";
 import { searchMetadata } from "@/lib/search-metadata";
 import { getSiteUrl } from "@/lib/site-url";
@@ -16,15 +18,15 @@ export default async function TopicSequence({ params }: Props) {
   const { slug } = await params;
   const guide = topicGuides.find(guide => guide.slug === slug);
   if (!guide) notFound();
-  const stages = guide.stages.map(stage => ({ ...stage, lesson: lessonData.lessons.find(lesson => lesson.id === stage.id)! }));
+  const stages = guide.stages.map(stage => ({ ...stage, lesson: (lessonData.lessons as LibraryLesson[]).find(lesson => lesson.id === stage.id)! }));
   return <article className="site-container study-page topic-sequence">
     <SearchBreadcrumbs items={[{ name: "Library", href: "/library" }, { name: "Guided topic sequences", href: "/learn/topics" }, { name: guide.title, href: `/learn/topics/${slug}` }]} />
     <StructuredData data={collectionGraph(guide.title, guide.summary, `/learn/topics/${slug}`, stages.map(({ lesson }) => ({ name: lesson.title, href: `/library/${lesson.id}` })), getSiteUrl())} />
     <header className="study-hero"><p className="eyebrow">Free guided sequence · {stages.length} published lessons</p><h1>{guide.title}</h1><p className="interior-lede">{guide.summary}</p><p>{guide.audience}</p><a className="button button-primary" href="#study-sequence">Explore the lesson sequence ↓</a></header>
-    <section className="study-panel"><h2>Before you begin</h2><p>{guide.preparation}</p><h3>A useful study method</h3><p>{guide.method}</p></section>
+    <section className="study-panel"><h2>Before you begin</h2><p>{guide.preparation}</p><p>Read the prerequisites and vocabulary first. In each lesson, study the explanation, inspect the labelled visual, work the example before revealing its solution, then submit a checkpoint and read the feedback. Use the summary to decide whether to continue or revisit the explanation.</p><Link className="button button-primary" href={`/library/${stages[0].id}#lesson-objectives`}>Begin the first guided lesson →</Link><h3>A useful study method</h3><p>{guide.method}</p></section>
     <section id="study-sequence" aria-labelledby="sequence-title"><h2 id="sequence-title">Build the explanation in order</h2><ol className="topic-sequence-steps">{stages.map(({ id, purpose, lesson }, i) => <li key={id} className="study-panel">
-      <p className="eyebrow">Step {i + 1} · {lesson.minutes} minutes in the full lesson</p><h3><Link href={`/library/${id}`}>{lesson.title}</Link></h3><p>{purpose}</p><p>{lesson.summary}</p>
-      <p><strong>Explain after studying:</strong> {lesson.recall.prompt}</p>
+      <p className="eyebrow">Step {i + 1} · {lesson.minutes} minutes in the full lesson</p><h3><Link href={`/library/${id}`}>{lesson.title}</Link></h3><p>{purpose}</p>{lesson.subject === "histology" && <p>Course links: {taxonomy.subjects.filter(s => ["histology-i", "histology-ii"].includes(s.id) && taxonomy.nodes.some(n => n.subject === s.id && n.resources.includes(id))).map(s => <Link key={s.id} href={`/subjects/${s.id}`}>{s.title} · </Link>)} Shared prerequisites can appear in both course paths.</p>}<p>{lesson.summary}</p>
+      {lesson.workedExample && <p><Link href={`/library/${id}#worked-example-heading`}>Worked example: {lesson.workedExample.title}</Link></p>}<p><strong>Explain after studying:</strong> {lesson.recall.prompt}</p>
       <div className="action-row"><Link className="button button-secondary" href={`/library/${id}`}>Study {lesson.title}</Link><Link href={`/library/${id}#concept-check-title`}>Try the Knowledge Check</Link><Link href={`/library/${id}#lesson-source`}>Sources and further reading</Link></div>
     </li>)}</ol></section>
     <section className="study-panel" id="review-connections"><h2>Review the connections</h2><p>{guide.review}</p><p>Use the explanations in the full lessons to check your answer before moving on. Revisit a step if you can name a process but cannot justify it.</p><Link className="button button-primary" href={guide.next.href}>{guide.next.title}</Link></section>
