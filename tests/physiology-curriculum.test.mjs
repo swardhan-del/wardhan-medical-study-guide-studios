@@ -7,6 +7,7 @@ import registry from "../src/content/learning-registry.json" with { type: "json"
 
 const { parts } = physiologyCourse;
 const chapters = parts[1].chapters;
+const respiratoryChapters = parts[2].chapters;
 
 test("divided physiology parts and cardiovascular chapters retain their verified order", () => {
   assert.deepEqual(parts.map(part => part.id), [
@@ -21,13 +22,18 @@ test("divided physiology parts and cardiovascular chapters retain their verified
     "renal-circulation", "shock-and-volume-loss", "fetal-and-neonatal-circulation",
     "thermoregulation",
   ]);
-  assert(parts.filter(part => part.chapters).length === 1);
-  const ids = [...parts, ...chapters].map(entry => entry.id);
+  assert.deepEqual(parts.filter(part => part.chapters).map(part => part.id), ["cardiovascular", "respiratory"]);
+  assert.deepEqual(respiratoryChapters.map(chapter => chapter.id), [
+    "pulmonary-ventilation", "pulmonary-gas-exchange", "pulmonary-circulation-and-vq",
+    "respiratory-gas-transport", "respiratory-control", "cardiopulmonary-adaptation",
+    "respiratory-acid-base",
+  ]);
+  const ids = [...parts, ...chapters, ...respiratoryChapters].map(entry => entry.id);
   assert.equal(new Set(ids).size, ids.length);
 });
 
 test("the course maps existing public lessons and leaves gaps visible", () => {
-  const lessonIds = chapters.flatMap(chapter => chapter.lessonIds);
+  const lessonIds = [...chapters, ...respiratoryChapters].flatMap(chapter => chapter.lessonIds);
   assert.equal(new Set(lessonIds).size, lessonIds.length);
   for (const id of lessonIds) {
     const record = catalog.records.find(record => record.id === id);
@@ -41,6 +47,9 @@ test("the course maps existing public lessons and leaves gaps visible", () => {
     "local-circulatory-control", "exercise-and-splanchnic-circulation",
     "shock-and-volume-loss", "thermoregulation",
   ]);
+  assert.deepEqual(respiratoryChapters.filter(chapter => !chapter.lessonIds.length).map(chapter => chapter.id), [
+    "respiratory-gas-transport", "respiratory-control", "cardiopulmonary-adaptation",
+  ]);
 });
 
 test("chapter navigation preserves chronology even when the next chapter has no mapped lesson", () => {
@@ -52,4 +61,7 @@ test("chapter navigation preserves chronology even when the next chapter has no 
   assert.equal(physiologyChapterNavigation("cardiac-conduction-autonomics").previous, undefined);
   assert.equal(physiologyChapterNavigation("fetal-circulation-transition").next.id, "thermoregulation");
   assert.equal(physiologyChapterNavigation("membrane-potentials"), null);
+  assert.equal(physiologyChapterNavigation("respiratory-mechanics").previous, undefined);
+  assert.equal(physiologyChapterNavigation("ventilation-perfusion").next.id, "respiratory-gas-transport");
+  assert.equal(physiologyChapterNavigation("renal-renal-acid-base").chapter.id, "respiratory-acid-base");
 });
