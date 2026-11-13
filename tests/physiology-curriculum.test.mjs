@@ -47,9 +47,7 @@ test("the course maps existing public lessons and leaves gaps visible", () => {
     "local-circulatory-control", "exercise-and-splanchnic-circulation",
     "shock-and-volume-loss", "thermoregulation",
   ]);
-  assert.deepEqual(respiratoryChapters.filter(chapter => !chapter.lessonIds.length).map(chapter => chapter.id), [
-    "respiratory-gas-transport", "respiratory-control", "cardiopulmonary-adaptation",
-  ]);
+  assert(respiratoryChapters.every(chapter => chapter.lessonIds.length > 0));
 });
 
 test("chapter navigation preserves chronology even when the next chapter has no mapped lesson", () => {

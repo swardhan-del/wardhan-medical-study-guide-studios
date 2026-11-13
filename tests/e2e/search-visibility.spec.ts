@@ -44,7 +44,7 @@ test("every public route delivers its own canonical, social metadata and valid J
       expect(schema["@context"], route.path).toBe("https://schema.org");
       const nodes = schema["@graph"] ?? [schema];
       for (const node of nodes) {
-        expect(["Organization", "WebSite", "LearningResource", "Course", "BreadcrumbList", "CollectionPage", "ItemList"], route.path).toContain(node["@type"]);
+        expect(["Organization", "WebSite", "LearningResource", "Course", "BreadcrumbList", "CollectionPage", "ItemList", "VideoObject"], route.path).toContain(node["@type"]);
         if (node.url) expect(new URL(node.url).origin, route.path).toBe(new URL(parsed.canonical!).origin);
         if (node["@type"] === "LearningResource" || node["@type"] === "Course") {
           expect(node.name, route.path).toBe(parsed.h1); expect(node.url, route.path).toBe(parsed.canonical);
@@ -56,6 +56,13 @@ test("every public route delivers its own canonical, social metadata and valid J
           expect(items.map((item: {position: number}) => item.position)).toEqual(items.map((_: unknown, i: number) => i+1));
           expect(items.at(-1).item, route.path).toBe(parsed.canonical);
           expect(parsed.breadcrumbs, route.path).toContain(items.at(-1).name);
+        }
+        if (node["@type"] === "VideoObject") {
+          expect(node.name).toBe(parsed.h1);
+          expect(node.url).toBe(parsed.canonical);
+          expect(new URL(node.contentUrl).pathname).toBe("/media/explainers/confidence-interval-coverage.mp4");
+          expect(new URL(node.thumbnailUrl).pathname).toBe("/media/explainers/confidence-interval-coverage.webp");
+          expect(node.uploadDate).toBe("2026-11-13");
         }
       }
     }

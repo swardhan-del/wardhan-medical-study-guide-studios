@@ -318,6 +318,8 @@ test("each subject directory leads to a worked example and an explained checkpoi
   await page.goto("/start");
   await page.getByRole("link", { name: "Try a five-minute study session", exact: true }).click();
   await expect(page.locator(".first-session-list > li")).toHaveCount(firstStudySessions.length);
+  await page.goto("/subjects/histology-i");
+  await expect(page.getByRole("link", { name: "Try a five-minute study session", exact: true })).toHaveAttribute("href", firstSessionHref("histology"));
 
   for (const session of firstStudySessions) {
     await page.goto(`/subjects/${session.id}`);
@@ -373,4 +375,31 @@ test("a related follow-up becomes available after 24 hours and persists", async 
   await expect(review).toContainText("Follow-up already practised.");
   await review.getByRole("button", { name: "Review Anatomy & Embryology follow-up" }).click();
   await expect(followUp.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+
+  const weeklyButton = review.getByRole("button", { name: "Try Anatomy & Embryology one-week review" });
+  await expect(weeklyButton).toHaveCount(0);
+  const weeklyItem = practiceItems.find(item => item.id === firstStudySessions[0].weeklyReview)!;
+  const weeklyQuestion = checkpointFor(weeklyItem);
+  if (weeklyQuestion?.type !== "single") throw new Error("Expected a single-choice one-week review");
+  await page.goto(weeklyItem.href.split("#")[0]);
+  const priorCheck = page.locator("#concept-check-title:visible");
+  await priorCheck.getByRole("radio", { name: weeklyQuestion.options[weeklyQuestion.answer].text, exact: true }).check();
+  await priorCheck.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+  await expect(priorCheck.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+  await page.clock.setFixedTime(new Date(startedAt.getTime() + 7 * 24 * 60 * 60 * 1000));
+  await page.goto("/study#subject-review");
+  await weeklyButton.click();
+  const weekly = review.getByRole("region", { name: "Anatomy & Embryology one-week review question", exact: true });
+  await expect(review.locator("#figure-thoracic-plane img")).toBeVisible();
+  await expect(weekly.locator("[data-feedback]")).toHaveCount(0);
+  await weekly.getByRole("radio", { name: weeklyQuestion.options[weeklyQuestion.answer].text, exact: true }).check();
+  await weekly.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+  await expect(weekly.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+  await page.reload();
+  await expect(review).toContainText("One-week review complete.");
+  await review.getByRole("button", { name: "Review Anatomy & Embryology one-week review" }).click();
+  await expect(weekly.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
 });

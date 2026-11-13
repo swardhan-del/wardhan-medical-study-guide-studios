@@ -2081,6 +2081,98 @@
       "referenceIds": [
         "pituitary-glandular-neural-orientation"
       ]
+    },
+    {
+      "id": "oxygen-pressure-content-delivery",
+      "kind": "comparison",
+      "title": "Three oxygen measurements and what they tell you",
+      "headers": [
+        "Quantity",
+        "What it describes",
+        "Useful unit"
+      ],
+      "rows": [
+        [
+          "Partial pressure",
+          "Pressure related to dissolved oxygen",
+          "mmHg"
+        ],
+        [
+          "Oxygen content",
+          "Bound and dissolved oxygen per volume of blood",
+          "mL of oxygen per litre of blood"
+        ],
+        [
+          "Oxygen delivery",
+          "Oxygen content multiplied by blood flow",
+          "mL of oxygen per minute"
+        ]
+      ],
+      "alt": "Pressure is related to dissolved oxygen. Content is oxygen per volume of blood. Delivery also incorporates flow and is oxygen per unit time.",
+      "caption": "Reading the units helps distinguish a pressure, a concentration and a rate.",
+      "observe": "If blood oxygen content is fixed but flow drops, identify the quantity that must change.",
+      "lessonIds": [
+        "respiratory-oxygen-content-and-delivery"
+      ],
+      "referenceIds": [
+        "respiratory-oxygen-content-and-delivery"
+      ]
+    },
+    {
+      "id": "co2-chemoreflex-feedback",
+      "kind": "flow",
+      "title": "Follow one carbon dioxide feedback loop",
+      "steps": [
+        "Arterial carbon dioxide rises.",
+        "Brain extracellular pH falls as carbon dioxide enters that compartment.",
+        "Central chemosensitive pathways increase ventilatory drive.",
+        "Higher alveolar ventilation tends to lower arterial carbon dioxide."
+      ],
+      "alt": "An increase in arterial carbon dioxide lowers brain extracellular pH. The response increases the drive to ventilate and opposes the original carbon dioxide increase.",
+      "caption": "This schematic follows the central pathway while holding carbon dioxide production fixed.",
+      "observe": "Compare the first and last arrows in the chain. Explain how the response opposes the disturbance.",
+      "lessonIds": [
+        "respiratory-chemoreflex-control"
+      ],
+      "referenceIds": [
+        "respiratory-chemoreflex-control"
+      ]
+    },
+    {
+      "id": "exercise-ventilation-demand",
+      "kind": "comparison",
+      "title": "Compare production with alveolar ventilation",
+      "headers": [
+        "Fictional comparison",
+        "CO₂ production ÷ ventilation",
+        "Expected change in arterial CO₂"
+      ],
+      "rows": [
+        [
+          "Both quantities rise by the same factor",
+          "Approximately unchanged",
+          "Approximately unchanged"
+        ],
+        [
+          "Alveolar ventilation rises by the larger factor",
+          "Falls",
+          "Tends to fall"
+        ],
+        [
+          "CO₂ production rises by the larger factor",
+          "Rises",
+          "Tends to rise"
+        ]
+      ],
+      "alt": "In the steady model, arterial carbon dioxide follows the production-to-ventilation ratio. The ratio stays steady only if the two quantities change in proportion.",
+      "caption": "This is a steady-state comparison with the other model assumptions held fixed.",
+      "observe": "Predict how the ratio moves if production rises and alveolar ventilation stays fixed.",
+      "lessonIds": [
+        "respiratory-exercise-adaptation"
+      ],
+      "referenceIds": [
+        "respiratory-exercise-adaptation"
+      ]
     }
   ]
 }

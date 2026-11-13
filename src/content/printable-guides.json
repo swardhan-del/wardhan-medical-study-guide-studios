@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-13",
   "parts": [
     {
       "id": "physiology-membrane-foundations",
@@ -546,7 +546,10 @@
       "lessonIds": [
         "respiratory-mechanics",
         "ventilation-perfusion",
-        "alveolar-ventilation-calculations"
+        "alveolar-ventilation-calculations",
+        "respiratory-oxygen-content-and-delivery",
+        "respiratory-chemoreflex-control",
+        "respiratory-exercise-adaptation"
       ],
       "basis": "Website teaching sequence",
       "coverage": "Selected web adaptations; this is not the full source manuscript.",

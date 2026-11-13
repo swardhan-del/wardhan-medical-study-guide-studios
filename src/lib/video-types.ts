@@ -19,6 +19,7 @@ export type PublicVideo = {
   transcript: { startSeconds: number; text: string }[];
   mimeType: "video/mp4" | "video/webm";
   explainer?: {
+    publishedAt?: string;
     sources: { title: string; url: string }[];
     furtherViewing?: { title: string; url: string };
   };

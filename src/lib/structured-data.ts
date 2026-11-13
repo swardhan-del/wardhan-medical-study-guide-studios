@@ -1,4 +1,5 @@
-import type { BreadcrumbList, Course, Graph, LearningResource } from "schema-dts";
+import type { BreadcrumbList, Course, Graph, LearningResource, VideoObject } from "schema-dts";
+import type { PublicVideo } from "./video-types";
 
 export type Breadcrumb = { name: string; href: string };
 export const studioName = "Wardhan Medical Study Guide Studios";
@@ -43,6 +44,23 @@ export function courseSchema(course: {
     provider: { "@type": "Organization", "@id": `${origin}/#studio`, name: studioName, url: origin },
     inLanguage: "en-GB", isAccessibleForFree: true,
     hasPart: course.lessons.map((lesson) => ({ "@type": "LearningResource", "@id": `${absolute(lesson.path, origin)}#lesson`, name: lesson.title, url: absolute(lesson.path, origin) })),
+  };
+}
+
+export function videoSchema(video: PublicVideo, uploadDate: string, origin: string): VideoObject {
+  const url = absolute(`/videos/${video.id}`, origin);
+  return {
+    "@type": "VideoObject",
+    "@id": `${url}#video`,
+    name: video.title,
+    description: video.summary,
+    url,
+    thumbnailUrl: absolute(video.posterUrl, origin),
+    contentUrl: absolute(video.sourceUrl, origin),
+    uploadDate,
+    duration: `PT${video.durationSeconds}S`,
+    isAccessibleForFree: true,
+    publisher: { "@id": `${origin}/#studio` },
   };
 }
 

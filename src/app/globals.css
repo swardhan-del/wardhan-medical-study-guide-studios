@@ -4335,6 +4335,11 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   overflow-wrap: anywhere;
 }
 
+#subject-review .first-session-list {
+  grid-template-columns: minmax(0, 1fr);
+  overflow-wrap: anywhere;
+}
+
 .first-session-page {
   overflow-wrap: anywhere;
 }

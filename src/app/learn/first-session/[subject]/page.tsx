@@ -61,7 +61,7 @@ export default async function FirstSessionPage({ params }: Props) {
       </section>
       <section className="study-panel" aria-labelledby="continue-heading">
         <h2 id="continue-heading">Come back to practise</h2>
-        <p>Check an answer above to make a related question available in My Study after 24 hours. Your progress is saved in this browser.</p>
+        <p>Check an answer above. My Study gives you one related question after 24 hours and a different question a week after this session. Open My Study again in this browser to see what’s due.</p>
         <div className="action-row">
           <Link className="button button-primary" href="/study#subject-review">Open my follow-up questions</Link>
           <Link href={lesson}>Read the full lesson</Link>

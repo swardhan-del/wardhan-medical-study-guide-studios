@@ -13,6 +13,7 @@ import { TopicCards } from "@/components/taxonomy-navigation";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { AnatomyVolumes } from "@/components/anatomy-volumes";
 import { firstSessionFor, firstSessionHref } from "@/content/first-study-sessions";
+import { publicVideos } from "@/lib/videos";
 import { HistologyOverview } from "@/components/histology-overview";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
@@ -27,6 +28,8 @@ export default async function SubjectPage({ params }: Props) {
   const s = librarySubjects.find((s) => s.id === slug);
   if (!s) notFound();
   const records = subjectRecords(slug);
+  const firstSession = firstSessionFor(slug);
+  const explainers = publicVideos.filter(video => video.subject === slug && video.explainer);
   return (
     <div className="site-container library-page">
       <nav className="breadcrumbs" aria-label="Breadcrumb">
@@ -42,9 +45,13 @@ export default async function SubjectPage({ params }: Props) {
       </header>
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link></div>}
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
-      {firstSessionFor(slug) && <p><Link className="button button-secondary" href={firstSessionHref(slug)}>Try a five-minute study session</Link></p>}
+      {firstSession && <p><Link className="button button-secondary" href={firstSessionHref(firstSession.id)}>Try a five-minute study session</Link></p>}
       {slug === "physiology" && <p><Link className="button button-secondary" href={physiologyCoursePath}>Full Course</Link></p>}
       <SubjectHubOverview subject={slug} />
+      {explainers.length > 0 && <section className="study-panel" aria-labelledby="subject-explainers">
+        <h2 id="subject-explainers">Video explainers</h2>
+        <ul>{explainers.map(video => <li key={video.id}><Link href={`/videos/${video.id}`}>{video.title}</Link></li>)}</ul>
+      </section>}
       {slug === "anatomy" && <><AnatomyLearningPath/><AnatomyTopicNav /></>}
       {records.length === 0 ? (
         <section className="catalog-empty"><h2>No public lessons yet</h2><p>No resources have been released for this subject yet. Choose another subject to begin studying today.</p><Link className="button button-primary" href="/subjects">Choose a subject with lessons</Link></section>
