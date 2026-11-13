@@ -2,21 +2,21 @@
 
 **Planning window:** November 2026 to November 2031.
 
-The targets are 500,000 cumulative human page views, a growing audience that returns to study, and 5,000 active paid subscribers at the end of year five. Count repeat learners separately from page views. A single learner can generate many views. If the reach target is intended to mean 500,000 distinct people or 500,000 views per month, revise the annual targets and acquisition model before using this plan as a forecast.
+All public learning is free for everyone. Lessons, interactive models, practice and local progress are open without an account.
 
-At $2.99 per month, 5,000 active paid subscribers generate $14,950 in monthly gross subscription revenue at full list price. Reaching $10,000 after deductions leaves $4,950 per month for the deductions included in that figure. Track fees, refunds, discounts, applicable taxes and operating costs separately. The targets and price are planning assumptions.
+Aim for 500,000 cumulative human page views by year five and a growing audience that returns to study. Track page views, learners and return visits separately. The earlier 5,000-subscriber figure can serve as a planning target for free, optional study updates once signup is operational.
 
-## Sequence and ownership
+## Five-year milestones
 
 | Stage | Cumulative page-view checkpoint | Deliverable and decision |
 | --- | ---: | --- |
-| Year 1 | 20,000 | Publish short sessions across subjects. Pilot the first visit on phone and desktop with students in at least two cohorts. Put anatomy and histology visuals in front of educators and study groups. Measure which sessions students complete and revisit. |
-| Year 2 | 65,000 | Expand the highest-retention subjects into reviewed sequences. Publish searchable, substantive lessons and specimen activities, with stable links for tutors and student groups. Trial a clear paid offer with a small group after demonstrating repeat use. |
-| Year 3 | 155,000 | Expand the library using topics students repeatedly request and study. If the paid pilot retains users, expand paid access and evaluate each acquisition channel against the cost of producing and reviewing content. |
-| Year 4 | 300,000 | Improve weak subject entry points and repeat-use rates. Build repeatable educator referrals and term-by-term revision collections. Use paid retention and support costs to choose where to invest. |
-| Year 5 | 500,000 | Target 5,000 active paying subscribers. Review net proceeds, renewal, acquisition costs and sustainable subject review capacity before expanding the offer. |
+| Year 1 | 20,000 | Publish short sessions across subjects. Pilot the first visit on phone and desktop with students in at least two cohorts. Share anatomy and histology visuals with educators and study groups. Measure first-session completion and repeat study. |
+| Year 2 | 65,000 | Expand the most revisited subjects into reviewed sequences. Give tutors and student groups stable links to substantive lessons and specimen activities. Trial optional free study updates if signup is operational. |
+| Year 3 | 155,000 | Prioritise topics learners repeatedly request and study. Compare search, educator referrals and direct visits by the completed study sessions they bring. |
+| Year 4 | 300,000 | Improve weak subject entry points. Build educator referrals and term-by-term revision collections. Use return rates and editorial capacity to prioritise updates. |
+| Year 5 | 500,000 | Evaluate repeat study, subject coverage, referral sources and the reach of optional free updates. Set the next targets from observed usage and sustainable review capacity. |
 
-Page-view checkpoints are planning hypotheses. Each quarter, compare the prior quarter's reach, repeat practice and subscriber data with the trajectory, and revise the acquisition assumptions. Record the denominator, time window and collection method with every rate.
+The page-view milestones are planning targets. Compare them each quarter with measured reach and repeat practice. Record the denominator, time window and collection method with every rate.
 
 ## Learning work in priority order
 
@@ -40,10 +40,16 @@ Page-view checkpoints are planning hypotheses. Each quarter, compare the prior q
 - **Discovery.** Start with substantive, source-linked anatomy and histology pages that instructors can share directly. Track search clicks, educator referrals and direct visits as separate channels. Put comparable, accessible starting sessions within reach of each subject directory.
 - **First use.** In each subject, track the share of starters who submit a checkpoint in their first session. During student pilots, record completion, whether the learner can explain the worked example, and where they get stuck.
 - **Return.** Measure the share of consenting starters who return in a separate session and do a learning activity within 7 and 30 days. Track delayed question completion by subject. Publish the cohort size and measurement coverage alongside the rates.
-- **Paid product.** Review active paying subscribers, trial-to-paid conversion where applicable, cancellations and renewal by cohort. Treat gross monthly recurring revenue and net proceeds as different measures. Test whether learners value structured exam practice, revision sets or progress tools enough to pay while keeping the public starting lessons available.
-- **Evidence.** The existing opt-in event system lacks a page-view series and a persistent learner identifier. Start with a consented pilot for activation and repeat study. Agree on privacy and reporting requirements before configuring site-wide measurement or a payment provider. Until then, record audience retention and paid conversion as unmeasured.
+- **Optional updates.** Once a free opt-in channel is operational, count confirmed subscriptions separately from learners. Track how often updates lead to a completed study session or a return visit, with clear consent.
+- **Evidence.** The existing opt-in event system lacks a page-view series and a persistent learner identifier. Start with a consented pilot for activation and repeat study. Agree on privacy and reporting requirements before configuring site-wide measurement. Until then, record audience retention as unmeasured.
 
 Use the same first-visit rubric after major releases. Score entry and orientation, lesson usefulness, visual clarity, question feedback and continuation for each subject. Pair the ratings with observed completion and returns when those data are available.
+
+## Adding material from Dropbox
+
+- Compare the latest source edition and its change record with the live lesson, GitHub main and open drafts. Reuse the existing lesson and question IDs.
+- Select a specific teaching improvement such as a worked explanation, an interactive comparison or a new practice task. Use original prose and rights-cleared visuals. Record the exact source and release decision.
+- Keep private Word/PDF pairs, course slides, examination banks and revision history in the source folders. Publish an approved web adaptation as a small, reviewable change through GitHub and verify the Vercel preview and production release.
 
 ## Teaching references and comparable products
 
