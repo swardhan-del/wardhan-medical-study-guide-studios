@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { AnatomySystemDiagram } from "@/components/anatomy-system-diagram";
 import { AnatomySystemExplorer } from "@/components/anatomy-system-explorer";
 import { PracticeSequence } from "@/components/practice-sequence";
+import { ThoraxStudyUnit } from "@/components/thorax-study-unit";
+import { thoraxUnits } from "@/content/thorax-models";
 import { StudyVisual } from "@/components/study-visual";
 import { anatomySystems, anatomySystemPractice, anatomySystemHref, anatomySystemSources, anatomySystemsPath } from "@/content/anatomy-systems";
 import { searchMetadata } from "@/lib/search-metadata";
@@ -27,6 +29,7 @@ export default async function AnatomySystemPage({ params }: Props) {
   const sources = anatomySystemSources(system);
   const practiceTitles = ["Identify the relationship", "Apply it to a new example", "Explain it in your own words"];
   const next = anatomySystems[index + 1];
+  const thoraxUnit = thoraxUnits.find(unit => unit.id === id);
 
   return <div className={`site-container study-page ${styles.page}`}>
     <nav aria-label="Breadcrumb" className="breadcrumbs"><Link href="/study/anatomy">Anatomy</Link><Link href={anatomySystemsPath}> / Body systems</Link><span aria-current="page"> / {system.name}</span></nav>
@@ -34,7 +37,7 @@ export default async function AnatomySystemPage({ params }: Props) {
       <p className="eyebrow">{system.name} system</p>
       <h1>{system.title}</h1>
       <p>{system.objective}</p>
-      <div className={styles.actions}><a className="button button-primary" href="#diagram">Explore the diagram</a><a href="#practice">Go to practice</a></div>
+      <div className={styles.actions}><a className="button button-primary" href="#diagram">Explore the diagram</a><a href="#practice">Go to practice</a>{thoraxUnit && <a href="#thorax-study">Explore the detailed views</a>}</div>
     </header>
     <StudyVisual id="diagram" headingLevel={2} title="Explore the landmarks"
       alt={system.landmarks.map(landmark => landmark.name + ". " + landmark.detail).join(" ")}
@@ -50,6 +53,7 @@ export default async function AnatomySystemPage({ params }: Props) {
         item, title: practiceTitles[index],
       }))} />
     </section>
+    {thoraxUnit && <ThoraxStudyUnit unit={thoraxUnit} />}
     <section className="study-panel" aria-labelledby="system-next">
       <h2 id="system-next">Continue learning</h2>
       <p>Go deeper with the linked lesson or choose another body system.</p>

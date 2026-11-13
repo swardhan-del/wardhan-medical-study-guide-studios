@@ -63,7 +63,7 @@ test("diagram text and model explanations are available without JavaScript", asy
   try {
     const page = await context.newPage();
     await page.goto("http://127.0.0.1:3101" + anatomySystemHref("cardiovascular"));
-    await page.getByText("Read a text description", { exact: true }).click();
+    await page.getByRole("figure", { name: "Explore the landmarks" }).getByText("Read a text description", { exact: true }).click();
     await expect(page.getByText("The right atrium receives systemic venous blood", { exact: false }).first()).toBeVisible();
     const recall = page.getByRole("region", { name: "Explain it in your own words" });
     await recall.getByText("Model explanation", { exact: true }).click();
@@ -73,4 +73,43 @@ test("diagram text and model explanations are available without JavaScript", asy
   } finally {
     await context.close();
   }
+});
+
+test("the thorax path supports unlabelled practice, persistent feedback and onward study", async ({ page }) => {
+  await page.goto("/learn/anatomy-systems");
+  await page.getByRole("link", { name: "Place the heart, then trace the valves →" }).click();
+  await expect(page).toHaveURL(/cardiovascular#thorax-study$/);
+  const view = page.getByRole("figure", { name: "Where the heart sits" });
+  const hide = view.getByRole("button", { name: "Hide landmark names" });
+  await hide.focus();
+  await page.keyboard.press("Enter");
+  await expect(view.getByRole("button", { name: "Select Apex on the diagram" })).toHaveCount(0);
+  await expect(view.getByText("Identify two structures", { exact: false })).toBeVisible();
+  await view.getByRole("button", { name: "Show landmark names" }).click();
+  await view.getByRole("button", { name: "Select Apex on the diagram" }).click();
+  await expect(view.getByRole("button", { name: "Apex", exact: true })).toHaveAttribute("aria-pressed", "true");
+
+  const question = page.getByRole("region", { name: "Transfer the view" });
+  await question.getByRole("radio", { name: "The patient’s right", exact: true }).check();
+  await question.getByRole("button", { name: "Check Answer and Continue →" }).click();
+  await expect(question.getByRole("status")).toContainText("Correct answer: The patient’s left");
+  await page.reload();
+  await expect(question.getByRole("status")).toContainText("Correct answer: The patient’s left");
+
+  await page.getByRole("link", { name: "Follow blood into the lungs →" }).click();
+  await expect(page).toHaveURL(/respiratory#thorax-study$/);
+  const specimen = page.getByRole("region", { name: "Try it on a real specimen" });
+  await expect(specimen.getByRole("link", { name: /MH 138 lung section/ })).toHaveAttribute("href", /MH-138-lung/);
+  await specimen.getByText("Compare your observations", { exact: true }).click();
+  await expect(specimen.getByText("Look for several small spaces sharing thin septa.", { exact: false })).toBeVisible();
+});
+
+test("respiratory models and application questions fit at 320 px and 200% text", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.goto(anatomySystemHref("respiratory") + "#thorax-study");
+  await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+  await page.evaluate(() => document.fonts.ready);
+  await expect(page.getByRole("figure", { name: "Where air and blood come close" })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(321);
+  expect((await new AxeBuilder({ page }).include("#thorax-study").analyze()).violations).toEqual([]);
 });

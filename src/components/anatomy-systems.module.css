@@ -117,7 +117,25 @@
 .explanation { border-inline-start: 3px solid #28625e; padding: .35rem .7rem; overflow-wrap: anywhere; }
 .explanation p { margin: .25rem 0 0; }
 .practice { display: grid; gap: 1rem; }
+.examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
+.examples > div { padding: 1rem; background: #edf3ed; border-inline-start: 3px solid #28625e; }
+.examples dt { font-weight: 700; }
+.examples dd { margin: .35rem 0 0; overflow-wrap: anywhere; }
 
 @media (max-width: 720px) {
   .explorer { grid-template-columns: minmax(0, 1fr); }
+}
+
+.viewToggle {
+  margin-block: 0 .7rem;
+  min-height: 44px;
+  max-width: 100%;
+  padding: .4rem .7rem;
+  border: 1px solid #28625e;
+  border-radius: .5rem;
+  background: #fffdf6;
+  color: #153a3d;
+  font: inherit;
+  cursor: pointer;
+  overflow-wrap: anywhere;
 }

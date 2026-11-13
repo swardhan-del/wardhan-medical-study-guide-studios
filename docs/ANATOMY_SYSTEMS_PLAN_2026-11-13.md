@@ -15,3 +15,7 @@ For a model to be ready for review, all diagram controls must work with a keyboa
 The initial implementation adds 11 models, 22 objective questions with option-specific feedback and 11 written recall prompts. The cardiovascular model traces both circuits and the reproductive model compares two separate pathways. The other models introduce one anatomical relationship each. Every model links to an existing deeper lesson and to its OpenStax chapter.
 
 The homepage atlas background is original decorative artwork generated with the built-in ImageGen tool. The prompt called for a wide ivory-paper anatomical atlas engraving with muted teal and graphite linework, a rib cage and shoulder girdle overlapping a small branching capillary study on the right, and quiet space for website text on the left. The site uses 1440 px and 720 px WebP variants.
+
+## Cardiac and respiratory follow-up
+
+The two units now add four spatial and scale views, four worked routes, six explained application questions and two linked specimen tasks. Learners can hide and reveal landmarks. The cardiac unit leads into the pulmonary exchange view. The [science learning re-audit](SCIENCE_LEARNING_REAUDIT_2026-11-13.md) records sources, active drafts and the next teaching priorities.

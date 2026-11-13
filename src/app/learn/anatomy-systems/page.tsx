@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AnatomySystemDiagram } from "@/components/anatomy-system-diagram";
 import { anatomySystems, anatomySystemHref, anatomySystemsPath } from "@/content/anatomy-systems";
+import { thoraxUnits } from "@/content/thorax-models";
 import { searchMetadata } from "@/lib/search-metadata";
 import styles from "@/components/anatomy-systems.module.css";
 
@@ -15,6 +16,11 @@ export default function AnatomySystemsPage() {
       <p>Choose a system, inspect its landmarks, then explain how the structures work together.</p>
       <Link href="/library/anatomy-foundations">New to anatomy? Start with positions and planes →</Link>
     </header>
+    <section className="study-panel" aria-labelledby="thorax-path">
+      <h2 id="thorax-path">Study the heart and lungs together</h2>
+      <p>Trace blood through the valves, then follow it to the capillaries beside the alveoli.</p>
+      <div className={styles.actions}>{thoraxUnits.map(unit => <Link key={unit.id} href={anatomySystemHref(unit.id) + "#thorax-study"}>{unit.title} →</Link>)}</div>
+    </section>
     <ul className={styles.cards} aria-label="Body systems">
       {anatomySystems.map(system => <li key={system.id}>
         <Link className={styles.card} href={anatomySystemHref(system.id)}>
