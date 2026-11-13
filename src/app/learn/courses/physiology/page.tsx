@@ -27,7 +27,7 @@ export default function PhysiologyFullCourse() {
     <header className="study-hero">
       <p className="eyebrow">{physiologyCourse.title}</p>
       <h1>Full Course</h1>
-      <p className="interior-lede">Browse the eight parts in order. Cardiovascular chapters have been mapped to available lessons where coverage exists. Other parts are listed while their chapter maps are prepared.</p>
+      <p className="interior-lede">Browse the eight parts in order. Cardiovascular and respiratory chapters link to available lessons and show where teaching is still pending.</p>
       <CourseResume lessons={parts.flatMap(part => part.chapters?.flatMap(chapter => chapter.lessons) ?? [])} />
       <div className="action-row">
         <Link href="/library?subject=physiology">Search the physiology library</Link>
@@ -40,6 +40,9 @@ export default function PhysiologyFullCourse() {
     </nav>
     {parts.map((part, partIndex) => <section className="study-panel" key={part.id} id={part.id} aria-labelledby={`${part.id}-title`}>
       <h2 id={`${part.id}-title`}>Part {partIndex + 1}. {part.title}</h2>
+      {part.id === "respiratory" && <p>
+        The respiratory topics and adaptation follow the <a href="https://semmelweis.hu/elettan/files/2023/08/EMed-lect_fall.pdf">2026/27 Semmelweis Physiology lecture schedule</a>. Acid–base integration is listed as supplementary study.
+      </p>}
       {part.chapters ? <ol className={styles.chapters}>
         {part.chapters.map((chapter, chapterIndex) => <li key={chapter.id}>
           <details open id={chapter.id}>

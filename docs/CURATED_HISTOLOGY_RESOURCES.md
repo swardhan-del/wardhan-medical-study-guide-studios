@@ -1,12 +1,12 @@
 # Curated microscopic anatomy, histology and embryology
 
-The combined Histology page and course I/II pages now explain the disciplines and offer eight expandable subject areas, 28 curated Dropbox folder links, nine selected Word guides and related public lessons. Course pages preselect their course in the guide browser; a shared microscopy guide and practical slide companion appear in both. The Library links directly to the selected guides.
+In the 7 September 2026 implementation, the combined Histology page and course I/II pages explained the disciplines and offered eight expandable subject areas, 28 curated Dropbox folder links, nine selected Word guides and related public lessons. Course pages preselected their course in the guide browser. A shared microscopy guide and practical slide companion appeared in both. The Library linked directly to the selected guides.
 
 ## Evidence and selection
 
 On 7 September 2026, the curated histology subject index was read, the folder listing was paginated to completion (67 folders), and nine selected DOCX files were inspected using Dropbox text extraction. Descriptions reflect actual contents, not just filenames. Selected files cover methods, epithelia, connective tissue, muscle, urinary organs, reproduction/placenta, autonomic/endocrine systems, eye development and a seven-specimen practical companion. The course split follows the roadmap and subject taxonomy rather than claiming an institution’s current syllabus.
 
-All links target `08_WEB_LIBRARY_CURATION/02_CANDIDATES_FOR_REVIEW/CONCEPT_LIBRARY_2026-09-06/02_Microscopic_Anatomy_Histology`. Exact filenames are retained in `histology-guides.json`. The dated source verification record is in the parent Dropbox working folder as `histology-curated-resources-verification-2026-09-07.json`.
+The historical links pointed to the Histology candidate collection. The dated source verification record remains in the parent Dropbox working folder. The website now uses its native public lesson catalog. The retired manifest was empty before removal.
 
 The methods guide contains archived examination instructions, which are identified as historical in the card note. Other cards describe study coverage; they do not certify clinical accuracy, source-figure rights or a completed public-release review. Word format is labeled accurately; no PDF export or new visual insert is claimed.
 

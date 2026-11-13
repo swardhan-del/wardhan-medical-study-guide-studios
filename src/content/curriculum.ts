@@ -38,6 +38,16 @@ const cardiovascularChapters: readonly CourseChapter[] = [
   { id: "thermoregulation", title: "Thermoregulation and cardiovascular integration", lessonIds: [] },
 ];
 
+const respiratoryChapters: readonly CourseChapter[] = [
+  { id: "pulmonary-ventilation", title: "Pulmonary ventilation", lessonIds: ["respiratory-mechanics", "alveolar-ventilation-calculations", "biophysics-respiratory-physics"] },
+  { id: "pulmonary-gas-exchange", title: "Gas exchange", lessonIds: ["respiratory-histology"] },
+  { id: "pulmonary-circulation-and-vq", title: "Pulmonary circulation and ventilation–perfusion matching", lessonIds: ["ventilation-perfusion"] },
+  { id: "respiratory-gas-transport", title: "Gas transport and hypoxia", lessonIds: [] },
+  { id: "respiratory-control", title: "Control of respiration", lessonIds: [] },
+  { id: "cardiopulmonary-adaptation", title: "Cardiopulmonary adaptation", lessonIds: [] },
+  { id: "respiratory-acid-base", title: "Acid–base integration (supplementary)", lessonIds: ["renal-renal-acid-base"] },
+];
+
 export const physiologyCourse: Course = {
   id: "medical-physiology",
   subject: "physiology",
@@ -45,7 +55,7 @@ export const physiologyCourse: Course = {
   parts: [
     { id: "cellular-physiology", title: "Cellular physiology, excitable tissues, muscle and autonomic control" },
     { id: "cardiovascular", title: "Cardiovascular Physiology", chapters: cardiovascularChapters },
-    { id: "respiratory", title: "Respiratory physiology" },
+    { id: "respiratory", title: "Respiratory physiology", chapters: respiratoryChapters },
     { id: "renal", title: "Renal and acid–base physiology" },
     { id: "blood", title: "Blood and haemostasis" },
     { id: "gastrointestinal", title: "Gastrointestinal physiology and energy balance" },
@@ -59,12 +69,15 @@ export function physiologyChapterHref(chapter: CourseChapter) {
 }
 
 export function physiologyChapterNavigation(lessonId: string) {
-  const index = cardiovascularChapters.findIndex(chapter => chapter.lessonIds.includes(lessonId));
-  if (index < 0) return null;
-
-  return {
-    chapter: cardiovascularChapters[index],
-    previous: cardiovascularChapters[index - 1],
-    next: cardiovascularChapters[index + 1],
-  };
+  for (const { chapters } of physiologyCourse.parts) {
+    const index = chapters?.findIndex(chapter => chapter.lessonIds.includes(lessonId)) ?? -1;
+    if (chapters && index >= 0) {
+      return {
+        chapter: chapters[index],
+        previous: chapters[index - 1],
+        next: chapters[index + 1],
+      };
+    }
+  }
+  return null;
 }
