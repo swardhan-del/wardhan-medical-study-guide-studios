@@ -12,6 +12,7 @@ import { librarySubjects, subjectRecords } from "@/lib/taxonomy";
 import { TopicCards } from "@/components/taxonomy-navigation";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { AnatomyVolumes } from "@/components/anatomy-volumes";
+import { firstSessionFor, firstSessionHref } from "@/content/first-study-sessions";
 import { HistologyOverview } from "@/components/histology-overview";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
@@ -41,6 +42,7 @@ export default async function SubjectPage({ params }: Props) {
       </header>
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link></div>}
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
+      {firstSessionFor(slug) && <p><Link className="button button-secondary" href={firstSessionHref(slug)}>Try a five-minute study session</Link></p>}
       {slug === "physiology" && <p><Link className="button button-secondary" href={physiologyCoursePath}>Full Course</Link></p>}
       <SubjectHubOverview subject={slug} />
       {slug === "anatomy" && <><AnatomyLearningPath/><AnatomyTopicNav /></>}

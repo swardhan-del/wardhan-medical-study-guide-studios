@@ -4314,3 +4314,13 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .research-video-comparison > h2 { grid-column: 1 / -1; }
 .research-video-comparison > article { min-width: 0; overflow-wrap: anywhere; }
 .research-video-comparison .native-video { min-width: 0; }
+
+.first-session-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.first-session-list h2 {
+  overflow-wrap: anywhere;
+}
