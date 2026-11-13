@@ -18,6 +18,7 @@
 .study-page {
   padding-top: 56px;
   padding-bottom: 88px;
+  overflow-wrap: anywhere;
 }
 .study-page h1 {
   font: 400 clamp(2.7rem, 5vw, 5rem) / 1.06 var(--serif);
@@ -1962,6 +1963,7 @@ select:focus-visible {
 }
 .privacy-copy {
   max-width: 730px;
+  overflow-wrap: anywhere;
 }
 .site-header-inner {
   flex-wrap: wrap;
@@ -2569,6 +2571,7 @@ select:focus-visible {
 .concept-page {
   padding-top: 44px;
   padding-bottom: 80px;
+  overflow-wrap: anywhere;
 }
 .concept-heading {
   max-width: 980px;
@@ -3823,6 +3826,7 @@ select:focus-visible {
 }
 .native-related {
   margin: 2.5rem 0;
+  overflow-wrap: anywhere;
 }
 .native-related li {
   margin: 0.75rem 0;
@@ -4011,7 +4015,7 @@ select:focus-visible {
 .study-audio audio {display:block;width:100%;margin:1rem 0;}
 .study-audio label {display:flex;align-items:center;gap:.75rem;margin:1rem 0;}
 .study-audio details {margin:1.5rem 0;}
-.revision-page {padding-block:2rem 4rem;max-width:940px;}
+.revision-page {padding-block:2rem 4rem;max-width:940px;overflow-wrap:anywhere;}
 .revision-page h1 {font:400 clamp(2rem,4vw,3.5rem)/1.15 var(--serif);}
 .revision-section,.revision-answers {margin:3rem 0;}
 .revision-lesson {border-top:1px solid var(--line);padding-top:1.5rem;margin-top:2rem;}
@@ -4165,7 +4169,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .guide-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: .7rem; margin: 1rem 0; }
 .guide-options label { display: flex; align-items: baseline; gap: .5rem; }
 .guide-selector input { flex-shrink: 0; }
-.guide-contents { margin: 2rem 0; padding: 1rem; background: var(--surface); border: 1px solid var(--line); }
+.guide-contents { margin: 2rem 0; padding: 1rem; background: var(--surface); border: 1px solid var(--line); overflow-wrap: anywhere; }
 .guide-contents li { margin-block: .5rem; }
 .guide-divider { border-block: 2px solid var(--line); padding: 2rem 0; }
 .guide-part, .revision-section { scroll-margin-top: 6rem; overflow-wrap: anywhere; }
@@ -4184,7 +4188,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 @media print { .revision-page p:last-child { margin-bottom: 0; } }
 
 /* Shared anatomy manuscripts: long explanations remain readable on screen and paper. */
-.anatomy-volume-list { display: grid; gap: .8rem; padding-left: 1.5rem; }
+.anatomy-volume-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem; padding-left: 1.5rem; }
 .anatomy-lesson-navigation details { margin-top: 1rem; }
 .anatomy-lesson-navigation ol { columns: 2 19rem; padding-left: 1.5rem; }
 .anatomy-lesson-navigation li { break-inside: avoid; margin-bottom: .6rem; }
@@ -4276,8 +4280,8 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .visual-comparison-mobile dt { font-weight: 650; margin-top: .7rem; }
 .visual-comparison-mobile dd { margin: .3rem 0; }
 .visual-comparison-mobile dt, .visual-comparison-mobile dd { overflow-wrap: anywhere; }
-.visual-flow { list-style: none; padding: 0; display: grid; gap: .65rem; }
-.visual-flow li { position: relative; padding: .8rem 1rem .8rem 3.4rem; border: 1px solid #8ba7a0; border-radius: 8px; background: #edf5f1; color: #14252c; }
+.visual-flow { list-style: none; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: .65rem; }
+.visual-flow li { position: relative; padding: .8rem 1rem .8rem min(3.4rem, 30%); overflow-wrap: anywhere; border: 1px solid #8ba7a0; border-radius: 8px; background: #edf5f1; color: #14252c; }
 .visual-flow li p { margin: 0; }
 .visual-step { position: absolute; left: .8rem; top: .8rem; font-weight: 700; }
 .visual-flow-arrow { display: block; text-align: center; font-size: 1.5rem; line-height: 1; margin-top: .5rem; }
@@ -4344,16 +4348,21 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   overflow-wrap: anywhere;
 }
 
-.first-session-page .visual-flow {
-  grid-template-columns: minmax(0, 1fr);
-}
-
-.first-session-page .visual-flow li {
-  padding-inline-start: min(3.4rem, 30%);
-}
-
 .first-session-page .practice-question form button {
   max-width: 100%;
+}
+
+.anatomy-learning-page,
+.msk-page,
+.waitlist-page {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 420px) {
+  .circuit-map {
+    flex-direction: column;
+    background: linear-gradient(90deg, transparent 48%, #a7c5ba 48%, #a7c5ba 52%, transparent 52%);
+  }
 }
 
 /* Long subject names and study-mode controls must reflow at enlarged text. */
