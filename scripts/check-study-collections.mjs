@@ -11,7 +11,8 @@ assert.deepEqual(videos.map(v=>v.id).sort(),[...release.videoIds].sort(),'Videos
 assert.deepEqual(audios.map(a=>a.lessonId).sort(),[...release.audioLessonIds].sort(),'Audio differs from explicit media release');
 assert.deepEqual(recaps.map(r=>r.lessonId).sort(),audios.map(a=>a.lessonId).sort(),'Scripts must match released recap set');
 // New text/model subjects do not imply a recording release. Preserve explicit media coverage.
-const researchVideos=videos.filter(v=>v.researchContext), narratedVideos=videos.filter(v=>!v.researchContext);
+const researchVideos=videos.filter(v=>v.researchContext), narratedVideos=videos.filter(v=>!v.researchContext&&!v.explainer);
+const explainers = videos.filter(video => video.explainer);
 assert.deepEqual(researchVideos.map(v=>v.id).sort(), [...(release.researchVideoIds??[])].sort(), 'Research videos differ from explicit research release');
 assert.deepEqual([...new Set(narratedVideos.map(v=>v.subject))].sort(), [...release.narratedSubjects].sort(), 'Narrated subject scope differs from release');
 for(const subject of release.narratedSubjects){assert(lessons.some(l=>l.subject===subject),'Narrated subject lacks lessons');}
@@ -24,6 +25,17 @@ for(const v of narratedVideos){
  assert(a.transcript[0].startSeconds===0&&a.transcript.at(-1).startSeconds<a.durationSeconds);
 }
 assert(total<20000000,'Recap set exceeds small-static-media budget');
+for (const video of explainers) {
+  assert.equal(video.audioContent, 'speech');
+  for (const path of [video.sourceUrl, video.posterUrl, ...video.captions.map(caption => caption.src)]) {
+    assert(release.assets.some(asset => '/' + asset.path === path), 'Unapproved explainer asset');
+  }
+  const movie = fs.readFileSync('public' + video.sourceUrl);
+  assert(movie.length < 6000000, 'Single explainer exceeds static-media budget');
+  const moov = movie.indexOf(Buffer.from('moov'));
+  assert(moov >= 0 && moov < movie.indexOf(Buffer.from('mdat')), 'MP4 requires fast start');
+  assert(video.captions.every(caption => fs.readFileSync('public' + caption.src, 'utf8').startsWith('WEBVTT')));
+}
 let researchBytes=0;
 for(const v of researchVideos){
  assert.equal(v.aiGenerated,false,'Research footage must not be presented as generated');
@@ -34,4 +46,4 @@ for(const v of researchVideos){
  const b=fs.readFileSync('public'+v.sourceUrl);assert(b.length<20000000,'Single research movie budget exceeded');researchBytes+=b.length;
 }
 assert(researchBytes<25000000,'Research movie release budget exceeded');
-console.log('Study checks passed: '+lessons.length+' grouped lessons, '+questions.length+' application questions, '+narratedVideos.length+' captioned videos, '+researchVideos.length+' silent research videos and '+audios.length+' audio recaps.');
+console.log('Study checks passed: '+lessons.length+' grouped lessons, '+questions.length+' application questions, '+narratedVideos.length+' captioned videos, '+explainers.length+' explainers, '+researchVideos.length+' silent research videos and '+audios.length+' audio recaps.');

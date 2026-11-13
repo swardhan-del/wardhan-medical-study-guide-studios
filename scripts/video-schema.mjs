@@ -25,7 +25,7 @@ export function validateVideos(data, catalog, taxonomy) {
     assert(/^[a-z0-9-]+$/.test(v.id) && !seen.has(v.id));
     seen.add(v.id);
     assert.equal(v.status, "public");
-    assert.equal(v.medicalReview, "reviewed");
+    assert.equal(v.medicalReview, v.explainer ? "editorial-reviewed" : "reviewed");
     assert(
       typeof v.publicApproval === "string" &&
         v.publicApproval.trim().length > 10,
@@ -57,6 +57,15 @@ export function validateVideos(data, catalog, taxonomy) {
     );
     safeUrl(v.sourceUrl);
     safeUrl(v.posterUrl);
+    if (v.explainer !== undefined) {
+      assert(v.explainer && !v.researchContext, "An explainer needs its own source record");
+      assert(Array.isArray(v.explainer.sources) && v.explainer.sources.length > 0, "Explainers require sources");
+      const links = [...v.explainer.sources, ...(v.explainer.furtherViewing ? [v.explainer.furtherViewing] : [])];
+      for (const link of links) {
+        assert(typeof link.title === "string" && link.title.trim() && link.url.startsWith("https://"));
+        safeUrl(link.url);
+      }
+    }
     if (v.researchContext !== undefined) {
       const c = v.researchContext;
       assert(c && ["creator", "title", "credit", "condition", "key", "limits"].every(k => typeof c[k] === "string" && c[k].trim().length > 10), "Research media require attribution and experimental context");

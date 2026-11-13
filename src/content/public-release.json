@@ -1473,6 +1473,24 @@
       "bytes": 442028,
       "sha256": "805d54b308d42b68dfbe96f3d2a511e4bc556e7808be471f7602e64cdc72cd86",
       "evidence": "docs/reviews/retinal-native-depth-20261107.md"
+    },
+    {
+      "path": "media/explainers/confidence-interval-coverage.mp4",
+      "bytes": 695490,
+      "sha256": "6641fd12d9f6467a3262db059adea910b4f39ddfd5a70dc367389a881d084b55",
+      "evidence": "docs/reviews/biostatistics-confidence-interval-explainer-20261113.md"
+    },
+    {
+      "path": "media/explainers/confidence-interval-coverage.vtt",
+      "bytes": 1705,
+      "sha256": "7271f5e0ac2a5a7474312aaebc93d383dd38b4d4575684192a7dadd23d2cb7b8",
+      "evidence": "docs/reviews/biostatistics-confidence-interval-explainer-20261113.md"
+    },
+    {
+      "path": "media/explainers/confidence-interval-coverage.webp",
+      "bytes": 23948,
+      "sha256": "2223f1f7cb3cd7bca6dc927047fb9d8e447ab88371c029d505b384cc5b49887f",
+      "evidence": "docs/reviews/biostatistics-confidence-interval-explainer-20261113.md"
     }
   ],
   "videoIds": [
@@ -1500,7 +1518,8 @@
     "recap-enzyme-kinetics",
     "recap-complement",
     "neural-nuclear-migration-control",
-    "neural-nuclear-migration-vinculin-depletion"
+    "neural-nuclear-migration-vinculin-depletion",
+    "confidence-interval-coverage"
   ],
   "audioLessonIds": [
     "fluid-and-membrane-transport",

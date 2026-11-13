@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.222
+Suppose a sample of visits gives an
+average lab waiting time of eighteen
+
+00:00:04.222 --> 00:00:04.691
+minutes.
+
+00:00:04.911 --> 00:00:08.876
+How much uncertainty is there in our
+estimate of the population mean?
+
+00:00:09.526 --> 00:00:13.476
+In this example, the method gives a
+margin of error of two minutes.
+
+00:00:13.696 --> 00:00:18.103
+Subtract two from eighteen to get
+sixteen. Add two to get twenty. The
+
+00:00:18.103 --> 00:00:20.976
+interval runs from sixteen to twenty
+minutes.
+
+00:00:21.626 --> 00:00:26.270
+Imagine repeating the same sampling and
+interval method. Each new sample can
+
+00:00:26.270 --> 00:00:27.980
+produce different endpoints.
+
+00:00:28.200 --> 00:00:32.726
+The vertical line marks the fictional
+population mean, eighteen point five
+
+00:00:32.726 --> 00:00:35.294
+minutes. The first two intervals cross
+it.
+
+00:00:35.944 --> 00:00:40.363
+The third interval ends at seventeen
+point five. It misses the fixed mean of
+
+00:00:40.363 --> 00:00:41.526
+eighteen point five.
+
+00:00:41.746 --> 00:00:46.105
+These three intervals are a drawing. A
+well-calibrated ninety-five percent
+
+00:00:46.105 --> 00:00:50.347
+method covers the true mean about
+ninety-five percent of the time across
+
+00:00:50.347 --> 00:00:52.703
+many repetitions, under its assumptions.
+
+00:00:53.353 --> 00:00:57.780
+The ninety-five percent describes the
+method's long-run coverage. Once you
+
+00:00:57.780 --> 00:01:01.489
+have sampled, the endpoints and the
+population mean are fixed.
+
+00:01:01.709 --> 00:01:06.162
+More independent observations can
+improve precision. A narrow interval can
+
+00:01:06.162 --> 00:01:09.050
+still mislead if your sampling method is
+biased.

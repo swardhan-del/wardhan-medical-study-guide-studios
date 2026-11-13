@@ -66,7 +66,7 @@ export function VideoBrowser({
               decoding="async"
             />
             <p>
-              {videoDuration(v.durationSeconds)}
+              {v.explainer ? "Explainer · " : ""}{videoDuration(v.durationSeconds)}
               {v.aiGenerated ? " · AI-generated" : ""}
             </p>
             <h2>
