@@ -6173,6 +6173,177 @@
       }
     },
     {
+      "lessonId": "biophysics-dosimetry",
+      "title": "Absorbed dose, biological weighting and protection",
+      "subject": "biophysics",
+      "slug": "biophysics-dosimetry",
+      "topic": "Energy deposition and radiation-protection quantities",
+      "learnerLevel": "Introductory medical biophysics",
+      "objectives": [
+        "Calculate absorbed dose from deposited energy and mass.",
+        "Distinguish absorbed, equivalent and effective dose and their units.",
+        "Explain why activity or effective dose alone cannot predict an individual tissue reaction."
+      ],
+      "sources": [
+        {
+          "title": "Use of Dose Quantities in Radiological Protection, ICRP Publication 147 (2021), Executive Summary (a)–(c)",
+          "publisherOrAuthor": "International Commission on Radiological Protection",
+          "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+147",
+          "sourceType": "guideline",
+          "accessedAt": "2026-11-08"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "This bounded correction uses existing text, units and worked calculations. No visual asset is added or newly approved; broader visual teaching remains separate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-08",
+      "nextReviewAt": "2027-02-08",
+      "limitations": [
+        "AI-assisted source and editorial review; independent specialist and clinical review remain outstanding.",
+        "Radiation-protection teaching only; current local limits, individual risk assessment and treatment planning are outside this lesson."
+      ],
+      "reviewEvidenceIds": [
+        "biophysics-dosimetry-editorial-20261108",
+        "biophysics-dosimetry-readability-20261108",
+        "biophysics-dosimetry-accessibility-20261108"
+      ],
+      "links": {
+        "prerequisite": [],
+        "related": [
+          "biophysics-radiation-detection",
+          "biophysics-isotope-diagnostics"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "biophysics-circulation-ecg",
+      "title": "Circulation, cardiac work and the ECG",
+      "subject": "biophysics",
+      "slug": "biophysics-circulation-ecg",
+      "topic": "Cardiac mechanical work and limb-lead potential differences",
+      "learnerLevel": "Introductory medical biophysics",
+      "objectives": [
+        "Interpret the area of a ventricular pressure–volume loop as external work per beat.",
+        "Calculate an illustrative stroke-work estimate with consistent pressure and volume units.",
+        "Use the conventional limb-lead relationship while separating voltage from mechanical work."
+      ],
+      "sources": [
+        {
+          "title": "Stroke Work and Cardiac Work",
+          "publisherOrAuthor": "Richard E. Klabunde",
+          "url": "https://cvphysiology.com/cardiac-function/cf019",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-08"
+        },
+        {
+          "title": "Cardiac Muscle and Electrical Activity, section 19.2",
+          "publisherOrAuthor": "OpenStax, Anatomy and Physiology 2e",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity",
+          "sourceType": "textbook",
+          "accessedAt": "2026-11-08"
+        },
+        {
+          "title": "A simple device to illustrate the Einthoven triangle (2012)",
+          "publisherOrAuthor": "Advances in Physiology Education",
+          "url": "https://journals.physiology.org/doi/full/10.1152/advan.00029.2012",
+          "sourceType": "research",
+          "accessedAt": "2026-11-08"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "This bounded correction uses existing text, units and worked calculations. No visual asset is added or newly approved; broader visual teaching remains separate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-08",
+      "nextReviewAt": "2027-02-08",
+      "limitations": [
+        "AI-assisted source and editorial review; independent specialist and clinical review remain outstanding.",
+        "Illustrative idealised calculations; no individual ECG diagnosis, cardiac-function measurement or treatment recommendation is provided."
+      ],
+      "reviewEvidenceIds": [
+        "biophysics-circulation-ecg-editorial-20261108",
+        "biophysics-circulation-ecg-readability-20261108",
+        "biophysics-circulation-ecg-accessibility-20261108"
+      ],
+      "links": {
+        "prerequisite": [],
+        "related": [
+          "biophysics-magnetic-resonance",
+          "biophysics-respiratory-physics"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "biophysics-practical-absorbance",
+      "title": "Practical: blanks, dilution and absorbance",
+      "subject": "biophysics",
+      "slug": "biophysics-practical-absorbance",
+      "topic": "Blank correction, logarithmic absorbance and dilution factors",
+      "learnerLevel": "Introductory medical biophysics",
+      "objectives": [
+        "Convert fractional transmission to absorbance and compare transmission ratios.",
+        "Apply an illustrative absorbance calibration and undo a dilution using final and aliquot volumes.",
+        "Identify assumptions and interferences that blank correction cannot remove."
+      ],
+      "sources": [
+        {
+          "title": "Beer–Lambert law, B00626",
+          "publisherOrAuthor": "IUPAC Compendium of Chemical Terminology",
+          "url": "https://goldbook.iupac.org/terms/view/B00626",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-08"
+        },
+        {
+          "title": "Molarity, section 3.3: dilution calculations",
+          "publisherOrAuthor": "OpenStax, Chemistry 2e",
+          "url": "https://openstax.org/books/chemistry-2e/pages/3-3-molarity",
+          "sourceType": "textbook",
+          "accessedAt": "2026-11-08"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "This bounded correction uses existing text, units and worked calculations. No visual asset is added or newly approved; broader visual teaching remains separate.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-08",
+      "nextReviewAt": "2027-02-08",
+      "limitations": [
+        "AI-assisted source and editorial review; independent specialist and clinical review remain outstanding.",
+        "The calibration and concentrations are original illustrative examples, not measured data or a validated clinical assay. The IUPAC definition was available through its indexed publisher text; direct automated retrieval returned HTTP 403."
+      ],
+      "reviewEvidenceIds": [
+        "biophysics-practical-absorbance-editorial-20261108",
+        "biophysics-practical-absorbance-readability-20261108",
+        "biophysics-practical-absorbance-accessibility-20261108"
+      ],
+      "links": {
+        "prerequisite": [],
+        "related": [
+          "biophysics-practical-refractometry",
+          "biophysics-practical-polarimetry"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
       "lessonId": "fluid-and-membrane-transport",
       "title": "Cell transport: follow the energy",
       "subject": "physiology",
