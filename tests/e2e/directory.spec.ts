@@ -85,6 +85,19 @@ test("subject directory and topic search reflow at 320 pixels with 200% text", a
   await topic.press("Enter");
   await expect(page).toHaveURL(/topics\/physiology-renal$/);
 });
+test("subject landing pages reflow at 320 pixels with 200% text", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  for (const subject of taxonomy.subjects) {
+    await page.goto("/subjects/" + subject.id);
+    await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+    await expect(page.getByRole("heading", { level: 1, name: subject.title, exact: true })).toBeVisible();
+    const contentWidth = () => page.evaluate(() => document.documentElement.scrollWidth);
+    await expect.poll(contentWidth, { message: subject.title }).toBe(320);
+    const directory = page.getByText("Browse the regional directory and suggested sequence", { exact: true });
+    await directory.press("Enter");
+    await expect.poll(contentWidth, { message: subject.title + " with directory expanded" }).toBe(320);
+  }
+});
 test("all native routes and public assets resolve without archive exposure", async ({
   request,
 }, info) => {
