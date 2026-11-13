@@ -6,6 +6,30 @@ import library from "../../src/content/library-lessons.json";
 const lesson = library.lessons.find(item => item.id === "lymph-and-fluid-exchange")!;
 const coursePath = "/learn/courses/physiology";
 
+test("the cardiac output chapter opens its worked comparison and preserves the original check", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.goto(coursePath + "#cardiac-output");
+  const cardiac = library.lessons.find(item => item.id === "cardiac-output")!;
+  await page.locator("#cardiac-output").getByRole("link", { name: cardiac.title, exact: true }).click();
+  await expect(page).toHaveURL(/\/library\/cardiac-output$/);
+  await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+  await page.getByRole("navigation", { name: "Lesson sections" }).getByRole("link", { name: "Worked example", exact: true }).click();
+  const worked = page.getByRole("region", { name: "Compare three pump states" });
+  await worked.getByText("Show the reasoning", { exact: true }).press("Enter");
+  await expect(worked.getByText(/B and C each deliver 5.6 L\/min/)).toBeVisible();
+  await expect(worked.getByText(/B about 57%, and C about 67%/)).toBeVisible();
+  await expect(worked.getByText(/volumes alone would not establish the cause/)).toBeVisible();
+  const figure = page.locator("#figure-ventricular-pressure-volume");
+  await figure.getByText("Read a text description", { exact: true }).press("Enter");
+  await expect(figure.locator("details[open] p")).toBeVisible();
+  const check = page.locator("#concept-check-title:visible");
+  await check.getByRole("radio", { name: "4.2 L/min", exact: true }).check();
+  await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
+  await expect(check.getByRole("status")).toContainText("Correct");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+  expect((await new AxeBuilder({ page }).include('[aria-labelledby="worked-example-heading"]').include("#figure-ventricular-pressure-volume").analyze()).violations).toEqual([]);
+});
+
 test("physiology Full Course reuses the released lesson, feedback and local resume", async ({ page }) => {
   await page.goto("/subjects/physiology");
   await page.getByRole("link", { name: "Full Course", exact: true }).click();

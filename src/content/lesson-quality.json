@@ -6869,6 +6869,67 @@
         "Introductory chapter coverage. Examples and calculated values are fictional.",
         "Independent clinical review is outstanding."
       ]
+    },
+    {
+      "lessonId": "cardiac-output",
+      "title": "Stroke volume, cardiac output and pump regulation",
+      "subject": "physiology",
+      "slug": "cardiac-output",
+      "topic": "Cardiac pump function",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Calculate stroke volume, cardiac output and ejection fraction from fictional measurements.",
+        "Compare increased filling with increased contractility when the other assumptions are specified.",
+        "Explain why equal cardiac output does not establish equal ejection fraction or a shared mechanism."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax: Cardiac output and pump regulation",
+          "publisherOrAuthor": "OpenStax",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-4-cardiac-physiology",
+          "accessedAt": "2026-11-13",
+          "sourceType": "textbook"
+        },
+        {
+          "title": "Sequeira and van der Velden: Historical perspective on the Frank–Starling law",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5418489/",
+          "publisherOrAuthor": "Vasco Sequeira and Jolanda van der Velden",
+          "accessedAt": "2026-11-13",
+          "sourceType": "research"
+        }
+      ],
+      "links": {
+        "prerequisite": [
+          "cardiac-cycle"
+        ],
+        "related": [
+          "baroreflex",
+          "muscle-histology",
+          "vessel-histology"
+        ],
+        "compare": [],
+        "next": []
+      },
+      "contentStatus": "editorial-reviewed",
+      "visualStatus": "approved-and-published",
+      "visualRequired": false,
+      "visualNotes": "Reuses the existing ventricular pressure–volume schematic with its original text alternative and source; its geometry is separate from the invented worked comparison.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-13",
+      "nextReviewAt": "2027-05-13",
+      "reviewEvidenceIds": [
+        "cardiac-output-editorial-20261113",
+        "cardiac-output-visual-20261113",
+        "cardiac-output-accessibility-20261113",
+        "cardiac-output-readability-20261113"
+      ],
+      "limitations": [
+        "Fictional teaching example with specified loading assumptions. Volume readings alone do not identify the mechanism.",
+        "Independent clinical peer review is outstanding."
+      ]
     }
   ]
 }
