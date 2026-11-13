@@ -6,7 +6,7 @@
 .entryModes :global(.button) { white-space: normal; }
 .firstLesson { border-inline-start: 3px solid var(--teal); padding-inline-start: 1.5rem; }
 .topicMap { list-style: none; padding: 0; margin: 1.5rem 0; display: grid; gap: 0; }
-.topicMap li { display: grid; grid-template-columns: 2.5rem 1fr; gap: 1rem; padding: 1.25rem 0; border-block-start: 1px solid var(--line); }
+.topicMap li { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 1rem; padding: 1.25rem 0; border-block-start: 1px solid var(--line); overflow-wrap: anywhere; }
 .topicMap h3 { margin: 0 0 .4rem; }
 .topicMap p { margin: 0; }
 .number { font-variant-numeric: tabular-nums; font-weight: 700; }
@@ -25,7 +25,7 @@
   .overview { grid-template-columns: 1fr; gap: 1.25rem; }
   .firstLesson { padding-inline-start: 1rem; }
   .comparison th, .comparison td { padding: .55rem; }
-  .topicMap li { gap: .5rem; grid-template-columns: 2rem 1fr; }
+  .topicMap li { gap: .5rem; grid-template-columns: 2rem minmax(0, 1fr); }
   .wideComparison { display: none; }
   .narrowComparison { display: block; }
   .narrowComparison ol { list-style: none; padding: 0; display: grid; gap: 1rem; }

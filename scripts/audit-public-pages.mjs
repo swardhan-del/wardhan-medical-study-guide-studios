@@ -54,6 +54,13 @@ const origin = getSiteUrl();
 for (const record of records) {
   const fail = (kind, detail) => failures.push({route:record.route,kind,detail});
   if (!record.redirect && (!record.title || !record.description || !record.headings.length)) fail("page-metadata","Missing title, description or heading");
+  const ids = new Set();
+  const duplicateIds = new Set();
+  for (const id of record.ids) {
+    if (ids.has(id)) duplicateIds.add(id);
+    ids.add(id);
+  }
+  for (const id of duplicateIds) fail("duplicate-id", id);
   for (const heading of record.awkwardHeadings) fail("wording",heading);
   for (const image of record.images) {
     if (image.alt === null || (!image.fill && (!image.width || !image.height))) fail("image-accessibility",image.src);
@@ -82,7 +89,7 @@ if (base) {
         http.push({route,status:response.status,...(location?{location}:{})});
         const expectedRedirect=byRoute.get(route).redirect;
         const validRedirect=expectedRedirect && [301,302,303,307,308].includes(response.status) && location && new URL(location,base).href===new URL(expectedRedirect,base).href;
-        if(response.status!==200&&!validRedirect)failures.push({route,kind:"http",detail:response.status});
+        if(expectedRedirect ? !validRedirect : response.status!==200)failures.push({route,kind:"http",detail:response.status});
       }
       catch { http.push({route,status:0});failures.push({route,kind:"http",detail:"Request failed or timed out"}); }
     }
@@ -99,11 +106,15 @@ if(process.env.AUDIT_LAYOUT==="1") {
     while(queue.length) {
       const record=queue.shift();errors=[];
       try {
-        await page.goto(new URL(record.route,base).href);
+        await page.goto(new URL(record.route,base).href,{waitUntil:"domcontentloaded"});
         await page.locator("h1:visible").first().waitFor();
+        await page.evaluate(()=>document.fonts.ready.then(()=>{}));
         const size=await page.evaluate(()=>({width:innerWidth,content:document.documentElement.scrollWidth}));
-        const layout={route:record.route,...size,errors:[...errors]};layouts.push(layout);
-        if(size.content>size.width+1||errors.length)failures.push({route:record.route,kind:"mobile-layout",detail:layout});
+        await page.addStyleTag({content:"html { font-size: 200% !important }"});
+        await page.evaluate(()=>document.fonts.ready.then(()=>{}));
+        const enlargedContent=await page.evaluate(()=>document.documentElement.scrollWidth);
+        const layout={route:record.route,...size,enlargedContent,errors:[...errors]};layouts.push(layout);
+        if(size.content>size.width+1||enlargedContent>size.width||errors.length)failures.push({route:record.route,kind:"mobile-layout",detail:layout});
       } catch {failures.push({route:record.route,kind:"mobile-layout",detail:"Navigation or visible heading failed"});}
     }
     await context.close();
