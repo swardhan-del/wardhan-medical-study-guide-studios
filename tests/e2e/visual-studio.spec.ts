@@ -2,6 +2,41 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { visualReels, slideStages, nodeLandmarks } from "../../src/content/visual-studio";
 
+test("the homepage slide challenge supports a retry, keyboard feedback and continuation", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 860 });
+  await page.goto("/");
+  await page.evaluate(() => { document.documentElement.style.fontSize = "200%"; });
+  await page.getByRole("link", { name: "Try the slide challenge", exact: true }).press("Enter");
+
+  const exercise = page.getByRole("region", { name: "How many layers line a tubule?" });
+  const image = exercise.getByRole("img");
+  await expect.poll(() => image.evaluate(element => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+
+  await exercise.getByRole("button", { name: "Several layers", exact: true }).press("Enter");
+  await expect(exercise.getByRole("status")).toContainText("Look again at one open tubule");
+  await exercise.getByRole("button", { name: "One layer", exact: true }).press("Space");
+  await expect(exercise.getByRole("status")).toContainText("Correct. One layer of cells lines");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+  expect((await new AxeBuilder({ page }).include("#home-study-activity").analyze()).violations).toEqual([]);
+
+  await exercise.getByRole("link", { name: "Continue to the epithelia lesson" }).click();
+  await expect(page).toHaveURL(/\/library\/epithelia$/);
+});
+
+test("the homepage slide challenge explains the image without JavaScript", async ({ browser, baseURL }) => {
+  const context = await browser.newContext({ baseURL, javaScriptEnabled: false });
+  try {
+    const page = await context.newPage();
+    await page.goto("/#home-study-activity");
+    const exercise = page.getByRole("region", { name: "How many layers line a tubule?" });
+    await expect(exercise.getByRole("img")).toHaveAttribute("alt", /Kidney micrograph/);
+    await exercise.getByText("Show the reasoning", { exact: true }).press("Enter");
+    await expect(exercise.getByText(/One layer of cells lines each/)).toBeVisible();
+  } finally {
+    await context.close();
+  }
+});
+
 test("a first-time visitor reaches real visual activities from the homepage", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("link", { name: "Explore the visual studio", exact: true })).toBeVisible();
@@ -11,6 +46,15 @@ test("a first-time visitor reaches real visual activities from the homepage", as
   await expect(page.locator("#node")).toBeVisible();
   await expect(page.locator("#organs")).toBeVisible();
   await expect(page.locator("#preparation")).toBeVisible();
+  await page.getByRole("link", { name: "Compare real sections" }).click();
+  const comparison = page.locator("#epithelial-comparison");
+  const specimens = comparison.getByRole("img");
+  await expect(specimens).toHaveCount(2);
+  for (const specimen of await specimens.all()) {
+    await expect.poll(() => specimen.evaluate(element => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  }
+  await comparison.getByText("Check the comparison", { exact: true }).press("Enter");
+  await expect(comparison.getByText(/simple cuboidal epithelium/)).toBeVisible();
 });
 
 test("landmarks respond to keyboard and route controls preserve the blood/lymph distinction", async ({ page }) => {

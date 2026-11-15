@@ -1,0 +1,96 @@
+.activity {
+  align-self: center;
+  background: #f8fcf9;
+  border: 1px solid #76a99f;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px #153f381c;
+  color: #153530;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding: clamp(.9rem, 2vw, 1.45rem);
+  scroll-margin-top: 1rem;
+}
+
+.label {
+  color: #276554;
+  font-size: .76rem;
+  font-weight: 750;
+  margin-bottom: .35rem;
+}
+
+.activity h2 {
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  line-height: 1.15;
+  margin-bottom: .8rem;
+}
+
+.image {
+  background: #f3e7ed;
+  border-radius: .65rem;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.prompt {
+  margin-block: .65rem;
+}
+
+.choices, .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.choices button {
+  background: white;
+  border: 1px solid #43756a;
+  border-radius: .45rem;
+  color: #153530;
+  cursor: pointer;
+  flex: 1 1 7rem;
+  font: inherit;
+  font-weight: 650;
+  min-height: 44px;
+  padding: .45rem .65rem;
+}
+
+.choices button:hover {
+  background: #e0f1ea;
+}
+
+.choices button[aria-pressed="true"] {
+  background: #185346;
+  color: white;
+}
+
+.choices button:focus-visible, .activity a:focus-visible {
+  outline: 2px solid #185346;
+  outline-offset: 3px;
+}
+
+.feedback {
+  background: #e7f2ed;
+  border-inline-start: 3px solid #43756a;
+  margin-top: .65rem;
+  padding: .7rem;
+}
+
+.links {
+  gap: .35rem 1rem;
+  margin-top: .85rem;
+}
+
+.links a, .credit a {
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+
+.credit {
+  font-size: .77rem;
+  margin: .55rem 0 0;
+}
+
+@media (scripting: none) {
+  .choices { display: none; }
+}
