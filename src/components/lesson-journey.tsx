@@ -1,6 +1,6 @@
 "use client";
 import { learningEvent } from "@/lib/learning-analytics";
-import { useEffect } from "react";
+import { useEffect, type ReactNode } from "react";
 import Link from "next/link";
 import type { JourneyLesson } from "@/lib/lesson-journeys";
 import { journeyStatus, stageForHash } from "@/lib/learning-journey";
@@ -35,7 +35,7 @@ export function LessonJourney({ lesson }: { lesson: JourneyLesson }) {
   </section>;
 }
 
-export function LessonReview({ lesson }: { lesson: JourneyLesson }) {
+export function LessonReview({ lesson, continuation }: { lesson: JourneyLesson; continuation?: ReactNode }) {
   const { ready, persistent, data } = useLearning();
   const entry = data.journey[lesson.id];
   const status = journeyStatus(data, lesson.id, lesson.questions);
@@ -62,6 +62,6 @@ export function LessonReview({ lesson }: { lesson: JourneyLesson }) {
       <Link href="/study#saved-summaries">My saved summaries</Link>
     </div>
     <p id="completion-help" className="muted-note">To mark complete, review the explanation, check at least one practice answer and review this summary. Your remaining questions and mistakes stay available for revision.</p>
-    <nav id="continue-learning" aria-label="Recommended next lesson"><h3>Continue learning</h3><p>Recommended next: {lesson.next.title}</p><div className="action-row"><Link className="button button-primary" href={lesson.next.href}>Continue: {lesson.next.title}</Link><Link href={`/library?subject=${lesson.subject === "genetics" ? "genetics-all" : lesson.subject}`}>Explore this subject in the library</Link></div></nav>
+    {continuation ?? <nav id="continue-learning" aria-label="Recommended next lesson"><h3>Continue learning</h3><p>Recommended next: {lesson.next.title}</p><div className="action-row"><Link className="button button-primary" href={lesson.next.href}>Continue: {lesson.next.title}</Link><Link href={`/library?subject=${lesson.subject === "genetics" ? "genetics-all" : lesson.subject}`}>Explore this subject in the library</Link></div></nav>}
   </section>;
 }

@@ -62,9 +62,11 @@ test("physiology Full Course reuses the released lesson, feedback and local resu
   await expect(check.locator('[data-feedback="correct"]')).toContainText(lesson.question.options[lesson.question.answer].text);
   await showAllPractice(page);
   await expect(check.getByRole("radio", { name: lesson.question.options[lesson.question.answer].text, exact: true })).toBeChecked();
-  await chapterNav.getByRole("link", { name: "Next chapter: Venous circulation" }).click();
-  await expect(page).toHaveURL(/\/learn\/courses\/physiology#venous-circulation$/);
-  await expect(page.locator("#venous-circulation").getByRole("link", { name: /^Venous return: trace a muscle pump/ })).toBeVisible();
+  await chapterNav.getByRole("link", { name: /^Next lesson: Venous return/ }).click();
+  await expect(page).toHaveURL(/\/library\/venous-muscle-pump-direction$/);
+  await chapterNav.getByRole("link", { name: "Next chapter: Local control of circulation" }).click();
+  await expect(page).toHaveURL(/#local-circulatory-control$/);
+  await expect(page.locator("#local-circulatory-control")).toContainText("No mapped lesson");
 });
 
 test("chapter disclosures work at 320 pixels with 200% text", async ({ page }) => {
@@ -90,7 +92,7 @@ test("respiratory chapters reuse existing practice, course navigation and saved 
   const respiratory = page.locator("#respiratory");
   await expect(respiratory.locator("details")).toHaveCount(7);
   await expect(respiratory.locator("#respiratory-gas-transport").getByRole("link", { name: /^Practice:/ })).toHaveAttribute("href", "/library/respiratory-oxygen-content-and-delivery#concept-check-title");
-  await expect(respiratory.locator("#respiratory-acid-base").getByRole("link", { name: /^Practice:/ })).toHaveAttribute("href", "/learn/renal/renal-acid-base#lesson-quiz");
+  await expect(respiratory.locator("#respiratory-acid-base").getByRole("link", { name: /^Practice: Reclaim bicarbonate/ })).toHaveAttribute("href", "/learn/renal/renal-acid-base#lesson-quiz");
 
   const ventilation = respiratory.locator("#pulmonary-ventilation");
   const existingLesson = library.lessons.find(item => item.id === "respiratory-mechanics")!;
@@ -100,18 +102,24 @@ test("respiratory chapters reuse existing practice, course navigation and saved 
   await check.getByRole("radio", { name: existingLesson.question.options[existingLesson.question.answer].text, exact: true }).check();
   await check.getByRole("button", { name: /^Check (?:answer|Answer and Continue →)$/ }).click();
   await expect(check.getByRole("status")).toContainText("Correct");
+  await page.goto(coursePath);
+  const resume = page.getByRole("link", { name: "Resume: " + existingLesson.title });
+  await expect(resume).toHaveAttribute("href", "/library/respiratory-mechanics#concept-check-title");
+  await resume.click();
+  await expect(check.locator('[data-feedback="correct"]')).toContainText(existingLesson.question.options[existingLesson.question.answer].text);
+  await page.getByRole("navigation", { name: "Learning journey" }).getByRole("link", { name: "Review summary" }).click();
   const nav = page.getByRole("navigation", { name: "Full Course chapter navigation" });
-  await expect(nav.getByRole("link", { name: "Next chapter: Gas exchange" })).toHaveAttribute("href", coursePath + "#pulmonary-gas-exchange");
+  await expect(nav.getByRole("link", { name: /^Next lesson: Alveolar ventilation/ })).toHaveAttribute("href", "/library/alveolar-ventilation-calculations");
   await nav.getByRole("link", { name: "Back to this chapter in Full Course" }).click();
-  await expect(page.getByRole("link", { name: "Resume: " + existingLesson.title })).toHaveAttribute("href", "/library/respiratory-mechanics#concept-check-title");
+  await expect(resume).toHaveAttribute("href", "/library/respiratory-mechanics#lesson-review");
 });
 
 test("the three respiratory chapters teach, check and link to the next chapter at 320px", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 900 });
   const chapters = [
-    ["respiratory-gas-transport", "respiratory-oxygen-content-and-delivery", "respiratory-control"],
-    ["respiratory-control", "respiratory-chemoreflex-control", "cardiopulmonary-adaptation"],
-    ["cardiopulmonary-adaptation", "respiratory-exercise-adaptation", "respiratory-acid-base"],
+    ["respiratory-gas-transport", "respiratory-oxygen-content-and-delivery", "/library/respiratory-chemoreflex-control"],
+    ["respiratory-control", "respiratory-chemoreflex-control", "/library/respiratory-exercise-adaptation"],
+    ["cardiopulmonary-adaptation", "respiratory-exercise-adaptation", coursePath + "#respiratory-acid-base"],
   ];
   for (const [chapter, id, next] of chapters) {
     await page.goto(coursePath + "#" + chapter);
@@ -126,8 +134,21 @@ test("the three respiratory chapters teach, check and link to the next chapter a
     const visual = page.getByRole("region", { name: "Visual study prompts" });
     await visual.getByText("Read a text description", { exact: true }).press("Enter");
     await expect(visual.locator("details[open] p")).toBeVisible();
-    await expect(page.getByRole("navigation", { name: "Full Course chapter navigation" }).getByRole("link", { name: /^Next chapter:/ })).toHaveAttribute("href", coursePath + "#" + next);
+    await expect(page.getByRole("navigation", { name: "Full Course chapter navigation" }).getByRole("link", { name: /^Next (lesson|chapter):/ })).toHaveAttribute("href", next);
     expect(await page.evaluate(() => document.documentElement.scrollWidth), id).toBe(320);
     expect((await new AxeBuilder({ page }).include("[data-lesson-visuals]").analyze()).violations).toEqual([]);
   }
+});
+
+test("a gap at the end of a part leads to the immediate next part and its canonical renal lessons", async ({ page }) => {
+  await page.goto(coursePath + "#respiratory-acid-base");
+  const gap = page.locator("#respiratory-acid-base");
+  await expect(gap).toContainText("Related coverage only");
+  await gap.getByRole("link", { name: /^Next part: Renal/ }).click();
+  await expect(page).toHaveURL(/#renal$/);
+  await page.locator("#renal-circulation-and-filtration").getByRole("link", { name: /^Follow the blood/ }).click();
+  await expect(page).toHaveURL(/\/learn\/renal\/kidney-map$/);
+  const nav = page.getByRole("navigation", { name: "Full Course chapter navigation" });
+  await expect(nav.getByRole("link", { name: /^Previous part: Respiratory/ })).toHaveAttribute("href", coursePath + "#respiratory");
+  await expect(nav.getByRole("link", { name: /^Next lesson: Afferent/ })).toHaveAttribute("href", "/learn/renal/afferent-efferent");
 });

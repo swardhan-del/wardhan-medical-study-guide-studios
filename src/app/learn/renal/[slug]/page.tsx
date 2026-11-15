@@ -1,4 +1,5 @@
-import { PhysiologyCourseNavigation } from "@/components/physiology-course-navigation";
+import { GuideLessonNavigation } from "@/components/guide-lesson-navigation";
+import { orderedLessonNavigation } from "@/lib/ordered-lesson-navigation";
 import { AboutLesson } from "@/components/about-lesson";
 import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
 import { StructuredData } from "@/components/structured-data";
@@ -34,8 +35,7 @@ export default async function RenalLessonPage({ params }: Props) {
   const index = renalLessons.findIndex((l) => l.slug === slug);
   const lesson = renalLessons[index];
   if (!lesson) notFound();
-  const next = renalLessons[index + 1];
-  const previous = renalLessons[index - 1];
+  const navigation = orderedLessonNavigation("physiology", `renal-${slug}`);
   return (
     <div className="site-container study-page renal-lesson">
       <StructuredData data={lessonSchema({ path: renalLessonHref(slug), title: lesson.title, summary: lesson.description,
@@ -127,27 +127,7 @@ export default async function RenalLessonPage({ params }: Props) {
       </div>
       <StudyReel key={`recall-${slug}`} title="Revisit the key ideas" slides={[...lesson.sections.map(section => ({ title: section.title, body: section.text })), { title: "Explain it without looking", prompt: lesson.oral, body: lesson.rubric.join(" ") }]} />
       <CompleteLesson slug={slug} />
-      <PhysiologyCourseNavigation lessonId={`renal-${slug}`} />
-      <nav className="lesson-pagination" aria-label="Course lessons">
-        {previous ? (
-          <Link className="text-link" href={renalLessonHref(previous.slug)}>
-            ← {previous.title}
-          </Link>
-        ) : (
-          <Link className="text-link" href="/learn/renal">
-            ← Course overview
-          </Link>
-        )}
-        {next ? (
-          <Link className="text-link" href={renalLessonHref(next.slug)}>
-            Next: {next.title} →
-          </Link>
-        ) : (
-          <Link className="text-link" href="/study">
-            Continue with your review queue →
-          </Link>
-        )}
-      </nav>
+      {navigation && <GuideLessonNavigation navigation={navigation} />}
       <RenalSources section={lesson.sourceSection} lessonId={`renal-${slug}`} />
     </div>
   );

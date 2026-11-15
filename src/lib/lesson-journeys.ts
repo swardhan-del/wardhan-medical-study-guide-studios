@@ -2,6 +2,7 @@ import { renalLessons, renalLessonHref } from "@/content/renal-course";
 import { studyLessons, studyGroups } from "./study-collections";
 import { beginnerSequences } from "@/content/study-paths";
 import { practiceItems } from "@/content/practice-registry";
+import { orderedLessonNavigation } from "./ordered-lesson-navigation";
 
 export type JourneyLesson = {
   id: string; title: string; subject: string; summary: string;
@@ -17,9 +18,9 @@ export const journeyLessons: JourneyLesson[] = studyLessons.map(lesson => {
   return {
     id: lesson.id, title: lesson.title, subject: lesson.subject, summary: lesson.recall.answer,
     questions: practiceItems.filter(item => item.topic === lesson.id).map(item => item.id),
-    next: starters[startIndex + 1] && startIndex >= 0 ? starters[startIndex + 1] : next
+    next: orderedLessonNavigation(lesson.subject, lesson.id)?.next ?? (starters[startIndex + 1] && startIndex >= 0 ? starters[startIndex + 1] : next
       ? { title: next.title, href: `/library/${next.id}` }
-      : { title: "Choose another topic in this subject", href: lesson.subject === "biostatistics" ? "/subjects/biostatistics" : `/study/${lesson.subject}` },
+      : { title: "Choose another topic in this subject", href: lesson.subject === "biostatistics" ? "/subjects/biostatistics" : `/study/${lesson.subject}` }),
   };
 });
 export type ResumeLesson = { id: string; title: string; next: { title: string; href: string }; href?: string };
@@ -27,8 +28,8 @@ export const journeyIndex: ResumeLesson[] = [
   ...journeyLessons.map(({ id, title, next }) => ({ id, title, next })),
   ...renalLessons.map((lesson, index) => ({
     id: lesson.slug, title: lesson.title, href: renalLessonHref(lesson.slug),
-    next: renalLessons[index + 1]
+    next: orderedLessonNavigation("physiology", `renal-${lesson.slug}`)?.next ?? (renalLessons[index + 1]
       ? { title: renalLessons[index + 1].title, href: renalLessonHref(renalLessons[index + 1].slug) }
-      : { title: "Review the renal course", href: "/learn/renal" },
+      : { title: "Review the renal course", href: "/learn/renal" }),
   })),
 ];

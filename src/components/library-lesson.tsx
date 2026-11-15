@@ -29,7 +29,8 @@ import { MuscleSpecimenEntry } from "./muscle-specimen-entry";
 import { BloodSpecimenExplorer } from "./blood-specimen-explorer";
 import { SpecimenExplorerEntry, HistologyVisualEntry } from "./specimen-explorer-entry";
 import { CollagenRouteExplorer, BonePreparationExplorer } from "./connective-bone-explorers";
-import { PhysiologyCourseNavigation } from "./physiology-course-navigation";
+import { GuideLessonNavigation } from "./guide-lesson-navigation";
+import { orderedLessonNavigation } from "@/lib/ordered-lesson-navigation";
 import { GlandStructureExplorer, BarrierReadoutExplorer, JunctionMapExplorer } from "./epithelial-explorers";
 import { GIProfileExplorer } from "./gi-profile-explorer";
 import { SystemRelationships } from "./system-relationships";
@@ -90,6 +91,7 @@ import type { ReactNode } from "react";
 export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; reviewVisuals?: ReactNode }) {
   const editorialRecorded = !qualityForLesson(lesson.id) || hasRecordedReview(lesson.id, "editorial");
   const clinicallyReviewed = qualityForLesson(lesson.id)?.contentStatus === "independently-clinically-reviewed";
+  const navigation = orderedLessonNavigation(lesson.subject, lesson.id);
   const journey = journeyLessons.find(item => item.id === lesson.id)!;
   const anatomyFoundations = lesson.id === "anatomy-foundations";
   const originalReferenceTeaching = ["retinal-structure-light-signal-direction", "vestibular-sensors-rotation-translation", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "neurulation", "placenta", "muscle-histology", "vessel-histology", "blood-marrow", "connective-tissue", "cartilage-bone", "epithelia", "cell-junctions", "liver-pancreas", "gi-histology", "renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
@@ -159,7 +161,6 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <a href="#recap">Recall practice</a><a href="#summary-checklist-title">Summary Checklist</a><a href="#lesson-source">Sources</a>
       </nav> : <nav className="lesson-jumps" aria-label="Lesson sections"><a href="#lesson-objectives">Objectives and preparation</a><a href="#concept-map-title">Explanation</a>{lesson.workedExample && <a href="#worked-example-heading">Worked example</a>}{hasEndocrineDevelopmentMap(lesson.id) && <a href="#endocrine-development-title">Development map</a>}{lesson.id === "muscle-histology" && <a href="#muscle-specimen-title">Compare specimens</a>}{lesson.id === "blood-marrow" && <a href="#blood-specimen-title">Choose a preparation</a>}{lesson.id === "lymphoid-organs" && <><a href="#lymphoid-specimen-title">Read the lymph node</a><a href="#thymus-wide-comparison-specimen-title">Read thymus architecture</a><a href="#thymus-comparison-specimen-title">Compare thymus detail</a><a href="#spleen-comparison-specimen-title">Compare spleen detail</a></>}{lesson.id === "ovarian-histology-and-development" && <><a href="#ovary-small-follicle-specimen-title">Read a small follicle</a><a href="#ovary-cumulus-complex-specimen-title">Trace the cumulus</a><a href="#ovary-corpus-albicans-specimen-title">Compare a fibrous remnant</a></>}{lesson.id === "female-tract-histology-and-development" && <><a href="#female-proliferative-specimen-title">Compare endometrial fields</a><a href="#female-tubal-wall-specimen-title">Read tubal architecture</a><a href="#female-tubal-epithelium-specimen-title">Read the epithelial border</a></>}{lesson.id === "mammary-histology-and-development" && <><a href="#mammary-lobule-specimen-title">Read lobular architecture</a><a href="#mammary-acinus-specimen-title">Read an acinar profile</a></>}{lesson.id === "reproductive-histology" && <><a href="#reproductive-specimen-title">Read the specimen</a><a href="#reproductive-route-title">Explore transport and development</a></>}{lesson.id === "brain-and-csf-barriers" && <><a href="#brain-csf-specimen-title">Read the specimen</a><a href="#brain-barrier-explorer">Explore barrier routes</a></>}{lesson.id === "neurulation" && <><a href="#neurulation-specimen-title">Read the specimen</a><a href="#neurulation-folding">Explore folding</a><a href="#lesson-videos">Research movies</a></>}{lesson.id === "placenta" && <><a href="#placenta-specimen-title">Read the specimen</a><a href="#placenta-circulation-title">Trace two circuits</a></>}{lesson.id === "connective-tissue" && <a href="#collagen-route-title">Collagen pathway</a>}{lesson.id === "cartilage-bone" && <a href="#bone-preparation-title">Preparation explorer</a>}{lesson.id === "epithelia" && <a href="#gland-explorer-title">Gland comparison</a>}{lesson.id === "cell-junctions" && <><a href="#junction-map-title">Junction map</a><a href="#barrier-explorer-title">Barrier exercise</a></>}{lesson.id === "gi-histology" && <a href="#gi-profile-explorer-title">Compare villus and crypt</a>}{(lesson.id === "liver-pancreas" || lesson.id === "renal-histology" || lesson.id === "respiratory-histology") && <a href="#system-relationships-title">Trace a route</a>}{lesson.id === "cohort-case-control-denominators" && <a href="#case-control-explorer-title">Population explorer</a>}{lesson.id === "pdh-tca" && <a href="#pdh-mechanism-title">Follow the catalytic cycle</a>}{lesson.id === "retinal-structure-light-signal-direction" && <><a href="#retinal-layers">Explore the layers</a><a href="#retinal-specimens">Read the specimens</a><a href="#retinal-development">Trace development</a><a href="#reasoning-practice-title">Explain your reasoning</a></>}{lesson.id === "vestibular-sensors-rotation-translation" && <><a href="#vestibular-structure">Compare sensory architecture</a><a href="#vestibular-motion">Explore tilt and translation</a><a href="#reasoning-practice-title">Explain your reasoning</a></>}{lesson.id === "biophysics-practical-audiometry" && <a href="#audiogram-explorer">Compare audiograms</a>}{hasFigures && <a href={figureTarget}>Figures</a>}<a href="#concept-check-title">Questions</a><a href="#recap">Recall practice</a><a href="#oral-recall-title">Oral Examination Prompts</a>{lesson.summaryChecklist && <a href="#summary-checklist-title">Summary Checklist</a>}<a href="#lesson-source">Sources</a></nav>}
       <AnatomyLessonNavigation lessonId={lesson.id} />
-      <TopicGuideLinks lessonId={lesson.id} />
       <div className="concept-layout">
         <div>
           {flagship ? (subjectEntry ? <SubjectEntryContent lesson={lesson}/> : anatomyFoundations ? <AnatomyFoundationsContent lesson={lesson}/> : <HistologyFoundationsContent lesson={lesson}/>) : <>
@@ -344,11 +345,11 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           {lesson.id === "neural-tube-development" && <NeurulationSlides />}
           <LearningActivities activities={activitiesForLesson(lesson.id)} />
           <StudyReel key={`reel-${lesson.id}`} title="Revisit the key ideas" slides={[...lesson.steps, { title: "Explain it without looking", prompt: lesson.recall.prompt, body: lesson.recall.answer }]} />
-          <LessonReview lesson={journey} />
+          <LessonReview lesson={journey} continuation={navigation && <GuideLessonNavigation navigation={navigation} />} />
         </div>
         <aside className="concept-sidebar">
           <p className="eyebrow">Connect the subjects</p>
-          <h2>Study this next</h2>
+          <h2>Related reading</h2>
           {related.map((r) => (
             <Link className="concept-related" key={r.id} href={resourceHref(r)}>
               <span>
@@ -403,7 +404,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         </p>
         <CorrectionLink />
       </section>
-      <PhysiologyCourseNavigation lessonId={lesson.id} />
+      <TopicGuideLinks lessonId={lesson.id} />
       <nav className="action-row concept-end" aria-label="Continue studying">
         <Link
           className="button button-primary"

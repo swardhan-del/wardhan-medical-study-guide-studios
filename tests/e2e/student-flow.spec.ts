@@ -14,7 +14,7 @@ async function waitForRecordedVisit(page: Page, lessonId: string) {
   )).toBe(lessonId);
 }
 
-test("first session persists stages, completion and saved summaries, then recommends the next lesson", async ({ page }, info) => {
+test("first session persists stages, completion and saved summaries, then opens the next ordered part", async ({ page }, info) => {
   await page.goto("/");
   await page.getByRole("link", { name: "Choose my first subject", exact: true }).click();
   await page.getByRole("link", { name: "Start Biochemistry", exact: true }).click();
@@ -52,8 +52,10 @@ test("first session persists stages, completion and saved summaries, then recomm
   await page.goto("/study");
   await page.locator("#saved-summaries summary").click();
   await expect(page.locator("#saved-summaries")).toContainText(lesson.recall.answer);
-  await page.getByRole("link", { name: /^Next: Explain enzyme kinetics/ }).click();
-  await expect(page).toHaveURL(/\/library\/enzyme-kinetics$/);
+  await page.getByRole("link", { name: /^Next: Proteins, amino acids and collagen/ }).click();
+  await expect(page).toHaveURL(/\/study\/biochemistry\/guide#biochemistry-part-01$/);
+  await page.locator("#biochemistry-part-01 ol").getByRole("link").first().click();
+  await expect(page).toHaveURL(/\/library\/protein-structure$/);
 });
 
 test("cross-tab updates, reopening, export/import and reset include new progress fields", async ({ page, context }) => {
