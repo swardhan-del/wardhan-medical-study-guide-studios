@@ -1,6 +1,18 @@
 import Link from "next/link";
 import { BeginnerSequence } from "./beginner-sequence";
 import { beginnerSequences } from "@/content/study-paths";
+import { physiologyCoursePath } from "@/content/curriculum";
+import { partsForSubject } from "@/lib/printable-guides";
+
+export function OrderedSubjectCourseLink({ subject }: { subject: string }) {
+  if (subject === "physiology") return <Link className="button button-primary" href={physiologyCoursePath}>Full Course</Link>;
+  if (subject === "immunology") return <Link className="button button-primary" href="/study/genetics/guide#study-immunology">Ordered immunology guide</Link>;
+  if (!partsForSubject(subject).length) return null;
+  return <Link className="button button-primary" href={`/study/${subject}/guide`}>
+    {subject === "histology" ? "Ordered 20-part histology guide" : "Ordered guide"}
+  </Link>;
+}
+
 const paths: Record<string, [string, string, string][]> = {
   biophysics: [["Begin with light and units", "/library/biophysics-radiation-optics", "Establish quantities and assumptions before using equations."], ["Follow the full course", "/study/biophysics", "Work through 36 theory topics and 14 practical lessons."], ["Test a prediction", "/practice/biophysics", "Change a model, inspect the graph and explain the result."]],
   anatomy: [["Orient the regions", "/subjects/anatomy/regional-anatomy", "Find landmarks and connect neighbouring regions."], ["Study the thorax", "/subjects/anatomy/thorax", "Explore the chest map, breathing model and twelve questions."], ["Connect abdominal development", "/subjects/anatomy/abdomen", "Follow the peritoneum and arterial territories."]],

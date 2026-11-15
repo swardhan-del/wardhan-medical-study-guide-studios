@@ -12,7 +12,7 @@ export function CourseResume({ lessons }: { lessons: CourseLessonLink[] }) {
 
   if (!ready) return <p>Loading course progress…</p>;
   if (!resume || !last) {
-    return next ? <p><Link href={next.href}>Open first unfinished lesson: {next.title}</Link></p>
+    return next ? <p><Link href={next.href}>Open first unfinished released lesson: {next.title}</Link></p>
       : <p>All mapped lessons are marked complete in this browser.</p>;
   }
 

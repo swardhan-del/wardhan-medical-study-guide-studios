@@ -2,6 +2,7 @@ import Link from "next/link";
 import { studyPaths, beginnerSequences } from "@/content/study-paths";
 import { studyGroups, subjectLessons } from "@/lib/study-collections";
 import { practiceItems } from "@/content/practice-registry";
+import { physiologyCoursePath } from "@/content/curriculum";
 import { subjectLessonCounts } from "@/lib/subject-lesson-counts";
 
 export function SubjectCoverage({ subject }: { subject: string }) {
@@ -29,7 +30,7 @@ export function SubjectLessonOrder({ subject }: { subject: string }) {
   const groups = studyGroups.filter(group => group.subject === subject);
   return <section className="study-panel" id="lesson-order" aria-labelledby="lesson-order-title">
     <h2 id="lesson-order-title">Lesson order</h2>
-    <p>Open a section for the numbered list. This is the current collection order; use the beginner steps or a focused topic sequence when starting a new subject. It is not a complete university syllabus.</p>
+    <p>Browse the website’s lesson collections by topic. For sequential study, use the ordered course or guide at the top of this page.</p>
     {groups.map(group => <details className="study-details" key={group.id}>
       <summary>{group.title} · {group.lessonIds.length} {subject === "anatomy" ? "lessons available" : "introductions available"}</summary>
       <ol start={1 + groups.slice(0, groups.indexOf(group)).reduce((count, item) => count + item.lessonIds.length, 0)}>{group.lessonIds.map(id => {
@@ -38,6 +39,6 @@ export function SubjectLessonOrder({ subject }: { subject: string }) {
         return <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link> — {subject === "anatomy" ? "Lesson available" : "Introduction available"} · {count} practice {count === 1 ? "question" : "questions"}</li>;
       })}</ol>
     </details>)}
-    {subject === "physiology" && <p><Link href="/learn/renal">Follow the separate eight-lesson renal course</Link> for the guided renal sequence.</p>}
+    {subject === "physiology" && <p><Link href={physiologyCoursePath + "#renal"}>See renal physiology in Part 4 of the Full Course</Link>.</p>}
   </section>;
 }

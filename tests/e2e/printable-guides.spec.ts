@@ -1,5 +1,7 @@
 import { mkdirSync } from "node:fs";
 import { test, expect } from '@playwright/test';
+import guide from '../../src/content/printable-guides.json';
+import library from '../../src/content/library-lessons.json';
 const subjects = ['anatomy', 'histology', 'cell-biology', 'biochemistry', 'physiology', 'genetics', 'biophysics'];
 for (const subject of subjects) {
   test(`${subject}: guide parts connect to printable notes without overflow`, async ({ page }, testInfo) => {
@@ -39,4 +41,37 @@ test('histology source gaps remain explicit and lesson / answer selection stays 
   await expect(page.locator('.revision-answers')).toContainText('Histology Foundations: The Four Basic Tissues');
   await expect(page.locator('.revision-answers')).toContainText('Preparation, staining and defensible slide interpretation');
   await expect(page.locator('.revision-answers')).not.toContainText('Myelin and glia');
+});
+
+test('the histology sequence stops at the next numbered part even when no lesson is available', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.goto('/subjects/histology');
+  await page.getByRole('link', { name: 'Ordered 20-part histology guide' }).click();
+  await page.locator('#histology-part-07 ol').getByRole('link').first().click();
+  await page.getByRole('link', { name: 'Review summary', exact: true }).click();
+  const next = page.getByRole('navigation', { name: 'Ordered guide navigation' });
+  await next.getByRole('link', { name: /^Next part: Oral cavity/ }).click();
+  await expect(page).toHaveURL(/#histology-part-08$/);
+  const empty = page.locator('#histology-part-08');
+  await expect(empty).toContainText('Coverage gap');
+  await expect(empty.getByRole('link', { name: /^Previous part: Respiratory system/ })).toHaveAttribute('href', '/study/histology/guide#histology-part-07');
+  await empty.getByRole('link', { name: /^Next part: Stomach/ }).click();
+  await expect(page).toHaveURL(/#histology-part-09$/);
+  await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+});
+
+test('physiology guide, printable notes and answer key follow the same cardiovascular lesson order', async ({ page }) => {
+  const part = guide.parts.find(part => part.id === 'physiology-cardiovascular')!;
+  const expected = part.lessonIds.map(id => library.lessons.find(lesson => lesson.id === id)!.title);
+  expect(part.lessonIds.slice(0, 3)).toEqual(['ecg-time-and-vectors', 'cardiac-cycle', 'cardiac-output']);
+  await page.goto('/study/physiology/guide#physiology-cardiovascular');
+  const section = page.locator('#physiology-cardiovascular');
+  await expect(section.locator('ol a')).toHaveText(expected);
+  await section.getByRole('link', { name: 'Open this part in the printable notes' }).click();
+  await expect(page).toHaveURL(/\/revision#physiology-cardiovascular$/);
+  await page.getByRole('button', { name: 'Clear selection' }).click();
+  await page.getByRole('checkbox', { name: /^02\. Cardiovascular Physiology/ }).check();
+  await expect(page.locator('.revision-lesson > h3')).toHaveText(expected);
+  await expect(page.locator('.revision-answers h3')).toHaveText(expected);
 });

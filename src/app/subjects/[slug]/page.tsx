@@ -1,11 +1,10 @@
-import { physiologyCoursePath } from "@/content/curriculum";
 import { searchMetadata } from "@/lib/search-metadata";
 import { WaitlistCta } from "@/components/waitlist-cta";
 import { SubjectHubOverview } from "@/components/subject-hub";
 import { AnatomyLearningPath } from "@/components/anatomy-learning-path";
 import { studySubjects } from "@/lib/study-collections";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
-import { SubjectLearningPath } from "@/components/subject-learning-path";
+import { OrderedSubjectCourseLink, SubjectLearningPath } from "@/components/subject-learning-path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { librarySubjects, subjectRecords } from "@/lib/taxonomy";
@@ -43,10 +42,12 @@ export default async function SubjectPage({ params }: Props) {
         <h1>{s.title}</h1>
         <p className="interior-lede">{slug === "histology" ? "Learn to identify tissues by their architecture, cells, and extracellular features. Connect what you see with how the tissue functions and develops." : s.description}</p>
       </header>
-      {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row"><Link className="button button-primary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link></div>}
+      {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row">
+        <OrderedSubjectCourseLink subject={slug} />
+        <Link className="button button-secondary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link>
+      </div>}
       {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
       {firstSession && <p><Link className="button button-secondary" href={firstSessionHref(firstSession.id)}>Try a five-minute study session</Link></p>}
-      {slug === "physiology" && <p><Link className="button button-secondary" href={physiologyCoursePath}>Full Course</Link></p>}
       <SubjectHubOverview subject={slug} />
       {explainers.length > 0 && <section className="study-panel" aria-labelledby="subject-explainers">
         <h2 id="subject-explainers">Video explainers</h2>
