@@ -8,9 +8,6 @@
 .small { font-size: .8rem; color: #c6dddc; }
 .coverLink { display: block; border-radius: 20px; overflow: hidden; }
 .coverLink img { display: block; width: 100%; height: auto; }
-.homeCover { display: block; position: relative; border-radius: 18px; overflow: hidden; background: #102b3d; text-decoration: none; }
-.homeCover img { display: block; width: 100%; height: auto; max-height: 255px; object-fit: cover; }
-.homeCover span { display: block; padding: 13px 18px; color: #b7f3df; font-size: .85rem; font-weight: 600; }
 .primary,.secondary { display: inline-flex; align-items: center; justify-content: center; gap: 20px; min-height: 48px; padding: 13px 22px; border: 1px solid #245a63; border-radius: 10px; text-decoration: none; background: #1c6267; color: #fff; font: 600 .95rem/1.4 var(--sans); cursor: pointer; }
 .invitation .primary { background: #b7f3df; color: #112f3e; border-color: #b7f3df; }
 .secondary { background: transparent; color: #1b535b; }
@@ -72,6 +69,12 @@
 .transcript { padding-left: 22px; line-height: 1.65; font-size: .85rem; }
 .transcript li { margin-bottom: 12px; }
 .sourceGrid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.specimenComparison { margin-block: 22px 32px; scroll-margin-top: 30px; }
+.specimenComparison figure { margin: 0; }
+.specimenComparison figure img { display: block; width: 100%; height: auto; border-radius: .65rem; }
+.specimenComparison figcaption { margin-top: .5rem; }
+.specimenComparison figcaption span { display: block; font-size: .82rem; }
+.specimenComparison summary { cursor: pointer; font-weight: 600; }
 .sourceGrid > div { border-top: 1px solid #c4d4ca; padding-top: 18px; }
 .sourceGrid a { color: #245e66; font-weight: 600; }
 .sourceGrid p { margin-block: 8px 15px; }

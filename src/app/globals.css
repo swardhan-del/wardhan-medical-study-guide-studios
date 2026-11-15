@@ -4133,13 +4133,8 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   border-block: 1px solid #d9d0c2;
 }
 .learning-home h1 { font-size: clamp(2.3rem, 4vw, 3.5rem); }
-@media (min-width: 701px) {
-  .atlas-home .hero-aside {
-    background: #f5efe4eb;
-    border: 1px solid #d9d0c2;
-    border-radius: .85rem;
-    padding: 1rem;
-  }
+@media (min-width: 1001px) {
+  .hero-section.learning-home { grid-template-columns: minmax(0, 1.5fr) minmax(20rem, 1fr); }
 }
 @media (max-width: 700px) {
   .atlas-home {
@@ -4151,10 +4146,10 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   }
 }
 .learning-home .hero-lede { font-size: 1.2rem; line-height: 1.5; }
-.home-subject-links { display: grid; gap: .5rem; }
+.home-subject-navigation { padding-block: 1.5rem; }
+.home-subject-navigation h2 { margin-bottom: .5rem; }
+.home-subject-links { display: flex; flex-wrap: wrap; gap: .25rem 1.2rem; }
 .home-subject-links a { padding-block: .35rem; line-height: 1.4; }
-.learning-home .hero-aside { gap: 12px; }
-.learning-home .hero-aside h2 { font-size: 1.6rem; margin-bottom: 1rem; }
 .concept-heading h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.12; }
 .concept-page { padding-top: 24px; }
 .concept-heading { padding-block: 0; margin: 20px 0 16px; }
