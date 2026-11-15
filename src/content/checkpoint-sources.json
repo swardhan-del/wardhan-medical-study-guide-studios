@@ -2306,6 +2306,54 @@
       }
     ]
   },
+  "experimental-unit-cell-reading-hierarchy": {
+    "subject": "biostatistics",
+    "topic": "Experimental units: count dishes, cells and readings",
+    "subtopic": "Experimental and observational units; fictional allocation and measurement hierarchy.",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cohort-case-control-denominators"
+    ],
+    "sources": [
+      {
+        "title": "Original study design and paired-data exercises",
+        "locator": "Experimental and observational units; fictional allocation and measurement hierarchy.",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "paired-differences-marginals-covariance": {
+    "subject": "biostatistics",
+    "topic": "Paired differences: why the same columns can have different uncertainty",
+    "subtopic": "NIST analysis of paired observations; original data and variance calculations.",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "standard-deviation-standard-error"
+    ],
+    "sources": [
+      {
+        "title": "Original study design and paired-data exercises",
+        "locator": "NIST analysis of paired observations; original data and variance calculations.",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
+  "splanchnic-flow-and-cardiac-output-share": {
+    "subject": "physiology",
+    "topic": "Exercise circulation: compare regional flow and its share of cardiac output",
+    "subtopic": "Part II §2.11, skeletal muscle, exercise and splanchnic circulation.",
+    "difficulty": "introductory",
+    "prerequisites": [
+      "cardiac-output"
+    ],
+    "sources": [
+      {
+        "title": "Medical Physiology — Cardiovascular Physiology",
+        "locator": "Part II §2.11, skeletal muscle, exercise and splanchnic circulation.",
+        "basis": "supplemental-reference-based"
+      }
+    ]
+  },
   "thoracic-cage-landmarks": {
     "subject": "anatomy",
     "topic": "Thoracic cage and landmarks",

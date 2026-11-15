@@ -15675,6 +15675,261 @@
       }
     },
     {
+      "id": "experimental-unit-cell-reading-hierarchy",
+      "subject": "biostatistics",
+      "title": "Experimental units: count dishes, cells and readings",
+      "summary": "Identify the unit that receives an intervention, distinguish it from subsamples and repeated readings, and explain what each count can tell you.",
+      "source": "original-study-design-and-pairing",
+      "section": "Experimental and observational units; fictional allocation and measurement hierarchy.",
+      "objectives": [
+        "Identify the intervention-allocation level before reporting sample size.",
+        "Count experimental units, observed cells and repeated readings separately in a synthetic hierarchy.",
+        "Explain why an analysis must represent dependence instead of equating data rows with independently treated units."
+      ],
+      "prerequisites": [
+        "cohort-case-control-denominators"
+      ],
+      "steps": [
+        {
+          "title": "Ask where the intervention was allocated",
+          "body": "An experimental unit is identified from the design and intervention, not from the number of rows in a spreadsheet. For the treatment comparison below, the relevant units are the entities separately allocated and treated. Cells measured within such an entity are observational subsamples; repeated readings add another measurement level. Naming all of these simply “replicates” hides the design."
+        },
+        {
+          "title": "Define the fictional design before counting",
+          "body": "Imagine six culture dishes. Three are randomly assigned to each condition. Each dish is treated separately, and the fictional design assumes no spillover between dishes. Four cells are sampled from each dish, and each cell is measured twice. The treatment comparison concerns the dish-level allocation."
+        },
+        {
+          "title": "Count each level explicitly",
+          "body": "Across both conditions there are 6 dish units, 24 measured cells and 48 readings. Per condition the counts are 3 dishes, 12 cells and 24 readings. In this stipulated design, doubling readings on the same cells would produce 96 rows but still 6 dish units. Measuring more cells can add information about within-dish variation; it does not create additional dish-level allocations. The appropriate level of replication would change if the actual design and independent intervention unit changed."
+        },
+        {
+          "title": "Use the hierarchy in the analysis",
+          "body": "Treating correlated observations as independent is pseudoreplication. An analysis must represent the relevant dependence and the question being asked, rather than treating every instrument row as a new independently treated unit. Do not turn this example into a rule that all cell-level measurements should be discarded or that averaging always solves every design. A suitable analysis can retain lower-level information while accounting for its structure. No response values, effect estimate, p-value, confidence interval or power calculation are supplied."
+        },
+        {
+          "title": "Report enough to reconstruct the design",
+          "body": "For this fictional example, report three separately treated dishes per condition, four sampled cells per dish and two readings per cell, along with how treatment was allocated and what population the conclusion targets. The phrase “n = 24” alone would not tell a reader which level was counted. The number of dishes in one culture context does not establish replication across donors, cell lines or laboratories. State those boundaries rather than silently generalising the result."
+        }
+      ],
+      "workedExample": {
+        "title": "Follow one treatment group through the hierarchy",
+        "prompt": "Three dishes are assigned to one group. Four cells from each dish contribute two readings each. Account for all 24 rows.",
+        "solution": [
+          "Three dishes received the intervention separately, so there are three experimental units in the group.",
+          "Four cells per dish × three dishes gives 12 observed cells.",
+          "Two readings per cell × 12 cells gives 24 readings. Averaging each pair of readings leaves 12 cell summaries and three units of allocation."
+        ]
+      },
+      "question": {
+        "prompt": "Treatment is separately randomised and applied to three culture dishes per condition. Four cells per dish are measured twice, giving 24 readings per condition. In this stipulated design, how many treatment-assigned experimental units are present per condition?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Three dishes; the 12 cells and 24 readings are lower-level observations.",
+            "reason": "The intervention was allocated and applied at dish level. Additional measurements within a dish do not create extra dish allocations."
+          },
+          {
+            "text": "Twelve independently treated units, because each observed cell is a row after averaging readings.",
+            "reason": "Averaging readings does not change where treatment was allocated. The cells were subsampled within treated dishes."
+          },
+          {
+            "text": "Twenty-four independently treated units, because each instrument reading is unique.",
+            "reason": "Unique identifiers and extra rows do not establish independent treatment assignment."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "What would have to change for the cells to be the units of allocation?",
+        "answer": "The design would have to allocate and apply the intervention separately to each cell, with dependence and interaction addressed in the design and analysis. Simply measuring cells separately cannot change which units received the intervention."
+      },
+      "summaryChecklist": [
+        "I can identify the intervention-allocation level before reporting sample size.",
+        "I can count experimental units, observed cells and repeated readings separately in a synthetic hierarchy.",
+        "I can explain why an analysis must represent dependence instead of equating data rows with independently treated units."
+      ],
+      "related": [
+        "standard-deviation-standard-error",
+        "paired-differences-marginals-covariance"
+      ],
+      "tags": [
+        "Biostatistics",
+        "Experimental unit",
+        "Pseudoreplication",
+        "Study design"
+      ],
+      "minutes": 9,
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "paired-differences-marginals-covariance",
+      "subject": "biostatistics",
+      "title": "Paired differences: why the same columns can have different uncertainty",
+      "summary": "Calculate differences from real pair identities, then compare two fictional designs with equal marginal summaries and different spread of changes.",
+      "source": "original-study-design-and-pairing",
+      "section": "NIST analysis of paired observations; original data and variance calculations.",
+      "objectives": [
+        "Preserve a design-defined pair identifier and a stated difference direction.",
+        "Compute the mean and sample spread of within-pair differences.",
+        "Explain why marginal summaries alone do not recover paired covariance or uncertainty."
+      ],
+      "prerequisites": [
+        "standard-deviation-standard-error"
+      ],
+      "steps": [
+        {
+          "title": "The pair is part of the data",
+          "body": "A before and after value are paired when the study design meaningfully links them, for example two measurements of the same fictional unit. Preserve that unit identifier. Equal column lengths, adjacent spreadsheet rows or similar values do not establish a valid match. The difference direction here is after minus before. The pairs, not the eight individual measurements, are the four units for the simple difference summary."
+        },
+        {
+          "title": "Two deliberately different fictional designs",
+          "body": "Design A has four pairs: (10,12), (20,23), (30,31), (40,44). Its after-minus-before differences are 2, 3, 1 and 4. Design B is a separate hypothetical design with pairs (10,44), (20,31), (30,23), (40,12), giving differences 34, 11, -7 and -28. Both designs have before mean 25, after mean 27.5 and mean difference 2.5 arbitrary units. Each column contains exactly the same values in both designs, so all marginal column summaries agree. These are alternative fictional pair structures, not permission to reorder real observations."
+        },
+        {
+          "title": "Calculate the spread of the differences",
+          "body": "The sample standard deviation (SD) uses a denominator of n − 1. The SD of the four differences is about 1.29 units in design A and 26.36 units in design B. When the pairs are independent and identically distributed with finite difference variance, the estimated standard error of the mean difference is the SD of the differences divided by the square root of the number of pairs. With four pairs, the estimates are about 0.65 and 13.18 units."
+        },
+        {
+          "title": "Locate the missing relationship algebraically",
+          "body": "Let x and y be the matched before and after values. The sample variance of their difference equals the variance of x plus the variance of y minus twice their sample covariance. The covariance is positive in A and negative in B, so the same two marginal variances produce very different difference variances. The formula follows by expanding the squared deviations of the differences from their mean."
+        },
+        {
+          "title": "Preserve the design before selecting an analysis",
+          "body": "Real pair identities must come from the design and verified identifiers. Do not choose a pairing because it produces a smaller standard error. If pairs are missing or repeated, or if pairs themselves share clusters, the simple four-independent-pair calculation may not apply. A t-based interval or test has additional assumptions about the distribution of the differences; four rows do not verify them. A before-after comparison alone also does not isolate a treatment effect from other changes over time. This lesson performs descriptive calculations and an explicitly conditional standard-error calculation, not hypothesis testing."
+        }
+      ],
+      "workedExample": {
+        "title": "Compare estimated standard errors with the same number of pairs",
+        "prompt": "Both fictional designs have four independent pairs. Their difference standard deviations are approximately 1.29 and 26.36 units. What are the estimated standard errors of the mean changes?",
+        "solution": [
+          "The square root of four is two.",
+          "Divide each sample standard deviation of the differences by two. The estimates are about 0.65 and 13.18 units.",
+          "The pair count and the mean difference agree in the two designs. The changed spread of the differences explains the gap in estimated uncertainty."
+        ]
+      },
+      "question": {
+        "prompt": "The two fictional designs have identical before and after column values. Why do their difference standard deviations differ?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Their within-pair covariance differs, even though their marginal summaries match.",
+            "reason": "Difference variance includes the covariance term. The pairs are part of the data structure."
+          },
+          {
+            "text": "The smaller spread proves that its pairing should be imposed on the real dataset.",
+            "reason": "Actual identifiers and study design determine pairing; choosing matches to improve a result is invalid."
+          },
+          {
+            "text": "Equal marginal means require equal differences for every unit.",
+            "reason": "Column averages do not specify which observations belong together or the variation of the paired changes."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "Why can’t separate before and after standard deviations recover the standard deviation of the paired changes?",
+        "answer": "The variance of after minus before is the sum of the two marginal variances minus twice their covariance. Marginal summaries cannot supply the covariance. The study design establishes the actual matches."
+      },
+      "summaryChecklist": [
+        "I can preserve a design-defined pair identifier and a stated difference direction.",
+        "I can compute the mean and sample spread of within-pair differences.",
+        "I can explain why marginal summaries alone do not recover paired covariance or uncertainty."
+      ],
+      "related": [
+        "experimental-unit-cell-reading-hierarchy",
+        "same-center-different-data-spread"
+      ],
+      "tags": [
+        "Biostatistics",
+        "Paired data",
+        "Standard error",
+        "Covariance"
+      ],
+      "minutes": 9,
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "splanchnic-flow-and-cardiac-output-share",
+      "subject": "physiology",
+      "title": "Exercise circulation: compare regional flow and its share of cardiac output",
+      "summary": "Calculate splanchnic flow as a share of cardiac output and explain how regional resistance and venous capacitance matter during exercise.",
+      "source": "guide-cardio-r61-regional-flow",
+      "section": "Part II §2.11, skeletal muscle, exercise and splanchnic circulation.",
+      "objectives": [
+        "Calculate an organ bed's percentage of cardiac output and distinguish it from its absolute flow.",
+        "Explain how changes in regional vascular resistance redistribute flow during dynamic exercise.",
+        "Distinguish arteriolar constriction from a change in venous capacitance."
+      ],
+      "prerequisites": [
+        "cardiac-output"
+      ],
+      "steps": [
+        {
+          "title": "Start with two different quantities",
+          "body": "Cardiac output is the volume the heart pumps per minute. A regional flow uses the same units, litres per minute. Divide regional flow by cardiac output and multiply by 100 to find its percentage of the total. Since the total can change with exercise, the percentage can change even when regional flow stays the same. Here the splanchnic bed means the circulation serving the digestive organs and their associated abdominal organs, including the liver, pancreas and spleen."
+        },
+        {
+          "title": "Track the numerator and the denominator",
+          "body": "In this fictional comparison, cardiac output rises from 6 to 15 L/min. Splanchnic flow falls from 1.5 to 1.2 L/min. Its share is 1.5 ÷ 6 = 25% at rest and 1.2 ÷ 15 = 8% during exercise. Its absolute flow falls by 0.3 L/min, or 20% of its resting value. The share drops by 17 percentage points. Check the denominator before interpreting the 8%: it is 8% of exercise cardiac output."
+        },
+        {
+          "title": "Explain the redistribution",
+          "body": "Regional flow depends on the pressure difference across a bed and its resistance. Local vasodilation in active muscle makes that bed better able to receive flow. Increased sympathetic arteriolar tone can increase resistance in the splanchnic bed. Both can occur while total cardiac output rises. Constriction of capacitance veins has a related but distinct effect: it reduces the volume held at a given pressure and can shift blood centrally. Regional flow and venous blood volume are different quantities."
+        },
+        {
+          "title": "Read real measurements in context",
+          "body": "Human exercise studies have estimated splanchnic flow from hepatic dye clearance or measured flow in individual arteries. These measurements describe different vascular territories. Exercise intensity, feeding and the artery measured can change the observed response. The values above are teaching numbers and should not be read as universal reference values or taken as individual advice."
+        }
+      ],
+      "workedExample": {
+        "title": "Separate percentage points from a percentage change in flow",
+        "prompt": "Fictional cardiac output rises from 6 to 15 L/min. Splanchnic flow falls from 1.5 to 1.2 L/min. Compare the share of output and the change in absolute flow.",
+        "solution": [
+          "At rest, 1.5 ÷ 6 gives 25% of cardiac output.",
+          "During exercise, 1.2 ÷ 15 gives 8%, a decrease of 17 percentage points.",
+          "Absolute flow falls by 0.3 L/min. Relative to the initial 1.5 L/min this is a 20% decrease."
+        ]
+      },
+      "question": {
+        "prompt": "In a second fictional example, cardiac output rises from 6 to 12 L/min and splanchnic flow remains 1.2 L/min. What happened to splanchnic flow and its share?",
+        "answer": 0,
+        "options": [
+          {
+            "text": "Splanchnic flow stayed at 1.2 L/min and its share fell from 20% to 10%.",
+            "reason": "The flow is unchanged. The total doubled, so the same flow makes up half the former share: 1.2 ÷ 6 versus 1.2 ÷ 12."
+          },
+          {
+            "text": "Splanchnic flow halved and its share fell from 20% to 10%.",
+            "reason": "The share halved because the denominator doubled. The supplied absolute flow stayed at 1.2 L/min."
+          },
+          {
+            "text": "Splanchnic flow and its share both stayed the same.",
+            "reason": "Only the numerator stayed the same. The larger total makes that numerator a smaller percentage."
+          }
+        ]
+      },
+      "recall": {
+        "prompt": "How can an exercising muscle receive more blood while splanchnic flow falls?",
+        "answer": "Total cardiac output can rise while local vasodilation reduces resistance in active muscle and sympathetic constriction increases resistance in the splanchnic bed. Different regional resistances allow different changes in flow."
+      },
+      "summaryChecklist": [
+        "I can calculate an organ bed's percentage of cardiac output and distinguish it from its absolute flow.",
+        "I can explain how changes in regional vascular resistance redistribute flow during dynamic exercise.",
+        "I can distinguish arteriolar constriction from a change in venous capacitance."
+      ],
+      "related": [
+        "biophysics-fluid-flow",
+        "respiratory-exercise-adaptation"
+      ],
+      "tags": [
+        "Physiology",
+        "Cardiovascular physiology",
+        "Exercise",
+        "Splanchnic circulation",
+        "Cardiac output"
+      ],
+      "minutes": 9,
+      "updatedAt": "2026-11-15"
+    },
+    {
       "id": "thoracic-cage-landmarks",
       "subject": "anatomy",
       "title": "Thoracic cage and landmarks",

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-15",
   "parts": [
     {
       "id": "physiology-membrane-foundations",
@@ -532,7 +532,8 @@
         "cardiac-output",
         "lymph-and-fluid-exchange",
         "venous-muscle-pump-direction",
-        "baroreflex"
+        "baroreflex",
+        "splanchnic-flow-and-cardiac-output-share"
       ],
       "basis": "Divided final printable guide, Part 2.",
       "coverage": "Selected released lessons cover part of the source guide. Open the Full Course for the chapter map and coverage gaps.",
@@ -974,10 +975,12 @@
       "subject": "biostatistics",
       "title": "Study design and denominators",
       "lessonIds": [
-        "cohort-case-control-denominators"
+        "cohort-case-control-denominators",
+        "experimental-unit-cell-reading-hierarchy",
+        "paired-differences-marginals-covariance"
       ],
-      "basis": "Original fictional population tables and source-checked explanations.",
-      "coverage": "One introduction to cohort and cumulative case-control denominators; biostatistics revision route is not currently available.",
+      "basis": "Original fictional examples with linked methodological references.",
+      "coverage": "Three introductory lessons cover study denominators, experimental units and paired differences. The Biostatistics revision route is not currently available.",
       "practiceHref": null,
       "number": "02"
     }

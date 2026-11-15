@@ -19,7 +19,7 @@ for (const id of ["renal-histology", "respiratory-histology"] as const) {
     await expect(page.locator("#system-relationships-title")).toBeInViewport();
     await page.screenshot({path:testInfo.outputPath(`${id}-route-viewport.png`)});
     await page.goto("/study/histology/revision");await page.getByRole("button",{name:"Clear selection",exact:true}).click();
-    const partTitle=id==="renal-histology"?"10. Urinary System Kidney Nephron Ureter and Bladder":"07. Respiratory System";
+    const partTitle=id==="renal-histology"?"10. Urinary system":"07. Respiratory system";
     await page.getByRole("checkbox",{name:partTitle,exact:true}).check();
     await expect(page.locator(".revision-lesson")).toHaveCount(1);
     await expect(page.locator(".revision-lesson")).toContainText(lesson.steps[10].title);

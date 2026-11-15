@@ -58,7 +58,7 @@
     {
       "id": "biostatistics",
       "title": "Biostatistics",
-      "description": "Four introductory lessons on histograms, centre, spread and uncertainty of a mean, with worked fictional examples and explained questions. This is a growing collection, not a complete statistics course.",
+      "description": "Work through histograms, centre, spread, uncertainty and study design. Use fictional examples to compare denominators, experimental units and paired measurements.",
       "learningSubject": null
     },
     {
@@ -3024,12 +3024,14 @@
     {
       "id": "biostatistics-study-design",
       "title": "Study design and denominators",
-      "description": "Distinguish complete population denominators from selected case-control samples.",
+      "description": "Identify denominators, count independent experimental units and analyse design-defined paired changes.",
       "subject": "biostatistics",
       "parentId": null,
       "kind": "topic",
       "resources": [
-        "cohort-case-control-denominators"
+        "cohort-case-control-denominators",
+        "experimental-unit-cell-reading-hierarchy",
+        "paired-differences-marginals-covariance"
       ]
     },
     {
@@ -3152,6 +3154,17 @@
       "resources": [
         "retinal-structure-light-signal-direction",
         "vestibular-sensors-rotation-translation"
+      ]
+    },
+    {
+      "id": "topic-regional-exercise-flow",
+      "title": "Regional blood flow and exercise",
+      "subject": "physiology",
+      "description": "Distinguish regional flow from its share of cardiac output and explain redistribution during exercise.",
+      "parentId": "physiology-cardiovascular",
+      "kind": "topic",
+      "resources": [
+        "splanchnic-flow-and-cardiac-output-share"
       ]
     }
   ]

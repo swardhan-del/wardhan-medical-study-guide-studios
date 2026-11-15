@@ -72,7 +72,7 @@ test('reproductive: new concept search reaches the existing route once',async({p
 
 test('reproductive: printable label and expanded teaching stay together',async({page})=>{
   await page.goto('/study/histology/revision');await page.getByRole('button',{name:'Clear selection',exact:true}).click();
-  await page.getByRole('checkbox',{name:/Reproductive histology: testis, ovary and uterus/}).check();
+  await page.getByRole('checkbox',{name:/Male reproductive system/}).check();
   const printable=page.locator('.revision-lesson');await expect(printable).toHaveCount(1);
   await expect(printable).toContainText(lesson.title);await expect(printable).toContainText('Trace the relationships around an antral oocyte');
   await expect(printable).toContainText('Three planes through one stipulated object');

@@ -18,7 +18,7 @@ test("GI first visit: subject search reaches the expanded lesson and printable P
   await page.getByRole("link", { name: "Compare villus and crypt", exact: true }).click();
   await expect(page.locator("#gi-profile-explorer-title")).toBeInViewport();
   await page.goto("/study/histology/revision"); await page.getByRole("button", { name: "Clear selection", exact: true }).click();
-  await page.getByRole("checkbox", { name: "09. Stomach Intestines Liver Gallbladder and Pancreas", exact: true }).check();
+  await page.getByRole("checkbox", { name: "09. Stomach, intestines, liver, gallbladder and pancreas", exact: true }).check();
   await expect(page.locator(".revision-lesson")).toHaveCount(2);
   await expect(page.locator(".revision-lesson").filter({ hasText: lesson.title })).toContainText(lesson.steps[16].title);
   await page.goto("/library?subject=histology"); await page.getByRole("searchbox").fill("no-gi-depth-result-591823");

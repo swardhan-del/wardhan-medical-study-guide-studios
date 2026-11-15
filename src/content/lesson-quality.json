@@ -6930,6 +6930,195 @@
         "Fictional teaching example with specified loading assumptions. Volume readings alone do not identify the mechanism.",
         "Independent clinical peer review is outstanding."
       ]
+    },
+    {
+      "lessonId": "experimental-unit-cell-reading-hierarchy",
+      "title": "Experimental units: count dishes, cells and readings",
+      "subject": "biostatistics",
+      "topic": "Study design and independence",
+      "slug": "experimental-unit-cell-reading-hierarchy",
+      "learnerLevel": "Introductory medical statistics",
+      "objectives": [
+        "Identify the intervention-allocation level before reporting sample size.",
+        "Count experimental units, observed cells and repeated readings separately in a synthetic hierarchy.",
+        "Explain why an analysis must represent dependence instead of equating data rows with independently treated units."
+      ],
+      "sources": [
+        {
+          "title": "Lazic et al. (2018): experimental and observational units — PMID 29617358",
+          "url": "https://doi.org/10.1371/journal.pbio.2005282",
+          "publisherOrAuthor": "Stanley E. Lazic and colleagues",
+          "accessedAt": "2026-11-15",
+          "sourceType": "research"
+        },
+        {
+          "title": "Lazic (2010): pseudoreplication and dependent observations — PMID 20074371",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20074371/",
+          "publisherOrAuthor": "Stanley E. Lazic",
+          "accessedAt": "2026-11-15",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original HTML comparison table with caption, observation task and equivalent text. All values are fictional.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-15",
+      "nextReviewAt": "2027-05-15",
+      "limitations": [
+        "Fictional examples. Independent subject and clinical review is outstanding.",
+        "The unit of allocation and dependence reflect the stipulated design."
+      ],
+      "reviewEvidenceIds": [
+        "experimental-unit-cell-reading-hierarchy-editorial-20261115",
+        "experimental-unit-cell-reading-hierarchy-visual-20261115",
+        "experimental-unit-cell-reading-hierarchy-readability-20261115",
+        "experimental-unit-cell-reading-hierarchy-accessibility-20261115"
+      ],
+      "links": {
+        "prerequisite": [
+          "cohort-case-control-denominators"
+        ],
+        "related": [
+          "standard-deviation-standard-error",
+          "paired-differences-marginals-covariance"
+        ],
+        "compare": [],
+        "next": [
+          "paired-differences-marginals-covariance"
+        ]
+      }
+    },
+    {
+      "lessonId": "paired-differences-marginals-covariance",
+      "title": "Paired differences: why the same columns can have different uncertainty",
+      "subject": "biostatistics",
+      "topic": "Paired measurements and uncertainty",
+      "slug": "paired-differences-marginals-covariance",
+      "learnerLevel": "Introductory medical statistics",
+      "objectives": [
+        "Preserve a design-defined pair identifier and a stated difference direction.",
+        "Compute the mean and sample spread of within-pair differences.",
+        "Explain why marginal summaries alone do not recover paired covariance or uncertainty."
+      ],
+      "sources": [
+        {
+          "title": "NIST/SEMATECH: analysis of paired observations — official methodology documentation",
+          "url": "https://www.itl.nist.gov/div898/handbook/prc/section3/prc311.htm",
+          "publisherOrAuthor": "NIST/SEMATECH",
+          "accessedAt": "2026-11-15",
+          "sourceType": "educational-reference"
+        },
+        {
+          "title": "Minitab: paired t methods and formulas — official software documentation",
+          "url": "https://support.minitab.com/en-us/minitab/help-and-how-to/statistics/basic-statistics/how-to/paired-t/methods-and-formulas/methods-and-formulas/",
+          "publisherOrAuthor": "Minitab",
+          "accessedAt": "2026-11-15",
+          "sourceType": "educational-reference"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original HTML comparison table with caption, observation task and equivalent text. All values are fictional.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-15",
+      "nextReviewAt": "2027-05-15",
+      "limitations": [
+        "Fictional examples. Independent subject and clinical review is outstanding.",
+        "The standard error estimate assumes independent pairs with a common distribution and finite difference variance."
+      ],
+      "reviewEvidenceIds": [
+        "paired-differences-marginals-covariance-editorial-20261115",
+        "paired-differences-marginals-covariance-visual-20261115",
+        "paired-differences-marginals-covariance-readability-20261115",
+        "paired-differences-marginals-covariance-accessibility-20261115"
+      ],
+      "links": {
+        "prerequisite": [
+          "standard-deviation-standard-error"
+        ],
+        "related": [
+          "experimental-unit-cell-reading-hierarchy",
+          "same-center-different-data-spread"
+        ],
+        "compare": [],
+        "next": []
+      }
+    },
+    {
+      "lessonId": "splanchnic-flow-and-cardiac-output-share",
+      "title": "Exercise circulation: compare regional flow and its share of cardiac output",
+      "subject": "physiology",
+      "topic": "Cardiovascular physiology",
+      "slug": "splanchnic-flow-and-cardiac-output-share",
+      "learnerLevel": "Undergraduate introductory physiology",
+      "objectives": [
+        "Calculate an organ bed's percentage of cardiac output and distinguish it from its absolute flow.",
+        "Explain how changes in regional vascular resistance redistribute flow during dynamic exercise.",
+        "Distinguish arteriolar constriction from a change in venous capacitance."
+      ],
+      "sources": [
+        {
+          "title": "Medical Physiology — Cardiovascular Physiology, Revision 61",
+          "publisherOrAuthor": "Wardhan Medical Study Guide Studios",
+          "citation": "Part II §2.11, skeletal muscle, exercise and splanchnic circulation.",
+          "accessedAt": "2026-11-15",
+          "sourceType": "authored-adaptation"
+        },
+        {
+          "title": "Rowell and colleagues. Splanchnic metabolism in exercising man.",
+          "url": "https://doi.org/10.1152/jappl.1965.20.5.1032",
+          "publisherOrAuthor": "Loring B. Rowell and colleagues",
+          "accessedAt": "2026-11-15",
+          "sourceType": "research"
+        },
+        {
+          "title": "Effects of glucose ingestion on blood flow in the small intestine and exercising limbs during endurance exercise.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41926638/",
+          "publisherOrAuthor": "Journal of Applied Physiology",
+          "accessedAt": "2026-11-15",
+          "sourceType": "research"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "approved-and-published",
+      "visualRequired": true,
+      "visualNotes": "Original HTML comparison table with caption, observation task and equivalent text. All values are fictional.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "checked",
+      "readabilityStatus": "checked",
+      "indexStatus": "indexable",
+      "lastReviewedAt": "2026-11-15",
+      "nextReviewAt": "2027-05-15",
+      "limitations": [
+        "Fictional examples. Independent subject and clinical review is outstanding.",
+        "Introductory coverage of a single cardiovascular chapter. Exercise data vary with conditions and vascular territory."
+      ],
+      "reviewEvidenceIds": [
+        "splanchnic-flow-and-cardiac-output-share-editorial-20261115",
+        "splanchnic-flow-and-cardiac-output-share-visual-20261115",
+        "splanchnic-flow-and-cardiac-output-share-readability-20261115",
+        "splanchnic-flow-and-cardiac-output-share-accessibility-20261115"
+      ],
+      "links": {
+        "prerequisite": [
+          "cardiac-output"
+        ],
+        "related": [
+          "biophysics-fluid-flow",
+          "respiratory-exercise-adaptation"
+        ],
+        "compare": [],
+        "next": []
+      }
     }
   ]
 }
