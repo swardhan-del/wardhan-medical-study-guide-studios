@@ -151,7 +151,7 @@ test('lung-observation: print keeps one Volume I chapter with questions, answers
   for (const oral of lesson.oralExamination!) await expect(answer).toContainText(oral.answer);
   await page.goto('/study/histology/revision');
   await page.getByRole('button', { name: 'Clear selection', exact: true }).click();
-  await page.getByRole('checkbox', { name: '07. Respiratory System', exact: true }).check();
+  await page.getByRole('checkbox', { name: '07. Respiratory system', exact: true }).check();
   await expect(page.locator('.revision-lesson')).toHaveCount(1);
   await expect(page.locator('.revision-lesson').getByRole('heading', { level: 3, name: lesson.title, exact: true })).toHaveCount(0);
 });

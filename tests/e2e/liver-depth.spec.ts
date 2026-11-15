@@ -22,7 +22,7 @@ test("Liver first visit: search and Part 09 reach the expanded existing lesson",
   await page.getByRole("link", { name: "Trace a route", exact: true }).click();
   await expect(page.locator("#system-relationships-title")).toBeInViewport();
   await page.goto("/study/histology/revision"); await page.getByRole("button", { name: "Clear selection", exact: true }).click();
-  await page.getByRole("checkbox", { name: "09. Stomach Intestines Liver Gallbladder and Pancreas", exact: true }).check();
+  await page.getByRole("checkbox", { name: "09. Stomach, intestines, liver, gallbladder and pancreas", exact: true }).check();
   await expect(page.locator(".revision-lesson")).toHaveCount(2);
   await expect(page.locator(".revision-lesson").filter({ hasText: lesson.title })).toContainText(lesson.steps[15].title);
 });

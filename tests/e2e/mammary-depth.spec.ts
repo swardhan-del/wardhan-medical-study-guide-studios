@@ -146,7 +146,7 @@ test('Mammary depth: discover, save, return and print in its single course home'
   await page.getByRole('navigation', { name: 'Breadcrumb' }).locator('a[href="/subjects/histology"]').click();
   await expect(page).toHaveURL(/\/subjects\/histology$/);
   await page.goto('/study/histology/revision'); await page.getByRole('button', { name: 'Clear selection', exact: true }).click();
-  await page.getByRole('checkbox', { name: /Female Reproductive System Placenta and Mammary Gland/ }).check();
+  await page.getByRole('checkbox', { name: /Female reproductive system, placenta and mammary gland/ }).check();
   const part = guides.parts.find(item => item.id === 'histology-part-12')!;
   expect(part.lessonIds).toContain('mammary-histology-and-development');
   await expect(page.locator('.revision-lesson')).toHaveCount(part.lessonIds.length);

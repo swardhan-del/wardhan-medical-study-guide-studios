@@ -63,7 +63,8 @@
         "cardiac-output",
         "baroreflex",
         "ecg-time-and-vectors",
-        "venous-muscle-pump-direction"
+        "venous-muscle-pump-direction",
+        "splanchnic-flow-and-cardiac-output-share"
       ]
     },
     {
@@ -500,7 +501,9 @@
       "title": "Study design and denominators",
       "subject": "biostatistics",
       "lessonIds": [
-        "cohort-case-control-denominators"
+        "cohort-case-control-denominators",
+        "experimental-unit-cell-reading-hierarchy",
+        "paired-differences-marginals-covariance"
       ]
     }
   ]

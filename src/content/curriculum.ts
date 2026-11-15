@@ -48,7 +48,7 @@ const cardiovascularChapters: readonly CourseChapter[] = [
   { id: "venous-circulation", title: "Venous circulation", lessonIds: ["venous-muscle-pump-direction"] },
   { id: "local-circulatory-control", title: "Local control of circulation", lessonIds: [] },
   { id: "reflex-circulatory-control", title: "Reflex and neurohormonal control of circulation", lessonIds: ["baroreflex"] },
-  { id: "exercise-and-splanchnic-circulation", title: "Skeletal muscle, exercise and splanchnic circulation", lessonIds: [] },
+  { id: "exercise-and-splanchnic-circulation", title: "Skeletal muscle, exercise and splanchnic circulation", lessonIds: ["splanchnic-flow-and-cardiac-output-share"] },
   { id: "coronary-and-cerebral-circulation", title: "Coronary and cerebral circulation, cerebrospinal fluid and the blood–brain barrier", lessonIds: [], relatedLessonIds: ["coronary-circulation", "brain-and-csf-barriers"] },
   { id: "renal-circulation", title: "Renal circulation and autoregulation", lessonIds: [], relatedLessonIds: ["renal-afferent-efferent"] },
   { id: "shock-and-volume-loss", title: "Circulatory shock and compensation for volume loss", lessonIds: [] },

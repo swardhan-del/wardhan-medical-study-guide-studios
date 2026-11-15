@@ -101,7 +101,7 @@ for (const lesson of lessons) {
 
 test("Part 03 revision uses the current source revision and both expanded lessons", async ({ page }) => {
   await page.goto("/study/histology/revision"); await page.getByRole("button", { name: "Clear selection", exact: true }).click();
-  await page.getByRole("checkbox", { name: "03. Connective Tissue Adipose Cartilage and Bone", exact: true }).check();
+  await page.getByRole("checkbox", { name: "03. Connective tissue, adipose, cartilage and bone", exact: true }).check();
   await expect(page.locator(".revision-lesson")).toHaveCount(2);
   for (const lesson of lessons) {
     const section=page.locator(".revision-lesson").filter({hasText:lesson.title});

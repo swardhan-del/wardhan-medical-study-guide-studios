@@ -54,7 +54,7 @@ for(const [index,id] of ids.entries()) {
 test('auditory: nervous-system printable notes include both additions once',async({page})=>{
   await page.goto('/study/physiology/revision');
   await page.getByRole('button',{name:'Clear selection',exact:true}).click();
-  await page.getByRole('checkbox',{name:/Nervous system and special senses/}).check();
+  await page.getByRole('checkbox',{name:/Nervous-system integration and special senses/}).check();
   await expect(page.locator('.revision-lesson')).toHaveCount(4);
   for(const id of ids)await expect(page.locator('.revision-lesson').filter({hasText:data.lessons.find(l=>l.id===id)!.title})).toHaveCount(1);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);

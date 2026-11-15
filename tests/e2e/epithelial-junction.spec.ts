@@ -104,7 +104,7 @@ test("Junction map: keyboard selection separates matrix attachment from cell com
 
 test("Part 02 revision selects both expanded lessons with current coverage", async ({ page }) => {
   await page.goto("/study/histology/revision"); await page.getByRole("button", { name: "Clear selection", exact: true }).click();
-  await page.getByRole("checkbox", { name: "02. Epithelial Tissues Glands and Cell Junctions", exact: true }).check();
+  await page.getByRole("checkbox", { name: "02. Epithelial tissues, glands and cell junctions", exact: true }).check();
   await expect(page.locator(".revision-lesson")).toHaveCount(2);
   for (const id of ["epithelia", "cell-junctions"]) {
     const lesson = teaching.lessons.find(l => l.id === id)!;

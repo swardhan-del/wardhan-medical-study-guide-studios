@@ -2173,6 +2173,114 @@
       "referenceIds": [
         "respiratory-exercise-adaptation"
       ]
+    },
+    {
+      "id": "experimental-unit-counting-hierarchy",
+      "title": "Follow the allocation and measurement hierarchy",
+      "headers": [
+        "Level",
+        "Per condition",
+        "Across both conditions"
+      ],
+      "rows": [
+        [
+          "Independently assigned dishes",
+          "3",
+          "6"
+        ],
+        [
+          "Observed cells",
+          "12",
+          "24"
+        ],
+        [
+          "Instrument readings",
+          "24",
+          "48"
+        ]
+      ],
+      "alt": "Each condition has three dishes, 12 sampled cells and 24 readings. Across both conditions these counts are six, 24 and 48.",
+      "caption": "Each dish contributes four cells, and each cell contributes two readings. The treatment is assigned at the dish level.",
+      "observe": "If you measure each cell twice as often, predict which row changes and which counts stay the same.",
+      "kind": "comparison",
+      "lessonIds": [
+        "experimental-unit-cell-reading-hierarchy"
+      ],
+      "referenceIds": [
+        "experimental-unit-cell-reading-hierarchy"
+      ]
+    },
+    {
+      "id": "paired-design-difference-spread",
+      "title": "Compare the changes in two fictional paired designs",
+      "headers": [
+        "Quantity",
+        "Design A",
+        "Design B"
+      ],
+      "rows": [
+        [
+          "After minus before",
+          "2, 3, 1, 4",
+          "34, 11, −7, −28"
+        ],
+        [
+          "Mean change",
+          "2.5 units",
+          "2.5 units"
+        ],
+        [
+          "Sample standard deviation of change",
+          "1.29 units",
+          "26.36 units"
+        ]
+      ],
+      "alt": "Both designs have a mean change of 2.5 units. In A, changes range from 1 to 4 and the sample standard deviation is 1.29. In B, they range from minus 28 to 34 and the standard deviation is 26.36.",
+      "caption": "Each column of original observations contains the same values in both designs. The within-pair matches differ between the two fictional designs.",
+      "observe": "Which design has more variable changes? Point to the row that supports your answer.",
+      "kind": "comparison",
+      "lessonIds": [
+        "paired-differences-marginals-covariance"
+      ],
+      "referenceIds": [
+        "paired-differences-marginals-covariance"
+      ]
+    },
+    {
+      "id": "regional-flow-and-output-share",
+      "title": "Compare flow and share at rest and during exercise",
+      "headers": [
+        "Quantity",
+        "Rest",
+        "Exercise"
+      ],
+      "rows": [
+        [
+          "Total cardiac output",
+          "6 L/min",
+          "15 L/min"
+        ],
+        [
+          "Splanchnic flow",
+          "1.5 L/min",
+          "1.2 L/min"
+        ],
+        [
+          "Splanchnic share",
+          "25%",
+          "8%"
+        ]
+      ],
+      "alt": "Total cardiac output rises from six to 15 litres per minute. Flow to the splanchnic bed falls from 1.5 to 1.2 litres per minute. Its share changes from 25 to eight percent.",
+      "caption": "These are fictional values. The share depends on both the regional flow and total output.",
+      "observe": "Identify which numerator and denominator you need to compute the exercise share. Explain why the change in share differs from the change in litres per minute.",
+      "kind": "comparison",
+      "lessonIds": [
+        "splanchnic-flow-and-cardiac-output-share"
+      ],
+      "referenceIds": [
+        "splanchnic-flow-and-cardiac-output-share"
+      ]
     }
   ]
 }

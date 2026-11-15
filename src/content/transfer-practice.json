@@ -10850,6 +10850,75 @@
         }
       ],
       "answer": 1
+    },
+    {
+      "id": "experimental-unit-cell-reading-hierarchy-application-1",
+      "topic": "experimental-unit-cell-reading-hierarchy",
+      "subject": "biostatistics",
+      "title": "Experimental units: count dishes, cells and readings",
+      "href": "/library/experimental-unit-cell-reading-hierarchy#apply-the-concept",
+      "prompt": "A fictional group has four independently assigned dishes. Each contributes three cells, and each cell produces two readings. If the lab repeats every reading once, what changes?",
+      "options": [
+        {
+          "text": "The group has 4 assigned units, 12 observed cells and 48 readings.",
+          "explanation": "Only the reading count doubles from 24 to 48. The treatment allocations and cells have not changed."
+        },
+        {
+          "text": "The group now has 8 assigned units, 12 observed cells and 48 readings.",
+          "explanation": "Remeasurement has not created any new dish or treatment allocation."
+        },
+        {
+          "text": "The group now has 48 independent treatment units.",
+          "explanation": "The repeated observations are still nested in the same cells and dishes."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "paired-differences-marginals-covariance-application-1",
+      "topic": "paired-differences-marginals-covariance",
+      "subject": "biostatistics",
+      "title": "Paired differences: why the same columns can have different uncertainty",
+      "href": "/library/paired-differences-marginals-covariance#apply-the-concept",
+      "prompt": "The same subjects are measured twice. In the shared dataset, the pair identifiers have been removed, and only the separate columns and their means and standard deviations remain. Which result can still be recovered?",
+      "options": [
+        {
+          "text": "The difference between the two means, but not the original paired-difference standard deviation.",
+          "explanation": "Subtracting the marginal means gives the mean change because both columns represent all the same subjects. The pairing is needed to compute the spread of individual changes."
+        },
+        {
+          "text": "Both quantities, because the two columns still have equal lengths.",
+          "explanation": "Equal length cannot reconstruct the original subject matches or their covariance."
+        },
+        {
+          "text": "Neither quantity, because any comparison needs a paired t-test.",
+          "explanation": "The calculation of a mean difference does not require a hypothesis test."
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "id": "splanchnic-flow-and-cardiac-output-share-application-1",
+      "topic": "splanchnic-flow-and-cardiac-output-share",
+      "subject": "physiology",
+      "title": "Exercise circulation: compare regional flow and its share of cardiac output",
+      "href": "/library/splanchnic-flow-and-cardiac-output-share#apply-the-concept",
+      "prompt": "In a simplified model, the measured pressure difference across the splanchnic bed stays the same while its absolute flow falls. What follows from these two measurements?",
+      "options": [
+        {
+          "text": "The effective resistance across the bed increased.",
+          "explanation": "At fixed pressure difference, flow falls when resistance rises."
+        },
+        {
+          "text": "The bed’s share decreased, which proves unchanged resistance.",
+          "explanation": "A share depends on total cardiac output. The absolute flow and the fixed pressure difference determine the direction of resistance change in this model."
+        },
+        {
+          "text": "The volume stored in the veins fell by the same percentage as flow.",
+          "explanation": "Venous storage and flow are different quantities. These measurements alone do not quantify storage."
+        }
+      ],
+      "answer": 0
     }
   ]
 }

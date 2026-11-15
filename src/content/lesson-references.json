@@ -3249,5 +3249,38 @@
         "url": "https://doi.org/10.1152/advan.00067.2023"
       }
     ]
+  },
+  "experimental-unit-cell-reading-hierarchy": {
+    "title": "Lazic et al. (2018): experimental and observational units — PMID 29617358",
+    "url": "https://doi.org/10.1371/journal.pbio.2005282",
+    "checkedAt": "2026-11-15",
+    "supportingReferences": [
+      {
+        "title": "Lazic (2010): pseudoreplication and dependent observations — PMID 20074371",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20074371/"
+      }
+    ]
+  },
+  "paired-differences-marginals-covariance": {
+    "title": "NIST/SEMATECH: analysis of paired observations — official methodology documentation",
+    "url": "https://www.itl.nist.gov/div898/handbook/prc/section3/prc311.htm",
+    "checkedAt": "2026-11-15",
+    "supportingReferences": [
+      {
+        "title": "Minitab: paired t methods and formulas — official software documentation",
+        "url": "https://support.minitab.com/en-us/minitab/help-and-how-to/statistics/basic-statistics/how-to/paired-t/methods-and-formulas/methods-and-formulas/"
+      }
+    ]
+  },
+  "splanchnic-flow-and-cardiac-output-share": {
+    "title": "Rowell and colleagues. Splanchnic metabolism in exercising man.",
+    "url": "https://doi.org/10.1152/jappl.1965.20.5.1032",
+    "checkedAt": "2026-11-15",
+    "supportingReferences": [
+      {
+        "title": "Effects of glucose ingestion on blood flow in the small intestine and exercising limbs during endurance exercise.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41926638/"
+      }
+    ]
   }
 }

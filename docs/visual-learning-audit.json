@@ -3695,6 +3695,51 @@
       ],
       "figureIds": [],
       "rationale": "The original comparison or flow makes the relationship from the worked example visible and provides a text equivalent."
+    },
+    {
+      "id": "experimental-unit-cell-reading-hierarchy",
+      "route": "/library/experimental-unit-cell-reading-hierarchy",
+      "title": "Experimental units: count dishes, cells and readings",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "experimental-unit-counting-hierarchy"
+      ],
+      "figureIds": [],
+      "rationale": "The comparison shows which counts change when observations are nested under the same assigned unit."
+    },
+    {
+      "id": "paired-differences-marginals-covariance",
+      "route": "/library/paired-differences-marginals-covariance",
+      "title": "Paired differences: why the same columns can have different uncertainty",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "paired-design-difference-spread"
+      ],
+      "figureIds": [],
+      "rationale": "The comparison shows the same mean change beside two different distributions of within-pair differences."
+    },
+    {
+      "id": "splanchnic-flow-and-cardiac-output-share",
+      "route": "/library/splanchnic-flow-and-cardiac-output-share",
+      "title": "Exercise circulation: compare regional flow and its share of cardiac output",
+      "kind": "Study lesson",
+      "action": "new-comparison-or-flow",
+      "components": [
+        "LessonVisuals"
+      ],
+      "visualIds": [
+        "regional-flow-and-output-share"
+      ],
+      "figureIds": [],
+      "rationale": "The comparison separates flow in litres per minute from the percentage share of total cardiac output."
     }
   ],
   "supplementalVisualStudioReview": {

@@ -3770,6 +3770,24 @@
     },
     {
       "status": "public",
+      "updatedAt": "2026-11-15",
+      "bytes": 0,
+      "id": "experimental-unit-cell-reading-hierarchy",
+      "title": "Experimental units: count dishes, cells and readings",
+      "subject": "biostatistics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Identify the unit that receives an intervention, distinguish it from subsamples and repeated readings, and explain what each count can tell you.",
+      "tags": [
+        "Biostatistics",
+        "Experimental unit",
+        "Pseudoreplication",
+        "Study design"
+      ],
+      "minutes": 9
+    },
+    {
+      "status": "public",
       "updatedAt": "2026-11-03",
       "bytes": 0,
       "id": "histogram-bin-counts-example",
@@ -3801,6 +3819,24 @@
         "Mean and median"
       ],
       "minutes": 12
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-15",
+      "bytes": 0,
+      "id": "paired-differences-marginals-covariance",
+      "title": "Paired differences: why the same columns can have different uncertainty",
+      "subject": "biostatistics",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Calculate differences from real pair identities, then compare two fictional designs with equal marginal summaries and different spread of changes.",
+      "tags": [
+        "Biostatistics",
+        "Paired data",
+        "Standard error",
+        "Covariance"
+      ],
+      "minutes": 9
     },
     {
       "status": "public",
@@ -5132,6 +5168,25 @@
         "guided revision"
       ],
       "minutes": 7
+    },
+    {
+      "status": "public",
+      "updatedAt": "2026-11-15",
+      "bytes": 0,
+      "id": "splanchnic-flow-and-cardiac-output-share",
+      "title": "Exercise circulation: compare regional flow and its share of cardiac output",
+      "subject": "physiology",
+      "kind": "Study lesson",
+      "format": "WEB",
+      "summary": "Calculate splanchnic flow as a share of cardiac output and explain how regional resistance and venous capacitance matter during exercise.",
+      "tags": [
+        "Physiology",
+        "Cardiovascular physiology",
+        "Exercise",
+        "Splanchnic circulation",
+        "Cardiac output"
+      ],
+      "minutes": 9
     },
     {
       "status": "public",
