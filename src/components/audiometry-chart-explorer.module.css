@@ -16,7 +16,8 @@
 .chart[data-ear="left"] { color: #153f7a; }
 .limitArrow { stroke: currentColor; stroke-width: 2.5; fill: none; }
 .caption { color: #344a58; }
-.panel table { width: 100%; border-collapse: collapse; }
+/* Keep complete words readable inside the table's own horizontal scroll region. */
+.panel table { width: 100%; border-collapse: collapse; overflow-wrap: normal; }
 .panel caption { text-align: left; font-weight: 700; padding-bottom: .5rem; }
 .panel th, .panel td { border: 1px solid #aab8c0; padding: .55rem; text-align: left; vertical-align: top; }
 .panel tr[data-selected="true"] { background: #e7f0f4; }
