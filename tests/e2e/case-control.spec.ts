@@ -87,10 +87,13 @@ test("case-control: keyboard, mobile enlarged text, sources, reading list and bo
   await page.goto('/library?subject=biostatistics');await page.getByRole('searchbox').fill('no-case-control-result-987654');await expect(page.locator('.catalog-empty')).toBeVisible();await page.locator('.catalog-empty').getByRole('button',{name:'Clear filters',exact:true}).click();await expect(page.locator('.resource-card:visible').first()).toBeVisible();expect(errors).toEqual([]);
 });
 
-test('case-control: no-JavaScript reading retains complete tables and explicit download limits',async({browser,baseURL})=>{
+test('case-control: no-JavaScript reading retains complete tables and the printable notes route',async({browser,baseURL})=>{
  const context=await browser.newContext({javaScriptEnabled:false,baseURL});const page=await context.newPage();await page.goto('/library/'+id);
  await expect(page.locator('.case-control-populations section')).toHaveCount(2);await expect(page.locator('.case-control-populations')).toContainText('375/500 = 0.7500');
  await expect(page.locator('.case-control-explorer')).toContainText('The slider requires JavaScript');
  await expect(page.locator('section[aria-labelledby="worked-example-heading"]')).toContainText('75/300 = 1/4');
- expect((await page.request.get('/study/biostatistics/revision')).status()).toBe(404);await context.close();
+ const revision = await page.goto('/study/biostatistics/revision');
+ expect(revision?.status()).toBe(200);
+ await expect(page.getByRole('heading', { level: 1 })).toHaveText('Biostatistics: revision notes');
+ await context.close();
 });

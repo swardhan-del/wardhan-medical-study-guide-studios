@@ -2748,6 +2748,17 @@
       "rationale": "The visual supports this specific learning task: Use the shared wall plan and regional specializations to distinguish esophagus, stomach and intestine."
     },
     {
+      "id": "spinal-cord-practical",
+      "route": "/practice/spinal-cord",
+      "title": "Spinal cord practical",
+      "kind": "Practice",
+      "action": "standardise-or-reuse",
+      "components": ["SpinalCordPractical"],
+      "visualIds": [],
+      "figureIds": [],
+      "rationale": "The released whole section and motor neuron micrographs support orientation, identification and reflex reasoning. The practice includes text descriptions, labelled landmarks and credits for both images."
+    },
+    {
       "id": "histology-detective",
       "route": "/practice/histology",
       "title": "Renal histology detective",

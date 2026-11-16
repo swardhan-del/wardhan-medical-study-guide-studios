@@ -5,6 +5,7 @@ import { WaitlistCta } from "@/components/waitlist-cta";
 import { ContinueLearning } from "@/components/continue-learning";
 import { journeyIndex } from "@/lib/lesson-journeys";
 import { QuickSearch } from "@/components/quick-search";
+import { SubjectPicker } from "@/components/subject-picker";
 import { anatomySystemsPath } from "@/content/anatomy-systems";
 import Link from "next/link";
 import { HomeStudyActivity } from "@/components/home-study-activity";
@@ -18,7 +19,7 @@ export const metadata = searchMetadata("/");
 export default function Home() {
   return (
     <div className="page-stack">
-      <div className="site-container quick-start"><QuickSearch /><nav className="quick-links" aria-label="Quick study access"><Link href="/subjects">All subjects and coverage</Link><Link href="/library">Search the library</Link><Link href="/study">Continue studying</Link><Link href="/study#saved-learning">Saved resources</Link></nav></div>
+      <div className="site-container quick-start"><QuickSearch /><SubjectPicker /></div>
       <div className="atlas-home">
         <section
           className="hero-section site-container learning-home"
@@ -40,12 +41,6 @@ export default function Home() {
           </div>
           <HomeStudyActivity />
         </section>
-      </div>
-      <div className="site-container home-subject-navigation">
-        <h2>Choose your subject</h2>
-        <nav className="home-subject-links" aria-label="Start a subject">
-          {studySubjects.map(subject => <Link key={subject.id} href={`/study/${subject.id}`}>{subject.title} →</Link>)}
-        </nav>
       </div>
       <div className="site-container"><VisualStudioInvitation /></div>
       <div className="site-container"><ContinueLearning lessons={journeyIndex} /></div>

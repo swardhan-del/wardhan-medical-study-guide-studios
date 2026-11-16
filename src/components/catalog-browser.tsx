@@ -8,7 +8,7 @@ import { subjectInterests } from "@/content/subjects";
 import type { CatalogRecord } from "@/lib/catalog-types";
 import { formatBytes, formatLabels, resourceHref } from "@/lib/catalog-types";
 import taxonomy from "@/content/library-taxonomy.json";
-import { catalogSearchText, suggestQuery, searchRank, matchesCatalogQuery } from "@/lib/catalog-filter";
+import { catalogSearchText, suggestQuery, searchRank, matchesCatalogQuery, matchesSearchText, searchTerms } from "@/lib/catalog-filter";
 import { useReadingList } from "./reading-list-provider";
 
 type Props = {
@@ -19,6 +19,7 @@ type Props = {
   initialQuery?: string;
   conceptMode?: boolean;
   conceptLinks?: ConceptLink[];
+  courseMaterialTopics?: { subject: string; title: string; href: string }[];
 };
 export function CatalogBrowser({
   records,
@@ -28,6 +29,7 @@ export function CatalogBrowser({
   initialQuery = "",
   conceptMode = false,
   conceptLinks = [],
+  courseMaterialTopics = [],
 }: Props) {
   const searchInput = useRef<HTMLInputElement>(null);
   const { data, ready: progressReady } = useLearning();
@@ -56,6 +58,9 @@ export function CatalogBrowser({
           a.title.localeCompare(b.title)
         : searchRank(b, query) - searchRank(a, query) || a.title.localeCompare(b.title),
     );
+  const courseMatches = searchTerms(query).length >= 2 && !filtered.some(record => searchRank(record, query) === 4)
+    ? courseMaterialTopics.filter(topic => (!subject || topic.subject === subject) && matchesSearchText(topic.title, query))
+    : [];
   const suggestion = query && !filtered.length ? suggestQuery(scoped.map(r => catalogSearchText(r)), query) : null;
   const conceptMatches = conceptMode && query.trim() ? conceptLessonIds(query).flatMap(id => { const record = scoped.find(r => r.id === id && r.status === "public"); const link = conceptLinks.find(l => l.id === id); return record && link ? [{ record, link }] : []; }) : [];
   const hasFilters = Boolean(query || subject || format || progress);
@@ -168,7 +173,13 @@ export function CatalogBrowser({
           </button>
         ) : null}
       </div>
-      {!savedOnly && format === "PDF" && <p className="study-notice">The PDF results list downloadable files. <Link href="/library#printable-notes">Printable revision notes for all seven subjects</Link> are also available as web pages you can print or save as PDF.</p>}
+      {!savedOnly && format === "PDF" && <p className="study-notice">The PDF results list downloadable files. <Link href="/library#printable-notes">Printable revision notes</Link> are also available as web pages you can print or save as PDF.</p>}
+      {courseMatches.length > 0 && (
+        <section className="study-notice" aria-label="Course guide topics">
+          <p>Use your course materials for these topics.</p>
+          <ul>{courseMatches.map(topic => <li key={topic.href}><Link href={topic.href}>{topic.title} in the course guide</Link></li>)}</ul>
+        </section>
+      )}
       {filtered.length ? (
         <div className="resource-grid">
           {shownRecords.map((record) => (

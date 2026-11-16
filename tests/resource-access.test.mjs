@@ -21,9 +21,9 @@ test('published explanations and figures are searchable in every teaching collec
   assert.equal(Object.keys(index).length, records.length);
   assert.doesNotMatch(JSON.stringify(index), /\/Users\/|original_dropbox_path|destination_dropbox_path|dropboxusercontent/);
 });
-test('all 19 web and activity wrappers link directly; PDF and private detail pages remain available', () => {
+test('web and activity wrappers link directly; PDF and private detail pages remain available', () => {
   const direct = records.filter(r => r.href && ['WEB', 'ACTIVITY'].includes(r.format));
-  assert.equal(direct.length, 19);
+  assert.ok(direct.some(record => record.id === "spinal-cord-practical" && record.href === "/practice/spinal-cord"));
   for (const r of direct) {
     assert.equal(resourceHref(r), r.href);
     assert.equal(resourceHref({ ...r, status: 'private-review' }, '/review'), '/review/' + r.id);

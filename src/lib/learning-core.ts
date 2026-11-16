@@ -1,3 +1,4 @@
+import { spinalCordPractical } from "../content/spinal-cord-practical.ts";
 import type { CheckpointRecord } from "./conceptual-checkpoint.ts";
 export type Attempt = {
   attempts: number;
@@ -15,6 +16,7 @@ export type LearningProgress = {
   lessons: string[];
   answers: Record<string, Attempt>;
   checkpoints: Record<string, CheckpointRecord>;
+  practicals: Record<string, { solved: number[]; at: number }>;
   drafts: Record<string, string>;
   visits: string[];
   quizzes: number;
@@ -29,6 +31,7 @@ export const emptyProgress = (): LearningProgress => ({
   lessons: [],
   answers: {},
   checkpoints: {},
+  practicals: {},
   drafts: {},
   visits: [],
   quizzes: 0,
@@ -54,6 +57,12 @@ export function parseProgress(
   try {
     const value = JSON.parse(raw);
     if (!value || ![1, 2].includes(value.version)) return clean;
+    const practical = value.practicals?.[spinalCordPractical.id];
+    if (Array.isArray(practical?.solved) && practical.solved.length <= spinalCordPractical.stationCount &&
+        practical.solved.every((station: unknown) => finiteInt(station, spinalCordPractical.stationCount - 1)) &&
+        finiteInt(practical.at, 8640000000000000)) {
+      clean.practicals[spinalCordPractical.id] = { solved: [...new Set<number>(practical.solved)], at: practical.at };
+    }
     const resume = value.resume;
     if (resume && lessons.includes(resume.lesson) && ["learn", "practice", "summary"].includes(resume.stage) && finiteInt(resume.at, 8640000000000000)) {
       clean.resume = { lesson: resume.lesson, stage: resume.stage, at: resume.at };

@@ -28,3 +28,19 @@ test("merging is repeatable without doubling activity or replacing newer work", 
   assert.deepEqual(current.lessons,[]);
   assert.equal(mergeProgress(incoming,current).answers.question.lastAt,2000);
 });
+
+test("practical stations round trip and an explicitly restarted practical stays restarted", () => {
+  const id = "spinal-cord-practical";
+  const current = emptyProgress();
+  current.practicals[id] = { solved: [0, 1], at: 100 };
+  const imported = parse(JSON.stringify(current)).progress;
+  assert.deepEqual(imported.practicals[id], current.practicals[id]);
+
+  const restarted = emptyProgress();
+  restarted.practicals[id] = { solved: [], at: 200 };
+  assert.deepEqual(mergeProgress(imported, restarted).practicals[id], restarted.practicals[id]);
+  assert.deepEqual(mergeProgress(restarted, imported).practicals[id], restarted.practicals[id]);
+
+  current.practicals[id] = { solved: [0, 9], at: 300 };
+  assert.equal(parse(JSON.stringify(current)).progress.practicals[id], undefined);
+});

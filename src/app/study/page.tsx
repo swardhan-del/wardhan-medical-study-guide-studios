@@ -21,13 +21,13 @@ export default function StudyPage() {
         </p>
       </header>
       <p><Link className="text-link" href="/start">First visit? Choose a starting lesson →</Link></p>
+      <ContinueLearning lessons={journeyIndex} />
       <section className="study-panel" aria-labelledby="study-map-title">
         <p className="eyebrow">The wider course</p>
         <h2 id="study-map-title">Explore the study map</h2>
         <p>Follow the source-based sequence across subjects and see which topics have an introduction available and which are planned.</p>
         <Link className="button button-secondary" href="/study/map">Open study map</Link>
       </section>
-      <ContinueLearning lessons={journeyIndex} />
       <SavedSummaries lessons={journeyLessons.map(({ id, title, summary }) => ({ id, title, summary }))} />
       <div id="subject-review"><StudyDashboard reviewFigures={reviewFigures} /></div>
       <SavedLearning records={publicCatalog} />

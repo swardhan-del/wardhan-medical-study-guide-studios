@@ -1,6 +1,7 @@
 import { qualityAllowsIndexing } from "../src/lib/lesson-quality.ts";
 import { readFileSync, writeFileSync, statSync } from "node:fs";
 import { renalLessons } from "../src/content/renal-course.ts";
+import { spinalCordPractical } from "../src/content/spinal-cord-practical.ts";
 import {
   anatomyTopicLinks,
   anatomyTopicHref,
@@ -95,6 +96,14 @@ for (const [id, title, subject, href, summary, tags] of [
     "/practice/histology",
     "Identify three original tubule schematics and reveal the structural clues.",
     ["Organ histology", "Microscopic structure", "renal", "tubules"],
+  ],
+  [
+    spinalCordPractical.id,
+    spinalCordPractical.title,
+    "histology",
+    spinalCordPractical.href,
+    "Orient a real spinal cord section, identify the ventral horn, and trace the withdrawal reflex in three practical stations.",
+    ["spinal cord", "histology practical", "withdrawal reflex", "Microscopic Anatomy II"],
   ],
   [
     "oral-practice",

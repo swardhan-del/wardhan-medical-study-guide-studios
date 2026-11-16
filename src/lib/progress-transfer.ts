@@ -17,6 +17,10 @@ export function mergeProgress(current: LearningProgress, incoming: LearningProgr
   const answers = { ...current.answers };
   const journey = { ...current.journey };
   const checkpoints = { ...current.checkpoints };
+  const practicals = { ...current.practicals };
+  for (const [id, entry] of Object.entries(incoming.practicals)) {
+    if (!practicals[id] || entry.at > practicals[id].at) practicals[id] = entry;
+  }
   for (const [id, record] of Object.entries(incoming.checkpoints)) {
     if (!checkpoints[id] || record.at > checkpoints[id].at) checkpoints[id] = record;
   }
@@ -33,6 +37,7 @@ export function mergeProgress(current: LearningProgress, incoming: LearningProgr
     visits: [...new Set([...current.visits, ...incoming.visits])].sort().slice(-366),
     answers,
     checkpoints,
+    practicals,
     drafts: { ...incoming.drafts, ...current.drafts },
     plan: current.plan ?? incoming.plan,
     quizzes: Math.max(current.quizzes, incoming.quizzes),
