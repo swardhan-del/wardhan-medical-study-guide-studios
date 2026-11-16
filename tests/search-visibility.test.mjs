@@ -101,7 +101,7 @@ test('topic sequences contain substantial original guidance and only real publis
     assert(guide.preparation.length > 100 && guide.method.length > 150 && guide.review.length > 150);
     // A focused sequence may connect two substantial lessons; do not add filler to meet a quota.
     assert(guide.stages.length >= 2); assert.equal(new Set(guide.stages.map(s => s.id)).size, guide.stages.length);
-    for (const stage of guide.stages) { assert(lessons.lessons.some(l => l.id === stage.id)); assert(searchPage(`/library/${stage.id}`).index); assert(stage.purpose.length > 50); }
+    for (const stage of guide.stages) { assert(lessons.lessons.some(l => l.id === stage.id)); assert.equal(searchPage(`/library/${stage.id}`).canonical, `/library/${stage.id}`); assert(stage.purpose.length > 50); }
     assert(searchPage(guide.next.href)?.index);
   }
 });
