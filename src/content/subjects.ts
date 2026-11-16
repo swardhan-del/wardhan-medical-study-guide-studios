@@ -81,5 +81,5 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
 
 export const guideSubjects = [
   ...subjectInterests.map(({ id, title }) => ({ id, title, href: `/study/${id}` })),
-  { id: "biostatistics", title: "Biostatistics", href: "/subjects/biostatistics" },
+  { id: "biostatistics", title: "Biostatistics", href: "/study/biostatistics" },
 ];

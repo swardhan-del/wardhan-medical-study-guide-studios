@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { studyPaths, beginnerSequences } from "@/content/study-paths";
 import { studyGroups, subjectLessons } from "@/lib/study-collections";
-import { practiceItems } from "@/content/practice-registry";
 import { physiologyCoursePath } from "@/content/curriculum";
 import { subjectLessonCounts } from "@/lib/subject-lesson-counts";
 
@@ -34,8 +33,7 @@ export function SubjectLessonOrder({ subject }: { subject: string }) {
       <summary>{group.title} · {group.lessonIds.length} {subject === "anatomy" ? "lessons available" : "introductions available"}</summary>
       <ol start={1 + groups.slice(0, groups.indexOf(group)).reduce((count, item) => count + item.lessonIds.length, 0)}>{group.lessonIds.map(id => {
         const lesson = lessons.find(l => l.id === id)!;
-        const count = subject === "anatomy" && id !== "anatomy-foundations" ? 5 : practiceItems.filter(q => q.topic === id).length;
-        return <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link> — {subject === "anatomy" ? "Lesson available" : "Introduction available"} · {count} practice {count === 1 ? "question" : "questions"}</li>;
+        return <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link> — {subject === "anatomy" ? "Lesson available" : "Introduction available"}</li>;
       })}</ol>
     </details>)}
     {subject === "physiology" && <p><Link href={physiologyCoursePath + "#renal"}>See renal physiology in Part 4 of the Full Course</Link>.</p>}

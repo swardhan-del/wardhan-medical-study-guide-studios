@@ -71,7 +71,7 @@ export default function Home() {
         <div className="section-heading">
           <h2 id="learning-heading">Choose how you want to study</h2>
         </div>
-        <LearningCollection />
+        <LearningCollection general />
       </section>
       <div className="site-container"><TopicGuideLinks /></div>
       <section className="site-container return-banner">
@@ -100,8 +100,8 @@ export default function Home() {
             If an explanation is unclear or you notice an error, help improve it
             by sending feedback.
           </p>
-          <Link className="text-link" href="/learn/renal#sources">
-            View course sources →
+          <Link className="text-link" href="/about#clinical-review">
+            See our editorial policy →
           </Link>
           <p>
             <Link className="text-link" href="/contact">

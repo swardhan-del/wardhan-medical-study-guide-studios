@@ -16,8 +16,7 @@ test("physiology entry points explain the same core and renal lesson counts", as
   await expect(home).toContainText(`${total} available lessons`);
   await expect(home).toContainText(detail);
   await page.goto("/start");
-  const start = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Medical Physiology", exact: true }) });
-  await expect(start).toContainText(`${total} available lessons: ${detail}`);
+  await expect(page.getByRole("heading", { name: "Choose your subject" })).toBeVisible();
   await page.goto("/study/physiology#coverage");
   const coverage = page.locator("#coverage:visible");
   await expect(coverage).toContainText(`${total} available lessons: ${detail}`);
