@@ -35,5 +35,5 @@ export function AboutLesson({ lessonId, listedSources = [] }: { lessonId: string
 
 export function LessonReviewStatus({ lessonId, updatedAt }: { lessonId: string; updatedAt: string }) {
   const quality = qualityForLesson(lessonId);
-  return <p className="muted-note">Last updated <time dateTime={updatedAt}>{updatedAt}</time>. {quality ? reviewLabels[quality.contentStatus] : "Not independently peer reviewed."}</p>;
+  return <p className="muted-note lesson-review-status">Last updated: <time dateTime={updatedAt}>{updatedAt}</time>. {quality ? reviewLabels[quality.contentStatus] : "Not independently peer reviewed."}</p>;
 }

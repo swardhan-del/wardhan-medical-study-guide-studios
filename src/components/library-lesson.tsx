@@ -387,7 +387,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
       </nav>
       <LessonVideos lessonId={lesson.id} />
       {(audioData.records as StudyAudioRecord[]).filter(a => a.lessonId === lesson.id).map(a => <StudyAudio key={a.lessonId} audio={a} />)}
-      <details className="library-source-note" id="lesson-source">
+      <details className="library-source-note lesson-transparency" id="lesson-source">
         <summary>Sources and Further Reading</summary>
         <h2>Sources and Further Reading</h2>
         <h3>{source.title}</h3>
@@ -399,8 +399,8 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <p className="muted-note">Primary public reference checked <time dateTime={reference.checkedAt}>{reference.checkedAt}</time>.</p>
         <p>{editorialRecorded ? "AI-assisted educational adaptation with source notes." : "AI-assisted educational adaptation. Editorial review is pending."}</p>
         <AboutLesson lessonId={lesson.id} listedSources={reading.map(ref => ref.url)} />
-        <CorrectionLink />
       </details>
+      <p><CorrectionLink /></p>
     </article>
   );
 }

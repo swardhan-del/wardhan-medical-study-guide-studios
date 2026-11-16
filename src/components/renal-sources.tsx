@@ -6,7 +6,8 @@ export function RenalSources({ section, lessonId }: { section?: string; lessonId
   const editorialRecorded = !lessonId || !qualityForLesson(lessonId) || hasRecordedReview(lessonId, "editorial");
   const clinicallyReviewed = lessonId ? qualityForLesson(lessonId)?.contentStatus === "independently-clinically-reviewed" : false;
   return (
-    <details className="study-sources" id="sources">
+    <>
+    <details className="study-sources lesson-transparency" id="sources">
       <summary>Sources and review</summary>
       <p className="eyebrow">Authorship & sources</p>
       <h2>Know what you are learning from.</h2>
@@ -45,11 +46,11 @@ export function RenalSources({ section, lessonId }: { section?: string; lessonId
       </ol>
       <p className="source-note">
         {editorialRecorded ? "Editorial status: source-checked educational adaptation, with AI-assisted drafting and implementation." : "AI-assisted educational adaptation; source and editorial review are pending."} {!lessonId && !clinicallyReviewed && "No independent clinical peer review is claimed."} Examples teach mechanisms and exam reasoning; they
-        are not patient-care guidance.{" "}
-        <CorrectionLink />
-        .
+        are not patient-care guidance.
       </p>
       {lessonId && <AboutLesson lessonId={lessonId} />}
     </details>
+    <p><CorrectionLink /></p>
+    </>
   );
 }

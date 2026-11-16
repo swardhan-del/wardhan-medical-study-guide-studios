@@ -149,8 +149,8 @@ test('Nerve practical: review scope, research references and date remain readabl
   const context = await browser.newContext({ baseURL });
   const page = await context.newPage(); await page.goto(route);
   const review = page.locator('.lesson-transparency'); await review.locator('summary').focus(); await page.keyboard.press('Enter');
-  await expect(review).toContainText('Medical review pending. Independent clinical review has not been completed.');
-  await expect(review).toContainText('Last updated: 2026-11-07');
+  await expect(page.locator('header .lesson-review-status')).toContainText('Medical review pending. Independent clinical review has not been completed.');
+  await expect(page.locator('header .lesson-review-status time')).toHaveText('2026-11-07');
   for (const href of ['https://pubmed.ncbi.nlm.nih.gov/16129398/','https://discovery.ucl.ac.uk/id/eprint/1364750/','https://pubmed.ncbi.nlm.nih.gov/39152112/']) await expect(review.locator(`a[href="${href}"]`)).toHaveCount(1);
   expect((await new AxeBuilder({ page }).include('.lesson-transparency').analyze()).violations).toEqual([]);
   await page.setViewportSize({width:320,height:900}); await page.addStyleTag({content:'html{font-size:200% !important}'});

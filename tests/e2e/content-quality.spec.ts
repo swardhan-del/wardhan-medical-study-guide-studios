@@ -11,9 +11,11 @@ for (const route of ["/library/physiology-membrane-foundations", "/library/conne
     await panel.locator("summary").focus();
     await page.keyboard.press("Enter");
     await expect(panel).toHaveAttribute("open", "");
-    await expect(panel).toContainText(/independent clinical review has not been completed/i);
-    await expect(panel).toContainText("Last updated:");
-    await expect(panel.getByRole("heading", { name: "Learning objectives", exact: true })).toBeVisible();
+    const reviewStatus = page.locator("header .lesson-review-status");
+    await expect(reviewStatus).toBeVisible();
+    await expect(reviewStatus).toContainText(/independent clinical review has not been completed/i);
+    await expect(reviewStatus.locator("time")).toHaveAttribute("dateTime", /^\d{4}-\d{2}-\d{2}$/);
+    await expect(page.getByRole("heading", { name: /learning objectives|what you will be able to explain/i }).first()).toBeVisible();
     const links = await panel.getByRole("navigation", { name: "Related learning" }).getByRole("link").evaluateAll(nodes => nodes.map(node => (node as HTMLAnchorElement).pathname));
     expect(links.length).toBeGreaterThan(0);
     for (const link of new Set(links)) expect((await page.request.get(link)).status()).toBe(200);
