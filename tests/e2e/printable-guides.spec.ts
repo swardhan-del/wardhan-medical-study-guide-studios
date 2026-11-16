@@ -33,7 +33,7 @@ test('histology source gaps remain explicit and lesson / answer selection stays 
   await expect(page.locator('.guide-part')).toHaveCount(20);
   await expect(page.locator('#histology-part-16')).toContainText('Other ocular tissues, accessory structures and the complete eye-development syllabus remain outside these lessons');
   await expect(page.locator('#histology-part-16 a[href="/library/retinal-on-off-bipolar-response"]')).toHaveCount(1);
-  await expect(page.locator('#histology-part-14')).toContainText('does not yet have a dedicated web lesson');
+  await expect(page.locator('#histology-part-14').getByRole('link', { name: 'Start the spinal cord practical' })).toHaveAttribute('href', '/practice/spinal-cord');
   await page.goto('/study/histology/revision');
   await page.getByRole('button', { name: 'Clear selection' }).click();
   await page.locator('.guide-options input').first().check();
@@ -74,4 +74,32 @@ test('physiology guide, printable notes and answer key follow the same cardiovas
   await page.getByRole('checkbox', { name: /^02\. Cardiovascular Physiology/ }).check();
   await expect(page.locator('.revision-lesson > h3')).toHaveText(expected);
   await expect(page.locator('.revision-answers h3')).toHaveText(expected);
+});
+
+test('Part 14 practical teaches orientation, motor region and withdrawal with explained feedback', async ({ page }) => {
+  await page.goto('/study/histology/guide#histology-part-14');
+  await page.getByRole('link', { name: 'Start the spinal cord practical' }).click();
+  await expect(page.getByRole('heading', { name: 'Spinal cord practical', level: 1 })).toBeVisible();
+  const section = page.getByRole('img', { name: /Spinal cord cross-section/ });
+  await expect(section).toBeVisible();
+  await expect.poll(() => section.evaluate(image => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  const practical = page.getByRole('region', { name: 'From slide to signal' });
+  await practical.getByRole('button', { name: /^A — the narrow horn/ }).click();
+  await expect(practical.getByRole('status')).toContainText('away from the midline');
+  await practical.getByRole('button', { name: /^C — the deep midline/ }).click();
+  await expect(practical.getByRole('status')).toContainText('anterior median fissure');
+  await practical.getByRole('button', { name: 'Next station' }).click();
+  await expect(practical.getByRole('heading', { name: 'Where would you zoom in?' })).toBeFocused();
+  await expect(practical.getByRole('img', { name: /large, purple-stained neuron/ })).toBeVisible();
+  await practical.getByRole('button', { name: /^B — the broad ventral horn/ }).click();
+  await practical.getByRole('button', { name: 'Next station' }).click();
+
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+  await practical.getByRole('button', { name: 'Dorsal root → spinal grey matter → ventral root' }).click();
+  await expect(practical.getByRole('list', { name: 'Withdrawal reflex in order' }).getByRole('listitem')).toHaveCount(3);
+  await expect(practical).toContainText('Practical complete.');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+  await practical.getByRole('button', { name: 'Try the practical again' }).click();
+  await expect(practical).toContainText('0 of 3 complete');
 });

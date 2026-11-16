@@ -36,14 +36,14 @@ export default async function GuidePage({ params }: Props) {
       const videos = available.filter(l => videosForLesson(l.id).length > 0);
       const related = orderedGuideLessons(p.relatedLessonIds ?? []);
       return <section className="study-panel guide-part" id={p.id} key={p.id}>
-        <p className="eyebrow">Part {p.number} · {available.length ? `${available.length} available lessons` : "Coverage gap"}</p><h2>{p.title}</h2><p>{p.coverage}</p>
+        <p className="eyebrow">Part {p.number} · {available.length ? `${available.length} available lessons` : p.practiceHref ? "Practical available" : "Coverage gap"}</p><h2>{p.title}</h2><p>{p.coverage}</p>
         {coursePart && <p><Link href={physiologyCoursePath + "#" + coursePart.id}>Browse chapters and gaps in the Full Course</Link></p>}
         {available.length > 0 && <><h3>Read and practise in order</h3><ol>{available.map(l => <li key={l.id}><Link href={`/library/${l.id}`}>{l.title}</Link> · {l.minutes} min · {subject === "anatomy" ? "Core practice and identification task" : "knowledge check and oral examination prompts"}</li>)}</ol><Link href={`/study/${subject}/revision#${p.id}`}>Open this part in the printable notes</Link></>}
         {figures.length > 0 && <><h3>Released figures</h3><ul>{figures.map(f => <li key={f.id}><Link href={`/library/${available.find(l => figuresForResource(l.id).some(x => x.id === f.id))!.id}#lesson-figures`}>{f.title}</Link> — {f.kind === "diagram" ? "Teaching diagram" : "Image"}</li>)}</ul></>}
         {videos.length > 0 && <><h3>Watch and explain</h3><ul>{videos.map(l => <li key={l.id}><Link href={`/library/${l.id}`}>{l.title}: narrated visual explanation</Link></li>)}</ul></>}
         {related.length > 0 ? <><h3>Related learning</h3><ul aria-label={`Related lessons for ${p.title}`}>{related.map(l => <li key={l.id}><Link href={`/library/${l.id}`}>{l.title}</Link></li>)}</ul></> : null}
-        {p.practiceHref && <p><Link href={p.practiceHref}>Open available tissue identification practice</Link></p>}
-        {!available.length && <p>Use your course material for this part. A dedicated web adaptation and its visual activities remain to be added.</p>}
+        {p.practiceHref && <p><Link href={p.practiceHref}>{p.practiceLabel ?? "Open available tissue identification practice"}</Link></p>}
+        {!available.length && !p.practiceHref && <p>Use your course material for this part. A dedicated web adaptation and its visual activities remain to be added.</p>}
         <nav className="action-row" aria-label={`Guide part ${p.number} navigation`}>
           {previous && <Link href={guidePartHref(previous)}>Previous part: {previous.title}</Link>}
           {next && <Link href={guidePartHref(next)}>Next part: {next.title}</Link>}

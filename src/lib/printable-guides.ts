@@ -10,6 +10,7 @@ export type GuidePart = {
   basis: string;
   coverage: string;
   practiceHref: string | null;
+  practiceLabel?: string;
   relatedLessonIds?: string[];
 };
 
