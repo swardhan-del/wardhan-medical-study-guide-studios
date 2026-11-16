@@ -28,6 +28,7 @@ test('student entry modes reach existing teaching, filtered concepts and questio
     }
     await expect(entry).toContainText('do not establish full syllabus coverage');
     await entry.getByRole('link', { name: 'Explain a Confusing Concept', exact: true }).click();
+    await expect(page).toHaveURL(new URL(paths.concept, page.url()).href);
     await expect(page.getByRole('combobox', { name: 'Subject', exact: true })).toHaveValue(new URL(paths.concept, 'https://example.test').searchParams.get('subject')!);
     expect(await page.locator('.resource-card:visible').count()).toBeGreaterThan(0);
   }
