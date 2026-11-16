@@ -150,7 +150,7 @@ test("anatomy starts with foundations and empty subjects offer a usable next ste
   await expect(page).toHaveURL(/\/library\/thoracic-cage-landmarks$/);
   await page.goto("/subjects/biostatistics");
   await expect(page.getByRole("heading", { name: "Lessons and study resources" })).toBeVisible();
-  await expect(page.locator('.resource-card:visible')).toHaveCount(7);
+  await expect(page.locator('#website-lessons ol li')).toHaveCount(library.lessons.filter(lesson => lesson.subject === 'biostatistics').length);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 });
 
