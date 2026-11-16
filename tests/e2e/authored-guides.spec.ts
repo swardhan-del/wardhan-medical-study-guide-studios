@@ -36,7 +36,8 @@ test("subject sections recover from conflicting filters and open native lessons"
   await expect(recap).toHaveCount(1);
   await expect(recap.getByRole("button", { name: "Previous card" })).toBeDisabled();
   await recap.getByRole("button", { name: "Next card" }).click();
-  await expect(recap.locator(".reel-counter")).toHaveText("Card 2 of 4");
+  const haemostasis = lessons.lessons.find(lesson => lesson.id === "blood-and-haemostasis")!;
+  await expect(recap.locator(".reel-counter")).toHaveText(`Card 2 of ${haemostasis.steps.length + 1}`);
   await expect(page.locator('a[href*="dropbox"]')).toHaveCount(0);
 });
 

@@ -5160,6 +5160,22 @@
         {
           "title": "Protect host tissue",
           "body": "Complement needs regulation to avoid indiscriminate injury. CD55 accelerates convertase decay, while CD59 limits terminal complex assembly. Other soluble and membrane regulators act at earlier steps. Uncontrolled amplification can damage host cells as well as targets."
+        },
+        {
+          "title": "Identify the convertase at each step",
+          "body": "Classical and lectin pathways share C4b2a as their C3 convertase. Adding C3b makes their C5 convertase, C4b2a3b. The alternative pathway uses C3bBb to cleave C3 and C3bBbC3b to cleave C5. The older Immunobiology chapter uses C2b for the active fragment of C2. Here the same fragment is called C2a, following the NCI diagram. [1] [2]"
+        },
+        {
+          "title": "Track the fragments",
+          "body": "C3 convertases generate C3a and C3b. C3b coats targets and participates in C5 convertase formation. C5 convertases generate C5a and C5b. C3a and C5a are anaphylatoxins. C4a is traditionally grouped with them and is much less active than C5a. C5b binds C6, C7, C8 and multiple C9 molecules to build the membrane attack complex (MAC). [1] [2]"
+        },
+        {
+          "title": "Locate the regulators",
+          "body": "CD55 (decay-accelerating factor) helps disassemble convertases. Factor H helps disassemble the alternative pathway convertase and acts as a cofactor for factor I, which inactivates C3b. CD59 limits MAC assembly. These regulators act at different steps. [1]"
+        },
+        {
+          "title": "Connect deficiencies to their function",
+          "body": "C3 deficiency compromises opsonisation and is associated with serious infections with encapsulated bacteria. Terminal component deficiencies (C5–C9) are associated with recurrent Neisseria infection. C1 inhibitor deficiency is associated with hereditary angioedema. [1] [3] [4]"
         }
       ],
       "question": {
@@ -5189,8 +5205,23 @@
         "antigen-presentation",
         "blood-marrow"
       ],
-      "updatedAt": "2026-09-06",
-      "minutes": 5
+      "updatedAt": "2026-11-16",
+      "minutes": 5,
+      "workedExample": {
+        "title": "Clinical example: locate a complement deficiency",
+        "prompt": "A patient has repeated meningococcal infections. Which part of complement would this pattern make you review?",
+        "solution": [
+          "Recurrent meningococcal infections are associated with deficiencies of the terminal complement components C5–C9. [3] [4]",
+          "Compare that association with C3 deficiency, which impairs opsonisation and is associated with severe infections with encapsulated bacteria. A pattern is a clue for the exercise. [1] [3] [4]",
+          "Review the terminal sequence from C5b to the completed MAC. [1] [2]"
+        ]
+      },
+      "objectives": [
+        "Identify the convertase at each step.",
+        "A patient has repeated meningococcal infections. Which part of complement would this pattern make you review?",
+        "Compare activation, effector functions and regulation."
+      ],
+      "prerequisites": []
     },
     {
       "id": "membrane-potentials",
@@ -5832,6 +5863,18 @@
         {
           "title": "Change one variable at a time",
           "body": "With other conditions held fixed, increased filling can raise stroke volume through the Frank–Starling mechanism. An isolated increase in afterload tends to increase end-systolic volume and reduce stroke volume on that beat. Increased contractility tends to reduce end-systolic volume. In an intact circulation, reflexes and subsequent filling can change the later response."
+        },
+        {
+          "title": "Put the ECG and sounds on the same time axis",
+          "body": "Atrial contraction follows the P wave. Ventricular contraction follows the QRS complex, and the T wave represents ventricular repolarisation. The first heart sound (S1) accompanies atrioventricular valve closure. The second sound (S2) accompanies semilunar valve closure. In the left heart, mark mitral closure at the start of isovolumetric contraction and aortic closure at the start of isovolumetric relaxation. [1] [3]"
+        },
+        {
+          "title": "Use representative adult pressures and volumes",
+          "body": "Read the Wiggers-style figure as a teaching example. Systemic arterial pressure is illustrated at about 120/80 mmHg. Left ventricular pressure rises above aortic pressure to open the aortic valve and falls below it before the valve closes. Left atrial pressure stays on the low part of the pressure scale during this example. A representative end-diastolic volume (EDV) is 130 mL and end-systolic volume (ESV) is 60 mL, giving a stroke volume of 70 mL. [1] [2] [3]"
+        },
+        {
+          "title": "Calculate ejection fraction from the filled volume",
+          "body": "Left ventricular ejection fraction (EF) is stroke volume divided by end-diastolic volume, expressed as a percentage. With an EDV of 130 mL and ESV of 60 mL, the stroke volume is 70 mL and EF is about 54%. The denominator is the filled ventricular volume. [1] [4]"
         }
       ],
       "question": {
@@ -5866,7 +5909,22 @@
         "guided revision"
       ],
       "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "updatedAt": "2026-11-16",
+      "workedExample": {
+        "title": "Clinical example: read a ventricular volume report",
+        "prompt": "A fictional report gives a left ventricular end-diastolic volume of 130 mL and an end-systolic volume of 60 mL. Calculate stroke volume and ejection fraction.",
+        "solution": [
+          "Subtract the volume left after ejection from the filled volume. Stroke volume is 130 − 60 = 70 mL. [1] [4]",
+          "Divide 70 mL by 130 mL and multiply by 100. Ejection fraction is about 54%. [4]",
+          "Report stroke volume in millilitres and ejection fraction as a percentage."
+        ]
+      },
+      "objectives": [
+        "Put the ECG and sounds on the same time axis.",
+        "A fictional report gives a left ventricular end-diastolic volume of 130 mL and an end-systolic volume of 60 mL. Calculate stroke volume and ejection fraction.",
+        "Relate valve events to pressure and volume changes."
+      ],
+      "prerequisites": []
     },
     {
       "id": "respiratory-mechanics",
@@ -6232,6 +6290,22 @@
         {
           "title": "Amplify thrombin and stabilise fibrin",
           "body": "Intrinsic tenase contains factor IXa with its cofactor VIIIa on a calcium-dependent phospholipid surface; it activates factor X. Factor Xa with Va forms prothrombinase, producing thrombin from prothrombin. Thrombin converts fibrinogen to fibrin, and factor XIIIa crosslinks fibrin. These overlapping processes stabilise the plug; they are not two completely separate timelines."
+        },
+        {
+          "title": "Start with tissue factor",
+          "body": "Exposure of tissue factor after vessel injury starts the extrinsic pathway. Tissue factor and factor VIIa activate factors X and IX. Factor Xa joins Va in the prothrombinase complex. Factor IXa joins VIIIa in intrinsic tenase, amplifying activation of X. The pathways interact during haemostasis in the body. [1] [2]"
+        },
+        {
+          "title": "Track vitamin K and the natural brakes",
+          "body": "Factors II, VII, IX and X and the anticoagulant proteins C and S are vitamin K dependent. Antithrombin inhibits thrombin and Xa, among other activated factors. Tissue factor pathway inhibitor restrains Xa and the tissue factor–VIIa complex. Activated protein C and protein S inactivate Va and VIIIa. [2]"
+        },
+        {
+          "title": "Follow fibrinolysis",
+          "body": "Tissue plasminogen activator (tPA) helps convert plasminogen to plasmin. Plasmin cleaves fibrin and breaks down the fibrin mesh. PAI-1 restrains plasminogen activators. [3]"
+        },
+        {
+          "title": "Map PT and aPTT to the laboratory pathways",
+          "body": "Prothrombin time (PT) assesses the extrinsic and common pathways, including factor VII. Activated partial thromboplastin time (aPTT) assesses the intrinsic and common pathways. Both assays include the common pathway. These are laboratory pathway models for interpreting clotting tests. [4] [5]"
         }
       ],
       "question": {
@@ -6266,7 +6340,22 @@
         "guided revision"
       ],
       "minutes": 7,
-      "updatedAt": "2026-09-08"
+      "updatedAt": "2026-11-16",
+      "workedExample": {
+        "title": "Clinical example: interpret an isolated prolonged PT",
+        "prompt": "In a simplified case, the PT is prolonged and the aPTT is within its reference interval. Which pathway does this pattern help you localise?",
+        "solution": [
+          "Map the prolonged PT to the extrinsic and common pathways. A defect affecting factor VII is one possibility. [4] [5]",
+          "An isolated result is a laboratory clue. Additional information is needed to determine the cause. [5]",
+          "Compare the separate laboratory inputs before applying the pathway map. [4] [5]"
+        ]
+      },
+      "objectives": [
+        "Start with tissue factor.",
+        "In a simplified case, the PT is prolonged and the aPTT is within its reference interval. Which pathway does this pattern help you localise?",
+        "Trace how the platelet plug is reinforced and later broken down."
+      ],
+      "prerequisites": []
     },
     {
       "id": "digestive-control",

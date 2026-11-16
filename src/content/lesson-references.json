@@ -1062,9 +1062,23 @@
     ]
   },
   "complement": {
-    "title": "OpenStax: Innate defenses and complement",
-    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-2-barrier-defenses-and-the-innate-immune-response",
-    "checkedAt": "2026-09-07"
+    "title": "Immunobiology: The complement system and innate immunity",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK27100/",
+    "checkedAt": "2026-11-16",
+    "supportingReferences": [
+      {
+        "title": "NCI Nanotechnology Characterization Laboratory: Method ITA-5.1",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK612356/"
+      },
+      {
+        "title": "Merck Manual: Complement Deficiencies",
+        "url": "https://www.merckmanuals.com/professional/multimedia/table/complement-deficiencies"
+      },
+      {
+        "title": "StatPearls: Complement Deficiency",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557581/"
+      }
+    ]
   },
   "membrane-potentials": {
     "title": "OpenStax: Membrane potentials and ion gradients",
@@ -1189,9 +1203,23 @@
     "checkedAt": "2026-09-08"
   },
   "cardiac-cycle": {
-    "title": "Regulation of Cardiac Contractility: pressure–volume loops",
-    "url": "https://www.ncbi.nlm.nih.gov/books/NBK54080/",
-    "checkedAt": "2026-09-08"
+    "title": "OpenStax: Cardiac Cycle",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-3-cardiac-cycle",
+    "checkedAt": "2026-11-16",
+    "supportingReferences": [
+      {
+        "title": "OpenStax: Blood Flow, Blood Pressure, and Resistance",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-2-blood-flow-blood-pressure-and-resistance"
+      },
+      {
+        "title": "StatPearls: Physiology, Cardiac Cycle",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK459327/"
+      },
+      {
+        "title": "StatPearls: Physiology, Left Ventricular Function",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK541098/"
+      }
+    ]
   },
   "respiratory-mechanics": {
     "title": "OpenStax: the process of breathing",
@@ -1204,9 +1232,27 @@
     "checkedAt": "2026-09-08"
   },
   "blood-and-haemostasis": {
-    "title": "Mechanisms of Vascular Disease: physiological haemostasis",
-    "url": "https://www.ncbi.nlm.nih.gov/books/NBK534253/",
-    "checkedAt": "2026-09-08"
+    "title": "StatPearls: Physiology, Hemostasis",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK545263/",
+    "checkedAt": "2026-11-16",
+    "supportingReferences": [
+      {
+        "title": "Merck Manual: Overview of Hemostasis",
+        "url": "https://www.merckmanuals.com/professional/hematology/hemostasis/overview-of-hemostasis"
+      },
+      {
+        "title": "StatPearls: Physiology, Plasminogen Activation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK539745/"
+      },
+      {
+        "title": "StatPearls: Physiology, Coagulation Pathways",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482253/"
+      },
+      {
+        "title": "StatPearls: Prothrombin Time",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK544269/"
+      }
+    ]
   },
   "digestive-control": {
     "title": "The Exocrine Pancreas: control of secretion",
