@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { useLearning } from "./learning-store";
 import type { VolumeOneDiagram } from "@/content/anatomy-volume-one-pilot";
 
 function labelLines(label: string) {
@@ -44,13 +45,13 @@ function NodeDiagram({ diagram, labels }: { diagram: VolumeOneDiagram; labels: b
 
 export function VolumeOneDiagramActivity({ diagram }: { diagram: VolumeOneDiagram }) {
   const formId = useId();
-  const [practising, setPractising] = useState(false);
+  const { ready } = useLearning();
   const [responses, setResponses] = useState<Record<number, string>>({});
   const [checked, setChecked] = useState(false);
   const options = diagram.nodes.map(([label]) => label).sort();
   const correct = diagram.nodes.filter(([label], index) => responses[index] === label).length;
-  return <section className="study-panel" aria-label="Volume I diagram and labelling practice">
-    <figure className="volume-one-diagram" hidden={practising}>
+  return <section className="study-panel volume-one-labelling" aria-label="Volume I diagram and labelling practice">
+    <figure className="volume-one-diagram">
       <h2>{diagram.title}</h2>
       <NodeDiagram diagram={diagram} labels />
       <figcaption>
@@ -58,11 +59,11 @@ export function VolumeOneDiagramActivity({ diagram }: { diagram: VolumeOneDiagra
         <p>Original SVG by Wardhan Medical Study Guide Studios. <a href={diagram.source}>Source for this diagram</a>.</p>
       </figcaption>
     </figure>
-    <details onToggle={event => setPractising(event.currentTarget.open)}>
+    <details>
       <summary>Label the diagram</summary>
       <NodeDiagram diagram={diagram} labels={false} />
       <form onSubmit={event => { event.preventDefault(); setChecked(true); }}>
-        <fieldset>
+        <fieldset disabled={!ready}>
           <legend>Choose a label for each marker</legend>
           {diagram.nodes.map(([label], index) => <div key={label} className="study-form">
             <label htmlFor={formId + "-" + index}>Marker {index + 1}</label>
@@ -76,7 +77,7 @@ export function VolumeOneDiagramActivity({ diagram }: { diagram: VolumeOneDiagra
             {checked && <p>{responses[index] === label ? "Correct" : `Correct label: ${label}`}</p>}
           </div>)}
         </fieldset>
-        <button type="submit" className="button button-primary">Check labels</button>
+        <button type="submit" className="button button-primary" disabled={!ready}>Check labels</button>
         <p role="status">{checked ? `${correct} of ${diagram.nodes.length} labels correct.` : ""}</p>
       </form>
     </details>

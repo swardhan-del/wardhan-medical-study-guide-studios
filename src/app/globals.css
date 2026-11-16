@@ -4400,3 +4400,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   max-width: 36rem;
   margin-inline: auto;
 }
+
+.volume-one-labelling:has(> details[open]) > figure {
+  display: none;
+}
