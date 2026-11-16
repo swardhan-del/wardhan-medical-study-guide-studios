@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { updateLearning, useLearning } from "@/components/learning-store";
+import { spinalCordPractical } from "@/content/spinal-cord-practical";
 import { useRef, useState } from "react";
 import styles from "./spinal-cord.module.css";
 
@@ -59,25 +62,33 @@ const reflex = [
 ];
 
 export function SpinalCordPractical() {
-  const [index, setIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number>();
   const [selected, setSelected] = useState<number>();
-  const [solved, setSolved] = useState<number[]>([]);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const { data } = useLearning();
+  const solved = data.practicals[spinalCordPractical.id]?.solved ?? [];
+  const firstUnfinished = stations.findIndex((_, step) => !solved.includes(step));
+  const index = activeIndex ?? (firstUnfinished < 0 ? stations.length - 1 : firstUnfinished);
   const station = stations[index];
   const correct = selected === station.answer;
-  const finished = solved.length === stations.length;
+  const finished = firstUnfinished < 0;
+  const laterUnfinished = stations.findIndex((_, step) => step > index && !solved.includes(step));
 
   function openStation(next: number) {
     setSelected(undefined);
-    setIndex(next);
+    setActiveIndex(next);
     requestAnimationFrame(() => titleRef.current?.focus());
   }
 
   function answer(choice: number) {
+    setActiveIndex(index);
     setSelected(choice);
-    if (choice === station.answer) {
-      setSolved(previous => previous.includes(index) ? previous : [...previous, index]);
-    }
+    if (choice !== station.answer) return;
+    updateLearning(state => {
+      const previous = state.practicals[spinalCordPractical.id]?.solved ?? [];
+      const updated = [...new Set([...previous, index])];
+      return { ...state, practicals: { ...state.practicals, [spinalCordPractical.id]: { solved: updated, at: Date.now() } } };
+    });
   }
 
   return (
@@ -163,10 +174,16 @@ export function SpinalCordPractical() {
           {finished ? (
             <div className={styles.finish}>
               <p><strong>Practical complete.</strong> Look away from the slide and explain how to find the ventral side and where the signal leaves the cord.</p>
-              <button type="button" onClick={() => { setSolved([]); openStation(0); }}>Try the practical again</button>
+              <div className="action-row">
+                <Link className="button button-primary" href={spinalCordPractical.next.href}>Next lesson: {spinalCordPractical.next.title}</Link>
+                <button type="button" onClick={() => {
+                  updateLearning(state => ({ ...state, practicals: { ...state.practicals, [spinalCordPractical.id]: { solved: [], at: Date.now() } } }));
+                  openStation(0);
+                }}>Try the practical again</button>
+              </div>
             </div>
-          ) : correct && index + 1 < stations.length ? (
-            <button className={styles.next} type="button" onClick={() => openStation(index + 1)}>Next station <span aria-hidden="true">→</span></button>
+          ) : correct ? (
+            <button className={styles.next} type="button" onClick={() => openStation(laterUnfinished < 0 ? firstUnfinished : laterUnfinished)}>Next station <span aria-hidden="true">→</span></button>
           ) : null}
         </div>
       </div>

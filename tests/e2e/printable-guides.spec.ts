@@ -94,7 +94,10 @@ test('Part 14 practical teaches orientation, motor region and withdrawal with ex
   await expect(practical.getByRole('heading', { name: 'Where would you zoom in?' })).toBeFocused();
   await expect(practical.getByRole('img', { name: /large, purple-stained neuron/ })).toBeVisible();
   await practical.getByRole('button', { name: /^B — the broad ventral horn/ }).click();
-  await practical.getByRole('button', { name: 'Next station' }).click();
+  await page.getByRole('navigation', { name: 'Primary navigation' }).getByRole('link', { name: 'My Study', exact: true }).click();
+  await expect(page.getByRole('region', { name: 'Continue where you left off' })).toContainText('2 of 3 stations complete');
+  await page.getByRole('link', { name: 'Resume spinal cord practical' }).click();
+  await expect(practical.getByRole('heading', { name: 'Follow the signal off the slide.' })).toBeVisible();
 
   await page.setViewportSize({ width: 320, height: 900 });
   await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
@@ -102,6 +105,11 @@ test('Part 14 practical teaches orientation, motor region and withdrawal with ex
   await expect(practical.getByRole('list', { name: 'Withdrawal reflex in order' }).getByRole('listitem')).toHaveCount(3);
   await expect(practical).toContainText('Practical complete.');
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+  await page.reload();
+  await expect(practical).toContainText('3 of 3 complete');
+  await practical.getByRole('link', { name: 'Next lesson: Spinal cord tracts' }).click();
+  await expect(page).toHaveURL('/library/spinal-cord-tracts');
+  await page.goBack();
   await practical.getByRole('button', { name: 'Try the practical again' }).click();
   await expect(practical).toContainText('0 of 3 complete');
 });

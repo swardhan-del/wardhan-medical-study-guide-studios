@@ -1048,7 +1048,8 @@
       "resources": [
         "neurulation",
         "myelin-and-glial-cells",
-        "brain-and-csf-barriers"
+        "brain-and-csf-barriers",
+        "spinal-cord-practical"
       ]
     },
     {
@@ -1348,7 +1349,9 @@
       "subject": "histology",
       "parentId": null,
       "kind": "system",
-      "resources": []
+      "resources": [
+        "spinal-cord-practical"
+      ]
     },
     {
       "id": "topic-indicator-dilution",

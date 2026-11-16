@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Link from "next/link";
+import { spinalCordPractical } from "@/content/spinal-cord-practical";
 import type { JourneyLesson, ResumeLesson } from "@/lib/lesson-journeys";
 import { resumeHref } from "@/lib/learning-journey";
 import { useLearning, updateJourney } from "./learning-store";
@@ -10,12 +11,27 @@ export function ContinueLearning({ lessons }: { lessons: ResumeLesson[] }) {
   const last = lessons.find(lesson => lesson.id === data.resume?.lesson);
   const completed = !!last && data.lessons.includes(last.id);
   const href = data.resume ? (last?.href ? `${last.href}${data.resume.stage === "practice" ? "#lesson-quiz" : ""}` : resumeHref(data.resume)) : "/start";
+  const practical = data.practicals[spinalCordPractical.id];
+  const stationsComplete = practical?.solved.length ?? 0;
+  const practicalComplete = stationsComplete === spinalCordPractical.stationCount;
+  const showPracticalFirst = stationsComplete > 0 && (!last || (practical?.at ?? 0) >= (data.resume?.at ?? 0));
+  const nextIsLastLesson = last && (last.href ?? "/library/" + last.id) === spinalCordPractical.next.href;
+  const practicalLinks = stationsComplete > 0 ? <>
+    <p><strong>{spinalCordPractical.title}</strong> · {stationsComplete} of {spinalCordPractical.stationCount} stations complete</p>
+    <div className="action-row">
+      {(!practicalComplete || !nextIsLastLesson) && <Link className={showPracticalFirst ? "button button-primary" : "text-link"} href={practicalComplete ? spinalCordPractical.next.href : spinalCordPractical.href + "#practical"}>
+        {practicalComplete ? "Next: " + spinalCordPractical.next.title : "Resume spinal cord practical"}
+      </Link>}
+      {practicalComplete && <Link href={spinalCordPractical.href + "#practical"}>Review spinal cord practical</Link>}
+    </div>
+  </> : null;
   return <section className="study-panel continue-card" aria-labelledby="continue-title">
     <p className="eyebrow">Your next study session</p><h2 id="continue-title">Continue where you left off</h2>
-    {!ready ? <p role="status">Loading local progress…</p> : last && data.resume ? <>
+    {!ready ? <p role="status">Loading local progress…</p> : showPracticalFirst ? practicalLinks : last && data.resume ? <>
       <p><strong>{last.title}</strong> · {completed ? "Marked complete" : { learn: "Explanation", practice: "Practice", summary: "Summary" }[data.resume.stage]}</p>
       <div className="action-row"><Link className="button button-primary" href={completed ? last.next.href : href}>{completed ? `Next: ${last.next.title}` : "Resume lesson"}</Link>{completed && <Link href={href}>Revisit completed lesson</Link>}<Link href="/study">View my progress</Link></div>
     </> : <><p>Your next session starts with one free lesson. Choose a subject, practise its questions, then save the summary.</p><div className="action-row"><Link className="button button-primary" href="/start#choose-subject">Choose my first subject</Link><Link href="/starter-pack">Get the free starter pack</Link></div></>}
+    {ready && !showPracticalFirst && practicalLinks}
     <p className="muted-note">{ready && !persistent ? "Browser storage is unavailable; progress lasts only for this visit." : "Saved on this browser only. Clearing site data removes it; My Study has export and reset controls."}</p>
   </section>;
 }

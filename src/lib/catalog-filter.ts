@@ -29,7 +29,9 @@ export function matchesCatalogQuery(record: CatalogRecord, query: string, subjec
   return matchesSearchText(catalogSearchText(record, subjectTitle), query);
 }
 export function searchRank(record: CatalogRecord, query: string) {
-  if (!query.trim()) return 0;
+  const terms = searchTerms(query).join(" ");
+  if (!terms) return 0;
+  if (searchTerms(record.title).join(" ") === terms) return 4;
   return matchesSearchText(record.title, query) ? 3 : matchesSearchText(record.summary + " " + (record.tags ?? []).join(" "), query) ? 2 : 1;
 }
 // Bounded Damerau-Levenshtein comparison: suggestions never silently alter the query.

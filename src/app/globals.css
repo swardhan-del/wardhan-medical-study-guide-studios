@@ -4146,10 +4146,6 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   }
 }
 .learning-home .hero-lede { font-size: 1.2rem; line-height: 1.5; }
-.home-subject-navigation { padding-block: 1.5rem; }
-.home-subject-navigation h2 { margin-bottom: .5rem; }
-.home-subject-links { display: flex; flex-wrap: wrap; gap: .25rem 1.2rem; }
-.home-subject-links a { padding-block: .35rem; line-height: 1.4; }
 .concept-heading h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.12; }
 .concept-page { padding-top: 24px; }
 .concept-heading { padding-block: 0; margin: 20px 0 16px; }
@@ -4157,7 +4153,7 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .concept-heading .action-row { margin-top: 18px; }
 .concept-heading .interior-lede { font-size: 1.2rem; line-height: 1.5; }
 .start-sequence li { margin-block: .6rem; }
-@media (max-width: 700px) { .hero-section.learning-home { padding-top: 20px; gap: 24px; } .home-subject-links a { min-height: 44px; display: flex; align-items: center; } }
+@media (max-width: 700px) { .hero-section.learning-home { padding-top: 20px; gap: 24px; } }
 
 /* Printable guide parts share one selection and answer-key boundary. */
 .guide-selector { margin: 2rem 0; border: 1px solid var(--line); padding: 1rem; min-width: 0; }

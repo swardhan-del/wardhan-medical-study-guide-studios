@@ -132,7 +132,7 @@ test("first-visitor navigation exposes consistent subjects, printable notes and 
   await page.getByRole("combobox", { name: "Format", exact: true }).selectOption("PDF");
   await expect(page.getByText("The PDF results list downloadable files.", { exact: false })).toBeVisible();
   await page.locator("#printable-notes summary").click();
-  await expect(page.getByRole("navigation", { name: "Printable revision subjects" }).getByRole("link")).toHaveCount(7);
+  await expect(page.getByRole("navigation", { name: "Printable revision subjects" }).getByRole("link", { name: "Biostatistics", exact: true })).toHaveAttribute("href", "/study/biostatistics/revision");
   await page.getByRole("navigation", { name: "Printable revision subjects" }).getByRole("link", { name: "Biochemistry", exact: true }).click();
   await expect(page).toHaveURL(/\/study\/biochemistry\/revision$/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("revision notes");
@@ -402,4 +402,33 @@ test("a related follow-up becomes available after 24 hours and persists", async 
   await expect(review).toContainText("One-week review complete.");
   await review.getByRole("button", { name: "Review Anatomy & Embryology one-week review" }).click();
   await expect(weekly.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+});
+
+test("subject entry and direct search lead to the chosen lesson or practice", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  const picker = page.getByRole("region", { name: "Choose your subject" });
+  await expect(picker).toBeInViewport();
+  await picker.getByText("Histology", { exact: true }).click();
+  await expect(picker.getByRole("link", { name: "Start Histology lesson" })).toHaveAttribute("href", "/library/histology-foundations-tissues");
+  await picker.getByRole("link", { name: "Open Histology course guide" }).click();
+  await expect(page).toHaveURL("/study/histology/guide");
+
+  await page.goto("/start#choose-subject");
+  await picker.getByText("Biostatistics", { exact: true }).click();
+  await expect(picker.getByRole("link", { name: "Open Biostatistics course guide" })).toHaveAttribute("href", "/study/biostatistics/guide");
+  await picker.getByRole("link", { name: "Start Biostatistics lesson" }).click();
+  await expect(page).toHaveURL("/library/histogram-bin-counts-example");
+
+  await page.goto("/");
+  const search = page.getByRole("searchbox", { name: "What do you want to understand?" });
+  await search.fill("spinal cord practical");
+  await search.press("Enter");
+  const firstResult = page.locator(".resource-card").first();
+  await firstResult.getByRole("link", { name: "Spinal cord practical", exact: true }).click();
+  await expect(page).toHaveURL("/practice/spinal-cord");
+
+  await page.goto("/library?q=glycogen+metabolism");
+  await page.getByRole("region", { name: "Course guide topics" }).getByRole("link", { name: "Glycogen metabolism in the course guide" }).click();
+  await expect(page).toHaveURL("/study/biochemistry/guide#biochemistry-part-04");
 });
