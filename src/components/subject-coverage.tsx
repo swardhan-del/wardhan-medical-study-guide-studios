@@ -15,12 +15,11 @@ export function SubjectCoverage({ subject }: { subject: string }) {
     <h2 id="coverage-title">What you can study here</h2>
     <p>{path.preparation}</p>
     <Link className="button button-primary" href={beginnerSequences[subject][0].href}>Start with {subject === "anatomy" ? beginnerSequences[subject][0].title : first.title}</Link>
-    <p>{coverage.detail ? `${coverage.total} available lessons: ${coverage.detail}` : `${lessons.length} ${subject === "anatomy" ? "written course lessons" : "focused lesson introductions"}`}. Library resource totals also include other formats and activities; they are not additional lessons or a measure of syllabus completion.</p>
-    <p>This map covers the current collection. An available introduction is a starting point, not complete preparation for an examination. Compare it with your course syllabus.</p>
-    {subject === "physiology" && <p><Link href="/learn/renal">The {coverage.renal}-lesson renal course</Link> is included in the total above. It develops renal topics further and overlaps the core introductions; these are not additional syllabus areas.</p>}
-    <h3>{["biophysics", "anatomy"].includes(subject) ? "What to study alongside this course" : "Still needs fuller lessons"}</h3>
-    <p>{["biophysics", "anatomy"].includes(subject) ? "The native lessons cover the supplied topic structure. These additional checks and experiences remain necessary." : "Selected gaps identified in the source review; this is not an exhaustive list or a release schedule."}</p>
-    <ul>{path.gaps.map(gap => <li key={gap}>{gap}{!["biophysics", "anatomy"].includes(subject) && " — Not yet covered in depth"}</li>)}</ul>
+    <p>{coverage.detail ? `${coverage.total} available lessons: ${coverage.detail}` : `${lessons.length} ${subject === "anatomy" ? "written course lessons" : "focused lesson introductions"}`}.</p>
+    {subject === "physiology" && <p><Link href="/learn/renal">The {coverage.renal}-lesson renal course</Link> is included in the total above. Use it to go deeper into renal topics from the core lessons.</p>}
+    <h3>What to study alongside this course</h3>
+    <p>Use your syllabus and course materials to review these areas.</p>
+    <ul>{path.gaps.map(gap => <li key={gap}>{gap}</li>)}</ul>
   </section>;
 }
 

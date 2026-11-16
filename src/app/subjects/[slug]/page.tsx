@@ -27,6 +27,7 @@ export default async function SubjectPage({ params }: Props) {
   const s = librarySubjects.find((s) => s.id === slug);
   if (!s) notFound();
   const records = subjectRecords(slug);
+  const hasStudyPath = studySubjects.some(study => study.id === (s.learningSubject || slug));
   const firstSession = firstSessionFor(slug);
   const explainers = publicVideos.filter(video => video.subject === slug && video.explainer);
   return (
@@ -42,11 +43,11 @@ export default async function SubjectPage({ params }: Props) {
         <h1>{s.title}</h1>
         <p className="interior-lede">{slug === "histology" ? "Learn to identify tissues by their architecture, cells, and extracellular features. Connect what you see with how the tissue functions and develops." : s.description}</p>
       </header>
-      {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <div className="action-row">
+      {(hasStudyPath || slug === "biostatistics") && <div className="action-row">
         <OrderedSubjectCourseLink subject={slug} />
-        <Link className="button button-secondary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link>
+        <Link className="button button-secondary" href={slug === "biostatistics" ? "#website-lessons" : s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link>
       </div>}
-      {studySubjects.some(study => study.id === (s.learningSubject || slug)) && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
+      {hasStudyPath && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
       {firstSession && <p><Link className="button button-secondary" href={firstSessionHref(firstSession.id)}>Try a five-minute study session</Link></p>}
       <SubjectHubOverview subject={slug} />
       {explainers.length > 0 && <section className="study-panel" aria-labelledby="subject-explainers">

@@ -22,7 +22,7 @@ test("physiology entry points explain the same core and renal lesson counts", as
   const coverage = page.locator("#coverage:visible");
   await expect(coverage).toContainText(`${total} available lessons: ${detail}`);
   await expect(coverage.getByRole("link", { name: `${renalLessons.length}-lesson renal course`, exact: false })).toHaveAttribute("href", "/learn/renal");
-  await expect(coverage).toContainText("these are not additional syllabus areas");
+  await expect(coverage).toContainText("go deeper into renal topics from the core lessons");
 });
 
 test("Start Here reaches the existing guided sequence, its quiz and onward learning", async ({ page }) => {
@@ -51,7 +51,7 @@ test("first visit reaches each subject coverage map and a real starting lesson",
     await page.goto(`/study/${subject}#coverage`);
     // Next.js can retain the previous route in a hidden tree.
     const map = page.locator("#coverage:visible");
-    await expect(map).toContainText(subject === "anatomy" ? "What to study alongside this course" : "Still needs fuller lessons");
+    await expect(map).toContainText("What to study alongside this course");
     await map.getByRole("link",{name:/^Start with/}).click();
     await expect(page).toHaveURL(subject === "anatomy" ? /\/library\/anatomy-foundations$/ : /\/library\//);
     await expect(page.locator("h1:visible")).toBeVisible();

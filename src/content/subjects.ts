@@ -78,3 +78,8 @@ export const subjectInterests: ReadonlyArray<SubjectInterest> = [
     topics: ["Physical principles", "Practical calculations", "Biophysics"],
   },
 ];
+
+export const guideSubjects = [
+  ...subjectInterests.map(({ id, title }) => ({ id, title, href: `/study/${id}` })),
+  { id: "biostatistics", title: "Biostatistics", href: "/subjects/biostatistics" },
+];

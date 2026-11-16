@@ -72,7 +72,7 @@ for (const entry of cases) {
   });
 }
 test('Part15 links each expanded endocrine unit once and preserves other source gaps',async({page})=>{
- await page.goto('/study/histology/guide#histology-part-15');const part=page.locator('#histology-part-15');for(const entry of cases)await expect(part.locator('a[href="/library/'+entry.id+'"]')).toHaveCount(1);await expect(part).toContainText('real-slide recognition remain outside');await expect(page.locator('#histology-part-14')).toContainText('does not yet have a dedicated web lesson');
+ await page.goto('/study/histology/guide#histology-part-15');const part=page.locator('#histology-part-15');for(const entry of cases)await expect(part.locator('a[href="/library/'+entry.id+'"]')).toHaveCount(1);await expect(part).toContainText('real-slide recognition remain outside');await expect(page.locator('#histology-part-14').getByRole('link', {name: 'Start the spinal cord practical'})).toHaveAttribute('href', '/practice/spinal-cord');
  await page.goto('/study/map');await page.getByRole('combobox',{name:'Subject',exact:true}).selectOption('histology');for(const entry of cases){const l=data.lessons.find(l=>l.id===entry.id)!;await page.getByRole('searchbox',{name:'Find a topic'}).fill(l.title);await expect(page.locator('a[href="/library/'+entry.id+'"]')).toHaveCount(1);}
 });
 test('Selecting Part15 prints only its three expanded units',async({page})=>{

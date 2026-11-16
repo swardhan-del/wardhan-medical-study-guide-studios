@@ -1,5 +1,5 @@
 import data from "@/content/printable-guides.json";
-import { studyLessons, studySubjects } from "./study-collections";
+import { studyLessons } from "./study-collections";
 
 export type GuidePart = {
   id: string;
@@ -18,7 +18,7 @@ export const guideParts: GuidePart[] = data.parts;
 const lessonsById = new Map(studyLessons.map(lesson => [lesson.id, lesson]));
 
 export function partsForSubject(subject: string) {
-  return studySubjects.some(item => item.id === subject) ? guideParts.filter(part => part.subject === subject) : [];
+  return guideParts.filter(part => part.subject === subject);
 }
 
 export function guidePartHref(part: GuidePart) {
