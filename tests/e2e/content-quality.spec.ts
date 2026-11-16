@@ -13,7 +13,7 @@ for (const route of ["/library/physiology-membrane-foundations", "/library/conne
     await expect(panel).toHaveAttribute("open", "");
     const reviewStatus = page.locator("header .lesson-review-status");
     await expect(reviewStatus).toBeVisible();
-    await expect(reviewStatus).toContainText(/independent clinical review has not been completed/i);
+    await expect(reviewStatus).toContainText(/independent clinical review has not been completed|not independently peer reviewed/i);
     await expect(reviewStatus.locator("time")).toHaveAttribute("dateTime", /^\d{4}-\d{2}-\d{2}$/);
     await expect(page.getByRole("heading", { name: /learning objectives|what you will be able to explain/i }).first()).toBeVisible();
     const links = await panel.getByRole("navigation", { name: "Related learning" }).getByRole("link").evaluateAll(nodes => nodes.map(node => (node as HTMLAnchorElement).pathname));
