@@ -96,13 +96,15 @@ import type { ReactNode } from "react";
 export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; reviewVisuals?: ReactNode }) {
   const editorialRecorded = !qualityForLesson(lesson.id) || hasRecordedReview(lesson.id, "editorial");
   const navigation = orderedLessonNavigation(lesson.subject, lesson.id);
-  const journey = journeyLessons.find(item => item.id === lesson.id)!;
+
   const anatomyFoundations = lesson.id === "anatomy-foundations";
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
   const reviewedSupplementalPractice = ["retinal-structure-light-signal-direction", "vestibular-sensors-rotation-translation", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "neurulation", "placenta", "muscle-histology", "vessel-histology", "blood-marrow", "connective-tissue", "cartilage-bone", "epithelia", "cell-junctions", "liver-pancreas", "gi-histology", "renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
   const pilot = volumeOnePilotFor(lesson.id);
+  const coreJourney = journeyLessons.find(item => item.id === lesson.id)!;
+  const journey = pilot ? { ...coreJourney, questions: [...coreJourney.questions, ...pilot.items.map(item => item.id)] } : coreJourney;
   const hasSpirometryGraph = lesson.id === "respiratory-mechanics";
   const hasFigures = Boolean(pilot) || lesson.id === "cardiac-cycle" || hasSpirometryGraph || hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["myelin-and-glial-cells", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";

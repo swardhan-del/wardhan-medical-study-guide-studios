@@ -60,7 +60,7 @@ test('lung-observation: direct fragments select each explained task and restore 
   }
   await page.reload();await showAllPractice(page);
   await showAllPractice(page);
-  await expect(page.locator('.practice-question:visible:has(input[type=radio])')).toHaveCount(5);
+  await expect(page.locator('#concept-check-title .practice-question:visible:has(input[type=radio])')).toHaveCount(5);
   for (const app of added) await expect(page.locator('#question-' + app.id).getByRole('radio', { name: app.options![app.answer!].text, exact: true })).toBeChecked();
 });
 

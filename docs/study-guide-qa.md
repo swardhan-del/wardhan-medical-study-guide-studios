@@ -16,7 +16,7 @@
 
 ## Local browser results
 
-Chromium opened 31 primary navigation, footer, subject and changed feature destinations at a 375 px viewport. All returned a successful response and fit the page width. The old Biostatistics directory resolved to the new hub.
+Chromium opened 31 primary navigation, footer, subject and changed feature destinations at a 375 px viewport. All returned a successful response and fit the page width. The Biostatistics directory keeps its search and filters and links to the new hub.
 
 The final navigation and practice test passed on 20 sampled lessons and all 18 Anatomy Volume I lessons. The sample uses seed `20261116` and a Fisher–Yates shuffle of the library lesson list. Each pilot set rendered five questions with no feedback before an attempt. All 90 submissions revealed feedback only for attempted questions. The separate keyboard check completed the skip link, pagination, progress export and import, diagram labelling, and one pilot MCQ.
 

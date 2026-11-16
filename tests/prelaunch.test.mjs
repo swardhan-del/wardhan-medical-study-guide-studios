@@ -3,11 +3,12 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import registry from "../src/content/learning-registry.json" with {type:"json"};
 import {learningLessonIds,learningQuestionIds,learningDraftIds,practiceItems} from "../src/content/practice-registry.ts";
+import { volumeOnePilotItems } from "../src/content/anatomy-volume-one-pilot.ts";
 import {parseProgress,emptyProgress,gradeAttempt} from "../src/lib/learning-core.ts";
 
 test("the compact progress registry preserves every existing lesson, question and draft identifier",()=>{
-  const questionLessons = Object.fromEntries(practiceItems.filter(item => item.href.startsWith("/library/") || item.href.startsWith("/learn/renal/")).map(item => [item.id, item.topic]));
-  assert.deepEqual(registry,{learningLessonIds,learningQuestionIds,learningDraftIds,questionLessons});
+  const questionLessons = Object.fromEntries([...practiceItems, ...volumeOnePilotItems].filter(item => item.href.startsWith("/library/") || item.href.startsWith("/learn/renal/")).map(item => [item.id, item.topic]));
+  assert.deepEqual(registry,{learningLessonIds,learningQuestionIds:[...learningQuestionIds, ...volumeOnePilotItems.map(item => item.id)],learningDraftIds,questionLessons});
   for(const values of [registry.learningLessonIds, registry.learningQuestionIds, registry.learningDraftIds, Object.values(registry.questionLessons)])assert(values.every(id=>typeof id==="string"));
   for(const values of [registry.learningLessonIds, registry.learningQuestionIds, registry.learningDraftIds, Object.values(registry.questionLessons)])assert(values.every(id=>! /\s/.test(id)&&id.length<150));
 });

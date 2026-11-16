@@ -1,6 +1,5 @@
 import { anatomySystems, anatomySystemPractice } from "./anatomy-systems.ts";
 import { thoraxUnits, thoraxPractice } from "./thorax-models.ts";
-import { volumeOnePilotItems } from "./anatomy-volume-one-pilot.ts";
 import { typedCheckpointItems } from "./typed-checkpoints.ts";
 import type { CheckpointDefinition } from "../lib/conceptual-checkpoint.ts";
 import { sectionCheckpointItems, anatomyCheckpointItems, foundationCheckpointItems } from "./section-checkpoints.ts";
@@ -31,7 +30,6 @@ export const practiceItems: PracticeItem[] = [
   ...studio.questions,
   ...anatomyCheckpointItems,
   ...sectionCheckpointItems,
-  ...volumeOnePilotItems,
   ...foundationCheckpointItems,
   ...renalQuestions.map((q) => ({
     ...q, topic: q.lesson, subject: "physiology",
