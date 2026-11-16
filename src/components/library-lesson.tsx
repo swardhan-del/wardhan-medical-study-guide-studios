@@ -1,10 +1,10 @@
 import { sectionCheckpointItems } from "@/content/section-checkpoints";
 import { CardiacCycleDiagram } from "./cardiac-cycle-diagram";
 import { volumeOnePilotFor } from "@/content/anatomy-volume-one-pilot";
-import { VolumeOneDiagramActivity } from "./volume-one-diagram";
+import { VolumeOneDiagramEntry } from "./volume-one-diagram-entry";
 import { PracticeSequence } from "./practice-sequence";
 import { PracticeQuestion } from "./practice-question";
-import { AudiometryChartExplorer } from "./audiometry-chart-explorer";
+import { AudiometryChartEntry } from "./audiometry-chart-entry";
 import { AudiometrySectionReferences } from "./audiometry-section-references";
 import { RetinalLayerExplorer } from "./retinal-layer-explorer";
 import { RetinalDevelopmentExplorer } from "./retinal-development-explorer";
@@ -251,7 +251,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           {lesson.id === "cell-junctions" && <><JunctionMapExplorer /><BarrierReadoutExplorer /></>}
           {lesson.id === "cohort-case-control-denominators" && <CaseControlExplorer />}
           {lesson.id === "pdh-tca" && <PdhMechanismExplorer />}
-          {lesson.id === "biophysics-practical-audiometry" && <AudiometryChartExplorer />}
+          {lesson.id === "biophysics-practical-audiometry" && <AudiometryChartEntry />}
           {lesson.id === "retinal-structure-light-signal-direction" && <><RetinalLayerExplorer /><div id="retinal-specimens">{retinalSpecimens.map(specimen => <SpecimenExplorerEntry key={specimen.scope} {...specimen} figure={figures.find(figure => figure.id === specimen.data.figureId)!} imageLoading="lazy" markerMode="open-target" zoomable showResponse={false} />)}</div><RetinalDevelopmentExplorer /></>}
           {lesson.id === "vestibular-sensors-rotation-translation" && <><div id="vestibular-structure"><VestibularStructureExplorer /></div><div id="vestibular-motion"><VestibularMotionExplorer /></div></>}
           {lesson.id === "microscopy" && <><PreparationSequence/><HistologyDemonstrations/></>}
@@ -265,7 +265,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           <AnatomyIdentification lessonId={lesson.id} />
           {hasFigures && <span id="lesson-figures" />}
           {lesson.id === "cardiac-cycle" && <CardiacCycleDiagram />}
-          {pilot && <VolumeOneDiagramActivity diagram={pilot.diagram} />}
+          {pilot && <VolumeOneDiagramEntry diagram={pilot.diagram} />}
           <TeachingDiagram lessonId={lesson.id} />
           {hasSpirometryGraph && <SpirometryGraphExercise />}
           <LessonVisuals lessonId={lesson.id} />
