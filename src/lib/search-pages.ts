@@ -42,6 +42,7 @@ add(physiologyCoursePath, "Medical Physiology Full Course map", "Follow the orde
 add("/learn/renal", "Renal physiology: eight lessons with practice", "Study renal circulation, clearance, tubular transport, urine concentration and acid–base regulation, then apply the concepts in explained questions.");
 add("/practice/biophysics", "Biophysics practice: predict and calculate", "Use six interactive models to connect equations, graphs and medical measurement, then explain how changing a variable affects the result.");
 add("/practice/histology", "Histology practice: identify renal tubules", "Compare proximal tubule, distal tubule and collecting-duct schematics. Reveal structural clues and connect them to physiology.");
+add("/practice/spinal-cord", "Spinal cord practical: from slide to signal", "Orient a real spinal cord section, find the motor region and trace a withdrawal reflex in three explained activities.");
 add("/practice/oral", "Renal physiology oral-examination practice", "Practise eight renal physiology explanations using structured self-assessment rubrics and follow-up questions.");
 add("/practice/physiology", "Renal haemodynamics and blood-gas practice", "Explore afferent and efferent resistance, change ventilation and work through six blood-gas interpretation exercises.");
 add("/practice/renal-challenge", "Five-minute renal physiology challenge", "Answer five free questions on filtration, ADH and acid–base balance, then review the explanation for each answer.");

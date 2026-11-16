@@ -17,7 +17,7 @@ test("home search accepts a readable query at 320 px with enlarged text", async 
 
 test("the anatomy entry point offers all eleven models and links each to deeper teaching", async ({ page, request }) => {
   await page.goto("/");
-  await page.getByRole("link", { name: "Explore anatomy models" }).click();
+  await page.getByRole("link", { name: /Explore the body systems/ }).click();
   await expect(page.getByRole("heading", { level: 1, name: "Explore the body systems" })).toBeVisible();
   const models = page.getByRole("list", { name: "Body systems" });
   await expect(models.getByRole("link")).toHaveCount(11);

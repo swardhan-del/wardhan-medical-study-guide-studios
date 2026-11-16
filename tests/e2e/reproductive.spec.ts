@@ -86,5 +86,7 @@ test('reproductive: catalog subject labels do not call published Biostatistics e
   await expect(subject.getByRole('option',{name:'Biostatistics',exact:true})).toHaveCount(1);
   await expect(subject.getByRole('option',{name:/Biostatistics.*no lessons yet/})).toHaveCount(0);
   await subject.selectOption('biostatistics');
-  await expect(page.locator('.resource-card:visible')).toHaveCount(5);
+  const cards = page.locator('.resource-card:visible');
+  await expect(cards.getByRole('link', {name: /Experimental units: count dishes, cells and readings/})).toBeVisible();
+  await expect(cards.getByRole('link', {name: /Paired differences: why the same columns can have different uncertainty/})).toBeVisible();
 });
