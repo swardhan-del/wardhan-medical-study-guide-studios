@@ -6,9 +6,10 @@ import type { JourneyLesson } from "@/lib/lesson-journeys";
 import { journeyStatus, stageForHash } from "@/lib/learning-journey";
 import { rememberLesson, updateJourney, updateLearning, useLearning } from "./learning-store";
 
-export function LessonJourney({ lesson }: { lesson: JourneyLesson }) {
+export function LessonJourney({ lesson, knowledgeQuestionIds }: { lesson: JourneyLesson; knowledgeQuestionIds: string[] }) {
   const { ready, persistent, data } = useLearning();
   const status = journeyStatus(data, lesson.id, lesson.questions);
+  const knowledgeAttempted = knowledgeQuestionIds.filter(id => data.answers[id] || data.checkpoints[id]).length;
   const current = status.complete ? "continue" : data.resume?.lesson === lesson.id ? data.resume.stage : "learn";
   useEffect(() => {
     const remember = () => rememberLesson(lesson.id, window.location.hash ? stageForHash(window.location.hash) : undefined);
@@ -19,9 +20,9 @@ export function LessonJourney({ lesson }: { lesson: JourneyLesson }) {
   return <section className="study-panel lesson-journey" aria-labelledby="journey-title">
     <div className="journey-heading"><h2 id="journey-title">Your lesson journey</h2><Link href="/library">Back to library</Link></div>
     <nav aria-label="Learning journey"><ol className="journey-steps">
-      <li><Link href={lesson.subject === "biostatistics" ? "/subjects/biostatistics" : `/study/${lesson.subject}`}>Choose subject</Link></li>
+      <li><Link href={`/study/${lesson.subject}`}>Choose subject</Link></li>
       <li><a href="#lesson-objectives" aria-current={current === "learn" ? "step" : undefined} onClick={() => rememberLesson(lesson.id, "learn")}>Study explanation</a><span>{data.journey[lesson.id]?.read ? "Reviewed" : "Start here"}</span></li>
-      <li><a href="#concept-check-title" aria-current={current === "practice" ? "step" : undefined} onClick={() => rememberLesson(lesson.id, "practice")}>Practice</a><span>{status.attempted} / {status.total} questions attempted</span></li>
+      <li><a href="#concept-check-title" aria-current={current === "practice" ? "step" : undefined} onClick={() => rememberLesson(lesson.id, "practice")}>Practice</a><span>{knowledgeAttempted} / {knowledgeQuestionIds.length} Knowledge Check questions attempted</span></li>
       <li><a href="#lesson-review" aria-current={current === "summary" ? "step" : undefined} onClick={() => rememberLesson(lesson.id, "summary")}>Review summary</a><span>{data.journey[lesson.id]?.reviewed ? "Reviewed" : "To review"}</span></li>
       <li><a href="#continue-learning" aria-current={current === "continue" ? "step" : undefined}>Continue learning</a><span>{status.complete ? "Lesson marked complete" : "Your next step"}</span></li>
     </ol></nav>

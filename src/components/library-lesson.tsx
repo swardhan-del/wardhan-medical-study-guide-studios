@@ -86,7 +86,7 @@ import type {
 } from "@/lib/library-types";
 import { getSiteUrl } from "@/lib/site-url";
 import { SaveButton } from "./save-button";
-import { ConceptCheck } from "./concept-check";
+import { ConceptCheck, conceptCheckEntries } from "./concept-check";
 import type { ReactNode } from "react";
 
 export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; reviewVisuals?: ReactNode }) {
@@ -115,6 +115,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const retrievalQuestions = studio.questions.filter(q => q.topic === lesson.id && "heading" in q);
   const applicationQuestions = [...transfer.questions, ...studio.questions]
     .filter(q => q.topic === lesson.id && !("heading" in q));
+  const knowledgeCheck = conceptCheckEntries(lesson, [...retrievalQuestions, ...applicationQuestions].map((q, index) => ({ item: q, title: `${"heading" in q && typeof q.heading === "string" ? q.heading : "title" in q && typeof q.title === "string" ? q.title : "Apply the concept in a different setting"} — practice ${index + 1}` })));
   const related = lesson.related
     .map((id) => publicCatalog.find((r) => r.id === id))
     .filter((r) => r !== undefined);
@@ -150,7 +151,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         </div>
       </header>
       {["microscopy", "lymphoid-organs", "histology-foundations-tissues"].includes(lesson.id) && <VisualStudioInvitation compact />}
-      <LessonJourney lesson={journey} />
+      <LessonJourney lesson={journey} knowledgeQuestionIds={knowledgeCheck.map(({ item }) => item.id)} />
       <HistologyGuidedPathReturn lessonId={lesson.id} />
       {lesson.id === "thorax-nerve-relations" && <p className="study-notice">New to anatomy? <Link href="/start/anatomy">Review position, directions and body planes first</Link>.</p>}
       {lesson.subject === "biophysics" && <BiophysicsLessonSequence lessonId={lesson.id} />}
@@ -313,7 +314,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           <ConceptCheck
             key={`concept-${lesson.id}`}
             lesson={{ id: lesson.id, question: lesson.question }}
-            additional={[...retrievalQuestions, ...applicationQuestions].map((q, index) => ({ item: q, title: `${"heading" in q && typeof q.heading === "string" ? q.heading : "title" in q && typeof q.title === "string" ? q.title : "Apply the concept in a different setting"} — practice ${index + 1}` }))}
+            entries={knowledgeCheck}
           />
           <AnatomyPractice lessonId={lesson.id} />
           <span id="studio-practice" /><span id="apply-the-concept" />
