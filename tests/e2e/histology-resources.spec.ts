@@ -71,6 +71,7 @@ test("histology foundations is reachable through the beginner path, library sear
  test("flagship visual support is labelled, responsive and keyboard accessible", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/library/histology-foundations-tissues");
+  await page.locator("#lesson-source > summary").click();
   for (const title of ["Learning Objectives", "Core Concepts", "Guided Explanation", "Visual Study Prompts", "Worked Identification Example", "Knowledge Check", "Clinical and Applied Questions", "Oral Examination Prompts", "Summary Checklist", "Sources and Further Reading"])
     await expect(page.getByRole("heading", { name: title, exact: true })).toBeVisible();
   const diagrams = page.locator("[data-study-diagram]:visible");

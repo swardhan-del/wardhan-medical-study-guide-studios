@@ -27,10 +27,10 @@ export function ContinueLearning({ lessons }: { lessons: ResumeLesson[] }) {
   </> : null;
   return <section className="study-panel continue-card" aria-labelledby="continue-title">
     <p className="eyebrow">Your next study session</p><h2 id="continue-title">Continue where you left off</h2>
-    {!ready ? <p role="status">Loading local progress…</p> : showPracticalFirst ? practicalLinks : last && data.resume ? <>
+    {showPracticalFirst ? practicalLinks : last && data.resume ? <>
       <p><strong>{last.title}</strong> · {completed ? "Marked complete" : { learn: "Explanation", practice: "Practice", summary: "Summary" }[data.resume.stage]}</p>
       <div className="action-row"><Link className="button button-primary" href={completed ? last.next.href : href}>{completed ? `Next: ${last.next.title}` : "Resume lesson"}</Link>{completed && <Link href={href}>Revisit completed lesson</Link>}<Link href="/study">View my progress</Link></div>
-    </> : <><p>Your next session starts with one free lesson. Choose a subject, practise its questions, then save the summary.</p><div className="action-row"><Link className="button button-primary" href="/start#choose-subject">Choose my first subject</Link><Link href="/starter-pack">Get the free starter pack</Link></div></>}
+    </> : <><p>No lesson started in this browser yet. Choose a subject to begin.</p><div className="action-row"><Link className="button button-primary" href="/start#choose-subject">Choose my first subject</Link><Link href="/starter-pack">Get the free starter pack</Link></div></>}
     {ready && !showPracticalFirst && practicalLinks}
     <p className="muted-note">{ready && !persistent ? "Browser storage is unavailable; progress lasts only for this visit." : "Saved on this browser only. Clearing site data removes it; My Study has export and reset controls."}</p>
   </section>;

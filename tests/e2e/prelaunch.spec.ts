@@ -67,6 +67,7 @@ test("public teaching remains readable without JavaScript",async({browser},info)
   for(const path of ["/library/anatomy-foundations","/library/histology-foundations-tissues"]) {
     await page.goto(path);
     await expect(page.getByRole("heading",{name:"Learning Objectives",exact:true})).toBeVisible();
+    await page.locator("#lesson-source > summary").click();
     await expect(page.getByRole("heading",{name:"Sources and Further Reading",exact:true})).toBeVisible();
     await expect(page.locator(".clinical-review-notice")).toContainText("not medical advice");
   }

@@ -73,6 +73,11 @@ export default function AboutPage() {
             identify the qualified reviewer, date, exact content version,
             scope and any unresolved corrections before reviewed status is claimed.
           </p>
+          <h2>How we use AI and sources</h2>
+          <p>AI assists with drafting, organising lessons, writing practice questions and building some learning activities. Source lists identify the material used for each lesson.</p>
+          <p>Sources include the author’s study guides, public textbooks such as OpenStax, clinical and scientific reference chapters such as StatPearls in NCBI Bookshelf and the Merck Manual, and research or guidelines when cited. Figure captions identify the source and licence.</p>
+          <h2>Corrections policy</h2>
+          <p>Send the lesson link, the wording you are questioning and, if available, a public reference. We check the evidence, update the lesson if needed and record substantive changes in the <Link href="/corrections">public corrections log</Link>.</p>
           <h2>Help improve the library</h2>
           <p>
             I welcome questions, corrections and suggestions for clearer

@@ -2,7 +2,7 @@ import { searchMetadata } from "@/lib/search-metadata";
 import Link from "next/link";
 export const metadata = searchMetadata("/terms");
 export default function TermsPage() {
-  return <div className="site-container library-page"><header className="library-heading"><p className="eyebrow">Independent study support</p><h1>Terms and educational disclaimer</h1></header><div className="privacy-copy">
+  return <div className="site-container library-page"><header className="library-heading"><p className="eyebrow">Independent study support</p><h1>Terms and educational disclaimer</h1><p>Effective <time dateTime="2026-11-16">16 November 2026</time>.</p></header><div className="privacy-copy">
     <h2>Use alongside your course</h2><p>Study Guide Studios is an independent educational project. It is not affiliated with or endorsed by a university or examining body. These resources support study; they do not replace official course material, your syllabus, teaching, supervised practical work or assessment guidance.</p>
     <h2>Not medical advice</h2><p>The lessons and examples are for education, not diagnosis, treatment or individual health decisions. They do not establish a clinician–patient relationship. Seek a qualified health professional for personal medical advice and local emergency services for urgent help.</p>
     <h2>Accuracy and limitations</h2><p>Check the sources and editorial notes for each lesson. Some content is AI-assisted, and independent clinical peer review has not been completed. Errors and gaps may remain; no exam result or complete syllabus coverage is guaranteed. <Link href="/contact">Report a correction or accessibility issue</Link>.</p>

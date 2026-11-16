@@ -42,7 +42,8 @@ import { VisualStudioInvitation } from "./visual-studio-invitation";
 import { LymphoidPractical, PreparationSequence, HistologyDemonstrations } from "./histology-practical";
 import { CaseControlExplorer } from "./case-control-explorer";
 import { qualityForLesson, hasRecordedReview } from "@/lib/lesson-quality";
-import { AboutLesson } from "./about-lesson";
+import { anatomyVocabulary } from "@/content/anatomy-volume-vocabulary";
+import { LessonReviewStatus, AboutLesson } from "./about-lesson";
 import { TopicGuideLinks } from "@/components/topic-guide-links";
 import { StructuredData } from "./structured-data";
 import { lessonSchema } from "@/lib/structured-data";
@@ -90,11 +91,9 @@ import type { ReactNode } from "react";
 
 export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; reviewVisuals?: ReactNode }) {
   const editorialRecorded = !qualityForLesson(lesson.id) || hasRecordedReview(lesson.id, "editorial");
-  const clinicallyReviewed = qualityForLesson(lesson.id)?.contentStatus === "independently-clinically-reviewed";
   const navigation = orderedLessonNavigation(lesson.subject, lesson.id);
   const journey = journeyLessons.find(item => item.id === lesson.id)!;
   const anatomyFoundations = lesson.id === "anatomy-foundations";
-  const originalReferenceTeaching = ["retinal-structure-light-signal-direction", "vestibular-sensors-rotation-translation", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "neurulation", "placenta", "muscle-histology", "vessel-histology", "blood-marrow", "connective-tissue", "cartilage-bone", "epithelia", "cell-junctions", "liver-pancreas", "gi-histology", "renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const subjectEntry = newEntryLessonIds.includes(lesson.id);
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
   const reviewedSupplementalPractice = ["retinal-structure-light-signal-direction", "vestibular-sensors-rotation-translation", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "neurulation", "placenta", "muscle-histology", "vessel-histology", "blood-marrow", "connective-tissue", "cartilage-bone", "epithelia", "cell-junctions", "liver-pancreas", "gi-histology", "renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
@@ -103,6 +102,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const hasFigures = hasSpirometryGraph || hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["myelin-and-glial-cells", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
   const foundation = foundations[lesson.subject];
+  const vocabulary = lesson.subject === "anatomy" ? anatomyVocabulary(lesson.id) : foundation;
   const subject = subjectInterests.find((s) => s.id === lesson.subject) ?? librarySubjects.find((s) => s.id === lesson.subject)!;
   const source = (sourceData as Record<string, LibrarySource>)[lesson.source];
   const topicReferences = references as Record<
@@ -110,6 +110,8 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
     { title: string; url: string; checkedAt: string; supportingIds?: string[]; supportingReferences?: { title: string; url: string }[] }
   >;
   const reference = topicReferences[lesson.id];
+  const reading = [reference, ...(reference.supportingReferences ?? []),
+    ...(reference.supportingIds ?? []).map(id => topicReferences[id])];
   const retrievalQuestions = studio.questions.filter(q => q.topic === lesson.id && "heading" in q);
   const applicationQuestions = [...transfer.questions, ...studio.questions]
     .filter(q => q.topic === lesson.id && !("heading" in q));
@@ -130,6 +132,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           {subject.title} · {lesson.minutes} minute {lesson.workedExample ? "guided lesson" : "concept introduction"}
         </p>
         <h1>{lesson.title}</h1>
+        <LessonReviewStatus lessonId={lesson.id} updatedAt={lesson.updatedAt} />
         <p className="interior-lede">{lesson.summary}</p>
         <p className="muted-note">
           Read the explanation, check your understanding and revisit the recap. Further reading and editorial notes are included below.
@@ -147,7 +150,6 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         </div>
       </header>
       {["microscopy", "lymphoid-organs", "histology-foundations-tissues"].includes(lesson.id) && <VisualStudioInvitation compact />}
-      <AboutLesson lessonId={lesson.id} />
       <LessonJourney lesson={journey} />
       <HistologyGuidedPathReturn lessonId={lesson.id} />
       {lesson.id === "thorax-nerve-relations" && <p className="study-notice">New to anatomy? <Link href="/start/anatomy">Review position, directions and body planes first</Link>.</p>}
@@ -370,40 +372,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           </div>
         </aside>
       </div>
-      <section className="library-source-note" id="lesson-source">
-        <p className="eyebrow">Source and editorial record</p>
-        {flagship ? <><h2>Sources and Further Reading</h2><h3>{source.title}</h3></> : <h2>{source.title}</h2>}
-        <p>{source.edition}</p>
-        <p>
-          <strong>Source section:</strong> {lesson.section}
-        </p>
-        <p>{source.context}</p>
-        <h3>Further reading for this topic</h3>
-        {reference && (
-          <p>
-            <a href={reference.url} target="_blank" rel="noreferrer">
-              {reference.title}
-              <span className="visually-hidden"> (opens in a new tab)</span> ↗
-            </a>
-          </p>
-        )}
-        {reference.supportingReferences && <ul>{reference.supportingReferences.map(ref => <li key={ref.url}><a href={ref.url}>{ref.title}</a></li>)}</ul>}
-        {reference.supportingIds && <ul>{reference.supportingIds.map(id => (
-          <li key={id}><a href={topicReferences[id].url} target="_blank" rel="noreferrer">{topicReferences[id].title}<span className="visually-hidden"> (opens in a new tab)</span> ↗</a></li>
-        ))}</ul>}
-        <p className="muted-note">
-          {anatomyFoundations || subjectEntry || originalReferenceTeaching ? `Scientific references checked ${reference.checkedAt}. The named public sections support the concepts and original teaching examples on this page.` : <>Further-reading link checked {reference.checkedAt}. The source guide above identifies the authored material; this public reference supports further study of this topic.</>}
-        </p>
-        <p>
-          Web lesson by Wardhan Medical Study Guide Studios. Updated{" "}
-          <time dateTime={lesson.updatedAt}>{lesson.updatedAt}</time>.
-          {editorialRecorded ? "AI-assisted, source-checked educational adaptation; " : "AI-assisted educational adaptation; source and editorial review are pending. "}{clinicallyReviewed ? "independent clinical review is recorded in About this lesson." : "independent clinical peer review has not been completed."}
-        </p>
-        <p className="muted-note">
-          {anatomyFoundations || subjectEntry || originalReferenceTeaching ? `The scientific references are publicly accessible. This lesson publishes newly written explanations, ${subjectEntry || originalReferenceTeaching ? "text comparisons" : "diagrams"} and self-assessment questions.` : <>The full source edition remains in the controlled library. This page publishes an original teaching adaptation and original {flagship ? "self-assessment" : "recall"} questions.</>}
-        </p>
-        <CorrectionLink />
-      </section>
+
       <TopicGuideLinks lessonId={lesson.id} />
       <nav className="action-row concept-end" aria-label="Continue studying">
         <Link
@@ -418,6 +387,20 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
       </nav>
       <LessonVideos lessonId={lesson.id} />
       {(audioData.records as StudyAudioRecord[]).filter(a => a.lessonId === lesson.id).map(a => <StudyAudio key={a.lessonId} audio={a} />)}
+      <details className="library-source-note" id="lesson-source">
+        <summary>Sources and Further Reading</summary>
+        <h2>Sources and Further Reading</h2>
+        <h3>{source.title}</h3>
+        <p>{source.edition}</p>
+        <p><strong>Source section:</strong> {lesson.section}</p>
+        <p>{source.context}</p>
+        <h3>Public references</h3>
+        <ol>{reading.map(ref => <li key={ref.url}><a href={ref.url}>{ref.title}</a></li>)}</ol>
+        <p className="muted-note">Primary public reference checked <time dateTime={reference.checkedAt}>{reference.checkedAt}</time>.</p>
+        <p>{editorialRecorded ? "AI-assisted educational adaptation with source notes." : "AI-assisted educational adaptation. Editorial review is pending."}</p>
+        <AboutLesson lessonId={lesson.id} />
+        <CorrectionLink />
+      </details>
     </article>
   );
 }

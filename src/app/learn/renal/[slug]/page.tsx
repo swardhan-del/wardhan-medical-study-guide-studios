@@ -1,6 +1,6 @@
 import { GuideLessonNavigation } from "@/components/guide-lesson-navigation";
 import { orderedLessonNavigation } from "@/lib/ordered-lesson-navigation";
-import { AboutLesson } from "@/components/about-lesson";
+import { LessonReviewStatus } from "@/components/about-lesson";
 import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
 import { StructuredData } from "@/components/structured-data";
 import { lessonSchema } from "@/lib/structured-data";
@@ -51,10 +51,10 @@ export default async function RenalLessonPage({ params }: Props) {
           Lesson {index + 1} of 8 · {lesson.minutes} minutes + self-assessment
         </p>
         <h1>{lesson.title}</h1>
+        <LessonReviewStatus lessonId={`renal-${slug}`} updatedAt={renalRevision} />
         <p className="interior-lede">{lesson.description}</p>
         <SaveButton id={`renal-${slug}`} title={lesson.title} />
       </header>
-      <AboutLesson lessonId={`renal-${slug}`} />
       <div className="lesson-layout">
         <aside className="lesson-outline">
           <h2>Learning Objectives</h2>

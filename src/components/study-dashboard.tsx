@@ -1,6 +1,5 @@
 "use client";
 import { FirstSessionReview } from "./first-session-review";
-import { ProgressTransfer } from "./progress-transfer";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
@@ -33,7 +32,7 @@ export function StudyDashboard({ reviewFigures }: { reviewFigures: PublicFigure[
       document.removeEventListener("visibilitychange", refresh);
     };
   }, []);
-  if (!ready) return <p role="status">Loading your study progress…</p>;
+  if (!ready) return null;
   const mistakes = practiceItems.filter(
     (q) => data.answers[q.id] && !data.answers[q.id].lastCorrect,
   );
@@ -168,7 +167,6 @@ export function StudyDashboard({ reviewFigures }: { reviewFigures: PublicFigure[
           </Link>
         </div>
       </section>
-      <ProgressTransfer />
       <details className="study-details">
         <summary>Manage study progress</summary>
         <p>
