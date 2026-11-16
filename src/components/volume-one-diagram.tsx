@@ -43,6 +43,7 @@ function NodeDiagram({ diagram, labels }: { diagram: VolumeOneDiagram; labels: b
 }
 
 export function VolumeOneDiagramActivity({ diagram }: { diagram: VolumeOneDiagram }) {
+  const formId = useId();
   const [responses, setResponses] = useState<Record<number, string>>({});
   const [checked, setChecked] = useState(false);
   const options = diagram.nodes.map(([label]) => label).sort();
@@ -63,15 +64,14 @@ export function VolumeOneDiagramActivity({ diagram }: { diagram: VolumeOneDiagra
         <fieldset>
           <legend>Choose a label for each marker</legend>
           {diagram.nodes.map(([label], index) => <div key={label} className="study-form">
-            <label>Marker {index + 1}
-              <select required value={responses[index] ?? ""} onChange={event => {
+            <label htmlFor={formId + "-" + index}>Marker {index + 1}</label>
+              <select id={formId + "-" + index} required value={responses[index] ?? ""} onChange={event => {
                 setChecked(false);
                 setResponses({ ...responses, [index]: event.target.value });
               }}>
                 <option value="">Choose a label</option>
                 {options.map(option => <option key={option} value={option}>{option}</option>)}
               </select>
-            </label>
             {checked && <p>{responses[index] === label ? "Correct" : `Correct label: ${label}`}</p>}
           </div>)}
         </fieldset>
