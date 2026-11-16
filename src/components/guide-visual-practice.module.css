@@ -1,0 +1,136 @@
+.panel {
+  margin-block: 1.4rem;
+  padding: clamp(0.9rem, 3vw, 2rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas: "heading visual" "prompt visual";
+  align-items: start;
+  gap: clamp(0.9rem, 3vw, 2.2rem);
+  background: #edf3f1;
+  color: #142f31;
+  border: 1px solid #bfd3ca;
+  border-radius: 1.2rem;
+  scroll-margin-top: 5rem;
+  overflow-wrap: anywhere;
+}
+
+.heading {
+  grid-area: heading;
+  align-self: end;
+}
+
+.heading :is(h2, h3) {
+  margin: 0;
+}
+
+.kicker {
+  font-weight: 750;
+  color: #245952;
+  margin: 0 0 0.25rem;
+}
+
+.prompt {
+  grid-area: prompt;
+}
+
+.prompt > p:first-child {
+  margin-top: 0;
+}
+
+.prompt details {
+  margin-block: 0.85rem;
+  padding: 0.6rem 0.8rem;
+  background: white;
+  border: 1px solid #c2d3cb;
+  border-radius: 0.55rem;
+}
+
+.prompt summary {
+  color: #245952;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.prompt details > p {
+  margin-bottom: 0;
+}
+
+.prompt > a {
+  white-space: normal;
+  text-align: center;
+}
+
+.figure, .model {
+  grid-area: visual;
+  align-self: center;
+  margin: 0;
+  padding: clamp(0.65rem, 2vw, 1.2rem);
+  border-radius: 0.75rem;
+  background: #193b3b;
+  color: #f4faf5;
+}
+
+.figure img {
+  width: 100%;
+  max-height: 23rem;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 0.35rem;
+  background: #fff;
+}
+
+.figure figcaption {
+  margin-top: 0.5rem;
+  line-height: 1.45;
+}
+
+.figure a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.model figcaption {
+  margin-bottom: 0.9rem;
+  font-weight: 700;
+}
+
+.model ol, .model ul {
+  display: grid;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.model ul {
+  gap: 0.55rem;
+  list-style: none;
+}
+
+.model li {
+  background: #255250;
+  border-inline-start: 0.2rem solid #d9bb75;
+  border-radius: 0.4rem;
+  padding: 0.55rem 0.7rem;
+  line-height: 1.45;
+  position: relative;
+}
+
+.model ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  bottom: -1.05rem;
+  width: 0.45rem;
+  height: 0.85rem;
+  background: #d9bb75;
+  clip-path: polygon(35% 0, 65% 0, 65% 55%, 100% 55%, 50% 100%, 0 55%, 35% 55%);
+}
+
+@media (max-width: 720px) {
+  .panel {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "heading" "visual" "prompt";
+  }
+}

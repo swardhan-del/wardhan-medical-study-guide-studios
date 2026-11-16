@@ -49,6 +49,5 @@ export default async function SubjectStudyPage({ params }: Props) {
    {subject !== "cell-biology" && <TopicGuideLinks subject={subject} />}
    <SubjectCoverage subject={subject} />
    <WaitlistCta />
-   <p className="muted-note">These are focused teaching adaptations, with source references on each lesson. AI-assisted educational content; independent clinical peer review has not been completed. Your practice stays in this browser.</p>
  </div>;
 }

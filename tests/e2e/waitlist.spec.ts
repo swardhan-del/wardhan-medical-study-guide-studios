@@ -102,7 +102,7 @@ test('home, all subject hubs and starter pack expose the honest waitlist invitat
   for (const path of ['/', '/starter-pack', ...['anatomy', 'histology', 'physiology', 'biochemistry', 'genetics', 'biophysics', 'cell-biology'].flatMap(id => [`/subjects/${id}`, `/study/${id}`])]) {
     const response = await page.goto(path); expect(response?.status()).toBe(200);
     const cta = page.getByRole('complementary', { name: 'Pre-launch waitlist' });
-    await expect(cta).toContainText('no confirmed launch date');
+    await expect(cta.getByRole('heading', { name: 'Get updates on new study resources' })).toBeVisible();
     await expect(cta.getByRole('link', { name: 'Explore the waitlist' })).toHaveAttribute('href', '/waitlist');
   }
   await page.getByRole('link', { name: 'Explore the waitlist' }).click();

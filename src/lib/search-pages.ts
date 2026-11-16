@@ -4,7 +4,7 @@ import { qualityAllowsIndexing } from "./lesson-quality.ts";
 import catalog from "../content/public-catalog.json" with { type: "json" };
 import taxonomy from "../content/library-taxonomy.json" with { type: "json" };
 import videos from "../content/public-videos.json" with { type: "json" };
-import { subjectInterests } from "../content/subjects.ts";
+import { guideSubjects, subjectInterests } from "../content/subjects.ts";
 import { foundations } from "../content/foundations.ts";
 import { renalLessons } from "../content/renal-course.ts";
 import { anatomyLearningPages } from "../content/anatomy-learning.ts";
@@ -56,7 +56,9 @@ for (const system of anatomySystems) {
 
 for (const subject of subjectInterests) {
   add(`/study/${subject.id}`, `${subject.title}: lessons and learning path`, `Start ${subject.title.toLowerCase()} with a guided lesson, then find practice, revision notes and the published topic sequence.`);
-  add(`/study/${subject.id}/guide`, `${subject.title}: guide parts and visuals`, `Browse the available ${subject.title.toLowerCase()} lesson groups, released figures and links to printable revision notes.`, false, "Secondary guide outline with coverage gaps");
+}
+for (const subject of guideSubjects) {
+  add(`/study/${subject.id}/guide`, `${subject.title}: guide parts and visuals`, `Try a visual exercise in ${subject.title.toLowerCase()}, follow lessons in course order, or print revision notes.`, false, "Secondary guide outline with coverage gaps");
   add(`/study/${subject.id}/revision`, `${subject.title}: printable revision notes`, `Print the published ${subject.title.toLowerCase()} lesson summaries and questions, with an optional answer key.`, false, "Print duplicate of published lessons");
 }
 for (const subject of taxonomy.subjects) {

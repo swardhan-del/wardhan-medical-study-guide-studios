@@ -2,7 +2,8 @@ import { mkdirSync } from "node:fs";
 import { test, expect } from '@playwright/test';
 import guide from '../../src/content/printable-guides.json';
 import library from '../../src/content/library-lessons.json';
-const subjects = ['anatomy', 'histology', 'cell-biology', 'biochemistry', 'physiology', 'genetics', 'biophysics'];
+import { guideVisualPractice } from '../../src/content/guide-visual-practice';
+const subjects = ['anatomy', 'histology', 'cell-biology', 'biochemistry', 'physiology', 'genetics', 'biophysics', 'biostatistics'];
 for (const subject of subjects) {
   test(`${subject}: guide parts connect to printable notes without overflow`, async ({ page }, testInfo) => {
     await page.goto(`/study/${subject}/guide`);
@@ -53,7 +54,8 @@ test('the histology sequence stops at the next numbered part even when no lesson
   await next.getByRole('link', { name: /^Next part: Oral cavity/ }).click();
   await expect(page).toHaveURL(/#histology-part-08$/);
   const empty = page.locator('#histology-part-08');
-  await expect(empty).toContainText('Coverage gap');
+  await expect(empty).toContainText('Course materials');
+  await expect(empty.getByRole('heading', {name: 'Lessons and questions'})).toHaveCount(0);
   await expect(empty.getByRole('link', { name: /^Previous part: Respiratory system/ })).toHaveAttribute('href', '/study/histology/guide#histology-part-07');
   await empty.getByRole('link', { name: /^Next part: Stomach/ }).click();
   await expect(page).toHaveURL(/#histology-part-09$/);
@@ -102,4 +104,32 @@ test('Part 14 practical teaches orientation, motor region and withdrawal with ex
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
   await practical.getByRole('button', { name: 'Try the practical again' }).click();
   await expect(practical).toContainText('0 of 3 complete');
+});
+
+for (const subject of subjects) {
+  test(`${subject}: visual practice has explained feedback at enlarged text`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 900 });
+    const practice = guideVisualPractice[subject];
+    await page.goto(`/study/${subject}/guide`);
+    await page.getByRole('link', { name: 'Try a visual exercise', exact: true }).click();
+    const panel = page.getByRole('region', { name: practice.title });
+    await expect(panel.locator('figure')).toBeVisible();
+    await expect(panel.getByText(practice.question, { exact: true })).toBeVisible();
+    await expect(panel.getByText(practice.explanation, { exact: true })).toBeHidden();
+    await panel.getByText('Check your reasoning', {exact: true}).click();
+    await expect(panel.getByText(practice.explanation, { exact: true })).toBeVisible();
+    await expect(panel.getByRole('link', { name: practice.action })).toHaveAttribute('href', practice.href);
+    await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
+  });
+}
+
+test('Biostatistics and Immunology link to their published work', async ({ page }) => {
+  await page.goto('/subjects/biostatistics');
+  await page.getByRole('link', { name: 'Ordered guide', exact: true }).click();
+  await expect(page).toHaveURL('/study/biostatistics/guide');
+  await page.goto('/study/genetics/guide#study-immunology');
+  const immunology = guideVisualPractice.immunology;
+  const panel = page.getByRole('region', {name: immunology.title});
+  await expect(panel.getByRole('link', {name: immunology.action})).toHaveAttribute('href', immunology.href);
 });

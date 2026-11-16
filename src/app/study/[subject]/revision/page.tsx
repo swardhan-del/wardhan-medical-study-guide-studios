@@ -13,7 +13,8 @@ import { optionOrder } from "@/lib/option-order";
 import { figuresForResource } from "@/lib/figures";
 import { TeachingDiagram } from "@/components/teaching-diagram";
 import { notFound } from "next/navigation";
-import { studySubjects, subjectLessons } from "@/lib/study-collections";
+import { subjectLessons } from "@/lib/study-collections";
+import { guideSubjects } from "@/content/subjects";
 import questions from "@/content/study-questions.json";
 import references from "@/content/lesson-references.json";
 import { PrintStudy } from "@/components/print-study";
@@ -22,19 +23,19 @@ const anatomyRecord = (id: string) => anatomyCourse.records.find(r => r.lessonId
 const applicationQuestions = [...transfer.questions, ...questions.questions];
 const answerLetter = (id: string, count: number, answer: number) => String.fromCharCode(65 + optionOrder(id, count).indexOf(answer));
 type Props = { params: Promise<{ subject: string }> };
-export function generateStaticParams() { return studySubjects.map(s => ({ subject: s.id })); }
+export function generateStaticParams() { return guideSubjects.map(s => ({ subject: s.id })); }
 export async function generateMetadata({ params }: Props) {
   const { subject } = await params;
   return searchMetadata(`/study/${subject}/revision`);
 }
 export default async function RevisionPage({ params }: Props) {
- const { subject } = await params, s = studySubjects.find(s => s.id === subject); if (!s) notFound();
+ const { subject } = await params, s = guideSubjects.find(s => s.id === subject); if (!s) notFound();
  const lessons = subjectLessons(subject), groups = partsForSubject(subject);
  const refs = references as Record<string, { title: string; url: string; supportingIds?: string[]; supportingReferences?: { title: string; url: string }[] }>;
  return <article className="site-container revision-page">
-  <nav className="breadcrumbs print-control" aria-label="Breadcrumb"><Link href="/study">My Study</Link><span> / </span><Link href={"/study/" + subject}>{s.title}</Link><span aria-current="page"> / Revision notes</span></nav>
+  <nav className="breadcrumbs print-control" aria-label="Breadcrumb"><Link href="/study">My Study</Link><span> / </span><Link href={s.href}>{s.title}</Link><span aria-current="page"> / Revision notes</span></nav>
   <header><p className="muted-note">Wardhan Medical Study Guide Studios</p><p className="eyebrow">Read · Recall · Explain</p><h1>{s.title}: revision notes</h1><p>Concise notes and original questions from the website lessons. Try each question before checking the answer key.</p><p className="muted-note">AI-assisted, source-checked teaching adaptations, updated {lessons.map(l => l.updatedAt).sort().at(-1)}. Independent clinical peer review has not been completed. This is a web revision collection, not the complete source book.</p><PrintStudy /></header>
-  <p className="print-control"><Link href={"/study/" + subject + "/guide"}>Browse guide parts and released visuals</Link></p>
+  <p className="print-control"><Link href={"/study/" + subject + "/guide"}>Browse guide parts and visuals</Link></p>
   <PrintableGuide parts={groups.map(g => {
     const ordered = orderedGuideLessons(g.lessonIds);
     const coursePart = subject === "physiology" ? physiologyCourse.parts.find(part => part.guidePartId === g.id) : undefined;
