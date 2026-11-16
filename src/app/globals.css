@@ -4390,3 +4390,17 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
 .catalog-more select {
   max-width: 100%;
 }
+
+.volume-one-diagram {
+  margin: 0 0 1rem;
+}
+
+.volume-one-diagram svg {
+  display: block;
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.volume-one-labelling:has(> details[open]) > figure {
+  display: none;
+}

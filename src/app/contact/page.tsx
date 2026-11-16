@@ -1,5 +1,6 @@
 import { searchMetadata } from "@/lib/search-metadata";
 import { CorrectionForm } from "@/components/correction-form";
+import { volumeOnePilotItems } from "@/content/anatomy-volume-one-pilot";
 import { practiceItems } from "@/content/practice-registry";
 import { studio } from "@/content/studio";
 export const metadata = searchMetadata("/contact");
@@ -10,7 +11,7 @@ export default async function ContactPage({
 }) {
   const params = await searchParams;
   const question = typeof params.question === "string"
-    ? practiceItems.find((item) => item.id === params.question && item.answer !== undefined)
+    ? [...practiceItems, ...volumeOnePilotItems].find((item) => item.id === params.question && item.answer !== undefined)
     : undefined;
   const lessonPath =
     typeof params.lesson === "string" &&
