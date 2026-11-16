@@ -14,7 +14,7 @@ function labelLines(label: string) {
 function NodeDiagram({ diagram, labels }: { diagram: VolumeOneDiagram; labels: boolean }) {
   const svgId = useId();
   return <svg viewBox="0 0 320 221" width="100%" role="img" aria-labelledby={svgId + "-title"}>
-    <title id={svgId + "-title"}>{labels ? diagram.description : diagram.title + ", with numbered markers in place of labels"}</title>
+    <title id={svgId + "-title"}>{labels ? diagram.description : "Schematic with numbered markers in place of labels"}</title>
     <defs>
       <marker id={svgId + "-arrow"} markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
         <path d="M0 0L7 3.5L0 7Z" fill="#2b6b73" />
@@ -44,12 +44,13 @@ function NodeDiagram({ diagram, labels }: { diagram: VolumeOneDiagram; labels: b
 
 export function VolumeOneDiagramActivity({ diagram }: { diagram: VolumeOneDiagram }) {
   const formId = useId();
+  const [practising, setPractising] = useState(false);
   const [responses, setResponses] = useState<Record<number, string>>({});
   const [checked, setChecked] = useState(false);
   const options = diagram.nodes.map(([label]) => label).sort();
   const correct = diagram.nodes.filter(([label], index) => responses[index] === label).length;
   return <section className="study-panel" aria-label="Volume I diagram and labelling practice">
-    <figure className="volume-one-diagram">
+    <figure className="volume-one-diagram" hidden={practising}>
       <h2>{diagram.title}</h2>
       <NodeDiagram diagram={diagram} labels />
       <figcaption>
@@ -57,7 +58,7 @@ export function VolumeOneDiagramActivity({ diagram }: { diagram: VolumeOneDiagra
         <p>Original SVG by Wardhan Medical Study Guide Studios. <a href={diagram.source}>Source for this diagram</a>.</p>
       </figcaption>
     </figure>
-    <details>
+    <details onToggle={event => setPractising(event.currentTarget.open)}>
       <summary>Label the diagram</summary>
       <NodeDiagram diagram={diagram} labels={false} />
       <form onSubmit={event => { event.preventDefault(); setChecked(true); }}>

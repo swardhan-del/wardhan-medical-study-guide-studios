@@ -6,6 +6,7 @@ test("a Volume I lesson withholds all five answers and diagram feedback until su
   await expect(page.getByRole("heading", { name: "Diaphragmatic openings by vertebral level" })).toBeVisible();
   await page.getByText("Label the diagram", { exact: true }).focus();
   await page.keyboard.press("Enter");
+  await expect(page.getByRole("heading", { name: "Diaphragmatic openings by vertebral level" })).toBeHidden();
   const labels = page.getByRole("group", { name: "Choose a label for each marker" });
   await expect(labels.getByText("Correct label:", { exact: false })).toHaveCount(0);
   await labels.getByLabel("Marker 1").selectOption("T8 · caval opening");
