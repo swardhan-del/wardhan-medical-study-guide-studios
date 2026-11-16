@@ -1,6 +1,6 @@
 # 25. Brainstem landmarks and crossed findings
 
-Volume 4 · 10 minutes · Updated 2026-09-10
+Volume 4 · 10 minutes · Updated 2026-11-16
 
 Localization combines level, side and pathway.
 
@@ -21,11 +21,21 @@ The brainstem consists of midbrain, pons, and medulla. It contains cranial nerve
 
 ## Relationships and functional organization
 
-Midbrain contains cerebral peduncles, tectum, superior/inferior colliculi, and CN III/IV levels. Pons shows basilar pons, middle cerebellar peduncles, and CN V/VII/VIII relations. Medulla shows pyramids, olives, preolivary sulcus for CN XII, and postolivary sulcus for IX/X/XI. Pyramidal decussation lies caudally in medulla. Cerebellar peduncles connect brainstem and cerebellum.
+Midbrain contains cerebral peduncles, tectum and superior and inferior colliculi. The oculomotor and Edinger–Westphal nuclei (III) are at the superior collicular level. The trochlear nucleus (IV) is at the inferior collicular level. [1]
+
+Pons contains the main sensory and motor trigeminal nuclei (V), the abducens nucleus (VI) in the caudal pons, and the facial motor nucleus (VII). CN V exits from the pons. CN VI emerges near the midline at the pontomedullary junction, medial to VII and VIII. [1] [2] [3]
+
+Medulla contains the nucleus ambiguus (including IX and X motor fibres), solitary nucleus, dorsal motor nucleus of X and hypoglossal nucleus (XII). Vestibular nuclei extend across the pontomedullary region. The spinal trigeminal nucleus spans the lower pons, medulla and upper cervical cord. [1]
 
 ## Why should sensory modalities be separated when reasoning about a crossed brainstem pattern?
 
 Different pathways cross at different levels and occupy different positions. Dorsal-column information crosses in the medulla before ascending as medial lemniscus, while anterolateral pain-temperature pathways have already crossed in the spinal cord. Trigeminal facial sensation has its own nuclei and ascending routes. A lesion can therefore combine facial and body findings with different sides and modalities. Begin with the affected tract and its crossing history rather than applying a blanket rule that all brainstem sensation is contralateral.
+
+## Medial versus lateral medullary syndromes
+
+Medial medullary infarction can involve paramedian branches of the anterior spinal or vertebral arteries. Injury to the pyramid, medial lemniscus and hypoglossal pathway can produce contralateral limb weakness, contralateral loss of vibration and position sense, and ipsilateral tongue weakness. [4]
+
+Lateral medullary syndrome (Wallenberg) is associated with vertebral artery or posterior inferior cerebellar artery (PICA) involvement. Patients can have ipsilateral facial and contralateral body loss of pain and temperature sensation. Involvement of the nucleus ambiguus can cause dysphagia. [5]
 
 ## Apply the anatomy and resolve a common confusion
 
@@ -95,7 +105,13 @@ Answer: It can affect a local cranial pathway and corticospinal fibers before th
 
 Source: anatomy-divided-volume-4, 36. Brainstem External Anatomy.
 
-[Further reading: The central nervous system](https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system)
+[Further reading: StatPearls: Brainstem](https://www.ncbi.nlm.nih.gov/books/NBK544297/)
+
+- [StatPearls: Abducens Nucleus](https://www.ncbi.nlm.nih.gov/books/NBK544265/)
+- [StatPearls: Pons](https://www.ncbi.nlm.nih.gov/books/NBK560589/)
+- [StatPearls: Medial Medullary Syndrome](https://www.ncbi.nlm.nih.gov/books/NBK560590/)
+- [StatPearls: Lateral Medullary Syndrome](https://www.ncbi.nlm.nih.gov/books/NBK551670/)
+- [The central nervous system](https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system)
 
 Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.
 

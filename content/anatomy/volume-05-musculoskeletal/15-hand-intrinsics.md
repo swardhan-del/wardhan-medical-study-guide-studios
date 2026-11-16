@@ -1,6 +1,6 @@
 # 15. Intrinsic hand muscles and functional nerve tests
 
-Volume 5 · 10 minutes · Updated 2026-09-10
+Volume 5 · 10 minutes · Updated 2026-11-16
 
 Interossei control finger abduction and adduction relative to the middle-finger axis and contribute to MCP flexion with IP extension through extensor expansions.
 
@@ -17,15 +17,23 @@ Start with anatomical position, planes, directional terms and the difference bet
 
 ## Hand Muscles and Hand Innervation
 
-The hand is organized into thenar, hypothenar, central, and interosseous compartments. The median nerve supplies most thenar muscles and lateral two lumbricals; the ulnar nerve supplies most intrinsic hand muscles.
+The hand is organized into thenar, adductor, hypothenar, central, and interosseous compartments. The median nerve supplies most thenar muscles and lateral two lumbricals; the ulnar nerve supplies most intrinsic hand muscles. [1] [2]
 
 ## Relationships and functional organization
 
-Thenar: abductor pollicis brevis, opponens pollicis, flexor pollicis brevis, adductor pollicis. Hypothenar: palmaris brevis, abductor digiti minimi, flexor digiti minimi brevis, opponens digiti minimi. Lumbricals flex MCP joints and extend IP joints. Dorsal interossei abduct digits; palmar interossei adduct digits. Radial nerve supplies no intrinsic hand muscles.
+Thenar: abductor pollicis brevis, opponens pollicis, flexor pollicis brevis. The separate adductor compartment contains adductor pollicis, supplied by the deep branch of the ulnar nerve. [1] [2]
+
+Hypothenar: palmaris brevis, abductor digiti minimi, flexor digiti minimi brevis, opponens digiti minimi. Lumbricals flex MCP joints and extend IP joints. Dorsal interossei abduct digits; palmar interossei adduct digits. Radial nerve supplies no intrinsic hand muscles.
 
 ## How do lumbricals and interossei influence both MCP and IP joints?
 
 Their tendons interact with the extensor expansion rather than acting only through a simple insertion on one phalanx. Their line of action can flex metacarpophalangeal joints while helping extend interphalangeal joints. This coordinated effect supports controlled finger posture during precision tasks. Extrinsic flexors and extensors provide larger forces but cannot fully substitute for the intrinsic balance. Therefore a clawing posture reflects altered force relationships across several joints, not merely a single joint becoming fixed in flexion.
+
+## Functional tests: paper pinch and tip-to-tip pinch
+
+Froment sign tests thumb adduction during a paper pinch. Flexion at the thumb interphalangeal joint is compensation by flexor pollicis longus for a weak adductor pollicis. [2]
+
+The OK sign checks anterior interosseous nerve function. With weakness, the thumb interphalangeal and index distal interphalangeal joints do not flex normally, flattening the tip-to-tip circle. The anterior interosseous nerve is a branch of the median nerve. [3]
 
 ## Apply the anatomy and resolve a common confusion
 
@@ -95,7 +103,11 @@ Answer: Deep branch of ulnar nerve. Interossei control finger abduction and addu
 
 Source: anatomy-divided-volume-5, 24. Hand Muscles and Hand Innervation.
 
-[Further reading: Pectoral girdle and upper limb muscles](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
+[Further reading: StatPearls: Hand Arteries — Compartments](https://www.ncbi.nlm.nih.gov/books/NBK546583/)
+
+- [StatPearls: Hand Compartments](https://www.ncbi.nlm.nih.gov/books/NBK532942/)
+- [StatPearls: Hand Flexor Pollicis Longus Muscle](https://www.ncbi.nlm.nih.gov/books/NBK538490/)
+- [Pectoral girdle and upper limb muscles](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
 
 Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.
 

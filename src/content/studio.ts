@@ -1,4 +1,4 @@
 export const studio = {
-  founderName: "Siddhartha Harshwardhan",
+  founderName: "Wardhan Siddhartha",
   contactEmail: "swardhan1@icloud.com",
 } as const;

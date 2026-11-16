@@ -26,7 +26,7 @@ export function LessonJourney({ lesson }: { lesson: JourneyLesson }) {
       <li><a href="#continue-learning" aria-current={current === "continue" ? "step" : undefined}>Continue learning</a><span>{status.complete ? "Lesson marked complete" : "Your next step"}</span></li>
     </ol></nav>
     <progress aria-label="Lesson study steps" max={3} value={status.steps} />
-    <p role="status">{ready ? `${status.steps} of 3 study steps: explanation, practice and summary.${status.complete ? " Lesson marked complete." : ""}` : "Loading local progress…"}</p>
+    <p role="status">{ready ? `${status.steps} of 3 study steps: explanation, practice and summary.${status.complete ? " Lesson marked complete." : ""}` : "Progress for this lesson stays in this browser."}</p>
     <p className="muted-note">Completion records your study activity, not mastery. Progress stays in this browser; no sign-in is needed.</p>
     {ready && !persistent && <p role="status">Browser storage is unavailable. You can keep studying, but progress may be lost when you leave.</p>}
     <button className="button button-secondary" disabled={!ready} aria-pressed={!!data.journey[lesson.id]?.read} onClick={() => updateJourney(lesson.id, { read: !data.journey[lesson.id]?.read })}>

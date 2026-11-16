@@ -50,6 +50,7 @@ test('all eleven Anatomy answers are hidden, explained and saved without runtime
 test('Anatomy figures, sources, keyboard disclosures and progress work at narrow widths', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto(`/library/${id}`);
+  await page.locator("#lesson-source > summary").click();
   for (const heading of ['Learning Objectives','Core Concepts','Guided Explanation','Visual Study Prompts','Worked Identification Example','Knowledge Check','Clinical and Applied Questions','Oral Examination Prompts','Summary Checklist','Sources and Further Reading'])
     await expect(page.getByRole('heading', { name: heading, exact: true })).toBeVisible();
   const figures = page.locator('[data-anatomy-diagram]:visible');

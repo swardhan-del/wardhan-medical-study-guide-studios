@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { matchesCatalogQuery, suggestQuery, catalogSearchText } from '../src/lib/catalog-filter.ts';
+import { qualityAllowsIndexing } from '../src/lib/lesson-quality.ts';
 import { resourceHref } from '../src/lib/catalog-types.ts';
 const read = name => JSON.parse(readFileSync(new URL(`../src/content/${name}.json`, import.meta.url), 'utf8'));
 const index = read('public-search');
@@ -18,7 +19,7 @@ test('published explanations and figures are searchable in every teaching collec
   assert.equal(suggestQuery(records.map(r => catalogSearchText(r)), 'brachal plexus'), 'brachial plexus');
   assert.equal(suggestQuery(['urine filtration and renal physiology'], 'purine'), null);
   assert.equal(suggestQuery(records.map(r => catalogSearchText(r)), 'zzzzzzzzunknown'), null);
-  assert.equal(Object.keys(index).length, records.length);
+  assert.deepEqual(new Set(Object.keys(index)), new Set(records.filter(r => qualityAllowsIndexing(r.id)).map(r => r.id)));
   assert.doesNotMatch(JSON.stringify(index), /\/Users\/|original_dropbox_path|destination_dropbox_path|dropboxusercontent/);
 });
 test('web and activity wrappers link directly; PDF and private detail pages remain available', () => {

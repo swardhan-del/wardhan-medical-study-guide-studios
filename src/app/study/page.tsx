@@ -4,6 +4,7 @@ import { journeyIndex, journeyLessons } from "@/lib/lesson-journeys";
 import Link from "next/link";
 import { SavedLearning } from "@/components/saved-learning";
 import { publicCatalog } from "@/lib/catalog";
+import { ProgressTransfer } from "@/components/progress-transfer";
 import { StudyDashboard } from "@/components/study-dashboard";
 import { firstStudySessions } from "@/content/first-study-sessions";
 import { publicFigures } from "@/lib/figures";
@@ -21,6 +22,7 @@ export default function StudyPage() {
         </p>
       </header>
       <p><Link className="text-link" href="/start">First visit? Choose a starting lesson →</Link></p>
+      <ProgressTransfer />
       <ContinueLearning lessons={journeyIndex} />
       <section className="study-panel" aria-labelledby="study-map-title">
         <p className="eyebrow">The wider course</p>

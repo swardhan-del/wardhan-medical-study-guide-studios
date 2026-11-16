@@ -181,6 +181,7 @@ for (const id of newEntryLessonIds) {
   test(`${id}: accessible table, keyboard explanations, sources, recap and saved checklist`, async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto(`/library/${id}`);
+    await page.locator("#lesson-source > summary").click();
     for (const heading of ['Learning Objectives','Core Concepts','Guided Explanation','Visual Study Prompts','Worked Example','Knowledge Check','Clinical and Applied Questions','Oral Examination Prompts','Summary Checklist','Short Recap','Sources and Further Reading'])
       await expect(page.getByRole('heading', { name: heading, exact: true })).toBeVisible();
     const comparison = page.locator('[data-entry-comparison]:visible');

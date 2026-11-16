@@ -94,8 +94,8 @@ test('Guided histology: 320px enlarged text, keyboard focus and accessibility', 
   const audit = await context.newPage(); await audit.goto(route);
   const review = audit.locator('.lesson-transparency');
   await review.locator('summary').click();
-  await expect(review).toContainText('Medical review pending. Independent clinical review has not been completed.');
-  await expect(review.getByText('Last updated:', { exact: false }).last()).toContainText('Last updated: 2026-11-07');
+  await expect(audit.locator('header .lesson-review-status')).toContainText('Medical review pending. Independent clinical review has not been completed.');
+  await expect(audit.locator('header .lesson-review-status time')).toHaveText('2026-11-07');
   await expect(review.getByRole('link', { name: 'Edfors et al. (2018): Enhanced validation of antibodies for research applications', exact: true })).toHaveAttribute('href', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6175901/');
   expect((await new AxeBuilder({ page: audit }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()).violations).toEqual([]);
   await context.close();

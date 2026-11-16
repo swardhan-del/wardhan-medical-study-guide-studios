@@ -1,6 +1,6 @@
 # 04. Pelvic vessels and lymphatic drainage
 
-Volume 3 · 10 minutes · Updated 2026-09-10
+Volume 3 · 10 minutes · Updated 2026-11-16
 
 Internal iliac branching is variable, so start with territories and then learn the usual named branches.
 
@@ -23,9 +23,11 @@ Parietal branches supply pelvic wall, gluteal region, and perineum. Visceral bra
 
 ## Pelvic Lymphatics
 
-Pelvic lymph drainage follows pelvic vessels. External iliac nodes drain anterior pelvic and lower abdominal structures; internal iliac nodes drain most pelvic viscera and deep perineum; sacral nodes drain posterior pelvic structures; common iliac nodes receive from external, internal, and sacral nodes.
+Internal iliac nodes receive lymph from pelvic viscera, the gluteal region and the deep perineum. Deep perineal lymph may reach these nodes directly or via sacral nodes. [1] [2] [3]
 
-External iliac nodes receive lymph from lower limb pathways, anterior abdominal wall, bladder, uterus/vagina regions, and anterior pelvic organs. Internal iliac nodes receive from pelvic viscera, deep perineum, gluteal region, and thigh region. Sacral nodes receive from posterior pelvic wall, rectum, bladder, prostate, and cervix. Common iliac nodes are the collecting station before lumbar nodes.
+Sacral nodes receive drainage from posteroinferior pelvic viscera. For the bladder, the external iliac nodes are a major drainage route, and the internal iliac and obturator chains also receive drainage. Presacral involvement is possible as further spread. [3] [4] [5]
+
+External, internal and sacral groups drain toward the common iliac nodes. Pelvic drainage has overlapping pathways. [3]
 
 ## Why is gonadal drainage an exception to a simple pelvic-node rule?
 
@@ -103,7 +105,13 @@ Answer: Internal pudendal artery. Internal iliac branching is variable, so start
 
 Source: anatomy-divided-volume-3, 6. Internal Iliac Artery; 8. Pelvic Lymphatics.
 
-[Further reading: Circulatory pathways](https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways)
+[Further reading: StatPearls: Ischioanal Fossa](https://www.ncbi.nlm.nih.gov/books/NBK535387/)
+
+- [StatPearls: Deep Perineal Space](https://www.ncbi.nlm.nih.gov/books/NBK538272/)
+- [StatPearls: Pelvic Outlet](https://www.ncbi.nlm.nih.gov/books/NBK557602/)
+- [StatPearls: Bladder](https://www.ncbi.nlm.nih.gov/books/NBK531465/)
+- [StatPearls: Urinary Diversions and Neobladders](https://www.ncbi.nlm.nih.gov/books/NBK560483/)
+- [Circulatory pathways](https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways)
 
 Adapted from the author’s divided Macroscopic Anatomy and Embryology guide, with new explanations, original questions and drawing activities.
 

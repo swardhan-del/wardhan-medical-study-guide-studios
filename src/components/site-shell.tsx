@@ -34,6 +34,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <Link href="/starter-pack">Free starter pack</Link>
             <Link href="/study#saved-learning">My Study</Link>
             <Link href="/about">About</Link>
+            <Link href="/corrections">Corrections</Link>
           </div>
         </div>
       </footer>

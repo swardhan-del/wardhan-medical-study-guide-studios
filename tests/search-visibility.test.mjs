@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { searchPages, searchPage, indexablePages, canonicalResourcePath } from '../src/lib/search-pages.ts';
+import { qualityAllowsIndexing } from '../src/lib/lesson-quality.ts';
 import { searchMetadata } from '../src/lib/search-metadata.ts';
 import { getSiteUrl, isIndexable } from '../src/lib/site-url.ts';
 import { shouldNoIndex, robotsPolicy } from '../src/lib/search-policy.ts';
@@ -33,7 +34,7 @@ test('search registry has unique routes, meaningful indexed titles and descripti
 test('every approved authored lesson has a self-canonical path and a breadcrumb ending in its own title', () => {
   for (const lesson of lessons.lessons) {
     const path = `/library/${lesson.id}`, page = searchPage(path);
-    assert(page?.index, path); assert.equal(page.canonical, path);
+    assert.equal(page?.index, qualityAllowsIndexing(lesson.id), path); assert.equal(page.canonical, path);
     assert.equal(page.title, lesson.title); assert(page.description.endsWith(lesson.summary));
     if (lesson.summary.length < 60) assert(page.description.startsWith(lesson.title));
     assert.equal(page.lastModified, lesson.updatedAt);

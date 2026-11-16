@@ -1,3 +1,4 @@
+import { AboutLesson } from "./about-lesson";
 import { qualityForLesson, hasRecordedReview } from "@/lib/lesson-quality";
 import { CorrectionLink } from "./correction-link";
 import { renalRevision } from "@/content/renal-course";
@@ -5,14 +6,15 @@ export function RenalSources({ section, lessonId }: { section?: string; lessonId
   const editorialRecorded = !lessonId || !qualityForLesson(lessonId) || hasRecordedReview(lessonId, "editorial");
   const clinicallyReviewed = lessonId ? qualityForLesson(lessonId)?.contentStatus === "independently-clinically-reviewed" : false;
   return (
-    <section className="study-sources" id="sources">
+    <>
+    <details className="study-sources lesson-transparency" id="sources">
+      <summary>Sources and review</summary>
       <p className="eyebrow">Authorship & sources</p>
       <h2>Know what you are learning from.</h2>
       <p>
         Published by Wardhan Medical Study Guide Studios. Web lessons, questions
         and original schematics are adapted from the studio’s renal
-        study guide. Revised{" "}
-        <time dateTime={renalRevision}>6 September 2026</time>.
+        study guide.{!lessonId && <> Revised <time dateTime={renalRevision}>6 September 2026</time>.</>}
       </p>
       <ol>
         <li>
@@ -43,11 +45,12 @@ export function RenalSources({ section, lessonId }: { section?: string; lessonId
         </li>
       </ol>
       <p className="source-note">
-        {editorialRecorded ? "Editorial status: source-checked educational adaptation, with AI-assisted drafting and implementation." : "AI-assisted educational adaptation; source and editorial review are pending."} {clinicallyReviewed ? "Independent clinical review is recorded in About this lesson." : "No independent clinical peer review is claimed."} Examples teach mechanisms and exam reasoning; they
-        are not patient-care guidance.{" "}
-        <CorrectionLink />
-        .
+        {editorialRecorded ? "Editorial status: source-checked educational adaptation, with AI-assisted drafting and implementation." : "AI-assisted educational adaptation; source and editorial review are pending."} {!lessonId && !clinicallyReviewed && "No independent clinical peer review is claimed."} Examples teach mechanisms and exam reasoning; they
+        are not patient-care guidance.
       </p>
-    </section>
+      {lessonId && <AboutLesson lessonId={lessonId} />}
+    </details>
+    <p><CorrectionLink /></p>
+    </>
   );
 }

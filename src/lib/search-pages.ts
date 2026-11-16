@@ -5,6 +5,7 @@ import catalog from "../content/public-catalog.json" with { type: "json" };
 import taxonomy from "../content/library-taxonomy.json" with { type: "json" };
 import videos from "../content/public-videos.json" with { type: "json" };
 import { guideSubjects, subjectInterests } from "../content/subjects.ts";
+import { studio } from "../content/studio.ts";
 import { foundations } from "../content/foundations.ts";
 import { renalLessons } from "../content/renal-course.ts";
 import { anatomyLearningPages } from "../content/anatomy-learning.ts";
@@ -23,7 +24,7 @@ add(firstSessionsPath, "Short medical-science study sessions", "Try a worked exa
 for (const session of firstStudySessions) {
   add(firstSessionHref(session.id), session.title, session.objective, false, "Short practice entry paired with a full published lesson");
 }
-add("/about", "About this independent medical study library", "An independent, student-led library of medical-science explanations and practice, created by Siddhartha Harshwardhan. Read its purpose and editorial limits.");
+add("/about", "About this independent medical study library", `An independent, student-led library of medical-science explanations and practice, created by ${studio.founderName}. Read its purpose and editorial limits.`);
 add("/library", "Medical study library: lessons and practice", "Find free anatomy, histology, cell biology, biochemistry, physiology, genetics and biophysics lessons, with source references and explained questions.");
 add("/subjects", "Medical subjects and learning paths", "Choose a medical-science subject, find a starting lesson and see which topics and study resources are available.");
 add("/videos", "Medical-science videos and explainers", "Watch captioned explanations and recaps, read their transcripts and continue with the related lessons.", videos.records.length > 0);
@@ -32,6 +33,7 @@ add("/terms", "Educational terms and disclaimer", "Understand the purpose, limit
 add("/waitlist", "Pre-launch Study Guide waitlist", "Read what optional launch and free-resource updates include, with a clearly labelled demo while signups are closed.", false, "Pre-launch signup utility");
 add("/waitlist/confirmation", "Waitlist confirmation information", "Learn how email confirmation works and return to the free study library. This page alone does not confirm a subscription.", false, "Confirmation utility");
 add("/privacy", "Privacy in the study library", "Learn how browser-based study progress, saved resources, contact drafts and optional analytics are handled.", false, "Utility notice");
+add("/corrections", "Public corrections log", "Review substantive corrections to the study library and see how to report an error.");
 add("/contact", "Questions, feedback and corrections", "Ask a question, suggest a sourced correction or report an accessibility issue in the medical study library.", false, "Contact utility");
 add("/study", "My Study: saved lessons and practice", "Return to resources saved in this browser, review previous practice and choose your next study topic.", false, "Personal browser state");
 add("/study/planner", "My renal revision planner", "Plan renal revision sessions using the course topics and your locally saved practice. Your plan stays in this browser.", false, "Personal browser state");
