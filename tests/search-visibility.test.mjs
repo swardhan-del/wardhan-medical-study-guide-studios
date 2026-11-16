@@ -47,7 +47,7 @@ test('every approved authored lesson has a self-canonical path and a breadcrumb 
 
 test('sitemap eligibility excludes redirects, personal state, empty and unfinished directories', () => {
   for (const path of ['/study','/study/planner','/study/map','/reading-list','/contact','/review','/subjects/microbiology','/subjects/anatomy/thorax','/study/anatomy/guide','/study/anatomy/revision']) assert(!indexablePages.some(p => p.path === path), path);
-  assert.equal(searchPage('/subjects/biostatistics').redirect, '/study/biostatistics');
+  assert(searchPage('/subjects/biostatistics').index);
   assert(searchPage('/study/biostatistics').index);
   for (const record of catalog.records) {
     const path = canonicalResourcePath(record);

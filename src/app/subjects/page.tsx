@@ -49,7 +49,7 @@ export default function SubjectsPage() {
           </article>
         ))}
       </section>
-      <section className="study-panel" aria-labelledby="statistics-foundations"><h2 id="statistics-foundations">Biostatistics foundations</h2><p>{subjectLessonCounts("biostatistics").total} available lessons.</p><div className="quick-links"><Link href="/library/histogram-bin-counts-example">Start with histograms</Link><Link href="/study/biostatistics">Explore Biostatistics</Link></div></section>
+      <section className="study-panel" aria-labelledby="statistics-foundations"><h2 id="statistics-foundations">Biostatistics foundations</h2><p>{subjectLessonCounts("biostatistics").total} available lessons.</p><div className="quick-links"><Link href="/library/histogram-bin-counts-example">Start with histograms</Link><Link href="/subjects/biostatistics">Explore Biostatistics</Link></div></section>
       <h2 className="native-section-title">Find a topic across subjects</h2>
       <TopicSearch
         items={taxonomyNodes.map((n) => ({

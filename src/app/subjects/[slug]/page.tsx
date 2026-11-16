@@ -6,7 +6,7 @@ import { studySubjects } from "@/lib/study-collections";
 import { AnatomyTopicNav } from "@/components/anatomy-topic-nav";
 import { OrderedSubjectCourseLink, SubjectLearningPath } from "@/components/subject-learning-path";
 import Link from "next/link";
-import { notFound, permanentRedirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { librarySubjects, subjectRecords } from "@/lib/taxonomy";
 import { TopicCards } from "@/components/taxonomy-navigation";
 import { CatalogBrowser } from "@/components/catalog-browser";
@@ -24,7 +24,6 @@ export async function generateMetadata({ params }: Props) {
 }
 export default async function SubjectPage({ params }: Props) {
   const { slug } = await params;
-  if (slug === "biostatistics") permanentRedirect("/study/biostatistics");
   const s = librarySubjects.find((s) => s.id === slug);
   if (!s) notFound();
   const records = subjectRecords(slug);
@@ -44,9 +43,10 @@ export default async function SubjectPage({ params }: Props) {
         <h1>{s.title}</h1>
         <p className="interior-lede">{slug === "histology" ? "Learn to identify tissues by their architecture, cells, and extracellular features. Connect what you see with how the tissue functions and develops." : s.description}</p>
       </header>
-      {hasStudyPath && <div className="action-row">
+      {(hasStudyPath || slug === "biostatistics") && <div className="action-row">
         <OrderedSubjectCourseLink subject={slug} />
-        <Link className="button button-secondary" href={s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link>
+        {slug === "biostatistics" && <Link href="/study/biostatistics">Biostatistics study hub</Link>}
+        <Link className="button button-secondary" href={slug === "biostatistics" ? "#website-lessons" : s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link>
       </div>}
       {hasStudyPath && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}
       {firstSession && <p><Link className="button button-secondary" href={firstSessionHref(firstSession.id)}>Try a five-minute study session</Link></p>}

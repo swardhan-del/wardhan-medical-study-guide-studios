@@ -16,7 +16,8 @@ test("physiology entry points explain the same core and renal lesson counts", as
   await expect(home).toContainText(`${total} available lessons`);
   await expect(home).toContainText(detail);
   await page.goto("/start");
-  await expect(page.getByRole("heading", { name: "Choose your subject" })).toBeVisible();
+  const start = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Medical Physiology", exact: true }) });
+  await expect(start).toContainText(`${total} available lessons: ${detail}`);
   await page.goto("/study/physiology#coverage");
   const coverage = page.locator("#coverage:visible");
   await expect(coverage).toContainText(`${total} available lessons: ${detail}`);
@@ -150,7 +151,7 @@ test("anatomy starts with foundations and empty subjects offer a usable next ste
   await expect(page).toHaveURL(/\/library\/thoracic-cage-landmarks$/);
   await page.goto("/subjects/biostatistics");
   await expect(page.getByRole("heading", { name: "Lessons and study resources" })).toBeVisible();
-  await expect(page.locator('#website-lessons ol li')).toHaveCount(library.lessons.filter(lesson => lesson.subject === 'biostatistics').length);
+  await expect(page.locator('.resource-card:visible')).toHaveCount(7);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 });
 

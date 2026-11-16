@@ -1,7 +1,7 @@
 import { SaveButton } from "./save-button";
 import { publicCatalog } from "@/lib/catalog";
 import Link from "next/link";
-export function LearningCollection({ compact = false, general = false }: { compact?: boolean; general?: boolean }) {
+export function LearningCollection({ compact = false }: { compact?: boolean }) {
   const cards = [
     [
       "01 · Lessons",
@@ -46,14 +46,10 @@ export function LearningCollection({ compact = false, general = false }: { compa
       "Open My Study",
     ],
   ];
-  const visibleCards = general ? [
-    ["Lessons", "Browse the study library", "Find lessons, activities and revision notes by subject or format.", "/library", "Search the library"],
-    ["Visual practice", "Identify a tissue", "Compare specimens and explain the clues you see.", "/practice/histology", "Start histology practice"],
-    ["Your next session", "Continue studying", "Find saved lessons and review past practice.", "/study", "Open My Study"],
-  ] : cards.slice(0, compact ? 3 : cards.length);
   return (
     <div className="study-grid learning-collection">
-      {visibleCards
+      {cards
+        .slice(0, compact ? 3 : cards.length)
         .map(([tag, title, text, href, action]) => (
           <article className="study-card" key={href}>
             <p className="eyebrow">{tag}</p>

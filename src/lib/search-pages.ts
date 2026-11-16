@@ -67,10 +67,6 @@ for (const subject of guideSubjects) {
 for (const subject of taxonomy.subjects) {
   const ids = new Set(taxonomy.nodes.filter(node => node.subject === subject.id).flatMap(node => node.resources));
   const available = catalog.records.some(record => ids.has(record.id));
-  if (subject.id === "biostatistics") {
-    add("/subjects/biostatistics", "Biostatistics subject directory", subject.description, false, "Moved to the study hub", { canonical: "/study/biostatistics", redirect: "/study/biostatistics" });
-    continue;
-  }
   add(`/subjects/${subject.id}`, `${subject.title}: topic and source directory`, subject.description, available, available ? undefined : "No published resources");
 }
 for (const [id, foundation] of Object.entries(foundations)) {

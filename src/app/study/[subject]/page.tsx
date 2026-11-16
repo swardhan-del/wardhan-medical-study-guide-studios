@@ -34,7 +34,7 @@ export default async function SubjectStudyPage({ params }: Props) {
    <header className="study-hero">
      <h1>Biostatistics</h1>
      <p>{subjectLessonCounts(subject).total} available lessons.</p>
-     <div className="action-row"><Link className="button button-primary" href="/study/biostatistics/guide">Ordered guide</Link><Link href="/study/biostatistics/revision">Print revision notes</Link></div>
+     <div className="action-row"><Link className="button button-primary" href="/study/biostatistics/guide">Ordered guide</Link><Link href="/study/biostatistics/revision">Print revision notes</Link><Link href="/subjects/biostatistics#website-lessons">Search and filter resources</Link></div>
    </header>
    <section className="study-panel" id="website-lessons">
      <span id="authored-guides" /><span id="archive-directory" /><span id="dropbox-directory" />
