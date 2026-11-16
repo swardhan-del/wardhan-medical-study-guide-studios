@@ -65,7 +65,7 @@ export function SpinalCordPractical() {
   const [activeIndex, setActiveIndex] = useState<number>();
   const [selected, setSelected] = useState<number>();
   const titleRef = useRef<HTMLHeadingElement>(null);
-  const { data } = useLearning();
+  const { data, ready } = useLearning();
   const solved = data.practicals[spinalCordPractical.id]?.solved ?? [];
   const firstUnfinished = stations.findIndex((_, step) => !solved.includes(step));
   const index = activeIndex ?? (firstUnfinished < 0 ? stations.length - 1 : firstUnfinished);
@@ -95,11 +95,11 @@ export function SpinalCordPractical() {
     <section className={styles.practical} id="practical" aria-labelledby="practical-heading">
       <div className={styles.practicalHeading}>
         <h2 id="practical-heading">From slide to signal</h2>
-        <p>{solved.length} of {stations.length} complete</p>
+        <p>{ready ? `${solved.length} of ${stations.length} complete` : "Loading progress…"}</p>
       </div>
       <nav className={styles.stations} aria-label="Practical stations">
         {stations.map((item, step) => (
-          <button type="button" key={item.label} aria-current={step === index ? "step" : undefined} onClick={() => openStation(step)}>
+          <button type="button" key={item.label} disabled={!ready} aria-current={step === index ? "step" : undefined} onClick={() => openStation(step)}>
             <span className={styles.step} aria-hidden="true">{solved.includes(step) ? "✓" : step + 1}</span>
             {item.label}
             {solved.includes(step) && <span className="sr-only">, complete</span>}
@@ -152,6 +152,7 @@ export function SpinalCordPractical() {
               <button
                 type="button"
                 key={choice.text}
+                disabled={!ready}
                 aria-pressed={selected === number}
                 onClick={() => answer(number)}
               >{choice.text}</button>
