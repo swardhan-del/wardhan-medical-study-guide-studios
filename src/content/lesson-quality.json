@@ -7330,6 +7330,212 @@
         "compare": [],
         "next": []
       }
+    },
+    {
+      "lessonId": "complement",
+      "title": "Complement pathways and their shared effectors",
+      "subject": "genetics",
+      "slug": "complement",
+      "topic": "Complement pathways and their shared effectors",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Identify the convertase at each step.",
+        "A patient has repeated meningococcal infections. Which part of complement would this pattern make you review?",
+        "Compare activation, effector functions and regulation."
+      ],
+      "sources": [
+        {
+          "title": "Immunobiology: The complement system and innate immunity",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK27100/",
+          "publisherOrAuthor": "Immunobiology",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "NCI Nanotechnology Characterization Laboratory: Method ITA-5.1",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK612356/",
+          "publisherOrAuthor": "NCI Nanotechnology Characterization Laboratory",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "Merck Manual: Complement Deficiencies",
+          "url": "https://www.merckmanuals.com/professional/multimedia/table/complement-deficiencies",
+          "publisherOrAuthor": "Merck Manual",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "StatPearls: Complement Deficiency",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557581/",
+          "publisherOrAuthor": "StatPearls",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Text and a worked example cover the objectives.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "Independent clinical peer review is pending."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [],
+        "next": [],
+        "related": [
+          "innate-adaptive",
+          "antigen-presentation",
+          "blood-marrow"
+        ],
+        "compare": []
+      }
+    },
+    {
+      "lessonId": "cardiac-cycle",
+      "title": "The cardiac cycle: pressure opens the valves",
+      "subject": "physiology",
+      "slug": "cardiac-cycle",
+      "topic": "The cardiac cycle: pressure opens the valves",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Put the ECG and sounds on the same time axis.",
+        "A fictional report gives a left ventricular end-diastolic volume of 130 mL and an end-systolic volume of 60 mL. Calculate stroke volume and ejection fraction.",
+        "Relate valve events to pressure and volume changes."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax: Cardiac Cycle",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-3-cardiac-cycle",
+          "publisherOrAuthor": "OpenStax",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "OpenStax: Blood Flow, Blood Pressure, and Resistance",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-2-blood-flow-blood-pressure-and-resistance",
+          "publisherOrAuthor": "OpenStax",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "StatPearls: Physiology, Cardiac Cycle",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK459327/",
+          "publisherOrAuthor": "StatPearls",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "StatPearls: Physiology, Left Ventricular Function",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK541098/",
+          "publisherOrAuthor": "StatPearls",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "planned",
+      "visualRequired": true,
+      "visualNotes": "Original schematic in preview, awaiting review.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "Independent clinical peer review is pending."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [],
+        "next": [],
+        "related": [
+          "cardiac-output",
+          "baroreflex"
+        ],
+        "compare": []
+      }
+    },
+    {
+      "lessonId": "blood-and-haemostasis",
+      "title": "Haemostasis: build and stabilise the plug",
+      "subject": "physiology",
+      "slug": "blood-and-haemostasis",
+      "topic": "Haemostasis: build and stabilise the plug",
+      "learnerLevel": "Early medical sciences",
+      "objectives": [
+        "Start with tissue factor.",
+        "In a simplified case, the PT is prolonged and the aPTT is within its reference interval. Which pathway does this pattern help you localise?",
+        "Trace how the platelet plug is reinforced and later broken down."
+      ],
+      "sources": [
+        {
+          "title": "StatPearls: Physiology, Hemostasis",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545263/",
+          "publisherOrAuthor": "StatPearls",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "Merck Manual: Overview of Hemostasis",
+          "url": "https://www.merckmanuals.com/professional/hematology/hemostasis/overview-of-hemostasis",
+          "publisherOrAuthor": "Merck Manual",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "StatPearls: Physiology, Plasminogen Activation",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK539745/",
+          "publisherOrAuthor": "StatPearls",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "StatPearls: Physiology, Coagulation Pathways",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482253/",
+          "publisherOrAuthor": "StatPearls",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        },
+        {
+          "title": "StatPearls: Prothrombin Time",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK544269/",
+          "publisherOrAuthor": "StatPearls",
+          "sourceType": "educational-reference",
+          "accessedAt": "2026-11-16"
+        }
+      ],
+      "contentStatus": "medical-review-pending",
+      "visualStatus": "not-required",
+      "visualRequired": false,
+      "visualNotes": "Text and a worked example cover the objectives.",
+      "assessmentStatus": "explanations-complete",
+      "accessibilityStatus": "pending",
+      "readabilityStatus": "pending",
+      "indexStatus": "noindex-pending-review",
+      "lastReviewedAt": null,
+      "nextReviewAt": null,
+      "limitations": [
+        "Independent clinical peer review is pending."
+      ],
+      "reviewEvidenceIds": [],
+      "links": {
+        "prerequisite": [],
+        "next": [],
+        "related": [
+          "blood-marrow",
+          "vessel-histology"
+        ],
+        "compare": []
+      }
     }
   ]
 }
