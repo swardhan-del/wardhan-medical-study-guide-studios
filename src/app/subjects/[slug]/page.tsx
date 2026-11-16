@@ -45,6 +45,7 @@ export default async function SubjectPage({ params }: Props) {
       </header>
       {(hasStudyPath || slug === "biostatistics") && <div className="action-row">
         <OrderedSubjectCourseLink subject={slug} />
+        {slug === "biostatistics" && <Link href="/study/biostatistics">Biostatistics study hub</Link>}
         <Link className="button button-secondary" href={slug === "biostatistics" ? "#website-lessons" : s.learningSubject !== slug || slug === "genetics" ? "/library?subject=" + slug : "/study/" + slug}>Open subject lessons</Link>
       </div>}
       {hasStudyPath && <p><Link className="text-link" href={`/study/${s.learningSubject || slug}`}>Open the subject learning path and topic map →</Link></p>}

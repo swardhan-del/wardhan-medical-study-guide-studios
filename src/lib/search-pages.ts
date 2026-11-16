@@ -59,6 +59,7 @@ for (const system of anatomySystems) {
 for (const subject of subjectInterests) {
   add(`/study/${subject.id}`, `${subject.title}: lessons and learning path`, `Start ${subject.title.toLowerCase()} with a guided lesson, then find practice, revision notes and the published topic sequence.`);
 }
+add("/study/biostatistics", "Biostatistics lessons and study guide", "Work through data summaries, uncertainty and study designs in the Biostatistics guide.");
 for (const subject of guideSubjects) {
   add(`/study/${subject.id}/guide`, `${subject.title}: guide parts and visuals`, `Try a visual exercise in ${subject.title.toLowerCase()}, follow lessons in course order, or print revision notes.`, false, "Secondary guide outline with coverage gaps");
   add(`/study/${subject.id}/revision`, `${subject.title}: printable revision notes`, `Print the published ${subject.title.toLowerCase()} lesson summaries and questions, with an optional answer key.`, false, "Print duplicate of published lessons");

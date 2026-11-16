@@ -46,7 +46,7 @@ for (const lesson of lessons) {
     await page.reload();await showAllPractice(page);
     await expect(save).toBeVisible();
     await expect(page.locator('#lesson-source a[href^="https://www.itl.nist.gov/"]')).toHaveCount(1);
-    await expect(page.locator('main a[href="/study/biostatistics"], main a[href="/learn/foundations/biostatistics"]')).toHaveCount(0);
+    await expect(page.getByRole('navigation', { name: 'Learning journey' }).getByRole('link', { name: 'Choose subject' })).toHaveAttribute('href', '/study/biostatistics');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
     expect(errors).toEqual([]);
@@ -94,4 +94,13 @@ test('study design and cardiovascular navigation reach the new lessons with usab
     const axe = await new AxeBuilder({ page }).include('[data-lesson-visuals]').include('[aria-labelledby="worked-example-heading"]').analyze();
     expect(axe.violations).toEqual([]);
   }
+});
+
+test('the Biostatistics study hub links back to the searchable directory', async ({ page }) => {
+  await page.goto('/study/biostatistics');
+  const lessons = page.locator('#website-lessons ol a');
+  await expect(lessons).toHaveCount(7);
+  await page.getByRole('link', { name: 'Search and filter resources' }).click();
+  await expect(page).toHaveURL(/\/subjects\/biostatistics#website-lessons$/);
+  await expect(page.getByRole('searchbox').first()).toBeVisible();
 });

@@ -205,3 +205,11 @@ test("histology lessons and native topics remain reachable on small screens", as
   await page.getByText("Browse the regional directory and suggested sequence", { exact: true }).filter({ visible: true }).click();
   await expect(page.locator(".taxonomy-grid:visible")).toBeVisible();
 });
+
+test("the Epithelia journey counts the questions in its linked Knowledge Check", async ({ page }) => {
+  await page.goto("/library/epithelia");
+  const journey = page.getByRole("navigation", { name: "Learning journey" });
+  const questions = page.locator("#concept-check-title [data-sequence-question]");
+  await expect(questions).toHaveCount(16);
+  await expect(journey).toContainText("0 / 16 Knowledge Check questions attempted");
+});

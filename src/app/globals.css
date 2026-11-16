@@ -4368,3 +4368,25 @@ main h1, main h2, main h3 { overflow-wrap: anywhere; }
   white-space: normal;
   overflow-wrap: anywhere;
 }
+
+.lesson-contents {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-block: .5rem;
+  background: var(--paper, #fff);
+}
+
+.lesson-contents a {
+  flex: 0 0 auto;
+}
+
+.concept-page :is(h2, h3, section, span, details)[id] {
+  scroll-margin-top: 5rem;
+}
+
+.catalog-more select {
+  max-width: 100%;
+}

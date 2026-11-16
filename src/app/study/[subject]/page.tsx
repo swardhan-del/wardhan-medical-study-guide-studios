@@ -1,3 +1,4 @@
+import { subjectLessonCounts } from "@/lib/subject-lesson-counts";
 import { firstSessionHref } from "@/content/first-study-sessions";
 import { anatomySystemsPath } from "@/content/anatomy-systems";
 import { OrderedSubjectCourseLink } from "@/components/subject-learning-path";
@@ -21,13 +22,34 @@ import audioData from "@/content/study-audio.json";
 import { renalLessons, renalQuestions } from "@/content/renal-course";
 import { beginnerSequences } from "@/content/study-paths";
 type Props = { params: Promise<{ subject: string }> };
-export function generateStaticParams() { return studySubjects.map(s => ({ subject: s.id })); }
+export function generateStaticParams() { return [...studySubjects, { id: "biostatistics" }].map(s => ({ subject: s.id })); }
 export async function generateMetadata({ params }: Props) {
   const { subject } = await params;
   return searchMetadata(`/study/${subject}`);
 }
 export default async function SubjectStudyPage({ params }: Props) {
- const { subject } = await params, s = studySubjects.find(s => s.id === subject); if (!s) notFound();
+ const { subject } = await params;
+ if (subject === "biostatistics") return <div className="site-container study-page">
+   <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/subjects">Subjects</Link> / <span aria-current="page">Biostatistics</span></nav>
+   <header className="study-hero">
+     <h1>Biostatistics</h1>
+     <p>{subjectLessonCounts(subject).total} available lessons.</p>
+     <div className="action-row"><Link className="button button-primary" href="/study/biostatistics/guide">Ordered guide</Link><Link href="/study/biostatistics/revision">Print revision notes</Link><Link href="/subjects/biostatistics#website-lessons">Search and filter resources</Link></div>
+   </header>
+   <section className="study-panel" id="website-lessons">
+     <span id="authored-guides" /><span id="archive-directory" /><span id="dropbox-directory" />
+     <h2>Lessons and study resources</h2>
+     {studyGroups.filter(group => group.subject === subject).map(group => <section key={group.id}>
+       <h3>{group.title}</h3>
+       <ol>{group.lessonIds.map(id => {
+         const lesson = subjectLessons(subject).find(item => item.id === id);
+         return lesson && <li key={id}><Link href={`/library/${id}`}>{lesson.title}</Link></li>;
+       })}</ol>
+     </section>)}
+   </section>
+ </div>;
+ const s = studySubjects.find(s => s.id === subject);
+ if (!s) notFound();
  const lessons = subjectLessons(subject), groups = studyGroups.filter(g => g.subject === subject);
  const audio = audioData.records as { lessonId: string }[];
  const cards = lessons.map(l => { const g = groups.find(g => g.lessonIds.includes(l.id))!; const video = videosForLesson(l.id)[0]; return { id: l.id, title: l.title, summary: l.summary, tags: l.tags, searchText: (searchIndex as Record<string, string>)[l.id], minutes: l.minutes, group: g.id, groupTitle: g.title, figure: figuresForResource(l.id)[0], videoId: video?.id, duration: video ? videoDuration(video.durationSeconds) : undefined, audio: audio.some(a => a.lessonId === l.id) }; });

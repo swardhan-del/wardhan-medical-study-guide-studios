@@ -383,8 +383,8 @@ test("library filters expose useful resources in every subject and retain direct
     await expect(summary).toHaveText(`${count} resources`);
     await expect(page.locator(".resource-card:visible")).toHaveCount(Math.min(count, 18));
     for (let shown = 18; shown < count; shown += 18) {
-      await page.getByRole("button", { name: "Show more resources" }).click();
-      await expect(page.locator(".resource-card:visible")).toHaveCount(Math.min(shown + 18, count));
+      await page.getByRole("button", { name: "Next page" }).click();
+      await expect(page.locator(".resource-card:visible")).toHaveCount(Math.min(18, count - shown));
     }
   }
   await page
@@ -420,8 +420,8 @@ test("catalog format, empty search and pagination remain usable", async ({
 }) => {
   await page.goto("/library");
   await expect(page.locator(".resource-card")).toHaveCount(18);
-  await page.getByRole("button", { name: "Show more resources" }).click();
-  await expect(page.locator(".resource-card")).toHaveCount(36);
+  await page.getByRole("button", { name: "Next page" }).click();
+  await expect(page.locator(".resource-card")).toHaveCount(18);
   await page
     .getByRole("combobox", { name: "Format", exact: true })
     .selectOption("PDF");

@@ -38,7 +38,9 @@ export function CatalogBrowser({
   const [subject, setSubject] = useState(initialSubject);
   const [format, setFormat] = useState("");
   const [sort, setSort] = useState("title");
-  const [visibleCount, setVisibleCount] = useState(18);
+  const [page, setPage] = useState(1);
+  const resultsHeading = useRef<HTMLHeadingElement>(null);
+  const pageSize = 18;
   const { saved, ready } = useReadingList();
   const matchesSubject = (record: CatalogRecord) => !subject || (subject === "genetics-all" ? record.subject === "genetics" : record.status === "private-review" ? record.subject === subject : taxonomy.nodes.some(n => n.subject === subject && n.resources.includes(record.id)));
   const progressState = (id: string) => data.lessons.includes(id) ? "complete" : data.journey[id] || data.resume?.lesson === id || data.answers[`concept-${id}`] ? "started" : "new";
@@ -71,7 +73,14 @@ export function CatalogBrowser({
         .map((record) => record.format),
     ),
   ];
-  const shownRecords = filtered.slice(0, visibleCount);
+  const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
+  const currentPage = Math.min(page, pageCount);
+  const firstResult = (currentPage - 1) * pageSize;
+  const shownRecords = filtered.slice(firstResult, firstResult + pageSize);
+  function choosePage(next: number) {
+    setPage(next);
+    resultsHeading.current?.focus();
+  }
   function reset() {
     setProgress("");
     searchInput.current?.focus();
@@ -79,7 +88,7 @@ export function CatalogBrowser({
     setSubject("");
     setFormat("");
     setSort("title");
-    setVisibleCount(18);
+    setPage(1);
   }
   return (
     <div className="catalog-browser">
@@ -88,7 +97,7 @@ export function CatalogBrowser({
         className="catalog-controls"
         role="search"
         aria-label="Filter study resources"
-        onSubmit={event => { event.preventDefault(); setVisibleCount(18); }}
+        onSubmit={event => { event.preventDefault(); setPage(1); }}
       >
         {conceptMode && <input type="hidden" name="mode" value="concept" />}
         <label className="search-field">
@@ -101,7 +110,7 @@ export function CatalogBrowser({
             value={query}
             onChange={(event) => {
               setQuery(event.target.value);
-              setVisibleCount(18);
+              setPage(1);
             }}
             placeholder="Search topics, lessons, or keywords"
           />
@@ -115,7 +124,7 @@ export function CatalogBrowser({
             onChange={(event) => {
               setSubject(event.target.value);
               setFormat("");
-              setVisibleCount(18);
+              setPage(1);
             }}
           >
             <option value="">All subjects</option>
@@ -131,7 +140,7 @@ export function CatalogBrowser({
             value={format}
             onChange={(event) => {
               setFormat(event.target.value);
-              setVisibleCount(18);
+              setPage(1);
             }}
           >
             <option value="">All formats</option>
@@ -149,19 +158,20 @@ export function CatalogBrowser({
             value={sort}
             onChange={(event) => {
               setSort(event.target.value);
-              setVisibleCount(18);
+              setPage(1);
             }}
           >
             <option value="title">{query ? "Relevance" : "Title A–Z"}</option>
             <option value="recent">Recently updated</option>
           </select>
         </label>
-        {records.some(record => record.status === "public" && record.kind === "Study lesson") && <label>Lesson progress<select aria-label="Lesson progress" value={progress} disabled={!progressReady} onChange={event => { setProgress(event.target.value); setVisibleCount(18); }}><option value="">All resources</option><option value="new">Lessons not started</option><option value="started">Lessons in progress</option><option value="complete">Lessons marked complete</option></select></label>}
+        {records.some(record => record.status === "public" && record.kind === "Study lesson") && <label>Lesson progress<select aria-label="Lesson progress" value={progress} disabled={!progressReady} onChange={event => { setProgress(event.target.value); setPage(1); }}><option value="">All resources</option><option value="new">Lessons not started</option><option value="started">Lessons in progress</option><option value="complete">Lessons marked complete</option></select></label>}
         <button className="button button-secondary" type="submit">Search resources</button>
       </form>
       <noscript><p>Submit the search form to filter the server-rendered results. Interactive checks and saved progress require JavaScript; explanations and model reasoning remain readable.</p></noscript>
       {conceptMode && query && <section className="study-panel" aria-labelledby="concept-matches-title"><h2 id="concept-matches-title">Related explanations to start with</h2>{conceptMatches.length ? <ul>{conceptMatches.map(({ record, link }) => <li key={record.id}><h3><Link href={`/library/${record.id}#concept-map-title`}>{record.title}</Link></h3><p>{record.summary}</p>{link.prerequisites.length > 0 && <p>Prepare with: {link.prerequisites.map(p => <Link key={p.id} href={`/library/${p.id}#lesson-objectives`}>{p.title} · </Link>)}</p>}<div className="action-row">{link.worked && <Link href={`/library/${record.id}#worked-example-heading`}>Try the worked example</Link>}<Link href={`/library/${record.id}#concept-check-title`}>Check the relationship</Link><Link href={`/library/${record.id}#lesson-source`}>Check sources and scope</Link></div></li>)}</ul> : <p>No curated concept match is available for this question in the selected subject. Keyword results below may help, but are not a verified answer. Try the central scientific term or another subject.</p>}</section>}
       <div className="catalog-summary">
+        <h2 ref={resultsHeading} className="visually-hidden" tabIndex={-1}>Library results</h2>
         <p role="status" aria-live="polite">
           {savedOnly && !ready
             ? "Loading study resources…"
@@ -185,7 +195,7 @@ export function CatalogBrowser({
           {shownRecords.map((record) => (
             <article className="resource-card" key={record.id}>
               <div className="resource-topline">
-                <span>{record.kind.includes("Study map") ? "Study outline" : record.kind === "Study lesson" ? "Concept introduction" : record.kind === "Interactive topic lessons" ? "Interactive topic lessons" : formatLabels[record.format]}</span>
+                <span>{formatLabels[record.format]}</span>
                 <span>
                   {record.minutes
                     ? `${record.minutes} min`
@@ -250,7 +260,7 @@ export function CatalogBrowser({
                 ? "Save a lesson or activity from the library to find it here for your next study session."
                 : "Browse the subjects to find available lessons and activities."}
           </p>
-          {suggestion && <p>Did you mean <button className="plain-button" onClick={() => { setQuery(suggestion); setVisibleCount(18); }}>{suggestion}</button>?</p>}
+          {suggestion && <p>Did you mean <button className="plain-button" onClick={() => { setQuery(suggestion); setPage(1); }}>{suggestion}</button>?</p>}
           {hasFilters ? (
             <button
               className="button button-secondary"
@@ -269,19 +279,18 @@ export function CatalogBrowser({
           )}
         </div>
       )}
-      {filtered.length > visibleCount && (
-        <div className="catalog-more">
-          <p>
-            Showing {shownRecords.length} of {filtered.length} resources
-          </p>
-          <button
-            className="button button-secondary"
-            onClick={() => setVisibleCount((count) => count + 18)}
-          >
-            Show more resources
-          </button>
+      {pageCount > 1 && <nav className="catalog-more" aria-label="Library result pages">
+        <p>Showing {firstResult + 1}–{firstResult + shownRecords.length} of {filtered.length} resources</p>
+        <div className="action-row">
+          <button type="button" className="button button-secondary" onClick={() => choosePage(1)} disabled={currentPage === 1}>First page</button>
+          <button type="button" className="button button-secondary" onClick={() => choosePage(currentPage - 1)} disabled={currentPage === 1}>Previous page</button>
+          <label>Page <select aria-label="Result page" value={currentPage} onChange={event => choosePage(Number(event.target.value))}>
+            {Array.from({ length: pageCount }, (_, index) => <option key={index} value={index + 1}>{index + 1} of {pageCount}</option>)}
+          </select></label>
+          <button type="button" className="button button-secondary" onClick={() => choosePage(currentPage + 1)} disabled={currentPage === pageCount}>Next page</button>
+          <button type="button" className="button button-secondary" onClick={() => choosePage(pageCount)} disabled={currentPage === pageCount}>Last page</button>
         </div>
-      )}
+      </nav>}
     </div>
   );
 }

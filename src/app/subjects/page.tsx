@@ -8,7 +8,8 @@ import {
   recordsForNode,
   subjectRecords,
 } from "@/lib/taxonomy";
-import { studySubjects, subjectLessons } from "@/lib/study-collections";
+import { subjectLessonCounts } from "@/lib/subject-lesson-counts";
+import { studySubjects } from "@/lib/study-collections";
 import { TopicSearch } from "@/components/topic-search";
 export const metadata = searchMetadata("/subjects");
 export default function SubjectsPage() {
@@ -34,7 +35,7 @@ export default function SubjectsPage() {
               <Link href={landing(s.id)}>{s.title}</Link>
             </h2>
             <p>{s.description}</p>
-            <p>{available(s.id).length ? `${subjectLessons(s.id).length} focused introductions${s.id === "physiology" ? " + 8 renal course lessons" : ""}` : "No public lessons released yet"}</p>
+            <p>{available(s.id).length ? `${subjectLessonCounts(s.id).total} available lessons` : "No public lessons released yet"}</p>
             {s.id === "histology" && <nav className="quick-links" aria-label="Histology course filters"><Link href="/subjects/histology-i">Histology I learning path</Link><Link href="/subjects/histology-ii">Histology II learning path</Link></nav>}
             {s.id === "genetics" && <nav className="quick-links" aria-label="Genetics and immunology filters"><Link href="/subjects/genetics">Medical Genetics learning path</Link><Link href="/subjects/immunology">Immunology learning path</Link></nav>}
             {available(s.id).length > 0 && <p><Link className="button button-primary" href={landing(s.id)}>Open available lessons</Link></p>}
@@ -48,7 +49,7 @@ export default function SubjectsPage() {
           </article>
         ))}
       </section>
-      <section className="study-panel" aria-labelledby="statistics-foundations"><h2 id="statistics-foundations">Biostatistics foundations</h2><p>Work through histograms, centre and spread, then practise uncertainty and study design.</p><div className="quick-links"><Link href="/library/histogram-bin-counts-example">Start with histograms</Link><Link href="/subjects/biostatistics">Explore Biostatistics</Link></div></section>
+      <section className="study-panel" aria-labelledby="statistics-foundations"><h2 id="statistics-foundations">Biostatistics foundations</h2><p>{subjectLessonCounts("biostatistics").total} available lessons.</p><div className="quick-links"><Link href="/library/histogram-bin-counts-example">Start with histograms</Link><Link href="/subjects/biostatistics">Explore Biostatistics</Link></div></section>
       <h2 className="native-section-title">Find a topic across subjects</h2>
       <TopicSearch
         items={taxonomyNodes.map((n) => ({

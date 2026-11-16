@@ -155,7 +155,7 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     task: "Sort 1, 2, 3, 5 and 7 into the bins [0, 3), [3, 6) and [6, 9). Square brackets include the endpoint and round brackets exclude it.",
     worked: "The counts are 2, 2 and 1. The first bin contains 1 and 2. The second contains 3 and 5. The last contains 7. The counts add back to five observations.",
     lesson: "histogram-bin-counts-example",
-    extension: { href: "/subjects/biostatistics", label: "Explore the Biostatistics subject directory" },
+    extension: { href: "/study/biostatistics", label: "Open the Biostatistics study hub" },
     question: "concept-histogram-bin-counts-example",
     followUp: "concept-mean-median-extreme-value-comparison",
     weeklyReview: "concept-cohort-case-control-denominators",
