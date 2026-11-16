@@ -110,8 +110,8 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
     { title: string; url: string; checkedAt: string; supportingIds?: string[]; supportingReferences?: { title: string; url: string }[] }
   >;
   const reference = topicReferences[lesson.id];
-  const reading = [reference, ...(reference.supportingReferences ?? []),
-    ...(reference.supportingIds ?? []).map(id => topicReferences[id])];
+  const reading = [...new Map([reference, ...(reference.supportingReferences ?? []),
+    ...(reference.supportingIds ?? []).map(id => topicReferences[id])].map(ref => [ref.url, ref])).values()];
   const retrievalQuestions = studio.questions.filter(q => q.topic === lesson.id && "heading" in q);
   const applicationQuestions = [...transfer.questions, ...studio.questions]
     .filter(q => q.topic === lesson.id && !("heading" in q));
@@ -398,7 +398,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
         <ol>{reading.map(ref => <li key={ref.url}><a href={ref.url}>{ref.title}</a></li>)}</ol>
         <p className="muted-note">Primary public reference checked <time dateTime={reference.checkedAt}>{reference.checkedAt}</time>.</p>
         <p>{editorialRecorded ? "AI-assisted educational adaptation with source notes." : "AI-assisted educational adaptation. Editorial review is pending."}</p>
-        <AboutLesson lessonId={lesson.id} />
+        <AboutLesson lessonId={lesson.id} listedSources={reading.map(ref => ref.url)} />
         <CorrectionLink />
       </details>
     </article>

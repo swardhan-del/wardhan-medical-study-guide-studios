@@ -46,6 +46,7 @@ test("histology foundations exposes sourced teaching, hidden feedback and persis
     const panel = page.locator(".practice-question:visible:has(input[type=radio])").filter({ hasText: q.prompt });
     await expect(panel.getByRole("radio", { name: q.options[q.answer].text, exact: true })).toBeChecked();
   }
+  await page.locator("#lesson-source > summary").click();
   const refs = references as Record<string, { url: string }>;
   for (const key of [id, "connective-tissue", "muscle-histology", "myelin-and-glial-cells"])
     await expect(page.locator(`#lesson-source:visible a[href="${refs[key].url}"]`)).toBeVisible();

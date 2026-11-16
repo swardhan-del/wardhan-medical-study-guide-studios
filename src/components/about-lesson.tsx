@@ -12,14 +12,15 @@ const visualLabels = {
   "rights-review-pending": "Proposed visuals are awaiting rights review.",
   "approved-and-published": "Published teaching visuals have a recorded review and release decision.",
 };
-export function AboutLesson({ lessonId }: { lessonId: string }) {
+export function AboutLesson({ lessonId, listedSources = [] }: { lessonId: string; listedSources?: string[] }) {
   const lesson = qualityLessons.find(l => l.id === lessonId);
   if (!lesson) return null;
   const quality = qualityForLesson(lessonId);
   const links = quality?.links ?? lesson.links;
+  const additionalSources = quality?.sources.filter(source => !source.url || !listedSources.includes(source.url)) ?? [];
   return <div className="lesson-transparency-body">
       {quality?.learnerLevel && <p><strong>Who this is for:</strong> {quality.learnerLevel}</p>}
-      {quality?.sources.length ? <ul>{quality.sources.map((source, index) => <li key={index}>
+      {additionalSources.length ? <ul>{additionalSources.map((source, index) => <li key={index}>
         {source.url ? <a href={source.url}>{source.title}</a> : source.title}. {source.publisherOrAuthor}. {source.citation} Accessed <time dateTime={source.accessedAt}>{source.accessedAt}</time>.
       </li>)}</ul> : null}
       <p><strong>Visual learning:</strong> {quality ? visualLabels[quality.visualStatus] : "Visual review details have not yet been recorded. Refer to each figure's caption and credit."}</p>
