@@ -1,5 +1,8 @@
 import { sectionCheckpointItems } from "@/content/section-checkpoints";
 import { CardiacCycleDiagram } from "./cardiac-cycle-diagram";
+import { volumeOnePilotFor } from "@/content/anatomy-volume-one-pilot";
+import { VolumeOneDiagramActivity } from "./volume-one-diagram";
+import { PracticeSequence } from "./practice-sequence";
 import { PracticeQuestion } from "./practice-question";
 import { AudiometryChartExplorer } from "./audiometry-chart-explorer";
 import { AudiometrySectionReferences } from "./audiometry-section-references";
@@ -99,8 +102,9 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
   const flagship = anatomyFoundations || subjectEntry || lesson.id === "histology-foundations-tissues";
   const reviewedSupplementalPractice = ["retinal-structure-light-signal-direction", "vestibular-sensors-rotation-translation", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "neurulation", "placenta", "muscle-histology", "vessel-histology", "blood-marrow", "connective-tissue", "cartilage-bone", "epithelia", "cell-junctions", "liver-pancreas", "gi-histology", "renal-histology", "respiratory-histology", "microscopy", "lymphoid-organs", "peroxisome-pts1-pex5-cargo", "lysosomal-m6p-tag-receptor-recycling", "synonymous-variant-sequence-readout-scope", "antibody-mutation-class-switch", "ocular-motor-nerves", "biophysics-fluid-flow", "myelin-and-glial-cells", "serine-one-carbon-donor-carrier-cofactor", "thoracic-development", "ventilation-perfusion", "pentose-phosphate-nadph-ribose", "cohort-case-control-denominators", "allele-and-genotype-counts", "venous-muscle-pump-direction", "retinal-on-off-bipolar-response", "fatty-acid-oxidation-compartment-route", "genetic-drift-sampling-model", "rna-processing", "antigen-presentation", "thyroid-parathyroid-pattern-reasoning", "adrenal-layers-signals-reasoning", "pituitary-glandular-neural-orientation"].includes(lesson.id);
   const figures = figuresForResource(lesson.id);
+  const pilot = volumeOnePilotFor(lesson.id);
   const hasSpirometryGraph = lesson.id === "respiratory-mechanics";
-  const hasFigures = lesson.id === "cardiac-cycle" || hasSpirometryGraph || hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
+  const hasFigures = Boolean(pilot) || lesson.id === "cardiac-cycle" || hasSpirometryGraph || hasHistologyTopicVisual(lesson.id) || figures.length > 0 || hasTeachingDiagram(lesson.id) || visualsForLesson(lesson.id).length > 0;
   const figureTarget = ["myelin-and-glial-cells", "ovarian-histology-and-development", "female-tract-histology-and-development", "mammary-histology-and-development", "reproductive-histology", "brain-and-csf-barriers", "neurulation", "placenta", "microscopy", "renal-histology"].includes(lesson.id) && figures.length ? `#figure-${figures[0].id}` : "#lesson-figures";
   const foundation = foundations[lesson.subject];
   const vocabulary = lesson.subject === "anatomy" ? anatomyVocabulary(lesson.id) : foundation;
@@ -259,6 +263,7 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
           <AnatomyIdentification lessonId={lesson.id} />
           {hasFigures && <span id="lesson-figures" />}
           {lesson.id === "cardiac-cycle" && <CardiacCycleDiagram />}
+          {pilot && <VolumeOneDiagramActivity diagram={pilot.diagram} />}
           <TeachingDiagram lessonId={lesson.id} />
           {hasSpirometryGraph && <SpirometryGraphExercise />}
           <LessonVisuals lessonId={lesson.id} />
@@ -318,6 +323,12 @@ export function LibraryLesson({ lesson, reviewVisuals }: { lesson: Lesson; revie
             lesson={{ id: lesson.id, question: lesson.question }}
             entries={knowledgeCheck}
           />
+          {pilot && <section className="study-panel" aria-labelledby="volume-one-practice">
+            <h2 id="volume-one-practice">Volume I multiple-choice practice</h2>
+            <p>{pilot.items.length} multiple-choice questions</p>
+            <p><a href={pilot.diagram.source}>Reference for these questions</a></p>
+            <PracticeSequence title="Volume I questions" entries={pilot.items.map(item => ({ item }))} />
+          </section>}
           <AnatomyPractice lessonId={lesson.id} />
           <span id="studio-practice" /><span id="apply-the-concept" />
           <section
