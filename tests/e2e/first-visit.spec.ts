@@ -404,6 +404,85 @@ test("a related follow-up becomes available after 24 hours and persists", async 
   await expect(weekly.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
 });
 
+test("histology observations survive transfer and stay separate from the weekly explanation", async ({ page, browser }, info) => {
+  const session = firstStudySessions.find(item => item.id === "histology")!;
+  const observation = session.observation!;
+  const startedAt = new Date("2026-11-19T09:00:00Z");
+  await page.clock.setFixedTime(startedAt);
+  await page.goto(firstSessionHref(session.id));
+  const notes = page.getByRole("textbox", { name: "My observations and reasoning", exact: true });
+  await expect(notes).toBeEnabled();
+  await notes.fill("I traced a lumen and one lining layer. The field does not establish a precise nephron segment.");
+  await expect(page.getByText(observation.criteria[0], { exact: true })).toBeHidden();
+  const compare = page.getByText("Compare my reasoning", { exact: true });
+  await compare.focus();
+  await compare.press("Enter");
+  await expect(page.getByText(observation.criteria[0], { exact: true })).toBeVisible();
+  const written = await page.evaluate(() => JSON.parse(localStorage.getItem("wardhan-learning:v1")!));
+  expect(written.answers).toEqual({});
+  expect(written.checkpoints).toEqual({});
+  expect(written.lessons).toEqual([]);
+  await page.reload();
+  await expect(notes).toHaveValue(written.drafts[observation.draftId]);
+
+  const question = checkpointFor(practiceItems.find(item => item.id === session.question)!);
+  if (question?.type !== "single") throw new Error("Expected the existing histology checkpoint");
+  const checkpoint = page.getByRole("region", { name: "First-session checkpoint", exact: true });
+  await checkpoint.getByRole("radio", { name: question.options[question.answer].text, exact: true }).check();
+  await checkpoint.getByRole("button", { name: /^Check Answer and Continue/ }).click();
+  await expect(checkpoint.locator("[data-feedback]")).toHaveAttribute("data-feedback", "correct");
+  await page.clock.setFixedTime(new Date(startedAt.getTime() + 7 * 24 * 60 * 60 * 1000));
+  await page.goto("/study#subject-review");
+  const review = page.locator("#subject-review");
+  await review.getByRole("button", { name: "Try Histology one-week review", exact: true }).click();
+  await expect(review.locator("#figure-squamous-section img")).toBeVisible();
+  const weekly = review.getByRole("textbox", { name: "My observations and reasoning", exact: true });
+  await expect(weekly).toHaveValue("");
+  await weekly.fill("I can see several layers and flattened surface cells. I would check another field for missing landmarks.");
+  const beforeExport = await page.evaluate(() => JSON.parse(localStorage.getItem("wardhan-learning:v1")!));
+  expect(beforeExport.drafts[observation.draftId]).toBe(written.drafts[observation.draftId]);
+  expect(Object.keys(beforeExport.answers)).toEqual([session.question]);
+  expect(beforeExport.checkpoints[session.weeklyReview]).toBeUndefined();
+
+  const downloading = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Export progress and saved resources", exact: true }).click();
+  const download = await downloading;
+  const file = info.outputPath("histology-observations.json");
+  await download.saveAs(file);
+  const context = await browser.newContext({ viewport: page.viewportSize()! });
+  try {
+    const imported = await context.newPage();
+    await imported.goto(new URL("/study", page.url()).href);
+    await imported.getByLabel("Import a progress file").setInputFiles(file);
+    await imported.getByRole("button", { name: "Merge imported progress", exact: true }).click();
+    await imported.reload();
+    const restored = await imported.evaluate(() => JSON.parse(localStorage.getItem("wardhan-learning:v1")!));
+    expect(restored.drafts).toEqual(beforeExport.drafts);
+    expect(restored.answers).toEqual(beforeExport.answers);
+    await imported.goto(new URL(firstSessionHref(session.id), page.url()).href);
+    await expect(imported.getByRole("textbox", { name: "My observations and reasoning", exact: true })).toHaveValue(written.drafts[observation.draftId]);
+  } finally {
+    await context.close();
+  }
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+});
+
+test("histology observation writing remains available when browser storage fails", async ({ page }) => {
+  await page.addInitScript(() => {
+    Storage.prototype.setItem = () => { throw new Error("Storage unavailable for this test"); };
+  });
+  await page.goto(firstSessionHref("histology"));
+  const notes = page.getByRole("textbox", { name: "My observations and reasoning", exact: true });
+  await notes.fill("My first observation remains in memory.");
+  await expect(page.getByText("Browser storage is unavailable. Copy your writing before leaving.", { exact: true })).toBeVisible();
+  await page.getByText("Compare my reasoning", { exact: true }).click();
+  await expect(notes).toHaveValue("My first observation remains in memory.");
+  await notes.fill("I can refine the observation while storage is unavailable.");
+  await expect(notes).toHaveValue("I can refine the observation while storage is unavailable.");
+});
+
 test("subject entry and direct search lead to the chosen lesson or practice", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");

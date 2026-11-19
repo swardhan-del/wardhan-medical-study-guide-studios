@@ -4,6 +4,7 @@ import { AnatomicalPlanes } from "@/components/anatomy-foundations-visuals";
 import { EducationalFigure } from "@/components/educational-figure";
 import { SearchBreadcrumbs } from "@/components/search-breadcrumbs";
 import { PracticeQuestion } from "@/components/practice-question";
+import { ObservationNotes } from "@/components/observation-notes";
 import { VisualFlow } from "@/components/study-visual";
 import { firstSessionFor, firstSessionHref, firstSessionsPath, firstStudySessions } from "@/content/first-study-sessions";
 import { practiceItems } from "@/content/practice-registry";
@@ -49,7 +50,9 @@ export default async function FirstSessionPage({ params }: Props) {
         <VisualFlow steps={session.model.steps} label={session.model.title} />
         {session.id === "anatomy" && <AnatomicalPlanes />}
         {figure && <EducationalFigure figure={figure} />}
-        <p><strong>Try it.</strong> {session.task}</p>
+        {session.observation ? (
+          <ObservationNotes id={session.observation.draftId} prompt={session.task} criteria={session.observation.criteria} />
+        ) : <p><strong>Try it.</strong> {session.task}</p>}
         <details className="study-details">
           <summary>Show the worked explanation</summary>
           <p>{session.worked}</p>

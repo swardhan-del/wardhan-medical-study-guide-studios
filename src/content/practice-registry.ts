@@ -11,6 +11,7 @@ import { abgCases } from "./abg-cases.ts";
 import { histologyTissues } from "./histology-tissues.ts";
 import studio from "./study-questions.json" with { type: "json" };
 import transfer from "./transfer-practice.json" with { type: "json" };
+import { firstStudySessions } from "./first-study-sessions.ts";
 
 export type PracticeItem = {
   id: string;
@@ -71,6 +72,7 @@ export const practiceTopics = Array.from(new Map(practiceItems.map((q) =>
 export const learningLessonIds = [...new Set([...renalLessons.map((l) => l.slug), ...practiceTopics.map((t) => t.id)])];
 export const learningQuestionIds = [...new Set(practiceItems.map((q) => q.id))];
 export const learningDraftIds = [
+  ...firstStudySessions.flatMap(session => session.observation ? [session.observation.draftId, session.observation.weeklyDraftId] : []),
   ...renalLessons.flatMap((l) => ["oral-renal-" + l.slug, ...l.rubric.map((_, i) => "rubric-" + l.slug + "-" + i)]),
   ...library.lessons.map((l) => "oral-" + l.id),
   ...library.lessons.flatMap(l => "summaryChecklist" in l && l.summaryChecklist ? l.summaryChecklist.map((_, index) => `${l.id}-summary-${index + 1}`) : []),
