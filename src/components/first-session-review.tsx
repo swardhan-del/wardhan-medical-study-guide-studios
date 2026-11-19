@@ -8,6 +8,7 @@ import type { LearningProgress } from "@/lib/learning-core";
 import type { PublicFigure } from "@/lib/figures";
 import { EducationalFigure } from "./educational-figure";
 import { PracticeQuestion } from "./practice-question";
+import { ObservationNotes } from "./observation-notes";
 
 const reviewDelay = 24 * 60 * 60 * 1000;
 const weeklyDelay = 7 * reviewDelay;
@@ -70,6 +71,13 @@ export function FirstSessionReview({ data, now, figures }: { data: LearningProgr
                       </button>}
                       <div id={review.id} hidden={!expanded || !available}>
                         {expanded && available && review.figure && <EducationalFigure figure={review.figure} />}
+                        {expanded && available && review.figure && session.observation && (
+                          <ObservationNotes
+                            id={session.observation.weeklyDraftId}
+                            prompt={session.observation.weeklyPrompt}
+                            criteria={session.observation.criteria}
+                          />
+                        )}
                         {expanded && available && <PracticeQuestion item={review.item} title={`${review.label} question`} freshAttempt={review.fresh} />}
                       </div>
                     </div>

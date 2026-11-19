@@ -15,6 +15,12 @@ type FirstStudySession = {
   followUp: string;
   weeklyReview: string;
   weeklyFigure?: string;
+  observation?: {
+    draftId: string;
+    weeklyDraftId: string;
+    weeklyPrompt: string;
+    criteria: readonly string[];
+  };
 };
 
 export const firstSessionsPath = "/learn/first-session";
@@ -57,6 +63,16 @@ export const firstStudySessions: readonly FirstStudySession[] = [
     followUp: "histology-foundations-tissues-transfer-1",
     weeklyReview: "epithelia-transfer-2",
     weeklyFigure: "squamous-section",
+    observation: {
+      draftId: "first-session-histology-observation",
+      weeklyDraftId: "first-session-histology-weekly-observation",
+      weeklyPrompt: "Use the different section above. Find a free surface, describe the layers and surface-cell shape, and explain one thing this field alone cannot establish.",
+      criteria: [
+        "I located a lumen or free surface and described the lining along that boundary.",
+        "I used both the number of cell layers and the shape of the surface cells to support my explanation.",
+        "I named a limit of the field, such as section angle or missing organ landmarks, and described what additional view would help.",
+      ],
+    },
   },
   {
     id: "cell-biology",
